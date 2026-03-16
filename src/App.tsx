@@ -6,14 +6,17 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Layout from './components/Layout';
 import Philosophy from './pages/Philosophy';
 import Story from './pages/Story';
+import Stories from './pages/Stories';
+import StoryDetail from './pages/StoryDetail';
+import AdminLogin from './pages/AdminLogin';
+import AdminStories from './pages/AdminStories';
+import AdminRoute from './components/AdminRoute';
 
 import Hero from './sections/Hero';
 import Problem from './sections/Problem';
 import WhatWeDo from './sections/WhatWeDo';
-import FeaturedUseCases from './sections/FeaturedUseCases';
 import Architecture from './sections/Architecture';
 import JoinMovement from './sections/JoinMovement';
-import Newsletter from './sections/Newsletter';
 import Footer from './sections/Footer';
 
 import './App.css';
@@ -38,10 +41,8 @@ function Home() {
       <Hero />
       <Problem />
       <WhatWeDo />
-      <FeaturedUseCases />
       <Architecture />
       <JoinMovement />
-      <Newsletter />
       <Footer />
     </>
   );
@@ -68,6 +69,17 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/philosophy" element={<Philosophy />} />
           <Route path="/story" element={<Story />} />
+          <Route path="/stories" element={<Stories />} />
+          <Route path="/stories/:slug" element={<StoryDetail />} />
+          <Route path="/admin" element={<AdminLogin />} />
+          <Route
+            path="/admin/stories"
+            element={
+              <AdminRoute>
+                <AdminStories />
+              </AdminRoute>
+            }
+          />
         </Routes>
       </Layout>
     </HashRouter>

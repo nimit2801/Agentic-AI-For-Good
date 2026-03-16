@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1584">
+  <title>LinkedIn Banner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Inter:wght@400;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      width: 1584px;
+      height: 396px;
+      overflow: hidden;
+      background: #F5F1EB;
+      font-family: 'Inter', sans-serif;
+      position: relative;
+    }
+
+    /* Decorative circles */
+    .circle-top-right {
+      position: absolute;
+      width: 340px;
+      height: 340px;
+      border-radius: 50%;
+      background: #E8D5CC;
+      opacity: 0.25;
+      top: -60px;
+      right: 100px;
+    }
+
+    .circle-bottom-left {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: #E8D5CC;
+      opacity: 0.2;
+      bottom: -110px;
+      left: 20px;
+    }
+
+    /* Small terracotta accent dot */
+    .dot-accent {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #D4754E;
+      top: 55px;
+      right: 320px;
+    }
+
+    /* Content container — offset right to avoid profile photo */
+    .content {
+      position: absolute;
+      left: 360px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .headline {
+      font-family: 'Inter', sans-serif;
+      font-weight: 800;
+      font-size: 56px;
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      color: #1A1A1A;
+      text-transform: uppercase;
+    }
+
+    .subtext {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.4;
+      color: #6B6560;
+      max-width: 420px;
+    }
+
+    .url-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 4px;
+    }
+
+    .divider {
+      width: 40px;
+      height: 2px;
+      background: #D4754E;
+    }
+
+    .url {
+      font-family: 'IBM Plex Mono', monospace;
+      font-weight: 500;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      color: #6B6560;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <!-- Decorative elements -->
+  <div class="circle-top-right"></div>
+  <div class="circle-bottom-left"></div>
+  <div class="dot-accent"></div>
+
+  <!-- Main content -->
+  <div class="content">
+    <h1 class="headline">AGENTIC AI.<br>REAL IMPACT.</h1>
+    <p class="subtext">Real stories of AI making real impact</p>
+    <div class="url-group">
+      <div class="divider"></div>
+      <span class="url">agenticaiforgood.com</span>
+    </div>
+  </div>
+</body>
+</html>
