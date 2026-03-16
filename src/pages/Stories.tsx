@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Loader2 } from 'lucide-react';
 import gsap from 'gsap';
@@ -44,6 +45,11 @@ export default function Stories() {
   }, [loading, activeCategory]);
 
   return (
+    <>
+    <Helmet>
+      <title>AI Use Cases & Stories — Real Impact from Autonomous AI | Agentic AI For Good</title>
+      <meta name="description" content="Explore real-world AI deployments across healthcare, logistics, developer tools, and open source. Curated stories of autonomous AI systems making measurable impact." />
+    </Helmet>
     <section
       ref={sectionRef}
       className="min-h-screen bg-[#F5F1EB] pt-28 pb-20 px-6 lg:px-[6vw]"
@@ -117,6 +123,7 @@ export default function Stories() {
                   <img
                     src={story.image_url}
                     alt={story.title}
+                    loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
@@ -153,5 +160,6 @@ export default function Stories() {
         </div>
       )}
     </section>
+    </>
   );
 }

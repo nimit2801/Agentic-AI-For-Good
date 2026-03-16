@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { Helmet } from 'react-helmet-async';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -82,6 +83,11 @@ export default function Philosophy() {
   }, []);
 
   return (
+    <>
+    <Helmet>
+      <title>Our Philosophy — How We Think About AI Agents | Agentic AI For Good</title>
+      <meta name="description" content="Agency, awareness, and collaboration — the three principles guiding how we think about AI systems that act in the world." />
+    </Helmet>
     <section
       ref={sectionRef}
       className="relative w-full min-h-screen bg-[#F5F1EB] pt-24 lg:pt-32 pb-20"
@@ -117,6 +123,7 @@ export default function Philosophy() {
                 <img
                   src={card.image}
                   alt={card.title}
+                  loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
@@ -149,5 +156,6 @@ export default function Philosophy() {
         </div>
       </div>
     </section>
+    </>
   );
 }

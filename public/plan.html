@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agentic AI For Good — Business Plan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --beige: #F5F1EB;
+    --terracotta: #D4754E;
+    --text: #1A1A1A;
+    --secondary: #6B6560;
+    --border: #D6D0C8;
+    --card-bg: #FDFCFA;
+    --sidebar-w: 280px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; scroll-padding-top: 32px; }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: var(--beige);
+    color: var(--text);
+    line-height: 1.7;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ─── SIDEBAR ─── */
+  .sidebar {
+    position: fixed;
+    top: 0; left: 0;
+    width: var(--sidebar-w);
+    height: 100vh;
+    padding: 40px 24px;
+    border-right: 1px solid var(--border);
+    background: var(--beige);
+    overflow-y: auto;
+    z-index: 100;
+    transition: transform 0.3s ease;
+  }
+
+  .sidebar-brand {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    margin-bottom: 8px;
+  }
+
+  .sidebar-title {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.25;
+    margin-bottom: 32px;
+    color: var(--text);
+  }
+
+  .toc { list-style: none; }
+
+  .toc li { margin-bottom: 2px; }
+
+  .toc a {
+    display: block;
+    padding: 8px 12px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--secondary);
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.2s;
+    border-left: 2px solid transparent;
+  }
+
+  .toc a:hover {
+    background: rgba(212, 117, 78, 0.08);
+    color: var(--text);
+  }
+
+  .toc a.active {
+    background: rgba(212, 117, 78, 0.1);
+    color: var(--terracotta);
+    border-left-color: var(--terracotta);
+    font-weight: 600;
+  }
+
+  .toc .toc-num {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--terracotta);
+    margin-right: 8px;
+    opacity: 0.7;
+  }
+
+  .sidebar-footer {
+    margin-top: 32px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    color: var(--secondary);
+    letter-spacing: 0.05em;
+  }
+
+  /* ─── MOBILE TOGGLE ─── */
+  .sidebar-toggle {
+    display: none;
+    position: fixed;
+    top: 16px; left: 16px;
+    z-index: 200;
+    width: 40px; height: 40px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--beige);
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: var(--text);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  /* ─── MAIN ─── */
+  .main {
+    margin-left: var(--sidebar-w);
+    max-width: 760px;
+    padding: 60px 48px 120px;
+  }
+
+  /* ─── HERO ─── */
+  .hero {
+    margin-bottom: 64px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .hero-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    margin-bottom: 16px;
+  }
+
+  .hero h1 {
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 1.12;
+    letter-spacing: -0.025em;
+    margin-bottom: 20px;
+    color: var(--text);
+  }
+
+  .hero-sub {
+    font-size: 18px;
+    color: var(--secondary);
+    line-height: 1.65;
+    max-width: 600px;
+  }
+
+  .hero-meta {
+    display: flex;
+    gap: 32px;
+    margin-top: 28px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--secondary);
+    letter-spacing: 0.03em;
+  }
+
+  .hero-meta span { opacity: 0.8; }
+
+  /* ─── SECTIONS ─── */
+  section {
+    margin-bottom: 64px;
+    scroll-margin-top: 32px;
+  }
+
+  .section-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  h2 {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 36px;
+    margin-bottom: 12px;
+    letter-spacing: -0.01em;
+  }
+
+  h4 {
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 28px;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+
+  p {
+    margin-bottom: 16px;
+    color: var(--text);
+  }
+
+  .muted { color: var(--secondary); }
+
+  strong { font-weight: 700; }
+
+  /* ─── CARDS ─── */
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 24px;
+    margin: 20px 0;
+  }
+
+  .card-accent {
+    border-left: 3px solid var(--terracotta);
+  }
+
+  .card h4 {
+    margin-top: 0;
+    font-size: 14px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    color: var(--terracotta);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  /* ─── TABLES ─── */
+  .table-wrap {
+    overflow-x: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+
+  thead {
+    background: var(--text);
+    color: var(--beige);
+  }
+
+  thead th {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 14px 16px;
+    text-align: left;
+  }
+
+  tbody td {
+    padding: 12px 16px;
+    border-top: 1px solid var(--border);
+    vertical-align: top;
+  }
+
+  tbody tr:nth-child(even) { background: rgba(0,0,0,0.015); }
+
+  tbody tr:hover { background: rgba(212, 117, 78, 0.04); }
+
+  /* ─── LISTS ─── */
+  ul, ol {
+    margin: 12px 0 16px 20px;
+    color: var(--text);
+  }
+
+  li { margin-bottom: 6px; }
+
+  ul.check {
+    list-style: none;
+    margin-left: 0;
+  }
+
+  ul.check li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 10px;
+  }
+
+  ul.check li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 6px;
+    width: 16px; height: 16px;
+    border: 2px solid var(--border);
+    border-radius: 4px;
+  }
+
+  ul.check li.critical::before {
+    border-color: var(--terracotta);
+    background: rgba(212, 117, 78, 0.1);
+  }
+
+  /* ─── STATS ROW ─── */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 16px;
+    margin: 24px 0;
+  }
+
+  .stat {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .stat-value {
+    font-weight: 800;
+    font-size: 28px;
+    color: var(--terracotta);
+    line-height: 1;
+    margin-bottom: 6px;
+    letter-spacing: -0.02em;
+  }
+
+  .stat-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--secondary);
+  }
+
+  /* ─── TIMELINE ─── */
+  .timeline {
+    position: relative;
+    margin: 24px 0 24px 16px;
+    padding-left: 28px;
+    border-left: 2px solid var(--border);
+  }
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 28px;
+  }
+
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -35px; top: 6px;
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    background: var(--beige);
+    border: 2px solid var(--terracotta);
+  }
+
+  .timeline-item.done::before {
+    background: var(--terracotta);
+  }
+
+  .timeline-week {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    font-size: 11px;
+    color: var(--terracotta);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  /* ─── DECISION LOG ─── */
+  .decision {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 24px;
+    margin: 16px 0;
+    border-left: 3px solid var(--terracotta);
+  }
+
+  .decision-title {
+    font-weight: 800;
+    font-size: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .decision-tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: rgba(212, 117, 78, 0.12);
+    color: var(--terracotta);
+    padding: 3px 8px;
+    border-radius: 4px;
+  }
+
+  .decision p { font-size: 14px; margin-bottom: 8px; }
+  .decision p:last-child { margin-bottom: 0; }
+
+  /* ─── SESSION LOG ─── */
+  .session-entry {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 24px;
+    margin: 16px 0;
+  }
+
+  .session-date {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    font-size: 11px;
+    color: var(--terracotta);
+    letter-spacing: 0.05em;
+    margin-bottom: 12px;
+  }
+
+  .session-entry ul { margin-left: 16px; }
+  .session-entry li { font-size: 14px; margin-bottom: 4px; }
+
+  /* ─── COMPETITOR CARD ─── */
+  .competitor {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 12px 0;
+  }
+
+  .competitor-name {
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 4px;
+  }
+
+  .competitor-detail {
+    font-size: 13px;
+    color: var(--secondary);
+    margin-bottom: 8px;
+  }
+
+  .competitor .edge {
+    font-size: 13px;
+    color: var(--terracotta);
+    font-weight: 600;
+  }
+
+  /* ─── CALLOUT ─── */
+  .callout {
+    background: rgba(212, 117, 78, 0.06);
+    border: 1px solid rgba(212, 117, 78, 0.2);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin: 24px 0;
+    font-size: 15px;
+  }
+
+  .callout-title {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    font-size: 11px;
+    color: var(--terracotta);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  /* ─── PILL TAGS ─── */
+  .pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px 0;
+  }
+
+  .pill {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 5px 12px;
+    border-radius: 100px;
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+    color: var(--secondary);
+  }
+
+  .pill.accent {
+    border-color: var(--terracotta);
+    color: var(--terracotta);
+    background: rgba(212, 117, 78, 0.06);
+  }
+
+  /* ─── DIVIDER ─── */
+  hr {
+    border: none;
+    height: 1px;
+    background: var(--border);
+    margin: 48px 0;
+  }
+
+  /* ─── MOBILE ─── */
+  @media (max-width: 900px) {
+    .sidebar {
+      transform: translateX(-100%);
+    }
+
+    .sidebar.open {
+      transform: translateX(0);
+      box-shadow: 4px 0 24px rgba(0,0,0,0.1);
+    }
+
+    .sidebar-toggle {
+      display: flex;
+    }
+
+    .main {
+      margin-left: 0;
+      padding: 80px 24px 100px;
+    }
+
+    .hero h1 { font-size: 30px; }
+    h2 { font-size: 24px; }
+    .hero-meta { flex-direction: column; gap: 8px; }
+    .stats { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 500px) {
+    .stats { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 26px; }
+  }
+
+  /* ─── PRINT ─── */
+  @media print {
+    .sidebar, .sidebar-toggle { display: none; }
+    .main { margin-left: 0; max-width: 100%; padding: 20px; }
+    .card, .decision, .session-entry, .competitor { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Mobile toggle -->
+<button class="sidebar-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="Toggle navigation">
+  <svg width="18" height="14" viewBox="0 0 18 14" fill="none"><path d="M1 1h16M1 7h16M1 13h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+</button>
+
+<!-- Sidebar TOC -->
+<nav class="sidebar">
+  <div class="sidebar-brand">Internal Document</div>
+  <div class="sidebar-title">Agentic AI For Good</div>
+
+  <ul class="toc">
+    <li><a href="#what-we-are"><span class="toc-num">01</span>What We Are</a></li>
+    <li><a href="#revenue"><span class="toc-num">02</span>Revenue Model</a></li>
+    <li><a href="#growth"><span class="toc-num">03</span>Growth Strategy</a></li>
+    <li><a href="#investor"><span class="toc-num">04</span>Investor Positioning</a></li>
+    <li><a href="#competitive"><span class="toc-num">05</span>Competitive Landscape</a></li>
+    <li><a href="#action-plan"><span class="toc-num">06</span>30-Day Action Plan</a></li>
+    <li><a href="#decisions"><span class="toc-num">07</span>Decision Log</a></li>
+    <li><a href="#sessions"><span class="toc-num">08</span>Session History</a></li>
+  </ul>
+
+  <div class="sidebar-footer">
+    Prepared March 2026<br>
+    For Nimit Savant, Founder<br><br>
+    agenticaiforgood.com
+  </div>
+</nav>
+
+<!-- Main Content -->
+<main class="main">
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-label">Business Plan & Strategy</div>
+    <h1>Agentic AI For Good</h1>
+    <p class="hero-sub">
+      A discovery platform and knowledge base for AI tools, open-source projects, and agentic systems already in the market. We help builders find what already exists&mdash;so they stop wasting hours prompting AI to research and start building.
+    </p>
+    <div class="hero-meta">
+      <span>March 2026</span>
+      <span>Nimit Savant, Founder</span>
+      <span>agenticaiforgood.com</span>
+    </div>
+  </header>
+
+  <!-- ═══ 01. WHAT WE ARE ═══ -->
+  <section id="what-we-are">
+    <div class="section-label">01 &mdash; Identity</div>
+    <h2>What We Are</h2>
+
+    <div class="callout">
+      <div class="callout-title">The Problem</div>
+      Every builder with an AI idea spends hours every day prompting ChatGPT/Claude to research what tools already exist, what's open-source, what competitors are doing. The results are often hallucinated, incomplete, or outdated. There is no single, curated, trustworthy source for "what's already out there in agentic AI."
+    </div>
+
+    <h3>What We Do (Ordered by Priority)</h3>
+    <ol>
+      <li><strong>AI Tool Discovery & Knowledge Base</strong> &mdash; A curated, searchable directory of AI tools, open-source projects, and agentic systems. Categorized by use case, industry, and capability. <em>This is the primary product.</em></li>
+      <li><strong>Offline Events</strong> &mdash; IRL meetups, college workshops, and community events. Key differentiator in India&mdash;nobody else is doing this.</li>
+      <li><strong>GTM Support for AI Tools</strong> &mdash; Help tools that need go-to-market support get discovered. Featured listings, sponsored stories, event presence. <em>This is how we make money.</em></li>
+      <li><strong>Editorial Stories</strong> &mdash; Deep-dive case studies on AI tools in healthcare, education, climate, logistics. Adds depth and soul. <em>NOT the highlight. Secondary focus.</em></li>
+    </ol>
+
+    <h3>Who It's For</h3>
+    <div class="pills">
+      <span class="pill accent">Builders / Developers</span>
+      <span class="pill accent">Founders</span>
+      <span class="pill accent">Students (IITs, NITs, Tier-1)</span>
+      <span class="pill accent">AI Tool Companies</span>
+    </div>
+
+    <h3>Comparable Platforms</h3>
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-value" style="font-size:16px;">Product Hunt</div>
+        <div class="stat-label">Discovery</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value" style="font-size:14px;">There's An AI<br>For That</div>
+        <div class="stat-label">$50K+/mo</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value" style="font-size:16px;">FutureTools</div>
+        <div class="stat-label">Curation</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value" style="font-size:16px;">AlternativeTo</div>
+        <div class="stat-label">Alternatives</div>
+      </div>
+    </div>
+
+    <h3>Brand Voice</h3>
+    <p class="muted">Warm, minimal, premium editorial. "Cutting through the noise"&mdash;anti-hype, pro-substance. Celebrates builders, not buzzwords. Typography-focused design, earth tones, no stock photos.</p>
+  </section>
+
+  <hr>
+
+  <!-- ═══ 02. REVENUE MODEL ═══ -->
+  <section id="revenue">
+    <div class="section-label">02 &mdash; Monetization</div>
+    <h2>Revenue Model</h2>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Tier</th><th>What</th><th>Price Range</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Free listing</strong></td><td>Basic entry in tool directory</td><td>&#8377;0</td></tr>
+          <tr><td><strong>Featured listing</strong></td><td>Highlighted in category, detailed writeup</td><td>&#8377;15,000&ndash;30,000/mo</td></tr>
+          <tr><td><strong>Sponsored story</strong></td><td>Deep-dive editorial about their tool</td><td>&#8377;40,000&ndash;80,000 one-time</td></tr>
+          <tr><td><strong>Newsletter sponsor</strong></td><td>Banner in weekly newsletter</td><td>&#8377;10,000&ndash;25,000/send</td></tr>
+          <tr><td><strong>Event sponsor</strong></td><td>Brand presence at offline events</td><td>&#8377;50,000&ndash;2,00,000/event</td></tr>
+          <tr><td><strong>Premium DB access</strong></td><td>API access, advanced filters</td><td>TBD (future)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Phase-Based Revenue Targets</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Timeframe</th><th>Monthly Revenue</th><th>Primary Sources</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Months 0&ndash;3</td><td>$0&ndash;1K</td><td>Consulting side income</td></tr>
+          <tr><td>Months 3&ndash;6</td><td>$1K&ndash;5K</td><td>Newsletter sponsors + consulting</td></tr>
+          <tr><td>Months 6&ndash;12</td><td>$5K&ndash;15K</td><td>+ sponsored stories + featured listings</td></tr>
+          <tr><td>Months 12&ndash;18</td><td>$15K&ndash;30K</td><td>+ events + community + reports</td></tr>
+          <tr><td>Months 18&ndash;36</td><td>$30K&ndash;100K+</td><td>+ DB subscriptions + job board + certification</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Phase 1: Bootstrapped (Months 0&ndash;6)</h3>
+    <div class="card card-accent">
+      <h4>Newsletter Sponsorships</h4>
+      <p>Launch "The Agentic AI Briefing" on Beehiiv. At 5K subscribers with a tech audience, charge $50&ndash;150 CPM. Single sponsored slot = $250&ndash;750/issue. Weekly = $1,000&ndash;3,000/month.</p>
+      <p><strong>Target sponsors:</strong> Anthropic, Cohere, LangChain, CrewAI, AWS, GCP</p>
+    </div>
+
+    <div class="card card-accent">
+      <h4>Consulting / Fractional Work</h4>
+      <p>"AI for Good" strategy consulting for nonprofits ($150&ndash;300/hr). AI content strategy for startups ($3K&ndash;8K per case study). Speaking &amp; workshops ($1K&ndash;5K per engagement).</p>
+    </div>
+
+    <div class="card card-accent">
+      <h4>Sponsored Stories (Native Advertising)</h4>
+      <p>Companies pay to have their story written in your editorial style. Clearly labeled "Partner Story." Price: $2K&ndash;5K early, scaling to $5K&ndash;15K with traffic.</p>
+    </div>
+
+    <h3>Phase 2: Early Traction (Months 6&ndash;18)</h3>
+    <p>Premium research reports ($299&ndash;999), virtual roundtables ($2K&ndash;5K sponsorship), community membership ($19&ndash;29/mo pro tier), and a job board ($299&ndash;499 per listing).</p>
+
+    <h3>Phase 3: Scale (Months 18&ndash;36)</h3>
+    <p><strong>AI Tool Directory as SaaS:</strong> Free browse/search, Pro $49&ndash;99/mo (API, filters, export), Enterprise $499&ndash;999/mo. <strong>Certification:</strong> "Verified Impact" badge ($5K&ndash;20K assessment). <strong>Courses:</strong> $199&ndash;499 each.</p>
+  </section>
+
+  <hr>
+
+  <!-- ═══ 03. GROWTH STRATEGY ═══ -->
+  <section id="growth">
+    <div class="section-label">03 &mdash; Growth</div>
+    <h2>6-Month Plan to 5,000 Readers</h2>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-value">&#8377;5.5L</div>
+        <div class="stat-label">Total Budget</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">5,000+</div>
+        <div class="stat-label">Target Readers</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">6</div>
+        <div class="stat-label">Months</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">5</div>
+        <div class="stat-label">Channels</div>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Channel</th><th>Budget (&#8377;)</th><th>Expected Readers</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>LinkedIn organic</strong> (5 posts/week)</td><td>&#8377;0</td><td>1,000&ndash;2,000</td></tr>
+          <tr><td><strong>Offline events</strong> (colleges + meetups, 3&ndash;4/mo)</td><td>&#8377;3,00,000</td><td>2,500&ndash;3,000</td></tr>
+          <tr><td><strong>LinkedIn ads</strong> (boost best content)</td><td>&#8377;1,25,000</td><td>1,000&ndash;3,000</td></tr>
+          <tr><td><strong>College ambassadors</strong> (20&ndash;30 students)</td><td>&#8377;75,000</td><td>1,000&ndash;2,000</td></tr>
+          <tr><td><strong>SEO + tooling</strong></td><td>&#8377;35,000</td><td>500&ndash;2,000</td></tr>
+          <tr><td><strong>WhatsApp/Telegram</strong></td><td>&#8377;10,000</td><td>1,500&ndash;3,000</td></tr>
+          <tr style="font-weight:700; background:rgba(212,117,78,0.06)"><td>Total</td><td>&#8377;5,45,000</td><td>5,000&ndash;8,000</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>LinkedIn Playbook (70% of effort)</h3>
+    <p>Post on Nimit's <strong>personal account</strong> (10x reach vs. company page). Content rotation:</p>
+    <ul>
+      <li><strong>Monday:</strong> "AI Tool of the Week" &mdash; one tool, 200-word breakdown</li>
+      <li><strong>Tuesday:</strong> Hot take / contrarian opinion on AI news</li>
+      <li><strong>Wednesday:</strong> Carousel/thread &mdash; architecture or workflow breakdown</li>
+      <li><strong>Thursday:</strong> "Behind the tool" &mdash; founder interview snippet</li>
+      <li><strong>Friday:</strong> Curated list (5 AI tools you missed this week)</li>
+    </ul>
+
+    <h3>Offline Events (Key Differentiator)</h3>
+    <div class="card">
+      <p><strong>College workshops</strong> (IITs, NITs, tier-1): &#8377;5K&ndash;15K/event, 100&ndash;300 students, 2x/month</p>
+      <p><strong>City meetups</strong> (Bangalore, Mumbai, Delhi, Pune): &#8377;15K&ndash;30K/event, 50&ndash;150 pros, 1x/month</p>
+      <p><strong>Co-hosted with tool companies:</strong> &#8377;0 (they sponsor), 100&ndash;200 attendees, 1x/month</p>
+      <p class="muted" style="margin-bottom:0;font-size:14px;">Every attendee joins WhatsApp/Telegram + newsletter. Events feed the flywheel.</p>
+    </div>
+
+    <h3>SEO (After HashRouter Fix)</h3>
+    <div class="callout">
+      <div class="callout-title">Critical Technical Blocker</div>
+      Current HashRouter means URLs like <code>agenticaiforgood.com/#/stories/my-story</code> are invisible to Google. Migrate to BrowserRouter before investing in any content/SEO. Non-negotiable.
+    </div>
+    <p>Target long-tail keywords: "best open-source AI agents for [use case]", "top AI tools for [industry] 2026", tool comparison pages.</p>
+  </section>
+
+  <hr>
+
+  <!-- ═══ 04. INVESTOR POSITIONING ═══ -->
+  <section id="investor">
+    <div class="section-label">04 &mdash; Investor Positioning</div>
+    <h2>How to Position for Funding</h2>
+
+    <div class="callout">
+      <div class="callout-title">Honest Truth</div>
+      A content site about AI is NOT venture-backable as a media company. VCs learned their lesson with BuzzFeed, Vice, Mic. However, there are three investable framings&mdash;and grants should come first.
+    </div>
+
+    <h3>Framing 1: "The Bloomberg Terminal for AI Impact"</h3>
+    <p><strong>Thesis:</strong> As AI regulation increases globally, every company needs to demonstrate impact and responsible use. No structured, trusted source of truth exists. You build it.</p>
+    <div class="pills">
+      <span class="pill">CB Insights &mdash; $500M+</span>
+      <span class="pill">PitchBook &mdash; $225M acq.</span>
+      <span class="pill">Crunchbase &mdash; $500M+</span>
+      <span class="pill">G2 &mdash; $1.1B</span>
+    </div>
+
+    <h3>Framing 2: "AI-for-Good Talent Marketplace"</h3>
+    <p><strong>Thesis:</strong> Massive talent mismatch. AI engineers want meaningful work. Nonprofits can't find or afford AI talent. You become the connective tissue.</p>
+
+    <h3>Framing 3: "Impact Verification Layer for AI"</h3>
+    <p><strong>Thesis:</strong> AI washing is the new greenwashing. You become the B Corp / LEED certification for AI impact.</p>
+
+    <h3>Investor Targeting (Priority Order)</h3>
+
+    <div class="card card-accent">
+      <h4>Tier 1: Grants (Start Here &mdash; No Equity)</h4>
+      <ul>
+        <li>Google.org AI for Social Good ($25M+ pool)</li>
+        <li>AWS AI for Changemakers Accelerator</li>
+        <li>Microsoft AI for Good grants</li>
+        <li>Mozilla Foundation / Responsible AI grants</li>
+        <li>Knight Foundation, Omidyar Network, MacArthur, Skoll</li>
+      </ul>
+      <p class="muted" style="margin:0;font-size:13px;">Target: $50K&ndash;$250K. They WANT to fund exactly what you're building.</p>
+    </div>
+
+    <div class="card">
+      <h4>Tier 2: Impact VCs (With Traction)</h4>
+      <p>Obvious Ventures, Kapor Capital, Emerson Collective, DBL Partners</p>
+    </div>
+
+    <div class="card">
+      <h4>Tier 3: AI-Focused VCs (With PMF)</h4>
+      <p>Conviction Partners, AI Grant (Nat Friedman), Coatue Management</p>
+    </div>
+
+    <h3>The Pitch Narrative</h3>
+    <div class="card card-accent">
+      <h4>Problem</h4>
+      <p>$258.7B invested in AI in 2025. No reliable way to find, verify, or compare tools that create real-world outcomes. Builders waste hours daily prompting AI for market research.</p>
+      <h4 style="margin-top:16px;">Solution</h4>
+      <p>The definitive discovery platform for AI tools&mdash;starting with curated editorial, scaling to a structured database, ultimately becoming the trust layer for the AI ecosystem.</p>
+      <h4 style="margin-top:16px;">Why Now</h4>
+      <p>EU AI Act enforcement begins 2026. AI washing backlash growing. Builders need a trustworthy, curated source. Nobody owns this space.</p>
+    </div>
+
+    <h3>Building the Moat</h3>
+    <ol>
+      <li><strong>Data network effects:</strong> Every tool listed makes the directory more valuable</li>
+      <li><strong>Brand trust:</strong> First credible, design-forward voice in the space</li>
+      <li><strong>Community lock-in:</strong> Builders gather here, switching costs increase</li>
+      <li><strong>Offline events:</strong> Physical presence is hard to replicate at scale</li>
+      <li><strong>Relationships:</strong> Every featured company becomes a long-term partner</li>
+    </ol>
+  </section>
+
+  <hr>
+
+  <!-- ═══ 05. COMPETITIVE LANDSCAPE ═══ -->
+  <section id="competitive">
+    <div class="section-label">05 &mdash; Competition</div>
+    <h2>Competitive Landscape</h2>
+
+    <h3>Direct Competitors</h3>
+
+    <div class="competitor">
+      <div class="competitor-name">AI for Good Foundation (ai4good.org)</div>
+      <div class="competitor-detail">Nonprofit connecting AI researchers with humanitarian orgs. Workshops, challenges, events.</div>
+      <div class="competitor-detail"><strong>Weakness:</strong> Academic tone, poor design, no storytelling.</div>
+      <div class="edge">Your edge: You tell stories &amp; build tools. They run workshops. Potential partner.</div>
+    </div>
+
+    <div class="competitor">
+      <div class="competitor-name">Google AI for Social Good</div>
+      <div class="competitor-detail">Google's internal program with grants and tools.</div>
+      <div class="competitor-detail"><strong>Weakness:</strong> Corporate, self-serving (showcases Google tools). Not independent.</div>
+      <div class="edge">Your edge: Vendor-neutral. You cover the whole ecosystem.</div>
+    </div>
+
+    <div class="competitor">
+      <div class="competitor-name">Partnership on AI</div>
+      <div class="competitor-detail">Multi-stakeholder consortium (Google, Microsoft, Amazon). Policy, research, best practices.</div>
+      <div class="competitor-detail"><strong>Weakness:</strong> Slow-moving, corporate governance, not consumer-facing.</div>
+      <div class="edge">Your edge: You move fast. They publish policy papers.</div>
+    </div>
+
+    <div class="competitor">
+      <div class="competitor-name">MIT Technology Review AI Coverage</div>
+      <div class="competitor-detail">Strong editorial team covering AI broadly.</div>
+      <div class="competitor-detail"><strong>Weakness:</strong> "AI for Good" is a tiny fraction. No dedicated focus.</div>
+      <div class="edge">Your edge: 100% focused on AI impact tools. Depth beats breadth.</div>
+    </div>
+
+    <div class="competitor">
+      <div class="competitor-name">There's An AI For That / FutureTools</div>
+      <div class="competitor-detail">AI tool directories. Pure listings, minimal editorial depth.</div>
+      <div class="competitor-detail"><strong>Weakness:</strong> No editorial voice, no community, no events, no India focus.</div>
+      <div class="edge">Your edge: Editorial depth + offline events + India-first + "for good" positioning.</div>
+    </div>
+
+    <h3>The Whitespace</h3>
+    <div class="card card-accent">
+      <h4>What nobody is doing well</h4>
+      <ol>
+        <li>No one owns "AI tool discovery with editorial depth" as a brand</li>
+        <li>No structured, curated database of agentic AI tools with real use cases</li>
+        <li>No offline community events for AI tool discovery in India</li>
+        <li>The design gap is massive&mdash;most AI directories look like spreadsheets</li>
+        <li>The "agentic AI" framing is unique and timely</li>
+      </ol>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- ═══ 06. 30-DAY ACTION PLAN ═══ -->
+  <section id="action-plan">
+    <div class="section-label">06 &mdash; Execution</div>
+    <h2>30-Day Action Plan</h2>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-week">Week 1</div>
+        <ul class="check">
+          <li class="critical"><strong>Fix HashRouter &rarr; BrowserRouter</strong> (SEO blocker)</li>
+          <li>Set up Beehiiv newsletter and write issue #1</li>
+          <li>Write and publish 3 tool stories to Supabase</li>
+          <li>Post daily on LinkedIn (Nimit's personal account)</li>
+          <li>Apply to Google.org AI Impact Challenge</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-week">Week 2</div>
+        <ul class="check">
+          <li>Launch newsletter with outreach to 200+ contacts</li>
+          <li>Create "Submit Your Tool" form</li>
+          <li>Reach out to 10 AI tool companies about featured listings</li>
+          <li>Guest post pitch to 3 publications</li>
+          <li>Set up Google Analytics and Search Console</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-week">Week 3</div>
+        <ul class="check">
+          <li>Build tool directory schema in Supabase</li>
+          <li>Populate first 20&ndash;30 tools in the directory</li>
+          <li>Cross-promotion outreach to 5 newsletters</li>
+          <li>Plan first offline event (Bangalore or Mumbai)</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-week">Week 4</div>
+        <ul class="check">
+          <li>Newsletter issues #3&ndash;4 published, measure growth</li>
+          <li>First sponsored listing pitch to 5 tool companies</li>
+          <li>Set up referral program in Beehiiv</li>
+          <li>Review metrics: traffic, subscribers, LinkedIn followers</li>
+          <li>Draft "State of AI Tools" report outline</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>90-Day Targets</h3>
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-value">1K</div>
+        <div class="stat-label">Newsletter Subs</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">2K</div>
+        <div class="stat-label">LinkedIn Followers</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">30+</div>
+        <div class="stat-label">Tools Listed</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">1</div>
+        <div class="stat-label">Paid Sponsor</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">1</div>
+        <div class="stat-label">Grant Applied</div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- ═══ 07. DECISIONS ═══ -->
+  <section id="decisions">
+    <div class="section-label">07 &mdash; Decisions</div>
+    <h2>Decision Log</h2>
+    <p class="muted">Major decisions and their reasoning. So future-you understands WHY.</p>
+
+    <div class="decision">
+      <div class="decision-title">
+        Pivot to tool discovery platform
+        <span class="decision-tag">Mar 17</span>
+      </div>
+      <p><strong>Context:</strong> Original positioning was "stories of AI making real-world impact." Nice brand, hard to monetize.</p>
+      <p><strong>Decision:</strong> Primary product = curated AI tool directory + knowledge base. Editorial stories = secondary (adds soul).</p>
+      <p><strong>Reasoning:</strong> Solves a real daily pain point. Clearer monetization (tools pay for GTM). Comparable platforms prove the model.</p>
+    </div>
+
+    <div class="decision">
+      <div class="decision-title">
+        Target India first, budget in INR
+        <span class="decision-tag">Mar 17</span>
+      </div>
+      <p><strong>Context:</strong> Nimit is based in India. Offline events are the growth differentiator.</p>
+      <p><strong>Decision:</strong> Focus on Indian professionals and students first. Budget ~&#8377;5.5L for 6 months.</p>
+      <p><strong>Reasoning:</strong> Nobody else doing IRL AI tool events in India. College ambassadors are cheap + high reach.</p>
+    </div>
+
+    <div class="decision">
+      <div class="decision-title">
+        Revenue = GTM services, not distribution
+        <span class="decision-tag">Mar 17</span>
+      </div>
+      <p><strong>Decision:</strong> Offer free listings + paid featured listings + sponsored stories + event sponsorships.</p>
+      <p><strong>Reasoning:</strong> Can't sell audience you don't have yet. Sell content quality + association. Distribution becomes valuable later.</p>
+    </div>
+
+    <div class="decision">
+      <div class="decision-title">
+        Grants before VCs
+        <span class="decision-tag">Mar 17</span>
+      </div>
+      <p><strong>Decision:</strong> Apply for grants first (Google.org, AWS, Mozilla). No equity dilution.</p>
+      <p><strong>Reasoning:</strong> "AI for good" is exactly what grant programs fund. VCs later, only when data product has traction.</p>
+    </div>
+
+    <div class="decision">
+      <div class="decision-title">
+        HashRouter fix is #1 priority
+        <span class="decision-tag">Mar 17</span>
+      </div>
+      <p><strong>Decision:</strong> Migrate to BrowserRouter before investing in any content/SEO.</p>
+      <p><strong>Reasoning:</strong> All content investment is wasted if Google can't crawl the pages. Non-negotiable.</p>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- ═══ 08. SESSION HISTORY ═══ -->
+  <section id="sessions">
+    <div class="section-label">08 &mdash; Progress</div>
+    <h2>Session History</h2>
+
+    <div class="session-entry">
+      <div class="session-date">Session 3 &mdash; March 17, 2026 (Evening)</div>
+      <ul>
+        <li>Finalized narrative pivot: tool discovery platform, NOT just editorial</li>
+        <li>Defined value prop: help builders find what's already in the market</li>
+        <li>Identified revenue model: tools pay for GTM</li>
+        <li>Created 6-month growth budget: ~&#8377;5.5L for 5,000+ readers</li>
+        <li>Updated AGENT.md, SESSION.md, BUSINESS_STRATEGY.md</li>
+        <li>Created DECISIONS.md for tracking major decisions</li>
+      </ul>
+    </div>
+
+    <div class="session-entry">
+      <div class="session-date">Session 2 &mdash; March 17, 2026 (Afternoon)</div>
+      <ul>
+        <li>Generated 20 abstract illustrations (warm earth-tone editorial style)</li>
+        <li>Built Supabase CMS integration (stories table, hooks, pages)</li>
+        <li>Created Stories listing + StoryDetail pages</li>
+        <li>Created admin interface for managing stories</li>
+        <li>Generated LinkedIn banner via Canva</li>
+        <li>Full SEO audit &mdash; identified HashRouter as critical blocker</li>
+        <li>Comprehensive business strategy created</li>
+      </ul>
+    </div>
+
+    <div class="session-entry">
+      <div class="session-date">Session 1 &mdash; March 16, 2026</div>
+      <ul>
+        <li>Initial site build with GSAP animations</li>
+        <li>Homepage: Hero, Problem, WhatWeDo, Architecture, JoinMovement</li>
+        <li>Philosophy and Story pages</li>
+        <li>Supabase setup + stories CMS</li>
+        <li>20 illustrations generated</li>
+        <li>LinkedIn banner created</li>
+        <li>OG/Twitter meta tags added</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="text-align:center; padding-top:48px; border-top:1px solid var(--border);">
+    <p class="muted" style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.1em;">
+      AGENTIC AI FOR GOOD &mdash; INTERNAL STRATEGY DOCUMENT &mdash; MARCH 2026
+    </p>
+  </footer>
+
+</main>
+
+<!-- Active TOC highlight on scroll -->
+<script>
+  const sections = document.querySelectorAll('section[id]');
+  const tocLinks = document.querySelectorAll('.toc a');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        tocLinks.forEach(link => link.classList.remove('active'));
+        const active = document.querySelector(`.toc a[href="#${entry.target.id}"]`);
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-20% 0px -75% 0px' });
+
+  sections.forEach(section => observer.observe(section));
+
+  // Close sidebar on mobile after click
+  tocLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth <= 900) {
+        document.querySelector('.sidebar').classList.remove('open');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

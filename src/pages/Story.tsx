@@ -1,4 +1,6 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { Helmet } from 'react-helmet-async';
+import { supabase } from '@/lib/supabase';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -100,7 +102,30 @@ export default function Story() {
     return () => ctx.revert();
   }, []);
 
+  const [storyEmail, setStoryEmail] = useState('');
+  const [storySubmitted, setStorySubmitted] = useState(false);
+  const [storyLoading, setStoryLoading] = useState(false);
+
+  const handleStorySubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!storyEmail) return;
+    setStoryLoading(true);
+    const { error } = await supabase
+      .from('subscribers')
+      .insert({ email: storyEmail, source: 'story-page' });
+    setStoryLoading(false);
+    if (!error || error.code === '23505') {
+      setStorySubmitted(true);
+      setStoryEmail('');
+    }
+  };
+
   return (
+    <>
+    <Helmet>
+      <title>Our Story — The Mission Behind Agentic AI For Good</title>
+      <meta name="description" content="We started with a simple observation: real AI deployments were drowning in noise. Discover why we built Agentic AI For Good and what drives us." />
+    </Helmet>
     <section
       ref={sectionRef}
       className="relative w-full min-h-screen bg-[#F5F1EB] pt-24 lg:pt-32 pb-20"
@@ -136,6 +161,7 @@ export default function Story() {
                 <img
                   src={story.image}
                   alt={story.title}
+                  loading="lazy"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -166,22 +192,29 @@ export default function Story() {
               Are you building something with agentic AI? We would love to hear
               about it.
             </p>
-            <form className="flex flex-col sm:flex-row gap-3">
+            <form onSubmit={handleStorySubmit} className="flex flex-col sm:flex-row gap-3">
+              <label htmlFor="story-email" className="sr-only">Email address</label>
               <input
+                id="story-email"
                 type="email"
+                value={storyEmail}
+                onChange={(e) => setStoryEmail(e.target.value)}
                 placeholder="you@company.com"
+                required
                 className="flex-1 h-12 bg-[#F5F1EB] border border-[#1A1A1A]/8 rounded-xl px-4 text-sm text-[#1A1A1A] placeholder:text-[#6B6560]/60 focus:outline-none focus:ring-2 focus:ring-[#D4754E]/30 transition-all duration-200"
               />
               <button
                 type="submit"
-                className="h-12 bg-[#D4754E] hover:bg-[#C0653E] text-white rounded-xl px-6 text-sm font-medium transition-all duration-200"
+                disabled={storyLoading}
+                className="h-12 bg-[#D4754E] hover:bg-[#C0653E] text-white rounded-xl px-6 text-sm font-medium transition-all duration-200 disabled:opacity-60"
               >
-                Submit Your Story
+                {storySubmitted ? "We'll be in touch!" : storyLoading ? 'Sending...' : 'Submit Your Story'}
               </button>
             </form>
           </div>
         </div>
       </div>
     </section>
+    </>
   );
 }

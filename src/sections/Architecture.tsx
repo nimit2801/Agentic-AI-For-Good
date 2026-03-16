@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { ArrowRight, Cpu, Users, Shield } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -24,6 +25,7 @@ export default function Architecture() {
   const sectionRef = useRef<HTMLElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
   const ringRef = useRef<SVGSVGElement>(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -140,8 +142,11 @@ export default function Architecture() {
         </div>
 
         {/* CTA */}
-        <button className="text-[#D4754E] text-sm font-medium flex items-center gap-1.5 hover:gap-2.5 transition-all duration-200">
-          Explore the architecture library
+        <button
+          onClick={() => navigate('/stories')}
+          className="text-[#D4754E] text-sm font-medium flex items-center gap-1.5 hover:gap-2.5 transition-all duration-200"
+        >
+          Explore real agent deployments
           <ArrowRight size={14} />
         </button>
       </div>

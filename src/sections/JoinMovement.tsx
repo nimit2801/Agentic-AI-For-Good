@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useNavigate } from 'react-router-dom';
+import { supabase } from '@/lib/supabase';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -11,6 +13,9 @@ export default function JoinMovement() {
   const contentRef = useRef<HTMLDivElement>(null);
   const [email, setEmail] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState('');
+  const navigate = useNavigate();
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -39,14 +44,21 @@ export default function JoinMovement() {
     return () => ctx.revert();
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (email) {
+    if (!email) return;
+    setIsLoading(true);
+    setError('');
+    const { error: dbError } = await supabase
+      .from('subscribers')
+      .insert({ email, source: 'homepage' });
+    setIsLoading(false);
+    if (dbError && dbError.code !== '23505') {
+      setError('Something went wrong. Please try again.');
+    } else {
       setIsSubmitted(true);
-      setTimeout(() => {
-        setIsSubmitted(false);
-        setEmail('');
-      }, 3000);
+      setEmail('');
+      setTimeout(() => setIsSubmitted(false), 5000);
     }
   };
 
@@ -71,24 +83,32 @@ export default function JoinMovement() {
           {/* Form */}
           <form onSubmit={handleSubmit} className="mb-4">
             <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+              <label htmlFor="join-email" className="sr-only">Email address</label>
               <input
+                id="join-email"
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="you@company.com"
+                required
                 className="flex-1 h-12 lg:h-14 bg-white border border-[#1A1A1A]/8 rounded-[14px] px-5 text-sm lg:text-base text-[#1A1A1A] placeholder:text-[#6B6560]/60 focus:outline-none focus:ring-2 focus:ring-[#D4754E]/30 transition-all duration-200"
               />
               <Button
                 type="submit"
-                className="h-12 lg:h-14 bg-[#D4754E] hover:bg-[#C0653E] text-white rounded-[14px] px-6 lg:px-8 text-sm font-medium transition-all duration-200"
+                disabled={isLoading}
+                className="h-12 lg:h-14 bg-[#D4754E] hover:bg-[#C0653E] text-white rounded-[14px] px-6 lg:px-8 text-sm font-medium transition-all duration-200 disabled:opacity-60"
               >
-                {isSubmitted ? 'Subscribed!' : 'Get Early Access'}
+                {isSubmitted ? 'You\'re in!' : isLoading ? 'Joining...' : 'Get Early Access'}
               </Button>
             </div>
+            {error && <p className="text-red-500 text-sm mt-2">{error}</p>}
           </form>
 
           {/* Secondary Link */}
-          <button className="text-[#1A1A1A]/70 text-sm hover:text-[#D4754E] transition-colors duration-200 flex items-center gap-1 justify-center mx-auto">
+          <button
+            onClick={() => navigate('/story')}
+            className="text-[#1A1A1A]/70 text-sm hover:text-[#D4754E] transition-colors duration-200 flex items-center gap-1 justify-center mx-auto"
+          >
             Or submit a use case directly
             <ArrowRight size={14} />
           </button>

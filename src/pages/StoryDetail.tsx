@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Calendar, Tag, Loader2 } from 'lucide-react';
 import gsap from 'gsap';
@@ -117,6 +118,18 @@ export default function StoryDetail() {
   });
 
   return (
+    <>
+    {story && (
+      <Helmet>
+        <title>{story.title} | Agentic AI For Good</title>
+        <meta name="description" content={story.description} />
+        <meta property="og:title" content={`${story.title} | Agentic AI For Good`} />
+        <meta property="og:description" content={story.description} />
+        {story.image_url && <meta property="og:image" content={story.image_url} />}
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href={`https://agenticaiforgood.com/stories/${story.slug}`} />
+      </Helmet>
+    )}
     <article ref={articleRef} className="min-h-screen bg-[#F5F1EB] pt-28 pb-20 px-6 lg:px-[6vw]">
       <div className="max-w-[720px] mx-auto">
         {/* Back link */}
@@ -165,6 +178,7 @@ export default function StoryDetail() {
             <img
               src={story.image_url}
               alt={story.title}
+              loading="lazy"
               className="w-full object-cover"
             />
           </div>
@@ -195,5 +209,6 @@ export default function StoryDetail() {
         )}
       </div>
     </article>
+    </>
   );
 }

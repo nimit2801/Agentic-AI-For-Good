@@ -45,11 +45,11 @@ export default function Problem() {
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 lg:gap-0">
           {/* Headline */}
           <div className="lg:w-[58vw] max-w-4xl">
-            <div className="display-heading text-[clamp(28px,4.6vw,72px)] text-[#1A1A1A] leading-[1.05]">
+            <h2 className="display-heading text-[clamp(28px,4.6vw,72px)] text-[#1A1A1A] leading-[1.05]">
               <span className="block">AI IS LOUD.</span>
               <span className="block">HYPE DOMINATES.</span>
               <span className="block">REAL VALUE IS BURIED.</span>
-            </div>
+            </h2>
           </div>
 
           {/* Insight Card */}

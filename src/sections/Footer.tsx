@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Twitter, Linkedin, Github } from 'lucide-react';
+import { Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -9,15 +9,12 @@ gsap.registerPlugin(ScrollTrigger);
 const footerLinks = [
   { label: 'Home', href: '/' },
   { label: 'Philosophy', href: '/philosophy' },
-  { label: 'Story', href: '/story' },
-  { label: 'Use Cases', href: '/#use-cases' },
-  { label: 'Privacy', href: '#' },
+  { label: 'Our Story', href: '/story' },
+  { label: 'Use Cases', href: '/stories' },
 ];
 
 const socialLinks = [
-  { icon: Twitter, href: '#', label: 'Twitter' },
-  { icon: Linkedin, href: '#', label: 'LinkedIn' },
-  { icon: Github, href: '#', label: 'GitHub' },
+  { icon: Linkedin, href: 'https://linkedin.com/company/agentic-ai-for-good', label: 'LinkedIn' },
 ];
 
 export default function Footer() {
@@ -47,17 +44,6 @@ export default function Footer() {
     return () => ctx.revert();
   }, []);
 
-  const scrollToSection = (href: string) => {
-    if (href === '#') return;
-    if (href.startsWith('/#')) {
-      const id = href.replace('/#', '');
-      const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  };
-
   return (
     <footer
       ref={footerRef}
@@ -80,13 +66,7 @@ export default function Footer() {
             {footerLinks.map((link) => (
               <Link
                 key={link.label}
-                to={link.href.startsWith('/#') ? '/' : link.href}
-                onClick={(e) => {
-                  if (link.href.startsWith('/#')) {
-                    e.preventDefault();
-                    scrollToSection(link.href);
-                  }
-                }}
+                to={link.href}
                 className="text-[#1A1A1A]/70 hover:text-[#1A1A1A] text-sm transition-colors duration-200"
               >
                 {link.label}
