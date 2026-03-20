@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Logo Concepts — Agentic AI For Good</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #F5F1EB;
+      color: #1A1A1A;
+      padding: 48px 32px;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    header .label {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #D4754E;
+      margin-bottom: 12px;
+    }
+
+    header h1 {
+      font-size: clamp(28px, 4vw, 48px);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #1A1A1A;
+      margin-bottom: 12px;
+    }
+
+    header p {
+      color: #6B6560;
+      font-size: 15px;
+      max-width: 480px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .section-label {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #6B6560;
+      margin: 56px auto 24px;
+      max-width: 1400px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(26,26,26,0.08);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 32px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid rgba(26,26,26,0.08);
+      transition: box-shadow 0.2s;
+    }
+
+    .card:hover {
+      box-shadow: 0 12px 40px rgba(26,26,26,0.1);
+    }
+
+    .card-image {
+      width: 100%;
+      aspect-ratio: 1;
+      background: #F5F1EB;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      border-bottom: 1px solid rgba(26,26,26,0.06);
+    }
+
+    .card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .card-body {
+      padding: 20px 24px 24px;
+    }
+
+    .card-number {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #D4754E;
+      margin-bottom: 6px;
+    }
+
+    .card-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: #1A1A1A;
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
+    }
+
+    .card-desc {
+      font-size: 13px;
+      color: #6B6560;
+      line-height: 1.6;
+    }
+
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 14px;
+    }
+
+    .tag {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      background: #F5F1EB;
+      color: #6B6560;
+      border-radius: 6px;
+      padding: 3px 8px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 64px;
+      padding-top: 32px;
+      border-top: 1px solid rgba(26,26,26,0.08);
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      color: #6B6560;
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <p class="label">Brand Identity</p>
+    <h1>LOGO CONCEPTS</h1>
+    <p>Five directions for Agentic AI For Good. Pick your favourite — or tell Claude what to change.</p>
+  </header>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-image">
+        <img src="/images/logos/logo-01-geometric-nodes.png" alt="Concept 1 — Geometric Nodes" />
+      </div>
+      <div class="card-body">
+        <p class="card-number">Concept 01</p>
+        <h2 class="card-title">Geometric Nodes</h2>
+        <p class="card-desc">Three interconnected circular nodes forming an upward triangle with terracotta connecting lines. Suggests network, collaboration, and AI orchestration.</p>
+        <div class="card-tags">
+          <span class="tag">Warm beige bg</span>
+          <span class="tag">Network motif</span>
+          <span class="tag">Flat</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="/images/logos/logo-02-human-signal.png" alt="Concept 2 — Human + Signal" />
+      </div>
+      <div class="card-body">
+        <p class="card-number">Concept 02</p>
+        <h2 class="card-title">Human + Signal</h2>
+        <p class="card-desc">Abstract minimal human silhouette with a radiating arc/signal wave. Dark background edition — bold editorial feel. Signals human-AI collaboration.</p>
+        <div class="card-tags">
+          <span class="tag">Dark bg</span>
+          <span class="tag">Human-AI</span>
+          <span class="tag">Bold</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="/images/logos/logo-03-seedling.png" alt="Concept 3 — Geometric Seedling" />
+      </div>
+      <div class="card-body">
+        <p class="card-number">Concept 03</p>
+        <h2 class="card-title">Geometric Seedling</h2>
+        <p class="card-desc">Abstract geometric seedling/sprout from simple rectangles and triangles. Suggests growth, positive impact, and building from foundations.</p>
+        <div class="card-tags">
+          <span class="tag">Warm beige bg</span>
+          <span class="tag">Growth motif</span>
+          <span class="tag">Minimal</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="/images/logos/logo-04-letter-mark.png" alt="Concept 4 — Bold Letter Mark" />
+      </div>
+      <div class="card-body">
+        <p class="card-number">Concept 04</p>
+        <h2 class="card-title">Bold Letter Mark</h2>
+        <p class="card-desc">Geometric "A" mark built from angular shapes with terracotta accent. Clean, scalable, and instantly recognisable as a monogram at any size.</p>
+        <div class="card-tags">
+          <span class="tag">Monogram</span>
+          <span class="tag">Scalable</span>
+          <span class="tag">Editorial</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="/images/logos/logo-05-orbit-rings.png" alt="Concept 5 — Orbit Rings" />
+      </div>
+      <div class="card-body">
+        <p class="card-number">Concept 05</p>
+        <h2 class="card-title">Orbit Rings</h2>
+        <p class="card-desc">Concentric orbit rings with terracotta accents suggesting planetary motion or agent loops. Abstract, technical, and distinctly "agentic".</p>
+        <div class="card-tags">
+          <span class="tag">Abstract</span>
+          <span class="tag">Agent loops</span>
+          <span class="tag">Technical</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="section-label">Round 2 — Autumn Leaf Concepts</p>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-image">
+        <img src="/images/logos/logo-leaf-A-geometric.png" alt="Leaf A — Geometric Flat" />
+      </div>
+      <div class="card-body">
+        <p class="card-number">Leaf A</p>
+        <h2 class="card-title">Geometric Flat Leaf</h2>
+        <p class="card-desc">Clean maple/oak leaf silhouette built from flat polygons and triangles. Pure terracotta on beige — simple, scalable, instantly recognisable.</p>
+        <div class="card-tags">
+          <span class="tag">Geometric</span>
+          <span class="tag">Flat</span>
+          <span class="tag">Warm beige bg</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="/images/logos/logo-leaf-B-network.png" alt="Leaf B — Network Nodes" />
+      </div>
+      <div class="card-body">
+        <p class="card-number">Leaf B</p>
+        <h2 class="card-title">Leaf + Network</h2>
+        <p class="card-desc">Autumn leaf outline with AI network nodes at vein intersections. Bridges the organic/natural and the computational — warmth meets intelligence.</p>
+        <div class="card-tags">
+          <span class="tag">Network motif</span>
+          <span class="tag">AI feel</span>
+          <span class="tag">Warm beige bg</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="/images/logos/logo-leaf-C-deconstructed.png" alt="Leaf C — Deconstructed" />
+      </div>
+      <div class="card-body">
+        <p class="card-number">Leaf C</p>
+        <h2 class="card-title">Deconstructed Leaf</h2>
+        <p class="card-desc">Leaf broken into 3–4 offset geometric fragments suggesting motion, transformation, or emergence. Most abstract of the three — editorial edge.</p>
+        <div class="card-tags">
+          <span class="tag">Abstract</span>
+          <span class="tag">Motion</span>
+          <span class="tag">Edgy</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="section-label">Round 3 — Leaf A Iterations</p>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-image">
+        <img src="/images/logos/logo-leaf-1-angular.png" alt="Leaf 1 — Ultra Minimal Angular" />
+      </div>
+      <div class="card-body">
+        <p class="card-number">Iteration 1</p>
+        <h2 class="card-title">Ultra Minimal Angular</h2>
+        <p class="card-desc">Sharpest version — pure angular polygons, no extras. Just the leaf mark and wordmark. Maximum simplicity, maximum scalability.</p>
+        <div class="card-tags">
+          <span class="tag">Ultra minimal</span>
+          <span class="tag">Sharp</span>
+          <span class="tag">Solid fill</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="/images/logos/logo-leaf-2-outline.png" alt="Leaf 2 — Outline Only" />
+      </div>
+      <div class="card-body">
+        <p class="card-number">Iteration 2</p>
+        <h2 class="card-title">Outline Only</h2>
+        <p class="card-desc">Leaf as a terracotta stroke with no fill — lighter, more refined. Works beautifully small. Elegant and editorial.</p>
+        <div class="card-tags">
+          <span class="tag">Line art</span>
+          <span class="tag">No fill</span>
+          <span class="tag">Refined</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="/images/logos/logo-leaf-3-vein.png" alt="Leaf 3 — Solid with Vein" />
+      </div>
+      <div class="card-body">
+        <p class="card-number">Iteration 3</p>
+        <h2 class="card-title">Solid + Vein Line</h2>
+        <p class="card-desc">Bold solid leaf with a single beige vein cut through the centre. Adds just enough detail to feel crafted without over-decorating.</p>
+        <div class="card-tags">
+          <span class="tag">Solid</span>
+          <span class="tag">Detail vein</span>
+          <span class="tag">Bold</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="/images/logos/logo-leaf-4-overlap.png" alt="Leaf 4 — Two Overlapping Leaves" />
+      </div>
+      <div class="card-body">
+        <p class="card-number">Iteration 4</p>
+        <h2 class="card-title">Double Leaf</h2>
+        <p class="card-desc">Two overlapping geometric leaves in slightly different terracotta shades. Suggests depth, movement, and community — two things becoming one.</p>
+        <div class="card-tags">
+          <span class="tag">Layered</span>
+          <span class="tag">Motion</span>
+          <span class="tag">Community</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    Agentic AI For Good — Brand Identity Review &nbsp;·&nbsp; agenticaiforgood.com
+  </footer>
+
+</body>
+</html>

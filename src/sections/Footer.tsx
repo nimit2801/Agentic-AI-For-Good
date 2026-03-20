@@ -1,28 +1,29 @@
-import { useEffect, useRef } from 'react';
-import { Linkedin } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+'use client'
+import { useEffect, useRef } from 'react'
+import { Linkedin } from 'lucide-react'
+import Link from 'next/link'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger)
 
 const footerLinks = [
   { label: 'Home', href: '/' },
   { label: 'Philosophy', href: '/philosophy' },
   { label: 'Our Story', href: '/story' },
   { label: 'Use Cases', href: '/stories' },
-];
+]
 
 const socialLinks = [
   { icon: Linkedin, href: 'https://linkedin.com/company/agentic-ai-for-good', label: 'LinkedIn' },
-];
+]
 
 export default function Footer() {
-  const footerRef = useRef<HTMLElement>(null);
+  const footerRef = useRef<HTMLElement>(null)
 
   useEffect(() => {
-    const footer = footerRef.current;
-    if (!footer) return;
+    const footer = footerRef.current
+    if (!footer) return
 
     const ctx = gsap.context(() => {
       gsap.fromTo(
@@ -38,11 +39,11 @@ export default function Footer() {
             scrub: true,
           },
         }
-      );
-    }, footer);
+      )
+    }, footer)
 
-    return () => ctx.revert();
-  }, []);
+    return () => ctx.revert()
+  }, [])
 
   return (
     <footer
@@ -66,7 +67,7 @@ export default function Footer() {
             {footerLinks.map((link) => (
               <Link
                 key={link.label}
-                to={link.href}
+                href={link.href}
                 className="text-[#1A1A1A]/70 hover:text-[#1A1A1A] text-sm transition-colors duration-200"
               >
                 {link.label}
@@ -97,5 +98,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  );
+  )
 }

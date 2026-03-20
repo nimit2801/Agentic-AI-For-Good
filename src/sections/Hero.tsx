@@ -1,15 +1,16 @@
-import { useEffect, useRef } from 'react';
-import { Search, ArrowRight } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
-import gsap from 'gsap';
+'use client'
+import { useEffect, useRef } from 'react'
+import { Search, ArrowRight } from 'lucide-react'
+import { useRouter } from 'next/navigation'
+import gsap from 'gsap'
 
 export default function Hero() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const headlineRef = useRef<HTMLHeadingElement>(null);
-  const subheadlineRef = useRef<HTMLParagraphElement>(null);
-  const searchRef = useRef<HTMLDivElement>(null);
-  const linksRef = useRef<HTMLDivElement>(null);
-  const navigate = useNavigate();
+  const sectionRef = useRef<HTMLElement>(null)
+  const headlineRef = useRef<HTMLHeadingElement>(null)
+  const subheadlineRef = useRef<HTMLParagraphElement>(null)
+  const searchRef = useRef<HTMLDivElement>(null)
+  const linksRef = useRef<HTMLDivElement>(null)
+  const router = useRouter()
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -17,10 +18,10 @@ export default function Hero() {
       gsap.set([headlineRef.current, subheadlineRef.current, searchRef.current, linksRef.current], {
         opacity: 0,
         y: 20,
-      });
+      })
 
       // Animation timeline
-      const tl = gsap.timeline({ delay: 0.3 });
+      const tl = gsap.timeline({ delay: 0.3 })
 
       tl.to(headlineRef.current, {
         opacity: 1,
@@ -57,20 +58,20 @@ export default function Hero() {
             ease: 'power2.out',
           },
           '-=0.3'
-        );
-    }, sectionRef);
+        )
+    }, sectionRef)
 
-    return () => ctx.revert();
-  }, []);
+    return () => ctx.revert()
+  }, [])
 
   const scrollToSection = (id: string) => {
-    const element = document.querySelector(id);
+    const element = document.querySelector(id)
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: 'smooth' })
     }
-  };
+  }
 
-  const scrollToJoin = () => scrollToSection('#join');
+  const scrollToJoin = () => scrollToSection('#join')
 
   return (
     <section
@@ -121,7 +122,7 @@ export default function Hero() {
         {/* CTA Links */}
         <div ref={linksRef} className="flex items-center justify-center gap-6">
           <button
-            onClick={() => navigate('/stories')}
+            onClick={() => router.push('/stories')}
             className="text-[#1A1A1A] text-sm font-medium hover:text-[#D4754E] transition-colors duration-200 flex items-center gap-1"
           >
             Explore Use Cases
@@ -137,5 +138,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  );
+  )
 }

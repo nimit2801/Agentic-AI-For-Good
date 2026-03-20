@@ -1,9 +1,9 @@
-import { useEffect, useRef, useState } from 'react';
-import { Helmet } from 'react-helmet-async';
-import { Link } from 'react-router-dom';
-import { ArrowRight, Loader2 } from 'lucide-react';
-import gsap from 'gsap';
-import { useStories } from '@/hooks/use-stories';
+'use client'
+import { useEffect, useRef, useState } from 'react'
+import Link from 'next/link'
+import { ArrowRight, Loader2 } from 'lucide-react'
+import gsap from 'gsap'
+import { useStories } from '@/hooks/use-stories'
 
 const categories = [
   'All',
@@ -14,21 +14,21 @@ const categories = [
   'Enterprise AI',
   'AI Safety & Evaluation',
   'Open Data',
-];
+]
 
 export default function Stories() {
-  const { stories, loading, error } = useStories();
-  const [activeCategory, setActiveCategory] = useState('All');
-  const sectionRef = useRef<HTMLElement>(null);
-  const headerRef = useRef<HTMLDivElement>(null);
+  const { stories, loading, error } = useStories()
+  const [activeCategory, setActiveCategory] = useState('All')
+  const sectionRef = useRef<HTMLElement>(null)
+  const headerRef = useRef<HTMLDivElement>(null)
 
   const filtered =
     activeCategory === 'All'
       ? stories
-      : stories.filter((s) => s.category === activeCategory);
+      : stories.filter((s) => s.category === activeCategory)
 
   useEffect(() => {
-    if (loading || !headerRef.current) return;
+    if (loading || !headerRef.current) return
 
     const ctx = gsap.context(() => {
       gsap.from(headerRef.current, {
@@ -36,20 +36,13 @@ export default function Stories() {
         y: 20,
         duration: 0.8,
         ease: 'power2.out',
-      });
+      })
+    }, sectionRef)
 
-      // Card animations handled via CSS to avoid GSAP/React conflicts
-    }, sectionRef);
-
-    return () => ctx.revert();
-  }, [loading, activeCategory]);
+    return () => ctx.revert()
+  }, [loading, activeCategory])
 
   return (
-    <>
-    <Helmet>
-      <title>AI Use Cases & Stories — Real Impact from Autonomous AI | Agentic AI For Good</title>
-      <meta name="description" content="Explore real-world AI deployments across healthcare, logistics, developer tools, and open source. Curated stories of autonomous AI systems making measurable impact." />
-    </Helmet>
     <section
       ref={sectionRef}
       className="min-h-screen bg-[#F5F1EB] pt-28 pb-20 px-6 lg:px-[6vw]"
@@ -110,7 +103,7 @@ export default function Stories() {
           {filtered.map((story, i) => (
             <Link
               key={story.id}
-              to={`/stories/${story.slug}`}
+              href={`/stories/${story.slug}`}
               className="story-card group bg-white rounded-2xl overflow-hidden border border-[#1A1A1A]/5 hover:border-[#D4754E]/30 transition-all duration-300 hover:shadow-lg"
               style={{
                 opacity: 0,
@@ -160,6 +153,5 @@ export default function Stories() {
         </div>
       )}
     </section>
-    </>
-  );
+  )
 }

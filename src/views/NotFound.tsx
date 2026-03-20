@@ -1,8 +1,9 @@
-import { useNavigate } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+'use client'
+import { useRouter } from 'next/navigation'
+import { ArrowRight } from 'lucide-react'
 
 export default function NotFound() {
-  const navigate = useNavigate();
+  const router = useRouter()
 
   return (
     <section className="min-h-screen bg-[#F5F1EB] flex items-center justify-center px-6">
@@ -12,10 +13,10 @@ export default function NotFound() {
           PAGE NOT FOUND
         </h1>
         <p className="text-[#6B6560] text-base mb-8">
-          The page you're looking for doesn't exist. It may have moved or been removed.
+          The page you&apos;re looking for doesn&apos;t exist. It may have moved or been removed.
         </p>
         <button
-          onClick={() => navigate('/')}
+          onClick={() => router.push('/')}
           className="inline-flex items-center gap-2 text-[#1A1A1A] text-sm font-medium hover:text-[#D4754E] transition-colors duration-200"
         >
           Back to home
@@ -23,5 +24,5 @@ export default function NotFound() {
         </button>
       </div>
     </section>
-  );
+  )
 }

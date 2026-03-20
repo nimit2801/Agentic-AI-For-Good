@@ -1,33 +1,34 @@
-import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { useAuth } from '@/hooks/use-auth';
-import { Loader2, ArrowRight, Lock } from 'lucide-react';
+'use client'
+import { useState, useEffect } from 'react'
+import { useRouter } from 'next/navigation'
+import { useAuth } from '@/hooks/use-auth'
+import { Loader2, ArrowRight, Lock } from 'lucide-react'
 
 export default function AdminLogin() {
-  const { user, loading: authLoading, signIn } = useAuth();
-  const navigate = useNavigate();
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
-  const [submitting, setSubmitting] = useState(false);
+  const { user, loading: authLoading, signIn } = useAuth()
+  const router = useRouter()
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [error, setError] = useState('')
+  const [submitting, setSubmitting] = useState(false)
 
   useEffect(() => {
     if (!authLoading && user) {
-      navigate('/admin/stories', { replace: true });
+      router.replace('/admin/stories')
     }
-  }, [user, authLoading, navigate]);
+  }, [user, authLoading, router])
 
   async function handleSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    setError('');
-    setSubmitting(true);
+    e.preventDefault()
+    setError('')
+    setSubmitting(true)
     try {
-      await signIn(email, password);
-      navigate('/admin/stories', { replace: true });
+      await signIn(email, password)
+      router.replace('/admin/stories')
     } catch (err: unknown) {
-      setError(err instanceof Error ? err.message : 'Authentication failed');
+      setError(err instanceof Error ? err.message : 'Authentication failed')
     } finally {
-      setSubmitting(false);
+      setSubmitting(false)
     }
   }
 
@@ -36,7 +37,7 @@ export default function AdminLogin() {
       <div className="min-h-screen flex items-center justify-center bg-[#0A0A0A]">
         <Loader2 className="w-5 h-5 animate-spin text-[#D4754E]" />
       </div>
-    );
+    )
   }
 
   return (
@@ -149,5 +150,5 @@ export default function AdminLogin() {
         </p>
       </div>
     </div>
-  );
+  )
 }

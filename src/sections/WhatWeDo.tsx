@@ -1,9 +1,10 @@
-import { useEffect, useRef } from 'react';
-import { Layers, GitBranch, BarChart3 } from 'lucide-react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+'use client'
+import { useEffect, useRef } from 'react'
+import { Layers, GitBranch, BarChart3 } from 'lucide-react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger)
 
 const features = [
   {
@@ -21,17 +22,17 @@ const features = [
     title: 'Measure',
     description: 'Impact metrics you can verify and compare.',
   },
-];
+]
 
 export default function WhatWeDo() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const contentRef = useRef<HTMLDivElement>(null);
+  const sectionRef = useRef<HTMLElement>(null)
+  const contentRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    const section = sectionRef.current;
-    const content = contentRef.current;
+    const section = sectionRef.current
+    const content = contentRef.current
 
-    if (!section || !content) return;
+    if (!section || !content) return
 
     const ctx = gsap.context(() => {
       gsap.fromTo(
@@ -48,11 +49,11 @@ export default function WhatWeDo() {
             scrub: true,
           },
         }
-      );
-    }, section);
+      )
+    }, section)
 
-    return () => ctx.revert();
-  }, []);
+    return () => ctx.revert()
+  }, [])
 
   return (
     <section
@@ -159,5 +160,5 @@ export default function WhatWeDo() {
         </div>
       </div>
     </section>
-  );
+  )
 }

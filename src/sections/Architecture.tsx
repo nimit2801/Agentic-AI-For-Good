@@ -1,10 +1,11 @@
-import { useEffect, useRef } from 'react';
-import { ArrowRight, Cpu, Users, Shield } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+'use client'
+import { useEffect, useRef } from 'react'
+import { ArrowRight, Cpu, Users, Shield } from 'lucide-react'
+import { useRouter } from 'next/navigation'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger)
 
 const pillars = [
   {
@@ -19,19 +20,19 @@ const pillars = [
     icon: Shield,
     text: 'Evaluation rigs that catch regressions early',
   },
-];
+]
 
 export default function Architecture() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const contentRef = useRef<HTMLDivElement>(null);
-  const ringRef = useRef<SVGSVGElement>(null);
-  const navigate = useNavigate();
+  const sectionRef = useRef<HTMLElement>(null)
+  const contentRef = useRef<HTMLDivElement>(null)
+  const ringRef = useRef<SVGSVGElement>(null)
+  const router = useRouter()
 
   useEffect(() => {
-    const section = sectionRef.current;
-    const content = contentRef.current;
+    const section = sectionRef.current
+    const content = contentRef.current
 
-    if (!section || !content) return;
+    if (!section || !content) return
 
     const ctx = gsap.context(() => {
       gsap.fromTo(
@@ -48,7 +49,7 @@ export default function Architecture() {
             scrub: true,
           },
         }
-      );
+      )
 
       // Continuous ring rotation
       if (ringRef.current) {
@@ -57,12 +58,12 @@ export default function Architecture() {
           duration: 30,
           repeat: -1,
           ease: 'none',
-        });
+        })
       }
-    }, section);
+    }, section)
 
-    return () => ctx.revert();
-  }, []);
+    return () => ctx.revert()
+  }, [])
 
   return (
     <section
@@ -143,7 +144,7 @@ export default function Architecture() {
 
         {/* CTA */}
         <button
-          onClick={() => navigate('/stories')}
+          onClick={() => router.push('/stories')}
           className="text-[#D4754E] text-sm font-medium flex items-center gap-1.5 hover:gap-2.5 transition-all duration-200"
         >
           Explore real agent deployments
@@ -151,5 +152,5 @@ export default function Architecture() {
         </button>
       </div>
     </section>
-  );
+  )
 }

@@ -1,27 +1,27 @@
-import { useEffect, useRef, useState } from 'react';
-import { ArrowRight } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { useNavigate } from 'react-router-dom';
-import { supabase } from '@/lib/supabase';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+'use client'
+import { useEffect, useRef, useState } from 'react'
+import { ArrowRight } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { useRouter } from 'next/navigation'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger)
 
 export default function JoinMovement() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const contentRef = useRef<HTMLDivElement>(null);
-  const [email, setEmail] = useState('');
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState('');
-  const navigate = useNavigate();
+  const sectionRef = useRef<HTMLElement>(null)
+  const contentRef = useRef<HTMLDivElement>(null)
+  const [email, setEmail] = useState('')
+  const [isSubmitted, setIsSubmitted] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
+  const [error, setError] = useState('')
+  const router = useRouter()
 
   useEffect(() => {
-    const section = sectionRef.current;
-    const content = contentRef.current;
+    const section = sectionRef.current
+    const content = contentRef.current
 
-    if (!section || !content) return;
+    if (!section || !content) return
 
     const ctx = gsap.context(() => {
       gsap.fromTo(
@@ -38,29 +38,36 @@ export default function JoinMovement() {
             scrub: true,
           },
         }
-      );
-    }, section);
+      )
+    }, section)
 
-    return () => ctx.revert();
-  }, []);
+    return () => ctx.revert()
+  }, [])
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email) return;
-    setIsLoading(true);
-    setError('');
-    const { error: dbError } = await supabase
-      .from('subscribers')
-      .insert({ email, source: 'homepage' });
-    setIsLoading(false);
-    if (dbError && dbError.code !== '23505') {
-      setError('Something went wrong. Please try again.');
-    } else {
-      setIsSubmitted(true);
-      setEmail('');
-      setTimeout(() => setIsSubmitted(false), 5000);
+    e.preventDefault()
+    if (!email) return
+    setIsLoading(true)
+    setError('')
+    try {
+      const res = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, source: 'homepage' }),
+      })
+      if (!res.ok) {
+        const data = await res.json()
+        if (data.error) throw new Error(data.error)
+      }
+      setIsSubmitted(true)
+      setEmail('')
+      setTimeout(() => setIsSubmitted(false), 5000)
+    } catch {
+      setError('Something went wrong. Please try again.')
+    } finally {
+      setIsLoading(false)
     }
-  };
+  }
 
   return (
     <section
@@ -77,7 +84,7 @@ export default function JoinMovement() {
 
           {/* Subcopy */}
           <p className="text-[#6B6560] text-base lg:text-lg mb-8 lg:mb-10 max-w-lg mx-auto">
-            Builders, founders, researchers, operators—share what you're shipping. We'll feature the best.
+            Builders, founders, researchers, operators—share what you&apos;re shipping. We&apos;ll feature the best.
           </p>
 
           {/* Form */}
@@ -98,7 +105,7 @@ export default function JoinMovement() {
                 disabled={isLoading}
                 className="h-12 lg:h-14 bg-[#D4754E] hover:bg-[#C0653E] text-white rounded-[14px] px-6 lg:px-8 text-sm font-medium transition-all duration-200 disabled:opacity-60"
               >
-                {isSubmitted ? 'You\'re in!' : isLoading ? 'Joining...' : 'Get Early Access'}
+                {isSubmitted ? "You're in!" : isLoading ? 'Joining...' : 'Get Early Access'}
               </Button>
             </div>
             {error && <p className="text-red-500 text-sm mt-2">{error}</p>}
@@ -106,7 +113,7 @@ export default function JoinMovement() {
 
           {/* Secondary Link */}
           <button
-            onClick={() => navigate('/story')}
+            onClick={() => router.push('/story')}
             className="text-[#1A1A1A]/70 text-sm hover:text-[#D4754E] transition-colors duration-200 flex items-center gap-1 justify-center mx-auto"
           >
             Or submit a use case directly
@@ -115,5 +122,5 @@ export default function JoinMovement() {
         </div>
       </div>
     </section>
-  );
+  )
 }

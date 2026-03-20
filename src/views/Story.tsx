@@ -1,10 +1,9 @@
-import { useEffect, useRef, useState } from 'react';
-import { Helmet } from 'react-helmet-async';
-import { supabase } from '@/lib/supabase';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+'use client'
+import { useEffect, useRef, useState } from 'react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger)
 
 const storySections = [
   {
@@ -31,18 +30,18 @@ const storySections = [
       'We envision a world where agentic AI is understood not through hype, but through results. Where every builder has access to the patterns, pitfalls, and proven approaches of those who came before. Where the conversation shifts from what AI might do, to what AI is already doing—responsibly, effectively, and for good.',
     bgColor: '#9B8AA5',
   },
-];
+]
 
 export default function Story() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const headerRef = useRef<HTMLDivElement>(null);
-  const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const sectionRef = useRef<HTMLElement>(null)
+  const headerRef = useRef<HTMLDivElement>(null)
+  const sectionRefs = useRef<(HTMLDivElement | null)[]>([])
 
   useEffect(() => {
-    const header = headerRef.current;
-    const sections = sectionRefs.current.filter(Boolean);
+    const header = headerRef.current
+    const sections = sectionRefs.current.filter(Boolean)
 
-    if (!header) return;
+    if (!header) return
 
     const ctx = gsap.context(() => {
       // Header animation
@@ -56,13 +55,13 @@ export default function Story() {
           ease: 'power2.out',
           delay: 0.2,
         }
-      );
+      )
 
       // Story sections animation
       sections.forEach((section) => {
-        if (!section) return;
-        const image = section.querySelector('.story-image');
-        const content = section.querySelector('.story-content');
+        if (!section) return
+        const image = section.querySelector('.story-image')
+        const content = section.querySelector('.story-content')
 
         gsap.fromTo(
           image,
@@ -78,7 +77,7 @@ export default function Story() {
               toggleActions: 'play none none reverse',
             },
           }
-        );
+        )
 
         gsap.fromTo(
           content,
@@ -95,37 +94,37 @@ export default function Story() {
             },
             delay: 0.15,
           }
-        );
-      });
-    }, sectionRef);
+        )
+      })
+    }, sectionRef)
 
-    return () => ctx.revert();
-  }, []);
+    return () => ctx.revert()
+  }, [])
 
-  const [storyEmail, setStoryEmail] = useState('');
-  const [storySubmitted, setStorySubmitted] = useState(false);
-  const [storyLoading, setStoryLoading] = useState(false);
+  const [storyEmail, setStoryEmail] = useState('')
+  const [storySubmitted, setStorySubmitted] = useState(false)
+  const [storyLoading, setStoryLoading] = useState(false)
 
   const handleStorySubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!storyEmail) return;
-    setStoryLoading(true);
-    const { error } = await supabase
-      .from('subscribers')
-      .insert({ email: storyEmail, source: 'story-page' });
-    setStoryLoading(false);
-    if (!error || error.code === '23505') {
-      setStorySubmitted(true);
-      setStoryEmail('');
+    e.preventDefault()
+    if (!storyEmail) return
+    setStoryLoading(true)
+    try {
+      const res = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: storyEmail, source: 'story-page' }),
+      })
+      if (res.ok) {
+        setStorySubmitted(true)
+        setStoryEmail('')
+      }
+    } finally {
+      setStoryLoading(false)
     }
-  };
+  }
 
   return (
-    <>
-    <Helmet>
-      <title>Our Story — The Mission Behind Agentic AI For Good</title>
-      <meta name="description" content="We started with a simple observation: real AI deployments were drowning in noise. Discover why we built Agentic AI For Good and what drives us." />
-    </Helmet>
     <section
       ref={sectionRef}
       className="relative w-full min-h-screen bg-[#F5F1EB] pt-24 lg:pt-32 pb-20"
@@ -148,7 +147,7 @@ export default function Story() {
           {storySections.map((story, index) => (
             <div
               key={story.title}
-              ref={(el) => { sectionRefs.current[index] = el; }}
+              ref={(el) => { sectionRefs.current[index] = el }}
               className={`flex flex-col ${
                 index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
               } gap-8 lg:gap-16 items-center`}
@@ -215,6 +214,5 @@ export default function Story() {
         </div>
       </div>
     </section>
-    </>
-  );
+  )
 }

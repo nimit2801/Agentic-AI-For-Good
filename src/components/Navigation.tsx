@@ -1,80 +1,91 @@
-import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+'use client'
+import { useState, useEffect } from 'react'
+import { Menu, X } from 'lucide-react'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { Button } from '@/components/ui/button'
 
 const navLinks = [
-  { label: 'Use Cases', href: '#use-cases' },
-  { label: 'Architecture', href: '#architecture' },
-  { label: 'About', href: '#join' },
-  { label: 'Contact', href: '#newsletter' },
-];
+  { label: 'Home', href: '/' },
+  { label: 'Philosophy', href: '/philosophy' },
+  { label: 'Story', href: '/story' },
+  { label: 'Stories', href: '/stories' },
+  { label: 'Architecture', href: '/#architecture' },
+]
 
 export default function Navigation() {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const pathname = usePathname()
+  const isHome = pathname === '/'
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 100);
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+      setIsScrolled(window.scrollY > 100)
+    }
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    if (href.startsWith('/#')) {
+      const id = href.replace('/#', '')
+      const element = document.getElementById(id)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' })
+      }
     }
-    setIsMobileMenuOpen(false);
-  };
+    setIsMobileMenuOpen(false)
+  }
 
   return (
     <>
+      {/* Navigation */}
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          isScrolled
-            ? 'bg-[#F6F7FA]/90 backdrop-blur-md border-b border-[#0B0C10]/5'
+          isScrolled || !isHome
+            ? 'bg-[#F5F1EB]/90 backdrop-blur-md border-b border-[#1A1A1A]/5'
             : 'bg-transparent'
         }`}
       >
         <div className="w-full px-6 lg:px-[6vw]">
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
-            <a
-              href="#"
-              className="text-[#0B0C10] font-semibold text-sm lg:text-base tracking-tight"
-              onClick={(e) => {
-                e.preventDefault();
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-              }}
+            <Link
+              href="/"
+              className="text-[#1A1A1A] font-semibold text-sm lg:text-base tracking-tight"
             >
               Agentic AI For Good
-            </a>
+            </Link>
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center gap-8">
               {navLinks.map((link) => (
-                <button
+                <Link
                   key={link.label}
-                  onClick={() => scrollToSection(link.href)}
-                  className="text-[#0B0C10]/70 hover:text-[#0B0C10] text-sm font-medium transition-colors duration-200"
+                  href={link.href.startsWith('/#') ? '/' : link.href}
+                  onClick={(e) => {
+                    if (link.href.startsWith('/#')) {
+                      e.preventDefault()
+                      scrollToSection(link.href)
+                    }
+                  }}
+                  className="text-[#1A1A1A]/70 hover:text-[#1A1A1A] text-sm font-medium transition-colors duration-200"
                 >
                   {link.label}
-                </button>
+                </Link>
               ))}
-              <Button
-                onClick={() => scrollToSection('#join')}
-                className="bg-[#7B61FF] hover:bg-[#6B51EF] text-white rounded-full px-5 py-2 text-sm font-medium transition-all duration-200"
-              >
-                Submit a Use Case
-              </Button>
+              <Link href="/story">
+                <Button className="bg-[#D4754E] hover:bg-[#C0653E] text-white rounded-full px-5 py-2 text-sm font-medium transition-all duration-200">
+                  Submit a Use Case
+                </Button>
+              </Link>
             </div>
 
             {/* Mobile Menu Button */}
             <button
-              className="lg:hidden p-2 text-[#0B0C10]"
+              className="lg:hidden p-2 text-[#1A1A1A]"
+              aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -85,28 +96,34 @@ export default function Navigation() {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed inset-0 z-40 bg-[#F6F7FA] transition-transform duration-500 lg:hidden ${
+        className={`fixed inset-0 z-40 bg-[#F5F1EB] transition-transform duration-500 lg:hidden ${
           isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
         <div className="flex flex-col items-center justify-center h-full gap-8">
           {navLinks.map((link) => (
-            <button
+            <Link
               key={link.label}
-              onClick={() => scrollToSection(link.href)}
-              className="text-[#0B0C10] text-2xl font-semibold"
+              href={link.href.startsWith('/#') ? '/' : link.href}
+              onClick={(e) => {
+                if (link.href.startsWith('/#')) {
+                  e.preventDefault()
+                  scrollToSection(link.href)
+                }
+                setIsMobileMenuOpen(false)
+              }}
+              className="text-[#1A1A1A] text-2xl font-semibold"
             >
               {link.label}
-            </button>
+            </Link>
           ))}
-          <Button
-            onClick={() => scrollToSection('#join')}
-            className="bg-[#7B61FF] hover:bg-[#6B51EF] text-white rounded-full px-8 py-3 text-lg font-medium mt-4"
-          >
-            Submit a Use Case
-          </Button>
+          <Link href="/story" onClick={() => setIsMobileMenuOpen(false)}>
+            <Button className="bg-[#D4754E] hover:bg-[#C0653E] text-white rounded-full px-8 py-3 text-lg font-medium mt-4">
+              Submit a Use Case
+            </Button>
+          </Link>
         </div>
       </div>
     </>
-  );
+  )
 }

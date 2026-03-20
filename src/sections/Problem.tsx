@@ -1,19 +1,20 @@
-import { useEffect, useRef } from 'react';
-import { TrendingUp } from 'lucide-react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+'use client'
+import { useEffect, useRef } from 'react'
+import { TrendingUp } from 'lucide-react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger)
 
 export default function Problem() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const contentRef = useRef<HTMLDivElement>(null);
+  const sectionRef = useRef<HTMLElement>(null)
+  const contentRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    const section = sectionRef.current;
-    const content = contentRef.current;
+    const section = sectionRef.current
+    const content = contentRef.current
 
-    if (!section || !content) return;
+    if (!section || !content) return
 
     const ctx = gsap.context(() => {
       gsap.fromTo(
@@ -30,11 +31,11 @@ export default function Problem() {
             scrub: true,
           },
         }
-      );
-    }, section);
+      )
+    }, section)
 
-    return () => ctx.revert();
-  }, []);
+    return () => ctx.revert()
+  }, [])
 
   return (
     <section
@@ -73,5 +74,5 @@ export default function Problem() {
         </div>
       </div>
     </section>
-  );
+  )
 }

@@ -6,6 +6,9 @@ import { defineConfig } from "vite"
 export default defineConfig({
   base: '/',
   plugins: [react()],
+  server: {
+    allowedHosts: ['66e3-2409-408c-adbb-b74c-1546-d7ff-ac0-424.ngrok-free.app'],
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

@@ -1,9 +1,9 @@
-import { useEffect, useRef } from 'react';
-import { Helmet } from 'react-helmet-async';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+'use client'
+import { useEffect, useRef } from 'react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger)
 
 const philosophyCards = [
   {
@@ -30,18 +30,18 @@ const philosophyCards = [
       'The future is not human vs. machine. It is human with machine. We design for collaboration—systems that learn from feedback, adapt to preference, and grow more helpful over time. The goal is synergy, not substitution.',
     bgColor: '#D4C4B0',
   },
-];
+]
 
 export default function Philosophy() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const headerRef = useRef<HTMLDivElement>(null);
-  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const sectionRef = useRef<HTMLElement>(null)
+  const headerRef = useRef<HTMLDivElement>(null)
+  const cardRefs = useRef<(HTMLDivElement | null)[]>([])
 
   useEffect(() => {
-    const header = headerRef.current;
-    const cards = cardRefs.current.filter(Boolean);
+    const header = headerRef.current
+    const cards = cardRefs.current.filter(Boolean)
 
-    if (!header) return;
+    if (!header) return
 
     const ctx = gsap.context(() => {
       // Header animation
@@ -55,11 +55,11 @@ export default function Philosophy() {
           ease: 'power2.out',
           delay: 0.2,
         }
-      );
+      )
 
       // Cards animation
       cards.forEach((card, index) => {
-        if (!card) return;
+        if (!card) return
         gsap.fromTo(
           card,
           { y: 60, opacity: 0 },
@@ -75,19 +75,14 @@ export default function Philosophy() {
             },
             delay: index * 0.1,
           }
-        );
-      });
-    }, sectionRef);
+        )
+      })
+    }, sectionRef)
 
-    return () => ctx.revert();
-  }, []);
+    return () => ctx.revert()
+  }, [])
 
   return (
-    <>
-    <Helmet>
-      <title>Our Philosophy — How We Think About AI Agents | Agentic AI For Good</title>
-      <meta name="description" content="Agency, awareness, and collaboration — the three principles guiding how we think about AI systems that act in the world." />
-    </Helmet>
     <section
       ref={sectionRef}
       className="relative w-full min-h-screen bg-[#F5F1EB] pt-24 lg:pt-32 pb-20"
@@ -112,7 +107,7 @@ export default function Philosophy() {
           {philosophyCards.map((card, index) => (
             <div
               key={card.title}
-              ref={(el) => { cardRefs.current[index] = el; }}
+              ref={(el) => { cardRefs.current[index] = el }}
               className="group"
             >
               {/* Image Card */}
@@ -147,8 +142,8 @@ export default function Philosophy() {
         {/* Bottom Quote */}
         <div className="mt-20 lg:mt-32 max-w-2xl mx-auto text-center">
           <blockquote className="text-[#1A1A1A] text-xl lg:text-2xl font-medium italic leading-relaxed mb-6">
-            "The question is not whether AI will change the world. It is whether
-            we will shape that change with intention."
+            &ldquo;The question is not whether AI will change the world. It is whether
+            we will shape that change with intention.&rdquo;
           </blockquote>
           <cite className="text-[#6B6560] text-sm not-italic">
             — Our guiding principle
@@ -156,6 +151,5 @@ export default function Philosophy() {
         </div>
       </div>
     </section>
-    </>
-  );
+  )
 }

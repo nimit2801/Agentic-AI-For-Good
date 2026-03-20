@@ -1,29 +1,30 @@
-import { useState } from 'react';
-import { Search, LogOut, ExternalLink, Loader2, Eye, EyeOff, BookOpen } from 'lucide-react';
-import { useAllStories } from '@/hooks/use-stories';
-import { useAuth } from '@/hooks/use-auth';
-import { supabase } from '@/lib/supabase';
+'use client'
+import { useState } from 'react'
+import { Search, LogOut, ExternalLink, Loader2, Eye, EyeOff, BookOpen } from 'lucide-react'
+import { useAllStories } from '@/hooks/use-stories'
+import { useAuth } from '@/hooks/use-auth'
 
 export default function AdminStories() {
-  const { stories, loading, error, refetch } = useAllStories();
-  const { signOut } = useAuth();
-  const [search, setSearch] = useState('');
-  const [toggling, setToggling] = useState<string | null>(null);
+  const { stories, loading, error, refetch } = useAllStories()
+  const { signOut } = useAuth()
+  const [search, setSearch] = useState('')
+  const [toggling, setToggling] = useState<string | null>(null)
 
   const filtered = stories.filter((s) =>
     s.title.toLowerCase().includes(search.toLowerCase())
-  );
+  )
 
-  const publishedCount = stories.filter((s) => s.published).length;
+  const publishedCount = stories.filter((s) => s.published).length
 
   async function togglePublished(id: string, current: boolean) {
-    setToggling(id);
-    await supabase
-      .from('stories')
-      .update({ published: !current })
-      .eq('id', id);
-    await refetch();
-    setToggling(null);
+    setToggling(id)
+    await fetch('/api/admin/stories', {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id, published: !current }),
+    })
+    await refetch()
+    setToggling(null)
   }
 
   function formatDate(dateStr: string) {
@@ -31,7 +32,7 @@ export default function AdminStories() {
       month: 'short',
       day: 'numeric',
       year: 'numeric',
-    });
+    })
   }
 
   return (
@@ -201,7 +202,7 @@ export default function AdminStories() {
 
                   {/* External link */}
                   <a
-                    href={`/#/stories/${story.slug}`}
+                    href={`/stories/${story.slug}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#333] hover:text-[#D4754E] transition-colors duration-200"
@@ -224,5 +225,5 @@ export default function AdminStories() {
         </p>
       </div>
     </div>
-  );
+  )
 }
