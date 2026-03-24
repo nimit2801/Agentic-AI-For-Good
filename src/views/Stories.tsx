@@ -112,7 +112,7 @@ export default function Stories() {
               }}
             >
               {story.image_url && (
-                <div className="aspect-[16/9] overflow-hidden bg-[#E8E2D9]">
+                <div className="aspect-square overflow-hidden bg-[#E8E2D9]">
                   <img
                     src={story.image_url}
                     alt={story.title}
