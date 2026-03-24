@@ -21,3 +21,33 @@ export type Story = {
   created_at: string;
   updated_at: string;
 };
+
+export type Tool = {
+  id: string;
+  name: string;
+  slug: string;
+  description: string;
+  long_description: string | null;
+  url: string;
+  logo_url: string | null;
+  category: string | null;
+  tags: string[] | null;
+  pricing: 'free' | 'freemium' | 'paid' | null;
+  is_open_source: boolean;
+  featured: boolean;
+  approved: boolean;
+  submitted_by: string | null;
+  created_at: string;
+  updated_at: string;
+};
+
+export type ToolSubmission = {
+  id: string;
+  tool_name: string;
+  tool_url: string;
+  description: string | null;
+  submitter_email: string | null;
+  submitter_name: string | null;
+  status: 'pending' | 'approved' | 'rejected';
+  created_at: string;
+};
