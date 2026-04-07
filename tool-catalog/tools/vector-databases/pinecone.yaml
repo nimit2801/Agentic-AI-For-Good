@@ -1,0 +1,84 @@
+name: Pinecone
+slug: pinecone
+tagline: Managed vector database for AI applications with sub-millisecond latency
+description: Pinecone is a fully managed vector database that makes it easy to build high-performance vector search applications at any scale.
+long_description: |
+  Pinecone is a managed vector database designed for machine learning applications.
+  
+  Key features:
+  - Sub-millisecond query latency at any scale
+  - Metadata filtering and hybrid search
+  - Real-time updates with no reindexing delays
+  - Built-in text embedding models
+  - Namespace isolation for multi-tenancy
+  - RESTful and gRPC APIs
+  - SDKs for Python, Node.js, Java, and Go
+  
+  Use cases include semantic search, recommendation engines, anomaly detection, and data labeling.
+category: Vector DB
+tags:
+  - vector-database
+  - embeddings
+  - search
+  - similarity-search
+  - managed
+  - saas
+website_url: https://www.pinecone.io
+github_url: https://github.com/pinecone-io
+docs_url: https://docs.pinecone.io
+pricing: freemium
+license: Proprietary
+is_open_source: false
+maintained: true
+stack:
+  languages:
+    - Python
+    - JavaScript
+    - Node.js
+    - Java
+    - Go
+  frameworks:
+    - LangChain
+    - LlamaIndex
+    - OpenAI
+integration:
+  install_command: pip install pinecone-client
+  code_snippet: |
+    from pinecone import Pinecone, ServerlessSpec
+
+    pc = Pinecone(api_key="your-api-key")
+
+    # Create index
+    pc.create_index(
+        name="my-index",
+        dimension=1536,
+        metric="cosine",
+        spec=ServerlessSpec(
+            cloud="aws",
+            region="us-east-1"
+        )
+    )
+
+    # Connect and upsert
+    index = pc.Index("my-index")
+    index.upsert(vectors=[
+        {"id": "vec1", "values": [0.1, 0.2, 0.3, ...], "metadata": {"genre": "drama"}}
+    ])
+
+    # Query
+    results = index.query(
+        vector=[0.1, 0.2, 0.3, ...],
+        top_k=3,
+        filter={"genre": {"$eq": "drama"}}
+    )
+  guide: |
+    ## Getting Started
+
+    1. Sign up at pinecone.io and get your API key
+    2. Install: `pip install pinecone-client`
+    3. Create an index with your embedding dimensions
+    4. Upsert vectors with optional metadata
+    5. Query with filters for hybrid search
+meta:
+  added_by: community
+  added_date: "2026-04-07"

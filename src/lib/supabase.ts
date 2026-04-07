@@ -39,6 +39,18 @@ export type Tool = {
   submitted_by: string | null;
   created_at: string;
   updated_at: string;
+  tagline?: string;
+  github_url?: string;
+  website_url?: string;
+  docs_url?: string;
+  license?: string;
+  stack_languages?: string[];
+  stack_frameworks?: string[];
+  install_command?: string;
+  code_snippet?: string;
+  integration_guide?: string;
+  github_stars?: number;
+  maintained?: boolean;
 };
 
 export type ToolSubmission = {

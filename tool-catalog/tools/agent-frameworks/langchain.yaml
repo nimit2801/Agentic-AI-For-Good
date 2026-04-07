@@ -1,0 +1,71 @@
+name: LangChain
+slug: langchain
+tagline: Framework for building context-aware reasoning applications with LLMs
+description: LangChain is a framework for developing applications powered by language models, making it easy to connect LLMs to external data sources and build complex workflows.
+long_description: |
+  LangChain is a comprehensive framework for building applications with large language models (LLMs). 
+  It provides a standard interface for chains, lots of integrations with other tools, and end-to-end chains for common applications.
+  
+  Key features include:
+  - Prompt management and optimization
+  - Chains for combining components
+  - Data augmented generation (RAG)
+  - Agent-based architectures
+  - Memory management for conversational context
+category: Agents
+tags:
+  - python
+  - javascript
+  - typescript
+  - framework
+  - llm
+  - agents
+  - chains
+  - rag
+website_url: https://www.langchain.com
+github_url: https://github.com/langchain-ai/langchain
+docs_url: https://python.langchain.com
+pricing: free
+license: MIT
+is_open_source: true
+maintained: true
+stack:
+  languages:
+    - Python
+    - JavaScript
+    - TypeScript
+  frameworks:
+    - OpenAI
+    - Anthropic
+    - Hugging Face
+integration:
+  install_command: pip install langchain
+  code_snippet: |
+    from langchain import OpenAI, LLMChain, PromptTemplate
+    from langchain.memory import ConversationBufferMemory
+
+    template = """You are a helpful assistant.
+    {history}
+    Human: {input}
+    Assistant:"""
+
+    prompt = PromptTemplate(
+        input_variables=["history", "input"],
+        template=template
+    )
+
+    llm = OpenAI(temperature=0)
+    memory = ConversationBufferMemory()
+    chain = LLMChain(llm=llm, prompt=prompt, memory=memory)
+
+    response = chain.predict(input="Hello!")
+  guide: |
+    ## Getting Started with LangChain
+
+    1. **Installation**: `pip install langchain`
+    2. **Set up API keys**: Export your LLM provider API key as an environment variable
+    3. **Build your first chain**: Start with a simple LLMChain and expand
+    4. **Add memory**: Use ConversationBufferMemory for chat applications
+meta:
+  added_by: community
+  added_date: "2026-04-07"

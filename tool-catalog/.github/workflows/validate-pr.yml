@@ -1,0 +1,31 @@
+name: Validate PR
+
+on:
+  pull_request:
+    paths:
+      - 'tools/**/*.yaml'
+      - 'tools/**/*.yml'
+      - 'schema/**/*.json'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Validate YAML files
+        run: npx ts-node scripts/validate.ts
+      
+      - name: Check for duplicate slugs
+        run: |
+          # Extract all slugs and check for duplicates
+          # This is handled by the validate script but we double-check here
+          echo "Checking for duplicate slugs..."

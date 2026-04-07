@@ -1,0 +1,159 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AI Tool Schema",
+  "description": "Schema for AI tool definitions in the Agentic AI For Good catalog",
+  "type": "object",
+  "required": ["name", "slug", "description", "category"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Display name of the tool",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "slug": {
+      "type": "string",
+      "description": "URL-friendly identifier (kebab-case)",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "tagline": {
+      "type": "string",
+      "description": "One-line description of the tool",
+      "maxLength": 200
+    },
+    "description": {
+      "type": "string",
+      "description": "Short description (1-2 sentences)",
+      "minLength": 10,
+      "maxLength": 500
+    },
+    "long_description": {
+      "type": "string",
+      "description": "Longer description with more context",
+      "maxLength": 5000
+    },
+    "category": {
+      "type": "string",
+      "description": "Primary category",
+      "enum": [
+        "LLM",
+        "Vector DB",
+        "RAG",
+        "Agents",
+        "Fine-tuning",
+        "Monitoring",
+        "Data",
+        "Dev Tools",
+        "Other"
+      ]
+    },
+    "tags": {
+      "type": "array",
+      "description": "Tags for filtering and search",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+        "maxLength": 50
+      },
+      "maxItems": 20
+    },
+    "website_url": {
+      "type": "string",
+      "description": "Official website URL",
+      "format": "uri"
+    },
+    "github_url": {
+      "type": "string",
+      "description": "GitHub repository URL",
+      "pattern": "^https://github\\.com/[^/]+/[^/]+"
+    },
+    "docs_url": {
+      "type": "string",
+      "description": "Documentation URL",
+      "format": "uri"
+    },
+    "logo_url": {
+      "type": "string",
+      "description": "Logo image URL",
+      "format": "uri"
+    },
+    "pricing": {
+      "type": "string",
+      "description": "Pricing model",
+      "enum": ["free", "freemium", "paid"]
+    },
+    "license": {
+      "type": "string",
+      "description": "Software license",
+      "examples": ["MIT", "Apache-2.0", "BSD-3-Clause", "GPL-3.0", "Proprietary"]
+    },
+    "is_open_source": {
+      "type": "boolean",
+      "description": "Whether the tool is open source"
+    },
+    "maintained": {
+      "type": "boolean",
+      "description": "Whether the project is actively maintained"
+    },
+    "stack": {
+      "type": "object",
+      "description": "Technology stack information",
+      "properties": {
+        "languages": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Programming languages supported"
+        },
+        "frameworks": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Frameworks integrated with"
+        }
+      }
+    },
+    "integration": {
+      "type": "object",
+      "description": "Integration information",
+      "properties": {
+        "install_command": {
+          "type": "string",
+          "description": "Command to install the tool",
+          "examples": ["pip install langchain", "npm install openai"]
+        },
+        "code_snippet": {
+          "type": "string",
+          "description": "Example code snippet showing usage"
+        },
+        "guide": {
+          "type": "string",
+          "description": "Integration guide in markdown format"
+        }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "description": "Metadata about the submission",
+      "properties": {
+        "added_by": {
+          "type": "string",
+          "description": "GitHub username of contributor"
+        },
+        "added_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "last_updated": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

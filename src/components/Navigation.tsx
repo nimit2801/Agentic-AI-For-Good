@@ -7,9 +7,9 @@ import { Button } from '@/components/ui/button'
 
 const navLinks = [
   { label: 'Home', href: '/' },
-  { label: 'Philosophy', href: '/philosophy' },
-  { label: 'Story', href: '/story' },
+  { label: 'Tools', href: '/tools' },
   { label: 'Stories', href: '/stories' },
+  { label: 'Philosophy', href: '/philosophy' },
   { label: 'Architecture', href: '/#architecture' },
 ]
 
@@ -75,9 +75,9 @@ export default function Navigation() {
                   {link.label}
                 </Link>
               ))}
-              <Link href="/story">
+              <Link href="/tools/submit">
                 <Button className="bg-[#D4754E] hover:bg-[#C0653E] text-white rounded-full px-5 py-2 text-sm font-medium transition-all duration-200">
-                  Submit a Use Case
+                  Submit a Tool
                 </Button>
               </Link>
             </div>
@@ -117,9 +117,9 @@ export default function Navigation() {
               {link.label}
             </Link>
           ))}
-          <Link href="/story" onClick={() => setIsMobileMenuOpen(false)}>
+          <Link href="/tools/submit" onClick={() => setIsMobileMenuOpen(false)}>
             <Button className="bg-[#D4754E] hover:bg-[#C0653E] text-white rounded-full px-8 py-3 text-lg font-medium mt-4">
-              Submit a Use Case
+              Submit a Tool
             </Button>
           </Link>
         </div>

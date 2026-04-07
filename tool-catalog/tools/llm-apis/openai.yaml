@@ -1,0 +1,74 @@
+name: OpenAI API
+slug: openai
+tagline: Access GPT-4, DALL-E, Whisper, and other state-of-the-art AI models
+description: OpenAI's API provides access to powerful language models including GPT-4, GPT-3.5, and specialized models for embeddings, image generation, and speech.
+long_description: |
+  The OpenAI API gives developers access to cutting-edge AI models through a simple REST API.
+  
+  Available models include:
+  - GPT-4 and GPT-4 Turbo: Advanced reasoning and instruction following
+  - GPT-3.5 Turbo: Fast and cost-effective for most tasks
+  - DALL-E 3: State-of-the-art image generation
+  - Whisper: Robust speech recognition and translation
+  - Embeddings: Text embedding models for search and clustering
+  - Moderation: Content safety and policy compliance
+  
+  The API supports function calling, fine-tuning, streaming responses, and more.
+category: LLM
+tags:
+  - api
+  - gpt-4
+  - gpt-3.5
+  - chat
+  - completions
+  - embeddings
+  - images
+website_url: https://openai.com
+github_url: https://github.com/openai/openai-python
+docs_url: https://platform.openai.com/docs
+pricing: freemium
+license: Proprietary
+is_open_source: false
+maintained: true
+stack:
+  languages:
+    - Python
+    - JavaScript
+    - Node.js
+    - Go
+    - Ruby
+  frameworks:
+    - Any
+integration:
+  install_command: pip install openai
+  code_snippet: |
+    from openai import OpenAI
+
+    client = OpenAI()
+
+    completion = client.chat.completions.create(
+        model="gpt-4",
+        messages=[
+            {"role": "system", "content": "You are a helpful assistant."},
+            {"role": "user", "content": "Hello!"}
+        ]
+    )
+
+    print(completion.choices[0].message.content)
+  guide: |
+    ## Quick Start
+
+    1. **Get API key**: Sign up at platform.openai.com and create an API key
+    2. **Install SDK**: `pip install openai`
+    3. **Set environment variable**: `export OPENAI_API_KEY=your_key`
+    4. **Make your first request**: Use the code snippet above
+    
+    ## Best Practices
+    
+    - Use streaming for real-time applications
+    - Implement retry logic with exponential backoff
+    - Monitor token usage to control costs
+    - Use function calling for structured outputs
+meta:
+  added_by: community
+  added_date: "2026-04-07"

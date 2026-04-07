@@ -3,9 +3,10 @@
   "configurations": [
     {
       "name": "nextjs",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev"],
-      "port": 3000
+      "runtimeExecutable": "/bin/sh",
+      "runtimeArgs": ["-c", "PATH=/opt/homebrew/bin:/usr/local/bin:$PATH cd /Users/nimitsavant/Desktop/nitmit-personal/Agentic-AI-For-Good-Website && exec /opt/homebrew/bin/node node_modules/.bin/next dev"],
+      "port": 3000,
+      "autoPort": false
     }
   ]
 }
