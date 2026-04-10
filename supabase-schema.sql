@@ -44,6 +44,9 @@ create table if not exists tools (
   is_open_source boolean default false,
   featured boolean default false,
   approved boolean default false,
+  github_url text,
+  github_stars integer,
+  github_stars_updated_at timestamptz,
   created_at timestamptz default now(),
   updated_at timestamptz default now()
 );
