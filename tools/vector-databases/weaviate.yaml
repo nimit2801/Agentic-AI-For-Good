@@ -1,0 +1,28 @@
+name: Weaviate
+description: An open-source vector database with built-in ML model integrations, GraphQL API, and support for multi-modal data including text, images, and audio.
+tagline: The AI-native database for building production RAG and search
+
+github_url: https://github.com/weaviate/weaviate
+website_url: https://weaviate.io
+docs_url: https://weaviate.io/developers/weaviate
+
+install_command: pip install weaviate-client
+
+category: Vector DB
+tags: [python, typescript, graphql, multi-modal, embeddings, rag, hybrid-search]
+pricing: freemium
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Building a vector search system from scratch means managing embedding models separately from
+  the database, writing custom serialization, and handling schema drift. Weaviate solves this
+  with native vectorizer modules (OpenAI, Cohere, HuggingFace) that auto-embed on write,
+  a schema that enforces data consistency, and GraphQL for flexible retrieval queries.
+
+use_cases:
+  - Build a multi-modal search engine that searches both product images and text descriptions with a single query
+  - Create a knowledge base with automatic embedding generation — write text, Weaviate embeds it
+  - Build a generative search system where retrieved results are fed directly into an LLM answer
+  - Implement hybrid keyword + semantic search for e-commerce product discovery
+  - Power a question-answering system over a private document corpus

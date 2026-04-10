@@ -1,0 +1,28 @@
+name: Qdrant
+description: A high-performance, production-ready vector database and search engine built in Rust. Supports filtering, payload indexing, and hybrid search out of the box.
+tagline: Vector database built for the next generation of AI applications
+
+github_url: https://github.com/qdrant/qdrant
+website_url: https://qdrant.tech
+docs_url: https://qdrant.tech/documentation
+
+install_command: pip install qdrant-client
+
+category: Vector DB
+tags: [rust, python, typescript, vector-search, embeddings, rag, hybrid-search]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Most vector databases sacrifice either performance or flexibility. Qdrant is written in Rust
+  for maximum throughput and offers payload filtering (filter by metadata before or after vector
+  search), named vectors (multiple embeddings per record), and on-disk indexing for large datasets
+  that don't fit in RAM. Self-host for free or use Qdrant Cloud for managed hosting.
+
+use_cases:
+  - Build a semantic document search engine that filters by metadata (date, author, category) alongside vector similarity
+  - Store multiple embedding models per document (e.g. dense + sparse) for hybrid retrieval
+  - Run a RAG pipeline where the knowledge base is too large for in-memory vector stores
+  - Power recommendation systems that combine user preference vectors with catalog item vectors
+  - Build a code search tool over a large codebase using code-specific embedding models

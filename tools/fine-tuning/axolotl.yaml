@@ -1,0 +1,29 @@
+name: Axolotl
+description: A streamlined fine-tuning framework for LLMs that supports QLoRA, LoRA, and full fine-tuning across Llama, Mistral, Falcon, and other open-source models.
+tagline: Fine-tune any open-source LLM without writing boilerplate
+
+github_url: https://github.com/OpenAccess-AI-Collective/axolotl
+website_url: https://axolotl.ai
+docs_url: https://axolotl-ai-cloud.github.io/axolotl
+
+install_command: pip install axolotl
+
+category: Fine-tuning
+tags: [python, llama, mistral, qlora, lora, training, gpu, huggingface]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Fine-tuning an LLM from scratch requires wiring together HuggingFace Transformers, PEFT,
+  bitsandbytes, DeepSpeed, and a custom training loop — dozens of interdependent configs that
+  break constantly. Axolotl wraps all of this in a single YAML config. Define your dataset,
+  model, LoRA rank, and batch size — Axolotl handles the rest. Supports QLoRA for fitting
+  large models on a single consumer GPU.
+
+use_cases:
+  - Fine-tune Llama 3 on your company's support tickets to create a domain-specific assistant
+  - Run QLoRA fine-tuning on a 70B model on a single A100 GPU using 4-bit quantization
+  - Create a code-completion model fine-tuned on your internal codebase and style guidelines
+  - Fine-tune a small model to replace GPT-4 for a specific task at 1/100th the inference cost
+  - Build a medical Q&A model trained on clinical notes without leaking data to external APIs

@@ -1,0 +1,28 @@
+name: LangSmith
+description: A developer platform for debugging, testing, evaluating, and monitoring LLM applications in production. Built by the LangChain team but works with any framework.
+tagline: Observe, debug, and improve your LLM apps in production
+
+github_url: https://github.com/langchain-ai/langsmith-sdk
+website_url: https://smith.langchain.com
+docs_url: https://docs.smith.langchain.com
+
+install_command: pip install langsmith
+
+category: Monitoring
+tags: [python, typescript, observability, tracing, evaluation, llm-ops, debugging]
+pricing: freemium
+is_open_source: false
+
+problem_solved: |
+  LLM applications fail in non-obvious ways — a prompt works in testing but hallucinates in
+  production, latency spikes are hard to trace, and regressions are invisible without baselines.
+  LangSmith captures every LLM call as a structured trace (inputs, outputs, latency, cost),
+  lets you replay runs for debugging, and runs automated evaluations so you know when a model
+  or prompt change made things worse.
+
+use_cases:
+  - Trace every chain step in a LangChain agent to find where it hallucinates or gets stuck
+  - Run automated evals against a golden dataset whenever you change your prompt
+  - Monitor production latency and token costs across different LLM providers
+  - Build a dataset of real user queries + expected outputs for regression testing
+  - A/B test prompt variants and compare quality scores side by side

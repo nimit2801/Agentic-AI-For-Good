@@ -1,0 +1,28 @@
+name: Groq
+description: An AI inference platform that delivers LLM responses at extremely low latency using custom LPU (Language Processing Unit) hardware. Supports Llama, Mixtral, Gemma, and more.
+tagline: LLM inference so fast it feels instant — 500+ tokens per second
+
+github_url: https://github.com/groq/groq-python
+website_url: https://groq.com
+docs_url: https://console.groq.com/docs
+
+install_command: pip install groq
+
+category: LLM
+tags: [api, inference, llama, mixtral, fast, low-latency, openai-compatible]
+pricing: freemium
+is_open_source: false
+
+problem_solved: |
+  LLM inference is slow — GPT-4 takes 2-10 seconds for a substantive response, which breaks
+  real-time applications like voice assistants, live coding tools, and interactive demos.
+  Groq's custom LPU hardware generates 500+ tokens/second (10-20x faster than GPU inference),
+  making it possible to build genuinely real-time AI experiences. API is OpenAI-compatible —
+  change one line of code to switch from OpenAI to Groq.
+
+use_cases:
+  - Power a real-time voice AI assistant where response latency must be under 500ms
+  - Build an interactive coding copilot where completions appear as fast as typing
+  - Run high-throughput batch inference jobs where speed directly reduces cost
+  - Prototype with open-source models (Llama 3, Mixtral) at production speed on the free tier
+  - Build streaming chat applications where users see output word-by-word at reading speed

@@ -1,0 +1,29 @@
+name: AutoGen
+description: Microsoft's framework for building multi-agent AI systems where agents can converse with each other, execute code, and collaborate to solve complex problems.
+tagline: Multi-agent conversations that can write and execute code to solve problems
+
+github_url: https://github.com/microsoft/autogen
+website_url: https://microsoft.github.io/autogen
+docs_url: https://microsoft.github.io/autogen/docs/Getting-Started
+
+install_command: pip install pyautogen
+
+category: Agents
+tags: [python, multi-agent, code-execution, microsoft, autonomous, llm]
+pricing: free
+is_open_source: true
+license: CC-BY-4.0
+
+problem_solved: |
+  Most agent frameworks treat code execution as an afterthought. AutoGen is built around the
+  idea that the most powerful agents write and run their own code. Two or more agents converse:
+  one proposes solutions, another executes them, a human-proxy can intervene at any step.
+  This makes AutoGen particularly strong for data analysis, software engineering tasks, and
+  anything where iterative code refinement gets better results than a single LLM pass.
+
+use_cases:
+  - Build a pair-programming agent that writes Python, runs it, sees errors, and self-corrects
+  - Create a data analysis agent that writes and executes pandas/matplotlib code to answer questions
+  - Orchestrate an automated debugging loop where one agent writes tests and another fixes failing code
+  - Build a math problem solver that generates and verifies solutions by running code
+  - Automate web scraping workflows where agents write and iterate on scraper code

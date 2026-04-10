@@ -1,0 +1,29 @@
+name: Helicone
+description: An open-source LLM observability platform that sits between your app and any LLM API. Logs every request, tracks costs, caches responses, and lets you replay or fine-tune on production data.
+tagline: One line of code to observe, optimize, and replay every LLM call
+
+github_url: https://github.com/Helicone/helicone
+website_url: https://helicone.ai
+docs_url: https://docs.helicone.ai
+
+install_command: pip install helicone
+
+category: Monitoring
+tags: [python, typescript, observability, caching, cost-tracking, openai-compatible, self-hostable]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  LLM costs creep up silently — you don't know which prompts are expensive until the bill arrives,
+  and debugging a bad response means guessing at what the model actually received. Helicone is a
+  proxy that intercepts every LLM API call, logs inputs/outputs/latency/cost, and exposes this in
+  a dashboard. It also caches identical requests (zero cost on repeats) and lets you build eval
+  datasets from real production traffic with one click.
+
+use_cases:
+  - Track per-user and per-feature LLM costs without changing your prompt code
+  - Cache repeated LLM calls to reduce costs by 30-70% on predictable queries
+  - Build a dataset from production requests to fine-tune a smaller, cheaper model
+  - Set up alerts when a user is about to exceed a cost threshold
+  - Debug a production hallucination by replaying the exact request that caused it
