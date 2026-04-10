@@ -10,6 +10,8 @@ interface ToolSearchBarProps {
   className?: string
   value?: string
   onChange?: (v: string) => void
+  /** When true, hides the quick-results dropdown (parent handles results in-page) */
+  noDropdown?: boolean
 }
 
 export default function ToolSearchBar({
@@ -17,6 +19,7 @@ export default function ToolSearchBar({
   className = '',
   value,
   onChange,
+  noDropdown = false,
 }: ToolSearchBarProps) {
   const [query, setQuery] = useState('')
   const [debouncedQuery, setDebouncedQuery] = useState('')
@@ -31,8 +34,8 @@ export default function ToolSearchBar({
     return () => clearTimeout(timer)
   }, [effectiveValue])
 
-  const { results, loading } = useToolSearch(debouncedQuery, { limit: 5 })
-  const showDropdown = isFocused && debouncedQuery.length > 1
+  const { results, loading } = useToolSearch(noDropdown ? '' : debouncedQuery, { limit: 5 })
+  const showDropdown = !noDropdown && isFocused && debouncedQuery.length > 1
 
   return (
     <div className={`relative ${className}`}>

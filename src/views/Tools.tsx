@@ -49,7 +49,7 @@ export default function Tools() {
 
   const { results: searchResults, loading: searchLoading } = useToolSearch(searchQuery, { limit: 50 })
 
-  const isSearching = searchQuery.trim().length > 1
+  const isSearching = searchQuery.trim().length > 0
   const loading = isSearching ? searchLoading : toolsLoading
   const error = toolsError
 
@@ -106,6 +106,7 @@ export default function Tools() {
           onChange={setSearchQuery}
           placeholder="Search by use case, tool name, or technology..."
           className="max-w-2xl mb-2"
+          noDropdown
         />
 
         <p className="text-xs text-[#6B6560]/70 mb-4 font-mono">
