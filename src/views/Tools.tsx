@@ -7,6 +7,7 @@ import gsap from 'gsap'
 import { useTools, useToolSearch } from '@/hooks/use-tools'
 import ToolCard from '@/components/ToolCard'
 import ToolSearchBar from '@/components/ToolSearchBar'
+import SubscribeWidget from '@/components/SubscribeWidget'
 
 const categories = [
   'All',
@@ -238,6 +239,13 @@ export default function Tools() {
           >
             Open Contribution Guide
           </a>
+        </div>
+
+        {/* Subscribe */}
+        <div className="max-w-[1200px] mx-auto mt-6 p-8 bg-white rounded-2xl border border-[#1A1A1A]/5">
+          <h3 className="display-heading text-lg text-[#1A1A1A] mb-1">NEW TOOLS, WEEKLY</h3>
+          <p className="text-[#6B6560] text-sm mb-4">Get notified when new tools are added to the catalog.</p>
+          <SubscribeWidget source="tools_page" className="max-w-md" />
         </div>
       )}
     </section>

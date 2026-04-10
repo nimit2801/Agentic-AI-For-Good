@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
-import { Terminal, Search, Package, Zap, Clock, Copy, Check, Layers, GitBranch, Rss } from 'lucide-react'
+import { Terminal, Search, Package, Zap, Clock, Copy, Check, GitBranch, Rss } from 'lucide-react'
+import SubscribeWidget from '@/components/SubscribeWidget'
 
 const CLAUDE_DESKTOP_CONFIG = `{
   "mcpServers": {
@@ -302,7 +303,17 @@ export default function MCPPage() {
           </div>
         </div>
 
-        {/* Section 5 — Contribute CTA */}
+        {/* Section 5 — Subscribe */}
+        <div className="mb-6 p-8 bg-white rounded-2xl border border-[#1A1A1A]/5">
+          <span className="micro-label text-[#D4754E] block mb-3">STAY IN THE LOOP</span>
+          <h3 className="display-heading text-xl text-[#1A1A1A] mb-2">NEW TOOLS, WEEKLY</h3>
+          <p className="text-[#6B6560] text-sm mb-5 max-w-sm">
+            Get notified when new AI tools land in the catalog. One email per week, no noise.
+          </p>
+          <SubscribeWidget source="mcp_page" className="max-w-sm" />
+        </div>
+
+        {/* Section 6 — Contribute CTA */}
         <div className="p-8 bg-white rounded-2xl border border-[#1A1A1A]/5 text-center">
           <span className="micro-label text-[#D4754E] block mb-3">Missing a tool?</span>
           <h3 className="display-heading text-xl text-[#1A1A1A] mb-3">ADD IT VIA GITHUB PR</h3>
