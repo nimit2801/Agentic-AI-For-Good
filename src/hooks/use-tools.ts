@@ -119,7 +119,7 @@ export function useToolSearch(query: string, options?: UseToolSearchOptions) {
           body: JSON.stringify({
             query,
             limit: options?.limit || 10,
-            threshold: options?.threshold || 0.5,
+            threshold: options?.threshold || 0.2,
             useSemantic: options?.useSemantic !== false, // default true
             category: options?.category,
             tags: options?.tags,
