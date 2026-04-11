@@ -2,6 +2,15 @@
 import { useState } from 'react'
 import { Terminal, Search, Package, Zap, Clock, Copy, Check, Layers, GitBranch, Rss } from 'lucide-react'
 
+const HTTP_CONFIG = `{
+  "mcpServers": {
+    "agenticaiforgood": {
+      "type": "http",
+      "url": "https://agenticaiforgood.com/api/mcp"
+    }
+  }
+}`
+
 const CLAUDE_DESKTOP_CONFIG = `{
   "mcpServers": {
     "agenticaiforgood": {
@@ -80,7 +89,7 @@ function CopyButton({ text, className = '' }: { text: string; className?: string
 }
 
 export default function MCPPage() {
-  const [activeTab, setActiveTab] = useState<'desktop' | 'code'>('desktop')
+  const [activeTab, setActiveTab] = useState<'http' | 'desktop' | 'code'>('http')
 
   return (
     <section className="min-h-screen bg-[#F5F1EB] pt-28 pb-20 px-6 lg:px-[6vw]">
@@ -110,8 +119,18 @@ export default function MCPPage() {
           {/* Tab switcher */}
           <div className="flex border-b border-[#1A1A1A]/8">
             <button
+              onClick={() => setActiveTab('http')}
+              className={`flex-1 px-4 py-3 text-sm font-medium transition-all duration-200 ${
+                activeTab === 'http'
+                  ? 'text-[#1A1A1A] border-b-2 border-[#D4754E] bg-[#F5F1EB]/50'
+                  : 'text-[#6B6560] hover:text-[#1A1A1A] hover:bg-[#F5F1EB]/30'
+              }`}
+            >
+              HTTP ✦ Recommended
+            </button>
+            <button
               onClick={() => setActiveTab('desktop')}
-              className={`flex-1 px-6 py-3 text-sm font-medium transition-all duration-200 ${
+              className={`flex-1 px-4 py-3 text-sm font-medium transition-all duration-200 ${
                 activeTab === 'desktop'
                   ? 'text-[#1A1A1A] border-b-2 border-[#D4754E] bg-[#F5F1EB]/50'
                   : 'text-[#6B6560] hover:text-[#1A1A1A] hover:bg-[#F5F1EB]/30'
@@ -121,7 +140,7 @@ export default function MCPPage() {
             </button>
             <button
               onClick={() => setActiveTab('code')}
-              className={`flex-1 px-6 py-3 text-sm font-medium transition-all duration-200 ${
+              className={`flex-1 px-4 py-3 text-sm font-medium transition-all duration-200 ${
                 activeTab === 'code'
                   ? 'text-[#1A1A1A] border-b-2 border-[#D4754E] bg-[#F5F1EB]/50'
                   : 'text-[#6B6560] hover:text-[#1A1A1A] hover:bg-[#F5F1EB]/30'
@@ -132,7 +151,49 @@ export default function MCPPage() {
           </div>
 
           <div className="p-6">
-            {activeTab === 'desktop' ? (
+            {activeTab === 'http' ? (
+              <div className="space-y-8">
+                {/* Step 1 */}
+                <div>
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="w-6 h-6 rounded-full bg-[#D4754E] text-white text-xs font-bold flex items-center justify-center flex-shrink-0">
+                      1
+                    </span>
+                    <p className="text-sm font-medium text-[#1A1A1A]">Add the hosted server — no install required</p>
+                  </div>
+                  <p className="text-xs text-[#6B6560] mb-3 pl-9">
+                    Works in Claude Desktop, Claude Code, and any MCP client that supports HTTP transport.
+                  </p>
+                  <div className="relative rounded-xl overflow-hidden">
+                    <div className="bg-[#1A1A1A] p-4 pr-16">
+                      <pre className="text-sm text-[#E8E2D9] font-mono leading-relaxed overflow-x-auto whitespace-pre">
+                        {HTTP_CONFIG}
+                      </pre>
+                    </div>
+                    <div className="absolute top-3 right-3">
+                      <CopyButton text={HTTP_CONFIG} />
+                    </div>
+                  </div>
+                  <p className="text-xs text-[#6B6560] mt-3 pl-0">
+                    For Claude Desktop: <span className="font-mono">~/Library/Application Support/Claude/claude_desktop_config.json</span><br />
+                    For Claude Code: add to your project&apos;s <span className="font-mono">.mcp.json</span>
+                  </p>
+                </div>
+
+                {/* Step 2 */}
+                <div>
+                  <div className="flex items-center gap-3">
+                    <span className="w-6 h-6 rounded-full bg-[#D4754E] text-white text-xs font-bold flex items-center justify-center flex-shrink-0">
+                      2
+                    </span>
+                    <p className="text-sm font-medium text-[#1A1A1A]">Restart your client</p>
+                  </div>
+                  <p className="text-xs text-[#6B6560] pl-9 mt-1">
+                    The server runs on our infrastructure — always up-to-date with the latest catalog, zero maintenance on your end.
+                  </p>
+                </div>
+              </div>
+            ) : activeTab === 'desktop' ? (
               <div className="space-y-8">
                 {/* Step 1 */}
                 <div>
