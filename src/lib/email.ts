@@ -9,8 +9,8 @@ function getResend(): Resend {
   return _resend
 }
 
-export const FROM_ADDRESS = 'Agentic AI For Good <hello@agenticaiforgood.com>'
-export const REPLY_TO = 'hello@agenticaiforgood.com'
+export const FROM_ADDRESS = 'Agentic AI For Good <hello@mail.agenticaiforgood.com>'
+export const REPLY_TO = 'hello@mail.agenticaiforgood.com'
 
 interface SendEmailOptions {
   to: string | string[]
