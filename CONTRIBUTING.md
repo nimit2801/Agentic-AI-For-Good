@@ -88,3 +88,14 @@ use_cases:
 - On merge, embeddings are generated and the tool appears on the site within minutes
 
 Questions? Open an issue or ping us on the PR.
+
+---
+
+## License for contributions
+
+By contributing to this project, you agree that:
+
+- **Code contributions** are licensed under the MIT License ([LICENSE-CODE](LICENSE-CODE))
+- **Catalog contributions** (`tools/*.yaml`) are licensed under Creative Commons BY-NC-SA 4.0 ([LICENSE-CATALOG](LICENSE-CATALOG))
+
+See [LICENSE](LICENSE) for full details on the split licensing model.

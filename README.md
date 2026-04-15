@@ -1,7 +1,7 @@
 # Agentic AI For Good
 
 [![Tests](https://github.com/nimit2801/Agentic-AI-For-Good-Website/actions/workflows/test.yml/badge.svg)](https://github.com/nimit2801/Agentic-AI-For-Good-Website/actions/workflows/test.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: Split](https://img.shields.io/badge/License-MIT%20%2B%20CC%20BY--NC--SA-blue.svg)](LICENSE)
 [![npm: agentic-ai-for-good-mcp](https://img.shields.io/npm/v/agentic-ai-for-good-mcp)](https://www.npmjs.com/package/agentic-ai-for-good-mcp)
 [![Next.js 16](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org/)
 
@@ -231,7 +231,17 @@ See [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for community guidelines.
 
 ## License
 
-MIT — see [LICENSE](LICENSE)
+This project uses a **split license**:
+
+- **Source code:** MIT License — see [LICENSE-CODE](LICENSE-CODE)
+- **Tool catalog (`tools/`):** Creative Commons BY-NC-SA 4.0 — see [LICENSE-CATALOG](LICENSE-CATALOG)
+
+**TL;DR:**
+- ✅ Use the code however you want (including commercially)
+- ✅ Share and adapt the catalog for non-commercial use
+- ❌ Can't resell the catalog or embed it in commercial products without permission
+
+See [LICENSE](LICENSE) for full details and what this means for developers, researchers, and companies.
 
 ## Security
 
