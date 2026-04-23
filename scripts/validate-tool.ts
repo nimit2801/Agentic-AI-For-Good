@@ -47,10 +47,18 @@ function validateFile(filePath: string): { ok: boolean; errors: string[] } {
     return { ok: false, errors }
   }
 
+  // Resolve path — script may run from scripts/ dir or repo root
+  // Try as-is first, then relative to repo root (one level up from scripts/)
+  let resolvedPath = path.resolve(filePath)
+  if (!fs.existsSync(resolvedPath)) {
+    // Running from scripts/ working directory — go up one level to repo root
+    resolvedPath = path.resolve('..', filePath)
+  }
+
   // Read and parse YAML
   let raw: unknown
   try {
-    const content = fs.readFileSync(filePath, 'utf-8')
+    const content = fs.readFileSync(resolvedPath, 'utf-8')
     raw = yaml.load(content)
   } catch (e) {
     errors.push(`Failed to parse YAML: ${(e as Error).message}`)
