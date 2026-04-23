@@ -87,8 +87,15 @@ async function syncTool(filePath: string): Promise<void> {
   const slug = getSlugFromPath(filePath)
   console.log(`\n→ Syncing: ${slug}`)
 
+  // Resolve path — script may run from scripts/ dir or repo root
+  let resolvedPath = path.resolve(filePath)
+  if (!fs.existsSync(resolvedPath)) {
+    // Running from scripts/ working directory — go up one level to repo root
+    resolvedPath = path.resolve('..', filePath)
+  }
+
   // Parse YAML
-  const content = fs.readFileSync(filePath, 'utf-8')
+  const content = fs.readFileSync(resolvedPath, 'utf-8')
   const tool = yaml.load(content) as ToolYaml
 
   // Build embedding text and generate embedding
