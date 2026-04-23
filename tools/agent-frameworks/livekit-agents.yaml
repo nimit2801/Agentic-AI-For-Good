@@ -1,0 +1,27 @@
+name: LiveKit Agents
+description: An open-source framework for building realtime, programmable voice and multimodal AI agents that can see, hear, and understand. Provides flexible integrations for STT, LLM, TTS, and Realtime APIs with built-in job scheduling, telephony support, and semantic turn detection.
+tagline: Build voice, video, and physical AI agents with realtime communication
+
+github_url: https://github.com/livekit/agents
+website_url: https://livekit.io
+docs_url: https://docs.livekit.io/agents/
+install_command: pip install "livekit-agents[openai,silero,deepgram,cartesia,turn-detector]~=1.4"
+
+category: Agents
+tags: [voice-ai, realtime, webrtc, multimodal, agents, stt, tts, llm, telephony]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Building production-ready realtime voice and multimodal AI agents requires complex orchestration
+  of speech recognition, language models, text-to-speech, turn detection, and WebRTC streaming
+  infrastructure that is difficult to build and maintain from scratch. LiveKit Agents gives
+  developers a batteries-included framework with pluggable STT/LLM/TTS services, built-in telephony
+  via SIP, semantic turn detection, and automatic job scheduling so they can ship voice agents
+  instead of wrestling with audio pipelines and transport layers.
+
+use_cases:
+  - Build voice AI assistants with natural conversation flow, interruption handling, and semantic turn detection
+  - Create AI-powered phone call agents that handle inbound and outbound calls via SIP and telephony integration
+  - Develop multimodal agents that process video and audio input in real time for assistive or monitoring use cases
