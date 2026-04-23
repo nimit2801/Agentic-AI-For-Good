@@ -180,7 +180,7 @@ export default function ToolDetail({ tool }: ToolDetailProps) {
                 {copied ? 'Copied' : 'Copy'}
               </button>
             </div>
-            <code className="font-mono text-sm text-[#D4754E] break-all">
+            <code className="font-mono text-sm text-[#D4754E] whitespace-pre-wrap break-all">
               {tool.install_command}
             </code>
           </div>
