@@ -2,11 +2,13 @@
 import { useState, useEffect, useRef } from 'react'
 import { Search, ArrowRight } from 'lucide-react'
 import { useRouter } from 'next/navigation'
+import Image from 'next/image'
 import gsap from 'gsap'
 
 export default function Hero() {
   const [query, setQuery] = useState('')
   const sectionRef = useRef<HTMLElement>(null)
+  const logoRef = useRef<HTMLDivElement>(null)
   const headlineRef = useRef<HTMLHeadingElement>(null)
   const subheadlineRef = useRef<HTMLParagraphElement>(null)
   const searchRef = useRef<HTMLDivElement>(null)
@@ -16,7 +18,7 @@ export default function Hero() {
   useEffect(() => {
     const ctx = gsap.context(() => {
       // Initial states
-      gsap.set([headlineRef.current, subheadlineRef.current, searchRef.current, linksRef.current], {
+      gsap.set([logoRef.current, headlineRef.current, subheadlineRef.current, searchRef.current, linksRef.current], {
         opacity: 0,
         y: 20,
       })
@@ -24,12 +26,22 @@ export default function Hero() {
       // Animation timeline
       const tl = gsap.timeline({ delay: 0.3 })
 
-      tl.to(headlineRef.current, {
+      tl.to(logoRef.current, {
         opacity: 1,
         y: 0,
-        duration: 0.8,
+        duration: 0.6,
         ease: 'power2.out',
       })
+        .to(
+          headlineRef.current,
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.8,
+            ease: 'power2.out',
+          },
+          '-=0.3'
+        )
         .to(
           subheadlineRef.current,
           {
@@ -83,6 +95,18 @@ export default function Hero() {
       <div className="absolute top-[18vh] left-[calc(50%+180px)] w-2 h-2 rounded-full bg-[#D4754E] hidden lg:block" />
 
       <div className="w-full max-w-[980px] text-center">
+        {/* Logo */}
+        <div ref={logoRef} className="mb-8">
+          <Image
+            src="/images/logos/Leaf%20Logo%20no%20bg.png"
+            alt="Agentic AI For Good"
+            width={120}
+            height={120}
+            className="mx-auto w-24 h-24 lg:w-32 lg:h-32"
+            priority
+          />
+        </div>
+
         {/* Headline */}
         <h1
           ref={headlineRef}

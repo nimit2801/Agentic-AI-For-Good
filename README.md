@@ -1,6 +1,5 @@
 # Agentic AI For Good
 
-[![Tests](https://github.com/nimit2801/Agentic-AI-For-Good-Website/actions/workflows/test.yml/badge.svg)](https://github.com/nimit2801/Agentic-AI-For-Good-Website/actions/workflows/test.yml)
 [![License: Split](https://img.shields.io/badge/License-MIT%20%2B%20CC%20BY--NC--SA-blue.svg)](LICENSE)
 [![npm: agentic-ai-for-good-mcp](https://img.shields.io/npm/v/agentic-ai-for-good-mcp)](https://www.npmjs.com/package/agentic-ai-for-good-mcp)
 [![Next.js 16](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org/)

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Agentic AI For Good — Logo Concepts</title>
+<link rel="preconnect" href="https://rsms.me/" />
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+<style>
+  :root {
+    --cream: #F5F1EB;
+    --ink: #1A1A1A;
+    --terra: #D4754E;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; font-family: 'Inter', system-ui, sans-serif; color: var(--ink); background: var(--cream); }
+  header {
+    padding: 48px 32px 16px;
+    border-bottom: 1px solid rgba(26,26,26,0.08);
+  }
+  header h1 { margin: 0 0 8px; font-size: 28px; letter-spacing: -0.5px; }
+  header p { margin: 0; font-size: 15px; opacity: 0.7; max-width: 640px; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    padding: 32px;
+  }
+  .card {
+    background: white;
+    border: 1px solid rgba(26,26,26,0.08);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .card h2 { margin: 0; padding: 16px 20px 4px; font-size: 16px; font-weight: 700; }
+  .card .meta { padding: 0 20px 16px; font-size: 13px; opacity: 0.65; line-height: 1.5; }
+  .surfaces { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border-top: 1px solid rgba(26,26,26,0.08); }
+  .surface { aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; padding: 18px; }
+  .surface.light { background: var(--cream); }
+  .surface.dark { background: var(--ink); }
+  .surface img { width: 100%; height: 100%; object-fit: contain; }
+  .wide .surfaces { grid-template-columns: 1fr; }
+  .wide .surface { aspect-ratio: 5 / 2; }
+  footer { padding: 16px 32px 40px; font-size: 13px; opacity: 0.55; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Agentic AI For Good — Logo Concepts</h1>
+    <p>Five directions on the existing brand palette (cream #F5F1EB, terracotta #D4754E, ink #1A1A1A). Each mark is shown on light and dark surfaces.</p>
+  </header>
+
+  <div class="grid">
+    <section class="card">
+      <h2>1. Spark Node</h2>
+      <div class="meta">An agent as a connected node — three linked nodes with a spark at the center. Says "AI agents, taking action."</div>
+      <div class="surfaces">
+        <div class="surface light"><img src="./logo-1-spark-node.svg" alt="Spark Node on cream"/></div>
+        <div class="surface dark"><img src="./logo-1-spark-node.svg" alt="Spark Node on ink"/></div>
+      </div>
+    </section>
+
+    <section class="card wide">
+      <h2>2. Arrow Wordmark</h2>
+      <div class="meta">Typographic lockup with a chevron "A" that doubles as an arrow pointing forward. The most utilitarian option for headers and social.</div>
+      <div class="surfaces">
+        <div class="surface light"><img src="./logo-2-arrow-wordmark.svg" alt="Arrow Wordmark on cream"/></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>3. Heart Circuit</h2>
+      <div class="meta">A heart outlined in terracotta with circuit traces inside. Leans directly on "for good" — warmest of the set.</div>
+      <div class="surfaces">
+        <div class="surface light"><img src="./logo-3-heart-circuit.svg" alt="Heart Circuit on cream"/></div>
+        <div class="surface dark"><img src="./logo-3-heart-circuit.svg" alt="Heart Circuit on ink"/></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>4. Sprout Agent</h2>
+      <div class="meta">A small agent head growing out of a circuit board as two leaves. Ethical growth, open catalog, community-tended.</div>
+      <div class="surfaces">
+        <div class="surface light"><img src="./logo-4-sprout-agent.svg" alt="Sprout Agent on cream"/></div>
+        <div class="surface dark"><img src="./logo-4-sprout-agent.svg" alt="Sprout Agent on ink"/></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>5. Hex Network</h2>
+      <div class="meta">A hexagonal module with an "A" at its core, surrounded by a larger hex of six nodes. Reads as composable agents + catalog.</div>
+      <div class="surfaces">
+        <div class="surface light"><img src="./logo-5-hex-network.svg" alt="Hex Network on cream"/></div>
+        <div class="surface dark"><img src="./logo-5-hex-network.svg" alt="Hex Network on ink"/></div>
+      </div>
+    </section>
+  </div>
+
+  <footer>SVG source lives in <code>marketing/logos/</code>. Swap colors via the top-level <code>fill</code> / <code>stroke</code> attributes.</footer>
+</body>
+</html>

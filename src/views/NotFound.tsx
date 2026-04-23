@@ -1,5 +1,7 @@
 'use client'
 import { useRouter } from 'next/navigation'
+import Link from 'next/link'
+import Image from 'next/image'
 import { ArrowRight } from 'lucide-react'
 
 export default function NotFound() {
@@ -8,6 +10,16 @@ export default function NotFound() {
   return (
     <section className="min-h-screen bg-[#F5F1EB] flex items-center justify-center px-6">
       <div className="text-center max-w-md">
+        {/* Logo */}
+        <Link href="/" className="inline-block mb-6">
+          <Image
+            src="/images/logos/Leaf%20Logo%20no%20bg.png"
+            alt="Agentic AI For Good"
+            width={48}
+            height={48}
+            className="w-12 h-12"
+          />
+        </Link>
         <span className="font-mono text-sm text-[#D4754E] tracking-widest uppercase block mb-6">404</span>
         <h1 className="display-heading text-[clamp(32px,5vw,64px)] text-[#1A1A1A] mb-4">
           PAGE NOT FOUND

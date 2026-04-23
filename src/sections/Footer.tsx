@@ -2,6 +2,7 @@
 import { useEffect, useRef } from 'react'
 import { Linkedin } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
@@ -52,6 +53,15 @@ export default function Footer() {
     >
       <div className="px-6 lg:px-[6vw]">
         <div className="flex flex-col items-center text-center">
+          {/* Logo */}
+          <Image
+            src="/images/logos/Leaf%20Logo%20no%20bg.png"
+            alt="Agentic AI For Good"
+            width={64}
+            height={64}
+            className="w-14 h-14 lg:w-16 lg:h-16 mb-3"
+          />
+
           {/* Wordmark */}
           <h3 className="text-[#1A1A1A] font-semibold text-lg lg:text-xl mb-3">
             Agentic AI For Good

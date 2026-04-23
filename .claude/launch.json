@@ -2,6 +2,12 @@
   "version": "0.0.1",
   "configurations": [
     {
+      "name": "presentation",
+      "runtimeExecutable": "/opt/homebrew/bin/node",
+      "runtimeArgs": ["-e", "require('http').createServer((req,res)=>{const fs=require('fs'),path=require('path');let f=path.join('/Users/nimitsavant/Desktop/nitmit-personal/Agentic-AI-For-Good-Website/presentation',req.url==='/'?'index.html':req.url);fs.readFile(f,(e,d)=>{if(e){res.writeHead(404);res.end();}else{res.writeHead(200);res.end(d);}});}).listen(8765)"],
+      "port": 8765
+    },
+    {
       "name": "nextjs",
       "runtimeExecutable": "/bin/sh",
       "runtimeArgs": ["-c", "PATH=/opt/homebrew/bin:/usr/local/bin:$PATH cd /Users/nimitsavant/Desktop/nitmit-personal/Agentic-AI-For-Good-Website && exec /opt/homebrew/bin/node node_modules/.bin/next dev"],

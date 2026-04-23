@@ -1,7 +1,8 @@
 'use client'
 import { useState, useEffect } from 'react'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, Star } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 
@@ -53,11 +54,18 @@ export default function Navigation() {
         <div className="w-full px-6 lg:px-[6vw]">
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
-            <Link
-              href="/"
-              className="text-[#1A1A1A] font-semibold text-sm lg:text-base tracking-tight"
-            >
-              Agentic AI For Good
+            <Link href="/" className="flex items-center gap-2">
+              <Image
+                src="/images/logos/Leaf%20Logo%20no%20bg.png"
+                alt="Agentic AI For Good"
+                width={36}
+                height={36}
+                className="w-8 h-8 lg:w-9 lg:h-9"
+                priority
+              />
+              <span className="text-[#1A1A1A] font-semibold text-sm lg:text-base tracking-tight hidden sm:inline">
+                Agentic AI For Good
+              </span>
             </Link>
 
             {/* Desktop Navigation */}
@@ -77,6 +85,15 @@ export default function Navigation() {
                   {link.label}
                 </Link>
               ))}
+              <a
+                href="https://github.com/nimit2801/Agentic-AI-For-Good-Website"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 text-[#1A1A1A]/70 hover:text-[#1A1A1A] text-sm font-medium transition-colors duration-200"
+              >
+                <Star size={16} className="fill-[#D4754E] text-[#D4754E]" />
+                <span>Star on GitHub</span>
+              </a>
               <a
                 href="https://github.com/nimit2801/Agentic-AI-For-Good-Website/blob/main/CONTRIBUTING.md"
                 target="_blank"
@@ -123,6 +140,16 @@ export default function Navigation() {
               {link.label}
             </Link>
           ))}
+          <a
+            href="https://github.com/nimit2801/Agentic-AI-For-Good-Website"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="flex items-center gap-2 text-[#1A1A1A] text-xl font-semibold"
+          >
+            <Star size={20} className="fill-[#D4754E] text-[#D4754E]" />
+            Star on GitHub
+          </a>
           <a
             href="https://github.com/nimit2801/Agentic-AI-For-Good-Website/blob/main/CONTRIBUTING.md"
             target="_blank"
