@@ -1,0 +1,27 @@
+name: Hermes Agent
+description: Open-source autonomous AI agent by Nous Research that runs in the CLI or messaging apps, uses tools across terminals and browsers, remembers past work, creates reusable skills, and delegates work to subagents.
+tagline: A self-improving autonomous agent with memory, skills, and multi-platform chat
+
+github_url: https://github.com/NousResearch/hermes-agent
+website_url: https://hermes-agent.nousresearch.com/
+docs_url: https://hermes-agent.nousresearch.com/docs/
+install_command: curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash
+
+category: Agents
+tags: [python, cli, autonomous-agents, multi-agent, memory, skills, browser-automation, terminal, mcp, messaging]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Most agent tools are either trapped inside an IDE, limited to a single chat surface, or stateless between sessions.
+  Hermes Agent is built for long-running autonomous work: it can operate from the terminal or messaging apps, call real tools,
+  store durable memory about the user and environment, create reusable skills from successful workflows, and delegate subtasks
+  to isolated subagents. That makes it useful for builders who want an agent that improves over time instead of restarting from scratch every session.
+
+use_cases:
+  - Run a coding and debugging agent from the terminal that can inspect files, execute commands, patch code, and verify fixes
+  - Operate a persistent personal or team assistant over Telegram, Discord, Slack, or WhatsApp with the same context across sessions
+  - Schedule autonomous jobs like daily research briefs, weekly KPI digests, repo audits, or data sync tasks with natural-language cron prompts
+  - Build multi-agent workflows where a parent agent delegates research, code review, or implementation subtasks to isolated subagents
+  - Connect MCP servers, browser automation, vision, and search so the agent can complete end-to-end workflows instead of only generating text
