@@ -1,0 +1,30 @@
+name: Lightfeed Browser Agent
+description: TypeScript browser agent library that records AI-driven navigation as replayable plans, eliminating LLM token costs on repeat runs. Navigate once with AI, replay for free. Supports local Chromium, serverless Lambda, and remote CDP endpoints.
+tagline: AI drives the browser once, then replay navigation with zero tokens
+
+github_url: https://github.com/lightfeed/browser-agent
+website_url: https://lightfeed.dev
+docs_url: https://github.com/lightfeed/browser-agent/blob/main/README.md
+
+install_command: npm install @lightfeed/browser-agent
+
+category: Agents
+tags: [browser-automation, web-scraping, playwright, token-optimization, serverless, chromium, typescript, extraction]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Browser automation agents burn LLM tokens on every run, even when navigation steps are
+  identical across executions. Most token spend goes to repetitive clicking, scrolling, and
+  typing to reach a target page, while only the final data extraction needs fresh AI reasoning.
+  Lightfeed Browser Agent splits this into two phases: AI navigation that can be recorded and
+  replayed with zero tokens, and cheap extraction that runs only on the result page. Optional
+  aiFallback re-plans only broken steps when the DOM drifts, cutting token waste to a fraction.
+
+use_cases:
+  - Schedule recurring web scraping jobs that navigate to the same pages daily without burning tokens on navigation
+  - Build a data extraction pipeline that replays recorded browser paths and only runs AI for extracting live content
+  - Run browser agents on AWS Lambda with the serverless Chromium provider for cost-effective scheduled scraping
+  - Create deterministic browser test suites that replay navigation plans for consistent, fast UI testing
+  - Prototype browser agents locally with Chromium, then deploy the same code to a remote browser farm via CDP endpoint
