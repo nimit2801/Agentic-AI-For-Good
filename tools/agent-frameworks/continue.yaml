@@ -1,0 +1,26 @@
+name: Continue
+description: An open-source AI code assistant and quality control platform providing AI-powered IDE extensions (VS Code, JetBrains) with chat, autocomplete, inline edit, and agent features, plus source-controlled AI checks that run on every pull request as GitHub status checks.
+tagline: Source-controlled AI checks on every PR, plus an AI-powered IDE assistant
+
+github_url: https://github.com/continuedev/continue
+website_url: https://continue.dev
+docs_url: https://docs.continue.dev
+
+category: Agents
+tags: [ai, code-review, ci-cd, ide-extension, vs-code, jetbrains, autocomplete, code-quality, pull-request]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+install_command: |
+  npm i -g @continuedev/cli
+
+problem_solved: |
+  Teams lack automated, consistent code quality enforcement in CI/CD; manual PR reviews miss
+  standards violations and are slow. Continue lets teams define code review standards as markdown
+  check files and enforces them automatically on every pull request.
+
+use_cases:
+  - Automated PR security review flagging hardcoded secrets, missing input validation, and injection risks
+  - AI-powered code completion, editing, and conversational chat within VS Code and JetBrains IDEs
+  - Code style and standards enforcement in CI via custom markdown checks running as GitHub status checks
