@@ -1,0 +1,30 @@
+name: Marvin
+description: A Python framework for producing structured outputs and building agentic AI workflows. It provides an intuitive API for defining tasks and delegating work to LLMs, with support for type-safe results, multi-agent orchestration, and thread management.
+tagline: Type-safe AI functions and agents in pure Python
+
+github_url: https://github.com/PrefectHQ/marvin
+website_url: https://askmarvin.ai
+docs_url: https://askmarvin.ai
+
+category: Agents
+tags: [python, ai-agent, llm, structured-output, agentic-workflows, pydantic, openai, task-orchestration, multi-agent, prefect]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install marvin
+
+problem_solved: |
+  Integrating LLMs into production Python applications is hard because LLM outputs are
+  unstructured, unpredictable, and difficult to validate. Marvin solves this by providing
+  type-safe, structured outputs from AI models using Pydantic, and an intuitive framework
+  for building multi-step agentic workflows. It eliminates manual prompt engineering for
+  consistent data formats and provides observability and control over complex AI agent
+  coordination.
+
+use_cases:
+  - Cast, classify, extract, and generate structured data from any inputs using LLMs with type safety
+  - Create specialized AI agents with distinct skills and personalities for task-specific problem solving
+  - Orchestrate multi-agent workflows by composing discrete observable tasks into threads
+  - Build AI-powered Slack bots and conversational assistants with structured conversation management
+  - Generate validated Pydantic models from unstructured text for reliable downstream processing

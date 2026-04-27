@@ -1,0 +1,30 @@
+name: PocketFlow
+description: A 100-line minimalist LLM framework for building AI agents, workflows, and RAG pipelines with zero dependencies and zero vendor lock-in. Its core abstraction is a Graph and SharedStore model where Nodes handle tasks, Flows connect nodes via labeled Actions, and a SharedStore manages inter-node communication.
+tagline: The 100-line LLM framework — minimal, composable, zero lock-in
+
+github_url: https://github.com/The-Pocket/PocketFlow
+website_url: https://the-pocket.github.io/PocketFlow/
+docs_url: https://the-pocket.github.io/PocketFlow/
+
+category: Agents
+tags: [python, llm-framework, minimal, agents, rag, workflow, agentic-ai, graph, zero-dependency, composable]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install pocketflow
+
+problem_solved: |
+  Existing LLM frameworks like LangChain and CrewAI are bloated with tens of thousands of
+  lines, heavy dependencies, and vendor-specific wrappers that create lock-in and maintenance
+  burdens. PocketFlow provides just the essential graph abstraction (Node, Flow, SharedStore)
+  in roughly 100 lines of zero-dependency Python, eliminating framework bloat while still
+  supporting advanced patterns like multi-agent orchestration, RAG pipelines, and conditional
+  workflows.
+
+use_cases:
+  - Build autonomous AI agents that make decisions, use tools, and loop until tasks are complete
+  - Implement RAG pipelines that integrate document retrieval with LLM generation for grounded Q&A
+  - Orchestrate multiple specialized AI agents that collaborate on complex multi-step tasks
+  - Create conditional workflow pipelines that branch and route based on LLM outputs
+  - Rapidly prototype LLM applications using the minimal framework without vendor lock-in

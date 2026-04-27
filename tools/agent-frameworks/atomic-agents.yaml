@@ -1,0 +1,30 @@
+name: Atomic Agents
+description: A lightweight, modular AI agent framework built around the concept of atomicity, enabling developers to compose agentic AI pipelines from single-purpose, reusable, and predictable components using Pydantic and Instructor for structured outputs.
+tagline: Build AI applications like LEGO blocks — atomic, composable, predictable
+
+github_url: https://github.com/BrainBlend-AI/atomic-agents
+website_url: https://brainblend-ai.github.io/atomic-agents/
+docs_url: https://brainblend-ai.github.io/atomic-agents/
+
+category: Agents
+tags: [python, ai-agents, modular, pydantic, instructor, structured-output, agentic-workflows, composability, lightweight]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install atomic-agents
+
+problem_solved: |
+  Most AI agent frameworks are monolithic and opinionated, forcing developers into specific
+  patterns and making it hard to customize, test, or replace individual components. Atomic
+  Agents takes the opposite approach — each component (agent, tool, context provider) is
+  atomic: single-purpose, reusable, composable, and predictable. Built on Instructor and
+  Pydantic, it enables developers to build agentic pipelines using familiar software
+  engineering principles like modularity and separation of concerns.
+
+use_cases:
+  - Build multi-step agent pipelines by composing atomic single-purpose components into complex workflows
+  - Create tool-augmented agents that call external APIs and process structured responses with type safety
+  - Design context-aware agents that dynamically inject relevant information into system prompts
+  - Replace or swap individual agent components without rewriting entire pipelines
+  - Prototype and iterate on AI applications quickly using modular building blocks
