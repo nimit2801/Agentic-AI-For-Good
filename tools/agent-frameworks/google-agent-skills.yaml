@@ -1,0 +1,31 @@
+name: Google Agent Skills
+description: Google's official Agent Skills repository providing condensed, agent-first expertise for Google Cloud products like BigQuery, GKE, Cloud Run, Firebase, and the Gemini API. Skills are loaded on-demand to avoid context bloat, unlike traditional MCP servers that flood the context window.
+tagline: Official Google Cloud skills that give agents expertise without context bloat
+
+github_url: https://github.com/google/skills
+website_url: https://agentskills.io
+docs_url: https://agentskills.io/home
+
+install_command: npx skills install github.com/google/skills
+
+category: Agents
+tags: [google-cloud, agent-skills, gcp, bigquery, gke, gemini, cloud-run, firebase, mcp-alternative, context-management]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AI agents working with cloud APIs and products need accurate, up-to-date documentation context
+  to function correctly. Traditional approaches like MCP servers dump entire documentation into
+  the context window, causing context bloat that confuses the model and inflates token costs.
+  Google Agent Skills solve this by packaging condensed, agent-first expertise as Markdown
+  skills that load only when needed, covering BigQuery, GKE, Cloud Run, Cloud SQL, AlloyDB,
+  Firebase, Gemini API, plus Well-Architected Pillar skills for Security, Reliability, and
+  Cost Optimization.
+
+use_cases:
+  - Equip an AI coding agent with BigQuery expertise for writing optimized SQL queries and managing datasets
+  - Give a DevOps agent GKE skills for cluster management, scaling, and troubleshooting Kubernetes workloads
+  - Provide a cost-optimization agent with Google Cloud Well-Architected Cost Optimization expertise to reduce spend
+  - Install Firebase skills into a mobile development agent for real-time database rules and authentication setup
+  - Add Gemini API skills to a coding assistant so it knows the latest model capabilities, parameters, and best practices
