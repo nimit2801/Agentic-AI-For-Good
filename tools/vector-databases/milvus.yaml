@@ -1,0 +1,30 @@
+name: Milvus
+description: Milvus is a high-performance vector database built for scale. It powers AI applications by efficiently organizing and searching vast amounts of unstructured data such as text, images, and multi-modal information.
+tagline: High-performance, cloud-native vector database
+
+website_url: https://milvus.io
+github_url: https://github.com/milvus-io/milvus
+docs_url: https://milvus.io/docs
+
+install_command: |
+  curl -sfL https://raw.githubusercontent.com/milvus-io/milvus/master/scripts/standalone_embed.sh -o standalone_embed.sh
+  bash standalone_embed.sh start
+
+category: Vector DB
+tags: [vector-database, ann-search, embeddings, rag, semantic-search, cloud-native, unstructured-data, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Traditional databases cannot efficiently search or retrieve unstructured data like text, images, and
+  audio by semantic meaning. Milvus solves this by storing high-dimensional vector embeddings and enabling
+  fast approximate nearest neighbor (ANN) search at scale, with support for metadata filtering, hybrid
+  search, and real-time updates.
+
+use_cases:
+  - Power Retrieval-Augmented Generation (RAG) pipelines by retrieving relevant document chunks from a vector store
+  - Build semantic image and text search engines that understand natural language queries
+  - Drive recommendation systems by finding semantically similar users, products, or content
+  - Accelerate drug discovery with molecular embedding search across massive compound libraries
+  - Run hybrid search combining dense vectors with sparse vectors for higher relevance
