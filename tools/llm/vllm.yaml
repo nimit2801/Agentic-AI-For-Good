@@ -1,0 +1,24 @@
+name: vLLM
+description: "vLLM is a high-throughput and memory-efficient inference and serving engine for large language models. Originally developed at UC Berkeley's Sky Computing Lab, it uses PagedAttention to efficiently manage the key-value cache, enabling state-of-the-art serving throughput while reducing hardware costs for production LLM deployments."
+tagline: "High-throughput LLM inference and serving engine"
+github_url: https://github.com/vllm-project/vllm
+website_url: https://docs.vllm.ai/
+docs_url: https://docs.vllm.ai/
+install_command: "pip install vllm"
+category: LLM
+tags:
+  - llm
+  - inference
+  - serving
+  - open-source
+  - gpu
+  - production
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "LLM inference is memory-bound and inefficient due to poor key-value cache management. vLLM solves this with PagedAttention for near-zero waste KV-cache memory, continuous batching, chunked prefill, and prefix caching — delivering state-of-the-art throughput while reducing the GPU hardware needed for production serving."
+use_cases:
+  - "Deploy high-throughput OpenAI-compatible API servers for production chat and completions"
+  - "Run offline batch inference over large datasets efficiently without maintaining a server"
+  - "Serve massive models across multiple GPUs using tensor, pipeline, and expert parallelism"
+  - "Optimize cloud inference costs by maximizing throughput per GPU for SaaS applications"
