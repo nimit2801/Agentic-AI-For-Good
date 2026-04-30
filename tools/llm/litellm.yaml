@@ -1,0 +1,36 @@
+name: LiteLLM
+description: >
+  LiteLLM is an open source AI Gateway that gives you a single, unified interface
+  to call 100+ LLM providers — OpenAI, Anthropic, Gemini, Bedrock, Azure, and more —
+  using the OpenAI format. Use it as a Python SDK for direct library integration,
+  or deploy the AI Gateway (Proxy Server) as a centralized service for your team
+  or organization.
+tagline: Open Source AI Gateway for 100+ LLMs
+problem_solved: >
+  Managing LLM calls across providers gets complicated fast — different SDKs,
+  auth patterns, request formats, and error types for every model. LiteLLM removes
+  that friction by providing a unified API with drop-in OpenAI compatibility,
+  so teams can swap providers without rewriting code, track spend across users and teams,
+  enforce guardrails, and handle fallbacks and load balancing in production.
+use_cases:
+  - Centralized LLM Gateway for Enterprises — Platform teams deploy LiteLLM Proxy to give developers secure, managed access to 100+ LLMs with virtual keys, rate limits, budgets, and SSO.
+  - Multi-Provider Application Development — Developers use the Python SDK to call OpenAI, Anthropic, Azure, Bedrock, etc. through a single interface without managing provider-specific SDKs.
+  - Cost Tracking and Chargeback — Finance and platform teams accurately attribute LLM spend to keys, users, teams, or organizations, and enforce budgets and rate limits.
+  - LLM Fallbacks and Load Balancing — Production systems automatically route to backup models when a provider is down and distribute traffic across multiple deployments.
+github_url: https://github.com/BerriAI/litellm
+website_url: https://www.litellm.ai
+docs_url: https://docs.litellm.ai
+install_command: pip install 'litellm[proxy]'
+license: MIT
+pricing: freemium
+is_open_source: true
+category: LLM
+tags:
+  - llm
+  - gateway
+  - proxy
+  - router
+  - python
+  - sdk
+  - cost-tracking
+  - load-balancing

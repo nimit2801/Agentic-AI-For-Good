@@ -1,0 +1,39 @@
+name: LanceDB
+description: >
+  AI-native multimodal lakehouse for AI and ML applications, built on top of the
+  open-source Lance columnar format. Store, index, and search over petabytes of
+  multimodal data and vectors with ease. Supports vector similarity search,
+  full-text search, SQL filters, and hybrid search, all in one table.
+tagline: Search More; Manage Less
+problem_solved: >
+  AI and ML development cycles take 10x longer than they should because training data
+  is scattered across multiple systems (feature stores, object storage, vector
+  databases, Spark jobs) that do not talk to each other. LanceDB unifies data
+  curation, feature engineering, retrieval, and model training into a single
+  platform, eliminating data sync jobs, ad-hoc scripts, and GPU idle time
+  caused by shuffle-and-load bottlenecks.
+use_cases:
+  - Build production RAG, agentic, semantic-search, and recommendation systems with vector, full-text, and hybrid search combined with SQL filters, horizontally scalable to 100K+ QPS.
+  - Manage and filter petabyte-scale multimodal datasets (images, video, point clouds). Deduplicate billions of rows, identify edge cases for labeling, and explore data distributions without copying data.
+  - Add new columns and features and embeddings at scale with minimal I/O overhead. Declarative pipelines, automatic versioning, schema evolution, and the ability to branch and roll back experiments without rewriting tables.
+  - High-performance random access and low-overhead shuffles for training and fine-tuning. Achieve up to 70% Model FLOPS Utilization with no egress bottleneck from the same table used for exploration.
+github_url: https://github.com/lancedb/lancedb
+website_url: https://lancedb.com
+docs_url: https://docs.lancedb.com
+install_command: pip install lancedb
+license: Apache-2.0
+pricing: freemium
+is_open_source: true
+category: Vector DB
+tags:
+  - vector-database
+  - multimodal
+  - lakehouse
+  - ai-native
+  - embedded-database
+  - retrieval
+  - search
+  - feature-engineering
+  - mlops
+  - rag
+  - agents
