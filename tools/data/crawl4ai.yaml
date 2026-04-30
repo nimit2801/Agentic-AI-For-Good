@@ -1,0 +1,30 @@
+name: Crawl4AI
+description: An async web crawler and scraper that turns any website into clean, LLM-ready Markdown or structured data for RAG, agents, and data pipelines.
+tagline: Open-source LLM-friendly web crawler and scraper
+
+github_url: https://github.com/unclecode/crawl4ai
+website_url: https://docs.crawl4ai.com
+docs_url: https://docs.crawl4ai.com
+
+category: Data
+tags: [python, crawler, scraper, markdown, rag, async]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Raw web pages are noisy — ads, navigation, scripts, and inconsistent markup make them hard to
+  ingest into LLMs and RAG pipelines. Manual extraction doesn't scale, and generic scrapers often
+  miss the semantic structure. Crawl4AI automates the full pipeline: it fetches pages, executes
+  JavaScript, extracts meaningful content, and outputs clean Markdown or structured JSON. This
+  eliminates hours of cleanup and makes any web source usable for AI applications immediately.
+
+install_command: |
+  pip install crawl4ai
+  crawl4ai-setup
+
+use_cases:
+  - Generate clean Markdown from any website for RAG ingestion and vector indexing
+  - Extract structured product data, prices, and reviews using CSS, XPath, or LLM-based strategies
+  - Crawl documentation sites recursively to build a searchable knowledge base for support agents
+  - Perform large-scale parallel crawling with proxies, stealth modes, and session reuse for research pipelines

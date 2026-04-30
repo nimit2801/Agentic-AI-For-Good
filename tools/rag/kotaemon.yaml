@@ -1,0 +1,30 @@
+name: Kotaemon
+description: An open-source, clean, and customizable RAG UI for chatting with your documents, built for both end users and developers who want full control over their RAG pipeline.
+tagline: Open-source RAG UI for chatting with your documents
+
+github_url: https://github.com/Cinnamon/kotaemon
+website_url: https://cinnamon.github.io/kotaemon/
+docs_url: https://cinnamon.github.io/kotaemon/
+
+category: RAG
+tags: [python, rag, ui, documents, chat, self-hosted]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Most RAG solutions force a choice between black-box SaaS products that expose your data to
+  third parties, or raw frameworks that require extensive coding to get a usable interface.
+  Kotaemon bridges this gap by providing a fully functional, self-hosted RAG web UI out of the
+  box, with support for multiple LLM and embedding providers, hybrid retrieval, multi-user
+  collections, and advanced citation viewing. It gives teams a private, customizable document
+  QA system without months of frontend and pipeline engineering.
+
+install_command: |
+  docker run -e GRADIO_SERVER_NAME=0.0.0.0 -e GRADIO_SERVER_PORT=7860 -v ./ktem_app_data:/app/ktem_app_data -p 7860:7860 -it --rm ghcr.io/cinnamon/kotaemon:main-full
+
+use_cases:
+  - Deploy a self-hosted team knowledge base where users chat with private documents in shared or personal collections
+  - Perform multimodal question answering on documents containing figures, tables, and charts with in-browser previews
+  - Build a customizable RAG pipeline by swapping LLMs, embedding models, retrievers, and re-rankers via configuration
+  - Enable advanced citation viewing with highlighted PDF sources for high-stakes research and compliance workflows
