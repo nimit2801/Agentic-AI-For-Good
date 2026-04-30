@@ -1,0 +1,29 @@
+name: SGLang
+description: A high-performance serving framework for large language models and multimodal models, designed for low-latency, high-throughput inference from single GPUs to large distributed clusters.
+tagline: Fast serving framework for LLMs and multimodal models
+
+github_url: https://github.com/sgl-project/sglang
+website_url: https://sglang.ai
+docs_url: https://docs.sglang.ai
+
+category: LLM
+tags: [python, inference, serving, llm, multimodal, distributed]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Production LLM inference is expensive and hard to scale. Existing serving frameworks often
+  struggle with efficient batching, speculative decoding, and handling multimodal workloads under
+  latency constraints. SGLang addresses this by co-designing the runtime with a flexible language
+  for structured generation, enabling advanced scheduling like radix caching, speculative execution,
+  and chunked prefill. The result is significantly higher throughput and lower latency across
+  diverse hardware setups, from a single consumer GPU to large distributed clusters.
+
+install_command: pip install sglang
+
+use_cases:
+  - Deploy production-grade LLM APIs with state-of-the-art throughput and latency performance
+  - Serve multimodal models including vision-language and diffusion models from a unified backend
+  - Run RL and post-training inference rollouts for frontier model development at scale
+  - Replace vLLM or TGI in existing stacks to improve request-per-second metrics on the same hardware
