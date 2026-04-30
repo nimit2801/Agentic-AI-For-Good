@@ -1,0 +1,43 @@
+name: XTuner
+description: >-
+  XTuner is an open-source large model training engine developed by Shanghai AI Lab
+  (InternLM). It is purpose-built for ultra-large Mixture-of-Experts (MoE) models
+  and optimizes pre-training, supervised fine-tuning, and reinforcement learning
+  workflows. XTuner achieves breakthrough efficiency by simplifying parallelism
+  strategies—enabling dropless training of 200B+ parameter models without complex
+  3D parallel setups—and delivers state-of-the-art throughput on both NVIDIA GPUs
+  and Ascend NPUs.
+problem_solved: >-
+  Training ultra-large MoE models traditionally requires complex, hard-to-configure
+  3D parallelism that scales poorly and demands excessive hardware resources. XTuner
+  solves this by enabling dropless training of 200B-parameter MoE models with minimal
+  expert parallelism, supporting 64k sequence lengths without sequence parallelism,
+  and delivering higher FSDP throughput than conventional 3D parallel approaches on
+  GPUs and Ascend NPUs.
+use_cases:
+  - Supervised fine-tuning of LLMs and multimodal models on custom datasets
+  - Pre-training and continual pre-training of ultra-large MoE models up to 1T parameters
+  - Reinforcement learning with GRPO for reasoning and agentic capabilities
+  - Efficient long-context training (64k+ sequences) for dense and MoE architectures
+github_url: https://github.com/InternLM/xtuner
+website_url: https://xtuner.readthedocs.io/en/latest/
+docs_url: https://xtuner.readthedocs.io/en/latest/
+install_command: |
+  git clone https://github.com/InternLM/xtuner.git
+  cd xtuner
+  pip install -e .
+tagline: A next-generation training engine built for ultra-large MoE models
+license: Apache-2.0
+pricing: free
+is_open_source: true
+category: Fine-tuning
+tags:
+  - llm
+  - moe
+  - fine-tuning
+  - pre-training
+  - reinforcement-learning
+  - multimodal
+  - pytorch
+  - gpu
+  - ascend-npu

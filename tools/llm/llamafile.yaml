@@ -1,0 +1,44 @@
+name: llamafile
+description: >-
+  llamafile lets you distribute and run LLMs with a single file. It combines
+  llama.cpp with Cosmopolitan Libc into a framework that collapses all the
+  complexity of LLMs down to a single-file executable that runs locally on most
+  operating systems and CPU architectures, with no installation. It also includes
+  whisperfile, a single-file speech-to-text tool built on whisper.cpp for offline
+  transcription and translation.
+problem_solved: >-
+  Running and distributing LLMs usually requires complex dependency management,
+  multiple files, and platform-specific installations. llamafile solves this by
+  packaging everything into a single executable that runs locally across macOS,
+  Windows, Linux, FreeBSD, OpenBSD, and NetBSD on both AMD64 and ARM64 with zero
+  installation, making open LLMs accessible to developers and end users alike.
+use_cases:
+  - Local AI chatbot and assistant deployment
+  - Offline speech-to-text transcription and translation
+  - Distributing LLMs as portable single-file executables
+  - Running vision-language models on local hardware
+  - Hosting OpenAI-compatible local API servers
+github_url: https://github.com/mozilla-ai/llamafile
+website_url: https://www.mozilla.ai/open-tools/llamafile
+docs_url: https://docs.mozilla.ai/llamafile
+install_command: "curl -LO https://huggingface.co/mozilla-ai/llamafile_0.10.0/resolve/main/llamafile_0.10.0 && chmod +x llamafile_0.10.0"
+tagline: Distribute and run LLMs with a single file.
+license: Apache-2.0
+pricing: free
+is_open_source: true
+category: LLM
+tags:
+  - llm
+  - local-ai
+  - single-file
+  - executable
+  - open-source
+  - mozilla
+  - llama.cpp
+  - cosmopolitan
+  - cpu
+  - gpu
+  - speech-to-text
+  - whisper
+  - portable
+  - gguf
