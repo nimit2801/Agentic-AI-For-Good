@@ -1,0 +1,26 @@
+name: BAML
+description: "BAML is an open-source prompting language and framework from BoundaryML for building reliable AI workflows and agents. It turns prompts into typed functions, generates native clients, and supports testing, retries, fallbacks, streaming, and structured outputs across major LLM providers."
+tagline: "Type-safe language and tooling for reliable AI workflows"
+github_url: https://github.com/boundaryml/baml
+website_url: https://www.boundaryml.com
+docs_url: https://docs.boundaryml.com
+install_command: |
+  pip install baml-py
+  baml-cli init
+category: Dev Tools
+tags:
+  - prompt-engineering
+  - structured-outputs
+  - type-safety
+  - ai-agents
+  - testing
+  - llm-framework
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Prompt-heavy AI applications often rely on fragile string templates and ad hoc JSON parsing. BAML gives teams a typed, testable interface for prompts and model calls so agent workflows can produce structured outputs reliably across languages, models, and deployment environments."
+use_cases:
+  - "Build type-safe AI agents and LLM workflows with generated clients"
+  - "Extract structured data from documents using validated model outputs"
+  - "Test prompts in development and CI before shipping production changes"
+  - "Add retries, fallbacks, streaming, and model switching to AI features"
