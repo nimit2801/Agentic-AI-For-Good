@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agentic AI For Good | DevRel JAM</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" />
+
+  <style>
+    /* ─── HERMES THEME ─────────────────────────────────────── */
+    :root {
+      --gold:    #E8B84B;
+      --gold-dim:#9A7A2C;
+      --white:   #F0EDE8;
+      --muted:   #888580;
+      --bg:      #0A0907;
+      --bg2:     #111009;
+      --grid:    rgba(232,184,75,0.06);
+      --border:  rgba(232,184,75,0.18);
+    }
+
+    .reveal-viewport { background: var(--bg); }
+
+    .reveal {
+      font-family: 'Inter', sans-serif;
+      font-size: 36px;
+      color: var(--white);
+    }
+
+    /* Grid background on every slide */
+    .reveal .slides section {
+      background-image:
+        linear-gradient(var(--grid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+      background-size: 60px 60px;
+      background-position: center center;
+      padding: 60px 80px;
+      box-sizing: border-box;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    /* Corner mark */
+    .reveal .slides section::before {
+      content: 'AGENTIC AI FOR GOOD  ·  DEVREL JAM  ·  2026';
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      color: var(--gold-dim);
+      position: absolute;
+      top: 28px;
+      left: 40px;
+      opacity: 0.7;
+    }
+
+    /* Slide number */
+    .reveal .slides section::after {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      color: var(--gold-dim);
+      opacity: 0.5;
+    }
+
+    /* ─── TYPOGRAPHY ───────────────────────────────────────── */
+    .reveal h1 {
+      font-size: 3.2em;
+      font-weight: 900;
+      line-height: 1.0;
+      letter-spacing: -0.02em;
+      color: var(--white);
+      text-transform: uppercase;
+      margin-bottom: 0.3em;
+      position: relative;
+      z-index: 1;
+    }
+
+    .reveal h2 {
+      font-size: 1.9em;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      color: var(--white);
+      text-transform: uppercase;
+      margin-bottom: 0.5em;
+      position: relative;
+      z-index: 1;
+    }
+
+    .reveal h3 {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.75em;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 1em;
+    }
+
+    .reveal p {
+      font-size: 0.9em;
+      font-weight: 300;
+      line-height: 1.65;
+      color: var(--white);
+      opacity: 0.9;
+    }
+
+    .reveal ul, .reveal ol {
+      list-style: none;
+      margin-left: 0;
+      padding-left: 0;
+    }
+
+    .reveal ul li, .reveal ol li {
+      font-size: 0.8em;
+      font-weight: 300;
+      line-height: 1.7;
+      padding-left: 1.6em;
+      position: relative;
+      color: var(--white);
+      opacity: 0.88;
+    }
+
+    .reveal ul li::before {
+      content: '→';
+      font-family: 'IBM Plex Mono', monospace;
+      color: var(--gold);
+      position: absolute;
+      left: 0;
+    }
+
+    .reveal ol {
+      counter-reset: li;
+    }
+
+    .reveal ol li::before {
+      counter-increment: li;
+      content: counter(li, decimal-leading-zero);
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.75em;
+      color: var(--gold);
+      position: absolute;
+      left: 0;
+      top: 4px;
+    }
+
+    /* ─── GOLD ACCENT LINE ─────────────────────────────────── */
+    .accent-line {
+      width: 60px;
+      height: 3px;
+      background: var(--gold);
+      margin-bottom: 1.2em;
+    }
+
+    /* ─── GOLD HIGHLIGHT TEXT ──────────────────────────────── */
+    .gold { color: var(--gold); }
+    .muted { color: var(--muted); font-size: 0.75em; font-family: 'IBM Plex Mono', monospace; }
+
+    /* ─── BIG QUOTE ────────────────────────────────────────── */
+    .big-quote {
+      font-size: 1.5em;
+      font-weight: 800;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+      color: var(--white);
+      border-left: 4px solid var(--gold);
+      padding-left: 0.6em;
+      margin: 0;
+    }
+
+    /* ─── CODE BLOCK ───────────────────────────────────────── */
+    .reveal pre {
+      background: rgba(232,184,75,0.06);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1em 1.4em;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.6em;
+      line-height: 1.7;
+      color: var(--gold);
+      box-shadow: none;
+      text-align: left;
+      margin: 0;
+      width: 100%;
+      box-sizing: border-box;
+      overflow-x: auto;
+      white-space: pre;
+    }
+
+    .reveal code {
+      font-family: 'IBM Plex Mono', monospace;
+      background: rgba(232,184,75,0.1);
+      color: var(--gold);
+      padding: 0.1em 0.35em;
+      border-radius: 3px;
+      font-size: 0.82em;
+    }
+
+    /* ─── TABLE ────────────────────────────────────────────── */
+    .reveal table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.72em;
+    }
+
+    .reveal table th {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.8em;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border-bottom: 1px solid var(--border);
+      padding: 0.6em 0.8em;
+      text-align: left;
+      background: transparent;
+    }
+
+    .reveal table td {
+      padding: 0.6em 0.8em;
+      border-bottom: 1px solid rgba(232,184,75,0.08);
+      color: var(--white);
+      opacity: 0.88;
+    }
+
+    .reveal table tr:last-child td { border-bottom: none; }
+
+    /* ─── TAG PILL ─────────────────────────────────────────── */
+    .tag {
+      display: inline-block;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.55em;
+      letter-spacing: 0.12em;
+      color: var(--gold);
+      border: 1px solid var(--border);
+      padding: 0.25em 0.7em;
+      border-radius: 2px;
+      margin-right: 0.4em;
+      margin-bottom: 0.4em;
+      text-transform: uppercase;
+    }
+
+    /* ─── GRID LAYOUT ──────────────────────────────────────── */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2em;
+      align-items: start;
+    }
+
+    .three-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1.5em;
+      align-items: start;
+    }
+
+    /* ─── CARD ─────────────────────────────────────────────── */
+    .card {
+      border: 1px solid var(--border);
+      background: rgba(232,184,75,0.03);
+      padding: 1.2em 1.4em;
+      border-radius: 4px;
+    }
+
+    .card .card-label {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.55em;
+      letter-spacing: 0.18em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 0.5em;
+    }
+
+    .card p {
+      font-size: 0.75em;
+      opacity: 0.8;
+      margin: 0;
+    }
+
+    /* ─── HERO NUMBER ──────────────────────────────────────── */
+    .hero-num {
+      font-size: 7em;
+      font-weight: 900;
+      line-height: 0.85;
+      color: var(--gold);
+      letter-spacing: -0.05em;
+      opacity: 0.12;
+      position: absolute;
+      right: 80px;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ─── TITLE SLIDE ──────────────────────────────────────── */
+    .title-slide {
+      justify-content: center !important;
+    }
+
+    .title-slide h1 {
+      font-size: 2.2em;
+      line-height: 0.95;
+    }
+
+    /* ─── DEMO SLIDE ───────────────────────────────────────── */
+    .demo-bg {
+      background: radial-gradient(ellipse at center, rgba(232,184,75,0.08) 0%, transparent 70%) !important;
+    }
+
+    /* ─── CLOSE SLIDE ──────────────────────────────────────── */
+    .reveal h1.close-slide,
+    .close-slide h1 {
+      font-size: 1.6em;
+      line-height: 1.1;
+      text-transform: none;
+      letter-spacing: -0.01em;
+      font-weight: 800;
+    }
+
+    /* ─── FRAGMENT ANIMATIONS ──────────────────────────────── */
+    .reveal .fragment {
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .reveal .fragment.fade-up {
+      transform: translateY(15px);
+      opacity: 0;
+    }
+
+    .reveal .fragment.fade-up.visible {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* ─── PROGRESS BAR ─────────────────────────────────────── */
+    .reveal .progress {
+      color: var(--gold);
+      height: 2px;
+    }
+
+    /* ─── CONTROLS ─────────────────────────────────────────── */
+    .reveal .controls button {
+      color: var(--gold-dim);
+    }
+
+    /* ─── SLIDE NUMBER ─────────────────────────────────────── */
+    .reveal .slide-number {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      color: var(--gold-dim);
+      background: transparent;
+      right: 40px;
+      bottom: 28px;
+    }
+
+    /* ─── SEPARATOR ────────────────────────────────────────── */
+    hr.gold {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 1em 0;
+    }
+
+    /* checklist */
+    .checklist li::before { content: '☐'; color: var(--gold); }
+  </style>
+</head>
+<body>
+<div class="reveal">
+  <div class="slides">
+
+    <!-- ══════════════════════════════════════════════════════
+         SLIDE 01: TITLE
+    ══════════════════════════════════════════════════════════ -->
+    <section class="title-slide">
+      <div style="max-width: 900px;">
+        <h3>DevRel JAM · April 2026</h3>
+        <h1 style="font-size:1.7em;">Helping Developers Discover the<br><span class="gold">Right AI Tools While They Build</span></h1>
+        <p style="margin-top:0.8em; font-size:0.7em; opacity:0.7;">
+          How Agentic AI For Good brings a curated AI tool catalog directly into Claude via MCP.
+        </p>
+        <div style="margin-top:1.2em;">
+          <span class="tag">agenticaiforgood.com</span>
+          <span class="tag">Open Source</span>
+          <span class="tag">MCP</span>
+          <span class="tag">DevRel</span>
+        </div>
+      </div>
+      <div class="hero-num">01</div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         SLIDE 01.5: QR CODE
+    ══════════════════════════════════════════════════════════ -->
+    <section style="justify-content: center;">
+      <h3 style="margin-bottom: 0.5em;">Scan to explore</h3>
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 1.5em;">
+        <div style="background: white; padding: 12px; border-radius: 8px; box-shadow: 0 4px 20px rgba(232,184,75,0.15);">
+          <img src="AgentAI For Good LinkedIn Post 1.png" alt="QR Code to agenticaiforgood.com" style="width: 280px; height: 280px; display: block;" />
+        </div>
+        <p style="font-size: 0.75em; opacity: 0.7; margin: 0;">
+          <span class="gold">agenticaiforgood.com</span> | Curated AI tools via MCP
+        </p>
+      </div>
+      <div class="hero-num" style="opacity: 0.1;">01</div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         SLIDE 02: SPEAKER INTRO
+    ══════════════════════════════════════════════════════════ -->
+    <section style="justify-content: center;">
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 0.8em;">
+        <div style="width: 140px; height: 140px; border-radius: 50%; overflow: hidden; border: 2px solid var(--gold); box-shadow: 0 0 20px rgba(232,184,75,0.15);">
+          <img src="Nimit Square Photo.jpg" alt="Nimit Savant" style="width: 100%; height: 100%; object-fit: cover;" />
+        </div>
+        <div style="text-align: center;">
+          <h2 style="font-size: 1.3em; margin-bottom: 0.2em;">Nimit Savant</h2>
+          <p style="font-size: 0.7em; color: var(--gold); font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.1em; text-transform: uppercase; margin: 0;">
+            Developer Evangelist @ DevRev
+          </p>
+        </div>
+        <p style="font-size: 0.65em; opacity: 0.8; text-align: center; max-width: 550px; line-height: 1.5; margin: 0;">
+          Running <span class="gold">Agentic AI For Good</span>: a community exploring how better curation 
+          and in-context recommendations connect AI tools with the right developers.
+        </p>
+        <div style="margin-top: 0.3em;">
+          <span class="tag">DevRel</span>
+          <span class="tag">AI Tools</span>
+          <span class="tag">Open Source</span>
+        </div>
+      </div>
+      <div class="hero-num">02</div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         SLIDE 03: WHAT THIS TALK IS ABOUT
+    ══════════════════════════════════════════════════════════ -->
+    <section>
+      <h3>What this talk is about</h3>
+      <div class="accent-line"></div>
+      <h2>Developers don't need more<br><span class="gold">AI tool lists.</span></h2>
+      <p class="fragment fade-up" style="margin-top:1em; font-size:0.82em;">
+        They need the <span class="gold">right suggestion</span> at the moment they're building.
+      </p>
+      <p class="fragment fade-up" style="margin-top:1em; font-size:0.75em; opacity:0.75;">
+        I'll share what we learned turning a fast-moving AI tools database into an
+        in-context developer experience: how to reduce search fatigue,
+        why curation matters more than volume, and what makes an MCP integration
+        <em>genuinely useful</em> instead of just technically impressive.
+      </p>
+      <div class="hero-num">02</div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         SLIDE 2.5: THE HOOK
+    ══════════════════════════════════════════════════════════ -->
+    <section>
+      <h3>The question</h3>
+      <div class="accent-line"></div>
+      <p class="big-quote fragment fade-up">
+        "When did you last discover a tool that<br>
+        <span class="gold">actually changed how you build?</span>"
+      </p>
+      <p class="fragment fade-up" style="margin-top:1.5em; font-size:0.72em; opacity:0.6;">
+        Not from a list. Not from a newsletter.<br>
+        At the exact moment you were stuck and needed it.
+      </p>
+      <div class="hero-num">03</div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         SLIDE 03: THE PROBLEM
+    ══════════════════════════════════════════════════════════ -->
+    <section>
+      <h3>The problem</h3>
+      <div class="accent-line"></div>
+      <h2>Discovery breaks at the<br><span class="gold">moment it matters most.</span></h2>
+      <ul style="margin-top:1em;">
+        <li class="fragment fade-up">Developers find tools via Twitter, word of mouth, blog posts. <span class="gold">None of which are in their IDE.</span></li>
+        <li class="fragment fade-up">The average AI dev uses 3–5 new tools per project cycle</li>
+        <li class="fragment fade-up">"Awesome lists" have 500+ entries. Nobody reads them.</li>
+        <li class="fragment fade-up">Your tool might be <em>exactly right</em> for someone, but they just don't know it exists</li>
+      </ul>
+      <div class="hero-num">03</div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         SLIDE 04: DEVREL BLIND SPOT
+    ══════════════════════════════════════════════════════════ -->
+    <section>
+      <h3>The DevRel blind spot</h3>
+      <div class="accent-line"></div>
+      <div class="two-col">
+        <div>
+          <p style="font-size:0.7em; margin-bottom:0.8em; color:var(--gold); font-family:'IBM Plex Mono',monospace; letter-spacing:0.1em; text-transform:uppercase;">We obsess over</p>
+          <ul>
+            <li class="fragment fade-up">Getting started guides</li>
+            <li class="fragment fade-up">API references</li>
+            <li class="fragment fade-up">Sample apps</li>
+            <li class="fragment fade-up">Office hours &amp; Discord</li>
+          </ul>
+        </div>
+        <div>
+          <p style="font-size:0.7em; margin-bottom:0.8em; color:var(--muted); font-family:'IBM Plex Mono',monospace; letter-spacing:0.1em; text-transform:uppercase;">We neglect</p>
+          <ul class="fragment fade-up">
+            <li style="opacity:0.5;">Making sure the <em>right developer</em><br>finds the tool at the <em>right moment</em></li>
+          </ul>
+        </div>
+      </div>
+      <p class="fragment fade-up" style="margin-top:1.5em; font-size:0.75em; border-left:3px solid var(--gold); padding-left:0.8em; opacity:0.9;">
+        Great documentation doesn't matter if nobody finds your tool.
+      </p>
+      <div class="hero-num">04</div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         SLIDE 05: THE BELIEF
+    ══════════════════════════════════════════════════════════ -->
+    <section>
+      <h3>Our hypothesis</h3>
+      <div class="accent-line"></div>
+      <p class="big-quote">
+        <span class="gold">Discovery matters<br>as much as documentation.</span>
+      </p>
+      <p class="fragment fade-up" style="margin-top:2em; font-size:0.72em; opacity:0.65;">
+        Agentic AI For Good is an experiment in fixing the last mile.
+      </p>
+      <div class="hero-num">05</div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         SLIDE 06: WHAT WE BUILT
+    ══════════════════════════════════════════════════════════ -->
+    <section>
+      <h3>What we built</h3>
+      <div class="accent-line"></div>
+      <h2 style="font-size:1.6em;"><span class="gold">agenticaiforgood.com</span></h2>
+      <div class="two-col" style="margin-top:0.6em;">
+        <div class="card fragment fade-up" style="padding:1em 1.2em;">
+          <div class="card-label">Web Catalog</div>
+          <p style="font-size:0.7em;">100+ curated AI agent tools: LLMs, vector DBs, RAG, agents, monitoring, fine-tuning. Editorial, not crowdsourced.</p>
+        </div>
+        <div class="card fragment fade-up" style="padding:1em 1.2em;">
+          <div class="card-label">MCP Server</div>
+          <p style="font-size:0.7em;">Search the catalog directly from Claude Desktop or Claude Code without leaving your workflow.</p>
+        </div>
+      </div>
+      <p class="fragment fade-up" style="margin-top:0.8em; font-size:0.62em; opacity:0.6;">
+        Open source · YAML-based catalog · anyone can add a tool via PR
+      </p>
+      <div class="hero-num">06</div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         SLIDE 07: ARCHITECTURE
+    ══════════════════════════════════════════════════════════ -->
+    <section>
+      <h3>Architecture</h3>
+      <div class="accent-line"></div>
+      <pre style="font-size:0.45em; margin-top:0; line-height:1.5;">
+tools/*.yaml  →  GitHub Actions CI  →  Supabase (pgvector)
+     ↑                                        ↓
+  PR from                               Next.js on Vercel
+  community                                   ↓
+                                       Claude via MCP
+                                  (Desktop · Code · API)</pre>
+      <div class="three-col" style="margin-top:0.8em;">
+        <div class="card fragment fade-up" style="padding:0.8em 1em;">
+          <div class="card-label">Catalog</div>
+          <p style="font-size:0.6em;">YAML files in git. Validated on PR. Auto-synced on merge.</p>
+        </div>
+        <div class="card fragment fade-up" style="padding:0.8em 1em;">
+          <div class="card-label">Search</div>
+          <p style="font-size:0.6em;">pgvector semantic search + full-text fallback. No hallucination.</p>
+        </div>
+        <div class="card fragment fade-up" style="padding:0.8em 1em;">
+          <div class="card-label">MCP</div>
+          <p style="font-size:0.6em;">Hosted HTTP endpoint + npm package. One config line.</p>
+        </div>
+      </div>
+      <div class="hero-num">07</div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         SLIDE 08: WHAT IS MCP
+    ══════════════════════════════════════════════════════════ -->
+    <section>
+      <h3>Model Context Protocol</h3>
+      <div class="accent-line"></div>
+      <h2 style="font-size:1.5em;">MCP = <span class="gold">the USB-C of AI integrations.</span></h2>
+      <p class="fragment fade-up" style="margin-top:0.6em; font-size:0.7em;">
+        Anthropic's open standard. Connects external data and tools to any LLM in-context, at inference time.
+        One config entry in Claude Desktop / Claude Code → your tool is live in every conversation.
+      </p>
+      <pre class="fragment fade-up" style="margin-top:0.8em; font-size:0.5em;">
+# Install once
+npx agentic-ai-for-good-mcp
+
+# Or hosted (no install)
+https://agenticaiforgood.com/api/mcp</pre>
+      <div class="hero-num">08</div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         SLIDE 09: THE 4 TOOLS
+    ══════════════════════════════════════════════════════════ -->
+    <section>
+      <h3>MCP tools available</h3>
+      <div class="accent-line"></div>
+      <table>
+        <thead>
+          <tr>
+            <th>Tool</th>
+            <th>What it does</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="fragment fade-up">
+            <td><code>search_tools</code></td>
+            <td>Semantic search by use case</td>
+            <td><span class="muted">"vector DB for python agents"</span></td>
+          </tr>
+          <tr class="fragment fade-up">
+            <td><code>get_tool_detail</code></td>
+            <td>Full install, docs, code samples</td>
+            <td><span class="muted">get_tool_detail("langchain")</span></td>
+          </tr>
+          <tr class="fragment fade-up">
+            <td><code>suggest_for_stack</code></td>
+            <td>Reads package.json / requirements.txt</td>
+            <td><span class="muted">stack-aware gaps</span></td>
+          </tr>
+          <tr class="fragment fade-up">
+            <td><code>whats_new</code></td>
+            <td>Tools added in last N days</td>
+            <td><span class="muted">whats_new(days=7)</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="hero-num">09</div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         SLIDE 10: WHY IT MATTERS FOR DEVREL
+    ══════════════════════════════════════════════════════════ -->
+    <section>
+      <h3>Why this matters for DevRel</h3>
+      <div class="accent-line"></div>
+      <h2 style="font-size:1.5em;">In-context discovery <span class="gold">changes behavior.</span></h2>
+      <div class="three-col" style="margin-top:0.8em;">
+        <div class="card fragment fade-up" style="padding:0.9em 1.1em;">
+          <div class="card-label">Timing</div>
+          <p style="font-size:0.65em;">Recommendation at the moment of need, not in a separate tab the dev will never open.</p>
+        </div>
+        <div class="card fragment fade-up" style="padding:0.9em 1.1em;">
+          <div class="card-label">Stack-Aware</div>
+          <p style="font-size:0.65em;"><code>suggest_for_stack</code> reads their actual project. Generic advice is dead.</p>
+        </div>
+        <div class="card fragment fade-up" style="padding:0.9em 1.1em;">
+          <div class="card-label">Trust</div>
+          <p style="font-size:0.65em;">Curated catalog = signal, not noise. No SEO spam. No paid placements.</p>
+        </div>
+      </div>
+      <div class="hero-num">10</div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         SLIDE 11: OPEN SOURCE / CONTRIBUTION MODEL
+    ══════════════════════════════════════════════════════════ -->
+    <section>
+      <h3>Open source</h3>
+      <div class="accent-line"></div>
+      <h2 style="font-size:1.4em;">The catalog is <span class="gold">community infrastructure.</span></h2>
+      <pre class="fragment fade-up" style="margin-top:0.5em; font-size:0.4em; line-height:1.5;">
+# tools/agent-frameworks/your-tool.yaml
+name: Your Tool
+tagline: One-liner a dev would actually search for
+category: Agents
+tags: [python, async, tool-use]
+pricing: freemium
+is_open_source: true
+use_cases:
+  - Building multi-agent pipelines
+  - Tool orchestration with memory</pre>
+      <p class="fragment fade-up" style="margin-top:0.5em; font-size:0.6em; opacity:0.65;">
+        PR merges → GitHub Actions validates + embeds → live on site and in MCP within minutes.
+      </p>
+      <div class="hero-num">11</div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         SLIDE 12: DEMO
+    ══════════════════════════════════════════════════════════ -->
+    <section class="demo-bg">
+      <h3>Live demo · audience-driven</h3>
+      <div class="accent-line"></div>
+      <h2 style="font-size:1.5em;">Bring your AI tool. <span class="gold">We'll integrate it live.</span></h2>
+      <ol style="margin-top:0.6em;">
+        <li class="fragment fade-up" style="font-size:0.72em;"><code>search_tools("agent framework with memory")</code></li>
+        <li class="fragment fade-up" style="font-size:0.72em;"><code>get_tool_detail("langchain")</code> for install + code sample</li>
+        <li class="fragment fade-up" style="font-size:0.72em;"><code>suggest_for_stack</code>: drop in a real <code>package.json</code></li>
+        <li class="fragment fade-up" style="font-size:0.72em;"><code>whats_new(days=7)</code> to see what landed this week</li>
+        <li class="fragment fade-up" style="font-size:0.72em;"><span class="gold">Audience tool:</span> add it as YAML, PR it, search it via MCP. Full loop, on stage.</li>
+      </ol>
+      <p class="fragment fade-up" style="margin-top:0.8em; font-size:0.62em; opacity:0.65;">
+        If you're presenting a tool today, bring it up. Let's see how it looks inside Claude.
+      </p>
+      <div class="hero-num">12</div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         SLIDE 13: KEY LEARNINGS
+    ══════════════════════════════════════════════════════════ -->
+    <section>
+      <h3>Key learnings</h3>
+      <div class="accent-line"></div>
+      <ul style="margin-top:0.4em;">
+        <li class="fragment fade-up"><strong style="color:var(--gold);">In-context discovery</strong> beats static AI tool lists</li>
+        <li class="fragment fade-up">What makes an <strong style="color:var(--gold);">MCP integration actually useful</strong> for developers, not just technically impressive</li>
+        <li class="fragment fade-up"><strong style="color:var(--gold);">Stack-aware recommendations</strong> improve developer decision-making</li>
+        <li class="fragment fade-up"><strong style="color:var(--gold);">Curation</strong> is becoming a DevRel advantage in AI ecosystems</li>
+        <li class="fragment fade-up">Lessons from building the <strong style="color:var(--gold);">Agentic AI For Good</strong> MCP experience</li>
+      </ul>
+      <div class="hero-num">13</div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         SLIDE 14: THE BIGGER DEVREL PLAY
+    ══════════════════════════════════════════════════════════ -->
+    <section>
+      <h3>The bigger picture</h3>
+      <div class="accent-line"></div>
+      <h2 style="font-size:1.6em;">MCP as a <span class="gold">distribution primitive.</span></h2>
+      <ul style="margin-top:0.6em;">
+        <li class="fragment fade-up" style="font-size:0.72em;">Does your tool have an MCP server?</li>
+        <li class="fragment fade-up" style="font-size:0.72em;">Can developers find you <em>inside</em> their LLM workflow?</li>
+        <li class="fragment fade-up" style="font-size:0.72em;">Is your tool discoverable at the moment someone needs it?</li>
+      </ul>
+      <p class="fragment fade-up" style="margin-top:1em; font-size:0.66em; border-left:3px solid var(--gold); padding-left:0.8em;">
+        Lists are a 2022 solution to a 2026 problem.<br>
+        In-context discovery is the next frontier for DevRel.
+      </p>
+      <div class="hero-num">14</div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         SLIDE 15: OPEN SOURCE / DEVREL BELIEF
+    ══════════════════════════════════════════════════════════ -->
+    <section>
+      <h3>Our DevRel belief</h3>
+      <div class="accent-line"></div>
+      <p class="big-quote" style="font-size:1.3em;">
+        <span class="gold">Discovery matters as much<br>as documentation.</span>
+      </p>
+      <p class="fragment fade-up" style="margin-top:1em; font-size:0.7em; opacity:0.85;">
+        In a crowded AI ecosystem, great tools often struggle to reach the developers
+        who would actually benefit from them.
+      </p>
+      <p class="fragment fade-up" style="margin-top:0.6em; font-size:0.7em; opacity:0.85;">
+        Agentic AI For Good is a <span class="gold">completely open-source community</span>
+        exploring how better curation, clearer positioning, and in-context recommendations
+        can connect community-built tools with the right developer audiences,
+        in a more useful and trustworthy way.
+      </p>
+      <div class="hero-num">15</div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         SLIDE 16: HOW TO PARTICIPATE
+    ══════════════════════════════════════════════════════════ -->
+    <section>
+      <h3>Get involved</h3>
+      <div class="accent-line"></div>
+      <div class="two-col">
+        <div>
+          <ul>
+            <li class="fragment fade-up" style="font-size:0.7em;"><strong style="color:var(--gold);">Add your tool:</strong> PR a YAML file to the repo</li>
+            <li class="fragment fade-up" style="font-size:0.7em;"><strong style="color:var(--gold);">Install the MCP:</strong> <code>npx agentic-ai-for-good-mcp</code></li>
+            <li class="fragment fade-up" style="font-size:0.7em;"><strong style="color:var(--gold);">Contribute:</strong> MIT + CC BY-NC-SA, fork-friendly</li>
+          </ul>
+          <p class="fragment fade-up" style="margin-top:0.8em; font-size:0.68em; border-left:3px solid var(--gold); padding-left:0.8em; line-height:1.4;">
+            <strong style="color:var(--gold);">Looking for 5 volunteer contributors</strong><br>
+            <span style="opacity:0.8; font-size:0.9em;">to help build this with me: curation, MCP, design, content.</span>
+          </p>
+        </div>
+        <div class="fragment fade-up">
+          <div class="card" style="text-align:center;">
+            <div class="card-label" style="text-align:center;">Scan or visit</div>
+            <p style="font-family:'IBM Plex Mono',monospace; font-size:1.1em; color:var(--gold); margin-top:0.5em;">agenticaiforgood.com</p>
+            <p style="font-size:0.65em; margin-top:0.5em; opacity:0.5;">github.com/nimit2801/<br>Agentic-AI-For-Good-Website</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-num">16</div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         SLIDE 17: CONNECT ON LINKEDIN
+    ══════════════════════════════════════════════════════════ -->
+    <section style="justify-content: center;">
+      <h3 style="margin-bottom: 0.5em;">Connect on LinkedIn</h3>
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 1.2em;">
+        <div style="background: white; padding: 12px; border-radius: 8px; box-shadow: 0 4px 20px rgba(232,184,75,0.15);">
+          <img src="AgentAI For Good LinkedIn Post linkedin.png" alt="LinkedIn QR Code" style="width: 260px; height: 260px; display: block;" />
+        </div>
+        <p style="font-size: 0.7em; opacity: 0.7; margin: 0;">
+          Follow for AI tool discoveries and DevRel insights
+        </p>
+      </div>
+      <div class="hero-num" style="opacity: 0.1;">17</div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         SLIDE 18: FOLLOW ON GITHUB
+    ══════════════════════════════════════════════════════════ -->
+    <section style="justify-content: center;">
+      <h3 style="margin-bottom: 0.5em;">Star on GitHub</h3>
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 1.2em;">
+        <div style="background: white; padding: 12px; border-radius: 8px; box-shadow: 0 4px 20px rgba(232,184,75,0.15);">
+          <img src="AgentAI For Good LinkedIn Post github.png" alt="GitHub QR Code" style="width: 260px; height: 260px; display: block;" />
+        </div>
+        <p style="font-size: 0.7em; opacity: 0.7; margin: 0;">
+          <span class="gold">github.com/nimit2801/Agentic-AI-For-Good-Website</span>
+        </p>
+      </div>
+      <div class="hero-num" style="opacity: 0.1;">18</div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         SLIDE 19: CLOSE
+    ══════════════════════════════════════════════════════════ -->
+    <section class="title-slide">
+      <div style="max-width: 950px;">
+        <h3>One line close</h3>
+        <h1 class="close-slide" style="font-size:1.3em;">
+          Developer advocacy is evolving.<br>
+          The future is <span class="gold">activating developers right where they build:</span><br>
+          <span style="font-size:0.9em;">inside their workflow, at the moment they need it most.</span>
+        </h1>
+        <p style="margin-top:1em; font-size:0.68em; opacity:0.7;">
+          <span class="gold">agenticaiforgood.com</span> | open source, community-driven
+        </p>
+        <p style="margin-top:0.6em; font-size:0.55em; opacity:0.45; font-family:'IBM Plex Mono',monospace; letter-spacing:0.12em;">
+          AGENTIC AI FOR GOOD  ·  OPEN SOURCE  ·  DEVREL JAM 2026
+        </p>
+      </div>
+      <div class="hero-num" style="opacity:0.08;">19</div>
+    </section>
+
+  </div><!-- /.slides -->
+</div><!-- /.reveal -->
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script>
+  Reveal.initialize({
+    hash: true,
+    slideNumber: true,
+    progress: true,
+    controls: true,
+    transition: 'fade',
+    transitionSpeed: 'fast',
+    backgroundTransition: 'fade',
+    center: false,
+    width: 1280,
+    height: 720,
+    margin: 0,
+    minScale: 0.2,
+    maxScale: 2.0,
+  });
+</script>
+</body>
+</html>
