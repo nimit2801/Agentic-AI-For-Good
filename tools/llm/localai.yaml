@@ -1,0 +1,32 @@
+name: LocalAI
+description: >
+  LocalAI is a self-hosted, OpenAI-compatible inference server for running language,
+  vision, image, and audio models on local hardware. It helps teams replace hosted APIs
+  with a private local stack while keeping a familiar developer interface.
+tagline: Self-hosted OpenAI-compatible AI stack for local models
+github_url: https://github.com/mudler/LocalAI
+website_url: https://localai.io/
+docs_url: https://localai.io/
+install_command: docker run -p 8080:8080 --name local-ai -ti localai/localai:latest
+category: LLM
+tags:
+  - llm
+  - self-hosted
+  - openai-compatible
+  - local-inference
+  - privacy
+  - multimodal
+  - edge-ai
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: >
+  Many teams want the flexibility of OpenAI-style APIs without sending sensitive prompts,
+  files, or telemetry to third-party clouds, but stitching together local inference stacks
+  and adapting application code to each runtime is painful. LocalAI solves that by exposing
+  a familiar API for self-hosted models, making it easier to move apps and agents to private,
+  offline, or edge environments with minimal code changes.
+use_cases:
+  - Run a private OpenAI-compatible endpoint for internal copilots, agents, and automation tools
+  - Deploy local multimodal models on edge devices or air-gapped infrastructure
+  - Replace cloud LLM API calls in existing applications with self-hosted inference for privacy control

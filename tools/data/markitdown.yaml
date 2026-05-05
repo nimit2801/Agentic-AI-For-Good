@@ -1,0 +1,32 @@
+name: MarkItDown
+description: >
+  MarkItDown is a Python document-conversion library from Microsoft that turns PDFs,
+  Office files, HTML, images, audio, and other formats into structured Markdown for
+  LLM pipelines, search, and downstream text analysis.
+tagline: Convert messy files into LLM-friendly Markdown
+github_url: https://github.com/microsoft/markitdown
+website_url: https://pypi.org/project/markitdown/
+docs_url: https://github.com/microsoft/markitdown#readme
+install_command: pip install markitdown
+category: Data
+tags:
+  - data-ingestion
+  - markdown
+  - document-processing
+  - pdf
+  - office-documents
+  - llm
+  - preprocessing
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: >
+  Teams building RAG systems and document-aware agents often waste time writing one-off
+  parsers for PDFs, DOCX, PPTX, spreadsheets, web pages, and other file types before they
+  can even start chunking or embedding content. MarkItDown standardizes that messy ingestion
+  step by converting many common formats into clean Markdown that preserves useful structure
+  such as headings, lists, tables, and links.
+use_cases:
+  - Convert PDFs, DOCX, PPTX, and XLSX files into Markdown before chunking and embedding
+  - Normalize mixed document collections for enterprise search, copilots, and agent workflows
+  - Preprocess exported web pages, reports, and archives into token-efficient text for LLM analysis
