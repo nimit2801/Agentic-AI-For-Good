@@ -1,0 +1,29 @@
+name: Bruno
+description: Bruno is an open-source API client that stores collections as plain-text yaml files directly on your filesystem. Built as a fast, git-friendly alternative to Postman and Insomnia, it lets developers version-control their API requests, collaborate without syncing to the cloud, and test APIs natively inside their existing workflow.
+tagline: Fast and git-friendly open-source API client
+
+website_url: https://www.usebruno.com
+github_url: https://github.com/usebruno/bruno
+docs_url: https://docs.usebruno.com
+
+install_command: npm install -g @usebruno/cli
+
+category: Developer Tools
+tags: [api-client, api-testing, open-source, git-friendly, postman-alternative, rest, graphql, cli]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Teams that rely on Postman or Insomnia face cloud lock-in, paid sync tiers, and collections stored in
+  opaque binary formats that are hard to review in pull requests. Bruno solves this by keeping every
+  request, environment, and script as a human-readable .bru/yaml file on disk. Collections live inside the
+  project repository, travel with the codebase, and are reviewed, diffed, and merged just like source
+  code — no account required, no data leaves the machine.
+
+use_cases:
+  - Version-control API requests, environments, and scripts alongside application source code in the same git repository
+  - Run API test suites in CI/CD pipelines using the Bruno CLI without a GUI or cloud subscription
+  - Share API contracts across teams through pull requests, enabling structured review of endpoint changes
+  - Manage multiple environments (dev, staging, prod) with plain-text variable files kept out of version control via .gitignore
+  - Migrate existing Postman or Insomnia collections to an offline-first, open-source format with zero vendor dependency
