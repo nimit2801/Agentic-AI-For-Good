@@ -1,0 +1,26 @@
+name: GraphRAG
+description: Microsoft's graph-based Retrieval-Augmented Generation system that turns unstructured documents into a knowledge graph with community summaries, then uses that structure to answer complex questions over private data.
+tagline: Graph-based RAG for complex questions over private data
+
+github_url: https://github.com/microsoft/graphrag
+website_url: https://microsoft.github.io/graphrag/
+docs_url: https://microsoft.github.io/graphrag/get_started/
+install_command: python -m pip install graphrag
+
+category: RAG
+tags: [python, rag, graph-rag, knowledge-graph, microsoft, private-data]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Standard vector-search RAG often misses relationships that span many documents and struggles with
+  broad, corpus-level questions. GraphRAG builds a knowledge graph, hierarchical communities, and
+  summary layers from raw text so teams can answer both entity-specific and holistic questions over
+  large private datasets without manually stitching context together.
+
+use_cases:
+  - Build a knowledge-graph-backed RAG system for enterprise documents and research corpora
+  - Answer global questions that require themes and relationships across many documents
+  - Run entity-centric investigations with local graph context around people, places, or systems
+  - Create richer retrieval pipelines for compliance, intelligence, and due-diligence workflows
