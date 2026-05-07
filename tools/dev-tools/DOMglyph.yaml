@@ -1,0 +1,43 @@
+name: DOMglyph
+
+description: DOMglyph is a React-based AI-native design system that ships every component with a dual-layer contract — a visual layer for humans and a machine-readable semantic layer expressed via `data-ai-*` HTML attributes (id, role, action, state, screen, section, entity). It pairs the component library with a runtime inspection API (`window.__DOMGLYPH__`) so AI agents, automation scripts, and E2E tests can query available actions, form schemas, screen context, and recent events without scraping the DOM.
+
+github_url: https://github.com/llcortex/DOMGlyph
+website_url: https://domglyph.llcortex.ai
+docs_url: https://domglyph.llcortex.ai/docs/introduction/what-is-cortexui
+install_command: npm install @domglyph/components @domglyph/ai-contract @domglyph/runtime
+tagline: UI that speaks to humans and machines — every component is a machine-readable contract.
+
+category: Dev Tools
+tags:
+  - ai-native
+  - design-system
+  - react
+  - typescript
+  - component-library
+  - ai-agents
+  - browser-automation
+  - llm-tools
+  - e2e-testing
+  - ui-components
+  - accessibility
+  - developer-tools
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  AI agents, browser automation, and end-to-end test suites currently interact with web UIs through guesswork: matching by visible text, CSS class names, XPath, or visual position. Those signals break the moment a developer renames a class, restructures a layout, or tweaks copy — and the resulting failures compound across LLM copilots, Playwright tests, and RPA pipelines.
+
+  DOMglyph removes that guesswork by treating the UI itself as a contract. Every component renders normally for users *and* publishes a stable semantic layer through `data-ai-*` attributes (`data-ai-id`, `data-ai-role`, `data-ai-action`, `data-ai-state`, `data-ai-screen`, `data-ai-section`, `data-ai-entity`, `data-ai-entity-id`). A companion runtime (`window.__DOMGLYPH__`) exposes `getScreenContext()`, `getAvailableActions()`, `getFormSchema()`, and `getRecentEvents()` so any agent can introspect the page and trigger actions deterministically — without parsing HTML or training on a specific DOM.
+
+  This replaces fragile selectors, ad-hoc test IDs, and bespoke scraping layers with a typed, queryable interface. Frontend developers, UI engineers, and design-system builders shipping products that embed AI copilots, LLM-driven workflows, or large automated test suites get a single React + TypeScript library (ActionButton, FormField, Input, DataTable, Modal, etc.) where accessibility, styling, and machine-legibility are first-class from day one.
+
+use_cases:
+  - Building product UIs that embedded AI copilots and LLM agents can operate reliably without DOM scraping or per-app prompt engineering of selectors.
+  - Replacing brittle CSS/XPath selectors in Playwright, Cypress, and Selenium suites with stable `data-ai-action` and `data-ai-id` targets, dramatically cutting test flakiness.
+  - Powering browser-automation pipelines and RPA workflows that need a deterministic list of available actions and current element states on each screen.
+  - Exposing form schemas via `getFormSchema()` so LLMs can fill, validate, and submit complex create/edit flows without being trained on the specific markup.
+  - Shipping AI-native dashboards and admin panels where humans and autonomous agents share the same interface, with entity tracking (`data-ai-entity`, `data-ai-entity-id`) tying UI elements to domain objects.
+  - Instrumenting multi-agent scenarios where multiple agents introspect screen context and recent events in real time to coordinate UI operations.
+  - Standardizing an internal React design system (with primitives like Box, Stack, ButtonBase plus `@domglyph/tokens` design tokens) that is accessibility-compliant and AI-operable out of the box.
