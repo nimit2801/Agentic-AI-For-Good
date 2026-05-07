@@ -1,0 +1,40 @@
+name: AnythingLLM
+description: >
+  AnythingLLM is an open-source AI workspace for document chat, retrieval-augmented generation,
+  and agents that runs on desktop or self-hosted infrastructure with support for local and cloud LLMs.
+tagline: The all-in-one AI productivity accelerator
+github_url: https://github.com/Mintplex-Labs/anything-llm
+website_url: https://anythingllm.com/
+docs_url: https://docs.anythingllm.com/
+install_command: |
+  export STORAGE_LOCATION=$HOME/anythingllm
+  mkdir -p $STORAGE_LOCATION
+  touch "$STORAGE_LOCATION/.env"
+  docker run -d -p 3001:3001 \
+    --cap-add SYS_ADMIN \
+    -v ${STORAGE_LOCATION}:/app/server/storage \
+    -v ${STORAGE_LOCATION}/.env:/app/server/.env \
+    -e STORAGE_DIR="/app/server/storage" \
+    mintplexlabs/anythingllm:latest
+category: RAG
+tags:
+  - rag
+  - document-chat
+  - ai-agents
+  - local-llm
+  - self-hosted
+  - privacy
+  - multi-user
+pricing: freemium
+is_open_source: true
+license: MIT
+problem_solved: >
+  Teams that want private AI over their own documents usually have to stitch together ingestion,
+  embeddings, vector storage, chat UI, permissions, and model hosting by hand. AnythingLLM removes
+  that setup burden by packaging document chat, retrieval, agents, and workspace management into one
+  deployable app that can run locally, offline, or in a shared self-hosted environment.
+use_cases:
+  - Chat with internal documents and knowledge bases using retrieval-augmented generation
+  - Run private desktop AI workflows with local models and offline access
+  - Host a multi-user browser workspace with admin controls for team knowledge chat
+  - Publish embeddable support or knowledge chat widgets backed by your documents
