@@ -1,0 +1,30 @@
+name: MinerU
+description: High-accuracy document parsing system that converts PDFs, images, DOCX, PPTX, and XLSX files into LLM-ready Markdown and JSON.
+tagline: Turn complex documents into LLM-ready Markdown and JSON
+
+github_url: https://github.com/opendatalab/MinerU
+website_url: https://mineru.net/
+docs_url: https://opendatalab.github.io/MinerU/
+
+install_command: |
+  pip install --upgrade pip
+  pip install uv
+  uv pip install -U "mineru[all]"
+
+category: Data
+tags: [document-processing, pdf, ocr, markdown, json, rag, agents, table-extraction, multimodal]
+pricing: free
+is_open_source: true
+license: MinerU Open Source License
+
+problem_solved: |
+  Real-world documents are messy: scans, tables, formulas, figures, and multi-column layouts are hard
+  to extract cleanly with basic OCR or brittle custom scripts. MinerU converts complex business and
+  research documents into structured Markdown and JSON with layout awareness, OCR, and table handling,
+  making them much easier to ingest into RAG systems, agent workflows, and downstream data pipelines.
+
+use_cases:
+  - Parse research papers and technical PDFs into structured Markdown for retrieval and question answering
+  - Extract tables, formulas, and figures from business reports before loading them into analytics or RAG pipelines
+  - Convert scanned multilingual documents into machine-readable JSON for agent automation workflows
+  - Process office files and PDFs at scale for document understanding, indexing, and knowledge base creation
