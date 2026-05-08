@@ -1,0 +1,26 @@
+name: Apache Tika
+description: Content analysis toolkit for detecting file types and extracting text and metadata from documents, archives, and media through a unified interface.
+tagline: Content analysis toolkit for file type detection and text extraction
+
+github_url: https://github.com/apache/tika
+website_url: https://tika.apache.org/
+docs_url: https://tika.apache.org/3.3.0/gettingstarted.html
+
+category: Data
+tags: [data-extraction, metadata-extraction, document-parsing, file-type-detection, content-analysis, java, cli, rest-api]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Parsing real-world files usually requires different libraries for PDFs, Office documents, HTML,
+  archives, and media, plus separate logic for metadata extraction and type detection. Apache Tika
+  standardizes this work with a single toolkit that identifies file types and extracts text and
+  metadata across more than a thousand formats, reducing custom parser glue in ingestion pipelines.
+
+use_cases:
+  - Extract text and metadata from PDFs and Office files
+  - Detect document types before downstream processing
+  - Prepare documents for search indexing pipelines
+  - Expose document parsing through a REST service
+  - Run command-line batch extraction on file collections
