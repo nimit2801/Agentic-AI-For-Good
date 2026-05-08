@@ -1,0 +1,37 @@
+name: LLaMA Factory
+description: Open-source platform for fine-tuning and post-training 100+ large language and vision-language models with a CLI and web UI for SFT, LoRA, QLoRA, RLHF-style training, evaluation, and inference.
+tagline: Fine-tune and post-train open models with a CLI or web UI
+
+github_url: https://github.com/hiyouga/LLaMA-Factory
+docs_url: https://llamafactory.readthedocs.io/en/latest/
+install_command: |
+  git clone --depth 1 https://github.com/hiyouga/LLaMA-Factory.git
+  cd LLaMA-Factory
+  pip install -e .
+
+category: Fine-tuning
+tags:
+  - python
+  - fine-tuning
+  - llm
+  - vlm
+  - lora
+  - qlora
+  - rlhf
+  - web-ui
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Fine-tuning open models usually means stitching together separate scripts for dataset prep,
+  LoRA adapters, preference optimization, evaluation, and serving. LLaMA Factory puts those
+  workflows in one toolkit so teams can adapt language and vision-language models locally with
+  less boilerplate, less infrastructure glue code, and lower GPU memory requirements.
+
+use_cases:
+  - Supervised fine-tune an open LLM on domain-specific instruction data
+  - Run LoRA or QLoRA training on limited GPU memory for smaller teams
+  - Post-train chat models with DPO, PPO, KTO, or ORPO alignment workflows
+  - Adapt vision-language models for multimodal assistants and document tasks
+  - Let non-experts experiment locally through the built-in web UI and dashboards

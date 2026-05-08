@@ -1,0 +1,35 @@
+name: PEFT
+description: Hugging Face library for parameter-efficient fine-tuning of large pretrained models using techniques like LoRA and QLoRA, reducing compute, memory, and storage costs versus full fine-tuning.
+tagline: Fine-tune large models with lightweight adapters instead of full retraining
+
+github_url: https://github.com/huggingface/peft
+website_url: https://huggingface.co/docs/peft/index
+docs_url: https://huggingface.co/docs/peft/index
+install_command: pip install peft
+
+category: Fine-tuning
+tags:
+  - python
+  - fine-tuning
+  - huggingface
+  - lora
+  - qlora
+  - adapters
+  - pytorch
+  - transformers
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Full fine-tuning of large language, vision, speech, or diffusion models is expensive and often
+  impractical for teams without large GPU budgets. PEFT lets developers adapt foundation models by
+  training only small adapter layers, which cuts memory usage, lowers checkpoint size, and makes
+  experimentation feasible on modest hardware.
+
+use_cases:
+  - Fine-tune LLMs on consumer GPUs with LoRA or QLoRA adapters
+  - Train task-specific adapters instead of storing full copies of each model
+  - Personalize diffusion models with lightweight DreamBooth-style adapter workflows
+  - Add efficient fine-tuning to TRL, Transformers, and Accelerate training pipelines
+  - Swap, merge, and manage multiple adapters on a shared base model
