@@ -1,0 +1,28 @@
+name: LlamaParse
+description: Layout-aware document parsing service from LlamaIndex that converts PDFs, scans, tables, charts, and many other file types into clean markdown, text, and JSON for downstream AI workflows.
+tagline: Agentic document parser for LLM pipelines
+
+github_url: https://github.com/run-llama/llama_cloud_services
+website_url: https://www.llamaindex.ai/llamaparse
+docs_url: https://developers.llamaindex.ai/llamaparse/parse/
+install_command: |
+  pip install llama-cloud>=2.1
+  npm install @llamaindex/llama-cloud
+
+category: Data
+tags: [document-parsing, pdf, ocr, markdown, json, data-extraction, rag, tables]
+pricing: freemium
+is_open_source: false
+license: Proprietary
+
+problem_solved: |
+  Complex business documents, scans, and reports usually lose layout, tables, and hierarchy when pushed
+  through generic OCR or PDF-to-text tools. LlamaParse turns messy documents into structured AI-ready
+  outputs while preserving document structure, making it easier to ingest filings, contracts, forms, and
+  knowledge bases into RAG systems, agent workflows, and downstream automation pipelines.
+
+use_cases:
+  - Parse annual reports, investor decks, and research PDFs without losing table structure
+  - Convert contracts, policies, and knowledge base documents into clean markdown for retrieval systems
+  - Extract machine-readable content from scanned forms, invoices, and operational documents
+  - Prepare heterogeneous enterprise files for downstream agents, search, and document automation

@@ -1,0 +1,25 @@
+name: llama.cpp
+description: Open-source C/C++ runtime for efficient local and server-side LLM inference across CPUs and GPUs, with quantization, broad hardware support, and an OpenAI-compatible API server.
+tagline: LLM inference in C/C++
+
+github_url: https://github.com/ggml-org/llama.cpp
+docs_url: https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md
+install_command: brew install llama.cpp
+
+category: LLM
+tags: [llm-inference, local-llm, gguf, quantization, openai-compatible, cpp, edge-deployment]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Running modern language models locally often requires heavyweight infrastructure, GPU-specific stacks,
+  or custom serving code that is hard to port across laptops, servers, and edge devices. llama.cpp gives
+  developers a fast, portable inference runtime with quantization support and a built-in API server, so
+  they can run and serve GGUF models efficiently on a wide range of CPU and GPU hardware.
+
+use_cases:
+  - Run GGUF language models locally on laptops, desktops, or servers without a large cloud stack
+  - Serve open models behind an OpenAI-compatible API for apps, agents, and internal tooling
+  - Use quantized models to reduce memory usage and make inference feasible on constrained hardware
+  - Deploy private offline inference workflows for regulated or air-gapped environments
