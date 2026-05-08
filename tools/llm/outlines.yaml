@@ -1,0 +1,25 @@
+name: Outlines
+description: Python library for structured LLM generation that constrains outputs with JSON Schema, regexes, and grammars so developers can get reliable machine-readable results across many model providers.
+tagline: Guaranteed structured outputs from any LLM
+
+github_url: https://github.com/dottxt-ai/outlines
+docs_url: https://dottxt-ai.github.io/outlines/latest/
+install_command: pip install outlines
+
+category: LLM
+tags: [structured-output, json-schema, grammar, regex, llm, python, extraction]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  LLM applications often break because models return malformed JSON, inconsistent fields, or free-form
+  text that downstream code cannot parse safely. Outlines enforces structure during generation instead of
+  cleaning outputs afterward, helping developers eliminate brittle regex fixes, repeated retries, and
+  post-processing code when they need dependable structured responses.
+
+use_cases:
+  - Generate valid JSON objects from LLMs for production APIs and backend workflows
+  - Constrain model output with regex or grammar rules for extraction, classification, and parsing tasks
+  - Build information extraction pipelines that return predictable typed data instead of free-form text
+  - Standardize structured generation across providers such as OpenAI, Ollama, and vLLM
