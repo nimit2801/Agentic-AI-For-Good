@@ -1,0 +1,37 @@
+name: Tabby
+description: Open-source, self-hosted AI coding assistant for code completion and related coding workflows in local or team deployments.
+tagline: Open-source, self-hosted AI coding assistant
+
+github_url: https://github.com/TabbyML/tabby
+website_url: https://www.tabbyml.com/
+docs_url: https://tabby.tabbyml.com/docs/
+install_command: |
+  docker run -d \
+    --name tabby \
+    --gpus all \
+    -p 8080:8080 \
+    -v $HOME/.tabby:/data \
+    registry.tabbyml.com/tabbyml/tabby \
+      serve \
+      --model StarCoder-1B \
+      --chat-model Qwen2-1.5B-Instruct \
+      --device cuda
+
+category: Dev Tools
+tags: [ai-coding-assistant, self-hosted, open-source, code-completion, developer-tools, ide-integration, llm, team-deployment]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Teams that want AI coding assistance often have to send proprietary code to third-party hosted
+  services or accept limited control over models, infrastructure, and data handling. Tabby provides
+  a self-hosted coding assistant with code completion and related coding workflows so organizations
+  can run an internal AI developer tool on their own infrastructure.
+
+use_cases:
+  - Run self-hosted code completion for developers
+  - Deploy an internal AI coding assistant for a team
+  - Use inline chat and answer engine inside coding workflows
+  - Connect IDE extensions to a private coding backend
+  - Run supported coding and chat models on local infrastructure
