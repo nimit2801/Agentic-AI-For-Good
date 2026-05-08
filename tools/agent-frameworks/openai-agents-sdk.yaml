@@ -1,0 +1,25 @@
+name: OpenAI Agents SDK
+description: Open-source Python SDK from OpenAI for building agentic applications. It provides primitives for agents, handoffs, tools, guardrails, sessions, human-in-the-loop flows, and tracing.
+tagline: Build multi-agent Python workflows with tools, handoffs, and tracing
+
+github_url: https://github.com/openai/openai-agents-python
+docs_url: https://openai.github.io/openai-agents-python/
+install_command: pip install openai-agents
+
+category: Agents
+tags: [python, agents, multi-agent, orchestration, tool-calling, guardrails, tracing, mcp]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  OpenAI Agents SDK helps developers build multi-agent Python workflows with tool execution,
+  delegation between agents, validation, stateful sessions, and tracing without having to assemble
+  those orchestration pieces from scratch. It shortens the path from basic LLM calls to production
+  agent systems with clearer control flow and observability.
+
+use_cases:
+  - Build multi-agent applications where specialists hand work off between agents in a controlled workflow
+  - Add tool-calling agents to Python services that need structured actions instead of plain text responses
+  - Enforce input and output validation with guardrails before agent results reach downstream systems
+  - Implement human-in-the-loop approval steps for sensitive actions such as support, finance, or operations
