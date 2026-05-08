@@ -1,0 +1,24 @@
+name: Jina Reader
+description: Jina Reader converts URLs and web search results into clean, LLM-friendly text so agents, RAG pipelines, and downstream data workflows can consume web content without brittle scraping logic.
+tagline: Turn URLs and search results into LLM-ready text
+
+github_url: https://github.com/jina-ai/reader
+website_url: https://jina.ai/reader
+docs_url: https://jina.ai/reader/
+
+category: Data
+tags: [web-content, search-grounding, data-ingestion, llm-ready, markdown, scraping, rag, agents]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Agent and RAG systems often need reliable access to messy web pages, JavaScript-heavy sites, PDFs,
+  and current search results, but raw HTML and custom scraping stacks create brittle ingestion pipelines.
+  Jina Reader standardizes this into directly usable LLM-friendly content that is easier to index and process.
+
+use_cases:
+  - Ingest public webpages and PDFs into RAG pipelines without writing custom scrapers for every source
+  - Ground autonomous agents with search results that already include fetched page content instead of only snippets
+  - Extract readable content from JavaScript-rendered pages for summarization, classification, or monitoring workflows
+  - Feed clean markdown-like page content into downstream parsing, chunking, and embedding pipelines
