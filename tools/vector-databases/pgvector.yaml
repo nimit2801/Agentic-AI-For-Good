@@ -1,0 +1,30 @@
+name: pgvector
+description: Open-source PostgreSQL extension for storing embeddings and running exact or approximate vector similarity search directly in SQL.
+tagline: Vector similarity search inside Postgres
+
+github_url: https://github.com/pgvector/pgvector
+docs_url: https://github.com/pgvector/pgvector#installation
+
+install_command: |
+  git clone https://github.com/pgvector/pgvector.git
+  cd pgvector
+  make
+  sudo make install
+
+category: Vector DB
+tags: [postgres, vector-database, embeddings, semantic-search, ann, sql]
+pricing: free
+is_open_source: true
+license: PostgreSQL License
+
+problem_solved: |
+  Many teams want semantic search and retrieval without introducing a separate vector database,
+  extra infrastructure, and a second operational surface area. pgvector adds native vector storage,
+  indexing, and nearest-neighbor search to PostgreSQL, letting developers combine embeddings with
+  joins, filters, transactions, and backups in the same database they already run.
+
+use_cases:
+  - Add semantic search to an existing PostgreSQL application without deploying a separate vector store
+  - Build RAG pipelines that retrieve relevant chunks from Postgres using exact or approximate nearest-neighbor search
+  - Power recommendation systems by comparing user or item embeddings alongside relational business data
+  - Run hybrid application queries that combine metadata filters, SQL joins, and vector similarity in one step
