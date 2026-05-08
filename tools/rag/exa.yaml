@@ -1,0 +1,28 @@
+name: Exa
+description: Exa is a hosted web search and content retrieval API for AI systems. It offers search, content extraction, answer, and monitoring endpoints, with official Python and JavaScript SDKs plus an MCP server.
+tagline: Web search and retrieval API for AI agents
+
+github_url: https://github.com/exa-labs
+website_url: https://exa.ai/
+docs_url: https://exa.ai/docs/reference/search-api-guide
+install_command: |
+  pip install exa-py
+  npm install exa-js
+
+category: RAG
+tags: [web-search, retrieval, rag, api, agents, mcp, crawling, structured-output]
+pricing: paid
+is_open_source: false
+license: Proprietary hosted service; SDKs MIT
+
+problem_solved: |
+  Exa gives agents live web retrieval and page-content extraction, reducing stale model knowledge
+  and making it easier to ground answers, research steps, and coding help in current web data. It
+  replaces brittle scraping and ad hoc search integrations with a single API built for LLM-driven
+  applications.
+
+use_cases:
+  - Ground coding or research agents with current web documentation instead of stale training data
+  - Retrieve cited search results and page contents for RAG pipelines that need live external knowledge
+  - Monitor websites or topics over time and trigger downstream workflows when new content appears
+  - Fetch structured highlights or extracted page text for chatbots, analysts, and automated research tools
