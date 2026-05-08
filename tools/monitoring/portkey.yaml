@@ -1,0 +1,28 @@
+name: Portkey
+description: Production platform for GenAI applications with an AI gateway, observability, guardrails, routing, and prompt management across multiple model providers.
+tagline: Production stack for GenAI builders
+
+github_url: https://github.com/Portkey-AI/gateway
+website_url: https://portkey.ai/
+docs_url: https://portkey.ai/docs/introduction/what-is-portkey
+install_command: |
+  npx @portkey-ai/gateway
+  pip install portkey-ai
+
+category: Monitoring
+tags: [observability, gateway, routing, guardrails, prompts, llm, production]
+pricing: freemium
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Production LLM systems often sprawl across providers, prompts, retries, fallbacks, logging, and
+  governance rules, which makes them difficult to monitor and operate consistently. Portkey brings
+  gateway routing, observability, prompt management, and guardrails into one platform so teams can
+  run and control AI traffic with fewer custom integrations.
+
+use_cases:
+  - Monitor LLM requests, traces, and usage metrics across multiple model providers
+  - Route traffic with retries, fallbacks, and provider selection through a unified AI gateway
+  - Apply guardrails and governance controls to production AI application traffic
+  - Manage prompts and API-backed prompt templates for teams shipping GenAI features
