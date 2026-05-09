@@ -1,0 +1,26 @@
+name: Vespa
+description: Open-source AI search and data serving engine for querying and ranking vectors, tensors, text, and structured data in real time, with support for large-scale retrieval, filtering, and learned ranking.
+tagline: Open-source engine for real-time vector, text, and structured search
+
+github_url: https://github.com/vespa-engine/vespa
+website_url: https://vespa.ai/
+docs_url: https://docs.vespa.ai/
+install_command: docker run --detach --name vespa --hostname vespa-tutorial --publish 8080:8080 --publish 19071:19071 --publish 19092:19092 vespaengine/vespa
+
+category: Vector DB
+tags: [vector-database, search, hybrid-search, retrieval, ranking, ann, open-source]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Teams building retrieval systems often need vector similarity, keyword search, metadata filters, and ranking
+  over large datasets that change continuously. Vespa combines vector search, text search, tensor operations,
+  filtering, and learned ranking in one engine so developers can serve low-latency retrieval and recommendation
+  workloads without stitching together separate serving layers.
+
+use_cases:
+  - Build hybrid search across text, vectors, and metadata filters
+  - Power RAG retrieval with ranking, filtering, and real-time index updates
+  - Serve recommendation and personalization systems for content or products
+  - Run large-scale semantic search over enterprise or application data

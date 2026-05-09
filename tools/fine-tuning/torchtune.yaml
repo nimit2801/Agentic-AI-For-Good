@@ -1,0 +1,26 @@
+name: torchtune
+description: PyTorch-native library for LLM post-training and fine-tuning with configurable recipes for supervised tuning, LoRA/QLoRA, preference optimization, distillation, and quantization.
+tagline: PyTorch-native library for LLM post-training and fine-tuning
+
+github_url: https://github.com/meta-pytorch/torchtune
+website_url: https://pytorch.org/torchtune/
+docs_url: https://pytorch.org/torchtune/main/index.html
+install_command: pip install torchtune
+
+category: Fine-tuning
+tags: [pytorch, fine-tuning, lora, qlora, distillation, post-training, llm]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Adapting open language models usually requires custom training code, experiment scaffolding, and careful
+  memory optimization before teams can run practical fine-tuning jobs. torchtune packages common post-training
+  workflows into reusable PyTorch recipes, YAML configs, and a CLI so developers can fine-tune, distill,
+  optimize, and evaluate models with less glue code.
+
+use_cases:
+  - Run LoRA or QLoRA fine-tuning for Llama, Qwen, Gemma, or Mistral models
+  - Launch supervised fine-tuning jobs from reusable YAML training recipes
+  - Distill larger teacher models into smaller student models for deployment
+  - Experiment with preference optimization workflows such as DPO, PPO, or GRPO
