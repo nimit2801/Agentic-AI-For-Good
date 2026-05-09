@@ -1,0 +1,30 @@
+name: Agent2Agent (A2A) Protocol
+description: An open standard for agent-to-agent interoperability that lets AI agents discover each other, exchange messages, coordinate tasks, and collaborate across frameworks, vendors, applications, and cloud environments.
+tagline: Open protocol for interoperable agent-to-agent collaboration
+
+github_url: https://github.com/a2aproject/A2A
+website_url: https://a2a-protocol.org/latest/
+docs_url: https://a2a-protocol.org/latest/
+install_command: |
+  pip install a2a-sdk
+  npm install @a2a-js/sdk
+  dotnet add package A2A
+  go get github.com/a2aproject/a2a-go/v2
+
+category: Other
+tags: [protocol, interoperability, agents, open-standard, multi-agent, sdk, enterprise, communication]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Multi-agent systems are fragmented across vendors and frameworks, which makes it hard for agents
+  built by different teams to discover capabilities, exchange context, and coordinate long-running
+  work securely. Agent2Agent defines a shared protocol so organizations can connect heterogeneous
+  agents and systems without building one-off integrations for every combination of tools.
+
+use_cases:
+  - Connect agents from different vendors inside one workflow with a shared communication protocol
+  - Route support or operations work between specialized agents that own different systems or skills
+  - Coordinate long-running enterprise tasks that require handoffs across internal tools and services
+  - Build interoperable multi-agent applications that mix local tools, remote agents, and human approval

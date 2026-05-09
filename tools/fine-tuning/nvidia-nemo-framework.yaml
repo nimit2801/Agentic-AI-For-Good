@@ -1,0 +1,27 @@
+name: NVIDIA NeMo Framework
+description: NVIDIA NeMo Framework is a scalable, cloud-native generative AI framework for creating, customizing, fine-tuning, and deploying large language, multimodal, and speech AI models using pretrained checkpoints and distributed training tools.
+tagline: Scalable framework for customizing and deploying generative AI models
+
+github_url: https://github.com/NVIDIA-NeMo/NeMo
+website_url: https://developer.nvidia.com/nemo-framework
+docs_url: https://docs.nvidia.com/nemo-framework/user-guide/latest/overview.html
+install_command: pip install 'nemo-toolkit[all]'
+
+category: Fine-tuning
+tags: [fine-tuning, llm, multimodal, speech, distributed-training, lora, rlhf, nvidia, python]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Teams often need to adapt large pretrained models to domain-specific tasks, hardware constraints,
+  and production environments, but building a reliable post-training stack from scratch requires
+  distributed training, configuration management, data pipelines, and deployment glue. NVIDIA NeMo
+  provides a unified framework for fine-tuning, scaling, evaluating, and operationalizing generative
+  AI models across LLM, multimodal, and speech workflows.
+
+use_cases:
+  - Fine-tune LLMs with LoRA, SFT, or RLHF for domain-specific assistants and copilots
+  - Train and customize speech recognition models for multilingual transcription pipelines
+  - Build text-to-speech systems for accessible voice interfaces and localization workflows
+  - Run large-model training or adaptation across multi-GPU and multi-node infrastructure
