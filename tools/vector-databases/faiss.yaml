@@ -1,0 +1,26 @@
+name: Faiss
+description: Open-source library for efficient similarity search and clustering of dense vectors, with exact and approximate nearest-neighbor indexes plus optional GPU acceleration.
+tagline: Fast similarity search and clustering for dense vectors
+
+github_url: https://github.com/facebookresearch/faiss
+website_url: https://faiss.ai/
+docs_url: https://github.com/facebookresearch/faiss/wiki
+install_command: conda install -c pytorch -c conda-forge faiss-cpu
+
+category: Vector DB
+tags: [vector-search, ann, embeddings, similarity-search, clustering, gpu]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Searching large embedding collections with brute-force scans becomes too slow and expensive as
+  datasets grow. Faiss gives developers optimized vector indexes, approximate nearest-neighbor
+  search, clustering, and optional GPU acceleration so semantic retrieval and similarity matching
+  can run efficiently at scales that would be impractical with naive in-memory search.
+
+use_cases:
+  - Power semantic retrieval over embeddings for RAG and search systems
+  - Run approximate nearest-neighbor search for recommendation and matching pipelines
+  - Cluster, deduplicate, or compare large collections of dense vectors efficiently
+  - Accelerate similarity search workloads with GPU-backed vector indexes
