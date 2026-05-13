@@ -1,0 +1,28 @@
+name: DeepSpeed
+description: Deep learning optimization library by Microsoft that makes distributed training and fine-tuning of large models efficient with ZeRO optimization, mixed precision, and 3D parallelism.
+tagline: Distributed training and optimization for large models
+
+github_url: https://github.com/microsoft/DeepSpeed
+website_url: https://www.deepspeed.ai
+docs_url: https://deepspeed.readthedocs.io/en/latest
+install_command: pip install deepspeed
+
+category: Fine-tuning
+tags: [fine-tuning, distributed-training, zero, llm, deep-learning, pytorch, mixed-precision, model-parallelism]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Training and fine-tuning large models with billions of parameters is prohibitively memory-intensive.
+  Standard approaches either require dozens of high-end GPUs or simply fail on consumer hardware.
+  DeepSpeed solves this with ZeRO memory optimization that partitions model states across GPUs,
+  offloads to CPU or NVMe, and enables 3D parallelism (data, pipeline, tensor) — reducing GPU
+  memory requirements by up to 8x while maintaining training throughput and model quality so teams
+  can fine-tune LLMs on far fewer GPUs than previously possible.
+
+use_cases:
+  - Fine-tune large language models (Llama, GPT) on limited GPU hardware using ZeRO stage 2 or 3 optimization
+  - Train Mixture-of-Experts (MoE) models at scale with memory-efficient distributed parallelism
+  - Run distributed fine-tuning through HuggingFace Transformers with the --deepspeed flag for seamless integration
+  - Offload optimizer states and parameters to CPU or NVMe to fit models larger than available GPU memory
