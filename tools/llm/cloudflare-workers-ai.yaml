@@ -1,0 +1,28 @@
+name: Cloudflare Workers AI
+description: Serverless GPU-powered AI inference at the edge — run 50+ open-source AI models on Cloudflare's global network with pay-as-you-go pricing from Workers or the API.
+tagline: Serverless GPU-powered AI inference at the edge
+
+website_url: https://www.cloudflare.com/developer-platform/workers-ai/
+docs_url: https://developers.cloudflare.com/workers-ai/
+install_command: npm install wrangler --save-dev
+
+category: LLM
+tags: [serverless, edge-computing, inference, cloudflare, gpu, workers, open-source-models, embeddings]
+pricing: freemium
+is_open_source: false
+
+problem_solved: |
+  Running AI inference in production typically requires provisioning GPU servers,
+  managing autoscaling, handling cold starts, and paying for idle compute —
+  operational overhead that slows down development. Cloudflare Workers AI removes
+  this burden entirely by providing serverless GPU access to 50+ open-source models
+  (LLMs, image classification, embeddings) across Cloudflare's global edge network.
+  No infrastructure to manage — models auto-scale, you pay only for inference, and
+  it integrates seamlessly with Cloudflare's developer platform (KV, R2, D1, Vectorize).
+
+use_cases:
+  - Deploy LLM-powered features like text generation and summarization on serverless edge functions
+  - Run image classification, object detection, and audio transcription at the edge with low latency
+  - Build full-stack AI apps combining Workers AI with Vectorize vector database and AI Gateway
+  - Generate embeddings at the edge for semantic search and RAG pipelines without managing servers
+  - Prototype and productionize AI features without provisioning any GPU infrastructure
