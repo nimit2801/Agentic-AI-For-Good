@@ -1,0 +1,29 @@
+name: Modal
+description: Serverless GPU cloud platform for AI inference, training, batch processing, and data pipelines with sub-second cold starts and per-second billing.
+tagline: High-performance serverless AI infrastructure developers love
+
+github_url: https://github.com/modal-labs/modal-client
+website_url: https://modal.com
+docs_url: https://modal.com/docs
+install_command: pip install modal
+
+category: Other
+tags: [serverless, gpu, inference, training, batch-processing, cloud, infrastructure, python, autoscaling]
+pricing: freemium
+is_open_source: false
+license: Apache-2.0
+
+problem_solved: |
+  AI teams waste significant time and money managing GPU infrastructure — provisioning
+  instances, configuring Docker containers, handling autoscaling, and paying for idle
+  compute. Modal eliminates all of that by providing a serverless platform where you
+  write Python functions, annotate them with @app.function, and Modal handles deployment,
+  scaling, and billing down to the second. Cold starts in under a second and automatic
+  scale-to-zero mean you never pay for idle GPUs.
+
+use_cases:
+  - Deploy and scale LLM inference endpoints with automatic scale-to-zero when not in use
+  - Run ephemeral GPU workloads like model fine-tuning or batch inference without provisioning servers
+  - Execute massively parallel batch inference jobs across thousands of containers simultaneously
+  - Serve diffusion models and image/video generation with request-based autoscaling
+  - Launch ephemeral cloud notebooks and sandboxes for collaborative ML development
