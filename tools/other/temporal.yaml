@@ -1,0 +1,24 @@
+name: Temporal
+tagline: Build reliable distributed applications that never fail
+description: Temporal is a distributed, scalable, durable, and highly available orchestration engine used to execute asynchronous, long-running business logic in a scalable and resilient way. It provides crash-proof execution by guaranteeing that applications resume exactly where they left off after failures, network outages, or infrastructure disruptions. Temporal offers SDKs for Python, TypeScript, Go, Java, and .NET.
+problem_solved: Building reliable fault-tolerant distributed applications is notoriously difficult, requiring manual retries, state persistence, and failure recovery. Temporal solves this by providing a durable execution platform that automatically preserves execution state, retries failed operations with configurable policies, and seamlessly recovers from any failure mode.
+use_cases:
+  - Orchestrate multi-step AI agent workflows with automatic retry and state persistence
+  - Build durable human-in-the-loop workflows that pause for input and resume without losing state
+  - Coordinate microservices across distributed systems with saga compensation patterns
+  - Automate CI/CD pipelines with clean retries, rollbacks, and multi-environment promotions
+category: Other
+tags:
+  - workflow-orchestration
+  - durable-execution
+  - distributed-systems
+  - microservices
+  - automation
+  - fault-tolerance
+github_url: https://github.com/temporalio/temporal
+website_url: https://temporal.io
+docs_url: https://docs.temporal.io
+install_command: pip install temporalio
+pricing: free
+is_open_source: true
+license: MIT
