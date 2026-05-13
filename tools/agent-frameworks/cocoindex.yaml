@@ -1,0 +1,27 @@
+name: CocoIndex
+description: An open-source incremental engine for long-horizon AI agents that turns codebases, documents, messages, and media into continuously fresh context — processing only the delta when source data changes, with full data lineage and sub-second freshness.
+tagline: Continuously fresh context for AI agents
+
+github_url: https://github.com/cocoindex-io/cocoindex
+website_url: https://cocoindex.io
+docs_url: https://cocoindex.io/docs
+
+category: Agents
+tags: [incremental, indexing, etl, rag, pipeline, real-time, search, agent-memory, dataflow]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+install_command: pip install cocoindex
+
+problem_solved: |
+  AI agents need fresh, continuously updated context to reason effectively, but traditional batch
+  pipelines drift stale and full recomputes are expensive. CocoIndex solves this with a declarative
+  incremental engine — declare transformations in Python, and the engine maintains the derived
+  index by processing only the delta when source data changes, delivering sub-second freshness
+  at 10x lower compute and LLM costs with end-to-end data lineage.
+
+use_cases:
+  - Real-time codebase indexing for AI coding agents with AST-aware chunking and call graphs
+  - Continuous document ingestion into RAG pipelines with incremental re-indexing on changes
+  - Meeting notes and conversation to knowledge graph extraction for agent memory
+  - Structured data extraction from forms and invoices with schema-validated fields
