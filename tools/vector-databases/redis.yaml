@@ -1,0 +1,31 @@
+name: Redis
+description: In-memory data structure store that serves as a high-performance vector database via Redis Stack and RedisVL — enabling ANN search, hybrid vector + full-text queries, and semantic caching.
+tagline: The fastest vector database for real-time AI applications
+
+github_url: https://github.com/redis/redis
+website_url: https://redis.io
+docs_url: https://redis.io/docs/latest/develop/ai/
+
+install_command: |
+  pip install redis
+  pip install redisvl
+
+category: Vector DB
+tags: [vector-database, vector-search, redis, semantic-search, rag, caching, ann, hnsw, ai-agent-memory]
+pricing: freemium
+is_open_source: false
+license: RSALv2 + SSPLv1
+
+problem_solved: |
+  Traditional databases struggle to efficiently store and query high-dimensional vector embeddings
+  for semantic search, similarity matching, and RAG. Redis solves this with an in-memory vector
+  database providing sub-millisecond ANN search via HNSW and FLAT algorithms, hybrid search
+  combining vector and full-text signals with metadata filtering, and seamless integration with
+  AI frameworks through RedisVL — all while maintaining the familiar Redis data structures and
+  operational simplicity developers already trust.
+
+use_cases:
+  - Power RAG pipelines with hybrid vector + full-text search for real-time document retrieval
+  - Build AI agent memory and conversational context stores that persist across sessions with semantic recall
+  - Cache LLM responses semantically so similar queries reuse cached results instead of hitting the API again
+  - Run real-time recommendation systems using vector similarity with metadata filtering at sub-millisecond latency
