@@ -1,0 +1,32 @@
+name: Claude Code
+description: Anthropic's terminal-based AI coding agent that reads and writes files, executes commands, manages git workflows, and performs complex multi-step software engineering tasks—all guided by natural language conversation within the terminal.
+tagline: An AI coding agent that lives in your terminal
+
+github_url: https://github.com/anthropics/claude-code
+website_url: https://docs.anthropic.com/en/docs/claude-code/overview
+docs_url: https://docs.anthropic.com/en/docs/claude-code/overview
+
+install_command: npm install -g @anthropic-ai/claude-code
+
+category: Dev Tools
+tags: [coding-agent, cli, terminal, anthropic, code-generation, software-engineering, dev-tool]
+pricing: freemium
+is_open_source: false
+license: Proprietary
+
+problem_solved: |
+  Most AI coding tools operate as IDE extensions with limited context windows, making it
+  difficult to perform multi-file refactors, manage git workflows, or debug across an entire
+  codebase from one interface. Claude Code lives entirely in the terminal, reads your full
+  project context, and autonomously executes coding tasks end-to-end—editing files, running
+  tests, making git commits, and creating pull requests. For developers who prefer the terminal
+  or need to work on remote servers via SSH, this eliminates context-switching between IDE,
+  browser, and chat interfaces.
+
+use_cases:
+  - Build full features end-to-end from a single natural language description across multiple files
+  - Debug complex errors by tracing through the relevant call stack across the entire codebase
+  - Automate git operations including commit, branch, push, and GitHub pull request creation
+  - Generate unit and integration tests for existing code with automatic test runner execution
+  - Refactor large codebases across dozens of files with a single instruction
+  - Onboard to unfamiliar projects by asking Claude Code to explain architecture and patterns
