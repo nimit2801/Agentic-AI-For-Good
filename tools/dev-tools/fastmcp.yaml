@@ -1,0 +1,26 @@
+name: FastMCP
+description: Open-source Python framework for building MCP servers, clients, and interactive MCP applications that connect LLMs to tools, prompts, resources, and external systems.
+tagline: The fast, Pythonic way to build MCP apps
+
+github_url: https://github.com/PrefectHQ/fastmcp
+website_url: https://gofastmcp.com
+docs_url: https://gofastmcp.com/getting-started/welcome
+install_command: uv pip install fastmcp
+
+category: Dev Tools
+tags: [python, mcp, model-context-protocol, developer-tools, agents, llm-tools, integrations]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Building MCP integrations usually requires manual schema wiring, transport handling, validation,
+  and protocol boilerplate before a tool is usable by an LLM client. FastMCP wraps that lower-level
+  work in a Python framework so teams can expose tools and resources faster while keeping MCP apps
+  maintainable as they move from prototypes to production systems.
+
+use_cases:
+  - Build MCP servers that expose Python functions and resources to LLM clients
+  - Connect agents and apps to local or remote MCP servers with less protocol boilerplate
+  - Add interactive MCP-powered tools to internal copilots and developer workflows
+  - Standardize MCP app development for teams shipping production LLM integrations
