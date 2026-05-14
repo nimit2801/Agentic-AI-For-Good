@@ -1,0 +1,28 @@
+name: DVC
+description: Open-source CLI and VS Code extension for versioning datasets and models, defining reproducible data pipelines, and tracking ML experiments with Git-linked metadata and remote storage.
+tagline: Git-like data and model versioning with pipelines and local experiment tracking
+
+github_url: https://github.com/treeverse/dvc
+website_url: https://dvc.org/
+docs_url: https://doc.dvc.org/
+install_command: pip install dvc
+
+category: Data
+tags: [data-versioning, mlops, pipelines, experiment-tracking, reproducibility, git, cli]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Git handles code well but breaks down when teams need to version large datasets, model artifacts,
+  and multi-step preprocessing or training pipelines. DVC keeps lightweight metadata in Git while
+  storing heavy files in external remotes, making data changes, pipeline stages, metrics, and
+  experiment results reproducible and shareable without stuffing binaries into the repository.
+
+use_cases:
+  - Version training datasets and model artifacts without storing binaries in Git
+  - Define reproducible multi-step ML pipelines in dvc.yaml
+  - Cache pipeline outputs so only changed stages rerun
+  - Store data in S3, GCS, Azure, SSH, or other remote backends
+  - Compare experiment metrics, params, and plots across local runs
+  - Share and reproduce experiments across teammates using Git and DVC remotes
