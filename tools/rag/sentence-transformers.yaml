@@ -1,0 +1,26 @@
+name: Sentence Transformers
+description: Open-source framework for generating embeddings and reranking results for semantic search, retrieval, and RAG applications across text and multimodal data.
+tagline: Embeddings and rerankers for semantic search and RAG
+
+github_url: https://github.com/huggingface/sentence-transformers
+website_url: https://www.sbert.net/
+docs_url: https://www.sbert.net/docs/installation.html
+install_command: pip install -U sentence-transformers
+
+category: RAG
+tags: [embeddings, retrieval, reranking, semantic-search, rag, python, hugging-face]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Building retrieval systems usually means stitching together separate embedding models, ranking logic,
+  and training code, then tuning them for search quality and latency. Sentence Transformers packages
+  state-of-the-art embedding and reranking models behind a consistent interface so teams can build
+  semantic search and RAG pipelines without training custom representation models from scratch.
+
+use_cases:
+  - Generate dense embeddings for semantic search over documents, tickets, or product knowledge bases
+  - Rerank retrieved passages before generation to improve answer quality in a RAG pipeline
+  - Fine-tune embedding models on domain-specific pairs for legal, healthcare, or support search
+  - Build duplicate detection, clustering, and recommendation systems from sentence-level embeddings

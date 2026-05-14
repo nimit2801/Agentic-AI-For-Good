@@ -1,0 +1,26 @@
+name: Megatron Core
+description: GPU-optimized library for training and fine-tuning transformer and large language models at scale with advanced distributed parallelism.
+tagline: Distributed training building blocks for large-scale LLM fine-tuning
+
+github_url: https://github.com/NVIDIA/Megatron-LM
+website_url: https://docs.nvidia.com/megatron-core/developer-guide/latest/index.html
+docs_url: https://docs.nvidia.com/megatron-core/developer-guide/latest/get-started/quickstart.html
+install_command: uv pip install megatron-core
+
+category: Fine-tuning
+tags: [fine-tuning, distributed-training, llm, pytorch, model-parallelism, multi-gpu, nvidia]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Fine-tuning or training billion-parameter transformer models across multiple GPUs is memory-intensive,
+  operationally complex, and easy to scale inefficiently. Megatron Core provides optimized building
+  blocks for tensor, pipeline, context, data, and expert parallelism so teams can run high-throughput
+  distributed LLM training jobs without building large-scale training infrastructure from scratch.
+
+use_cases:
+  - Fine-tune Llama-style or GPT-style models across multi-GPU and multi-node clusters
+  - Build custom distributed training frameworks using reusable Megatron Core components
+  - Train large transformer models with tensor, pipeline, and expert parallelism strategies
+  - Run production-grade checkpointing and scaling workflows for large language model development
