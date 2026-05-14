@@ -1,0 +1,28 @@
+name: OpenSearch
+description: Open-source search and analytics engine with keyword, hybrid, and vector search for document retrieval, RAG backends, observability, and security analytics.
+tagline: Open-source search and vector engine for retrieval, analytics, and observability
+
+github_url: https://github.com/opensearch-project/OpenSearch
+website_url: https://opensearch.org/
+docs_url: https://docs.opensearch.org/latest/
+install_command: docker pull opensearchproject/opensearch:3.6.0
+
+category: Vector DB
+tags: [search-engine, vector-search, hybrid-search, analytics, observability, rag, lucene]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Teams building search, RAG, observability, or security systems often end up stitching together
+  separate engines for keyword search, filtering, analytics, and embedding retrieval. OpenSearch
+  lets them index documents, logs, and vectors in one engine and run keyword, hybrid, and vector
+  queries from a single platform instead of maintaining multiple specialized backends.
+
+use_cases:
+  - Semantic document retrieval for RAG pipelines
+  - Hybrid keyword and vector search over internal knowledge bases
+  - Log analytics and observability dashboards for distributed systems
+  - Enterprise website or document search with filtering and ranking
+  - Security event correlation and threat analytics across large log streams
+  - E-commerce product search with vector similarity and relevance tuning
