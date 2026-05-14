@@ -1,0 +1,27 @@
+name: Airbyte
+description: A data movement platform for replicating data from APIs, databases, files, and SaaS tools into warehouses, lakes, databases, and downstream AI applications through prebuilt connectors and managed or self-hosted deployment options.
+tagline: Move data from source systems into warehouses, lakes, and AI apps
+
+github_url: https://github.com/airbytehq/airbyte
+website_url: https://airbyte.com/
+docs_url: https://docs.airbyte.com/
+install_command: curl -LsfS https://get.airbyte.com | bash -
+
+category: Data
+tags: [data-replication, connectors, elt, etl, data-pipelines, databases, apis, ai-agents]
+pricing: freemium
+is_open_source: true
+license: Elastic License 2.0
+
+problem_solved: |
+  Pulling data from many operational systems into analytics or AI environments usually means building
+  and maintaining custom connectors, sync logic, and error handling for every source. Airbyte reduces
+  that integration burden with a large connector catalog and a platform for moving data from APIs,
+  databases, files, and SaaS tools into warehouses, lakes, and downstream AI workflows.
+
+use_cases:
+  - Replicate application databases into Snowflake, BigQuery, Databricks, or other analytics destinations
+  - Sync SaaS sources such as Salesforce, Google Sheets, and ad platforms into a central data warehouse
+  - Move file and object-store data into downstream databases or lakehouse environments
+  - Feed business data into AI agents, analytics models, and retrieval pipelines through scheduled syncs
+  - Standardize ingestion across many data sources without building custom connectors for each one

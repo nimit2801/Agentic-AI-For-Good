@@ -1,0 +1,27 @@
+name: Dagster
+description: An open-source orchestration platform for building, running, and observing data pipelines and data assets, with developer-friendly workflows for testing, scheduling, lineage, and production operations.
+tagline: Orchestrate and observe data pipelines with software-engineering discipline
+
+github_url: https://github.com/dagster-io/dagster
+website_url: https://dagster.io/
+docs_url: https://docs.dagster.io/
+install_command: pip install dagster dagster-webserver dagster-dg-cli
+
+category: Data
+tags: [orchestration, data-pipelines, workflow, scheduling, lineage, data-assets, observability, python]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Data and AI teams need more than cron jobs and brittle scripts to run reliable pipelines. Dagster
+  provides a structured orchestration layer for defining data assets, dependencies, schedules, and
+  operational checks, so teams can build maintainable pipelines, understand lineage, and monitor data
+  workflows without stitching together their own orchestration and observability stack.
+
+use_cases:
+  - Orchestrate ETL and ELT pipelines that move data into warehouses, lakes, and feature stores
+  - Schedule and monitor data preparation workflows that feed RAG, analytics, or machine learning systems
+  - Manage lineage and health checks for production data assets across teams and environments
+  - Coordinate batch inference, evaluation, or retraining pipelines for AI applications
+  - Build local-to-production data workflows with testing, retries, and operational visibility
