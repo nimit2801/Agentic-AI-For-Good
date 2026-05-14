@@ -1,0 +1,28 @@
+name: Diffusers
+description: Hugging Face's open-source library for running and training diffusion models for image, video, and audio generation in PyTorch, with reusable pipelines, schedulers, adapters, and optimization utilities.
+tagline: Build image, video, and audio generation workflows with diffusion models
+
+github_url: https://github.com/huggingface/diffusers
+website_url: https://huggingface.co/docs/diffusers/index
+docs_url: https://huggingface.co/docs/diffusers/installation
+install_command: pip install --upgrade diffusers[torch]
+
+category: Other
+tags: [diffusion, pytorch, image-generation, video-generation, audio-generation, text-to-image, inpainting, fine-tuning]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Building with diffusion models usually means wiring together model loading, schedulers, pipeline
+  logic, adapter support, and memory optimizations by hand. Diffusers gives developers a standard
+  library for loading pretrained diffusion models, running generation pipelines, and fine-tuning or
+  extending them without reimplementing the low-level pieces needed for modern generative media
+  workflows.
+
+use_cases:
+  - Generate images from text prompts with pretrained diffusion pipelines
+  - Build image-to-image editing and inpainting tools for creative or product workflows
+  - Run video-generation models inside Python applications and research prototypes
+  - Fine-tune diffusion models or LoRA adapters for domain-specific visual generation tasks
+  - Experiment with audio-generation pipelines built on diffusion architectures

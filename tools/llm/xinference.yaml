@@ -1,0 +1,28 @@
+name: Xinference
+description: An open-source inference platform for serving LLMs, embedding models, image models, speech models, and multimodal models through a unified API, web UI, and CLI across local, on-prem, and cloud environments.
+tagline: Self-host and serve many AI models behind one unified API
+
+github_url: https://github.com/xorbitsai/inference
+website_url: https://xinference.co/
+docs_url: https://inference.readthedocs.io/en/latest/
+install_command: pip install "xinference[all]"
+
+category: LLM
+tags: [llm, inference, model-serving, multimodal, embeddings, self-hosted, openai-compatible, gpu]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Teams often want to run open-source models themselves, but end up stitching together separate
+  serving stacks for chat models, embedding models, image generation, speech, and multimodal
+  workloads. Xinference provides one deployment and management layer for serving many model types
+  with unified APIs, scaling controls, and OpenAI-compatible interfaces, so developers can ship
+  self-hosted AI features without building their own model-serving platform from scratch.
+
+use_cases:
+  - Serve open-source chat and embedding models behind an OpenAI-compatible API for internal applications
+  - Deploy multimodal models on local machines or GPU servers without maintaining separate serving stacks
+  - Run self-hosted inference for enterprise workflows that need tighter control over data residency
+  - Expose image, speech, and language models through one platform for multi-model product features
+  - Standardize model serving across development, staging, and production environments
