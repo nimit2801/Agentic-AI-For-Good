@@ -101,7 +101,17 @@ async function syncTool(filePath: string): Promise<void> {
   // Build embedding text and generate embedding
   const embeddingText = buildEmbeddingText(tool, slug)
   console.log(`  Generating embedding (${embeddingText.length} chars)...`)
-  const embedding = await generateEmbedding(embeddingText)
+  let embedding: number[] | null = null
+  try {
+    embedding = await generateEmbedding(embeddingText)
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error)
+    if (message.includes('429') || message.toLowerCase().includes('quota')) {
+      console.warn('  ⚠️ Embedding generation skipped due to OpenAI quota/rate limit; syncing without embedding')
+    } else {
+      throw error
+    }
+  }
 
   // Build Supabase row
   const row = {
