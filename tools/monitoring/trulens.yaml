@@ -1,0 +1,25 @@
+name: TruLens
+description: Open-source evaluation and tracing framework for AI agents and LLM apps that captures OpenTelemetry traces, runs feedback metrics, and helps teams compare app versions.
+tagline: Evaluate and trace LLM apps and agents with OpenTelemetry
+
+github_url: https://github.com/truera/trulens
+website_url: https://www.trulens.org/
+docs_url: https://www.trulens.org/getting_started/
+install_command: pip install trulens
+
+category: Monitoring
+tags: [python, monitoring, observability, tracing, llm-evals, agent-evaluation, opentelemetry, rag]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Teams building LLM apps and agents often rely on manual spot checks, which makes it hard to catch regressions,
+  compare prompt or model changes, or understand why output quality dropped in production. TruLens records traces,
+  runs feedback metrics, and links evaluations to real application runs so teams can measure quality systematically.
+
+use_cases:
+  - Evaluate RAG responses for relevance and groundedness before shipping changes
+  - Trace agent execution flows and tool calls to debug failures in production
+  - Compare prompt or model versions against the same evaluation dataset
+  - Review human feedback alongside application traces for quality improvement

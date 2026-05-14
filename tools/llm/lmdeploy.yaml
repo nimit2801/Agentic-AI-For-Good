@@ -1,0 +1,25 @@
+name: LMDeploy
+description: Open-source toolkit for compressing, deploying, and serving large language and vision-language models with optimized inference backends, quantization, and OpenAI-compatible APIs.
+tagline: Deploy and serve LLMs efficiently with optimized inference and APIs
+
+github_url: https://github.com/InternLM/lmdeploy
+website_url: https://lmdeploy.readthedocs.io/en/latest/
+docs_url: https://lmdeploy.readthedocs.io/en/latest/
+install_command: pip install lmdeploy
+
+category: LLM
+tags: [python, llm-serving, model-deployment, inference-optimization, quantization, openai-compatible-api, multimodal, cuda]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Running open models in production usually means stitching together separate inference servers, quantization tools,
+  and API wrappers while fighting GPU memory limits and latency bottlenecks. LMDeploy packages optimized runtimes,
+  quantization, and serving interfaces so teams can turn LLMs and VLMs into deployable inference services faster.
+
+use_cases:
+  - Serve open LLMs behind OpenAI-compatible API endpoints for existing applications
+  - Quantize model weights and KV cache to reduce GPU memory requirements
+  - Run batch or offline inference jobs for chat, extraction, or classification workloads
+  - Deploy supported multimodal models for image-and-text inference services
