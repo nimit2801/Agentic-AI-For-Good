@@ -1,0 +1,26 @@
+name: LitGPT
+description: Open-source library from Lightning AI for loading, pretraining, fine-tuning, quantizing, and deploying 20+ LLMs with minimal abstractions and production-ready recipes.
+tagline: Train, fine-tune, and serve open LLMs with minimal abstraction
+
+github_url: https://github.com/Lightning-AI/litgpt
+website_url: https://lightning.ai/lightning-ai/templates/litgpt-quick-start
+docs_url: https://github.com/Lightning-AI/litgpt/tree/main/tutorials
+install_command: pip install 'litgpt[extra]'
+
+category: Fine-tuning
+tags: [python, fine-tuning, llm, pretraining, quantization, inference, pytorch, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Teams working with open LLMs often need one toolchain for inference, another for fine-tuning,
+  and a third for scaling training across accelerators, which adds glue code and hides core model
+  logic behind heavy abstractions. LitGPT provides transparent, high-performance implementations and
+  recipes so developers can train, adapt, and deploy modern open models in one workflow.
+
+use_cases:
+  - Fine-tune open LLMs with LoRA, QLoRA, adapter, or full-tuning recipes
+  - Pretrain or continue training language models across multi-GPU or TPU setups
+  - Run quantized inference for open models with lower memory requirements
+  - Experiment with transparent reference implementations instead of heavyweight frameworks
