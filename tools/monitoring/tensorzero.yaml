@@ -1,0 +1,25 @@
+name: TensorZero
+description: Open-source LLMOps platform that combines an AI gateway, observability, evaluations, optimization, and experimentation for production LLM applications.
+tagline: Open-source stack for observing and optimizing LLM apps
+
+github_url: https://github.com/tensorzero/tensorzero
+website_url: https://tensorzero.com
+docs_url: https://www.tensorzero.com/docs
+install_command: |
+  curl -LO "https://raw.githubusercontent.com/tensorzero/tensorzero/refs/heads/main/examples/docs/guides/quickstart/docker-compose.yml"
+  docker compose up
+
+category: Monitoring
+tags: [llmops, observability, evaluations, gateway, routing, prompts, experimentation, optimization]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Production LLM systems usually spread routing, logging, feedback, experiments, retries, and provider-specific integrations across multiple tools and custom glue code. TensorZero brings these concerns into one open stack so teams can route requests through a unified gateway, capture inference and feedback data, compare prompts or models, and ship optimizations with fewer fragile production integrations.
+
+use_cases:
+  - Observe LLM requests, feedback, and traces through one gateway instead of stitching together multiple logging tools
+  - Run prompt and model experiments with A/B testing, retries, fallbacks, and routing policies for production traffic
+  - Store inference data and user feedback to support evaluations, regression checks, and optimization loops for LLM features
+  - Replace provider-specific integrations with an OpenAI-compatible gateway for multi-model application development
