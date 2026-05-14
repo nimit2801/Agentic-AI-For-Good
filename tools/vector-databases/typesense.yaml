@@ -1,0 +1,32 @@
+name: Typesense
+description: Open-source search engine for fast keyword, typo-tolerant, faceted, vector, and semantic search via an API, available for self-hosting or as a managed cloud service.
+tagline: Fast keyword and vector search with simple APIs and self-hosting
+
+github_url: https://github.com/typesense/typesense
+website_url: https://typesense.org/
+docs_url: https://typesense.org/docs/
+install_command: |
+  export TYPESENSE_API_KEY=xyz
+  mkdir "$(pwd)"/typesense-data
+  docker run -p 8108:8108 \
+    -v"$(pwd)"/typesense-data:/data typesense/typesense:30.2 \
+    --data-dir /data \
+    --api-key=$TYPESENSE_API_KEY \
+    --enable-cors
+
+category: Vector DB
+tags: [vector-database, search-engine, vector-search, semantic-search, full-text-search, faceted-search, typo-tolerance, self-hosted]
+pricing: freemium
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Many teams need both semantic retrieval and traditional search, but larger search stacks can be operationally heavy
+  for simple product, documentation, or knowledge-base use cases. Typesense provides one engine for keyword,
+  autocomplete, filtering, and vector search so developers can ship low-latency retrieval without a complex setup.
+
+use_cases:
+  - Power semantic and hybrid retrieval over internal knowledge bases
+  - Build website or documentation search with autocomplete and typo tolerance
+  - Add vector-backed product search and faceted browsing to commerce apps
+  - Create geo-aware or structured record search for internal business tools
