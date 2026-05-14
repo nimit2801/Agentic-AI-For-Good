@@ -1,0 +1,25 @@
+name: OpenRLHF
+description: Open-source framework for RLHF and agentic reinforcement learning that combines distributed rollout, training, inference, and reward integration for scalable LLM and VLM training.
+tagline: Scale RLHF and agentic RL training with Ray, vLLM, and DeepSpeed
+
+github_url: https://github.com/OpenRLHF/OpenRLHF
+website_url: https://openrlhf.readthedocs.io/
+docs_url: https://openrlhf.readthedocs.io/en/latest/
+install_command: pip install openrlhf[vllm]
+
+category: Fine-tuning
+tags: [python, fine-tuning, rlhf, reinforcement-learning, llm-training, distributed-training, ray, vllm]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Building RLHF pipelines usually means wiring together separate tools for rollout, reward modeling, distributed
+  training, inference, and checkpoint management across many GPUs. OpenRLHF packages those pieces into one framework
+  so teams can run scalable SFT, preference optimization, and reinforcement learning workflows with less glue code.
+
+use_cases:
+  - Train PPO, GRPO, or REINFORCE-style alignment workflows for open LLMs
+  - Fine-tune models with SFT, reward modeling, and DPO in one framework
+  - Run distributed multi-node RLHF jobs with Ray, vLLM, and DeepSpeed
+  - Train vision-language models with image inputs inside reinforcement learning loops
