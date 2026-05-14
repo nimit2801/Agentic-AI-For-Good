@@ -161,8 +161,13 @@ async function main() {
   for (const file of filesToSync) {
     try {
       await syncTool(file)
-    } catch {
+    } catch (error) {
       console.error(`Failed to sync ${file}`)
+      if (error instanceof Error) {
+        console.error(error.stack ?? error.message)
+      } else {
+        console.error(error)
+      }
       failed++
     }
   }
