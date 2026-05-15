@@ -1,0 +1,27 @@
+name: OpenLIT
+description: Open-source, OpenTelemetry-native AI observability platform for tracing, evaluating, and monitoring LLM, agent, vector database, and GPU workloads.
+tagline: OpenTelemetry-native observability for production AI systems
+
+github_url: https://github.com/openlit/openlit
+website_url: https://openlit.io/
+docs_url: https://docs.openlit.io/latest/
+install_command: pip install openlit
+
+category: Monitoring
+tags: [observability, llm-observability, tracing, opentelemetry, evaluations, gpu-monitoring, agents]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Teams shipping LLM and agent applications often have traces, token usage, latency, cost, GPU
+  metrics, and evaluation results scattered across separate tools or missing entirely. OpenLIT
+  instruments AI workloads with OpenTelemetry so teams can debug failures, understand performance,
+  and monitor production behavior end to end without stitching together custom observability plumbing.
+
+use_cases:
+  - Trace multi-step agent and RAG workflows from user request to final response
+  - Monitor token usage, latency, and cost across multiple LLM providers in production
+  - Track GPU and vector database health alongside application-level AI traces
+  - Run evaluations and compare prompt or model changes before broad rollout
+  - Export AI telemetry to existing observability stacks that support OpenTelemetry

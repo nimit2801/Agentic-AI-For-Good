@@ -1,0 +1,27 @@
+name: Text Generation Inference
+description: Open-source inference server from Hugging Face for serving large language models with continuous batching, streaming, quantization, and production-ready observability.
+tagline: High-performance open-source LLM serving from Hugging Face
+
+github_url: https://github.com/huggingface/text-generation-inference
+website_url: https://huggingface.co/docs/text-generation-inference/index
+docs_url: https://huggingface.co/docs/text-generation-inference/index
+install_command: docker pull ghcr.io/huggingface/text-generation-inference:latest
+
+category: Other
+tags: [llm-serving, inference-server, text-generation, hugging-face, batching, quantization, gpu]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Serving open-weight language models reliably in production usually means hand-rolling GPU server
+  setup, request batching, token streaming, metrics, and model-specific optimizations. Text
+  Generation Inference packages those concerns into a production-oriented server so teams can expose
+  performant LLM APIs without building their own inference stack from scratch.
+
+use_cases:
+  - Serve open-weight LLMs behind an API for chatbots, copilots, or agent backends
+  - Run high-throughput text generation with batching and streaming on GPU infrastructure
+  - Deploy quantized or optimized Hugging Face models for internal AI products
+  - Benchmark and compare self-hosted model serving setups for latency and throughput
+  - Power RAG or tool-calling systems with a reusable inference endpoint

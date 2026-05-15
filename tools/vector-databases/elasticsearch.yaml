@@ -1,0 +1,27 @@
+name: Elasticsearch
+description: Distributed search and analytics engine with dense and sparse vector indexing, kNN search, hybrid retrieval, filtering, and security features for production AI search.
+tagline: Hybrid keyword and vector search in a production-grade engine
+
+github_url: https://github.com/elastic/elasticsearch
+website_url: https://www.elastic.co/elasticsearch/vector-database
+docs_url: https://www.elastic.co/docs/solutions/search/vector
+install_command: docker pull docker.elastic.co/elasticsearch/elasticsearch:9.4.0
+
+category: Vector DB
+tags: [vector-search, hybrid-search, semantic-search, rag, retrieval, search-engine, analytics]
+pricing: freemium
+is_open_source: true
+license: AGPL-3.0-only / SSPL-1.0 / Elastic License 2.0
+
+problem_solved: |
+  Teams building semantic search or RAG systems often end up maintaining one engine for keyword
+  search, another for filtering and analytics, and a separate vector store for embeddings.
+  Elasticsearch lets them store vectors and metadata in the same production search stack and run
+  keyword, vector, and hybrid retrieval together instead of operating multiple disconnected systems.
+
+use_cases:
+  - Build RAG retrieval over enterprise documents with filtering and relevance tuning
+  - Run hybrid keyword and vector search across internal knowledge bases or support content
+  - Power semantic product or help-center search with metadata-aware ranking
+  - Search logs, tickets, or case histories by similarity while keeping standard search features
+  - Deploy one retrieval layer for AI search, analytics, and operational visibility
