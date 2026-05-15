@@ -1,0 +1,26 @@
+name: Annoy
+description: Open-source C++ library with Python bindings for approximate nearest-neighbor search on dense vectors, using compact mmap-backed indexes for fast loading and retrieval.
+tagline: Approximate nearest neighbors with compact, mmap-backed vector indexes
+
+github_url: https://github.com/spotify/annoy
+website_url: https://github.com/spotify/annoy
+docs_url: https://github.com/spotify/annoy#readme
+install_command: pip install annoy
+
+category: Vector DB
+tags: [vector-search, ann, similarity-search, embeddings, python, c-plus-plus, mmap]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Exact nearest-neighbor search becomes slow and memory-intensive once embedding collections grow
+  large. Annoy builds compact approximate indexes that can be memory-mapped from disk, making it
+  easier to serve fast similarity lookups, recommendations, and semantic retrieval without loading
+  every vector into one in-memory process.
+
+use_cases:
+  - Serve approximate vector search for embeddings in semantic retrieval systems
+  - Power recommendation features with fast nearest-neighbor lookups at low memory cost
+  - Share one read-only vector index across multiple application processes
+  - Load large similarity indexes quickly from disk in production services
