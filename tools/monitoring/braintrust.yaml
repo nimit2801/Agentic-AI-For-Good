@@ -1,0 +1,27 @@
+name: Braintrust
+description: AI observability and evaluation platform for tracing LLM and agent workflows, running structured evals, and monitoring prompt, model, and application behavior in production.
+tagline: Trace, evaluate, and monitor production AI systems
+
+github_url: https://github.com/braintrustdata/braintrust-sdk-python
+website_url: https://www.braintrust.dev/
+docs_url: https://www.braintrust.dev/docs
+install_command: |
+  pip install braintrust
+  npm install braintrust
+
+category: Monitoring
+tags: [observability, evaluations, tracing, llm, agents, prompts, monitoring]
+pricing: freemium
+is_open_source: false
+
+problem_solved: |
+  Teams shipping LLM applications often lack a reliable way to trace prompt executions, compare
+  outputs, and measure whether model or prompt changes improved quality. Braintrust centralizes
+  traces, eval datasets, scoring, and experiment results so teams can debug failures, catch
+  regressions, and monitor how AI workflows behave after deployment.
+
+use_cases:
+  - Trace agent runs and LLM calls to debug failures in production applications
+  - Run offline and online evaluations against datasets before shipping prompt changes
+  - Compare model, prompt, and tool-calling variants with structured scores and feedback
+  - Monitor application behavior over time to catch regressions after deployment
