@@ -1,0 +1,24 @@
+name: Guidance
+description: An open-source library from Microsoft that enables developers to control large language models more precisely than traditional prompting or chaining. It supports constrained generation with regex and context-free grammars, interleaving control logic with text generation, and producing structured outputs like JSON from schemas — reducing latency and cost through token fast-forwarding and efficient constrained decoding.
+tagline: A guidance language for controlling LLMs with constrained generation
+
+github_url: https://github.com/guidance-ai/guidance
+website_url: https://github.com/guidance-ai/guidance
+docs_url: https://guidance.readthedocs.io/en/latest/
+install_command: pip install guidance
+
+category: LLM
+tags: [llm, constrained-generation, structured-output, prompt-engineering, microsoft, json-generation, nlp, language-model]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Traditional LLM prompting lacks precise control over output structure and format, leading to unreliable results, high latency, and increased token costs from repetitive prompting. Guidance solves this by providing a programming paradigm where developers constrain LLM output with grammars, regex, and schemas while interleaving generation with control flow logic — guaranteeing structured output and reducing overhead.
+
+use_cases:
+  - Constrain LLM outputs with regex and context-free grammars for reliable structured generation
+  - Generate valid JSON from Pydantic schemas for data extraction and API integration
+  - Build multi-step prompting workflows with conditionals and loops for complex tasks
+  - Implement tool use and function calling with guaranteed syntax compliance
+  - Accelerate token generation through fast-forwarding cached prefix patterns
