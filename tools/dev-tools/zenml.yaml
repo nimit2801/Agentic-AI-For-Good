@@ -1,0 +1,31 @@
+name: ZenML
+description: |
+  ZenML is an open-source AI control plane that unifies traditional ML, LLM workflows, and agentic pipelines
+  into a single Pythonic framework. It allows engineers to write reusable workflows that run on any
+  infrastructure backend, automatically containerizing code, tracking artifacts, and abstracting away
+  infrastructure complexity.
+
+tagline: Open-source control plane for ML, LLM, and agentic pipelines
+
+github_url: https://github.com/zenml-io/zenml
+website_url: https://www.zenml.io
+docs_url: https://docs.zenml.io
+install_command: pip install zenml
+
+category: Dev Tools
+tags: [mlops, orchestration, pipelines, agents, llm, python, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Teams waste significant engineering effort rewriting notebook prototypes for production and maintaining
+  brittle glue code between fragmented tools. ZenML eliminates this prototype-to-production gap by providing
+  a metadata-rich orchestration layer that makes the same Python pipeline run locally for debugging,
+  in batch for evaluation, and seamlessly on Kubernetes or cloud for production.
+
+use_cases:
+  - Orchestrating agentic workflows with LangGraph, CrewAI, or OpenAI Agents SDK
+  - Building production RAG pipelines with evaluation loops and artifact versioning
+  - End-to-end batch inference and classical ML model deployment with monitoring
+  - Fine-tuning and deploying LLMs with reproducible, versioned artifacts
