@@ -1,0 +1,23 @@
+name: KServe
+description: KServe is a CNCF incubating project that provides a standardized serverless inference platform for both generative AI (LLMs via vLLM, OpenAI-compatible protocol) and predictive AI (TensorFlow, PyTorch, XGBoost, ONNX, scikit-learn) on Kubernetes. It features request-based autoscaling with scale-to-zero, canary rollouts, GPU acceleration, and inference pipelines for production-grade ML model serving.
+tagline: Serverless inference platform for generative and predictive AI on Kubernetes
+
+github_url: https://github.com/kserve/kserve
+website_url: https://kserve.github.io/website/
+docs_url: https://kserve.github.io/website/
+
+category: Other
+tags: [kubernetes, model-serving, inference, mlops, llm, serverless, cncf, vllm, kubeflow]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Deploying and scaling machine learning models in production across frameworks (PyTorch, TensorFlow, XGBoost, ONNX) and GPU configurations is complex — teams handle infrastructure plumbing instead of modeling. KServe provides a unified Kubernetes-native platform that standardizes inference serving with built-in autoscaling, canary deployments, monitoring, and a serverless architecture that reduces operational costs.
+
+use_cases:
+  - Deploy large language models with vLLM for production-grade inference on Kubernetes
+  - Serve predictive ML models (PyTorch, TensorFlow, XGBoost, ONNX) with autoscaling and scale-to-zero
+  - Implement canary rollouts and A/B testing for new model version deployments
+  - Build multi-step inference pipelines using InferenceGraph for complex serving workflows
+  - Achieve cost-efficient GPU serving with request-based autoscaling on Kubernetes clusters
