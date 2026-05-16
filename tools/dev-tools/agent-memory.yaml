@@ -1,0 +1,29 @@
+name: Agent Memory
+tagline: Persistent memory layer for AI coding agents
+description: "A persistent memory runtime for AI coding agents that captures every session, compresses observations into searchable memory via triple-stream retrieval (BM25 + vector + knowledge graph), and injects relevant context on session start. Zero external databases, 12 auto-capture hooks, 51 MCP tools, works with any MCP/HTTP agent."
+problem_solved: "AI coding agents have no persistent memory across sessions, forcing developers to waste the first 5 minutes of every session re-explaining their stack, architecture decisions, preferences, and bug context. Built-in agent memory (CLAUDE.md, .cursorrules) caps out at ~200 lines and goes stale. Agent Memory silently captures every tool use, compresses it into structured 4-tier memory (working, episodic, semantic, procedural), and injects the right context at the next session start -- eliminating re-explanation entirely."
+use_cases:
+  - "Persistent cross-session memory for coding agents -- agents remember architecture decisions, code patterns, preferences, and bug fixes from previous sessions without re-explanation"
+  - "Multi-agent memory coordination -- share memory across Claude Code, Codex CLI, Cursor, Gemini CLI, OpenCode, and any MCP-compatible agent with leases, signals, and team namespaces"
+  - "Session replay and debugging -- replay any captured session via the real-time viewer on :3113, scrubbing through prompts, tool calls, and responses as discrete events"
+  - "Session JSONL import -- import existing Claude Code JSONL transcripts to bring older sessions into the memory runtime for search and replay"
+github_url: https://github.com/rohitg00/agentmemory
+website_url: https://www.agent-memory.dev
+docs_url: https://github.com/rohitg00/agentmemory/blob/main/README.md
+install_command: |
+  npm install -g @agentmemory/agentmemory
+  npx @agentmemory/agentmemory
+category: Dev Tools
+tags:
+  - agent-memory
+  - persistent-memory
+  - mcp
+  - coding-agent
+  - knowledge-graph
+  - bm25
+  - vector-search
+  - cross-session
+  - developer-tools
+pricing: free
+is_open_source: true
+license: Apache-2.0
