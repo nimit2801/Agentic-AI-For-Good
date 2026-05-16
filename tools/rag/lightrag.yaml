@@ -1,0 +1,24 @@
+name: LightRAG
+description: LightRAG is a graph-based RAG framework published at EMNLP 2025 that builds a knowledge graph from documents for efficient retrieval. It supports incremental updates, hybrid search combining dense and graph traversal, multimodal document processing, and multiple storage backends including Neo4j, MongoDB, PostgreSQL, and OpenSearch.
+tagline: Simple and fast retrieval-augmented generation with graph-based document retrieval
+
+github_url: https://github.com/HKUDS/LightRAG
+docs_url: https://github.com/HKUDS/LightRAG#readme
+website_url: https://github.com/HKUDS/LightRAG
+install_command: pip install lightrag-hku
+
+category: RAG
+tags: [rag, knowledge-graph, graphrag, retrieval, llm, genai, hybrid-search, emnlp, python]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Traditional RAG systems struggle with multi-hop reasoning, context diversity, and incremental updates — retrieving isolated chunks rather than understanding document relationships. LightRAG solves this by constructing a knowledge graph from documents so retrieval follows entity relationships, supports incremental graph updates without full re-indexing, and combines dense vector search with graph traversal for more accurate answers on complex queries.
+
+use_cases:
+  - Build knowledge-graph-powered RAG systems for enterprise document question answering
+  - Perform multi-hop reasoning across complex, interconnected document collections
+  - Incrementally add new documents with automatic graph regeneration and deduplication
+  - Enable hybrid search combining dense embeddings and graph traversal for higher recall
+  - Support multimodal RAG pipelines with text, image, and table extraction integration
