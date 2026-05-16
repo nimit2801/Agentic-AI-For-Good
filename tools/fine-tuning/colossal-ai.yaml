@@ -1,0 +1,27 @@
+name: Colossal-AI
+description: Colossal-AI is an open-source deep learning system for distributed training and inference that makes large AI models cheaper, faster, and easier to scale.
+tagline: Distributed training and inference for large AI models
+
+github_url: https://github.com/hpcaitech/ColossalAI
+website_url: https://www.colossalai.org
+docs_url: https://colossalai.org/docs/get_started/installation/
+install_command: pip install colossalai
+
+category: Fine-tuning
+tags: [distributed-training, fine-tuning, inference, llm, gpu, parallelism, deep-learning]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Fine-tuning and serving large models across multiple GPUs usually requires teams to assemble custom distributed
+  systems, memory optimizations, and launch tooling before any useful training can begin. Colossal-AI packages
+  parallelism strategies, memory management, and performance tooling so large-model workloads are more practical
+  to run and scale.
+
+use_cases:
+  - Fine-tune large language models on multi-GPU Linux clusters
+  - Launch distributed training jobs with built-in parallelism strategies
+  - Reduce memory pressure during large-model training and inference
+  - Benchmark and optimize throughput for large-scale transformer workloads
+  - Build custom high-performance pipelines for model training and serving

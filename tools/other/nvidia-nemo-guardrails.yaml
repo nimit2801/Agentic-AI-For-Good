@@ -1,0 +1,26 @@
+name: NVIDIA NeMo Guardrails
+description: NVIDIA NeMo Guardrails is an open-source toolkit for adding programmable safety, policy, and grounding controls to LLM and agent applications.
+tagline: Programmable guardrails for safer LLM and agent apps
+
+github_url: https://github.com/NVIDIA-NeMo/Guardrails
+website_url: https://developer.nvidia.com/nemo-guardrails
+docs_url: https://docs.nvidia.com/nemo/guardrails/latest/index.html
+install_command: pip install nemoguardrails
+
+category: Other
+tags: [guardrails, ai-safety, prompt-injection, pii, policy-enforcement, llm, agents, rag]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  LLM and agent systems can go off-topic, leak sensitive data, follow malicious instructions, or answer without
+  proper grounding. NVIDIA NeMo Guardrails helps teams define and enforce input, output, retrieval, and dialogue
+  policies so AI applications behave more safely and predictably in production.
+
+use_cases:
+  - Block jailbreak, prompt-injection, and unsafe content attempts
+  - Enforce domain and policy boundaries for support or enterprise assistants
+  - Detect and handle PII in user prompts and model responses
+  - Ground RAG answers against approved knowledge sources before responding
+  - Add configurable conversation flows and refusal behaviors to agent apps
