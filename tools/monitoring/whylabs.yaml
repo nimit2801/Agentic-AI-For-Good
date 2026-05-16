@@ -1,0 +1,24 @@
+name: WhyLabs
+description: WhyLabs is an AI observability platform that helps teams monitor, analyze, and improve the performance and data quality of machine learning models in production. It provides automated monitoring for data drift, model drift, data quality, and performance degradation with integrated root-cause analysis and alerting, powered by the open-source whylogs data logging library.
+tagline: AI observability for monitoring, analyzing, and improving ML in production
+
+github_url: https://github.com/whylabs/whylogs
+docs_url: https://docs.whylabs.ai
+website_url: https://whylabs.ai
+install_command: pip install whylogs
+
+category: Monitoring
+tags: [observability, monitoring, data-drift, model-drift, data-quality, mlops, logging, ai-monitoring, production]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  ML models in production degrade silently — data drift, feature skew, and performance drops often go undetected until users notice or downstream systems fail. WhyLabs solves this by providing continuous monitoring that profiles data and model outputs with the open-source whylogs library, detects drift and data quality issues automatically, and surfaces root causes through integrated dashboards and alerts, giving ML teams visibility into production model health.
+
+use_cases:
+  - Monitor ML models in production for data drift, model drift, and performance degradation
+  - Profile input data and model outputs with the open-source whylogs library for statistical summaries
+  - Set up automated alerts when data quality or model performance drops below thresholds
+  - Perform root-cause analysis for model failures by correlating drift across features and predictions
+  - Track model performance over time across deployments with privacy-preserving data logging

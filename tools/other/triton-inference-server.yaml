@@ -1,0 +1,23 @@
+name: NVIDIA Triton Inference Server
+description: NVIDIA Triton Inference Server is an open-source inference serving software that streamlines AI inference by enabling teams to deploy, run, and scale trained models from any framework (TensorFlow, PyTorch, ONNX, TensorRT, and more) on GPU or CPU infrastructure with concurrent model serving, dynamic batching, and model pipelines.
+tagline: Standardized, optimized inference serving for any model on GPU or CPU
+
+github_url: https://github.com/triton-inference-server/server
+docs_url: https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/
+website_url: https://developer.nvidia.com/triton-inference-server
+
+category: Other
+tags: [inference-server, nvidia, model-serving, gpu, deep-learning, mlops, cloud, edge, production]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Deploying multiple models from different frameworks (TensorFlow, PyTorch, ONNX) on GPU infrastructure requires separate serving stacks per framework, wasting engineering effort and GPU memory. Triton solves this by providing a unified serving runtime that handles models from any framework with concurrent model management, dynamic batching for GPU utilization, model pipelines for preprocessing/postprocessing, and production features like health endpoints and metrics.
+
+use_cases:
+  - Serve multiple models from different frameworks on shared GPU infrastructure concurrently
+  - Optimize GPU utilization with dynamic batching and concurrent inference execution
+  - Build inference pipelines with pre-processing, post-processing, and ensemble models
+  - Deploy models at scale in production environments with health checks and Prometheus metrics
+  - Serve LLMs with optimized TensorRT-LLM backend for low-latency generation
