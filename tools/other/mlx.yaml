@@ -1,0 +1,29 @@
+name: MLX
+description: MLX is a NumPy-like array framework for efficient and flexible machine learning on Apple silicon. It features lazy evaluation, unified memory, and composable function transformations for automatic differentiation and graph optimization.
+tagline: Apple Silicon-native ML framework with unified memory and lazy evaluation
+
+github_url: https://github.com/ml-explore/mlx
+website_url: https://ml-explore.github.io/mlx/
+docs_url: https://ml-explore.github.io/mlx/build/html/index.html
+
+install_command: pip install mlx
+
+category: Other
+tags: [machine-learning, deep-learning, apple-silicon, python, inference, training, numpy, framework]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Training and running ML models on Apple Silicon Macs is frustrating because traditional
+  frameworks force slow CPU-GPU data copies and lack optimized kernels for M-series chips.
+  MLX eliminates these bottlenecks with a unified memory model where arrays live in memory
+  shared by CPU and GPU, lazy evaluation for automatic graph optimization, and composable
+  function transformations for automatic differentiation — all through a familiar NumPy-like API.
+
+use_cases:
+  - Train transformer language models and fine-tune LLaMA with LoRA directly on Apple Silicon
+  - Run Stable Diffusion and FLUX image generation locally on Mac GPUs with near-metal performance
+  - Deploy OpenAI Whisper speech recognition for local transcription without cloud dependencies
+  - Build custom deep learning models using familiar NumPy-style code with automatic differentiation
+  - Scale distributed training across multiple Apple Silicon devices with data and tensor parallelism

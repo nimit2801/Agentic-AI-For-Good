@@ -1,0 +1,28 @@
+name: dlt
+description: dlt is an open-source Python library that loads data from various, often messy data sources into well-structured datasets. It provides lightweight Python interfaces to extract, load, inspect and transform data, with built-in schema inference, normalization, and incremental loading.
+tagline: Python-native data loading library with automatic schema inference
+
+github_url: https://github.com/dlt-hub/dlt
+website_url: https://dlthub.com
+docs_url: https://dlthub.com/docs/intro
+
+install_command: pip install dlt
+
+category: Data
+tags: [python, data-engineering, etl, data-pipeline, data-ingestion, data-warehouse, open-source]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Data engineers waste weeks writing brittle ingestion scripts, manually handling schema changes,
+  nested JSON normalization, and incremental loads. dlt automates the entire data loading pipeline
+  with Python-native interfaces, inferring schemas and managing evolution so teams can move from
+  source to structured dataset in minutes instead of weeks.
+
+use_cases:
+  - Ingest REST APIs into data warehouses like BigQuery, Snowflake, or DuckDB with minimal code
+  - Replicate SQL databases incrementally for analytics and ML feature stores
+  - Normalize nested JSON from NoSQL databases or webhooks automatically into relational tables
+  - Load cloud storage files to DuckDB or PostgreSQL for ad-hoc analysis and reporting
+  - Build reverse ETL pipelines to sync processed data back into operational systems
