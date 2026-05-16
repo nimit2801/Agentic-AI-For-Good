@@ -1,0 +1,24 @@
+name: Oumi
+description: Oumi is an open-source platform that streamlines the entire lifecycle of foundation models — from data preparation and fine-tuning to evaluation and deployment. Supports SFT, LoRA, QLoRA, GRPO, DPO, and more across models from 10M to 405B parameters (Llama, DeepSeek, Qwen, Gemma, Phi). Runs on laptops, clusters, or cloud infrastructure.
+tagline: Everything you need to build state-of-the-art foundation models, end-to-end
+
+github_url: https://github.com/oumi-ai/oumi
+docs_url: https://oumi.ai/docs
+website_url: https://oumi.ai
+install_command: pip install oumi
+
+category: Fine-tuning
+tags: [fine-tuning, sft, dpo, lora, qlora, grpo, training, llm, evaluation, inference, vlm, deepseek, llama, qwen]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Fine-tuning and deploying foundation models involves a fragmented toolchain — separate scripts for data prep, training, evaluation, and inference across different hardware configurations. Oumi unifies this lifecycle by providing one configuration-driven platform that handles data synthesis, LLM-as-a-judge curation, distributed training (SFT/DPO/GRPO/LoRA), standard benchmarks, and vLLM/SGLang-based deployment — from laptop to multi-node clusters.
+
+use_cases:
+  - Full fine-tuning and LoRA/QLoRA tuning of open-source LLMs like Llama 4 and DeepSeek
+  - GRPO/RLHF fine-tuning for improving reasoning model performance
+  - Synthesize training data and curate datasets with LLM-as-a-judge evaluation
+  - Evaluate models across standard LLM and VLM benchmarks in a consistent pipeline
+  - Deploy fine-tuned models with optimized inference engines (vLLM, SGLang) to production

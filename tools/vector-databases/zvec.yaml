@@ -1,0 +1,26 @@
+name: Zvec
+description: Zvec is an open-source, in-process vector database from Alibaba that embeds directly into applications as a library with no server process. It supports dense and sparse vector types, hybrid search with structured metadata filters, write-ahead logging for durability, concurrent multi-process reads, and cross-platform deployment including Linux, macOS, Windows, iOS, and Android.
+tagline: A lightweight, lightning-fast, in-process vector database
+
+github_url: https://github.com/alibaba/zvec
+docs_url: https://github.com/alibaba/zvec#readme
+website_url: https://github.com/alibaba/zvec
+install_command: |
+  pip install zvec
+  npm install @zvec/zvec
+
+category: Vector DB
+tags: [vector-database, embedded, in-process, hnsw, similarity-search, semantic-search, rag, llm-memory, agent-skills, local, edge]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Production vector search often requires running a separate server process (Pinecone, Qdrant, Weaviate), adding operational complexity, latency, and cost for edge or embedded scenarios. Zvec solves this by embedding directly into the application as a lightweight library — no server, no network calls — while still providing production-grade durability through write-ahead logging, concurrent multi-process reads, and structured metadata filtering across platforms.
+
+use_cases:
+  - Embed vector similarity search inside serverless or edge applications without a server process
+  - Build local-first RAG applications on laptops, edge devices, or mobile platforms
+  - Power AI agent memory backends with a lightweight, in-process vector store
+  - Enable on-device semantic search for iOS and Android applications via Dart/Flutter SDK
+  - Perform hybrid search combining dense embeddings with structured metadata filters at low latency
