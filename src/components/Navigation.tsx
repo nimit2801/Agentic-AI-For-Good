@@ -13,6 +13,7 @@ const navLinks = [
   { label: 'How It Works', href: '/how-it-works' },
   { label: 'Stories', href: '/stories' },
   { label: 'Philosophy', href: '/philosophy' },
+  { label: 'Community', href: '/community' },
   { label: 'Architecture', href: '/#architecture' },
 ]
 
