@@ -1,0 +1,27 @@
+name: Feast
+description: Feast is an open-source feature store that serves consistent structured data to AI, LLM, and machine learning applications during training and inference.
+tagline: Open-source feature store for AI and ML
+
+github_url: https://github.com/feast-dev/feast
+website_url: https://feast.dev
+docs_url: https://docs.feast.dev
+install_command: pip install feast
+
+category: Data
+tags: [feature-store, mlops, data-pipelines, llm, rag, online-inference, training-data]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Teams often duplicate feature engineering logic across batch pipelines, online services, and experiments,
+  which creates training-serving skew, stale features, and difficult point-in-time correctness bugs. Feast
+  provides a central feature store so the same governed data definitions can be reused reliably across training,
+  offline retrieval, and real-time inference.
+
+use_cases:
+  - Serve real-time recommendation features to AI or ranking systems
+  - Reuse validated training features during online model inference
+  - Power risk scoring and fraud detection with low-latency feature retrieval
+  - Feed retrieval and personalization pipelines with governed business features
+  - Backfill point-in-time correct datasets for model training and evaluation
