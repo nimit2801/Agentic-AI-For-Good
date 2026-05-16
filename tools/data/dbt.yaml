@@ -1,0 +1,28 @@
+name: dbt
+description: dbt enables data analysts and engineers to transform their data using analytics engineering best practices by writing SQL select statements, while dbt handles turning these statements into tables and views in a data warehouse.
+tagline: Transform data in your warehouse with software engineering best practices
+
+github_url: https://github.com/dbt-labs/dbt-core
+website_url: https://www.getdbt.com
+docs_url: https://docs.getdbt.com
+
+install_command: pip install dbt-core
+
+category: Data
+tags: [data-transformation, analytics-engineering, sql, data-pipelines, etl, data-warehouse, python]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Data transformation workflows are often messy, ungoverned, and lack software engineering discipline
+  like version control, testing, and documentation. dbt applies these best practices to analytics
+  workflows by letting analysts write modular SQL select statements that dbt compiles into tested,
+  documented tables and views across any major data warehouse.
+
+use_cases:
+  - Build modular, tested, and version-controlled SQL data pipelines in your warehouse
+  - Collaborate on data models with interactive lineage and column-level dependency tracing
+  - Automate data quality testing and auto-generate documentation for analytics datasets
+  - Deploy and monitor data transformations in production with built-in CI/CD support
+  - Centralize analytics code with governance guardrails to produce AI-ready clean datasets
