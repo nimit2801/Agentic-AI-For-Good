@@ -1,0 +1,42 @@
+name: Seldon Core
+tagline: An MLOps framework to deploy, manage and scale AI systems in Kubernetes
+description: >
+  Seldon Core 2 is an MLOps and LLMOps framework for deploying, managing and scaling
+  AI systems in Kubernetes — from singular models to modular, data-centric applications.
+  It enables standardized deployment across a wide range of model types, on-prem or in
+  any cloud, production-ready out of the box.
+problem_solved: >
+  Standardizes deployment, monitoring, and management of production machine learning
+  models at scale on Kubernetes. Enables data-centric AI pipelines, reduces infrastructure
+  costs through multi-model serving and autoscaling, and supports advanced experimentation
+  like A/B tests and canary deployments.
+use_cases:
+  - Real-time model serving and inference at scale via REST or gRPC
+  - Composable AI pipelines connecting preprocessing, models, post-processing, and custom logic with Kafka-based data streaming
+  - A/B testing, canary deployments, and shadow deployments for model experimentation in production
+  - Multi-model serving and resource optimization with autoscaling and over-commit to minimize hardware costs
+github_url: https://github.com/SeldonIO/seldon-core
+website_url: https://www.seldon.io/solutions/core/
+docs_url: https://docs.seldon.ai/seldon-core-2
+install_command: |
+  helm repo add seldon-charts https://seldonio.github.io/helm-charts/
+  helm repo update seldon-charts
+  helm upgrade seldon-core-v2-crds seldon-charts/seldon-core-v2-crds --namespace default --install
+  helm upgrade seldon-core-v2-setup seldon-charts/seldon-core-v2-setup --namespace seldon-mesh --set controller.clusterwide=true --install
+  helm upgrade seldon-core-v2-runtime seldon-charts/seldon-core-v2-runtime --namespace seldon-mesh --install
+  helm upgrade seldon-core-v2-servers seldon-charts/seldon-core-v2-servers --namespace seldon-mesh --install
+license: BUSL-1.1
+is_open_source: false
+pricing: freemium
+category: Dev Tools
+tags:
+  - MLOps
+  - LLMOps
+  - Kubernetes
+  - model-serving
+  - inference
+  - helm
+  - ai-deployment
+  - pipelines
+  - a-b-testing
+  - autoscaling
