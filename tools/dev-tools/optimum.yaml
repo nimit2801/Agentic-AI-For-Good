@@ -1,0 +1,28 @@
+name: Optimum
+description: Optimum is a Hugging Face library that accelerates inference and training of Transformers, Diffusers, TIMM, and Sentence Transformers with easy-to-use hardware optimization tools. It provides unified APIs for ONNX, TensorRT, OpenVINO, and other accelerators.
+tagline: Accelerate Hugging Face models with hardware-specific optimization tools
+category: Dev Tools
+pricing: free
+is_open_source: true
+license: Apache-2.0
+github_url: https://github.com/huggingface/optimum
+website_url: https://huggingface.co/docs/optimum/main/
+docs_url: https://huggingface.co/docs/optimum/main/
+install_command: |
+  pip install optimum
+  # For accelerator-specific features:
+  # pip install optimum[onnxruntime]
+  # pip install optimum[openvino]
+problem_solved: Maximizing model performance across different hardware accelerators requires deep knowledge of vendor-specific APIs and optimization techniques. Optimum abstracts this complexity by providing a unified interface to optimize and deploy Hugging Face models on ONNX Runtime, TensorRT, OpenVINO, and other targets.
+use_cases:
+  - Optimize transformer models for faster inference on target hardware accelerators
+  - Export Hugging Face models to ONNX format for cross-platform deployment
+  - Quantize models with minimal accuracy loss for edge and mobile deployment
+  - Leverage vendor-specific optimizations without rewriting model serving code
+tags:
+  - python
+  - optimization
+  - inference
+  - huggingface
+  - onnx
+  - tensorrt

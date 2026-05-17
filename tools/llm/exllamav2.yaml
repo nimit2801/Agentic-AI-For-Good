@@ -1,0 +1,28 @@
+name: ExLlamaV2
+description: ExLlamaV2 is a fast inference library for running large language models locally on modern consumer-class GPUs. It supports quantization formats like EXL2 and provides extremely efficient memory usage and generation speed for local AI deployments.
+tagline: Fast inference library for running LLMs locally on consumer GPUs
+category: LLM
+pricing: free
+is_open_source: true
+license: MIT
+github_url: https://github.com/turboderp-org/exllamav2
+website_url: https://github.com/turboderp-org/exllamav2
+docs_url: https://github.com/turboderp-org/exllamav2#readme
+install_command: |
+  git clone https://github.com/turboderp-org/exllamav2
+  cd exllamav2
+  pip install -r requirements.txt
+  pip install .
+problem_solved: Running large language models locally on consumer hardware is challenging due to memory constraints and slow inference speeds. ExLlamaV2 solves this with highly optimized kernels and quantization support, enabling fast local inference of large models on affordable GPUs.
+use_cases:
+  - Run quantized LLMs locally on consumer GPUs with minimal VRAM requirements
+  - Deploy private chatbots and assistants without cloud dependency or data leakage
+  - Serve local LLM APIs with high throughput and low latency for personal use
+  - Experiment with model quantizations to find optimal speed vs quality tradeoffs
+tags:
+  - python
+  - llm
+  - local
+  - inference
+  - quantization
+  - gpu

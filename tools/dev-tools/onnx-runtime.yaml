@@ -1,0 +1,27 @@
+name: ONNX Runtime
+description: ONNX Runtime is a cross-platform, high performance ML inferencing and training accelerator. It enables seamless deployment of ONNX models across diverse hardware targets including CPUs, GPUs, and specialized accelerators with minimal latency.
+tagline: Cross-platform high performance ML inferencing and training accelerator
+category: Dev Tools
+pricing: free
+is_open_source: true
+license: MIT
+github_url: https://github.com/microsoft/onnxruntime
+website_url: https://onnxruntime.ai
+docs_url: https://onnxruntime.ai/docs/
+install_command: |
+  pip install onnxruntime
+  # For GPU support:
+  # pip install onnxruntime-gpu
+problem_solved: Deploying machine learning models efficiently across different hardware and platforms requires significant optimization work. ONNX Runtime solves this by providing a unified inference engine that accelerates model execution on CPUs, GPUs, and specialized accelerators with minimal code changes.
+use_cases:
+  - Accelerate transformer model inference for production LLM serving pipelines
+  - Deploy optimized models across cloud, edge, and mobile devices from a single format
+  - Reduce inference latency and cost by leveraging hardware-specific graph optimizations
+  - Train models with mixed precision and distributed training support
+tags:
+  - python
+  - c++
+  - inference
+  - optimization
+  - cross-platform
+  - accelerator
