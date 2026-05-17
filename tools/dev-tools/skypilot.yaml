@@ -1,27 +1,28 @@
 name: SkyPilot
-description: A framework to run, manage, and scale AI workloads on any infrastructure. Unifies Kubernetes, Slurm, and 20+ clouds into one portable interface with intelligent scheduling and cost optimization.
-tagline: Run AI workloads on any cloud or cluster with one command
-
-github_url: https://github.com/skypilot-org/skypilot
-website_url: https://skypilot.co
-docs_url: https://docs.skypilot.co
-
-install_command: pip install skypilot
-
+description: SkyPilot is an open-source framework for running, managing, and scaling AI workloads on any infrastructure. It provides a unified interface to access and manage compute across Kubernetes, Slurm, AWS, GCP, Azure, and 20+ other cloud and on-prem platforms.
+tagline: Run, manage, and scale AI workloads on any AI infrastructure
 category: Dev Tools
-tags: [python, cloud, kubernetes, gpu, distributed-training, llm-serving, mlops, multicloud, slurm, spot-instances]
 pricing: free
 is_open_source: true
 license: Apache-2.0
-
-problem_solved: |
-  AI teams waste enormous time configuring cloud credentials, provisioning GPUs, and managing fragmented
-  infrastructure across AWS, GCP, Azure, Kubernetes, and on-prem clusters. SkyPilot unifies all of this
-  into a single YAML or Python API, automatically handling scheduling, failover, spot preemptions,
-  and binpacking to maximize fleet utilization and minimize costs.
-
+github_url: https://github.com/skypilot-org/skypilot
+website_url: https://skypilot.co
+docs_url: https://docs.skypilot.co
+install_command: |
+  # With uv (recommended):
+  uv pip install "skypilot[kubernetes,aws,gcp,azure]"
+  # Or with pip:
+  # pip install skypilot
+problem_solved: Managing AI compute across multiple cloud providers, Kubernetes clusters, and on-prem infrastructure requires learning vendor-specific APIs and dealing with complex configuration. SkyPilot unifies this by providing a single interface to launch and manage jobs across 20+ platforms with automatic failover and cost optimization.
 use_cases:
-  - Launch distributed AI training jobs across any cloud or cluster with automatic failover and recovery
-  - Serve LLMs with vLLM, SGLang, or Ollama on the cheapest available GPUs across providers
-  - Run batch inference and hyperparameter tuning at scale with automatic spot-instance preemption handling
-  - Interactive development on remote clusters with automatic code sync and IDE integration
+  - Launch LLM training and inference jobs across multiple clouds with one command
+  - Automatically find the cheapest available GPU instances across cloud providers
+  - Manage spot instance preemptions with automatic checkpointing and recovery
+  - Deploy distributed training clusters on Kubernetes or Slurm without manual setup
+tags:
+  - python
+  - infrastructure
+  - cloud
+  - gpu
+  - kubernetes
+  - distributed

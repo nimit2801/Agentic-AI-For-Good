@@ -1,0 +1,26 @@
+name: LMQL
+description: LMQL is a programming language for constraint-guided and efficient large language model programming. It extends Python with declarative constraints, enabling developers to write robust LLM-powered applications with guaranteed output structure and reduced token consumption.
+tagline: A programming language for constraint-guided LLM programming
+category: Dev Tools
+pricing: free
+is_open_source: true
+license: Apache-2.0
+github_url: https://github.com/eth-sri/lmql
+website_url: https://lmql.ai
+docs_url: https://lmql.ai/docs/
+install_command: |
+  pip install lmql
+  # For local GPU support:
+  # pip install lmql[hf]
+problem_solved: Integrating LLMs into applications often results in fragile code with expensive retry loops and parsing hacks to enforce output structure. LMQL solves this by providing a declarative programming model where constraints are embedded directly into prompts, reducing token usage and guaranteeing valid outputs.
+use_cases:
+  - Enforce structured output formats like JSON or specific data schemas from LLMs
+  - Reduce API costs by constraining generation to valid tokens at each step
+  - Build reliable agent workflows with typed interactions and guaranteed responses
+  - Prototype LLM applications in an interactive browser-based playground IDE
+tags:
+  - python
+  - llm
+  - programming-language
+  - constraints
+  - structured-output
