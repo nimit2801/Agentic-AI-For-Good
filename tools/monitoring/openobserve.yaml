@@ -1,0 +1,43 @@
+name: OpenObserve
+tagline: Open source, petabyte-scale observability platform for logs, metrics, traces, and LLM observability
+description: >
+  OpenObserve is an open-source observability platform for logs, metrics, traces,
+  frontend monitoring, data pipelines, and LLM observability. It serves as a sophisticated,
+  simple, and highly performant alternative to Datadog, Splunk, and Elasticsearch with
+  140x lower storage costs and single binary deployment.
+problem_solved: >
+  Reduces the cost and complexity of observability at scale by providing a single
+  unified platform for logs, metrics, traces, and LLM monitoring with dramatically
+  lower storage overhead and simpler deployment compared to traditional enterprise stacks.
+use_cases:
+  - Centralized log management and search at petabyte scale with SQL-like querying
+  - Metrics collection, dashboards, and alerting for infrastructure and applications
+  - Distributed tracing and frontend real-user monitoring (RUM) for full-stack visibility
+  - LLM observability and prompt tracing to monitor AI application performance and costs
+  - Stream processing and data pipelines for real-time analytics and event-driven workflows
+github_url: https://github.com/openobserve/openobserve
+website_url: https://openobserve.ai
+docs_url: https://openobserve.ai/docs/
+install_command: |
+  docker run -d \
+    --name openobserve \
+    -v $PWD/data:/data \
+    -p 5080:5080 \
+    -e ZO_ROOT_USER_EMAIL="root@example.com" \
+    -e ZO_ROOT_USER_PASSWORD="Complexpass#123" \
+    public.ecr.aws/zinclabs/openobserve:latest
+license: AGPL-3.0
+is_open_source: true
+pricing: freemium
+category: Monitoring
+tags:
+  - observability
+  - logs
+  - metrics
+  - tracing
+  - llm-observability
+  - monitoring
+  - datadog-alternative
+  - splunk-alternative
+  - docker
+  - single-binary

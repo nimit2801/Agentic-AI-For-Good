@@ -1,0 +1,40 @@
+name: HippoRAG
+tagline: Neurobiologically inspired long-term memory for large language models
+description: >
+  HippoRAG is a novel retrieval-augmented generation framework inspired by human
+  long-term memory, enabling LLMs to continuously integrate knowledge across external
+  documents. It combines RAG with knowledge graphs and personalized PageRank to
+  deliver state-of-the-art multi-hop question answering and continual learning over
+  large corpora.
+problem_solved: >
+  Traditional RAG systems struggle with multi-hop reasoning and continual knowledge
+  integration across large document collections. HippoRAG solves this by modeling
+  memory as a dynamic knowledge graph with personalized PageRank, allowing LLMs to
+  perform complex sense-making and retrieve facts across disconnected documents.
+use_cases:
+  - Multi-hop question answering over large, heterogeneous document corpora
+  - Continual knowledge integration into a live, evolving memory graph for long-term learning
+  - Complex narrative sense-making and factual memory retrieval across disconnected sources
+  - Local and private vLLM deployment for sensitive enterprise knowledge bases
+  - Dynamic knowledge base construction and maintenance from streaming documents
+github_url: https://github.com/OSU-NLP-Group/HippoRAG
+website_url: https://arxiv.org/abs/2405.14831
+docs_url: https://github.com/OSU-NLP-Group/HippoRAG/blob/main/README.md
+install_command: |
+  conda create -n hipporag python=3.10
+  conda activate hipporag
+  pip install hipporag
+license: MIT
+is_open_source: true
+pricing: free
+category: RAG
+tags:
+  - rag
+  - knowledge-graph
+  - multi-hop-qa
+  - llm-memory
+  - neurips
+  - page-rank
+  - continual-learning
+  - vllm
+  - python
