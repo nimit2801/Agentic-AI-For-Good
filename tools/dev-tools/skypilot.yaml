@@ -1,0 +1,27 @@
+name: SkyPilot
+description: A framework to run, manage, and scale AI workloads on any infrastructure. Unifies Kubernetes, Slurm, and 20+ clouds into one portable interface with intelligent scheduling and cost optimization.
+tagline: Run AI workloads on any cloud or cluster with one command
+
+github_url: https://github.com/skypilot-org/skypilot
+website_url: https://skypilot.co
+docs_url: https://docs.skypilot.co
+
+install_command: pip install skypilot
+
+category: Dev Tools
+tags: [python, cloud, kubernetes, gpu, distributed-training, llm-serving, mlops, multicloud, slurm, spot-instances]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AI teams waste enormous time configuring cloud credentials, provisioning GPUs, and managing fragmented
+  infrastructure across AWS, GCP, Azure, Kubernetes, and on-prem clusters. SkyPilot unifies all of this
+  into a single YAML or Python API, automatically handling scheduling, failover, spot preemptions,
+  and binpacking to maximize fleet utilization and minimize costs.
+
+use_cases:
+  - Launch distributed AI training jobs across any cloud or cluster with automatic failover and recovery
+  - Serve LLMs with vLLM, SGLang, or Ollama on the cheapest available GPUs across providers
+  - Run batch inference and hyperparameter tuning at scale with automatic spot-instance preemption handling
+  - Interactive development on remote clusters with automatic code sync and IDE integration
