@@ -1,0 +1,45 @@
+name: ScaNN
+description: >
+  ScaNN (Scalable Nearest Neighbors) is a method for efficient vector similarity
+  search at scale. It implements search space pruning and quantization for
+  Maximum Inner Product Search and also supports other distance functions such as
+  Euclidean distance. The implementation is optimized for x86 processors with AVX
+  support and achieves state-of-the-art performance on ann-benchmarks.com. It has
+  both TensorFlow and Python APIs.
+
+tagline: Scalable nearest neighbor search library
+
+github_url: https://github.com/google-research/google-research/tree/master/scann
+website_url: https://research.google/blog/announcing-scann-efficient-vector-similarity-search/
+docs_url: https://github.com/google-research/google-research/tree/master/scann/docs
+install_command: pip install scann
+
+category: Vector DB
+tags:
+  - vector-search
+  - approximate-nearest-neighbor
+  - similarity-search
+  - quantization
+  - tensorflow
+  - machine-learning
+  - embeddings
+  - MIPS
+  - ANN
+
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Finding nearest neighbors in large high-dimensional vector datasets is
+  computationally prohibitive with exhaustive search. ScaNN uses approximate
+  nearest neighbor search with anisotropic vector quantization and search space
+  pruning to significantly speed up maximum inner-product search and other
+  distance computations while maintaining high accuracy, enabling real-time
+  semantic search, recommendation, and retrieval at billion-scale.
+
+use_cases:
+  - Semantic text search and document retrieval
+  - Image similarity search and visual recommendation
+  - Embedding-based recommendation systems
+  - Large-scale machine learning inference and retrieval
