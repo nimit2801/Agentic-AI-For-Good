@@ -1,0 +1,24 @@
+name: ClickHouse
+description: |
+  ClickHouse is an open-source, column-oriented database management system designed for real-time analytical data processing. It supports high-performance vector search through ANN (approximate nearest neighbor) indexes, making it a powerful backend for AI applications that need to combine fast analytics with semantic retrieval over large-scale datasets.
+tagline: Real-time analytics database with high-performance vector search
+problem_solved: |
+  AI applications often need to query both structured analytics data and high-dimensional vector embeddings in a single system, but separate databases for OLAP and vector search create data silos, synchronization overhead, and operational complexity. ClickHouse solves this by offering a unified columnar engine that can store billions of rows, run complex aggregations in milliseconds, and perform ANN vector search using built-in approximate indexes. Teams get one database for both real-time dashboards and semantic retrieval, reducing infrastructure footprint and query latency.
+use_cases:
+  - Powering real-time AI dashboards that combine semantic vector search with structured aggregations
+  - Storing and querying high-dimensional embeddings alongside event logs for recommendation systems
+  - Running fast nearest-neighbor lookups over billions of vectors in a single analytics query
+category: Vector DB
+tags:
+  - cpp
+  - analytics
+  - vector-search
+  - columnar
+  - open-source
+github_url: https://github.com/ClickHouse/ClickHouse
+website_url: https://clickhouse.com
+docs_url: https://clickhouse.com/docs
+install_command: curl https://clickhouse.com/ | sh
+pricing: free
+is_open_source: true
+license: Apache-2.0

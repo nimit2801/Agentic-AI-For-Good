@@ -1,0 +1,24 @@
+name: RAGatouille
+description: |
+  RAGatouille is a Python library that makes state-of-the-art late-interaction retrieval models, especially ColBERT, easy to use and train within any RAG pipeline. It bridges the gap between academic research and production RAG by providing modular, research-backed components for indexing, embedding, and retrieving documents with higher accuracy than dense embeddings alone.
+tagline: Easy-to-use late-interaction retrieval for any RAG pipeline
+problem_solved: |
+  Dense embedding retrieval is a good baseline for RAG, but research shows it often underperforms on complex or domain-specific queries. RAGatouille solves this by making advanced late-interaction models like ColBERT accessible to practitioners. ColBERT generalizes better to new domains, is more data-efficient, and handles non-English languages with less training data, yet it has been historically difficult to integrate. RAGatouille removes this friction with a simple pip-installable package that slots into existing LangChain, LlamaIndex, or custom RAG pipelines.
+use_cases:
+  - Replacing dense embedding retrieval with ColBERT for improved document relevance
+  - Fine-tuning retrieval models on low-resource languages or specialized domains
+  - Plugging advanced retrieval into LangChain or LlamaIndex RAG pipelines with minimal code changes
+category: RAG
+tags:
+  - python
+  - retrieval
+  - colbert
+  - embeddings
+  - open-source
+github_url: https://github.com/AnswerDotAI/RAGatouille
+website_url: https://ben.clavie.eu/ragatouille/
+docs_url: https://ben.clavie.eu/ragatouille/
+install_command: pip install ragatouille
+pricing: free
+is_open_source: true
+license: Apache-2.0
