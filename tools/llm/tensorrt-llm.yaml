@@ -1,0 +1,45 @@
+name: TensorRT LLM
+description: >
+  An open-source library that accelerates and optimizes inference performance
+  of large language models (LLMs) and visual generation models on NVIDIA GPUs.
+  It provides custom kernels for common operations, an efficient runtime,
+  algorithmic optimizations like speculative decoding and disaggregated serving,
+  and a pythonic framework built on PyTorch for customizing and extending
+  the system.
+
+tagline: High-performance LLM inference on NVIDIA GPUs
+
+github_url: https://github.com/NVIDIA/TensorRT-LLM
+website_url: https://developer.nvidia.com/tensorrt
+docs_url: https://nvidia.github.io/TensorRT-LLM/
+install_command: pip install tensorrt_llm
+
+category: LLM
+tags:
+  - inference
+  - nvidia
+  - gpu
+  - cuda
+  - quantization
+  - speculative-decoding
+  - distributed-inference
+  - triton
+  - visual-generation
+
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Running large language model inference at production scale is prohibitively
+  slow and expensive on generic runtimes. TensorRT-LLM solves this by providing
+  a highly optimized inference engine with specialized CUDA kernels, advanced
+  parallelism strategies, quantization support, and low-latency scheduling
+  to maximize throughput and minimize latency on NVIDIA hardware.
+
+use_cases:
+  - High-throughput LLM serving in data centers and cloud environments
+  - Deploying quantized models (FP8, FP4, INT8, AWQ) for reduced memory and latency
+  - Multi-GPU and multi-node distributed inference with Tensor/Pipeline/Expert parallelism
+  - Visual generation inference (diffusion models) acceleration
+  - Production serving integrated with Triton Inference Server and NVIDIA Dynamo
