@@ -1,0 +1,42 @@
+name: Snorkel
+description: >
+  A system for quickly generating training data with weak supervision.
+  Snorkel empowers users to programmatically label, build, and manage training
+  datasets by writing labeling functions instead of manually annotating every
+  example, dramatically accelerating ML development.
+
+tagline: Programmatically build and manage training data
+
+github_url: https://github.com/snorkel-team/snorkel
+website_url: https://snorkel.org
+docs_url: https://snorkel.readthedocs.io/
+install_command: pip install snorkel
+
+category: Data
+tags:
+  - machine-learning
+  - ai
+  - weak-supervision
+  - data-labeling
+  - training-data
+  - python
+  - nlp
+
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Manual data labeling is slow, expensive, and does not scale to the large
+  training sets required by modern machine learning. Snorkel solves this by
+  letting users write labeling functions—heuristic rules, distant supervision,
+  and other weak signals—to programmatically generate large labeled datasets.
+  It then uses probabilistic modeling to denoise and combine these labels into
+  high-quality training data without requiring exhaustive manual annotation.
+
+use_cases:
+  - Spam classification using weak supervision and labeling functions
+  - Data augmentation for NLP tasks with transformation functions
+  - Monitoring critical data subsets via slicing functions
+  - Medical text labeling and clinical NLP at scale
+  - Enterprise knowledge extraction at scale without manual annotation
