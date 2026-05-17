@@ -1,0 +1,27 @@
+name: TextGen
+description: TextGen is an open-source desktop application for running local large language models. It supports text generation, vision understanding, tool-calling, and serves an OpenAI/Anthropic-compatible API, all while remaining 100% offline with zero telemetry.
+tagline: Desktop app for local LLMs with chat, vision, and tool-calling
+category: LLM
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+github_url: https://github.com/oobabooga/textgen
+website_url: https://localbench.substack.com
+docs_url: https://github.com/oobabooga/textgen/wiki
+install_command: |
+  curl -L -o textgen.zip https://github.com/oobabooga/textgen/releases/latest/download/textgen.zip
+  unzip textgen.zip
+problem_solved: Running local LLMs requires complex setup of backends, model loaders, and API servers. TextGen provides a unified desktop application with multiple backends (llama.cpp, ExLlamaV3, Transformers), chat modes, vision support, tool-calling, and an OpenAI-compatible API, all without sending data to external servers.
+use_cases:
+  - Run local LLMs for private conversations without cloud dependency
+  - Deploy an OpenAI-compatible API endpoint for local model serving
+  - Use vision models for image understanding in multimodal chat
+  - Fine-tune LoRAs on custom datasets with the built-in training tab
+tags:
+  - python
+  - llm
+  - local
+  - desktop
+  - api
+  - vision
+  - tool-calling
