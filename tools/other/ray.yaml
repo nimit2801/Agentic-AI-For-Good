@@ -1,0 +1,24 @@
+name: Ray
+description: |
+  Ray is an open-source AI compute engine that provides a core distributed runtime and a set of libraries for accelerating machine learning workloads. It simplifies scaling Python applications from a laptop to a cluster, with built-in support for training, hyperparameter tuning, reinforcement learning, and model serving.
+tagline: Distributed AI compute engine for scaling ML workloads
+problem_solved: |
+  Scaling machine learning workloads from a single machine to a cluster typically requires rewriting code with complex distributed systems primitives like MPI, Kubernetes, or Spark. Ray eliminates this barrier by providing a simple, universal API for distributed computing that works the same on a laptop and a 1000-node cluster. Its ecosystem of libraries (Ray Train, Ray Tune, Ray RLlib, Ray Serve) lets teams scale training, tuning, and serving without changing their PyTorch, TensorFlow, or XGBoost code, dramatically reducing the engineering effort needed for production ML infrastructure.
+use_cases:
+  - Scaling PyTorch or TensorFlow training across multiple GPUs or nodes with minimal code changes
+  - Running large-scale hyperparameter searches with Ray Tune on a distributed cluster
+  - Deploying and serving ML models in production with Ray Serve alongside existing applications
+category: Other
+tags:
+  - python
+  - distributed-computing
+  - ml-engineering
+  - cluster
+  - open-source
+github_url: https://github.com/ray-project/ray
+website_url: https://www.ray.io
+docs_url: https://docs.ray.io
+install_command: pip install ray
+pricing: free
+is_open_source: true
+license: Apache-2.0

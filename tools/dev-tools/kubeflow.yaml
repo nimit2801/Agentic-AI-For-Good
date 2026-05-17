@@ -1,0 +1,26 @@
+name: Kubeflow
+description: |
+  Kubeflow is an open-source machine learning toolkit for Kubernetes that makes deployments of ML workflows on Kubernetes simple, portable, and scalable. It provides a set of components for building end-to-end ML pipelines, including notebooks, training operators, hyperparameter tuning, and model serving.
+tagline: Machine learning toolkit for Kubernetes
+problem_solved: |
+  Deploying and managing machine learning workflows in production requires orchestrating notebooks, distributed training jobs, hyperparameter tuning, and model serving across a cluster. Doing this manually with raw Kubernetes is complex and error-prone. Kubeflow solves this by providing a dedicated, integrated platform that packages best practices for ML on Kubernetes into reusable components. Data scientists can work in Jupyter notebooks, launch distributed training with TFJob or PyTorchJob, run automated hyperparameter tuning with Katib, and deploy models with KServe — all within a single Kubernetes-native ecosystem that scales from experimentation to production.
+use_cases:
+  - Building end-to-end ML pipelines on Kubernetes from notebooks to model serving
+  - Running distributed TensorFlow or PyTorch training jobs with automatic cluster scheduling
+  - Automating hyperparameter optimization and model deployment in a shared Kubernetes environment
+category: Dev Tools
+tags:
+  - kubernetes
+  - ml-pipelines
+  - training
+  - serving
+  - open-source
+github_url: https://github.com/kubeflow/kubeflow
+website_url: https://www.kubeflow.org
+docs_url: https://www.kubeflow.org/docs/
+install_command: |
+  kubectl apply -k "github.com/kubeflow/pipelines/manifests/kustomize/cluster-scoped-resources?ref=2.0.3"
+  kubectl apply -k "github.com/kubeflow/pipelines/manifests/kustomize/env/platform-agnostic-pns?ref=2.0.3"
+pricing: free
+is_open_source: true
+license: Apache-2.0

@@ -1,0 +1,26 @@
+name: Kafka
+description: |
+  Apache Kafka is an open-source distributed event streaming platform used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications. In AI workloads, Kafka serves as the real-time backbone for ingesting events, feeding streaming data to ML models, and synchronizing data between training, inference, and monitoring systems.
+tagline: Distributed event streaming platform for real-time data pipelines
+problem_solved: |
+  AI systems need to process large volumes of real-time events — user interactions, sensor readings, logs, and model predictions — but traditional batch pipelines introduce latency that makes real-time inference and feedback loops impossible. Kafka solves this by providing a fault-tolerant, horizontally scalable event streaming platform that can handle millions of events per second with low latency. It acts as the central nervous system for real-time AI applications, enabling streaming data ingestion, event-driven microservices, and reliable data movement between data lakes, vector databases, and model serving infrastructure.
+use_cases:
+  - Streaming real-time user events into feature stores and vector databases for live ML inference
+  - Building event-driven microservices that trigger model inference pipelines on new data
+  - Feeding log and metric streams into monitoring systems for real-time model observability
+category: Data
+tags:
+  - java
+  - streaming
+  - event-driven
+  - data-pipeline
+  - open-source
+github_url: https://github.com/apache/kafka
+website_url: https://kafka.apache.org
+docs_url: https://kafka.apache.org/documentation/
+install_command: |
+  curl -sSOL https://downloads.apache.org/kafka/3.8.0/kafka_2.13-3.8.0.tgz
+  tar -xzf kafka_2.13-3.8.0.tgz
+pricing: free
+is_open_source: true
+license: Apache-2.0
