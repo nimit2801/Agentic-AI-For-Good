@@ -1,0 +1,41 @@
+name: OpenLLMetry
+description: >
+  OpenLLMetry is a set of open-source OpenTelemetry extensions that provide complete
+  observability for LLM applications. It instruments calls to leading LLM providers,
+  vector databases, and AI frameworks, exporting standard traces to any existing
+  observability platform. Built and maintained by Traceloop, it enables monitoring,
+  debugging, and cost tracking with just two lines of code.
+tagline: Open-source observability for your GenAI or LLM application
+
+website_url: https://www.traceloop.com/openllmetry
+github_url: https://github.com/traceloop/openllmetry
+docs_url: https://www.traceloop.com/docs/openllmetry/introduction
+
+install_command: pip install traceloop-sdk
+
+category: Monitoring
+tags:
+  - observability
+  - opentelemetry
+  - llm
+  - genai
+  - tracing
+  - monitoring
+  - python
+  - typescript
+
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Engineering teams lack visibility into LLM API calls, token costs, latency, and
+  vector database performance in production. OpenLLMetry provides drop-in
+  OpenTelemetry instrumentation that automatically traces LLM requests, framework
+  chains, and retrieval operations, enabling teams to debug failures, optimize
+  costs, and monitor performance without vendor lock-in.
+
+use_cases:
+  - Monitor production LLM latency and token consumption across providers
+  - Debug RAG pipelines by tracing vector DB queries and LLM retrieval calls
+  - Track AI agent workflows and correlate user feedback over sessions
