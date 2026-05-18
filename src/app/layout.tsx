@@ -3,6 +3,7 @@ import './globals.css'
 import Navigation from '@/components/Navigation'
 import Footer from '@/sections/Footer'
 import ScrollToTop from '@/components/ScrollToTop'
+import { PostHogProvider } from '@/components/PostHogProvider'
 
 export const metadata: Metadata = {
   title: 'Agentic AI For Good | Discover AI Tools That Actually Work',
@@ -46,13 +47,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
       </head>
-      <body>
-        <div className="grain-overlay" aria-hidden="true" />
-        <ScrollToTop />
-        <Navigation />
-        <main>{children}</main>
-        <Footer />
-      </body>
+     <body>
+        <PostHogProvider>
+       <div className="grain-overlay" aria-hidden="true" />
+       <ScrollToTop />
+       <Navigation />
+       <main>{children}</main>
+       <Footer />
+        </PostHogProvider>
+     </body>
     </html>
   )
 }

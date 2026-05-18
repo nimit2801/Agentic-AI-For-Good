@@ -1,0 +1,29 @@
+name: CozoDB
+description: A general-purpose, transactional, relational-graph-vector database that uses Datalog for queries. Embeddable but scalable, it unifies relational, graph, and vector models in a single engine designed as long-term memory for AI systems.
+tagline: The relational-graph-vector database for AI memory
+
+github_url: https://github.com/cozodb/cozo
+website_url: https://www.cozodb.org
+docs_url: https://docs.cozodb.org/en/latest/
+
+install_command: pip install "pycozo[embedded,requests,pandas]"
+
+category: Vector DB
+tags: [rust, vector-database, graph-database, database, embedded, datalog, ai-memory]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  Existing databases force developers to choose between relational, graph, or vector models and
+  stitch multiple systems together. CozoDB unifies all three in a single embeddable engine,
+  eliminating the need to shoehorn interconnected data into separate systems. It enables complex
+  graph traversals, vector similarity search, full-text search, and recursive Datalog queries
+  within ACID transactions, running in-process on phones, browsers, and edge devices.
+
+use_cases:
+  - Build long-term structured memory for LLMs and agentic systems with graph-vector relationships
+  - Run recursive graph queries, community detection, PageRank, and shortest paths within transactions
+  - Perform HNSW-based vector similarity search integrated directly into Datalog query expressions
+  - Execute full-text and near-duplicate searches with built-in FTS and MinHash-LSH deduplication
+  - Track historical data changes at the relation level with time-travel query support

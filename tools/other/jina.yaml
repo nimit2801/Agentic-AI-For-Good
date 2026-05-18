@@ -1,0 +1,29 @@
+name: Jina
+description: A framework for building and deploying multimodal AI applications with a cloud-native stack. Build AI services and pipelines that communicate via gRPC, HTTP, and WebSockets, then scale from local development to production.
+tagline: Build and scale multimodal AI apps with a cloud-native Python framework
+
+github_url: https://github.com/jina-ai/serve
+website_url: https://jina.ai/serve
+docs_url: https://jina.ai/serve
+
+install_command: pip install -U jina
+
+category: Other
+tags: [python, multimodal, microservices, ai-serving, cloud-native, inference, pipelines]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Serving ML models and building AI microservices requires handling infrastructure complexity such
+  as protocol negotiation, containerization, scaling, dynamic batching, and load balancing. Jina
+  eliminates this overhead by providing a Pythonic path from local model deployment to production
+  orchestration on Docker Compose, Kubernetes, or Jina AI Cloud, letting developers focus on core
+  AI logic instead of infrastructure plumbing.
+
+use_cases:
+  - Serve LLMs with token-by-token streaming over gRPC, HTTP, or WebSockets
+  - Build text-to-image and generative AI pipelines that chain multiple models together
+  - Deploy deep learning models from any framework as scalable, containerized microservices
+  - Create neural search and multimodal search applications with auto-scaling GPU executors
+  - Orchestrate cloud-native AI services with built-in dynamic batching and load balancing

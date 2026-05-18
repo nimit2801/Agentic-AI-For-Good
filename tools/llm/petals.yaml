@@ -1,0 +1,28 @@
+name: Petals
+description: Run large language models at home in a BitTorrent-style distributed network. Load a small part of a massive model and join a peer-to-peer swarm to perform inference and fine-tuning up to 10x faster than simple offloading.
+tagline: Run LLMs at home in a peer-to-peer swarm
+
+github_url: https://github.com/bigscience-workshop/petals
+website_url: https://petals.dev
+docs_url: https://github.com/bigscience-workshop/petals/wiki
+
+install_command: pip install petals
+
+category: LLM
+tags: [python, distributed, inference, fine-tuning, p2p, llm-serving, bloom]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Running 100B+ parameter models normally requires high-end GPUs or expensive cloud instances,
+  making them inaccessible to most developers and researchers. Petals solves this by splitting
+  models across a community-run peer-to-peer network, allowing inference and fine-tuning on
+  consumer-grade GPUs or even free Google Colab instances without provisioning massive hardware.
+
+use_cases:
+  - Generate text with distributed Llama 3.1 (405B), Mixtral, Falcon, or BLOOM models from home
+  - Fine-tune or prompt-tune massive language models for custom tasks on consumer GPUs
+  - Build chatbots and interactive applications backed by 100B+ parameter models cheaply
+  - Execute custom inference paths through models and inspect hidden states for research
+  - Deploy private swarms for sensitive data that should not leave your organization
