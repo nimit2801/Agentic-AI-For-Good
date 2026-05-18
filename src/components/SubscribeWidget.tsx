@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import { Mail, ArrowRight, Check, Loader2 } from 'lucide-react'
+import posthog from 'posthog-js'
 
 interface SubscribeWidgetProps {
   source?: string
@@ -31,15 +32,21 @@ export default function SubscribeWidget({
       const data = await res.json()
 
       if (res.ok) {
-        setStatus(data.message === 'Already subscribed' ? 'duplicate' : 'success')
+        const isNew = data.message !== 'Already subscribed'
+        setStatus(isNew ? 'success' : 'duplicate')
         setEmail('')
+        if (isNew) {
+          posthog.capture('newsletter_subscribed', { source })
+        }
       } else {
         setStatus('error')
         setErrorMsg(data.error ?? 'Something went wrong')
+        posthog.capture('newsletter_subscribe_failed', { source, error: data.error })
       }
-    } catch {
+    } catch (err) {
       setStatus('error')
       setErrorMsg('Network error — please try again')
+      posthog.captureException(err)
     }
   }
 

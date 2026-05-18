@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react'
 import { ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { useRouter } from 'next/navigation'
+import posthog from 'posthog-js'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
@@ -57,13 +58,16 @@ export default function JoinMovement() {
       })
       if (!res.ok) {
         const data = await res.json()
+        posthog.capture('newsletter_subscribe_failed', { source: 'homepage', error: data.error })
         if (data.error) throw new Error(data.error)
       }
       setIsSubmitted(true)
       setEmail('')
+      posthog.capture('newsletter_subscribed', { source: 'homepage' })
       setTimeout(() => setIsSubmitted(false), 5000)
-    } catch {
+    } catch (err) {
       setError('Something went wrong. Please try again.')
+      posthog.captureException(err)
     } finally {
       setIsLoading(false)
     }

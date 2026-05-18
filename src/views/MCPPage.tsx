@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import posthog from 'posthog-js'
 import { Terminal, Search, Package, Zap, Clock, Copy, Check, GitBranch, Rss } from 'lucide-react'
 import SubscribeWidget from '@/components/SubscribeWidget'
 
@@ -66,13 +67,14 @@ const TOOLS = [
   },
 ]
 
-function CopyButton({ text, className = '' }: { text: string; className?: string }) {
+function CopyButton({ text, label, className = '' }: { text: string; label?: string; className?: string }) {
   const [copied, setCopied] = useState(false)
 
   const handleCopy = async () => {
     await navigator.clipboard.writeText(text)
     setCopied(true)
     setTimeout(() => setCopied(false), 2000)
+    posthog.capture('mcp_config_copied', { config_label: label ?? 'unknown' })
   }
 
   return (
@@ -122,7 +124,7 @@ export default function MCPPage() {
           {/* Tab switcher */}
           <div className="flex border-b border-[#1A1A1A]/8">
             <button
-              onClick={() => setActiveTab('http')}
+              onClick={() => { setActiveTab('http'); posthog.capture('mcp_tab_changed', { tab: 'http' }) }}
               className={`flex-1 px-4 py-3 text-sm font-medium transition-all duration-200 ${
                 activeTab === 'http'
                   ? 'text-[#1A1A1A] border-b-2 border-[#D4754E] bg-[#F5F1EB]/50'
@@ -132,7 +134,7 @@ export default function MCPPage() {
               HTTP ✦ Recommended
             </button>
             <button
-              onClick={() => setActiveTab('cli')}
+              onClick={() => { setActiveTab('cli'); posthog.capture('mcp_tab_changed', { tab: 'cli' }) }}
               className={`flex-1 px-4 py-3 text-sm font-medium transition-all duration-200 ${
                 activeTab === 'cli'
                   ? 'text-[#1A1A1A] border-b-2 border-[#D4754E] bg-[#F5F1EB]/50'
@@ -142,7 +144,7 @@ export default function MCPPage() {
               Claude CLI
             </button>
             <button
-              onClick={() => setActiveTab('desktop')}
+              onClick={() => { setActiveTab('desktop'); posthog.capture('mcp_tab_changed', { tab: 'desktop' }) }}
               className={`flex-1 px-4 py-3 text-sm font-medium transition-all duration-200 ${
                 activeTab === 'desktop'
                   ? 'text-[#1A1A1A] border-b-2 border-[#D4754E] bg-[#F5F1EB]/50'
@@ -152,7 +154,7 @@ export default function MCPPage() {
               Claude Desktop
             </button>
             <button
-              onClick={() => setActiveTab('code')}
+              onClick={() => { setActiveTab('code'); posthog.capture('mcp_tab_changed', { tab: 'code' }) }}
               className={`flex-1 px-4 py-3 text-sm font-medium transition-all duration-200 ${
                 activeTab === 'code'
                   ? 'text-[#1A1A1A] border-b-2 border-[#D4754E] bg-[#F5F1EB]/50'
@@ -184,7 +186,7 @@ export default function MCPPage() {
                       </pre>
                     </div>
                     <div className="absolute top-3 right-3">
-                      <CopyButton text={HTTP_CONFIG} />
+                      <CopyButton text={HTTP_CONFIG} label="http_config" />
                     </div>
                   </div>
                   <p className="text-xs text-[#6B6560] mt-3 pl-0">
@@ -226,7 +228,7 @@ export default function MCPPage() {
                       </pre>
                     </div>
                     <div className="absolute top-3 right-3">
-                      <CopyButton text={CLAUDE_CLI_COMMAND} />
+                      <CopyButton text={CLAUDE_CLI_COMMAND} label="cli_command" />
                     </div>
                   </div>
                   <p className="text-xs text-[#6B6560] mt-3 pl-9">
@@ -267,7 +269,7 @@ export default function MCPPage() {
                       </pre>
                     </div>
                     <div className="absolute top-3 right-3">
-                      <CopyButton text={CLAUDE_DESKTOP_CONFIG} />
+                      <CopyButton text={CLAUDE_DESKTOP_CONFIG} label="desktop_config" />
                     </div>
                   </div>
                 </div>
@@ -297,7 +299,7 @@ export default function MCPPage() {
                     </pre>
                   </div>
                   <div className="absolute top-3 right-3">
-                    <CopyButton text={MCP_JSON_CONFIG} />
+                    <CopyButton text={MCP_JSON_CONFIG} label="mcp_json_config" />
                   </div>
                 </div>
                 <p className="text-xs text-[#6B6560] mt-3">
@@ -439,6 +441,7 @@ export default function MCPPage() {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#D4754E] hover:bg-[#C0653E] text-white rounded-full px-6 py-3 text-sm font-medium transition-all duration-200"
+            onClick={() => posthog.capture('mcp_contribute_clicked', { source: 'mcp_page' })}
           >
             Open Contribution Guide
           </a>

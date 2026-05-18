@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { Loader2, SlidersHorizontal } from 'lucide-react'
 import { useSearchParams } from 'next/navigation'
+import posthog from 'posthog-js'
 import gsap from 'gsap'
 import { useTools, useToolSearch } from '@/hooks/use-tools'
 import ToolCard from '@/components/ToolCard'
@@ -121,7 +122,7 @@ export default function Tools() {
             {categories.map((cat) => (
               <button
                 key={cat}
-                onClick={() => setActiveCategory(cat)}
+                onClick={() => { setActiveCategory(cat); if (cat !== 'All') posthog.capture('tools_category_filtered', { category: cat }) }}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
                   activeCategory === cat
                     ? 'bg-[#1A1A1A] text-white'
@@ -155,7 +156,7 @@ export default function Tools() {
               {pricingFilters.map((p) => (
                 <button
                   key={p}
-                  onClick={() => setActivePricing(p)}
+                  onClick={() => { setActivePricing(p); if (p !== 'All') posthog.capture('tools_pricing_filtered', { pricing: p }) }}
                   className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all duration-200 ${
                     activePricing === p
                       ? 'bg-[#1A1A1A] text-white'
@@ -236,6 +237,7 @@ export default function Tools() {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#D4754E] hover:bg-[#C0653E] text-white rounded-full px-6 py-3 text-sm font-medium transition-all duration-200"
+            onClick={() => posthog.capture('contribute_guide_clicked', { source: 'tools_page' })}
           >
             Open Contribution Guide
           </a>

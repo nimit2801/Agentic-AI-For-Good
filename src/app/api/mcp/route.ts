@@ -32,6 +32,7 @@ import {
   ListToolsRequestSchema,
 } from '@modelcontextprotocol/sdk/types.js'
 import { createServerSupabaseClient } from '@/lib/supabase-server'
+import { getPostHogClient } from '@/lib/posthog-server'
 
 export const dynamic = 'force-dynamic'
 export const maxDuration = 60
@@ -248,6 +249,14 @@ function createMcpServer() {
         default:
           result = `Unknown tool: ${name}`
       }
+
+      const posthog = getPostHogClient()
+      posthog.capture({
+        distinctId: 'mcp-api',
+        event: 'mcp_tool_called',
+        properties: { tool_name: name },
+      })
+      posthog.shutdown().catch(() => {})
 
       return { content: [{ type: 'text', text: result }] }
     } catch (err) {

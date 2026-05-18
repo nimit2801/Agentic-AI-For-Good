@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import Link from 'next/link'
+import posthog from 'posthog-js'
 import {
   ArrowLeft,
   Copy,
@@ -25,6 +26,7 @@ export default function ToolDetail({ tool }: ToolDetailProps) {
     navigator.clipboard.writeText(text)
     setCopied(true)
     setTimeout(() => setCopied(false), 2000)
+    posthog.capture('tool_install_copied', { tool_name: tool.name, tool_slug: tool.slug })
   }
 
   const pricingLabel = {
@@ -129,6 +131,7 @@ export default function ToolDetail({ tool }: ToolDetailProps) {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-[#D4754E] hover:bg-[#C0653E] text-white rounded-full px-5 py-2.5 text-sm font-medium transition-all duration-200"
+                onClick={() => posthog.capture('tool_website_clicked', { tool_name: tool.name, tool_slug: tool.slug })}
               >
                 <ExternalLink size={14} />
                 Visit Website
@@ -140,6 +143,7 @@ export default function ToolDetail({ tool }: ToolDetailProps) {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-[#1A1A1A] hover:bg-[#333] text-white rounded-full px-5 py-2.5 text-sm font-medium transition-all duration-200"
+                onClick={() => posthog.capture('tool_github_clicked', { tool_name: tool.name, tool_slug: tool.slug })}
               >
                 <Github size={14} />
                 GitHub
@@ -151,6 +155,7 @@ export default function ToolDetail({ tool }: ToolDetailProps) {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-white hover:bg-[#F5F1EB] text-[#1A1A1A] border border-[#1A1A1A]/10 rounded-full px-5 py-2.5 text-sm font-medium transition-all duration-200"
+                onClick={() => posthog.capture('tool_docs_clicked', { tool_name: tool.name, tool_slug: tool.slug })}
               >
                 <BookOpen size={14} />
                 Docs

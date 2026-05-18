@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useRef, useState } from 'react'
+import posthog from 'posthog-js'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
@@ -118,6 +119,7 @@ export default function Story() {
       if (res.ok) {
         setStorySubmitted(true)
         setStoryEmail('')
+        posthog.capture('newsletter_subscribed', { source: 'story-page' })
       }
     } finally {
       setStoryLoading(false)

@@ -3,6 +3,7 @@ import { NextResponse } from 'next/server'
 import { sendEmail, buildUnsubscribeUrl } from '@/lib/email'
 import WelcomeEmail from '@/emails/WelcomeEmail'
 import { createElement } from 'react'
+import { getPostHogClient } from '@/lib/posthog-server'
 
 export async function POST(req: Request) {
   const { email, source = 'website' } = await req.json()
@@ -19,6 +20,15 @@ export async function POST(req: Request) {
     return NextResponse.json({ message: 'Already subscribed' }, { status: 200 })
   }
   if (error) return NextResponse.json({ error: error.message }, { status: 500 })
+
+  // Track subscription server-side (non-blocking)
+  const posthog = getPostHogClient()
+  posthog.capture({
+    distinctId: email,
+    event: 'newsletter_subscribed',
+    properties: { source, email },
+  })
+  posthog.shutdown().catch(() => {})
 
   // Send welcome email (non-blocking — don't fail the subscribe if email fails)
   const unsubscribeUrl = buildUnsubscribeUrl(data?.unsubscribe_token ?? '')

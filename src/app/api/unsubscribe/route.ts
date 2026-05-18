@@ -1,6 +1,7 @@
 import { createServerSupabaseClient } from '@/lib/supabase-server'
 import { NextResponse } from 'next/server'
 import { redirect } from 'next/navigation'
+import { getPostHogClient } from '@/lib/posthog-server'
 
 export async function GET(req: Request) {
   const { searchParams } = new URL(req.url)
@@ -21,6 +22,14 @@ export async function GET(req: Request) {
     console.error('[unsubscribe] DB error:', error.message)
     return NextResponse.json({ error: 'Failed to unsubscribe' }, { status: 500 })
   }
+
+  const posthog = getPostHogClient()
+  posthog.capture({
+    distinctId: token,
+    event: 'newsletter_unsubscribed',
+    properties: { token },
+  })
+  posthog.shutdown().catch(() => {})
 
   redirect('/unsubscribed')
 }

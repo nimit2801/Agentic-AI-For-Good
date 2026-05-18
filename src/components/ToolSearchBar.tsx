@@ -2,6 +2,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { Search, X, Loader2 } from 'lucide-react'
 import Link from 'next/link'
+import posthog from 'posthog-js'
 import { useToolSearch } from '@/hooks/use-tools'
 import type { Tool } from '@/lib/supabase'
 
@@ -91,6 +92,7 @@ export default function ToolSearchBar({
               key={tool.id}
               href={`/tools/${tool.slug}`}
               className="flex items-center gap-3 px-4 py-3 hover:bg-[#F5F1EB] transition-colors border-b border-[#1A1A1A]/5 last:border-0"
+              onClick={() => posthog.capture('tool_search_result_clicked', { tool_name: tool.name, tool_slug: tool.slug, query: debouncedQuery })}
             >
               {tool.logo_url ? (
                 <img
@@ -118,6 +120,7 @@ export default function ToolSearchBar({
             <Link
               href={`/tools?q=${encodeURIComponent(debouncedQuery)}`}
               className="flex items-center justify-center gap-2 px-4 py-3 bg-[#F5F1EB] text-sm text-[#D4754E] font-medium hover:bg-[#EDE9E1] transition-colors"
+              onClick={() => posthog.capture('tool_searched', { query: debouncedQuery, result_count: results.length })}
             >
               View all results for &ldquo;{debouncedQuery}&rdquo;
             </Link>

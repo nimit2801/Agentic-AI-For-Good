@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
+import posthog from 'posthog-js'
 import { useAuth } from '@/hooks/use-auth'
 import { Loader2, ArrowRight, Lock } from 'lucide-react'
 
@@ -24,9 +25,12 @@ export default function AdminLogin() {
     setSubmitting(true)
     try {
       await signIn(email, password)
+      posthog.identify(email, { email })
+      posthog.capture('admin_signed_in', { email })
       router.replace('/admin/stories')
     } catch (err: unknown) {
       setError(err instanceof Error ? err.message : 'Authentication failed')
+      posthog.captureException(err)
     } finally {
       setSubmitting(false)
     }

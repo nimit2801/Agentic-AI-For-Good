@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { Star, GitBranch, ExternalLink } from 'lucide-react'
+import posthog from 'posthog-js'
 import type { Tool } from '@/lib/supabase'
 
 interface ToolCardProps {
@@ -20,6 +21,7 @@ export default function ToolCard({ tool, style }: ToolCardProps) {
       href={`/tools/${tool.slug}`}
       className="group bg-white rounded-2xl overflow-hidden border border-[#1A1A1A]/5 hover:border-[#D4754E]/30 transition-all duration-300 hover:shadow-lg flex flex-col"
       style={style}
+      onClick={() => posthog.capture('tool_card_clicked', { tool_name: tool.name, tool_slug: tool.slug, tool_category: tool.category, tool_pricing: tool.pricing })}
     >
       {/* Card Header */}
       <div className="p-6 flex-1">
