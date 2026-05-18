@@ -1,0 +1,28 @@
+name: HelixDB
+description: An open-source graph-vector database built from scratch in Rust. Combines application database, vector database, and graph database capabilities into a single unified platform for AI and agentic applications.
+tagline: The graph-vector database built in Rust for AI backends
+
+github_url: https://github.com/HelixDB/helix-db
+website_url: https://helix-db.com
+docs_url: https://docs.helix-db.com
+
+install_command: curl -sSL "https://install.helix-db.com" | bash
+
+category: Vector DB
+tags: [rust, vector-database, graph-database, database, ai-backend, rag]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Building the backend for AI, agent, or RAG applications traditionally requires stitching together
+  multiple storage systems — an application database, a vector database, and a graph database — plus
+  application layers to manage them. HelixDB eliminates that fragmentation by providing a single
+  platform that natively supports graph and vector data models alongside KV, document, and relational
+  data, all built in Rust for performance.
+
+use_cases:
+  - Power AI application backends with unified graph, vector, and relational storage
+  - Build agent memory and tool-calling layers that traverse relationships and embeddings
+  - Implement RAG pipelines combining vector search, keyword search, and graph traversals
+  - Prototype and deploy low-latency graph and vector workloads without managing multiple databases
