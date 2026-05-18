@@ -1,0 +1,32 @@
+name: Superagent
+description: An open-source SDK for AI agent safety. Block prompt injections, redact PII and secrets, scan repositories for threats, and run red team scenarios against your agents.
+tagline: Make your AI apps safe with open-source guardrails and red teaming
+
+github_url: https://github.com/superagent-ai/superagent
+website_url: https://superagent.sh
+docs_url: https://docs.superagent.sh
+
+install_command: |
+  pip install safety-agent
+  npm install safety-agent
+
+category: Other
+tags: [security, guardrails, prompt-injection, ai-safety, red-team, pii-redaction]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Modern AI apps rely on agents that read data, follow instructions, call tools, and produce outputs
+  users trust. These systems fail in ways traditional software does not—prompt injections, data leakage,
+  unsafe tool actions, workflow failures, and compliance violations. Superagent provides open-source
+  guardrails that detect and block prompt injections, redact sensitive information, scan codebases for
+  agent-targeted attacks, and enable red-team testing so developers can embed safety directly into
+  their apps and prove compliance to customers.
+
+use_cases:
+  - Detect and block prompt injections, malicious instructions, and unsafe tool calls at runtime
+  - Automatically redact PII, PHI, and secrets from agent inputs and outputs
+  - Scan repositories for AI agent-targeted attacks such as repo poisoning and malicious instructions
+  - Run automated red-team scenarios against production agents to find vulnerabilities before attackers do
+  - Secure RAG pipelines and image uploads against adversarial inputs
