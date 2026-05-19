@@ -1,0 +1,27 @@
+name: PyTorch Lightning
+description: A lightweight PyTorch wrapper that abstracts away boilerplate code for training, validating, and deploying deep learning models at any scale from a single GPU to thousands.
+tagline: Scale PyTorch models from one GPU to thousands with zero boilerplate
+
+github_url: https://github.com/Lightning-AI/pytorch-lightning
+website_url: https://lightning.ai
+docs_url: https://pytorch-lightning.readthedocs.io
+
+install_command: pip install pytorch-lightning
+
+category: Dev Tools
+tags: [pytorch, deep-learning, training, gpu, distributed, mlops, python]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Training deep learning models with PyTorch requires writing repetitive boilerplate for training
+  loops, distributed training, mixed precision, checkpointing, and logging. PyTorch Lightning
+  eliminates this overhead by providing a structured approach where researchers define the model
+  logic and Lightning handles the engineering complexity of scaling across GPUs and clusters.
+
+use_cases:
+  - Train large language models and computer vision models with automatic distributed training across GPUs
+  - Prototype research ideas faster by focusing on model architecture instead of training loop boilerplate
+  - Deploy production-ready AI models with built-in checkpointing, logging, and experiment tracking integrations
+  - Scale experiments from a single GPU to multi-node clusters without changing model code
