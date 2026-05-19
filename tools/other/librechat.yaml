@@ -1,0 +1,30 @@
+name: LibreChat
+description: A self-hosted, open-source AI chat platform that unifies multiple AI providers (OpenAI, Anthropic, Google, Azure, and custom endpoints) in a single privacy-focused interface with agents, MCP support, artifacts, and multimodal capabilities.
+tagline: Self-hosted AI chat platform unifying all major AI providers
+
+github_url: https://github.com/danny-avila/LibreChat
+website_url: https://librechat.ai
+docs_url: https://www.librechat.ai/docs
+
+install_command: |
+  git clone https://github.com/danny-avila/LibreChat.git
+  cd LibreChat && cp .env.example .env
+  docker compose up -d
+
+category: Other
+tags: [self-hosted, chatgpt-clone, ai-interface, privacy, open-source, agents, mcp]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Using multiple AI services requires switching between different apps and interfaces, raising
+  privacy concerns and fragmenting conversation history. LibreChat solves this by providing a
+  single self-hosted platform that connects to all major AI providers while keeping data private,
+  supporting AI agents, code artifacts, multimodal chat, and enterprise authentication.
+
+use_cases:
+  - Self-host a private ChatGPT alternative that connects to OpenAI, Claude, Gemini, and local models
+  - Build and deploy custom AI agents with MCP server support for tool use and automation
+  - Enable team collaboration with shared presets, conversation branching, and multi-user auth
+  - Generate and edit code artifacts, images, and documents directly within chat conversations
