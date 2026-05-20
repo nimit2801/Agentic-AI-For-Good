@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import Navigation from '@/components/Navigation'
+import AnnouncementBar from '@/components/AnnouncementBar'
 import Footer from '@/sections/Footer'
 import ScrollToTop from '@/components/ScrollToTop'
 import { PostHogProvider } from '@/components/PostHogProvider'
@@ -50,6 +51,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
      <body>
         <PostHogProvider>
        <div className="grain-overlay" aria-hidden="true" />
+       <AnnouncementBar />
        <ScrollToTop />
        <Navigation />
        <main>{children}</main>

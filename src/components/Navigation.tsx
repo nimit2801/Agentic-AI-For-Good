@@ -46,7 +46,7 @@ export default function Navigation() {
     <>
       {/* Navigation */}
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        className={`fixed top-[40px] left-0 right-0 z-50 transition-all duration-500 ${
           isScrolled || !isHome
             ? 'bg-[#F5F1EB]/90 backdrop-blur-md border-b border-[#1A1A1A]/5'
             : 'bg-transparent'
@@ -120,7 +120,7 @@ export default function Navigation() {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed inset-0 z-40 bg-[#F5F1EB] transition-transform duration-500 lg:hidden ${
+        className={`fixed inset-x-0 top-[40px] bottom-0 z-40 bg-[#F5F1EB] transition-transform duration-500 lg:hidden ${
           isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
