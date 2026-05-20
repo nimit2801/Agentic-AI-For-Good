@@ -1,0 +1,21 @@
+name: SuperAGI
+description: A dev-first open-source autonomous AI agent framework that enables developers to build, manage, and run useful autonomous agents quickly and reliably.
+problem_solved: Building autonomous AI agents from scratch requires orchestrating multiple components like memory, tools, planning, and execution. SuperAGI provides a complete framework with pre-built agent templates, tool marketplace, and scalable infrastructure so developers can focus on agent logic instead of plumbing.
+use_cases:
+  - Build autonomous research agents that gather and synthesize information
+  - Create workflow automation agents that integrate with APIs and databases
+  - Deploy multi-agent systems that collaborate on complex tasks
+  - Prototype AI agents rapidly using pre-built templates and tools
+github_url: https://github.com/TransformerOptimus/SuperAGI
+website_url: https://superagi.com/
+docs_url: https://superagi.com/docs/
+install_command: |
+  git clone https://github.com/TransformerOptimus/SuperAGI.git
+  cd SuperAGI
+  cp config_template.yaml config.yaml
+  docker compose -f docker-compose-dev.yaml up -d
+category: Agents
+tags: [agents, autonomous, framework, python, open-source]
+pricing: free
+is_open_source: true
+license: MIT

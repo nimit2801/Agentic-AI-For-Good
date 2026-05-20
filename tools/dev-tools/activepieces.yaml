@@ -1,0 +1,21 @@
+name: Activepieces
+description: An open-source no-code AI automation platform and Zapier alternative. Features 280+ integration pieces, native AI pieces, and automatic MCP server generation for use with Claude Desktop, Cursor, and Windsurf.
+problem_solved: Business teams rely on expensive proprietary automation tools like Zapier that charge per-task and lock integrations behind paywalls. Activepieces is an open-source alternative with 280+ community-contributed pieces, self-hosting for data privacy, and AI-native flows that automatically expose integrations as MCP servers for LLM tools.
+use_cases:
+  - Build automated workflows between SaaS apps without writing code
+  - Create AI-powered flows that use LLMs to process and route data
+  - Self-host automation infrastructure for enterprise data privacy
+  - Expose integrations as MCP servers for Claude Desktop and Cursor
+github_url: https://github.com/activepieces/activepieces
+website_url: https://www.activepieces.com
+docs_url: https://www.activepieces.com/docs
+install_command: |
+  git clone https://github.com/activepieces/activepieces.git
+  cd activepieces
+  cp .env.example .env
+  docker compose up -d
+category: Dev Tools
+tags: [automation, no-code, mcp, integrations, workflow]
+pricing: free
+is_open_source: true
+license: MIT
