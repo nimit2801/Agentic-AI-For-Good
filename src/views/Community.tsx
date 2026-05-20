@@ -41,7 +41,7 @@ const links = [
   },
   {
     label: 'Offline Meetup',
-    description: 'Come build in person — join our next community event.',
+    description: 'Our first physical meetup! Sat May 23, 4-7 PM in Bengaluru. Co-hosted with project humans in the loop. Builders, founders, demos, conversations.',
     href: 'https://luma.com/4xc1g1hc',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
