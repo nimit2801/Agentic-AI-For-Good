@@ -1,0 +1,29 @@
+name: OpenPipe
+description: OpenPipe is an open-source fine-tuning platform that lets developers replace expensive LLM prompts with cheaper, faster fine-tuned models. It automatically converts GPT-4 prompts into fine-tuned open-source models like Llama 3, cutting costs by 10-100x while maintaining quality.
+tagline: Replace expensive LLM prompts with fine-tuned models at 10-100x lower cost
+
+github_url: https://github.com/OpenPipe/OpenPipe
+website_url: https://openpipe.ai
+docs_url: https://docs.openpipe.ai
+
+install_command: |
+  pip install openpipe
+  npm install --save openpipe
+
+category: Fine-tuning
+tags: [fine-tuning, llm, cost-optimization, model-hosting, open-source]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  High API costs and latency from using expensive LLMs like GPT-4 for every production
+  query quickly adds up. OpenPipe enables teams to fine-tune smaller, open-source models
+  on their specific task data, achieving comparable or better quality at a fraction of the
+  cost and latency, with a streamlined pipeline from data collection to model deployment.
+
+use_cases:
+  - Replace GPT-4 prompts with fine-tuned models for production cost savings of 10-100x
+  - Build domain-specific text classification and extraction models from existing prompt logs
+  - Create consistent-format chatbots for customer support automation with lower latency
+  - Reduce inference costs for high-volume AI applications by switching to open-source models
