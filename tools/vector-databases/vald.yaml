@@ -1,0 +1,30 @@
+name: Vald
+description: Vald is a highly scalable, distributed vector search engine built for cloud-native environments on Kubernetes. It provides approximate nearest neighbor search on dense vectors with automatic indexing, index backup to object storage, fault tolerance, and horizontal scaling for billions of feature vectors.
+tagline: Kubernetes-native distributed vector search engine for billion-scale similarity
+
+github_url: https://github.com/vdaas/vald
+website_url: https://vald.vdaas.org
+docs_url: https://github.com/vdaas/vald#readme
+
+install_command: |
+  helm repo add vald https://vald.vdaas.org/charts
+  helm install vald-cluster vald/vald
+
+category: Vector DB
+tags: [vector-search, kubernetes, similarity-search, cloud-native, distributed]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Scaling vector similarity search to billions of vectors while maintaining high
+  availability, disaster recovery, and low latency is operationally complex. Vald solves
+  this with a Kubernetes-native architecture that handles automatic vector indexing,
+  load-balanced query distribution, index backup to object storage, and transparent
+  horizontal scaling — all without manual ops intervention.
+
+use_cases:
+  - Semantic image search at scale for e-commerce and media platforms with billions of vectors
+  - Real-time similar item recommendation in production Kubernetes environments
+  - Large-scale document retrieval for enterprise RAG pipelines with guaranteed uptime
+  - High-dimensional anomaly detection for security and monitoring applications
