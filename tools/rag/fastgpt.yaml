@@ -1,0 +1,42 @@
+name: FastGPT
+description: Open-source knowledge-based AI platform that provides out-of-the-box data processing, RAG retrieval, and visual AI workflow orchestration for building complex question-answering systems. Supports multi-source document ingestion, API integration, and team collaboration.
+tagline: Open-source AI knowledge base platform with visual workflow orchestration
+
+github_url: https://github.com/labring/FastGPT
+website_url: https://fastgpt.io/
+docs_url: https://doc.fastgpt.io/
+
+install_command: |
+  git clone https://github.com/labring/FastGPT.git
+  cd FastGPT/projects/app
+  cp .env.example .env
+  docker compose up -d
+
+category: RAG
+tags:
+  - rag
+  - knowledge-base
+  - qa
+  - document-retrieval
+  - llm
+  - workflow
+  - docker
+pricing: freemium
+is_open_source: true
+license: Apache 2.0 with additional conditions (FastGPT Open Source License)
+
+problem_solved: |
+  Building production-ready RAG systems requires significant engineering effort to
+  integrate document processing, embedding pipelines, vector storage, LLM
+  orchestration, and user management into a cohesive application. FastGPT solves
+  this by providing an all-in-one open-source platform with visual workflow
+  orchestration, automated data processing, and knowledge base management,
+  enabling teams to deploy intelligent Q&A applications without extensive
+  engineering effort.
+
+use_cases:
+  - Deploy a customer service chatbot that answers from your product documentation and support articles
+  - Create an internal knowledge base Q&A system for employee onboarding and policy lookup
+  - Build a document analysis and retrieval system for research teams and legal departments
+  - Set up an educational tutoring assistant that provides answers from course materials
+  - Orchestrate complex multi-step AI workflows with a visual drag-and-drop interface

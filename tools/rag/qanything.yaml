@@ -1,0 +1,40 @@
+name: QAnything
+description: Open-source RAG framework from NetEase that enables question answering over any document format. Supports over 10 file types including PDF, Word, Excel, PPT, and images, with hybrid retrieval combining semantic search and keyword matching for accurate answers.
+tagline: Question answering over any document format with hybrid retrieval
+
+github_url: https://github.com/netease-youdao/QAnything
+website_url: https://qanything.ai/
+docs_url: https://qanything.ai/docs
+
+install_command: |
+  git clone https://github.com/netease-youdao/QAnything.git
+  cd QAnything
+  docker compose up -d
+
+category: RAG
+tags:
+  - rag
+  - document-qa
+  - pdf
+  - retrieval
+  - knowledge-base
+  - docker
+  - hybrid-search
+pricing: freemium
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Organizations need to answer questions accurately across diverse document
+  formats (PDFs, Word docs, Excel spreadsheets, presentations, images) but
+  existing RAG solutions often struggle with complex table extraction, formula
+  rendering, and multi-format support. QAnything solves this with a unified
+  framework that handles 10+ file types, uses hybrid retrieval combining
+  semantic and keyword search, and supports local deployment for data privacy.
+
+use_cases:
+  - Enable question answering over a collection of PDF technical manuals and specifications
+  - Build a searchable knowledge base from mixed-format enterprise documents and spreadsheets
+  - Extract and query tabular data from financial reports and presentations
+  - Deploy a private on-premises Q&A system that keeps sensitive documents within company networks
+  - Process scanned documents with OCR-powered retrieval for historical archives
