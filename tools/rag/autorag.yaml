@@ -1,0 +1,38 @@
+name: AutoRAG
+description: >
+  An open-source AutoML framework for Retrieval-Augmented Generation (RAG)
+  evaluation and optimization. Automatically evaluates hundreds of RAG module
+  combinations — retrievers, rerankers, chunking strategies, embeddings, and
+  generators — against your own data to find the optimal pipeline for your
+  specific use case. Supports local and API-based models with comprehensive
+  benchmarking and analysis reports.
+tagline: AutoML for RAG — automatically find the optimal pipeline for your data
+github_url: https://github.com/Marker-Inc-Korea/AutoRAG
+website_url: https://marker-inc-korea.github.io/AutoRAG/
+docs_url: https://marker-inc-korea.github.io/AutoRAG/
+install_command: pip install AutoRAG
+category: RAG
+tags:
+  - rag
+  - automl
+  - evaluation
+  - optimization
+  - benchmark
+  - pipeline
+  - python
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: >
+  Building a RAG system requires choosing from dozens of possible module
+  combinations — retrievers, rerankers, chunk sizes, embedding models, and
+  generators — and the optimal combination varies by dataset and use case.
+  Manually testing all permutations is tedious, slow, and error-prone. AutoRAG
+  automates this with AutoML-style evaluation, running controlled experiments
+  across module combinations, scoring results, and identifying the pipeline
+  that delivers the best performance for your specific data and requirements.
+use_cases:
+  - Automatically evaluate and select the optimal RAG pipeline configuration for enterprise document Q&A systems without manual trial-and-error
+  - Benchmark different embedding models, retrievers, and generators against your proprietary dataset to maximize retrieval accuracy and answer quality
+  - Continuously optimize production RAG pipelines by re-running evaluations when new modules, models, or chunking strategies become available
+  - Support academic research with reproducible, data-driven RAG pipeline optimization experiments across standardized benchmarks

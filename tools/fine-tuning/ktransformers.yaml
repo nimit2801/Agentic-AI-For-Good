@@ -1,0 +1,38 @@
+name: KTransformers
+description: >
+  A flexible framework for efficient LLM inference and fine-tuning through CPU-GPU
+  heterogeneous computing. Enables running and fine-tuning ultra-large MoE models
+  like DeepSeek-V4, DeepSeek-R1, Qwen3-MoE, and Kimi-K2 on consumer hardware by
+  offloading computations between CPU RAM and GPU VRAM. Integrates with LLaMA-Factory
+  for SFT/DPO fine-tuning with INT4/INT8 quantization and AMX/AVX acceleration.
+tagline: Run and fine-tune 100B+ MoE models on consumer GPUs via CPU-GPU heterogeneous computing
+github_url: https://github.com/kvcache-ai/ktransformers
+website_url: https://kvcache-ai.github.io/ktransformers/
+docs_url: https://kvcache-ai.github.io/ktransformers/
+install_command: pip install ktransformers
+category: Fine-tuning
+tags:
+  - python
+  - llm
+  - fine-tuning
+  - inference
+  - moe
+  - quantization
+  - deepseek
+  - consumer-gpu
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: >
+  Ultra-large MoE models like DeepSeek-V3/R1 require multiple high-end GPUs with
+  80GB+ VRAM each, making them inaccessible to individual developers. KTransformers
+  solves this by enabling CPU-GPU hybrid execution — placing hot experts on GPU and
+  cold experts on CPU RAM — allowing 100B+ parameter models to run and fine-tune on
+  a single consumer GPU (24GB VRAM) with system DRAM. It integrates with
+  LLaMA-Factory for SFT/DPO, supports INT4/INT8 quantization, and achieves 3-28x
+  speedup over pure offloading approaches.
+use_cases:
+  - Fine-tune DeepSeek-V3/R1 on a single RTX 4090 using CPU-GPU heterogeneous MoE expert offloading
+  - Run production inference on 200B+ MoE models locally by routing hot experts to GPU and cold experts to system RAM
+  - Fine-tune large MoE models with LoRA/QLoRA via LLaMA-Factory integration using INT8/INT4 quantized CPU kernels
+  - Deploy multi-concurrent inference serving for Kimi-K2, DeepSeek, and Qwen3-MoE on commodity hardware
