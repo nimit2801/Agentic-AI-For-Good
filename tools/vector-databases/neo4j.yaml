@@ -1,0 +1,40 @@
+name: Neo4j
+description: Leading graph database with native vector search capabilities for AI applications. Stores and queries highly connected data while supporting vector embeddings for semantic similarity search, making it a powerful choice for knowledge graphs combined with RAG workflows.
+tagline: Graph database with vector search for AI-powered knowledge graphs
+
+github_url: https://github.com/neo4j/neo4j
+website_url: https://neo4j.com/
+docs_url: https://neo4j.com/docs/
+
+install_command: |
+  docker run --publish=7474:7474 --publish=7687:7687 neo4j:latest
+
+category: Vector DB
+tags:
+  - graph-database
+  - vector-search
+  - knowledge-graph
+  - rag
+  - graph-rag
+  - cypher
+  - docker
+  - enterprise
+pricing: freemium
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Traditional RAG pipelines treat documents as isolated chunks, missing the
+  rich relationships between entities, concepts, and data points. Neo4j solves
+  this by combining a native graph database with vector search capabilities,
+  enabling GraphRAG architectures that leverage both semantic similarity and
+  relationship traversal. This allows AI applications to answer questions that
+  require multi-hop reasoning across connected data — something flat vector
+  stores cannot do efficiently.
+
+use_cases:
+  - Build a GraphRAG system that traverses entity relationships for multi-hop question answering
+  - Store and query knowledge graphs alongside vector embeddings for hybrid AI retrieval
+  - Implement recommendation systems that combine collaborative filtering with semantic similarity
+  - Create a fraud detection pipeline that analyzes transaction patterns and entity relationships in real time
+  - Power a conversational AI that understands connections between people, places, and events in your data
