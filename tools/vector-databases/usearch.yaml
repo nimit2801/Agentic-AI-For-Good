@@ -1,0 +1,41 @@
+name: USearch
+description: Compact, high-performance vector search engine implementing the HNSW algorithm for fast approximate nearest neighbor search. Ships as a single-file C++11 header with bindings for 12+ programming languages and supports arbitrary user-defined distance metrics.
+tagline: Single-file vector search with custom metrics and multi-language support
+
+github_url: https://github.com/unum-cloud/USearch
+website_url: https://www.unum.cloud/usearch
+docs_url: https://unum-cloud.github.io/USearch/
+
+install_command: pip install usearch
+
+category: Vector DB
+tags:
+  - vector-search
+  - hnsw
+  - nearest-neighbor
+  - similarity-search
+  - embeddings
+  - cpp
+  - python
+  - javascript
+  - rust
+  - java
+pricing: free
+is_open_source: true
+license: Apache 2.0
+
+problem_solved: |
+  Implementing vector similarity search often requires either heavyweight database systems with
+  significant operational overhead or limited libraries that only support standard distance metrics
+  (Euclidean, cosine). USearch solves this by providing a single-file, embeddable vector search
+  engine that supports arbitrary user-defined metrics, runs across 12+ programming languages, and
+  maintains performance competitive with FAISS while being dramatically simpler to integrate. Its
+  compact design makes it ideal for edge devices, mobile apps, and scenarios where a full vector
+  database would be overkill.
+
+use_cases:
+  - Add semantic search to a mobile or web application with minimal dependencies
+  - Create a cross-modal search system using custom distance functions for text, images, and audio
+  - Build a recommendation engine with domain-specific similarity metrics
+  - Embed vector search directly into a game engine or IoT device
+  - Prototype and benchmark approximate nearest neighbor algorithms before committing to a full DB

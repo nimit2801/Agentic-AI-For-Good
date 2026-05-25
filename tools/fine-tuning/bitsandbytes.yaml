@@ -1,0 +1,38 @@
+name: bitsandbytes
+description: k-bit quantization library for PyTorch that enables large language models on consumer-grade hardware. Provides 8-bit optimizers, LLM.int8() inference, and 4-bit QLoRA quantization to dramatically reduce memory consumption for LLM training and inference.
+tagline: Accessible LLMs via k-bit quantization for PyTorch
+
+github_url: https://github.com/bitsandbytes-foundation/bitsandbytes
+website_url: https://huggingface.co/docs/bitsandbytes
+docs_url: https://huggingface.co/docs/bitsandbytes
+
+install_command: pip install bitsandbytes
+
+category: Fine-tuning
+tags:
+  - quantization
+  - fine-tuning
+  - pytorch
+  - qlora
+  - memory-optimization
+  - llm
+  - gpu
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Training and running large language models requires massive GPU memory that
+  is out of reach for most developers and organizations. bitsandbytes solves
+  this by providing k-bit quantization techniques — 8-bit optimizers for
+  training, LLM.int8() for inference, and 4-bit QLoRA for fine-tuning — that
+  dramatically reduce memory usage while maintaining model quality. This makes
+  it feasible to fine-tune and run large models on consumer GPUs, democratizing
+  access to state-of-the-art AI.
+
+use_cases:
+  - Fine-tune a 7B+ parameter LLM on a single consumer GPU using QLoRA 4-bit quantization
+  - Run inference on large models with half the memory using LLM.int8() without quality degradation
+  - Train large models with 8-bit optimizers that save up to 75% memory while matching 32-bit performance
+  - Enable LLM workloads on resource-constrained environments like laptops or edge devices
+  - Integrate memory-efficient training into any PyTorch pipeline with a simple library import
