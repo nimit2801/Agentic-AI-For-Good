@@ -1,0 +1,40 @@
+name: LoRAX
+description: >-
+  LoRAX (LoRA eXchange) is a multi-LoRA inference server that allows you to serve thousands of
+  fine-tuned LLMs on a single GPU. Dynamically load and swap LoRA adapters per-request without
+  blocking concurrent inference, dramatically reducing serving costs while maintaining high
+  throughput and low latency for fine-tuned model deployments.
+tagline: Serve thousands of fine-tuned LLMs on a single GPU
+
+github_url: https://github.com/predibase/lorax
+website_url: https://loraexchange.ai
+docs_url: https://predibase.github.io/lorax/
+install_command: |
+  docker run --gpus all -p 8080:80 ghcr.io/predibase/lorax:latest --model-id <BASE_MODEL>
+
+category: LLM
+tags:
+  - llm
+  - inference
+  - serving
+  - lora
+  - fine-tuning
+  - model-serving
+  - open-source
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  Serving fine-tuned LLMs at scale is prohibitively expensive because each fine-tuned variant
+  typically requires its own GPU or instance — a single customer-facing use case can require dozens
+  of models with minor variations. LoRAX solves this by dynamically loading LoRA adapters per-
+  request from a shared base model, enabling thousands of fine-tuned models to share a single GPU
+  with heterogeneous continuous batching, reducing serving costs by 10-100x.
+
+use_cases:
+  - "Serve thousands of customer-specific fine-tuned models from a single GPU with per-request adapter switching"
+  - "Deploy a multi-tenant LLM API where each tenant brings their own custom fine-tuned model"
+  - "Run batch inference over a large collection of fine-tuned adapters for evaluation or research"
+  - "Merge multiple LoRA adapters per request to create powerful ensemble predictions"
+  - "Enable A/B testing of fine-tuned model variants in production without provisioning separate infrastructure"
