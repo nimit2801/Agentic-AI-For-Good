@@ -1,0 +1,35 @@
+name: Liger-Kernel
+description: >
+  A collection of efficient Triton kernels for LLM training, developed by
+  LinkedIn. Liger-Kernel increases multi-GPU training throughput by 20% and
+  reduces memory usage by 60% through kernel fusion and chunking. Supports
+  RMSNorm, RoPE, SwiGLU, CrossEntropy, and alignment losses like DPO, ORPO,
+  and SimPO with up to 80% memory savings. Compatible with Hugging Face
+  Transformers, FSDP, DeepSpeed, Axolotl, and LLaMA-Factory.
+problem_solved: >
+  LLM fine-tuning is severely bottlenecked by GPU memory limits and slow
+  throughput, especially with long context lengths and large vocabularies.
+  Liger-Kernel solves this by providing fused, exact Triton kernels that
+  reduce memory usage by up to 60% and increase multi-GPU training throughput
+  by 20%, enabling larger batch sizes, longer sequences, and more efficient
+  training on existing hardware without approximations.
+tagline: Accelerate LLM fine-tuning with memory-efficient Triton kernels — 20% faster, 60% less memory
+use_cases:
+  - Accelerating LLM fine-tuning on multi-GPU setups with FSDP or DeepSpeed
+  - Reducing memory footprint for long-context training with large vocabularies
+  - Optimizing post-training alignment using memory-efficient DPO, ORPO, or SimPO losses
+  - Composing custom models with fused Triton kernels for faster training and inference
+category: Fine-tuning
+tags:
+  - fine-tuning
+  - llm-training
+  - gpu-optimization
+  - memory-efficiency
+  - deep-learning
+  - kernel-fusion
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+github_url: https://github.com/linkedin/Liger-Kernel
+website_url: https://linkedin.github.io/Liger-Kernel/
+install_command: pip install liger-kernel
