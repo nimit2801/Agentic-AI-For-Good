@@ -1,0 +1,41 @@
+name: LlamaEdge
+description: >-
+  LlamaEdge makes it easy to run LLM inference apps and create OpenAI-compatible API services for
+  open-source LLMs locally or on the edge. Built on WasmEdge, it provides a cross-platform, portable
+  runtime for running GGUF models — supporting text generation, embeddings, speech-to-text, text-to-
+  speech, image generation, and multimodal models from a single lightweight binary.
+tagline: Run LLM inference apps locally or on the edge
+
+github_url: https://github.com/LlamaEdge/LlamaEdge
+website_url: https://llamaedge.com
+docs_url: https://llamaedge.com/docs
+install_command: |
+  curl -sSf https://raw.githubusercontent.com/WasmEdge/WasmEdge/master/utils/install_v2.sh | bash
+  curl -LO https://github.com/LlamaEdge/LlamaEdge/releases/latest/download/llama-chat.wasm
+
+category: LLM
+tags:
+  - llm
+  - inference
+  - edge
+  - wasm
+  - local
+  - open-source
+  - gguf
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  Running LLMs locally is often tied to Python environments, GPU drivers, and heavy dependencies
+  that conflict across projects and operating systems. LlamaEdge solves this by packaging LLM
+  inference as cross-platform WebAssembly applications that run anywhere — Mac, Windows, Linux,
+  or edge devices — with a single binary. No Python, no CUDA toolchain, no environment hell.
+  Just download a GGUF model and a Wasm app, and run.
+
+use_cases:
+  - "Run OpenAI-compatible LLM API servers locally without Python or complex GPU setup"
+  - "Deploy LLM inference on edge devices and ARM-based infrastructure where Python runtimes are impractical"
+  - "Serve multiple model types — text, embedding, speech, image — from a single portable runtime"
+  - "Fine-tune and serve customized open-source LLMs locally for privacy-sensitive applications"
+  - "Run batch inference on headless servers with zero runtime dependencies beyond WasmEdge"

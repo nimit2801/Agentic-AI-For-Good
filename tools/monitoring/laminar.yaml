@@ -1,0 +1,40 @@
+name: Laminar
+description: >-
+  Laminar is an open-source observability platform purpose-built for AI agents. It provides
+  OpenTelemetry-native tracing, evaluations, AI monitoring with natural language signals, and
+  customizable dashboards — all accessible via SQL. One line of code auto-traces Vercel AI SDK,
+  Browser Use, Stagehand, LangChain, OpenAI, Anthropic, Gemini, and more.
+tagline: Open-source observability for AI agents
+
+github_url: https://github.com/lmnr-ai/lmnr
+website_url: https://laminar.sh
+docs_url: https://laminar.sh/docs/tracing/introduction
+install_command: |
+  pip install lmnr
+  npm install @lmnr/lmnr
+
+category: Monitoring
+tags:
+  - observability
+  - monitoring
+  - ai-agents
+  - tracing
+  - evaluations
+  - open-source
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  AI agents are complex, long-running, and non-deterministic — traditional monitoring tools designed
+  for deterministic API calls and CRUD apps fall short. Developers can't trace agentic decision
+  loops, evaluate tool-call quality, or detect regressions across versions. Laminar solves this with
+  OpenTelemetry-native tracing purpose-built for agentic workflows, natural-language monitoring
+  signals, and integrated evals that let you ship reliable agents 10x faster.
+
+use_cases:
+  - "Trace complex multi-step agentic workflows with OpenTelemetry-native instrumentation in one line of code"
+  - "Run evaluations on agent outputs and compare results across different model versions or configurations"
+  - "Define custom monitoring signals with natural language to track issues, logical errors, and agent behavior"
+  - "Query all traces, metrics, and events with a built-in SQL editor for deep debugging and analysis"
+  - "Build custom dashboards to visualize agent performance and reliability over time at scale"
