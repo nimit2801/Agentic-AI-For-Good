@@ -1,0 +1,37 @@
+name: Mistral FineTune
+description: >
+  Mistral AI's managed fine-tuning service on la Plateforme that provides
+  supervised fine-tuning (SFT) for Mistral's frontier models including Mistral
+  Large, Mistral Nemo, Codestral, and Ministral. Supports both text and vision
+  model fine-tuning via REST API or AI Studio interface, uses LoRA-based
+  efficient training, accepts JSONL datasets in conversational or function-calling
+  formats, and automatically deploys the fine-tuned model for inference.
+problem_solved: >
+  Enables developers and enterprises to customize Mistral's state-of-the-art
+  models on their own proprietary data without managing GPU infrastructure or
+  writing custom training code. Bridges the gap between generic pre-trained
+  models and domain-specific requirements through managed fine-tuning for
+  improved accuracy, controlled output formatting, and reduced inference cost
+  via model distillation.
+tagline: Customize Mistral AI's frontier models with your own data — no infrastructure needed
+use_cases:
+  - Domain-specific fine-tuning on proprietary healthcare, legal, or financial datasets for specialized terminology and compliance
+  - Knowledge distillation from larger frontier models (Mistral Large) to smaller models (Ministral) for cost-effective inference
+  - Output formatting and brand voice adaptation for customer-facing chatbots and content generation
+  - Text classification via Classifier Factory from labeled datasets without writing training code
+category: Fine-tuning
+tags:
+  - fine-tuning
+  - llm
+  - api
+  - sft
+  - model-customization
+  - lora
+  - managed-service
+pricing: paid
+is_open_source: false
+license: Proprietary
+github_url: https://github.com/mistralai/mistral-finetune
+website_url: https://mistral.ai
+docs_url: https://docs.mistral.ai/capabilities/finetuning/
+install_command: pip install mistralai
