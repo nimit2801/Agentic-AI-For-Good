@@ -1,0 +1,25 @@
+name: LLM Foundry
+description: An open-source framework by MosaicML (Databricks) for training, fine-tuning, evaluating, and deploying large language models. Built on Composer, it provides efficient tooling including Flash Attention, ALiBi, and Mixture-of-Experts architectures, powering models like DBRX and MPT.
+tagline: Open-source LLM training, fine-tuning, evaluation and deployment framework
+
+github_url: https://github.com/mosaicml/llm-foundry
+website_url: https://github.com/mosaicml/llm-foundry
+docs_url: https://docs.mosaicml.com/en/latest/
+
+install_command: pip install llm-foundry
+
+category: Fine-tuning
+tags: [deep-learning, llm, pytorch, mosaicml, databricks, fine-tuning, training, evaluation]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Training and fine-tuning large language models requires complex distributed infrastructure — setting up multi-GPU training loops, gradient checkpointing, mixed precision, and evaluation pipelines is time-consuming and error-prone. LLM Foundry solves this by providing a complete, production-tested toolkit that handles distributed training, fine-tuning (including LoRA/QLoRA), benchmark evaluation, and model deployment with a clean YAML-based configuration system, letting teams focus on model architecture and data rather than infrastructure.
+
+use_cases:
+  - Pre-train custom LLMs from scratch using state-of-the-art architectures like MPT and DBRX with Flash Attention and MoE
+  - Fine-tune open-source models (Llama, MPT) on domain-specific datasets with LoRA and QLoRA for specialized tasks
+  - Evaluate LLMs on academic benchmarks like MMLU, HellaSwag, and Winograd with built-in in-context learning evaluators
+  - Convert and deploy fine-tuned models to HuggingFace format or ONNX for production inference serving
+  - Experiment with Mixture-of-Experts architectures and efficient attention mechanisms without building infrastructure from scratch
