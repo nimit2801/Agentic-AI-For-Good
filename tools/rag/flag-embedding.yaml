@@ -1,0 +1,40 @@
+name: FlagEmbedding
+description: >
+  An open-source retrieval toolkit from BAAI (Beijing Academy of Artificial
+  Intelligence) that provides state-of-the-art text embedding models (BGE
+  series) and cross-encoder reranking models purpose-built for
+  retrieval-augmented generation (RAG) pipelines. Supports dense, sparse, and
+  multi-vector (ColBERT-style) retrieval across 100+ languages with token
+  windows up to 8,192. Includes components for embedding inference, reranking,
+  fine-tuning, evaluation, and dataset management.
+problem_solved: >
+  Traditional keyword search fails to capture semantic meaning, while many
+  embedding models are monolingual or lack reranking capabilities. FlagEmbedding
+  provides a unified suite of dense, sparse, and multi-vector embedding models
+  plus cross-encoder rerankers that dramatically improve retrieval precision
+  for RAG systems. The BGE models achieve state-of-the-art results on MTEB and
+  C-MTEB benchmarks, making reliable, factual retrieval accessible for
+  production RAG pipelines.
+tagline: State-of-the-art embedding and reranking models for RAG from BAAI
+use_cases:
+  - Semantic search and document retrieval with dense embeddings that match queries to documents by meaning
+  - Retrieval backbone for RAG pipelines with BGE multilingual models supporting 100+ languages
+  - Document reranking with cross-encoder models to improve precision of top-k retrieved results
+  - Text classification, clustering, and near-duplicate detection using high-quality embeddings
+category: RAG
+tags:
+  - embeddings
+  - retrieval-augmented-generation
+  - semantic-search
+  - information-retrieval
+  - reranker
+  - text-embedding
+  - multilingual
+  - vector-search
+pricing: free
+is_open_source: true
+license: MIT
+github_url: https://github.com/FlagOpen/FlagEmbedding
+website_url: https://bge-model.com
+docs_url: https://bge-model.com
+install_command: pip install -U FlagEmbedding

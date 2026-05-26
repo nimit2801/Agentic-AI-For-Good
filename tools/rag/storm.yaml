@@ -1,0 +1,40 @@
+name: STORM
+description: >
+  An LLM-powered knowledge curation system from Stanford's OVAL Lab that
+  researches any topic via web search and generates full-length,
+  Wikipedia-style articles with proper citations. STORM splits generation into
+  a pre-writing research stage (collecting references and outlines through
+  perspective-guided questioning and simulated expert conversations) and a
+  writing stage (synthesizing the outline into a coherent, cited article).
+problem_solved: >
+  Generating comprehensive, well-structured, long-form articles with accurate
+  citations is too complex for naive LLM prompting alone. Traditional RAG
+  approaches produce shallow, disjointed outputs lacking depth and coherent
+  structure. STORM solves this by orchestrating an agentic research workflow
+  that autonomously discovers diverse perspectives, simulates expert
+  conversations to deepen understanding, organizes information into
+  hierarchical outlines, and writes full articles with inline citations —
+  making high-quality knowledge synthesis accessible to anyone.
+tagline: LLM-powered knowledge curation that writes Wikipedia-like articles from scratch
+use_cases:
+  - Automated research report generation for literature reviews, background briefs, and topic surveys
+  - Educational content creation with Wikipedia-style study guides and lesson summaries
+  - Building internal wikis and technical documentation by researching and drafting articles with citations
+  - Nonprofit and humanitarian research for evidence-based briefing notes on public health and policy topics
+category: RAG
+tags:
+  - knowledge-curation
+  - wikipedia
+  - report-generation
+  - research-assistant
+  - llm
+  - retrieval-augmented-generation
+  - information-synthesis
+  - open-source
+pricing: free
+is_open_source: true
+license: MIT
+github_url: https://github.com/stanford-oval/storm
+website_url: https://storm-project.stanford.edu
+docs_url: https://github.com/stanford-oval/storm
+install_command: pip install knowledge-storm
