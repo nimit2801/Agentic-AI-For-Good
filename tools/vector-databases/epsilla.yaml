@@ -1,0 +1,27 @@
+name: Epsilla
+description: An open-source vector database that uses advanced parallel graph traversal (SpeedANN) for 10x faster vector search than HNSW while maintaining over 99.9% precision. Written in C++ for performance, available as a self-hosted open-source edition or managed cloud service.
+tagline: A 10x faster, cheaper, and more accurate vector database
+
+github_url: https://github.com/epsilla-cloud/vectordb
+website_url: https://epsilla.com
+docs_url: https://epsilla-inc.gitbook.io/epsilladb/
+
+install_command: |
+  docker pull epsilla/vectordb
+  docker run --pull=always -d -p 8888:8888 epsilla/vectordb
+
+category: Vector DB
+tags: [vector-database, embeddings, rag, similarity-search, vector-search, graph-traversal]
+pricing: freemium
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Traditional vector databases rely on HNSW indexing which suffers significant latency degradation at high precision targets above 95%. Epsilla solves this with a parallel graph traversal algorithm (SpeedANN) that delivers 10x faster vector search with over 99.9% precision, enabling cost-effective, production-scale similarity search for LLM-powered RAG applications where both speed and accuracy are critical. Its C++ core ensures minimal resource overhead.
+
+use_cases:
+  - Power retrieval-augmented generation (RAG) for LLM applications requiring high-speed, high-precision vector search
+  - Run semantic similarity search across large-scale vector corpora with millions of embeddings
+  - Build AI-powered conversational search on enterprise knowledge bases with real-time latency requirements
+  - Construct agentic RAG and GraphRAG pipelines that need highly accurate document retrieval
+  - Deploy a cost-effective vector search backend for embedding-based recommendation systems

@@ -1,0 +1,25 @@
+name: MLX-VLM
+description: A package for running inference and fine-tuning of Vision Language Models (VLMs) and Omni Models on Apple Silicon using MLX. Supports LoRA and QLoRA fine-tuning, speculative decoding, continuous batching, and distributed inference across multiple Macs.
+tagline: Run and fine-tune vision-language models locally on Apple Silicon
+
+github_url: https://github.com/Blaizzy/mlx-vlm
+website_url: https://blaizzy.github.io/mlx-vlm/
+docs_url: https://blaizzy.github.io/mlx-vlm/
+
+install_command: pip install -U mlx-vlm
+
+category: Fine-tuning
+tags: [mlx, apple-silicon, vision-language-model, fine-tuning, lora, qlora, local-ai, multimodal]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Fine-tuning vision-language models typically requires expensive cloud GPU instances, creating a barrier for developers and researchers who want to customize VLMs on their own data. MLX-VLM solves this by enabling local fine-tuning and inference of VLMs (including Omni Models with audio and video) on Apple Silicon Macs. It supports LoRA, QLoRA, and full fine-tuning with distributed inference across multiple Macs, making multimodal AI customization accessible on consumer hardware without cloud infrastructure.
+
+use_cases:
+  - Fine-tune vision-language models on custom image-caption datasets for specialized domains like medical imaging or satellite imagery
+  - Run local visual question answering systems with privacy-sensitive data that cannot be sent to external APIs
+  - Build multimodal document analysis pipelines with OCR, layout understanding, and chat capabilities
+  - Deploy on-device computer-use agents for GUI automation and grounded visual reasoning
+  - Experiment with LoRA and QLoRA fine-tuning of large VLMs on a single Mac without cloud GPU costs
