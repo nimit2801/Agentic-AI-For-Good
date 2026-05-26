@@ -1,0 +1,26 @@
+name: Lantern
+description: An open-source PostgreSQL vector database extension for building AI applications. Provides vector search, embedding generation, and hybrid search (dense + sparse/BM25) directly inside PostgreSQL, eliminating the need for a separate vector database. Lantern Cloud offers a fully managed service with serverless indexing.
+tagline: PostgreSQL vector database extension for building AI applications
+
+github_url: https://github.com/lanterndata/lantern
+website_url: https://lantern.dev
+docs_url: https://lantern.dev/docs
+
+install_command: |
+  docker run -p 5432:5432 --name lantern-demo -e 'POSTGRES_PASSWORD=postgres' -d lanterndata/lantern-suite:pg15-latest
+
+category: Vector DB
+tags: [vector-database, postgresql, pgvector, ai, embeddings, hnsw, nearest-neighbor-search, rag]
+pricing: freemium
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Developers need vector search for AI applications like RAG and semantic search, but managing a separate vector database alongside PostgreSQL adds operational complexity, cost, and data synchronization issues. Lantern solves this by bringing vector search directly into PostgreSQL as an extension, allowing teams to store vectors, text, and relational data in one familiar database. It supports HNSW indexing, hybrid dense/sparse search, and automatic embedding generation — all without leaving Postgres.
+
+use_cases:
+  - Power Retrieval-Augmented Generation (RAG) for LLM applications with hybrid dense and sparse search
+  - Build semantic search over documents, knowledge bases, and product catalogs using natural language queries
+  - Create recommendation systems using vector similarity and nearest-neighbor search on user and item embeddings
+  - Implement image and multimodal similarity search by storing and querying embedding vectors alongside metadata
+  - Replace standalone vector databases with a unified PostgreSQL database for simpler operations and lower infrastructure costs
