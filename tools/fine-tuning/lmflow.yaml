@@ -1,0 +1,40 @@
+name: LMFlow
+description: >
+  An extensible, convenient, and efficient toolbox for fine-tuning large
+  machine learning models, designed to be user-friendly, speedy, and
+  accessible to the entire community. LMFlow provides a complete end-to-end
+  pipeline for dataset preparation, fine-tuning (full, LoRA, LISA), inference,
+  evaluation, and deployment — supporting a wide range of foundation models
+  including LLaMA, GPT-2, Galactica, and ChatGLM. It won the Best Demo Paper
+  Award at NAACL 2024.
+problem_solved: >
+  Fine-tuning large foundation models traditionally requires massive
+  computational resources, deep technical expertise, and complex multi-step
+  workflows. LMFlow democratizes access by providing a lightweight, modular
+  framework that supports memory-efficient techniques like LISA (enabling 7B
+  model training in 24GB GPU memory), parameter-efficient LoRA adapters, and
+  DeepSpeed integration — all wrapped in simple, well-documented APIs that
+  handle the full lifecycle from data preparation to deployment.
+tagline: An extensible toolkit for fine-tuning and inference of large foundation models
+use_cases:
+  - Domain-specific fine-tuning of LLMs for medicine, law, and finance
+  - Memory-efficient 7B+ model training on consumer GPUs using LISA layerwise sampling
+  - Parameter-efficient model customization via LoRA adapters with rapid iteration
+  - Building and deploying instruction-tuned chatbots with multimodal capabilities
+  - Reproducible benchmarking and evaluation of open-source chat-style LLMs
+category: Fine-tuning
+tags:
+  - fine-tuning
+  - llm
+  - lora
+  - lisa
+  - deep-learning
+  - foundation-models
+  - training-framework
+pricing: free
+is_open_source: true
+license: Apache-2.0
+github_url: https://github.com/OptimalScale/LMFlow
+website_url: https://lmflow.com
+docs_url: https://optimalscale.github.io/LMFlow
+install_command: pip install lmflow-finetune
