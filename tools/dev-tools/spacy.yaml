@@ -1,0 +1,23 @@
+name: spaCy
+description: An industrial-strength Natural Language Processing library for Python and Cython with pretrained pipelines supporting 70+ languages. Features state-of-the-art neural network models for tokenization, tagging, parsing, named entity recognition, text classification, and multi-task learning with pretrained transformers.
+tagline: Industrial-strength NLP in Python
+
+github_url: https://github.com/explosion/spaCy
+website_url: https://spacy.io
+docs_url: https://spacy.io/usage
+
+category: Dev Tools
+tags: [nlp, python, text-classification, tokenization, ner, machine-learning, cython, natural-language-processing]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: pip install spacy
+
+problem_solved: |
+  Building production NLP pipelines typically requires stitching together multiple libraries for tokenization, named entity recognition, dependency parsing, and text classification — each with different APIs, data formats, and serving infrastructure. spaCy solves this with a single, unified library that handles the full NLP pipeline: it provides pretrained pipelines for 70+ languages, a streamlined training system for custom models, and production-ready model packaging and deployment out of the box.
+
+use_cases:
+  - Extract named entities, parts of speech, and dependency relations from text at scale
+  - Build custom text classification and multi-label categorization pipelines with transformers
+  - Deploy NLP models in production with efficient Cython-optimized inference
+  - Train custom pipelines on domain-specific text data with active learning support
