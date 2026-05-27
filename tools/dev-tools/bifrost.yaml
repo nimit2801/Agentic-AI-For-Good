@@ -1,0 +1,29 @@
+name: Bifrost
+description: A high-performance enterprise AI gateway featuring adaptive load balancing, cluster mode, content guardrails, and support for 1000+ models with under 100µs overhead at 5k RPS.
+tagline: Fastest Enterprise AI Gateway
+
+github_url: https://github.com/maximhq/bifrost
+website_url: https://www.getmaxim.ai/bifrost
+docs_url: https://docs.getbifrost.ai
+
+category: Dev Tools
+tags: [ai-gateway, llm, load-balancing, guardrails, mcp, model-router, observability]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+install_command: |
+  npx -y @maximhq/bifrost
+
+problem_solved: |
+  Enterprises deploying AI applications at scale need a high-performance gateway that can route,
+  load-balance, secure, and monitor traffic across hundreds of LLM providers and models at
+  minimal latency overhead. Bifrost delivers production-grade AI gateway functionality with
+  adaptive load balancing, cluster mode, built-in guardrails, and comprehensive observability
+  — achieving sub-100 microsecond overhead at 5,000 requests per second.
+
+use_cases:
+  - Route and load-balance API calls across multiple LLM providers with automatic failover and fallback
+  - Apply content guardrails, rate limiting, and token management to AI API traffic in production
+  - Monitor and observe LLM usage patterns, costs, latency, and performance across the organization
+  - Deploy in cluster mode for high-availability, horizontally-scalable AI infrastructure
