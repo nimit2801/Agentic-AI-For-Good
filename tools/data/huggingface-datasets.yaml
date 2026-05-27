@@ -1,0 +1,23 @@
+name: Hugging Face Datasets
+description: A lightweight library providing one-line dataloaders for thousands of public AI datasets across vision, NLP, speech, and multimodal domains. Features fast, memory-mapped data loading, built-in preprocessing, dataset slicing and filtering, and seamless integration with PyTorch, TensorFlow, and Pandas.
+tagline: One-line dataloaders for thousands of AI datasets
+
+github_url: https://github.com/huggingface/datasets
+website_url: https://huggingface.co/docs/datasets
+docs_url: https://huggingface.co/docs/datasets/index.html
+
+category: Data
+tags: [datasets, huggingface, data-loading, python, pytorch, tensorflow, nlp, computer-vision, data-processing]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+install_command: pip install datasets
+
+problem_solved: |
+  Finding, downloading, and preprocessing datasets for AI projects is a fragmented workflow — each dataset has its own format, hosting location, and preprocessing requirements, often requiring custom download scripts and format converters. Hugging Face Datasets solves this with a single API that provides access to tens of thousands of datasets, with automatic download, memory-mapped loading for datasets larger than RAM, built-in preprocessing functions, and seamless integration with popular ML frameworks.
+
+use_cases:
+  - Load and preprocess benchmark NLP and vision datasets in one line for model training
+  - Stream large datasets from disk without loading everything into memory using Apache Arrow
+  - Slice, filter, shuffle, and split datasets with built-in data manipulation helpers
+  - Prepare multimodal training data combining text, images, and speech for fine-tuning

@@ -1,0 +1,21 @@
+name: ColBERT
+description: A fast and accurate neural retrieval model that uses contextualized late interaction over BERT to enable scalable search over large text collections. ColBERTv2 introduces residual compression for storage efficiency, and the PLAID engine delivers production-grade inference speed while maintaining state-of-the-art retrieval quality.
+tagline: Fast and accurate neural search via late interaction
+
+github_url: https://github.com/stanford-futuredata/ColBERT
+install_command: pip install colbert-ai
+
+category: RAG
+tags: [retrieval, bert, neural-search, information-retrieval, dense-retrieval, late-interaction, python, nlp]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Traditional sparse retrieval methods like BM25 miss semantically relevant passages that use different vocabulary, while single-vector dense retrievers lose fine-grained token-level signals through aggregation. ColBERT solves this with contextualized late interaction — it encodes each passage into a token-level embedding matrix and scores query-passage similarity at the token level using fast MaxSim operators, delivering both the efficiency of vector search and the accuracy of full cross-encoder models.
+
+use_cases:
+  - Build high-accuracy semantic search and document retrieval systems over large collections
+  - Power RAG pipelines with token-level relevance scoring for precise answer retrieval
+  - Compress and index billion-scale corpora with ColBERTv2 residual compression for efficient storage
+  - Deploy production neural search with PLAID engine for sub-100ms query latency
