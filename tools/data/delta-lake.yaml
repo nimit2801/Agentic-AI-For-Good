@@ -1,0 +1,28 @@
+name: Delta Lake
+description: An open-source storage framework enabling ACID transactions, scalable metadata handling, and unified batch/streaming processing on data lakes, backed by Apache Spark.
+tagline: Reliable Data Lakes with ACID Transactions
+
+github_url: https://github.com/delta-io/delta
+website_url: https://delta.io
+docs_url: https://docs.delta.io
+
+category: Data
+tags: [data-lake, lakehouse, spark, parquet, etl, big-data]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install delta-spark
+
+problem_solved: |
+  Traditional data lakes suffer from data inconsistency, lack of transactional guarantees,
+  and poor performance for mixed batch and streaming workloads. Delta Lake brings ACID
+  transactions, schema enforcement, scalable metadata handling, and unified batch/streaming
+  processing on top of existing data lake storage, making data lakes reliable and performant
+  for production data pipelines.
+
+use_cases:
+  - Build reliable lakehouse architectures with ACID transactions on data lake storage
+  - Process streaming and batch data uniformly with exactly-once semantics
+  - Enforce schema on write to prevent data corruption from malformed records
+  - Time-travel to previous versions of data for auditing and rollback
