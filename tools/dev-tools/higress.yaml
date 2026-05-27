@@ -1,0 +1,32 @@
+name: Higress
+description: An AI-native API gateway built on Envoy that provides intelligent traffic management, model routing, MCP server hosting, and enterprise-grade security for AI services and LLM applications.
+tagline: AI Native API Gateway
+
+github_url: https://github.com/higress-group/higress
+website_url: https://higress.ai
+docs_url: https://higress.ai/en/docs/latest/user/quickstart/
+
+category: Dev Tools
+tags: [ai-gateway, api-gateway, envoy, cloud-native, kubernetes, mcp]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+install_command: |
+  docker run -d --rm --name higress-ai -v ${PWD}:/data \
+    -p 8001:8001 -p 8080:8080 -p 8443:8443 \
+    higress-registry.cn-hangzhou.cr.aliyuncs.com/higress/all-in-one:latest
+
+problem_solved: |
+  Managing traffic to AI and LLM services requires more than a standard API gateway — it needs
+  AI-native awareness of model endpoints, MCP protocols, token-based rate limiting, and provider
+  routing. Higress, built on Envoy, gives teams a purpose-built gateway that handles model routing
+  across providers, hosts MCP servers for agent tool integration, applies AI-specific rate limits,
+  and provides observability — all in a single, Kubernetes-native deployment.
+
+use_cases:
+  - Route and load-balance API calls across multiple LLM providers with automatic failover and fallback
+  - Host and manage MCP servers for AI agents, converting OpenAPI specs into MCP endpoints
+  - Secure AI API access with rate limiting, authentication, and token-based usage tracking
+  - Monitor and observe AI traffic patterns, model usage, and gateway performance metrics
+  - Deploy in Kubernetes with Helm for production-grade, auto-scaling AI infrastructure
