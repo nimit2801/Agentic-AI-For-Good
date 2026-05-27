@@ -1,0 +1,26 @@
+name: HNSWlib
+description: A header-only C++ library with Python bindings for fast approximate nearest neighbor search using the Hierarchical Navigable Small World algorithm.
+tagline: Fast Approximate Nearest Neighbor Search
+
+github_url: https://github.com/nmslib/hnswlib
+website_url: https://github.com/nmslib/hnswlib
+
+category: Vector DB
+tags: [vector-search, nearest-neighbor, ann, similarity-search, c-plus-plus, python]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install hnswlib
+
+problem_solved: |
+  Vector similarity search at scale requires efficient approximate nearest neighbor (ANN)
+  algorithms that balance speed, accuracy, and memory usage. HNSWlib provides a battle-tested,
+  production-grade implementation of the HNSW algorithm — widely regarded as one of the best
+  ANN methods — with a simple Python API. It is the underlying engine behind many vector
+  databases and semantic search systems.
+
+use_cases:
+  - Power vector similarity search in production semantic search and recommendation systems
+  - Accelerate nearest neighbor queries for embedding-based ML inference pipelines
+  - Build and query large-scale ANN indexes with configurable recall vs. speed tradeoffs
