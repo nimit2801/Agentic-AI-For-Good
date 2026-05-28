@@ -1,0 +1,32 @@
+name: Agent Zero
+description: An open, dynamic AI agent framework that ships a full Linux system via Docker, featuring a web UI, plugin hub, extendable skills system, and a powerful CLI connector for host machine integration.
+tagline: A full Linux system for your AI agent
+github_url: https://github.com/agent0ai/agent-zero
+website_url: https://agent-zero.ai
+docs_url: https://github.com/agent0ai/agent-zero/tree/main/docs
+
+category: Agents
+tags: [python, agents, autonomous, docker, framework, skills, linux, tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: |
+  curl -fsSL https://bash.agent-zero.ai | bash
+  docker run -p 80:80 -v a0_usr:/a0/usr agent0ai/agent-zero
+
+problem_solved: |
+  Most AI agent frameworks run as libraries inside an existing OS, limiting what the agent
+  can control — it can't install packages, spawn processes, or manage system resources
+  autonomously. Agent Zero solves this by shipping a complete Linux environment with a
+  desktop inside a Docker container. The agent has full system access, can install and run
+  any software, extend itself through a plugin hub, and connect to the host machine via
+  the A0 CLI. This architecture enables truly autonomous operation without sandbox
+  limitations.
+
+use_cases:
+  - Deploy autonomous agents that can install and use any software tool without sandbox restrictions
+  - Run long-lived research agents that browse the web, download files, run code, and compile results
+  - Build automated DevOps agents that can manage system resources, run scripts, and interact with cloud APIs
+  - Create personal AI assistants with full system access for file management, automation, and software development
+  - Develop extensible skill-based agents that dynamically load new capabilities from the plugin hub
