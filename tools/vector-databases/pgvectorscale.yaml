@@ -1,0 +1,30 @@
+name: pgvectorscale
+description: A PostgreSQL extension that enhances pgvector with DiskANN-based vector indexes for faster approximate nearest neighbor search at scale, supporting up to 100x faster index build and 28x lower index storage costs.
+tagline: Faster vector search for PostgreSQL at any scale
+github_url: https://github.com/timescale/pgvectorscale
+website_url: https://www.timescale.com/ai
+
+category: Vector DB
+tags: [postgresql, vector-search, pgvector, diskann, extension, rust, timescale]
+pricing: free
+is_open_source: true
+license: PostgreSQL
+
+install_command: |
+  docker pull timescale/timescaledb-ha:pg17
+  psql -d "postgres://<user>:<pass>@<host>:<port>/<db>" -c "CREATE EXTENSION IF NOT EXISTS vectorscale CASCADE;"
+
+problem_solved: |
+  Standard pgvector indexes become slow and memory-intensive as the vector corpus grows
+  beyond RAM capacity, making production-scale similarity search expensive and impractical.
+  pgvectorscale brings DiskANN (Disk-based Approximate Nearest Neighbor) to PostgreSQL,
+  enabling vector indexes that scale beyond memory limits by using SSD-optimized graph
+  algorithms. This results in dramatically faster index builds, lower storage costs, and
+  reliable query performance at any scale — all within the familiar PostgreSQL ecosystem.
+
+use_cases:
+  - Build production RAG pipelines with millions of embeddings stored and queried directly in PostgreSQL
+  - Replace dedicated vector databases with PostgreSQL + pgvectorscale for simpler infrastructure
+  - Run real-time semantic search on document corpora too large to fit in memory
+  - Deploy cost-effective vector search at scale using commodity SSD storage instead of RAM-heavy solutions
+  - Combine vector search with full PostgreSQL querying — joins, filters, aggregations, and transactions

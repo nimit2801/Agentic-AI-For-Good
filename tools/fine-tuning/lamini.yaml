@@ -1,0 +1,29 @@
+name: Lamini
+description: A Python client and SDK for fine-tuning, evaluating, and deploying LLMs using the Lamini API, with support for memory tuning, RLHF, and enterprise-grade model management.
+tagline: Fine-tune and deploy LLMs with memory tuning
+github_url: https://github.com/lamini-ai/lamini
+website_url: https://lamini.ai
+docs_url: https://lamini-ai.github.io/
+
+category: Fine-tuning
+tags: [python, fine-tuning, llm, sdk, memory-tuning, rlhf, enterprise]
+pricing: paid
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install lamini
+
+problem_solved: |
+  Fine-tuning and deploying LLMs for enterprise use cases requires managing infrastructure,
+  data pipelines, experiment tracking, and model serving — a complex orchestration problem
+  that most teams don't have the resources to build from scratch. Lamini provides a managed
+  platform and Python SDK that handles the full lifecycle: data preparation, fine-tuning
+  with memory tuning and RLHF, evaluation, and deployment via a simple API. Teams can
+  start with a single pip install and scale to production without managing GPU clusters.
+
+use_cases:
+  - Fine-tune open-source LLMs on proprietary enterprise data with memory tuning for reduced hallucination
+  - Build RLHF pipelines that collect human preferences and optimize model behavior through reinforcement learning
+  - Deploy customized LLMs behind a managed API endpoint with automatic scaling and monitoring
+  - Evaluate fine-tuned models against baseline metrics using built-in evaluation harnesses
+  - Iterate on model quality with experiment tracking, data versioning, and A/B comparison dashboards
