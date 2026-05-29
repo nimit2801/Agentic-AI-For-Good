@@ -1,0 +1,34 @@
+name: PostgresML
+description: "PostgresML is a PostgreSQL extension that brings GPU-accelerated machine learning and AI directly into Postgres. It enables training and running ML models, generating embeddings, performing vector search, and constructing RAG pipelines — all using SQL queries without moving data between systems."
+tagline: Postgres with GPUs for ML and AI applications
+
+github_url: https://github.com/postgresml/postgresml
+website_url: https://postgresml.org
+docs_url: https://postgresml.org/docs/
+
+install_command: |
+  pip install pgml
+
+category: RAG
+tags:
+  - postgres
+  - machine-learning
+  - embeddings
+  - vector-search
+  - rag
+  - gpu
+  - sql
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Building AI applications with RAG typically involves stitching together multiple systems — a database for storage,
+  a separate ML framework for embeddings, a vector store for semantic search, and hand-coded glue to connect them.
+  PostgresML adds GPU-accelerated ML training, embedding generation, and vector search directly inside PostgreSQL,
+  letting developers build and deploy RAG pipelines entirely in SQL without moving data or managing separate infrastructure.
+
+use_cases:
+  - "Generate vector embeddings and run RAG pipelines using SQL queries directly inside PostgreSQL with GPU acceleration"
+  - "Train and deploy ML models on data that never leaves the database, eliminating data movement overhead for AI pipelines"
+  - "Perform hybrid search combining full-text search, metadata filters, and vector similarity in a single SQL query"
