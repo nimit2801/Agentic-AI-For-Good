@@ -1,0 +1,36 @@
+name: Apache Spark
+description: "Apache Spark is a unified analytics engine for large-scale data processing with built-in modules for SQL, DataFrames, machine learning (MLlib), graph processing (GraphX), and stream processing (Structured Streaming). It provides high-level APIs in Scala, Java, Python (PySpark), and R, with an optimized engine that supports general computation graphs for data analysis."
+tagline: Unified analytics engine for large-scale data processing
+
+github_url: https://github.com/apache/spark
+website_url: https://spark.apache.org/
+docs_url: https://spark.apache.org/docs/latest/
+
+install_command: |
+  pip install pyspark
+
+category: Data
+tags:
+  - big-data
+  - analytics
+  - data-processing
+  - sql
+  - machine-learning
+  - python
+  - scala
+  - streaming
+  - etl
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AI and data teams working with large-scale datasets often struggle with processing pipelines that need to clean,
+  transform, and prepare data at scale for model training or inference — especially when datasets exceed what a single
+  machine can handle. Spark provides a unified engine that processes data across clusters using familiar DataFrame and
+  SQL APIs, with built-in MLlib for scalable machine learning and Structured Streaming for real-time data pipelines.
+
+use_cases:
+  - "Preprocess and transform terabytes of training data across clusters using PySpark DataFrames and SQL APIs"
+  - "Build scalable feature engineering pipelines that transform raw data into ML-ready features at petabyte scale"
+  - "Run unified batch and streaming ETL pipelines for AI data preparation with built-in fault tolerance"

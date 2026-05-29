@@ -1,0 +1,37 @@
+name: SigNoz
+description: "SigNoz is an open-source observability platform native to OpenTelemetry that provides logs, traces, and metrics in a single application. It offers distributed tracing, application performance monitoring, and infrastructure monitoring with real-time dashboards, alerting, and root cause analysis — serving as a cost-effective open-source alternative to Datadog and New Relic."
+tagline: Open-source observability platform with logs, traces, and metrics
+
+github_url: https://github.com/SigNoz/signoz
+website_url: https://signoz.io
+docs_url: https://signoz.io/docs
+
+install_command: |
+  git clone https://github.com/SigNoz/signoz.git
+  cd signoz
+  docker compose -f docker/clickhouse-setup/docker-compose.yaml up -d
+
+category: Monitoring
+tags:
+  - observability
+  - opentelemetry
+  - monitoring
+  - tracing
+  - logs
+  - metrics
+  - apm
+  - self-hosted
+pricing: freemium
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  AI applications and agent workflows generate complex telemetry across multiple services — model inference calls,
+  tool executions, vector database queries, and orchestration logic — making it hard to trace performance bottlenecks
+  and debug failures. SigNoz unifies logs, traces, and metrics in a single OpenTelemetry-native platform, giving AI
+  teams end-to-end visibility into their stack without paying per-seat SaaS licensing costs.
+
+use_cases:
+  - "Monitor LLM application performance with distributed tracing across model APIs, vector stores, and orchestration layers"
+  - "Debug AI agent workflows by correlating logs, traces, and metrics in a single OpenTelemetry-native observability platform"
+  - "Set up alerting and root cause analysis for production AI systems without the per-seat cost of proprietary APM tools"
