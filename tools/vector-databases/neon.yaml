@@ -1,0 +1,35 @@
+name: Neon
+description: "Neon is an open-source serverless Postgres database platform that separates storage and compute for autoscaling, database branching, and scale-to-zero. It supports pgvector for vector embeddings and semantic search, provides branching for instant database copies, and offers a free tier for AI developers building with Postgres."
+tagline: Serverless Postgres with autoscaling and database branching
+
+github_url: https://github.com/neondatabase/neon
+website_url: https://neon.tech
+docs_url: https://neon.tech/docs
+
+install_command: "npm install @neondatabase/serverless"
+
+category: Vector DB
+tags:
+  - postgres
+  - serverless
+  - database
+  - vector-database
+  - embeddings
+  - semantic-search
+  - pgvector
+  - branching
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AI teams that want to use Postgres with pgvector for semantic search often struggle with provisioning and scaling
+  database infrastructure — traditional Postgres has fixed compute that must be paid for even when idle, and the
+  storage and compute are tightly coupled, making vertical scaling slow and costly. Neon decouples compute from storage,
+  enabling instant branching for development and review workflows, autoscaling based on load, and scale-to-zero when
+  idle — reducing the operational cost of running Postgres as a vector store for AI applications.
+
+use_cases:
+  - "Run serverless Postgres with pgvector for AI semantic search and embedding storage without paying for idle compute"
+  - "Create instant database branches for testing RAG pipeline changes and schema migrations before deploying"
+  - "Autoscale Postgres compute for vector similarity search workloads that have unpredictable query volume"
