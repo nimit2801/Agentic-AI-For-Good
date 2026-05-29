@@ -1,0 +1,36 @@
+name: SurrealDB
+description: "SurrealDB is a multi-model database combining document, graph, relational, and vector capabilities in a single query engine with real-time collaboration features. It supports vector embeddings for semantic search, graph traversal for relationship-heavy queries, and live queries for real-time subscriptions — all accessible via WebSocket-native APIs."
+tagline: Multi-model database with document, graph, and vector support
+
+github_url: https://github.com/surrealdb/surrealdb
+website_url: https://surrealdb.com
+docs_url: https://surrealdb.com/docs
+
+install_command: |
+  curl -sSf https://install.surrealdb.com | sh
+
+category: Vector DB
+tags:
+  - database
+  - multi-model
+  - document-store
+  - graph-database
+  - vector-search
+  - embeddings
+  - realtime
+  - websocket
+pricing: freemium
+is_open_source: false
+license: BSL-1.1
+
+problem_solved: |
+  AI applications often need multiple data models — documents for content, graphs for relationships, and vectors
+  for semantic search — forcing teams to maintain separate databases and deal with cross-system consistency and
+  latency. SurrealDB unifies document, graph, relational, and vector data models in a single query engine, so
+  developers can store hybrid data and run complex queries — including vector similarity search, graph traversal,
+  and real-time subscriptions — without leaving one database.
+
+use_cases:
+  - "Store AI agent memories and knowledge graphs in a single database that supports both vector search and graph traversal"
+  - "Build real-time collaborative applications with live queries and subscriptions across document, graph, and vector data"
+  - "Power recommendation systems that combine vector similarity, graph relationships, and document metadata in one query"
