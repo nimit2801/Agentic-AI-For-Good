@@ -1,0 +1,36 @@
+name: MongoDB
+description: "MongoDB is a general-purpose document database with native vector search capabilities. MongoDB Atlas provides built-in vector search for AI applications, enabling semantic search, RAG pipelines, and recommendation systems alongside traditional document queries, with full ACID transactions, change streams, and multi-cloud deployment."
+tagline: General-purpose document database with native vector search
+
+github_url: https://github.com/mongodb/mongo
+website_url: https://www.mongodb.com/
+docs_url: https://www.mongodb.com/docs/atlas/atlas-vector-search/
+
+install_command: |
+  brew tap mongodb/brew
+  brew install mongodb-community
+
+category: Vector DB
+tags:
+  - database
+  - nosql
+  - document-store
+  - vector-search
+  - semantic-search
+  - embeddings
+  - atlas
+  - cloud-database
+pricing: freemium
+is_open_source: false
+license: SSPL-1.0
+
+problem_solved: |
+  Teams building AI applications with RAG or semantic search often need a vector database alongside their primary data
+  store, adding operational overhead from syncing data between systems. MongoDB Atlas integrates native vector search
+  directly into the document database, letting developers store embeddings alongside business data and run vector
+  similarity queries with the same API, indexes, transactions, and operational tooling they already use.
+
+use_cases:
+  - "Build RAG pipelines that run vector similarity search alongside document queries within a single database API"
+  - "Implement semantic product search and recommendation systems using embeddings stored with existing product data"
+  - "Power AI agents with hybrid search across structured data and vector embeddings using MongoDB Atlas's unified query API"
