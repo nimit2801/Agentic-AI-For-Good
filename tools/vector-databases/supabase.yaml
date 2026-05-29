@@ -1,0 +1,36 @@
+name: Supabase
+description: "Supabase is the open-source Firebase alternative that provides a dedicated Postgres database per project with built-in vector support via pgvector, authentication, realtime subscriptions, auto-generated REST and GraphQL APIs, edge functions, file storage, and an AI toolkit for embeddings and vector search."
+tagline: Open-source Postgres development platform with built-in vector search
+
+github_url: https://github.com/supabase/supabase
+website_url: https://supabase.com
+docs_url: https://supabase.com/docs
+
+install_command: "npm install @supabase/supabase-js"
+
+category: Vector DB
+tags:
+  - postgres
+  - database
+  - backend-as-a-service
+  - authentication
+  - realtime
+  - vector-database
+  - embeddings
+  - semantic-search
+  - firebase-alternative
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Building AI applications that need vector search typically means provisioning a separate vector database alongside
+  Postgres, adding operational complexity, duplicate storage, and sync overhead. Supabase gives every project its own
+  dedicated Postgres database with pgvector built-in, so developers get vector embeddings, semantic search, and
+  relational data side-by-side without managing extra infrastructure. Combined with auto-generated APIs, built-in auth,
+  and realtime subscriptions, it eliminates the backend scaffolding work for AI-powered applications.
+
+use_cases:
+  - "Build AI applications that store and query vector embeddings alongside relational data in the same Postgres database"
+  - "Create real-time AI features like semantic search, recommendation feeds, and chat history with built-in auth and subscriptions"
+  - "Rapidly prototype and ship full-stack apps with auto-generated REST and GraphQL APIs for your AI backend"

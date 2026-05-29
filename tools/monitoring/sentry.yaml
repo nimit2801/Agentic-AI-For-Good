@@ -1,0 +1,36 @@
+name: Sentry
+description: "Sentry is a developer-first error tracking and performance monitoring platform that helps AI and software teams detect, triage, and resolve production issues in real time. It provides full stack traces, distributed tracing, performance insights, session replays, and AI-powered issue grouping — with SDKs for every major language and framework."
+tagline: Real-time error tracking and performance monitoring
+
+github_url: https://github.com/getsentry/sentry
+website_url: https://sentry.io
+docs_url: https://docs.sentry.io
+
+install_command: |
+  pip install sentry-sdk
+  npm install @sentry/react
+
+category: Monitoring
+tags:
+  - error-monitoring
+  - performance-monitoring
+  - debugging
+  - tracing
+  - observability
+  - apm
+  - crash-reporting
+pricing: freemium
+is_open_source: false
+license: FSL-1.1
+
+problem_solved: |
+  AI applications and LLM-powered features are notoriously difficult to debug in production because errors often stem from
+  unpredictable model outputs, complex agent workflows, and non-deterministic behavior that traditional logging can't
+  capture. Sentry provides real-time visibility into production errors with full stack traces, request context, and
+  performance tracing — giving AI teams the context they need to reproduce, triage, and fix issues across both their
+  application logic and AI pipeline layers.
+
+use_cases:
+  - "Monitor and debug LLM application errors with full request context, stack traces, and distributed tracing across AI pipelines"
+  - "Track performance bottlenecks in AI agent workflows with end-to-end visibility into latency and throughput"
+  - "Proactively detect and triage production issues with AI-powered grouping and real-time alerting"
