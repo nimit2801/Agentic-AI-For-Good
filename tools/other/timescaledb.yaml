@@ -1,0 +1,36 @@
+name: TimescaleDB
+description: "TimescaleDB is a PostgreSQL extension for high-performance real-time analytics on time-series and event data. It supports hypertables for automatic time-based partitioning, continuous aggregates, compression policies, and works with pgvector for vector embeddings — making it a unified platform for time-series analytics and AI workloads."
+tagline: Time-series database for high-performance real-time analytics
+
+github_url: https://github.com/timescale/timescaledb
+website_url: https://www.tigerdata.com/
+docs_url: https://docs.tigerdata.com/
+
+install_command: |
+  docker pull timescale/timescaledb
+
+category: Other
+tags:
+  - postgres
+  - time-series
+  - database
+  - analytics
+  - sql
+  - iot
+  - real-time
+  - pgvector
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AI applications that generate time-series data — model inference logs, token usage metrics, sensor readings, or
+  monitoring telemetry — need a database that can efficiently ingest and query high-velocity temporal data alongside
+  vector embeddings. TimescaleDB adds automatic time-based partitioning, continuous rollups, and compression to
+  PostgreSQL, letting teams store and analyze millions of data points per second while keeping the option of
+  pgvector-powered semantic search in the same database.
+
+use_cases:
+  - "Store and analyze high-frequency model inference metrics, token usage, and latency data alongside vector embeddings"
+  - "Build real-time monitoring dashboards for AI agents and LLM pipelines using PostgreSQL-compatible SQL queries"
+  - "Ingest and query IoT sensor data at millions of data points per second with built-in partitioning and compression"

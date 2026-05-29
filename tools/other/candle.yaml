@@ -1,0 +1,35 @@
+name: Candle
+description: "Candle is a minimalist ML framework for Rust with a focus on performance and ease of use. It provides GPU support via CUDA and WASM, supports popular model architectures including LLaMA, Whisper, and YOLO, and offers ergonomic tensor operations inspired by PyTorch, all from within the Rust ecosystem."
+tagline: Minimalist ML framework for Rust
+
+github_url: https://github.com/huggingface/candle
+website_url: https://huggingface.co/docs/candle/index.html
+docs_url: https://docs.rs/candle-core
+
+install_command: "cargo add candle-core"
+
+category: Other
+tags:
+  - rust
+  - machine-learning
+  - deep-learning
+  - framework
+  - huggingface
+  - gpu
+  - wasm
+  - inference
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Python dominates the ML ecosystem but Rust developers who want to integrate ML models directly into Rust applications
+  — CLI tools, edge devices, WebAssembly frontends, or low-latency services — are forced to either call Python
+  subprocesses or use heavyweight bindings. Candle provides native ML primitives in Rust with GPU acceleration and
+  a PyTorch-like API, letting Rust developers run inference on popular models without leaving their language or
+  sacrificing performance.
+
+use_cases:
+  - "Run LLM inference in Rust applications without Python dependencies or subprocess overhead"
+  - "Deploy ML models to edge devices and WebAssembly targets using a lightweight Rust-native ML framework"
+  - "Build and fine-tune small transformer models entirely within the Rust ecosystem with GPU acceleration"
