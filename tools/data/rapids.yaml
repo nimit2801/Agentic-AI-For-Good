@@ -1,0 +1,29 @@
+name: RAPIDS
+description: A suite of open-source GPU-accelerated data science and AI libraries for end-to-end data processing, including cuDF for GPU DataFrames, cuML for machine learning, cuGraph for graph analytics, and cuXfilter for interactive visualization.
+tagline: GPU-accelerated data science libraries
+
+github_url: https://github.com/rapidsai/cudf
+website_url: https://rapids.ai
+docs_url: https://docs.rapids.ai
+install_command: conda install -c rapidsai -c conda-forge rapids
+
+category: Data
+tags: [gpu, data-science, dataframe, machine-learning, python, cuda, rapids, analytics]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Data processing on CPUs becomes a bottleneck when datasets grow beyond what pandas can handle
+  efficiently, forcing teams to downsample, use distributed clusters, or wait minutes for
+  operations that should take seconds. RAPIDS leverages NVIDIA GPU acceleration to run data
+  processing, machine learning, and graph analytics entirely on GPUs — using the same pandas-like
+  and scikit-learn-like APIs — so data scientists can iterate faster without learning distributed
+  systems or switching tools.
+
+use_cases:
+  - Accelerate ETL and data preprocessing pipelines with GPU-parallelized DataFrame operations
+  - Train ML models on GPU-resident data using cuML without transferring data back to CPU
+  - Analyze large graph structures with GPU-parallelized algorithms using cuGraph
+  - Build interactive GPU-accelerated dashboards with cuXfilter for real-time data exploration
+  - Combine with Dask for distributed GPU processing across multi-GPU and multi-node clusters
