@@ -1,0 +1,22 @@
+name: Dask
+description: "Dask is a flexible parallel computing library for Python that scales analytics and machine learning workflows from a single laptop to a cluster. It provides dynamic task scheduling and parallel implementations of NumPy arrays, Pandas DataFrames, and scikit-learn estimators, enabling users to work with datasets larger than memory without rewriting their code."
+tagline: "Parallel computing library for scaling Python analytics"
+github_url: https://github.com/dask/dask
+website_url: https://dask.org
+docs_url: https://docs.dask.org
+install_command: "pip install dask[complete]"
+category: Data
+tags:
+  - parallel-computing
+  - data-processing
+  - distributed-computing
+  - python
+  - big-data
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+problem_solved: "Python developers working with large datasets hit the memory and compute limits of single-machine tools like Pandas and NumPy. Traditional distributed computing frameworks like Spark require rewriting code in a different paradigm and managing complex clusters, creating a steep learning curve and high operational overhead for data teams."
+use_cases:
+  - "Process datasets larger than RAM using out-of-core DataFrames with the same Pandas-like API"
+  - "Train machine learning models on large datasets using distributed scikit-learn, XGBoost, and PyTorch integrations"
+  - "Build and schedule complex multi-step data pipelines with dynamic task graphs and lazy evaluation"
