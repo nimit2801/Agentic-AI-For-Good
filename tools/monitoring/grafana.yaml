@@ -1,0 +1,25 @@
+name: Grafana
+description: "Grafana is an open-source observability platform for querying, visualizing, and alerting on metrics, logs, and traces from any data source. It connects to time-series databases like Prometheus, InfluxDB, and Elasticsearch, and is widely used to monitor LLM applications, AI infrastructure, and production systems through customizable dashboards, panels, and alerting rules."
+tagline: "Open-source observability and data visualization platform"
+github_url: https://github.com/grafana/grafana
+website_url: https://grafana.com
+docs_url: https://grafana.com/docs
+install_command: |
+  brew install grafana
+  # Or download from https://grafana.com/grafana/download
+category: Monitoring
+tags:
+  - observability
+  - visualization
+  - dashboards
+  - metrics
+  - alerting
+  - llm-monitoring
+pricing: freemium
+is_open_source: true
+license: AGPL-3.0
+problem_solved: "Engineering teams lack a unified view of their systems' health, with metrics scattered across different data stores (Prometheus for metrics, Loki for logs, Elasticsearch for traces) and no consistent way to correlate signals. Without customizable dashboards and alerting, teams can't detect anomalies, debug production issues, or track LLM application performance in real time."
+use_cases:
+  - "Monitor LLM application metrics (latency, token usage, error rates) alongside infrastructure health in real-time dashboards"
+  - "Correlate logs, metrics, and traces from multiple data sources to debug production AI system issues"
+  - "Set up alerting rules with multiple notification channels (Slack, PagerDuty, email) for automated incident response"
