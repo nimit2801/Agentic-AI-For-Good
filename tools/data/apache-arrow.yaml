@@ -1,0 +1,22 @@
+name: Apache Arrow
+description: "Apache Arrow is a cross-language development platform for in-memory data that defines a standardized columnar format for efficient data interchange and analytics. It provides zero-copy data sharing between languages (Python, C++, Java, R, Rust), high-performance compute kernels, and native support for Parquet, CSV, and JSON files through the PyArrow library."
+tagline: "Universal columnar format for fast data interchange"
+github_url: https://github.com/apache/arrow
+website_url: https://arrow.apache.org
+docs_url: https://arrow.apache.org/docs
+install_command: "pip install pyarrow"
+category: Data
+tags:
+  - columnar-format
+  - data-interchange
+  - in-memory-analytics
+  - parquet
+  - data-engineering
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Data scientists and ML engineers waste significant time and memory on serialization overhead when moving data between different languages, tools, and frameworks. Traditional row-based formats like CSV and JSON are slow to parse, and each library uses its own in-memory representation, forcing costly copies and conversions for even simple data pipelines."
+use_cases:
+  - "Read and write large Parquet, CSV, and JSON datasets with zero-copy columnar access for ML training pipelines"
+  - "Share data between Python, R, C++, and Java applications without serialization overhead using the Arrow IPC format"
+  - "Perform high-performance in-memory analytics on large datasets using Arrow compute kernels and dataset APIs"

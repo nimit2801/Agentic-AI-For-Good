@@ -1,0 +1,26 @@
+name: Apache NiFi
+description: "Apache NiFi is an open-source data flow automation system designed for securely moving, transforming, and routing data between systems at scale. It features a web-based drag-and-drop interface for building data pipelines, provenance tracking for every data record, back-pressure handling, and extensive processor libraries for ingesting data from databases, file systems, message queues, and APIs."
+tagline: "Data flow automation and pipeline orchestration"
+github_url: https://github.com/apache/nifi
+website_url: https://nifi.apache.org
+docs_url: https://nifi.apache.org/docs.html
+install_command: |
+  # Download and extract
+  curl -sSOL https://dlcdn.apache.org/nifi/2.0.0/nifi-2.0.0-bin.tar.gz
+  tar -xzf nifi-2.0.0-bin.tar.gz
+  cd nifi-2.0.0 && ./bin/nifi.sh start
+category: Data
+tags:
+  - data-pipeline
+  - data-integration
+  - etl
+  - workflow-automation
+  - data-engineering
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Engineering teams building ML pipelines must ingest, transform, and route data from dozens of disparate sources (databases, APIs, file shares, message queues, IoT devices) into ML training and inference systems. Manually wiring these integrations is brittle, lacks observability, and makes it impossible to trace data lineage when a model produces unexpected results."
+use_cases:
+  - "Ingest and route streaming data from databases, APIs, and IoT devices into ML training pipelines with automated back-pressure handling"
+  - "Track end-to-end data provenance for every record with built-in data lineage and provenance reporting"
+  - "Visually design and monitor complex ETL workflows through a drag-and-drop web interface with 300+ built-in processors"
