@@ -1,0 +1,24 @@
+name: Optuna
+description: Optuna is an open-source hyperparameter optimization framework designed for automating the search for optimal machine learning model parameters. It features define-by-run API, efficient pruning of unpromising trials, and distributed parallel optimization. For AI/ML workflows, Optuna integrates with PyTorch, TensorFlow, and scikit-learn to automatically tune hyperparameters for training pipelines, LLM fine-tuning configurations, and agent system parameters.
+tagline: Hyperparameter optimization framework for machine learning
+
+github_url: https://github.com/optuna/optuna
+website_url: https://optuna.org/
+docs_url: https://optuna.readthedocs.io/
+
+install_command: pip install optuna
+
+category: Dev Tools
+tags: [hyperparameter-optimization, automl, hyperparameter-tuning, python, mlops, bayesian-optimization]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Machine learning models have many tunable hyperparameters that significantly affect performance, but manual tuning is slow and grid search is computationally wasteful. Optuna automates this process with advanced sampling and pruning algorithms (TPE, CMA-ES, Median Pruner), integrates seamlessly with popular ML frameworks, and runs trials in parallel across distributed workers to find optimal configurations efficiently.
+
+use_cases:
+  - "Automatically tune hyperparameters for deep learning models in PyTorch, TensorFlow, or Keras"
+  - "Optimize LLM fine-tuning hyperparameters like learning rate, batch size, and LoRA rank"
+  - "Tune agentic system parameters such as temperature, max tokens, and retrieval chunk sizes"
+  - "Run distributed hyperparameter searches across multiple GPUs or compute nodes in parallel"
