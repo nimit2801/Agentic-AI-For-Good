@@ -1,0 +1,29 @@
+name: APEX
+description: A PyTorch Extension providing tools for easy mixed precision training, distributed training, and optimized CUDA kernels, enabling faster training of deep learning models on NVIDIA GPUs with minimal code changes.
+tagline: Mixed precision and distributed training tools for PyTorch
+
+github_url: https://github.com/NVIDIA/apex
+docs_url: https://nvidia.github.io/apex/
+install_command: |
+  git clone https://github.com/NVIDIA/apex
+  cd apex && pip install -v --no-build-isolation .
+
+category: Fine-tuning
+tags: [pytorch, mixed-precision, distributed-training, cuda, gpu, neural-networks, optimization, deep-learning]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Training large neural networks efficiently requires mixed precision computation and distributed
+  training capabilities, but configuring these features manually is error-prone and requires deep
+  CUDA expertise. APEX provides drop-in tools for automatic mixed precision (AMP), distributed
+  data parallel (DDP) training, and optimized CUDA extensions that give PyTorch developers
+  significant training speedups and memory savings without rewriting their model code.
+
+use_cases:
+  - Accelerate deep learning model training with automatic mixed precision (FP16) on NVIDIA GPUs
+  - Scale training across multiple GPUs and nodes using distributed data parallel patterns
+  - Use optimized fused CUDA kernels for faster attention, convolution, and normalization layers
+  - Train larger batch sizes and models by reducing GPU memory usage through mixed precision
+  - Smoothly transition from single-GPU to multi-GPU training with minimal code changes
