@@ -1,0 +1,31 @@
+name: JAX
+description: A high-performance Python library for accelerator-oriented array computation and program transformation, enabling automatic differentiation, vectorization, and JIT compilation across CPUs, GPUs, and TPUs for machine learning research and production.
+tagline: Accelerated array computation and automatic differentiation for ML
+
+github_url: https://github.com/jax-ml/jax
+website_url: https://jax.readthedocs.io/en/latest/
+docs_url: https://docs.jax.dev/en/latest/
+install_command: |
+  pip install -U jax
+  pip install -U "jax[cuda13]"
+
+category: Dev Tools
+tags: [deep-learning, automatic-differentiation, jit, gpu, tpu, numpy, tensor, python, machine-learning]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Machine learning research and development requires fast, differentiable numerical computation
+  across diverse hardware. JAX unifies NumPy-style array programming with composable
+  transformations — autodiff, JIT compilation, vectorized mapping, and parallelization — that
+  run seamlessly on CPUs, GPUs, and TPUs. It eliminates the need to write separate forward and
+  backward passes, manage device transfers manually, or switch frameworks when moving from
+  research experiments to production training loops.
+
+use_cases:
+  - Train neural networks with automatic differentiation through complex control flow and recursive structures
+  - JIT-compile compute-intensive array operations for CPU, GPU, and TPU acceleration
+  - Build and optimize large-scale ML models with function transformations like vmap, pmap, and xmap
+  - Accelerate scientific computing and simulation workloads with GPU/TPU-backed NumPy array operations
+  - Implement custom training loops and optimizer logic without framework-imposed abstractions
