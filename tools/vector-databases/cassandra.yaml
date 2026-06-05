@@ -1,0 +1,24 @@
+name: Apache Cassandra
+description: Apache Cassandra is an open-source distributed NoSQL database with native vector search capabilities via Storage-Attached Indexes (SAI), added in Cassandra 5.0. It combines linear scalability and proven fault-tolerance with ANN similarity search on high-dimensional embedding vectors, enabling AI workloads like semantic search and RAG pipelines on commodity hardware.
+tagline: Scalable NoSQL database with native vector search for AI workloads
+
+github_url: https://github.com/apache/cassandra
+website_url: https://cassandra.apache.org/
+docs_url: https://cassandra.apache.org/doc/latest/cassandra/vector-search/overview.html
+
+install_command: docker pull cassandra:latest
+
+category: Vector DB
+tags: [nosql, vector-search, distributed-database, ann, similarity-search, sai, embeddings]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Traditional databases lack native similarity search on unstructured data, forcing teams to maintain separate vector stores alongside operational databases. Cassandra bridges this gap by combining linearly scalable, fault-tolerant distributed storage with native ANN vector search via SAI indexes. This eliminates data duplication, reduces operational complexity, and enables production-grade semantic search and AI/ML similarity comparisons on embedding vectors at global scale.
+
+use_cases:
+  - "Power semantic search and RAG pipelines by combining vector similarity with structured metadata queries"
+  - "Run real-time AI similarity matching for product recommendations and content personalization at scale"
+  - "Build enterprise knowledge bases with natural language querying and distributed fault-tolerance across regions"
+  - "Perform multi-modal search across text and images using SAI ANN indexes with configurable similarity functions"

@@ -1,0 +1,24 @@
+name: Apache Hadoop
+description: Apache Hadoop is an open-source framework for distributed storage (HDFS) and distributed processing (MapReduce/YARN) of massive datasets across clusters of commodity hardware. For AI and agentic workflows, Hadoop provides the foundational data layer for storing and preprocessing large-scale training datasets, logs, and telemetry that feed machine learning pipelines.
+tagline: Distributed storage and processing for big data and AI pipelines
+
+github_url: https://github.com/apache/hadoop
+website_url: https://hadoop.apache.org/
+docs_url: https://hadoop.apache.org/docs/stable/
+
+install_command: brew install hadoop
+
+category: Data
+tags: [big-data, distributed-storage, hdfs, mapreduce, yarn, data-processing, batch-processing]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AI and agentic systems need to store, manage, and process petabytes of distributed data (training corpora, logs, telemetry) across clusters. Hadoop solves reliable, fault-tolerant distributed storage and large-scale batch processing on commodity hardware without expensive proprietary infrastructure, enabling teams to build scalable data pipelines for ML training and inference.
+
+use_cases:
+  - "Store and manage petabyte-scale training datasets for LLM fine-tuning across distributed HDFS clusters"
+  - "Batch preprocess and transform raw web-crawl data into clean training corpora using MapReduce jobs"
+  - "Archive and serve agent interaction logs and telemetry for downstream analytics and model improvement"
+  - "Run distributed Spark ML training jobs on data stored in HDFS for production AI pipelines"
