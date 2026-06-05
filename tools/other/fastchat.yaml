@@ -1,0 +1,26 @@
+name: FastChat
+description: An open platform for training, serving, and evaluating large language models, providing an optimized serving system, a web-based chat interface, and CLI tools compatible with hundreds of open-source and API-based models.
+tagline: Open platform for training, serving, and evaluating LLMs
+
+github_url: https://github.com/lm-sys/FastChat
+install_command: pip3 install "fschat[model_worker,webui]"
+
+category: Other
+tags: [llm, serving, inference, chat, vicuna, model-serving, open-source, python]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Deploying and serving large language models in production requires managing model workers,
+  handling concurrent requests, and providing a user interface — all tasks that demand
+  significant infrastructure work. FastChat gives teams a production-ready serving system with
+  model parallelism, OpenAI-compatible API endpoints, and a built-in web UI so they can deploy
+  LLMs for interactive use or API access without building custom serving infrastructure.
+
+use_cases:
+  - Serve open-source LLMs behind an OpenAI-compatible REST API for application integration
+  - Host multi-model chat platforms with concurrent users, model workers, and load balancing
+  - Evaluate and compare LLM outputs side-by-side through a web-based arena interface
+  - Fine-tune models using the built-in training scripts for domain-specific adaptation
+  - Run models with model parallelism across multiple GPUs for serving large parameter counts

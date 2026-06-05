@@ -1,0 +1,27 @@
+name: OpenAI Evals
+description: A framework for evaluating large language models and LLM systems, providing standardized evaluation tasks, model-graded assessments, and composable test suites for measuring accuracy, safety, and quality.
+tagline: LLM evaluation framework from OpenAI
+
+github_url: https://github.com/openai/evals
+docs_url: https://cookbook.openai.com/examples/evaluate_with_evals
+install_command: pip install evals
+
+category: Monitoring
+tags: [evaluation, llm, testing, benchmarking, quality, safety, ai-evaluation, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Evaluating LLM outputs requires consistent, reproducible test methodologies, but teams often
+  rely on manual review or ad hoc scripts that don't scale across model versions or use cases.
+  OpenAI Evals provides a structured framework for defining evaluation tasks, running model-graded
+  assessments, and composing test suites that give developers confidence in model quality before
+  shipping to production.
+
+use_cases:
+  - Run standardized evaluation tasks to measure LLM accuracy, safety, and instruction-following
+  - Use model-graded evaluations for assessing open-ended outputs like summaries and translations
+  - Build custom evaluation suites for domain-specific use cases with composable test templates
+  - Compare model performance across versions or providers to inform deployment decisions
+  - Integrate evaluations into CI/CD pipelines for automated quality gates on model releases
