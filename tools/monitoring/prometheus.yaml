@@ -1,0 +1,26 @@
+name: Prometheus
+description: Prometheus is an open-source systems monitoring and alerting toolkit built at SoundCloud. It collects and stores metrics as time-series data with a powerful PromQL query language. For AI/ML systems, Prometheus tracks model inference latency, throughput, GPU utilization, request rates, and data pipeline health across distributed AI agent ecosystems and model serving infrastructure.
+tagline: Open-source monitoring and alerting for metrics and time-series data
+
+github_url: https://github.com/prometheus/prometheus
+website_url: https://prometheus.io/
+docs_url: https://prometheus.io/docs/
+
+install_command: |
+  docker run -d --name prometheus -p 9090:9090 prom/prometheus:v3.12.0
+
+category: Monitoring
+tags: [monitoring, metrics, alerting, time-series, observability, promql, ml-monitoring, ai-infrastructure]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AI and agentic systems generate vast amounts of metrics from distributed components — model inference endpoints, agent microservices, GPU/TPU resources, and data pipelines — but traditional monitoring tools struggle with the cardinality and dimensionality of these metrics. Prometheus provides a purpose-built pull-based metrics system with multi-dimensional labeling, powerful PromQL querying, and integrated alerting designed for ephemeral, horizontally-scaled infrastructure common in ML deployments.
+
+use_cases:
+  - "Monitor ML model inference latency and throughput across multiple serving endpoints"
+  - "Track GPU/TPU utilization and resource metrics for training and inference workloads"
+  - "Observe AI agent request rates, error rates, and response time distributions in real time"
+  - "Alert on data pipeline health, feature store freshness, and model drift in production"
+  - "Instrument multi-agent systems with custom metrics for end-to-end observability"
