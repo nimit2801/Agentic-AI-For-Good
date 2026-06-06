@@ -1,0 +1,39 @@
+name: SentencePiece
+description: Google's unsupervised text tokenizer and detokenizer for neural network text generation systems — implementing BPE and unigram language model subword algorithms with language-agnostic, purely data-driven tokenization.
+tagline: Unsupervised subword tokenization without language-specific preprocessing
+
+github_url: https://github.com/google/sentencepiece
+website_url: https://github.com/google/sentencepiece
+docs_url: https://github.com/google/sentencepiece#readme
+install_command: pip install sentencepiece
+
+category: LLM
+tags:
+  - tokenization
+  - nlp
+  - subword
+  - bpe
+  - unigram
+  - google
+  - llm
+  - text-generation
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Traditional tokenizers require language-specific pre-tokenization (splitting on spaces,
+  punctuation) which breaks for languages without clear word boundaries like Japanese,
+  Chinese, or Korean, and introduces complex pre-processing pipelines. SentencePiece
+  treats the input as a raw character stream — no language-specific pre-tokenization
+  needed — and learns subword units directly from the data using BPE or the unigram
+  language model. This makes it truly language-agnostic and enables purely end-to-end
+  neural network systems. It is the tokenizer backbone for models like T5, Gemma, Llama,
+  and many other major open-source LLMs.
+
+use_cases:
+  - Tokenize multilingual text (English, Japanese, Chinese, Korean) without language-specific preprocessing
+  - Train a custom BPE vocabulary for a domain-specific LLM (medical, legal, code) from raw text
+  - Use the unigram language model algorithm for better compression ratios on morphologically rich languages
+  - Integrate sentence-level tokenization into a production NLP pipeline for a search or translation system
+  - Pre-tokenize training data for a large language model with deterministic, reversible encoding
