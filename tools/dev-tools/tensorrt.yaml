@@ -1,0 +1,39 @@
+name: TensorRT
+description: NVIDIA's SDK for high-performance deep learning inference optimization. It compiles trained neural networks into optimized execution engines with reduced precision, kernel fusion, and memory optimization for production deployment on NVIDIA GPUs.
+tagline: High-performance deep learning inference optimization SDK
+
+github_url: https://github.com/NVIDIA/TensorRT
+website_url: https://developer.nvidia.com/tensorrt
+docs_url: https://docs.nvidia.com/deeplearning/tensorrt/
+install_command: pip install tensorrt
+
+category: Dev Tools
+tags:
+  - inference
+  - nvidia
+  - gpu
+  - cuda
+  - optimization
+  - quantization
+  - deep-learning
+  - compiler
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Deploying trained neural networks to production requires optimizing them for the
+  target GPU hardware — converting from training frameworks like PyTorch or TensorFlow,
+  applying reduced precision (FP16, INT8), fusing layers, and managing memory. Doing this
+  manually is error-prone and leaves performance on the table. TensorRT automates this
+  whole pipeline: it takes trained models from any framework, applies graph optimizations
+  and kernel auto-tuning for the specific GPU architecture, and outputs a deployable
+  inference engine that runs 2-10x faster than the unoptimized model. Without TensorRT,
+  production AI systems waste GPU cycles and deliver higher latency to users.
+
+use_cases:
+  - Deploy a production object detection model at 5x lower latency using INT8 quantization
+  - Optimize a PyTorch vision model for real-time inference on edge NVIDIA devices (Jetson)
+  - Serve high-throughput NLP models with reduced precision (FP16/INT8) in data centers
+  - Build a video analytics pipeline with sub-millisecond inference per frame on T4 GPUs
+  - Integrate with Triton Inference Server for production-grade model serving at scale
