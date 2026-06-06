@@ -1,0 +1,39 @@
+name: Core ML Tools
+description: Apple's model conversion tools for translating trained models from PyTorch, TensorFlow, and scikit-learn into the Core ML format — enabling on-device machine learning inference across iOS, macOS, watchOS, and tvOS.
+tagline: Convert ML models to Apple's Core ML format for on-device inference
+
+github_url: https://github.com/apple/coremltools
+website_url: https://coremltools.readme.io
+docs_url: https://apple.github.io/coremltools/docs-guides/
+install_command: pip install coremltools
+
+category: Dev Tools
+tags:
+  - apple
+  - ios
+  - model-conversion
+  - on-device
+  - coreml
+  - pytorch
+  - tensorflow
+  - mobile
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Deploying a PyTorch or TensorFlow model onto an iPhone or iPad requires converting
+  it to Apple's Core ML format — a process that involves graph translation, op mapping,
+  quantization, and platform-specific optimizations. Doing this manually is fragile and
+  time-consuming. Core ML Tools automates the entire conversion pipeline: it takes
+  trained models from the major frameworks, converts them to the Core ML package format
+  (.mlpackage), optimizes them for Apple Neural Engine and GPU compute, and validates
+  numerical accuracy against the original model. Without it, deploying ML on Apple devices
+  would require rewriting models from scratch in each platform's native API.
+
+use_cases:
+  - Convert a PyTorch image classifier to Core ML for real-time inference in an iOS camera app
+  - Deploy a TensorFlow object detection model on-device without network latency or cloud costs
+  - Quantize a large language model to FP16 for efficient inference on Apple Silicon Macs
+  - Integrate a scikit-learn regression model into a macOS application with zero network calls
+  - Validate converted model accuracy by comparing predictions against the original framework

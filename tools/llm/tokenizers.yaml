@@ -1,0 +1,40 @@
+name: Tokenizers
+description: Hugging Face's state-of-the-art tokenization library built in Rust for blazing-fast training and inference — used by virtually every modern LLM for subword tokenization with BPE, WordPiece, and Unigram algorithms.
+tagline: Fast subword tokenization for modern LLMs
+
+github_url: https://github.com/huggingface/tokenizers
+website_url: https://huggingface.co/docs/tokenizers
+docs_url: https://huggingface.co/docs/tokenizers/index.html
+install_command: |
+  pip install tokenizers
+
+category: LLM
+tags:
+  - tokenization
+  - nlp
+  - huggingface
+  - subword
+  - bpe
+  - rust
+  - wordpiece
+  - llm
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Tokenization is the first step in any LLM pipeline — converting raw text into integer
+  token IDs — but naive Python implementations are painfully slow for production workloads.
+  Training a BPE vocabulary on a large corpus can take hours, and tokenizing at inference
+  time becomes a bottleneck. Tokenizers solves this with a Rust core that tokenizes a
+  gigabyte of text in under 20 seconds on a single CPU. It supports all major algorithms
+  (BPE, WordPiece, Unigram) with built-in pre-processing (truncation, padding, special
+  tokens) and alignment tracking that maps tokens back to their original characters.
+  It's the engine behind virtually every model on Hugging Face Hub.
+
+use_cases:
+  - Train a BPE tokenizer on a multilingual corpus for a custom LLM in minutes instead of hours
+  - Tokenize billions of tokens for a production LLM serving pipeline with sub-millisecond latency
+  - Convert between tokenizer formats (WordPiece → BPE) when switching model architectures
+  - Add padding and truncation to batches automatically for efficient GPU utilization
+  - Track token-to-character alignment for span-level tasks like NER and question answering
