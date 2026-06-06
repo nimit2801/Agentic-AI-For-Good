@@ -1,0 +1,40 @@
+name: Alignment Handbook
+description: HuggingFace's robust recipes for continued pre-training and aligning language models with human and AI preferences — covering SFT, RLHF, DPO, and the full post-training pipeline for open-source LLMs.
+tagline: Production-ready recipes for LLM alignment and post-training
+
+github_url: https://github.com/huggingface/alignment-handbook
+website_url: https://huggingface.co/alignment-handbook
+docs_url: https://github.com/huggingface/alignment-handbook#readme
+install_command: pip install alignment-handbook
+
+category: Fine-tuning
+tags:
+  - rlhf
+  - dpo
+  - sft
+  - alignment
+  - huggingface
+  - llm
+  - training
+  - preferences
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Aligning language models with human preferences through RLHF, DPO, and related
+  techniques is notoriously difficult — requiring complex reward modeling, policy
+  optimization, careful hyperparameter tuning, and orchestration across multiple
+  training stages. Most teams lack the infrastructure and expertise to reproduce
+  results from papers like InstructGPT or Llama 2. The Alignment Handbook provides
+  complete, battle-tested training recipes that span the entire post-training pipeline:
+  supervised fine-tuning (SFT), reward modeling, and reinforcement learning from human
+  or AI feedback (RLHF/DPO). It ships with configs, datasets, and evaluation harnesses
+  that work out of the box with popular open-source model families.
+
+use_cases:
+  - Fine-tune a Llama 3 model with DPO to reduce refusals and improve helpfulness
+  - Reproduce the InstructGPT alignment pipeline on an open-source 7B model
+  - Train a reward model on preference data for use in RLHF-based alignment
+  - Run the complete SmolLM3 post-training recipe including supervised and preference stages
+  - Benchmark alignment techniques (DPO vs PPO vs KTO) on the same base model architecture

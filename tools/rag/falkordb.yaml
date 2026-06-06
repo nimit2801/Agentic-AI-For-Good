@@ -1,0 +1,41 @@
+name: FalkorDB
+description: A high-performance, multi-tenant graph database optimized for generative AI workloads — powering knowledge graphs, agent memory, RAG pipelines, and graph-based retrieval with native Cypher query support.
+tagline: Ultra-fast graph database for AI knowledge graphs and agent memory
+
+github_url: https://github.com/FalkorDB/FalkorDB
+website_url: https://www.falkordb.com
+docs_url: https://docs.falkordb.com
+install_command: |
+  docker run -p 6379:6379 falkordb/falkordb:latest
+
+category: RAG
+tags:
+  - graph-database
+  - knowledge-graph
+  - rag
+  - agent-memory
+  - cypher
+  - vector-search
+  - gen-ai
+  - in-memory
+pricing: free
+is_open_source: true
+license: SSPL-1.0
+
+problem_solved: |
+  Building knowledge graphs for AI applications — especially for RAG, agent memory,
+  and multi-hop reasoning — requires a database that can traverse complex relationships
+  at millisecond latency. Traditional graph databases weren't designed for AI workloads,
+  and vector databases lack relational reasoning. FalkorDB bridges this gap with a
+  purpose-built graph database that natively supports Cypher queries, vector similarity
+  search, and real-time traversals in a single system. It runs in-memory for sub-millisecond
+  query performance and supports multi-tenancy for serving multiple AI agents or tenants
+  from a single instance. This makes it ideal for agentic memory systems that need to store,
+  update, and query structured knowledge at inference time.
+
+use_cases:
+  - Build a persistent knowledge graph for an AI agent that remembers entities and relationships across sessions
+  - Power a multi-hop RAG pipeline that traverses relationships between documents, entities, and facts
+  - Store and query agentic memory with temporal awareness for long-running autonomous agents
+  - Run graph-based retrieval augmented generation over structured enterprise knowledge
+  - Detect fraud or security threats by traversing relationship patterns in real-time financial data

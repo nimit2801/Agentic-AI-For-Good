@@ -1,0 +1,41 @@
+name: Codex
+description: OpenAI's lightweight coding agent that runs locally in your terminal — capable of understanding codebases, making multi-file edits, running commands, and autonomously completing software engineering tasks.
+tagline: Local AI coding agent from OpenAI
+
+github_url: https://github.com/openai/codex
+website_url: https://chatgpt.com/codex
+docs_url: https://github.com/openai/codex#readme
+install_command: |
+  npm install -g @openai/codex
+
+category: Dev Tools
+tags:
+  - coding-agent
+  - openai
+  - cli
+  - terminal
+  - autonomous-coding
+  - code-generation
+  - developer-tools
+  - agent
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Traditional AI coding assistants work inside an IDE and help with individual edits,
+  but they break down on multi-file refactors, complex bug fixes, and end-to-end feature
+  implementation that requires understanding the full codebase, running tests, and iterating
+  on feedback. Codex solves this as a standalone terminal agent that indexes your entire
+  repository, understands your build system and dependency graph, and autonomously plans,
+  implements, and verifies changes across multiple files. It runs locally, uses your existing
+  terminal environment, and can execute commands, interpret error output, and self-correct.
+  For developers working on complex features or unfamiliar codebases, this transforms the
+  coding workflow from "write every line" to "review and approve well-tested patches."
+
+use_cases:
+  - Implement a complete feature across 15+ files including tests, migrations, and documentation
+  - Debug a production issue by tracing through the call stack, running reproduction scripts, and proposing fixes
+  - Refactor a legacy module to use modern patterns while keeping all existing tests passing
+  - Onboard to a new codebase by asking Codex to explain the architecture and generate reference implementations
+  - Automate repetitive code review and refactoring tasks that span multiple repository packages
