@@ -1,0 +1,41 @@
+name: MediaPipe
+description: Google's cross-platform framework for building multimodal ML applications that run on device — providing pre-built solutions for vision, text, and audio tasks, with ready-to-use models and APIs for Android, iOS, web, and Python.
+tagline: On-device machine learning for everyone
+
+github_url: https://github.com/google-ai-edge/mediapipe
+website_url: https://ai.google.dev/edge/mediapipe
+docs_url: https://developers.google.com/mediapipe
+install_command: |
+  pip install mediapipe
+  npm install @mediapipe/tasks-vision
+
+category: Dev Tools
+tags:
+  - computer-vision
+  - on-device
+  - mobile
+  - web
+  - machine-learning
+  - google
+  - pose-estimation
+  - object-detection
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Building real-time ML features like hand tracking, pose estimation, or object detection
+  from scratch requires deep expertise in computer vision, model optimization for the
+  target device, and platform-specific deployment code. Most teams have neither the
+  time nor the specialized knowledge to train and ship custom vision models on mobile
+  or web. MediaPipe solves this by providing production-ready, pre-trained models and
+  cross-platform APIs that run entirely on-device — no cloud calls, no latency, no
+  privacy concerns. Developers integrate a few lines of code and get real-time ML
+  capabilities that work across Android, iOS, web, and Python with consistent APIs.
+
+use_cases:
+  - Add real-time hand tracking to a web AR/VR application using the web API
+  - Deploy on-device object detection on Android without network connectivity or cloud costs
+  - Build a pose estimation app for fitness coaching that runs at 30 FPS on mobile devices
+  - Integrate face landmark detection into a video conferencing app for virtual backgrounds
+  - Classify text or audio on-device for privacy-sensitive applications like health monitoring

@@ -1,0 +1,40 @@
+name: Accelerate
+description: Hugging Face's lightweight library for running PyTorch training scripts on any distributed configuration — multi-GPU, TPU, mixed precision, FSDP, and DeepSpeed — without rewriting the training loop. Just add an Accelerator object.
+tagline: Run raw PyTorch training on any device configuration
+
+github_url: https://github.com/huggingface/accelerate
+website_url: https://huggingface.co/docs/accelerate
+docs_url: https://huggingface.co/docs/accelerate/index.html
+install_command: pip install accelerate
+
+category: Fine-tuning
+tags:
+  - pytorch
+  - distributed-training
+  - multi-gpu
+  - mixed-precision
+  - huggingface
+  - training
+  - deepspeed
+  - fsdp
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Writing distributed training code for PyTorch is a swamp of boilerplate: setting up
+  process groups, handling gradient accumulation, managing device placement, configuring
+  mixed precision, and integrating with DeepSpeed or FSDP. Each of these has its own
+  API and gotchas, and getting them wrong silently corrupts training or wastes GPUs.
+  Accelerate abstracts all of this into a single Accelerator class. You write standard
+  PyTorch training loops, add one line — accelerator = Accelerator() — and suddenly
+  your script runs on single GPU, multi-GPU, multi-node, TPU, or mixed precision
+  without any code changes. This is essential infrastructure for fine-tuning LLMs
+  and large models where distributed training is non-negotiable.
+
+use_cases:
+  - Fine-tune Llama 3 on 8 GPUs with DeepSpeed ZeRO-3 without writing any distributed code
+  - Run mixed-precision (fp16/bf16) training on consumer GPUs with minimal VRAM overhead
+  - Launch a multi-node training job across 4 machines with a single `accelerate launch` command
+  - Use FSDP to fine-tune a 70B parameter model across 16 A100s without OOM errors
+  - Profile training performance and memory usage with built-in tracking and reporting
