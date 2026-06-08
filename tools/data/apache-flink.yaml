@@ -1,0 +1,25 @@
+name: Apache Flink
+description: Apache Flink is a framework and distributed processing engine for stateful computations over unbounded and bounded data streams, with support for event-time processing, exactly-once semantics, and massive scalability across clusters.
+tagline: Stateful stream processing framework for real-time data pipelines
+
+github_url: https://github.com/apache/flink
+website_url: https://flink.apache.org/
+docs_url: https://nightlies.apache.org/flink/flink-docs-stable/
+
+install_command: |
+  pip install apache-flink
+
+category: Data
+tags: [stream-processing, real-time, etl, big-data, apache, python, scala, event-driven]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AI and data teams building real-time ML pipelines often struggle with processing continuous data streams with exactly-once guarantees, event-time semantics, and fault tolerance. Apache Flink provides a unified stream-processing engine that handles both real-time and historical data with the same APIs, enabling feature computation, anomaly detection, and ML inference on live data at massive scale.
+
+use_cases:
+  - "Build real-time feature engineering pipelines that compute ML features on streaming data with exactly-once semantics"
+  - "Detect anomalies and patterns in real-time data streams for monitoring, fraud detection, and alerting systems"
+  - "Run continuous ETL pipelines that transform and enrich streaming data for AI model training and inference"
+  - "Process unbounded event-time data with built-in watermarks, triggers, and state management"
