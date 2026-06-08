@@ -1,0 +1,24 @@
+name: Apache Iceberg
+description: Apache Iceberg is a high-performance table format for huge analytic datasets, bringing SQL-table reliability and simplicity to big data while enabling engines like Spark, Trino, Flink, Presto, Hive and Impala to safely work with the same tables, at the same time.
+tagline: High-performance table format for analytic data lakes
+
+github_url: https://github.com/apache/iceberg
+website_url: https://iceberg.apache.org/
+docs_url: https://iceberg.apache.org/docs/latest/
+
+install_command: pip install pyiceberg
+
+category: Data
+tags: [data-lake, table-format, parquet, analytics, big-data, apache, python]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Data lakes built on object storage like S3 lack ACID transactions, schema enforcement, and consistent snapshots, making reliable analytics and ML data pipelines difficult to maintain. Apache Iceberg provides a high-performance table format that adds SQL-like transactional guarantees, time-travel queries, schema evolution, and partition evolution on top of existing data lakes, enabling multiple query engines to operate on the same data safely and concurrently.
+
+use_cases:
+  - Build reliable lakehouse architectures with ACID transactions and consistent snapshots on object storage
+  - "Run concurrent analytical workloads from Spark, Trino, Flink, and Hive on the same tables without data corruption"
+  - "Enable time-travel queries for ML training data versioning, auditing, and rollback"
+  - Evolve table schemas and partition layouts without rewriting data or blocking reads and writes

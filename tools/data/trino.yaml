@@ -1,0 +1,26 @@
+name: Trino
+description: Trino is a fast distributed SQL query engine for big data analytics, enabling teams to query data across object storage, relational databases, and other data sources from a single SQL interface without moving data.
+tagline: Distributed SQL query engine for big data analytics
+
+github_url: https://github.com/trinodb/trino
+website_url: https://trino.io
+docs_url: https://trino.io/docs/current/
+
+install_command: |
+  docker run --name trino -d -p 8080:8080 trinodb/trino
+  pip install trino
+
+category: Data
+tags: [sql, query-engine, analytics, big-data, data-lake, federated-query, python]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AI and data teams often need to query data spread across multiple systems—object storage, relational databases, data lakes, and streaming systems—each with its own interface and query language. Trino provides a single ANSI SQL interface to query data in-place across any source, without moving or copying it, enabling federated analytics, large-scale ETL, and ML data exploration at petabyte scale.
+
+use_cases:
+  - "Query data across data lakes, relational databases, and streaming systems from a single SQL interface"
+  - Run petabyte-scale analytical queries for ML feature exploration and data preparation
+  - Build federated analytics pipelines that join data across object storage (S3/GCS) and operational databases
+  - "Power BI and dashboarding tools with sub-second queries on large datasets via Trino's distributed engine"
