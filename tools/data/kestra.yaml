@@ -1,0 +1,41 @@
+name: Kestra
+description: Kestra is an open-source event-driven orchestration and scheduling platform for data, AI, and infrastructure workflows. It unifies scheduled and event-driven automation behind a declarative YAML interface with a rich plugin ecosystem of 1,200+ plugins, an intuitive UI, and scalable high-availability architecture.
+tagline: Event-driven orchestration for data, AI, and infrastructure workflows
+
+github_url: https://github.com/kestra-io/kestra
+website_url: https://kestra.io
+docs_url: https://kestra.io/docs
+
+install_command: docker run --pull=always -d --name kestra -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock kestra/kestra:latest server local
+
+category: Data
+tags:
+  - orchestration
+  - workflow-automation
+  - data-pipeline
+  - ETL
+  - event-driven
+  - scheduling
+  - infrastructure-as-code
+  - data-engineering
+  - java
+pricing: free
+is_open_source: true
+license: Apache 2.0
+
+problem_solved: |
+  Managing complex multi-step workflows across data pipelines, AI/ML training, and
+  infrastructure provisioning typically requires stitching together multiple tools
+  (schedulers, event triggers, state machines) with inconsistent configuration and
+  no unified observability. Kestra provides a single declarative YAML platform for
+  authoring, scheduling, and monitoring workflows — from simple cron-driven jobs to
+  event-triggered multi-tool data pipelines — with built-in retries, error handling,
+  version control, and 1,200+ plugins for databases, cloud services, and scripting
+  languages.
+
+use_cases:
+  - "Orchestrate end-to-end data pipelines: ingest from Airbyte or Fivetran, transform with dbt, and load into Snowflake or BigQuery"
+  - Trigger AI/ML training pipelines on new data arrival with event-driven workflows
+  - Automate cloud infrastructure provisioning alongside scheduled data processing jobs
+  - Build CI/CD pipeline automation with Git-triggered deployments and approval gates
+  - Coordinate multi-tool business processes across SaaS APIs, databases, and scripts

@@ -1,0 +1,42 @@
+name: Headroom
+description: Headroom is an open-source context compression layer for AI agents that reduces tool outputs, logs, files, and RAG chunks by 60-95% before they reach the LLM. It works as a Python/TypeScript library, a proxy server, an MCP server, or an agent wrapper — all without changing your existing agent code.
+tagline: Compress tool outputs, logs, and files by 60-95% before they reach the LLM
+
+github_url: https://github.com/chopratejas/headroom
+website_url: https://headroomlabs.ai
+docs_url: https://headroom-docs.vercel.app/docs
+
+install_command: |
+  pip install "headroom-ai[all]"
+  npm install headroom-ai
+
+category: Dev Tools
+tags:
+  - token-compression
+  - context-optimization
+  - llm
+  - agent
+  - mcp
+  - proxy
+  - python
+  - typescript
+  - rag
+pricing: free
+is_open_source: true
+license: Apache 2.0
+
+problem_solved: |
+  AI agents routinely consume massive context windows filled with verbose tool outputs,
+  logs, files, and RAG results, leading to high API costs, slow response times, and
+  context window exhaustion. Headroom compresses agentic context by 60-95% using
+  content-aware compressors (AST-aware code compression, JSON compression, and an ML
+  model trained on agentic traces), while preserving answer quality through reversible
+  compression — originals are stored locally and retrieved on demand when the LLM needs
+  full details.
+
+use_cases:
+  - "Wrap Claude Code, Cursor, Codex, or Aider to compress tool outputs by 60-95% and reduce API costs"
+  - Compress RAG chunks before injecting them into LLM context to fit 4x more information
+  - Run as a transparent proxy to compress all LLM-bound traffic without any code changes
+  - Use as an MCP server for shared cross-agent memory with automatic deduplication
+  - Compress verbose SRE and monitoring logs before sending them to the LLM for analysis
