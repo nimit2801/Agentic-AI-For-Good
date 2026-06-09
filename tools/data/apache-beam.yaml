@@ -1,0 +1,24 @@
+name: Apache Beam
+description: Apache Beam is a unified programming model for defining and executing batch and streaming data processing pipelines. It provides portable SDKs in Python, Java, and Go, and runs on multiple runners including Apache Flink, Spark, and Google Cloud Dataflow.
+tagline: Unified batch and stream processing framework
+
+github_url: https://github.com/apache/beam
+website_url: https://beam.apache.org/
+docs_url: https://beam.apache.org/documentation/
+
+install_command: pip install apache-beam
+
+category: Data
+tags: [stream-processing, batch-processing, etl, big-data, apache, python, java, go, data-pipeline]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Machine learning and data engineering teams often need to process data in both batch and streaming modes but end up maintaining separate codebases with different APIs. Apache Beam solves this by providing a single, portable programming model for both batch and stream processing, with the same pipeline code running on any execution engine. This eliminates duplicate logic, simplifies pipeline maintenance, and enables teams to transition seamlessly from batch to real-time as their use cases evolve.
+
+use_cases:
+  - "Build unified ETL pipelines that process historical batch data and streaming data with the same codebase and APIs"
+  - "Run machine learning inference pipelines on streaming data with exactly-once processing semantics"
+  - "Port data processing pipelines across execution engines (Flink, Spark, Dataflow) without rewriting application code"
+  - "Create feature engineering pipelines that compute training features from both batch backfills and live streams"

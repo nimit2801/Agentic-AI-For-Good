@@ -1,0 +1,26 @@
+name: Apache Druid
+description: Apache Druid is a high-performance real-time analytics database designed for OLAP queries on large datasets. It excels at ingesting streaming and batch data with sub-second query latency, supporting SQL, time-series analysis, and interactive dashboards at scale.
+tagline: Real-time OLAP database for high-performance analytics
+
+github_url: https://github.com/apache/druid
+website_url: https://druid.apache.org/
+docs_url: https://druid.apache.org/docs/latest/
+
+install_command: |
+  curl -O https://dlcdn.apache.org/druid/37.0.0/apache-druid-37.0.0-bin.tar.gz
+  tar -xzf apache-druid-37.0.0-bin.tar.gz
+
+category: Data
+tags: [database, olap, analytics, real-time, big-data, apache, java, time-series]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Data teams building real-time analytics applications often struggle with query latency on large-scale time-series and event data using traditional databases. Apache Druid solves this by providing a purpose-built OLAP database that ingests streaming data in real time, automatically partitions and indexes data for sub-second queries, and supports interactive exploration across billions of rows — enabling AI monitoring dashboards, user-facing analytics, and operational intelligence at scale.
+
+use_cases:
+  - "Power real-time analytics dashboards for AI monitoring systems tracking model performance and inference metrics"
+  - "Ingest and query streaming event data for operational intelligence, anomaly detection, and user behavior analytics"
+  - "Run high-concurrency OLAP queries with sub-second latency on large-scale time-series datasets"
+  - "Build user-facing analytics applications with interactive filtering, drill-downs, and aggregations on billions of rows"

@@ -1,0 +1,26 @@
+name: Apache Pinot
+description: Apache Pinot is a real-time distributed OLAP datastore built for delivering instant analytics on large-scale, high-throughput data. It supports low-latency ingestion from streaming sources like Kafka and serves queries with sub-second response times, making it ideal for user-facing analytics and business intelligence.
+tagline: Real-time distributed OLAP datastore for instant analytics
+
+github_url: https://github.com/apache/pinot
+website_url: https://pinot.apache.org/
+docs_url: https://docs.pinot.apache.org/
+
+install_command: |
+  docker pull apachepinot/pinot:latest
+  docker run -p 9000:9000 apachepinot/pinot:latest QuickStart -type batch
+
+category: Data
+tags: [database, olap, analytics, real-time, big-data, apache, java, streaming, kafka]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Organizations building user-facing analytics and real-time dashboards often struggle with high query latency and low ingestion throughput when handling large-scale event data in traditional databases. Apache Pinot solves this by providing a horizontally scalable OLAP datastore that ingests from streaming sources with millisecond-level freshness, automatically indexes and compresses data for efficient storage, and serves complex aggregation queries with sub-second latency at high concurrency.
+
+use_cases:
+  - "Serve real-time analytics dashboards for AI model monitoring, user-facing metrics, and operational intelligence"
+  - "Ingest and query high-throughput streaming event data from Kafka for instant business insights and anomaly detection"
+  - "Power interactive OLAP workloads with sub-second query response times on multi-billion-row datasets"
+  - "Build customer-facing analytics features that require high concurrency and low latency on real-time data"
