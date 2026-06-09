@@ -1,0 +1,39 @@
+name: Rerankers
+description: Rerankers is a lightweight Python library that provides a unified API for using all common reranking and cross-encoder models — including cross-encoders, RankGPT, FlashRank (ONNX), ColBERT, Cohere, Jina, and more. It offers a single Reranker class with a consistent rank() interface across local and API-based models.
+tagline: A unified API for all common reranking and cross-encoder models
+
+github_url: https://github.com/AnswerDotAI/rerankers
+docs_url: https://github.com/AnswerDotAI/rerankers
+
+install_command: |
+  pip install "rerankers[transformers]"
+  pip install "rerankers[all]"
+
+category: RAG
+tags:
+  - reranking
+  - retrieval
+  - rag
+  - cross-encoder
+  - information-retrieval
+  - nlp
+  - python
+  - search
+pricing: free
+is_open_source: true
+license: Apache 2.0
+
+problem_solved: |
+  Reranking is a critical step in high-quality RAG pipelines, but each reranking method
+  — cross-encoders, RankGPT, FlashRank, Cohere API, ColBERT — has its own API,
+  dependencies, and deployment requirements. Rerankers eliminates this fragmentation
+  with a single Reranker class that provides a consistent rank() interface across 10+
+  reranking backends, allowing developers to easily experiment with, benchmark, and
+  switch between reranking strategies without changing application code.
+
+use_cases:
+  - "Rerank initial retrieval results from vector search or BM25 to improve RAG pipeline quality"
+  - Experiment with different reranking strategies (cross-encoder, RankGPT, FlashRank, ColBERT) using a single API
+  - Deploy CPU-friendly reranking with FlashRank ONNX models for low-latency production use
+  - Use API-based reranking from Cohere, Jina, or Voyage without managing local model infrastructure
+  - Benchmark and compare reranking approaches on custom datasets to select the best strategy for a given domain
