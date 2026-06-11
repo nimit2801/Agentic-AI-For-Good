@@ -40,8 +40,8 @@ const links = [
     tag: 'Open Source',
   },
   {
-    label: 'Offline Meetup',
-    description: 'Our first physical meetup! Sat May 23, 4-7 PM in Bengaluru. Co-hosted with project humans in the loop. Builders, founders, demos, conversations.',
+    label: 'Offline Meetup — Bengaluru',
+    description: 'Our first physical meetup! Sat May 23, 4-7 PM in Bengaluru. Co-hosted with Project Humans in the Loop. Builders, founders, demos, conversations.',
     href: 'https://luma.com/4xc1g1hc',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
@@ -50,11 +50,40 @@ const links = [
       </svg>
     ),
     accent: '#D4754E',
-    tag: 'IRL Event',
+    tag: 'Upcoming',
+  },
+  {
+    label: 'Vibe with Hermes Agent',
+    description: 'Community gathering for builders exploring Hermes. Jun 13, 10AM-4PM at 2586Labs, Indiranagar, Bengaluru. Talk by Nimit Savant + co-build session.',
+    href: 'https://luma.com/51qkhk0q',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
+        <path d="M12 2L2 7l10 5 10-5-10-5z" />
+        <path d="M2 17l10 5 10-5" />
+        <path d="M2 12l10 5 10-5" />
+      </svg>
+    ),
+    accent: '#D4754E',
+    tag: 'Jun 13',
+  },
+  {
+    label: 'After OSS India — Mumbai Mixer',
+    description: 'Curated evening for India\'s AI & OSS builders. Jun 17, 5:30-8PM in Mumbai. Co-hosted with Shubhangi Gupta, Neo4j & Qualcomm. No talks — just builders.',
+    href: 'https://luma.com/5r86uitl',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
+        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+        <circle cx="9" cy="7" r="4" />
+        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+      </svg>
+    ),
+    accent: '#D4754E',
+    tag: 'Jun 17',
   },
   {
     label: 'Episode 1 — OpenClaw',
-    description: 'Watch our first live session on personal AI and open agent architectures.',
+    description: 'Our first live session on personal AI and open agent architectures.',
     href: 'https://www.linkedin.com/events/7460580585044881409?viewAsMember=true',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
@@ -62,7 +91,7 @@ const links = [
       </svg>
     ),
     accent: '#0A66C2',
-    tag: 'Episode 1',
+    tag: 'Past',
   },
   {
     label: 'Episode 2 — Personal AI Agents',
@@ -74,7 +103,7 @@ const links = [
       </svg>
     ),
     accent: '#0A66C2',
-    tag: 'Episode 2',
+    tag: 'Past',
   },
 ]
 
