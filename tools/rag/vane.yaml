@@ -1,0 +1,26 @@
+name: Vane
+description: An open-source AI-powered answering engine (formerly Perplexica) that provides source-cited, context-aware answers using RAG, SearxNG, and your choice of LLM — fully self-hostable with Docker.
+tagline: Open-source AI answering engine with source citations
+
+github_url: https://github.com/ItzCrazyKns/Vane
+website_url: https://github.com/ItzCrazyKns/Vane
+
+install_command: |
+  docker run -d -p 3000:3000 -v vane-data:/home/vane/data --name vane itzcrazykns1337/vane:latest
+
+category: RAG
+tags: [rag, search-engine, answering-engine, self-hosted, docker, open-source, perplexica, searxng]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Proprietary AI search engines (Perplexity, Gemini, etc.) require sending queries to third-party servers, raising privacy concerns and offering no customization. Vane solves this with a fully self-hosted answering engine that combines RAG, SearxNG web search, and your choice of LLM — delivering source-cited answers with complete data sovereignty, custom model support, and no usage limits.
+
+use_cases:
+  - "Privacy-preserving research: get source-cited answers to complex questions without sending data to third-party AI services"
+  - "Custom RAG deployment: self-host an AI search engine with your choice of LLM, embedding model, and search backend"
+  - "Enterprise knowledge base search: deploy internally to provide AI-powered search over company documents and internal wikis"
+  - "Academic research: use source-cited answering with automatic citation generation for literature reviews"
+  - "Developer documentation search: integrate with local documentation to provide contextual answers about internal APIs and codebases"
+  - "Offline-capable search: run fully offline with local LLMs for air-gapped environments and sensitive applications"
