@@ -1,0 +1,26 @@
+name: Supervision
+description: A reusable computer vision toolkit that provides a unified Detections object with converters for popular model formats (Ultralytics, Transformers, MMDetection, Roboflow Inference), plus ready-made annotators, dataset tools, tracking, and zone counting utilities.
+tagline: We write your reusable computer vision tools
+
+github_url: https://github.com/roboflow/supervision
+website_url: https://supervision.roboflow.com
+docs_url: https://supervision.roboflow.com/latest/
+
+install_command: pip install supervision
+
+category: Other
+tags: [computer-vision, object-detection, annotation, tracking, python, open-source, video-processing, yolo]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Traditional computer vision workflows require custom code for visualizing detections, tracking objects, and managing datasets — forcing developers to reimplement boilerplate for every project. Supervision provides a unified, model-agnostic toolkit with ready-made annotators (boxes, masks, labels, keypoints), ByteTrack integration, zone-based counting, dataset converters (COCO, YOLO, Pascal VOC), and speed estimation that works across popular CV frameworks. This cuts development time from days to minutes for common computer vision tasks.
+
+use_cases:
+  - "Object detection: draw bounding boxes, masks, labels, and keypoints on images and video streams with customizable annotators"
+  - "Multi-object tracking with ByteTrack for consistent object IDs across video frames"
+  - "Zone-based counting: track objects entering and exiting defined polygonal zones for traffic or retail analytics"
+  - Speed estimation using perspective transformation and tracking data for vehicle monitoring
+  - "Dataset management: load, split, merge, and save datasets in COCO, YOLO, and Pascal VOC formats"
+  - Video processing with detection, tracking, and annotation applied frame-by-frame to live or recorded streams

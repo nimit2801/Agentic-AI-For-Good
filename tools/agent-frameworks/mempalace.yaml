@@ -1,0 +1,26 @@
+name: MemPalace
+description: A local-first AI memory system that stores conversation history and project data as verbatim text with semantic retrieval, pluggable backends (ChromaDB, SQLite, Qdrant, pgvector), and zero API calls. Achieves 96.6% R@5 recall on LongMemEval.
+tagline: The best-benchmarked open-source AI memory system
+
+github_url: https://github.com/MemPalace/mempalace
+website_url: https://mempalaceofficial.com
+docs_url: https://mempalaceofficial.com/guide/getting-started.html
+
+install_command: pip install mempalace
+
+category: Agents
+tags: [memory, agents, chromadb, mcp, python, open-source, local-first, knowledge-graph, embedding]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  AI agents lack persistent memory across sessions, forcing them to treat every interaction as a blank slate — context is lost, decisions are repeated, and long-term projects require constant re-explanation. MemPalace solves this with a local-first, verbatim memory system that stores full conversation and project data, retrieves it via semantic search without API calls, and integrates with Claude Code, Codex CLI, and Cursor through an MCP server. No cloud dependencies, no API costs, no context limits.
+
+use_cases:
+  - "AI Agent Persistent Memory: give agents like Claude Code and Codex CLI cross-session memory without any API costs"
+  - "Project Context Retention: mine codebases and documentation so AI remembers architecture decisions and code patterns"
+  - "Knowledge Graph for Agents: track entities, relationships, and temporal facts about who worked on what and when"
+  - "Contradiction Detection: identify when new information conflicts with stored memories for data integrity"
+  - IDE integration with auto-save hooks for Cursor, Claude Code, and Codex CLI
+  - Fully offline memory for organizations that cannot use cloud AI services due to privacy requirements
