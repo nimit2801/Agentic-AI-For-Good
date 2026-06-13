@@ -1,0 +1,29 @@
+name: Apache Hudi
+description: A data lake management platform that enables incremental data processing, upserts, and deletes on big data, providing ACID transactions and time-travel queries on data lakes.
+tagline: Incremental data processing for data lakes
+
+github_url: https://github.com/apache/hudi
+website_url: https://hudi.apache.org/
+
+install_command: |
+  # Via Spark packages:
+  spark-shell --packages org.apache.hudi:hudi-spark-bundle:0.15.0
+  # Via Maven:
+  # Add hudi-spark-bundle to pom.xml
+
+category: Data
+tags: [data-lake, big-data, spark, apache, java, data-processing, incremental, etl]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Traditional data lakes lack ACID transactions and cannot efficiently handle incremental updates, deletions, or point-in-time queries. Apache Hudi solves this by bringing database-style upserts, deletes, and incremental pull capabilities to data lakes — enabling real-time ingestion, streaming ETL, and time-travel queries on object stores like S3 and HDFS with existing Spark and Flink pipelines.
+
+use_cases:
+  - "Streaming data ingestion: upsert real-time event streams into data lakes with ACID guarantees and no data loss"
+  - "Change data capture (CDC): capture and apply database changelogs to data lakes for analytics without full recomputes"
+  - "Data lake de-duplication: remove duplicate records from large-scale data lakes without reprocessing entire datasets"
+  - "Time-travel queries: query historical versions of data for audit trails, regulatory compliance, and debugging"
+  - "Incremental ETL: process only changed records since the last pipeline run, reducing compute costs by orders of magnitude"
+  - "Unified batch and streaming: run both batch and streaming workloads on the same dataset with consistent guarantees"

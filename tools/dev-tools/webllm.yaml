@@ -1,0 +1,26 @@
+name: WebLLM
+description: A high-performance in-browser LLM inference engine that runs large language models directly in the browser via WebGPU, enabling private, offline, and serverless AI chat and completion.
+tagline: High-performance LLM inference in the browser
+
+github_url: https://github.com/mlc-ai/web-llm
+website_url: https://webllm.mlc.ai
+docs_url: https://webllm.mlc.ai/docs
+
+install_command: npm install @mlc-ai/web-llm
+
+category: Dev Tools
+tags: [llm, webgpu, browser, inference, javascript, typescript, webassembly, mlc-ai]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Running LLMs typically requires powerful cloud GPUs or dedicated local hardware, creating dependency on server infrastructure, introducing latency, and raising data privacy concerns. WebLLM solves this by leveraging WebGPU to run full LLMs directly in the browser at near-native speed — enabling completely private, offline-capable AI chat, completion, and agent capabilities that never send data to external servers and require zero server-side infrastructure.
+
+use_cases:
+  - "Private AI chat: run LLM-powered chat applications entirely in-browser with no data ever leaving the user's device"
+  - "Offline AI assistant: provide AI assistance in air-gapped environments, remote locations, or on personal devices without internet"
+  - "Serverless AI applications: build LLM-powered web apps that need no backend infrastructure for inference, reducing hosting costs"
+  - "Educational demos: create interactive browser demos of LLM capabilities that work instantly without API keys or setup"
+  - "Privacy-sensitive workflows: process confidential documents and queries with AI on-device for regulated industries"
+  - "Edge computing: deploy LLM-powered tools to edge devices where cloud connectivity is unreliable or expensive"
