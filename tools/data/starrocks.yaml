@@ -1,0 +1,21 @@
+name: StarRocks
+description: World's fastest open query engine for sub-second analytics on and off the data lakehouse, with support for real-time and ad-hoc queries.
+tagline: High-performance analytics database
+problem_solved: >
+  Analytics workloads on large datasets are slow and expensive with traditional databases, especially for real-time and ad-hoc queries across data lakehouses. StarRocks delivers best-in-class performance for multi-dimensional analytics, real-time queries, and high-concurrency workloads with a MySQL-compatible interface and support for data lake analytics.
+category: Data
+github_url: https://github.com/StarRocks/starrocks
+website_url: https://starrocks.io
+docs_url: https://docs.starrocks.io
+install_command: |
+  curl -sSOL https://download.starrocks.io/starrocks/StarRocks-3.3.0.tar.gz
+  tar -xzf StarRocks-3.3.0.tar.gz
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+tags: [analytics, olap, data-warehouse, real-time, lakehouse, sql, big-data]
+
+use_cases:
+  - "Real-time analytics: query streaming data with sub-second latency for dashboards, monitoring, and AI applications"
+  - "Data lakehouse analytics: query data directly on data lakes (Iceberg, Hudi, Delta Lake) without moving or copying data"
+  - "High-concurrency BI: serve thousands of concurrent dashboard and reporting queries with consistent low latency"
