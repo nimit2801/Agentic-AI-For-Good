@@ -1,0 +1,28 @@
+name: Apache Superset
+description: |-
+  Apache Superset is an open-source data visualization and exploration platform that enables teams to build interactive dashboards, explore datasets with SQL, and create rich charts — all through a web UI. It connects to any SQL-based data source (PostgreSQL, BigQuery, Snowflake, etc.) and requires no specialized BI engineering to deploy.
+tagline: Modern data exploration and visualization platform
+
+website_url: https://superset.apache.org
+docs_url: https://superset.apache.org/docs/intro
+github_url: https://github.com/apache/superset
+
+install_command: |
+  pip install apache-superset
+  superset db upgrade && superset init
+
+category: Data
+tags: [data-visualization, bi, dashboards, analytics, sql, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AI teams working with ML pipelines produce enormous amounts of model metrics, training logs, evaluation results, and feature distributions — but most teams lack a lightweight, self-service BI layer that connects directly to their existing data warehouses without expensive licensing or complex setup. Commercial BI tools are costly and impose vendor lock-in, while coding dashboards from scratch is time-consuming and hard to maintain. Apache Superset solves this by providing a free, self-hosted data visualization platform with a rich chart library, SQL IDE, and fine-grained access control that connects to any SQL database and deploys in minutes.
+
+use_cases:
+  - "Monitor ML model performance metrics in real-time dashboards connected to your production inference database"
+  - "Explore training datasets and feature distributions with ad-hoc SQL queries and interactive visualizations"
+  - "Build team-facing analytics dashboards for experiment tracking results and A/B test outcomes"
+  - "Share annotated data exploration notebooks with non-technical stakeholders via embedded charts"
+  - "Create automated report dashboards that refresh on a schedule and alert on metric threshold breaches"
