@@ -1,0 +1,25 @@
+name: Datadog
+description: |-
+  Datadog is a comprehensive observability and monitoring platform for cloud-scale applications, providing infrastructure monitoring, application performance management, log management, and real-time user monitoring. It integrates with AI/ML workloads to track model performance, resource utilization, and inference latency across distributed systems.
+tagline: Cloud-scale observability and monitoring platform
+
+website_url: https://www.datadoghq.com
+docs_url: https://docs.datadoghq.com
+github_url: https://github.com/DataDog/datadog-agent
+
+install_command: pip install datadog
+
+category: Monitoring
+tags: [monitoring, observability, apm, logging, infrastructure, tracing, metrics]
+pricing: paid
+is_open_source: false
+
+problem_solved: |
+  AI and ML teams running production models face a visibility problem: model inference happens across distributed infrastructure (GPU clusters, container orchestration, serverless functions), and traditional monitoring tools weren't designed to track ML-specific metrics like inference latency, token throughput, GPU utilization, and model drift alongside standard infrastructure health. Datadog solves this by providing a unified observability platform that correlates ML model performance metrics with the underlying infrastructure, enabling teams to quickly diagnose whether a spike in inference latency is caused by model changes, infrastructure bottlenecks, or data pipeline issues — all in a single dashboard with built-in alerting and automation.
+
+use_cases:
+  - "Monitor GPU utilization, memory usage, and inference latency across your model serving infrastructure in real-time dashboards"
+  - "Correlate LLM response times and token throughput with underlying compute resource metrics to optimize model deployment costs"
+  - "Set up alerts for model performance degradation that trigger automated rollbacks or auto-scaling of inference endpoints"
+  - "Trace requests end-to-end through your AI pipeline — from user query through embedding generation to LLM inference and response"
+  - "Aggregate and search model logs, input prompts, and output responses alongside infrastructure telemetry for unified debugging"
