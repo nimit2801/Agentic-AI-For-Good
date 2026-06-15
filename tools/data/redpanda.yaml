@@ -1,0 +1,26 @@
+name: Redpanda
+description: |-
+  Redpanda is a streaming data platform that is fully Apache Kafka API-compatible but 10x faster, with no ZooKeeper dependency and no JVM overhead. It is built from the ground up in C++ for low-latency, high-throughput event streaming, making it ideal for real-time AI inference pipelines and event-driven architectures.
+tagline: Kafka-compatible streaming data platform, 10x faster, no JVM
+
+website_url: https://redpanda.com
+docs_url: https://docs.redpanda.com
+github_url: https://github.com/redpanda-data/redpanda
+
+install_command: brew install redpanda-data/tap/redpanda
+
+category: Data
+tags: [streaming, kafka, event-streaming, real-time, data-pipeline, message-queue]
+pricing: freemium
+is_open_source: false
+license: BSL-1.1
+
+problem_solved: |
+  Real-time AI applications rely on streaming data — user events, model predictions, sensor readings, and inference results — but Apache Kafka's JVM-based architecture introduces operational complexity (ZooKeeper management, JVM tuning, high memory overhead) that makes it hard to run cost-effectively at scale. Smaller teams often lack the ops expertise to manage Kafka clusters, while larger teams burn engineering time on cluster maintenance instead of building features. Redpanda solves this by providing a drop-in Kafka API replacement written in C++, eliminating ZooKeeper, reducing memory footprint by 10x, and enabling single-binary deployment for development while scaling to production-grade clusters.
+
+use_cases:
+  - "Stream real-time model inference results and feature vectors into your vector database or feature store with Kafka-compatible producers"
+  - "Build event-driven ML pipelines that trigger retraining, monitoring alerts, or data drift detection on every new batch of incoming data"
+  - "Replace Apache Kafka in your AI infrastructure with a simpler, faster alternative that requires no JVM tuning or ZooKeeper management"
+  - "Ingest high-throughput telemetry and logs from production AI systems into your observability and monitoring stack"
+  - "Power real-time RAG pipelines by streaming new document embeddings into vector databases as they are ingested and processed"
