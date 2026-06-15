@@ -1,0 +1,25 @@
+name: Google Vertex AI
+description: |-
+  Google Vertex AI is a fully managed, end-to-end machine learning platform from Google Cloud that provides access to foundation models including Gemini, Claude, and Gemma through a unified API. It supports model customization, deployment, monitoring, and integrates with the full Google Cloud ecosystem for AI-powered application development.
+tagline: End-to-end ML platform with Gemini and foundation model access
+
+website_url: https://cloud.google.com/vertex-ai
+docs_url: https://cloud.google.com/vertex-ai/docs
+github_url: https://github.com/googleapis/python-aiplatform
+
+install_command: pip install google-cloud-aiplatform
+
+category: LLM
+tags: [llm, foundation-models, gcp, managed-service, ml-platform, enterprise]
+pricing: paid
+is_open_source: false
+
+problem_solved: |
+  Organizations building AI applications need a unified platform that handles the full ML lifecycle — from model selection and training to deployment and monitoring — but stitching together separate tools for each stage creates integration complexity and operational overhead. Google Vertex AI solves this by providing a single, managed platform that includes foundation model access (Gemini, Claude, Gemma), AutoML for custom model training, model registry and deployment, feature store, and ML monitoring, all integrated with Google Cloud's data and security services.
+
+use_cases:
+  - "Access and integrate Gemini models into applications with a unified API that supports multimodal inputs, code generation, and function calling"
+  - "Fine-tune foundation models on proprietary datasets using supervised tuning or RLHF without managing GPU infrastructure"
+  - "Deploy custom models in a serverless endpoint with automatic scaling, monitoring, and prediction logging"
+  - "Build an end-to-end ML pipeline that ingests data from BigQuery, trains a model with AutoML, and deploys it for real-time inference"
+  - "Monitor deployed models for data drift, feature attribution, and performance degradation with built-in vertex explainable AI"
