@@ -1,0 +1,42 @@
+name: NVIDIA SkillSpector
+description: >
+  NVIDIA SkillSpector is a security scanner for AI agent skills that detects
+  vulnerabilities, malicious patterns, and security risks before installation.
+  It supports scanning Git repos, URLs, zip files, directories, and single
+  files across 64 vulnerability patterns in 16 categories — including prompt
+  injection, data exfiltration, command injection, and credential leaks. Works
+  with skills from Claude Code, Codex CLI, Gemini CLI, and other AI coding
+  assistants.
+problem_solved: >
+  AI agent skills execute with implicit trust and minimal vetting. Research
+  shows that 26.1% of skills contain vulnerabilities and 5.2% show likely
+  malicious intent, yet developers have no standardized way to audit agent
+  skills before installing them from third-party sources. NVIDIA SkillSpector
+  fills this gap with a purpose-built security scanner that detects prompt
+  injection, data exfiltration, command injection, credential leaks, and other
+  attack patterns across AI agent skill formats from all major coding
+  assistants.
+tagline: Security scanner for AI agent skills
+use_cases:
+  - "Scan AI agent skills for vulnerabilities before installing from third-party sources or marketplaces"
+  - "Detect prompt injection, data exfiltration, and command injection patterns across 64 vulnerability signatures"
+  - "Audit skill repositories and CI/CD pipelines with automated multi-format scanning (Git repos, URLs, directories)"
+  - "Integrate security scanning into agent development workflows with LLM-powered analysis for false positive triage"
+  - "Enforce security policies for enterprise agent deployments across Claude Code, Codex CLI, and Gemini CLI skills"
+category: Monitoring
+tags:
+  - security
+  - ai-agents
+  - vulnerability-scanning
+  - claude-code
+  - codex
+  - prompt-injection
+  - nvidia
+pricing: free
+is_open_source: true
+license: Apache-2.0
+github_url: https://github.com/NVIDIA/skillspector
+docs_url: https://github.com/NVIDIA/skillspector/blob/main/docs/DEVELOPMENT.md
+install_command: |
+  git clone https://github.com/NVIDIA/skillspector.git
+  cd skillspector && make install
