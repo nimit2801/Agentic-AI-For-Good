@@ -1,0 +1,26 @@
+name: InfluxDB
+description: |-
+  InfluxDB is an open-source time-series database designed for high-performance storage and real-time querying of metrics, events, and telemetry data. It is widely used for monitoring infrastructure, collecting sensor data, and tracking ML model performance metrics over time, with native support for downsampling, retention policies, and continuous queries.
+tagline: Purpose-built time-series database for metrics and telemetry
+
+website_url: https://www.influxdata.com
+docs_url: https://docs.influxdata.com
+github_url: https://github.com/influxdata/influxdb
+
+install_command: pip install influxdb
+
+category: Data
+tags: [time-series-database, monitoring, metrics, telemetry, observability, iot]
+pricing: freemium
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  AI systems generate massive volumes of time-stamped data — model inference latency, GPU utilization, token throughput, request rates, memory usage, and training loss curves — but traditional relational databases and general-purpose monitoring tools struggle to efficiently ingest, store, and query this time-series data at scale. High write throughput, append-heavy workloads, and time-range queries are poorly served by row-oriented databases designed for transactional workloads. InfluxDB solves this by providing a purpose-built time-series engine with high-performance ingestion, automatic data downsampling and retention, and a SQL-like query language optimized for time-range aggregations — making it ideal for storing and analyzing the operational metrics that AI teams need to understand their system's performance over time.
+
+use_cases:
+  - "Store and query GPU utilization, memory usage, and inference latency metrics across your model serving infrastructure over time"
+  - "Track training metrics (loss, accuracy, learning rate) across experiment runs for longitudinal performance analysis"
+  - "Build real-time dashboards showing token throughput, request latency percentiles, and error rates for production LLM endpoints"
+  - "Ingest sensor and IoT data streams alongside ML model predictions for time-correlated analysis in edge AI applications"
+  - "Monitor data pipeline health with retention policies that automatically age out stale metric data while preserving long-term trends"

@@ -1,0 +1,25 @@
+name: SingleStore
+description: |-
+  SingleStore is a distributed, relational SQL database that combines transaction processing, analytics, and native vector search in a single unified engine. It enables developers to build real-time AI applications that store operational data alongside vector embeddings without managing separate databases for structured data and vector search.
+tagline: Distributed SQL database with native vector search for AI
+
+website_url: https://www.singlestore.com
+docs_url: https://docs.singlestore.com
+github_url: https://github.com/singlestore-labs/singlestoredb-python
+
+install_command: pip install singlestoredb
+
+category: Vector DB
+tags: [vector-database, sql, distributed-database, real-time, analytics, hybrid-search]
+pricing: paid
+is_open_source: false
+
+problem_solved: |
+  Building AI applications that need both fast transactional queries on structured data AND vector similarity search typically requires maintaining two separate database systems — one for operational data (PostgreSQL, MySQL) and another for embeddings (Pinecone, Qdrant). This dual-database architecture introduces data synchronization complexity, increased operational overhead, and higher latency for combined queries. SingleStore solves this by providing a single SQL database that natively supports vector search alongside transactions and real-time analytics, so developers can store customer records, product inventory, and vector embeddings all in one place and query them with standard SQL.
+
+use_cases:
+  - "Store customer profiles and their embedding vectors in the same SQL table for unified transactional and semantic queries"
+  - "Build real-time recommendation systems that filter by structured criteria (price, category, availability) while ranking by vector similarity"
+  - "Run hybrid search queries that combine full-text search with vector similarity in a single SQL statement for more accurate RAG retrieval"
+  - "Ingest streaming data with real-time vector embedding generation and immediate indexing for low-latency retrieval"
+  - "Replace separate OLTP and vector databases with a single platform to simplify your AI application's data architecture"
