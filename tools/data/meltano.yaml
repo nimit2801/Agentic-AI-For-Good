@@ -1,0 +1,26 @@
+name: Meltano
+description: |-
+  Meltano is a declarative, code-first data integration engine that connects 600+ APIs and databases through a library of pre-built extractors and loaders (Singer taps and targets). It lets data teams define pipelines in YAML, automate ingestion with a CLI, and scale without writing or maintaining custom API integrations.
+tagline: Code-first data integration engine for modern data teams
+
+website_url: https://meltano.com
+docs_url: https://docs.meltano.com
+github_url: https://github.com/meltano/meltano
+
+install_command: pip install meltano
+
+category: Data
+tags: [data-integration, etl, elt, data-pipeline, open-source, singer, api-integration]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Data teams supporting AI and ML workflows spend an enormous amount of time building and maintaining custom API integrations — connecting CRMs, databases, analytics platforms, and SaaS tools to their data warehouse or feature store. Each integration requires bespoke authentication, pagination, rate limiting, and schema mapping logic that breaks when upstream APIs change. Meltano solves this by providing a declarative pipeline framework with 600+ pre-built connectors, so teams define data flows in YAML configuration files instead of writing custom ingestion code, drastically reducing maintenance burden while keeping pipelines version-controllable and reproducible.
+
+use_cases:
+  - "Ingest data from 600+ SaaS and database sources into your data warehouse for AI training dataset creation"
+  - "Build automated feature pipelines that pull fresh data from CRM, support, and analytics platforms into your feature store"
+  - "Create reproducible ELT pipelines defined in YAML that can be version-controlled, reviewed, and deployed like application code"
+  - "Schedule and monitor production data ingestion with Meltano's built-in orchestration and observability layer"
+  - "Migrate from legacy ETL tools to a modern, open-source data integration stack without vendor lock-in"

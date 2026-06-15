@@ -1,0 +1,26 @@
+name: DeepLake
+description: |-
+  Deep Lake is an AI data runtime that provides a multimodal datalake with vector search capabilities, enabling scalable retrieval-augmented generation and model training. It combines the flexibility of a data lake with the query performance of a vector database, storing embeddings, metadata, and raw data (text, images, audio, video) in a single unified format.
+tagline: Database for AI — multimodal datalake with vector search
+
+website_url: https://deeplake.ai
+docs_url: https://docs.deeplake.ai
+github_url: https://github.com/activeloopai/deeplake
+
+install_command: pip install deeplake
+
+category: Vector DB
+tags: [vector-database, multimodal, data-lake, embeddings, deep-learning, data-pipeline]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AI teams working on multimodal applications often end up juggling multiple storage systems — one for raw data (images, audio, video), another for embeddings, and a third for metadata. This fragmentation creates synchronization headaches, inefficient data pipelines, and slow iteration cycles. Deep Lake solves this by providing a single data runtime that stores all data types alongside their vector embeddings in a unified format, with built-in streaming, version control, and query capabilities that work directly with PyTorch, TensorFlow, and LangChain.
+
+use_cases:
+  - Build a multimodal RAG system that retrieves relevant images, audio clips, and text documents in a single query
+  - Store and version-control training datasets with automatic embedding computation and update tracking
+  - Stream large-scale image or video datasets directly into model training pipelines without downloading the entire dataset
+  - "Power agentic AI workflows: store conversation histories, tool outputs, and vector embeddings in a unified runtime accessible to autonomous agents"
+  - Create a real-time data pipeline that ingests, embeds, and indexes multimodal data for low-latency retrieval
