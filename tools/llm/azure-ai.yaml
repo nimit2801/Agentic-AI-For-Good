@@ -1,0 +1,25 @@
+name: Azure AI
+description: |-
+  Azure AI is Microsoft's comprehensive suite of AI services, including Azure OpenAI Service for GPT-4 and other foundation models Azure AI Search for RAG, Azure AI Agent Service for autonomous agents, and Azure AI Studio for building, evaluating, and deploying AI applications in an enterprise-grade environment.
+tagline: Microsoft's enterprise AI platform with OpenAI models and agentic capabilities
+
+website_url: https://azure.microsoft.com/products/machine-learning/ai-studio
+docs_url: https://learn.microsoft.com/azure/ai-studio
+github_url: https://github.com/Azure/azure-sdk-for-python
+
+install_command: pip install azure-ai-inference
+
+category: LLM
+tags: [llm, foundation-models, azure, enterprise, managed-service, gpt, microsoft]
+pricing: paid
+is_open_source: false
+
+problem_solved: |
+  Enterprises building AI applications on Microsoft infrastructure need a secure, compliant way to access cutting-edge foundation models (including OpenAI's GPT models) without managing inference infrastructure or exposing data to external APIs. They also need tools for RAG, AI agents, and prompt evaluation that integrate natively with Azure's security, identity, and compliance frameworks. Azure AI solves this by providing a unified platform for foundation model access (Azure OpenAI), AI search for grounded retrieval, agent orchestration, and model evaluation — all within Azure's enterprise boundary with data residency, private networking, and RBAC controls.
+
+use_cases:
+  - "Access GPT-4 and other OpenAI models through Azure's enterprise-grade infrastructure with data residency and private networking guarantees"
+  - "Build RAG applications with Azure AI Search that ground LLM responses in your own documents, databases, and enterprise content"
+  - "Create autonomous AI agents using Azure AI Agent Service that can orchestrate multi-step tasks with function calling and code execution"
+  - "Evaluate and compare different model configurations, prompts, and retrieval strategies using Azure AI Studio's built-in evaluation tools"
+  - "Deploy custom fine-tuned models at scale with Azure's managed inference endpoints and built-in content safety filters"

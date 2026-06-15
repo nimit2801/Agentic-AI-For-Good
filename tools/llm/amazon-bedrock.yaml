@@ -1,0 +1,25 @@
+name: Amazon Bedrock
+description: |-
+  Amazon Bedrock is a fully managed service from AWS that provides access to foundation models from AI21, Anthropic, Cohere, Meta, Mistral, and Amazon through a single API. It abstracts away infrastructure management, offering serverless model inference, fine-tuning, agentic capabilities, and knowledge base integration with secure data handling.
+tagline: Fully managed foundation model service from AWS
+
+website_url: https://aws.amazon.com/bedrock
+docs_url: https://docs.aws.amazon.com/bedrock
+github_url: https://github.com/aws-samples/amazon-bedrock-samples
+
+install_command: pip install boto3
+
+category: LLM
+tags: [llm, foundation-models, aws, serverless, managed-service, enterprise]
+pricing: paid
+is_open_source: false
+
+problem_solved: |
+  Building AI-powered applications requires accessing a variety of large language models, but each model provider has their own API, authentication, and pricing — and managing the infrastructure to run these models at scale is expensive and operationally complex. Amazon Bedrock solves this by providing a single, unified API to access foundation models from multiple providers without provisioning any servers, handling auto-scaling, security, and compliance out of the box while keeping data within AWS's secure infrastructure.
+
+use_cases:
+  - "Build a secure enterprise chatbot that uses foundation models without sending data to third-party API endpoints"
+  - "Fine-tune foundation models on domain-specific data using just a few examples, without managing training infrastructure"
+  - "Create RAG applications by connecting Bedrock Knowledge Bases to vector databases for grounded, citation-backed answers"
+  - "Orchestrate multi-step agentic workflows that combine model inference with AWS service calls using Bedrock Agents"
+  - "Evaluate and compare multiple foundation models side-by-side on the same prompts to select the best model for your use case"
