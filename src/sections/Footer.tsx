@@ -13,6 +13,7 @@ const footerLinks = [
   { label: 'Philosophy', href: '/philosophy' },
   { label: 'Our Story', href: '/story' },
   { label: 'Use Cases', href: '/stories' },
+  { label: 'Book a Call', href: 'https://cal.com/nimit2801/aaifg', external: true },
 ]
 
 const socialLinks = [
@@ -74,15 +75,27 @@ export default function Footer() {
 
           {/* Links */}
           <div className="flex flex-wrap items-center justify-center gap-4 lg:gap-6 mb-6 lg:mb-8">
-            {footerLinks.map((link) => (
-              <Link
-                key={link.label}
-                href={link.href}
-                className="text-[#1A1A1A]/70 hover:text-[#1A1A1A] text-sm transition-colors duration-200"
-              >
-                {link.label}
-              </Link>
-            ))}
+            {footerLinks.map((link) =>
+              link.external ? (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#1A1A1A]/70 hover:text-[#1A1A1A] text-sm transition-colors duration-200"
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  className="text-[#1A1A1A]/70 hover:text-[#1A1A1A] text-sm transition-colors duration-200"
+                >
+                  {link.label}
+                </Link>
+              )
+            )}
           </div>
 
           {/* Social Icons */}
