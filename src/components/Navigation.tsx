@@ -7,15 +7,10 @@ import { usePathname } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 
 const navLinks = [
-  { label: 'Home', href: '/' },
   { label: 'Tools', href: '/tools' },
   { label: 'MCP', href: '/mcp' },
   { label: 'Research', href: '/agent-research' },
-  { label: 'How It Works', href: '/how-it-works' },
-  { label: 'Stories', href: '/stories' },
-  { label: 'Philosophy', href: '/philosophy' },
   { label: 'Community', href: '/community' },
-  { label: 'Architecture', href: '/#architecture' },
 ]
 
 export default function Navigation() {
