@@ -122,47 +122,49 @@ export default function MCPPage() {
           </div>
 
           {/* Tab switcher */}
-          <div className="flex border-b border-[#1A1A1A]/8">
-            <button
-              onClick={() => { setActiveTab('http'); posthog.capture('mcp_tab_changed', { tab: 'http' }) }}
-              className={`flex-1 px-4 py-3 text-sm font-medium transition-all duration-200 ${
-                activeTab === 'http'
-                  ? 'text-[#1A1A1A] border-b-2 border-[#D4754E] bg-[#F5F1EB]/50'
-                  : 'text-[#6B6560] hover:text-[#1A1A1A] hover:bg-[#F5F1EB]/30'
-              }`}
-            >
-              HTTP ✦ Recommended
-            </button>
-            <button
-              onClick={() => { setActiveTab('cli'); posthog.capture('mcp_tab_changed', { tab: 'cli' }) }}
-              className={`flex-1 px-4 py-3 text-sm font-medium transition-all duration-200 ${
-                activeTab === 'cli'
-                  ? 'text-[#1A1A1A] border-b-2 border-[#D4754E] bg-[#F5F1EB]/50'
-                  : 'text-[#6B6560] hover:text-[#1A1A1A] hover:bg-[#F5F1EB]/30'
-              }`}
-            >
-              Claude CLI
-            </button>
-            <button
-              onClick={() => { setActiveTab('desktop'); posthog.capture('mcp_tab_changed', { tab: 'desktop' }) }}
-              className={`flex-1 px-4 py-3 text-sm font-medium transition-all duration-200 ${
-                activeTab === 'desktop'
-                  ? 'text-[#1A1A1A] border-b-2 border-[#D4754E] bg-[#F5F1EB]/50'
-                  : 'text-[#6B6560] hover:text-[#1A1A1A] hover:bg-[#F5F1EB]/30'
-              }`}
-            >
-              Claude Desktop
-            </button>
-            <button
-              onClick={() => { setActiveTab('code'); posthog.capture('mcp_tab_changed', { tab: 'code' }) }}
-              className={`flex-1 px-4 py-3 text-sm font-medium transition-all duration-200 ${
-                activeTab === 'code'
-                  ? 'text-[#1A1A1A] border-b-2 border-[#D4754E] bg-[#F5F1EB]/50'
-                  : 'text-[#6B6560] hover:text-[#1A1A1A] hover:bg-[#F5F1EB]/30'
-              }`}
-            >
-              Claude Code
-            </button>
+          <div className="overflow-x-auto scrollbar-hide -mx-6 px-6 sm:mx-0 sm:px-0">
+            <div className="flex border-b border-[#1A1A1A]/8 min-w-max sm:min-w-0 w-full">
+              <button
+                onClick={() => { setActiveTab('http'); posthog.capture('mcp_tab_changed', { tab: 'http' }) }}
+                className={`px-3 sm:px-4 py-3 text-xs sm:text-sm font-medium whitespace-nowrap transition-all duration-200 ${
+                  activeTab === 'http'
+                    ? 'text-[#1A1A1A] border-b-2 border-[#D4754E] bg-[#F5F1EB]/50'
+                    : 'text-[#6B6560] hover:text-[#1A1A1A] hover:bg-[#F5F1EB]/30'
+                }`}
+              >
+                HTTP <span className="hidden sm:inline">✦ Recommended</span>
+              </button>
+              <button
+                onClick={() => { setActiveTab('cli'); posthog.capture('mcp_tab_changed', { tab: 'cli' }) }}
+                className={`px-3 sm:px-4 py-3 text-xs sm:text-sm font-medium whitespace-nowrap transition-all duration-200 ${
+                  activeTab === 'cli'
+                    ? 'text-[#1A1A1A] border-b-2 border-[#D4754E] bg-[#F5F1EB]/50'
+                    : 'text-[#6B6560] hover:text-[#1A1A1A] hover:bg-[#F5F1EB]/30'
+                }`}
+              >
+                Claude CLI
+              </button>
+              <button
+                onClick={() => { setActiveTab('desktop'); posthog.capture('mcp_tab_changed', { tab: 'desktop' }) }}
+                className={`px-3 sm:px-4 py-3 text-xs sm:text-sm font-medium whitespace-nowrap transition-all duration-200 ${
+                  activeTab === 'desktop'
+                    ? 'text-[#1A1A1A] border-b-2 border-[#D4754E] bg-[#F5F1EB]/50'
+                    : 'text-[#6B6560] hover:text-[#1A1A1A] hover:bg-[#F5F1EB]/30'
+                }`}
+              >
+                Claude Desktop
+              </button>
+              <button
+                onClick={() => { setActiveTab('code'); posthog.capture('mcp_tab_changed', { tab: 'code' }) }}
+                className={`px-3 sm:px-4 py-3 text-xs sm:text-sm font-medium whitespace-nowrap transition-all duration-200 ${
+                  activeTab === 'code'
+                    ? 'text-[#1A1A1A] border-b-2 border-[#D4754E] bg-[#F5F1EB]/50'
+                    : 'text-[#6B6560] hover:text-[#1A1A1A] hover:bg-[#F5F1EB]/30'
+                }`}
+              >
+                Claude Code
+              </button>
+            </div>
           </div>
 
           <div className="p-6">

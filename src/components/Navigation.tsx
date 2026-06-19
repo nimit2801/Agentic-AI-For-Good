@@ -10,6 +10,7 @@ const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'Tools', href: '/tools' },
   { label: 'MCP', href: '/mcp' },
+  { label: 'Research', href: '/agent-research' },
   { label: 'How It Works', href: '/how-it-works' },
   { label: 'Stories', href: '/stories' },
   { label: 'Philosophy', href: '/philosophy' },
@@ -140,7 +141,7 @@ export default function Navigation() {
         }`}
         style={{ top: `${announcementHeight}px` }}
       >
-        <div className="flex flex-col items-center justify-center h-full gap-8">
+        <div className="flex flex-col items-center justify-center h-full gap-8 pb-12">
           {navLinks.map((link) => (
             <Link
               key={link.label}

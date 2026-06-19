@@ -86,7 +86,7 @@ export default function Architecture() {
         <div className="relative mb-8 lg:mb-12">
           {/* Orb glow */}
           <div
-            className="w-[280px] h-[280px] lg:w-[420px] lg:h-[420px] rounded-full"
+            className="w-[220px] h-[220px] sm:w-[280px] sm:h-[280px] lg:w-[420px] lg:h-[420px] rounded-full"
             style={{
               background:
                 'radial-gradient(circle, rgba(212,117,78,0.25) 0%, rgba(212,117,78,0.08) 40%, transparent 70%)',

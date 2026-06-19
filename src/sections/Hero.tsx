@@ -135,7 +135,7 @@ export default function Hero() {
             <input
               id="hero-search"
               type="text"
-              placeholder="Try: 'build a RAG pipeline', 'monitor LLM costs'..."
+              placeholder="Try: &apos;build a RAG pipeline&apos;..."
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               onKeyDown={(e) => { if (e.key === 'Enter' && query.trim()) router.push('/tools?q=' + encodeURIComponent(query.trim())) }}
