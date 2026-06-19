@@ -111,9 +111,17 @@
     text-transform: uppercase;
   }
 
-  .card-shadow {
-    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.06);
-  }
+.card-shadow {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
 
   .grain-overlay {
     position: fixed;

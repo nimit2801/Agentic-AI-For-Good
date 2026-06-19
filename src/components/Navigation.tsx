@@ -33,7 +33,6 @@ export default function Navigation() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  // Track announcement bar height dynamically
   useEffect(() => {
     const el = document.querySelector('.announcement-bar')
     if (!el) return
@@ -59,7 +58,6 @@ export default function Navigation() {
 
   return (
     <>
-      {/* Navigation */}
       <nav
         className={`fixed left-0 right-0 z-50 transition-all duration-500 ${
           isScrolled || !isHome
@@ -71,7 +69,7 @@ export default function Navigation() {
         <div className="w-full px-6 lg:px-[6vw]">
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2">
+            <Link href="/" className="flex items-center gap-2 shrink-0">
               <Image
                 src="/images/logos/Leaf%20Logo%20no%20bg.png"
                 alt="Agentic AI For Good"
@@ -86,45 +84,49 @@ export default function Navigation() {
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center gap-8">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.label}
-                  href={link.href.startsWith('/#') ? '/' : link.href}
-                  onClick={(e) => {
-                    if (link.href.startsWith('/#')) {
-                      e.preventDefault()
-                      scrollToSection(link.href)
-                    }
-                  }}
-                  className="text-[#1A1A1A]/70 hover:text-[#1A1A1A] text-sm font-medium transition-colors duration-200"
-                >
-                  {link.label}
-                </Link>
-              ))}
+            <div className="hidden lg:flex items-center gap-3 xl:gap-5 overflow-x-auto scrollbar-none ml-auto">
+              {navLinks.map((link) =>
+                link.href.startsWith('/#') ? (
+                  <button
+                    key={link.label}
+                    onClick={() => scrollToSection(link.href)}
+                    className="text-[#1A1A1A]/70 hover:text-[#1A1A1A] text-sm font-medium transition-colors duration-200 whitespace-nowrap shrink-0"
+                  >
+                    {link.label}
+                  </button>
+                ) : (
+                  <Link
+                    key={link.label}
+                    href={link.href}
+                    className="text-[#1A1A1A]/70 hover:text-[#1A1A1A] text-sm font-medium transition-colors duration-200 whitespace-nowrap shrink-0"
+                  >
+                    {link.label}
+                  </Link>
+                )
+              )}
               <a
                 href="https://github.com/nimit2801/Agentic-AI-For-Good-Website"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-[#1A1A1A]/70 hover:text-[#1A1A1A] text-sm font-medium transition-colors duration-200"
+                className="flex items-center gap-1 text-[#1A1A1A]/70 hover:text-[#1A1A1A] text-sm font-medium transition-colors duration-200 whitespace-nowrap shrink-0"
               >
-                <Star size={16} className="fill-[#D4754E] text-[#D4754E]" />
-                <span>Star on GitHub</span>
+                <Star size={14} className="fill-[#D4754E] text-[#D4754E]" />
+                <span>Star</span>
               </a>
               <a
                 href="https://github.com/nimit2801/Agentic-AI-For-Good-Website/blob/main/CONTRIBUTING.md"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button className="bg-[#D4754E] hover:bg-[#C0653E] text-white rounded-full px-5 py-2 text-sm font-medium transition-all duration-200">
-                  Contribute a Tool
+                <Button className="bg-[#D4754E] hover:bg-[#C0653E] text-white rounded-full px-4 py-1.5 text-xs font-medium transition-all duration-200 whitespace-nowrap shrink-0">
+                  + Tool
                 </Button>
               </a>
             </div>
 
             {/* Mobile Menu Button */}
             <button
-              className="lg:hidden p-2 text-[#1A1A1A]"
+              className="lg:hidden p-2 text-[#1A1A1A] ml-auto"
               aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
