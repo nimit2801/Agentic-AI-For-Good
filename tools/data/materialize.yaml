@@ -1,0 +1,26 @@
+name: Materialize
+description: |-
+  Materialize is a real-time data integration platform that uses incremental computation to maintain SQL materialized views that update automatically as source data changes. It provides a PostgreSQL-compatible SQL interface for querying streaming data from Kafka, databases, and webhooks, making it ideal for powering live dashboards, AI agent context, and event-driven architectures without managing complex streaming infrastructure.
+tagline: The live data layer for apps and AI agents
+
+website_url: https://materialize.com
+docs_url: https://materialize.com/docs
+github_url: https://github.com/MaterializeInc/materialize
+
+install_command: |
+  docker pull materialize/materialized:latest
+
+category: Data
+tags: [stream-processing, materialized-views, sql, real-time, data-integration, streaming-database, kafka, event-streaming]
+pricing: freemium
+is_open_source: true
+license: BSL-1.1
+
+problem_solved: |
+  AI agents and applications need fresh, consistent views of transactional data to make real-time decisions — but traditional approaches (batch ETL, repeated queries to source databases, or building custom streaming pipelines) are slow, complex, and put load on production systems. Materialize eliminates this gap by continuously ingesting change data feeds and maintaining incrementally-updated materialized views that stay consistent with source systems, all accessible through standard PostgreSQL wire-protocol. Teams no longer have to choose between freshness and operational simplicity.
+
+use_cases:
+  - "Serve real-time context to AI agents by maintaining materialized views of recent events, user sessions, and business metrics that update within milliseconds of data changes"
+  - "Power live dashboards and operational analytics with sub-second SQL queries over streaming data from Kafka, Debezium CDC, and PostgreSQL replication"
+  - "Build event-driven ML feature pipelines that join streaming and historical data to produce fresh feature vectors for inference without batch processing"
+  - "Replace batch ETL patterns with continuous incremental computation, reducing data-to-insight latency from hours to seconds"

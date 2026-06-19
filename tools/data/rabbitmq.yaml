@@ -1,0 +1,25 @@
+name: RabbitMQ
+description: |-
+  RabbitMQ is the most widely deployed open source message broker. It implements the Advanced Message Queuing Protocol (AMQP) and supports MQTT, STOMP, and HTTP-based messaging, providing reliable, asynchronous communication between distributed systems, microservices, and AI pipelines. With features like flexible routing, publisher confirms, consumer acknowledgements, and highly-available mirrored queues, it has been a cornerstone of production infrastructure for over a decade.
+tagline: The most widely deployed open source message broker
+
+website_url: https://www.rabbitmq.com
+docs_url: https://www.rabbitmq.com/docs
+github_url: https://github.com/rabbitmq/rabbitmq-server
+
+install_command: brew install rabbitmq
+
+category: Data
+tags: [message-broker, queue, amqp, event-driven, distributed-systems, messaging, mqtt]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  Modern AI applications and microservices need to communicate asynchronously — streaming inference results, distributing tasks to worker pools, and handling event-driven triggers — but building reliable message passing from scratch is hard. Naive approaches (HTTP polling, in-process queues, shared databases) fail under load, lose messages on crashes, and don't scale across machines. RabbitMQ solves this with a proven, battle-tested message broker that guarantees message delivery, supports flexible routing topologies (direct, topic, fanout, headers), and has decades of operational maturity. It lets teams decouple services while ensuring no message is lost.
+
+use_cases:
+  - "Route inference requests from a web API to a pool of GPU workers using RabbitMQ's direct and topic exchanges for workload distribution"
+  - "Decouple AI pipeline stages — ingesters, embedders, indexers — so each stage can scale independently and failures in one stage don't block the pipeline"
+  - "Stream real-time model predictions and system events to monitoring, logging, and alerting services with fanout exchanges"
+  - "Replace in-process queues and HTTP polling with a durable, restart-safe message broker that survives process crashes"

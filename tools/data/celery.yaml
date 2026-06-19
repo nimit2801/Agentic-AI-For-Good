@@ -1,0 +1,25 @@
+name: Celery
+description: |-
+  Celery is the de-facto distributed task queue for Python, enabling asynchronous execution of long-running or resource-intensive tasks across distributed workers. It supports real-time task processing, periodic scheduling (cron-like), task retries with backoff, workflow composition (groups, chains, chords), and multiple message brokers (RabbitMQ, Redis, Amazon SQS). It is a foundational piece of infrastructure for Python-based AI pipelines that need background processing.
+tagline: Distributed task queue for Python
+
+website_url: https://docs.celeryq.dev
+docs_url: https://docs.celeryq.dev/en/stable/
+github_url: https://github.com/celery/celery
+
+install_command: pip install celery
+
+category: Data
+tags: [task-queue, distributed-computing, python, async, message-queue, job-scheduler, background-tasks]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  AI applications often need to run long or resource-intensive operations — model inference, data processing, embedding generation, batch API calls — synchronously in the request-response cycle, which blocks user-facing services and degrades reliability. Manually managing background threads, process pools, or cron jobs for these tasks is error-prone and doesn't scale across machines. Celery solves this by providing a production-proven distributed task queue where you define tasks as Python functions, send them to a broker-backed queue, and have a pool of workers execute them asynchronously with built-in retries, rate limiting, and result tracking.
+
+use_cases:
+  - "Offload LLM inference and embedding generation to background workers so your API stays responsive under load"
+  - "Schedule recurring model retraining, data pipeline runs, and evaluation jobs with built-in cron-like periodic task support"
+  - "Orchestrate multi-step AI workflows using task groups, chains, and chords — for example, chunking documents, generating embeddings, and indexing them in a vector database sequentially"
+  - "Queue and process batch API calls to third-party AI providers with rate limiting and automatic retry on failure"
