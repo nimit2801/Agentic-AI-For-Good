@@ -20,6 +20,7 @@ const navLinks = [
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [announcementHeight, setAnnouncementHeight] = useState(40)
   const pathname = usePathname()
   const isHome = pathname === '/'
 
@@ -29,6 +30,19 @@ export default function Navigation() {
     }
     window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  // Track announcement bar height dynamically
+  useEffect(() => {
+    const el = document.querySelector('.announcement-bar')
+    if (!el) return
+    const observer = new ResizeObserver((entries) => {
+      for (const entry of entries) {
+        setAnnouncementHeight(entry.contentRect.height)
+      }
+    })
+    observer.observe(el)
+    return () => observer.disconnect()
   }, [])
 
   const scrollToSection = (href: string) => {
@@ -46,11 +60,12 @@ export default function Navigation() {
     <>
       {/* Navigation */}
       <nav
-        className={`fixed top-[40px] left-0 right-0 z-50 transition-all duration-500 ${
+        className={`fixed left-0 right-0 z-50 transition-all duration-500 ${
           isScrolled || !isHome
             ? 'bg-[#F5F1EB]/90 backdrop-blur-md border-b border-[#1A1A1A]/5'
             : 'bg-transparent'
         }`}
+        style={{ top: `${announcementHeight}px` }}
       >
         <div className="w-full px-6 lg:px-[6vw]">
           <div className="flex items-center justify-between h-16 lg:h-20">
@@ -120,9 +135,10 @@ export default function Navigation() {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed inset-x-0 top-[40px] bottom-0 z-40 bg-[#F5F1EB] transition-transform duration-500 lg:hidden ${
+        className={`fixed inset-x-0 bottom-0 z-40 bg-[#F5F1EB] transition-transform duration-500 lg:hidden overflow-y-auto ${
           isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
+        style={{ top: `${announcementHeight}px` }}
       >
         <div className="flex flex-col items-center justify-center h-full gap-8">
           {navLinks.map((link) => (
