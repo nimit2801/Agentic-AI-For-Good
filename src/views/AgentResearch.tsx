@@ -12,6 +12,7 @@ type ResearchItem = {
   score?: number
   points?: number
   topic?: string
+  publishedAt?: string
 }
 
 type ResearchPayload = {
