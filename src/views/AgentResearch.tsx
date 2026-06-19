@@ -40,7 +40,9 @@ const formatDate = (value?: string) => {
   if (!value) return 'Unknown'
   const d = new Date(value)
   if (isNaN(d.getTime())) return value
-  return d.toLocaleDateString('en', { dateStyle: 'medium', timeStyle: 'short', timeZone: 'UTC' }) + ' UTC'
+  const date = d.toLocaleDateString('en', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' })
+  const time = d.toLocaleTimeString('en', { hour: '2-digit', minute: '2-digit', timeZone: 'UTC' })
+  return `${date}, ${time} UTC`
 }
 
 const formatMeta = (item: ResearchItem) => {
