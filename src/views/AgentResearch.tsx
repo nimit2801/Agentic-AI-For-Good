@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react'
+import researchData from '@/data/agent-research.json'
 
 type ResearchItem = {
   title: string
@@ -49,24 +50,13 @@ const formatMeta = (item: ResearchItem) => {
 }
 
 export default function AgentResearch() {
-  const [data, setData] = useState<ResearchPayload | null>(null)
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState('')
-
-  useEffect(() => {
-    fetch('/data/agent-research.json', { cache: 'no-store' })
-      .then(r => { if (!r.ok) throw new Error(`Failed to load (${r.status})`); return r.json() })
-      .then(d => { setData(d); setLoading(false) })
-      .catch(e => { setError(e.message); setLoading(false) })
-  }, [])
-
+  const data = researchData as unknown as ResearchPayload
   const sourcesTracked = data ? Object.keys(data.sourceStats.sources).length : 0
 
   return (
     <section className="relative w-full min-h-screen bg-[#F5F1EB] pt-24 lg:pt-32 pb-20">
       <div className="px-6 lg:px-[6vw]">
 
-        {/* Header */}
         <div className="max-w-3xl mb-12">
           <span className="micro-label text-[#6B6560] mb-4 block">Research</span>
           <h1 className="display-heading text-[clamp(28px,4vw,52px)] text-[#1A1A1A] mb-4">Agent Research</h1>
@@ -75,17 +65,8 @@ export default function AgentResearch() {
           </p>
         </div>
 
-        {loading && (
-          <div className="bg-white rounded-2xl p-6 border border-[#1A1A1A]/8 text-[#6B6560] text-sm">Loading research snapshot...</div>
-        )}
-
-        {error && (
-          <div className="bg-white rounded-2xl p-6 border border-red-200 text-red-700 text-sm">{error}</div>
-        )}
-
         {data && (
           <>
-            {/* Meta Cards */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
               <div className="bg-white rounded-2xl p-4 border border-[#1A1A1A]/8">
                 <span className="micro-label text-[#6B6560] block mb-1">Last Updated</span>
@@ -105,14 +86,12 @@ export default function AgentResearch() {
               </div>
             </div>
 
-            {/* Summary */}
             <div className="bg-white rounded-2xl p-6 lg:p-8 border border-[#1A1A1A]/8 mb-8">
               <span className="micro-label text-[#D4754E] block mb-2">Snapshot</span>
               <h2 className="text-[#1A1A1A] font-semibold text-xl mb-3">What the current cycle is saying</h2>
               <p className="text-[#6B6560] text-sm lg:text-base leading-relaxed">{data.summary}</p>
             </div>
 
-            {/* Highlights */}
             <div className="mb-8">
               <span className="micro-label text-[#D4754E] block mb-2">Highlights</span>
               <h2 className="text-[#1A1A1A] font-semibold text-xl mb-4">Best signals across the feed</h2>
@@ -139,7 +118,6 @@ export default function AgentResearch() {
               </div>
             </div>
 
-            {/* Source Watch */}
             <div className="mb-8">
               <span className="micro-label text-[#D4754E] block mb-2">Source Watch</span>
               <h2 className="text-[#1A1A1A] font-semibold text-xl mb-4">Where the signal came from</h2>
@@ -168,7 +146,6 @@ export default function AgentResearch() {
               </div>
             </div>
 
-            {/* Tangent Radar + Experiment Queue */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
               <div className="bg-white rounded-2xl p-6 border border-[#1A1A1A]/8">
                 <span className="micro-label text-[#D4754E] block mb-2">Tangent Radar</span>
@@ -200,7 +177,6 @@ export default function AgentResearch() {
               </div>
             </div>
 
-            {/* Method */}
             <div className="bg-white rounded-2xl p-6 border border-[#1A1A1A]/8">
               <span className="micro-label text-[#D4754E] block mb-2">Method</span>
               <h2 className="text-[#1A1A1A] font-semibold text-xl mb-3">How the feed is built</h2>
