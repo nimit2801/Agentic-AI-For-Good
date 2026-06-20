@@ -37,3 +37,64 @@ export async function PATCH(req: Request) {
   if (error) return NextResponse.json({ error: error.message }, { status: 500 })
   return NextResponse.json({ success: true })
 }
+
+export async function POST(req: Request) {
+  const body = await req.json()
+
+  // Basic validation
+  if (!body.title || !body.slug) {
+    return NextResponse.json(
+      { error: 'title and slug are required' },
+      { status: 400 }
+    )
+  }
+
+  const supabase = createServerSupabaseClient()
+
+  const storyData = {
+    ...body,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+  }
+
+  const { data, error } = await supabase
+    .from('stories')
+    .insert(storyData)
+    .select()
+    .single()
+
+  if (error) {
+    return NextResponse.json({ error: error.message }, { status: 500 })
+  }
+
+  return NextResponse.json({ success: true, story: data })
+}
+
+export async function DELETE(req: Request) {
+  const { searchParams } = new URL(req.url)
+  const id = searchParams.get('id')
+  const slug = searchParams.get('slug')
+
+  const supabase = createServerSupabaseClient()
+
+  let query = supabase.from('stories').delete()
+
+  if (id) {
+    query = query.eq('id', id)
+  } else if (slug) {
+    query = query.eq('slug', slug)
+  } else {
+    return NextResponse.json(
+      { error: 'id or slug is required' },
+      { status: 400 }
+    )
+  }
+
+  const { error } = await query
+
+  if (error) {
+    return NextResponse.json({ error: error.message }, { status: 500 })
+  }
+
+  return NextResponse.json({ success: true })
+}
