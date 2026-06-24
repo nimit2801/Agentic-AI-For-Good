@@ -1,0 +1,25 @@
+name: Hugging Face Hub
+description: Hugging Face Hub is the central platform for sharing and version-controlling ML models, datasets, and demos. The official Python client lets you download models, push checkpoints, manage repos, and run inference through the Hub API.
+tagline: Official Python client for the Hugging Face Hub
+
+github_url: https://github.com/huggingface/huggingface_hub
+website_url: https://huggingface.co
+docs_url: https://huggingface.co/docs/hub
+
+category: Other
+tags: [huggingface, models, datasets, hub, ml, python, sdk]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install huggingface_hub
+
+problem_solved: |
+  Sharing and version-controlling ML artifacts is a mess: weights live on someone's S3, configs drift from the model, datasets are emailed around. Hugging Face Hub gives every model, dataset, and Space a versioned Git repo with a Python client for download, upload, and management.
+
+use_cases:
+  - Download pretrained models and tokenizers from the Hub into your training or inference scripts
+  - Push fine-tuned checkpoints to a versioned repo so teammates can reproduce your work
+  - Manage datasets with the same Git-based versioning you use for code
+  - Use the Inference API to run models hosted on the Hub without standing up your own GPU
+  - Authenticate and rate-limit downloads from CI/CD pipelines running model training

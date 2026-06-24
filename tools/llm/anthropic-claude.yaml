@@ -1,0 +1,25 @@
+name: Anthropic Claude
+description: Anthropic Claude is a frontier language model family focused on safety, helpfulness, and reasoning. The Claude API gives developers direct access to Claude Sonnet, Haiku, and Opus models with native tool use, vision, and a 200K context window.
+tagline: Frontier Claude models via Anthropic's official SDK
+
+github_url: https://github.com/anthropics/anthropic-sdk-python
+website_url: https://anthropic.com
+docs_url: https://docs.anthropic.com
+
+category: LLM
+tags: [llm, claude, anthropic, sdk, api]
+pricing: paid
+is_open_source: false
+license: MIT (SDK only)
+
+install_command: pip install anthropic
+
+problem_solved: |
+  Most LLM APIs force developers into black-box wrappers with limited control over prompting, tool use, or context management. Anthropic's SDK exposes Claude's full feature set — extended thinking, tool use, vision, prompt caching, and 200K context — through a clean Python interface, so production teams can build reliable agentic workflows without rate-limit surprises or opaque inference paths.
+
+use_cases:
+  - Build production AI agents with Claude's native tool use and 200K context window
+  - Run Claude Sonnet, Haiku, or Opus for code generation, analysis, and reasoning tasks
+  - Add vision capabilities to apps by passing images directly to Claude API calls
+  - Use prompt caching and extended thinking for cost-efficient long-context workloads
+  - Replace unreliable multi-step agent frameworks with Claude's native structured outputs and tool calling
