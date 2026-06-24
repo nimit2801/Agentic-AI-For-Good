@@ -1,29 +1,25 @@
-name: Modal
-description: Serverless GPU cloud platform for AI inference, training, batch processing, and data pipelines with sub-second cold starts and per-second billing.
-tagline: High-performance serverless AI infrastructure developers love
+name: Modal Labs
+description: Modal is a serverless platform for running Python code in the cloud with custom containers, GPUs, and scale-to-zero billing. The Python SDK lets you define functions that run remotely with a single decorator.
+tagline: Serverless cloud for Python with GPUs and scale-to-zero
 
 github_url: https://github.com/modal-labs/modal-client
 website_url: https://modal.com
 docs_url: https://modal.com/docs
-install_command: pip install modal
 
 category: Other
-tags: [serverless, gpu, inference, training, batch-processing, cloud, infrastructure, python, autoscaling]
+tags: [serverless, cloud, gpu, python, deployment, infrastructure]
 pricing: freemium
 is_open_source: false
-license: Apache-2.0
+license: Apache-2.0 (SDK only)
+
+install_command: pip install modal
 
 problem_solved: |
-  AI teams waste significant time and money managing GPU infrastructure — provisioning
-  instances, configuring Docker containers, handling autoscaling, and paying for idle
-  compute. Modal eliminates all of that by providing a serverless platform where you
-  write Python functions, annotate them with @app.function, and Modal handles deployment,
-  scaling, and billing down to the second. Cold starts in under a second and automatic
-  scale-to-zero mean you never pay for idle GPUs.
+  Deploying Python workloads to the cloud typically requires managing Dockerfiles, Kubernetes manifests, IAM roles, and CI/CD pipelines before you can run a single inference job. Modal collapses all of that into a Python decorator: define a function, decorate it, and it runs on managed infrastructure with GPU access, scale-to-zero billing, and built-in scheduling.
 
 use_cases:
-  - Deploy and scale LLM inference endpoints with automatic scale-to-zero when not in use
-  - Run ephemeral GPU workloads like model fine-tuning or batch inference without provisioning servers
-  - Execute massively parallel batch inference jobs across thousands of containers simultaneously
-  - Serve diffusion models and image/video generation with request-based autoscaling
-  - Launch ephemeral cloud notebooks and sandboxes for collaborative ML development
+  - Run GPU-accelerated LLM inference or batch embedding jobs without managing infrastructure
+  - Schedule recurring Python scripts (web scrapers, model retraining, ETL) on a cron in the cloud
+  - Deploy ML model serving endpoints with auto-scaling and scale-to-zero cost control
+  - Build and serve LLM-powered APIs with custom containers that include heavy ML dependencies
+  - Run parallel data processing jobs across hundreds of containers with a simple map operation

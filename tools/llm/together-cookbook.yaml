@@ -1,0 +1,25 @@
+name: Together AI Cookbook
+description: Together AI Cookbook is a curated collection of notebooks and recipes for running open-source LLMs through the Together AI inference platform. The Python SDK provides a single interface for chat, embeddings, image generation, and code completion across 200+ open models.
+tagline: Open-source recipes and SDK for running models on Together AI
+
+github_url: https://github.com/togethercomputer/together-cookbook
+website_url: https://www.together.ai
+docs_url: https://docs.together.ai
+
+category: LLM
+tags: [llm, inference, open-source-models, cookbook, sdk, together-ai]
+pricing: freemium
+is_open_source: false
+license: MIT (SDK and cookbook)
+
+install_command: pip install together
+
+problem_solved: |
+  Running the latest open-source LLMs typically requires picking a GPU provider, configuring vLLM or TGI, dealing with cold starts, and writing custom serving code. Together AI removes that friction with managed inference for 200+ open models — Llama, Mistral, Qwen, DeepSeek, image models, and embeddings — all behind one OpenAI-compatible API.
+
+use_cases:
+  - Run Llama, Mistral, Qwen, or DeepSeek models through a managed inference API without GPU setup
+  - Generate embeddings for RAG pipelines using Together's hosted embedding models
+  - Build apps that use image generation models (FLUX, Stable Diffusion) via the same SDK
+  - Use the OpenAI-compatible endpoint to drop Together into existing OpenAI SDK code
+  - Follow cookbook recipes for fine-tuning, function calling, and multi-modal workflows
