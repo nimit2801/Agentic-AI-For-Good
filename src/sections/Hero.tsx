@@ -4,6 +4,7 @@ import { Search, ArrowRight } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import Image from 'next/image'
 import gsap from 'gsap'
+import { GitHubStarsPill } from '@/components/GitHubStars'
 
 export default function Hero() {
   const [query, setQuery] = useState('')
@@ -12,13 +13,14 @@ export default function Hero() {
   const headlineRef = useRef<HTMLHeadingElement>(null)
   const subheadlineRef = useRef<HTMLParagraphElement>(null)
   const searchRef = useRef<HTMLDivElement>(null)
+  const pillRef = useRef<HTMLDivElement>(null)
   const linksRef = useRef<HTMLDivElement>(null)
   const router = useRouter()
 
   useEffect(() => {
     const ctx = gsap.context(() => {
       // Initial states
-      gsap.set([logoRef.current, headlineRef.current, subheadlineRef.current, searchRef.current, linksRef.current], {
+      gsap.set([logoRef.current, headlineRef.current, subheadlineRef.current, searchRef.current, pillRef.current, linksRef.current], {
         opacity: 0,
         y: 20,
       })
@@ -58,6 +60,16 @@ export default function Hero() {
             opacity: 1,
             y: 0,
             duration: 0.6,
+            ease: 'power2.out',
+          },
+          '-=0.3'
+        )
+        .to(
+          pillRef.current,
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.5,
             ease: 'power2.out',
           },
           '-=0.3'
@@ -145,6 +157,11 @@ export default function Hero() {
               <ArrowRight size={18} />
             </button>
           </div>
+        </div>
+
+        {/* Social proof: GitHub stars */}
+        <div ref={pillRef} className="mb-6 flex justify-center">
+          <GitHubStarsPill />
         </div>
 
         {/* CTA Links */}

@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { Button } from '@/components/ui/button'
+import { GitHubStarsBadge } from '@/components/GitHubStars'
 
 const navLinks = [
   { label: 'Tools', href: '/tools' },
@@ -101,13 +102,16 @@ export default function Navigation() {
                 )
               )}
               <a
-                href="https://github.com/nimit2801/Agentic-AI-For-Good-Website"
+                href="https://github.com/nimit2801/Agentic-AI-For-Good"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1 text-[#1A1A1A]/70 hover:text-[#1A1A1A] text-sm font-medium transition-colors duration-200 whitespace-nowrap shrink-0"
+                className="flex items-center gap-1.5 text-[#1A1A1A]/70 hover:text-[#1A1A1A] text-sm font-medium transition-colors duration-200 whitespace-nowrap shrink-0"
               >
                 <Star size={14} className="fill-[#D4754E] text-[#D4754E]" />
                 <span>Star</span>
+                <span className="text-[#1A1A1A]/40 text-xs tabular-nums">
+                  <GitHubStarsBadge />
+                </span>
               </a>
               <a
                 href="https://github.com/nimit2801/Agentic-AI-For-Good-Website/blob/main/CONTRIBUTING.md"
@@ -157,7 +161,7 @@ export default function Navigation() {
             </Link>
           ))}
           <a
-            href="https://github.com/nimit2801/Agentic-AI-For-Good-Website"
+            href="https://github.com/nimit2801/Agentic-AI-For-Good"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setIsMobileMenuOpen(false)}
