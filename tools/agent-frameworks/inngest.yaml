@@ -1,0 +1,46 @@
+name: Inngest
+description: >-
+  Inngest is an open-source platform for building durable, event-driven workflows
+  and background jobs for AI applications. It provides a Python, TypeScript, and
+  Go SDK for defining functions that are triggered by events, cron schedules, or
+  webhooks — with built-in retries, failure handling, observability, and fan-out
+  patterns. Inngest is designed for serverless architectures and pairs naturally
+  with AI agent workflows that need reliable, stateful execution.
+tagline: Durable event-driven workflows for AI apps
+
+github_url: https://github.com/inngest/inngest
+website_url: https://www.inngest.com
+docs_url: https://www.inngest.com/docs
+
+install_command: npm install inngest
+
+category: Agents
+tags:
+  - workflow-orchestration
+  - event-driven
+  - background-jobs
+  - serverless
+  - typescript
+  - python
+  - open-source
+pricing: freemium
+is_open_source: true
+license: MIT
+
+problem_solved: |-
+  AI applications need reliable, stateful background execution for multi-step agent
+  workflows, async data processing, and scheduled tasks — but building this
+  infrastructure from scratch is complex. Inngest solves this by providing a
+  production-grade platform for durable, event-driven functions that handle retries,
+  failures, observability, and parallelism out of the box. Developers write
+  functions in their existing codebase and Inngest handles the infrastructure:
+  event ingestion, queue management, retry logic, and monitoring — making it
+  natural to build reliable AI agent workflows that can pause, resume, and fan out
+  without custom infrastructure.
+
+use_cases:
+  - "Build durable AI agent workflows with multi-step execution, retries, and failure recovery"
+  - "Trigger async data processing when new data arrives via events, webhooks, or scheduled cron jobs"
+  - "Create fan-out patterns where a single event triggers parallel AI processing across multiple functions"
+  - "Build event-driven pipelines that ingest, process, and store AI model outputs with guaranteed delivery"
+  - "Schedule periodic AI tasks — daily reports, model inference, data enrichment — with built-in retry logic"
