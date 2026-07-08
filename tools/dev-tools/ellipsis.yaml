@@ -1,0 +1,44 @@
+name: Ellipsis
+description: >-
+  Ellipsis is a platform for deploying, managing, and observing AI coding agents
+  in the cloud. Define agents as YAML — with prompts, models, triggers, tools, and
+  spend caps in a single config file — and deploy them with git push. Each agent
+  runs in an isolated sandbox with full observability, permission boundaries, and
+  budget controls. Built for teams that want to run coding agents safely and
+  transparently alongside human developers.
+tagline: The platform for deploying AI software engineers
+
+github_url: https://github.com/ellipsis-dev
+website_url: https://www.ellipsis.dev
+docs_url: https://docs.ellipsis.dev
+
+install_command: brew install ellipsis-dev/cli/agent
+
+category: Dev Tools
+tags:
+  - coding-agents
+  - developer-tools
+  - agent-management
+  - devops
+  - automation
+  - code-automation
+pricing: paid
+is_open_source: false
+license: Proprietary
+
+problem_solved: |-
+  Running AI coding agents in production is risky and hard to manage — agents can run
+  up large bills, access sensitive code without guardrails, and operate as black boxes
+  that nobody on the team can observe. Ellipsis solves this by providing a platform where
+  teams define coding agents as version-controlled YAML files — with explicit permission
+  scopes, tool allow-lists, and budget caps per agent. Every agent run is recorded with
+  full traces of the agent's thinking, tool calls, and diffs. The platform handles
+  sandboxed execution, observability, and governance so teams can deploy coding agents
+  confidently alongside human developers.
+
+use_cases:
+  - "Deploy automated PR agents that review code, fix bugs, and generate tests across entire repositories"
+  - "Run daily standup agents that summarize merged PRs, pending reviews, and failing CI in Slack"
+  - "Create migration guard agents that automatically review PRs for breaking database schema changes"
+  - "Build on-call assistant agents that triage issues, investigate logs, and propose fixes autonomously"
+  - "Deploy multiple specialized agents across teams with centralized governance, permissions, and cost tracking"

@@ -1,0 +1,41 @@
+name: Fixpoint
+description: >-
+  Fixpoint is an open-source platform for building stateful, multi-step AI workflows
+  with memory, human-in-the-loop, and agent orchestration. It provides the infrastructure
+  to build and deploy AI agents and workflows that remember conversation history, can
+  pause for human approval, and coordinate multiple agents working together on complex tasks.
+tagline: Open-source infrastructure for stateful AI agent workflows
+
+github_url: https://github.com/gofixpoint/amika
+website_url: https://fixpoint.co
+docs_url: https://docs.fixpoint.co
+
+install_command: pip install fixpoint
+
+category: Agents
+tags:
+  - agent-orchestration
+  - workflows
+  - stateful-agents
+  - human-in-the-loop
+  - python
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |-
+  Building reliable AI agent workflows is difficult because most LLM integrations are
+  stateless — they lose context between turns, can't handle multi-step processes that
+  require human approval, and have no built-in durability. Fixpoint solves this by
+  providing open-source infrastructure for stateful, multi-step AI workflows with
+  persistent memory, human-in-the-loop checkpoints, and agent orchestration. Teams
+  can build agents that remember past interactions, pause for human review, and
+  coordinate across multiple specialized agents — all without building custom
+  state management, retry logic, or coordination infrastructure.
+
+use_cases:
+  - "Build customer support agents that maintain conversation state across multiple turns and can escalate to humans when needed"
+  - "Create document processing pipelines where agents extract, validate, and summarize data with human review at each stage"
+  - "Deploy multi-agent workflows where a orchestrator agent delegates sub-tasks to specialized agents and synthesizes results"
+  - "Automate research workflows that require persistent memory across sessions, web searches, and iterative refinement"
+  - "Build AI-powered data enrichment pipelines that combine multiple data sources with human verification checkpoints"
