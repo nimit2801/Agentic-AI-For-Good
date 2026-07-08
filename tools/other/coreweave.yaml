@@ -1,0 +1,28 @@
+name: CoreWeave
+description: Specialized GPU cloud provider built for AI and machine learning workloads, offering high-performance NVIDIA H100, A100, and L40S instances with Kubernetes-native orchestration. Designed from the ground up for compute-intensive AI workloads rather than repurposed general-purpose cloud infrastructure.
+tagline: The cloud for AI, built on Kubernetes
+
+github_url: https://github.com/coreweave/kubernetes-cloud
+website_url: https://coreweave.com
+docs_url: https://docs.coreweave.com
+
+category: Other
+tags: [gpu, cloud, kubernetes, infrastructure, training, inference, h100, mlops]
+pricing: paid
+is_open_source: false
+license: Apache-2.0
+
+problem_solved: |
+  General-purpose cloud providers optimize for web workloads (bursty, short-lived, low-bandwidth),
+  making them inefficient and expensive for continuous GPU-intensive AI training and inference.
+  CoreWeave solves this by building cloud infrastructure specifically for compute — with dense
+  GPU packing, high-bandwidth interconnects, Kubernetes-native orchestration, and competitive
+  pricing. Teams can provision GPU clusters in minutes using familiar Kubernetes tooling without
+  fighting provider quotas or paying for unused CPU overhead.
+
+use_cases:
+  - Train large language and diffusion models on H100 and A100 clusters with InfiniBand interconnects
+  - Serve production LLM inference with Kubernetes GPU autoscaling and competitive pricing
+  - Run high-throughput batch rendering and 3D simulation workloads across hundreds of GPUs
+  - Deploy and scale ML model serving endpoints using standard Kubernetes manifests
+  - Offload compute-intensive CI/CD pipelines for AI products to purpose-built GPU infrastructure
