@@ -1,95 +1,68 @@
 {
-  "generatedAt": "2026-06-24T18:30:16Z",
+  "generatedAt": "2026-07-08T18:30:23Z",
   "windowDays": 7,
-  "summary": "This cycle says major labs are packaging agent workflows for broader adoption (Gemini Spark, Codex mobile), Codex keeps expanding — mobile, enterprise, and deeper agent-loop engineering, Anthropic Opus 4.8 drops with 69.2% SWE-Bench Pro and Dynamic Workflows for orchestrating hundreds of sub-agents. The deeper pattern is that agentic AI is being compressed, packaged, and made more inspectable at the same time.",
+  "summary": "This cycle says major labs are packaging agent workflows for broader adoption (Gemini Spark, Codex mobile), Codex keeps expanding — mobile, enterprise, and deeper agent-loop engineering, event-driven and browser/MCP plumbing is becoming part of the agent conversation. The deeper pattern is that agentic AI is being compressed, packaged, and made more inspectable at the same time.",
   "sourceStats": {
-    "items": 57,
+    "items": 47,
     "sources": {
-      "Anthropic": 2,
-      "GitHub": 47,
+      "GitHub": 44,
       "Google AI": 1,
-      "Hacker News": 2,
-      "Hugging Face": 2,
-      "OpenAI": 3
+      "Hacker News": 1,
+      "OpenAI": 1
     }
   },
   "highlights": [
     {
-      "title": "Claude: Elevated Error Rates for Opus 4.8, Opus 4.7, Opus 4.6, and Sonnet 4.6",
-      "source": "Anthropic",
-      "url": "https://status.claude.com/incidents/lv35v0q9nsj2",
-      "meta": "34 pts · 38 comments",
-      "topics": [
-        "Major labs"
-      ],
-      "publishedAt": "2026-06-22T00:38:50Z",
-      "score": 382,
-      "summary": "",
-      "why": "Opus 4.8 with Dynamic Workflows orchestrating hundreds of sub-agents is the biggest agent-infrastructure release this cycle. Combined with 69.2% SWE-Bench Pro, Fast Mode (3x cheaper), and 41-day release cadence, Anthropic is sprinting on both capability and trustworthiness."
-    },
-    {
-      "title": "Elevated error rate on Claude Opus 4.8",
-      "source": "Anthropic",
-      "url": "https://status.claude.com/incidents/8b0rggdfh1hv",
-      "meta": "6 pts · 2 comments",
-      "topics": [
-        "Major labs"
-      ],
-      "publishedAt": "2026-06-24T13:35:19Z",
-      "score": 218,
-      "summary": "",
-      "why": "Opus 4.8 with Dynamic Workflows orchestrating hundreds of sub-agents is the biggest agent-infrastructure release this cycle. Combined with 69.2% SWE-Bench Pro, Fast Mode (3x cheaper), and 41-day release cadence, Anthropic is sprinting on both capability and trustworthiness."
-    },
-    {
-      "title": "Computer use in Gemini 3.5 Flash",
+      "title": "Expanding Managed Agents in Gemini API: background tasks, remote MCP and more",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api/",
+      "publishedAt": "Tue, 07 Jul 2026 08:54:00 +0000",
       "source": "Google AI",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/",
-      "meta": "41 pts · 12 comments",
+      "meta": "Tue, 07 Jul 2026 08:54:00 GMT",
       "topics": [
-        "Major labs"
+        "Tool use",
+        "Major labs",
+        "Coding agents"
       ],
-      "publishedAt": "2026-06-24T17:21:34Z",
-      "score": 268,
-      "summary": "",
-      "why": "A frontier-level model at 4x speed parity reshapes the practical design space for agent builders overnight — faster inference directly enables more complex, multi-step agent loops."
+      "score": 180,
+      "summary": "Expanding Managed Agents in Gemini API: background tasks, remote MCP and more",
+      "why": "MCP keeps surfacing as the connective tissue for more grounded agent workflows — standard tool surfaces are still one of the cleanest leverage points in the stack."
     },
     {
-      "title": "Codex logging bug may write TBs to local SSDs",
+      "title": "Australian Payments Plus moves faster with ChatGPT and Codex",
+      "url": "https://openai.com/index/australian-payments-plus",
+      "publishedAt": "Tue, 07 Jul 2026 00:00:00 GMT",
+      "source": "OpenAI",
+      "meta": "Tue, 07 Jul 2026 00:00:00 GMT",
+      "topics": [
+        "Tool use",
+        "Major labs",
+        "Coding agents"
+      ],
+      "score": 180,
+      "summary": "Australian Payments Plus moves faster with ChatGPT and Codex",
+      "why": "The strongest practical signal right now is still better tooling around how models call, sequence, and recover from actions."
+    },
+    {
+      "title": "Show HN: Rowboat – Open-source, local-first alternative to Claude Desktop",
       "source": "Hacker News",
-      "url": "https://github.com/openai/codex/issues/28224",
-      "meta": "503 pts · 269 comments",
+      "url": "https://github.com/rowboatlabs/rowboat",
+      "meta": "208 pts · 89 comments",
       "topics": [
         "Tool use",
-        "Open weights",
-        "Major labs",
-        "Coding agents"
+        "Multi-agent workflows",
+        "Memory and state",
+        "Voice and multimodal"
       ],
-      "publishedAt": "2026-06-22T07:30:17Z",
-      "score": 1883,
-      "summary": "",
-      "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
-    },
-    {
-      "title": "yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
-      "source": "Hugging Face",
-      "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
-      "meta": "508 likes · 138,704 downloads",
-      "topics": [
-        "Tool use",
-        "Open weights",
-        "Major labs",
-        "Coding agents"
-      ],
-      "publishedAt": "2026-06-19T00:06:07.000Z",
-      "score": 2170.704,
-      "summary": "gguf gemma4 coding agentic terminal tool-use reasoning thinking llama.cpp local-llm text-generation base_model:google/gemma-4-12B-it base_model:quantized:google/gemma-4-12B-it license:apache-2.0 endpoints_compatible region:us conversational",
-      "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
+      "publishedAt": "2026-07-07T16:10:44Z",
+      "score": 773,
+      "summary": "Claude’s desktop app is brilliant, but for our own daily work we kept wanting it to be less like a chat app and more like a full-fledged work app. Rowboat is our attempt at that, including the ability to build your own work surfaces inside Rowboat (more below). Our repo is https:&#x2F;&#x2F;github.com&#x2F;rowboatlabs&#x2F;rowboat , and there’s a demo video here: https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=et5yQABJ3xI In a previous startup, we built a deep-learning product for enterprise support reps, including teams supporting P&G brands. Models took live notes, suggested replies, and recommended actions while support reps were on calls or handling emails. One lesson stuck with us: it&#x27;s not enough for the AI to be right, the help has to show up where the work is happening. So we added what we came to call “work surfaces”: dedicated areas for email, meetings, notes, browser, and parallel coding, where the assistant can help inside the workflow itself rather than only through chat: - Email client: Rowboat has a simple email client that sorts incoming emails into important vs. everything else, and pre-creates drafts for important emails. As you edit and send emails, it takes notes on your style, so future drafts get closer to your voice. - Meeting notes: We built a Granola-style local meeting notetaker. Notes are stored as plain Markdown files on your machine. After a meeting, Rowboat feeds the notes back into the knowledge graph and updates the relevant people, project, and topic notes. - Browser: We added a built-in browser, isolated from your main one, where you can log in only to the accounts you want the assistant to help with. The assistant uses browser-use skills to navigate websites. - Parallel coding: The code-mode inside Rowboat lets you spin multiple instances of Claude Code or Codex and either work with them directly or let Rowboat use your work context to orchestrate them. We built an ACP (Agent Client Protocol) client in Rowboat for this. - Notes: Rowboat has an Obsidian-style local note-taking system. It comes with graph view, bases view, and voice notes. You can also sync Google Docs files and edit them inside Rowboat. You can also build your own work surfaces inside Rowboat (web apps). Each app gets its own UI and a background agent, and can use all of Rowboat&#x27;s tools, product integrations, and your work memory. For instance: an app to manage GitHub activity, project tracking, or ads campaign management. There are a few community apps at launch you can search and install, and you can publish your own by creating a GitHub repo for it and registering it. Rowboat also indexes your work into a knowledge graph that all of the above surfaces use to have better context. We did a Show HN a few months back on this: https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=46962641 . As an example that ties some of these together: you can create an app inside Rowboat that collects feature requests from your email, meetings, and Slack and ranks them, then uses Claude Code to draft a first version of the top-ranked feature, pulling prior context about it from your knowledge graph. Rowboat is local-first: data is stored as plain Markdown files you can read, edit, or delete anytime. It is Apache-2.0 and works with any LLM, including local models through Ollama or LM Studio. We’d love to hear your thoughts, and contributions are welcome!",
+      "why": "A lot of the quality gap in agents still comes down to state handling, durability, and clearer control flow."
     },
     {
       "title": "google-gemini/gemini-cli",
       "source": "GitHub",
       "url": "https://github.com/google-gemini/gemini-cli",
-      "meta": "105530 stars · updated Wed, 24 Jun 2026 04:11:06 UTC",
+      "meta": "105845 stars · updated Wed, 08 Jul 2026 18:22:05 UTC",
       "topics": [
         "Tool use",
         "Open weights",
@@ -97,7 +70,7 @@
         "Coding agents"
       ],
       "publishedAt": "2025-04-17T17:04:31Z",
-      "score": 661624,
+      "score": 663660,
       "summary": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
       "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
     },
@@ -105,7 +78,7 @@
       "title": "LearningCircuit/local-deep-research",
       "source": "GitHub",
       "url": "https://github.com/LearningCircuit/local-deep-research",
-      "meta": "8590 stars · updated Wed, 24 Jun 2026 18:25:35 UTC",
+      "meta": "8683 stars · updated Wed, 08 Jul 2026 17:23:04 UTC",
       "topics": [
         "Tool use",
         "Evaluation",
@@ -113,7 +86,7 @@
         "Major labs"
       ],
       "publishedAt": "2025-02-09T15:41:32Z",
-      "score": 53158,
+      "score": 53744,
       "summary": "~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all local and cloud LLMs (llama.cpp, Ollama, Google, ...). 10+ search engines - arXiv, PubMed, your private documents. Everything Local & Encrypted.",
       "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
     }
@@ -124,88 +97,34 @@
       "label": "Major labs",
       "items": [
         {
-          "title": "Claude: Elevated Error Rates for Opus 4.8, Opus 4.7, Opus 4.6, and Sonnet 4.6",
-          "source": "Anthropic",
-          "url": "https://status.claude.com/incidents/lv35v0q9nsj2",
-          "meta": "34 pts · 38 comments",
-          "topics": [
-            "Major labs"
-          ],
-          "publishedAt": "2026-06-22T00:38:50Z",
-          "score": 382,
-          "summary": "",
-          "why": "Opus 4.8 with Dynamic Workflows orchestrating hundreds of sub-agents is the biggest agent-infrastructure release this cycle. Combined with 69.2% SWE-Bench Pro, Fast Mode (3x cheaper), and 41-day release cadence, Anthropic is sprinting on both capability and trustworthiness."
-        },
-        {
-          "title": "Computer use in Gemini 3.5 Flash",
-          "source": "Google AI",
-          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/",
-          "meta": "41 pts · 12 comments",
-          "topics": [
-            "Major labs"
-          ],
-          "publishedAt": "2026-06-24T17:21:34Z",
-          "score": 268,
-          "summary": "",
-          "why": "A frontier-level model at 4x speed parity reshapes the practical design space for agent builders overnight — faster inference directly enables more complex, multi-step agent loops."
-        },
-        {
-          "title": "Elevated error rate on Claude Opus 4.8",
-          "source": "Anthropic",
-          "url": "https://status.claude.com/incidents/8b0rggdfh1hv",
-          "meta": "6 pts · 2 comments",
-          "topics": [
-            "Major labs"
-          ],
-          "publishedAt": "2026-06-24T13:35:19Z",
-          "score": 218,
-          "summary": "",
-          "why": "Opus 4.8 with Dynamic Workflows orchestrating hundreds of sub-agents is the biggest agent-infrastructure release this cycle. Combined with 69.2% SWE-Bench Pro, Fast Mode (3x cheaper), and 41-day release cadence, Anthropic is sprinting on both capability and trustworthiness."
-        },
-        {
-          "title": "Daybreak: Tools for securing every organization in the world",
-          "url": "https://openai.com/index/daybreak-securing-the-world",
-          "publishedAt": "Mon, 22 Jun 2026 10:00:00 GMT",
+          "title": "Australian Payments Plus moves faster with ChatGPT and Codex",
+          "url": "https://openai.com/index/australian-payments-plus",
+          "publishedAt": "Tue, 07 Jul 2026 00:00:00 GMT",
           "source": "OpenAI",
-          "meta": "Mon, 22 Jun 2026 10:00:00 GMT",
-          "topics": [
-            "Tool use",
-            "Major labs"
-          ],
-          "score": 180,
-          "summary": "Daybreak: Tools for securing every organization in the world",
-          "why": "The strongest practical signal right now is still better tooling around how models call, sequence, and recover from actions."
-        },
-        {
-          "title": "Codex-maxxing for long-running work",
-          "url": "https://openai.com/index/codex-maxxing-long-running-work",
-          "publishedAt": "Mon, 22 Jun 2026 00:00:00 GMT",
-          "source": "OpenAI",
-          "meta": "Mon, 22 Jun 2026 00:00:00 GMT",
-          "topics": [
-            "Tool use",
-            "Major labs",
-            "Coding agents",
-            "Infra and retrieval"
-          ],
-          "score": 180,
-          "summary": "Codex-maxxing for long-running work",
-          "why": "A lot of real-world agent performance now depends on infrastructure details like eventing, search access, and reliability under external constraints."
-        },
-        {
-          "title": "Samsung Electronics brings ChatGPT and Codex to employees",
-          "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
-          "publishedAt": "Sun, 21 Jun 2026 23:00:00 GMT",
-          "source": "OpenAI",
-          "meta": "Sun, 21 Jun 2026 23:00:00 GMT",
+          "meta": "Tue, 07 Jul 2026 00:00:00 GMT",
           "topics": [
             "Tool use",
             "Major labs",
             "Coding agents"
           ],
           "score": 180,
-          "summary": "Samsung Electronics brings ChatGPT and Codex to employees",
+          "summary": "Australian Payments Plus moves faster with ChatGPT and Codex",
           "why": "The strongest practical signal right now is still better tooling around how models call, sequence, and recover from actions."
+        },
+        {
+          "title": "Expanding Managed Agents in Gemini API: background tasks, remote MCP and more",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api/",
+          "publishedAt": "Tue, 07 Jul 2026 08:54:00 +0000",
+          "source": "Google AI",
+          "meta": "Tue, 07 Jul 2026 08:54:00 GMT",
+          "topics": [
+            "Tool use",
+            "Major labs",
+            "Coding agents"
+          ],
+          "score": 180,
+          "summary": "Expanding Managed Agents in Gemini API: background tasks, remote MCP and more",
+          "why": "MCP keeps surfacing as the connective tissue for more grounded agent workflows — standard tool surfaces are still one of the cleanest leverage points in the stack."
         }
       ]
     },
@@ -214,36 +133,20 @@
       "label": "Hacker News",
       "items": [
         {
-          "title": "Codex logging bug may write TBs to local SSDs",
+          "title": "Show HN: Rowboat – Open-source, local-first alternative to Claude Desktop",
           "source": "Hacker News",
-          "url": "https://github.com/openai/codex/issues/28224",
-          "meta": "503 pts · 269 comments",
+          "url": "https://github.com/rowboatlabs/rowboat",
+          "meta": "208 pts · 89 comments",
           "topics": [
             "Tool use",
-            "Open weights",
-            "Major labs",
-            "Coding agents"
-          ],
-          "publishedAt": "2026-06-22T07:30:17Z",
-          "score": 1883,
-          "summary": "",
-          "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
-        },
-        {
-          "title": "Show HN: peerd – AI agent harness that runs entirely in your browser",
-          "source": "Hacker News",
-          "url": "https://github.com/NotASithLord/peerd",
-          "meta": "29 pts · 13 comments",
-          "topics": [
-            "Tool use",
+            "Multi-agent workflows",
             "Memory and state",
-            "Open weights",
-            "Major labs"
+            "Voice and multimodal"
           ],
-          "publishedAt": "2026-06-23T15:05:00Z",
-          "score": 152,
-          "summary": "Hey HN. http:&#x2F;&#x2F;peerd.ai is an AI agent harness that lives entirely in your browser as a web extension. You don’t have to install a separate “AI browser”. You don’t have to bolt on or run some external process or manage a clunky mcp integration. It’s just a fully contained web extension, written in no build vanilla JS with minimal non-browser dependencies, using your own provider keys, and Apache 2. This isn’t just a fun hack. While it has largely been a solo side project, I genuinely believe the browser and the web could be the most natural platform for AI agents to operate safely, autonomously, and most importantly without A2A middlemen (more on that in a sec). To demonstrate that point peerd doesn’t just drive browser automation. It spins up isolated sandboxes using tabs and worker instances to support various real workload types. Those include headless JS computational work, visual JS notebooks, personal client side apps, and real Linux VMs on top of wasm with full http networking. The industry discourse over the last several months has been dominated by “which substrate is the best for ai agent sandboxes” with many competing answers focused on different models and use cases. Cloudflare is one of the most prominent examples, positioning its v8 isolate based workers as the best in class solution thanks to faster than container startup times and strong isolation guarantees. The v8 isolate is of course the product of chromium, which runs on billions of browsers around the world for free. The browser as a whole is perhaps the most battle tested sandbox system in the entire software industry. It’s been built on 3 decades of learning from hostile content, hostile code, and hostile users. Native and cloud agents are necessarily rebuilding all or most of this posture from scratch. peerd doesn’t. It leverages everything the browser has to offer and pushes it to its functional limits, while inheriting its security baseline and isolation from the host system. Robust sandboxing isn’t the only thing the browser offers and peerd uses. It comes with extremely powerful and underrated primitives, from webCrypto, webRTC, webAuthn, webGPU, and ~soon WebNN. Direct web access, with your real live sessions, and api calls with fetch present an alternative model to MCP integrations. The agent can write and spawn web apps right there in a tab, no hosted service necessary. Then there’s the A2A piece: peerd already has a rudimentary p2p (peerd-to-peerd?) network in place using webRTC. Today you can connect with peers on the network, add them as contacts, and share signed apps you’ve created. I’m working on extending these apps to be able to leverage the same p2p network to support decentralized web apps (dwapps), as well as facilitate true p2p A2A with no platform or middlemen. Given this is an early part time project, this is an extremely experimental build and in a v0.x preview state. I’ve taken care to attempt to address the lethal trifecta: the main agent loops&#x2F;sessions never ingest untrusted DOM code or possess low level navigation tools. It delegates those tasks to dedicated web runners with no wider tooling or secrets access that return summarized results. Both the DOM and the summarized results are bracketed as untrusted, meaning two stacked prompt injection escapes are needed. All egress goes through a central module that has a customizable deny list, and only models calls to designated allowed endpoints are possible. See more in the docs, site, and the code itself. Ultimately, use at your own risk. Today anthropic, open router, local ollama, and even an experimental WebGPU instance of Gemma are supported. Honest limitations: Chrome store and AMO are still pending until it can get more eyeballs and live usage. Just loading unpacked from GitHub is the easiest way to go, and as a bonus makes it easy to audit thanks to no build. Linux on wasm depends on the Cheerpx engine, which is not open source and has restrictions for commercial use. That may be a good reason to reassess it compared to alternatives, but it’s also the most performant and looks closest to implementing 64bit support. Poke around, use it, critique it, and have fun.",
-          "why": "MCP keeps surfacing as the connective tissue for more grounded agent workflows — standard tool surfaces are still one of the cleanest leverage points in the stack."
+          "publishedAt": "2026-07-07T16:10:44Z",
+          "score": 773,
+          "summary": "Claude’s desktop app is brilliant, but for our own daily work we kept wanting it to be less like a chat app and more like a full-fledged work app. Rowboat is our attempt at that, including the ability to build your own work surfaces inside Rowboat (more below). Our repo is https:&#x2F;&#x2F;github.com&#x2F;rowboatlabs&#x2F;rowboat , and there’s a demo video here: https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=et5yQABJ3xI In a previous startup, we built a deep-learning product for enterprise support reps, including teams supporting P&G brands. Models took live notes, suggested replies, and recommended actions while support reps were on calls or handling emails. One lesson stuck with us: it&#x27;s not enough for the AI to be right, the help has to show up where the work is happening. So we added what we came to call “work surfaces”: dedicated areas for email, meetings, notes, browser, and parallel coding, where the assistant can help inside the workflow itself rather than only through chat: - Email client: Rowboat has a simple email client that sorts incoming emails into important vs. everything else, and pre-creates drafts for important emails. As you edit and send emails, it takes notes on your style, so future drafts get closer to your voice. - Meeting notes: We built a Granola-style local meeting notetaker. Notes are stored as plain Markdown files on your machine. After a meeting, Rowboat feeds the notes back into the knowledge graph and updates the relevant people, project, and topic notes. - Browser: We added a built-in browser, isolated from your main one, where you can log in only to the accounts you want the assistant to help with. The assistant uses browser-use skills to navigate websites. - Parallel coding: The code-mode inside Rowboat lets you spin multiple instances of Claude Code or Codex and either work with them directly or let Rowboat use your work context to orchestrate them. We built an ACP (Agent Client Protocol) client in Rowboat for this. - Notes: Rowboat has an Obsidian-style local note-taking system. It comes with graph view, bases view, and voice notes. You can also sync Google Docs files and edit them inside Rowboat. You can also build your own work surfaces inside Rowboat (web apps). Each app gets its own UI and a background agent, and can use all of Rowboat&#x27;s tools, product integrations, and your work memory. For instance: an app to manage GitHub activity, project tracking, or ads campaign management. There are a few community apps at launch you can search and install, and you can publish your own by creating a GitHub repo for it and registering it. Rowboat also indexes your work into a knowledge graph that all of the above surfaces use to have better context. We did a Show HN a few months back on this: https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=46962641 . As an example that ties some of these together: you can create an app inside Rowboat that collects feature requests from your email, meetings, and Slack and ranks them, then uses Claude Code to draft a first version of the top-ranked feature, pulling prior context about it from your knowledge graph. Rowboat is local-first: data is stored as plain Markdown files you can read, edit, or delete anytime. It is Apache-2.0 and works with any LLM, including local models through Ollama or LM Studio. We’d love to hear your thoughts, and contributions are welcome!",
+          "why": "A lot of the quality gap in agents still comes down to state handling, durability, and clearer control flow."
         }
       ]
     },
@@ -255,38 +158,7 @@
     {
       "key": "hugging-face",
       "label": "Hugging Face",
-      "items": [
-        {
-          "title": "yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
-          "source": "Hugging Face",
-          "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
-          "meta": "508 likes · 138,704 downloads",
-          "topics": [
-            "Tool use",
-            "Open weights",
-            "Major labs",
-            "Coding agents"
-          ],
-          "publishedAt": "2026-06-19T00:06:07.000Z",
-          "score": 2170.704,
-          "summary": "gguf gemma4 coding agentic terminal tool-use reasoning thinking llama.cpp local-llm text-generation base_model:google/gemma-4-12B-it base_model:quantized:google/gemma-4-12B-it license:apache-2.0 endpoints_compatible region:us conversational",
-          "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
-        },
-        {
-          "title": "Qwen/Qwen-AgentWorld-35B-A3B",
-          "source": "Hugging Face",
-          "url": "https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B",
-          "meta": "97 likes · 223 downloads",
-          "topics": [
-            "Open weights",
-            "Major labs"
-          ],
-          "publishedAt": "2026-06-22T14:49:37.000Z",
-          "score": 388.223,
-          "summary": "transformers safetensors qwen3_5_moe image-text-to-text qwen world-model agent environment-simulation text-generation conversational dataset:Qwen/AgentWorldBench arxiv:2606.24597 base_model:Qwen/Qwen3.5-35B-A3B-Base base_model:finetune:Qwen/Qwen3.5-35B-A3B-Base license:apache-2.0 endpoints_compatible region:us",
-          "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
-        }
-      ]
+      "items": []
     },
     {
       "key": "github",
@@ -296,7 +168,7 @@
           "title": "google-gemini/gemini-cli",
           "source": "GitHub",
           "url": "https://github.com/google-gemini/gemini-cli",
-          "meta": "105530 stars · updated Wed, 24 Jun 2026 04:11:06 UTC",
+          "meta": "105845 stars · updated Wed, 08 Jul 2026 18:22:05 UTC",
           "topics": [
             "Tool use",
             "Open weights",
@@ -304,7 +176,7 @@
             "Coding agents"
           ],
           "publishedAt": "2025-04-17T17:04:31Z",
-          "score": 661624,
+          "score": 663660,
           "summary": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
           "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
         },
@@ -312,7 +184,7 @@
           "title": "LearningCircuit/local-deep-research",
           "source": "GitHub",
           "url": "https://github.com/LearningCircuit/local-deep-research",
-          "meta": "8590 stars · updated Wed, 24 Jun 2026 18:25:35 UTC",
+          "meta": "8683 stars · updated Wed, 08 Jul 2026 17:23:04 UTC",
           "topics": [
             "Tool use",
             "Evaluation",
@@ -320,7 +192,7 @@
             "Major labs"
           ],
           "publishedAt": "2025-02-09T15:41:32Z",
-          "score": 53158,
+          "score": 53744,
           "summary": "~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all local and cloud LLMs (llama.cpp, Ollama, Google, ...). 10+ search engines - arXiv, PubMed, your private documents. Everything Local & Encrypted.",
           "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
         },
@@ -328,93 +200,94 @@
           "title": "MinishLab/semble",
           "source": "GitHub",
           "url": "https://github.com/MinishLab/semble",
-          "meta": "5383 stars · updated Wed, 24 Jun 2026 05:31:56 UTC",
+          "meta": "5546 stars · updated Wed, 08 Jul 2026 08:59:00 UTC",
           "topics": [
             "Tool use",
             "Evaluation",
             "Coding agents"
           ],
           "publishedAt": "2026-04-06T14:56:45Z",
-          "score": 32882,
+          "score": 33866,
           "summary": "Fast and Accurate Code Search for Agents. Uses ~98% fewer tokens than grep+read",
           "why": "This is a strong agent-engineering efficiency signal: giving coding agents semantic code search instead of grep-based token waste directly reduces cost and improves latency on every agent loop."
         },
         {
-          "title": "antoinezambelli/forge",
+          "title": "elder-plinius/T3MP3ST",
           "source": "GitHub",
-          "url": "https://github.com/antoinezambelli/forge",
-          "meta": "2126 stars · updated Tue, 23 Jun 2026 12:49:05 UTC",
+          "url": "https://github.com/elder-plinius/T3MP3ST",
+          "meta": "3781 stars · updated Wed, 08 Jul 2026 14:25:45 UTC",
           "topics": [
-            "Tool use",
-            "Multi-agent workflows"
+            "Multi-agent workflows",
+            "Major labs",
+            "Coding agents"
           ],
-          "publishedAt": "2026-02-16T16:59:06Z",
-          "score": 13322,
-          "summary": "A Python framework for self-hosted LLM tool-calling and multi-step agentic workflows",
-          "why": "The strongest practical signal right now is still better tooling around how models call, sequence, and recover from actions."
+          "publishedAt": "2026-07-08T14:25:45Z",
+          "score": 24516,
+          "summary": "autonomous red teaming platform; multi-agent offensive-security meta-harness",
+          "why": "Major lab launches still reshape the practical design space for agent builders almost overnight."
         }
       ]
     }
   ],
   "tangentRadar": [
     {
-      "topic": "Coding agents",
-      "signalCount": 33,
-      "whyItMatters": "The comment volume makes this a good proxy for what technically engaged builders think is worth paying attention to.",
+      "topic": "Tool use",
+      "signalCount": 26,
+      "whyItMatters": "The strongest practical signal right now is still better tooling around how models call, sequence, and recover from actions.",
       "signals": [
-        "Hacker News: Codex logging bug may write TBs to local SSDs",
-        "Hugging Face: yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
-        "OpenAI: Codex-maxxing for long-running work"
+        "Hacker News: Show HN: Rowboat – Open-source, local-first alternative to Claude Desktop",
+        "OpenAI: Australian Payments Plus moves faster with ChatGPT and Codex",
+        "Google AI: Expanding Managed Agents in Gemini API: background tasks, remote MCP and more"
       ]
     },
     {
-      "topic": "Tool use",
-      "signalCount": 32,
-      "whyItMatters": "The strongest practical signal right now is still better tooling around how models call, sequence, and recover from actions.",
+      "topic": "Coding agents",
+      "signalCount": 26,
+      "whyItMatters": "The comment volume makes this a good proxy for what technically engaged builders think is worth paying attention to.",
       "signals": [
-        "Hacker News: Codex logging bug may write TBs to local SSDs",
-        "Hacker News: Show HN: peerd – AI agent harness that runs entirely in your browser",
-        "Hugging Face: yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF"
+        "OpenAI: Australian Payments Plus moves faster with ChatGPT and Codex",
+        "Google AI: Expanding Managed Agents in Gemini API: background tasks, remote MCP and more",
+        "GitHub: elder-plinius/T3MP3ST"
       ]
     },
     {
       "topic": "Major labs",
-      "signalCount": 22,
+      "signalCount": 15,
       "whyItMatters": "Major lab launches still reshape the practical design space for agent builders almost overnight.",
       "signals": [
-        "Google AI: Computer use in Gemini 3.5 Flash",
-        "Hacker News: Codex logging bug may write TBs to local SSDs",
-        "Hacker News: Show HN: peerd – AI agent harness that runs entirely in your browser"
-      ]
-    },
-    {
-      "topic": "Interfaces",
-      "signalCount": 22,
-      "whyItMatters": "Agent UX is moving beyond chat boxes — interface design is becoming part of the research frontier.",
-      "signals": [
-        "GitHub: HKUDS/AgentSpace",
-        "GitHub: Johell1NS/browser-search",
-        "GitHub: Reyzowter/Hello-Agents"
+        "OpenAI: Australian Payments Plus moves faster with ChatGPT and Codex",
+        "Google AI: Expanding Managed Agents in Gemini API: background tasks, remote MCP and more",
+        "GitHub: elder-plinius/T3MP3ST"
       ]
     },
     {
       "topic": "Open weights",
-      "signalCount": 21,
+      "signalCount": 15,
       "whyItMatters": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate.",
       "signals": [
-        "Hacker News: Codex logging bug may write TBs to local SSDs",
-        "Hacker News: Show HN: peerd – AI agent harness that runs entirely in your browser",
-        "Hugging Face: yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF"
+        "GitHub: ammaarreshi/Generals-Mac-iOS-iPad",
+        "GitHub: oxbshw/watch-skill",
+        "GitHub: DasterProkio/awesome-ai-companion"
+      ]
+    },
+    {
+      "topic": "Interfaces",
+      "signalCount": 15,
+      "whyItMatters": "Agent UX is moving beyond chat boxes — interface design is becoming part of the research frontier.",
+      "signals": [
+        "GitHub: simonlin1212/Vibe-Research",
+        "GitHub: agentrhq/webcmd",
+        "GitHub: cth9191/cloneify"
       ]
     },
     {
       "topic": "Multi-agent workflows",
-      "signalCount": 12,
+      "signalCount": 13,
       "whyItMatters": "The comment volume makes this a good proxy for what technically engaged builders think is worth paying attention to.",
       "signals": [
-        "GitHub: Forsy-AI/agent-apprenticeship",
-        "GitHub: Reyzowter/Hello-Agents",
-        "GitHub: benchflow-ai/awesome-evals"
+        "Hacker News: Show HN: Rowboat – Open-source, local-first alternative to Claude Desktop",
+        "GitHub: elder-plinius/T3MP3ST",
+        "GitHub: JWM0203/Claude-Science-for-win"
       ]
     }
   ],
