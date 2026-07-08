@@ -1,0 +1,30 @@
+name: PrivateGPT
+description: "PrivateGPT provides a complete API layer for building private AI applications using local models. It includes RAG pipelines, skills, tools, MCP server support, text-to-SQL, and a retrieval-augmented chat interface — all designed to run on-premise with zero data leaving your infrastructure."
+tagline: "Build private AI applications with local models and RAG"
+
+github_url: https://github.com/zylon-ai/private-gpt
+website_url: https://www.zylon.ai/private-gpt
+docs_url: https://docs.privategpt.dev
+
+install_command: pip install private-gpt
+
+category: RAG
+tags: [rag, python, on-premise, local, privacy, api, mcp, text-to-sql]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Organizations that need AI capabilities but cannot send data to third-party APIs face a
+  difficult choice: sacrifice privacy or build a custom on-premise AI stack from scratch.
+  PrivateGPT solves this by providing a comprehensive, production-ready API layer that runs
+  entirely on your own infrastructure with local models. It handles document ingestion,
+  RAG retrieval, multi-model chat, tool execution, MCP server integration, and even text-to-SQL
+  — all behind your firewall. The OpenAI-compatible API means existing tooling works without
+  modification. Teams get the full power of LLMs without compromising on data sovereignty.
+
+use_cases:
+  - Deploy a fully private document Q&A system for sensitive HR, legal, and financial documents that cannot be sent to external APIs
+  - Build an on-premise AI assistant that accesses internal databases via text-to-SQL without exposing query logic to third parties
+  - Create a private coding assistant with local LLMs and MCP tool integration for air-gapped development environments
+  - Power a customer-facing AI chatbot for regulated industries (healthcare, finance, government) with guaranteed data residency

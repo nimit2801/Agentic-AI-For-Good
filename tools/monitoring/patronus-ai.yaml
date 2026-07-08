@@ -1,0 +1,28 @@
+name: Patronus AI
+description: "Patronus AI is an LLM evaluation and observability platform that provides intelligent evaluation assistants, automated testing, guardrails, and experiment tracking for AI applications. It helps teams systematically evaluate, monitor, and improve LLM outputs at every stage of development and production."
+tagline: "Enterprise LLM evaluation, guardrails, and observability platform"
+
+website_url: https://www.patronus.ai
+docs_url: https://patronus-ai.github.io/patronus-py/
+
+install_command: pip install patronus
+
+category: Monitoring
+tags: [llm-observability, evaluation, experimentation, python, guardrails, testing]
+pricing: freemium
+is_open_source: false
+
+problem_solved: |
+  Evaluating LLM outputs at scale is fundamentally different from traditional software testing.
+  LLMs produce variable, open-ended responses that can't be validated with simple assertions.
+  Patronus AI provides a comprehensive platform for systematic LLM evaluation: automated
+  evaluators that check for hallucination, relevance, toxicity, and custom criteria; experiment
+  tracking to compare prompts, models, and parameters; guardrails to catch failures in production;
+  and observability to trace and debug complex agent workflows. Teams get a single source of
+  truth for AI quality without building evaluation infrastructure from scratch.
+
+use_cases:
+  - Run automated evaluation suites on LLM outputs to detect hallucinations, off-topic responses, and safety violations before deployment
+  - Track and compare experiments across different prompts, models, and hyperparameters to find the optimal configuration for your use case
+  - Deploy production guardrails that intercept and flag problematic LLM responses in real-time with custom policy enforcement
+  - Monitor and debug multi-step agent workflows with detailed traces showing tool calls, context retrieval, and decision points

@@ -1,0 +1,27 @@
+name: LocalGPT
+description: "LocalGPT lets you chat with your documents entirely on your local device using GPT models, with no data leaving your machine. It provides a complete RAG pipeline — document ingestion, embedding, vector search, and LLM-powered Q&A — all running locally for 100% privacy."
+tagline: "Chat with your documents locally — 100% private, no data leaves your device"
+
+github_url: https://github.com/PromtEngineer/localGPT
+website_url: https://github.com/PromtEngineer/localGPT
+
+category: RAG
+tags: [rag, python, local, privacy, documents, offline, llm]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Most RAG-based document Q&A tools send your documents or query embeddings to cloud APIs,
+  which is a non-starter for confidential data like NDAs, medical records, or trade secrets.
+  LocalGPT runs everything — ingestion, embedding, vector search, and LLM inference —
+  entirely on your local machine using open-source models. You can load PDFs, Word docs,
+  and text files, ask questions in natural language, and get answers with citations. No data
+  ever leaves your computer, making it ideal for privacy-sensitive workflows where cloud
+  services are prohibited by policy or regulation.
+
+use_cases:
+  - Analyze confidential legal documents and contracts on a local machine with no cloud dependency or data exfiltration risk
+  - Build a personal research assistant that answers questions from your PDF library, papers, and ebooks without internet access
+  - Enable offline document Q&A in secure environments (military, government, healthcare) where network connectivity is restricted
+  - Prototype and test RAG pipelines with local models before deploying to production infrastructure
