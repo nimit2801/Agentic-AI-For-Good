@@ -1,0 +1,31 @@
+name: Dapr
+description: Portable, event-driven runtime for building distributed applications across cloud and edge. Provides APIs for service-to-service invocation, state management, pub/sub messaging, workflows, actors, and bindings — all abstracted behind a consistent API layer so developers can build microservices without being locked into any specific cloud provider.
+tagline: Portable, event-driven runtime for distributed applications
+
+github_url: https://github.com/dapr/dapr
+website_url: https://dapr.io
+docs_url: https://docs.dapr.io
+
+install_command: brew install dapr/tap/dapr-cli
+
+category: Dev Tools
+tags: [distributed-systems, microservices, event-driven, cloud-native, runtime, workflow, kubernetes]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Building resilient distributed applications — microservices with service discovery, stateful
+  workflows, pub/sub messaging, and secret management — requires deep expertise in distributed
+  systems and couples you to specific cloud infrastructure. Dapr solves this by providing a
+  portable runtime that exposes these patterns as simple HTTP/gRPC APIs, abstracting away the
+  underlying infrastructure. Developers get service invocation, state management, publish/subscribe,
+  workflow orchestration, actor patterns, and input/output bindings — all without SDK lock-in
+  or cloud vendor coupling, running the same way on Kubernetes, edge, or local development.
+
+use_cases:
+  - Build microservice architectures with built-in service discovery, retries, and mTLS without infrastructure code
+  - Implement stateful workflow orchestration for multi-step business processes with automatic state persistence
+  - Connect AI agent actions to external systems via pub/sub, bindings, and secret management APIs
+  - Develop cloud-agnostic applications that can run on Kubernetes, edge devices, or local machines unchanged
+  - Add distributed tracing, metrics, and observability to microservices with zero-instrumentation Dapr sidecars

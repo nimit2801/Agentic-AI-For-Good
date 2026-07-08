@@ -1,0 +1,31 @@
+name: Optio
+description: Open-source workflow orchestration platform for AI coding agent swarms that manages the full lifecycle from task definition to merged PR. Provides pipeline stages for plan, implement, PR, CI checks, review, and merge — with live agent streaming, cost tracking, and integrated observability for multi-agent development workflows.
+tagline: Workflow orchestration for AI coding agent swarms
+
+github_url: https://github.com/jonwiggins/optio
+website_url: https://optio.run
+docs_url: https://docs.optio.run
+
+install_command: helm install optio ./optio-chart
+
+category: Dev Tools
+tags: [workflow, orchestration, coding-agent, pipeline, ci-cd, multi-agent, kubernetes]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Running AI coding agents in production requires more than just a single prompt — you need
+  structured pipelines that handle planning, implementation, PR creation, CI verification,
+  code review, and merging, while tracking costs and providing visibility into each stage.
+  Optio solves this by providing a Kubernetes-native orchestration platform for AI agent
+  swarms: define tasks, and Optio manages the pipeline through plan → implement → PR → CI →
+  review → merge stages, with live streaming of agent output, cost analytics per pipeline
+  stage, and an integrated dashboard for monitoring the entire development workflow.
+
+use_cases:
+  - Orchestrate AI code generation from task description to merged PR with structured pipeline stages
+  - Manage multi-agent development workflows where different agents handle planning, writing, and review
+  - Track costs per pipeline stage for AI-assisted development with granular observability
+  - Integrate AI agent workflows with existing CI/CD pipelines and code review processes
+  - Deploy and manage coding agent orchestration on Kubernetes with Helm-based infrastructure
