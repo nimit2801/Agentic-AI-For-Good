@@ -1,0 +1,33 @@
+name: Rocket Ride
+description: Open-source AI pipeline engine with a high-performance C++ runtime and 85+ pipeline nodes spanning 13 LLM providers, 8 vector databases, OCR, NER, and more. Pipelines are composed visually in VS Code or defined as portable JSON, executed by a multithreaded C++ engine, and integrated via Python, TypeScript, or MCP SDKs.
+tagline: Open-source AI pipeline engine for production workflows
+
+github_url: https://github.com/rocketride-org/rocketride-server
+website_url: https://rocketride.org
+docs_url: https://docs.rocketride.org
+
+install_command: |-
+  pip install rocketride
+  npm install rocketride
+
+category: Dev Tools
+tags: [pipeline, llm, workflow, data-processing, vs-code, python, cpp, ai-engineering]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Building production AI workflows that chain together LLM calls, vector search, document
+  processing, and custom logic typically requires stitching together disparate libraries and
+  managing complex infrastructure. Rocket Ride solves this by providing a visual pipeline
+  builder (VS Code extension), a high-performance C++ runtime, and SDKs for Python, TypeScript,
+  and MCP — all in one open-source platform. Its 85+ pre-built nodes cover LLM providers,
+  vector databases, OCR, NER, chunking, embeddings, and more, all composable as portable JSON
+  pipelines that run on your own infrastructure with no vendor lock-in.
+
+use_cases:
+  - Build multi-step RAG pipelines that chain document ingestion, chunking, embedding, and LLM querying
+  - Create production data processing workflows with OCR, NER, PII anonymization, and structured extraction
+  - Orchestrate multi-agent AI workflows combining CrewAI and LangChain agents within pipeline nodes
+  - Deploy AI pipelines as callable tools via MCP server for AI assistant integration
+  - Run high-throughput batch inference and embedding jobs on the multithreaded C++ runtime

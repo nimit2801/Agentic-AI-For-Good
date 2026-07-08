@@ -1,0 +1,32 @@
+name: VoltAgent
+description: End-to-end AI Agent Engineering Platform with an open-source TypeScript framework and a managed ops console. The framework provides memory, RAG, guardrails, tools, MCP support, voice, workflow orchestration, and multi-agent supervisors — all with full code control. The VoltOps console adds observability, evals, deployment automation, and prompt management.
+tagline: Open-source TypeScript framework for production AI agents
+
+github_url: https://github.com/VoltAgent/voltagent
+website_url: https://voltagent.dev
+docs_url: https://voltagent.dev/docs
+
+install_command: npm install @voltagent/core
+
+category: Agents
+tags: [typescript, agents, framework, multi-agent, rag, memory, guardrails, mcp, workflow, orchestration]
+pricing: freemium
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Building production-ready AI agents requires wiring together memory, RAG pipelines, tool
+  execution, guardrails, voice, and observability — without a unified framework, each project
+  reinvents this stack from scratch. VoltAgent solves this by providing a modular open-source
+  TypeScript framework that bundles all these capabilities as interchangeable packages: agents
+  with typed roles and tools, multi-step workflow engines, supervisor-coordinated sub-agent
+  teams, durable memory adapters, and built-in guardrails. The developer writes application
+  logic while VoltAgent handles the agent infrastructure, and the optional VoltOps console
+  adds evals, deployment, and observability for production.
+
+use_cases:
+  - Build multi-agent systems where specialized agents collaborate under supervisor coordination for complex tasks
+  - Create production chatbots and assistants with durable memory, RAG, and guardrails for safety
+  - Orchestrate multi-step AI workflows with resumable streaming and error recovery
+  - Connect agents to external tools and APIs via MCP servers with lifecycle hooks and cancellation
+  - Monitor, evaluate, and iterate on agent performance with the VoltOps observability and evals console

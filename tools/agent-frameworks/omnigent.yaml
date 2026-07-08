@@ -1,0 +1,32 @@
+name: Omnigent
+description: Open-source meta-harness that provides a common orchestration layer over multiple AI coding agents — Claude Code, Codex, Cursor, OpenCode, Hermes, Pi, and custom agents. Lets you swap or combine harnesses without rewriting, enforce policies and sandboxing, and collaborate from terminal, browser, phone, or desktop app.
+tagline: The meta-harness for all your AI agents
+
+github_url: https://github.com/omnigent-ai/omnigent
+website_url: https://omnigent.ai
+docs_url: https://docs.omnigent.ai
+
+install_command: pip install omnigent
+
+category: Agents
+tags: [agents, orchestration, multi-agent, sandbox, policies, collaboration, meta-harness]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Teams using multiple AI coding agents — Claude Code, Codex, Cursor, Hermes — face a fragmented
+  experience: each agent has its own CLI, configuration, sandboxing, and session model, making it
+  hard to switch between them, combine their strengths, or enforce consistent governance policies.
+  Omnigent solves this by acting as a meta-harness that wraps all these agents under a single
+  orchestration layer: agents can be swapped or combined without rewriting, policies (spend caps,
+  approval gates, tool restrictions) apply uniformly, sandbox execution is managed in cloud
+  providers, and sessions sync across devices so work started on a terminal can be continued on
+  a phone or desktop app.
+
+use_cases:
+  - Supervise multiple coding agents (Claude Code, Codex, Cursor) in the same session with coordinated task orchestration
+  - Enforce consistent governance policies across all agents — spend caps, approval before risky actions, tool restrictions
+  - Run agents in disposable cloud sandboxes (Modal, E2B, CoreWeave) without managing infrastructure
+  - Collaborate with teammates by sharing agent sessions, watching work in real-time, or forking conversations
+  - Access and manage AI agent sessions from any device — terminal, browser, mobile phone, or desktop app
