@@ -1,0 +1,44 @@
+name: Trigger.dev
+description: >-
+  Trigger.dev is an open-source platform for building AI workflows and background
+  tasks in TypeScript. It provides long-running tasks with automatic retries,
+  queue management, observability, and elastic scaling — designed for AI agent
+  workflows that need durable, stateful execution. Tasks can be triggered by
+  schedules, webhooks, events, or directly from your application code, with
+  built-in support for fan-out, rate limiting, and error recovery.
+tagline: Open-source platform for AI workflows and background tasks
+
+github_url: https://github.com/triggerdotdev/trigger.dev
+website_url: https://trigger.dev
+docs_url: https://trigger.dev/docs
+
+install_command: npm install @trigger.dev/sdk
+
+category: Agents
+tags:
+  - workflow-orchestration
+  - background-jobs
+  - typescript
+  - open-source
+  - ai-agents
+  - task-queues
+pricing: freemium
+is_open_source: true
+license: MIT
+
+problem_solved: |-
+  AI agent workflows often need reliable background execution — retries after
+  failures, scheduled runs, fan-out to multiple processors, and state persistence
+  across long-running operations. Building this infrastructure from scratch is
+  complex and error-prone. Trigger.dev solves this by providing an open-source
+  platform where you define AI workflows as TypeScript functions with built-in
+  retries, queue management, and elastic scaling. Tasks can chain together,
+  pause for human input, and resume seamlessly — all with full observability into
+  execution and cost.
+
+use_cases:
+  - "Build durable AI agent workflows that retry on failure, persist state across steps, and handle long-running operations"
+  - "Create scheduled AI tasks that run on cron schedules — daily reports, data processing, model inference"
+  - "Fan out AI processing to multiple parallel workers and aggregate results with built-in queue management"
+  - "Build event-driven AI pipelines that trigger on webhooks, database changes, or application events"
+  - "Deploy background AI tasks with automatic rate limiting, error recovery, and execution observability"

@@ -1,0 +1,44 @@
+name: Restate
+description: >-
+  Restate is an open-source platform for building resilient applications with
+  durable execution. It provides a runtime for durable AI agents, workflows-as-code,
+  microservice orchestration, event processing, and async tasks — with automatic
+  state persistence, retry, and recovery built in. Restate's key innovation is its
+  Virtual Object model, which gives every entity durable state and ensures execution
+  continues exactly where it left off after any failure.
+tagline: Durable execution platform for resilient applications
+
+github_url: https://github.com/restatedev/restate
+website_url: https://restate.dev
+docs_url: https://docs.restate.dev
+
+install_command: npm install @restatedev/restate-sdk
+
+category: Agents
+tags:
+  - durable-execution
+  - workflow-orchestration
+  - microservices
+  - typescript
+  - open-source
+  - ai-agents
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |-
+  Building resilient AI agent workflows that survive failures, network outages, and
+  infrastructure disruptions requires complex infrastructure — manual state
+  persistence, retry logic, and error recovery. Restate solves this with its Virtual
+  Object model, where every entity (agent, workflow, or service) has built-in
+  durable state. AI agents built on Restate automatically persist their execution
+  state at every step, so they resume exactly where they left off after any failure
+  — without manual checkpointing or external state management. This makes it natural
+  to build long-running, stateful AI agents that need reliable execution.
+
+use_cases:
+  - "Build durable AI agents that automatically persist state and resume after any infrastructure failure"
+  - "Create long-running AI workflows with human-in-the-loop pauses that survive process restarts"
+  - "Orchestrate multi-step AI pipelines with Virtual Objects providing guaranteed state persistence"
+  - "Build event-driven AI services that process incoming events with durable, recoverable handlers"
+  - "Implement saga compensation patterns for AI workflows that need transactional rollback on failure"
