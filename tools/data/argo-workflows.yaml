@@ -1,0 +1,30 @@
+name: Argo Workflows
+description: "Argo Workflows is an open-source container-native workflow engine for orchestrating parallel jobs on Kubernetes. It implements DAG-based and step-based workflows as Kubernetes custom resources, with artifacts, parameters, conditional branching, and a feature-rich CLI and UI."
+tagline: "Container-native workflow engine for Kubernetes"
+
+github_url: https://github.com/argoproj/argo-workflows
+website_url: https://argo-workflows.readthedocs.io
+docs_url: https://argo-workflows.readthedocs.io
+
+install_command: "brew install argo"
+
+category: Data
+tags: [workflow, kubernetes, orchestration, ci-cd, dag, containers, devops]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Running complex multi-step jobs on Kubernetes — data processing pipelines, CI/CD workflows,
+  batch jobs — typically requires using different tools for DAG definition, scheduling,
+  artifact management, and monitoring. Argo Workflows unifies all of this as native Kubernetes
+  custom resources. Workflows are defined as YAML DAGs or step templates, each step runs as
+  its own container, artifacts are passed between steps automatically, and the entire execution
+  is visible in the Argo UI. Teams get a Kubernetes-native workflow engine that handles
+  retries, parallel execution, timeouts, and resource limits without additional infrastructure.
+
+use_cases:
+  - Orchestrate multi-step data processing pipelines on Kubernetes where each step runs in an isolated container with its own resources
+  - Build parallel batch job workflows that fan-out across hundreds of containers and fan-in results for aggregation and reporting
+  - Automate ML training workflows with artifact passing between data preparation, training, evaluation, and model registry steps
+  - Schedule CI/CD pipelines with conditional branching, retry logic, and timeouts — all defined as Kubernetes YAML manifests

@@ -1,0 +1,30 @@
+name: Flyte
+description: "Flyte is a dynamic, resilient AI orchestration platform that coordinates data pipelines, ML training, and model serving as reusable workflows. It provides a Python-native SDK for defining workflows, automatic versioning, caching, and execution on Kubernetes."
+tagline: "AI orchestration platform for data, ML, and compute workflows"
+
+github_url: https://github.com/flyteorg/flyte
+website_url: https://flyte.org
+docs_url: https://docs.flyte.org
+
+install_command: pip install flytekit
+
+category: Data
+tags: [data-pipeline, mlops, orchestration, workflow, kubernetes, python, machine-learning]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Production ML and data workflows involve complex multi-step pipelines — data ingestion,
+  feature engineering, training, evaluation, deployment — that are brittle when stitched
+  together with scripts and ad-hoc scheduling. Flyte provides a unified orchestration
+  platform where teams define workflows as typed Python functions, then execute them on
+  Kubernetes with automatic retries, caching, versioning, and observability. It eliminates
+  the gap between development and production by letting data scientists write workflows
+  in Python while DevOps gets reliability, scalability, and audit trails out of the box.
+
+use_cases:
+  - Orchestrate ML training pipelines with automatic caching so that unchanged steps are skipped on re-runs, saving compute costs
+  - Build reproducible data processing workflows with typed inputs, outputs, and versioned executions for compliance and audit
+  - Coordinate multi-step feature engineering, model training, evaluation, and deployment as a single versioned DAG
+  - Run batch inference workflows at scale on Kubernetes with automatic parallelization and spot instance handling
