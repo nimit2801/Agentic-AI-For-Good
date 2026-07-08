@@ -1,0 +1,43 @@
+name: Codegen
+description: >-
+  Codegen is a Python SDK and API for running code modification agents at scale. It
+  provides sandboxed execution environments, codebase understanding, and tool integrations
+  for building reliable code agents that can read, understand, and modify codebases
+  autonomously — with built-in telemetry, error handling, and safety controls for
+  enterprise deployments.
+tagline: Build and deploy code agents at scale
+
+github_url: https://github.com/codegen-sh/codegen
+website_url: https://codegen.com
+docs_url: https://docs.codegen.com
+
+install_command: pip install codegen
+
+category: Dev Tools
+tags:
+  - code-agents
+  - code-generation
+  - agent-sdk
+  - python
+  - developer-tools
+  - sandbox
+pricing: paid
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |-
+  Building reliable code agents that can safely read, modify, and test real codebases
+  is notoriously hard. Most agent frameworks lack the necessary safety guards, sandboxed
+  execution, codebase indexing, and error recovery needed for production use. Codegen
+  provides a purpose-built Python SDK and API for running code agents at scale: it
+  handles sandboxed execution, code understanding through indexing, integration with
+  version control, and built-in telemetry so developers can build and deploy code agents
+  that actually work in production environments without building all the infrastructure
+  from scratch.
+
+use_cases:
+  - "Automate large-scale code migrations and refactors across hundreds of repositories with reliable, tested changes"
+  - "Build code review agents that understand codebase context and generate meaningful, actionable reviews"
+  - "Deploy automated dependency update agents that fix breaking changes and validate compatibility"
+  - "Create documentation agents that read source code and generate accurate, up-to-date documentation"
+  - "Build testing agents that identify untested code paths, generate test cases, and validate output"
