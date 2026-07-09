@@ -1,0 +1,31 @@
+name: edgequake
+description: EdgeQuake is a high-performance, Rust-native GraphRAG framework that transforms documents into lineage-aware knowledge graphs for superior retrieval and generation. Achieves 10x faster ingestion than Python-based alternatives with six retrieval modes and native PostgreSQL storage.
+tagline: Rust-native GraphRAG — 10x faster ingestion, six retrieval modes
+
+github_url: https://github.com/raphaelmansuy/edgequake
+website_url: https://edgequake.com
+docs_url: https://edgequake.com/docs
+
+category: RAG
+tags: [rag, graphrag, knowledge-graph, rust, high-performance, retrieval, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  GraphRAG pipelines built in Python are slow — document ingestion and
+  knowledge graph construction can take hours for large document sets, making
+  iterative development impractical. EdgeQuake solves this by implementing
+  the entire GraphRAG pipeline in Rust, achieving 10x faster ingestion than
+  Python-based alternatives (LightRAG, etc.). It builds lineage-aware knowledge
+  graphs that track document provenance, supports six retrieval modes (from
+  simple keyword to complex graph traversal), and uses PostgreSQL for mature,
+  production-grade storage. The result is a GraphRAG system that's fast enough
+  for iterative development and robust enough for production.
+
+use_cases:
+  - Ingest hundreds of documents into a knowledge graph in minutes instead of hours for rapid prototyping
+  - Build a lineage-aware RAG system that traces each answer back to its source document and section
+  - Deploy a production GraphRAG pipeline with PostgreSQL persistence, six retrieval modes, and high throughput
+  - Power a knowledge discovery tool that lets users explore document relationships through graph traversal
+  - Replace Python-based GraphRAG with a Rust-native alternative when ingestion speed is a bottleneck

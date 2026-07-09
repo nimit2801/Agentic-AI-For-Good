@@ -1,0 +1,33 @@
+name: KAG
+description: KAG is a logical form-guided reasoning and retrieval framework based on knowledge graphs and LLMs. Built on Alibaba's OpenSPG engine, it uses bidirectional enhancement between LLMs and knowledge graphs to overcome the ambiguity of traditional vector RAG and the noise of OpenIE-based GraphRAG.
+tagline: Knowledge-augmented generation with logical reasoning
+
+github_url: https://github.com/OpenSPG/KAG
+website_url: https://openspg.alibaba.com
+docs_url: https://openspg.alibaba.com/docs
+
+install_command: pip install openspg-kag
+
+category: RAG
+tags: [rag, knowledge-graph, graphrag, reasoning, knowledge-base, llm, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Traditional RAG performs shallow vector similarity search that misses
+  cross-document logical relationships and struggles with multi-hop reasoning.
+  GraphRAG approaches using OpenIE introduce noise from automatic triple
+  extraction. KAG solves this with a logical form-guided retrieval framework
+  that models document knowledge as structured SPG (Semantic Property Graph)
+  and performs bidirectional enhancement between LLMs and KGs. It supports
+  logical reasoning, multi-hop Q&A, and factual querying over professional
+  domain knowledge bases — achieving significantly higher precision on complex
+  knowledge tasks than both vector RAG and naive GraphRAG.
+
+use_cases:
+  - Build a domain-specific Q&A system over legal, medical, or financial knowledge bases with logical reasoning
+  - Create a knowledge graph-powered RAG pipeline that handles multi-hop questions requiring cross-document inference
+  - Power an enterprise knowledge assistant that answers factual queries with traceable evidence from structured knowledge
+  - Implement a hybrid retrieval system combining vector search with knowledge graph traversal for maximum accuracy
+  - Replace naive vector RAG in scenarios where answer precision and logical consistency are critical
