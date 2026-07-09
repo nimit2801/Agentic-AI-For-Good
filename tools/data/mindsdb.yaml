@@ -1,0 +1,31 @@
+name: MindsDB
+description: |-
+  An open-source AI database that enables developers to build, train, and deploy
+  machine learning models directly inside databases using standard SQL queries,
+  bringing AI-powered predictions to any data source with minimal code.
+tagline: Build and deploy ML models directly from your database with SQL
+
+github_url: https://github.com/mindsdb/mindsdb
+website_url: https://mindsdb.com
+docs_url: https://docs.mindsdb.com
+
+category: Data
+tags: [python, sql, machine-learning, database, ai, mlops, predictions, data-platform]
+pricing: freemium
+is_open_source: true
+license: MIT
+install_command: pip install mindsdb
+
+problem_solved: |-
+  Operationalizing machine learning typically requires moving data between databases,
+  notebooks, and ML platforms — a slow, brittle pipeline that data teams struggle to
+  maintain. MindsDB integrates ML models directly into databases via SQL. Data stays
+  in place; developers write SQL queries to train models, make predictions, and
+  automate time-series forecasting without learning ML frameworks or managing infrastructure.
+
+use_cases:
+  - Run time-series forecasts directly in SQL to predict sales, inventory, or server load
+  - Build real-time anomaly detection pipelines that alert when metrics deviate from predictions
+  - Create recommendation engines that surface products or content using SQL queries
+  - Automate data enrichment by predicting missing values in database columns
+  - Deploy ML models as virtual tables that update predictions as new data arrives
