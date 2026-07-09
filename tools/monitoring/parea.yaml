@@ -1,0 +1,21 @@
+name: Parea
+tagline: LLM evaluation, experimentation, and observability platform
+description: |-
+  Parea is a platform for testing, evaluating, and monitoring LLM-powered applications. It provides tools for prompt experimentation, A/B testing of model configurations, automated evaluation pipelines, and production observability with trace-level debugging. Teams use Parea to catch regressions, compare model outputs, and maintain quality across LLM application releases.
+website_url: https://www.parea.ai
+docs_url: https://docs.parea.ai
+github_url: https://github.com/parea-ai/parea-sdk-py
+install_command: pip install parea
+category: Monitoring
+tags: [llm-monitoring, evaluation, experimentation, prompt-testing, observability, llmops]
+pricing: freemium
+is_open_source: false
+license: MIT
+problem_solved: |-
+  LLM application development requires constant evaluation and monitoring, but most teams rely on ad-hoc manual review of model outputs, making it difficult to catch regressions, compare prompt strategies, or understand production behavior beyond basic latency metrics. Parea solves this by offering structured experimentation with versioned prompts, automated evaluation tests, and production observability with full trace logging — enabling teams to ship LLM features with confidence and debug issues when they arise.
+use_cases:
+  - "Run A/B experiments comparing LLM responses across different prompts, models, and hyperparameters with structured logging"
+  - "Create automated evaluation test suites that catch regressions before deploying new prompt versions or model updates to production"
+  - "Monitor production LLM traces with full request-response logging, latency breakdowns, and error tracking for rapid debugging"
+  - "Compare model outputs side-by-side with configurable scoring rubrics to select the best prompt strategy for your use case"
+  - "Set up regression gates that block deployments when evaluation metrics fall below defined quality thresholds"
