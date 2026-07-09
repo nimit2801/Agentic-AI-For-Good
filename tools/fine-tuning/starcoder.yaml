@@ -1,0 +1,32 @@
+name: StarCoder
+description: |-
+  A state-of-the-art open-source code generation model from BigCode, trained on
+  The Stack dataset across 80+ programming languages with 8K context length and
+  fill-in-the-middle capability for infilling code at any position.
+tagline: Open-source code LLM supporting 80+ languages with 8K context
+
+github_url: https://github.com/bigcode-project/starcoder
+website_url: https://huggingface.co/bigcode
+docs_url: https://huggingface.co/docs/transformers/model_doc/starcoder
+
+category: Fine-tuning
+tags: [python, code-generation, llm, fine-tuning, transformers, bigcode, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+install_command: pip install transformers accelerate
+
+problem_solved: |-
+  Developers need fast, local code completions without sending proprietary code to
+  cloud APIs, but most open-source code models lack multi-language support or
+  specialized features like fill-in-the-middle. StarCoder delivers production-quality
+  code generation across 80+ languages, trained on permissively licensed code from
+  The Stack dataset with an 8K context window. Its fill-in-the-middle architecture
+  enables precise code infilling at any cursor position.
+
+use_cases:
+  - Generate idiomatic code snippets across 80+ programming languages from natural language prompts
+  - Use fill-in-the-middle to complete code at any position within a file, not just at the cursor end
+  - Fine-tune StarCoder on a private codebase for organization-specific code completion
+  - Run local code generation without sending code to third-party APIs for security compliance
+  - Augment code review workflows with automated bug detection and refactoring suggestions

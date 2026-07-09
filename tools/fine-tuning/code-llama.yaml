@@ -1,0 +1,31 @@
+name: Code Llama
+description: |-
+  Meta's family of large language models for code generation with specialized variants
+  for general-purpose coding, Python-specific tasks, and instruction following, featuring
+  up to 100K token context windows and fill-in-the-middle capabilities.
+tagline: Meta's code-focused LLM family with up to 100K context
+
+website_url: https://ai.meta.com/blog/code-llama-large-language-model-coding/
+docs_url: https://huggingface.co/meta-llama/CodeLlama-34b-hf
+
+category: Fine-tuning
+tags: [python, code-generation, llm, meta, llama, transformers, fine-tuning]
+pricing: free
+is_open_source: true
+license: Custom (Meta Community License)
+install_command: pip install transformers accelerate
+
+problem_solved: |-
+  Generating production-quality code requires models that understand complex programming
+  patterns, long-range dependencies, and language-specific idioms. Most code models
+  struggle with long contexts or lack instruction-following ability. Code Llama provides
+  three specialized variants — base, Python, and Instruct — with up to 100K token context,
+  enabling whole-codebase understanding, multi-file refactoring, and precise instruction
+  following for software development workflows.
+
+use_cases:
+  - Generate multi-file code implementations from high-level natural language specifications
+  - Understand and refactor large codebases with the 100K token context window
+  - Write idiomatic Python code using the Code Llama Python specialized variant
+  - Follow step-by-step instructions to build complex software features or fix bugs
+  - Fill in missing code blocks anywhere in a file using fill-in-the-middle capability

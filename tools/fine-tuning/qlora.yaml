@@ -1,0 +1,31 @@
+name: QLoRA
+description: |-
+  An efficient fine-tuning method that quantizes large language models to 4-bit precision
+  while applying LoRA adapters, enabling fine-tuning of 65B parameter models on a single
+  48GB GPU without degrading output quality.
+tagline: Fine-tune 65B LLMs on a single GPU with 4-bit quantization
+
+github_url: https://github.com/artidoro/qlora
+website_url: https://arxiv.org/abs/2305.14314
+docs_url: https://github.com/artidoro/qlora
+
+category: Fine-tuning
+tags: [python, fine-tuning, quantization, lora, llm, training, gpu, transformers]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: pip install bitsandbytes peft transformers accelerate
+
+problem_solved: |-
+  Fine-tuning large language models requires prohibitive GPU memory — a 65B model
+  needs multiple A100 80GB GPUs for full fine-tuning. QLoRA combines 4-bit NormalFloat
+  quantization with Low-Rank Adapters (LoRA), cutting memory usage by 4x while preserving
+  performance. A 65B model fits on a single 48GB GPU, making LLM fine-tuning accessible
+  to anyone with consumer or mid-range hardware.
+
+use_cases:
+  - Fine-tune a 70B LLM on domain-specific data using a single consumer GPU with 4-bit quantization
+  - Adapt an open-source model to a specialized task like legal document analysis or medical Q&A
+  - Instruction-tune a base model on custom datasets while keeping memory usage under 24GB
+  - Combine QLoRA with PEFT to train multiple lightweight adapters on top of one frozen model
+  - Run comparative fine-tuning experiments across multiple model sizes on limited GPU hardware
