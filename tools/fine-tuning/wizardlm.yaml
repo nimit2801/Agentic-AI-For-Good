@@ -1,0 +1,32 @@
+name: WizardLM
+description: |-
+  A family of large language models from Microsoft built using the Evol-Instruct
+  methodology — automatically evolving seed instructions into complex, diverse
+  training data — with specialized variants for general instruction following,
+  code generation (WizardCoder), and mathematical reasoning (WizardMath).
+tagline: LLMs refined through automated instruction evolution
+
+github_url: https://github.com/nlpxucan/WizardLM
+website_url: https://github.com/nlpxucan/WizardLM
+docs_url: https://github.com/nlpxucan/WizardLM
+
+category: Fine-tuning
+tags: [python, fine-tuning, llm, instruction-tuning, evol-instruct, data-generation]
+pricing: free
+is_open_source: true
+install_command: pip install transformers accelerate
+
+problem_solved: |-
+  Creating high-quality instruction data for fine-tuning LLMs typically requires
+  expensive human annotation, limiting scale and diversity. WizardLM's Evol-Instruct
+  automatically evolves simple seed instructions into progressively more complex,
+  diverse, and challenging training examples using LLM-based rewriting. This produces
+  instruction-tuned models that outperform GPT-3.5 on several benchmarks without
+  any human annotation, making high-quality fine-tuning data generation accessible.
+
+use_cases:
+  - Generate diverse instruction-following training data automatically from a few seed examples
+  - Fine-tune a base model using Evol-Instruct for domain-specific assistant capabilities
+  - Use WizardCoder for code generation and understanding in software development workflows
+  - Apply WizardMath for step-by-step mathematical reasoning and problem-solving
+  - Create a custom instruction dataset for specialized domains without manual annotation

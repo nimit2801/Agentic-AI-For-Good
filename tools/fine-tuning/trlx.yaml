@@ -1,0 +1,33 @@
+name: TRLX
+description: |-
+  A distributed training framework from CarperAI for fine-tuning language models
+  with Reinforcement Learning via Human Feedback (RLHF), supporting PPO, ILQL,
+  and other online RL algorithms at scale across multiple GPUs and nodes.
+tagline: Distributed RLHF training framework for LLMs
+
+github_url: https://github.com/CarperAI/trlx
+website_url: https://github.com/CarperAI/trlx
+docs_url: https://github.com/CarperAI/trlx
+
+category: Fine-tuning
+tags: [python, rlhf, ppo, fine-tuning, reinforcement-learning, distributed-training, transformers]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: pip install trlx
+
+problem_solved: |-
+  Reinforcement Learning from Human Feedback (RLHF) is critical for aligning LLMs
+  with human preferences, but implementing it requires orchestrating multiple
+  components — a policy model, a reference model, a reward model, and a value
+  function — with PPO training loops that are notoriously difficult to scale.
+  TRLX provides a production-ready, distributed RLHF pipeline that handles the
+  complexity of multi-model training, credit assignment, and hyperparameter tuning
+  so developers can focus on alignment, not infrastructure.
+
+use_cases:
+  - Align a fine-tuned LLM with human preferences using PPO-based RLHF training
+  - Train models with ILQL (Implicit Language Q-Learning) for offline preference optimization
+  - Scale RLHF training across multiple GPUs and nodes for large 70B+ parameter models
+  - Experiment with different reward models and preference datasets to optimize alignment
+  - Fine-tune a language model to reduce harmful outputs while maintaining task performance
