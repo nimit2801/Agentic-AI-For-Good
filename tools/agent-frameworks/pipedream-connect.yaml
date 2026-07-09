@@ -1,0 +1,28 @@
+name: Pipedream Connect
+description: A managed OAuth and API integration platform that lets AI agents securely authenticate with 2,000+ third-party services — no credential management, no refresh token handling, just one SDK call.
+tagline: Managed API auth and integration for AI agents and apps
+
+github_url: https://github.com/PipedreamHQ/pipedream
+website_url: https://pipedream.com
+docs_url: https://pipedream.com/docs
+
+install_command: npm install @pipedream/sdk
+
+category: Agents
+tags: [oauth, api-integration, workflow-automation, credentials-management, serverless, typescript]
+pricing: freemium
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  AI agents need to call external APIs, but each provider has a different auth flow, token
+  refresh pattern, and rate limit. Managing OAuth tokens, refresh cycles, and credential
+  storage for hundreds of APIs is impractical. Pipedream Connect centralizes all of this:
+  a single SDK that handles OAuth flows, credential vaulting, token refresh, and API proxying
+  for 2,000+ services. Agents just call the unified API — auth is transparent.
+
+use_cases:
+  - Give an AI agent access to Gmail, Slack, and Notion through a single SDK with managed OAuth
+  - Build a workflow agent that reads from Salesforce, writes to Google Sheets, and posts to Slack without managing tokens
+  - Create a data pipeline agent that polls APIs, transforms data, and loads results into a database via Pipedream triggers
+  - Enable an LLM-powered support agent to look up customer records in HubSpot and create tickets in Jira through one integration layer
