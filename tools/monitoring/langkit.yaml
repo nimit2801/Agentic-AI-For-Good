@@ -1,0 +1,25 @@
+name: LangKit
+description: |-
+  LangKit is an open-source text metrics toolkit for monitoring language models. It provides a comprehensive set of methods for extracting relevant signals from LLM input and output text — including sentiment analysis, toxicity detection, readability scoring, prompt injection detection, PII detection, and text quality metrics — all compatible with the whylogs logging library for production monitoring.
+tagline: Open-source text metrics toolkit for LLM monitoring and guardrails
+
+github_url: https://github.com/whylabs/langkit
+website_url: https://docs.whylabs.ai/docs/category/langkit
+
+install_command: pip install langkit
+
+category: Monitoring
+tags: [monitoring, llm, text-metrics, observability, whylabs, guardrails, safety]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |-
+  Monitoring LLM outputs in production requires detecting issues like toxic content, prompt injections, PII leaks, and quality degradation — but most teams lack the tooling to extract these signals from unstructured text at scale. LangKit solves this by providing a library of pre-built text metrics for LLM monitoring, including toxicity detection, sentiment analysis, readability scoring, prompt injection detection, and PII identification — all designed to integrate with whylogs for production logging, alerting, and dashboarding.
+
+use_cases:
+  - "Monitor LLM outputs for toxic language, hate speech, and harmful content with automated scoring and alerting"
+  - "Detect prompt injection attacks by analyzing input text patterns and scoring injection likelihood"
+  - "Identify PII leaks in LLM responses by scanning for email addresses, phone numbers, credit card numbers, and other sensitive data"
+  - "Track text quality metrics like readability, repetition, and coherence across LLM responses over time"
+  - "Integrate LLM text signals into existing monitoring pipelines using whylogs for data logging and dashboard visualization"

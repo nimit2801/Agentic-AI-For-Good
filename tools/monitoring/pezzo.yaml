@@ -1,0 +1,25 @@
+name: Pezzo
+description: |-
+  Pezzo is an open-source, cloud-native LLMOps platform that provides prompt management, observability, cost tracking, and caching for LLM applications. It offers a central dashboard for managing prompts across environments, tracing LLM calls with latency and cost data, and optimizing API usage with built-in caching and fallback strategies.
+tagline: Open-source LLMOps platform for prompt management and observability
+
+github_url: https://github.com/pezzolabs/pezzo
+website_url: https://pezzo.ai
+
+install_command: pip install pezzo
+
+category: Monitoring
+tags: [monitoring, llm, observability, prompt-management, costs, caching, llmops]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |-
+  Managing LLM applications in production involves juggling prompt versions across environments, tracking costs across multiple providers, debugging latency issues, and optimizing API usage — all without dedicated tooling. Pezzo solves this by providing a unified LLMOps platform with prompt version management and deployment across staging/production, real-time observability with cost and latency tracking per call, built-in response caching to reduce API costs, and configurable fallback strategies for provider reliability.
+
+use_cases:
+  - "Manage and version prompts across development, staging, and production environments with deployment controls"
+  - "Monitor LLM API costs and latency in real time with per-request breakdowns by model, provider, and prompt"
+  - "Cache LLM responses to reduce API costs and improve response times for repeated queries"
+  - "Configure fallback providers and models to maintain availability when primary LLM providers experience outages"
+  - "Collaborate on prompt engineering with team workspaces, change history, and prompt review workflows"

@@ -1,0 +1,25 @@
+name: HolmesGPT
+description: |-
+  HolmesGPT is a CNCF Sandbox open-source AI agent purpose-built for production incident investigation and root cause analysis. It connects to observability data sources (Kubernetes, cloud providers, databases, SaaS platforms) and autonomously investigates alerts, correlates signals across systems, and surfaces root causes with supporting evidence.
+tagline: CNCF Sandbox AI agent for automated incident investigation and RCA
+
+github_url: https://github.com/HolmesGPT/holmesgpt
+website_url: https://holmesgpt.dev
+
+install_command: pip install holmesgpt
+
+category: Monitoring
+tags: [monitoring, sre, incident-response, ai-agent, observability, kubernetes, root-cause-analysis]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |-
+  Production incident investigation requires engineers to manually correlate alerts, logs, metrics, and traces across multiple systems — a process that takes 20+ minutes per incident and relies on tribal knowledge that disappears when on-call shifts rotate. HolmesGPT solves this by acting as an AI SRE agent that autonomously investigates alerts, queries observability data sources, correlates signals across Kubernetes, cloud, and application layers, and summarizes root causes with evidence — reducing mean-time-to-resolution from minutes to seconds.
+
+use_cases:
+  - "Automatically investigate Prometheus alerts and correlate them with logs, metrics, and trace data to identify root causes"
+  - "Query Kubernetes clusters for pod status, events, and resource utilization during incident investigations"
+  - "Analyze cloud provider metrics and logs (AWS, GCP, Azure) as part of multi-cloud incident response workflows"
+  - "Investigate database performance issues by correlating slow queries, connection pools, and resource contention signals"
+  - "Generate post-incident reports with timeline, evidence, and recommended remediation steps from investigation data"
