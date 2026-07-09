@@ -1,0 +1,22 @@
+name: NVIDIA NIM
+description: |-
+  NVIDIA NIM (NVIDIA Inference Microservices) provides prebuilt, optimized inference microservices for deploying the latest AI models on any NVIDIA-accelerated infrastructure — cloud, data center, workstation, and edge. Each NIM microservice is a containerized inference engine with GPU-optimized runtimes, supporting models for LLMs, vision, speech, and more with NVIDIA's TensorRT and Triton Inference Server optimizations.
+tagline: Prebuilt, optimized inference microservices for AI model deployment
+
+website_url: https://www.nvidia.com/en-us/ai-data-science/products/nim-microservices/
+docs_url: https://docs.nvidia.com/nim
+
+category: Other
+tags: [inference, deployment, gpu, microservices, containers, nvidia, model-serving, optimization]
+pricing: freemium
+is_open_source: false
+
+problem_solved: |-
+  Deploying AI models for production inference requires significant engineering effort to set up GPU-optimized inference stacks, manage dependencies, and achieve low-latency performance — often requiring teams to build custom Docker containers with TensorRT, Triton, and CUDA toolchains. NVIDIA NIM solves this by providing prebuilt, GPU-optimized container images for popular AI models that work out of the box on any NVIDIA GPU infrastructure, with automatic TensorRT optimization, dynamic batching, and multi-GPU scaling included.
+
+use_cases:
+  - "Deploy LLMs for production inference with prebuilt container images optimized for NVIDIA GPUs using TensorRT-LLM"
+  - "Run vision AI models including object detection, segmentation, and image classification at low latency on edge or data center GPUs"
+  - "Build multi-model inference pipelines with NVIDIA Triton Inference Server's request batching, model ensemble, and dynamic routing"
+  - "Deploy speech AI models for real-time transcription and text-to-speech with GPU-accelerated inference containers"
+  - "Scale model inference across multi-GPU and multi-node deployments with built-in load balancing and auto-scaling configurations"
