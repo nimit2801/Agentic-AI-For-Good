@@ -1,0 +1,25 @@
+name: Beam Cloud
+description: |-
+  Beam is a serverless GPU compute platform that lets developers run Python functions on the cloud with a simple decorator. It specializes in ultra-fast cold starts (<1 second), autoscaling GPU infrastructure for AI inference, training, and sandboxed code execution — making it easy to deploy ML models and AI applications without managing servers.
+tagline: Serverless GPU compute for Python with sub-second cold starts
+
+website_url: https://www.beam.cloud
+docs_url: https://docs.beam.cloud
+github_url: https://github.com/beam-cloud/beta9
+
+install_command: pip install beam
+
+category: Other
+tags: [serverless, gpu, cloud, inference, python, compute, infrastructure]
+pricing: freemium
+is_open_source: false
+
+problem_solved: |-
+  Deploying Python AI workloads to the cloud typically requires managing Dockerfiles, Kubernetes clusters, GPU instance provisioning, and auto-scaling rules before running a single inference job. Beam solves this by providing a Python decorator that turns any function into a serverless cloud endpoint running on GPUs — with automatic scaling to zero when idle, sub-second cold starts, and pay-per-second billing that eliminates idle GPU costs.
+
+use_cases:
+  - "Deploy ML model inference endpoints with GPU acceleration by adding a single decorator to a Python function"
+  - "Run batch inference and training jobs on serverless GPUs that auto-scale and shut down when idle"
+  - "Execute sandboxed Python code in secure, isolated environments for trusted execution or code evaluation"
+  - "Build and deploy AI-powered APIs with automatic HTTPS, authentication, and rate limiting out of the box"
+  - "Run scheduled GPU workloads like model retraining or data processing on a cron without managing infrastructure"
