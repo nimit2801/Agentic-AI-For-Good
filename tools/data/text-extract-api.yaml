@@ -1,0 +1,30 @@
+name: text-extract-api
+description: A self-hosted API service that converts PDFs, Word documents, PPTX files, and images into structured Markdown or JSON using state-of-the-art OCR and LLMs. Supports PII redaction, table extraction, math formulas, and Ollama integration for fully local processing.
+tagline: Self-hosted document extraction API with OCR + LLM
+
+github_url: https://github.com/CatchTheTornado/text-extract-api
+website_url: https://github.com/CatchTheTornado/text-extract-api
+
+category: Data
+tags: [data, document-processing, ocr, pdf, extraction, markdown, json, self-hosted]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Extracting clean, structured text from PDFs, scanned documents, and Office
+  files is a persistent pain point for RAG pipelines and LLM data ingestion.
+  Existing parsers either lose tabular structure, fail on scanned documents
+  without OCR, or require complex multi-tool pipelines. text-extract-api solves
+  this with a single Docker-deployable API that uses modern OCR (EasyOCR +
+  PyTorch) and optional LLM enhancement (via Ollama) to convert any document or
+  image into clean Markdown or structured JSON. It handles tables, math
+  formulas, multi-column layouts, and includes built-in PII redaction — all
+  with a simple HTTP endpoint.
+
+use_cases:
+  - Deploy a self-hosted document processing pipeline that converts PDFs and scanned docs to LLM-ready Markdown
+  - Extract structured JSON data from invoices, receipts, and forms using OCR + LLM correction
+  - Build a document ingestion API for RAG systems that handles PDF, DOCX, PPTX, and images through one endpoint
+  - Anonymize sensitive documents with built-in PII redaction before sending them to LLM pipelines
+  - Process batch document conversions with async task queues (Celery + Redis) for high-throughput workloads

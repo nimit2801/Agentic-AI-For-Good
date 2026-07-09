@@ -1,0 +1,33 @@
+name: GPTCache
+description: A semantic caching layer for LLM applications that reduces response time, lowers API costs, and improves throughput by storing and reusing semantically similar LLM responses instead of making redundant API calls.
+tagline: Semantic cache for LLMs — cut costs, speed up responses
+
+github_url: https://github.com/zilliztech/GPTCache
+website_url: https://gptcache.readthedocs.io
+docs_url: https://gptcache.readthedocs.io
+
+install_command: pip install gptcache
+
+category: LLM
+tags: [llm, caching, semantic-cache, cost-optimization, performance, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Every LLM API call costs money and takes hundreds of milliseconds — yet many
+  queries are semantically identical to previous ones (e.g. "What's the
+  capital of France?" and "Tell me the capital of France"). Traditional
+  exact-match caches miss these because small wording changes produce different
+  text. GPTCache solves this with semantic caching: it embeds incoming queries
+  and retrieves cached responses for semantically similar requests. This
+  reduces latency from seconds to milliseconds, cuts API costs by reusing
+  responses, and handles eviction, embedding, and similarity search out of the
+  box. Integrated with LangChain, LlamaIndex, and OpenAI.
+
+use_cases:
+  - Cache LLM responses in a FAQ chatbot so identical or similar questions return instantly without API calls
+  - Reduce API costs in a high-volume application by caching semantically equivalent user queries
+  - Speed up batch data processing pipelines that repeatedly query LLMs with similar prompts
+  - Build a hybrid cache for agentic workflows where tool calls produce repeatable results
+  - Deploy as a sidecar cache layer alongside any OpenAI-compatible API endpoint
