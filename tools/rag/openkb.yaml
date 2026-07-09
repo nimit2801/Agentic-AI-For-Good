@@ -1,0 +1,31 @@
+name: OpenKB
+description: OpenKB is an open-source CLI tool that compiles raw documents into a structured, interlinked wiki-style knowledge base using LLMs. Based on Karpathy's concept of persistent LLM knowledge, it uses vectorless reasoning-based retrieval to handle long documents without chunking, providing a continuously updated knowledge base for AI agents.
+tagline: Compile documents into a living wiki for your LLM
+
+github_url: https://github.com/VectifyAI/OpenKB
+
+install_command: pip install openkb
+
+category: RAG
+tags: [rag, knowledge-base, llm, cli, documents, wiki, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Traditional RAG chunks documents, embeds them into a vector database, and
+  re-embeds everything when documents change — a fragile pipeline that loses
+  cross-document context and wastes tokens re-processing stable knowledge.
+  OpenKB instead compiles raw documents (PDFs, Markdown, web pages) into a
+  structured, interlinked wiki of Markdown files using an LLM. The wiki captures
+  concepts, summaries, and relationships once, then stays persistent. Queries
+  use PageIndex's vectorless reasoning-based retrieval that can handle long
+  documents without chunking, making knowledge accumulation both cheaper and
+  more reliable than traditional RAG.
+
+use_cases:
+  - Compile a research library of 100+ PDFs into an interlinked wiki that your LLM can reference without re-embedding
+  - Build a continuously updated company knowledge base from Notion exports, Slack archives, and internal docs
+  - Create a personal second brain that accumulates and cross-references notes, bookmarks, and articles over time
+  - Power a customer-facing Q&A bot with a curated wiki that gets updated by adding files to a directory
+  - Replace traditional vector RAG in agentic workflows with a persistent, human-readable knowledge artifact
