@@ -1,0 +1,24 @@
+name: LLM Finetuning Toolkit
+tagline: Config-driven CLI tool for launching and comparing LLM fine-tuning experiments
+description: |-
+  LLM Finetuning Toolkit is a config-based CLI tool for launching series of LLM fine-tuning experiments on your data and gathering their results. From a single YAML config file, it controls all elements of the experimentation pipeline — prompts, open-source LLMs, optimization strategy, and LLM testing — enabling systematic comparison across different configurations.
+problem_solved: |-
+  Running LLM fine-tuning experiments typically involves manually tracking configurations, prompt templates, and model variants across separate scripts and notebooks. The LLM Finetuning Toolkit solves this with a single YAML config that defines the complete experimentation pipeline — data, prompts, models, optimization strategies, and evaluation — allowing researchers to run and compare multiple experiments from one configurable CLI entry point.
+github_url: https://github.com/georgian-io/LLM-Finetuning-Toolkit
+install_command: pip install llm-toolkit
+category: Fine-tuning
+tags:
+  - fine-tuning
+  - llm
+  - experimentation
+  - cli
+  - evaluation
+pricing: free
+is_open_source: true
+license: Apache-2.0
+use_cases:
+  - Launching multiple LLM fine-tuning experiments from a single YAML configuration file
+  - Comparing prompt templates, model architectures, and optimization strategies systematically
+  - Running end-to-end fine-tuning pipelines with built-in testing and evaluation
+  - Automating hyperparameter sweeps across different LLMs and training configurations
+  - Reproducing fine-tuning experiments with version-controlled config files
