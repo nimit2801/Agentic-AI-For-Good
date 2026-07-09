@@ -1,0 +1,26 @@
+name: NVIDIA Model Optimizer
+description: |-
+  A unified library of state-of-the-art model optimization techniques including quantization (FP8, NVFP4, INT4), pruning, distillation, neural architecture search, and speculative decoding. Compresses deep learning models for deployment on TensorRT-LLM, vLLM, SGLang, and TensorRT to accelerate inference.
+tagline: Optimize and compress AI models for faster inference
+
+github_url: https://github.com/NVIDIA/Model-Optimizer
+website_url: https://nvidia.github.io/Model-Optimizer
+docs_url: https://nvidia.github.io/Model-Optimizer
+
+category: Fine-tuning
+tags: [quantization, pruning, distillation, model-optimization, inference, tensorrt, nvidia, python]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install nvidia-modelopt
+
+problem_solved: |
+  Deploying large AI models is expensive and slow without optimization. Standard models require significant GPU memory and compute, making inference costly. NVIDIA Model Optimizer provides a comprehensive suite of compression techniques — quantization, pruning, distillation, NAS, and speculative decoding — that reduce model size and accelerate inference while preserving accuracy. The optimized models deploy seamlessly into production frameworks like TensorRT-LLM, vLLM, and SGLang.
+
+use_cases:
+  - Quantize LLMs from FP16 to FP8 or INT4 for 2-4x faster inference with minimal accuracy loss using post-training quantization
+  - Prune and distill large models into smaller ones — e.g., compressing a 355B model to 260B while retaining 90%+ quality
+  - Apply neural architecture search to find optimal model configurations for target latency and memory budgets
+  - Generate quantized checkpoints that are directly deployable to vLLM, TensorRT-LLM, or SGLang without manual conversion
+  - Optimize vision models and diffusion models for production deployment on NVIDIA GPUs with TensorRT integration

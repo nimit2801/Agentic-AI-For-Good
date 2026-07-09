@@ -1,0 +1,26 @@
+name: Langtrace
+description: |-
+  An open-source, OpenTelemetry-based observability platform for LLM applications. Provides real-time tracing, evaluations, and metrics for popular LLMs, LLM frameworks, vector databases, and more. Supports TypeScript and Python SDKs with self-hosting option.
+tagline: Open-source LLM observability with OpenTelemetry
+
+github_url: https://github.com/Scale3-Labs/langtrace
+website_url: https://langtrace.ai
+docs_url: https://docs.langtrace.ai
+
+category: Monitoring
+tags: [observability, tracing, opentelemetry, llm, monitoring, evaluation, python, typescript]
+pricing: freemium
+is_open_source: true
+license: AGPL-3.0
+
+install_command: pip install langtrace-python-sdk
+
+problem_solved: |
+  LLM applications are notoriously hard to debug and monitor. Traditional APM tools don't understand LLM-specific concepts like prompts, completions, token usage, vector DB queries, or agent tool calls. Langtrace provides OpenTelemetry-native instrumentation that captures LLM calls, framework operations, and vector database queries in a single dashboard with real-time tracing, cost tracking, latency analysis, and evaluation metrics.
+
+use_cases:
+  - Monitor real-time LLM API calls across OpenAI, Anthropic, and other providers with detailed tracing and cost breakdowns
+  - Debug agentic workflows by inspecting tool calls, LLM responses, and vector database queries in a unified trace view
+  - Run automated evaluations on LLM outputs to detect regressions after prompt or model changes
+  - Track token usage and latency trends over time to optimize model selection and prompt design
+  - Self-host the platform for compliance-sensitive environments requiring data sovereignty
