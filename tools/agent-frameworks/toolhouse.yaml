@@ -1,0 +1,28 @@
+name: Toolhouse
+description: A unified SDK and managed infrastructure that connects AI agents and LLMs to any external tool or API — function calling, web search, data retrieval, and third-party integrations without custom boilerplate.
+tagline: The universal tool infrastructure for AI agents
+
+github_url: https://github.com/toolhouseai/toolhouse-sdk-python
+website_url: https://toolhouse.ai
+docs_url: https://docs.toolhouse.ai
+
+install_command: pip install toolhouse
+
+category: Agents
+tags: [python, llm, tools, function-calling, api-orchestration, ai-agents]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  LLMs are limited by their training data — they can't search the web, read files, call APIs,
+  or access real-time data without custom integration code. Toolhouse solves this by providing
+  a managed tool execution layer: developers define tools once in the Toolhouse registry, and
+  any LLM can discover and invoke them at runtime through a single SDK. The platform handles
+  authentication, rate limiting, error handling, and observability across all connected tools.
+
+use_cases:
+  - Give an AI research agent web search and web scraping capabilities without writing browser automation code
+  - Provide a coding assistant with file system access, git operations, and shell command execution through managed tools
+  - Build a customer support agent that can query internal databases, send emails, and update CRM records via API tools
+  - Enable an LLM to execute SQL queries, read documents, and call external APIs in a single conversation flow
