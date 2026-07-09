@@ -1,0 +1,26 @@
+name: CodeMachine CLI
+description: |-
+  An open-source CLI tool that orchestrates AI coding agents (Claude Code, Codex, Cursor, and others) into repeatable, long-running workflows. Captures multi-step development processes as reusable workflows with parallel agent execution, context passing, and persistence.
+tagline: Orchestrate AI coding agents into repeatable workflows
+
+github_url: https://github.com/moazbuilds/CodeMachine-CLI
+website_url: https://codemachine.co
+docs_url: https://docs.codemachine.co
+
+category: Dev Tools
+tags: [cli, workflow-automation, ai-agents, orchestration, developer-tools, code-generation, multi-agent]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: npm install -g codemachine
+
+problem_solved: |
+  Every time a developer uses an AI coding agent, the workflow — steps, prompts, context, handoffs — lives in their head. There is no way to capture, reuse, or share these processes. CodeMachine lets developers define structured, multi-step workflows once and execute them reliably across projects. It handles context management, parallel agent execution, and long-running persistence so workflows can run for hours or days without supervision.
+
+use_cases:
+  - Define a reusable bug-fix workflow that reproduces, diagnoses, plans, implements, and tests — run on any repository
+  - Orchestrate parallel coding agents where one researches architecture while another implements and a third reviews
+  - Build a PR pipeline that generates code, writes tests, updates documentation, and creates the pull request autonomously
+  - Create onboarding workflows that scaffold a new project, configure tooling, and run initial setup without manual steps
+  - Automate code review processes with a dedicated agent that checks security, performance, and style in sequence

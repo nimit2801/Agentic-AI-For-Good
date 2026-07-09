@@ -1,0 +1,25 @@
+name: Docstrange
+description: |-
+  A document extraction and conversion library that transforms PDFs, images, DOCX, PPTX, XLSX, and URLs into clean Markdown, JSON, CSV, and HTML. Powered by a 7B vision model and advanced OCR, it can run 100% locally on GPU or CPU with a built-in web UI.
+tagline: Convert any document to clean LLM-ready Markdown and structured data
+
+github_url: https://github.com/NanoNets/docstrange
+website_url: https://docstrange.nanonets.com
+
+category: Data
+tags: [document-parsing, ocr, pdf, markdown, data-extraction, python, llm, rag]
+pricing: freemium
+is_open_source: true
+license: MIT
+
+install_command: pip install docstrange
+
+problem_solved: |
+  Preparing unstructured documents for LLM consumption is a bottleneck — PDFs, scanned images, and complex layouts resist clean extraction. Docstrange combines OCR, layout detection, and a dedicated vision model to convert documents into structured formats (Markdown, JSON, CSV) suitable for RAG pipelines, without relying on external cloud APIs. It handles tables, multi-column layouts, and handwritten text on GPU or CPU.
+
+use_cases:
+  - Convert scanned PDFs and document images into clean Markdown for indexing in RAG knowledge bases
+  - Extract structured JSON data from invoices, receipts, and forms using schema-based extraction
+  - Prepare document corpora for LLM fine-tuning by converting diverse file formats into consistent text
+  - Parse complex tables with merged cells and multi-column layouts from academic papers and reports
+  - Enable privacy-sensitive document processing by running entirely on local infrastructure
