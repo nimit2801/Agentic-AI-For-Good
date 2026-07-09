@@ -1,0 +1,19 @@
+name: Honeycomb LLM
+tagline: Observability platform with LLM-specific instrumentation
+description: |-
+  Honeycomb is a high-cardinality observability platform that enables engineers to debug complex distributed systems by querying and visualizing telemetry data without pre-aggregation. Its LLM-specific features include instrumentation for LLM calls, token usage tracking, prompt-response logging, and latency analysis — giving teams the ability to slice production AI behavior by model, prompt template, user, and any other high-cardinality dimension.
+website_url: https://www.honeycomb.io
+docs_url: https://docs.honeycomb.io
+install_command: pip install honeycomb-opentelemetry
+category: Monitoring
+tags: [observability, monitoring, distributed-tracing, llm-monitoring, telemetry, debugging]
+pricing: freemium
+is_open_source: false
+problem_solved: |-
+  Debugging LLM applications in production is fundamentally different from debugging traditional software — each request can vary dramatically based on prompt content, model choice, temperature settings, and conversation context, and traditional aggregated metrics hide the variance that matters most. Honeycomb solves this by ingesting high-cardinality event data without pre-aggregation, allowing teams to slice LLM telemetry by prompt template, model version, user session, token count bucket, and latency percentile in real time — answering questions like "why are responses slow for this specific user segment" without writing custom instrumentation for every hypothesis.
+use_cases:
+  - "Slice and dice LLM response latency by model, prompt template, user tier, and token count to identify performance bottlenecks across dimensions"
+  - "Track token usage and cost per-user, per-feature, or per-model by querying raw event data without pre-defined aggregations"
+  - "Correlate LLM call traces with downstream service performance to debug end-to-end issues in AI-powered features"
+  - "Set up dynamic burn-rate alerts based on error budget for LLM response quality metrics across any high-cardinality dimension"
+  - "Analyze prompt-response patterns across user segments to identify regression clusters before they impact broad user populations"
