@@ -1,0 +1,30 @@
+name: NeuronDB
+description: NeuronDB is an open-source PostgreSQL extension that adds vector similarity search (HNSW, IVFFlat), embedding generation, ML inference, and hybrid full-text + vector retrieval directly into your existing database. No separate vector DB, no ETL pipeline, no data sync — keep AI workloads on your live relational data with familiar SQL.
+tagline: AI-native vector search and ML inside PostgreSQL
+
+github_url: https://github.com/neurondb/neurondb
+website_url: https://neuron-db.com
+docs_url: https://docs.neuron-db.com
+
+category: Vector DB
+tags: [vector-database, postgresql, extension, embeddings, similarity-search, ml, hnsw, ivfflat]
+pricing: free
+is_open_source: true
+
+problem_solved: |
+  Adding AI capabilities like vector search, embeddings, and ML inference to an
+  application typically means running a separate vector database alongside your
+  relational database — doubling infrastructure, adding ETL pipelines, and
+  creating data consistency headaches. NeuronDB eliminates this by bringing
+  vector similarity search (HNSW, IVFFlat), embedding generation, and ML
+  inference directly into PostgreSQL as a native extension. Your vectors stay on
+  your live rows, you query with standard SQL, and you get the same backups,
+  replication, and security you already rely on. It also supports hybrid
+  full-text + vector search for production RAG pipelines.
+
+use_cases:
+  - Run semantic vector search on millions of rows without leaving PostgreSQL or managing a second database
+  - Build a production RAG pipeline with hybrid full-text + vector retrieval using a single SQL query
+  - Generate and store embeddings for text columns directly inside PostgreSQL with in-database inference
+  - Power recommendation engines with kNN similarity queries over user behavior vectors
+  - Run ML model training and prediction on live database rows without exporting data to a separate ML system

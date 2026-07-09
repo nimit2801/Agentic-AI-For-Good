@@ -1,0 +1,32 @@
+name: Arcade AI
+description: arcade-mcp is the Python framework for building Model Context Protocol servers and the tools that run inside them. It powers 7,500+ prebuilt tools across 81 MCP servers at Arcade.dev and is fully open-sourced so you can build, deploy, and scale custom MCP servers with OAuth, secrets management, and production tooling.
+tagline: The open-source MCP framework for building agent tools
+
+github_url: https://github.com/ArcadeAI/arcade-mcp
+website_url: https://arcade.dev
+docs_url: https://docs.arcade.dev
+
+install_command: pip install arcade-mcp
+
+category: Agents
+tags: [agents, mcp, framework, python, tools, oauth, server, open-source]
+pricing: freemium
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Building tools for AI agents is fragmented — every agent framework (OpenAI
+  Agents SDK, LangChain, Anthropic, etc.) has its own tool format, auth
+  mechanism, and deployment model. arcade-mcp solves this by providing a
+  unified Python framework for building MCP-compatible tool servers. You define
+  tools with a simple @tool decorator, wire up OAuth once, and the same server
+  works across any MCP-compatible agent. Arcade.dev hosts 7,500+ prebuilt
+  tools covering Gmail, Slack, GitHub, Notion, and more, or you can build
+  private tools for your own services with the same framework.
+
+use_cases:
+  - Build a custom MCP server that gives your AI agent access to internal APIs, databases, and SaaS tools
+  - Use Arcade's 7,500+ prebuilt tools to give an agent Gmail, Slack, GitHub, and Notion access in minutes
+  - Deploy a secure tool gateway with built-in OAuth so agents can act on behalf of users without exposing API keys
+  - Create a private tool catalog for your organization with usage tracking, rate limits, and access controls
+  - Prototype new agent capabilities by decorating a Python function with @tool and testing instantly
