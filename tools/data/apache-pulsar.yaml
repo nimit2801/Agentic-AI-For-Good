@@ -1,0 +1,40 @@
+name: Apache Pulsar
+description: A distributed pub-sub messaging system for real-time data streaming and event-driven AI workflows. Designed for high-throughput, low-latency message delivery with multi-tenancy, geo-replication, and tiered storage for large-scale data pipelines.
+tagline: Distributed pub-sub messaging for real-time AI data streaming
+
+github_url: https://github.com/apache/pulsar
+website_url: https://pulsar.apache.org
+docs_url: https://pulsar.apache.org/docs
+
+install_command: |-
+  docker run -p 6650:6650 -p 8080:8080 apachepulsar/pulsar:latest bin/pulsar standalone
+
+category: Data
+tags:
+  - messaging
+  - streaming
+  - pub-sub
+  - real-time
+  - event-driven
+  - data-pipeline
+  - distributed
+  - docker
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AI applications that need to process data in real time often struggle
+  with unreliable message delivery, limited throughput, and complex
+  cluster management. Apache Pulsar solves this with a cloud-native
+  pub-sub messaging system designed for high-throughput, low-latency
+  streaming — featuring multi-tenancy, geo-replication, tiered storage,
+  and exactly-once semantics for building reliable event-driven AI
+  data pipelines at scale.
+
+use_cases:
+  - Build a real-time data ingestion pipeline that streams raw data to AI inference services
+  - Create an event-driven ML architecture where model retraining triggers on data arrival events
+  - Implement a multi-tenant streaming platform that serves separate data pipelines for different AI teams
+  - Power a geo-distributed AI application with cross-region message replication and failover
+  - Stream feature data from production to training infrastructure with exactly-once delivery guarantees
