@@ -1,0 +1,26 @@
+name: Netdata
+description: Real-time monitoring and observability platform with AI-powered anomaly detection. Provides out-of-the-box metrics for servers, containers, applications, and AI infrastructure including GPU utilization, model inference latency, and LLM API response times — all presented in low-latency, interactive dashboards.
+tagline: Real-time monitoring with AI-powered observability
+
+github_url: https://github.com/netdata/netdata
+website_url: https://www.netdata.cloud
+docs_url: https://learn.netdata.cloud
+
+install_command: |
+  bash <(curl -Ss https://my-netdata.io/kickstart.sh)
+
+category: Monitoring
+tags: [monitoring, observability, metrics, anomaly-detection, ai-monitoring, gpu, real-time, infrastructure]
+pricing: freemium
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  AI systems are distributed across multiple machines, GPUs, and cloud services, generating a firehose of metrics from model inference endpoints, GPU utilization, API call volumes, and data pipeline health. Traditional monitoring requires extensive manual configuration to track all these dimensions. Netdata automatically discovers and monitors every component of the AI stack — from GPU temperature and memory bandwidth to LLM request latency and error rates — with AI-driven anomaly detection that surfaces issues before they impact users.
+
+use_cases:
+  - "Monitor GPU utilization, memory bandwidth, and temperature across training and inference clusters in real time"
+  - "Track LLM inference latency, token throughput, and error rates across multiple serving endpoints"
+  - "Detect anomalies in AI data pipeline health before downstream models or agents are affected"
+  - "Observe AI agent request rates, response times, and failure patterns across distributed agent deployments"
+  - "Set up automated alerts for model drift, infrastructure degradation, and cost anomalies across AI infrastructure"
