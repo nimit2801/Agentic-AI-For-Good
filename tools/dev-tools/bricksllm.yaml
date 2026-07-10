@@ -1,0 +1,39 @@
+name: BricksLLM
+description: An enterprise-grade API gateway for managing, monitoring, and securing LLM API access. Provides cost and rate limiting per API key, usage analytics, and access control for organizations using multiple LLM providers through a unified gateway.
+tagline: Enterprise API gateway for managing LLM API access and costs
+
+github_url: https://github.com/bricks-cloud/BricksLLM
+website_url: https://bricks-llm.com
+docs_url: https://docs.bricks-llm.com
+
+install_command: npm install -g bricks-llm
+
+category: Dev Tools
+tags:
+  - api-gateway
+  - llm
+  - rate-limiting
+  - cost-management
+  - monitoring
+  - security
+  - nodejs
+  - enterprise
+pricing: freemium
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Organizations using multiple LLM APIs (OpenAI, Anthropic, etc.) lack
+  visibility and control over usage — costs spiral, API keys are shared
+  unsafely, and there is no way to enforce per-team budgets or rate
+  limits. BricksLLM solves this with a unified API gateway that provides
+  per-key rate limiting, cost tracking, usage analytics, and access
+  control across LLM providers — giving organizations the same
+  governance for LLM APIs that they have for other cloud services.
+
+use_cases:
+  - Enforce per-team monthly budgets and rate limits on OpenAI API usage within your organization
+  - Create a unified API endpoint that routes requests to multiple LLM providers with automatic failover
+  - Monitor LLM API costs in real time with per-key usage analytics and spending alerts
+  - Implement API key rotation and access control for LLM access across multiple teams and applications
+  - Audit LLM API usage for compliance with organization policies and generate usage reports

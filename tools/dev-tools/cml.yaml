@@ -1,0 +1,39 @@
+name: CML
+description: An open-source CI/CD tool for machine learning that brings DevOps practices to ML projects. Automates model training, testing, deployment, and monitoring within GitHub Actions or GitLab CI, using infrastructure-as-code for reproducible ML pipelines.
+tagline: CI/CD for machine learning — continuous integration and delivery for ML
+
+github_url: https://github.com/iterative/cml
+website_url: https://cml.dev
+docs_url: https://cml.dev/doc
+
+install_command: npm install -g @dvcorg/cml
+
+category: Dev Tools
+tags:
+  - ci-cd
+  - mlops
+  - devops
+  - automation
+  - github-actions
+  - gitlab-ci
+  - testing
+  - python
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Machine learning projects lack standard CI/CD practices — model
+  training is not automatically tested, experiment results are not
+  versioned, and deployment is a manual process. CML solves this by
+  bringing DevOps to ML, letting teams define automated pipelines that
+  train models on GPU runners, compare metrics across commits, generate
+  reports as CI artifacts, and deploy models — all within their existing
+  GitHub Actions or GitLab CI setup.
+
+use_cases:
+  - Automatically train and evaluate ML models on every git push with results reported as CI comments
+  - Create a CI pipeline that tests model accuracy against a baseline and blocks merges if accuracy drops
+  - Build an end-to-end ML deployment pipeline that trains, packages, and deploys models to production
+  - Implement experiment tracking that compares model metrics across git commits with visual reports
+  - Set up a reproducible ML workflow where infrastructure and dependencies are defined in code
