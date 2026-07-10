@@ -1,0 +1,39 @@
+name: ArangoDB
+description: A native multi-model database combining document, graph, and key-value models with built-in vector search via ArangoSearch. Supports storing and querying vector embeddings alongside traditional data in a single system, ideal for hybrid AI retrieval pipelines.
+tagline: Multi-model database with vector search for hybrid AI retrieval
+
+github_url: https://github.com/arangodb/arangodb
+website_url: https://arangodb.com
+docs_url: https://docs.arangodb.com/
+
+install_command: |-
+  docker run -p 8529:8529 arangodb/arangodb
+
+category: Vector DB
+tags:
+  - multi-model
+  - graph-database
+  - document-database
+  - vector-search
+  - ArangoSearch
+  - AQL
+  - docker
+  - enterprise
+pricing: freemium
+is_open_source: true
+license: NOASSERTION
+
+problem_solved: |
+  AI applications often need to query across different data models —
+  documents for content, graphs for relationships, vectors for semantic
+  similarity — requiring multiple databases. ArangoDB solves this with
+  a single multi-model engine featuring ArangoSearch for vector and
+  full-text search, allowing developers to combine document retrieval,
+  graph traversal, and vector similarity in one query language (AQL).
+
+use_cases:
+  - Build a hybrid search system that combines vector similarity, full-text search, and graph traversal in a single query
+  - Create a unified data layer for AI agents that stores documents, relationships, and embeddings in one database
+  - Implement a recommendation engine using collaborative filtering over graphs combined with semantic vector search
+  - Power a knowledge management application with flexible schema supporting both structured data and embeddings
+  - Develop a geospatial AI application combining location data, document content, and vector similarity

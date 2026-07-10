@@ -1,0 +1,40 @@
+name: Dgraph
+description: A high-performance, distributed graph database with built-in vector search, designed for real-time AI and GraphRAG workloads. Supports GraphQL and DQL for querying graph relationships alongside vector embeddings, making it a powerful engine for knowledge graph-powered AI.
+tagline: High-performance graph database with vector search for real-time GraphRAG
+
+github_url: https://github.com/dgraph-io/dgraph
+website_url: https://dgraph.io
+docs_url: https://dgraph.io/docs
+
+install_command: |-
+  docker run -p 8080:8080 -p 9080:9080 dgraph/standalone:latest
+
+category: Vector DB
+tags:
+  - graph-database
+  - distributed
+  - graphql
+  - vector-search
+  - graph-rag
+  - knowledge-graph
+  - real-time
+  - docker
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Real-time AI applications need low-latency graph queries combined with
+  vector similarity search, but most graph databases either lack vector
+  support or are not designed for high-throughput production workloads.
+  Dgraph solves this with a distributed graph database that natively
+  indexes and searches vector embeddings alongside graph relationships,
+  delivering millisecond-latency queries for GraphRAG and knowledge
+  graph-powered AI at scale.
+
+use_cases:
+  - Build a real-time GraphRAG system that queries both graph relationships and vector similarity in milliseconds
+  - Create a knowledge graph for AI agents with native support for semantic search over entity embeddings
+  - Implement a fraud detection platform analyzing relationship patterns and entity similarity simultaneously
+  - Power a recommendation engine using GraphQL queries that mix graph traversal with vector search results
+  - Develop a social network analysis tool that combines connection graphs with content-based semantic search

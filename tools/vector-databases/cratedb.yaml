@@ -1,0 +1,39 @@
+name: CrateDB
+description: A distributed SQL database with native vector search for AI-powered analytics and real-time applications. Combines PostgreSQL-compatible queries with full-text search, time-series, and vector embeddings support, all in a horizontally scalable cluster.
+tagline: Distributed SQL database with vector search for real-time AI analytics
+
+github_url: https://github.com/crate/crate
+website_url: https://cratedb.com
+docs_url: https://cratedb.com/docs
+
+install_command: |-
+  docker run --publish=4200:4200 --publish=5432:5432 crate -Cnetwork.host=0.0.0.0
+
+category: Vector DB
+tags:
+  - sql
+  - distributed
+  - vector-search
+  - time-series
+  - full-text-search
+  - postgresql-compatible
+  - real-time
+  - docker
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AI applications often need to combine vector similarity search with
+  traditional SQL analytics, time-series data, and full-text search —
+  requiring separate systems that increase complexity. CrateDB solves
+  this by providing a single distributed SQL database that natively
+  supports vector embeddings alongside relational tables, time-series
+  data, and full-text search, all queryable through standard SQL.
+
+use_cases:
+  - Build a real-time AI analytics dashboard combining vector similarity with SQL aggregations on streaming data
+  - Create a hybrid search pipeline that blends semantic vector search with structured SQL filtering and sorting
+  - Implement a time-series monitoring system with vector-based anomaly detection on IoT sensor data
+  - Power a recommendation engine that uses SQL for business logic and vector search for semantic matching
+  - Develop a log analytics platform that searches both log text and embedding vectors in a single query

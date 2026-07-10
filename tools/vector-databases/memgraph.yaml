@@ -1,0 +1,39 @@
+name: Memgraph
+description: An in-memory graph database optimized for real-time AI, GraphRAG, agentic memory, and graph analytics. Combines Cypher query language with vector search support, enabling ultra-low-latency graph traversal and semantic similarity in a single platform.
+tagline: In-memory graph database for real-time AI, GraphRAG, and agentic memory
+
+github_url: https://github.com/memgraph/memgraph
+website_url: https://memgraph.com
+docs_url: https://memgraph.com/docs
+
+install_command: |-
+  docker run -p 7687:7687 memgraph/memgraph-platform:latest
+
+category: Vector DB
+tags:
+  - graph-database
+  - in-memory
+  - vector-search
+  - graph-rag
+  - cypher
+  - real-time
+  - streaming
+  - docker
+pricing: freemium
+is_open_source: true
+license: NOASSERTION
+
+problem_solved: |
+  AI agents and real-time applications need sub-millisecond graph queries
+  combined with vector search, but traditional disk-based graph databases
+  cannot deliver the low latency required for interactive AI experiences.
+  Memgraph solves this with an in-memory graph engine featuring vector
+  search support, Cypher query compatibility, and streaming data ingestion
+  for real-time GraphRAG and agentic memory applications.
+
+use_cases:
+  - Build an agentic memory layer that stores agent experiences as a graph with vector-searchable semantic context
+  - Create a real-time GraphRAG pipeline that ingests streaming data and performs sub-millisecond semantic graph queries
+  - Implement a fraud detection system analyzing transaction patterns in real time with graph traversal and similarity search
+  - Power a conversational AI with an in-memory knowledge graph that tracks conversation state and entity relationships
+  - Develop a recommendation engine that delivers instant results by combining in-memory graph access with vector similarity
