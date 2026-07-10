@@ -1,0 +1,40 @@
+name: Pachyderm
+description: A data versioning and pipeline platform that provides data-centric reproducible ML workflows. Combines data lineage tracking with automated pipeline execution, enabling teams to build, test, and deploy data-driven AI applications with Git-like version control for datasets.
+tagline: Data versioning and pipelines for reproducible ML workflows
+
+github_url: https://github.com/pachyderm/pachyderm
+website_url: https://pachyderm.com
+docs_url: https://docs.pachyderm.com
+
+install_command: |-
+  brew install pachyderm/tap/pachctl
+
+category: Data
+tags:
+  - data-versioning
+  - pipeline
+  - mlops
+  - reproducibility
+  - data-lineage
+  - kubernetes
+  - docker
+  - enterprise
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Machine learning pipelines lack the data versioning and lineage
+  guarantees that source code has with Git — making it impossible to
+  reproduce historical training runs or trace model performance changes
+  to specific data changes. Pachyderm solves this with data-centric
+  version control and automated pipelines that track every data commit,
+  trigger pipeline stages on data changes, and provide complete lineage
+  from raw data to model output.
+
+use_cases:
+  - Version control large datasets with Git-like commits for reproducible ML model training
+  - Build an automated data pipeline that retrains models automatically when source data changes
+  - Create a data lineage audit trail that tracks every transformation from raw data to model prediction
+  - Implement a CI/CD pipeline for ML that tests model accuracy against versioned data snapshots
+  - Power a team data science platform where multiple teams work on versioned datasets without conflicts

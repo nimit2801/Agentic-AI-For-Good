@@ -1,0 +1,40 @@
+name: NATS
+description: A high-performance cloud and edge native messaging system for distributed data streaming and microservice communication. Designed for lightweight, secure, and resilient data exchange across AI and ML infrastructure with support for pub-sub, request-reply, and stream processing.
+tagline: Cloud-native messaging system for distributed AI data streaming
+
+github_url: https://github.com/nats-io/nats-server
+website_url: https://nats.io
+docs_url: https://docs.nats.io
+
+install_command: |-
+  docker run -p 4222:4222 nats:latest
+
+category: Data
+tags:
+  - messaging
+  - streaming
+  - pub-sub
+  - microservices
+  - edge
+  - cloud-native
+  - lightweight
+  - docker
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Distributing data across AI infrastructure — from edge devices to
+  cloud GPUs — requires a messaging system that is lightweight enough
+  for resource-constrained devices yet powerful enough for data-center
+  clusters. NATS solves this with a high-performance messaging layer
+  designed for cloud and edge environments, supporting pub-sub,
+  request-reply, and JetStream for persistent streaming — all with
+  sub-millisecond latency and minimal resource overhead.
+
+use_cases:
+  - Distribute inference requests across a fleet of GPU workers with NATS request-reply load balancing
+  - Stream sensor data from edge devices to a central AI training cluster with lightweight pub-sub
+  - Build an event-driven AI pipeline where model serving and data processing communicate via NATS
+  - Create a resilient microservice mesh for ML infrastructure with automatic reconnection and clustering
+  - Implement a real-time model monitoring system that streams metrics from production to observability dashboards

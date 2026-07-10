@@ -1,0 +1,40 @@
+name: CVAT
+description: A leading open-source platform for building high-quality visual datasets through computer vision annotation. Supports image and video annotation with AI-assisted labeling, automated annotation with model integration, and team collaboration workflows.
+tagline: Open-source computer vision annotation tool for AI training data
+
+github_url: https://github.com/openvinotoolkit/cvat
+website_url: https://www.cvat.ai
+docs_url: https://docs.cvat.ai
+
+install_command: |-
+  docker compose -f docker-compose.yml up -d
+
+category: Data
+tags:
+  - annotation
+  - computer-vision
+  - data-labeling
+  - training-data
+  - image-annotation
+  - video-annotation
+  - docker
+  - team-collaboration
+pricing: freemium
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Building computer vision AI models requires large, accurately labeled
+  datasets, but manual annotation is slow and inconsistent across team
+  members. CVAT solves this with a web-based annotation platform that
+  supports images, video, and 3D data — with AI-assisted labeling,
+  automated annotation via model integration, quality control workflows,
+  and team collaboration features that dramatically speed up dataset
+  creation.
+
+use_cases:
+  - Label a large image dataset for training a custom object detection model with AI-assisted annotation
+  - Annotate video frames for action recognition with automated interpolation between keyframes
+  - Build a team data labeling pipeline with role-based access, review workflows, and quality tracking
+  - Create a semantic segmentation dataset using automated segmentation model suggestions
+  - Develop a training data pipeline that integrates CVAT with model training for active learning loops
