@@ -1,0 +1,37 @@
+name: Hopsworks
+description: A data-intensive AI platform with a feature store for managing, sharing, and serving ML features at scale. Provides a unified platform for feature engineering, training pipelines, model serving, and monitoring — all backed by a feature store with online and offline access.
+tagline: AI platform with a feature store for production ML workflows
+
+github_url: https://github.com/logicalclocks/hopsworks
+website_url: https://www.hopsworks.ai
+docs_url: https://docs.hopsworks.ai
+
+install_command: pip install hopsworks
+
+category: Data
+tags:
+  - feature-store
+  - mlops
+  - data-platform
+  - feature-engineering
+  - model-serving
+  - python
+  - enterprise
+pricing: freemium
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Machine learning teams often recompute features for each training run,
+  leading to inconsistent feature definitions between training and
+  serving and wasted computation. Hopsworks solves this with a feature
+  store that centralizes feature engineering, versioning, and serving —
+  providing both online (low-latency) and offline (batch) access to
+  features, ensuring consistency across training and inference pipelines.
+
+use_cases:
+  - Centralize feature engineering for a team of data scientists with shared, versioned feature definitions
+  - Build a training-to-serving pipeline that uses the same features for model training and real-time inference
+  - Implement feature backfill for historical training runs with point-in-time correct feature retrieval
+  - Create a feature monitoring system that tracks feature drift and data quality across production models
+  - Power an ML platform where multiple teams share and discover features through a feature registry

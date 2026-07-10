@@ -1,0 +1,39 @@
+name: Hatchet
+description: An orchestration engine for background tasks, AI agents, and durable workflows. Provides reliable execution, retries, scheduling, and observability for long-running AI agent tasks and complex multi-step workflows.
+tagline: Orchestration engine for AI agents, background tasks, and durable workflows
+
+github_url: https://github.com/hatchet-dev/hatchet
+website_url: https://hatchet.run
+docs_url: https://docs.hatchet.run
+
+install_command: go install github.com/hatchet-dev/hatchet/cmd/hatchet-admin@latest
+
+category: Agents
+tags:
+  - orchestration
+  - workflow
+  - ai-agents
+  - task-queue
+  - scheduling
+  - durability
+  - golang
+  - observability
+pricing: freemium
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  AI agents and multi-step workflows need reliable execution with retries,
+  timeouts, and state persistence, but building this infrastructure from
+  scratch is complex and error-prone. Hatchet solves this with a
+  workflow orchestration engine purpose-built for AI agents — handling
+  task scheduling, automatic retries on failure, durable execution that
+  survives process restarts, and built-in observability for debugging
+  complex agent chains.
+
+use_cases:
+  - Orchestrate multi-step AI agent workflows with automatic retries and durable state persistence
+  - Build a background job system for AI tasks that processes prompts, generates images, or runs inference reliably
+  - Create a scheduling system for periodic AI tasks like daily report generation or model re-evaluation
+  - Implement a fan-out workflow that parallelizes AI processing across multiple model API calls
+  - Build a human-in-the-loop workflow that pauses execution, waits for approval, and resumes the agent pipeline
