@@ -1,0 +1,38 @@
+name: NebulaGraph
+description: A distributed, horizontally scalable graph database with vector search capabilities for AI applications. Designed for large-scale graph workloads with native support for similarity search on embeddings, enabling GraphRAG and knowledge graph-powered AI systems.
+tagline: Distributed graph database with vector search for GraphRAG at scale
+
+github_url: https://github.com/vesoft-inc/nebula
+website_url: https://www.nebula-graph.io/
+docs_url: https://docs.nebula-graph.io/
+
+install_command: |-
+  docker run -it vesoft/nebula-graph
+
+category: Vector DB
+tags:
+  - graph-database
+  - distributed
+  - vector-search
+  - graph-rag
+  - knowledge-graph
+  - nGQL
+  - docker
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Traditional vector databases treat all data points as independent vectors,
+  losing the rich relationships between entities in AI applications.
+  NebulaGraph solves this by combining a distributed graph database with
+  vector search, enabling GraphRAG architectures that traverse both
+  semantic similarity and graph relationships at scale across billions
+  of nodes and edges.
+
+use_cases:
+  - Build a large-scale GraphRAG system that traverses entity relationships across billions of nodes
+  - Implement a fraud detection pipeline that analyzes transaction graphs alongside semantic entity similarity
+  - Power a recommendation engine combining collaborative filtering with graph traversal and vector embeddings
+  - Create a knowledge graph memory layer for LLM agents that supports both relationship and similarity queries
+  - Build an enterprise knowledge management system with distributed graph storage and semantic search
