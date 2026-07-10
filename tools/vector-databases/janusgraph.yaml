@@ -1,0 +1,39 @@
+name: JanusGraph
+description: An open-source, distributed graph database optimized for storing and querying large-scale graph data with billions of vertices and edges. Supports integration with multiple storage backends and indexing systems, enabling GraphRAG and AI applications that need scalable graph traversal.
+tagline: Distributed graph database for large-scale graph analytics and AI
+
+github_url: https://github.com/janusgraph/janusgraph
+website_url: https://janusgraph.org
+docs_url: https://docs.janusgraph.org
+
+install_command: |-
+  docker run -p 8182:8182 janusgraph/janusgraph:latest
+
+category: Vector DB
+tags:
+  - graph-database
+  - distributed
+  - big-data
+  - knowledge-graph
+  - gremlin
+  - graph-rag
+  - docker
+pricing: freemium
+is_open_source: true
+license: NOASSERTION
+
+problem_solved: |
+  Building AI applications that need to traverse graph relationships at
+  scale often hits a wall with single-node graph databases that cannot
+  handle billions of edges. JanusGraph solves this with a distributed
+  graph database designed for extreme scale — billions of vertices and
+  edges across multi-datacenter clusters — with pluggable storage
+  backends (Cassandra, HBase, Bigtable) and indexing systems (Elasticsearch,
+  Solr) for hybrid graph-vector search.
+
+use_cases:
+  - Build a large-scale knowledge graph for GraphRAG over billions of entity relationships
+  - Implement a fraud detection system analyzing connection patterns across a global transaction graph
+  - Create a distributed graph architecture that stores and queries AI agent interaction histories at scale
+  - Power a supply chain analytics platform with graph traversal across millions of interconnected suppliers
+  - Develop an entity resolution system linking records across large datasets using graph traversal

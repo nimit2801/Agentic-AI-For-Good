@@ -1,0 +1,38 @@
+name: SDV
+description: A synthetic data generation library for creating high-quality, privacy-preserving tabular, relational, and time-series data. Uses deep learning models to learn the statistical patterns of real datasets and generate synthetic copies for testing, development, and AI training.
+tagline: Synthetic data generation for tabular, relational, and time-series data
+
+github_url: https://github.com/sdv-dev/SDV
+website_url: https://sdv.dev
+docs_url: https://docs.sdv.dev
+
+install_command: pip install sdv
+
+category: Data
+tags:
+  - synthetic-data
+  - data-generation
+  - privacy
+  - time-series
+  - tabular-data
+  - deep-learning
+  - python
+pricing: free
+is_open_source: true
+license: NOASSERTION
+
+problem_solved: |
+  Building AI applications requires large, representative datasets, but
+  real production data often contains sensitive information — PII, PHI,
+  financial records — that cannot be shared with developers or used in
+  testing. SDV solves this by learning the statistical patterns of real
+  data and generating synthetic copies that preserve relationships and
+  distributions without exposing actual records, enabling safe data
+  sharing for testing, development, and AI model training.
+
+use_cases:
+  - Generate synthetic tabular data for testing machine learning pipelines without exposing customer PII
+  - Create privacy-preserving synthetic datasets that match the statistical distribution of production data
+  - Build synthetic time-series data for developing and validating forecasting models
+  - Supplement small real datasets with synthetic data to improve AI model training and reduce overfitting
+  - Generate relational synthetic data that preserves multi-table relationships for database application testing

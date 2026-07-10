@@ -1,0 +1,39 @@
+name: Manticore Search
+description: An open-source search database that combines full-text search, vector search, and hybrid search in a single SQL-based system. Built for real-time indexing and low-latency queries, it serves as a drop-in replacement for Elasticsearch with reduced resource usage.
+tagline: Open-source search database with full-text, vector, and hybrid search
+
+github_url: https://github.com/manticoresoftware/manticoresearch
+website_url: https://manticoresearch.com
+docs_url: https://manual.manticoresearch.com
+
+install_command: |-
+  docker run -p 9306:9306 -p 9308:9308 manticoresearch/manticore
+
+category: Vector DB
+tags:
+  - search-database
+  - full-text-search
+  - vector-search
+  - hybrid-search
+  - sql
+  - real-time
+  - elasticsearch-alternative
+  - docker
+pricing: freemium
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Many AI applications need both full-text and vector search, requiring
+  separate systems like Elasticsearch for text and Pinecone for vectors,
+  increasing operational complexity. Manticore Search solves this by
+  combining full-text, vector, and hybrid search in a single SQL-based
+  database with real-time indexing — delivering Elasticsearch-style
+  capabilities with lower resource usage and simpler deployment.
+
+use_cases:
+  - Build a hybrid search engine that blends BM25 full-text ranking with vector similarity scores
+  - Create a real-time product catalog with semantic search that updates as inventory changes
+  - Implement a log analysis platform that searches both text patterns and embedding vectors in one query
+  - Power a recommendation system combining keyword matching with semantic similarity for content discovery
+  - Develop a document search application with full-text precision, vector-based fuzzy matching, and SQL filtering
