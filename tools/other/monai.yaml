@@ -1,0 +1,39 @@
+name: MONAI
+description: An open-source AI toolkit for healthcare imaging from NVIDIA and King's College London. Provides deep learning primitives and workflows for medical image analysis, including segmentation, classification, and detection with pre-trained models.
+tagline: AI toolkit for healthcare imaging research and clinical AI
+
+github_url: https://github.com/Project-MONAI/MONAI
+website_url: https://monai.io
+docs_url: https://docs.monai.io
+
+install_command: pip install monai
+
+category: Other
+tags:
+  - healthcare
+  - medical-imaging
+  - deep-learning
+  - pytorch
+  - computer-vision
+  - segmentation
+  - nvidia
+  - python
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Building AI models for medical imaging requires specialized deep
+  learning primitives — for volumetric data, multi-modal images, and
+  clinical data formats — that general-purpose frameworks lack. MONAI
+  solves this with a PyTorch-based framework purpose-built for healthcare
+  AI, providing domain-specific data loaders, transformation pipelines,
+  network architectures, evaluation metrics, and pre-trained models for
+  medical image analysis.
+
+use_cases:
+  - Train a 3D segmentation model for organ or tumor delineation from CT and MRI scans
+  - Build a medical image classification pipeline for pathology detection with pre-trained backbone models
+  - Create a multi-modal AI system that combines radiology images with clinical text data
+  - Develop a federated learning workflow for healthcare AI training across multiple hospital sites
+  - Implement a clinical AI pipeline with DICOM data loading, volumetric transformations, and 3D inference
