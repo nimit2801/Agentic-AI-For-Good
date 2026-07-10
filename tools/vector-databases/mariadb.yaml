@@ -1,0 +1,39 @@
+name: MariaDB
+description: A community-developed relational database forked from MySQL with native vector search support. Combines proven relational storage with VECTOR data type and vector index capabilities, enabling hybrid SQL-and-similarity queries on a single database platform.
+tagline: Enterprise relational database with native vector search support
+
+github_url: https://github.com/MariaDB/server
+website_url: https://mariadb.com
+docs_url: https://mariadb.com/docs
+
+install_command: |-
+  docker run -p 3306:3306 mariadb:latest
+
+category: Vector DB
+tags:
+  - sql
+  - relational-database
+  - vector-search
+  - mysql-compatible
+  - hybrid-search
+  - enterprise
+  - docker
+pricing: freemium
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Adding vector search to an existing application usually means
+  introducing a separate vector database alongside the relational
+  database, adding sync complexity and operational overhead. MariaDB
+  solves this by embedding vector search directly into a battle-tested
+  relational database — with VECTOR data type and vector indexes —
+  so developers can run SQL queries with vector similarity in the
+  same database that stores their application data.
+
+use_cases:
+  - Add semantic search to an existing MariaDB-backed application without introducing a separate vector database
+  - Build a hybrid SQL-and-similarity query system for e-commerce that filters by category then ranks by vector similarity
+  - Implement a recommendation engine that uses SQL for user demographics and vector search for product matching
+  - Create a content management system with both structured metadata queries and embedding-based content discovery
+  - Power a customer-facing search that combines relational filtering with vector-based relevance ranking
