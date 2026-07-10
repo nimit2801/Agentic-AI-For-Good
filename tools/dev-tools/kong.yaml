@@ -1,0 +1,26 @@
+name: Kong
+description: The cloud-native API gateway with built-in AI gateway capabilities for routing, securing, and managing traffic to LLM providers and AI services. Supports intelligent request routing, rate limiting, key management, and observability across multiple model providers.
+tagline: The cloud-native API and AI gateway
+
+github_url: https://github.com/Kong/kong
+website_url: https://konghq.com
+docs_url: https://docs.konghq.com
+
+install_command: |
+  docker run -d --name kong --network host kong:latest
+
+category: Dev Tools
+tags: [api-gateway, ai-gateway, llm-routing, api-management, cloud-native, kubernetes, microservices]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Teams building AI-powered applications need to route requests to multiple LLM providers (OpenAI, Anthropic, Google, self-hosted models) while managing API keys, rate limits, usage costs, and failover — but each provider has its own auth scheme, rate limits, and pricing. Kong provides a unified AI gateway layer that proxies LLM requests, enforces usage policies, handles provider failover, and collects telemetry across all providers from a single control plane.
+
+use_cases:
+  - "Route LLM inference requests across multiple providers with automatic failover and load balancing"
+  - "Enforce API key authentication, rate limits, and usage quotas for internal and external AI API consumers"
+  - "Collect unified metrics and logs for all LLM API traffic across OpenAI, Anthropic, self-hosted models, and more"
+  - "Implement semantic caching of LLM responses to reduce costs and improve latency at the gateway level"
+  - "Secure AI endpoints with prompt injection detection, PII redaction, and content moderation policies in the request path"
