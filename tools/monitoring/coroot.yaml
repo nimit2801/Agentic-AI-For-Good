@@ -1,0 +1,26 @@
+name: Coroot
+description: An open-source observability and APM tool with AI-powered root cause analysis. Combines metrics, logs, traces, continuous profiling, and cost monitoring into a single platform with automated RCA that identifies the root cause of performance issues in cloud-native AI and microservice deployments.
+tagline: AI-powered observability with automated root cause analysis
+
+github_url: https://github.com/coroot/coroot
+website_url: https://coroot.com
+docs_url: https://docs.coroot.com
+
+install_command: |
+  docker run -d --name coroot -p 8080:8080 coroot/coroot:latest
+
+category: Monitoring
+tags: [observability, monitoring, apm, tracing, profiling, root-cause-analysis, ai-infrastructure, cloud-native]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AI and microservice systems generate massive amounts of telemetry — metrics, traces, logs, and profiles — but correlating these signals to find the root cause of performance degradations is time-consuming and requires deep expertise. Coroot automatically collects and correlates all telemetry signals, uses AI to analyze the data, and surfaces the likely root cause with supporting evidence, reducing mean time to resolution from hours to minutes for AI infrastructure issues.
+
+use_cases:
+  - "Automatically identify the root cause of LLM inference latency spikes by correlating traces, metrics, and logs"
+  - "Monitor GPU utilization and AI model serving performance with integrated profiling and cost tracking"
+  - "Correlate application performance with infrastructure health across Kubernetes clusters running AI workloads"
+  - "Track AI agent request flows end-to-end with distributed tracing and automated failure analysis"
+  - "Set up proactive alerts that identify the specific component causing performance degradation in AI pipelines"

@@ -1,0 +1,23 @@
+name: Plano
+description: An AI-native proxy and data plane for agentic applications with built-in orchestration, safety, observability, and smart LLM routing. Provides a unified control layer between AI applications and LLM providers including request routing, content safety filtering, prompt monitoring, and cost management.
+tagline: AI-native proxy and data plane for agentic applications
+
+github_url: https://github.com/katanemo/plano
+website_url: https://katanemo.com
+docs_url: https://github.com/katanemo/plano#readme
+
+category: Dev Tools
+tags: [ai-gateway, llm-proxy, orchestration, observability, safety, routing, agent-infrastructure, data-plane]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Agentic AI applications need to route requests to multiple LLM providers while ensuring safety, observability, and cost control — but each agent or application typically implements these capabilities independently, leading to duplicated effort and inconsistent policies. Plano provides a unified data plane for agentic applications that handles LLM request routing, content safety filtering, prompt monitoring, and usage tracking, allowing each agent to focus on its core logic while sharing common infrastructure.
+
+use_cases:
+  - "Route LLM requests from multiple agents to the best provider based on latency, cost, and capability requirements"
+  - "Enforce content safety policies and prompt injection detection across all agent-to-LLM traffic in a single proxy layer"
+  - "Collect unified observability data — tokens used, latency, error rates — for all agent LLM calls in one dashboard"
+  - "Implement cost allocation and usage quotas for different agents, teams, or applications consuming LLM resources"
+  - "Add intelligent fallback and failover between LLM providers without modifying individual agent implementations"
