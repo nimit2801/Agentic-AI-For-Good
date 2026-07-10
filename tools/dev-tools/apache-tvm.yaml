@@ -1,0 +1,39 @@
+name: Apache TVM
+description: An open-source machine learning compiler framework for optimizing AI models across diverse hardware backends. Compiles models from TensorFlow, PyTorch, and ONNX into optimized code for CPUs, GPUs, and specialized accelerators.
+tagline: ML compiler framework for optimizing AI models on any hardware
+
+github_url: https://github.com/apache/tvm
+website_url: https://tvm.apache.org
+docs_url: https://tvm.apache.org/docs
+
+install_command: pip install apache-tvm
+
+category: Dev Tools
+tags:
+  - compiler
+  - optimization
+  - inference
+  - hardware-acceleration
+  - tensorflow
+  - pytorch
+  - onnx
+  - gpu
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Deploying AI models across different hardware — from cloud GPUs to
+  edge CPUs — requires manual optimization for each target, creating a
+  maintenance burden as hardware evolves. Apache TVM solves this with an
+  ML compiler framework that automatically optimizes models from any
+  framework (TensorFlow, PyTorch, ONNX) for any target hardware (CPU,
+  GPU, NPU, FPGA), delivering production-ready inference performance
+  without hardware-specific manual tuning.
+
+use_cases:
+  - Optimize a PyTorch model for deployment on edge devices with limited compute resources
+  - Compile a TensorFlow model for maximum inference throughput on a specific GPU architecture
+  - Deploy a single AI model across heterogeneous hardware — cloud GPU servers and edge devices
+  - Reduce model inference latency by automatically applying graph optimizations and operator fusion
+  - Build a hardware-agnostic AI deployment pipeline that targets CPUs, GPUs, and NPUs from the same model

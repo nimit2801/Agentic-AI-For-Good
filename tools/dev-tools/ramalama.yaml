@@ -1,0 +1,37 @@
+name: RamaLama
+description: An open-source developer tool for running AI models locally from any source. Simplifies model serving by downloading, managing, and running models from HuggingFace, Ollama, OCI registries, and other sources with a single command.
+tagline: Run AI models locally from any source with a single command
+
+github_url: https://github.com/containers/ramalama
+website_url: https://ramalama.ai
+docs_url: https://github.com/containers/ramalama#readme
+
+install_command: brew install ramalama
+
+category: Dev Tools
+tags:
+  - local-ai
+  - model-serving
+  - inference
+  - containers
+  - developer-tools
+  - cli
+  - open-source
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Running AI models locally is complex — different models come from
+  different sources (HuggingFace, Ollama, OCI registries) with different
+  download and serving methods, making it hard to standardize local
+  development. RamaLama solves this by providing a single CLI that
+  downloads, manages, and serves models from any source with consistent
+  commands — using container-based isolation to keep the host clean.
+
+use_cases:
+  - Run an LLM locally for development and testing without managing model downloads and dependencies
+  - Serve models from HuggingFace, Ollama, or OCI registries with the same CLI interface
+  - Quickly prototype AI features by spinning up local model endpoints during development
+  - Manage multiple local AI models with version tracking and easy switching between model variants
+  - Set up a consistent local AI development environment across a team with containerized model serving

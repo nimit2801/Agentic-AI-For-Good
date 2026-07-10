@@ -1,0 +1,38 @@
+name: NannyML
+description: A post-deployment data science library for monitoring ML model performance without ground truth labels. Uses confidence-based performance estimation and drift detection to alert on model degradation the moment it starts, enabling proactive ML operations.
+tagline: Post-deployment ML monitoring without ground truth labels
+
+github_url: https://github.com/NannyML/nannyml
+website_url: https://www.nannyml.com
+docs_url: https://docs.nannyml.com
+
+install_command: pip install nannyml
+
+category: Monitoring
+tags:
+  - model-monitoring
+  - drift-detection
+  - performance-estimation
+  - mlops
+  - python
+  - data-science
+  - post-deployment
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Monitoring ML model performance in production typically requires ground
+  truth labels, which are often delayed by days or weeks — meaning model
+  degradation goes undetected until it is too late. NannyML solves this
+  with confidence-based performance estimation (CBPE) that estimates
+  model performance without needing ground truth, combined with data
+  drift detection that alerts on distribution shifts the moment they
+  occur.
+
+use_cases:
+  - Monitor production ML model accuracy in real time without waiting for ground truth labels to arrive
+  - Alert on data drift and model degradation automatically with confidence-based performance estimates
+  - Implement a proactive ML monitoring system that detects issues before they impact business metrics
+  - Track model performance across segments to identify which customer groups are affected by drift
+  - Build a monitoring dashboard that combines drift detection with estimated performance metrics for ops teams

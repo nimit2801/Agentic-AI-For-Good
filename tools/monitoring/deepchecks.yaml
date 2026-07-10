@@ -1,0 +1,38 @@
+name: DeepChecks
+description: An open-source framework for continuous validation of machine learning models, data, and pipelines. Provides automated testing suites for data quality, model performance, drift detection, and bias evaluation throughout the ML lifecycle.
+tagline: Continuous validation framework for ML models, data, and pipelines
+
+github_url: https://github.com/deepchecks/deepchecks
+website_url: https://deepchecks.com
+docs_url: https://docs.deepchecks.com
+
+install_command: pip install deepchecks
+
+category: Monitoring
+tags:
+  - validation
+  - testing
+  - data-quality
+  - drift-detection
+  - model-monitoring
+  - bias-detection
+  - python
+  - ci-cd
+pricing: freemium
+is_open_source: true
+license: NOASSERTION
+
+problem_solved: |
+  ML models degrade silently in production — data drift, label drift,
+  and feature distribution changes can go undetected until users report
+  problems. DeepChecks solves this by providing automated testing suites
+  that validate data quality, monitor model performance, detect drift,
+  and evaluate bias — integrated into CI/CD pipelines and production
+  monitoring systems from a single Python library.
+
+use_cases:
+  - Automatically validate data quality before training with a comprehensive data integrity test suite
+  - Monitor production models for feature drift and data drift with automated alerting on distribution shifts
+  - Integrate ML model validation into CI/CD pipelines to catch regressions before deployment
+  - Detect bias in model predictions across demographic groups with fairness evaluation metrics
+  - Compare training and serving data distributions to detect training-serving skew before it impacts users
