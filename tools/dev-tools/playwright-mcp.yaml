@@ -1,0 +1,25 @@
+name: Playwright MCP
+description: Model Context Protocol server that provides browser automation capabilities using Playwright's accessibility tree. Enables LLMs and coding agents to navigate, click, type, and extract structured content from web pages without screenshots or vision models.
+tagline: Browser automation for LLMs via the Model Context Protocol
+
+github_url: https://github.com/microsoft/playwright-mcp
+website_url: https://playwright.dev
+docs_url: https://github.com/microsoft/playwright-mcp#readme
+
+install_command: npx @playwright/mcp@latest
+
+category: Dev Tools
+tags: [mcp, browser-automation, playwright, testing, web-scraping, accessibility, llm-tools, nodejs, devtools, automation]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  LLMs and coding agents struggle to interact with web pages through traditional browser automation — pixel-based approaches are ambiguous and vision models are slow and expensive. Playwright MCP solves this by exposing Playwright's accessibility tree through the Model Context Protocol, giving LLMs structured, deterministic access to web page content and interactive elements. Agents can navigate pages, click buttons, fill forms, and extract data using clean accessibility snapshots rather than screenshots, making browser automation faster, cheaper, and more reliable for AI-driven workflows.
+
+use_cases:
+  - Enable coding agents to test web applications by navigating pages, clicking elements, and verifying UI state automatically
+  - Build AI-powered web scrapers that extract structured data from complex multi-page applications
+  - Create self-healing test suites where LLMs can adapt to UI changes by reasoning about accessibility structure
+  - Automate repetitive web tasks like form filling, data entry, and report generation through natural language instructions
+  - Give MCP-compatible AI assistants the ability to browse the web and interact with web applications on behalf of users

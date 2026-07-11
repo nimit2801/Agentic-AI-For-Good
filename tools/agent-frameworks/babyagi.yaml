@@ -1,0 +1,25 @@
+name: BabyAGI
+description: Experimental framework for self-building autonomous agents that can construct, manage, and execute their own functions and workflows at runtime.
+tagline: A self-building autonomous agent framework that writes its own functions
+
+github_url: https://github.com/yoheinakajima/babyagi
+website_url: https://babyagi.org
+docs_url: https://github.com/yoheinakajima/babyagi#readme
+
+install_command: pip install babyagi
+
+category: Agents
+tags: [python, agents, autonomous, experimental, function-framework, task-planning, self-improving]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Traditional agent frameworks require developers to pre-define every function and workflow step, limiting adaptability in dynamic environments. BabyAGI introduces a self-building architecture where the agent can create, register, and manage its own functions at runtime through a graph-based dependency system. Functions are stored in a database with metadata tracking imports, dependencies, and authentication, enabling the agent to dynamically compose new capabilities without manual coding. This shifts agent development from exhaustive pre-planning to emergent behavior where the agent expands its own toolkit based on task requirements.
+
+use_cases:
+  - Build autonomous research agents that discover new data sources and create extraction functions without manual coding
+  - Create self-improving coding agents that can add new analysis capabilities by generating and registering functions at runtime
+  - Prototype experimental agent architectures that need dynamic function composition and dependency tracking
+  - Develop educational platforms where students build agents that learn and extend their own capabilities
+  - Explore emergent agent behaviors through a framework designed for self-modification and growth
