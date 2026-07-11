@@ -1,0 +1,24 @@
+name: TaskingAI
+description: Open-source Backend as a Service (BaaS) platform for LLM-based agent development and deployment. Unifies hundreds of AI models under a single API with an intuitive console for managing tools, RAG systems, assistants, and conversation history with multi-tenant support.
+tagline: BaaS platform for building and deploying LLM-powered AI agents at scale
+
+github_url: https://github.com/TaskingAI/TaskingAI
+website_url: https://www.tasking.ai
+
+install_command: pip install taskingai
+
+category: Agents
+tags: [python, agents, llm, baas, rag, multi-tenant, api, backend, orchestration, tools]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Building production-grade LLM agents requires juggling model integrations, tool management, RAG pipelines, session state, and multi-tenant deployments — each demanding custom infrastructure. TaskingAI solves this with a BaaS architecture that decouples AI logic from client development: developers manage agents, tools, and knowledge bases through a unified console and API, while client SDKs handle only the frontend. The platform supports both stateful (conversation management) and stateless (chat completion) modes, built-in multi-tenancy, and one-click deployment from prototype to production.
+
+use_cases:
+  - Deploy multi-tenant AI agent applications where each customer needs isolated configurations, tools, and memory
+  - Build RAG-powered assistants with integrated document retrieval and customizable chunking strategies
+  - Manage hundreds of LLM model providers through a single unified API with automatic failover between providers
+  - Create tool-augmented agents with built-in plugins for web search, code execution, and custom API integrations
+  - Prototype and productionize agent workflows through an intuitive console with one-click deployment scaling
