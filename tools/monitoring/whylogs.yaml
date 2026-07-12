@@ -1,0 +1,30 @@
+name: whylogs
+description: An open-source data logging library for ML models and data pipelines that provides visibility into data quality, model performance, and drift over time with privacy-preserving profiling.
+tagline: ML data logging and monitoring made simple
+
+github_url: https://github.com/whylabs/whylogs
+website_url: https://whylabs.ai
+docs_url: https://docs.whylabs.ai/docs/whylogs-overview
+
+category: Monitoring
+tags: [ml-monitoring, data-quality, model-monitoring, data-drift, observability, python, logging]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install whylogs
+
+problem_solved: |
+  Machine learning models in production degrade over time due to data drift, concept drift,
+  and data quality issues — but most teams lack visibility into what their models are seeing
+  and predicting. Traditional monitoring solutions require sending raw data to external services,
+  creating privacy and compliance risks. Whylogs generates statistical profiles of datasets
+  (distributions, missing values, types) in a privacy-preserving manner, enabling teams to
+  detect drift, track data quality, and debug model performance issues without exposing raw data.
+
+use_cases:
+  - Detect data drift between training and production datasets to catch model degradation early
+  - Monitor data quality metrics (missing values, type ratios, distribution shifts) in ML pipelines
+  - Track model performance over time and correlate changes with input distribution shifts
+  - Generate privacy-preserving data profiles that can be shared without exposing raw customer data
+  - Integrate ML monitoring into existing observability stacks with logging and alerting integrations
