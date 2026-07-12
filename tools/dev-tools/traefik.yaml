@@ -1,0 +1,25 @@
+name: Traefik
+description: "A cloud-native application proxy and load balancer that automatically discovers services, handles dynamic reverse proxying, load balancing, SSL/TLS termination, and provides observability with zero manual configuration."
+tagline: "The cloud-native application proxy for dynamic microservices"
+github_url: https://github.com/traefik/traefik
+website_url: https://traefik.io
+docs_url: https://doc.traefik.io
+install_command: brew install traefik
+category: Dev Tools
+tags:
+  - reverse-proxy
+  - load-balancer
+  - kubernetes
+  - docker
+  - networking
+  - infrastructure
+pricing: freemium
+is_open_source: true
+license: MIT
+problem_solved: "Traefik solves the dynamic routing problem in containerized and orchestrated environments by automatically discovering services from Docker, Kubernetes, Consul, and other providers — configuring routes, load balancing, SSL certificates, and middleware without manual configuration files or reloads."
+use_cases:
+  - "Automatically configure reverse proxy routes for Docker containers as they start and stop"
+  - "Handle SSL/TLS termination with automatic Let's Encrypt certificate provisioning and renewal"
+  - "Load balance traffic across multiple backend service instances with circuit breakers and retries"
+  - "Expose Kubernetes services with automatic ingress configuration and middleware for rate limiting"
+  - "Monitor request metrics, latency, and error rates with built-in Prometheus and OpenTelemetry metrics"
