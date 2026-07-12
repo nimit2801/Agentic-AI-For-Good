@@ -1,0 +1,30 @@
+name: DGL
+description: An open-source Python library for deep learning on graphs that provides a comprehensive framework for building and training graph neural networks (GNNs) on top of PyTorch, TensorFlow, and JAX.
+tagline: Deep learning on graphs, simplified
+
+github_url: https://github.com/dmlc/dgl
+website_url: https://www.dgl.ai
+docs_url: https://docs.dgl.ai
+
+category: Other
+tags: [graph-neural-networks, deep-learning, pytorch, tensorflow, jax, gnns, graph-machine-learning]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install dgl
+
+problem_solved: |
+  Graph neural networks are powerful tools for modeling relational data — social networks,
+  molecular structures, knowledge graphs — but implementing GNNs from scratch requires
+  handling sparse graph operations, message passing, and specialized batching that standard
+  deep learning frameworks don't provide. DGL offers a unified graph computation model with
+  optimized graph operators, mini-batch training, and hardware acceleration that works
+  across PyTorch, TensorFlow, and JAX backends.
+
+use_cases:
+  - Model molecular structures and predict chemical properties for drug discovery
+  - Build knowledge graph embeddings for entity linking and relation prediction
+  - Analyze social network structures for community detection and recommendation
+  - Power graph-based RAG systems that traverse knowledge graphs for context retrieval
+  - Train protein-protein interaction networks for bioinformatics research

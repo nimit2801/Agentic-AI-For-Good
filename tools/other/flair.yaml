@@ -1,0 +1,30 @@
+name: Flair
+description: A state-of-the-art natural language processing (NLP) framework that provides pre-trained models and a simple interface for text classification, named entity recognition, sequence labeling, and text embedding.
+tagline: State-of-the-art NLP, incredibly simple
+
+github_url: https://github.com/flairNLP/flair
+website_url: https://flairnlp.github.io
+docs_url: https://flairnlp.github.io/docs
+
+category: Other
+tags: [nlp, named-entity-recognition, text-classification, sequence-labeling, embeddings, pytorch]
+pricing: free
+is_open_source: true
+license: LGPL-3.0
+
+install_command: pip install flair
+
+problem_solved: |
+  Applying state-of-the-art NLP to real-world documents requires juggling multiple models,
+  tokenizers, and pipelines — each with their own API and dependencies. Flair provides a
+  unified framework that wraps modern transformer models (BERT, RoBERTa, XLNet) alongside
+  its own contextual string embeddings, with a consistent API for common NLP tasks like
+  named entity recognition, text classification, and sequence labeling, all accessible in
+  just a few lines of Python.
+
+use_cases:
+  - Extract named entities (people, organizations, locations) from legal documents and contracts
+  - Classify customer support tickets into intent categories with pre-trained transformer models
+  - Build text embedding pipelines for semantic search and document similarity
+  - Train custom sequence labeling models for domain-specific entity extraction
+  - Power NLP preprocessing pipelines for downstream LLM applications
