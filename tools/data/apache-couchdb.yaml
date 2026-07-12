@@ -1,0 +1,25 @@
+name: Apache CouchDB
+description: "A document-oriented NoSQL database with an intuitive HTTP/JSON API, multi-primary replication, and offline-first synchronization designed for reliability and resilience across distributed systems."
+tagline: "Seamless multi-primary NoSQL database with HTTP/JSON API"
+github_url: https://github.com/apache/couchdb
+website_url: https://couchdb.apache.org
+docs_url: https://docs.couchdb.org
+install_command: brew install couchdb
+category: Data
+tags:
+  - database
+  - nosql
+  - json
+  - replication
+  - distributed
+  - document-store
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "CouchDB solves the offline-first data synchronization problem by providing a document database designed around multi-primary replication — each node can accept writes independently, and data syncs automatically when connectivity is restored. This makes it ideal for mobile, IoT, and edge applications where network connectivity is intermittent."
+use_cases:
+  - "Build mobile applications with offline-first data that syncs automatically when the device reconnects"
+  - "Deploy a peer-to-peer database across edge devices where each node operates independently"
+  - "Store and query JSON documents with map-reduce views and full-text search capabilities"
+  - "Sync data between cloud and on-premise instances using CouchDB's built-in replication protocol"
+  - "Use CouchDB as a reliable document store for applications requiring HTTP-native database access"

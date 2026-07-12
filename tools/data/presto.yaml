@@ -1,0 +1,25 @@
+name: Presto
+description: "An open-source distributed SQL query engine for big data analytics that runs queries against data lakes, relational databases, and NoSQL systems — from gigabytes to petabytes — with ANSI SQL support."
+tagline: "Distributed SQL query engine for big data analytics"
+github_url: https://github.com/prestodb/presto
+website_url: https://prestodb.io
+docs_url: https://prestodb.io/docs/current
+install_command: docker run -d -p 8080:8080 prestodb/presto
+category: Data
+tags:
+  - sql
+  - big-data
+  - query-engine
+  - analytics
+  - data-lake
+  - distributed
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Presto solves the cross-source data query problem by letting analysts and engineers run ANSI SQL against data stored in HDFS, S3, relational databases, Kafka, and NoSQL systems — without moving data into a separate warehouse. Instead of ETL-ing everything into one system, teams query data in place with a single engine that scales to petabytes."
+use_cases:
+  - "Run interactive SQL queries across petabytes of data in S3 and HDFS without pre-loading into a warehouse"
+  - "Federate queries across MySQL, PostgreSQL, MongoDB, and Kafka topics from a single SQL interface"
+  - "Power BI tools like Tableau and Superset with a fast ANSI SQL endpoint for live dashboards"
+  - "Join data from a data lake with operational databases for real-time analytics use cases"
+  - "Replace slow Hive queries with Presto's in-memory pipelined execution for 10x faster analytics"
