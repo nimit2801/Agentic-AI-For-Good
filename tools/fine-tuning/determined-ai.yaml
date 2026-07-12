@@ -1,0 +1,30 @@
+name: Determined AI
+description: An open-source ML platform that simplifies distributed training, hyperparameter tuning, experiment tracking, and GPU resource management for PyTorch and TensorFlow models.
+tagline: Distributed training and hyperparameter tuning made simple
+
+github_url: https://github.com/determined-ai/determined
+website_url: https://determined.ai
+docs_url: https://docs.determined.ai
+
+category: Fine-tuning
+tags: [distributed-training, hyperparameter-tuning, experiment-tracking, pytorch, tensorflow, mlops]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install determined
+
+problem_solved: |
+  Fine-tuning and training large models requires managing GPU clusters, tracking experiments,
+  tuning hyperparameters, and handling failures — all of which become prohibitively complex
+  at scale. Determined AI provides a unified platform that automates distributed training across
+  multiple GPUs, runs intelligent hyperparameter searches, tracks every experiment, and
+  automatically recovers from hardware failures, letting ML engineers focus on model architecture
+  rather than infrastructure.
+
+use_cases:
+  - Distribute large model fine-tuning across multiple GPUs without rewriting training code
+  - Run automated hyperparameter sweeps with early stopping to find optimal configurations faster
+  - Track and compare thousands of training experiments with metrics, artifacts, and system logs
+  - Fine-tune LLMs on custom datasets using distributed PyTorch or TensorFlow training
+  - Queue and schedule training jobs across GPU clusters with automatic fault tolerance

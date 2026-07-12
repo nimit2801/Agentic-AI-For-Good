@@ -1,0 +1,30 @@
+name: Tiktoken
+description: A fast, open-source BPE tokenizer by OpenAI that converts text to tokens and back, designed for efficiency with support for multiple encoding formats including OpenAI's o200k_base, cl100k_base, and p50k_base.
+tagline: Fast BPE tokenization for LLMs
+
+github_url: https://github.com/openai/tiktoken
+website_url: https://github.com/openai/tiktoken
+docs_url: https://github.com/openai/tiktoken/blob/main/README.md
+
+category: LLM
+tags: [tokenizer, bpe, llm, openai, text-processing, encoding]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install tiktoken
+
+problem_solved: |
+  LLM applications need to count tokens accurately for prompt construction, context window
+  management, and cost estimation — but tokenization is encoding-specific and varies by
+  model family. Most tokenizers are too slow for real-time applications or require loading
+  model weights just to tokenize text. Tiktoken provides a fast, lightweight BPE tokenizer
+  implemented in Rust with Python bindings that supports all major OpenAI encoding formats
+  and many third-party models, handling 10x the throughput of slower alternatives.
+
+use_cases:
+  - Count tokens in prompts and responses to stay within model context windows
+  - Estimate API costs by computing token usage before sending requests
+  - Split long documents into token-aligned chunks for RAG retrieval
+  - Build token-aware streaming interfaces that respect per-minute rate limits
+  - Validate prompt length during autocomplete and multi-turn conversations

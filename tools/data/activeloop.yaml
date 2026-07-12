@@ -1,0 +1,29 @@
+name: Activeloop
+description: A multimodal data runtime for AI that provides a serverless data lake with vector storage, enabling scalable retrieval, training data management, and agent memory across text, images, video, and audio.
+tagline: Serverless data lake with vector search for AI applications
+
+github_url: https://github.com/activeloopai/deeplake
+website_url: https://www.activeloop.ai
+docs_url: https://docs.activeloop.ai
+
+category: Data
+tags: [data-lake, vector-database, embeddings, computer-vision, nlp, python, data-pipeline]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install deeplake
+
+problem_solved: |
+  AI applications need to store, version, query, and stream multimodal training and inference
+  data — text, images, video, embeddings — but traditional databases and object stores lack
+  the integration needed for modern AI pipelines. Activeloop's DeepLake provides a unified
+  data runtime that combines a vector store for RAG, a data lake for versioned datasets, and
+  streaming to GPUs, all with a simple Python API that works like a dictionary.
+
+use_cases:
+  - Store and query large-scale vector embeddings for RAG applications
+  - Manage versioned training datasets for computer vision and NLP models
+  - Build agent memory systems with multimodal data (text, images, video)
+  - Stream training data directly to GPU memory without local disk staging
+  - Create hybrid search pipelines combining vector similarity with metadata filtering
