@@ -1,0 +1,27 @@
+name: GFPGAN
+description: A practical face restoration algorithm that uses generative prior-based approaches to restore old photos, low-resolution faces, and degraded images with realistic high-quality results.
+tagline: Real-world face restoration using generative priors
+
+github_url: https://github.com/TencentARC/GFPGAN
+website_url: https://github.com/TencentARC/GFPGAN
+install_command: pip install gfpgan
+
+category: Other
+tags: [face-restoration, image-enhancement, generative-ai, computer-vision, python]
+pricing: free
+is_open_source: true
+
+problem_solved: |
+  Restoring old or degraded face photos traditionally produces fake-looking, artifact-ridden
+  results because most restoration models generate details from scratch rather than leveraging
+  realistic face priors. GFPGAN (Generative Facial Prior GAN) pre-trains a GAN on high-quality
+  face datasets and uses it as a prior to guide restoration, preserving the original identity
+  and expression while enhancing resolution, correcting lighting, and removing artifacts. It
+  handles low-resolution, blurry, over-exposed, and heavily compressed face images that
+  conventional enhancement methods fail to restore convincingly.
+
+use_cases:
+  - Restore old family photos by enhancing low-resolution and damaged face regions with realistic detail
+  - Improve face image quality in video conference recordings and surveillance footage for forensic analysis
+  - Enhance AI-generated face images by fixing common artifacts like asymmetric eyes and distorted features
+  - Batch-process face images in archival digitization workflows to restore historical photographs

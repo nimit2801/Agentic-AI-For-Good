@@ -1,0 +1,27 @@
+name: InsightFace
+description: A state-of-the-art 2D and 3D face analysis library providing face detection, facial landmark localization, face recognition, age and gender estimation, and face swapping with deep learning models.
+tagline: Advanced face analysis toolkit for detection, recognition, and reconstruction
+
+github_url: https://github.com/deepinsight/insightface
+website_url: https://insightface.ai
+install_command: pip install insightface
+
+category: Other
+tags: [face-recognition, face-detection, computer-vision, deep-learning, python]
+pricing: free
+is_open_source: true
+
+problem_solved: |
+  Building production face analysis pipelines requires coordinating multiple specialized models
+  — face detection, alignment, recognition, attribute estimation — each with different
+  frameworks, input formats, and output schemas. InsightFace bundles state-of-the-art face
+  models (RetinaFace for detection, ArcFace for recognition, 3DDFA for 3D reconstruction) into
+  a single Python library with a unified API. It supports both 2D alignment and 3D mesh
+  reconstruction from single images, enabling applications from access control to animated
+  avatars without assembling a pipeline from scratch.
+
+use_cases:
+  - Detect and align faces in images and video streams with high-accuracy RetinaFace detection models
+  - Recognize and verify identities using ArcFace embedding models with millions of registered faces
+  - Estimate age, gender, and facial attributes from single images for demographic analysis
+  - Reconstruct 3D face meshes from 2D images for AR/VR avatar generation and animation

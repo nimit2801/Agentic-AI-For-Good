@@ -1,0 +1,27 @@
+name: Autoflow
+description: An open-source Graph RAG-based knowledge base tool that combines vector search, knowledge graphs, and DSPy optimization to deliver conversational search with cited sources, built on TiDB Serverless Vector Storage.
+tagline: Graph RAG knowledge base with conversational search and citations
+
+github_url: https://github.com/pingcap/autoflow
+website_url: https://tidb.ai
+install_command: docker compose up
+
+category: RAG
+tags: [rag, knowledge-graph, graphrag, vector-search, conversational, dspy]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Standard RAG pipelines retrieve flat chunks of text based on embedding similarity, missing
+  the relationships between entities, documents, and concepts that give context to answers.
+  Autoflow builds a knowledge graph from ingested documents using LLM-extracted entities and
+  relations, then uses Graph RAG — combining graph traversal with vector search — to answer
+  questions with context-aware citations. It integrates DSPy for automatic optimization of
+  retrieval and generation prompts, producing higher-quality answers than flat retrieval alone.
+
+use_cases:
+  - Build a knowledge base that answers questions with citations sourced from a graph of interconnected documents
+  - Create a conversational search engine for internal documentation with entity-aware context and follow-up support
+  - Deploy a Perplexity-style internal search tool that crawls websites and builds a queryable knowledge graph
+  - Optimize RAG pipelines automatically with DSPy-driven prompt tuning for better retrieval and generation quality
