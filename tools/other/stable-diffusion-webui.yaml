@@ -1,0 +1,29 @@
+name: Stable Diffusion WebUI
+description: The most popular open-source web interface for Stable Diffusion image generation, offering txt2img, img2img, inpainting, ControlNet, LoRA, and a rich extension ecosystem for advanced AI image workflows.
+tagline: The definitive web UI for Stable Diffusion with extensible plugin ecosystem
+
+github_url: https://github.com/AUTOMATIC1111/stable-diffusion-webui
+website_url: https://github.com/AUTOMATIC1111/stable-diffusion-webui
+install_command: |
+  git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui
+  cd stable-diffusion-webui && ./webui.sh
+
+category: Other
+tags: [image-generation, stable-diffusion, web-ui, ai-art, gpu, inpainting, controlnet]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Running Stable Diffusion models requires managing model weights, GPU memory, prompt engineering,
+  and complex pipelines like inpainting, upscaling, and ControlNet — all from the command line.
+  AUTOMATIC1111's WebUI wraps the entire Stable Diffusion ecosystem into a browser interface
+  accessible to both beginners and advanced users. It handles model swapping, LoRA loading,
+  prompt scheduling, and extension management, turning a fragmented set of Python scripts into
+  a cohesive image generation platform.
+
+use_cases:
+  - Generate high-quality images from text prompts with fine-grained control over sampling methods and CFG scale
+  - Edit existing images using inpainting, outpainting, and img2img workflows with mask-based region selection
+  - Apply ControlNet for pose-guided generation, depth-aware rendering, and edge-conditioned image synthesis
+  - Use LoRA and Hypernetwork models to apply specific styles, characters, or aesthetic preferences to generations
