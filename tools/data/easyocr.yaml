@@ -1,0 +1,30 @@
+name: EasyOCR
+description: A ready-to-use OCR library supporting 80+ languages with both a deep learning model pipeline and a simple API. Built on PyTorch, it works out of the box without separate model downloads.
+tagline: Ready-to-use OCR with 80+ language support
+
+github_url: https://github.com/JaidedAI/EasyOCR
+website_url: https://www.jaided.ai/easyocr
+docs_url: https://www.jaided.ai/easyocr/documentation
+
+install_command: pip install easyocr
+
+category: Data
+tags: [python, ocr, optical-character-recognition, deep-learning, pytorch, text-extraction]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Extracting text from images, scanned documents, and screenshots typically requires
+  assembling a pipeline of text detection, recognition, and post-processing models
+  — each with its own dependencies, weights, and tuning. EasyOCR packages a complete
+  OCR pipeline (text detection via CRAFT + text recognition via CRNN) as a single
+  Python package with a four-line API that works across 80+ languages, including
+  Chinese, Japanese, Korean, and Arabic scripts.
+
+use_cases:
+  - Extract text from scanned PDFs and invoices for document processing pipelines
+  - Recognize text in photos and screenshots for content analysis and archiving
+  - Build receipt scanning and expense tracking applications with multilingual support
+  - Process video frames to extract on-screen text for content moderation or indexing
+  - Enable search over image-based documents by extracting and indexing their text content

@@ -1,0 +1,30 @@
+name: AWQ
+description: An efficient post-training quantization method and inference framework for LLMs that compresses weights to 4-bit with minimal accuracy loss while delivering fast and memory-efficient inference on GPUs and CPUs.
+tagline: 4-bit quantization for LLMs with hardware-efficient inference
+
+github_url: https://github.com/mit-han-lab/llm-awq
+website_url: https://llm-awq.github.io
+docs_url: https://github.com/mit-han-lab/llm-awq
+
+install_command: pip install awq
+
+category: Fine-tuning
+tags: [python, quantization, llm, inference-optimization, model-compression, gpu]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Running large language models requires expensive GPUs with high memory capacity —
+  a 70B parameter model needs over 140GB in FP16, putting it out of reach for most
+  teams and deployments. AWQ (Activation-aware Weight Quantization) compresses LLM
+  weights to 4-bit integers while preserving accuracy, reducing memory footprint by
+  3-4x. Unlike generic quantization, AWQ protects the small fraction of weights that
+  are critical for model quality by analyzing activation patterns.
+
+use_cases:
+  - Deploy 70B parameter models on a single GPU using 4-bit quantization without accuracy loss
+  - Run LLM inference on consumer GPUs with lower memory requirements for local development
+  - Quantize models for edge deployment where memory and power are constrained
+  - Integrate with vLLM and TGI serving frameworks for production-quantized inference
+  - Reduce inference costs by fitting larger models on fewer GPUs in cloud deployments
