@@ -1,0 +1,36 @@
+name: PyMuPDF
+description: A high-performance Python library for PDF, XPS, EPUB, and other document format rendering and text extraction. PyMuPDF (MuPDF bindings) is widely used for extracting clean text from PDFs for LLM document ingestion pipelines.
+tagline: Fast Python PDF processing and text extraction
+
+github_url: https://github.com/pymupdf/PyMuPDF
+website_url: https://pymupdf.readthedocs.io
+docs_url: https://pymupdf.readthedocs.io
+
+install_command: pip install pymupdf
+
+category: Data
+tags:
+  - pdf
+  - document-processing
+  - text-extraction
+  - python
+  - ocr
+  - data-pipeline
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  LLM document processing pipelines need to extract clean, structured text from PDFs, but most
+  PDF libraries are either slow (PyPDF2, pdfminer) or produce garbled output with merged columns,
+  missing headings, and lost formatting. PyMuPDF is one of the fastest and most accurate PDF text
+  extraction libraries available, handling complex layouts, tables, images, annotations, and forms
+  with sub-millisecond page rendering. It is the de facto standard for production PDF ingestion
+  into RAG pipelines and document AI workflows.
+
+use_cases:
+  - Extract clean text from PDF invoices, contracts, and reports for RAG document ingestion
+  - Parse academic papers and technical documents with complex multi-column layouts
+  - Build document preprocessing pipelines that extract images, tables, and metadata from PDFs
+  - Convert scanned PDF pages to images for downstream OCR processing with Tesseract or EasyOCR
+  - Render PDF pages for visual document analysis and annotation in AI-powered document review

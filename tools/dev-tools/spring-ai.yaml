@@ -1,0 +1,35 @@
+name: Spring AI
+description: A Java framework from the Spring team for building AI-powered applications with portable API abstractions across LLMs, vector stores, and document processing tools.
+tagline: Build AI applications with Spring Boot and Java
+
+github_url: https://github.com/spring-projects/spring-ai
+website_url: https://spring.io/projects/spring-ai
+docs_url: https://docs.spring.io/spring-ai/reference/
+
+category: Dev Tools
+tags:
+  - java
+  - spring
+  - ai
+  - framework
+  - enterprise
+  - llm
+  - vector-database
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Java developers integrating AI into enterprise applications face a fragmented ecosystem of LLM
+  providers, vector stores, and embedding models — each with different APIs, authentication, and
+  configuration. Spring AI provides a consistent, portable abstraction layer similar to Spring's
+  JDBC and ORM templates. Developers declare a dependency on an AI provider, configure a chat
+  client bean, and use a unified API to call OpenAI, Anthropic, Ollama, or any supported provider
+  without changing application code. This is essential infrastructure for Java-based AI services.
+
+use_cases:
+  - Build a Java REST API that queries different LLMs (OpenAI, Anthropic, Ollama) with a single abstraction
+  - Implement RAG pipelines in Spring Boot applications using vector store templates for Chroma, Pinecone, or Weaviate
+  - Create enterprise document processing workflows that extract, embed, and index documents for semantic search
+  - Develop conversational AI agents with tool calling and memory persistence in a Spring Boot microservice
+  - Integrate AI-powered features into existing Java enterprise applications without replacing the tech stack

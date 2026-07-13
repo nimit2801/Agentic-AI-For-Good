@@ -1,0 +1,37 @@
+name: DocArray
+description: A library from Jina AI for representing, sending, storing, and retrieving multimodal data — text, image, video, audio, 3D mesh — for AI applications. DocArray provides typed data structures optimized for neural search and vector search pipelines.
+tagline: Multimodal AI data structures for vector search and neural search
+
+github_url: https://github.com/docarray/docarray
+website_url: https://docarray.jina.ai
+docs_url: https://docs.docarray.org
+
+install_command: pip install docarray
+
+category: Data
+tags:
+  - multimodal
+  - data-structures
+  - python
+  - embeddings
+  - vector-search
+  - neural-search
+  - jina
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AI applications work with diverse data types — text, images, audio, video, 3D meshes — but
+  standard Python data structures (dicts, lists, dataclasses) don't capture the rich relationships
+  between modalities or serialize efficiently to formats compatible with vector databases and search
+  engines. DocArray provides typed, composable document data structures with built-in embedding
+  support, chunking, serialization to JSON/Protobuf, and first-class integration with vector
+  databases like Qdrant, Elasticsearch, and Weaviate.
+
+use_cases:
+  - Represent multimodal documents with text, images, and embeddings in a single typed data structure
+  - Build neural search pipelines that encode, index, and retrieve across text, image, and audio data
+  - Chunk and preprocess long documents for RAG while preserving document structure and metadata
+  - Serialize AI pipeline intermediates to Protobuf for high-performance inter-service communication
+  - Integrate with vector databases directly through DocArray's built-in storage backends
