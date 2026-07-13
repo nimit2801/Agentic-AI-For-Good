@@ -1,0 +1,25 @@
+name: EdgeDB
+description: |
+  EdgeDB (now Gel) is an open-source graph-relational database built on PostgreSQL. It combines relational databases, graph databases, and ORM capabilities with EdgeQL — a modern query language. Since v3.0, it natively supports pgvector for vector similarity search, making it a unified platform for structured data, graph relationships, and AI embeddings.
+tagline: Graph-relational database with pgvector for AI workloads
+
+github_url: https://github.com/geldata/gel
+website_url: https://www.geldata.com
+docs_url: https://docs.geldata.com
+
+category: Vector DB
+tags: [graph-relational, vector-database, postgresql, pgvector, embeddings, semantic-search, edgeql, gel]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Traditional databases lack native vector search, forcing developers to run a separate vector database alongside their primary store. EdgeDB solves this by integrating pgvector directly into a graph-relational database on PostgreSQL, letting teams store structured data, relationships, and AI embeddings together with a single query language — eliminating data silos and reducing operational complexity for AI applications.
+
+use_cases:
+  - Store document chunk embeddings and perform semantic similarity search to retrieve relevant context for RAG pipelines within the same database as application data
+  - Build search engines that understand meaning using cosine similarity and pgvector indexes on product descriptions or knowledge bases
+  - Persist AI agent conversation history, tool outputs, and contextual state as vector embeddings for long-term memory and retrieval-augmented reasoning
+  - Find similar items via vector distance queries while combining graph relationships with embedding similarity for hybrid recommendations
+
+install_command: pip install gel

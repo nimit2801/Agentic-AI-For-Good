@@ -1,0 +1,25 @@
+name: MergeKit
+description: |
+  MergeKit is a toolkit for merging pre-trained large language models using an out-of-core approach. It supports linear merging, SLERP, TIES, DARE, DARE-TIES, Model Soups, Task Arithmetic, MoE merging, Arcee Fusion, and evolutionary optimization — all configured via YAML. Merges run on CPU or as little as 8GB of VRAM, and the resulting merged models retain single-model inference cost.
+tagline: Toolkit for merging pre-trained language models
+
+github_url: https://github.com/arcee-ai/mergekit
+website_url: https://github.com/arcee-ai/mergekit
+docs_url: https://docs.arcee.ai/merging/mergekit
+
+category: Fine-tuning
+tags: [llm, model-merging, fine-tuning, pytorch, transformers, slerp, ties, dare]
+pricing: free
+is_open_source: true
+license: LGPL-3.0
+
+problem_solved: |
+  Combining the strengths of multiple pre-trained LLMs — one strong at code, another at reasoning, a third at instruction following — traditionally requires expensive retraining or large GPU clusters. MergeKit solves this with an out-of-core merging approach that lets practitioners compose models on CPU or modest GPUs, democratizing access to advanced model composition techniques like TIES, DARE, and evolutionary optimization.
+
+use_cases:
+  - Combine multiple domain-specialized fine-tunes (code, math, instruction) into a single model without retraining
+  - Merge top-performing open-source checkpoints from leaderboards to create state-of-the-art models
+  - Replace an ensemble of models with a single merged model at equivalent quality but lower inference cost
+  - Automatically discover optimal merge recipes via evolutionary optimization (mergekit-evolve)
+
+install_command: pip install mergekit
