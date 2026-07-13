@@ -1,0 +1,31 @@
+name: TiDB
+description: A distributed SQL database with built-in vector search that provides ACID transactions, horizontal scalability, and MySQL-compatibility for transactional, analytical, and AI workloads in a single database.
+tagline: Distributed SQL database with vector search for AI workloads
+
+github_url: https://github.com/pingcap/tidb
+website_url: https://tidbcloud.com
+docs_url: https://docs.pingcap.com/tidb/stable
+install_command: |
+  curl --proto '=https' --tlsv1.2 -sSf https://tiup.io/install.sh | sh
+  tiup playground
+
+category: Vector DB
+tags: [database, sql, vector-search, distributed, new-sql, mysql-compatible]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Modern AI applications need a database that handles transactional writes, analytical queries,
+  and vector similarity search — typically requiring separate systems for each workload, with
+  complex data movement between them. TiDB is a distributed SQL database that natively supports
+  vector embeddings with HNSW indexing alongside standard SQL operations and ACID transactions.
+  Teams building RAG pipelines or AI agents can store application data, user profiles, and
+  embeddings in a single MySQL-compatible database that scales horizontally without application
+  changes.
+
+use_cases:
+  - Store application data and vector embeddings in a single SQL database for RAG pipelines and AI agents
+  - Run hybrid search queries that combine vector similarity with SQL filters, joins, and aggregations
+  - Scale a transactional database horizontally for AI workloads without sharding or application rewrites
+  - Replace separate OLTP and vector databases with one system for AI-powered applications
