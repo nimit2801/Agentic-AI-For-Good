@@ -1,0 +1,29 @@
+name: Rasa
+description: An open-source conversational AI framework for building text and voice-based chatbots with NLU, dialogue management, and integrations with messaging platforms like Slack, Facebook Messenger, and Telegram.
+tagline: Open-source framework for contextual AI assistants and chatbots
+
+github_url: https://github.com/RasaHQ/rasa
+website_url: https://rasa.com
+docs_url: https://rasa.com/docs/rasa
+install_command: pip install rasa
+
+category: Agents
+tags: [conversational-ai, nlu, chatbot, dialogue-management, nlp, python]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Building a production chatbot requires connecting intent classification, entity extraction,
+  dialogue management, and channel integrations — each typically a separate service with
+  different APIs and deployment models. Rasa provides an all-in-one framework where intent
+  recognition is trained from example conversations, dialogue policies are configurable as
+  stories or rules, and the output integrates with Slack, Facebook, Telegram, and custom
+  channels. The entire system runs on-premise or in a private cloud, giving enterprises full
+  control over conversational data.
+
+use_cases:
+  - Build a customer service chatbot that handles returns, refunds, and order tracking through natural conversation
+  - Create a sales qualification bot that collects lead information and routes qualified prospects to the right team
+  - Deploy a multilingual FAQ assistant trained on product documentation with fallback to human handoff
+  - Develop a workflow automation bot that books appointments, reschedules meetings, and sends reminders via messaging

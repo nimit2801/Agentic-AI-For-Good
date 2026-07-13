@@ -1,0 +1,29 @@
+name: Spark NLP
+description: A state-of-the-art natural language processing library built on Apache Spark that provides production-grade NLP pipelines including named entity recognition, sentiment analysis, text classification, and question answering at scale.
+tagline: Enterprise NLP at scale on Apache Spark with pre-trained pipelines
+
+github_url: https://github.com/JohnSnowLabs/spark-nlp
+website_url: https://sparknlp.org
+docs_url: https://sparknlp.org/docs
+install_command: pip install spark-nlp
+
+category: RAG
+tags: [nlp, spark, big-data, natural-language, entity-recognition, classification]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Processing natural language at enterprise scale typically means stitching together separate
+  libraries for tokenization, NER, sentiment, and embeddings — none of which are designed for
+  distributed execution on large datasets. Spark NLP provides a unified library that runs on
+  Apache Spark clusters, offering 30,000+ pre-trained pipelines and models for tasks like named
+  entity recognition, text classification, question answering, and text generation. It scales
+  from a single node to hundreds of worker nodes without code changes, making it suitable for
+  processing millions of documents in production.
+
+use_cases:
+  - Extract named entities like people, organizations, and locations from millions of documents on a Spark cluster
+  - Build text classification pipelines for sentiment analysis, spam detection, or content moderation at scale
+  - Deploy question-answering models over enterprise document repositories using distributed inference
+  - Create multilingual NLP pipelines that process documents in 200+ languages with pre-trained embeddings
