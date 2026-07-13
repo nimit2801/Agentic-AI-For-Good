@@ -1,0 +1,30 @@
+name: Oobabooga
+description: An open-source desktop application for running large language models locally with a Gradio web interface. Supports text generation, vision, tool calling, and an OpenAI/Anthropic-compatible API server — all fully private.
+tagline: Self-hosted LLM interface with vision, tools, and an API server
+
+github_url: https://github.com/oobabooga/text-generation-webui
+website_url: https://github.com/oobabooga/text-generation-webui
+install_command: |
+  conda create -n textgen python=3.11
+  conda activate textgen
+  pip install -r requirements.txt
+
+category: LLM
+tags: [llm, web-ui, text-generation, local, gpu, inference, python]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Running large language models locally is technically demanding — users must manage model
+  downloads, GPU memory allocation, quantization settings, and API compatibility across dozens of
+  model architectures. Oobabooga provides a graphical interface that handles model loading,
+  quantization (GPTQ, AWQ, GGUF), multi-GPU splitting, and LoRA adapters out of the box. It also
+  exposes an OpenAI-compatible API so local models can replace cloud endpoints transparently in
+  existing applications.
+
+use_cases:
+  - Run open-source LLMs locally for private text generation without sending data to external APIs
+  - Use vision-capable LLMs to analyze images entirely on-device without cloud dependencies
+  - Create a drop-in replacement for OpenAI API endpoints using local models with tool-calling support
+  - Experiment with different quantization methods and LoRA adapters to optimize model performance for specific hardware
