@@ -1,0 +1,30 @@
+name: Soda
+description: An open-source data quality and data observability platform that enables teams to define, monitor, and enforce data contracts through automated checks, anomaly detection, and CI/CD integration.
+tagline: Data quality monitoring and observability for modern data stacks
+
+github_url: https://github.com/sodadata/soda-core
+website_url: https://www.soda.io
+docs_url: https://docs.soda.io
+
+install_command: pip install soda-core
+
+category: Data
+tags: [python, data-quality, data-observability, data-testing, data-monitoring, data-contracts, dbt]
+pricing: freemium
+is_open_source: true
+license: NOASSERTION
+
+problem_solved: |
+  Data quality issues — missing values, schema changes, referential integrity violations,
+  and distribution shifts — silently propagate from source systems into analytics and ML
+  pipelines, producing unreliable results that erode trust. Soda allows data teams to
+  define data quality checks as code, run them on schedules or in CI/CD pipelines, and
+  get alerts when data falls outside expected parameters. It integrates with dbt,
+  Airflow, and modern data stacks for automated data observability.
+
+use_cases:
+  - Define freshness, completeness, and accuracy checks on source tables and SQL views
+  - Run data quality checks in your CI/CD pipeline to prevent bad data from reaching production
+  - Monitor for schema drift and anomalous row counts in production data warehouses
+  - Integrate with dbt to automatically test every model after materialization
+  - Set up Slack alerts for data quality failures detected during nightly Soda scans
