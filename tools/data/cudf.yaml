@@ -1,0 +1,41 @@
+name: cuDF
+description: >-
+  cuDF is a GPU DataFrame library for loading, joining, aggregating, filtering, and manipulating
+  tabular data at GPU speeds. It provides a pandas-like API powered by the RAPIDS ecosystem,
+  delivering 10–50x speedups on ETL, data preparation, and feature engineering pipelines by
+  executing operations on NVIDIA GPUs instead of CPU cores.
+tagline: GPU-accelerated DataFrame library with a pandas-like API
+
+github_url: https://github.com/rapidsai/cudf
+website_url: https://rapids.ai
+docs_url: https://docs.rapids.ai/api/cudf/stable
+install_command: pip install cudf-cu12
+
+category: Data
+tags:
+  - gpu
+  - dataframe
+  - pandas
+  - rapids
+  - data-processing
+  - etl
+  - nvidia
+  - parallel
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  Data processing and feature engineering on large datasets is bottlenecked by CPU parallelism
+  limits — pandas operations on multi-gigabyte DataFrames take minutes or hours, and scaling to
+  clusters adds operational complexity. cuDF solves this by reimplementing the pandas API on GPU
+  hardware, executing operations in parallel across thousands of CUDA cores so that common data
+  transformations — joins, group-bys, filters, and aggregations — run 10–50x faster without
+  requiring changes to existing pandas code or cluster infrastructure.
+
+use_cases:
+  - Accelerate ETL and data preparation pipelines by 10–50x with GPU-parallel DataFrame operations
+  - Run pandas-compatible joins, group-bys, and aggregations on large datasets using a single GPU
+  - Preprocess and feature-engineer training data for ML pipelines with GPU-accelerated transformations
+  - Process real-time streaming features and batch data at GPU speed for downstream model training
+  - Replace CPU-bound data wrangling in ML pipelines with drop-in GPU-accelerated DataFrame operations
