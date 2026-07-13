@@ -1,0 +1,29 @@
+name: DataHub
+description: An open-source metadata platform for the modern data stack that enables data discovery, data lineage, data governance, and observability across your organization's data pipelines and AI infrastructure.
+tagline: Open-source data catalog for discovery, lineage, and governance
+
+github_url: https://github.com/datahub-project/datahub
+website_url: https://datahubproject.io
+docs_url: https://datahubproject.io/docs
+install_command: pip install acryl-datahub
+
+category: Data
+tags: [data-catalog, metadata, lineage, governance, data-discovery, data-pipeline]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  As organizations scale their data and AI infrastructure, teams lose track of what datasets
+  exist, where they come from, how they're transformed, and who owns them — leading to
+  duplicated efforts, untrustworthy data, and compliance gaps. DataHub provides a unified
+  metadata platform that automatically ingests schemas, profiles, lineage, and ownership from
+  data warehouses, lakes, BI tools, and ML pipelines. Engineers and analysts can search for
+  datasets, trace column-level lineage upstream to source systems and downstream to dashboards,
+  and enforce data ownership policies.
+
+use_cases:
+  - Discover available datasets across the organization with search filters by source, owner, and data domain
+  - Trace column-level lineage from a dashboard metric back through transformations to the source database
+  - Enforce data governance by documenting ownership, classification, and deprecation status for every dataset
+  - Monitor pipeline health with observability hooks that flag schema changes, data quality issues, and staleness
