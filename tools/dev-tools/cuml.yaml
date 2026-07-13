@@ -1,0 +1,40 @@
+name: cuML
+description: >-
+  cuML is a suite of GPU-accelerated machine learning algorithms that implements scikit-learn-like
+  APIs for training and inference on NVIDIA GPUs. It covers classification, regression, clustering,
+  dimensionality reduction, and feature engineering — delivering 10–50x speedups over CPU-based
+  implementations by leveraging the RAPIDS ecosystem and CUDA-optimized primitives.
+tagline: GPU-accelerated ML algorithms with scikit-learn-compatible APIs
+
+github_url: https://github.com/rapidsai/cuml
+website_url: https://rapids.ai
+docs_url: https://docs.rapids.ai/api/cuml/stable
+install_command: pip install cuml-cu12
+
+category: Dev Tools
+tags:
+  - gpu
+  - machine-learning
+  - scikit-learn
+  - rapids
+  - training
+  - inference
+  - nvidia
+  - parallel
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  Traditional ML libraries like scikit-learn are CPU-bound, limiting training and inference speed
+  on large datasets even with multi-core processors. cuML eliminates this bottleneck by porting
+  the most common ML algorithms — random forests, gradient boosting, PCA, UMAP, KNN, and linear
+  models — to run on NVIDIA GPUs with a familiar, scikit-learn-compatible API so data scientists
+  get GPU-speed training and inference without learning new frameworks or rewriting their pipelines.
+
+use_cases:
+  - Train random forest and gradient boosting models on large datasets at GPU speed instead of CPU-bound scikit-learn
+  - Accelerate dimensionality reduction (PCA, UMAP, t-SNE) and clustering (DBSCAN, K-Means) on GPU hardware
+  - Run GPU-powered nearest neighbor search and similarity matching in real-time ML inference pipelines
+  - Replace CPU-based feature engineering with GPU-parallel transformations for faster experimentation
+  - Build end-to-end GPU-accelerated ML training pipelines that keep data on-GPU across preprocessing and modeling

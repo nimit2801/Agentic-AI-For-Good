@@ -1,0 +1,41 @@
+name: cuGraph
+description: >-
+  cuGraph is a GPU-accelerated graph analytics library that provides a NetworkX-compatible API for
+  analyzing large-scale graphs — centrality, community detection, pathfinding, and clustering — at
+  GPU speeds. Built on RAPIDS, it scales to graphs with billions of edges on a single GPU by
+  parallelizing graph algorithms across thousands of CUDA cores.
+tagline: GPU-accelerated graph analytics with a NetworkX-compatible API
+
+github_url: https://github.com/rapidsai/cugraph
+website_url: https://rapids.ai
+docs_url: https://docs.rapids.ai/api/cugraph/stable
+install_command: pip install cugraph-cu12
+
+category: Other
+tags:
+  - gpu
+  - graph-analytics
+  - networkx
+  - rapids
+  - graph
+  - nvidia
+  - parallel
+  - graph-algorithms
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  Graph analytics workloads on real-world graphs — social networks, knowledge graphs, fraud
+  networks, and infrastructure topologies — are computationally intensive and quickly exceed the
+  capacity of CPU-based libraries like NetworkX. cuGraph solves this by reimplementing graph
+  algorithms (PageRank, Louvain community detection, betweenness centrality, BFS, and SSSP) on
+  GPU hardware, enabling analysts and data scientists to run graph computations on billion-edge
+  graphs in seconds instead of hours without changing their high-level API patterns.
+
+use_cases:
+  - Run PageRank, centrality, and community detection on billion-edge knowledge graphs at GPU speeds
+  - Detect fraud rings and anomalous connection patterns in large-scale transaction networks in real time
+  - Analyze social network graphs and recommendation system graphs with GPU-accelerated pathfinding
+  - Perform large-scale graph clustering and partitioning for distributed ML training and data pipelines
+  - Compute shortest paths and connectivity in infrastructure and logistics networks at interactive speeds
