@@ -1,0 +1,35 @@
+name: Tesseract
+description: An open-source OCR engine that extracts text from images and scanned documents with high accuracy. Tesseract powers document intelligence pipelines for RAG, data extraction, and document processing workflows across 100+ languages.
+tagline: Industry-standard open-source OCR engine for text extraction from images
+
+github_url: https://github.com/tesseract-ocr/tesseract
+website_url: https://github.com/tesseract-ocr/tesseract
+docs_url: https://tesseract-ocr.github.io/tessdoc/
+
+install_command: brew install tesseract
+
+category: Data
+tags:
+  - ocr
+  - document-processing
+  - text-extraction
+  - computer-vision
+  - python
+  - data-pipeline
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Scanned PDFs, images, and handwritten documents are invisible to search engines, LLMs, and text
+  processing pipelines. Without OCR, every scanned document must be manually transcribed or skipped
+  entirely — a massive bottleneck for document-heavy AI workflows. Tesseract converts rasterized
+  text into machine-readable strings with layout analysis, supporting 100+ languages and output
+  formats including plain text, hOCR, PDF with text layer, and ALTO XML.
+
+use_cases:
+  - Extract text from scanned PDFs and invoices for RAG document ingestion pipelines
+  - Automate receipt and business card scanning for expense management systems
+  - Build document digitization workflows for archival and compliance applications
+  - Enable screen reader and accessibility features through image-to-text conversion
+  - Preprocess document images for downstream LLM-based information extraction
