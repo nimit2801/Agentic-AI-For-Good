@@ -1,0 +1,41 @@
+name: SeaweedFS
+description: >-
+  SeaweedFS is a simple, highly scalable distributed file system optimized for storing and serving
+  billions of files with O(1) disk seek per read. It implements an S3-compatible API, supports
+  erasure coding, tiered storage, and automatic replication — making it a popular choice for AI
+  data pipelines, model artifact storage, and large-scale blob storage that needs to outgrow
+  single-node filesystems without the complexity of HDFS or Ceph.
+tagline: Simple, scalable distributed file system for billions of files
+
+github_url: https://github.com/seaweedfs/seaweedfs
+website_url: https://seaweedfs.github.io
+docs_url: https://github.com/seaweedfs/seaweedfs/wiki
+install_command: docker run --name seaweedfs -p 9333:9333 -p 8081:8081 chrislusf/seaweedfs server
+
+category: Data
+tags:
+  - distributed-storage
+  - file-system
+  - s3-compatible
+  - blob-storage
+  - object-storage
+  - erasure-coding
+  - data-pipeline
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  AI and data engineering teams need to store, retrieve, and replicate billions of files — model
+  checkpoints, training datasets, embeddings, logs — across multiple machines. Traditional POSIX
+  filesystems hit capacity and throughput limits, while full-blown distributed systems like HDFS
+  introduce heavy operational overhead. SeaweedFS fills the gap with a lightweight distributed
+  file system that delivers O(1) disk seek for reads, scales horizontally across commodity hardware,
+  and exposes an S3-compatible API for seamless tool integration.
+
+use_cases:
+  - Store and serve billions of model checkpoints and training artifacts across a distributed GPU cluster
+  - Host large-scale embedding stores and vector index snapshots with S3-compatible blob access
+  - Build petabyte-scale data lake backends for AI training pipelines with erasure-coded redundancy
+  - Serve as a high-throughput content store for data processing and feature engineering workflows
+  - Replace single-node filesystem storage in multi-node inference serving and batch processing deployments

@@ -1,0 +1,41 @@
+name: Horovod
+description: >-
+  Horovod is a distributed deep learning training framework that makes it easy to scale training
+  from a single GPU to hundreds of GPUs across multiple machines with minimal code changes. It
+  supports TensorFlow, PyTorch, JAX, and Apache MXNet with a high-performance allreduce
+  implementation that delivers near-linear scaling for large model training workloads.
+tagline: Distributed deep learning training with minimal code changes
+
+github_url: https://github.com/horovod/horovod
+website_url: https://horovod.ai
+docs_url: https://horovod.readthedocs.io
+install_command: pip install horovod
+
+category: Fine-tuning
+tags:
+  - distributed-training
+  - deep-learning
+  - tensorflow
+  - pytorch
+  - allreduce
+  - gpu
+  - multi-gpu
+  - training
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  Training large deep learning models requires distributing computation across multiple GPUs and
+  machines, but distributed training frameworks historically require significant code changes and
+  deep understanding of distributed systems. Horovod abstracts away the complexity of distributed
+  training with a simple, Ring-AllReduce-based approach that works with major deep learning
+  frameworks. Developers add just a few lines of code to scale training from one GPU to hundreds,
+  achieving near-linear speedup without rewriting their training loops.
+
+use_cases:
+  - Scale large model training from a single GPU to multi-node GPU clusters with minimal code changes
+  - Accelerate fine-tuning of LLMs and vision transformers across distributed GPU hardware
+  - Run distributed hyperparameter search and training experiments across multiple workers simultaneously
+  - Train ensemble models and perform multi-GPU transfer learning for production AI pipelines
+  - Enable elastic distributed training that scales and adjusts to available GPU resources dynamically
