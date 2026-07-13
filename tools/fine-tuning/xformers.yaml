@@ -1,0 +1,36 @@
+name: XFormers
+description: A PyTorch library by Meta with memory-efficient, performant Transformer building blocks. XFormers provides optimized attention mechanisms — FlashAttention, memory-efficient attention, and sparse attention — that drastically reduce GPU memory usage during training and inference.
+tagline: Memory-efficient Transformer primitives for PyTorch
+
+github_url: https://github.com/facebookresearch/xformers
+website_url: https://facebookresearch.github.io/xformers/
+docs_url: https://facebookresearch.github.io/xformers/
+
+install_command: pip install xformers
+
+category: Fine-tuning
+tags:
+  - pytorch
+  - transformers
+  - attention
+  - memory-optimization
+  - training
+  - inference
+  - flash-attention
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Training and inference with large Transformer models is bottlenecked by GPU memory. Standard
+  attention mechanisms scale quadratically with sequence length, making long-context training
+  prohibitively expensive. XFormers provides drop-in replacement attention blocks — FlashAttention,
+  memory-efficient attention, and sparse attention — that use sub-quadratic memory without
+  sacrificing quality. This is essential infrastructure for fine-tuning LLMs with long context.
+
+use_cases:
+  - Fine-tune large language models with long context windows using memory-efficient attention
+  - Accelerate transformer training on consumer GPUs with limited VRAM capacity
+  - Implement sparse attention patterns for efficient processing of long document sequences
+  - Build custom transformer architectures with optimized building blocks and components
+  - Reduce inference memory for deploying large models on resource-constrained hardware

@@ -1,0 +1,30 @@
+name: CTranslate2
+description: A fast inference engine for transformer models that optimizes for on-device deployment through int8 quantization, weights pruning, and hardware-aware scheduling on CPU and GPU.
+tagline: Fast transformer inference on CPU and GPU with quantization
+
+github_url: https://github.com/OpenNMT/CTranslate2
+website_url: https://opennmt.net/CTranslate2
+docs_url: https://opennmt.net/CTranslate2/guides/intro.html
+
+install_command: pip install ctranslate2
+
+category: LLM
+tags: [python, inference, transformer, quantization, cpu, gpu, optimizations]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Transformer inference on commodity hardware — especially CPUs — is often too slow
+  for real-time applications because the generic frameworks don't exploit hardware
+  features or model structure. CTranslate2 is a purpose-built inference engine that
+  applies int8 quantization, weights pruning, memory reuse, and hardware-aware
+  scheduling to deliver 2-4x speedups over general-purpose frameworks like
+  HuggingFace Transformers, with a smaller memory footprint.
+
+use_cases:
+  - Deploy transformer models for real-time translation, summarization, and generation on CPUs
+  - Run inference on edge devices and mobile hardware with limited compute and memory
+  - Integrate quantized transformer models into production pipelines for cost savings
+  - Accelerate batch inference for document processing with parallel decoding strategies
+  - Reduce latency for interactive applications by loading quantized models into shared memory
