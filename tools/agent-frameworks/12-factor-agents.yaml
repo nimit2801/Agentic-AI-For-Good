@@ -1,0 +1,27 @@
+name: 12 Factor Agents
+description: A methodology for building production-ready AI agents that are reliable, scalable, and maintainable — inspired by the 12 Factor App methodology, adapted for LLM-powered software systems.
+tagline: Principles for building production-grade LLM applications
+
+github_url: https://github.com/humanlayer/12-factor-agents
+website_url: https://12factoragents.com
+docs_url: https://github.com/humanlayer/12-factor-agents
+
+category: Agents
+tags: [methodology, best-practices, production, architecture, llm, agents]
+pricing: free
+is_open_source: true
+
+problem_solved: |
+  Building AI agents that work reliably in production requires more than connecting an LLM to a
+  tool — teams must handle observability, prompt versioning, error recovery, cost management,
+  security boundaries, and gradual rollout. Most agent frameworks provide building blocks but no
+  guidance on operational patterns. The 12 Factor Agents methodology codifies best practices for
+  production LLM applications: treating prompts as code, implementing observability by default,
+  designing for graceful degradation, managing context windows, and structuring agent
+  communication for auditability and debugging.
+
+use_cases:
+  - Adopt production-ready patterns for observability, prompt versioning, and error recovery in agent applications
+  - Design agent systems that gracefully degrade when LLM APIs fail or return low-confidence responses
+  - Structure multi-agent communication patterns for auditability, debugging, and cost tracking
+  - Apply gradual rollout and A/B testing strategies to agent behaviors without disrupting production users

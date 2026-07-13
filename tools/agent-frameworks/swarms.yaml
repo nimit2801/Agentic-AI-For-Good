@@ -1,0 +1,29 @@
+name: Swarms
+description: An enterprise-grade multi-agent orchestration framework for building, deploying, and scaling collaborative AI agent systems with production-ready features for reliability, monitoring, and cost optimization.
+tagline: Production-grade multi-agent orchestration framework
+
+github_url: https://github.com/kyegomez/swarms
+website_url: https://swarms.ai
+docs_url: https://docs.swarms.ai
+install_command: pip install swarms
+
+category: Agents
+tags: [agents, multi-agent, orchestration, python, production, scalable]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Building production multi-agent systems involves complex orchestration challenges: managing
+  agent lifecycles, inter-agent communication, concurrency control, error handling, and cost
+  tracking across potentially hundreds of workers. Swarms provides an enterprise orchestration
+  layer where agents are defined as modular components that can be composed into hierarchical
+  teams, each with its own tools, memory, and supervisor. The framework handles task scheduling,
+  retry logic, rate limiting, and observability out of the box, letting teams focus on agent
+  logic rather than orchestration infrastructure.
+
+use_cases:
+  - Orchestrate hundreds of specialized agents working in parallel on a complex multi-step task with supervisor coordination
+  - Build hierarchical agent teams where manager agents delegate sub-tasks to worker agents with different capabilities
+  - Deploy production agent systems with built-in monitoring, cost tracking, and automated retry on failure
+  - Create agent swarms that dynamically scale workers based on workload, with rate limiting and queue management
