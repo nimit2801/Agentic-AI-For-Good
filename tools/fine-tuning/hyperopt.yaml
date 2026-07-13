@@ -1,0 +1,36 @@
+name: Hyperopt
+description: A Python library for distributed hyperparameter optimization using Bayesian algorithms. Hyperopt supports tree-of-Parzen-estimators (TPE), random search, and adaptive TPE for tuning ML and LLM fine-tuning configurations efficiently.
+tagline: Distributed Bayesian hyperparameter optimization for ML training
+
+github_url: https://github.com/hyperopt/hyperopt
+website_url: http://hyperopt.github.io/hyperopt
+docs_url: http://hyperopt.github.io/hyperopt
+
+install_command: pip install hyperopt
+
+category: Fine-tuning
+tags:
+  - hyperparameter-optimization
+  - python
+  - bayesian-optimization
+  - machine-learning
+  - training
+  - distributed
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Fine-tuning LLMs and deep learning models requires extensive hyperparameter tuning — learning
+  rates, LoRA rank, batch sizes, optimizer settings — but brute-force grid search or random search
+  wastes expensive GPU hours and rarely finds optimal configurations. Hyperopt provides intelligent
+  Bayesian optimization algorithms (Tree-of-Parzen-Estimators, adaptive TPE) that converge to good
+  hyperparameters in far fewer trials. Its distributed execution engine scales across clusters and
+  supports early stopping to terminate unpromising trials automatically.
+
+use_cases:
+  - Tune LoRA learning rate, rank, and alpha parameters for LLM fine-tuning in fewer GPU hours
+  - Optimize training hyperparameters for distributed fine-tuning runs across multiple GPUs
+  - Automate hyperparameter search for model quantization and compression configurations
+  - Run parallel hyperparameter sweeps across a cluster with MongoDB-based trial coordination
+  - Combine with early stopping algorithms to terminate underperforming trials and save compute

@@ -1,0 +1,37 @@
+name: FastEmbed
+description: A fast, lightweight Python library from Qdrant for generating state-of-the-art text embeddings with minimal dependencies. FastEmbed uses ONNX Runtime under the hood, supporting BGE, Instructor, Jina, and other popular embedding models.
+tagline: Fast, lightweight text embeddings with ONNX Runtime
+
+github_url: https://github.com/qdrant/fastembed
+website_url: https://qdrant.github.io/fastembed/
+docs_url: https://qdrant.github.io/fastembed/
+
+install_command: pip install fastembed
+
+category: LLM
+tags:
+  - embeddings
+  - python
+  - vector-search
+  - text-encoding
+  - nlp
+  - onnx
+  - qdrant
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Generating text embeddings for production RAG pipelines typically requires loading heavy deep
+  learning frameworks like PyTorch or TensorFlow, which are overkill for the simple inference
+  task of producing embeddings. FastEmbed provides a lean alternative using ONNX Runtime — no GPU
+  required, sub-millisecond inference on CPU, minimal memory footprint. It bundles the most popular
+  embedding models (BGE, Instructor, Jina) as quantized ONNX files, so developers get high-quality
+  embeddings with a single pip install and no GPU dependency.
+
+use_cases:
+  - Generate text embeddings for RAG document ingestion without PyTorch or GPU requirements
+  - Build production embedding pipelines for semantic search across millions of documents on CPU
+  - Create lightweight embedding services for edge devices and resource-constrained environments
+  - Batch-embed text corpora for vector database indexing with Qdrant, Pinecone, or Weaviate
+  - Replace slow or heavy embedding libraries with a fast, memory-efficient alternative
