@@ -1,0 +1,29 @@
+name: Faceswap
+description: A comprehensive deep learning-based face swapping tool that uses autoencoders and GANs to swap faces in images and videos with support for training custom models on user-provided datasets.
+tagline: Deep learning face swapping for images and video
+
+github_url: https://github.com/deepfakes/faceswap
+website_url: https://faceswap.dev
+docs_url: https://forum.faceswap.dev
+install_command: pip install faceswap
+
+category: Other
+tags: [face-swapping, deepfakes, computer-vision, gpu, video-editing, python]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Face swapping in video has traditionally required professional visual effects skills, expensive
+  software, and hours of manual tracking per shot. Faceswap automates the process using deep
+  learning — it detects and extracts faces from source and target videos, trains a custom
+  autoencoder model on the paired data, and converts frames by reconstructing the source face
+  mapped to the target's pose and expression. The result is a complete pipeline from raw video
+  to swapped output that runs on consumer GPUs, making face swapping accessible to hobbyists,
+  content creators, and researchers.
+
+use_cases:
+  - Swap faces in video projects for creative content, parody, and visual effects without manual compositing
+  - Train custom face models on specific actors for consistent face replacement across multiple video clips
+  - Create training data for academic research in deepfake detection and facial reenactment studies
+  - Extract and catalog face datasets from video archives for identity preservation and restoration projects

@@ -1,0 +1,29 @@
+name: Coqui TTS
+description: A deep learning toolkit for text-to-speech synthesis that enables training and deploying high-quality neural TTS models with voice cloning, multi-speaker support, and fine-grained prosody control.
+tagline: Deep learning text-to-speech with voice cloning and multi-speaker support
+
+github_url: https://github.com/coqui-ai/TTS
+website_url: https://coqui.ai
+docs_url: https://docs.coqui.ai
+install_command: pip install TTS
+
+category: Other
+tags: [text-to-speech, tts, voice-cloning, speech-synthesis, deep-learning, python]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  Most text-to-speech systems offer limited voice selection, robotic intonation, and no support
+  for custom voices — developers must either accept generic voices or pay for expensive
+  studio-recorded custom voice packs. Coqui TTS provides a full training and inference pipeline
+  for neural TTS that supports fine-tuning on small voice samples (voice cloning), multi-speaker
+  model training, and prosody control through pitch, speed, and emphasis parameters. Models can
+  be trained on custom datasets with as little as 30 minutes of audio, and deployed for
+  real-time streaming inference with minimal latency.
+
+use_cases:
+  - Clone a specific voice from short audio samples to generate personalized speech for assistants and audiobooks
+  - Train multi-speaker TTS models for dialogue systems and narration with distinct character voices
+  - Deploy real-time speech synthesis for voice assistants and accessibility tools with low-latency streaming
+  - Generate synthetic speech data for training speech recognition models and voice-based AI systems
