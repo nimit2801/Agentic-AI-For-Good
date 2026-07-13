@@ -1,0 +1,26 @@
+name: FoundationDB
+description: |
+  FoundationDB is a distributed transactional key-value store providing ACID transactions with strict serializability across clusters of commodity servers. Its unique layered architecture — core KV store with Record Layer, Document Layer, and more — uses deterministic simulation testing for production-grade reliability. It powers Apple iCloud and Snowflake's metadata infrastructure.
+tagline: Distributed database with ACID transactions at scale
+
+github_url: https://github.com/apple/foundationdb
+website_url: https://www.foundationdb.org
+docs_url: https://apple.github.io/foundationdb
+
+category: Data
+tags: [distributed-database, key-value-store, acid-transactions, nosql, transactional, apple, foundationdb]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  There is a fundamental trade-off between ACID transactions and horizontal scalability in database systems: traditional relational databases offer strong consistency but struggle to scale, while NoSQL databases scale well but sacrifice transactional guarantees. FoundationDB resolves this by delivering distributed ACID transactions with strict serializability at scale, enabling applications to maintain data integrity while scaling elastically across commodity hardware.
+
+use_cases:
+  - Serve as the metadata layer for Snowflake's cloud data warehouse, managing petabytes of metadata with ACID guarantees
+  - Power the infrastructure backend for Apple iCloud services, storing user data with strict consistency across global clusters
+  - Provide transactional state storage for AI and ML pipeline metadata, configuration management, and workflow orchestration
+  - Enable multi-model data storage via layered architecture supporting record, document, and graph data models on a single core
+
+install_command: |
+  docker pull foundationdb/foundationdb
