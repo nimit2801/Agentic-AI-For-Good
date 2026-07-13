@@ -1,0 +1,31 @@
+name: Tracecat
+description: An open-source security automation platform for teams and AI agents that turns natural language prompts into end-to-end security workflows with agents, case management, and event-driven automation.
+tagline: Open-source security automation for teams and AI agents
+
+github_url: https://github.com/TracecatHQ/tracecat
+website_url: https://tracecat.com
+docs_url: https://docs.tracecat.com
+install_command: |
+  pip install tracecat
+  tracecat init
+
+category: Dev Tools
+tags: [security, automation, workflows, soar, ai-agents, siem]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Security teams are overwhelmed by alert volumes from dozens of tools — SIEMs, EDRs, cloud
+  security scanners, and threat feeds — each requiring manual triage and response. Tracecat
+  connects security tools into automated workflows that can be described in natural language:
+  "when a critical alert from CrowdStrike matches a known IoC pattern, create a case, enrich
+  it with VirusTotal, and notify the on-call engineer via Slack." It provides case management,
+  a workflow builder, and agent harness support so teams can automate incident response without
+  writing custom scripts for every playbook.
+
+use_cases:
+  - Automate SOC alert triage by enriching, deduplicating, and routing alerts from SIEM to the right responder
+  - Build end-to-end incident response playbooks with automated evidence collection and case creation
+  - Create agent-driven security workflows that investigate phishing emails, extract IOCs, and block domains
+  - Orchestrate multi-tool response actions across cloud security, endpoint protection, and threat intelligence platforms

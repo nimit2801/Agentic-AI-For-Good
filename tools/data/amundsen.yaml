@@ -1,0 +1,28 @@
+name: Amundsen
+description: A metadata-driven data discovery platform that helps data teams find, understand, and trust their data through search, automated metadata ingestion, column-level lineage, and usage-based resource ranking.
+tagline: Data discovery and metadata platform for modern data teams
+
+github_url: https://github.com/amundsen-io/amundsen
+website_url: https://www.amundsen.io
+docs_url: https://www.amundsen.io/amundsen
+install_command: docker compose up
+
+category: Data
+tags: [data-catalog, metadata, data-discovery, data-governance, lineage, search]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  In large organizations, data lives across hundreds of tables, dashboards, and pipelines with
+  no central catalog — analysts waste hours hunting for the right dataset, trusting stale
+  documentation, or duplicating existing work. Amundsen provides a searchable catalog that
+  automatically ingests table schemas, ownership, usage statistics, and column-level lineage
+  from data warehouses, lakes, and BI tools. Users can search by table name, column content, or
+  popularity, and see upstream and downstream dependencies for any dataset.
+
+use_cases:
+  - Discover relevant datasets across the organization with search ranked by usage, freshness, and ownership
+  - Trace column-level lineage from a report metric back through ETL pipelines to its source tables
+  - Find data owners for troubleshooting broken pipelines or understanding dataset semantics
+  - Reduce duplicated data work by making existing tables and dashboards discoverable through search

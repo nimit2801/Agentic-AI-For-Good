@@ -1,0 +1,28 @@
+name: ParadeDB
+description: A PostgreSQL-based database purpose-built for search and vector retrieval that extends Postgres with full-text search, BM25 scoring, and HNSW vector indexing through native extensions.
+tagline: PostgreSQL for search and vector retrieval with native extensions
+
+github_url: https://github.com/paradedb/paradedb
+website_url: https://paradedb.com
+docs_url: https://docs.paradedb.com
+install_command: docker compose up
+
+category: Vector DB
+tags: [postgres, search, vector-search, full-text-search, bm25, hnsw]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Building search and RAG applications typically requires stitching together separate systems:
+  PostgreSQL for application data, Elasticsearch for full-text search, and Pinecone/Weaviate for
+  vector retrieval — each with its own query language, deployment, and operational complexity.
+  ParadeDB extends PostgreSQL with pg_search for BM25 full-text indexing and pgvector-compatible
+  HNSW vector search, enabling developers to run hybrid search (keyword + semantic) alongside
+  their application data in a single Postgres database with standard SQL queries.
+
+use_cases:
+  - Run hybrid search combining full-text BM25 scoring with vector similarity in a single PostgreSQL query
+  - Replace Elasticsearch with native PostgreSQL full-text search using ParadeDB's pg_search extension
+  - Build RAG applications with HNSW vector indexes stored alongside relational application data in Postgres
+  - Add semantic search capabilities to existing PostgreSQL applications without introducing a separate vector database
