@@ -1,0 +1,36 @@
+name: OpenAI Swarm
+description: An experimental, lightweight multi-agent orchestration framework from OpenAI that explores ergonomic patterns for agent coordination, handoffs, and routine-based task execution.
+tagline: Lightweight multi-agent orchestration from OpenAI
+
+github_url: https://github.com/openai/swarm
+website_url: https://github.com/openai/swarm
+
+install_command: pip install openai-swarm
+
+category: Agents
+tags:
+  - agents
+  - multi-agent
+  - openai
+  - orchestration
+  - python
+  - handoffs
+  - routines
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Multi-agent systems are powerful but complex: coordinating agent handoffs, managing shared
+  context, and defining clear task boundaries requires significant framework overhead. OpenAI
+  Swarm is a minimal, educational framework that explores two core primitives — routines and
+  handoffs — for building multi-agent coordination. Rather than a production SDK, Swarm serves
+  as a reference implementation of OpenAI's agent design patterns, making it easy to understand
+  and customize agent orchestration for specific use cases.
+
+use_cases:
+  - Learn and experiment with OpenAI's agent routing and handoff design patterns
+  - Build a triage agent that routes customer requests to specialized sub-agents
+  - Implement a multi-step research pipeline with handoffs between search, analysis, and writing agents
+  - Prototype agent orchestration logic with a minimal, readable codebase before scaling
+  - Study reference implementations of function calling, context management, and agent delegation
