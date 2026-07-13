@@ -1,0 +1,25 @@
+name: Sphinx
+description: |
+  Sphinx is an open-source full-text search server designed for high performance, relevance, and integration simplicity. It indexes and searches data from SQL databases, NoSQL storage, or flat files, supporting batch indexing, real-time indexes, and three client interfaces: SphinxQL (SQL dialect), SphinxAPI (native protocol), and SphinxSE (MySQL storage engine). Written in C++, Sphinx powers Craigslist's site search across hundreds of millions of monthly queries.
+tagline: High-performance full-text search server
+
+github_url: https://github.com/sphinxsearch/sphinx
+website_url: https://sphinxsearch.com
+docs_url: https://sphinxsearch.com/docs/
+
+category: Other
+tags: [full-text-search, search-engine, sphinxql, information-retrieval, indexing, c-plus-plus]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Traditional SQL databases lack efficient full-text search at scale, and dedicated search engines like Elasticsearch can be operationally heavy. Sphinx fills the gap by providing fast, relevant full-text search with SQL-like syntax, minimal dependencies, and seamless MySQL and PostgreSQL integration — all in a lightweight C++ daemon that can index tens of millions of documents in minutes and serve thousands of queries per second.
+
+use_cases:
+  - Power high-traffic website search serving hundreds of millions of monthly queries across clustered search nodes
+  - Provide faceted full-text product catalog search with relevance ranking, filtering, and real-time indexing from MySQL or PostgreSQL backends
+  - Replace built-in database full-text search in platforms like vBulletin and MediaWiki to dramatically improve speed and relevance on large datasets
+  - Enable SQL-level search integration via the SphinxSE storage engine, letting MySQL queries directly access full-text search results
+
+install_command: sudo apt-get install sphinxsearch

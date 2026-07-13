@@ -1,0 +1,26 @@
+name: ScyllaDB
+description: |
+  ScyllaDB is a high-performance distributed NoSQL wide-column database compatible with Apache Cassandra and Amazon DynamoDB. Built on C++ with a shard-per-core architecture, it delivers predictable low-latency and high-throughput performance. ScyllaDB 6.x and later supports native ANN vector search (HNSW-based) for real-time AI workloads including RAG, semantic caching, feature stores, and billion-scale similarity search.
+tagline: High-performance NoSQL database with native vector search
+
+github_url: https://github.com/scylladb/scylladb
+website_url: https://www.scylladb.com
+docs_url: https://docs.scylladb.com
+
+category: Vector DB
+tags: [nosql, wide-column, cassandra-compatible, dynamodb-compatible, vector-database, ann, hnsw, similarity-search, rag, semantic-caching, distributed]
+pricing: freemium
+is_open_source: false
+license: ScyllaDB Source Available License
+
+problem_solved: |
+  Traditional NoSQL databases lack native vector embedding support for AI workloads, while dedicated vector databases struggle with high-throughput transactional workloads, forcing teams to maintain separate systems. ScyllaDB unifies a high-performance wide-column store with native HNSW-based ANN vector search, enabling real-time AI applications — RAG, semantic caching, feature stores — at billion-scale with sub-2ms P99 latency within a single Cassandra-compatible database.
+
+use_cases:
+  - Store and retrieve document and embedding vectors for retrieval-augmented generation to augment LLM responses with domain-specific context at scale
+  - Cache LLM responses based on embedding similarity to reduce API costs and improve response latency for repeated or similar queries
+  - Serve millions of feature vectors per second for online model inference in recommendation, fraud detection, and personalization systems
+  - Run billion-scale product, image, or video semantic similarity search using ANN (HNSW) with sub-2ms P99 latency
+
+install_command: |
+  docker pull scylladb/scylla
