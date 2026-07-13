@@ -1,0 +1,40 @@
+name: Numba
+description: >-
+  Numba is a high-performance JIT compiler for Python that translates a subset of Python and NumPy
+  code into optimized machine code using LLVM. With a simple decorator, it accelerates numerical
+  and array-oriented computations to speeds approaching C or Fortran — essential for data science,
+  ML pipelines, simulation, and any Python workload that bottlenecks on tight loops.
+tagline: JIT-compile Python numerical code to near-machine speed
+
+github_url: https://github.com/numba/numba
+website_url: https://numba.pydata.org
+docs_url: https://numba.readthedocs.io
+install_command: pip install numba
+
+category: Dev Tools
+tags:
+  - jit
+  - compiler
+  - python
+  - performance
+  - numpy
+  - llvm
+  - numerical-computing
+  - gpu
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: >-
+  Python's dynamic nature makes numerical and scientific code slow — pure Python loops over arrays
+  can be 10–100x slower than C or Fortran equivalents, forcing developers to rewrite hot paths in
+  a compiled language. Numba solves this by JIT-compiling annotated Python functions at runtime
+  with LLVM, generating optimized CPU or GPU machine code from ordinary Python and NumPy code so
+  developers get C-like performance without leaving Python or rewriting their algorithms.
+
+use_cases:
+  - Accelerate tight numerical loops in data processing and numerical simulation pipelines
+  - Compile machine learning preprocessing and feature engineering steps for faster training throughput
+  - Run vectorized NumPy operations on GPU hardware without rewriting code in CUDA directly
+  - Speed up Monte Carlo simulations, optimization routines, and scientific computing workloads
+  - Optimize custom loss functions, activation computations, and gradient calculations in ML training

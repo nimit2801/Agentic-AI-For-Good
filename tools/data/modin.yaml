@@ -1,0 +1,40 @@
+name: Modin
+description: >-
+  Modin is a drop-in replacement for pandas that parallelizes DataFrame operations across all
+  available CPU cores and cluster resources. It scales to multi-terabyte datasets by distributing
+  computation across Ray, Dask, or MPI backends with minimal code changes — often just changing
+  the import statement from import pandas as pd to import modin.pandas as pd.
+tagline: Drop-in parallel pandas — scale DataFrames across cores and clusters
+
+github_url: https://github.com/modin-project/modin
+website_url: https://modin.readthedocs.io
+docs_url: https://modin.readthedocs.io
+install_command: pip install "modin[ray]"
+
+category: Data
+tags:
+  - dataframe
+  - pandas
+  - parallel
+  - distributed
+  - ray
+  - dask
+  - data-processing
+  - python
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  Data scientists and ML engineers hit performance and memory walls when processing datasets that
+  exceed a single machine's RAM or CPU capacity with pandas. Modin eliminates this bottleneck by
+  transparently parallelizing DataFrame operations across the available hardware — from multi-core
+  laptops to multi-node Ray clusters — without requiring users to learn distributed computing APIs.
+  The same pandas code automatically scales to larger-than-memory and multi-terabyte datasets.
+
+use_cases:
+  - Process large CSV and Parquet datasets that exceed single-machine memory by distributing across cluster workers
+  - Parallelize data cleaning, feature engineering, and ETL operations across all CPU cores without API changes
+  - Scale pandas-based ML preprocessing pipelines from a laptop to a production Ray cluster seamlessly
+  - Handle multi-terabyte joins, aggregations, and group-by operations that would OOM on standard pandas
+  - Accelerate exploratory data analysis on large datasets by splitting work across distributed workers
