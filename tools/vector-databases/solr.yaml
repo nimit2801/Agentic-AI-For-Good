@@ -1,0 +1,26 @@
+name: Apache Solr
+description: |
+  Apache Solr is a blazing-fast, open source, multi-modal search platform built on Apache Lucene. It powers full-text, vector, and geospatial search at many of the world's largest organizations. With its DenseVectorField type and k-NN query parsers, Solr enables dense vector indexing and similarity search alongside traditional search, faceting, and analytics — all through a RESTful API.
+tagline: Multi-modal search platform with vector and full-text capabilities
+
+github_url: https://github.com/apache/solr
+website_url: https://solr.apache.org
+docs_url: https://solr.apache.org/guide/solr/latest/
+
+category: Vector DB
+tags: [search, vector-database, full-text-search, semantic-search, lucene, enterprise-search, information-retrieval, geospatial-search]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Organizations need a single scalable platform that combines traditional full-text search with modern vector and semantic search across multi-modal data — text, embeddings, geospatial. Maintaining separate systems for lexical search and vector similarity doubles operational complexity and infrastructure costs. Solver solves this by providing hybrid search capabilities — lexical, vector, and geospatial — all through a unified RESTful API built on Lucene, eliminating the need to manage separate search and vector database systems.
+
+use_cases:
+  - Index documents with dense vector embeddings for semantic similarity retrieval alongside keyword search across large enterprise corpora
+  - Store and query vector embeddings for retrieval-augmented generation pipelines, enabling AI agents to find relevant context via k-NN search
+  - Power faceted e-commerce navigation, "more like this" recommendations, and visual similarity search using combined text and vector queries
+  - Run geospatial-aware search over location-tagged content combined with semantic and keyword filters
+
+install_command: |
+  docker pull solr

@@ -1,0 +1,25 @@
+name: OpenSPG
+description: |
+  OpenSPG is a knowledge graph engine for building domain-specific knowledge graphs and GraphRAG applications. It provides semantic modeling, knowledge construction, and logical rule reasoning, and natively supports KAG (Knowledge Augmented Generation) — combining structured knowledge graphs with LLMs for logical reasoning and factual question answering. Developed by Ant Group in collaboration with OpenKG.
+tagline: Knowledge graph engine for GraphRAG and knowledge-augmented generation
+
+github_url: https://github.com/OpenSPG/openspg
+website_url: https://openspg.github.io/v2/
+docs_url: https://openspg.github.io/v2/docs_en
+
+category: RAG
+tags: [knowledge-graph, graphrag, rag, knowledge-augmented-generation, llm, semantic-reasoning, python, java]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Traditional RAG systems rely on vector similarity search, which suffers from semantic ambiguity and cannot effectively handle structured knowledge relationships. Meanwhile, naive GraphRAG approaches using OpenIE introduce noise from incorrect triple extraction. OpenSPG provides a knowledge-augmented generation framework that integrates structured knowledge graphs via SPG semantic modeling with LLMs, enabling logical-form-guided reasoning, factual accuracy, and multi-hop question answering for professional domains where precision is critical.
+
+use_cases:
+  - Build logical reasoning and factual question answering systems for professional domains like finance, legal, and healthcare using structured knowledge graphs connected to LLMs
+  - Overcome traditional RAG vector similarity limitations for complex queries that require traversing multiple entity relationships in a knowledge graph
+  - Power financial risk analysis, compliance checks, and fraud detection using domain-specific knowledge graphs with Ant Group's production-proven approach
+  - Enable knowledge-augmented document retrieval where complete contextual text information is integrated with graph relationships for more accurate results
+
+install_command: pip install openspg-kag
