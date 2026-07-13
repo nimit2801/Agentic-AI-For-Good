@@ -1,0 +1,40 @@
+name: LakeFS
+description: >-
+  LakeFS brings Git-like version control semantics to data lakes — branches, commits, merges, and
+  rollbacks for object storage. It works on top of S3, GCS, and Azure Blob Storage to provide
+  atomic, isolated data versioning so teams can experiment on data branches, validate changes,
+  and roll back confidently without copying or duplicating petabyte-scale datasets.
+tagline: Git-like version control for data lakes
+
+github_url: https://github.com/treeverse/lakeFS
+website_url: https://lakefs.io
+docs_url: https://docs.lakefs.io
+install_command: curl -fsSL https://github.com/treeverse/lakeFS/releases/latest/download/lakefsctl-linux-amd64.tar.gz | tar xz
+
+category: Data
+tags:
+  - data-versioning
+  - data-lake
+  - git
+  - object-storage
+  - s3
+  - data-engineering
+  - devops
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  Data engineering and ML teams working with data lakes face a fundamental problem — they have no
+  version control for their raw and transformed data. When a data pipeline breaks or produces bad
+  output, rolling back is expensive (reprocessing terabytes) or impossible (overwritten objects).
+  LakeFS solves this by adding Git-like branching and atomic commits to object storage, so teams
+  can create data branches for experiments, run pipelines in isolation, validate results, and
+  roll back damaged datasets with a single merge operation — all without copying underlying data.
+
+use_cases:
+  - Create isolated data branches for ML experimentation without duplicating large datasets
+  - Roll back accidental data corruption or bad pipeline output to a known-good snapshot in seconds
+  - Run CI/CD validation on data changes before merging into production data branches
+  - Enable data scientists to version, diff, and collaborate on feature engineering and transformation
+  - Maintain reproducible audit trails for datasets used in regulated AI and analytics workflows

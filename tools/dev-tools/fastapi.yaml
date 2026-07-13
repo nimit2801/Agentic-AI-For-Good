@@ -1,0 +1,41 @@
+name: FastAPI
+description: >-
+  FastAPI is a modern, high-performance web framework for building APIs with Python based on standard
+  Python type hints. It automatically generates OpenAPI documentation, validates request/response data
+  with Pydantic, and delivers async performance rivaling Node.js and Go — making it the go-to choice
+  for building AI/ML API backends, LLM serving endpoints, and agent tool servers.
+tagline: Build high-performance APIs with Python, async, and automatic OpenAPI docs
+
+github_url: https://github.com/fastapi/fastapi
+website_url: https://fastapi.tiangolo.com
+docs_url: https://fastapi.tiangolo.com
+install_command: pip install "fastapi[standard]"
+
+category: Dev Tools
+tags:
+  - python
+  - api
+  - web-framework
+  - async
+  - openapi
+  - pydantic
+  - backend
+  - llm-serving
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: >-
+  Developers building AI applications need API endpoints to serve model predictions, expose agent
+  tools, and orchestrate data pipelines — but traditional web frameworks like Flask or Django add
+  boilerplate for validation, serialization, and documentation. FastAPI eliminates this overhead
+  by deriving request validation, response serialization, and interactive OpenAPI docs directly from
+  Python type hints, so teams ship production-ready APIs with less code, better performance, and
+  automatic client generation.
+
+use_cases:
+  - Build RESTful API backends for serving LLM inferences and agent tool calls with automatic request validation
+  - Create async microservices that orchestrate multi-step AI workflows and data pipelines
+  - Deploy model-serving endpoints with built-in OpenAPI docs for client SDK generation and API exploration
+  - Build WebSocket-based real-time streaming endpoints for chat applications and live inference
+  - Serve as the foundation for Retrieval-Augmented Generation (RAG) APIs that query vector stores and LLMs
