@@ -1,0 +1,25 @@
+name: RocksDB
+description: |
+  RocksDB is an embeddable, persistent key-value store developed by Meta (Facebook) for fast flash and RAM storage. It uses an LSM-tree architecture optimized for high read and write throughput, low latency, and efficient compression. Not an SQL database — it is a C++ library for embedding into applications, widely used as the storage engine in ML pipelines, stream processors, and distributed databases.
+tagline: Embeddable persistent key-value store for fast storage
+
+github_url: https://github.com/facebook/rocksdb
+website_url: https://rocksdb.org
+docs_url: https://rocksdb.org/docs/getting-started.html
+
+category: Data
+tags: [key-value-store, embedded-database, lsm-tree, persistent-storage, nosql, storage-engine, cpp]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Traditional SQL databases suffer from high write amplification on flash storage, making them suboptimal for embedded, stateful applications that require high throughput and low latency on SSDs. RocksDB's LSM-tree architecture minimizes write, read, and space amplification, delivering predictable high performance on flash and RAM for applications ranging from stream processors to ML pipeline state stores.
+
+use_cases:
+  - Serve as the embedded state store for Apache Flink and Kafka Streams, enabling fault-tolerant, low-latency stream processing with checkpointing
+  - Power the storage engine for MyRocks, CockroachDB, and YugabyteDB as a persistent, compressed storage layer for distributed SQL databases
+  - Store model checkpoints, feature vectors, and intermediate state for Ray and Flink ML pipelines at scale
+  - Provide the persistent storage backend for LinkedIn's follow feed, processing user activities and timeline data at massive scale
+
+install_command: brew install rocksdb
