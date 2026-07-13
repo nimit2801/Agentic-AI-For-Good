@@ -1,0 +1,28 @@
+name: ControlNet
+description: A neural network architecture for controlling diffusion models by adding spatial conditioning inputs like edge maps, depth maps, pose skeletons, and segmentation masks to guide image generation with precise structural control.
+tagline: Precise spatial control for Stable Diffusion image generation
+
+github_url: https://github.com/lllyasviel/ControlNet
+website_url: https://github.com/lllyasviel/ControlNet
+install_command: pip install controlnet-aux
+
+category: Other
+tags: [image-generation, stable-diffusion, controlnet, conditioning, computer-vision]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Text-to-image models like Stable Diffusion generate compelling images from prompts, but lack
+  precise control over composition — users cannot specify exact poses, object shapes, or spatial
+  layouts through text alone. ControlNet adds an extra conditioning pathway to diffusion models
+  that accepts structured inputs: Canny edges for outline adherence, OpenPose skeletons for pose
+  control, depth maps for spatial structure, and segmentation masks for region-level control.
+  This turns diffusion into a controllable tool rather than a stochastic generator, enabling
+  artists to iterate on composition while maintaining visual quality.
+
+use_cases:
+  - Generate images that precisely follow a reference sketch or line art using Canny edge conditioning
+  - Control character poses in AI-generated art by providing OpenPose skeleton inputs to guide anatomy
+  - Produce consistent 3D renderings from depth maps for architectural visualization and game asset creation
+  - Apply style transfer with spatial constraints by combining segmentation masks with text prompts
