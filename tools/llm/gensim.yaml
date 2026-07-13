@@ -1,0 +1,30 @@
+name: Gensim
+description: A proven Python library for topic modeling, document similarity, and natural language processing with efficient vector-space and semantic modeling implementations.
+tagline: Topic modeling for humans — document similarity, word embeddings, and semantic analysis
+
+github_url: https://github.com/piskvorky/gensim
+website_url: https://radimrehurek.com/gensim
+docs_url: https://radimrehurek.com/gensim/auto_tutorial.html
+
+install_command: pip install gensim
+
+category: LLM
+tags: [python, nlp, topic-modeling, word-embeddings, word2vec, document-similarity, information-retrieval]
+pricing: free
+is_open_source: true
+license: LGPL-2.1
+
+problem_solved: |
+  Understanding the semantic structure of large document collections requires algorithms
+  like topic modeling, document similarity, and word embeddings — but implementing them
+  efficiently from scratch is complex and slow. Gensim provides battle-tested
+  implementations of Word2Vec, FastText, LDA, LSI, and TF-IDF that process datasets
+  larger than RAM using streaming, incremental training, and parallelized routines
+  written in Cython.
+
+use_cases:
+  - Train word embeddings on domain-specific corpora to improve downstream NLP models
+  - Discover latent topics across thousands of documents with LDA topic modeling
+  - Find similar documents in a corpus using TF-IDF or semantic similarity scoring
+  - Build document retrieval pipelines with FastText for out-of-vocabulary word handling
+  - Preprocess and vectorize text for classification, clustering, or search applications

@@ -1,0 +1,30 @@
+name: Alibi Detect
+description: An open-source library for outlier detection, adversarial detection, and drift detection on tabular data, text, images, and time series. Built on TensorFlow and PyTorch.
+tagline: Detect outliers, drift, and adversarial examples in ML models
+
+github_url: https://github.com/SeldonIO/alibi-detect
+website_url: https://www.seldon.io/alibi-detect
+docs_url: https://docs.seldon.io/projects/alibi-detect
+
+install_command: pip install alibi-detect
+
+category: Monitoring
+tags: [python, outlier-detection, drift-detection, adversarial, monitoring, mlops]
+pricing: free
+is_open_source: true
+license: NOASSERTION
+
+problem_solved: |
+  Machine learning models in production encounter data that differs from their training
+  distribution — feature drift, label drift, outliers, and adversarial inputs. Without
+  detection, these shifts silently degrade predictions and erode trust. Alibi Detect
+  provides algorithms for online and offline drift detection, outlier detection across
+  tabular, text, image, and time-series data, and adversarial example detection —
+  all from a consistent Python API.
+
+use_cases:
+  - Monitor production ML models for data drift to trigger retraining before accuracy drops
+  - Detect outliers in real-time sensor data streams for anomaly alerting
+  - Identify adversarial inputs designed to manipulate model predictions
+  - Run scheduled drift reports on batch inference pipelines using statistical tests
+  - Detect concept drift in time-series forecasting models to flag regime changes

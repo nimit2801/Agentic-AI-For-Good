@@ -1,0 +1,28 @@
+name: Loki
+description: A horizontally-scalable, highly-available log aggregation system from Grafana Labs that indexes log metadata rather than full-text, making it cost-effective for storing and querying logs from LLM applications and infrastructure.
+tagline: Log aggregation that's cheap, fast, and natively integrated with Grafana
+
+github_url: https://github.com/grafana/loki
+website_url: https://grafana.com/oss/loki
+docs_url: https://grafana.com/docs/loki/latest
+
+category: Monitoring
+tags: [logging, observability, log-aggregation, monitoring, prometheus, grafana, cloud-native]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Traditional log aggregation systems like Elasticsearch index the full text of every log
+  line, which becomes prohibitively expensive at the scale of modern AI infrastructure —
+  model servers generate gigabytes of access and error logs daily. Loki takes a different
+  approach: it only indexes metadata labels (service name, host, level) and stores log
+  content compressed in object storage. This makes it an order of magnitude cheaper to
+  operate while still enabling fast label-based log search.
+
+use_cases:
+  - Aggregate logs from LLM inference servers, API gateways, and vector databases for centralized search
+  - Correlate error logs with Jaeger traces and Prometheus metrics in Grafana dashboards
+  - Monitor log volume and error rates across AI service deployments with alerting rules
+  - Search and filter production logs by service label, severity, and time range in seconds
+  - Store months of AI infrastructure logs at a fraction of the cost of full-text indexing systems

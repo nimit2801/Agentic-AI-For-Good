@@ -1,0 +1,28 @@
+name: Jaeger
+description: A CNCF-graduated distributed tracing platform for monitoring and troubleshooting microservices-based applications, including LLM inference pipelines and agent workflows.
+tagline: End-to-end distributed tracing for microservices and AI pipelines
+
+github_url: https://github.com/jaegertracing/jaeger
+website_url: https://www.jaegertracing.io
+docs_url: https://www.jaegertracing.io/docs
+
+category: Monitoring
+tags: [distributed-tracing, observability, microservices, monitoring, opentelemetry, cncf]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  In distributed systems — including LLM serving stacks with multiple model replicas,
+  vector databases, and API gateways — a single user request fans out across dozens of
+  services. Debugging latency spikes or errors without request-level context is nearly
+  impossible. Jaeger provides end-to-end distributed tracing: it captures the full path
+  of each request as it traverses services, showing spans, timing, and errors on an
+  interactive timeline.
+
+use_cases:
+  - Trace multi-step LLM inference requests across model servers, caches, and databases
+  - Identify slow services in an agent orchestration pipeline by visualizing span timing
+  - Correlate errors in production AI systems with upstream service failures
+  - Monitor tail latency distributions across distributed model serving infrastructure
+  - Debug performance regressions after deploying a new model version or routing change

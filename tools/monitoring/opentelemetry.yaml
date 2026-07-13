@@ -1,0 +1,30 @@
+name: OpenTelemetry
+description: A vendor-neutral observability framework for generating, collecting, and exporting telemetry data — traces, metrics, and logs — from cloud-native and AI applications. CNCF-incubating project with broad industry adoption.
+tagline: The standard for cloud-native observability — traces, metrics, and logs
+
+github_url: https://github.com/open-telemetry/opentelemetry-python
+website_url: https://opentelemetry.io
+docs_url: https://opentelemetry.io/docs
+
+install_command: pip install opentelemetry-api opentelemetry-sdk
+
+category: Monitoring
+tags: [python, observability, distributed-tracing, metrics, logging, telemetry, cncf]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Every observability vendor and open-source project has its own instrumentation API,
+  agent, and data format — making it costly to switch backends or run multiple tools
+  simultaneously. OpenTelemetry provides a single, vendor-neutral set of APIs, SDKs,
+  and protocols for collecting traces, metrics, and logs from applications. Once
+  instrumented with OpenTelemetry, teams can export data to any compatible backend
+  (Jaeger, Prometheus, Grafana, Datadog, etc.) without code changes.
+
+use_cases:
+  - Auto-instrument Python LLM applications to emit traces for every model call and agent step
+  - Export metrics (latency, token counts, error rates) from inference servers to Prometheus
+  - Build a unified observability pipeline for AI services that can route to multiple backends
+  - Correlate LLM inference traces with infrastructure metrics in a single Grafana dashboard
+  - Enable vendor-portable telemetry so teams can switch observability backends without reinstrumenting
