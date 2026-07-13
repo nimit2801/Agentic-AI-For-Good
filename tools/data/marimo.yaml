@@ -1,0 +1,28 @@
+name: Marimo
+description: A reactive Python notebook that runs reproducible experiments, queries databases with SQL, executes as a script, deploys as an interactive app, and versions cleanly with git — all stored as pure Python files.
+tagline: Reactive Python notebook for reproducible data science and interactive apps
+
+github_url: https://github.com/marimo-team/marimo
+website_url: https://marimo.io
+docs_url: https://docs.marimo.io
+install_command: pip install marimo
+
+category: Data
+tags: [python, notebook, reactive, data-science, visualization, sql, reproducible]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Traditional Jupyter notebooks have fundamental flaws: cells can be run in any order producing
+  unreproducible state, outputs are hidden behind binary .ipynb files that break git diffs, and
+  there is no clean path from exploration to deployment. Marimo solves these by making notebooks
+  reactive — cells automatically re-run when their inputs change, eliminating hidden state. Output
+  is pure Python (no binary format), enabling proper version control. Notebooks can be run as
+  scripts or deployed as interactive web apps without rewriting.
+
+use_cases:
+  - Build reactive data pipelines where changing an input cell automatically propagates through all downstream computations
+  - Create interactive dashboards and data apps from notebook cells without switching to a separate framework
+  - Version control data science work properly with clean git diffs on pure Python notebook files
+  - Write SQL queries against databases and dataframes alongside Python transformations in the same notebook

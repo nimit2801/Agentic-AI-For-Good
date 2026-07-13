@@ -1,0 +1,26 @@
+name: nanoGPT
+description: The simplest, fastest repository for training and fine-tuning medium-sized GPT models. Provides a clean, minimal PyTorch implementation that can train GPT-2 scale models on consumer hardware.
+tagline: Train and fine-tune GPT models from scratch with minimal boilerplate
+
+github_url: https://github.com/karpathy/nanoGPT
+website_url: https://github.com/karpathy/nanoGPT
+
+category: Fine-tuning
+tags: [python, gpt, transformer, training, fine-tuning, pytorch, research]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Training GPT models from scratch typically requires complex distributed training setups, deep
+  knowledge of transformer internals, and thousands of lines of boilerplate code. NanoGPT distills
+  GPT training into a single ~300-line training script that fits on a single GPU. Researchers and
+  developers can reproduce GPT-2 scale models, experiment with architectural variations, or
+  fine-tune on custom datasets without wading through production-scale training infrastructure
+  or multi-node orchestration.
+
+use_cases:
+  - Train a GPT-2 scale (124M parameter) language model from scratch on a single consumer GPU
+  - Fine-tune a pre-trained GPT model on domain-specific data like code, legal documents, or medical texts
+  - Experiment with transformer architecture modifications without writing training infrastructure from scratch
+  - Reproduce research results for transformer-based language models using a minimal, readable codebase

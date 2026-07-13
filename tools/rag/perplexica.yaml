@@ -1,0 +1,27 @@
+name: Perplexica
+description: An open-source AI-powered search engine that performs deep, context-aware web searches using LLMs and embeddings. Provides sourced answers with citations, supports multiple search modes, and integrates with local LLMs for complete privacy.
+tagline: Open-source AI search engine with cited answers and deep web understanding
+
+github_url: https://github.com/ItzCrazyKns/Perplexica
+website_url: https://perplexica.dev
+docs_url: https://docs.perplexica.dev
+install_command: docker compose up
+
+category: RAG
+tags: [rag, search, ai, open-source, retrieval, embeddings, docker]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Traditional search engines return ranked links, not answers — users must click through multiple
+  results and synthesize information manually. Perplexica combines LLMs with embeddings and web
+  search to answer natural language questions with inline citations. It runs locally with SearXNG
+  for private web crawling and supports pluggable LLM backends, giving users answer-engine
+  capabilities without sending queries to commercial search APIs or exposing browsing habits.
+
+use_cases:
+  - Answer complex research questions with AI-generated summaries that cite sources for each claim
+  - Build a private knowledge search system that indexes internal documents alongside public web results
+  - Create a customer-facing search assistant that provides sourced answers from product documentation
+  - Deploy a self-hosted alternative to Perplexity AI with full control over data privacy and model choice
