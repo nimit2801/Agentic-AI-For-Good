@@ -1,0 +1,26 @@
+name: Apache Age
+description: |
+  Apache AGE (A Graph Extension) is a PostgreSQL extension that adds graph database capabilities on top of existing relational data. It enables Cypher (openCypher) graph queries alongside standard SQL, supports ACID transactions, and can be combined with pgvector for hybrid graph and vector AI workloads — all within a single PostgreSQL instance.
+tagline: Graph database extension for PostgreSQL
+
+github_url: https://github.com/apache/age
+website_url: https://age.apache.org
+docs_url: https://age.apache.org/age-manual/master/index.html
+
+category: Vector DB
+tags: [graph-database, postgresql-extension, cypher, opencypher, multi-model, knowledge-graph, pgvector, graphrag]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Traditional relational databases struggle with complex connected data queries such as multi-hop relationships and graph traversals, while standalone graph databases require separate infrastructure and break transactional consistency. Apache AGE bridges this gap by bringing native graph querying with openCypher directly into PostgreSQL, eliminating the need for a separate graph database while preserving ACID transactions, SQL compatibility, triggers, and the full PostgreSQL ecosystem.
+
+use_cases:
+  - Combine knowledge graphs with pgvector for structurally and semantically aware retrieval augmented generation (GraphRAG)
+  - Traverse connected transaction patterns and entity relationships in real-time for fraud detection and analysis
+  - Build, store, and query rich entity-relationship knowledge graphs directly on existing PostgreSQL infrastructure
+  - Power recommendation engines by modeling user-product interactions as a graph with Cypher traversal queries
+
+install_command: |
+  docker pull apache/age

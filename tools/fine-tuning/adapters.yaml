@@ -1,0 +1,25 @@
+name: Adapters
+description: |
+  Adapters is a unified library for parameter-efficient and modular transfer learning. It integrates over ten adapter methods — including LoRA, Pfeiffer, Houlsby, Prefix Tuning, and IA3 — into twenty-plus state-of-the-art Transformer models with minimal coding overhead. Built as an add-on to HuggingFace Transformers, it enables fine-tuning billion-parameter models on a single GPU.
+tagline: Parameter-efficient transfer learning with adapter methods
+
+github_url: https://github.com/Adapter-Hub/adapters
+website_url: https://adapterhub.ml
+docs_url: https://docs.adapterhub.ml
+
+category: Fine-tuning
+tags: [peft, parameter-efficient-fine-tuning, lora, adapters, transfer-learning, nlp, transformers, huggingface]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Full fine-tuning of large transformer models requires updating billions of parameters, demanding high-end GPUs and extensive memory. Adapters solves this by injecting small, trainable bottleneck modules into frozen pretrained models, reducing storage per task to a few megabytes and enabling fine-tuning on consumer hardware while retaining 95% or more of full fine-tuning performance across a wide range of NLP tasks.
+
+use_cases:
+  - Fine-tune billion-parameter LLMs on consumer GPUs using LoRA and QLoRA adapters, reducing trainable parameters by over 99 percent
+  - Compose multiple task-specific adapters on a shared frozen backbone for efficient multi-task inference without separate models
+  - Apply MAD-X language adapters to adapt multilingual models to new languages with minimal target-language data
+  - Train and share lightweight adapter modules via the AdapterHub repository for easy community reuse
+
+install_command: pip install adapters

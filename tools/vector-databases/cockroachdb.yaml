@@ -1,0 +1,26 @@
+name: CockroachDB
+description: |
+  CockroachDB is a cloud-native distributed SQL database with built-in pgvector-compatible vector search (added in v24.2). It enables AI applications to store, index, and query high-dimensional vector embeddings alongside relational operational data in a single strongly-consistent, resilient database. Its distributed architecture provides automatic failover, horizontal scaling, and geo-replication.
+tagline: Distributed SQL database with native vector search
+
+github_url: https://github.com/cockroachdb/cockroach
+website_url: https://www.cockroachlabs.com
+docs_url: https://www.cockroachlabs.com/docs/stable/vector
+
+category: Vector DB
+tags: [distributed-sql, vector-database, pgvector, vector-search, ai-embeddings, cloud-native, geo-replication]
+pricing: freemium
+is_open_source: false
+license: Business Source License
+
+problem_solved: |
+  Traditional databases lack native vector search for AI embeddings, forcing teams to maintain separate vector databases that add operational complexity and break transactional consistency. CockroachDB unifies vector and relational data in a single distributed SQL database, eliminating data silos between AI and operational workloads while providing geo-distributed fault tolerance, horizontal scale, and PostgreSQL compatibility.
+
+use_cases:
+  - Store document embeddings and perform pgvector-compatible cosine similarity search alongside structured metadata queries for RAG pipelines
+  - Combine user preference vectors with real-time operational data for globally distributed AI-powered recommendation systems
+  - Unify text embeddings, image vectors, and structured business data in one database for multi-modal AI applications
+  - Serve as persistent, geo-replicated storage for AI agent conversational memory, knowledge graphs, and tool-use state across regions
+
+install_command: |
+  docker run -d --name=roach -p 26257:26257 cockroachdb/cockroach:latest start-single-node --insecure
