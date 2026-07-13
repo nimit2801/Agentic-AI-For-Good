@@ -1,0 +1,42 @@
+name: Fluentd
+description: >-
+  Fluentd is an open-source data collector that unifies log and event data ingestion from diverse
+  sources into a consistent, structured format for storage, search, and analysis. It features a
+  pluggable architecture with hundreds of connectors — handling everything from application logs
+  and infrastructure metrics to ML model inference logs and AI pipeline events — routing data to
+  destinations like Elasticsearch, S3, Kafka, and databases.
+tagline: Unified data collection and routing for log and event pipelines
+
+github_url: https://github.com/fluent/fluentd
+website_url: https://www.fluentd.org
+docs_url: https://docs.fluentd.org
+install_command: gem install fluentd
+
+category: Data
+tags:
+  - data-collection
+  - logging
+  - event-processing
+  - data-pipeline
+  - observability
+  - data-ingestion
+  - etl
+  - infrastructure
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  Modern AI and data pipelines generate log and event data from dozens of sources — application
+  servers, model inference endpoints, training jobs, database queries, and infrastructure metrics
+  — but each source has its own format, protocol, and destination. Teams waste time building and
+  maintaining brittle ingestion pipelines. Fluentd provides a unified data collection layer with
+  a pluggable connector ecosystem that normalizes, buffers, and routes events to any destination,
+  so pipelines stay decoupled and resilient without custom ingestion code.
+
+use_cases:
+  - Collect and route ML model inference logs from serving endpoints to monitoring and observability backends
+  - Unify application logs, training metrics, and infrastructure events into a single structured data pipeline
+  - Buffer and reliably forward event data from distributed training clusters to centralized storage
+  - Parse and normalize semi-structured log data from diverse sources into consistent JSON for downstream analysis
+  - Enable real-time monitoring dashboards by streaming pipeline and system events to Elasticsearch and Grafana

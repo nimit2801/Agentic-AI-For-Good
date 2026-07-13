@@ -1,0 +1,41 @@
+name: Vaex
+description: >-
+  Vaex is an out-of-core DataFrame library for Python that enables visualization and exploration
+  of large tabular datasets on a laptop. It uses lazy evaluation, memory mapping, and efficient
+  columnar operations to handle datasets that don't fit in RAM — processing billions of rows with
+  sub-second interactivity without sampling or aggregating away detail.
+tagline: Explore and visualize billion-row datasets on a laptop
+
+github_url: https://github.com/vaexio/vaex
+website_url: https://vaex.io
+docs_url: https://vaex.io/docs
+install_command: pip install vaex
+
+category: Data
+tags:
+  - dataframe
+  - visualization
+  - out-of-core
+  - big-data
+  - python
+  - exploration
+  - lazy-evaluation
+  - memory-mapping
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: >-
+  Data scientists regularly work with tabular datasets too large to fit in RAM — logs, time-series
+  data, clickstreams, and scientific measurements — but most tools either sample the data (losing
+  detail) or require a cluster. Vaex solves this with an out-of-core, lazy-evaluation DataFrame
+  that memory-maps data from disk and only computes what is needed for the current query, enabling
+  interactive exploration, aggregation, and visualization of billion-row datasets on a single
+  machine without specialized infrastructure.
+
+use_cases:
+  - Interactively explore and visualize billion-row log and event datasets without loading them into RAM
+  - Compute summary statistics, histograms, and heatmaps on large time-series data with sub-second latency
+  - Filter, group, and aggregate streaming or archival datasets using lazy evaluation for instant response
+  - Display interactive scatter plots and density maps of large geospatial or ML feature datasets
+  - Preprocess and clean massive tabular datasets for downstream ML training pipelines efficiently
