@@ -1,0 +1,33 @@
+name: LangChain4j
+description: An idiomatic, open-source Java library for building LLM-powered applications on the JVM, offering a unified API over popular LLM providers, vector stores, tool calling, agents, and RAG — with seamless integration into Spring Boot and Quarkus.
+tagline: Build LLM-powered Java applications with LangChain's JVM-native port
+
+github_url: https://github.com/langchain4j/langchain4j
+website_url: https://langchain4j.github.io
+docs_url: https://docs.langchain4j.dev
+install_command: |
+  <dependency>
+    <groupId>dev.langchain4j</groupId>
+    <artifactId>langchain4j</artifactId>
+    <version>1.0.0</version>
+  </dependency>
+
+category: RAG
+tags: [java, rag, llm, jvm, agents, spring-boot, quarkus]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Java and JVM developers who want to build LLM-powered applications face a language gap — most
+  AI frameworks are Python-first with minimal Java support. LangChain4j bridges this gap by
+  providing a Java-native library with a unified API across LLM providers (OpenAI, Anthropic,
+  Google, Ollama), embedding stores (Pinecone, Chroma, Weaviate), and RAG pipelines. It
+  integrates natively with Spring Boot and Quarkus so enterprise Java teams can add AI features
+  to existing applications without introducing a separate Python service.
+
+use_cases:
+  - Add RAG-powered chat to Spring Boot applications using enterprise document stores and vector databases
+  - Build AI agents with tool calling and function invocation from Java services without Python dependencies
+  - Implement semantic search over internal documentation with embeddings stored in a JVM-compatible vector store
+  - Create multi-step LLM workflows that chain prompts, data extraction, and decision logic in pure Java
