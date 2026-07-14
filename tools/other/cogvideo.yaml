@@ -1,0 +1,24 @@
+name: CogVideo
+description: "CogVideo is an open-source text-to-video and image-to-video generation model series from THUDM/Tsinghua University supporting CogVideoX-2B, CogVideoX-5B, and CogVideoX1.5-5B models. It enables high-quality video generation from text prompts and input images using diffusion transformers, with fine-tuning support via CogKit and diffusers-based integration."
+tagline: "Open-source video generation with CogVideoX diffusion models"
+github_url: https://github.com/THUDM/CogVideo
+docs_url: https://github.com/THUDM/CogVideo/wiki
+install_command: pip install diffusers transformers accelerate torch
+category: Other
+tags:
+  - video-generation
+  - text-to-video
+  - image-to-video
+  - diffusion-models
+  - pytorch
+  - huggingface
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: |
+  Generating high-quality videos from text or images typically requires access to proprietary, closed-source APIs or expensive production pipelines. CogVideo solves this by providing state-of-the-art open-source video generation models — including the CogVideoX and CogVideoX1.5 series — that can run on consumer GPUs like the RTX 3060 and GTX 1080 Ti. It supports text-to-video, image-to-video, video continuation, LoRA fine-tuning, and DDIM inversion, making professional-grade AI video generation accessible to researchers, developers, and creators without cloud API costs.
+use_cases:
+  - "Generate short video clips from text descriptions for rapid prototyping, storyboarding, and creative exploration"
+  - "Create image-to-video animations by providing a static image as background with a text prompt for motion"
+  - "Fine-tune CogVideoX models on custom datasets using CogKit or LoRA for domain-specific video generation"
+  - "Continue or extend existing video clips with consistent style and content using video continuation"
