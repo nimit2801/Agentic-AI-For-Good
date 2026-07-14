@@ -1,0 +1,25 @@
+name: AdapterHub
+description: A unified library for parameter-efficient and modular transfer learning that extends Hugging Face Transformers with adapter modules, allowing you to fine-tune models by training only small injected weights (adapters) rather than the full model.
+tagline: Parameter-efficient fine-tuning with adapter modules
+category: Fine-tuning
+tags:
+  - fine-tuning
+  - adapters
+  - transformers
+  - nlp
+  - parameter-efficient
+  - lora
+  - pytorch
+  - transfer-learning
+pricing: free
+is_open_source: true
+license: Apache-2.0
+github_url: https://github.com/adapter-hub/adapters
+website_url: https://adapterhub.ml
+docs_url: https://docs.adapterhub.ml
+install_command: pip install adapter-transformers
+problem_solved: Full fine-tuning of large transformer models is computationally expensive and requires storing a separate copy of the model for each downstream task. AdapterHub solves this by allowing you to train small adapter modules inserted into pretrained transformer layers, enabling parameter-efficient multi-task learning with drastically reduced memory and storage requirements.
+use_cases:
+  - Fine-tuning large language models for multiple downstream tasks without retraining the full model
+  - Implementing parameter-efficient transfer learning for NLP tasks with limited computational resources
+  - Combining multiple adapter modules for multi-task and multi-domain learning from a single base model
