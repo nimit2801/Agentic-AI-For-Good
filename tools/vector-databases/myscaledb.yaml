@@ -1,0 +1,24 @@
+name: MyScaleDB
+description: MyScaleDB is a SQL-compatible vector database built on ClickHouse, enabling developers to manage structured data, text, vectors, JSON, and time-series data using familiar SQL queries. It combines high-performance vector search with full SQL analytics for filtered search and hybrid text-vector retrieval at billion-scale.
+tagline: SQL vector database for scalable AI applications
+
+github_url: https://github.com/myscale/MyScaleDB
+website_url: https://myscale.com
+docs_url: https://myscale.com/docs/en
+
+install_command: pip install clickhouse-connect
+
+category: Vector DB
+tags: [vector-database, sql, clickhouse, vector-search, rag, embeddings, similarity-search, ann]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Developers building AI applications with vector search often have to learn proprietary APIs and manage separate systems for structured data and vectors. MyScaleDB solves this by providing a fully SQL-compatible vector database built on ClickHouse, allowing teams to use familiar SQL for both vector similarity search and traditional data queries. Its MSTG algorithm enables high-performance billion-scale vector search with metadata filtering, all without requiring specialized vector database expertise.
+
+use_cases:
+  - "Build retrieval-augmented generation pipelines using SQL with native vector search and metadata filtering"
+  - "Perform hybrid search combining full-text search and vector similarity in a single SQL query"
+  - "Manage structured data, vectors, and time-series data on a unified SQL-compatible platform"
+  - "Scale vector search to billions of vectors with high-precision filtered search at any ratio"
