@@ -1,0 +1,23 @@
+name: Hamilton
+description: "Hamilton is a Python micro-framework for creating reusable, self-documenting dataflows and feature engineering pipelines. It enables data scientists and ML engineers to define transformation logic as plain Python functions with type hints — automatically generating lineage/tracing, DAG visualization, parallel execution, and metadata tracking without requiring any framework-specific boilerplate."
+tagline: "Declarative Python dataflows with automatic lineage and DAG execution"
+github_url: https://github.com/DAGWorks-Inc/hamilton
+docs_url: https://hamilton-docs.gitbook.io/docs
+install_command: pip install sf-hamilton
+category: Data
+tags:
+  - data-pipeline
+  - feature-engineering
+  - dataflow
+  - lineage
+  - mlops
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: |
+  Data transformation and feature engineering pipelines often become tangled, undocumented, and hard to debug as they grow — with no clear way to trace which transformations produced which outputs or how changes affect downstream consumers. Hamilton solves this by letting developers declare data transforms as typed Python functions, which the framework automatically compiles into an executable DAG with built-in lineage tracking, visualization, and parallel execution. Each function is independently testable, the full transformation graph is self-documenting, and integrations with Pandas, Spark, Ray, and DuckDB make it suitable for everything from local exploration to production pipelines.
+use_cases:
+  - "Build maintainable feature engineering pipelines with automatic lineage tracking and dependency visualization"
+  - "Define reusable data transformations as typed Python functions that are independently testable and composable"
+  - "Execute data pipelines across Pandas, Spark, Ray, or DuckDB backends without changing transformation logic"
+  - "Generate self-documenting DAGs from plain Python code for auditing, debugging, and sharing with stakeholders"
