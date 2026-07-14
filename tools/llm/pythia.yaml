@@ -1,0 +1,24 @@
+name: Pythia
+description: Pythia is a suite of 16 open-source large language models ranging from 14M to 12B parameters, created by EleutherAI for interpretability and learning dynamics research. Each model has 154 checkpoints saved throughout training on the same data in the same order, enabling causal study of how knowledge evolves during LLM pretraining.
+tagline: Suite of interpretability-focused LLMs for studying training dynamics
+
+github_url: https://github.com/EleutherAI/pythia
+website_url: https://www.eleuther.ai
+docs_url: https://arxiv.org/abs/2304.01373
+
+install_command: pip install transformers
+
+category: LLM
+tags: [llm, text-generation, open-source, interpretability, research, transformers, training-dynamics]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Studying how large language models acquire knowledge during training is difficult without access to intermediate training checkpoints and fully reproducible training setups. Pythia solves this by releasing 16 models at various scales with 154 checkpoints each — all trained on identical data in the same order — providing a standardized research platform for studying learning dynamics, memorization, and emergent behaviors across model sizes and training time.
+
+use_cases:
+  - "Study how knowledge and capabilities emerge during LLM training using 154 intermediate checkpoints per model"
+  - "Benchmark interpretability techniques across 16 model scales from 14M to 12B parameters"
+  - "Investigate memorization, bias, and safety properties of language models throughout the training process"
+  - "Reproduce and extend interpretability research with fully open data, models, and training code"
