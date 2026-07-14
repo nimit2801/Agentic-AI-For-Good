@@ -1,0 +1,23 @@
+name: MosaicML Composer
+description: "MosaicML Composer is a PyTorch-based library for training and fine-tuning deep learning models with maximum efficiency. It provides algorithmically optimized training methods including Layer-wise Adaptive Rate Scaling (LARS), progressive learning, gradient compression, and Selective Backprop to reduce training time by up to 7x while maintaining model quality — from LLMs to vision models."
+tagline: "Optimized PyTorch training with algorithmic speedups"
+github_url: https://github.com/mosaicml/composer
+docs_url: https://docs.mosaicml.com/projects/composer
+install_command: pip install mosaicml
+category: Fine-tuning
+tags:
+  - deep-learning
+  - pytorch
+  - training-optimization
+  - fine-tuning
+  - distributed-training
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: |
+  Training and fine-tuning large deep learning models is computationally expensive and time-consuming, often requiring days or weeks of GPU hours even with powerful hardware. MosaicML Composer solves this by providing a drop-in PyTorch library that algorithmically accelerates training — reducing wall-clock time by up to 7x without modifying model architectures. Techniques like progressive learning, gradient compression, and Selective Backprop automatically optimize the training loop, while built-in support for distributed training, FSDP, and mixed precision makes it straightforward to scale from single-GPU experiments to multi-node production training.
+use_cases:
+  - "Accelerate LLM pre-training and fine-tuning with algorithmic optimizations that reduce GPU hours by up to 7x"
+  - "Train vision models faster using progressive learning that increases image resolution through training stages"
+  - "Apply Selective Backprop to skip backward passes on easy examples, focusing compute on hard examples"
+  - "Run distributed training across multiple GPUs and nodes with FSDP, DDP, and gradient compression built in"

@@ -1,0 +1,23 @@
+name: Dragonfly
+description: "Dragonfly is a high-performance in-memory data store that is fully compatible with Redis and Memcached APIs, including vector search capabilities via the FT.SEARCH and TV.SEARCH commands. It achieves significantly higher throughput than Redis on the same hardware through a multi-threaded, shared-nothing architecture — making it ideal for AI caching, vector similarity search, and real-time ML inference serving."
+tagline: "High-throughput Redis-compatible data store with vector search"
+github_url: https://github.com/dragonflydb/dragonfly
+docs_url: https://www.dragonflydb.io/docs
+install_command: docker run --network=host docker.dragonflydb.io/dragonfly/dragonfly
+category: Vector DB
+tags:
+  - vector-search
+  - redis-compatible
+  - caching
+  - in-memory-database
+  - similarity-search
+pricing: free
+is_open_source: true
+license: BSL-1.1
+problem_solved: |
+  Traditional Redis deployments struggle with single-threaded throughput limitations as AI workloads scale — especially for vector similarity search, LLM response caching, and real-time feature serving. Dragonfly solves this with a multi-threaded, shared-nothing architecture that delivers up to 25x higher throughput on the same hardware while maintaining full Redis and Memcached API compatibility. Its built-in vector search support enables efficient vector similarity queries at production scale, making it a drop-in replacement for Redis that handles both conventional caching and AI-native workloads without separate infrastructure.
+use_cases:
+  - "Cache LLM responses and embeddings at high throughput with Redis-compatible APIs and no code changes"
+  - "Run vector similarity searches for RAG pipelines and semantic caching using Dragonfly's FT.SEARCH and TV.SEARCH commands"
+  - "Serve real-time ML features and model inference results with sub-millisecond latency at high concurrency"
+  - "Replace Redis or Memcached deployments in AI stacks to eliminate single-threaded throughput bottlenecks"

@@ -1,0 +1,23 @@
+name: TensorFlow Serving
+description: "TensorFlow Serving is a high-performance, production-grade model serving system for deploying machine learning models in production environments. It handles model versioning, automatic rollback, batching, and GPU acceleration — supporting TensorFlow, JAX, and ONNX models with gRPC and REST APIs that can serve millions of inference requests per second."
+tagline: "Production ML model serving with versioning and batching"
+github_url: https://github.com/tensorflow/serving
+docs_url: https://www.tensorflow.org/tfx/guide/serving
+install_command: docker pull tensorflow/serving
+category: Dev Tools
+tags:
+  - model-serving
+  - ml-deployment
+  - tensorflow
+  - inference
+  - mlops
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: |
+  Deploying ML models to production requires reliable infrastructure for serving inference requests, managing model versions, handling traffic spikes, and rolling back problematic updates — all without disrupting live applications. TensorFlow Serving solves this with a production-tested serving architecture that handles model loading, version management, automatic garbage collection, request batching, and GPU acceleration out of the box. Its gRPC and REST APIs integrate seamlessly with existing infrastructure, and support for TensorFlow, JAX, and ONNX models makes it a flexible choice for organizations of any scale.
+use_cases:
+  - "Serve trained TensorFlow and JAX models in production with automatic version management and canary rollouts"
+  - "Batch inference requests for optimal GPU utilization and throughput in high-volume prediction services"
+  - "Deploy multiple model versions simultaneously with A/B testing and automatic rollback on failures"
+  - "Integrate model serving into Kubernetes and container orchestration platforms using Docker images"
