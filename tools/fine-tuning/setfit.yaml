@@ -1,0 +1,24 @@
+name: SetFit
+description: Efficient few-shot learning with Sentence Transformers that achieves high accuracy without requiring prompts or large language models, making it accessible for developers with limited resources.
+tagline: Prompt-free few-shot fine-tuning with sentence embeddings
+category: Fine-tuning
+tags:
+  - fine-tuning
+  - few-shot
+  - nlp
+  - sentence-transformers
+  - huggingface
+  - classification
+  - machine-learning
+pricing: free
+is_open_source: true
+license: Apache-2.0
+github_url: https://github.com/huggingface/setfit
+website_url: https://huggingface.co/docs/setfit
+docs_url: https://huggingface.co/docs/setfit
+install_command: pip install setfit
+problem_solved: Fine-tuning language models for classification tasks typically requires many labeled examples and prompt engineering, which is time-consuming and computationally expensive. SetFit solves this by achieving high accuracy with just a few labeled samples per class without any prompts, using efficient fine-tuning of Sentence Transformers.
+use_cases:
+  - Text classification with very few labeled examples (8-64 samples per class) for rapid prototyping
+  - Building domain-specific classifiers where labeled data is scarce or expensive to obtain
+  - Creating custom NLP classifiers without prompt engineering or access to large language models
