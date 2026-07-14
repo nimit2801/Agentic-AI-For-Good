@@ -1,0 +1,24 @@
+name: Predibase
+description: Predibase is a fine-tuning platform that provides LoRAX (LoRA eXchange), a high-performance Multi-LoRA inference server capable of serving thousands of fine-tuned LLMs on a single GPU. It dramatically reduces serving costs while maintaining throughput and latency through dynamic adapter loading, heterogeneous continuous batching, and optimized CUDA kernels.
+tagline: Multi-LoRA inference server scaling to thousands of fine-tuned LLMs per GPU
+
+github_url: https://github.com/predibase/lorax
+website_url: https://predibase.com
+docs_url: https://predibase.github.io/lorax
+
+install_command: pip install lorax
+
+category: Fine-tuning
+tags: [fine-tuning, lora, llm-inference, model-serving, pytorch, transformers, llmops]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Serving many fine-tuned versions of large language models is prohibitively expensive when each variant requires its own GPU. Traditional approaches either duplicate model copies across GPUs or require costly model merging. Predibase LoRAX solves this by dynamically loading LoRA adapters just-in-time on a single GPU, packing heterogeneous adapter requests into the same batch, and scheduling adapter exchanges between GPU and CPU memory — enabling thousands of fine-tuned models on one GPU without compromising latency or throughput.
+
+use_cases:
+  - "Serve thousands of fine-tuned LoRA adapters on a single GPU for cost-effective multi-tenant LLM serving"
+  - "Run heterogeneous continuous batching across different adapters to maximize GPU utilization in production"
+  - "Deploy production-ready LLM inference with OpenAI-compatible API, structured outputs, and distributed tracing"
+  - "Merge multiple adapters per request for dynamic model ensembles without pre-merging weights"

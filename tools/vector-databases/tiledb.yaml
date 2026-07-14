@@ -1,0 +1,24 @@
+name: TileDB
+description: TileDB is a universal storage engine for dense and sparse multi-dimensional arrays with built-in vector search capabilities. It provides a powerful platform for managing AI embeddings, dataframes, and geospatial data with cloud-native storage support across S3, GCS, and Azure Blob Storage, enabling efficient similarity search on large-scale vector data alongside structured metadata.
+tagline: Universal storage engine with multi-dimensional array and vector search support
+
+github_url: https://github.com/TileDB-Inc/TileDB
+website_url: https://tiledb.com
+docs_url: https://cloud.tiledb.com/academy
+
+install_command: pip install tiledb-vector-search
+
+category: Vector DB
+tags: [vector-search, embeddings, storage-engine, multi-dimensional, dataframes, sparse-arrays, cloud-storage]
+pricing: freemium
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  AI applications often need to store and search vectors alongside rich structured metadata, requiring separate systems for vector search and data storage. TileDB solves this with a unified array storage engine that handles both dense and sparse multi-dimensional data — including embeddings — with native vector search, time-travel versioning, compression, and multi-cloud storage support. This eliminates the complexity of managing separate vector and metadata stores while providing robust data management features.
+
+use_cases:
+  - "Store and search AI embeddings with their associated metadata in a single unified storage backend"
+  - "Build production retrieval-augmented generation pipelines with time-travel data versioning and cloud-native scalability"
+  - "Manage large-scale scientific and geospatial arrays alongside vector embeddings for multi-modal AI applications"
+  - "Replace separate vector database and data warehouse with a single storage engine for simplified infrastructure"
