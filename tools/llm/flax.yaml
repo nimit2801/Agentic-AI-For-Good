@@ -1,0 +1,38 @@
+name: Flax
+description: >-
+  Flax is a high-performance neural network library for JAX designed for
+  flexibility and research. It provides a modular API for building transformers,
+  large language models, CNNs, and other deep learning architectures with easy
+  checkpointing, distributed training, and seamless integration with the JAX
+  ecosystem.
+tagline: Flexible neural network library for JAX
+
+github_url: https://github.com/google/flax
+website_url: https://flax.readthedocs.io
+docs_url: https://flax.readthedocs.io/en/latest/
+install_command: pip install flax
+
+category: LLM
+tags:
+  - jax
+  - neural-network
+  - deep-learning
+  - transformer
+  - research
+  - python
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >
+  Training large neural networks in JAX requires writing complex training loops,
+  managing model parameters and state, and handling distributed computation
+  manually. Flax provides a high-level, modular API that abstracts away these
+  complexities — offering pre-built layers, optimizers, checkpointing, and
+  multi-device training support — so researchers can focus on model architecture
+  and experimentation rather than infrastructure.
+
+use_cases:
+  - Train large language models and transformers with distributed data parallelism across multiple GPUs/TPUs
+  - Build and experiment with custom neural network architectures using a modular, functional API
+  - Leverage JAX's JIT compilation and auto-differentiation for high-performance research prototyping

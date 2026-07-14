@@ -1,0 +1,40 @@
+name: DocTR
+description: >-
+  docTR (Document Text Recognition) is a deep-learning-based OCR library that
+  provides accurate text detection, text recognition, layout analysis, and table
+  extraction from documents and images. It features pretrained vision-transformer
+  models for over 20 languages and handles complex layouts, curved text, and
+  mixed-language documents with state-of-the-art accuracy.
+tagline: Deep learning OCR with pretrained vision-transformer models
+
+github_url: https://github.com/mindee/doctr
+website_url: https://mindee.com
+docs_url: https://mindee.github.io/doctr
+install_command: pip install python-doctr
+
+category: Data
+tags:
+  - ocr
+  - document-intelligence
+  - text-recognition
+  - deep-learning
+  - pdf
+  - layout-analysis
+  - python
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >
+  Traditional OCR engines struggle with complex document layouts, curved or
+  skewed text, and mixed-language content — producing errors that cascade into
+  downstream NLP and data extraction pipelines. DocTR uses deep learning models
+  (vision transformers and CNN backbones) trained on diverse document datasets
+  to detect and recognize text in challenging scenarios, outputting structured
+  results with bounding boxes, confidence scores, and reading order for
+  downstream processing.
+
+use_cases:
+  - Extract text from scanned invoices, receipts, and business documents with layout-aware OCR for automated data entry
+  - Process multilingual documents containing mixed Latin, CJK, and Arabic scripts in a single pipeline
+  - Build document digitization workflows that preserve reading order, table structure, and formatting metadata

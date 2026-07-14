@@ -1,0 +1,38 @@
+name: OCRmyPDF
+description: >-
+  OCRmyPDF adds an OCR text layer to scanned PDF files, making them fully
+  searchable, selectable, and copyable while preserving the original page images
+  and visual appearance. It combines Tesseract OCR engine with Ghostscript PDF
+  processing to produce compressed, searchable PDF/A-compliant documents from
+  any scanned or image-based PDF.
+tagline: Add searchable OCR text layers to scanned PDFs
+
+github_url: https://github.com/ocrmypdf/OCRmyPDF
+website_url: https://ocrmypdf.readthedocs.io
+docs_url: https://ocrmypdf.readthedocs.io/en/latest/
+install_command: pip install ocrmypdf
+
+category: Data
+tags:
+  - ocr
+  - pdf
+  - document-processing
+  - searchable-pdf
+  - python
+  - tesseract
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: >
+  Scanned PDFs and image-based documents are not searchable or text-selectable,
+  making them inaccessible for full-text search, copy-paste, and downstream NLP
+  processing. OCRmyPDF solves this by applying OCR to each page and embedding
+  the recognized text as an invisible layer behind the original image — producing
+  standards-compliant PDF/A files that are both human-readable and machine-searchable
+  without modifying the visual appearance.
+
+use_cases:
+  - Convert scanned document archives into searchable PDFs for enterprise document management systems
+  - Prepare image-based PDFs for downstream NLP pipelines by adding a machine-readable text layer
+  - Automate batch OCR processing of incoming scanned invoices, contracts, and forms for digital workflows
