@@ -1,0 +1,24 @@
+name: Uptrace
+description: Uptrace is an open-source APM platform that supports distributed tracing, metrics, and logs using OpenTelemetry. It processes billions of spans on a single server with an intuitive query builder, rich dashboards, alerting rules, and integrations for most languages and frameworks.
+tagline: Open-source APM with OpenTelemetry for traces, metrics, and logs
+
+github_url: https://github.com/uptrace/uptrace
+website_url: https://uptrace.dev
+docs_url: https://uptrace.dev/docs
+install_command: pip install uptrace
+
+category: Monitoring
+tags: [apm, distributed-tracing, monitoring, observability, opentelemetry, clickhouse, go, python]
+pricing: freemium
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Distributed tracing and APM tools are often expensive, complex to set up, and tightly coupled to proprietary infrastructure. Uptrace provides an open-source OpenTelemetry-native APM that runs on a single server, ingesting billions of spans at low cost with pre-built dashboards for 50+ frameworks, an intuitive query builder, and alerting — all without a per-host license fee.
+
+use_cases:
+  - Trace requests across microservices using OpenTelemetry with a unified dashboard for spans, metrics, and logs
+  - Monitor application performance with 50+ pre-built dashboards that auto-activate as metrics arrive
+  - Set up distributed tracing alerts with Slack, email, and webhook notifications based on latency or error thresholds
+  - Deploy an APM on a single server that handles billions of spans at a fraction of the cost of proprietary solutions
+  - Use the integrated service graph and chart annotations to understand service dependencies and deployment impacts

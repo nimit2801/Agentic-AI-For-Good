@@ -1,0 +1,23 @@
+name: HyperDX
+description: HyperDX is an open-source observability platform that unifies logs, traces, metrics, and session replays in a single place on top of any ClickHouse cluster. It provides full-text and property search, APM dashboards, alerting, and live tailing — all optimized for ClickHouse with no complex query language required.
+tagline: ClickHouse-native observability unifying logs, traces, and session replays
+
+github_url: https://github.com/hyperdxio/hyperdx
+website_url: https://hyperdx.io
+docs_url: https://hyperdx.io/docs
+
+category: Monitoring
+tags: [observability, monitoring, logs, tracing, clickhouse, opentelemetry, apm, session-replay]
+pricing: freemium
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Traditional observability stacks require managing multiple tools (one for logs, one for traces, one for metrics) with complex query languages and expensive storage. HyperDX collapses everything into a single searchable ClickHouse-backed platform with intuitive text and property search, correlating logs with traces and session replays so engineers can diagnose production issues without switching between tools.
+
+use_cases:
+  - Search and correlate logs, traces, and session replays from a single interface to debug production incidents faster
+  - Monitor HTTP requests, database queries, and infrastructure health with pre-built APM dashboards
+  - Set up alerts on any metric or log pattern with adaptive thresholds and notifications to Slack, PagerDuty, and webhooks
+  - Deploy an observability platform on top of an existing ClickHouse cluster with self-hosted OpenTelemetry support
+  - Live-tail logs and traces for real-time debugging during incident response
