@@ -1,0 +1,24 @@
+name: Graphiti
+description: Graphiti is a framework for building and querying temporal context graphs for AI agents. Unlike static knowledge graphs, it tracks how facts change over time, maintains provenance to source data, and supports both prescribed and learned ontology for agents operating on evolving real-world data.
+tagline: Temporal context graphs for memory-aware AI agents
+
+github_url: https://github.com/getzep/graphiti
+website_url: https://www.getzep.com
+docs_url: https://github.com/getzep/graphiti#readme
+install_command: pip install graphiti
+
+category: RAG
+tags: [knowledge-graph, memory, agents, temporal, rag, python, context-graph]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AI agents struggle with context retention — facts change, relationships evolve, and static vector stores can't represent temporal dynamics or provenance. Graphiti solves this by providing temporal knowledge graphs that track how facts change over time, maintain source provenance, and support incremental updates without full recomputation, giving agents reliable, evolving memory.
+
+use_cases:
+  - Give AI agents persistent temporal memory that tracks how facts and relationships change over time
+  - Build context-aware applications that need to query past states and understand the evolution of information
+  - Integrate personalized agent memory that continuously updates from user interactions and external data
+  - Combine structured knowledge graph retrieval with semantic search for more accurate RAG pipelines
+  - Deploy an MCP server for Graphiti to give Claude, Cursor, and other MCP clients temporal context graph memory
