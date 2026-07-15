@@ -1,0 +1,24 @@
+name: SPLADE
+description: SPLADE is a sparse neural retrieval model that learns query and document sparse representations via BERT-based expansion and regularization. It combines the effectiveness of dense retrieval with the efficiency of inverted indexes, providing interpretable and fast first-stage ranking for information retrieval systems.
+tagline: Sparse neural search that bridges dense retrieval with inverted index efficiency
+
+github_url: https://github.com/naver/splade
+website_url: https://naver.github.io/splade
+docs_url: https://github.com/naver/splade#readme
+install_command: pip install splade
+
+category: RAG
+tags: [information-retrieval, neural-search, sparse-representation, nlp, beir, bert]
+pricing: free
+is_open_source: true
+license: NOASSERTION
+
+problem_solved: |
+  Traditional dense retrieval models produce high-dimensional embeddings that require approximate nearest neighbor search and specialized vector databases, while BM25 keyword search lacks semantic understanding. SPLADE bridges this gap by learning sparse representations via BERT that work with standard inverted indexes, delivering retrieval quality competitive with dense models while being interpretable and searchable without specialized infrastructure.
+
+use_cases:
+  - Build a retrieval pipeline that combines semantic understanding with inverted index efficiency on standard hardware
+  - Replace or augment BM25-based search with neural sparse retrieval for better out-of-domain generalization
+  - Index and retrieve documents at scale without a vector database — standard Lucene or Elasticsearch indexes work
+  - Implement hybrid retrieval systems that fuse sparse (SPLADE) and dense (DPR/ColBERT) signals for maximum recall
+  - Deploy interpretable retrieval where every match can be traced to explicit term overlap
