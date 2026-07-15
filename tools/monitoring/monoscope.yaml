@@ -1,0 +1,23 @@
+name: Monoscope
+description: Monoscope is an AI-powered observability platform that lets you ingest and explore logs, traces, and metrics using natural language queries. It stores data in S3-compatible buckets and provides LLM-driven analysis for rapid incident response, custom dashboards, and intelligent alerting.
+tagline: AI-native observability with natural language querying
+
+github_url: https://github.com/monoscope-tech/monoscope
+website_url: https://monoscope.tech
+docs_url: https://docs.monoscope.tech
+
+category: Monitoring
+tags: [observability, monitoring, logging, tracing, metrics, opentelemetry, llm, devtools]
+pricing: freemium
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Traditional observability platforms require complex query languages (PromQL, LogQL) to extract insights from telemetry data, creating a high barrier for developers who just need answers fast. Monoscope eliminates this friction by letting teams query logs, traces, and metrics in natural language via LLMs, while storing all data cost-effectively in S3-compatible object storage.
+
+use_cases:
+  - Query production logs and traces using natural language to diagnose incidents without learning a query language
+  - Unify observability data from OpenTelemetry, Prometheus, and other sources into a single S3-backed platform
+  - Set up intelligent alerts that adapt to traffic patterns and reduce noise with rich context in every notification
+  - Monitor API performance, database queries, and infrastructure health from pre-built dashboards
+  - Capture full-stack context for every issue — from user action to database query — via session replay and trace correlation

@@ -1,0 +1,24 @@
+name: HertzBeat
+description: Apache HertzBeat is an AI-powered open-source real-time observability system that unifies metrics and log collection, centralized alerting, and intelligent management and analysis. It requires no agent, supports Prometheus-compatible protocols, and provides powerful custom monitoring and status page building.
+tagline: AI-powered real-time monitoring without the agent overhead
+
+github_url: https://github.com/apache/hertzbeat
+website_url: https://hertzbeat.apache.org
+docs_url: https://hertzbeat.apache.org/docs
+install_command: docker run -d -p 1157:1157 apache/hertzbeat
+
+category: Monitoring
+tags: [monitoring, observability, alerting, metrics, logging, apache, devops, prometheus]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Setting up traditional monitoring stacks requires deploying and maintaining agents on every host, configuring complex collectors, and managing separate systems for metrics, logs, and alerting. HertzBeat eliminates the agent requirement entirely, unifying collection, analysis, alerting, and notification into a single platform with configurable protocol support for HTTP, JMX, SSH, JDBC, and Prometheus.
+
+use_cases:
+  - Monitor applications, databases, operating systems, and cloud-native infrastructure without installing agents on any target
+  - Unify metrics and log collection with centralized alerting, threshold rules, grouping, silencing, and suppression
+  - Build custom status pages that communicate real-time service health to end users
+  - Deploy a high-performance, horizontally scalable observability cluster with multi-network isolation
+  - Integrate alerts with Email, Discord, Slack, Telegram, DingTalk, WeChat, FeiShu, and Webhook
