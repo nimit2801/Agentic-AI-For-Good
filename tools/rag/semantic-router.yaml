@@ -1,0 +1,24 @@
+name: Semantic Router
+description: Semantic Router is a superfast AI decision-making layer for LLMs and agents that routes requests using semantic vector space instead of slow LLM generations. It enables dynamic tool selection, intent-based routing, and multi-modal decision processing at millisecond latency.
+tagline: Superfast semantic routing layer for LLM agents and tools
+
+github_url: https://github.com/aurelio-labs/semantic-router
+website_url: https://docs.aurelio.ai/semantic-router
+docs_url: https://docs.aurelio.ai/semantic-router/get-started/introduction
+install_command: pip install semantic-router
+
+category: RAG
+tags: [routing, llm, agents, semantic-search, intent-classification, ai-decision, python]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  LLM agents making tool-use decisions via generation calls introduces high latency (500ms+) and unpredictable costs. Semantic Router replaces this with a vector-based routing layer that classifies inputs and selects the appropriate route in under 10ms, dramatically reducing latency and cost for AI applications that need to make frequent routing decisions.
+
+use_cases:
+  - Route user queries to the correct LLM or tool based on semantic intent instead of slow LLM-generated function calls
+  - Build dynamic chatbot flows where the conversation path is determined by semantic similarity to predefined routes
+  - Implement multi-modal routing that handles text, images, and other inputs through the same decision layer
+  - Reduce AI application latency by replacing LLM-based routing decisions with millisecond vector comparisons
+  - Create hybrid routes that combine semantic routing with keyword and LLM fallback for robust decision making

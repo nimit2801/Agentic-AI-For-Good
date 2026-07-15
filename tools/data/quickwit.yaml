@@ -1,0 +1,23 @@
+name: Quickwit
+description: Quickwit is an open-source cloud-native search engine for observability use cases including log management and distributed tracing. It is designed for cloud storage, providing sub-second search on object stores like S3 with significantly lower storage costs than traditional search engines.
+tagline: Cloud-native search engine for logs and traces on object storage
+
+github_url: https://github.com/quickwit-oss/quickwit
+website_url: https://quickwit.io
+docs_url: https://quickwit.io/docs
+
+category: Data
+tags: [search-engine, log-management, distributed-tracing, observability, rust, tantivy, cloud-native, big-data]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Traditional search engines like Elasticsearch are expensive to operate at scale because they require local SSDs and triple replication. Quickwit was built from the ground up for object storage (S3, GCS, Azure Blob), achieving sub-second search on data stored in cloud buckets with native decoupling of compute and storage, drastically reducing observability storage costs.
+
+use_cases:
+  - Ingest and search petabytes of logs stored on S3 or GCS with sub-second query latency
+  - Replace Elasticsearch for log management with significantly lower infrastructure costs using cloud object storage
+  - Index and query distributed tracing data with full OpenTelemetry support
+  - Run analytics queries across large datasets without pre-aggregation or warm storage tiers
+  - Deploy a search infrastructure that scales by adding more search instances without re-replicating data
