@@ -1,0 +1,31 @@
+name: Backstage
+description: An open platform for building developer portals that centralize infrastructure, services, documentation, and tooling. Backstage provides a unified developer experience through a plugin architecture and a software catalog.
+tagline: Build your own developer portal with a plugin-based architecture
+
+github_url: https://github.com/backstage/backstage
+website_url: https://backstage.io
+docs_url: https://backstage.io/docs
+
+category: Dev Tools
+tags: [developer-portal, platform-engineering, services, catalog, plugins, typescript, react]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: npx @backstage/create-app
+
+problem_solved: |
+  As engineering organizations grow, developers waste time navigating between dozens of
+  tools — CI/CD dashboards, monitoring alerts, documentation wikis, API catalogs, and
+  service ownership spreadsheets. Backstage brings everything into a single, extensible
+  developer portal. Its software catalog automatically indexes all services, libraries,
+  and deployments. Plugins surface the right information where developers need it: test
+  results next to a service, API docs alongside the code, deployment status beside the
+  runbook. For AI teams, Backstage can catalog models, training runs, and feature stores.
+
+use_cases:
+  - Create a unified service catalog that shows ownership, dependencies, and health for every microservice
+  - Build a documentation hub where tech docs are auto-generated from code annotations and live next to their services
+  - Centralize CI/CD status, monitoring dashboards, and on-call schedules in one place
+  - Create a plugin to catalog ML models, their training runs, and deployment history for AI teams
+  - Surface API documentation, test coverage, and security audit results alongside each service's detail page
