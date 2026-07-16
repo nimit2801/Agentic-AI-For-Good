@@ -1,0 +1,28 @@
+name: TextGrad
+description: Automatic differentiation for AI outputs — TextGrad backpropagates textual feedback through LLM-based systems to optimize prompts, generations, and agent outputs using gradient-like textual signals instead of numerical gradients.
+tagline: Automatic differentiation through text — optimize LLM outputs with backpropagation
+
+github_url: https://github.com/zou-group/textgrad
+
+category: Dev Tools
+tags: [python, pytorch, llm, optimization, gradient, backpropagation, auto-diff]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install textgrad
+
+problem_solved: |
+  Optimizing LLM outputs currently relies on hand-tuning prompts or reinforcement learning.
+  TextGrad brings automatic differentiation to text: it treats each LLM call as a differentiable
+  operation in a computation graph. When you define a loss function on the output (e.g., "is
+  this molecule synthetically feasible?"), TextGrad backpropagates textual gradients through
+  the graph — improving prompts, chain-of-thought reasoning, or LLM-generated code in a
+  principled, automated way rather than through manual iteration.
+
+use_cases:
+  - Automatically optimize few-shot prompts by backpropagating through the prompt encoder
+  - Improve chain-of-thought reasoning quality by tuning intermediate reasoning steps
+  - Optimize LLM-generated code for correctness by defining test-passing as the loss function
+  - Fine-tune agent behavior in multi-step pipelines where each step is an LLM call
+  - Automatically discover better system prompts for classification and extraction tasks
