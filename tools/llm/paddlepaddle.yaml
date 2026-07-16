@@ -1,0 +1,31 @@
+name: PaddlePaddle
+description: Baidu's open-source deep learning platform with comprehensive support for LLM training, inference, and deployment. Features the PaddleNLP library for large language model development and a dynamic-to-static graph compiler.
+tagline: Baidu's deep learning platform with native LLM and NLP support
+
+github_url: https://github.com/PaddlePaddle/Paddle
+website_url: https://www.paddlepaddle.org
+docs_url: https://www.paddlepaddle.org/documentation/docs/en/guides/index_en.html
+
+category: LLM
+tags: [python, deep-learning, nlp, llm, training, inference, baidu, framework]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install paddlepaddle
+
+problem_solved: |
+  Deep learning frameworks like TensorFlow and PyTorch are general-purpose, but training
+  large language models requires specialized tooling for distributed training, mixed
+  precision, and memory optimization. PaddlePaddle provides a complete LLM development
+  stack: PaddleNLP offers pre-built model architectures, training recipes, and distributed
+  training support out of the box. Its dynamic-to-static compiler converts Python training
+  code into optimized static graphs for production inference, bridging the gap between
+  research flexibility and deployment performance.
+
+use_cases:
+  - Train and fine-tune large language models using PaddleNLP's pre-built architectures and recipes
+  - Deploy LLMs for production inference with the compiled static graph for maximum throughput
+  - Build NLP pipelines for text classification, named entity recognition, and machine translation
+  - Use the distributed training toolkit to scale model training across multiple GPUs or nodes
+  - Leverage PaddleCloud for end-to-end ML workflows from data processing to model serving

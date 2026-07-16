@@ -1,0 +1,31 @@
+name: MindSpore
+description: Huawei's open-source deep learning framework designed for efficient AI training and inference across devices, edge, and cloud. Features automatic differentiation, dynamic graphs, and native Ascend processor support.
+tagline: Huawei's AI framework for device-edge-cloud unified training and inference
+
+github_url: https://github.com/mindspore-ai/mindspore
+website_url: https://www.mindspore.cn
+docs_url: https://www.mindspore.cn/docs/en/master/index.html
+
+category: LLM
+tags: [python, deep-learning, framework, training, inference, huawei, ascend, edge]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install mindspore
+
+problem_solved: |
+  Training AI models across different hardware platforms typically requires separate code
+  paths for different accelerators. MindSpore unifies device, edge, and cloud training
+  with a single framework that automatically optimizes computation graphs for the target
+  hardware. Its automatic differential engine generates gradients without manual
+  gradient functions, and the MindIR intermediate representation enables model transfer
+  between training and inference environments. For developers targeting Huawei Ascend
+  processors, MindSpore provides native, optimized support not available in other frameworks.
+
+use_cases:
+  - Train deep learning models on Huawei Ascend processors with native hardware optimization
+  - Deploy models across device, edge, and cloud environments using a single codebase
+  - Build computer vision pipelines for image classification, object detection, and segmentation
+  - Develop NLP models with automatic differentiation and dynamic graph execution
+  - Use MindSpore Lite to deploy optimized models on mobile and IoT devices
