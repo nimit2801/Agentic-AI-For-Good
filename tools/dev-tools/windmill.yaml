@@ -1,0 +1,30 @@
+name: Windmill
+description: An open-source developer platform and workflow engine that turns scripts into auto-generated UIs, scheduled jobs, webhooks, and workflows. Write in TypeScript, Python, Go, or Bash — Windmill handles execution, monitoring, and scaling.
+tagline: Turn scripts into workflows, UIs, and scheduled jobs — instantly
+
+github_url: https://github.com/windmill-labs/windmill
+website_url: https://windmill.dev
+docs_url: https://docs.windmill.dev
+
+category: Dev Tools
+tags: [workflow, automation, scripts, typescript, python, go, low-code, scheduling]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install windmill-api
+
+problem_solved: |
+  Building internal tools and automations usually means either writing full-stack web apps
+  or gluing together fragile no-code tools. Windmill takes scripts you already write — in
+  TypeScript, Python, Go, or Bash — and auto-generates UIs, REST APIs, scheduled tasks,
+  Slack commands, and webhooks around them. It handles execution, state management,
+  retries, and monitoring. Developers write business logic as functions; Windmill provides
+  the infrastructure to run them on triggers, schedules, or user requests.
+
+use_cases:
+  - Turn a Python data cleaning script into an internal dashboard with auto-generated UI
+  - Schedule recurring data syncs between SaaS tools without maintaining a cron server
+  - Build Slack slash commands that invoke TypeScript or Python scripts with user parameters
+  - Create approval workflows where a human reviews and approves automated actions
+  - Hook webhooks from GitHub, Stripe, or Sentry to run custom remediation scripts automatically
