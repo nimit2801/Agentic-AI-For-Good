@@ -1,0 +1,24 @@
+name: Gotenberg
+tagline: Docker-powered stateless API for document conversion
+description: |-
+  Gotenberg provides a stateless HTTP API for converting HTML, Markdown, and Office documents into PDFs. Powered by Docker and Chromium under the hood, it handles document conversion at scale without needing a browser automation setup or complex dependencies.
+problem_solved: |-
+  Converting HTML, Markdown, or Office documents to PDF at scale typically requires headless browser automation, complex dependency chains, and careful resource management. Gotenberg wraps this into a single Docker container with a clean HTTP API — no Puppeteer scripts, no system dependencies, just a POST request. It handles concurrent conversions, resource isolation, and memory limits out of the box.
+github_url: https://github.com/gotenberg/gotenberg
+website_url: https://gotenberg.dev
+docs_url: https://gotenberg.dev/docs
+category: Data
+tags:
+  - document-conversion
+  - pdf-generation
+  - html-to-pdf
+  - api
+  - docker
+pricing: free
+is_open_source: true
+license: MIT
+use_cases:
+  - "Converting HTML invoices and receipts to PDF for archival and distribution"
+  - "Generating PDF reports from web dashboards using Markdown or HTML templates"
+  - "Processing Office documents (DOCX, XLSX, PPTX) into PDF for unified document pipelines"
+  - "Automating batch PDF conversion for document-heavy workflows in RAG data pipelines"
