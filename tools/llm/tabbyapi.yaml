@@ -1,0 +1,26 @@
+name: TabbyAPI
+description: An open-source, OpenAI-compatible API server for running large language models locally with support for various quantization formats, custom models, and multi-user access.
+tagline: Run local LLMs with an OpenAI-compatible API
+
+github_url: https://github.com/theroyallab/tabbyAPI
+website_url: https://tabbyapi.ai
+
+category: LLM
+tags: [llm, inference, local-ai, openai-compatible, api-server, quantization, self-hosted]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Running open-source LLMs locally typically requires complex setup, model format conversion, and
+  custom client code. TabbyAPI provides a drop-in OpenAI API replacement that works with any
+  OpenAI-compatible client. It supports the ExLlamaV2 engine for fast inference, various
+  quantization formats (GPTQ, EXL2, FP16), custom model configurations, and multi-user access
+  with API key management. Deployment is a single Docker command, and it works on consumer GPUs.
+
+use_cases:
+  - Deploy a local OpenAI-compatible endpoint for testing LLM integrations without cloud API costs
+  - Run quantized LLMs on consumer GPUs for private inference of sensitive data
+  - Set up a multi-user inference server for a team with per-user API keys and rate limits
+  - Experiment with different model quantizations (GPTQ, EXL2, FP16) to find the best speed-quality tradeoff
+  - Build a local RAG pipeline with embedding models and LLMs all running through one API endpoint

@@ -1,0 +1,31 @@
+name: PromptLayer
+description: A prompt observability and version control platform that logs, tracks, and analyzes every LLM prompt and response for debugging, evaluation, and optimization at scale.
+tagline: Log, version, and analyze every prompt your LLM ever sees
+
+github_url: https://github.com/MagnivOrg/prompt-layer-library
+website_url: https://www.promptlayer.com
+docs_url: https://docs.promptlayer.com
+
+install_command: pip install promptlayer
+
+category: LLM
+tags: [llm, observability, prompt-management, tracking, evaluation, python, version-control, logging]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  When an LLM application produces a bad response, developers have no record of what prompt was used,
+  what the model returned, or which version of the prompt template generated the output. Debugging
+  becomes guesswork. PromptLayer captures every prompt and response sent to any LLM provider —
+  including OpenAI, Anthropic, Cohere, and local models — with metadata like model version,
+  temperature, and latency. You can search historical prompts, compare responses across model
+  versions, and track prompt performance over time, making LLM debugging as systematic as
+  traditional software debugging.
+
+use_cases:
+  - Log every LLM API call with prompt templates, model parameters, and response content for full traceability
+  - Search and replay historical prompts to debug why an LLM produced a specific bad response
+  - Version-control prompt templates and track which version produced the best outcomes via A/B metrics
+  - Compare responses from different models or parameters on the same prompt to optimize cost and quality
+  - Set up automated regression detection that alerts when prompt changes degrade response quality
