@@ -1,0 +1,33 @@
+name: Graphiti
+description: >-
+  Graphiti is an open-source framework for building and querying real-time
+  knowledge graphs that represent agent state, entity relationships, and
+  temporal business context for AI agents.
+tagline: Build real-time knowledge graphs for AI agents
+
+github_url: https://github.com/getzep/graphiti
+website_url: https://graphiti.help/
+docs_url: https://help.graphiti.help/
+
+category: RAG
+tags: [python, knowledge-graph, rag, agents, temporal, entities, relationships]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AI agents lack persistent, evolving context about entities and their
+  relationships — they operate in stateless turns, forgetting past
+  interactions and failing to build a cohesive understanding over time.
+  Graphiti maintains a real-time knowledge graph that dynamically updates
+  as agents interact, integrating temporal awareness, entity deduplication,
+  and semantic search to provide long-running context for agentic workflows.
+
+use_cases:
+  - Equip customer support agents with a persistent knowledge graph of user preferences, past issues, and account history across sessions.
+  - Power research assistants that build and query evolving entity-relationship graphs from documents and conversations over time.
+  - Enable agentic workflows that need temporal reasoning — tracking how entity relationships change across days or weeks.
+  - Integrate with LLM agents to provide structured, queryable memory that goes beyond simple vector stores or chat history.
+  - Build real-time monitoring dashboards that visualize entity networks and relationship changes as agents operate.
+
+install_command: pip install graphiti
