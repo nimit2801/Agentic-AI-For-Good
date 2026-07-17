@@ -1,0 +1,25 @@
+name: Grafana Tempo
+tagline: Cost-effective distributed tracing backend at massive scale
+description: |-
+  Grafana Tempo is a horizontally scalable distributed tracing backend that stores traces in object storage with minimal indexing, making it dramatically cheaper to operate than traditional tracing systems. It ingests traces via OpenTelemetry, Jaeger, and Zipkin protocols, and provides deep integration with Grafana for trace exploration and correlation with logs and metrics.
+problem_solved: |-
+  Distributed tracing backends typically require expensive indexing of every span, making trace storage cost-prohibitive at scale. Tempo stores traces in cheap object storage (S3, GCS, Azure) with minimal indexing, reducing storage costs by 10x or more. It ingests traces in OpenTelemetry, Jaeger, or Zipkin format without any vendor lock-in, and integrates with Grafana for trace discovery via service name, duration, and tags.
+github_url: https://github.com/grafana/tempo
+website_url: https://grafana.com/oss/tempo
+docs_url: https://grafana.com/docs/tempo
+category: Monitoring
+tags:
+  - distributed-tracing
+  - observability
+  - monitoring
+  - grafana
+  - opentelemetry
+pricing: freemium
+is_open_source: true
+license: AGPL-3.0
+use_cases:
+  - "Storing and querying millions of traces per day using cheap object storage instead of expensive indexing"
+  - "Correlating traces with Loki logs and Prometheus metrics in Grafana for root cause analysis"
+  - "Ingesting traces from OpenTelemetry-instrumented applications without vendor-specific agents"
+  - "Searching traces by service name, duration, span tags, and time range for incident investigation"
+  - "Operating a multi-tenant tracing backend with configurable retention and cross-cluster aggregation"

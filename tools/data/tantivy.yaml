@@ -1,0 +1,26 @@
+name: Tantivy
+tagline: Fast full-text search engine library written in Rust
+description: |-
+  Tantivy is a full-text search engine library written in Rust, inspired by Apache Lucene. It provides fast indexing and BM25-based search with a clean API, supports tokenizers, aggregations, and fuzzy queries, and can be used as a standalone search engine or embedded directly into applications via its Rust, Python, or C API bindings.
+problem_solved: |-
+  Building full-text search into applications often means either running a heavyweight external service like Elasticsearch or writing fragile custom search logic. Tantivy provides Lucene-quality full-text search as a library — embeddable directly into Rust or Python applications with no external dependencies. It handles indexing, tokenization, BM25 scoring, filtering, faceting, and fuzzy search with performance competitive to Elasticsearch but without the operational overhead.
+github_url: https://github.com/quickwit-oss/tantivy
+website_url: https://tantivy.search
+docs_url: https://docs.rs/tantivy
+install_command: pip install tantivy
+category: Data
+tags:
+  - full-text-search
+  - search-engine
+  - rust
+  - indexing
+  - nlp
+pricing: free
+is_open_source: true
+license: MIT
+use_cases:
+  - "Embedding full-text search into Python applications without running Elasticsearch"
+  - "Building a document retrieval pipeline with BM25 scoring for RAG pre-filtering"
+  - "Indexing large text corpora for offline analytics and keyword-based document discovery"
+  - "Supporting fuzzy search, phrase queries, and faceted search in content management systems"
+  - "Creating a low-latency search backend for documentation sites, knowledge bases, or e-commerce"
