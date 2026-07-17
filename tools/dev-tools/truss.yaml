@@ -1,0 +1,26 @@
+name: Truss
+tagline: Python framework for serving AI models in production
+description: |-
+  Truss is an open-source Python framework for packaging, deploying, and serving machine learning models. It wraps models with a production-ready HTTP server, handles dependency management, and provides a standardized interface for model serving — enabling teams to deploy models from any framework to any cloud.
+problem_solved: |-
+  Deploying ML models to production involves more than just exporting weights — you need an HTTP server, dependency management, request validation, batching, and resource configuration. Teams end up writing and maintaining custom serving boilerplate for every model. Truss standardizes this by wrapping any model in a consistent interface with automatic server generation, dependency resolution, and one-command deployment to any cloud provider.
+github_url: https://github.com/basetenlabs/truss
+website_url: https://truss.baseten.co
+docs_url: https://truss.baseten.co/docs
+install_command: pip install truss
+category: Dev Tools
+tags:
+  - model-serving
+  - deployment
+  - mlops
+  - python
+  - infrastructure
+pricing: free
+is_open_source: true
+license: MIT
+use_cases:
+  - "Deploying a fine-tuned LLM as a REST API endpoint with automatic batching and scaling"
+  - "Packaging a computer vision model with its dependencies for serverless or container deployment"
+  - "Running a multi-model inference pipeline with shared infrastructure and centralized monitoring"
+  - "Migrating Jupyter notebook models to production serving without rewriting the prediction logic"
+  - "Standardizing model deployment across teams with a consistent interface and CI/CD integration"
