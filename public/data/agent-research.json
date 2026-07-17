@@ -1,61 +1,71 @@
 {
-  "generatedAt": "2026-07-13T18:31:03Z",
+  "generatedAt": "2026-07-17T18:32:04Z",
   "windowDays": 7,
-  "summary": "This cycle says major labs are packaging agent workflows for broader adoption (Gemini Spark, Codex mobile), Codex keeps expanding — mobile, enterprise, and deeper agent-loop engineering, event-driven and browser/MCP plumbing is becoming part of the agent conversation. The deeper pattern is that agentic AI is being compressed, packaged, and made more inspectable at the same time.",
+  "summary": "The strongest current signal is that agentic AI keeps moving away from vague demos and toward workflows people can actually run, inspect, and compare.",
   "sourceStats": {
-    "items": 55,
+    "items": 47,
     "sources": {
-      "GitHub": 50,
-      "Google AI": 1,
-      "Hacker News": 3,
-      "OpenAI": 1
+      "Anthropic": 1,
+      "GitHub": 42,
+      "Hacker News": 2,
+      "OpenAI": 2
     }
   },
   "highlights": [
     {
-      "title": "Expanding Managed Agents in Gemini API: background tasks, remote MCP and more",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api/",
-      "publishedAt": "Tue, 07 Jul 2026 08:54:00 +0000",
-      "source": "Google AI",
-      "meta": "Tue, 07 Jul 2026 08:54:00 GMT",
-      "topics": [
-        "Tool use",
-        "Major labs",
-        "Coding agents"
-      ],
-      "score": 180,
-      "summary": "Expanding Managed Agents in Gemini API: background tasks, remote MCP and more",
-      "why": "MCP keeps surfacing as the connective tissue for more grounded agent workflows — standard tool surfaces are still one of the cleanest leverage points in the stack."
-    },
-    {
-      "title": "Australian Payments Plus moves faster with ChatGPT and Codex",
-      "url": "https://openai.com/index/australian-payments-plus",
-      "publishedAt": "Tue, 07 Jul 2026 00:00:00 GMT",
+      "title": "The US is advancing AI safety through state and federal action",
+      "url": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action",
+      "publishedAt": "Wed, 15 Jul 2026 12:00:00 GMT",
       "source": "OpenAI",
-      "meta": "Tue, 07 Jul 2026 00:00:00 GMT",
+      "meta": "Wed, 15 Jul 2026 12:00:00 GMT",
       "topics": [
-        "Tool use",
-        "Major labs",
-        "Coding agents"
+        "Memory and state",
+        "Major labs"
       ],
       "score": 180,
-      "summary": "Australian Payments Plus moves faster with ChatGPT and Codex",
-      "why": "The strongest practical signal right now is still better tooling around how models call, sequence, and recover from actions."
+      "summary": "The US is advancing AI safety through state and federal action",
+      "why": "A lot of the quality gap in agents still comes down to state handling, durability, and clearer control flow."
     },
     {
-      "title": "Show HN: Rowboat – Open-source, local-first alternative to Claude Desktop",
+      "title": "How to manage AI investments in the agentic era",
+      "url": "https://openai.com/index/managing-ai-investments-in-agentic-era",
+      "publishedAt": "Tue, 14 Jul 2026 10:00:00 GMT",
+      "source": "OpenAI",
+      "meta": "Tue, 14 Jul 2026 10:00:00 GMT",
+      "topics": [
+        "Major labs"
+      ],
+      "score": 180,
+      "summary": "How to manage AI investments in the agentic era",
+      "why": "Major lab launches still reshape the practical design space for agent builders almost overnight."
+    },
+    {
+      "title": "Claude for K-12 teachers: Get back to why you started teaching",
+      "source": "Anthropic",
+      "url": "https://claude.com/solutions/teachers",
+      "meta": "5 pts · 0 comments",
+      "topics": [
+        "Major labs"
+      ],
+      "publishedAt": "2026-07-15T12:40:51Z",
+      "score": 100,
+      "summary": "",
+      "why": "Major lab launches still reshape the practical design space for agent builders almost overnight."
+    },
+    {
+      "title": "Launch HN: Agnost AI (YC S26) – Extract user feedback from agent conversations",
       "source": "Hacker News",
-      "url": "https://github.com/rowboatlabs/rowboat",
-      "meta": "218 pts · 94 comments",
+      "url": "https://agnost.ai",
+      "meta": "85 pts · 49 comments",
       "topics": [
         "Tool use",
-        "Multi-agent workflows",
         "Memory and state",
+        "Evaluation",
         "Voice and multimodal"
       ],
-      "publishedAt": "2026-07-07T16:10:44Z",
-      "score": 808,
-      "summary": "Claude’s desktop app is brilliant, but for our own daily work we kept wanting it to be less like a chat app and more like a full-fledged work app. Rowboat is our attempt at that, including the ability to build your own work surfaces inside Rowboat (more below). Our repo is https:&#x2F;&#x2F;github.com&#x2F;rowboatlabs&#x2F;rowboat , and there’s a demo video here: https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=et5yQABJ3xI In a previous startup, we built a deep-learning product for enterprise support reps, including teams supporting P&G brands. Models took live notes, suggested replies, and recommended actions while support reps were on calls or handling emails. One lesson stuck with us: it&#x27;s not enough for the AI to be right, the help has to show up where the work is happening. So we added what we came to call “work surfaces”: dedicated areas for email, meetings, notes, browser, and parallel coding, where the assistant can help inside the workflow itself rather than only through chat: - Email client: Rowboat has a simple email client that sorts incoming emails into important vs. everything else, and pre-creates drafts for important emails. As you edit and send emails, it takes notes on your style, so future drafts get closer to your voice. - Meeting notes: We built a Granola-style local meeting notetaker. Notes are stored as plain Markdown files on your machine. After a meeting, Rowboat feeds the notes back into the knowledge graph and updates the relevant people, project, and topic notes. - Browser: We added a built-in browser, isolated from your main one, where you can log in only to the accounts you want the assistant to help with. The assistant uses browser-use skills to navigate websites. - Parallel coding: The code-mode inside Rowboat lets you spin multiple instances of Claude Code or Codex and either work with them directly or let Rowboat use your work context to orchestrate them. We built an ACP (Agent Client Protocol) client in Rowboat for this. - Notes: Rowboat has an Obsidian-style local note-taking system. It comes with graph view, bases view, and voice notes. You can also sync Google Docs files and edit them inside Rowboat. You can also build your own work surfaces inside Rowboat (web apps). Each app gets its own UI and a background agent, and can use all of Rowboat&#x27;s tools, product integrations, and your work memory. For instance: an app to manage GitHub activity, project tracking, or ads campaign management. There are a few community apps at launch you can search and install, and you can publish your own by creating a GitHub repo for it and registering it. Rowboat also indexes your work into a knowledge graph that all of the above surfaces use to have better context. We did a Show HN a few months back on this: https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=46962641 . As an example that ties some of these together: you can create an app inside Rowboat that collects feature requests from your email, meetings, and Slack and ranks them, then uses Claude Code to draft a first version of the top-ranked feature, pulling prior context about it from your knowledge graph. Rowboat is local-first: data is stored as plain Markdown files you can read, edit, or delete anytime. It is Apache-2.0 and works with any LLM, including local models through Ollama or LM Studio. We’d love to hear your thoughts, and contributions are welcome!",
+      "publishedAt": "2026-07-14T16:06:18Z",
+      "score": 412,
+      "summary": "Hey HN, we’re Shubham & Parth, childhood friends building Agnost AI ( https:&#x2F;&#x2F;agnost.ai ), product analytics for teams building chat and voice agents. We read production conversations and find behavioral failures like users rageprompting (cursing at the agent), repeatedly rephrasing the same request, correcting the agent, asking for missing features, or leaving after an answer that was technically successful. We have an interactive demo with no signup here: https:&#x2F;&#x2F;app.agnost.ai?demo=true Here&#x27;s a demo video: https:&#x2F;&#x2F;www.tella.tv&#x2F;video&#x2F;agnost-ai-launch-hn-demo-9haa The core problem is that chat and voice products do not have the same metrics as web apps. When the product interface is language, clicks and funnels become much less useful. Users also rarely give explicit feedback, and when they do it&#x27;s usually sugarcoated. I barely type &#x2F;feedback in Claude or Codex myself. Most users just curse, ask again, correct the agent, or leave. So product engineers get technical visibility from latency, errors, and traces, but still have to guess whether users got what they wanted. We got here after building around agents for the last year and got a couple of founders asking for something like a PostHog for conversations for the AI assistants they were building. We are not trying to be in the observability or evals space. Observability tells you what happened technically. Evals validate cases you already know. We&#x27;re more on the discovery side like what users wanted, where they got frustrated, what they asked for repeatedly, and what new evals should exist. Teams send us agent conversation messages through SDKs or OTel, optionally with metadata like account, plan, source, organization, etc. We cluster conversations into product-specific intents. Feature requests and bugs are default categories; most other clusters are created dynamically from the customer’s data and evolve over time. You can create your own cluster in plain English. If a cluster gets too broad, we split it. If a new pattern appears, we suggest it. One AI video editor company used Agnost AI to find feature requests hidden inside chat. The biggest one was that around 70 users wanted auto-subtitles, but users said it as “add this text in this frame” 12x in a single session, “can you caption it”, “give me transcript of audio” and variations across languages. The team later built the feature. Doing this over millions of messages without sending everything to an LLM was the hard part initially. In ClickHouse, “fetch the last 50 events by time across conversations” and “fetch all events in this conversation” want different sort orders, so we had to iterate a lot on sorting keys, partitions, materialized views, and projections. For finding new clusters, sending everything through an LLM was too slow and expensive. HDBSCAN-style embedding clustering also gets painful at scale because of pairwise comparisons. We first split conversations into segments based on cosine drift, run BIRCH to compress the candidate space, and then use HDBSCAN-like clustering on the smaller set. For matching existing clusters, we use embeddings, smaller classifiers&#x2F;BERT-style models, and LLMs only as fallback for ambiguous cases. We’re live with multiple companies and ingesting ~1M chat and voice messages per day. Pricing is public: Starter is free, Pro is $499&#x2F;month, and Enterprise is for higher volume, security, retention needs. We use each customer’s data only for that customer. We are SOC 2 Type 1 compliant, Type 2 is in progress, and our SDKs are on PyPI and npm. We’d love feedback from the HN community and people building chat or voice agents: how do you detect these signals today, what feedback methods have worked, and what would block you from trying this? Happy to answer questions and take criticism.",
       "why": "A lot of the quality gap in agents still comes down to state handling, durability, and clearer control flow."
     },
     {
@@ -73,7 +83,7 @@
       "title": "google-gemini/gemini-cli",
       "source": "GitHub",
       "url": "https://github.com/google-gemini/gemini-cli",
-      "meta": "105959 stars · updated Mon, 13 Jul 2026 17:41:52 UTC",
+      "meta": "106034 stars · updated Fri, 17 Jul 2026 18:20:39 UTC",
       "topics": [
         "Tool use",
         "Open weights",
@@ -81,25 +91,24 @@
         "Coding agents"
       ],
       "publishedAt": "2025-04-17T17:04:31Z",
-      "score": 664396,
+      "score": 664890,
       "summary": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
       "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
     },
     {
-      "title": "LearningCircuit/local-deep-research",
+      "title": "xai-org/grok-build",
       "source": "GitHub",
-      "url": "https://github.com/LearningCircuit/local-deep-research",
-      "meta": "8710 stars · updated Mon, 13 Jul 2026 18:15:07 UTC",
+      "url": "https://github.com/xai-org/grok-build",
+      "meta": "15900 stars · updated Fri, 17 Jul 2026 13:24:53 UTC",
       "topics": [
         "Tool use",
-        "Evaluation",
-        "Open weights",
-        "Major labs"
+        "Coding agents",
+        "Interfaces"
       ],
-      "publishedAt": "2025-02-09T15:41:32Z",
-      "score": 53904,
-      "summary": "~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all local and cloud LLMs (llama.cpp, Ollama, Google, ...). 10+ search engines - arXiv, PubMed, your private documents. Everything Local & Encrypted.",
-      "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
+      "publishedAt": "2026-07-17T13:24:53Z",
+      "score": 101440,
+      "summary": "SpaceXAI's coding agent harness and TUI. Fullscreen, mouse interactive, extensible.",
+      "why": "Agent UX is moving beyond chat boxes — interface design is becoming part of the research frontier."
     }
   ],
   "sourceSections": [
@@ -108,34 +117,44 @@
       "label": "Major labs",
       "items": [
         {
-          "title": "Australian Payments Plus moves faster with ChatGPT and Codex",
-          "url": "https://openai.com/index/australian-payments-plus",
-          "publishedAt": "Tue, 07 Jul 2026 00:00:00 GMT",
+          "title": "The US is advancing AI safety through state and federal action",
+          "url": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action",
+          "publishedAt": "Wed, 15 Jul 2026 12:00:00 GMT",
           "source": "OpenAI",
-          "meta": "Tue, 07 Jul 2026 00:00:00 GMT",
+          "meta": "Wed, 15 Jul 2026 12:00:00 GMT",
           "topics": [
-            "Tool use",
-            "Major labs",
-            "Coding agents"
+            "Memory and state",
+            "Major labs"
           ],
           "score": 180,
-          "summary": "Australian Payments Plus moves faster with ChatGPT and Codex",
-          "why": "The strongest practical signal right now is still better tooling around how models call, sequence, and recover from actions."
+          "summary": "The US is advancing AI safety through state and federal action",
+          "why": "A lot of the quality gap in agents still comes down to state handling, durability, and clearer control flow."
         },
         {
-          "title": "Expanding Managed Agents in Gemini API: background tasks, remote MCP and more",
-          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api/",
-          "publishedAt": "Tue, 07 Jul 2026 08:54:00 +0000",
-          "source": "Google AI",
-          "meta": "Tue, 07 Jul 2026 08:54:00 GMT",
+          "title": "How to manage AI investments in the agentic era",
+          "url": "https://openai.com/index/managing-ai-investments-in-agentic-era",
+          "publishedAt": "Tue, 14 Jul 2026 10:00:00 GMT",
+          "source": "OpenAI",
+          "meta": "Tue, 14 Jul 2026 10:00:00 GMT",
           "topics": [
-            "Tool use",
-            "Major labs",
-            "Coding agents"
+            "Major labs"
           ],
           "score": 180,
-          "summary": "Expanding Managed Agents in Gemini API: background tasks, remote MCP and more",
-          "why": "MCP keeps surfacing as the connective tissue for more grounded agent workflows — standard tool surfaces are still one of the cleanest leverage points in the stack."
+          "summary": "How to manage AI investments in the agentic era",
+          "why": "Major lab launches still reshape the practical design space for agent builders almost overnight."
+        },
+        {
+          "title": "Claude for K-12 teachers: Get back to why you started teaching",
+          "source": "Anthropic",
+          "url": "https://claude.com/solutions/teachers",
+          "meta": "5 pts · 0 comments",
+          "topics": [
+            "Major labs"
+          ],
+          "publishedAt": "2026-07-15T12:40:51Z",
+          "score": 100,
+          "summary": "",
+          "why": "Major lab launches still reshape the practical design space for agent builders almost overnight."
         }
       ]
     },
@@ -144,36 +163,20 @@
       "label": "Hacker News",
       "items": [
         {
-          "title": "Show HN: Rowboat – Open-source, local-first alternative to Claude Desktop",
+          "title": "Launch HN: Agnost AI (YC S26) – Extract user feedback from agent conversations",
           "source": "Hacker News",
-          "url": "https://github.com/rowboatlabs/rowboat",
-          "meta": "218 pts · 94 comments",
+          "url": "https://agnost.ai",
+          "meta": "85 pts · 49 comments",
           "topics": [
             "Tool use",
-            "Multi-agent workflows",
             "Memory and state",
+            "Evaluation",
             "Voice and multimodal"
           ],
-          "publishedAt": "2026-07-07T16:10:44Z",
-          "score": 808,
-          "summary": "Claude’s desktop app is brilliant, but for our own daily work we kept wanting it to be less like a chat app and more like a full-fledged work app. Rowboat is our attempt at that, including the ability to build your own work surfaces inside Rowboat (more below). Our repo is https:&#x2F;&#x2F;github.com&#x2F;rowboatlabs&#x2F;rowboat , and there’s a demo video here: https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=et5yQABJ3xI In a previous startup, we built a deep-learning product for enterprise support reps, including teams supporting P&G brands. Models took live notes, suggested replies, and recommended actions while support reps were on calls or handling emails. One lesson stuck with us: it&#x27;s not enough for the AI to be right, the help has to show up where the work is happening. So we added what we came to call “work surfaces”: dedicated areas for email, meetings, notes, browser, and parallel coding, where the assistant can help inside the workflow itself rather than only through chat: - Email client: Rowboat has a simple email client that sorts incoming emails into important vs. everything else, and pre-creates drafts for important emails. As you edit and send emails, it takes notes on your style, so future drafts get closer to your voice. - Meeting notes: We built a Granola-style local meeting notetaker. Notes are stored as plain Markdown files on your machine. After a meeting, Rowboat feeds the notes back into the knowledge graph and updates the relevant people, project, and topic notes. - Browser: We added a built-in browser, isolated from your main one, where you can log in only to the accounts you want the assistant to help with. The assistant uses browser-use skills to navigate websites. - Parallel coding: The code-mode inside Rowboat lets you spin multiple instances of Claude Code or Codex and either work with them directly or let Rowboat use your work context to orchestrate them. We built an ACP (Agent Client Protocol) client in Rowboat for this. - Notes: Rowboat has an Obsidian-style local note-taking system. It comes with graph view, bases view, and voice notes. You can also sync Google Docs files and edit them inside Rowboat. You can also build your own work surfaces inside Rowboat (web apps). Each app gets its own UI and a background agent, and can use all of Rowboat&#x27;s tools, product integrations, and your work memory. For instance: an app to manage GitHub activity, project tracking, or ads campaign management. There are a few community apps at launch you can search and install, and you can publish your own by creating a GitHub repo for it and registering it. Rowboat also indexes your work into a knowledge graph that all of the above surfaces use to have better context. We did a Show HN a few months back on this: https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=46962641 . As an example that ties some of these together: you can create an app inside Rowboat that collects feature requests from your email, meetings, and Slack and ranks them, then uses Claude Code to draft a first version of the top-ranked feature, pulling prior context about it from your knowledge graph. Rowboat is local-first: data is stored as plain Markdown files you can read, edit, or delete anytime. It is Apache-2.0 and works with any LLM, including local models through Ollama or LM Studio. We’d love to hear your thoughts, and contributions are welcome!",
+          "publishedAt": "2026-07-14T16:06:18Z",
+          "score": 412,
+          "summary": "Hey HN, we’re Shubham & Parth, childhood friends building Agnost AI ( https:&#x2F;&#x2F;agnost.ai ), product analytics for teams building chat and voice agents. We read production conversations and find behavioral failures like users rageprompting (cursing at the agent), repeatedly rephrasing the same request, correcting the agent, asking for missing features, or leaving after an answer that was technically successful. We have an interactive demo with no signup here: https:&#x2F;&#x2F;app.agnost.ai?demo=true Here&#x27;s a demo video: https:&#x2F;&#x2F;www.tella.tv&#x2F;video&#x2F;agnost-ai-launch-hn-demo-9haa The core problem is that chat and voice products do not have the same metrics as web apps. When the product interface is language, clicks and funnels become much less useful. Users also rarely give explicit feedback, and when they do it&#x27;s usually sugarcoated. I barely type &#x2F;feedback in Claude or Codex myself. Most users just curse, ask again, correct the agent, or leave. So product engineers get technical visibility from latency, errors, and traces, but still have to guess whether users got what they wanted. We got here after building around agents for the last year and got a couple of founders asking for something like a PostHog for conversations for the AI assistants they were building. We are not trying to be in the observability or evals space. Observability tells you what happened technically. Evals validate cases you already know. We&#x27;re more on the discovery side like what users wanted, where they got frustrated, what they asked for repeatedly, and what new evals should exist. Teams send us agent conversation messages through SDKs or OTel, optionally with metadata like account, plan, source, organization, etc. We cluster conversations into product-specific intents. Feature requests and bugs are default categories; most other clusters are created dynamically from the customer’s data and evolve over time. You can create your own cluster in plain English. If a cluster gets too broad, we split it. If a new pattern appears, we suggest it. One AI video editor company used Agnost AI to find feature requests hidden inside chat. The biggest one was that around 70 users wanted auto-subtitles, but users said it as “add this text in this frame” 12x in a single session, “can you caption it”, “give me transcript of audio” and variations across languages. The team later built the feature. Doing this over millions of messages without sending everything to an LLM was the hard part initially. In ClickHouse, “fetch the last 50 events by time across conversations” and “fetch all events in this conversation” want different sort orders, so we had to iterate a lot on sorting keys, partitions, materialized views, and projections. For finding new clusters, sending everything through an LLM was too slow and expensive. HDBSCAN-style embedding clustering also gets painful at scale because of pairwise comparisons. We first split conversations into segments based on cosine drift, run BIRCH to compress the candidate space, and then use HDBSCAN-like clustering on the smaller set. For matching existing clusters, we use embeddings, smaller classifiers&#x2F;BERT-style models, and LLMs only as fallback for ambiguous cases. We’re live with multiple companies and ingesting ~1M chat and voice messages per day. Pricing is public: Starter is free, Pro is $499&#x2F;month, and Enterprise is for higher volume, security, retention needs. We use each customer’s data only for that customer. We are SOC 2 Type 1 compliant, Type 2 is in progress, and our SDKs are on PyPI and npm. We’d love feedback from the HN community and people building chat or voice agents: how do you detect these signals today, what feedback methods have worked, and what would block you from trying this? Happy to answer questions and take criticism.",
           "why": "A lot of the quality gap in agents still comes down to state handling, durability, and clearer control flow."
-        },
-        {
-          "title": "Show HN: Requirements Engineering with Formal Verification",
-          "source": "Hacker News",
-          "url": "https://fizzbee.ai/",
-          "meta": "27 pts · 4 comments",
-          "topics": [
-            "Open weights",
-            "Coding agents",
-            "Interfaces",
-            "Infra and retrieval"
-          ],
-          "publishedAt": "2026-07-08T17:52:57Z",
-          "score": 141,
-          "summary": "I&#x27;ve been building an open source formal methods system (fizzbee.io) for the past few years. Today I&#x27;m launching a new app built on the same technology. It performs requirements engineering using formal verification to uncover gaps and produce precise instructions for your coding agents to follow. When given a prompt, it - asks high signal follow-up questions - converts to formal spec and identifies complex requirements gaps - generates validation scenario At the end, it produces a specification document that can be shared with coding agents. In my trials on various projects, it produces working code in fewer iterations. Please give it a try and share your feedback. https:&#x2F;&#x2F;fizzbee.ai&#x2F; You can also look at a sample project. https:&#x2F;&#x2F;fizzbee.ai&#x2F;projects&#x2F;94bf2869-97a1-445c-8f5d-4445848b...",
-          "why": "Applying formal verification to AI coding loops signals a maturing view of agent reliability — moving beyond empirical testing toward provable correctness guarantees."
         },
         {
           "title": "Agent Harness Engineering",
@@ -206,7 +209,7 @@
           "title": "google-gemini/gemini-cli",
           "source": "GitHub",
           "url": "https://github.com/google-gemini/gemini-cli",
-          "meta": "105959 stars · updated Mon, 13 Jul 2026 17:41:52 UTC",
+          "meta": "106034 stars · updated Fri, 17 Jul 2026 18:20:39 UTC",
           "topics": [
             "Tool use",
             "Open weights",
@@ -214,15 +217,30 @@
             "Coding agents"
           ],
           "publishedAt": "2025-04-17T17:04:31Z",
-          "score": 664396,
+          "score": 664890,
           "summary": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
           "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
+        },
+        {
+          "title": "xai-org/grok-build",
+          "source": "GitHub",
+          "url": "https://github.com/xai-org/grok-build",
+          "meta": "15900 stars · updated Fri, 17 Jul 2026 13:24:53 UTC",
+          "topics": [
+            "Tool use",
+            "Coding agents",
+            "Interfaces"
+          ],
+          "publishedAt": "2026-07-17T13:24:53Z",
+          "score": 101440,
+          "summary": "SpaceXAI's coding agent harness and TUI. Fullscreen, mouse interactive, extensible.",
+          "why": "Agent UX is moving beyond chat boxes — interface design is becoming part of the research frontier."
         },
         {
           "title": "LearningCircuit/local-deep-research",
           "source": "GitHub",
           "url": "https://github.com/LearningCircuit/local-deep-research",
-          "meta": "8710 stars · updated Mon, 13 Jul 2026 18:15:07 UTC",
+          "meta": "8728 stars · updated Fri, 17 Jul 2026 14:43:54 UTC",
           "topics": [
             "Tool use",
             "Evaluation",
@@ -230,37 +248,22 @@
             "Major labs"
           ],
           "publishedAt": "2025-02-09T15:41:32Z",
-          "score": 53904,
+          "score": 54014,
           "summary": "~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all local and cloud LLMs (llama.cpp, Ollama, Google, ...). 10+ search engines - arXiv, PubMed, your private documents. Everything Local & Encrypted.",
           "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
         },
         {
-          "title": "MinishLab/semble",
+          "title": "Fei-Away/Codex-Dream-Skin",
           "source": "GitHub",
-          "url": "https://github.com/MinishLab/semble",
-          "meta": "5600 stars · updated Mon, 13 Jul 2026 15:50:08 UTC",
+          "url": "https://github.com/Fei-Away/Codex-Dream-Skin",
+          "meta": "8595 stars · updated Fri, 17 Jul 2026 18:11:48 UTC",
           "topics": [
             "Tool use",
-            "Evaluation",
             "Coding agents"
           ],
-          "publishedAt": "2026-04-06T14:56:45Z",
-          "score": 34192,
-          "summary": "Fast and Accurate Code Search for Agents. Uses ~98% fewer tokens than grep+read",
-          "why": "This is a strong agent-engineering efficiency signal: giving coding agents semantic code search instead of grep-based token waste directly reduces cost and improves latency on every agent loop."
-        },
-        {
-          "title": "antoinezambelli/forge",
-          "source": "GitHub",
-          "url": "https://github.com/antoinezambelli/forge",
-          "meta": "2169 stars · updated Fri, 10 Jul 2026 15:30:45 UTC",
-          "topics": [
-            "Tool use",
-            "Multi-agent workflows"
-          ],
-          "publishedAt": "2026-02-16T16:59:06Z",
-          "score": 13596,
-          "summary": "A Python framework for self-hosted LLM tool-calling and multi-step agentic workflows",
+          "publishedAt": "2026-07-17T18:11:48Z",
+          "score": 53578,
+          "summary": "Codex Dream Skin",
           "why": "The strongest practical signal right now is still better tooling around how models call, sequence, and recover from actions."
         }
       ]
@@ -268,71 +271,71 @@
   ],
   "tangentRadar": [
     {
-      "topic": "Tool use",
-      "signalCount": 35,
-      "whyItMatters": "The strongest practical signal right now is still better tooling around how models call, sequence, and recover from actions.",
-      "signals": [
-        "Hacker News: Show HN: Rowboat – Open-source, local-first alternative to Claude Desktop",
-        "OpenAI: Australian Payments Plus moves faster with ChatGPT and Codex",
-        "Google AI: Expanding Managed Agents in Gemini API: background tasks, remote MCP and more"
-      ]
-    },
-    {
       "topic": "Coding agents",
       "signalCount": 26,
       "whyItMatters": "The comment volume makes this a good proxy for what technically engaged builders think is worth paying attention to.",
       "signals": [
-        "Hacker News: Show HN: Requirements Engineering with Formal Verification",
-        "OpenAI: Australian Payments Plus moves faster with ChatGPT and Codex",
-        "Google AI: Expanding Managed Agents in Gemini API: background tasks, remote MCP and more"
+        "GitHub: Fei-Away/Codex-Dream-Skin",
+        "GitHub: yetone/kill-ai-slop",
+        "GitHub: Cjbuilds/Codex-Orchestration"
+      ]
+    },
+    {
+      "topic": "Tool use",
+      "signalCount": 25,
+      "whyItMatters": "The strongest practical signal right now is still better tooling around how models call, sequence, and recover from actions.",
+      "signals": [
+        "Hacker News: Launch HN: Agnost AI (YC S26) – Extract user feedback from agent conversations",
+        "GitHub: Fei-Away/Codex-Dream-Skin",
+        "GitHub: Cjbuilds/Codex-Orchestration"
       ]
     },
     {
       "topic": "Interfaces",
-      "signalCount": 24,
+      "signalCount": 21,
       "whyItMatters": "Agent UX is moving beyond chat boxes — interface design is becoming part of the research frontier.",
       "signals": [
-        "Hacker News: Show HN: Requirements Engineering with Formal Verification",
-        "GitHub: ronak-create/FableCut",
-        "GitHub: yetone/kill-ai-slop"
-      ]
-    },
-    {
-      "topic": "Open weights",
-      "signalCount": 20,
-      "whyItMatters": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate.",
-      "signals": [
-        "Hacker News: Show HN: Requirements Engineering with Formal Verification",
-        "GitHub: xiaotianfotos/homerail",
-        "GitHub: nexu-io/motion-anything"
-      ]
-    },
-    {
-      "topic": "Multi-agent workflows",
-      "signalCount": 14,
-      "whyItMatters": "The comment volume makes this a good proxy for what technically engaged builders think is worth paying attention to.",
-      "signals": [
-        "Hacker News: Show HN: Rowboat – Open-source, local-first alternative to Claude Desktop",
-        "GitHub: xiaotianfotos/homerail",
-        "GitHub: Nanako0129/pilotfish"
+        "GitHub: yetone/kill-ai-slop",
+        "GitHub: Cjbuilds/Codex-Orchestration",
+        "GitHub: xai-org/grok-build"
       ]
     },
     {
       "topic": "Major labs",
-      "signalCount": 13,
+      "signalCount": 15,
       "whyItMatters": "Major lab launches still reshape the practical design space for agent builders almost overnight.",
       "signals": [
-        "OpenAI: Australian Payments Plus moves faster with ChatGPT and Codex",
-        "Google AI: Expanding Managed Agents in Gemini API: background tasks, remote MCP and more",
-        "GitHub: Nanako0129/pilotfish"
+        "Anthropic: Claude for K-12 teachers: Get back to why you started teaching",
+        "OpenAI: The US is advancing AI safety through state and federal action",
+        "OpenAI: How to manage AI investments in the agentic era"
+      ]
+    },
+    {
+      "topic": "Open weights",
+      "signalCount": 15,
+      "whyItMatters": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate.",
+      "signals": [
+        "GitHub: vshulcz/deja-vu",
+        "GitHub: PromptPartner/agentsmith",
+        "GitHub: mereyabdenbekuly-ctrl/clodex-ide"
+      ]
+    },
+    {
+      "topic": "Multi-agent workflows",
+      "signalCount": 13,
+      "whyItMatters": "The comment volume makes this a good proxy for what technically engaged builders think is worth paying attention to.",
+      "signals": [
+        "GitHub: Cjbuilds/Codex-Orchestration",
+        "GitHub: zjp1997720/codex-model-routing-team",
+        "GitHub: isfaaghyth/ghiath"
       ]
     }
   ],
   "experimentQueue": [
     {
-      "title": "Audit one deployed enterprise agent workflow",
-      "why": "Codex-on-Dell and SAP-with-Claude are production-scale agent deployments — worth understanding the real friction points.",
-      "prompt": "Take one enterprise agent deployment case study, map the hidden assumptions, and note where trust, permissions, and failure recovery still feel weak."
+      "title": "Benchmark one local-first agent stack",
+      "why": "The local/open-weight ecosystem looks materially better this week, especially around Qwen and Forge guardrails.",
+      "prompt": "Pick one real workflow and compare a local Qwen+Forge stack against a frontier hosted model on tool accuracy, latency, and cost."
     },
     {
       "title": "Instrument one agent with better traces",
