@@ -1,0 +1,31 @@
+name: Groq Cloud
+description: A cloud inference platform offering ultra-fast LLM inference through custom LPU (Language Processing Unit) hardware, supporting open models like Llama, Mixtral, and Gemma.
+tagline: The fastest LLM inference on dedicated LPU hardware
+
+github_url: https://github.com/groq/groq-python
+website_url: https://groq.com
+docs_url: https://console.groq.com/docs
+
+install_command: pip install groq
+
+category: LLM
+tags: [llm, inference, cloud, groq, lpu, open-models, api, python, low-latency]
+pricing: freemium
+is_open_source: false
+license: Apache-2.0
+
+problem_solved: |
+  LLM inference on traditional GPUs is bottlenecked by memory bandwidth rather than compute.
+  Most tokens are generated sequentially, and GPU memory bandwidth is the limiting factor.
+  Groq designed custom LPU (Language Processing Unit) hardware that eliminates this bottleneck,
+  delivering inference speeds 10-100x faster than GPU-based alternatives for the same model.
+  The Groq Cloud API provides OpenAI-compatible endpoints for Llama, Mixtral, Gemma, and other
+  open models with token-generation speeds that make real-time streaming and interactive use
+  cases practical for the first time.
+
+use_cases:
+  - Build real-time chat applications with sub-100ms token generation for natural conversational flow
+  - Power high-throughput batch inference pipelines that process millions of prompts per day cost-effectively
+  - Deploy OpenAI-compatible API endpoints using the Groq SDK with zero code changes to existing clients
+  - Run large-scale prompt chains for agent orchestration where each step needs fast model responses
+  - Evaluate and compare open models at production scale with Groq's free tier and fast iteration cycle
