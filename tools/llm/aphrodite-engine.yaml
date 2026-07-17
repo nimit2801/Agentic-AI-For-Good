@@ -1,0 +1,39 @@
+name: Aphrodite Engine
+description: A large-scale LLM inference engine designed for serving open-source language models with high throughput, supporting CUDA, ROCm, Intel XPU, and AWS Inferentia hardware.
+tagline: High-throughput LLM inference engine
+
+github_url: https://github.com/PygmalionAI/aphrodite-engine
+install_command: pip install -U aphrodite-engine
+
+category: LLM
+tags:
+  - llm-inference
+  - inference-engine
+  - gpu
+  - cuda
+  - rocm
+  - open-source
+  - serving
+  - quantization
+  - lora
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Serving large language models efficiently requires specialized inference engines that can
+  handle high request volumes, manage GPU memory, and support hardware diversity. Most inference
+  solutions are either tied to specific cloud providers or lack broad hardware support. Aphrodite
+  Engine solves this as a high-throughput inference engine that supports CUDA (NVIDIA), ROCm
+  (AMD), Intel XPU, and AWS Inferentia hardware. It implements continuous batching, PagedAttention,
+  tensor parallelism, and speculative decoding to maximize throughput. It also supports LoRA
+  adapters for serving fine-tuned variants without full model reloads. For teams deploying
+  open-source LLMs in production, Aphrodite Engine provides the performance and hardware
+  flexibility needed to serve models cost-effectively across diverse infrastructure.
+
+use_cases:
+  - Serve open-source LLMs in production with high throughput and low latency across GPU hardware
+  - Deploy fine-tuned model variants efficiently using LoRA adapter support without full reloads
+  - Run inference cost-effectively by leveraging AMD ROCm GPUs or AWS Inferentia as alternatives to NVIDIA
+  - Implement speculative decoding and continuous batching to maximize inference throughput
+  - Self-host LLM inference for privacy, compliance, and cost control in enterprise environments
