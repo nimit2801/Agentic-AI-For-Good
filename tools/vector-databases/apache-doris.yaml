@@ -1,0 +1,22 @@
+name: Apache Doris
+description: A real-time analytics and hybrid search database designed for AI agents, combining high-performance OLAP with vector search, full-text search, and inverted index capabilities in a single unified query engine that supports both SQL and vector operations.
+tagline: Real-time analytics and hybrid search database for AI
+
+github_url: https://github.com/apache/doris
+website_url: https://doris.apache.org
+docs_url: https://doris.apache.org/docs
+
+category: Vector DB
+tags: [database, olap, analytics, vector-search, sql, real-time, hybrid-search]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AI agents and applications increasingly need to combine real-time analytics (aggregations, filtering, joins) with vector similarity search and full-text retrieval, but traditional architectures require separate systems for each workload — a vector database for embeddings, an OLAP engine for analytics, and a search engine for text queries — increasing complexity, latency, and operational cost. Apache Doris solves this by integrating vector search, inverted indexes, and high-performance SQL analytics into a single distributed database, enabling AI agents to filter billions of records by metadata, rank by vector similarity, and aggregate results in real-time without data movement.
+
+use_cases:
+  - Build AI agent memory stores that combine semantic search with real-time metadata filtering and aggregation
+  - Power recommendation systems with hybrid search blending collaborative filtering, vector similarity, and real-time user signals
+  - Replace separate analytics and vector databases with a single query engine for AI-powered dashboards
+  - Enable real-time semantic logging and debugging for LLM applications with structured trace analysis

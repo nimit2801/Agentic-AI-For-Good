@@ -1,0 +1,24 @@
+name: MLC-LLM
+description: A universal LLM deployment engine with ML compilation that enables efficient inference of large language models on diverse hardware backends, including GPU, CPU, and mobile devices, by leveraging machine learning compilation techniques.
+tagline: Universal LLM deployment with ML compilation
+
+github_url: https://github.com/mlc-ai/mlc-llm
+website_url: https://llm.mlc.ai
+docs_url: https://llm.mlc.ai/docs
+
+category: LLM
+tags: [python, inference, deployment, compilation, gpu, cpu, mobile]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Deploying LLMs across diverse hardware (GPU, CPU, mobile, web) traditionally requires separate optimization stacks and manual tuning for each target platform. Developers must rewrite inference code for each backend, making cross-platform LLM deployment costly and error-prone. MLC-LLM solves this by using machine learning compilation to automatically optimize and deploy models from a single codebase to any target, achieving native performance on CUDA GPUs, Metal on Apple Silicon, Vulkan on Android, and WebGPU in browsers — all without per-platform rewrites.
+
+install_command: pip install --pre -U -f https://mlc.ai/wheels mlc-llm-nightly
+
+use_cases:
+  - Deploy LLMs natively on macOS, iOS, Android, and web browsers with GPU acceleration
+  - Run large language models locally on consumer hardware without cloud dependencies
+  - Build cross-platform AI applications that share a single model deployment pipeline
+  - Optimize LLM inference for edge devices where traditional serving stacks cannot run
