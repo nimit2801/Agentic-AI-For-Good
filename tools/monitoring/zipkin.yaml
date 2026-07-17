@@ -1,0 +1,25 @@
+name: Zipkin
+tagline: Open-source distributed tracing system for microservices
+description: |-
+  Zipkin is a distributed tracing system that helps gather timing data for troubleshooting latency problems in microservice architectures. It provides instrumentation libraries, a collector, storage backends, and a UI for visualizing traces — enabling engineers to follow requests across service boundaries and identify performance bottlenecks.
+problem_solved: |-
+  In microservice architectures, a single user request can traverse dozens of services, making it nearly impossible to diagnose latency issues or errors using individual service logs alone. Zipkin collects trace data from instrumented services, aggregates spans into end-to-end traces, and provides a searchable UI with flame graphs — so engineers can pinpoint which service caused a slowdown or failure.
+github_url: https://github.com/openzipkin/zipkin
+website_url: https://zipkin.io
+docs_url: https://zipkin.io/pages/quickstart
+category: Monitoring
+tags:
+  - distributed-tracing
+  - observability
+  - monitoring
+  - microservices
+  - apm
+pricing: free
+is_open_source: true
+license: Apache-2.0
+use_cases:
+  - "Tracing API requests across microservices to identify the root cause of latency spikes"
+  - "Visualizing service dependencies and request flows with flame graphs and service graphs"
+  - "Debugging errors in distributed systems by correlating spans across multiple services"
+  - "Monitoring service-level performance metrics like request latency, error rates, and throughput"
+  - "Integrating with OpenTelemetry for standardized trace collection in polyglot environments"

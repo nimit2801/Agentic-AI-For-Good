@@ -1,28 +1,25 @@
-name: Loki
-description: A horizontally-scalable, highly-available log aggregation system from Grafana Labs that indexes log metadata rather than full-text, making it cost-effective for storing and querying logs from LLM applications and infrastructure.
-tagline: Log aggregation that's cheap, fast, and natively integrated with Grafana
-
+name: Grafana Loki
+tagline: Log aggregation system designed for cost-effective log storage and querying
+description: |-
+  Grafana Loki is a horizontally scalable, highly available log aggregation system inspired by Prometheus. It indexes log streams rather than individual log entries, making it dramatically cheaper to store and query logs at scale than traditional log management systems like Elasticsearch, while integrating seamlessly with Grafana for visualization and alerting.
+problem_solved: |-
+  Traditional log management systems require full-text indexing of every log line, which is expensive, slow to ingest, and complex to operate at scale. Loki takes a different approach — it only indexes metadata labels and stores log content in compressed chunks, making log storage 10-100x cheaper. Combined with LogQL for querying and Grafana dashboards, teams get powerful log observability without the operational cost of Elasticsearch.
 github_url: https://github.com/grafana/loki
 website_url: https://grafana.com/oss/loki
-docs_url: https://grafana.com/docs/loki/latest
-
+docs_url: https://grafana.com/docs/loki
 category: Monitoring
-tags: [logging, observability, log-aggregation, monitoring, prometheus, grafana, cloud-native]
-pricing: free
+tags:
+  - log-aggregation
+  - observability
+  - monitoring
+  - grafana
+  - cloud-native
+pricing: freemium
 is_open_source: true
 license: AGPL-3.0
-
-problem_solved: |
-  Traditional log aggregation systems like Elasticsearch index the full text of every log
-  line, which becomes prohibitively expensive at the scale of modern AI infrastructure —
-  model servers generate gigabytes of access and error logs daily. Loki takes a different
-  approach: it only indexes metadata labels (service name, host, level) and stores log
-  content compressed in object storage. This makes it an order of magnitude cheaper to
-  operate while still enabling fast label-based log search.
-
 use_cases:
-  - Aggregate logs from LLM inference servers, API gateways, and vector databases for centralized search
-  - Correlate error logs with Jaeger traces and Prometheus metrics in Grafana dashboards
-  - Monitor log volume and error rates across AI service deployments with alerting rules
-  - Search and filter production logs by service label, severity, and time range in seconds
-  - Store months of AI infrastructure logs at a fraction of the cost of full-text indexing systems
+  - "Centralizing application logs from Kubernetes clusters for real-time querying and alerting"
+  - "Reducing log storage costs by using label-based indexing instead of full-text search"
+  - "Correlating logs with metrics and traces in Grafana for unified observability dashboards"
+  - "Querying log streams with LogQL for debugging production incidents and application errors"
+  - "Archiving long-term log data in object storage with configurable retention and compaction"
