@@ -1,0 +1,30 @@
+name: Couchbase
+description: An enterprise distributed NoSQL database with integrated vector search that enables hybrid semantic search across JSON documents, full-text, and AI embeddings from a single platform.
+tagline: Enterprise NoSQL with built-in vector search
+
+github_url: https://github.com/couchbase/couchbase-python-client
+website_url: https://www.couchbase.com
+docs_url: https://docs.couchbase.com/vector-search/vector-search.html
+
+install_command: pip install couchbase
+
+category: Vector DB
+tags: [nosql, vector-search, embeddings, document-database, python, semantic-search, full-text-search, enterprise]
+pricing: paid
+is_open_source: false
+license: Apache-2.0
+
+problem_solved: |
+  Enterprise applications need to store structured data, run full-text search, and power semantic
+  AI queries — but most databases specialize in only one. Couchbase combines a distributed JSON
+  document store, full-text search via Bleve, and Approximate Nearest Neighbor vector search in
+  a single cluster. This means your product catalog, search index, and embedding vectors all live
+  in the same database with the same replication, security, and backup policies. No ETL jobs,
+  no separate vector infrastructure, no data synchronization lag.
+
+use_cases:
+  - Build a hybrid e-commerce search that combines product metadata filters, full-text search, and visual similarity search
+  - Create a document RAG pipeline that queries JSON documents by field, full-text match, and semantic similarity in one query
+  - Deploy an enterprise knowledge base with role-based access control where vectors, documents, and metadata share the same security model
+  - Power a recommendation engine that stores user profiles, behavioral vectors, and product data in a single Couchbase cluster
+  - Implement a fraud detection system that joins transaction vectors with structured account data in real time

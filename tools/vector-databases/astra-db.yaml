@@ -1,0 +1,30 @@
+name: Astra DB
+description: A cloud-native database service built on Apache Cassandra with integrated vector search, designed for AI applications that require low-latency semantic search at global scale with zero operational overhead.
+tagline: Cassandra-powered vector database with global scale
+
+github_url: https://github.com/datastax/astrapy
+website_url: https://www.datastax.com/products/datastax-astra
+docs_url: https://docs.datastax.com/en/astra-db/
+
+install_command: pip install astrapy
+
+category: Vector DB
+tags: [vector-search, cassandra, cloud-native, nosql, python, rag, embeddings, semantic-search, serverless]
+pricing: freemium
+is_open_source: false
+license: Apache-2.0
+
+problem_solved: |
+  Running vector search at global scale means managing cluster topology, replication, failover,
+  and latency across regions. Most vector databases are designed for single-region deployments
+  and don't inherit Cassandra's multi-region replication. Astra DB brings Apache Cassandra's
+  proven distributed architecture to vector search — you get automatic multi-region replication,
+  tunable consistency, zero-downtime scaling, and vector search backed by Cassandra's
+  Storage-Attached Indexing. Every write is immediately queryable across all replicas.
+
+use_cases:
+  - Deploy a global semantic search service with automatic multi-region replication for low-latency worldwide access
+  - Power a real-time personalization engine that serves recommendations from Cassandra-backed vector embeddings
+  - Build a chat history retrieval system that stores and searches conversation embeddings at internet scale
+  - Create a document similarity pipeline that indexes millions of documents with Cassandra's proven write throughput
+  - Implement a hybrid search app combining Cassandra CQL filters, full-text search, and ANN vector queries
