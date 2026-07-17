@@ -1,0 +1,30 @@
+name: MongoDB Atlas Vector Search
+description: Native vector search integrated directly into MongoDB Atlas, enabling semantic search, RAG, and AI-powered applications on operational data without a separate vector database.
+tagline: Vector search where your data already lives
+
+github_url: https://github.com/mongodb/mongo-python-driver
+website_url: https://www.mongodb.com/products/platform/atlas-vector-search
+docs_url: https://www.mongodb.com/docs/atlas/atlas-vector-search/vector-search-overview/
+
+install_command: pip install pymongo
+
+category: Vector DB
+tags: [mongodb, vector-search, embeddings, semantic-search, rag, python, nodejs, database]
+pricing: freemium
+is_open_source: false
+license: Apache-2.0
+
+problem_solved: |
+  Adding vector search to an application typically means running a separate vector database
+  alongside your primary database — doubling operational complexity, replication lag, and cloud
+  costs. MongoDB Atlas Vector Search eliminates this by embedding vector search directly into
+  MongoDB's document model. You store vectors alongside your operational data, index them with
+  the Approximate Nearest Neighbor (ANN) algorithm, and query with a single unified API. No
+  sync pipelines, no dual-database management, no extra infrastructure.
+
+use_cases:
+  - Build semantic search over product catalogs using embeddings without syncing data to a separate vector store
+  - Implement RAG pipelines that query operational documents and their vector embeddings in a single query
+  - Create a hybrid search system combining full-text search, geospatial filters, and vector similarity in one database call
+  - Power real-time recommendation engines by querying user behavior vectors alongside metadata filters
+  - Build an anomaly detection system that compares new data points against historical vector embeddings stored in the same collection
