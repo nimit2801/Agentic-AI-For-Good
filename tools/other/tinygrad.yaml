@@ -1,0 +1,35 @@
+name: TinyGrad
+description: >-
+  TinyGrad is a minimal deep learning framework that implements the
+  full tensor operation graph and autograd from scratch, designed for
+  simplicity, hackability, and educational clarity rather than
+  production performance.
+tagline: A minimal deep learning framework you can understand end-to-end
+
+github_url: https://github.com/tinygrad/tinygrad
+website_url: https://tinygrad.org/
+docs_url: https://docs.tinygrad.org/
+
+category: Other
+tags: [python, deep-learning, autograd, tensor, framework, education, pytorch]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Modern deep learning frameworks like PyTorch and TensorFlow are
+  enormous codebases with millions of lines, making it nearly impossible
+  for learners and researchers to understand the full stack — from tensor
+  operations through autograd to GPU kernels. TinyGrad implements the
+  entire deep learning stack in a few thousand lines of Python, making
+  the core concepts of tensor computation, automatic differentiation,
+  and kernel compilation accessible to anyone who reads the code.
+
+use_cases:
+  - Learn how deep learning frameworks work end-to-end by reading a minimal, readable Python implementation of tensors and autograd.
+  - Rapidly prototype and experiment with custom neural network architectures without the overhead of full PyTorch or TensorFlow.
+  - Teach deep learning fundamentals — the framework is small enough that students can trace through the entire backpropagation flow.
+  - Hack on the framework itself — add custom ops, new backends, or alternative kernel compilers with minimal code changes.
+  - Build educational demos and visualizations of gradient descent, optimizer internals, and computation graphs in action.
+
+install_command: pip install tinygrad

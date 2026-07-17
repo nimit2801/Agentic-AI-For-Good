@@ -1,0 +1,33 @@
+name: ExecuTorch
+description: >-
+  ExecuTorch is a framework for deploying PyTorch models on mobile,
+  embedded, and edge devices, enabling on-device AI inference with a
+  lightweight, portable runtime and minimal hardware requirements.
+tagline: On-device AI inference for mobile and edge with PyTorch
+
+github_url: https://github.com/pytorch/executorch
+website_url: https://executorch.com/
+docs_url: https://pytorch.github.io/executorch/
+
+category: Dev Tools
+tags: [python, pytorch, mobile, embedded, edge, on-device, inference, deployment]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Running PyTorch models on mobile phones, microcontrollers, and edge
+  devices is challenging — full PyTorch is too large, and model conversion
+  pipelines are fragmented across platforms. ExecuTorch provides a unified,
+  lightweight runtime that exports PyTorch models to a portable format
+  optimized for ARM, Apple Silicon, Qualcomm, and other embedded targets,
+  enabling AI inference without cloud connectivity or GPU hardware.
+
+use_cases:
+  - Run LLMs like Llama on-device for privacy-preserving chat, summarization, and code generation on mobile phones.
+  - Deploy computer vision models on edge cameras and IoT devices for real-time object detection without cloud round-trips.
+  - Enable AI-powered features in embedded systems — smart home devices, wearables, and industrial sensors — with low latency.
+  - Build mobile apps with on-device AI for image classification, speech recognition, and natural language processing.
+  - Distribute AI models to consumer devices with a tiny runtime footprint (hundreds of KB) and no Python dependency.
+
+install_command: pip install executorch
