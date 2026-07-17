@@ -1,0 +1,28 @@
+name: Aporia
+description: An AI observability and guardrails platform that monitors, evaluates, and protects LLM applications in production with real-time guardrails, custom metrics, and comprehensive traces.
+tagline: Monitor, guard, and improve your AI applications in production
+
+website_url: https://www.aporia.com
+docs_url: https://docs.aporia.com
+
+install_command: pip install aporia
+
+category: Monitoring
+tags: [monitoring, observability, guardrails, llm, evaluation, python, tracing, safety]
+pricing: paid
+is_open_source: false
+
+problem_solved: |
+  LLM applications are unpredictable — prompts drift, models hallucinate, and subtle input changes
+  cause wildly different outputs. Traditional monitoring tools can't catch semantic issues or enforce
+  safety rules on language model outputs. Aporia provides real-time guardrails that block harmful or
+  off-policy outputs, custom evaluation metrics that measure what matters for your use case, and
+  full tracing across every LLM call. Teams get alerts when quality drops and can root-cause failures
+  from the trace logs.
+
+use_cases:
+  - Deploy real-time guardrails that block toxic, biased, or off-topic LLM outputs before reaching users
+  - Monitor LLM application quality with custom metrics for relevance, accuracy, and tone across all prompts
+  - Trace every LLM call from user input to model response with full observability into latency and tokens
+  - Set up automated regression detection that alerts on model output quality degradation after updates
+  - Implement compliance monitoring for regulated industries requiring audit trails of AI decisions

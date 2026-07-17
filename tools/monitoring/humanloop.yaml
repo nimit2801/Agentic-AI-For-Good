@@ -1,0 +1,28 @@
+name: HumanLoop
+description: An LLM evaluation and prompt management platform that helps teams test, monitor, and optimize AI applications with human-in-the-loop review, experiment tracking, and version control.
+tagline: Evaluate and improve every LLM output with human feedback
+
+website_url: https://humanloop.com
+docs_url: https://docs.humanloop.com
+
+install_command: pip install humanloop
+
+category: Monitoring
+tags: [monitoring, evaluation, prompt-management, llm, human-feedback, experimentation, python, version-control]
+pricing: paid
+is_open_source: false
+
+problem_solved: |
+  Evaluating LLM outputs is subjective and slow. Teams rely on anecdotal testing — running a few
+  prompts manually, deciding if the output "looks right," and shipping changes without systematic
+  validation. HumanLoop gives teams a structured evaluation workflow: version-controlled prompts,
+  test data sets, automated evaluation metrics, and human review queues. Every prompt change is
+  benchmarked against historical test cases, and flagged outputs go to human reviewers who provide
+  feedback that feeds back into model improvements.
+
+use_cases:
+  - Run systematic A/B tests on prompt changes with version-controlled prompt templates and historical test sets
+  - Set up human review queues where flagged LLM outputs go to domain experts for quality scoring
+  - Track LLM evaluation metrics like accuracy, relevance, and safety across every deployed prompt version
+  - Create test data sets from real user interactions to validate prompt changes before production deployment
+  - Monitor prompt regression by comparing new prompt versions against historical performance baselines

@@ -1,0 +1,29 @@
+name: Gantry
+description: A machine learning observability platform that monitors, analyzes, and improves model performance with automated drift detection, data quality checks, and actionable insights for ML teams.
+tagline: Make every model deployment observable and trustworthy
+
+website_url: https://gantry.io
+docs_url: https://docs.gantry.io
+
+install_command: pip install gantry
+
+category: Monitoring
+tags: [monitoring, observability, mlops, drift-detection, data-quality, python, model-monitoring, automation]
+pricing: paid
+is_open_source: false
+
+problem_solved: |
+  Teams deploying ML models to production face a blind spot — once a model is live, knowing whether
+  it's performing correctly requires manual spot checks and user surveys. Data drift, corrupted
+  inference pipelines, and stale training data can degrade model quality for days before anyone
+  notices. Gantry continuously monitors inference pipelines, detects data distribution shifts in
+  real time, and alerts teams when model inputs fall outside the training distribution. It also
+  runs data quality checks on incoming features and surfaces actionable recommendations for
+  retraining schedules.
+
+use_cases:
+  - Detect data drift in production ML pipelines in real time and alert teams before model quality degrades
+  - Monitor input data quality with automated schema validation and distribution checks on every inference batch
+  - Track model prediction distributions against training baselines to identify concept drift early
+  - Create automated retraining triggers based on drift severity, data freshness, and prediction confidence
+  - Build production dashboards that show model health, data quality metrics, and drift trends at a glance
