@@ -1,0 +1,29 @@
+name: TorchMetrics
+description: A collection of machine learning metrics for distributed, scalable PyTorch models with a standardized API across domains.
+tagline: PyTorch metrics made distributed and scalable
+
+github_url: https://github.com/Lightning-AI/torchmetrics
+website_url: https://torchmetrics.readthedocs.io
+docs_url: https://torchmetrics.readthedocs.io
+
+install_command: pip install torchmetrics
+
+category: Monitoring
+tags: [python, pytorch, metrics, evaluation, distributed, deep-learning, classification, regression]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Computing metrics like accuracy, F1 score, or mean average precision during distributed
+  training requires aggregating results across GPUs and devices — naive implementations
+  produce incorrect averages and don't handle the synchronization logic. TorchMetrics
+  provides 100+ built-in metrics that automatically handle distributed synchronization,
+  device placement, and multi-batch accumulation, so you get correct results whether
+  training on one GPU or a thousand.
+
+use_cases:
+  - Track accuracy, precision, and recall during multi-GPU training without writing custom distributed aggregation code
+  - Compute regression metrics (MAE, RMSE, R²) across distributed validation loops
+  - Log per-class metrics for imbalanced classification problems to detect minority-class degradation
+  - Build custom domain-specific metrics with automatic distributed handling using the library's base classes

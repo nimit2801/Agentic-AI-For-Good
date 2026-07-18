@@ -1,0 +1,26 @@
+name: MiniGPT-4
+description: A vision-language model that aligns a frozen visual encoder with a frozen LLM using a single projection layer, enabling multimodal understanding.
+tagline: Vision-language AI with frozen LLM alignment
+
+github_url: https://github.com/Vision-CAIR/MiniGPT-4
+website_url: https://minigpt-4.github.io
+
+category: LLM
+tags: [vision-language, multimodal, llm, image-understanding, gpt-4, transformer, deep-learning]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Building multimodal AI systems that understand both images and text usually requires
+  training massive models from scratch with paired image-text data at enormous compute cost.
+  MiniGPT-4 demonstrates that a single linear projection layer connecting a frozen vision
+  encoder (ViT) to a frozen LLM (Vicuna) can achieve strong visual reasoning capabilities,
+  dramatically reducing the training cost and complexity of building vision-language models
+  while maintaining coherent conversational abilities.
+
+use_cases:
+  - Generate detailed image captions and descriptions using a vision-language model with conversational output
+  - Build multimodal chatbots that can answer questions about uploaded images
+  - Create systems that extract and reason about text visible in screenshots or photographs
+  - Prototype vision-language applications without training a multimodal model from scratch

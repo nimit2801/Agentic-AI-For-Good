@@ -1,0 +1,27 @@
+name: Grafana Mimir
+description: A horizontally scalable, highly available, multi-tenant long-term storage backend for Prometheus metrics with Grafana-native querying.
+tagline: Scalable long-term storage for Prometheus metrics
+
+github_url: https://github.com/grafana/mimir
+website_url: https://grafana.com/products/mimir
+docs_url: https://grafana.com/docs/mimir
+
+category: Monitoring
+tags: [prometheus, metrics, monitoring, observability, scalable-storage, grafana, time-series]
+pricing: freemium
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Prometheus is the standard for metrics collection but its single-node architecture limits
+  retention and scale — TSDB storage grows unbounded, query performance degrades, and
+  high-availability requires complex federation setups. Grafana Mimir replaces the
+  Prometheus storage layer with a horizontally scalable, multi-tenant backend that
+  supports unlimited retention, global query views across multiple Prometheus instances,
+  and seamless integration with the Grafana ecosystem for visualization and alerting.
+
+use_cases:
+  - Store Prometheus metrics for months or years without worrying about disk space or query slowdowns
+  - Query metrics across multiple Kubernetes clusters from a single Grafana dashboard using global views
+  - Operate a multi-tenant metrics platform serving dozens of teams with per-tenant data isolation
+  - Replace Thanos or Cortex with a simpler, Grafana-native scalable metrics backend
