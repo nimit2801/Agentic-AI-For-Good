@@ -1,0 +1,27 @@
+name: Apache SINGA
+description: A distributed deep learning platform designed for scalable training and deployment across heterogeneous hardware, supporting CNN, RNN, and transformer models.
+tagline: Distributed deep learning made simple
+
+github_url: https://github.com/apache/singa
+website_url: http://singa.apache.org
+docs_url: https://apache-singa.readthedocs.io/en/latest
+
+category: Fine-tuning
+tags: [python, deep-learning, distributed-training, cnn, rnn, transformer, apache]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Training deep neural networks on large datasets requires distributing computation across
+  multiple GPUs and machines, which introduces complex synchronization, communication, and
+  fault-tolerance challenges. Apache SINGA provides an intuitive programming model with
+  automatic gradient synchronization, device management, and flexible neural net layers
+  so researchers and engineers can scale training from a single GPU to a cluster without
+  rewriting their model code.
+
+use_cases:
+  - Distribute training of a large transformer model across multiple GPUs on a single machine or cluster
+  - Fine-tune computer vision models (ResNet, VGG) on custom datasets using pre-configured layer templates
+  - Build and train custom recurrent or convolutional architectures with automatic gradient distribution
+  - Deploy deep learning pipelines in production environments that need fault tolerance and elastic scaling
