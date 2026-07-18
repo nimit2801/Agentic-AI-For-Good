@@ -1,0 +1,39 @@
+name: NCNN
+description: A high-performance neural network inference framework optimized for mobile and embedded platforms. Supports Android, iOS, Linux, Windows, macOS, WebAssembly, and various hardware backends including ARM, x86, and Vulkan GPU.
+tagline: High-performance neural network inference for mobile and embedded devices
+
+github_url: https://github.com/Tencent/ncnn
+docs_url: https://github.com/Tencent/ncnn/wiki
+
+install_command: pip install ncnn
+
+category: Dev Tools
+tags:
+  - mobile
+  - inference
+  - neural-network
+  - on-device
+  - cross-platform
+  - arm
+  - vulkan
+  - deep-learning
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Deploying neural network inference on mobile and embedded devices is
+  constrained by limited compute, memory, and battery. Standard frameworks
+  designed for desktop GPUs don't fit. NCNN is a pure C++ inference
+  framework built from the ground up for mobile — it does not depend on
+  third-party libraries, supports multi-core optimization and ARM NEON,
+  and gains GPU acceleration through Vulkan. Models from PyTorch, ONNX,
+  and TensorFlow can be converted with a single CLI tool (PNNX) and run
+  efficiently on phones, tablets, and IoT hardware.
+
+use_cases:
+  - Deploy a real-time object detection model on a smartphone camera feed with minimal latency
+  - Run an LLM on-device using the ncnn Vulkan backend for GPU acceleration
+  - Port a PyTorch segmentation model to a Raspberry Pi for edge AI inference
+  - Integrate face recognition into an iOS or Android app with 0 third-party dependencies
+  - Batch-convert ONNX models to ncnn format and deploy across hundreds of device variants
