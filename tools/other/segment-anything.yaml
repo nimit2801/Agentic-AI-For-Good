@@ -1,0 +1,29 @@
+name: Segment Anything
+description: Meta's foundational model for image segmentation that can segment any object in any image with zero-shot generalization using promptable masks.
+tagline: Segment anything in any image
+
+github_url: https://github.com/facebookresearch/segment-anything
+website_url: https://segment-anything.com
+docs_url: https://github.com/facebookresearch/segment-anything#readme
+
+install_command: pip install segment-anything
+
+category: Other
+tags: [python, image-segmentation, computer-vision, deep-learning, zero-shot, meta, vision-transformer]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Traditional image segmentation models are trained for specific object categories and
+  fail on anything outside their training set — adding a new category requires collecting
+  labeled data and retraining the entire model. Segment Anything Model (SAM) introduces
+  a promptable segmentation task that generalizes to any object in any image without
+  fine-tuning, using point prompts, box prompts, or automatic mask generation, making
+  segmentation accessible for arbitrary use cases without custom training pipelines.
+
+use_cases:
+  - Automatically generate segmentation masks for every object in an image without specifying target categories
+  - Build interactive photo editing tools that let users click on any object to select and edit it
+  - Pre-process images for data augmentation by generating precise masks without manual labeling
+  - Extract foreground objects from images for background removal or compositing workflows

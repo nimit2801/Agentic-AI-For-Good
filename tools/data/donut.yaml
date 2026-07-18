@@ -1,0 +1,27 @@
+name: Donut
+description: An OCR-free document understanding transformer that processes documents end-to-end using vision encoding and text decoding without OCR.
+tagline: OCR-free document understanding
+
+github_url: https://github.com/clovaai/donut
+
+install_command: pip install donut
+
+category: Data
+tags: [python, ocr, document-understanding, vision-transformer, deep-learning, document-parsing]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Traditional document understanding pipelines require separate OCR, layout analysis, and
+  text parsing stages — each with its own failure modes that compound across the pipeline.
+  Donut (Document Understanding Transformer) directly encodes document images through a
+  Swin Transformer vision encoder and decodes the desired output text in one pass,
+  eliminating OCR entirely and reducing error propagation while handling documents with
+  complex layouts, tables, and mixed text.
+
+use_cases:
+  - Extract structured data from invoices and receipts without running a separate OCR engine
+  - Build a document classification system that reads document images end-to-end
+  - Parse table data from scanned documents into structured JSON or CSV output
+  - Process multilingual documents with mixed layouts without language-specific OCR setup

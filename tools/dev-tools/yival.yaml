@@ -1,0 +1,27 @@
+name: YiVal
+description: An automatic prompt engineering assistant for GenAI applications that optimizes prompts, evaluates performance, and compares configurations.
+tagline: Automated prompt engineering for GenAI
+
+github_url: https://github.com/YiVal/YiVal
+
+install_command: pip install yival
+
+category: Dev Tools
+tags: [python, prompt-engineering, evaluation, llm, optimization, genai, experimentation]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Finding the best prompt for a GenAI task involves manually testing dozens of prompt
+  variants, model parameters, and configurations — a slow, ad-hoc process with no
+  reproducible workflow. YiVal automates prompt engineering by running systematic
+  experiments across prompt templates, model settings, and evaluation criteria, then
+  presents comparative results so developers can identify the optimal configuration
+  with data-driven decisions instead of guesswork.
+
+use_cases:
+  - Run A/B tests on prompt templates to find which wording produces the most accurate outputs for a given task
+  - Compare the same prompt across different LLM providers to select the best model for cost and quality
+  - Optimize temperature, top-p, and other model parameters systematically instead of by manual tuning
+  - Build a regression test suite that automatically alerts when a prompt change degrades output quality

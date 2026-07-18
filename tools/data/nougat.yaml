@@ -1,0 +1,28 @@
+name: Nougat
+description: A neural optical understanding model from Meta that converts academic PDF documents into readable markup text without OCR preprocessing.
+tagline: Turn academic PDFs into markup text
+
+github_url: https://github.com/facebookresearch/nougat
+website_url: https://facebookresearch.github.io/nougat
+
+install_command: pip install nougat-ocr
+
+category: Data
+tags: [python, pdf, ocr, academic-documents, document-understanding, latex, deep-learning]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Extracting text from academic PDFs, especially those with complex layouts, mathematical
+  equations, and multi-column formats, produces garbled output with traditional OCR tools
+  that lose formatting and structure. Nougat (Neural Optical Understanding for Academic
+  Documents) uses a transformer-based vision encoder to directly convert PDF pages into
+  Markdown-formatted text with correct mathematics, section headers, and inline formatting,
+  eliminating the error-prone OCR post-processing pipeline.
+
+use_cases:
+  - Convert a library of academic PDFs into searchable Markdown for building a research knowledge base
+  - Extract mathematical equations from papers in a machine-readable format for reproducibility checks
+  - Build a document ingestion pipeline that preserves structural elements like section headers and footnotes
+  - Process batch PDF conversions for dataset creation or full-text search indexing
