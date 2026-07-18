@@ -1,0 +1,42 @@
+name: IREE
+description: A retargetable MLIR-based machine learning compiler and runtime toolkit that optimizes and executes models from TensorFlow, PyTorch, and JAX on CPUs, GPUs, and specialized accelerators.
+tagline: MLIR-based ML compiler for cross-platform model deployment
+
+github_url: https://github.com/iree-org/iree
+website_url: https://iree.dev
+docs_url: https://iree.dev/reference/bindings/python
+
+install_command: pip install iree-base-compiler iree-base-runtime
+
+category: Other
+tags:
+  - compiler
+  - mlir
+  - optimization
+  - inference
+  - cross-platform
+  - gpu
+  - tensorflow
+  - pytorch
+  - jax
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Deploying ML models across diverse hardware — from mobile CPUs to
+  desktop GPUs to AI accelerators — requires platform-specific tuning
+  and separate runtime backends. IREE solves this with an MLIR-based
+  compiler that takes models from TensorFlow, PyTorch, and JAX and
+  generates optimized code for any target. Its HAL (Hardware
+  Abstraction Layer) runtime dispatches to Vulkan, CUDA, Metal, ROCm,
+  and CPU backends with near-native performance. Models are compiled
+  once and deployed across platforms without hardware-specific retuning,
+  and the runtime is lightweight enough for embedded use cases.
+
+use_cases:
+  - Compile a PyTorch model once and deploy it on NVIDIA GPU, AMD GPU, and CPU from the same binary
+  - Run a TensorFlow model on a Vulkan-capable mobile device without platform-specific code
+  - Build a cross-platform AI application that uses Metal on macOS, Vulkan on Android, and CUDA on Linux
+  - Optimize a JAX model for low-latency inference on edge hardware using MLIR-based fusion passes
+  - Deploy compiled model binaries to embedded devices with the minimal IREE runtime footprint

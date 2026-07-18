@@ -1,0 +1,39 @@
+name: DeepLearning4J
+description: A comprehensive deep learning library for the Java Virtual Machine with model import from Keras, TensorFlow, and ONNX, plus a PyTorch-like Java API (SameDiff) and a modular C++ math backend.
+tagline: Deep learning for Java, Scala, and the JVM ecosystem
+
+github_url: https://github.com/deeplearning4j/deeplearning4j
+website_url: https://deeplearning4j.konduit.ai
+docs_url: https://deeplearning4j.konduit.ai
+
+category: Other
+tags:
+  - java
+  - deep-learning
+  - jvm
+  - scala
+  - neural-network
+  - tensorflow
+  - onnx
+  - pytorch
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Most deep learning frameworks are Python-first, leaving Java and JVM
+  ecosystems — where most enterprise production systems run — with few
+  options for native model training and inference. DeepLearning4J (DL4J)
+  brings deep learning to the JVM with native Java APIs, model import
+  from Keras, TensorFlow, and ONNX/PyTorch via a modular C++ math
+  library (libnd4j), and SameDiff — a PyTorch-like autodiff library.
+  It integrates with Hadoop, Spark, and Kafka for distributed training
+  on big data pipelines, and runs on CPUs and GPUs without requiring
+  Python or native library conflicts in JVM deployments.
+
+use_cases:
+  - Train an LSTM for time-series forecasting on financial data directly in a Java trading application
+  - Import a Keras image classifier and serve it through a Spring Boot REST API
+  - Run distributed deep learning training across a Spark cluster on Hadoop data
+  - Build a real-time anomaly detection pipeline in Apache Kafka Streams using DL4J
+  - Deploy a TensorFlow model in a JVM microservice without any Python dependencies

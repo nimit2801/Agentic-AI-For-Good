@@ -1,0 +1,37 @@
+name: AnimateDiff
+description: A framework for generating animated images from text prompts by inserting a motion module into existing text-to-image diffusion models without task-specific training.
+tagline: Text-to-video animation framework for diffusion models
+
+github_url: https://github.com/guoyww/AnimateDiff
+website_url: https://animatediff.github.io
+
+category: Other
+tags:
+  - video-generation
+  - animation
+  - diffusion
+  - stable-diffusion
+  - text-to-video
+  - motion
+  - deep-learning
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Generating animated content from text typically requires training
+  video diffusion models from scratch or collecting large-scale video
+  datasets. AnimateDiff introduces a plug-and-play motion module that
+  inserts into any personalized text-to-image diffusion model (such as
+  those fine-tuned on specific styles or characters) and converts it
+  into an animation generator — without task-specific video training
+  data. The motion module learns generic motion priors from video
+  data once, then works with any base model, enabling animation of
+  custom subjects, styles, and scenes on consumer GPUs.
+
+use_cases:
+  - Generate animated character sequences from a personalized Stable Diffusion model fine-tuned on your artwork
+  - Create looping background animations for games or websites using text prompts
+  - Produce short animated clips from storyboard descriptions without manual frame-by-frame animation
+  - Add motion to existing image generation workflows for social media content creation
+  - Generate training data for video models by animating static image datasets

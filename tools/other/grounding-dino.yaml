@@ -1,0 +1,37 @@
+name: Grounding DINO
+description: An open-set object detection model that can detect arbitrary objects from natural language descriptions without requiring predefined categories. Marries DINO with grounded pre-training for zero-shot transfer.
+tagline: Open-set object detection from natural language descriptions
+
+github_url: https://github.com/IDEA-Research/GroundingDINO
+website_url: https://arxiv.org/abs/2303.05499
+
+category: Other
+tags:
+  - object-detection
+  - vision
+  - open-vocabulary
+  - zero-shot
+  - transformer
+  - computer-vision
+  - deep-learning
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Traditional object detection models are limited to a fixed set of
+  predefined categories — they cannot detect objects they were not
+  trained on. Grounding DINO solves open-set detection by marrying
+  the DINO transformer-based detector with grounded language pre-
+  training, enabling detection of arbitrary objects described in
+  natural language. Given a text prompt like "the red car on the left",
+  it finds and localizes matching objects without retraining. This
+  enables zero-shot object detection for any domain without labeled
+  training data for each new category.
+
+use_cases:
+  - Detect arbitrary objects in surveillance footage by describing them in natural language
+  - Build a visual search system that finds products from natural language descriptions
+  - Enable robots to locate objects in unstructured environments using voice commands
+  - Create an automatic image annotation pipeline that labels objects without predefined categories
+  - Combine with GroundingSAM for pixel-perfect segmentation from text prompts
