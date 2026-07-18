@@ -1,0 +1,28 @@
+name: OneFlow
+description: A deep learning framework designed for user-friendly, scalable, and efficient model training with native distributed support and automatic parallelism.
+tagline: Deep learning framework built for scaling
+
+github_url: https://github.com/Oneflow-Inc/oneflow
+website_url: https://www.oneflow.org
+
+install_command: pip install oneflow
+
+category: Fine-tuning
+tags: [python, deep-learning, distributed-training, parallelism, gpu, training-framework]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Scaling deep learning training across multiple GPUs and machines traditionally requires
+  manual parallelism strategies — data parallel, model parallel, pipeline parallel — each
+  demanding deep expertise to configure correctly. OneFlow introduces an automatic
+  parallelism architecture that analyzes the computation graph and distributes operations
+  optimally without code changes, so teams can go from single-GPU prototyping to
+  multi-node training with zero refactoring.
+
+use_cases:
+  - Scale a large language model fine-tuning job from one GPU to dozens without rewriting the training script
+  - Train computer vision models on massive image datasets using automatic data and model parallelism
+  - Prototype experiments on a single GPU and seamlessly transition to a multi-node cluster for production runs
+  - Build custom neural architectures that benefit from automatic graph-level parallelism optimization

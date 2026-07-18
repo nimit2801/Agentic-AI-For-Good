@@ -1,0 +1,27 @@
+name: LM Evaluation Harness
+description: A unified framework for zero-shot and few-shot evaluation of language models across hundreds of standardized benchmarks and custom tasks.
+tagline: The standard framework for LLM benchmarking
+
+github_url: https://github.com/EleutherAI/lm-evaluation-harness
+
+install_command: pip install lm-eval
+
+category: Monitoring
+tags: [python, evaluation, benchmarking, llm, accuracy, testing, reproducibility]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Evaluating LLMs requires running them against standardized benchmarks with consistent
+  prompt formatting, task definitions, and scoring logic — doing this manually leads to
+  irreproducible results and apples-to-oranges comparisons. The LM Evaluation Harness
+  provides a centralized framework with hundreds of curated tasks (MMLU, GSM8K, HumanEval,
+  etc.), automatic metric computation, and support for any model backend, making LLM
+  evaluation reproducible, comparable, and scriptable.
+
+use_cases:
+  - Benchmark a fine-tuned model against industry-standard tasks like MMLU and GSM8K to measure improvement over the base model
+  - Compare multiple LLM providers (OpenAI, Anthropic, open-source) on the same set of tasks for procurement decisions
+  - Run regression tests before deploying a new model version to detect accuracy regressions
+  - Evaluate custom tasks designed around your specific domain or use case using the flexible task registration system

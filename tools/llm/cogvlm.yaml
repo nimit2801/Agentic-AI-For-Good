@@ -1,0 +1,23 @@
+name: CogVLM
+description: An open-source multimodal language model based on Llama 3 that achieves GPT-4V-level performance on image and video understanding, supporting high-resolution images up to 1344x1344 and multi-turn visual dialogue with 8K context length.
+tagline: GPT-4V-level open-source multimodal model
+
+github_url: https://github.com/THUDM/CogVLM2
+website_url: https://cogvlm2-video.github.io
+
+category: LLM
+tags: [multimodal, vision, language-model, image, video, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Building applications that understand visual content at GPT-4V level without depending on proprietary APIs has been a major gap in the open-source ecosystem. Existing open multimodal models struggled with high-resolution images, long-context visual understanding, and video comprehension. CogVLM solves this by providing an Apache-2.0 multimodal model matching GPT-4V on benchmarks, supporting 8K context, 1344x1344 image resolution, and video understanding — all deployable on local hardware with int4 quantization reducing VRAM requirements to 16GB.
+
+install_command: pip install transformers
+
+use_cases:
+  - Build document understanding pipelines that read receipts, forms, and technical diagrams locally
+  - Deploy multimodal visual assistants running on consumer GPUs with int4 quantization
+  - Process video content by extracting keyframes for question-answering and summarization
+  - Replace proprietary vision APIs with fully open-source models for privacy-sensitive applications

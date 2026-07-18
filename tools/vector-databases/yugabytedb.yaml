@@ -1,0 +1,26 @@
+name: YugabyteDB
+description: A cloud-native distributed SQL database with PostgreSQL compatibility and native vector search support via the pgvector extension for AI applications.
+tagline: Distributed SQL with AI-grade vector search
+
+github_url: https://github.com/yugabyte/yugabyte-db
+website_url: https://www.yugabyte.com
+docs_url: https://docs.yugabyte.com
+
+category: Vector DB
+tags: [sql, postgresql, distributed-database, vector-search, pgvector, hnsw, similarity-search]
+pricing: freemium
+is_open_source: true
+
+problem_solved: |
+  Production AI applications need a database that simultaneously handles transactional
+  workloads and vector similarity search — running separate operational and vector databases
+  doubles infrastructure complexity and introduces data consistency problems. YugabyteDB
+  is a cloud-native distributed SQL database with native pgvector support, providing
+  ACID transactions, geo-distribution, and HNSW-indexed vector similarity search in a
+  single system, so teams can unify their operational and AI data layers.
+
+use_cases:
+  - Build a RAG application with semantic search over documents while keeping metadata in the same ACID-compliant database
+  - Run real-time hybrid search (vector similarity + SQL filters) for product recommendations across globally distributed users
+  - Store and query embeddings alongside transactional data for fraud detection without synchronizing between two databases
+  - Deploy a geo-distributed vector search service with automatic replication and failover across multiple regions

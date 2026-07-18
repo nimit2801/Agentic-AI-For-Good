@@ -1,0 +1,28 @@
+name: LLMLingua
+description: A prompt compression framework that reduces LLM inference costs by compressing prompts and KV caches up to 20x while preserving critical information.
+tagline: Compress prompts 20x without losing quality
+
+github_url: https://github.com/microsoft/LLMLingua
+website_url: https://llmlingua.com
+docs_url: https://github.com/microsoft/LLMLingua#readme
+
+install_command: pip install llmlingua
+
+category: RAG
+tags: [python, prompt-compression, llm, inference-optimization, rag, token-efficiency]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Long prompts waste tokens and increase LLM latency and cost — a 10,000-token prompt with
+  verbose context and task descriptions contains significant redundancy. LLMLingua uses a
+  small language model to identify and remove superfluous tokens and phrases, compressing
+  prompts by up to 20x with minimal accuracy loss. It also compresses the KV cache for
+  even greater speedups during generation.
+
+use_cases:
+  - Compress retrieval-augmented generation contexts before passing them to an LLM for faster answers at lower cost
+  - Reduce prompt engineering budget by stripping verbose instructions while keeping task semantics intact
+  - Speed up batch inference on long-document tasks like summarization and question answering
+  - Compress multi-turn conversation histories to fit within context windows without losing state
