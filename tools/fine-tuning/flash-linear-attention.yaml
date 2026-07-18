@@ -1,0 +1,40 @@
+name: Flash Linear Attention
+description: A collection of efficient Triton-based kernels for linear attention mechanisms including Mamba-2, GLA, DeltaNet, and other state-space model layers with hardware-aware optimizations.
+tagline: Hardware-efficient linear attention kernels for state-space models
+
+github_url: https://github.com/fla-org/flash-linear-attention
+docs_url: https://github.com/fla-org/flash-linear-attention
+
+install_command: pip install flash-linear-attention
+
+category: Fine-tuning
+tags:
+  - attention
+  - transformer
+  - kernel
+  - triton
+  - mamba
+  - state-space-model
+  - cuda
+  - optimization
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Linear attention and state-space models (Mamba, GLA, DeltaNet) offer
+  theoretical efficiency over standard quadratic attention, but their
+  custom CUDA kernels are difficult to implement and optimize. Flash
+  Linear Attention provides a unified collection of Triton-based kernels
+  for these emerging architectures — Mamba-2, GLA (Gated Linear
+  Attention), DeltaNet, and more — with hardware-aware optimizations for
+  modern GPUs. Each kernel is benchmarked and tuned for throughput and
+  memory efficiency, reducing development time for researchers and
+  engineers working on sub-quadratic attention mechanisms.
+
+use_cases:
+  - Train a linear attention language model with the Mamba-2 kernel for faster sequence processing
+  - Replace the standard attention in a transformer with GLA kernels for improved long-context efficiency
+  - Benchmark linear attention variants against softmax attention for a specific GPU architecture
+  - Integrate DeltaNet recurrent kernels into an existing transformer training pipeline
+  - Experiment with hybrid attention architectures combining linear and quadratic attention layers

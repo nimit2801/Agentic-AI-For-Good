@@ -1,0 +1,38 @@
+name: StreamingLLM
+description: An efficient framework for running LLMs on streaming text of up to 4 million tokens by leveraging the attention sink phenomenon — initial tokens naturally attract attention and can serve as a stabilizer.
+tagline: Run LLMs on streaming text with millions of tokens
+
+github_url: https://github.com/mit-han-lab/streaming-llm
+docs_url: https://github.com/mit-han-lab/streaming-llm
+
+category: LLM
+tags:
+  - inference
+  - long-context
+  - streaming
+  - attention
+  - llm
+  - optimization
+  - mit
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Standard LLMs have a fixed context window — tokens beyond the window
+  cause OOM errors or force expensive re-computation. StreamingLLM
+  enables LLMs to process streaming, infinitely-long text by keeping
+  only a sliding window of recent tokens plus the initial "attention
+  sink" tokens. It leverages the discovery that the first few tokens
+  naturally attract disproportionate attention (the attention sink
+  phenomenon), allowing the model to maintain stable generation quality
+  over millions of tokens without recomputing the full history. This
+  works with Llama 2, MPT, Falcon, Pythia, and other open models
+  without retraining.
+
+use_cases:
+  - Process a 100K-token codebase diff in a single LLM pass without hitting context limits
+  - Run a live transcription system where the LLM maintains state across hours of streaming audio
+  - Analyze large log files by streaming through millions of tokens with consistent performance
+  - Build a chat application with infinite conversation history that stays responsive
+  - Enable long-document question answering on entire books without chunking or retrieval

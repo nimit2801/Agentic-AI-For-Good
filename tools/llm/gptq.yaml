@@ -1,0 +1,38 @@
+name: GPTQ
+description: A post-training quantization toolkit for LLMs that compresses models to 3-4 bits while preserving accuracy. Supports GPU acceleration via NVIDIA, AMD, and Intel hardware.
+tagline: Post-training LLM quantization with GPU acceleration
+
+github_url: https://github.com/ModelCloud/GPTQModel
+docs_url: https://github.com/ModelCloud/GPTQModel
+
+install_command: pip install gptqmodel
+
+category: LLM
+tags:
+  - quantization
+  - compression
+  - llm
+  - gpu
+  - optimization
+  - inference
+  - model-optimization
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Large language models require enormous GPU memory — a 70B parameter
+  model in fp16 needs 140GB, far beyond a single consumer GPU. GPTQ
+  (Post-Training Quantization for GPTs) compresses LLMs to 3-4 bits per
+  parameter with minimal accuracy loss, reducing memory requirements by
+  4-5x. GPTQModel is the maintained, hardware-accelerated implementation
+  supporting NVIDIA CUDA, AMD ROCm, and Intel GPU backends. It
+  integrates with HuggingFace, vLLM, and SGLang for seamless deployment
+  of quantized models on consumer and enterprise hardware.
+
+use_cases:
+  - Quantize a 70B Llama model to 4-bit and run it on a single A100 GPU
+  - Deploy quantized LLMs on consumer GPUs (RTX 3090/4090) without losing significant accuracy
+  - Apply INT3 quantization to reduce model serving cost in production by 4x
+  - Integrate GPTQ quantized models with vLLM for high-throughput inference
+  - Batch-quantize multiple model variants with per-layer sensitivity analysis for optimal compression

@@ -1,0 +1,39 @@
+name: AQLM
+description: Additive Quantization of Language Models — a post-training compression method that represents each weight as a sum of multiple learned codebooks for extreme compression to 2 bits per parameter.
+tagline: Extreme 2-bit LLM compression via additive quantization
+
+github_url: https://github.com/Vahe1994/AQLM
+docs_url: https://github.com/Vahe1994/AQLM
+
+install_command: pip install aqlm
+
+category: LLM
+tags:
+  - quantization
+  - compression
+  - llm
+  - inference
+  - optimization
+  - model-compression
+  - codebook
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Standard quantization methods hit a quality wall below 3 bits per
+  parameter, limiting compression on memory-constrained hardware. AQLM
+  (Additive Quantization of Language Models) breaks through this barrier
+  by representing each weight as a sum of vectors from multiple learned
+  codebooks, rather than a single scalar value. This achieves 2 bits per
+  parameter with significantly less accuracy loss than GPTQ or AWQ at
+  comparable compression ratios. AQLM is particularly effective for
+  deploying LLMs on edge devices, mobile hardware, or any environment
+  where GPU memory is tightly constrained.
+
+use_cases:
+  - Compress a 13B Llama model to 2-bit and fit it on a single consumer GPU with 8GB VRAM
+  - Deploy quantized LLMs on mobile devices or edge hardware with extreme memory constraints
+  - Compare AQLM 2-bit compression against GPTQ 3-bit for a production model serving pipeline
+  - Run a 7B model entirely in GPU memory on an RTX 3060 or similar 6-8 GB card
+  - Quantize model ensembles for deployment on resource-constrained cloud instances
