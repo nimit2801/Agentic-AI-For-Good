@@ -1,0 +1,39 @@
+name: IP-Adapter
+description: An image prompt adapter that enables pretrained text-to-image diffusion models to generate images guided by reference images, supporting both image and text conditioning without fine-tuning.
+tagline: Image prompt adapter for text-to-image diffusion models
+
+github_url: https://github.com/tencent-ailab/IP-Adapter
+docs_url: https://github.com/tencent-ailab/IP-Adapter
+
+install_command: pip install ip-adapter
+
+category: Other
+tags:
+  - image-generation
+  - diffusion
+  - stable-diffusion
+  - image-prompt
+  - adapter
+  - transfer-learning
+  - computer-vision
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Text-to-image models are excellent at following text descriptions but
+  struggle to capture the visual essence of a reference image — style,
+  composition, color palette, or subject identity — through text alone.
+  IP-Adapter adds a lightweight, decoupled cross-attention mechanism
+  that accepts an image prompt alongside the text prompt, enabling
+  pretrained diffusion models to generate images that respect both
+  textual and visual guidance. Unlike full fine-tuning or DreamBooth,
+  IP-Adapter is a single add-on module trained once that works with any
+  base model and preserves the original text conditioning capabilities.
+
+use_cases:
+  - Generate product images in a specific brand style by providing a reference image
+  - Create consistent character illustrations across multiple generations using a character reference
+  - Transfer the artistic style of one image to new subjects described in text
+  - Build a design tool where users drag a reference image to guide the AI's visual output
+  - Enable image-conditional generation without retraining or storing multiple model checkpoints
