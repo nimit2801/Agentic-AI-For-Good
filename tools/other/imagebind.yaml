@@ -1,0 +1,24 @@
+name: ImageBind
+description: Meta's multimodal embedding model that binds data from six modalities — images, text, audio, depth, thermal, and IMU data — into a shared embedding space.
+tagline: Bind six modalities into one embedding space
+
+github_url: https://github.com/facebookresearch/ImageBind
+
+category: Other
+tags: [python, multimodal, embeddings, vision, audio, deep-learning, meta, zero-shot]
+pricing: free
+is_open_source: true
+
+problem_solved: |
+  Modern AI systems typically handle one or two modalities at a time — image-text models
+  don't understand audio, audio models don't process depth data — requiring separate
+  models for each modality with no shared understanding. ImageBind creates a single
+  embedding space that binds images, text, audio, depth, thermal, and IMU data, enabling
+  emergent zero-shot capabilities across modalities (like searching audio with text or
+  images with sound) without training on every possible pair.
+
+use_cases:
+  - Search video content by matching audio cues (a dog barking) to visual moments across a video library
+  - Build cross-modal retrieval systems that find images using text, audio, or depth data as query input
+  - Enable audio-based image editing by finding visual concepts through their associated sounds
+  - Create emergent multimodal classifiers without training data for every modality combination

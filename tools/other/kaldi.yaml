@@ -1,0 +1,27 @@
+name: Kaldi
+description: A speech recognition toolkit for research and production, providing state-of-the-art ASR with Gaussian mixture and deep neural network acoustic models.
+tagline: The gold standard for speech recognition research
+
+github_url: https://github.com/kaldi-asr/kaldi
+website_url: https://kaldi-asr.org
+docs_url: https://kaldi-asr.org/doc
+
+category: Other
+tags: [speech, asr, speech-recognition, cpp, acoustic-modeling, language-modeling, signal-processing]
+pricing: free
+is_open_source: true
+
+problem_solved: |
+  Building high-accuracy automatic speech recognition systems requires sophisticated
+  acoustic modeling, language model integration, and feature extraction pipelines that
+  are tightly coupled and hard to assemble from individual components. Kaldi provides
+  a complete, modular ASR toolkit with implementations of GMM-HMM and DNN-HMM acoustic
+  models, finite-state transducer decoding, and extensive feature extraction libraries,
+  serving as the foundation upon which most modern ASR systems are built and providing
+  reproducible baselines for speech research.
+
+use_cases:
+  - Train custom acoustic models for domain-specific vocabulary (medical, legal, technical terminology)
+  - Build a production-grade speech recognition system with real-time decoding and language model integration
+  - Run reproducible ASR experiments using standardized recipes and evaluation metrics
+  - Extract and experiment with acoustic features (MFCCs, filterbanks, i-vectors) for speech analysis
