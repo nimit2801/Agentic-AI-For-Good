@@ -1,0 +1,29 @@
+name: Evaluate
+description: A library from Hugging Face for evaluating machine learning models and datasets with standardized metrics, comparisons, and visualizations.
+tagline: Standardized ML evaluation from Hugging Face
+
+github_url: https://github.com/huggingface/evaluate
+website_url: https://huggingface.co/docs/evaluate
+docs_url: https://huggingface.co/docs/evaluate
+
+install_command: pip install evaluate
+
+category: Monitoring
+tags: [python, evaluation, metrics, huggingface, ml, benchmarking, nlp, computer-vision]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Evaluating ML models consistently across projects is hard — different teams use different
+  metrics, implementations vary, and comparing results from papers to your own experiments
+  requires reimplementing the exact same evaluation code. Evaluate provides a unified API
+  to hundreds of standardized metrics (accuracy, F1, BLEU, ROUGE, perplexity, etc.) with
+  consistent input/output formats, built-in dataset integration, and visualization tools
+  for tracking improvements over time.
+
+use_cases:
+  - Compare a fine-tuned LLM against a baseline using standardized NLP metrics like BLEU, ROUGE, and perplexity
+  - Run regression evaluations on every new model version to catch accuracy regressions before deployment
+  - Generate leaderboard-style comparison reports across multiple models and datasets
+  - Visualize metric trends over training runs to identify overfitting or training instability
