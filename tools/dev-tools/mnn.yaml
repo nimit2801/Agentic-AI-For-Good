@@ -1,0 +1,39 @@
+name: MNN
+description: A blazing-fast, lightweight neural network inference engine developed by Alibaba. Supports on-device LLM inference and stable diffusion, with optimized backends for ARM, x86, CUDA, OpenCL, Metal, and Vulkan.
+tagline: Alibaba's lightweight inference engine for on-device LLMs and edge AI
+
+github_url: https://github.com/alibaba/MNN
+docs_url: https://mnn-docs.readthedocs.io/en/latest
+
+install_command: pip install MNN
+
+category: Dev Tools
+tags:
+  - inference
+  - mobile
+  - on-device
+  - deep-learning
+  - cross-platform
+  - arm
+  - llm
+  - optimization
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Running large models on edge devices — smartphones, IoT, embedded
+  systems — requires an inference engine that balances speed against the
+  strict memory and power budgets of mobile hardware. MNN is battle-tested
+  across hundreds of millions of Alibaba devices, supporting on-device LLM
+  inference, stable diffusion, and vision models. It converts models from
+  TensorFlow, PyTorch, and ONNX, and dispatches to the optimal backend
+  (ARM NEON, x86 AVX, Vulkan, CUDA, Metal, OpenCL) without manual
+  configuration.
+
+use_cases:
+  - Run a 7B LLM on-device using MNN's transformer runtime for private AI inference
+  - Deploy stable diffusion image generation on a mobile phone with Metal GPU acceleration
+  - Convert a TensorFlow detection model and run it at 60 FPS on an edge device
+  - Power a cross-platform mobile app with real-time ML inference on Android and iOS
+  - Benchmark and optimize an ONNX model across ARM, x86, and GPU backends in one pipeline

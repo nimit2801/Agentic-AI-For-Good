@@ -1,0 +1,39 @@
+name: TNN
+description: A cross-platform deep learning inference framework developed by Tencent Youtu Lab and Guangying Lab. Optimized for mobile, desktop, and server deployment with model compression, operator fusion, and code pruning capabilities.
+tagline: Tencent's cross-platform deep learning inference framework
+
+github_url: https://github.com/Tencent/TNN
+docs_url: https://github.com/Tencent/TNN
+
+install_command: pip install tnn
+
+category: Dev Tools
+tags:
+  - inference
+  - mobile
+  - deep-learning
+  - cross-platform
+  - optimization
+  - model-compression
+  - tencent
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Deploying deep learning models across mobile, desktop, and server
+  platforms usually forces a choice between raw speed and portability.
+  TNN, built on the lineage of ncnn and Rapidnet, delivers both: it
+  provides a unified inference runtime across Android, iOS, Windows,
+  Linux, and macOS with architecture-specific optimizations (ARM NEON,
+  x86 AVX, GPU). Model compression and operator pruning reduce the
+  binary size, making TNN suitable for production apps including Tencent's
+  own Mobile QQ and Weishi. Models from PyTorch, ONNX, and TensorFlow
+  can be converted via the TNN converter toolchain.
+
+use_cases:
+  - Deploy a YOLO object detection model in a mobile app with real-time video processing
+  - Run a BERT-based question answering model on-device for privacy-preserving AI
+  - Convert and optimize a PyTorch classification model for deployment on Android and iOS
+  - Prune and compress a neural network to reduce app binary size while maintaining accuracy
+  - Benchmark inference throughput across ARM, x86, and GPU backends from a single model

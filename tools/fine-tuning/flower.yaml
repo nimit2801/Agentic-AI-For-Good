@@ -1,0 +1,40 @@
+name: Flower
+description: A friendly federated AI framework for training machine learning models across distributed data sources without centralizing sensitive data. Supports simulation, real-world deployment, and heterogeneous edge devices.
+tagline: Federated learning framework for privacy-preserving distributed AI
+
+github_url: https://github.com/flwrlabs/flower
+website_url: https://flower.ai
+docs_url: https://flower.ai/docs
+
+install_command: pip install flwr
+
+category: Fine-tuning
+tags:
+  - federated-learning
+  - distributed-training
+  - privacy
+  - python
+  - machine-learning
+  - collaborative
+  - edge
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Training ML models on sensitive data (health records, financial
+  transactions, personal messages) requires keeping data on-device or
+  on-premises, but traditional training centralizes everything. Flower
+  enables federated learning: models are trained across distributed
+  clients — phones, hospitals, factories — and only weight updates,
+  never raw data, leave each client. Flower supports simulation for
+  rapid prototyping and production deployment with heterogeneous
+  hardware, straggler handling, and secure aggregation. It integrates
+  with PyTorch, TensorFlow, Hugging Face, and JAX out of the box.
+
+use_cases:
+  - Train a medical image classifier across multiple hospitals without sharing patient data
+  - Fine-tune an LLM on users' mobile typing data while keeping keystrokes private
+  - Simulate a 1000-client federated learning experiment on a single machine before production rollout
+  - Build a keyboard prediction model that improves on-device without uploading user text
+  - Aggregate model updates from factory sensors across manufacturing sites to train a predictive maintenance model
