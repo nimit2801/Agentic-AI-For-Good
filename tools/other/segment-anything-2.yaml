@@ -1,0 +1,29 @@
+name: Segment Anything 2
+description: Meta's next-generation promptable segmentation model that achieves improved accuracy and significantly faster inference than SAM 1, with hierarchical mask decoding, support for multiple masks per prompt, and video segmentation capabilities through a memory-aware architecture.
+tagline: Next-generation promptable segmentation for images and video
+
+github_url: https://github.com/facebookresearch/sam2
+website_url: https://segment-anything.com
+docs_url: https://github.com/facebookresearch/sam2#readme
+
+category: Other
+tags: [image-segmentation, video-segmentation, computer-vision, pytorch, promptable-segmentation, zero-shot, meta, deep-learning]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  The original Segment Anything Model (SAM) achieved zero-shot segmentation but had
+  limitations in mask fidelity, inference speed, and could only handle still images,
+  requiring frame-by-frame processing for video without temporal consistency. SAM 2
+  introduces a hierarchical mask decoder with three output levels, simultaneous
+  prediction of multiple masks per prompt, and a memory mechanism that propagates
+  segmentation across video frames. It achieves up to 6× faster inference than SAM 1
+  while producing more accurate and detailed masks, and extends promptable segmentation
+  to video with tracking across frame sequences.
+
+use_cases:
+  - Segment objects in images with higher accuracy than SAM 1 using the hierarchical decoder with multiple mask outputs per prompt
+  - Track objects across video frames with the memory-aware architecture for consistent video segmentation without per-frame prompting
+  - Power real-time interactive segmentation applications with up to 6× faster inference than the previous generation
+  - Build automated data annotation pipelines that generate high-quality segmentation masks for both images and video datasets

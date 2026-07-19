@@ -1,0 +1,29 @@
+name: Encodec
+description: A high-fidelity neural audio codec from Meta that compresses audio to extremely low bitrates (1.5-24 kbps) using a streaming encoder-decoder architecture with a residual vector quantizer and a language model for bandwidth-aware compression.
+tagline: Neural audio compression at ultra-low bitrates
+
+github_url: https://github.com/facebookresearch/encodec
+website_url: https://github.com/facebookresearch/encodec
+install_command: pip install encodec
+
+category: Other
+tags: [audio-compression, neural-codec, audio, deep-learning, pytorch, speech-synthesis, music-generation, real-time]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Traditional audio codecs like MP3 and Opus use hand-engineered psychoacoustic models
+  that degrade rapidly at very low bitrates and do not adapt to the content type. EnCodec
+  uses a learned end-to-end neural network with a residual vector quantizer (RVQ) and a
+  transformer-based language model to compress audio at bitrates from 1.5 kbps to 24 kbps.
+  It maintains perceptual audio quality far below the bitrates where traditional codecs
+  break down, supports both mono and stereo streaming, and runs in real time on consumer
+  hardware — enabling applications like high-quality music streaming over limited bandwidth
+  and efficient storage of large audio datasets.
+
+use_cases:
+  - Compress high-quality audio for streaming at very low bitrates (as low as 1.5 kbps) without perceptible quality loss
+  - Reduce storage requirements for large audio datasets used in machine learning training pipelines
+  - Enable real-time audio compression for live streaming applications on consumer hardware
+  - Serve as the acoustic compression backbone for generative audio models (MusicGen, AudioGen)

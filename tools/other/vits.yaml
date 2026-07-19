@@ -1,0 +1,27 @@
+name: VITS
+description: A conditional variational autoencoder with adversarial learning for end-to-end text-to-speech that combines variational inference, normalizing flows, and adversarial training to produce more natural-sounding speech than traditional two-stage TTS systems, with a stochastic duration predictor for diverse speaking rhythms.
+tagline: End-to-end TTS with variational inference and adversarial learning
+
+github_url: https://github.com/jaywalnut310/vits
+website_url: https://jaywalnut310.github.io/vits-demo/index.html
+docs_url: https://github.com/jaywalnut310/vits#readme
+
+category: Other
+tags: [text-to-speech, variational-autoencoder, adversarial-learning, pytorch, audio-generation, speech-synthesis, deep-learning]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Traditional text-to-speech systems use two-stage pipelines with separate text-to-spectrogram
+  and spectrogram-to-audio components, each requiring independent training and careful alignment.
+  VITS unifies both stages in a single end-to-end model using a conditional variational autoencoder
+  with adversarial learning and normalizing flows. This produces more natural-sounding speech with
+  diverse rhythms and pitches from the same text input, matching ground-truth audio quality in
+  human evaluation while enabling parallel sampling at inference time.
+
+use_cases:
+  - Generate natural-sounding speech from text for audiobooks, voiceovers, and accessibility tools
+  - Produce multiple speaking styles and rhythms from the same text input using the stochastic duration predictor
+  - Serve as a backbone for fine-tuning custom voices with minimal data through transfer learning on pretrained checkpoints
+  - Enable real-time on-device TTS inference on consumer GPUs with the compact single-model architecture
