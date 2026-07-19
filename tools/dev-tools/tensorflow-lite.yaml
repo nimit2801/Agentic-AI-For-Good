@@ -1,0 +1,29 @@
+name: TensorFlow Lite
+description: A lightweight, cross-platform runtime for deploying TensorFlow machine learning models on mobile, embedded, and IoT devices. Supports hardware acceleration via GPU and NPU delegates, quantized model execution, on-device inference, and conversion from full TensorFlow, Keras, and PyTorch models.
+tagline: Deploy ML models on mobile, embedded, and edge devices
+
+website_url: https://www.tensorflow.org/lite
+docs_url: https://www.tensorflow.org/lite/guide
+github_url: https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite
+
+install_command: pip install tensorflow
+
+category: Dev Tools
+tags: [mobile, embedded, edge-ai, on-device, inference, tensorflow, quantization, cross-platform]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Running ML models on mobile phones, microcontrollers, and edge devices requires a runtime that
+  is small, fast, and low-power — the full TensorFlow framework is hundreds of megabytes and drains
+  batteries. TensorFlow Lite provides a specialized interpreter that loads quantized models
+  (int8, float16) in a fraction of the size, delegates execution to hardware accelerators (GPU,
+  NPU, DSP), and runs on Android, iOS, Linux, and microcontrollers with a minimal memory footprint.
+
+use_cases:
+  - Deploy a quantized image classification model on an Android or iOS app for real-time camera inference
+  - Run on-device keyword spotting (e.g., "Hey Siri") on microcontrollers with the micro runtime
+  - Convert a PyTorch model to TFLite via tf2onnx for edge deployment with hardware acceleration
+  - Embed a pose estimation model in a mobile fitness app with GPU delegate for 30+ FPS inference
+  - Deploy object detection pipelines on Raspberry Pi or Coral Edge TPU for industrial vision

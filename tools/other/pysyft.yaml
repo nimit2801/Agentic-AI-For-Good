@@ -1,0 +1,29 @@
+name: PySyft
+description: A Python library for performing data science on data that remains in someone else's server, enabling privacy-preserving machine learning through techniques like federated learning, differential privacy, encrypted computation (SMPC), and remote data access with granular access controls.
+tagline: Perform data science on data you cannot see — privacy-preserving ML
+
+github_url: https://github.com/OpenMined/PySyft
+website_url: https://openmined.org
+docs_url: https://openmined.github.io/PySyft/
+
+install_command: pip install syft
+
+category: Other
+tags: [privacy, federated-learning, differential-privacy, encrypted-computation, data-science, security, python]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  ML teams often cannot access the most valuable training data because it is sensitive — patient
+  records, financial transactions, personal data — and cannot leave its owner's infrastructure.
+  PySyft lets data scientists write queries against remote datasets without ever seeing the raw
+  data, using a combination of federated execution, differential privacy, and SMPC. The data never
+  moves; the computation comes to the data.
+
+use_cases:
+  - Train a federated model across hospital patient records without any patient data leaving each hospital
+  - Run differentially private statistical analyses on sensitive financial data with formal privacy guarantees
+  - Build a multi-party computation pipeline where two companies jointly compute insights on their combined data
+  - Delegate model training to a remote data owner's infrastructure with end-to-end encrypted computation
+  - Create a privacy-preserving data science workflow that enforces access policies at the tensor level
