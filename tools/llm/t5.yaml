@@ -1,0 +1,29 @@
+name: T5
+description: Google's Text-to-Text Transfer Transformer, a unified framework that treats every NLP task as a text-to-text problem, achieving state-of-the-art results on summarization, translation, QA, and classification.
+tagline: Unified text-to-text framework for all NLP tasks
+
+github_url: https://github.com/google-research/text-to-text-transfer-transformer
+install_command: pip install t5
+
+category: LLM
+tags: [llm, nlp, text-generation, transformer, google, encoder-decoder, summarization]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Traditional NLP required separate model architectures for different tasks —
+  sequence-to-sequence for translation, BERT for classification, causal LMs for
+  generation — leading to fragmented research and engineering. T5 unifies all
+  NLP tasks into a single text-to-text framework: every problem is cast as
+  "input text → output text" with a task-specific prefix. This lets a single
+  encoder-decoder Transformer, pre-trained on the massive C4 corpus, achieve
+  competitive or state-of-the-art results across translation, summarization,
+  question answering, and classification with minimal task-specific adaptation.
+
+use_cases:
+  - Fine-tune a single model for multiple NLP tasks including summarization, translation, and QA
+  - Build multilingual translation systems with a unified encoder-decoder architecture
+  - Perform few-shot and zero-shot text classification with text prompts and task prefixes
+  - Generate abstractive summaries of long documents with contextual understanding
+  - Serve as a backbone model for NLP research and transfer learning across diverse benchmarks

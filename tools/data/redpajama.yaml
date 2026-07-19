@@ -1,0 +1,29 @@
+name: RedPajama
+description: An open dataset with 30 trillion tokens for training large language models, providing high-quality, deduplicated training data with comprehensive quality signals and metadata.
+tagline: Open dataset with 30T tokens for LLM training
+
+github_url: https://github.com/togethercomputer/RedPajama-Data
+website_url: https://together.ai
+docs_url: https://huggingface.co/datasets/togethercomputer/RedPajama-Data-V2
+
+category: Data
+tags: [dataset, training-data, llm, open-data, pretraining, deduplication]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Training state-of-the-art large language models requires massive, diverse, and
+  high-quality text data, but creating such datasets from scratch is prohibitively
+  expensive and time-consuming. RedPajama provides a fully open dataset with 30
+  trillion tokens from diverse web sources, processed with deduplication, quality
+  filtering, and comprehensive quality signals. It enables researchers and companies
+  to train competitive LLMs without the data engineering burden, and its permissive
+  Apache-2.0 license avoids legal restrictions that limit other open datasets.
+
+use_cases:
+  - Pre-train large language models on high-quality open data without licensing restrictions
+  - Combine RedPajama with domain-specific data for continued pre-training and domain adaptation
+  - Use quality signal annotations to experiment with data filtering strategies for improved training
+  - Benchmark model performance against a standardized, reproducible pretraining dataset
+  - Augment retrieval datasets with diverse, deduplicated web text for RAG system training
