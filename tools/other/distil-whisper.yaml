@@ -1,0 +1,29 @@
+name: Distil-Whisper
+description: A distilled version of OpenAI's Whisper speech recognition model that is six times faster and 49% smaller while retaining within 1% word error rate, enabling efficient and accurate speech transcription on edge devices.
+tagline: Fast, accurate speech recognition distilled from Whisper
+
+github_url: https://github.com/huggingface/distil-whisper
+website_url: https://huggingface.co/distil-whisper
+install_command: pip install transformers accelerate
+
+category: Other
+tags: [speech-recognition, whisper, distillation, audio, huggingface, transformers, edge]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  OpenAI's Whisper provides state-of-the-art speech recognition but its large model
+  sizes and high latency make it impractical for real-time or edge deployment.
+  Distil-Whisper applies knowledge distillation — training a smaller student model
+  to mimic the teacher's output — to produce a model that runs six times faster
+  and uses half the parameters while retaining within 1% word error rate of the
+  original. This makes accurate, multilingual speech transcription feasible on
+  CPU, mobile devices, and low-power hardware without compromising quality.
+
+use_cases:
+  - Transcribe audio in real-time on edge devices with limited compute and memory
+  - Run speech recognition on CPU servers at reduced cost compared to full Whisper models
+  - Build privacy-preserving voice interfaces that process audio locally without cloud APIs
+  - Integrate fast, accurate transcription into live captioning and meeting recording pipelines
+  - Deploy multilingual speech-to-text on mobile apps with minimal battery and latency impact

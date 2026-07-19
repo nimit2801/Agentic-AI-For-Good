@@ -1,0 +1,27 @@
+name: Medusa
+description: A framework for accelerating LLM inference by adding multiple decoding heads that predict several tokens simultaneously, enabling 2-3x speedup without quality loss.
+tagline: Speed up LLM inference 2-3x with multiple decoding heads
+
+github_url: https://github.com/FasterDecoding/medusa
+install_command: pip install medusa-llm
+
+category: LLM
+tags: [llm, inference, decoding, acceleration, pytorch, speculative-decoding]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Standard autoregressive LLM decoding generates one token at a time, making inference
+  slow and memory-bound — especially for latency-sensitive applications like chatbots
+  and real-time assistants. Medusa adds multiple lightweight decoding heads that predict
+  several future tokens in parallel, combined with a tree-based attention mechanism that
+  validates candidates efficiently. This speculative decoding approach achieves 2-3x
+  wall-clock speedup without degrading output quality or requiring a separate draft model.
+
+use_cases:
+  - Accelerate chatbot inference to reduce perceived latency in interactive applications
+  - Speed up batch LLM inference for document processing pipelines and bulk generation
+  - Reduce per-token latency in real-time agentic workflows that require fast turn-around
+  - Enable cost-effective LLM serving by processing more tokens per second on existing hardware
+  - Integrate speculative decoding into existing inference pipelines with minimal code changes

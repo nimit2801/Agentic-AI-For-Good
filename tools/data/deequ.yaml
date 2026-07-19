@@ -1,0 +1,29 @@
+name: Deequ
+description: A library built on Apache Spark for defining and automating data quality constraints, measuring data quality metrics, and preventing data issues in large-scale datasets.
+tagline: Unit tests for data quality at scale
+
+github_url: https://github.com/awslabs/deequ
+website_url: https://aws.amazon.com/blogs/big-data/test-data-quality-at-scale-with-deequ/
+
+category: Data
+tags: [data-quality, spark, testing, validation, data-engineering, big-data]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Large-scale data pipelines accumulate quality issues — missing values, schema
+  violations, duplicate records, and distribution drift — that silently degrade
+  downstream ML models and analytics. Manually inspecting petabyte-scale datasets
+  is impractical. Deequ provides declarative data quality constraints that run as
+  Spark jobs, computing comprehensive metrics (completeness, uniqueness, consistency,
+  distribution) and surfacing violations as actionable reports. Its constraint
+  verification model enables automated data quality testing analogous to unit tests
+  for software, catching issues before they propagate to production.
+
+use_cases:
+  - Define constraint-based data quality tests that run on every ETL pipeline execution
+  - Monitor data distribution drift over time with automated metric computation and alerting
+  - Validate schema conformance and detect missing or malformed fields in large datasets
+  - Compute data quality reports for regulatory compliance and data governance requirements
+  - Integrate data quality checks into Spark-based ML pipelines to prevent garbage-in-garbage-out
