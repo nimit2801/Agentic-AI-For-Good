@@ -1,0 +1,27 @@
+name: Megatron-LM
+description: NVIDIA's framework for efficient distributed training of large language models using model, data, tensor, and sequence parallelism techniques to scale across hundreds of GPUs.
+tagline: Efficient distributed LLM training at scale
+
+github_url: https://github.com/NVIDIA/Megatron-LM
+website_url: https://developer.nvidia.com/megatron-lm
+docs_url: https://docs.nvidia.com/megatron-core/developer-guide/latest/get-started/install.html
+install_command: pip install megatron-core
+
+category: Fine-tuning
+tags: [distributed-training, llm, fine-tuning, gpu, parallelism, nvidia, large-scale]
+pricing: free
+is_open_source: true
+license: NOASSERTION
+
+problem_solved: |
+  Training foundation models with hundreds of billions of parameters requires coordinating
+  parallelism across hundreds of GPUs. Megatron-LM provides production-proven model, data,
+  tensor, and sequence parallelism techniques that make it practical to train these models
+  efficiently at scale, along with tooling for fine-tuning and inference.
+
+use_cases:
+  - Train large language models with model and tensor parallelism across hundreds of GPUs
+  - Fine-tune billion-parameter foundation models using distributed training techniques
+  - Deploy large models for inference with optimized tensor parallelism and pipeline parallelism
+  - Benchmark and optimize large-model training throughput across GPU clusters
+  - Build research prototypes that require scaling from single-node to multi-node setups

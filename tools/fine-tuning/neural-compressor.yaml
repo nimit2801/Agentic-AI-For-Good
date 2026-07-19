@@ -1,0 +1,27 @@
+name: Neural Compressor
+description: Intel's open-source model compression tool for quantizing, pruning, distilling, and optimizing deep learning models to improve inference performance across diverse hardware.
+tagline: Model compression and optimization for faster inference
+
+github_url: https://github.com/intel/neural-compressor
+website_url: https://www.intel.com/content/www/us/en/developer/tools/neural-compressor/overview.html
+docs_url: https://intel.github.io/neural-compressor
+install_command: pip install neural-compressor
+
+category: Fine-tuning
+tags: [quantization, compression, optimization, inference, intel, pruning]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Deploying deep learning models to production requires balancing accuracy with latency,
+  memory, and power constraints. Neural Compressor automates model compression through
+  quantization, pruning, and knowledge distillation, reducing model size and speeding up
+  inference by 2-4x while preserving accuracy, across CPUs, GPUs, and edge devices.
+
+use_cases:
+  - Quantize large language models from FP32 to INT8 for 2-4x faster inference with minimal accuracy loss
+  - Prune redundant parameters from deep learning models to reduce memory footprint and latency
+  - Apply knowledge distillation to compress large teacher models into smaller student models
+  - Optimize models for deployment across Intel CPUs, GPUs, and edge hardware platforms
+  - Automate the compression pipeline with one-shot tuning that balances accuracy versus performance
