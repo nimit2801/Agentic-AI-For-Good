@@ -1,0 +1,30 @@
+name: Kornia
+description: A differentiable computer vision library for PyTorch that provides image transformations, feature detection, 3D geometry, and low-level vision operators designed to integrate into neural network training pipelines.
+tagline: Differentiable computer vision for PyTorch
+
+github_url: https://github.com/kornia/kornia
+website_url: https://kornia.github.io
+docs_url: https://kornia.readthedocs.io
+
+install_command: pip install kornia
+
+category: Other
+tags: [computer-vision, pytorch, differentiable, image-processing, deep-learning, 3d-vision]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Traditional computer vision libraries like OpenCV are not designed for 
+  differentiable pipelines, making it hard to incorporate image preprocessing, 
+  geometric transformations, or feature detection into end-to-end neural network 
+  training. Kornia provides GPU-accelerated, differentiable implementations of 
+  hundreds of vision operators — from color space conversions and affine transforms 
+  to homography estimation and 3D reconstruction — that plug directly into PyTorch 
+  computation graphs and support automatic differentiation.
+
+use_cases:
+  - Apply differentiable image augmentations during model training that adapt based on gradient feedback for improved robustness
+  - Integrate geometric computer vision algorithms like homography estimation and SIFT features into end-to-end deep learning pipelines
+  - Implement multi-view 3D reconstruction and depth estimation using differentiable rendering and projective geometry operators
+  - Build custom neural network layers that perform filtering, morphological operations, and edge detection as part of the model architecture
