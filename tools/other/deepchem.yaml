@@ -1,0 +1,30 @@
+name: DeepChem
+description: A Python library for deep learning in drug discovery, quantum chemistry, materials science, and computational biology. Provides molecular featurization, graph neural networks, molecular docking, and pre-trained models for property prediction, molecular generation, and bioactivity classification.
+tagline: Deep learning for drug discovery, chemistry, and materials science
+
+github_url: https://github.com/deepchem/deepchem
+website_url: https://deepchem.io
+docs_url: https://deepchem.readthedocs.io
+
+install_command: pip install deepchem
+
+category: Other
+tags: [drug-discovery, chemistry, materials-science, graph-neural-networks, molecular-modeling, bioinformatics, python]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Applying deep learning to molecular data requires specialized tools — molecules are graphs, not
+  vectors; activity data is sparse and noisy; and standard ML libraries lack featurizers for
+  chemical structures. DeepChem provides a complete pipeline with molecular featurization (SMILES,
+  graphs, fingerprints), graph neural network layers (GCN, GAT, MPNN), pre-trained models for
+  property prediction, and integration with PyTorch and TensorFlow, all designed for the unique
+  structure of chemical and biological data.
+
+use_cases:
+  - Predict molecular toxicity and ADMET properties for drug candidate screening before wet-lab testing
+  - Train graph neural networks to predict quantum mechanical properties from molecular structure
+  - Generate novel molecular structures with desired binding affinity using generative models
+  - Build a virtual screening pipeline that scores millions of compounds against a protein target
+  - Classify bioassay data to identify active compounds in high-throughput screening campaigns
