@@ -1,0 +1,29 @@
+name: Sacred
+description: A Python tool for configuring, organizing, logging, and reproducing computational experiments, providing experiment tracking and reproducibility for ML research with minimal code changes.
+tagline: Experiment tracking and configuration for ML
+
+github_url: https://github.com/IDSIA/sacred
+website_url: https://sacred.readthedocs.io
+docs_url: https://sacred.readthedocs.io/en/stable
+
+install_command: pip install sacred
+
+category: Monitoring
+tags: [experiment-tracking, reproducibility, python, configuration, logging, ml-research]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  ML experiments quickly become chaotic without systematic tracking of hyperparameters, 
+  code versions, outputs, and hardware configurations. Sacred provides a lightweight, 
+  decorator-based framework that automatically captures experiment configurations, 
+  source code snapshots, dependencies, metrics, and outputs — with built-in support 
+  for MongoDB and SQLite backends — making every experiment reproducible with a 
+  single command, even across different machines and team members.
+
+use_cases:
+  - Track hyperparameter configurations and training metrics across hundreds of model experiments with automatic logging
+  - Reproduce any past experiment exactly by replaying its captured configuration, source code, and dependency snapshot
+  - Organize team experiments in a shared MongoDB database with searchable experiment records and run comparisons
+  - Integrate experiment logging into existing training scripts with minimal boilerplate using Python decorators
