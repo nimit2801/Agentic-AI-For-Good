@@ -1,0 +1,25 @@
+name: PyTorch3D
+description: |-
+  FAIR's library of reusable components for deep learning with 3D data, providing efficient 3D operators, differentiable rendering, and data structures for building 3D deep learning applications with PyTorch.
+tagline: Reusable 3D deep learning components from Meta FAIR
+
+github_url: https://github.com/facebookresearch/pytorch3d
+website_url: https://pytorch3d.org
+docs_url: https://pytorch3d.org/docs
+
+install_command: conda install pytorch3d -c pytorch3d
+
+category: Other
+tags: [python, pytorch, 3d, deep-learning, differentiable-rendering, mesh, computer-vision]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |-
+  Building 3D deep learning models is challenging because 3D data is heterogeneous — meshes, point clouds, and voxel grids each require different operators — and standard deep learning frameworks lack native support for 3D-specific operations like differentiable rendering and mesh rasterization. PyTorch3D provides efficient, batched implementations of 3D operators that integrate seamlessly with PyTorch, enabling researchers to build and train 3D models without reinventing the wheel.
+
+use_cases:
+  - Train differentiable rendering models for 3D reconstruction from single or multi-view images
+  - Build mesh classification and segmentation models for 3D shape analysis and recognition
+  - Develop 3D object detection and pose estimation pipelines for robotics and AR applications
+  - Implement neural implicit surface representations with differentiable volumetric rendering
