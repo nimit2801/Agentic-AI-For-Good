@@ -1,0 +1,28 @@
+name: Triton
+description: An open-source, Python-embedded programming language and compiler for writing high-performance custom GPU kernels with productivity far exceeding CUDA.
+tagline: GPU programming language and compiler for custom deep learning kernels
+
+github_url: https://github.com/openai/triton
+website_url: https://triton-lang.org
+docs_url: https://triton-lang.org/main/index.html
+install_command: pip install triton
+
+category: Dev Tools
+tags: [gpu, compiler, kernel, cuda-alternative, high-performance, deep-learning]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Writing efficient GPU kernels for deep learning primitives normally requires expert CUDA
+  programming — a steep learning curve that limits how many researchers can contribute to
+  kernel-level optimizations. Triton is a Python-embedded language and compiler that lets
+  developers write custom GPU kernels at CUDA-level performance using intuitive Python syntax,
+  dramatically lowering the barrier to high-performance deep learning primitives.
+
+use_cases:
+  - Write custom GPU kernels for novel attention mechanisms beyond standard implementations
+  - Implement fused operations that combine multiple tensor operations into a single GPU kernel
+  - Prototype and benchmark new deep learning primitives without writing low-level CUDA code
+  - Optimize inference bottlenecks by replacing framework operations with custom Triton kernels
+  - Build high-performance custom layers for research experiments and production deployments
