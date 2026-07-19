@@ -1,0 +1,29 @@
+name: RAGs
+description: An open-source framework that lets you create custom retrieval-augmented generation systems from natural language prompts, generating the underlying retrieval pipeline, vector index, and prompt templates automatically.
+tagline: Create custom RAG systems from natural language
+
+github_url: https://github.com/run-llama/rags
+website_url: https://github.com/run-llama/rags
+docs_url: https://github.com/run-llama/rags#readme
+
+install_command: pip install rags
+
+category: RAG
+tags: [rag, retrieval, llama-index, llm, natural-language, pipeline]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Building a production RAG system requires stitching together embedding models, 
+  vector databases, chunking strategies, retrieval algorithms, and prompt templates — 
+  a complex engineering task that slows down experimentation. RAGs lets developers 
+  describe their desired RAG system in natural language and generates a complete, 
+  working pipeline with configurable components, dramatically reducing the time from 
+  idea to a functional retrieval-augmented generation setup.
+
+use_cases:
+  - Prototype a RAG system for internal documentation search by describing the data sources and query types in plain English
+  - Generate multiple RAG pipeline variants with different chunking strategies and embedding models to compare retrieval quality
+  - Quickly set up a contextual chat engine over a new dataset without manually configuring vector stores and retrieval params
+  - Teach RAG concepts by letting students describe systems in natural language and inspecting the generated pipeline

@@ -1,0 +1,27 @@
+name: OceanBase
+description: A high-performance distributed SQL database with native vector search capabilities, enabling AI applications to store and query relational data alongside vector embeddings in a single system.
+tagline: Distributed SQL database with vector search
+
+github_url: https://github.com/oceanbase/oceanbase
+website_url: https://oceanbase.com
+docs_url: https://oceanbase.com/docs
+
+category: Vector DB
+tags: [distributed-database, sql, vector-search, relational-database, high-availability]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AI applications often need to manage both structured relational data and unstructured 
+  vector embeddings, leading to architectural complexity with separate databases for 
+  each workload. OceanBase combines distributed SQL processing with native vector 
+  similarity search, so developers can store transactional data, run analytical queries, 
+  and perform vector-based retrieval within a single, horizontally scalable database 
+  engine that tolerates node failures without data loss.
+
+use_cases:
+  - Store and query product catalogs with both structured attributes and vector embeddings for semantic search recommendations
+  - Power AI application backends that need transactional consistency for user data alongside vector similarity search for RAG
+  - Replace multi-database architectures with a single distributed SQL engine that handles both OLTP and vector workloads
+  - Build geo-distributed AI services that require low-latency vector search across multiple regions with automatic failover
