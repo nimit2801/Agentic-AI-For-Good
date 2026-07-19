@@ -1,0 +1,28 @@
+name: Apache Parquet
+description: An open-source columnar storage format optimized for analytics workloads, providing efficient compression and encoding schemes that are essential for storing large-scale ML training datasets and feature stores.
+tagline: Columnar storage format for analytics and ML
+
+github_url: https://github.com/apache/parquet-java
+website_url: https://parquet.apache.org
+docs_url: https://parquet.apache.org/docs
+
+install_command: pip install pyarrow
+
+category: Data
+tags: [data-storage, columnar, analytics, big-data, arrow, compression]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Storing large ML datasets in row-oriented formats like CSV or JSON wastes storage 
+  and slows down read-heavy workloads because queries scan entire rows even when only 
+  a few columns are needed. Apache Parquet's columnar layout, predicate pushdown, and 
+  advanced compression reduce storage footprint by up to 75% while enabling scans that 
+  are orders of magnitude faster for analytical queries and feature engineering.
+
+use_cases:
+  - Store and query large-scale training datasets with efficient column pruning for faster data loading into ML pipelines
+  - Power feature stores and data lakes where columnar compression reduces storage costs while maintaining high read throughput
+  - Enable efficient data exchange between distributed query engines like Spark, Trino, and DuckDB for ETL workflows
+  - Archive model training logs, evaluation metrics, and experiment artifacts in a compressed, self-describing format

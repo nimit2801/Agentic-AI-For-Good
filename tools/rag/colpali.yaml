@@ -1,0 +1,29 @@
+name: ColPali
+description: A retrieval model that indexes documents using vision-language understanding rather than text extraction, enabling RAG systems to search across charts, tables, diagrams, and dense layouts with the ColBERT late-interaction scoring mechanism.
+tagline: Vision-language document retrieval for RAG
+
+github_url: https://github.com/illuin-tech/colpali
+website_url: https://github.com/illuin-tech/colpali
+docs_url: https://github.com/illuin-tech/colpali#readme
+
+install_command: pip install colpali-engine
+
+category: RAG
+tags: [rag, vision, embedding, document-retrieval, multimodal, colbert, OCR]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Traditional RAG systems rely on text extraction pipelines that fail on visually rich 
+  documents — PDFs with complex layouts, slides with diagrams, scanned invoices, and 
+  charts embedded in reports. ColPali uses a vision-language model to encode document 
+  pages directly as visual embeddings, then applies ColBERT-style late interaction for 
+  efficient retrieval, eliminating fragile OCR and layout parsing from the document 
+  search pipeline.
+
+use_cases:
+  - Search across slide decks, academic posters, and technical diagrams where text extraction misses critical visual information
+  - Power document retrieval in enterprise RAG systems handling scanned forms, invoices, and handwritten notes
+  - Enable question answering over charts and infographics that are impossible to represent through text alone
+  - Build multimodal search indexes over mixed-format document collections without per-format parsing pipelines

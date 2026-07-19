@@ -1,0 +1,28 @@
+name: Apache Kafka
+description: An open-source distributed event streaming platform for building real-time data pipelines and streaming applications, widely used as the backbone for AI training data ingestion, model serving, and monitoring event buses.
+tagline: Distributed event streaming for data pipelines and AI
+
+github_url: https://github.com/apache/kafka
+website_url: https://kafka.apache.org
+docs_url: https://kafka.apache.org/documentation
+
+install_command: pip install kafka-python
+
+category: Other
+tags: [streaming, event-driven, data-pipeline, pub-sub, distributed-systems, real-time]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Building reliable, scalable data pipelines for AI workloads requires a durable, 
+  fault-tolerant way to move data between systems in real time. Apache Kafka provides 
+  a distributed commit log that decouples data producers from consumers, enabling 
+  high-throughput event streaming with exactly-once semantics for training data 
+  ingestion, model inference logs, and monitoring telemetry.
+
+use_cases:
+  - Stream training data from distributed sources into ML pipelines and feature stores for real-time model updates
+  - Collect and transport model inference logs, serving metrics, and drift detection events for monitoring and observability
+  - Build event-driven AI workflows that react to data changes with low latency using Kafka Streams or ksqlDB
+  - Serve as a central event bus connecting microservices, databases, and analytics platforms in AI infrastructure
