@@ -1,0 +1,36 @@
+name: DiskANN
+description: Microsoft's high-performance vector indexing library that uses compressed graph-based approximate nearest neighbor search to enable fast, fresh, and filtered vector search directly on disk without loading the entire index into memory.
+tagline: Graph-based vector search that runs on disk, not RAM
+
+github_url: https://github.com/microsoft/DiskANN
+website_url: https://microsoft.github.io/DiskANN
+docs_url: https://microsoft.github.io/DiskANN/getting-started.html
+
+category: Vector DB
+tags:
+  - vector-search
+  - approximate-nearest-neighbor
+  - graph-based
+  - disk-based
+  - microsoft
+  - similarity-search
+  - cpp
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Traditional vector search indexes must fit in RAM to serve queries at low latency, which
+  limits dataset size to available memory. DiskANN uses a compressed Vamana graph structure
+  that lives primarily on disk, keeping only a compact representation in memory. This lets
+  it index billions of vectors on a single machine — datasets that would otherwise require
+  a cluster of RAM-heavy servers. It supports real-time insertions and deletions (no full
+  rebuild), filtered search with arbitrary predicates, and streaming index building. The
+  library is used in production at Microsoft for Bing, Azure Search, and Cosmos DB.
+
+use_cases:
+  - Index billions of image or document embeddings on a single server without paying for RAM-heavy hardware
+  - Serve filtered vector search queries at low latency — e.g., "find similar products in category X under $50"
+  - Build a real-time recommendation engine that updates the index as new items arrive, without downtime
+  - Deploy vector search on edge devices or in memory-constrained environments using the disk-resident index
+  - Replace an in-memory ANN index that can't scale to the next order-of-magnitude dataset size

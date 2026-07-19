@@ -1,0 +1,40 @@
+name: Darts
+description: A Python library for user-friendly time series forecasting and anomaly detection that unifies statistical models (ARIMA, Prophet, Exponential Smoothing) with deep learning (Transformer, TFT, N-BEATS, TCN) under a single scikit-learn-inspired API, making it easy to train, backtest, and ensemble forecasts without switching frameworks.
+tagline: Time series forecasting made simple — from ARIMA to Transformers
+
+github_url: https://github.com/unit8co/darts
+website_url: https://unit8.com/resources/darts
+docs_url: https://unit8co.github.io/darts
+
+install_command: pip install darts
+
+category: Data
+tags:
+  - python
+  - time-series
+  - forecasting
+  - anomaly-detection
+  - deep-learning
+  - arima
+  - transformer
+  - mlops
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Time series forecasting is fragmented across incompatible libraries — ARIMA in statsmodels,
+  deep learning in PyTorch Forecasting, anomaly detection in Prophet — each with its own API,
+  data format, and preprocessing conventions. Switching between models means rewriting data
+  pipelines and evaluation code. Darts unifies all approaches under a single scikit-learn-style
+  API. It supports statistical models (ARIMA, ETS, Prophet), neural networks (N-BEATS, TFT,
+  TCN, Transformer), and ensemble methods. Data pipelines, backtesting, and hyperparameter
+  tuning work identically whether you use Exponential Smoothing or a Transformer. It also
+  includes built-in anomaly detection and probabilistic forecasting.
+
+use_cases:
+  - Forecast product demand across thousands of SKUs using ensemble models that beat any single method
+  - Detect anomalous server metrics by combining statistical baselines with deep learning detectors
+  - Backtest multiple forecasting strategies (ARIMA vs N-BEATS vs TFT) with a single line-swap in the API
+  - Build covariate-aware forecasts that incorporate weather, promotions, and economic indicators
+  - Scale from daily retail forecasts to high-frequency financial predictions without changing the pipeline

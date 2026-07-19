@@ -1,0 +1,39 @@
+name: LIME
+description: A model-agnostic interpretability library that explains individual predictions from any classifier by locally approximating it with an interpretable surrogate model — showing which features most influenced each decision, regardless of the underlying algorithm.
+tagline: Explain any classifier's prediction with interpretable local surrogates
+
+github_url: https://github.com/marcotcr/lime
+website_url: https://github.com/marcotcr/lime
+docs_url: https://lime-ml.readthedocs.io
+
+install_command: pip install lime
+
+category: Monitoring
+tags:
+  - interpretability
+  - explainability
+  - model-agnostic
+  - feature-importance
+  - ml-debugging
+  - python
+  - xai
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  When a machine learning model makes a prediction, there's no built-in way to know why.
+  Most models are black boxes — even data scientists who built them can't easily trace
+  outputs back to inputs. LIME (Local Interpretable Model-agnostic Explanations) solves
+  this by fitting a simple, interpretable model (like a sparse linear model or decision
+  tree) around each individual prediction. It perturbs the input, observes how the
+  prediction changes, and highlights which features mattered most. Since it's model-agnostic,
+  LIME works with any classifier — neural networks, random forests, SVMs, gradient boosting
+  — and can explain text, image, and tabular predictions alike.
+
+use_cases:
+  - Explain why a loan application was rejected by surfacing the top contributing features for that specific applicant
+  - Verify that a medical imaging model focuses on clinically relevant anatomical features, not image artifacts
+  - Debug a text sentiment classifier by showing which words drove a false positive prediction
+  - Build trust with non-technical stakeholders by presenting human-readable explanations for each model decision
+  - Compare explanation fidelity across model versions during pre-deployment validation
