@@ -1,0 +1,39 @@
+name: Vearch
+description: A cloud-native distributed vector database optimized for efficient similarity search of embedding vectors in AI applications, with support for hybrid search, real-time indexing, and horizontal scaling across Kubernetes clusters.
+tagline: Cloud-native vector database for AI-native similarity search
+
+github_url: https://github.com/vearch/vearch
+website_url: https://vearch.github.io
+docs_url: https://vearch.github.io/docs
+
+category: Vector DB
+tags:
+  - vector-database
+  - similarity-search
+  - cloud-native
+  - kubernetes
+  - distributed
+  - hybrid-search
+  - rag
+  - embeddings
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Running vector search at scale requires a database that can store, index, and query
+  billions of embeddings with low latency, while also supporting real-time updates,
+  hybrid search (vector + scalar filters), and horizontal scaling. Most vector search
+  libraries are single-node tools, and cloud-managed solutions can be expensive at
+  scale. Vearch is a distributed, cloud-native vector database built for Kubernetes.
+  It partitions and replicates data across shards automatically, supports IVF_PQ and
+  HNSW indexing, and provides RESTful and gRPC APIs. It handles both dense embeddings
+  and scalar attribute filtering, making it suitable for production RAG pipelines and
+  recommendation systems that need to scale without a per-query high cost.
+
+use_cases:
+  - Build a production RAG pipeline with hybrid search that filters by metadata before vector similarity
+  - Deploy a distributed similarity search service on Kubernetes that scales horizontally as data grows
+  - Power a real-time content recommendation engine with vectors updated as user preferences change
+  - Store and query billions of image embeddings for a visual product search system
+  - Run semantic document retrieval with metadata-aware filtering at enterprise scale
