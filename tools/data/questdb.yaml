@@ -1,0 +1,30 @@
+name: QuestDB
+description: QuestDB is a high-performance time-series database with SQL analytics, PostgreSQL wire protocol compatibility, and column-oriented storage. It ingests millions of rows per second on commodity hardware with sub-millisecond queries for real-time and historical analytics.
+tagline: High-performance time-series database for real-time analytics
+
+github_url: https://github.com/questdb/questdb
+website_url: https://questdb.io
+docs_url: https://questdb.io/docs
+
+install_command: brew install questdb
+
+category: Data
+tags: [time-series, database, sql, analytics, real-time, streaming, columnar, observability]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AI systems that monitor models, log predictions, or track performance metrics need a storage backend
+  that can ingest high-velocity time-series data and query it in real time. Traditional row-oriented
+  databases struggle with the write throughput and query latency required for observability and
+  monitoring at scale. QuestDB's columnar architecture and ingestion pipeline handle millions of rows
+  per second while supporting standard SQL and PostgreSQL wire protocol, so teams can use their existing
+  tools and skills.
+
+use_cases:
+  - Store and query LLM inference latency and token usage metrics for production monitoring dashboards
+  - Log prediction drift and model performance metrics over time for ML observability pipelines
+  - Track feature store access patterns and embedding cache hit rates for AI system optimization
+  - Time-series analytics on sensor data from IoT and edge AI deployments at high ingestion rates
+  - Build real-time anomaly detection pipelines over streaming metrics with sub-millisecond SQL queries

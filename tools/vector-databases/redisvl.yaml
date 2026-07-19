@@ -1,0 +1,29 @@
+name: RedisVL
+description: The AI-native Python client for Redis that provides vector search, hybrid (vector + full-text) queries, and integration with popular embedding models. It adds index management, vector similarity search, and metadata filtering on top of Redis' in-memory data store.
+tagline: AI-native vector search for Redis — embeddings, hybrid queries, and RAG
+
+github_url: https://github.com/redis/redis-vl-python
+website_url: https://redis.io/solutions/vector-search
+docs_url: https://redisvl.com/docs
+
+install_command: pip install redisvl
+
+category: Vector DB
+tags: [vector-search, redis, embeddings, semantic-search, rag, hybrid-search, python]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Teams already using Redis for caching or session storage often need vector search for RAG pipelines
+  and semantic search, but implementing vector indexing on top of raw Redis requires low-level
+  knowledge of the Redisearch module and manual embedding management. RedisVL wraps all of that into
+  a clean Python client with automatic index creation, built-in embedding providers (OpenAI, HuggingFace,
+  Cohere), and hybrid vector + full-text queries.
+
+use_cases:
+  - Add semantic search to existing Redis-backed applications without migrating to a separate vector database
+  - Build RAG pipelines that combine vector similarity search with full-text metadata filtering in a single query
+  - Index and search code embeddings for natural language code retrieval across large codebases
+  - Power real-time recommendation systems that combine collaborative filtering with semantic embeddings
+  - Store and query session-based embeddings for conversational AI with automatic index management

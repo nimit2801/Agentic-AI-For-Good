@@ -1,0 +1,30 @@
+name: Crawlee
+description: A web scraping and browser automation library for building reliable web crawlers in JavaScript and TypeScript. Supports Puppeteer, Playwright, Cheerio, and raw HTTP — both headful and headless — with automatic proxy rotation, session management, and request queueing.
+tagline: Build reliable web scrapers and crawlers for AI data extraction
+
+github_url: https://github.com/apify/crawlee
+website_url: https://crawlee.dev
+docs_url: https://crawlee.dev/docs/quick-start
+
+install_command: |
+  npm install crawlee
+
+category: Data
+tags: [web-scraping, crawling, browser-automation, data-extraction, nodejs, typescript, puppeteer, playwright]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AI teams need clean, structured data from websites for training, RAG pipelines, and evaluation —
+  but building production-grade scrapers requires managing headless browsers, proxy rotation, concurrent
+  request scheduling, and anti-bot evasion. Crawlee abstracts all of that into a single library with
+  automatic retries, session pools, and request queuing, so developers can focus on parsing data rather
+  than browser infrastructure.
+
+use_cases:
+  - Scrape e-commerce product listings and reviews to build training datasets for recommendation models
+  - Extract documentation pages from multiple sources for RAG-based developer assistants
+  - Crawl news sites to collect structured article data for LLM fine-tuning and evaluation
+  - Build automated data pipelines that periodically scrape competitor pricing or job listings
+  - Harvest public web pages to create domain-specific datasets for semantic search and QA systems
