@@ -1,0 +1,27 @@
+name: Cortex
+description: A horizontally scalable, highly available, multi-tenant long-term storage system for Prometheus metrics, providing reliable monitoring and observability infrastructure for AI platform operations.
+tagline: Horizontally scalable long-term storage for Prometheus
+
+github_url: https://github.com/cortexproject/cortex
+website_url: https://cortexmetrics.io
+docs_url: https://cortexmetrics.io/docs
+
+category: Monitoring
+tags: [monitoring, prometheus, metrics, observability, distributed-systems, long-term-storage]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Prometheus lacks native long-term storage and horizontal scaling, making it 
+  difficult to retain months of metrics for AI platform observability across 
+  multiple teams and environments. Cortex extends Prometheus with a horizontally 
+  scalable, multi-tenant architecture that separates the ingestion, storage, and 
+  query layers — enabling durable metric retention, cross-cluster querying, and 
+  cost-efficient storage for large-scale AI infrastructure monitoring.
+
+use_cases:
+  - Aggregate metrics from multiple Kubernetes clusters running model serving infrastructure into a unified query plane
+  - Retain months of GPU utilization, request latency, and error rate data for capacity planning and trend analysis
+  - Provide isolated metric namespaces per team so multiple AI development groups share a single monitoring backend
+  - Replace single-node Prometheus with a scalable, highly available metrics system for production AI deployments

@@ -1,0 +1,30 @@
+name: MMSegmentation
+description: An open-source semantic segmentation toolbox built on PyTorch and OpenMMLab, providing unified implementations of 50+ segmentation architectures and 80+ backbones for research and production.
+tagline: OpenMMLab semantic segmentation toolbox
+
+github_url: https://github.com/open-mmlab/mmsegmentation
+website_url: https://mmsegmentation.readthedocs.io
+docs_url: https://mmsegmentation.readthedocs.io/en/latest
+
+install_command: pip install mmsegmentation
+
+category: Other
+tags: [computer-vision, segmentation, pytorch, openmmlab, deep-learning, semantic-segmentation]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Implementing and comparing semantic segmentation models requires reproducing 
+  different training pipelines, data loaders, and evaluation protocols for each 
+  architecture — a significant engineering overhead. MMSegmentation standardizes 
+  50+ segmentation models (DeepLabV3+, PSPNet, UNet, SegFormer, Mask2Former, and 
+  more) under a unified framework with modular configs, pre-trained weights, and 
+  consistent benchmarking, letting researchers focus on model design rather than 
+  infrastructure.
+
+use_cases:
+  - Benchmark multiple segmentation architectures on custom datasets using consistent preprocessing, training, and evaluation pipelines
+  - Fine-tune pre-trained segmentation models for domain-specific applications like medical imaging, satellite imagery, or autonomous driving
+  - Deploy production segmentation pipelines with modular configs that separate model architecture, data configuration, and training schedules
+  - Rapidly prototype new segmentation ideas by extending one of 50+ existing model implementations with minimal boilerplate
