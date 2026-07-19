@@ -1,0 +1,27 @@
+name: torchao
+description: PyTorch's architecture optimization library for quantizing, pruning, and applying low-precision techniques to accelerate model training and inference on PyTorch models.
+tagline: Architecture optimization for PyTorch models
+
+github_url: https://github.com/pytorch/ao
+website_url: https://pytorch.org/blog/architecture-optimization/
+install_command: pip install torchao
+
+category: Fine-tuning
+tags: [quantization, optimization, pytorch, fine-tuning, compression, int8]
+pricing: free
+is_open_source: true
+license: NOASSERTION
+
+problem_solved: |
+  Applying quantization, pruning, and low-precision optimizations to PyTorch models typically
+  requires custom code and deep knowledge of hardware-specific formats. torchao provides a
+  unified API for architecture optimization — INT4, INT8, FP8 quantization, structured
+  pruning, and weight-only compression — that works across PyTorch models with minimal code
+  changes, making optimization accessible without specialized hardware expertise.
+
+use_cases:
+  - Quantize PyTorch LLMs to INT8 or INT4 for 2-4x faster inference with minimal accuracy loss
+  - Apply structured pruning to reduce model size and memory footprint during inference
+  - Use FP8 training to reduce memory usage and speed up large model fine-tuning
+  - Compress model weights with AO-specific formats for efficient deployment on edge hardware
+  - Benchmark and compare optimization strategies across different PyTorch model architectures
