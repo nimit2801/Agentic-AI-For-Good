@@ -1,0 +1,27 @@
+name: Apache ZooKeeper
+description: A distributed coordination service for maintaining configuration, naming, synchronization, and group services in large-scale distributed ML and data systems.
+tagline: Distributed coordination for large-scale ML systems
+
+github_url: https://github.com/apache/zookeeper
+website_url: https://zookeeper.apache.org
+docs_url: https://zookeeper.apache.org/doc/current/
+
+category: Data
+tags: [coordination, distributed-systems, service-discovery, configuration, synchronization]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Distributed AI and data systems — from model training clusters to streaming pipelines —
+  need a reliable way to coordinate nodes, elect leaders, track membership, and distribute
+  configuration. ZooKeeper provides a highly reliable coordination service that handles these
+  primitives with strong consistency guarantees, enabling distributed ML platforms to operate
+  reliably without building custom consensus and coordination mechanisms.
+
+use_cases:
+  - Coordinate leader election and failover for distributed model training orchestration
+  - Manage service discovery and health monitoring for model serving cluster nodes
+  - Store and synchronize pipeline configuration, feature definitions, and model metadata
+  - Provide distributed locking for concurrent data processing and model update workflows
+  - Track worker membership and task assignments in distributed ML training and inference jobs

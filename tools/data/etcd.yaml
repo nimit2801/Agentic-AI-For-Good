@@ -1,0 +1,27 @@
+name: etcd
+description: A distributed, reliable key-value store used for service discovery, configuration management, and distributed coordination in cloud-native AI and machine learning platforms.
+tagline: Distributed key-value store for cloud-native AI infrastructure
+
+github_url: https://github.com/etcd-io/etcd
+website_url: https://etcd.io
+docs_url: https://etcd.io/docs
+
+category: Data
+tags: [key-value-store, distributed-systems, service-discovery, coordination, cloud-native]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Distributed AI systems — model serving clusters, training orchestrators, and feature stores —
+  require reliable coordination and configuration management across many nodes. etcd provides
+  a strongly consistent, highly available key-value store that serves as the backbone for
+  service discovery, leader election, and configuration distribution in cloud-native AI
+  infrastructure, enabling reliable distributed model serving and training coordination.
+
+use_cases:
+  - Store and distribute model configuration, feature definitions, and pipeline metadata across ML clusters
+  - Manage service discovery for distributed model serving infrastructure with multiple replicas
+  - Coordinate leader election and distributed locking for training job orchestrators
+  - Store and watch configuration changes for real-time model serving stack updates
+  - Provide a reliable metadata store for feature stores, model registries, and ML platform components
