@@ -1,0 +1,21 @@
+name: SPTAG
+description: |-
+  A distributed approximate nearest neighbor search (ANN) library from Microsoft Research, providing high quality vector index build, search and distributed online serving toolkits for large scale vector search scenarios.
+tagline: Distributed vector similarity search from Microsoft Research
+
+github_url: https://github.com/microsoft/SPTAG
+
+category: Vector DB
+tags: [cpp, python, vector-search, ann, approximate-nearest-neighbor, microsoft, distributed]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |-
+  Performing approximate nearest neighbor search at billion-scale requires specialized data structures that balance search accuracy, index build speed, and memory usage. SPTAG provides both kd-tree based (SPTAG-KDT) and BKT-based (SPTAG-BKT) indexing approaches with distributed serving capabilities, enabling high-recall vector search for large-scale retrieval and recommendation systems.
+
+use_cases:
+  - Build billion-scale semantic search systems with sub-10ms query latency using distributed index serving
+  - Implement high-recall product recommendation engines using vector similarity across millions of items
+  - Power large-scale duplicate detection and near-dup matching pipelines with configurable accuracy thresholds
+  - Serve vector search for RAG applications with huge document collections requiring distributed index sharding
