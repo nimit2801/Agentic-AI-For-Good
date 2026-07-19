@@ -1,0 +1,27 @@
+name: gpt-fast
+description: A simple, efficient PyTorch-native transformer text generation engine under 1000 lines of Python. Features int8/int4 quantization, speculative decoding, tensor parallelism, and support for LLaMA, Mixtral 8x7B, and other transformer architectures on both NVIDIA and AMD GPUs.
+tagline: PyTorch-native LLM inference with <1000 lines of code
+
+github_url: https://github.com/pytorch-labs/gpt-fast
+website_url: https://pytorch.org/blog/accelerating-generative-ai-2/
+docs_url: https://github.com/pytorch-labs/gpt-fast
+
+category: Dev Tools
+tags: [llm-inference, pytorch, quantization, transformer, gpu-optimization, text-generation, speculative-decoding]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  LLM inference frameworks are often heavyweight, opaque, and hard to modify for experimentation.
+  gpt-fast shows that high-performance transformer text generation — with int8/int4 quantization,
+  speculative decoding, and tensor parallelism — can be achieved in under 1000 lines of native PyTorch.
+  It serves as both a performant inference engine for LLaMA-family models and an educational reference
+  for understanding the optimization techniques behind modern LLM serving.
+
+use_cases:
+  - Run LLaMA-family models with efficient int8 or int4 quantization on consumer and datacenter GPUs
+  - Benchmark speculative decoding performance improvements for latency-sensitive text generation
+  - Study and extend a minimal, readable reference implementation of production-quality LLM inference
+  - Deploy multi-GPU tensor parallelism for Mixtral 8x7B MoE models without a heavyweight serving framework
+  - Experiment with PyTorch-native optimizations (torch.compile, CUDA graphs) for transformer inference
