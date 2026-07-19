@@ -1,0 +1,27 @@
+name: Thanos
+description: A highly available, long-term storage, and multi-cluster monitoring system built on top of Prometheus, providing global query views and durable metric retention for large-scale AI infrastructure.
+tagline: Highly available Prometheus with long-term storage
+
+github_url: https://github.com/thanos-io/thanos
+website_url: https://thanos.io
+docs_url: https://thanos.io/tip/thanos/getting-started.md
+
+category: Monitoring
+tags: [monitoring, prometheus, metrics, long-term-storage, multi-cluster, observability]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Prometheus deployments in large AI infrastructure environments face limitations 
+  in high availability, long-term metric retention, and unified querying across 
+  clusters. Thanos provides a global, horizontally scalable monitoring layer that 
+  extends Prometheus with unlimited metric retention via object storage, cross-cluster 
+  query federation, downsampling for efficient historical analysis, and built-in 
+  high availability — while remaining fully compatible with the Prometheus query API.
+
+use_cases:
+  - Query GPU utilization, request latency, and error metrics across multiple Kubernetes clusters from a single global endpoint
+  - Retain years of infrastructure and model serving metrics cost-effectively using object storage instead of local disks
+  - Achieve high availability for production monitoring with redundant Prometheus instances and seamless failover
+  - Analyze historical trends in model performance and resource usage with automatic metric downsampling for faster queries
