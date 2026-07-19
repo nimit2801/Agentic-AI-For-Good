@@ -1,0 +1,25 @@
+name: StatsForecast
+description: |-
+  A lightning-fast Python library for statistical and econometric time series forecasting, providing optimized implementations of ARIMA, ETS, Theta, CES, and other classical models with parallel and distributed computation.
+tagline: Lightning-fast statistical forecasting with classical econometric models
+
+github_url: https://github.com/Nixtla/statsforecast
+website_url: https://nixtla.io
+docs_url: https://docs.nixtla.io
+
+install_command: pip install statsforecast
+
+category: Data
+tags: [python, time-series, forecasting, statistics, arima, econometrics, nixtla]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |-
+  Classical statistical forecasting methods like ARIMA, ETS, and Theta are well-established but their standard Python implementations are slow for large-scale use. StatsForecast provides highly optimized, parallelized implementations of these models using Numba and distributed computing, achieving orders of magnitude speedup over traditional implementations while maintaining statistical rigor.
+
+use_cases:
+  - Forecast thousands of time series simultaneously using parallel statistical models for inventory planning
+  - Generate baseline forecasts using ARIMA and ETS for comparison with machine learning and deep learning approaches
+  - Perform fast anomaly detection by comparing actual values against statistically modeled confidence intervals
+  - Run large-scale backtesting and cross-validation of statistical models across hundreds of time series
