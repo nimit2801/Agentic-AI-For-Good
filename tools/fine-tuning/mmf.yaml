@@ -1,0 +1,41 @@
+name: MMF
+description: A modular framework from Facebook AI Research for vision-and-language multimodal research and training, providing reference implementations of state-of-the-art models for VQA, image captioning, text-based reasoning, and multimodal dialog built on PyTorch.
+tagline: Accelerate multimodal AI research with pre-built models and training pipelines
+
+github_url: https://github.com/facebookresearch/mmf
+website_url: https://mmf.sh
+docs_url: https://mmf.sh/docs
+
+install_command: pip install --upgrade --pre mmf
+
+category: Fine-tuning
+tags:
+  - multimodal
+  - vision-language
+  - pytorch
+  - vqa
+  - captioning
+  - fine-tuning
+  - fair
+  - research
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Multimodal AI research — combining vision and language — requires coordinating multiple
+  model architectures (vision encoders, language models, fusion layers) with complex training
+  pipelines across datasets like VQA, COCO Captions, and NLVR2. Reproducing results from
+  papers requires stitching together disparate codebases, preprocessing scripts, and
+  hyperparameters. MMF provides a unified platform with reference implementations of the
+  latest multimodal models, standardized dataset interfaces, distributed training, and
+  built-in evaluation metrics. Researchers can reproduce published results, swap model
+  components, and fine-tune pretrained multimodal models without rewriting infrastructure
+  from scratch.
+
+use_cases:
+  - Fine-tune a pretrained vision-language model on a custom VQA dataset for domain-specific question answering
+  - Benchmark multiple fusion architectures (M4C, LoRRA, Pythia) on the same dataset without changing the data pipeline
+  - Train a multimodal hate speech classifier using the Hateful Memes benchmark with built-in evaluation
+  - Reproduce published multimodal paper results from a single config — no scraping code from multiple repos
+  - Build a multimodal dialog system that answers questions about images with context from conversation history

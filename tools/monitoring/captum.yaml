@@ -1,0 +1,39 @@
+name: Captum
+description: PyTorch's model interpretability and understanding library that provides state-of-the-art feature attribution algorithms — including Integrated Gradients, DeepLIFT, and Gradient SHAP — to explain model predictions through feature importance, neuron influence, and layer contributions.
+tagline: Explain any PyTorch model's predictions with feature attribution
+
+github_url: https://github.com/pytorch/captum
+website_url: https://captum.ai
+docs_url: https://captum.ai/docs
+
+install_command: pip install captum
+
+category: Monitoring
+tags:
+  - pytorch
+  - interpretability
+  - explainability
+  - feature-attribution
+  - ml-debugging
+  - python
+  - model-understanding
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Deep learning models are black boxes — when a model makes a wrong prediction, engineers
+  have no insight into why. Traditional debugging tools show loss curves and gradients but
+  can't attribute decisions to specific input features. Captum (Latin for "understanding")
+  applies a suite of attribution algorithms — Integrated Gradients, DeepLIFT, Gradient
+  SHAP, Layer Conductance, and Neuron Conductance — to any PyTorch model. It shows which
+  pixels mattered for an image classifier, which words drove a sentiment prediction, or
+  which neurons fired for a specific output. Teams use it to validate model behavior,
+  debug failures, and build trust with stakeholders.
+
+use_cases:
+  - Debug why an image classifier misidentified an object by visualizing pixel-level feature attribution
+  - Verify that a medical diagnosis model relies on clinically relevant features, not background artifacts
+  - Compare feature importance across model versions to detect regressions before deployment
+  - Generate attribution maps as part of model documentation for regulatory compliance
+  - Identify which neurons or layers are responsible for specific model behaviors
