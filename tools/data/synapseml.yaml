@@ -1,0 +1,41 @@
+name: SynapseML
+description: Microsoft's distributed machine learning framework for Apache Spark that simplifies scaling ML pipelines — from classical algorithms to deep learning, cognitive services, and model deployment — across large datasets without leaving the Spark ecosystem.
+tagline: Distributed ML on Apache Spark made simple
+
+github_url: https://github.com/microsoft/SynapseML
+website_url: https://microsoft.github.io/SynapseML
+docs_url: https://microsoft.github.io/SynapseML/docs
+
+install_command: pip install synapseml
+
+category: Data
+tags:
+  - apache-spark
+  - distributed-ml
+  - machine-learning
+  - big-data
+  - microsoft
+  - pyspark
+  - cognitive-services
+  - scala
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Scaling ML workflows across large datasets typically requires moving data out of Spark
+  into separate training frameworks (PyTorch, TensorFlow, Scikit-learn), creating complex
+  data pipelines that break on large data and add engineering overhead. SynapseML (formerly
+  MMLSpark) brings ML directly into the Apache Spark ecosystem. It provides scalable
+  estimators for classification, regression, anomaly detection, and deep learning that
+  run as native Spark ML Pipelines, eliminating data movement. It also integrates
+  Azure Cognitive Services, ONNX model serving, and LightGBM, allowing data scientists
+  to build end-to-end pipelines — from feature engineering to distributed training to
+  model serving — entirely within Spark.
+
+use_cases:
+  - Train XGBoost or LightGBM models on terabytes of Spark DataFrames without exporting data to separate frameworks
+  - Build a scalable OCR pipeline that processes millions of PDFs using Spark to orchestrate Azure Computer Vision calls
+  - Deploy deep learning models (CNNs, BERT) for inference across a Spark cluster with ONNX runtime integration
+  - Create a distributed anomaly detection system that scores streaming telemetry against historical baselines
+  - Orchestrate multi-step ML workflows where data processing, training, and serving all stay inside Spark
