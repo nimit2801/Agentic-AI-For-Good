@@ -1,89 +1,67 @@
 {
-  "generatedAt": "2026-07-18T18:51:01Z",
+  "generatedAt": "2026-07-22T18:30:53Z",
   "windowDays": 7,
-  "summary": "The strongest current signal is that agentic AI keeps moving away from vague demos and toward workflows people can actually run, inspect, and compare.",
+  "summary": "This cycle says major labs are packaging agent workflows for broader adoption (Gemini Spark, Codex mobile), Codex keeps expanding — mobile, enterprise, and deeper agent-loop engineering, the local/open-weight stack keeps getting stronger around Qwen-style setups. The deeper pattern is that agentic AI is being compressed, packaged, and made more inspectable at the same time.",
   "sourceStats": {
-    "items": 45,
+    "items": 39,
     "sources": {
-      "Anthropic": 1,
-      "GitHub": 39,
-      "Hacker News": 3,
-      "OpenAI": 2
+      "GitHub": 35,
+      "Google DeepMind": 1,
+      "Hacker News": 2,
+      "Hugging Face": 1
     }
   },
   "highlights": [
     {
-      "title": "The US is advancing AI safety through state and federal action",
-      "url": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action",
-      "publishedAt": "Wed, 15 Jul 2026 12:00:00 GMT",
-      "source": "OpenAI",
-      "meta": "Wed, 15 Jul 2026 12:00:00 GMT",
-      "topics": [
-        "Memory and state",
-        "Major labs"
-      ],
-      "score": 180,
-      "summary": "The US is advancing AI safety through state and federal action",
-      "why": "A lot of the quality gap in agents still comes down to state handling, durability, and clearer control flow."
-    },
-    {
-      "title": "How to manage AI investments in the agentic era",
-      "url": "https://openai.com/index/managing-ai-investments-in-agentic-era",
-      "publishedAt": "Tue, 14 Jul 2026 10:00:00 GMT",
-      "source": "OpenAI",
-      "meta": "Tue, 14 Jul 2026 10:00:00 GMT",
+      "title": "Gemini 3.5 Flash Cyber",
+      "source": "Google DeepMind",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-5-flash-cyber/",
+      "meta": "3 pts · 1 comments",
       "topics": [
         "Major labs"
       ],
-      "score": 180,
-      "summary": "How to manage AI investments in the agentic era",
-      "why": "Major lab launches still reshape the practical design space for agent builders almost overnight."
-    },
-    {
-      "title": "Claude for K-12 teachers: Get back to why you started teaching",
-      "source": "Anthropic",
-      "url": "https://claude.com/solutions/teachers",
-      "meta": "5 pts · 0 comments",
-      "topics": [
-        "Major labs"
-      ],
-      "publishedAt": "2026-07-15T12:40:51Z",
-      "score": 100,
+      "publishedAt": "2026-07-21T15:27:01Z",
+      "score": 159,
       "summary": "",
-      "why": "Major lab launches still reshape the practical design space for agent builders almost overnight."
+      "why": "A frontier-level model at 4x speed parity reshapes the practical design space for agent builders overnight — faster inference directly enables more complex, multi-step agent loops."
     },
     {
-      "title": "Launch HN: Agnost AI (YC S26) – Extract user feedback from agent conversations",
+      "title": "Show HN: The0 – self-hosted runtime for trading bots, bring your own language",
       "source": "Hacker News",
-      "url": "https://agnost.ai",
-      "meta": "85 pts · 49 comments",
+      "url": "https://github.com/alexanderwanyoike/the0",
+      "meta": "18 pts · 4 comments",
       "topics": [
         "Tool use",
         "Memory and state",
-        "Evaluation",
-        "Voice and multimodal"
+        "Open weights",
+        "Major labs"
       ],
-      "publishedAt": "2026-07-14T16:06:18Z",
-      "score": 412,
-      "summary": "Hey HN, we’re Shubham & Parth, childhood friends building Agnost AI ( https:&#x2F;&#x2F;agnost.ai ), product analytics for teams building chat and voice agents. We read production conversations and find behavioral failures like users rageprompting (cursing at the agent), repeatedly rephrasing the same request, correcting the agent, asking for missing features, or leaving after an answer that was technically successful. We have an interactive demo with no signup here: https:&#x2F;&#x2F;app.agnost.ai?demo=true Here&#x27;s a demo video: https:&#x2F;&#x2F;www.tella.tv&#x2F;video&#x2F;agnost-ai-launch-hn-demo-9haa The core problem is that chat and voice products do not have the same metrics as web apps. When the product interface is language, clicks and funnels become much less useful. Users also rarely give explicit feedback, and when they do it&#x27;s usually sugarcoated. I barely type &#x2F;feedback in Claude or Codex myself. Most users just curse, ask again, correct the agent, or leave. So product engineers get technical visibility from latency, errors, and traces, but still have to guess whether users got what they wanted. We got here after building around agents for the last year and got a couple of founders asking for something like a PostHog for conversations for the AI assistants they were building. We are not trying to be in the observability or evals space. Observability tells you what happened technically. Evals validate cases you already know. We&#x27;re more on the discovery side like what users wanted, where they got frustrated, what they asked for repeatedly, and what new evals should exist. Teams send us agent conversation messages through SDKs or OTel, optionally with metadata like account, plan, source, organization, etc. We cluster conversations into product-specific intents. Feature requests and bugs are default categories; most other clusters are created dynamically from the customer’s data and evolve over time. You can create your own cluster in plain English. If a cluster gets too broad, we split it. If a new pattern appears, we suggest it. One AI video editor company used Agnost AI to find feature requests hidden inside chat. The biggest one was that around 70 users wanted auto-subtitles, but users said it as “add this text in this frame” 12x in a single session, “can you caption it”, “give me transcript of audio” and variations across languages. The team later built the feature. Doing this over millions of messages without sending everything to an LLM was the hard part initially. In ClickHouse, “fetch the last 50 events by time across conversations” and “fetch all events in this conversation” want different sort orders, so we had to iterate a lot on sorting keys, partitions, materialized views, and projections. For finding new clusters, sending everything through an LLM was too slow and expensive. HDBSCAN-style embedding clustering also gets painful at scale because of pairwise comparisons. We first split conversations into segments based on cosine drift, run BIRCH to compress the candidate space, and then use HDBSCAN-like clustering on the smaller set. For matching existing clusters, we use embeddings, smaller classifiers&#x2F;BERT-style models, and LLMs only as fallback for ambiguous cases. We’re live with multiple companies and ingesting ~1M chat and voice messages per day. Pricing is public: Starter is free, Pro is $499&#x2F;month, and Enterprise is for higher volume, security, retention needs. We use each customer’s data only for that customer. We are SOC 2 Type 1 compliant, Type 2 is in progress, and our SDKs are on PyPI and npm. We’d love feedback from the HN community and people building chat or voice agents: how do you detect these signals today, what feedback methods have worked, and what would block you from trying this? Happy to answer questions and take criticism.",
-      "why": "A lot of the quality gap in agents still comes down to state handling, durability, and clearer control flow."
+      "publishedAt": "2026-07-20T13:49:53Z",
+      "score": 103,
+      "summary": "So Im a solo developer who has always had an itch for algorithmic trading. Initially I started off learning how to trade algorithmically with Yves Hilpisch book \"Python for Algorithmic Trading\" after reading that book I was hooked and started building algorithmic trading bots. Initially these were separate python scripts that I ran on my local machine. That was a bad idea cause local machines are not reliable and I wanted to run my bots 24&#x2F;7 365. In my actual career im a software engineer with experience in building distributed systems and fault tolerant web applications. I wasn&#x27;t interested in deploying my code to managed services like MetaTrader, CTrader or QuantConnect etc because I wanted to have full control over my code and the environment it runs in. I also wanted to be able to run my bots in any programming language I wanted, not just Python. Sometimes I wanted to prototype a bot in Python and then rewrite it in C++ or Rust for performance reasons. Many at this point would have said why not use a framework like Lean or Freqtrade or Hummingbot. However I found that these frameworks were too opinionated and if you decide to use them then your bot is now part and parcel of their framework. I backtested my bots locally in my own specific way, and now with AI my agents can generate code, backtest and analyze the results all locally, no need to run any of it in the execution platform. I wanted bots I could deploy, version, update and monitor like any other software application. I also wanted to explore building something that creates a standardized way of running bots. This has been a 4 year journey and I made a lot of mistakes along the way. The application has seen 4 rearchitectures, 3 of which were basically complete rewrites. The first version was a python program and the bots were just modules that were loaded dynamically. The second was my serverless phase when I internally just wanted something that was online cron triggered and only works for me. The third was the first time I was dipping into kubernetes; more cloud native and the idiot in me decided to try make it a SaaS. The final form is a fully self-hosted runtime, api, cli and frontend that let you run bots as containers in a fault tolerant way both locally (through docker `the0 local`) and in a cluster (k8s) and monitor them with a minimalistic frontend. To support multiple languages there&#x27;s a thin contract that the bots have to implement: a main(bot_id, config) function and a bot-config.yaml file. The runtime (written in Go) takes care of the rest, it supports C++, Rust, Python, JS&#x2F;TS, C#, Scala and Haskell for those who are brave enough to try it. More on the architecture here: https:&#x2F;&#x2F;docs.the0.app&#x2F;runtime If you want to play with the0 you can run it locally, guide here: https:&#x2F;&#x2F;docs.the0.app&#x2F;deployment&#x2F;local-getting-started . The0 is open source and licensed under Apache-2.0: https:&#x2F;&#x2F;github.com&#x2F;alexanderwanyoike&#x2F;the0 I currently use the0 to run my own personal algorithmic trading bots on a single node k3s cluster on a $10&#x2F;month Hetzner VPS. I have 18 bots running on 2 brokers (Alpaca, Bybit) and they have been running for months without issues. Some bots trade crypto, others stocks, some do risk analysis and others invest. Coolest bit is the API provides an MCP server so AI agents can query the state of the bots, look at their logs, monitor them and even update them. Slap an OpenClaw agent and you can effectively setup an autonomous AI quantitative trading system (good luck chasing Alpha). Now I must admit Lean has all the tools and far more quantitative prowess than the0, but I always felt it does too much. Each Lean engine runs one algorithm, and once you have lots of bots, running and managing all of them in production is left to you. That&#x27;s the part the0 does, and its the only part it tries to do. If you find hiccups or have ideas for features Im all ears. More on the internals in my first comment.",
+      "why": "MCP keeps surfacing as the connective tissue for more grounded agent workflows — standard tool surfaces are still one of the cleanest leverage points in the stack."
     },
     {
-      "title": "Agent Harness Engineering",
-      "source": "Hacker News",
-      "url": "https://addyosmani.com/blog/agent-harness-engineering/",
-      "meta": "38 pts · 2 comments",
-      "topics": [],
-      "publishedAt": "2026-07-12T14:16:31Z",
-      "score": 137,
-      "summary": "",
-      "why": "Deep engineering posts about how agent loops actually work internally — tool sequencing, context windows, error recovery — are more valuable than most product announcements."
+      "title": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+      "source": "Hugging Face",
+      "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+      "meta": "310 likes · 62,842 downloads",
+      "topics": [
+        "Memory and state",
+        "Open weights",
+        "Major labs",
+        "Coding agents"
+      ],
+      "publishedAt": "2026-07-17T00:27:17.000Z",
+      "score": 1302.842,
+      "summary": "gguf unsloth fine tune heretic uncensored abliterated ara MTP GGUF Quants Regular GGUF Quants qwen3.6 multi-stage tuned thinking reasoning all use cases coder creative creative writing all genres story writing fiction roleplaying bfloat16 multi-stage-tune multi-state-merge image-text-to-text en zh dataset:DavidAU/Polar-STRICT-Datasets dataset:DavidAU/F451-STRICT-Datasets license:apache-2.0 endpoints_compatible region:us imatrix conversational",
+      "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
     },
     {
       "title": "google-gemini/gemini-cli",
       "source": "GitHub",
       "url": "https://github.com/google-gemini/gemini-cli",
-      "meta": "106056 stars · updated Sat, 18 Jul 2026 01:27:53 UTC",
+      "meta": "106130 stars · updated Wed, 22 Jul 2026 16:24:18 UTC",
       "topics": [
         "Tool use",
         "Open weights",
@@ -91,24 +69,23 @@
         "Coding agents"
       ],
       "publishedAt": "2025-04-17T17:04:31Z",
-      "score": 665030,
+      "score": 665518,
       "summary": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
       "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
     },
     {
-      "title": "xai-org/grok-build",
+      "title": "Fei-Away/Codex-Dream-Skin",
       "source": "GitHub",
-      "url": "https://github.com/xai-org/grok-build",
-      "meta": "18462 stars · updated Fri, 17 Jul 2026 13:24:53 UTC",
+      "url": "https://github.com/Fei-Away/Codex-Dream-Skin",
+      "meta": "11825 stars · updated Wed, 22 Jul 2026 17:10:03 UTC",
       "topics": [
         "Tool use",
-        "Coding agents",
-        "Interfaces"
+        "Coding agents"
       ],
-      "publishedAt": "2026-07-17T13:24:53Z",
-      "score": 117626,
-      "summary": "SpaceXAI's coding agent harness and TUI. Fullscreen, mouse interactive, extensible.",
-      "why": "Agent UX is moving beyond chat boxes — interface design is becoming part of the research frontier."
+      "publishedAt": "2026-07-22T17:10:03Z",
+      "score": 73474,
+      "summary": "Codex Dream Skin",
+      "why": "The strongest practical signal right now is still better tooling around how models call, sequence, and recover from actions."
     }
   ],
   "sourceSections": [
@@ -117,44 +94,17 @@
       "label": "Major labs",
       "items": [
         {
-          "title": "The US is advancing AI safety through state and federal action",
-          "url": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action",
-          "publishedAt": "Wed, 15 Jul 2026 12:00:00 GMT",
-          "source": "OpenAI",
-          "meta": "Wed, 15 Jul 2026 12:00:00 GMT",
-          "topics": [
-            "Memory and state",
-            "Major labs"
-          ],
-          "score": 180,
-          "summary": "The US is advancing AI safety through state and federal action",
-          "why": "A lot of the quality gap in agents still comes down to state handling, durability, and clearer control flow."
-        },
-        {
-          "title": "How to manage AI investments in the agentic era",
-          "url": "https://openai.com/index/managing-ai-investments-in-agentic-era",
-          "publishedAt": "Tue, 14 Jul 2026 10:00:00 GMT",
-          "source": "OpenAI",
-          "meta": "Tue, 14 Jul 2026 10:00:00 GMT",
+          "title": "Gemini 3.5 Flash Cyber",
+          "source": "Google DeepMind",
+          "url": "https://deepmind.google/blog/introducing-gemini-3-5-flash-cyber/",
+          "meta": "3 pts · 1 comments",
           "topics": [
             "Major labs"
           ],
-          "score": 180,
-          "summary": "How to manage AI investments in the agentic era",
-          "why": "Major lab launches still reshape the practical design space for agent builders almost overnight."
-        },
-        {
-          "title": "Claude for K-12 teachers: Get back to why you started teaching",
-          "source": "Anthropic",
-          "url": "https://claude.com/solutions/teachers",
-          "meta": "5 pts · 0 comments",
-          "topics": [
-            "Major labs"
-          ],
-          "publishedAt": "2026-07-15T12:40:51Z",
-          "score": 100,
+          "publishedAt": "2026-07-21T15:27:01Z",
+          "score": 159,
           "summary": "",
-          "why": "Major lab launches still reshape the practical design space for agent builders almost overnight."
+          "why": "A frontier-level model at 4x speed parity reshapes the practical design space for agent builders overnight — faster inference directly enables more complex, multi-step agent loops."
         }
       ]
     },
@@ -163,45 +113,34 @@
       "label": "Hacker News",
       "items": [
         {
-          "title": "Launch HN: Agnost AI (YC S26) – Extract user feedback from agent conversations",
-          "source": "Hacker News",
-          "url": "https://agnost.ai",
-          "meta": "85 pts · 49 comments",
-          "topics": [
-            "Tool use",
-            "Memory and state",
-            "Evaluation",
-            "Voice and multimodal"
-          ],
-          "publishedAt": "2026-07-14T16:06:18Z",
-          "score": 412,
-          "summary": "Hey HN, we’re Shubham & Parth, childhood friends building Agnost AI ( https:&#x2F;&#x2F;agnost.ai ), product analytics for teams building chat and voice agents. We read production conversations and find behavioral failures like users rageprompting (cursing at the agent), repeatedly rephrasing the same request, correcting the agent, asking for missing features, or leaving after an answer that was technically successful. We have an interactive demo with no signup here: https:&#x2F;&#x2F;app.agnost.ai?demo=true Here&#x27;s a demo video: https:&#x2F;&#x2F;www.tella.tv&#x2F;video&#x2F;agnost-ai-launch-hn-demo-9haa The core problem is that chat and voice products do not have the same metrics as web apps. When the product interface is language, clicks and funnels become much less useful. Users also rarely give explicit feedback, and when they do it&#x27;s usually sugarcoated. I barely type &#x2F;feedback in Claude or Codex myself. Most users just curse, ask again, correct the agent, or leave. So product engineers get technical visibility from latency, errors, and traces, but still have to guess whether users got what they wanted. We got here after building around agents for the last year and got a couple of founders asking for something like a PostHog for conversations for the AI assistants they were building. We are not trying to be in the observability or evals space. Observability tells you what happened technically. Evals validate cases you already know. We&#x27;re more on the discovery side like what users wanted, where they got frustrated, what they asked for repeatedly, and what new evals should exist. Teams send us agent conversation messages through SDKs or OTel, optionally with metadata like account, plan, source, organization, etc. We cluster conversations into product-specific intents. Feature requests and bugs are default categories; most other clusters are created dynamically from the customer’s data and evolve over time. You can create your own cluster in plain English. If a cluster gets too broad, we split it. If a new pattern appears, we suggest it. One AI video editor company used Agnost AI to find feature requests hidden inside chat. The biggest one was that around 70 users wanted auto-subtitles, but users said it as “add this text in this frame” 12x in a single session, “can you caption it”, “give me transcript of audio” and variations across languages. The team later built the feature. Doing this over millions of messages without sending everything to an LLM was the hard part initially. In ClickHouse, “fetch the last 50 events by time across conversations” and “fetch all events in this conversation” want different sort orders, so we had to iterate a lot on sorting keys, partitions, materialized views, and projections. For finding new clusters, sending everything through an LLM was too slow and expensive. HDBSCAN-style embedding clustering also gets painful at scale because of pairwise comparisons. We first split conversations into segments based on cosine drift, run BIRCH to compress the candidate space, and then use HDBSCAN-like clustering on the smaller set. For matching existing clusters, we use embeddings, smaller classifiers&#x2F;BERT-style models, and LLMs only as fallback for ambiguous cases. We’re live with multiple companies and ingesting ~1M chat and voice messages per day. Pricing is public: Starter is free, Pro is $499&#x2F;month, and Enterprise is for higher volume, security, retention needs. We use each customer’s data only for that customer. We are SOC 2 Type 1 compliant, Type 2 is in progress, and our SDKs are on PyPI and npm. We’d love feedback from the HN community and people building chat or voice agents: how do you detect these signals today, what feedback methods have worked, and what would block you from trying this? Happy to answer questions and take criticism.",
-          "why": "A lot of the quality gap in agents still comes down to state handling, durability, and clearer control flow."
-        },
-        {
-          "title": "Agent Harness Engineering",
-          "source": "Hacker News",
-          "url": "https://addyosmani.com/blog/agent-harness-engineering/",
-          "meta": "38 pts · 2 comments",
-          "topics": [],
-          "publishedAt": "2026-07-12T14:16:31Z",
-          "score": 137,
-          "summary": "",
-          "why": "Deep engineering posts about how agent loops actually work internally — tool sequencing, context windows, error recovery — are more valuable than most product announcements."
-        },
-        {
           "title": "Show HN: Qwen3.6-35B-A3B on a 16 GB M1 Pro with SSD-streamed MoE",
           "source": "Hacker News",
           "url": "https://github.com/andreaborio/ds4",
-          "meta": "14 pts · 1 comments",
+          "meta": "23 pts · 4 comments",
           "topics": [
             "Open weights",
             "Major labs"
           ],
           "publishedAt": "2026-07-17T23:20:14Z",
-          "score": 101,
+          "score": 128,
           "summary": "",
           "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
+        },
+        {
+          "title": "Show HN: The0 – self-hosted runtime for trading bots, bring your own language",
+          "source": "Hacker News",
+          "url": "https://github.com/alexanderwanyoike/the0",
+          "meta": "18 pts · 4 comments",
+          "topics": [
+            "Tool use",
+            "Memory and state",
+            "Open weights",
+            "Major labs"
+          ],
+          "publishedAt": "2026-07-20T13:49:53Z",
+          "score": 103,
+          "summary": "So Im a solo developer who has always had an itch for algorithmic trading. Initially I started off learning how to trade algorithmically with Yves Hilpisch book \"Python for Algorithmic Trading\" after reading that book I was hooked and started building algorithmic trading bots. Initially these were separate python scripts that I ran on my local machine. That was a bad idea cause local machines are not reliable and I wanted to run my bots 24&#x2F;7 365. In my actual career im a software engineer with experience in building distributed systems and fault tolerant web applications. I wasn&#x27;t interested in deploying my code to managed services like MetaTrader, CTrader or QuantConnect etc because I wanted to have full control over my code and the environment it runs in. I also wanted to be able to run my bots in any programming language I wanted, not just Python. Sometimes I wanted to prototype a bot in Python and then rewrite it in C++ or Rust for performance reasons. Many at this point would have said why not use a framework like Lean or Freqtrade or Hummingbot. However I found that these frameworks were too opinionated and if you decide to use them then your bot is now part and parcel of their framework. I backtested my bots locally in my own specific way, and now with AI my agents can generate code, backtest and analyze the results all locally, no need to run any of it in the execution platform. I wanted bots I could deploy, version, update and monitor like any other software application. I also wanted to explore building something that creates a standardized way of running bots. This has been a 4 year journey and I made a lot of mistakes along the way. The application has seen 4 rearchitectures, 3 of which were basically complete rewrites. The first version was a python program and the bots were just modules that were loaded dynamically. The second was my serverless phase when I internally just wanted something that was online cron triggered and only works for me. The third was the first time I was dipping into kubernetes; more cloud native and the idiot in me decided to try make it a SaaS. The final form is a fully self-hosted runtime, api, cli and frontend that let you run bots as containers in a fault tolerant way both locally (through docker `the0 local`) and in a cluster (k8s) and monitor them with a minimalistic frontend. To support multiple languages there&#x27;s a thin contract that the bots have to implement: a main(bot_id, config) function and a bot-config.yaml file. The runtime (written in Go) takes care of the rest, it supports C++, Rust, Python, JS&#x2F;TS, C#, Scala and Haskell for those who are brave enough to try it. More on the architecture here: https:&#x2F;&#x2F;docs.the0.app&#x2F;runtime If you want to play with the0 you can run it locally, guide here: https:&#x2F;&#x2F;docs.the0.app&#x2F;deployment&#x2F;local-getting-started . The0 is open source and licensed under Apache-2.0: https:&#x2F;&#x2F;github.com&#x2F;alexanderwanyoike&#x2F;the0 I currently use the0 to run my own personal algorithmic trading bots on a single node k3s cluster on a $10&#x2F;month Hetzner VPS. I have 18 bots running on 2 brokers (Alpaca, Bybit) and they have been running for months without issues. Some bots trade crypto, others stocks, some do risk analysis and others invest. Coolest bit is the API provides an MCP server so AI agents can query the state of the bots, look at their logs, monitor them and even update them. Slap an OpenClaw agent and you can effectively setup an autonomous AI quantitative trading system (good luck chasing Alpha). Now I must admit Lean has all the tools and far more quantitative prowess than the0, but I always felt it does too much. Each Lean engine runs one algorithm, and once you have lots of bots, running and managing all of them in production is left to you. That&#x27;s the part the0 does, and its the only part it tries to do. If you find hiccups or have ideas for features Im all ears. More on the internals in my first comment.",
+          "why": "MCP keeps surfacing as the connective tissue for more grounded agent workflows — standard tool surfaces are still one of the cleanest leverage points in the stack."
         }
       ]
     },
@@ -213,7 +152,24 @@
     {
       "key": "hugging-face",
       "label": "Hugging Face",
-      "items": []
+      "items": [
+        {
+          "title": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+          "source": "Hugging Face",
+          "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+          "meta": "310 likes · 62,842 downloads",
+          "topics": [
+            "Memory and state",
+            "Open weights",
+            "Major labs",
+            "Coding agents"
+          ],
+          "publishedAt": "2026-07-17T00:27:17.000Z",
+          "score": 1302.842,
+          "summary": "gguf unsloth fine tune heretic uncensored abliterated ara MTP GGUF Quants Regular GGUF Quants qwen3.6 multi-stage tuned thinking reasoning all use cases coder creative creative writing all genres story writing fiction roleplaying bfloat16 multi-stage-tune multi-state-merge image-text-to-text en zh dataset:DavidAU/Polar-STRICT-Datasets dataset:DavidAU/F451-STRICT-Datasets license:apache-2.0 endpoints_compatible region:us imatrix conversational",
+          "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
+        }
+      ]
     },
     {
       "key": "github",
@@ -223,7 +179,7 @@
           "title": "google-gemini/gemini-cli",
           "source": "GitHub",
           "url": "https://github.com/google-gemini/gemini-cli",
-          "meta": "106056 stars · updated Sat, 18 Jul 2026 01:27:53 UTC",
+          "meta": "106130 stars · updated Wed, 22 Jul 2026 16:24:18 UTC",
           "topics": [
             "Tool use",
             "Open weights",
@@ -231,36 +187,21 @@
             "Coding agents"
           ],
           "publishedAt": "2025-04-17T17:04:31Z",
-          "score": 665030,
+          "score": 665518,
           "summary": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
           "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
-        },
-        {
-          "title": "xai-org/grok-build",
-          "source": "GitHub",
-          "url": "https://github.com/xai-org/grok-build",
-          "meta": "18462 stars · updated Fri, 17 Jul 2026 13:24:53 UTC",
-          "topics": [
-            "Tool use",
-            "Coding agents",
-            "Interfaces"
-          ],
-          "publishedAt": "2026-07-17T13:24:53Z",
-          "score": 117626,
-          "summary": "SpaceXAI's coding agent harness and TUI. Fullscreen, mouse interactive, extensible.",
-          "why": "Agent UX is moving beyond chat boxes — interface design is becoming part of the research frontier."
         },
         {
           "title": "Fei-Away/Codex-Dream-Skin",
           "source": "GitHub",
           "url": "https://github.com/Fei-Away/Codex-Dream-Skin",
-          "meta": "9707 stars · updated Sat, 18 Jul 2026 12:40:37 UTC",
+          "meta": "11825 stars · updated Wed, 22 Jul 2026 17:10:03 UTC",
           "topics": [
             "Tool use",
             "Coding agents"
           ],
-          "publishedAt": "2026-07-18T12:40:37Z",
-          "score": 60444,
+          "publishedAt": "2026-07-22T17:10:03Z",
+          "score": 73474,
           "summary": "Codex Dream Skin",
           "why": "The strongest practical signal right now is still better tooling around how models call, sequence, and recover from actions."
         },
@@ -268,7 +209,7 @@
           "title": "LearningCircuit/local-deep-research",
           "source": "GitHub",
           "url": "https://github.com/LearningCircuit/local-deep-research",
-          "meta": "8732 stars · updated Sat, 18 Jul 2026 18:27:22 UTC",
+          "meta": "8770 stars · updated Wed, 22 Jul 2026 08:51:51 UTC",
           "topics": [
             "Tool use",
             "Evaluation",
@@ -276,9 +217,24 @@
             "Major labs"
           ],
           "publishedAt": "2025-02-09T15:41:32Z",
-          "score": 54040,
+          "score": 54268,
           "summary": "~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all local and cloud LLMs (llama.cpp, Ollama, Google, ...). 10+ search engines - arXiv, PubMed, your private documents. Everything Local & Encrypted.",
           "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
+        },
+        {
+          "title": "MinishLab/semble",
+          "source": "GitHub",
+          "url": "https://github.com/MinishLab/semble",
+          "meta": "5680 stars · updated Wed, 22 Jul 2026 10:19:18 UTC",
+          "topics": [
+            "Tool use",
+            "Evaluation",
+            "Coding agents"
+          ],
+          "publishedAt": "2026-04-06T14:56:45Z",
+          "score": 34674,
+          "summary": "Fast and Accurate Code Search for Agents. Uses ~98% fewer tokens than grep+read",
+          "why": "This is a strong agent-engineering efficiency signal: giving coding agents semantic code search instead of grep-based token waste directly reduces cost and improves latency on every agent loop."
         }
       ]
     }
@@ -286,70 +242,70 @@
   "tangentRadar": [
     {
       "topic": "Coding agents",
-      "signalCount": 28,
+      "signalCount": 24,
       "whyItMatters": "The comment volume makes this a good proxy for what technically engaged builders think is worth paying attention to.",
       "signals": [
+        "Hugging Face: DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
         "GitHub: Fei-Away/Codex-Dream-Skin",
-        "GitHub: stackblitz/bolt-slides",
-        "GitHub: PromptPartner/agentsmith"
+        "GitHub: Vincentwei1021/video-shotcraft"
       ]
     },
     {
       "topic": "Tool use",
-      "signalCount": 23,
+      "signalCount": 22,
       "whyItMatters": "The strongest practical signal right now is still better tooling around how models call, sequence, and recover from actions.",
       "signals": [
-        "Hacker News: Launch HN: Agnost AI (YC S26) – Extract user feedback from agent conversations",
+        "Hacker News: Show HN: The0 – self-hosted runtime for trading bots, bring your own language",
         "GitHub: Fei-Away/Codex-Dream-Skin",
-        "GitHub: vshulcz/deja-vu"
+        "GitHub: Vincentwei1021/video-shotcraft"
       ]
     },
     {
       "topic": "Open weights",
-      "signalCount": 18,
+      "signalCount": 16,
       "whyItMatters": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate.",
       "signals": [
         "Hacker News: Show HN: Qwen3.6-35B-A3B on a 16 GB M1 Pro with SSD-streamed MoE",
-        "GitHub: vshulcz/deja-vu",
-        "GitHub: PromptPartner/agentsmith"
+        "Hacker News: Show HN: The0 – self-hosted runtime for trading bots, bring your own language",
+        "Hugging Face: DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF"
       ]
     },
     {
       "topic": "Interfaces",
-      "signalCount": 17,
+      "signalCount": 14,
       "whyItMatters": "Agent UX is moving beyond chat boxes — interface design is becoming part of the research frontier.",
       "signals": [
-        "GitHub: claudecodemythos/Claude-Mythos-AI-Free-desktop",
-        "GitHub: xai-org/grok-build",
-        "GitHub: mereyabdenbekuly-ctrl/clodex-ide"
+        "GitHub: gakonst/nanocodex",
+        "GitHub: duolahypercho/codex-router",
+        "GitHub: risa-labs-inc/BossConsole"
       ]
     },
     {
       "topic": "Major labs",
-      "signalCount": 16,
+      "signalCount": 12,
       "whyItMatters": "Major lab launches still reshape the practical design space for agent builders almost overnight.",
       "signals": [
-        "Anthropic: Claude for K-12 teachers: Get back to why you started teaching",
+        "Google DeepMind: Gemini 3.5 Flash Cyber",
         "Hacker News: Show HN: Qwen3.6-35B-A3B on a 16 GB M1 Pro with SSD-streamed MoE",
-        "OpenAI: The US is advancing AI safety through state and federal action"
+        "Hacker News: Show HN: The0 – self-hosted runtime for trading bots, bring your own language"
       ]
     },
     {
       "topic": "Multi-agent workflows",
-      "signalCount": 10,
+      "signalCount": 6,
       "whyItMatters": "The comment volume makes this a good proxy for what technically engaged builders think is worth paying attention to.",
       "signals": [
-        "GitHub: zjp1997720/codex-model-routing-team",
-        "GitHub: claudecodemythos/Claude-Mythos-AI-Free-desktop",
-        "GitHub: SingLinkLabs/singchat-mcp"
+        "GitHub: cicialgo/rockycode",
+        "GitHub: MisterBooo/llm-interview-questions",
+        "GitHub: Zisky-ai/Luper"
       ]
     }
   ],
   "experimentQueue": [
     {
-      "title": "Benchmark one local-first agent stack",
-      "why": "The local/open-weight ecosystem looks materially better this week, especially around Qwen and Forge guardrails.",
-      "prompt": "Pick one real workflow and compare a local Qwen+Forge stack against a frontier hosted model on tool accuracy, latency, and cost."
+      "title": "Audit one deployed enterprise agent workflow",
+      "why": "Codex-on-Dell and SAP-with-Claude are production-scale agent deployments — worth understanding the real friction points.",
+      "prompt": "Take one enterprise agent deployment case study, map the hidden assumptions, and note where trust, permissions, and failure recovery still feel weak."
     },
     {
       "title": "Instrument one agent with better traces",
@@ -357,9 +313,9 @@
       "prompt": "Log tool calls, retries, and summaries for one real task, then inspect which step actually predicts success or failure."
     },
     {
-      "title": "Stress-test one agent across model families",
-      "why": "The model layer is changing quickly enough that the same harness can behave very differently across providers and sizes.",
-      "prompt": "Replay the same agent task on one hosted frontier model and one smaller open model, then compare tool-selection behavior, not just answer quality."
+      "title": "Prototype an interface beyond chat",
+      "why": "The AI-pointer and Interaction Models threads both suggest the interface layer is becoming a genuine research lever.",
+      "prompt": "Build a tiny agent UI that is not just a chat box — for example a timeline, pointer assistant, or live shared workspace — and log what it changes."
     }
   ],
   "method": [
