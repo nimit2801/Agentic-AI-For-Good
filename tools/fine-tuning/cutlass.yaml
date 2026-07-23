@@ -1,0 +1,37 @@
+name: CUTLASS
+description: NVIDIA's open-source CUDA C++ template library for high-performance matrix multiply (GEMM) and general tensor operations. CUTLASS provides composable building blocks for GPU kernel developers, enabling efficient implementations of attention, convolutions, and matrix operations used in deep learning training and inference.
+tagline: CUDA template library for high-performance matrix operations
+
+github_url: https://github.com/NVIDIA/cutlass
+website_url: https://github.com/NVIDIA/cutlass
+docs_url: https://github.com/NVIDIA/cutlass#readme
+
+install_command: pip install cutlass
+
+category: Fine-tuning
+tags:
+  - cuda
+  - kernels
+  - matrix-multiply
+  - gpu
+  - template-library
+  - nvidia
+  - gemm
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Writing high-performance CUDA kernels for matrix operations is incredibly difficult — it
+  requires deep knowledge of GPU memory hierarchy, warp scheduling, tensor core instructions,
+  and tiling strategies. Most ML teams lack the expertise to hand-optimize kernels for their
+  specific model architectures. CUTLASS abstracts away this complexity with composable C++
+  template building blocks that auto-tune for target GPUs. It powers the kernels behind many
+  major ML frameworks and is the foundation for libraries like FlashAttention and cuBLAS.
+
+use_cases:
+  - Build custom CUDA kernels for novel attention mechanisms without starting from scratch
+  - Auto-tune matrix multiply operations for specific GPU architectures and problem sizes
+  - Implement efficient grouped GEMM for mixture-of-experts model inference
+  - Speed up convolution operations in vision models with optimized warp-level primitives
+  - Create fused kernels that combine matrix multiply with activation functions in one pass

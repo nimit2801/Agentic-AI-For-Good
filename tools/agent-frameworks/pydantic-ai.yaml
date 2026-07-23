@@ -1,24 +1,37 @@
-name: PydanticAI
-description: "Python agent framework by the Pydantic team that brings type-safe, production-grade GenAI application development with model-agnostic support, powerful evals, seamless Logfire observability, and composable capabilities."
-tagline: "AI Agent Framework, the Pydantic way"
+name: Pydantic AI
+description: A Python agent framework by the makers of Pydantic that lets you build type-safe, production-grade LLM applications. It provides structured outputs via Pydantic models, dependency injection for tools and context, streaming, and multi-agent orchestration — all with first-class async support and zero magic.
+tagline: Type-safe agent framework for production LLM apps
+
 github_url: https://github.com/pydantic/pydantic-ai
-website_url: https://pydantic.dev/docs/ai/overview/
-docs_url: https://pydantic.dev/docs/ai/overview/install/
-install_command: "pip install pydantic-ai"
+website_url: https://ai.pydantic.dev
+docs_url: https://ai.pydantic.dev
+
+install_command: pip install pydantic-ai
+
 category: Agents
 tags:
-  - ai-agent
   - python
+  - agents
+  - structured-output
   - pydantic
-  - llm
   - type-safe
-  - model-agnostic
-  - observability
+  - multi-agent
+  - async
 pricing: free
 is_open_source: true
 license: MIT
-problem_solved: "Building production-grade GenAI agent applications is complex and error-prone; existing Python agent frameworks lack the type safety, composability, and observability needed for reliable deployment at scale."
+
+problem_solved: |
+  Building production LLM applications is messy — model outputs are unstructured, tool calls
+  have no type safety, and managing multi-turn conversations with state is error-prone.
+  Pydantic AI solves this by making Pydantic models the core abstraction: every LLM response
+  is validated against a schema, tool definitions are type-checked Python functions, and
+  dependencies are injected explicitly. The result is agent code that's testable, self-documenting,
+  and impossible to call with wrong arguments.
+
 use_cases:
-  - "Building multi-model AI agents with type-safe tool calling and dependency injection"
-  - "Creating production agent workflows with built-in evals and Logfire observability"
-  - "Developing model-agnostic agent systems that seamlessly swap between OpenAI, Anthropic, Gemini, and other LLM providers"
+  - Build a customer support agent with typed tool definitions and validated response schemas
+  - Create a multi-agent research system where agents pass structured data between each other
+  - Implement RAG pipelines with dependency-injected vector store clients for easy testing
+  - Deploy a streaming agent that shows reasoning step-by-step with typed intermediate outputs
+  - Build a data extraction pipeline that guarantees JSON matching a Pydantic schema

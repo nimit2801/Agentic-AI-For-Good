@@ -1,0 +1,37 @@
+name: PyRIT
+description: Microsoft's open-source Python Risk Identification Tool for generative AI — a framework for automated and human-led red teaming. PyRIT provides reusable attack strategies, scoring, memory, and multi-turn conversation orchestration to systematically identify security and safety risks in AI systems.
+tagline: Automated red teaming framework for generative AI
+
+github_url: https://github.com/microsoft/PyRIT
+website_url: https://microsoft.github.io/PyRIT
+docs_url: https://microsoft.github.io/PyRIT/latest
+
+install_command: pip install pyrit
+
+category: Monitoring
+tags:
+  - red-teaming
+  - security
+  - safety
+  - microsoft
+  - llm-evaluation
+  - risk-assessment
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Generative AI systems introduce novel attack surfaces — multi-turn jailbreaks, prompt
+  injection chains, and modality-specific exploits — that traditional security testing
+  doesn't cover. Security teams need a structured, repeatable framework for red teaming
+  that scales across models, providers, and attack types. PyRIT provides composable
+  attack strategies, standardized scoring, and conversation memory with a plugin
+  architecture for targets, converters, and scorers. It supports OpenAI, Azure, Anthropic,
+  Google, HuggingFace, custom HTTP endpoints, and web app targets.
+
+use_cases:
+  - Run automated multi-turn jailbreak attacks (Crescendo, TAP, Skeleton Key) against production LLMs
+  - Benchmark model safety across providers with standardized scenarios and scoring rubrics
+  - Identify data leakage risks by probing sensitive information extraction from model outputs
+  - Test content safety guardrails for harmful output across text, image, and audio modalities
+  - Integrate into CI/CD pipelines to catch regressions before model deployment
