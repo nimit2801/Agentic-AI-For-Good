@@ -1,0 +1,22 @@
+name: Lightstep
+description: An observability platform built on distributed tracing that provides real-time visibility into microservice architectures and cloud-native applications. Lightstep (now part of ServiceNow) offers high-cardinality distributed tracing, service-level objective monitoring, and incident response tools with full OpenTelemetry support.
+tagline: Distributed tracing and observability for cloud-native applications
+
+website_url: https://lightstep.com
+docs_url: https://docs.lightstep.com
+
+category: Monitoring
+tags: [distributed-tracing, observability, apm, microservices, opentelemetry, incident-response]
+pricing: paid
+is_open_source: false
+install_command: pip install lightstep
+
+problem_solved: |
+  Debugging performance issues in microservice architectures is extremely difficult — a single user request can traverse dozens of services, each adding latency or errors, with traditional monitoring tools providing only per-service metrics and logs without end-to-end context. Lightstep provides distributed tracing that follows a single request across every service, database, and queue in its path, pinpointing which service is slow, which call is failing, and what the root cause is — all with high-cardinality metadata and real-time streaming analysis.
+
+use_cases:
+  - Trace a single user request across dozens of microservices to identify the root cause of latency spikes and errors
+  - Monitor service-level objectives with real-time burn-rate alerts and error budget tracking for critical services
+  - Analyze high-cardinality trace data — service versions, deployment IDs, user cohorts — to correlate changes with performance
+  - Integrate with OpenTelemetry to instrument services with standard APIs and export traces directly to Lightstep
+  - Accelerate incident response with automated causation analysis that links trace data to deploys, config changes, and infrastructure events
