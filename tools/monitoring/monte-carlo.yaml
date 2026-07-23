@@ -1,0 +1,22 @@
+name: Monte Carlo
+description: A data observability platform that automatically monitors data pipelines, data warehouses, and data lakes for freshness, volume, schema changes, and quality issues. Uses machine learning to establish baseline data behavior and alert teams to anomalies, broken pipelines, and data downtime before it impacts business decisions.
+tagline: Automated data observability for modern data stacks
+
+website_url: https://www.montecarlodata.com
+docs_url: https://docs.montecarlodata.com
+
+category: Monitoring
+tags: [data-observability, data-quality, data-pipelines, monitoring, data-lineage, anomaly-detection]
+pricing: paid
+is_open_source: false
+install_command: pip install montecarlo
+
+problem_solved: |
+  Data pipelines break silently — stale tables, schema changes, missing records, and drops in data quality often go undetected for days or weeks, leading to incorrect reports and broken downstream models. Monte Carlo automates data observability by monitoring data warehouses, pipelines, and lakes for freshness, volume, schema, and quality anomalies. It establishes baseline data behavior with machine learning and alerts teams before bad data propagates to production dashboards and ML models.
+
+use_cases:
+  - Automatically detect data freshness issues and pipeline failures before they affect downstream dashboards and ML models
+  - Monitor table volume, schema changes, and row-level quality metrics across Snowflake, BigQuery, Databricks, and other warehouses
+  - Trace data lineage from source to BI dashboard to quickly identify root causes of data quality incidents
+  - Set up field-level data quality checks for null rates, distribution shifts, and referential integrity
+  - Track data observability metrics over time to build a data reliability scorecard for your organization

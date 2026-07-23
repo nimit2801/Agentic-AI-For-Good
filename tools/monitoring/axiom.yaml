@@ -1,0 +1,22 @@
+name: Axiom
+description: A log management and observability platform designed for high-cardinality data at petabyte scale, with real-time ingestion, instant search, and low-cost storage. Axiom uses ClickHouse under the hood for sub-second queries across logs, structured events, and application metrics with a built-in query language and programmable dashboards.
+tagline: High-cardinality log management and observability at scale
+
+website_url: https://axiom.co
+docs_url: https://axiom.co/docs
+
+category: Monitoring
+tags: [log-management, observability, clickhouse, event-processing, application-monitoring, structured-logging]
+pricing: freemium
+is_open_source: false
+install_command: pip install axiom
+
+problem_solved: |
+  Traditional log management tools become prohibitively expensive and slow as data volumes grow, forcing teams to sample or drop logs to control costs. Axiom provides petabyte-scale log ingestion with sub-second search performance using ClickHouse, without requiring log sampling or data retention compromises. It supports structured JSON events, metrics ingestion, real-time dashboards, and a powerful query language — all at a fraction of the cost of legacy log management platforms.
+
+use_cases:
+  - Ingest and search terabytes of structured JSON logs with sub-second query performance using ClickHouse-powered analytics
+  - Build real-time dashboards for application health, customer behavior, and business KPIs from log and event data
+  - Set up alerting on log patterns, error rates, and metric thresholds with multi-channel notification integrations
+  - Correlate structured events across microservices with distributed tracing IDs for end-to-end debugging
+  - Replace expensive legacy log management tools with a cost-effective cloud-native platform that does not require data sampling
