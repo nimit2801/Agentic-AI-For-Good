@@ -1,0 +1,22 @@
+name: Tecton
+description: A cloud-native ML feature platform that provides end-to-end feature management from ingestion to serving, enabling data teams to define, compute, store, and serve features for production machine learning models with real-time and batch processing pipelines.
+tagline: Enterprise ML feature platform for production machine learning
+
+website_url: https://tecton.ai
+docs_url: https://docs.tecton.ai
+
+category: Data
+tags: [feature-store, ml-platform, feature-engineering, mlops, data-pipelines, realtime-features]
+pricing: paid
+is_open_source: false
+install_command: pip install tecton
+
+problem_solved: |
+  Deploying ML models to production requires features computed from raw data in batch and real-time pipelines — but without a dedicated feature platform, data teams end up building ad-hoc feature engineering code scattered across notebooks, Spark jobs, and streaming pipelines, leading to training-serving skew and feature duplication. Tecton provides a unified feature platform that lets teams define features declaratively, compute them consistently across batch and streaming sources, serve them at low latency for online inference, and monitor feature quality and drift over time with built-in observability.
+
+use_cases:
+  - Define ML features declaratively with Python and have Tecton orchestrate batch and streaming computation pipelines automatically
+  - Serve online features at sub-millisecond latency for real-time model inference in production applications
+  - Eliminate training-serving skew by computing features identically in training and serving environments
+  - Backfill historical feature values for training datasets with point-in-time correct time-travel queries
+  - Monitor feature freshness, distribution drift, and quality metrics across production model deployments

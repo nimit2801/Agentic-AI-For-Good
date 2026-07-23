@@ -1,0 +1,24 @@
+name: Snorkel AI
+description: A programmatic data labeling platform that uses weak supervision — combining noisy labeling functions, heuristics, and knowledge bases — to generate high-quality training data at scale without manual annotation. The open-source Snorkel framework pioneered data-centric AI with a Python API for writing, combining, and managing labeling functions.
+tagline: Programmatic data labeling and weak supervision for AI
+
+github_url: https://github.com/snorkel-team/snorkel
+website_url: https://snorkel.ai
+docs_url: https://snorkel.readthedocs.io
+
+category: Data
+tags: [data-labeling, weak-supervision, training-data, data-centric-ai, labeling, mlops]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+install_command: pip install snorkel
+
+problem_solved: |
+  Creating labeled training datasets for supervised learning is the most expensive and time-consuming bottleneck in AI — manual labeling by domain experts does not scale, and rule-based labeling requires continuous maintenance. Snorkel introduced weak supervision, a paradigm that lets subject matter experts write noisy labeling functions (heuristics, keywords, knowledge bases, and external model outputs) and then uses a generative model to estimate each function's accuracy and combine their outputs into high-quality probabilistic training labels — dramatically reducing the cost of creating labeled data.
+
+use_cases:
+  - Generate training labels for text classification by combining keyword rules, regex patterns, and knowledge base lookups as labeling functions
+  - Label large volumes of documents for information extraction using a mix of heuristics, pre-trained models, and human-validated slices
+  - Automatically detect and resolve conflicts between noisy labeling sources with a trained label model that estimates each source's accuracy
+  - Accelerate model development by quickly iterating on labeling strategies without waiting for human annotation cycles
+  - Apply weak supervision to image, video, and multilingual data for domain-specific AI applications
