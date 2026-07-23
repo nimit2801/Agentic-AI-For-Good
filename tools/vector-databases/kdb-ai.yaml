@@ -1,0 +1,29 @@
+name: KDB.AI
+description: A high-performance vector database from KX Systems built on the kdb+ time-series engine, designed for real-time AI applications requiring ultra-low latency similarity search.
+tagline: Real-time vector database built on the kdb+ engine
+
+website_url: https://kdb.ai
+docs_url: https://code.kx.com/kdb-ai
+
+category: Vector DB
+tags: [vector-database, similarity-search, real-time, python, time-series, enterprise]
+pricing: paid
+is_open_source: false
+
+install_command: pip install kdbai-client
+
+problem_solved: |
+  Real-time AI applications — fraud detection, streaming recommendation, high-frequency
+  trading — need vector similarity search at sub-millisecond latency on constantly
+  updating data. Most vector databases are optimized for static or batch-ingested
+  datasets and struggle with real-time ingestion at scale. KDB.AI combines the kdb+
+  time-series engine with vector indexing to deliver low-latency similarity search on
+  streaming data without rebuilding indexes, serving financial services, IoT, and
+  other latency-sensitive domains.
+
+use_cases:
+  - Detect financial fraud in real-time by comparing transaction embeddings against known fraud patterns at millisecond latency
+  - Power streaming recommendation systems that update vector embeddings as user behavior data arrives
+  - Search high-frequency sensor data for anomaly patterns using similarity vectors on constantly updating time-series streams
+  - Build a real-time alerting system that matches incoming log embeddings against historical incident vectors
+  - Serve low-latency semantic search on market data, news feeds, and trade signals for quantitative analysis
