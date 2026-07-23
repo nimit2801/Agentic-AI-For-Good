@@ -1,0 +1,24 @@
+name: gRPC
+description: High-performance remote procedure call framework by Google that enables efficient communication between services using HTTP/2, Protocol Buffers, and bidirectional streaming. gRPC is the standard transport layer for production ML model serving, enabling low-latency inference at scale.
+tagline: High-performance RPC framework for microservices and model serving
+
+github_url: https://github.com/grpc/grpc
+website_url: https://grpc.io
+docs_url: https://grpc.io/docs
+install_command: pip install grpcio
+
+category: Dev Tools
+tags: [rpc, protocol-buffers, microservices, api, model-serving, http2, streaming]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Serving ML model predictions to production applications requires a transport protocol that balances latency, throughput, and type safety — traditional REST/JSON often adds parsing overhead and lacks built-in streaming for real-time use cases. gRPC solves this by using Protocol Buffers for strongly-typed schema definition and HTTP/2 for multiplexed, bidirectional streaming, enabling clients to send inference requests and receive streaming responses with lower latency and higher throughput than REST, while automatically generating client libraries in 11+ languages from a single .proto file.
+
+use_cases:
+  - Serve ML model predictions via gRPC endpoints with Protocol Buffer schemas for type-safe, low-latency inference
+  - Enable bidirectional streaming for real-time AI applications like speech recognition, video analysis, and chatbot conversations
+  - Generate multi-language client libraries from a single proto definition, enabling model consumption from Python, Go, Java, and more
+  - Implement server-side streaming for batch inference results and model health monitoring telemetry
+  - Build microservice-based AI pipelines where gRPC provides efficient service-to-service communication with deadline propagation and load balancing
