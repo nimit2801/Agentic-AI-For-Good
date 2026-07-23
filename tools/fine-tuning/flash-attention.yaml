@@ -1,37 +1,38 @@
-name: Flash Attention
-description: "Flash Attention is a fast and memory-efficient exact attention mechanism that dramatically accelerates transformer training and inference. It computes exact attention with IO-aware algorithms that minimize GPU memory reads and writes, enabling up to 4x faster training, 10x longer context windows, and significantly reduced memory usage compared to standard attention."
-tagline: Fast and memory-efficient exact attention for transformers
+name: FlashAttention
+description: A CUDA kernel library that makes attention compute dramatically faster and more memory-efficient. FlashAttention tiles attention computation across GPU SRAM instead of writing intermediate matrices to HBM, achieving 2-8x speedup and reducing memory from quadratic to linear in sequence length for LLM training and inference.
+tagline: Fast and memory-efficient exact attention for LLMs
 
 github_url: https://github.com/Dao-AILab/flash-attention
-website_url: https://tridao.me/publications/flash2/flash2.pdf
+website_url: https://github.com/Dao-AILab/flash-attention
 docs_url: https://github.com/Dao-AILab/flash-attention#readme
 
-install_command: "pip install flash-attn"
+install_command: pip install flash-attn
 
 category: Fine-tuning
 tags:
+  - pytorch
+  - cuda
   - attention
-  - transformer
+  - kernels
+  - gpu-optimization
   - training
   - inference
-  - gpu
-  - memory-efficient
-  - deep-learning
-  - llm
-  - optimization
 pricing: free
 is_open_source: true
 license: BSD-3-Clause
 
 problem_solved: |
-  Transformer models are bottlenecked by GPU memory bandwidth in their attention layers. Standard attention reads the
-  full attention matrix from HBM to SRAM, consuming O(N²) memory for sequence length N and making long-context training
-  prohibitively slow and memory-intensive. Flash Attention computes exact attention with sublinear I/O complexity by
-  tiling the attention computation across GPU SRAM and avoiding materialization of the full N² matrix, enabling
-  developers to train and fine-tune models with significantly longer sequences, lower memory usage, and faster throughput
-  while maintaining numerical exactness.
+  Standard attention mechanisms in Transformers compute the full N×N attention matrix and
+  write it to GPU HBM, consuming O(N²) memory and bandwidth. This makes long-context
+  training — crucial for tasks like document summarization, code analysis, and
+  retrieval-augmented generation — prohibitively expensive. FlashAttention tiles the
+  attention computation, never materializing the full attention matrix, and uses the
+  fast on-chip SRAM instead of slow global memory. The result is up to 8x faster training
+  and inference on long sequences with exact, not approximate, attention.
 
 use_cases:
-  - "Accelerate LLM pre-training by 2-4x with exact attention that reduces GPU memory bandwidth pressure during training"
-  - "Fine-tune and inference with 10x longer context windows by avoiding O(N²) memory growth in the attention layer"
-  - "Train and deploy transformer models on consumer GPUs that would otherwise run out of memory with standard attention"
+  - Train LLMs with 128K+ context windows without running out of GPU memory
+  - Speed up long-context inference for RAG pipelines processing large documents
+  - Enable fine-tuning of large models on consumer GPUs by reducing memory footprint
+  - Accelerate Transformer training by 2-8x with a drop-in attention replacement
+  - Support video understanding models that process hundreds of frame embeddings

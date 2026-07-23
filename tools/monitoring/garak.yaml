@@ -1,0 +1,36 @@
+name: Garak
+description: An open-source LLM vulnerability scanner that automatically probes generative AI models for security weaknesses — prompt injection, jailbreaking, data leakage, toxicity, and hallucination. Garak runs hundreds of probes against any LLM endpoint and generates structured security reports for compliance and remediation.
+tagline: Automated LLM vulnerability scanning and red teaming
+
+github_url: https://github.com/leondz/garak
+website_url: https://garak.ai
+docs_url: https://garak.readthedocs.io
+
+install_command: pip install garak
+
+category: Monitoring
+tags:
+  - llm-security
+  - vulnerability-scanning
+  - red-teaming
+  - prompt-injection
+  - jailbreak
+  - compliance
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  LLM applications introduce new security risks — prompt injection, jailbreaking, data
+  leakage — that traditional security tools don't detect. Security teams need a systematic
+  way to probe these vulnerabilities before deployment, but building a comprehensive test
+  suite manually is impractical. Garak automates this with a plugin architecture of
+  hundreds of probes covering known attack patterns, generating structured reports that
+  map to compliance frameworks. It can test any OpenAI-compatible endpoint.
+
+use_cases:
+  - Scan a new LLM endpoint for prompt injection and jailbreak vulnerabilities before launch
+  - Run continuous security testing as part of your ML model CI/CD pipeline
+  - Generate compliance reports documenting tested attack surfaces for SOC 2 and ISO 42001
+  - Evaluate whether a fine-tuned model retains safety guardrails from the base model
+  - Compare vulnerability profiles across different LLM providers during vendor selection
