@@ -1,0 +1,35 @@
+name: Prodigy
+description: A paid, human-in-the-loop annotation tool by the spaCy team (Explosion) for creating training data for machine learning models. Prodigy provides an active learning workflow where models suggest the most informative examples to annotate next, dramatically reducing the labeled data needed for NER, text classification, image annotation, and LLM fine-tuning.
+tagline: Active learning-powered data annotation by the spaCy team
+
+website_url: https://prodi.gy
+docs_url: https://prodi.gy/docs
+
+category: Data
+tags:
+  - annotation
+  - labeling
+  - active-learning
+  - spaCy
+  - training-data
+  - ner
+  - text-classification
+pricing: paid
+is_open_source: false
+license: Proprietary
+
+problem_solved: |
+  Creating high-quality labeled training data is the most expensive and time-consuming
+  step in building ML models. Traditional annotation tools label randomly, wasting effort
+  on examples the model already handles well. Prodigy uses active learning — the model
+  highlights uncertain predictions, and the annotator labels only those edge cases. This
+  reduces labeled data requirements by 50-80% while improving model quality. Prodigy is
+  built by the spaCy team and integrates deeply with spaCy pipelines, featuring keyboard-first
+  workflows, recipes for 50+ common annotation tasks, and a web-based annotation interface.
+
+use_cases:
+  - Build a custom NER training dataset with active learning to minimize labeled examples needed
+  - Annotate text classification examples by correcting model predictions rather than labeling from scratch
+  - Create training data for LLM fine-tuning by curating high-quality prompt-response pairs
+  - Label image classification data with bounding boxes and relationships for vision models
+  - Rapidly iterate on annotation recipes with live updates and instant model retraining
