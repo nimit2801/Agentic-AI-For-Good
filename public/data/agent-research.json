@@ -1,14 +1,15 @@
 {
-  "generatedAt": "2026-07-22T18:30:53Z",
+  "generatedAt": "2026-07-23T18:30:44Z",
   "windowDays": 7,
   "summary": "This cycle says major labs are packaging agent workflows for broader adoption (Gemini Spark, Codex mobile), Codex keeps expanding — mobile, enterprise, and deeper agent-loop engineering, the local/open-weight stack keeps getting stronger around Qwen-style setups. The deeper pattern is that agentic AI is being compressed, packaged, and made more inspectable at the same time.",
   "sourceStats": {
-    "items": 39,
+    "items": 43,
     "sources": {
-      "GitHub": 35,
+      "GitHub": 39,
       "Google DeepMind": 1,
-      "Hacker News": 2,
-      "Hugging Face": 1
+      "Hacker News": 1,
+      "Hugging Face": 1,
+      "OpenAI": 1
     }
   },
   "highlights": [
@@ -16,36 +17,49 @@
       "title": "Gemini 3.5 Flash Cyber",
       "source": "Google DeepMind",
       "url": "https://deepmind.google/blog/introducing-gemini-3-5-flash-cyber/",
-      "meta": "3 pts · 1 comments",
+      "meta": "4 pts · 1 comments",
       "topics": [
         "Major labs"
       ],
       "publishedAt": "2026-07-21T15:27:01Z",
-      "score": 159,
+      "score": 161,
       "summary": "",
       "why": "A frontier-level model at 4x speed parity reshapes the practical design space for agent builders overnight — faster inference directly enables more complex, multi-step agent loops."
     },
     {
-      "title": "Show HN: The0 – self-hosted runtime for trading bots, bring your own language",
-      "source": "Hacker News",
-      "url": "https://github.com/alexanderwanyoike/the0",
-      "meta": "18 pts · 4 comments",
+      "title": "NTT DATA Group cuts incident analysis to 30 minutes with Codex",
+      "url": "https://openai.com/index/ntt-data",
+      "publishedAt": "Wed, 22 Jul 2026 00:00:00 GMT",
+      "source": "OpenAI",
+      "meta": "Wed, 22 Jul 2026 00:00:00 GMT",
       "topics": [
         "Tool use",
-        "Memory and state",
+        "Major labs",
+        "Coding agents"
+      ],
+      "score": 180,
+      "summary": "NTT DATA Group cuts incident analysis to 30 minutes with Codex",
+      "why": "The strongest practical signal right now is still better tooling around how models call, sequence, and recover from actions."
+    },
+    {
+      "title": "Show HN: Qwen3.6-35B-A3B on a 16 GB M1 Pro with SSD-streamed MoE",
+      "source": "Hacker News",
+      "url": "https://github.com/andreaborio/ds4",
+      "meta": "23 pts · 4 comments",
+      "topics": [
         "Open weights",
         "Major labs"
       ],
-      "publishedAt": "2026-07-20T13:49:53Z",
-      "score": 103,
-      "summary": "So Im a solo developer who has always had an itch for algorithmic trading. Initially I started off learning how to trade algorithmically with Yves Hilpisch book \"Python for Algorithmic Trading\" after reading that book I was hooked and started building algorithmic trading bots. Initially these were separate python scripts that I ran on my local machine. That was a bad idea cause local machines are not reliable and I wanted to run my bots 24&#x2F;7 365. In my actual career im a software engineer with experience in building distributed systems and fault tolerant web applications. I wasn&#x27;t interested in deploying my code to managed services like MetaTrader, CTrader or QuantConnect etc because I wanted to have full control over my code and the environment it runs in. I also wanted to be able to run my bots in any programming language I wanted, not just Python. Sometimes I wanted to prototype a bot in Python and then rewrite it in C++ or Rust for performance reasons. Many at this point would have said why not use a framework like Lean or Freqtrade or Hummingbot. However I found that these frameworks were too opinionated and if you decide to use them then your bot is now part and parcel of their framework. I backtested my bots locally in my own specific way, and now with AI my agents can generate code, backtest and analyze the results all locally, no need to run any of it in the execution platform. I wanted bots I could deploy, version, update and monitor like any other software application. I also wanted to explore building something that creates a standardized way of running bots. This has been a 4 year journey and I made a lot of mistakes along the way. The application has seen 4 rearchitectures, 3 of which were basically complete rewrites. The first version was a python program and the bots were just modules that were loaded dynamically. The second was my serverless phase when I internally just wanted something that was online cron triggered and only works for me. The third was the first time I was dipping into kubernetes; more cloud native and the idiot in me decided to try make it a SaaS. The final form is a fully self-hosted runtime, api, cli and frontend that let you run bots as containers in a fault tolerant way both locally (through docker `the0 local`) and in a cluster (k8s) and monitor them with a minimalistic frontend. To support multiple languages there&#x27;s a thin contract that the bots have to implement: a main(bot_id, config) function and a bot-config.yaml file. The runtime (written in Go) takes care of the rest, it supports C++, Rust, Python, JS&#x2F;TS, C#, Scala and Haskell for those who are brave enough to try it. More on the architecture here: https:&#x2F;&#x2F;docs.the0.app&#x2F;runtime If you want to play with the0 you can run it locally, guide here: https:&#x2F;&#x2F;docs.the0.app&#x2F;deployment&#x2F;local-getting-started . The0 is open source and licensed under Apache-2.0: https:&#x2F;&#x2F;github.com&#x2F;alexanderwanyoike&#x2F;the0 I currently use the0 to run my own personal algorithmic trading bots on a single node k3s cluster on a $10&#x2F;month Hetzner VPS. I have 18 bots running on 2 brokers (Alpaca, Bybit) and they have been running for months without issues. Some bots trade crypto, others stocks, some do risk analysis and others invest. Coolest bit is the API provides an MCP server so AI agents can query the state of the bots, look at their logs, monitor them and even update them. Slap an OpenClaw agent and you can effectively setup an autonomous AI quantitative trading system (good luck chasing Alpha). Now I must admit Lean has all the tools and far more quantitative prowess than the0, but I always felt it does too much. Each Lean engine runs one algorithm, and once you have lots of bots, running and managing all of them in production is left to you. That&#x27;s the part the0 does, and its the only part it tries to do. If you find hiccups or have ideas for features Im all ears. More on the internals in my first comment.",
-      "why": "MCP keeps surfacing as the connective tissue for more grounded agent workflows — standard tool surfaces are still one of the cleanest leverage points in the stack."
+      "publishedAt": "2026-07-17T23:20:14Z",
+      "score": 128,
+      "summary": "",
+      "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
     },
     {
       "title": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
       "source": "Hugging Face",
       "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-      "meta": "310 likes · 62,842 downloads",
+      "meta": "377 likes · 334,847 downloads",
       "topics": [
         "Memory and state",
         "Open weights",
@@ -53,7 +67,7 @@
         "Coding agents"
       ],
       "publishedAt": "2026-07-17T00:27:17.000Z",
-      "score": 1302.842,
+      "score": 1842.847,
       "summary": "gguf unsloth fine tune heretic uncensored abliterated ara MTP GGUF Quants Regular GGUF Quants qwen3.6 multi-stage tuned thinking reasoning all use cases coder creative creative writing all genres story writing fiction roleplaying bfloat16 multi-stage-tune multi-state-merge image-text-to-text en zh dataset:DavidAU/Polar-STRICT-Datasets dataset:DavidAU/F451-STRICT-Datasets license:apache-2.0 endpoints_compatible region:us imatrix conversational",
       "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
     },
@@ -61,7 +75,7 @@
       "title": "google-gemini/gemini-cli",
       "source": "GitHub",
       "url": "https://github.com/google-gemini/gemini-cli",
-      "meta": "106130 stars · updated Wed, 22 Jul 2026 16:24:18 UTC",
+      "meta": "106143 stars · updated Thu, 23 Jul 2026 18:12:44 UTC",
       "topics": [
         "Tool use",
         "Open weights",
@@ -69,23 +83,25 @@
         "Coding agents"
       ],
       "publishedAt": "2025-04-17T17:04:31Z",
-      "score": 665518,
+      "score": 665602,
       "summary": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
       "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
     },
     {
-      "title": "Fei-Away/Codex-Dream-Skin",
+      "title": "LearningCircuit/local-deep-research",
       "source": "GitHub",
-      "url": "https://github.com/Fei-Away/Codex-Dream-Skin",
-      "meta": "11825 stars · updated Wed, 22 Jul 2026 17:10:03 UTC",
+      "url": "https://github.com/LearningCircuit/local-deep-research",
+      "meta": "8769 stars · updated Thu, 23 Jul 2026 08:55:58 UTC",
       "topics": [
         "Tool use",
-        "Coding agents"
+        "Evaluation",
+        "Open weights",
+        "Major labs"
       ],
-      "publishedAt": "2026-07-22T17:10:03Z",
-      "score": 73474,
-      "summary": "Codex Dream Skin",
-      "why": "The strongest practical signal right now is still better tooling around how models call, sequence, and recover from actions."
+      "publishedAt": "2025-02-09T15:41:32Z",
+      "score": 54262,
+      "summary": "~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all local and cloud LLMs (llama.cpp, Ollama, Google, ...). 10+ search engines - arXiv, PubMed, your private documents. Everything Local & Encrypted.",
+      "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
     }
   ],
   "sourceSections": [
@@ -94,15 +110,30 @@
       "label": "Major labs",
       "items": [
         {
+          "title": "NTT DATA Group cuts incident analysis to 30 minutes with Codex",
+          "url": "https://openai.com/index/ntt-data",
+          "publishedAt": "Wed, 22 Jul 2026 00:00:00 GMT",
+          "source": "OpenAI",
+          "meta": "Wed, 22 Jul 2026 00:00:00 GMT",
+          "topics": [
+            "Tool use",
+            "Major labs",
+            "Coding agents"
+          ],
+          "score": 180,
+          "summary": "NTT DATA Group cuts incident analysis to 30 minutes with Codex",
+          "why": "The strongest practical signal right now is still better tooling around how models call, sequence, and recover from actions."
+        },
+        {
           "title": "Gemini 3.5 Flash Cyber",
           "source": "Google DeepMind",
           "url": "https://deepmind.google/blog/introducing-gemini-3-5-flash-cyber/",
-          "meta": "3 pts · 1 comments",
+          "meta": "4 pts · 1 comments",
           "topics": [
             "Major labs"
           ],
           "publishedAt": "2026-07-21T15:27:01Z",
-          "score": 159,
+          "score": 161,
           "summary": "",
           "why": "A frontier-level model at 4x speed parity reshapes the practical design space for agent builders overnight — faster inference directly enables more complex, multi-step agent loops."
         }
@@ -125,22 +156,6 @@
           "score": 128,
           "summary": "",
           "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
-        },
-        {
-          "title": "Show HN: The0 – self-hosted runtime for trading bots, bring your own language",
-          "source": "Hacker News",
-          "url": "https://github.com/alexanderwanyoike/the0",
-          "meta": "18 pts · 4 comments",
-          "topics": [
-            "Tool use",
-            "Memory and state",
-            "Open weights",
-            "Major labs"
-          ],
-          "publishedAt": "2026-07-20T13:49:53Z",
-          "score": 103,
-          "summary": "So Im a solo developer who has always had an itch for algorithmic trading. Initially I started off learning how to trade algorithmically with Yves Hilpisch book \"Python for Algorithmic Trading\" after reading that book I was hooked and started building algorithmic trading bots. Initially these were separate python scripts that I ran on my local machine. That was a bad idea cause local machines are not reliable and I wanted to run my bots 24&#x2F;7 365. In my actual career im a software engineer with experience in building distributed systems and fault tolerant web applications. I wasn&#x27;t interested in deploying my code to managed services like MetaTrader, CTrader or QuantConnect etc because I wanted to have full control over my code and the environment it runs in. I also wanted to be able to run my bots in any programming language I wanted, not just Python. Sometimes I wanted to prototype a bot in Python and then rewrite it in C++ or Rust for performance reasons. Many at this point would have said why not use a framework like Lean or Freqtrade or Hummingbot. However I found that these frameworks were too opinionated and if you decide to use them then your bot is now part and parcel of their framework. I backtested my bots locally in my own specific way, and now with AI my agents can generate code, backtest and analyze the results all locally, no need to run any of it in the execution platform. I wanted bots I could deploy, version, update and monitor like any other software application. I also wanted to explore building something that creates a standardized way of running bots. This has been a 4 year journey and I made a lot of mistakes along the way. The application has seen 4 rearchitectures, 3 of which were basically complete rewrites. The first version was a python program and the bots were just modules that were loaded dynamically. The second was my serverless phase when I internally just wanted something that was online cron triggered and only works for me. The third was the first time I was dipping into kubernetes; more cloud native and the idiot in me decided to try make it a SaaS. The final form is a fully self-hosted runtime, api, cli and frontend that let you run bots as containers in a fault tolerant way both locally (through docker `the0 local`) and in a cluster (k8s) and monitor them with a minimalistic frontend. To support multiple languages there&#x27;s a thin contract that the bots have to implement: a main(bot_id, config) function and a bot-config.yaml file. The runtime (written in Go) takes care of the rest, it supports C++, Rust, Python, JS&#x2F;TS, C#, Scala and Haskell for those who are brave enough to try it. More on the architecture here: https:&#x2F;&#x2F;docs.the0.app&#x2F;runtime If you want to play with the0 you can run it locally, guide here: https:&#x2F;&#x2F;docs.the0.app&#x2F;deployment&#x2F;local-getting-started . The0 is open source and licensed under Apache-2.0: https:&#x2F;&#x2F;github.com&#x2F;alexanderwanyoike&#x2F;the0 I currently use the0 to run my own personal algorithmic trading bots on a single node k3s cluster on a $10&#x2F;month Hetzner VPS. I have 18 bots running on 2 brokers (Alpaca, Bybit) and they have been running for months without issues. Some bots trade crypto, others stocks, some do risk analysis and others invest. Coolest bit is the API provides an MCP server so AI agents can query the state of the bots, look at their logs, monitor them and even update them. Slap an OpenClaw agent and you can effectively setup an autonomous AI quantitative trading system (good luck chasing Alpha). Now I must admit Lean has all the tools and far more quantitative prowess than the0, but I always felt it does too much. Each Lean engine runs one algorithm, and once you have lots of bots, running and managing all of them in production is left to you. That&#x27;s the part the0 does, and its the only part it tries to do. If you find hiccups or have ideas for features Im all ears. More on the internals in my first comment.",
-          "why": "MCP keeps surfacing as the connective tissue for more grounded agent workflows — standard tool surfaces are still one of the cleanest leverage points in the stack."
         }
       ]
     },
@@ -157,7 +172,7 @@
           "title": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
           "source": "Hugging Face",
           "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-          "meta": "310 likes · 62,842 downloads",
+          "meta": "377 likes · 334,847 downloads",
           "topics": [
             "Memory and state",
             "Open weights",
@@ -165,7 +180,7 @@
             "Coding agents"
           ],
           "publishedAt": "2026-07-17T00:27:17.000Z",
-          "score": 1302.842,
+          "score": 1842.847,
           "summary": "gguf unsloth fine tune heretic uncensored abliterated ara MTP GGUF Quants Regular GGUF Quants qwen3.6 multi-stage tuned thinking reasoning all use cases coder creative creative writing all genres story writing fiction roleplaying bfloat16 multi-stage-tune multi-state-merge image-text-to-text en zh dataset:DavidAU/Polar-STRICT-Datasets dataset:DavidAU/F451-STRICT-Datasets license:apache-2.0 endpoints_compatible region:us imatrix conversational",
           "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
         }
@@ -179,7 +194,7 @@
           "title": "google-gemini/gemini-cli",
           "source": "GitHub",
           "url": "https://github.com/google-gemini/gemini-cli",
-          "meta": "106130 stars · updated Wed, 22 Jul 2026 16:24:18 UTC",
+          "meta": "106143 stars · updated Thu, 23 Jul 2026 18:12:44 UTC",
           "topics": [
             "Tool use",
             "Open weights",
@@ -187,29 +202,15 @@
             "Coding agents"
           ],
           "publishedAt": "2025-04-17T17:04:31Z",
-          "score": 665518,
+          "score": 665602,
           "summary": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
           "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
-        },
-        {
-          "title": "Fei-Away/Codex-Dream-Skin",
-          "source": "GitHub",
-          "url": "https://github.com/Fei-Away/Codex-Dream-Skin",
-          "meta": "11825 stars · updated Wed, 22 Jul 2026 17:10:03 UTC",
-          "topics": [
-            "Tool use",
-            "Coding agents"
-          ],
-          "publishedAt": "2026-07-22T17:10:03Z",
-          "score": 73474,
-          "summary": "Codex Dream Skin",
-          "why": "The strongest practical signal right now is still better tooling around how models call, sequence, and recover from actions."
         },
         {
           "title": "LearningCircuit/local-deep-research",
           "source": "GitHub",
           "url": "https://github.com/LearningCircuit/local-deep-research",
-          "meta": "8770 stars · updated Wed, 22 Jul 2026 08:51:51 UTC",
+          "meta": "8769 stars · updated Thu, 23 Jul 2026 08:55:58 UTC",
           "topics": [
             "Tool use",
             "Evaluation",
@@ -217,7 +218,7 @@
             "Major labs"
           ],
           "publishedAt": "2025-02-09T15:41:32Z",
-          "score": 54268,
+          "score": 54262,
           "summary": "~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all local and cloud LLMs (llama.cpp, Ollama, Google, ...). 10+ search engines - arXiv, PubMed, your private documents. Everything Local & Encrypted.",
           "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
         },
@@ -225,16 +226,30 @@
           "title": "MinishLab/semble",
           "source": "GitHub",
           "url": "https://github.com/MinishLab/semble",
-          "meta": "5680 stars · updated Wed, 22 Jul 2026 10:19:18 UTC",
+          "meta": "5688 stars · updated Wed, 22 Jul 2026 10:19:18 UTC",
           "topics": [
             "Tool use",
             "Evaluation",
             "Coding agents"
           ],
           "publishedAt": "2026-04-06T14:56:45Z",
-          "score": 34674,
+          "score": 34722,
           "summary": "Fast and Accurate Code Search for Agents. Uses ~98% fewer tokens than grep+read",
           "why": "This is a strong agent-engineering efficiency signal: giving coding agents semantic code search instead of grep-based token waste directly reduces cost and improves latency on every agent loop."
+        },
+        {
+          "title": "antoinezambelli/forge",
+          "source": "GitHub",
+          "url": "https://github.com/antoinezambelli/forge",
+          "meta": "2198 stars · updated Sat, 18 Jul 2026 16:44:16 UTC",
+          "topics": [
+            "Tool use",
+            "Multi-agent workflows"
+          ],
+          "publishedAt": "2026-02-16T16:59:06Z",
+          "score": 13776,
+          "summary": "A Python framework for self-hosted LLM tool-calling and multi-step agentic workflows",
+          "why": "The strongest practical signal right now is still better tooling around how models call, sequence, and recover from actions."
         }
       ]
     }
@@ -242,22 +257,22 @@
   "tangentRadar": [
     {
       "topic": "Coding agents",
-      "signalCount": 24,
+      "signalCount": 25,
       "whyItMatters": "The comment volume makes this a good proxy for what technically engaged builders think is worth paying attention to.",
       "signals": [
         "Hugging Face: DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-        "GitHub: Fei-Away/Codex-Dream-Skin",
+        "OpenAI: NTT DATA Group cuts incident analysis to 30 minutes with Codex",
         "GitHub: Vincentwei1021/video-shotcraft"
       ]
     },
     {
       "topic": "Tool use",
-      "signalCount": 22,
+      "signalCount": 25,
       "whyItMatters": "The strongest practical signal right now is still better tooling around how models call, sequence, and recover from actions.",
       "signals": [
-        "Hacker News: Show HN: The0 – self-hosted runtime for trading bots, bring your own language",
-        "GitHub: Fei-Away/Codex-Dream-Skin",
-        "GitHub: Vincentwei1021/video-shotcraft"
+        "OpenAI: NTT DATA Group cuts incident analysis to 30 minutes with Codex",
+        "GitHub: Vincentwei1021/video-shotcraft",
+        "GitHub: pireel/pireel"
       ]
     },
     {
@@ -266,38 +281,38 @@
       "whyItMatters": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate.",
       "signals": [
         "Hacker News: Show HN: Qwen3.6-35B-A3B on a 16 GB M1 Pro with SSD-streamed MoE",
-        "Hacker News: Show HN: The0 – self-hosted runtime for trading bots, bring your own language",
-        "Hugging Face: DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF"
+        "Hugging Face: DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+        "GitHub: pireel/pireel"
       ]
     },
     {
       "topic": "Interfaces",
-      "signalCount": 14,
+      "signalCount": 15,
       "whyItMatters": "Agent UX is moving beyond chat boxes — interface design is becoming part of the research frontier.",
       "signals": [
-        "GitHub: gakonst/nanocodex",
         "GitHub: duolahypercho/codex-router",
-        "GitHub: risa-labs-inc/BossConsole"
+        "GitHub: risa-labs-inc/BossConsole",
+        "GitHub: EndymionLee/PilotBrowseMCP"
       ]
     },
     {
       "topic": "Major labs",
-      "signalCount": 12,
+      "signalCount": 13,
       "whyItMatters": "Major lab launches still reshape the practical design space for agent builders almost overnight.",
       "signals": [
         "Google DeepMind: Gemini 3.5 Flash Cyber",
         "Hacker News: Show HN: Qwen3.6-35B-A3B on a 16 GB M1 Pro with SSD-streamed MoE",
-        "Hacker News: Show HN: The0 – self-hosted runtime for trading bots, bring your own language"
+        "Hugging Face: DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF"
       ]
     },
     {
       "topic": "Multi-agent workflows",
-      "signalCount": 6,
+      "signalCount": 9,
       "whyItMatters": "The comment volume makes this a good proxy for what technically engaged builders think is worth paying attention to.",
       "signals": [
+        "GitHub: Kritt-ai/open-kritt",
         "GitHub: cicialgo/rockycode",
-        "GitHub: MisterBooo/llm-interview-questions",
-        "GitHub: Zisky-ai/Luper"
+        "GitHub: MisterBooo/llm-interview-questions"
       ]
     }
   ],
