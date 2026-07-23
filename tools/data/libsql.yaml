@@ -1,0 +1,37 @@
+name: libSQL
+description: An open-source, open-contribution SQLite fork from Turso that adds vector search, replication, branching, and server-side capabilities. libSQL is compatible with the SQLite file format while extending it with features needed for modern AI applications — vector search, remote replication, read replicas, and a client-server protocol.
+tagline: Open-source SQLite fork with vector search and replication
+
+github_url: https://github.com/tursodatabase/libsql
+website_url: https://turso.tech/libsql
+docs_url: https://docs.turso.tech
+
+install_command: pip install libsql-client
+
+category: Data
+tags:
+  - database
+  - sqlite
+  - vector-search
+  - embedded
+  - serverless
+  - replication
+pricing: freemium
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  SQLite is the world's most deployed database but lacks features critical for AI
+  applications — no vector search for embeddings, no native replication, and no
+  client-server protocol. Building AI features on SQLite requires bolting on vector
+  indexing, replication layers, and custom networking. libSQL extends SQLite with
+  vector search (cosine, Euclidean, dot product), WASM-based user-defined functions,
+  snapshot-based replication, and a standalone server mode while maintaining full
+  SQLite compatibility.
+
+use_cases:
+  - Store and query AI embeddings alongside application data in a single embedded database
+  - Run a local vector database with SQLite compatibility for edge and mobile AI apps
+  - Deploy a replicated database cluster that syncs to on-device SQLite for offline-first AI
+  - Use libSQL as a drop-in replacement for SQLite with added vector search capabilities
+  - Build serverless AI backends with Turso's managed libSQL platform
