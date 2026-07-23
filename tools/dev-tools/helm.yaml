@@ -1,0 +1,24 @@
+name: Helm
+description: Kubernetes package manager for defining, installing, and upgrading complex Kubernetes applications. Helm charts encapsulate AI/ML deployment configurations — including model servers, vector databases, and monitoring stacks — into reusable, versioned packages that can be deployed with a single command.
+tagline: The package manager for Kubernetes
+
+github_url: https://github.com/helm/helm
+website_url: https://helm.sh
+docs_url: https://helm.sh/docs
+install_command: brew install helm
+
+category: Dev Tools
+tags: [kubernetes, package-manager, devops, deployment, charts, infrastructure, mlops]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Deploying complex AI/ML applications on Kubernetes involves managing dozens of interrelated resources — deployments, services, config maps, secrets, persistent volumes, and ingress rules — making manual management error-prone and hard to reproduce. Helm solves this by packaging Kubernetes resources into reusable charts with templated configuration, dependency management, and versioned releases, enabling teams to deploy a complete ML inference stack or a vector database cluster with a single helm install command and upgrade it predictably over time.
+
+use_cases:
+  - Deploy and upgrade complex ML inference stacks on Kubernetes with single-command helm install and rollback
+  - Package model serving configurations with Prometheus monitoring, GPU resource limits, and horizontal pod autoscaling as reusable charts
+  - Install vector databases, feature stores, and model registries from public Helm chart repositories with reproducible configurations
+  - Manage dependencies between AI infrastructure components — database, cache, model server, monitoring — as a unified Helm release
+  - Version-control AI deployment configurations using Chart.yaml, values files, and release history for audit and rollback
