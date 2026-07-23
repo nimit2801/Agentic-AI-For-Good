@@ -1,0 +1,24 @@
+name: Docker
+description: Industry-standard containerization platform for packaging, distributing, and running applications in isolated environments. Docker ensures consistency across development, testing, and production — making it the backbone of modern AI/ML infrastructure for reproducible model training and deployment.
+tagline: Build, share, and run containerized applications anywhere
+
+github_url: https://github.com/moby/moby
+website_url: https://www.docker.com
+docs_url: https://docs.docker.com
+install_command: pip install docker
+
+category: Dev Tools
+tags: [containers, devops, infrastructure, deployment, virtualization, ci-cd]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AI and ML teams face persistent environment reproducibility issues — models that train on one machine fail on another due to dependency mismatches, OS differences, or library version conflicts. Docker solves this by packaging applications with all their dependencies into lightweight, portable containers that run identically on any system, from a developer's laptop to a production Kubernetes cluster. This eliminates "it works on my machine" problems and enables reliable CI/CD pipelines for ML systems.
+
+use_cases:
+  - Containerize ML training environments with pinned dependencies for reproducible experiments across team members
+  - Package model serving APIs into portable containers for consistent deployment across staging, production, and edge
+  - Run isolated development environments for data science notebooks, databases, and vector stores without local installation
+  - Build multi-stage CI/CD pipelines that test, build, and push container images for automated ML workflows
+  - Orchestrate complex microservice-based AI applications combining model servers, caches, and data pipelines
