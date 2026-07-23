@@ -1,0 +1,24 @@
+name: Kubernetes
+description: Production-grade container orchestration platform for automating deployment, scaling, and management of containerized applications. Kubernetes provides the scheduling, service discovery, and self-healing infrastructure that powers large-scale AI/ML workloads across clusters of machines.
+tagline: Automate container deployment, scaling, and operations at scale
+
+github_url: https://github.com/kubernetes/kubernetes
+website_url: https://kubernetes.io
+docs_url: https://kubernetes.io/docs
+install_command: pip install kubernetes
+
+category: Dev Tools
+tags: [container-orchestration, devops, infrastructure, scaling, cloud-native, mlops]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Running AI/ML workloads at scale requires managing hundreds of interdependent containers across multiple machines — handling scheduling, resource allocation, load balancing, failover, and rolling updates manually is impractical. Kubernetes solves this by providing a declarative orchestration layer that automatically schedules containers onto cluster nodes, scales services up or down based on demand, restarts failed containers, and manages rollouts without downtime. It has become the de-facto standard for deploying production ML systems.
+
+use_cases:
+  - Deploy and scale model serving infrastructure across multiple nodes with automatic load balancing and failover
+  - Orchestrate distributed training jobs that span multiple GPUs and machines using custom resource definitions and job scheduling
+  - Manage ML platform microservices — model registries, feature stores, vector databases, and monitoring stacks — as a unified deployment
+  - Implement canary deployments and A/B testing for model versions with traffic splitting and gradual rollouts
+  - Run batch inference pipelines as Kubernetes Jobs with automated retry, resource limits, and parallel execution
