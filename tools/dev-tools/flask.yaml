@@ -1,0 +1,24 @@
+name: Flask
+description: Lightweight Python web framework designed for quick development of web APIs and applications. Flask's minimal core and extensive ecosystem of extensions make it the most widely used framework for wrapping ML models, providing inference endpoints, and building AI service backends.
+tagline: Lightweight Python web framework for APIs and web applications
+
+github_url: https://github.com/pallets/flask
+website_url: https://flask.palletsprojects.com
+docs_url: https://flask.palletsprojects.com
+install_command: pip install flask
+
+category: Dev Tools
+tags: [python, web-framework, api, backend, microservices, model-serving]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  AI/ML engineers often need to expose trained models as web APIs so applications, dashboards, and other services can use them — but building a full web framework from scratch is time-consuming and error-prone. Flask solves this by providing a simple, well-documented Python web framework that can wrap a model inference function into a REST endpoint in under 50 lines of code, with built-in development server, request routing, and support for popular extensions covering authentication, databases, and async processing.
+
+use_cases:
+  - Wrap ML model inference into REST APIs for serving predictions to web and mobile applications
+  - Build lightweight internal dashboards and data exploration tools with minimal front-end overhead
+  - Create webhook endpoints for triggering AI pipeline steps and model retraining jobs
+  - Develop prototype applications and proof-of-concept demos that demonstrate model capabilities
+  - Serve as the application backbone for small-to-medium data science tools with SQLAlchemy and other ORM extensions

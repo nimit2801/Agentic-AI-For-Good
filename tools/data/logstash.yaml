@@ -1,0 +1,24 @@
+name: Logstash
+description: Server-side data processing pipeline from Elastic that ingests, transforms, and ships data from multiple sources simultaneously. Logstash enables collecting logs, metrics, and application data from AI systems and routing them to Elasticsearch for analysis and visualization.
+tagline: Ingest, transform, and ship data to Elasticsearch and beyond
+
+github_url: https://github.com/elastic/logstash
+website_url: https://www.elastic.co/logstash
+docs_url: https://www.elastic.co/guide/en/logstash/current
+install_command: brew install logstash
+
+category: Data
+tags: [data-ingestion, etl, log-processing, data-pipeline, elastic, observability]
+pricing: free
+is_open_source: true
+license: Elastic-2.0
+
+problem_solved: |
+  AI systems generate massive amounts of log data from model servers, training jobs, data pipelines, and monitoring agents — but collecting, parsing, and routing this data to storage and analysis tools requires custom integration work for each source. Logstash solves this by providing a pluggable pipeline architecture with hundreds of input, filter, and output plugins that can ingest data from files, TCP/UDP, Kafka, and cloud services, transform it with grok patterns and enrichment, and ship it to Elasticsearch or dozens of other destinations.
+
+use_cases:
+  - Collect and parse application logs from ML model serving endpoints for performance monitoring and debugging
+  - Ingest training job metrics from distributed training frameworks and route them to visualization platforms
+  - Transform and enrich raw log data from AI pipeline components before storage in Elasticsearch or data lakes
+  - Aggregate monitoring data from multiple model deployment environments into a centralized observability platform
+  - Build real-time data pipelines that feed processed logs into alerting and anomaly detection systems
