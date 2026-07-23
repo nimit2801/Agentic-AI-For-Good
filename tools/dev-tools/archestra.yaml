@@ -1,0 +1,28 @@
+name: Archestra
+description: An enterprise AI platform with guardrails, MCP registry, AI gateway, and multi-agent orchestrator for deploying and managing production AI systems.
+tagline: Enterprise AI platform with MCP gateway and guardrails
+
+github_url: https://github.com/archestra-ai/archestra
+website_url: https://github.com/archestra-ai/archestra
+
+category: Dev Tools
+tags: [python, agents, mcp, gateway, guardrails, orchestrator, enterprise, a2a, acp, multi-agent]
+pricing: free
+is_open_source: true
+license: NOASSERTION
+
+problem_solved: |
+  Enterprises deploying AI face a sprawl of disconnected tools — multiple LLMs, MCP
+  servers, agent frameworks, guardrails, and observability systems — each with its own
+  API and management surface. Archestra unifies them into one platform with an AI
+  gateway for LLM routing, a built-in MCP registry for discovering and connecting MCP
+  servers, guardrails for safety policies, and a multi-agent orchestrator for complex
+  workflows. It runs on Docker, Kubernetes, or bare metal, giving IT teams a single
+  control plane for AI operations.
+
+use_cases:
+  - Deploy an enterprise AI gateway that routes requests across OpenAI, Anthropic, and local models with fallback and load balancing
+  - Register and manage 50+ MCP servers in a central registry, making them discoverable by all agents in the organization
+  - Enforce content safety guardrails across all AI interactions — block prompt injection, filter PII, and audit all requests
+  - Orchestrate a multi-agent customer service workflow where routing, triage, resolution, and escalation agents collaborate via MCP
+  - Build a centralized AI platform for IT operations that monitors usage, manages API keys, and provides audit trails for compliance
