@@ -1,0 +1,29 @@
+name: Mergoo
+description: A library for merging multiple fine-tuned LLM experts into a single model, enabling knowledge combination across domains without additional training data.
+tagline: Merge fine-tuned LLM experts into one powerful model
+
+github_url: https://github.com/Leeroo-AI/mergoo
+website_url: https://github.com/Leeroo-AI/mergoo
+
+category: Fine-tuning
+tags: [python, fine-tuning, llm, model-merging, ensemble, training]
+pricing: free
+is_open_source: true
+license: LGPL-3.0
+
+install_command: pip install mergoo
+
+problem_solved: |
+  Fine-tuning separate models for different domains creates a fragmentation problem —
+  teams maintain multiple LLM checkpoints for coding, writing, math, and domain-specific
+  tasks, duplicating infrastructure and degrading per-task performance. Mergoo combines
+  multiple fine-tuned expert models into a single merged model using techniques like
+  weight averaging and task-vector composition. The result preserves each expert's
+  strengths without requiring additional training data or compute.
+
+use_cases:
+  - Merge a code-specialized model with a writing-specialized model to get unified coding-and-documentation performance
+  - Combine domain-specific fine-tunes (legal, medical, finance) into one versatile enterprise model
+  - Average multiple RL-fine-tuned checkpoints to produce a more robust instruction-following model
+  - Compose task vectors from LoRA adapters to enable multi-task inference without separate deployments
+  - Merge a math reasoning expert with a general chat expert for an assistant that handles both logic and conversation

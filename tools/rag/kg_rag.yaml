@@ -1,0 +1,26 @@
+name: KG_RAG
+description: A knowledge graph-powered Retrieval-Augmented Generation framework that grounds LLM responses in structured domain knowledge for more accurate and explainable answers.
+tagline: Ground LLM responses in knowledge graphs for better accuracy
+
+github_url: https://github.com/BaranziniLab/KG_RAG
+website_url: https://github.com/BaranziniLab/KG_RAG
+
+category: RAG
+tags: [python, rag, knowledge-graph, llm, retrieval, biomedical, graph-rag]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Standard RAG retrieves flat text chunks that often lack relational context, leading to
+  shallow or factually incomplete answers. KG_RAG bridges knowledge graphs with LLMs by
+  querying structured graph data first, then feeding the extracted relational context to
+  the LLM. This grounds responses in verifiable entity-relationship triples rather than
+  loose semantic similarity, improving accuracy on domain-specific questions.
+
+use_cases:
+  - Build a biomedical research assistant that answers clinical questions using structured knowledge from ontologies
+  - Create an enterprise FAQ system grounded in a company's internal knowledge graph of products, policies, and procedures
+  - Enhance a legal document review pipeline by retrieving entity relationships from case law knowledge graphs
+  - Power a scientific literature agent that traces concept relationships across papers via graph-based retrieval
+  - Deploy a customer support RAG system that resolves queries by traversing product and service relationship graphs
