@@ -1,0 +1,20 @@
+name: AutoRound
+tagline: Intel's advanced LLM weight quantization library
+description: AutoRound is Intel's advanced weight quantization library for LLMs that performs sign-optimized rounding for low-bit quantization down to 4-bit and 3-bit. It automatically optimizes weight rounding to minimize accuracy loss during quantization, achieving state-of-the-art results on models like LLaMA, Mistral, and Qwen — with support for various formats including INT4, FP4, and INT3.
+website_url: https://github.com/intel/auto-round
+github_url: https://github.com/intel/auto-round
+docs_url: https://github.com/intel/auto-round/blob/main/README.md
+install_command: pip install auto-round
+category: Fine-tuning
+tags: [quantization, model-compression, int4, optimization, llm, weights, inference-optimization]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: |
+  Deploying large language models at scale requires significant GPU memory and compute, and naive quantization often degrades model quality significantly — especially at aggressive bit-widths like 4-bit and 3-bit. AutoRound solves this by using sign-optimized rounding to find the optimal weight rounding direction for each parameter, achieving substantially better accuracy than standard round-to-nearest quantization across model families and bit-widths.
+use_cases:
+  - "Model compression: quantize LLMs to 4-bit, 3-bit, or even 2-bit precision while preserving accuracy through optimized weight rounding"
+  - "Production deployment: reduce GPU memory requirements for serving LLMs by 4x or more without sacrificing output quality"
+  - "Accuracy-aware quantization: automatically compare quantization strategies and select the optimal rounding for each layer to minimize perplexity degradation"
+  - "Multi-model support: quantize LLaMA, Mistral, Qwen, Falcon, and other popular model families with consistent quality results"
+  - "Custom bit-widths: experiment with non-standard quantization configurations including INT4, FP4, INT3, and mixed-precision schemes"

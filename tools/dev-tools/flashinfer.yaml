@@ -1,0 +1,20 @@
+name: FlashInfer
+tagline: GPU kernel library for LLM inference and serving
+description: FlashInfer is a high-performance GPU kernel library optimized for LLM inference and serving workloads. It provides optimized implementations of attention mechanisms (including FlashAttention, MLA, and sparse attention), state-space model kernels, and other GPU primitives that accelerate transformer inference — delivering significant speedups for production LLM serving systems.
+website_url: https://flashinfer.ai
+github_url: https://github.com/flashinfer-ai/flashinfer
+docs_url: https://docs.flashinfer.ai
+install_command: pip install flashinfer-python
+category: Dev Tools
+tags: [gpu-kernels, inference, llm, attention, cuda, optimization, serving, deep-learning]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: |
+  Transformer inference on GPUs is bottlenecked by attention computation, memory bandwidth, and suboptimal kernel implementations — especially for long contexts and production serving with batching. FlashInfer solves this by providing highly optimized, fused GPU kernels for attention, state-space models, and related primitives that minimize memory reads, maximize compute utilization, and deliver 2-5x speedups over naive implementations for LLM inference.
+use_cases:
+  - "Accelerate inference: replace standard attention with FlashInfer's fused kernels to achieve 2-5x speedups in LLM generation throughput"
+  - "Long context support: efficiently compute attention for sequences up to 128K+ tokens with optimized memory access patterns and sparse attention support"
+  - "Production serving: integrate with vLLM, SGLang, and other serving frameworks to speed up batched inference for deployed LLMs"
+  - "Multi-head latent attention: leverage FlashInfer's MLA kernel support for DeepSeek-v2 and similar architectures with reduced KV cache requirements"
+  - "Custom kernel development: build on FlashInfer's kernel primitives to create custom attention variants without writing low-level CUDA code"
