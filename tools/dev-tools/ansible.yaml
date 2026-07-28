@@ -1,0 +1,29 @@
+name: Ansible
+description: Red Hat's open-source IT automation platform for configuration management, application deployment, and infrastructure provisioning — widely used to orchestrate ML infrastructure at scale.
+tagline: Simple, agentless IT automation for ML infrastructure
+github_url: https://github.com/ansible/ansible
+docs_url: https://docs.ansible.com
+
+category: Dev Tools
+tags: [automation, configuration-management, devops, infrastructure, orchestration]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Managing ML infrastructure — GPU servers, model serving clusters, data pipelines,
+  and experiment tracking environments — requires consistent, repeatable configuration
+  across potentially hundreds of machines. Ansible provides agentless automation using
+  SSH and YAML playbooks, making it easy to provision GPU drivers, configure CUDA
+  libraries, deploy ML serving containers, and manage experiment tracking
+  infrastructure without installing agents on target hosts. Its push-based model
+  and idempotent operations make it ideal for teams that need infrastructure
+  reproducibility but aren't ready for full Kubernetes adoption.
+
+use_cases:
+  - Provision GPU servers with CUDA, cuDNN, NCCL, and container runtimes for ML training
+  - Deploy and configure ML serving infrastructure (Triton, MLflow, BentoML) across clusters
+  - Automate experiment tracking environment setup with W&B, MLflow, or Neptune agents
+  - Manage multi-node Ray clusters for distributed training and hyperparameter tuning
+
+install_command: pip install ansible

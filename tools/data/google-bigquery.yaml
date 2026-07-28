@@ -1,0 +1,28 @@
+name: Google BigQuery
+description: Google Cloud's serverless, highly scalable data warehouse with built-in ML capabilities (BigQuery ML) that lets you train and run models using SQL queries on petabyte-scale datasets.
+tagline: Serverless data warehouse with built-in machine learning
+website_url: https://cloud.google.com/bigquery
+docs_url: https://cloud.google.com/bigquery/docs
+
+category: Data
+tags: [data-warehouse, analytics, sql, big-data, google-cloud, serverless]
+pricing: paid
+is_open_source: false
+
+problem_solved: |
+  Training ML models on large datasets traditionally requires moving data out of
+  a data warehouse into a separate ML environment, incurring ETL costs and latency.
+  BigQuery ML eliminates this by supporting model training directly in SQL — CREATE
+  MODEL statements that train linear regression, logistic regression, matrix
+  factorization, time series, and imported TensorFlow models without data export.
+  Combined with BigQuery's serverless architecture, analysts can train models on
+  terabytes of data using familiar SQL syntax, and data scientists can query
+  feature stores and inference results without managing infrastructure.
+
+use_cases:
+  - Train ML models directly on petabyte-scale data using SQL without data movement
+  - Build and serve real-time ML inference pipelines using BigQuery ML models
+  - Analyze feature distributions and perform exploratory data analysis on large datasets
+  - Create materialized feature views for training and serving in production ML systems
+
+install_command: pip install google-cloud-bigquery

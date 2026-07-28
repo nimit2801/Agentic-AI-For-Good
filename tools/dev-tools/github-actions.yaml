@@ -1,0 +1,25 @@
+name: GitHub Actions
+description: GitHub's built-in CI/CD and automation platform that lets you build, test, and deploy ML models directly from your GitHub repositories using YAML-based workflow files.
+tagline: CI/CD and automation natively integrated with GitHub
+website_url: https://github.com/features/actions
+docs_url: https://docs.github.com/en/actions
+
+category: Dev Tools
+tags: [ci-cd, automation, devops, testing, deployment, github]
+pricing: freemium
+is_open_source: false
+
+problem_solved: |
+  ML teams need automated pipelines to train, test, and deploy models every time
+  code changes, but setting up separate CI infrastructure requires managing runners,
+  secrets, and integrations. GitHub Actions provides event-driven workflows that run
+  directly in your GitHub repository — triggered on push, PR, schedule, or any webhook.
+  With built-in matrix testing, GPU runners for model training, artifact storage for
+  model checkpoints, and 20,000+ community actions for ML-specific tasks (setup Python,
+  deploy to Hugging Face, run DVC), it eliminates the need for an external CI system.
+
+use_cases:
+  - Automate model training, evaluation, and deployment workflows triggered by code pushes
+  - Run matrix tests across Python versions, dependencies, and model configurations in parallel
+  - Schedule nightly regression tests for model accuracy and data drift detection
+  - Deploy model artifacts to Hugging Face Hub, cloud storage, or container registries on release
