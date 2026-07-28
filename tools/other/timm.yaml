@@ -1,0 +1,24 @@
+name: timm
+description: "A PyTorch image models library (timm) providing 700+ pretrained computer vision architectures including ConvNets (ResNet, ConvNeXt), Vision Transformers (ViT, DeiT, Swin), hybrid models (EfficientNet, MobileNet), and modern architectures (MaxViT, ConvNeXt-V2, MetaFormer) with optimized training recipes, data augmentations, and a unified model factory interface."
+tagline: "700+ pretrained PyTorch vision models"
+github_url: https://github.com/huggingface/pytorch-image-models
+website_url: https://huggingface.co/timm
+docs_url: https://timm.fast.ai
+install_command: "pip install timm"
+category: Other
+tags:
+  - computer-vision
+  - pretrained-models
+  - pytorch
+  - image-classification
+  - vision-transformer
+  - transfer-learning
+  - deep-learning
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Computer vision practitioners need access to hundreds of pretrained model architectures for transfer learning, benchmarking, and production deployment — but each model family (ResNet, ViT, ConvNeXt, EfficientNet) has its own codebase, loading conventions, and preprocessing requirements, making it tedious to compare architectures or swap backbones. timm provides a unified Model.create() and create_model() interface to 700+ pretrained models with consistent weight loading, preprocessing pipelines, and training recipes — enabling researchers and engineers to rapidly benchmark architectures, extract features for downstream tasks, and deploy optimized Vision Transformers or ConvNets without managing separate model repositories."
+use_cases:
+  - "Fine-tune a Vision Transformer (ViT, DeiT, Swin) or ConvNet (ConvNeXt, ResNet, EfficientNet) for custom image classification using timm's built-in training scripts and data augmentations"
+  - "Extract feature embeddings from pretrained vision models for image retrieval, similarity search, and zero-shot classification pipelines"
+  - "Benchmark and compare dozens of model architectures on a target dataset using a consistent API, learning rate schedule, and augmentation pipeline"

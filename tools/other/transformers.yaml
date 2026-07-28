@@ -1,0 +1,25 @@
+name: Transformers
+description: "Hugging Face Transformers is the de-facto standard library for state-of-the-art natural language processing, computer vision, audio, and multimodal models. It provides thousands of pretrained transformer architectures (BERT, GPT, Llama, CLIP, Whisper, DETR, and more) through a unified API with model hub integration, tokenizers, training utilities, and ONNX/TensorRT export."
+tagline: "State-of-the-art pretrained models for NLP, CV, audio, and multimodal AI"
+github_url: https://github.com/huggingface/transformers
+website_url: https://huggingface.co/docs/transformers
+docs_url: https://huggingface.co/docs/transformers/index
+install_command: "pip install transformers"
+category: Other
+tags:
+  - nlp
+  - computer-vision
+  - audio-processing
+  - multimodal
+  - pretrained-models
+  - model-hub
+  - deep-learning
+  - python
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Applying state-of-the-art transformer models for NLP, vision, and audio tasks typically requires implementing complex architectures from scratch, managing separate model-specific codebases, and handling differences in tokenization, batching, and inference across models. Transformers provides a unified, framework-agnostic API to thousands of pretrained models — from BERT and GPT to Llama, CLIP, Whisper, and more — with automatic model downloads via the Hugging Face Hub, consistent input/output conventions, and built-in training, evaluation, and export utilities. This lets practitioners iterate on model selection and fine-tuning in minutes instead of days."
+use_cases:
+  - "Fine-tune large language models (Llama, GPT, Mistral) for text generation, classification, and summarization using the built-in Trainer API with mixed-precision and distributed training"
+  - "Run zero-shot image classification, object detection, and segmentation using pretrained vision transformers (ViT, DETR, SegFormer) with a single pipeline API"
+  - "Transcribe and translate audio with pretrained speech models (Whisper, Wav2Vec2) and align text-to-speech outputs using unified encoder-decoder pipelines"
