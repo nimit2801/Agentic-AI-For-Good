@@ -1,0 +1,27 @@
+name: Apache Hive
+description: A distributed data warehouse infrastructure built on Hadoop that provides SQL-like querying (HiveQL) for petabyte-scale datasets used in ML feature engineering and analytics.
+tagline: SQL-on-Hadoop data warehouse for big data analytics
+github_url: https://github.com/apache/hive
+website_url: https://hive.apache.org
+docs_url: https://cwiki.apache.org/confluence/display/Hive
+
+category: Data
+tags: [data-warehouse, sql, big-data, hadoop, apache, analytics]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  ML feature engineering on petabyte-scale clickstream, log, and behavioral data
+  requires SQL-like query capabilities that traditional databases cannot handle.
+  Hive translates SQL queries into MapReduce, Tez, or Spark jobs that run across
+  Hadoop clusters, enabling data scientists to extract, aggregate, and transform
+  massive datasets using familiar SQL syntax. Its ACID support, partition pruning,
+  and ORC/Parquet columnar storage make it practical for building training datasets
+  and feature tables from web-scale event data without custom MapReduce code.
+
+use_cases:
+  - Extract and aggregate training datasets from petabyte-scale clickstream and log data
+  - Build feature tables for ML models using SQL transformations on Hadoop clusters
+  - Run ad-hoc analytical queries on large-scale behavioral datasets for feature discovery
+  - Create partitioned, columnar-format training data for distributed ML training jobs

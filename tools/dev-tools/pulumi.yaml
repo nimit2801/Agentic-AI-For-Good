@@ -1,0 +1,30 @@
+name: Pulumi
+description: An infrastructure-as-code platform that lets ML teams define cloud infrastructure — GPU clusters, model serving endpoints, data pipelines — using familiar programming languages like Python, TypeScript, and Go.
+tagline: Infrastructure as code in real programming languages
+github_url: https://github.com/pulumi/pulumi
+website_url: https://pulumi.com
+docs_url: https://www.pulumi.com/docs
+
+category: Dev Tools
+tags: [infrastructure-as-code, cloud, devops, automation, terraform-alternative, python]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Provisioning ML infrastructure — GPU instances, vector databases, model serving
+  endpoints, and data pipelines — typically requires either clicking through cloud
+  consoles or learning HCL (Terraform's domain-specific language). Pulumi lets ML
+  teams define infrastructure using standard programming languages they already know,
+  enabling loops, conditionals, functions, and shared libraries. A Python-trained
+  team can define their training cluster, model registry, and serving infrastructure
+  in Python with full IDE support, unit testing, and package management — without
+  learning a new configuration language.
+
+use_cases:
+  - Provision GPU training clusters with spot instances, auto-scaling, and persistent storage
+  - Deploy vector database instances (Pinecone, Qdrant, Weaviate) as infrastructure-as-code
+  - Define and deploy model serving stacks with load balancers, TLS, and monitoring
+  - Manage multi-cloud ML infrastructure (AWS+Azure+GCP) from a single codebase
+
+install_command: brew install pulumi
