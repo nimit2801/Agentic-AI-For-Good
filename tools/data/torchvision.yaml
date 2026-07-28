@@ -1,0 +1,28 @@
+name: TorchVision
+description: PyTorch's official domain library for computer vision, offering datasets, model architectures, and image transformations that integrate seamlessly with PyTorch tensors and data loaders.
+tagline: Computer vision datasets, transforms, and models for PyTorch
+github_url: https://github.com/pytorch/vision
+docs_url: https://pytorch.org/vision
+
+category: Data
+tags: [pytorch, computer-vision, datasets, image-classification, object-detection, deep-learning]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Building computer vision models requires curated datasets, standardized
+  preprocessing pipelines, and pretrained model backbones — all of which are
+  tedious to assemble from scratch. TorchVision provides a single entry point for
+  popular CV datasets (ImageNet, COCO, CIFAR), composable image transforms
+  (resize, crop, normalize, augment), and pretrained models (ResNet, ViT, YOLO,
+  Mask R-CNN). It eliminates the boilerplate of downloading, parsing, and
+  transforming CV data before it reaches a PyTorch model.
+
+use_cases:
+  - Load and preprocess standard vision datasets for training classification and detection models
+  - Apply composable image transforms for data augmentation during model training
+  - Fine-tune pretrained vision backbones (ResNet, ViT, EfficientNet) on custom datasets
+  - Evaluate model performance on standardized vision benchmarks
+
+install_command: pip install torchvision

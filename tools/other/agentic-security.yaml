@@ -1,0 +1,29 @@
+name: Agentic Security
+description: An open-source LLM vulnerability scanner and red-teaming toolkit that systematically probes AI agents for prompt injection, jailbreaking, data leakage, and other security risks using automated attack payloads.
+tagline: Open-source LLM vulnerability scanner and red-teaming kit
+github_url: https://github.com/msoedov/agentic_security
+website_url: https://agentic-security.ai
+docs_url: https://github.com/msoedov/agentic_security#readme
+
+category: Other
+tags: [security, red-teaming, llm, prompt-injection, vulnerability-scanner, testing]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  As organizations deploy LLM-powered agents in production, they face novel attack
+  surfaces — prompt injection, jailbreaking, data exfiltration via generated output
+  — that traditional security scanners miss. Agentic Security automates red-teaming
+  of AI agents by running curated attack payloads against agent endpoints, detecting
+  whether the agent follows malicious instructions, leaks sensitive data, or bypasses
+  its system prompt. It gives security teams a repeatable, CI-integratable method
+  to assess LLM agent robustness before deployment.
+
+use_cases:
+  - Automate red-teaming of LLM agents in CI/CD pipelines before production deployment
+  - Test agent resilience against prompt injection, jailbreak, and role-playing attacks
+  - Benchmark security posture across different LLM providers and prompt configurations
+  - Generate compliance evidence for AI safety evaluations
+
+install_command: pip install agentic_security

@@ -1,0 +1,27 @@
+name: Pillow
+description: The modern fork of PIL (Python Imaging Library) providing comprehensive image processing capabilities including opening, manipulating, and saving numerous image formats with a simple Python API.
+tagline: Python Imaging Library — fork edition
+github_url: https://github.com/python-pillow/Pillow
+docs_url: https://pillow.readthedocs.io
+
+category: Data
+tags: [python, image-processing, computer-vision, data-preprocessing, library]
+pricing: free
+is_open_source: true
+license: Historical Permission Notice and Disclaimer
+
+problem_solved: |
+  AI and ML pipelines frequently need to load, transform, resize, and augment images
+  before feeding them into models — but raw image file handling is complex across
+  dozens of formats. Pillow provides a unified, battle-tested interface for every
+  common image format (PNG, JPEG, TIFF, WebP, BMP, GIF), handling format detection,
+  color-space conversion, EXIF metadata, and pixel-level operations. Without it,
+  every ML project would need to reimplement format-specific image I/O.
+
+use_cases:
+  - Preprocess and augment images for computer vision model training pipelines
+  - Convert between image formats and resize batches for dataset standardization
+  - Extract EXIF metadata and perform color corrections on source imagery
+  - Generate thumbnails, composite images, and visual annotations for ML evaluation
+
+install_command: pip install Pillow
