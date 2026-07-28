@@ -1,30 +1,31 @@
 {
-  "generatedAt": "2026-07-23T18:30:44Z",
+  "generatedAt": "2026-07-28T19:04:28Z",
   "windowDays": 7,
-  "summary": "This cycle says major labs are packaging agent workflows for broader adoption (Gemini Spark, Codex mobile), Codex keeps expanding — mobile, enterprise, and deeper agent-loop engineering, the local/open-weight stack keeps getting stronger around Qwen-style setups. The deeper pattern is that agentic AI is being compressed, packaged, and made more inspectable at the same time.",
+  "summary": "This cycle says major labs are packaging agent workflows for broader adoption (Gemini Spark, Codex mobile), Codex keeps expanding — mobile, enterprise, and deeper agent-loop engineering, MCP tunnels and self-hosted sandboxes unlock enterprise agent deployments. The deeper pattern is that agentic AI is being compressed, packaged, and made more inspectable at the same time.",
   "sourceStats": {
-    "items": 43,
+    "items": 44,
     "sources": {
-      "GitHub": 39,
-      "Google DeepMind": 1,
+      "GitHub": 40,
+      "Google AI": 1,
       "Hacker News": 1,
-      "Hugging Face": 1,
-      "OpenAI": 1
+      "OpenAI": 2
     }
   },
   "highlights": [
     {
-      "title": "Gemini 3.5 Flash Cyber",
-      "source": "Google DeepMind",
-      "url": "https://deepmind.google/blog/introducing-gemini-3-5-flash-cyber/",
-      "meta": "4 pts · 1 comments",
+      "title": "Gemini API Managed Agents: 3.6 Flash, hooks, and more",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/",
+      "publishedAt": "Tue, 28 Jul 2026 16:00:00 +0000",
+      "source": "Google AI",
+      "meta": "Tue, 28 Jul 2026 16:00:00 GMT",
       "topics": [
-        "Major labs"
+        "Tool use",
+        "Major labs",
+        "Coding agents"
       ],
-      "publishedAt": "2026-07-21T15:27:01Z",
-      "score": 161,
-      "summary": "",
-      "why": "A frontier-level model at 4x speed parity reshapes the practical design space for agent builders overnight — faster inference directly enables more complex, multi-step agent loops."
+      "score": 180,
+      "summary": "Gemini API Managed Agents: 3.6 Flash, hooks, and more",
+      "why": "A managed agent that spins up from one API call is the clearest sign yet that agent infrastructure is being productized as a deployable platform, not a DIY framework."
     },
     {
       "title": "NTT DATA Group cuts incident analysis to 30 minutes with Codex",
@@ -42,40 +43,34 @@
       "why": "The strongest practical signal right now is still better tooling around how models call, sequence, and recover from actions."
     },
     {
-      "title": "Show HN: Qwen3.6-35B-A3B on a 16 GB M1 Pro with SSD-streamed MoE",
-      "source": "Hacker News",
-      "url": "https://github.com/andreaborio/ds4",
-      "meta": "23 pts · 4 comments",
+      "title": "Scientific computing in the age of agentic AI",
+      "url": "https://openai.com/index/scientific-computing-agentic-ai",
+      "publishedAt": "Tue, 28 Jul 2026 17:00:00 GMT",
+      "source": "OpenAI",
+      "meta": "Tue, 28 Jul 2026 17:00:00 GMT",
       "topics": [
-        "Open weights",
         "Major labs"
       ],
-      "publishedAt": "2026-07-17T23:20:14Z",
-      "score": 128,
-      "summary": "",
-      "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
+      "score": 180,
+      "summary": "Scientific computing in the age of agentic AI",
+      "why": "Major lab launches still reshape the practical design space for agent builders almost overnight."
     },
     {
-      "title": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-      "source": "Hugging Face",
-      "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-      "meta": "377 likes · 334,847 downloads",
-      "topics": [
-        "Memory and state",
-        "Open weights",
-        "Major labs",
-        "Coding agents"
-      ],
-      "publishedAt": "2026-07-17T00:27:17.000Z",
-      "score": 1842.847,
-      "summary": "gguf unsloth fine tune heretic uncensored abliterated ara MTP GGUF Quants Regular GGUF Quants qwen3.6 multi-stage tuned thinking reasoning all use cases coder creative creative writing all genres story writing fiction roleplaying bfloat16 multi-stage-tune multi-state-merge image-text-to-text en zh dataset:DavidAU/Polar-STRICT-Datasets dataset:DavidAU/F451-STRICT-Datasets license:apache-2.0 endpoints_compatible region:us imatrix conversational",
-      "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
+      "title": "Show HN: AgentNest, self-hosted sandboxes for AI agents",
+      "source": "Hacker News",
+      "url": "https://github.com/mihirahuja1/agentnestOSS",
+      "meta": "12 pts · 2 comments",
+      "topics": [],
+      "publishedAt": "2026-07-23T01:54:06Z",
+      "score": 125,
+      "summary": "",
+      "why": "Self-hosted sandboxes and MCP tunnels solve the enterprise 'my data in your sandbox' blocker that has been the single biggest friction point for production agent deployments."
     },
     {
       "title": "google-gemini/gemini-cli",
       "source": "GitHub",
       "url": "https://github.com/google-gemini/gemini-cli",
-      "meta": "106143 stars · updated Thu, 23 Jul 2026 18:12:44 UTC",
+      "meta": "106219 stars · updated Tue, 28 Jul 2026 17:26:18 UTC",
       "topics": [
         "Tool use",
         "Open weights",
@@ -83,7 +78,7 @@
         "Coding agents"
       ],
       "publishedAt": "2025-04-17T17:04:31Z",
-      "score": 665602,
+      "score": 666116,
       "summary": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
       "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
     },
@@ -91,7 +86,7 @@
       "title": "LearningCircuit/local-deep-research",
       "source": "GitHub",
       "url": "https://github.com/LearningCircuit/local-deep-research",
-      "meta": "8769 stars · updated Thu, 23 Jul 2026 08:55:58 UTC",
+      "meta": "8799 stars · updated Tue, 28 Jul 2026 03:33:59 UTC",
       "topics": [
         "Tool use",
         "Evaluation",
@@ -99,7 +94,7 @@
         "Major labs"
       ],
       "publishedAt": "2025-02-09T15:41:32Z",
-      "score": 54262,
+      "score": 54464,
       "summary": "~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all local and cloud LLMs (llama.cpp, Ollama, Google, ...). 10+ search engines - arXiv, PubMed, your private documents. Everything Local & Encrypted.",
       "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
     }
@@ -109,6 +104,19 @@
       "key": "major-labs",
       "label": "Major labs",
       "items": [
+        {
+          "title": "Scientific computing in the age of agentic AI",
+          "url": "https://openai.com/index/scientific-computing-agentic-ai",
+          "publishedAt": "Tue, 28 Jul 2026 17:00:00 GMT",
+          "source": "OpenAI",
+          "meta": "Tue, 28 Jul 2026 17:00:00 GMT",
+          "topics": [
+            "Major labs"
+          ],
+          "score": 180,
+          "summary": "Scientific computing in the age of agentic AI",
+          "why": "Major lab launches still reshape the practical design space for agent builders almost overnight."
+        },
         {
           "title": "NTT DATA Group cuts incident analysis to 30 minutes with Codex",
           "url": "https://openai.com/index/ntt-data",
@@ -125,17 +133,19 @@
           "why": "The strongest practical signal right now is still better tooling around how models call, sequence, and recover from actions."
         },
         {
-          "title": "Gemini 3.5 Flash Cyber",
-          "source": "Google DeepMind",
-          "url": "https://deepmind.google/blog/introducing-gemini-3-5-flash-cyber/",
-          "meta": "4 pts · 1 comments",
+          "title": "Gemini API Managed Agents: 3.6 Flash, hooks, and more",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/",
+          "publishedAt": "Tue, 28 Jul 2026 16:00:00 +0000",
+          "source": "Google AI",
+          "meta": "Tue, 28 Jul 2026 16:00:00 GMT",
           "topics": [
-            "Major labs"
+            "Tool use",
+            "Major labs",
+            "Coding agents"
           ],
-          "publishedAt": "2026-07-21T15:27:01Z",
-          "score": 161,
-          "summary": "",
-          "why": "A frontier-level model at 4x speed parity reshapes the practical design space for agent builders overnight — faster inference directly enables more complex, multi-step agent loops."
+          "score": 180,
+          "summary": "Gemini API Managed Agents: 3.6 Flash, hooks, and more",
+          "why": "A managed agent that spins up from one API call is the clearest sign yet that agent infrastructure is being productized as a deployable platform, not a DIY framework."
         }
       ]
     },
@@ -144,18 +154,15 @@
       "label": "Hacker News",
       "items": [
         {
-          "title": "Show HN: Qwen3.6-35B-A3B on a 16 GB M1 Pro with SSD-streamed MoE",
+          "title": "Show HN: AgentNest, self-hosted sandboxes for AI agents",
           "source": "Hacker News",
-          "url": "https://github.com/andreaborio/ds4",
-          "meta": "23 pts · 4 comments",
-          "topics": [
-            "Open weights",
-            "Major labs"
-          ],
-          "publishedAt": "2026-07-17T23:20:14Z",
-          "score": 128,
+          "url": "https://github.com/mihirahuja1/agentnestOSS",
+          "meta": "12 pts · 2 comments",
+          "topics": [],
+          "publishedAt": "2026-07-23T01:54:06Z",
+          "score": 125,
           "summary": "",
-          "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
+          "why": "Self-hosted sandboxes and MCP tunnels solve the enterprise 'my data in your sandbox' blocker that has been the single biggest friction point for production agent deployments."
         }
       ]
     },
@@ -167,24 +174,7 @@
     {
       "key": "hugging-face",
       "label": "Hugging Face",
-      "items": [
-        {
-          "title": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-          "source": "Hugging Face",
-          "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-          "meta": "377 likes · 334,847 downloads",
-          "topics": [
-            "Memory and state",
-            "Open weights",
-            "Major labs",
-            "Coding agents"
-          ],
-          "publishedAt": "2026-07-17T00:27:17.000Z",
-          "score": 1842.847,
-          "summary": "gguf unsloth fine tune heretic uncensored abliterated ara MTP GGUF Quants Regular GGUF Quants qwen3.6 multi-stage tuned thinking reasoning all use cases coder creative creative writing all genres story writing fiction roleplaying bfloat16 multi-stage-tune multi-state-merge image-text-to-text en zh dataset:DavidAU/Polar-STRICT-Datasets dataset:DavidAU/F451-STRICT-Datasets license:apache-2.0 endpoints_compatible region:us imatrix conversational",
-          "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
-        }
-      ]
+      "items": []
     },
     {
       "key": "github",
@@ -194,7 +184,7 @@
           "title": "google-gemini/gemini-cli",
           "source": "GitHub",
           "url": "https://github.com/google-gemini/gemini-cli",
-          "meta": "106143 stars · updated Thu, 23 Jul 2026 18:12:44 UTC",
+          "meta": "106219 stars · updated Tue, 28 Jul 2026 17:26:18 UTC",
           "topics": [
             "Tool use",
             "Open weights",
@@ -202,7 +192,7 @@
             "Coding agents"
           ],
           "publishedAt": "2025-04-17T17:04:31Z",
-          "score": 665602,
+          "score": 666116,
           "summary": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
           "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
         },
@@ -210,7 +200,7 @@
           "title": "LearningCircuit/local-deep-research",
           "source": "GitHub",
           "url": "https://github.com/LearningCircuit/local-deep-research",
-          "meta": "8769 stars · updated Thu, 23 Jul 2026 08:55:58 UTC",
+          "meta": "8799 stars · updated Tue, 28 Jul 2026 03:33:59 UTC",
           "topics": [
             "Tool use",
             "Evaluation",
@@ -218,7 +208,7 @@
             "Major labs"
           ],
           "publishedAt": "2025-02-09T15:41:32Z",
-          "score": 54262,
+          "score": 54464,
           "summary": "~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all local and cloud LLMs (llama.cpp, Ollama, Google, ...). 10+ search engines - arXiv, PubMed, your private documents. Everything Local & Encrypted.",
           "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
         },
@@ -226,14 +216,14 @@
           "title": "MinishLab/semble",
           "source": "GitHub",
           "url": "https://github.com/MinishLab/semble",
-          "meta": "5688 stars · updated Wed, 22 Jul 2026 10:19:18 UTC",
+          "meta": "5726 stars · updated Mon, 27 Jul 2026 14:09:46 UTC",
           "topics": [
             "Tool use",
             "Evaluation",
             "Coding agents"
           ],
           "publishedAt": "2026-04-06T14:56:45Z",
-          "score": 34722,
+          "score": 34952,
           "summary": "Fast and Accurate Code Search for Agents. Uses ~98% fewer tokens than grep+read",
           "why": "This is a strong agent-engineering efficiency signal: giving coding agents semantic code search instead of grep-based token waste directly reduces cost and improves latency on every agent loop."
         },
@@ -241,13 +231,13 @@
           "title": "antoinezambelli/forge",
           "source": "GitHub",
           "url": "https://github.com/antoinezambelli/forge",
-          "meta": "2198 stars · updated Sat, 18 Jul 2026 16:44:16 UTC",
+          "meta": "2206 stars · updated Tue, 28 Jul 2026 17:58:38 UTC",
           "topics": [
             "Tool use",
             "Multi-agent workflows"
           ],
           "publishedAt": "2026-02-16T16:59:06Z",
-          "score": 13776,
+          "score": 13824,
           "summary": "A Python framework for self-hosted LLM tool-calling and multi-step agentic workflows",
           "why": "The strongest practical signal right now is still better tooling around how models call, sequence, and recover from actions."
         }
@@ -256,63 +246,63 @@
   ],
   "tangentRadar": [
     {
-      "topic": "Coding agents",
-      "signalCount": 25,
-      "whyItMatters": "The comment volume makes this a good proxy for what technically engaged builders think is worth paying attention to.",
-      "signals": [
-        "Hugging Face: DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-        "OpenAI: NTT DATA Group cuts incident analysis to 30 minutes with Codex",
-        "GitHub: Vincentwei1021/video-shotcraft"
-      ]
-    },
-    {
       "topic": "Tool use",
       "signalCount": 25,
       "whyItMatters": "The strongest practical signal right now is still better tooling around how models call, sequence, and recover from actions.",
       "signals": [
         "OpenAI: NTT DATA Group cuts incident analysis to 30 minutes with Codex",
-        "GitHub: Vincentwei1021/video-shotcraft",
-        "GitHub: pireel/pireel"
+        "Google AI: Gemini API Managed Agents: 3.6 Flash, hooks, and more",
+        "GitHub: makecindy/cindy"
+      ]
+    },
+    {
+      "topic": "Coding agents",
+      "signalCount": 23,
+      "whyItMatters": "The comment volume makes this a good proxy for what technically engaged builders think is worth paying attention to.",
+      "signals": [
+        "OpenAI: NTT DATA Group cuts incident analysis to 30 minutes with Codex",
+        "Google AI: Gemini API Managed Agents: 3.6 Flash, hooks, and more",
+        "GitHub: makecindy/cindy"
       ]
     },
     {
       "topic": "Open weights",
-      "signalCount": 16,
+      "signalCount": 22,
       "whyItMatters": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate.",
       "signals": [
-        "Hacker News: Show HN: Qwen3.6-35B-A3B on a 16 GB M1 Pro with SSD-streamed MoE",
-        "Hugging Face: DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
-        "GitHub: pireel/pireel"
-      ]
-    },
-    {
-      "topic": "Interfaces",
-      "signalCount": 15,
-      "whyItMatters": "Agent UX is moving beyond chat boxes — interface design is becoming part of the research frontier.",
-      "signals": [
-        "GitHub: duolahypercho/codex-router",
-        "GitHub: risa-labs-inc/BossConsole",
-        "GitHub: EndymionLee/PilotBrowseMCP"
+        "GitHub: makecindy/cindy",
+        "GitHub: mikehasa/agentacct",
+        "GitHub: danilo-znamerovszkij/draw-your-font"
       ]
     },
     {
       "topic": "Major labs",
-      "signalCount": 13,
+      "signalCount": 18,
       "whyItMatters": "Major lab launches still reshape the practical design space for agent builders almost overnight.",
       "signals": [
-        "Google DeepMind: Gemini 3.5 Flash Cyber",
-        "Hacker News: Show HN: Qwen3.6-35B-A3B on a 16 GB M1 Pro with SSD-streamed MoE",
-        "Hugging Face: DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF"
+        "OpenAI: Scientific computing in the age of agentic AI",
+        "OpenAI: NTT DATA Group cuts incident analysis to 30 minutes with Codex",
+        "Google AI: Gemini API Managed Agents: 3.6 Flash, hooks, and more"
+      ]
+    },
+    {
+      "topic": "Interfaces",
+      "signalCount": 16,
+      "whyItMatters": "Agent UX is moving beyond chat boxes — interface design is becoming part of the research frontier.",
+      "signals": [
+        "GitHub: mikehasa/agentacct",
+        "GitHub: RongleCat/grok-app",
+        "GitHub: risa-labs-inc/BossConsole"
       ]
     },
     {
       "topic": "Multi-agent workflows",
-      "signalCount": 9,
+      "signalCount": 8,
       "whyItMatters": "The comment volume makes this a good proxy for what technically engaged builders think is worth paying attention to.",
       "signals": [
-        "GitHub: Kritt-ai/open-kritt",
-        "GitHub: cicialgo/rockycode",
-        "GitHub: MisterBooo/llm-interview-questions"
+        "GitHub: deerwork-ai/deer-workflow",
+        "GitHub: YintongHuo/awesome-agent-trajectory",
+        "GitHub: mythosclaude5/Claude-Mythos-AI-Free-desktop"
       ]
     }
   ],
@@ -328,9 +318,9 @@
       "prompt": "Log tool calls, retries, and summaries for one real task, then inspect which step actually predicts success or failure."
     },
     {
-      "title": "Prototype an interface beyond chat",
-      "why": "The AI-pointer and Interaction Models threads both suggest the interface layer is becoming a genuine research lever.",
-      "prompt": "Build a tiny agent UI that is not just a chat box — for example a timeline, pointer assistant, or live shared workspace — and log what it changes."
+      "title": "Stress-test one agent across model families",
+      "why": "The model layer is changing quickly enough that the same harness can behave very differently across providers and sizes.",
+      "prompt": "Replay the same agent task on one hosted frontier model and one smaller open model, then compare tool-selection behavior, not just answer quality."
     }
   ],
   "method": [
