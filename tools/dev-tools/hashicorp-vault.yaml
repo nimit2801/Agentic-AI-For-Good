@@ -1,0 +1,27 @@
+name: HashiCorp Vault
+description: A secrets management platform that securely stores, controls access to, and rotates API keys, database credentials, and TLS certificates for ML pipelines and model serving infrastructure.
+tagline: Secrets management and encryption for ML infrastructure
+github_url: https://github.com/hashicorp/vault
+docs_url: https://developer.hashicorp.com/vault/docs
+
+category: Dev Tools
+tags: [security, secrets-management, encryption, devops, infrastructure]
+pricing: freemium
+is_open_source: true
+license: BUSL-1.1
+
+problem_solved: |
+  ML pipelines and model serving systems require access to numerous secrets — API
+  keys for LLM providers, database credentials for feature stores, model registry
+  tokens, and cloud storage keys — each posing a security risk if leaked in code,
+  logs, or environment variables. Vault centralizes secrets management with dynamic
+  credentials (short-lived tokens), automatic rotation, audit logging, and fine-grained
+  access policies. ML teams use Vault to inject ephemeral credentials into training
+  jobs, model serving containers, and CI/CD pipelines without hardcoding secrets
+  in configuration files or worrying about credential expiry.
+
+use_cases:
+  - Securely inject API keys for LLM providers (OpenAI, Anthropic) into training and inference pipelines
+  - Manage short-lived database credentials for feature stores and model registries
+  - Store and rotate TLS certificates for model serving endpoints and ML infrastructure
+  - Audit all credential access across ML pipelines with detailed audit logs

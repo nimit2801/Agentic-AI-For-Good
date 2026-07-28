@@ -1,0 +1,28 @@
+name: Bazel
+description: Google's fast, scalable build system that supports multi-language monorepos with hermetic builds, incremental compilation, and remote caching — used by TensorFlow, PyTorch, and major ML frameworks.
+tagline: Fast, correct builds for monorepos and ML frameworks
+github_url: https://github.com/bazelbuild/bazel
+docs_url: https://bazel.build
+
+category: Dev Tools
+tags: [build-system, compilation, monorepo, tensorflow, pytorch, automation]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Large ML codebases spanning Python, C++, CUDA, and protobuf definitions need a
+  build system that can handle cross-language dependencies, GPU-specific compilation,
+  and massive monorepos without full rebuilds. Bazel provides hermetic, reproducible
+  builds with automatic dependency tracking, remote caching, and distributed execution.
+  TensorFlow, PyTorch, and JAX all use Bazel to manage their complex build graphs
+  spanning CPU/GPU/TPU backends. Without it, ML teams resort to fragile Makefiles or
+  lose days to incremental build breaks in multi-language projects.
+
+use_cases:
+  - Build TensorFlow, PyTorch, or JAX from source with custom hardware backends
+  - Manage cross-language monorepos with Python, C++, CUDA, and protocol buffers
+  - Leverage remote build caching to accelerate CI pipelines for ML framework development
+  - Create hermetic, reproducible builds for ML model serving binaries
+
+install_command: npm install -g @bazel/bazelisk
