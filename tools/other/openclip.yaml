@@ -1,0 +1,24 @@
+name: OpenCLIP
+description: "An open-source implementation of OpenAI's CLIP (Contrastive Language-Image Pre-training) model, providing training code, pretrained weights across multiple architectures (ViT-B/32, ViT-L/14, ConvNeXt, EVA-02), and reproducible training pipelines for zero-shot image classification, image-text retrieval, and multimodal representation learning."
+tagline: "Open-source CLIP training and pretrained models"
+github_url: https://github.com/mlfoundations/open_clip
+website_url: https://mlfoundations.github.io/open_clip
+docs_url: https://mlfoundations.github.io/open_clip/docs
+install_command: "pip install open-clip-torch"
+category: Other
+tags:
+  - multimodal
+  - zero-shot-classification
+  - image-text-retrieval
+  - clip
+  - vision-language
+  - pytorch
+  - representation-learning
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "Training contrastive vision-language models like CLIP from scratch requires massive datasets (hundreds of millions of image-text pairs), complex distributed training infrastructure, and careful tuning of the contrastive loss and data augmentations — putting state-of-the-art multimodal representations out of reach for most teams. OpenCLIP provides a complete, open-source training pipeline with public pretrained weights, enabling researchers and engineers to fine-tune CLIP on custom data, extract zero-shot image classifiers, and build multimodal retrieval systems without the prohibitive compute and data requirements of training from scratch."
+use_cases:
+  - "Fine-tune a CLIP model on domain-specific image-text pairs (medical, satellite, e-commerce) for custom zero-shot classification and image retrieval without training from scratch"
+  - "Extract pretrained multimodal embeddings from OpenCLIP models for image similarity search, cross-modal retrieval, and feature engineering in ML pipelines"
+  - "Reproduce and extend state-of-the-art zero-shot classification benchmarks using OpenCLIP's standardized training recipes and evaluation harness across ViT, ConvNeXt, and hybrid architectures"
