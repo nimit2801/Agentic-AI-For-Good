@@ -1,0 +1,29 @@
+name: TorchAudio
+description: PyTorch's domain library for audio and signal processing, providing data loaders, common audio transforms, pretrained models, and hardware acceleration support for speech and music ML workloads.
+tagline: Audio processing, datasets, and models for PyTorch
+github_url: https://github.com/pytorch/audio
+docs_url: https://pytorch.org/audio
+
+category: Other
+tags: [pytorch, audio, speech-recognition, signal-processing, deep-learning]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Audio and speech ML models require consistent preprocessing — resampling,
+  spectrogram extraction, feature normalization, and I/O across dozens of audio
+  formats — before they can be trained. TorchAudio standardizes these operations
+  into composable transforms that integrate with PyTorch's data loading pipeline,
+  supports hardware-accelerated audio decoding via SoX and FFmpeg backends, and
+  provides pretrained models for speech recognition, source separation, and
+  audio classification. Without it, practitioners manually wrangle format
+  conversion and feature extraction for every audio dataset.
+
+use_cases:
+  - Load and transform audio datasets for speech recognition and speaker diarization pipelines
+  - Compute spectrograms, MFCCs, and other acoustic features for model training
+  - Fine-tune pretrained audio models (Wav2Vec2, HuBERT, EnCodec) on custom tasks
+  - Build end-to-end audio classification and sound event detection systems
+
+install_command: pip install torchaudio
