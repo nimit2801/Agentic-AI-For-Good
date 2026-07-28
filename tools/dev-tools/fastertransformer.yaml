@@ -1,0 +1,23 @@
+name: FasterTransformer
+description: "NVIDIA's optimized transformer inference and training backend providing highly optimized CUDA kernels for transformer model architectures (BERT, GPT, Llama, T5, ViT) with support for INT8/FP8 quantization, sparse attention, tensor parallelism, and multi-GPU inference across PyTorch, TensorRT, and standalone C++ deployments."
+tagline: "NVIDIA's optimized transformer inference and training backend"
+github_url: https://github.com/NVIDIA/FasterTransformer
+website_url: https://github.com/NVIDIA/FasterTransformer
+docs_url: https://github.com/NVIDIA/FasterTransformer/wiki
+category: Dev Tools
+tags:
+  - transformer-inference
+  - gpu-optimization
+  - cuda
+  - model-serving
+  - quantization
+  - nvidia
+  - deep-learning
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Deploying large transformer models (BERT, GPT, Llama, T5) for production inference on NVIDIA GPUs requires hand-tuned CUDA kernels for attention, feed-forward layers, and quantization — each model architecture and GPU generation needing separate optimization work. FasterTransformer provides a consolidated library of highly optimized CUDA kernels covering encoder and decoder transformer architectures with INT8/FP8 quantization, sparse attention, and tensor parallelism, delivering up to 3x inference speedup over naive PyTorch implementations across single and multi-GPU deployments."
+use_cases:
+  - "Deploy large language models (GPT, Llama, BLOOM) for production inference with INT8/FP8 quantization and tensor parallelism across multiple NVIDIA GPUs for maximum throughput"
+  - "Accelerate BERT and BERT-like encoder models for latency-sensitive NLP pipelines (search, classification, question answering) using FasterTransformer's fused multi-head attention kernels"
+  - "Integrate FasterTransformer as a custom backend in PyTorch and TensorRT pipelines to replace naive transformer implementations with optimized CUDA kernels for batched inference"

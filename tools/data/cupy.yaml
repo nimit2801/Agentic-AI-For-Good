@@ -1,0 +1,24 @@
+name: CuPy
+description: "A NumPy/SciPy-compatible array library for GPU-accelerated computing on NVIDIA CUDA and AMD ROCm platforms, providing drop-in replacements for NumPy functions, GPU-optimized linear algebra, FFT, sparse matrix operations, and seamless integration with deep learning frameworks for high-performance numerical computing."
+tagline: "NumPy-compatible GPU-accelerated array library"
+github_url: https://github.com/cupy/cupy
+website_url: https://cupy.dev
+docs_url: https://docs.cupy.dev
+install_command: "pip install cupy"
+category: Data
+tags:
+  - gpu-computing
+  - numerical-computing
+  - cuda
+  - linear-algebra
+  - array-operations
+  - python
+  - hpc
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "Data scientists and ML engineers working with large numerical datasets on GPUs are forced to choose between PyTorch/TensorFlow's tensor APIs (which add auto-differentiation overhead and framework lock-in) or writing custom CUDA kernels — neither suitable for general-purpose numerical computing. CuPy provides a drop-in NumPy/SciPy-compatible API that runs on NVIDIA and AMD GPUs, enabling practitioners to accelerate array operations, linear algebra, FFT, and sparse matrix computations by 10-100x on GPU hardware without rewriting their data pipelines or learning CUDA programming."
+use_cases:
+  - "Accelerate NumPy-based data preprocessing and feature engineering pipelines by replacing `import numpy as np` with `import cupy as cp` for GPU execution with minimal code changes"
+  - "Perform GPU-accelerated linear algebra (matrix multiplication, eigendecomposition, SVD) and FFT on large scientific and ML datasets using familiar NumPy-style APIs"
+  - "Build hybrid CPU-GPU data pipelines where CuPy and NumPy arrays share memory seamlessly, enabling selective acceleration of bottleneck computations without full GPU adoption"
