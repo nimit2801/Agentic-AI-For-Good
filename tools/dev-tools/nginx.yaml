@@ -1,0 +1,30 @@
+name: NGINX
+description: A high-performance HTTP server, reverse proxy, load balancer, and API gateway widely used to serve and scale ML model inference endpoints in production.
+tagline: High-performance web server and reverse proxy
+github_url: https://github.com/nginx/nginx
+website_url: https://nginx.org
+docs_url: https://nginx.org/en/docs
+
+category: Dev Tools
+tags: [web-server, reverse-proxy, load-balancing, api-gateway, model-serving, infrastructure]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  ML model serving endpoints need a production-grade HTTP layer that handles TLS
+  termination, request routing, load balancing across model replicas, rate limiting
+  to prevent abuse, and access logging — all without adding latency. NGINX provides
+  an event-driven, non-blocking architecture that can handle tens of thousands of
+  concurrent inference requests on a single machine, route requests to different
+  model versions by URL path, and cache responses for stateless models. ML teams
+  commonly deploy NGINX in front of Triton Inference Server, TorchServe, or custom
+  FastAPI/Flask serving endpoints.
+
+use_cases:
+  - Load balance inference requests across multiple model server replicas for high availability
+  - Route requests to different model versions or serving backends by URL path
+  - Terminate TLS and add rate limiting to protect model serving endpoints from abuse
+  - Cache inference responses for stateless models to reduce serving latency
+
+install_command: brew install nginx
