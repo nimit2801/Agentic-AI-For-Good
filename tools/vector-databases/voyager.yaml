@@ -1,0 +1,29 @@
+name: Voyager
+description: An approximate nearest-neighbor search library from Spotify designed for vector similarity search with a focus on ease of use, simplicity, and production deployability across Python and Java applications.
+tagline: Simple, production-ready vector similarity search
+
+github_url: https://github.com/spotify/voyager
+website_url: https://github.com/spotify/voyager
+
+category: Vector DB
+tags: [vector-search, nearest-neighbor, similarity-search, hnsw, python, java, embeddings, knn]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install voyager
+
+problem_solved: |
+  Production vector similarity search is often complex to set up and maintain —
+  many ANN libraries require C++ compilation, heavy dependencies, or dedicated server
+  infrastructure. Voyager provides a simple Python and Java library that embeds directly
+  into existing applications with a single pip install, supporting HNSW-based
+  approximate nearest neighbor search with configurable recall-speed tradeoffs, index
+  persistence, and thread-safe concurrent queries.
+
+use_cases:
+  - Build semantic search into applications by indexing text embeddings and querying with natural language vectors
+  - Power recommendation systems that find similar items by embedding proximity in real-time
+  - Implement near-duplicate detection by comparing document or image embeddings at high throughput
+  - Enable retrieval-augmented generation (RAG) pipelines with fast vector lookup against document embeddings
+  - Deploy on-device vector search without external database infrastructure or network dependencies

@@ -1,0 +1,31 @@
+name: NVIDIA DALI
+description: A GPU-accelerated data loading and preprocessing library that optimizes the input pipeline bottleneck in deep learning workflows by offloading decoding, augmentation, and transformation operations to the GPU.
+tagline: GPU-accelerated data pipelines for deep learning
+
+github_url: https://github.com/NVIDIA/DALI
+website_url: https://developer.nvidia.com/dali
+docs_url: https://docs.nvidia.com/deeplearning/dali/user-guide
+
+category: Data
+tags: [gpu, data-loading, preprocessing, computer-vision, audio, deep-learning, cuda, pipeline]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install nvidia-dali-cuda120
+
+problem_solved: |
+  In deep learning workflows, data loading and preprocessing often become the training
+  bottleneck — CPUs struggle to decode images, apply augmentations, and feed data fast
+  enough to keep GPUs fully utilized. NVIDIA DALI offloads these operations entirely to
+  the GPU, performing parallel decoding, random cropping, color jittering, audio
+  spectrogram generation, and other transformations at hardware acceleration speeds.
+  The result is dramatically higher GPU utilization and shorter training times without
+  changing the model architecture.
+
+use_cases:
+  - Accelerate image loading and augmentation pipelines for computer vision training to saturate GPU compute
+  - Build real-time audio preprocessing pipelines for speech recognition and sound classification models
+  - Decode and transform video frames on-GPU for video understanding models without CPU round-trips
+  - Integrate with PyTorch, TensorFlow, and JAX data loaders for transparent GPU acceleration
+  - Process large-scale datasets with dynamic batching and parallel I/O to maximize training throughput
