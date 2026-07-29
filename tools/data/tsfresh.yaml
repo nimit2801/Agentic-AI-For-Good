@@ -1,0 +1,24 @@
+name: tsfresh
+description: "A Python library for automatic extraction of hundreds of features from time-series data, including statistical, temporal, spectral, and wavelet-based features. tsfresh evaluates feature relevance, filters redundant features, and outputs scikit-learn-compatible matrices."
+tagline: "Automatic time-series feature extraction"
+github_url: https://github.com/blue-yonder/tsfresh
+website_url: https://tsfresh.com
+docs_url: https://tsfresh.readthedocs.io
+install_command: "pip install tsfresh"
+category: Data
+tags:
+  - time-series
+  - feature-extraction
+  - feature-engineering
+  - python
+  - signal-processing
+  - machine-learning
+  - data-preparation
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "Time-series feature engineering requires extensive domain knowledge in signal processing, statistics, and spectral analysis to extract meaningful patterns — practitioners must manually implement lag features, rolling statistics, Fourier transforms, and peak detection for each use case. tsfresh automates this by extracting 794 pre-defined features from each time series (mean, variance, FFT coefficients, autocorrelation, entropy, wavelet transforms), tests them for significance against the target variable, and filters irrelevant features — enabling non-experts to build high-quality time-series features in minutes."
+use_cases:
+  - "Extract hundreds of statistical and spectral features from sensor time-series data for predictive maintenance, anomaly detection, and equipment failure prediction"
+  - "Automatically filter relevant time-series features for forecasting workloads (demand forecasting, energy load prediction) using the built-in hypothesis-testing feature selector"
+  - "Generate scikit-learn-compatible feature matrices from large collections of time series for classification and regression on sequential data"
