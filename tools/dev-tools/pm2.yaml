@@ -1,0 +1,24 @@
+name: PM2
+description: A production-grade Node.js process manager with built-in load balancing, log management, monitoring, and application clustering. PM2 keeps AI backend services — model serving endpoints, API gateways, and data pipeline workers — running reliably with automatic restarts and zero-downtime deployments.
+tagline: Production process manager for Node.js applications
+
+github_url: https://github.com/Unitech/pm2
+website_url: https://pm2.keymetrics.io
+docs_url: https://pm2.keymetrics.io/docs
+install_command: npm install -g pm2
+
+category: Dev Tools
+tags: [nodejs, process-manager, clustering, load-balancing, monitoring, deployment, devops]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  AI backend services built in Node.js — model serving proxies, API gateways, real-time data pipelines, and webhook handlers — need to stay running 24/7, scale across CPU cores, and restart gracefully after failures. Running these with simple node or npm start commands leaves them vulnerable to crashes without recovery. PM2 solves this by providing a battle-tested process manager that keeps applications alive with automatic restarts, supports cluster mode to utilize all CPU cores, provides built-in log rotation and monitoring, and enables zero-downtime reloads for production deployments.
+
+use_cases:
+  - Run Node.js model serving APIs with automatic restart on crash and configurable startup delays between retries
+  - Scale AI backend services across all CPU cores using PM2's cluster mode for higher throughput
+  - Monitor memory and CPU usage of AI application microservices through PM2's built-in dashboard and Keymetrics integration
+  - Deploy AI application stacks across multiple servers with PM2's ecosystem file for consistent startup configuration
+  - Implement zero-downtime reloads for model inference API updates without dropping active connections
