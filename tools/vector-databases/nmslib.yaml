@@ -1,0 +1,29 @@
+name: NMSLIB
+description: A high-performance library for generic non-metric space similarity search that provides a toolkit for evaluating k-nearest-neighbor methods across a wide range of distance functions.
+tagline: Fast similarity search for non-metric spaces
+
+github_url: https://github.com/nmslib/nmslib
+website_url: https://github.com/nmslib/nmslib
+
+category: Vector DB
+tags: [vector-search, nearest-neighbor, similarity-search, knn, non-metric, python, cpp]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install nmslib
+
+problem_solved: |
+  Most vector similarity search libraries assume metric spaces (where the triangle
+  inequality holds), but many real-world distance functions — KL-divergence, cosine
+  distance, quadratic form distance — are non-metric and incompatible with standard
+  spatial indexing. NMSLIB provides efficient search algorithms including VP-trees
+  and neighborhood graphs that work in non-metric spaces, enabling accurate similarity
+  search for applications where distances don't follow metric axioms.
+
+use_cases:
+  - Search images by visual similarity using non-metric distance functions like quadratic form distance
+  - Perform efficient nearest-neighbor search on probabilistic embeddings where KL-divergence is the natural distance
+  - Evaluate and benchmark different k-NN algorithms across a variety of distance metrics and datasets
+  - Build recommendation systems using custom similarity measures that don't satisfy the triangle inequality
+  - Index and query high-dimensional feature vectors with exotic distance functions for scientific data analysis
