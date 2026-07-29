@@ -1,0 +1,26 @@
+name: Joblib
+description: >-
+  Lightweight pipelining for Python with transparent disk caching, parallel computing, and efficient NumPy-aware serialization. Provides utilities for caching function outputs with automatic invalidation, parallel execution via thread and multiprocessing backends, and fast serialization of large NumPy arrays. Used extensively in scikit-learn for model persistence and cross-validation pipeline execution.
+tagline: Python pipelining with caching and parallel execution
+
+github_url: https://github.com/joblib/joblib
+website_url: https://joblib.readthedocs.io
+docs_url: https://joblib.readthedocs.io
+
+install_command: pip install joblib
+
+category: Data
+tags: [python, caching, serialization, parallel-computing, scikit-learn, data-processing, ml-pipeline]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: >-
+  Machine learning workflows repeatedly recompute expensive intermediate results and struggle to persist large NumPy arrays efficiently. Joblib solves this with a transparent caching system that automatically caches function outputs with dependency tracking, parallel execution via threading and multiprocessing backends, and a fast NumPy-aware serializer that handles large arrays efficiently — making it the standard library for scikit-learn model persistence, cross-validation, and pipeline execution.
+
+use_cases:
+  - Cache intermediate computation results in ML pipelines to avoid redundant recomputation
+  - Parallelize embarrassingly parallel ML workloads with simple threading decorators
+  - Persist large scikit-learn models and NumPy arrays with efficient serialization
+  - Build reproducible data processing pipelines with transparent function caching
+  - Replace pickle for NumPy-heavy workloads with faster, memory-efficient serialization
