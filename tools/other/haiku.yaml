@@ -1,0 +1,31 @@
+name: Haiku
+description: A JAX-based neural network library by DeepMind providing simple, composable modules and transforms for building deep learning models with functional programming patterns.
+tagline: Simple neural network building blocks for JAX
+
+github_url: https://github.com/google-deepmind/haiku
+docs_url: https://dm-haiku.readthedocs.io
+
+category: Other
+tags: [python, jax, neural-networks, deep-learning, deepmind, functional]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install dm-haiku
+
+problem_solved: |
+  JAX's pure-functional, transform-based approach is powerful but requires
+  boilerplate — managing parameter collections, random state, and model
+  initialization manually. Haiku provides a familiar object-oriented API
+  (hiking.Module) on top of JAX that feels like PyTorch or Sonnet but
+  composes cleanly with JAX transforms. It handles parameter initialization,
+  random key splitting, and module wiring automatically while preserving
+  full access to JAX's jit, vmap, pmap, and grad transforms. The result is
+  cleaner code for research-scale neural network experiments in JAX.
+
+use_cases:
+  - Build a transformer encoder with Haiku's Module API and train it end-to-end with JAX's grad and jit transforms
+  - Implement a custom neural network layer that composes with vmap for efficient batch processing
+  - Prototype a deep reinforcement learning policy network with stochastic modules and parameter sharing
+  - Experiment with different network architectures by swapping Haiku module configurations in a training loop
+  - Train a large-scale model across multiple TPUs using Haiku modules with JAX's pmap gradient aggregation

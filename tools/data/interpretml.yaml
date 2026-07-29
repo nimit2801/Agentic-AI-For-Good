@@ -1,0 +1,30 @@
+name: InterpretML
+description: An open-source Python framework for training interpretable machine learning models and explaining black-box model predictions with glass-box, global, and local explanations.
+tagline: Train interpretable models and explain any black-box ML system
+
+github_url: https://github.com/interpretml/interpret
+website_url: https://interpret.ml
+docs_url: https://interpret.ml/docs
+
+category: Data
+tags: [python, explainability, interpretability, glassbox, model-debugging]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install interpret
+
+problem_solved: |
+  Complex ML models like neural networks and gradient boosting are powerful but
+  opaque — stakeholders can't trust predictions they don't understand. InterpretML
+  provides both glass-box models (Explainable Boosting Machines, decision trees)
+  that are inherently interpretable, and black-box explainers (SHAP, LIME, Morris
+  sensitivity) that shed light on any model. This lets data scientists debug models,
+  justify predictions to regulators, and build trust with non-technical stakeholders.
+
+use_cases:
+  - Debug a gradient-boosted model by identifying which features drive incorrect predictions
+  - Generate global feature importance reports for regulatory compliance in finance or healthcare
+  - Compare a glass-box model's accuracy against a black-box model to decide the interpretability-accuracy tradeoff
+  - Explain individual predictions to end users (loan denial reasons, claim decisions) with human-readable attributions
+  - Detect data drift and concept drift by monitoring how feature importance distributions shift over time
