@@ -1,0 +1,23 @@
+name: Rancher
+description: An open-source multi-cluster Kubernetes management platform for deploying and operating Kubernetes clusters across on-premise, cloud, and edge environments. Rancher simplifies AI infrastructure operations with centralized cluster management, RBAC, observability, and application catalog integration.
+tagline: Multi-cluster Kubernetes management for any infrastructure
+
+github_url: https://github.com/rancher/rancher
+website_url: https://www.rancher.com
+docs_url: https://docs.rancher.com
+
+category: Dev Tools
+tags: [kubernetes, cluster-management, multi-cloud, devops, container-orchestration, edge-computing, infrastructure]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AI teams running Kubernetes-based ML platforms across multiple environments — on-premise GPU clusters, cloud-based training infrastructure, and edge inference nodes — face significant operational overhead managing each cluster independently. Standard Kubernetes distribution lacks centralized RBAC, observability, and application lifecycle management across clusters. Rancher solves this by providing a unified control plane for importing and managing any CNCF-certified Kubernetes cluster, with built-in monitoring with Prometheus and Grafana, multi-tenant RBAC, GitOps-based continuous delivery with Fleet, and an integrated application catalog for one-click deployment of ML infrastructure tools.
+
+use_cases:
+  - Centrally manage on-premise GPU Kubernetes clusters and cloud-based training clusters from a single Rancher dashboard
+  - Deploy ML infrastructure tools (Prometheus, Grafana, Kubeflow, MLflow) across clusters with Rancher's application catalog
+  - Implement multi-team RBAC for AI platform resources across Kubernetes clusters with AD/LDAP integration
+  - Monitor GPU utilization, cluster health, and ML workload resource consumption across all clusters with built-in observability
+  - Provision and manage Kubernetes clusters on bare-metal, vSphere, and public clouds using Rancher Kubernetes Engine (RKE)

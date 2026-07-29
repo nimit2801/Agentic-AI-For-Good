@@ -1,0 +1,23 @@
+name: Nomad
+description: HashiCorp Nomad is a flexible workload orchestrator for deploying and managing containerized and non-containerized applications across on-premise and cloud environments. It schedules batch ML training jobs, model serving microservices, and data pipeline workers across distributed infrastructure with a single unified workflow.
+tagline: Flexible workload orchestrator for any application at any scale
+
+github_url: https://github.com/hashicorp/nomad
+website_url: https://www.nomadproject.io
+docs_url: https://developer.hashicorp.com/nomad/docs
+
+category: Dev Tools
+tags: [orchestration, scheduling, batch-jobs, devops, containers, infrastructure, resource-management]
+pricing: freemium
+is_open_source: true
+license: BSL-1.1
+
+problem_solved: |
+  AI teams running diverse workloads — long-running model serving endpoints, batch training jobs, data pipeline workers, and GPU-accelerated tasks — either maintain separate orchestrators for each workload type or force everything through Kubernetes, which adds significant operational complexity. Nomad solves this with a single lightweight orchestrator that handles containers, standalone binaries, Java JARs, and raw executables using a declarative job specification. It integrates natively with HashiCorp Consul for service discovery and Vault for secrets management, providing a simpler alternative to Kubernetes for ML workloads that don't need its full container orchestration surface.
+
+use_cases:
+  - Schedule batch ML training jobs across a heterogeneous cluster of GPU and CPU nodes with resource-aware placement
+  - Deploy long-running model inference microservices with health checking, automatic restart, and rolling updates
+  - Run data pipeline workers as batch jobs that execute on schedule or on-demand with parameterized job specifications
+  - Co-locate GPU-accelerated training workloads with supporting services on the same cluster using a single orchestrator
+  - Orchestrate distributed hyperparameter sweeps and multi-node model evaluation tasks with Nomad parameterized jobs

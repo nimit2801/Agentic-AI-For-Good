@@ -1,0 +1,23 @@
+name: Packer
+description: HashiCorp Packer automates the creation of machine images for multiple platforms from a single declarative template. It enables AI teams to build consistent, reproducible VM images and container base images with pre-installed ML dependencies — eliminating configuration drift across environments.
+tagline: Automated machine image builder for consistent infrastructure
+
+github_url: https://github.com/hashicorp/packer
+website_url: https://www.packer.io
+docs_url: https://developer.hashicorp.com/packer/docs
+
+category: Dev Tools
+tags: [image-building, infrastructure-as-code, vm, containers, devops, automation, immutable-infrastructure]
+pricing: free
+is_open_source: true
+license: BSL-1.1
+
+problem_solved: |
+  AI infrastructure teams frequently deploy ML environments across AWS, GCP, Azure, and on-premise — each requiring platform-specific machine images with the same set of GPU drivers, CUDA libraries, Python packages, and ML frameworks. Building and maintaining these images separately leads to configuration drift and fragile deployment pipelines. Packer solves this with a single HCL template that builds identical images for multiple platforms simultaneously, supporting post-processing steps for image optimization, and integrating with configuration management tools like Ansible and Chef for software provisioning.
+
+use_cases:
+  - Build golden VM images with pre-installed NVIDIA drivers, CUDA toolkits, and ML frameworks for consistent training environments
+  - Create multi-platform base images for GPU-enabled model serving across AWS, GCP, and Azure from a single Packer template
+  - Generate Docker base images as part of an immutable infrastructure pipeline for ML deployment reproducibility
+  - Automate quarterly refresh of ML development workstation images with updated Python packages and ML library versions
+  - Integrate with Ansible playbooks to provision and configure complex ML software stacks during image building
