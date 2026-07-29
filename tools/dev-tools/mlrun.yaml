@@ -1,0 +1,24 @@
+name: MLRun
+description: Open-source MLOps orchestration framework for managing the full ML lifecycle from data ingestion and feature engineering through model training, deployment, and monitoring on Kubernetes.
+tagline: Orchestrate and automate ML pipelines from development to production
+
+github_url: https://github.com/mlrun/mlrun
+website_url: https://www.mlrun.org
+docs_url: https://docs.mlrun.org
+install_command: pip install mlrun
+
+category: Dev Tools
+tags: [mlops, pipelines, orchestration, kubernetes, automation, model-deployment, feature-store]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  ML teams struggle to move from notebook experiments to production because there is no unified platform that handles data preparation, feature computation, model training, deployment, and monitoring as a cohesive workflow. MLRun solves this by providing a serverless MLOps framework that orchestrates the entire ML lifecycle on Kubernetes. It handles automatic ingestion of data sources, real-time and batch feature computation through its integrated feature store, distributed training job submission, model packaging with versioning, automated deployment to serverless or Kubernetes serving runtimes, and real-time model monitoring with drift detection — all through a unified Python API.
+
+use_cases:
+  - Build end-to-end ML pipelines that automate data ingestion, feature engineering, model training, and deployment in a single serverless workflow
+  - Manage online and offline feature computation through an integrated feature store that serves both training and inference with consistent transformations
+  - Deploy ML models to production with one command, automatically packaging them into serverless functions or Kubernetes deployments with auto-scaling
+  - Monitor production model performance with automated drift detection, data quality alerts, and real-time prediction logging
+  - Run distributed hyperparameter tuning and training jobs on Kubernetes clusters with automatic resource management and parallel execution

@@ -1,0 +1,24 @@
+name: Elastic APM
+description: Application performance monitoring solution from Elastic that traces requests across distributed services, capturing errors, latency, and throughput metrics with deep code-level visibility for AI-powered applications.
+tagline: Distributed tracing and performance monitoring for modern applications
+
+github_url: https://github.com/elastic/apm-server
+website_url: https://www.elastic.co/observability/apm
+docs_url: https://www.elastic.co/guide/en/apm
+install_command: pip install elastic-apm
+
+category: Monitoring
+tags: [apm, distributed-tracing, observability, performance, elastic, monitoring, troubleshooting]
+pricing: freemium
+is_open_source: false
+license: NOASSERTION
+
+problem_solved: |
+  AI applications composed of multiple microservices — model serving, embedding generation, vector search, prompt processing, and feedback collection — make it extremely difficult to pinpoint performance bottlenecks and error sources across the request chain. Elastic APM solves this by providing end-to-end distributed tracing that follows a single user request through every service, AI model call, and database query. It automatically maps service dependencies, captures request payloads and responses, and surfaces anomalous latency and error rates with code-level context, enabling ML teams to quickly resolve production inference issues.
+
+use_cases:
+  - Trace LLM inference requests end-to-end across the model serving tier, embedding generation, vector search, and prompt preprocessing services
+  - Identify slow model inference endpoints by analyzing per-request breakdowns of model load time, inference time, and response serialization
+  - Monitor AI application error rates with automatic error grouping and code-level stack traces to rapidly diagnose model serving failures
+  - Track throughput and latency SLAs for production AI endpoints with historical trending and anomaly detection on key performance metrics
+  - Map service dependencies in multi-model AI pipelines to understand the blast radius of any single service degradation

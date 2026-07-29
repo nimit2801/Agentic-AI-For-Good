@@ -1,0 +1,24 @@
+name: SQLAlchemy
+description: The most widely-used Python SQL toolkit and Object-Relational Mapper, providing a full suite of enterprise-level database connectivity, ORM, and SQL expression language for Python data applications.
+tagline: Python SQL toolkit and ORM for database access
+
+github_url: https://github.com/sqlalchemy/sqlalchemy
+website_url: https://www.sqlalchemy.org
+docs_url: https://docs.sqlalchemy.org
+install_command: pip install sqlalchemy
+
+category: Data
+tags: [orm, database, sql, python, data-access, etl, data-engineering]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  ML and data engineering pipelines need to read, write, and transform data from relational databases, but raw SQL is brittle, database-specific, and hard to compose with Python data processing code. SQLAlchemy solves this by providing a high-level SQL abstraction layer that works with 15+ database backends (PostgreSQL, MySQL, SQLite, etc.) while maintaining performance. Its ORM maps Python objects to database tables for intuitive data access, and its Core SQL Expression Language enables programmatic query construction for dynamic ETL pipelines feeding ML training datasets.
+
+use_cases:
+  - Build robust ETL pipelines that extract training data from production databases, transform it into feature tables, and load it into ML-ready formats
+  - Manage ML experiment metadata, hyperparameter runs, and model registry tables with programmatic Python database access
+  - Construct dynamic SQL queries for feature engineering and data aggregation pipelines that adapt to changing data schemas
+  - Support multi-database backends in ML platform infrastructure without rewriting SQL for PostgreSQL, MySQL, SQLite, and cloud databases
+  - Automate database schema migrations and version control for ML application databases with Alembic integration
