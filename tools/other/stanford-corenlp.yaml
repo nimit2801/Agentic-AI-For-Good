@@ -1,0 +1,26 @@
+name: Stanford CoreNLP
+description: >-
+  Comprehensive natural language processing toolkit providing tokenization, part-of-speech tagging, named entity recognition, sentiment analysis, dependency parsing, coreference resolution, relation extraction, and anaphora resolution in multiple languages. Combines statistical and neural NLP models with a Java-based server and Python client interface for production-scale text annotation and analysis.
+tagline: Production NLP toolkit from Stanford NLP group
+
+github_url: https://github.com/stanfordnlp/CoreNLP
+website_url: https://stanfordnlp.github.io/CoreNLP
+docs_url: https://stanfordnlp.github.io/CoreNLP
+
+install_command: pip install stanfordcorenlp
+
+category: Other
+tags: [nlp, tokenization, named-entity-recognition, sentiment-analysis, dependency-parsing, coreference, text-analysis, java]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: >-
+  Building production NLP pipelines requires combining multiple annotation types — tokenization, NER, parsing, coreference, sentiment — which traditionally means stitching together separate libraries with incompatible interfaces and output formats. Stanford CoreNLP solves this with a unified, extensible pipeline that provides 15+ linguistic annotations through a single framework, serving them via an efficient Java server with Python, Scala, and JavaScript clients — making it the most widely adopted NLP toolkit for research and production text understanding.
+
+use_cases:
+  - Extract named entities, relationships, and sentiment from documents for knowledge graph construction
+  - Build text preprocessing pipelines for downstream NLP models and ML training
+  - Analyze social media and customer feedback with multilingual sentiment and emotion detection
+  - Parse complex sentence structures with constituency and dependency parse trees
+  - Resolve pronouns and noun phrases to their referents in coreference resolution systems
