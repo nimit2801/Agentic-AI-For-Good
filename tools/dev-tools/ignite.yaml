@@ -1,0 +1,24 @@
+name: Ignite
+description: "A high-level PyTorch library for training and evaluating neural networks, providing an abstract Engine class with event-driven handlers for logging, checkpointing, early stopping, distributed training, and hyperparameter tuning."
+tagline: "High-level training library for PyTorch"
+github_url: https://github.com/pytorch/ignite
+website_url: https://pytorch-ignite.ai
+docs_url: https://pytorch-ignite.ai/reference/
+install_command: "pip install pytorch-ignite"
+category: Dev Tools
+tags:
+  - deep-learning
+  - pytorch
+  - training
+  - distributed-training
+  - experiment-tracking
+  - handlers
+  - event-driven
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+problem_solved: "Training PyTorch models in production requires managing event-driven workflows — checkpointing after every N epochs, logging metrics, running validation, adjusting learning rates, and stopping early — which leads to deeply nested and hard-to-maintain training scripts. Ignite solves this with an event-driven Engine that fires events at each step, epoch, and completion, letting users attach handlers (built-in or custom) for checkpointing, metric computation, logging to TensorBoard/MLflow, distributed training setup, and hyperparameter tuning. Training code becomes a clean composition of handlers rather than procedural loops."
+use_cases:
+  - "Build production training pipelines using the event-driven Engine with handlers for automatic checkpointing, metric computation, and early stopping on plateau"
+  - "Scale training across multiple GPUs and nodes with automatic DDP configuration, gradient clipping, and mixed precision support"
+  - "Integrate experiment tracking (TensorBoard, MLflow, W&B) and hyperparameter optimization (Grid, Random, Optuna) through handler-based composition without modifying training logic"
