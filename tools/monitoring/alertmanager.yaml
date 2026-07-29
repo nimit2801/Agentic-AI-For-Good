@@ -1,0 +1,23 @@
+name: Alertmanager
+description: Prometheus Alertmanager handles alert deduplication, grouping, silencing, inhibition, and routing for the Prometheus monitoring ecosystem. It transforms raw metric-based alerts into actionable notifications sent via email, PagerDuty, Slack, and webhooks — essential for keeping ML systems reliable.
+tagline: Alert routing and notification management for Prometheus monitoring
+
+github_url: https://github.com/prometheus/alertmanager
+website_url: https://prometheus.io/docs/alerting/latest/alertmanager/
+docs_url: https://prometheus.io/docs/alerting/latest/alertmanager/
+
+category: Monitoring
+tags: [alerting, notifications, prometheus, incident-management, observability, ml-monitoring]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Production ML systems generate thousands of Prometheus alerts from model latency spikes, GPU failures, data pipeline stalls, and resource exhaustion. Without intelligent alert management, operators face alert fatigue — noisy notifications hide critical incidents. Alertmanager solves this by grouping related alerts into single notifications, silencing known maintenance events, inhibiting lower-severity alerts when a root cause fires, and routing each category of alert to the right responder channel (on-call, Slack, email) with configurable repeat intervals.
+
+use_cases:
+  - Group ML model degradation alerts by deployment to reduce noise when multiple endpoints degrade simultaneously
+  - Route GPU out-of-memory and training job failure alerts directly to the ML engineering on-call rotation via PagerDuty
+  - Silence scheduled maintenance windows for model retraining to prevent false-positive alerts during expected downtime
+  - Inhibit low-severity data freshness warnings when the underlying data pipeline is already down and being investigated
+  - Send aggregate daily digests of model inference latency P99 violations to the team Slack channel instead of per-minute alerts

@@ -1,0 +1,23 @@
+name: Pushgateway
+description: Prometheus Pushgateway allows ephemeral and batch jobs to push metrics to Prometheus when pull-based scraping is not feasible. It is essential for collecting metrics from CI pipelines, batch training runs, cron jobs, and serverless functions that complete before Prometheus can scrape them.
+tagline: Push-based metric collection for ephemeral and batch workloads
+
+github_url: https://github.com/prometheus/pushgateway
+website_url: https://prometheus.io/docs/practices/pushing/
+docs_url: https://github.com/prometheus/pushgateway
+
+category: Monitoring
+tags: [prometheus, metrics, batch-jobs, ci-cd, ephemeral, observability, ml-monitoring]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Ephemeral workloads — model training jobs, batch inference pipelines, CI/CD builds, and serverless functions — run for seconds to minutes and finish before Prometheus's pull-based scrape cycle captures their metrics. This leaves operators blind to the performance characteristics of batch operations. Pushgateway solves this by acting as a metrics acceptor that batch processes can push metrics to, which Prometheus then scrapes at its regular interval, ensuring no batch job's metrics are lost.
+
+use_cases:
+  - Capture model training metrics (loss, accuracy, learning rate) from ephemeral batch training runs on spot instances
+  - Collect batch inference latency and throughput from short-lived Spark or Ray jobs that complete before the Prometheus scrape window
+  - Monitor CI/CD pipeline stages in ML deployment workflows (artifact validation, image build, integration test duration)
+  - Track data quality metrics pushed by one-shot ETL jobs that process streaming data into training datasets
+  - Gather GPU utilization and cost metrics from ephemeral preemptible instances that run model evaluation tasks
