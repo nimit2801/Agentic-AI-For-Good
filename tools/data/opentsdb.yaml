@@ -1,0 +1,29 @@
+name: OpenTSDB
+description: A scalable, distributed time-series database built on Hadoop and HBase for storing, querying, and graphing massive volumes of numeric metrics data.
+tagline: Distributed time-series database on Hadoop/HBase
+
+github_url: https://github.com/OpenTSDB/opentsdb
+docs_url: http://opentsdb.net/docs
+
+category: Data
+tags: [monitoring, time-series, database, hadoop, hbase, metrics]
+pricing: free
+is_open_source: true
+license: LGPL-2.1
+
+problem_solved: |
+  AI infrastructure generates billions of time-series data points — GPU utilization
+  across thousands of nodes, model serving latency percentiles, embedding cache
+  performance, training job resource consumption — that need to be stored, queried,
+  and analyzed historically. OpenTSDB provides a purpose-built time-series database
+  on top of HBase that scales horizontally to handle millions of metrics per second
+  with automatic downsampling, aggregation, and retention policies. Its HTTP API
+  and telnet protocol are compatible with StatsD collectors and the wide ecosystem
+  of metrics tooling, making it a proven backend for large-scale ML observability.
+
+use_cases:
+  - Store and query GPU utilization metrics across a thousand-node training cluster with sub-second query latency
+  - Track model inference latency percentiles (p50, p95, p99) over months of production data
+  - Aggregate metrics from StatsD collectors across distributed model serving infrastructure
+  - Downsample high-cardinality metrics automatically for long-term trend analysis and capacity planning
+  - Detect performance regressions by comparing current metric patterns against historical baselines
