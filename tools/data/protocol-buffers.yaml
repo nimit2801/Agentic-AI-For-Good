@@ -1,0 +1,26 @@
+name: Protocol Buffers
+description: >-
+  Language-neutral, platform-neutral extensible mechanism for serializing structured data with compact binary format. Defines message schemas in .proto files and generates code in Python, Java, C++, Go, and dozens of other languages for efficient parsing and serialization. Smaller and faster than JSON or XML, widely used in ML pipelines for TFRecord encoding, model serving interfaces, and distributed system communication.
+tagline: Compact binary serialization for structured data
+
+github_url: https://github.com/protocolbuffers/protobuf
+website_url: https://protobuf.dev
+docs_url: https://protobuf.dev
+
+install_command: pip install protobuf
+
+category: Data
+tags: [serialization, data-format, binary, grpc, tfrecord, ml-pipeline, data-exchange]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: >-
+  Data serialization is a bottleneck in distributed ML pipelines — JSON and XML are human-readable but slow, large, and lack schema validation, while custom binary formats are brittle and non-portable across languages. Protocol Buffers solves this with a compact binary format that is 3 to 10 times smaller than JSON, strongly typed schema definitions with backward compatibility, and generated code in 12+ languages for zero-effort cross-platform data exchange — making it the standard for TFRecord storage, gRPC model serving, and distributed system communication.
+
+use_cases:
+  - Encode training data as TFRecords for efficient TensorFlow model training pipelines
+  - Define model serving APIs with strongly typed request and response schemas via gRPC
+  - Exchange structured data between microservices in distributed ML systems
+  - Store configuration and metadata with version-tolerant schema evolution
+  - Replace JSON and XML in high-throughput pipelines for smaller payloads and faster parsing

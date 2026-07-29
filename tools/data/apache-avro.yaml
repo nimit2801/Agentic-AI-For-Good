@@ -1,0 +1,26 @@
+name: Apache Avro
+description: >-
+  Compact binary data serialization framework with JSON-defined schemas and built-in schema evolution support. Optimized for big data pipelines with splittable container files, compression, and seamless integration with Apache Kafka and Hadoop ecosystems. Supports automatic code generation in Python, Java, C++, and other languages with full backward and forward compatibility for evolving data structures.
+tagline: Binary serialization with schema evolution for big data
+
+github_url: https://github.com/apache/avro
+website_url: https://avro.apache.org
+docs_url: https://avro.apache.org/docs
+
+install_command: pip install avro
+
+category: Data
+tags: [serialization, data-format, binary, kafka, hadoop, big-data, schema-registry]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  Big data pipelines need a serialization format that is compact for efficient storage, splittable for distributed processing, and supports schema evolution as data structures change over time without breaking downstream consumers. Apache Avro solves this with a compact binary format that stores the schema alongside the data for self-describing records, supports full schema evolution with both backward and forward compatibility, and produces splittable container files optimized for Hadoop MapReduce and Kafka streaming — making it the standard serialization format for big data and stream processing ecosystems.
+
+use_cases:
+  - Serialize streaming data in Kafka topics with schema evolution and compatibility guarantees
+  - Store big data in Hadoop with splittable compressed container files for distributed processing
+  - Exchange structured data between microservices with JSON-defined schemas
+  - Encode high-throughput event streams with compact binary format and built-in compression
+  - Build data pipelines with schema registry for consistent data governance and validation

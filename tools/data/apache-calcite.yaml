@@ -1,0 +1,24 @@
+name: Apache Calcite
+description: >-
+  Dynamic data management framework providing SQL parsing, cost-based query optimization, and query execution across heterogeneous data sources. Provides a SQL parser, hundreds of built-in optimization rules, and a JDBC driver that enables querying any backend with a Calcite adapter. Powers SQL engines for Apache Flink, Drill, Hive, and dozens of other big data platforms.
+tagline: Unified SQL optimization across heterogeneous data sources
+
+github_url: https://github.com/apache/calcite
+website_url: https://calcite.apache.org
+docs_url: https://calcite.apache.org/docs
+
+category: Data
+tags: [sql, query-optimization, data-querying, big-data, federated-query, apache, jdbc]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  Querying data across multiple heterogeneous sources — relational databases, NoSQL stores, file systems, and streaming platforms — typically requires separate query languages, optimization strategies, and connection logic for each backend. Apache Calcite solves this with a unified SQL parsing and optimization framework that applies hundreds of cost-based and rule-based optimizations across any data source with a Calcite adapter — enabling federated queries across databases, files, streams, and NoSQL stores through a single standard SQL interface.
+
+use_cases:
+  - Execute federated SQL queries across multiple databases, file formats, and streaming sources
+  - Optimize complex analytical queries with hundreds of cost-based optimization rules
+  - Build custom SQL query engines for new data sources using the Calcite adapter framework
+  - Parse and rewrite SQL queries for schema mapping and data governance enforcement
+  - Power SQL interfaces for streaming platforms with Calcite's streaming query optimization
