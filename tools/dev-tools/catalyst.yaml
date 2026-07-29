@@ -1,0 +1,24 @@
+name: Catalyst
+description: "A PyTorch framework for reproducible and accelerated deep learning research and development, providing a high-level training API with callbacks, metrics logging, checkpointing, distributed training support, and configuration-driven experiment pipelines."
+tagline: "Accelerated deep learning research with PyTorch"
+github_url: https://github.com/catalyst-team/catalyst
+website_url: https://catalyst-team.github.io/catalyst
+docs_url: https://catalyst-team.github.io/catalyst
+install_command: "pip install catalyst"
+category: Dev Tools
+tags:
+  - deep-learning
+  - pytorch
+  - training
+  - experiment-management
+  - distributed-training
+  - callbacks
+  - reproducible-research
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "PyTorch provides flexible building blocks for deep learning but requires significant boilerplate for training loops, metric tracking, checkpointing, distributed training, and experiment configuration — every project reinvents the same training infrastructure. Catalyst provides a unified training API with configurable callbacks, automatic logging (TensorBoard, MLflow, W&B), checkpoint management, mixed-precision training, and multi-GPU/distributed training support, letting researchers focus on model architecture and data instead of training loop plumbing."
+use_cases:
+  - "Train computer vision and NLP models with a configurable pipeline that handles checkpointing, metric logging, and early stopping without manual loop code"
+  - "Scale training from single GPU to multi-node distributed setups with automatic configuration of DDP, mixed precision (AMP), and gradient accumulation"
+  - "Reproduce experiments across team members using YAML-based configuration files that define the full training pipeline — optimizer, scheduler, augmentations, and callbacks"
