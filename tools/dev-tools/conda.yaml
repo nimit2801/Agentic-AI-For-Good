@@ -1,0 +1,33 @@
+name: Conda
+description: An open-source package management and environment management system that installs and manages software packages across platforms. Conda works with any language and is the standard environment manager for the scientific Python and data science ecosystem.
+tagline: Cross-platform package and environment management
+
+github_url: https://github.com/conda/conda
+website_url: https://docs.conda.io
+docs_url: https://docs.conda.io
+
+category: Dev Tools
+tags: [python, package-manager, environment-management, data-science, cross-platform, developer-tools]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+install_command: brew install --cask miniconda
+
+problem_solved: |
+  Python environments on HPC clusters and data science workstations need
+  non-Python dependencies (CUDA, BLAS, OpenMP, HDF5) that pip cannot install,
+  and system package managers (apt, brew) install incompatible versions. Conda
+  provides language-agnostic package management with pre-built binaries for
+  Linux, macOS, and Windows. It resolves and installs Python packages AND
+  their native library dependencies (cuDNN, MKL, libgcc) in isolated
+  environments. The result is reproducible scientific computing stacks that
+  include C/C++/Fortran libraries, GPU toolkits, and Python packages in one
+  atomic operation.
+
+use_cases:
+  - Install and isolate ML environments with GPU dependencies (CUDA, cuDNN, NCCL) alongside PyTorch or TensorFlow in one command
+  - Manage Python versions and package sets for Jupyter notebook environments on shared HPC or academic compute clusters
+  - Create reproducible conda environment YAML files for research projects that pin both Python and C library versions
+  - Distribute scientific Python software that depends on native C/C++/Fortran libraries (GDAL, netCDF, VTK) across platforms
+  - Build and deploy containerized data science pipelines using conda-pack for portable environment snapshots
