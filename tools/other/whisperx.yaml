@@ -1,0 +1,26 @@
+name: WhisperX
+description: >-
+  Time-accurate automatic speech recognition with word-level timestamps, speaker diarization, and voice activity detection built on top of Whisper models. Extends standard Whisper with phoneme-based forced alignment for millisecond-precise word boundaries, speaker identification through voice characteristic analysis, and language diarization for multilingual audio. Optimized for batch processing on GPU with batched inference and automatic model selection.
+tagline: Word-level timestamps and speaker diarization for Whisper
+
+github_url: https://github.com/m-bain/whisperX
+website_url: https://github.com/m-bain/whisperX
+docs_url: https://github.com/m-bain/whisperX
+
+install_command: pip install whisperx
+
+category: Other
+tags: [speech-recognition, audio, transcription, diarization, asr, whisper, alignment, subtitles]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: >-
+  Standard Whisper transcription provides segment-level timestamps without word-level precision, speaker identification, or robust voice activity detection — gaps that limit its use in production subtitle generation, meeting transcription, and accessibility workflows. WhisperX solves this by adding phoneme-based forced alignment for millisecond-precise word timestamps, speaker diarization through voice embedding clustering, and integrated VAD for silence detection, delivering production-ready, speaker-attributed transcripts with accurate word-level timing.
+
+use_cases:
+  - Generate precise word-level subtitles with speaker identification for video content
+  - Transcribe multi-speaker meetings and conversations with accurate speaker diarization
+  - Build accessibility tools requiring millisecond-accurate speech-to-text alignment
+  - Process call center recordings with speaker attribution and silence-based segmentation
+  - Create searchable transcripts with word-level timestamps for media archiving

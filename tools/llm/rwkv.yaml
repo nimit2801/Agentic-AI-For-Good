@@ -1,0 +1,26 @@
+name: RWKV
+description: >-
+  Receptance Weighted Key Value model architecture that combines the parallel training of Transformers with the efficient inference of RNNs. Introduces a novel attention-free mechanism with time-dependent channel mixing and receptance gates to achieve linear-time inference and constant memory complexity regardless of sequence length. Supports efficient training on consumer GPUs with Transformer-level parallelization and CPU-friendly linear-time deployment for production inference.
+tagline: Transformer-level quality with RNN-level efficiency
+
+github_url: https://github.com/BlinkDL/RWKV-LM
+website_url: https://www.rwkv.com
+docs_url: https://wiki.rwkv.com
+
+install_command: pip install rwkv
+
+category: LLM
+tags: [llm, rnn, efficient-architecture, text-generation, deep-learning, pytorch, cpu-inference]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  Transformer language models require quadratic-time attention that grows expensive with sequence length and demands large GPU clusters for training and deployment, limiting access to well-funded organizations. RWKV solves this with a novel architecture that combines the parallel training efficiency of Transformers with the linear-time inference and constant memory footprint of RNNs — enabling large language model training on consumer GPUs, efficient CPU-based deployment, and practical processing of very long sequences without the quadratic cost penalty of standard attention mechanisms.
+
+use_cases:
+  - Run large language models efficiently on consumer GPUs and CPUs without expensive hardware
+  - Build chatbots and text generation applications with constant-memory long-context inference
+  - Train custom language models on single consumer GPUs with RNN-level resource efficiency
+  - Deploy language models on edge devices with minimal RAM and no GPU requirements
+  - Research novel sequence modeling combining the best of RNN and Transformer architectures

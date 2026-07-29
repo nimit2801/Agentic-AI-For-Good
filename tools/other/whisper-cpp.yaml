@@ -1,0 +1,26 @@
+name: whisper.cpp
+description: >-
+  High-performance C++ implementation of OpenAI's Whisper model with optimized inference across CPU, GPU, and neural processing hardware. Supports multiple backends including CoreML, CUDA, Vulkan, OpenVINO, and SYCL for broad hardware compatibility. Provides efficient transcription, translation, and voice activity detection with minimal resource requirements suitable for edge devices and production deployments.
+tagline: C++ port of Whisper with CPU-first inference
+
+github_url: https://github.com/ggerganov/whisper.cpp
+website_url: https://github.com/ggerganov/whisper.cpp
+docs_url: https://github.com/ggerganov/whisper.cpp
+
+install_command: brew install whisper-cpp
+
+category: Other
+tags: [speech-recognition, audio, transcription, asr, cpp, edge, whisper, ggml, cpu-inference]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: >-
+  Running OpenAI's Whisper speech recognition model typically requires significant GPU memory and Python dependencies, making it impractical for edge devices, mobile platforms, and embedded systems without a GPU. whisper.cpp solves this with a highly optimized C++ implementation that runs efficiently on CPU, supports quantized models from 2 to 8 bits, and provides broad hardware backend support including Apple Silicon, AMD, Intel, NVIDIA, and ARM processors — bringing production-quality speech recognition to devices with as little as 1 GB of RAM.
+
+use_cases:
+  - Run local speech-to-text on laptops and edge devices without dedicated GPU hardware
+  - Build voice-controlled applications with real-time transcription on low-power hardware
+  - Deploy speech recognition on mobile, embedded, and Raspberry Pi platforms
+  - Power privacy-preserving accessibility tools with fully on-device speech processing
+  - Serve high-throughput batch transcription for media and content processing pipelines

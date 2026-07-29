@@ -1,0 +1,26 @@
+name: faster-whisper
+description: >-
+  Reimplementation of OpenAI's Whisper model using CTranslate2 that achieves up to 4x faster transcription with significantly reduced memory usage. Uses INT8 quantization and efficient beam search to accelerate inference while maintaining comparable accuracy to the original Whisper model. Supports both CPU and GPU inference with automatic mixed precision and batched processing for production-scale workloads.
+tagline: 4x faster Whisper transcription via CTranslate2
+
+github_url: https://github.com/guillaumekln/faster-whisper
+website_url: https://github.com/guillaumekln/faster-whisper
+docs_url: https://github.com/guillaumekln/faster-whisper
+
+install_command: pip install faster-whisper
+
+category: Other
+tags: [speech-recognition, audio, transcription, asr, ctranslate2, quantization, cpu-inference, gpu-inference]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: >-
+  The original OpenAI Whisper Python implementation is computationally expensive, requiring significant GPU memory and processing time that makes real-time or batch transcription costly at scale. faster-whisper solves this by reimplementing the Whisper model architecture with CTranslate2's optimized inference engine, achieving 4x speedup and 2x memory reduction through INT8 quantization, efficient beam search, and batched processing — making production-grade speech recognition practical on mid-range hardware and reducing cloud transcription costs.
+
+use_cases:
+  - Transcribe long-form audio and meetings 4x faster than standard Whisper implementations
+  - Build real-time speech-to-text applications with low-latency CPU and GPU inference
+  - Process large batches of audio content with reduced memory and compute requirements
+  - Deploy cost-effective ASR on resource-constrained servers and cloud instances
+  - Power voice assistants and automated transcription pipelines at scale
