@@ -1,0 +1,24 @@
+name: Jenkins
+description: Leading open-source automation server for building, testing, and deploying software with extensive plugin ecosystem. Jenkins integrates with virtually every CI/CD tool and enables automated ML pipeline orchestration through declarative pipeline-as-code.
+tagline: Automate the build, test, and deployment of any software project
+
+github_url: https://github.com/jenkinsci/jenkins
+website_url: https://www.jenkins.io
+docs_url: https://www.jenkins.io/doc
+install_command: pip install jenkins
+
+category: Dev Tools
+tags: [ci-cd, automation, devops, pipeline, continuous-integration, continuous-delivery, mlops]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Data science and ML teams need reliable CI/CD pipelines to test, validate, and deploy models, but traditional CI/CD tools lack the infrastructure for handling large datasets, GPU-enabled test environments, and model artifact management. Jenkins solves this with a highly extensible automation server that supports pipeline-as-code, distributed agents with GPU provisioning, and plugins for ML tools like Docker, Kubernetes, and S3. Teams can automate everything from data validation tests to model deployment while maintaining audit trails and approval gates.
+
+use_cases:
+  - Automate ML model training pipelines triggered by new data arrivals or code commits, with automatic GPU agent provisioning
+  - Run nightly integration tests for data processing and feature engineering code across distributed build agents
+  - Orchestrate multi-stage CI/CD pipelines that validate, package, and deploy ML model serving containers to production
+  - Schedule periodic data quality checks and model retraining jobs with failure notifications and rollback capabilities
+  - Implement approval-gated deployment workflows where model validation metrics must pass before production rollout
