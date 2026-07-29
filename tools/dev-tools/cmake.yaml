@@ -1,0 +1,31 @@
+name: CMake
+description: A cross-platform build system generator that controls the software compilation process using platform-independent configuration files. CMake generates native build environments (Makefiles, Ninja, Xcode, Visual Studio) from a single CMakeLists.txt.
+tagline: Cross-platform build system generator for C/C++ projects
+
+github_url: https://github.com/Kitware/CMake
+website_url: https://cmake.org
+
+category: Dev Tools
+tags: [build-system, cpp, cross-platform, cmake, compilation, developer-tools, automation]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+install_command: pip install cmake
+
+problem_solved: |
+  C and C++ projects must compile on Windows, macOS, and Linux — each with
+  different compilers, linkers, and IDE project formats. Hand-writing Makefiles
+  and Visual Studio projects for every platform is impractical. CMake provides
+  a declarative CMakeLists.txt that describes targets, dependencies, and
+  options in a platform-agnostic way. It then generates the native build files
+  (Ninja, Make, Xcode, Visual Studio) for the target platform. Modern CMake
+  supports imported targets, fetch-content, presets, and CPack packaging,
+  making it the de-facto build system for C++ projects in the AI ecosystem.
+
+use_cases:
+  - Build cross-platform C++ AI/ML libraries like PyTorch, TensorFlow, and llama.cpp with a single CMakeLists.txt across Linux, macOS, and Windows
+  - Manage third-party dependencies (CUDA, OpenCV, Eigen, Protobuf) with find_package and FetchContent for reproducible builds
+  - Generate IDE projects for Xcode and Visual Studio from the same source tree, enabling both GUI and CLI development
+  - Package and distribute C++ libraries for PyPI (via scikit-build-core) and conda-forge with CMake install targets and CPack
+  - Configure and build GPU-accelerated ML kernels with CUDA language support and device-linked targets in a unified build graph

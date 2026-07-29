@@ -1,0 +1,31 @@
+name: pybind11
+description: A lightweight header-only library that exposes C++ types and functions to Python, and vice versa. pybind11 makes C++ binding generation concise and modern, supporting STL containers, NumPy arrays, async/await, and custom type casters.
+tagline: Seamless C++11 to Python binding generation
+
+github_url: https://github.com/pybind/pybind11
+website_url: https://pybind11.readthedocs.io
+
+category: Dev Tools
+tags: [cpp, python, bindings, cpp-python-interop, numpy, headers-only, developer-tools]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+install_command: pip install pybind11
+
+problem_solved: |
+  Writing Python bindings for C++ code traditionally meant hand-authoring CPython
+  extension boilerplate — verbose, error-prone, and painful to maintain across
+  Python versions. pybind11 provides a modern C++11 API with automatic type
+  conversion for STL containers, NumPy arrays, Eigen tensors, and function
+  overloading. A single header include and a few lines of C++ expose any class or
+  function to Python with proper docstrings, exception translation, and iterator
+  protocol support. The result is bindings that compile quickly, run at native
+  speed, and require minimal maintenance.
+
+use_cases:
+  - Expose high-performance C++ simulation or physics engines to Python with minimal boilerplate and zero runtime overhead
+  - Build Python bindings for custom CUDA/C++ GPU kernels used in PyTorch extensions and custom ops
+  - Wrap legacy C++ libraries (computer vision, signal processing, serialization) for use in modern Python AI pipelines
+  - Create Python interfaces for embedded systems C++ code while retaining control over memory management and lifetime
+  - Prototype fast NumPy-compatible C++ extensions with automatic array conversion and shape validation

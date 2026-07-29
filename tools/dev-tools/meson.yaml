@@ -1,0 +1,31 @@
+name: Meson
+description: An open-source build system designed for speed and usability. Meson uses a declarative Python-like DSL, supports multiple languages and compilers natively, and generates Ninja build files for near-optimal incremental rebuilds.
+tagline: Fast, user-friendly build system with native multi-language support
+
+github_url: https://github.com/mesonbuild/meson
+website_url: https://mesonbuild.com
+
+category: Dev Tools
+tags: [build-system, cpp, python, ninja, cross-platform, compilation, developer-tools]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install meson
+
+problem_solved: |
+  CMake and Autotools are powerful but have steep learning curves and verbose
+  syntax. Meson offers a clean, readable DSL (meson.build) with first-class
+  support for Fortran, Rust, Cython, CUDA, and Objective-C alongside C and C++.
+  It detects the compiler and environment automatically, generates optimized
+  Ninja files, and supports out-of-source builds, cross-compilation, and
+  dependency management out of the box. Meson also natively handles subprojects
+  (wrap files) and provides built-in coverage, test, and install targets without
+  additional tooling.
+
+use_cases:
+  - Build cross-platform C/C++ libraries and applications with a readable meson.build file instead of complex CMakeLists.txt
+  - Manage dependencies declaratively using Meson Wrap files that pull and build subprojects from source
+  - Drive GPU-accelerated projects that mix C++, CUDA, and Python Cython extensions in a single build graph
+  - Replace autotools for system-level Linux projects that need fast configure times and reliable cross-compilation
+  - Build GNOME and freedesktop.org ecosystem projects that standardize on Meson as the build system
