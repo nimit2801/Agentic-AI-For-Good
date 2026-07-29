@@ -1,0 +1,26 @@
+name: Mamba
+description: >-
+  Selective state space model achieving Transformer-quality performance with linear-time sequence processing and long-context modeling. Uses a selective scanning mechanism that dynamically filters relevant context while discarding irrelevant information, overcoming quadratic attention bottlenecks of standard Transformers. Achieves 5x higher throughput than Transformers on long sequences while matching or exceeding quality across language modeling, DNA, and audio benchmarks.
+tagline: Linear-time sequence modeling rivaling Transformers
+
+github_url: https://github.com/state-spaces/mamba
+website_url: https://github.com/state-spaces/mamba
+docs_url: https://github.com/state-spaces/mamba
+
+install_command: pip install mamba-ssm
+
+category: LLM
+tags: [llm, state-space-model, sequence-modeling, deep-learning, pytorch, linear-attention, efficient-architecture]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  Transformer-based language models face a fundamental quadratic scaling challenge — attention mechanisms compute pairwise interactions between all tokens, making inference on long sequences computationally prohibitive and capping practical context lengths. Mamba solves this with selective state space models that process sequences in linear time, matching Transformer quality on language modeling and downstream tasks while achieving 5x higher throughput and enabling practical reasoning over contexts exceeding 1 million tokens — opening new capabilities for long-document, codebase, and genomic analysis.
+
+use_cases:
+  - Process extremely long documents and codebases beyond standard Transformer context windows
+  - Build efficient language models with linear-time sequence processing and lower compute costs
+  - Model DNA, protein, and genomic sequences spanning millions of tokens at once
+  - Power real-time applications requiring low-latency inference on long conversational contexts
+  - Enable cost-effective deployment of LLMs with reduced memory and compute requirements
