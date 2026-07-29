@@ -1,0 +1,23 @@
+name: Apache ActiveMQ
+description: Apache ActiveMQ is a high-performance open-source message broker supporting JMS, AMQP, MQTT, STOMP, and OpenWire protocols. It provides reliable messaging between distributed AI services, microservices, and data pipeline components with support for transactions, persistence, and clustering.
+tagline: Open-source multi-protocol message broker for enterprise messaging
+
+github_url: https://github.com/apache/activemq
+website_url: https://activemq.apache.org
+docs_url: https://activemq.apache.org/documentation
+
+category: Data
+tags: [messaging, broker, jms, amqp, enterprise, distributed-systems, integration, openwire, stomp]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Enterprise AI systems need to integrate heterogeneous services — model servers, feature stores, data pipelines, monitoring agents — that speak different messaging protocols and require guaranteed delivery semantics. Standalone point-to-point integrations become brittle as the system grows. ActiveMQ solves this by providing a unified message broker that supports JMS, AMQP, MQTT, STOMP, and OpenWire on a single server, with broker clustering, message persistence via KahaDB or JDBC, and XA transactions for reliable message processing across distributed ML workflows.
+
+use_cases:
+  - Bridge legacy enterprise systems with new AI microservices by routing messages between different protocols
+  - Implement reliable request-reply messaging between model inference servers and feature stores with guaranteed delivery
+  - Create durable, transactional message queues for ML training job orchestration across distributed compute clusters
+  - Route real-time alerts from ML monitoring systems to downstream incident management platforms via AMQP
+  - Build event-driven AI pipelines with message persistence that survives broker restarts and network partitions

@@ -1,0 +1,23 @@
+name: VerneMQ
+description: A high-performance distributed MQTT message broker designed for IoT, edge, and mobile messaging at scale. VerneMQ provides horizontal scalability, data persistence, and enterprise-grade security — making it suitable for connecting large fleets of AI-powered edge devices.
+tagline: Distributed MQTT broker for scalable IoT and mobile messaging
+
+github_url: https://github.com/vernemq/vernemq
+website_url: https://vernemq.com
+docs_url: https://docs.vernemq.com
+
+category: Data
+tags: [mqtt, messaging, iot, distributed-systems, edge-computing, pub-sub, broker]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Scaling MQTT-based IoT and edge AI deployments beyond a single broker node requires clustering, data replication, and seamless failover — features that simple standalone brokers lack. VerneMQ solves this with a distributed, multi-node MQTT broker that provides automatic clustering, session data replication across nodes, and full MQTT v5 compliance. It handles millions of concurrent sessions with consensus-based metadata storage via LevelDB, enabling IoT fleets to grow without re-architecting the messaging layer.
+
+use_cases:
+  - Connect and manage millions of edge AI devices under a clustered, fault-tolerant MQTT broker infrastructure
+  - Distribute IoT sensor data streams across multiple broker nodes for high-availability telemetry ingestion
+  - Enable seamless failover for mission-critical edge AI messaging without losing session state or queued messages
+  - Bridge MQTT device data to Kafka, webhooks, or data lakes for downstream ML training and analytics
+  - Implement fine-grained authentication and authorization for device-to-cloud messaging in regulated AI deployments
