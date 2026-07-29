@@ -1,0 +1,23 @@
+name: Nagios
+description: The industry-standard open-source IT infrastructure monitoring system for detecting and resolving infrastructure problems before they impact services. Nagios provides comprehensive monitoring of AI infrastructure — servers, network equipment, applications, and services — with alerting, reporting, and a mature plugin ecosystem.
+tagline: Industry-standard IT infrastructure monitoring and alerting
+
+github_url: https://github.com/NagiosEnterprises/nagioscore
+website_url: https://www.nagios.org
+docs_url: https://www.nagios.org/documentation
+
+category: Monitoring
+tags: [monitoring, alerting, infrastructure, observability, server-monitoring, network-monitoring, plugins]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  AI teams managing heterogeneous infrastructure — multi-vendor GPU servers, diverse storage backends, various operating systems, and hundreds of services — need a reliable way to detect failures before they cause cascading outages. Nagios solves this with a proven monitoring engine that checks the status of hosts and services at configurable intervals, sends alerts when problems are detected or resolved, maintains an event log for post-mortem analysis, and provides a plugin architecture with thousands of community-contributed checks for nearly any infrastructure component.
+
+use_cases:
+  - Monitor GPU server health, disk space, and memory utilization across training clusters with Nagios agent checks
+  - Track model serving API availability with HTTP endpoint checks and SSL certificate expiration monitoring
+  - Alert on data pipeline failures by monitoring process health, queue depths, and job execution status
+  - Implement scheduled maintenance windows for ML infrastructure upgrades without triggering false alerts
+  - Integrate with PagerDuty, Slack, and email for multi-channel alert notifications with escalation policies
