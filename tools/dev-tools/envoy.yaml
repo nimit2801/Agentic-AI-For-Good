@@ -1,0 +1,24 @@
+name: Envoy
+description: High-performance, open-source edge and service proxy designed for cloud-native applications with advanced load balancing, observability, and traffic management. Envoy serves as the data plane for service meshes powering large-scale AI inference infrastructure.
+tagline: Cloud-native high-performance proxy for service communication
+
+github_url: https://github.com/envoyproxy/envoy
+website_url: https://www.envoyproxy.io
+docs_url: https://www.envoyproxy.io/docs
+install_command: docker pull envoyproxy/envoy
+
+category: Dev Tools
+tags: [service-mesh, proxy, load-balancing, networking, infrastructure, cloud-native, observability]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Production AI inference systems distribute requests across multiple model servers, GPU instances, and third-party API providers, requiring intelligent traffic routing, load balancing, and observability — but traditional reverse proxies lack the dynamic configuration and deep observability needed for ML workloads. Envoy solves this with a programmable, high-performance L7 proxy that supports advanced load balancing algorithms, circuit breaking, rate limiting, and rich metrics emission. It operates as the universal data plane in service meshes like Istio, handling east-west traffic between ML microservices and ingress traffic from client applications.
+
+use_cases:
+  - Route and load-balance inference requests across a pool of GPU-backed model serving instances with automatic health checking and circuit breaking
+  - Implement fine-grained traffic splitting for A/B testing between model versions, gradually shifting traffic during canary deployments
+  - Unify observability across ML infrastructure by collecting consistent request-level metrics, distributed traces, and access logs from every service
+  - Enforce rate limits and authentication policies at the proxy layer for public-facing LLM API endpoints
+  - Serve as the data plane behind an Istio service mesh controlling traffic between model registries, feature stores, and inference pipelines

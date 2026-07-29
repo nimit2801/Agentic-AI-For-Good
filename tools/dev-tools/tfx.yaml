@@ -1,0 +1,24 @@
+name: TFX
+description: End-to-end platform for deploying production ML pipelines at scale, providing standardized components for data ingestion, validation, feature engineering, training, evaluation, and serving. TFX is Google's production-tested ML pipeline framework.
+tagline: Deploy and manage production ML pipelines at Google scale
+
+github_url: https://github.com/tensorflow/tfx
+website_url: https://www.tensorflow.org/tfx
+docs_url: https://www.tensorflow.org/tfx/guide
+install_command: pip install tfx
+
+category: Dev Tools
+tags: [ml-pipelines, mlops, tensorflow, data-validation, model-evaluation, production, serving]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Taking ML models from notebook experiments to production requires orchestrated pipelines for data validation, feature engineering, model training, evaluation, and deployment — but most teams build these pipelines ad-hoc without consistency or reproducibility. TFX solves this with a set of standardized, composable pipeline components that handle every stage of the ML lifecycle. Each component is designed for production scale with data provenance tracking, distribution statistics comparison (training vs. serving skew detection), model validation against performance baselines, and automatic push to serving infrastructure with TensorFlow Serving.
+
+use_cases:
+  - Build end-to-end ML pipelines that ingest raw data, validate schema and statistics, engineer features, train models, and push to production in one automated workflow
+  - Detect training-serving skew by comparing statistical distributions of pipeline input data against production serving data with automatic alerting
+  - Enforce model quality gates in CI/CD pipelines by requiring evaluation metrics to exceed a baseline before promoting to production
+  - Track data lineage and model provenance across every pipeline run for audit compliance and reproducibility
+  - Orchestrate distributed training jobs with automatic resource management and parallel execution of pipeline components

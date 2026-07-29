@@ -1,0 +1,24 @@
+name: SonarQube
+description: Open-source platform for continuous code quality inspection with automated analysis of code smells, bugs, vulnerabilities, and technical debt across 30+ programming languages. SonarQube integrates into CI/CD pipelines to enforce quality gates on every pull request.
+tagline: Continuously inspect code quality and security with automated analysis
+
+github_url: https://github.com/SonarSource/sonarqube
+website_url: https://www.sonarsource.com/products/sonarqube
+docs_url: https://docs.sonarsource.com/sonarqube
+install_command: docker pull sonarqube
+
+category: Dev Tools
+tags: [code-quality, static-analysis, linting, devops, code-review, security, technical-debt]
+pricing: freemium
+is_open_source: true
+license: LGPL-3.0
+
+problem_solved: |
+  AI and ML projects accumulate technical debt faster than traditional software due to rapid prototyping, experimental code paths, and non-deterministic dependencies on model outputs. SonarQube solves this by providing automated, continuous code quality analysis that catches bugs, security vulnerabilities, code smells, and duplicated logic across Python, Java, TypeScript, and 30+ other languages. Its quality gates can block PRs that introduce new issues, ensuring ML codebases remain maintainable as they scale.
+
+use_cases:
+  - Enforce code quality gates in ML project CI/CD pipelines to catch bugs and security vulnerabilities before models ship to production
+  - Track technical debt across Python data science codebases with automated analysis of code smells, duplication, and test coverage
+  - Monitor code quality trends over ML development sprints to identify rot in rapidly-changing experimental code
+  - Integrate quality checks into GitHub PR workflows so every model-serving code change is automatically reviewed for maintainability
+  - Establish baseline quality profiles for multiple ML service repositories with language-specific rule sets
