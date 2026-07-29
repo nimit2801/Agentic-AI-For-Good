@@ -1,0 +1,23 @@
+name: Icinga
+description: An open-source monitoring system that provides comprehensive visibility into AI infrastructure health. Icinga checks the availability of network resources, notifies users of outages, and generates performance data for reporting. It scales from single-server ML deployments to distributed GPU clusters with a modular architecture.
+tagline: Open-source monitoring with scalable architecture and flexible alerting
+
+github_url: https://github.com/Icinga/icinga2
+website_url: https://icinga.com
+docs_url: https://icinga.com/docs
+
+category: Monitoring
+tags: [monitoring, alerting, infrastructure, observability, devops, availability, performance]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Monitoring infrastructure for AI systems requires checking diverse components — REST API endpoints on model servers, GPU utilization on training nodes, queue depths on data pipelines — each with different check intervals and notification policies. Traditional monitoring tools struggle with the scale and complexity of modern distributed AI environments. Icinga solves this with a modular monitoring engine that supports distributed and high-availability setups, a powerful domain-specific language for defining check configurations, role-based permissions for multi-team environments, and extensive graphing and reporting capabilities built on IDO (Icinga Data Output) database backend.
+
+use_cases:
+  - Monitor model serving API availability and response times with custom check plugins for REST endpoints
+  - Distribute monitoring checks across GPU cluster nodes with Icinga's satellite architecture to reduce central load
+  - Track vector database health and indexing progress with threshold-based alerts using Icinga's apply-rules DSL
+  - Generate weekly availability reports for ML infrastructure components for SLA compliance tracking
+  - Implement multi-team RBAC so data engineering and ML engineering teams see only their respective monitored resources

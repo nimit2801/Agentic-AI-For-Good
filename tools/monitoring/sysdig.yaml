@@ -1,0 +1,23 @@
+name: Sysdig
+description: An open-source container monitoring and troubleshooting platform that provides deep visibility into system calls, container activity, and Kubernetes infrastructure. Sysdig enables AI teams to debug performance issues in containerized ML workloads at the kernel level.
+tagline: Container monitoring and security with deep system-level visibility
+
+github_url: https://github.com/draios/sysdig
+website_url: https://sysdig.com
+docs_url: https://docs.sysdig.com
+
+category: Monitoring
+tags: [containers, kubernetes, monitoring, security, troubleshooting, system-calls, performance, devops]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Debugging performance issues in containerized ML workloads — GPU memory leaks in model servers, I/O bottlenecks in data pipelines, network latency in distributed training — requires visibility at the system call level that standard monitoring tools don't provide. Traditional observability tools operate at the application layer and can't see kernel-level events. Sysdig solves this with a kernel module that captures system calls and OS-level events from every container, filters them by process, container, or Kubernetes pod, and records them for forensic analysis — giving ML engineers the same level of visibility into containerized AI workloads that strace provides for single processes.
+
+use_cases:
+  - Debug GPU memory allocation issues in containerized model serving pods by tracing CUDA-related system calls in real time
+  - Identify container-level I/O bottlenecks in data pipeline workers that slow down ML training dataset preparation
+  - Capture and analyze network traffic patterns between microservices in distributed AI inference architectures
+  - Troubleshoot Kubernetes pod startup failures and resource contention in ML platform namespaces
+  - Monitor container resource usage (CPU, memory, disk, network) at the system call level for capacity optimization
