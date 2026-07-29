@@ -1,0 +1,23 @@
+name: EMQX
+description: The open-source distributed MQTT messaging broker for connecting IoT, edge, and AI devices at scale. EMQX handles millions of concurrent connections with sub-millisecond latency, making it ideal for real-time sensor data ingestion, device telemetry, and edge AI inference pipelines.
+tagline: Distributed MQTT broker for IoT and edge AI at scale
+
+github_url: https://github.com/emqx/emqx
+website_url: https://www.emqx.io
+docs_url: https://docs.emqx.io
+
+category: Data
+tags: [mqtt, messaging, iot, edge-computing, real-time, data-ingestion, streaming]
+pricing: freemium
+is_open_source: true
+license: BSL-1.1
+
+problem_solved: |
+  AI applications that ingest data from thousands of IoT sensors, edge devices, or connected assets need a messaging layer that can handle massive concurrent connections with reliable delivery. Traditional message brokers struggle with high throughput, variable network conditions, and the lightweight footprint required for edge deployments. EMQX solves this with a clustered MQTT broker that scales horizontally to millions of sessions, provides built-in rule engines for data transformation, and bridges to Kafka and other streaming platforms for downstream AI processing.
+
+use_cases:
+  - Ingest real-time sensor telemetry from thousands of edge devices for predictive maintenance and anomaly detection
+  - Stream inference results from edge AI models running on resource-constrained devices to central analytics platforms
+  - Bridge IoT device data through MQTT into Kafka or data lakes for batch ML training pipelines
+  - Connect autonomous systems — robots, drones, vehicles — with reliable low-latency messaging for fleet coordination
+  - Build event-driven AI pipelines that react instantly to sensor thresholds or device state changes

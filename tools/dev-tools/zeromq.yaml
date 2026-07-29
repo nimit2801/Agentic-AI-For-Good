@@ -1,0 +1,23 @@
+name: ZeroMQ
+description: A high-performance asynchronous messaging library for building distributed and concurrent applications. ZeroMQ provides socket-based message passing across in-process, IPC, TCP, and multicast transports — enabling scalable inter-service communication for AI agent architectures and data pipelines.
+tagline: High-performance asynchronous messaging for distributed applications
+
+github_url: https://github.com/zeromq/libzmq
+website_url: https://zeromq.org
+docs_url: https://zeromq.org/get-started/
+
+category: Dev Tools
+tags: [messaging, distributed-systems, networking, pub-sub, concurrent-computing, infrastructure]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  Distributed AI systems — multi-agent architectures, real-time data pipelines, and model serving meshes — need low-latency, reliable messaging between components that traditional HTTP or REST approaches can't efficiently provide. ZeroMQ solves this by offering a library of socket types (publish-subscribe, request-reply, push-pull) that deliver messages asynchronously with microsecond latency, supporting dynamic topologies without a dedicated message broker.
+
+use_cases:
+  - Build low-latency pub-sub messaging between distributed AI agents for real-time coordination and state sharing
+  - Create high-throughput data pipelines for streaming inference results and metrics between model serving components
+  - Implement request-reply patterns for microservice-based ML platforms with sub-millisecond overhead
+  - Connect heterogeneous systems across different programming languages with a common messaging protocol
+  - Design fan-out and load-balanced task queues for parallel processing of inference requests

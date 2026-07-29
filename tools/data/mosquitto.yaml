@@ -1,0 +1,23 @@
+name: Mosquitto
+description: Eclipse Mosquitto is a lightweight open-source MQTT broker optimized for edge and IoT deployments. It implements MQTT v5 and v3.1.1, bridging low-power sensors and constrained devices to AI pipelines with minimal resource overhead and reliable message delivery.
+tagline: Lightweight MQTT broker for IoT messaging and edge AI
+
+github_url: https://github.com/eclipse/mosquitto
+website_url: https://mosquitto.org
+docs_url: https://mosquitto.org/documentation/
+
+category: Data
+tags: [mqtt, iot, messaging, edge-computing, embedded, broker, lightweight]
+pricing: free
+is_open_source: true
+license: EPL-2.0
+
+problem_solved: |
+  Edge AI deployments and IoT systems often run on resource-constrained devices where a full-featured message broker is too heavy. These systems still need reliable publish-subscribe messaging to stream sensor data, telemetry, and inference results to a central platform. Mosquitto solves this with a MQTT broker that runs on devices with as little as 64MB RAM and full ARM/MIPS support, providing TLS encryption, authentication, persistent sessions, and bridging to larger brokers for hierarchical IoT topologies.
+
+use_cases:
+  - Stream telemetry data from edge AI devices running on Raspberry Pi or ARM-based gateways to cloud platforms
+  - Connect battery-powered environmental sensors with MQTT for real-time monitoring and ML-driven anomaly detection
+  - Bridge local Mosquitto instances at edge sites to centralized EMQX or Kafka clusters for aggregated AI pipeline data
+  - Enable reliable publish-subscribe messaging between microcontrollers and AI inference servers in smart manufacturing
+  - Power lightweight pub-sub messaging for on-device AI coordination in robotics and autonomous systems
