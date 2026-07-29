@@ -1,0 +1,31 @@
+name: Optax
+description: A gradient processing and optimization library for JAX providing composable optimizers, gradient transformations, and learning rate schedules with a functional API.
+tagline: Composable gradient optimization for JAX
+
+github_url: https://github.com/google-deepmind/optax
+docs_url: https://optax.readthedocs.io
+
+category: Dev Tools
+tags: [python, jax, optimization, gradient-processing, deep-learning, deepmind]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install optax
+
+problem_solved: |
+  Training neural networks in JAX requires implementing optimization logic from
+  scratch or adapting frameworks built for eager-execution paradigms. Optax
+  provides a library of composable gradient transformations — Adam, SGD with
+  momentum, RMSProp, gradient clipping, weight decay, learning rate schedules,
+  and more — that combine cleanly via functional composition. Each transformation
+  is a pure function that can be chained, inspected, and debugged independently.
+  This lets researchers experiment with optimizer variants (AdamW, Lion, AdaFactor,
+  schedule-free methods) by composing transformations rather than rewriting loops.
+
+use_cases:
+  - Train a ResNet on ImageNet with a custom optimizer chain combining Adam, gradient clipping, and cosine decay
+  - Experiment with different optimizer schedules (warmup, cosine, step decay) by swapping chain components
+  - Implement distributed training with multiple gradient accumulations and synchronized weight updates
+  - Add gradient noise and norm clipping for privacy-preserving training with differentially private SGD
+  - Debug training instability by tracing per-layer gradient statistics through the transform chain

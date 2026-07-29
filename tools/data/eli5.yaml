@@ -1,0 +1,31 @@
+name: Eli5
+description: A Python library for debugging and inspecting machine learning classifiers and explaining their predictions using feature attributions, permutation importance, and dependency visualization.
+tagline: Debug ML models with feature importance and prediction explanations
+
+github_url: https://github.com/TeamHG-Memex/eli5
+docs_url: https://eli5.readthedocs.io
+
+category: Data
+tags: [python, explainability, debugging, feature-importance, inspection]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install eli5
+
+problem_solved: |
+  Machine learning models often behave unexpectedly — they rely on spurious
+  correlations, overfit to noise, or fail silently on edge cases. Eli5 provides
+  simple, visual tools for inspecting what a model has learned: it computes
+  per-feature importance weights, highlights which tokens matter in text
+  classifiers, shows decision trees in readable formats, and measures how
+  prediction quality degrades when each feature is shuffled. This makes it easy
+  to catch data leakage, confirm that important features are sensible, and
+  communicate model behavior to non-experts.
+
+use_cases:
+  - Inspect feature weights in a linear classifier to catch unexpected spurious correlations in training data
+  - Highlight the most influential tokens in a text classifier to verify it uses meaningful linguistic patterns
+  - Debug an XGBoost model by comparing permutation importance against built-in feature importance metrics
+  - Explain individual predictions with per-feature contribution breakdowns for auditability
+  - Validate feature engineering by measuring which engineered features actually improve prediction quality

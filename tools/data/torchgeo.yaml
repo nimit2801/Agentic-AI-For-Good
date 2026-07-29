@@ -1,0 +1,31 @@
+name: TorchGeo
+description: A PyTorch domain library for geospatial data — satellite imagery, aerial photos, and digital elevation models — with datasets, samplers, transforms, and pre-trained models.
+tagline: Geospatial deep learning with PyTorch
+
+github_url: https://github.com/microsoft/torchgeo
+docs_url: https://torchgeo.readthedocs.io
+
+category: Data
+tags: [python, pytorch, geospatial, satellite-imagery, remote-sensing, gis]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install torchgeo
+
+problem_solved: |
+  Geospatial machine learning has a high barrier to entry — satellite and aerial
+  imagery come in non-standard formats (GeoTIFFs with coordinate reference
+  systems, multi-band rasters, temporal sequences), standard CV datasets and
+  transforms don't handle them, and pre-trained models rarely transfer. TorchGeo
+  provides PyTorch Dataset and DataLoader classes that natively handle
+  geospatial data: multi-band rasters, geographic sampling (random point
+  sampling, bounding boxes), coordinate transforms, and sensor-specific
+  augmentations. It also bundles pre-trained models on remote sensing benchmarks.
+
+use_cases:
+  - Train a land cover classification model on satellite imagery with proper geographic sampling and augmentation
+  - Detect changes in satellite images over time using temporal sequences of multi-spectral data
+  - Fine-tune pre-trained remote sensing models (ResNet, Swin) on custom aerial photography datasets
+  - Build a crop type mapping pipeline that integrates with Sentinel-2 or Landsat data feeds
+  - Create geospatial embeddings for similarity search across large satellite image archives
