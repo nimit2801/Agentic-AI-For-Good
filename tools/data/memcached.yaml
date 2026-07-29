@@ -1,0 +1,29 @@
+name: Memcached
+description: >-
+  A high-performance, distributed memory object caching system designed to speed up dynamic web applications by alleviating database load. Stores key-value pairs in RAM with sub-millisecond access times, scales horizontally across clusters, and provides a simple protocol for get/set operations. Powers caching layers for large-scale AI inference, data pipelines, and web backends.
+tagline: Distributed memory caching for accelerating data access
+github_url: https://github.com/memcached/memcached
+website_url: https://memcached.org
+docs_url: https://github.com/memcached/memcached/wiki
+
+category: Data
+tags: [caching, distributed-cache, in-memory, key-value-store, performance, data-infrastructure]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: >-
+  AI inference, data pipelines, and real-time applications repeatedly fetch the same data
+  — model inferences, embeddings, feature vectors, API responses — from databases and
+  external services. Each fetch adds latency and server load, creating a bottleneck at
+  scale. Memcached solves this by providing a distributed in-memory cache layer that keeps
+  frequently accessed data in RAM across a cluster of servers. Sub-millisecond gets and
+  puts eliminate repeated database round trips, reducing inference latency and backend load
+  without requiring changes to application logic.
+
+use_cases:
+  - Cache pre-computed embeddings and feature vectors in real-time ML inference pipelines for sub-millisecond retrieval
+  - Reduce database load by caching frequent model predictions, user profiles, and session data in AI-powered applications
+  - Store intermediate results in distributed data processing pipelines to avoid redundant computations
+  - Accelerate vector search results by caching frequent query embeddings and nearest-neighbor lookups
+  - Provide a high-throughput key-value cache layer for LLM serving infrastructure and prompt-caching systems
