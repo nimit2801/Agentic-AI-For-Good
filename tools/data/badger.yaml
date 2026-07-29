@@ -1,0 +1,30 @@
+name: Badger
+description: >-
+  An embeddable, persistent, and fast key-value store written in Go. Provides ACID transactions,并发 control, and configurable compression with efficient LSM-tree-based storage. Designed for local-first applications, serving as the storage engine for Dgraph and used in Go-based data pipelines and ML infrastructure.
+tagline: Fast, embeddable key-value DB for Go
+github_url: https://github.com/dgraph-io/badger
+website_url: https://dgraph.io/docs/badger/
+docs_url: https://dgraph.io/docs/badger/get-started/
+
+category: Data
+tags: [key-value-store, embedded-database, go, storage, lsm-tree, data-infrastructure]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  Go-based AI services and data pipelines need fast local persistence without running a
+  separate database server or embedding a C/C++ library. Existing options require CGO or
+  impose Java runtime overhead. Badger solves this as a pure Go embedded key-value store
+  that delivers high throughput with LSM-tree-based storage, ACID transactions, and
+  configurable compression. It runs in-process with no external dependencies, supports
+  concurrent reads and writes, and handles datasets that exceed available RAM through
+  efficient disk-backed storage — making it ideal for Go-based ML services, feature stores,
+  and data pipeline components.
+
+use_cases:
+  - Store and retrieve feature embeddings and model metadata locally in Go-based inference servers
+  - Power persistent storage for stateful stream processing in Go-based data pipelines
+  - Cache intermediate results and pre-computed values in Go ML training and serving infrastructure
+  - Serve as the embedded database for Go applications needing ACID transactions and crash-safe storage
+  - Store configuration state, lookup tables, and model registries in minimal-dependency Go microservices

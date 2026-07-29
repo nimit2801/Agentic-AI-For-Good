@@ -1,0 +1,28 @@
+name: LevelDB
+description: >-
+  Google's embedded key-value storage library with an ordered mapping from byte-array keys to byte-array values. Provides a persistent, single-node store with automatic compression, Bloom filters for fast lookups, and a write-ahead log for crash recovery. Serves as the underlying storage engine for systems such as Chrome, Bitcoin Core, and many databases.
+tagline: Fast, embedded key-value store from Google
+github_url: https://github.com/google/leveldb
+website_url: https://github.com/google/leveldb
+
+category: Data
+tags: [key-value-store, embedded-database, storage, persistence, c-plus-plus, data-infrastructure]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: >-
+  AI data pipelines, caching layers, and feature stores often need fast local persistence of
+  key-value data without running a separate database server. Traditional databases add latency
+  and operational overhead for simple storage needs. LevelDB solves this as an embedded C++
+  library that provides ordered key-value storage directly in the application process — with
+  compression, Bloom-filter-based lookups, and crash-safe write-ahead logging — eliminating
+  the need for a separate database process while delivering high write throughput and low
+  read latency for local storage workloads.
+
+use_cases:
+  - Store feature embeddings and vector indexes locally in ML inference pipelines for low-latency retrieval
+  - Power local caching layers in data processing and feature engineering workflows
+  - Act as a persistent backing store for stateful stream processing in real-time ML applications
+  - Store and retrieve model metadata, experiment configurations, and training artifacts in local ML pipelines
+  - Serve as the embedded storage engine for databases, blockchains, and local-first applications that need ordered key-value persistence
