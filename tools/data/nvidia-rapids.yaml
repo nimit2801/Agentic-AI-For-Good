@@ -1,0 +1,30 @@
+name: NVIDIA RAPIDS
+description: A suite of GPU-accelerated data science and machine learning libraries that enables end-to-end data processing, model training, and graph analytics entirely on NVIDIA GPUs without leaving the Python ecosystem.
+tagline: GPU-accelerated data science from DataFrame to deployment
+
+github_url: https://github.com/rapidsai/cudf
+website_url: https://rapids.ai
+docs_url: https://docs.rapids.ai
+
+category: Data
+tags: [gpu, data-science, dataframe, machine-learning, analytics, python, cuda, visualization]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install cudf-cu12 cuml-cu12 cugraph-cu12
+
+problem_solved: |
+  Traditional CPU-based data processing becomes the bottleneck in ML pipelines handling
+  large datasets — pandas DataFrames, scikit-learn models, and NetworkX graphs struggle
+  to scale past memory or take minutes per operation. RAPIDS provides drop-in GPU
+  replacements for these libraries (cuDF for pandas, cuML for scikit-learn, cuGraph for
+  NetworkX) so data scientists can accelerate their existing workflows 10-50x without
+  rewriting code or learning new APIs.
+
+use_cases:
+  - Accelerate pandas DataFrame operations on large datasets by switching to cuDF with minimal code changes
+  - Train and evaluate scikit-learn compatible ML models on GPU with cuML for faster iteration
+  - Analyze large-scale graph networks with cuGraph for community detection, PageRank, and pathfinding
+  - Build end-to-end GPU-accelerated data pipelines that load, clean, transform, and model data without CPU transfer
+  - Visualize billion-row datasets interactively using cuXfilter for real-time dashboarding

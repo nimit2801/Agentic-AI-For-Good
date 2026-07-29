@@ -1,0 +1,31 @@
+name: Traceloop
+description: An open-source LLM observability platform built on OpenTelemetry that traces LLM API calls, vector database operations, and framework interactions for debugging, monitoring, and improving AI applications in production.
+tagline: OpenTelemetry-native observability for LLM applications
+
+github_url: https://github.com/traceloop/openllmetry
+website_url: https://traceloop.com
+docs_url: https://docs.traceloop.com
+
+category: Monitoring
+tags: [llm, observability, tracing, opentelemetry, monitoring, python, evaluation]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install traceloop-sdk
+
+problem_solved: |
+  LLM applications are notoriously difficult to debug and monitor because each API call,
+  vector search, and prompt template interaction happens inside framework abstractions
+  with no visibility. When an AI agent returns wrong answers or degrades over time,
+  developers have no way to trace the root cause. Traceloop instruments the entire
+  LLM stack via OpenTelemetry — from the user request through prompt construction,
+  retrieval, LLM inference, and response — providing traces, metrics, and evaluation
+  in a unified dashboard.
+
+use_cases:
+  - Trace end-to-end LLM inference requests across model providers, vector databases, and prompt templates to debug failures
+  - Monitor token usage, latency, and cost per request across all LLM calls in production
+  - Detect regressions in response quality by comparing traces against evaluation metrics over time
+  - Instrument RAG pipelines to see which documents were retrieved and how they influenced the final response
+  - Set up alerts on LLM performance degradation using OpenTelemetry-standard metrics and thresholds
