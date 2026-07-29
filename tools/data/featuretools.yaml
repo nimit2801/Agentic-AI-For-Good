@@ -1,0 +1,24 @@
+name: Featuretools
+description: "An open-source Python library for automated feature engineering using deep feature synthesis (DFS), which automatically generates hundreds of relevant features from relational and temporal datasets for machine learning pipelines."
+tagline: "Automated feature engineering for ML"
+github_url: https://github.com/alteryx/featuretools
+website_url: https://www.featuretools.com
+docs_url: https://featuretools.alteryx.com
+install_command: "pip install featuretools"
+category: Data
+tags:
+  - feature-engineering
+  - automated-ml
+  - data-preparation
+  - python
+  - relational-data
+  - time-series
+  - feature-synthesis
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+problem_solved: "Feature engineering is the most time-consuming and domain-expertise-intensive step in ML pipelines, requiring practitioners to manually write dozens of aggregation, transformation, and encoding operations across relational tables. This manual process is slow, inconsistent, and often misses high-value features. Featuretools automates this with deep feature synthesis — automatically creating features by traversing relationships between tables, applying stacking transformations (group-by means, trends, time-since-last), and generating hundreds of candidate features from multi-table datasets in minutes."
+use_cases:
+  - "Automatically generate hundreds of features from multi-table relational datasets (transactions, customers, products) for fraud detection, credit scoring, and customer churn prediction"
+  - "Combine automated feature engineering with feature selection to build robust ML pipelines that capture complex temporal patterns without manual feature coding"
+  - "Integrate into existing ML workflows as a scikit-learn-compatible transformer for production feature engineering with reproducible, version-controlled feature definitions"
