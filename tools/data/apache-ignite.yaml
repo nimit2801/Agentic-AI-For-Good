@@ -1,0 +1,30 @@
+name: Apache Ignite
+description: >-
+  A distributed database, caching, and processing platform designed for high-performance computing with in-memory speed. Provides ACID transactions, SQL querying, machine learning primitives, and compute grid capabilities — deployed as part of data infrastructure for ML feature stores, real-time analytics, and large-scale AI data pipelines.
+tagline: Distributed database and in-memory computing platform
+github_url: https://github.com/apache/ignite
+website_url: https://ignite.apache.org
+docs_url: https://ignite.apache.org/docs/latest/
+
+category: Data
+tags: [in-memory-computing, distributed-database, caching, sql, data-platform, apache, java]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  ML feature stores, real-time inference pipelines, and large-scale data processing need
+  a data platform that combines the speed of in-memory access with the reliability of
+  durable storage and the expressiveness of SQL. Using separate caches, databases, and
+  compute engines creates data movement overhead and operational complexity. Apache Ignite
+  solves this by providing a distributed in-memory data platform with ACID transactions,
+  ANSI SQL support, machine learning primitives, and compute grid capabilities — all in
+  one system. Data stays in memory across the cluster for fast access, while durable
+  storage and distributed computing eliminate the need to shuttle data between tiers.
+
+use_cases:
+  - Power a real-time ML feature store that serves features for online inference from in-memory data with ACID guarantees
+  - Run distributed ML training and scoring jobs directly on in-memory data without moving it to a separate compute cluster
+  - Cache model predictions, embeddings, and intermediate results with sub-millisecond access across an inference serving fleet
+  - Deploy a high-throughput SQL-queryable cache layer for real-time analytics dashboards monitoring model performance
+  - Build a distributed compute grid for large-scale data preprocessing and feature engineering that runs in-place on cached data
