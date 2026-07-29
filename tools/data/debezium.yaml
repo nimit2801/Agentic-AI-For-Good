@@ -1,0 +1,24 @@
+name: Debezium
+description: Open-source distributed platform for change data capture (CDC) that streams database row-level changes into event streams in real-time, enabling reliable data synchronization between databases and data pipelines.
+tagline: Stream database changes to data pipelines in real-time
+
+github_url: https://github.com/debezium/debezium
+website_url: https://debezium.io
+docs_url: https://debezium.io/documentation
+install_command: docker pull debezium/connect
+
+category: Data
+tags: [cdc, change-data-capture, streaming, kafka, data-integration, etl, real-time]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  ML pipelines and data platforms need access to real-time data changes from production databases for feature computation, model retraining triggers, and analytical data synchronization. Traditional batch ETL introduces hours of latency and misses incremental changes. Debezium solves this by capturing every row-level insert, update, and delete from databases like PostgreSQL, MySQL, MongoDB, and SQL Server, streaming them as ordered event streams through Kafka or other messaging systems. This enables ML systems to react to data changes in sub-second real-time without polling or batch processing.
+
+use_cases:
+  - Stream real-time feature updates from production databases into feature stores for online ML model inference with sub-second latency
+  - Trigger automated model retraining pipelines when source data changes reach configurable thresholds in the change stream
+  - Synchronize training data across heterogeneous database environments for consistent multi-source ML datasets
+  - Build event-driven data pipelines that transform database changes into structured feature vectors for real-time ML serving
+  - Replicate production database changes to analytical stores (data warehouses, vector databases) for offline ML training without affecting production workloads
