@@ -1,0 +1,29 @@
+name: StatsD
+description: A network daemon for aggregating application metrics (counters, timers, gauges) and forwarding them to backend monitoring systems with minimal overhead.
+tagline: Simple, lightweight metric aggregation for applications
+
+github_url: https://github.com/statsd/statsd
+docs_url: https://github.com/statsd/statsd/wiki
+
+category: Monitoring
+tags: [monitoring, metrics, observability, aggregation, instrumentation]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  AI applications generate high-cardinality metrics — request latencies, token
+  counts, cache hit rates, queue depths, error rates — that need to be collected
+  without impacting application performance. StatsD provides a lightweight UDP-based
+  protocol and daemon that receives metrics from thousands of application instances,
+  aggregates them over configurable flush intervals, and forwards the aggregated
+  data to backend stores like Graphite, Prometheus, or Datadog. Its stateless,
+  fire-and-forget design means even high-throughput inference services can emit
+  metrics with near-zero overhead.
+
+use_cases:
+  - Track LLM inference latency (time-to-first-token, tokens-per-second) as StatsD timers aggregated across replicas
+  - Monitor model serving error rates and request queue depths with StatsD gauges and counters
+  - Collect cache hit/miss ratios for embedding caches and KV caches in production AI services
+  - Aggregate GPU utilization and memory pressure metrics across a cluster of inference nodes
+  - Instrument batch inference pipelines to track throughput and job completion rates per model version

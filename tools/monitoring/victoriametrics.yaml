@@ -1,0 +1,30 @@
+name: VictoriaMetrics
+description: A high-performance, cost-effective time-series database and monitoring solution compatible with Prometheus, Graphite, and OpenTSDB query APIs.
+tagline: High-performance time-series database for observability
+
+github_url: https://github.com/VictoriaMetrics/VictoriaMetrics
+website_url: https://victoriametrics.com
+docs_url: https://docs.victoriametrics.com
+
+category: Monitoring
+tags: [monitoring, time-series, metrics, prometheus-compatible, observability]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Traditional time-series databases like Prometheus struggle with high-cardinality
+  metrics at scale — they consume excessive memory, storage, and CPU when ingesting
+  millions of unique time series from distributed AI infrastructure. VictoriaMetrics
+  is a drop-in replacement for Prometheus that handles 10x more data with 10x less
+  storage by using custom compression, efficient index structures, and a clustered
+  architecture. It ingests Prometheus remote writes, Graphite plaintext, InfluxDB
+  line protocol, and OpenTSDB telnet/HTTP, making it a universal backend for any
+  metrics pipeline without rewriting instrumentation.
+
+use_cases:
+  - Replace Prometheus for large-scale ML infrastructure monitoring with 10x less storage and memory overhead
+  - Ingest GPU and training job metrics at high cardinality from thousands of inference nodes
+  - Store long-term metrics history (months to years) with automated data downsampling and retention
+  - Serve as a unified metrics backend for heterogeneous environments mixing Prometheus, StatsD, and Graphite protocols
+  - Query infrastructure metrics across hundreds of model deployments with sub-second response times at billion-series scale

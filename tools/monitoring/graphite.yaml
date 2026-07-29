@@ -1,0 +1,32 @@
+name: Graphite
+description: A scalable time-series monitoring system that stores numeric metrics, renders on-demand graphs, and provides a powerful function API for data transformation and aggregation.
+tagline: Scalable time-series metrics storage and graphing
+
+github_url: https://github.com/graphite-project/graphite-web
+website_url: https://graphiteapp.org
+docs_url: https://graphite.readthedocs.io
+
+category: Monitoring
+tags: [monitoring, time-series, metrics, visualization, graphing]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install graphite-web
+
+problem_solved: |
+  AI applications emit millions of time-series data points — per-request latency,
+  model accuracy drift, GPU utilization, cache miss rates — that need to be stored
+  and queried historically without overwhelming the monitoring pipeline. Graphite
+  provides a purpose-built time-series database (Whisper) that stores numeric data
+  at configurable retention granularities, a rendering engine that generates graphs
+  on demand, and a powerful function API for aggregating, smoothing, and transforming
+  metrics at query time. Its simple text-based protocol and wide backend support
+  make it the standard storage layer for StatsD-collected metrics.
+
+use_cases:
+  - Store and visualize historical GPU utilization metrics across weeks of training runs
+  - Track model inference latency trends over time with moving averages and percentile aggregations
+  - Monitor embedding cache hit ratios with Graphite's consolidation and rollup functions
+  - Compare A/B deployment metrics (error rate, throughput, tail latency) across model versions
+  - Alert on metric anomalies using Graphite's data transformation functions for baseline deviation detection

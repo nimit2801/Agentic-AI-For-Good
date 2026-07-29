@@ -1,0 +1,28 @@
+name: MySQL
+description: The world's most popular open-source relational database management system, powering countless AI and ML data pipelines with reliable, ACID-compliant storage.
+tagline: The world's most popular open-source database
+
+github_url: https://github.com/mysql/mysql-server
+website_url: https://www.mysql.com
+docs_url: https://dev.mysql.com/doc
+
+category: Data
+tags: [database, relational-database, sql, oltp, storage]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  AI and ML pipelines need reliable, performant storage for structured data —
+  feature tables, experiment metadata, user profiles, event logs, and inference
+  results. MySQL provides ACID-compliant transactional storage with SQL querying,
+  indexing, replication, and clustering that scales from single-node development
+  to multi-region production deployments, serving as the operational data layer
+  that feeds ML training and inference pipelines.
+
+use_cases:
+  - Store feature tables and training labels with ACID guarantees for ML experiment reproducibility
+  - Serve as the operational database for AI applications requiring transactional consistency
+  - Power data ingestion pipelines that collect and transform event data for model training
+  - Store user profiles, session data, and A/B experiment assignments for personalization models
+  - Act as the backend for ML workflow orchestrators that track pipeline state and metadata

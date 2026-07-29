@@ -1,0 +1,29 @@
+name: Telegraf
+description: A plugin-driven server agent for collecting, processing, and sending metrics and events from infrastructure, applications, and IoT sources.
+tagline: Plugin-driven metrics collection agent
+
+github_url: https://github.com/influxdata/telegraf
+docs_url: https://docs.influxdata.com/telegraf
+
+category: Monitoring
+tags: [monitoring, metrics, observability, data-collection, infrastructure]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  ML infrastructure generates metrics from heterogeneous sources — GPU utilization
+  from NVIDIA tools, model serving logs from HTTP endpoints, system metrics from
+  the OS, database connection pools, and custom application metrics — all in
+  different formats. Telegraf provides a single, plugin-based agent with 300+
+  input plugins (CPU, disk, nvidia-smi, Kafka, HTTP, Prometheus, MQTT, etc.) that
+  collect metrics from every layer of the stack, transform and enrich them, and
+  output to any monitoring backend (InfluxDB, Prometheus, Graphite, Datadog,
+  CloudWatch). This eliminates the need for separate collection agents per source.
+
+use_cases:
+  - Collect GPU utilization, memory, and temperature metrics from NVIDIA GPUs across a training cluster
+  - Ingest model serving latency and throughput metrics from HTTP endpoints and message queues
+  - Monitor training job resource usage (CPU, memory, disk, network) across distributed workers
+  - Aggregate infrastructure health metrics from Kubernetes, Docker, and host-level sensors
+  - Forward collected metrics to multiple backends simultaneously (InfluxDB for storage, Prometheus for alerting)
