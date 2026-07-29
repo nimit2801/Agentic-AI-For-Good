@@ -1,0 +1,30 @@
+name: Hazelcast
+description: >-
+  A unified real-time data platform combining stream processing with a fast in-memory data store. Provides distributed computing with partitioning, replication, and elastic scalability for data-intensive applications including real-time ML inference, feature computation, and event-driven AI pipelines.
+tagline: Real-time stream processing and in-memory data grid
+github_url: https://github.com/hazelcast/hazelcast
+website_url: https://hazelcast.com
+docs_url: https://docs.hazelcast.com
+
+category: Data
+tags: [stream-processing, in-memory-data-grid, distributed-computing, caching, data-platform, java]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  AI pipelines that need real-time processing — streaming feature computation, online
+  inference aggregation, or event-driven model scoring — require a platform that combines
+  fast data access with stream processing. Separate databases and stream processors add
+  latency and complexity. Hazelcast solves this by unifying an in-memory data store with
+  embedded stream processing in a single horizontally scalable platform. Data is stored
+  partitioned across the cluster with near-line access, and computations run where the
+  data lives — eliminating serialization overhead and network round trips for real-time
+  ML workloads.
+
+use_cases:
+  - Compute streaming features in real time for online ML inference without round-tripping through a separate database
+  - Aggregate and score incoming events against ML models with sub-millisecond latency for fraud detection and personalization
+  - Build real-time feature engineering pipelines that transform and serve features directly from streaming data
+  - Deploy a distributed cache layer for model predictions, embeddings, and lookup tables across an inference cluster
+  - Run continuous ML inference on event streams with exactly-once processing semantics and elastic scalability
