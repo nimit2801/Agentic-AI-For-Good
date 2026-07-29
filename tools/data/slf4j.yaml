@@ -1,0 +1,32 @@
+name: SLF4J
+description: >-
+  The Simple Logging Facade for Java — a lightweight abstraction layer that allows Java applications to use any logging framework (Log4j, Logback, java.util.logging) through a unified API at deployment time, without code changes. Standard in JVM-based ML infrastructure projects including Apache Spark, Apache Flink, and Apache Kafka.
+tagline: Universal logging facade for Java applications
+github_url: https://github.com/qos-ch/slf4j
+website_url: https://www.slf4j.org
+docs_url: https://www.slf4j.org/manual.html
+
+category: Data
+tags: [logging, observability, java, abstraction-layer, monitoring, dev-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: >-
+  JVM-based ML frameworks — Apache Spark, Apache Flink, Apache Kafka, Elasticsearch —
+  each depend on different logging implementations, creating classpath conflicts and
+  deployment headaches when multiple frameworks run in the same environment. Direct
+  dependencies on specific logging libraries make it difficult to change logging
+  backends without modifying source code. SLF4J solves this by providing a thin
+  abstraction layer that decouples application code from the concrete logging
+  implementation. Applications write to the SLF4J API at compile time and bind to
+  Logback, Log4j, or java.util.logging at deployment time — eliminating classpath
+  conflicts and allowing teams to standardize on a single logging backend across
+  their entire JVM-based ML infrastructure.
+
+use_cases:
+  - Eliminate logging classpath conflicts when mixing Apache Spark, Apache Flink, and Apache Kafka in the same ML pipeline
+  - Switch logging backends across environments without modifying application code — Log4j in production, Logback in development
+  - Standardize logging configuration across a heterogeneous JVM-based ML infrastructure stack with a common API
+  - Reduce boilerplate and improve testability of logging in JVM-based ML applications with parameterized message formatting
+  - Enable migration between logging frameworks as organizational standards evolve without touching code or recompiling

@@ -1,0 +1,31 @@
+name: Istio
+description: >-
+  An open-source service mesh that provides traffic management, security, observability, and policy enforcement for microservices running on Kubernetes — widely used in ML infrastructure to manage model serving traffic, enforce access control, and collect telemetry across inference pipelines.
+tagline: Connect, secure, and observe microservices at scale
+github_url: https://github.com/istio/istio
+website_url: https://istio.io
+docs_url: https://istio.io/latest/docs/
+install_command: curl -sL https://istio.io/downloadIstioctl | sh -
+
+category: Dev Tools
+tags: [service-mesh, kubernetes, traffic-management, security, observability, microservices, infrastructure]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  As ML systems grow from a few services to dozens — model servers, embedding generators,
+  feature stores, vector databases, prompt routers — managing network traffic, security,
+  and observability becomes a distributed systems challenge. Each service needs retry
+  logic, circuit breakers, TLS, traffic splitting, and distributed tracing, and
+  implementing these in every service duplicates effort. Istio solves this by offloading
+  infrastructure concerns to a sidecar proxy mesh that handles traffic routing, mTLS,
+  access policies, and telemetry collection without modifying application code, making it
+  possible to operate ML inference infrastructure securely and observably at scale.
+
+use_cases:
+  - Manage canary deployments and traffic splitting across model server versions during A/B testing
+  - Enforce mTLS and access control between model serving, embedding, and vector search services
+  - Collect distributed traces and metrics across the full ML inference pipeline for latency analysis
+  - Implement circuit breakers and retry policies for model serving endpoints to handle traffic spikes gracefully
+  - Route inference traffic to GPU-enabled nodes with weighted distribution and failover policies

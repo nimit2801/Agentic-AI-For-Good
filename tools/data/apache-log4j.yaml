@@ -1,0 +1,31 @@
+name: Apache Log4j
+description: >-
+  A versatile, feature-rich logging library for Java applications that provides hierarchical loggers, multiple output destinations, configurable layouts, and asynchronous logging — essential for debugging, monitoring, and auditing ML pipelines and infrastructure components built on the JVM.
+tagline: Reliable, configurable Java logging for production systems
+github_url: https://github.com/apache/logging-log4j2
+website_url: https://logging.apache.org/log4j/2.x/
+docs_url: https://logging.apache.org/log4j/2.x/manual/index.html
+
+category: Data
+tags: [logging, observability, java, monitoring, debugging, apache]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  ML infrastructure components built on the JVM — Apache Spark, Apache Flink, Apache
+  Kafka, Apache HBase, Elasticsearch — produce runtime logs that teams rely on for
+  debugging failures, monitoring pipeline health, and auditing model decisions. Without a
+  structured logging framework, logs are inconsistent, hard to search, and lack the
+  context needed to trace issues through distributed systems. Apache Log4j solves this
+  with a configurable logging framework that supports hierarchical loggers, multiple
+  output destinations, asynchronous logging, and rich layout patterns — ensuring that JVM-based
+  ML infrastructure produces consistent, searchable, and actionable log output from
+  development through production.
+
+use_cases:
+  - Instrument Apache Spark ML pipelines with structured logging for debugging data processing and model training jobs
+  - Monitor Apache Kafka-based event streaming infrastructure with configurable async logging for ML feature pipelines
+  - Capture detailed runtime diagnostics from distributed JVM services in ML serving infrastructure
+  - Route and format logs from Elasticsearch, Cassandra, and other JVM-based AI data stores consistently
+  - Implement log-based monitoring and alerting for JVM ML infrastructure with structured key-value log entries

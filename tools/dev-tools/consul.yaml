@@ -1,0 +1,32 @@
+name: Consul
+description: >-
+  HashiCorp's service networking platform providing service discovery, health checking, configuration management, and secure service-to-service communication across any runtime environment — essential for connecting and managing ML infrastructure across edge, on-premise, and multi-cloud deployments.
+tagline: Service networking for dynamic infrastructure
+github_url: https://github.com/hashicorp/consul
+website_url: https://www.consul.io
+docs_url: https://developer.hashicorp.com/consul/docs
+install_command: brew install consul
+
+category: Dev Tools
+tags: [service-discovery, service-mesh, service-networking, configuration, infrastructure, hashicorp]
+pricing: freemium
+is_open_source: true
+license: BUSL-1.1
+
+problem_solved: >-
+  ML infrastructure spans multiple environments — GPU clusters for training, edge devices
+  for inference, cloud services for data processing — and services need to discover and
+  communicate reliably across them. Hard-coded IP addresses, DNS-based service discovery,
+  and manual configuration break as nodes scale up and down. Consul solves this with
+  distributed service discovery, health checking, and configuration management that works
+  across data centers and cloud regions. Services register themselves, clients discover
+  them by name, health checks remove unhealthy endpoints, and configuration changes
+  propagate automatically — enabling ML teams to manage distributed inference and data
+  pipelines without manual networking.
+
+use_cases:
+  - Register and discover model serving endpoints, feature stores, and embedding services by logical name across clusters
+  - Implement health checks that automatically route inference traffic away from overloaded or failing model servers
+  - Store and distribute configuration values for ML pipeline parameters without redeploying services
+  - Secure service-to-service communication with TLS between training, inference, and data pipeline services
+  - Enable multi-region service discovery for geo-distributed ML inference with automatic failover

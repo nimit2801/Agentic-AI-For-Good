@@ -1,0 +1,31 @@
+name: HAProxy
+description: >-
+  A high-performance TCP/HTTP load balancer and proxy server that provides traffic distribution, health checking, rate limiting, and observability for web applications and microservices — widely deployed to balance inference traffic across model server instances and API gateway deployments.
+tagline: High-performance load balancer for reliable traffic distribution
+github_url: https://github.com/haproxy/haproxy
+website_url: https://www.haproxy.org
+docs_url: https://docs.haproxy.org
+install_command: brew install haproxy
+
+category: Dev Tools
+tags: [load-balancing, reverse-proxy, traffic-management, high-availability, networking, infrastructure]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: >-
+  Model serving and inference infrastructure need to distribute traffic across multiple
+  server instances to handle scale, maintain availability during failures, and route to
+  different model versions. Without a capable load balancer, client-facing services
+  become single points of failure and can't scale horizontally. HAProxy solves this by
+  providing a battle-tested TCP/HTTP proxy that distributes traffic based on health
+  checks, implements sophisticated routing rules, enforces rate limits, and provides
+  detailed metrics — all with sub-millisecond per-request overhead and the ability to
+  handle millions of concurrent connections on modest hardware.
+
+use_cases:
+  - Distribute inference requests across a pool of model server instances with health-check-aware load balancing
+  - Route requests to different model versions based on URL paths or headers for A/B testing and canary deployments
+  - Implement rate limiting and access control for public-facing LLM API endpoints
+  - Terminate TLS for internal model serving infrastructure and forward plain HTTP to backend services
+  - Provide a unified ingress point for multiple model serving frameworks (Triton, vLLM, TGI) with detailed request metrics
