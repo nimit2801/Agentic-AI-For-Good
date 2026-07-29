@@ -1,0 +1,32 @@
+name: Cython
+description: The de-facto standard Python-to-C compiler that translates annotated Python code into C extensions. Cython combines Python's ease of use with C's performance, supporting static type declarations, direct C library calls, and NumPy array integration.
+tagline: Optimizing Python-to-C compiler for high-performance extensions
+
+github_url: https://github.com/cython/cython
+website_url: https://cython.org
+docs_url: https://cython.readthedocs.io
+
+category: Dev Tools
+tags: [python, c, compiler, performance, numpy, c-extension, developer-tools]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install cython
+
+problem_solved: |
+  Python's interpreted nature makes tight numerical loops, buffer manipulation,
+  and C library binding 10-100x slower than native code. Writing C extensions
+  manually requires deep CPython API knowledge and verbose boilerplate. Cython
+  accepts .pyx files that look like Python but allow optional static type
+  declarations (cdef, cpdef, C structs). It compiles them to C and then to
+  shared objects (.so) that import as normal Python modules. Critical inner
+  loops can match C speed while the rest of the file remains pure Python,
+  providing a smooth gradient from prototype to production performance.
+
+use_cases:
+  - Speed up Python data processing pipelines by annotating hot loops with static C types for 10-100x performance gains
+  - Wrap existing C/C++ libraries (signal processing, computer vision, serialization) as importable Python modules without writing CPython API code
+  - Build high-performance NumPy-aware algorithms with typed memory views that operate on array data without Python overhead
+  - Create custom PyTorch CUDA extensions by combining Cython's integration with CUDA Python and pybind11 for training loop optimizations
+  - Optimize ML preprocessing and feature engineering steps that cannot be vectorized with NumPy, replacing loops with C-speed compiled code

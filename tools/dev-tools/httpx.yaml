@@ -1,0 +1,32 @@
+name: HTTPX
+description: A fully featured Python HTTP client library with an async API built on h11/h2 for HTTP/1.1 and HTTP/2 support. HTTPX provides a modern requests-compatible interface with async/await, connection pooling, and HTTP/2 by default.
+tagline: Modern Python HTTP client with async and HTTP/2 support
+
+github_url: https://github.com/encode/httpx
+website_url: https://www.python-httpx.org
+docs_url: https://www.python-httpx.org
+
+category: Dev Tools
+tags: [python, http-client, async, http2, api-client, networking, developer-tools]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+install_command: pip install httpx
+
+problem_solved: |
+  Calling REST APIs and LLM inference endpoints from Python requires an HTTP
+  client that handles connection pooling, retries, timeouts, and streaming
+  efficiently. The standard urllib is low-level and verbose, while requests is
+  synchronous-only and lacks HTTP/2. HTTPX provides a familiar requests-style
+  API with native async/await, HTTP/2 multiplexing, connection keep-alive, and
+  rich timeout/retry configuration. Code written with HTTPX works identically
+  in sync and async contexts, and its h11/h2 stack gives fine-grained control
+  over the HTTP protocol without sacrificing convenience.
+
+use_cases:
+  - Call LLM provider APIs (OpenAI, Anthropic, Together) with async streaming, connection pooling, and automatic retry for production inference
+  - Build async web scrapers and data ingestion pipelines that multiplex hundreds of concurrent HTTP requests over HTTP/2 connections
+  - Replace requests in existing codebases for a drop-in upgrade to HTTP/2 and async support with minimal API changes
+  - Implement API client wrappers with automatic JSON serialization, auth headers, and custom transport layers for mock testing
+  - Stream server-sent events (SSE) from real-time AI inference endpoints with on-the-fly decoding and backpressure handling

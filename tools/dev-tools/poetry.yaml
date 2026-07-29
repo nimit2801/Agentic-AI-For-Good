@@ -1,0 +1,32 @@
+name: Poetry
+description: A Python dependency management and packaging tool that uses pyproject.toml for configuration. Poetry handles virtual environments, dependency resolution, building, and publishing to PyPI with a single consistent CLI.
+tagline: Modern Python dependency and packaging management
+
+github_url: https://github.com/python-poetry/poetry
+website_url: https://python-poetry.org
+docs_url: https://python-poetry.org/docs
+
+category: Dev Tools
+tags: [python, dependency-management, packaging, pyproject-toml, virtualenv, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install poetry
+
+problem_solved: |
+  Python projects suffer from dependency conflicts, missing lock files, and
+  inconsistent environment reproduction across machines. Poetry replaces pip,
+  virtualenv, setuptools, and twine with a single tool: it creates and manages
+  virtual environments, resolves dependencies with a SAT solver that produces
+  deterministic lock files, and builds and publishes packages to PyPI from a
+  single pyproject.toml. The lock file and resolver guarantee that every
+  developer and CI environment installs identical dependency trees, eliminating
+  "works on my machine" failures and transitive-dependency surprises.
+
+use_cases:
+  - Manage Python AI/ML project dependencies with deterministic lock files that reproduce identically across dev, CI, and production
+  - Publish Python packages (client SDKs, utility libraries, model wrappers) to PyPI with a single `poetry publish` command
+  - Isolate project environments automatically without manual venv activation or conda environment switching
+  - Build Docker containers with poetry export --without-hashes for pip-installable requirements.txt files
+  - Manage monorepo Python packages with workspace support, shared lock file, and editable installs across packages
