@@ -1,0 +1,31 @@
+name: Apache Thrift
+description: A cross-language serialization and RPC framework originally developed by Facebook. Thrift generates client and server code in 20+ languages from a single interface definition file, with pluggable transport, protocol, and server abstractions.
+tagline: Cross-language serialization and RPC framework
+
+github_url: https://github.com/apache/thrift
+website_url: https://thrift.apache.org
+
+category: Data
+tags: [serialization, rpc, cross-language, idl, data-interchange, apache, data-pipeline]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install thrift
+
+problem_solved: |
+  Microservices in polyglot environments need a shared contract for data
+  serialization and remote procedure calls, but each language has its own native
+  serialization format and RPC library. Thrift provides an Interface Definition
+  Language (IDL) that describes data types and service interfaces once, then
+  generates native serialization and RPC code for C++, Java, Python, Go, Rust,
+  and 20+ other languages. The generated code handles encoding, decoding,
+  transport framing, and request dispatch, ensuring type-safe communication
+  across language boundaries without manual marshalling.
+
+use_cases:
+  - Define a single message schema for a microservice mesh that spans Java backends, Python ML services, and Go data pipelines
+  - Build high-throughput RPC services with compact binary serialization that outperforms JSON and XML on wire size
+  - Generate strongly-typed Redis-like cache clients where key-value schemas are enforced at compile time
+  - Power internal data pipelines that bridge legacy Java systems with modern Python/Go AI inference services
+  - Create language-agnostic protocol definitions for IoT device communication where bandwidth and CPU are constrained
