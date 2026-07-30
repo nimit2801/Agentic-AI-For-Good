@@ -1,0 +1,22 @@
+name: Datashader
+description: "Datashader is a Python library for rendering large datasets — millions to billions of points — as images in real time. It uses rasterization and aggregation pipelines to turn massive, high-dimensional data into meaningful visualizations without downsampling or data loss, making it practical to explore big data interactively."
+tagline: "Render massive datasets as images without downsampling"
+github_url: https://github.com/holoviz/datashader
+docs_url: https://datashader.org/
+install_command: pip install datashader
+category: Data
+tags:
+  - visualization
+  - big-data
+  - python
+  - rasterization
+  - data-science
+  - interactive
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+problem_solved: "Standard plotting libraries fail with large datasets — they either crash, freeze, or require destructive downsampling that hides patterns. Datashader renders millions to billions of data points as pixel-perfect rasterized images without subsampling, preserving outliers, clusters, and density patterns that scatter plots would miss."
+use_cases:
+  - "Visualize billion-point geospatial datasets like GPS traces, climate data, or cellular coverage maps"
+  - "Explore large ML training datasets to identify distribution shifts, outliers, and label errors"
+  - "Build interactive dashboards for real-time monitoring of high-volume system metrics and logs"
