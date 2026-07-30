@@ -1,0 +1,26 @@
+name: Git LFS
+description: |-
+  Git Large File Storage (LFS) is a Git extension that replaces large files such as datasets, model checkpoints, audio samples, and video assets with text pointers while storing the file contents on a remote server. It enables AI/ML teams to version large binary files in Git repositories without bloating the repository size, supporting datasets up to gigabytes per file with seamless push, pull, and clone workflows.
+tagline: Version large files in Git without bloating repositories
+
+github_url: https://github.com/git-lfs/git-lfs
+website_url: https://git-lfs.com
+docs_url: https://github.com/git-lfs/git-lfs/blob/main/docs/man/git-lfs.1.ronn
+
+install_command: brew install git-lfs
+
+category: Dev Tools
+tags: [version-control, git, large-files, data-management, devops, collaboration]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  AI and ML teams store large binary files — training datasets, model checkpoints, fine-tuned weights, experiment artifacts, and evaluation outputs — alongside their code in version control. Standard Git cannot handle large files efficiently, ballooning repository size with every binary change, causing slow clones, exhausting storage quotas, and making collaboration impractical. Git LFS solves this by replacing large files in the working tree with lightweight text pointers while storing the actual binary content on a remote server, enabling teams to version and distribute multi-gigabyte model artifacts and datasets using standard Git workflows with automatic background uploads and downloads, local and remote caching, and native CI/CD integration.
+
+use_cases:
+  - Store multi-gigabyte ML training datasets and model checkpoints in Git repositories without exceeding GitHub's file size limits
+  - Version fine-tuned model weights alongside experiment code, enabling reproducible training pipelines with exact data-artifact correspondence
+  - Collaborate on large-scale ML projects where team members share model artifacts and evaluation outputs through standard Git clone, pull, and push workflows
+  - Distribute pre-trained model weights and benchmark datasets as part of open-source releases with transparent version tracking and download statistics
+  - Integrate with CI/CD pipelines to automatically cache and download large model artifacts during training, evaluation, and deployment workflows

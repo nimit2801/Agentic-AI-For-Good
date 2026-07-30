@@ -1,0 +1,24 @@
+name: JuiceFS
+description: |-
+  JuiceFS is a high-performance POSIX file system built on cloud object storage (S3, GCS, Azure Blob) with metadata stored in a separate database (Redis, SQLite, TiKV). It provides fully POSIX-compatible access to petabyte-scale data lakes for AI training, with automatic caching, data compression, and encryption across distributed compute clusters.
+tagline: POSIX file system on cloud object storage with Redis metadata
+
+github_url: https://github.com/juicedata/juicefs
+website_url: https://juicefs.com
+docs_url: https://juicefs.com/docs
+
+category: Data
+tags: [file-system, cloud-storage, posix, data-lake, infrastructure, performance, distributed-storage]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AI training workflows expect POSIX file system semantics — random reads and writes, directory listings, file seeks, and concurrent access — but cloud object stores (S3, GCS, Azure Blob) provide only key-value GET/PUT interfaces with no directory operations, no atomic renames, and high per-request latency. This forces teams to either copy datasets to local SSDs before training (wasting storage and transfer time) or sacrifice POSIX compatibility by rewriting data loading code for object store APIs. JuiceFS solves this by presenting a fully POSIX-compatible file system interface on top of your existing cloud object store, storing file metadata in a high-performance Redis or SQLite database for sub-millisecond directory operations, caching hot data on local SSDs for near-local performance, supporting concurrent reads and writes from thousands of clients, and providing built-in data compression and encryption — enabling existing ML training code written for POSIX file systems to run on cloud object storage without any code changes.
+
+use_cases:
+  - Mount training data from cloud object storage as a local POSIX file system on GPU training nodes, enabling unmodified PyTorch/TensorFlow data loaders to stream from S3
+  - Share datasets across a distributed training cluster with concurrent POSIX read/write access and JuiceFS's distributed consistency guarantees
+  - Cache frequently accessed training data on GPU node-local SSDs through JuiceFS's automatic write-back cache for sub-millisecond read latency on hot data
+  - Run model evaluation and inference workloads directly on cloud object storage without pre-downloading datasets, using JuiceFS's FUSE mount for transparent access
+  - Encrypt sensitive training data at rest with JuiceFS's client-side encryption and manage access keys through standard POSIX permission bits and ACLs
