@@ -1,0 +1,22 @@
+name: Pyright
+description: "A fast Python static type checker written in TypeScript, powering the Pylance VS Code extension and providing TypeScript-style type checking, incremental analysis, and language server protocol integration for large codebases."
+tagline: "Fast Python type checker in TypeScript"
+github_url: https://github.com/microsoft/pyright
+website_url: https://github.com/microsoft/pyright
+docs_url: https://microsoft.github.io/pyright
+install_command: "pip install pyright"
+category: Dev Tools
+tags:
+  - python
+  - type-checking
+  - static-analysis
+  - microsoft
+  - lsp
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "Developers working on large Python codebases need fast, scalable type checking that integrates with their editor and CI pipeline, but existing type checkers can be slow on multi-million-line projects and lack first-class language server protocol (LSP) support. Pyright is written in TypeScript with a high-performance incremental analysis engine that provides sub-second type checking and auto-completion in VS Code via the Pylance extension, while also offering a CLI for CI integration — giving teams both IDE-speed type feedback and pre-commit type safety without switching tools."
+use_cases:
+  - "Run pyright in CI pipelines to enforce type correctness across large Python monorepos, leveraging its incremental analysis for fast diff-level type validation on each commit"
+  - "Provide real-time type checking, auto-completion, and inline error reporting in VS Code via the Pylance extension, giving developers immediate type feedback while editing"
+  - "Configure pyright with strict mode, per-directory severity overrides, and type stub paths to enforce graduated typing policies across microservices and library packages"

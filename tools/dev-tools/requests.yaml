@@ -1,0 +1,22 @@
+name: Requests
+description: "A simple, elegant HTTP library for Python with a human-friendly API for sending HTTP/1.1 requests, handling sessions, cookies, authentication, file uploads, and SSL verification — described as HTTP for Humans."
+tagline: "Elegant HTTP library for Python"
+github_url: https://github.com/psf/requests
+website_url: https://requests.readthedocs.io
+docs_url: https://requests.readthedocs.io/en/latest
+install_command: "pip install requests"
+category: Dev Tools
+tags:
+  - python
+  - http
+  - api-client
+  - networking
+  - web
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Python's standard library urllib provides basic HTTP capabilities but requires verbose, non-intuitive code for common operations like session management, cookie handling, JSON POST requests, and file uploads — making it frustrating for developers to interact with REST APIs, web services, and authentication flows. Requests provides a clean, well-documented API where common HTTP operations are expressible in a single line — get, post with JSON, stream downloads, session persistence across requests, and automatic connection pooling — reducing boilerplate by 60-80% compared to urllib while handling edge cases like keep-alive, encoding detection, and SSL verification transparently."
+use_cases:
+  - "Send authenticated HTTP requests to REST APIs for LLM inference endpoints, embedding services, and vector database operations with structured JSON request/response handling"
+  - "Manage session state across multiple requests (cookies, headers, connection pooling) using requests.Session for long-running interactions with web applications and API gateways"
+  - "Download large model weights and datasets with streaming requests, progress tracking, and automatic decompression to avoid memory overflow during ML model acquisition"

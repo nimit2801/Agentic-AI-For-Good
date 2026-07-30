@@ -1,0 +1,22 @@
+name: mypy
+description: "A static type checker for Python that infers and validates type annotations at analysis time, catching type-related bugs before runtime while supporting gradual typing, stub files, and the full Python type system (generics, protocols, overloads, and type narrowing)."
+tagline: "Optional static type checker for Python"
+github_url: https://github.com/python/mypy
+website_url: https://mypy-lang.org
+docs_url: https://mypy.readthedocs.io
+install_command: "pip install mypy"
+category: Dev Tools
+tags:
+  - python
+  - type-checking
+  - static-analysis
+  - linting
+  - code-quality
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "Python's dynamic typing leads to runtime type errors that are only discovered during execution, causing production failures that could have been caught at development time. Without static type checking, teams rely on runtime tests to catch type mismatches, leaving gaps in coverage for rarely-executed code paths. Mypy analyzes Python programs without running them, inferring types from annotations and validating them against the type system — catching None-type errors, argument mismatches, and return-type violations during CI rather than in production, while supporting gradual adoption through per-file opt-in and stub files for third-party libraries."
+use_cases:
+  - "Add type annotations to existing Python codebases incrementally and validate them with mypy in CI, catching None-related AttributeError and argument type mismatches before deployment"
+  - "Define and enforce strict type contracts for library APIs using mypy's strict mode, ensuring that all function signatures, generic types, and protocol implementations are correctly typed"
+  - "Use stub files (.pyi) and third-party type stubs (typeshed) to type-check interactions with untyped libraries, extending coverage beyond the project's own code"
