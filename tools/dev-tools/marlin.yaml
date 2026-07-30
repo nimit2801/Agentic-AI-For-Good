@@ -1,0 +1,21 @@
+name: Marlin
+description: "Marlin is a highly optimized FP16xINT4 LLM inference kernel that achieves near-ideal ~4x speedups for medium batch sizes (16-32 tokens). It provides mixed-precision matrix multiplication for 4-bit quantized large language models, enabling faster inference on consumer GPUs without sacrificing output quality."
+tagline: "Fast FP16xINT4 LLM inference kernel for 4-bit models"
+github_url: https://github.com/IST-DASLab/marlin
+install_command: pip install marlin
+category: Dev Tools
+tags:
+  - inference
+  - quantization
+  - llm
+  - kernel
+  - gpu
+  - performance
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Running large language models with 4-bit quantization reduces memory but causes significant inference slowdown due to inefficient FP16xINT4 matrix multiplication on GPUs. Marlin provides a near-optimal kernel that achieves close to theoretical 4x speedup for common batch sizes, making quantized LLM inference practical on consumer hardware."
+use_cases:
+  - "Accelerate 4-bit quantized LLM inference on consumer GPUs for real-time text generation"
+  - "Serve quantized models with lower latency for interactive chatbot applications"
+  - "Reduce inference cost and hardware requirements for production LLM deployments"
