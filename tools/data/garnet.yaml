@@ -1,0 +1,14 @@
+name: Garnet
+description: |
+  Garnet is a remote cache-store from Microsoft Research that offers high performance, low latency, and scalable data caching. It supports a rich cache API including raw string (GET/SET) operations, Redis-compatible commands, pub/sub, and geo-distributed replication. Garnet is built on .NET and provides a drop-in Redis-compatible replacement with significantly higher throughput and lower client latency.
+problem_solved: |
+  Traditional Redis deployments can struggle with throughput scaling due to single-threaded architecture limitations. Garnet solves this with a modern multithreaded architecture on .NET that achieves higher throughput and lower latency, while maintaining wire-compatibility with Redis clients for seamless migration without application-level changes.
+use_cases:
+  - "High-performance caching layer for AI inference serving at scale"
+  - "Low-latency session store and rate limiting for LLM application backends"
+  - "Pub/sub message broker for real-time AI application event streaming"
+category: Data
+github_url: https://github.com/microsoft/garnet
+website_url: https://microsoft.github.io/garnet/
+is_open_source: true
+install_command: dotnet tool install --global garnet-server
