@@ -1,0 +1,22 @@
+name: Black
+description: "The uncompromising Python code formatter that automatically formats code with minimal configuration, producing consistently styled code by enforcing a deterministic style with the smallest possible diffs."
+tagline: "Uncompromising Python code formatter"
+github_url: https://github.com/psf/black
+website_url: https://black.readthedocs.io
+docs_url: https://black.readthedocs.io/en/stable
+install_command: "pip install black"
+category: Dev Tools
+tags:
+  - python
+  - formatter
+  - code-style
+  - automation
+  - pep-8
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "Python teams traditionally debate code formatting conventions in code reviews, wasting time on stylistic preferences (single vs double quotes, trailing commas, line wrapping) that add no functional value. Black eliminates formatting discussions by providing a deterministic, opinionated formatter that produces the same output regardless of who runs it — with an occasional opt-out (# fmt: off) for special cases. This guarantees PEP 8 compliance, reduces code review noise from formatting nits, and integrates with pre-commit hooks or CI to enforce a consistent style across the entire codebase without configuration or debate."
+use_cases:
+  - "Format entire Python codebases consistently with black . in CI pipelines, producing the same output on every run and eliminating code review debates about formatting conventions"
+  - "Integrate Black with pre-commit hooks and editor auto-save-on-format configurations so that every developer produces identically styled code without manual formatting effort"
+  - "Use Black with Jupyter notebook support (black[jupyter]) to format code cells in .ipynb files, maintaining consistent style across both Python scripts and notebooks"

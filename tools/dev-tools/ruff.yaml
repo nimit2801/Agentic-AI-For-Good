@@ -1,0 +1,21 @@
+name: Ruff
+description: "An extremely fast Python linter and code formatter written in Rust, providing linting for over 800 rules (including pyflakes, pylint, isort, and flake8) with zero-config setup, automatic fix support, and drop-in compatibility with existing formatters like Black."
+tagline: "Extremely fast Python linter and formatter"
+github_url: https://github.com/astral-sh/ruff
+website_url: https://docs.astral.sh/ruff
+install_command: "pip install ruff"
+category: Dev Tools
+tags:
+  - python
+  - linter
+  - formatter
+  - rust
+  - code-quality
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "Python projects historically required multiple linting tools (flake8, pyflakes, isort, pylint) and formatters (Black, autopep8) running as separate pre-commit hooks, each with its own configuration, performance profile, and output format — leading to slow CI pipelines, configuration drift, and inconsistent rule application. Ruff combines hundreds of lint rules and auto-fixes in a single Rust-built binary that runs 10-100x faster than existing tools, with zero-config defaults and automatic formatter compatibility that lets teams replace a multi-tool pre-commit setup with a single dependency."
+use_cases:
+  - "Lint and auto-fix Python codebases of any size in CI pipelines, catching PEP 8 violations, unused imports, logic errors, and security issues across 800+ built-in rules with sub-second execution"
+  - "Replace separate flake8, isort, and pylint configurations with a single Ruff config file while maintaining the same rule sets for team consistency"
+  - "Format Python code with drop-in Black compatibility, reordering imports and sorting dependencies in the same pass without an extra isort step"

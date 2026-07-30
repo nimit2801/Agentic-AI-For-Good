@@ -1,0 +1,22 @@
+name: pipenv
+description: "A Python dependency management tool that combines Pipfile-based dependency specification, virtual environment management, and deterministic lockfiles into a single workflow — aiming to bring the best of npm/yarn and Bundler conventions to Python project dependency management."
+tagline: "Python dependency management with Pipfile and lockfiles"
+github_url: https://github.com/pypa/pipenv
+website_url: https://pipenv.pypa.io
+docs_url: https://pipenv.pypa.io/en/latest
+install_command: "pip install pipenv"
+category: Dev Tools
+tags:
+  - python
+  - dependency-management
+  - virtual-environments
+  - packaging
+  - pipfile
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "Python projects lack a built-in standard for declarative dependency specification with deterministic lockfiles, forcing teams to choose between fragile requirements.txt files (no lock semantics, no dev/production separation) and more opinionated tools like Poetry or Conda. Pipenv provides a Pipfile-based manifest format with separate dev and runtime dependencies, Pipfile.lock for reproducible installs, automatic virtual environment creation, and dependency graph visualization — standardizing Python dependency management across teams without migrating away from PyPI."
+use_cases:
+  - "Initialize Python projects with a standard Pipfile that separates development dependencies (testing, linting) from runtime dependencies (library packages) and generates a deterministic Pipfile.lock"
+  - "Install project dependencies into an automatically created virtual environment with pipenv install, ensuring consistent environments across developer machines and CI runners"
+  - "Audit the dependency graph for sub-dependencies and security vulnerabilities using pipenv graph and pipenv check, maintaining visibility into transitive dependency resolution"

@@ -1,0 +1,22 @@
+name: pre-commit
+description: "A framework for managing and maintaining multi-language pre-commit hooks in Git repositories, with automatic hook installation, configurable execution, and a curated registry of ready-to-use hooks from the open-source community."
+tagline: "Multi-language pre-commit hook framework"
+github_url: https://github.com/pre-commit/pre-commit
+website_url: https://pre-commit.com
+docs_url: https://pre-commit.com/index.html
+install_command: "pip install pre-commit"
+category: Dev Tools
+tags:
+  - git-hooks
+  - code-quality
+  - python
+  - automation
+  - ci
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "Teams using Git repositories for collaborative development need automated code quality checks (linting, formatting, type checking, secret scanning) before each commit, but writing and maintaining shell scripts for pre-commit hooks is error-prone, language-specific, and hard to share across team members. Pre-commit provides a declarative .pre-commit-config.yaml format where developers list the hooks they want from a registry of 2000+ pre-built hooks, installs them automatically, and runs each hook against staged files — catching issues before they reach CI without requiring every developer to install tools manually."
+use_cases:
+  - "Configure automated linting, formatting, and type checking hooks (ruff, black, mypy) in a .pre-commit-config.yaml file that runs before every commit, ensuring all contributors pass the same quality gates"
+  - "Run pre-commit hooks in CI pipelines with pre-commit run --all-files to catch issues in pull requests that bypassed local git hooks"
+  - "Use hooks from the pre-commit hook registry for trailing whitespace removal, YAML validation, JSON formatting, secret detection, and large-file prevention without writing custom hook scripts"

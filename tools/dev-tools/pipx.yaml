@@ -1,0 +1,22 @@
+name: pipx
+description: "A tool for installing and running Python applications in isolated virtual environments, enabling side-effect-free installation of CLI tools like black, ruff, mypy, and poetry without polluting the global Python environment or requiring per-project venvs."
+tagline: "Install and run Python applications in isolated environments"
+github_url: https://github.com/pypa/pipx
+website_url: https://pipx.pypa.io
+docs_url: https://pipx.pypa.io/stable
+install_command: "pip install pipx"
+category: Dev Tools
+tags:
+  - python
+  - cli-tools
+  - virtual-environments
+  - packaging
+  - application-management
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "Python CLI tools like black, ruff, mypy, poetry, and httpie traditionally require either system-wide pip installs that cause dependency conflicts between tools, or per-project installs that require activating virtual environments just to run a linter or formatter. pipx installs each Python CLI application in its own isolated virtual environment, symlinks the binary to a shared PATH location, and handles upgrades and removals — keeping global site-packages clean and eliminating environment conflicts between tools that depend on different library versions."
+use_cases:
+  - "Install and run Python-based development tools (black, ruff, mypy, poetry) in isolated environments with pipx install, keeping global site-packages free of tool-specific dependencies"
+  - "Run a Python CLI tool temporarily without installing it using pipx run, streaming the package and executing it in a transient ephemeral environment"
+  - "List, upgrade, and remove globally installed Python tools with pipx list, pipx upgrade-all, and pipx uninstall-all for simple tool lifecycle management"
