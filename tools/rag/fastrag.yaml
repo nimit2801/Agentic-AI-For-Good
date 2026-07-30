@@ -1,0 +1,26 @@
+name: FastRAG
+description: |-
+  FastRAG is an efficient retrieval-augmented generation framework from Intel Labs that combines large language models with scalable retrieval pipelines. It supports dense and sparse retrievers, multi-step retrieval strategies, and optimized inference on Intel hardware — enabling production RAG applications with low-latency retrieval and generation.
+tagline: Efficient RAG framework with optimized retrieval and generation
+
+github_url: https://github.com/IntelLabs/fastRAG
+website_url: https://intellabs.github.io/fastRAG
+docs_url: https://intellabs.github.io/fastRAG
+
+install_command: pip install fastrag
+
+category: RAG
+tags: [rag, retrieval-augmented-generation, llm, information-retrieval, nlp, python]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Building production-ready RAG applications requires integrating multiple components — document retrievers, embedding models, LLMs, and generation pipelines — with careful optimization for latency, relevance, and scalability. Existing RAG frameworks are either too complex to configure or lack optimization for specific hardware platforms. FastRAG solves this by providing a modular RAG framework with built-in support for dense retrievers (DPR, ColBERT, BGE), sparse retrievers (SPLADE, BM25), and hybrid retrieval strategies, multi-step reasoning patterns (query rewriting, HyDE, self-RAG), optimized inference pipelines for Intel CPUs and GPUs with ONNX Runtime and OpenVINO integration, and a clean Python API for composing retrieval and generation workflows — enabling teams to deploy efficient RAG pipelines without deep expertise in each component.
+
+use_cases:
+  - Build production RAG applications with hybrid retrieval combining dense embeddings and sparse keyword search for higher relevance
+  - Deploy low-latency document question answering pipelines on CPU-based infrastructure using FastRAG's OpenVINO-optimized model inference
+  - Implement multi-step RAG strategies like query rewriting and hypothetical document embeddings (HyDE) to improve first-retrieval quality
+  - Create custom RAG pipelines with modular retriever, reranker, and generator components using FastRAG's composable API and pipeline abstractions
+  - Evaluate RAG pipeline quality with FastRAG's built-in benchmarking tools for retrieval precision, generation faithfulness, and end-to-end latency
