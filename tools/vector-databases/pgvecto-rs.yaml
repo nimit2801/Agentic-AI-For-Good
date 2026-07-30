@@ -1,0 +1,21 @@
+name: pgvecto.rs
+description: "A vector similarity search extension for PostgreSQL written in Rust, providing high-performance approximate nearest neighbor (ANN) search with disk-based indexes, filtering, and full SQL integration for production vector databases."
+tagline: "Vector search extension for PostgreSQL"
+github_url: https://github.com/tensorchord/pgvecto.rs
+website_url: https://pgvecto.rs
+docs_url: https://pgvecto.rs
+category: Vector DB
+tags:
+  - postgresql
+  - vector-search
+  - rust
+  - ann
+  - extension
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Teams using PostgreSQL for their application database need to add vector similarity search for RAG and embedding-based retrieval without running a separate vector database service — but existing PostgreSQL vector extensions either lack ANN indexing (pgvector) or are written in C with limited filter support. pgvecto.rs is a Rust-based PostgreSQL extension that implements high-performance HNSW and IVF-PQ indexes with full SQL integration, pre-filtering on scalar columns, disk-based index storage that doesn't require indexes to fit in RAM, and distance functions (cosine, Euclidean, dot product, Hamming) — enabling hybrid structured + vector queries within PostgreSQL without additional infrastructure."
+use_cases:
+  - "Add vector similarity search to existing PostgreSQL databases for RAG retrieval, enabling semantic search over document embeddings with pre-filtering on metadata fields like date, author, and category"
+  - "Build hybrid search applications that combine full-text PostgreSQL queries with vector ANN search, ranking results by combined BM25 and semantic similarity scores in a single SQL query"
+  - "Deploy production vector search with disk-based HNSW indexes that scale to billions of vectors without requiring all indexes to fit in RAM, reducing infrastructure costs for large-scale embedding retrieval"
