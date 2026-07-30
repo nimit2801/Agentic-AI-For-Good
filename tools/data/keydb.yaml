@@ -1,0 +1,13 @@
+name: KeyDB
+description: |
+  KeyDB is a high-performance fork of Redis with a focus on multithreading, memory efficiency, and high throughput. Now part of Snap Inc., it offers Active Replication, FLASH Storage support, and Subkey Expires. KeyDB maintains full Redis protocol compatibility while delivering significantly higher throughput through its MVCC architecture that prevents blocking on KEYS and SCAN operations.
+problem_solved: |
+  Traditional Redis deployments face throughput bottlenecks due to single-threaded architecture, requiring complex sharding setups for high-load scenarios. KeyDB solves this with native multithreading support that can achieve significantly higher throughput on the same hardware, while maintaining full Redis protocol compatibility for drop-in replacement without application changes or code modifications.
+use_cases:
+  - "High-throughput caching layer for AI inference at production scale"
+  - "Real-time feature store serving ML model predictions with low latency"
+  - "Session management and rate limiting for AI application backends"
+category: Data
+github_url: https://github.com/Snapchat/KeyDB
+website_url: https://docs.keydb.dev/
+is_open_source: true
