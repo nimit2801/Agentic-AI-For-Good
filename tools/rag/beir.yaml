@@ -1,0 +1,26 @@
+name: BEIR
+description: |-
+  BEIR (Benchmarking Information Retrieval) is a heterogeneous evaluation framework for zero-shot information retrieval. It provides a standardized benchmark across 18 diverse datasets spanning question answering, fact checking, duplicate detection, citation prediction, and entity linking — enabling rigorous evaluation of dense retrieval and reranking models for RAG pipelines.
+tagline: Zero-shot information retrieval benchmark for retrieval evaluation
+
+github_url: https://github.com/beir-cellar/beir
+website_url: https://beir-cellar.github.io/beir
+docs_url: https://beir-cellar.github.io/beir
+
+install_command: pip install beir
+
+category: RAG
+tags: [information-retrieval, benchmark, evaluation, dense-retrieval, nlp, python, research]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Evaluating retrieval models for RAG pipelines requires diverse datasets spanning multiple domains, query types, and difficulty levels — but individual datasets use incompatible formats, evaluation scripts, and metrics, making it nearly impossible to compare retrieval quality across models and approaches. BEIR solves this with a standardized evaluation framework that normalizes 18 diverse benchmark datasets (including TREC, NQ, HotpotQA, FiQA, FEVER, and SciFact) under a single API, provides consistent evaluation metrics (NDCG@10, Recall@K, MAP) across all datasets, supports dense retrievers (DPR, ColBERT, Sentence-BERT), sparse retrievers (BM25, SPLADE), and cross-encoder rerankers through a unified scoring interface, and enables zero-shot evaluation — measuring how well a retrieval model trained on one domain generalizes to unseen domains — giving RAG practitioners a rigorous, reproducible benchmark for comparing retrieval strategies.
+
+use_cases:
+  - Benchmark dense retriever models against BM25 and sparse retrieval baselines across 18 diverse zero-shot retrieval datasets
+  - Evaluate cross-encoder reranker quality by measuring NDCG@10 improvement over base retrieval on BEIR's full benchmark suite
+  - Compare bi-encoder vs. cross-encoder retrieval strategies for specific RAG domains — biomedical, legal, news, or conversational QA
+  - Validate retrieval model generalization by testing on BEIR datasets from different domains than the training corpus
+  - Reproduce published retrieval evaluation results using BEIR's standardized API and consistent metric computation across all 18 datasets
