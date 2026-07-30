@@ -1,0 +1,26 @@
+name: MMCV
+description: |
+  MMCV is an open-source foundational Python library from OpenMMLab that provides computer vision utilities, data transforms, training frameworks, and I/O operations shared across all OpenMMLab projects. It offers highly optimized CUDA operators for common CV tasks, a modular training registry system, configurable data pipelines, and performance profiling tools.
+tagline: Foundational computer vision library powering the OpenMMLab ecosystem
+
+github_url: https://github.com/open-mmlab/mmcv
+website_url: https://mmcv.readthedocs.io
+docs_url: https://mmcv.readthedocs.io
+
+install_command: pip install mmcv
+
+category: Data
+tags: [computer-vision, cuda-operators, data-transforms, training-framework, openmmlab, deep-learning]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Computer vision research and development requires a vast set of shared utilities — data transforms, CUDA operators, training loops, and file I/O — that each project reimplements independently, leading to fragmentation and duplicated effort. MMCV solves this by providing a unified foundational library with optimized CUDA kernels, standardized data pipelines, a modular training registry, and consistent evaluation tools used across all OpenMMLab projects.
+
+use_cases:
+  - Access optimized CUDA operators for NMS, RoI pooling, deformable convolution, and other CV primitives without reimplementation
+  - Build custom data processing pipelines with configurable transforms for image loading, augmentation, and normalization
+  - Leverage the modular training framework with configurable optimizers, schedulers, and evaluation hooks
+  - Implement new computer vision models using MMCV's registry system for modular model components and backbones
+  - Profile and visualize training runs with built-in logging, checkpoint management, and performance analysis tools

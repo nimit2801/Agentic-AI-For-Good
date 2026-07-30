@@ -1,0 +1,24 @@
+name: Cap'n Proto
+description: |
+  Cap'n Proto is an open-source, high-performance data interchange format and RPC system that provides capabilities-based RPC with zero-copy deserialization. Unlike Protocol Buffers and FlatBuffers, it works everywhere without a separate IDL compilation step, using a native schema language that compiles directly to efficient inline serialization code.
+tagline: High-performance data interchange format with zero-copy deserialization and RPC
+
+github_url: https://github.com/capnproto/capnproto
+website_url: https://capnproto.org
+docs_url: https://capnproto.org/documentation
+
+category: Data
+tags: [serialization, rpc, zero-copy, data-format, performance, capabilities]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Data serialization in ML and real-time systems traditionally requires either parsing overhead (JSON, Protocol Buffers) or complex build-time code generation (FlatBuffers). Cap'n Proto solves this by combining zero-copy deserialization with an intuitive schema language and built-in capabilities-based RPC, enabling efficient data interchange with minimal latency and no runtime parsing in distributed ML pipelines and real-time systems.
+
+use_cases:
+  - Exchange structured tensor metadata and inference results between distributed ML serving nodes with zero-copy deserialization
+  - Implement high-throughput RPC for real-time feature serving and model prediction pipelines
+  - Serialize large structured datasets for streaming between data processing stages with minimal CPU overhead
+  - Build real-time communication systems for multi-agent coordination where message latency is critical
+  - Replace JSON and Protocol Buffers in latency-sensitive embedded AI applications with fixed memory budgets
