@@ -1,0 +1,24 @@
+name: Ceph
+description: |-
+  Ceph is a unified, distributed storage system that provides object, block, and file storage from a single cluster. It powers AI infrastructure with petabyte-scale storage for training datasets, model artifacts, and inference logs — offering self-healing, automatic replication, and no single point of failure across commodity hardware.
+tagline: Unified distributed storage for object, block, and file
+
+github_url: https://github.com/ceph/ceph
+website_url: https://ceph.io
+docs_url: https://docs.ceph.com
+
+category: Data
+tags: [distributed-storage, object-storage, block-storage, file-storage, infrastructure, devops, data-platform]
+pricing: free
+is_open_source: true
+license: LGPL-2.1
+
+problem_solved: |
+  AI infrastructure generates massive volumes of data — training datasets, model checkpoints, experiment artifacts, inference logs, and vector indexes — that must be stored durably, accessed with low latency, and scaled cost-effectively across GPU clusters. Traditional storage solutions are either expensive (enterprise SAN/NAS), single-point-of-failure (NFS servers), or lack the performance to keep GPU nodes saturated with data. Ceph solves this with a unified software-defined storage platform that runs on commodity hardware, provides S3-compatible object storage (RADOS Gateway) for model artifacts and datasets, block storage (RBD) for database volumes powering vector databases, and POSIX-compatible file storage (CephFS) for shared workspace access across training nodes — all with automatic data replication, self-healing, and online scaling without downtime.
+
+use_cases:
+  - Deploy petabyte-scale S3-compatible object storage for training datasets, model checkpoints, and experiment artifacts accessible from any GPU node
+  - Provision high-performance block storage volumes for vector databases and model serving infrastructure with automatic replication across failure domains
+  - Share training data and model outputs across a GPU cluster via CephFS POSIX mounts with consistent snapshots and tiered access controls
+  - Store and retrieve large-scale ML training logs and inference telemetry with Ceph's RADOS object store and radosgw-admin tooling
+  - Scale AI storage infrastructure incrementally by adding commodity servers to the Ceph cluster without downtime or data migration

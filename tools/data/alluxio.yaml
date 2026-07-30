@@ -1,0 +1,24 @@
+name: Alluxio
+description: |-
+  Alluxio is a distributed data orchestration and virtualization layer that unifies access to diverse storage systems — S3, HDFS, NFS, and cloud object stores — under a single namespace with intelligent caching. It accelerates AI/ML workloads by bringing training data closer to compute, reducing data access latency by orders of magnitude across GPU clusters.
+tagline: Distributed data orchestration and caching layer
+
+github_url: https://github.com/Alluxio/alluxio
+website_url: https://www.alluxio.io
+docs_url: https://docs.alluxio.io
+
+category: Data
+tags: [data-orchestration, caching, data-virtualization, storage, infrastructure, devops, performance]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AI training and inference workloads need fast, consistent access to training data stored across multiple remote storage systems — S3 buckets, HDFS clusters, NFS servers, and cloud object stores — each with different access patterns, latency profiles, and performance characteristics. Reading data directly from remote storage for every training epoch causes severe I/O bottlenecks, GPU starvation, and extended training times. Alluxio solves this with a distributed caching and virtualization layer that exposes remote storage through a POSIX-compatible file system interface, caches frequently accessed data on local SSDs or memory on compute nodes, provides namespace unification across heterogeneous storage backends, and supports active data loading for pre-staging entire datasets before training begins — reducing data access latency from seconds to microseconds for cached data and eliminating GPU idle time waiting for I/O.
+
+use_cases:
+  - Accelerate distributed ML training by caching training datasets on GPU cluster-local SSDs through Alluxio's transparent read caching across thousands of nodes
+  - Unify data access under a single namespace when training data spans S3, HDFS, and NFS storage backends, eliminating manual data copy and location management
+  - Pre-load large training datasets into Alluxio's distributed cache before training jobs begin, ensuring GPU-saturating I/O throughput from epoch one
+  - Share preprocessed feature data between training and inference pipelines with consistent reads through Alluxio's write-once, read-many caching semantics
+  - Reduce cloud egress costs by caching frequently accessed training data on ephemeral GPU cluster storage rather than re-reading from remote S3 for each training run

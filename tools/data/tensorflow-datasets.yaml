@@ -1,0 +1,26 @@
+name: TensorFlow Datasets
+description: |-
+  TensorFlow Datasets (TFDS) is a library of ready-to-use datasets for machine learning with TensorFlow and other Python ML frameworks. It provides a unified API to download, prepare, and load hundreds of datasets — from vision and NLP to audio and reinforcement learning — with automatic versioning, deterministic splits, and efficient streaming pipelines.
+tagline: Ready-to-use datasets for machine learning
+
+github_url: https://github.com/tensorflow/datasets
+website_url: https://www.tensorflow.org/datasets
+docs_url: https://www.tensorflow.org/datasets/overview
+
+install_command: pip install tensorflow-datasets
+
+category: Data
+tags: [datasets, data-loading, tensorflow, machine-learning, data-engineering, python]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  ML practitioners spend significant effort finding, downloading, and preprocessing standard datasets for training and evaluation — each dataset uses a different download URL, format, split convention, and preprocessing pipeline, making it difficult to reproduce experiments across projects and teams. TensorFlow Datasets solves this by providing hundreds of common ML datasets (CIFAR, ImageNet, COCO, WMT, etc.) through a single unified API with automatic download and extraction, deterministic train/validation/test splits, standardized feature dictionaries with typed TensorSpec descriptions, versioning that tracks dataset changes, and efficient streaming data loading that works seamlessly with tf.data pipelines for GPU-bound training — eliminating dataset boilerplate and ensuring reproducibility across experiments.
+
+use_cases:
+  - Quickly load standard benchmark datasets for model evaluation with a single line of code and deterministic train/test splits
+  - Build reproducible ML pipelines by pinning dataset versions through TFDS version specifiers in experiment configuration files
+  - Stream large datasets that exceed available RAM using TFDS's tf.data integration with automatic sharding and prefetching for GPU training
+  - Create custom dataset builders following TFDS conventions to package proprietary data with standardized splits, features, and metadata
+  - Access dataset metadata — feature types, example counts, class distributions — programmatically without downloading the full dataset
