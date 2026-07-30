@@ -1,0 +1,26 @@
+name: TensorStore
+description: |
+  TensorStore is an open-source library from Google for reading and writing large multi-dimensional arrays with high performance and scalability. It provides a unified interface for array storage across local filesystems, Google Cloud Storage, and other backends, with support for chunked compression, asynchronous I/O, and virtual views for efficient sub-array access.
+tagline: High-performance library for large multi-dimensional array storage and I/O
+
+github_url: https://github.com/google/tensorstore
+website_url: https://google.github.io/tensorstore/
+docs_url: https://google.github.io/tensorstore/
+
+install_command: pip install tensorstore
+
+category: Data
+tags: [array-storage, numerical-computing, tensor, python, hpc, io]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Machine learning and scientific computing workloads increasingly produce massive multi-dimensional arrays that exceed available memory and require efficient persistent storage, but standard tools like NumPy and HDF5 lack support for asynchronous streaming, cloud-native storage backends, and fine-grained sub-array access. TensorStore solves this by providing a high-performance, scalable array storage library with chunked compression, asynchronous I/O, virtual views, and support for multiple storage backends including cloud object stores.
+
+use_cases:
+  - Store and access large-scale neural network weight checkpoints with chunked compression for fast partial loading
+  - Read sub-regions of massive 3D/4D scientific datasets without loading the full array into memory
+  - Stream training data from cloud object stores with asynchronous I/O for GPU-accelerated training pipelines
+  - Manage multi-petabyte geospatial or biomedical array datasets with virtual views for efficient access
+  - Share and version large array datasets across teams using cloud-native storage backends

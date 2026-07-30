@@ -1,0 +1,24 @@
+name: OpenXLA
+description: |
+  OpenXLA is an open-source machine learning compiler framework that accelerates ML model training and inference across diverse hardware, including GPUs, CPUs, and custom AI accelerators. Developed as a collaborative project stewarded by MLIR and IREE communities, it provides ahead-of-time (AOT) and just-in-time (JIT) compilation with automatic kernel generation and cross-device optimization.
+tagline: Open-source ML compiler for optimizing models across GPUs, CPUs, and accelerators
+
+github_url: https://github.com/openxla/xla
+website_url: https://openxla.org
+docs_url: https://openxla.org/docs
+
+category: Dev Tools
+tags: [ml-compiler, gpu, optimization, jit, kernel-generation, hardware-acceleration]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  ML models need to run efficiently across diverse hardware (GPUs, CPUs, TPUs, custom accelerators), but manually optimizing kernels for each target is impractical and non-portable. OpenXLA solves this by providing a compiler framework that automatically optimizes and compiles ML graphs for any target hardware — generating efficient kernels, fusing operations, and applying hardware-specific optimizations without manual tuning.
+
+use_cases:
+  - AOT-compile trained models for deployment on edge devices, mobile, and embedded systems with optimized kernels
+  - JIT-compile and optimize PyTorch and TensorFlow model graphs for GPU training with automatic kernel fusion
+  - Target custom AI accelerators and emerging hardware architectures without writing device-specific kernels
+  - Reduce model inference latency through operation fusion, memory planning, and quantization-aware compilation
+  - Enable cross-device portability where the same model binary runs on CPUs, GPUs, and specialized accelerators

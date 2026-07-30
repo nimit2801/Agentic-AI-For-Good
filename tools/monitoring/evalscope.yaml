@@ -1,0 +1,26 @@
+name: EvalScope
+description: |
+  EvalScope is an open-source framework by ModelScope for streamlined evaluation of large language models, vision-language models, and AI-generated content models. It provides standardized benchmarking across academic datasets (MMLU, GSM8K, HumanEval), custom datasets, RAG evaluation, performance benchmarking, and model compression quality assessment through a unified API.
+tagline: Streamlined evaluation and benchmarking framework for LLMs, VLMs, and AIGC models
+
+github_url: https://github.com/modelscope/evalscope
+website_url: https://github.com/modelscope/evalscope
+docs_url: https://evalscope.readthedocs.io
+
+install_command: pip install evalscope
+
+category: Monitoring
+tags: [llm-evaluation, benchmarking, rag-evaluation, model-evaluation, vlm, performance]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Evaluating large language models and vision-language models requires complex, fragmented pipelines with inconsistent benchmarks, reporting formats, and setup procedures. EvalScope solves this by providing a unified evaluation framework with standardized APIs for academic benchmarks, custom datasets, RAG evaluation, and performance testing — eliminating the need to wire up separate evaluation scripts for each benchmark.
+
+use_cases:
+  - Benchmark LLMs on standard academic datasets like MMLU, GSM8K, HumanEval, and BBH with a single command
+  - Evaluate vision-language models on multimodal benchmarks for image understanding and generation quality
+  - Assess RAG pipeline quality with built-in retrieval and generation evaluation metrics
+  - Profile model inference performance including latency, throughput, and memory usage across backends
+  - Compare model quantization and compression quality against original model baselines
