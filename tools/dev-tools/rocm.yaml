@@ -1,0 +1,24 @@
+name: ROCm
+description: |
+  ROCm is an open-source GPU compute platform from AMD providing a complete ecosystem for high-performance computing and machine learning on AMD GPUs. It includes HIP for CUDA-to-AMD code portability, ROCm libraries for BLAS, FFT, and sparse operations, an LLVM-based compiler stack, and support for popular ML frameworks including PyTorch and TensorFlow with near-drop-in CUDA compatibility.
+tagline: AMD's open-source GPU compute platform for HPC and machine learning
+
+github_url: https://github.com/ROCm/ROCm
+website_url: https://rocm.docs.amd.com
+docs_url: https://rocm.docs.amd.com
+
+category: Dev Tools
+tags: [gpu-compute, amd, hpc, cuda-compatibility, machine-learning, rocm, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Running ML and HPC workloads on AMD GPUs traditionally required writing separate, non-portable code paths versus NVIDIA CUDA, creating fragmentation and limiting GPU compute options. ROCm solves this by providing a complete open-source GPU compute platform with HIP, a CUDA-compatible programming model that enables running code written for CUDA on AMD GPUs with minimal changes — including full support for PyTorch, TensorFlow, and popular ML frameworks.
+
+use_cases:
+  - Run PyTorch training and inference workloads on AMD GPUs with ROCm-optimized PyTorch builds using native HIP kernels
+  - Port existing CUDA-based HPC and ML applications to AMD GPUs using the HIP programming model with minimal code changes
+  - Accelerate scientific computing with ROCm-optimized BLAS, FFT, and sparse linear algebra libraries for AMD GPUs
+  - Leverage ROCm's LLVM-based compiler stack for custom GPU kernel development with advanced optimization passes
+  - Enable multi-GPU distributed training across AMD GPUs using ROCm's RCCL communication library (NCCL-compatible)

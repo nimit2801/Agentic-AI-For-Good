@@ -1,0 +1,24 @@
+name: NCCL
+description: |
+  NVIDIA Collective Communications Library (NCCL) is an open-source library providing multi-GPU and multi-node communication primitives optimized for NVIDIA GPUs. It implements collective operations including all-gather, all-reduce, broadcast, reduce, and reduce-scatter with topology-aware communication across PCIe, NVLink, and InfiniBand interconnects, serving as the backbone for distributed deep learning training.
+tagline: Multi-GPU and multi-node collective communication library for distributed training
+
+github_url: https://github.com/NVIDIA/nccl
+website_url: https://developer.nvidia.com/nccl
+docs_url: https://docs.nvidia.com/deeplearning/nccl
+
+category: Dev Tools
+tags: [multi-gpu, distributed-training, nvidia, cuda, communication, high-performance-computing]
+pricing: free
+is_open_source: true
+license: NOASSERTION
+
+problem_solved: |
+  Distributed deep learning training across multiple GPUs requires efficient communication primitives to synchronize gradients and model parameters, but implementing topology-aware collective operations across diverse interconnects (PCIe, NVLink, InfiniBand) is complex and error-prone. NCCL solves this by providing highly optimized, topology-aware implementations of standard collective operations that automatically detect and utilize the fastest available interconnects between GPUs and nodes.
+
+use_cases:
+  - Synchronize gradients across multiple GPUs during distributed model training using all-reduce with NVLink-aware communication
+  - Scale training across multiple nodes with InfiniBand or TCP interconnects using NCCL's topology detection and optimization
+  - Reduce model parameter broadcasting overhead with NCCL's broadcast primitive in distributed inference pipelines
+  - Implement all-gather operations for distributed data-parallel training where each GPU holds a subset of the data
+  - Leverage NCCL's fused operations to combine gradient computation, reduction, and weight update in a single communication step
