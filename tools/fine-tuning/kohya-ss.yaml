@@ -1,0 +1,20 @@
+name: Kohya SS
+description: "A GUI tool for training Stable Diffusion LoRA, DreamBooth, and textual inversion models, providing a comprehensive interface for dataset preparation, hyperparameter configuration, and model merging for fine-tuning diffusion models on custom image datasets."
+tagline: "LoRA training GUI for Stable Diffusion"
+github_url: https://github.com/bmaltais/kohya_ss
+website_url: https://github.com/bmaltais/kohya_ss
+category: Fine-tuning
+tags:
+  - stable-diffusion
+  - lora
+  - dreambooth
+  - gui
+  - image-generation
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Training custom Stable Diffusion models and LoRAs traditionally requires writing Python training scripts, managing dataset formats, tuning hyperparameters through trial and error via command-line flags, and keeping track of model checkpoints — creating a steep learning curve for artists and creators without ML engineering backgrounds. Kohya SS provides a GUI-driven interface for dataset preparation (tagging, captioning, bucketing), training configuration (LoRA, DreamBooth, textual inversion), and model merging — making custom diffusion model training accessible to non-engineers while providing power users with fine-grained control over every training parameter."
+use_cases:
+  - "Train custom Stable Diffusion LoRA models on personal image datasets through a GUI interface, configuring batch size, learning rate, and network rank without writing training scripts"
+  - "Prepare training data with built-in captioning, tagging, and aspect-ratio bucketing tools that automatically resize and organize image datasets for optimal training results"
+  - "Merge multiple trained LoRAs and checkpoint models using Kohya SS's model merging interface, combining style concepts and character representations into unified generation pipelines"
