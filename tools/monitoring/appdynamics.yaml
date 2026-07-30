@@ -1,0 +1,22 @@
+name: AppDynamics
+description: |-
+  AppDynamics is an enterprise application performance monitoring (APM) platform that provides full-stack observability across distributed applications, infrastructure, and user experiences. It tracks AI application performance from user requests through model inference to database queries, with code-level diagnostics, business transaction monitoring, and AIOps-powered root cause analysis for production AI services.
+tagline: Enterprise APM and observability platform
+
+website_url: https://www.appdynamics.com
+docs_url: https://docs.appdynamics.com
+
+category: Monitoring
+tags: [monitoring, apm, observability, enterprise, application-performance, devops, tracing]
+pricing: paid
+is_open_source: false
+
+problem_solved: |
+  AI-powered applications running in production involve complex request flows that span load balancers, API gateways, embedding services, vector databases, LLM inference endpoints, and caching layers — making it difficult to pinpoint when and why performance degrades. Traditional monitoring tools show infrastructure metrics but lack application-level context to correlate user-facing slowdowns with their root causes in the AI stack. AppDynamics solves this with automatic discovery of application service topologies, distributed transaction tracing that follows request flows across every service in the AI pipeline, code-level diagnostics showing slow method calls and database queries within inference endpoints, and AIOps-powered anomaly detection that correlates metrics, events, logs, and traces to identify the root cause of performance issues without manual investigation.
+
+use_cases:
+  - Trace end-to-end AI application requests from user input through embedding generation and LLM inference to response delivery, with per-span latency breakdowns
+  - Monitor business transaction performance for AI-powered features — measuring completion rates, error rates, and response time percentiles for model invocations
+  - Set up intelligent baselines and anomaly detection for model serving endpoint performance, automatically alerting when response times deviate from learned patterns
+  - Identify code-level bottlenecks in Python inference services with method-level execution time tracking and database query performance analysis
+  - Map AI service dependency topologies automatically to understand how changes in embedding services, vector DB latency, or model API response times impact end-user experience
