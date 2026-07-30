@@ -1,0 +1,22 @@
+name: pytest
+description: "A mature, full-featured Python testing framework that makes it easy to write simple and scalable tests, with fixture-based dependency injection, parameterized testing, assertion introspection, and a rich plugin ecosystem."
+tagline: "Python testing framework"
+github_url: https://github.com/pytest-dev/pytest
+website_url: https://pytest.org
+docs_url: https://docs.pytest.org
+install_command: "pip install pytest"
+category: Dev Tools
+tags:
+  - python
+  - testing
+  - fixtures
+  - ci
+  - code-quality
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "Python projects need a testing framework that is simple to start with yet powerful enough for complex test suites, but Python's built-in unittest framework requires verbose boilerplate (TestCase classes, self.assert* methods, setUp/tearDown) that discourages comprehensive testing. Pytest replaces unittest with plain assert statements, automatic test discovery, fixture-based dependency injection that eliminates shared setup boilerplate, and a plugin system supporting coverage, parallelism (pytest-xdist), parametrized tests, and async testing — enabling teams to write more tests with less code and run them faster across CI and local development."
+use_cases:
+  - "Write test functions with plain Python assert statements and automatic discovery, eliminating unittest boilerplate and making tests readable for non-specialist contributors"
+  - "Use pytest fixtures for test dependency injection — database connections, API clients, and ML model instances — with automatic setup, teardown, and scope management"
+  - "Run tests in parallel across multiple CPUs (pytest-xdist), generate coverage reports (pytest-cov), and integrate with CI pipelines for pre-merge validation"

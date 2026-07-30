@@ -1,0 +1,23 @@
+name: aiohttp
+description: "An asynchronous HTTP client and server library for Python built on asyncio, providing non-blocking HTTP/1.1, WebSocket support, and a client session API optimized for high-concurrency workloads like web scraping, API clients, and microservices."
+tagline: "Async HTTP client and server for Python"
+github_url: https://github.com/aio-libs/aiohttp
+website_url: https://docs.aiohttp.org
+docs_url: https://docs.aiohttp.org/en/stable
+install_command: "pip install aiohttp"
+category: Dev Tools
+tags:
+  - python
+  - http
+  - async
+  - asyncio
+  - websocket
+  - networking
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Python developers building concurrent I/O-bound applications (web scrapers, API clients, streaming data pipelines) hit throughput limits with synchronous HTTP libraries that block on every request — forcing thread-per-request patterns that waste memory and context-switch overhead. Aiohttp provides a native asyncio-based HTTP client that multiplexes hundreds of concurrent requests on a single thread, with automatic connection pooling, keep-alive, and redirect handling — enabling web crawlers, LLM API batching, and microservice backends to saturate network bandwidth without thread-per-request overhead."
+use_cases:
+  - "Send hundreds of concurrent HTTP requests to LLM providers, embedding APIs, and search endpoints from a single process using aiohttp.ClientSession for batch inference and retrieval"
+  - "Build asynchronous web crawlers and document scrapers that fetch, parse, and extract content from thousands of URLs simultaneously without thread-per-request overhead"
+  - "Serve AI model inference endpoints and WebSocket streaming responses with aiohttp.web, handling concurrent client connections with asyncio-native request lifecycle management"
