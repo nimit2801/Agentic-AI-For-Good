@@ -1,0 +1,21 @@
+name: ZincSearch
+description: "A lightweight, modern search engine written in Go that provides full-text search, indexing, and analytics with a simple API, minimal resource footprint, and no external dependencies — designed as a simpler alternative to Elasticsearch."
+tagline: "Lightweight search engine in Go"
+github_url: https://github.com/zincsearch/zincsearch
+website_url: https://zincsearch.com
+docs_url: https://docs.zincsearch.com
+category: Data
+tags:
+  - search-engine
+  - full-text-search
+  - go
+  - elasticsearch-alternative
+  - indexing
+pricing: freemium
+is_open_source: true
+license: NOASSERTION
+problem_solved: "Teams deploying search functionality in ML applications often turn to Elasticsearch for its full-text search and analytics capabilities, but Elasticsearch's JVM-based architecture requires significant memory allocation, complex cluster configuration, and dedicated infrastructure that is overkill for smaller deployments and development environments. ZincSearch provides a single-binary, embedded search engine written in Go with a RESTful API compatible with Elasticsearch's indexing and query patterns — enabling full-text search, facet aggregation, and log analytics with MBs of memory rather than GBs, without requiring Java, separate indexing pipelines, or cluster management."
+use_cases:
+  - "Deploy lightweight full-text search for knowledge bases, documentation, and retrieval-augmented generation (RAG) pipelines without the operational overhead of Elasticsearch clusters"
+  - "Index and search application logs, metrics, and structured data with ZincSearch's simple indexing API, supporting faceted search and aggregation for operations dashboards"
+  - "Embed search functionality into development and testing environments that mirror production Elasticsearch APIs at a fraction of the resource cost for CI and local development"

@@ -1,0 +1,22 @@
+name: Presidio
+description: "An open-source data protection and anonymization framework from Microsoft that identifies and redacts personally identifiable information (PII) in text and images through customizable entity recognition and anonymization pipelines."
+tagline: "Data protection and PII anonymization"
+github_url: https://github.com/microsoft/presidio
+website_url: https://microsoft.github.io/presidio
+docs_url: https://microsoft.github.io/presidio
+install_command: "pip install presidio-analyzer"
+category: Data
+tags:
+  - pii
+  - data-privacy
+  - anonymization
+  - microsoft
+  - nlp
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "Organizations processing user-generated content and logs for ML training need to remove personally identifiable information (PII) before storage and analysis, but building custom PII detection with regex patterns for each data source is fragile, misses non-standard formats, and requires ongoing maintenance as privacy regulations evolve. Presidio provides a modular PII detection pipeline with pre-built recognizers for names, emails, phone numbers, credit cards, and medical identifiers — supporting regex, NLP-based, and ML-based entity recognition with configurable anonymization strategies (redaction, replacement, encryption) that integrate into existing data preprocessing workflows."
+use_cases:
+  - "Anonymize customer support chat logs and user-generated content before using them as LLM training data, redacting names, emails, and phone numbers while preserving linguistic structure"
+  - "Implement automated PII detection in data ingestion pipelines for compliance with GDPR, CCPA, and HIPAA regulations, flagging and redacting sensitive information at scale"
+  - "Integrate Presidio with NLP pipelines to identify and pseudonymize personal entities in unstructured text, replacing names and identifiers with consistent placeholders for privacy-preserving analytics"

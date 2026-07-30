@@ -1,0 +1,20 @@
+name: PurpleLlama
+description: "A collection of trust and safety tools from Meta for evaluating and improving LLM security — including cyber attack simulation, input/output guardrails, and prompt injection detection for responsible generative AI deployment."
+tagline: "LLM safety and security tools from Meta"
+github_url: https://github.com/meta-llama/PurpleLlama
+website_url: https://ai.meta.com/research/publications/purple-llama-cyberseceval
+category: Monitoring
+tags:
+  - llm-security
+  - red-teaming
+  - meta
+  - safety
+  - guardrails
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "Organizations deploying LLMs in production lack standardized tooling for evaluating and improving model security — relying on ad-hoc prompt injection testing, manual red-teaming, and inconsistent input/output filtering that can miss critical vulnerabilities. PurpleLlama provides a modular suite of security benchmarks and tools including CybersecEval for automated red-teaming, input/output guardrails for content filtering, and prompt injection detectors — enabling teams to systematically evaluate LLM attack surfaces and deploy defenses without building security infrastructure from scratch."
+use_cases:
+  - "Run automated cyber attack simulations against LLM deployments using CybersecEval benchmarks to identify prompt injection, jailbreak, and data extraction vulnerabilities"
+  - "Deploy input and output guardrails from PurpleLlama to filter toxic content, block prompt injection attempts, and enforce safety policies in production LLM serving pipelines"
+  - "Generate systematic red-teaming datasets for evaluating model robustness across attack categories, including encode-based attacks, multi-turn jailbreaks, and payload smuggling techniques"
