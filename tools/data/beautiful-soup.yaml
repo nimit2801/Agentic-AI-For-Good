@@ -1,0 +1,21 @@
+name: Beautiful Soup
+description: "An HTML and XML parsing library for Python that creates parse trees from page source code, providing idiomatic methods for navigating, searching, and modifying the parse tree to extract data from web pages and XML documents."
+tagline: "HTML and XML parsing for Python"
+website_url: https://www.crummy.com/software/BeautifulSoup
+docs_url: https://www.crummy.com/software/BeautifulSoup/bs4/doc
+install_command: "pip install beautifulsoup4"
+category: Data
+tags:
+  - html-parsing
+  - xml-parsing
+  - web-scraping
+  - python
+  - data-extraction
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "Data engineers and researchers need to extract structured information from HTML and XML documents for datasets, analytics, and ML training pipelines, but raw string parsing with regex is brittle, hard to maintain, and breaks on malformed markup. Beautiful Soup transforms messy real-world HTML and XML into navigable parse trees with Pythonic methods for searching by tag name, CSS class, attributes, and text content — handling encoding detection, broken tags, and nested structures automatically so practitioners can focus on data extraction logic rather than markup quirks."
+use_cases:
+  - "Scrape product listings, pricing data, and reviews from e-commerce sites by searching the HTML parse tree for specific tags, classes, and attributes with CSS selectors or tree traversal methods"
+  - "Extract tables, articles, and structured content from news websites and government portals by navigating parsed HTML documents and cleaning extracted text for downstream natural language processing pipelines"
+  - "Parse XML configuration files, RSS feeds, and API responses to extract metadata, link relationships, and structured fields for automated data ingestion workflows"

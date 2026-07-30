@@ -1,0 +1,23 @@
+name: Xarray
+description: "A Python library for working with labeled multi-dimensional arrays and datasets, providing N-dimensional array operations with dimension names, coordinates, and attributes — inspired by pandas but designed for gridded scientific data like climate, weather, and oceanography datasets."
+tagline: "Labeled multi-dimensional arrays for Python"
+github_url: https://github.com/pydata/xarray
+website_url: https://xarray.dev
+docs_url: https://docs.xarray.dev
+install_command: "pip install xarray"
+category: Data
+tags:
+  - multi-dimensional-arrays
+  - scientific-computing
+  - netcdf
+  - python
+  - data-analysis
+  - climate
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Data scientists working with gridded scientific data (climate model outputs, weather forecasts, oceanography simulations) traditionally resort to raw NumPy arrays that lack labeled dimensions, making data selection, aggregation, and alignment error-prone and verbose. Without a labeled-array abstraction, teams must manually track which axis corresponds to which variable and handle coordinate alignment themselves. Xarray provides dimension names, coordinate labels, and group-by operations over N-dimensional arrays, with built-in support for NetCDF, Zarr, and GRIB file formats — enabling scientists to slice, aggregate, and persist multi-dimensional datasets with the same expressiveness that pandas brought to tabular data."
+use_cases:
+  - "Analyze climate and weather model outputs (NetCDF, GRIB) by selecting geographical regions, aggregating over time dimensions, and computing long-term statistics with labeled coordinates"
+  - "Combine and re-grid heterogeneous satellite, reanalysis, and in-situ observational datasets onto a common coordinate grid for ensemble analysis and model evaluation"
+  - "Compute multi-dimensional rolling averages, climatologies, and anomaly fields across time, pressure-level, and spatial dimensions using intuitive dimension-name-based operations"

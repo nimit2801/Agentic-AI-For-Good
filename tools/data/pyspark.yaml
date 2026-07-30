@@ -1,0 +1,24 @@
+name: PySpark
+description: "The Python API for Apache Spark, enabling distributed data processing across large clusters with DataFrame and SQL interfaces for ETL, analytics, and machine learning pipelines at petabyte scale."
+tagline: "Python API for Apache Spark"
+github_url: https://github.com/apache/spark
+website_url: https://spark.apache.org
+docs_url: https://spark.apache.org/docs/latest/api/python
+install_command: "pip install pyspark"
+category: Data
+tags:
+  - distributed-computing
+  - big-data
+  - ETL
+  - data-engineering
+  - python
+  - apache-spark
+  - dataframe
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Data engineers and ML practitioners working with terabyte-scale datasets often hit limits with single-node processing frameworks: pandas becomes memory-bound, SQL databases struggle with unstructured data, and custom distributed solutions require significant DevOps investment. PySpark brings Apache Spark's distributed execution engine to Python, providing familiar DataFrame APIs that transparently parallelize ETL, feature engineering, and model training across hundreds of nodes — enabling petabyte-scale data processing with in-memory caching, optimizer-driven query planning, and native ML pipeline integration without leaving the Python ecosystem."
+use_cases:
+  - "Process and transform multi-terabyte log datasets into structured training features by applying DataFrame operations (filtering, aggregation, window functions) that automatically distribute across cluster nodes"
+  - "Build scalable ETL pipelines that read from cloud storage (S3, GCS, ADLS), clean and join heterogeneous data sources, and write partitioned parquet datasets for downstream model training"
+  - "Train and evaluate ML models at scale with Spark MLlib's distributed algorithms for classification, regression, clustering, and recommendation on datasets that exceed single-machine memory capacity"
