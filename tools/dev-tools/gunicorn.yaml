@@ -1,0 +1,24 @@
+name: Gunicorn
+description: "Production-grade WSGI HTTP server for Python web applications, featuring pre-fork worker model with multiple worker types (sync, async, gevent, tornado) for handling concurrent requests. Gunicorn is the standard deployment server for Python web frameworks including Django and Flask."
+tagline: "Production WSGI server for Python web applications"
+github_url: https://github.com/benoitc/gunicorn
+website_url: https://gunicorn.org
+docs_url: https://docs.gunicorn.org
+install_command: pip install gunicorn
+category: Dev Tools
+tags:
+  - python
+  - web-server
+  - wsgi
+  - deployment
+  - model-serving
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "AI/ML engineers need to serve model inference APIs and web applications reliably in production, but Python's built-in development servers are single-threaded, lack concurrency control, and crash under real-world traffic loads. Gunicorn provides a production-hardened WSGI HTTP server with a pre-fork worker model that automatically manages worker processes, handles graceful shutdowns, supports multiple concurrency strategies (sync, async, gevent), and integrates seamlessly with reverse proxies and process supervisors for scalable model serving."
+use_cases:
+  - "Serve Flask-based ML model inference endpoints in production with configurable worker counts and graceful restarts"
+  - "Deploy Django AI dashboards and web applications behind NGINX with Gunicorn as the application server"
+  - "Run multiple concurrent model inference workers behind a single server port with automatic load distribution"
+  - "Serve async Python web applications using gevent or tornado worker types for improved throughput"
+  - "Integrate with systemd, Supervisor, or container orchestration platforms for production process management"

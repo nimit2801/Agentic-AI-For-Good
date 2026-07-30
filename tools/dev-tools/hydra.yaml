@@ -1,0 +1,24 @@
+name: Hydra
+description: "Framework for elegantly configuring complex applications in Python with hierarchical configuration, command-line overrides, multi-run experiments, and instant configurable launching. Hydra composes configurations from YAML files and command-line arguments, enabling reproducible experiment management for ML research."
+tagline: "Framework for elegantly configuring complex Python applications"
+github_url: https://github.com/facebookresearch/hydra
+website_url: https://hydra.cc
+docs_url: https://hydra.cc/docs
+install_command: pip install hydra-core
+category: Dev Tools
+tags:
+  - python
+  - configuration
+  - experiment-management
+  - yaml
+  - mlops
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "ML experiments involve numerous configuration parameters — model architectures, hyperparameters, dataset paths, training schedules — that are hard to manage with hardcoded values, brittle argument parsers, or ad-hoc YAML loading. Changing one parameter requires editing source code or remembering complex command-line flags, and running sweeps across configurations requires custom scripting. Hydra provides a hierarchical configuration system that composes YAML configs, supports command-line overrides for any parameter, enables multi-run experiments sweeping across config combinations, and integrates with launching tools for distributed training."
+use_cases:
+  - "Manage ML training configurations with hierarchical YAML files for datasets, model architectures, and hyperparameters"
+  - "Run hyperparameter sweeps across multiple configuration combinations with automatic logging of results"
+  - "Override individual configuration parameters from the command line without editing YAML files between runs"
+  - "Compose complex experiment configurations from reusable config groups for datasets, models, and training regimes"
+  - "Integrate with distributed training launchers and experiment trackers for reproducible research workflows"
