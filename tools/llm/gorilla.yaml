@@ -1,0 +1,21 @@
+name: Gorilla
+description: "An LLM fine-tuned for accurately generating API function calls from natural language descriptions, enabling LLMs to invoke thousands of APIs reliably through a document-retrieval-aware training approach that reduces hallucination."
+tagline: "LLM for accurate API function calling"
+github_url: https://github.com/gorilla-llm/gorilla-cli
+website_url: https://gorilla.cs.berkeley.edu
+install_command: "pip install gorilla-cli"
+category: LLM
+tags:
+  - function-calling
+  - api
+  - llm
+  - berkeley
+  - tool-use
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Standard LLMs struggle with accurate API function calling — they hallucinate endpoint URLs, invent parameter names, or fail to match API documentation for less popular services — making reliable tool-use automation difficult. Gorilla trains on a large corpus of API documentation with a retrieval-aware mechanism that associates each API call with its source document, enabling the model to generate correct function signatures, required parameters, and endpoint URLs even for APIs with changing or sparse documentation — achieving significantly higher call accuracy than general-purpose models on the APIBench benchmark."
+use_cases:
+  - "Enable LLM agents to make reliable function calls to cloud service APIs (AWS, GCP, Azure) and ML platform APIs (Hugging Face, Replicate) by generating correct JSON signatures from natural language tool descriptions"
+  - "Build autonomous AI agents that discover, understand, and invoke APIs from documentation, reducing the need for hard-coded tool definitions in agent frameworks"
+  - "Augment chatbot and copilot applications with function-calling accuracy for retrieving live data from external services through natural language commands"

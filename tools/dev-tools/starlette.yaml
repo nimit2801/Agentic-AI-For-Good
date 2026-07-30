@@ -1,0 +1,22 @@
+name: starlette
+description: "A lightweight ASGI framework for building high-performance async web services in Python, with a low-complexity API that supports WebSocket, GraphQL, SSE streaming, and background tasks while serving as the foundation for FastAPI."
+tagline: "Lightweight ASGI framework for Python"
+github_url: https://github.com/encode/starlette
+website_url: https://www.starlette.io
+docs_url: https://www.starlette.io
+install_command: "pip install starlette"
+category: Dev Tools
+tags:
+  - python
+  - asgi
+  - web-framework
+  - async
+  - api
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+problem_solved: "Python developers building async web services and APIs need a framework that is fast, lightweight, and compatible with the ASGI standard, but existing frameworks either carry synchronous baggage (Flask, Django) or impose heavy abstractions (aiohttp.web). Starlette provides a minimal, composable ASGI framework with WebSocket support, background tasks, streaming responses, middleware, and test client — serving as the foundation for FastAPI while remaining usable standalone for lightweight async services and microservices."
+use_cases:
+  - "Build lightweight async API endpoints for model inference and embedding services using Starlette's ASGI-based routing, request parsing, and streaming response support"
+  - "Serve real-time WebSocket connections for LLM token streaming and chat applications with Starlette's built-in WebSocket endpoint handling and background task management"
+  - "Create middleware pipelines for authentication, rate limiting, and request logging across async Python services, with Starlette's composable middleware interface"

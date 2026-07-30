@@ -1,0 +1,20 @@
+name: Alpaca-LoRA
+description: "A research project and fine-tuning recipe that applied Low-Rank Adaptation to instruction-tune LLaMA models on the Stanford Alpaca dataset, demonstrating that consumer-grade GPUs can produce instruction-following LLMs via parameter-efficient fine-tuning."
+tagline: "LoRA fine-tuning recipe for LLaMA instruction tuning"
+github_url: https://github.com/tloen/alpaca-lora
+website_url: https://github.com/tloen/alpaca-lora
+category: Fine-tuning
+tags:
+  - lora
+  - llama
+  - instruction-tuning
+  - peft
+  - fine-tuning
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Fine-tuning LLMs required expensive multi-GPU setups and full-model training, creating a barrier for researchers and practitioners who wanted to create instruction-following variants on limited hardware. Alpaca-LoRA demonstrated that parameter-efficient fine-tuning with LoRA can reproduce instruction-following behavior (matching Stanford Alpaca quality) on a single consumer GPU — training adapter weights representing less than 0.1% of full parameters — proving that low-cost fine-tuning is accessible to individual developers and academic labs without cloud GPU clusters."
+use_cases:
+  - "Fine-tune LLaMA models for instruction following on consumer-class GPUs (RTX 3090/4090) using LoRA adapters, achieving Alpaca-level performance with minimal VRAM requirements"
+  - "Adapt pre-trained LLMs to domain-specific tasks (code generation, medical QA, legal analysis) by training lightweight LoRA adapters on curated instruction datasets without full model retraining"
+  - "Experiment with hyperparameter tuning and dataset composition for instruction fine-tuning at low cost, iterating on adapter configurations in hours rather than days"
