@@ -1,0 +1,23 @@
+name: Fluent Bit
+description: A lightweight, multi-platform log processor and forwarder from the CNCF ecosystem — designed for high-throughput log collection, parsing, filtering, and routing to over 50 output destinations including Elasticsearch, Loki, S3, Kafka, and OpenTelemetry.
+tagline: CNCF-graduated log processor for cloud-native observability
+
+github_url: https://github.com/fluent/fluent-bit
+website_url: https://fluentbit.io
+docs_url: https://docs.fluentbit.io
+
+category: Monitoring
+tags: [monitoring, logging, observability, cloud-native, cncf, metrics, data-pipeline]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Collecting, parsing, and routing logs at scale from distributed systems is a fundamental observability challenge. Traditional log shippers are resource-heavy, hard to configure for diverse environments, or lack support for modern data formats and output destinations. Fluent Bit solves this with a lightweight, high-performance log processor (under 1MB binary size) that collects from 25+ input sources, parses and filters with minimal CPU overhead, and routes to 50+ output destinations — container-native, edge-optimized, and Kubernetes-friendly. It is the most widely deployed log processor in the CNCF ecosystem, trusted for collecting telemetry from millions of workloads.
+
+use_cases:
+  - Collect and route application logs from Kubernetes clusters to centralized observability backends
+  - Build lightweight log pipelines that parse, filter, and transform high-volume log streams in real time
+  - Forward infrastructure telemetry from edge devices and IoT deployments to cloud monitoring systems
+  - Aggregate distributed system logs through a unified collector before shipping to Elasticsearch or Loki
+  - Enrich log events with metadata and route to multiple destinations for compliance and debugging

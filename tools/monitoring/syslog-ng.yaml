@@ -1,0 +1,23 @@
+name: Syslog-ng
+description: A high-performance, multi-platform log management solution for collecting, parsing, classifying, and forwarding syslog and application logs to centralized destinations — trusted in enterprise and carrier-grade environments for decades.
+tagline: Enterprise-grade log management and syslog daemon
+
+github_url: https://github.com/syslog-ng/syslog-ng
+website_url: https://syslog-ng.com
+docs_url: https://syslog-ng.github.io
+
+category: Monitoring
+tags: [monitoring, logging, syslog, enterprise, data-pipeline, observability]
+pricing: free
+is_open_source: true
+license: NOASSERTION
+
+problem_solved: |
+  Enterprise infrastructure produces logs in diverse formats from routers, switches, firewalls, servers, containers, and applications — each with different syslog standards, message formats, and transport protocols. Standard syslog implementations lack the parsing flexibility, performance, and reliability needed for modern observability at scale. Syslog-ng solves this with a high-performance log processing engine that supports RFC 3164, RFC 5424, and JSON formats, provides advanced message parsing and classification, TLS encryption, reliable disk-based buffering, and can forward to 30+ destinations including Elasticsearch, Kafka, MongoDB, and database backends.
+
+use_cases:
+  - Centralize syslog collection from thousands of network devices and servers into a unified monitoring platform
+  - Parse and classify unstructured log messages using pattern databases for automated alerting and routing
+  - Securely forward enterprise logs with TLS encryption and disk-based buffering for reliable delivery
+  - Integrate legacy syslog infrastructure with modern observability stacks through multiple output plugins
+  - Filter, rewrite, and enrich log streams in transit to normalize formats across heterogeneous systems
