@@ -1,0 +1,22 @@
+name: LightFM
+description: "LightFM is a Python library for building hybrid recommendation systems that combine content-based and collaborative filtering. It implements matrix factorization with user and item metadata features, supporting both implicit and explicit feedback, and scales to millions of users and items through optimized Cython routines."
+tagline: "Hybrid recommendation library combining content and collaborative filtering"
+github_url: https://github.com/lyst/lightfm
+docs_url: https://making.lyst.com/lightfm/docs/
+install_command: pip install lightfm
+category: Data
+tags:
+  - recommendation
+  - matrix-factorization
+  - collaborative-filtering
+  - python
+  - machine-learning
+  - content-based
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Building recommendation systems requires choosing between content-based or collaborative filtering approaches, each with fundamental blind spots — cold-start users have no interaction history, and content-only systems miss serendipitous discoveries. LightFM combines both approaches in a single model, using metadata features to handle cold-start and collaborative signals to uncover hidden patterns."
+use_cases:
+  - "Build product recommendation engines that work for both new and returning users"
+  - "Create personalized content feeds that blend collaborative signals with content metadata"
+  - "Deploy scalable recommendation systems handling millions of users and items on commodity hardware"

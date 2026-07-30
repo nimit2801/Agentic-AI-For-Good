@@ -1,0 +1,22 @@
+name: Implicit
+description: "Implicit is a Python library for building collaborative filtering recommendation systems from implicit feedback data — clicks, views, purchases, and other behavioral signals where negative examples are absent. It provides optimized implementations of ALS, Bayesian Personalized Ranking, and logistic matrix factorization on sparse matrices."
+tagline: "Collaborative filtering for implicit feedback recommendations"
+github_url: https://github.com/benfred/implicit
+docs_url: https://implicit.readthedocs.io/
+install_command: pip install implicit
+category: Data
+tags:
+  - collaborative-filtering
+  - recommendation
+  - implicit-feedback
+  - matrix-factorization
+  - python
+  - machine-learning
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "Most recommendation algorithms assume explicit feedback (ratings), but real-world user data is overwhelmingly implicit — clicks, plays, purchases — where missing data doesn't mean disinterest. Implicit provides optimized collaborative filtering algorithms designed for implicit signals, leveraging approximate nearest neighbor search and sparse matrix operations for scalable deployment."
+use_cases:
+  - "Build recommendation systems from user behavior data such as page views, time spent, and purchase history"
+  - "Implement personalized product and content discovery using implicit collaborative filtering signals"
+  - "Deploy large-scale recommendation models with GPU-accelerated matrix factorization and nearest neighbor search"
