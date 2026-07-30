@@ -1,0 +1,24 @@
+name: T5X
+description: |
+  T5X is Google Research's open-source, modular framework for training, evaluating, and serving large language models using JAX. It powers state-of-the-art models like PaLM and T5 with scalable training across TPU pods, support for mixture-of-experts architectures, chain-of-thought prompting, few-shot evaluation, and production-grade model serving.
+tagline: Modular JAX framework for training and serving large language models
+
+github_url: https://github.com/google-research/t5x
+website_url: https://github.com/google-research/t5x
+docs_url: https://github.com/google-research/t5x
+
+category: Dev Tools
+tags: [llm-training, jax, tpu, large-language-models, google-research, distributed-training]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Training large language models at scale requires complex distributed infrastructure — sharding model parameters across TPU pods, managing training checkpoints, implementing mixture-of-experts routing, and supporting diverse evaluation protocols. T5X solves this by providing a modular, production-tested JAX framework that handles TPU-parallel training, checkpointing, few-shot evaluation, and mixture-of-experts architectures with standardized configuration.
+
+use_cases:
+  - Pre-train large language models at scale across hundreds of TPU accelerators with data and model parallelism
+  - Fine-tune pre-trained LLMs on downstream tasks with few-shot evaluation and chain-of-thought prompting support
+  - Train mixture-of-experts models with sparse routing for efficient capacity scaling
+  - Evaluate model performance on standard benchmarks with configurable in-context learning and prompting strategies
+  - Serve trained models for production inference with optimized TPU-compatible serving pipelines

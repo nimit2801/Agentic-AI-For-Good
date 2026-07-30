@@ -1,0 +1,26 @@
+name: Chainer
+description: |
+  Chainer is an open-source deep learning framework that pioneered the define-by-run (dynamic computational graph) paradigm, enabling intuitive neural network construction with native Python control flow. It provides a NumPy-compatible array library (CuPy), built-in training utilities, and support for convolutional networks, recurrent networks, and reinforcement learning across CPU and GPU backends.
+tagline: Pioneering define-by-run deep learning framework with dynamic computational graphs
+
+github_url: https://github.com/chainer/chainer
+website_url: https://chainer.org
+docs_url: https://docs.chainer.org
+
+install_command: pip install chainer
+
+category: Other
+tags: [deep-learning, neural-networks, define-by-run, cuda, python, reinforcement-learning]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Early deep learning frameworks used static computational graphs that required building the entire network before execution, making it difficult to implement dynamic architectures with variable-length inputs or conditional branching. Chainer solved this by introducing define-by-run computation where the graph is constructed on-the-fly during forward propagation, enabling intuitive neural network implementation with native Python control flow and loop structures.
+
+use_cases:
+  - Train deep neural networks with dynamic architectures that change shape based on input data characteristics
+  - Implement recurrent networks with variable-length sequences and conditional branching using native Python control flow
+  - Build reinforcement learning agents with policy gradients and Q-learning using Chainer's RL-oriented utilities
+  - Experiment with novel network architectures where static graph definitions would require complex workarounds
+  - Leverage CuPy for GPU-accelerated NumPy-compatible array operations in scientific computing workflows

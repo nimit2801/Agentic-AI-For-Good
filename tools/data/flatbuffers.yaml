@@ -1,0 +1,26 @@
+name: FlatBuffers
+description: |
+  FlatBuffers is an open-source cross-platform serialization library from Google that provides efficient data interchange without parsing overhead. Unlike Protocol Buffers and JSON, FlatBuffers enables direct access to serialized data without unpacking or allocating secondary structures, making it ideal for performance-critical ML inference pipelines, game engines, and embedded systems.
+tagline: Cross-platform serialization library with zero-copy data access
+
+github_url: https://github.com/google/flatbuffers
+website_url: https://flatbuffers.dev
+docs_url: https://flatbuffers.dev
+
+install_command: pip install flatbuffers
+
+category: Data
+tags: [serialization, cross-platform, zero-copy, data-format, performance, google]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Traditional serialization formats like JSON and Protocol Buffers require parsing the entire payload before accessing individual fields, creating memory allocation overhead and CPU bottlenecks in performance-sensitive applications. FlatBuffers solves this by providing a serialization format that supports direct, zero-copy access to individual fields without parsing, enabling efficient data interchange in latency-critical ML inference, real-time systems, and mobile applications.
+
+use_cases:
+  - Serialize and deserialize ML model metadata and configuration with zero-copy access for low-latency inference pipelines
+  - Exchange structured data between heterogeneous systems in real-time applications with minimal CPU and memory overhead
+  - Store and transmit game engine assets and scene data where parsing latency and memory allocation must be minimized
+  - Implement high-performance data logging and telemetry systems that batch-write serialized buffers without per-message allocation
+  - Serve as a drop-in replacement for JSON or Protocol Buffers in embedded systems with strict memory and latency constraints
