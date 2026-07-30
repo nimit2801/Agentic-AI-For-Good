@@ -1,0 +1,22 @@
+name: KeyBERT
+description: "A lightweight keyword extraction library that leverages BERT sentence embeddings and cosine similarity to identify the most representative keywords and keyphrases in text documents."
+tagline: "BERT-based keyword extraction"
+github_url: https://github.com/MaartenGr/KeyBERT
+website_url: https://maartengr.github.io/KeyBERT
+docs_url: https://maartengr.github.io/KeyBERT
+install_command: "pip install keybert"
+category: Data
+tags:
+  - keyword-extraction
+  - nlp
+  - bert
+  - embeddings
+  - text-analysis
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "Extracting meaningful keywords from documents traditionally required rule-based approaches (TF-IDF, RAKE) that capture statistical frequency but miss semantic relevance, or supervised methods that need labeled training data. KeyBERT uses pre-trained BERT sentence embeddings to compare document-level embeddings with candidate keyword embeddings, selecting keywords whose semantic representation is most similar to the document — producing contextually relevant keywords without training data, language-specific rules, or external knowledge bases, while supporting multiple embedding models and keyphrase extraction via MMR diversity."
+use_cases:
+  - "Extract semantically relevant keywords from research papers, product descriptions, and support articles for metadata tagging, search indexing, and content categorization"
+  - "Generate keyphrases for SEO optimization and content summarization by selecting diverse keyword candidates using MMR (Maximal Marginal Relevance) to reduce redundancy"
+  - "Identify trending terms and emerging topics in chat logs, forum posts, and social media content by comparing document embeddings against a dynamic vocabulary of candidate keywords"

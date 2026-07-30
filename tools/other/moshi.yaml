@@ -1,0 +1,21 @@
+name: Moshi
+description: "A real-time speech-to-speech AI model from Kyutai that enables low-latency voice conversations with natural prosody, backchanneling, and turn-taking — processing audio input and generating speech output in a streaming fashion without a separate ASR-TTS pipeline."
+tagline: "Real-time speech-to-speech AI model"
+github_url: https://github.com/kyutai-labs/moshi
+website_url: https://kyutai.org/moshi
+docs_url: https://github.com/kyutai-labs/moshi
+category: Other
+tags:
+  - speech
+  - real-time
+  - ai-assistant
+  - audio
+  - kyutai
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Voice AI assistants traditionally require a cascaded pipeline of separate ASR (speech-to-text), LLM (text generation), and TTS (text-to-speech) components, creating 2-5 second end-to-end latency that makes natural conversation impossible — the AI can't interrupt, backchannel (uh-huh, mhm), or adjust tone in real-time. Moshi is a single neural network that directly processes audio input and generates audio output in a streaming low-latency loop, supporting natural prosody, emotional tone, conversational turn-taking, and text-free operation — enabling voice interfaces that feel as responsive as human conversation without complex multi-model orchestration."
+use_cases:
+  - "Build real-time voice assistants that hold natural conversational exchanges with users, including backchanneling, turn-taking, and emotional tone variation without perceptible delay"
+  - "Create multilingual speech interfaces that process audio input directly without requiring separate ASR and TTS components for each supported language"
+  - "Develop accessibility tools for hands-free interaction with AI systems in environments where text input is impractical (driving, industrial settings, physical disabilities)"

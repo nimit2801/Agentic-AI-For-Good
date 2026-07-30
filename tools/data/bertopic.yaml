@@ -1,0 +1,22 @@
+name: BERTopic
+description: "A topic modeling technique that leverages BERT embeddings and c-TF-IDF to create dense topic representations, providing modular components for clustering, topic reduction, and dynamic topic visualization."
+tagline: "BERT-based topic modeling"
+github_url: https://github.com/MaartenGr/BERTopic
+website_url: https://maartengr.github.io/BERTopic
+docs_url: https://maartengr.github.io/BERTopic
+install_command: "pip install bertopic"
+category: Data
+tags:
+  - topic-modeling
+  - nlp
+  - bert
+  - clustering
+  - embeddings
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "Traditional topic modeling methods like LDA and NMF rely on bag-of-words representations that ignore word order, semantics, and context — producing topics with overlapping, redundant keywords that are hard to interpret. BERTopic combines transformer-based sentence embeddings with class-based TF-IDF (c-TF-IDF) to generate dense, semantic topic representations where each topic is described by distinctive n-gram phrases rather than individual words — enabling intuitive topic hierarchies, dynamic topic evolution over time, and interoperable visualization without requiring manual topic labeling."
+use_cases:
+  - "Discover latent themes and topics in large text corpora (customer reviews, support tickets, research papers) by clustering sentence embeddings and extracting c-TF-IDF topic representations"
+  - "Track how topic prevalence changes over time across document collections using BERTopic's dynamic topic modeling, identifying emerging trends in chat logs, news archives, and product feedback"
+  - "Reduce and merge semantically similar topics into a coherent hierarchy with BERTopic's hierarchical topic reduction, producing interpretable topic taxonomies for business stakeholders"
