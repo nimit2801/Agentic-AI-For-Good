@@ -1,0 +1,25 @@
+name: Brax
+description: Massively parallel rigid-body physics simulation on accelerator hardware — enabling fast reinforcement learning environments, robotics simulation, and physics-based ML research with full GPU/TPU acceleration.
+tagline: GPU-accelerated physics simulation for RL and robotics
+
+github_url: https://github.com/google/brax
+website_url: https://docs.brax.io
+docs_url: https://github.com/google/brax#readme
+
+install_command: pip install brax
+
+category: Other
+tags: [python, jax, physics-simulation, reinforcement-learning, robotics, gpu, ml-research]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Reinforcement learning research requires fast physics simulation for training, but traditional physics engines run on CPU and cannot keep up with the throughput needs of modern GPU-accelerated RL training loops. This forces researchers to choose between simulation fidelity and training speed, slowing down iteration cycles. Brax solves this by implementing fully differentiable rigid-body physics entirely on GPU/TPU using JAX, enabling millions of environment steps per second — orders of magnitude faster than CPU-based physics engines — and allowing gradients to flow through the simulator for differentiable RL and system identification.
+
+use_cases:
+  - Train reinforcement learning agents at millions of environment steps per second on a single GPU
+  - Run large-scale RL hyperparameter sweeps and population-based training in hours instead of days
+  - Implement differentiable physics for system identification, trajectory optimization, and learning-based control
+  - Benchmark and compare RL algorithms across standardized environments with hardware-accelerated simulation
+  - Prototype and evaluate robot locomotion, manipulation, and control policies in simulation before deploying to hardware
