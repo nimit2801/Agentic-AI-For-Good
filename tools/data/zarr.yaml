@@ -1,0 +1,26 @@
+name: Zarr
+description: |
+  Zarr is an open-source Python library providing chunked, compressed, N-dimensional array storage with a clean API that integrates seamlessly with NumPy, Dask, Xarray, and TensorStore. It supports multiple storage backends including local filesystems, cloud object stores (S3, GCS), and Zip files, with efficient parallel read/write operations and strong support for out-of-core computation on datasets too large for memory.
+tagline: Chunked, compressed N-dimensional array storage for Python
+
+github_url: https://github.com/zarr-developers/zarr-python
+website_url: https://zarr.dev
+docs_url: https://zarr.readthedocs.io
+
+install_command: pip install zarr
+
+category: Data
+tags: [array-storage, numerical-computing, compression, python, hpc, cloud-storage, dask]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Large multi-dimensional scientific and ML datasets often exceed available memory and need efficient chunked storage for parallel access, but formats like HDF5 and NetCDF have limitations with cloud storage and concurrent writing. Zarr solves this by providing a chunked, compressed N-dimensional array format with first-class support for cloud object stores, parallel I/O, and seamless integration with NumPy, Dask, and Xarray for out-of-core computation.
+
+use_cases:
+  - Store and process large-scale geospatial climate and weather datasets that exceed system memory via chunked compression
+  - Build distributed ML training pipelines where datasets are stored in cloud object stores and read in parallel across workers
+  - Share and version large array datasets with reproducibility through Zarr's directory-based format compatible with Git
+  - Perform out-of-core numerical computations on terabyte-scale arrays using Dask and Xarray with Zarr as the storage layer
+  - Store intermediate pipeline results for scientific simulations with efficient parallel read/write across compute nodes
