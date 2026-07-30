@@ -1,0 +1,22 @@
+name: Locust
+description: "An open-source load testing tool for web applications that allows defining user behavior in Python code, spawning millions of concurrent users with a distributed architecture, and monitoring real-time performance metrics through a web UI."
+tagline: "Python-based load testing framework"
+github_url: https://github.com/locustio/locust
+website_url: https://locust.io
+docs_url: https://docs.locust.io
+install_command: "pip install locust"
+category: Dev Tools
+tags:
+  - load-testing
+  - performance-testing
+  - python
+  - distributed-testing
+  - web
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "Engineering teams deploying AI-powered web applications and model serving endpoints need to verify that their infrastructure can handle expected traffic loads, but traditional load testing tools require writing XML or JSON test plans or using proprietary scripting languages. Locust lets developers define realistic user behavior — login, LLM API calls, vector search queries, streaming responses — in plain Python coroutines, then distribute virtual users across multiple worker processes with real-time latency, error rate, and throughput dashboards, enabling performance validation against production-scale request patterns using existing Python skills."
+use_cases:
+  - "Load test LLM inference endpoints and embedding APIs by simulating concurrent user requests with varying payload sizes, measuring response time percentiles and throughput under sustained load"
+  - "Stress-test vector database query paths and RAG retrieval pipelines by defining custom wait times and request sequences that mirror real user search and chat patterns"
+  - "Validate autoscaling behavior and resource limits for streaming response endpoints by running distributed load tests across multiple worker machines with real-time Web UI monitoring"

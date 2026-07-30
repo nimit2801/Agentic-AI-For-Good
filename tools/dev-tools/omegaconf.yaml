@@ -1,0 +1,21 @@
+name: OmegaConf
+description: "A hierarchical configuration system for Python that supports YAML, TOML, JSON, and CLI-based configuration merging, variable interpolation from environment variables and other config keys, and structured validation with dataclass integration."
+tagline: "Flexible YAML-based configuration for Python"
+github_url: https://github.com/omry/omegaconf
+website_url: https://omegaconf.readthedocs.io
+install_command: "pip install omegaconf"
+category: Dev Tools
+tags:
+  - configuration
+  - yaml
+  - python
+  - hydra
+  - cli
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+problem_solved: "ML projects often require complex configurations spanning model hyperparameters, data paths, training schedules, and deployment settings — managed through ad-hoc dictionaries, JSON files, or argparse blocks that lack structured validation, merging, or variable interpolation. OmegaConf provides hierarchical configuration trees that merge YAML, CLI arguments, and environment variables with type-strict validation, resolver-based interpolation, and seamless integration with Hydra for composing multi-run experiments — reducing configuration bugs and enabling reproducible experiment tracking."
+use_cases:
+  - "Define, merge, and override hierarchical configuration trees for ML training pipelines, combining base YAML configs with CLI overrides without code changes"
+  - "Interpolate environment variables, other config values, and custom resolvers within configuration strings for dynamic paths, secrets, and compute-dependent parameters"
+  - "Validate configuration structure and types at load time using dataclass integration or explicit schema definitions to catch misconfiguration before training begins"
