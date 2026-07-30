@@ -1,0 +1,24 @@
+name: Uvicorn
+description: "Lightning-fast ASGI web server implementation for Python, built on uvloop and httptools for high-concurrency HTTP serving. Uvicorn is the standard production server for FastAPI and other async Python web frameworks, providing HTTP/1.1 and WebSocket support with automatic reload for development."
+tagline: "Lightning-fast ASGI web server for Python async applications"
+github_url: https://github.com/encode/uvicorn
+website_url: https://www.uvicorn.org
+docs_url: https://www.uvicorn.org
+install_command: pip install uvicorn
+category: Dev Tools
+tags:
+  - python
+  - web-server
+  - asgi
+  - async
+  - model-serving
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+problem_solved: "AI/ML engineers need to serve model inference endpoints and async web applications with high throughput and low latency, but the standard WSGI servers (Gunicorn, Waitress) do not support ASGI frameworks like FastAPI that provide modern async Python capabilities. Uvicorn provides a production-grade ASGI server built on high-performance event loops (uvloop) and HTTP parsing (httptools) that delivers significantly lower latency and higher throughput than traditional WSGI servers for async Python workloads."
+use_cases:
+  - "Serve FastAPI-based ML model inference endpoints in production with high concurrency and low latency"
+  - "Run async WebSocket connections for real-time AI applications including streaming chat and live inference"
+  - "Power development servers with automatic reload for rapid iteration on AI web applications and API prototypes"
+  - "Serve as the backend server for server-sent events (SSE) in streaming LLM response applications"
+  - "Deploy behind NGINX or cloud load balancers for horizontally scaled AI inference serving infrastructure"
