@@ -1,0 +1,23 @@
+name: Filebeat
+description: A lightweight, resource-efficient log shipper from the Elastic Stack that collects and forwards log files and metrics from servers and containers to Elasticsearch or Logstash. Filebeat monitors AI infrastructure components — GPU nodes, model servers, vector databases, and data pipeline workers — with minimal overhead, built-in load balancing, and automated failover.
+tagline: Lightweight log shipper for Elastic Stack
+
+github_url: https://github.com/elastic/beats
+website_url: https://www.elastic.co/beats/filebeat
+docs_url: https://www.elastic.co/guide/en/beats/filebeat/current/index.html
+
+category: Monitoring
+tags: [monitoring, logging, log-shipping, elastic-stack, observability, infrastructure, devops]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AI infrastructure teams run distributed workloads across hundreds of GPU servers, container orchestration platforms, and specialized data services — each generating logs in different formats at different locations. Manually aggregating logs from every component for centralized analysis is impractical at scale. Filebeat solves this with a lightweight agent that ships logs directly from each host with minimal resource overhead (typically under 20MB RAM), handles backpressure and queue management during network outages, supports multi-line log parsing for stack traces and model output, and includes built-in modules for common AI infrastructure components like Kubernetes, Docker, and NGINX — enabling centralized log analysis in Elasticsearch without complex configuration.
+
+use_cases:
+  - Deploy Filebeat on every GPU training node to ship distributed training logs to Elasticsearch for centralized debugging of job failures and performance bottlenecks
+  - Monitor model serving infrastructure by tailing and forwarding inference server access logs and error logs in real time
+  - Collect container logs from Kubernetes-based ML platform deployments using Filebeat's autodiscover feature for pod-level log aggregation
+  - Parse multi-line Python tracebacks from model training scripts and ship them as structured events to Elasticsearch for analysis
+  - Forward vector database health check logs and error messages to a centralized logging pipeline with automated retry and backpressure handling

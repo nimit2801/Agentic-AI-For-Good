@@ -1,0 +1,24 @@
+name: Graylog
+description: |-
+  Graylog is an open-source log management platform that centralizes log collection, storage, and analysis for infrastructure monitoring and security operations. It ingests structured and unstructured log data from AI infrastructure components — GPU servers, model serving endpoints, vector databases, and data pipelines — with real-time search, powerful alerting, and interactive dashboards.
+tagline: Centralized log management and analysis platform
+
+github_url: https://github.com/Graylog2/graylog2-server
+website_url: https://www.graylog.org
+docs_url: https://docs.graylog.org
+
+category: Monitoring
+tags: [monitoring, logging, log-management, observability, siem, devops, security]
+pricing: freemium
+is_open_source: true
+license: SSPL-1.0
+
+problem_solved: |
+  AI infrastructure generates massive volumes of logs across diverse components — GPU training clusters, model inference servers, vector database instances, event streams, and data pipeline workers — making it difficult to correlate issues across the stack. Traditional grep-based log analysis doesn't scale to terabytes of distributed log data. Graylog solves this with a centralized log management platform that ingests logs from any source via Syslog, GELF, or HTTP inputs, indexes them for real-time full-text search, and provides stream-based routing, extractors for structured field parsing, email and webhook alerting on matched patterns, and pre-built dashboards — reducing mean time to resolution for AI infrastructure incidents from hours to minutes.
+
+use_cases:
+  - Centralize GPU cluster log collection from all training nodes for real-time search and debugging of distributed training failures
+  - Set up alerts on model serving error patterns — 500 errors, latency spikes, token limit exhaustion — with webhook notifications into incident management tools
+  - Parse and structure LLM inference request logs to extract prompt tokens, response tokens, and latency fields for performance analytics
+  - Route logs from different AI infrastructure components (Kubernetes, model servers, vector DBs) into separate streams with retention policies and access controls
+  - Correlate system-level errors from compute nodes with application-level errors from model servers to identify root causes faster

@@ -1,0 +1,24 @@
+name: OpenNMS
+description: |-
+  OpenNMS is an enterprise-grade network monitoring platform with deep infrastructure discovery, event management, and performance measurement capabilities. It monitors the full AI infrastructure stack — from GPU servers and network switches to model serving endpoints and database clusters — with SNMP, JMX, HTTP, and custom service monitors, providing automated fault detection, service-level tracking, and detailed performance reports.
+tagline: Enterprise-grade network and infrastructure monitoring platform
+
+github_url: https://github.com/OpenNMS/opennms
+website_url: https://www.opennms.com
+docs_url: https://docs.opennms.com
+
+category: Monitoring
+tags: [monitoring, network-monitoring, infrastructure, snmp, devops, event-management, performance-management]
+pricing: freemium
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  AI infrastructure deployments span heterogeneous hardware — GPU compute nodes, high-speed network interconnects, shared storage arrays, container orchestrators, and specialized databases — each with its own management interface and health indicators. Detecting and diagnosing failures across this diverse stack requires monitoring tools that understand each layer's specific metrics. OpenNMS solves this with an extensible provisioning system that auto-discovers network devices and services, a flexible collection framework supporting SNMP, JMX, HTTP, WS-Man, and custom monitors, a powerful event management and alarm correlation engine that reduces alert noise by grouping related events, and a threshold-based performance measurement system that tracks resource utilization trends — all surfaced through customizable dashboards and automated notification escalations.
+
+use_cases:
+  - Auto-discover and continuously monitor GPU cluster network topology — switches, routers, and fabric interconnects — for link failures and bandwidth saturation
+  - Monitor VMware vSphere or Proxmox hypervisor health hosting AI training VMs with JMX-based JVM metrics for Java-based data pipeline services
+  - Set threshold-based alarms on GPU server disk utilization, memory pressure, and CPU temperature with automated escalation paths to on-call SRE teams
+  - Track end-to-end service availability for model serving endpoints with HTTP service monitors that validate response status codes and response times
+  - Generate capacity planning reports showing network utilization trends, storage growth patterns, and server resource consumption across the AI infrastructure fleet
