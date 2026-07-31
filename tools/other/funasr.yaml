@@ -1,0 +1,27 @@
+name: FunASR
+description: Open-source speech recognition toolkit from Alibaba's ModelScope team for training and inference of end-to-end ASR, voice activity detection, punctuation restoration, and speaker verification models. Includes pretrained models for multiple languages and real-time streaming recognition.
+tagline: End-to-end speech recognition toolkit
+
+github_url: https://github.com/modelscope/FunASR
+website_url: https://funasr.readthedocs.io/
+docs_url: https://funasr.readthedocs.io/
+install_command: pip install funasr
+
+category: Other
+tags: [speech-recognition, asr, voice-activity-detection, audio, deep-learning, streaming, model-scope]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Building production speech recognition — transcribing meetings, voice commands, or media — usually
+  means stitching together separate models for VAD, ASR, punctuation, and speaker IDs, plus handling
+  streaming inference. FunASR bundles end-to-end ASR with voice activity detection, punctuation
+  restoration, and speaker verification in one toolkit, with pretrained multilingual models and
+  streaming support, so teams can ship robust transcription pipelines without training from scratch.
+
+use_cases:
+  - Transcribe meetings, calls, and media in real time with streaming end-to-end ASR models
+  - Detect speech segments and restore punctuation automatically in transcription pipelines
+  - Recognize speech in multiple languages using pretrained ModelScope checkpoints
+  - Verify speakers and diarize audio for security and analytics applications
