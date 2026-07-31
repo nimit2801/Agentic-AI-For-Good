@@ -1,0 +1,26 @@
+name: pdfplumber
+description: Python library for precise PDF text extraction, table detection, and character-level inspection. Unlike naive text dumpers, pdfplumber exposes each character, line, and rectangle with coordinates — enabling reliable parsing of forms, reports, and scientific papers for AI data pipelines.
+tagline: Precise PDF text and table extraction
+
+github_url: https://github.com/jsvine/pdfplumber
+website_url: https://github.com/jsvine/pdfplumber
+docs_url: https://jsvine.github.io/pdfplumber/
+install_command: pip install pdfplumber
+
+category: Data
+tags: [pdf, document-processing, text-extraction, table-extraction, ocr, data-pipeline, python]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Extracting structured content from PDFs for RAG and document-processing pipelines usually produces
+  garbled text with no layout awareness — tables get scrambled, columns merge, and coordinates are lost.
+  pdfplumber gives developers character-, line-, and table-level access with bounding boxes, so they can
+  reliably parse forms, invoices, and research papers into clean structured data for downstream AI use.
+
+use_cases:
+  - Extract text and tables from research papers, financial reports, and invoices for RAG ingestion
+  - Reconstruct tables from scanned or digitally generated PDFs using pdfplumber's table-finding algorithm
+  - Pull character-level coordinates and styling to rebuild document layouts for document AI models
+  - Batch-process thousands of PDFs into structured JSON for training or analytics pipelines

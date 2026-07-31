@@ -1,0 +1,26 @@
+name: OpenParse
+description: Open-source document parsing library that converts complex PDFs, PPTX, and DOCX files into structured, LLM-friendly markdown. Uses vision-language models to identify tables, headings, and reading order, producing clean chunks that plug directly into RAG pipelines and agent knowledge bases.
+tagline: LLM-ready document parsing
+
+github_url: https://github.com/Filimoa/open-parse
+website_url: https://filimoa.github.io/open-parse/
+docs_url: https://filimoa.github.io/open-parse/
+install_command: pip install openparse
+
+category: Data
+tags: [document-processing, rag, pdf, markdown, llm, parsing, knowledge-base]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Feeding raw PDFs, slides, or Office files into LLM pipelines produces noisy chunks that break tables,
+  split headings, and lose reading order — degrading retrieval quality in RAG systems. OpenParse parses
+  documents into semantically coherent markdown blocks with vision-model assistance, preserving tables
+  and structure so embeddings and retrieval see clean, meaningful units instead of mangled text.
+
+use_cases:
+  - Convert PDFs, PPTX, and DOCX files into clean markdown for RAG retrieval pipelines
+  - Preserve tables and headings as structured blocks for higher-quality embedding and chunking
+  - Ingest presentation decks and reports into agent knowledge bases without manual preprocessing
+  - Use vision-language parsing to handle complex layouts and scanned documents accurately
