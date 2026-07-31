@@ -1,0 +1,22 @@
+name: bandit
+description: "A Python security linter that analyzes code for common vulnerabilities and dangerous constructs using the AST, with a plugin system for custom checks."
+tagline: "Python security linter"
+github_url: https://github.com/PyCQA/bandit
+website_url: https://bandit.readthedocs.io
+docs_url: https://bandit.readthedocs.io
+install_command: "pip install bandit"
+category: Dev Tools
+tags:
+  - python
+  - security
+  - linting
+  - static-analysis
+  - vulnerability
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "ML pipelines handle sensitive data and credentials, but security issues — hardcoded secrets, unsafe deserialization, SQL injection via generated queries — are rarely caught in code review. bandit statically analyzes Python code against a database of dangerous patterns (assert usage, pickle, eval, subprocess shell usage, weak crypto), reporting severity and confidence, so teams can catch vulnerabilities in data pipelines and model-serving code before deployment."
+use_cases:
+  - "Scan training and inference code in CI for hardcoded secrets, unsafe deserialization, and shell injection patterns"
+  - "Audit agent tool-calling code for eval, pickle, or subprocess usage that could enable prompt-injection escalation"
+  - "Run bandit with custom plugins to enforce security rules specific to an ML platform's data access layer"

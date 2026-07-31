@@ -1,0 +1,22 @@
+name: pyinstrument
+description: "A Python profiler that samples the call stack at high frequency to produce rich, low-overhead performance reports with a beautiful interactive HTML output."
+tagline: "Python call-stack profiler"
+github_url: https://github.com/joerick/pyinstrument
+website_url: https://pyinstrument.readthedocs.io
+docs_url: https://pyinstrument.readthedocs.io
+install_command: "pip install pyinstrument"
+category: Dev Tools
+tags:
+  - python
+  - profiling
+  - performance
+  - debugging
+  - optimization
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+problem_solved: "Profiling Python training loops and inference code with cProfile produces noisy, hard-to-read output that obscures which function actually dominates runtime. pyinstrument samples the call stack at high frequency with minimal overhead, attributing time accurately and rendering an interactive flame-tree HTML report — so engineers can immediately see the real bottleneck in data loading, preprocessing, or model calls and fix it fast."
+use_cases:
+  - "Profile a training loop to find whether data loading, augmentation, or forward passes dominate wall-clock time"
+  - "Generate an interactive HTML report to share profiling results for an inference service's hot path"
+  - "Compare profiling runs before and after optimization to verify latency improvements on request handlers"
