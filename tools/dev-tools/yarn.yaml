@@ -1,0 +1,25 @@
+name: Yarn
+description: Fast, reliable JavaScript package manager that caches every package and parallelizes installs for speed. Yarn Berry adds Plug'n'Play resolution, workspaces for monorepos, and constraints — streamlining dependency management for AI web applications and model-serving front-ends.
+tagline: Fast and reliable JavaScript package manager
+
+github_url: https://github.com/yarnpkg/berry
+website_url: https://yarnpkg.com
+docs_url: https://yarnpkg.com/docs
+install_command: npm install -g yarn
+
+category: Dev Tools
+tags: [javascript, package-manager, npm, nodejs, dependencies, web-development, monorepo]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Slow, non-deterministic npm installs and fragile node_modules layouts slow down AI web application
+  development and CI pipelines. Yarn speeds up dependency resolution with caching and parallelism, and
+  its Berry release adds Plug'n'Play to eliminate node_modules entirely — making installs deterministic
+  and workspace management for monorepos far simpler.
+
+use_cases:
+  - Install and manage JavaScript dependencies for AI web front-ends and model-serving dashboards faster than npm
+  - Use workspaces to manage monorepos containing shared UI components, SDKs, and app code
+  - Enable Plug'n'Play or offline caching to make CI installs deterministic and reproducible

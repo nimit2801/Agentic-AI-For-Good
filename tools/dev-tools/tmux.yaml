@@ -1,0 +1,25 @@
+name: tmux
+description: Terminal multiplexer that lets users run multiple shell sessions, split panes, and detach or re-attach sessions over SSH. Essential for long-running AI training jobs, remote development, and managing multiple processes in a single terminal window.
+tagline: Terminal multiplexer for persistent sessions
+
+github_url: https://github.com/tmux/tmux
+website_url: https://github.com/tmux/tmux
+docs_url: https://github.com/tmux/tmux/blob/master/README.md
+install_command: brew install tmux
+
+category: Dev Tools
+tags: [terminal, multiplexer, cli, tmux, session-management, developer-tools, remote-development]
+pricing: free
+is_open_source: true
+license: ISC
+
+problem_solved: |
+  Running long AI training jobs or multi-process workflows in a single terminal loses state when the
+  SSH connection drops, and juggling multiple terminal windows is unwieldy. tmux provides persistent
+  sessions with detachable panes and windows, so training runs, dev servers, and shell tasks survive
+  disconnects and can be re-attached from anywhere.
+
+use_cases:
+  - Run long-running model training jobs in a persistent session that survives SSH disconnects
+  - Split a terminal into multiple panes to monitor training logs, GPU usage, and dev servers side by side
+  - Attach to shared sessions for pair debugging on remote GPU machines
