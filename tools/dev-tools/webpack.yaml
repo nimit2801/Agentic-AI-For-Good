@@ -1,0 +1,24 @@
+name: Webpack
+description: Static module bundler for modern JavaScript applications that bundles assets, scripts, images, and styles into optimized deployable files. Its plugin and loader ecosystem, code splitting, and dev-server made it the standard build tool for the React and broader frontend ecosystem.
+tagline: Static module bundler for modern JavaScript applications
+
+github_url: https://github.com/webpack/webpack
+website_url: https://webpack.js.org
+docs_url: https://webpack.js.org/concepts/
+
+install_command: npm install --save-dev webpack
+
+category: Dev Tools
+tags: [bundler, javascript, modules, assets, react, build-tools, webpack, devtools, code-splitting, dev-server]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Browser applications grew beyond what plain script tags could handle — hundreds of modules, assets, and dependencies with no coherent build story. Webpack solves this by treating every asset as a module and bundling them into optimized output, with loaders for almost any file type, code splitting for performance, and a rich plugin system. It became the backbone of React tooling and modern frontend builds.
+use_cases:
+  - Bundle JavaScript, styles, images, and fonts into optimized, cache-friendly production assets
+  - Split application code into lazy-loaded chunks to reduce initial page load time
+  - Transform modern syntax, JSX, and TypeScript with loaders and the Babel integration
+  - Serve a development experience with hot module replacement via the built-in dev server
+  - Extend builds with plugins for minification, tree-shaking, environment injection, and more
