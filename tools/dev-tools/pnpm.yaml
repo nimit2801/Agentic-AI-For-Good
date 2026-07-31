@@ -1,0 +1,22 @@
+name: pnpm
+description: "A fast, disk-space-efficient package manager for JavaScript that installs dependencies in a content-addressable store, enabling monorepo workspaces and near-instant installs."
+tagline: "Fast, disk-efficient JavaScript package manager"
+github_url: https://github.com/pnpm/pnpm
+website_url: https://pnpm.io
+docs_url: https://pnpm.io/motivation
+install_command: "npm install -g pnpm"
+category: Dev Tools
+tags:
+  - javascript
+  - package-manager
+  - monorepo
+  - nodejs
+  - developer-tools
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "npm installs duplicate copies of every dependency into each project, wasting disk space and slowing CI pipelines for teams maintaining multiple AI services and SDKs. pnpm stores packages in a content-addressable store and hard-links them into projects, so installs are faster, disk usage drops dramatically, and monorepo workspaces manage shared dependencies cleanly — while strict node_modules rules prevent phantom dependencies."
+use_cases:
+  - "Install dependencies across a monorepo of AI services in seconds with pnpm workspaces and a shared store"
+  - "Cut CI install times and disk usage for frontend and backend packages by up to 70 percent versus npm"
+  - "Enforce strict dependency declarations with pnpm's isolated node_modules layout for cleaner packages"
