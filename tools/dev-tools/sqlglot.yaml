@@ -1,0 +1,22 @@
+name: SQLGlot
+description: "A powerful SQL parser, transpiler, and optimizer written in Python that parses SQL into an abstract syntax tree, converts between 20+ SQL dialects, and provides query optimization for data pipelines and AI applications."
+tagline: "SQL parser, transpiler, and optimizer"
+github_url: https://github.com/tobymao/sqlglot
+website_url: https://sqlglot.com
+docs_url: https://sqlglot.com/sqlglot.html
+install_command: "pip install sqlglot"
+category: Dev Tools
+tags:
+  - python
+  - sql
+  - parser
+  - transpiler
+  - optimizer
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "AI applications that generate SQL — from natural-language-to-SQL agents to analytics copilots — produce queries that must run correctly across many warehouses, but each database has its own dialect quirks. SQLGlot parses SQL into a unified AST, transpiles between 20+ dialects (BigQuery, DuckDB, Postgres, Snowflake), and validates generated queries before execution, so LLM-generated SQL can be normalized, checked, and executed reliably on any engine."
+use_cases:
+  - "Validate and transpile LLM-generated SQL from a text-to-SQL agent to the target warehouse dialect before execution"
+  - "Normalize user-written queries into a canonical AST for semantic analysis, redaction, or schema-aware rewriting"
+  - "Optimize slow queries by inspecting the parsed tree, extracting table lineage, and applying predicate pushdown"
