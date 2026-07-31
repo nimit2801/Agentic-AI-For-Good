@@ -1,0 +1,24 @@
+name: curl
+description: Command-line tool and library for transferring data with URLs, supporting HTTP, HTTPS, FTP, and dozens of other protocols. The de facto standard for API testing, scripting, and automation across every operating system.
+tagline: Command-line data transfer tool for URLs and APIs
+
+github_url: https://github.com/curl/curl
+website_url: https://curl.se
+docs_url: https://curl.se/docs/
+
+install_command: brew install curl
+
+category: Dev Tools
+tags: [http, api, command-line, networking, automation, testing, scripting, devtools, cli, rest]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Testing APIs and transferring data over HTTP from the command line is awkward without a dedicated tool — browsers hide request details and scripting languages require verbose setup. curl solves this with a single, ubiquitous command that supports any protocol, headers, authentication, and file uploads. It is the standard building block for CI pipelines, API debugging, model serving checks, and automation scripts on every platform.
+use_cases:
+  - Test REST and GraphQL APIs from the terminal with full control over headers, methods, and bodies
+  - Download models, datasets, and artifacts in scripts and CI pipelines with resume and retry options
+  - Upload files and data to endpoints using multipart forms and raw request bodies
+  - Automate health checks against inference servers and web services with exit-code based assertions
+  - Debug TLS, proxy, and DNS behavior with verbose output and protocol-level inspection flags

@@ -1,0 +1,24 @@
+name: Babel
+description: JavaScript compiler that transforms modern ES2015+ syntax, JSX, and TypeScript into backward-compatible versions for older browsers and environments. Powers the build pipelines of React, Vue, and countless bundlers through a plugin and preset ecosystem.
+tagline: JavaScript compiler for modern syntax and JSX transformation
+
+github_url: https://github.com/babel/babel
+website_url: https://babeljs.io
+docs_url: https://babeljs.io/docs
+
+install_command: npm install --save-dev @babel/core @babel/cli
+
+category: Dev Tools
+tags: [javascript, compiler, transpiler, jsx, typescript, build-tools, nodejs, devtools, polyfills, react]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Modern JavaScript syntax and JSX run only in the newest browsers, forcing teams to choose between cutting-edge code and broad compatibility. Babel solves this by compiling ES2015+ features, JSX, and TypeScript into widely supported JavaScript, with configurable presets and plugins for every environment. Its transform pipeline powers React, Vue, and most major bundlers, letting developers write modern code that still runs anywhere.
+use_cases:
+  - Transpile modern JavaScript and JSX into syntax compatible with older browsers and runtimes
+  - Add TypeScript and Flow type-stripping to build pipelines without a full type checker
+  - Inject polyfills for missing standard library features based on target browser support
+  - Create custom code transforms with the plugin API for framework-specific syntax extensions
+  - Power the compilation layer inside bundlers like webpack, Rollup, and Vite
