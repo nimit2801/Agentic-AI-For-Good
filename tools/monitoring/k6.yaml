@@ -1,0 +1,24 @@
+name: K6
+description: Open-source load testing tool from Grafana Labs for testing the performance and reliability of APIs, microservices, and websites. Scripts load tests in JavaScript, runs them locally or in the cloud, and produces rich performance metrics and thresholds.
+tagline: Developer-focused load testing tool for APIs and services
+
+github_url: https://github.com/grafana/k6
+website_url: https://k6.io
+docs_url: https://k6.io/docs/
+
+install_command: brew install k6
+
+category: Monitoring
+tags: [load-testing, performance, api, benchmarking, javascript, grafana, testing, devtools, reliability, observability]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Performance testing is often bolted on with heavyweight enterprise tools that are hard to script and integrate. K6 solves this with a developer-friendly approach: load tests are plain JavaScript, run from the CLI or CI with minimal setup, and emit precise metrics, thresholds, and failure reports. Teams catch latency and reliability regressions in AI services and APIs before users do.
+use_cases:
+  - Load test REST, GraphQL, and gRPC APIs with configurable virtual users and ramp-up scenarios
+  - Run performance checks in CI pipelines with pass/fail thresholds on latency and error rate
+  - Simulate realistic traffic patterns for inference endpoints and model-serving infrastructure
+  - Compare response-time distributions and throughput across service versions and configs
+  - Generate detailed performance reports with custom metrics, tags, and Grafana dashboards
