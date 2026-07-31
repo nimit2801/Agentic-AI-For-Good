@@ -1,0 +1,14 @@
+name: Insanely Fast Whisper
+description: |
+  Insanely Fast Whisper is an opinionated CLI for transcribing audio files with OpenAI's Whisper models on local hardware. Powered by Hugging Face Transformers, Optimum, and Flash Attention 2, it can transcribe 150 minutes of audio in under 98 seconds on an A100 GPU. Supports large-v3, distil-large-v2, and other Whisper model variants with FP16 optimization and batched inference.
+problem_solved: |
+  Running Whisper transcription models at scale typically requires complex optimization setups and manual batching configuration to achieve reasonable throughput. Insanely Fast Whisper solves this by providing a zero-config CLI that automatically applies Flash Attention 2, FP16 inference, and optimal batching, enabling near-real-time transcription of hours of audio on a single GPU.
+use_cases:
+  - "Transcribe long audio recordings and podcasts with near-real-time speed"
+  - "Batch process meeting recordings and call logs for text analysis"
+  - "Generate subtitles and captions for video content at scale"
+category: Other
+github_url: https://github.com/Vaibhavs10/insanely-fast-whisper
+website_url: https://huggingface.co/spaces/hf-audio/insanely-fast-whisper
+is_open_source: true
+install_command: pip install insanely-fast-whisper
