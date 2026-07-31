@@ -1,0 +1,24 @@
+name: Turborepo
+description: High-performance build system for JavaScript and TypeScript monorepos from Vercel. Uses content-based caching, parallel task execution, and remote caching to make builds, tests, and deployments dramatically faster as repositories grow.
+tagline: High-performance monorepo build system with caching
+
+github_url: https://github.com/vercel/turborepo
+website_url: https://turborepo.com
+docs_url: https://turborepo.com/docs
+
+install_command: npm install turbo
+
+category: Dev Tools
+tags: [monorepo, build-system, caching, typescript, javascript, vercel, devtools, ci, task-runner, performance]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Monorepos grow slow: every build, lint, and test run re-executes unchanged work, and coordinating tasks across packages is manual and error-prone. Turborepo solves this with content-aware caching that skips tasks whose inputs haven't changed, parallel execution across packages, and remote caches shared across machines and CI. Teams get the coordination of a single repo without the slowdowns that usually come with scale.
+use_cases:
+  - Cache build and test outputs so unchanged packages skip re-execution entirely
+  - Run tasks across many packages in parallel with dependency-aware scheduling
+  - Share remote caches across local machines and CI to speed up every developer's workflow
+  - Incrementally adopt monorepo conventions in an existing repository with minimal config
+  - Prune monorepo applications for Docker deployments with first-class tooling support

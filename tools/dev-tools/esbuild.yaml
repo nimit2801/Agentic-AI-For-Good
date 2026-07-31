@@ -1,0 +1,24 @@
+name: esbuild
+description: Extremely fast JavaScript and TypeScript bundler written in Go, offering 10-100x faster builds than traditional bundlers. Handles bundling, minification, transpilation, and dev-server serving through a simple API used by Vite, Snowpack, and many build pipelines.
+tagline: Ultra-fast JavaScript and TypeScript bundler written in Go
+
+github_url: https://github.com/evanw/esbuild
+website_url: https://esbuild.github.io
+docs_url: https://esbuild.github.io/api/
+
+install_command: npm install esbuild
+
+category: Dev Tools
+tags: [bundler, javascript, typescript, build-tools, minification, go, nodejs, devtools, performance, transpiler]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Traditional JavaScript bundlers are slow, making large codebases painful to build and iterate on. esbuild solves this by using Go's parallel execution and a highly optimized architecture to deliver 10-100x faster bundling, transpilation, and minification. Its speed makes it the default bundler powering Vite, and its zero-config CLI and JS API let teams build and serve modern web applications with minimal setup.
+use_cases:
+  - Bundle JavaScript and TypeScript applications 10-100x faster than Webpack or Rollup
+  - Transpile modern syntax and JSX for older browsers during build and development
+  - Minify production assets with best-in-class output size and speed
+  - Serve as the build engine inside larger tools like Vite and Snowpack
+  - Run a zero-config local dev server with hot reload for prototyping
