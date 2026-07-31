@@ -1,0 +1,22 @@
+name: isort
+description: "A Python utility and library for sorting imports alphabetically and automatically separating them into sections, keeping import blocks clean, consistent, and free of merge conflicts."
+tagline: "Python import sorter"
+github_url: https://github.com/PyCQA/isort
+website_url: https://pycqa.github.io/isort
+docs_url: https://pycqa.github.io/isort
+install_command: "pip install isort"
+category: Dev Tools
+tags:
+  - python
+  - imports
+  - code-quality
+  - formatting
+  - linter
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "Python ML codebases accumulate unsorted, duplicated imports as features are added — making diffs noisy and imports easy to merge incorrectly. isort automatically sorts imports alphabetically, groups them by section (stdlib, third-party, local), and fixes missing imports in a single pass, so teams can enforce clean import hygiene in CI just like formatting."
+use_cases:
+  - "Auto-sort and group imports in training scripts and library code with a single command or pre-commit hook"
+  - "Enforce import style in CI so pull requests stay focused on logic changes instead of import churn"
+  - "Check import ordering across a monorepo of ML services to prevent merge conflicts on shared dependency files"
