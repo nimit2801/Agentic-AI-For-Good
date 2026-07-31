@@ -1,0 +1,26 @@
+name: Tabula
+description: Tool for liberating data tables trapped inside PDF files, with a desktop application and a Python wrapper (tabula-py). Extracts tables by detecting ruling lines and cell boundaries, then exports them to CSV, TSV, and JSON for use in data analysis and AI pipelines.
+tagline: Liberate data tables from PDFs
+
+github_url: https://github.com/tabulapdf/tabula
+website_url: https://tabula.technology/
+docs_url: https://tabula-py.readthedocs.io/
+install_command: pip install tabula-py
+
+category: Data
+tags: [pdf, table-extraction, document-processing, data-extraction, java, python, csv]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Valuable data is often locked inside tables in PDF documents that resist standard text extraction —
+  rows and columns collapse into unstructured text streams. Tabula identifies table boundaries from
+  ruling lines and cell geometry, reconstructs the grid, and exports clean CSV or JSON, so analysts and
+  ML pipelines can consume report data without manual transcription or paid extraction services.
+
+use_cases:
+  - Extract tables from SEC filings, academic papers, and government PDFs into structured CSV files
+  - Automate table harvesting from batch PDF reports using tabula-py in Python data pipelines
+  - Recover tabular data from legacy documents for database migration and data warehousing
+  - Convert PDF tables to JSON for feeding document-AI and RAG applications

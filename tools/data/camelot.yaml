@@ -1,0 +1,26 @@
+name: Camelot
+description: Python library for extracting tabular data from PDF files with two parsing methods — lattice (ruled tables) and stream (whitespace-delimited tables). Exports extracted tables to CSV, JSON, Excel, and HTML, making it a staple for turning PDF reports into structured data for AI pipelines.
+tagline: Extract tables from PDFs
+
+github_url: https://github.com/camelot-dev/camelot
+website_url: https://camelot-py.readthedocs.io/
+docs_url: https://camelot-py.readthedocs.io/
+install_command: pip install camelot-py
+
+category: Data
+tags: [pdf, table-extraction, document-processing, data-extraction, python, csv, data-pipeline]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Tables buried inside PDF reports are notoriously hard to extract — text-based parsers lose row and
+  column structure, and manual copy-paste does not scale. Camelot detects ruled and unruled tables using
+  lattice and stream algorithms, preserves cell structure, and exports clean CSV, JSON, and Excel files —
+  so teams can feed PDF-derived tabular data into analytics and machine learning pipelines automatically.
+
+use_cases:
+  - Convert tables from financial filings, government reports, and research PDFs into CSV for analysis
+  - Extract structured tables from scanned or print-generated documents for RAG and data warehousing
+  - Automate recurring report ingestion by batch-processing PDF tables into a database
+  - Export extracted tables as Excel or JSON for downstream BI dashboards and ML feature stores
