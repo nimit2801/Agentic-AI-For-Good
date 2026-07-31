@@ -1,0 +1,25 @@
+name: ripgrep
+description: Ultra-fast recursive regex search tool that respects .gitignore rules, built in Rust. Searches codebases, log files, and large directories at line-oriented speed, making it the default grep replacement for developers working with large ML repositories and datasets.
+tagline: Blazing-fast recursive regex search
+
+github_url: https://github.com/BurntSushi/ripgrep
+website_url: https://github.com/BurntSushi/ripgrep
+docs_url: https://github.com/BurntSushi/ripgrep/blob/master/README.md
+install_command: brew install ripgrep
+
+category: Dev Tools
+tags: [search, grep, regex, code-search, cli, developer-tools, productivity]
+pricing: free
+is_open_source: true
+license: Unlicense
+
+problem_solved: |
+  Searching large codebases, log files, or training-data directories with grep is slow and floods
+  results with binary files and vendor directories. ripgrep delivers line-oriented regex search at
+  near-memory speed, automatically respects .gitignore, and skips hidden and binary files — finding
+  needles in huge repositories in milliseconds.
+
+use_cases:
+  - Search across massive ML codebases for function definitions, config keys, or error strings in milliseconds
+  - Grep through training-data directories and log files while automatically ignoring binary and vendor files
+  - Pipe regex-matched lines into other tools for log analysis, dataset auditing, and code quality checks

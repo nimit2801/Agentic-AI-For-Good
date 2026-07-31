@@ -1,0 +1,26 @@
+name: rclone
+description: Command-line program to sync, copy, and manage files across 70+ cloud storage providers including S3, Google Drive, Dropbox, and Azure Blob. Widely used to move AI training data, model artifacts, and dataset backups between local storage and object stores with checksum-verified transfers.
+tagline: rsync for cloud storage
+
+github_url: https://github.com/rclone/rclone
+website_url: https://rclone.org
+docs_url: https://rclone.org/docs/
+install_command: brew install rclone
+
+category: Data
+tags: [cloud-storage, file-sync, backup, s3, object-storage, data-transfer, storage]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Moving AI datasets between local disks, cloud object storage, and remote servers often involves
+  vendor-specific CLIs with different flags and no checksum verification. rclone unifies 70+ storage
+  backends behind one rsync-like interface, so data engineers can sync, verify, and automate dataset
+  transfers with consistent commands, encryption, and incremental copy support.
+
+use_cases:
+  - Sync AI training datasets from local workstations to S3, GCS, or Azure Blob Storage with checksum verification
+  - Schedule automated backups of model checkpoints and experiment artifacts to cloud object storage
+  - Migrate large data corpora between cloud providers such as Google Drive to S3 without downloading locally
+  - Mount cloud storage as a virtual filesystem for data science workflows using rclone mount
