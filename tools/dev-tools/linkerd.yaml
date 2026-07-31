@@ -1,0 +1,22 @@
+name: Linkerd
+description: "An ultralight, security-first service mesh for Kubernetes that adds observability, reliability, and mTLS encryption to cloud-native workloads with a simple CLI and minimal performance overhead."
+tagline: "Lightweight Kubernetes service mesh"
+github_url: https://github.com/linkerd/linkerd2
+website_url: https://linkerd.io
+docs_url: https://linkerd.io/2.15/overview/
+install_command: curl -sL https://run.linkerd.io/install | sh
+category: Dev Tools
+tags:
+  - kubernetes
+  - service-mesh
+  - mtls
+  - observability
+  - infrastructure
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Running AI services on Kubernetes introduces traffic management, encryption, and observability challenges — services need mTLS between pods, retries and timeouts for flaky model calls, and golden metrics per workload. Linkerd adds a transparent service mesh with automatic mTLS, load balancing, retries, and per-service metrics (success rate, latency, throughput) with a tiny footprint and no application changes, making inference pipelines observable and resilient."
+use_cases:
+  - "Add automatic mTLS encryption between model-serving pods and feature-store services without changing application code"
+  - "Get golden metrics (success rate, latency, throughput) per deployment to monitor inference pipeline health"
+  - "Configure retries and timeouts for flaky LLM API calls at the mesh layer for resilient multi-service agents"
