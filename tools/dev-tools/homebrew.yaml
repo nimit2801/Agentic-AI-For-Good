@@ -1,0 +1,24 @@
+name: Homebrew
+description: Package manager for macOS and Linux that installs software Apple and other vendors don't provide. Maintains a massive catalog of formulae and casks, handling dependencies, upgrades, and cleanup with simple commands like brew install and brew services.
+tagline: The missing package manager for macOS and Linux
+
+github_url: https://github.com/Homebrew/brew
+website_url: https://brew.sh
+docs_url: https://docs.brew.sh
+
+install_command: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+category: Dev Tools
+tags: [package-manager, macos, linux, cli, devtools, dependencies, brew, open-source, sysadmin, automation]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Installing and updating development tools on macOS is fragmented — installers, manual PATH edits, and missing dependencies waste hours. Homebrew solves this with a single package manager that installs, upgrades, and manages dependencies for thousands of open-source tools and desktop apps from the command line. Teams bootstrap entire development environments reproducibly, and CI setups stay consistent with a shared set of formulae.
+use_cases:
+  - Install and upgrade developer tools, compilers, and runtimes with a single brew install command
+  - Manage background services like databases and message queues with brew services
+  - Install GUI applications alongside CLI tools using casks with automatic updates
+  - Bootstrap reproducible development environments on fresh machines with a Brewfile
+  - Run Linuxbrew on Linux servers to keep toolchains consistent across platforms

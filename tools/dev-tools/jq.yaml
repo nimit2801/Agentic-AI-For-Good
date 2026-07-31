@@ -1,0 +1,24 @@
+name: jq
+description: Lightweight and flexible command-line JSON processor that slices, filters, maps, and transforms structured data with a concise query language. The standard tool for parsing API responses, config files, and logs in shell scripts and CI pipelines.
+tagline: Command-line JSON processor for parsing and transformation
+
+github_url: https://github.com/jqlang/jq
+website_url: https://jqlang.github.io/jq/
+docs_url: https://jqlang.github.io/jq/manual/
+
+install_command: brew install jq
+
+category: Dev Tools
+tags: [json, command-line, jq, parsing, data-processing, scripting, cli, devtools, automation, api]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Extracting values from JSON in shell scripts is painful — grep and sed break on nested structures, and writing full programs for simple queries is overkill. jq solves this with a compact query language for filtering, mapping, and transforming JSON, built for pipelines and one-liners. It turns API responses and config files into exactly the data a script needs, with no dependencies and instant startup.
+use_cases:
+  - Extract fields from API responses in shell pipelines with dot notation and filters
+  - Transform and reshape JSON documents with mapping, grouping, and array operations
+  - Slice and project large JSON logs and configuration files down to relevant subsets
+  - Validate and pretty-print JSON output for debugging and documentation
+  - Build data-processing steps in CI scripts that consume machine-readable tool output
