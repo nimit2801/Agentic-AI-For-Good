@@ -1,0 +1,21 @@
+name: Caddy
+description: "A production-ready open-source web server with automatic HTTPS, HTTP/2/3, and a simple declarative configuration, widely used to serve AI applications, model APIs, and static sites with zero manual certificate management."
+tagline: "Web server with automatic HTTPS"
+github_url: https://github.com/caddyserver/caddy
+website_url: https://caddyserver.com
+docs_url: https://caddyserver.com/docs
+category: Dev Tools
+tags:
+  - web-server
+  - https
+  - reverse-proxy
+  - go
+  - infrastructure
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Serving AI web apps and model APIs over HTTPS normally requires configuring nginx or Apache plus manually renewing TLS certificates, which is error-prone and time-consuming. Caddy automatically obtains and renews Let's Encrypt certificates for every configured domain, ships with sane defaults, and uses a readable Caddyfile — so a single binary replaces the web server, reverse proxy, and TLS management stack for deploying inference endpoints and frontend applications."
+use_cases:
+  - "Serve a fine-tuned model's REST API behind automatic HTTPS with a three-line Caddyfile and zero certificate management"
+  - "Reverse-proxy multiple agent services or Jupyter instances to subdomains with automatic TLS and load balancing"
+  - "Host an AI tool's marketing site or docs with static file serving, compression, and HTTP/3 built in"

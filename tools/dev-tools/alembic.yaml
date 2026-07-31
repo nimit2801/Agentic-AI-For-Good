@@ -1,0 +1,22 @@
+name: Alembic
+description: "A lightweight database migration tool for SQLAlchemy that lets teams version their database schema, auto-generate migration scripts from model changes, and apply or roll back schema changes across environments."
+tagline: "SQLAlchemy database migrations"
+github_url: https://github.com/sqlalchemy/alembic
+website_url: https://alembic.sqlalchemy.org
+docs_url: https://alembic.sqlalchemy.org
+install_command: "pip install alembic"
+category: Dev Tools
+tags:
+  - python
+  - sqlalchemy
+  - database
+  - migrations
+  - schema
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "AI applications that persist data face schema drift — models change as features evolve, but databases silently fall out of sync, causing runtime errors and data corruption. Alembic versions every schema change as a migration script, auto-generates migrations by diffing SQLAlchemy models against the live database, and provides upgrade and downgrade paths so teams can evolve schemas safely across dev, staging, and production."
+use_cases:
+  - "Auto-generate migration scripts after adding a new column or table to SQLAlchemy models and review the diff before applying"
+  - "Apply schema changes across development, staging, and production environments with a single upgrade command"
+  - "Roll back a failed migration with downgrade scripts to keep vector stores and metadata tables consistent"
