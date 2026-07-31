@@ -1,0 +1,24 @@
+name: Playwright
+description: Microsoft's browser automation framework for reliable end-to-end testing across Chromium, Firefox, and WebKit. Provides auto-waiting, trace viewer, codegen, and a unified test runner that makes cross-browser tests fast and dependable for modern web applications.
+tagline: Cross-browser automation and end-to-end testing framework
+
+github_url: https://github.com/microsoft/playwright
+website_url: https://playwright.dev
+docs_url: https://playwright.dev/docs/intro
+
+install_command: npm install playwright
+
+category: Dev Tools
+tags: [testing, browser-automation, e2e, web, chromium, firefox, webkit, nodejs, devtools, automation]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Traditional browser automation tools are flaky — they race against page loads and depend on fragile selectors and sleep timers. Playwright solves this with auto-waiting that retries actions until elements are ready, a single API across Chromium, Firefox, and WebKit, and rich debugging tools like trace viewers and inspector codegen. Teams get deterministic end-to-end tests plus the same engine used for web scraping, visual regression, and AI agent browser control.
+use_cases:
+  - Write end-to-end tests that run reliably across Chromium, Firefox, and WebKit with auto-waiting and retries
+  - Record browser interactions with codegen and replay them as maintainable test or scraping scripts
+  - Debug flaky tests with trace viewer, video recording, and per-action network and DOM snapshots
+  - Scrape data and automate workflows against modern single-page applications using a high-level API
+  - Drive headless browsers for visual regression testing and performance measurement in CI pipelines

@@ -1,0 +1,24 @@
+name: Rollup
+description: JavaScript module bundler that compiles small code fragments into larger, optimized libraries using native ES modules. Its tree-shaking and code-splitting capabilities make it the standard choice for publishing JavaScript libraries and the foundation of Vite's production builds.
+tagline: ES module bundler with powerful tree-shaking for libraries
+
+github_url: https://github.com/rollup/rollup
+website_url: https://rollupjs.org
+docs_url: https://rollupjs.org/guide/en/
+
+install_command: npm install rollup
+
+category: Dev Tools
+tags: [bundler, javascript, esmodules, tree-shaking, libraries, npm, nodejs, devtools, build-tools, packaging]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Publishing modern JavaScript libraries requires bundling many source files into a few optimized outputs, but naive bundling bloats packages and breaks tree-shaking. Rollup solves this by consuming native ES modules and eliminating unused exports, producing smaller, faster libraries that consumers can further optimize. Its rich plugin ecosystem and support for multiple output formats make it the default for library authors and the production bundler inside Vite.
+use_cases:
+  - Publish JavaScript libraries in multiple formats (ESM, CommonJS, IIFE) from one source tree
+  - Eliminate dead code automatically through static analysis and tree-shaking
+  - Split code into lazy-loaded chunks for faster application startup
+  - Generate type-safe, optimized builds for npm packages with the plugin ecosystem
+  - Power production builds for Vite-based frontend frameworks
