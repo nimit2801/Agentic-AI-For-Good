@@ -1,0 +1,22 @@
+name: flake8
+description: "A Python linting tool that wraps Pyflakes, pycodestyle, and McCabe to check code against style guides, flag logic errors, unused imports, and complexity issues, with a plugin system for custom checks."
+tagline: "Python code linter"
+github_url: https://github.com/PyCQA/flake8
+website_url: https://flake8.pycqa.org
+docs_url: https://flake8.pycqa.org
+install_command: "pip install flake8"
+category: Dev Tools
+tags:
+  - python
+  - linting
+  - code-quality
+  - pep8
+  - static-analysis
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "AI research code often ships with unused imports, undefined names, and style inconsistencies that are caught only at runtime or in review. flake8 combines Pyflakes logic checks (unused imports, undefined names), pycodestyle formatting rules, and McCabe complexity limits into one fast, extensible linter, so teams can catch bugs and enforce style in CI before code reaches training jobs or production."
+use_cases:
+  - "Lint Python modules and training scripts for unused imports and undefined names before merging"
+  - "Enforce PEP 8 style and cyclomatic complexity limits across a shared ML library with a flake8 config"
+  - "Add custom plugins for team-specific rules (for example banned imports or required docstrings) and run in pre-commit"

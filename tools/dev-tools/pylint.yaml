@@ -1,0 +1,22 @@
+name: pylint
+description: "A powerful Python static code analyzer that checks for errors, enforces coding standards, detects code smells and refactoring opportunities, and can even catch subtle bugs through inference."
+tagline: "Python static code analyzer"
+github_url: https://github.com/pylint-dev/pylint
+website_url: https://pylint.readthedocs.io
+docs_url: https://pylint.readthedocs.io
+install_command: "pip install pylint"
+category: Dev Tools
+tags:
+  - python
+  - static-analysis
+  - linting
+  - code-quality
+  - refactoring
+pricing: free
+is_open_source: true
+license: GPL-2.0
+problem_solved: "Python codebases grow technical debt — dead code, overly complex functions, missing docstrings, and subtle bugs that simple linters miss. pylint performs deep static analysis with type inference, flagging errors, style violations, design issues (high complexity, too many branches), and refactoring opportunities with configurable severity, so teams can enforce quality gates on ML libraries and services."
+use_cases:
+  - "Run pylint as a CI quality gate that fails builds on error-level issues in shared ML code"
+  - "Detect code smells like duplicated branches, overly long functions, and unused arguments across a data pipeline"
+  - "Score refactoring candidates by pylint's design and refactor messages to prioritize technical-debt paydown"
