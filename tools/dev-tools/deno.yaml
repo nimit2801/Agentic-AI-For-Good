@@ -1,0 +1,24 @@
+name: Deno
+description: Secure JavaScript and TypeScript runtime from the creator of Node.js, with built-in TypeScript support, dependency URL imports, and modern web APIs. Offers first-class permissions, a standard library, and tools for formatting, linting, and bundling out of the box.
+tagline: Secure JavaScript and TypeScript runtime with built-in tooling
+
+github_url: https://github.com/denoland/deno
+website_url: https://deno.com
+docs_url: https://docs.deno.com
+
+install_command: curl -fsSL https://deno.land/install.sh | sh
+
+category: Dev Tools
+tags: [javascript, typescript, runtime, deno, security, web, nodejs, devtools, permissions, cli]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Node.js left security and modern tooling as afterthoughts — scripts run with full system access, and bundling, linting, and formatting require separate tools. Deno solves this with a secure-by-default runtime that requires explicit permissions, native TypeScript execution, and built-in formatter, linter, and bundler. Its URL-based imports and web-standard APIs make modern JavaScript development simpler and safer.
+use_cases:
+  - Run TypeScript and JavaScript directly without transpilation or dependency configuration
+  - Execute untrusted scripts safely with granular filesystem, network, and environment permissions
+  - Build web servers and APIs using standard Request, Response, and fetch APIs
+  - Bundle, lint, format, and test code with built-in tools instead of separate packages
+  - Deploy serverless functions and edge workloads using the same runtime across environments
