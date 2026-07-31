@@ -1,0 +1,24 @@
+name: fzf
+description: General-purpose command-line fuzzy finder that lets users interactively search files, history, processes, and any streaming input with a fast, responsive interface. Composable with any command, it has become an essential productivity tool for terminal workflows.
+tagline: Command-line fuzzy finder for interactive search
+
+github_url: https://github.com/junegunn/fzf
+website_url: https://github.com/junegunn/fzf#readme
+docs_url: https://github.com/junegunn/fzf#readme
+
+install_command: brew install fzf
+
+category: Dev Tools
+tags: [fuzzy-finder, command-line, productivity, terminal, search, vim, shell, devtools, cli, interactive]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Searching through files, shell history, and command output on the terminal is slow when everything requires exact names or multiple commands. fzf solves this with an interactive fuzzy matcher that instantly filters any input stream as you type, then hands the selection to the next command. It supercharges shell workflows — file navigation, history search, and process killing — with minimal setup.
+use_cases:
+  - Navigate files and directories interactively with fuzzy matching integrated into the shell
+  - Search through command history and run previous commands with a few keystrokes
+  - Filter and select from arbitrary command output with custom preview panes
+  - Kill processes, switch Git branches, and manage tmux sessions from fuzzy pickers
+  - Build custom interactive workflows by piping any data source into fzf
