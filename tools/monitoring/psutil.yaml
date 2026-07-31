@@ -1,0 +1,23 @@
+name: Psutil
+description: "A cross-platform Python library for retrieving system information — CPU, memory, disks, network, sensors, and running processes — and for process management, used by monitoring tools and ML infrastructure to track resource utilization."
+tagline: "Cross-platform system and process monitoring for Python"
+github_url: https://github.com/giampaolo/psutil
+website_url: https://psutil.readthedocs.io
+docs_url: https://psutil.readthedocs.io
+install_command: "pip install psutil"
+category: Monitoring
+tags:
+  - python
+  - system-monitoring
+  - cpu
+  - memory
+  - processes
+  - observability
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+problem_solved: "ML engineers need to know whether their training jobs are CPU-bound, leaking memory, or exhausting disk — but reading /proc, ps, and system stats portably across operating systems is fragile and platform-specific. Psutil provides a single cross-platform API for CPU, memory, disk, network, and process metrics, so monitoring agents, training supervisors, and observability dashboards can track resource usage consistently on Linux, macOS, and Windows."
+use_cases:
+  - "Track CPU and memory usage of a training process to detect leaks and right-size instance types"
+  - "Build a lightweight resource dashboard that samples disk, network, and per-process stats across worker nodes"
+  - "Watch for process crashes or zombies in a multi-agent deployment and restart unhealthy workers programmatically"

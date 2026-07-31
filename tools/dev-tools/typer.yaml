@@ -1,0 +1,22 @@
+name: Typer
+description: "A Python library for building command-line interfaces (CLIs) from type-annotated functions, with automatic help text, argument parsing, and shell completion built on Click and type hints."
+tagline: "Python CLI library built on type hints"
+github_url: https://github.com/tiangolo/typer
+website_url: https://typer.tiangolo.com
+docs_url: https://typer.tiangolo.com
+install_command: "pip install typer"
+category: Dev Tools
+tags:
+  - python
+  - cli
+  - command-line
+  - type-hints
+  - developer-tools
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "Building command-line tools for AI workflows with argparse is verbose and error-prone — no auto-generated help, weak validation, and poor tab-completion support. Typer lets you write a Python function, annotate parameters with types and defaults, and get a production-ready CLI with automatic help text, validation, and shell completion for free. AI engineers use it to build model training scripts, data pipeline CLIs, and agent control interfaces without writing argument-parsing code."
+use_cases:
+  - "Build a CLI for fine-tuning scripts where arguments (model, dataset, epochs, lr) are typed function parameters with auto-generated help"
+  - "Ship data pipeline commands with subcommands for extract, transform, and load stages, each with validated typed options"
+  - "Create internal developer tools for agents — invocation, model selection, and output format flags with autocompletion"
