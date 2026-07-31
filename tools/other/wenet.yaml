@@ -1,0 +1,27 @@
+name: WeNet
+description: Production-first and production-ready end-to-end speech recognition toolkit supporting streaming and non-streaming ASR with a unified two-pass approach. Built on PyTorch and TorchAudio, with pretrained models, a lightweight runtime, and tools for training, deployment, and benchmarking.
+tagline: Production-ready end-to-end ASR
+
+github_url: https://github.com/wenet-e2e/wenet
+website_url: https://github.com/wenet-e2e/wenet
+docs_url: https://wenet-e2e.github.io/wenet/
+install_command: pip install git+https://github.com/wenet-e2e/wenet.git
+
+category: Other
+tags: [speech-recognition, asr, streaming, pytorch, audio, deep-learning, production]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Deploying speech recognition in production — especially with streaming requirements for live
+  transcription and voice interfaces — often means juggling separate non-streaming accuracy and
+  streaming latency models. WeNet unifies streaming and non-streaming ASR in a single two-pass
+  architecture trained end-to-end with PyTorch, offering pretrained checkpoints and a lightweight
+  runtime so teams can go from data to deployed transcription without complex model ensembles.
+
+use_cases:
+  - Deploy real-time streaming speech recognition for voice assistants and live captioning
+  - Train end-to-end ASR models on custom domains with the PyTorch training pipeline
+  - Run on-device or server-side inference with WeNet's lightweight runtime
+  - Benchmark streaming versus non-streaming accuracy for production trade-off decisions
