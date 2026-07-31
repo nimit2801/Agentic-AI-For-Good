@@ -1,0 +1,26 @@
+name: Pydub
+description: Simple and easy high-level audio manipulation library for Python. Supports slicing, concatenating, overlaying, volume adjustment, format conversion, and playback across MP3, WAV, FLAC, and OGG via FFmpeg — ideal for preprocessing audio datasets for ML and TTS pipelines.
+tagline: Simple audio manipulation in Python
+
+github_url: https://github.com/jiaaro/pydub
+website_url: https://github.com/jiaaro/pydub
+docs_url: https://github.com/jiaaro/pydub
+install_command: pip install pydub
+
+category: Other
+tags: [audio, audio-processing, ffmpeg, python, tts, data-pipeline, sound]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Preparing audio for ML training and TTS pipelines usually means writing fiddly FFmpeg command lines to
+  trim, concatenate, convert, or adjust audio files. Pydub wraps FFmpeg in a clean Python API where
+  slicing is as simple as `audio[10:20]`, enabling rapid batch manipulation — trimming silence, splicing
+  clips, converting formats, and normalizing loudness — without shell scripting or low-level DSP code.
+
+use_cases:
+  - Trim, concatenate, and split audio clips programmatically when building speech and music datasets
+  - Convert between MP3, WAV, FLAC, and OGG formats at scale for ML ingestion pipelines
+  - Normalize loudness and apply fades or overlays for TTS training and podcast processing
+  - Extract and manipulate audio segments in QA tools that verify synthesized speech output
