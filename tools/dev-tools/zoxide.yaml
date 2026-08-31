@@ -1,0 +1,27 @@
+name: zoxide
+description: zoxide is a smarter cd command inspired by z and autojump. It ranks directories by how often and how recently you use them so you can jump with a few keystrokes, and it works in Bash, Zsh, Fish, PowerShell, and other major shells.
+tagline: Smarter cd that jumps to frequent directories
+
+github_url: https://github.com/ajeetdsouza/zoxide
+website_url: https://github.com/ajeetdsouza/zoxide
+docs_url: https://github.com/ajeetdsouza/zoxide#getting-started
+
+install_command: brew install zoxide
+
+category: Dev Tools
+tags: [cli, cd, navigation, shell, rust, fzf, developer-tools, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Jumping between deep project trees with cd means typing long paths or
+  maintaining aliases. zoxide remembers frequent directories and matches
+  fuzzy queries so you can move around a monorepo or ML workspace in a few
+  keystrokes, with optional fzf interactive selection.
+
+use_cases:
+  - Jump to ranked project directories with z instead of full paths
+  - Interactively pick a directory with zi and fzf
+  - Share the same jumper across Bash, Zsh, Fish, and PowerShell
+  - Navigate large monorepos and dataset folders from the terminal

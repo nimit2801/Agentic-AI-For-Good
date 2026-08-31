@@ -1,0 +1,26 @@
+name: bat
+description: bat is a cat(1) clone with syntax highlighting and Git integration. It pages output, shows line numbers, highlights code in many languages, and marks uncommitted changes so you can read source, configs, and logs more clearly than with plain cat.
+tagline: cat clone with syntax highlighting and Git integration
+
+github_url: https://github.com/sharkdp/bat
+website_url: https://github.com/sharkdp/bat
+docs_url: https://github.com/sharkdp/bat#readme
+
+install_command: brew install bat
+
+category: Dev Tools
+tags: [cli, cat, syntax-highlighting, git, rust, terminal, developer-tools, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Reading source and logs with cat dumps unformatted text into the terminal.
+  bat adds syntax highlighting, Git change markers, line numbers, and paging
+  so developers can inspect files quickly without opening an editor.
+
+use_cases:
+  - Preview source files with syntax highlighting in the terminal
+  - Use bat as an fzf previewer for interactive file search
+  - Review Git-modified files with change markers beside each line
+  - Replace cat in shell aliases for logs, configs, and Markdown

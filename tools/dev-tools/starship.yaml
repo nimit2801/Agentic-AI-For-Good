@@ -1,0 +1,27 @@
+name: starship
+description: Starship is a fast, customizable prompt for any shell. Written in Rust, it shows Git status, language toolchains, cloud context, and command duration out of the box, and works with Bash, Zsh, Fish, PowerShell, and more from a single TOML config.
+tagline: Minimal, fast, customizable prompt for any shell
+
+github_url: https://github.com/starship/starship
+website_url: https://starship.rs
+docs_url: https://starship.rs/guide/
+
+install_command: brew install starship
+
+category: Dev Tools
+tags: [shell, prompt, rust, cli, git, terminal, developer-tools, open-source]
+pricing: free
+is_open_source: true
+license: ISC
+
+problem_solved: |
+  Default shell prompts hide Git branch, runtime versions, and error status
+  unless you maintain a heavy theme. Starship is a single Rust binary that
+  drops into any shell and shows repo, toolchain, and duration context from
+  one TOML file.
+
+use_cases:
+  - Show Git branch, dirty state, and language versions in the prompt
+  - Share one prompt config across Bash, Zsh, Fish, and PowerShell
+  - Speed up prompt rendering versus slow Python or shell themes
+  - Surface Kubernetes, AWS, and Python venv context while working
