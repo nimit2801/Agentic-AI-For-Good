@@ -1,0 +1,25 @@
+name: DiffSinger
+description: DiffSinger is an open-source singing voice synthesis and text-to-speech system that uses a shallow diffusion mechanism. It generates singing from lyrics plus MIDI or acoustic features, includes DiffSpeech for spoken TTS, and ships official PyTorch training and inference code from the AAAI 2022 paper.
+tagline: Shallow-diffusion singing voice synthesis and TTS
+
+github_url: https://github.com/MoonInTheRiver/DiffSinger
+website_url: https://github.com/MoonInTheRiver/DiffSinger
+docs_url: https://arxiv.org/abs/2105.02446
+
+category: Other
+tags: [singing-voice-synthesis, text-to-speech, tts, diffusion, svs, speech-synthesis, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  High-quality singing synthesis usually needs heavy vocoders and long diffusion chains
+  that are slow to sample. DiffSinger applies a shallow diffusion mechanism so singing
+  voice synthesis and spoken TTS can stay high quality while generating from lyrics,
+  MIDI, or acoustic features with fewer diffusion steps.
+
+use_cases:
+  - Synthesize singing vocals from lyrics and MIDI for music production prototypes
+  - Train or fine-tune a singing voice model on custom singer datasets
+  - Generate spoken TTS with the related DiffSpeech pipeline
+  - Research shallow diffusion versus full diffusion for audio generation

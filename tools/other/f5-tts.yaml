@@ -1,0 +1,27 @@
+name: F5-TTS
+description: F5-TTS is an open-source flow-matching text-to-speech model that generates fluent, speaker-faithful speech from text plus a short reference clip. It uses a Diffusion Transformer with ConvNeXt V2 for faster training and inference, and Sway Sampling to improve generation quality at inference time.
+tagline: Flow-matching TTS that clones a voice from a short clip
+
+github_url: https://github.com/SWivid/F5-TTS
+website_url: https://swivid.github.io/F5-TTS/
+docs_url: https://github.com/SWivid/F5-TTS
+
+install_command: pip install f5-tts
+
+category: Other
+tags: [text-to-speech, tts, voice-cloning, flow-matching, diffusion, speech-synthesis, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Cloning a speaker with diffusion TTS is often slow to train and too heavy for interactive
+  inference. F5-TTS uses flow matching and a Diffusion Transformer with ConvNeXt V2 so you
+  can synthesize fluent, faithful speech from a short reference clip without the usual
+  diffusion-TTS training and latency tax.
+
+use_cases:
+  - Clone a speaker from a short reference clip and generate new speech in that voice
+  - Build local TTS pipelines for agents, audiobooks, and video voiceover
+  - Fine-tune or serve F5-TTS as an open alternative to commercial voice-cloning APIs
+  - Compare flow-matching TTS quality against diffusion and autoregressive baselines

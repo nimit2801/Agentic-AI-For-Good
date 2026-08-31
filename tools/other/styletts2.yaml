@@ -1,0 +1,25 @@
+name: StyleTTS2
+description: StyleTTS 2 is an open-source text-to-speech model that reaches human-level naturalness using style diffusion and adversarial training with large speech language models. It can sample a latent speaking style without a reference clip and also supports zero-shot speaker adaptation on multi-speaker data.
+tagline: Human-level TTS via style diffusion and speech language models
+
+github_url: https://github.com/yl4579/StyleTTS2
+website_url: https://styletts2.github.io/
+docs_url: https://github.com/yl4579/StyleTTS2
+
+category: Other
+tags: [text-to-speech, tts, style-diffusion, voice-synthesis, zero-shot, speech-synthesis, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Many TTS systems sound robotic or need a reference recording to pick a speaking style.
+  StyleTTS 2 models style as a latent variable with diffusion, then trains against large
+  speech language model discriminators so output can match human recordings on standard
+  English benchmarks and adapt to new speakers without a matched studio voice.
+
+use_cases:
+  - Generate highly natural English speech for narration, assistants, and product demos
+  - Adapt a multi-speaker StyleTTS 2 checkpoint to a new voice with limited data
+  - Research style-controlled TTS without requiring a reference waveform at inference
+  - Benchmark human-level TTS against commercial and open neural vocoder stacks

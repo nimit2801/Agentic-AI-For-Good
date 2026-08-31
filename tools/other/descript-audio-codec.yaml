@@ -1,0 +1,27 @@
+name: Descript Audio Codec
+description: Descript Audio Codec (DAC) is an open-source neural audio codec that compresses 44.1 kHz audio about 90x at around 8 kbps while keeping high fidelity. It works across speech, music, and environmental audio and is used as a discrete tokenizer for audio language models in place of Encodec.
+tagline: High-fidelity neural audio codec with about 90x compression
+
+github_url: https://github.com/descriptinc/descript-audio-codec
+website_url: https://descript.notion.site/Descript-Audio-Codec-11389fce0ce2419891d6591a68f814d5
+docs_url: https://github.com/descriptinc/descript-audio-codec
+
+install_command: pip install descript-audio-codec
+
+category: Other
+tags: [audio-codec, neural-codec, compression, speech, music, tokenization, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Generative audio models need compact discrete tokens without destroying 44.1 kHz
+  fidelity. Descript Audio Codec compresses speech, music, and environmental audio
+  about 90x at roughly 8 kbps so you can train or serve audio language models with
+  a universal codec instead of domain-specific tokenizers.
+
+use_cases:
+  - Tokenize speech, music, or environmental audio for audio language model training
+  - Compress high-sample-rate audio for storage and transmission with neural codecs
+  - Swap Encodec for DAC in AudioLM-style and MusicGen-style pipelines
+  - Encode and decode .dac files in batch with the official CLI
