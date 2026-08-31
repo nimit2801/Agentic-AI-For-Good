@@ -1,0 +1,27 @@
+name: Vosk
+description: Vosk is an offline speech recognition API for Android, iOS, Raspberry Pi, and servers. It runs without a network connection, supports 20-plus languages, and exposes Python, Java, C#, and Node bindings so you can add on-device ASR to apps and agents.
+tagline: Offline multilingual speech recognition for devices and servers
+
+github_url: https://github.com/alphacep/vosk-api
+website_url: https://alphacephei.com/vosk/
+docs_url: https://alphacephei.com/vosk/install
+
+install_command: pip install vosk
+
+category: Other
+tags: [speech-recognition, asr, offline, on-device, python, android, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Cloud ASR APIs need a network link, send audio off-device, and cost per minute.
+  Vosk runs compact models locally on phones, Raspberry Pi, and servers so you
+  can transcribe speech in 20-plus languages with no API key and no audio leaving
+  the device.
+
+use_cases:
+  - Add offline speech-to-text to mobile and IoT applications
+  - Transcribe meetings or commands on a Raspberry Pi without internet
+  - Build privacy-preserving voice agents that never send audio to the cloud
+  - Integrate ASR from Python, Java, C#, or Node with the same model files

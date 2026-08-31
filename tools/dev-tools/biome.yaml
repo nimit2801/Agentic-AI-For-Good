@@ -1,0 +1,27 @@
+name: Biome
+description: Biome is a fast Rust toolchain for web projects that combines a formatter, linter, and more in one tool. It is usable from the CLI and LSP, aims to replace Prettier and ESLint with a single binary, and is designed for large JavaScript and TypeScript codebases.
+tagline: Fast Rust formatter and linter for JavaScript and TypeScript
+
+github_url: https://github.com/biomejs/biome
+website_url: https://biomejs.dev
+docs_url: https://biomejs.dev/guides/getting-started/
+
+install_command: npm install --save-dev --save-exact @biomejs/biome
+
+category: Dev Tools
+tags: [javascript, typescript, linter, formatter, rust, lsp, code-quality, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Front-end teams often run Prettier, ESLint, and several plugins with overlapping
+  configs that slow CI. Biome ships formatter and linter in one Rust binary with
+  CLI and LSP support so JavaScript and TypeScript repos can lint and format
+  without a multi-tool toolchain.
+
+use_cases:
+  - Format and lint JavaScript and TypeScript in a single CI step
+  - Replace Prettier plus ESLint with one dependency in a Next.js or Vite app
+  - Use the Biome LSP for editor diagnostics without a Node plugin stack
+  - Enforce consistent style across monorepos with one config file

@@ -1,0 +1,27 @@
+name: PaddleSpeech
+description: PaddleSpeech is Baidu's open-source speech toolkit covering self-supervised models, streaming ASR with punctuation, streaming TTS, speaker verification, speech translation, and keyword spotting. It won the NAACL 2022 Best Demo Award and ships pretrained models plus a Python API.
+tagline: All-in-one streaming ASR, TTS, and speaker toolkit
+
+github_url: https://github.com/PaddlePaddle/PaddleSpeech
+website_url: https://paddlespeech.readthedocs.io
+docs_url: https://paddlespeech.readthedocs.io
+
+install_command: pip install paddlespeech
+
+category: Other
+tags: [speech, asr, tts, speaker-verification, translation, paddlepaddle, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Shipping speech features usually means wiring separate ASR, TTS, and speaker
+  stacks. PaddleSpeech puts streaming recognition, synthesis, verification,
+  translation, and keyword spotting in one PaddlePaddle toolkit so you can
+  prototype and serve multilingual speech pipelines from a single Python API.
+
+use_cases:
+  - Run streaming ASR with punctuation for live captions and voice agents
+  - Generate streaming TTS with a text frontend for assistants and IVR
+  - Verify speakers or spot keywords in call-center and security audio
+  - Fine-tune speech translation models on custom language pairs
