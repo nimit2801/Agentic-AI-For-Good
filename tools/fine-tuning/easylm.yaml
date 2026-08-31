@@ -1,0 +1,25 @@
+name: EasyLM
+description: One-stop JAX/Flax tooling for pretraining, finetuning, evaluating, and serving LLMs. EasyLM wraps large models (LLaMA and friends) with simple scripts so you can run the full lifecycle without assembling a custom JAX stack.
+tagline: JAX/Flax pretrain, finetune, eval, and serve for LLMs
+
+github_url: https://github.com/young-geng/EasyLM
+website_url: https://github.com/young-geng/EasyLM
+docs_url: https://github.com/young-geng/EasyLM#readme
+
+category: Fine-tuning
+tags: [python, jax, flax, llama, training, serving, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JAX LLM work usually means gluing training, checkpoint conversion, eval,
+  and serving yourself. EasyLM packages those steps for LLaMA-class models
+  so a small team can pretrain or finetune in Flax and serve the result
+  without a Megatron or Hugging Face Trainer rewrite.
+
+use_cases:
+  - Finetune a LLaMA-class model in JAX/Flax with published scripts
+  - Convert and serve a JAX checkpoint after pretraining
+  - Evaluate generated text without leaving the EasyLM workflow
+  - Prototype JAX training on TPU or GPU before moving to MaxText
