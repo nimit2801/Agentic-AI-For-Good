@@ -1,0 +1,28 @@
+name: just
+description: A command runner for project-specific tasks. just reads a justfile of recipes and runs them with a Make-like syntax that is easier to write, so teams can share build, test, and data-pipeline commands without Make's quirks.
+tagline: Handy command runner for project recipes
+
+github_url: https://github.com/casey/just
+website_url: https://just.systems
+docs_url: https://just.systems/man/en/
+
+install_command: brew install just
+
+category: Dev Tools
+tags: [cli, task-runner, rust, makefile, developer-tools, open-source]
+pricing: free
+is_open_source: true
+license: CC0-1.0
+
+problem_solved: |
+  Makefiles are the default way to share project commands, but Make's syntax
+  (tabs, implicit rules, phony targets) fights simple scripts. just gives a
+  readable justfile of named recipes with arguments, dotenv loading, and
+  cross-platform shebang recipes so ML teams can run train, lint, and sync
+  commands the same way on every machine.
+
+use_cases:
+  - Define just train, just eval, and just sync recipes for an ML project
+  - Replace a tangle of npm scripts and Makefiles with one justfile
+  - Pass arguments to recipes for dataset paths or model checkpoints
+  - Share onboarding commands (setup, test, fmt) without documenting a wiki

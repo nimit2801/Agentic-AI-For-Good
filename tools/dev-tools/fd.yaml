@@ -1,0 +1,27 @@
+name: fd
+description: A simple, fast, and user-friendly alternative to find. fd uses sensible defaults, colorized output, and a concise syntax so you can search files by name without fighting find flags, while ignoring hidden files and gitignored paths by default.
+tagline: Fast, user-friendly find alternative
+
+github_url: https://github.com/sharkdp/fd
+website_url: https://github.com/sharkdp/fd
+docs_url: https://github.com/sharkdp/fd#readme
+
+install_command: brew install fd
+
+category: Dev Tools
+tags: [cli, find, search, rust, filesystem, developer-tools, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Classic find is powerful but verbose, slow on large trees, and easy to misuse.
+  fd gives a short, regex-friendly syntax, parallel search, and safe defaults
+  (skips hidden and gitignored files) so developers can locate datasets, configs,
+  and source files in ML repos without writing a find incantation.
+
+use_cases:
+  - Find training data, checkpoints, or config files by name in a large repo
+  - Locate source files with a regex while automatically skipping .git and node_modules
+  - Pipe matched paths into xargs, fzf, or a preprocessing script
+  - Replace find in shell aliases for everyday file discovery

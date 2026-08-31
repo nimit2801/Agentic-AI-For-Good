@@ -1,0 +1,27 @@
+name: direnv
+description: direnv loads and unloads environment variables as you cd into a directory. A .envrc file can export API keys, Python venvs, and CUDA paths for a project, then wipe them when you leave so your shell stays uncluttered.
+tagline: Per-directory environment variables for your shell
+
+github_url: https://github.com/direnv/direnv
+website_url: https://direnv.net
+docs_url: https://direnv.net
+
+install_command: brew install direnv
+
+category: Dev Tools
+tags: [cli, environment, shell, golang, secrets, developer-tools, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Global .profile files accumulate API keys, CUDA paths, and venv activations
+  that leak across projects. direnv evaluates a per-directory .envrc on cd and
+  unloads it when you leave, so each ML repo gets the right Python, keys, and
+  tool versions without polluting the rest of your shell.
+
+use_cases:
+  - Auto-activate a project Python venv and CUDA toolkit when you enter the repo
+  - Load OPENAI_API_KEY and other secrets only inside a trusted project directory
+  - Switch NODE_ENV, AWS profiles, or kube contexts per folder without aliases
+  - Keep a clean shell when hopping between client and open-source codebases
