@@ -1,0 +1,27 @@
+name: atuin
+description: Magical shell history. Atuin replaces your shell history with a SQLite database, encrypted sync across machines, and a fuzzy search TUI so you can recall commands, filter by directory or exit code, and share history without leaking secrets.
+tagline: Magical, searchable, syncable shell history
+
+github_url: https://github.com/atuinsh/atuin
+website_url: https://atuin.sh
+docs_url: https://docs.atuin.sh
+
+install_command: brew install atuin
+
+category: Dev Tools
+tags: [cli, shell, history, rust, sync, developer-tools, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Default shell history is a short, unsearchable file that does not sync across
+  laptops and mixes secrets with useful commands. Atuin stores history in SQLite,
+  encrypts optional cloud or self-hosted sync, and lets you search by cwd, exit
+  code, or host so training and deploy commands are recoverable.
+
+use_cases:
+  - Fuzzy-search last week's training or docker commands from any machine
+  - Sync encrypted shell history across a laptop and a GPU workstation
+  - Filter history to the current project directory or failed commands only
+  - Replace Ctrl-R with a TUI that shows context, duration, and exit status

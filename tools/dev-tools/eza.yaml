@@ -1,0 +1,27 @@
+name: eza
+description: A modern, maintained replacement for ls. eza lists files with Git status, icons, tree views, and human-readable sizes, giving ML and infra teams a faster, more informative directory listing than classic ls.
+tagline: Modern ls with Git status and tree view
+
+github_url: https://github.com/eza-community/eza
+website_url: https://eza.rocks
+docs_url: https://github.com/eza-community/eza#readme
+
+install_command: brew install eza
+
+category: Dev Tools
+tags: [cli, ls, rust, git, filesystem, developer-tools, open-source]
+pricing: free
+is_open_source: true
+license: EUPL-1.2
+
+problem_solved: |
+  Plain ls shows names and little else, so you bounce to git status or du to
+  understand a directory. eza adds Git change markers, file types, tree output,
+  and readable sizes in one listing, which makes inspecting experiment dirs,
+  model artifacts, and project trees faster.
+
+use_cases:
+  - List experiment directories with Git status next to each file
+  - Tree-view a dataset or checkpoint folder without installing a separate tree tool
+  - Alias ls to eza for human-readable sizes and icons in daily terminal work
+  - Inspect large artifact trees before uploading them to object storage
