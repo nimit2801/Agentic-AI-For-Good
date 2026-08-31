@@ -1,0 +1,27 @@
+name: SWC
+description: SWC is a Rust-based platform for the web that compiles, minifies, and bundles JavaScript and TypeScript far faster than Babel. It powers Next.js transforms and is available as @swc/core for Node and as a standalone CLI for production front-end builds.
+tagline: Rust compiler and minifier that replaces Babel for JS and TS
+
+github_url: https://github.com/swc-project/swc
+website_url: https://swc.rs
+docs_url: https://swc.rs/docs/getting-started
+
+install_command: npm install @swc/core
+
+category: Dev Tools
+tags: [javascript, typescript, compiler, rust, babel, nextjs, bundler, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Babel transforms are a common bottleneck in large JS and TS builds. SWC
+  implements compilation, minification, and bundling in Rust so Next.js and
+  other toolchains can transpile TypeScript and modern JavaScript in a fraction
+  of Babel's time without changing the source language.
+
+use_cases:
+  - Speed up Next.js and custom bundler transforms with @swc/core
+  - Minify production JavaScript with a Rust minifier instead of Terser
+  - Compile TypeScript in CI without a slower Babel pipeline
+  - Embed SWC in Node tooling for custom transpilers and code mods
