@@ -1,0 +1,27 @@
+name: nano-graphrag
+description: A small, easy-to-hack GraphRAG implementation. nano-graphrag builds entity graphs and community summaries from documents with a few hundred lines of readable Python, so you can learn or customize graph RAG without Microsoft GraphRAG's full stack.
+tagline: Minimal, hackable GraphRAG in a few hundred lines
+
+github_url: https://github.com/gusye1234/nano-graphrag
+website_url: https://github.com/gusye1234/nano-graphrag
+docs_url: https://github.com/gusye1234/nano-graphrag#readme
+
+install_command: pip install nano-graphrag
+
+category: RAG
+tags: [python, rag, graph-rag, knowledge-graph, research, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Microsoft GraphRAG is powerful but heavy to read, deploy, and fork. nano-graphrag
+  reimplements the core insert and query loop (entities, communities, local and
+  global search) in a compact codebase so researchers and product teams can
+  understand graph RAG and swap LLMs, stores, or prompts without a large platform.
+
+use_cases:
+  - Prototype graph RAG on a private corpus without standing up the full GraphRAG stack
+  - Teach or study entity extraction and community summaries from a short Python core
+  - Fork the insert and query loop to plug in a custom LLM or vector store
+  - Compare graph RAG answers with vector-only retrieval on the same documents

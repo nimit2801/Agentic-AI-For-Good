@@ -1,0 +1,27 @@
+name: mise
+description: Polyglot runtime and env manager (formerly rtx). mise installs language versions, sets per-project env vars, and runs tasks from one TOML config so ML and app teams can replace asdf, nvm, pyenv, and direnv with a single faster tool.
+tagline: Dev tools, env vars, and task runner in one
+
+github_url: https://github.com/jdx/mise
+website_url: https://mise.jdx.dev
+docs_url: https://mise.jdx.dev
+
+install_command: brew install mise
+
+category: Dev Tools
+tags: [cli, version-manager, asdf, rust, environment, developer-tools, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Teams juggle asdf, nvm, pyenv, and direnv to pin Node, Python, and CUDA-adjacent
+  toolchains per repo. mise is a fast asdf-compatible manager that also handles
+  env vars and tasks, so a mise.toml can install the right runtimes and export
+  keys without a stack of shell plugins.
+
+use_cases:
+  - Pin Python, Node, and Go versions for an ML repo in one mise.toml
+  - Replace asdf plus direnv with a single faster toolchain manager
+  - Run project tasks (test, lint, train) defined next to runtime pins
+  - Share reproducible developer setups across laptops and CI

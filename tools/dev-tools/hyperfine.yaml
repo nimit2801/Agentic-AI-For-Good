@@ -1,0 +1,27 @@
+name: hyperfine
+description: A command-line benchmarking tool. hyperfine runs a command many times, warms caches, and reports mean, min, and max with statistical comparisons so you can measure inference scripts, data pipelines, and CLI tools fairly.
+tagline: Command-line benchmarking with statistical output
+
+github_url: https://github.com/sharkdp/hyperfine
+website_url: https://github.com/sharkdp/hyperfine
+docs_url: https://github.com/sharkdp/hyperfine#readme
+
+install_command: brew install hyperfine
+
+category: Dev Tools
+tags: [cli, benchmark, rust, performance, developer-tools, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Timing a script with time once is noisy and hides warmup effects. hyperfine
+  runs commands repeatedly, discards warmup, and compares alternatives with
+  confidence intervals, so you can tell whether a new tokenizer, chunker, or
+  CLI flag actually sped things up.
+
+use_cases:
+  - Compare two data-preprocessing scripts with warmup and multiple runs
+  - Benchmark an inference CLI before and after a model or flag change
+  - Measure install or test commands across machines with exportable results
+  - A/B test grep replacements, chunkers, or compression tools from the shell

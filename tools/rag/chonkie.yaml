@@ -1,0 +1,27 @@
+name: Chonkie
+description: A lightweight document chunking library for RAG. Chonkie splits text with token-aware, semantic, and late-chunking strategies so pipelines get consistent chunks without pulling in a heavy ingestion framework.
+tagline: Fast, lightweight chunking for RAG pipelines
+
+github_url: https://github.com/feyninc/chonkie
+website_url: https://docs.chonkie.ai
+docs_url: https://docs.chonkie.ai
+
+install_command: pip install chonkie
+
+category: RAG
+tags: [python, rag, chunking, ingestion, embeddings, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  RAG quality often dies at chunking, and teams either hand-roll splitters or
+  import a full ingestion stack. Chonkie is a small library of token, sentence,
+  semantic, and late chunkers with a consistent API, so you can swap strategies
+  and feed a vector store without a heavy pipeline framework.
+
+use_cases:
+  - Token-aware chunk PDFs and markdown before embedding for RAG
+  - Try semantic or late chunking without rewriting the rest of the pipeline
+  - Keep ingestion light in a custom RAG service that already has a vector DB
+  - Benchmark chunkers with hyperfine or evals before locking a split strategy
