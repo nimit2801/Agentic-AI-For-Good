@@ -1,0 +1,28 @@
+name: TorchTitan
+description: A PyTorch-native platform for training generative AI models. TorchTitan is Meta's 4D-parallel (data, tensor, pipeline, context) trainer for large transformers, with Llama recipes and composable parallelism instead of a Megatron fork.
+tagline: PyTorch-native large-scale generative model training
+
+github_url: https://github.com/pytorch/torchtitan
+website_url: https://github.com/pytorch/torchtitan
+docs_url: https://github.com/pytorch/torchtitan#readme
+
+install_command: pip install torchtitan
+
+category: Fine-tuning
+tags: [python, pytorch, training, llama, distributed, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Many large-model trainers are Megatron forks that drift from upstream
+  PyTorch. TorchTitan trains generative models with native PyTorch
+  distributed APIs (FSDP, tensor, pipeline, context parallel) so teams can
+  scale Llama-class pretraining and finetuning without leaving the PyTorch
+  ecosystem.
+
+use_cases:
+  - Pretrain or finetune Llama-class models with 4D parallelism
+  - Experiment with FSDP2, tensor parallel, and pipeline parallel in one trainer
+  - Adopt Meta's PyTorch-native recipes instead of a Megatron fork
+  - Benchmark multi-node generative training on a GPU cluster

@@ -1,0 +1,27 @@
+name: Model2Vec
+description: Distill a sentence transformer into static embeddings that stay strong on retrieval. Model2Vec trains tiny, fast vectors you can load without a GPU, so RAG and classification pipelines get transformer-quality embeddings at a fraction of the cost.
+tagline: Distill sentence transformers into static embeddings
+
+github_url: https://github.com/MinishLab/model2vec
+website_url: https://minish.ai/packages/model2vec/introduction
+docs_url: https://github.com/MinishLab/model2vec#readme
+
+install_command: pip install model2vec
+
+category: RAG
+tags: [python, embeddings, rag, distillation, sentence-transformers, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Sentence transformers are accurate but heavy to serve for every query.
+  Model2Vec distills them into static token embeddings that average into a
+  sentence vector, cutting latency and GPU cost while keeping enough quality
+  for search, clustering, and classification.
+
+use_cases:
+  - Serve fast static embeddings for RAG retrieval without a GPU
+  - Distill a domain sentence transformer into a tiny production model
+  - Cluster or classify large document sets cheaper than full transformers
+  - Swap a slow embedding endpoint for Model2Vec in a latency-sensitive search path

@@ -1,0 +1,25 @@
+name: GPT-NeoX
+description: EleutherAI's library for training large autoregressive transformers on GPUs. GPT-NeoX combines Megatron-LM style model parallelism with DeepSpeed to train GPT-scale models, and it is the codebase behind GPT-NeoX-20B.
+tagline: Megatron plus DeepSpeed for large transformer training
+
+github_url: https://github.com/EleutherAI/gpt-neox
+website_url: https://www.eleuther.ai/
+docs_url: https://github.com/EleutherAI/gpt-neox#readme
+
+category: Fine-tuning
+tags: [python, training, megatron, deepspeed, gpt, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Training GPT-scale models needs tensor and pipeline parallelism that a
+  plain PyTorch loop does not provide. GPT-NeoX packages Megatron-style
+  parallelism with DeepSpeed so research labs can train and continue
+  pretraining large autoregressive models on multi-GPU clusters.
+
+use_cases:
+  - Pretrain or continue-pretrain a GPT-style model on a GPU cluster
+  - Study model-parallel training configs used for GPT-NeoX-20B
+  - Fine-tune a large decoder model with DeepSpeed ZeRO and Megatron splits
+  - Benchmark multi-GPU training throughput before moving to a custom trainer
