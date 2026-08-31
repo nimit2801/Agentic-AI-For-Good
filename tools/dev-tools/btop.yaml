@@ -1,0 +1,27 @@
+name: btop
+description: A resource monitor for the terminal. btop shows CPU, memory, disks, network, and processes with a mouse-friendly TUI, so you can watch GPU hosts and training boxes without leaving SSH.
+tagline: Terminal resource monitor with a full TUI
+
+github_url: https://github.com/aristocratos/btop
+website_url: https://github.com/aristocratos/btop
+docs_url: https://github.com/aristocratos/btop#readme
+
+install_command: brew install btop
+
+category: Dev Tools
+tags: [cli, monitoring, tui, cpp, processes, developer-tools, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  top and htop show processes but bury disks, network, and at-a-glance load.
+  btop packs CPU, memory, disks, network, and a filterable process list into
+  one mouse-aware TUI, which makes spotting a runaway training job or a full
+  disk on a remote GPU box faster than hopping between tools.
+
+use_cases:
+  - Watch CPU, RAM, and disk while a local training job is running
+  - SSH into a workstation and filter processes that are eating memory
+  - Spot network or disk saturation during dataset downloads
+  - Replace htop with a denser, mouse-friendly resource dashboard
