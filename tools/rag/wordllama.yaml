@@ -1,0 +1,27 @@
+name: WordLlama
+description: Things you can do with LLM token embeddings. WordLlama extracts and recycles tokenizer embeddings from models like Llama into a tiny embedding space for cheap similarity, clustering, and lightweight RAG without running the full LLM.
+tagline: Cheap embeddings from LLM tokenizer weights
+
+github_url: https://github.com/dleemiller/WordLlama
+website_url: https://github.com/dleemiller/WordLlama
+docs_url: https://github.com/dleemiller/WordLlama#readme
+
+install_command: pip install wordllama
+
+category: RAG
+tags: [python, embeddings, rag, llama, tokenizer, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Many teams need decent text similarity but cannot afford a GPU embedding
+  model on every request. WordLlama reuses the token embedding table of an
+  LLM as a small, CPU-friendly embedding model for clustering, reranking, and
+  lightweight retrieval.
+
+use_cases:
+  - Embed queries and docs on CPU for a small RAG index
+  - Cluster support tickets or papers without a sentence-transformer GPU
+  - Prototype similarity search before paying for a hosted embedding API
+  - Deduplicate or fuzzy-match strings using Llama tokenizer embeddings

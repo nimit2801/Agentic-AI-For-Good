@@ -1,0 +1,27 @@
+name: UForm
+description: Pocket-sized multimodal AI for understanding text and images. UForm ships tiny CLIP-like encoders that run on CPU and edge devices, up to several times faster than OpenAI CLIP, for multilingual search and retrieval.
+tagline: Tiny multimodal embeddings for text and images
+
+github_url: https://github.com/unum-cloud/UForm
+website_url: https://unum-cloud.github.io/UForm
+docs_url: https://unum-cloud.github.io/UForm
+
+install_command: pip install uform
+
+category: RAG
+tags: [python, embeddings, multimodal, clip, rag, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  CLIP-class models are too large for many CPU and edge retrieval setups.
+  UForm provides compact multimodal encoders for text and images so you can
+  build multilingual visual search and RAG over screenshots, product photos,
+  and captions without a GPU.
+
+use_cases:
+  - Embed product images and captions into one space for visual search
+  - Run multilingual image-text retrieval on CPU or edge hardware
+  - Index screenshots and UI images for multimodal RAG
+  - Replace a heavy CLIP checkpoint with a smaller UForm encoder
