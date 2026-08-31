@@ -1,0 +1,27 @@
+name: edge-tts
+description: edge-tts is a Python library and CLI that uses Microsoft Edge's online text-to-speech service without Edge, Windows, or an API key. It lists neural voices, writes MP3 plus subtitles, and exposes rate, volume, and pitch controls for scripts and agents.
+tagline: Microsoft Edge neural TTS from Python with no API key
+
+github_url: https://github.com/rany2/edge-tts
+website_url: https://pypi.org/project/edge-tts/
+docs_url: https://github.com/rany2/edge-tts
+
+install_command: pip install edge-tts
+
+category: Other
+tags: [text-to-speech, tts, microsoft, cli, python, speech-synthesis, subtitles, open-source]
+pricing: free
+is_open_source: true
+license: LGPL-3.0
+
+problem_solved: |
+  High-quality neural TTS usually means Azure credentials, a Windows box, or a paid
+  voice API. edge-tts talks to Microsoft Edge's online TTS endpoint from any Python
+  environment so you can list voices, synthesize speech, and write subtitles without
+  an API key or the Edge browser.
+
+use_cases:
+  - Generate MP3 speech plus SRT subtitles from the command line
+  - Add free neural TTS to Python agents, bots, and accessibility tools
+  - Switch among hundreds of Microsoft neural voices by locale and personality
+  - Control speaking rate, volume, and pitch for narration pipelines

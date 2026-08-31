@@ -1,0 +1,25 @@
+name: SpeechT5
+description: SpeechT5 is Microsoft's unified-modal encoder-decoder for spoken language processing. One pretrained transformer covers automatic speech recognition, text-to-speech, voice conversion, speech translation, and speaker identification, with official checkpoints on GitHub and Hugging Face.
+tagline: Unified speech-text transformer for ASR, TTS, and translation
+
+github_url: https://github.com/microsoft/SpeechT5
+website_url: https://huggingface.co/blog/speecht5
+docs_url: https://arxiv.org/abs/2110.07205
+
+category: Other
+tags: [speech, tts, asr, voice-conversion, transformer, huggingface, microsoft, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Speech teams often train separate models for recognition, synthesis, translation,
+  and speaker ID. SpeechT5 pretrains a single encoder-decoder on speech and text so
+  you can fine-tune one architecture for ASR, TTS, voice conversion, enhancement,
+  and identification instead of maintaining a stack of unrelated networks.
+
+use_cases:
+  - Fine-tune SpeechT5 for text-to-speech with speaker embeddings on Hugging Face
+  - Run automatic speech recognition from a shared speech-text pretrained checkpoint
+  - Convert one speaker's voice to another with the voice-conversion head
+  - Research unified speech-text pretraining for translation and enhancement
