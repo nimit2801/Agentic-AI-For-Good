@@ -1,0 +1,27 @@
+name: GaLore
+description: Memory-efficient LLM training via Gradient Low-Rank Projection. GaLore projects gradients into a compact subspace during Adam-style updates so you can train or finetune large models with far less optimizer memory.
+tagline: Low-rank gradient projections for cheaper LLM training
+
+github_url: https://github.com/jiaweizzhao/GaLore
+website_url: https://github.com/jiaweizzhao/GaLore
+docs_url: https://github.com/jiaweizzhao/GaLore#readme
+
+install_command: pip install galore-torch
+
+category: Fine-tuning
+tags: [python, pytorch, optimizer, lora, memory, training, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AdamW stores optimizer states that dwarf the model weights, so full
+  finetuning OOMs on a single GPU. GaLore projects gradients to a low-rank
+  subspace, cutting optimizer memory while staying closer to full-rank
+  training than parameter-efficient adapters alone.
+
+use_cases:
+  - Full-parameter finetune a 7B model on fewer GPUs by shrinking optimizer state
+  - Combine GaLore with 8-bit optimizers for even tighter memory budgets
+  - Compare GaLore against LoRA on the same downstream task
+  - Train larger models on a workstation that previously only fit LoRA

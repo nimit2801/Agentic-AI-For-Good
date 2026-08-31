@@ -1,0 +1,26 @@
+name: MaxText
+description: A simple, performant, scalable JAX LLM trainer from Google. MaxText trains decoder-only transformers on TPUs and GPUs with well-tuned configs, aimed at high MFU rather than a kitchen-sink research framework.
+tagline: Simple, scalable JAX LLM training
+
+github_url: https://github.com/AI-Hypercomputer/maxtext
+website_url: https://maxtext.readthedocs.io
+docs_url: https://maxtext.readthedocs.io
+
+category: Fine-tuning
+tags: [python, jax, tpu, llm, training, google, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JAX LLM training stacks are often research mazes with poor out-of-box
+  throughput. MaxText is a relatively small, config-driven trainer tuned
+  for high model-flop utilization on Cloud TPU and GPU, so labs can
+  pretrain or finetune decoder models without assembling Pax and MaxText
+  forks themselves.
+
+use_cases:
+  - Pretrain a decoder LLM on Cloud TPU with a documented high-MFU config
+  - Finetune a JAX transformer without standing up a full Pax stack
+  - Compare TPU training efficiency against a PyTorch trainer on the same model
+  - Fork a compact JAX trainer to test architecture or data changes

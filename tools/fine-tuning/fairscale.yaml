@@ -1,0 +1,27 @@
+name: FairScale
+description: PyTorch extensions for high-performance, large-scale training. FairScale adds FSDP, pipeline parallel, and optimizer sharding so you can train bigger models on the GPUs you already have without rewriting the training loop from scratch.
+tagline: PyTorch extensions for large-scale training
+
+github_url: https://github.com/facebookresearch/fairscale
+website_url: https://github.com/facebookresearch/fairscale
+docs_url: https://fairscale.readthedocs.io
+
+install_command: pip install fairscale
+
+category: Fine-tuning
+tags: [python, pytorch, fsdp, distributed, training, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Fitting large models on limited GPUs needs sharding that vanilla PyTorch
+  used to leave to research forks. FairScale brought FSDP, pipeline
+  parallel, and ZeRO-style optimizer sharding into reusable PyTorch APIs so
+  teams can scale training without a full Megatron stack.
+
+use_cases:
+  - Wrap a PyTorch model in FSDP to shard parameters across GPUs
+  - Pipeline-parallel a deep transformer when a single GPU cannot hold it
+  - Shard optimizer state to cut peak memory during LLM finetuning
+  - Prototype distributed training before moving to TorchTitan or Megatron
