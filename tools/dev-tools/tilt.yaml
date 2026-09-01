@@ -1,0 +1,22 @@
+name: Tilt
+description: Dev environment-as-code for microservice apps on Kubernetes. A Tiltfile describes how to build and run each service, then Tilt live-updates containers and shows a unified UI so teams iterating on agent backends, APIs, and workers stay in one inner loop.
+tagline: Dev environment as code for Kubernetes microservices
+github_url: https://github.com/tilt-dev/tilt
+website_url: https://tilt.dev
+docs_url: https://docs.tilt.dev
+install_command: brew install tilt
+category: Dev Tools
+tags: [kubernetes, devops, microservices, inner-loop, live-reload]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: |
+  An agent stack is several services (API, worker, vector DB, UI) that
+  nobody wants to docker-compose by hand every change. Tilt reads a
+  Tiltfile, rebuilds only what changed, live-updates containers, and
+  streams logs in one UI so local Kubernetes development matches how the
+  services run in staging.
+use_cases:
+  - Live-update a FastAPI agent backend and a Next.js UI on a local Kubernetes cluster
+  - Watch logs from embedding workers, Redis, and the API in one Tilt dashboard
+  - Share a Tiltfile so every engineer boots the same RAG demo stack with one command

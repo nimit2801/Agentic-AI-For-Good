@@ -1,0 +1,21 @@
+name: Cilium
+description: eBPF-based networking, security, and observability platform for Kubernetes that replaces kube-proxy, enforces identity-aware network policy, and traces service traffic so ML clusters can lock down inference APIs without iptables sprawl.
+tagline: eBPF networking and security for Kubernetes
+github_url: https://github.com/cilium/cilium
+website_url: https://cilium.io
+docs_url: https://docs.cilium.io
+category: Dev Tools
+tags: [ebpf, kubernetes, networking, security, observability, cni]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+problem_solved: |
+  GPU clusters running many inference services leak traffic through default
+  allow-all CNI policies and struggle to debug latency. Cilium uses eBPF to
+  replace kube-proxy, apply L3-L7 network policy by workload identity, and
+  export Hubble flows so teams can see which agent, vector DB, or model
+  server talks to whom.
+use_cases:
+  - Enforce network policies so only the API gateway can reach a model-serving namespace
+  - Replace kube-proxy with eBPF load balancing for high-QPS embedding endpoints
+  - Trace latency between a RAG API, vector DB, and GPU inference pods with Hubble
