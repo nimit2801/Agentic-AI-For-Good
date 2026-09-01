@@ -1,0 +1,22 @@
+name: Earthly
+description: Build framework that combines Dockerfile and Makefile ideas into Earthfiles. Each target is cached, parallelizable, and repeatable in containers so teams can build training images and CLIs the same way on a laptop and in CI.
+tagline: Dockerfile-plus-Makefile builds that cache and repeat
+github_url: https://github.com/earthly/earthly
+website_url: https://earthly.dev
+docs_url: https://docs.earthly.dev
+install_command: brew install earthly
+category: Dev Tools
+tags: [ci-cd, containers, builds, makefile, dockerfile, devops]
+pricing: freemium
+is_open_source: true
+license: MPL-2.0
+problem_solved: |
+  Dockerfiles cannot express multi-target graphs well, and Makefiles do not
+  isolate dependencies. Earthly runs each target in a container with
+  BuildKit caching, so compiling a tokenizer, baking a CUDA image, and
+  running tests share a cache and produce the same artifact in CI as on a
+  developer machine.
+use_cases:
+  - Build a CUDA training image and a CPU eval image from one Earthfile with shared cache
+  - Run lint, unit tests, and container publish as Earthly targets in GitHub Actions
+  - Reproduce a teammate's model-server image locally with the same Earthfile target
