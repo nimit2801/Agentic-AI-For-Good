@@ -1,0 +1,26 @@
+name: helmfile
+description: Declaratively deploy Kubernetes manifests, Kustomize configs, and Helm charts as versioned releases. helmfile composes many charts into one environment file so ML platform stacks stay reproducible across clusters and GitOps tools like Argo CD.
+tagline: Compose Helm releases into one declarative environment
+
+github_url: https://github.com/helmfile/helmfile
+website_url: https://helmfile.readthedocs.io
+docs_url: https://helmfile.readthedocs.io
+install_command: brew install helmfile
+
+category: Dev Tools
+tags: [helm, kubernetes, gitops, deployment, kustomize, devops]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Real ML platforms install dozens of charts (ingress, GPU operators, monitoring,
+  serving). Running helm install by hand drifts across environments. helmfile
+  lists every release, value overlay, and dependency so a cluster can be applied
+  or diffed as one file.
+
+use_cases:
+  - Declare GPU operator, serving, and observability charts as one environment
+  - Diff and apply the same stack to staging and production with value overlays
+  - Generate an all-in-one manifest for Argo CD from existing Helm charts
+  - Pin chart versions so training-cluster bootstraps stay reproducible

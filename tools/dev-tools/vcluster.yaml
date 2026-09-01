@@ -1,0 +1,26 @@
+name: vcluster
+description: Creates virtual Kubernetes clusters inside a host cluster. Each vCluster gets its own API server, CRDs, and RBAC so teams can run isolated training, Ray, or inference environments on shared hardware without provisioning a full cluster per tenant.
+tagline: Virtual Kubernetes clusters on shared host clusters
+
+github_url: https://github.com/loft-sh/vcluster
+website_url: https://www.vcluster.com
+docs_url: https://www.vcluster.com/docs
+install_command: brew install vcluster
+
+category: Dev Tools
+tags: [kubernetes, multi-tenant, virtual-cluster, platform, isolation, gitops]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Sharing one Kubernetes cluster means fighting over CRDs, cluster-scoped RBAC, and
+  noisy neighbors. Giving every team a real cluster wastes control-plane cost.
+  vCluster nests a full API server in a namespace so ML teams get isolation
+  without another cloud account.
+
+use_cases:
+  - Give each ML team a virtual cluster with its own CRDs for training operators
+  - Spin up ephemeral clusters for Ray, Slurm, or inference stacks on shared nodes
+  - Test Helm charts and operators that need cluster-scoped resources without a new EKS account
+  - Offer tenant Kubernetes to internal platform users while keeping one host cluster
