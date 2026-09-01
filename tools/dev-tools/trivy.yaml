@@ -1,0 +1,27 @@
+name: Trivy
+description: All-in-one security scanner for container images, filesystems, git repos, Kubernetes, and clouds. Trivy finds CVEs, misconfigurations, secrets, and SBOMs so ML images and cluster YAML get scanned before they reach GPU nodes.
+tagline: Vulnerability and misconfig scanner for images and K8s
+
+github_url: https://github.com/aquasecurity/trivy
+website_url: https://trivy.dev
+docs_url: https://trivy.dev/latest/docs/
+
+install_command: brew install trivy
+
+category: Dev Tools
+tags: [security, containers, sbom, cve, kubernetes, scanning, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  CUDA and Python images ship with stale OS packages and leaked keys, and
+  cluster YAML often has open RBAC. Trivy scans images, filesystems, repos,
+  and Kubernetes for CVEs, secrets, and misconfigurations in one CLI so
+  training images fail CI before they hit a GPU node.
+
+use_cases:
+  - Scan CUDA training images for OS and Python CVEs in CI
+  - Detect secrets and API keys committed in an ML repo
+  - Audit Kubernetes RBAC and pod security for an inference cluster
+  - Generate SBOMs for model-serving images before a production release

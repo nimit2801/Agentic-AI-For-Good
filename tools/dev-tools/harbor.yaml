@@ -1,0 +1,25 @@
+name: Harbor
+description: Cloud-native container registry that stores, signs, and scans images. Harbor adds RBAC, replication, and vulnerability scanning so ML teams can host private CUDA and model images instead of pushing everything to Docker Hub.
+tagline: Cloud-native registry with scan, sign, and RBAC
+
+github_url: https://github.com/goharbor/harbor
+website_url: https://goharbor.io
+docs_url: https://goharbor.io/docs/
+
+category: Dev Tools
+tags: [registry, containers, security, kubernetes, cncf, mlops, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Public registries rate-limit large CUDA pulls and offer little control
+  over who can push a model image. Harbor is a private registry with RBAC,
+  replication, signing, and scanning so GPU clusters pull trusted images
+  from inside the network.
+
+use_cases:
+  - Host private CUDA and inference images for an air-gapped GPU cluster
+  - Scan pushed model-serving images for CVEs before they are pullable
+  - Replicate images from a central Harbor to edge training sites
+  - Enforce RBAC so only CI can push tags used by production inference
