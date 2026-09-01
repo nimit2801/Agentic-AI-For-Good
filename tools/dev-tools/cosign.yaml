@@ -1,0 +1,32 @@
+name: cosign
+description: >-
+  Sigstore tool for signing and verifying containers and binaries. Cosign
+  attaches signatures, SBOMs, and attestations to OCI images so ML teams can
+  prove a model server or training image came from trusted CI before it runs
+  on a GPU node.
+tagline: Sign and verify containers and binaries with Sigstore
+
+github_url: https://github.com/sigstore/cosign
+website_url: https://www.sigstore.dev
+docs_url: https://docs.sigstore.dev/cosign/system_config/installation/
+install_command: brew install cosign
+
+category: Dev Tools
+tags: [security, signing, containers, supply-chain, sigstore, oci, devops]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  GPU clusters pull unsigned model-serving images and custom CUDA bases,
+  so a swapped tag or poisoned layer can run as production inference.
+  Cosign signs OCI artifacts and verifies signatures, SBOMs, and
+  attestations at deploy time, using keyless Sigstore identities or keys,
+  so only CI-built images are allowed onto training and serving nodes.
+
+use_cases:
+  - Sign model-serving and training images in CI so Kubernetes only pulls verified tags
+  - Verify image signatures in admission control before a GPU workload starts
+  - Attach SBOM and SLSA attestations to ML container builds for supply-chain audits
+  - Keyless-sign binaries and images with Sigstore without managing long-lived keys
+  - Enforce provenance on custom CUDA or PyTorch base images used across the org

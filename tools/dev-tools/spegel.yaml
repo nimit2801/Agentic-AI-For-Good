@@ -1,0 +1,32 @@
+name: Spegel
+description: >-
+  Stateless cluster-local OCI registry mirror. Spegel peers Kubernetes nodes
+  so image pulls are served from the node that already has the layers,
+  cutting registry traffic and speeding GPU job startup when many workers
+  need the same PyTorch or CUDA image.
+tagline: Stateless cluster-local OCI registry mirror
+
+github_url: https://github.com/spegel-org/spegel
+website_url: https://spegel.dev
+docs_url: https://spegel.dev/docs/getting-started/
+
+category: Dev Tools
+tags: [kubernetes, registry, oci, containers, p2p, mlops, gpu]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: >-
+  Training and inference clusters pull the same multi-gigabyte CUDA and
+  PyTorch images onto every node from a remote registry, saturating
+  bandwidth and delaying job start. Spegel runs as a DaemonSet that
+  advertises local image layers and serves them to other nodes, so after
+  the first pull the rest of the cluster mirrors from peers instead of
+  the origin registry.
+
+use_cases:
+  - Mirror CUDA and PyTorch images across GPU nodes so workers start without re-pulling from a remote registry
+  - Cut registry bandwidth when autoscaling inference replicas that share a base image
+  - Speed ephemeral training job startup on Kubernetes by serving layers from peer nodes
+  - Keep clusters usable when the upstream registry is slow or rate-limited
+  - Deploy a DaemonSet registry mirror without standing up a full Harbor or registry replica

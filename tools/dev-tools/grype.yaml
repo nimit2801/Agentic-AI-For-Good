@@ -1,0 +1,33 @@
+name: Grype
+description: >-
+  Vulnerability scanner for container images, filesystems, and SBOMs. Grype
+  matches packages against vulnerability databases so ML images, CUDA bases,
+  and Python wheels get CVE findings before they reach a GPU cluster or
+  registry, with JSON output that CI can gate on.
+tagline: Scan container images and filesystems for CVEs
+
+github_url: https://github.com/anchore/grype
+website_url: https://anchore.com/opensource/grype/
+docs_url: https://github.com/anchore/grype
+install_command: brew install grype
+
+category: Dev Tools
+tags: [security, vulnerability-scanner, containers, sbom, ci-cd, devops, kubernetes]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  ML container images pull CUDA, PyTorch, and dozens of Python wheels, so
+  CVE debt lands in GPU clusters without anyone scanning the layers. Grype
+  inspects images, directories, and SBOMs, matches packages to known
+  vulnerabilities, and fails CI when severity thresholds are crossed, so
+  teams catch unpatched libraries before a training job or inference
+  service ships.
+
+use_cases:
+  - Scan GPU training and inference images for CVEs before pushing to a registry
+  - Gate pull requests when a Python or CUDA base image introduces a high-severity CVE
+  - Scan an SBOM from Syft to inventory vulnerabilities across an ML service
+  - Audit a local model-serving filesystem or unpacked container rootfs in CI
+  - Produce JSON vulnerability reports for Kubernetes admission or nightly image jobs
