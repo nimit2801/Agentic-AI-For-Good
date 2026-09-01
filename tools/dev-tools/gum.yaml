@@ -1,0 +1,26 @@
+name: gum
+description: Charm toolkit for glamorous shell scripts with prompts, spinners, filters, and formatted output. Use it to wrap ML CLI workflows in interactive confirmations instead of brittle read loops.
+tagline: Glamorous interactive prompts for shell scripts
+
+github_url: https://github.com/charmbracelet/gum
+website_url: https://github.com/charmbracelet/gum
+docs_url: https://github.com/charmbracelet/gum
+install_command: brew install gum
+
+category: Dev Tools
+tags: [cli, shell, golang, prompts, scripting, terminal]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Internal ML scripts ask engineers to type y/n, pick a checkpoint, or choose
+  a GPU host with raw echo and read. Those prompts fail in CI and look broken
+  in tmux. gum gives filter, choose, confirm, and input widgets that scripts
+  can call so humans get a real UI and automation can skip it.
+
+use_cases:
+  - Prompt an engineer to pick a model checkpoint from a fuzzy list before deploy
+  - Confirm a destructive dataset wipe with a styled yes/no instead of a raw read
+  - Filter GPU hosts or experiment names in a shell wrapper around training jobs
+  - Format script output as a table or spinner while an embedding job runs

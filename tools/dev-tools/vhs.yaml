@@ -1,0 +1,26 @@
+name: vhs
+description: Charm CLI that records terminal sessions from a tape file into GIFs and videos. AI teams capture reproducible demos of CLIs, agents, and install flows for docs without a screen recorder.
+tagline: Record terminal demos as GIFs from a tape file
+
+github_url: https://github.com/charmbracelet/vhs
+website_url: https://github.com/charmbracelet/vhs
+docs_url: https://github.com/charmbracelet/vhs
+install_command: brew install vhs
+
+category: Dev Tools
+tags: [cli, demo, gif, documentation, golang, terminal]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  README GIFs of CLI tools go stale the moment flags change, and recording
+  them by hand is noisy. vhs runs a declarative tape of keypresses in a
+  headless terminal and writes a GIF so docs stay in git and regenerate in CI
+  whenever the demo script changes.
+
+use_cases:
+  - Record an agent CLI walkthrough GIF that CI regenerates on every README change
+  - Demo an inference server install flow without a laptop screen recording
+  - Capture typed examples of prompt-cli usage for workshop materials
+  - Keep catalog contribution docs visual with a tape-driven terminal recording
