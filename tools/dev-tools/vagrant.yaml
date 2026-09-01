@@ -1,0 +1,26 @@
+name: Vagrant
+description: Tool for building and sharing portable development environments from a Vagrantfile. It provisions VMs via VirtualBox, VMware, Hyper-V, Docker, or cloud providers so ML teams get identical Linux boxes, databases, and services from a single command.
+tagline: Shareable VMs for identical ML development boxes
+
+github_url: https://github.com/hashicorp/vagrant
+website_url: https://www.vagrantup.com
+docs_url: https://developer.hashicorp.com/vagrant/docs
+install_command: brew install --cask vagrant
+
+category: Dev Tools
+tags: [virtualization, local-dev, devops, vms, provisioning]
+pricing: free
+is_open_source: true
+license: BUSL-1.1
+
+problem_solved: |
+  AI teams waste days recreating local stacks: a specific Ubuntu, CUDA toolkit, database,
+  and message broker that only exist in one engineer's notes. Vagrant encodes that box
+  in a Vagrantfile so every teammate, CI job, and workshop attendee boots the same
+  environment with vagrant up instead of a wiki of install steps.
+
+use_cases:
+  - Check in a Vagrantfile that provisions Ubuntu plus Python, CUDA drivers, and Redis for a training lab
+  - Share a demo box with a vector database and API so workshop attendees skip machine setup
+  - Spin throwaway VMs for reproducing customer environment bugs without polluting the host
+  - Combine Vagrant with Ansible or shell provisioners to keep ML workshop images versioned

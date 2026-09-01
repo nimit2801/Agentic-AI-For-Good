@@ -1,0 +1,26 @@
+name: Distrobox
+description: Run any Linux distribution inside a container tightly integrated with the host so home directory, USB devices, and graphical apps work as if they were native. ML engineers can keep a Fedora or Ubuntu toolbox on immutable hosts without dual-boot or a full VM.
+tagline: Any Linux distro in your terminal, tightly integrated with the host
+
+github_url: https://github.com/89luca89/distrobox
+website_url: https://distrobox.it/
+docs_url: https://distrobox.it/
+install_command: brew install distrobox
+
+category: Dev Tools
+tags: [containers, linux, podman, docker, local-dev, devops]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Immutable Linux hosts, Silverblue, and locked-down workstations block apt or dnf
+  installs that ML toolchains need. Distrobox creates a pet container of any distro,
+  shares the home directory, and lets you install CUDA toolkits, Python builds, or
+  distro-specific packages without dual-boot, a VM, or polluting the host.
+
+use_cases:
+  - Create an Ubuntu toolbox on Fedora Silverblue to install CUDA and PyTorch packages the host image lacks
+  - Keep per-project distros so a TensorFlow Ubuntu env never collides with a JAX Fedora env
+  - Run GUI ML tools from the container with host display, audio, and USB device access
+  - Export a containerized CLI onto the host PATH so teammates use the same pinned toolchain
