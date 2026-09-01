@@ -1,0 +1,25 @@
+name: SQLMesh
+description: A data transformation framework that is backwards compatible with dbt. It adds virtual environments, table diffs, and incremental models so warehouse pipelines that feed ML features can be developed and promoted without rebuilding production tables.
+tagline: Scalable data transformations, compatible with dbt
+
+github_url: https://github.com/TobikoData/sqlmesh
+website_url: https://sqlmesh.readthedocs.io/en/stable/
+docs_url: https://sqlmesh.readthedocs.io/en/stable/
+install_command: pip install sqlmesh
+
+category: Data
+tags: [sql, dbt, data-transformation, warehouse, python, analytics, data]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  dbt projects often rebuild or mis-increment production tables when a model change is
+  tested. SQLMesh plans changes against virtual environments, diffs tables, and applies
+  incremental updates so feature pipelines can be validated before they touch prod.
+  Existing dbt models can be imported instead of rewritten.
+
+use_cases:
+  - Develop warehouse models for ML features in isolated virtual environments
+  - Diff table changes before promoting a transformation to production
+  - Run incremental SQL models that stay compatible with existing dbt projects

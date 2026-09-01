@@ -1,0 +1,24 @@
+name: KEDA
+description: Kubernetes Event-driven Autoscaling. It scales Deployments, Jobs, and custom resources from event sources such as Kafka, Redis, Prometheus, and cloud queues, including scale-to-zero for idle inference workers.
+tagline: Event-driven autoscaling for Kubernetes workloads
+
+github_url: https://github.com/kedacore/keda
+website_url: https://keda.sh
+docs_url: https://keda.sh/docs/
+
+category: Dev Tools
+tags: [kubernetes, autoscaling, events, kafka, redis, inference, developer-tools]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  HPA scales on CPU and memory, which is a poor signal for queue-backed ML workers.
+  KEDA adds event-driven scalers so Kafka lag, Redis list length, or Prometheus metrics
+  drive replica counts, including scale to zero when the queue is empty. Inference
+  consumers and embedding workers then cost nothing while idle and catch up when events arrive.
+
+use_cases:
+  - Scale Kafka or Redis consumers that run embedding and feature-compute jobs
+  - Scale GPU inference Deployments to zero when request queues are empty
+  - Drive Kubernetes Jobs from cloud queue depth for batch scoring pipelines

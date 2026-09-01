@@ -1,0 +1,25 @@
+name: Hono
+description: A small web framework built on Web Standards that runs on Cloudflare Workers, Deno, Bun, Node.js, and more. It is used to serve lightweight AI API gateways and edge inference wrappers without locking into a single JavaScript runtime.
+tagline: Web framework built on Web Standards
+
+github_url: https://github.com/honojs/hono
+website_url: https://hono.dev
+docs_url: https://hono.dev/docs/
+install_command: npm install hono
+
+category: Dev Tools
+tags: [javascript, typescript, web-framework, edge, cloudflare, bun, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Express and Next.js API routes are heavy or Node-only when you want an edge LLM
+  proxy. Hono uses standard Request/Response APIs and deploys to Workers, Deno, Bun,
+  and Node with the same code. Teams ship token-thin AI gateways and webhook receivers
+  at the edge without a runtime-specific framework.
+
+use_cases:
+  - Serve an edge LLM proxy or embedding API on Cloudflare Workers
+  - Share one TypeScript HTTP app across Node, Bun, and Deno
+  - Build lightweight webhook and agent-tool HTTP endpoints with typed middleware
