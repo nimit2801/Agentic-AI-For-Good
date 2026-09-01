@@ -1,0 +1,21 @@
+name: Marquez
+description: "Marquez is an open-source metadata service for collecting, aggregating, and visualizing data lineage. It stores dataset provenance, job runtime, and access frequency, and is the reference implementation of the OpenLineage standard."
+tagline: OpenLineage metadata service and lineage UI
+github_url: https://github.com/MarquezProject/marquez
+website_url: https://marquezproject.ai
+docs_url: https://marquezproject.ai
+category: Data
+tags: [lineage, metadata, openlineage, data-pipelines, observability, lf-ai]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: |
+  Collecting OpenLineage events is not enough if there is no store and UI to query who produced
+  a dataset, when a job last ran, and how often tables are read. Marquez is the reference
+  OpenLineage backend: it aggregates job and dataset metadata, keeps provenance, and visualizes
+  lineage so ML platform teams can see how features, training sets, and model artifacts flow
+  through the stack.
+use_cases:
+  - "Stand up an OpenLineage backend to collect Spark, Airflow, and dbt events for feature and training data provenance"
+  - "Visualize dataset lineage and job run history so teams can debug broken ML pipelines from source to model"
+  - "Centralize dataset lifecycle metadata (ownership, frequency, last run) for data platform and MLOps reviews"
