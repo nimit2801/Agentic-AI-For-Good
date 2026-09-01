@@ -1,0 +1,26 @@
+name: PlantUML
+description: Text-based diagramming tool that turns a simple language into UML, sequence, component, and architecture diagrams. Teams keep design docs in git and render images in CI instead of drawing boxes in a GUI.
+tagline: UML and sequence diagrams from plain text
+
+github_url: https://github.com/plantuml/plantuml
+website_url: https://plantuml.com
+docs_url: https://plantuml.com/guide
+install_command: brew install plantuml
+
+category: Dev Tools
+tags: [diagrams, uml, documentation, java, architecture]
+pricing: free
+is_open_source: true
+license: LGPL-3.0
+
+problem_solved: |
+  Sequence diagrams of agent tool calls and class diagrams of training code
+  rot in slide decks. PlantUML stores the diagram as text next to the code,
+  so PRs can review the design and CI can emit PNG or SVG whenever the
+  description changes.
+
+use_cases:
+  - Document agent tool-calling sequences as text that CI renders to SVG
+  - Keep component diagrams of a RAG stack versioned beside the services
+  - Generate class diagrams from Java or C++ model-serving code during review
+  - Embed PlantUML in Markdown so architecture docs stay compilable

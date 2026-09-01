@@ -1,0 +1,25 @@
+name: OpenMetadata
+description: Open-source metadata platform for data discovery, lineage, quality, and governance across warehouses, pipelines, and ML assets. Teams catalog datasets, models, and pipelines in one place instead of tribal wiki knowledge.
+tagline: Open metadata catalog for data and ML assets
+
+github_url: https://github.com/open-metadata/OpenMetadata
+website_url: https://open-metadata.org
+docs_url: https://docs.open-metadata.org
+
+category: Data
+tags: [metadata, lineage, data-catalog, governance, data-quality]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Feature tables, training datasets, and pipeline jobs scatter across warehouses
+  with no shared catalog, so teams cannot answer who owns a table or what
+  trained a model. OpenMetadata ingests metadata and lineage so discovery,
+  ownership, and quality checks live in one service instead of Slack threads.
+
+use_cases:
+  - Catalog warehouse tables and ML feature datasets with owners and descriptions
+  - Trace lineage from a source table through dbt or Airflow into a training job
+  - Surface data quality tests next to the datasets an embedding pipeline consumes
+  - Let analysts search for approved datasets instead of copying tribal SQL
