@@ -1,0 +1,25 @@
+name: Karpenter
+description: Kubernetes node autoscaler that launches right-sized instances in seconds. Karpenter watches unschedulable pods and provisions matching nodes, so GPU training and bursty inference scale without a static node group for every instance type.
+tagline: Just-in-time Kubernetes nodes for bursty ML workloads
+
+github_url: https://github.com/kubernetes-sigs/karpenter
+website_url: https://karpenter.sh
+docs_url: https://karpenter.sh/docs/
+
+category: Dev Tools
+tags: [kubernetes, autoscaling, gpu, cloud, provisioning, devops]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Cluster Autoscaler and fixed node groups lag when a training Job needs a
+  specific GPU type now. Karpenter reads pending pod constraints and launches
+  fitting instances in seconds, then drains them when the queue is empty so you
+  stop paying for idle accelerators.
+
+use_cases:
+  - Scale GPU nodes when training Jobs go pending, then drain them when idle
+  - Mix CPU inference and GPU training on one cluster without pre-baked node groups
+  - Bin-pack bursty agent or batch workloads onto cheaper spot capacity
+  - Cut idle node cost versus keeping always-on GPU autoscaling groups

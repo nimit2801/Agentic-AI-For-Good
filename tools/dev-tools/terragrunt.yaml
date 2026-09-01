@@ -1,0 +1,26 @@
+name: Terragrunt
+description: Thin orchestration layer that scales OpenTofu and Terraform. Terragrunt keeps DRY configurations, remote state, and dependency order so ML platform stacks (GPU node groups, registries, warehouses) stay consistent across accounts.
+tagline: Scale Terraform and OpenTofu without copy-paste modules
+
+github_url: https://github.com/gruntwork-io/terragrunt
+website_url: https://terragrunt.com
+docs_url: https://terragrunt.com/docs
+install_command: brew install terragrunt
+
+category: Dev Tools
+tags: [terraform, opentofu, iac, devops, orchestration, cloud]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Copying Terraform roots per environment drifts state backends, provider
+  versions, and module pins. Terragrunt wraps OpenTofu/Terraform with keepers
+  for remote state, dependencies, and generated backends so a GPU VPC and a
+  serving cluster stay one pattern, not twenty forks.
+
+use_cases:
+  - Keep DRY Terraform for GPU clusters across staging and production accounts
+  - Order applies so a feature store depends on the VPC and IAM modules
+  - Generate remote-state backends instead of duplicating backend blocks
+  - Run the same OpenTofu stack in many regions with environment overlays

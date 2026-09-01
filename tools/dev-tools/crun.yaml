@@ -1,0 +1,25 @@
+name: crun
+description: Fast, lightweight OCI container runtime written in C. crun is a drop-in alternative to runc that uses less memory, so dense GPU nodes can start more training and serving containers without paying runc's per-container overhead.
+tagline: Lightweight C OCI runtime as a runc alternative
+
+github_url: https://github.com/containers/crun
+docs_url: https://github.com/containers/crun#readme
+install_command: brew install crun
+
+category: Dev Tools
+tags: [oci, containers, runtime, linux, podman, isolation]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  runc works, but each container process costs more memory than a C runtime needs.
+  On packed inference nodes that tax adds up. crun implements the OCI runtime spec
+  with a smaller footprint so Podman, CRI-O, and Kubernetes can start more sandboxes
+  per host.
+
+use_cases:
+  - Swap runc for a lighter OCI runtime on dense model-serving nodes
+  - Run Podman or CRI-O with crun to cut per-container memory
+  - Start OCI bundles directly when debugging a failed GPU container
+  - Compare runc vs crun start time for short-lived training sidecars
