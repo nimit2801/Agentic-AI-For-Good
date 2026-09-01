@@ -1,0 +1,25 @@
+name: hadolint
+description: Dockerfile linter written in Haskell that validates best practices and inline bash. hadolint catches unpinned bases, extra layers, and shell pitfalls so ML images stay smaller and more reproducible before they hit a registry.
+tagline: Lint Dockerfiles before they bloat your images
+
+github_url: https://github.com/hadolint/hadolint
+website_url: https://github.com/hadolint/hadolint
+docs_url: https://github.com/hadolint/hadolint#readme
+install_command: brew install hadolint
+
+category: Dev Tools
+tags: [docker, linter, dockerfile, ci, haskell, devops]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  CUDA and Python Dockerfiles accumulate apt leftovers, latest tags, and brittle RUN shells
+  that only fail in production pulls. hadolint parses Dockerfiles plus bash and flags
+  DL3000-style issues in CI so serving images do not ship known packaging mistakes.
+
+use_cases:
+  - Fail CI when a training Dockerfile uses unpinned base images or apt without cleanup
+  - Lint inline bash in RUN instructions that install CUDA and Python wheels
+  - Enforce ignore rules per project so GPU images can waive a small set of checks
+  - Review generated Dockerfiles from ML platforms before they land in a registry
