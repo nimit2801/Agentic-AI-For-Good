@@ -1,0 +1,22 @@
+name: Luigi
+description: "Luigi is Spotify's Python package for building complex batch pipelines. It handles dependency resolution, workflow management, failure handling, visualization, and Hadoop integration so long-running jobs run in the right order."
+tagline: Python batch pipelines from Spotify
+github_url: https://github.com/spotify/luigi
+website_url: https://luigi.readthedocs.io
+docs_url: https://luigi.readthedocs.io/en/stable/
+install_command: pip install luigi
+category: Data
+tags: [python, pipelines, workflow, batch, hadoop, spotify, etl]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: |
+  Batch ML and data jobs have dependencies: extract before transform, transform before
+  train. Cron plus shell scripts do not visualize the graph or retry only failed nodes.
+  Luigi models tasks and their outputs so Spotify-style pipelines resolve order, skip
+  finished work, and surface failures in a UI, which is still useful for feature ETL
+  and periodic model training without a heavier orchestrator.
+use_cases:
+  - "Build Python batch pipelines that extract, transform, and train models with explicit task dependencies"
+  - "Skip already-complete ETL nodes and retry only failed feature-generation tasks"
+  - "Visualize Hadoop or local batch workflows for dataset refreshes that feed RAG indexes"

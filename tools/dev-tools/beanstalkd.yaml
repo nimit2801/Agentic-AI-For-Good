@@ -1,0 +1,21 @@
+name: Beanstalkd
+description: "Beanstalkd is a simple, fast work queue. Producers put jobs into tubes; workers reserve, delete, or bury them over a small text protocol. It is designed to cut web latency by moving slow work off the request path."
+tagline: Simple fast work queue
+github_url: https://github.com/beanstalkd/beanstalkd
+website_url: https://beanstalkd.github.io/
+docs_url: https://github.com/beanstalkd/beanstalkd/blob/master/doc/protocol.txt
+install_command: brew install beanstalkd
+category: Dev Tools
+tags: [work-queue, background-jobs, c, messaging, workers]
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: |
+  Small services need a dedicated queue that is simpler than Kafka or Redis-backed job
+  frameworks. Beanstalkd speaks a tiny protocol: put, reserve, delete, bury, with
+  priorities and delayed jobs. Web and AI APIs can dump embedding or webhook work onto
+  a tube and keep request latency low without operating a full broker cluster.
+use_cases:
+  - "Offload embedding generation and webhook delivery from web workers onto Beanstalkd tubes"
+  - "Delay and prioritize jobs with a minimal protocol instead of standing up Kafka or Redis"
+  - "Run a single-binary work queue on Linux or macOS for small ML batch workers"
