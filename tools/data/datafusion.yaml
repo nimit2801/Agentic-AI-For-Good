@@ -1,0 +1,25 @@
+name: DataFusion
+description: Apache DataFusion is an extensible SQL query engine written in Rust, built on Apache Arrow. Python and Rust APIs let teams run analytical SQL on Parquet and object storage without standing up a cluster, which fits local and embedded ML feature queries.
+tagline: Embeddable Arrow-native SQL query engine
+
+github_url: https://github.com/apache/datafusion
+website_url: https://datafusion.apache.org/
+docs_url: https://datafusion.apache.org/user-guide/introduction.html
+install_command: pip install datafusion
+
+category: Data
+tags: [sql, arrow, rust, python, query-engine, parquet, analytics]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Ad hoc SQL over Parquet lakes usually means Spark or DuckDB, and embedding a planner
+  in a Rust or Python service is hard. DataFusion is a library query engine on Arrow that
+  you embed in your process, extend with custom functions, and point at files. Feature
+  extraction and dataset inspection can run in-process without a separate cluster.
+
+use_cases:
+  - Query Parquet training datasets with SQL from Python without Spark
+  - Embed an Arrow SQL engine inside a Rust feature-store or inference service
+  - Extend SQL with custom UDFs for domain-specific ML feature transforms
