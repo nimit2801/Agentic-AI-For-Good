@@ -1,0 +1,21 @@
+name: Solid Queue
+description: "Solid Queue is Rails' database-backed Active Job backend. It supports delayed jobs, concurrency controls, recurring jobs, queue pausing, and bulk enqueue on MySQL, PostgreSQL, or SQLite using FOR UPDATE SKIP LOCKED when available."
+tagline: Database-backed Active Job for Rails
+github_url: https://github.com/rails/solid_queue
+website_url: https://github.com/rails/solid_queue
+docs_url: https://github.com/rails/solid_queue
+install_command: gem install solid_queue
+category: Dev Tools
+tags: [ruby, rails, postgresql, mysql, sqlite, background-jobs, active-job]
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: |
+  Rails 8 defaults to database-backed jobs so teams do not need Redis for Active Job.
+  Solid Queue polls with SKIP LOCKED, handles recurring and delayed work, and stays
+  compatible with Active Job retries. AI features in Rails can enqueue inference and
+  mailers on the same SQL database the app already runs.
+use_cases:
+  - "Use Rails 8 default Active Job on Postgres, MySQL, or SQLite for LLM calls and emails"
+  - "Pause queues, set numeric priorities, and bulk-enqueue batch embedding jobs"
+  - "Run Solid Queue workers alongside Puma without adding Redis to the stack"

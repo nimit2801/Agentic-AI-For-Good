@@ -1,0 +1,22 @@
+name: Connect RPC
+description: "Connect is a slim library for browser- and gRPC-compatible HTTP APIs from Protocol Buffer schemas. Handlers and clients speak Connect, gRPC, and gRPC-Web over HTTP/1.1 or HTTP/2, including streaming, with curl-friendly JSON."
+tagline: Protobuf RPC that works in browsers and services
+github_url: https://github.com/connectrpc/connect-go
+website_url: https://connectrpc.com
+docs_url: https://connectrpc.com/docs/introduction
+install_command: go get connectrpc.com/connect
+category: Dev Tools
+tags: [rpc, protobuf, grpc, go, http, api, streaming]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: |
+  gRPC is awkward in browsers and behind HTTP/1.1 load balancers, while hand-rolled JSON
+  APIs lose protobuf contracts. Connect generates type-safe clients and handlers that
+  speak Connect, gRPC, and gRPC-Web so the same schema serves curl, browsers, and
+  microservices. AI gateways can expose inference and agent APIs without a separate
+  gRPC-Web proxy.
+use_cases:
+  - "Expose protobuf inference and agent APIs that work with curl, browsers, and gRPC clients"
+  - "Generate type-safe Go clients for internal model-serving services without a gRPC-Web proxy"
+  - "Support streaming completions over HTTP/1.1 and HTTP/2 from one Connect handler"
