@@ -1,0 +1,21 @@
+name: Faktory
+description: "Faktory is a language-agnostic persistent background job server. Jobs are JSON hashes pushed to queues; workers in any language fetch, ACK, or FAIL them with reservation timeouts, retries, and a built-in web UI for monitoring."
+tagline: Language-agnostic persistent job server
+github_url: https://github.com/contribsys/faktory
+website_url: https://contribsys.com/faktory
+docs_url: https://github.com/contribsys/faktory/wiki
+category: Dev Tools
+tags: [background-jobs, task-queue, workers, redis, go, polyglot]
+pricing: freemium
+is_open_source: true
+license: GPL-3.0
+problem_solved: |
+  Polyglot stacks cannot share Sidekiq or Celery without rewriting workers in one language.
+  Faktory is a dedicated job server: producers push JSON jobs, workers in Ruby, Python, Go,
+  or other clients fetch them with timeouts and retries. That lets an AI platform enqueue
+  work from a Rails API and process embeddings in Python without a language-specific broker
+  protocol. Open-source Faktory is GPL; Faktory Pro adds commercial features.
+use_cases:
+  - "Enqueue jobs from a Rails or Go API and process embeddings or scraping in Python workers"
+  - "Run a shared job server across microservices so each language team does not operate its own queue"
+  - "Monitor queues, retries, and failed jobs from Faktory's web UI in production"

@@ -1,0 +1,21 @@
+name: Broadway
+description: "Broadway is an Elixir library for concurrent multi-stage data ingestion and processing. It consumes from SQS, Kafka, Pub/Sub, RabbitMQ, and other producers with back-pressure, batching, acknowledgements, and fault-tolerant BEAM pipelines."
+tagline: Concurrent data ingestion pipelines in Elixir
+github_url: https://github.com/elixir-broadway/broadway
+website_url: https://elixir-broadway.org
+docs_url: https://hexdocs.pm/broadway
+category: Data
+tags: [elixir, data-pipelines, kafka, sqs, rabbitmq, streaming, ingestion]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: |
+  Building concurrent ingestion topologies in Elixir with raw GenStage is error-prone:
+  back-pressure, batching, acks, and shutdown must be wired by hand. Broadway configures
+  producers, processors, and batchers so event streams from Kafka, SQS, or Pub/Sub become
+  long-lived pipelines for feature events, embeddings, and webhook fan-in without dropping
+  messages on crash.
+use_cases:
+  - "Ingest Kafka or SQS events into Elixir pipelines that batch embedding and feature writes"
+  - "Apply back-pressure and rate limits when calling LLM APIs from a Broadway processor"
+  - "Acknowledge messages only after downstream vector or warehouse writes succeed"

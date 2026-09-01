@@ -1,0 +1,21 @@
+name: GoodJob
+description: "GoodJob is a multithreaded, Postgres-based Active Job backend for Ruby on Rails. It uses advisory locks and LISTEN/NOTIFY for run-once safety and low latency, and includes cron, batches, concurrency controls, and a web dashboard without Redis."
+tagline: Postgres-backed Active Job for Rails
+github_url: https://github.com/bensheldon/good_job
+website_url: https://goodjob-demo.herokuapp.com
+docs_url: https://github.com/bensheldon/good_job
+install_command: gem install good_job
+category: Dev Tools
+tags: [ruby, rails, postgresql, background-jobs, active-job, workers]
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: |
+  Rails teams that want durable background jobs often add Redis just for Sidekiq, then operate
+  two data stores. Jobs in Redis can vanish on crash unless you pay for Sidekiq Pro. GoodJob
+  keeps Active Job in Postgres with multithreaded workers, advisory locks, and LISTEN/NOTIFY,
+  so emails, embeddings, and batch inference share the same ACID database as the app.
+use_cases:
+  - "Run Rails Active Job on Postgres for LLM calls, emails, and exports without operating Redis"
+  - "Schedule cron-like jobs and batches with concurrency limits from GoodJob's web dashboard"
+  - "Scale from in-process workers in development to a dedicated good_job CLI in production"

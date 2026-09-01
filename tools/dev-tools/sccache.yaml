@@ -1,0 +1,21 @@
+name: sccache
+description: "sccache is Mozilla's compiler cache, a ccache-like wrapper that skips redundant compiles for C/C++, Rust, CUDA, and HIP. It stores results locally or in S3, Redis, GitHub Actions cache, and other remotes, and can distribute compilation across machines."
+tagline: Shared compiler cache for C++, Rust, and CUDA
+github_url: https://github.com/mozilla/sccache
+website_url: https://github.com/mozilla/sccache
+docs_url: https://github.com/mozilla/sccache
+install_command: brew install sccache
+category: Dev Tools
+tags: [compiler, cache, rust, cuda, cplusplus, ci, mozilla]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: |
+  ML and systems codebases spend CI hours recompiling C++, CUDA, and Rust that did not change.
+  Local ccache does not share across machines or GitHub runners. sccache wraps the compiler,
+  caches object files locally or in S3/Redis/Actions cache, and optionally distributes builds,
+  so PyTorch extensions, CUDA kernels, and Rust tokenizers rebuild only when inputs change.
+use_cases:
+  - "Cache CUDA and C++ compiles for PyTorch extensions across CI jobs with S3 or GitHub Actions storage"
+  - "Speed up Rust tokenizer and inference crate builds by wrapping rustc with sccache"
+  - "Share a compiler cache across developer laptops and build farms without reconfiguring each compiler"

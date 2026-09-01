@@ -1,0 +1,22 @@
+name: Delayed Job
+description: "Delayed Job is a database-backed asynchronous priority queue extracted from Shopify. It stores jobs as rows, supports priorities and retries, and runs a single-threaded worker so long-running Ruby tasks survive web process restarts."
+tagline: Database-backed background jobs from Shopify
+github_url: https://github.com/collectiveidea/delayed_job
+website_url: https://github.com/collectiveidea/delayed_job
+docs_url: https://github.com/collectiveidea/delayed_job
+install_command: gem install delayed_job
+category: Dev Tools
+tags: [ruby, rails, background-jobs, postgresql, task-queue, shopify]
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: |
+  Ruby apps need a durable queue for newsletters, image work, search reindexes, and batch
+  imports without introducing Redis. Delayed Job stores jobs in the application database,
+  so work is not lost when a web process dies, and operators can inspect, retry, and
+  prioritize rows with SQL. That is still a practical path for Rails AI features that
+  enqueue scoring and report generation on a single primary database.
+use_cases:
+  - "Enqueue newsletter sends, image resizing, and search reindexes as database rows in a Rails app"
+  - "Retry failed embedding or webhook jobs by inspecting the delayed_jobs table with SQL"
+  - "Run a Delayed Job worker alongside the web process so background AI tasks survive deploys"
