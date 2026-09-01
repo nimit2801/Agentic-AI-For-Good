@@ -1,0 +1,26 @@
+name: runc
+description: CLI for spawning and running containers according to the OCI runtime specification. runc is the low-level engine behind Docker, containerd, and Kubernetes, creating the namespaces, cgroups, and process tree that isolate ML workloads.
+tagline: OCI runtime that actually starts the container process
+
+github_url: https://github.com/opencontainers/runc
+website_url: https://www.opencontainers.org/
+docs_url: https://github.com/opencontainers/runc#readme
+install_command: brew install runc
+
+category: Dev Tools
+tags: [oci, containers, runtime, linux, kubernetes, isolation]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Higher-level tools start containers, but debugging failed GPU or cgroup setups needs the
+  runtime that creates namespaces and mounts. runc is the OCI reference runtime, so
+  containerd, Docker, and CRI-O all bottom out here when a training or serving pod will
+  not start.
+
+use_cases:
+  - Inspect or invoke the OCI runtime when a Kubernetes GPU pod fails at container start
+  - Build a custom low-level runtime stack for isolated model-serving sandboxes
+  - Reproduce containerd start errors by running a bundle directly with runc
+  - Validate that a rootfs and config.json meet the OCI runtime spec before production

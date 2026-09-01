@@ -1,0 +1,25 @@
+name: asdf
+description: Extendable version manager for runtimes and CLIs via plugins. asdf pins Node, Python, Terraform, kubectl, and more per project so ML repos share one shim instead of a stack of language-specific managers.
+tagline: One version manager for every runtime and CLI
+
+github_url: https://github.com/asdf-vm/asdf
+website_url: https://asdf-vm.com/
+docs_url: https://asdf-vm.com/guide/getting-started.html
+install_command: brew install asdf
+
+category: Dev Tools
+tags: [version-manager, cli, python, node, devops, tooling]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  AI projects mix Python, Node, Terraform, and kubectl versions that differ by repo.
+  nvm, pyenv, and tfenv each have their own shims. asdf uses a plugin list and a
+  .tool-versions file so a clone gets the same toolchain without guessing which manager to run.
+
+use_cases:
+  - Pin Python and Node together in a monorepo that trains models and ships a web UI
+  - Share .tool-versions so CI and laptops install the same kubectl and terraform
+  - Add a plugin for a custom CLI used by an ML platform without a new version manager
+  - Switch runtime versions per directory when jumping between research and serving repos
