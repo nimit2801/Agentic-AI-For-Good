@@ -1,0 +1,25 @@
+name: MetalLB
+description: Load-balancer implementation for bare-metal Kubernetes clusters. MetalLB announces Service IPs with BGP or ARP so on-prem GPU clusters can expose inference APIs without a cloud load balancer.
+tagline: Bare-metal load balancer for Kubernetes Services
+
+github_url: https://github.com/metallb/metallb
+website_url: https://metallb.io
+docs_url: https://metallb.io/installation/
+
+category: Dev Tools
+tags: [kubernetes, load-balancer, bare-metal, bgp, networking, mlops, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  LoadBalancer Services stay pending on bare metal because there is no cloud
+  LB controller. MetalLB assigns IPs from a pool and advertises them with
+  BGP or ARP so on-prem GPU clusters can expose inference, embedding, and
+  agent APIs the same way they would on AWS or GCP.
+
+use_cases:
+  - Expose an LLM inference Service with a LoadBalancer IP on a homelab cluster
+  - Announce GPU-node Services over BGP into the datacenter fabric
+  - Give on-prem vector DB and feature-store APIs stable external IPs
+  - Replace a manual HAProxy VIP with MetalLB for Kubernetes Services

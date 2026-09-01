@@ -1,0 +1,25 @@
+name: Falco
+description: Cloud-native runtime security tool that detects unexpected behavior in containers and Kubernetes using kernel syscalls. Falco alerts on crypto miners, unexpected shells, and sensitive file access on GPU nodes running training and inference.
+tagline: Runtime security detection for Kubernetes and containers
+
+github_url: https://github.com/falcosecurity/falco
+website_url: https://falco.org
+docs_url: https://falco.org/docs/
+
+category: Monitoring
+tags: [security, kubernetes, runtime, containers, observability, cncf, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Image scans miss attacks that start after a pod is running. Falco watches
+  syscalls and Kubernetes audit events against rules so a GPU node running
+  training or inference alerts on unexpected shells, miners, and reads of
+  secrets or model files.
+
+use_cases:
+  - Alert when an inference container spawns an unexpected shell
+  - Detect crypto miners on GPU nodes that should only run training jobs
+  - Watch Kubernetes audit events for unexpected Secret or ConfigMap access
+  - Stream Falco alerts into an ML ops incident channel for runtime threats

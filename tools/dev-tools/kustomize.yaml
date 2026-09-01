@@ -1,0 +1,27 @@
+name: Kustomize
+description: Template-free tool for customizing Kubernetes YAML. Kustomize overlays patches and replicas onto a base manifest so the same LLM serving stack can be deployed to dev, staging, and GPU production without Helm templates.
+tagline: Template-free Kubernetes YAML customization
+
+github_url: https://github.com/kubernetes-sigs/kustomize
+website_url: https://kustomize.io
+docs_url: https://kubectl.docs.kubernetes.io/references/kustomize/
+
+install_command: brew install kustomize
+
+category: Dev Tools
+tags: [kubernetes, yaml, gitops, overlays, kubectl, mlops, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Copying Deployment YAML per environment drifts, and Helm charts are heavy
+  for small patches. Kustomize keeps a base manifest and applies overlays
+  for replicas, images, and node selectors so one LLM stack definition
+  serves laptop, staging, and GPU clusters.
+
+use_cases:
+  - Overlay GPU nodeSelectors onto a base inference Deployment for production
+  - Patch image tags per environment without templating a Helm chart
+  - Generate ConfigMaps from files for prompt and model-config YAML
+  - Keep a GitOps repo with bases plus overlays for agent and RAG services

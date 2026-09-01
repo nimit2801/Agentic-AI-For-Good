@@ -1,0 +1,25 @@
+name: cert-manager
+description: Kubernetes controller that issues and renews TLS certificates from Let's Encrypt, private CAs, and vault-backed issuers. cert-manager keeps HTTPS on inference gateways and internal APIs valid without manual cert rotation.
+tagline: Automated TLS certificates for Kubernetes
+
+github_url: https://github.com/cert-manager/cert-manager
+website_url: https://cert-manager.io
+docs_url: https://cert-manager.io/docs/
+
+category: Dev Tools
+tags: [kubernetes, tls, certificates, security, ingress, mlops, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  TLS certs for model gateways expire, and copying PEMs into Secrets by
+  hand does not scale. cert-manager watches Certificate resources, talks
+  to ACME or an internal CA, and rotates Secrets so inference and agent
+  HTTPS endpoints stay valid.
+
+use_cases:
+  - Issue Let's Encrypt certs for a public LLM API Ingress automatically
+  - Rotate internal TLS for vector DB and embedding services from a private CA
+  - Keep mTLS secrets fresh for service-to-service agent traffic
+  - Standardize certificate issuance across GPU clusters with ClusterIssuers
