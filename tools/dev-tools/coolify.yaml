@@ -1,0 +1,22 @@
+name: Coolify
+description: Open-source, self-hostable PaaS alternative to Vercel, Heroku, and Netlify that deploys static sites, databases, full-stack apps, and 280-plus one-click services on your own servers with git-based workflows and a web UI.
+tagline: Self-hosted Vercel and Heroku alternative
+github_url: https://github.com/coollabsio/coolify
+website_url: https://coolify.io
+docs_url: https://coolify.io/docs
+install_command: curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash
+category: Dev Tools
+tags: [paas, self-hosted, docker, deployment, vercel, heroku]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+problem_solved: |
+  AI teams outgrow managed PaaS pricing once they run GPUs, long workers,
+  and private databases. Coolify gives a Vercel-like UI on hardware you
+  control. Connect a git repo, pick a Dockerfile or Nixpacks build, and
+  deploy web apps, Postgres, Redis, and one-click services without vendor
+  lock-in or per-seat hosting bills.
+use_cases:
+  - Deploy a Next.js catalog, FastAPI inference service, and Postgres on one self-hosted cluster
+  - One-click stand up Redis, Qdrant, or MinIO next to an agent backend without writing Compose files
+  - Git-push preview environments for ML demos without paying Vercel or Heroku for always-on workers

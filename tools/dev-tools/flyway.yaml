@@ -1,0 +1,22 @@
+name: Flyway
+description: Open-source database migration tool from Redgate that versions schema changes as ordered SQL or Java scripts, applies them to PostgreSQL, MySQL, SQL Server, Oracle, and more, and records which versions have run so teams can evolve schemas safely across environments.
+tagline: Version-controlled database migrations for any SQL database
+github_url: https://github.com/flyway/flyway
+website_url: https://flywaydb.org
+docs_url: https://documentation.red-gate.com/flyway
+install_command: brew install flyway
+category: Dev Tools
+tags: [database, migrations, sql, schema, java, devops]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+problem_solved: |
+  AI apps that persist embeddings, traces, and user data outgrow ad-hoc schema
+  changes. Flyway versions every SQL change as a numbered migration, applies
+  pending scripts in order, and tracks history in a schema table so Postgres
+  feature stores, MySQL metadata DBs, and SQL Server warehouses stay in sync
+  across local, staging, and production without manual ALTER scripts.
+use_cases:
+  - Version vector-store metadata tables and apply the same SQL migrations across local, staging, and production
+  - Generate repeatable schema baselines for RAG document indexes and experiment-tracking databases
+  - Roll forward new columns for traces, eval scores, and user memory without hand-running ALTER statements

@@ -1,0 +1,22 @@
+name: BullMQ
+description: Redis-backed job queue and batch processor for Node.js, Python, .NET, Elixir, Rust, and PHP that handles delayed jobs, retries, rate limits, and workers so AI apps can run embeddings, evals, and agent tasks reliably in the background.
+tagline: Redis job queues for background AI workloads
+github_url: https://github.com/taskforcesh/bullmq
+website_url: https://bullmq.io
+docs_url: https://docs.bullmq.io
+install_command: npm install bullmq
+category: Dev Tools
+tags: [nodejs, redis, queue, jobs, workers, background-tasks]
+pricing: freemium
+is_open_source: true
+license: MIT
+problem_solved: |
+  LLM calls, embedding batches, and agent runs cannot live in the HTTP request
+  path without timeouts and lost work. BullMQ puts those jobs on Redis (or
+  PostgreSQL) with retries, backoff, concurrency, and delayed schedules so
+  workers process them independently of the API process and failed jobs can
+  be inspected and replayed instead of silently dropped.
+use_cases:
+  - Queue embedding generation and document-ingestion jobs so web requests stay fast
+  - Retry failed LLM API calls with exponential backoff without blocking the user request
+  - Run nightly eval batches and agent workflows as scheduled workers with concurrency limits
