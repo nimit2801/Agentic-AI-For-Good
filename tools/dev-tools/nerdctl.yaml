@@ -1,0 +1,27 @@
+name: nerdctl
+description: Docker-compatible CLI for containerd with Compose, rootless mode, and advanced image features. nerdctl lets you build, run, and compose containers against a containerd socket the same way Docker talks to dockerd.
+tagline: Docker-compatible CLI for containerd
+
+github_url: https://github.com/containerd/nerdctl
+website_url: https://github.com/containerd/nerdctl
+docs_url: https://github.com/containerd/nerdctl/blob/main/docs/command-reference.md
+
+install_command: brew install nerdctl
+
+category: Dev Tools
+tags: [containers, containerd, docker, compose, rootless, cli, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Kubernetes nodes and many ML clusters run containerd, not Docker, so the
+  Docker CLI cannot talk to the runtime. nerdctl is a Docker-compatible CLI
+  for containerd, including compose, rootless, and modern image formats, so
+  you can debug training and inference containers on the same engine K8s uses.
+
+use_cases:
+  - Debug GPU inference containers on a Kubernetes node that only has containerd
+  - Run docker-compose style stacks against containerd with nerdctl compose
+  - Build and run images rootless without a Docker daemon
+  - Inspect and manage containerd namespaces used by k3s, k3d, or kind clusters

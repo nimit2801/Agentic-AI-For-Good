@@ -1,0 +1,28 @@
+name: NSQ
+description: Realtime distributed messaging platform in Go. NSQ is a decentralized, fault-tolerant pub-sub system with nsqd, nsqlookupd, and nsqadmin, used to fan out events, jobs, and telemetry across ML and data pipelines.
+tagline: Decentralized realtime messaging for data pipelines
+
+github_url: https://github.com/nsqio/nsq
+website_url: https://nsq.io
+docs_url: https://nsq.io/overview/quick_start.html
+
+install_command: brew install nsq
+
+category: Data
+tags: [messaging, pub-sub, streaming, go, realtime, data-pipeline, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Centralized brokers become a bottleneck and a single point of failure when
+  you fan out jobs, logs, and inference events. NSQ is a decentralized
+  messaging platform: producers talk to nsqd, consumers discover topics via
+  nsqlookupd, and the topology scales by adding nodes instead of a shared
+  cluster quorum.
+
+use_cases:
+  - Fan out training-job events and dataset-ready notifications across workers
+  - Stream inference telemetry and feature updates without a single broker bottleneck
+  - Buffer scrape and ETL work behind nsqd so producers stay decoupled from consumers
+  - Operate a lightweight pub-sub backbone for ML services that do not need Kafka
