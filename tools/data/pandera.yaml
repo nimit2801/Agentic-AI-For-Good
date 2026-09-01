@@ -1,0 +1,25 @@
+name: Pandera
+description: A statistical data-testing library for pandas, Polars, Spark, and other DataFrame APIs. You declare schemas and checks, then validate training tables at runtime so silent type and distribution bugs fail before they reach a model.
+tagline: Statistical typing and validation for DataFrames
+
+github_url: https://github.com/unionai-oss/pandera
+website_url: https://www.union.ai/pandera
+docs_url: https://pandera.readthedocs.io
+install_command: pip install pandera
+
+category: Data
+tags: [pandas, validation, schema, data-quality, python, dataframes, data]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Training jobs often fail late or silently when a column type, null rate, or category
+  set drifts. Pandera lets you declare DataFrame schemas with statistical checks and
+  run them in pandas, Polars, or Spark pipelines. Bad batches raise before they poison
+  a feature store or a fit.
+
+use_cases:
+  - Validate pandas or Polars training tables against a schema before model fit
+  - Catch null spikes and category drift in feature-engineering pipelines
+  - Share DataFrame contracts between data engineering and ML training code
