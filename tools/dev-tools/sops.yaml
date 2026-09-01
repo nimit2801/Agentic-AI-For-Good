@@ -1,0 +1,26 @@
+name: sops
+description: Editor for encrypted files that keeps secrets in Git. sops encrypts YAML, JSON, dotenv, and binary with age, PGP, or cloud KMS so API keys and model-endpoint credentials can live next to the manifests that use them.
+tagline: Encrypt secrets in Git with age, PGP, or cloud KMS
+
+github_url: https://github.com/getsops/sops
+website_url: https://getsops.io
+docs_url: https://getsops.io
+install_command: brew install sops
+
+category: Dev Tools
+tags: [secrets, encryption, gitops, kms, yaml, devops]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  Helm values and .env files with API keys cannot sit in Git unencrypted, but
+  sealed-secret controllers are heavy for small teams. sops encrypts only the
+  secret values in YAML so diffs stay readable and CI decrypts with KMS or age
+  at apply time.
+
+use_cases:
+  - Store OpenAI and cloud keys in encrypted YAML next to Helm values
+  - Decrypt secrets in CI with AWS KMS or age before applying a serving stack
+  - Keep dotenv files for local agent configs in Git without plaintext keys
+  - Review secret-file diffs because only values are ciphertext, keys stay clear

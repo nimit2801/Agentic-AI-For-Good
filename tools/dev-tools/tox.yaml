@@ -1,0 +1,26 @@
+name: tox
+description: Command-line CI frontend that runs tests and tools in isolated environments. tox creates virtualenvs per Python version and factor so ML libraries prove they work on 3.10 through 3.13 without polluting the developer machine.
+tagline: Isolated test environments across Python versions
+
+github_url: https://github.com/tox-dev/tox
+website_url: https://tox.wiki
+docs_url: https://tox.wiki
+install_command: pip install tox
+
+category: Dev Tools
+tags: [python, testing, ci, virtualenv, automation]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Running pytest in whatever venv is active hides version-specific breakage.
+  tox declares factors (py310, py311, lint) and rebuilds isolated environments
+  so a training library CI matrix is one config, not a pile of GitHub Actions
+  jobs copied by hand.
+
+use_cases:
+  - Run unit tests for a model SDK against multiple Python versions locally
+  - Gate PRs on lint plus tests without sharing a single developer virtualenv
+  - Reproduce a CI failure with the same tox factor the pipeline used
+  - Standardize packaging checks (build, import, pytest) for internal ML libs
