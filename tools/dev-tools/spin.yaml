@@ -1,0 +1,31 @@
+name: Spin
+description: >-
+  Open-source toolchain for building serverless apps with WebAssembly.
+  Spin compiles HTTP, Redis, and storage components to Wasm so ML glue
+  APIs, webhooks, and lightweight inference frontends start in
+  milliseconds without a full container stack.
+tagline: Serverless WebAssembly applications
+
+github_url: https://github.com/spinframework/spin
+website_url: https://spinframework.dev
+docs_url: https://spinframework.dev/docs
+
+category: Dev Tools
+tags: [webassembly, wasm, serverless, spin, wasi, edge, devops]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  Tiny HTTP handlers for model webhooks, embeddings, or routing still
+  ship as containers with multi-second cold starts and a large image.
+  Spin builds those handlers as Wasm components with WASI interfaces
+  for HTTP and key-value, so the same app runs locally and on a
+  Spin-compatible host with millisecond startup and a smaller sandbox.
+
+use_cases:
+  - Build a millisecond-start HTTP frontend in front of a model-serving backend
+  - Handle dataset or labeling webhooks as Wasm functions without a standing Node service
+  - Compose Redis and HTTP Spin components for a lightweight RAG routing API
+  - Develop locally with the Spin CLI and deploy the same Wasm artifact to a cluster
+  - Isolate untrusted request handlers in Wasm instead of a full sidecar container

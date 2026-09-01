@@ -1,0 +1,32 @@
+name: Wasmer
+description: >-
+  Universal WebAssembly runtime that runs WASI modules as lightweight
+  containers. Wasmer embeds in hosts and ships a CLI so teams can package
+  inference helpers, agent tools, and edge functions as Wasm instead of
+  OS-level containers.
+tagline: Fast, secure WebAssembly containers
+
+github_url: https://github.com/wasmerio/wasmer
+website_url: https://wasmer.io
+docs_url: https://docs.wasmer.io
+install_command: brew install wasmer
+
+category: Dev Tools
+tags: [webassembly, wasm, runtime, wasi, containers, edge, devops]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: >-
+  Shipping small tools next to an agent or model server usually means
+  another container image, another CVE surface, and slower cold start.
+  Wasmer runs WebAssembly with WASI so those tools become portable
+  modules with a sandbox, a registry of packages, and a CLI, without
+  standing up a full OCI runtime for every plugin.
+
+use_cases:
+  - Run sandboxed agent tools or data transforms as WASI modules instead of sidecar containers
+  - Embed a Wasm runtime in a Python or Rust model server to load user-supplied plugins
+  - Package edge inference helpers once and run them on laptops, servers, and edge hosts
+  - Publish and consume Wasm packages for reusable ML preprocessing steps
+  - Replace heavyweight micro-containers for glue jobs with faster Wasm startup
