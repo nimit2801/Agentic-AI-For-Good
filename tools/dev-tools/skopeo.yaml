@@ -1,0 +1,33 @@
+name: Skopeo
+description: >-
+  CLI for inspecting, copying, and signing images across OCI registries
+  without a local Docker daemon. Skopeo copies model and CUDA images
+  between registries, inspects manifests, and syncs tags so ML pipelines
+  can promote artifacts without pulling full layers onto a build laptop.
+tagline: Copy and inspect images across OCI registries
+
+github_url: https://github.com/podman-container-tools/skopeo
+website_url: https://github.com/podman-container-tools/skopeo
+docs_url: https://github.com/podman-container-tools/skopeo/blob/main/docs/skopeo.1.md
+install_command: brew install skopeo
+
+category: Dev Tools
+tags: [containers, oci, registry, images, devops, ci-cd, podman]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  Promoting a PyTorch or CUDA image between registries usually means
+  docker pull then docker push, which needs a daemon, disk for every
+  layer, and extra credentials. Skopeo copies, inspects, and deletes
+  remote images by talking to registries directly, so CI can move
+  model artifacts across Harbor, ECR, or GHCR without a local Docker
+  socket or a full layer cache.
+
+use_cases:
+  - Copy a signed model-serving image from CI into a production registry without docker pull
+  - Inspect OCI manifests and digests of CUDA base images before a training job
+  - Sync tags between Harbor and a cloud registry as part of an ML promotion pipeline
+  - Delete stale experiment image tags from a registry without a Docker daemon
+  - Verify remote image architecture and layers before scheduling GPU workloads
