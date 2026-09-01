@@ -1,0 +1,26 @@
+name: Cadence
+description: Uber's distributed workflow engine for durable, long-running business logic. Orchestrates retries, timers, and stateful sagas so ML pipelines, human-in-the-loop reviews, and agent jobs survive process crashes.
+tagline: Durable workflow engine for long-running orchestration
+
+github_url: https://github.com/uber/cadence
+website_url: https://cadenceworkflow.io
+docs_url: https://cadenceworkflow.io/docs/
+
+install_command: brew install cadence-workflow
+
+category: Dev Tools
+tags: [workflows, orchestration, java, go, distributed, mlops, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Cron jobs and in-process queues drop state when a worker dies mid-training or
+  mid-review. Cadence records workflow history so multi-day ML jobs, approvals, and
+  agent loops resume from the last durable decision instead of restarting.
+
+use_cases:
+  - Orchestrate multi-day training and evaluation jobs with durable retries
+  - Run human-in-the-loop review sagas that wait days without holding a process
+  - Coordinate agent tool calls that must survive worker restarts
+  - Replace ad-hoc cron plus database locks with Cadence workflow histories
