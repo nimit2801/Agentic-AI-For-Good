@@ -1,0 +1,27 @@
+name: Kind
+description: Kubernetes IN Docker. Runs local Kubernetes clusters inside Docker, Podman, or nerdctl so you can test Helm charts, operators, and ML serving manifests without a cloud account or a full kubeadm stack.
+tagline: Local Kubernetes clusters inside Docker
+
+github_url: https://github.com/kubernetes-sigs/kind
+website_url: https://kind.sigs.k8s.io
+docs_url: https://kind.sigs.k8s.io/docs/user/quick-start/
+
+install_command: brew install kind
+
+category: Dev Tools
+tags: [kubernetes, docker, testing, ci, local, mlops, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Cloud Kubernetes clusters are slow and expensive for iterating on charts and
+  operators. kind boots a multi-node Kubernetes API inside containers so CI and
+  laptops can apply the same ML serving YAML you will ship, then throw the cluster
+  away.
+
+use_cases:
+  - Test Helm charts for LLM serving in CI with a disposable Kubernetes cluster
+  - Develop Kubernetes operators for GPU scheduling against a local kind cluster
+  - Reproduce production K8s API behavior on a laptop without a cloud account
+  - Run integration tests for agent runtimes that assume a kubeconfig

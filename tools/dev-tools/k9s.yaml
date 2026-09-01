@@ -1,0 +1,27 @@
+name: k9s
+description: Terminal UI for Kubernetes clusters. Browse pods, logs, events, and resources in a vim-like TUI so ML ops and platform engineers can debug inference, training jobs, and agents without a web dashboard.
+tagline: Stylish Kubernetes CLI to manage clusters in the terminal
+
+github_url: https://github.com/derailed/k9s
+website_url: https://k9scli.io
+docs_url: https://k9scli.io
+
+install_command: brew install k9s
+
+category: Dev Tools
+tags: [kubernetes, tui, cli, devops, debugging, mlops, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  kubectl get/describe/logs is verbose when a training job or inference pod is
+  crash-looping. k9s puts pods, logs, events, and port-forwards in a fast TUI so
+  you can jump from a failing GPU job to its logs without assembling kubectl
+  flags.
+
+use_cases:
+  - Watch GPU training pods and jump into logs when a job OOMs
+  - Port-forward a local inference service from the TUI during debugging
+  - Inspect events and CrashLoopBackOff on agent worker deployments
+  - Navigate multi-namespace ML platforms faster than raw kubectl
