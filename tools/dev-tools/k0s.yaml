@@ -1,0 +1,25 @@
+name: k0s
+description: Zero-friction Kubernetes distribution that ships as a single binary with no host dependencies beyond the kernel. k0s runs control plane and workers with vanilla upstream Kubernetes, suited to air-gapped, edge, and single-node AI clusters.
+tagline: Single-binary Kubernetes with zero host friction
+
+github_url: https://github.com/k0sproject/k0s
+website_url: https://k0sproject.io
+docs_url: https://docs.k0sproject.io
+
+category: Dev Tools
+tags: [kubernetes, distribution, edge, single-binary, cncf, cluster]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  kubeadm and managed Kubernetes pull in container runtimes, extra packages, and cloud APIs
+  that are painful on edge boxes and air-gapped GPU machines. k0s installs as one binary,
+  brings upstream Kubernetes, and can run control plane plus workers on the same host for
+  compact inference clusters.
+
+use_cases:
+  - Stand up a single-node Kubernetes cluster on a GPU box for local model serving
+  - Deploy upstream Kubernetes in air-gapped labs without kubeadm host package sprawl
+  - Run compact edge clusters that still speak standard kubectl and Helm
+  - Replace heavier distributions when you only need vanilla Kubernetes APIs

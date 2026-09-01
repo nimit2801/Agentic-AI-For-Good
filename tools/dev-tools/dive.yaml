@@ -1,0 +1,25 @@
+name: dive
+description: Explore each layer in a Docker or OCI image. dive shows wasted space, file diffs between layers, and an efficiency score so you can shrink ML base images and catch secrets or caches that bloat serving containers.
+tagline: Inspect Docker image layers and find wasted space
+
+github_url: https://github.com/wagoodman/dive
+website_url: https://github.com/wagoodman/dive
+docs_url: https://github.com/wagoodman/dive#readme
+install_command: brew install dive
+
+category: Dev Tools
+tags: [docker, oci, images, cli, devops, optimization]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  ML images balloon when pip caches, CUDA leftovers, and copy-paste Dockerfiles land in
+  early layers. docker history is too coarse to see which files survived. dive walks each
+  layer interactively so you can cut image size and keep model-serving pull times down.
+
+use_cases:
+  - Find pip cache and apt leftovers that inflate CUDA serving images
+  - Compare layers after a Dockerfile change to confirm a multi-stage build actually dropped compilers
+  - Hunt accidentally copied .env files or model checkpoints inside an image
+  - Score image efficiency in CI before pushing a training or inference image

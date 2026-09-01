@@ -1,0 +1,26 @@
+name: stern
+description: Multi-pod and container log tailing for Kubernetes. stern lets you follow logs across replica sets with color, filters, and container selectors so you can debug distributed AI services without juggling one kubectl logs process per pod.
+tagline: Tail logs from multiple Kubernetes pods at once
+
+github_url: https://github.com/stern/stern
+website_url: https://github.com/stern/stern
+docs_url: https://github.com/stern/stern#readme
+install_command: brew install stern
+
+category: Dev Tools
+tags: [kubernetes, logging, cli, debugging, devops, observability]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  kubectl logs follows one pod, so a rolling Deployment or a multi-container inference
+  service requires many terminals. stern tails matching pods and containers in one stream
+  with timestamps and color, which is the difference between spotting a crash loop and
+  missing it in a replica you were not watching.
+
+use_cases:
+  - Follow logs from every replica of a model-serving Deployment during a rollout
+  - Filter worker and sidecar containers when debugging a RAG API that spans several pods
+  - Watch crash-looping jobs across a namespace without starting a log stack
+  - Color-code pod streams while reproducing a flaky training-operator failure
