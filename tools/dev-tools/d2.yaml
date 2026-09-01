@@ -1,0 +1,26 @@
+name: D2
+description: Modern diagram scripting language that turns text into flowcharts, sequence diagrams, and architecture sketches. AI teams version system diagrams next to code instead of dragging boxes in a GUI.
+tagline: Text to diagrams for architecture that lives in git
+
+github_url: https://github.com/d2lang/d2
+website_url: https://d2lang.com
+docs_url: https://d2lang.com/tour/intro/
+install_command: brew install d2
+
+category: Dev Tools
+tags: [diagrams, documentation, golang, architecture, cli]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  RAG pipelines and agent stacks change weekly, but architecture pictures rot
+  in slides. D2 compiles a readable script into SVG or PNG so teams keep
+  diagrams in git, review them in PRs, and regenerate docs when the graph of
+  services changes.
+
+use_cases:
+  - Version an agent plus vector-DB architecture diagram beside the Terraform that deploys it
+  - Generate sequence diagrams of tool-calling flows for onboarding docs
+  - Render CI-produced SVGs of data pipelines after each schema change
+  - Sketch multi-service inference graphs without a proprietary diagram SaaS

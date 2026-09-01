@@ -1,0 +1,27 @@
+name: Textual
+description: Python framework for building rich terminal user interfaces with CSS-like styling, widgets, and async reactivity. ML teams use it for local dashboards, dataset browsers, and agent consoles that run over SSH without a browser.
+tagline: Modern TUI apps in Python, styled like the web
+
+github_url: https://github.com/Textualize/textual
+website_url: https://textual.textualize.io/
+docs_url: https://textual.textualize.io/guide/
+install_command: pip install textual
+
+category: Dev Tools
+tags: [python, tui, terminal, ui, cli, async]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  AI engineers live in terminals and SSH sessions where a React dashboard is
+  overkill and curses apps are painful to maintain. Textual lets you compose
+  widgets, CSS, and async workers into a real app that runs in the same shell
+  as training jobs, so operators get live logs, tables, and controls without
+  shipping a web frontend.
+
+use_cases:
+  - Build a local TUI to browse datasets, launch training jobs, and watch loss curves over SSH
+  - Ship an agent console with live tool-call logs and approval prompts in the terminal
+  - Prototype internal ML ops tools that work on jump hosts without opening ports
+  - Combine Textual with Rich renderables to inspect nested JSON model outputs interactively
