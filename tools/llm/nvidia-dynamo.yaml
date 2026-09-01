@@ -1,0 +1,28 @@
+name: NVIDIA Dynamo
+description: An open-source datacenter-scale inference orchestration layer that coordinates vLLM, SGLang, and TensorRT-LLM across nodes with disaggregated serving, routing, and multi-tier KV caching.
+tagline: Datacenter-scale orchestration above LLM inference engines
+
+github_url: https://github.com/ai-dynamo/dynamo
+website_url: https://docs.nvidia.com/dynamo/latest
+docs_url: https://docs.nvidia.com/dynamo/latest
+
+install_command: uv pip install --prerelease=allow "ai-dynamo[sglang]"
+
+category: LLM
+tags: [llm, inference, nvidia, serving, kv-cache, vllm, sglang, tensorrt-llm, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  A single inference engine cannot schedule prefill versus decode, route across a
+  fleet, or share KV cache at datacenter scale. NVIDIA Dynamo sits above vLLM,
+  SGLang, and TensorRT-LLM to coordinate disaggregated serving, intelligent routing,
+  multi-tier KV caching, and autoscaling so LLM and multimodal workloads use GPUs
+  more efficiently.
+
+use_cases:
+  - Orchestrate multi-node vLLM or SGLang clusters with disaggregated prefill and decode
+  - Route requests and share KV cache across GPU pools to raise tokens per second
+  - Serve reasoning, multimodal, and video generation models with automatic scaling
+  - Run TensorRT-LLM workers under one control plane instead of ad-hoc engine scripts

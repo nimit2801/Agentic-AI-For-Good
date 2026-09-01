@@ -1,0 +1,27 @@
+name: Google ADK
+description: Google's open-source, code-first Agent Development Kit for building, evaluating, and deploying multi-agent workflows in Python, optimized for Gemini but model-agnostic and deployment-agnostic.
+tagline: Code-first toolkit for Gemini and multi-agent workflows
+
+github_url: https://github.com/google/adk-python
+website_url: https://google.github.io/adk-docs/
+docs_url: https://google.github.io/adk-docs/
+
+install_command: pip install google-adk
+
+category: Agents
+tags: [python, agents, google, gemini, multi-agent, evaluation, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Teams building production agents on Gemini often stitch SDKs, eval harnesses, and
+  deploy targets by hand. Google ADK applies software-engineering structure to agent
+  graphs, tools, evaluation, and deployment so the same code can run locally, on
+  Vertex AI, or behind a custom runtime without rewriting the agent loop.
+
+use_cases:
+  - Build multi-agent Gemini workflows in Python with first-class tools and callbacks
+  - Evaluate agent quality with ADK's built-in evaluation before shipping to production
+  - Deploy the same agent code to Vertex AI Agent Engine or a self-hosted runtime
+  - Orchestrate sequential and parallel agent graphs without locking into one model vendor
