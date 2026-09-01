@@ -1,0 +1,26 @@
+name: HTTPie
+description: User-friendly command-line HTTP client with JSON defaults, color output, and sessions. HTTPie is the readable curl alternative for probing model APIs, webhooks, and vector-DB REST endpoints from a terminal.
+tagline: Human-friendly HTTP client for API debugging
+
+github_url: https://github.com/httpie/cli
+website_url: https://httpie.io
+docs_url: https://httpie.io/docs/cli
+install_command: pip install httpie
+
+category: Dev Tools
+tags: [http, cli, api, json, debugging, rest]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  curl flags for JSON headers, pretty printing, and sessions are easy to get
+  wrong when you are hitting an inference API at 1 a.m. HTTPie defaults to
+  JSON, shows colorized responses, and stores sessions so auth cookies and
+  tokens survive across requests.
+
+use_cases:
+  - POST a sample prompt to a local model server and read the JSON response
+  - Save a session with a Bearer token for a vector database REST API
+  - Download OpenAPI examples without assembling curl header flags
+  - Debug webhook payloads from an agent tool-calling flow

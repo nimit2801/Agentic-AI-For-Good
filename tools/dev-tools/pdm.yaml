@@ -1,0 +1,26 @@
+name: PDM
+description: Modern Python package and dependency manager that follows PEP 517, 582, and 621. PDM uses pyproject.toml as the single source of truth so ML libraries pin dependencies without a setup.py or a Conda env that drifts from the lockfile.
+tagline: PEP-compliant Python package and dependency manager
+
+github_url: https://github.com/pdm-project/pdm
+website_url: https://pdm-project.org
+docs_url: https://pdm-project.org/latest/
+install_command: pip install pdm
+
+category: Dev Tools
+tags: [python, packaging, dependencies, lockfile, pep621]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Poetry, pip-tools, and setup.py disagree on metadata and lockfiles. PDM
+  targets current PEPs so a training package can declare dependencies, extras,
+  and scripts in pyproject.toml and install them reproducibly without a
+  proprietary lock format.
+
+use_cases:
+  - Manage a Python ML library with pyproject.toml and a committed lockfile
+  - Install optional extras for GPU vs CPU inference from one project file
+  - Publish a package to PyPI using PEP 517 builds instead of setup.py
+  - Keep local and CI environments in sync without a Conda environment.yml
