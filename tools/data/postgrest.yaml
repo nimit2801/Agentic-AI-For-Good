@@ -1,0 +1,25 @@
+name: PostgREST
+description: Turns any PostgreSQL database into a RESTful API automatically. Exposes tables, views, and functions as HTTP endpoints with JWT auth, so ML feature stores and app backends can query Postgres without writing a custom API layer.
+tagline: Instant REST API for any Postgres database
+
+github_url: https://github.com/PostgREST/postgrest
+website_url: https://postgrest.org
+docs_url: https://postgrest.org/en/stable/
+
+category: Data
+tags: [postgres, rest, api, haskell, sql, backend, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Teams wiring ML apps to Postgres often build a one-off CRUD API that drifts from
+  the schema. PostgREST reads the database schema and serves a versioned REST API
+  with auth, filtering, and stored-procedure RPCs so the database remains the
+  contract instead of a handwritten backend.
+
+use_cases:
+  - Expose a Postgres feature store as a REST API for training and inference services
+  - Serve CRUD endpoints for an ML labeling or evaluation UI without writing a backend
+  - Call Postgres functions as RPCs for scoring, retrieval, or feature computation
+  - Put JWT-authenticated HTTP in front of existing tables and views for internal tools

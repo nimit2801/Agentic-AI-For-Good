@@ -1,0 +1,26 @@
+name: k3s
+description: Lightweight certified Kubernetes distribution from SUSE Rancher. A single binary with an embedded container runtime, etcd or SQLite, and ingress, made for edge, CI, and compact GPU clusters that still need a real K8s API.
+tagline: Lightweight Kubernetes in a single binary
+
+github_url: https://github.com/k3s-io/k3s
+website_url: https://k3s.io
+docs_url: https://docs.k3s.io
+
+install_command: curl -sfL https://get.k3s.io | sh -
+
+category: Dev Tools
+tags: [kubernetes, edge, rancher, cluster, mlops, gpu, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Full Kubernetes is heavy for a laptop, a single GPU box, or an edge node. k3s ships a
+  certified Kubernetes API as one binary with batteries included so teams can run agents,
+  inference, and CI workloads on small machines without a six-node control plane.
+
+use_cases:
+  - Stand up a single-node Kubernetes cluster for local agent and inference workloads
+  - Run compact GPU clusters at the edge with a certified K8s API
+  - Use k3s in CI to test Helm charts and ML serving manifests
+  - Replace a heavy kubeadm stack on a homelab or workshop cluster
