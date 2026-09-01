@@ -1,0 +1,25 @@
+name: Buck2
+description: Fast, correct build system from Meta and the successor to Buck. Buck2 uses a Rust engine and Starlark configuration for hermetic, incrementally cached builds of large monorepos spanning C++, Python, and ML tooling.
+tagline: Hermetic, incremental builds for large monorepos
+
+github_url: https://github.com/facebook/buck2
+website_url: https://buck2.build/
+docs_url: https://buck2.build/docs/getting_started/
+
+category: Dev Tools
+tags: [build-system, monorepo, rust, starlark, bazel, ci]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Large AI codebases mix CUDA kernels, Python packages, and native libs that Make and ad-hoc
+  scripts rebuild too often and Bazel can be heavy to adopt. Buck2 provides a hermetic graph
+  with remote execution and fine-grained incrementality so training stacks and inference
+  binaries rebuild only what changed.
+
+use_cases:
+  - Build mixed Python and C++ ML repos with cached, hermetic targets instead of ad-hoc scripts
+  - Share remote-execution cache across CI and developer machines for CUDA and native deps
+  - Define Starlark rules for packaging model-serving binaries alongside training tools
+  - Migrate from Buck1 or reduce full-repo rebuilds when only one library changed

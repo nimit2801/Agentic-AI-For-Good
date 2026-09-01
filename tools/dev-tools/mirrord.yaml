@@ -1,0 +1,26 @@
+name: mirrord
+description: Run any local process as if it were a pod in your Kubernetes cluster. mirrord steals or mirrors traffic and injects real env vars, DNS, and network so AI agents and developers can test against cluster dependencies without a container rebuild.
+tagline: Run local processes with the cluster's env, DNS, and traffic
+
+github_url: https://github.com/metalbear-co/mirrord
+website_url: https://metalbear.com/mirrord
+docs_url: https://metalbear.com/mirrord/docs/overview/quick-start/
+install_command: brew install metalbear-co/mirrord/mirrord
+
+category: Dev Tools
+tags: [kubernetes, local-dev, debugging, agents, devops, rust]
+pricing: freemium
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Local processes cannot see cluster ConfigMaps, Secrets, service DNS, or east-west traffic,
+  so teams containerize every change just to hit real dependencies. mirrord wraps a local
+  binary or an AI agent's runtime so it inherits the pod's environment and network, shrinking
+  the inner loop for services that talk to in-cluster models and data stores.
+
+use_cases:
+  - Debug a local API that must call in-cluster vector DBs and model servers by service DNS
+  - Let a coding agent run tests against cluster Secrets and ConfigMaps without deploying it
+  - Mirror production-like traffic to a local process while the cluster pod keeps serving
+  - Iterate on a microservice in an IDE with the same env vars the Kubernetes pod would have

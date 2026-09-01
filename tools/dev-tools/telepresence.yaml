@@ -1,0 +1,25 @@
+name: Telepresence
+description: Local development against a remote Kubernetes or OpenShift cluster. Telepresence intercepts cluster traffic so you can run a service on your laptop with your own IDE and debugger while the rest of the mesh still talks to it as a cluster pod.
+tagline: Code locally as if your process were a pod in the cluster
+
+github_url: https://github.com/telepresenceio/telepresence
+website_url: https://www.telepresence.io
+docs_url: https://www.telepresence.io/docs/quick-start
+
+category: Dev Tools
+tags: [kubernetes, local-dev, debugging, intercept, devops, microservices]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Debugging a service that depends on cluster DNS, sidecars, and other in-cluster APIs usually
+  means rebuild, push, and wait for a rollout. Telepresence connects your workstation to the
+  cluster network and can replace or intercept a workload so local code gets real cluster
+  traffic, env, and DNS without a full deploy cycle.
+
+use_cases:
+  - Replace a cluster Deployment with a local process to debug with your IDE against live traffic
+  - Intercept one service port while the remote container keeps running for safer experiments
+  - Wiretap production-like traffic to a local ML inference stub without disturbing the workload
+  - Reach in-cluster vector DBs and model servers by DNS from a laptop during development
