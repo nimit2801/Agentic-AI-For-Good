@@ -1,0 +1,26 @@
+name: cookiecutter
+description: Command-line tool that creates projects from templates. cookiecutter prompts for values and renders a directory of files so ML repos, Python packages, and serving services start from a reviewed skeleton instead of copy-paste.
+tagline: Project templates that generate a repo from prompts
+
+github_url: https://github.com/cookiecutter/cookiecutter
+website_url: https://cookiecutter.readthedocs.io
+docs_url: https://cookiecutter.readthedocs.io
+install_command: pip install cookiecutter
+
+category: Dev Tools
+tags: [templates, scaffolding, python, cli, project-generator]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  New training or serving repos start as a copy of last quarter's project, then
+  miss CI, license, and packaging files. cookiecutter renders a template with
+  prompts so every package gets the same layout, tests, and docs stubs without
+  manual file copying.
+
+use_cases:
+  - Scaffold a new Python training package from a team template
+  - Generate a FastAPI model-serving service with CI and Dockerfile included
+  - Standardize data-science repo layout across research teams
+  - Publish an internal cookiecutter so agents and humans start from the same skeleton

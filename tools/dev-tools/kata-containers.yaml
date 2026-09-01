@@ -1,0 +1,25 @@
+name: Kata Containers
+description: Lightweight VMs that feel like containers. Kata runs each pod in a hardware-isolated virtual machine with a guest kernel, so untrusted or multi-tenant ML workloads get VM isolation while still using Kubernetes and OCI tooling.
+tagline: Container workflow with VM-level isolation
+
+github_url: https://github.com/kata-containers/kata-containers
+website_url: https://katacontainers.io
+docs_url: https://github.com/kata-containers/kata-containers/tree/main/docs
+
+category: Dev Tools
+tags: [containers, virtualization, isolation, kubernetes, security, oci]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Containers share a host kernel. For untrusted notebooks, customer models, or
+  multi-tenant inference that is not enough. Kata boots a slim VM per pod so you
+  keep kubectl and OCI images but get hardware isolation closer to Firecracker
+  than to runc.
+
+use_cases:
+  - Run untrusted training jobs in VM-isolated Kubernetes pods
+  - Isolate multi-tenant inference so tenants do not share a kernel
+  - Use a Kata runtime class next to runc for only the sensitive workloads
+  - Meet stronger isolation requirements without abandoning container images
