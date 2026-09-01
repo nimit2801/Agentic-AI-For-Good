@@ -1,0 +1,31 @@
+name: CRI-O
+description: >-
+  OCI-based Kubernetes container runtime that implements the CRI. CRI-O
+  runs pods with containerd-compatible images and crun/runc so GPU
+  clusters can use a Kubernetes-focused runtime instead of a full Docker
+  stack, with cgroup and device support for NVIDIA workloads.
+tagline: Lightweight OCI runtime for Kubernetes
+
+github_url: https://github.com/cri-o/cri-o
+website_url: https://cri-o.io
+docs_url: https://github.com/cri-o/cri-o/blob/main/docs/crio.8.md
+
+category: Dev Tools
+tags: [kubernetes, cri, containers, oci, runtime, gpu, devops]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  Kubernetes needs a CRI runtime, and shipping Docker Engine on every
+  GPU node adds a daemon, extra APIs, and a larger attack surface.
+  CRI-O implements only what kubelet needs to pull OCI images and run
+  pods, including device plugins for GPUs, so training and inference
+  nodes stay Kubernetes-native without a full Docker install.
+
+use_cases:
+  - Run Kubernetes GPU nodes with an OCI CRI runtime instead of Docker Engine
+  - Pull and start PyTorch or CUDA pods through kubelet with runc or crun
+  - Standardize training cluster runtimes on CRI-O for OpenShift or vanilla Kubernetes
+  - Reduce node attack surface by dropping unused Docker APIs on inference workers
+  - Integrate NVIDIA device plugins with a CRI that supports host devices and cgroups

@@ -1,0 +1,33 @@
+name: Open Policy Agent
+description: >-
+  General-purpose policy engine that evaluates Rego against JSON. OPA is used
+  as a sidecar or library to authorize API calls, admission requests, and
+  data access so ML platforms can encode who may deploy models, call GPUs,
+  or read datasets without baking rules into every service.
+tagline: Policy as code for APIs, Kubernetes, and data
+
+github_url: https://github.com/open-policy-agent/opa
+website_url: https://www.openpolicyagent.org
+docs_url: https://www.openpolicyagent.org/docs/latest/
+install_command: brew install opa
+
+category: Dev Tools
+tags: [policy, rego, authorization, kubernetes, security, admission, devops]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  Authorization for model APIs, GPU quotas, and dataset access is often
+  scattered across app code and ad-hoc scripts, so rules drift and audits
+  fail. Open Policy Agent centralizes those decisions in Rego policies
+  evaluated against JSON input, letting services ask a sidecar or library
+  whether a request is allowed instead of reimplementing access control
+  in every inference and training service.
+
+use_cases:
+  - Authorize who can invoke a model-serving API or start a GPU training job
+  - Evaluate Kubernetes admission requests against Rego policies for ML namespaces
+  - Gate dataset and feature-store reads with policy that inspects identity and labels
+  - Run OPA as a sidecar next to an agent or RAG API for request-time authorization
+  - Unit-test Rego policies in CI so GPU and data access rules do not silently change

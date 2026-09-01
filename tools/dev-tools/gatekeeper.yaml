@@ -1,0 +1,32 @@
+name: Gatekeeper
+description: >-
+  Kubernetes policy controller that runs Open Policy Agent as an admission
+  webhook. Gatekeeper enforces ConstraintTemplates so clusters can require
+  resource limits, block privileged GPU pods, and audit existing objects
+  without wrapping every controller in custom admission code.
+tagline: OPA admission control for Kubernetes
+
+github_url: https://github.com/open-policy-agent/gatekeeper
+website_url: https://open-policy-agent.github.io/gatekeeper/
+docs_url: https://open-policy-agent.github.io/gatekeeper/website/docs/
+
+category: Dev Tools
+tags: [kubernetes, policy, opa, admission, security, governance, mlops]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  GPU clusters accumulate privileged pods, missing limits, and unlabeled
+  namespaces because admission is optional and Rego is hard to wire in.
+  Gatekeeper installs OPA as a validating and mutating webhook with
+  ConstraintTemplates, so platform teams express cluster rules as
+  Kubernetes objects and reject or audit workloads that violate GPU,
+  security, or labeling policy.
+
+use_cases:
+  - Block privileged or hostNetwork pods in GPU training namespaces
+  - Require resource limits and GPU requests on inference Deployments
+  - Audit existing cluster objects against policy without rejecting live workloads
+  - Mutate labels or nodeSelectors on ML jobs at admission time
+  - Share ConstraintTemplates so every cluster enforces the same model-serving rules

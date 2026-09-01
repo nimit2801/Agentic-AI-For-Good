@@ -1,0 +1,32 @@
+name: wasmtime
+description: >-
+  Bytecode Alliance WebAssembly runtime with Cranelift JIT. Wasmtime
+  embeds WASI and a C/Rust/Python API so teams can run sandboxed
+  inference plugins, data transforms, and agent tools as Wasm modules
+  instead of unsandboxed native code.
+tagline: Fast, standards-compliant WebAssembly runtime
+
+github_url: https://github.com/bytecodealliance/wasmtime
+website_url: https://wasmtime.dev
+docs_url: https://docs.wasmtime.dev
+install_command: brew install wasmtime
+
+category: Dev Tools
+tags: [webassembly, wasm, runtime, wasi, sandbox, rust, devops]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  Embedding untrusted preprocessing, tools, or model plugins next to an
+  agent means running native code with the host's privileges. Wasmtime
+  executes WebAssembly with WASI and fuel/limits so those plugins run
+  in a sandbox with explicit capabilities, while Cranelift keeps
+  startup and throughput viable for request-path transforms.
+
+use_cases:
+  - Run sandboxed preprocessing or tokenization plugins beside a model server
+  - Embed Wasm tools in an agent runtime so third-party functions cannot escape the host
+  - Execute WASI modules for data transforms in CI without shipping language-specific binaries
+  - Cap CPU via Wasmtime fuel so a runaway plugin cannot stall an inference process
+  - Prototype portable ML glue code once and run it on Linux, macOS, and embedding hosts
