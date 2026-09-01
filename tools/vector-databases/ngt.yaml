@@ -1,0 +1,27 @@
+name: NGT
+description: Neighborhood Graph and Tree library for high-dimensional nearest neighbor search. Graph-based ANN indexing used for large-scale similarity search, embeddings retrieval, and vector lookup in production pipelines.
+tagline: Graph-and-tree ANN search for high-dimensional data
+
+github_url: https://github.com/NGT-labs/NGT
+website_url: https://github.com/NGT-labs/NGT
+docs_url: https://github.com/NGT-labs/NGT
+
+install_command: pip install ngt
+
+category: Vector DB
+tags: [ann, vector-search, embeddings, cplusplus, python, nearest-neighbor, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Exact nearest neighbor search collapses at high dimension and large corpus size.
+  NGT builds neighborhood graphs and trees so you can run approximate k-NN over
+  embedding vectors with better recall-latency tradeoffs than brute force, without
+  standing up a full vector database.
+
+use_cases:
+  - Index high-dimensional embeddings for fast approximate nearest neighbor lookup
+  - Power similarity search in a custom retrieval stack without a hosted vector DB
+  - Benchmark graph-based ANN against HNSW for large-scale embedding search
+  - Add Python NGT indexes to a local RAG prototype before moving to a managed store

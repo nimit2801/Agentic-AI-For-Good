@@ -1,0 +1,28 @@
+name: Strands Agents
+description: Open-source SDK for production AI agents in Python and TypeScript. Model-agnostic and cloud-agnostic, with a model-driven harness so you can build an agent loop and control it end to end.
+tagline: Model-driven agent SDK for Python and TypeScript
+
+github_url: https://github.com/strands-agents/harness-sdk
+website_url: https://strandsagents.com
+docs_url: https://strandsagents.com
+
+install_command: |
+  pip install strands-agents
+  npm install @strands-agents/sdk
+
+category: Agents
+tags: [python, typescript, agents, aws, sdk, tools, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Production agent stacks often lock you to one model vendor or one cloud runtime.
+  Strands Agents gives a portable harness, tools, and control loop so the same agent
+  code can run against any model on any cloud without rewriting orchestration.
+
+use_cases:
+  - Build a production Python agent with model-driven tools and an explicit control loop
+  - Ship the same agent logic in TypeScript using the official Strands SDK
+  - Swap model providers without rewriting tool calling, memory, or harness code
+  - Compose specialized tools from strands-agents-tools into a custom agent workflow
