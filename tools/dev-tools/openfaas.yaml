@@ -1,0 +1,32 @@
+name: OpenFaaS
+description: >-
+  Serverless functions platform for Kubernetes and VMs. Write functions in any
+  language, package them as containers, and deploy with a CLI or REST API.
+  Autoscaling includes scale-to-zero, so inference endpoints and event-driven
+  ML jobs only consume cluster resources when they have work.
+tagline: Serverless functions made simple on Kubernetes
+
+github_url: https://github.com/openfaas/faas
+website_url: https://www.openfaas.com
+docs_url: https://docs.openfaas.com
+
+category: Dev Tools
+tags: [serverless, kubernetes, functions, faas, containers, mlops, scale-to-zero]
+pricing: freemium
+is_open_source: true
+license: MIT
+
+problem_solved: >-
+  Serving ML models and glue jobs as always-on services wastes cluster capacity
+  and turns every endpoint into an ops burden. OpenFaaS lets teams wrap any
+  container as a function with a single HTTP contract, then scale replicas up
+  from zero on demand and back down when idle. Templates, secrets, and a
+  watchdog process keep language choice and GPU images intact while giving
+  inference, webhooks, and batch triggers a uniform deploy path.
+
+use_cases:
+  - Deploy GPU or CPU model-serving functions that scale to zero between inference requests
+  - Wrap preprocessing, embedding, and postprocessing steps as independent functions in an ML pipeline
+  - Expose webhook handlers that trigger dataset ingest or retraining jobs without a standing service
+  - Package Python, Go, or custom container functions with one CLI for mixed-language AI backends
+  - Run event-driven batch scoring on Kubernetes with autoscaling based on queue depth or HTTP load

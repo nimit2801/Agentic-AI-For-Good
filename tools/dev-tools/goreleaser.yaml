@@ -1,0 +1,33 @@
+name: GoReleaser
+description: >-
+  Release automation for Go, Rust, Zig, and other compiled projects. GoReleaser
+  builds binaries, archives, checksums, Homebrew formulas, Docker images, and
+  GitHub Releases from one config so ML CLIs, inference servers, and agent
+  runtimes ship consistently across platforms without custom release scripts.
+tagline: Release engineering, simplified
+
+github_url: https://github.com/goreleaser/goreleaser
+website_url: https://goreleaser.com
+docs_url: https://goreleaser.com
+install_command: brew install goreleaser
+
+category: Dev Tools
+tags: [go, release, ci-cd, packaging, docker, homebrew, devops]
+pricing: freemium
+is_open_source: true
+license: MIT
+
+problem_solved: >-
+  Shipping an ML CLI or Go inference binary across macOS, Linux, and Windows
+  means repeating build flags, archive layouts, checksums, Homebrew taps, and
+  container tags in every CI job. GoReleaser collapses that into a single
+  YAML-driven pipeline that produces signed artifacts, changelogs, and
+  GitHub Releases so teams stop maintaining one-off release scripts that
+  break whenever a GOOS or Docker tag changes.
+
+use_cases:
+  - Publish multi-arch binaries for an ML CLI or agent runtime on every GitHub tag
+  - Build and push Docker images for Go model servers alongside GitHub Release archives
+  - Generate Homebrew formulas and checksums so internal AI tools install with brew
+  - Sign and upload release artifacts from CI without maintaining custom goreleaser-like scripts
+  - Ship Windows, Linux, and macOS builds of a vector-search or embedding CLI from one config

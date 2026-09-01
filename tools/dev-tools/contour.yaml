@@ -1,0 +1,32 @@
+name: Contour
+description: >-
+  Kubernetes ingress controller built on Envoy. Contour watches Ingress and
+  HTTPProxy resources and programs Envoy for HTTP/HTTPS routing, TLS, and
+  traffic shifting so ML APIs, notebooks, and model gateways can sit behind a
+  single programmable edge without hand-editing Envoy YAML.
+tagline: Envoy-powered Kubernetes ingress controller
+
+github_url: https://github.com/projectcontour/contour
+website_url: https://projectcontour.io
+docs_url: https://projectcontour.io/docs/
+
+category: Dev Tools
+tags: [kubernetes, ingress, envoy, reverse-proxy, tls, traffic-management, cncf]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  Exposing model servers, vector DBs, and internal ML apps on Kubernetes
+  usually means either limited Ingress objects or hand-maintained Envoy
+  configs that drift. Contour sits as a control plane in front of Envoy,
+  translating Kubernetes HTTPProxy and Ingress into live routes with TLS,
+  retries, and weighted routing so inference traffic can be shifted across
+  versions without restarting the data plane by hand.
+
+use_cases:
+  - Route HTTPS traffic to model serving, embedding, and notebook services on Kubernetes
+  - Shift a percentage of inference requests to a canary model deployment via HTTPProxy weights
+  - Terminate TLS for internal ML APIs and apply retries and timeouts at the Envoy edge
+  - Expose multiple RAG or agent backends on one cluster IP with host and path routing
+  - Replace ad-hoc Envoy ConfigMaps with Kubernetes-native HTTPProxy objects for ML gateways

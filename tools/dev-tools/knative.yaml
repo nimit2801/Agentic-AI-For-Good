@@ -1,0 +1,32 @@
+name: Knative
+description: >-
+  Kubernetes-based serverless platform that runs request-driven workloads with
+  scale-to-zero, traffic splitting, and revisioned deployments. Knative Serving
+  is widely used to host model APIs and event-driven ML jobs that should only
+  consume compute while they are handling traffic.
+tagline: Scale-to-zero serverless compute on Kubernetes
+
+github_url: https://github.com/knative/serving
+website_url: https://knative.dev
+docs_url: https://knative.dev/docs/serving/
+
+category: Dev Tools
+tags: [kubernetes, serverless, scale-to-zero, serving, mlops, traffic-splitting, cncf]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  Model servers and inference APIs on Kubernetes typically stay at least one
+  replica hot, burning GPU and CPU even with no traffic, and rollouts require
+  custom ingress and canary wiring. Knative Serving gives each service a URL,
+  concurrency-based autoscaling including scale-to-zero, and first-class
+  revisions so teams can split traffic across model versions without writing
+  their own autoscaler or ingress controller.
+
+use_cases:
+  - Host model inference APIs that scale to zero overnight and scale out on burst traffic
+  - Canary a new model revision by splitting a percentage of requests to the new Knative revision
+  - Serve embedding or RAG backends as request-driven Knative services with concurrency limits
+  - Run event-driven preprocessing jobs that start from zero when a CloudEvent arrives
+  - Replace custom HPA plus ingress glue with Knative routes for GPU-backed model endpoints
