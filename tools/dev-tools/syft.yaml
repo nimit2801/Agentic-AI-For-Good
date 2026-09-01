@@ -1,0 +1,32 @@
+name: Syft
+description: >-
+  CLI and library that generates Software Bills of Materials from
+  container images, filesystems, and archives. Syft inventories OS
+  packages and language deps so ML images can be scanned, signed, and
+  compared before they reach a GPU cluster.
+tagline: Generate SBOMs from containers and filesystems
+
+github_url: https://github.com/anchore/syft
+website_url: https://github.com/anchore/syft
+docs_url: https://github.com/anchore/syft
+install_command: brew install syft
+
+category: Dev Tools
+tags: [sbom, security, containers, supply-chain, grype, devops, ci-cd]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  CUDA and PyTorch images hide hundreds of OS and Python packages, so
+  teams cannot tell what they shipped or feed a scanner. Syft walks
+  images and directories, emits SPDX, CycloneDX, or Syft JSON SBOMs,
+  and pairs with Grype so vulnerability and license review starts from
+  an inventory instead of a black-box tag.
+
+use_cases:
+  - Generate an SBOM for a GPU training image and attach it to a release
+  - Inventory Python and OS packages in a model-serving container before deploy
+  - Feed Syft JSON into Grype to scan CVEs without re-unpacking the image
+  - Compare SBOMs across CUDA base image upgrades to see what packages changed
+  - Produce SPDX or CycloneDX for compliance on internal ML runtimes

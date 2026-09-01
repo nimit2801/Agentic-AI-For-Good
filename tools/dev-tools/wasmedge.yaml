@@ -1,0 +1,32 @@
+name: WasmEdge
+description: >-
+  Lightweight WebAssembly runtime aimed at cloud-native and edge apps.
+  WasmEdge runs WASI, HTTP, and TensorFlow Lite plugins so inference
+  and stream processing can run in a sandbox on Kubernetes, edge
+  devices, and embedded hosts without a full OS container.
+tagline: Cloud-native WebAssembly runtime for edge and serverless
+
+github_url: https://github.com/WasmEdge/WasmEdge
+website_url: https://wasmedge.org
+docs_url: https://wasmedge.org/docs/
+
+category: Dev Tools
+tags: [webassembly, wasm, runtime, edge, serverless, kubernetes, tflite]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  Running small inference or stream functions on edge nodes still
+  means a container runtime, a large image, and weak isolation for
+  plugins. WasmEdge executes Wasm with host extensions for networking
+  and TensorFlow Lite, so those functions run as sandboxed modules
+  under Kubernetes or on a device with a smaller footprint than OCI
+  pods.
+
+use_cases:
+  - Run TensorFlow Lite or lightweight inference as a Wasm module on edge devices
+  - Schedule Wasm functions on Kubernetes instead of full containers for glue APIs
+  - Embed WasmEdge in a service to load untrusted preprocessing plugins safely
+  - Process streaming events with WASI modules at the cluster edge
+  - Prototype portable ML helpers that run the same way on Linux servers and devices
