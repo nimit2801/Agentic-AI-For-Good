@@ -1,0 +1,25 @@
+name: Flannel
+description: Simple overlay network CNI for Kubernetes. Flannel assigns a subnet per node and routes pod traffic with VXLAN or host-gw so GPU clusters get working east-west networking without a full service mesh.
+tagline: Simple Kubernetes overlay networking CNI
+
+github_url: https://github.com/flannel-io/flannel
+website_url: https://github.com/flannel-io/flannel
+docs_url: https://github.com/flannel-io/flannel#flannel
+
+category: Dev Tools
+tags: [kubernetes, cni, networking, overlay, vxlan, mlops, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Pods on different nodes cannot talk until a CNI assigns addresses and
+  routes them. Flannel is a small overlay CNI that gives each node a subnet
+  and forwards traffic with VXLAN or host-gw, so ML clusters get working
+  pod networking without Calico-scale policy machinery.
+
+use_cases:
+  - Provide pod networking on a GPU Kubernetes cluster with a small CNI
+  - Use host-gw Flannel on a flat L2 lab so training jobs skip VXLAN overhead
+  - Boot kind, k3s, or kubeadm clusters that need a default overlay network
+  - Isolate east-west ML traffic to overlay subnets without a service mesh
