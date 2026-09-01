@@ -1,0 +1,31 @@
+name: external-dns
+description: >-
+  Kubernetes controller that keeps DNS records in sync with Services, Ingress,
+  and Gateway resources. It creates and updates records in Route 53, Cloudflare,
+  Google Cloud DNS, and other providers so model APIs and notebooks get stable
+  hostnames without manual DNS tickets.
+tagline: Sync Kubernetes resources to external DNS providers
+
+github_url: https://github.com/kubernetes-sigs/external-dns
+website_url: https://kubernetes-sigs.github.io/external-dns/
+docs_url: https://kubernetes-sigs.github.io/external-dns/
+
+category: Dev Tools
+tags: [kubernetes, dns, ingress, devops, networking, cloud, cncf]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  Every new model endpoint, notebook, or staging inference service on
+  Kubernetes needs a DNS name, and updating Route 53 or Cloudflare by hand
+  lags deploys and leaves stale records after teardown. external-dns watches
+  annotated Services and Ingress objects and writes the matching records so
+  hostnames appear when workloads come up and disappear when they go away.
+
+use_cases:
+  - Auto-create DNS records for Ingress-backed model serving and RAG APIs
+  - Keep staging and canary inference hostnames in sync as Kubernetes services come and go
+  - Point custom domains at GPU notebook or labeling UIs without filing DNS tickets
+  - Clean up stale DNS records when ephemeral ML experiment namespaces are deleted
+  - Sync Gateway or Service hostnames to Route 53, Cloudflare, or Google Cloud DNS
