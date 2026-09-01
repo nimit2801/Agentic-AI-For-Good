@@ -1,0 +1,25 @@
+name: minikube
+description: Local Kubernetes cluster in a VM, container, or bare metal on macOS, Linux, and Windows. minikube is the Kubernetes SIG tool for running a single-node cluster with addons for ingress, metrics, and GPU so you can develop ML serving stacks without a remote cluster.
+tagline: Run Kubernetes locally for development and addons
+
+github_url: https://github.com/kubernetes/minikube
+website_url: https://minikube.sigs.k8s.io/
+docs_url: https://minikube.sigs.k8s.io/docs/
+install_command: brew install minikube
+
+category: Dev Tools
+tags: [kubernetes, local-dev, cluster, devops, gpu, addons]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Testing Helm charts, operators, and model-serving Deployments usually needs a real kube-apiserver,
+  not Docker Compose. minikube boots a local cluster with kubectl access and optional GPU or
+  ingress addons so CI and laptops can exercise Kubernetes APIs without a cloud account.
+
+use_cases:
+  - Run a local Kubernetes cluster to test inference Deployments and Services before cloud deploy
+  - Enable the GPU addon to iterate on CUDA-backed serving pods from a workstation
+  - Try ingress, metrics-server, and registry addons without provisioning a shared cluster
+  - Teach Kubernetes APIs for ML platform work with a disposable single-node environment

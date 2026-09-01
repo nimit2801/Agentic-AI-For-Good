@@ -1,0 +1,25 @@
+name: kubectx
+description: Faster switching between kubectl contexts and namespaces. kubectx and kubens replace long config commands so platform engineers can hop between staging, prod, and local minikube clusters without editing kubeconfig by hand.
+tagline: Switch kubectl context and namespace in one command
+
+github_url: https://github.com/ahmetb/kubectx
+website_url: https://kubectx.dev
+docs_url: https://github.com/ahmetb/kubectx#readme
+install_command: brew install kubectx
+
+category: Dev Tools
+tags: [kubernetes, kubectl, cli, context, devops, productivity]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Teams juggle many kubeconfigs for local clusters, staging, and production. A wrong
+  kubectl apply lands in the wrong cluster. kubectx and kubens make context and namespace
+  switches explicit and tab-completable so ML platform work stays on the intended cluster.
+
+use_cases:
+  - Jump from minikube to a staging GKE context before applying a model-serving chart
+  - Switch namespaces between training jobs and inference without editing kubeconfig
+  - Tab-complete cluster names when debugging across several AI platform environments
+  - Pair with kubectl plugins so context mistakes are less likely in production
