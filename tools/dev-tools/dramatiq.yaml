@@ -1,0 +1,22 @@
+name: Dramatiq
+description: "Dramatiq is a fast, reliable background task library for Python 3 that uses RabbitMQ or Redis as a broker. It emphasizes simple worker processes, automatic retries, rate limits, and high throughput as a modern alternative to Celery for production job processing."
+tagline: Fast background tasks for Python 3
+github_url: https://github.com/Bogdanp/dramatiq
+website_url: https://dramatiq.io
+docs_url: https://dramatiq.io
+install_command: pip install dramatiq
+category: Dev Tools
+tags: [python, task-queue, rabbitmq, redis, background-jobs, workers]
+pricing: free
+is_open_source: true
+license: LGPL-3.0
+problem_solved: |
+  Python services that outgrow in-process threads need a distributed task queue that is simpler
+  and faster than Celery while still offering retries, rate limits, and broker durability.
+  Dramatiq uses RabbitMQ or Redis, multiprocess workers, and a small API so you can enqueue
+  inference, scraping, and batch transforms with predictable throughput and fewer moving parts
+  than a full Celery deployment.
+use_cases:
+  - "Process LLM inference, scraping, and embedding batches on RabbitMQ- or Redis-backed Dramatiq workers"
+  - "Apply per-actor rate limits and automatic retries when calling third-party AI APIs from background jobs"
+  - "Replace Celery in Python 3 services that want simpler workers and higher job throughput"

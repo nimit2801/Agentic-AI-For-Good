@@ -1,0 +1,22 @@
+name: Watermill
+description: "Watermill is a Go library for building event-driven applications on message streams. It offers a unified Pub/Sub API over Kafka, RabbitMQ, NATS, PostgreSQL, HTTP, and more so you can implement event sourcing, CQRS, sagas, and stream processing without locking into one broker."
+tagline: Event-driven applications in Go
+github_url: https://github.com/ThreeDotsLabs/watermill
+website_url: https://watermill.io
+docs_url: https://watermill.io
+install_command: go get github.com/ThreeDotsLabs/watermill
+category: Dev Tools
+tags: [go, event-driven, pubsub, kafka, rabbitmq, cqrs, messaging]
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: |
+  Go services that need event-driven architecture often glue together broker-specific SDKs,
+  losing a consistent handler model, middleware, and testing story when switching Kafka for
+  RabbitMQ or PostgreSQL. Watermill gives a single Publish/Subscribe and Router API across
+  backends, with middlewares for retries, poison queues, and metrics, so AI pipelines can
+  fan out jobs, build read models, and run sagas without rewriting the messaging layer.
+use_cases:
+  - "Fan out embedding and inference jobs as events on Kafka or NATS with a shared Go handler API"
+  - "Build CQRS read models and sagas for agent workflows that must survive at-least-once delivery"
+  - "Prototype event-driven services on PostgreSQL or HTTP, then swap to Kafka without changing handlers"

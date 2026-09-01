@@ -1,0 +1,22 @@
+name: Resque
+description: "Resque is a Redis-backed Ruby library for creating background jobs, placing them on multiple queues, and processing them later. It includes a Rake worker, a Sinatra monitoring UI, and persistent Redis queues so jobs survive process restarts."
+tagline: Redis-backed Ruby background jobs
+github_url: https://github.com/resque/resque
+website_url: http://resque.github.io/
+docs_url: https://github.com/resque/resque
+install_command: gem install resque
+category: Dev Tools
+tags: [ruby, redis, background-jobs, task-queue, workers, rails]
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: |
+  Ruby applications need a durable way to enqueue work that should not run in the web request:
+  image processing, dataset exports, webhook delivery, and model scoring. Homegrown thread
+  pools lose jobs on crash and give no visibility. Resque stores jobs as JSON in Redis, runs
+  isolated worker processes that can be restarted without losing the queue, and ships a
+  dashboard for failures, queue depth, and what workers are doing.
+use_cases:
+  - "Enqueue Ruby jobs for dataset exports, webhook delivery, and batch scoring so web processes stay responsive"
+  - "Run workers on multiple machines against shared Redis queues with priorities and failure tracking"
+  - "Inspect queues, busy workers, and failed jobs from Resque's Sinatra web UI in staging and production"

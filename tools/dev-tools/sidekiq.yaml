@@ -1,0 +1,22 @@
+name: Sidekiq
+description: "Sidekiq is a multithreaded Redis-backed background job processor for Ruby. It runs many jobs concurrently in one process, ships a web UI for queues and failures, and integrates with Rails Active Job. Open-source Sidekiq is LGPL; Pro and Enterprise add commercial features."
+tagline: Multithreaded background jobs for Ruby
+github_url: https://github.com/sidekiq/sidekiq
+website_url: https://sidekiq.org
+docs_url: https://github.com/sidekiq/sidekiq/wiki
+install_command: gem install sidekiq
+category: Dev Tools
+tags: [ruby, background-jobs, redis, rails, task-queue, workers]
+pricing: freemium
+is_open_source: true
+license: LGPL-3.0
+problem_solved: |
+  Ruby web apps cannot run slow work (emails, embeddings, batch inference, report generation)
+  inside the request cycle without blocking users and exhausting process workers. Process-per-job
+  queues waste memory; ad-hoc threads have no retries, visibility, or persistence. Sidekiq uses
+  Redis as a durable queue and threads to run many jobs in one process, with retries, a web UI,
+  and Active Job integration so background work is reliable under load.
+use_cases:
+  - "Queue LLM API calls, embedding jobs, and document processing from a Rails app so request threads stay free"
+  - "Send transactional email, webhooks, and notifications asynchronously with automatic retries on failure"
+  - "Monitor failed jobs, queue latency, and worker busy-ness from Sidekiq's web UI in production"

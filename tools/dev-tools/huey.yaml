@@ -1,0 +1,22 @@
+name: Huey
+description: "Huey is a lightweight Python task queue with a small API and optional Redis, Postgres, SQLite, filesystem, or in-memory storage. It supports retries, cron-style scheduling, pipelines, chords, locking, and Django integration without the operational weight of Celery."
+tagline: Lightweight Python task queue
+github_url: https://github.com/coleifer/huey
+website_url: https://huey.readthedocs.io/
+docs_url: https://huey.readthedocs.io/
+install_command: pip install huey
+category: Dev Tools
+tags: [python, task-queue, redis, django, background-jobs, scheduler]
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: |
+  Many Python AI apps need background tasks and periodic jobs but do not want Celery's broker
+  complexity, worker topology, and dependency surface. Huey provides a tiny API for enqueueing
+  functions, retries, crontab schedules, result storage, and pipelines, with Redis, Postgres,
+  SQLite, or even the filesystem as the backend. That lets small teams run embeddings, report
+  jobs, and nightly evals without standing up a full Celery cluster.
+use_cases:
+  - "Offload embedding generation and document parsing from Django request handlers with Redis or Postgres-backed Huey workers"
+  - "Schedule recurring model evals, cache warmups, and data syncs with Huey's crontab-style periodic tasks"
+  - "Chain pipeline steps (chunk, embed, index) with retries, locks, and result storage without adopting Celery"
