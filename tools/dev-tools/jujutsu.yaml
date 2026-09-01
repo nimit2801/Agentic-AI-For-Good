@@ -1,0 +1,25 @@
+name: Jujutsu
+description: A Git-compatible version control system with a simpler mental model than Git. Working-copy commits are automatic, conflicts are first-class, and the jj CLI interoperates with Git remotes, which helps ML teams manage long-lived experiment branches.
+tagline: Git-compatible VCS with a simpler workflow
+
+github_url: https://github.com/jj-vcs/jj
+website_url: https://jj-vcs.github.io/jj/
+docs_url: https://jj-vcs.github.io/jj/latest/
+install_command: brew install jj
+
+category: Dev Tools
+tags: [git, vcs, version-control, cli, rust, developer-tools]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Git's index, rebase, and detached HEAD confuse people iterating on experiments, and
+  rewriting history is easy to get wrong. Jujutsu records every working-copy change as a
+  commit, treats conflicts as data, and still pushes to GitHub remotes. Teams keep Git
+  interoperability while getting undo-friendly history for model and data pipeline work.
+
+use_cases:
+  - Track experiment branches with automatic working-copy commits instead of constant git add
+  - Collaborate on GitHub remotes using jj while teammates stay on git
+  - Resolve conflicts as first-class state instead of stopping the whole rebase

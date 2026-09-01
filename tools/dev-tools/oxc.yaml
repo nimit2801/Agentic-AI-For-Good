@@ -1,0 +1,25 @@
+name: OXC
+description: A high-performance JavaScript and TypeScript toolchain written in Rust, covering parser, linter, formatter, resolver, and minifier. oxlint is the drop-in ESLint-class linter used to keep large frontend and agent-UI codebases fast in CI.
+tagline: Rust-powered JavaScript toolchain, including oxlint
+
+github_url: https://github.com/oxc-project/oxc
+website_url: https://oxc.rs
+docs_url: https://oxc.rs
+install_command: npm install -g oxlint
+
+category: Dev Tools
+tags: [javascript, typescript, linter, rust, parser, formatter, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  ESLint and related JS tooling are slow on large monorepos, so CI lint jobs dominate
+  agent-dashboard and web-app pipelines. OXC reimplements parser, linter, and formatter
+  in Rust. oxlint runs orders of magnitude faster than ESLint on the same rules, catching
+  issues in TypeScript frontends without waiting minutes per pull request.
+
+use_cases:
+  - Lint large TypeScript monorepos in CI in seconds instead of minutes
+  - Parse and transform JS/TS in custom build tools without a slow Babel pipeline
+  - Replace ESLint on agent console and ML dashboard frontends for faster local feedback

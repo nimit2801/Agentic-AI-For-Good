@@ -1,0 +1,25 @@
+name: watchexec
+description: A cross-platform CLI that runs a command whenever files change. Used as a lightweight file watcher for rebuilds, tests, codegen, and local model-serving loops without tying the workflow to a specific language toolchain.
+tagline: Run a command whenever files change
+
+github_url: https://github.com/watchexec/watchexec
+website_url: https://watchexec.github.io/
+docs_url: https://watchexec.github.io/
+install_command: brew install watchexec
+
+category: Dev Tools
+tags: [file-watcher, cli, rust, developer-tools, productivity, rebuild]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Language-specific watchers (nodemon, cargo-watch) do not cover mixed ML repos with
+  Python, Rust, and configs. watchexec watches a directory and re-runs any command on
+  change, with ignore files, filters, and debounce. Training scripts, codegen, and local
+  servers restart from one tool instead of a pile of per-language watchers.
+
+use_cases:
+  - Rerun pytest or ruff when Python training or eval code changes
+  - Rebuild native extensions or restart a local inference server on file save
+  - Watch prompt templates and YAML catalogs and trigger validation on each edit

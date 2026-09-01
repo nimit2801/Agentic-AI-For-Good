@@ -1,0 +1,25 @@
+name: gitui
+description: A fast terminal UI for Git written in Rust. It offers staging, committing, blame, stash, and log browsing in a keyboard-driven TUI, which is useful in remote GPU boxes and SSH sessions where a graphical Git client is not available.
+tagline: Blazing-fast terminal UI for Git
+
+github_url: https://github.com/extrawurst/gitui
+website_url: https://github.com/extrawurst/gitui
+docs_url: https://github.com/extrawurst/gitui/blob/master/README.md
+install_command: brew install gitui
+
+category: Dev Tools
+tags: [git, tui, rust, terminal, developer-tools, vcs]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  GPU training boxes and headless servers have Git but no GUI, and raw git status/diff
+  is slow to navigate in large ML repos with many generated files. gitui gives a keyboard
+  TUI for staging hunks, inspecting logs, and managing stashes over SSH, so experiment
+  branches can be reviewed without copying the repo to a laptop.
+
+use_cases:
+  - Stage and commit experiment code on a remote GPU box over SSH
+  - Browse blame and log in large ML repositories from the terminal
+  - Manage stashes and branches without a graphical Git client
