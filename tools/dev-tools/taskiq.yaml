@@ -1,0 +1,25 @@
+name: Taskiq
+description: An async-first Python distributed task queue inspired by Celery and Dramatiq. It runs sync and async functions, integrates with FastAPI and AioHTTP, and brokers work over Redis, NATS, RabbitMQ, or Kafka.
+tagline: Distributed Python task queue with first-class async
+
+github_url: https://github.com/taskiq-python/taskiq
+website_url: https://taskiq-python.github.io/
+docs_url: https://taskiq-python.github.io/
+install_command: pip install taskiq
+
+category: Dev Tools
+tags: [python, async, task-queue, celery, fastapi, redis, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Celery is sync-first and awkward inside FastAPI and other asyncio stacks used for LLM APIs.
+  Taskiq sends and runs both sync and async functions with type-hinted brokers, so workers
+  can await model calls, HTTP clients, and DB pools without wrapping them in sync executors.
+  Redis, NATS, RabbitMQ, and Kafka brokers cover the same backends ML teams already run.
+
+use_cases:
+  - Offload LLM inference, embedding, and webhook work from FastAPI request handlers
+  - Run typed async workers against Redis, NATS, RabbitMQ, or Kafka brokers
+  - Reuse FastAPI dependencies inside background tasks instead of rebuilding a Celery app

@@ -1,0 +1,26 @@
+name: River
+description: A Postgres-backed job queue for Go that enqueues work in the same database transaction as application data. Jobs become visible only after commit, so embedding pipelines and training workers never lose or duplicate work after a rollback.
+tagline: Fast, reliable background jobs in Go on Postgres
+
+github_url: https://github.com/riverqueue/river
+website_url: https://riverqueue.com
+docs_url: https://riverqueue.com/docs
+install_command: go get github.com/riverqueue/river
+
+category: Dev Tools
+tags: [go, postgres, job-queue, background-jobs, workers, developer-tools]
+pricing: freemium
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  Redis job queues split application writes from enqueueing, so a committed user record can
+  miss its follow-up job, or a rolled-back write can still fire work. River stores jobs in
+  Postgres and inserts them in the same transaction as your data. If the transaction commits,
+  the job runs; if it rolls back, the job never existed. That model fits Go ML services that
+  already run on Postgres.
+
+use_cases:
+  - Enqueue embedding or notification jobs atomically with the source database write
+  - Run cron and retryable workers for Go model-serving apps without a Redis dependency
+  - Inspect failing jobs in River UI during incidents without adding another datastore
