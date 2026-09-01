@@ -1,0 +1,25 @@
+name: Firecracker
+description: Secure and fast microVMs for serverless computing. Firecracker uses KVM to run lightweight virtual machines with a minimal device model, giving each function or container a hardware-isolated kernel so multi-tenant ML inference can share hosts without sharing a kernel.
+tagline: MicroVMs that isolate serverless and inference workloads
+
+github_url: https://github.com/firecracker-microvm/firecracker
+website_url: https://firecracker-microvm.github.io/
+docs_url: https://github.com/firecracker-microvm/firecracker/blob/main/docs/getting-started.md
+
+category: Dev Tools
+tags: [microvm, kvm, serverless, isolation, rust, containers]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Containers share a host kernel, so a breakout in one tenant can reach every model
+  on the box. Firecracker boots a slim virtual machine in tens of milliseconds with
+  a tiny device model, giving each inference or function its own kernel while still
+  packing thousands of tenants onto one machine.
+
+use_cases:
+  - Isolate multi-tenant model inference so one customer cannot reach another kernel
+  - Run Lambda-style serverless functions with hardware virtualization instead of containers
+  - Sandbox untrusted agent or user code that must execute binaries on a shared host
+  - Pack more GPU-adjacent CPU tenants per machine than full VMs allow

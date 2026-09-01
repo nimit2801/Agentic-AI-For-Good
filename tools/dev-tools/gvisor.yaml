@@ -1,0 +1,25 @@
+name: gVisor
+description: Application kernel for containers that intercepts syscalls in user space. gVisor (runsc) sits between the container and the host kernel so untrusted code, including model-serving workloads, cannot talk to the real kernel even if it escapes the container namespace.
+tagline: User-space kernel that sandboxes container syscalls
+
+github_url: https://github.com/google/gvisor
+website_url: https://gvisor.dev
+docs_url: https://gvisor.dev/docs/
+
+category: Dev Tools
+tags: [sandbox, containers, security, kubernetes, runtime, isolation]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  OCI runtimes like runc still let containers issue syscalls to the host kernel.
+  gVisor implements a large Linux syscall surface in user space (Sentry) so a
+  compromised training job or untrusted notebook cannot reach host devices, files,
+  or other tenants through kernel bugs.
+
+use_cases:
+  - Run untrusted notebooks or agent-generated code in a syscall-sandboxed container
+  - Use the runsc runtime class on Kubernetes for multi-tenant model serving
+  - Reduce blast radius when evaluating third-party ML images you do not control
+  - Isolate CI jobs that build or test code from untrusted pull requests

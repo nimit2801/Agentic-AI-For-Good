@@ -1,0 +1,26 @@
+name: CUE
+description: Configuration language that validates and unifies JSON, YAML, and OpenAPI data. CUE catches schema drift in Helm values, model-serving configs, and pipeline manifests before they reach a cluster, replacing ad hoc templates with types and constraints.
+tagline: Validate and unify JSON, YAML, and OpenAPI configs
+
+github_url: https://github.com/cue-lang/cue
+website_url: https://cuelang.org
+docs_url: https://cuelang.org/docs/
+install_command: brew install cue
+
+category: Dev Tools
+tags: [configuration, validation, yaml, json, schema, golang]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  YAML and JSON configs for training jobs and serving stacks have no types, so
+  invalid values ship to production. CUE is a constraint language that unifies
+  schemas and data, so you can validate, default, and generate configs from one
+  source instead of duplicating OpenAPI, Helm values, and ad hoc scripts.
+
+use_cases:
+  - Validate Helm values and Kubernetes manifests against a single CUE schema
+  - Generate OpenAPI or JSON Schema from CUE types for model-serving APIs
+  - Unify overlapping YAML configs across staging and production without copy-paste
+  - Catch missing required fields in pipeline configs before CI applies them
