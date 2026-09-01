@@ -1,0 +1,26 @@
+name: Liquibase
+description: Database schema change management tool that versions SQL and changelog files so every environment applies the same migrations. ML platforms use it to evolve feature-store tables, eval schemas, and app databases without untracked ALTER scripts.
+tagline: Versioned database migrations for every environment
+
+github_url: https://github.com/liquibase/liquibase
+website_url: https://www.liquibase.org
+docs_url: https://docs.liquibase.com
+install_command: brew install liquibase
+
+category: Dev Tools
+tags: [database, migrations, sql, java, devops, ci-cd]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Feature stores, eval tables, and application schemas drift when each engineer
+  runs ad-hoc ALTER statements. Liquibase tracks changes as ordered changelogs
+  that apply the same way in local Docker, CI, and production, with rollback
+  and drift detection so ML data planes stay reviewable.
+
+use_cases:
+  - Version feature-store table changes alongside the training code that depends on them
+  - Apply the same Postgres changelog in testcontainers CI and production deploys
+  - Generate SQL diffs when promoting an eval schema from staging to prod
+  - Roll back a failed migration that broke an embedding metadata table

@@ -1,0 +1,28 @@
+name: Testcontainers
+description: Library that spins up throwaway Docker containers of databases, brokers, browsers, and anything else that runs in Docker for integration tests. ML teams get real Postgres, Redis, Kafka, or vector DB instances in CI without shared staging boxes.
+tagline: Throwaway Docker containers for real integration tests
+
+github_url: https://github.com/testcontainers/testcontainers-java
+website_url: https://testcontainers.org
+docs_url: https://testcontainers.org
+install_command: |
+  pip install testcontainers
+  npm install testcontainers
+
+category: Dev Tools
+tags: [testing, docker, integration-tests, java, python, nodejs]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  AI services depend on Postgres, Redis, Kafka, and vector databases that mocks
+  never quite match. Shared staging clusters flake and collide across jobs.
+  Testcontainers starts a real container per test, waits until it is ready, and
+  tears it down so integration tests hit the same software production uses.
+
+use_cases:
+  - Run pytest against a real Postgres and Redis container when testing a RAG ingest path
+  - Spin up Kafka or RabbitMQ in CI to verify agent event pipelines without a shared broker
+  - Start a local vector database container for embedding retrieval tests
+  - Drive a Selenium browser container against an AI web app in JUnit or Node tests

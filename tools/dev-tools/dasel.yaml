@@ -1,0 +1,26 @@
+name: dasel
+description: CLI and library for querying, transforming, and modifying JSON, YAML, TOML, XML, INI, HCL, KDL, and CSV with one selector syntax. AI pipelines can reshape configs, prompts, and evaluation fixtures without writing a parser per format.
+tagline: One selector syntax for JSON, YAML, TOML, XML, and CSV
+
+github_url: https://github.com/TomWright/dasel
+website_url: https://daseldocs.tomwright.me
+docs_url: https://daseldocs.tomwright.me
+install_command: brew install dasel
+
+category: Dev Tools
+tags: [cli, json, yaml, toml, data-transform, golang]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  ML pipelines mix JSON API payloads, YAML configs, TOML tool settings, and CSV
+  eval sets. jq handles JSON, yq handles YAML, and everything else needs a one-off
+  script. dasel uses one selector language across those formats so agents and CI
+  jobs can read or patch structured files without a parser per type.
+
+use_cases:
+  - Extract nested fields from mixed JSON and YAML model configs in a single CI step
+  - Convert evaluation CSV into YAML fixtures for prompt regression tests
+  - Patch TOML or HCL deploy configs from a shell script without a language runtime
+  - Let an agent rewrite a YAML prompt pack and emit JSON for an API in one command
