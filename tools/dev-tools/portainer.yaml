@@ -1,0 +1,25 @@
+name: Portainer
+description: Web UI for Docker, Swarm, and Kubernetes. Lets teams manage containers, stacks, and cluster resources from a browser so ML engineers can run inference and notebooks without living in the Docker CLI.
+tagline: Simple Docker and Kubernetes management UI
+
+github_url: https://github.com/portainer/portainer
+website_url: https://www.portainer.io
+docs_url: https://docs.portainer.io
+
+category: Dev Tools
+tags: [docker, kubernetes, ui, containers, devops, mlops, open-source]
+pricing: freemium
+is_open_source: true
+license: Zlib
+
+problem_solved: |
+  Docker CLI and kubectl are steep for researchers who just need to start a GPU
+  notebook or inference container. Portainer gives a browser UI over Docker and
+  Kubernetes so stacks, logs, and access control are visible without teaching
+  everyone kubectl.
+
+use_cases:
+  - Give researchers a UI to start GPU notebook and inference containers
+  - Manage Docker Compose stacks for local RAG demos from a browser
+  - Apply RBAC so only some users can deploy to a shared Kubernetes namespace
+  - Inspect container logs and resource use without SSH on a lab GPU box

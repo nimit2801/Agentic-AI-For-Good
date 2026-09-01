@@ -1,0 +1,25 @@
+name: Crossplane
+description: Cloud-native control plane that turns cloud APIs into Kubernetes resources. Declare GPU VMs, databases, and buckets as YAML so ML platforms provision infra with the same GitOps workflow as applications.
+tagline: Kubernetes control plane for cloud infrastructure
+
+github_url: https://github.com/crossplane/crossplane
+website_url: https://www.crossplane.io
+docs_url: https://docs.crossplane.io
+
+category: Dev Tools
+tags: [kubernetes, iac, gitops, cloud, gpu, mlops, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  App GitOps and infra Terraform usually live in two worlds. Crossplane extends
+  the Kubernetes API with cloud resources so a platform team can request a GPU
+  node pool, database, or bucket as YAML and let the control plane reconcile it
+  like any other cluster object.
+
+use_cases:
+  - Provision GPU node pools and object storage as Kubernetes custom resources
+  - Offer a self-service ML environment API composed from cloud provider resources
+  - GitOps cloud databases used by feature stores alongside app deployments
+  - Replace ticket-driven infra with Crossplane claims for training clusters

@@ -1,0 +1,25 @@
+name: Tekton
+description: Cloud-native CI/CD pipelines as Kubernetes custom resources. Define Tasks and Pipelines that build, test, and deploy models on the cluster, with steps running as pods next to your training and serving workloads.
+tagline: Kubernetes-native CI/CD pipelines
+
+github_url: https://github.com/tektoncd/pipeline
+website_url: https://tekton.dev
+docs_url: https://tekton.dev/docs/
+
+category: Dev Tools
+tags: [cicd, kubernetes, pipelines, devops, mlops, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  External CI often cannot see GPUs, cluster secrets, or in-cluster registries.
+  Tekton runs each pipeline step as a Kubernetes pod, so model build, test, and
+  deploy share the same cluster, service accounts, and hardware as production
+  serving.
+
+use_cases:
+  - Build and push model images inside the cluster that will serve them
+  - Run GPU-backed evaluation Tasks as Kubernetes pods in a Tekton Pipeline
+  - Deploy agent runtimes with in-cluster CI instead of a SaaS runner
+  - Standardize ML release steps as reusable Tekton Tasks across teams
