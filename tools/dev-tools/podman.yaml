@@ -1,0 +1,27 @@
+name: Podman
+description: Daemonless OCI container engine for building, running, and managing containers and pods. Drop-in Docker CLI compatible, rootless by default, used to run local ML services and reproducible training environments.
+tagline: Daemonless containers and pods, Docker-compatible
+
+github_url: https://github.com/containers/podman
+website_url: https://podman.io
+docs_url: https://docs.podman.io
+
+install_command: brew install podman
+
+category: Dev Tools
+tags: [containers, oci, docker, linux, kubernetes, mlops, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Docker's daemon and rootful default are a poor fit for shared GPU boxes and locked-down
+  laptops. Podman runs OCI containers and Kubernetes-style pods without a daemon, as a
+  regular user, while keeping a Docker-compatible CLI so existing Dockerfiles and compose
+  files still work.
+
+use_cases:
+  - Run local LLM inference and vector DB containers without a Docker daemon
+  - Build reproducible training images with a Docker-compatible CLI
+  - Run rootless containers on shared GPU machines where Docker socket access is banned
+  - Group related ML services into pods that mirror Kubernetes locally

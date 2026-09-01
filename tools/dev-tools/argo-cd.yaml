@@ -1,0 +1,24 @@
+name: Argo CD
+description: Declarative GitOps continuous delivery for Kubernetes. Syncs cluster state to Git so ML serving, agents, and data jobs deploy the same way every time, with diffs, rollback, and multi-cluster sync.
+tagline: GitOps continuous delivery for Kubernetes
+
+github_url: https://github.com/argoproj/argo-cd
+website_url: https://argo-cd.readthedocs.io
+docs_url: https://argo-cd.readthedocs.io
+
+category: Dev Tools
+tags: [gitops, kubernetes, cicd, cd, helm, mlops, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  kubectl apply from laptops drifts clusters and hides what is actually running. Argo CD
+  continuously reconciles Kubernetes apps from Git, showing diffs and health so model
+  serving, agents, and feature pipelines stay in the revision you reviewed.
+
+use_cases:
+  - Deploy LLM serving charts from Git and keep the cluster synced to main
+  - Roll back a bad inference release by reverting the Git commit Argo CD watches
+  - Manage multi-cluster agent runtimes from one GitOps source of truth
+  - Review live vs desired Helm diffs before promoting an ML workload

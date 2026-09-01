@@ -1,0 +1,27 @@
+name: yq
+description: Portable command-line processor for YAML, JSON, XML, CSV, TOML, and HCL. Lets you query, merge, and rewrite config the way jq does for JSON, which is essential in ML pipeline and Kubernetes manifests.
+tagline: jq for YAML, JSON, XML, CSV, and TOML
+
+github_url: https://github.com/mikefarah/yq
+website_url: https://mikefarah.gitbook.io/yq/
+docs_url: https://mikefarah.gitbook.io/yq/
+
+install_command: brew install yq
+
+category: Dev Tools
+tags: [yaml, json, cli, golang, kubernetes, config, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  ML and infra configs live in YAML, but jq only speaks JSON. yq gives the same
+  filter-and-rewrite power across YAML, JSON, XML, CSV, TOML, and HCL so you can
+  patch Helm values, compose experiment configs, and extract fields in CI without
+  a custom parser.
+
+use_cases:
+  - Patch Kubernetes and Helm YAML in CI without a Python script
+  - Extract model hyperparameters from experiment YAML into JSON for dashboards
+  - Merge overlay configs for training jobs across environments
+  - Convert between YAML, JSON, and TOML in data and IaC pipelines
