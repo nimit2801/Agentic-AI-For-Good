@@ -1,0 +1,20 @@
+name: containerd
+description: CNCF container runtime that pulls images, manages snapshots and namespaces, and runs containers for Docker, Kubernetes, and nerdctl. It is the low-level engine most ML clusters use to start training and inference pods.
+tagline: Industry-standard container runtime for K8s and Docker
+github_url: https://github.com/containerd/containerd
+website_url: https://containerd.io
+docs_url: https://containerd.io/docs/
+category: Dev Tools
+tags: [containers, kubernetes, docker, runtime, cncf, cni]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: |
+  Training and inference jobs need a stable way to pull images and start
+  processes on GPU nodes. containerd is the CRI runtime Kubernetes talks to,
+  handling image pull, snapshot layers, and container lifecycle so ML
+  platforms do not depend on the full Docker daemon.
+use_cases:
+  - Run Kubernetes GPU nodes with containerd as the CRI instead of Docker
+  - Pull and cache large CUDA training images with snapshotter-backed layers
+  - Inspect and manage inference containers with nerdctl against a containerd socket

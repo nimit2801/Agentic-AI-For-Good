@@ -1,0 +1,22 @@
+name: Velero
+description: Kubernetes backup and disaster-recovery tool that snapshots cluster resources and persistent volumes, then restores them to the same or another cluster so ML teams can protect PVCs holding datasets, checkpoints, and feature stores.
+tagline: Backup and migrate Kubernetes apps and volumes
+github_url: https://github.com/vmware-tanzu/velero
+website_url: https://velero.io
+docs_url: https://velero.io/docs/
+install_command: brew install velero
+category: Dev Tools
+tags: [kubernetes, backup, disaster-recovery, volumes, devops]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: |
+  etcd snapshots do not restore PVC-backed training data. Velero backups
+  Kubernetes objects plus volume snapshots to object storage, and can
+  restore a namespace or whole cluster after a failed upgrade, node loss,
+  or region move so datasets and model-serving state come back with the
+  workloads.
+use_cases:
+  - Nightly backup of namespaces that hold model-serving Deployments and dataset PVCs
+  - Migrate an ML workspace from a staging cluster to production with a Velero restore
+  - Recover a deleted feature-store PVC from an object-storage backup after an operator mistake

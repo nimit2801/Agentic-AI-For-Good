@@ -1,0 +1,21 @@
+name: Skaffold
+description: Google tool for repeatable Kubernetes development that watches source, rebuilds images, and redeploys to a cluster so ML engineers can iterate on training jobs and inference APIs without writing custom docker-build plus kubectl loops.
+tagline: Repeatable inner-loop Kubernetes development
+github_url: https://github.com/GoogleContainerTools/skaffold
+website_url: https://skaffold.dev
+docs_url: https://skaffold.dev/docs/
+install_command: brew install skaffold
+category: Dev Tools
+tags: [kubernetes, devops, ci-cd, containers, google, inner-loop]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: |
+  Changing a FastAPI inference handler usually means rebuild, retag, push,
+  and kubectl apply by hand. Skaffold watches files, builds with Docker or
+  Buildkit, tags images, and deploys renderable manifests so the inner loop
+  on a GPU cluster matches what CI will ship.
+use_cases:
+  - Live-reload a model API Deployment on a local Kind or GKE cluster while editing Python
+  - Share one skaffold.yaml that builds CUDA images and applies Helm or Kustomize overlays
+  - Run skaffold in CI to build, test, and deploy the same inference stack used on a laptop
