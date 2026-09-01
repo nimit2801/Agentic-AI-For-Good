@@ -1,0 +1,25 @@
+name: mold
+description: A drop-in replacement for Unix linkers that links large C++ and Rust programs far faster than GNU ld, gold, or lld. Used to cut CI and local rebuild times for ML frameworks, inference engines, and native extensions.
+tagline: A modern linker that makes large native builds finish faster
+
+github_url: https://github.com/rui314/mold
+website_url: https://github.com/rui314/mold
+docs_url: https://github.com/rui314/mold/blob/main/docs/mold.md
+install_command: brew install mold
+
+category: Dev Tools
+tags: [linker, rust, cpp, build, ci, performance, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Linking is often the slowest step when compiling large C++ or Rust codebases such as
+  PyTorch, TensorFlow, or custom CUDA kernels. mold is a drop-in ld replacement that
+  parallelizes linking and typically finishes several times faster than GNU ld or gold,
+  shrinking CI cycles and local rebuilds without changing compiler flags beyond -fuse-ld=mold.
+
+use_cases:
+  - Speed up CI linking of large ML frameworks and native Python extensions
+  - Cut local rebuild times for Rust inference servers and C++ CUDA kernels
+  - Drop in as -fuse-ld=mold in CMake, Bazel, or cargo without rewriting the build

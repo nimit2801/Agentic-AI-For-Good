@@ -1,0 +1,25 @@
+name: sqlc
+description: Compiles SQL queries into type-safe Go, Python, Kotlin, and TypeScript so database access stays in SQL instead of an ORM. You write queries, it generates models and methods, catching schema mismatches at compile time.
+tagline: Generate type-safe code from SQL
+
+github_url: https://github.com/sqlc-dev/sqlc
+website_url: https://sqlc.dev
+docs_url: https://docs.sqlc.dev
+install_command: brew install sqlc
+
+category: Dev Tools
+tags: [sql, codegen, go, postgresql, mysql, type-safe, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  ORMs hide SQL and still fail at runtime when a column is renamed or a query is wrong.
+  sqlc keeps queries in plain SQL against your schema, then generates typed client code
+  so broken queries fail at compile time. Feature stores, experiment trackers, and
+  training-metadata databases get predictable, reviewable SQL without stringly-typed access.
+
+use_cases:
+  - Generate typed Go or Python accessors for feature-store and experiment-tracking databases
+  - Keep production SQL in reviewable .sql files instead of ORM query builders
+  - Catch schema drift in CI by regenerating code and failing the build on type errors

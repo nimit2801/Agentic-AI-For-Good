@@ -1,0 +1,25 @@
+name: gRPC-Gateway
+description: Generates a reverse-proxy that translates JSON HTTP into gRPC using google.api.http annotations. Teams expose REST APIs from existing protobuf services without hand-writing HTTP handlers, which is useful for browsers talking to gRPC model backends.
+tagline: JSON HTTP proxy generated from gRPC services
+
+github_url: https://github.com/grpc-ecosystem/grpc-gateway
+website_url: https://grpc-ecosystem.github.io/grpc-gateway/
+docs_url: https://grpc-ecosystem.github.io/grpc-gateway/
+install_command: go install github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-grpc-gateway@latest
+
+category: Dev Tools
+tags: [grpc, rest, protobuf, api-gateway, openapi, golang, developer-tools]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Internal services often speak gRPC while browsers, mobile apps, and third-party clients
+  expect JSON over HTTP. Hand-writing both stacks duplicates proto contracts and drifts.
+  gRPC-Gateway generates a reverse proxy from the same .proto files, mapping RPCs to REST
+  paths so one schema serves both gRPC model backends and HTTP clients.
+
+use_cases:
+  - Expose a REST JSON API in front of a gRPC model-serving or feature-store backend
+  - Generate OpenAPI docs from protobuf annotations for external HTTP consumers
+  - Keep a single proto contract for internal RPC and public HTTP without dual handlers
