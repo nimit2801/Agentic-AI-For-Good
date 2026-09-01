@@ -1,0 +1,26 @@
+name: Miller
+description: Command-line tool for name-indexed data such as CSV, TSV, and tabular JSON, with awk-like verbs for cut, join, sort, and stats. Data and ML pipelines reshape evaluation tables without loading pandas.
+tagline: awk, sed, cut, join, and sort for CSV and tabular JSON
+
+github_url: https://github.com/johnkerl/miller
+website_url: https://miller.readthedocs.io
+docs_url: https://miller.readthedocs.io
+install_command: brew install miller
+
+category: Data
+tags: [csv, tsv, cli, data-wrangling, golang]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Eval sets and feature dumps arrive as huge CSV or JSON lines that are painful
+  to inspect in pandas and awkward in awk. Miller streams name-indexed records
+  so you can filter, join, and summarize tables in a pipeline without a Python
+  process or loading the file into memory.
+
+use_cases:
+  - Filter and summarize LLM eval CSVs in CI without a pandas script
+  - Join prediction TSV with ground-truth CSV by a named key
+  - Convert nested JSON logs into flat tables for a metrics dashboard
+  - Compute group-by stats on streaming feature dumps from a training job

@@ -1,0 +1,26 @@
+name: tokei
+description: Fast code statistics tool written in Rust that counts lines, comments, and blanks across hundreds of languages. AI teams use it to size repos, ignore generated files, and report language mix in CI.
+tagline: Count your code, quickly, across hundreds of languages
+
+github_url: https://github.com/XAMPPRocky/tokei
+website_url: https://github.com/XAMPPRocky/tokei
+docs_url: https://github.com/XAMPPRocky/tokei
+install_command: brew install tokei
+
+category: Dev Tools
+tags: [cli, rust, metrics, code-stats, ci]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  cloc is slow on large monorepos and generated protobuf or notebook dumps
+  inflate line counts. tokei walks trees quickly, respects gitignore, and
+  reports per-language totals so reviews and dashboards reflect real source
+  instead of vendored noise.
+
+use_cases:
+  - Report language mix of an ML monorepo in CI without checking in cloc XML
+  - Ignore generated protobuf and notebook output when sizing a training codebase
+  - Compare lines of Python versus CUDA before a refactor of a kernel-heavy repo
+  - Feed compact JSON stats into an internal engineering dashboard
