@@ -1,0 +1,27 @@
+name: SuperDuper
+description: End-to-end open-source framework for building custom AI applications and agents on existing databases. Declarative composition with plugins for MongoDB, SQL, Snowflake, and Redis so models live next to your data.
+tagline: Build AI apps and agents on your database
+
+github_url: https://github.com/superduper-io/superduper
+website_url: https://superduper.io
+docs_url: https://superduper.io
+
+install_command: pip install superduper-framework
+
+category: Agents
+tags: [python, agents, database, mongodb, sql, declarative, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Teams often copy data out of operational databases into a separate AI stack, then
+  fight sync and deployment. SuperDuper lets you declare models, agents, and
+  vector search against MongoDB, SQL, Snowflake, or Redis so inference stays next
+  to the source of truth.
+
+use_cases:
+  - Add vector search and LLM agents on top of an existing MongoDB collection
+  - Declare a retrieval-plus-generation pipeline against SQL without a separate vector DB
+  - Run custom AI applications on Snowflake with SuperDuper plugins
+  - Build compositional agents that read and write through Redis or SQL backends
