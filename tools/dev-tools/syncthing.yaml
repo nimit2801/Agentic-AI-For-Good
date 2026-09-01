@@ -1,0 +1,22 @@
+name: Syncthing
+description: Open-source continuous file synchronization that peers devices over a private, encrypted mesh with no central server, so teams can keep datasets, checkpoints, and notebooks in sync across laptops and lab machines without a cloud drive.
+tagline: Private, peer-to-peer file sync with no cloud
+github_url: https://github.com/syncthing/syncthing
+website_url: https://syncthing.net
+docs_url: https://docs.syncthing.net
+install_command: brew install syncthing
+category: Dev Tools
+tags: [sync, p2p, files, encryption, backup, devops]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+problem_solved: |
+  ML teams share large local folders of datasets and checkpoints without
+  wanting Dropbox or a public object-store bucket. Syncthing syncs folders
+  directly between trusted devices with TLS and device IDs, so a laptop,
+  workstation, and GPU box stay in sync offline-capable and without a
+  vendor holding the files.
+use_cases:
+  - Keep a training dataset folder in sync between a laptop and a GPU workstation
+  - Replicate experiment notebooks and configs across lab machines without a shared NAS
+  - Sync model checkpoints to a home server over an encrypted peer connection
