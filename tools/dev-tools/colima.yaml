@@ -1,0 +1,25 @@
+name: Colima
+description: Container runtimes on macOS and Linux with minimal setup. Colima wraps Lima to provide Docker and containerd APIs, a docker context, volume mounts, and optional Kubernetes so you can run Compose stacks without Docker Desktop.
+tagline: Docker and Kubernetes on macOS without Docker Desktop
+
+github_url: https://github.com/abiosoft/colima
+website_url: https://colima.run
+docs_url: https://github.com/abiosoft/colima#readme
+install_command: brew install colima
+
+category: Dev Tools
+tags: [containers, docker, kubernetes, macos, lima, local-dev]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Docker Desktop on macOS is licensed for many companies and often overkill for local Compose
+  and Kubernetes work. Colima starts a Lima VM, exposes the Docker API, and optionally k3s so
+  existing docker and kubectl workflows keep working with an open-source runtime.
+
+use_cases:
+  - Run docker compose stacks for local RAG apps, vector DBs, and model servers on a Mac
+  - Point the Docker CLI at Colima instead of Docker Desktop for CI-like local builds
+  - Enable Colima Kubernetes to test Helm charts and inference services before cluster deploy
+  - Mount project directories into containers for iterative ML service development

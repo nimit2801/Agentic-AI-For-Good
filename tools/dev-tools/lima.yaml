@@ -1,0 +1,26 @@
+name: Lima
+description: Linux virtual machines on macOS, Linux, and Windows with a focus on running containers. Lima provides automatic file sharing, port forwarding, and first-class containerd support so you can develop Linux workloads without Docker Desktop.
+tagline: Linux VMs for running containers on your laptop
+
+github_url: https://github.com/lima-vm/lima
+website_url: https://lima-vm.io/
+docs_url: https://lima-vm.io/docs/
+install_command: brew install lima
+
+category: Dev Tools
+tags: [virtualization, containers, macos, linux, devops, local-dev]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AI engineers on macOS need a Linux environment for containerd, GPU-adjacent tooling, and
+  Kubernetes-like local stacks, but Docker Desktop is heavy, licensed, and opinionated.
+  Lima boots a lightweight Linux VM with shared filesystems and port forwarding so nerdctl,
+  k3s, and other Linux container tools run locally with minimal setup.
+
+use_cases:
+  - Run containerd and nerdctl on a Mac to build and test Linux container images locally
+  - Spin up a k3s or k8s cluster inside a Lima VM for local ML serving experiments
+  - Share project directories into a Linux guest so training scripts see the same files as the host
+  - Replace Docker Desktop with an Apache-2.0 VM layer that Colima and other tools already use

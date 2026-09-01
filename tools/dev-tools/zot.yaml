@@ -1,0 +1,25 @@
+name: zot
+description: Vendor-neutral OCI-native container image and artifact registry built on the OCI Distribution Specification. zot is a scale-out, production-ready registry for images, Helm charts, and ORAS artifacts without vendor lock-in to Docker Hub or cloud registries.
+tagline: Vendor-neutral OCI registry for images and artifacts
+
+github_url: https://github.com/project-zot/zot
+website_url: https://zotregistry.dev
+docs_url: https://zotregistry.dev/latest/
+
+category: Dev Tools
+tags: [oci, registry, containers, artifacts, cncf, devops]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Teams that want an OCI registry they can self-host often get a Docker Hub clone or a cloud
+  vendor product with extra APIs. zot implements only the OCI distribution spec, so images,
+  Helm charts, and ORAS artifacts store the same way in air-gapped, edge, and production
+  clusters without a vendor control plane.
+
+use_cases:
+  - Self-host an OCI registry for ML serving images and ORAS-pushed model artifacts
+  - Mirror upstream images into an air-gapped cluster that still speaks standard OCI APIs
+  - Store Helm charts and SBOMs next to container images in one spec-compliant registry
+  - Run a lightweight registry at the edge for offline model and image distribution
