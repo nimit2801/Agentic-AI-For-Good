@@ -1,0 +1,27 @@
+name: Pixi
+description: Cross-platform, conda-based package manager written in Rust. Locks system-level and Python dependencies for Linux, macOS, and Windows so ML environments stay reproducible without a heavyweight Conda install.
+tagline: Fast conda-based package manager in Rust
+
+github_url: https://github.com/prefix-dev/pixi
+website_url: https://pixi.sh
+docs_url: https://pixi.sh
+
+install_command: brew install pixi
+
+category: Dev Tools
+tags: [python, rust, conda, packaging, reproducibility, mlops, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Conda environments are slow and hard to lock across machines; pip-only locks miss
+  CUDA, MKL, and system libs. Pixi uses the conda ecosystem with a Rust CLI and
+  lockfiles so training boxes, laptops, and CI share the same Python plus native
+  stack.
+
+use_cases:
+  - Lock CUDA-aware Python training deps with conda packages and a Pixi lockfile
+  - Share a cross-platform ML environment across Linux GPU boxes and macOS laptops
+  - Replace slow conda env create in CI with a faster Pixi install
+  - Mix conda-forge scientific stacks with project-local tasks in pixi.toml

@@ -1,0 +1,27 @@
+name: Prisma
+description: Next-generation ORM for Node.js and TypeScript with a declarative schema, type-safe client, and migrations. Talks to PostgreSQL, MySQL, MariaDB, SQL Server, SQLite, MongoDB, and CockroachDB from one schema file.
+tagline: Type-safe ORM for Node.js and TypeScript
+
+github_url: https://github.com/prisma/prisma
+website_url: https://www.prisma.io
+docs_url: https://www.prisma.io/docs
+
+install_command: npm install prisma
+
+category: Dev Tools
+tags: [typescript, orm, postgres, mysql, mongodb, nodejs, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Hand-written SQL and loosely typed query builders leak schema mistakes into
+  production. Prisma generates a type-safe client from a single schema so app and
+  agent backends get compile-time checks, migrations, and multi-database support
+  without switching ORMs per engine.
+
+use_cases:
+  - Model a Postgres-backed agent memory store with a type-safe TypeScript client
+  - Migrate an ML labeling app schema across Postgres and SQLite with one Prisma schema
+  - Query MongoDB or CockroachDB from a Node inference API without a custom data layer
+  - Generate types from the database so LLM tool handlers cannot pass invalid fields

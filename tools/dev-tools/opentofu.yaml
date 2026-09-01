@@ -1,0 +1,27 @@
+name: OpenTofu
+description: Open-source fork of Terraform under the Linux Foundation. Declarative IaC for cloud GPUs, Kubernetes, and data stores with an MPL-2.0 license, so teams can provision ML infra without HashiCorp BSL constraints.
+tagline: Open-source Terraform-compatible infrastructure as code
+
+github_url: https://github.com/opentofu/opentofu
+website_url: https://opentofu.org
+docs_url: https://opentofu.org/docs/
+
+install_command: brew install opentofu
+
+category: Dev Tools
+tags: [iac, terraform, cloud, kubernetes, gpu, mlops, open-source]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  Terraform's BSL license blocks some production and redistribution uses. OpenTofu
+  keeps the Terraform workflow (plan, apply, state, providers) under MPL-2.0 so
+  teams can still declare GPU VMs, Kubernetes clusters, and object storage without
+  a proprietary IaC license.
+
+use_cases:
+  - Provision GPU training clusters with Terraform-compatible modules under MPL-2.0
+  - Plan and apply Kubernetes plus object-storage stacks for model artifacts
+  - Migrate existing Terraform roots to OpenTofu without rewriting providers
+  - Keep IaC open-source for org policies that reject BSL tooling

@@ -1,0 +1,27 @@
+name: Gradle
+description: Adaptable build automation for JVM and polyglot projects. Powers Android, Kotlin, and Java ML libraries with incremental builds, dependency management, and a Groovy or Kotlin DSL used across the JVM AI stack.
+tagline: Fast, adaptable build automation for JVM projects
+
+github_url: https://github.com/gradle/gradle
+website_url: https://gradle.org
+docs_url: https://docs.gradle.org
+
+install_command: brew install gradle
+
+category: Dev Tools
+tags: [java, kotlin, build, jvm, android, ci, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JVM ML libraries and Android inference apps need incremental, cacheable builds
+  that Maven struggles to express. Gradle's task graph, build cache, and Kotlin DSL
+  compile large multi-module Java/Kotlin projects without a full rebuild on every
+  model-SDK change.
+
+use_cases:
+  - Build and test Kotlin/Java ML SDKs with incremental Gradle tasks
+  - Cache CI builds for Android apps that embed on-device inference
+  - Manage multi-module JVM projects that wrap ONNX Runtime or TensorFlow Java
+  - Publish versioned Java libraries used by agent backends on the JVM
