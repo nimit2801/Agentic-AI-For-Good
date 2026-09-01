@@ -1,0 +1,26 @@
+name: ORAS
+description: OCI Registry As Storage CLI and libraries for pushing, pulling, and attaching artifacts to any OCI-compliant registry. ORAS treats Helm charts, SBOMs, WASM modules, and ML model files as first-class registry content alongside container images.
+tagline: Push any artifact to an OCI registry, not just container images
+
+github_url: https://github.com/oras-project/oras
+website_url: https://oras.land
+docs_url: https://oras.land/docs/
+install_command: brew install oras
+
+category: Dev Tools
+tags: [oci, containers, registry, artifacts, devops, mlops]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  ML and platform teams already run OCI registries for container images, but model weights,
+  SBOMs, Helm charts, and WASM modules live in separate stores with different auth, versioning,
+  and promotion rules. ORAS uses the OCI distribution spec so any artifact can be stored,
+  tagged, signed, and promoted through the same registry you already operate.
+
+use_cases:
+  - Push versioned ML model weights and config bundles to an OCI registry next to serving images
+  - Attach SBOMs and signatures to container images as OCI referrers for supply-chain scans
+  - Store Helm charts and WASM modules in the same registry used for Kubernetes deployments
+  - Copy artifacts between air-gapped and cloud registries without converting formats

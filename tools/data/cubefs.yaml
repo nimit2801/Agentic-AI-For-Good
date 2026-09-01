@@ -1,0 +1,25 @@
+name: CubeFS
+description: Cloud-native distributed storage that unifies file, object, and blob access for large datasets. CubeFS is a CNCF project used to store training data, model artifacts, and logs with multi-tenant isolation and POSIX plus S3-compatible APIs.
+tagline: Cloud-native file, object, and blob storage for AI data
+
+github_url: https://github.com/cubefs/cubefs
+website_url: https://cubefs.io
+docs_url: https://cubefs.io/docs/
+
+category: Data
+tags: [storage, distributed, s3, posix, cncf, datasets]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AI clusters need shared storage that can look like a POSIX filesystem to trainers and like
+  S3 to data pipelines, without running separate NAS and object stacks. CubeFS provides
+  multi-tenant file, object, and blob volumes on commodity disks so training jobs, feature
+  stores, and model registries share one scalable backend.
+
+use_cases:
+  - Mount POSIX volumes for distributed training jobs that stream large datasets from shared disks
+  - Expose S3-compatible buckets for feature stores, checkpoints, and experiment artifacts
+  - Isolate team datasets with multi-tenant volumes while sharing the same storage cluster
+  - Back Kubernetes persistent volumes for model serving and batch inference workloads
