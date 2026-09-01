@@ -1,0 +1,22 @@
+name: Dagger
+description: Portable automation engine that builds, tests, and ships any codebase as a DAG of containers. Pipelines run the same locally, in CI, or in Dagger Cloud, so ML teams stop rewriting Docker-plus-Make glue for every provider.
+tagline: Container pipelines that run the same locally and in CI
+github_url: https://github.com/dagger/dagger
+website_url: https://dagger.io
+docs_url: https://docs.dagger.io
+install_command: brew install dagger/tap/dagger
+category: Dev Tools
+tags: [ci-cd, containers, pipelines, devops, sdk]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+problem_solved: |
+  Training image builds and eval jobs are copy-pasted across GitHub Actions,
+  GitLab, and laptops, then drift. Dagger encodes those steps as typed
+  functions that run in containers, so the same pipeline builds a CUDA
+  image, runs tests, and pushes a model API whether you invoke it from a
+  laptop or from CI.
+use_cases:
+  - Encode CUDA image builds and pytest suites as Dagger functions shared by laptop and CI
+  - Replace brittle YAML CI with a typed pipeline that publishes a FastAPI inference image
+  - Run the same eval job graph locally against a GPU box and in GitHub Actions
