@@ -1,0 +1,21 @@
+name: TerminusDB
+description: "TerminusDB is a distributed collaborative database with git-like versioning for structured data. It stores JSON documents in a knowledge graph, supports GraphQL and WOQL datalog queries, time-travel, and push/pull/clone between nodes."
+tagline: Git-for-data knowledge graph database
+github_url: https://github.com/terminusdb/terminusdb
+website_url: https://terminusdb.org
+docs_url: https://terminusdb.org/docs
+category: Data
+tags: [knowledge-graph, versioning, graphql, datalog, json, collaboration]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+problem_solved: |
+  AI teams that need a system of record for evolving structured knowledge struggle with
+  databases that overwrite history and graphs that cannot be branched or reviewed like code.
+  TerminusDB versions every commit, diffs states as patches, and supports clone/push/pull so
+  schemas and documents can be reviewed, time-traveled, and reasoned over with GraphQL or
+  WOQL datalog instead of ad-hoc JSON files.
+use_cases:
+  - "Version knowledge graphs for RAG and agent memory with git-like commits, diffs, and time-travel queries"
+  - "Collaborate on schemas and JSON documents across teams using clone, push, and pull between TerminusDB nodes"
+  - "Query linked documents with GraphQL or WOQL datalog, including path queries and temporal interval reasoning"

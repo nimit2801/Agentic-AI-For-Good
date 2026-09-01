@@ -1,0 +1,21 @@
+name: Oban
+description: "Oban is a robust job processing library for Elixir backed by PostgreSQL, MySQL, or SQLite3. It provides retries, uniqueness, cron, observability, and queue isolation in the database, with optional Oban Pro for extra commercial features."
+tagline: Database-backed job processing for Elixir
+github_url: https://github.com/oban-bg/oban
+website_url: https://oban.pro
+docs_url: https://oban.hexdocs.pm
+category: Dev Tools
+tags: [elixir, background-jobs, postgresql, task-queue, workers, phoenix]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+problem_solved: |
+  Elixir and Phoenix apps need durable background jobs that survive node restarts without
+  standing up Redis or RabbitMQ just for a queue. Homegrown Task.async work is lost on crash
+  and has no uniqueness, cron, or dashboard. Oban stores jobs in PostgreSQL, MySQL, or SQLite,
+  so retries, uniqueness, scheduled work, and observability live next to application data and
+  can run inference, emails, and pipeline steps reliably on BEAM.
+use_cases:
+  - "Enqueue LLM API calls, embeddings, and report generation from Phoenix so request processes stay free"
+  - "Run cron-style model evals and data syncs with unique jobs so duplicate workers do not double-fire"
+  - "Inspect failed jobs, queue latency, and worker activity from Oban's database-backed observability"

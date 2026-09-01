@@ -1,0 +1,22 @@
+name: OpenLineage
+description: "OpenLineage is an open standard for collecting job, run, and dataset lineage metadata as pipelines execute. Integrations for Spark, Airflow, dbt, and others emit a shared event model so lineage is not reinvented per platform."
+tagline: Open standard for data lineage metadata
+github_url: https://github.com/OpenLineage/OpenLineage
+website_url: https://openlineage.io
+docs_url: https://openlineage.io/docs
+install_command: pip install openlineage-python
+category: Data
+tags: [lineage, metadata, spark, airflow, dbt, data-pipelines, lf-ai]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: |
+  Data and ML platforms each invent their own lineage model, so Spark, Airflow, and dbt jobs
+  cannot share a consistent picture of which datasets a training run consumed or produced.
+  OpenLineage defines run, job, and dataset entities plus extensible facets, with integrations
+  that emit events as jobs execute. Downstream catalogs and quality tools can then reconstruct
+  provenance for feature tables, embeddings, and model training without custom collectors.
+use_cases:
+  - "Instrument Spark, Airflow, and dbt jobs so feature tables and training datasets share one lineage event model"
+  - "Send OpenLineage events from Python pipelines with pip install openlineage-python to a Marquez or DataHub backend"
+  - "Trace which raw sources fed an embedding index or model checkpoint when a production metric drifts"
