@@ -1,0 +1,25 @@
+name: Karafka
+description: A Ruby and Rails framework for multi-threaded Kafka consumers and producers, with a web UI, ActiveJob backend, and dead-letter queues. Built on librdkafka, it processes event streams that feed feature stores and ML pipelines.
+tagline: Efficient Kafka processing for Ruby and Rails
+
+github_url: https://github.com/karafka/karafka
+website_url: https://karafka.io
+docs_url: https://karafka.io/docs
+install_command: gem install karafka
+
+category: Data
+tags: [kafka, ruby, rails, streaming, event-processing, consumers, data]
+pricing: freemium
+is_open_source: true
+license: LGPL-3.0
+
+problem_solved: |
+  Ruby teams that need Kafka often glue rdkafka bindings and thread pools by hand, then lose
+  observability and retry semantics. Karafka gives a Rails-native consumer DSL, multi-threaded
+  processing, dead-letter queues, and a web UI on top of librdkafka. Event streams that land
+  in feature stores or training pipelines can be consumed without a custom Kafka runtime.
+
+use_cases:
+  - Consume Kafka topics in Rails to persist events into feature stores or warehouses
+  - Run multi-threaded consumers for high-throughput ML event pipelines in Ruby
+  - Use the Karafka web UI to monitor lag, retries, and dead-letter queues in production
