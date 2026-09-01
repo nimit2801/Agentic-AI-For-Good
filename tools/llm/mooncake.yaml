@@ -1,0 +1,27 @@
+name: Mooncake
+description: A KVCache-centric disaggregated serving platform from Moonshot AI that shares KV cache across inference instances over RDMA, used in production by Kimi to raise throughput under SLO constraints.
+tagline: Disaggregated KV cache serving for large-scale LLM inference
+
+github_url: https://github.com/kvcache-ai/Mooncake
+website_url: https://kvcache-ai.github.io/Mooncake/
+docs_url: https://kvcache-ai.github.io/Mooncake/
+
+install_command: pip install mooncake-transfer-engine
+
+category: LLM
+tags: [llm, inference, kv-cache, rdma, vllm, sglang, serving, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Prefill and decode fight for the same GPUs, and KV cache is recomputed or copied
+  over slow paths when instances cannot share it. Mooncake splits serving around a
+  distributed KV cache store and RDMA transfer engine so vLLM and SGLang clusters
+  reuse cache across nodes and raise tokens per second without breaking latency SLOs.
+
+use_cases:
+  - Share KV cache across vLLM instances with Mooncake Store for higher throughput
+  - Move hidden states and weights over RDMA during disaggregated RL rollout and training
+  - Back SGLang P2P weight updates for trillion-parameter models without huge offline storage
+  - Deploy Kimi-style prefill/decode disaggregation on a multi-node GPU cluster

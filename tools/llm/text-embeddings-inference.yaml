@@ -1,0 +1,27 @@
+name: Text Embeddings Inference
+description: Hugging Face's high-performance server for embedding, reranker, and sequence-classification models, built in Rust with Docker and Homebrew installs and an OpenAI-compatible HTTP API.
+tagline: Blazing-fast Hugging Face text embeddings server
+
+github_url: https://github.com/huggingface/text-embeddings-inference
+website_url: https://huggingface.co/docs/text-embeddings-inference/quick_tour
+docs_url: https://huggingface.co/docs/text-embeddings-inference/quick_tour
+
+install_command: brew install text-embeddings-inference
+
+category: LLM
+tags: [embeddings, inference, huggingface, rust, reranker, rag, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Python embedding servers waste GPU cycles on framework overhead and struggle with
+  dynamic batching at production QPS. Text Embeddings Inference serves Hugging Face
+  embedding and rerank models from a Rust runtime with token streaming, CUDA and
+  Metal backends, and an OpenAI-compatible API so RAG pipelines get low-latency vectors.
+
+use_cases:
+  - Host BGE, E5, or GTE embedding models behind an OpenAI-compatible embeddings API
+  - Serve cross-encoder rerankers next to a vector database for RAG quality boosts
+  - Deploy embeddings air-gapped with Docker images when models cannot leave the network
+  - Run sequence classification or SPLADE sparse retrieval without a Python serving stack

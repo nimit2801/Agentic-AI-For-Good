@@ -1,0 +1,23 @@
+name: PowerInfer
+description: A CPU/GPU LLM inference engine that exploits activation locality so large sparse models can run fast on a single consumer GPU, with large speedups versus llama.cpp on the same hardware.
+tagline: Fast local LLM serving on a consumer GPU
+
+github_url: https://github.com/Tiiny-AI/PowerInfer
+
+category: LLM
+tags: [llm, inference, local, gpu, cpu, sparse-models, llama-cpp, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Full-precision LLM serving on a desktop GPU usually means swapping layers to CPU
+  or shrinking the model. PowerInfer uses activation locality and sparse predictors
+  to keep hot neurons on GPU and cold ones on CPU, so models far larger than VRAM
+  still generate tokens quickly on one consumer card.
+
+use_cases:
+  - Run sparse Llama and Mixtral-class models locally on a single RTX GPU without offloading the whole model
+  - Serve ReLU-sparsified checkpoints faster than llama.cpp on the same desktop hardware
+  - Prototype on-device inference for smartphones with the PowerInfer-2 stack
+  - Convert Hugging Face sparse models to PowerInfer GGUF for local chat and coding assistants
