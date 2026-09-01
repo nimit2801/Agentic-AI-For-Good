@@ -1,0 +1,25 @@
+name: Calico
+description: Cloud native networking and network security for Kubernetes. Calico provides CNI, network policy, and optional eBPF or iptables dataplanes so GPU clusters can isolate inference services and lock down east-west traffic.
+tagline: Kubernetes CNI and network policy for cluster security
+
+github_url: https://github.com/projectcalico/calico
+website_url: https://www.tigera.io/project-calico/
+docs_url: https://docs.tigera.io/calico/latest/about/
+
+category: Dev Tools
+tags: [kubernetes, cni, networking, security, network-policy, mlops, open-source]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Default Kubernetes networking is allow-all, so every pod can reach every
+  model server and vector DB. Calico is a CNI plus network-policy engine
+  (iptables or eBPF) that isolates namespaces and workloads so inference
+  APIs and training jobs only accept the traffic you explicitly allow.
+
+use_cases:
+  - Enforce NetworkPolicy so only the API gateway can reach a model-serving namespace
+  - Run Calico as the cluster CNI for GPU nodes that need stable pod networking
+  - Isolate training, feature-store, and inference namespaces on a shared cluster
+  - Use Calico eBPF dataplane for high-QPS east-west traffic without kube-proxy
