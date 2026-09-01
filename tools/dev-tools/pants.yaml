@@ -1,0 +1,25 @@
+name: Pants
+description: Fast, scalable build system for Python, JVM, Go, and shell monorepos. Pants infers dependencies, caches test and lint results, and runs only what changed so large ML codebases skip full rebuilds on every commit.
+tagline: Monorepo build system with inferred Python dependencies
+
+github_url: https://github.com/pantsbuild/pants
+website_url: https://www.pantsbuild.org
+docs_url: https://www.pantsbuild.org/stable/docs
+install_command: pip install pantsbuild.pants
+
+category: Dev Tools
+tags: [build-system, python, monorepo, caching, ci, jvm]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Make, Bazel-lite scripts, and ad hoc tox jobs do not scale when an ML repo mixes
+  Python packages, generated protobufs, and tests. Pants infers imports, sandboxes
+  runs, and caches by content so CI only re-tests what a change actually touches.
+
+use_cases:
+  - Run only the Python tests affected by a model-training code change
+  - Cache lint, format, and type-check results across local and CI workers
+  - Manage a monorepo that mixes Python training code with JVM feature services
+  - Infer third-party requirements from imports instead of hand-maintained lists

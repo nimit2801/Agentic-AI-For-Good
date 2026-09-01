@@ -1,0 +1,25 @@
+name: Youki
+description: OCI container runtime written in Rust as a memory-safe alternative to runc. Youki implements the runtime spec so containerd and Kubernetes can start training and serving containers with lower memory use and fewer memory-safety bugs in the process that creates namespaces.
+tagline: Rust OCI runtime as a runc alternative
+
+github_url: https://github.com/youki-dev/youki
+website_url: https://youki-dev.github.io/youki/
+docs_url: https://youki-dev.github.io/youki/
+
+category: Dev Tools
+tags: [oci, containers, runtime, rust, kubernetes, isolation]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  runc is C-based and is the process that creates every container on a node.
+  A memory bug there is a host-level incident. Youki is a Rust OCI runtime that
+  speaks the same spec, so you can swap the low-level engine without changing
+  Docker or Kubernetes APIs.
+
+use_cases:
+  - Replace runc with a memory-safe OCI runtime on GPU training nodes
+  - Run containerd with youki for lower-memory dense inference packing
+  - Experiment with a Rust runtime while keeping OCI config.json bundles
+  - Reduce the C attack surface of the process that creates namespaces and cgroups
