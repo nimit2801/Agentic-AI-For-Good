@@ -1,0 +1,27 @@
+name: BuildKit
+description: Concurrent, cache-efficient builder toolkit used by Docker Buildx. BuildKit parallelizes Dockerfile stages, mounts secrets, and caches layers so CUDA and Python ML images build faster in CI without leaking credentials.
+tagline: Concurrent cache-efficient container image builder
+
+github_url: https://github.com/moby/buildkit
+website_url: https://github.com/moby/buildkit
+docs_url: https://docs.docker.com/build/buildkit/
+
+install_command: brew install buildkit
+
+category: Dev Tools
+tags: [containers, docker, ci, images, cache, build, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Classic Docker builds are serial, cache poorly across CI runners, and
+  bake secrets into layers. BuildKit runs independent stages in parallel,
+  supports cache mounts and secret mounts, and is the engine behind
+  docker buildx so ML images compile faster without leaking keys.
+
+use_cases:
+  - Speed up CUDA image CI with parallel stages and registry cache
+  - Mount pip and apt caches so Python ML images rebuild without redownloading
+  - Inject Hugging Face tokens as BuildKit secrets instead of ENV layers
+  - Build multi-arch inference images with docker buildx and BuildKit

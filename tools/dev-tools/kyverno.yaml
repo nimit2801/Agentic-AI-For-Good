@@ -1,0 +1,25 @@
+name: Kyverno
+description: Kubernetes-native policy engine that validates, mutates, and generates resources with YAML policies. Kyverno blocks privileged GPU pods, injects node selectors, and generates NetworkPolicies without writing Rego.
+tagline: YAML policy as code for Kubernetes
+
+github_url: https://github.com/kyverno/kyverno
+website_url: https://kyverno.io
+docs_url: https://kyverno.io/docs/
+
+category: Dev Tools
+tags: [kubernetes, policy, security, admission, gitops, mlops, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Admission control with Rego is a specialist skill, so GPU clusters ship
+  with open privileged pods. Kyverno expresses validate, mutate, and
+  generate rules as Kubernetes YAML so platform teams can require
+  non-root inference, inject GPU nodeSelectors, and generate NetworkPolicies.
+
+use_cases:
+  - Block privileged containers on GPU nodes used for training
+  - Mutate inference Deployments to add the correct GPU nodeSelector
+  - Generate default NetworkPolicies for new ML namespaces
+  - Require resource limits on agent and vector DB workloads
