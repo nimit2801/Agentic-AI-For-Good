@@ -1,0 +1,26 @@
+name: vegeta
+description: Go HTTP load testing tool and library that attacks endpoints at a constant request rate and reports latency, success ratio, and throughput. Use it to soak test model serving APIs, embedding endpoints, and RAG gateways before production traffic arrives.
+tagline: HTTP load testing for inference APIs that is over 9000
+
+github_url: https://github.com/tsenart/vegeta
+website_url: https://github.com/tsenart/vegeta
+docs_url: https://pkg.go.dev/github.com/tsenart/vegeta/v12
+install_command: brew install vegeta
+
+category: Dev Tools
+tags: [load-testing, http, benchmarking, golang, performance, devops]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Model serving APIs look fine under a handful of curl calls and then collapse under
+  concurrent chat or embedding traffic. vegeta holds a constant request rate, records
+  latency histograms, and reports success ratios so teams can find saturation points
+  before users do.
+
+use_cases:
+  - Soak test an OpenAI-compatible inference endpoint at a fixed QPS and plot latency percentiles
+  - Compare embedding API throughput before and after a batching or cache change
+  - Load test a RAG gateway that fans out to retrieval and generation services
+  - Encode attack targets as a file so CI can regression-test API performance on every deploy

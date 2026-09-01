@@ -1,0 +1,26 @@
+name: xh
+description: Friendly, fast HTTP client written in Rust and inspired by HTTPie, with HTTP/2, downloads, and JSON highlighting. It is a drop-in HTTPie replacement for hitting inference APIs, webhooks, and local model servers from the terminal.
+tagline: Fast HTTPie-style requests from the terminal, in Rust
+
+github_url: https://github.com/ducaale/xh
+website_url: https://github.com/ducaale/xh
+docs_url: https://github.com/ducaale/xh
+install_command: brew install xh
+
+category: Dev Tools
+tags: [http, cli, rust, api, developer-tools, json]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Hitting model APIs from the shell with curl is verbose, and HTTPie is slower than
+  teams want for tight request loops. xh keeps HTTPie's readable syntax, adds HTTP/2
+  and wget-like downloads, and stays fast enough to probe local inference servers
+  during development.
+
+use_cases:
+  - POST JSON to a local vLLM or Ollama endpoint and pretty-print the streaming response
+  - Download model artifacts or OpenAPI specs with wget-compatible flags
+  - Replay webhook payloads against an agent callback URL while iterating on auth headers
+  - Alias http to xh so existing HTTPie muscle memory works on a faster binary

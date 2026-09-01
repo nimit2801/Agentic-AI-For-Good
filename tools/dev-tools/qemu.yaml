@@ -1,0 +1,27 @@
+name: QEMU
+description: Open-source machine emulator and virtualizer that runs operating systems and binaries for one architecture on another, or virtualizes guests near native speed with KVM, HVF, or WHPX. AI teams use it to test Linux stacks, emulate ARM and RISC-V boards, and reproduce CI environments without dedicated hardware.
+tagline: Emulate any machine, virtualize Linux for local AI stacks
+
+github_url: https://github.com/qemu/qemu
+website_url: https://www.qemu.org
+docs_url: https://www.qemu.org/docs/master/
+install_command: brew install qemu
+
+category: Dev Tools
+tags: [virtualization, emulator, kvm, linux, devops, local-dev]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  ML engineers need to run Linux guests, ARM or RISC-V images, and CI-like environments
+  on laptops that are not those architectures. Full cloud VMs are slow to iterate and
+  dedicated boards are scarce. QEMU emulates or virtualizes those machines locally so
+  training scripts, container runtimes, and firmware images can be tested before they
+  hit production hardware.
+
+use_cases:
+  - Boot a Linux VM on a Mac to run containerd, CUDA-adjacent tooling, or distro-specific ML packages
+  - Emulate ARM or RISC-V boards to test edge inference binaries without physical hardware
+  - Reproduce CI runner environments locally when a training image only fails on a specific kernel
+  - Snapshot and clone guests so experiments start from a known machine state
