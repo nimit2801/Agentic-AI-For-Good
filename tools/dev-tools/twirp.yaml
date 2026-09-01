@@ -1,0 +1,25 @@
+name: Twirp
+description: A simple RPC framework from Twitch that generates HTTP JSON and protobuf clients and servers from .proto service definitions. Smaller than gRPC, it uses standard HTTP and is easy to debug with curl while remaining strongly typed.
+tagline: Simple protobuf RPC over plain HTTP
+
+github_url: https://github.com/twitchtv/twirp
+website_url: https://twitchtv.github.io/twirp/docs/intro.html
+docs_url: https://twitchtv.github.io/twirp/docs/intro.html
+install_command: go install github.com/twitchtv/twirp/protoc-gen-twirp@latest
+
+category: Dev Tools
+tags: [rpc, protobuf, http, golang, microservices, codegen, developer-tools]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Full gRPC stacks bring HTTP/2, custom load balancers, and tooling that many teams do not
+  need for internal APIs. Twirp generates typed clients and servers from protobuf, then
+  speaks regular HTTP with JSON or binary protobuf. Services stay schema-first and easy
+  to call with curl, while avoiding gRPC operational complexity.
+
+use_cases:
+  - Define internal microservice APIs in protobuf and generate Go servers over HTTP
+  - Call typed RPC endpoints with curl or JSON clients during debugging
+  - Ship a smaller RPC stack than gRPC for services that only need HTTP plus protobuf

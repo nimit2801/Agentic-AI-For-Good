@@ -1,0 +1,25 @@
+name: grpcurl
+description: A command-line client for gRPC servers, analogous to curl for HTTP. It lists services via server reflection, invokes RPCs, and inspects protobuf payloads, making it the standard tool for debugging model-serving and microservice gRPC APIs.
+tagline: Like cURL, but for gRPC
+
+github_url: https://github.com/fullstorydev/grpcurl
+website_url: https://github.com/fullstorydev/grpcurl
+docs_url: https://github.com/fullstorydev/grpcurl/blob/master/README.md
+install_command: brew install grpcurl
+
+category: Dev Tools
+tags: [grpc, cli, protobuf, debugging, api, microservices, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  gRPC traffic is binary protobuf over HTTP/2, so curl and browser tools cannot inspect
+  or call it. grpcurl talks to gRPC servers from the terminal, using reflection or proto
+  files to list methods and send requests. That makes model-serving endpoints, embedding
+  APIs, and internal RPC services as easy to probe as a REST URL.
+
+use_cases:
+  - Invoke inference or embedding RPCs against a gRPC model server from the terminal
+  - List services and methods on a reflected gRPC endpoint during local debugging
+  - Script health checks and smoke tests for protobuf APIs in CI without writing a client
