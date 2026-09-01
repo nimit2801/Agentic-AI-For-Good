@@ -1,0 +1,27 @@
+name: CoreDNS
+description: Plugin-chaining DNS server used as the default cluster DNS in Kubernetes. CoreDNS answers service discovery queries and can add custom plugins so ML platforms resolve internal model, vector DB, and agent endpoints.
+tagline: Plugin-based DNS server for Kubernetes service discovery
+
+github_url: https://github.com/coredns/coredns
+website_url: https://coredns.io
+docs_url: https://coredns.io/manual/toc/
+
+install_command: brew install coredns
+
+category: Dev Tools
+tags: [dns, kubernetes, service-discovery, cncf, networking, mlops, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Containers and agents need stable names for model servers, vector DBs, and
+  internal APIs. CoreDNS is the default Kubernetes cluster DNS: a plugin
+  chain that answers Service and Pod queries and can be extended for custom
+  zones, so ML platforms do not hard-code IPs.
+
+use_cases:
+  - Resolve Kubernetes Service names for inference, embedding, and vector DB pods
+  - Add CoreDNS plugins for custom internal zones used by agent runtimes
+  - Run cluster DNS in CI kind or k3d clusters that boot ML stacks
+  - Replace a static hosts file with plugin-based DNS for local model endpoints

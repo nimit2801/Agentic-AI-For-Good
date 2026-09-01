@@ -1,0 +1,26 @@
+name: Rook
+description: Storage orchestration operator for Kubernetes. Rook deploys and manages Ceph and other storage systems as Kubernetes-native services so GPU clusters get self-healing block, object, and file storage without a separate SAN team.
+tagline: Kubernetes-native storage orchestration for Ceph
+
+github_url: https://github.com/rook/rook
+website_url: https://rook.io
+docs_url: https://rook.io/docs/rook/latest/
+
+category: Data
+tags: [kubernetes, storage, ceph, operator, object-storage, mlops, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Running Ceph by hand for training datasets and model artifacts is a
+  full-time storage job. Rook is a Kubernetes operator that deploys,
+  heals, and upgrades Ceph (and related storage) as cluster services, so
+  GPU nodes get block, object, and file storage through the same API as
+  the rest of the platform.
+
+use_cases:
+  - Deploy Ceph on Kubernetes for S3-compatible storage of datasets and checkpoints
+  - Provision block volumes for vector databases via Rook-managed Ceph RBD
+  - Give a GPU cluster POSIX file storage through Rook CephFS without a SAN
+  - Self-heal storage daemons when a Kubernetes node running Ceph OSDs fails
