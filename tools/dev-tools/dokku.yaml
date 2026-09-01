@@ -1,0 +1,21 @@
+name: Dokku
+description: Docker-powered, Heroku-like PaaS you install on your own server. Push with git to build, run, and scale web apps, model APIs, and worker processes with buildpacks or Dockerfiles and zero Kubernetes overhead.
+tagline: Git-push PaaS for apps and model APIs
+github_url: https://github.com/dokku/dokku
+website_url: https://dokku.com
+docs_url: https://dokku.com/docs/getting-started/installation/
+category: Dev Tools
+tags: [paas, docker, git, heroku, deployment, self-hosted]
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: |
+  Shipping a FastAPI model server or Next.js catalog site usually means
+  hand-rolling Docker, nginx, SSL, and process restarts. Dokku turns a
+  single VPS into a git-push PaaS. heroku-style buildpacks or a Dockerfile
+  produce a container, and plugins handle domains, Let's Encrypt, Postgres,
+  Redis, and scaling without a Kubernetes cluster.
+use_cases:
+  - Git-push a FastAPI or Flask inference API to a VPS and get HTTPS plus process restarts
+  - Host a Next.js tool catalog and a Redis-backed worker on one cheap Docker host
+  - Add Postgres and Redis plugins next to an agent backend without managing Compose by hand

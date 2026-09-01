@@ -1,0 +1,22 @@
+name: Restic
+description: Fast, encrypted backup program that deduplicates data and stores snapshots in S3, GCS, Azure, SFTP, or local disks so teams can protect model checkpoints, datasets, and experiment artifacts without paying for a proprietary backup appliance.
+tagline: Encrypted, deduplicated backups for model artifacts
+github_url: https://github.com/restic/restic
+website_url: https://restic.net
+docs_url: https://restic.readthedocs.io
+install_command: brew install restic
+category: Dev Tools
+tags: [backup, encryption, s3, devops, snapshots, storage]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+problem_solved: |
+  Training runs produce large checkpoints and datasets that are expensive to
+  recopy and easy to lose. Restic encrypts client-side, deduplicates across
+  snapshots, and writes to object storage or remote disks so ML teams can
+  keep incremental backups of models, feature stores, and configs without
+  sending plaintext artifacts to a third-party backup vendor.
+use_cases:
+  - Snapshot model checkpoints and LoRA adapters to S3 with client-side encryption
+  - Deduplicate daily backups of training datasets so only changed chunks are uploaded
+  - Restore a previous experiment workspace from a restic snapshot after a failed training run
