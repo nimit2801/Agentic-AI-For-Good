@@ -1,0 +1,27 @@
+name: Buildah
+description: Daemonless tool for building OCI container images without a Docker daemon. Buildah constructs images from Dockerfiles or scripted commits, used to bake CUDA training and inference images in CI and rootless environments.
+tagline: Daemonless OCI image builds without Docker
+
+github_url: https://github.com/containers/buildah
+website_url: https://buildah.io
+docs_url: https://github.com/containers/buildah/blob/main/docs/tutorials/01-intro.md
+
+install_command: dnf install buildah
+
+category: Dev Tools
+tags: [containers, oci, images, ci, rootless, podman, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Building images with Docker needs a privileged daemon, which CI and
+  shared GPU boxes often forbid. Buildah builds OCI images from Dockerfiles
+  or scripted container commits without a daemon, as a regular user, so
+  training and inference images can be produced in locked-down pipelines.
+
+use_cases:
+  - Build CUDA training images in CI without a Docker daemon
+  - Script layered OCI images with buildah from, commit, and config instead of a Dockerfile
+  - Produce rootless inference images on shared machines where dockerd is banned
+  - Pair with Podman to build and run the same OCI images in air-gapped ML labs

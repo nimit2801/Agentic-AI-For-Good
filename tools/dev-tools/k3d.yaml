@@ -1,0 +1,27 @@
+name: k3d
+description: Little helper that runs CNCF k3s inside Docker. Spins up multi-node Kubernetes clusters as containers so you can test Helm charts, operators, and ML serving stacks locally without a VM or cloud cluster.
+tagline: Run k3s Kubernetes clusters inside Docker
+
+github_url: https://github.com/k3d-io/k3d
+website_url: https://k3d.io
+docs_url: https://k3d.io/stable/
+
+install_command: brew install k3d
+
+category: Dev Tools
+tags: [kubernetes, k3s, docker, local, ci, mlops, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Full Kubernetes clusters are slow to provision for local iteration, and even
+  k3s still wants a VM or a dedicated node. k3d wraps k3s in Docker so you get
+  a certified Kubernetes API as containers on a laptop or CI runner, then throw
+  the cluster away when the job finishes.
+
+use_cases:
+  - Spin up a multi-node k3s cluster in Docker to test Helm charts for LLM serving
+  - Run CI jobs that apply Kubernetes manifests without a cloud account
+  - Develop operators and CRDs against a disposable local Kubernetes API
+  - Workshop GPU and agent stacks on a laptop that already has Docker

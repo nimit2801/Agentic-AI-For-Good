@@ -1,0 +1,26 @@
+name: Longhorn
+description: Cloud-native distributed block storage built on and for Kubernetes. Longhorn adds replicated persistent volumes with snapshots, backups, and a UI so GPU jobs and vector databases can keep durable disks without a SAN.
+tagline: Kubernetes-native distributed block storage
+
+github_url: https://github.com/longhorn/longhorn
+website_url: https://longhorn.io
+docs_url: https://longhorn.io/docs
+
+category: Data
+tags: [kubernetes, block-storage, persistent-volumes, storage, cncf, mlops, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  GPU jobs, vector databases, and model caches need persistent disks on
+  Kubernetes, but cloud volumes are expensive and a SAN is operationally
+  heavy. Longhorn runs replicated block storage as pods on the cluster
+  itself, with snapshots, backups to S3, and a UI, so PVs survive node
+  failure without a separate storage appliance.
+
+use_cases:
+  - Give vector databases and feature stores replicated PersistentVolumes on Kubernetes
+  - Snapshot and back up model-cache disks to S3 from a Longhorn volume
+  - Run GPU training jobs that need durable local-like block storage across nodes
+  - Recover inference stateful sets after a node dies without a SAN
