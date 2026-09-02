@@ -1,0 +1,26 @@
+name: JUnit
+description: Programmer-friendly testing framework for Java and the JVM. JUnit 5 (Jupiter) provides annotations, assertions, extensions, and parameterized tests so teams can unit-test model-serving adapters, data pipelines, and AI platform services on the JVM.
+tagline: Standard unit testing framework for Java and the JVM
+
+github_url: https://github.com/junit-team/junit-framework
+website_url: https://junit.org
+docs_url: https://docs.junit.org
+
+category: Dev Tools
+tags: [java, testing, junit, jvm, unit-tests, jupiter]
+pricing: free
+is_open_source: true
+license: EPL-2.0
+
+problem_solved: |
+  JVM services around AI products need fast, isolated tests, but ad-hoc
+  main methods and custom harnesses do not integrate with CI or IDEs.
+  JUnit 5 gives a standard engine, nested and parameterized tests, and
+  an extension model so inference clients, feature stores, and orchestration
+  code get the same automated feedback loop as any other Java service.
+
+use_cases:
+  - Unit-test Java model-serving adapters, serializers, and retry wrappers with Jupiter assertions
+  - Parameterize tests across prompt fixtures, model versions, and payload shapes
+  - Plug JUnit into Maven or Gradle CI for JVM AI platform libraries
+  - Use extensions to spin up testcontainers or mocks around vector and queue clients

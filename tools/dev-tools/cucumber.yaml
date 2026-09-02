@@ -1,0 +1,27 @@
+name: Cucumber
+description: Behavior-driven development tool that runs Gherkin feature files against step definitions. Cucumber keeps product examples in plain language so AI chat, RAG, and API behaviors stay reviewable by engineers and stakeholders.
+tagline: BDD tests from Gherkin feature files
+
+github_url: https://github.com/cucumber/cucumber-js
+website_url: https://cucumber.io
+docs_url: https://cucumber.io/docs/cucumber/
+
+category: Dev Tools
+tags: [bdd, testing, gherkin, cucumber, javascript, acceptance-tests]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: npm install @cucumber/cucumber
+
+problem_solved: |
+  Acceptance criteria for AI products live in tickets while tests live in
+  code, so behavior drifts. Cucumber runs Given/When/Then features against
+  step definitions, which keeps chat, RAG, and API examples in a shared
+  language that CI can execute and non-engineers can still read.
+
+use_cases:
+  - Express AI chat and RAG acceptance scenarios as Gherkin features that CI executes
+  - Share readable examples of model-gateway behavior with product and QA
+  - Drive HTTP and UI steps from the same feature files across JS services
+  - Keep regression coverage of streaming and tool-calling flows in versioned .feature files

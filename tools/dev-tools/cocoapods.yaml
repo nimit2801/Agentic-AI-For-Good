@@ -1,0 +1,28 @@
+name: CocoaPods
+description: Dependency manager for Swift and Objective-C Cocoa projects. CocoaPods resolves libraries into an Xcode workspace so iOS and macOS AI apps can pin on-device ML, networking, and UI SDKs with a Podfile.
+tagline: Dependency manager for Swift and Objective-C projects
+
+github_url: https://github.com/CocoaPods/CocoaPods
+website_url: https://cocoapods.org
+docs_url: https://guides.cocoapods.org
+
+category: Dev Tools
+tags: [ios, macos, swift, cocoapods, dependency-management, xcode]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: brew install cocoapods
+
+problem_solved: |
+  iOS AI apps pull Core ML wrappers, networking, and UI kits that Xcode
+  alone does not version well across a team. CocoaPods declares those
+  libraries in a Podfile, resolves versions, and generates a workspace
+  so on-device inference clients build the same graph on every laptop
+  and CI Mac.
+
+use_cases:
+  - Pin on-device ML, audio, and networking SDKs for iOS AI apps in a Podfile
+  - Share a resolved Podfile.lock so CI and developers install identical Cocoa libraries
+  - Integrate third-party camera, speech, and LLM client pods into Xcode workspaces
+  - Publish internal pods for shared mobile inference and chat UI modules
