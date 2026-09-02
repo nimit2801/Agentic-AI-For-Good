@@ -1,0 +1,25 @@
+name: FlashRank
+description: Ultra-lite, fast reranker for search and RAG pipelines. Runs SoTA listwise and pairwise reranking with LLMs and cross-encoders so retrieval stacks can reorder results without a heavy GPU service.
+tagline: Lite, super-fast reranking for search and RAG
+
+github_url: https://github.com/PrithivirajDamodaran/FlashRank
+website_url: https://github.com/PrithivirajDamodaran/FlashRank
+docs_url: https://github.com/PrithivirajDamodaran/FlashRank
+install_command: pip install FlashRank
+
+category: RAG
+tags: [python, rag, reranking, retrieval, cross-encoder, search]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  First-stage vector search returns noisy chunks that hurt RAG answer quality.
+  Heavy reranker services add GPU cost and latency. FlashRank runs SoTA
+  pairwise and listwise rerankers in a tiny Python package so pipelines can
+  reorder hits without standing up a separate model server.
+
+use_cases:
+  - Rerank vector search hits before feeding chunks to an LLM
+  - Add listwise or pairwise reranking to a RAG pipeline in a few lines
+  - Swap a GPU rerank service for a lite in-process cross-encoder

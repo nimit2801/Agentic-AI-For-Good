@@ -1,0 +1,24 @@
+name: TurboPuffer
+description: Object-storage vector and full-text search database for billion-scale embeddings. Built for cheap, fast hybrid search so RAG and semantic retrieval can scale without a memory-resident index.
+tagline: Vector and full-text search on object storage
+
+github_url: https://github.com/turbopuffer/turbopuffer-python
+website_url: https://turbopuffer.com
+docs_url: https://turbopuffer.com/docs
+install_command: pip install turbopuffer
+
+category: Vector DB
+tags: [vector-database, embeddings, hybrid-search, rag, object-storage, python]
+pricing: paid
+is_open_source: false
+
+problem_solved: |
+  In-memory vector indexes get expensive as corpora grow to billions of
+  embeddings. TurboPuffer stores vectors and full-text indexes on object
+  storage so semantic search, hybrid retrieval, and RAG can scale with
+  lower cost than memory-first vector databases.
+
+use_cases:
+  - Run billion-scale embedding search for RAG without a huge RAM cluster
+  - Combine vector and full-text search with metadata filters
+  - Back semantic search and recommendations on object storage
