@@ -1,0 +1,28 @@
+name: virtualenv
+description: Tool for creating isolated Python environments with their own site-packages, interpreter, and pip installs. virtualenv keeps project dependencies separate so AI and ML stacks do not collide across experiments, CI jobs, and production services.
+tagline: Isolated Python environments for projects and experiments
+
+github_url: https://github.com/pypa/virtualenv
+website_url: https://virtualenv.pypa.io
+docs_url: https://virtualenv.pypa.io/en/latest/
+
+category: Dev Tools
+tags: [python, virtualenv, environments, packaging, pip, pypa]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install virtualenv
+
+problem_solved: |
+  Python AI and ML projects pin conflicting CUDA, NumPy, and framework
+  versions, and a shared site-packages tree breaks experiments and CI.
+  virtualenv creates a per-project interpreter and package prefix so each
+  training job, notebook, or service installs its own deps without
+  contaminating the system Python or sibling projects.
+
+use_cases:
+  - Isolate CUDA, PyTorch, and NumPy versions per training experiment without polluting system Python
+  - Create reproducible CI environments for lint, test, and packaging jobs on ML repositories
+  - Seed Docker images and local shells with a project-specific interpreter and pip prefix
+  - Run multiple model-serving services on one host with independent dependency trees
