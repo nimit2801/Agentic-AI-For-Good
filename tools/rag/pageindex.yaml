@@ -1,0 +1,25 @@
+name: PageIndex
+description: Vectorless, reasoning-based document index that builds a tree of pages for RAG instead of chunk embeddings. Retrieve by reasoning over document structure rather than nearest-neighbor search.
+tagline: Vectorless reasoning-based document index for RAG
+
+github_url: https://github.com/VectifyAI/PageIndex
+website_url: https://pageindex.ai
+docs_url: https://docs.pageindex.ai
+install_command: pip install pageindex
+
+category: RAG
+tags: [python, rag, retrieval, documents, vectorless, reasoning, pdf]
+pricing: freemium
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Chunk-and-embed RAG loses document hierarchy and fails on long PDFs when
+  similarity search cannot follow section structure. PageIndex builds a page
+  tree and retrieves by reasoning over that tree, so answers cite the right
+  section without a vector database.
+
+use_cases:
+  - Index long PDFs as a page tree for reasoning-based retrieval
+  - Run vectorless RAG locally with your own LLM key
+  - Chat over document structure instead of nearest-neighbor chunks

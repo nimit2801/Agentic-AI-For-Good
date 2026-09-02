@@ -1,0 +1,24 @@
+name: RAPTOR
+description: Recursive abstractive processing for tree-organized retrieval. Clusters document chunks, summarizes them into a tree, and retrieves at multiple levels of abstraction for long-document RAG.
+tagline: Tree-organized retrieval with recursive summaries
+
+github_url: https://github.com/parthsarthi03/raptor
+website_url: https://arxiv.org/abs/2401.18059
+docs_url: https://github.com/parthsarthi03/raptor
+
+category: RAG
+tags: [python, rag, retrieval, summarization, tree, long-context, research]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Flat chunk retrieval misses high-level themes in long documents because
+  embeddings only see local passages. RAPTOR clusters chunks, summarizes
+  them recursively into a tree, and retrieves at multiple levels so RAG
+  can answer both detail and overview questions.
+
+use_cases:
+  - Build a summary tree over long documents for multi-level RAG
+  - Retrieve both fine-grained chunks and high-level abstracts
+  - Improve long-document QA where flat vector search loses theme
