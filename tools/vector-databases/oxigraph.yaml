@@ -1,0 +1,25 @@
+name: Oxigraph
+description: SPARQL graph database and RDF toolkit written in Rust. Store knowledge graphs, run SPARQL queries, and serve RDF over HTTP for GraphRAG and linked-data pipelines.
+tagline: Rust SPARQL graph database for RDF
+
+github_url: https://github.com/oxigraph/oxigraph
+website_url: https://github.com/oxigraph/oxigraph
+docs_url: https://docs.rs/oxigraph
+install_command: pip install oxigraph
+
+category: Vector DB
+tags: [rust, sparql, rdf, graph, knowledge-graph, graphrag]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  GraphRAG and knowledge-graph pipelines need a SPARQL store that is small
+  enough to embed or run locally. Oxigraph is a Rust RDF database with a
+  SPARQL HTTP server and Python bindings, so teams query linked data without
+  standing up a heavyweight triple store.
+
+use_cases:
+  - Serve SPARQL over HTTP for GraphRAG knowledge graphs
+  - Store RDF triples and query them from Python with pyoxigraph
+  - Embed a local SPARQL database in an agent or RAG pipeline
