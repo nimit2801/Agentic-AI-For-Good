@@ -1,0 +1,25 @@
+name: Google Test
+description: GoogleTest is Google's C++ testing and mocking framework. It provides assertions, fixtures, parameterized tests, and gMock so native inference engines, CUDA bindings, and tokenizer libraries get the same CI unit tests as application code.
+tagline: C++ testing and mocking framework from Google
+
+github_url: https://github.com/google/googletest
+website_url: https://google.github.io/googletest/
+docs_url: https://google.github.io/googletest/primer.html
+
+category: Dev Tools
+tags: [cpp, testing, googletest, gmock, unit-tests, native]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Native AI stacks (tokenizers, kernels, ONNX runtimes, llama.cpp-style
+  engines) are C++ and easy to ship without tests. GoogleTest plus gMock
+  gives assertions, death tests, and mocks that plug into CMake/CTest so
+  those libraries fail in CI instead of on a GPU box.
+
+use_cases:
+  - Unit-test C++ tokenizer, tensor, and serialization code with EXPECT macros
+  - Mock CUDA or RPC neighbors when testing inference client wrappers
+  - Parameterize numeric tests across dtypes, shapes, and model fixture files
+  - Run GoogleTest via CMake CTest in CI for native ML libraries

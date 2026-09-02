@@ -1,0 +1,25 @@
+name: Quarkus
+description: Kubernetes-native Java framework built for GraalVM and HotSpot. Quarkus boots fast and uses little RSS, so JVM teams can ship model-serving APIs, RAG services, and agent workers as containers without Spring-sized startup cost.
+tagline: Kubernetes-native Java framework for fast, small services
+
+github_url: https://github.com/quarkusio/quarkus
+website_url: https://quarkus.io
+docs_url: https://quarkus.io/guides/
+
+category: Dev Tools
+tags: [java, quarkus, kubernetes, graalvm, jvm, microservices]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JVM AI services often sit behind Kubernetes and need fast scale-to-zero,
+  but traditional Java frameworks start slowly and waste memory per replica.
+  Quarkus plus optional native images cuts startup and RSS so inference
+  gateways and RAG APIs scale like other cloud-native workers.
+
+use_cases:
+  - Serve reactive HTTP APIs in front of LLM or embedding backends on the JVM
+  - Compile a GraalVM native image for a low-memory model-gateway container
+  - Use Quarkus extensions for Kafka, REST, and OpenTelemetry around AI pipelines
+  - Run JVM agent workers on Kubernetes with fast pod startup
