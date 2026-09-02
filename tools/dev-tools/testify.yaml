@@ -1,0 +1,22 @@
+name: testify
+description: A Go testing toolkit with assertions, mocks, and suites that sits on the standard testing package. testify is the default assertion library for Go services that wrap model APIs, gRPC inference clients, and agent workers.
+tagline: Assertions, mocks, and suites for Go tests
+github_url: https://github.com/stretchr/testify
+website_url: https://pkg.go.dev/github.com/stretchr/testify
+docs_url: https://pkg.go.dev/github.com/stretchr/testify
+install_command: go get github.com/stretchr/testify
+category: Dev Tools
+tags: [go, testing, assertions, mocks, testify, unit-tests]
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: |
+  Go's testing package has no rich assertions or mocks, so AI backends end up
+  with brittle if-err boilerplate and hand-rolled doubles. testify adds require
+  and assert helpers plus mock and suite types so inference clients, tool
+  handlers, and agent workers fail fast with readable diffs in CI.
+use_cases:
+  - Assert JSON payloads and error wrapping in Go model-serving HTTP handlers
+  - Mock gRPC or HTTP neighbors when testing agent tool-call adapters
+  - Group related tests into testify suites for embedding and vector clients
+  - Require exact status codes and error strings in LLM gateway integration tests

@@ -1,0 +1,21 @@
+name: Micronaut
+description: JVM framework for microservices and serverless with compile-time DI and AOT. Micronaut starts fast and uses little memory, so Java and Kotlin teams can run inference gateways, RAG APIs, and agent workers as small containers.
+tagline: Fast, low-memory JVM framework for microservices
+github_url: https://github.com/micronaut-projects/micronaut-core
+website_url: https://micronaut.io
+docs_url: https://docs.micronaut.io
+category: Dev Tools
+tags: [java, kotlin, micronaut, jvm, microservices, graalvm, aot]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: |
+  Reflection-heavy Java frameworks start slowly and burn RAM per replica,
+  which hurts scale-to-zero for model gateways. Micronaut does DI and AOP
+  at compile time so Java and Kotlin inference APIs boot fast, fit GraalVM
+  native images, and run as small Kubernetes workers.
+use_cases:
+  - Serve HTTP APIs in front of LLM or embedding backends on Java or Kotlin
+  - Compile a GraalVM native image for a low-memory model-gateway container
+  - Run Micronaut serverless functions that wrap agent tool handlers
+  - Use Micronaut Data and HTTP clients around RAG and feature pipelines
