@@ -1,0 +1,25 @@
+name: Spock
+description: Enterprise-ready testing and specification framework for Java and Groovy. Spock uses given-when-then specs, data tables, and mocks so JVM teams can document and test model-serving APIs without a pile of JUnit boilerplate.
+tagline: BDD-style testing framework for the JVM
+
+github_url: https://github.com/spockframework/spock
+website_url: https://spockframework.org
+docs_url: https://spockframework.org/spock/docs/current/index.html
+
+category: Dev Tools
+tags: [java, groovy, testing, spock, bdd, jvm]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JUnit tests for JVM AI services rarely read as specifications, so
+  reviewers miss intended behavior. Spock given-when-then blocks, data
+  tables, and built-in mocks turn inference and agent-API cases into
+  executable specs that CI still runs.
+
+use_cases:
+  - Specify Java model-gateway behavior with given-when-then Spock tests
+  - Data-table prompt fixtures across Groovy specs for an LLM client
+  - Mock HTTP neighbors while testing agent tool-call adapters
+  - Run Spock as the JUnit engine for mixed Java and Groovy AI modules

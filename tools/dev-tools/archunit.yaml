@@ -1,0 +1,25 @@
+name: ArchUnit
+description: Java architecture test library that asserts package, class, and dependency rules in plain unit tests. ArchUnit keeps JVM AI codebases from leaking domain logic into adapters, so model gateways and agent modules stay layered as the team grows.
+tagline: Architecture tests as unit tests for Java
+
+github_url: https://github.com/TNG/ArchUnit
+website_url: https://www.archunit.org
+docs_url: https://www.archunit.org/userguide/html/userguide.html
+
+category: Dev Tools
+tags: [java, architecture, testing, archunit, jvm, static-analysis]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Layered JVM AI services rot as inference clients, webhooks, and domain
+  code start importing each other. ArchUnit encodes package and dependency
+  rules as tests so a PR fails when agent adapters leak into the core
+  instead of waiting for a review comment.
+
+use_cases:
+  - Forbid domain packages from depending on LLM SDK adapters
+  - Keep agent webhook controllers out of the core inference module
+  - Enforce layered rules for RAG ingest versus serving code
+  - Run ArchUnit in JUnit CI so architecture regressions fail the build

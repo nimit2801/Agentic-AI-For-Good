@@ -1,0 +1,25 @@
+name: Hamcrest
+description: Matcher library for Java tests and production code. Hamcrest combinators describe expected objects in English-like matchers so JUnit and TestNG suites for JVM AI services stay readable as payloads grow nested.
+tagline: Matcher library for declarative Java tests
+
+github_url: https://github.com/hamcrest/JavaHamcrest
+website_url: https://hamcrest.org
+docs_url: https://hamcrest.org/JavaHamcrest/tutorial
+
+category: Dev Tools
+tags: [java, testing, matchers, hamcrest, junit, jvm]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Nested JSON and collection checks in JVM AI tests become unreadable
+  boolean piles. Hamcrest matchers compose hasItem, hasProperty, and
+  equalTo so inference-client and agent-API tests state intent instead
+  of manual field walking.
+
+use_cases:
+  - Match nested fields in Java model-gateway JSON with hasProperty
+  - Combine collection matchers for batches of embedding vectors
+  - Plug Hamcrest into JUnit assertThat for agent webhook payloads
+  - Reuse custom matchers across TestNG integration suites

@@ -1,0 +1,25 @@
+name: MockK
+description: Mocking library built for Kotlin. MockK supports coroutines, extension functions, and relaxed mocks so Kotlin AI clients, agent workers, and Android apps can unit-test inference adapters without Java Mockito friction.
+tagline: Kotlin-first mocking library
+
+github_url: https://github.com/mockk/mockk
+website_url: https://mockk.io
+docs_url: https://mockk.io/documentation.html
+
+category: Dev Tools
+tags: [kotlin, testing, mocking, mockk, jvm, coroutines]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Mockito does not map cleanly onto Kotlin coroutines, objects, or
+  extension functions, so tests for JVM AI clients stay brittle. MockK
+  mocks those Kotlin constructs so inference wrappers and agent workers
+  can isolate HTTP and gRPC neighbors in unit tests.
+
+use_cases:
+  - Mock coroutine LLM clients when unit-testing Kotlin agent workers
+  - Relaxed-mock Android or KMP UI layers that call embedding APIs
+  - Stub extension functions around vector-store helpers in Kotest specs
+  - Verify tool-call adapters without hitting a live model gateway
