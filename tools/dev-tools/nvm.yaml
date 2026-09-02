@@ -1,0 +1,26 @@
+name: nvm
+description: Node Version Manager, a POSIX shell script that installs and switches multiple Node.js versions per user. ML and frontend teams pin Node for Next.js AI apps, MCP servers, and JS SDKs without fighting a single system-wide install.
+tagline: Per-user Node.js version manager for POSIX shells
+
+github_url: https://github.com/nvm-sh/nvm
+website_url: https://github.com/nvm-sh/nvm
+docs_url: https://github.com/nvm-sh/nvm#installing-and-updating
+install_command: brew install nvm
+
+category: Dev Tools
+tags: [node, javascript, version-manager, shell, devops]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  AI web apps, MCP servers, and JS SDKs pin different Node versions, and a
+  single system Node breaks CI and laptops. nvm installs isolated Node and
+  npm trees per user so each project uses the version in .nvmrc without
+  sudo or containers.
+
+use_cases:
+  - Pin Node versions for Next.js AI dashboards via .nvmrc
+  - Switch Node quickly when testing MCP servers across LTS lines
+  - Install Node in CI images without baking a single global version
+  - Keep per-project npm global CLIs off the system Node

@@ -1,0 +1,25 @@
+name: Catch2
+description: Modern C++ test framework for unit tests, TDD, and BDD. Catch2 uses a header-friendly design, sections, and matchers so native inference, tokenizer, and CUDA-wrapper libraries get readable tests without a heavy xUnit setup.
+tagline: Modern C++ unit-test framework for TDD and BDD
+
+github_url: https://github.com/catchorg/Catch2
+website_url: https://github.com/catchorg/Catch2
+docs_url: https://github.com/catchorg/Catch2/blob/devel/docs/Readme.md
+
+category: Dev Tools
+tags: [cpp, testing, tdd, bdd, native, unit-tests]
+pricing: free
+is_open_source: true
+license: BSL-1.0
+
+problem_solved: |
+  Native ML libraries need tests that stay close to the code, but older C++
+  frameworks are verbose and painful to bootstrap. Catch2 lets you write
+  TEST_CASE and SECTION blocks with string names and matchers so kernels,
+  parsers, and FFI shims fail in CI with readable output.
+
+use_cases:
+  - Unit-test C++ tokenizers, GGML-style kernels, and serialization helpers
+  - Use sections to share setup across numeric edge cases and dtypes
+  - Generate JUnit XML from Catch2 for native ML library CI
+  - BDD-style REQUIRE assertions in headers of a small inference SDK

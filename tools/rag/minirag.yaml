@@ -1,0 +1,26 @@
+name: MiniRAG
+description: RAG framework from HKUDS that targets small, open-source language models. MiniRAG simplifies heterogeneous graph indexing and retrieval so on-device or edge RAG works without a large cloud LLM as the only reasoner.
+tagline: Simpler RAG for small and open-source language models
+
+github_url: https://github.com/HKUDS/MiniRAG
+website_url: https://arxiv.org/abs/2501.06713
+docs_url: https://github.com/HKUDS/MiniRAG
+install_command: pip install minirag-hku
+
+category: RAG
+tags: [rag, retrieval, small-models, graph, python, edge]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Most RAG stacks assume a large cloud LLM to stitch retrieved chunks.
+  On-device and edge apps cannot afford that. MiniRAG designs indexing and
+  retrieval for small open models so heterogeneous knowledge still answers
+  questions without a 70B-class reasoner.
+
+use_cases:
+  - Run RAG on a small open model for a private or on-device assistant
+  - Index heterogeneous notes and docs when GraphRAG-scale models are too heavy
+  - Prototype edge retrieval before promoting a corpus to a larger RAG stack
+  - Compare small-model RAG quality against LightRAG-style baselines
