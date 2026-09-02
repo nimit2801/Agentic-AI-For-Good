@@ -1,0 +1,22 @@
+name: Pest
+description: Elegant PHP testing framework with an expressive API, architecture tests, and first-class parallel runs. Pest wraps PHPUnit so Laravel and Symfony apps that call LLMs, webhooks, and RAG backends get readable tests without boilerplate.
+tagline: Elegant testing framework for PHP
+github_url: https://github.com/pestphp/pest
+website_url: https://pestphp.com
+docs_url: https://pestphp.com/docs
+install_command: composer require pestphp/pest --dev --with-all-dependencies
+category: Dev Tools
+tags: [php, testing, pest, phpunit, laravel, unit-tests]
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: |
+  PHPUnit tests for PHP AI backends are verbose, so teams skip coverage on
+  webhook and inference wrappers. Pest keeps PHPUnit under the hood but uses
+  a describe-it API, expectations, and parallel runs so Laravel LLM features
+  fail the PR with readable output instead of production incidents.
+use_cases:
+  - Write expectation-style tests for Laravel jobs that call OpenAI or embeddings
+  - Architecture-test that agent controllers stay thin and stay in the right layer
+  - Run PHP test suites in parallel in CI for RAG and webhook backends
+  - Snapshot JSON responses from PHP model-gateway routes

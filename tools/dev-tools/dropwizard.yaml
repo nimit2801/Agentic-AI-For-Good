@@ -1,0 +1,21 @@
+name: Dropwizard
+description: Opinionated Java library for production REST services. Dropwizard bundles Jetty, Jersey, Jackson, Metrics, and validation so JVM teams can ship model-serving APIs and agent backends with logging, health checks, and config out of the box.
+tagline: Production-ready REST services on the JVM
+github_url: https://github.com/dropwizard/dropwizard
+website_url: https://www.dropwizard.io
+docs_url: https://www.dropwizard.io/en/stable/getting-started.html
+category: Dev Tools
+tags: [java, dropwizard, rest, jvm, microservices, jetty, jersey]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: |
+  JVM teams wrapping LLMs still assemble Jetty, JSON, metrics, and YAML
+  config by hand. Dropwizard packages those into one service so inference
+  APIs and agent workers get health checks, structured logs, and validation
+  without a custom framework.
+use_cases:
+  - Serve Jersey REST APIs in front of LLM or embedding backends on the JVM
+  - Expose Dropwizard Metrics and health checks for a Java model gateway
+  - Validate YAML config for agent workers before they start
+  - Package a RAG or feature-store adapter as a Dropwizard application

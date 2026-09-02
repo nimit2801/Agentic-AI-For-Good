@@ -1,0 +1,21 @@
+name: OWASP ZAP
+description: Open-source web application security scanner from the OWASP and Checkmarx community. ZAP intercepts HTTP, spiders apps, and runs active and passive scans so AI-powered web UIs, agent APIs, and model gateways get DAST coverage before production.
+tagline: Open-source DAST scanner for web apps and APIs
+github_url: https://github.com/zaproxy/zaproxy
+website_url: https://www.zaproxy.org
+docs_url: https://www.zaproxy.org/docs/
+category: Dev Tools
+tags: [security, dast, owasp, zap, scanning, api, web]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: |
+  LLM chat UIs and agent APIs ship XSS, injection, and auth gaps that unit
+  tests never hit. OWASP ZAP proxies traffic, crawls the surface, and runs
+  active plus passive rules so prompt endpoints and tool webhooks get DAST
+  findings in CI before they reach users.
+use_cases:
+  - Spider and actively scan a chat or agent web UI for XSS and injection
+  - Proxy OpenAPI model-gateway traffic and run ZAP API scan in CI
+  - Baseline-scan staging RAG dashboards for missing headers and CSRF
+  - Intercept browser sessions to find auth issues on AI admin consoles
