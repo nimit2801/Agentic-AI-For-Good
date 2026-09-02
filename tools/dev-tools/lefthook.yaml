@@ -1,0 +1,26 @@
+name: lefthook
+description: Fast Git hooks manager that works with any language or package manager. Lefthook runs lint, tests, and secret scans in parallel on commit and push so AI repos keep formatters and eval smoke tests in git instead of tribal wiki steps.
+tagline: Fast, language-agnostic Git hooks manager
+
+github_url: https://github.com/evilmartians/lefthook
+website_url: https://lefthook.dev
+docs_url: https://lefthook.dev/configuration/
+install_command: npm install lefthook
+
+category: Dev Tools
+tags: [git, hooks, lint, ci, javascript, go]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Pre-commit checks for Python formatters, YAML catalogs, and secret scans
+  are easy to skip when each language has its own hook tool. Lefthook is a
+  single config that runs mixed commands in parallel so a polyglot AI repo
+  enforces the same gates locally as CI.
+
+use_cases:
+  - Run ruff, yaml validation, and tests on pre-commit in a mixed AI monorepo
+  - Block commits that fail secret scanning before they hit the remote
+  - Share a Lefthook config across Python training and JS dashboard packages
+  - Speed local hooks with parallel jobs instead of serial bash scripts
