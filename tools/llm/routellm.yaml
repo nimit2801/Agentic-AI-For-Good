@@ -1,0 +1,25 @@
+name: RouteLLM
+description: Framework for serving and evaluating LLM routers so cheaper models handle easy prompts and stronger models handle hard ones. Cut inference cost without a large drop in response quality.
+tagline: Route prompts to the right LLM to cut cost
+
+github_url: https://github.com/lm-sys/RouteLLM
+website_url: https://github.com/lm-sys/RouteLLM
+docs_url: https://github.com/lm-sys/RouteLLM
+install_command: pip install routellm
+
+category: LLM
+tags: [python, llm, routing, cost, inference, serving]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Sending every prompt to the strongest model wastes money on easy tasks.
+  RouteLLM serves and evaluates routers that send simple queries to cheaper
+  models and hard ones to frontier models, so teams cut LLM spend without
+  a large quality drop.
+
+use_cases:
+  - Route chat traffic between a cheap model and a frontier model
+  - Evaluate LLM routers on quality versus cost before production
+  - Serve a router in front of multiple OpenAI-compatible endpoints
