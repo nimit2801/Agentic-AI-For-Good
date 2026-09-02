@@ -1,0 +1,25 @@
+name: Axum
+description: HTTP routing and request-handling library for Rust built on Tokio and Tower. Teams use it to serve LLM APIs, embedding endpoints, and agent webhooks as typed, modular Rust services without a heavyweight framework.
+tagline: Ergonomic Rust web framework for typed HTTP APIs
+
+github_url: https://github.com/tokio-rs/axum
+website_url: https://github.com/tokio-rs/axum
+docs_url: https://docs.rs/axum
+install_command: cargo add axum
+
+category: Dev Tools
+tags: [rust, web-framework, tokio, tower, http, api, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Serving LLM inference, embeddings, and agent webhooks in Rust often means
+  assembling Tokio, hyper, and Tower by hand. Axum sits on that stack with
+  extractors, typed routing, and middleware so teams ship production HTTP
+  services without a heavyweight framework or untyped request handling.
+
+use_cases:
+  - Serve a typed Rust LLM or embedding HTTP API on Tokio
+  - Expose agent webhook and tool-calling endpoints with Tower middleware
+  - Build low-latency inference gateways that share extractors and routers
