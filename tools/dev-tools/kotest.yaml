@@ -1,0 +1,25 @@
+name: Kotest
+description: Kotlin test framework with assertions, property testing, and data-driven tests. Kotest runs on JUnit and multiplatform targets so JVM AI services, Kotlin clients, and Android apps around model APIs get expressive tests without Java-only JUnit style.
+tagline: Powerful test framework for Kotlin
+
+github_url: https://github.com/kotest/kotest
+website_url: https://kotest.io
+docs_url: https://kotest.io/docs/quickstart
+
+category: Dev Tools
+tags: [kotlin, testing, kotest, junit, property-testing, jvm]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Kotlin AI backends still need assertions and property tests, but JUnit
+  APIs feel Java-first and skip generators. Kotest adds matchers, property
+  testing, and data-driven specs so inference clients and agent workers on
+  the JVM fail with readable Kotlin-native output in CI.
+
+use_cases:
+  - Write spec-style tests for Kotlin wrappers around LLM and embedding APIs
+  - Property-test serializers for prompt payloads and tool-call JSON
+  - Data-drive tests across model versions and fixture prompts
+  - Run Kotest on JVM CI for Android or KMP apps that call inference backends
