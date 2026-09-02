@@ -1,0 +1,25 @@
+name: Fastify
+description: Fast, low-overhead Node.js web framework with a plugin architecture and JSON schema validation. Used to serve LLM APIs, embedding gateways, and agent webhooks with lower latency than Express.
+tagline: Fast and low overhead web framework for Node.js
+
+github_url: https://github.com/fastify/fastify
+website_url: https://www.fastify.dev
+docs_url: https://fastify.dev/docs/latest/
+install_command: npm install fastify
+
+category: Dev Tools
+tags: [javascript, typescript, nodejs, web-framework, api, plugins, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Express is easy but slow and loosely typed for high-QPS LLM gateways.
+  Fastify adds schema-based validation, a plugin system, and lower overhead
+  so Node teams serve inference APIs, embedding endpoints, and agent
+  webhooks with better latency and safer request handling.
+
+use_cases:
+  - Serve a Node.js LLM or embedding HTTP API with JSON schema validation
+  - Build an agent webhook gateway with Fastify plugins and hooks
+  - Replace Express on high-QPS inference proxies to cut overhead

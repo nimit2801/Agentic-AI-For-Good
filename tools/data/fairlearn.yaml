@@ -1,0 +1,25 @@
+name: Fairlearn
+description: A Python library to assess and mitigate fairness issues in machine learning models. It measures group disparities, applies mitigation algorithms, and reports fairness metrics so production ML systems can be audited before they harm users.
+tagline: Assess and mitigate ML fairness issues
+
+github_url: https://github.com/fairlearn/fairlearn
+website_url: https://fairlearn.org
+docs_url: https://fairlearn.org/main/user_guide/
+install_command: pip install fairlearn
+
+category: Data
+tags: [python, fairness, responsible-ai, metrics, mitigation, machine-learning]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Production models can treat groups differently even when accuracy looks
+  fine. Fairlearn measures disparity with group fairness metrics, applies
+  mitigation algorithms at train or post-process time, and produces reports
+  so teams can audit models before they ship harmful decisions.
+
+use_cases:
+  - Measure group fairness metrics on a classification or ranking model
+  - Apply reduction or post-processing mitigations to reduce disparity
+  - Generate fairness reports for model review and compliance workflows
