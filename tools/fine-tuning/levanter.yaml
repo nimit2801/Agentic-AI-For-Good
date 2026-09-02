@@ -1,0 +1,25 @@
+name: Levanter
+description: JAX framework for training LLMs and foundation models with named tensors. Built for legible, scalable, bitwise-reproducible training on GPUs and TPUs, with Hugging Face import and export.
+tagline: Legible, scalable JAX training for foundation models
+
+github_url: https://github.com/marin-community/levanter
+website_url: https://levanter.readthedocs.io/en/latest/
+docs_url: https://levanter.readthedocs.io/en/latest/
+install_command: pip install levanter
+
+category: Fine-tuning
+tags: [python, jax, llm, tpu, gpu, training, named-tensors]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Large-scale JAX training code is hard to read and easy to make
+  non-reproducible after preemption. Levanter uses named tensors for
+  legible model code, distributed FSDP/tensor parallel training, and
+  bitwise-deterministic resumes so foundation-model runs stay reproducible.
+
+use_cases:
+  - Train or fine-tune an LLM on TPUs or GPUs with JAX
+  - Import and export Hugging Face checkpoints during JAX training
+  - Resume preempted foundation-model jobs with deterministic checkpoints

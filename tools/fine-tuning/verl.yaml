@@ -1,0 +1,25 @@
+name: verl
+description: Flexible RL post-training framework for LLMs (HybridFlow). Run PPO, GRPO, and related recipes at scale with vLLM or SGLang rollouts so teams can align models without a custom RL stack.
+tagline: RL post-training framework for LLMs
+
+github_url: https://github.com/verl-project/verl
+website_url: https://verl-project.github.io
+docs_url: https://verl.readthedocs.io
+install_command: pip install verl
+
+category: Fine-tuning
+tags: [python, rlhf, ppo, grpo, post-training, llm, vllm]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  RL post-training for LLMs usually means stitching trainers, rollouts, and
+  GPU schedulers by hand. verl (HybridFlow) is a flexible RL framework with
+  production recipes for PPO, GRPO, and more, so teams align models at scale
+  without building a custom RL infrastructure.
+
+use_cases:
+  - Run PPO or GRPO post-training on an open LLM with vLLM rollouts
+  - Scale RLHF jobs across GPUs without a custom trainer
+  - Reproduce HybridFlow recipes for alignment and reasoning models
