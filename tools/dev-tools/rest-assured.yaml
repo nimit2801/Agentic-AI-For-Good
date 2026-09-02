@@ -1,0 +1,20 @@
+name: Rest Assured
+description: "Java DSL for testing REST services with a given-when-then fluent API. Validates JSON and XML bodies, headers, cookies, and authentication without the boilerplate of raw Java HTTP clients."
+tagline: "Fluent Java DSL for testing REST APIs"
+github_url: https://github.com/rest-assured/rest-assured
+docs_url: https://github.com/rest-assured/rest-assured/wiki/Usage
+category: Dev Tools
+tags:
+  - java
+  - testing
+  - rest
+  - api
+  - json
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Java teams testing REST APIs usually assemble HttpClient, JSON parsers, and assertion libraries by hand, which makes request setup and response validation verbose. REST Assured provides a Groovy-inspired given-when-then DSL so status codes, JSONPath, XML, headers, and auth can be asserted in a few readable lines."
+use_cases:
+  - "Write JUnit tests that GET or POST an endpoint and assert JSONPath fields, status codes, and headers in one fluent chain"
+  - "Validate XML or JSON REST responses with XPath and JsonPath matchers without a separate parser setup"
+  - "Test authenticated APIs using built-in basic, digest, OAuth, and certificate auth helpers in Java integration suites"
