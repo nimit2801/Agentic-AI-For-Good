@@ -1,0 +1,23 @@
+name: MSW
+description: "Industry-standard API mocking for JavaScript. Intercepts REST and GraphQL at the network layer via a Service Worker in the browser and a request interceptor in Node.js, so tests and local apps hit realistic APIs without a live backend."
+tagline: "API mocking at the network layer for browser and Node.js"
+github_url: https://github.com/mswjs/msw
+website_url: https://mswjs.io
+docs_url: https://mswjs.io/docs
+install_command: npm install msw --save-dev
+category: Dev Tools
+tags:
+  - javascript
+  - typescript
+  - testing
+  - mocking
+  - rest
+  - graphql
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "Frontend and Node tests that hit real backends are slow, flaky, and hard to run offline. Stubbing fetch or axios inside the app diverges from production networking. MSW intercepts HTTP at the network boundary, so the same handlers work in the browser, Node, Storybook, and CI without changing application code."
+use_cases:
+  - "Mock REST and GraphQL endpoints in Vitest or Jest so component and integration tests run without a live API"
+  - "Run a local frontend against MSW handlers during development when the real backend is unavailable or incomplete"
+  - "Share the same request handlers between Storybook, Playwright, and unit tests so mocked API contracts stay consistent"

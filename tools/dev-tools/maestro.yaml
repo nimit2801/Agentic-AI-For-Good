@@ -1,0 +1,24 @@
+name: Maestro
+description: "YAML-based end-to-end UI automation for mobile and web. Flows are interpreted, not compiled, so tests stay readable and iterate fast across Android, iOS, and web without brittle, compiled test code."
+tagline: "Painless E2E automation for mobile and web"
+github_url: https://github.com/mobile-dev-inc/Maestro
+website_url: https://maestro.dev
+docs_url: https://docs.maestro.dev
+install_command: |
+  curl -fsSL "https://get.maestro.mobile.dev" | bash
+category: Dev Tools
+tags:
+  - mobile
+  - testing
+  - e2e
+  - android
+  - ios
+  - yaml
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Mobile UI tests are slow to write and easy to break when they live in compiled Espresso, XCUITest, or Appium suites. Maestro lets teams describe user flows in YAML that runs as-is on Android, iOS, and web, so QA and engineers can iterate on E2E coverage without rebuilding a test app or fighting flaky selectors."
+use_cases:
+  - "Automate Android and iOS smoke flows (login, checkout, onboarding) from YAML files in CI without compiling Espresso or XCUITest suites"
+  - "Run the same Maestro flow against a mobile app and its web counterpart to catch platform-specific UI regressions before release"
+  - "Give QA and product teams a readable YAML flow they can edit without writing Java, Kotlin, or Swift test code"
