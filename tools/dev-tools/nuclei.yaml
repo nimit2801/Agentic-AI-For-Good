@@ -1,0 +1,26 @@
+name: Nuclei
+description: Fast, template-driven vulnerability scanner. Nuclei runs YAML templates for CVEs, misconfigurations, and exposures so teams can check AI gateways, admin panels, and cloud endpoints the same way they scan the rest of the stack.
+tagline: YAML-template vulnerability scanner for apps and APIs
+
+github_url: https://github.com/projectdiscovery/nuclei
+website_url: https://docs.projectdiscovery.io/tools/nuclei
+docs_url: https://docs.projectdiscovery.io/tools/nuclei/overview
+install_command: brew install nuclei
+
+category: Dev Tools
+tags: [security, scanner, cve, yaml, devops, pentest]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  AI products add extra HTTP surfaces (playgrounds, admin UIs, webhook
+  receivers) that classic app scanners miss or are too slow to run in CI.
+  Nuclei runs community YAML templates against those endpoints so CVE and
+  misconfig checks land in the same pipeline as unit tests.
+
+use_cases:
+  - Scan staging inference APIs and playgrounds for known CVEs before release
+  - Check cloud and Kubernetes exposures on GPU clusters with community templates
+  - Run a Nuclei job in CI against preview URLs for agent and RAG services
+  - Author custom YAML templates for auth bypasses unique to an AI admin panel
