@@ -1,0 +1,27 @@
+name: pyenv
+description: Simple Python version manager that installs multiple CPython, PyPy, and other interpreters side by side and switches them per user, shell, or project. pyenv keeps ML stacks on the exact Python they were trained and tested against.
+tagline: Per-project Python version management
+
+github_url: https://github.com/pyenv/pyenv
+docs_url: https://github.com/pyenv/pyenv#installation
+
+category: Dev Tools
+tags: [python, version-manager, pyenv, environments, cpython, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: brew install pyenv
+
+problem_solved: |
+  AI and ML projects pin a Python version that system packages and other
+  repos do not share, so a single global interpreter breaks training jobs
+  and CI. pyenv installs many interpreters into an isolated prefix and
+  switches by user, shell, or .python-version file so each experiment and
+  service runs the exact CPython it was validated on.
+
+use_cases:
+  - Install and switch CPython versions per ML repo with a .python-version file
+  - Keep training, notebook, and serving environments on the interpreter they were tested against
+  - Build isolated Pythons for CUDA and scientific stacks without replacing system Python
+  - Standardize CI images on a pyenv-managed interpreter matching local development

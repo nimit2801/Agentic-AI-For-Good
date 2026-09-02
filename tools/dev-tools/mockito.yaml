@@ -1,0 +1,26 @@
+name: Mockito
+description: The most widely used Java mocking framework for unit tests. Mockito creates test doubles for collaborators so teams can isolate JVM services, model-serving adapters, and data clients without standing up real backends.
+tagline: Java mocking framework for isolated unit tests
+
+github_url: https://github.com/mockito/mockito
+website_url: https://site.mockito.org
+docs_url: https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html
+
+category: Dev Tools
+tags: [java, testing, mocking, unit-tests, jvm, mockito]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  JVM services around AI products talk to model APIs, vector stores, and
+  queues, and unit tests that hit those systems are slow and flaky. Mockito
+  generates mocks and spies with a fluent API so tests assert how adapters
+  call inference clients and feature stores without requiring live
+  infrastructure.
+
+use_cases:
+  - Unit-test Java inference adapters by mocking HTTP and gRPC model clients
+  - Isolate feature-store and database DAOs in JVM ML platform services
+  - Verify retry and timeout behavior around LLM APIs with stubbed failures
+  - Speed CI for Spring and Micronaut AI backends by replacing external collaborators

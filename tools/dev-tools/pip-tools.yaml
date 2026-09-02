@@ -1,0 +1,28 @@
+name: pip-tools
+description: A set of command-line tools that compile loose Python requirements into hashed, pinned lock files and sync the environment to match. pip-tools keeps AI project dependencies reproducible without switching package managers.
+tagline: Pin and sync Python dependencies with pip-compile
+
+github_url: https://github.com/jazzband/pip-tools
+website_url: https://pip-tools.readthedocs.io
+docs_url: https://pip-tools.readthedocs.io/en/latest/
+
+category: Dev Tools
+tags: [python, pip, lockfile, dependencies, packaging, jazzband]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+install_command: pip install pip-tools
+
+problem_solved: |
+  pip install of unpinned requirements.txt files drifts across machines and
+  CI, which breaks ML training and inference in subtle ways. pip-tools
+  compiles a high-level requirements.in into a fully pinned, hashed
+  requirements.txt and syncs the environment so every CUDA, NumPy, and
+  framework version matches what was reviewed in Git.
+
+use_cases:
+  - Compile requirements.in into hashed lock files for training and serving images
+  - Sync a virtualenv to the lock file so CI and laptops install identical ML stacks
+  - Keep CUDA, PyTorch, and data-library pins reviewable in Git without switching to Poetry
+  - Refresh only selected packages while leaving the rest of an AI dependency tree pinned

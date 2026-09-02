@@ -1,0 +1,28 @@
+name: Artillery
+description: Node.js load testing platform for HTTP, GraphQL, WebSocket, and Playwright scenarios. Artillery describes tests in YAML or TypeScript, runs locally or distributed, and reports latency and error rates for production-grade API and browser load.
+tagline: Node.js load testing for APIs, GraphQL, and browsers
+
+github_url: https://github.com/artilleryio/artillery
+website_url: https://www.artillery.io
+docs_url: https://www.artillery.io/docs
+
+category: Dev Tools
+tags: [load-testing, nodejs, http, graphql, websocket, playwright]
+pricing: freemium
+is_open_source: true
+license: MPL-2.0
+
+install_command: npm install -g artillery
+
+problem_solved: |
+  JavaScript teams shipping AI chat UIs and GraphQL gateways need load tests
+  that speak HTTP, WebSocket, and real browsers, without switching to Java
+  tools. Artillery lets them write YAML or TypeScript scenarios, reuse any
+  Node module, and optionally drive Playwright so streaming LLM UIs and APIs
+  get the same production-grade load profile.
+
+use_cases:
+  - Load-test LLM HTTP and GraphQL APIs with YAML or TypeScript virtual-user scenarios
+  - Drive WebSocket streaming chat backends and measure latency under concurrent connections
+  - Run Playwright-based browser load against AI product UIs and dashboards
+  - Distribute tests across workers to simulate production traffic on model-serving stacks
