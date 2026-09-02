@@ -1,0 +1,25 @@
+name: Detekt
+description: Static analysis for Kotlin with complexity, style, and potential-bug rules. Detekt plugs into Gradle and CI so Kotlin AI clients, Android apps, and KMP modules around model APIs stay consistent before merge.
+tagline: Static code analysis for Kotlin
+
+github_url: https://github.com/detekt/detekt
+website_url: https://detekt.dev
+docs_url: https://detekt.dev/docs/intro
+install_command: brew install detekt
+
+category: Dev Tools
+tags: [kotlin, lint, static-analysis, detekt, gradle, code-quality]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Kotlin AI codebases accumulate complexity and style drift that compilers
+  do not catch. Detekt runs rule sets in Gradle and CI so inference clients
+  and agent workers fail the PR on smells instead of a later review.
+
+use_cases:
+  - Lint Kotlin LLM client modules in Gradle CI with Detekt rule sets
+  - Fail PRs on complexity spikes in agent orchestration code
+  - Format-adjacent style checks for Android apps that call embeddings
+  - Baseline existing issues then ratchet quality on new Kotlin AI code
