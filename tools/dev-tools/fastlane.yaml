@@ -1,0 +1,28 @@
+name: Fastlane
+description: Automation toolkit for building, signing, and releasing iOS and Android apps. Fastlane replaces click-ops in App Store Connect and Play Console with lanes for screenshots, code signing, beta, and store upload so mobile AI apps ship from CI.
+tagline: Automate iOS and Android build and release lanes
+
+github_url: https://github.com/fastlane/fastlane
+website_url: https://fastlane.tools
+docs_url: https://docs.fastlane.tools
+
+category: Dev Tools
+tags: [mobile, ios, android, ci, release, fastlane]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: brew install fastlane
+
+problem_solved: |
+  Mobile AI apps stall on screenshots, certificates, and store uploads
+  that only one person can click. Fastlane encodes those steps as lanes
+  that run in CI, handling signing, TestFlight, Play tracks, and metadata
+  so on-device model updates and chat clients ship without a release
+  bottleneck.
+
+use_cases:
+  - Automate TestFlight and Play Console uploads for iOS and Android AI apps from CI
+  - Manage code signing and provisioning so on-device model builds are reproducible
+  - Generate screenshots and store metadata for mobile AI product releases
+  - Run beta lanes that ship camera, voice, and chat app builds to internal testers
