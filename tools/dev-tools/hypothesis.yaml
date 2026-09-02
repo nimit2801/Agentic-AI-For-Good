@@ -1,0 +1,25 @@
+name: Hypothesis
+description: Property-based testing library for Python. Generate many inputs from type hints and invariants so ML pipelines, parsers, and agent tools fail on edge cases unit tests miss.
+tagline: Property-based testing for Python
+
+github_url: https://github.com/HypothesisWorks/hypothesis
+website_url: https://hypothesis.readthedocs.io
+docs_url: https://hypothesis.readthedocs.io
+install_command: pip install hypothesis
+
+category: Dev Tools
+tags: [python, testing, property-based, pytest, fuzzing]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  Example-based unit tests miss weird inputs that break parsers, tokenizers,
+  and data pipelines. Hypothesis generates cases from properties and type
+  hints so Python ML and agent code is tested against thousands of edge
+  cases instead of a handful of fixtures.
+
+use_cases:
+  - Property-test a tokenizer or JSON parser with generated inputs
+  - Find edge cases in data cleaning before training
+  - Combine Hypothesis with pytest for agent tool argument validation

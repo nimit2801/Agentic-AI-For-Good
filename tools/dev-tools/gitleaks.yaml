@@ -1,0 +1,24 @@
+name: Gitleaks
+description: Fast secret scanner for git repos, files, and CI. Detect API keys, tokens, and credentials in history so LLM apps and agent repos do not leak keys into GitHub.
+tagline: Find secrets in git repos and CI
+
+github_url: https://github.com/gitleaks/gitleaks
+website_url: https://gitleaks.io
+docs_url: https://github.com/gitleaks/gitleaks
+install_command: brew install gitleaks
+
+category: Dev Tools
+tags: [go, secrets, security, git, ci, scanning]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  LLM apps and agent configs often commit API keys by accident, and git
+  history keeps them forever. Gitleaks scans repos, files, and CI for
+  tokens and credentials so teams catch leaks before they hit GitHub.
+
+use_cases:
+  - Scan a git repo and history for leaked API keys
+  - Add a pre-commit or CI secret scan for LLM projects
+  - Audit agent config files for hardcoded tokens
