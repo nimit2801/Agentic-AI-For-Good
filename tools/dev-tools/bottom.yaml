@@ -1,0 +1,26 @@
+name: bottom
+description: Cross-platform graphical process and system monitor in the terminal. Bottom shows CPU, memory, network, and process trees so ML engineers can watch GPU-adjacent load, runaway Python jobs, and container RSS without leaving the shell.
+tagline: Graphical process and system monitor for the terminal
+
+github_url: https://github.com/ClementTsang/bottom
+website_url: https://bottom.pages.dev
+docs_url: https://clementtsang.github.io/bottom/
+install_command: brew install bottom
+
+category: Dev Tools
+tags: [monitoring, cli, rust, processes, devops, tui]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Training and inference jobs leak memory or pin CPUs, and top/htop are
+  awkward to customize per host. Bottom gives a readable TUI for CPU,
+  memory, disks, and process search so you can catch a stuck dataloader
+  or zombie Python worker on a laptop or bastion.
+
+use_cases:
+  - Watch CPU and RSS while a local fine-tune or eval job is running
+  - Find runaway Node or Python processes on a shared GPU workstation
+  - Inspect network and disk activity during dataset downloads
+  - Use a consistent process TUI on macOS and Linux jump hosts

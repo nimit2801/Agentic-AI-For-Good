@@ -1,0 +1,26 @@
+name: PHPUnit
+description: The standard unit testing framework for PHP. PHPUnit provides assertions, mocks, and testdox output so PHP services that wrap LLM APIs, webhooks, and RAG backends get the same automated tests as the rest of a Laravel or Symfony app.
+tagline: Standard unit testing framework for PHP
+
+github_url: https://github.com/sebastianbergmann/phpunit
+website_url: https://phpunit.de
+docs_url: https://docs.phpunit.de
+install_command: composer require --dev phpunit/phpunit
+
+category: Dev Tools
+tags: [php, testing, phpunit, unit-tests, composer]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  PHP backends that sit in front of models still need isolated tests, but
+  ad-hoc scripts do not plug into Composer CI. PHPUnit is the ecosystem
+  default for assertions, doubles, and coverage so webhook handlers and
+  inference clients fail the PR instead of production.
+
+use_cases:
+  - Unit-test PHP wrappers around OpenAI, embeddings, and vector clients
+  - Mock HTTP neighbors when testing agent webhook and callback handlers
+  - Generate JUnit and coverage reports for Laravel AI feature PRs
+  - Parameterize tests across prompt fixtures stored with the PHP app
