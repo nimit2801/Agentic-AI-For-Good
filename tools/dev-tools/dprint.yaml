@@ -1,0 +1,26 @@
+name: dprint
+description: Pluggable code formatting platform written in Rust. dprint unifies TypeScript, JSON, Markdown, and TOML formatters behind one config so AI repos keep diffs clean without running a different formatter per language.
+tagline: Pluggable, configurable code formatting platform
+
+github_url: https://github.com/dprint/dprint
+website_url: https://dprint.dev
+docs_url: https://dprint.dev/overview/
+install_command: brew install dprint
+
+category: Dev Tools
+tags: [formatting, rust, cli, typescript, json, markdown]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Polyglot AI repos mix TypeScript, JSON, Markdown, and config files, so
+  teams juggle Prettier, language-specific formatters, and noisy diffs.
+  dprint is a fast Rust host with plugins and one config so every language
+  in the repo formats the same way in CI and on save.
+
+use_cases:
+  - Format TypeScript agent UIs and JSON tool schemas with one dprint config
+  - Run dprint in CI so Markdown docs and YAML catalogs stay style-clean
+  - Plug in TOML and Markdown formatters for ML experiment configs
+  - Replace slower Node formatters on large monorepos with a Rust CLI

@@ -1,0 +1,25 @@
+name: TestNG
+description: Flexible Java testing framework with annotations, groups, parallel runs, and data providers. TestNG covers more than unit tests so JVM teams can run integration suites for model-serving APIs, agent workers, and data pipelines in CI.
+tagline: Flexible testing framework for Java
+
+github_url: https://github.com/testng-team/testng
+website_url: https://testng.org
+docs_url: https://testng.org
+
+category: Dev Tools
+tags: [java, testing, testng, jvm, integration-tests, parallel]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JUnit is great for isolated units, but JVM AI platforms also need groups,
+  dependencies, and parallel integration suites. TestNG adds those knobs so
+  model-gateway, queue, and database tests can run as named groups in CI
+  without a custom runner.
+
+use_cases:
+  - Group and parallel-run Java integration tests for model-serving APIs
+  - Data-provide prompt fixtures across TestNG methods for inference clients
+  - Depend integration tests on a shared Testcontainers setup for vector DBs
+  - Produce TestNG XML reports for JVM agent-worker pipelines in CI

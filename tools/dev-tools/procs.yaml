@@ -1,0 +1,26 @@
+name: procs
+description: Modern replacement for ps written in Rust. procs adds color, tree view, and keyword search so ML engineers can find runaway Python, Node, or GPU-adjacent processes faster than scanning a raw process table.
+tagline: Modern, colorful replacement for ps
+
+github_url: https://github.com/dalance/procs
+website_url: https://github.com/dalance/procs
+docs_url: https://github.com/dalance/procs#readme
+install_command: brew install procs
+
+category: Dev Tools
+tags: [cli, rust, processes, devops, monitoring, ps]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Training and inference jobs leak workers, and classic ps output is hard
+  to scan on a busy GPU box. procs colors columns, shows process trees,
+  and filters by keyword so you can find a stuck dataloader or zombie
+  Python worker without piping through grep.
+
+use_cases:
+  - Find runaway Python training or eval processes by name on a workstation
+  - Show a process tree for a local agent runtime and its child workers
+  - Watch RSS and CPU for Node MCP servers during long tool-call sessions
+  - Replace ps on macOS and Linux jump hosts with a readable table
