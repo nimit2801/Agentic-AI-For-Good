@@ -1,0 +1,25 @@
+name: AssertJ
+description: Fluent assertion library for Java and the JVM. AssertJ gives readable, chained matchers so tests for model-serving APIs, JSON payloads, and collections fail with diffs instead of opaque JUnit equals errors.
+tagline: Fluent assertions for Java and the JVM
+
+github_url: https://github.com/assertj/assertj
+website_url: https://assertj.github.io/doc/
+docs_url: https://assertj.github.io/doc/
+
+category: Dev Tools
+tags: [java, testing, assertions, assertj, jvm, junit]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JUnit assertEquals dumps raw values when JSON, lists, or optionals from
+  AI backends mismatch. AssertJ fluent assertions and extracting helpers
+  produce readable diffs so model-gateway and agent-worker tests show
+  exactly which field broke.
+
+use_cases:
+  - Assert JSON and collection payloads from Java model-serving handlers
+  - Extract nested fields from tool-call responses in JUnit tests
+  - Soft-assert several properties on an embedding client result
+  - Compare exception messages from LLM gateway error mappers
