@@ -1,0 +1,26 @@
+name: Gatling
+description: Open-source load testing as code for HTTP, WebSocket, and JMS. Gatling uses a Scala DSL to describe virtual-user scenarios, then reports latency percentiles and throughput so teams can prove inference APIs and AI product backends hold up under load.
+tagline: Load testing as code for HTTP APIs and web apps
+
+github_url: https://github.com/gatling/gatling
+website_url: https://gatling.io
+docs_url: https://docs.gatling.io
+
+category: Dev Tools
+tags: [load-testing, performance-testing, scala, http, gatling, as-code]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Teams serving LLM APIs need repeatable, version-controlled load tests, but
+  GUI-only tools are hard to review in Git. Gatling treats scenarios as code
+  with a Scala DSL, injects virtual users against HTTP, WebSocket, and JMS
+  endpoints, and emits detailed percentile reports so ML platform teams can
+  gate releases on latency SLOs instead of ad-hoc wrk runs.
+
+use_cases:
+  - Script HTTP load tests against LLM inference, embedding, and RAG APIs as reviewable Scala code
+  - Measure WebSocket streaming chat backends for latency percentiles under ramping virtual users
+  - Gate model-serving releases in CI with Gatling reports on throughput and error rates
+  - Compare gateway and inference-server configs by replaying the same scenario against each stack
