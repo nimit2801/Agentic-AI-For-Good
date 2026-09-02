@@ -1,0 +1,27 @@
+name: JMeter
+description: Apache JMeter is an open-source load and performance testing tool for web apps, APIs, databases, and other services. It runs GUI or CLI test plans with HTTP, JDBC, JMS, and plugin samplers so teams can stress AI inference APIs and data pipelines.
+tagline: Apache load testing for APIs, web apps, and data services
+
+github_url: https://github.com/apache/jmeter
+website_url: https://jmeter.apache.org
+docs_url: https://jmeter.apache.org/usermanual/index.html
+
+category: Dev Tools
+tags: [load-testing, performance-testing, java, http, api, apache]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AI platforms expose many protocols at once — REST inference, JDBC feature
+  stores, message queues, and web UIs — and teams need one test plan that
+  covers them. JMeter records or authors multi-protocol scenarios, then runs
+  them in GUI or headless CLI mode with thread groups, assertions, and
+  listeners so ML ops can prove an inference stack and its backing data
+  services hold up under concurrent users without writing a custom harness.
+
+use_cases:
+  - Load-test LLM and embedding HTTP APIs with thread groups, timers, and percentile reports
+  - Exercise JDBC feature stores and metadata databases alongside inference endpoints in one test plan
+  - Run headless JMeter in CI to gate model-serving releases on latency and error-rate thresholds
+  - Simulate mixed web and API traffic against AI product UIs, dashboards, and streaming chat backends

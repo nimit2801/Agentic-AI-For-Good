@@ -1,0 +1,29 @@
+name: Appium
+description: Cross-platform mobile automation framework built on the W3C WebDriver protocol. Appium drives native, hybrid, and mobile-web apps on iOS, Android, and desktop without modifying the app, using one API across platforms for tests and device farms.
+tagline: Cross-platform mobile automation on the WebDriver protocol
+
+github_url: https://github.com/appium/appium
+website_url: https://appium.io
+docs_url: https://appium.io/docs/en/latest/
+
+category: Dev Tools
+tags: [mobile, testing, automation, webdriver, ios, android, e2e]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: npm install -g appium
+
+problem_solved: |
+  AI products ship iOS and Android clients with chat UIs, camera capture, and
+  on-device models, but each platform has a different automation stack. Appium
+  wraps those stacks behind the W3C WebDriver protocol so one test suite
+  drives native, hybrid, and mobile-web apps without rebuilding the app or
+  rewriting tests per OS, which keeps mobile AI features covered in CI and
+  device farms.
+
+use_cases:
+  - Automate end-to-end tests of AI chat, camera, and voice features in iOS and Android apps
+  - Run the same WebDriver tests against native, hybrid, and mobile-web clients without app rebuilds
+  - Drive device-farm CI for on-device model inference, permissions, and offline AI flows
+  - Scrape or exercise mobile UIs as part of dataset collection and regression suites for ML products

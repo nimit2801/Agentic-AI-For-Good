@@ -1,0 +1,28 @@
+name: wrk
+description: A modern HTTP benchmarking tool that generates high request rates from a single multi-core machine using multithreaded event-driven I/O and optional LuaJIT scripts for custom request generation, response handling, and reporting.
+tagline: High-throughput HTTP load generator for a single machine
+
+github_url: https://github.com/wg/wrk
+docs_url: https://github.com/wg/wrk
+
+category: Dev Tools
+tags: [http, load-testing, benchmarking, performance, lua, cli]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: brew install wrk
+
+problem_solved: |
+  Teams serving LLM APIs and model inference endpoints need to measure latency
+  and throughput under realistic HTTP load, but many tools are too slow on one
+  box or require a heavy distributed setup. wrk saturates a target from a single
+  machine using multithreaded epoll/kqueue I/O, reporting latency stats and
+  requests per second so ML platform teams can find bottlenecks in inference
+  servers, reverse proxies, and RAG APIs before production.
+
+use_cases:
+  - Benchmark LLM inference and embedding HTTP endpoints for latency percentiles and requests per second
+  - Stress-test reverse proxies and API gateways in front of model servers from a single multi-core box
+  - Script custom request bodies and headers with LuaJIT to mimic production chat and RAG traffic
+  - Compare throughput of streaming versus non-streaming inference paths under sustained connection load
