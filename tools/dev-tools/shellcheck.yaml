@@ -1,0 +1,26 @@
+name: shellcheck
+description: Static analysis for bash and sh scripts. ShellCheck flags quoting bugs, unquoted expansions, and portability issues that break ML training jobs, dataset download scripts, and CI installers before they hit production.
+tagline: Static analysis for bash and POSIX shell scripts
+
+github_url: https://github.com/koalaman/shellcheck
+website_url: https://www.shellcheck.net
+docs_url: https://github.com/koalaman/shellcheck/wiki
+install_command: brew install shellcheck
+
+category: Dev Tools
+tags: [shell, bash, lint, static-analysis, ci, devops]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Training, data, and deploy scripts are still bash, and a missing quote or
+  unquoted glob can wipe a directory or skip a GPU setup step. ShellCheck
+  catches those classes of bugs in CI so ML platform scripts fail the PR
+  instead of failing at 3am on a cluster node.
+
+use_cases:
+  - Lint bootstrap and CUDA-setup scripts before they run on training nodes
+  - Add ShellCheck to GitHub Actions so dataset download and eval shells stay safe
+  - Catch unquoted expansions in CI installers that fetch models and CLI tools
+  - Review POSIX portability of ops scripts that run on mixed Linux images

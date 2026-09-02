@@ -1,0 +1,26 @@
+name: nushell
+description: A structured-data shell where pipelines pass tables instead of raw text. Engineers query logs, JSON, and CSVs from AI jobs with SQL-like commands rather than brittle grep, cut, and awk one-liners.
+tagline: A structured-data shell for tables, JSON, and pipelines
+
+github_url: https://github.com/nushell/nushell
+website_url: https://www.nushell.sh
+docs_url: https://www.nushell.sh/book/
+install_command: brew install nushell
+
+category: Dev Tools
+tags: [shell, cli, json, structured-data, rust, devops]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  AI and data pipelines emit JSON, CSV, and logs that bash treats as unstructured
+  text, so parsing breaks on quoting and columns. Nushell pipelines operate on
+  typed tables so you can filter, join, and chart evaluation results, GPU job
+  output, and API responses without writing one-off Python.
+
+use_cases:
+  - Query JSONL evaluation traces and token-usage logs as tables from the terminal
+  - Convert model-benchmark CSVs and join them with git metadata in a pipeline
+  - Inspect HTTP JSON from inference APIs with typed filters instead of jq plus grep
+  - Script GPU-job and dataset inventory reports that stay readable in CI
