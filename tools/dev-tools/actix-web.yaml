@@ -1,0 +1,25 @@
+name: Actix Web
+description: Powerful, pragmatic, and extremely fast web framework for Rust. Teams use it to serve LLM APIs, embedding endpoints, and agent webhooks as high-throughput Rust services.
+tagline: Fast web framework for Rust
+
+github_url: https://github.com/actix/actix-web
+website_url: https://actix.rs
+docs_url: https://actix.rs/docs/
+install_command: cargo add actix-web
+
+category: Dev Tools
+tags: [rust, web-framework, async, http, api, developer-tools]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  High-QPS LLM gateways and agent webhooks in Rust need a battle-tested HTTP
+  layer, not a from-scratch Tokio server. Actix Web provides routing, extractors,
+  and middleware so teams ship fast inference APIs without assembling the stack
+  by hand.
+
+use_cases:
+  - Serve a high-throughput Rust LLM or embedding HTTP API
+  - Expose agent webhook endpoints with Actix extractors and middleware
+  - Build low-latency inference gateways that share actors and workers

@@ -1,0 +1,25 @@
+name: Express
+description: Fast, unopinionated, minimalist web framework for Node.js. The default HTTP layer for countless LLM proxies, embedding APIs, and agent webhook servers.
+tagline: Fast, unopinionated, minimalist Node.js web framework
+
+github_url: https://github.com/expressjs/express
+website_url: https://expressjs.com
+docs_url: https://expressjs.com/en/guide/routing.html
+install_command: npm install express
+
+category: Dev Tools
+tags: [javascript, nodejs, web-framework, http, api, middleware, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Node teams need a tiny HTTP layer to wrap OpenAI calls, embeddings, and
+  agent webhooks without a full application framework. Express is the
+  default middleware stack for those services, with routing and plugins
+  that every Node engineer already knows.
+
+use_cases:
+  - Wrap an LLM or embedding client behind a Node.js HTTP API
+  - Receive agent webhooks and tool callbacks with Express middleware
+  - Prototype model-serving endpoints before moving to a heavier framework
