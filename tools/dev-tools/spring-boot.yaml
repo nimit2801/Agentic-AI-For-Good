@@ -1,0 +1,26 @@
+name: Spring Boot
+description: Standard Java framework for production services. Spring Boot auto-configures web, data, security, and observability so teams can ship model-serving APIs, RAG backends, and agent orchestration on the JVM with far less boilerplate.
+tagline: Production-grade Java services with auto-configuration
+
+github_url: https://github.com/spring-projects/spring-boot
+website_url: https://spring.io/projects/spring-boot
+docs_url: https://docs.spring.io/spring-boot/reference/index.html
+
+category: Dev Tools
+tags: [java, spring, jvm, api, microservices, backend]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JVM teams that expose model inference, embeddings, or agent APIs spend too much
+  time wiring Tomcat, Jackson, datasources, and metrics. Spring Boot opinionated
+  starters and auto-configuration turn those into a runnable service so AI
+  backends get production HTTP, security, and actuator endpoints without a
+  custom framework.
+
+use_cases:
+  - Serve Java REST APIs in front of LLM, embedding, or vector-search backends
+  - Build Spring Data and messaging services that feed RAG and feature pipelines
+  - Expose health, metrics, and tracing for JVM model-serving with Actuator
+  - Package an agent or workflow orchestrator as a Spring Boot microservice
