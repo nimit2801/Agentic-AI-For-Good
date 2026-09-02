@@ -1,0 +1,25 @@
+name: SwiftLint
+description: Linter that enforces Swift style and conventions. SwiftLint plugs into Xcode and CI so iOS and macOS apps that wrap on-device or cloud models stay consistent as teams ship agent UIs and inference clients.
+tagline: Enforce Swift style and conventions
+
+github_url: https://github.com/realm/SwiftLint
+website_url: https://realm.github.io/SwiftLint
+docs_url: https://realm.github.io/SwiftLint
+install_command: brew install swiftlint
+
+category: Dev Tools
+tags: [swift, lint, ios, macos, xcode, code-quality]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Swift AI apps mix UI, networking, and model clients, and style drift
+  slows reviews. SwiftLint encodes conventions as rules so Xcode and CI
+  fail on violations instead of arguing about naming in pull requests.
+
+use_cases:
+  - Lint iOS chat or agent UIs that call cloud LLM APIs
+  - Run SwiftLint in CI for macOS apps wrapping on-device models
+  - Custom-rule naming for inference client types in a Swift package
+  - Autocorrect style on save in Xcode for mixed UI and ML modules

@@ -1,0 +1,25 @@
+name: ktlint
+description: Anti-bikeshedding Kotlin linter with a built-in formatter. ktlint enforces a single style so Kotlin AI services, Gradle scripts, and Android modules stop arguing about braces and stay CI-clean.
+tagline: Kotlin linter and formatter
+
+github_url: https://github.com/ktlint/ktlint
+website_url: https://ktlint.github.io
+docs_url: https://ktlint.github.io
+install_command: brew install ktlint
+
+category: Dev Tools
+tags: [kotlin, lint, formatting, ktlint, cli, code-quality]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Kotlin teams waste review time on style, and mixed IntelliJ settings
+  produce noisy diffs in AI client PRs. ktlint applies one official-ish
+  style plus a formatter so CI fails on format, not on taste.
+
+use_cases:
+  - Format Kotlin model-gateway and agent-worker modules on save
+  - Run ktlintCheck in Gradle CI for Android apps that call LLMs
+  - Standardize style across a KMP repo that shares inference clients
+  - Auto-fix style in pre-commit for Kotlin data and prompt helpers

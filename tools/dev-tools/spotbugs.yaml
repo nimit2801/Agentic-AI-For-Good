@@ -1,0 +1,24 @@
+name: SpotBugs
+description: Static analysis successor to FindBugs for Java bytecode. SpotBugs looks for null, concurrency, and security bugs so JVM model-serving APIs and agent workers fail CI on real defect patterns, not just style.
+tagline: FindBugs successor for Java static analysis
+
+github_url: https://github.com/spotbugs/spotbugs
+website_url: https://spotbugs.github.io
+docs_url: https://spotbugs.readthedocs.io
+
+category: Dev Tools
+tags: [java, static-analysis, spotbugs, findbugs, security, jvm]
+pricing: free
+is_open_source: true
+license: LGPL-2.1
+
+problem_solved: |
+  Compilers miss null, resource, and concurrency bugs in JVM AI services.
+  SpotBugs scans bytecode for those patterns so model gateways and queue
+  workers fail the build on defect detectors instead of production NPEs.
+
+use_cases:
+  - Scan Java model-serving bytecode for null and resource leaks in CI
+  - Catch concurrency bugs in agent worker thread pools
+  - Enable security detectors on JVM code that handles API keys
+  - Plug SpotBugs into Maven or Gradle for RAG ingest services
