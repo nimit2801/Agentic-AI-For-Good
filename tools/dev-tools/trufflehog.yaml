@@ -1,0 +1,24 @@
+name: TruffleHog
+description: Secret scanner that finds, verifies, and analyzes leaked credentials in git, GitHub, and cloud stores. Check whether a key is live so teams can rotate real leaks instead of chasing false positives.
+tagline: Find and verify leaked credentials
+
+github_url: https://github.com/trufflesecurity/trufflehog
+website_url: https://trufflesecurity.com
+docs_url: https://docs.trufflesecurity.com
+
+category: Dev Tools
+tags: [go, secrets, security, git, credentials, scanning]
+pricing: freemium
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Secret scanners dump thousands of matches that may already be revoked.
+  TruffleHog finds credentials in git and cloud sources and verifies
+  whether they still work, so LLM and agent teams rotate real leaks
+  instead of triaging dead keys.
+
+use_cases:
+  - Scan git history for live API keys and cloud credentials
+  - Verify whether a leaked OpenAI or AWS key is still active
+  - Audit GitHub orgs for secrets before an incident

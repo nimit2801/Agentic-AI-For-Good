@@ -1,0 +1,25 @@
+name: Semgrep
+description: Lightweight static analysis that finds bugs with patterns that look like source code. Scan Python, JS, and 30-plus languages in CI so ML and agent repos catch secrets, injections, and code smells early.
+tagline: Pattern-based static analysis for many languages
+
+github_url: https://github.com/semgrep/semgrep
+website_url: https://semgrep.dev
+docs_url: https://semgrep.dev/docs
+install_command: pip install semgrep
+
+category: Dev Tools
+tags: [python, sast, security, static-analysis, ci, lint]
+pricing: freemium
+is_open_source: true
+license: LGPL-2.1
+
+problem_solved: |
+  Generic linters miss security bugs and custom anti-patterns in ML
+  codebases. Semgrep lets you write rules that look like source code and
+  scan 30-plus languages in CI, so teams catch injections, secrets, and
+  unsafe LLM-app patterns before merge.
+
+use_cases:
+  - Add SAST scans to CI for Python LLM and agent repos
+  - Write custom rules that look like source code for app-specific bugs
+  - Block secrets and injection patterns before they reach production
