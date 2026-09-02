@@ -1,0 +1,28 @@
+name: Schemathesis
+description: Property-based API testing tool that reads OpenAPI and GraphQL schemas and generates traffic to find contract bugs. Schemathesis catches status-code, schema, and stateful failures in LLM and RAG HTTP APIs before users do.
+tagline: Property-based testing for OpenAPI and GraphQL APIs
+
+github_url: https://github.com/schemathesis/schemathesis
+website_url: https://schemathesis.readthedocs.io
+docs_url: https://schemathesis.readthedocs.io/en/stable/
+
+category: Dev Tools
+tags: [api-testing, openapi, graphql, property-based, python, hypothesis]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install schemathesis
+
+problem_solved: |
+  Hand-written API tests miss edge cases in request bodies and sequences,
+  so LLM gateways and RAG services ship contract bugs. Schemathesis reads
+  an OpenAPI or GraphQL schema, generates property-based cases (built on
+  Hypothesis), and reports schema violations, 5xx responses, and stateful
+  failures so teams fix the API before clients depend on it.
+
+use_cases:
+  - Fuzz OpenAPI specs for model-serving and embedding APIs to find 5xx and schema violations
+  - Run stateful sequences against RAG and agent HTTP APIs to catch broken workflows
+  - Gate CI on GraphQL and REST contract tests generated from the live schema
+  - Reproduce failing cases as pytest tests after property-based discovery

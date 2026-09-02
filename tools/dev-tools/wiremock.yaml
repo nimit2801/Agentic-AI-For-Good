@@ -1,0 +1,26 @@
+name: WireMock
+description: HTTP mock server for stubbing APIs, simulating faults, and recording traffic. WireMock runs standalone or in-process on the JVM so teams can test clients of LLM gateways, webhooks, and data APIs without depending on live backends.
+tagline: Mock HTTP services for tests and local development
+
+github_url: https://github.com/wiremock/wiremock
+website_url: https://wiremock.org
+docs_url: https://wiremock.org/docs/
+
+category: Dev Tools
+tags: [http, mocking, testing, java, stubs, api]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AI product tests that call real model APIs and partner webhooks are slow,
+  flaky, and expensive. WireMock stubs HTTP responses, delays, and faults
+  so JVM and language-agnostic clients can exercise retries, streaming
+  payloads, and error paths against a deterministic mock instead of
+  production inference endpoints.
+
+use_cases:
+  - Stub LLM and embedding HTTP APIs in integration tests with fixed JSON and streamed responses
+  - Simulate timeouts, 429s, and 5xx faults to verify retry logic around model gateways
+  - Record and replay partner webhook traffic for offline CI of AI product backends
+  - Run a standalone mock server so local agents and RAG services develop without live vendor APIs
