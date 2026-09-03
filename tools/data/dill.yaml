@@ -1,0 +1,28 @@
+name: dill
+description: A Python serializer that pickles almost every object type, including nested functions, lambdas, and interpreter state. dill is used in multiprocessing, checkpointing, and scientific workflows that need to dump more than stdlib pickle allows.
+tagline: Serialize almost any Python object, including functions
+
+github_url: https://github.com/uqfoundation/dill
+website_url: https://dill.readthedocs.io
+docs_url: https://dill.readthedocs.io
+
+category: Data
+tags: [python, serialization, pickle, multiprocessing, checkpointing, scientific-computing]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+install_command: pip install dill
+
+problem_solved: |
+  Scientific and ML jobs often need to checkpoint closures, class
+  instances, and session state that pickle rejects. Restarting a
+  notebook or a multiprocessing pool then means rewriting objects.
+  dill extends pickle so nearly any Python object can be dumped and
+  restored, including nested functions and interpreter state.
+
+use_cases:
+  - Checkpoint experiment functions and closures between notebook sessions
+  - Send complex callables through multiprocessing pools
+  - Persist pathos or scientific pipeline state that pickle cannot dump
+  - Dump and restore interpreter objects for reproducible research runs
