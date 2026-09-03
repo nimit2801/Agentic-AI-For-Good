@@ -1,0 +1,26 @@
+name: Parca
+description: Open-source continuous profiling project that stores CPU and memory profiles over time so you can analyze resource usage down to the line number and reduce infrastructure cost.
+tagline: Continuous CPU and memory profiling down to the line number
+
+github_url: https://github.com/parca-dev/parca
+website_url: https://parca.dev/
+docs_url: https://www.parca.dev/docs/
+
+category: Monitoring
+tags: [profiling, observability, cpu, memory, eBPF, kubernetes, go]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Production services waste CPU and RAM for weeks before anyone attaches a profiler,
+  and ad-hoc pprof dumps disappear after the incident. Parca continuously collects
+  profiles, stores them as a time series, and lets you compare resource usage down to
+  the line number so performance work is part of normal operations, not a fire drill.
+
+use_cases:
+  - Continuously profile Kubernetes workloads with eBPF without changing application code
+  - Compare CPU profiles across deploys to catch performance regressions in CI or staging
+  - Track memory growth in long-running LLM workers and pin it to allocating functions
+  - Store pprof-compatible profiles as a queryable time series instead of local files
+  - Reduce node count by finding idle or wasteful code paths in production services

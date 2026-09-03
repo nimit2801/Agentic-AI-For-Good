@@ -1,0 +1,26 @@
+name: Pyroscope
+description: Grafana continuous profiling platform that samples CPU, memory, and other runtime signals so you can debug performance issues down to a single line of code across services.
+tagline: Continuous profiling from Grafana, down to the line of code
+
+github_url: https://github.com/grafana/pyroscope
+website_url: https://grafana.com/oss/pyroscope/
+docs_url: https://grafana.com/docs/pyroscope/latest/
+
+category: Monitoring
+tags: [profiling, grafana, observability, cpu, memory, go, kubernetes]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Metrics and traces show that a service is slow, but they rarely name the function
+  burning CPU or allocating memory. Pyroscope continuously profiles production runtimes
+  so teams can compare flame graphs over time, find the hot line, and cut infrastructure
+  cost without attaching a one-off profiler during an incident.
+
+use_cases:
+  - Find the hottest functions in a Python or Go inference service from production profiles
+  - Compare CPU flame graphs before and after a model or dependency upgrade
+  - Cut cloud spend by spotting memory leaks in long-running agent workers
+  - Add continuous profiling to Grafana alongside metrics, logs, and traces
+  - Debug a latency spike down to a single line without reproducing it locally
