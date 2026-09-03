@@ -1,0 +1,28 @@
+name: msgpack
+description: A Python implementation of MessagePack, a compact binary serialization format faster and smaller than JSON. msgpack is used to ship embeddings, RPC payloads, and dataset records between ML services without the overhead of text JSON.
+tagline: Compact binary serialization for Python payloads
+
+github_url: https://github.com/msgpack/msgpack-python
+website_url: https://msgpack.org
+docs_url: https://github.com/msgpack/msgpack-python
+
+category: Data
+tags: [python, serialization, binary, rpc, json, ml-pipeline, data-processing]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install msgpack
+
+problem_solved: |
+  JSON is verbose for embeddings, feature rows, and RPC between training
+  and serving. pickle is Python-only and unsafe across trust boundaries.
+  msgpack packs nested dicts and arrays into a compact binary that other
+  languages can read, which is why many ML services use it for cache
+  values and inter-process messages.
+
+use_cases:
+  - Serialize embedding vectors and feature rows for a local or Redis cache
+  - Ship compact RPC payloads between a training job and a model server
+  - Replace JSON logs of nested metrics with smaller binary records
+  - Exchange dataset shards with non-Python workers that speak MessagePack

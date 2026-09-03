@@ -1,0 +1,28 @@
+name: cachetools
+description: Extensible memoizing collections and decorators for Python, including LRU, LFU, TTL, and RR caches. cachetools is used to memoize expensive function calls in ML services, embedding lookups, and API clients without standing up Redis.
+tagline: In-memory LRU and TTL caches for Python functions
+
+github_url: https://github.com/tkem/cachetools
+website_url: https://cachetools.readthedocs.io
+docs_url: https://cachetools.readthedocs.io
+
+category: Data
+tags: [python, caching, memoization, lru, ttl, ml-pipeline, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install cachetools
+
+problem_solved: |
+  Inference servers and data jobs recompute the same embeddings, token
+  counts, or HTTP lookups on every request. functools.lru_cache is
+  process-local and has no TTL. cachetools adds LRU, LFU, and TTL
+  mappings plus decorators so hot results stay in memory with eviction
+  instead of hitting a model or network again.
+
+use_cases:
+  - Memoize embedding lookups with an LRU cache in a FastAPI inference app
+  - TTL-cache prompt templates or tokenizer outputs for a few seconds
+  - Bound in-process caches for feature-store reads without Redis
+  - Decorate expensive preprocessing functions with @cached

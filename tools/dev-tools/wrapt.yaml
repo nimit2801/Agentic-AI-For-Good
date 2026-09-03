@@ -1,0 +1,28 @@
+name: wrapt
+description: A Python module for decorators, function wrappers, and monkey patching that preserves the wrapped object's signature and metadata. wrapt is used in tracing, APM, and library instrumentation so patches do not break inspect, typing, or bound methods.
+tagline: Correct function wrappers for decorators and monkey patches
+
+github_url: https://github.com/GrahamDumpleton/wrapt
+website_url: https://wrapt.readthedocs.io
+docs_url: https://wrapt.readthedocs.io
+
+category: Dev Tools
+tags: [python, decorators, wrapping, monkey-patch, instrumentation, tracing, developer-tools]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+install_command: pip install wrapt
+
+problem_solved: |
+  Naive decorator wrappers break inspect.signature, bound methods, and
+  classmethod behavior, which silently wrecks tracing and testing.
+  wrapt implements a wrapper object that looks like the original
+  function, so OpenTelemetry-style instrumentation and retry decorators
+  can patch APIs without changing call semantics.
+
+use_cases:
+  - Instrument LLM client calls with a decorator that keeps the original signature
+  - Monkey-patch HTTP libraries for tracing without breaking bound methods
+  - Write retry or timeout wrappers that still work with inspect and typing
+  - Patch third-party ML APIs in tests while preserving isinstance checks
