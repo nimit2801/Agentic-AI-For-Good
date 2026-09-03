@@ -1,0 +1,23 @@
+name: PyOTP
+description: "Python library for generating and verifying HOTP and TOTP one-time passwords (RFC 4226 and RFC 6238), with provisioning URIs for authenticator apps such as Google Authenticator."
+tagline: "Python one-time password library"
+github_url: https://github.com/pyauth/pyotp
+website_url: https://pyauth.github.io/pyotp/
+docs_url: https://pyauth.github.io/pyotp/
+install_command: "pip install pyotp"
+category: Dev Tools
+tags:
+  - python
+  - 2fa
+  - totp
+  - hotp
+  - security
+  - authentication
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Adding two-factor authentication to a Python app usually means integrating a vendor SDK or reimplementing HOTP and TOTP from the RFCs. PyOTP is a small, dependency-light library that generates and verifies HMAC-based and time-based one-time passwords, plus otpauth provisioning URIs so users can enroll Google Authenticator, Authy, or any RFC-compliant authenticator without a third-party identity vendor."
+use_cases:
+  - "Add TOTP-based two-factor authentication to a Python web app or API so users can enroll Google Authenticator or Authy"
+  - "Generate otpauth provisioning URIs and QR payloads so new accounts can scan a secret into an authenticator app"
+  - "Verify HOTP or TOTP codes server-side during login, password reset, or sensitive action confirmation"

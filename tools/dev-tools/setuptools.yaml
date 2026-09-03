@@ -1,0 +1,23 @@
+name: setuptools
+description: "Official Python packaging library used to build, distribute, and install packages. It implements setup.py and setup.cfg workflows, PEP 517 builds, and the backend most pip installs still rely on."
+tagline: "Python packaging and build backend"
+github_url: https://github.com/pypa/setuptools
+website_url: https://pypi.org/project/setuptools/
+docs_url: https://setuptools.pypa.io
+install_command: "pip install setuptools"
+category: Dev Tools
+tags:
+  - python
+  - packaging
+  - build
+  - pep517
+  - pypi
+  - pip
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "Python libraries need a standard way to declare metadata, compile extensions, and produce installable distributions. setuptools is the long-standing build backend that reads setup.py, setup.cfg, or pyproject.toml, builds wheels and sdists, and remains the default engine behind pip install for thousands of packages, including scientific and ML projects that still ship C extensions."
+use_cases:
+  - "Declare package metadata and dependencies in setup.py or pyproject.toml so pip can install a library from source or PyPI"
+  - "Build wheels and source distributions for C-extension and pure-Python packages before uploading to PyPI"
+  - "Use setuptools as the PEP 517 build-backend for ML libraries that compile native extensions during install"
