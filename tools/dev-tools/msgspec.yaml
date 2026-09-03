@@ -1,0 +1,29 @@
+name: msgspec
+description: A fast serialization and validation library for Python with built-in JSON, MessagePack, YAML, and TOML support. Struct-based schemas decode and validate payloads at C speed, making msgspec a high-throughput alternative to Pydantic in AI services.
+tagline: Fast JSON and MessagePack serialization with schema validation
+
+github_url: https://github.com/msgspec/msgspec
+website_url: https://jcristharif.com/msgspec/
+docs_url: https://jcristharif.com/msgspec/
+
+category: Dev Tools
+tags: [python, serialization, json, msgpack, validation, performance, schemas]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+install_command: pip install msgspec
+
+problem_solved: |
+  High-throughput inference APIs spend a large share of CPU on JSON encode,
+  decode, and schema checks. Pydantic and stdlib json are easy to use but
+  become bottlenecks at tens of thousands of requests per second. msgspec
+  provides Struct types that serialize and validate JSON and MessagePack at
+  C speed, cutting payload overhead in model servers, queues, and agent
+  message buses without giving up typed schemas.
+
+use_cases:
+  - Decode and validate LLM request and response payloads in FastAPI or custom ASGI inference servers
+  - Serialize agent messages, tool-call arguments, and job queues with MessagePack for lower latency than JSON
+  - Replace slower JSON libraries in embedding batch workers that process millions of records per hour
+  - Define typed Struct schemas for config files in YAML or TOML and fail fast on invalid fields
