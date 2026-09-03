@@ -1,0 +1,27 @@
+name: Pygments
+description: Generic syntax highlighter in Python. Pygments tokenizes code for Sphinx, Jupyter, and Markdown pipelines so docs, RAG snippets, and agent UIs get language-aware highlighting without a browser.
+tagline: Python syntax highlighting library
+
+github_url: https://github.com/pygments/pygments
+website_url: https://pygments.org
+docs_url: https://pygments.org/docs/
+install_command: pip install Pygments
+
+category: Dev Tools
+tags: [python, syntax-highlighting, docs, sphinx, jupyter, markdown]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Docs sites, notebooks, and agent chat UIs need highlighted code blocks
+  for dozens of languages. Rolling a highlighter is a non-goal. Pygments
+  is the library Sphinx, Jupyter, and Markdown-it stacks already use to
+  lex Python, CUDA, YAML, and more into HTML or ANSI, including in
+  headless RAG preview pipelines.
+
+use_cases:
+  - Highlight code blocks in Sphinx and MkDocs sites for ML libraries
+  - Render notebook and agent-chat snippets with language-aware colors
+  - Tokenize source for search and RAG chunking that should respect syntax
+  - Emit ANSI-colored traces in CLI tools that dump Python or SQL

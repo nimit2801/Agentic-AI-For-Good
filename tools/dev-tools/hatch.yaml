@@ -1,0 +1,27 @@
+name: Hatch
+description: Modern Python project manager from PyPA. Hatch handles environments, versioning, and builds with hatchling so ML libraries get reproducible pyproject.toml workflows without a pile of tox.ini files.
+tagline: PyPA project manager for Python packages
+
+github_url: https://github.com/pypa/hatch
+website_url: https://hatch.pypa.io
+docs_url: https://hatch.pypa.io/latest/
+install_command: pip install hatch
+
+category: Dev Tools
+tags: [python, packaging, pypa, build, environments, hatchling]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Python ML packages juggle venv, setuptools, bumpversion, and tox with
+  overlapping config. Hatch is an extensible project manager that creates
+  environments, runs tests, and builds wheels via hatchling, the PEP 517
+  backend. Teams publishing tokenizers or clients get one tool for env and
+  release instead of five.
+
+use_cases:
+  - Create isolated test and docs environments for a Python ML library
+  - Build and publish wheels with the hatchling PEP 517 backend
+  - Version and tag package releases from pyproject.toml
+  - Replace ad-hoc tox plus setuptools scripts in package CI

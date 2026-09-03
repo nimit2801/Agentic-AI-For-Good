@@ -1,0 +1,27 @@
+name: eventlet
+description: Concurrent networking library for Python using green threads. eventlet monkey-patches I/O so OpenStack-era and some ML services can handle many sockets without asyncio, overlapping with gevent but with a different hub.
+tagline: Green-thread networking for Python
+
+github_url: https://github.com/eventlet/eventlet
+website_url: https://eventlet.readthedocs.io
+docs_url: https://eventlet.readthedocs.io
+install_command: pip install eventlet
+
+category: Dev Tools
+tags: [python, concurrency, greenthreads, networking, async]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Some production stacks (OpenStack, older WSGI servers, a few Celery
+  pools) still use eventlet instead of asyncio or gevent. eventlet
+  provides greenthreads and monkey-patched sockets so blocking clients
+  multiplex I/O. Teams inheriting those services need the library on
+  the catalog even when new agent code prefers asyncio.
+
+use_cases:
+  - Run Celery or WSGI workers configured for the eventlet pool
+  - Monkey-patch blocking HTTP and DB clients in legacy Python services
+  - Serve many concurrent sockets on OpenStack-related control planes
+  - Debug greenthread hubs when a dependency still imports eventlet
