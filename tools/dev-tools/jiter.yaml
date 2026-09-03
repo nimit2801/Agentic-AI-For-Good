@@ -1,0 +1,28 @@
+name: jiter
+description: A fast iterable JSON parser from the Pydantic team, with a Python package and a Rust crate. Parse JSON into Python objects or iterate tokens without loading the whole document, which speeds up LLM API payloads.
+tagline: Fast iterable JSON parser for Python and Rust
+
+github_url: https://github.com/pydantic/jiter
+website_url: https://crates.io/crates/jiter
+docs_url: https://docs.rs/jiter
+
+category: Dev Tools
+tags: [python, rust, json, parsing, pydantic, performance]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install jiter
+
+problem_solved: |
+  LLM APIs and agent tools move large JSON payloads. Python's json
+  module loads the whole document and is slow on hot paths. jiter
+  parses JSON quickly, can iterate tokens, and is the engine behind
+  Pydantic v2 validation, so typed model SDKs spend less time in
+  JSON decode before the actual work starts.
+
+use_cases:
+  - Speed up JSON decode in Pydantic models and LLM SDK response parsing
+  - Iterate JSON tokens from large tool-call payloads without full loads
+  - Parse streaming or partial JSON from model APIs in Python services
+  - Share a fast parser between Rust inference services and Python agents

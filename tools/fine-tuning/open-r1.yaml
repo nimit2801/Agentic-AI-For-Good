@@ -1,0 +1,25 @@
+name: Open-R1
+description: A fully open reproduction of DeepSeek-R1 from Hugging Face. Train reasoning models with SFT and GRPO, evaluate on math and code, and inspect the recipes instead of treating R1-style post-training as a closed pipeline.
+tagline: Open reproduction of DeepSeek-R1 post-training
+
+github_url: https://github.com/huggingface/open-r1
+docs_url: https://github.com/huggingface/open-r1
+
+category: Fine-tuning
+tags: [python, reasoning, grpo, r1, huggingface, post-training, llm]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  DeepSeek-R1 showed that RL can produce strong reasoning models, but
+  the original stack is not fully open. Teams that want R1-style SFT
+  and GRPO have to reverse-engineer recipes. Open-R1 publishes training
+  code, configs, and evaluation so researchers can reproduce reasoning
+  post-training and adapt it to their own models and datasets.
+
+use_cases:
+  - Reproduce DeepSeek-R1 style SFT and GRPO on open base models
+  - Evaluate reasoning checkpoints on math and code benchmarks
+  - Adapt R1 post-training recipes to a custom domain dataset
+  - Study GRPO training dynamics with public configs instead of a closed stack

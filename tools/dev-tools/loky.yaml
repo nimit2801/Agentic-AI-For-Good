@@ -1,0 +1,28 @@
+name: loky
+description: A robust reusable process-pool executor used by joblib. Spawn workers that survive crashes, reuse processes across calls, and run CPU-heavy Python work without the pitfalls of multiprocessing.Pool.
+tagline: Robust process pool executor for Python
+
+github_url: https://github.com/joblib/loky
+website_url: https://loky.readthedocs.io/en/stable/
+docs_url: https://loky.readthedocs.io/en/stable/
+
+category: Dev Tools
+tags: [python, multiprocessing, joblib, parallelism, executor, cpu]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+install_command: pip install loky
+
+problem_solved: |
+  Python multiprocessing.Pool deadlocks, leaks workers, and cannot
+  reuse processes cleanly across joblib calls. loky is a reusable
+  ProcessPoolExecutor with crash isolation, cloudpickle serialization,
+  and memory management so feature jobs and sklearn-style pipelines
+  can run CPU work in parallel without hanging the parent process.
+
+use_cases:
+  - Parallelize CPU-bound feature transforms behind joblib or sklearn
+  - Reuse a process pool across sequential ML jobs instead of respawning
+  - Isolate worker crashes so one bad transform does not kill the parent
+  - Run nested parallel calls that standard multiprocessing.Pool cannot handle
