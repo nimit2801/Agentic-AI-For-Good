@@ -1,0 +1,27 @@
+name: MegaBlocks
+description: Lightweight Databricks library for mixture-of-experts training that implements dropless MoE layers with block-sparse kernels and integrates with Megatron-LM for faster sparse Transformer training.
+tagline: Dropless MoE layers for faster sparse Transformer training
+
+github_url: https://github.com/databricks/megablocks
+docs_url: https://github.com/databricks/megablocks
+
+install_command: pip install megablocks
+
+category: Fine-tuning
+tags: [python, moe, sparse, training, megatron, gpu, databricks, transformers]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Standard MoE training drops tokens when experts overflow capacity, wasting data and
+  adding a capacity_factor hyperparameter that is hard to tune. MegaBlocks reformulates
+  MoE layers as block-sparse operations so experts stay dropless, train faster than
+  Tutel-style MoEs, and plug into Megatron-LM for data, expert, and pipeline parallel runs.
+
+use_cases:
+  - Train a dropless MoE language model with Megatron-LM without tuning capacity_factor
+  - Replace dense MLP layers with MegaBlocks dMoE layers to accelerate large-scale pretraining
+  - Serve Mixtral-style MoE models in other frameworks after installing the MegaBlocks kernels
+  - Benchmark sparse versus dense Transformer training throughput on the same GPU cluster
+  - Enable grouped GEMM dMoE compute on Hopper GPUs for higher expert utilization

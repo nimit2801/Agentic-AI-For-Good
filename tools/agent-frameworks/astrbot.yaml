@@ -1,0 +1,28 @@
+name: AstrBot
+description: Open-source agent chatbot platform that connects LLMs to major IM apps with plugins, sandboxed tool use, and a marketplace so teams can run production assistants inside existing chat workflows.
+tagline: Multi-IM agent platform with plugins and a sandbox
+
+github_url: https://github.com/AstrBotDevs/AstrBot
+website_url: https://astrbot.app
+docs_url: https://docs.astrbot.app
+
+install_command: uv tool install astrbot --python 3.12
+
+category: Agents
+tags: [python, agents, chatbot, im, plugins, sandbox, self-hosted, open-source]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Building an assistant that lives in QQ, Telegram, Discord, Slack, and other IM apps
+  usually means writing a custom bot per platform plus glue for tools and memory.
+  AstrBot is a self-hosted agent platform with IM connectors, a plugin marketplace, and
+  an agent sandbox so you can ship one assistant across chat apps without that glue.
+
+use_cases:
+  - Deploy a personal AI companion in Telegram, Discord, or QQ with one AstrBot instance
+  - Add a plugin-backed knowledge assistant to a team IM workspace instead of a custom bot
+  - Run sandboxed tool and shell calls from chat without exposing the host machine
+  - Extend the bot with marketplace plugins for group analytics, memory, or media workflows
+  - Self-host an OpenClaw-style agent stack with Docker or uv for production IM automation
