@@ -1,0 +1,25 @@
+name: Error Prone
+description: javac plugin from Google that turns common Java mistakes into compile-time errors. Error Prone catches null, equals, and concurrency bugs so JVM model APIs fail the build instead of crashing in production.
+tagline: Catch Java mistakes as compile-time errors
+
+github_url: https://github.com/google/error-prone
+website_url: https://errorprone.info
+docs_url: https://errorprone.info
+
+category: Dev Tools
+tags: [java, static-analysis, error-prone, javac, google, jvm]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Many Java bugs only show up after a model gateway is live. Error Prone
+  plugs into javac and rejects buggy patterns at compile time, so JVM
+  agent workers and serving APIs never ship equals, null, or lock bugs
+  that a green unit test would miss.
+
+use_cases:
+  - Fail compilation on null and equals bugs in Java inference APIs
+  - Catch concurrency mistakes in agent worker thread pools
+  - Add custom Error Prone checks for internal JVM ML libraries
+  - Enable Error Prone in Maven or Bazel builds for RAG backends

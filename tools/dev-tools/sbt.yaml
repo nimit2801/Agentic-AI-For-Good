@@ -1,0 +1,27 @@
+name: sbt
+description: Interactive build tool for Scala and JVM projects. sbt compiles, tests, and packages Scala ML libraries with incremental compilation, a REPL, and plugin ecosystem used across Spark and LLM Scala stacks.
+tagline: Interactive build tool for Scala projects
+
+github_url: https://github.com/sbt/sbt
+website_url: https://www.scala-sbt.org
+docs_url: https://www.scala-sbt.org/documentation.html
+
+install_command: brew install sbt
+
+category: Dev Tools
+tags: [scala, build, sbt, jvm, spark, ci]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Scala ML libraries and Spark jobs need incremental compile, test, and
+  publish that generic JVM builds do not express well. sbt's task graph,
+  REPL, and plugins compile multi-module Scala projects without a full
+  rebuild on every model-SDK change.
+
+use_cases:
+  - Build and test Scala Spark feature pipelines with incremental sbt tasks
+  - Publish versioned Scala libraries used by JVM agent backends
+  - Run a Scala REPL against LLM client modules during development
+  - Cache CI compiles for multi-module Scala inference services

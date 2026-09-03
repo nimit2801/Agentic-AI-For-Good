@@ -1,0 +1,25 @@
+name: Pitest
+description: Mutation testing for the JVM that rewrites bytecode and reruns tests. Pitest shows which tests actually catch faults so Java model-serving APIs and agent workers do not ship coverage that never fails.
+tagline: Mutation testing for JVM test suites
+
+github_url: https://github.com/hcoles/pitest
+website_url: https://pitest.org
+docs_url: https://pitest.org
+
+category: Dev Tools
+tags: [java, mutation-testing, pitest, testing, jvm, ci]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Line coverage on JVM AI services can look high while tests never assert
+  real behavior. Pitest mutates bytecode and reruns the suite so weak
+  tests on model gateways and agent workers fail CI instead of hiding
+  behind a green coverage report.
+
+use_cases:
+  - Measure whether Java inference API tests catch real faults
+  - Fail CI when mutation score drops on agent worker modules
+  - Find untested branches in JVM RAG ingest and scoring code
+  - Plug Pitest into Maven or Gradle as a mutation-testing gate

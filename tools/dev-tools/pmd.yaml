@@ -1,0 +1,25 @@
+name: PMD
+description: Extensible multilanguage static analyzer for Java, Apex, and related JVM sources. PMD finds unused code, empty catches, and copy-paste so AI backends fail CI on defect patterns, not only compiler errors.
+tagline: Multilanguage static analysis for JVM code
+
+github_url: https://github.com/pmd/pmd
+website_url: https://pmd.github.io
+docs_url: https://docs.pmd-code.org
+
+category: Dev Tools
+tags: [java, static-analysis, pmd, jvm, lint, ci]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Compilers miss unused variables, empty catch blocks, and duplicated
+  logic in JVM inference services. PMD scans source with built-in and
+  custom rules so agent workers and RAG ingest jobs fail the build on
+  those patterns instead of shipping dead or risky code.
+
+use_cases:
+  - Scan Java model-serving code for unused locals and empty catch blocks
+  - Detect copy-paste across multi-module JVM agent backends
+  - Add custom PMD rules for API-key handling in inference gateways
+  - Run PMD as a Maven or Gradle quality gate in CI
