@@ -1,0 +1,28 @@
+name: SuperMemory
+description: Memory engine for AI agents that stores and retrieves long-term context. SuperMemory runs locally or as an API so coding agents and RAG apps keep user and project memory across sessions.
+tagline: Fast, local-first memory API for AI agents
+
+github_url: https://github.com/supermemoryai/supermemory
+website_url: https://supermemory.ai
+docs_url: https://supermemory.ai/docs
+install_command: |
+  pip install supermemory
+  npm install supermemory
+
+category: RAG
+tags: [memory, rag, agents, context, python, typescript, local]
+pricing: freemium
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Agents forget everything between sessions and stuffing chat history
+  into the prompt does not scale. SuperMemory is a fast memory engine
+  you can run locally or via API so tools, coding agents, and RAG apps
+  persist and retrieve user and project context over time.
+
+use_cases:
+  - Give a coding agent persistent memory of repo decisions and prefs
+  - Store user facts and retrieve them in later RAG conversations
+  - Run SuperMemory locally for private agent memory without a cloud store
+  - Add a memory API to a multi-agent workflow that spans sessions

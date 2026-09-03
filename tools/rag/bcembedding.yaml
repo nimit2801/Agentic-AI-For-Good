@@ -1,0 +1,26 @@
+name: BCEmbedding
+description: NetEase Youdao embedding and reranker models built for RAG. BCEmbedding maps bilingual queries and passages into a shared space and reranks hits so Chinese-English retrieval stacks get higher-precision chunks.
+tagline: Bilingual embeddings and rerankers for RAG
+
+github_url: https://github.com/netease-youdao/BCEmbedding
+website_url: https://github.com/netease-youdao/BCEmbedding
+docs_url: https://github.com/netease-youdao/BCEmbedding
+install_command: pip install BCEmbedding
+
+category: RAG
+tags: [python, embeddings, reranker, rag, bilingual, youdao, retrieval]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  English-centric embedding models miss bilingual RAG queries, especially
+  Chinese-English mixes. BCEmbedding ships Youdao embedding and reranker
+  checkpoints so retrieval pipelines can encode and rerank mixed-language
+  queries and passages without training a custom bilingual model.
+
+use_cases:
+  - Embed Chinese and English docs into one space for RAG retrieval
+  - Rerank bilingual search hits before sending chunks to an LLM
+  - Swap a generic embedder for Youdao BCEmbedding in LlamaIndex
+  - Evaluate bilingual retrieval quality on RAG product datasets

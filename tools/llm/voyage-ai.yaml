@@ -1,0 +1,24 @@
+name: Voyage AI
+description: Embedding and rerank API tuned for retrieval quality. Voyage AI hosts domain-specific embedding models so RAG and search stacks get higher-precision vectors without training or serving embedders in-house.
+tagline: Retrieval-tuned embedding and rerank APIs
+
+website_url: https://www.voyageai.com
+docs_url: https://docs.voyageai.com
+install_command: pip install voyageai
+
+category: LLM
+tags: [embeddings, rerank, api, rag, python, retrieval]
+pricing: freemium
+is_open_source: false
+
+problem_solved: |
+  Generic embeddings underperform on code, legal, and finance retrieval.
+  Voyage AI serves retrieval-tuned embedding and rerank models over an
+  API so RAG pipelines get domain-aware vectors without training or
+  hosting a dedicated embedding cluster.
+
+use_cases:
+  - Embed code and docs for a developer RAG assistant
+  - Rerank vector search hits with Voyage rerank models
+  - Replace OpenAI embeddings with Voyage in a LangChain retriever
+  - Batch-embed a knowledge base through the Voyage Python SDK
