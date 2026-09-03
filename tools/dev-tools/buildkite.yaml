@@ -1,0 +1,25 @@
+name: Buildkite
+description: Hybrid CI/CD platform that runs jobs on your infrastructure through an open-source agent while hosting the control plane for pipelines, logs, and secrets. Code and artifacts stay in your network with elastic self-hosted runners.
+tagline: Self-hosted CI agents with a hosted pipeline control plane
+
+github_url: https://github.com/buildkite/agent
+website_url: https://buildkite.com
+docs_url: https://buildkite.com/docs
+
+category: Dev Tools
+tags: [ci-cd, self-hosted, agents, pipelines, devops, testing, mlops]
+pricing: freemium
+is_open_source: false
+
+problem_solved: |
+  GPU training jobs and private datasets cannot leave the VPC, but
+  hosted CI runners are off-network and hard to size. Buildkite keeps
+  an open-source agent on your machines (including GPU boxes) while
+  the hosted UI handles pipelines, logs, and secrets, so ML CI stays
+  inside your network without running a full Jenkins cluster.
+
+use_cases:
+  - Run GPU model tests on self-hosted agents while using the Buildkite UI
+  - Keep training data and model artifacts inside the VPC during CI
+  - Scale CI agents on Kubernetes or AWS for bursty ML pipelines
+  - Replace hosted-only runners when compliance requires on-prem builds

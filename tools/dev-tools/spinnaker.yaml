@@ -1,0 +1,26 @@
+name: Spinnaker
+description: Open-source multi-cloud continuous delivery platform for releasing software with high velocity and confidence. Spinnaker orchestrates pipelines, canaries, and rollbacks across AWS, GCP, Azure, Kubernetes, and other clouds.
+tagline: Multi-cloud continuous delivery with canaries and rollbacks
+
+github_url: https://github.com/spinnaker/spinnaker
+website_url: https://spinnaker.io
+docs_url: https://spinnaker.io/docs
+
+category: Dev Tools
+tags: [ci-cd, continuous-delivery, kubernetes, multi-cloud, canary, devops, mlops]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Shipping model-serving apps across several clouds means stitching
+  Jenkins jobs, kubectl scripts, and ad-hoc canaries with no shared
+  rollback story. Spinnaker gives one delivery plane for pipelines,
+  cluster management, canary analysis, and automated rollback so ML
+  services can ship fast without guessing which cluster is live.
+
+use_cases:
+  - Roll out inference services to Kubernetes with automated canary analysis
+  - Coordinate multi-cloud deployments of feature stores and model APIs
+  - Add approval gates and instant rollback when serving metrics regress
+  - Replace one-off deploy scripts with reusable Spinnaker pipelines

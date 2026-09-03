@@ -1,0 +1,26 @@
+name: cytoolz
+description: Cython implementation of the Toolz functional library for Python. cytoolz offers the same curry, pipe, get-in, and lazy map/filter helpers as toolz, compiled for faster inner loops in data and ML preprocessing pipelines.
+tagline: Fast Cython drop-in for the Toolz functional toolkit
+
+github_url: https://github.com/pytoolz/cytoolz
+docs_url: https://cytoolz.readthedocs.io
+
+category: Dev Tools
+tags: [python, cython, functional, performance, data-processing, pipelines]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+install_command: pip install cytoolz
+
+problem_solved: |
+  toolz is convenient for composing lazy transforms, but pure-Python
+  inner loops slow large feature pipelines. cytoolz is a Cython port
+  with the same API, so data and ML code can keep curry, pipe, and
+  get-in while running hot paths at C speed without rewriting helpers.
+
+use_cases:
+  - Speed up toolz-style feature transforms on large tabular datasets
+  - Drop in cytoolz where toolz APIs already compose preprocessing
+  - Curry and pipe record plucks in ingestion jobs with lower CPU cost
+  - Keep a functional toolkit in performance-sensitive Python services
