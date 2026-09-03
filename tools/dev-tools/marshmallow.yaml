@@ -1,0 +1,28 @@
+name: marshmallow
+description: A lightweight Python library for converting complex objects to and from simple datatypes. marshmallow schemas serialize, deserialize, and validate JSON payloads for APIs, job queues, and ML service contracts.
+tagline: Python object serialization and schema validation
+
+github_url: https://github.com/marshmallow-code/marshmallow
+website_url: https://marshmallow.readthedocs.io
+docs_url: https://marshmallow.readthedocs.io
+
+category: Dev Tools
+tags: [python, serialization, validation, schemas, json, api, dataclasses]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install marshmallow
+
+problem_solved: |
+  APIs, batch jobs, and agent tool calls pass nested JSON that must be
+  typed and validated before it hits a model. Hand-written dict checks
+  drift from the real payload shape. marshmallow schemas declare fields,
+  nested objects, and validators so load and dump stay consistent across
+  inference services, queues, and config files.
+
+use_cases:
+  - Validate LLM request bodies and tool-call arguments before they reach a model server
+  - Serialize ORM or dataclass objects to JSON for experiment tracking and job queues
+  - Share schema definitions between a training pipeline producer and an inference consumer
+  - Reject malformed dataset metadata and config files at the API boundary with field-level errors

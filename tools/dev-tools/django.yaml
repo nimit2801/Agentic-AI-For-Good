@@ -1,0 +1,29 @@
+name: Django
+description: The batteries-included Python web framework used to ship admin UIs, annotation portals, and model-serving backends. Django provides ORM, auth, templating, and a built-in admin so ML teams can expose datasets and inference without assembling a stack from scratch.
+tagline: Batteries-included Python web framework for apps and admin UIs
+
+github_url: https://github.com/django/django
+website_url: https://www.djangoproject.com
+docs_url: https://docs.djangoproject.com
+
+category: Dev Tools
+tags: [python, web-framework, orm, admin, api, backend, developer-tools]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+install_command: pip install Django
+
+problem_solved: |
+  ML products still need login, CRUD, admin, and a database layer around
+  models and datasets. Assembling Flask plus an ORM, auth, and an admin
+  panel repeats the same work on every internal tool. Django ships those
+  pieces together so teams can publish annotation UIs, experiment dashboards,
+  and inference admin in a single framework with migrations and security
+  defaults.
+
+use_cases:
+  - Build dataset annotation and review portals with Django admin, auth, and ORM-backed records
+  - Expose model registry, experiment metadata, and human-in-the-loop review behind a staff-only Django app
+  - Serve REST or JSON APIs in front of batch inference jobs using Django views and the ORM
+  - Prototype internal ML ops tools (user accounts, permissions, audit logs) without assembling a custom stack

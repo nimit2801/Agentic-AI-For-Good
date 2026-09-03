@@ -1,0 +1,28 @@
+name: Tornado
+description: A Python web framework and async networking library that uses a non-blocking I/O loop. Tornado is well suited to long-lived connections, WebSockets, and streaming HTTP used by chat UIs and token-streaming LLM proxies.
+tagline: Async Python web framework for long-lived connections
+
+github_url: https://github.com/tornadoweb/tornado
+website_url: https://www.tornadoweb.org
+docs_url: https://www.tornadoweb.org/en/stable
+
+category: Dev Tools
+tags: [python, web-framework, async, websockets, networking, streaming, http]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install tornado
+
+problem_solved: |
+  Token streaming, agent chat, and webhook fan-out need thousands of open
+  connections, which threaded WSGI servers handle poorly. Tornado provides
+  a non-blocking I/O loop, HTTP server, and WebSocket support in one
+  library so Python services can stream LLM output and keep sockets open
+  without a thread per client.
+
+use_cases:
+  - Stream LLM tokens to a browser over HTTP chunked responses or WebSockets
+  - Run long-lived agent chat backends that keep thousands of concurrent connections open
+  - Build webhook and notification fan-out services with Tornado's async HTTP client
+  - Prototype streaming inference proxies when you need WebSockets without a full ASGI stack
