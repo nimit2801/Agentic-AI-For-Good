@@ -1,0 +1,23 @@
+name: itsdangerous
+description: "Pallets library that cryptographically signs data so it can be sent into untrusted environments such as cookies, URLs, and sessions, then verified later for integrity."
+tagline: "Sign data for untrusted environments"
+github_url: https://github.com/pallets/itsdangerous
+website_url: https://itsdangerous.palletsprojects.com
+docs_url: https://itsdangerous.palletsprojects.com
+install_command: "pip install itsdangerous"
+category: Dev Tools
+tags:
+  - python
+  - security
+  - signing
+  - sessions
+  - flask
+  - cryptography
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+problem_solved: "Web apps need to pass trusted values through cookies, query strings, and email links without a round trip to a database, but unsigned data can be forged. itsdangerous provides timed serializers and signer helpers that attach HMAC signatures (and optional expiration) so Flask sessions, password-reset tokens, and state cookies can leave the server and come back intact or be rejected as tampered."
+use_cases:
+  - "Sign Flask or custom session cookies so client-side session data cannot be forged without the secret key"
+  - "Create timed password-reset or email-confirmation tokens that expire after a set interval"
+  - "Pass signed state through OAuth redirects or webhook payloads and verify integrity on the way back"

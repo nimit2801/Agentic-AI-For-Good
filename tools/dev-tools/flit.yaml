@@ -1,0 +1,23 @@
+name: Flit
+description: "Simplified Python packaging tool that publishes pure-Python packages to PyPI from pyproject.toml, without a setup.py, for projects that do not need a heavyweight build backend."
+tagline: "Simple Python packaging from pyproject.toml"
+github_url: https://github.com/pypa/flit
+website_url: https://flit.pypa.io
+docs_url: https://flit.pypa.io/en/stable/
+install_command: "pip install flit"
+category: Dev Tools
+tags:
+  - python
+  - packaging
+  - pypi
+  - pyproject
+  - build
+  - publishing
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+problem_solved: "Publishing a small pure-Python library often means fighting setuptools boilerplate, setup.py scripts, and extra build configuration. Flit uses a short pyproject.toml, builds an sdist and wheel, and uploads to PyPI in a few commands, so CLI tools and lightweight libraries can ship without a full packaging toolchain."
+use_cases:
+  - "Publish a pure-Python library or CLI tool to PyPI with flit build and flit publish from pyproject.toml"
+  - "Replace setup.py on a small package with a short [project] table and a PEP 517 flit_core backend"
+  - "Build reproducible sdists and wheels for internal Python utilities without a heavyweight packaging stack"
