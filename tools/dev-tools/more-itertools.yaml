@@ -1,0 +1,28 @@
+name: more-itertools
+description: Extra iterator tools beyond Python's itertools, including chunking, windowing, unique_everseen, and peekable streams. more-itertools is used in data loaders and ETL jobs that need readable batching without writing one-off generator helpers.
+tagline: Extra itertools for chunking, windows, and unique streams
+
+github_url: https://github.com/more-itertools/more-itertools
+website_url: https://more-itertools.readthedocs.io
+docs_url: https://more-itertools.readthedocs.io
+
+category: Dev Tools
+tags: [python, iterators, itertools, data-processing, etl, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install more-itertools
+
+problem_solved: |
+  Dataset loaders and ETL loops reinvent chunk, sliding window, and
+  unique-while-preserving-order helpers. Those one-offs are easy to get
+  wrong on empty input or peek. more-itertools ships tested recipes so
+  batching, grouping, and stream inspection stay one call instead of a
+  custom generator.
+
+use_cases:
+  - Chunk tokenized examples into training batches with ichunked
+  - Sliding-window over log lines or time series with windowed
+  - Dedupe streaming records while keeping first-seen order
+  - Peek at the next dataset item without consuming the iterator

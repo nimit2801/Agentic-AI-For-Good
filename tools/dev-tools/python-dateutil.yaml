@@ -1,0 +1,28 @@
+name: python-dateutil
+description: Powerful extensions to Python datetime, including flexible parsing, relative deltas, recurrence rules, and time zone handling. python-dateutil is the default way ML pipelines parse messy timestamps from logs, APIs, and dataset metadata.
+tagline: Parse and compute datetimes beyond the Python stdlib
+
+github_url: https://github.com/dateutil/dateutil
+website_url: https://dateutil.readthedocs.io
+docs_url: https://dateutil.readthedocs.io
+
+category: Dev Tools
+tags: [python, datetime, parsing, timezone, scheduling, timestamps, developer-tools]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install python-dateutil
+
+problem_solved: |
+  Logs, APIs, and dataset manifests ship timestamps in mixed formats
+  that datetime.strptime cannot guess. Relative windows like "last 3
+  weekdays" are painful in the stdlib. python-dateutil parses fuzzy
+  dates, applies relativedelta, and handles time zones so training
+  windows and experiment stamps stay correct.
+
+use_cases:
+  - Parse mixed ISO and human timestamps from logs into timezone-aware datetimes
+  - Compute training-window start dates with relativedelta instead of handmade calendar math
+  - Expand RRULE recurrences for scheduled data refreshes
+  - Normalize dataset metadata dates from S3 object keys and APIs
