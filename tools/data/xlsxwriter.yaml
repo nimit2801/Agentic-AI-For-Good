@@ -1,0 +1,27 @@
+name: XlsxWriter
+description: A Python module for writing Excel .xlsx files with charts, formatting, and images. XlsxWriter is used to export eval reports, cost spreadsheets, and dataset samples that stakeholders open in Excel without pandas ExcelWriter extras.
+tagline: Write Excel xlsx workbooks from Python
+
+github_url: https://github.com/jmcnamara/XlsxWriter
+website_url: https://xlsxwriter.readthedocs.io
+docs_url: https://xlsxwriter.readthedocs.io
+
+category: Data
+tags: [python, excel, xlsx, reporting, spreadsheets, export, data]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+install_command: pip install xlsxwriter
+
+problem_solved: |
+  Eval tables and cost reports need to land in Excel for non-Python
+  stakeholders. CSV drops charts and formatting, and COM automation
+  is Windows-only. XlsxWriter writes real .xlsx workbooks with styles
+  and charts from Python so reports open cleanly in Excel.
+
+use_cases:
+  - Export model eval scorecards as formatted Excel workbooks
+  - Write token-cost and usage spreadsheets with charts
+  - Dump dataset samples to xlsx for analyst review
+  - Generate multi-sheet experiment reports from a training job

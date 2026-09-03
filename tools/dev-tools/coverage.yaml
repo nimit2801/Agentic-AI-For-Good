@@ -1,0 +1,27 @@
+name: coverage
+description: A tool for measuring Python code coverage of tests. coverage.py is used in CI for ML libraries and agent apps to see which branches ran, fail the build below a threshold, and publish HTML reports.
+tagline: Measure Python test coverage in CI and locally
+
+github_url: https://github.com/coveragepy/coveragepy
+website_url: https://coverage.readthedocs.io
+docs_url: https://coverage.readthedocs.io
+
+category: Dev Tools
+tags: [python, testing, coverage, ci, pytest, quality, developer-tools]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install coverage
+
+problem_solved: |
+  Agent and ML libraries ship code paths that tests never hit. pytest
+  green then still hides untested branches. coverage.py traces which
+  lines ran so CI can fail below a threshold and publish an HTML map
+  of gaps before a release.
+
+use_cases:
+  - Fail CI when Python coverage drops below a project threshold
+  - Publish HTML coverage reports for an agent or SDK repo
+  - Find untested branches in data-processing and tool-calling code
+  - Combine coverage from pytest shards in a matrix build
