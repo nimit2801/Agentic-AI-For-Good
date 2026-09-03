@@ -1,0 +1,26 @@
+name: VectorChord
+description: Scalable, disk-friendly vector search extension for Postgres and the successor to pgvecto.rs, built for fast similarity search without moving embeddings out of the database.
+tagline: Disk-friendly Postgres vector search, successor to pgvecto.rs
+
+github_url: https://github.com/supervc-stack/VectorChord
+website_url: https://docs.vectorchord.ai/vectorchord/getting-started/overview.html
+docs_url: https://docs.vectorchord.ai/vectorchord/getting-started/overview.html
+
+category: Vector DB
+tags: [postgres, vector-search, embeddings, sql, rag, disk, extension]
+pricing: freemium
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Postgres vector indexes either keep everything in memory or force you onto a separate
+  vector database as embedding tables grow. VectorChord, the successor to pgvecto.rs,
+  adds scalable disk-friendly vector search inside Postgres so RAG and similarity
+  workloads stay next to relational data without a second serving stack.
+
+use_cases:
+  - Store document embeddings in Postgres and run ANN search without a separate vector DB
+  - Migrate a pgvecto.rs workload to VectorChord for larger, disk-backed indexes
+  - Join vector similarity results with SQL filters, metadata, and access control
+  - Serve RAG retrieval from the same Postgres instance that holds application data
+  - Scale beyond in-memory HNSW limits using disk-friendly vector indexes

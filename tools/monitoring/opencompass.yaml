@@ -1,0 +1,28 @@
+name: OpenCompass
+description: LLM evaluation platform from the OpenCompass project that benchmarks open and API models across 100-plus datasets, covering Llama, Qwen, GPT-4, Claude, and many other families.
+tagline: Open LLM evaluation across 100-plus datasets and model families
+
+github_url: https://github.com/open-compass/opencompass
+website_url: https://opencompass.org.cn/
+docs_url: https://opencompass.readthedocs.io/
+
+install_command: pip install -U opencompass
+
+category: Monitoring
+tags: [python, evaluation, benchmark, llm, datasets, huggingface]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Comparing LLMs usually means a handful of leaderboard scores that do not match your
+  tasks, or a pile of one-off eval scripts per model API. OpenCompass runs a shared
+  evaluation harness over 100-plus datasets and many model backends so teams can
+  measure open and closed models with the same protocol before they ship.
+
+use_cases:
+  - Benchmark Llama, Qwen, and GPT-4 on the same OpenCompass dataset suite
+  - Evaluate a fine-tuned checkpoint against base-model scores before production
+  - Add custom datasets to compare models on domain tasks instead of generic leaderboards
+  - Run local open-model evals with vLLM or LMDeploy backends from one config
+  - Publish reproducible eval reports for model selection reviews
