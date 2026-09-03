@@ -1,0 +1,28 @@
+name: attrs
+description: A Python library for defining classes without boilerplate. attrs generates __init__, comparison, hashing, and representation methods from typed attributes, used for configs, dataset records, and structured payloads in ML services.
+tagline: Boilerplate-free Python classes with typed attributes
+
+github_url: https://github.com/python-attrs/attrs
+website_url: https://www.attrs.org
+docs_url: https://www.attrs.org
+
+category: Dev Tools
+tags: [python, dataclasses, classes, typing, configuration, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install attrs
+
+problem_solved: |
+  Config objects, dataset rows, and API models need equality, hashing, and
+  init without a page of dunder methods. Hand-written classes drift and
+  dataclasses still leave some comparison and conversion work. attrs
+  declares attributes once and generates the class machinery, which is
+  why it underpins many Python ML libraries and service configs.
+
+use_cases:
+  - Define typed experiment and training-config objects with generated init, eq, and repr
+  - Model dataset records and feature rows as frozen attrs classes for hashing and caching
+  - Share structured payload types between a data pipeline and an inference service
+  - Replace verbose class boilerplate in agent tool argument containers

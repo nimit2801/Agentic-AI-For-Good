@@ -1,0 +1,27 @@
+name: granian
+description: A Rust HTTP server for Python applications supporting ASGI, WSGI, and RSGI. granian is a faster alternative to uvicorn and gunicorn for serving FastAPI, Flask, and inference APIs with lower latency and higher throughput.
+tagline: Rust HTTP server for ASGI, WSGI, and RSGI Python apps
+
+github_url: https://github.com/emmett-framework/granian
+docs_url: https://github.com/emmett-framework/granian
+
+category: Dev Tools
+tags: [python, rust, asgi, wsgi, http-server, fastapi, inference]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+install_command: pip install granian
+
+problem_solved: |
+  Python inference APIs spend a large share of latency in the HTTP server
+  process, especially under many concurrent streams. Pure-Python servers
+  struggle with that load. granian is a Rust server that speaks ASGI,
+  WSGI, and RSGI, so FastAPI and Flask model endpoints get a faster
+  worker without changing application code.
+
+use_cases:
+  - Serve FastAPI LLM and embedding APIs with a Rust ASGI worker instead of uvicorn
+  - Run Flask or Django WSGI model-admin apps behind granian for higher request throughput
+  - Host streaming inference endpoints that need cheaper concurrency than a pure-Python loop
+  - Benchmark and swap the process manager for production Python AI HTTP services
