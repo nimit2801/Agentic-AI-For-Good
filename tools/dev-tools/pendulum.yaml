@@ -1,0 +1,28 @@
+name: pendulum
+description: A Python datetime library that improves on the stdlib with a nicer API, time zone handling, and duration arithmetic. pendulum is a drop-in-friendly replacement for datetime used in scheduling, experiment timestamps, and log windows.
+tagline: Friendlier Python datetimes with proper time zones
+
+github_url: https://github.com/python-pendulum/pendulum
+website_url: https://pendulum.eustace.io
+docs_url: https://pendulum.eustace.io
+
+category: Dev Tools
+tags: [python, datetime, timezone, scheduling, timestamps, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install pendulum
+
+problem_solved: |
+  Training jobs, cron windows, and experiment logs break when naive
+  datetimes mix UTC and local time. The stdlib datetime API is easy to
+  misuse around DST and parsing. pendulum provides timezone-aware
+  datetimes, human durations, and consistent parsing so ML pipelines
+  schedule and stamp events without silent offset bugs.
+
+use_cases:
+  - Stamp experiment runs, checkpoints, and dataset versions with timezone-aware datetimes
+  - Compute training-window and SLA durations without DST mistakes
+  - Parse ISO timestamps from logs, APIs, and object-store metadata into a single type
+  - Schedule data-refresh and retraining jobs with readable datetime arithmetic

@@ -1,0 +1,28 @@
+name: websockets
+description: A Python library for building WebSocket servers and clients. websockets implements RFC 6455 and is used for streaming LLM tokens, agent chat, and bidirectional tool events without a heavier real-time stack.
+tagline: RFC 6455 WebSocket library for Python servers and clients
+
+github_url: https://github.com/python-websockets/websockets
+website_url: https://websockets.readthedocs.io
+docs_url: https://websockets.readthedocs.io
+
+category: Dev Tools
+tags: [python, websockets, streaming, realtime, async, llm, networking]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+install_command: pip install websockets
+
+problem_solved: |
+  Token streaming and agent UIs need a bidirectional socket, not request
+  and response HTTP. Rolling a WebSocket protocol by hand is error-prone
+  around ping, close, and fragmentation. websockets implements RFC 6455
+  for asyncio so Python services can stream model output and receive
+  client events on a standard socket.
+
+use_cases:
+  - Stream LLM tokens from a Python backend to a browser or desktop client
+  - Bidirectional agent chat where the server pushes tool results and the client sends interrupts
+  - Connect Python workers to a gateway over WebSockets for live job progress
+  - Prototype realtime inference demos without adopting a full Socket.IO stack

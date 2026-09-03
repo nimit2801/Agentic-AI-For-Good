@@ -1,0 +1,28 @@
+name: urllib3
+description: A powerful Python HTTP client used as the transport under requests and many SDKs. urllib3 provides connection pooling, retries, TLS, and file uploads for robust calls to LLM APIs, object storage, and internal model services.
+tagline: Production HTTP client with pooling and retries for Python
+
+github_url: https://github.com/urllib3/urllib3
+website_url: https://urllib3.readthedocs.io
+docs_url: https://urllib3.readthedocs.io
+
+category: Dev Tools
+tags: [python, http-client, retries, tls, networking, sdk, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install urllib3
+
+problem_solved: |
+  LLM SDKs, dataset downloads, and webhook clients need pooled TCP
+  connections, retries, and correct TLS. The stdlib http.client is low
+  level, and many wrappers hide retry behavior. urllib3 is the pooled
+  HTTP engine under requests and pip, so teams can configure retries,
+  timeouts, and uploads once for production Python I/O.
+
+use_cases:
+  - Configure connection pools and retries for LLM provider and vector-DB HTTP calls
+  - Download large training artifacts from S3-compatible endpoints with streaming responses
+  - Build custom Python SDK transports that need TLS, proxies, and retry policies
+  - Tune timeout and pool size for high-QPS embedding and inference clients
