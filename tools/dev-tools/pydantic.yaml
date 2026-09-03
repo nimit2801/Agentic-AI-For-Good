@@ -1,0 +1,28 @@
+name: Pydantic
+description: Data validation and settings management for Python using type hints. Pydantic parses JSON and Python objects into typed models, rejects bad input, and is the schema layer behind FastAPI, LangChain, and most agent tool-calling stacks.
+tagline: Type-hint data validation for Python APIs and agents
+
+github_url: https://github.com/pydantic/pydantic
+website_url: https://docs.pydantic.dev
+docs_url: https://docs.pydantic.dev
+
+category: Dev Tools
+tags: [python, validation, type-hints, json-schema, fastapi, pydantic, serialization]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install pydantic
+
+problem_solved: |
+  Agent tools, APIs, and training configs ingest JSON that does not
+  match the expected shape. Hand-written checks miss nested fields and
+  drift from type hints. Pydantic turns annotated models into runtime
+  validators and JSON Schema so bad payloads fail fast instead of
+  corrupting a pipeline downstream.
+
+use_cases:
+  - Validate LLM tool-call arguments against a typed Pydantic model
+  - Parse API request bodies in FastAPI and agent gateways
+  - Generate JSON Schema for structured output and function calling
+  - Load YAML or env settings into typed config objects for training jobs

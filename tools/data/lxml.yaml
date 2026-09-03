@@ -1,0 +1,27 @@
+name: lxml
+description: A Python XML and HTML toolkit on top of libxml2 and libxslt. lxml is used to parse messy web pages, sitemap XML, and document trees for scraping, RAG ingestion, and data extraction faster than stdlib ElementTree.
+tagline: Fast XML and HTML parsing for Python
+
+github_url: https://github.com/lxml/lxml
+website_url: https://lxml.de/
+docs_url: https://lxml.de/
+
+category: Data
+tags: [python, xml, html, parsing, scraping, xpath, data-extraction]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+install_command: pip install lxml
+
+problem_solved: |
+  RAG crawlers and scrapers hit broken HTML and huge XML dumps that
+  stdlib ElementTree chokes on. Beautiful Soup is convenient but slow
+  on large trees. lxml binds libxml2 so XPath, CSS select, and XML
+  writes stay fast enough for document ingestion pipelines.
+
+use_cases:
+  - Parse crawled HTML for RAG chunking with XPath or CSS selectors
+  - Ingest sitemap and document XML at scale for a knowledge base
+  - Back Beautiful Soup with the lxml parser for faster scraping
+  - Transform XML feature dumps with XSLT before a training job

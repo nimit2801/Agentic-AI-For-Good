@@ -1,0 +1,27 @@
+name: ujson
+description: An ultra-fast JSON encoder and decoder written in C with Python bindings. ujson is used in inference servers and data pipelines that serialize embeddings, traces, and request bodies where CPython json is the bottleneck.
+tagline: Ultra-fast C JSON encoder and decoder for Python
+
+github_url: https://github.com/ultrajson/ultrajson
+website_url: https://pypi.org/project/ujson/
+docs_url: https://github.com/ultrajson/ultrajson
+
+category: Data
+tags: [python, json, serialization, performance, c-extension, data-processing]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+install_command: pip install ujson
+
+problem_solved: |
+  High-QPS model servers and feature stores spend a large share of CPU
+  on json.dumps of embeddings and traces. The stdlib json module is
+  correct but slow on large nested payloads. ujson encodes and decodes
+  in C so those hot paths stay off the interpreter.
+
+use_cases:
+  - Speed up JSON request and response bodies on a Python inference API
+  - Dump embedding batches and feature rows without stdlib json overhead
+  - Parse high-volume trace logs in an observability pipeline
+  - Drop-in replace json.dumps in a hot serialization loop after measuring
