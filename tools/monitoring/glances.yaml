@@ -1,0 +1,28 @@
+name: Glances
+description: Cross-platform system monitor and top/htop alternative that shows CPU, memory, disk, network, and process stats in a terminal, web UI, or API on Linux, macOS, BSD, and Windows.
+tagline: Cross-platform top/htop alternative with a web UI and API
+
+github_url: https://github.com/nicolargo/glances
+website_url: http://nicolargo.github.io/glances/
+docs_url: https://glances.readthedocs.io/
+
+install_command: pip install glances
+
+category: Monitoring
+tags: [python, monitoring, system, terminal, metrics, cross-platform]
+pricing: free
+is_open_source: true
+license: LGPL-3.0
+
+problem_solved: |
+  Server debugging still starts with top, htop, or a cloud dashboard, none of which
+  work the same on Linux, macOS, and Windows or expose an API for scripts. Glances
+  is a single cross-platform monitor with terminal, web, and API modes so you can
+  watch CPU, memory, disk, and processes the same way on a laptop or a GPU box.
+
+use_cases:
+  - Watch GPU box CPU, memory, and disk from a terminal during model training
+  - Run Glances in web mode to share live host stats without a full observability stack
+  - Query process and memory stats from the Glances API inside an ops script
+  - Replace htop on mixed Linux and macOS fleets with one monitor
+  - Alert on disk or memory pressure from a lightweight local agent

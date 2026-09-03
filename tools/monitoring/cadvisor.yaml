@@ -1,0 +1,26 @@
+name: cAdvisor
+description: Google container advisor that analyzes CPU, memory, filesystem, and network usage of running containers so you can debug resource problems without installing a per-container sidecar.
+tagline: Live resource metrics for every container on the node
+
+github_url: https://github.com/google/cadvisor
+website_url: https://github.com/google/cadvisor
+docs_url: https://github.com/google/cadvisor/blob/master/docs/runtime_options.md
+
+category: Monitoring
+tags: [containers, metrics, kubernetes, docker, google, cpu, memory]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Container hosts expose process stats, but teams still cannot see per-container CPU,
+  memory, and filesystem usage without a custom exporter. cAdvisor runs on the node,
+  discovers containers, and exports live resource metrics so Kubernetes and Prometheus
+  setups can debug noisy neighbors and leaks at container granularity.
+
+use_cases:
+  - Export per-container CPU and memory metrics from a Docker or containerd host
+  - Debug a noisy neighbor on a Kubernetes node without SSHing into every pod
+  - Feed Prometheus with cAdvisor container stats already used by kubelet
+  - Inspect filesystem and network usage for GPU training jobs packed on one machine
+  - Spot memory leaks in long-running inference containers from a single node agent

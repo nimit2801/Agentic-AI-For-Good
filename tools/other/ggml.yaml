@@ -1,0 +1,26 @@
+name: ggml
+description: Tensor library for machine learning in C/C++ that powers local LLM inference stacks, with quantized ops and backends used by llama.cpp and related runtimes.
+tagline: C tensor library behind local LLM inference
+
+github_url: https://github.com/ggml-org/ggml
+website_url: https://github.com/ggml-org
+docs_url: https://github.com/ggml-org/ggml
+
+category: Other
+tags: [c, cpp, tensors, llm, quantization, inference, ggml]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Running neural nets locally still means pulling Python, CUDA wheels, and a huge
+  framework just to multiply tensors. ggml is a small C tensor library with
+  quantization and multiple backends so inference tools can ship a single binary
+  that runs LLMs on CPU or GPU without a Python runtime.
+
+use_cases:
+  - Embed quantized tensor ops in a C or C++ inference binary
+  - Prototype new GGML kernels that later land in llama.cpp
+  - Run local LLM math on CPU with 4-bit quantized weights
+  - Build a native app that infers without shipping PyTorch
+  - Share tensor primitives across whisper.cpp, llama.cpp, and related tools
