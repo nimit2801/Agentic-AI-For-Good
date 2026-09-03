@@ -1,0 +1,23 @@
+name: certifi
+description: "Curated Mozilla CA bundle for Python, used by Requests, urllib3, and pip to verify TLS certificates against a current set of root certificates instead of an incomplete system store."
+tagline: "Mozilla CA bundle for Python TLS"
+github_url: https://github.com/certifi/python-certifi
+website_url: https://github.com/certifi/python-certifi
+docs_url: https://github.com/certifi/python-certifi
+install_command: "pip install certifi"
+category: Dev Tools
+tags:
+  - python
+  - tls
+  - ssl
+  - certificates
+  - security
+  - http
+pricing: free
+is_open_source: true
+license: MPL-2.0
+problem_solved: "Python HTTPS clients fail or silently skip verification when the OS CA store is missing or outdated, especially in containers and Windows embeds. certifi ships the Mozilla root bundle and a where() helper so Requests, pip, and custom HTTP clients can verify TLS with a known-good CA set."
+use_cases:
+  - "Point Requests or urllib3 at certifi.where() so TLS verification uses the Mozilla CA bundle"
+  - "Bundle a current CA set in a Docker image that has no OS certificate package"
+  - "Give pip and other installers a trusted root store when installing packages over HTTPS"

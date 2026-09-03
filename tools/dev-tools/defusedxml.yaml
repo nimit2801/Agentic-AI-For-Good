@@ -1,0 +1,22 @@
+name: defusedxml
+description: "Python XML parsers that block XML bombs and XXE attacks by disabling entity expansion and remote DTDs on top of the standard library xml modules."
+tagline: "Safe XML parsing against XXE and bombs"
+github_url: https://github.com/tiran/defusedxml
+website_url: https://github.com/tiran/defusedxml
+docs_url: https://github.com/tiran/defusedxml
+install_command: "pip install defusedxml"
+category: Dev Tools
+tags:
+  - python
+  - xml
+  - security
+  - xxe
+  - parsing
+pricing: free
+is_open_source: true
+license: PSF-2.0
+problem_solved: "The standard library xml modules expand external entities and nested entities by default, so untrusted XML can read files or exhaust memory. defusedxml wraps ElementTree, minidom, and sax with safe defaults so APIs that ingest XML, SOAP, or SVG do not become XXE or billion-laughs endpoints."
+use_cases:
+  - "Parse untrusted XML uploads with defusedxml.ElementTree instead of xml.etree"
+  - "Harden SOAP or RSS ingestion in a data pipeline against XXE and XML bombs"
+  - "Drop-in replace stdlib XML parsers in an existing service that accepts XML from users"

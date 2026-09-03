@@ -1,0 +1,22 @@
+name: packaging
+description: "PyPA core utilities for Python package versions, specifiers, markers, and tags. Libraries and installers use it to parse PEP 440 versions and environment markers without reimplementing the specs."
+tagline: "Core Python packaging version utilities"
+github_url: https://github.com/pypa/packaging
+website_url: https://packaging.pypa.io
+docs_url: https://packaging.pypa.io
+install_command: "pip install packaging"
+category: Dev Tools
+tags:
+  - python
+  - packaging
+  - pep440
+  - pypi
+  - versions
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Comparing package versions with string splits breaks on PEP 440 epochs, pre-releases, and local versions. packaging is the shared library pip, setuptools, and build tools use to parse versions, specifiers, and markers so tools agree on whether 1.0a1 satisfies >=1.0."
+use_cases:
+  - "Parse and compare PEP 440 versions in a custom installer or lockfile tool"
+  - "Evaluate environment markers to decide whether a dependency applies on the current platform"
+  - "Inspect wheel tags and specifiers when debugging why pip will not install a build"
