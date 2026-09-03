@@ -1,0 +1,25 @@
+name: JaCoCo
+description: Java code coverage library that instruments JVM bytecode and reports line, branch, and instruction coverage. JaCoCo plugs into Maven, Gradle, and CI so model-serving APIs and agent workers fail the build when coverage drops.
+tagline: Java code coverage for Maven and Gradle
+
+github_url: https://github.com/jacoco/jacoco
+website_url: https://www.jacoco.org/jacoco
+docs_url: https://www.jacoco.org/jacoco/trunk/doc/index.html
+
+category: Dev Tools
+tags: [java, coverage, testing, jvm, maven, gradle, ci]
+pricing: free
+is_open_source: true
+license: EPL-2.0
+
+problem_solved: |
+  JVM AI services ship untested branches in embedding, retrieval, and
+  tool-call code. JaCoCo instruments classes at runtime and publishes
+  HTML and XML reports so Maven or Gradle CI can gate merges on coverage
+  for model gateways and agent workers.
+
+use_cases:
+  - Gate PRs on line and branch coverage for Java inference APIs
+  - Publish JaCoCo HTML reports for RAG backend test suites
+  - Track coverage of agent worker and tool-calling Java modules
+  - Integrate JaCoCo with Maven Surefire or Gradle test tasks in CI

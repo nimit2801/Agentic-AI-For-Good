@@ -1,0 +1,25 @@
+name: Google Truth
+description: Fluent assertions for Java and Android tests. Truth produces readable failure messages so JVM model APIs and on-device ML tests fail with clear diffs instead of opaque assertion dumps.
+tagline: Fluent Java assertions with readable failures
+
+github_url: https://github.com/google/truth
+website_url: https://truth.dev
+docs_url: https://truth.dev
+
+category: Dev Tools
+tags: [java, testing, assertions, android, jvm, google]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JUnit assertEquals dumps are hard to debug when embedding or serving
+  tests fail. Truth gives fluent, type-aware assertions and readable
+  diffs so JVM RAG backends and Android ML apps fail with the actual
+  mismatch, not a stack of generic assertion errors.
+
+use_cases:
+  - Assert embedding vector sizes and metadata maps in Java unit tests
+  - Write readable Android instrumentation tests for on-device ML apps
+  - Compare protobuf and Guava types in JVM model-serving test suites
+  - Replace opaque JUnit asserts with fluent Truth subjects in CI

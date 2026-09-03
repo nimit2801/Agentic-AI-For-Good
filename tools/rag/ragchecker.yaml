@@ -1,0 +1,26 @@
+name: RAGChecker
+description: Fine-grained evaluation framework for diagnosing RAG systems. RAGChecker scores claim-level entailment and splits retriever vs generator metrics so teams can see whether retrieval or generation is the failure mode.
+tagline: Diagnose RAG with claim-level metrics
+
+github_url: https://github.com/amazon-science/RAGChecker
+website_url: https://github.com/amazon-science/RAGChecker
+docs_url: https://github.com/amazon-science/RAGChecker
+install_command: pip install ragchecker
+
+category: RAG
+tags: [python, rag, evaluation, retrieval, generation, amazon, benchmark]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  End-to-end RAG scores hide whether the retriever missed evidence or the
+  generator hallucinated. RAGChecker uses claim-level entailment plus
+  diagnostic retriever and generator metrics so teams can target the
+  failing stage instead of guessing from a single accuracy number.
+
+use_cases:
+  - Diagnose whether RAG failures come from retrieval or generation
+  - Score claim-level faithfulness of answers against retrieved chunks
+  - Benchmark a RAG pipeline on the RAGChecker multi-domain dataset
+  - Compare retriever and generator variants with diagnostic metrics

@@ -1,0 +1,25 @@
+name: Robolectric
+description: Android unit testing framework that runs Android APIs on the JVM. Robolectric lets teams test on-device ML apps, camera pipelines, and agent UIs without an emulator or device farm.
+tagline: Run Android unit tests on the JVM
+
+github_url: https://github.com/robolectric/robolectric
+website_url: https://robolectric.org
+docs_url: https://robolectric.org
+
+category: Dev Tools
+tags: [android, testing, java, jvm, unit-testing, mobile]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Android ML and agent apps need fast unit tests, but emulators are slow
+  and flaky. Robolectric shadows the Android framework on the JVM so
+  Activities, Services, and on-device inference wrappers can be tested
+  in milliseconds on CI without a device farm.
+
+use_cases:
+  - Unit-test Android Activities that host on-device LLM or vision models
+  - Exercise camera and sensor pipelines for mobile ML without an emulator
+  - Run JVM-speed CI for Android agent UIs and background workers
+  - Shadow Android APIs when testing TensorFlow Lite wrappers in Gradle
