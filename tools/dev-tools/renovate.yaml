@@ -1,0 +1,22 @@
+name: Renovate
+description: "Cross-platform dependency automation that opens pull requests to update npm, pip, Docker, GitHub Actions, and other manifests on a schedule, with grouping, automerge, and package-manager-aware versioning."
+tagline: "Automated dependency update pull requests"
+github_url: https://github.com/renovatebot/renovate
+website_url: https://mend.io/renovate
+docs_url: https://docs.renovatebot.com
+install_command: "npm install -g renovate"
+category: Dev Tools
+tags:
+  - dependencies
+  - ci
+  - github
+  - security
+  - automation
+pricing: freemium
+is_open_source: true
+license: AGPL-3.0
+problem_solved: "Keeping lockfiles and Docker images current across a polyglot repo is tedious, so teams fall behind on security patches. Renovate scans package files, respects version ranges and changelogs, and opens grouped PRs on GitHub, GitLab, or self-hosted git so ML and app repos stay patched without a human bumping every pin."
+use_cases:
+  - "Install the Renovate GitHub App so Python, Node, and Actions dependencies get scheduled update PRs"
+  - "Self-host renovate as a CLI or GitHub Action to update private registries and monorepos"
+  - "Group related package updates and automerge patch releases after CI passes to cut review load"

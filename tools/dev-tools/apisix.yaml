@@ -1,0 +1,22 @@
+name: APISIX
+description: "Apache cloud-native API gateway and AI gateway built on OpenResty, with dynamic routing, plugins, and traffic control for HTTP, gRPC, and LLM proxy use cases."
+tagline: "Cloud-native API and AI gateway"
+github_url: https://github.com/apache/apisix
+website_url: https://apisix.apache.org
+docs_url: https://apisix.apache.org/docs/
+category: Dev Tools
+tags:
+  - api-gateway
+  - reverse-proxy
+  - kubernetes
+  - llm
+  - openresty
+  - traffic
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Exposing model inference and microservices to the internet needs auth, rate limits, and routing without rewriting each service. APISIX is a high-performance gateway with a plugin model for JWT, limiting, observability, and AI/LLM proxying so teams put one control plane in front of APIs and model endpoints."
+use_cases:
+  - "Route HTTP and gRPC traffic to microservices with dynamic upstreams and health checks"
+  - "Put an AI gateway in front of LLM providers to apply auth, token quotas, and request logging"
+  - "Run APISIX on Kubernetes as the ingress data plane with etcd-backed configuration"

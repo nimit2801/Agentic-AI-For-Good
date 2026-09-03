@@ -1,0 +1,23 @@
+name: Hypercorn
+description: "ASGI and WSGI server based on the Hyper libraries and inspired by Gunicorn, with HTTP/1, HTTP/2, HTTP/3, and WebSocket support for FastAPI, Starlette, and Quart apps."
+tagline: "ASGI/WSGI server with HTTP/2 and HTTP/3"
+github_url: https://github.com/pgjones/hypercorn
+website_url: https://hypercorn.readthedocs.io
+docs_url: https://hypercorn.readthedocs.io
+install_command: "pip install hypercorn"
+category: Dev Tools
+tags:
+  - python
+  - asgi
+  - wsgi
+  - http2
+  - fastapi
+  - serving
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "ASGI apps need HTTP/2, HTTP/3, and WebSockets in production, but many WSGI servers stop at HTTP/1.1. Hypercorn serves ASGI and WSGI with HTTP/2 and HTTP/3, so FastAPI, Starlette, and Quart services can take HTTP/2 traffic and WebSocket streams without a separate proxy just for protocol support."
+use_cases:
+  - "Serve a FastAPI or Quart app with HTTP/2 and WebSockets using hypercorn as the process"
+  - "Run mixed ASGI and WSGI applications in one worker when migrating a Flask service toward async"
+  - "Expose HTTP/3 endpoints for low-latency model APIs where a Gunicorn-only stack is not enough"

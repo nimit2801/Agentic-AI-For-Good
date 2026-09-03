@@ -1,0 +1,22 @@
+name: Waitress
+description: "Production WSGI server for Python 3 from the Pylons project. It is pure Python, has no required C extensions, and is designed to run on Windows and Unix without a reverse-proxy requirement in small deployments."
+tagline: "Pure-Python production WSGI server"
+github_url: https://github.com/Pylons/waitress
+website_url: https://docs.pylonsproject.org/projects/waitress/en/latest/
+docs_url: https://docs.pylonsproject.org/projects/waitress/en/latest/
+install_command: "pip install waitress"
+category: Dev Tools
+tags:
+  - python
+  - wsgi
+  - http
+  - serving
+  - web
+pricing: free
+is_open_source: true
+license: ZPL-2.1
+problem_solved: "Flask and Pyramid apps need a production WSGI server, but Gunicorn does not run on Windows and the built-in dev server is not safe for production. Waitress is a pure-Python WSGI server that works on Windows and Unix, so ML model APIs and internal tools can be served without compiling C extensions or depending on a Unix-only process manager."
+use_cases:
+  - "Serve a Flask or Pyramid ML scoring API in production on Windows or Linux with waitress-serve"
+  - "Replace the Flask development server before exposing an internal tool beyond localhost"
+  - "Run a WSGI app behind IIS or as a Windows service where Gunicorn is not available"
