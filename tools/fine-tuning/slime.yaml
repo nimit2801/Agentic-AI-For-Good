@@ -1,0 +1,27 @@
+name: slime
+description: An LLM post-training framework for RL scaling from THUDM. It pairs Megatron training with SGLang rollouts so teams can run large-scale RL, tool use, and agentic reward loops without wrapping another training stack.
+tagline: LLM post-training framework for RL scaling
+
+github_url: https://github.com/THUDM/slime
+website_url: https://thudm.github.io/slime
+docs_url: https://thudm.github.io/slime
+
+category: Fine-tuning
+tags: [python, rl, post-training, megatron, sglang, agents, llm]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Large-scale RL for LLMs usually means gluing a trainer, an inference
+  engine, and a reward loop with custom shims. slime keeps Megatron
+  and SGLang arguments native, so new training and serving features
+  pass through instead of hiding behind a wrapper. Data generation,
+  tools, sandboxes, and multi-agent rewards plug in without forking
+  the training kernel.
+
+use_cases:
+  - Run RL post-training for LLMs with Megatron plus SGLang rollouts
+  - Plug math, code, search, or sandbox verifiers into the reward loop
+  - Scale multi-agent and long-horizon tool-use RL without a custom trainer
+  - Pass through new Megatron and SGLang flags without rewriting slime

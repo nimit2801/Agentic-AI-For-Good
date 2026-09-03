@@ -1,0 +1,28 @@
+name: honcho
+description: A Python clone of Foreman for Procfile-based apps. Start API servers, workers, and sidecar processes from one file so local ML stacks run the same process set as production.
+tagline: Procfile process manager for Python apps
+
+github_url: https://github.com/nickstenning/honcho
+website_url: https://pypi.org/project/honcho/
+docs_url: https://honcho.readthedocs.io/
+
+category: Dev Tools
+tags: [python, procfile, process-manager, local-dev, workers, devops]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install honcho
+
+problem_solved: |
+  Local AI apps often need an API, a queue worker, a frontend, and a
+  model server at once. Running each in a separate terminal drifts from
+  production. honcho reads a Procfile and starts every process with
+  colored logs, so a FastAPI plus worker plus sidecar stack matches
+  what you ship without a full container compose file.
+
+use_cases:
+  - Start an API, Celery or RQ worker, and frontend from one Procfile
+  - Match Heroku-style process types in local ML app development
+  - Color-code logs from several processes while debugging agent stacks
+  - Run a model server beside a web app without writing a compose file
