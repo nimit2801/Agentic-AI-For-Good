@@ -1,0 +1,27 @@
+name: semantic-release
+description: Fully automated version management and package publishing. semantic-release reads conventional commits, computes the next semver, writes changelog notes, and publishes to npm, GitHub Releases, and other registries without manual version bumps.
+tagline: Automate semver, changelogs, and package publishing from commits
+
+github_url: https://github.com/semantic-release/semantic-release
+website_url: https://semantic-release.org
+docs_url: https://semantic-release.org
+
+category: Dev Tools
+tags: [ci-cd, semver, npm, releases, changelog, automation, javascript]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: npm install --save-dev semantic-release
+
+problem_solved: |
+  Human version bumps mix emotion with numbering and often skip changelog
+  or publish steps. semantic-release inspects conventional commits, picks
+  the next semver, generates notes, and publishes so ML and JS libraries
+  ship consistently from CI without a release manager.
+
+use_cases:
+  - Publish npm packages automatically when conventional commits land on main
+  - Generate GitHub Releases and changelogs from commit history in CI
+  - Enforce semantic versioning for Python and JS SDKs used by ML clients
+  - Remove manual version files from agent-framework and tool-catalog repos

@@ -1,0 +1,28 @@
+name: Please
+description: High-performance hermetic build system for reproducible multi-language builds. Please hashes inputs, runs isolated tasks in parallel, and uses remote caches so only affected targets rebuild across Linux, macOS, and FreeBSD.
+tagline: Fast hermetic builds with hash-based caching
+
+github_url: https://github.com/thought-machine/please
+website_url: https://please.build
+docs_url: https://please.build/quickstart.html
+
+category: Dev Tools
+tags: [build-system, hermetic, caching, multi-language, ci, golang, developer-tools]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: curl -s https://get.please.build | bash
+
+problem_solved: |
+  Multi-language ML repos waste CI time rebuilding unchanged C++, Go, and
+  Python targets because timestamp-based tools cannot tell what actually
+  changed. Please hashes every input, isolates tasks, and shares remote
+  caches so only affected targets rebuild, keeping agent and model builds
+  fast and reproducible.
+
+use_cases:
+  - Build mixed Python, Go, and C++ ML toolchains with hermetic caching
+  - Share remote build caches across CI agents for faster PR checks
+  - Replace ad-hoc Makefiles with declared, parallel Please targets
+  - Reproduce production artifacts from hashed inputs on developer laptops
