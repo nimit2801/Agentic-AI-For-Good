@@ -1,0 +1,28 @@
+name: SortedContainers
+description: Pure-Python sorted list, dict, and set types with C-extension speed. SortedContainers keeps ordered indexes for streaming logs, token vocabularies, and feature maps without a C compiler or tree-map boilerplate.
+tagline: Fast sorted list, dict, and set for Python
+
+github_url: https://github.com/grantjenks/python-sortedcontainers
+website_url: http://www.grantjenks.com/docs/sortedcontainers/
+docs_url: http://www.grantjenks.com/docs/sortedcontainers/
+install_command: pip install sortedcontainers
+
+category: Dev Tools
+tags: [python, data-structures, sorted, collections, performance]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Python's built-in dict and set are unordered (or insertion-ordered) and
+  bisect on a list is easy to get wrong under mutation. SortedContainers
+  provides SortedList, SortedDict, and SortedSet in pure Python with
+  performance close to C extensions, so ranking, sliding windows, and
+  ordered indexes work without compiling native code in constrained
+  training images.
+
+use_cases:
+  - Maintain a ranked leaderboard or top-k feature index while streaming events
+  - Keep token vocabularies and ID maps in sorted order for deterministic encoding
+  - Implement sliding-window stats over time-ordered logs without a database
+  - Drop in sorted dict/set types when bisect plus list mutation becomes error-prone

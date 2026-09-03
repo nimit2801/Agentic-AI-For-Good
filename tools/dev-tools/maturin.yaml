@@ -1,0 +1,27 @@
+name: Maturin
+description: Build and publish Python packages from Rust. Maturin compiles PyO3, cffi, and uniffi crates plus Rust binaries into wheels so ML teams can ship native extensions on PyPI without writing setuptools glue.
+tagline: Build Python wheels from Rust crates
+
+github_url: https://github.com/PyO3/maturin
+website_url: https://maturin.rs
+docs_url: https://www.maturin.rs
+install_command: pip install maturin
+
+category: Dev Tools
+tags: [python, rust, packaging, pyo3, wheels, bindings, build]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  High-performance ML libraries often live in Rust, but publishing them as
+  Python packages means fighting setuptools, manylinux, and cross-compilation.
+  Maturin builds PyO3, cffi, and uniffi projects into pip-installable wheels,
+  including Rust binaries, so teams can develop in Cargo and ship a single
+  `pip install` artifact for CUDA-adjacent kernels, tokenizers, and CLI tools.
+
+use_cases:
+  - Publish a PyO3 tokenizer or vector kernel as a Python wheel on PyPI
+  - Cross-compile manylinux and musllinux wheels for ML libraries in CI
+  - Ship a Rust CLI next to a Python package from one Cargo project
+  - Replace fragile setuptools-rust glue in native Python extension builds
