@@ -1,0 +1,28 @@
+name: jsonschema
+description: A Python implementation of the JSON Schema specification for validating JSON documents against drafts of the standard. jsonschema is used to check API payloads, dataset manifests, and agent tool arguments before they hit an ML service.
+tagline: Validate JSON documents against JSON Schema in Python
+
+github_url: https://github.com/python-jsonschema/jsonschema
+website_url: https://python-jsonschema.readthedocs.io
+docs_url: https://python-jsonschema.readthedocs.io
+
+category: Dev Tools
+tags: [python, json, validation, schema, api, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install jsonschema
+
+problem_solved: |
+  Dataset manifests, tool-calling arguments, and HTTP payloads arrive as
+  loosely typed JSON and fail late inside training or inference code.
+  Hand-written checks drift from the contract. jsonschema validates
+  documents against a published schema so bad records are rejected at
+  the boundary instead of crashing a job mid-run.
+
+use_cases:
+  - Validate agent tool-call arguments against a JSON Schema before execution
+  - Reject malformed dataset manifests at ingest instead of during training
+  - Check FastAPI or webhook payloads against a shared schema file
+  - Generate clearer error messages for config JSON used by ML pipelines

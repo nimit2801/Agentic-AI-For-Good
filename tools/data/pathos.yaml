@@ -1,0 +1,28 @@
+name: pathos
+description: A Python framework for parallel graph management and heterogeneous computing that wraps multiprocessing, threading, and SSH pools. pathos is used in scientific and ML workflows that need to map callables across local cores and remote hosts with dill serialization.
+tagline: Parallel maps across processes, threads, and remote hosts
+
+github_url: https://github.com/uqfoundation/pathos
+website_url: https://pathos.readthedocs.io
+docs_url: https://pathos.readthedocs.io
+
+category: Data
+tags: [python, parallel, multiprocessing, distributed, scientific-computing, dill, ml-pipeline]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+install_command: pip install pathos
+
+problem_solved: |
+  Scientific and ML jobs need to map nested functions across cores and
+  remote SSH hosts, but stdlib multiprocessing cannot pickle those
+  callables. pathos uses dill-backed process, thread, and SSH pools so
+  the same map API runs locally or on a cluster without rewriting
+  closures into importable modules.
+
+use_cases:
+  - Parallelize embarrassingly parallel evals with ProcessPool and dill
+  - Map a nested notebook function across local cores without refactoring
+  - Fan work to remote hosts over SSH with a shared pool API
+  - Mix thread and process pools in a heterogeneous preprocessing graph

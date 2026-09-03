@@ -1,0 +1,28 @@
+name: filelock
+description: A platform-independent file lock for Python that works on Linux, macOS, and Windows. filelock is used so concurrent training jobs, cache writers, and CLI tools do not corrupt a shared file when multiple processes run on one machine.
+tagline: Cross-platform inter-process file locking for Python
+
+github_url: https://github.com/tox-dev/filelock
+website_url: https://py-filelock.readthedocs.io
+docs_url: https://py-filelock.readthedocs.io
+
+category: Dev Tools
+tags: [python, locking, concurrency, multiprocessing, files, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install filelock
+
+problem_solved: |
+  Two training workers or CLI instances writing the same checkpoint,
+  cache, or config file race and corrupt it. OS lock APIs differ across
+  Windows and POSIX. filelock gives a single FileLock/Timeout API so
+  processes serialize access to shared artifacts without a Redis lock
+  or custom fcntl code.
+
+use_cases:
+  - Serialize checkpoint writes when several workers share a local directory
+  - Guard a disk cache or dataset download so parallel jobs do not clobber it
+  - Lock a local SQLite or YAML config used by multiple CLI processes
+  - Coordinate one-at-a-time model artifact promotion on a single host
