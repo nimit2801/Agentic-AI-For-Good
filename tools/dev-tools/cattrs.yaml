@@ -1,0 +1,28 @@
+name: cattrs
+description: Composable converters that turn attrs classes, dataclasses, and similar structures into dicts, JSON, and unstructured data. cattrs is used to (un)structure configs, dataset records, and API payloads without writing per-field glue.
+tagline: Convert attrs and dataclasses to and from unstructured data
+
+github_url: https://github.com/python-attrs/cattrs
+website_url: https://catt.rs
+docs_url: https://catt.rs
+
+category: Dev Tools
+tags: [python, attrs, dataclasses, serialization, converters, configuration, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install cattrs
+
+problem_solved: |
+  Typed experiment configs and dataset rows need to round-trip through
+  JSON and YAML. Hand-written asdict/from_dict misses unions, nested
+  collections, and custom types. cattrs generates converters for attrs
+  and dataclasses so ML services structure and unstructure payloads
+  without per-class boilerplate.
+
+use_cases:
+  - Unstructure training-config dataclasses to JSON for experiment tracking
+  - Structure API JSON into attrs classes for an inference service
+  - Convert nested dataset records with unions and optional fields
+  - Share one converter registry between a pipeline and a FastAPI app
