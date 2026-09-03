@@ -1,0 +1,28 @@
+name: FLAML
+description: A fast AutoML and tuning library from Microsoft. FLAML finds accurate models and hyperparameters with a low computational budget, covering classical ML, forecasting, NLP, and LLM-related tuning tasks.
+tagline: Fast AutoML and hyperparameter tuning from Microsoft
+
+github_url: https://github.com/microsoft/FLAML
+website_url: https://microsoft.github.io/FLAML/
+docs_url: https://microsoft.github.io/FLAML/
+
+category: Fine-tuning
+tags: [python, automl, hyperparameter-tuning, microsoft, nlp, forecasting, fine-tuning]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install flaml
+
+problem_solved: |
+  AutoML stacks often burn large compute on exhaustive search before a
+  usable model appears. FLAML allocates a time budget across learners and
+  hyperparameters so it finds strong configs cheaply. Teams use it to
+  tune classical models, forecasting, NLP, and LLM-related settings when
+  they cannot afford a full neural architecture search.
+
+use_cases:
+  - AutoML-train classifiers and regressors on tabular features with a wall-clock time budget
+  - Tune hyperparameters for forecasting and NLP tasks without a large GPU cluster
+  - Search LLM and RAG settings (chunk size, k, temperature) as an inexpensive black-box study
+  - Compare learner families quickly before committing to a heavier fine-tuning run

@@ -1,0 +1,29 @@
+name: structlog
+description: A Python logging library that produces structured, context-rich log events instead of format-string messages. structlog binds request IDs, model names, and trace fields onto every event so AI services can query logs as data.
+tagline: Structured, context-rich logging for Python services
+
+github_url: https://github.com/hynek/structlog
+website_url: https://www.structlog.org
+docs_url: https://www.structlog.org
+
+category: Monitoring
+tags: [python, logging, structured-logging, observability, tracing, monitoring]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install structlog
+
+problem_solved: |
+  Production inference and agent services need logs you can filter by
+  request ID, model, tenant, and latency. stdlib logging emits strings
+  that break when fields are missing and are hard to query in log
+  platforms. structlog binds context once and emits structured events
+  (JSON or key-value) so dashboards and traces stay aligned with the
+  code path.
+
+use_cases:
+  - Bind request_id, model, and user_id onto every log line in an LLM API gateway
+  - Emit JSON logs from agent tool calls for search in Elasticsearch, Loki, or CloudWatch
+  - Add timing and token-count fields to inference logs without custom formatters
+  - Keep context across async tasks so a single trace is reconstructable from structured events

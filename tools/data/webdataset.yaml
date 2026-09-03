@@ -1,0 +1,27 @@
+name: webdataset
+description: A high-performance Python I/O library for large-scale deep learning datasets, with strong PyTorch support. webdataset streams tar-sharded samples so training can read from local disk or cloud object storage without a custom data server.
+tagline: Tar-sharded dataset I/O for large-scale PyTorch training
+
+github_url: https://github.com/webdataset/webdataset
+docs_url: https://github.com/webdataset/webdataset
+
+category: Data
+tags: [python, pytorch, datasets, data-loading, tar, object-storage, training]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+install_command: pip install webdataset
+
+problem_solved: |
+  Image, audio, and multimodal training sets are too large to store as
+  millions of small files, and naive folder loaders crush filesystems and
+  object stores. webdataset packs samples into sequential tar shards that
+  stream from disk or S3 into PyTorch DataLoaders, so distributed jobs
+  read at sequential speed without a custom dataset server.
+
+use_cases:
+  - Stream tar-sharded image or multimodal datasets from S3 into PyTorch training workers
+  - Replace folder-of-files loaders that stall object storage with sequential shard reads
+  - Shuffle and mix large web-scale corpora across GPUs without loading the full set into RAM
+  - Publish reusable dataset shards that local laptops and cluster jobs can consume with the same API
