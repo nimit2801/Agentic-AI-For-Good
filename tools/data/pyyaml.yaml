@@ -1,0 +1,27 @@
+name: PyYAML
+description: The canonical YAML parser and emitter for Python, wrapping libyaml for fast load and dump. PyYAML is the library most ML configs, Hydra defaults, and Kubernetes manifests go through when Python code reads YAML.
+tagline: Canonical YAML parser and emitter for Python
+
+github_url: https://github.com/yaml/pyyaml
+website_url: https://pyyaml.org
+docs_url: https://pyyaml.org/wiki/PyYAMLDocumentation
+
+category: Data
+tags: [python, yaml, config, parsing, serialization, kubernetes, hydra]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install pyyaml
+
+problem_solved: |
+  Training jobs, agent configs, and Kubernetes manifests live in YAML.
+  Without a standard parser, every tool invents a subset and silently
+  drops tags or duplicates. PyYAML is the canonical CPython binding so
+  load, dump, and custom constructors stay compatible across the stack.
+
+use_cases:
+  - Load Hydra, training, and agent YAML configs into Python dicts
+  - Dump experiment hyperparameters without breaking YAML 1.1 tools
+  - Parse Kubernetes and Compose manifests in Python deploy scripts
+  - Register custom YAML tags for dataset and model object constructors

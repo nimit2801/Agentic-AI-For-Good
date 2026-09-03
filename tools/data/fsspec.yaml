@@ -1,0 +1,27 @@
+name: fsspec
+description: A Python filesystem interface that gives one API over local disk, S3, GCS, Azure, HTTP, and more. fsspec is how Pandas, Dask, Hugging Face datasets, and training jobs open cloud paths without vendor-specific SDKs in application code.
+tagline: One filesystem API for local disk and cloud object stores
+
+github_url: https://github.com/fsspec/filesystem_spec
+website_url: https://filesystem-spec.readthedocs.io
+docs_url: https://filesystem-spec.readthedocs.io
+
+category: Data
+tags: [python, filesystem, s3, gcs, azure, pandas, dask, data-loading]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+install_command: pip install fsspec
+
+problem_solved: |
+  Training and RAG pipelines read from S3, GCS, and local disk with
+  different SDKs. Switching storage then rewrites every open() call.
+  fsspec exposes a common filesystem API so Pandas, Dask, and dataset
+  loaders take s3:// or gcs:// URLs without vendor code in the job.
+
+use_cases:
+  - Open s3:// and gcs:// dataset paths from Pandas or Dask with one API
+  - Cache remote files locally during repeated Hugging Face dataset loads
+  - Write checkpoints to object storage without an AWS SDK in training code
+  - List and glob cloud prefixes the same way you glob a local directory
