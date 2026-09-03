@@ -1,0 +1,27 @@
+name: orjson
+description: Fast, correct Python JSON library written in Rust, with support for dataclasses, datetime, numpy, and strict UTF-8, used as a drop-in speed upgrade over the stdlib json module.
+tagline: Rust-backed JSON for Python that stays correct at speed
+
+github_url: https://github.com/ijl/orjson
+docs_url: https://github.com/ijl/orjson
+
+install_command: pip install orjson
+
+category: Dev Tools
+tags: [python, json, rust, serialization, numpy, performance]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Python services that serialize LLM traces, embeddings metadata, or API payloads
+  spend surprising CPU in json.dumps, and many fast libraries still mangle datetime
+  or numpy types. orjson is a Rust-backed encoder/decoder that is faster than the
+  stdlib while round-tripping dataclasses, datetimes, and numpy arrays correctly.
+
+use_cases:
+  - Speed up FastAPI or Flask JSON responses without changing response models
+  - Serialize numpy arrays and dataclasses in an ML scoring service
+  - Replace stdlib json in a high-QPS logging or tracing pipeline
+  - Parse large JSON datasets in a Python ETL job with lower CPU time
+  - Keep datetime and UTF-8 behavior correct while chasing p99 latency

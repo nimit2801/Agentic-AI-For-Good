@@ -1,0 +1,28 @@
+name: loguru
+description: Python logging library that replaces the stdlib logging module with a single import, sensible defaults, structured sinks, and exception catching so apps get useful logs without boilerplate.
+tagline: Python logging that is actually simple
+
+github_url: https://github.com/Delgan/loguru
+website_url: https://loguru.readthedocs.io
+docs_url: https://loguru.readthedocs.io
+
+install_command: pip install loguru
+
+category: Dev Tools
+tags: [python, logging, observability, exceptions, structured-logs]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  The stdlib logging module needs handlers, formatters, and logger trees before a
+  script prints a useful line, so ML jobs and agent workers ship with print() or
+  silent failures. loguru gives a ready-to-use logger with rotation, colors, and
+  exception capture from one import so you spend time on the product, not logging config.
+
+use_cases:
+  - Add rotating file and stderr logs to a training script without logging.basicConfig
+  - Capture exceptions with stack traces in an agent worker using logger.catch
+  - Structure logs for later ingestion into Loki or a log platform
+  - Replace print debugging in a CLI tool with leveled, colored output
+  - Share one logger setup across FastAPI, Celery, and batch jobs
