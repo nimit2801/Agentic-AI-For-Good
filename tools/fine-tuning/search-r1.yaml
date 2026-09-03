@@ -1,0 +1,26 @@
+name: Search-R1
+description: An RL training framework for reasoning models that call a search engine mid-rollout. Built on veRL, it interleaves LLM generation with retrieval so agents learn when to search, not only how to think.
+tagline: RL training for LLMs that call search
+
+github_url: https://github.com/PeterGriffinJin/Search-R1
+website_url: https://arxiv.org/pdf/2503.09516
+docs_url: https://github.com/PeterGriffinJin/Search-R1
+
+category: Fine-tuning
+tags: [python, rl, search, retrieval, reasoning, verl, llm]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Reasoning RL usually trains a model to think in isolation. Real
+  agent tasks need search mid-generation, but most GRPO stacks do not
+  interleave retrieval. Search-R1 extends veRL so rollouts can call a
+  search engine, then keep generating, teaching the model when to look
+  things up instead of hallucinating facts.
+
+use_cases:
+  - Train an LLM with RL to call a search engine during reasoning
+  - Interleave retrieval and generation in veRL-style GRPO rollouts
+  - Evaluate search-augmented reasoning on multi-hop QA tasks
+  - Study when models learn to search versus answer from parameters

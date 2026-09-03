@@ -1,0 +1,25 @@
+name: EasyR1
+description: An efficient scalable multi-modality RL training framework based on veRL, from the LLaMA Factory authors. Run GRPO-style post-training for language and vision-language models without assembling a custom RL stack.
+tagline: Multi-modality RL training on veRL
+
+github_url: https://github.com/hiyouga/EasyR1
+website_url: https://verl.readthedocs.io
+docs_url: https://github.com/hiyouga/EasyR1
+
+category: Fine-tuning
+tags: [python, rl, grpo, multimodal, verl, vlm, llm]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  veRL is powerful but heavy to configure for everyday GRPO runs,
+  especially with vision-language models. EasyR1 wraps that stack into
+  a smaller recipe so teams can post-train language and multi-modal
+  models with RL without owning a full distributed RL codebase.
+
+use_cases:
+  - Run GRPO post-training for open LLMs on a veRL-based stack
+  - Fine-tune vision-language models with multi-modality RL
+  - Scale RL rollouts without writing a custom trainer on top of veRL
+  - Share compact EasyR1 recipes instead of a full RL research repo

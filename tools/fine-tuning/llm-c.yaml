@@ -1,0 +1,25 @@
+name: llm.c
+description: LLM training in simple raw C and CUDA from Andrej Karpathy. Train GPT-2 scale models without a Python training stack, so the hot path is readable C and the GPU kernels stay in one place.
+tagline: LLM training in simple C and CUDA
+
+github_url: https://github.com/karpathy/llm.c
+docs_url: https://github.com/karpathy/llm.c
+
+category: Fine-tuning
+tags: [c, cuda, gpt, training, llm, karpathy, gpu]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Most LLM trainers hide the math behind Python, autograd, and huge
+  frameworks. That is hard to audit and slow to change at the kernel
+  level. llm.c trains GPT-style models in plain C and CUDA so you can
+  read the full training loop, study GPU kernels, and run a serious
+  pretrain or finetune without a PyTorch dependency on the hot path.
+
+use_cases:
+  - Train or finetune GPT-2 class models in C and CUDA without PyTorch
+  - Study a full LLM training loop that fits in a small C codebase
+  - Benchmark CUDA kernels against Python trainer stacks
+  - Teach GPU training internals without a multi-file framework
