@@ -1,0 +1,25 @@
+name: NullAway
+description: Error Prone plugin from Uber that catches NullPointerExceptions at compile time. NullAway uses @Nullable annotations with low build overhead so JVM model APIs fail the compile instead of crashing in production.
+tagline: Fast compile-time null checking for Java
+
+github_url: https://github.com/uber/NullAway
+website_url: https://github.com/uber/NullAway
+docs_url: https://github.com/uber/NullAway/wiki
+
+category: Dev Tools
+tags: [java, null-safety, error-prone, static-analysis, jvm, uber]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  NullPointerExceptions still take down Java model gateways after tests
+  pass. NullAway runs as an Error Prone check on every compile, using
+  @Nullable annotations to reject unsafe dereferences with under 10%
+  build overhead so agent workers fail CI, not production.
+
+use_cases:
+  - Enforce @Nullable contracts on Java embedding and retrieval APIs
+  - Fail compilation on unsafe dereferences in agent worker code
+  - Add NullAway to Gradle or Maven Error Prone pipelines for JVM ML
+  - Adopt JSpecify nullness annotations on a Java RAG backend
