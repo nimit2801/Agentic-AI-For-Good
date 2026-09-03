@@ -1,0 +1,27 @@
+name: platformdirs
+description: Python package for determining platform-specific directories such as user data, config, cache, and logs. platformdirs handles macOS, Windows, Linux, and Android so ML apps store caches and configs in the right place.
+tagline: Correct user data, config, and cache paths on every OS
+
+github_url: https://github.com/tox-dev/platformdirs
+website_url: https://platformdirs.readthedocs.io
+docs_url: https://platformdirs.readthedocs.io
+
+category: Dev Tools
+tags: [python, paths, xdg, cache, config, cross-platform]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install platformdirs
+
+problem_solved: |
+  Hard-coded ~/.cache or AppData paths break on other operating
+  systems and ignore XDG conventions. platformdirs returns the right
+  user data, config, cache, and log directories so model caches,
+  tokenizer files, and CLI configs land where each OS expects.
+
+use_cases:
+  - Store Hugging Face-style model caches in the OS cache directory
+  - Save CLI config for agent tools under the platform config path
+  - Keep experiment logs in the user log directory on macOS and Linux
+  - Share path logic across Windows and Unix training scripts

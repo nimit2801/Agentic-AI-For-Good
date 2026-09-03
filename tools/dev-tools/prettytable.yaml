@@ -1,0 +1,28 @@
+name: PrettyTable
+description: Display tabular data in a visually appealing ASCII table format. PrettyTable helps CLI tools and notebooks print aligned tables for metrics, eval results, and dataset previews without a heavyweight dataframe UI.
+tagline: Pretty ASCII tables for Python CLIs and notebooks
+
+github_url: https://github.com/prettytable/prettytable
+website_url: https://pypi.org/project/prettytable/
+docs_url: https://github.com/prettytable/prettytable
+
+category: Dev Tools
+tags: [python, tables, cli, ascii, formatting, notebooks]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+install_command: pip install prettytable
+
+problem_solved: |
+  Printing eval metrics or sample rows with print() produces ragged
+  columns that are hard to scan in logs and terminals. PrettyTable
+  builds aligned ASCII tables with sorting and field selection so ML
+  CLIs and training logs can show structured results without depending
+  on a notebook widget.
+
+use_cases:
+  - Print model eval metrics as aligned tables in CI logs
+  - Preview dataset sample rows in a terminal training script
+  - Format agent tool output as readable ASCII tables
+  - Sort and select columns when dumping experiment comparison tables

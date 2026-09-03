@@ -1,0 +1,27 @@
+name: humanize
+description: Python helpers that turn numbers, file sizes, dates, and timedeltas into human-readable strings. humanize is useful in ML CLIs and dashboards for showing dataset size, ETA, and parameter counts without raw integers.
+tagline: Human-readable numbers, dates, and file sizes in Python
+
+github_url: https://github.com/python-humanize/humanize
+website_url: https://humanize.readthedocs.io
+docs_url: https://humanize.readthedocs.io
+
+category: Dev Tools
+tags: [python, formatting, cli, dates, numbers, ux]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install humanize
+
+problem_solved: |
+  Training logs dump raw byte counts, epoch seconds, and 1e9-scale
+  parameter numbers that humans cannot scan quickly. humanize formats
+  sizes, relative times, and integers into readable strings so CLIs,
+  agent status lines, and reports stay understandable.
+
+use_cases:
+  - Show dataset and checkpoint sizes as MB or GB in training logs
+  - Print relative times for job start and ETA in experiment CLIs
+  - Format parameter counts and step numbers for human-readable reports
+  - Display file sizes in agent download and cache status messages
