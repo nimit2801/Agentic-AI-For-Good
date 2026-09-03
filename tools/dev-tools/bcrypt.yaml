@@ -1,0 +1,22 @@
+name: bcrypt
+description: "Python bindings for the bcrypt password-hashing algorithm, used to store passwords as salted hashes that are expensive to brute-force compared with MD5 or SHA-1."
+tagline: "bcrypt password hashing for Python"
+github_url: https://github.com/pyca/bcrypt
+website_url: https://github.com/pyca/bcrypt
+docs_url: https://github.com/pyca/bcrypt
+install_command: "pip install bcrypt"
+category: Dev Tools
+tags:
+  - python
+  - security
+  - passwords
+  - hashing
+  - cryptography
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Storing login passwords with SHA-256 or unsalted hashes lets attackers crack dumps quickly. bcrypt provides a slow, adaptive, salted hash designed for passwords, with a Python API to hash and verify credentials so web apps and APIs can store secrets that remain expensive to brute-force even if the database leaks."
+use_cases:
+  - "Hash user passwords at registration with bcrypt.hashpw and a per-user salt before writing to the database"
+  - "Verify login attempts with bcrypt.checkpw without storing plaintext or reversible ciphertext"
+  - "Raise the bcrypt cost factor over time so password hashes stay expensive as hardware gets faster"

@@ -1,0 +1,22 @@
+name: Twine
+description: "PyPA utility for publishing Python packages to PyPI and other indexes. It uploads sdists and wheels with API-token auth, GPG signing, and checks that files are well-formed before they go live."
+tagline: "Publish Python packages to PyPI"
+github_url: https://github.com/pypa/twine
+website_url: https://twine.readthedocs.io
+docs_url: https://twine.readthedocs.io
+install_command: "pip install twine"
+category: Dev Tools
+tags:
+  - python
+  - packaging
+  - pypi
+  - publishing
+  - wheels
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Uploading a package with raw HTTP or setup.py upload skips checks and often leaks credentials. Twine is the supported PyPA client: it validates distributions, uses PyPI API tokens over HTTPS, can GPG-sign artifacts, and refuses to upload broken metadata so releases to PyPI or a private index do not fail after the fact."
+use_cases:
+  - "Upload built sdists and wheels to PyPI with twine upload after a CI build"
+  - "Publish internal packages to a private Python index using repository URL and API token config"
+  - "Check distributions with twine check before tagging a release so long description rendering will not fail on PyPI"

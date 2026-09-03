@@ -1,0 +1,22 @@
+name: oauthlib
+description: "Generic, spec-compliant Python implementation of OAuth 1 and OAuth 2 request-signing logic that frameworks use as the protocol core rather than talking to a single vendor."
+tagline: "Spec-compliant OAuth for Python"
+github_url: https://github.com/oauthlib/oauthlib
+website_url: https://oauthlib.readthedocs.io
+docs_url: https://oauthlib.readthedocs.io
+install_command: "pip install oauthlib"
+category: Dev Tools
+tags:
+  - python
+  - oauth
+  - authentication
+  - security
+  - http
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+problem_solved: "OAuth request signing is easy to get wrong: nonce reuse, missing PKCE, or malformed Authorization headers break providers and leak tokens. oauthlib is a transport-agnostic implementation of OAuth 1 and OAuth 2 used by requests-oauthlib and many web frameworks, so applications follow the spec without reimplementing signature and grant logic."
+use_cases:
+  - "Sign OAuth 1 or OAuth 2 requests from a Python client without depending on a single HTTP library"
+  - "Power requests-oauthlib or a custom API client that talks to Twitter, GitHub, or other OAuth providers"
+  - "Implement authorization-code, client-credentials, or PKCE flows with spec-checked parameter handling"
