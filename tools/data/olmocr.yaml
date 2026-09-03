@@ -1,0 +1,28 @@
+name: OlmOCR
+description: Allen Institute toolkit that linearizes PDFs into clean text for LLM datasets and training, with a dedicated OCR model, benchmark, and GPU inference pipeline for large document collections.
+tagline: PDF-to-text toolkit for LLM training data
+
+github_url: https://github.com/allenai/olmocr
+website_url: https://olmocr.allenai.org/
+docs_url: https://github.com/allenai/olmocr
+
+install_command: pip install olmocr
+
+category: Data
+tags: [python, ocr, pdf, datasets, llm, allenai, documents]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  LLM training and RAG pipelines need linearized PDF text, but generic OCR mangles
+  tables, equations, and multi-column layouts, and cloud OCR APIs do not scale to
+  millions of papers. OlmOCR ships a document model, benchmark, and inference pipeline
+  so teams can turn PDFs into training-ready text without a commercial OCR stack.
+
+use_cases:
+  - Convert scientific PDFs into linearized text for LLM pretraining or fine-tuning
+  - Run GPU batch OCR over a document corpus instead of a per-page SaaS API
+  - Benchmark OCR quality on olmOCR-Bench before swapping extractors in a data pipeline
+  - Build a RAG corpus from scanned reports where layout-aware text extraction matters
+  - Train a custom OlmOCR checkpoint on domain documents using the included trainer

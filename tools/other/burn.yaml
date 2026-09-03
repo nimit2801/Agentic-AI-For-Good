@@ -1,0 +1,28 @@
+name: Burn
+description: Rust tensor library and deep learning framework focused on flexibility, efficiency, and portability across backends, so you can train and run models without locking into a Python-only stack.
+tagline: Rust deep learning framework that does not trade flexibility for speed
+
+github_url: https://github.com/tracel-ai/burn
+website_url: https://burn.dev
+docs_url: https://burn.dev/books/burn/
+
+install_command: cargo add burn
+
+category: Other
+tags: [rust, deep-learning, tensors, training, inference, gpu, autodiff]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Most deep learning stacks are Python-first, so production teams rewrite models in
+  another language for performance or embedding, then drift from the training code.
+  Burn is a Rust tensor and autodiff framework with pluggable backends so you can train
+  and deploy in one language without giving up dynamic graphs or hardware portability.
+
+use_cases:
+  - Train a neural net in Rust with autodiff instead of wrapping a Python training loop
+  - Deploy a model inside a Rust service without a Python runtime or FFI to PyTorch
+  - Switch backends for CPU, GPU, or fused kernels without rewriting model code
+  - Embed on-device inference in a Rust binary for edge or CLI tools
+  - Prototype research models in Rust when Python GIL overhead is the bottleneck

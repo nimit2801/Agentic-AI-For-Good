@@ -1,0 +1,28 @@
+name: SQLModel
+description: FastAPI-adjacent Python library that combines SQLAlchemy and Pydantic so you can define a single model that works as an ORM table, a validation schema, and an API type.
+tagline: One Python model for SQL tables, validation, and APIs
+
+github_url: https://github.com/fastapi/sqlmodel
+website_url: https://sqlmodel.tiangolo.com/
+docs_url: https://sqlmodel.tiangolo.com/
+
+install_command: pip install sqlmodel
+
+category: Data
+tags: [python, sql, orm, pydantic, fastapi, sqlalchemy, database]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Python data APIs usually keep a SQLAlchemy table, a Pydantic schema, and a FastAPI
+  type in sync by hand, so fields drift and insert bugs show up at runtime. SQLModel
+  lets you declare one class that is an ORM model and a Pydantic model, so database
+  rows, validation, and API payloads share the same source of truth.
+
+use_cases:
+  - Define a single Python class for a Postgres table and a FastAPI request/response model
+  - Store agent run metadata with type-checked inserts instead of raw SQLAlchemy plus Pydantic
+  - Prototype a small data API without maintaining duplicate ORM and schema classes
+  - Migrate a FastAPI app off duplicated SQLAlchemy models onto SQLModel
+  - Query relational feature stores with editor autocomplete from the same model used in APIs
