@@ -1,0 +1,27 @@
+name: charset-normalizer
+description: Universal character-encoding detector in pure Python. charset-normalizer is the encoding backend for Requests and HTTPX, so crawlers and RAG ingest can decode messy web bytes without chardet.
+tagline: Universal encoding detector for Python
+
+github_url: https://github.com/jawah/charset_normalizer
+website_url: https://charset-normalizer.readthedocs.io
+docs_url: https://charset-normalizer.readthedocs.io/en/latest/
+install_command: pip install charset-normalizer
+
+category: Dev Tools
+tags: [python, encoding, unicode, http, parsing, requests]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Web crawls, PDF extracts, and email dumps arrive as bytes with wrong or
+  missing charset headers. chardet is slow and unmaintained. charset-normalizer
+  detects encodings in pure Python with better accuracy and is what Requests
+  and HTTPX already use, so RAG ingest and scraping pipelines decode text
+  without a native chardet dependency.
+
+use_cases:
+  - Decode crawled HTML and API bodies before chunking for RAG
+  - Replace chardet in scraping and ETL jobs that ingest mixed encodings
+  - Inspect encoding guesses when training data looks garbled after download
+  - Normalize charset handling in HTTP clients built on Requests or HTTPX
