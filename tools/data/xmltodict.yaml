@@ -1,0 +1,27 @@
+name: xmltodict
+description: Python module that makes working with XML feel like working with JSON. xmltodict parses XML into nested dicts and dumps dicts back to XML, which is useful for older ML data feeds and enterprise APIs that still speak XML.
+tagline: XML in, nested Python dicts out
+
+github_url: https://github.com/martinblech/xmltodict
+docs_url: https://github.com/martinblech/xmltodict
+
+category: Data
+tags: [python, xml, json, parsing, data-ingestion, etl]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install xmltodict
+
+problem_solved: |
+  Many enterprise and scientific feeds still ship XML, but ML pipelines
+  expect dicts and JSON. ElementTree is verbose for nested records.
+  xmltodict converts XML to ordered dicts and back, so ingestion jobs
+  can normalize SOAP, RSS, and vendor dumps without hand-written tree
+  walking.
+
+use_cases:
+  - Convert XML vendor feeds into dicts for feature extraction
+  - Round-trip nested Python dicts to XML for legacy model APIs
+  - Stream-parse large XML dumps into records for training datasets
+  - Normalize SOAP responses before loading them into a warehouse

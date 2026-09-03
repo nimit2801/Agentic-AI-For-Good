@@ -1,0 +1,28 @@
+name: JMESPath
+description: Query language for JSON with a Python implementation. JMESPath extracts and transforms nested JSON with a compact expression syntax used by AWS CLI, so ML pipelines can pull fields from API payloads without custom parsers.
+tagline: JSON query language with a Python runtime
+
+github_url: https://github.com/jmespath/jmespath.py
+website_url: https://jmespath.org
+docs_url: https://jmespath.org
+
+category: Dev Tools
+tags: [python, json, query, aws, data-extraction, etl]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install jmespath
+
+problem_solved: |
+  Nested JSON from cloud APIs and model endpoints is painful to walk
+  with chained get() calls. JMESPath lets you declare projections,
+  filters, and slices in one expression, the same language AWS CLI
+  uses, so feature jobs and agent tools can extract fields consistently
+  across services.
+
+use_cases:
+  - Extract nested fields from AWS and model API JSON responses
+  - Filter lists of job records in data pipelines with one expression
+  - Share the same JSON queries between CLI scripts and Python agents
+  - Project large payloads down to the keys a training job actually needs

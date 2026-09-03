@@ -1,0 +1,25 @@
+name: httptools
+description: Fast HTTP parser for Python built on Node.js http-parser / llhttp. httptools is used by uvicorn and other ASGI servers to parse HTTP requests quickly, which matters when serving many model inference connections.
+tagline: Fast HTTP parser used by uvicorn and ASGI stacks
+
+github_url: https://github.com/MagicStack/httptools
+
+category: Dev Tools
+tags: [python, http, parser, uvicorn, asgi, performance]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install httptools
+
+problem_solved: |
+  Pure-Python HTTP parsing becomes a bottleneck when an inference
+  server handles thousands of short requests. httptools wraps a C HTTP
+  parser so uvicorn and similar ASGI servers can decode headers and
+  bodies quickly without writing parser code in each serving stack.
+
+use_cases:
+  - Speed up uvicorn HTTP parsing for model-serving APIs
+  - Parse HTTP/1.x requests in custom Python inference gateways
+  - Replace slow pure-Python header parsing in high-QPS agent backends
+  - Build ASGI servers that share a battle-tested C HTTP parser

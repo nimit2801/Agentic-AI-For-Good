@@ -1,0 +1,28 @@
+name: yarl
+description: URL parsing and building library for Python used by aiohttp. yarl gives an immutable URL type with encoded path, query, and user parts so async ML clients construct and inspect endpoints without string concatenation bugs.
+tagline: Immutable URL objects for Python HTTP clients
+
+github_url: https://github.com/aio-libs/yarl
+website_url: https://yarl.aio-libs.org
+docs_url: https://yarl.aio-libs.org
+
+category: Dev Tools
+tags: [python, url, aiohttp, asyncio, http, networking]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install yarl
+
+problem_solved: |
+  Building URLs with f-strings mishandles encoding, query maps, and
+  path joins, which breaks signed cloud URLs and model endpoints.
+  yarl provides an immutable URL object with safe updates, so aiohttp
+  and agent HTTP clients can compose endpoints without leaking
+  encoding bugs.
+
+use_cases:
+  - Build and update inference endpoint URLs with encoded query params
+  - Parse webhook and dataset URLs into path, host, and query parts
+  - Share immutable URL objects across aiohttp client sessions
+  - Join relative paths onto a model-gateway base URL safely

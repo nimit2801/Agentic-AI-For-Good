@@ -1,0 +1,28 @@
+name: watchfiles
+description: Simple, modern, and fast file watching and code reload for Python, written in Rust. watchfiles notifies you when source or data files change so ML training loops, dev servers, and data pipelines can reload without polling.
+tagline: Fast Rust-backed file watching for Python
+
+github_url: https://github.com/samuelcolvin/watchfiles
+website_url: https://watchfiles.helpmanual.io
+docs_url: https://watchfiles.helpmanual.io
+
+category: Dev Tools
+tags: [python, rust, file-watching, reload, asyncio, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install watchfiles
+
+problem_solved: |
+  Python file watchers based on polling waste CPU and miss bursts of
+  writes from dataset dumps or generated code. watchfiles uses native
+  OS notifications via a Rust core, so training jobs, uvicorn reloads,
+  and feature-pipeline watchers wake only on real changes with low
+  overhead on large trees.
+
+use_cases:
+  - Reload a local model API server when Python source files change
+  - Watch dataset directories and trigger preprocessing on new files
+  - Drive asyncio callbacks when config or prompt templates are edited
+  - Replace polling loops in ML experiment tooling with native watchers
