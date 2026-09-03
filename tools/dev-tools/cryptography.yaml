@@ -1,0 +1,28 @@
+name: cryptography
+description: A Python library of cryptographic primitives and recipes, including TLS, Fernet, X.509, and hashing. cryptography is the package ML services use for API token signing, secret encryption, and certificate work instead of rolling custom crypto.
+tagline: Cryptographic recipes and primitives for Python
+
+github_url: https://github.com/pyca/cryptography
+website_url: https://cryptography.io
+docs_url: https://cryptography.io/en/latest/
+
+category: Dev Tools
+tags: [python, cryptography, tls, x509, encryption, security, hashing]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install cryptography
+
+problem_solved: |
+  Agent platforms store API keys, sign webhooks, and terminate TLS.
+  Homegrown AES or hashlib wrappers are easy to get wrong. cryptography
+  ships reviewed recipes such as Fernet plus low-level primitives so
+  Python services encrypt secrets and verify certificates without
+  inventing a cipher.
+
+use_cases:
+  - Encrypt API keys and model-cache blobs at rest with Fernet
+  - Sign and verify webhooks from LLM vendors and CI systems
+  - Load X.509 certificates for mTLS between training and serving
+  - Hash and compare secrets without depending on OpenSSL bindings directly

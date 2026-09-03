@@ -1,0 +1,28 @@
+name: trio
+description: A Python async library for structured concurrency that cancels child tasks as a tree instead of leaking them. Trio is used for network clients, agent I/O, and test harnesses that need timeouts and nurseries without asyncio's unstructured task soup.
+tagline: Structured concurrency for Python async I/O
+
+github_url: https://github.com/python-trio/trio
+website_url: https://trio.readthedocs.io
+docs_url: https://trio.readthedocs.io
+
+category: Dev Tools
+tags: [python, async, concurrency, networking, structured-concurrency, io]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install trio
+
+problem_solved: |
+  asyncio tasks outlive their parents, so a failed LLM call can leave
+  sockets and child work running. Timeouts then become ad-hoc cancels.
+  Trio nurseries start and cancel a tree of tasks together, which makes
+  agent I/O, tests, and network clients fail cleanly instead of leaking
+  background work.
+
+use_cases:
+  - Run parallel tool calls with a nursery that cancels on first error
+  - Write async network clients with timeouts that actually stop I/O
+  - Test concurrent agent workflows without leftover asyncio tasks
+  - Port AnyIO backends that prefer Trio over asyncio for structured cancel
