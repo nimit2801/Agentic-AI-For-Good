@@ -1,0 +1,27 @@
+name: jsonpickle
+description: A Python library that serializes arbitrary object graphs to JSON and reconstitutes them. jsonpickle is used to persist custom classes, NumPy-adjacent objects, and experiment state when pickle is unsafe or not portable.
+tagline: Serialize arbitrary Python object graphs to JSON
+
+github_url: https://github.com/jsonpickle/jsonpickle
+website_url: https://jsonpickle.readthedocs.io
+docs_url: https://jsonpickle.readthedocs.io/en/latest/
+
+category: Data
+tags: [python, json, serialization, pickle, object-graph, checkpointing]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+install_command: pip install jsonpickle
+
+problem_solved: |
+  Experiment state and custom Python classes are not JSON-serializable,
+  and pickle is binary, unsafe across trust boundaries, and version
+  brittle. jsonpickle encodes object graphs as JSON so checkpoints,
+  caches, and debug dumps stay readable and language-portable.
+
+use_cases:
+  - Checkpoint custom experiment objects as JSON instead of pickle
+  - Dump object graphs for debugging agent state without binary pickle
+  - Persist class instances in a cache that other languages can inspect
+  - Round-trip nested Python objects in notebooks and eval harnesses

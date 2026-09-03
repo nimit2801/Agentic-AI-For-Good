@@ -1,0 +1,27 @@
+name: tabulate
+description: Pretty-print tabular data in Python as plain text, Markdown, HTML, or LaTeX. tabulate is used in CLI tools, notebooks, and eval reports that need aligned tables from lists of dicts without pulling in a spreadsheet library.
+tagline: Pretty-print tables from Python data structures
+
+github_url: https://github.com/astanin/python-tabulate
+website_url: https://pypi.org/project/tabulate/
+docs_url: https://github.com/astanin/python-tabulate
+
+category: Dev Tools
+tags: [python, tables, cli, markdown, reporting, formatting, notebooks]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install tabulate
+
+problem_solved: |
+  Eval scores, token usage, and CLI inventory dumps are lists of rows
+  that print as ragged dicts. Spreadsheet libraries are heavy for a
+  terminal table. tabulate aligns columns and emits Markdown or HTML so
+  agent CLIs and notebooks show readable tables without extra deps.
+
+use_cases:
+  - Print model eval metrics as a Markdown table in a GitHub report
+  - Format CLI inventory of tools, jobs, or GPU nodes as aligned text
+  - Render notebook experiment comparisons without pandas styling
+  - Export HTML tables from Python scripts for internal dashboards
