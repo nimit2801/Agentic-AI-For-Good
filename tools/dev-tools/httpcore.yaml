@@ -1,0 +1,28 @@
+name: httpcore
+description: Minimal HTTP client that powers HTTPX. httpcore provides a low-level, transport-agnostic HTTP/1.1 and HTTP/2 core so Python ML clients can share connection pooling, timeouts, and proxies without depending on requests.
+tagline: Low-level HTTP/1.1 and HTTP/2 core for HTTPX
+
+github_url: https://github.com/encode/httpcore
+website_url: https://www.encode.io/httpcore/
+docs_url: https://www.encode.io/httpcore/
+
+category: Dev Tools
+tags: [python, http, httpx, http2, networking, async]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+install_command: pip install httpcore
+
+problem_solved: |
+  High-level HTTP libraries hide transports, which makes it hard to
+  plug custom connection pools or HTTP/2 into model API clients.
+  httpcore is a small core with sync and async transports that HTTPX
+  uses, so teams can control pooling, proxies, and HTTP versions
+  without rewriting request APIs.
+
+use_cases:
+  - Tune HTTP/2 and connection pooling under HTTPX model-API clients
+  - Share a transport layer between sync and async inference callers
+  - Add custom proxies or timeouts at the transport layer for agents
+  - Build thin HTTP clients that do not depend on the full requests stack
