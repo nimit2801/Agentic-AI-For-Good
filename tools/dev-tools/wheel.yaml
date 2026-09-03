@@ -1,0 +1,28 @@
+name: Wheel
+description: Official binary distribution format for Python. Wheel builds and installs .whl packages so compiled extensions, CUDA wheels, and data files install without running setup.py on every machine.
+tagline: Python's official binary package format
+
+github_url: https://github.com/pypa/wheel
+website_url: https://wheel.readthedocs.io
+docs_url: https://wheel.readthedocs.io
+
+category: Dev Tools
+tags: [python, packaging, pip, wheels, build, pypa]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install wheel
+
+problem_solved: |
+  Installing scientific and ML packages from source is slow and fails
+  without compilers. Wheel is the standard binary format pip uses to
+  ship prebuilt artifacts, including native extensions, so teams can
+  publish CUDA or C-extension packages once and install them quickly
+  in training images.
+
+use_cases:
+  - Build .whl artifacts for Python ML libraries in CI
+  - Install prebuilt native extensions without compiling on every GPU node
+  - Package data files and compiled code for reproducible pip installs
+  - Convert setup.py projects to wheels for faster Docker image builds
