@@ -1,0 +1,28 @@
+name: pexpect
+description: A Python module for driving interactive programs in a pseudo-terminal. Spawn shells, CLIs, and SSH sessions, then expect patterns and send input as if a human were at the keyboard.
+tagline: Automate interactive terminal programs from Python
+
+github_url: https://github.com/pexpect/pexpect
+website_url: https://pexpect.readthedocs.io/
+docs_url: https://pexpect.readthedocs.io/
+
+category: Dev Tools
+tags: [python, pty, cli, automation, ssh, testing]
+pricing: free
+is_open_source: true
+license: ISC
+
+install_command: pip install pexpect
+
+problem_solved: |
+  Many developer and ML tools only expose an interactive CLI, not a
+  clean API. Subprocess pipes deadlock on prompts and pagers. pexpect
+  talks to programs through a pseudo-terminal, waits for expected
+  output, and sends replies, so agents and CI jobs can drive installers,
+  REPLs, and remote shells without a human at the keyboard.
+
+use_cases:
+  - Drive interactive installers and CLIs that wait for yes/no prompts
+  - Automate SSH logins and remote commands from Python agent scripts
+  - Test REPL tools by spawning them and asserting on expected output
+  - Script gdb, pdb, or model CLIs that only work in a real terminal
