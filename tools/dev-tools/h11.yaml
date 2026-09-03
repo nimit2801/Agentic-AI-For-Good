@@ -1,0 +1,28 @@
+name: h11
+description: Pure-Python, bring-your-own-I/O implementation of HTTP/1.1. h11 is the protocol engine behind HTTPX and many ASGI stacks, so Python ML services can speak HTTP without binding to a particular socket library.
+tagline: Sans-I/O HTTP/1.1 protocol library for Python
+
+github_url: https://github.com/python-hyper/h11
+website_url: https://h11.readthedocs.io
+docs_url: https://h11.readthedocs.io
+
+category: Dev Tools
+tags: [python, http, http11, sans-io, networking, httpx]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install h11
+
+problem_solved: |
+  Most HTTP clients couple parsing to sockets, which makes it hard to
+  reuse protocol logic across asyncio, Trio, or custom transports in
+  model-serving code. h11 implements HTTP/1.1 as a state machine with
+  no I/O, so HTTPX and similar stacks can share a correct parser while
+  plugging in their own event loop.
+
+use_cases:
+  - Power HTTP/1.1 parsing in HTTPX-based model API clients
+  - Build custom ASGI or proxy transports without rewriting HTTP framing
+  - Test HTTP state machines in unit tests with no real sockets
+  - Embed a small HTTP/1.1 engine in Python inference sidecars

@@ -1,0 +1,27 @@
+name: decorator
+description: Python library that preserves function signatures when writing decorators. decorator makes it easy to wrap callables without breaking help(), inspect, and type-aware tooling used in ML libraries and APIs.
+tagline: Signature-preserving decorators for Python
+
+github_url: https://github.com/micheles/decorator
+docs_url: https://github.com/micheles/decorator/blob/master/docs/documentation.md
+
+category: Dev Tools
+tags: [python, decorators, metaprogramming, inspect, libraries]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+install_command: pip install decorator
+
+problem_solved: |
+  Naive Python decorators hide the wrapped function's name, docstring,
+  and signature, which breaks inspect, Sphinx, and IDE help for ML APIs.
+  The decorator package rewrites wrappers so signatures stay intact,
+  letting libraries add tracing, retry, and cache layers without leaking
+  wrapper metadata to callers.
+
+use_cases:
+  - Add retry or timeout wrappers to model-client methods without losing signatures
+  - Preserve inspect.signature on decorated training and serving helpers
+  - Keep Sphinx and IDE docs accurate for wrapped public APIs
+  - Implement memoization decorators that still show original arguments
