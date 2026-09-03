@@ -1,0 +1,28 @@
+name: claude-mem
+description: Persistent memory across agent sessions. claude-mem captures what an agent does, compresses it with AI, and injects relevant context into later runs for Claude Code, Codex, Gemini, Copilot, OpenCode, and more.
+tagline: Persistent context across agent sessions
+
+github_url: https://github.com/thedotmack/claude-mem
+website_url: https://claude-mem.ai
+docs_url: https://claude-mem.ai
+
+category: Agents
+tags: [memory, claude-code, agents, context, plugins, npm]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: npx claude-mem install
+
+problem_solved: |
+  Coding agents forget everything when a session ends. You re-explain
+  architecture, past decisions, and failed approaches. claude-mem
+  records session activity, compresses it, and injects the useful bits
+  into the next run so Claude Code and other agents keep project
+  context without stuffing the whole history into the prompt.
+
+use_cases:
+  - Keep Claude Code project context across days of sessions
+  - Compress long agent transcripts into memory that future runs can use
+  - Share the same memory plugin across Codex, Gemini, Copilot, and OpenCode
+  - Stop re-explaining repo conventions at the start of every agent chat
