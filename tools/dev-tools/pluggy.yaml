@@ -1,0 +1,29 @@
+name: pluggy
+description: A minimalist production-ready plugin system used by pytest and other Python tools. Register hook specs, implement plugins, and compose extensions without a heavy plugin framework.
+tagline: Minimalist plugin system for Python tools
+
+github_url: https://github.com/pytest-dev/pluggy
+website_url: https://pluggy.readthedocs.io/en/latest/
+docs_url: https://pluggy.readthedocs.io/en/latest/
+
+category: Dev Tools
+tags: [python, plugins, hooks, pytest, extensibility, testing]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install pluggy
+
+problem_solved: |
+  Python tools need a way for third parties to extend behavior without
+  forking the core. Ad-hoc import hooks and monkey-patching are brittle
+  and hard to compose. pluggy provides named hook specs, first-result
+  and historic calling, and plugin registration so pytest-style
+  ecosystems can grow extensions that stay compatible as the host tool
+  evolves.
+
+use_cases:
+  - Add pytest-style plugins to an internal CLI or ML experiment runner
+  - Let teams register custom hooks for data validation or model eval
+  - Compose first-result and historic hook calls without custom dispatch
+  - Ship a public SDK that third parties can extend without forking

@@ -1,0 +1,28 @@
+name: markdown-it-py
+description: A fast Python Markdown parser with full CommonMark support, syntax plugins, and a markdown-it compatible API. Convert Markdown to tokens or HTML for docs, RAG chunking, and agent message pipelines.
+tagline: CommonMark Markdown parser for Python
+
+github_url: https://github.com/executablebooks/markdown-it-py
+website_url: https://markdown-it-py.readthedocs.io
+docs_url: https://markdown-it-py.readthedocs.io
+
+category: Dev Tools
+tags: [python, markdown, commonmark, parsing, docs, rag]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install markdown-it-py
+
+problem_solved: |
+  Python Markdown libraries often diverge from CommonMark or hide a
+  token stream you need for RAG chunking and docs pipelines. markdown-it-py
+  is a Python port of markdown-it with 100% CommonMark, plugins, and
+  a token API so you can parse Markdown once and render HTML or walk
+  headings, code, and tables without a second parser.
+
+use_cases:
+  - Parse README and docs Markdown into tokens for RAG chunking
+  - Render CommonMark to HTML in Python docs and agent UIs
+  - Enable syntax plugins for tables, fences, and custom directives
+  - Share markdown-it plugin ideas between JS frontends and Python backends

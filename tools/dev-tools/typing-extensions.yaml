@@ -1,0 +1,27 @@
+name: typing-extensions
+description: Backported and experimental type hints for Python. Use TypedDict, ParamSpec, TypeGuard, and other typing features on older interpreters so libraries stay typed across the versions ML stacks actually run.
+tagline: Backported typing features for Python
+
+github_url: https://github.com/python/typing_extensions
+docs_url: https://typing-extensions.readthedocs.io/en/latest/
+
+category: Dev Tools
+tags: [python, typing, type-hints, mypy, pydantic, libraries]
+pricing: free
+is_open_source: true
+license: PSF-2.0
+
+install_command: pip install typing_extensions
+
+problem_solved: |
+  New typing constructs land in CPython years before every ML
+  environment can upgrade. Libraries that import them from typing
+  break on older Pythons. typing-extensions backports TypedDict,
+  ParamSpec, TypeGuard, and experimental PEPs so Pydantic, FastAPI,
+  and model SDKs can ship one typed API across Python versions.
+
+use_cases:
+  - Use TypedDict, ParamSpec, and TypeGuard on Python versions that lack them
+  - Keep Pydantic, FastAPI, and LLM SDK type hints working on older runtimes
+  - Prototype experimental PEP typing features before they ship in CPython
+  - Write mypy-clean library APIs that support a wide Python version range

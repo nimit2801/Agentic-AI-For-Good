@@ -1,0 +1,27 @@
+name: AsyncSSH
+description: An asynchronous SSHv2 client and server for Python asyncio. Open sessions, SFTP, and port forwards without blocking the event loop, so agent runtimes can talk to remote hosts while serving other work.
+tagline: Asyncio SSHv2 client and server for Python
+
+github_url: https://github.com/ronf/asyncssh
+docs_url: https://asyncssh.readthedocs.io/en/latest/
+
+category: Dev Tools
+tags: [python, ssh, asyncio, sftp, remote, agents]
+pricing: free
+is_open_source: true
+license: EPL-2.0
+
+install_command: pip install asyncssh
+
+problem_solved: |
+  Agent runtimes and data jobs often need SSH, SFTP, and port forwards
+  without blocking an asyncio event loop. Paramiko and subprocess SSH
+  are synchronous and stall concurrent work. AsyncSSH implements SSHv2
+  natively on asyncio so you can open many remote sessions, stream
+  files, and keep serving other tasks at the same time.
+
+use_cases:
+  - Run remote training or eval commands over SSH from an asyncio agent
+  - Stream checkpoints and datasets with SFTP without blocking the loop
+  - Open SSH port forwards to reach private model or database endpoints
+  - Build an asyncio SSH server for controlled remote access in labs
