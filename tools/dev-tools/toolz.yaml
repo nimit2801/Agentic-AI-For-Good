@@ -1,0 +1,28 @@
+name: toolz
+description: A functional standard library for Python with composable helpers for iterators, dictionaries, and functions. toolz is used in data pipelines and ML preprocessing to write compact, lazy transformations without extra dependencies.
+tagline: Functional helpers for Python iterators and dicts
+
+github_url: https://github.com/pytoolz/toolz
+website_url: https://toolz.readthedocs.io
+docs_url: https://toolz.readthedocs.io
+
+category: Dev Tools
+tags: [python, functional, iterators, data-processing, pipelines, developer-tools]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+install_command: pip install toolz
+
+problem_solved: |
+  Data and ML pipelines often mix nested dicts, generators, and one-off
+  helper functions that are hard to compose or test. Python's stdlib
+  itertools and functools cover pieces but not a coherent functional
+  toolkit. toolz gives curry, pipe, get-in, and lazy map/filter/reduce
+  so preprocessing and feature transforms stay small and reusable.
+
+use_cases:
+  - Compose lazy feature-transform pipelines with pipe, map, and filter
+  - Pluck nested keys from JSON or dataset records without nested loops
+  - Curry config-driven preprocessing functions for reuse across jobs
+  - Replace ad-hoc itertools helpers with a small, documented toolkit

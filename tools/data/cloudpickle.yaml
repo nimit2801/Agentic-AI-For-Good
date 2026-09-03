@@ -1,0 +1,27 @@
+name: cloudpickle
+description: Extended Python pickling that serializes functions, lambdas, and dynamic objects the stdlib pickle cannot. cloudpickle is the default serializer for Dask, Joblib, and many distributed ML runtimes that ship code to workers.
+tagline: Serialize Python functions for distributed workers
+
+github_url: https://github.com/cloudpipe/cloudpickle
+docs_url: https://github.com/cloudpipe/cloudpickle
+
+category: Data
+tags: [python, serialization, pickle, distributed, dask, multiprocessing, ml-pipeline]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+install_command: pip install cloudpickle
+
+problem_solved: |
+  Distributed training and job queues need to send closures, lambdas,
+  and dynamically defined classes to remote workers. stdlib pickle
+  fails on nested functions and interactive code. cloudpickle captures
+  the function and its globals so Dask, Ray-style dispatch, and Joblib
+  can ship Python callables across processes and machines.
+
+use_cases:
+  - Serialize nested functions and lambdas for Dask or Joblib workers
+  - Ship interactive notebook functions to a remote training cluster
+  - Persist dynamically generated feature transforms for later replay
+  - Replace pickle when multiprocessing a pipeline defined at runtime

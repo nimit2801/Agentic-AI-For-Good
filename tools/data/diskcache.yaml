@@ -1,0 +1,28 @@
+name: diskcache
+description: A pure-Python disk-backed cache with a Django-compatible API that is often faster than Redis or Memcached for local workloads. diskcache persists dict-like caches, queues, and Deques on disk for ML jobs, feature stores, and CLI tools that need durable local caching.
+tagline: Fast disk-backed cache for Python without Redis
+
+github_url: https://github.com/grantjenks/python-diskcache
+website_url: https://www.grantjenks.com/docs/diskcache/
+docs_url: https://www.grantjenks.com/docs/diskcache/
+
+category: Data
+tags: [python, caching, disk, persistence, django, ml-pipeline, data-processing]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install diskcache
+
+problem_solved: |
+  Training jobs, embedding lookups, and CLI tools need a durable cache
+  without standing up Redis. In-memory dicts vanish on crash and pickle
+  files are not concurrent-safe. diskcache stores a SQLite-backed cache
+  on disk with eviction, TTL, and queue APIs so local ML workloads can
+  persist expensive results across runs.
+
+use_cases:
+  - Cache embedding lookups and HTTP fetches across training or eval runs
+  - Persist intermediate dataset shards without a separate cache server
+  - Use a disk-backed queue to fan out preprocessing work on one machine
+  - Replace Redis for local Django or FastAPI caches during development

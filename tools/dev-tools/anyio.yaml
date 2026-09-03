@@ -1,0 +1,28 @@
+name: anyio
+description: An async concurrency and networking library that runs on asyncio or Trio with a single API. anyio adds structured task groups, cancellation, and sockets so FastAPI, HTTPX, and ML serving stacks stay backend-portable.
+tagline: Structured async concurrency on asyncio or Trio
+
+github_url: https://github.com/agronholm/anyio
+website_url: https://anyio.readthedocs.io
+docs_url: https://anyio.readthedocs.io
+
+category: Dev Tools
+tags: [python, async, asyncio, trio, concurrency, networking, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install anyio
+
+problem_solved: |
+  Async Python splits between asyncio and Trio, so libraries that spawn
+  tasks, cancel work, or open sockets lock into one runtime. anyio
+  provides a shared API for task groups, timeouts, and networking that
+  works on either backend, which is why HTTPX, FastAPI, and Starlette
+  use it for portable async I/O.
+
+use_cases:
+  - Write async HTTP and socket clients that run on asyncio or Trio
+  - Group inference or scrape tasks with structured cancellation
+  - Build FastAPI-compatible libraries without hardcoding asyncio
+  - Add timeouts and nurseries to long-running data fetch jobs
