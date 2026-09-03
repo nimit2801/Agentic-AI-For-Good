@@ -1,0 +1,25 @@
+name: Checkstyle
+description: Java source static analysis that enforces coding standards. Checkstyle ships Google Java Style and Sun conventions so JVM model-serving APIs and agent backends fail CI on style, imports, and complexity instead of waiting for review.
+tagline: Enforce Java coding standards in CI
+
+github_url: https://github.com/checkstyle/checkstyle
+website_url: https://checkstyle.org
+docs_url: https://checkstyle.org
+
+category: Dev Tools
+tags: [java, static-analysis, checkstyle, lint, jvm, ci]
+pricing: free
+is_open_source: true
+license: LGPL-2.1
+
+problem_solved: |
+  JVM AI services drift from team style when reviews are the only gate.
+  Checkstyle runs as a Maven, Gradle, or CLI check so model gateways and
+  agent workers fail the build on naming, import, and complexity rules
+  before merge, not after a late style nit.
+
+use_cases:
+  - Enforce Google Java Style on model-serving Spring Boot APIs in CI
+  - Fail PRs that exceed complexity limits in agent worker classes
+  - Standardize imports and naming across a multi-module JVM RAG backend
+  - Run Checkstyle from Maven or Gradle as a required quality gate
