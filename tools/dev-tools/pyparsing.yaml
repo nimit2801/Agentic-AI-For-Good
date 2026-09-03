@@ -1,0 +1,22 @@
+name: pyparsing
+description: "Python library for building PEG parsers from Python expressions instead of code-generated grammars, used for DSLs, config languages, and structured log or prompt parsing."
+tagline: "PEG parsers written in Python"
+github_url: https://github.com/pyparsing/pyparsing
+website_url: https://github.com/pyparsing/pyparsing
+docs_url: https://pyparsing-docs.readthedocs.io
+install_command: "pip install pyparsing"
+category: Dev Tools
+tags:
+  - python
+  - parsing
+  - peg
+  - dsl
+  - grammar
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "Ad-hoc split and regex parsers fall apart on nested syntax, while generating a parser from a grammar file is heavy for small DSLs. pyparsing lets you compose grammars as Python objects, so config formats, CLI languages, and structured log lines can be parsed with readable rules and useful error locations."
+use_cases:
+  - "Parse a custom config or prompt-template DSL without writing a lexer by hand"
+  - "Extract structured fields from semi-structured logs or model traces with a composable grammar"
+  - "Prototype a query language for an internal tool using Python expressions instead of ANTLR"

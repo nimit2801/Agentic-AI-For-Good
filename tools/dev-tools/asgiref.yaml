@@ -1,0 +1,22 @@
+name: asgiref
+description: "ASGI specification helpers used by Django and other Python web frameworks, including sync/async bridges, local context, and compatibility utilities for running WSGI code on ASGI servers."
+tagline: "ASGI spec and sync/async utilities"
+github_url: https://github.com/django/asgiref
+website_url: https://asgi.readthedocs.io
+docs_url: https://asgi.readthedocs.io
+install_command: "pip install asgiref"
+category: Dev Tools
+tags:
+  - python
+  - asgi
+  - django
+  - async
+  - wsgi
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+problem_solved: "Django and other frameworks need a shared way to call sync ORM code from async views and to store request context across await points. asgiref is the reference ASGI utility library: sync_to_async, async_to_sync, and Local context so mixed sync/async Python web and ML serving stacks do not deadlock or leak request state."
+use_cases:
+  - "Wrap blocking Django ORM or file I/O with sync_to_async inside an async view or FastAPI dependency"
+  - "Call async code from a sync management command or Celery task with async_to_sync"
+  - "Store per-request context across await points with asgiref.local.Local in middleware"

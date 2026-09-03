@@ -1,0 +1,23 @@
+name: pip-audit
+description: "PyPA tool that audits Python environments, requirements files, and dependency trees against known vulnerabilities and can apply fixes, using OSV and PyPI advisory data."
+tagline: "Audit Python deps for known CVEs"
+github_url: https://github.com/pypa/pip-audit
+website_url: https://pypi.org/project/pip-audit/
+docs_url: https://pypi.org/project/pip-audit/
+install_command: "pip install pip-audit"
+category: Dev Tools
+tags:
+  - python
+  - security
+  - dependencies
+  - cve
+  - ci
+  - pypi
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Pinned Python dependencies go stale and pick up CVEs that pip install will not warn about. pip-audit scans the current environment or a requirements file against OSV, reports vulnerable packages, and can rewrite pins so CI fails a build before a known-bad wheel reaches production."
+use_cases:
+  - "Run pip-audit in CI against requirements.txt so vulnerable pins fail the pipeline"
+  - "Scan a live virtualenv used for model training or inference for known PyPI advisories"
+  - "Apply pip-audit fix to bump vulnerable packages to the first safe version"
