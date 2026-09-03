@@ -1,0 +1,28 @@
+name: nevergrad
+description: A Python toolbox for gradient-free optimization from Meta. nevergrad runs derivative-free algorithms over continuous, discrete, and mixed spaces for hyperparameter search, prompt tuning, and black-box model selection without needing gradients.
+tagline: Gradient-free optimization toolbox for black-box tuning
+
+github_url: https://github.com/facebookresearch/nevergrad
+website_url: https://facebookresearch.github.io/nevergrad/
+docs_url: https://facebookresearch.github.io/nevergrad/
+
+category: Fine-tuning
+tags: [python, hyperparameter-tuning, optimization, black-box, automl, fine-tuning]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install nevergrad
+
+problem_solved: |
+  Many LLM and ML knobs cannot be differentiated: temperature, RAG chunk
+  size, prompt templates, and discrete architecture choices. Grid search
+  wastes budget and gradient methods do not apply. nevergrad provides
+  derivative-free optimizers over mixed parameter spaces so teams can
+  tune black-box pipelines with a small evaluation budget.
+
+use_cases:
+  - Tune LLM decoding, RAG chunk size, and retriever hyperparameters without gradients
+  - Search prompt templates and discrete tool-routing choices as mixed optimization variables
+  - Run black-box AutoML over sklearn or custom training scripts with a limited eval budget
+  - Optimize multi-objective metrics such as accuracy versus latency for inference configs
