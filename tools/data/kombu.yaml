@@ -1,0 +1,27 @@
+name: kombu
+description: Messaging library for Python. kombu is the AMQP layer under Celery, speaking RabbitMQ, Redis, SQS, and more so training jobs and agent workers share a broker without writing queue clients by hand.
+tagline: Python messaging for Celery and AMQP
+
+github_url: https://github.com/celery/kombu
+website_url: https://kombu.readthedocs.io
+docs_url: https://kombu.readthedocs.io
+install_command: pip install kombu
+
+category: Data
+tags: [python, messaging, amqp, celery, rabbitmq, redis, queues]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  ML pipelines need durable queues between producers (dataset ready, train
+  this run) and workers. Raw pika or Redis lists are broker-specific and
+  easy to get wrong. kombu gives a single producer/consumer API over
+  RabbitMQ, Redis, SQS, and others, with serialization, retries, and the
+  transport Celery already uses.
+
+use_cases:
+  - Publish training and evaluation jobs to RabbitMQ or Redis from Python
+  - Consume work items in agent workers without depending on the full Celery API
+  - Switch brokers (Redis to SQS) behind one messaging interface
+  - Serialize numpy-adjacent payloads and retry failed publishes in ETL

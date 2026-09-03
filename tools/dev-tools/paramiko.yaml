@@ -1,0 +1,27 @@
+name: paramiko
+description: Native Python SSHv2 client and server. paramiko is the library Fabric, many deploy scripts, and GPU-box provisioners use to run remote commands, SFTP model artifacts, and tunnel ports without shelling out to OpenSSH.
+tagline: Pure-Python SSHv2 library
+
+github_url: https://github.com/paramiko/paramiko
+website_url: https://www.paramiko.org
+docs_url: https://docs.paramiko.org
+install_command: pip install paramiko
+
+category: Dev Tools
+tags: [python, ssh, sftp, devops, remote, security]
+pricing: free
+is_open_source: true
+license: LGPL-2.1
+
+problem_solved: |
+  Training jobs, dataset sync, and GPU host setup still happen over SSH.
+  Shelling out to OpenSSH is brittle in Python (quoting, keys, Windows).
+  paramiko implements SSHv2 and SFTP in Python so deploy tools, Fabric,
+  and ML ops scripts can copy checkpoints, run remote commands, and open
+  tunnels with explicit key handling.
+
+use_cases:
+  - SFTP model checkpoints and datasets to GPU boxes from Python jobs
+  - Run remote training commands with SSH keys inside CI and deploy scripts
+  - Power Fabric-style automation for ML cluster bootstrap
+  - Open SSH tunnels from agent tools that must reach private inference hosts

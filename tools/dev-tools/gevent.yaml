@@ -1,0 +1,27 @@
+name: gevent
+description: Coroutine-based networking for Python. gevent monkey-patches sockets so blocking DB, HTTP, and Redis clients scale with greenlets, which many ML workers still use instead of a full asyncio rewrite.
+tagline: Coroutine networking for Python
+
+github_url: https://github.com/gevent/gevent
+website_url: http://www.gevent.org
+docs_url: http://www.gevent.org
+install_command: pip install gevent
+
+category: Dev Tools
+tags: [python, concurrency, greenlets, async, networking, gevent]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Blocking Python clients for Postgres, Redis, and HTTP cannot serve many
+  concurrent ML jobs without a thread per connection. gevent uses greenlets
+  plus libev/libuv to multiplex I/O after a one-line monkey patch, so Celery
+  workers, scrapers, and agent backends keep familiar sync code while handling
+  thousands of connections in one process.
+
+use_cases:
+  - Scale Celery and RQ workers that call blocking HTTP and database clients
+  - Scrape or poll APIs concurrently without converting the stack to asyncio
+  - Serve WSGI apps that spend time in blocking model-inference or DB calls
+  - Monkey-patch stdlib sockets in existing ETL jobs to raise concurrency
