@@ -1,0 +1,28 @@
+name: Sanic
+description: A Python async web framework designed for fast HTTP APIs. Sanic runs on its own server or ASGI workers and is used to serve inference endpoints, webhooks, and agent callbacks with low request overhead.
+tagline: Fast async Python web framework for APIs
+
+github_url: https://github.com/sanic-org/sanic
+website_url: https://sanic.dev
+docs_url: https://sanic.dev/en/guide/
+
+category: Dev Tools
+tags: [python, web-framework, async, asgi, api, http, inference]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install sanic
+
+problem_solved: |
+  Inference gateways and agent webhooks need an async HTTP layer that is
+  fast to start and cheap per request. Heavier frameworks add ORM and
+  template weight that serving endpoints do not use. Sanic is an async
+  Python web framework with its own server, so teams can ship JSON APIs
+  for embeddings, tools, and model scoring with low latency.
+
+use_cases:
+  - Serve embedding and classification HTTP APIs with async handlers and JSON responses
+  - Host agent tool-callback and webhook endpoints that must stay responsive under burst traffic
+  - Put a lightweight HTTP front door in front of GPU workers without a full Django or Flask stack
+  - Build streaming or SSE inference routes on Sanic's async request cycle

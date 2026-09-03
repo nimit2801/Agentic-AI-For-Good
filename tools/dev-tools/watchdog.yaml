@@ -1,0 +1,27 @@
+name: watchdog
+description: A Python library and CLI for monitoring filesystem events across platforms. watchdog watches directories for create, modify, and delete events so training jobs, dataset loaders, and hot-reload servers can react to file changes.
+tagline: Cross-platform Python filesystem event watcher
+
+github_url: https://github.com/gorakhargosh/watchdog
+docs_url: https://python-watchdog.readthedocs.io
+
+category: Dev Tools
+tags: [python, filesystem, file-watcher, monitoring, datasets, hot-reload, developer-tools]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install watchdog
+
+problem_solved: |
+  Training jobs, dataset drops, and config reloads need to notice new files
+  without polling every few seconds. Naive polling wastes CPU and misses
+  short-lived writes. watchdog listens to OS filesystem events (inotify,
+  FSEvents, ReadDirectoryChangesW) so Python services can enqueue new
+  data, retrain, or hot-reload as soon as a path changes.
+
+use_cases:
+  - Watch a landing directory and kick off preprocessing when new dataset files appear
+  - Hot-reload prompt templates, YAML tool configs, or model cards during local agent development
+  - Trigger embedding re-index jobs when documents are added or updated on disk
+  - Monitor checkpoint directories and copy or register new weights as training writes them
