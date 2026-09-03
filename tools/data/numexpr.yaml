@@ -1,0 +1,28 @@
+name: NumExpr
+description: A fast numerical expression evaluator for NumPy arrays that compiles array expressions to vectorized C loops. NumExpr is used by Pandas, PyTables, and scientific pipelines that need faster, lower-memory evaluation than pure NumPy broadcasting.
+tagline: Fast, memory-efficient NumPy expression evaluation
+
+github_url: https://github.com/pydata/numexpr
+website_url: https://numexpr.readthedocs.io
+docs_url: https://numexpr.readthedocs.io/en/latest/user_guide.html
+
+category: Data
+tags: [python, numpy, numerical-computing, pandas, performance, scientific-computing]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install numexpr
+
+problem_solved: |
+  Large NumPy expressions allocate many temporary arrays and burn
+  memory while broadcasting. Pandas and scientific jobs that evaluate
+  the same formula over millions of rows hit that ceiling. NumExpr
+  compiles the expression into threaded C loops that stream chunks
+  through cache, so evaluation is faster and uses less peak RAM.
+
+use_cases:
+  - Speed up Pandas eval and query on large numeric DataFrames
+  - Evaluate multi-array formulas without allocating huge temporaries
+  - Accelerate PyTables and HDF5 numeric filters in scientific pipelines
+  - Replace nested NumPy broadcasts with a single compiled expression

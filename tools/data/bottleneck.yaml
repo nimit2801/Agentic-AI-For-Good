@@ -1,0 +1,28 @@
+name: Bottleneck
+description: A collection of fast NumPy array functions written in C, including nan-aware reductions, moving windows, and ranking. Bottleneck is used in Pandas and scientific pipelines that need C-speed stats on arrays without leaving the NumPy API.
+tagline: Fast C implementations of common NumPy array functions
+
+github_url: https://github.com/pydata/bottleneck
+website_url: https://github.com/pydata/bottleneck
+docs_url: https://github.com/pydata/bottleneck
+
+category: Data
+tags: [python, numpy, pandas, performance, numerical-computing, scientific-computing]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+install_command: pip install bottleneck
+
+problem_solved: |
+  NumPy nan-aware stats, moving windows, and ranking loops are slow
+  in pure Python or extra temporaries. Pandas and scientific jobs that
+  call these on large arrays wait on the interpreter. Bottleneck
+  reimplements those kernels in C with a drop-in NumPy-style API so
+  reductions and rolling stats run at compiled speed.
+
+use_cases:
+  - Replace slow nanmean, nansum, and nanstd on large numeric arrays
+  - Compute moving windows and rolling stats without a Pandas overhead
+  - Rank and partition arrays in C for feature engineering pipelines
+  - Speed up Pandas numeric aggregations that bottleneck already ships

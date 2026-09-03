@@ -1,0 +1,28 @@
+name: tomlkit
+description: A style-preserving TOML library for Python that round-trips comments, whitespace, and ordering. tomlkit is used by Poetry and config tools that must edit pyproject.toml without rewriting the rest of the file.
+tagline: Parse and write TOML while keeping comments and style
+
+github_url: https://github.com/python-poetry/tomlkit
+website_url: https://github.com/python-poetry/tomlkit
+docs_url: https://github.com/python-poetry/tomlkit
+
+category: Dev Tools
+tags: [python, toml, config, poetry, pyproject, parsing]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install tomlkit
+
+problem_solved: |
+  Standard TOML parsers dump a dict and lose comments, key order, and
+  spacing. Tools that edit pyproject.toml then rewrite the whole file
+  and destroy human formatting. tomlkit keeps the original style so
+  Poetry and other config writers can change one field without a
+  noisy, unreadable diff.
+
+use_cases:
+  - Edit pyproject.toml dependencies while keeping comments and layout
+  - Round-trip TOML configs in CLI tools that rewrite a single key
+  - Power Poetry and similar packagers that must preserve user style
+  - Parse and emit TOML with comments for documentation-heavy configs
