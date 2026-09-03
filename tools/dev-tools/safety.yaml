@@ -1,0 +1,22 @@
+name: Safety
+description: "CLI that checks Python dependencies for known security vulnerabilities and suggests remediations, used in CI to block installs of packages with published advisories."
+tagline: "Python dependency vulnerability scanner"
+github_url: https://github.com/pyupio/safety
+website_url: https://safetycli.com/product/safety-cli
+docs_url: https://docs.safetycli.com
+install_command: "pip install safety"
+category: Dev Tools
+tags:
+  - python
+  - security
+  - dependencies
+  - cve
+  - ci
+pricing: freemium
+is_open_source: true
+license: MIT
+problem_solved: "Teams learn about vulnerable Python packages after an incident because pip does not consult an advisory database. Safety scans requirements and environments against a vulnerability database and fails CI when a known issue is present, so ML and app pipelines can refuse to ship a compromised pin."
+use_cases:
+  - "Add safety check to CI so requirement files with known CVEs fail before merge"
+  - "Scan a production virtualenv used by a model server for packages with published advisories"
+  - "Get remediation versions for vulnerable pins instead of guessing which bump is safe"

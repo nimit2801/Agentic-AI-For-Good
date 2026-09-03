@@ -1,0 +1,22 @@
+name: glom
+description: "Python nested-data operator and CLI for declarative get, set, and reshape of dicts, lists, and objects, so deeply nested API or config payloads can be transformed without long chains of key lookups."
+tagline: "Declarative nested data transforms"
+github_url: https://github.com/mahmoud/glom
+website_url: https://glom.readthedocs.io
+docs_url: https://glom.readthedocs.io
+install_command: "pip install glom"
+category: Dev Tools
+tags:
+  - python
+  - data
+  - json
+  - etl
+  - cli
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+problem_solved: "Pulling a nested field out of a JSON API response usually means a stack of .get() calls that crash on missing keys. glom specifies paths and transforms as data, with Coalesce and default handling, so ETL jobs and LLM tool-result parsers can reshape nested dicts without brittle manual traversal."
+use_cases:
+  - "Extract nested fields from LLM tool JSON or REST payloads with a path spec instead of chained dict access"
+  - "Reshape messy API responses into a flat schema before writing to a warehouse or vector store"
+  - "Use the glom CLI to probe and rewrite JSON files during data debugging"
