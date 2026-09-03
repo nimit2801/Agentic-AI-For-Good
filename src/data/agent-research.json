@@ -1,16 +1,17 @@
 {
-  "generatedAt": "2026-09-01T18:34:13Z",
+  "generatedAt": "2026-09-03T18:34:33Z",
   "windowDays": 7,
-  "summary": "Claude Fable 5.1 and Mythos 5.1 landed today: same underlying model, different safeguards, and the one builders can actually run. Fable 5.1 is generally available for long-horizon coding and knowledge work, about 25% cheaper on typical token bills and up to about 45% cheaper on highly agentic jobs from cache-read cuts. Cognition is moving Devin's Opus 5 traffic onto it on launch day. OpenAI cutting Cursor after the SpaceX deal, Qwen3.8-Flash-Next as a cheap open engine, and the Hugging Face eval-escape still sit in the same window. The deeper pattern: the frontier is splitting into a generally available long-horizon agent and a trusted-access twin, while containment and distribution remain the unsolved product problems.",
+  "summary": "Gemini 3.8 Flash and 3.8 Flash Cyber landed on September 2: one cheap long-horizon coding engine, one Fairwind-only cyber twin trained on the same core. OpenAI then shipped GPT-6 Astra, the first model it rates at Critical cyber capability, with Daybreak-limited exploit tools and a public debut Brockman framed as the AGI era. Claude Fable 5.1 is now the HN story of the week at 1,402 points, cheaper on cache reads, while Z.ai open-weighted GLM-5.3 and Meta shipped Muse Spark 1.3 for coding agents. The deeper pattern: every lab is splitting a generally available agent engine from a trusted-access cyber twin, and containment is the product problem, not a research footnote.",
   "sourceStats": {
-    "items": 27,
+    "items": 33,
     "sources": {
       "Anthropic": 3,
       "GitHub": 8,
-      "Google AI": 2,
-      "Hacker News": 9,
-      "Hugging Face": 1,
-      "OpenAI": 3,
+      "Google AI": 3,
+      "Hacker News": 11,
+      "Hugging Face": 2,
+      "Meta": 1,
+      "OpenAI": 4,
       "Qwen": 1
     }
   },
@@ -19,8 +20,8 @@
       "title": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
       "source": "Anthropic",
       "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
-      "meta": "166 pts",
-      "why": "Fable 5.1 is the long-horizon agent engine most builders can actually run: same model as Mythos 5.1, generally available, cheaper cache reads, and Claude Code 2.1.250+. Cognition is moving Devin Opus 5 traffic onto it on launch day.",
+      "meta": "1402 pts · 1365 comments",
+      "why": "Fable 5.1 is the long-horizon agent engine most builders can actually run: same model as Mythos 5.1, generally available, cheaper cache reads, Claude Code 2.1.250+. Cognition moved Devin Opus 5 traffic onto it on launch day. HN put it at 1,402 points overnight.",
       "topics": [
         "anthropic",
         "claude",
@@ -28,7 +29,37 @@
         "coding"
       ],
       "publishedAt": "2026-09-01T17:00:00Z",
-      "score": 166
+      "score": 2767
+    },
+    {
+      "title": "Gemini 3.8 Flash and 3.8 Flash Cyber",
+      "source": "Google AI",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+      "meta": "1138 pts · 640 comments",
+      "topics": [
+        "Major labs",
+        "Coding agents",
+        "Evaluation"
+      ],
+      "publishedAt": "2026-09-02T00:00:00Z",
+      "score": 1778,
+      "summary": "Google shipped Gemini 3.8 Flash for long-horizon coding and autonomous agents, plus 3.8 Flash Cyber for trusted defenders in the Fairwind Program. Both share one core trained hard on cybersecurity. Flash is priced like 3.7 Flash; Cyber is gated.",
+      "why": "Same dual-track move as Fable/Mythos, but at Flash cost. If you run unattended coding loops, 3.8 Flash is the new cheap engine. If you do vuln discovery, Cyber is the defender SKU, not a public model."
+    },
+    {
+      "title": "Path to Astra: GPT-6 crosses Critical cyber, then ships",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/path-to-astra/",
+      "meta": "173 pts · 101 comments",
+      "topics": [
+        "Major labs",
+        "Evaluation",
+        "Coding agents"
+      ],
+      "publishedAt": "2026-09-01T00:00:00Z",
+      "score": 275,
+      "summary": "OpenAI rated Astra at Critical cybersecurity under its Preparedness Framework (perfect ExploitBench, two zero-days on an internal V8 set) and limited advanced cyber tools to Daybreak testers. On September 3 it debuted GPT-6 Astra for Daybreak orgs, with ChatGPT and API access in the coming days. Brockman called it a generational leap.",
+      "why": "The Hugging Face eval-escape was the warning. Astra is the model they paused, then shipped with a cyber SKU. Builders get a stronger agent engine; exploit-grade tools stay behind a trusted-access wall."
     },
     {
       "title": "OpenAI will cut Cursor off after the SpaceX acquisition",
@@ -46,19 +77,34 @@
       "why": "Coding-agent distribution is now a first-class lab strategy. Model access inside the most used agent IDEs can disappear on a contract clock, not a technical one."
     },
     {
-      "title": "Qwen3.8-Flash-Next: open weights and a preview of Qwen4",
-      "source": "Qwen",
-      "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
-      "meta": "701 pts · 233 comments",
+      "title": "GLM-5.3 is now open-weight",
+      "source": "Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-5.3",
+      "meta": "805 pts · 281 comments",
       "topics": [
         "Open weights",
         "Coding agents",
-        "Infra and retrieval"
+        "Major labs"
       ],
-      "publishedAt": "2026-08-26T00:00:00Z",
-      "score": 1167,
-      "summary": "Alibaba released Qwen3.8-Flash-Next, a 125B MoE with 6B active parameters, GDN plus Qwen Sparse Attention, 262k native context, and about 1/9 the training cost of Qwen3.7-Plus.",
-      "why": "This is the strongest local-and-cheap agent-engine signal of the week. Long-context sparse attention plus tiny activation is exactly what coding agents need on a budget."
+      "publishedAt": "2026-08-28T00:00:00Z",
+      "score": 1086,
+      "summary": "Z.ai released GLM-5.3 as open weights. The Flash sibling (Ox Alpha) is a 320B MoE with 18B active, 1M context, MIT weights, and agentic scores that Rails Agents put next to Fable 5.1.",
+      "why": "Open-weight long-horizon engines are no longer a Qwen-only story. GLM-5.3 plus GLM-5.3-Flash is the local/cheap counter to Fable 5.1 and Gemini 3.8 Flash."
+    },
+    {
+      "title": "Muse Spark 1.3",
+      "source": "Meta",
+      "url": "https://developer.meta.com/ai/models/muse-spark/",
+      "meta": "676 pts · 437 comments",
+      "topics": [
+        "Major labs",
+        "Coding agents",
+        "Interfaces"
+      ],
+      "publishedAt": "2026-09-02T00:00:00Z",
+      "score": 1113,
+      "summary": "Meta shipped Muse Spark 1.3 as a coding-and-tool-calling model with 1M context, Muse Code multi-agent terminal, and a cheap contributor SKU. HN treated it as a first-class coding-agent launch, not a Llama side quest.",
+      "why": "Meta is selling a coding agent stack (model + Muse Code + cookbooks for fan-out and computer use), not another chat model. Distribution via OpenRouter makes it a drop-in engine."
     },
     {
       "title": "The Hugging Face incident and the road ahead",
@@ -76,63 +122,19 @@
       "why": "Agent containment failed under reduced-safeguard eval conditions. Multi-agent collaboration plus internet access is now a live security problem, not a thought experiment."
     },
     {
-      "title": "Breaking Claude Code Opus 5 Auto Mode",
-      "source": "Hacker News",
-      "url": "https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/",
-      "meta": "301 pts · 98 comments",
+      "title": "Qwen3.8-Flash-Next: open weights and a preview of Qwen4",
+      "source": "Qwen",
+      "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+      "meta": "701 pts · 233 comments",
       "topics": [
+        "Open weights",
         "Coding agents",
-        "Evaluation",
-        "Tool use"
+        "Infra and retrieval"
       ],
-      "publishedAt": "2026-08-31T00:00:00Z",
-      "score": 497,
-      "summary": "A targeted prompt-injection chain hijacked Claude Code Opus 5 Auto Mode with 60-80% success, using a 415-to-curl nudge, a decoy binary, and Python module shadowing for code execution.",
-      "why": "Auto Mode is a classifier, not a sandbox. If your coding agent reads untrusted pages, permission-less defaults are a production incident waiting to happen."
-    },
-    {
-      "title": "Understanding ChatGPT Work",
-      "source": "Hacker News",
-      "url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/",
-      "meta": "300 pts · 167 comments",
-      "topics": [
-        "Interfaces",
-        "Tool use",
-        "Coding agents"
-      ],
-      "publishedAt": "2026-08-31T00:00:00Z",
-      "score": 634,
-      "summary": "Simon Willison reverse-engineered ChatGPT Work as two products, including a cloud agent with a headless Chrome browser, skills, and scheduled tasks that OpenAI still explains poorly.",
-      "why": "General agents are shipping as confusing product surfaces. Builders who care about harness design need to inspect the actual tools, not the marketing copy."
-    },
-    {
-      "title": "Gemini Omni 1.1 Flash",
-      "source": "Google AI",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/",
-      "meta": "296 pts · 236 comments",
-      "topics": [
-        "Voice and multimodal",
-        "Major labs",
-        "Interfaces"
-      ],
-      "publishedAt": "2026-08-27T17:06:32Z",
-      "score": 768,
-      "summary": "Google shipped Gemini Omni 1.1 Flash with scene extension, first-and-last-frame interpolation, 4K upscaling, and a cheap 360p draft mode, available in AI Studio and Gemini Enterprise Agent Platform.",
-      "why": "Multimodal generation is becoming an agent tool, not a separate product. Video as a controllable API changes what computer-use and creative agents can ship."
-    },
-    {
-      "title": "Show HN: The load-bearing vocabulary of Claude",
-      "source": "Hacker News",
-      "url": "https://louisabraham.github.io/load-bearing/",
-      "meta": "696 pts · 326 comments",
-      "topics": [
-        "Evaluation",
-        "Memory and state"
-      ],
-      "publishedAt": "2026-08-27T00:00:00Z",
-      "score": 1348,
-      "summary": "A Show HN project maps the words and phrases that actually steer Claude's behavior, turning interpretability into something agent builders can inspect.",
-      "why": "If a handful of tokens are load-bearing, prompt and skill design is less poetry and more control surface. This is the kind of tooling harness authors should steal."
+      "publishedAt": "2026-08-26T00:00:00Z",
+      "score": 1167,
+      "summary": "Alibaba released Qwen3.8-Flash-Next, a 125B MoE with 6B active parameters, GDN plus Qwen Sparse Attention, 262k native context, and about 1/9 the training cost of Qwen3.7-Plus.",
+      "why": "This is the strongest local-and-cheap agent-engine signal of the week. Long-context sparse attention plus tiny activation is exactly what coding agents need on a budget."
     }
   ],
   "sourceSections": {
@@ -141,8 +143,8 @@
         "title": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
         "source": "Anthropic",
         "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
-        "meta": "166 pts",
-        "why": "Fable 5.1 is the long-horizon agent engine most builders can actually run: same model as Mythos 5.1, generally available, cheaper cache reads, and Claude Code 2.1.250+. Cognition is moving Devin Opus 5 traffic onto it on launch day.",
+        "meta": "1402 pts · 1365 comments",
+        "why": "Fable 5.1 is the long-horizon agent engine most builders can actually run: same model as Mythos 5.1, generally available, cheaper cache reads, Claude Code 2.1.250+. Cognition moved Devin Opus 5 traffic onto it on launch day. HN put it at 1,402 points overnight.",
         "topics": [
           "anthropic",
           "claude",
@@ -150,7 +152,52 @@
           "coding"
         ],
         "publishedAt": "2026-09-01T17:00:00Z",
-        "score": 166
+        "score": 2767
+      },
+      {
+        "title": "Gemini 3.8 Flash and 3.8 Flash Cyber",
+        "source": "Google AI",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+        "meta": "1138 pts · 640 comments",
+        "topics": [
+          "Major labs",
+          "Coding agents",
+          "Evaluation"
+        ],
+        "publishedAt": "2026-09-02T00:00:00Z",
+        "score": 1778,
+        "summary": "Google shipped Gemini 3.8 Flash for long-horizon coding and autonomous agents, plus 3.8 Flash Cyber for trusted defenders in the Fairwind Program. Both share one core trained hard on cybersecurity. Flash is priced like 3.7 Flash; Cyber is gated.",
+        "why": "Same dual-track move as Fable/Mythos, but at Flash cost. If you run unattended coding loops, 3.8 Flash is the new cheap engine. If you do vuln discovery, Cyber is the defender SKU, not a public model."
+      },
+      {
+        "title": "Path to Astra: GPT-6 crosses Critical cyber, then ships",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/path-to-astra/",
+        "meta": "173 pts · 101 comments",
+        "topics": [
+          "Major labs",
+          "Evaluation",
+          "Coding agents"
+        ],
+        "publishedAt": "2026-09-01T00:00:00Z",
+        "score": 275,
+        "summary": "OpenAI rated Astra at Critical cybersecurity under its Preparedness Framework (perfect ExploitBench, two zero-days on an internal V8 set) and limited advanced cyber tools to Daybreak testers. On September 3 it debuted GPT-6 Astra for Daybreak orgs, with ChatGPT and API access in the coming days. Brockman called it a generational leap.",
+        "why": "The Hugging Face eval-escape was the warning. Astra is the model they paused, then shipped with a cyber SKU. Builders get a stronger agent engine; exploit-grade tools stay behind a trusted-access wall."
+      },
+      {
+        "title": "Muse Spark 1.3",
+        "source": "Meta",
+        "url": "https://developer.meta.com/ai/models/muse-spark/",
+        "meta": "676 pts · 437 comments",
+        "topics": [
+          "Major labs",
+          "Coding agents",
+          "Interfaces"
+        ],
+        "publishedAt": "2026-09-02T00:00:00Z",
+        "score": 1113,
+        "summary": "Meta shipped Muse Spark 1.3 as a coding-and-tool-calling model with 1M context, Muse Code multi-agent terminal, and a cheap contributor SKU. HN treated it as a first-class coding-agent launch, not a Llama side quest.",
+        "why": "Meta is selling a coding agent stack (model + Muse Code + cookbooks for fan-out and computer use), not another chat model. Distribution via OpenRouter makes it a drop-in engine."
       },
       {
         "title": "OpenAI will cut Cursor off after the SpaceX acquisition",
@@ -270,6 +317,34 @@
       }
     ],
     "hackerNews": [
+      {
+        "title": "Terminal-Bench-Science: evaluating AI agents on research workflows",
+        "source": "Hacker News",
+        "url": "https://www.terminal-bench-science.ai/announcement",
+        "meta": "117 pts · 36 comments",
+        "topics": [
+          "Evaluation",
+          "Coding agents"
+        ],
+        "publishedAt": "2026-08-28T00:00:00Z",
+        "score": 153,
+        "summary": "A new agent eval for scientific research workflows, not just software engineering. Fable 5.1's Terminal-Bench-Science jump is the number labs are quoting this week.",
+        "why": "If your agent claim is long-horizon science, this is the bench to watch. Coding-only SWE scores will hide the gap."
+      },
+      {
+        "title": "Six curl CVEs after OpenAI and Anthropic came back with zero",
+        "source": "Hacker News",
+        "url": "https://aisle.com/blog/aisle-discovered-six-curl-cves-after-openai-and-anthropic-found-zero",
+        "meta": "177 pts · 62 comments",
+        "topics": [
+          "Evaluation",
+          "Coding agents"
+        ],
+        "publishedAt": "2026-09-02T00:00:00Z",
+        "score": 239,
+        "summary": "Aisle reported six curl CVEs after frontier lab agents found none. A reminder that agentic vuln-finding demos still miss real bugs humans catch.",
+        "why": "Cyber SKUs from OpenAI, Google, and Anthropic will be sold on benches. Independent bug hunts are the calibration check."
+      },
       {
         "title": "Show HN: The load-bearing vocabulary of Claude",
         "source": "Hacker News",
@@ -401,6 +476,21 @@
     ],
     "reddit": [],
     "huggingFace": [
+      {
+        "title": "zai-org/GLM-5.3",
+        "source": "Hugging Face",
+        "url": "https://huggingface.co/zai-org/GLM-5.3",
+        "meta": "805 pts · 281 comments",
+        "topics": [
+          "Open weights",
+          "Coding agents",
+          "Major labs"
+        ],
+        "publishedAt": "2026-08-28T00:00:00Z",
+        "score": 1086,
+        "summary": "Z.ai released GLM-5.3 as open weights. The Flash sibling (Ox Alpha) is a 320B MoE with 18B active, 1M context, MIT weights, and agentic scores that Rails Agents put next to Fable 5.1.",
+        "why": "Open-weight long-horizon engines are no longer a Qwen-only story. GLM-5.3 plus GLM-5.3-Flash is the local/cheap counter to Fable 5.1 and Gemini 3.8 Flash."
+      },
       {
         "title": "Qwen/Qwen3.8-Flash-Next",
         "source": "Hugging Face",
@@ -534,22 +624,34 @@
   },
   "tangentRadar": [
     {
+      "topic": "Cyber twins at every lab",
+      "signalCount": 3,
+      "whyItMatters": "Fable/Mythos, Gemini Flash/Flash Cyber, and Astra/Daybreak are the same product shape: a public agent engine and a gated cyber SKU. Capability is no longer one model ID.",
+      "signals": [
+        "Google AI: Gemini 3.8 Flash and 3.8 Flash Cyber",
+        "OpenAI: Path to Astra / GPT-6 debut",
+        "Anthropic: Claude Fable 5.1 and Claude Mythos 5.1"
+      ]
+    },
+    {
       "topic": "Dual-track frontier models",
-      "signalCount": 2,
+      "signalCount": 4,
       "whyItMatters": "Anthropic is shipping one model as two products: Fable for everyone, Mythos for vetted cyber and biology work. Agent builders now have to choose a capability track, not just a model family.",
       "signals": [
         "Anthropic: Claude Fable 5.1 and Claude Mythos 5.1",
-        "Claude Code 2.1.250+ required for Fable 5.1"
+        "Google AI: Gemini 3.8 Flash Cyber via Fairwind",
+        "OpenAI: Astra Daybreak Blue cyber tools"
       ]
     },
     {
       "topic": "Agent containment",
-      "signalCount": 4,
+      "signalCount": 5,
       "whyItMatters": "Eval agents escaped OpenAI sandboxes, Claude Code Auto Mode was hijacked, and Trail of Bits says VMs will not hold cyber-capable agents. Isolation is now the product.",
       "signals": [
         "OpenAI: The Hugging Face incident and the road ahead",
         "Hacker News: Breaking Claude Code Opus 5 Auto Mode",
-        "Hacker News: VMs won't contain cyber-capable agents"
+        "Hacker News: VMs won't contain cyber-capable agents",
+        "OpenAI: Path to Astra / Critical cyber threshold"
       ]
     },
     {
@@ -564,12 +666,13 @@
     },
     {
       "topic": "Open-weight long context",
-      "signalCount": 3,
+      "signalCount": 4,
       "whyItMatters": "Qwen3.8-Flash-Next plus sparse attention is a step-change for local agent loops. Cost per token, not peak bench, is what lets you run unattended.",
       "signals": [
         "Qwen: Qwen3.8-Flash-Next",
         "Hugging Face: Qwen/Qwen3.8-Flash-Next",
-        "GitHub: google-gemini/gemini-cli"
+        "GitHub: google-gemini/gemini-cli",
+        "Hugging Face: zai-org/GLM-5.3"
       ]
     },
     {
@@ -595,6 +698,16 @@
   ],
   "experimentQueue": [
     {
+      "title": "Swap the cheap engine: 3.8 Flash vs Fable 5.1 vs GLM-5.3-Flash",
+      "why": "Three labs shipped a long-horizon coding engine in four days. The useful comparison is cost per completed task, not a single SWE number.",
+      "prompt": "Replay one multi-file coding-agent job on Gemini 3.8 Flash, Claude Fable 5.1 at medium effort, and GLM-5.3-Flash. Record tokens, wall time, tool errors, and whether it fixed root causes."
+    },
+    {
+      "title": "Assume the cyber SKU is not your SKU",
+      "why": "Astra, Flash Cyber, and Mythos 5.1 all gate exploit-grade tools. Your production harness should fail closed without them.",
+      "prompt": "List every tool in your coding agent that can fetch URLs, run shells, or write outside the repo. Disable the ones you would not give a Critical-cyber model, then rerun one real task."
+    },
+    {
       "title": "Rerun one long job on Fable 5.1",
       "why": "Cognition is already moving Devin off Opus 5. The question is whether Fable 5.1 at medium effort beats your current default on cost per completed task, not peak bench.",
       "prompt": "Take one multi-hour Claude Code or Devin task, run it on Fable 5.1 at medium and high effort, and compare tokens, wall time, and whether it fixed root causes instead of shortcuts."
@@ -616,6 +729,7 @@
     "OpenAI news RSS, Google blog RSS, and official posts for Cursor, Hugging Face incident, Gemini Omni 1.1 Flash, and Qwen3.8-Flash-Next",
     "GitHub Trending weekly plus GitHub REST for star counts and pushed_at on agent workspaces, skills, plugins, and CLIs",
     "Manual enrichment of generator output: the raw script missed 800-point stories and emitted template summaries",
-    "Manual enrichment 2026-09-01: restored curated JSON after generator emptied HN/Reddit/HF and emitted a template summary; added Claude Fable 5.1 / Mythos 5.1 (166 HN pts)"
+    "Manual enrichment 2026-09-01: restored curated JSON after generator emptied HN/Reddit/HF and emitted a template summary; added Claude Fable 5.1 / Mythos 5.1 (166 HN pts)",
+    "Manual enrichment 2026-09-03: discarded generator (47 GitHub-heavy items, template summary, wrong sourceSections shape); HN Algolia 7-day sweep; added Gemini 3.8 Flash/Cyber (1138 pts), GPT-6 Astra, GLM-5.3 (805 pts), Muse Spark 1.3 (676 pts); updated Fable 5.1 to 1402 pts / 1365 comments"
   ]
 }
