@@ -1,0 +1,28 @@
+name: asyncpg
+description: A high-performance PostgreSQL client for Python asyncio. asyncpg speaks the Postgres binary protocol directly so feature stores, RAG metadata, and agent memory backends get low-latency queries without blocking the event loop.
+tagline: Fast asyncio PostgreSQL client for Python
+
+github_url: https://github.com/MagicStack/asyncpg
+website_url: https://magicstack.github.io/asyncpg/
+docs_url: https://magicstack.github.io/asyncpg/current/
+install_command: pip install asyncpg
+
+category: Data
+tags: [python, postgresql, asyncio, database, async, data-access]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Async Python services that store embeddings, experiment metadata, or agent
+  state in PostgreSQL cannot afford a blocking DB driver. Thread pools waste
+  connections and add latency under concurrent RAG and training jobs. asyncpg
+  is a pure-asyncio client that uses the Postgres binary protocol, prepared
+  statements, and COPY for bulk loads, so event-loop apps keep high throughput
+  without ORM overhead.
+
+use_cases:
+  - Query and write feature-store or experiment tables from FastAPI and asyncio workers without blocking
+  - Bulk-load training labels and embeddings into PostgreSQL with COPY at native driver speed
+  - Back agent memory, tool-call logs, and conversation state on Postgres from async agent runtimes
+  - Replace blocking psycopg2 calls in async ETL and RAG ingestion pipelines

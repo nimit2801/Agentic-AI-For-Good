@@ -1,0 +1,28 @@
+name: Psycopg
+description: Next-generation PostgreSQL adapter for Python. Psycopg 3 adds async I/O, COPY, and connection pooling so ML pipelines and agent backends can talk to Postgres without the psycopg2 binary-build tax.
+tagline: PostgreSQL adapter for Python 3
+
+github_url: https://github.com/psycopg/psycopg
+website_url: https://www.psycopg.org/psycopg3/
+docs_url: https://www.psycopg.org/psycopg3/docs/
+install_command: pip install psycopg
+
+category: Data
+tags: [python, postgresql, database, async, data-access, sql]
+pricing: free
+is_open_source: true
+license: LGPL-3.0
+
+problem_solved: |
+  Most Python data stacks still use psycopg2, which is sync-only and often
+  needs a compiler or a binary wheel that fights the platform. Psycopg 3 is
+  the supported PostgreSQL adapter with sync and asyncio clients, server-side
+  bindings, COPY, and optional C acceleration. Feature stores, RAG metadata,
+  and agent memory on Postgres get a modern driver without rewriting SQLAlchemy
+  or dropping to raw libpq.
+
+use_cases:
+  - Connect SQLAlchemy, FastAPI, and batch ETL jobs to PostgreSQL with a maintained driver
+  - Run async Postgres queries from agent backends and streaming ingestion workers
+  - Bulk-load training rows with COPY instead of row-by-row INSERTs
+  - Replace psycopg2 in Docker images that cannot compile C extensions

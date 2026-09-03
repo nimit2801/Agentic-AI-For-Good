@@ -1,0 +1,27 @@
+name: nanobind
+description: Tiny, efficient C++/Python bindings by the pybind11 author. nanobind compiles faster, produces smaller binaries, and binds NumPy, Eigen, and CUDA kernels for high-performance ML extensions.
+tagline: Tiny high-performance C++/Python bindings
+
+github_url: https://github.com/wjakob/nanobind
+website_url: https://nanobind.readthedocs.io
+docs_url: https://nanobind.readthedocs.io
+install_command: pip install nanobind
+
+category: Dev Tools
+tags: [python, cpp, bindings, numpy, cuda, pybind11, developer-tools]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  pybind11 bindings for large C++ ML libraries compile slowly and produce
+  bulky extension modules. nanobind is a from-scratch successor with a
+  similar API, much faster compile times, and smaller binaries, plus first-class
+  NumPy, Eigen, and CUDA interop. Teams wrapping custom ops, physics, or
+  inference kernels get native speed without the pybind11 compile-time tax.
+
+use_cases:
+  - Bind custom C++/CUDA kernels as Python extensions for PyTorch or JAX
+  - Wrap Eigen and NumPy-heavy numerical code with lower compile time than pybind11
+  - Ship smaller native wheels for inference libraries used in production agents
+  - Port existing pybind11 modules to a faster, leaner binding layer
