@@ -1,0 +1,23 @@
+name: commitizen
+description: "Commit convention toolkit that enforces structured commit messages, auto-bumps versions, and generates changelogs from git history for Python and polyglot projects."
+tagline: "Conventional commits, versions, and changelogs"
+github_url: https://github.com/commitizen-tools/commitizen
+website_url: https://commitizen-tools.github.io/commitizen/
+docs_url: https://commitizen-tools.github.io/commitizen/
+install_command: "pip install commitizen"
+category: Dev Tools
+tags:
+  - python
+  - git
+  - versioning
+  - changelog
+  - ci
+  - conventional-commits
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "Teams that version packages by hand drift: commit messages stay unstructured, changelogs lag, and bumps miss the actual API change. commitizen prompts for conventional commits, computes the next semver from history, and writes a changelog so Python libraries and CLIs can release from CI without editing version files by hand."
+use_cases:
+  - "Run cz commit so contributors write conventional commit messages instead of free-form one-liners"
+  - "Auto-bump package versions and generate CHANGELOG.md in CI from git history before a PyPI release"
+  - "Standardize commit style across a monorepo so semantic-release tools and PR bots can parse history"

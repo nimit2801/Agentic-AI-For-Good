@@ -1,0 +1,23 @@
+name: Authlib
+description: "Python library for OAuth 1/2, OpenID Connect, and JOSE (JWS, JWE, JWK, JWT), used to build standards-compliant auth clients and servers without assembling one-off crypto code."
+tagline: "OAuth, OIDC, and JOSE for Python"
+github_url: https://github.com/authlib/authlib
+website_url: https://authlib.org
+docs_url: https://docs.authlib.org
+install_command: "pip install authlib"
+category: Dev Tools
+tags:
+  - python
+  - oauth
+  - oidc
+  - jwt
+  - authentication
+  - security
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+problem_solved: "Adding social login or an OAuth 2 server in Python often means stitching Flask-Dance, PyJWT, and ad-hoc HTTP together and getting the spec wrong. Authlib implements OAuth 1/2, OpenID Connect, and JOSE in one library, with integrations for Flask, Django, FastAPI, and Starlette so teams can ship spec-compliant clients and authorization servers."
+use_cases:
+  - "Add GitHub, Google, or OIDC login to a Flask or FastAPI app with Authlib's client integrations"
+  - "Build an OAuth 2 authorization server that issues access and refresh tokens for first-party APIs"
+  - "Sign and encrypt JWTs with JWS/JWE helpers instead of assembling JOSE from lower-level crypto"
