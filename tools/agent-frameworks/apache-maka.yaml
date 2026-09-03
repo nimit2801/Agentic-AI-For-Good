@@ -1,0 +1,25 @@
+name: Apache Maka
+description: A local-first AI agent workspace incubating at the Apache Software Foundation. Maka inspects projects, runs tools in a sandbox, and records model messages, tool calls, and permission decisions as an append-only log on your machine.
+tagline: Local-first agent workspace with an audit log
+
+github_url: https://github.com/apache/maka
+docs_url: https://github.com/apache/maka
+
+category: Agents
+tags: [agents, local-first, sandbox, audit-log, desktop, apache]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Agent IDEs often hide tool calls and permission choices in a chat
+  transcript you cannot replay. Apache Maka is a local-first workspace
+  that records model messages, tool results, and termination events as
+  an append-only log, so you can inspect what the agent did, recover
+  runs, and keep execution facts on your machine.
+
+use_cases:
+  - Run a local coding agent with sandboxed tool calls on your machine
+  - Audit model messages, tool results, and permission decisions later
+  - Recover failed agent runs from an append-only execution log
+  - Keep agent workspace data local instead of sending it to a SaaS IDE
