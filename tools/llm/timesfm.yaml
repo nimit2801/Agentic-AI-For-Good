@@ -1,0 +1,26 @@
+name: TimesFM
+description: Google Research time-series foundation model for zero-shot forecasting. TimesFM is a decoder-only pretrained model so teams can forecast metrics, demand, and LLM traffic without training a custom ARIMA or Transformer per series.
+tagline: Pretrained foundation model for time-series forecasting
+
+github_url: https://github.com/google-research/timesfm
+website_url: https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/
+docs_url: https://github.com/google-research/timesfm
+install_command: pip install timesfm
+
+category: LLM
+tags: [python, time-series, forecasting, foundation-model, google, jax]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Forecasting GPU usage, traffic, and demand usually means training a
+  model per series. TimesFM is a pretrained decoder-only foundation
+  model from Google Research that zero-shot forecasts many series so
+  ML ops and product teams skip per-dataset training.
+
+use_cases:
+  - Forecast LLM API traffic and GPU utilization without per-series training
+  - Zero-shot demand and metric forecasts in an ML monitoring stack
+  - Benchmark TimesFM against ARIMA and Prophet on internal series
+  - Fine-tune TimesFM on domain time series after the zero-shot baseline

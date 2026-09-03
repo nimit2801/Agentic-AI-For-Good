@@ -1,0 +1,26 @@
+name: Heretic
+description: Automatic tool for removing refusal behavior from open-weight language models. Heretic searches residual-stream directions tied to refusals so researchers can measure and ablate safety fine-tuning without hand-crafted jailbreak prompts.
+tagline: Automatic refusal-direction ablation for open-weight LLMs
+
+github_url: https://github.com/p-e-w/heretic
+website_url: https://heretic-project.org
+docs_url: https://github.com/p-e-w/heretic
+install_command: pip install heretic-llm
+
+category: LLM
+tags: [python, llm, interpretability, abliteration, safety, research]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Measuring how much of an open-weight model is safety fine-tuning vs
+  pretraining usually means hand-written jailbreaks. Heretic automatically
+  finds and ablates residual-stream refusal directions so labs can
+  evaluate residual capability and safety tradeoffs on the weights.
+
+use_cases:
+  - Ablate refusal directions in an open-weight chat model for research
+  - Compare safety-tuned vs ablated checkpoints on capability benches
+  - Study residual-stream features tied to model refusals
+  - Produce a research checkpoint after automated abliteration
