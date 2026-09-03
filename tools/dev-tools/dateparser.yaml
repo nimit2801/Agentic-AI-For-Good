@@ -1,0 +1,28 @@
+name: dateparser
+description: A Python parser for human-readable dates in many languages and formats. dateparser turns strings like "3 days ago" or "15/01/2024" into datetime objects for logs, crawlers, and dataset timestamps that are not ISO-8601.
+tagline: Parse human-readable dates in many languages
+
+github_url: https://github.com/scrapinghub/dateparser
+website_url: https://dateparser.readthedocs.org
+docs_url: https://dateparser.readthedocs.org
+
+category: Dev Tools
+tags: [python, datetime, parsing, nlp, scraping, timestamps, developer-tools]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+install_command: pip install dateparser
+
+problem_solved: |
+  Scraped pages, support tickets, and dataset captions stamp dates as
+  "yesterday", "Jan 3rd", or locale-specific strings. strptime and
+  dateutil still miss many of those. dateparser detects language and
+  relative phrases so ETL and RAG ingest can normalize messy dates
+  into real datetimes.
+
+use_cases:
+  - Parse relative dates from scraped articles into timezone-aware datetimes
+  - Normalize mixed locale timestamps in user-uploaded datasets
+  - Convert "3 days ago" log phrases into training-window bounds
+  - Extract publication dates from multilingual web corpora for RAG

@@ -1,0 +1,28 @@
+name: cerberus
+description: A lightweight, extensible Python data validation library for dictionaries. cerberus is used to validate configs, form payloads, and dataset records with a schema that supports types, coercion, and custom rules without a heavy framework.
+tagline: Lightweight dictionary validation with extensible schemas
+
+github_url: https://github.com/pyeve/cerberus
+website_url: https://docs.python-cerberus.org
+docs_url: https://docs.python-cerberus.org
+
+category: Dev Tools
+tags: [python, validation, schema, dictionaries, configuration, developer-tools]
+pricing: free
+is_open_source: true
+license: ISC
+
+install_command: pip install cerberus
+
+problem_solved: |
+  Pipeline configs and ingested records are nested dicts that fail late
+  when a type or required key is wrong. JSON Schema is heavy for simple
+  dicts. cerberus validates and optionally coerces dictionaries with a
+  readable schema, plus custom rules, so bad experiment configs never
+  reach a GPU job.
+
+use_cases:
+  - Validate nested training hyperparameter dicts before a run starts
+  - Coerce string numbers from env-derived config into ints and floats
+  - Reject dataset rows missing required feature keys at ingest
+  - Add custom validators for model-name enums used across services

@@ -1,0 +1,28 @@
+name: python-dotenv
+description: Reads key-value pairs from a .env file and loads them into environment variables. python-dotenv is the standard way ML apps keep API keys, model endpoints, and 12-factor config out of source while still running locally.
+tagline: Load .env files into environment variables for Python apps
+
+github_url: https://github.com/theskumar/python-dotenv
+website_url: https://saurabh-kumar.com/python-dotenv/
+docs_url: https://saurabh-kumar.com/python-dotenv/
+
+category: Dev Tools
+tags: [python, dotenv, configuration, secrets, environment, 12-factor, developer-tools]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+install_command: pip install python-dotenv
+
+problem_solved: |
+  Training jobs and agent apps need OPENAI_API_KEY, database URLs, and
+  model endpoints without committing secrets. Exporting vars by hand
+  does not travel across laptops and CI. python-dotenv loads a .env
+  file into os.environ so local and 12-factor deploys share the same
+  config pattern.
+
+use_cases:
+  - Load LLM API keys from a gitignored .env in local agent development
+  - Share the same env-file pattern between FastAPI serving and training scripts
+  - Override nested config in pytest without exporting shell variables
+  - Keep model endpoint URLs out of committed YAML for staging vs production

@@ -1,0 +1,28 @@
+name: boltons
+description: A pure-Python library of 250-plus constructs that extend the standard library with no extra dependencies. boltons is used in data and ML services for dict utils, retry, caching, and file helpers that would otherwise be one-off snippets.
+tagline: Battle-tested Python stdlib extras with zero dependencies
+
+github_url: https://github.com/mahmoud/boltons
+website_url: https://boltons.readthedocs.org
+docs_url: https://boltons.readthedocs.org
+
+category: Dev Tools
+tags: [python, stdlib, utilities, dict, retry, developer-tools]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+install_command: pip install boltons
+
+problem_solved: |
+  Production Python services copy the same dict merge, retry, and file
+  helpers into every repo. Those snippets drift and pick up bugs.
+  boltons packages 250-plus tested recipes on top of the stdlib so
+  ML pipelines can reuse cache, iterutils, and fileutils without
+  pulling a heavy framework.
+
+use_cases:
+  - Use dictutils to merge nested experiment configs without custom recursion
+  - Retry flaky dataset downloads with boltons.iterutils and exception helpers
+  - Cache function results with a small in-process cache from boltons
+  - Read and write atomic files for local checkpoints with fileutils
