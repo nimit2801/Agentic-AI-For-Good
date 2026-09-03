@@ -1,0 +1,28 @@
+name: LLM Compressor
+description: Transformers-compatible library from the vLLM project for compressing LLMs with quantization and sparsification algorithms, producing models optimized for high-throughput vLLM deployment.
+tagline: Compress Hugging Face models for faster vLLM serving
+
+github_url: https://github.com/vllm-project/llm-compressor
+website_url: https://docs.vllm.ai/projects/llm-compressor
+docs_url: https://docs.vllm.ai/projects/llm-compressor
+
+install_command: pip install llmcompressor
+
+category: Fine-tuning
+tags: [python, quantization, sparsification, vllm, compression, transformers, inference]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Serving large Transformers models on vLLM still burns GPU memory unless weights are
+  quantized or sparsified first, and one-off compression scripts rarely match vLLM's
+  expected formats. LLM Compressor applies production compression algorithms to Hugging
+  Face models so you can ship smaller checkpoints that load and run correctly on vLLM.
+
+use_cases:
+  - Quantize a Hugging Face LLM to INT8 or FP8 before serving it with vLLM
+  - Apply sparsification recipes to shrink a dense model without rewriting training code
+  - Compress a fine-tuned checkpoint so it fits on fewer GPUs in production
+  - Standardize model compression in CI so every release ships a vLLM-ready artifact
+  - Compare compression algorithms on the same Transformers model before picking a deploy format

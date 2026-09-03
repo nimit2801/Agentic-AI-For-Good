@@ -1,0 +1,28 @@
+name: Olive
+description: Microsoft toolkit that simplifies ML model fine-tuning, conversion, quantization, and hardware-aware optimization for CPUs, GPUs, and NPUs, including ONNX Runtime deployment.
+tagline: Fine-tune, quantize, and optimize models for ONNX Runtime
+
+github_url: https://github.com/microsoft/Olive
+website_url: https://microsoft.github.io/Olive/
+docs_url: https://microsoft.github.io/Olive/
+
+install_command: pip install olive-ai
+
+category: Fine-tuning
+tags: [python, onnx, quantization, fine-tuning, optimization, microsoft, gpu, npu]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Getting a trained model from PyTorch or Hugging Face onto CPU, GPU, or NPU hardware
+  usually means a brittle chain of converters, quantizers, and runtime-specific flags.
+  Olive wraps fine-tuning, conversion, quantization, and hardware-aware optimization in
+  one workflow so teams can produce ONNX Runtime-ready models without a custom toolchain.
+
+use_cases:
+  - Fine-tune a Hugging Face model then export an optimized ONNX graph for ONNX Runtime
+  - Quantize an LLM or vision model for CPU or NPU inference without hand-written recipes
+  - Auto-tune graph optimizations against a target device before production packaging
+  - Convert a PyTorch checkpoint into a hardware-specific deployment artifact
+  - Standardize model optimization across Windows, Azure, and edge NPU targets
