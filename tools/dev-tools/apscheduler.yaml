@@ -1,0 +1,28 @@
+name: APScheduler
+description: An in-process Python task scheduler with cron, interval, and date triggers, plus job stores and executors. APScheduler runs retraining, data refresh, and cleanup jobs inside an app without requiring a separate Celery or cron host.
+tagline: In-process cron, interval, and date job scheduling for Python
+
+github_url: https://github.com/agronholm/apscheduler
+website_url: https://apscheduler.readthedocs.io
+docs_url: https://apscheduler.readthedocs.io
+
+category: Dev Tools
+tags: [python, scheduling, cron, jobs, background-tasks, ml-pipeline, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install APScheduler
+
+problem_solved: |
+  ML apps need periodic embedding rebuilds, cache expiry, and eval
+  sweeps but do not always want Celery or system cron. Sleep loops
+  miss DST and crash recovery. APScheduler stores jobs, supports cron
+  and interval triggers, and runs them in-process with persistent job
+  stores so schedules survive restarts.
+
+use_cases:
+  - Run nightly dataset refresh and embedding rebuild jobs inside a service
+  - Schedule interval health checks for a model-serving process
+  - Fire a one-shot eval job at a calendar datetime
+  - Persist scheduled retraining jobs in SQLAlchemy so they survive deploys
