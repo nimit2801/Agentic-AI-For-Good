@@ -1,0 +1,22 @@
+name: multiprocess
+description: "Drop-in multiprocessing replacement that uses dill for serialization, so worker processes can pickle closures, lambdas, and nested functions that the stdlib multiprocessing module cannot."
+tagline: "multiprocessing with dill serialization"
+github_url: https://github.com/uqfoundation/multiprocess
+website_url: https://multiprocess.readthedocs.io
+docs_url: https://multiprocess.readthedocs.io
+install_command: "pip install multiprocess"
+category: Dev Tools
+tags:
+  - python
+  - multiprocessing
+  - parallel
+  - dill
+  - serialization
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+problem_solved: "Python multiprocessing Pickler cannot send lambdas, nested functions, or many dynamic objects to workers, which breaks parallel map over closures. multiprocess uses dill so data science and ML jobs can fan work out to processes without rewriting callables as top-level functions."
+use_cases:
+  - "Parallelize a map over closures or lambdas that stdlib multiprocessing refuses to pickle"
+  - "Run CPU-bound feature extraction in worker processes from a notebook without extracting helpers to a module"
+  - "Replace multiprocessing.Pool with multiprocess.Pool in pathos-style scientific pipelines"
