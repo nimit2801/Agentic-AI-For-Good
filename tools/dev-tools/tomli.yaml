@@ -1,0 +1,27 @@
+name: tomli
+description: A small, fast TOML parser for Python. tomli is the stdlib tomllib implementation vendored into CPython 3.11+, used to read pyproject.toml in packaging, training configs, and agent tool manifests.
+tagline: Minimal TOML parser for Python
+
+github_url: https://github.com/hukkin/tomli
+website_url: https://github.com/hukkin/tomli
+docs_url: https://github.com/hukkin/tomli
+install_command: pip install tomli
+
+category: Dev Tools
+tags: [python, toml, parsing, packaging, pyproject, config]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Python packaging and ML configs live in TOML (pyproject.toml, tool
+  settings, experiment files) but older runtimes have no stdlib parser.
+  tomli is a pure-Python TOML parser that became CPython's tomllib, so
+  build backends, linters, and training launchers can read TOML on 3.8+
+  without installing a large config library.
+
+use_cases:
+  - Parse pyproject.toml in custom build backends and packaging scripts
+  - Load TOML experiment and agent-tool configs on Python versions before 3.11
+  - Read Cargo-style and PEP 621 metadata in CI without a heavy TOML stack
+  - Vendor a stdlib-compatible TOML parser in CLI tools that must stay small

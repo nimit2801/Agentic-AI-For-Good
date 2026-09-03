@@ -1,0 +1,27 @@
+name: cibuildwheel
+description: Build Python wheels for every platform from one CI job. cibuildwheel runs manylinux, musllinux, macOS, Windows, and iOS builds so native ML extensions ship on PyPI without a matrix of hand-written Dockerfiles.
+tagline: Python wheels for every platform from CI
+
+github_url: https://github.com/pypa/cibuildwheel
+website_url: https://cibuildwheel.pypa.io
+docs_url: https://cibuildwheel.pypa.io
+install_command: pip install cibuildwheel
+
+category: Dev Tools
+tags: [python, packaging, wheels, ci, manylinux, pypa, build]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Native Python extensions for tokenizers, CUDA bindings, and numerics must
+  ship wheels for Linux, macOS, and Windows or pip falls back to compiling
+  from source. Maintaining that matrix by hand is fragile. cibuildwheel is
+  the PyPA tool that builds manylinux, musllinux, macOS, Windows, and
+  PyPy wheels from GitHub Actions, Azure, or other CI with minimal config.
+
+use_cases:
+  - Build manylinux and musllinux wheels for C/Rust ML extensions in GitHub Actions
+  - Publish macOS universal2 and Windows wheels from a single CI workflow
+  - Stop maintaining custom Dockerfiles for PyPI native package releases
+  - Test compiled extensions on CPython and PyPy before uploading to PyPI

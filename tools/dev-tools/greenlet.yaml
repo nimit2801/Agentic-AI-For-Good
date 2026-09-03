@@ -1,0 +1,28 @@
+name: greenlet
+description: Lightweight in-process concurrent programming for Python. greenlet provides micro-threads that gevent, SQLAlchemy, and many async DB adapters use so blocking I/O can yield without a full OS thread per connection.
+tagline: Lightweight coroutines for Python
+
+github_url: https://github.com/python-greenlet/greenlet
+website_url: https://greenlet.readthedocs.io
+docs_url: https://greenlet.readthedocs.io
+install_command: pip install greenlet
+
+category: Dev Tools
+tags: [python, concurrency, coroutines, gevent, threading]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Thread-per-connection models blow up memory when ML services talk to
+  Postgres, Redis, or HTTP at high concurrency. greenlet is a C extension
+  that switches Python stacks cooperatively, which gevent and SQLAlchemy
+  use so blocking drivers can multiplex work inside one OS thread. Agent
+  backends and ETL workers get concurrency without rewriting everything
+  as asyncio.
+
+use_cases:
+  - Power gevent monkey-patching so blocking HTTP and DB clients scale in one process
+  - Let SQLAlchemy connection pools yield during I/O instead of occupying OS threads
+  - Run cooperative workers for scraping and feature-store writes without asyncio rewrites
+  - Debug stack switching in services that mix greenlets with native extensions
