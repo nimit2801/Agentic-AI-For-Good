@@ -1,0 +1,27 @@
+name: alive-progress
+description: A Python progress bar that animates in the terminal and estimates ETA from live throughput. alive-progress is used in training loops, downloads, and long ETL jobs where tqdm-style bars need richer spinners and nested tracking.
+tagline: Animated terminal progress bars with live ETA
+
+github_url: https://github.com/rsalmei/alive-progress
+website_url: https://github.com/rsalmei/alive-progress
+docs_url: https://github.com/rsalmei/alive-progress
+
+category: Dev Tools
+tags: [python, cli, progress-bar, terminal, etl, training, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install alive-progress
+
+problem_solved: |
+  Long training, download, and ETL jobs look frozen without a bar, and
+  basic counters do not show ETA or nested work. alive-progress draws
+  animated bars with live throughput so operators can see whether a
+  job is moving and when it should finish.
+
+use_cases:
+  - Show ETA on dataset downloads and embedding backfills
+  - Track nested progress in multi-stage ETL before training
+  - Replace silent loops in CLI agent tools with an animated bar
+  - Monitor long-running evaluation jobs in a terminal session

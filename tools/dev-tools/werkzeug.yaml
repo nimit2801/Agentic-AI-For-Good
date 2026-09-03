@@ -1,0 +1,28 @@
+name: Werkzeug
+description: A comprehensive WSGI web application library that powers Flask. Werkzeug is the request, response, routing, and debugging toolkit Python teams use when they serve model APIs and agent dashboards without a full framework.
+tagline: WSGI utilities, routing, and debugger behind Flask
+
+github_url: https://github.com/pallets/werkzeug
+website_url: https://werkzeug.palletsprojects.com
+docs_url: https://werkzeug.palletsprojects.com
+
+category: Dev Tools
+tags: [python, wsgi, flask, http, routing, web, serving]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+install_command: pip install werkzeug
+
+problem_solved: |
+  Serving an inference or agent HTTP API still needs routing, headers,
+  cookies, and a debugger. Rolling that on raw WSGI is error-prone.
+  Werkzeug is the library Flask is built on, so you get request objects,
+  URL routing, and an interactive debugger without adopting a full
+  framework.
+
+use_cases:
+  - Build a small WSGI wrapper around a model predict() function
+  - Debug Flask and agent dashboards with the interactive traceback
+  - Parse multipart uploads of datasets in a Python HTTP handler
+  - Share routing and header utilities across Flask-based ML services

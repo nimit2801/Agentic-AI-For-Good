@@ -1,0 +1,27 @@
+name: PyJWT
+description: A Python library to encode and decode JSON Web Tokens. PyJWT is used to sign API tokens, verify LLM gateway auth, and pass identity between agent services without a full OAuth stack.
+tagline: Encode and decode JSON Web Tokens in Python
+
+github_url: https://github.com/jpadilla/pyjwt
+website_url: https://pyjwt.readthedocs.io
+docs_url: https://pyjwt.readthedocs.io
+
+category: Dev Tools
+tags: [python, jwt, auth, security, api, tokens, identity]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install pyjwt
+
+problem_solved: |
+  Agent APIs and model gateways need short-lived identity between
+  services. Rolling HMAC tokens by hand is easy to get wrong, and a
+  full OAuth server is heavy. PyJWT encodes and verifies JWTs so
+  services can sign claims and reject expired or tampered tokens.
+
+use_cases:
+  - Sign short-lived JWTs for an inference or agent HTTP API
+  - Verify Authorization bearer tokens at a model gateway
+  - Pass user and workspace claims between microservices
+  - Encode service-to-service identity without a full OAuth server
