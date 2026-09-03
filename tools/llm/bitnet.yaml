@@ -1,0 +1,25 @@
+name: BitNet
+description: Microsoft inference runtime for 1-bit LLMs. BitNet runs ternary BitNet b1.58 models with optimized kernels so teams can serve compact language models on CPUs and edge devices instead of full-precision GPUs.
+tagline: Official inference runtime for 1-bit LLMs
+
+github_url: https://github.com/microsoft/BitNet
+website_url: https://github.com/microsoft/BitNet
+docs_url: https://github.com/microsoft/BitNet
+
+category: LLM
+tags: [llm, inference, 1-bit, quantization, microsoft, cpu, edge]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Full-precision LLMs are too heavy for CPU and edge serving. BitNet is
+  Microsoft's official runtime for 1-bit and 1.58-bit models, with kernels
+  that run ternary transformers efficiently so local and edge inference
+  does not need a GPU cluster.
+
+use_cases:
+  - Serve BitNet b1.58 models on CPU for local chat and agents
+  - Benchmark 1-bit LLM latency against 4-bit GGUF on edge hardware
+  - Package a compact on-device assistant without a GPU
+  - Experiment with ternary transformer inference from Hugging Face checkpoints
