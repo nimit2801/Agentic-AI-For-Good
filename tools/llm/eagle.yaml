@@ -1,0 +1,26 @@
+name: EAGLE
+description: Speculative decoding method that drafts tokens from LLM feature trajectories. EAGLE trains a lightweight head on hidden states so serving stacks get 2-3x faster generation while matching the base model's output distribution.
+tagline: Speculative decoding from LLM feature trajectories
+
+github_url: https://github.com/SafeAILab/EAGLE
+website_url: https://github.com/SafeAILab/EAGLE
+docs_url: https://github.com/SafeAILab/EAGLE
+install_command: pip install eagle-llm
+
+category: LLM
+tags: [python, llm, inference, speculative-decoding, serving, acceleration]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Autoregressive decode is the latency bottleneck for chat and agents.
+  EAGLE trains a small draft head on second-top-layer features so the
+  base model verifies multiple tokens per step, speeding generation
+  2-3x without changing the sampled text distribution.
+
+use_cases:
+  - Speed up Vicuna or Llama chat serving with an EAGLE draft head
+  - Train an EAGLE head for a custom instruction-tuned checkpoint
+  - Combine EAGLE with quantization for higher tokens per second
+  - Benchmark speculative decoding against Medusa and vanilla generate

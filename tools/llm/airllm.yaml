@@ -1,0 +1,26 @@
+name: AirLLM
+description: Inference library that streams LLM layers so 70B-class models run on a single 4GB GPU. AirLLM loads one layer at a time from disk or RAM so local agents can serve large open-weight models without a multi-GPU box.
+tagline: Run 70B LLMs on a single 4GB GPU
+
+github_url: https://github.com/lyogavin/airllm
+website_url: https://github.com/lyogavin/airllm
+docs_url: https://github.com/lyogavin/airllm
+install_command: pip install airllm
+
+category: LLM
+tags: [python, llm, inference, gpu, memory, local, quantization]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Large open-weight models need more VRAM than a single consumer GPU.
+  AirLLM streams transformer layers during decode so 70B-class models
+  run in about 4GB of VRAM, letting local agents and labs serve big
+  checkpoints without a multi-GPU cluster.
+
+use_cases:
+  - Serve a 70B chat model on one 4GB or 8GB GPU for local agents
+  - Prototype large-model RAG on a laptop-class NVIDIA card
+  - Stream MoE experts so only routed layers sit in VRAM
+  - Compare layer-streaming inference against full-load vLLM
