@@ -1,0 +1,28 @@
+name: tenacity
+description: A retrying library for Python that wraps callables with configurable retry policies including exponential backoff, wait strategies, stop conditions, and exception filters. It is the standard retry layer for LLM API calls, network I/O, and flaky ML pipeline steps.
+tagline: Production-grade retry library for Python
+
+github_url: https://github.com/jd/tenacity
+website_url: https://tenacity.readthedocs.io
+docs_url: https://tenacity.readthedocs.io
+
+category: Dev Tools
+tags: [python, retry, backoff, resilience, llm-apis, networking, reliability]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install tenacity
+
+problem_solved: |
+  LLM APIs, vector databases, and remote feature stores fail with rate limits,
+  timeouts, and transient 5xx errors. Ad-hoc retry loops scatter sleep calls
+  and miss jitter, max attempts, and exception filters. tenacity wraps any
+  callable with declarative retry, wait, and stop policies so inference
+  clients and data jobs recover from flakes without custom retry code.
+
+use_cases:
+  - Retry OpenAI, Anthropic, and other LLM API calls on rate limits and timeouts with exponential backoff and jitter
+  - Harden embedding and vector-search clients against transient network errors in RAG pipelines
+  - Wrap flaky data-loader and feature-store fetches in training jobs with stop-after-attempt and wait-exponential policies
+  - Decorate agent tool calls so temporary HTTP failures do not abort a multi-step run

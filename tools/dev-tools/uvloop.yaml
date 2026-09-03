@@ -1,0 +1,28 @@
+name: uvloop
+description: An ultra-fast drop-in replacement for asyncio's default event loop, implemented in Cython on top of libuv. uvloop typically makes Python async I/O 2-4x faster and is the loop behind uvicorn, FastAPI, and many production LLM serving stacks.
+tagline: Ultra-fast asyncio event loop built on libuv
+
+github_url: https://github.com/MagicStack/uvloop
+docs_url: https://github.com/MagicStack/uvloop
+
+category: Dev Tools
+tags: [python, asyncio, event-loop, libuv, performance, uvicorn, async]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install uvloop
+
+problem_solved: |
+  Python's default asyncio event loop is convenient but slow under high
+  concurrency, which shows up as extra latency in LLM API gateways, embedding
+  servers, and streaming inference proxies. uvloop is a drop-in Cython loop
+  on libuv that is typically 2-4x faster I/O with the same asyncio APIs. Teams
+  install it once, call uvloop.install(), and keep existing async code while
+  serving more concurrent requests on the same hardware.
+
+use_cases:
+  - Speed up FastAPI and uvicorn inference gateways that stream tokens from LLM providers
+  - Raise concurrency in async embedding, RAG retrieval, and tool-calling services without extra machines
+  - Drop uvloop into existing asyncio workers as a one-line install for production Python I/O
+  - Benchmark and replace the default event loop in high-QPS webhook and agent callback servers

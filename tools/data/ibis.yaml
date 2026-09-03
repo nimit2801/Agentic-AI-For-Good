@@ -1,0 +1,28 @@
+name: Ibis
+description: A portable Python dataframe library that compiles the same DataFrame API to DuckDB, Postgres, BigQuery, Snowflake, Spark, and more. Write analytics and feature-engineering code once and run it locally or in the warehouse without rewriting SQL.
+tagline: Portable Python dataframes that compile to many backends
+
+github_url: https://github.com/ibis-project/ibis
+website_url: https://ibis-project.org
+docs_url: https://ibis-project.org/docs
+
+category: Data
+tags: [python, dataframe, sql, duckdb, analytics, feature-engineering, data-warehouse]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install ibis-framework
+
+problem_solved: |
+  ML and analytics teams rewrite the same transformations in pandas for
+  local work and SQL for the warehouse, which drifts and breaks pipelines.
+  Ibis gives one deferred DataFrame API that compiles to DuckDB, Postgres,
+  BigQuery, Snowflake, Spark, and other backends. Feature engineering and
+  dataset prep stay in Python while execution happens where the data lives.
+
+use_cases:
+  - Write feature-engineering DataFrame code once and run it on DuckDB locally or BigQuery and Snowflake in production
+  - Query parquet lakes and warehouse tables with the same Python API instead of maintaining dialect-specific SQL
+  - Prototype RAG and analytics datasets on a laptop, then scale the identical Ibis expressions to Spark
+  - Build backend-agnostic data-prep jobs that join, filter, and aggregate training data without locking to one engine
