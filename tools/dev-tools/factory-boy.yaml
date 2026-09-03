@@ -1,0 +1,27 @@
+name: factory-boy
+description: Test fixtures as Python factories. factory-boy builds ORM and dataclass objects with realistic defaults so ML app tests do not copy-paste nested user, dataset, and experiment rows.
+tagline: Test factories for Python objects
+
+github_url: https://github.com/FactoryBoy/factory_boy
+website_url: https://factoryboy.readthedocs.io
+docs_url: https://factoryboy.readthedocs.io
+install_command: pip install factory-boy
+
+category: Dev Tools
+tags: [python, testing, fixtures, django, sqlalchemy, pytest]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Tests for ML platforms need users, datasets, runs, and API keys in the
+  database. Hand-built fixtures drift and duplicate. factory-boy defines
+  factories that create Django, SQLAlchemy, or plain objects with faked
+  fields and related rows, so pytest suites stay short and data shapes stay
+  in one place.
+
+use_cases:
+  - Generate Django or SQLAlchemy users, projects, and experiment rows in pytest
+  - Build nested related objects for API tests without a giant fixture JSON
+  - Seed demo data for local ML consoles with repeatable factories
+  - Replace brittle copy-pasted model constructors in integration tests

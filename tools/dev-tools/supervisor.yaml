@@ -1,0 +1,27 @@
+name: Supervisor
+description: Process control system for Unix. supervisord starts, restarts, and logs long-running programs so ML APIs, workers, and agents stay up without a full Kubernetes stack.
+tagline: Unix process control for long-running jobs
+
+github_url: https://github.com/Supervisor/supervisor
+website_url: http://supervisord.org
+docs_url: http://supervisord.org
+install_command: pip install supervisor
+
+category: Dev Tools
+tags: [python, process-manager, devops, unix, supervisord]
+pricing: free
+is_open_source: true
+license: BSD-derived
+
+problem_solved: |
+  Small ML deployments still run FastAPI servers, Celery workers, and Redis
+  on a VM. systemd unit files are heavy for app-level programs, and a crash
+  takes the process down until someone notices. Supervisor watches those
+  programs, restarts on failure, and tails logs from one config file, which
+  is enough process supervision before you need Kubernetes.
+
+use_cases:
+  - Keep model-serving APIs and embedding workers running on a single VM
+  - Restart crashed Celery or RQ workers used by agent backends
+  - Group log tails for local ML stacks without Docker Compose
+  - Bootstrap process supervision on GPU boxes that are not in a cluster
