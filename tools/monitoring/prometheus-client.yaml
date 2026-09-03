@@ -1,0 +1,27 @@
+name: prometheus-client
+description: Official Prometheus instrumentation library for Python. prometheus-client exposes counters, histograms, and /metrics so model servers, agent workers, and training jobs can be scraped without a sidecar.
+tagline: Prometheus metrics for Python apps
+
+github_url: https://github.com/prometheus/client_python
+website_url: https://prometheus.github.io/client_python/
+docs_url: https://prometheus.github.io/client_python/
+install_command: pip install prometheus-client
+
+category: Monitoring
+tags: [python, prometheus, metrics, observability, monitoring, instrumentation]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Model APIs and agent workers need request counts, latency histograms, and
+  GPU-adjacent gauges, but shipping a sidecar for every process is heavy.
+  prometheus-client is the official Python library that records metrics in
+  process and serves Prometheus text format, which Grafana and Alertmanager
+  already know how to scrape.
+
+use_cases:
+  - Expose request latency histograms on FastAPI model-serving endpoints
+  - Count agent tool calls, queue depth, and error rates for Prometheus scrapes
+  - Instrument training loops with gauges for step time and loss without a vendor APM
+  - Push gateway metrics from short-lived batch jobs that cannot be scraped
