@@ -1,0 +1,28 @@
+name: Parcel
+description: A zero-configuration web bundler that compiles JavaScript, TypeScript, CSS, and assets with automatic transforms and caching. Parcel is used to ship ML demo UIs, annotation tools, and dashboard frontends without a custom webpack file.
+tagline: Zero-config web bundler for JS, CSS, and assets
+
+github_url: https://github.com/parcel-bundler/parcel
+website_url: https://parceljs.org
+docs_url: https://parceljs.org/docs/
+
+install_command: npm install parcel
+
+category: Dev Tools
+tags: [javascript, bundler, typescript, web, frontend, npm, build]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  ML teams shipping a small web UI for annotation or model demos
+  often stall on webpack and plugin config. Parcel infers loaders
+  from file types, caches builds, and produces a production bundle
+  with one command, so the frontend around an inference API does
+  not need a custom bundler stack.
+
+use_cases:
+  - Bundle a TypeScript UI for an internal model playground without webpack
+  - Ship CSS and image assets for an annotation tool with automatic hashing
+  - Hot-reload a dashboard that calls a local inference server during development
+  - Produce a production build of a RAG demo frontend with npm scripts

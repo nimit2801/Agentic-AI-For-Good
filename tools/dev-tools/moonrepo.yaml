@@ -1,0 +1,28 @@
+name: moonrepo
+description: A Rust-built build system and monorepo manager for the web ecosystem. moonrepo hashes tasks, caches outputs, and orchestrates JavaScript, Python, and Go projects so mixed ML web apps and SDKs rebuild only what changed.
+tagline: Rust build system and monorepo manager for web stacks
+
+github_url: https://github.com/moonrepo/moon
+website_url: https://moonrepo.dev/moon
+docs_url: https://moonrepo.dev/docs
+
+install_command: npm install -g @moonrepo/cli
+
+category: Dev Tools
+tags: [monorepo, rust, javascript, python, build-system, caching, devops]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Mixed repos with a Python training package and a TypeScript
+  console waste CI time rebuilding everything. moonrepo models
+  tasks and dependencies, caches outputs by hash, and runs only
+  affected projects so ML web apps and SDKs stay fast as the
+  monorepo grows.
+
+use_cases:
+  - Cache TypeScript and Python tasks so CI skips unchanged ML console packages
+  - Orchestrate lint, test, and build across JS SDK and Python client folders
+  - Share a toolchain pin for Node and Python in a mixed agent-platform repo
+  - Run affected tests only when a shared schema package changes
