@@ -1,0 +1,26 @@
+name: vfox
+description: Cross-platform version manager written in Go. vfox installs and switches Java, Node.js, Go, Python, Flutter, .NET, and more through plugins, so ML laptops pin several language toolchains with one CLI instead of a stack of nvm, pyenv, and sdkman.
+tagline: Cross-platform multi-language version manager
+
+github_url: https://github.com/version-fox/vfox
+website_url: https://vfox.dev
+docs_url: https://vfox.dev
+install_command: brew install vfox
+
+category: Dev Tools
+tags: [version-manager, cross-platform, node, java, python, golang, devops]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Polyglot ML repos mix Node UIs, Python training, and JVM services,
+  which usually means nvm plus pyenv plus SDKMAN. vfox is one plugin
+  based manager that installs those SDKs on Windows, macOS, and Linux
+  so a laptop can pin several languages without a pile of shell hooks.
+
+use_cases:
+  - Pin Node, Python, and JDK in one CLI for a polyglot ML repo
+  - Replace nvm plus pyenv on a Windows ML workstation
+  - Switch SDKs per directory with vfox plugins for Go and Flutter
+  - Keep CI images on the same version-manager CLI as local development
