@@ -1,0 +1,26 @@
+name: goenv
+description: Go version manager modeled on pyenv and rbenv. goenv installs multiple Go toolchains per user and switches them with a .go-version file so ML services written in Go pin the compiler without a single system-wide install.
+tagline: Per-project Go version manager like pyenv
+
+github_url: https://github.com/go-nv/goenv
+website_url: https://github.com/go-nv/goenv
+docs_url: https://github.com/go-nv/goenv#installation
+install_command: brew install goenv
+
+category: Dev Tools
+tags: [go, golang, version-manager, pyenv, cli, devops]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go ML services and inference sidecars pin a Go version that the
+  OS package or a single /usr/local/go cannot match. goenv installs
+  isolated toolchains and switches by shell or .go-version so each
+  repo builds with the compiler it was tested against.
+
+use_cases:
+  - Pin Go per repo with a .go-version file for an inference sidecar
+  - Install multiple Go versions on a laptop without replacing /usr/local/go
+  - Match CI Go to local goenv so module builds stay reproducible
+  - Switch Go quickly when testing toolchain changes across services

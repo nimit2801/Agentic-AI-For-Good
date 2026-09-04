@@ -1,0 +1,26 @@
+name: jenv
+description: Java environment manager that switches JDKs per user, shell, or project with a .java-version file. jenv is the rbenv-style manager for Java so Spark jobs and JVM model servers pin a JDK without replacing the OS Java.
+tagline: Per-project JDK switcher in the rbenv style
+
+github_url: https://github.com/jenv/jenv
+website_url: https://www.jenv.be
+docs_url: https://github.com/jenv/jenv#install
+install_command: brew install jenv
+
+category: Dev Tools
+tags: [java, jdk, version-manager, jvm, rbenv, devops]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  JVM ML services and Spark jobs pin a JDK that macOS and Linux
+  system Java do not match. jenv registers existing JDKs and
+  switches by shell or .java-version so each repo uses the
+  interpreter it was tested on without sudo or a single global JAVA_HOME.
+
+use_cases:
+  - Pin a JDK per Spark or model-serving repo with a .java-version file
+  - Switch JAVA_HOME in the shell when testing across LTS JDKs
+  - Keep macOS system Java off the PATH for Gradle ML services
+  - Match CI JDK to local jenv so Maven builds stay reproducible
