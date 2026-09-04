@@ -1,0 +1,22 @@
+name: SpiceDB
+description: SpiceDB is an open-source Google Zanzibar-inspired database for storing and querying fine-grained authorization data. It scales relationship graphs so AI platforms can check permissions on models, datasets, and agent sessions with consistent, low-latency lookups.
+tagline: Zanzibar-inspired database for fine-grained authorization
+github_url: https://github.com/authzed/spicedb
+website_url: https://authzed.com
+docs_url: https://authzed.com/docs/spicedb/getting-started/discovering-spicedb
+install_command: brew install spicedb
+category: Data
+tags: [authorization, zanzibar, database, rebac, security, permissions, data-platform]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+problem_solved: |
+  Application databases are a poor fit for nested, relationship-based
+  permissions across tenants, datasets, and model artifacts. SpiceDB
+  stores a permission graph and answers check and lookup queries with
+  Zanzibar-style consistency so AI products can authorize every RAG
+  retrieve and agent action without scanning ACLs in Postgres.
+use_cases:
+  - Store relationship tuples for who can read a fine-tuning dataset or invoke a private model
+  - Lookup subjects that may access an agent session before streaming tokens
+  - Keep authorization consistent across microservices that serve embeddings, prompts, and eval jobs

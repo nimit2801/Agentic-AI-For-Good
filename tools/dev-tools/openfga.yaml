@@ -1,0 +1,22 @@
+name: OpenFGA
+description: OpenFGA is a high-performance authorization engine inspired by Google Zanzibar. It stores relationship tuples and answers check, list, and expand queries so AI platforms can enforce fine-grained access on agents, datasets, and model endpoints without hard-coding RBAC.
+tagline: Zanzibar-style authorization for fine-grained access checks
+github_url: https://github.com/openfga/openfga
+website_url: https://openfga.dev
+docs_url: https://openfga.dev/docs
+install_command: brew install openfga
+category: Dev Tools
+tags: [authorization, zanzibar, rbac, rebac, security, openfga, access-control]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: |
+  Multi-tenant AI products need to answer "can this user run this agent on
+  that dataset?" at request time. Role tables in the app database do not
+  scale to nested teams and shared models. OpenFGA stores relationship
+  tuples and serves check queries so platforms keep authorization logic
+  out of every inference handler.
+use_cases:
+  - Check whether a user can invoke a private agent or model endpoint before the request is billed
+  - Model team and project membership as relationship tuples for shared evaluation datasets
+  - List every document a principal may retrieve in a RAG workspace without scanning the whole corpus ACL

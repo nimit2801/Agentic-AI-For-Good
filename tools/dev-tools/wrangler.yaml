@@ -1,0 +1,21 @@
+name: Wrangler
+description: Wrangler is the CLI for Cloudflare Workers. It develops, previews, and deploys Workers, Pages, and Durable Objects so teams ship edge AI gateways, prompt proxies, and token-routing logic from a local project without clicking through the Cloudflare dashboard.
+tagline: CLI for developing and deploying Cloudflare Workers
+github_url: https://github.com/cloudflare/workers-sdk
+website_url: https://developers.cloudflare.com/workers/
+docs_url: https://developers.cloudflare.com/workers/wrangler/
+install_command: npm install -g wrangler
+category: Dev Tools
+tags: [cloudflare, workers, cli, edge, serverless, javascript, devops]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: |
+  Edge LLM proxies and Workers-based AI gateways need a local inner loop
+  that matches production. Wrangler runs a Workers preview, binds KV and
+  Durable Objects, and deploys from the repo so teams iterate on prompt
+  routing and auth at the edge instead of editing scripts in the dashboard.
+use_cases:
+  - Develop and preview an edge prompt-proxy Worker against local fixtures before deploy
+  - Bind KV, R2, or Durable Objects to an AI gateway Worker from wrangler.toml
+  - Deploy Workers that route model traffic by region from CI with wrangler deploy
