@@ -1,0 +1,27 @@
+name: nock
+description: nock is an HTTP server mocking and expectations library for Node.js. It intercepts requests at the HTTP layer so tests can assert method, URL, and body without a real network, which keeps agent SDK and webhook tests fast and deterministic.
+tagline: HTTP mocking and expectations for Node.js tests
+
+github_url: https://github.com/nock/nock
+website_url: https://github.com/nock/nock
+docs_url: https://github.com/nock/nock#readme
+
+install_command: npm install nock
+
+category: Dev Tools
+tags: [nodejs, http, mock, testing, javascript, intercept]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Node agent clients hit real LLM and tool APIs in tests, which is
+  slow, flaky, and billed. nock intercepts HTTP in-process, sets
+  expectations, and returns fixtures so SDK tests stay offline and
+  fail when a request shape drifts.
+
+use_cases:
+  - Mock an OpenAI-compatible chat endpoint in a Node agent SDK test
+  - Assert a webhook client posts the expected JSON body without a server
+  - Record and replay HTTP in tests for a TypeScript tool-calling client
+  - Fail CI when a client starts calling an undeclared model-API path

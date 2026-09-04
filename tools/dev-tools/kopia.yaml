@@ -1,0 +1,27 @@
+name: Kopia
+description: Kopia is a cross-platform backup tool with fast incremental snapshots, client-side encryption, compression, and deduplication. CLI and GUI clients back up datasets, checkpoints, and config to local disks or object storage so ML artifacts can be restored without a heavy backup appliance.
+tagline: Encrypted, deduplicated backups with CLI and GUI clients
+
+github_url: https://github.com/kopia/kopia
+website_url: https://kopia.io
+docs_url: https://kopia.io/docs/
+
+install_command: brew install kopia
+
+category: Dev Tools
+tags: [backup, encryption, deduplication, snapshots, object-storage, cli]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Training checkpoints and datasets are too large for git and too
+  precious to leave on one disk. Kopia takes encrypted, deduplicated
+  snapshots to object storage or a local repo so teams restore model
+  artifacts without running a full enterprise backup stack.
+
+use_cases:
+  - Snapshot model checkpoints to S3-compatible storage with client-side encryption
+  - Deduplicate repeated dataset copies across incremental backups
+  - Restore a training workspace on a new GPU box from a Kopia repository
+  - Schedule CLI backups of experiment configs alongside weights
