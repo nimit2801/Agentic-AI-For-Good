@@ -1,0 +1,27 @@
+name: Scoop
+description: Command-line installer for Windows that puts developer tools in your home directory without UAC prompts or PATH fights. Scoop installs portable packages into isolated buckets so Python, Node, and CUDA CLIs stay user-scoped on ML workstations.
+tagline: Command-line installer for Windows
+
+github_url: https://github.com/ScoopInstaller/Scoop
+website_url: https://scoop.sh
+docs_url: https://github.com/ScoopInstaller/Scoop/wiki
+
+category: Dev Tools
+tags: [windows, package-manager, cli, scoop, devops]
+pricing: free
+is_open_source: true
+license: Unlicense
+install_command: irm get.scoop.sh | iex
+
+problem_solved: |
+  Windows developer setups scatter installers, Program Files, and
+  admin prompts, so PATH and versions drift across ML laptops.
+  Scoop installs portable packages into a user directory, shims
+  binaries onto PATH, and updates from buckets without UAC, so
+  CLI toolchains stay reproducible per user.
+
+use_cases:
+  - Install git, Python, and Node on a Windows ML laptop without admin rights
+  - Keep CLI shims in a user Scoop prefix instead of Program Files
+  - Add extras or versions buckets for CUDA-adjacent Windows developer tools
+  - Script a portable Windows toolchain for CI agents with scoop install

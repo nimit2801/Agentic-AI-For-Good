@@ -1,0 +1,29 @@
+name: Flagger
+description: Progressive delivery Kubernetes operator for canary, A/B, and blue/green releases. Flagger shifts traffic using mesh or ingress metrics and rolls back automatically when analysis fails, so ML inference and API deploys avoid all-or-nothing cutovers.
+tagline: Progressive delivery for Kubernetes canaries and rollbacks
+
+github_url: https://github.com/fluxcd/flagger
+website_url: https://docs.flagger.app
+docs_url: https://docs.flagger.app
+
+category: Dev Tools
+tags: [kubernetes, progressive-delivery, canary, gitops, devops, mlops]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+install_command: |
+  helm repo add flagger https://flagger.app
+  helm upgrade -i flagger flagger/flagger -n flagger-system --create-namespace
+
+problem_solved: |
+  Shipping a new model server or API to Kubernetes as a full cutover
+  either works or takes production down. Flagger automates canary,
+  A/B, and blue/green traffic shifts against Prometheus or mesh
+  metrics and rolls back when error rate or latency breaches the
+  analysis window, so ML inference releases can fail safely.
+
+use_cases:
+  - Canary a new model-serving Deployment and promote only if latency stays in SLO
+  - Blue/green an embedding API behind Istio or NGINX without a hard cutover
+  - A/B test inference images using header routing and metric analysis
+  - Auto-rollback GPU inference pods when error rate spikes after a chart upgrade

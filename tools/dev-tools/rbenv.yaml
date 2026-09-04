@@ -1,0 +1,27 @@
+name: rbenv
+description: Lightweight Ruby version manager that installs multiple Rubies per user and switches them with a .ruby-version file. rbenv keeps Jekyll sites, Fastlane, and Ruby CLIs on the interpreter each repo expects without replacing system Ruby.
+tagline: Per-project Ruby version manager
+
+github_url: https://github.com/rbenv/rbenv
+website_url: https://rbenv.org
+docs_url: https://github.com/rbenv/rbenv#installation
+install_command: brew install rbenv
+
+category: Dev Tools
+tags: [ruby, version-manager, rbenv, cli, devops]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Ruby CLIs and static-site or mobile-release tooling pin a Ruby
+  that macOS system Ruby does not match, so gems fail or need sudo.
+  rbenv installs isolated Rubies and switches by shell or
+  .ruby-version so each repo, including docs and Fastlane around
+  ML apps, runs the interpreter it was tested on.
+
+use_cases:
+  - Pin Ruby per repo with a .ruby-version file for Jekyll docs sites
+  - Isolate Fastlane and CocoaPods Rubies from macOS system Ruby
+  - Install multiple Rubies on a laptop without replacing /usr/bin/ruby
+  - Match CI Ruby to local rbenv so gem installs stay reproducible

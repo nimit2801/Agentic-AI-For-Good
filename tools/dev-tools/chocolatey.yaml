@@ -1,0 +1,27 @@
+name: Chocolatey
+description: Package manager for Windows that installs, upgrades, and pins software from a large community repository. Chocolatey wraps installers into versioned packages so ML laptops and Windows CI agents get CUDA toolkits, CLIs, and runtimes without clicking through GUI setups.
+tagline: The package manager for Windows
+
+github_url: https://github.com/chocolatey/choco
+website_url: https://chocolatey.org
+docs_url: https://docs.chocolatey.org
+
+category: Dev Tools
+tags: [windows, package-manager, cli, devops, chocolatey]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+install_command: Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+problem_solved: |
+  Windows ML workstations and CI agents still install tools with
+  click-through installers, which drift across machines and break
+  CUDA or Python setups. Chocolatey installs and upgrades software
+  from versioned packages so teams pin compilers, CLIs, and SDKs
+  the same way Homebrew does on macOS.
+
+use_cases:
+  - Bootstrap a Windows ML laptop with git, Python, and CUDA tooling via choco install
+  - Pin CLI versions on Windows GitHub Actions runners for reproducible CI
+  - Upgrade developer tools across a Windows fleet without GUI installers
+  - Script a new Windows agent image with a Chocolatey packages.config list
