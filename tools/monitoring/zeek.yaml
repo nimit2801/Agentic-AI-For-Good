@@ -1,0 +1,26 @@
+name: Zeek
+description: Open-source network analysis framework that turns packet streams into structured logs and protocol events. Zeek is used as network security monitoring rather than a classic signature IDS, giving ML and infra teams high-fidelity traffic telemetry.
+tagline: Network analysis framework for security monitoring
+
+github_url: https://github.com/zeek/zeek
+website_url: https://www.zeek.org
+docs_url: https://docs.zeek.org
+
+category: Monitoring
+tags: [network, security, nsm, ids, observability, logs, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Packet captures and signature IDS alerts do not explain what happened on
+  the wire in a form you can query. Zeek parses protocols into structured
+  logs (HTTP, DNS, TLS, files) so you can hunt, feed detections, and
+  reconstruct sessions around training clusters and model APIs without
+  writing custom packet parsers.
+
+use_cases:
+  - Log DNS, HTTP, and TLS metadata around GPU clusters for later hunt queries
+  - Detect data exfil from training nodes by tracking unusual long-lived connections
+  - Feed Zeek logs into a SIEM or lake as structured network telemetry
+  - Reconstruct file transfers and protocol events after a model-host incident

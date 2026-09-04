@@ -1,0 +1,26 @@
+name: Tetragon
+description: eBPF-based Kubernetes runtime security from Cilium that observes process, file, and network events in the kernel and can enforce policies. Tetragon gives ML clusters syscall-level observability without sidecar agents.
+tagline: eBPF runtime security and enforcement for Kubernetes
+
+github_url: https://github.com/cilium/tetragon
+website_url: https://tetragon.io
+docs_url: https://tetragon.io/docs/
+
+category: Monitoring
+tags: [ebpf, kubernetes, security, runtime, cilium, observability, cncf]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Sidecar agents miss kernel events and add overhead on GPU nodes.
+  Tetragon hooks eBPF in the kernel to watch process exec, file access,
+  and network activity, then optionally enforces policies, so you can
+  see and block unexpected binaries or data access on training and
+  inference pods without instrumenting each container.
+
+use_cases:
+  - Alert when an inference pod execs a shell or unexpected binary
+  - Trace file access to model weights and secret mounts in Kubernetes
+  - Enforce runtime policies that kill processes matching a tracing rule
+  - Stream kernel process and network events into an ML ops security pipeline

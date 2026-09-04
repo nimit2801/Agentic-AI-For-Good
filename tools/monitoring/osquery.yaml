@@ -1,0 +1,26 @@
+name: osquery
+description: SQL-powered operating system instrumentation that exposes processes, sockets, files, and packages as queryable tables. osquery lets ML ops teams inventory hosts and hunt for drift with scheduled SQL queries.
+tagline: SQL-powered OS instrumentation and host monitoring
+
+github_url: https://github.com/osquery/osquery
+website_url: https://osquery.io
+docs_url: https://osquery.readthedocs.io
+
+category: Monitoring
+tags: [osquery, sql, endpoint, security, inventory, linux, macos]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Host inventory and incident hunts usually mean custom scripts per
+  OS. osquery exposes the operating system as SQL tables so you can
+  query processes, listening ports, packages, and file hashes the
+  same way on Linux, macOS, and Windows, including scheduled queries
+  that watch training boxes for unexpected software or listeners.
+
+use_cases:
+  - Inventory packages and running processes on GPU training hosts with SQL
+  - Hunt for unexpected listening ports on model serving machines
+  - Schedule queries that alert when a new binary appears in a model directory
+  - Compare host state across a fleet before and after a training job

@@ -1,0 +1,26 @@
+name: Tracee
+description: Linux runtime security and forensics tool from Aqua that uses eBPF to capture syscalls and kernel events. Tracee helps detect suspicious behavior on GPU nodes and training hosts with low overhead.
+tagline: Linux runtime security and forensics with eBPF
+
+github_url: https://github.com/aquasecurity/tracee
+website_url: https://aquasecurity.github.io/tracee/latest/
+docs_url: https://aquasecurity.github.io/tracee/latest/
+
+category: Monitoring
+tags: [ebpf, linux, security, forensics, runtime, aqua, observability]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Auditd and user-space agents miss short-lived processes and add
+  load on busy GPU hosts. Tracee uses eBPF to capture syscalls,
+  signatures, and forensic events with low overhead so you can
+  detect crypto miners, unexpected network binds, and file access
+  on Linux nodes running training or inference.
+
+use_cases:
+  - Detect unexpected process trees on Linux GPU training hosts
+  - Capture syscall traces after a suspected compromise for forensics
+  - Alert on signatures for miners, reverse shells, or container escapes
+  - Stream Tracee events into a SIEM for runtime monitoring of ML nodes
