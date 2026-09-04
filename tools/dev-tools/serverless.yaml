@@ -1,0 +1,27 @@
+name: Serverless Framework
+description: Serverless Framework deploys auto-scaling apps on AWS Lambda and other managed cloud services from a YAML service file. It packages functions, wires API Gateway and events, and incurs no cost when idle, so inference APIs and agent webhooks can ship without managing servers.
+tagline: Deploy auto-scaling Lambda apps from a YAML service file
+
+github_url: https://github.com/serverless/serverless
+website_url: https://serverless.com
+docs_url: https://www.serverless.com/framework/docs
+
+install_command: npm install -g serverless
+
+category: Dev Tools
+tags: [aws, lambda, serverless, faas, yaml, nodejs, cloud]
+pricing: freemium
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Standing up an inference webhook or agent callback usually means
+  servers, autoscaling groups, and idle cost. Serverless Framework
+  packages functions, events, and APIs from one service file and
+  deploys them to Lambda so the endpoint scales to zero when unused.
+
+use_cases:
+  - Deploy an agent webhook as AWS Lambda behind API Gateway
+  - Package a Python embedding function with events from S3 or SQS
+  - Share one serverless.yml across staging and production stages
+  - Add DynamoDB and IAM from the same service file as the function code

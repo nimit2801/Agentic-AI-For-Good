@@ -1,0 +1,27 @@
+name: SST
+description: SST is a framework for building full-stack apps on your own AWS infrastructure with TypeScript. It binds Live Lambda Dev, Pulumi-backed resources, and web UIs so teams iterate on agent APIs and consoles without a separate local emulator.
+tagline: Full-stack apps on your own AWS infrastructure
+
+github_url: https://github.com/anomalyco/sst
+website_url: https://github.com/anomalyco/sst
+docs_url: https://github.com/anomalyco/sst#readme
+
+install_command: npm install -g sst
+
+category: Dev Tools
+tags: [aws, typescript, serverless, iac, lambda, fullstack, pulumi]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Local emulators drift from real AWS IAM, queues, and Lambda behavior,
+  so agent backends fail only after deploy. SST defines infrastructure
+  in TypeScript and runs Live Lambda against your AWS account, so
+  functions, frontends, and linked resources share one real cloud stack.
+
+use_cases:
+  - Iterate on a TypeScript agent API with Live Lambda against real AWS
+  - Bind a Next.js console to Lambda functions and an S3 bucket in one app
+  - Share resource links across frontend and backend without manual IAM wiring
+  - Deploy a GPU-adjacent AWS stack as TypeScript instead of raw CloudFormation

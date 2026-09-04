@@ -1,0 +1,27 @@
+name: microk8s
+description: MicroK8s is Canonical's small, single-package Kubernetes for workstations, datacenters, and the edge. One snap installs a conformant cluster with optional addons for GPU, registry, and observability so ML teams can run local or edge inference without a full kubeadm install.
+tagline: Small, single-package Kubernetes for laptops and the edge
+
+github_url: https://github.com/canonical/microk8s
+website_url: https://microk8s.io
+docs_url: https://microk8s.io/docs
+
+install_command: snap install microk8s --classic
+
+category: Dev Tools
+tags: [kubernetes, canonical, edge, snap, cluster, gpu, devops]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Full kubeadm or managed Kubernetes is heavy for a laptop GPU box or
+  an edge inference node. MicroK8s installs a conformant cluster from
+  one snap, with addons for GPU, DNS, and registries, so teams run
+  the same manifests locally and at the edge without a control-plane team.
+
+use_cases:
+  - Run a local Kubernetes cluster on an Ubuntu GPU workstation for model serving
+  - Enable the GPU addon to schedule inference pods on an edge box
+  - Mirror production manifests on a laptop before promoting to EKS or GKE
+  - Deploy a registry and observability addons alongside a small cluster
