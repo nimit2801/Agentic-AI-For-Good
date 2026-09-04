@@ -1,0 +1,26 @@
+name: snapd
+description: Canonical's daemon and CLI for installing confined Linux packages from the Snap Store. snapd mounts squashfs snaps with automatic updates and strict confinement, so ML CLIs, CUDA runtimes, and desktop tools can ship one artifact across Ubuntu and other distros.
+tagline: Daemon and CLI for confined Linux snap packages
+
+github_url: https://github.com/canonical/snapd
+website_url: https://snapcraft.io
+docs_url: https://snapcraft.io/docs
+
+category: Dev Tools
+tags: [linux, packaging, ubuntu, canonical, confinement, distribution, devops]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Shipping an ML CLI or CUDA helper to Ubuntu, Fedora, and IoT boxes
+  usually means a different package per distro. snapd installs a
+  single confined snap with automatic refreshes, so teams publish
+  one squashfs artifact instead of maintaining deb, rpm, and
+  AppImage channels for the same inference tool.
+
+use_cases:
+  - Distribute a Linux inference CLI as a confined snap with automatic updates
+  - Pin a CUDA-related toolkit snap on Ubuntu workstations without apt version fights
+  - Run strictly confined data-prep utilities on IoT or edge Linux boxes
+  - Publish one Snap Store artifact instead of distro-specific packages
