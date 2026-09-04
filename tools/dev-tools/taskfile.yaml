@@ -1,0 +1,27 @@
+name: Taskfile
+description: Task is a fast, cross-platform task runner that reads a Taskfile YAML and runs commands, dependencies, and watchers. Teams use it as a Make replacement to standardize lint, test, train, and deploy steps for ML repos on Linux, macOS, and Windows.
+tagline: Fast YAML task runner, a Make replacement for modern repos
+
+github_url: https://github.com/go-task/task
+website_url: https://github.com/go-task/task
+docs_url: https://github.com/go-task/task#readme
+
+install_command: npm install -g @go-task/cli
+
+category: Dev Tools
+tags: [task-runner, yaml, go, make, build, cli, devops]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  README copy-paste and Makefile dialect fights make lint, train, and deploy
+  steps drift across laptops and CI. Taskfile declares named tasks with
+  dependencies, vars, and watchers in YAML that runs the same on Linux, macOS,
+  and Windows, so ML repos share one command surface without Make syntax.
+
+use_cases:
+  - Standardize lint, unit test, and embedding-index rebuild as named tasks
+  - Watch Python files and re-run evals when a prompt template changes
+  - Chain data-prep, train, and export steps with Taskfile dependencies
+  - Share one Taskfile across local shells and CI without Makefile portability issues
