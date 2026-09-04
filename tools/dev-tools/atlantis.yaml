@@ -1,0 +1,25 @@
+name: Atlantis
+description: Atlantis automates Terraform pull-request workflows. It plans on PR open and applies on comment so infrastructure changes for GPU clusters, vector stores, and model-serving stacks are reviewed in Git instead of run from a laptop.
+tagline: Terraform pull-request automation for GitOps workflows
+
+github_url: https://github.com/runatlantis/atlantis
+website_url: https://www.runatlantis.io
+docs_url: https://www.runatlantis.io/docs
+
+category: Dev Tools
+tags: [terraform, gitops, pull-request, iac, automation, devops]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Terraform apply from a laptop skips review and drifts from what Git
+  shows. Atlantis runs plan on each pull request and apply after
+  approval, so GPU, VPC, and serving-stack changes land through the
+  same PR process as application code.
+
+use_cases:
+  - Post Terraform plan output on a PR that adds SageMaker or GPU nodes
+  - Apply approved infra changes from a PR comment instead of a local CLI
+  - Lock state per project so two ML platform PRs cannot apply at once
+  - Require plan success in CI-adjacent Git workflows before merge
