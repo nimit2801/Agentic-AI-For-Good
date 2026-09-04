@@ -1,0 +1,26 @@
+name: GROBID
+description: Machine learning library and service that extracts structured metadata, citations, and full text from scholarly PDFs. GROBID turns papers into TEI XML so RAG and research pipelines can index authors, abstracts, and references instead of raw PDF text.
+tagline: ML extraction of structure from scholarly PDFs
+
+github_url: https://github.com/grobidOrg/grobid
+website_url: https://grobid.readthedocs.io
+docs_url: https://grobid.readthedocs.io
+
+category: Data
+tags: [pdf, scholarly, nlp, extraction, tei, java, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Research PDFs mix columns, headers, and citations that generic
+  parsers flatten into noisy text. GROBID uses ML models to recover
+  title, authors, abstract, sections, and bibliography as structured
+  TEI, so literature RAG and bibliometric pipelines get clean fields
+  instead of dumped page text.
+
+use_cases:
+  - Extract titles, abstracts, and citations from arXiv PDFs for a paper index
+  - Build a RAG corpus of sectioned scholarly text instead of raw PDF dumps
+  - Parse bibliographies to construct a citation graph from a paper collection
+  - Run GROBID as a service in a document ingestion pipeline for research data

@@ -1,0 +1,27 @@
+name: Bytewax
+description: Python stream processing framework for stateful dataflows with operators for map, filter, window, and join. Bytewax lets teams process event streams in Python, including feature updates and model scores, without switching to JVM streaming stacks.
+tagline: Python-native stateful stream processing
+
+github_url: https://github.com/bytewax/bytewax
+website_url: https://bytewax.io
+docs_url: https://docs.bytewax.io
+
+category: Data
+tags: [streaming, python, dataflow, kafka, features, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+install_command: pip install bytewax
+
+problem_solved: |
+  Streaming feature pipelines often force Python ML teams onto JVM
+  engines. Bytewax runs stateful dataflows in Python with windows,
+  joins, and recovery so you can transform Kafka or other event
+  streams, update features, and score events without leaving the
+  language the models are written in.
+
+use_cases:
+  - Build a Python dataflow that windows clickstream events into features
+  - Join model scores with live events for online inference pipelines
+  - Process Kafka topics with stateful operators instead of batch jobs
+  - Recover stream state after a worker restart in a production dataflow

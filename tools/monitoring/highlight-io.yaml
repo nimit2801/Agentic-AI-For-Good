@@ -1,0 +1,27 @@
+name: Highlight.io
+description: Open-source full-stack monitoring platform with error tracking, session replay, logs, and distributed tracing. Highlight.io correlates frontend sessions with backend traces so AI product teams can debug agent UIs and APIs in one place.
+tagline: Open-source error, session, log, and trace monitoring
+
+github_url: https://github.com/highlight/highlight
+website_url: https://www.highlight.io
+docs_url: https://www.highlight.io/docs
+
+category: Monitoring
+tags: [observability, session-replay, errors, tracing, logs, open-source]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+install_command: npm install @highlight-run/node
+
+problem_solved: |
+  Errors, logs, and session replay usually live in separate products,
+  so reproducing a failed agent UI or API call means hopping tools.
+  Highlight.io unifies session replay, errors, logs, and traces so
+  you can click from a user session to the backend stack that served
+  an LLM or agent request.
+
+use_cases:
+  - Replay a user session that hit a failed agent or chat UI
+  - Correlate frontend errors with backend traces for model API calls
+  - Collect logs and exceptions from inference services in one dashboard
+  - Self-host full-stack monitoring instead of a closed APM suite
