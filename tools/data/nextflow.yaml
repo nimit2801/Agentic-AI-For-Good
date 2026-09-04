@@ -1,0 +1,29 @@
+name: Nextflow
+description: Workflow system for scalable, portable, reproducible data pipelines using a dataflow DSL. Nextflow runs on laptops, HPC schedulers, Kubernetes, and cloud batch, with Docker, Conda, and Singularity for software environments.
+tagline: Dataflow DSL for portable scientific pipelines
+
+github_url: https://github.com/nextflow-io/nextflow
+website_url: https://www.nextflow.io
+docs_url: https://docs.seqera.io/nextflow/
+
+category: Data
+tags: [workflow, pipelines, hpc, kubernetes, bioinformatics, reproducibility, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+install_command: |
+  curl -fsSL https://get.nextflow.io | bash
+  conda install -c bioconda nextflow
+
+problem_solved: |
+  Scientific and ML pipelines that mix scripts, containers, and cluster
+  jobs are hard to port and resume. Nextflow defines processes as a
+  dataflow graph so the same workflow runs locally, on HPC, Kubernetes,
+  or cloud batch, with checkpoints, Git-backed versions, and per-task
+  software environments.
+
+use_cases:
+  - Run an nf-core RNA-seq or variant-calling pipeline on a local machine or HPC cluster
+  - Resume a failed training-data preprocessing workflow from the last successful step
+  - Deploy the same Nextflow pipeline to AWS Batch, Google Cloud Batch, or Kubernetes
+  - Pin Docker or Conda environments per process for reproducible bioinformatics jobs

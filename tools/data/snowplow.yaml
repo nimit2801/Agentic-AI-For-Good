@@ -1,0 +1,27 @@
+name: Snowplow
+description: Customer data infrastructure that collects, validates, and streams behavioral events from web, mobile, and server SDKs into warehouses and lakes. Snowplow gives analytics and AI teams schema-governed event data without building a collector pipeline from scratch.
+tagline: Behavioral event pipeline for analytics and AI context
+
+github_url: https://github.com/snowplow/snowplow
+website_url: https://snowplow.io
+docs_url: https://docs.snowplow.io
+
+category: Data
+tags: [events, tracking, cdi, analytics, warehouse, schemas, open-source]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Product analytics and AI agents need clean, real-time behavioral
+  events, but ad hoc pixels and warehouse ELT lose schema, identity,
+  and lineage. Snowplow collects first-party events through SDKs,
+  validates them against schemas, enriches them, and streams them to
+  warehouses, lakes, or streams so downstream models get governed
+  customer context.
+
+use_cases:
+  - Collect first-party web and mobile events into a warehouse with schema validation
+  - Stream enriched behavioral events to Kafka or a lake for real-time personalization
+  - Power AI agents with governed clickstream and product-usage context
+  - Replace brittle third-party pixels with a self-hosted event pipeline
