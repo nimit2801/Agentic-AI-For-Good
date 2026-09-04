@@ -1,0 +1,21 @@
+name: Jasmine
+description: Jasmine is a behavior-driven JavaScript testing framework for browsers and Node.js that needs no external runner or DOM. Teams use it to unit-test AI web UIs, SDK clients, and prompt-tooling libraries with readable specs and zero config.
+tagline: Batteries-included BDD tests for JavaScript
+github_url: https://github.com/jasmine/jasmine
+website_url: https://jasmine.github.io
+docs_url: https://jasmine.github.io/pages/getting_started.html
+install_command: npm install --save-dev jasmine
+category: Dev Tools
+tags: [testing, javascript, bdd, nodejs, browser, unit-tests]
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: |
+  Frontend and Node SDKs around LLM apps still need unit tests that run in
+  a browser or CI without a heavy runner. Jasmine ships matchers, spies, and
+  a CLI so teams assert chat-widget behavior and client-library contracts
+  without wiring Jest, Mocha, and a custom reporter from scratch.
+use_cases:
+  - Unit-test a browser chat widget that streams model tokens without standing up a full browser-automation suite
+  - Spec Node.js SDK methods that wrap OpenAI or Anthropic clients with spies on HTTP calls
+  - Run the same Jasmine suite in CI and in a browser for shared AI dashboard components

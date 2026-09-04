@@ -1,0 +1,21 @@
+name: Garden
+description: Garden is a DevOps automation tool for Kubernetes development and testing. It spins production-like environments on demand, caches builds and tests, and uses the same garden.yml workflows from local iteration through CI so ML services get realistic cluster feedback early.
+tagline: On-demand Kubernetes environments for develop, test, and CI
+github_url: https://github.com/garden-io/garden
+website_url: https://garden.io
+docs_url: https://docs.garden.io
+category: Dev Tools
+tags: [kubernetes, devops, ci-cd, testing, helm, developer-experience]
+pricing: freemium
+is_open_source: true
+license: MPL-2.0
+problem_solved: |
+  AI services that depend on Helm charts, sidecars, and in-cluster databases
+  are slow to test because every engineer waits on a shared staging cluster.
+  Garden builds, deploys, and tests from garden.yml with smart caching so
+  teams get production-like Kubernetes environments on demand instead of
+  hand-running kubectl against a crowded namespace.
+use_cases:
+  - Spin up a production-like namespace to develop a model-serving Helm chart with its vector database sidecar
+  - Cache container builds and integration tests for RAG APIs so CI only reruns what changed
+  - Use the same garden.yml from laptop inner loop through GitHub Actions for inference stack deploys

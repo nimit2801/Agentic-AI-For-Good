@@ -1,0 +1,21 @@
+name: Jsonnet
+description: Jsonnet is a data templating language that extends JSON with variables, functions, and imports. Teams generate Kubernetes manifests, model-serving configs, and experiment parameter files from one source of truth instead of copy-pasting JSON across environments.
+tagline: JSON templating for configs, manifests, and experiment files
+github_url: https://github.com/google/jsonnet
+website_url: https://jsonnet.org
+docs_url: https://jsonnet.org/learning/tutorial.html
+install_command: pip install jsonnet
+category: Dev Tools
+tags: [json, templating, kubernetes, configuration, google, devops]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: |
+  ML platforms drown in duplicated JSON and YAML: one file per environment
+  for serving, another for training, another for CI. Jsonnet adds variables,
+  functions, and imports on top of JSON so a single library emits environment
+  specific manifests and hyperparameter files without a custom generator.
+use_cases:
+  - Generate Kubernetes manifests for model-serving stacks from one Jsonnet library per environment
+  - Parameterize experiment configs with functions so training jobs share defaults and override only what changes
+  - Compose Helm-adjacent JSON for vector database and feature-store deployments without copy-paste YAML

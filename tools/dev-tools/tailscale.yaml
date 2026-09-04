@@ -1,0 +1,22 @@
+name: Tailscale
+description: Tailscale is a WireGuard-based mesh VPN that connects laptops, GPU boxes, and cloud VMs with identity-aware access. ML teams reach private Jupyter hosts, inference endpoints, and on-prem clusters without opening inbound ports or running a classic VPN concentrator.
+tagline: Identity-aware WireGuard mesh for private ML infrastructure
+github_url: https://github.com/tailscale/tailscale
+website_url: https://tailscale.com
+docs_url: https://tailscale.com/kb
+install_command: brew install tailscale
+category: Dev Tools
+tags: [vpn, wireguard, networking, zero-trust, mesh, devops, security]
+pricing: freemium
+is_open_source: true
+license: BSD-3-Clause
+problem_solved: |
+  GPU boxes, Jupyter servers, and internal model APIs live on private
+  networks that are painful to reach from a laptop. Tailscale builds a
+  WireGuard mesh keyed by identity so researchers SSH to training nodes
+  and hit private inference URLs without inbound firewall holes or a
+  company VPN appliance that never quite routes to the lab subnet.
+use_cases:
+  - SSH to on-prem GPU workers from a laptop without exposing port 22 to the internet
+  - Reach a private model-serving endpoint during development as if it were on localhost
+  - Connect CI runners and home-lab vector databases over an identity-aware mesh instead of a site-to-site VPN

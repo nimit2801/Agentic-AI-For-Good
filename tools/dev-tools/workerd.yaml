@@ -1,0 +1,22 @@
+name: workerd
+description: workerd is Cloudflare's open-source JavaScript and Wasm runtime that powers Workers. Run the same isolate model locally or self-hosted so edge AI gateways, prompt proxies, and lightweight inference adapters can be tested without deploying to Cloudflare first.
+tagline: Open-source Cloudflare Workers JavaScript and Wasm runtime
+github_url: https://github.com/cloudflare/workerd
+website_url: https://blog.cloudflare.com/workerd-open-source-workers-runtime/
+docs_url: https://developers.cloudflare.com/workers/
+install_command: npm install workerd
+category: Dev Tools
+tags: [javascript, wasm, edge, cloudflare, workers, runtime, serverless]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: |
+  Edge AI gateways and prompt proxies written for Cloudflare Workers are
+  hard to debug if the only runtime is the hosted platform. workerd is the
+  same JavaScript and Wasm isolate engine, installable locally, so teams
+  run Workers-compatible code against fixtures before shipping an edge
+  LLM proxy or auth wrapper.
+use_cases:
+  - Run Cloudflare Workers locally to test an edge prompt-proxy before deploying
+  - Self-host Workers-compatible JavaScript for an AI gateway that must stay off Cloudflare
+  - Execute Wasm and JS isolates in CI to regression-test token-routing logic at the edge
