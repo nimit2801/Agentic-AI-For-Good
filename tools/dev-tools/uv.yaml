@@ -1,0 +1,26 @@
+name: uv
+description: Extremely fast Python package and project manager written in Rust. uv installs packages, manages lockfiles, and runs Python tools as a drop-in replacement for pip, pip-tools, pipx, poetry, pyenv, twine, and virtualenv.
+tagline: Fast Rust-based Python package manager
+
+github_url: https://github.com/astral-sh/uv
+website_url: https://docs.astral.sh/uv
+docs_url: https://docs.astral.sh/uv
+
+category: Dev Tools
+tags: [python, packaging, rust, pip, lockfile, tooling, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+install_command: pip install uv
+
+problem_solved: |
+  Python environment setup is slow and fragmented across pip, venv,
+  poetry, and pyenv. uv resolves and installs dependencies in seconds,
+  manages Python versions and lockfiles in one tool, and keeps ML
+  project environments reproducible without a stack of package managers.
+
+use_cases:
+  - Replace pip and venv with a single uv lockfile for an ML project
+  - Install Python tooling via uvx without polluting the global environment
+  - Speed up CI dependency installs compared to pip compile and poetry
+  - Pin a Python version and project dependencies for a training repo
