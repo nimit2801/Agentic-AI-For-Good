@@ -1,0 +1,28 @@
+name: Buildbot
+description: A Python continuous integration framework that runs builders, schedulers, and workers as code. Buildbot is used to compile native ML libraries, run pytest, and gate CUDA jobs on self-hosted workers without locking the team into a SaaS YAML product.
+tagline: Python CI framework with builders, schedulers, and workers
+
+github_url: https://github.com/buildbot/buildbot
+website_url: https://www.buildbot.net
+docs_url: https://docs.buildbot.net
+
+install_command: pip install buildbot
+
+category: Dev Tools
+tags: [ci-cd, python, testing, automation, self-hosted, pipelines]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Teams with GPU workers and custom compile steps often outgrow
+  GitHub Actions minutes and still do not want Jenkins XML. Buildbot
+  describes builders and schedulers in Python, so CUDA compiles,
+  pytest, and artifact uploads run on self-hosted workers with
+  the same language the rest of the ML stack already uses.
+
+use_cases:
+  - Compile CUDA extensions on self-hosted GPU workers after every push
+  - Gate a model-serving image on pytest plus a smoke inference job
+  - Schedule nightly rebuilds of native ML wheels across Python versions
+  - Fan out builders for Linux and macOS from one master.cfg

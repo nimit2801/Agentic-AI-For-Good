@@ -1,0 +1,26 @@
+name: Premake
+description: A Lua-based build configuration tool that generates Visual Studio, Xcode, Makefile, and Ninja projects from one premake5.lua script. Premake lets native ML libraries keep a single project description while each platform still uses its preferred IDE or Ninja backend.
+tagline: Lua scripts that generate native IDE and Make projects
+
+github_url: https://github.com/premake/premake-core
+website_url: https://premake.github.io
+docs_url: https://premake.github.io/docs/
+
+category: Dev Tools
+tags: [build-system, lua, cpp, visual-studio, xcode, ninja, cross-platform]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  C++ ML libraries that still ship Visual Studio solutions and Xcode
+  projects drift when each file is edited by hand. Premake generates
+  those native project files from one Lua script, so CUDA kernels,
+  tests, and shared libraries stay in sync across Windows, macOS,
+  and Linux without maintaining three project trees.
+
+use_cases:
+  - Generate Visual Studio and Makefile projects for a C++ inference library from one Lua file
+  - Keep CUDA and CPU targets in the same premake5.lua for Windows and Linux CI
+  - Emit Ninja files for faster incremental builds of native ML extensions
+  - Share one project description across Xcode and MSVC without CMake
