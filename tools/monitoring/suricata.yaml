@@ -1,0 +1,26 @@
+name: Suricata
+description: High-performance network IDS, IPS, and network security monitoring engine from OISF. Suricata inspects traffic with multi-threaded protocol parsing and rules so AI platforms can detect malicious east-west and ingress flows.
+tagline: Multi-threaded network IDS, IPS, and NSM engine
+
+github_url: https://github.com/OISF/suricata
+website_url: https://suricata.io
+docs_url: https://docs.suricata.io
+
+category: Monitoring
+tags: [ids, ips, nsm, network, security, rules, open-source]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Single-threaded IDS engines drop packets under load, and generic
+  firewalls do not parse application protocols. Suricata is a
+  multi-threaded IDS/IPS/NSM engine with protocol parsing and a
+  large rule ecosystem, so you can inspect traffic to model APIs
+  and data stores at line rate and alert on known attack patterns.
+
+use_cases:
+  - Run Suricata as IDS on the network path in front of model serving
+  - Match Emerging Threats or custom rules against east-west cluster traffic
+  - Extract protocol metadata and files for later incident review
+  - Deploy inline IPS mode to drop known exploit traffic to ML endpoints
