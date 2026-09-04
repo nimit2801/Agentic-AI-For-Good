@@ -1,0 +1,24 @@
+name: TeamCity
+description: JetBrains CI/CD server for pipelines that build, test, and deploy from Git. TeamCity runs on-prem or in JetBrains Cloud with a Kotlin DSL, so ML services and agent backends get gated builds without living only in GitHub Actions YAML.
+tagline: JetBrains CI for on-prem and cloud pipelines
+
+website_url: https://www.jetbrains.com/teamcity/
+docs_url: https://www.jetbrains.com/help/teamcity/
+
+category: Dev Tools
+tags: [ci-cd, jetbrains, pipelines, testing, devops, saas]
+pricing: freemium
+is_open_source: false
+
+problem_solved: |
+  Teams that need self-hosted CI with rich test reporting often outgrow
+  a pile of GitHub Actions YAML and do not want to operate Jenkins
+  plugins. TeamCity runs pipelines on-prem or in JetBrains Cloud with
+  a Kotlin DSL, build chains, and agent pools so ML services can gate
+  tests and deploys on owned hardware or a managed server.
+
+use_cases:
+  - Gate pytest and Docker image builds for an ML API on a TeamCity agent pool
+  - Model build chains so a training image job feeds a deploy job
+  - Run CI on-prem when model weights cannot leave the company network
+  - Use the Kotlin DSL to version pipeline logic next to the service repo
