@@ -1,0 +1,26 @@
+name: Pandoc
+description: Universal document converter that turns Markdown, HTML, LaTeX, Word, EPUB, and dozens of other formats into each other. Pandoc is the default conversion engine for technical docs, papers, and LLM-generated reports.
+tagline: Universal markup converter for documents
+
+github_url: https://github.com/jgm/pandoc
+website_url: https://pandoc.org
+docs_url: https://pandoc.org/MANUAL.html
+
+category: Data
+tags: [documents, markdown, conversion, latex, publishing, open-source]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+install_command: brew install pandoc
+
+problem_solved: |
+  Research, product, and LLM pipelines produce Markdown or HTML that
+  still has to become Word, PDF, or EPUB. Pandoc converts between
+  dozens of document formats with citations, templates, and filters
+  so you do not maintain a one-off exporter for every output type.
+
+use_cases:
+  - Convert LLM-generated Markdown reports into Word or PDF for stakeholders
+  - Turn academic papers between LaTeX, Markdown, and HTML with citations
+  - Batch-convert a docs site into EPUB or reveal.js slides
+  - Pipe Markdown through Pandoc filters as part of a publishing pipeline

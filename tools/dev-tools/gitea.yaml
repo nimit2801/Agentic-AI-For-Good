@@ -1,0 +1,25 @@
+name: Gitea
+description: Lightweight self-hosted Git service with code review, package registry, and CI/CD. Gitea gives ML teams a single place to host model repos, review training code, and ship artifacts without a heavyweight GitHub Enterprise stack.
+tagline: Painless self-hosted Git forge
+
+github_url: https://github.com/go-gitea/gitea
+website_url: https://gitea.com
+docs_url: https://docs.gitea.com
+
+category: Dev Tools
+tags: [git, self-hosted, ci-cd, forge, collaboration, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Teams that cannot put training code and model artifacts on GitHub
+  still need pull requests, packages, and actions. Gitea is a small
+  self-hosted forge with review, registry, and CI so ML orgs keep
+  source and artifacts in-house without running a full GitLab stack.
+
+use_cases:
+  - Host private ML training repos with pull-request review on your own servers
+  - Publish internal Python or container packages from a Gitea registry
+  - Run Actions-style CI for data and model pipelines next to the Git repo
+  - Mirror GitHub projects into an air-gapped Gitea instance

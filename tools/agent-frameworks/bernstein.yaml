@@ -1,0 +1,27 @@
+name: Bernstein
+description: Open-source governance and orchestration layer for AI agents. Bernstein lets you write rules declaratively, then enforces them and records a verifiable, replayable task graph without putting a model in the coordination loop.
+tagline: Declarative governance for AI agents
+
+github_url: https://github.com/sipyourdrink-ltd/bernstein
+website_url: https://bernstein.run
+docs_url: https://bernstein.readthedocs.io
+
+category: Agents
+tags: [agents, governance, orchestration, replay, python, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+install_command: pip install bernstein
+
+problem_solved: |
+  Multi-agent runs are hard to audit because an LLM sits in the
+  coordination loop and plans do not replay the same way twice.
+  Bernstein enforces declarative rules outside the model and
+  produces a verifiable task graph so you can govern, replay, and
+  debug agent work without trusting the coordinator to improvise.
+
+use_cases:
+  - Enforce allow-listed tools and policies on an agent workflow before execution
+  - Replay a production agent plan and get a byte-identical task graph
+  - Record a verifiable audit trail for regulated agent operations
+  - Orchestrate multi-agent jobs with rules that do not depend on an LLM coordinator

@@ -1,0 +1,25 @@
+name: Woodpecker
+description: Simple, extensible CI/CD engine that runs pipelines as containers from a Git forge. Woodpecker is a lightweight Drone fork used to test, train, and deploy ML jobs without a heavy SaaS CI bill.
+tagline: Lightweight container-native CI/CD
+
+github_url: https://github.com/woodpecker-ci/woodpecker
+website_url: https://woodpecker-ci.org
+docs_url: https://woodpecker-ci.org/docs
+
+category: Dev Tools
+tags: [ci-cd, containers, pipelines, self-hosted, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  GitHub Actions and Jenkins are either SaaS-locked or heavy to
+  operate. Woodpecker runs YAML pipelines as containers against
+  Gitea, GitHub, or GitLab so ML teams self-host CI for tests,
+  training jobs, and deploys with a small server footprint.
+
+use_cases:
+  - Run containerized test and lint pipelines on a self-hosted Gitea repo
+  - Trigger GPU training jobs from a Woodpecker workflow on pull request
+  - Execute pipeline YAML locally with woodpecker-cli before pushing
+  - Replace Drone CE with a maintained Apache-2.0 CI server
