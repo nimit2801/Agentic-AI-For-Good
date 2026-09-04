@@ -1,0 +1,26 @@
+name: vcpkg
+description: Microsoft's C++ library manager for Windows, Linux, and macOS. vcpkg builds and installs ports from source with triplets that encode architecture, linkage, and CRT, so native ML libraries can pull OpenCV, ONNX Runtime, and CUDA helpers without hand-written Find modules.
+tagline: C++ library manager for Windows, Linux, and macOS
+
+github_url: https://github.com/microsoft/vcpkg
+website_url: https://vcpkg.io
+docs_url: https://learn.microsoft.com/vcpkg/
+
+category: Dev Tools
+tags: [cpp, package-manager, cmake, windows, linux, macos, dependencies, microsoft]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  C++ AI stacks need OpenCV, protobuf, ONNX Runtime, and CUDA bindings that
+  differ by OS, compiler, and static vs shared linkage. Hand-copying binaries
+  or writing Find modules per platform is brittle. vcpkg builds ports from
+  source with triplets and emits CMake toolchain files so llama.cpp-style
+  projects resolve native deps the same way on Windows and Linux.
+
+use_cases:
+  - Install OpenCV and ONNX Runtime for a C++ inference binary via a vcpkg.json manifest
+  - Share a CMake toolchain file so Windows and Linux CI use the same port versions
+  - Pin static vs dynamic CRT and architecture with triplets for GPU-capable builds
+  - Overlay a custom port for an internal CUDA kernel library without forking the registry

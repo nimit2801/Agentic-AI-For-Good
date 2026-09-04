@@ -1,0 +1,26 @@
+name: Concourse
+description: Container-based CI/CD written in Go that models pipelines as resources, jobs, and tasks. Each task runs in a fresh container so builds stay isolated, and YAML pipelines can compile native ML libraries, run tests, and ship images without a long-lived Jenkins master.
+tagline: Container-native CI that treats pipelines as first-class
+
+github_url: https://github.com/concourse/concourse
+website_url: https://concourse-ci.org
+docs_url: https://concourse-ci.org/docs.html
+
+category: Dev Tools
+tags: [ci-cd, pipelines, containers, golang, devops, testing, automation]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Long-lived CI agents accumulate CUDA toolkits, Python caches, and leftover
+  credentials, so the next job inherits a dirty workspace. Concourse runs every
+  task in a fresh container with explicit inputs and outputs, so GPU builds,
+  pytest suites, and image publishes stay reproducible and easy to reason about
+  from a single pipeline YAML.
+
+use_cases:
+  - Compile CUDA kernels and run pytest in isolated Concourse tasks per pull request
+  - Promote a trained model artifact from test to staging with resource versions
+  - Build and publish Docker images for inference services without a sticky worker
+  - Fan out matrix builds across Python and CUDA versions using parallel jobs

@@ -1,0 +1,27 @@
+name: Carthage
+description: Decentralized dependency manager for Cocoa that builds GitHub frameworks as xcframeworks instead of a central spec repo. Carthage leaves Xcode project structure alone, so iOS and macOS ML apps can vendor Core ML wrappers and native SDKs without CocoaPods workspace takeover.
+tagline: Decentralized dependency manager for Cocoa
+
+github_url: https://github.com/Carthage/Carthage
+docs_url: https://github.com/Carthage/Carthage#getting-started
+
+install_command: brew install carthage
+
+category: Dev Tools
+tags: [ios, macos, cocoa, swift, dependencies, xcode, package-manager]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  iOS ML apps that ship Core ML models and native SDKs often fight CocoaPods
+  workspaces that rewrite the Xcode project. Carthage checks out Git
+  repositories, builds frameworks, and lets you drag them in, so on-device
+  inference apps keep their project files while still pinning GitHub
+  dependencies in a Cartfile.
+
+use_cases:
+  - Vendor a Core ML helper framework from GitHub without a CocoaPods workspace
+  - Pin iOS SDK versions in a Cartfile.resolved for reproducible App Store builds
+  - Build xcframeworks for an on-device speech or vision model wrapper
+  - Keep an existing Xcode project layout while adding native ML client libraries

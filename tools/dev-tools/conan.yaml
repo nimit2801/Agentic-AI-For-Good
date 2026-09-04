@@ -1,0 +1,28 @@
+name: Conan
+description: Open-source C and C++ package manager that caches prebuilt binaries by compiler, architecture, and options. Conan recipes and lockfiles let native ML projects reuse OpenBLAS, CUDA, and protobuf artifacts across CI instead of rebuilding the world on every commit.
+tagline: C and C++ package manager with binary caching
+
+github_url: https://github.com/conan-io/conan
+website_url: https://conan.io
+docs_url: https://docs.conan.io
+
+install_command: pip install conan
+
+category: Dev Tools
+tags: [cpp, package-manager, cmake, binaries, dependencies, python, devops]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Native ML libraries spend most of CI time compiling Boost, protobuf, and
+  BLAS for each compiler and CUDA version. Conan stores prebuilt packages
+  keyed by settings and options, so a lockfile can pull the same OpenBLAS
+  and CUDA-aware artifacts on every agent instead of compiling from source
+  on each pull request.
+
+use_cases:
+  - Cache prebuilt protobuf and OpenBLAS packages for llama.cpp-style CMake projects
+  - Lock compiler, libcxx, and CUDA options so Linux CI matches a developer laptop
+  - Publish an internal CUDA kernel package to a private Conan remote
+  - Generate CMakeDeps and CMakeToolchain files from a conanfile.py for IDE and CI
