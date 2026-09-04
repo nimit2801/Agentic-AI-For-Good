@@ -1,0 +1,27 @@
+name: AWS CDK
+description: The AWS Cloud Development Kit defines cloud infrastructure in TypeScript, Python, Java, C#, Go, or JavaScript and synthesizes it to CloudFormation. Teams model GPU training stacks, SageMaker endpoints, and vector-store VPCs as code instead of JSON templates.
+tagline: Define AWS infrastructure in real programming languages
+
+github_url: https://github.com/aws/aws-cdk
+website_url: https://aws.amazon.com/cdk
+docs_url: https://docs.aws.amazon.com/cdk/
+
+install_command: npm install -g aws-cdk
+
+category: Dev Tools
+tags: [aws, iac, cloudformation, typescript, python, infrastructure, cdk]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Hand-written CloudFormation JSON is verbose and hard to reuse across GPU
+  training, SageMaker, and VPC layouts. CDK lets teams write constructs in
+  TypeScript or Python, share libraries, and synth to CloudFormation so ML
+  stacks are reviewed and tested like application code.
+
+use_cases:
+  - Model a SageMaker training job, endpoint, and IAM roles as Python CDK stacks
+  - Share a VPC and GPU instance construct library across ML product teams
+  - Synth and diff CloudFormation before deploying a vector-store cluster
+  - Unit-test infrastructure constructs that provision Bedrock or Lambda agents

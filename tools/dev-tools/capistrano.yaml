@@ -1,0 +1,27 @@
+name: Capistrano
+description: Capistrano is a remote server automation and deployment tool built on Ruby, Rake, and SSH. It ships code over SSH, runs named tasks, and rolls back releases so model APIs, worker boxes, and web UIs can be deployed without ad-hoc shell scripts.
+tagline: SSH-based deployment automation built on Ruby and Rake
+
+github_url: https://github.com/capistrano/capistrano
+website_url: https://capistranorb.com
+docs_url: https://capistranorb.com/documentation/getting-started/installation/
+
+install_command: gem install capistrano
+
+category: Dev Tools
+tags: [ruby, deployment, ssh, rake, devops, automation]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Shipping a model API or worker to several hosts with hand-written SSH
+  scripts loses rollback, shared releases, and a single deploy command.
+  Capistrano uses Rake tasks over SSH to publish a release directory,
+  symlink current, and roll back, so inference hosts update the same way.
+
+use_cases:
+  - Deploy a Rails or Sinatra model-serving app to multiple SSH hosts
+  - Roll back a bad inference-API release by relinking the previous directory
+  - Run remote rake or shell tasks after shipping a new embedding worker
+  - Keep web UI and API boxes on matching releases from one Capfile

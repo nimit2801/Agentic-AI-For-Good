@@ -1,0 +1,27 @@
+name: Rush
+description: Microsoft Rush is a scalable monorepo manager for JavaScript and TypeScript. It installs, builds, and publishes many packages from one Git repository using a shared install, phased builds, and change files so large agent SDKs, CLIs, and web consoles stay fast as the repo grows.
+tagline: Scalable JavaScript and TypeScript monorepo build orchestrator
+
+github_url: https://github.com/microsoft/rushstack
+website_url: https://rushstack.io
+docs_url: https://rushjs.io
+
+install_command: npm install -g @microsoft/rush
+
+category: Dev Tools
+tags: [javascript, typescript, monorepo, npm, build-system, microsoft]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Large JS/TS platforms split SDKs, CLIs, and UIs into many packages. Naive npm
+  workspaces reinstall the world and rebuild everything on each change. Rush
+  shares one install, phases builds, and tracks change files so only affected
+  packages rebuild and publish, keeping agent and ML web monorepos fast.
+
+use_cases:
+  - Orchestrate builds across an agent SDK, CLI, and dashboard in one Git repo
+  - Publish only changed TypeScript packages after a model-client API bump
+  - Share one install cache across CI jobs for a large JS ML console monorepo
+  - Enforce change files so every package version bump has a reviewable note
