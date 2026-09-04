@@ -1,0 +1,26 @@
+name: MacPorts
+description: Package manager for macOS that compiles and installs Unix software from Portfiles. MacPorts keeps scientific libraries, compilers, and CLI tools in /opt/local so ML laptops can pin Unix dependencies without mixing them into Homebrew or system paths.
+tagline: Unix package manager for macOS via Portfiles
+
+github_url: https://github.com/macports/macports-base
+website_url: https://www.macports.org
+docs_url: https://guide.macports.org
+
+category: Dev Tools
+tags: [macos, package-manager, ports, unix, cli, devops]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  macOS system paths and Homebrew formulae do not always match the
+  Unix library versions scientific and ML stacks need. MacPorts
+  builds software from Portfiles into /opt/local with its own prefix,
+  so compilers, headers, and CLIs stay isolated from Apple's userland
+  and from brew, which reduces version fights on research laptops.
+
+use_cases:
+  - Install scientific Unix libraries into /opt/local without touching Homebrew
+  - Pin a compiler or CLI version for an ML repo that Homebrew rolled forward
+  - Keep macOS research machines on a Portfile-managed toolchain
+  - Build native dependencies for Python scientific stacks from MacPorts

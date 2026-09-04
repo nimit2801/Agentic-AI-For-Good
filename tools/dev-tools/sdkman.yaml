@@ -1,0 +1,27 @@
+name: SDKMAN
+description: Command-line manager for SDKs on Unix shells. SDKMAN installs and switches JDK, Gradle, Maven, Kotlin, and other JVM tools per user so Java ML services and Android-adjacent CLIs pin the toolchain without colliding system packages.
+tagline: SDK version manager for JVM and related tools
+
+github_url: https://github.com/sdkman/sdkman-cli
+website_url: https://sdkman.io
+docs_url: https://sdkman.io/install
+install_command: curl -s "https://get.sdkman.io" | bash
+
+category: Dev Tools
+tags: [java, jvm, version-manager, sdk, gradle, devops]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JVM services pin a JDK and Gradle that the OS package manager does
+  not match, so CI and laptops drift. SDKMAN installs candidate SDKs
+  into a user directory and switches with sdk use, so Java ML APIs,
+  Spark jobs, and Kotlin CLIs run the exact JDK and build tool they
+  were tested against.
+
+use_cases:
+  - Pin JDK and Gradle versions for a Java model-serving service
+  - Switch JDKs per shell when testing Spark jobs across LTS lines
+  - Install Maven or Kotlin without replacing the OS Java package
+  - Match CI JDK to local SDKMAN so Gradle builds stay reproducible

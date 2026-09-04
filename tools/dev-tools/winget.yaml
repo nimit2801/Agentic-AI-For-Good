@@ -1,0 +1,26 @@
+name: WinGet
+description: Windows Package Manager CLI from Microsoft. WinGet searches, installs, upgrades, and pins apps from the community repository and Microsoft Store so Windows ML workstations script CUDA-adjacent tools and CLIs without GUI installers.
+tagline: Windows Package Manager CLI from Microsoft
+
+github_url: https://github.com/microsoft/winget-cli
+website_url: https://learn.microsoft.com/windows/package-manager/
+docs_url: https://learn.microsoft.com/windows/package-manager/winget/
+
+category: Dev Tools
+tags: [windows, package-manager, cli, microsoft, devops]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Windows developer machines still click through Store and vendor
+  installers, so CLIs and runtimes drift across ML laptops and CI
+  agents. WinGet installs and upgrades packages from a manifest
+  repository with winget install and export, so teams script Windows
+  toolchains the way brew install works on macOS.
+
+use_cases:
+  - Script git, Python, and VS Build Tools onto a Windows ML laptop
+  - Export a winget package list so a new Windows agent matches the team
+  - Upgrade CLIs on Windows CI images without GUI installers
+  - Pin a Windows runtime version in a winget configure or install command
