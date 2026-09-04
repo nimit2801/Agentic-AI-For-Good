@@ -1,0 +1,27 @@
+name: AWS SAM
+description: AWS SAM is a CLI and template model for building, testing, and deploying serverless applications on AWS. It local-invokes Lambda, starts API Gateway, and packages CloudFormation so agent webhooks and inference APIs can be developed without a full cloud deploy on every change.
+tagline: Build, test, and deploy AWS serverless apps from the CLI
+
+github_url: https://github.com/aws/aws-sam-cli
+website_url: https://aws.amazon.com/serverless/sam/
+docs_url: https://docs.aws.amazon.com/serverless-application-model/
+
+install_command: pip install aws-sam-cli
+
+category: Dev Tools
+tags: [aws, lambda, serverless, sam, cloudformation, cli, local-dev]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Debugging a Lambda agent webhook against real AWS is slow and costs
+  money on every save. SAM local-invokes functions, emulates API Gateway,
+  and deploys from a SAM template so teams iterate on serverless
+  inference APIs before promoting the same template to an account.
+
+use_cases:
+  - Local-invoke a Python Lambda that handles an agent webhook
+  - Start a local API Gateway to test an embedding HTTP function
+  - Package and deploy a SAM template with Lambda, IAM, and DynamoDB
+  - Validate a serverless.yml-style SAM template in CI before prod deploy

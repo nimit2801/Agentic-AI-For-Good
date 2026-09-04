@@ -1,0 +1,27 @@
+name: mitmproxy
+description: mitmproxy is an interactive TLS-capable intercepting HTTP proxy for developers and testers. It records, replays, and edits HTTP/1, HTTP/2, and WebSocket traffic so teams can inspect LLM API calls, debug agent tool traffic, and script flows in Python.
+tagline: Interactive TLS intercepting HTTP proxy for debugging APIs
+
+github_url: https://github.com/mitmproxy/mitmproxy
+website_url: https://mitmproxy.org
+docs_url: https://docs.mitmproxy.org
+
+install_command: pip install mitmproxy
+
+category: Dev Tools
+tags: [http, proxy, tls, debugging, python, websocket, testing]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  LLM SDKs and agent tool calls hide request bodies behind HTTPS, so
+  failures are opaque. mitmproxy intercepts TLS, shows headers and
+  payloads, and lets you replay or script traffic so teams debug
+  model APIs without scattering print statements through clients.
+
+use_cases:
+  - Inspect OpenAI-compatible chat payloads from a local agent client
+  - Replay a failing tool-call HTTP request after editing headers
+  - Script a Python addon that logs token usage from intercepted traffic
+  - Debug WebSocket streams used by a realtime voice or agent session

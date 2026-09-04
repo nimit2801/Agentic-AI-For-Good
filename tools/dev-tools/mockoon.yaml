@@ -1,0 +1,27 @@
+name: Mockoon
+description: Mockoon is an open-source tool for running mock REST APIs locally with no account and no remote deploy. You design routes in a desktop or CLI app and serve them so agent clients and frontends can develop against stable fixtures when the real model API is slow or unavailable.
+tagline: Local mock REST APIs with no account and no remote deploy
+
+github_url: https://github.com/mockoon/mockoon
+website_url: https://mockoon.com
+docs_url: https://mockoon.com/docs/latest/about/
+
+install_command: npm install -g @mockoon/cli
+
+category: Dev Tools
+tags: [api, mock, rest, local-dev, testing, cli, desktop]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Frontends and agents stall when the real LLM or backend API is down,
+  rate-limited, or still unwritten. Mockoon serves local mock routes
+  from a desktop or CLI environment so teams keep building against
+  fixtures without a remote mock server or cloud account.
+
+use_cases:
+  - Mock a chat-completions endpoint while the real model API is rate-limited
+  - Run Mockoon CLI in CI to serve fixtures for agent integration tests
+  - Design CRUD routes for a vector-store admin UI before the backend exists
+  - Share an environment file so the team hits the same local mock API

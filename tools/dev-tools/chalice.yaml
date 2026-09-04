@@ -1,0 +1,27 @@
+name: Chalice
+description: Chalice is a Python microframework for AWS Lambda and API Gateway. You write decorated Python functions and Chalice packages routes, IAM, and events so small agent APIs and automation endpoints deploy without a separate SAM or Terraform project.
+tagline: Python microframework for AWS Lambda APIs
+
+github_url: https://github.com/aws/chalice
+website_url: https://aws.github.io/chalice/
+docs_url: https://aws.github.io/chalice/api.html
+
+install_command: pip install chalice
+
+category: Dev Tools
+tags: [python, aws, lambda, api-gateway, serverless, microframework]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  A small Python agent endpoint should not need a full SAM or CDK
+  project. Chalice maps decorated functions to API Gateway and Lambda,
+  generates IAM, and deploys from the CLI so teams ship Python
+  webhooks with almost no extra infrastructure files.
+
+use_cases:
+  - Deploy a Python REST API for an agent callback on Lambda
+  - Attach an S3 or SQS event to a Chalice function that indexes documents
+  - Generate IAM from Python annotations instead of hand-written policies
+  - Local-test a Chalice app before deploying to an AWS account
