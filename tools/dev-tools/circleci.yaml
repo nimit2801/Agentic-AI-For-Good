@@ -1,0 +1,23 @@
+name: CircleCI
+description: Cloud CI/CD platform that runs tests, builds, and deploys from GitHub, GitLab, and Bitbucket. CircleCI is used to validate ML apps, GPU jobs, and agent workflows with orbs, Docker, and an MCP server for AI-assisted debugging.
+tagline: Cloud CI for tests, GPU jobs, and deploys
+
+website_url: https://circleci.com
+docs_url: https://circleci.com/docs/
+
+category: Dev Tools
+tags: [ci-cd, pipelines, docker, github, testing, saas]
+pricing: freemium
+is_open_source: false
+
+problem_solved: |
+  ML and agent code needs parallel tests, GPU runners, and fast
+  rollback without standing up Jenkins. CircleCI runs YAML pipelines
+  in the cloud with caches, orbs, and an MCP server so teams validate
+  every push and let coding agents inspect failed jobs.
+
+use_cases:
+  - Run pytest and lint on every pull request with Docker executors
+  - Train or evaluate a model on GPU resource classes from a config.yml
+  - Connect an IDE agent to CircleCI logs via the MCP server
+  - Roll back a failed ML service deploy with a CircleCI rollback pipeline

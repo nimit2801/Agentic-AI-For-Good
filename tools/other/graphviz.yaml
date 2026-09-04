@@ -1,0 +1,25 @@
+name: Graphviz
+description: Open-source graph visualization toolkit that lays out DOT graphs as diagrams. Graphviz is the engine behind architecture charts, dependency maps, and knowledge-graph pictures that ML teams render from text.
+tagline: DOT language graph layout engine
+
+website_url: https://graphviz.org
+docs_url: https://graphviz.org/documentation/
+
+category: Other
+tags: [diagrams, visualization, graphs, dot, documentation, open-source]
+pricing: free
+is_open_source: true
+license: EPL-1.0
+install_command: brew install graphviz
+
+problem_solved: |
+  Model graphs, pipeline DAGs, and org charts need layout, not just
+  drawing. Graphviz takes DOT text and produces deterministic SVG,
+  PNG, or PDF diagrams so architecture and knowledge-graph pictures
+  stay in version control instead of in a slide tool.
+
+use_cases:
+  - Render a training-pipeline DAG from DOT into SVG for documentation
+  - Visualize a knowledge graph or citation network as a Graphviz layout
+  - Generate architecture diagrams from code-emitted DOT in CI
+  - Convert dependency graphs into printable PDF for design reviews
