@@ -1,0 +1,23 @@
+name: Duplicati
+description: Duplicati is a client-side encrypted backup tool that stores snapshots in S3, Azure, Google Drive, SFTP, and other backends. It incrementally backs up workstations and servers so training configs, notebooks, and small artifact stores stay recoverable without trusting the cloud provider with plaintext.
+tagline: Encrypted cloud backups from the client, not the provider
+github_url: https://github.com/duplicati/duplicati
+website_url: https://duplicati.com
+docs_url: https://docs.duplicati.com
+install_command: brew install --cask duplicati
+category: Dev Tools
+tags: [backup, encryption, s3, cloud, windows, macos, devops]
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: |
+  Researchers store notebooks, API keys, and small artifacts on laptops that
+  get lost or wiped, while cloud backup products see files in plaintext.
+  Duplicati encrypts on the client, then ships incremental snapshots to S3,
+  Azure, Google Drive, or SFTP so teams recover workstations without giving
+  the storage provider readable copies of prompts, weights, or secrets.
+use_cases:
+  - Schedule encrypted incremental backups of laptop experiment folders to S3 or Backblaze B2
+  - Restore a research workstation from a Duplicati snapshot after disk failure without re-cloning datasets
+  - Back up on-prem GPU jump hosts to SFTP with client-side encryption and retention policies
+  - Keep versioned backups of notebooks and config files across Google Drive without storing plaintext

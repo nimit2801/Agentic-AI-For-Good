@@ -1,0 +1,23 @@
+name: InSpec
+description: Chef InSpec is an open-source infrastructure testing framework with a readable DSL for compliance, security, and policy checks. Run the same profiles locally, over SSH, WinRM, or Docker to audit GPU hosts, Kubernetes nodes, and ML serving stacks.
+tagline: Compliance-as-code tests for infrastructure and ML hosts
+github_url: https://github.com/inspec/inspec
+website_url: https://www.inspec.io
+docs_url: https://docs.chef.io/inspec/
+install_command: gem install inspec-bin
+category: Dev Tools
+tags: [compliance, testing, infrastructure, security, ruby, devops, audit]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+problem_solved: |
+  ML clusters drift: CUDA drivers, SSH configs, container runtimes, and CIS
+  baselines differ across GPU nodes and break training or leak credentials.
+  InSpec encodes those checks as versioned profiles you run locally or over
+  SSH/WinRM/Docker, so platform teams catch misconfigured hosts before jobs
+  schedule onto them instead of discovering policy failures after a run dies.
+use_cases:
+  - Audit GPU worker images for CUDA, NVIDIA driver, and container runtime versions before a training job lands
+  - Encode CIS and internal security baselines as InSpec profiles and run them over SSH against model-serving VMs
+  - Test Kubernetes node configuration and kubelet settings as part of a cluster bootstrap pipeline
+  - Verify Docker containers used for inference do not ship with insecure packages or open ports
