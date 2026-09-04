@@ -1,0 +1,25 @@
+name: Icecream
+description: A distributed C and C++ compiler (icecc) with a central scheduler that spreads compile jobs across volunteer machines. Icecream is used to cut wall-clock time for native ML library builds by sharing gcc and clang load on a LAN.
+tagline: Distributed compiler with a central scheduler
+
+github_url: https://github.com/icecc/icecream
+docs_url: https://github.com/icecc/icecream#readme
+
+category: Dev Tools
+tags: [cpp, compiler, distributed-builds, gcc, clang, icecc, performance]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Native ML trees spend CI minutes compiling C++ on one worker
+  even when idle desktops sit on the same network. Icecream
+  schedules gcc and clang jobs through a central daemon so
+  compile load is shared, without rewriting the CMake or Make
+  files of llama.cpp-style projects.
+
+use_cases:
+  - Share gcc compile jobs for a C++ inference library across office machines
+  - Cut CI wall time for OpenCV or protobuf rebuilds on a small compile farm
+  - Run an icecc scheduler so laptops donate spare cores to nightly native builds
+  - Combine with ccache so distributed compiles still hit a local object cache

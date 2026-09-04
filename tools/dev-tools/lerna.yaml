@@ -1,0 +1,28 @@
+name: Lerna
+description: A build system for JavaScript and TypeScript monorepos that versions, builds, and publishes multiple packages from one repository. Lerna is used when an ML platform splits SDKs, CLI, and web UI into packages that must stay in lockstep.
+tagline: JavaScript/TypeScript monorepo versioning and publish tool
+
+github_url: https://github.com/lerna/lerna
+website_url: https://lerna.js.org
+docs_url: https://lerna.js.org/docs/introduction
+
+install_command: npm install lerna
+
+category: Dev Tools
+tags: [javascript, typescript, monorepo, npm, versioning, build-system]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Agent SDKs, CLIs, and web consoles often live in one git repo but
+  publish as separate npm packages. Hand-bumping versions and
+  publishing in the right order breaks. Lerna versions workspaces,
+  runs package scripts, and publishes changed packages so the JS
+  side of an ML platform stays consistent.
+
+use_cases:
+  - Version and publish an agent SDK plus CLI from one JavaScript monorepo
+  - Run tests across workspace packages that share TypeScript types
+  - Publish only changed packages after a model-client API update
+  - Keep a web console and Node SDK on matching semver from one changelog
