@@ -1,0 +1,27 @@
+name: Encore
+description: Encore is a backend framework that infers infrastructure from application code. You write TypeScript or Go APIs, and Encore provisions APIs, Pub/Sub, databases, and tracing so agent backends ship without a separate Terraform or YAML layer.
+tagline: Backend framework that provisions infra from your code
+
+github_url: https://github.com/encoredev/encore
+website_url: https://github.com/encoredev/encore
+docs_url: https://github.com/encoredev/encore#readme
+
+install_command: brew install encoredev/tap/encore
+
+category: Dev Tools
+tags: [go, typescript, backend, infrastructure, tracing, api, framework]
+pricing: freemium
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  Agent backends need APIs, queues, databases, and tracing, then a
+  second pile of Terraform to run them. Encore infers that infra from
+  Go or TypeScript code, provisions it, and adds tracing so teams
+  ship services without a parallel IaC project.
+
+use_cases:
+  - Define a Go API plus Postgres for an agent control plane without Terraform
+  - Add Pub/Sub between a worker and an HTTP service from application code
+  - Trace request paths across an inference backend without a separate APM setup
+  - Spin up preview environments that match production infra from the same code
