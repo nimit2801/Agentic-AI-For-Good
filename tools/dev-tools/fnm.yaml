@@ -1,0 +1,27 @@
+name: fnm
+description: Fast Node.js version manager written in Rust. fnm installs and switches Node versions per directory with .node-version or .nvmrc, so Next.js AI apps and MCP servers pin Node without the slower shell-heavy nvm workflow.
+tagline: Fast Rust-based Node.js version manager
+
+github_url: https://github.com/Schniz/fnm
+website_url: https://github.com/Schniz/fnm
+docs_url: https://github.com/Schniz/fnm#installation
+install_command: brew install fnm
+
+category: Dev Tools
+tags: [node, javascript, version-manager, rust, nvm, devops]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Node-based AI UIs and MCP servers pin different LTS lines, and
+  nvm's shell hooks are slow to start. fnm is a Rust binary that
+  installs Node versions and switches from .nvmrc or .node-version
+  with a fast shell integration, so each project uses the Node it
+  was tested on without a heavy POSIX script manager.
+
+use_cases:
+  - Pin Node for a Next.js AI dashboard with .node-version
+  - Switch Node quickly when testing MCP servers across LTS lines
+  - Replace nvm on laptops where shell startup time matters
+  - Install Node in CI without baking a single global version into the image
