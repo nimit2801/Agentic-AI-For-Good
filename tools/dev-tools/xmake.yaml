@@ -1,0 +1,28 @@
+name: xmake
+description: A Lua-based cross-platform build utility that describes C/C++ and CUDA projects in xmake.lua instead of generated Makefiles. xmake resolves packages, toolchains, and targets in one file, so native ML libraries can build on Windows, Linux, and macOS without a CMake generator step.
+tagline: Lua-based cross-platform build utility
+
+github_url: https://github.com/xmake-io/xmake
+website_url: https://xmake.io
+docs_url: https://xmake.io/#/getting_started
+
+install_command: curl -fsSL https://xmake.io/shget.text | bash
+
+category: Dev Tools
+tags: [build-system, cpp, lua, cuda, cross-platform, cmake-alternative, devops]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  C++ and CUDA ML libraries often juggle CMake generators, vcpkg
+  toolchains, and per-OS compiler flags. xmake keeps the project
+  description, package deps, and toolchain selection in one Lua
+  file, so llama.cpp-style code builds on Windows, Linux, and macOS
+  from the same xmake.lua without generating IDE projects first.
+
+use_cases:
+  - Build a CUDA inference library on Linux and Windows from one xmake.lua
+  - Pull OpenCV or protobuf via xmake packages instead of a separate CMake FetchContent
+  - Switch GCC, Clang, and MSVC toolchains without regenerating build files
+  - Package a native ML SDK as a shared library for Python wheels

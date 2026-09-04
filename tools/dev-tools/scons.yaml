@@ -1,0 +1,28 @@
+name: SCons
+description: A Python-based software construction tool that replaces Make with scripts you can import, test, and extend. SCons scans C/C++ dependencies automatically and is still used to build scientific and ML native extensions that predate CMake-only workflows.
+tagline: Python-based software construction tool
+
+github_url: https://github.com/SCons/scons
+website_url: https://scons.org
+docs_url: https://scons.org/documentation.html
+
+install_command: pip install scons
+
+category: Dev Tools
+tags: [build-system, python, cpp, make-alternative, compilation, scientific-computing]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Some scientific and ML native trees still cannot express their
+  dependency graph in CMake without a rewrite. SCons lets those
+  projects describe builds in Python, auto-scan headers, and keep
+  custom compilers or CUDA steps in ordinary Python functions
+  instead of Make macros that break on every platform.
+
+use_cases:
+  - Build a legacy scientific C++ library that still ships SConstruct files
+  - Auto-scan C/C++ headers so incremental rebuilds of CUDA extensions stay correct
+  - Call custom Python logic during the build to generate protobuf or kernel stubs
+  - Keep a Python-native build for labs that already script everything in Python
