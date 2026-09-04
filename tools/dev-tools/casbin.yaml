@@ -1,0 +1,22 @@
+name: Casbin
+description: Apache Casbin is an authorization library that enforces ACL, RBAC, and ABAC from a policy file and a model. Embed it in Python, Go, or Node services so AI APIs gate tools, tenants, and model routes with a single policy language instead of scattered if-statements.
+tagline: Multi-language ACL, RBAC, and ABAC enforcement library
+github_url: https://github.com/casbin/casbin
+website_url: https://casbin.org
+docs_url: https://casbin.org/docs/overview
+install_command: pip install casbin
+category: Dev Tools
+tags: [authorization, rbac, abac, acl, security, python, golang]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: |
+  Inference APIs accumulate ad-hoc permission checks until nobody can
+  change who may call a tool. Casbin loads a model plus a policy and
+  enforces ACL, RBAC, or ABAC in-process across languages so teams
+  version access rules next to the service instead of rewriting
+  middleware for every new agent route.
+use_cases:
+  - Enforce RBAC on model-serving routes so only billed tenants can call GPT-class endpoints
+  - Gate agent tool use with ABAC attributes such as dataset classification and user role
+  - Share one Casbin policy file across Python training jobs and a Go inference gateway
