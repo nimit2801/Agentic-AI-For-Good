@@ -1,0 +1,26 @@
+name: Spack
+description: HPC package manager that builds multiple versions, compilers, and configurations of scientific software from one spec language. Spack is used on clusters to install CUDA-aware MPI, BLAS, and Python stacks without a single global prefix.
+tagline: HPC package manager for multi-version scientific stacks
+
+github_url: https://github.com/spack/spack
+website_url: https://spack.io
+docs_url: https://spack.readthedocs.io
+
+category: Dev Tools
+tags: [hpc, package-manager, scientific-computing, compilers, cuda, devops]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Cluster ML stacks need several compilers, MPI builds, and CUDA
+  variants at once, which distro packages cannot express. Spack
+  builds packages from specs that encode version, compiler, and
+  variants into unique hashes, so training nodes can coexist many
+  scientific stacks without a single /usr prefix.
+
+use_cases:
+  - Install CUDA-aware MPI and BLAS variants for a cluster training job
+  - Coexist multiple compiler and library versions on one HPC login node
+  - Replicate an environment.yaml-style Spack environment on a new cluster
+  - Build Python scientific stacks against a pinned MPI without conda

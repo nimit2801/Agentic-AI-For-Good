@@ -1,0 +1,26 @@
+name: Devbox
+description: Nix-powered tool that creates isolated, shareable development environments from a JSON config. Devbox pins packages per repo so ML services get the same Python, Node, and CLIs on every laptop and CI runner without a global Nix profile.
+tagline: Isolated Nix-powered dev environments from a JSON file
+
+github_url: https://github.com/jetify-com/devbox
+website_url: https://www.jetify.com/devbox/
+docs_url: https://www.jetify.com/docs/devbox/
+install_command: curl -fsSL https://get.jetify.com/devbox | bash
+
+category: Dev Tools
+tags: [nix, environments, devops, reproducible, cli, jetify]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  ML repos depend on Python, Node, and CLIs that drift across laptops
+  and CI. Devbox wraps Nix packages in a per-project JSON file so
+  teammates enter the same shell without writing Nix, and CI can
+  reproduce the toolchain from the committed config.
+
+use_cases:
+  - Pin Python and CLI versions for an ML service with a committed devbox.json
+  - Share a Nix-backed shell with teammates who do not write Nix
+  - Run the same Devbox environment in GitHub Actions as on a laptop
+  - Isolate CUDA-adjacent CLIs per repo without a global Nix profile
