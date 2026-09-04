@@ -1,0 +1,27 @@
+name: Molecule
+description: Molecule is an Ansible-native testing framework for roles, playbooks, and collections. It runs configurable create-converge-verify-destroy workflows against containers or cloud so infrastructure roles that provision GPU hosts and model-serving boxes stay tested.
+tagline: Ansible-native testing for roles, playbooks, and collections
+
+github_url: https://github.com/ansible/molecule
+website_url: https://ansible.readthedocs.io/projects/molecule/
+docs_url: https://ansible.readthedocs.io/projects/molecule/
+
+install_command: pip install molecule
+
+category: Dev Tools
+tags: [ansible, testing, python, infrastructure, roles, devops]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Ansible roles that install CUDA, Docker, or a model runtime break
+  when run against a fresh host. Molecule creates an instance,
+  converges the role, verifies state, and destroys it so infra
+  playbooks are tested before they touch a GPU box.
+
+use_cases:
+  - Test an Ansible role that installs CUDA and Docker on a container instance
+  - Verify a playbook that configures an inference host before production apply
+  - Run Molecule in CI against a collection that provisions ML workstations
+  - Iterate create-converge-verify locally while editing a serving-stack role

@@ -1,0 +1,27 @@
+name: Goss
+description: Goss is a YAML-based server testing and validation tool. You declare expected packages, ports, files, and processes, then goss validates a host in seconds so GPU boxes and inference nodes can be health-checked after Ansible or image builds.
+tagline: Quick YAML server testing and host validation
+
+github_url: https://github.com/goss-org/goss
+website_url: https://goss.rocks
+docs_url: https://github.com/goss-org/goss#readme
+
+install_command: brew install goss
+
+category: Dev Tools
+tags: [testing, yaml, servers, validation, devops, health-check]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  After provisioning a GPU host, teams still SSH in to check ports,
+  packages, and services. Goss encodes those expectations in YAML
+  and validates in seconds, so image builds and Ansible runs fail
+  fast when an inference node is misconfigured.
+
+use_cases:
+  - Assert CUDA packages, Docker, and an inference port after a host build
+  - Run goss in CI against a container that mirrors a serving image
+  - Auto-add a goss.yaml from the current host and tighten it into a spec
+  - Health-check edge nodes after a config-management converge
