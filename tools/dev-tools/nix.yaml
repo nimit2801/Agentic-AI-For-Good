@@ -1,0 +1,28 @@
+name: Nix
+description: A purely functional package manager that builds software in isolated, bit-reproducible environments. Packages live in a content-addressed nix store so multiple versions coexist without conflicts, and CI, GPU, and ML stacks can be reproduced from a flake or nix-shell.
+tagline: Purely functional package manager for reproducible environments
+
+github_url: https://github.com/NixOS/nix
+website_url: https://nixos.org
+docs_url: https://nix.dev
+
+install_command: curl -L https://nixos.org/nix/install | sh
+
+category: Dev Tools
+tags: [package-manager, nix, reproducibility, flakes, linux, macos, devops, environments]
+pricing: free
+is_open_source: true
+license: LGPL-2.1
+
+problem_solved: |
+  Python venvs, Docker images, and ad-hoc apt installs still drift across laptops and CI,
+  so GPU drivers, CUDA, and Python wheels fail on one machine and pass on another. Nix
+  builds every package in isolation and stores it by content hash, so a flake.lock pins
+  compilers, CUDA, and Python together. Teams share one declaration instead of a pile of
+  Dockerfiles and README install steps.
+
+use_cases:
+  - Pin a CUDA, Python, and compiler toolchain with a flake.lock for identical training boxes
+  - Drop into a nix-shell that provides llama.cpp build deps without polluting the host
+  - Reproduce a CI job locally with the same nixpkgs revision the pipeline used
+  - Coexist multiple Python and Node versions without pyenv or nvm path fights
