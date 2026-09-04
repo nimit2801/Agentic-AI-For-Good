@@ -1,0 +1,27 @@
+name: Snakemake
+description: Workflow management system that scales data analysis from laptops to clusters with Python-based rules, conda or container environments, and automatic provenance. Snakemake is widely used for reproducible bioinformatics and ML experiment pipelines.
+tagline: Reproducible workflow engine for data analysis
+
+github_url: https://github.com/snakemake/snakemake
+website_url: https://snakemake.github.io
+docs_url: https://snakemake.readthedocs.io
+
+category: Data
+tags: [workflow, reproducibility, python, pipelines, bioinformatics, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: pip install snakemake
+
+problem_solved: |
+  Ad hoc scripts for preprocessing, training, and evaluation do not
+  rerun cleanly when inputs change. Snakemake defines pipelines as
+  rules with file dependencies, environments, and cluster backends
+  so scientific and ML workflows stay reproducible from a laptop
+  to a cluster without rewriting the DAG.
+
+use_cases:
+  - Define a preprocessing and training pipeline as Snakemake rules
+  - Rerun only the steps whose inputs changed after a data update
+  - Pin conda or container environments per rule for reproducible ML jobs
+  - Submit a scientific workflow to a cluster from the same Snakefile
