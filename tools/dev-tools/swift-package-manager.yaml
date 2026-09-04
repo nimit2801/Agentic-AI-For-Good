@@ -1,0 +1,26 @@
+name: Swift Package Manager
+description: Apple's official package manager for the Swift language. SwiftPM resolves Git dependencies, builds libraries and executables from Package.swift, and ships with the Swift toolchain so iOS and server Swift ML apps share one graph for Core ML wrappers and native SDKs.
+tagline: Official package manager for the Swift language
+
+github_url: https://github.com/apple/swift-package-manager
+website_url: https://www.swift.org/documentation/package-manager/
+docs_url: https://docs.swift.org/swiftpm/documentation/packagemanagerdocs/
+
+category: Dev Tools
+tags: [swift, ios, macos, package-manager, apple, dependencies, xcode]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  iOS and server Swift projects that wrap Core ML models need a
+  dependency graph that Xcode and CI both understand. Swift Package
+  Manager pins Git packages in Package.swift and Package.resolved,
+  so on-device inference apps and Vapor services share the same
+  resolved versions without a CocoaPods workspace.
+
+use_cases:
+  - Pin a Core ML helper library in Package.swift for an iOS inference app
+  - Share the same Package.resolved between Xcode and Linux CI for a Vapor service
+  - Publish a native Swift SDK that other ML apps consume as a Git package
+  - Build a command-line tokenizer or dataset tool with swift build

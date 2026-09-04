@@ -1,0 +1,27 @@
+name: Bear
+description: A tool that generates compile_commands.json by intercepting C and C++ compiler invocations. Bear lets clangd, clang-tidy, and other LLVM tools understand llama.cpp-style trees even when the build system is Make, SCons, or a custom script.
+tagline: Generate compile_commands.json from any C/C++ build
+
+github_url: https://github.com/rizsotto/Bear
+docs_url: https://github.com/rizsotto/Bear#readme
+
+install_command: brew install bear
+
+category: Dev Tools
+tags: [cpp, clangd, compile-commands, llvm, tooling, developer-tools]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  clangd and clang-tidy need compile_commands.json, but many native
+  ML trees still build with Make or SCons and never emit that file.
+  Bear wraps the build, records every compiler invocation, and writes
+  the compilation database so IDE navigation and static analysis work
+  on CUDA and C++ inference code.
+
+use_cases:
+  - Generate compile_commands.json for a Make-based llama.cpp checkout
+  - Feed clang-tidy checks in CI from a Bear-produced compilation database
+  - Enable clangd jump-to-definition in a SCons scientific C++ tree
+  - Capture compiler flags for a custom CUDA kernel build script

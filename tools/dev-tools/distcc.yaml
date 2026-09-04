@@ -1,0 +1,25 @@
+name: distcc
+description: A distributed C, C++, and Objective-C compiler that farms preprocessor output to volunteer machines. distcc speeds up native ML library builds by spreading gcc and clang compile jobs across a LAN instead of waiting on a single laptop or CI worker.
+tagline: Distributed C and C++ compilation across a LAN
+
+github_url: https://github.com/distcc/distcc
+docs_url: https://github.com/distcc/distcc#readme
+
+category: Dev Tools
+tags: [cpp, compiler, distributed-builds, gcc, clang, ci, performance]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Compiling CUDA-adjacent C++ trees like llama.cpp or OpenCV on one
+  CI worker can take tens of minutes. distcc sends preprocess output
+  to other machines on the network so gcc and clang jobs run in
+  parallel, cutting wall-clock time for native ML library builds
+  without changing the source tree.
+
+use_cases:
+  - Spread gcc compile jobs for a native ML library across office workstations
+  - Speed up CI rebuilds of C++ inference code when a single runner is too slow
+  - Combine distcc with ccache so repeated header-heavy builds stay fast
+  - Compile Objective-C and C++ SDKs on a small Mac fleet from one driver
