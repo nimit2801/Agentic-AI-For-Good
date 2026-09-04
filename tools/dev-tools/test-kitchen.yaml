@@ -1,0 +1,22 @@
+name: Test Kitchen
+description: Test Kitchen is an integration-testing harness for infrastructure code. It spins isolated instances, applies Chef, Ansible, or shell provisioners, then runs verification so GPU images, serving AMIs, and ML node cookbooks are proven before they hit a cluster.
+tagline: Integration tests for infrastructure code on isolated platforms
+github_url: https://github.com/test-kitchen/test-kitchen
+website_url: https://kitchen.ci
+docs_url: https://kitchen.ci/docs/getting-started/introduction/
+install_command: gem install test-kitchen
+category: Dev Tools
+tags: [testing, infrastructure, chef, ansible, ruby, devops, vagrant]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: |
+  Infrastructure code for ML hosts is easy to write and hard to prove: a
+  cookbook that installs CUDA may work on one AMI and fail on another.
+  Test Kitchen creates throwaway instances per platform, converges the
+  provisioner, then runs tests so platform teams catch broken GPU images
+  and serving nodes in CI instead of on the first training job.
+use_cases:
+  - Converge a Chef cookbook that installs NVIDIA drivers and CUDA on multiple Linux AMIs before publishing the image
+  - Test Ansible playbooks for model-serving nodes against Vagrant or cloud instances in CI
+  - Verify shell-provisioned GPU worker images boot with the expected container runtime and kernel modules

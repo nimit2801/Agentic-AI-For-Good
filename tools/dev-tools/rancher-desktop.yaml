@@ -1,0 +1,22 @@
+name: Rancher Desktop
+description: Rancher Desktop runs container engines and a local Kubernetes cluster on a developer workstation. It ships k3s plus nerdctl or dockerd so ML engineers can build images, test Helm charts, and iterate on serving stacks without a remote cluster or Docker Desktop license.
+tagline: Local Kubernetes and containers on the desktop
+github_url: https://github.com/rancher-sandbox/rancher-desktop
+website_url: https://rancherdesktop.io
+docs_url: https://docs.rancherdesktop.io
+install_command: brew install --cask rancher
+category: Dev Tools
+tags: [kubernetes, containers, desktop, k3s, docker, devops, local-dev]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: |
+  Testing AI services that need Kubernetes usually means a shared remote
+  cluster or a paid Docker Desktop seat. Rancher Desktop runs k3s and a
+  container engine locally with nerdctl or dockerd, so engineers build
+  images, apply Helm charts, and debug GPU-adjacent workloads on their
+  laptop without fighting cluster quotas or a proprietary runtime license.
+use_cases:
+  - Run a local k3s cluster to develop Helm charts for model-serving and vector-database stacks
+  - Build and test inference container images with nerdctl or dockerd before pushing to a registry
+  - Reproduce Kubernetes Job and StatefulSet behavior for training sidecars on a laptop without a remote cluster

@@ -1,0 +1,22 @@
+name: Serverspec
+description: Serverspec is an RSpec-based framework for testing server configuration. Write specs that SSH into hosts provisioned by Chef, Puppet, Ansible, or by hand and assert packages, services, ports, and files match the intended ML node baseline.
+tagline: RSpec tests for servers configured by any provisioner
+github_url: https://github.com/mizzy/serverspec
+website_url: https://serverspec.org
+docs_url: https://serverspec.org
+install_command: gem install serverspec
+category: Dev Tools
+tags: [testing, rspec, infrastructure, ruby, ssh, devops, compliance]
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: |
+  After Chef, Puppet, or Ansible finishes, nobody knows if the GPU host
+  actually has the right packages, ports, and services. Serverspec SSHes
+  into the machine and runs RSpec examples against live state so teams
+  prove CUDA, docker, and sshd match the baseline instead of trusting
+  that the provisioner reported success.
+use_cases:
+  - Assert NVIDIA driver, CUDA toolkit, and docker packages are installed on every GPU worker after Ansible converges
+  - Check that model-serving ports are listening and unwanted daemons are stopped on inference VMs
+  - Verify SSH hardening and file permissions on jump hosts that hold training credentials
