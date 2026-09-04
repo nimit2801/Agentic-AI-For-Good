@@ -1,0 +1,26 @@
+name: rustup
+description: Official Rust toolchain installer and version manager. rustup installs rustc, cargo, and rustfmt per user, switches channels and targets, and keeps ML crates and inference binaries on a pinned Rust without a system-wide compiler.
+tagline: Official Rust toolchain installer and version manager
+
+github_url: https://github.com/rust-lang/rustup
+website_url: https://rustup.rs
+docs_url: https://rust-lang.github.io/rustup/
+install_command: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+category: Dev Tools
+tags: [rust, toolchain, version-manager, cargo, cli, devops]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Rust ML crates, tokenizers, and inference binaries pin a rustc that
+  OS packages lag or overshoot. rustup installs isolated toolchains
+  per user, switches stable/beta/nightly and compilation targets, and
+  keeps cargo on the channel the project rust-toolchain.toml expects.
+
+use_cases:
+  - Pin a Rust toolchain for a tokenizer or inference crate with rust-toolchain.toml
+  - Add wasm or musl targets for shipping ML CLI binaries
+  - Switch nightly vs stable when a crate needs unstable features
+  - Install rustc on CI without baking a distro Rust package into the image

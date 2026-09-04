@@ -1,0 +1,27 @@
+name: Flox
+description: Nix-based environment manager that creates portable, deterministic developer environments. Flox layers packages into an environment you can activate like a venv, so ML teams share the same compilers, CLIs, and runtimes across laptops and CI.
+tagline: Deterministic Nix environments you activate like a venv
+
+github_url: https://github.com/flox/flox
+website_url: https://flox.dev
+docs_url: https://flox.dev/docs
+install_command: brew install flox
+
+category: Dev Tools
+tags: [nix, environments, devops, reproducible, cli]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Reproducible ML toolchains usually mean either a heavy Nix flake or
+  a drifting Dockerfile. Flox builds Nix-backed environments you
+  activate like a virtualenv, so compilers, CLIs, and language
+  runtimes stay pinned across laptops and CI without authoring Nix
+  from scratch.
+
+use_cases:
+  - Activate a pinned compiler and Python stack for an ML repo like a venv
+  - Share a Flox environment manifest so CI matches local CLIs
+  - Layer extra packages onto a base environment without rebuilding a container
+  - Keep GPU-adjacent Unix tools consistent across macOS and Linux laptops

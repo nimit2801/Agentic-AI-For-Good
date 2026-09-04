@@ -1,0 +1,26 @@
+name: Flatpak
+description: Linux application sandboxing and distribution framework. Flatpak installs desktop apps in isolated runtimes with explicit permissions, so ML workstations can ship GUI tools and IDEs without fighting distro package versions.
+tagline: Sandboxed Linux app distribution with runtimes
+
+github_url: https://github.com/flatpak/flatpak
+website_url: https://flatpak.org
+docs_url: https://docs.flatpak.org
+
+category: Dev Tools
+tags: [linux, packaging, sandbox, desktop, distribution, devops]
+pricing: free
+is_open_source: true
+license: LGPL-2.1
+
+problem_solved: |
+  Linux desktop ML tools and IDEs lag or conflict with distro
+  packages. Flatpak ships apps with their own runtime and sandbox
+  permissions so a GUI editor, notebook helper, or vendor tool
+  installs the same way on Fedora, Ubuntu, and immutable OS images
+  without replacing system libraries.
+
+use_cases:
+  - Install a sandboxed IDE on an ML workstation without distro package fights
+  - Ship an internal Linux GUI tool as a Flatpak with a pinned runtime
+  - Run Flathub apps on immutable Linux images used for research laptops
+  - Limit filesystem and device access for untrusted desktop ML utilities
