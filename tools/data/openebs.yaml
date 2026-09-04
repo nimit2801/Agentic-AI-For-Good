@@ -1,0 +1,22 @@
+name: OpenEBS
+description: OpenEBS is cloud-native storage for Kubernetes that provisions local and replicated persistent volumes for stateful apps. It offers HostPath, ZFS, LVM, and Mayastor engines so GPU clusters can attach fast, resilient disks for model caches, vector databases, and training checkpoints.
+tagline: Cloud-native persistent storage for Kubernetes stateful apps
+github_url: https://github.com/openebs/openebs
+website_url: https://openebs.io
+docs_url: https://openebs.io/docs
+category: Data
+tags: [kubernetes, storage, persistent-volume, csi, nvme, zfs, data-platform]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: |
+  Stateful AI workloads on Kubernetes need local NVMe speed and replicated
+  durability, but cloud disks are slow or expensive and hostPath volumes are
+  not portable. OpenEBS provisions CSI volumes from HostPath, ZFS, LVM, or
+  Mayastor so vector databases, feature stores, and checkpoint caches get
+  dynamic PVs with snapshots and optional n-way replication across nodes.
+use_cases:
+  - Attach local NVMe persistent volumes to vector database pods without managing raw hostPath mounts
+  - Replicate model-checkpoint volumes across Kubernetes nodes with Mayastor for training job failover
+  - Provision ZFS-backed PVs with snapshots for experiment workspaces on GPU worker nodes
+  - Give inference caches and feature-store StatefulSets dynamic storage that follows the pod

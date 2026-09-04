@@ -1,0 +1,23 @@
+name: Testkube
+description: Testkube is a Kubernetes-native testing platform that runs unit, integration, and end-to-end tests as cluster workflows. Teams execute Playwright, k6, Cypress, and custom jobs next to the services they test, then collect results without standing up a separate CI runner fleet.
+tagline: Kubernetes-native test orchestration for cluster workloads
+github_url: https://github.com/kubeshop/testkube
+website_url: https://testkube.io
+docs_url: https://docs.testkube.io
+install_command: brew install testkube
+category: Dev Tools
+tags: [kubernetes, testing, ci-cd, e2e, k6, playwright, devops]
+pricing: freemium
+is_open_source: true
+license: MIT
+problem_solved: |
+  AI services running in Kubernetes are hard to test from a laptop CI runner:
+  GPU nodes, sidecars, and internal DNS never match production. Testkube
+  schedules tests as cluster workflows beside the workloads they cover, so
+  load tests, API checks, and browser jobs hit real in-cluster endpoints and
+  stream results to one dashboard instead of a pile of ad-hoc Job YAML.
+use_cases:
+  - Run k6 load tests against an in-cluster model-serving endpoint from the same namespace
+  - Execute Playwright or Cypress suites against an internal AI dashboard without exposing it publicly
+  - Orchestrate post-deploy smoke tests for RAG APIs as Kubernetes workflows after each rollout
+  - Collect failing test artifacts from GPU nodes into a single Testkube dashboard for on-call review

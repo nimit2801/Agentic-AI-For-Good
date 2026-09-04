@@ -1,0 +1,23 @@
+name: Borg
+description: Borg is a deduplicating backup program with compression and authenticated encryption. It stores space-efficient snapshots of datasets, checkpoints, and experiment artifacts on local disks or remote repos so ML teams can restore failed runs without re-uploading unchanged chunks.
+tagline: Deduplicating encrypted backups for datasets and checkpoints
+github_url: https://github.com/borgbackup/borg
+website_url: https://www.borgbackup.org
+docs_url: https://borgbackup.readthedocs.io
+install_command: pip install borgbackup
+category: Dev Tools
+tags: [backup, deduplication, encryption, python, snapshots, storage, devops]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+problem_solved: |
+  Training checkpoints and datasets change a little each day but cost a lot
+  to copy in full. Borg chunks, compresses, and encrypts data client-side,
+  then only stores new chunks in a local or remote repository so labs can
+  keep many snapshots of models and experiment dirs without paying full
+  object-storage prices or sending plaintext artifacts off-box.
+use_cases:
+  - Keep incremental encrypted backups of model checkpoints so only changed tensor chunks are stored
+  - Snapshot experiment directories to a remote Borg repo and restore a prior run after a failed training job
+  - Deduplicate daily backups of shared datasets across workstations that hold overlapping files
+  - Append-only backup of configs and notebooks with authenticated encryption before pushing to object storage
