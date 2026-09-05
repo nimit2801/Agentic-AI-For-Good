@@ -1,0 +1,26 @@
+name: Apache Paimon
+description: "Lake format for a realtime lakehouse with Flink and Spark, supporting streaming and batch on the same tables so CDC and analytics share one storage layer."
+tagline: Realtime lakehouse format for Flink and Spark
+
+github_url: https://github.com/apache/paimon
+website_url: https://paimon.apache.org/
+docs_url: https://paimon.apache.org/docs/master/
+
+category: Data
+tags: [apache, lakehouse, streaming, flink, spark, data-lake, java]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Streaming CDC and batch analytics usually land in different stores, so feature
+  pipelines and training jobs read stale copies. Apache Paimon is a lake format
+  with changelog tables, primary keys, and Flink/Spark engines so the same
+  lakehouse table serves realtime updates and batch reads for ML feature stores
+  without a separate OLAP clone.
+
+use_cases:
+  - "Build a Flink CDC pipeline into Paimon tables and query the same data with Spark batch jobs"
+  - "Store changelog and primary-key lakehouse tables for ML feature freshness"
+  - "Unify streaming ingestion and lakehouse analytics without maintaining Kafka plus a warehouse copy"
+  - "Run streaming upserts into object storage for large-scale training and inference feature reads"

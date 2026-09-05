@@ -1,0 +1,26 @@
+name: SenseVoice
+description: "Open-source speech model for Mandarin, Cantonese, English, Japanese, and Korean ASR plus language ID, emotion recognition, and audio event detection, served through FunASR and Docker."
+tagline: Multilingual ASR with emotion and event detection
+
+github_url: https://github.com/QwenAudio/SenseVoice
+website_url: https://huggingface.co/spaces/FunAudioLLM/SenseVoice
+docs_url: https://github.com/QwenAudio/SenseVoice
+
+category: Other
+tags: [speech, asr, emotion, audio, multilingual, funasr, python]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Multilingual speech apps often need ASR, language ID, emotion, and audio-event
+  tags from separate models. SenseVoiceSmall does those tasks in one open
+  checkpoint for zh, yue, en, ja, and ko, with FunASR serving, VAD timestamps,
+  and Docker so teams can transcribe and classify audio without stitching
+  Whisper plus extra classifiers.
+
+use_cases:
+  - "Transcribe Mandarin, Cantonese, English, Japanese, or Korean audio with a single SenseVoiceSmall checkpoint"
+  - "Detect spoken language, emotion, and audio events alongside ASR in a call-center or meeting pipeline"
+  - "Serve SenseVoice through FunASR or Docker with GPU or CPU for an OpenAI-compatible speech endpoint"
+  - "Compose SenseVoice with FSMN-VAD and punctuation models for per-sentence timestamps and speaker labels"
