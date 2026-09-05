@@ -1,0 +1,27 @@
+name: husky
+description: Husky is a lightweight npm package that makes Git hooks easy to set up. It runs lint, test, and format checks on commit or push so broken code never lands on shared branches.
+tagline: Git hooks made easy for Node.js projects
+
+github_url: https://github.com/typicode/husky
+website_url: https://typicode.github.io/husky
+docs_url: https://typicode.github.io/husky
+
+install_command: npm install --save-dev husky
+
+category: Dev Tools
+tags: [git, hooks, npm, javascript, linting, ci, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  ML and agent repos often skip local checks until CI fails. Native Git hooks
+  are awkward to version and share. Husky installs commit and push hooks from
+  package.json so lint, typecheck, and test scripts run on every developer
+  machine before the change reaches the remote.
+
+use_cases:
+  - Run ESLint and Prettier on staged files before each commit
+  - Block pushes when unit tests for an agent or API client fail locally
+  - Share the same Git hook setup across a Node.js monorepo via package.json
+  - Gate commits on typecheck for TypeScript LLM tooling packages

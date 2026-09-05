@@ -1,0 +1,28 @@
+name: DevSpace
+description: DevSpace is a CNCF sandbox CLI for developing applications inside Kubernetes. It syncs local files into running pods with hot reload so you skip rebuild-and-redeploy cycles while debugging training or serving stacks.
+tagline: Develop and debug apps directly inside Kubernetes
+
+github_url: https://github.com/devspace-sh/devspace
+website_url: https://devspace.sh
+docs_url: https://devspace.sh/cli/docs/introduction
+
+install_command: brew install devspace
+
+category: Dev Tools
+tags: [kubernetes, developer-experience, hot-reload, cncf, cli, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Rebuilding images and waiting for Kubernetes rollouts makes inner-loop
+  debugging of model servers and agents painfully slow. DevSpace syncs local
+  code into running pods, forwards ports, and streams logs from a single
+  declarative config so the team iterates in-cluster without becoming kubectl
+  experts.
+
+use_cases:
+  - Hot-reload a model-serving container in a remote Kubernetes cluster
+  - Standardize deploy and debug workflows in a shared devspace.yaml
+  - Port-forward and stream logs from inference pods without copying pod IDs
+  - Build images and deploy dependent services with one command

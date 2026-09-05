@@ -1,0 +1,26 @@
+name: tflint
+description: TFLint is a pluggable Terraform linter that finds invalid instance types, deprecated syntax, unused declarations, and cloud-provider mistakes in AWS, Azure, and GCP modules before you apply infrastructure changes.
+tagline: Pluggable linter for Terraform modules
+
+github_url: https://github.com/terraform-linters/tflint
+docs_url: https://github.com/terraform-linters/tflint
+
+install_command: brew install terraform-linters/tap/tflint
+
+category: Dev Tools
+tags: [terraform, linting, iac, aws, gcp, azure, open-source]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  Terraform apply can succeed while still using invalid instance types, unused
+  variables, or deprecated syntax that only fails in a later environment. TFLint
+  checks modules and cloud-provider plugins in CI so those mistakes never reach
+  GPU clusters, vector databases, or model-serving infrastructure.
+
+use_cases:
+  - Lint Terraform modules for GPU node pools before merging a pull request
+  - Catch invalid AWS instance types in training-cluster Terraform
+  - Enforce naming conventions across shared IaC modules with plugins
+  - Run TFLint in GitHub Actions alongside terraform validate
