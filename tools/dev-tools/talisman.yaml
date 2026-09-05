@@ -1,0 +1,28 @@
+name: Talisman
+description: Thoughtworks Talisman is a pre-commit and pre-push hook that scans outgoing changesets for secrets such as tokens, passwords, and private keys. It blocks commits that would leak API keys for LLM providers, cloud accounts, or model registries.
+tagline: Pre-commit hook that blocks secrets from entering git
+
+github_url: https://github.com/thoughtworks/talisman
+website_url: https://thoughtworks.github.io/talisman
+docs_url: https://thoughtworks.github.io/talisman
+
+install_command: brew install talisman
+
+category: Dev Tools
+tags: [git, secrets, pre-commit, security, hooks, scanning, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  LLM API keys, cloud credentials, and private keys still land in git history
+  when developers paste them into notebooks or env files. Rotating after a
+  push is slower than blocking the commit. Talisman inspects the outgoing
+  changeset in a pre-commit or pre-push hook and refuses patterns that look
+  like secrets before they leave the laptop.
+
+use_cases:
+  - Block commits that contain OpenAI, cloud, or database credentials
+  - Run as a pre-push hook so CI never sees leaked private keys
+  - Scan an existing repo history for files that look like secrets
+  - Add a lightweight secret gate alongside detect-secrets or git-secrets

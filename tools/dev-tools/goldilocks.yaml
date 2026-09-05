@@ -1,0 +1,25 @@
+name: Goldilocks
+description: Fairwinds Goldilocks uses the Kubernetes Vertical Pod Autoscaler to recommend CPU and memory requests from live usage. It shows per-namespace right-sizing so GPU and CPU workloads stop over-requesting capacity or getting OOM-killed.
+tagline: Right-size Kubernetes resource requests from live usage
+
+github_url: https://github.com/FairwindsOps/goldilocks
+website_url: https://www.fairwinds.com/goldilocks
+docs_url: https://goldilocks.docs.fairwinds.com
+
+category: Dev Tools
+tags: [kubernetes, vpa, rightsizing, resources, finops, helm, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Teams guess CPU and memory requests for inference and training pods. Too high
+  and the cluster wastes nodes; too low and jobs OOM or throttle. Goldilocks
+  watches Vertical Pod Autoscaler recommendations and presents them per
+  namespace so resource requests match real usage instead of copy-pasted YAML.
+
+use_cases:
+  - Right-size CPU and memory requests for model-serving deployments
+  - Find namespaces that over-request capacity on GPU or CPU nodes
+  - Use VPA recommendations to cut cloud spend without causing OOM kills
+  - Review per-workload resource quality before a cluster capacity upgrade

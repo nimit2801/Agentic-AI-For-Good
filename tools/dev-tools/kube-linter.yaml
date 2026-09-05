@@ -1,0 +1,28 @@
+name: kube-linter
+description: KubeLinter is a static analysis tool for Kubernetes YAML and Helm charts. It checks that workloads follow security and operability best practices, so privileged pods, missing resource limits, and unsafe defaults fail CI before they reach GPU clusters.
+tagline: Lint Kubernetes YAML and Helm charts in CI
+
+github_url: https://github.com/stackrox/kube-linter
+website_url: https://docs.kubelinter.io
+docs_url: https://docs.kubelinter.io
+
+install_command: brew install kube-linter
+
+category: Dev Tools
+tags: [kubernetes, linting, helm, security, static-analysis, ci, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Kubernetes manifests for training and serving can apply while still running as
+  root, skipping resource limits, or mounting the Docker socket. Those issues
+  surface only after a cluster incident. KubeLinter scans YAML and Helm charts
+  against built-in checks so policy failures stop the pipeline instead of
+  production.
+
+use_cases:
+  - Lint Helm charts for model-serving stacks in pull requests
+  - Fail CI when pods request privileged mode or hostPath mounts
+  - Enforce resource requests and limits on GPU training job templates
+  - Add custom checks for organization Kubernetes policy alongside built-in rules
