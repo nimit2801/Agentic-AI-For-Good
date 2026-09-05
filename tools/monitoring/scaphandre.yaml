@@ -1,0 +1,25 @@
+name: Scaphandre
+description: Energy consumption metrology agent that exposes per-process and host power metrics for Linux and Windows. Scaphandre reads RAPL and related sensors and exports Prometheus-compatible metrics so teams can attribute watts to training jobs, agents, and services.
+tagline: Energy metrology agent for process-level watts
+
+github_url: https://github.com/hubblo-org/scaphandre
+website_url: https://hubblo-org.github.io/scaphandre-documentation/
+docs_url: https://hubblo-org.github.io/scaphandre-documentation/
+
+category: Monitoring
+tags: [energy, prometheus, sustainability, rapl, metrics, linux, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Host-level power meters cannot tell which Python training process or agent
+  is burning joules on a shared box. Scaphandre samples RAPL and maps watts
+  to processes, then serves Prometheus metrics so ML ops can see energy per
+  job without a Kubernetes-only exporter.
+
+use_cases:
+  - Export per-process watt metrics from a Linux GPU box into Prometheus
+  - Compare energy of two training runs after a batch-size or precision change
+  - Attribute power on a shared workstation to agents, Jupyter, and idle daemons
+  - Feed sustainability dashboards when Kepler is not running because the host is bare metal

@@ -1,0 +1,26 @@
+name: Ackee
+description: Self-hosted, Node.js analytics tool that counts visits without cookies or personal data. Ackee stores anonymized traffic in MongoDB and exposes a GraphQL API and dashboard for product and docs sites that cannot use Google Analytics.
+tagline: Self-hosted privacy-first analytics for the web
+
+github_url: https://github.com/electerious/Ackee
+website_url: https://ackee.electerious.com
+docs_url: https://docs.ackee.electerious.com
+
+category: Other
+tags: [analytics, privacy, self-hosted, nodejs, graphql, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Teams that want first-party analytics without Google cookies often land on
+  hosted SaaS they cannot keep in-region. Ackee is a small Node server plus
+  tracker script that stores anonymized page views in your MongoDB, with a
+  GraphQL API for custom dashboards, so docs and product sites get counts
+  under your own infra.
+
+use_cases:
+  - Self-host docs analytics for an AI product without cookies or a third-party pixel
+  - Query anonymized page views via GraphQL to build an internal traffic dashboard
+  - Run Ackee on Docker or Vercel next to a marketing site that must stay GDPR-clean
+  - Replace a blocked Google Analytics snippet on an MCP or catalog landing page

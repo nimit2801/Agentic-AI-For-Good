@@ -1,0 +1,26 @@
+name: Velociraptor
+description: Endpoint visibility and digital forensics platform that collects, hunts, and investigates host telemetry at scale. Velociraptor uses VQL to query processes, files, and artifacts across a fleet so security and ML ops teams can hunt leaked keys, GPU miners, and compromised training nodes.
+tagline: Hunt and collect endpoint telemetry with VQL
+
+github_url: https://github.com/Velocidex/velociraptor
+website_url: https://docs.velociraptor.app
+docs_url: https://docs.velociraptor.app
+
+category: Other
+tags: [dfir, endpoint, security, forensics, vql, hunting, open-source]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Compromised GPU nodes, stolen cloud keys, and silent miners are hard to find
+  with SSH and ad-hoc scripts across a heterogeneous fleet. Velociraptor deploys
+  a lightweight client, then runs VQL hunts and artifact collections from a
+  central server so IR and platform teams can ask the same question of every
+  training host and get structured answers.
+
+use_cases:
+  - Hunt leaked API keys and unexpected GPU processes across an ML workstation fleet
+  - Collect forensic artifacts from a compromised training or inference node without rebuilding it
+  - Schedule VQL hunts for crypto-miners or reverse shells on Kubernetes worker hosts
+  - Build an endpoint inventory of CUDA drivers, containers, and SSH keys for incident response
