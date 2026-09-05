@@ -1,0 +1,27 @@
+name: Evidence
+description: "Business intelligence as code: build fast, interactive data visualizations from SQL and markdown that version with git instead of a click-ops BI tool."
+tagline: BI as code with SQL and markdown
+
+github_url: https://github.com/evidence-dev/evidence
+website_url: https://evidence.dev
+docs_url: https://docs.evidence.dev
+install_command: npm install @evidence-dev/evidence
+
+category: Data
+tags: [bi, sql, markdown, javascript, analytics, git, visualization]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Dashboards usually live in a GUI BI tool that cannot be reviewed in git and
+  drifts from the warehouse. Evidence treats reports as SQL plus markdown in
+  a code repo, so data teams render interactive charts from queries, review
+  them in pull requests, and publish static or hosted BI without dragging
+  tiles in a proprietary studio.
+
+use_cases:
+  - "Write markdown reports with SQL queries that render interactive charts for stakeholders"
+  - "Version BI pages in git and review metric changes in pull requests"
+  - "Publish a fast static or hosted data site from warehouse queries without a GUI BI vendor"
+  - "Let analytics engineers own dashboards in the same repo as dbt or SQL models"

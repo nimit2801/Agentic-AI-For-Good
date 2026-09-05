@@ -1,0 +1,25 @@
+name: Lightdash
+description: "Open-source agentic BI that sits on dbt: explore metrics as code, share dashboards, and let analysts ask questions at the speed of the warehouse rather than a semantic-layer GUI."
+tagline: Agentic BI on top of dbt
+
+github_url: https://github.com/lightdash/lightdash
+website_url: https://lightdash.com
+docs_url: https://docs.lightdash.com
+
+category: Data
+tags: [bi, dbt, analytics, metrics, dashboard, self-hosted]
+pricing: freemium
+is_open_source: true
+
+problem_solved: |
+  After dbt models land, teams still rebuild metrics in Looker or Tableau and
+  the two layers drift. Lightdash reads the dbt project as the semantic layer
+  so analysts explore, chart, and share from the same YAML metrics, with a
+  self-hosted or cloud app and an agentic querying path instead of maintaining
+  a second BI model.
+
+use_cases:
+  - "Explore dbt metrics and dimensions in a BI UI without rewriting a LookML layer"
+  - "Share self-serve dashboards that stay in sync with dbt model changes"
+  - "Self-host Lightdash next to a warehouse so analytics stays on your infrastructure"
+  - "Ask natural-language questions against dbt-defined metrics for faster analysis"
