@@ -1,0 +1,25 @@
+name: kube-state-metrics
+description: Prometheus exporter that listens to the Kubernetes API and emits object-state metrics. Expose Deployment, Job, and Node conditions so ML platforms can alert when a training Job fails or a GPU node is NotReady.
+tagline: Kubernetes object metrics for Prometheus
+
+github_url: https://github.com/kubernetes/kube-state-metrics
+website_url: https://github.com/kubernetes/kube-state-metrics
+docs_url: https://github.com/kubernetes/kube-state-metrics
+
+category: Monitoring
+tags: [kubernetes, prometheus, metrics, monitoring, mlops, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Prometheus node metrics do not tell you a Job failed or a Deployment is
+  unavailable. kube-state-metrics turns API objects into time series so ML
+  ops can alert on training Job status, replica counts, and node conditions
+  with the same stack as CPU metrics.
+
+use_cases:
+  - Alert when a Kubernetes Job for model training fails
+  - Graph inference Deployment replica availability in Grafana
+  - Track GPU node Ready and pressure conditions over time
+  - Expose PersistentVolumeClaim status for dataset volumes

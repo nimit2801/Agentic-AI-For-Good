@@ -1,0 +1,27 @@
+name: Cluster API
+description: Kubernetes subproject for declarative cluster lifecycle. Manage create, upgrade, and delete of clusters through CRDs so ML platforms can treat GPU clusters as GitOps objects instead of cloud consoles.
+tagline: Declarative Kubernetes cluster lifecycle via CRDs
+
+github_url: https://github.com/kubernetes-sigs/cluster-api
+website_url: https://cluster-api.sigs.k8s.io
+docs_url: https://cluster-api.sigs.k8s.io/introduction.html
+
+install_command: brew install clusterctl
+
+category: Dev Tools
+tags: [kubernetes, cluster, gitops, devops, mlops, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Standing up and upgrading Kubernetes clusters by clicking cloud consoles
+  does not scale when ML teams need ephemeral GPU clusters. Cluster API
+  models clusters as Kubernetes objects so you can provision, upgrade, and
+  delete them with the same GitOps flow as application workloads.
+
+use_cases:
+  - Provision ephemeral GPU Kubernetes clusters from a management cluster
+  - Upgrade worker node groups for inference without a cloud console
+  - GitOps the lifecycle of training clusters across AWS, Azure, and vSphere
+  - Delete preview clusters automatically after a PR is merged

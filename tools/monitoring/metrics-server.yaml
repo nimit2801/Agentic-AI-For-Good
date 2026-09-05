@@ -1,0 +1,25 @@
+name: metrics-server
+description: Scalable, efficient source of container resource metrics for Kubernetes. Powers kubectl top, HPA, and VPA so inference Deployments can autoscale on CPU and memory without a full Prometheus stack.
+tagline: Resource metrics API for Kubernetes autoscaling
+
+github_url: https://github.com/kubernetes-sigs/metrics-server
+website_url: https://github.com/kubernetes-sigs/metrics-server
+docs_url: https://github.com/kubernetes-sigs/metrics-server
+
+category: Monitoring
+tags: [kubernetes, metrics, autoscaling, monitoring, mlops, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Horizontal Pod Autoscaler and kubectl top need a Metrics API, but running
+  full Prometheus just to scale inference replicas is heavy. metrics-server
+  scrapes kubelets and serves resource metrics so HPA works on CPU and
+  memory out of the box.
+
+use_cases:
+  - Enable kubectl top for GPU node and pod CPU or memory
+  - Autoscale inference Deployments with Horizontal Pod Autoscaler
+  - Feed VPA recommendations for agent worker resource requests
+  - Give kube-capacity utilization numbers on a new cluster
