@@ -1,0 +1,28 @@
+name: kube-score
+description: kube-score is static analysis for Kubernetes object YAML and Helm charts. It scores manifests on reliability and security, catching missing probes, weak NetworkPolicies, and unsafe defaults so model-serving and training workloads do not fail silently after deploy.
+tagline: Static analysis for Kubernetes YAML and Helm charts
+
+github_url: https://github.com/zegl/kube-score
+website_url: https://kube-score.com
+docs_url: https://github.com/zegl/kube-score
+
+install_command: brew install kube-score
+
+category: Dev Tools
+tags: [kubernetes, static-analysis, helm, security, reliability, yaml, ci, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Kubernetes YAML can apply successfully and still be unsafe or unreliable. Missing
+  readiness probes, identical liveness and readiness, or no resource requests cause
+  downtime that kubectl apply never reports. kube-score statically analyzes objects
+  and Helm output, then prints scored recommendations so those issues fail CI before
+  a training job or inference replica goes live.
+
+use_cases:
+  - Score Kubernetes YAML in CI and fail the build on critical reliability findings
+  - Review Helm chart output for missing probes, resource requests, and NetworkPolicies
+  - Catch pods that share liveness and readiness probes before they restart in a loop
+  - Lint model-serving manifests for security and stability before cluster apply
