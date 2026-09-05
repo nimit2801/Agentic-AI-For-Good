@@ -1,0 +1,25 @@
+name: kubespray
+description: Ansible playbooks for production Kubernetes on bare metal or VMs. Installs HA clusters with configurable CNI and addons so GPU labs can run Kubernetes without a managed control plane.
+tagline: Ansible-powered Kubernetes on any infrastructure
+
+github_url: https://github.com/kubernetes-sigs/kubespray
+website_url: https://kubespray.io
+docs_url: https://kubespray.io
+
+category: Dev Tools
+tags: [kubernetes, ansible, cluster, bare-metal, devops, mlops, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Managed Kubernetes is not always an option for on-prem GPU clusters, and
+  kubeadm still leaves networking, HA etcd, and addons as homework. Kubespray
+  packages those into Ansible so you can install a production cluster on
+  existing machines with a repeatable inventory.
+
+use_cases:
+  - Install HA Kubernetes on on-prem GPU servers for training
+  - Choose Calico or Cilium CNI from inventory without rewriting playbooks
+  - Upgrade a bare-metal cluster used for inference without downtime windows
+  - Bootstrap Kubernetes on VMs when a cloud managed control plane is off-limits

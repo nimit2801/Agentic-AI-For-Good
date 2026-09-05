@@ -1,0 +1,26 @@
+name: lazydocker
+description: Terminal UI for Docker and Compose. Browse containers, logs, images, and volumes in a lazygit-style TUI so ML engineers can debug training and inference containers without memorizing docker CLI flags.
+tagline: A lazier way to manage everything Docker
+
+github_url: https://github.com/jesseduffield/lazydocker
+website_url: https://github.com/jesseduffield/lazydocker
+
+install_command: brew install lazydocker
+
+category: Dev Tools
+tags: [docker, tui, cli, containers, devops, mlops, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  docker ps, logs, stats, and compose live in separate commands, so debugging
+  a stuck training container means hopping across flags. lazydocker puts
+  containers, logs, and images in one TUI so you can jump from a failing GPU
+  job to its logs without assembling docker incantations.
+
+use_cases:
+  - Watch GPU training containers and jump into logs when a job OOMs
+  - Inspect docker-compose stacks for local agent and inference services
+  - Prune unused images after repeated model-serving rebuilds
+  - Restart a crash-looping worker container from the TUI

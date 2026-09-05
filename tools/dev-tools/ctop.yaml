@@ -1,0 +1,26 @@
+name: ctop
+description: Top-like TUI for container metrics. Shows CPU, memory, network, and I/O for Docker or runc containers so you can spot a runaway training job without looping docker stats.
+tagline: Top for containers, in a compact TUI
+
+github_url: https://github.com/bcicen/ctop
+website_url: https://bcicen.github.io/ctop/
+
+install_command: brew install ctop
+
+category: Dev Tools
+tags: [docker, tui, containers, metrics, devops, mlops, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  docker stats is a raw stream that is hard to sort and filter when dozens of
+  training and inference containers share a host. ctop gives a top-like view
+  of per-container CPU, memory, and I/O so you can find the noisy neighbor
+  before it starves a GPU job.
+
+use_cases:
+  - Find which container is saturating CPU on a shared training box
+  - Sort running containers by memory while an inference service leaks
+  - Filter Docker hosts to the compose project running an agent stack
+  - Confirm a GPU worker is actually consuming resources after deploy

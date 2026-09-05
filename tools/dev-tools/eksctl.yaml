@@ -1,0 +1,27 @@
+name: eksctl
+description: Official CLI for Amazon EKS. Create, scale, and delete clusters and node groups, including GPU nodes, from one command instead of hand-written CloudFormation.
+tagline: The official CLI for Amazon EKS
+
+github_url: https://github.com/eksctl-io/eksctl
+website_url: https://eksctl.io
+docs_url: https://eksctl.io/introduction/
+
+install_command: brew install eksctl
+
+category: Dev Tools
+tags: [kubernetes, aws, eks, cli, devops, mlops, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Creating an EKS cluster in the AWS console or raw CloudFormation is slow
+  and easy to misconfigure for GPU node groups. eksctl wraps cluster, IAM,
+  and node group lifecycle so ML teams can stand up and tear down EKS
+  environments from a CLI or CI job.
+
+use_cases:
+  - Create an EKS cluster with a GPU node group for model training
+  - Scale inference node groups from CI after a traffic spike
+  - Delete ephemeral EKS clusters used for PR previews of agent stacks
+  - Add a managed node group with spot instances for cheaper batch jobs

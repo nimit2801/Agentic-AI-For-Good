@@ -1,0 +1,27 @@
+name: kops
+description: Production-grade Kubernetes installer for AWS and other clouds. Provisions, upgrades, and manages HA clusters so ML platforms get control planes and GPU node groups without hand-rolled Terraform.
+tagline: Production Kubernetes install, upgrade, and ops
+
+github_url: https://github.com/kubernetes/kops
+website_url: https://kops.sigs.k8s.io/
+docs_url: https://kops.sigs.k8s.io/
+
+install_command: brew install kops
+
+category: Dev Tools
+tags: [kubernetes, aws, cluster, devops, mlops, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Standing up a production Kubernetes cluster on AWS from raw EC2 and IAM is
+  error-prone and slow to upgrade. kops encodes HA control planes, networking,
+  and rolling upgrades so ML platforms can add GPU node groups without
+  reinventing cluster lifecycle.
+
+use_cases:
+  - Provision an HA Kubernetes cluster on AWS for training and serving
+  - Rolling-upgrade a GPU node group without draining the whole cluster
+  - Export cluster config as YAML for GitOps of ML platform infrastructure
+  - Add spot GPU instance groups for cheaper batch training
