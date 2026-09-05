@@ -1,0 +1,28 @@
+name: Katana
+description: Katana is ProjectDiscovery's next-generation crawling and spidering framework. It crawls web apps with a headless or standard engine to collect URLs, forms, and JavaScript endpoints so security and data teams map attack surface and scrape training-site structure without a brittle custom crawler.
+tagline: Next-generation web crawling and spidering framework
+
+github_url: https://github.com/projectdiscovery/katana
+website_url: https://projectdiscovery.io
+docs_url: https://docs.projectdiscovery.io/tools/katana/overview
+
+install_command: brew install katana
+
+category: Dev Tools
+tags: [crawler, recon, security, golang, spider, cli, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Mapping every URL and JS endpoint in front of an AI product usually means a
+  slow browser script that misses APIs. Missed paths hide admin panels and
+  model endpoints. Katana crawls with optional headless Chrome, extracts
+  endpoints from HTML and JavaScript, and feeds other recon tools so the
+  surface is complete before a scan or scrape.
+
+use_cases:
+  - Crawl a web app to collect URLs and forms before a security review
+  - Extract JavaScript endpoints that expose inference or admin APIs
+  - Feed discovered paths into Nuclei or httpx for further probing
+  - Map site structure for dataset collection without a custom scraper

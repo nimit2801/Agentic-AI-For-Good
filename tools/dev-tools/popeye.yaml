@@ -1,0 +1,28 @@
+name: Popeye
+description: Popeye is a Kubernetes cluster sanitizer that scans live resources for misconfigurations, unused objects, and best-practice gaps. It reports pods without limits, stale ReplicaSets, and risky RBAC so ML clusters stay clean instead of accumulating silent waste and exposure.
+tagline: Sanitize live Kubernetes clusters for waste and risk
+
+github_url: https://github.com/derailed/popeye
+website_url: https://popeyecli.io
+docs_url: https://popeyecli.io
+
+install_command: brew install popeye
+
+category: Dev Tools
+tags: [kubernetes, sanitizer, best-practices, cli, rbac, resources, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Live Kubernetes clusters for training and serving accumulate unused PVCs,
+  pods without resource limits, and overly broad Roles that YAML linters never
+  see because they only look at files. Popeye reads the live API, scores
+  resources, and prints sanitizer reports so waste and risky defaults are
+  cleaned up in the running cluster.
+
+use_cases:
+  - Scan a live cluster for pods missing limits, probes, or healthy replicas
+  - Find unused ConfigMaps, Secrets, and PVCs left by failed training jobs
+  - Report risky RBAC bindings before tightening cluster access
+  - Run Popeye in CI against a staging cluster after each GitOps sync

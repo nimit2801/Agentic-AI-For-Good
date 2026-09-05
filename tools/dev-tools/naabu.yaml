@@ -1,0 +1,28 @@
+name: Naabu
+description: Naabu is a fast port scanner written in Go by ProjectDiscovery. It focuses on reliable SYN and CONNECT scanning so recon and ML data teams find open services on hosts discovered by subfinder before they probe HTTP or run vulnerability templates.
+tagline: Fast Go port scanner for attack-surface discovery
+
+github_url: https://github.com/projectdiscovery/naabu
+website_url: https://projectdiscovery.io
+docs_url: https://docs.projectdiscovery.io/tools/naabu/overview
+
+install_command: brew install naabu
+
+category: Dev Tools
+tags: [port-scanner, recon, security, golang, cli, network, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  After subdomain enumeration you still do not know which ports are open on
+  GPU jump hosts or inference VMs. Full nmap on large ranges is slow for
+  everyday recon. Naabu does fast SYN or CONNECT scans and pairs with
+  ProjectDiscovery tools so open services are listed before HTTP probing or
+  vulnerability templates run.
+
+use_cases:
+  - Scan ports on hosts found by subfinder before probing HTTP
+  - Inventory open services on GPU cloud nodes during a security review
+  - Combine with httpx to check which ports speak HTTP or TLS
+  - Run a lightweight port scan in CI against a staging network range

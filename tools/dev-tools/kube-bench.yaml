@@ -1,0 +1,27 @@
+name: kube-bench
+description: Aqua kube-bench checks whether a Kubernetes cluster follows the CIS Kubernetes Benchmark. It runs as a job inside the cluster and reports failed controls so GPU training and inference clusters are not left with default insecure kubelet, API server, or etcd settings.
+tagline: CIS Kubernetes Benchmark checks for your cluster
+
+github_url: https://github.com/aquasecurity/kube-bench
+docs_url: https://github.com/aquasecurity/kube-bench
+
+install_command: brew install kube-bench
+
+category: Dev Tools
+tags: [kubernetes, cis, security, benchmarking, aqua, compliance, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Managed and self-hosted Kubernetes for ML often ships with kubelet anonymous
+  auth, weak file permissions, or etcd exposed. CIS controls are long and easy
+  to skip. kube-bench runs the CIS Kubernetes Benchmark as a job and prints
+  pass/fail so those gaps are visible before a cluster holds training data or
+  model weights.
+
+use_cases:
+  - Audit a GPU Kubernetes cluster against the CIS Kubernetes Benchmark
+  - Run kube-bench as a Job after cluster provisioning in CI or GitOps
+  - Compare control-plane and worker node findings before production cutover
+  - Track CIS pass rate over time as cluster configuration changes
