@@ -1,0 +1,27 @@
+name: Okteto
+description: Develop applications directly inside a Kubernetes cluster. Sync local code to remote pods so ML APIs, agents, and GPU services can be iterated against real cluster resources instead of a laptop-only stack.
+tagline: Inner-loop Kubernetes development for real clusters
+
+github_url: https://github.com/okteto/okteto
+website_url: https://okteto.com
+docs_url: https://www.okteto.com/docs/
+
+install_command: brew install okteto
+
+category: Dev Tools
+tags: [kubernetes, development, devops, remote-dev, mlops, open-source]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Local Docker Compose cannot reproduce GPU nodes, sidecars, or cluster
+  networking that inference and agent services depend on. Okteto syncs your
+  local tree into a remote Kubernetes pod so you iterate against the same
+  cluster your production jobs use.
+
+use_cases:
+  - Hot-reload a FastAPI inference service running on a remote GPU node
+  - Debug an agent worker against in-cluster Redis, queues, and secrets
+  - Replace laptop minikube with a shared dev namespace for ML platform work
+  - Preview pull requests as live Kubernetes environments before merge
