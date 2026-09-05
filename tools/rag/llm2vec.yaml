@@ -1,0 +1,28 @@
+name: LLM2Vec
+description: "Converts decoder-only large language models into bidirectional text encoders via bidirectional attention, masked next-token prediction, and unsupervised contrastive learning, producing dense embeddings for retrieval and similarity search."
+tagline: Turn decoder-only LLMs into powerful text encoders
+
+github_url: https://github.com/McGill-NLP/llm2vec
+website_url: https://mcgill-nlp.github.io/llm2vec/
+docs_url: https://mcgill-nlp.github.io/llm2vec/tutorial
+install_command: pip install llm2vec
+
+category: RAG
+tags: [python, embeddings, rag, encoder, contrastive, retrieval, llm]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Decoder-only LLMs are trained for next-token generation, so they are weak bidirectional
+  encoders for retrieval, clustering, and semantic search. Teams either train a separate
+  embedding model or accept unidirectional representations. LLM2Vec is a three-step recipe
+  that unlocks bidirectional attention, continues training with masked next-token prediction,
+  then applies unsupervised contrastive learning so an existing LLM becomes a competitive
+  dense text encoder without a full embedding-model rebuild.
+
+use_cases:
+  - "Convert an open decoder-only LLM into a dense encoder and index documents for RAG retrieval"
+  - "Train unsupervised contrastive embeddings from an LLM checkpoint for semantic search and clustering"
+  - "Benchmark LLM-derived encoders against dedicated embedding models on retrieval and NLU tasks"
+  - "Swap a frozen LLM2Vec encoder into an existing vector search pipeline without changing the rest of the stack"

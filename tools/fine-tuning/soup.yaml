@@ -1,0 +1,27 @@
+name: Soup
+description: "A YAML-first CLI for the post-training stack: it doctors data, picks a method, writes configs, and fine-tunes LLMs including layer streaming so an 8B model can train on a 4 GB laptop GPU."
+tagline: Fine-tune LLMs from one YAML, even on a 4 GB GPU
+
+github_url: https://github.com/MakazhanAlpamys/Soup
+website_url: https://trysoup.dev
+docs_url: https://trysoup.dev/docs/getting-started
+install_command: pip install "soup-cli[train]"
+
+category: Fine-tuning
+tags: [python, fine-tuning, lora, dpo, yaml, llm, cli, quantization]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Fine-tuning still means juggling Axolotl, Unsloth, or LLaMA-Factory configs, guessing
+  learning rates, and failing when the base model does not fit in VRAM. Soup writes the
+  config from your data, selects SFT/DPO/ORPO/SimPO/KTO, gates every save with a ship
+  verdict, and can stream frozen layers from RAM or NVMe so Llama-3.1-8B LoRA trains on
+  a 4 GB card instead of requiring a datacenter GPU.
+
+use_cases:
+  - "Fine-tune Llama or Qwen with LoRA from a single soup.yaml on a laptop GPU using layer streaming"
+  - "Migrate an Axolotl or LLaMA-Factory config into Soup and run SFT or DPO without rewriting hyperparameters"
+  - "Run soup data doctor and soup ship to catch silent training failures and refuse a model that breaks general knowledge"
+  - "Serve adapters with an OpenAI-compatible Soup server after training, including GGUF and vLLM export paths"
