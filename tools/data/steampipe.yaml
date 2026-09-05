@@ -1,0 +1,27 @@
+name: Steampipe
+description: Steampipe lets you live-query APIs, cloud accounts, SaaS, and code with SQL and no ETL database. DevOps and ML platform teams join AWS, GitHub, Kubernetes, and Slack tables to answer inventory, cost, and security questions that would otherwise need custom scripts.
+tagline: Live SQL queries over APIs, cloud, and code
+
+github_url: https://github.com/turbot/steampipe
+website_url: https://steampipe.io
+docs_url: https://steampipe.io/docs
+
+install_command: brew install steampipe
+
+category: Data
+tags: [sql, cloud, inventory, devops, postgres, plugins, open-source]
+pricing: freemium
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Inventory for GPU instances, IAM users, GitHub repos, and Kubernetes pods
+  lives in many APIs. Writing a one-off Python client for each is slow and
+  stale by the next day. Steampipe exposes those APIs as Postgres foreign
+  tables so you query live cloud and SaaS state with SQL instead of ETL.
+
+use_cases:
+  - Query AWS EC2 GPU instances and their tags with SQL instead of boto3
+  - Join GitHub repos and cloud resources to find unowned ML infrastructure
+  - Inventory Kubernetes pods and node capacity across clusters from one prompt
+  - Build compliance views over IAM, S3, and GitHub without a warehouse

@@ -1,0 +1,26 @@
+name: ScoutSuite
+description: NCC Group ScoutSuite is a multi-cloud security auditing tool that collects configuration data from AWS, Azure, GCP, Alibaba Cloud, and Oracle Cloud, then produces an HTML report of risks. It helps teams review IAM, storage, and network exposure on accounts that host training data and model APIs.
+tagline: Multi-cloud security auditing with HTML reports
+
+github_url: https://github.com/nccgroup/ScoutSuite
+docs_url: https://github.com/nccgroup/ScoutSuite
+
+install_command: pip install scoutsuite
+
+category: Dev Tools
+tags: [cloud-security, aws, azure, gcp, auditing, python, open-source]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Cloud security reviews for ML accounts often dump CLI output that nobody
+  reads. ScoutSuite enumerates services across AWS, Azure, GCP, and others,
+  then writes a browsable HTML report of IAM, storage, and network findings
+  so reviewers see exposure without assembling screenshots from five consoles.
+
+use_cases:
+  - Generate an HTML audit of AWS accounts used for GPU training
+  - Compare IAM and storage findings across Azure and GCP in one report
+  - Review public buckets and overly broad roles before a pentest
+  - Snapshot cloud configuration for a security review of an ML platform
