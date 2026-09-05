@@ -1,0 +1,27 @@
+name: kube-hunter
+description: Aqua kube-hunter hunts for security weaknesses in Kubernetes clusters from remote, internal, or in-cluster network positions. It reports open dashboards, unauthenticated APIs, and exposed kubelets so ML clusters are not left reachable from the office network or the public internet.
+tagline: Hunt for security weaknesses in Kubernetes clusters
+
+github_url: https://github.com/aquasecurity/kube-hunter
+docs_url: https://github.com/aquasecurity/kube-hunter
+
+install_command: pip install kube-hunter
+
+category: Dev Tools
+tags: [kubernetes, security, pentest, aqua, hunting, network, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  CIS YAML checks do not show what an attacker on the same network can reach.
+  Open dashboards, anonymous kubelets, and unauthenticated API servers still
+  appear on GPU clusters. kube-hunter probes from remote or inside the cluster
+  and lists active weaknesses so those exposures are fixed before they hold
+  training data.
+
+use_cases:
+  - Probe a Kubernetes API from the office network for anonymous access
+  - Run an in-cluster hunt for exposed kubelets and dashboards
+  - Validate that a GPU cluster is not reachable from an untrusted VLAN
+  - Generate a hunter report before an external pentest of ML infrastructure
