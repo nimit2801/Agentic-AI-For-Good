@@ -1,0 +1,27 @@
+name: Collectd
+description: System statistics collection daemon that gathers CPU, memory, disk, network, and plugin metrics and ships them to Graphite, Prometheus, or other backends. Collectd is a long-standing host agent for machines that are not Kubernetes pods.
+tagline: Host metrics collection daemon with a large plugin set
+
+github_url: https://github.com/collectd/collectd
+website_url: https://collectd.org
+docs_url: https://collectd.org/documentation.shtml
+
+install_command: brew install collectd
+
+category: Monitoring
+tags: [metrics, monitoring, daemon, linux, plugins, observability, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Bare-metal GPU boxes and VMs still need CPU, disk, and interface metrics
+  when they are not in a Prometheus-operator cluster. Collectd runs as a
+  small daemon with dozens of plugins and forwards samples to Graphite,
+  InfluxDB, or write_prometheus so classic hosts stay observable.
+
+use_cases:
+  - Collect CPU, memory, and disk metrics from bare-metal GPU training hosts
+  - Forward host stats from VMs into Graphite or Prometheus without a full exporter stack
+  - Use plugins for NVIDIA, network, and process stats on shared workstations
+  - Keep long-running inference appliances instrumented when Kepler is not installed

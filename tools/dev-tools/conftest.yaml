@@ -1,0 +1,27 @@
+name: Conftest
+description: Policy tests for structured config using Open Policy Agent Rego. Conftest checks Kubernetes YAML, Terraform JSON, Dockerfiles, and other structured files in CI so IaC for GPU clusters and model-serving stacks fails on policy, not in production.
+tagline: Rego tests for Kubernetes, Terraform, and other config
+
+github_url: https://github.com/open-policy-agent/conftest
+website_url: https://www.conftest.dev
+docs_url: https://www.conftest.dev/install/
+
+install_command: brew install conftest
+
+category: Dev Tools
+tags: [policy-as-code, opa, rego, kubernetes, terraform, ci, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Checkov and similar scanners ship built-in policies, but custom rules for
+  "no public GPU nodes" or "inference pods must set limits" need a unit-test
+  workflow. Conftest runs Rego against YAML, JSON, and HCL so platform teams
+  version policy tests next to the manifests they protect.
+
+use_cases:
+  - Unit-test Kubernetes manifests so inference pods cannot omit resource limits
+  - Fail CI when Terraform JSON would create a public training subnet
+  - Share Rego policies across Helm charts and Kustomize overlays
+  - Verify Dockerfiles and compose files against org-wide security baselines
