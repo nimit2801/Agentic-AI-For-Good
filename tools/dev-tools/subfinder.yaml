@@ -1,0 +1,27 @@
+name: subfinder
+description: subfinder is a fast passive subdomain enumeration tool from ProjectDiscovery. It queries dozens of sources without sending traffic to the target, so security and ML data teams map attack surface and related hostnames before active scans or dataset collection.
+tagline: Fast passive subdomain enumeration
+
+github_url: https://github.com/projectdiscovery/subfinder
+website_url: https://projectdiscovery.io
+docs_url: https://docs.projectdiscovery.io/tools/subfinder/overview
+
+install_command: brew install subfinder
+
+category: Dev Tools
+tags: [recon, subdomains, osint, security, golang, cli, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Finding every hostname in front of an AI product is slow if you brute-force DNS
+  or hit the target. Missed subdomains hide staging model APIs and forgotten GPU
+  dashboards. subfinder enumerates names passively from public sources so teams
+  inventory attack surface without announcing a scan to production.
+
+use_cases:
+  - Map subdomains for an AI SaaS before a security review or bug bounty
+  - Discover staging inference endpoints that should not be public
+  - Feed hostname lists into Nuclei or httpx for further probing
+  - Build an asset inventory from certificates and passive DNS without active scans
