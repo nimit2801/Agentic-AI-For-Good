@@ -1,0 +1,26 @@
+name: VictoriaLogs
+description: Fast logs database from the VictoriaMetrics team that ingests and queries terabytes of logs with LogsQL. VictoriaLogs is a lightweight Loki alternative for training-job logs, inference traces, and agent stdout without the operational cost of Elasticsearch.
+tagline: Fast, easy logs database for terabyte-scale ingest
+
+github_url: https://github.com/VictoriaMetrics/VictoriaLogs
+website_url: https://docs.victoriametrics.com/victorialogs/
+docs_url: https://docs.victoriametrics.com/victorialogs/
+
+category: Monitoring
+tags: [logs, observability, loki-alternative, logsql, monitoring, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Training jobs, agents, and inference servers emit huge unstructured logs that
+  Elasticsearch is expensive to run and Loki can struggle to query at terabyte
+  scale. VictoriaLogs stores logs with high compression, accepts Elasticsearch,
+  Loki, Datadog, and syslog protocols, and answers LogsQL filters so ML ops can
+  debug GPU OOMs and agent traces without a heavy ELK stack.
+
+use_cases:
+  - Store and search multi-terabyte training and inference logs with LogsQL instead of Elasticsearch
+  - Ingest Loki and Elasticsearch-compatible log streams from Kubernetes ML workloads
+  - Debug GPU OOM and agent failures by filtering structured fields across days of logs
+  - Run a single-node or clustered logs backend beside VictoriaMetrics for full observability
