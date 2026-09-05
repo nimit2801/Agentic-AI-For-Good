@@ -1,0 +1,26 @@
+name: MISP
+description: Open-source threat intelligence platform for collecting, storing, and sharing security indicators and malware details. MISP helps SOC and ML platform teams exchange IOCs, correlate incidents, and keep blocklists current without a closed intel vendor.
+tagline: Open threat intelligence sharing platform
+
+github_url: https://github.com/MISP/MISP
+website_url: https://www.misp-project.org
+docs_url: https://www.misp-project.org/documentation/
+
+category: Other
+tags: [threat-intelligence, security, ioc, sharing, malware, open-source]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  AI platforms get probed, scraped, and abused with the same IPs, keys, and
+  malware families, but intel stays in tickets and vendor PDFs. MISP stores
+  structured events and attributes, shares them with trusted communities, and
+  feeds blocklists so GPU clusters and public APIs can block known bad
+  indicators instead of rediscovering them per incident.
+
+use_cases:
+  - Share IOCs for GPU-node malware and crypto-miners with a trusted security community
+  - Correlate phishing and API-abuse events against a structured MISP attribute graph
+  - Feed blocklists for inference endpoints from MISP events instead of ad-hoc spreadsheets
+  - Store malware samples and sightings from training-cluster incidents for later hunts
