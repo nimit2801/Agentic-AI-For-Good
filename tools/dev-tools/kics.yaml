@@ -1,0 +1,28 @@
+name: KICS
+description: Checkmarx KICS (Keep Infrastructure as Code Secure) scans Terraform, Kubernetes, Docker, CloudFormation, Ansible, Helm, and OpenAPI for vulnerabilities, compliance gaps, and misconfigurations. It runs in CI so IaC for GPU clusters and model-serving stacks is blocked before insecure defaults reach production.
+tagline: Scan IaC for vulnerabilities and misconfigurations
+
+github_url: https://github.com/Checkmarx/kics
+website_url: https://kics.io
+docs_url: https://docs.kics.io
+
+install_command: brew install kics
+
+category: Dev Tools
+tags: [security, iac, terraform, kubernetes, docker, scanning, policy-as-code, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Infrastructure-as-code for AI stacks often includes public buckets, open security
+  groups, privileged Kubernetes pods, and hardcoded secrets. Reviewers miss these
+  across Terraform, Helm, and Docker at once. KICS queries thousands of built-in
+  checks against those files in CI so misconfigurations fail the build instead of
+  shipping to GPU clusters.
+
+use_cases:
+  - Scan Terraform for GPU cluster IAM, networking, and storage misconfigurations
+  - Detect privileged containers and weak RBAC in Kubernetes and Helm charts
+  - Flag secrets and unsafe defaults in Dockerfiles used for training images
+  - Enforce CIS and custom queries across CloudFormation and Ansible in pull requests

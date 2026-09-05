@@ -1,0 +1,25 @@
+name: GlitchTip
+description: GlitchTip is an MIT-licensed, Sentry-compatible error tracking platform for self-hosting or cloud. Apps keep existing Sentry SDKs and change only the DSN, so AI services get crash reports, uptime checks, and performance data without a proprietary backend.
+tagline: Open-source Sentry-compatible error tracking
+
+website_url: https://glitchtip.com
+docs_url: https://glitchtip.com/documentation
+
+category: Monitoring
+tags: [error-tracking, monitoring, sentry-compatible, self-hosted, django, open-source]
+pricing: freemium
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  LLM apps fail in production with stack traces that live in vendor dashboards
+  teams cannot self-host cheaply after Sentry relicensed. GlitchTip accepts the
+  same Sentry SDK events, stores them in Postgres, and adds uptime checks so
+  inference APIs and agent workers report crashes without a proprietary backend
+  or a 16 GB self-hosted Sentry stack.
+
+use_cases:
+  - Self-host error tracking for inference APIs using existing Sentry SDKs
+  - Capture stack traces from agent workers and group duplicates for triage
+  - Run uptime checks on model-serving endpoints alongside error events
+  - Keep crash data in your own Postgres instead of a proprietary SaaS backend

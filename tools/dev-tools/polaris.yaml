@@ -1,0 +1,28 @@
+name: Polaris
+description: Fairwinds Polaris audits Kubernetes workloads against reliability, security, and efficiency best practices. It scores clusters and YAML for missing resource limits, privileged containers, and unsafe probes so GPU training and inference clusters fail CI before they waste capacity or leak credentials.
+tagline: Audit Kubernetes clusters for reliability and security
+
+github_url: https://github.com/FairwindsOps/polaris
+website_url: https://www.fairwinds.com/polaris
+docs_url: https://polaris.docs.fairwinds.com
+
+install_command: brew install polaris
+
+category: Dev Tools
+tags: [kubernetes, security, best-practices, auditing, ci, yaml, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Kubernetes YAML for training jobs and model servers often ships without CPU or memory
+  limits, with privileged pods, or with probes that never catch a hung GPU process.
+  Those configs reach production because review cannot score every chart. Polaris
+  checks manifests and live clusters against built-in policies so unsafe workloads
+  fail CI instead of burning GPUs or exposing the cluster.
+
+use_cases:
+  - Score Kubernetes manifests in pull requests before deploying GPU training jobs
+  - Fail CI when pods lack resource limits, readiness probes, or run as root
+  - Audit a live cluster for privileged containers and insecure securityContext settings
+  - Enforce efficiency and reliability policies on Helm charts for model-serving stacks
