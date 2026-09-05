@@ -1,0 +1,28 @@
+name: Prowler
+description: Prowler is an open-source cloud security platform that audits AWS, Azure, GCP, Kubernetes, and M365 against hundreds of checks. It automates CIS, ISO, and custom assessments so GPU accounts and model-serving projects are not left with public buckets, open security groups, or unused IAM keys.
+tagline: Multi-cloud security assessments and compliance checks
+
+github_url: https://github.com/prowler-cloud/prowler
+website_url: https://prowler.com
+docs_url: https://docs.prowler.com
+
+install_command: brew install prowler
+
+category: Dev Tools
+tags: [cloud-security, aws, azure, gcp, compliance, cis, auditing, open-source]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Cloud accounts that host training data and inference APIs drift from CIS
+  baselines. Console clicking cannot cover hundreds of AWS, Azure, and GCP
+  controls. Prowler runs those checks as CLI or pipeline jobs and reports
+  failed findings so public buckets, open security groups, and stale keys are
+  fixed before an incident.
+
+use_cases:
+  - Audit AWS accounts that hold GPU clusters against CIS and custom checks
+  - Scan Azure and GCP projects used for model training in the same run
+  - Fail CI when a new account is missing CloudTrail, encryption, or MFA
+  - Export findings for incident response after a suspected cloud misconfig

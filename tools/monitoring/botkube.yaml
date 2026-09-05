@@ -1,0 +1,26 @@
+name: Botkube
+description: Botkube is a Kubernetes monitoring app that sends cluster events, kubectl-style debugging, and best-practice recommendations into Slack, Discord, or Mattermost. Platform teams watch failing training jobs and crashing inference pods in chat without hopping into a dashboard.
+tagline: Kubernetes monitoring and debugging in Slack
+
+github_url: https://github.com/kubeshop/botkube
+website_url: https://botkube.io
+docs_url: https://docs.botkube.io
+
+category: Monitoring
+tags: [kubernetes, slack, monitoring, chatops, alerting, debugging, open-source]
+pricing: freemium
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  CrashLoopBackOff on an inference Deployment is easy to miss until users
+  complain. Dashboards are another tab; chat is where the team already is.
+  Botkube watches Kubernetes events, posts them to Slack or Discord, and
+  lets you run allowed kubectl-style actions from chat so GPU jobs get
+  attention when they fail.
+
+use_cases:
+  - Alert Slack when a training Job or inference Deployment crash-loops
+  - Run allowed kubectl get and describe from chat during an incident
+  - Recommend Kubernetes best practices on noisy or misconfigured workloads
+  - Route namespace events for ML platform teams without extra dashboards
