@@ -1,0 +1,26 @@
+name: Overmind
+description: Process manager for Procfile apps that runs in tmux. Start API, worker, and watcher processes in one command so local ML agent stacks stay inspectable instead of hidden behind a daemon.
+tagline: Procfile process manager built on tmux
+
+github_url: https://github.com/DarthSim/overmind
+website_url: https://github.com/DarthSim/overmind
+
+install_command: brew install overmind
+
+category: Dev Tools
+tags: [procfile, tmux, process-manager, devops, local-dev, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Foreman-style process managers hide logs behind a multiplexer you cannot
+  attach to. Overmind runs each Procfile process in a tmux pane so you can
+  jump into the inference API or the agent worker, restart one process, and
+  keep the rest of the local stack running.
+
+use_cases:
+  - Run API, worker, and Redis-sidecar processes from a Procfile in tmux
+  - Restart a crashed local agent worker without killing the web process
+  - Inspect live logs of an embedding worker in its own tmux pane
+  - Share a local ML stack session with a teammate over tmux

@@ -1,0 +1,24 @@
+name: descheduler
+description: Kubernetes descheduler that evicts pods based on policy so clusters rebalance after scale-up, node drain, or topology changes. Useful when training Jobs and inference pods pack unevenly across GPU nodes.
+tagline: Evict pods so Kubernetes clusters rebalance
+
+github_url: https://github.com/kubernetes-sigs/descheduler
+website_url: https://github.com/kubernetes-sigs/descheduler
+docs_url: https://github.com/kubernetes-sigs/descheduler
+
+category: Dev Tools
+tags: [kubernetes, scheduling, devops, mlops, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  kube-scheduler only places new pods. After nodes scale or drain, training
+  Jobs and inference replicas stay stuck on hot GPU nodes. The descheduler
+  evicts according to policy so the scheduler can pack workloads again.
+
+use_cases:
+  - Evict pods from overutilized GPU nodes after a training burst
+  - Spread inference replicas after a node pool scales up
+  - Remove pods that violate anti-affinity after topology changes
+  - Rebalance agent worker Deployments following a cluster upgrade
