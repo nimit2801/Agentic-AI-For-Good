@@ -1,0 +1,27 @@
+name: Anserini
+description: Anserini is a Lucene toolkit for reproducible information retrieval research. It bridges academic IR experiments and production search with Lucene-based indexing, retrieval, and evaluation on standard collections, including BM25 and learned sparse methods used as first-stage retrievers in RAG pipelines.
+tagline: Lucene toolkit for reproducible information retrieval
+
+github_url: https://github.com/castorini/anserini
+website_url: http://anserini.io/
+docs_url: https://github.com/castorini/anserini
+
+category: RAG
+tags: [java, lucene, retrieval, ir, bm25, sparse, rag, search]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Academic IR papers and production Lucene search often live in different worlds, so
+  reproducing BM25 or learned-sparse baselines is painful. Anserini sits on Apache Lucene
+  with a fatjar CLI, prebuilt indexes, and evaluation tooling so researchers and RAG
+  engineers can run the same first-stage retrieval stack that Pyserini wraps in Python,
+  without assembling Lucene indexing, topics, and qrels from scratch.
+
+use_cases:
+  - Index a document collection with Lucene and run BM25 retrieval from a single fatjar
+  - Reproduce TREC and MS MARCO ranking experiments with bundled topics and qrels
+  - Provide a Lucene first-stage retriever that Pyserini and RAG pipelines can call
+  - Evaluate learned sparse retrieval methods against classic lexical baselines
+  - Spin up a REST search service over a prebuilt Anserini index for agent workflows

@@ -1,0 +1,29 @@
+name: FastGraphRAG
+description: Fast GraphRAG is a promptable graph RAG framework for interpretable, agent-driven retrieval. It builds and incrementally updates a knowledge graph, explores it with PageRank, and runs at a fraction of Microsoft GraphRAG cost while remaining fully asynchronous and typed.
+tagline: Cheap, incremental graph RAG with PageRank exploration
+
+github_url: https://github.com/circlemind-ai/fast-graphrag
+website_url: https://circlemind.co
+docs_url: https://github.com/circlemind-ai/fast-graphrag
+
+install_command: pip install fast-graphrag
+
+category: RAG
+tags: [python, rag, knowledge-graph, graphrag, pagerank, agents, retrieval]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Classic GraphRAG is expensive and slow to index, and vector RAG hides why a chunk was
+  retrieved. Fast GraphRAG builds a queryable knowledge graph with domain prompts and
+  entity types, updates it incrementally, and explores it with PageRank so answers stay
+  interpretable. Reported indexing on a novel costs about 6x less than Microsoft GraphRAG,
+  which matters when the corpus keeps growing.
+
+use_cases:
+  - Index a long narrative or corpus into a knowledge graph with custom entity types
+  - Answer multi-hop questions by exploring entity relations instead of vector chunks
+  - Incrementally insert new documents without rebuilding the entire graph
+  - Debug retrieval by inspecting the graph of characters, places, and events
+  - Drop graph RAG into an existing agent pipeline with a typed async Python API
