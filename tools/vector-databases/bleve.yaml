@@ -1,0 +1,26 @@
+name: Bleve
+description: "A Go indexing library for full-text, numeric, geo-spatial, and vector search with a single API, used to embed hybrid retrieval inside Go services without standing up a separate search cluster."
+tagline: Text, geo, and vector indexing for Go
+
+github_url: https://github.com/blevesearch/bleve
+docs_url: https://blevesearch.com/
+install_command: go install github.com/blevesearch/bleve/v2/cmd/bleve@latest
+
+category: Vector DB
+tags: [go, search, vector, full-text, indexing, hybrid, geo]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Go services that need search often add Elasticsearch or a remote vector database just
+  to index text and embeddings, adding ops cost and latency. Bleve is an embeddable Go
+  library that indexes text, numbers, geo, and vectors in-process so you can run hybrid
+  keyword-plus-vector retrieval next to the application without operating a separate
+  search cluster.
+
+use_cases:
+  - "Embed full-text and vector search inside a Go API so RAG or product search stays in-process"
+  - "Build hybrid keyword plus kNN retrieval over documents stored with Bleve indexes"
+  - "Index geo and numeric fields alongside embeddings for location-aware search in Go services"
+  - "Prototype search locally with the bleve CLI, then ship the same index format in production"

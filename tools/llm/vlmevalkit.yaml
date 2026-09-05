@@ -1,0 +1,26 @@
+name: VLMEvalKit
+description: "Open-source toolkit for evaluating large vision-language models with one-command runs across 220-plus LMMs and 80-plus benchmarks, powering the OpenVLM leaderboard with generation-based scoring."
+tagline: One-command evaluation for vision-language models
+
+github_url: https://github.com/open-compass/VLMEvalKit
+website_url: https://huggingface.co/spaces/opencompass/open_vlm_leaderboard
+docs_url: https://github.com/open-compass/VLMEvalKit
+
+category: LLM
+tags: [python, evaluation, vlm, multimodal, benchmark, leaderboard, llm]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Comparing vision-language models means cloning a different eval repo per benchmark,
+  preparing datasets, and reconciling incompatible metrics. VLMEvalKit unifies 80-plus
+  multimodal benchmarks and 220-plus models behind one command, with generation-based
+  scoring, exact match and LLM answer extraction, plus distributed inference via vLLM
+  or LMDeploy so labs can reproduce OpenVLM leaderboard numbers without a custom harness.
+
+use_cases:
+  - "Run one-command eval of a new VLM on MMBench, MMMU, MathVista, OCRBench, and MMVet"
+  - "Compare open-source and API multimodal models on the OpenVLM leaderboard protocol"
+  - "Add a custom VLM to VLMEvalKit and submit results for the public OpenVLM leaderboard"
+  - "Speed up large or thinking-mode models with multi-node inference through vLLM or LMDeploy"
