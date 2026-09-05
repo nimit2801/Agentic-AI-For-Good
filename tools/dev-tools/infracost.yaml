@@ -1,0 +1,28 @@
+name: Infracost
+description: Open-source CLI that estimates cloud costs from Terraform, Terragrunt, Pulumi, and OpenTofu plan diffs in pull requests. Infracost shows engineers and AI coding agents the dollar impact of IaC changes before merge, so GPU clusters and model-serving stacks stay on budget.
+tagline: Cloud cost estimates for Terraform in pull requests
+
+github_url: https://github.com/infracost/infracost
+website_url: https://infracost.io
+docs_url: https://www.infracost.io/docs/
+
+install_command: brew install infracost
+
+category: Dev Tools
+tags: [finops, terraform, iac, cloud-cost, ci-cd, open-source]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  GPU nodes, vector databases, and model-serving stacks are easy to over-provision
+  in Terraform, and cost only shows up on the cloud bill after apply. Infracost
+  parses plan JSON, prices resources against cloud catalogs, and posts a PR comment
+  with the monthly delta so engineers and coding agents catch a $10k GPU mistake
+  before it ships.
+
+use_cases:
+  - Comment monthly cost deltas on Terraform PRs that add GPU node pools or inference autoscaling
+  - Compare AWS, GCP, and Azure prices for the same training cluster before choosing a region
+  - Block CI when an IaC change would raise monthly spend above a FinOps threshold
+  - Give AI coding agents cost context so generated Terraform does not silently add expensive SKUs

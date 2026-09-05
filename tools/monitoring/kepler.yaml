@@ -1,0 +1,27 @@
+name: Kepler
+description: Kubernetes-based Efficient Power Level Exporter that reports energy consumption at container, pod, and node level as Prometheus metrics. Kepler uses eBPF and RAPL to estimate watts so ML teams can track GPU and CPU energy of training and inference workloads.
+tagline: Prometheus exporter for Kubernetes energy use
+
+github_url: https://github.com/sustainable-computing-io/kepler
+website_url: https://sustainable-computing.io
+docs_url: https://sustainable-computing.io
+
+install_command: helm install kepler oci://quay.io/sustainable_computing_io/charts/kepler --namespace kepler --create-namespace
+
+category: Monitoring
+tags: [energy, kubernetes, prometheus, ebpf, sustainability, gpu, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Cloud bills show dollars, not watts, so teams cannot tell which training job
+  or inference pod is burning energy. Kepler estimates power at node, pod, and
+  container granularity from eBPF and RAPL, then exports Prometheus metrics so
+  ML ops can attribute GPU and CPU joules to workloads and cut waste.
+
+use_cases:
+  - Export per-pod watt metrics for GPU training jobs into Prometheus and Grafana
+  - Attribute cluster energy to inference vs batch so FinOps and sustainability reports match
+  - Alert when a runaway agent or training pod spikes node power beyond a budget
+  - Compare energy of model-serving deployments after a quantization or batch-size change

@@ -1,0 +1,28 @@
+name: Checkov
+description: Policy-as-code scanner that finds misconfigurations, CVEs, and secrets in Terraform, CloudFormation, Kubernetes, Helm, Docker, and serverless templates before they reach production. Checkov runs in CI so GPU clusters, vector databases, and model-serving stacks are not deployed with open security groups or leaked keys.
+tagline: Prevent IaC misconfigurations and secrets before deploy
+
+github_url: https://github.com/bridgecrewio/checkov
+website_url: https://www.checkov.io
+docs_url: https://www.checkov.io/1.Welcome/What%20is%20Checkov.html
+
+install_command: pip install checkov
+
+category: Dev Tools
+tags: [security, iac, terraform, kubernetes, policy-as-code, scanning, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  ML infrastructure YAML and Terraform often ship with public buckets, 0.0.0.0
+  security groups, privileged pods, and hardcoded API keys. Those land in GPU
+  clusters because review cannot catch every graph. Checkov scans IaC, images,
+  and packages against hundreds of built-in policies in CI so misconfigurations
+  fail the build instead of production.
+
+use_cases:
+  - Scan Terraform for GPU cluster networking, IAM, and storage misconfigurations in pull requests
+  - Fail CI when Kubernetes manifests grant privileged containers or open ClusterRoles
+  - Detect secrets and CVE-laden base images in Dockerfiles used for training jobs
+  - Enforce CIS and custom policies across Helm charts for model-serving stacks
