@@ -1,0 +1,28 @@
+name: EvalPlus
+description: EvalPlus is a rigorous evaluation framework for LLM-generated code. It extends HumanEval and MBPP with extra tests (HumanEval+ and MBPP+) plus EvalPerf efficiency scoring so labs can catch false-pass solutions that official tests miss, used by Llama, Qwen, DeepSeek, and other coding models.
+tagline: Stricter HumanEval and MBPP tests for LLM-generated code
+
+github_url: https://github.com/evalplus/evalplus
+website_url: https://evalplus.github.io
+docs_url: https://github.com/evalplus/evalplus
+
+install_command: pip install evalplus
+
+category: LLM
+tags: [python, llm, evaluation, codegen, humaneval, mbpp, benchmarks]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Stock HumanEval and MBPP tests are thin, so coding models can pass with buggy or
+  inefficient solutions. EvalPlus adds large extra test suites (HumanEval+, MBPP+) and
+  EvalPerf efficiency scoring, with one-command generation and evaluation across vLLM
+  and other backends, so labs stop overestimating code quality from the original oracles.
+
+use_cases:
+  - Score a coding model on HumanEval+ instead of the original 164-test HumanEval set
+  - Compare pass rates on MBPP+ after filtering broken tasks from the base MBPP suite
+  - Measure code efficiency with EvalPerf rather than correctness alone
+  - Run generation, post-processing, and evaluation in one command across vLLM backends
+  - Benchmark new coder models against the public EvalPlus leaderboard

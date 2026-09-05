@@ -1,0 +1,29 @@
+name: Inspect AI
+description: Inspect is an LLM evaluation framework from the UK AI Security Institute. It covers prompt engineering, tool use, multi-turn dialog, and model-graded scoring, with 200-plus built-in evals and a Python API so labs can run rigorous, reproducible model assessments without assembling custom harnesses.
+tagline: UK AISI framework for large language model evaluations
+
+github_url: https://github.com/UKGovernmentBEIS/inspect_ai
+website_url: https://inspect.aisi.org.uk/
+docs_url: https://inspect.aisi.org.uk/
+
+install_command: pip install inspect-ai
+
+category: LLM
+tags: [python, llm, evaluation, safety, scoring, agents, benchmarks]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Serious LLM evals need more than a chat loop. Teams must score tool use, multi-turn
+  dialog, and model-graded tasks across many models, then inspect traces. Inspect AI
+  gives a shared Python framework, CLI, and viewer from the UK AI Security Institute,
+  plus 200-plus ready evals, so safety and quality teams can run comparable assessments
+  without writing a one-off harness for every new elicitation or scoring technique.
+
+use_cases:
+  - Run 200-plus prebuilt Inspect evals against any supported model from a single CLI
+  - Score multi-turn tool-using agents with model-graded rubrics and trace inspection
+  - Compare prompt variants and elicitation strategies with a shared evaluation dataset
+  - Publish custom eval packages that other labs can install and rerun
+  - Track safety and capability regressions as models and system prompts change

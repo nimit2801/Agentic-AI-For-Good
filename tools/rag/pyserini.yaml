@@ -1,0 +1,29 @@
+name: Pyserini
+description: Pyserini is a Python toolkit for reproducible information retrieval with sparse Lucene/Anserini indexes and dense Faiss embeddings. It ships prebuilt indexes, queries, qrels, and evaluation scripts so RAG teams can run first-stage retrieval on standard collections without rebuilding IR plumbing.
+tagline: Python IR toolkit for sparse and dense first-stage retrieval
+
+github_url: https://github.com/castorini/pyserini
+website_url: http://pyserini.io/
+docs_url: https://github.com/castorini/pyserini
+
+install_command: pip install pyserini
+
+category: RAG
+tags: [python, rag, retrieval, lucene, faiss, sparse, dense, ir]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Building a first-stage retriever for RAG usually means wiring Lucene or Faiss by hand,
+  then hunting for indexes, queries, and relevance judgments. Pyserini wraps Anserini
+  sparse search and Faiss dense search in one Python package, with prebuilt indexes and
+  evaluation scripts for MS MARCO and other IR collections, so you can reproduce ranking
+  runs and plug retrieval into a multi-stage pipeline without reinventing IR infrastructure.
+
+use_cases:
+  - Run BM25 first-stage retrieval over MS MARCO or BEIR collections using prebuilt indexes
+  - Combine sparse Lucene hits with dense Faiss embeddings for hybrid RAG retrieval
+  - Reproduce published IR ranking runs with bundled queries, qrels, and evaluation scripts
+  - Serve retrieval over a REST API or MCP server for agentic search workflows
+  - Prototype multimodal image search with the optional Pyserini extras package
