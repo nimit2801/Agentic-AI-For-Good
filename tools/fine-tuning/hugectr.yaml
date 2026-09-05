@@ -1,0 +1,25 @@
+name: HugeCTR
+description: "NVIDIA GPU framework for high-efficiency click-through-rate model training, optimized for large embedding tables and multi-GPU CTR workloads in the Merlin recommender stack."
+tagline: GPU CTR training for large embedding tables
+
+github_url: https://github.com/NVIDIA-Merlin/HugeCTR
+docs_url: https://nvidia-merlin.github.io/HugeCTR/master/hugectr_user_guide.html
+
+category: Fine-tuning
+tags: [cuda, gpu, ctr, recommender, nvidia, embeddings, training]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Click-through models need enormous embedding tables that do not fit a single
+  GPU and train slowly in generic TensorFlow or PyTorch loops. HugeCTR is a
+  dedicated GPU CTR trainer with model-parallel embeddings, NCCL communication,
+  and Merlin integration so teams can train Wide-and-Deep style recommenders at
+  high throughput without hand-rolling embedding sharding.
+
+use_cases:
+  - "Train CTR models with multi-GPU model-parallel embeddings on NVIDIA hardware"
+  - "Run HugeCTR inside a Merlin container after NVTabular feature engineering"
+  - "Benchmark GPU CTR throughput against TensorFlow recommenders on the same click logs"
+  - "Export trained HugeCTR models into Merlin inference for production ranking"
