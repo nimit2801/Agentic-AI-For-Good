@@ -1,0 +1,27 @@
+name: Watchman
+description: File-watching service from Meta. Recursively watches huge source trees and fires commands on change, so ML repos, dataset folders, and codegen pipelines can rebuild without polling.
+tagline: Watch files and take action when they change
+
+github_url: https://github.com/facebook/watchman
+website_url: https://facebook.github.io/watchman/
+docs_url: https://facebook.github.io/watchman/docs/install.html
+
+install_command: brew install watchman
+
+category: Dev Tools
+tags: [filesystem, watch, build, devops, python, mlops, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Polling large ML repositories or dataset directories for changes wastes CPU
+  and misses events. Watchman maintains a persistent watch with a query API so
+  tools like Jest, Buck, and custom data pipelines get reliable change
+  notifications instead of walking the tree on a timer.
+
+use_cases:
+  - Trigger dataset preprocessing when new files land in a training directory
+  - Speed up JS or Python test watchers on monorepos that include model code
+  - Invalidate a local embedding cache when source documents change
+  - Drive incremental rebuilds for generated protobufs in an ML service

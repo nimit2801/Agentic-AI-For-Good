@@ -1,0 +1,26 @@
+name: node_exporter
+description: Prometheus exporter for hardware and OS metrics. Exposes CPU, memory, disk, and network stats from every node so GPU training hosts and inference boxes can be scraped like the rest of the fleet.
+tagline: Prometheus exporter for machine metrics
+
+github_url: https://github.com/prometheus/node_exporter
+website_url: https://prometheus.io/docs/guides/node-exporter/
+docs_url: https://prometheus.io/docs/guides/node-exporter/
+
+install_command: brew install node_exporter
+
+category: Monitoring
+tags: [prometheus, metrics, linux, monitoring, mlops, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Application metrics miss host-level CPU steal, disk saturation, and NIC
+  errors that kill training jobs. node_exporter exposes those OS metrics in
+  Prometheus format so ML ops can alert on the machine, not only the pod.
+
+use_cases:
+  - Scrape CPU and disk metrics from GPU training hosts
+  - Alert when an inference box is swapping or filling its data disk
+  - Compare node load across a Kubernetes worker pool in Grafana
+  - Feed hardware metrics into capacity planning for model serving
