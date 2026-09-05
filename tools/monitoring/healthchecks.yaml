@@ -1,0 +1,25 @@
+name: Healthchecks
+description: Cron job monitoring that pings when a scheduled task is late or silent. Healthchecks is a self-hostable Django app and hosted service that watches backups, ETL, and training jobs via simple HTTP pings so missed runs page a human instead of failing quietly.
+tagline: Dead-man's switch for cron, backups, and jobs
+
+github_url: https://github.com/healthchecks/healthchecks
+website_url: https://healthchecks.io
+docs_url: https://healthchecks.io/docs/
+
+category: Monitoring
+tags: [cron, monitoring, alerting, self-hosted, django, jobs, open-source]
+pricing: freemium
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Nightly embedding jobs, model exports, and backups fail silently when cron
+  never starts or a host is down. Healthchecks expects a periodic ping and
+  alerts Slack, email, or PagerDuty when the ping is late, so ML ops learn
+  about a missed training or ETL run without scraping logs after the fact.
+
+use_cases:
+  - Alert when a nightly embedding or dataset-sync cron job misses its ping window
+  - Watch backup jobs for vector databases and model registries from a single dashboard
+  - Self-host cron monitoring next to an air-gapped training cluster
+  - Page on-call when a weekly fine-tune or evaluation pipeline does not check in

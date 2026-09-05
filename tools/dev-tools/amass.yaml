@@ -1,0 +1,27 @@
+name: Amass
+description: OWASP in-depth attack-surface mapping and asset discovery tool. Amass enumerates subdomains, IPs, and related infrastructure from OSINT so security teams can see which APIs, docs hosts, and cloud assets an AI product actually exposes.
+tagline: OWASP attack-surface mapping and asset discovery
+
+github_url: https://github.com/owasp-amass/amass
+website_url: https://owasp.org/www-project-amass/
+docs_url: https://github.com/owasp-amass/amass/blob/master/doc/user_guide.md
+
+install_command: brew install amass
+
+category: Dev Tools
+tags: [osint, recon, attack-surface, subdomains, security, owasp, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Public model demos, staging APIs, and forgotten subdomains expand the
+  attack surface of an AI product faster than inventory spreadsheets.
+  Amass maps DNS, certificates, and OSINT sources into a graph of assets
+  so security teams can find exposed inference endpoints before attackers do.
+
+use_cases:
+  - Enumerate subdomains for an AI product before an external pentest
+  - Discover forgotten staging LLM APIs and docs hosts from certificate transparency
+  - Build an asset graph of cloud IPs tied to a company domain
+  - Track attack-surface drift after launching a new inference or MCP endpoint

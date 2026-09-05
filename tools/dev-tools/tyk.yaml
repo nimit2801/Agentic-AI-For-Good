@@ -1,0 +1,24 @@
+name: Tyk
+description: Open-source API gateway that fronts REST, GraphQL, and gRPC services with auth, rate limits, and analytics. Tyk sits in front of model-serving and agent APIs so teams can issue keys, cap tokens, and observe traffic without rewriting every inference service.
+tagline: Open-source API gateway for auth, rate limits, and analytics
+
+github_url: https://github.com/TykTechnologies/tyk
+website_url: https://tyk.io
+docs_url: https://tyk.io/docs/
+
+category: Dev Tools
+tags: [api-gateway, graphql, grpc, rate-limiting, auth, open-source]
+pricing: freemium
+is_open_source: true
+
+problem_solved: |
+  Model and agent APIs need API keys, quotas, and request logs, but bolting
+  that onto every FastAPI service duplicates auth bugs. Tyk terminates traffic
+  as a gateway, applies policies and rate limits, and exposes analytics so
+  inference endpoints stay protected and measurable from one control plane.
+
+use_cases:
+  - Put API keys and per-key rate limits in front of a self-hosted LLM or embedding API
+  - Route GraphQL and REST agent backends through one gateway with request analytics
+  - Cap burst traffic to GPU inference so a noisy client cannot starve production
+  - Publish a developer portal for internal ML APIs without rewriting each service

@@ -1,0 +1,27 @@
+name: ClamAV
+description: Open-source antivirus engine that scans files, archives, and mail for malware signatures. ClamAV is used as a gateway scanner so datasets, user uploads, and model artifacts are checked before they land on GPU nodes or shared storage.
+tagline: Open-source antivirus engine for files and gateways
+
+github_url: https://github.com/Cisco-Talos/clamav
+website_url: https://www.clamav.net
+docs_url: https://docs.clamav.net
+
+install_command: brew install clamav
+
+category: Other
+tags: [antivirus, malware, scanning, security, gateway, open-source]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Training data, notebook uploads, and model zips can carry malware that
+  commercial AV never sees on a Linux GPU box. ClamAV provides a signature
+  engine and clamd daemon you can run at ingest so untrusted files are
+  scanned before they reach shared NFS, object storage, or a training node.
+
+use_cases:
+  - Scan user-uploaded datasets and notebooks before they reach a training cluster
+  - Run clamd at an S3 or NFS ingest gateway for model artifacts
+  - Check email and ticket attachments in a security mailbox for malware
+  - Add a CI step that fails if a release tarball matches ClamAV signatures
