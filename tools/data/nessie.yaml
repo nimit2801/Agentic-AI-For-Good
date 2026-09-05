@@ -1,0 +1,26 @@
+name: Nessie
+description: "Transactional catalog for data lakes with Git-like branches, commits, and tags so Iceberg and similar tables can be isolated, reviewed, and rolled back like code."
+tagline: Git-like transactions for the data lake
+
+github_url: https://github.com/projectnessie/nessie
+website_url: https://projectnessie.org
+docs_url: https://projectnessie.org/docs/
+
+category: Data
+tags: [data-lake, git, iceberg, catalog, versioning, java]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Data lake tables are hard to experiment on: a bad write lands on main, and
+  there is no branch or pull-request workflow for parquet. Nessie is a
+  transactional catalog with Git-like semantics so Iceberg (and similar) tables
+  can be branched, merged, and tagged, giving ML feature and analytics pipelines
+  isolated experiments and rollback instead of mutating production data in place.
+
+use_cases:
+  - "Branch an Iceberg catalog to try a feature-engineering job without writing to production tables"
+  - "Commit and tag lakehouse snapshots so training runs pin exact table versions"
+  - "Review and merge data changes with Git-like semantics before they hit the main catalog"
+  - "Run Nessie in Docker next to Spark or Flink as the transactional catalog for a data lake"
