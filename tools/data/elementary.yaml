@@ -1,0 +1,27 @@
+name: Elementary
+description: "dbt-native data observability for analytics engineers: add tests and monitors on the warehouse in minutes, self-hosted or as a cloud service with lineage and anomaly alerts."
+tagline: dbt-native data observability
+
+github_url: https://github.com/elementary-data/elementary
+website_url: https://www.elementary-data.com/
+docs_url: https://docs.elementary-data.com/
+install_command: pip install elementary-data
+
+category: Data
+tags: [dbt, observability, data-quality, lineage, python, warehouse]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Warehouse pipelines fail silently: a dbt model succeeds while the data is
+  null, late, or drifted, and BI goes wrong. Elementary is dbt-native
+  observability so analytics engineers attach tests, anomaly monitors, and
+  lineage on the models they already run, with a report UI in minutes instead
+  of buying a separate data-quality platform.
+
+use_cases:
+  - "Add anomaly and freshness monitors to dbt models and see failures in an Elementary report"
+  - "Trace lineage from a broken dashboard metric back to the dbt model that produced it"
+  - "Self-host Elementary next to dbt Core or use Elementary Cloud for team alerting"
+  - "Catch silent schema and volume drifts in ML feature tables built with dbt"
