@@ -1,0 +1,27 @@
+name: NVIDIA Merlin
+description: "Open-source NVIDIA library for end-to-end GPU-accelerated recommender systems, covering feature engineering, deep learning training, and production inference in NGC containers."
+tagline: GPU-accelerated recommender systems, end to end
+
+github_url: https://github.com/NVIDIA-Merlin/Merlin
+website_url: https://developer.nvidia.com/nvidia-merlin
+docs_url: https://nvidia-merlin.github.io/Merlin/stable/README.html
+
+category: Fine-tuning
+tags: [python, gpu, recommender, nvidia, training, inference, recsys]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Recommender pipelines split feature engineering, training, and serving across CPU
+  libraries that choke on terabyte click logs and then fail to match training
+  preprocessing at inference. NVIDIA Merlin is an end-to-end GPU stack (NVTabular,
+  HugeCTR, Merlin Models, Triton) so teams can preprocess, train CTR models, and
+  serve on NVIDIA GPUs from one containerized workflow instead of gluing Spark,
+  TensorFlow, and a separate feature store.
+
+use_cases:
+  - "Train GPU-accelerated click-through models on terabyte-scale session and item logs"
+  - "Run NVTabular feature engineering and HugeCTR training inside a single Merlin NGC container"
+  - "Serve recommender inference on NVIDIA Triton with the same preprocessing used at train time"
+  - "Prototype a recsys pipeline on GPU without assembling separate ETL, training, and serving stacks"

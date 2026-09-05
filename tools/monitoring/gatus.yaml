@@ -1,0 +1,27 @@
+name: Gatus
+description: "Automated, developer-oriented status page that monitors HTTP, TCP, DNS, and more, with alerting and incident support so teams can publish health without a commercial status vendor."
+tagline: Developer-oriented status page with alerting
+
+github_url: https://github.com/TwiN/gatus
+website_url: https://gatus.io
+docs_url: https://gatus.io/docs
+install_command: go install github.com/TwiN/gatus/v5@latest
+
+category: Monitoring
+tags: [go, monitoring, status-page, alerting, health-check, self-hosted]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Most status pages are SaaS products that hide checks behind a vendor, or
+  homegrown cron pings with no incident UX. Gatus is a self-hosted monitor and
+  status page: YAML-defined endpoints, conditions, alerting, and a public page
+  so developers can watch APIs, agent backends, and inference URLs and page
+  the right channel when a check fails.
+
+use_cases:
+  - "Publish a public status page for API and model-serving endpoints with YAML health checks"
+  - "Alert Slack or PagerDuty when an inference URL, TCP port, or DNS record fails conditions"
+  - "Self-host Gatus with Docker or Helm next to Kubernetes workloads that need uptime visibility"
+  - "Track incidents on developer-facing services without paying for a commercial status vendor"

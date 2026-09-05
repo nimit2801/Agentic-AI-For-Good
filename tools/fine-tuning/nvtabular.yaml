@@ -1,0 +1,27 @@
+name: NVTabular
+description: "GPU-accelerated feature engineering and preprocessing library for tabular data, built to manipulate terabyte-scale datasets used to train deep learning recommender systems."
+tagline: Terabyte-scale tabular feature engineering on GPU
+
+github_url: https://github.com/NVIDIA-Merlin/NVTabular
+docs_url: https://nvidia-merlin.github.io/NVTabular/stable/Introduction.html
+install_command: pip install nvtabular
+
+category: Fine-tuning
+tags: [python, gpu, feature-engineering, tabular, nvidia, recsys, preprocessing]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Recommender training datasets are often terabytes of click and session logs.
+  Pandas and Spark CPU pipelines take hours to compute categoricals, joins, and
+  normalizations, and the resulting features drift from what the serving path
+  applies. NVTabular runs those transforms on GPU with a high-level API so feature
+  engineering keeps up with GPU training and the same operators can be exported
+  into Merlin inference.
+
+use_cases:
+  - "Preprocess terabyte click logs into categorical and continuous features on GPU before CTR training"
+  - "Replace slow Pandas or Spark recsys ETL with NVTabular operators inside a Merlin workflow"
+  - "Export GPU feature pipelines so training-time transforms match Triton serving"
+  - "Iterate on tabular feature recipes for HugeCTR or Merlin Models without rewriting CUDA kernels"

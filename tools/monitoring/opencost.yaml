@@ -1,0 +1,26 @@
+name: OpenCost
+description: "CNCF open-source cost monitoring for Kubernetes workloads and cloud spend, with allocation by namespace, deployment, and label plus an optional MCP server for agent access to cost data."
+tagline: Kubernetes and cloud cost monitoring
+
+github_url: https://github.com/opencost/opencost
+website_url: https://opencost.io
+docs_url: https://www.opencost.io/docs/installation/install
+
+category: Monitoring
+tags: [kubernetes, cost, monitoring, cncf, finops, helm, mcp]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  GPU training jobs and inference services run on Kubernetes, but cloud bills
+  rarely show which namespace, model, or team spent the money. OpenCost allocates
+  in-cluster and cloud costs by workload so ML platform teams can see GPU and
+  CPU spend per deployment, and agents can query the same data through the
+  optional MCP server instead of scraping billing CSVs.
+
+use_cases:
+  - "Allocate Kubernetes CPU, memory, and GPU cost by namespace and deployment for ML workloads"
+  - "Install OpenCost with Helm and watch cloud spend next to cluster metrics"
+  - "Enable the OpenCost MCP server so coding agents can query cost allocation without a custom API"
+  - "Show FinOps dashboards that map training jobs and inference services to actual cloud cost"
