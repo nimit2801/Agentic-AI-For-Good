@@ -1,0 +1,27 @@
+name: Crane
+description: CLI for container registries from Google's go-containerregistry. Copy, tag, mutate, and inspect images without a Docker daemon, which speeds CI for model serving images and GPU inference containers.
+tagline: Registry operations without a Docker daemon
+
+github_url: https://github.com/google/go-containerregistry
+website_url: https://github.com/google/go-containerregistry/tree/main/cmd/crane
+docs_url: https://github.com/google/go-containerregistry/blob/main/cmd/crane/README.md
+
+install_command: brew install crane
+
+category: Dev Tools
+tags: [containers, registry, cli, docker, ci, mlops, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Copying or retagging model images in CI usually needs a Docker daemon and
+  full pulls. Crane talks to registries directly, so you can copy, mutate
+  config, and inspect layers of serving images in GitHub Actions without
+  privileged builders.
+
+use_cases:
+  - Copy a trained model image between registries in CI without docker pull
+  - Retag a GPU inference image to latest after a successful deploy
+  - Inspect image config and layers before promoting a serving build
+  - Mutate an image entrypoint in-place for debug variants of agent workers

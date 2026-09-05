@@ -1,0 +1,29 @@
+name: cdk8s
+description: Define Kubernetes apps and abstractions in TypeScript, Python, Java, or Go. cdk8s synthesizes typed constructs into standard YAML manifests you can apply to any cluster, so ML serving charts stay in code instead of hand-edited YAML.
+tagline: Kubernetes apps as real code, not YAML copies
+
+github_url: https://github.com/cdk8s-team/cdk8s
+website_url: https://cdk8s.io
+docs_url: https://cdk8s.io/docs/latest/
+
+install_command: |
+  npm install cdk8s
+  pip install cdk8s
+
+category: Dev Tools
+tags: [kubernetes, cdk, typescript, python, infrastructure, mlops, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Hand-written Kubernetes YAML for inference services, GPU jobs, and agent
+  workers drifts and is hard to reuse. cdk8s lets you model those resources as
+  typed classes that synthesize to standard manifests, so ML platform charts
+  stay DRY, testable, and language-native.
+
+use_cases:
+  - Author inference Deployments and Services as TypeScript classes instead of YAML
+  - Share Python constructs for GPU Job templates across training environments
+  - Generate Helm-compatible manifests for agent workers from a single cdk8s app
+  - Unit-test Kubernetes resource graphs before applying them to a cluster

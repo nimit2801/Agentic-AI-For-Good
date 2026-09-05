@@ -1,0 +1,25 @@
+name: kube-capacity
+description: CLI that combines kubectl top and describe into a cluster resource view. Shows CPU and memory requests, limits, and utilization per node and pod so ML teams can spot GPU-node packing issues before jobs queue.
+tagline: Cluster resource requests, limits, and util in one CLI
+
+github_url: https://github.com/robscott/kube-capacity
+
+install_command: brew install robscott/tap/kube-capacity
+
+category: Dev Tools
+tags: [kubernetes, cli, capacity, mlops, observability, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  kubectl top and describe scatter CPU and memory data across commands, so it
+  is easy to miss nodes that are request-packed while GPU training jobs wait.
+  kube-capacity prints requests, limits, and utilization together so platform
+  teams can see packing and headroom in one table.
+
+use_cases:
+  - Compare node CPU and memory requests versus actual utilization
+  - Find over-requested inference pods that starve training jobs
+  - Export cluster capacity as JSON for capacity-planning dashboards
+  - Filter GPU node pools before scheduling a large training batch
