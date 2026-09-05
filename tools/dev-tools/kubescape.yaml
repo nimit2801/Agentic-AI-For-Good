@@ -1,0 +1,28 @@
+name: Kubescape
+description: Kubescape is a CNCF incubating Kubernetes security platform that scans clusters, YAML, and Helm charts for misconfigurations, image CVEs, and compliance against NSA-CISA, MITRE ATT&CK, and CIS from IDE through CI to runtime.
+tagline: Kubernetes security scanning from development to runtime
+
+github_url: https://github.com/kubescape/kubescape
+website_url: https://kubescape.io
+docs_url: https://kubescape.io/docs/
+
+install_command: brew install kubescape
+
+category: Dev Tools
+tags: [kubernetes, security, compliance, cis, scanning, cncf, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  GPU training and inference clusters often ship with privileged pods, missing
+  network policies, and images full of CVEs. Manual CIS and NSA reviews do not
+  scale across YAML, Helm, and live clusters. Kubescape scans manifests and
+  running workloads against those frameworks so posture gaps show up in CI
+  instead of after an incident.
+
+use_cases:
+  - Scan a GPU Kubernetes cluster against NSA-CISA and CIS controls before production
+  - Lint Helm charts and YAML for model-serving stacks in pull requests
+  - Detect CVEs in training and inference container images in CI
+  - Enforce admission policies so unsafe workloads never reach the cluster

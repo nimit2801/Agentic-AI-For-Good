@@ -1,0 +1,27 @@
+name: terraform-docs
+description: terraform-docs generates documentation from Terraform modules in markdown, JSON, YAML, and other formats. It injects inputs, outputs, and providers into README files so module docs stay in sync with the HCL.
+tagline: Auto-generate documentation from Terraform modules
+
+github_url: https://github.com/terraform-docs/terraform-docs
+website_url: https://terraform-docs.io
+docs_url: https://terraform-docs.io
+
+install_command: brew install terraform-docs
+
+category: Dev Tools
+tags: [terraform, documentation, iac, markdown, cli, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Terraform modules for GPU clusters and data platforms drift from their
+  README files as inputs and outputs change. Manual docs rot. terraform-docs
+  reads the HCL and writes tables for variables, outputs, and providers so
+  reviewers see current module contracts in pull requests.
+
+use_cases:
+  - Inject Terraform module inputs and outputs into README.md on every commit
+  - Generate markdown docs for shared GPU and Kubernetes Terraform modules
+  - Run terraform-docs as a GitHub Action that updates PR documentation
+  - Keep pre-commit hooks regenerating module docs when .tf files change
