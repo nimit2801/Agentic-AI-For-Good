@@ -1,0 +1,25 @@
+name: curlie
+description: Frontend for curl that keeps curl's flags and adds HTTPie-style readable output. curlie is a drop-in for debugging model APIs and webhooks without learning a second HTTP client.
+tagline: curl power with HTTPie-style readable output
+
+github_url: https://github.com/rs/curlie
+website_url: https://rs.github.io/curlie
+docs_url: https://rs.github.io/curlie
+install_command: brew install curlie
+
+category: Dev Tools
+tags: [http, curl, cli, api, debugging, rest]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Raw curl output is hard to scan when you are hitting inference APIs all
+  day, and HTTPie does not accept every curl flag you already know. curlie
+  wraps curl with colorized, formatted responses so debugging stays familiar.
+
+use_cases:
+  - Call an inference endpoint and read JSON without a pager of headers
+  - Reuse existing curl flags against a staging model API
+  - Debug webhook payloads during agent tool-calling development
+  - Compare HTTP status and body from several model providers in the terminal

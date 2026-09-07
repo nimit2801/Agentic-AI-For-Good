@@ -1,0 +1,24 @@
+name: xonsh
+description: Python-powered cross-platform shell that mixes Python with familiar shell syntax. xonsh lets you script GPU jobs, path munging, and data globs in Python without leaving the prompt.
+tagline: Python-powered shell for interactive and scripted work
+
+github_url: https://github.com/xonsh/xonsh
+website_url: https://xon.sh
+docs_url: https://xon.sh/contents.html
+install_command: pip install xonsh
+
+category: Dev Tools
+tags: [shell, python, cli, scripting, cross-platform, repl]
+pricing: free
+is_open_source: true
+
+problem_solved: |
+  Bash is awkward for Python-heavy ML workflows, so people bounce between
+  the shell and a REPL. xonsh runs Python at the prompt so you can glob
+  datasets, call libraries, and launch jobs in one language.
+
+use_cases:
+  - Glob training shards and pass them to a Python launcher from the prompt
+  - Write shell aliases that call Python libraries without a wrapper script
+  - Inspect environment variables and paths with Python at the CLI
+  - Run a mixed Python and subprocess workflow during experiment setup
