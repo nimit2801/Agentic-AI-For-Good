@@ -1,0 +1,27 @@
+name: Capstone
+description: Multi-architecture disassembly framework with bindings for Python, C, and more. Capstone turns machine code into assembly for ARM, x86, RISC-V, and other ISAs so you can inspect kernels, CUDA binaries, and native extensions without a full reverse-engineering GUI.
+tagline: Multi-architecture disassembly framework
+
+github_url: https://github.com/capstone-engine/capstone
+website_url: https://www.capstone-engine.org
+docs_url: https://www.capstone-engine.org/documentation.html
+
+install_command: pip install capstone
+
+category: Dev Tools
+tags: [disassembly, reverse-engineering, python, arm, x86, binaries, security]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Inspecting compiled kernels, native ops, and shipped binaries usually means
+  a heavy GUI or architecture-specific tools. Capstone is a library you embed
+  in scripts to disassemble many ISAs, so analysis pipelines can read machine
+  code the same way they parse source.
+
+use_cases:
+  - Disassemble a native PyTorch/CUDA extension when a crash dump has no symbols
+  - Script ARM and x86 analysis of an on-device inference binary
+  - Build a lightweight binary linter that flags unexpected instruction sequences
+  - Teach or document ISA output from a compiler without opening Ghidra

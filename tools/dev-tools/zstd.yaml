@@ -1,0 +1,27 @@
+name: zstd
+description: Meta's Zstandard compression algorithm and CLI. zstd shrinks training datasets, model checkpoints, and logs with gzip-beating ratios at much higher speed, and streams so pipelines can compress and decompress on the fly.
+tagline: Fast real-time compression for datasets and checkpoints
+
+github_url: https://github.com/facebook/zstd
+website_url: https://facebook.github.io/zstd/
+docs_url: https://facebook.github.io/zstd/zstd_manual.html
+
+install_command: brew install zstd
+
+category: Dev Tools
+tags: [compression, cli, datasets, checkpoints, c, performance]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  gzip is too slow for multi-gigabyte checkpoints and dataset shards, while
+  uncompressed artifacts waste disk and network. zstd compresses and
+  decompresses in real time so training jobs, artifact stores, and log
+  pipelines move less data without waiting on CPU.
+
+use_cases:
+  - Compress model checkpoints before uploading them to object storage
+  - Shard and compress training datasets for faster cluster copies
+  - Stream-decompress logs in an ML debugging pipeline
+  - Replace gzip in CI artifact archives to cut build-cache size
