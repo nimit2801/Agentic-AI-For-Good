@@ -1,0 +1,26 @@
+name: JPEG XL
+description: Reference implementation of the JPEG XL still-image format. libjxl encodes and decodes JPEG XL with better compression than JPEG and lossless JPEG recompression so you can ship next-gen images without a proprietary codec.
+tagline: JPEG XL reference encoder and decoder
+
+github_url: https://github.com/libjxl/libjxl
+website_url: https://jpeg.org/jpegxl
+docs_url: https://jpeg.org/jpegxl
+
+install_command: brew install jpeg-xl
+
+category: Dev Tools
+tags: [jpeg-xl, image, compression, codec, cli, web-performance]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  JPEG is old and WebP is not always enough. JPEG XL offers stronger
+  compression, lossless JPEG recompression, and wide-gamut stills so image
+  pipelines can cut bytes without a proprietary codec.
+
+use_cases:
+  - Encode dataset stills as JPEG XL for smaller storage
+  - Losslessly recompress existing JPEGs into JPEG XL
+  - Decode JPEG XL assets in a build or inference pipeline
+  - Compare JPEG XL vs JPEG size on a product image corpus

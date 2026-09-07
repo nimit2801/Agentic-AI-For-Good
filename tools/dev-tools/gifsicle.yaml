@@ -1,0 +1,26 @@
+name: gifsicle
+description: Create, manipulate, and optimize GIF images and animations from the command line. gifsicle crops, explodes frames, and losslessly shrinks GIFs so you can edit animations without opening a GUI.
+tagline: Create, edit, and optimize GIF animations from the CLI
+
+github_url: https://github.com/kohler/gifsicle
+website_url: https://www.lcdf.org/gifsicle
+docs_url: https://www.lcdf.org/gifsicle
+
+install_command: brew install gifsicle
+
+category: Dev Tools
+tags: [gif, image, animation, cli, optimization, assets]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Editing GIFs usually means a GUI. gifsicle crops, extracts frames, and
+  losslessly optimizes animations from the CLI so docs and dataset pipelines
+  can process GIFs in batch.
+
+use_cases:
+  - Losslessly shrink GIF assets before deploying a site
+  - Extract frames from an animation for a vision dataset
+  - Crop and delay-adjust GIFs in a docs build pipeline
+  - Combine stills into a looping GIF without a GUI editor

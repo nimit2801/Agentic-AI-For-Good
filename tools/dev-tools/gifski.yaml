@@ -1,0 +1,26 @@
+name: gifski
+description: Highest-quality GIF encoder based on pngquant. gifski converts video frames to GIFs with better color and less banding so you can ship demos and short loops without a huge file.
+tagline: High-quality GIF encoder based on pngquant
+
+github_url: https://github.com/ImageOptim/gifski
+website_url: https://gif.ski
+docs_url: https://gif.ski
+
+install_command: brew install gifski
+
+category: Dev Tools
+tags: [gif, video, encoding, cli, rust, images]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Classic GIF encoders band colors and balloon in size. gifski uses pngquant
+  palettes on video frames so short demos and UI loops stay watchable at a
+  smaller byte cost.
+
+use_cases:
+  - Convert a product demo video into a high-quality GIF
+  - Generate looping GIFs from UI recordings for docs
+  - Encode short model-output clips for GitHub READMEs
+  - Batch-create GIF previews from MP4 assets in CI
