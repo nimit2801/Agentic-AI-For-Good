@@ -1,0 +1,27 @@
+name: MozJPEG
+description: Improved JPEG encoder from Mozilla that produces smaller files at similar visual quality. MozJPEG is a libjpeg-turbo fork with better quantization and progressive scans for web and dataset image delivery.
+tagline: Smaller JPEGs at similar visual quality
+
+github_url: https://github.com/mozilla/mozjpeg
+website_url: https://github.com/mozilla/mozjpeg
+docs_url: https://github.com/mozilla/mozjpeg
+
+install_command: brew install mozjpeg
+
+category: Dev Tools
+tags: [jpeg, image, optimization, compression, cli, web-performance]
+pricing: free
+is_open_source: true
+license: NOASSERTION
+
+problem_solved: |
+  Baseline JPEG encoders waste bytes on photos you ship on the web or store
+  in datasets. MozJPEG improves quantization and progressive encoding so you
+  keep visual quality while cutting file size for faster delivery and cheaper
+  storage.
+
+use_cases:
+  - Re-encode product photos for faster page loads
+  - Shrink JPEG datasets before training or archival
+  - Produce progressive JPEGs for web image pipelines
+  - Replace libjpeg in a build that needs smaller output files

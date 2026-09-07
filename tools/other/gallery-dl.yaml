@@ -1,0 +1,27 @@
+name: gallery-dl
+description: Command-line program to download image galleries and collections from many image hosting sites. gallery-dl pulls albums, artist pages, and boards with metadata so you can build visual datasets without a browser.
+tagline: CLI downloader for image galleries and collections
+
+github_url: https://github.com/mikf/gallery-dl
+website_url: https://github.com/mikf/gallery-dl
+docs_url: https://github.com/mikf/gallery-dl#readme
+
+install_command: pip install gallery-dl
+
+category: Other
+tags: [images, downloader, cli, python, datasets, media]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Collecting public image galleries for datasets or archival means clicking
+  through site-specific players and rate limits. gallery-dl downloads albums
+  and collections from many hosts with metadata and filename templates so you
+  get files, not browser tabs.
+
+use_cases:
+  - Download public image albums into a local vision dataset
+  - Archive artist or board collections with metadata JSON
+  - Pull tagged galleries for classification or captioning pipelines
+  - Resume interrupted gallery downloads with site-specific extractors

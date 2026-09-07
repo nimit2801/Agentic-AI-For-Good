@@ -1,0 +1,26 @@
+name: streamlink
+description: CLI utility that pipes live video streams from many services into a local player. streamlink extracts stream URLs from sites like Twitch and YouTube so you can watch or record without a browser plugin.
+tagline: Pipe live video streams from the web into a local player
+
+github_url: https://github.com/streamlink/streamlink
+website_url: https://streamlink.github.io
+docs_url: https://streamlink.github.io
+
+install_command: pip install streamlink
+
+category: Other
+tags: [streaming, video, cli, python, livestream, media]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Live streams sit behind player pages that are hard to automate. streamlink
+  extracts the stream and pipes it to VLC or ffmpeg so you can watch, record,
+  or sample livestreams for datasets without a browser plugin.
+
+use_cases:
+  - Pipe a Twitch or YouTube livestream into VLC from the terminal
+  - Record public livestreams with ffmpeg for later transcription
+  - Sample live video for computer vision or event-detection pipelines
+  - Watch streams on headless machines without a browser player

@@ -1,0 +1,27 @@
+name: superfile
+description: Pretty fancy and modern terminal file manager written in Go. superfile shows a three-panel TUI with previews, metadata, and plugins so you can browse project trees and datasets without leaving the terminal.
+tagline: Modern three-panel terminal file manager
+
+github_url: https://github.com/yorukot/superfile
+website_url: https://superfile.dev
+docs_url: https://superfile.dev
+
+install_command: brew install superfile
+
+category: Dev Tools
+tags: [cli, tui, file-manager, golang, terminal, productivity]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Default terminal file browsing is ls plus cd, which is slow for nested
+  experiment dirs and datasets. superfile is a visual TUI file manager with
+  previews and plugins so you can inspect files, copy paths, and move artifacts
+  without opening a GUI.
+
+use_cases:
+  - Browse nested experiment and dataset directories on a remote GPU box
+  - Preview images, JSON, and logs before copying them into a pipeline
+  - Move or copy model checkpoints without a graphical file manager
+  - Pin frequently used project folders and jump between them in the TUI
