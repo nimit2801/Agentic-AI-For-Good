@@ -1,0 +1,26 @@
+name: oxipng
+description: Multithreaded PNG optimizer written in Rust. oxipng losslessly recompresses PNG files using multiple CPU cores so image pipelines ship smaller assets without quality loss.
+tagline: Multithreaded lossless PNG optimizer
+
+github_url: https://github.com/oxipng/oxipng
+website_url: https://github.com/oxipng/oxipng
+docs_url: https://github.com/oxipng/oxipng#readme
+
+install_command: brew install oxipng
+
+category: Dev Tools
+tags: [png, image, optimization, rust, cli, assets]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  PNG assets from design tools are often far larger than they need to be.
+  oxipng losslessly recompresses them in parallel so web and ML dataset
+  pipelines cut file size without changing pixels.
+
+use_cases:
+  - Losslessly shrink PNG icons and screenshots in a frontend build
+  - Batch-optimize PNG datasets before uploading to object storage
+  - Drop oxipng into CI so image PRs stay small
+  - Replace slower single-threaded PNG crushers in asset pipelines
