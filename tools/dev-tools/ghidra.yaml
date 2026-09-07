@@ -1,0 +1,27 @@
+name: Ghidra
+description: NSA software reverse engineering framework with a disassembler, decompiler, and graph views. Ghidra lets you inspect binaries, recover types, and script analysis in Java or Python when you need to understand compiled code.
+tagline: Open-source software reverse engineering framework
+
+github_url: https://github.com/NationalSecurityAgency/ghidra
+website_url: https://ghidra-sre.org
+docs_url: https://ghidra-sre.org
+
+install_command: brew install ghidra
+
+category: Dev Tools
+tags: [reverse-engineering, disassembler, decompiler, java, security, binaries]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Understanding compiled binaries without source means expensive commercial
+  tools or ad-hoc objdump. Ghidra is a full SRE suite with decompilation,
+  graphs, and scripting so you can inspect models, native kernels, and
+  shipped binaries on your own machine.
+
+use_cases:
+  - Decompile a native inference library to see how it loads weights
+  - Inspect a third-party binary plugin before running it on a GPU box
+  - Recover data structures from firmware that ships with an edge device
+  - Script batch analysis of binaries in Java or Python

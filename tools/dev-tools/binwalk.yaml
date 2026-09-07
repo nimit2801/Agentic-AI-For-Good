@@ -1,0 +1,26 @@
+name: binwalk
+description: Firmware analysis tool that scans binary images for embedded files, filesystems, and executable code. binwalk extracts compressed archives and known signatures so you can unpack device images without guessing offsets.
+tagline: Firmware analysis and binary extraction tool
+
+github_url: https://github.com/ReFirmLabs/binwalk
+website_url: https://github.com/ReFirmLabs/binwalk
+docs_url: https://github.com/ReFirmLabs/binwalk
+
+install_command: brew install binwalk
+
+category: Dev Tools
+tags: [firmware, binaries, extraction, reverse-engineering, cli, security]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Device images hide filesystems and models inside opaque blobs. binwalk
+  scans for signatures and extracts embedded files so you can recover
+  kernels, weights, and configs from firmware without manual carving.
+
+use_cases:
+  - Extract filesystems from an IoT firmware image
+  - Find embedded models or configs inside a vendor binary
+  - Carve compressed archives out of a disk or flash dump
+  - Inventory executable code in a firmware blob before flashing
