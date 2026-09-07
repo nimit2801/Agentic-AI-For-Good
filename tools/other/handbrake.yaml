@@ -1,0 +1,26 @@
+name: HandBrake
+description: Open-source video transcoder for converting, compressing, and batch-encoding media. HandBrake turns camera dumps and long recordings into consistent H.264/H.265 files so vision datasets and demo videos share one format before labeling or upload.
+tagline: Open-source video transcoder
+
+github_url: https://github.com/HandBrake/HandBrake
+website_url: https://handbrake.fr
+docs_url: https://handbrake.fr/docs/
+
+install_command: brew install handbrake
+
+category: Other
+tags: [video, transcoding, encoding, ffmpeg, datasets, media]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Raw camera and screen recordings arrive in mismatched containers and
+  bitrates that break data loaders. HandBrake batch-transcodes them to a
+  consistent codec so vision datasets and demo reels ingest cleanly.
+
+use_cases:
+  - Normalize a folder of interview recordings before a multimodal dataset
+  - Compress long demo videos for a model card without a licensed encoder
+  - Batch-convert camera dumps to H.264 for a labeling tool
+  - Produce smaller uploads of generated video for a review portal

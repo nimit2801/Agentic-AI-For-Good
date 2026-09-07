@@ -1,0 +1,27 @@
+name: mpv
+description: Command-line media player that scripts audio and video playback with high-quality codecs. mpv is a building block for dataset review, demo reels, and local A/V debugging when you need frame-accurate playback without a heavy GUI editor.
+tagline: Scriptable command-line media player
+
+github_url: https://github.com/mpv-player/mpv
+website_url: https://mpv.io
+docs_url: https://mpv.io/manual/
+
+install_command: brew install mpv
+
+category: Other
+tags: [video, audio, cli, playback, ffmpeg, media]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Reviewing generated video, TTS samples, and training clips usually means
+  opening a GUI player that you cannot script. mpv plays almost any codec
+  from the terminal and accepts commands, so dataset and demo workflows can
+  preview media in bulk.
+
+use_cases:
+  - Preview generated video clips from a diffusion or avatar pipeline
+  - Script playback of TTS samples during a listening eval
+  - Inspect frame-accurate video from a multimodal dataset on a remote box
+  - Debug audio/video sync issues in a local recording before training

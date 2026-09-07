@@ -1,0 +1,26 @@
+name: lz4
+description: Extremely fast lossless compression algorithm and CLI. lz4 favors speed over ratio, so you can compress shuffle buffers, feature caches, and IPC payloads in training jobs where gzip or zstd would steal too much CPU.
+tagline: Extremely fast lossless compression
+
+github_url: https://github.com/lz4/lz4
+website_url: https://lz4.org
+docs_url: https://github.com/lz4/lz4
+
+install_command: brew install lz4
+
+category: Dev Tools
+tags: [compression, cli, performance, c, datasets, caching]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Some ML paths need compression that barely shows up on the CPU, such as
+  feature caches and shuffle buffers. lz4 is built for that tradeoff, so you
+  cut disk and network without the latency of gzip or high-ratio zstd.
+
+use_cases:
+  - Compress a local feature cache that training reads on every epoch
+  - Speed up IPC of numpy batches between dataloader workers
+  - Archive debug dumps where compress time matters more than size
+  - Pair with zstd in a pipeline that picks codec by latency budget

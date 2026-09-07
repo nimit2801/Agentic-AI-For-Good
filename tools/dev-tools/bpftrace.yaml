@@ -1,0 +1,27 @@
+name: bpftrace
+description: High-level tracing language for Linux built on eBPF. bpftrace probes kernel and user events with one-liners so you can see syscalls, I/O, and scheduler delays on GPU boxes without writing C kernel modules.
+tagline: High-level eBPF tracing language for Linux
+
+github_url: https://github.com/bpftrace/bpftrace
+website_url: https://bpftrace.org
+docs_url: https://bpftrace.org/tutorial-one-liners.html
+
+install_command: brew install bpftrace
+
+category: Dev Tools
+tags: [ebpf, tracing, linux, performance, observability, kernel]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Training and serving jobs stall on disk, network, or syscalls that APM
+  never sees. bpftrace lets you attach short probes to kernel events on the
+  box itself, so you can find why a dataloader or inference server is
+  blocked without a full profiler suite.
+
+use_cases:
+  - Trace slow file reads in a dataset loader on a Linux GPU node
+  - Count syscalls from a stuck Python training process
+  - Watch TCP and disk latency while an inference server tails off
+  - Teach on-call one-liners for why a job is in D-state
