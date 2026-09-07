@@ -1,0 +1,28 @@
+name: Bitwarden
+description: Open-source password manager with a self-hostable vault, CLI, and browser extensions. ML teams keep API keys, cloud credentials, and Hugging Face tokens in an encrypted vault instead of Slack pastes or plaintext .env files.
+tagline: Encrypted vault and CLI for API keys and credentials
+
+github_url: https://github.com/bitwarden/server
+website_url: https://bitwarden.com
+docs_url: https://bitwarden.com/help/
+
+install_command: brew install bitwarden-cli
+
+category: Dev Tools
+tags: [secrets, passwords, vault, cli, security, credentials]
+pricing: freemium
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Training jobs and local shells still pull OpenAI keys, cloud creds,
+  and Hugging Face tokens from Slack or unencrypted .env files. Bitwarden
+  stores those secrets in an encrypted vault with a CLI so CI, laptops,
+  and GPU nodes can fetch credentials without committing them.
+
+use_cases:
+  - Store OpenAI and Hugging Face tokens in a shared encrypted vault
+  - Inject cloud credentials into a training job from the Bitwarden CLI
+  - Self-host a team vault for API keys instead of a password spreadsheet
+  - Autofill staging logins from the browser extension during demos
+  - Rotate an API key once in the vault instead of chasing .env copies

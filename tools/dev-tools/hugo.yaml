@@ -1,0 +1,28 @@
+name: Hugo
+description: Go static site generator that compiles Markdown into documentation sites, landing pages, and experiment reports in milliseconds. AI teams use Hugo to publish model cards, eval writeups, and internal wikis without a CMS or Node toolchain.
+tagline: Fast static sites for docs, model cards, and reports
+
+github_url: https://github.com/gohugoio/hugo
+website_url: https://gohugo.io
+docs_url: https://gohugo.io/documentation/
+
+install_command: brew install hugo
+
+category: Dev Tools
+tags: [static-site, go, markdown, documentation, docs, cli]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Model cards, eval reports, and internal docs stall when a CMS or JS
+  toolchain is required just to ship Markdown. Hugo builds those sites
+  from Git in milliseconds so teams can publish experiment writeups
+  and API docs without waiting on a Node build or a hosted wiki.
+
+use_cases:
+  - Publish model cards and eval reports as a Git-backed static site
+  - Host internal ML documentation without a CMS or Node toolchain
+  - Generate a project landing page from Markdown in CI
+  - Rebuild docs on every merge as a fast static artifact
+  - Serve experiment writeups locally while iterating on content
