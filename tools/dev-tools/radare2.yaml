@@ -1,0 +1,26 @@
+name: radare2
+description: UNIX-like reverse engineering framework and command-line toolset. radare2 disassembles, debugs, and patches binaries from a scriptable CLI so you can inspect native code without a heavyweight GUI.
+tagline: UNIX-like reverse engineering framework for the CLI
+
+github_url: https://github.com/radareorg/radare2
+website_url: https://www.radare.org
+docs_url: https://book.rada.re
+
+install_command: brew install radare2
+
+category: Dev Tools
+tags: [reverse-engineering, cli, disassembler, debugger, binaries, security]
+pricing: free
+is_open_source: true
+license: LGPL-3.0
+
+problem_solved: |
+  GUI reverse-engineering tools are heavy on remote boxes. radare2 is a
+  scriptable UNIX-style toolkit for disassembly, debugging, and patching so
+  you can inspect native libraries and model runtimes from SSH.
+
+use_cases:
+  - Disassemble a native extension that wraps a CUDA kernel
+  - Debug a crashing CLI tool without attaching a GUI debugger
+  - Patch a binary flag or string in a shipped utility
+  - Script binary analysis as part of a CI security check

@@ -1,0 +1,26 @@
+name: hexyl
+description: Command-line hex viewer with colored output and ASCII alongside the bytes. hexyl makes binary dumps readable in the terminal so you can inspect file headers, embeddings on disk, and mystery blobs without a GUI hex editor.
+tagline: Colored command-line hex viewer
+
+github_url: https://github.com/sharkdp/hexyl
+website_url: https://github.com/sharkdp/hexyl
+docs_url: https://github.com/sharkdp/hexyl
+
+install_command: brew install hexyl
+
+category: Dev Tools
+tags: [cli, hex, binary, rust, terminal, developer-tools]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  xxd and od print dense hex that is hard to scan. hexyl colorizes bytes by
+  type and shows ASCII so you can read magic numbers, headers, and binary
+  checkpoints from a terminal session.
+
+use_cases:
+  - Inspect file magic and headers before writing a parser
+  - Peek at a binary checkpoint or protobuf dump over SSH
+  - Compare raw bytes of two exported model files
+  - Teach binary formats with a readable hex dump
