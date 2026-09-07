@@ -1,0 +1,27 @@
+name: YARA
+description: Pattern-matching tool for identifying malware, packed binaries, and known file families. YARA rules combine strings and byte patterns so security and ML ops teams can scan model artifacts, uploaded datasets, and CI binaries for threats before they reach training or serving hosts.
+tagline: Pattern matching swiss knife for binaries and malware
+
+github_url: https://github.com/VirusTotal/yara
+website_url: https://virustotal.github.io/yara/
+docs_url: https://yara.readthedocs.io
+
+install_command: brew install yara
+
+category: Dev Tools
+tags: [security, malware, pattern-matching, binaries, scanning, yara]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Model zoos, dataset drops, and CI artifacts can hide malware or packed
+  droppers that antivirus misses. YARA lets you write readable rules for
+  strings and byte patterns and scan files in bulk before they land on
+  training or inference machines.
+
+use_cases:
+  - Scan uploaded checkpoints and Python wheels in a model registry
+  - Flag packed or obfuscated binaries in a dataset ingest pipeline
+  - Share detection rules for a known malicious notebook or wheel
+  - Gate CI so unexpected packers never reach a GPU node

@@ -1,0 +1,27 @@
+name: brotli
+description: Google's Brotli compression format and CLI, used across HTTP and static assets. brotli often beats gzip on web bundles, JSON, and documentation so model UIs, API responses, and static sites ship fewer bytes without a new file format.
+tagline: Google compression format for web and API payloads
+
+github_url: https://github.com/google/brotli
+website_url: https://github.com/google/brotli
+docs_url: https://github.com/google/brotli
+
+install_command: brew install brotli
+
+category: Dev Tools
+tags: [compression, http, cli, web, google, assets]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Serving model playgrounds, OpenAPI docs, and JS bundles with gzip still
+  wastes bandwidth on text-heavy payloads. Brotli is the compression browsers
+  already understand, so you cut transfer size for APIs and static sites
+  without changing clients.
+
+use_cases:
+  - Precompress static docs and playground assets for a model API
+  - Shrink JSON inference responses on a public HTTP endpoint
+  - Replace gzip in a CDN pipeline for text-heavy ML demos
+  - Compress OpenAPI specs and HTML reports before shipping them
