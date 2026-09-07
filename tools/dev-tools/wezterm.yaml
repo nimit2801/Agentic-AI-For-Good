@@ -1,0 +1,28 @@
+name: WezTerm
+description: GPU-accelerated cross-platform terminal emulator and multiplexer written in Rust. WezTerm runs SSH sessions, splits, and high-volume training logs in one Lua-configured window without the lag of CPU-bound terminals.
+tagline: GPU-accelerated terminal emulator and multiplexer
+
+github_url: https://github.com/wezterm/wezterm
+website_url: https://wezterm.org/
+docs_url: https://wezterm.org/
+
+install_command: brew install --cask wezterm
+
+category: Dev Tools
+tags: [terminal, rust, gpu, multiplexer, ssh, cli]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  CPU-bound terminals stutter when training logs flood stdout or many
+  SSH panes are open on a GPU box. WezTerm renders with the GPU, multiplexes
+  tabs and splits in-process, and is configured in Lua so long-running
+  jobs stay readable without a separate tmux layer.
+
+use_cases:
+  - Tail high-volume training logs without terminal lag
+  - SSH into a GPU box with persistent splits in one window
+  - Configure fonts, keys, and panes in Lua for a shared team setup
+  - Multiplex local shells and remote sessions without a separate tmux
+  - Keep a readable scrollback while several jobs print at once
