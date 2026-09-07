@@ -1,0 +1,25 @@
+name: OctoSQL
+description: CLI that runs SQL across files and databases so you can join CSV, JSON, Parquet, Postgres, and more in one query. OctoSQL is for ad-hoc analysis when standing up a warehouse is more work than the question.
+tagline: SQL over files and databases in one query
+
+github_url: https://github.com/cube2222/octosql
+website_url: https://github.com/cube2222/octosql
+docs_url: https://github.com/cube2222/octosql
+install_command: brew install octosql
+
+category: Data
+tags: [sql, csv, parquet, json, cli, data-analysis]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  Eval dumps, crawls, and logs live in mixed CSV, JSON, and Parquet files
+  that you should not load into a warehouse just to join. OctoSQL queries
+  those sources with SQL in one process so you can inspect data in place.
+
+use_cases:
+  - Join a CSV of labels with a Parquet feature dump in one SQL query
+  - Query JSONL eval output without importing it into Postgres
+  - Compare a local file against a live Postgres table during debugging
+  - Script ad-hoc SQL over mixed files in a CI data-quality check
