@@ -1,0 +1,27 @@
+name: ast-grep
+description: CLI for structural search, lint, and rewrite of source code using ASTs. ast-grep matches code by syntax rather than text so refactors and rules stay accurate across a repo.
+tagline: Structural search, lint, and rewrite from the CLI
+
+github_url: https://github.com/ast-grep/ast-grep
+website_url: https://ast-grep.github.io/
+docs_url: https://ast-grep.github.io/
+
+install_command: brew install ast-grep
+
+category: Dev Tools
+tags: [ast, search, lint, refactor, rust, cli, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Regex search misses syntax and breaks on formatting. ast-grep parses code into
+  ASTs and matches patterns structurally, so you can find, lint, and rewrite
+  call sites or APIs across a codebase without false positives from comments
+  and strings.
+
+use_cases:
+  - Search for a function call pattern across Python, TypeScript, or Rust repos
+  - Write lint rules that match AST shape instead of regular expressions
+  - Codemod a renamed API with a structural rewrite rule
+  - Audit LLM-generated code for banned patterns before merge

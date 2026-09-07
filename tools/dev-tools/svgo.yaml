@@ -1,0 +1,26 @@
+name: svgo
+description: Node.js SVG optimizer that strips editor metadata, collapses shapes, and minifies markup. svgo is the standard CLI and library for shipping smaller vector assets in web and design pipelines.
+tagline: SVG optimizer for Node.js and the CLI
+
+github_url: https://github.com/svg/svgo
+website_url: https://svgo.dev/
+docs_url: https://svgo.dev/
+
+install_command: npm install -g svgo
+
+category: Dev Tools
+tags: [svg, optimization, nodejs, cli, frontend, assets]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Exported SVGs carry editor cruft and redundant markup that bloats pages.
+  svgo runs a plugin pipeline that minifies and rewrites SVG so icons and
+  illustrations stay visually the same at a fraction of the file size.
+
+use_cases:
+  - Minify SVG icons in a frontend build before deploy
+  - Clean designer-exported SVG for use in React or icon systems
+  - Batch-optimize illustration assets in a design-to-web pipeline
+  - Plug SVG compression into CI so PRs do not ship bloated vectors
