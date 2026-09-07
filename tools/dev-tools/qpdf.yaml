@@ -1,0 +1,26 @@
+name: qpdf
+description: Content-preserving PDF transformer for inspecting, splitting, merging, and decrypting PDFs. qpdf keeps document structure intact while you linearize, extract pages, or fix files for downstream pipelines.
+tagline: Content-preserving PDF transformation toolkit
+
+github_url: https://github.com/qpdf/qpdf
+website_url: https://qpdf.sourceforge.io
+docs_url: https://qpdf.sourceforge.io
+
+install_command: brew install qpdf
+
+category: Dev Tools
+tags: [pdf, cli, documents, transformation, cplusplus, files]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  PDFs arriving in data pipelines are encrypted, linearized badly, or glued
+  together. qpdf inspects and rewrites them without flattening content so you
+  can split, merge, and decrypt files before OCR or RAG ingest.
+
+use_cases:
+  - Split a multi-chapter PDF into per-page files for OCR
+  - Decrypt or linearize PDFs before feeding a retrieval pipeline
+  - Merge generated reports into a single PDF without flattening
+  - Inspect PDF structure when a parser fails on a corrupt file
