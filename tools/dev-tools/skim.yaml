@@ -1,0 +1,27 @@
+name: skim
+description: Fuzzy finder written in Rust, inspired by fzf. skim interactively filters any input stream, supports preview, and ships as a library plus a sk CLI for shell workflows.
+tagline: Fuzzy finder in Rust
+
+github_url: https://github.com/lotabout/skim
+website_url: https://crates.io/crates/skim
+docs_url: https://github.com/lotabout/skim#readme
+
+install_command: brew install sk
+
+category: Dev Tools
+tags: [fuzzy-finder, cli, rust, terminal, fzf, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Interactive filtering of files, history, and command output is dominated by
+  fzf. skim offers a Rust alternative with similar keybindings, preview, and
+  a reusable crate so you can embed a fuzzy picker in other Rust tools without
+  shelling out.
+
+use_cases:
+  - Interactively filter files, git branches, and process lists from the shell
+  - Embed a fuzzy picker in Rust CLIs via the skim crate
+  - Pipe kubectl or log output into sk and act on the selected lines
+  - Use as an fzf-compatible fuzzy finder on systems that prefer Rust binaries

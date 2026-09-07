@@ -1,0 +1,26 @@
+name: delta
+description: Syntax-highlighting pager for git, diff, grep, and blame output. delta makes patches readable in the terminal with side-by-side views, word-level highlighting, and Git integration.
+tagline: Syntax-highlighting pager for git and diffs
+
+github_url: https://github.com/dandavison/delta
+website_url: https://dandavison.github.io/delta/
+docs_url: https://dandavison.github.io/delta/
+
+install_command: brew install git-delta
+
+category: Dev Tools
+tags: [git, diff, pager, cli, rust, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Raw git diffs are hard to scan in a terminal. delta colorizes and structures
+  patches with word-level highlighting, line numbers, and optional side-by-side
+  layout so code review and local git workflows stay readable without a GUI.
+
+use_cases:
+  - Set git pager to delta for readable commits, diffs, and blame
+  - Review pull-request patches in the terminal with syntax highlighting
+  - Page ripgrep JSON or grep output with the same highlighter
+  - Diff ML config and code changes with word-level emphasis

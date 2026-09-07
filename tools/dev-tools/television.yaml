@@ -1,0 +1,27 @@
+name: television
+description: Fast, portable, hackable fuzzy finder TUI. television (tv) lets you interactively search files, text, and custom data sources with a modern terminal UI and a plugin-friendly design.
+tagline: Fast portable fuzzy finder TUI
+
+github_url: https://github.com/alexpasmantier/television
+website_url: https://alexpasmantier.github.io/television/
+docs_url: https://alexpasmantier.github.io/television/
+
+install_command: brew install television
+
+category: Dev Tools
+tags: [fuzzy-finder, tui, cli, rust, terminal, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Fuzzy finders are either tightly coupled to the shell or slow on large trees.
+  television is a fast, portable TUI that searches files and custom channels
+  with a modern UI, so you pick files, git history, or dataset paths without
+  wiring a one-off fzf script each time.
+
+use_cases:
+  - Interactively find files and text across a large monorepo
+  - Browse git history, shells, and custom channels from one TUI
+  - Pipe data into television and select rows for the next command
+  - Replace ad-hoc fzf wrappers with a hackable fuzzy finder

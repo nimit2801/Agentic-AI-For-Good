@@ -1,0 +1,27 @@
+name: mcfly
+description: Shell history search that uses a neural network to rank commands by context. mcfly replaces Ctrl-R with a smarter picker so the command you actually want surfaces first.
+tagline: Fly through your shell history
+
+github_url: https://github.com/cantino/mcfly
+website_url: https://github.com/cantino/mcfly
+docs_url: https://github.com/cantino/mcfly#readme
+
+install_command: brew install mcfly
+
+category: Dev Tools
+tags: [shell, history, cli, rust, productivity, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Default reverse-i-search ranks shell history by recency, so old commands from
+  other directories crowd out the one you need. mcfly trains a small network on
+  your history and current context to rank likely commands, then lets you pick
+  and run them from a full-screen UI.
+
+use_cases:
+  - Replace Ctrl-R with context-aware history search in bash, zsh, or fish
+  - Jump to prior ML training or docker commands without retyping long flags
+  - Keep a SQLite history database that works across machines
+  - Find rarely used but important commands faster than sequential history search
