@@ -1,0 +1,25 @@
+name: RustFS
+description: Open-source S3-compatible object storage written in Rust. RustFS targets high-performance small-object workloads and can migrate or coexist with other S3 platforms such as MinIO and Ceph.
+tagline: High-performance S3-compatible object storage in Rust
+
+github_url: https://github.com/rustfs/rustfs
+website_url: https://rustfs.com
+docs_url: https://docs.rustfs.com
+
+category: Data
+tags: [object-storage, s3, rust, distributed-storage, minio-alternative, data]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AI datasets, checkpoints, and inference artifacts need S3-compatible storage
+  that stays fast on small objects without a Java or Go stack. RustFS provides
+  an Apache-2.0 object store that speaks the S3 API, runs as a container, and
+  can sit alongside MinIO or Ceph during migration.
+
+use_cases:
+  - Store model checkpoints and training datasets on S3-compatible local object storage
+  - Run an S3 endpoint for AI pipelines that need high throughput on small objects
+  - Migrate workloads from MinIO or Ceph while keeping existing S3 clients
+  - Self-host object storage for feature stores and experiment artifacts

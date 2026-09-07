@@ -1,0 +1,26 @@
+name: gron
+description: Command-line tool that flattens JSON into discrete assignments so you can grep, filter, and then convert back. Makes nested API payloads greppable without writing jq programs.
+tagline: Make JSON greppable
+
+github_url: https://github.com/tomnomnom/gron
+website_url: https://github.com/tomnomnom/gron
+docs_url: https://github.com/tomnomnom/gron#readme
+
+install_command: brew install gron
+
+category: Dev Tools
+tags: [json, cli, grep, go, developer-tools, api]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Nested JSON from APIs is hard to search with grep. gron transforms JSON into
+  line-oriented assignments you can filter with familiar Unix tools, then
+  ungron the result back into valid JSON for the next step in a pipeline.
+
+use_cases:
+  - Grep through large API responses to find nested fields without writing jq
+  - Diff JSON configs by flattening both sides into comparable assignment lines
+  - Extract a subset of JSON with grep and sed, then convert it back with ungron
+  - Explore LLM and vector-DB JSON dumps from the terminal

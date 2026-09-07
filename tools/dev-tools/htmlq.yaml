@@ -1,0 +1,26 @@
+name: htmlq
+description: jq-like command-line tool for HTML. htmlq uses CSS selectors to extract, filter, and pretty-print content from HTML documents and scraped pages.
+tagline: Like jq, but for HTML
+
+github_url: https://github.com/mgdm/htmlq
+website_url: https://github.com/mgdm/htmlq
+docs_url: https://github.com/mgdm/htmlq#readme
+
+install_command: brew install htmlq
+
+category: Dev Tools
+tags: [html, css-selectors, cli, scraping, rust, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Extracting structured bits from HTML usually means a Python script or brittle
+  regex. htmlq lets you pipe HTML through CSS selectors on the command line,
+  similar to jq, so scraping and page inspection stay in Unix pipelines.
+
+use_cases:
+  - Extract article text or links from HTML with CSS selectors in a pipeline
+  - Pretty-print and filter scraped docs before feeding them to an LLM
+  - Pull metadata tags from pages during dataset collection
+  - Prototype web scrapers without writing a full parser
