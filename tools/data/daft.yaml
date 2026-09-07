@@ -1,0 +1,27 @@
+name: Daft
+description: High-performance dataframe engine for AI and multimodal workloads. Daft queries images, audio, video, and tabular data at scale with a Python API, so you can filter, embed, and transform mixed datasets without bolting a separate image pipeline onto Spark or pandas.
+tagline: Multimodal dataframe engine for AI workloads
+
+github_url: https://github.com/Eventual-Inc/Daft
+website_url: https://www.daft.ai
+docs_url: https://docs.daft.ai
+
+install_command: pip install daft
+
+category: Data
+tags: [dataframe, python, multimodal, spark, etl, images, rust]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  pandas and Spark struggle when rows are images, video, or nested tensors
+  instead of scalars. Daft is a dataframe engine built for multimodal AI
+  data, so you can filter, embed, and write those datasets with one API
+  instead of a custom sidecar pipeline.
+
+use_cases:
+  - Filter a billion-row image dataset before running an embedding job
+  - Join video metadata with frame tensors for a training export
+  - Run Python UDFs over object-store files without pulling them all locally
+  - Replace an ad-hoc Spark plus PIL pipeline with one multimodal dataframe

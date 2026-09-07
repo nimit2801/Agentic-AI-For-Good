@@ -1,0 +1,27 @@
+name: libvips
+description: Fast image processing library with a low memory footprint. libvips streams pixels instead of loading whole images, so dataset pipelines can resize, crop, and convert huge TIFFs and scientific images without blowing RAM the way ImageMagick or PIL often do.
+tagline: Fast, low-memory image processing library
+
+github_url: https://github.com/libvips/libvips
+website_url: https://www.libvips.org
+docs_url: https://www.libvips.org/API/current/
+
+install_command: brew install vips
+
+category: Data
+tags: [images, processing, c, python, datasets, computer-vision, performance]
+pricing: free
+is_open_source: true
+license: LGPL-2.1
+
+problem_solved: |
+  Resizing and converting large training images with PIL or ImageMagick
+  loads entire files into RAM and stalls dataset jobs. libvips streams
+  pixels through a demand-driven pipeline so you can thumbnail, crop, and
+  convert huge images with a fraction of the memory.
+
+use_cases:
+  - Thumbnail a folder of multi-gigabyte TIFFs for a vision dataset
+  - Convert scientific images to JPEG or PNG before labeling
+  - Build a Python ingest step with pyvips that will not OOM on 100MP photos
+  - Preprocess satellite or medical images in a streaming data loader

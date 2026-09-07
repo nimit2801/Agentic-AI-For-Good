@@ -1,0 +1,27 @@
+name: Drizzle
+description: TypeScript ORM with SQL-first schema and migrations. Drizzle maps Postgres, MySQL, SQLite, and more without a heavy runtime, so AI apps can store traces, users, and job state in typed queries instead of a bloated object mapper.
+tagline: SQL-first TypeScript ORM
+
+github_url: https://github.com/drizzle-team/drizzle-orm
+website_url: https://orm.drizzle.team
+docs_url: https://orm.drizzle.team/docs/overview
+
+install_command: npm install drizzle-orm
+
+category: Dev Tools
+tags: [typescript, orm, sql, postgres, sqlite, node, database]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Node AI apps still need a database for users, traces, and job queues, but
+  heavy ORMs hide SQL and slow cold starts. Drizzle keeps schema in
+  TypeScript and queries close to SQL, so you get type safety without a
+  large runtime.
+
+use_cases:
+  - Store agent traces and user sessions in Postgres from a TypeScript API
+  - Generate migrations for an SQLite cache beside a local LLM app
+  - Query job state for a fine-tuning queue with typed SQL
+  - Replace Prisma in a Next.js AI dashboard when you want thinner SQL
