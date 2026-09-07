@@ -1,0 +1,26 @@
+name: ffuf
+description: Fast web fuzzer written in Go. ffuf brute-forces URLs, headers, and forms so you can map API surfaces, find hidden model endpoints, and smoke-test auth on inference servers without a slow GUI scanner.
+tagline: Fast web fuzzer written in Go
+
+github_url: https://github.com/ffuf/ffuf
+website_url: https://github.com/ffuf/ffuf
+docs_url: https://github.com/ffuf/ffuf/blob/master/README.md
+
+install_command: brew install ffuf
+
+category: Dev Tools
+tags: [security, fuzzer, http, golang, pentest, cli, apis]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Model APIs and admin UIs often ship hidden paths and weak auth that a
+  browser never hits. ffuf fuzzes URLs and parameters quickly from the CLI
+  so you can find those endpoints before attackers do.
+
+use_cases:
+  - Discover hidden inference or admin routes on a model HTTP server
+  - Fuzz API parameters on a RAG gateway during a security review
+  - Wordlist-scan a staging playground before exposing it publicly
+  - Check that auth actually rejects unguessable paths on an LLM proxy
