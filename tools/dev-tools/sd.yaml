@@ -1,0 +1,26 @@
+name: sd
+description: Intuitive find-and-replace CLI that works like a friendlier sed. sd uses string or regex replacements without the escaping maze, so you can rewrite configs, prompts, and generated code in scripts without reaching for Perl.
+tagline: Intuitive find and replace CLI
+
+github_url: https://github.com/chmln/sd
+website_url: https://github.com/chmln/sd
+docs_url: https://github.com/chmln/sd
+
+install_command: brew install sd
+
+category: Dev Tools
+tags: [cli, rust, sed, refactor, text, scripting]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Bulk text edits in repos and prompt files still trip over sed escaping.
+  sd does find-and-replace with a simpler syntax, so one-liners and CI
+  rewrite steps stay readable.
+
+use_cases:
+  - Rename a model id across YAML configs without sed escaping
+  - Rewrite placeholder API keys in example prompts before a demo
+  - Bulk-fix generated code comments in a post-processing script
+  - Replace deprecated import paths in a large Python tree

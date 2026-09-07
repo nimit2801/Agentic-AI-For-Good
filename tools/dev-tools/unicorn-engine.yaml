@@ -1,0 +1,26 @@
+name: Unicorn Engine
+description: CPU emulator framework for ARM, AArch64, x86, RISC-V, and more. Unicorn lets you run fragments of native code in userspace so you can test shellcode, unpackers, and architecture-specific kernels without a full VM.
+tagline: Multi-architecture CPU emulator framework
+
+github_url: https://github.com/unicorn-engine/unicorn
+website_url: https://www.unicorn-engine.org
+docs_url: https://www.unicorn-engine.org/docs/
+
+install_command: pip install unicorn
+
+category: Dev Tools
+tags: [emulator, reverse-engineering, arm, x86, security, python, binaries]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Testing native snippets, packers, and ISA-specific kernels usually needs a
+  VM or hardware. Unicorn emulates those CPUs in a library you call from
+  Python or C, so analysis tools can run the bytes without booting a guest.
+
+use_cases:
+  - Emulate an ARM stub from an on-device inference binary
+  - Fuzz a native tokenizer in a sandbox without a full QEMU VM
+  - Teach CPU semantics for a compiler backend using short snippets
+  - Unpack a payload enough to dump model weights from a packed loader
