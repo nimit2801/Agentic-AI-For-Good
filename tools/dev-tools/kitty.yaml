@@ -1,0 +1,26 @@
+name: Kitty
+description: GPU-based terminal emulator with tabs, splits, images, and kitten extras for people who live in the shell. Kitty renders on the GPU and scripts window layouts so training logs and remote sessions stay in one app.
+tagline: GPU terminal with tabs, images, and kitten extras
+
+github_url: https://github.com/kovidgoyal/kitty
+website_url: https://sw.kovidgoyal.net/kitty/
+docs_url: https://sw.kovidgoyal.net/kitty/
+install_command: brew install --cask kitty
+
+category: Dev Tools
+tags: [terminal, gpu, python, images, ssh, cli]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Plain terminals cannot show images, Unicode, or complex layouts while
+  remaining fast. Kitty renders on the GPU, supports graphics in the
+  terminal, and ships kitten tools so you can diff, SSH, and tile panes
+  without a separate multiplexer.
+
+use_cases:
+  - Show plots and images inline while iterating on a training script
+  - Tile SSH sessions and local shells with kitten layouts
+  - Diff files in the terminal without leaving the GPU emulator
+  - Keep Unicode and ligatures readable in high-volume log output

@@ -1,0 +1,25 @@
+name: Litestream
+description: Streaming replication for SQLite that continuously copies WAL changes to S3 or another object store. Litestream gives SQLite apps disaster recovery and read replicas without running a full database cluster.
+tagline: Streaming SQLite replication to object storage
+
+github_url: https://github.com/benbjohnson/litestream
+website_url: https://litestream.io
+docs_url: https://litestream.io/docs/
+install_command: brew install litestream
+
+category: Data
+tags: [sqlite, replication, s3, backup, disaster-recovery, go]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  SQLite is simple until a disk dies and the only copy is on that box.
+  Litestream streams WAL pages to S3 so you can restore or replica-read
+  without operating Postgres just to keep a small app durable.
+
+use_cases:
+  - Replicate a local SQLite feature cache to S3 continuously
+  - Restore an eval database from object storage after a host failure
+  - Run a small ML metadata app on SQLite with off-box backups
+  - Point a read replica at replicated SQLite for reporting queries
