@@ -1,0 +1,27 @@
+name: TypeORM
+description: TypeScript and JavaScript ORM for Node.js with drivers for PostgreSQL, MySQL, MariaDB, SQLite, SQL Server, and Oracle. TypeORM maps entities to tables so AI apps can persist users, traces, and job state with decorators instead of raw SQL in every route.
+tagline: TypeScript ORM for Node.js databases
+
+github_url: https://github.com/typeorm/typeorm
+website_url: https://typeorm.io
+docs_url: https://typeorm.io/docs/getting-started
+
+install_command: npm install typeorm
+
+category: Dev Tools
+tags: [typescript, orm, node, postgres, mysql, sqlite, database]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Node AI backends still need relational storage for users, traces, and
+  queues, but writing SQL by hand in every route is error-prone. TypeORM
+  gives decorator-based entities and migrations across the major SQL
+  databases so you keep a typed model without switching ORMs per engine.
+
+use_cases:
+  - Persist chat sessions and user accounts for a TypeScript LLM app
+  - Store fine-tuning job rows in Postgres with migrations
+  - Map SQLite tables for a local agent desktop companion
+  - Share one entity layer across MySQL staging and Postgres production
