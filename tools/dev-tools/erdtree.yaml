@@ -1,0 +1,27 @@
+name: erdtree
+description: Modern, cross-platform, multi-threaded filesystem and disk-usage utility. erdtree draws a file tree that respects .gitignore and hidden-file rules so you can see what actually consumes space in a project.
+tagline: Gitignore-aware disk usage tree for the terminal
+
+github_url: https://github.com/solidiquis/erdtree
+website_url: https://github.com/solidiquis/erdtree
+docs_url: https://github.com/solidiquis/erdtree
+
+install_command: brew install erdtree
+
+category: Dev Tools
+tags: [cli, rust, disk-usage, filesystem, gitignore, terminal]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  du and tree dump every node including gitignored caches and node_modules,
+  which hides the files you actually care about. erdtree is a multi-threaded
+  disk-usage tree that respects .gitignore so you can find real bloat in
+  repos and datasets.
+
+use_cases:
+  - Find which directories consume disk on a GPU training box
+  - Visualize a project tree while ignoring gitignored caches
+  - Compare dataset folder sizes before copying to object storage
+  - Audit node_modules and checkpoint dirs that are eating disk

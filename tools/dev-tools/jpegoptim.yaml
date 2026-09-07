@@ -1,0 +1,26 @@
+name: jpegoptim
+description: Utility to losslessly optimize and compress JPEG files. jpegoptim strips metadata, optimizes Huffman tables, and can apply a quality limit so photo pipelines ship smaller JPEGs without a full re-encode stack.
+tagline: Lossless JPEG optimizer for the command line
+
+github_url: https://github.com/tjko/jpegoptim
+website_url: https://github.com/tjko/jpegoptim
+docs_url: https://github.com/tjko/jpegoptim
+
+install_command: brew install jpegoptim
+
+category: Dev Tools
+tags: [jpeg, image, optimization, cli, compression, assets]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Camera and export JPEGs carry extra metadata and unoptimized Huffman tables.
+  jpegoptim strips that overhead and optionally caps quality so web and dataset
+  pipelines get smaller files without standing up a full encoder like MozJPEG.
+
+use_cases:
+  - Losslessly shrink JPEG assets before deploying a site
+  - Strip EXIF from dataset photos while keeping pixel data
+  - Batch-optimize product images in a CI image pipeline
+  - Cap JPEG quality for thumbnail generation from the CLI
