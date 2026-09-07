@@ -1,0 +1,26 @@
+name: tealdeer
+description: Very fast Rust implementation of tldr, the simplified man-page client. tealdeer caches community examples locally so common CLI usage is a fraction of a second away.
+tagline: Fast tldr client written in Rust
+
+github_url: https://github.com/dbrgn/tealdeer
+website_url: https://docs.tealdeer.org
+docs_url: https://docs.tealdeer.org
+
+install_command: brew install tealdeer
+
+category: Dev Tools
+tags: [tldr, man-pages, cli, rust, documentation, developer-tools]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Full man pages bury the one example you need. tealdeer is a fast local tldr
+  client that caches community examples so you get practical command snippets
+  instantly, even offline, without waiting on a network tldr client.
+
+use_cases:
+  - Look up common usage examples for CLI tools without opening a man page
+  - Keep a local cache of tldr pages for offline work on training clusters
+  - Replace slower tldr clients with a Rust binary in developer dotfiles
+  - Onboard teammates to git, docker, and data CLIs with short examples
