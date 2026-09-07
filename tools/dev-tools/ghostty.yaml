@@ -1,0 +1,26 @@
+name: Ghostty
+description: Fast cross-platform terminal emulator with platform-native UI and GPU acceleration. Ghostty keeps training logs, SSH sessions, and multiplexed panes readable without the lag of CPU-bound terminals.
+tagline: Native GPU-accelerated terminal emulator
+
+github_url: https://github.com/ghostty-org/ghostty
+website_url: https://ghostty.org
+docs_url: https://ghostty.org/docs
+install_command: brew install --cask ghostty
+
+category: Dev Tools
+tags: [terminal, gpu, rust, ssh, cli, macos]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  CPU-bound terminals stutter when training logs flood stdout or many
+  SSH sessions are open. Ghostty uses GPU rendering and native UI so
+  long-running jobs stay readable without switching to a multiplexer
+  just to keep up.
+
+use_cases:
+  - Tail high-volume training logs without terminal lag
+  - SSH into GPU boxes with native tabs and splits
+  - Run local shells and remote sessions in one GPU-rendered window
+  - Keep scrollback readable while several jobs print at once

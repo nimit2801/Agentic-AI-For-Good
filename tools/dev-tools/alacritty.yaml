@@ -1,0 +1,25 @@
+name: Alacritty
+description: Cross-platform OpenGL terminal emulator focused on speed and simplicity. Alacritty is configured in TOML and stays out of the way so you pair it with tmux or a window manager instead of built-in tabs.
+tagline: OpenGL terminal emulator focused on speed
+
+github_url: https://github.com/alacritty/alacritty
+website_url: https://alacritty.org
+docs_url: https://alacritty.org/config-alacritty.html
+install_command: brew install --cask alacritty
+
+category: Dev Tools
+tags: [terminal, gpu, opengl, rust, cli, toml]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Heavy terminals add tabs, panes, and GPU features you may already get
+  from tmux. Alacritty renders with OpenGL and stays a fast emulator so
+  you keep multiplexing in your window manager or tmux without extra UI.
+
+use_cases:
+  - Run tmux inside a fast GPU-rendered terminal on a GPU workstation
+  - Config fonts and colors in TOML and share the file across machines
+  - Tail training logs without a heavy Electron terminal
+  - Use a minimal emulator over SSH jump hosts and local shells

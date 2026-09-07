@@ -1,0 +1,25 @@
+name: Datasette
+description: Open-source tool for exploring and publishing SQLite databases as a website with a JSON API, facets, and plugins. Datasette turns local datasets into a shareable, queryable app without standing up a custom backend.
+tagline: Explore and publish SQLite on the web
+
+github_url: https://github.com/simonw/datasette
+website_url: https://datasette.io
+docs_url: https://docs.datasette.io
+install_command: pip install datasette
+
+category: Data
+tags: [sqlite, data-exploration, publishing, python, json-api, plugins]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  SQLite dumps of evals, crawls, or features sit on disk with no UI or
+  API. Datasette serves those databases as a website with filters, SQL,
+  and JSON so teammates can explore and publish data without a custom app.
+
+use_cases:
+  - Publish an eval SQLite database as a browsable website with facets
+  - Expose crawl or labeling tables through Datasette's JSON API
+  - Explore a local feature store dump in the browser during research
+  - Plugin custom views for ML metadata without building a dashboard
