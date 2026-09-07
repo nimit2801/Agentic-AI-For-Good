@@ -1,0 +1,26 @@
+name: sad
+description: Space Age seD, a CLI search and replace that previews diffs with a fuzzy picker. sad runs a replace across files, lets you review matches interactively, then applies the edit.
+tagline: CLI search and replace with an interactive preview
+
+github_url: https://github.com/ms-jpq/sad
+website_url: https://github.com/ms-jpq/sad
+docs_url: https://github.com/ms-jpq/sad#readme
+
+install_command: brew install sad
+
+category: Dev Tools
+tags: [search-replace, sed, cli, rust, fzf, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  sed -i rewrites files with no preview, so a bad regex destroys a tree.
+  sad shows matches in an interactive picker first, then applies replacements
+  only to the hunks you accept.
+
+use_cases:
+  - Preview and apply a rename across a codebase before writing files
+  - Replace a deprecated API string with an interactive diff
+  - Pair with fzf to pick which search hits to edit
+  - Safer bulk edits than sed when refactoring configs and prompts

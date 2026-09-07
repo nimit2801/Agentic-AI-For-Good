@@ -1,0 +1,26 @@
+name: choose
+description: Human-friendly, fast alternative to cut and sometimes awk. choose selects fields from each line by index, range, or negative offset without writing field-splitting scripts.
+tagline: Human-friendly alternative to cut and awk
+
+github_url: https://github.com/theryangeary/choose
+website_url: https://github.com/theryangeary/choose
+docs_url: https://github.com/theryangeary/choose#readme
+
+install_command: brew install choose-rust
+
+category: Dev Tools
+tags: [cli, cut, awk, text, rust, developer-tools]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  cut and awk field syntax is easy to get wrong on messy logs. choose lets
+  you pick columns by simple indexes and ranges, including negative offsets
+  from the end, so one-liners stay readable.
+
+use_cases:
+  - Extract columns from CSV-like logs without writing an awk program
+  - Grab the last field of kubectl or docker output with negative indexes
+  - Build shell pipelines that select fields by range
+  - Replace brittle cut -d invocations in data wrangling scripts

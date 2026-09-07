@@ -1,0 +1,26 @@
+name: pngquant
+description: Lossy PNG compressor based on libimagequant. pngquant converts 24-bit PNGs to 8-bit paletted images with alpha, cutting file size sharply while keeping visual quality high.
+tagline: Lossy PNG compressor with alpha palettes
+
+github_url: https://github.com/kornelski/pngquant
+website_url: https://pngquant.org
+docs_url: https://pngquant.org
+
+install_command: brew install pngquant
+
+category: Dev Tools
+tags: [png, image, optimization, cli, assets, compression]
+pricing: free
+is_open_source: true
+license: NOASSERTION
+
+problem_solved: |
+  Truecolor PNGs are huge for icons and UI. pngquant quantizes them to 8-bit
+  palettes with alpha so you keep transparency and appearance at a fraction of
+  the bytes, which matters for web delivery and dataset storage.
+
+use_cases:
+  - Compress UI icons and product images for faster page loads
+  - Reduce PNG dataset size before training or archival
+  - Generate paletted PNGs with alpha for games and design systems
+  - Pair with oxipng for lossy then lossless image pipelines
