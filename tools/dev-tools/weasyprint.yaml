@@ -1,0 +1,26 @@
+name: WeasyPrint
+description: Python library that turns HTML and CSS into PDF. WeasyPrint is useful for model cards, eval reports, and invoice-style documents when you already have HTML and do not want a headless browser.
+tagline: HTML and CSS to PDF in Python
+
+github_url: https://github.com/Kozea/WeasyPrint
+website_url: https://weasyprint.org
+docs_url: https://doc.courtbouillon.org/weasyprint/
+
+install_command: pip install weasyprint
+
+category: Dev Tools
+tags: [pdf, html, css, python, documents, reports]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Generating PDFs from eval dashboards and model cards often means wkhtmltopdf
+  or a headless Chrome. WeasyPrint renders HTML and CSS in Python, so report
+  jobs stay in the same runtime as the rest of the pipeline.
+
+use_cases:
+  - Render a model card HTML template to a shareable PDF
+  - Export weekly eval reports from a Django or Flask app
+  - Produce invoices or certificates from HTML without a browser farm
+  - Snapshot a documentation page as PDF in CI

@@ -1,0 +1,26 @@
+name: oha
+description: HTTP load generator inspired by hey, with a TUI. oha slams endpoints so you can see latency and error rates on inference APIs and RAG gateways before you call the run a load test.
+tagline: HTTP load generator with a TUI
+
+github_url: https://github.com/hatoo/oha
+website_url: https://github.com/hatoo/oha
+docs_url: https://github.com/hatoo/oha
+
+install_command: brew install oha
+
+category: Dev Tools
+tags: [http, load-testing, rust, cli, performance, apis]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Checking whether an inference URL holds up still means wrk scripts or a
+  SaaS load tester. oha is a single binary that hammers HTTP and shows a
+  live TUI, so you can smoke-test QPS on a model API from your laptop.
+
+use_cases:
+  - Load-test a local vLLM or TGI endpoint before a demo
+  - Compare latency of two RAG gateway URLs with the same payload
+  - Find the QPS cliff on a new embedding HTTP service
+  - Smoke-test auth and timeouts on a public model playground
