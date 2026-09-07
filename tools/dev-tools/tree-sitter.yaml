@@ -1,0 +1,27 @@
+name: tree-sitter
+description: Incremental parsing library that builds concrete syntax trees for source code. Editors, linters, and AI coding tools use tree-sitter for fast, error-tolerant syntax highlighting and structural queries.
+tagline: Incremental parsing for programming tools
+
+github_url: https://github.com/tree-sitter/tree-sitter
+website_url: https://tree-sitter.github.io
+docs_url: https://tree-sitter.github.io/tree-sitter/
+
+install_command: brew install tree-sitter
+
+category: Dev Tools
+tags: [parsing, ast, editor, syntax, incremental, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Full parsers are too slow to re-parse a file on every keystroke, and regex
+  highlighters misunderstand nested syntax. tree-sitter incrementally updates
+  a concrete syntax tree as the buffer changes, giving editors and AI tools
+  accurate structure even in incomplete or broken code.
+
+use_cases:
+  - Power syntax highlighting and folding in Neovim, Helix, and other editors
+  - Query code structure for refactoring and navigation tools
+  - Give coding agents an AST view of a file without a language-specific parser
+  - Build linters and highlighters that stay fast on large files
