@@ -1,0 +1,25 @@
+name: gping
+description: Command-line ping with a live terminal graph of latency over time. Operators watch packet loss and RTT to model APIs, GPU hosts, and inference endpoints without leaving the shell.
+tagline: Ping with a live latency graph in the terminal
+
+github_url: https://github.com/orf/gping
+website_url: https://github.com/orf/gping
+docs_url: https://github.com/orf/gping
+install_command: brew install gping
+
+category: Monitoring
+tags: [ping, latency, networking, cli, rust, observability]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Plain ping dumps numbers that are hard to scan when an API or GPU box
+  is flaky. gping plots RTT as a live graph in the terminal so you can
+  see spikes, packet loss, and recovery while debugging inference hosts.
+
+use_cases:
+  - Graph latency to an inference API while a rollout is in progress
+  - Compare RTT across several GPU hosts or regions in one terminal
+  - Watch packet loss to a remote training box during a long job
+  - Diagnose slow model-serving endpoints without opening a metrics UI

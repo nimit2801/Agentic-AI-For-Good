@@ -1,0 +1,26 @@
+name: NetCDF
+description: Network Common Data Form libraries and a self-describing binary format for array-oriented scientific data. Climate, geospatial, and ML pipelines store multidimensional arrays with portable metadata and partial reads.
+tagline: Self-describing array format for scientific datasets
+
+github_url: https://github.com/Unidata/netcdf-c
+website_url: https://www.unidata.ucar.edu/software/netcdf/
+docs_url: https://docs.unidata.ucar.edu/netcdf-c/current/
+install_command: pip install netCDF4
+
+category: Data
+tags: [scientific-computing, arrays, climate, geospatial, hdf5, datasets]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Climate, satellite, and simulation data arrive as huge multidimensional
+  arrays that CSV and raw NumPy dumps cannot describe or slice efficiently.
+  NetCDF stores those arrays with units, coordinates, and chunked access so
+  training jobs can read subsets without loading the whole file.
+
+use_cases:
+  - Load climate or satellite NetCDF cubes into NumPy or Xarray for training
+  - Store geospatial features with lat, lon, and time coordinates in one file
+  - Stream a slice of a multi-gigabyte scientific dataset without full download
+  - Exchange array datasets between Python, C, Fortran, and R research stacks
