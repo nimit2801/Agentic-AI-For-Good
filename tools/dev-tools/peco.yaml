@@ -1,0 +1,27 @@
+name: peco
+description: Simplistic interactive filtering tool for the command line. peco lets you pipe any text into an incremental selector and hand the chosen lines to the next command, similar in spirit to fzf but with a smaller Go-based design.
+tagline: Interactive command-line filtering tool
+
+github_url: https://github.com/peco/peco
+website_url: https://github.com/peco/peco
+docs_url: https://github.com/peco/peco#readme
+
+install_command: brew install peco
+
+category: Dev Tools
+tags: [cli, fuzzy-finder, interactive, filtering, go, terminal, productivity]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Filtering long command output, history, or file lists on the terminal usually
+  means grep with exact patterns. peco turns any piped input into an interactive
+  incremental filter so you pick the matching lines visually, then pass them to
+  the next command without writing a regex.
+
+use_cases:
+  - Interactively filter git branches, process lists, or history and act on the selection
+  - Pipe find or ls output into peco to pick files for editing or deletion
+  - Build shell workflows that let you choose rows from logs or kubectl output
+  - Replace ad-hoc grep loops with an interactive selector in scripts and aliases

@@ -1,0 +1,23 @@
+name: PlanetScale
+description: Serverless MySQL and PostgreSQL platform with database branching, non-blocking schema changes, and Vitess-backed horizontal scale. Teams ship schema like code without managing shards, failovers, or connection pooling.
+tagline: Serverless MySQL and Postgres with database branching
+
+website_url: https://planetscale.com
+docs_url: https://planetscale.com/docs
+
+category: Data
+tags: [mysql, postgresql, serverless, database, vitess, branching, schema]
+pricing: paid
+is_open_source: false
+
+problem_solved: |
+  Application databases outgrow a single MySQL or Postgres instance, and schema
+  changes on production are risky. PlanetScale hosts Vitess and Postgres clusters
+  with branching, deploy requests, and non-blocking migrations so teams scale
+  writes and ship schema like pull requests without operating shards or failovers.
+
+use_cases:
+  - Branch a production schema, test migrations, then merge via a deploy request
+  - Run MySQL-compatible backends for AI apps that need connection pooling at serverless scale
+  - Shard a growing product or feature-store database without rewriting application SQL
+  - Host Postgres with HA replicas and query insights without managing failover
