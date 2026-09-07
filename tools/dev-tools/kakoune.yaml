@@ -1,0 +1,25 @@
+name: Kakoune
+description: Selection-based modal text editor that treats multiple cursors as the default editing model. Kakoune is a lightweight alternative to Vim for editing configs, YAML catalogs, and training scripts in the terminal.
+tagline: Selection-based modal editor with multiple cursors
+
+github_url: https://github.com/mawww/kakoune
+website_url: https://kakoune.org
+docs_url: https://kakoune.org/doc/html/
+install_command: brew install kakoune
+
+category: Dev Tools
+tags: [editor, modal, terminal, vim, multiple-cursors, cli]
+pricing: free
+is_open_source: true
+license: Unlicense
+
+problem_solved: |
+  Editing many similar lines in configs or generated code is slow in a
+  single-cursor modal editor. Kakoune makes selections the primitive so
+  you transform many cursors at once without a plugin layer.
+
+use_cases:
+  - Edit YAML catalog entries with multiple selections in the terminal
+  - Refactor training scripts without leaving a modal editor
+  - Pair Kakoune with tmux for a lightweight remote editing setup
+  - Transform repeated config keys across a file in one motion

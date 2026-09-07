@@ -1,0 +1,24 @@
+name: Cedar
+description: Open-source authorization policy language from AWS for fine-grained access control. Cedar separates policy from application code so ML platforms can express who may invoke models, datasets, and tools as readable rules.
+tagline: Authorization policy language for fine-grained access
+
+github_url: https://github.com/cedar-policy/cedar
+website_url: https://www.cedarpolicy.com
+docs_url: https://docs.cedarpolicy.com
+
+category: Dev Tools
+tags: [authorization, policy, aws, access-control, security, rust]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Who can call a model, read a dataset, or run a tool ends up hardcoded
+  in application if-statements. Cedar stores those rules as policies so
+  you can audit and change access without shipping a new app build.
+
+use_cases:
+  - Authorize which roles may invoke an inference API or GPU job
+  - Gate dataset and feature-store reads with readable Cedar policies
+  - Test authorization rules in CI before deploying an ML platform
+  - Share the same policy language across services instead of ad-hoc ACLs

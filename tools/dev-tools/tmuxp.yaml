@@ -1,0 +1,25 @@
+name: tmuxp
+description: Session manager for tmux built on libtmux. tmuxp loads YAML or JSON layouts so GPU boxes, logs, and editors come back as the same pane set after a reboot.
+tagline: YAML session manager for tmux
+
+github_url: https://github.com/tmux-python/tmuxp
+website_url: https://tmuxp.git-pull.com
+docs_url: https://tmuxp.git-pull.com
+install_command: pip install tmuxp
+
+category: Dev Tools
+tags: [tmux, sessions, yaml, python, cli, terminal]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Rebuilding tmux panes after a disconnect wastes time on GPU hosts.
+  tmuxp stores window layouts in YAML so you reload the same splits for
+  training logs, SSH, and editors with one command.
+
+use_cases:
+  - Restore a GPU-box layout with logs, htop, and an editor after SSH drop
+  - Share a team tmux layout for demo and on-call sessions
+  - Load a YAML workspace that tails several training jobs at once
+  - Script session startup in CI or a jump-host login
