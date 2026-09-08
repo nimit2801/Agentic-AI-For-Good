@@ -1,0 +1,24 @@
+name: Ghostscript
+description: Interpreter for PostScript and PDF that renders, converts, and processes documents. Ghostscript rasterizes pages, converts formats, and drives print pipelines so teams can turn papers, reports, and scanned files into images or PDF without a proprietary RIP.
+tagline: PostScript and PDF interpreter for document pipelines
+
+github_url: https://github.com/ArtifexSoftware/ghostpdl
+website_url: https://www.ghostscript.com/
+docs_url: https://ghostscript.readthedocs.io/
+install_command: brew install ghostscript
+
+category: Dev Tools
+tags: [pdf, postscript, documents, conversion, cli, rasterization]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  RAG and document-AI pipelines need to rasterize PDFs, convert PostScript, and extract page
+  images before OCR or embedding. Ghostscript is the open-source RIP that turns those files into
+  PNG, JPEG, or cleaned PDF locally, so ingestion jobs do not depend on a paid document engine.
+
+use_cases:
+  - Rasterize PDF pages to PNG before OCR or vision-model embedding
+  - Convert PostScript and mixed print jobs into PDF for a document ingestion pipeline
+  - Downsample or repair PDFs so large paper corpora fit in a RAG preprocessing step

@@ -1,0 +1,25 @@
+name: scc
+description: Very fast code counter written in Go that reports SLOC, complexity, and COCOMO estimates. scc walks repositories in seconds so teams can size ML codebases, skip generated files, and compare language mix without waiting on slower cloc runs.
+tagline: Fast SLOC, complexity, and COCOMO code counter
+
+github_url: https://github.com/boyter/scc
+website_url: https://github.com/boyter/scc
+docs_url: https://github.com/boyter/scc/blob/master/README.md
+install_command: brew install scc
+
+category: Dev Tools
+tags: [go, cli, code-metrics, sloc, complexity, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Sizing an ML monorepo with cloc is slow, and generated protobufs, lockfiles, and notebooks
+  inflate the numbers. scc counts lines, complexity, and COCOMO cost in seconds, with accurate
+  language detection and ignore rules, so you can report real source size for training code and
+  agent services.
+
+use_cases:
+  - Measure SLOC and language mix across an ML monorepo before a planning review
+  - Estimate COCOMO cost for agent services while ignoring generated and vendor files
+  - Compare complexity of training code versus serving code in CI as a lightweight metric
