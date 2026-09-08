@@ -1,0 +1,26 @@
+name: Ramda
+description: Practical functional JavaScript library of immutable, auto-curried helpers. Agent backends and Node ML CLIs use Ramda to compose data transforms on eval traces, tool-call payloads, and prompt templates without mutating state.
+tagline: Practical functional JavaScript for immutable data pipelines
+
+github_url: https://github.com/ramda/ramda
+website_url: https://ramdajs.com
+docs_url: https://ramdajs.com/docs/
+install_command: npm install ramda
+
+category: Dev Tools
+tags: [javascript, functional, immutable, npm, node, utilities]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Agent services repeatedly map, filter, and compose JSON from traces, tool
+  calls, and configs. Imperative helpers mutate objects and leak side effects
+  across steps. Ramda supplies auto-curried, data-last functions so pipelines
+  stay composable and inputs stay unchanged.
+
+use_cases:
+  - Compose map and filter pipelines over eval traces before writing reports
+  - Transform LLM tool-call payloads without mutating the original request
+  - Build reusable prompt-template helpers with auto-curried functions
+  - Normalize nested agent config objects before merging environment overrides

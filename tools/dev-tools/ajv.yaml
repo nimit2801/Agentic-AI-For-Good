@@ -1,0 +1,25 @@
+name: Ajv
+description: Fast JSON Schema validator for Node and the browser. Agent APIs use Ajv to validate LLM structured output, tool-call arguments, and config files against JSON Schema and JSON Type Definition.
+tagline: Fast JSON Schema validator for Node and browsers
+
+github_url: https://github.com/ajv-validator/ajv
+website_url: https://ajv.js.org
+docs_url: https://ajv.js.org/guide/getting-started.html
+install_command: npm install ajv
+
+category: Dev Tools
+tags: [javascript, json-schema, validation, npm, node, typescript]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  LLM structured output and tool-call JSON often fail silently until a later
+  step crashes. Ajv compiles JSON Schema into fast validators so agent APIs
+  reject invalid payloads at the boundary instead of after a model round-trip.
+
+use_cases:
+  - Validate LLM structured output against a JSON Schema before persisting
+  - Check tool-call arguments from an agent before executing side effects
+  - Compile config schemas for local agent YAML and JSON files
+  - Enforce JSON Type Definition on webhook payloads from eval runners
