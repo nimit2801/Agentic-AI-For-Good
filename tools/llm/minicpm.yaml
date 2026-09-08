@@ -1,0 +1,25 @@
+name: MiniCPM
+description: On-device LLM family from OpenBMB that targets strong quality at small parameter counts. Teams run MiniCPM locally for chat, coding, and edge inference when cloud APIs are too costly or private data cannot leave the device.
+tagline: Small on-device LLMs with strong quality
+
+github_url: https://github.com/OpenBMB/MiniCPM
+website_url: https://github.com/OpenBMB/MiniCPM
+docs_url: https://github.com/OpenBMB/MiniCPM
+
+category: LLM
+tags: [llm, on-device, edge, open-source, transformers]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Cloud LLMs add latency, cost, and data-residency risk for on-device
+  products. MiniCPM ships small open models that run locally so teams can
+  keep private text on the device while still offering chat and coding
+  assistance.
+
+use_cases:
+  - Run a local chat model on a laptop without a cloud API
+  - Serve MiniCPM with vLLM for a private on-prem assistant
+  - Evaluate small open models against larger APIs on coding tasks
+  - Deploy an edge LLM where network access is limited
