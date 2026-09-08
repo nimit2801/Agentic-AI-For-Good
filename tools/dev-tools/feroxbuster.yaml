@@ -1,0 +1,26 @@
+name: feroxbuster
+description: Fast, recursive content-discovery tool written in Rust. Teams use it to enumerate hidden paths, API routes, and static assets on web apps, including AI product surfaces and internal docs sites.
+tagline: Recursive content discovery written in Rust
+
+github_url: https://github.com/epi052/feroxbuster
+website_url: https://epi052.github.io/feroxbuster-docs/overview/
+docs_url: https://epi052.github.io/feroxbuster-docs/overview/
+install_command: cargo install feroxbuster
+
+category: Dev Tools
+tags: [rust, cli, content-discovery, http, security, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  AI products ship undocumented API routes, leftover static assets, and internal
+  docs that never appear in a sitemap. feroxbuster recursively brute-forces
+  directories and files over HTTP so security and platform teams can map the
+  real surface of an app instead of guessing from public docs.
+
+use_cases:
+  - Enumerate hidden API routes on an LLM or agent product before a security review
+  - Discover leftover docs, OpenAPI specs, and static assets on staging hosts
+  - Recursively map a large content tree with auto-tuning and wordlist filters
+  - Feed discovered endpoints into monitoring, allowlists, or integration tests

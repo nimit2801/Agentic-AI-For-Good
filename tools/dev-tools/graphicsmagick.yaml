@@ -1,0 +1,25 @@
+name: GraphicsMagick
+description: Open-source image processing suite derived from ImageMagick, with a smaller memory footprint for convert, resize, crop, and composite work. Teams use it to normalize vision datasets and generate thumbnails in ML pipelines.
+tagline: Lightweight image processing for dataset pipelines
+
+website_url: https://www.graphicsmagick.org/
+docs_url: https://www.graphicsmagick.org/GraphicsMagick.html
+install_command: brew install graphicsmagick
+
+category: Dev Tools
+tags: [images, conversion, cli, datasets, computer-vision, imagemagick]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Vision datasets arrive as mixed JPEG, PNG, TIFF, and WebP files at inconsistent
+  sizes, and ImageMagick can be heavy in tight CI workers. GraphicsMagick converts,
+  resizes, and composites images with a smaller memory footprint so you can
+  normalize training images without standing up a heavier convert stack.
+
+use_cases:
+  - Resize and convert a vision dataset to a single format before training
+  - Generate thumbnails for a dataset browser or labeling UI
+  - Strip metadata and composite overlays for evaluation galleries
+  - Batch-convert crawled images in CI with lower RAM than ImageMagick

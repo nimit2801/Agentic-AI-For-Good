@@ -1,0 +1,26 @@
+name: Day.js
+description: 2kB immutable date-time library with a Moment.js-compatible API. Frontend and Node AI apps use Day.js to parse, format, and manipulate timestamps in logs, eval runs, and dashboard UIs without shipping a heavy date library.
+tagline: 2kB immutable date library alternative to Moment.js
+
+github_url: https://github.com/iamkun/dayjs
+website_url: https://day.js.org
+docs_url: https://day.js.org/docs/en/installation/installation
+install_command: npm install dayjs
+
+category: Dev Tools
+tags: [javascript, typescript, dates, npm, frontend, node]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Moment.js is large and mutable, which bloats AI dashboards and eval UIs that
+  only need parse, format, and timezone helpers. Day.js offers the same modern
+  API in about 2kB with immutable objects, so timestamp handling stays small
+  and predictable in browser and Node pipelines.
+
+use_cases:
+  - Format eval-run and experiment timestamps in an AI dashboard
+  - Parse mixed ISO and locale date strings from logs and traces
+  - Display relative times for agent job history in a web UI
+  - Convert timezones when aggregating usage metrics across regions

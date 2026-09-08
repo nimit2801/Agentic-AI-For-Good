@@ -1,0 +1,26 @@
+name: SoX
+description: Command-line Swiss Army knife for converting, trimming, resampling, and applying effects to audio files across dozens of formats. ML teams use SoX to normalize speech datasets and prepare clips for ASR and TTS training.
+tagline: Universal sound sample translator for audio pipelines
+
+github_url: https://github.com/chirlu/sox
+website_url: https://sox.sourceforge.net/
+docs_url: https://sox.sourceforge.net/sox.html
+install_command: brew install sox
+
+category: Other
+tags: [audio, speech, cli, datasets, asr, tts, conversion]
+pricing: free
+is_open_source: true
+license: GPL-2.0-or-later
+
+problem_solved: |
+  Speech and audio datasets arrive as mixed WAV, MP3, FLAC, and OGG files at
+  inconsistent sample rates and channel counts. SoX converts, resamples, trims,
+  and applies effects in batch so you can normalize training audio without
+  writing a one-off FFmpeg script for every new crawl.
+
+use_cases:
+  - Resample a speech corpus to 16 kHz mono WAV before ASR fine-tuning
+  - Trim silence and normalize loudness across TTS training clips
+  - Convert mixed audio formats into a single codec for dataset packaging
+  - Apply simple effects when building audio augmentation pipelines
