@@ -1,0 +1,26 @@
+name: Redux
+description: Predictable global state container for JavaScript apps. AI dashboards and agent consoles use Redux to keep eval runs, chat threads, and tool-call history consistent across complex UIs.
+tagline: Predictable global state management for JavaScript
+
+github_url: https://github.com/reduxjs/redux
+website_url: https://redux.js.org
+docs_url: https://redux.js.org/introduction/getting-started
+install_command: npm install redux
+
+category: Dev Tools
+tags: [javascript, typescript, state, frontend, npm, react]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Agent consoles accumulate chat, tool results, and eval status in many
+  components at once. Redux stores that state in a single predictable tree
+  with actions and reducers so UI updates stay traceable instead of scattering
+  across ad-hoc React state.
+
+use_cases:
+  - Hold chat threads and tool-call history in an agent console
+  - Track eval-run status across a multi-panel dashboard
+  - Time-travel debug UI state when reproducing a failed agent session
+  - Share selected-model and filter state across catalog pages

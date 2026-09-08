@@ -1,0 +1,25 @@
+name: Immer
+description: Tiny library that lets you produce the next immutable state by writing mutating code. Agent UIs and Redux reducers use Immer to update nested eval and chat state without verbose spread copies.
+tagline: Immutable state updates with mutating syntax
+
+github_url: https://github.com/immerjs/immer
+website_url: https://immerjs.github.io/immer/
+docs_url: https://immerjs.github.io/immer/introduction
+install_command: npm install immer
+
+category: Dev Tools
+tags: [javascript, typescript, immutable, state, npm, react]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Nested agent state (messages, tool calls, eval metrics) is painful to update
+  immutably with spreads. Immer lets reducers mutate a draft and produces the
+  next immutable tree, so UI state stays copy-on-write without boilerplate.
+
+use_cases:
+  - Update nested chat and tool-call objects in a Redux reducer
+  - Patch eval-run metrics in a dashboard store without deep clones
+  - Produce immutable config snapshots after a form edit
+  - Keep React state trees stable while editing nested agent traces

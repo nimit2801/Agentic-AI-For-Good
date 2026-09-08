@@ -1,0 +1,26 @@
+name: Axios
+description: Promise-based HTTP client for the browser and Node.js. Agent runtimes and eval harnesses use Axios to call LLM APIs, webhooks, and internal services with interceptors, timeouts, and consistent error handling.
+tagline: Promise-based HTTP client for browser and Node.js
+
+github_url: https://github.com/axios/axios
+website_url: https://axios-http.com
+docs_url: https://axios-http.com/docs/intro
+install_command: npm install axios
+
+category: Dev Tools
+tags: [javascript, typescript, http, npm, node, frontend]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Fetch is inconsistent across Node versions and browsers, and wrapping every
+  LLM or webhook call with retries and interceptors is noisy. Axios gives a
+  single promise API with timeouts, interceptors, and JSON handling so agent
+  runtimes can talk to APIs without custom HTTP plumbing.
+
+use_cases:
+  - Call LLM and embedding HTTP APIs from a Node agent runtime
+  - Attach auth interceptors for internal eval and telemetry services
+  - Post webhook results when an agent job completes
+  - Share one HTTP client between browser dashboards and Node workers

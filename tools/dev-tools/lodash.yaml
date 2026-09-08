@@ -1,0 +1,26 @@
+name: Lodash
+description: Modern JavaScript utility library for arrays, objects, strings, and functions. Agent UIs and Node ML CLIs use Lodash to transform eval results, group traces, and debounce UI updates without one-off helpers.
+tagline: Modular JavaScript utilities for everyday data work
+
+github_url: https://github.com/lodash/lodash
+website_url: https://lodash.com/
+docs_url: https://lodash.com/docs
+install_command: npm install lodash
+
+category: Dev Tools
+tags: [javascript, typescript, utilities, npm, node, frontend]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Agent dashboards and Node pipelines repeatedly clone, group, debounce, and
+  deep-merge JSON from evals and tool calls. Lodash provides battle-tested
+  helpers for those transforms so teams do not reimplement array and object
+  utilities in every service.
+
+use_cases:
+  - Group and sort eval results before rendering a dashboard table
+  - Deep-merge agent config objects from files and environment overrides
+  - Debounce search and filter handlers in a tools catalog UI
+  - Pick and omit fields when shaping LLM tool-call payloads
