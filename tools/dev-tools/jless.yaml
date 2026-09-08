@@ -1,0 +1,25 @@
+name: jless
+description: Command-line JSON viewer for reading, exploring, and searching large JSON documents in a terminal. jless offers less-like navigation, pretty-printed trees, and fast search so API payloads and model traces stay readable without dumping them into an editor.
+tagline: less-like pager for JSON in the terminal
+
+github_url: https://github.com/PaulJuliusMartinez/jless
+website_url: https://jless.io
+docs_url: https://jless.io
+install_command: brew install jless
+
+category: Dev Tools
+tags: [json, cli, pager, rust, developer-tools, terminal]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  LLM traces, tool-call logs, and API responses arrive as huge JSON blobs that cat, less, and
+  jq struggle to browse interactively. jless paginates nested objects as a navigable tree with
+  search, so you can walk a 10 MB evaluation dump or webhook payload without pretty-printing
+  it into a file first.
+
+use_cases:
+  - Page through LLM trace JSON and tool-call payloads without opening an editor
+  - Search nested keys in evaluation dumps, dataset manifests, and webhook bodies
+  - Inspect pretty-printed API responses from model-serving endpoints in the terminal

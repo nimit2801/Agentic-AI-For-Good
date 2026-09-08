@@ -1,0 +1,25 @@
+name: VLC
+description: Cross-platform open-source media player that plays nearly every audio and video format without extra codecs. VLC handles local files, discs, streams, and network sources, making it a reliable viewer for generated media, dataset samples, and model demo videos on any OS.
+tagline: Plays almost every media format on every platform
+
+github_url: https://github.com/videolan/vlc
+website_url: https://www.videolan.org/vlc/
+docs_url: https://www.videolan.org/vlc/documentation.html
+install_command: brew install --cask vlc
+
+category: Other
+tags: [video, audio, media-player, cross-platform, open-source]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Training datasets, generated clips, and model demos arrive in odd containers and codecs that
+  stock players refuse. VLC decodes almost every format on Windows, macOS, Linux, and mobile,
+  so researchers can inspect samples and review outputs without hunting for a codec pack or
+  converting files first.
+
+use_cases:
+  - Play unusual dataset video and audio formats without converting them first
+  - Review generated media from video and speech models across Windows, macOS, and Linux
+  - Stream or cast demo videos of agent and model outputs during reviews and talks

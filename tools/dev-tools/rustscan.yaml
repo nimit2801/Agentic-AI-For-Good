@@ -1,0 +1,25 @@
+name: RustScan
+description: Modern port scanner written in Rust that finds open ports in seconds, then hands them to nmap for deeper probing. RustScan uses asynchronous scanning so large host ranges finish quickly without drowning the network.
+tagline: Asynchronous port scanner that feeds nmap
+
+github_url: https://github.com/bee-san/RustScan
+website_url: https://github.com/bee-san/RustScan
+docs_url: https://github.com/bee-san/RustScan/wiki
+install_command: brew install rustscan
+
+category: Dev Tools
+tags: [rust, cli, port-scanner, networking, security, nmap]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Classic port scans against GPU clusters, inference hosts, and staging VPCs take minutes
+  and still miss the services that actually matter. RustScan finds open ports asynchronously
+  in seconds, then pipes them to nmap for version and script scans so you get a full picture
+  of what is listening without waiting on a slow sequential sweep.
+
+use_cases:
+  - Scan a Kubernetes node pool for unexpected listeners before exposing an inference API
+  - Inventory open ports on GPU workstations and training boxes during a security review
+  - Feed discovered ports into nmap for service fingerprinting of model-serving stacks
