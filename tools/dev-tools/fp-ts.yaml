@@ -1,0 +1,26 @@
+name: fp-ts
+description: Functional programming library for TypeScript with Option, Either, and Task types. Agent backends use fp-ts to model LLM failures, missing tool results, and async pipelines as typed data instead of thrown exceptions.
+tagline: Typed functional programming for TypeScript
+
+github_url: https://github.com/gcanti/fp-ts
+website_url: https://gcanti.github.io/fp-ts/
+docs_url: https://gcanti.github.io/fp-ts/
+install_command: npm install fp-ts
+
+category: Dev Tools
+tags: [typescript, functional, either, option, npm, node]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Agent code paths mix thrown errors, nulls, and promises when a model or
+  tool fails. fp-ts models those cases as Option, Either, and Task so
+  TypeScript can force handling of missing tool results and failed LLM
+  calls before they leak into downstream steps.
+
+use_cases:
+  - Wrap LLM calls in TaskEither so timeouts become typed failures
+  - Model missing retrieval hits as Option instead of null checks
+  - Pipe tool-call results through Either maps in a Node agent
+  - Compose validation and IO steps without nested try/catch

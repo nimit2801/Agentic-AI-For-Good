@@ -1,0 +1,26 @@
+name: Immutable.js
+description: Persistent immutable collections for JavaScript. Agent UIs and Node pipelines use Immutable.js Lists, Maps, and Records so eval traces and config trees can be updated without mutating shared state.
+tagline: Persistent immutable collections for JavaScript
+
+github_url: https://github.com/immutable-js/immutable-js
+website_url: https://immutable-js.com
+docs_url: https://immutable-js.com/docs/latest/
+install_command: npm install immutable
+
+category: Dev Tools
+tags: [javascript, immutable, data-structures, npm, node, frontend]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Shared eval traces and config objects get mutated across React state and
+  Node workers, causing hard-to-debug races. Immutable.js persistent Lists
+  and Maps return new versions on write so agent UIs can compare snapshots
+  cheaply without cloning entire trees.
+
+use_cases:
+  - Store eval traces in an Immutable Map for cheap React re-renders
+  - Update nested agent config without mutating the previous snapshot
+  - Diff two Immutable Lists of tool-call events in a debugger
+  - Share persistent collections across web workers in a local agent runtime
