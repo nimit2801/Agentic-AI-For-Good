@@ -1,0 +1,25 @@
+name: gobuster
+description: Directory, DNS, and virtual-host enumeration tool written in Go. Gobuster brute-forces hidden paths, subdomains, and vhosts against HTTP, DNS, and S3-style endpoints so teams can inventory undocumented APIs and service surfaces before they ship.
+tagline: Fast Go-based directory, DNS, and vhost enumeration
+
+github_url: https://github.com/OJ/gobuster
+website_url: https://github.com/OJ/gobuster
+docs_url: https://github.com/OJ/gobuster/blob/master/README.md
+install_command: go install github.com/OJ/gobuster/v3@latest
+
+category: Dev Tools
+tags: [go, cli, recon, enumeration, security, dns, http]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Web and ML services often expose undocumented paths, forgotten admin routes, and stale
+  subdomains that never show up in OpenAPI specs. Gobuster enumerates directories, DNS names,
+  and virtual hosts at high speed so teams can map the real surface of an API or inference
+  stack instead of trusting incomplete docs.
+
+use_cases:
+  - Inventory hidden HTTP paths on an inference API that are missing from OpenAPI docs
+  - Enumerate subdomains for a model-serving cluster before a security review
+  - Discover leftover S3-style buckets and vhosts that leak dataset or checkpoint files
