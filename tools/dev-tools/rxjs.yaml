@@ -1,0 +1,26 @@
+name: RxJS
+description: Reactive programming library for JavaScript using Observables. Agent UIs and streaming LLM clients use RxJS to compose clicks, tokens, and websocket events into cancellable async pipelines.
+tagline: Reactive programming with Observables for JavaScript
+
+github_url: https://github.com/ReactiveX/rxjs
+website_url: https://rxjs.dev
+docs_url: https://rxjs.dev/guide/overview
+install_command: npm install rxjs
+
+category: Dev Tools
+tags: [javascript, typescript, reactive, streams, npm, async]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Streaming LLM tokens, websocket tool events, and UI input all arrive as
+  async sequences that need cancel, retry, and combine. RxJS Observables
+  compose those streams so agent clients can unsubscribe on abort instead of
+  nesting promises and event listeners.
+
+use_cases:
+  - Stream LLM tokens into a chat UI with cancellation on stop
+  - Debounce and switch search queries against a semantic search API
+  - Merge websocket agent events with HTTP polling fallbacks
+  - Retry failed tool-call streams with backoff in a browser client
