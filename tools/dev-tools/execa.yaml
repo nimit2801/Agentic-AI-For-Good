@@ -1,0 +1,25 @@
+name: execa
+description: Better child-process execution for Node.js, with promise APIs, streaming, and cancellation. Agent runtimes and ML CLIs use execa to spawn Python, FFmpeg, and toolchain binaries without fighting Node's raw child_process API.
+tagline: Process execution for humans in Node.js
+
+github_url: https://github.com/sindresorhus/execa
+docs_url: https://github.com/sindresorhus/execa#readme
+install_command: npm install execa
+
+category: Dev Tools
+tags: [javascript, typescript, node, child-process, cli, npm]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Node's built-in child_process is verbose, error-prone, and awkward with
+  streaming, cancellation, and Windows quoting. execa wraps spawn with promises,
+  IPC, and sensible defaults so agent runtimes and ML CLIs can call Python,
+  FFmpeg, and other binaries without custom process plumbing.
+
+use_cases:
+  - Spawn Python training or eval scripts from a Node agent runtime
+  - Run FFmpeg or SoX as a subprocess in an audio preprocessing CLI
+  - Capture stdout/stderr from toolchain commands with proper cancellation
+  - Build a Node CLI that shells out to cargo, git, or docker safely
