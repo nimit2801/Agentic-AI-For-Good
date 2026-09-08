@@ -1,0 +1,24 @@
+name: sharp
+description: High-performance Node.js image processing library built on libvips. sharp resizes, converts, and compresses JPEG, PNG, WebP, AVIF, and TIFF much faster than ImageMagick bindings, which makes it a default choice for dataset thumbnails and generated-image pipelines.
+tagline: Fast libvips-based image processing for Node.js
+
+github_url: https://github.com/lovell/sharp
+website_url: https://sharp.pixelplumbing.com
+docs_url: https://sharp.pixelplumbing.com/api-constructor
+install_command: npm install sharp
+
+category: Dev Tools
+tags: [javascript, nodejs, images, libvips, resize, webp, avif]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Generating, uploading, and serving AI images in Node often means shelling out to ImageMagick
+  or blocking on slow Canvas code. sharp streams decode, resize, and encode through libvips so
+  thumbnail, WebP, and AVIF jobs keep up with a generation queue without extra processes.
+
+use_cases:
+  - Resize and convert generated images to WebP or AVIF before storing them
+  - Build dataset thumbnails and preview strips in a Node ingestion worker
+  - Strip metadata and compress user uploads before they enter a vision-model pipeline
