@@ -1,0 +1,26 @@
+name: chokidar
+description: Minimal, efficient cross-platform file watcher for Node.js. Agent CLIs, RAG indexers, and ML pipelines use chokidar to reload prompts, configs, and dataset files the moment they change on disk.
+tagline: Minimal cross-platform file watching for Node.js
+
+github_url: https://github.com/paulmillr/chokidar
+website_url: https://github.com/paulmillr/chokidar
+docs_url: https://github.com/paulmillr/chokidar#readme
+install_command: npm install chokidar
+
+category: Dev Tools
+tags: [javascript, typescript, node, filesystem, watch, npm]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Node fs.watch is inconsistent across macOS, Linux, and Windows, which breaks
+  hot-reload for agent configs and dataset folders. chokidar wraps native
+  watchers with a stable API so CLIs and indexers can react to file changes
+  without platform-specific bugs.
+
+use_cases:
+  - Hot-reload agent prompts and YAML configs when files change
+  - Watch a dataset or embeddings folder and re-index new documents
+  - Trigger eval reruns when test fixtures or goldens are updated
+  - Rebuild a local RAG corpus as markdown files land on disk

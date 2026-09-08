@@ -1,0 +1,25 @@
+name: jsdom
+description: JavaScript implementation of web standards for Node.js, including DOM, HTML, and CSS. Teams use jsdom to scrape, test, and extract content from pages in RAG pipelines and agent browsers without launching a full browser.
+tagline: Web standards in Node.js without a real browser
+
+github_url: https://github.com/jsdom/jsdom
+docs_url: https://github.com/jsdom/jsdom#readme
+install_command: npm install jsdom
+
+category: Dev Tools
+tags: [javascript, typescript, node, dom, html, testing, npm]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Many RAG crawlers and agent tests need a DOM in Node, not a headed browser.
+  jsdom implements HTML parsing, the DOM, and enough browser APIs to query,
+  mutate, and extract page content in CI and data pipelines without Puppeteer
+  or Playwright overhead.
+
+use_cases:
+  - Parse HTML into a DOM for RAG chunking and content extraction
+  - Unit-test UI components that depend on document and window
+  - Extract metadata and article text from crawled pages in Node
+  - Simulate form and script behavior in agent evaluation fixtures
