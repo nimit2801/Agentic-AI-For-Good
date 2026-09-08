@@ -1,0 +1,26 @@
+name: Undici
+description: HTTP/1.1 client written from scratch for Node.js and used as Node's built-in fetch backend. Agent runtimes use Undici for high-throughput LLM API calls with pooling, pipelining, and streaming.
+tagline: High-performance HTTP client for Node.js
+
+github_url: https://github.com/nodejs/undici
+website_url: https://undici.nodejs.org/
+docs_url: https://undici.nodejs.org/#/
+install_command: npm install undici
+
+category: Dev Tools
+tags: [javascript, typescript, http, node, fetch, npm]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Node agent runtimes that fire many LLM and embedding requests need
+  connection pooling and streaming without a browser-oriented client.
+  Undici is Node's HTTP client with keep-alive, pipelining, and fetch, so
+  high-QPS inference calls stay fast and standards-compliant.
+
+use_cases:
+  - Call LLM and embedding APIs at high QPS from a Node gateway
+  - Stream SSE token responses with Node's fetch implementation
+  - Pool connections across parallel eval jobs
+  - Replace slower HTTP clients in a Node agent worker

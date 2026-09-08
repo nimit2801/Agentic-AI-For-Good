@@ -1,0 +1,26 @@
+name: Apache ECharts
+description: Powerful interactive charting library for the browser. AI product dashboards use ECharts to render large eval, usage, and latency series with zoom, tooltips, and canvas rendering.
+tagline: Interactive browser charts for large metric series
+
+github_url: https://github.com/apache/echarts
+website_url: https://echarts.apache.org
+docs_url: https://echarts.apache.org/handbook/en/get-started/
+install_command: npm install echarts
+
+category: Other
+tags: [javascript, visualization, charts, apache, frontend, npm]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  LLM gateways and eval platforms accumulate long time-series that bog down
+  naive SVG charts. Apache ECharts renders interactive line, bar, and heatmap
+  charts on canvas so usage, latency, and score dashboards stay responsive
+  with large datasets.
+
+use_cases:
+  - Chart token usage and latency over weeks for an LLM gateway
+  - Render zoomable eval-score time series on an ops dashboard
+  - Show heatmaps of model quality across datasets and versions
+  - Embed interactive charts in a static HTML experiment report
