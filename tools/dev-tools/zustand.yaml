@@ -1,0 +1,24 @@
+name: Zustand
+description: Small, hook-based state library for React. Zustand stores global state in a single store with selectors, so dashboards for chats, traces, and eval runs stay simple without Redux boilerplate or Context provider trees.
+tagline: Bear necessities for React state
+
+github_url: https://github.com/pmndrs/zustand
+website_url: https://zustand-demo.pmnd.rs/
+docs_url: https://docs.pmnd.rs/zustand/getting-started/introduction
+install_command: npm install zustand
+
+category: Dev Tools
+tags: [javascript, typescript, react, state-management, hooks]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  AI product UIs juggle streaming tokens, tool-call panels, and eval filters. Redux is heavy and
+  Context re-renders too much. Zustand is a tiny store with selectors so React apps can share
+  chat and trace state without boilerplate or wrapping the tree in providers.
+
+use_cases:
+  - Hold streaming chat and tool-call state in a React agent console
+  - Share eval filters and selected runs across dashboard panels without Context
+  - Persist UI preferences for model playgrounds with a few lines of store code
