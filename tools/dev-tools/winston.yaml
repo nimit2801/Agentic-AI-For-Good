@@ -1,0 +1,25 @@
+name: winston
+description: Flexible Node.js logger with transports for files, consoles, and HTTP. Agent runtimes and ML CLIs use winston to capture structured logs from tool calls, evals, and background jobs without rolling a custom logger.
+tagline: A logger for just about everything in Node.js
+
+github_url: https://github.com/winstonjs/winston
+docs_url: https://github.com/winstonjs/winston#readme
+install_command: npm install winston
+
+category: Dev Tools
+tags: [javascript, typescript, node, logging, observability, npm]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Agent runtimes and Node ML CLIs need structured logs that can fan out to
+  files, consoles, and remote sinks. winston provides levels, formats, and
+  transports so you can record tool calls, evals, and errors without writing
+  a custom logger for every service.
+
+use_cases:
+  - Log agent tool calls and LLM request metadata to rotating files
+  - Ship structured JSON logs from a Node eval runner to a log sink
+  - Separate debug, info, and error streams across CLI and daemon modes
+  - Attach request IDs when tracing multi-step agent jobs
