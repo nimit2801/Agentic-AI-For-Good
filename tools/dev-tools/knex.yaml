@@ -1,0 +1,25 @@
+name: Knex
+description: SQL query builder for Node.js that works with PostgreSQL, MySQL, CockroachDB, SQL Server, SQLite, and Oracle. Knex gives a portable, composable API for queries, schema, and migrations without locking you into a full ORM.
+tagline: Flexible SQL query builder for Node.js
+
+github_url: https://github.com/knex/knex
+website_url: https://knexjs.org/
+docs_url: https://knexjs.org/guide/
+install_command: npm install knex
+
+category: Dev Tools
+tags: [javascript, typescript, sql, query-builder, nodejs, postgresql, mysql]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Node services that store embeddings, eval results, and experiment metadata often glue together
+  raw SQL strings or a heavy ORM they do not need. Knex builds parameterized queries and schema
+  migrations that run on Postgres, MySQL, SQLite, and more, so the same data layer works from
+  local notebooks to production without rewriting SQL per dialect.
+
+use_cases:
+  - Query Postgres feature stores and experiment tables from a Node evaluation service
+  - Write portable schema migrations for datasets, runs, and model-registry metadata
+  - Compose parameterized SQL for RAG document stores without embedding raw strings

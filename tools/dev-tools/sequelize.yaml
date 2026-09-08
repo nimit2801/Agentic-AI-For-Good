@@ -1,0 +1,25 @@
+name: Sequelize
+description: Feature-rich ORM for Node.js and TypeScript with support for PostgreSQL, MySQL, MariaDB, SQLite, SQL Server, Snowflake, Oracle, and DB2. Sequelize maps tables to models with associations, transactions, eager loading, and migrations.
+tagline: Promise-based ORM for Node.js and TypeScript
+
+github_url: https://github.com/sequelize/sequelize
+website_url: https://sequelize.org/
+docs_url: https://sequelize.org/docs/v6/
+install_command: npm install sequelize
+
+category: Dev Tools
+tags: [javascript, typescript, orm, sql, nodejs, postgresql, mysql]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  AI product backends need models for users, conversations, traces, and usage billing across
+  several SQL engines. Sequelize gives a typed model layer with associations, transactions, and
+  migrations so Node services can persist agent state and eval data without hand-rolling SQL for
+  every dialect.
+
+use_cases:
+  - Persist conversation history, traces, and usage records for an agent backend in Postgres
+  - Model associations between datasets, experiments, and model versions in TypeScript
+  - Run transactions around eval writes so partial results never leave the database half-applied
