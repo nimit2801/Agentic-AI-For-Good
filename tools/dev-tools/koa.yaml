@@ -1,0 +1,25 @@
+name: Koa
+description: Expressive Node.js web framework built on async middleware. Koa is a slimmer successor to Express that uses async functions for request handling, giving clean control flow for APIs that serve models, agents, and evaluation jobs.
+tagline: Async middleware framework for Node.js APIs
+
+github_url: https://github.com/koajs/koa
+website_url: https://koajs.com
+docs_url: https://koajs.com
+install_command: npm install koa
+
+category: Dev Tools
+tags: [javascript, nodejs, http, middleware, api, web-framework]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Express-style callbacks and monkey-patched request objects make it hard to compose auth,
+  tracing, and streaming around LLM endpoints. Koa uses a clean async middleware stack with
+  its own context object, so you can await model calls, set headers, and handle errors without
+  callback pyramids or surprising req/res mutation.
+
+use_cases:
+  - Serve a typed inference or agent API with async middleware for auth and tracing
+  - Stream token responses from an LLM endpoint without blocking the event loop
+  - Compose request logging and error handling around evaluation and webhook handlers

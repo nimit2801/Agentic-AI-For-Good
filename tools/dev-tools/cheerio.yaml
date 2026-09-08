@@ -1,0 +1,24 @@
+name: Cheerio
+description: Fast, flexible library for parsing and manipulating HTML and XML in Node.js with a jQuery-like API. Cheerio loads markup into a DOM you can query and edit without a browser, which is ideal for scraping docs, cleaning crawled pages, and extracting training text.
+tagline: jQuery-like HTML and XML parsing for Node.js
+
+github_url: https://github.com/cheeriojs/cheerio
+website_url: https://cheerio.js.org
+docs_url: https://cheerio.js.org/docs/intro
+install_command: npm install cheerio
+
+category: Dev Tools
+tags: [javascript, nodejs, html, xml, scraping, parsing, jquery]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Building RAG corpora and eval sets from HTML usually means regex or a full browser. Cheerio
+  parses markup server-side with CSS selectors so you can strip nav, pull article text, and
+  rewrite links without spinning up Chromium for every page.
+
+use_cases:
+  - Extract article text from crawled HTML before chunking it for a RAG index
+  - Strip scripts, nav, and ads from documentation sites used as LLM context
+  - Rewrite relative links in scraped pages so a knowledge base stores canonical URLs

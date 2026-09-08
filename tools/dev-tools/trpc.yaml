@@ -1,0 +1,26 @@
+name: tRPC
+description: End-to-end typesafe API layer for TypeScript. tRPC shares procedure types between server and client so frontend apps call backend routers like local functions, catching contract breaks at compile time instead of in production.
+tagline: End-to-end typesafe APIs for TypeScript
+
+github_url: https://github.com/trpc/trpc
+website_url: https://trpc.io
+docs_url: https://trpc.io/docs
+install_command: |
+  npm install @trpc/server @trpc/client
+
+category: Dev Tools
+tags: [typescript, api, rpc, nodejs, typesafe, full-stack]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Hand-written REST contracts between a Next.js UI and an agent backend drift the moment a
+  procedure argument changes. tRPC infers client types from the server router, so adding a
+  field to a chat, tool-call, or eval endpoint updates callers at compile time with no codegen
+  step.
+
+use_cases:
+  - Expose typed procedures for chat, tool calls, and eval jobs from a TypeScript backend
+  - Share input and output types between a Next.js app and an agent API without OpenAPI codegen
+  - Catch breaking changes to model-serving routes at compile time instead of in production

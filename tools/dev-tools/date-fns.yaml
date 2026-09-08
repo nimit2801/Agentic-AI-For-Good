@@ -1,0 +1,25 @@
+name: date-fns
+description: Modern JavaScript date utility library with a functional, tree-shakeable API. date-fns provides immutable helpers for parsing, formatting, and comparing dates so time-based eval windows, schedules, and logs stay consistent across browsers and Node.
+tagline: Functional, tree-shakeable date helpers for JavaScript
+
+github_url: https://github.com/date-fns/date-fns
+website_url: https://date-fns.org
+docs_url: https://date-fns.org/docs/Getting-Started
+install_command: npm install date-fns
+
+category: Dev Tools
+tags: [javascript, typescript, dates, time, utilities, tree-shakeable]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Native Date objects are mutable, timezone-awkward, and easy to format wrong in logs and
+  dashboards. date-fns ships small, pure functions you can import one at a time, so experiment
+  timestamps, cron windows, and relative times in an AI product stay consistent without a
+  heavyweight date framework.
+
+use_cases:
+  - Format experiment and eval timestamps consistently in dashboards and logs
+  - Compute rolling windows for usage, cost, and latency reports without mutating Date objects
+  - Parse ISO timestamps from model traces and convert them for display in the UI
