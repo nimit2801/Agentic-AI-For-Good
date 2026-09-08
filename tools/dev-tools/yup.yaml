@@ -1,0 +1,26 @@
+name: Yup
+description: Dead-simple JavaScript object schema validation with async checks and type inference. Agent APIs use Yup to validate LLM structured output, form payloads, and tool-call arguments before they hit business logic.
+tagline: Dead-simple object schema validation for JavaScript
+
+github_url: https://github.com/jquense/yup
+website_url: https://github.com/jquense/yup
+docs_url: https://github.com/jquense/yup
+install_command: npm install yup
+
+category: Dev Tools
+tags: [javascript, typescript, validation, schema, npm, node]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Agent endpoints accept nested JSON from models and UIs that is easy to
+  shape-check by hand and easy to get wrong. Yup describes object schemas
+  with chainable rules so invalid tool-call and form payloads fail at the
+  boundary instead of deep in a handler.
+
+use_cases:
+  - Validate LLM structured output before writing it to a database
+  - Check agent form payloads in a Next.js API route
+  - Coerce and default tool-call arguments from an LLM
+  - Share the same schema between a React form and a Node agent service

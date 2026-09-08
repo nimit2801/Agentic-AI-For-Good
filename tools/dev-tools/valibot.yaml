@@ -1,0 +1,26 @@
+name: Valibot
+description: Modular, tree-shakable TypeScript schema library for validating structural data. Agent CLIs and edge workers use Valibot to type-check LLM output and config with a smaller bundle than Zod.
+tagline: Modular type-safe schemas with a small bundle
+
+github_url: https://github.com/fabian-hiller/valibot
+website_url: https://valibot.dev
+docs_url: https://valibot.dev/guides/introduction/
+install_command: npm install valibot
+
+category: Dev Tools
+tags: [typescript, validation, schema, npm, edge, tree-shaking]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Full schema libraries pull a large runtime into edge agent workers and
+  browser UIs. Valibot ships modular, tree-shakable validators so teams can
+  check LLM structured output and config with TypeScript types without a
+  heavy schema bundle.
+
+use_cases:
+  - Validate LLM structured output in an edge worker with a small bundle
+  - Parse agent CLI config files into typed objects
+  - Share schemas between a browser eval UI and a Node API
+  - Replace ad-hoc typeof checks on tool-call arguments
