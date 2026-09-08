@@ -1,0 +1,25 @@
+name: MindSearch
+description: LLM multi-agent web search framework that plans, searches, and synthesizes cited answers. Teams use MindSearch to build Perplexity-style research agents that browse the web instead of answering from parametric memory alone.
+tagline: Multi-agent web search engine powered by LLMs
+
+github_url: https://github.com/InternLM/MindSearch
+website_url: https://github.com/InternLM/MindSearch
+docs_url: https://github.com/InternLM/MindSearch
+
+category: RAG
+tags: [python, rag, agents, web-search, multi-agent, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Single-shot RAG over a fixed corpus misses live web facts and cannot
+  decompose a research question. MindSearch runs planner and searcher
+  agents that break a query into web searches and synthesize cited
+  answers, so teams can ship a research engine without a closed search API.
+
+use_cases:
+  - Build a Perplexity-style research agent over the public web
+  - Decompose a complex question into parallel search sub-queries
+  - Cite web sources in an internal knowledge assistant
+  - Prototype a multi-agent search pipeline on InternLM or other LLMs
