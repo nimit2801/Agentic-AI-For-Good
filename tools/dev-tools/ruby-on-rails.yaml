@@ -1,0 +1,28 @@
+name: Ruby on Rails
+description: Ruby on Rails is a full-stack web framework that favors convention over configuration for models, controllers, and views. Teams use it to ship AI product APIs, admin apps, and background jobs with Active Record and a batteries-included Ruby stack.
+tagline: Convention-over-configuration web framework in Ruby
+
+github_url: https://github.com/rails/rails
+website_url: https://rubyonrails.org
+docs_url: https://guides.rubyonrails.org
+
+install_command: gem install rails
+
+category: Dev Tools
+tags: [ruby, backend, framework, orm, fullstack, web]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Building an AI product backend from Rack and gems means reinventing
+  routing, persistence, and jobs. Rails gives Active Record, Active
+  Job, and a conventional app structure so a small team can ship an
+  API and admin UI in front of a model service.
+
+use_cases:
+  - Build a Rails API that stores prompts, users, and model outputs
+  - Run embedding or eval work in Active Job workers
+  - Ship an admin interface with Hotwire for an internal AI tool
+  - Use Active Record migrations to version the product database
+  - Scaffold a full-stack app that calls an LLM from a controller or job
