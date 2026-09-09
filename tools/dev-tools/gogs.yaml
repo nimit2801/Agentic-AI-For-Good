@@ -1,0 +1,26 @@
+name: Gogs
+description: Lightweight self-hosted Git service written in Go. Teams keep agent code, model cards, and experiment notes on a single binary with a GitHub-like UI, without running GitLab or GitHub Enterprise.
+tagline: Single-binary self-hosted Git with a GitHub-like UI
+
+github_url: https://github.com/gogs/gogs
+website_url: https://gogs.io
+docs_url: https://gogs.io/docs
+
+category: Dev Tools
+tags: [git, self-hosted, go, devops, source-control]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  On-prem ML labs still need Git with issues and a web UI, but GitLab is
+  heavy and GitHub cannot hold private model code. Gogs is a single Go
+  binary that hosts repos on a VPS so training code stays inside the
+  network without a full DevOps platform.
+
+use_cases:
+  - Self-host agent and training repos on a lab VPS with a GitHub-like UI
+  - Keep model cards and experiment notes next to code without a SaaS git host
+  - Mirror internal forks when weights and data cannot leave a private network
+  - Run a lightweight git forge for a small ML team that does not need GitLab CI
+  - Back up research code to a box you control instead of a public cloud

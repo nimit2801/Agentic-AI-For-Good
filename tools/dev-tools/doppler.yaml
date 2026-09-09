@@ -1,0 +1,27 @@
+name: Doppler
+description: Secrets platform that syncs API keys and config across local shells, CI, and cloud runtimes. ML teams keep LLM tokens and cloud credentials in one vault and inject them at runtime instead of copying .env files.
+tagline: Sync secrets from a vault into shells, CI, and cloud
+
+github_url: https://github.com/DopplerHQ/cli
+website_url: https://www.doppler.com
+docs_url: https://docs.doppler.com
+
+install_command: brew install doppler
+
+category: Dev Tools
+tags: [secrets, env, cli, ci-cd, credentials, devops]
+pricing: freemium
+is_open_source: false
+
+problem_solved: |
+  Agent APIs and training jobs still scatter OpenAI keys across .env files,
+  GitHub secrets, and cloud consoles. Doppler stores those values once and
+  injects them into a local shell, CI job, or container so credentials stay
+  out of git and stay in sync across environments.
+
+use_cases:
+  - Load LLM API keys into a training shell with doppler run
+  - Sync staging and production secrets for an agent API without hand-editing .env
+  - Inject Hugging Face tokens into GitHub Actions from Doppler
+  - Rotate a cloud credential once and have every runtime pick it up
+  - Share a project config with teammates without sending keys in Slack
