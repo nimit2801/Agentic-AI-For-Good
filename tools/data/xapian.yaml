@@ -1,0 +1,24 @@
+name: Xapian
+description: Open-source probabilistic search engine library with ranking, faceting, and bindings for many languages. Teams use it to add full-text retrieval to RAG pipelines and knowledge bases without standing up a separate search cluster.
+tagline: Probabilistic full-text search library
+
+github_url: https://github.com/xapian/xapian
+website_url: https://xapian.org
+docs_url: https://xapian.org/docs/
+
+category: Data
+tags: [search, full-text-search, information-retrieval, indexing, cpp, rag]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Keyword retrieval still matters in RAG and knowledge search, but
+  running Elasticsearch is heavy for embedded or on-prem tools. Xapian
+  is an embeddable search library so teams add ranked full-text retrieval
+  without operating a search cluster.
+
+use_cases:
+  - Add ranked keyword search to a local RAG knowledge base
+  - Embed full-text retrieval in an on-prem agent without Elasticsearch
+  - Combine Xapian keyword scores with vector search for hybrid RAG
