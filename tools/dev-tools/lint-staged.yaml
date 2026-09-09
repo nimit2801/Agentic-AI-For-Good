@@ -1,0 +1,27 @@
+name: lint-staged
+description: Runs linters and formatters only on git-staged files. Drop it in a pre-commit hook so Python and JS ML repos fail fast on the files you actually touched, not the whole monorepo.
+tagline: Run linters only on git-staged files
+
+github_url: https://github.com/lint-staged/lint-staged
+website_url: https://github.com/lint-staged/lint-staged
+docs_url: https://github.com/lint-staged/lint-staged#readme
+
+install_command: npm install lint-staged
+
+category: Dev Tools
+tags: [javascript, git, lint, pre-commit, monorepo, ci, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Full-repo lint on every commit is slow in JS and Python monorepos, so
+  people skip hooks. lint-staged runs formatters and linters only on
+  staged files, so pre-commit stays fast and still blocks bad diffs in
+  agent and web app repos.
+
+use_cases:
+  - Run Prettier and ESLint only on staged JS files before commit
+  - Keep a Python ML monorepo hook fast by linting touched files only
+  - Pair with Husky or leftover git hooks so CI style checks fail locally
+  - Avoid rewriting an entire generated folder when one source file changed
