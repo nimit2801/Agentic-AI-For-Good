@@ -1,0 +1,26 @@
+name: PyCharm
+description: PyCharm is JetBrains Python IDE with a debugger, test runner, scientific tools, and a Python-aware refactor engine. AI teams use it for training scripts, FastAPI services, and notebooks with inspections that catch type and import issues early.
+tagline: JetBrains Python IDE for apps, tests, and notebooks
+
+website_url: https://www.jetbrains.com/pycharm/
+docs_url: https://www.jetbrains.com/help/pycharm/
+
+install_command: brew install --cask pycharm
+
+category: Dev Tools
+tags: [python, ide, jetbrains, debugger, notebooks, editor]
+pricing: freemium
+is_open_source: false
+
+problem_solved: |
+  Python AI work spans scripts, packages, tests, and notebooks that a
+  plain editor does not wire together. PyCharm adds a Python debugger,
+  test runner, venv and conda support, and inspections so training code
+  and API services stay navigable as the repo grows.
+
+use_cases:
+  - Debug training loops and FastAPI services with breakpoints and a Python console
+  - Run pytest and manage virtualenv or conda interpreters in one IDE
+  - Edit Jupyter notebooks next to the library code they import
+  - Refactor Python packages with rename, extract, and import inspections
+  - Jump from a call site to a model SDK definition without leaving the editor
