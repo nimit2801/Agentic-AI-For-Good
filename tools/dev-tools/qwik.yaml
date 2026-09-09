@@ -1,0 +1,28 @@
+name: Qwik
+description: Qwik is a web framework that ships HTML first and lazy-loads code on interaction, aiming for instant load on slow networks. Teams use it for public AI marketing sites and playgrounds where first-load JS would otherwise stall the page.
+tagline: Resumable web framework with instant HTML-first loads
+
+github_url: https://github.com/QwikDev/qwik
+website_url: https://qwik.dev
+docs_url: https://qwik.dev/docs/
+
+install_command: npm install @builder.io/qwik
+
+category: Dev Tools
+tags: [javascript, typescript, frontend, ssr, performance, framework]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Public AI product pages hydrate megabytes of JS before a playground
+  is usable. Qwik resumes on the server-rendered HTML and downloads
+  code only when a control is used, so first paint stays fast even
+  when the app later loads a model widget.
+
+use_cases:
+  - Ship a public AI playground that is interactive before hydrating a SPA
+  - Lazy-load model-widget code only after the user clicks Run
+  - Host a marketing site and a docs demo on the same Qwik app
+  - Keep first-load JS small for users on slow mobile networks
+  - Resume server-rendered HTML instead of rehydrating a full client tree

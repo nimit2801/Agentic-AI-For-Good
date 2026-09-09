@@ -1,0 +1,27 @@
+name: Preact
+description: Preact is a 3kb React-compatible UI library with the same component and hooks model. Teams drop it in when a chat widget or embed must stay tiny but still use a React-like API and the existing JSX ecosystem.
+tagline: 3kb React-compatible UI library for small bundles
+
+github_url: https://github.com/preactjs/preact
+website_url: https://preactjs.com
+docs_url: https://preactjs.com/guide/v10/getting-started
+
+install_command: npm install preact
+
+category: Dev Tools
+tags: [javascript, typescript, frontend, react, performance, spa]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Embeddable agent widgets cannot afford a full React runtime on every
+  host page. Preact keeps the familiar component and hooks API at about
+  3kb so a chat embed or toolbar ships without dragging React along.
+
+use_cases:
+  - Embed a chat widget on a docs site without shipping full React
+  - Alias React to Preact in a Vite app to shrink an AI playground bundle
+  - Build a JSX UI with hooks when the host page already has tight size limits
+  - Replace React in a support chatbot overlay that loads on every page
+  - Keep a familiar component API while cutting client JavaScript
