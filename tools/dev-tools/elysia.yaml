@@ -1,0 +1,25 @@
+name: Elysia
+description: Ergonomic TypeScript web framework built for Bun, with end-to-end type safety, OpenAPI, and high throughput. Teams use it to serve LLM APIs, agent webhooks, and streaming inference endpoints without a heavy Node server stack.
+tagline: Type-safe web framework for Bun
+
+github_url: https://github.com/elysiajs/elysia
+website_url: https://elysiajs.com
+docs_url: https://elysiajs.com/tutorial
+install_command: bun add elysia
+
+category: Dev Tools
+tags: [bun, typescript, web-framework, api, openapi, http, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  LLM gateways and agent webhooks need a fast TypeScript HTTP layer with
+  typed routes and OpenAPI, not a slow Express rewrite. Elysia is built for
+  Bun and infers types from the schema so teams ship inference APIs and
+  streaming endpoints with less boilerplate and fewer runtime surprises.
+
+use_cases:
+  - Serve a typed LLM or embedding HTTP API on Bun with OpenAPI docs
+  - Expose agent webhook and tool-calling endpoints with schema validation
+  - Stream inference tokens over a high-throughput Bun HTTP server
