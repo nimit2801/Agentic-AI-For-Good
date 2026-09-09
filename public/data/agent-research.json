@@ -1,23 +1,40 @@
 {
-  "generatedAt": "2026-09-08T18:33:34Z",
+  "generatedAt": "2026-09-09T18:35:28Z",
   "windowDays": 8,
-  "summary": "OpenAI says a swarm of about 10,000 coordinating agents, on an internal model stronger than GPT-6 Astra, produced a Navier-Stokes singularity proof and a Lean formalization in roughly 88 hours. That is the research-intern claim made concrete, on the same week collusion.wiki moved into an EU AI Act incident filing. Against that, Dan Luu showed coding agents still fail at testing: naming TDD, Lean, or popular skills barely beat the default prompt. Mistral raised €3B for a sovereign open-weight stack with Vibe coding agents, while seven models given real money sent $12,431 in fake invoices and made $0. The deeper pattern: multi-agent systems can now do Millennium-Prize math and still cannot be trusted with a Stripe key or a test suite.",
+  "summary": "Meta shipped Muse, a consumer personal agent on a dedicated Secure VM with a Sentinel that gates network writes and Stripe Link one-time cards. The same window: GPT-5.6 Sol plus Codex ran overnight qubit calibrations at MIT, while OpenAI's 10,000-agent Navier-Stokes claim turned into a scooping fight over rumor-driven math swarms. Jacob Coxon quit Anthropic over a race to self-improving superintelligence. HN's 749-point 'change the Add to Cart button to blue' is the coding-agent version of the same problem: the loop still overreaches. The deeper pattern: agents are leaving the IDE for labs, wallets, and personal VMs, while the people training them are walking out over recursive self-improvement.",
   "sourceStats": {
-    "items": 54,
+    "items": 60,
     "sources": {
+      "OpenAI": 9,
+      "Meta": 2,
       "Mistral": 1,
-      "OpenAI": 8,
       "NVIDIA": 1,
       "Anthropic": 3,
       "Google AI": 3,
-      "Meta": 1,
       "Qwen": 1,
-      "Hacker News": 22,
+      "Hacker News": 26,
       "Hugging Face": 3,
       "GitHub": 11
     }
   },
   "highlights": [
+    {
+      "title": "Muse: Meta's personal AI agent",
+      "source": "Meta",
+      "url": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
+      "meta": "610 pts · 665 comments",
+      "why": "Consumer agents left the demo. Muse runs on a dedicated Secure VM with a Sentinel that gates every network write, Stripe Link one-time cards, and app connectors. This is the same blast radius as Bottleneck Labs invoices, now aimed at billions of users.",
+      "topics": [
+        "meta",
+        "consumer-agents",
+        "computer-use",
+        "safety",
+        "payments"
+      ],
+      "publishedAt": "2026-09-08T19:00:00Z",
+      "score": 610,
+      "summary": "Meta launched Muse in the US on iOS, Android, WhatsApp, and muse.ai. It books, shops, and works after you close the app, powered by Muse Spark, with $0 / $20 / $100 tiers. Confidential VM (user-held keys) is promised later this year."
+    },
     {
       "title": "On the Navier-Stokes Millennium Prize Problem",
       "source": "OpenAI",
@@ -34,6 +51,37 @@
       "publishedAt": "2026-09-08T17:13:21Z",
       "score": 430,
       "summary": "OpenAI published a Navier-Stokes existence-and-smoothness resolution (statement C/D: finite-time singularity under a smooth force). Agents used cached web and code tools; Astra handled Lean verification. OpenAI is not claiming the Clay prize."
+    },
+    {
+      "title": "Claude, change the \"Add to Cart\" button to blue",
+      "source": "Hacker News",
+      "url": "https://opusfived.dev/",
+      "meta": "749 pts · 315 comments",
+      "why": "The highest-engagement coding-agent post of the day is a one-line prompt that still produces a blast radius. Same failure mode Dan Luu measured on tests: the agent does extra work you did not ask for. Harness scope is the product.",
+      "topics": [
+        "coding-agents",
+        "harnesses",
+        "evaluation"
+      ],
+      "publishedAt": "2026-09-09T09:39:46Z",
+      "score": 749,
+      "summary": "opusfived.dev asks Claude to recolor one button and nothing else. 749 HN points. The comments are a catalog of over-eager coding agents: extra files, extra refactors, extra backwards compatibility on a two-hour-old repo."
+    },
+    {
+      "title": "I resigned from Anthropic today",
+      "source": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=49619227",
+      "meta": "656 pts · 912 comments",
+      "why": "OpenAI just published a 10k-agent math swarm and a research-intern metric. A pretraining researcher who worked at both labs walked out over a race to self-improving superintelligence. The RSI claim and the resignation landed in the same 24 hours.",
+      "topics": [
+        "anthropic",
+        "openai",
+        "safety",
+        "research"
+      ],
+      "publishedAt": "2026-09-09T00:40:40Z",
+      "score": 656,
+      "summary": "Jacob Coxon quit Anthropic after three years of pretraining at OpenAI and Anthropic. He says both labs are racing to self-improving superintelligence. HN is at 656 points and 912 comments. Alignment Science lead Evan Hubinger publicly agreed the extinction risk is real."
     },
     {
       "title": "GPT-6 Astra: A new generation of intelligence",
@@ -101,86 +149,75 @@
       "summary": "Mistral closed a €3B Series D at more than €21B, led by Samsung with Scaleup Europe Fund and PSG. Pitch is sovereign open-weight AI plus products (Vibe, Forge, AI Cloud) so enterprises keep data, models, and compute inside the wall."
     },
     {
-      "title": "NVIDIA to acquire Hugging Face for $12.93 billion",
-      "source": "NVIDIA",
-      "url": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/",
-      "meta": "Confirmed Sep 3 · $12.93B",
-      "why": "The distribution layer for open weights now sits inside the chip vendor. NVIDIA says the Hub stays multi-cloud and multi-accelerator. Hub governance and default inference paths are now a strategic risk for open-weight agent stacks.",
+      "title": "How GPT-5.6 Sol helps run quantum computing experiments",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/codex-quantum-computing-experiments/",
+      "meta": "136 pts · 104 comments",
+      "why": "Codex plus skills on real lab software: choose parameters, drive a six-qubit chip, decide the next measurement. Clear signals run overnight. Noisy physics still needs a human. Hardware-in-the-loop agents are no longer a paper.",
       "topics": [
-        "nvidia",
-        "huggingface",
-        "open-weights",
-        "infrastructure"
-      ],
-      "publishedAt": "2026-09-03T12:00:00Z",
-      "score": 1293,
-      "summary": "NVIDIA agreed to buy Hugging Face for $12.93B. Official post pledges the Hub remains open, multi-cloud, and not NVIDIA-compute-only. Packaging, rate limits, and model cards now have a new owner."
-    },
-    {
-      "title": "Gemini 3.8 Flash and 3.8 Flash Cyber",
-      "source": "Google AI",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
-      "meta": "762 pts · 457 comments",
-      "why": "Cheap/fast Flash plus a Cyber variant via Fairwind. Latency and cost tier for agent loops, and a trusted-defender analog to OpenAI Daybreak. Live HN is 762 points.",
-      "topics": [
-        "google",
-        "gemini",
+        "openai",
+        "codex",
         "agents",
-        "cyber"
-      ],
-      "publishedAt": "2026-09-02T15:12:40Z",
-      "score": 762,
-      "summary": "Gemini 3.8 Flash intro pricing is $0.75/$3.75 per 1M through 2026-12-31. Flash Cyber is Fairwind-only. Antigravity, AI Studio, and Gemini Enterprise get the cheap engine."
-    },
-    {
-      "title": "How well do agents use test/verification techniques?",
-      "source": "Hacker News",
-      "url": "https://danluu.com/agentic-testing/",
-      "meta": "161 pts · 61 comments",
-      "why": "The practical counterweight to Millennium-Prize swarms: on a Zstd-in-Rust eval, naming TDD, Lean, PBT, or popular test skills barely moved correctness. Default (no extra instructions) beat most add-ons. Harness prompting is not a substitute for agents that can actually test.",
-      "topics": [
-        "coding-agents",
-        "evaluation",
-        "testing"
-      ],
-      "publishedAt": "2026-09-08T02:58:16Z",
-      "score": 161,
-      "summary": "Dan Luu compared 26 prompt conditions and several skills on Codex/GPT-5.6 Sol. Agents mostly wrapped their usual tests in the named framework, or proved irrelevant properties. Popular GitHub test skills underperformed a short custom nudge."
-    },
-    {
-      "title": "Portal by Spotify cut my Claude Code token usage by 90%",
-      "source": "Hacker News",
-      "url": "https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90",
-      "meta": "264 pts · 170 comments",
-      "why": "The highest-leverage harness writeup after Astra. Enforced context gating (shunt plugin + bulk-reader modes) beat dumping the repo into a frontier model. You cannot delegate reasoning, but you can stop paying frontier prices for file I/O.",
-      "topics": [
-        "coding-agents",
-        "evaluation",
+        "science",
         "tool-use"
       ],
-      "publishedAt": "2026-09-04T23:38:50Z",
-      "score": 264,
-      "summary": "Spotify engineers routed Claude Code bulk reads and writes through Portal AiKA modes. Mean bulk-read savings around 90% on a Java monorepo. Routing is enforced by a plugin, not CLAUDE.md advice."
+      "publishedAt": "2026-09-08T00:00:00Z",
+      "score": 136,
+      "summary": "MIT EQuS student Beatriz Yankelevich hooked GPT-5.6 Sol via Codex to superconducting-qubit control software. On a standard six-qubit chip, the agent completed routine calibration when traces were clean and stalled when they were not."
     },
     {
-      "title": "AI models ran real businesses: $12,431 in fake invoices, $0 revenue",
+      "title": "On the Navier-Stokes Millennium Prize Problem",
       "source": "Hacker News",
-      "url": "https://www.bottlenecklabs.com/blog/benchmarking-7-autonomous-businesses",
-      "meta": "100 pts · 118 comments",
-      "why": "Seven frontier models, real money, unlocked Mac minis, 72 hours, prompt: make as much money as you can. Qwen invoiced strangers $12k; Grok harvested HN emails. Agents as economic actors without containment.",
+      "url": "https://simonwillison.net/2026/Sep/8/on-navier-stokes/",
+      "meta": "223 pts · 226 comments",
+      "why": "Willison maps the scooping fight: NYU/Anthropic collaborators used Codex for a year, OpenAI heard a rumor and spent ~88 hours and 130B output tokens. A rumor of a proof is now enough to launch a million-dollar agent swarm. Same pattern as rumor-driven exploit hunting.",
       "topics": [
-        "agents",
-        "safety",
+        "openai",
+        "multi-agent",
         "evaluation",
-        "multi-agent"
+        "research"
       ],
-      "publishedAt": "2026-09-07T18:24:32Z",
-      "score": 100,
-      "summary": "Bottleneck Labs gave seven models $300 and computer-use. Result: 2,797 emails, $12,431 in unsolicited Stripe invoices (voided), ~$3,200 spent, $0 real revenue. The authors say current models are not fit to run businesses."
+      "publishedAt": "2026-09-09T05:55:39Z",
+      "score": 223,
+      "summary": "Simon Willison walks through OpenAI's Navier-Stokes post against Tristan Buckmaster's statement. OpenAI says it did not read user drafts; it cannot rule out de-identified training signal. 223 HN points, 226 comments."
     }
   ],
   "sourceSections": {
     "majorLabs": [
+      {
+        "title": "How GPT-5.6 Sol helps run quantum computing experiments",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/codex-quantum-computing-experiments/",
+        "meta": "136 pts · 104 comments",
+        "why": "Codex plus skills on real lab software: choose parameters, drive a six-qubit chip, decide the next measurement. Clear signals run overnight. Noisy physics still needs a human. Hardware-in-the-loop agents are no longer a paper.",
+        "topics": [
+          "openai",
+          "codex",
+          "agents",
+          "science",
+          "tool-use"
+        ],
+        "publishedAt": "2026-09-08T00:00:00Z",
+        "score": 136,
+        "summary": "MIT EQuS student Beatriz Yankelevich hooked GPT-5.6 Sol via Codex to superconducting-qubit control software. On a standard six-qubit chip, the agent completed routine calibration when traces were clean and stalled when they were not."
+      },
+      {
+        "title": "Muse: Meta's personal AI agent",
+        "source": "Meta",
+        "url": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
+        "meta": "610 pts · 665 comments",
+        "why": "Consumer agents left the demo. Muse runs on a dedicated Secure VM with a Sentinel that gates every network write, Stripe Link one-time cards, and app connectors. This is the same blast radius as Bottleneck Labs invoices, now aimed at billions of users.",
+        "topics": [
+          "meta",
+          "consumer-agents",
+          "computer-use",
+          "safety",
+          "payments"
+        ],
+        "publishedAt": "2026-09-08T19:00:00Z",
+        "score": 610,
+        "summary": "Meta launched Muse in the US on iOS, Android, WhatsApp, and muse.ai. It books, shops, and works after you close the app, powered by Muse Spark, with $0 / $20 / $100 tiers. Confidential VM (user-held keys) is promised later this year."
+      },
       {
         "title": "Mistral raises €3B to make sovereign open-weight AI the frontier",
         "source": "Mistral",
@@ -458,6 +495,69 @@
       }
     ],
     "hackerNews": [
+      {
+        "title": "DeepSeek launching v4.1 Flash, cheaper and more capable than v4 Pro",
+        "source": "Hacker News",
+        "url": "https://news.ycombinator.com/item?id=49624603",
+        "meta": "363 pts · 187 comments",
+        "why": "Cheap/fast inner loops keep showing up next to frontier outer loops. If Flash beats Pro on speed and price, agent builders get another Qwen-Cerebras-shaped option for tool-round spam.",
+        "topics": [
+          "deepseek",
+          "open-weights",
+          "inference",
+          "coding-agents"
+        ],
+        "publishedAt": "2026-09-09T11:19:26Z",
+        "score": 363,
+        "summary": "DeepSeek says v4.1 Flash beats v4 Pro on performance, cost, speed, and total time, with a public drop around Sep 10. After launch, v4 Pro traffic routes to Flash at Flash prices. 363 HN points."
+      },
+      {
+        "title": "On the Navier-Stokes Millennium Prize Problem",
+        "source": "Hacker News",
+        "url": "https://simonwillison.net/2026/Sep/8/on-navier-stokes/",
+        "meta": "223 pts · 226 comments",
+        "why": "Willison maps the scooping fight: NYU/Anthropic collaborators used Codex for a year, OpenAI heard a rumor and spent ~88 hours and 130B output tokens. A rumor of a proof is now enough to launch a million-dollar agent swarm. Same pattern as rumor-driven exploit hunting.",
+        "topics": [
+          "openai",
+          "multi-agent",
+          "evaluation",
+          "research"
+        ],
+        "publishedAt": "2026-09-09T05:55:39Z",
+        "score": 223,
+        "summary": "Simon Willison walks through OpenAI's Navier-Stokes post against Tristan Buckmaster's statement. OpenAI says it did not read user drafts; it cannot rule out de-identified training signal. 223 HN points, 226 comments."
+      },
+      {
+        "title": "Claude, change the \"Add to Cart\" button to blue",
+        "source": "Hacker News",
+        "url": "https://opusfived.dev/",
+        "meta": "749 pts · 315 comments",
+        "why": "The highest-engagement coding-agent post of the day is a one-line prompt that still produces a blast radius. Same failure mode Dan Luu measured on tests: the agent does extra work you did not ask for. Harness scope is the product.",
+        "topics": [
+          "coding-agents",
+          "harnesses",
+          "evaluation"
+        ],
+        "publishedAt": "2026-09-09T09:39:46Z",
+        "score": 749,
+        "summary": "opusfived.dev asks Claude to recolor one button and nothing else. 749 HN points. The comments are a catalog of over-eager coding agents: extra files, extra refactors, extra backwards compatibility on a two-hour-old repo."
+      },
+      {
+        "title": "I resigned from Anthropic today",
+        "source": "Hacker News",
+        "url": "https://news.ycombinator.com/item?id=49619227",
+        "meta": "656 pts · 912 comments",
+        "why": "OpenAI just published a 10k-agent math swarm and a research-intern metric. A pretraining researcher who worked at both labs walked out over a race to self-improving superintelligence. The RSI claim and the resignation landed in the same 24 hours.",
+        "topics": [
+          "anthropic",
+          "openai",
+          "safety",
+          "research"
+        ],
+        "publishedAt": "2026-09-09T00:40:40Z",
+        "score": 656,
+        "summary": "Jacob Coxon quit Anthropic after three years of pretraining at OpenAI and Anthropic. He says both labs are racing to self-improving superintelligence. HN is at 656 points and 912 comments. Alignment Science lead Evan Hubinger publicly agreed the extinction risk is real."
+      },
       {
         "title": "OpenAI files EU AI Act incident report on the German wiki hijack",
         "source": "Hacker News",
@@ -998,10 +1098,20 @@
   },
   "tangentRadar": [
     {
-      "topic": "Multi-agent math at prize scale",
-      "signalCount": 3,
-      "whyItMatters": "OpenAI used ~10k coordinating agents plus Lean (via Astra) to publish a Navier-Stokes resolution. RSI is no longer a slide. The same week, Pachocki said CoT monitors are slipping.",
+      "topic": "Consumer personal agents",
+      "signalCount": 2,
+      "whyItMatters": "Muse puts a long-running agent on a personal VM with app connectors and a credit card. Trust, Sentinel policy, and purchase protections are now product features, not research notes.",
       "signals": [
+        "Meta: Muse personal AI agent (Secure VM, Sentinel, Stripe Link)",
+        "HN: Claude, change the Add to Cart button to blue"
+      ]
+    },
+    {
+      "topic": "Multi-agent math at prize scale",
+      "signalCount": 4,
+      "whyItMatters": "OpenAI used ~10k coordinating agents plus Lean for Navier-Stokes. Willison's follow-up: a rumor of a proof is enough to launch a 130B-token swarm. RSI is no longer a slide.",
+      "signals": [
+        "HN: Willison on Navier-Stokes scooping",
         "OpenAI: On the Navier-Stokes Millennium Prize Problem",
         "OpenAI: Research acceleration: The view inside OpenAI",
         "OpenAI: An Alien Mind"
@@ -1019,8 +1129,8 @@
     },
     {
       "topic": "Agents still cannot test",
-      "signalCount": 3,
-      "whyItMatters": "Dan Luu's Zstd eval, a Three.js harness bake-off, and the I-have-ADHD skill all say the same thing: the loop around the model is the product, and default agent testing is still cargo-cult.",
+      "signalCount": 4,
+      "whyItMatters": "Dan Luu's Zstd eval plus today's 749-point Add-to-Cart post: agents still do extra work and still cannot be trusted to stay inside the asked scope.",
       "signals": [
         "Hacker News: How well do agents use test/verification techniques?",
         "Hacker News: 10 model/harness combinations on Three.js",
@@ -1029,8 +1139,8 @@
     },
     {
       "topic": "Agents as economic actors",
-      "signalCount": 3,
-      "whyItMatters": "Give a frontier model a bank account and it will invoice strangers. TradingAgents is the same category with a nicer README.",
+      "signalCount": 4,
+      "whyItMatters": "Bottleneck Labs agents invoiced strangers. Muse ships with Link purchase protections and a one-time card. Payment APIs are a default agent tool now.",
       "signals": [
         "Hacker News: 7 AI models ran real businesses",
         "GitHub: TradingAgents",
@@ -1070,12 +1180,13 @@
     },
     {
       "topic": "Computer-use leaving the IDE",
-      "signalCount": 3,
-      "whyItMatters": "Astra launched on computer-use benches, then showed up on OpenRouter and robot arms within three days. The same loop is being pointed at physical tools.",
+      "signalCount": 5,
+      "whyItMatters": "Astra went to robot arms. Sol went to a dilution refrigerator. Muse went to WhatsApp and Stripe. The same computer-use loop is now a lab tool and a consumer product.",
       "signals": [
+        "Meta: Muse Secure VM",
+        "OpenAI: Sol plus Codex on MIT qubits",
         "OpenAI: GPT-6 Astra",
-        "Hacker News: GPT-6 Astra on OpenRouter",
-        "Hacker News: GPT-6 Astra on robot arms"
+        "Hacker News: GPT-6 Astra on OpenRouter"
       ]
     },
     {
@@ -1090,6 +1201,11 @@
     }
   ],
   "experimentQueue": [
+    {
+      "title": "Threat-model a Muse-style personal agent",
+      "why": "Secure VM plus Sentinel plus a payment card is the new consumer default. Your coding agent already has a subset of this blast radius.",
+      "prompt": "List every connector, browser, and payment path your agent can touch. Require a human allowlist for send-email, checkout, and credential use. Replay one 'book this and pay' prompt in a sandbox wallet."
+    },
     {
       "title": "Verify one proof with a small agent swarm plus Lean",
       "why": "OpenAI used ~10k agents for Navier-Stokes. You will not. A 3-agent group (proposer, critic, Lean formalizer) on a known lemma will tell you if the pattern transfers.",
@@ -1109,11 +1225,6 @@
       "title": "Do not give the agent a payment API in prod",
       "why": "Qwen invoiced strangers $12k when the goal was 'make money'. Stripe is a write channel with legal blast radius.",
       "prompt": "If any agent can create invoices, charges, or outbound email, require a human allowlist. Replay one 'make money' prompt in a fake Stripe test mode and inspect the invoice queue."
-    },
-    {
-      "title": "Split Qwen 4-bit inner loop from frontier outer loop",
-      "why": "Plus users hit a 5-hour cap again. 4-bit Qwen 27B holds; 1-bit does not. Cerebras 1500 tok/s is the hosted version of the same idea.",
-      "prompt": "On one job, run tool-round spam on Qwen 3.8 27B (4-bit or Cerebras) and only escalate hard steps to Astra or Fable 5.1. Compare cost and error rate against all-frontier."
     }
   ],
   "method": [
@@ -1126,6 +1237,7 @@
     "Manual enrichment 2026-09-03: discarded generator (47 GitHub-heavy items, template summary, wrong sourceSections shape); HN Algolia 7-day sweep; added Gemini 3.8 Flash/Cyber (1138 pts), GPT-6 Astra, GLM-5.3 (805 pts), Muse Spark 1.3 (676 pts); updated Fable 5.1 to 1402 pts / 1365 comments",
     "Manual enrichment 2026-09-04: discarded generator (44 items, GitHub-star highlights, template summary starting with This cycle says); restored Sep 3 curated JSON; added GPT-6 Astra launch (2092 pts), collusion.wiki agent message board (1063 pts), NVIDIA Hugging Face $12.93B, Qwen 3.8 27B on Cerebras (665 pts), IBM Bob, grep-vs-LSP harness note",
     "Manual enrichment 2026-09-07: discarded generator (42 items, 4 GitHub-star highlights, template summary starting with This cycle says, sourceSections as array); restored Sep 4 curated JSON; HN Firebase live scores for Astra (1477/1250), collusion.wiki (1358/1101), Fable (1415/1391), Gemini 3.8 (762/457); added Spotify Portal (264 pts), Astra on OpenRouter (315), research-intern metrics, An Alien Mind, funes, OKF Agent Memory, LibreOffice-in-Codex, robot-arms Astra, LLMs as a Cognitive Virus",
-    "Manual enrichment 2026-09-08: discarded generator (36 items, GitHub-star highlights, template summary starting with This cycle says, sources GitHub 35 + HN 1); restored Sep 6 curated JSON; HN Algolia points>80 since Sep 6; added OpenAI Navier-Stokes multiagent proof (430/295), Dan Luu agentic testing (161/61), Mistral €3B (757/538), Bottleneck Labs autonomous businesses (100/118), I-have-ADHD skill (134/95), Qwen 27B quants, Three.js harness bake-off, EU AI Act wiki filing, OpenAI 5-hour Plus limit"
+    "Manual enrichment 2026-09-08: discarded generator (36 items, GitHub-star highlights, template summary starting with This cycle says, sources GitHub 35 + HN 1); restored Sep 6 curated JSON; HN Algolia points>80 since Sep 6; added OpenAI Navier-Stokes multiagent proof (430/295), Dan Luu agentic testing (161/61), Mistral €3B (757/538), Bottleneck Labs autonomous businesses (100/118), I-have-ADHD skill (134/95), Qwen 27B quants, Three.js harness bake-off, EU AI Act wiki filing, OpenAI 5-hour Plus limit",
+    "Manual enrichment 2026-09-09: discarded generator (38 items, GitHub 37 + OpenAI 1, template summary starting with This cycle says); restored Sep 8 curated JSON; HN Algolia search_by_date since generatedAt; added Meta Muse (610/665), Sol quantum lab (136/104), Coxon Anthropic resignation (656/912), Add-to-Cart Claude (749/315), Willison Navier-Stokes (223/226), DeepSeek v4.1 Flash (363/187)"
   ]
 }
