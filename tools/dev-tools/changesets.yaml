@@ -1,0 +1,27 @@
+name: Changesets
+description: Versioning and changelog tool for JavaScript monorepos. Contributors add a changeset per PR; CI versions packages, writes changelogs, and publishes without a manual bump ritual.
+tagline: Monorepo versioning and changelogs from PR changesets
+
+github_url: https://github.com/changesets/changesets
+website_url: https://github.com/changesets/changesets
+docs_url: https://github.com/changesets/changesets
+
+install_command: npm install @changesets/cli
+
+category: Dev Tools
+tags: [javascript, monorepo, versioning, changelog, npm, publishing, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Multi-package JS repos need coordinated version bumps and changelogs,
+  and doing that by hand misses dependents. Changesets lets each PR declare
+  a bump; CI versions packages, writes notes, and publishes so SDK and
+  agent-library monorepos stay consistent.
+
+use_cases:
+  - Add a changeset in a PR so CI versions an SDK package on merge
+  - Generate changelogs for a JS monorepo without editing CHANGELOG by hand
+  - Publish dependent packages with coordinated semantic versions
+  - Keep an open-source agent library's release notes tied to merged PRs
