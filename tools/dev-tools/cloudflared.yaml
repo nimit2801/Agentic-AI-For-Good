@@ -1,0 +1,28 @@
+name: cloudflared
+description: cloudflared is the Cloudflare Tunnel client that exposes a local port through Cloudflare without opening inbound firewall holes. AI teams use it to demo local agent servers, receive webhooks, and share MCP or API endpoints from a laptop.
+tagline: Cloudflare Tunnel client for local services
+
+github_url: https://github.com/cloudflare/cloudflared
+website_url: https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/
+docs_url: https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/
+
+install_command: brew install cloudflared
+
+category: Dev Tools
+tags: [tunnel, networking, cloudflare, cli, devops, webhooks]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Local agent servers and webhook receivers cannot accept public traffic
+  without port forwarding or a VPN. cloudflared opens an outbound
+  Cloudflare Tunnel so a laptop or GPU box can serve HTTPS to the
+  internet without exposing inbound ports.
+
+use_cases:
+  - Demo a local agent or chat UI over HTTPS without opening a firewall port
+  - Receive provider webhooks on a development machine during integration
+  - Share an MCP or inference endpoint running on a laptop with a teammate
+  - Expose a GPU box behind NAT for remote evaluation traffic
+  - Replace ad-hoc ngrok sessions with a named Cloudflare Tunnel
