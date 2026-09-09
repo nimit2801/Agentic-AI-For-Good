@@ -1,0 +1,28 @@
+name: Next.js
+description: React framework for production web apps with App Router, server components, and API routes. AI product teams ship agent consoles, chat UIs, and docs sites with SSR and serverless routes in front of model backends.
+tagline: React framework for production apps, APIs, and SSR
+
+github_url: https://github.com/vercel/next.js
+website_url: https://nextjs.org
+docs_url: https://nextjs.org/docs
+
+install_command: npm install next
+
+category: Dev Tools
+tags: [react, javascript, typescript, ssr, frontend, vercel]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Agent products need a web UI, auth, and a server route that talks to an
+  LLM without exposing keys in the browser. Next.js gives App Router, server
+  components, and API routes so a small team can ship a chat console and
+  keep inference calls on the server.
+
+use_cases:
+  - Build a chat or agent console with server-side calls to an LLM API
+  - Host product docs and a playground for an MCP server on the same app
+  - Keep API keys off the client by proxying inference through a Route Handler
+  - Stream model tokens to the browser with React server and client components
+  - Deploy a production AI frontend to Vercel or any Node host

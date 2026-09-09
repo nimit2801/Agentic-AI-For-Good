@@ -1,0 +1,26 @@
+name: Passbolt
+description: Open-source password manager for teams with a self-hosted vault and browser extension. ML groups share LLM API keys, cloud logins, and SSH credentials with access control instead of a spreadsheet or Slack.
+tagline: Self-hosted team password manager with access control
+
+github_url: https://github.com/passbolt/passbolt_api
+website_url: https://www.passbolt.com
+docs_url: https://www.passbolt.com/docs
+
+category: Dev Tools
+tags: [secrets, passwords, vault, self-hosted, security, credentials]
+pricing: freemium
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Small ML teams still share OpenAI keys and GPU box passwords in chat.
+  Passbolt stores those secrets in a self-hosted vault with users, groups,
+  and an audit trail so credentials rotate in one place and never live in
+  a spreadsheet.
+
+use_cases:
+  - Share LLM API keys with a research group without pasting them in Slack
+  - Self-host a team vault for cloud console logins on a private network
+  - Audit who accessed a production inference credential last week
+  - Rotate a Hugging Face token once and notify every teammate who uses it
+  - Keep SSH passphrases for GPU boxes out of onboarding docs
