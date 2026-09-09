@@ -1,0 +1,28 @@
+name: Nhost
+description: Open-source Firebase alternative with Postgres, GraphQL, auth, and storage. AI teams store app data, user accounts, and file uploads for agent products without assembling a custom backend.
+tagline: Open-source Firebase alternative on Postgres and GraphQL
+
+github_url: https://github.com/nhost/nhost
+website_url: https://nhost.io
+docs_url: https://docs.nhost.io
+
+install_command: npm install @nhost/nhost-js
+
+category: Data
+tags: [postgres, graphql, auth, storage, backend, firebase]
+pricing: freemium
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  An agent product still needs users, a database, and file storage before
+  the model work starts. Nhost gives Postgres, Hasura GraphQL, auth, and
+  storage so a small team can persist chat history and uploads without
+  building a custom backend.
+
+use_cases:
+  - Store chat history and user accounts for an agent app on Postgres
+  - Upload documents for RAG into Nhost storage and query metadata over GraphQL
+  - Add email auth in front of a private inference demo
+  - Self-host a Firebase-style backend when data cannot leave your VPC
+  - Prototype an AI SaaS data layer without writing CRUD by hand

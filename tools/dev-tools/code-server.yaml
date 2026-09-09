@@ -1,0 +1,28 @@
+name: code-server
+description: VS Code that runs on a remote machine and opens in the browser. ML engineers edit training code and notebooks on a GPU box over HTTPS instead of copying files back to a laptop.
+tagline: Browser VS Code on a remote GPU or cloud box
+
+github_url: https://github.com/coder/code-server
+website_url: https://coder.com
+docs_url: https://coder.com/docs/code-server
+
+install_command: npm install -g code-server
+
+category: Dev Tools
+tags: [editor, vscode, remote, browser, gpu, devops]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Training still happens on a GPU box you SSH into, while the editor stays
+  on a laptop with stale files. code-server runs VS Code on that machine
+  and serves it in the browser so you edit, debug, and run jobs where the
+  data and GPUs already live.
+
+use_cases:
+  - Edit training scripts on a GPU server from a browser instead of scp loops
+  - Debug a failing eval job with VS Code on the same box that has the dataset
+  - Share a remote IDE URL with a teammate during an incident on a cluster node
+  - Keep model weights on the server and still use VS Code extensions
+  - Develop an agent API on a cloud VM without a local GPU
