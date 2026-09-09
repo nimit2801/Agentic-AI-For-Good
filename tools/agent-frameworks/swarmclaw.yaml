@@ -1,0 +1,28 @@
+name: SwarmClaw
+description: Self-hosted open-source AI agent runtime and multi-agent framework with durable memory, MCP tools, schedules, delegation, and 23-plus LLM providers. It orchestrates OpenClaw, Hermes, Claude Code, and other CLI backends from one control plane.
+tagline: Self-hosted runtime for autonomous agent swarms
+
+github_url: https://github.com/swarmclawai/swarmclaw
+website_url: https://www.swarmclaw.ai
+docs_url: https://swarmclaw.ai/docs
+
+install_command: npm install @swarmclawai/swarmclaw
+
+category: Agents
+tags: [agents, multi-agent, self-hosted, mcp, orchestration, nodejs, openclaw]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Running several autonomous agents across Claude Code, OpenClaw, Hermes, and local
+  models usually means separate dashboards, memories, and schedulers. SwarmClaw is
+  a self-hosted control plane with durable agent memory, MCP tools, cron schedules,
+  delegation, and connectors so teams can orchestrate agent swarms without a
+  managed SaaS lock-in.
+
+use_cases:
+  - Self-host a multi-agent control plane that delegates work to Claude Code, Codex, and OpenClaw
+  - Schedule heartbeat agents with durable memory, MCP tools, and a Kanban-style task board
+  - Connect the same swarm to Discord, Slack, Telegram, and WhatsApp with one runtime
+  - Deploy SwarmClaw on Docker, Render, Fly.io, or Railway with persistent agent state
