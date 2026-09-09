@@ -1,0 +1,25 @@
+name: Dependabot
+description: GitHub's dependency updater that opens pull requests when lockfiles drift. It patches Python, npm, Go, and Docker deps automatically so ML repos stay on patched versions without a weekly manual audit.
+tagline: GitHub-native dependency update PRs for lockfiles
+
+github_url: https://github.com/dependabot/dependabot-core
+website_url: https://github.com/features/security/dependabot
+docs_url: https://docs.github.com/en/code-security/dependabot
+
+category: Dev Tools
+tags: [github, dependencies, security, ci, python, docker, automation]
+pricing: freemium
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  ML and agent repos pin dozens of Python, npm, and Docker deps that go stale
+  between releases. Dependabot watches manifests on GitHub, opens version and
+  security PRs, and groups updates so maintainers review patches instead of
+  grepping changelogs by hand.
+
+use_cases:
+  - Auto-open PRs when a Python ML lockfile falls behind a patched release
+  - Group security updates for npm and Go deps in a GitHub Actions repo
+  - Keep Docker base images current without a weekly manual bump
+  - Alert on vulnerable transitive packages in a public agent framework

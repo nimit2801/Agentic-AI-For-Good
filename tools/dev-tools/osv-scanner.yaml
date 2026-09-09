@@ -1,0 +1,27 @@
+name: OSV-Scanner
+description: Google CLI that scans lockfiles, containers, and source trees against the OSV vulnerability database. It flags known CVEs in Python, npm, Go, and other deps so ML and agent repos fail CI before a vulnerable package ships.
+tagline: OSV.dev-backed vulnerability scanner for lockfiles and images
+
+github_url: https://github.com/google/osv-scanner
+website_url: https://google.github.io/osv-scanner/
+docs_url: https://google.github.io/osv-scanner/
+
+install_command: brew install osv-scanner
+
+category: Dev Tools
+tags: [security, cve, scanning, go, dependencies, sbom, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Lockfile scanners that use NVD alone miss ecosystem-specific advisories, and
+  noisy CVE dumps stall ML CI. OSV-Scanner queries OSV.dev across Python, npm,
+  Go, and more, with optional call analysis so builds fail only on reachable
+  vulns in agent and training repos.
+
+use_cases:
+  - Scan Python and npm lockfiles in CI against OSV.dev before merging an agent repo
+  - Fail a container image build when a CUDA or serving base has a known CVE
+  - Use call analysis to drop unreachable Go and Python vulns from the alert queue
+  - Recursively scan a monorepo source tree for supported package manifests
