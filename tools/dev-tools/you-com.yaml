@@ -1,0 +1,25 @@
+name: You.com
+description: Enterprise web search APIs built for RAG and agents. Search, Contents, and Research endpoints return cited, real-time results so LLM apps ground answers on the live web instead of stale training data.
+tagline: Real-time web search APIs for RAG and agents
+
+website_url: https://you.com
+docs_url: https://you.com/docs/welcome
+
+install_command: pip install youdotcom
+
+category: Dev Tools
+tags: [search, rag, api, agents, python, web, grounding]
+pricing: freemium
+is_open_source: false
+
+problem_solved: |
+  LLM agents hallucinate when they cannot query the live web, and generic
+  search APIs return noisy snippets. You.com exposes Search, Contents, and
+  Research APIs plus an MCP server so RAG pipelines and coding agents get
+  cited, low-latency results instead of stale training-cut knowledge.
+
+use_cases:
+  - Ground an agent with live web search and citations via the Python SDK
+  - Fetch clean Markdown from known URLs with the Contents API
+  - Attach the You.com MCP server to Claude Code or Cursor for web search
+  - Run deep research queries that return source-backed answers for RAG
