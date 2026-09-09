@@ -1,0 +1,28 @@
+name: SolidJS
+description: SolidJS is a declarative JavaScript UI library that compiles reactivity to fine-grained DOM updates with no virtual DOM. Teams use it when an agent console or streaming token UI needs React-like DX with smaller runtime cost.
+tagline: Fine-grained reactive UI library without a virtual DOM
+
+github_url: https://github.com/solidjs/solid
+website_url: https://www.solidjs.com
+docs_url: https://www.solidjs.com/docs/latest
+
+install_command: npm install solid-js
+
+category: Dev Tools
+tags: [javascript, typescript, frontend, reactive, spa, performance]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Streaming agent UIs update the DOM constantly, and a virtual DOM
+  can add overhead and extra client JS. SolidJS compiles signals to
+  precise updates so chat tokens, traces, and dashboards stay fast
+  without a React-sized runtime.
+
+use_cases:
+  - Render a streaming token view with fine-grained reactive updates
+  - Build a small agent console that stays fast on modest devices
+  - Port a React-like component model without shipping a virtual DOM
+  - Pair SolidJS with Vite for a lightweight AI playground
+  - Update traces and metrics in the DOM without rerendering whole trees
