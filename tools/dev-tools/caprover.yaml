@@ -1,0 +1,27 @@
+name: CapRover
+description: Self-hosted PaaS that deploys Docker apps with nginx, HTTPS, and one-click databases. ML teams run agent APIs, MCP servers, and small inference backends on their own VPS without assembling Kubernetes.
+tagline: Self-hosted Heroku-style PaaS on Docker and nginx
+
+github_url: https://github.com/caprover/caprover
+website_url: https://caprover.com
+docs_url: https://caprover.com/docs
+
+install_command: npm install -g caprover
+
+category: Dev Tools
+tags: [paas, docker, nginx, self-hosted, deployment, cli]
+pricing: free
+is_open_source: true
+
+problem_solved: |
+  A private GPU box or cheap VPS still needs HTTPS, a reverse proxy, and a
+  deploy path for agent APIs. CapRover wraps Docker and nginx so you ship
+  from Git or an image with web UI and CLI, without running a full Kubernetes
+  control plane for a handful of services.
+
+use_cases:
+  - Deploy an agent or MCP HTTP server to a VPS with automatic HTTPS
+  - One-click Postgres or Redis next to a small inference API
+  - Push a Docker image of a model server and scale replicas from the CapRover UI
+  - Host a private Hugging Face Space-style demo on hardware you already rent
+  - Manage env vars for LLM keys without baking them into the container

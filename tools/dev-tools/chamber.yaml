@@ -1,0 +1,27 @@
+name: chamber
+description: CLI that stores and reads secrets from AWS SSM Parameter Store. ML pipelines export LLM keys and database passwords as environment variables at job start without putting them in Terraform state or Docker images.
+tagline: AWS SSM Parameter Store CLI for app secrets
+
+github_url: https://github.com/segmentio/chamber
+docs_url: https://github.com/segmentio/chamber
+
+install_command: brew install chamber
+
+category: Dev Tools
+tags: [secrets, aws, ssm, cli, devops, credentials]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  AWS shops still bake OpenAI keys and DB passwords into task definitions or
+  .env files on disk. chamber writes those values to SSM Parameter Store and
+  execs your process with them as env vars, so training jobs and model servers
+  get credentials without a second secrets product.
+
+use_cases:
+  - Export LLM API keys into a training job with chamber exec
+  - Store per-service database passwords in SSM instead of in Docker Compose files
+  - Share staging secrets across ECS tasks without copying .env between laptops
+  - Rotate a model-registry token in Parameter Store without rebuilding the image
+  - List and read namespaced secrets for an inference service from the CLI
