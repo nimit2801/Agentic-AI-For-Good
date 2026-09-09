@@ -1,0 +1,25 @@
+name: MMEngine
+description: OpenMMLab foundational library for training deep learning models. Provides a runner, hooks, logging, and config system so vision and multimodal teams share training infrastructure instead of rewriting loops for every project.
+tagline: OpenMMLab training foundation library
+
+github_url: https://github.com/open-mmlab/mmengine
+website_url: https://mmengine.readthedocs.io/
+docs_url: https://mmengine.readthedocs.io/en/latest/
+install_command: pip install mmengine
+
+category: Fine-tuning
+tags: [python, pytorch, training, openmmlab, config, vision]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Vision and multimodal training stacks rewrite runners, hooks, and
+  logging for every repo. MMEngine is the OpenMMLab training foundation
+  so teams share configs, distributed training, and experiment logging
+  across MMDetection, MMYOLO, and custom models.
+
+use_cases:
+  - Train an OpenMMLab vision model with a shared runner and hooks
+  - Configure distributed fine-tuning from YAML-style configs
+  - Log and checkpoint multimodal experiments with one training loop
