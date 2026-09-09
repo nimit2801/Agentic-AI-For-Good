@@ -1,0 +1,26 @@
+name: GitLab
+description: DevOps platform that unifies Git hosting, CI/CD, package registries, and security scanning. ML teams run training pipelines, store model artifacts, and review agent code in one place instead of stitching GitHub, Jenkins, and a separate registry.
+tagline: Git, CI/CD, and package registry in one DevOps platform
+
+github_url: https://github.com/gitlabhq/gitlabhq
+website_url: https://about.gitlab.com
+docs_url: https://docs.gitlab.com
+
+category: Dev Tools
+tags: [git, ci-cd, devops, registry, security, self-hosted]
+pricing: freemium
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Shipping an ML product still means a Git host, a CI runner, a container registry,
+  and a place to review model-serving code. GitLab puts those in one platform so
+  training jobs, artifact publishes, and merge reviews share the same project
+  instead of five disconnected tools.
+
+use_cases:
+  - Run GPU training and eval jobs as GitLab CI pipelines on self-hosted runners
+  - Store model images and Python packages in the project container and package registry
+  - Review agent and MCP server changes with merge requests and CI quality gates
+  - Self-host source, CI, and artifacts when model weights cannot leave a private network
+  - Scan dependency and container images used by inference services before they ship
