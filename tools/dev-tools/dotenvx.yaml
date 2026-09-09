@@ -1,0 +1,27 @@
+name: dotenvx
+description: Secure dotenv from the creator of dotenv. Encrypts .env values, runs apps with the decrypted secrets, and keeps keys out of git so ML services can share environment files without leaking API tokens.
+tagline: Encrypted dotenv for sharing secrets in git
+
+github_url: https://github.com/dotenvx/dotenvx
+website_url: https://dotenvx.com
+docs_url: https://dotenvx.com/docs
+
+install_command: npm install @dotenvx/dotenvx
+
+category: Dev Tools
+tags: [secrets, dotenv, env, security, javascript, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Plain .env files leak API keys when they are committed or copied between
+  laptops. dotenvx encrypts values in the file, decrypts at runtime, and
+  lets teams version environment config without putting OpenAI or cloud
+  tokens in git history.
+
+use_cases:
+  - Encrypt a .env file so LLM API keys can live next to the repo
+  - Run a Node agent with dotenvx so secrets decrypt only at process start
+  - Share environment config across staging and prod without a secrets UI
+  - Keep .env.vault in git while private keys stay on the machine

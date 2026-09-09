@@ -1,0 +1,27 @@
+name: actionlint
+description: Static checker for GitHub Actions workflow YAML. It catches invalid actions, expression errors, and shell issues so ML CI files fail on the laptop instead of after a red Actions run.
+tagline: Static checker for GitHub Actions workflow files
+
+github_url: https://github.com/rhysd/actionlint
+website_url: https://rhysd.github.io/actionlint/
+docs_url: https://rhysd.github.io/actionlint/
+
+install_command: brew install actionlint
+
+category: Dev Tools
+tags: [github-actions, ci, lint, yaml, static-analysis, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Broken workflow YAML only shows up after a push, which wastes Actions
+  minutes and review time. actionlint parses GitHub Actions files locally,
+  checks expressions and shell snippets, and fails pre-commit so training
+  and deploy workflows are valid before CI runs.
+
+use_cases:
+  - Lint .github/workflows YAML before pushing an ML training pipeline
+  - Catch invalid action inputs and expression syntax in a pre-commit hook
+  - Run actionlint in CI as a cheap gate before a GPU workflow starts
+  - Validate reusable workflows and matrix jobs without a live Actions run

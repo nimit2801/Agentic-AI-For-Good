@@ -1,0 +1,27 @@
+name: aws-vault
+description: CLI that stores AWS credentials in the OS keychain and exposes short-lived keys to shells and tools. Use it so ML laptops never keep long-lived access keys in plain ~/.aws/credentials files.
+tagline: OS-keychain vault for AWS credentials in local shells
+
+github_url: https://github.com/99designs/aws-vault
+website_url: https://github.com/99designs/aws-vault
+docs_url: https://github.com/99designs/aws-vault#readme
+
+install_command: brew install aws-vault
+
+category: Dev Tools
+tags: [aws, secrets, cli, credentials, security, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Long-lived AWS keys in ~/.aws/credentials leak from laptops and CI
+  logs. aws-vault keeps credentials in the OS keychain and injects
+  temporary keys into a subshell, so training jobs and CDK deploys use
+  STS sessions instead of static secrets.
+
+use_cases:
+  - Exec an AWS CLI or CDK command with short-lived keys from the keychain
+  - Stop storing long-lived access keys in a plain credentials file
+  - Assume a role for an ML account without copying session tokens by hand
+  - Pair with MFA so local AWS use requires a prompt, not a leaked file
