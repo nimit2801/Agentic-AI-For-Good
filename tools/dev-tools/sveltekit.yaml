@@ -1,0 +1,28 @@
+name: SvelteKit
+description: SvelteKit is a full-stack Svelte framework with file-based routing, SSR, and adapters for Node, serverless, and static hosts. AI product teams ship agent consoles and docs sites with less client JavaScript than typical React stacks.
+tagline: Full-stack Svelte apps with SSR and tiny client JS
+
+github_url: https://github.com/sveltejs/kit
+website_url: https://svelte.dev/docs/kit
+docs_url: https://svelte.dev/docs/kit
+
+install_command: npm install @sveltejs/kit
+
+category: Dev Tools
+tags: [svelte, javascript, typescript, ssr, frontend, fullstack]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Agent UIs often ship too much client JavaScript and leak API keys if
+  inference runs in the browser. SvelteKit compiles to small bundles and
+  keeps loaders, form actions, and server routes on the server so model
+  calls stay private while the UI stays fast.
+
+use_cases:
+  - Build a chat or agent console in Svelte with server-side LLM calls
+  - Keep API keys off the client by proxying inference through a server route
+  - Ship product docs and a playground as a SvelteKit static or Node app
+  - Stream UI updates from a model backend without a heavy React runtime
+  - Deploy the same app to Node, serverless, or a static host via adapters

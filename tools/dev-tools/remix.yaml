@@ -1,0 +1,28 @@
+name: Remix
+description: Remix is a full-stack React framework focused on web standards, nested routing, and progressive enhancement. AI teams use it for loaders, actions, and forms that keep LLM API keys off the client.
+tagline: Full-stack React with nested routes and web standards
+
+github_url: https://github.com/remix-run/remix
+website_url: https://remix.run
+docs_url: https://remix.run/docs
+
+install_command: npm install remix
+
+category: Dev Tools
+tags: [react, javascript, typescript, ssr, frontend, fullstack]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  React SPAs push data fetching and mutations into the client, which
+  exposes secrets and complicates forms. Remix uses nested routes,
+  loaders, and actions so LLM calls and writes stay on the server while
+  the UI still feels like a modern React app.
+
+use_cases:
+  - Build a React agent console with loaders that fetch model results on the server
+  - Submit prompts through Remix actions without putting API keys in the browser
+  - Nest layout routes for a dashboard, chat pane, and settings in one app
+  - Progressively enhance forms so the UI works even if client JS fails
+  - Deploy a Remix app to Node or a serverless adapter in front of an LLM API
