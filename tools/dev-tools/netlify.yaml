@@ -1,0 +1,27 @@
+name: Netlify
+description: Platform that builds and hosts frontend apps, serverless functions, and preview deploys from Git. AI product teams ship agent consoles, docs sites, and chat UIs with HTTPS and PR previews, without operating a web server.
+tagline: Git-based hosting for frontends, functions, and previews
+
+github_url: https://github.com/netlify/cli
+website_url: https://www.netlify.com
+docs_url: https://docs.netlify.com
+
+install_command: npm install -g netlify-cli
+
+category: Dev Tools
+tags: [paas, frontend, serverless, git, hosting, cli]
+pricing: freemium
+is_open_source: false
+
+problem_solved: |
+  An agent product still needs a public UI, docs, and preview URLs for every
+  pull request. Netlify builds from Git, serves the static app, and runs
+  functions at the edge so frontend and light backend ship together without
+  nginx or a container cluster.
+
+use_cases:
+  - Host a chat or agent console with automatic HTTPS from a Git repo
+  - Preview pull requests that change an ML demo UI before merge
+  - Run serverless functions that proxy an inference API without exposing keys
+  - Publish product docs for an MCP server next to the marketing site
+  - Store LLM keys as Netlify environment variables instead of in client code

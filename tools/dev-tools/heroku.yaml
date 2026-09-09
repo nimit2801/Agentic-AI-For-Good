@@ -1,0 +1,27 @@
+name: Heroku
+description: Classic PaaS that builds and runs apps from a Git push. ML teams still use it to host agent APIs, workers, and Postgres-backed prototypes with add-ons, without assembling AWS or Kubernetes.
+tagline: Git-push PaaS for apps, workers, and add-on databases
+
+github_url: https://github.com/heroku/cli
+website_url: https://www.heroku.com
+docs_url: https://devcenter.heroku.com
+
+install_command: npm install -g heroku
+
+category: Dev Tools
+tags: [paas, deployment, git, postgres, workers, cli]
+pricing: paid
+is_open_source: false
+
+problem_solved: |
+  Early agent products need a URL, a worker, and a database tonight, not a
+  cloud landing zone. Heroku builds from Git, attaches Postgres and Redis
+  add-ons, and runs dynos so a two-person team can ship an MCP server without
+  becoming a platform squad.
+
+use_cases:
+  - Git-push an agent API and get HTTPS without writing a Dockerfile first
+  - Attach Postgres or Redis for session memory next to a chat backend
+  - Run a background worker that processes embedding or eval jobs
+  - Manage LLM keys as Heroku config vars instead of committing .env files
+  - Scale a small production dyno up for a demo and down afterward

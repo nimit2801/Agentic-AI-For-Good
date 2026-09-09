@@ -1,0 +1,24 @@
+name: Koyeb
+description: Serverless platform that deploys apps and GPU workloads from Git or Docker. ML teams host agent APIs, MCP servers, and small inference services with autoscaling and global edge, without operating Kubernetes.
+tagline: Serverless Git and GPU deploys without Kubernetes
+
+website_url: https://www.koyeb.com
+docs_url: https://www.koyeb.com/docs
+
+category: Dev Tools
+tags: [paas, serverless, gpu, deployment, docker, hosting]
+pricing: freemium
+is_open_source: false
+
+problem_solved: |
+  A prototype inference API still needs HTTPS, autoscaling, and sometimes a
+  GPU, but a Kubernetes cluster is too much ops. Koyeb builds from Git or a
+  Docker image and runs CPU or GPU services so small AI products can ship
+  without a platform team.
+
+use_cases:
+  - Deploy an agent or MCP HTTP server from a GitHub repo
+  - Run a small GPU inference service without renting a full cloud VM
+  - Autoscale a production agent backend from zero when traffic is idle
+  - Host a private model demo with HTTPS and logs out of the box
+  - Store LLM API keys as Koyeb secrets instead of baking them into the image
