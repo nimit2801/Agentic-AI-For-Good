@@ -1,0 +1,24 @@
+name: LMCache
+description: KV cache layer that supercharges LLM serving by reusing prefix and retrieved caches across requests. Teams cut time-to-first-token and GPU spend on RAG and multi-turn agent workloads without changing the model.
+tagline: Fastest KV cache layer for LLM serving
+
+github_url: https://github.com/LMCache/LMCache
+website_url: https://lmcache.ai/
+docs_url: https://docs.lmcache.ai/
+install_command: pip install lmcache
+
+category: LLM
+tags: [python, kv-cache, inference, vllm, rag, serving]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  RAG and multi-turn agents recompute the same KV cache on every request.
+  LMCache stores and reuses prefix and retrieval caches so LLM serving
+  spends less GPU time on repeated context and returns tokens faster.
+
+use_cases:
+  - Cache RAG prefixes across vLLM requests to cut TTFT
+  - Reuse KV cache for multi-turn agent conversations
+  - Share cache across serving replicas for high-QPS chat
