@@ -1,0 +1,25 @@
+name: Vaultwarden
+description: Unofficial Bitwarden-compatible server written in Rust. Self-host an encrypted password vault for API keys and cloud credentials with a lighter footprint than the official Bitwarden server, using existing Bitwarden clients.
+tagline: Lightweight self-hosted Bitwarden-compatible vault server
+
+github_url: https://github.com/dani-garcia/vaultwarden
+docs_url: https://github.com/dani-garcia/vaultwarden/wiki
+
+category: Dev Tools
+tags: [secrets, passwords, vault, self-hosted, rust, bitwarden]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Official Bitwarden server is heavy for a small lab that just needs a private
+  vault for OpenAI keys and cloud creds. Vaultwarden speaks the Bitwarden API
+  in a single Rust binary so teams self-host with existing browser extensions
+  and CLI, without running the full Bitwarden stack.
+
+use_cases:
+  - Self-host a team vault for LLM API keys on a single Docker host
+  - Use Bitwarden browser extensions against a private Vaultwarden server
+  - Keep Hugging Face and cloud tokens off Slack and plaintext .env files
+  - Run an air-gapped credential vault for on-prem training clusters
+  - Share staging logins with Bitwarden clients without a SaaS password vendor

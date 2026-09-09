@@ -1,0 +1,23 @@
+name: Render
+description: Cloud platform that deploys web services, background workers, and Postgres from Git. ML teams host agent APIs, MCP servers, and small inference backends with HTTPS and logs, without operating a cluster.
+tagline: Git-based hosting for web services, workers, and databases
+
+website_url: https://render.com
+docs_url: https://render.com/docs
+
+category: Dev Tools
+tags: [paas, deployment, hosting, git, postgres, workers]
+pricing: freemium
+is_open_source: false
+
+problem_solved: |
+  A prototype agent API still needs HTTPS, a worker, a database, and logs.
+  Render builds from Git, provisions Postgres and Redis, and runs background
+  workers so small AI products can go live without assembling AWS or Kubernetes.
+
+use_cases:
+  - Deploy an agent or MCP server from a GitHub repo with automatic HTTPS
+  - Run a background worker that processes embedding or eval jobs
+  - Provision Postgres next to a model-serving API without a separate cloud account
+  - Preview pull requests that change a chat or inference web app
+  - Store LLM API keys as Render environment groups instead of in source

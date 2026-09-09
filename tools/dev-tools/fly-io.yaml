@@ -1,0 +1,27 @@
+name: Fly.io
+description: Edge deployment platform that runs Docker images close to users across many regions. Package an agent API or model server as a container and launch it globally with one CLI, without assembling Kubernetes.
+tagline: Deploy Docker apps close to users with one CLI
+
+github_url: https://github.com/superfly/flyctl
+website_url: https://fly.io
+docs_url: https://fly.io/docs
+
+install_command: brew install flyctl
+
+category: Dev Tools
+tags: [paas, deployment, docker, edge, cli, hosting]
+pricing: freemium
+is_open_source: false
+
+problem_solved: |
+  Agent APIs and small model servers need low-latency HTTPS in more than one
+  region, but standing up Kubernetes for that is overkill. Fly.io takes a
+  Docker image, places machines near users, and gives you logs, volumes, and
+  a private network so a two-person team can ship without a platform squad.
+
+use_cases:
+  - Deploy an agent or MCP HTTP server from a Dockerfile with flyctl
+  - Run a small inference API in multiple regions without managing Kubernetes
+  - Attach a volume for model weights next to a GPU or CPU Fly Machine
+  - Keep LLM API keys in Fly secrets instead of baking them into the image
+  - Scale a production agent backend up and down from the Fly CLI

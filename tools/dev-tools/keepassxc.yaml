@@ -1,0 +1,28 @@
+name: KeePassXC
+description: Cross-platform open-source password manager that stores credentials in a local encrypted database. ML engineers keep LLM API keys, cloud tokens, and SSH passphrases in a KeePass-compatible vault instead of plaintext files.
+tagline: Local encrypted password database for keys and credentials
+
+github_url: https://github.com/keepassxreboot/keepassxc
+website_url: https://keepassxc.org
+docs_url: https://keepassxc.org/docs/
+
+install_command: brew install --cask keepassxc
+
+category: Dev Tools
+tags: [passwords, secrets, vault, desktop, security, credentials]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Local shells and notebooks still pull OpenAI keys and cloud tokens from
+  unencrypted notes. KeePassXC keeps those secrets in a local KDBX database
+  with a desktop app and CLI, so credentials never sit in a repo or a chat
+  log and can travel on a USB key or encrypted volume.
+
+use_cases:
+  - Store OpenAI, Anthropic, and cloud tokens in a local encrypted KDBX file
+  - Unlock SSH passphrases and API keys from the KeePassXC desktop app during training
+  - Share a team KDBX over a private volume without a hosted password SaaS
+  - Autotype staging logins during demos without keeping passwords in a notes app
+  - Keep a portable credential database next to a laptop that is often offline
