@@ -1,0 +1,28 @@
+name: Laravel
+description: Laravel is a PHP web framework with routing, Eloquent ORM, queues, and first-party auth. Teams use it to ship AI product backends, admin panels, and job workers that call model APIs without assembling a custom PHP stack.
+tagline: PHP framework for web apps, APIs, and queues
+
+github_url: https://github.com/laravel/framework
+website_url: https://laravel.com
+docs_url: https://laravel.com/docs
+
+install_command: composer create-project laravel/laravel
+
+category: Dev Tools
+tags: [php, backend, framework, orm, queues, fullstack]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  PHP backends for AI products still need auth, queues, and an ORM
+  besides a raw script that calls an LLM. Laravel provides those
+  pieces so a team can run inference jobs, store results, and expose
+  an HTTP API without assembling a custom stack.
+
+use_cases:
+  - Build a PHP API that proxies LLM calls and stores results in Eloquent
+  - Queue embedding or eval jobs with Laravel queues and workers
+  - Ship an admin panel for prompts, users, and usage with first-party auth
+  - Schedule retraining or digest emails with Laravel's scheduler
+  - Serve a Blade or Inertia UI in front of a model backend
