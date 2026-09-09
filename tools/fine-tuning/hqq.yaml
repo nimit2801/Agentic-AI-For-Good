@@ -1,0 +1,25 @@
+name: HQQ
+description: Half-Quadratic Quantization for fast, calibration-light compression of large language models. Teams drop models to 2-bit through 8-bit weights for inference and QLoRA-style fine-tuning with a simple PyTorch API.
+tagline: Half-Quadratic Quantization for LLMs
+
+github_url: https://github.com/dropbox/hqq
+website_url: https://dropbox.github.io/hqq_blog/
+docs_url: https://github.com/dropbox/hqq
+install_command: pip install hqq
+
+category: Fine-tuning
+tags: [quantization, llm, pytorch, qlora, inference, python]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Many quantizers need long calibration and still lose quality at 2-bit
+  and 4-bit. HQQ uses half-quadratic optimization so teams compress LLMs
+  quickly and run low-bit inference or QLoRA without a heavy calibration
+  pipeline.
+
+use_cases:
+  - Quantize an LLM to 4-bit for local inference with HQQ
+  - Fine-tune a quantized model with QLoRA-style training
+  - Compare 2-bit versus 4-bit quality on a chat model

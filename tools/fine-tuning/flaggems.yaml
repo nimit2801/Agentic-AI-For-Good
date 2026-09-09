@@ -1,0 +1,24 @@
+name: FlagGems
+description: Operator library for large language models written in Triton. Drops in as PyTorch-compatible kernels so teams speed up LLM training and inference without rewriting models in CUDA C++.
+tagline: Triton operator library for LLMs
+
+github_url: https://github.com/flagos-ai/FlagGems
+docs_url: https://github.com/flagos-ai/FlagGems
+install_command: pip install flag_gems
+
+category: Fine-tuning
+tags: [triton, gpu, kernels, llm, pytorch, inference, training]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  LLM training and serving spend time in attention and fused ops that
+  stock PyTorch does not always optimize. FlagGems provides Triton
+  kernels that replace those operators so teams get faster GPU execution
+  without writing custom CUDA.
+
+use_cases:
+  - Speed up LLM inference with Triton replacement kernels
+  - Fuse operators in a training loop without custom CUDA
+  - Benchmark FlagGems kernels against native PyTorch ops

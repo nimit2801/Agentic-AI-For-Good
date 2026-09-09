@@ -1,0 +1,24 @@
+name: SmoothQuant
+description: Post-training quantization method for large language models that smooths activation outliers so INT8 inference stays accurate. Teams use it to cut LLM memory and latency without a full retraining pass.
+tagline: Accurate INT8 post-training quantization for LLMs
+
+github_url: https://github.com/mit-han-lab/smoothquant
+website_url: https://arxiv.org/abs/2211.10438
+docs_url: https://github.com/mit-han-lab/smoothquant
+
+category: Fine-tuning
+tags: [quantization, llm, pytorch, int8, inference, post-training]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  LLM activations have outliers that break naive INT8 quantization.
+  SmoothQuant migrates quantization difficulty from activations to
+  weights so models run accurate INT8 inference without retraining,
+  cutting memory and latency for serving.
+
+use_cases:
+  - Quantize a Hugging Face LLM to INT8 for cheaper inference
+  - Reduce GPU memory for serving a 7B-plus model
+  - Compare SmoothQuant INT8 quality against FP16 baselines
