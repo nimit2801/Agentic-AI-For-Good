@@ -1,0 +1,27 @@
+name: Structurizr
+description: Models-as-code tooling for the C4 model. Write a DSL workspace once, then export system context, container, and component diagrams so architecture stays in Git next to the agent or ML service it describes.
+tagline: C4 models as code for software architecture diagrams
+
+github_url: https://github.com/structurizr/structurizr
+website_url: https://docs.structurizr.com
+docs_url: https://docs.structurizr.com
+
+install_command: brew install structurizr-cli
+
+category: Dev Tools
+tags: [c4, architecture, diagrams, dsl, documentation, java, open-source]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Architecture slides drift from the system they describe, and drawing C4
+  diagrams by hand does not survive a Git review. Structurizr stores one
+  model in DSL, then renders context, container, and component views so
+  agent and ML platforms stay documented next to the code.
+
+use_cases:
+  - Version a C4 workspace in Git alongside an agent platform
+  - Export PlantUML or Mermaid views from one DSL model for design reviews
+  - Generate AWS, Azure, and GCP themed diagrams from the same workspace
+  - Validate architecture-as-code in CI before a service merge
