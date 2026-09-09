@@ -1,0 +1,28 @@
+name: Context Mode
+description: MCP plugin that keeps large tool output out of the LLM context window by sandboxing it into a local FTS5 store. Agents search the store instead of re-sending raw logs, cutting context use by up to 98 percent across 17 coding platforms.
+tagline: Keep raw tool output out of the agent context window
+
+github_url: https://github.com/mksglu/context-mode
+website_url: https://context-mode.com
+docs_url: https://context-mode.com
+
+install_command: npm install -g context-mode
+
+category: Dev Tools
+tags: [mcp, context, coding-agents, claude-code, cursor, tokens, cli]
+pricing: freemium
+is_open_source: true
+license: Elastic-2.0
+
+problem_solved: |
+  Coding agents burn context on every grep, file read, and CLI dump, then resend
+  that payload every turn until the window is full. Context Mode intercepts large
+  tool output, stores it locally in FTS5, and lets the agent search it on demand,
+  so sessions stay cheap and long without changing how Claude Code, Cursor, or
+  Copilot work.
+
+use_cases:
+  - Cut token spend on Claude Code, Cursor, Codex, and Gemini CLI by sandboxing tool output
+  - Persist session knowledge in a local FTS5 store the agent can search instead of re-reading files
+  - Run the same MCP plugin across 17 adapters without sending source code to a cloud
+  - Add an org analytics layer on top of structural plugin events without shipping prompts off-machine
