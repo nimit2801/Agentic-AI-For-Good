@@ -1,0 +1,28 @@
+name: Qwen-Agent
+description: Alibaba's open-source agent framework for Qwen models, with function calling, MCP, a sandboxed code interpreter, RAG, and example apps such as Browser Assistant. It is the backend that powers Qwen Chat.
+tagline: Agent framework for Qwen with tools, MCP, and code interpreter
+
+github_url: https://github.com/QwenLM/Qwen-Agent
+website_url: https://qwenlm.github.io/Qwen-Agent/en/
+docs_url: https://qwenlm.github.io/Qwen-Agent/en/guide/
+
+install_command: pip install qwen-agent
+
+category: Agents
+tags: [python, agents, qwen, function-calling, mcp, rag, code-interpreter]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Building reliable tool-using agents on Qwen models requires custom function-call
+  templates, MCP wiring, RAG over long documents, and a sandboxed code interpreter.
+  Qwen-Agent packages those primitives as reusable LLM, Tool, and Agent classes so
+  teams can ship assistants, browser helpers, and Gradio UIs without reinventing
+  Qwen-specific parsing and planning.
+
+use_cases:
+  - Build a Qwen assistant that calls custom tools, MCP servers, and a Docker-sandboxed code interpreter
+  - Run RAG over long PDFs and 1M-token document collections with the framework's retrieval helpers
+  - Ship a Gradio chat UI for a Browser Assistant or Custom Assistant on top of DashScope or local vLLM
+  - Add parallel, multi-step function calling to Qwen3, QwQ, and Qwen-Coder model deployments

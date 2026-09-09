@@ -1,0 +1,27 @@
+name: Camofox
+description: Stealth headless browser for AI agents that wraps Camoufox, a Firefox fork with C++ fingerprint spoofing. It exposes a REST API with accessibility snapshots and element refs as a drop-in path when Playwright and Chrome get blocked.
+tagline: Anti-detection browser API for AI agents
+
+github_url: https://github.com/jo-inc/camofox-browser
+website_url: https://github.com/jo-inc/camofox-browser
+
+install_command: npm install @askjo/camofox-browser
+
+category: Dev Tools
+tags: [browser-automation, anti-detection, scraping, playwright, puppeteer, agents, nodejs]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  AI agents that browse the live web get blocked by Cloudflare, bot detection, and
+  headless-Chrome fingerprints. Camofox wraps Camoufox's C++-level Firefox spoofing
+  in a REST API with accessibility snapshots and stable element refs, so agents can
+  click, search, and extract pages without Playwright stealth plugins becoming the
+  fingerprint.
+
+use_cases:
+  - Give an AI agent a stealth browser that bypasses Cloudflare and common bot checks
+  - Replace Playwright or Puppeteer navigation with accessibility snapshots and element refs
+  - Extract YouTube transcripts, search macros, and structured JSON from pages without an API key
+  - Deploy an anti-detection browser server on Docker, Fly.io, or Railway for agent workloads
