@@ -1,0 +1,27 @@
+name: ODMantic
+description: Sync and async MongoDB ODM based on Python type hints. ODMantic models documents with Pydantic so FastAPI services can validate, query, and persist MongoDB data without writing untyped dicts.
+tagline: Type-hinted MongoDB ODM with Pydantic
+
+github_url: https://github.com/art049/odmantic
+website_url: https://art049.github.io/odmantic
+docs_url: https://art049.github.io/odmantic
+
+category: Data
+tags: [python, mongodb, odm, pydantic, asyncio, type-hints]
+pricing: free
+is_open_source: true
+license: ISC
+
+install_command: pip install odmantic
+
+problem_solved: |
+  MongoDB access in Python is often untyped dicts or a sync-only ODM that
+  blocks asyncio. ODMantic models collections with Pydantic type hints and
+  supports both sync and async engines, so FastAPI and agent backends get
+  validated documents without a separate schema layer.
+
+use_cases:
+  - Define MongoDB documents with Pydantic models in a FastAPI app
+  - Run async queries against MongoDB without blocking the event loop
+  - Share the same document models between sync scripts and async APIs
+  - Validate nested documents before writes using Python type hints

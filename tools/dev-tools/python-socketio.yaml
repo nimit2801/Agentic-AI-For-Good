@@ -1,0 +1,26 @@
+name: python-socketio
+description: Socket.IO server and client for Python. python-socketio adds event-based WebSocket messaging on asyncio, aiohttp, FastAPI, and Flask so agent UIs and streaming inference can push events without a custom protocol.
+tagline: Socket.IO server and client for Python
+
+github_url: https://github.com/miguelgrinberg/python-socketio
+docs_url: https://python-socketio.readthedocs.io
+
+category: Dev Tools
+tags: [python, websocket, socketio, asyncio, fastapi, realtime]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install python-socketio
+
+problem_solved: |
+  Raw WebSockets need a custom event protocol, reconnect logic, and fallbacks.
+  python-socketio implements the Socket.IO protocol in Python with asyncio and
+  WSGI integrations, so chat UIs, live agent traces, and streaming inference
+  can emit named events with rooms and acknowledgements.
+
+use_cases:
+  - Push token-stream and tool-call events to a browser over Socket.IO
+  - Add realtime rooms for multi-user agent sessions on FastAPI
+  - Connect a Python client to an existing Socket.IO Node server
+  - Fall back from WebSocket to long-polling when proxies block WS
