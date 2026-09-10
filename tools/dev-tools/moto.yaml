@@ -1,0 +1,27 @@
+name: Moto
+description: Library that mocks AWS services in Python tests. Moto intercepts boto3 calls so you can exercise S3, SageMaker, Lambda, and IAM code locally without hitting real AWS or paying for fixtures.
+tagline: Mock AWS services in Python tests
+
+github_url: https://github.com/getmoto/moto
+website_url: https://docs.getmoto.org
+docs_url: https://docs.getmoto.org/en/latest/
+
+category: Dev Tools
+tags: [python, aws, testing, mock, boto3, ci]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install moto
+
+problem_solved: |
+  Tests that hit live AWS are slow, flaky, and expensive, and stubbing every
+  boto3 client by hand drifts from real APIs. Moto intercepts AWS calls in
+  process so S3, IAM, Lambda, and SageMaker code can run against an in-memory
+  mock that matches service behavior, keeping CI offline and deterministic.
+
+use_cases:
+  - Unit-test S3 upload and download helpers without a real bucket
+  - Exercise IAM and STS credential flows in CI with no AWS account
+  - Mock Lambda invoke and SageMaker APIs while testing ML pipeline code
+  - Run decorator or server-mode AWS mocks alongside pytest fixtures

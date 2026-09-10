@@ -1,0 +1,28 @@
+name: Boto3
+description: AWS SDK for Python. Boto3 is the official client for S3, SageMaker, Bedrock, Lambda, and the rest of AWS, so ML pipelines can provision data, train jobs, and call models from Python without raw HTTP.
+tagline: Official AWS SDK for Python
+
+github_url: https://github.com/boto/boto3
+website_url: https://aws.amazon.com/sdk-for-python/
+docs_url: https://boto3.amazonaws.com/v1/documentation/api/latest/index.html
+
+category: Dev Tools
+tags: [python, aws, sdk, s3, sagemaker, bedrock, cloud]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install boto3
+
+problem_solved: |
+  Calling AWS from Python without a generated client means signing requests,
+  paging results, and tracking service APIs by hand. Boto3 wraps every AWS
+  service in resource and client APIs so training jobs, feature stores, and
+  agent tools can talk to S3, SageMaker, Bedrock, and Lambda with the same
+  credentials and retry behavior as the rest of the AWS CLI.
+
+use_cases:
+  - Upload training datasets and model artifacts to S3 from a Python job
+  - Launch SageMaker training and inference jobs from a pipeline script
+  - Call Amazon Bedrock models from an agent without a custom HTTP client
+  - Provision Lambda, IAM, and SQS resources that back an ML service

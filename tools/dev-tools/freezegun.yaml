@@ -1,0 +1,27 @@
+name: Freezegun
+description: Library that freezes datetime in Python tests. Freezegun patches datetime, date, and time so time-dependent code, cron logic, and token expiry can be tested at a fixed clock without sleeping or waiting for real time.
+tagline: Freeze time in Python tests
+
+github_url: https://github.com/spulec/freezegun
+docs_url: https://github.com/spulec/freezegun
+
+category: Dev Tools
+tags: [python, testing, datetime, pytest, mock]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install freezegun
+
+problem_solved: |
+  Code that depends on the system clock is hard to test. Sleeps make CI slow,
+  and real midnight or expiry boundaries are nearly impossible to hit. Freezegun
+  patches datetime, date, and time so you can freeze, tick, or travel to a
+  specific instant and assert cron jobs, token TTL, and scheduling logic
+  deterministically.
+
+use_cases:
+  - Freeze the clock while testing JWT or API key expiry
+  - Travel to a future date to assert scheduled job and cron behavior
+  - Tick time in small steps to cover retry backoff without sleeping
+  - Make datetime-dependent feature flags and rate limits deterministic in CI

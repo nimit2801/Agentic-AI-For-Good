@@ -1,0 +1,26 @@
+name: aiofiles
+description: Async file I/O for asyncio. aiofiles wraps standard file operations in a thread pool so FastAPI, Starlette, and agent runtimes can read and write files without blocking the event loop.
+tagline: Async file I/O for asyncio
+
+github_url: https://github.com/Tinche/aiofiles
+docs_url: https://github.com/Tinche/aiofiles
+
+category: Dev Tools
+tags: [python, asyncio, files, async, fastapi, io]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install aiofiles
+
+problem_solved: |
+  Standard open() and Path.read_text() block the asyncio event loop, stalling
+  concurrent request handling in FastAPI apps and agent servers. aiofiles
+  offloads file reads, writes, and tempfile work to a thread pool with an
+  async API, so upload handlers and local artifact code stay non-blocking.
+
+use_cases:
+  - Read and write uploaded files in FastAPI without blocking the event loop
+  - Stream local model or prompt files from an asyncio agent runtime
+  - Use async tempfile helpers when tests or jobs need scratch files
+  - Serve static artifacts from an asyncio server without sync disk I/O
