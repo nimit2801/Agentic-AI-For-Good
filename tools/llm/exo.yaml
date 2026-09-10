@@ -1,0 +1,29 @@
+name: exo
+description: An open-source cluster runtime that turns everyday devices into a local AI inference mesh. exo auto-discovers peers, shards frontier models with topology-aware tensor parallelism (including RDMA over Thunderbolt), and exposes OpenAI, Claude, and Ollama-compatible APIs plus a dashboard.
+tagline: Run frontier models locally across a device cluster
+
+github_url: https://github.com/exo-explore/exo
+website_url: https://github.com/exo-explore/exo
+docs_url: https://github.com/exo-explore/exo
+
+install_command: brew install --cask exo
+
+category: LLM
+tags: [llm, local-inference, distributed, mlx, apple-silicon, cluster, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Frontier models no longer fit on a single workstation, so teams either rent datacenter GPUs
+  or downsample the model. exo pools Macs and other devices on the local network into one
+  cluster, automatically placing shards from a live topology view and speeding interconnects
+  with RDMA over Thunderbolt. Existing Chat Completions, Claude Messages, and Ollama clients
+  keep working against a localhost endpoint instead of a cloud API.
+
+use_cases:
+  - Run DeepSeek, Qwen, or Kimi-class models across several Mac Studios without a cloud GPU bill
+  - Expose a local OpenAI-compatible API so existing apps talk to a private cluster unchanged
+  - Add machines to a cluster and let exo rebalance tensor-parallel shards from device topology
+  - Chat with clustered models from the built-in dashboard at localhost while keeping data on-prem
+  - Load custom Hugging Face models onto a heterogeneous home or lab inference mesh

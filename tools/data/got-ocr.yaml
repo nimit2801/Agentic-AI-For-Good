@@ -1,0 +1,27 @@
+name: GOT-OCR
+description: A unified end-to-end OCR-2.0 model that reads plain text, formatted documents, formulas, tables, charts, and sheet music into structured output. GOT-OCR replaces a stack of specialist engines with one vision-language model, with weights on Hugging Face and Transformers inference support.
+tagline: One end-to-end model for documents, formulas, tables, and charts
+
+github_url: https://github.com/Ucas-HaoranWei/GOT-OCR2.0
+website_url: https://huggingface.co/stepfun-ai/GOT-OCR-2.0-hf
+docs_url: https://arxiv.org/abs/2409.01704
+
+category: Data
+tags: [ocr, vision-language, documents, pdf, tables, formulas, transformers]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Production document pipelines stitch together scene-text detectors, layout parsers,
+  formula recognizers, and table extractors, each with its own errors and GPU graph.
+  GOT-OCR 2.0 treats OCR as a single sequence-generation problem, so one model transcribes
+  pages, equations, tables, and charts into text or structured markup. Teams ingest messy
+  PDFs and screenshots without maintaining a zoo of specialist OCR services.
+
+use_cases:
+  - Transcribe scanned research PDFs including formulas and tables into machine-readable text
+  - Extract chart and sheet-music content that classic OCR engines skip or garble
+  - Run batched GOT-OCR inference through Hugging Face Transformers in a document pipeline
+  - Fine-tune GOT-OCR on domain forms so a single model replaces several vendor OCR APIs
+  - Convert screenshot-heavy internal wikis into searchable text for RAG without layout heuristics
