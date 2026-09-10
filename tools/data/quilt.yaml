@@ -1,0 +1,31 @@
+name: Quilt
+description: >-
+  Quilt is a scientific data management platform that packages datasets with
+  versioned manifests, metadata, and documentation on S3. Teams and AI systems
+  can find, trust, and reuse data through immutable packages instead of loose
+  buckets of untracked files.
+tagline: Versioned data packages for teams and AI
+
+github_url: https://github.com/quiltdata/quilt
+website_url: https://quilt.bio
+docs_url: https://docs.quiltdata.com
+install_command: pip install quilt3
+
+category: Data
+tags: [data-versioning, s3, python, packages, parquet, scientific-data]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  ML datasets on S3 drift without versions, schemas, or discoverable docs, so
+  training jobs silently read the wrong files and teams cannot reproduce a
+  run. Quilt wraps objects into versioned packages with manifests and catalog
+  metadata so datasets are immutable, searchable, and safe to share with
+  humans and agents.
+
+use_cases:
+  - "Publish versioned training packages on S3 with manifests so jobs pin a hash instead of a moving prefix"
+  - "Catalog scientific and ML datasets with metadata so agents and teammates can search before copying buckets"
+  - "Reproduce a model run by checking out the exact Quilt package revision used at training time"
+  - "Browse Parquet and images in a catalog UI instead of listing raw S3 keys"

@@ -1,0 +1,31 @@
+name: Narwhals
+description: >-
+  Narwhals is a lightweight compatibility layer for Python dataframes. Write
+  once against a small API and run the same code on pandas, Polars, cuDF,
+  PyArrow, DuckDB, Dask, Ibis, and PySpark so dataframe libraries in ML
+  pipelines stay interchangeable.
+tagline: Write once, run on pandas, Polars, and friends
+
+github_url: https://github.com/narwhals-dev/narwhals
+website_url: https://narwhals-dev.github.io/narwhals/
+docs_url: https://narwhals-dev.github.io/narwhals/
+install_command: pip install narwhals
+
+category: Data
+tags: [python, dataframe, pandas, polars, pyarrow, duckdb, compatibility]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: >-
+  Libraries that depend on pandas lock out Polars and GPU dataframe users, while
+  shipping separate backends for each engine is expensive to maintain. Narwhals
+  lets authors express dataframe operations once and execute them on the
+  caller's engine, so ML tooling works across pandas, Polars, cuDF, and Arrow
+  without copy-paste backends.
+
+use_cases:
+  - "Ship a feature-engineering helper that runs on pandas in notebooks and Polars in production jobs"
+  - "Keep GPU cuDF and DuckDB users on the same public API as CPU pandas pipelines"
+  - "Avoid pulling pandas as a hard dependency in libraries that only need a few dataframe ops"
+  - "Migrate incremental Polars adoption without rewriting every pandas-shaped utility"
