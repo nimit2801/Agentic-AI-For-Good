@@ -1,0 +1,26 @@
+name: Daphne
+description: HTTP and WebSocket ASGI server for Django Channels. Daphne runs async Django apps so chat, streaming inference, and long-lived agent connections can use WebSockets instead of request-response only.
+tagline: ASGI server for Django Channels and WebSockets
+
+github_url: https://github.com/django/daphne
+docs_url: https://github.com/django/daphne
+
+category: Dev Tools
+tags: [python, asgi, django, websocket, http, server]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+install_command: pip install daphne
+
+problem_solved: |
+  Django's default WSGI server cannot speak WebSockets or HTTP/2, so chat
+  UIs, streaming model output, and live agent sessions need a separate ASGI
+  stack. Daphne is the reference ASGI server for Django Channels, handling
+  HTTP and WebSocket connections so those apps can run under one process.
+
+use_cases:
+  - Serve Django Channels apps with HTTP and WebSocket in one process
+  - Stream token-by-token model output to a browser over WebSockets
+  - Run long-lived agent sessions that push events to a Django frontend
+  - Terminate TLS and proxy ASGI traffic in development and production
