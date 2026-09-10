@@ -1,0 +1,27 @@
+name: Beanie
+description: Async Python ODM for MongoDB built on Pydantic and Motor. Beanie lets FastAPI and asyncio services model documents with type hints, migrations, and relations without blocking the event loop.
+tagline: Async MongoDB ODM with Pydantic
+
+github_url: https://github.com/BeanieODM/beanie
+website_url: https://beanie-odm.dev
+docs_url: https://beanie-odm.dev
+
+category: Data
+tags: [python, mongodb, odm, asyncio, pydantic, fastapi]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install beanie
+
+problem_solved: |
+  Sync MongoDB ODMs block asyncio servers, and Motor alone still leaves you
+  writing untyped dicts. Beanie combines Motor with Pydantic models so FastAPI
+  and agent backends can define documents, indexes, and migrations with type
+  hints and non-blocking I/O.
+
+use_cases:
+  - Model MongoDB collections as Pydantic documents in a FastAPI app
+  - Run async queries from an agent server without blocking the event loop
+  - Apply document migrations when experiment or memory schemas change
+  - Define relations and indexes next to the Python document class

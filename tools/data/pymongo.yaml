@@ -1,0 +1,27 @@
+name: PyMongo
+description: Official MongoDB driver for Python. PyMongo is the supported client for CRUD, aggregations, GridFS, and change streams, so ML pipelines can store documents, embeddings metadata, and job state in MongoDB from CPython.
+tagline: Official MongoDB driver for Python
+
+github_url: https://github.com/mongodb/mongo-python-driver
+website_url: https://www.mongodb.com/docs/languages/python/pymongo-driver/current/
+docs_url: https://www.mongodb.com/docs/languages/python/pymongo-driver/current/
+
+category: Data
+tags: [python, mongodb, driver, nosql, documents, database]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install pymongo
+
+problem_solved: |
+  Talking to MongoDB from Python without the official driver means reimplementing
+  wire protocol, auth, and connection pooling. PyMongo is the supported client
+  for CRUD, aggregations, GridFS, and change streams, so feature stores, agent
+  memory, and job metadata can live in MongoDB with production-grade retries.
+
+use_cases:
+  - Store and query document records that back an ML feature store
+  - Stream change events to trigger retraining or cache invalidation
+  - Persist agent conversation state and tool results in MongoDB
+  - Upload large artifacts through GridFS from a Python training job

@@ -1,0 +1,27 @@
+name: Motor
+description: Async MongoDB driver for Tornado and asyncio. Motor wraps PyMongo so FastAPI, Tornado, and agent runtimes can query MongoDB without blocking the event loop on network I/O.
+tagline: Async MongoDB driver for asyncio and Tornado
+
+github_url: https://github.com/mongodb/motor
+website_url: https://motor.readthedocs.io
+docs_url: https://motor.readthedocs.io
+
+category: Data
+tags: [python, mongodb, asyncio, tornado, driver, async]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install motor
+
+problem_solved: |
+  PyMongo is synchronous, so a MongoDB call inside an asyncio handler stalls
+  every other request. Motor is the official async wrapper around PyMongo for
+  asyncio and Tornado, so document reads and writes stay off the event loop
+  in FastAPI services and long-running agent processes.
+
+use_cases:
+  - Query MongoDB from FastAPI without blocking the event loop
+  - Use async cursors in Tornado apps that serve model results
+  - Share PyMongo-compatible APIs in asyncio worker processes
+  - Stream change feeds into an async pipeline without a thread pool

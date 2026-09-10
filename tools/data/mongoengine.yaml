@@ -1,0 +1,27 @@
+name: MongoEngine
+description: Object-document mapper for MongoDB in Python. MongoEngine maps classes to collections with schemas, validation, and query helpers so you can model documents without writing raw PyMongo dicts.
+tagline: Python ODM for MongoDB
+
+github_url: https://github.com/MongoEngine/mongoengine
+website_url: https://mongoengine-odm.readthedocs.io
+docs_url: https://mongoengine-odm.readthedocs.io
+
+category: Data
+tags: [python, mongodb, odm, orm, documents, schema]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install mongoengine
+
+problem_solved: |
+  Raw PyMongo dicts have no schema, so field names drift and nested documents
+  are easy to corrupt. MongoEngine maps Python classes to MongoDB collections
+  with types, validation, and queryset helpers, so application data around
+  models and agents stays structured without a relational ORM.
+
+use_cases:
+  - Define document schemas for user, job, and experiment records
+  - Query nested MongoDB documents with a Django-like queryset API
+  - Validate fields before writes so training metadata stays consistent
+  - Map Python classes to collections without writing raw BSON dicts
