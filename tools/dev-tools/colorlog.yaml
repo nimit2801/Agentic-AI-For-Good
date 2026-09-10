@@ -1,0 +1,27 @@
+name: colorlog
+description: Colored formatter for Python logging. colorlog adds per-level colors to the standard logging module so local ML jobs, agent CLIs, and server logs are easier to scan without switching to a full logging framework.
+tagline: Colored formatter for Python logging
+
+github_url: https://github.com/borntyping/python-colorlog
+website_url: https://pypi.org/project/colorlog/
+docs_url: https://github.com/borntyping/python-colorlog
+
+category: Dev Tools
+tags: [python, logging, cli, developer-experience, color]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install colorlog
+
+problem_solved: |
+  Standard library logging dumps monochrome lines that are hard to scan in a
+  terminal, and switching to a heavy logging stack is overkill for scripts.
+  colorlog is a drop-in formatter that colors log levels, so training jobs
+  and agent CLIs stay on logging.getLogger while becoming readable locally.
+
+use_cases:
+  - Color ERROR versus INFO lines in a local training or eval job
+  - Keep stdlib logging in a CLI while making levels easy to scan
+  - Add colored logs to an agent worker without a new logging framework
+  - Share one logging config between scripts and a development server
