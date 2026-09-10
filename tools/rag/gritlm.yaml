@@ -1,0 +1,29 @@
+name: GritLM
+description: A unified large language model that performs both generation and embedding from one set of weights, switching tasks with instruction prefixes. GritLM lets RAG stacks skip a separate retriever, speeding long-document pipelines while remaining competitive on MTEB and generative benchmarks.
+tagline: One model for embedding and generation in RAG pipelines
+
+github_url: https://github.com/ContextualAI/gritlm
+website_url: https://github.com/ContextualAI/gritlm
+docs_url: https://arxiv.org/abs/2402.09906
+
+install_command: pip install gritlm
+
+category: RAG
+tags: [python, rag, embeddings, retrieval, llm, instruction-tuning, mteb]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Typical RAG systems run a dedicated embedding model to retrieve passages and a second
+  generative model to answer, doubling GPU memory, latency, and ops. GritLM trains one LLM
+  to embed or generate based on the instruction, matching single-task training quality.
+  Long-document RAG can reuse the same weights for retrieval and answering, cutting end-to-end
+  latency by more than 60 percent in the paper's setting.
+
+use_cases:
+  - Embed queries and documents with instruction prefixes, then generate answers from the same 7B or 8x7B checkpoint
+  - Replace a two-model RAG stack with GritLM to cut GPU memory and round trips on long PDFs
+  - Fine-tune GritLM-style instruction data so one model covers search and chat for an internal corpus
+  - Benchmark unified retrieval-plus-generation quality against MTEB embedding baselines
+  - Cache document embeddings from GritLM and still use the generative head for grounded answers

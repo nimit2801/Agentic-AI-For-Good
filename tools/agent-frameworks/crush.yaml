@@ -1,0 +1,31 @@
+name: Crush
+description: A terminal-native agentic coding assistant from Charm that wires your local tools, code, and workflows into the LLM of your choice. It supports many models, mid-session switching, LSP-aware context, MCP extensions, and runs on macOS, Linux, Windows, Android, and BSD.
+tagline: Glamorous agentic coding in your terminal
+
+github_url: https://github.com/charmbracelet/crush
+website_url: https://github.com/charmbracelet/crush
+docs_url: https://github.com/charmbracelet/crush
+
+install_command: |
+  brew install charmbracelet/tap/crush
+  npm install -g @charmland/crush
+
+category: Agents
+tags: [go, agents, coding-assistant, terminal, mcp, lsp, llm]
+pricing: free
+is_open_source: true
+license: FSL-1.1-MIT
+
+problem_solved: |
+  Most coding agents live in an IDE or a browser tab, so terminal-first developers lose their
+  existing CLI, LSP, and script workflows when they ask a model for help. Crush runs as a
+  Charm TUI in any terminal, keeps multiple project sessions, talks to OpenAI- and
+  Anthropic-compatible APIs, and pulls extra context from language servers and MCP servers.
+  You stay in the shell while the agent edits code with the same tools you already use.
+
+use_cases:
+  - Pair with a local or cloud LLM from the terminal to edit a repo using LSP diagnostics as extra context
+  - Switch models mid-session without dropping conversation history when one provider rate-limits
+  - Extend the agent with HTTP, stdio, or SSE MCP servers for tickets, docs, and internal APIs
+  - Keep separate Crush sessions per project so coding contexts do not bleed across workstreams
+  - Run the same agentic coding workflow on macOS, Linux, Windows, WSL, Android, and BSD

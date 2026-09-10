@@ -1,0 +1,29 @@
+name: Quanto
+description: Hugging Face Optimum's PyTorch quantization backend. Quanto quantizes weights and activations to int2, int4, int8, or float8 in eager mode, runs on CUDA and MPS, inserts quantized modules automatically, and serializes with PyTorch or safetensors for smaller LLM footprints.
+tagline: Eager-mode PyTorch quantization for LLM weights and activations
+
+github_url: https://github.com/huggingface/optimum-quanto
+website_url: https://github.com/huggingface/optimum-quanto
+docs_url: https://huggingface.co/docs/optimum-quanto
+
+install_command: pip install optimum-quanto
+
+category: Fine-tuning
+tags: [python, pytorch, quantization, llm, huggingface, inference-optimization]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Post-training quantization often requires tracing the model into a compiler graph, which
+  breaks custom modules and eager-mode training loops. Quanto stays in vanilla PyTorch, so
+  non-traceable models still quantize, can move between CUDA and Apple MPS, and export with
+  safetensors. Teams shrink memory with int4 or float8 weights without rewriting the model
+  for a separate inference compiler.
+
+use_cases:
+  - Quantize a Hugging Face Transformers checkpoint to int8 or float8 weights before local serving
+  - Cut GPU or MPS memory for an LLM while keeping an eager PyTorch training or eval loop
+  - Serialize a quantized model with safetensors and reload it in Optimum or vanilla PyTorch
+  - Compare int4 weight-only versus float8 activation quantization on the same architecture
+  - Prototype quantization on Apple Silicon MPS before moving the same recipe to CUDA servers
