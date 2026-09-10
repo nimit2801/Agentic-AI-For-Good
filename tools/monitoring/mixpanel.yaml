@@ -1,0 +1,27 @@
+name: Mixpanel
+description: "Product analytics platform for tracking user events, funnels, retention, and cohorts. Teams instrument web, mobile, and server apps, then analyze how people use AI features without writing warehouse SQL for every question."
+tagline: "Event analytics for product and AI feature usage"
+
+github_url: https://github.com/mixpanel/mixpanel-js
+website_url: https://mixpanel.com
+docs_url: https://docs.mixpanel.com
+install_command: |
+  npm install mixpanel-browser
+  pip install mixpanel
+
+category: Monitoring
+tags: [analytics, product-analytics, events, funnels, retention, javascript]
+pricing: freemium
+is_open_source: false
+
+problem_solved: |
+  AI products ship new features weekly but teams cannot see which prompts, buttons, or
+  workflows users actually complete. Mixpanel captures events from web, iOS, Android, and
+  servers, then answers funnel, retention, and cohort questions so product and ML teams
+  can measure AI feature adoption without a custom analytics warehouse.
+
+use_cases:
+  - Track which AI features users try, complete, and abandon across web and mobile
+  - Build funnels from prompt submit to successful generation to paid conversion
+  - Compare retention of users who adopt an agent workflow versus those who do not
+  - Instrument server-side LLM calls so product analytics includes backend AI usage
