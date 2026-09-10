@@ -1,0 +1,27 @@
+name: Tortoise ORM
+description: Async ORM for Python inspired by Django. Tortoise ORM supports relations, migrations, and multiple backends so asyncio services can persist structured data without a sync Django ORM or raw SQL.
+tagline: Familiar asyncio ORM for Python
+
+github_url: https://github.com/tortoise/tortoise-orm
+website_url: https://tortoise.github.io
+docs_url: https://tortoise.github.io
+
+category: Data
+tags: [python, orm, asyncio, sql, django, database]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install tortoise-orm
+
+problem_solved: |
+  Django ORM and SQLAlchemy sync sessions block asyncio apps, and writing raw
+  SQL for every relation is error-prone. Tortoise ORM gives FastAPI and agent
+  backends a Django-like model API with async I/O, relations, and migrations
+  across SQLite, PostgreSQL, and MySQL.
+
+use_cases:
+  - Persist FastAPI application data with async model queries
+  - Model relations between users, jobs, and experiment records
+  - Run schema migrations for asyncio services without Django
+  - Use SQLite in tests and PostgreSQL in production with the same models
