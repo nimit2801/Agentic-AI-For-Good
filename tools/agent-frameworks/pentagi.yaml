@@ -1,0 +1,25 @@
+name: PentAGI
+description: "Fully autonomous multi-agent platform for penetration testing. Specialist agents plan, recon, exploit, and write reports inside sandboxed Docker, with a web UI, REST and GraphQL APIs, and support for OpenAI, Anthropic, Gemini, and local models."
+tagline: "Autonomous AI agents that run real penetration tests"
+
+github_url: https://github.com/vxcontrol/pentagi
+website_url: https://pentagi.com
+docs_url: https://github.com/vxcontrol/pentagi
+
+category: Agents
+tags: [agents, penetration-testing, security, autonomous, docker, multi-agent, golang]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Manual pentests are slow, expensive, and hard to repeat. PentAGI runs a crew of specialist
+  agents that decompose a target, gather intel, attempt exploits in isolated containers, and
+  produce a report, so security teams can automate offensive testing without handing agents
+  the host machine.
+
+use_cases:
+  - Run an autonomous pentest against a staging environment and get a written vulnerability report
+  - Give security agents Docker-isolated Kali tooling without exposing the host
+  - Automate recon, exploitation, and reporting as a repeatable CI-style security workflow
+  - Connect OpenAI, Anthropic, Gemini, or local models to a self-hosted offensive-security agent stack

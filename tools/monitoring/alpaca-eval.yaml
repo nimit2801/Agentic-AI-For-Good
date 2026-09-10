@@ -1,0 +1,26 @@
+name: AlpacaEval
+description: "Automatic evaluator for instruction-following language models from Stanford tatsu-lab. Computes cheap, fast, human-validated win rates against a reference model, including length-controlled scores that reduce GPT-4 judge length bias."
+tagline: "Cheap, fast, human-validated LLM instruction-following eval"
+
+github_url: https://github.com/tatsu-lab/alpaca_eval
+website_url: https://tatsu-lab.github.io/alpaca_eval/
+docs_url: https://github.com/tatsu-lab/alpaca_eval
+install_command: pip install alpaca-eval
+
+category: Monitoring
+tags: [evaluation, llm-eval, instruction-following, leaderboard, benchmarking, python]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Human eval of instruction-following models is slow and expensive, while static accuracy
+  suites miss open-ended quality. AlpacaEval uses an LLM judge on the AlpacaFarm set to
+  produce win rates that correlate with humans, with length control to stop models from
+  winning just by being verbose.
+
+use_cases:
+  - Rank instruction-tuned models with automatic win rates against a GPT-4 baseline
+  - Report length-controlled scores that reduce verbosity bias in LLM-as-judge evals
+  - Iterate on prompts or fine-tunes with a cheap eval before running human studies
+  - Publish results on the public AlpacaEval leaderboard for instruction-following quality

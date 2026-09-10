@@ -1,0 +1,24 @@
+name: Arena-Hard
+description: "Automatic LLM benchmark from LMArena that scores models on hard, real-user prompts using LLM-as-judge win rates. Higher correlation with Chatbot Arena than many static suites, with style control to reduce verbosity bias."
+tagline: "Hard-prompt LLM benchmark that tracks Chatbot Arena"
+
+github_url: https://github.com/lmarena/arena-hard-auto
+website_url: https://github.com/lmarena/arena-hard-auto
+docs_url: https://github.com/lmarena/arena-hard-auto
+
+category: Monitoring
+tags: [evaluation, llm-eval, benchmarking, chatbot-arena, llm-as-judge, python]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Static academic benchmarks saturate and poorly predict live Chatbot Arena rank. Arena-Hard
+  samples hard prompts from real user battles, judges model answers with an LLM, and reports
+  win rates with style control so labs can estimate Arena standing without a full live eval.
+
+use_cases:
+  - Score a new model on hard user prompts before submitting it to live Chatbot Arena
+  - Compare instruction-tuned checkpoints with GPT-4.1-as-judge win rates and confidence intervals
+  - Apply style control so longer or markdown-heavy answers do not inflate scores
+  - Reproduce published Arena-Hard leaderboards with the official auto-eval toolkit
