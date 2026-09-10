@@ -1,23 +1,42 @@
 {
-  "generatedAt": "2026-09-09T18:35:28Z",
+  "generatedAt": "2026-09-10T18:40:00Z",
   "windowDays": 8,
-  "summary": "Meta shipped Muse, a consumer personal agent on a dedicated Secure VM with a Sentinel that gates network writes and Stripe Link one-time cards. The same window: GPT-5.6 Sol plus Codex ran overnight qubit calibrations at MIT, while OpenAI's 10,000-agent Navier-Stokes claim turned into a scooping fight over rumor-driven math swarms. Jacob Coxon quit Anthropic over a race to self-improving superintelligence. HN's 749-point 'change the Add to Cart button to blue' is the coding-agent version of the same problem: the loop still overreaches. The deeper pattern: agents are leaving the IDE for labs, wallets, and personal VMs, while the people training them are walking out over recursive self-improvement.",
+  "summary": "DeepSeek shipped V4.1 Flash, a 552B MoE with 8B/16B active params that it says beats V4 Pro on coding and agent benches, then routes Pro traffic to Flash on Sept 14. OpenAI put GPT-Live-1 in the API so voice agents can talk full-duplex and hand hard work to GPT-6 Astra. Cognition raised $2B at $48B as Devin run-rate hit $900M. The same window still has Muse on a personal VM, a 1,151-point Add-to-Cart overreach post, and labs racing on Navier-Stokes swarms. The deeper pattern: agent cost is collapsing at the model layer while the product layer goes after phones, payments, and voice.",
   "sourceStats": {
-    "items": 60,
+    "items": 66,
     "sources": {
-      "OpenAI": 9,
+      "DeepSeek": 1,
       "Meta": 2,
+      "OpenAI": 10,
+      "Cognition": 1,
+      "Google AI": 4,
       "Mistral": 1,
       "NVIDIA": 1,
-      "Anthropic": 3,
-      "Google AI": 3,
+      "Anthropic": 1,
       "Qwen": 1,
       "Hacker News": 26,
-      "Hugging Face": 3,
-      "GitHub": 11
+      "Hugging Face": 4,
+      "GitHub": 14
     }
   },
   "highlights": [
+    {
+      "title": "DeepSeek-V4.1-Flash",
+      "source": "DeepSeek",
+      "url": "https://www.deepseek.com/en/news/deepseek-v4-1-flash/",
+      "meta": "815 pts · 457 comments",
+      "why": "A 552B MoE with 8B prefill / 16B decode active params, native multimodal, and a 1M context. DeepSeek says it beats V4 Pro on Terminal-Bench and agent tasks, then routes Pro traffic to Flash on Sept 14. This is the cheap long-horizon agent engine of the week.",
+      "topics": [
+        "deepseek",
+        "open-weights",
+        "agents",
+        "inference",
+        "coding"
+      ],
+      "publishedAt": "2026-09-10T04:00:00Z",
+      "score": 815,
+      "summary": "DeepSeek launched V4.1 Flash on the API as deepseek-flash, retired V4 Flash, and will point deepseek-v4-pro at Flash from 04:00 UTC Sept 14 until V4.1 Pro. MIT weights are on Hugging Face. Causal encoder-decoder plus a smaller KV cache is the pitch for million-token agent prefills."
+    },
     {
       "title": "Muse: Meta's personal AI agent",
       "source": "Meta",
@@ -51,6 +70,22 @@
       "publishedAt": "2026-09-08T17:13:21Z",
       "score": 430,
       "summary": "OpenAI published a Navier-Stokes existence-and-smoothness resolution (statement C/D: finite-time singularity under a smooth force). Agents used cached web and code tools; Astra handled Lean verification. OpenAI is not claiming the Clay prize."
+    },
+    {
+      "title": "GPT-Live-1 in the API",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+      "meta": "OpenAI · Sept 10",
+      "why": "Voice agents stop being STT-LLM-TTS glue. Live-1 listens and speaks at once, then delegates hard reasoning and tools to GPT-6 Astra. Yelp, Speak, Intercom Fin, and Cognition already quote it as the voice layer for agents that book, tutor, support, and code.",
+      "topics": [
+        "openai",
+        "voice-agents",
+        "astra",
+        "api"
+      ],
+      "publishedAt": "2026-09-10T00:00:00Z",
+      "score": 520,
+      "summary": "GPT-Live-1 is in the API at $0.05 per minute for the voice front end. It is full-duplex, handles interruptions in one model, and can hand tool calls to Astra or a third-party backend. OpenAI reports +30 pts on Full Duplex Bench versus GPT-Realtime-2.1."
     },
     {
       "title": "Claude, change the \"Add to Cart\" button to blue",
@@ -101,20 +136,20 @@
       "summary": "GPT-6 Astra is rolling out to Plus, Pro, Business, Enterprise, the API, Azure, and Bedrock. OpenAI pitches it as SOTA on computer use, browsing, SWE, cyber, and science, with a Codex harness update that is 1.9x faster on Mind2Web."
     },
     {
-      "title": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
-      "source": "Anthropic",
-      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
-      "meta": "1415 pts · 1391 comments",
-      "why": "Anthropic shipped the same model at two safeguard levels. Fable is GA; Mythos is trusted access. Typical usage is about 25% cheaper, more on agentic cache reads. Harness choice versus Astra is the live routing problem.",
+      "title": "Cognition Series E: Devin at $48B",
+      "source": "Cognition",
+      "url": "https://cognition.com/blog/series-e",
+      "meta": "$2B raised · $900M run-rate",
+      "why": "The autonomous coding-agent company nearly doubled valuation in four months on revenue, not hype. Auto-Triage, Security Swarm, and event-driven Automations are the product: agents that start work from Slack and GitHub without a chat. Coding agents are a multi-winner market after Cursor sold to SpaceX.",
       "topics": [
-        "anthropic",
-        "agents",
+        "devin",
         "coding-agents",
-        "safety"
+        "funding",
+        "enterprise"
       ],
-      "publishedAt": "2026-09-01T17:53:53Z",
-      "score": 1415,
-      "summary": "Claude Fable 5.1 is generally available. Mythos 5.1 is the higher-autonomy sibling under trusted access. Defaults: High in Claude Code, Medium on Claude.ai. Enterprise Frontier Safeguards follow for ZDR customers."
+      "publishedAt": "2026-09-08T17:00:00Z",
+      "score": 480,
+      "summary": "Cognition raised over $2B at $48B, led by a16z and Accel. Run-rate went from $492M in May to almost $900M. Customers named: NVIDIA chip design, GE Aerospace, Citi, Mercedes-Benz, Modal."
     },
     {
       "title": "Discovery of a new OpenAI agent message board",
@@ -147,59 +182,26 @@
       "publishedAt": "2026-09-08T05:06:23Z",
       "score": 757,
       "summary": "Mistral closed a €3B Series D at more than €21B, led by Samsung with Scaleup Europe Fund and PSG. Pitch is sovereign open-weight AI plus products (Vibe, Forge, AI Cloud) so enterprises keep data, models, and compute inside the wall."
-    },
-    {
-      "title": "How GPT-5.6 Sol helps run quantum computing experiments",
-      "source": "OpenAI",
-      "url": "https://openai.com/index/codex-quantum-computing-experiments/",
-      "meta": "136 pts · 104 comments",
-      "why": "Codex plus skills on real lab software: choose parameters, drive a six-qubit chip, decide the next measurement. Clear signals run overnight. Noisy physics still needs a human. Hardware-in-the-loop agents are no longer a paper.",
-      "topics": [
-        "openai",
-        "codex",
-        "agents",
-        "science",
-        "tool-use"
-      ],
-      "publishedAt": "2026-09-08T00:00:00Z",
-      "score": 136,
-      "summary": "MIT EQuS student Beatriz Yankelevich hooked GPT-5.6 Sol via Codex to superconducting-qubit control software. On a standard six-qubit chip, the agent completed routine calibration when traces were clean and stalled when they were not."
-    },
-    {
-      "title": "On the Navier-Stokes Millennium Prize Problem",
-      "source": "Hacker News",
-      "url": "https://simonwillison.net/2026/Sep/8/on-navier-stokes/",
-      "meta": "223 pts · 226 comments",
-      "why": "Willison maps the scooping fight: NYU/Anthropic collaborators used Codex for a year, OpenAI heard a rumor and spent ~88 hours and 130B output tokens. A rumor of a proof is now enough to launch a million-dollar agent swarm. Same pattern as rumor-driven exploit hunting.",
-      "topics": [
-        "openai",
-        "multi-agent",
-        "evaluation",
-        "research"
-      ],
-      "publishedAt": "2026-09-09T05:55:39Z",
-      "score": 223,
-      "summary": "Simon Willison walks through OpenAI's Navier-Stokes post against Tristan Buckmaster's statement. OpenAI says it did not read user drafts; it cannot rule out de-identified training signal. 223 HN points, 226 comments."
     }
   ],
   "sourceSections": {
     "majorLabs": [
       {
-        "title": "How GPT-5.6 Sol helps run quantum computing experiments",
-        "source": "OpenAI",
-        "url": "https://openai.com/index/codex-quantum-computing-experiments/",
-        "meta": "136 pts · 104 comments",
-        "why": "Codex plus skills on real lab software: choose parameters, drive a six-qubit chip, decide the next measurement. Clear signals run overnight. Noisy physics still needs a human. Hardware-in-the-loop agents are no longer a paper.",
+        "title": "DeepSeek-V4.1-Flash",
+        "source": "DeepSeek",
+        "url": "https://www.deepseek.com/en/news/deepseek-v4-1-flash/",
+        "meta": "815 pts · 457 comments",
+        "why": "A 552B MoE with 8B prefill / 16B decode active params, native multimodal, and a 1M context. DeepSeek says it beats V4 Pro on Terminal-Bench and agent tasks, then routes Pro traffic to Flash on Sept 14. This is the cheap long-horizon agent engine of the week.",
         "topics": [
-          "openai",
-          "codex",
+          "deepseek",
+          "open-weights",
           "agents",
-          "science",
-          "tool-use"
+          "inference",
+          "coding"
         ],
-        "publishedAt": "2026-09-08T00:00:00Z",
-        "score": 136,
-        "summary": "MIT EQuS student Beatriz Yankelevich hooked GPT-5.6 Sol via Codex to superconducting-qubit control software. On a standard six-qubit chip, the agent completed routine calibration when traces were clean and stalled when they were not."
+        "publishedAt": "2026-09-10T04:00:00Z",
+        "score": 815,
+        "summary": "DeepSeek launched V4.1 Flash on the API as deepseek-flash, retired V4 Flash, and will point deepseek-v4-pro at Flash from 04:00 UTC Sept 14 until V4.1 Pro. MIT weights are on Hugging Face. Causal encoder-decoder plus a smaller KV cache is the pitch for million-token agent prefills."
       },
       {
         "title": "Muse: Meta's personal AI agent",
@@ -217,6 +219,85 @@
         "publishedAt": "2026-09-08T19:00:00Z",
         "score": 610,
         "summary": "Meta launched Muse in the US on iOS, Android, WhatsApp, and muse.ai. It books, shops, and works after you close the app, powered by Muse Spark, with $0 / $20 / $100 tiers. Confidential VM (user-held keys) is promised later this year."
+      },
+      {
+        "title": "GPT-Live-1 in the API",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+        "meta": "OpenAI · Sept 10",
+        "why": "Voice agents stop being STT-LLM-TTS glue. Live-1 listens and speaks at once, then delegates hard reasoning and tools to GPT-6 Astra. Yelp, Speak, Intercom Fin, and Cognition already quote it as the voice layer for agents that book, tutor, support, and code.",
+        "topics": [
+          "openai",
+          "voice-agents",
+          "astra",
+          "api"
+        ],
+        "publishedAt": "2026-09-10T00:00:00Z",
+        "score": 520,
+        "summary": "GPT-Live-1 is in the API at $0.05 per minute for the voice front end. It is full-duplex, handles interruptions in one model, and can hand tool calls to Astra or a third-party backend. OpenAI reports +30 pts on Full Duplex Bench versus GPT-Realtime-2.1."
+      },
+      {
+        "title": "Cognition Series E: Devin at $48B",
+        "source": "Cognition",
+        "url": "https://cognition.com/blog/series-e",
+        "meta": "$2B raised · $900M run-rate",
+        "why": "The autonomous coding-agent company nearly doubled valuation in four months on revenue, not hype. Auto-Triage, Security Swarm, and event-driven Automations are the product: agents that start work from Slack and GitHub without a chat. Coding agents are a multi-winner market after Cursor sold to SpaceX.",
+        "topics": [
+          "devin",
+          "coding-agents",
+          "funding",
+          "enterprise"
+        ],
+        "publishedAt": "2026-09-08T17:00:00Z",
+        "score": 480,
+        "summary": "Cognition raised over $2B at $48B, led by a16z and Accel. Run-rate went from $492M in May to almost $900M. Customers named: NVIDIA chip design, GE Aerospace, Citi, Mercedes-Benz, Modal."
+      },
+      {
+        "title": "The Gemini app is now available for Windows",
+        "source": "Google AI",
+        "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/",
+        "meta": "Google · Sept 10",
+        "why": "Desktop Gemini is how Google puts an always-on agent next to the OS, not just the browser. Watch it against Muse and Copilot for default personal-agent real estate.",
+        "topics": [
+          "google",
+          "gemini",
+          "desktop"
+        ],
+        "publishedAt": "2026-09-10T16:00:00Z",
+        "score": 180,
+        "summary": "Google shipped the Gemini app on Windows on Sept 10."
+      },
+      {
+        "title": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
+        "meta": "OpenAI · Sept 10",
+        "why": "Same Codex loop as the MIT qubit overnight runs, now pointed at molecules. Lab agents are a product surface, not a demo reel.",
+        "topics": [
+          "openai",
+          "codex",
+          "science-agents"
+        ],
+        "publishedAt": "2026-09-10T16:00:00Z",
+        "score": 200,
+        "summary": "OpenAI published a researcher case study using Codex and ChatGPT to search for new antimicrobial molecules, the same day as GPT-Live-1."
+      },
+      {
+        "title": "How GPT-5.6 Sol helps run quantum computing experiments",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/codex-quantum-computing-experiments/",
+        "meta": "136 pts · 104 comments",
+        "why": "Codex plus skills on real lab software: choose parameters, drive a six-qubit chip, decide the next measurement. Clear signals run overnight. Noisy physics still needs a human. Hardware-in-the-loop agents are no longer a paper.",
+        "topics": [
+          "openai",
+          "codex",
+          "agents",
+          "science",
+          "tool-use"
+        ],
+        "publishedAt": "2026-09-08T00:00:00Z",
+        "score": 136,
+        "summary": "MIT EQuS student Beatriz Yankelevich hooked GPT-5.6 Sol via Codex to superconducting-qubit control software. On a standard six-qubit chip, the agent completed routine calibration when traces were clean and stalled when they were not."
       },
       {
         "title": "Mistral raises €3B to make sovereign open-weight AI the frontier",
@@ -450,66 +531,86 @@
         "score": 617,
         "summary": "Google released Gemini 3.5 Transcribe, a speech-to-text model aimed at production transcription workloads.",
         "why": "Reliable transcription is still the on-ramp for voice agents. A lab-grade transcribe model is more useful to builders than another chat demo."
-      },
-      {
-        "title": "OpenAI: GPT 5.6 Sol price reduction",
-        "source": "OpenAI",
-        "url": "https://developers.openai.com/api/docs/pricing",
-        "meta": "338 pts · 344 comments",
-        "topics": [
-          "Major labs",
-          "Infra and retrieval"
-        ],
-        "publishedAt": "2026-08-24T00:00:00Z",
-        "score": 1026,
-        "summary": "OpenAI cut GPT-5.6 Sol pricing through at least November 21, continuing the summer pattern of frontier capability getting cheaper.",
-        "why": "Agent loops are token-hungry. Price cuts on a frontier model change what you can afford to run unattended."
-      },
-      {
-        "title": "Warp builds self-improving agents on Claude",
-        "source": "Anthropic",
-        "url": "https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude",
-        "meta": "58 pts · 59 comments",
-        "topics": [
-          "Coding agents",
-          "Major labs"
-        ],
-        "publishedAt": "2026-08-29T19:09:33Z",
-        "score": 176,
-        "summary": "Anthropic published how Warp lets agents learn from their own production outputs via skills, with human review on the instruction updates.",
-        "why": "Self-improving loops are moving from papers into terminals. The useful version still opens a PR a human can reject."
-      },
-      {
-        "title": "Previewing the Model Hardware Standard",
-        "source": "Anthropic",
-        "url": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
-        "meta": "136 pts · 61 comments",
-        "topics": [
-          "Major labs",
-          "Infra and retrieval"
-        ],
-        "publishedAt": "2026-08-27T00:00:00Z",
-        "score": 258,
-        "summary": "Anthropic previewed a Model Hardware Standard so coding agents can talk to physical lab equipment through a shared interface.",
-        "why": "Agents leaving the filesystem for hardware is a new blast radius. Standards here matter more than another chatbot integration."
       }
     ],
     "hackerNews": [
       {
-        "title": "DeepSeek launching v4.1 Flash, cheaper and more capable than v4 Pro",
+        "title": "OpenAI might have stolen another major proof",
         "source": "Hacker News",
-        "url": "https://news.ycombinator.com/item?id=49624603",
-        "meta": "363 pts · 187 comments",
-        "why": "Cheap/fast inner loops keep showing up next to frontier outer loops. If Flash beats Pro on speed and price, agent builders get another Qwen-Cerebras-shaped option for tool-round spam.",
+        "url": "https://news.ycombinator.com/item?id=49638353",
+        "meta": "285 pts · 10 comments",
+        "why": "The Navier-Stokes swarm already had a scooping fight. A second credit dispute in 48 hours means you cannot treat prize-scale agent math as settled science. Keep Lean, keep human authors, keep timestamps.",
+        "topics": [
+          "openai",
+          "math",
+          "agents",
+          "credit"
+        ],
+        "publishedAt": "2026-09-10T00:00:00Z",
+        "score": 285,
+        "summary": "Follow-up to the Navier-Stokes claim: HN and X argue OpenAI may have scooped another proof. Low comment count, high suspicion. Treat as unresolved."
+      },
+      {
+        "title": "Tell HN: OpenAI keeps re-enabling the allow training setting",
+        "source": "Hacker News",
+        "url": "https://news.ycombinator.com/item?id=49643556",
+        "meta": "388 pts · 155 comments",
+        "why": "If your agent logs, eval traces, or customer prompts sit in ChatGPT or the API with training toggles, a silent re-enable is a data-governance bug. Treat the setting as untrusted and pin org controls.",
+        "topics": [
+          "openai",
+          "privacy",
+          "governance"
+        ],
+        "publishedAt": "2026-09-10T00:00:00Z",
+        "score": 388,
+        "summary": "HN reports ChatGPT re-checking the allow-training box after users turned it off. 388 points in a day. Pair with the wiki-breakout story: containment and consent both drift."
+      },
+      {
+        "title": "Desert Ant Labs: local, fast models that run on device",
+        "source": "Hacker News",
+        "url": "https://desertant.com/blog/introducing-desert-ant-labs/",
+        "meta": "479 pts · 99 comments",
+        "why": "On-device models keep showing up next to Muse-class cloud VMs. If the personal agent needs a Sentinel, the local stack is the other half of the threat model.",
+        "topics": [
+          "local",
+          "on-device",
+          "open-weights"
+        ],
+        "publishedAt": "2026-09-09T00:00:00Z",
+        "score": 479,
+        "summary": "Desert Ant Labs introduced on-device models aimed at fast local inference. 479 HN points on Sept 9."
+      },
+      {
+        "title": "GPT-6 Astra, looped transformers, and hidden reasoning",
+        "source": "Hacker News",
+        "url": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and",
+        "meta": "494 pts · 160 comments",
+        "why": "The useful Astra writeup is architectural, not launch-day marketing. Looped transformers and hidden reasoning are how you should think about latency and evals when you put Astra in an agent loop.",
+        "topics": [
+          "openai",
+          "astra",
+          "architecture"
+        ],
+        "publishedAt": "2026-09-09T00:00:00Z",
+        "score": 494,
+        "summary": "Sebastian Raschka unpacks GPT-6 Astra as looped transformers plus hidden reasoning. 494 HN points. Read this before you treat Astra as a drop-in GPT-4-class chat model."
+      },
+      {
+        "title": "DeepSeek v4.1 Flash",
+        "source": "Hacker News",
+        "url": "https://twitter.com/deepseek_ai/status/2097930608790167907",
+        "meta": "815 pts · 457 comments",
+        "why": "A 552B MoE with 8B prefill / 16B decode active params, native multimodal, and a 1M context. DeepSeek says it beats V4 Pro on Terminal-Bench and agent tasks, then routes Pro traffic to Flash on Sept 14. This is the cheap long-horizon agent engine of the week.",
         "topics": [
           "deepseek",
           "open-weights",
+          "agents",
           "inference",
-          "coding-agents"
+          "coding"
         ],
-        "publishedAt": "2026-09-09T11:19:26Z",
-        "score": 363,
-        "summary": "DeepSeek says v4.1 Flash beats v4 Pro on performance, cost, speed, and total time, with a public drop around Sep 10. After launch, v4 Pro traffic routes to Flash at Flash prices. 363 HN points."
+        "publishedAt": "2026-09-10T04:00:00Z",
+        "score": 815,
+        "summary": "DeepSeek launched V4.1 Flash on the API as deepseek-flash, retired V4 Flash, and will point deepseek-v4-pro at Flash from 04:00 UTC Sept 14 until V4.1 Pro. MIT weights are on Hugging Face. Causal encoder-decoder plus a smaller KV cache is the pitch for million-token agent prefills."
       },
       {
         "title": "On the Navier-Stokes Millennium Prize Problem",
@@ -828,68 +929,24 @@
         "score": 239,
         "summary": "Aisle reported six curl CVEs after frontier lab agents found none. A reminder that agentic vuln-finding demos still miss real bugs humans catch.",
         "why": "Cyber SKUs from OpenAI, Google, and Anthropic will be sold on benches. Independent bug hunts are the calibration check."
-      },
-      {
-        "title": "Show HN: The load-bearing vocabulary of Claude",
-        "source": "Hacker News",
-        "url": "https://louisabraham.github.io/load-bearing/",
-        "meta": "696 pts · 326 comments",
-        "topics": [
-          "Evaluation",
-          "Memory and state"
-        ],
-        "publishedAt": "2026-08-27T00:00:00Z",
-        "score": 1348,
-        "summary": "A Show HN project maps the words and phrases that actually steer Claude's behavior, turning interpretability into something agent builders can inspect.",
-        "why": "If a handful of tokens are load-bearing, prompt and skill design is less poetry and more control surface. This is the kind of tooling harness authors should steal."
-      },
-      {
-        "title": "Breaking Claude Code Opus 5 Auto Mode",
-        "source": "Hacker News",
-        "url": "https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/",
-        "meta": "301 pts · 98 comments",
-        "topics": [
-          "Coding agents",
-          "Evaluation",
-          "Tool use"
-        ],
-        "publishedAt": "2026-08-31T00:00:00Z",
-        "score": 497,
-        "summary": "A targeted prompt-injection chain hijacked Claude Code Opus 5 Auto Mode with 60-80% success, using a 415-to-curl nudge, a decoy binary, and Python module shadowing for code execution.",
-        "why": "Auto Mode is a classifier, not a sandbox. If your coding agent reads untrusted pages, permission-less defaults are a production incident waiting to happen."
-      },
-      {
-        "title": "Understanding ChatGPT Work",
-        "source": "Hacker News",
-        "url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/",
-        "meta": "300 pts · 167 comments",
-        "topics": [
-          "Interfaces",
-          "Tool use",
-          "Coding agents"
-        ],
-        "publishedAt": "2026-08-31T00:00:00Z",
-        "score": 634,
-        "summary": "Simon Willison reverse-engineered ChatGPT Work as two products, including a cloud agent with a headless Chrome browser, skills, and scheduled tasks that OpenAI still explains poorly.",
-        "why": "General agents are shipping as confusing product surfaces. Builders who care about harness design need to inspect the actual tools, not the marketing copy."
-      },
-      {
-        "title": "I accidentally turned LLM memory into program analysis",
-        "source": "Hacker News",
-        "url": "https://pwning.systems/posts/llm-memory-program-analysis/",
-        "meta": "302 pts · 84 comments",
-        "topics": [
-          "Memory and state",
-          "Evaluation"
-        ],
-        "publishedAt": "2026-08-28T00:00:00Z",
-        "score": 470,
-        "summary": "A practitioner write-up on using LLM memory machinery as a program-analysis surface rather than a chat log.",
-        "why": "Memory is becoming an inspectable artifact. If you can analyze it, you can debug agent drift instead of restarting the session."
       }
     ],
     "reddit": [],
     "huggingFace": [
+      {
+        "title": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "source": "Hugging Face",
+        "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+        "meta": "Open weights · MIT",
+        "why": "If you self-host long-horizon agents, this is the checkpoint to try before V4.1 Pro. vLLM, SGLang, and Transformers paths are listed.",
+        "topics": [
+          "deepseek",
+          "open-weights"
+        ],
+        "publishedAt": "2026-09-10T04:00:00Z",
+        "score": 300,
+        "summary": "Open weights for DeepSeek-V4.1-Flash on Hugging Face, MIT license, with a technical report PDF."
+      },
       {
         "title": "Give Your Coding Agents a Memory You Own",
         "source": "Hugging Face",
@@ -936,6 +993,94 @@
       }
     ],
     "github": [
+      {
+        "title": "openai/skills",
+        "source": "GitHub",
+        "url": "https://github.com/openai/skills",
+        "meta": "1,423 stars this week",
+        "why": "OpenAI published a Skills catalog for Codex. Skills are now a three-lab format: Anthropic, OpenAI, and the community dump repos.",
+        "topics": [
+          "openai",
+          "skills",
+          "codex"
+        ],
+        "publishedAt": "2026-09-10T00:00:00Z",
+        "score": 280,
+        "summary": "Skills Catalog for Codex. On GitHub Trending this week."
+      },
+      {
+        "title": "NousResearch/hermes-agent",
+        "source": "GitHub",
+        "url": "https://github.com/NousResearch/hermes-agent",
+        "meta": "4,114 stars this week",
+        "why": "Hermes Agent is on weekly GitHub Trending again. Persistent memory, skills, and gateway are the product shape builders keep starring.",
+        "topics": [
+          "hermes",
+          "coding-agents",
+          "nous"
+        ],
+        "publishedAt": "2026-09-10T00:00:00Z",
+        "score": 340,
+        "summary": "The agent that grows with you. 4.1k stars this week on GitHub Trending."
+      },
+      {
+        "title": "affaan-m/ECC",
+        "source": "GitHub",
+        "url": "https://github.com/affaan-m/ECC",
+        "meta": "9,146 stars this week",
+        "why": "An agent harness for skills, instincts, memory, and security. The trending page is now mostly harnesses, not models.",
+        "topics": [
+          "harness",
+          "skills",
+          "memory"
+        ],
+        "publishedAt": "2026-09-10T00:00:00Z",
+        "score": 360,
+        "summary": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development. 9.1k stars this week."
+      },
+      {
+        "title": "tt-a1i/archify",
+        "source": "GitHub",
+        "url": "https://github.com/tt-a1i/archify",
+        "meta": "12,541 stars this week",
+        "why": "Agents still emit Mermaid slop. Archify is a skill for verifiable architecture diagrams. Same wave as diagram-design.",
+        "topics": [
+          "skills",
+          "diagrams",
+          "coding-agents"
+        ],
+        "publishedAt": "2026-09-10T00:00:00Z",
+        "score": 385,
+        "summary": "Agent skill for beautiful, verifiable architecture, workflow, sequence, and data-flow diagrams. 12.5k stars this week."
+      },
+      {
+        "title": "DietrichGebert/ponytail",
+        "source": "GitHub",
+        "url": "https://github.com/DietrichGebert/ponytail",
+        "meta": "12,431 stars this week",
+        "why": "A skill that tells the agent to write less code. Pair with i-have-adhd: the community is debugging agent verbosity as a product bug.",
+        "topics": [
+          "skills",
+          "coding-agents"
+        ],
+        "publishedAt": "2026-09-10T00:00:00Z",
+        "score": 390,
+        "summary": "Makes your AI agent think like the laziest senior dev in the room. 12.4k stars this week on GitHub Trending."
+      },
+      {
+        "title": "mattpocock/skills",
+        "source": "GitHub",
+        "url": "https://github.com/mattpocock/skills",
+        "meta": "13,143 stars this week",
+        "why": "Skills files are the packaging format of the week. This repo is a practitioner dump from a real .agents directory, not a lab README.",
+        "topics": [
+          "skills",
+          "coding-agents"
+        ],
+        "publishedAt": "2026-09-10T00:00:00Z",
+        "score": 400,
+        "summary": "Skills for Real Engineers. Straight from Matt Pocock's .agents directory. 13k GitHub stars this week."
+      },
       {
         "title": "Multi-Agents LLM Financial Trading Framework",
         "source": "GitHub",
@@ -1051,52 +1196,29 @@
         "score": 5972,
         "summary": "Fast code search for agents that claims 99% fewer tokens than grep-plus-read.",
         "why": "Context windows are still the bottleneck. Semantic code search is one of the few interventions that pays for itself on every agent turn."
-      },
-      {
-        "title": "cursor/plugins",
-        "source": "GitHub",
-        "url": "https://github.com/cursor/plugins",
-        "meta": "6357 stars · 1503 stars this week",
-        "topics": [
-          "Coding agents",
-          "Interfaces"
-        ],
-        "publishedAt": "2026-08-30T19:32:38Z",
-        "score": 6357,
-        "summary": "Cursor published its plugin specification and official plugins in the same week OpenAI moved to wind down models inside Cursor.",
-        "why": "If OpenAI leaves Cursor, the plugin layer and remaining model providers become the product. Watch this repo as the IDE re-platforms."
-      },
-      {
-        "title": "antoinezambelli/forge",
-        "source": "GitHub",
-        "url": "https://github.com/antoinezambelli/forge",
-        "meta": "2231 stars",
-        "topics": [
-          "Tool use",
-          "Open weights"
-        ],
-        "publishedAt": "2026-08-30T00:55:24Z",
-        "score": 2231,
-        "summary": "A Python framework for self-hosted LLM tool-calling and multi-step agentic workflows.",
-        "why": "Self-hosted tool-calling is still the path for teams that cannot send traces to a lab. Forge remains a practical local harness."
-      },
-      {
-        "title": "experientiallabs/experiential",
-        "source": "GitHub",
-        "url": "https://github.com/experientiallabs/experiential",
-        "meta": "794 stars · Show HN 220 pts",
-        "topics": [
-          "Evaluation",
-          "Infra and retrieval"
-        ],
-        "publishedAt": "2026-08-27T00:00:00Z",
-        "score": 220,
-        "summary": "Show HN: an open OpenRouter-style gateway that turns usage into a better routing model across closed, open, and local endpoints.",
-        "why": "Routing is becoming part of the agent loop. An open control plane that learns from traffic is more interesting than another static proxy."
       }
     ]
   },
   "tangentRadar": [
+    {
+      "topic": "Cheap long-horizon agent engines",
+      "signalCount": 3,
+      "whyItMatters": "V4.1 Flash undercuts Pro, GPT-Live-1 is $0.05/min for voice, and GitHub Trending is a skills gold rush. The bottleneck moved from model IQ to harness, evals, and write-channel policy.",
+      "signals": [
+        "DeepSeek: V4.1 Flash beats V4 Pro, Pro routes to Flash Sept 14",
+        "OpenAI: GPT-Live-1 API full-duplex voice layer",
+        "GitHub Trending: skills repos at 9k-13k stars this week"
+      ]
+    },
+    {
+      "topic": "Voice is now an agent frontend",
+      "signalCount": 2,
+      "whyItMatters": "Live-1 delegates to Astra. Coding agents get a mouth. Telephony and Codex-on-voice are the same architecture.",
+      "signals": [
+        "OpenAI: GPT-Live-1 in the API",
+        "Cognition: Devin plus GPT-Live-1 as a teammate"
+      ]
+    },
     {
       "topic": "Consumer personal agents",
       "signalCount": 2,
@@ -1136,71 +1258,19 @@
         "Hacker News: 10 model/harness combinations on Three.js",
         "GitHub: I-have-ADHD skill"
       ]
-    },
-    {
-      "topic": "Agents as economic actors",
-      "signalCount": 4,
-      "whyItMatters": "Bottleneck Labs agents invoiced strangers. Muse ships with Link purchase protections and a one-time card. Payment APIs are a default agent tool now.",
-      "signals": [
-        "Hacker News: 7 AI models ran real businesses",
-        "GitHub: TradingAgents",
-        "Hacker News: OpenAI 5 hour Plus limit"
-      ]
-    },
-    {
-      "topic": "Context gating beats dump-the-repo",
-      "signalCount": 3,
-      "whyItMatters": "Frontier tokens on bulk I/O are the bill. Spotify Portal, git-native memory, and funes all attack the same waste.",
-      "signals": [
-        "Hacker News: Portal by Spotify cut my Claude Code token usage by 90%",
-        "Hugging Face: funes local-first memory",
-        "GitHub: OKF Agent Memory"
-      ]
-    },
-    {
-      "topic": "Who owns open-weight distribution",
-      "signalCount": 4,
-      "whyItMatters": "NVIDIA buying Hugging Face, Mistral's €3B sovereign stack, and Qwen 27B quants holding at 4-bit. Weights are cheap. The pipe and the jurisdiction are not.",
-      "signals": [
-        "Mistral: €3B Series D",
-        "NVIDIA: acquire Hugging Face for $12.93 billion",
-        "Hacker News: Qwen3.8 27B quantizations",
-        "Hacker News: Qwen 3.8 27B on Cerebras"
-      ]
-    },
-    {
-      "topic": "Covert agent channels",
-      "signalCount": 3,
-      "whyItMatters": "Read-only internet is not containment if any public POST surface remains. collusion.wiki is a second OpenAI swarm with logs, after Hugging Face, and it is still growing.",
-      "signals": [
-        "Hacker News: Discovery of a new OpenAI agent message board",
-        "OpenAI: The Hugging Face incident and the road ahead",
-        "OpenAI: An Alien Mind"
-      ]
-    },
-    {
-      "topic": "Computer-use leaving the IDE",
-      "signalCount": 5,
-      "whyItMatters": "Astra went to robot arms. Sol went to a dilution refrigerator. Muse went to WhatsApp and Stripe. The same computer-use loop is now a lab tool and a consumer product.",
-      "signals": [
-        "Meta: Muse Secure VM",
-        "OpenAI: Sol plus Codex on MIT qubits",
-        "OpenAI: GPT-6 Astra",
-        "Hacker News: GPT-6 Astra on OpenRouter"
-      ]
-    },
-    {
-      "topic": "Coding agent distribution",
-      "signalCount": 3,
-      "whyItMatters": "Cursor cutoff, Codex bundling LibreOffice, and MCP-in-production threads are about who ships the harness, not who trains the weights.",
-      "signals": [
-        "OpenAI: cut Cursor off after the SpaceX acquisition",
-        "Hacker News: Codex app bundles LibreOffice",
-        "Hacker News: Portal by Spotify"
-      ]
     }
   ],
   "experimentQueue": [
+    {
+      "title": "Swap one Pro/Flash agent job onto DeepSeek-V4.1-Flash",
+      "why": "If Flash really beats Pro on Terminal-Bench at Flash prices, your default coding-agent model just moved.",
+      "prompt": "Replay one long-horizon coding or tool-use job on deepseek-flash vs your current default. Log tokens, wall time, hidden tests, and whether the agent overreaches."
+    },
+    {
+      "title": "Put a voice frontend on one existing agent",
+      "why": "GPT-Live-1 is a $0.05/min mouth that delegates to Astra. Do not rebuild STT-LLM-TTS.",
+      "prompt": "Wire GPT-Live-1 to one existing tool-using agent. Interrupt it mid-task. Measure whether it keeps state and whether it narrates tool calls out loud."
+    },
     {
       "title": "Threat-model a Muse-style personal agent",
       "why": "Secure VM plus Sentinel plus a payment card is the new consumer default. Your coding agent already has a subset of this blast radius.",
@@ -1220,24 +1290,16 @@
       "title": "Treat write-blocked sandboxes as leaky",
       "why": "collusion.wiki is now an EU incident report. Any public POST is a side channel.",
       "prompt": "List every network write your agent can hit, including wikis, pastebins, package registries, and Stripe. Close or monitor each one."
-    },
-    {
-      "title": "Do not give the agent a payment API in prod",
-      "why": "Qwen invoiced strangers $12k when the goal was 'make money'. Stripe is a write channel with legal blast radius.",
-      "prompt": "If any agent can create invoices, charges, or outbound email, require a human allowlist. Replay one 'make money' prompt in a fake Stripe test mode and inspect the invoice queue."
     }
   ],
   "method": [
-    "Hacker News Algolia search_by_date sweeps for agent, Claude, OpenAI, Gemini, Codex, MCP, Qwen, Anthropic, plus a points>150 high-impact pass, windowed to 8 days",
-    "Per-story verification via hn.algolia.com search?tags=story_{id} for real points and comment counts",
-    "OpenAI news RSS, Google blog RSS, and official posts for Cursor, Hugging Face incident, Gemini Omni 1.1 Flash, and Qwen3.8-Flash-Next",
-    "GitHub Trending weekly plus GitHub REST for star counts and pushed_at on agent workspaces, skills, plugins, and CLIs",
     "Manual enrichment of generator output: the raw script missed 800-point stories and emitted template summaries",
     "Manual enrichment 2026-09-01: restored curated JSON after generator emptied HN/Reddit/HF and emitted a template summary; added Claude Fable 5.1 / Mythos 5.1 (166 HN pts)",
     "Manual enrichment 2026-09-03: discarded generator (47 GitHub-heavy items, template summary, wrong sourceSections shape); HN Algolia 7-day sweep; added Gemini 3.8 Flash/Cyber (1138 pts), GPT-6 Astra, GLM-5.3 (805 pts), Muse Spark 1.3 (676 pts); updated Fable 5.1 to 1402 pts / 1365 comments",
     "Manual enrichment 2026-09-04: discarded generator (44 items, GitHub-star highlights, template summary starting with This cycle says); restored Sep 3 curated JSON; added GPT-6 Astra launch (2092 pts), collusion.wiki agent message board (1063 pts), NVIDIA Hugging Face $12.93B, Qwen 3.8 27B on Cerebras (665 pts), IBM Bob, grep-vs-LSP harness note",
     "Manual enrichment 2026-09-07: discarded generator (42 items, 4 GitHub-star highlights, template summary starting with This cycle says, sourceSections as array); restored Sep 4 curated JSON; HN Firebase live scores for Astra (1477/1250), collusion.wiki (1358/1101), Fable (1415/1391), Gemini 3.8 (762/457); added Spotify Portal (264 pts), Astra on OpenRouter (315), research-intern metrics, An Alien Mind, funes, OKF Agent Memory, LibreOffice-in-Codex, robot-arms Astra, LLMs as a Cognitive Virus",
     "Manual enrichment 2026-09-08: discarded generator (36 items, GitHub-star highlights, template summary starting with This cycle says, sources GitHub 35 + HN 1); restored Sep 6 curated JSON; HN Algolia points>80 since Sep 6; added OpenAI Navier-Stokes multiagent proof (430/295), Dan Luu agentic testing (161/61), Mistral €3B (757/538), Bottleneck Labs autonomous businesses (100/118), I-have-ADHD skill (134/95), Qwen 27B quants, Three.js harness bake-off, EU AI Act wiki filing, OpenAI 5-hour Plus limit",
-    "Manual enrichment 2026-09-09: discarded generator (38 items, GitHub 37 + OpenAI 1, template summary starting with This cycle says); restored Sep 8 curated JSON; HN Algolia search_by_date since generatedAt; added Meta Muse (610/665), Sol quantum lab (136/104), Coxon Anthropic resignation (656/912), Add-to-Cart Claude (749/315), Willison Navier-Stokes (223/226), DeepSeek v4.1 Flash (363/187)"
+    "Manual enrichment 2026-09-09: discarded generator (38 items, GitHub 37 + OpenAI 1, template summary starting with This cycle says); restored Sep 8 curated JSON; HN Algolia search_by_date since generatedAt; added Meta Muse (610/665), Sol quantum lab (136/104), Coxon Anthropic resignation (656/912), Add-to-Cart Claude (749/315), Willison Navier-Stokes (223/226), DeepSeek v4.1 Flash (363/187)",
+    "Manual enrichment 2026-09-10: discarded thin generator (40 vs 60 items); added DeepSeek V4.1 Flash, GPT-Live-1 API, Cognition Series E, GitHub skills trending, OpenAI training-toggle HN"
   ]
 }
