@@ -1,0 +1,25 @@
+name: SeamlessM4T
+description: "Meta foundational models for speech and text translation. One system covers speech-to-speech, speech-to-text, text-to-speech, and text-to-text across 100-plus languages, so you can build multilingual voice and translation pipelines without chaining separate ASR, MT, and TTS models."
+tagline: "Massively multilingual speech and text translation from Meta"
+
+github_url: https://github.com/facebookresearch/seamless_communication
+website_url: https://ai.meta.com/research/seamless-communication/
+docs_url: https://github.com/facebookresearch/seamless_communication
+
+category: Other
+tags: [speech-translation, multilingual, tts, asr, meta, fairseq2, speech-to-speech]
+pricing: free
+is_open_source: true
+license: CC-BY-NC-4.0
+
+problem_solved: |
+  Multilingual voice products usually chain ASR, machine translation, and TTS, losing
+  prosody and multiplying latency. SeamlessM4T is a single model family that translates
+  speech and text end-to-end across 100-plus languages, including speech-to-speech,
+  so researchers can prototype universal translators without a three-model pipeline.
+
+use_cases:
+  - Translate spoken audio from one language into spoken audio in another
+  - Transcribe foreign-language speech directly into English or another text language
+  - Generate speech from text in languages that lack a dedicated TTS stack
+  - Benchmark multilingual speech translation against a single Meta foundational model

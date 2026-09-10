@@ -1,0 +1,26 @@
+name: Upstash
+description: "Serverless data platform with Redis, Kafka, QStash, and Vector over HTTP. Designed for edge and serverless runtimes where TCP connections fail, so Next.js, Cloudflare Workers, and Vercel functions can cache, queue, and search without managing Redis servers."
+tagline: "Serverless Redis, Kafka, and vector search over HTTP"
+
+github_url: https://github.com/upstash/redis-js
+website_url: https://upstash.com
+docs_url: https://upstash.com/docs
+install_command: npm install @upstash/redis
+
+category: Data
+tags: [redis, serverless, kafka, vector, edge, caching, rate-limiting]
+pricing: freemium
+is_open_source: false
+license: MIT
+
+problem_solved: |
+  Classic Redis and Kafka need persistent TCP connections and always-on servers, which
+  break on Vercel, Cloudflare Workers, and other serverless runtimes. Upstash exposes
+  Redis, queues, and vector search over HTTP with per-request pricing, so AI apps can
+  cache embeddings, rate-limit APIs, and enqueue jobs without running a database.
+
+use_cases:
+  - Cache LLM responses and embeddings from Next.js or Cloudflare Workers over HTTP Redis
+  - Rate-limit AI API routes on Vercel without a persistent Redis process
+  - Queue background jobs with QStash when a serverless function cannot stay alive
+  - Store and search vectors for RAG without operating a vector database cluster
