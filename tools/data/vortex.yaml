@@ -1,0 +1,31 @@
+name: Vortex
+description: >-
+  Vortex is an Apache Arrow-compatible columnar file format and compression
+  framework under LF AI and Data. It stores arrays with pluggable encodings so
+  analytics and ML pipelines can scan large datasets faster than Parquet while
+  remaining zero-copy with Arrow, DuckDB, Polars, and Spark.
+tagline: Fastest FOSS columnar format for compressed array data
+
+github_url: https://github.com/vortex-data/vortex
+website_url: https://vortex.dev
+docs_url: https://docs.vortex.dev
+install_command: pip install vortex-data
+
+category: Data
+tags: [columnar, compression, arrow, rust, python, parquet, analytics]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  Training and analytics jobs spend too much time reading Parquet and similar
+  formats that were not designed for random access, nested types, or modern
+  SIMD compression. Vortex provides an extensible columnar layout with
+  state-of-the-art encodings so teams can store embeddings, tables, and
+  multimodal arrays compactly and read them at Arrow speed.
+
+use_cases:
+  - "Replace Parquet lakes with Vortex files for faster scans of feature tables and embedding dumps in Python or Rust"
+  - "Feed DuckDB, Polars, or Spark jobs from compressed Vortex datasets without copying into Arrow first"
+  - "Store nested and multimodal arrays with pluggable encodings that keep random access cheap during training"
+  - "Convert existing columnar files with the vx CLI and inspect layouts before rolling Vortex into a data pipeline"

@@ -1,0 +1,31 @@
+name: Falcon
+description: >-
+  Falcon is a no-magic Python web framework for REST APIs and microservices.
+  It runs on WSGI and ASGI with a tiny core, so inference endpoints and agent
+  tool servers stay fast and predictable under load without the overhead of
+  heavier frameworks.
+tagline: No-magic Python framework for APIs and microservices
+
+github_url: https://github.com/falconry/falcon
+website_url: https://falconframework.org
+docs_url: https://falcon.readthedocs.io
+install_command: pip install falcon
+
+category: Dev Tools
+tags: [python, api, wsgi, asgi, microservices, rest, web-framework]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  High-throughput Python APIs often pay for framework magic they do not need:
+  implicit DI, bloated middleware, and slow request parsing that shows up as
+  latency on inference and webhook paths. Falcon keeps routing, media
+  handling, and hooks explicit so microservices stay small, inspectable, and
+  fast at scale.
+
+use_cases:
+  - "Serve high-QPS model scoring and embedding APIs on WSGI or ASGI with minimal per-request overhead"
+  - "Build webhook and tool-call gateways for agents where every millisecond of framework time matters"
+  - "Ship REST microservices with explicit media handlers, hooks, and responders instead of decorator-heavy frameworks"
+  - "Run Falcon behind gunicorn or uvicorn as a lean edge for Python ML services that already have their own business layer"

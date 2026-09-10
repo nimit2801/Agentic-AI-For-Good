@@ -1,0 +1,31 @@
+name: Convex
+description: >-
+  Convex is an open-source reactive database and backend for app developers.
+  You write TypeScript queries, mutations, and actions that run with strong
+  consistency, and clients subscribe to live results so UIs and agents stay in
+  sync without custom WebSockets or cache invalidation.
+tagline: Reactive TypeScript database for live-updating apps
+
+github_url: https://github.com/get-convex/convex-backend
+website_url: https://convex.dev
+docs_url: https://docs.convex.dev
+install_command: npm install convex
+
+category: Data
+tags: [database, typescript, reactive, backend, realtime, serverless]
+pricing: freemium
+is_open_source: true
+license: FSL-1.1-Apache-2.0
+
+problem_solved: >-
+  Building live-updating apps usually means stitching a database, API layer,
+  WebSockets, and cache invalidation together, which breaks under concurrent
+  writes and is painful for agents that need consistent reads after mutations.
+  Convex stores data and server functions in one reactive backend so queries
+  stay consistent and clients receive updates automatically.
+
+use_cases:
+  - "Store chat sessions, tool traces, and user state for AI apps with TypeScript mutations and live query subscriptions"
+  - "Power collaborative dashboards that update instantly when background agents write results into Convex tables"
+  - "Self-host a reactive backend for Next.js or React Native products without standing up a separate API and WebSocket stack"
+  - "Run scheduled actions and file storage alongside transactional queries for agent workflows that need durable state"
