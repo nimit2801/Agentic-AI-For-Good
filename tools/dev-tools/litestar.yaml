@@ -1,0 +1,31 @@
+name: Litestar
+description: >-
+  Litestar is a high-performance Python ASGI framework for REST APIs,
+  WebSockets, and background workers. It ships OpenAPI docs, msgspec or
+  Pydantic validation, dependency injection, and production middleware without
+  locking you into a single ORM or plugin stack.
+tagline: Light, flexible ASGI framework built to scale
+
+github_url: https://github.com/litestar-org/litestar
+website_url: https://litestar.dev
+docs_url: https://docs.litestar.dev
+install_command: pip install litestar
+
+category: Dev Tools
+tags: [python, asgi, api, openapi, pydantic, async, web-framework]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: >-
+  Teams serving model inference, agent tools, and async workers need a Python
+  web framework that is fast and typed without FastAPI's tighter coupling to
+  Pydantic and Starlette internals. Litestar gives first-class OpenAPI,
+  msgspec-speed serialization, DI, and channels so API backends stay
+  maintainable as traffic and schema complexity grow.
+
+use_cases:
+  - "Expose LLM and embedding inference endpoints with automatic OpenAPI docs and msgspec-validated request bodies"
+  - "Build WebSocket or SSE token-streaming APIs for chat agents using Litestar channels and background tasks"
+  - "Stand up production microservices with dependency injection, guards, and middleware without adopting a full Django stack"
+  - "Migrate Starlite-era services to a maintained ASGI core that still supports SQLAlchemy, Redis, and task queues"
