@@ -1,0 +1,30 @@
+name: Connexion
+description: >-
+  Connexion is a Python framework for spec-first APIs. You write an OpenAPI
+  contract, then Connexion routes requests, validates payloads, and serves
+  Swagger UI so inference and agent tool servers stay aligned with the
+  published schema instead of drifting from handwritten routes.
+tagline: Spec-first Python APIs from an OpenAPI contract
+
+github_url: https://github.com/spec-first/connexion
+website_url: https://connexion.readthedocs.io
+docs_url: https://connexion.readthedocs.io
+install_command: pip install connexion
+
+category: Dev Tools
+tags: [python, openapi, api, swagger, spec-first, flask, asgi]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  Hand-rolled FastAPI or Flask routes often drift from the OpenAPI file that
+  clients and LLM tool-calling layers depend on, causing validation bugs in
+  production. Connexion generates the HTTP layer from the spec so request
+  validation, routing, and docs cannot silently diverge from the contract.
+
+use_cases:
+  - "Stand up an OpenAPI-first inference API where the spec is the source of truth for routes and validation"
+  - "Expose agent tool servers whose JSON schemas stay identical to the published OpenAPI document"
+  - "Generate Swagger UI automatically so partner teams can try ML endpoints without extra doc sites"
+  - "Migrate Flask or ASGI services to contract-driven routing without rewriting business handlers"

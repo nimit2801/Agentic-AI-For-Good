@@ -1,0 +1,31 @@
+name: Pyramid
+description: >-
+  Pyramid is a flexible Python web framework that scales from a single-file
+  app to a large service without imposing an ORM or template stack. Teams use
+  it for APIs and internal tools where routing, auth, and traversal need to
+  stay explicit rather than framework-magic.
+tagline: Start small, finish big Python web framework
+
+github_url: https://github.com/Pylons/pyramid
+website_url: https://trypyramid.com
+docs_url: https://docs.pylonsproject.org/projects/pyramid/en/latest/
+install_command: pip install pyramid
+
+category: Dev Tools
+tags: [python, web-framework, wsgi, api, pylons, routing]
+pricing: free
+is_open_source: true
+license: BSD-derived
+
+problem_solved: >-
+  Full-stack frameworks force an ORM, templating, and plugin model that ML
+  internal tools rarely need, while microframeworks outgrow a single module
+  without a clear extension story. Pyramid lets teams start with a tiny WSGI
+  app and add auth, traversal, and config as agent dashboards and APIs get
+  more complex.
+
+use_cases:
+  - "Build internal ML ops dashboards that start as a small WSGI app and grow without a rewrite"
+  - "Expose versioned JSON APIs with explicit Pyramid routing and authentication policies"
+  - "Host annotation or evaluation UIs next to Python training code without adopting Django"
+  - "Wrap existing Python libraries as HTTP services using Pyramid's unopinionated view configuration"

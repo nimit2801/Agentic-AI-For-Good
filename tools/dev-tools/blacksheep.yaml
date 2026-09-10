@@ -1,0 +1,30 @@
+name: BlackSheep
+description: >-
+  BlackSheep is a fast ASGI web framework for Python with built-in OpenAPI
+  docs, dependency injection, and a high-performance HTTP stack. It is aimed
+  at APIs and microservices that need Flask-like simplicity with ASGI speed
+  for model serving and agent backends.
+tagline: Fast ASGI web framework for Python APIs
+
+github_url: https://github.com/Neoteroi/BlackSheep
+website_url: https://www.neoteroi.dev/blacksheep/
+docs_url: https://www.neoteroi.dev/blacksheep/
+install_command: pip install blacksheep
+
+category: Dev Tools
+tags: [python, asgi, api, openapi, web-framework, async, microservices]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: >-
+  Teams that find FastAPI too opinionated or Starlette too low-level still
+  need a fast async Python HTTP layer with OpenAPI and DI for inference
+  services. BlackSheep fills that gap with a small ASGI core, automatic docs,
+  and explicit dependency injection without requiring Pydantic everywhere.
+
+use_cases:
+  - "Serve async model inference endpoints with automatic OpenAPI generation and typed handlers"
+  - "Build microservice gateways for agent tools using BlackSheep DI and middleware"
+  - "Replace slower WSGI APIs on hot paths while keeping Python request handlers"
+  - "Prototype ASGI services that need WebSocket or SSE streaming without a heavy framework"
