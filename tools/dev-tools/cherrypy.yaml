@@ -1,0 +1,28 @@
+name: CherryPy
+description: Minimalist object-oriented HTTP framework for Python. CherryPy maps URL paths to Python objects so you can serve model endpoints and admin tools without a large framework, while still getting a production-ready WSGI server.
+tagline: Pythonic object-oriented HTTP framework
+
+github_url: https://github.com/cherrypy/cherrypy
+website_url: https://cherrypy.org
+docs_url: https://docs.cherrypy.dev
+
+category: Dev Tools
+tags: [python, http, web-framework, wsgi, server]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+install_command: pip install cherrypy
+
+problem_solved: |
+  Serving a small HTTP API in Python often means pulling in a large framework
+  or writing a raw WSGI server. CherryPy is a compact object-oriented HTTP
+  framework with a built-in production server, so model endpoints, health
+  checks, and internal tools can be classes with methods instead of a full
+  Django or Flask stack.
+
+use_cases:
+  - Expose a small inference or health-check HTTP API as Python objects
+  - Embed a production-ready HTTP server inside a long-running ML process
+  - Mount WSGI apps and static files for internal admin tools
+  - Run a lightweight Python web service without a large framework

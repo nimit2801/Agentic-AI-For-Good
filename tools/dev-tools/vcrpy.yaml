@@ -1,0 +1,26 @@
+name: vcrpy
+description: HTTP recording library for Python tests. vcrpy intercepts requests and httpx calls, then replays cassettes so CI can mock model APIs, webhooks, and third-party HTTP without hitting the network.
+tagline: Record and replay HTTP in Python tests
+
+github_url: https://github.com/kevin1024/vcrpy
+docs_url: https://vcrpy.readthedocs.io
+
+category: Dev Tools
+tags: [python, testing, http, mock, cassettes, ci]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install vcrpy
+
+problem_solved: |
+  Tests that call live HTTP APIs are slow, flaky, and can burn paid tokens
+  on every CI run. vcrpy records requests into cassettes and replays them
+  on later runs, so agent tools, model clients, and webhook handlers can
+  be tested offline with the same request and response bodies.
+
+use_cases:
+  - Record OpenAI or other model HTTP calls once and replay them in CI
+  - Fixture third-party webhooks without standing up a mock server
+  - Keep pytest suites offline while still asserting real response shapes
+  - Filter secrets from cassettes before committing HTTP fixtures

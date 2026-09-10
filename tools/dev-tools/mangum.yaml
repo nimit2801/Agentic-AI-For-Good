@@ -1,0 +1,27 @@
+name: Mangum
+description: Adapter that runs ASGI apps on AWS Lambda. Mangum wraps FastAPI, Starlette, and Django ASGI so you can deploy agent APIs and model endpoints as Lambda functions behind API Gateway.
+tagline: Run ASGI apps on AWS Lambda
+
+github_url: https://github.com/Kludex/mangum
+website_url: https://mangum.fastapiexpert.com
+docs_url: https://mangum.fastapiexpert.com
+
+category: Dev Tools
+tags: [python, asgi, aws, lambda, fastapi, serverless]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install mangum
+
+problem_solved: |
+  FastAPI and Starlette apps expect a long-lived ASGI server, but AWS Lambda
+  is a per-request function runtime. Mangum translates API Gateway and
+  Function URL events into ASGI scope and back, so the same agent or model
+  API can deploy as a Lambda without rewriting handlers.
+
+use_cases:
+  - Deploy a FastAPI agent API on Lambda behind API Gateway
+  - Run Starlette or Django ASGI apps as serverless functions
+  - Handle HTTP, WebSocket, and lifespan events from Lambda event sources
+  - Keep a single ASGI codebase for local uvicorn and production Lambda
