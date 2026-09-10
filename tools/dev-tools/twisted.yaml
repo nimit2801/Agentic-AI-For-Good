@@ -1,0 +1,28 @@
+name: Twisted
+description: Event-driven networking engine for Python. Twisted provides async TCP, TLS, HTTP, SSH, and protocol helpers so long-running services can handle many connections without threads or a separate event loop library.
+tagline: Event-driven networking engine for Python
+
+github_url: https://github.com/twisted/twisted
+website_url: https://twisted.org
+docs_url: https://docs.twisted.org
+
+category: Dev Tools
+tags: [python, async, networking, http, tcp, event-loop]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install Twisted
+
+problem_solved: |
+  Building network services in Python with blocking sockets or ad-hoc threads
+  does not scale to many concurrent connections. Twisted is an event-driven
+  engine with reactors, deferreds, and protocol implementations for TCP, TLS,
+  HTTP, and SSH, so model-serving daemons and data ingest services can stay
+  async without rewriting the transport layer.
+
+use_cases:
+  - Run an async TCP or TLS server that streams inference results to clients
+  - Build a custom protocol handler for internal ML service communication
+  - Serve HTTP endpoints from a Twisted reactor alongside existing services
+  - Integrate SSH, SMTP, or DNS clients into a long-running Python daemon
