@@ -1,0 +1,26 @@
+name: Grafana Alloy
+description: "Grafana Labs distribution of the OpenTelemetry Collector with programmable pipelines for metrics, logs, traces, and profiles. Natively speaks Prometheus and OTLP, pulls config from Git or S3, and replaces Grafana Agent as the unified telemetry collector."
+tagline: "OpenTelemetry collector with Prometheus pipelines"
+
+github_url: https://github.com/grafana/alloy
+website_url: https://grafana.com/oss/alloy
+docs_url: https://grafana.com/docs/alloy/latest/
+install_command: brew install grafana-alloy
+
+category: Monitoring
+tags: [opentelemetry, prometheus, observability, collector, metrics, logs, traces, grafana]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Teams stitching Prometheus, OTel Collector, and Grafana Agent end up with overlapping
+  collectors and brittle config. Grafana Alloy is one programmable collector for metrics,
+  logs, traces, and profiles, with clustering, Vault support, and remote config so you
+  can ship telemetry to Grafana, Mimir, Loki, Tempo, or any OTLP backend.
+
+use_cases:
+  - Replace Grafana Agent with a single collector for Prometheus and OpenTelemetry pipelines
+  - Scrape metrics, tail logs, and receive traces, then remote-write to Mimir, Loki, and Tempo
+  - Pull Alloy config from GitHub, S3, or HTTP so fleets of collectors stay in sync
+  - Cluster Alloy instances for high-availability telemetry at the edge of ML inference stacks
