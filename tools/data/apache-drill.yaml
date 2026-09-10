@@ -1,0 +1,30 @@
+name: Apache Drill
+description: >-
+  Apache Drill is a distributed SQL query engine for self-describing data. It
+  runs ANSI SQL over Parquet, JSON, CSV, Hive, Kafka, and NoSQL sources without
+  requiring a predefined schema, so analysts and ML teams can explore lake
+  files and nested documents in place.
+tagline: Schema-free SQL over files, Hive, and NoSQL
+
+github_url: https://github.com/apache/drill
+website_url: https://drill.apache.org
+docs_url: https://drill.apache.org/docs
+
+category: Data
+tags: [sql, parquet, json, hive, java, apache, query-engine, data-lake]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  Feature engineering and exploratory analysis often stall because lake files
+  and nested JSON have no warehouse schema, and standing up Hive or Spark just
+  to run SQL is heavy. Drill lets teams query Parquet, JSON, and mixed
+  datastores with standard SQL and JDBC without an ETL step into a rigid
+  catalog.
+
+use_cases:
+  - "Run SQL over Parquet and JSON feature dumps in a data lake without registering Hive tables first"
+  - "Join nested application logs with columnar training data during dataset debugging"
+  - "Expose a JDBC SQL layer to BI and notebooks sitting on mixed NoSQL and file sources"
+  - "Prototype lakehouse queries on self-describing files before committing to a heavier Spark job"

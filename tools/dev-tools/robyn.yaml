@@ -1,0 +1,31 @@
+name: Robyn
+description: >-
+  Robyn is a high-performance async Python web framework with a Rust runtime.
+  It serves HTTP and WebSockets with Python handlers while the runtime stays
+  in Rust, so inference APIs and agent tool servers can handle more
+  concurrent requests without leaving the Python ecosystem.
+tagline: Super-fast async Python web framework with a Rust runtime
+
+github_url: https://github.com/sparckles/Robyn
+website_url: https://robyn.tech
+docs_url: https://robyn.tech
+install_command: pip install robyn
+
+category: Dev Tools
+tags: [python, rust, async, web-framework, api, websocket, performance]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: >-
+  Pure-Python ASGI servers become the bottleneck when model endpoints and
+  agent gateways need high concurrency, but rewriting services in Rust or Go
+  loses the Python ML stack. Robyn keeps request handlers in Python while a
+  Rust runtime does the I/O, so teams get lower latency without abandoning
+  pip-installable ML code.
+
+use_cases:
+  - "Serve embedding and LLM inference HTTP APIs with Python handlers on a Rust HTTP runtime"
+  - "Stream tokens over WebSockets from a chat agent without a separate Node or Go gateway"
+  - "Replace slower pure-Python microservices on hot paths while keeping the rest of the ML codebase"
+  - "Prototype high-concurrency tool servers that still import PyTorch or sklearn in-process"

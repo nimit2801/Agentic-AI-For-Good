@@ -1,0 +1,31 @@
+name: OpenDAL
+description: >-
+  Apache OpenDAL is a unified data access layer that talks to S3, GCS, Azure
+  Blob, HDFS, Redis, and dozens of other backends through one Rust-native API
+  with Python, Java, and Node bindings. AI pipelines can read and write
+  training data without custom storage adapters for every cloud.
+tagline: One layer for every object store and filesystem
+
+github_url: https://github.com/apache/opendal
+website_url: https://opendal.apache.org
+docs_url: https://opendal.apache.org
+install_command: pip install opendal
+
+category: Data
+tags: [storage, s3, rust, python, apache, data-access, object-store]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: >-
+  ML and data teams stitch together SDKs for S3, GCS, Azure, HDFS, and local
+  disk, then rewrite retry, listing, and credential logic for each backend.
+  OpenDAL exposes one operator API across 50-plus storage services so feature
+  stores, training jobs, and agent sandboxes can move files without
+  vendor-specific code.
+
+use_cases:
+  - "Read and write training datasets on S3, GCS, or Azure Blob through a single Python Operator API"
+  - "Cache model artifacts in Redis or local disk with the same OpenDAL calls used for cloud object storage"
+  - "Build data loaders that list, stat, and stream files from HDFS or OSS without a per-cloud adapter"
+  - "Expose a consistent storage layer to agent tools that need to fetch files from mixed backends"
