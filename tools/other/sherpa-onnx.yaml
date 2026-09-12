@@ -1,0 +1,27 @@
+name: sherpa-onnx
+description: Offline speech toolkit from next-gen Kaldi using ONNX Runtime. sherpa-onnx covers speech-to-text, text-to-speech, diarization, VAD, and related tasks on servers, phones, and embedded boards without a network call.
+tagline: Offline speech AI with next-gen Kaldi and ONNX Runtime
+
+github_url: https://github.com/k2-fsa/sherpa-onnx
+website_url: https://k2-fsa.github.io/sherpa/onnx/index.html
+docs_url: https://k2-fsa.github.io/sherpa/onnx/index.html
+
+category: Other
+tags: [asr, tts, onnx, speech, offline, embedded, kaldi, vad]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install sherpa-onnx
+
+problem_solved: |
+  On-device and air-gapped apps need ASR, TTS, and VAD without sending audio
+  to a cloud API, but many speech stacks assume a server and a network.
+  sherpa-onnx runs next-gen Kaldi models through ONNX Runtime on servers,
+  phones, and boards so speech features work fully offline.
+
+use_cases:
+  - Run offline speech-to-text on a laptop, phone, or Raspberry Pi
+  - Add on-device TTS and VAD to an embedded or air-gapped application
+  - Deploy speaker diarization without sending audio to a cloud API
+  - Serve streaming ASR over websocket with sherpa-onnx on a local server
