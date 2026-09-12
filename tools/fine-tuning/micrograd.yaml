@@ -1,0 +1,26 @@
+name: micrograd
+description: Tiny scalar-valued autograd engine and neural net library from Andrej Karpathy with a PyTorch-like API. micrograd is a teaching implementation of backpropagation so you can see how gradients flow before using a full framework.
+tagline: Tiny autograd engine for learning how neural nets train
+
+github_url: https://github.com/karpathy/micrograd
+docs_url: https://github.com/karpathy/micrograd
+
+category: Fine-tuning
+tags: [autograd, education, neural-nets, python, karpathy, backprop]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install micrograd
+
+problem_solved: |
+  Full frameworks hide autograd behind C++ kernels, which makes it hard to
+  learn how backprop actually updates weights. micrograd implements a scalar
+  autograd engine and a small neural net API so you can trace every gradient
+  before moving to PyTorch or JAX for real fine-tunes.
+
+use_cases:
+  - Teach backpropagation with a readable scalar autograd implementation
+  - Prototype a tiny neural net with a PyTorch-like API before scaling up
+  - Inspect gradient flow on toy losses without a full ML framework
+  - Use as a reference when debugging how a larger trainer computes grads

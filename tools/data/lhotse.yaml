@@ -1,0 +1,27 @@
+name: Lhotse
+description: Python library for handling speech and multimodal data in ML projects. Lhotse provides manifests, cuts, and feature pipelines so ASR and audio model training can load, mix, and augment recordings without a custom dataset stack.
+tagline: Speech and multimodal data tools for ML training
+
+github_url: https://github.com/lhotse-speech/lhotse
+website_url: https://lhotse.readthedocs.io/en/latest/
+docs_url: https://lhotse.readthedocs.io/en/latest/
+
+category: Data
+tags: [speech, audio, datasets, asr, python, multimodal, training]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install lhotse
+
+problem_solved: |
+  Speech training needs manifests, cuts, features, and augmentation that
+  ad-hoc PyTorch Datasets rarely keep consistent. Lhotse standardizes audio
+  and multimodal data loading so ASR and related models can mix corpora,
+  extract features, and iterate without a one-off dataset layer.
+
+use_cases:
+  - Build Lhotse manifests and cuts for a custom ASR training corpus
+  - Mix public speech datasets with on-the-fly augmentation
+  - Feed icefall or k2 training recipes from a Lhotse data pipeline
+  - Extract audio features once and reuse them across training runs
