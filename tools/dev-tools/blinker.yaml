@@ -1,0 +1,26 @@
+name: blinker
+description: Fast in-process Python signal and event dispatching library used by Flask and other Pallets projects to connect senders to named signals without tight coupling.
+tagline: In-process Python signals for decoupled event dispatch
+
+github_url: https://github.com/pallets-eco/blinker
+website_url: https://blinker.readthedocs.io
+docs_url: https://blinker.readthedocs.io
+install_command: pip install blinker
+
+category: Dev Tools
+tags: [python, signals, events, flask, pallets, pubsub]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Python apps often need hooks so one module can react when another does work,
+  without importing each other. blinker provides named signals with send and
+  connect so Flask, ML services, and libraries can dispatch in-process events
+  without a message broker or circular imports.
+
+use_cases:
+  - Hook request start and finish callbacks in a Flask-style web app
+  - Notify metrics or logging code when a model inference job completes
+  - Let plugins subscribe to named signals without modifying core modules
+  - Replace ad-hoc callback lists with a small, tested dispatcher

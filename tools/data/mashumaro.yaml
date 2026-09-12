@@ -1,0 +1,27 @@
+name: mashumaro
+description: Fast Python serialization library for dataclasses that converts objects to JSON, YAML, MessagePack, and dicts with type-safe compile-time codegen instead of runtime reflection.
+tagline: Fast dataclass serialization for JSON, YAML, and MessagePack
+
+github_url: https://github.com/Fatal1ty/mashumaro
+website_url: https://mashumaro.io
+docs_url: https://mashumaro.io
+install_command: pip install mashumaro
+
+category: Data
+tags: [python, serialization, dataclasses, json, yaml, messagepack]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Runtime serializers that inspect types on every dump and load are slow and
+  easy to misconfigure. mashumaro generates serialization code for dataclasses
+  so JSON, YAML, MessagePack, and dict conversions stay type-safe and fast,
+  which helps data pipelines and API payloads that move lots of structured
+  records.
+
+use_cases:
+  - Serialize dataclass records to JSON in a high-throughput data pipeline
+  - Load YAML or MessagePack configs into typed Python dataclasses
+  - Replace slower runtime serializers in an ML feature or job payload path
+  - Round-trip nested dataclasses between services without a heavy ORM
