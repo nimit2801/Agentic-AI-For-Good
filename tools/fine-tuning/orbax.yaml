@@ -1,0 +1,27 @@
+name: Orbax
+description: Google checkpointing library for JAX that saves and restores partitioned model state with async I/O, transforms, and multi-host support. Lets large JAX training jobs resume cleanly without hand-rolled serialization.
+tagline: Checkpointing and persistence utilities for JAX training
+
+github_url: https://github.com/google/orbax
+website_url: https://orbax.readthedocs.io/
+docs_url: https://orbax.readthedocs.io/
+
+category: Fine-tuning
+tags: [jax, checkpointing, training, google, persistence, tpu, llm]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install orbax-checkpoint
+
+problem_solved: |
+  JAX training on multi-host TPUs shards model state across devices, so naive
+  pickle dumps fail and restarts lose hours of work. Orbax writes and restores
+  partitioned checkpoints asynchronously, with transforms, so large JAX fine-tunes
+  can resume from the last step without custom serialization.
+
+use_cases:
+  - Save and restore sharded JAX model state during multi-host LLM training
+  - Resume a TPU fine-tune from the latest Orbax checkpoint after a preemption
+  - Apply checkpoint transforms when converting or exporting a JAX model
+  - Persist optimizer and train-state alongside weights for reproducible runs
