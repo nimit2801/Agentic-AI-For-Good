@@ -1,0 +1,27 @@
+name: LayoutParser
+description: Unified Python toolkit for deep-learning document layout analysis. Detects text regions, tables, figures, and titles on page images so OCR and RAG pipelines can segment scanned PDFs before extraction.
+tagline: Deep learning layout analysis for document images
+
+github_url: https://github.com/Layout-Parser/layout-parser
+website_url: https://layout-parser.github.io/
+docs_url: https://layout-parser.readthedocs.io/
+
+category: Data
+tags: [document-layout, ocr, pdf, python, computer-vision, rag, extraction]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install layoutparser
+
+problem_solved: |
+  Scanned PDFs mix columns, tables, figures, and headers, so naive OCR dumps
+  reading order and loses structure. LayoutParser runs layout detection models
+  to find text blocks, tables, and figures first, then you OCR or extract only
+  the regions that matter for RAG and document pipelines.
+
+use_cases:
+  - Detect text, table, and figure regions on scanned PDF pages before OCR
+  - Segment multi-column scientific papers for structured RAG ingestion
+  - Extract tables from document images after layout detection
+  - Build a document understanding pipeline that preserves reading order

@@ -1,0 +1,26 @@
+name: semchunk
+description: Fast, lightweight Python library that splits text into semantically meaningful chunks using token counts and separator heuristics. Built for RAG pipelines that need embedding-sized windows without a heavy NLP tokenizer stack.
+tagline: Semantic text chunking for RAG without a heavy NLP stack
+
+github_url: https://github.com/isaacus-dev/semchunk
+docs_url: https://github.com/isaacus-dev/semchunk
+
+category: RAG
+tags: [chunking, rag, python, embeddings, tokenization, text-split]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install semchunk
+
+problem_solved: |
+  Naive character splits cut sentences mid-thought and hurt retrieval quality,
+  while full NLP tokenizers add latency and dependencies. semchunk splits on
+  semantic separators up to a token budget so RAG pipelines produce embedding-sized
+  chunks that stay readable and fit the model context window.
+
+use_cases:
+  - Chunk documentation and articles into embedding-sized windows for a vector index
+  - Split long transcripts or PDFs before feeding a RAG retriever
+  - Keep token-aware chunk sizes aligned to an embedding model's context limit
+  - Replace recursive character splitters with separator-aware semantic chunks

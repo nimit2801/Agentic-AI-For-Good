@@ -1,0 +1,27 @@
+name: Trafilatura
+description: Python library and CLI that crawls the web and extracts main text plus metadata from HTML pages. Emits clean Markdown, JSON, CSV, XML, or TXT so RAG and dataset pipelines ingest article content instead of navigation boilerplate.
+tagline: Web text and metadata extraction for RAG and datasets
+
+github_url: https://github.com/adbar/trafilatura
+website_url: https://trafilatura.readthedocs.io
+docs_url: https://trafilatura.readthedocs.io
+
+category: Data
+tags: [web-scraping, extraction, python, rag, crawling, html, datasets]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install trafilatura
+
+problem_solved: |
+  Building a web corpus for RAG or training means stripping ads, nav, and scripts
+  from messy HTML. Trafilatura downloads pages, extracts the main body and metadata,
+  and writes clean Markdown or JSON so pipelines ingest article text instead of
+  boilerplate.
+
+use_cases:
+  - Extract main article text from news and blog URLs for a RAG knowledge base
+  - Crawl a site and export clean Markdown or JSON for dataset construction
+  - Pull titles, authors, and dates alongside body text for citation-aware retrieval
+  - Convert HTML dumps into TXT or XML for downstream NLP pipelines

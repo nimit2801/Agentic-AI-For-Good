@@ -1,0 +1,26 @@
+name: rank-bm25
+description: Pure-Python BM25 library with BM25Okapi, BM25L, and BM25Plus scorers for ranking documents against a query. A tiny lexical retriever for hybrid RAG, search prototypes, and relevance ranking without Elasticsearch.
+tagline: Classic Python BM25 ranking without a search cluster
+
+github_url: https://github.com/dorianbrown/rank_bm25
+docs_url: https://github.com/dorianbrown/rank_bm25
+
+category: RAG
+tags: [bm25, retrieval, python, rag, lexical-search, ranking, hybrid-search]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install rank_bm25
+
+problem_solved: |
+  Hybrid RAG and search prototypes need a lexical scorer, but Elasticsearch
+  is heavy for in-process ranking and many BM25 ports are incomplete. rank-bm25
+  implements BM25Okapi, BM25L, and BM25Plus in a few hundred lines of Python so
+  you can score a query against a corpus without standing up a search cluster.
+
+use_cases:
+  - Rank document chunks by BM25 in a hybrid RAG pipeline beside vector search
+  - Prototype keyword retrieval for a local corpus without Elasticsearch
+  - Compare BM25Okapi, BM25L, and BM25Plus scoring on the same query set
+  - Add sparse lexical ranking to a Python search or QA service
