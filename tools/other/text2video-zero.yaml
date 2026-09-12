@@ -1,0 +1,23 @@
+name: Text2Video-Zero
+description: Zero-shot text-to-video method that turns existing text-to-image diffusion models into video generators without training on video data, using motion dynamics and cross-frame attention.
+tagline: Zero-shot video from text-to-image diffusion models
+
+github_url: https://github.com/Picsart-AI-Research/Text2Video-Zero
+website_url: https://text2video-zero.github.io/
+
+category: Other
+tags: [video-generation, text-to-video, zero-shot, stable-diffusion, diffusion, generative-ai]
+pricing: free
+is_open_source: true
+
+problem_solved: |
+  Training a video diffusion model needs large video datasets and heavy compute.
+  Text2Video-Zero reuses a pretrained text-to-image model, adding motion and
+  cross-frame attention so you can generate videos from text (and image) prompts
+  with no video training.
+
+use_cases:
+  - Generate a short video from a text prompt using a Stable Diffusion checkpoint
+  - Animate an input image in a zero-shot image-to-video setup
+  - Enrich text-to-image pipelines with temporal consistency without video training
+  - Prototype video ideas on consumer GPUs using existing T2I weights
