@@ -1,0 +1,23 @@
+name: Latte
+description: Latent diffusion transformer for video generation that treats video as spatiotemporal tokens in a ViT-style DiT, supporting text-to-video and class-conditional video synthesis.
+tagline: Latent diffusion transformer for video generation
+
+github_url: https://github.com/Vchitect/Latte
+
+category: Other
+tags: [video-generation, diffusion-transformer, dit, text-to-video, generative-ai, pytorch]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Many video generators still use U-Net backbones that scale poorly compared with
+  transformers. Latte is a latent diffusion transformer that models video as
+  spatiotemporal tokens, giving an open DiT-style baseline for class-conditional
+  and text-to-video generation that researchers can train and ablate.
+
+use_cases:
+  - Generate videos with a latent diffusion transformer instead of a U-Net
+  - Train or fine-tune Latte on a custom video dataset
+  - Benchmark DiT video backbones against U-Net video diffusion models
+  - Prototype text-to-video research on an open transformer codebase
