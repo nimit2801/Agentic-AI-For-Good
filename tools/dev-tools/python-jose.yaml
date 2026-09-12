@@ -1,0 +1,26 @@
+name: python-jose
+description: Python JOSE library for JWT, JWS, JWE, and JWK that signs, encrypts, and verifies tokens with HMAC, RSA, and ECDSA backends used in API auth.
+tagline: JOSE JWT, JWS, JWE, and JWK implementation for Python
+
+github_url: https://github.com/mpdavis/python-jose
+website_url: https://python-jose.readthedocs.io
+docs_url: https://python-jose.readthedocs.io
+install_command: pip install python-jose
+
+category: Dev Tools
+tags: [python, jwt, jose, jws, jwe, authentication, security]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  API services need to sign and verify JSON Web Tokens without pulling in a full
+  identity platform. python-jose implements JOSE standards in Python so you can
+  create, encrypt, and verify JWT, JWS, JWE, and JWK payloads with HMAC, RSA, and
+  ECDSA backends in auth middleware and service-to-service calls.
+
+use_cases:
+  - Issue and verify JWT access tokens in a Python API
+  - Encrypt sensitive claims with JWE before storing or sending them
+  - Rotate signing keys using JWK sets in a multi-service auth setup
+  - Decode and validate tokens from an OAuth or OIDC identity provider

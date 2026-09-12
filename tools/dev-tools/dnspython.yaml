@@ -1,0 +1,25 @@
+name: dnspython
+description: Powerful DNS toolkit for Python that queries, constructs, and serves DNS records, including async support, used for lookups, zone work, and DNS-based service discovery.
+tagline: Full-featured DNS toolkit for Python applications
+
+github_url: https://github.com/rthalley/dnspython
+website_url: https://www.dnspython.org
+docs_url: https://dnspython.readthedocs.io
+install_command: pip install dnspython
+
+category: Dev Tools
+tags: [python, dns, networking, async, service-discovery]
+pricing: free
+is_open_source: true
+
+problem_solved: |
+  Many Python services need more than a single hostname lookup: MX records,
+  TXT verification, SRV discovery, or custom resolvers. dnspython is a full DNS
+  toolkit that queries and constructs records, talks to resolvers, and supports
+  async I/O so apps can do real DNS work without shelling out to dig.
+
+use_cases:
+  - Resolve MX, TXT, and SRV records for email or service discovery
+  - Verify domain ownership via DNS TXT records in an auth or SaaS flow
+  - Build a custom resolver or stub client inside a Python network service
+  - Look up DNS records asynchronously in FastAPI or asyncio workers

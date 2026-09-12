@@ -1,0 +1,26 @@
+name: slowapi
+description: Rate limiter for Starlette and FastAPI, based on limits, that caps requests by IP, key, or route using in-memory or Redis storage to protect APIs from abuse.
+tagline: Rate limiting for FastAPI and Starlette APIs
+
+github_url: https://github.com/laurentS/slowapi
+website_url: https://pypi.org/project/slowapi/
+docs_url: https://github.com/laurentS/slowapi
+install_command: pip install slowapi
+
+category: Dev Tools
+tags: [python, fastapi, starlette, rate-limiting, redis, api]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  FastAPI and Starlette apps need request throttling but Flask-Limiter does not
+  plug in cleanly. slowapi brings limits-based rate limiting to ASGI, so you can
+  cap traffic by IP, user, or route with in-memory or Redis backends and return
+  standard 429 responses without writing custom middleware.
+
+use_cases:
+  - Limit login and signup endpoints to stop brute-force attempts
+  - Cap expensive LLM or embedding routes per API key
+  - Share rate-limit counters across workers with a Redis backend
+  - Decorate FastAPI routes with per-route request quotas
