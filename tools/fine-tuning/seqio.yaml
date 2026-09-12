@@ -1,0 +1,26 @@
+name: SeqIO
+description: Google library for task-based datasets, preprocessing, and evaluation for sequence models. SeqIO defines reusable tasks and mixtures so T5-style pretraining and fine-tuning share one pipeline for data, tokenization, and metrics.
+tagline: Task-based datasets and evaluation for sequence models
+
+github_url: https://github.com/google/seqio
+docs_url: https://github.com/google/seqio
+
+category: Fine-tuning
+tags: [seq2seq, t5, datasets, google, preprocessing, evaluation, jax]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install seqio
+
+problem_solved: |
+  Sequence-model fine-tunes need consistent tokenization, mixing, and eval
+  across tasks, but one-off tf.data scripts drift between experiments. SeqIO
+  defines tasks and mixtures with shared preprocessing and metrics so T5-style
+  training and evaluation stay comparable across runs.
+
+use_cases:
+  - Define a SeqIO task mixture for T5-style pretraining or fine-tuning
+  - Share tokenization and preprocessing across multiple sequence-model experiments
+  - Evaluate sequence models with the same SeqIO metrics used at train time
+  - Mix public and private text tasks into one deterministic training mixture

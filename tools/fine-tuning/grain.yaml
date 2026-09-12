@@ -1,0 +1,27 @@
+name: Grain
+description: Google library for reading and processing ML training data in JAX and PyTorch pipelines. Grain provides deterministic, parallel data loading, mixing, and transformations so large fine-tunes can iterate epochs without ad-hoc input pipelines.
+tagline: Deterministic data loading for JAX and PyTorch training
+
+github_url: https://github.com/google/grain
+website_url: https://google-grain.readthedocs.io
+docs_url: https://google-grain.readthedocs.io
+
+category: Fine-tuning
+tags: [jax, data-loading, training, google, pytorch, pipelines, llm]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install grain
+
+problem_solved: |
+  Large JAX and PyTorch fine-tunes need deterministic, restart-safe data loading
+  across hosts, but custom tf.data or PyTorch Dataset code is easy to get wrong
+  at scale. Grain reads, mixes, and transforms training data with parallel
+  workers so epochs stay reproducible when jobs preempt or shard across devices.
+
+use_cases:
+  - Build a deterministic JAX input pipeline for multi-host LLM fine-tuning
+  - Mix multiple datasets with Grain transformations before a training step
+  - Resume a preempted TPU job without reshuffling the epoch order
+  - Share a Grain data pipeline between JAX and PyTorch training code

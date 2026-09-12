@@ -1,0 +1,25 @@
+name: icefall
+description: Training and decoding recipes for next-generation Kaldi speech recognition using k2, PyTorch, and Lhotse. icefall publishes end-to-end ASR, transducer, and LLM-related speech recipes that teams can adapt instead of assembling a stack from scratch.
+tagline: Next-gen Kaldi recipes for ASR training with k2 and PyTorch
+
+github_url: https://github.com/k2-fsa/icefall
+website_url: https://k2-fsa.github.io/icefall/
+docs_url: https://k2-fsa.github.io/icefall/
+
+category: Fine-tuning
+tags: [asr, speech, pytorch, k2, kaldi, training, recipes]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Training modern ASR models means wiring k2 graphs, PyTorch trainers, and
+  audio datasets together, which is slow to get right from a blank repo.
+  icefall ships ready recipes for transducers and related speech models so
+  teams can fine-tune and decode without rebuilding the Kaldi-next stack.
+
+use_cases:
+  - Fine-tune a transducer ASR model from an icefall recipe on your audio data
+  - Decode speech with k2-based graphs using published icefall checkpoints
+  - Adapt LibriSpeech or GigaSpeech recipes to a custom speech corpus
+  - Prototype LLM-related speech training without assembling k2 plumbing

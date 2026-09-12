@@ -1,0 +1,26 @@
+name: Paxml
+description: JAX framework from Google for training large-scale models with configurable experiments and advanced parallelization. Paxml (Pax) targets high model-FLOP utilization on TPU and GPU pods for LLM pretraining and fine-tuning.
+tagline: JAX framework for large-scale model training at Google
+
+github_url: https://github.com/google/paxml
+docs_url: https://github.com/google/paxml
+
+category: Fine-tuning
+tags: [jax, llm, training, google, tpu, parallelization, pax]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install paxml
+
+problem_solved: |
+  Training LLMs on TPU or GPU pods needs partitioning, checkpointing, and
+  experiment config that ad-hoc JAX scripts rarely get right. Paxml (Pax)
+  is Google's JAX training framework with configurable experiments and
+  parallelization, aimed at high model-FLOP utilization for large runs.
+
+use_cases:
+  - Pretrain or fine-tune a large language model on TPU pods with Pax
+  - Configure multi-host parallelization without rewriting JAX sharding by hand
+  - Run ablation experiments with Paxml config instead of forked training scripts
+  - Benchmark model-FLOP utilization on GPU or TPU clusters

@@ -1,0 +1,27 @@
+name: k2
+description: Differentiable FSA and FST library with PyTorch compatibility for speech and sequence modeling. k2 implements GPU-friendly automata algorithms so ASR and decoding graphs can be trained and composed inside neural network pipelines.
+tagline: Differentiable FSA/FST algorithms with PyTorch support
+
+github_url: https://github.com/k2-fsa/k2
+website_url: https://k2-fsa.github.io/k2
+docs_url: https://k2-fsa.github.io/k2
+
+category: Fine-tuning
+tags: [fsa, fst, asr, pytorch, speech, decoding, graphs]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install k2
+
+problem_solved: |
+  Classic Kaldi FSTs sit outside the neural net, so lattice decoding and
+  graph training cannot backprop through the automaton. k2 implements
+  differentiable FSA/FST algorithms on GPU with PyTorch so ASR graphs can
+  be composed and trained as part of the model.
+
+use_cases:
+  - Train ASR models with differentiable WFST decoding graphs in PyTorch
+  - Compose FSA lattices for speech recognition without leaving the GPU
+  - Build icefall or next-gen Kaldi pipelines on k2 automata primitives
+  - Experiment with graph-based sequence losses for speech and NLP
