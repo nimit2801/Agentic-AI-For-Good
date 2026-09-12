@@ -1,0 +1,26 @@
+name: newspaper3k
+description: Python 3 library for downloading, parsing, and extracting news articles plus metadata. newspaper3k pulls full text, authors, dates, and keywords from article URLs so RAG and dataset pipelines can ingest journalism without hand-written HTML scrapers.
+tagline: News article and metadata extraction for Python 3
+
+github_url: https://github.com/codelucas/newspaper
+docs_url: https://newspaper.readthedocs.io/
+
+category: Data
+tags: [nlp, news, extraction, python, scraping, metadata, rag]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install newspaper3k
+
+problem_solved: |
+  Building a news corpus means fetching pages and stripping chrome, authors,
+  and dates from inconsistent publisher HTML. newspaper3k downloads articles
+  and extracts full text plus metadata so RAG and NLP pipelines ingest
+  journalism instead of writing a scraper per site.
+
+use_cases:
+  - Extract full text and authors from a list of news article URLs
+  - Build a news corpus for RAG or NLP training from publisher pages
+  - Pull publish dates and keywords for citation-aware retrieval
+  - Monitor a set of news sites and parse new articles in Python

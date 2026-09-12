@@ -1,0 +1,27 @@
+name: Guild AI
+description: Open-source experiment tracking and ML developer tools. Guild AI runs, compares, and reproduces training jobs from the command line so teams can track hyperparameters, metrics, and artifacts without a hosted MLOps SaaS.
+tagline: Experiment tracking and ML developer tools from the CLI
+
+github_url: https://github.com/guildai/guildai
+website_url: https://guild.ai
+docs_url: https://guild.ai
+
+category: Monitoring
+tags: [experiment-tracking, mlops, python, cli, reproducibility, metrics]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install guildai
+
+problem_solved: |
+  Fine-tunes produce a mess of hyperparameters, metrics, and checkpoints that
+  notebooks rarely capture. Guild AI runs training as tracked experiments from
+  the CLI, compares runs, and reproduces jobs so teams keep a local history
+  without standing up a hosted tracking SaaS.
+
+use_cases:
+  - Track hyperparameters and metrics for LLM fine-tunes from the command line
+  - Compare training runs and promote the best checkpoint
+  - Reproduce an experiment by replaying a Guild AI run
+  - Keep local experiment history without a hosted MLOps dashboard
