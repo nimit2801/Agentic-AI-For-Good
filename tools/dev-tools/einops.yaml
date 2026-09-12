@@ -1,0 +1,26 @@
+name: einops
+description: Tensor operation library that makes rearrange, reduce, repeat, pack, and einsum readable across NumPy, PyTorch, JAX, and other array backends with a single pattern syntax.
+tagline: Readable tensor ops for PyTorch, JAX, NumPy, and more
+
+github_url: https://github.com/arogozhnikov/einops
+website_url: https://einops.rocks
+docs_url: https://einops.rocks/
+install_command: pip install einops
+
+category: Dev Tools
+tags: [python, tensors, pytorch, jax, numpy, deep-learning, einsum]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Deep learning code is full of reshape, permute, squeeze, and concatenate calls that
+  hide axis intent and break when a tensor rank changes. einops replaces those with a
+  single pattern language so rearrange, reduce, repeat, pack, and einsum stay readable
+  and portable across NumPy, PyTorch, JAX, and other backends.
+
+use_cases:
+  - Rewrite messy PyTorch view and permute chains as a single rearrange pattern
+  - Pack tokens from mixed-rank tensors before a transformer block, then unpack them
+  - Write backend-agnostic tensor code that runs on NumPy, JAX, and PyTorch
+  - Teach or review model code where axis names are explicit in the operation
