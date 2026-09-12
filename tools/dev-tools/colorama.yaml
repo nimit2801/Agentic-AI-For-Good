@@ -1,0 +1,25 @@
+name: colorama
+description: Cross-platform Python library that makes ANSI color and style codes work on Windows terminals as well as Unix, used by CLIs, test runners, and logging tools.
+tagline: Colored terminal text that works on Windows and Unix
+
+github_url: https://github.com/tartley/colorama
+website_url: https://pypi.org/project/colorama/
+install_command: pip install colorama
+
+category: Dev Tools
+tags: [python, cli, terminal, color, windows, logging]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  ANSI color codes work on Unix terminals but are ignored or printed as garbage
+  on Windows consoles. colorama wraps stdout and stderr so the same color and
+  style sequences work across platforms, which is why so many Python CLIs and
+  test tools depend on it for readable terminal output.
+
+use_cases:
+  - Colorize CLI status, errors, and progress on Windows and Unix
+  - Add ANSI styles to logging output in a cross-platform Python tool
+  - Keep test-runner failure output readable in cmd.exe and PowerShell
+  - Wrap stdout in a library so downstream CLIs get color without OS checks

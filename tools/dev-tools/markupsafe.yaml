@@ -1,0 +1,26 @@
+name: MarkupSafe
+description: Pallets library that escapes untrusted strings for HTML and XML and implements a Markup type so Jinja2 and Flask can mix safe markup with autoescaped text.
+tagline: Safe HTML and XML escaping for Python web templates
+
+github_url: https://github.com/pallets/markupsafe
+website_url: https://markupsafe.palletsprojects.com
+docs_url: https://markupsafe.palletsprojects.com
+install_command: pip install MarkupSafe
+
+category: Dev Tools
+tags: [python, html, xml, escaping, jinja2, flask, security]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Injecting user text into HTML or XML without escaping causes XSS. MarkupSafe
+  provides a fast C-accelerated escape function and a Markup type so Jinja2,
+  Flask, and other Python web stacks can mark trusted fragments as safe while
+  autoescaping everything else.
+
+use_cases:
+  - Escape user-supplied strings before inserting them into HTML templates
+  - Mark trusted HTML fragments as safe Markup in a Jinja2 template
+  - Power Flask and Jinja2 autoescaping without a slower pure-Python escape
+  - Sanitize XML text nodes in a Python reporting or feed generator

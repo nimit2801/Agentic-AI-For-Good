@@ -1,0 +1,26 @@
+name: aiosqlite
+description: Asyncio bridge to Python's sqlite3 module that runs SQLite operations on a background thread so FastAPI and asyncio apps can query local databases without blocking the event loop.
+tagline: Async SQLite access for Python asyncio applications
+
+github_url: https://github.com/omnilib/aiosqlite
+website_url: https://aiosqlite.omnilib.dev
+docs_url: https://aiosqlite.omnilib.dev
+install_command: pip install aiosqlite
+
+category: Data
+tags: [python, sqlite, asyncio, async, database, fastapi]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  The stdlib sqlite3 API is synchronous, so calling it from asyncio blocks the
+  event loop. aiosqlite wraps sqlite3 on a worker thread and exposes awaitable
+  connections, cursors, and transactions so FastAPI and other async apps can
+  use a local SQLite file without stalling concurrent requests.
+
+use_cases:
+  - Query a local SQLite database from FastAPI without blocking the event loop
+  - Store agent memory or job state in SQLite inside an asyncio worker
+  - Run migrations and transactions with async context managers
+  - Prototype an async data layer before moving to a networked SQL backend
