@@ -1,0 +1,24 @@
+name: EasyAnimate
+description: Alibaba PAI end-to-end pipeline for high-resolution, long video generation using transformer diffusion, with training for DiT models, VAEs, LoRA, and bilingual text-to-video inference.
+tagline: Transformer pipeline for long, high-resolution AI video
+
+github_url: https://github.com/aigc-apps/EasyAnimate
+website_url: https://easyanimate.github.io/
+
+category: Other
+tags: [video-generation, text-to-video, diffusion-transformer, lora, alibaba, generative-ai]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Generating long, high-resolution video usually means stitching short clips or using
+  closed APIs with little training control. EasyAnimate is an open transformer-diffusion
+  pipeline that trains DiT generators and VAEs, supports LoRA and control signals, and
+  produces multi-second videos at multiple resolutions from Chinese or English prompts.
+
+use_cases:
+  - Generate multi-second high-resolution videos from bilingual text prompts
+  - Train a LoRA or baseline EasyAnimate model for a custom visual style
+  - Control generated video with pose, canny, trajectory, or camera signals
+  - Run EasyAnimate weights through Hugging Face Diffusers for inference

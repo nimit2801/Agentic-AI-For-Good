@@ -1,0 +1,26 @@
+name: safetensors
+description: Fast, zero-copy tensor serialization format that stores model weights safely without pickle, used across Hugging Face Transformers, Diffusers, and local inference stacks.
+tagline: Safe, fast format for storing and sharing model tensors
+
+github_url: https://github.com/safetensors/safetensors
+website_url: https://huggingface.co/docs/safetensors
+docs_url: https://huggingface.co/docs/safetensors
+install_command: pip install safetensors
+
+category: Dev Tools
+tags: [python, tensors, serialization, huggingface, pytorch, security, model-weights]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Pickle-based weight files can execute arbitrary code on load, which is a supply-chain
+  risk when sharing checkpoints. safetensors is a simple tensor format that is not
+  executable, supports zero-copy loads, and has become the default way Hugging Face
+  and many inference stacks ship model weights.
+
+use_cases:
+  - Save and load PyTorch checkpoints without pickle execution risk
+  - Distribute Hugging Face model weights in the default safetensors format
+  - Memory-map large tensors and load only the slices needed on each GPU
+  - Convert legacy .bin or pickle weights to a safer sharing format
