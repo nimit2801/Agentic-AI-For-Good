@@ -1,0 +1,26 @@
+name: PyNNDescent
+description: Python nearest-neighbor descent for approximate k-NN graphs. PyNNDescent builds fast ANN indexes used by UMAP and clustering pipelines when exact nearest-neighbor search is too slow for large embedding sets.
+tagline: Approximate nearest neighbors via nearest-neighbor descent
+
+github_url: https://github.com/lmcinnes/pynndescent
+docs_url: https://github.com/lmcinnes/pynndescent
+
+category: Vector DB
+tags: [python, ann, nearest-neighbors, umap, embeddings, knn, clustering]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+install_command: pip install pynndescent
+
+problem_solved: |
+  Exact k-NN over large embedding sets is O(n^2) and too slow for UMAP, HDBSCAN, and
+  custom retrieval. PyNNDescent implements nearest-neighbor descent to build approximate
+  k-NN graphs and query indexes in Python, which is why UMAP uses it as its default
+  neighbor backend for high-dimensional data.
+
+use_cases:
+  - Build approximate k-NN graphs for UMAP, clustering, and embedding visualization
+  - Query nearest neighbors over custom distance metrics beyond Euclidean cosine
+  - Index embedding collections in pure Python without a separate vector database
+  - Speed up neighbor search in scikit-learn-style ML pipelines on CPU

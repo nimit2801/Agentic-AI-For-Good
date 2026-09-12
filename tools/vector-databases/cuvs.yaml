@@ -1,0 +1,27 @@
+name: cuVS
+description: GPU library for vector search and clustering from NVIDIA RAPIDS. cuVS implements IVF, CAGRA, and other ANN indexes on CUDA so embedding retrieval and RAG pipelines can search millions of vectors on GPU.
+tagline: GPU-accelerated vector search and clustering from NVIDIA
+
+github_url: https://github.com/NVIDIA/cuvs
+website_url: https://docs.nvidia.com/cuvs/
+docs_url: https://docs.nvidia.com/cuvs/
+
+category: Vector DB
+tags: [vector-search, gpu, cuda, ann, embeddings, nvidia, rapids, clustering]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install cuvs-cu12
+
+problem_solved: |
+  CPU ANN indexes struggle when embedding collections grow into the tens of millions
+  and RAG latency budgets are tight. cuVS (formerly RAFT ANN) runs IVF-PQ, CAGRA, and
+  clustering kernels on NVIDIA GPUs so nearest-neighbor search, graph construction, and
+  vector clustering stay in device memory instead of bouncing through host-side indexes.
+
+use_cases:
+  - Build GPU ANN indexes (CAGRA, IVF-PQ) for low-latency embedding retrieval
+  - Accelerate RAG and semantic search over millions of vectors on CUDA hardware
+  - Cluster embedding collections on GPU for dataset dedup and exploration
+  - Integrate RAPIDS vector search into Python pipelines with the cuVS API

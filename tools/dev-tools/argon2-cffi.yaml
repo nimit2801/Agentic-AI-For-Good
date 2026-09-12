@@ -1,0 +1,28 @@
+name: argon2-cffi
+description: Python CFFI bindings for Argon2, the Password Hashing Competition winner. argon2-cffi hashes and verifies secrets with PHC strings so agent APIs can store credentials without a custom key-derivation stack.
+tagline: Argon2 password hashing for Python
+
+github_url: https://github.com/hynek/argon2-cffi
+website_url: https://argon2-cffi.readthedocs.io/
+docs_url: https://argon2-cffi.readthedocs.io/
+
+category: Dev Tools
+tags: [python, cryptography, password-hashing, argon2, security, authentication]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install argon2-cffi
+
+problem_solved: |
+  Agent dashboards, API keys, and user accounts need a slow, memory-hard hash so stolen
+  password databases are expensive to crack. MD5, SHA-1, and even unsalted SHA-256 are
+  too fast on GPUs. argon2-cffi wraps the Argon2 winner with a small Python API, PHC
+  string encoding, and verified CFFI bindings so you can hash, verify, and rehash
+  credentials without shipping a hand-rolled KDF.
+
+use_cases:
+  - Hash and verify user passwords for agent product dashboards and admin consoles
+  - Store API-token secrets with Argon2id so a leaked database is costly to brute-force
+  - Rehash credentials on login when Argon2 parameters (time, memory, parallelism) are raised
+  - Replace deprecated hashlib.pbkdf2_hmac stacks with a PHC-string compatible Argon2 API
