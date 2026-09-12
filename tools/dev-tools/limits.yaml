@@ -1,0 +1,27 @@
+name: limits
+description: Rate limiting for Python with sliding window, fixed window, and token bucket strategies. limits backs Flask-Limiter and SlowAPI so public agent APIs can throttle abuse across Redis, Memcached, MongoDB, or in-memory storage.
+tagline: Rate limiting strategies and storage backends for Python
+
+github_url: https://github.com/alisaifee/limits
+website_url: https://limits.readthedocs.org
+docs_url: https://limits.readthedocs.org
+
+category: Dev Tools
+tags: [python, rate-limiting, redis, memcached, api, throttling]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install limits
+
+problem_solved: |
+  Public LLM and agent endpoints get flooded by retries, scrapers, and runaway clients.
+  Rolling your own counters is error-prone across processes and restarts. limits provides
+  battle-tested window and bucket algorithms plus pluggable storage (Redis, Memcached,
+  MongoDB, memory) so you can enforce per-key quotas without writing a custom limiter.
+
+use_cases:
+  - Cap requests per API key on a FastAPI or Flask agent inference endpoint
+  - Share rate-limit state across workers with Redis or Memcached backends
+  - Apply sliding-window or token-bucket policies to webhook and tool-call traffic
+  - Power Flask-Limiter or SlowAPI with a storage-agnostic rate-limit core

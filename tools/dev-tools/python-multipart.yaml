@@ -1,0 +1,27 @@
+name: python-multipart
+description: Streaming multipart/form-data parser for Python. python-multipart is the parser Starlette and FastAPI use to decode file uploads and form fields without loading entire request bodies into memory.
+tagline: Streaming multipart parser used by Starlette and FastAPI
+
+github_url: https://github.com/Kludex/python-multipart
+website_url: https://multipart.fastapiexpert.com/
+docs_url: https://multipart.fastapiexpert.com/
+
+category: Dev Tools
+tags: [python, multipart, form-data, file-upload, starlette, fastapi, http]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install python-multipart
+
+problem_solved: |
+  Agent apps accept file uploads, dataset CSVs, and form posts that can be larger than
+  RAM. Naive parsers buffer the whole body and blow memory. python-multipart streams
+  multipart/form-data as it arrives, which is why Starlette and FastAPI depend on it
+  for UploadFile and form parsing without loading entire requests into memory.
+
+use_cases:
+  - Parse file uploads on FastAPI endpoints that ingest PDFs, images, or training data
+  - Stream multipart form fields in Starlette apps without buffering the full body
+  - Decode mixed JSON-plus-file tool payloads sent as multipart/form-data
+  - Replace ad-hoc cgi.FieldStorage parsing with a maintained streaming parser
