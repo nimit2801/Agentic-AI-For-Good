@@ -1,0 +1,27 @@
+name: ftfy
+description: ftfy (fixes text for you) repairs mojibake and other Unicode glitches after the fact, recovering the original string from encoding mix-ups common in crawled, scraped, and user-generated text.
+tagline: Fixes mojibake and Unicode glitches in text
+
+github_url: https://github.com/rspeer/python-ftfy
+website_url: https://ftfy.readthedocs.org
+docs_url: https://ftfy.readthedocs.io/en/latest/
+install_command: pip install ftfy
+
+category: Data
+tags: [python, unicode, text, encoding, nlp, preprocessing]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Web crawls, PDFs, and mixed-encoding datasets often arrive as mojibake —
+  UTF-8 decoded as Latin-1, curly quotes stacked on bad encodings, or
+  multiple layers of mis-decoding. Models trained on that text learn garbage.
+  ftfy detects those patterns and restores the original Unicode so NLP and
+  RAG ingest pipelines get clean text without a manual encoding hunt.
+
+use_cases:
+  - Clean crawled HTML and social text before tokenization or embedding
+  - Repair mojibake in training corpora downloaded from mixed sources
+  - Normalize user-generated text in RAG ingest so retrieval matches real queries
+  - Diagnose why a dataset looks garbled after a CSV or API download

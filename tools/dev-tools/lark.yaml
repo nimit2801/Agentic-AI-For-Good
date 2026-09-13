@@ -1,0 +1,27 @@
+name: Lark
+description: Lark is a Python parsing toolkit for context-free grammars. It ships Earley and LALR(1) parsers, builds an annotated parse tree from a grammar plus input, and needs no handwritten construction code.
+tagline: Ergonomic Python parser for context-free grammars
+
+github_url: https://github.com/lark-parser/lark
+website_url: https://lark-parser.readthedocs.io/
+docs_url: https://lark-parser.readthedocs.io/
+install_command: pip install lark
+
+category: Dev Tools
+tags: [python, parsing, grammar, dsl, compiler, lalr]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Building parsers by hand is slow and error-prone, and many Python parser
+  generators force you to write tree-construction code or fail on ambiguous
+  grammars. Lark accepts a grammar, parses almost any context-free language,
+  and returns an annotated tree so you can write DSLs, config languages, and
+  compilers without fighting the parser generator.
+
+use_cases:
+  - Define a domain-specific language for agent configs or prompt templates and parse it into a tree
+  - Parse structured logs, config files, or query languages that are not valid JSON or YAML
+  - Generate a standalone LALR(1) parser for a custom syntax used in an ML pipeline
+  - Experiment with ambiguous grammars using Earley when a language is not LALR-friendly
