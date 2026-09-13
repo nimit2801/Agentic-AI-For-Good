@@ -1,0 +1,26 @@
+name: Flasgger
+description: Flasgger adds OpenAPI specs and Swagger UI to Flask APIs from docstrings, YAML, or Marshmallow schemas. Teams wrapping models or agent tools get interactive docs and a machine-readable spec without maintaining a separate OpenAPI file.
+tagline: OpenAPI specs and Swagger UI for Flask APIs
+
+github_url: https://github.com/flasgger/flasgger
+website_url: http://flasgger.pythonanywhere.com/
+docs_url: https://github.com/flasgger/flasgger
+install_command: pip install flasgger
+
+category: Dev Tools
+tags: [python, flask, openapi, swagger, api, documentation]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Flask APIs that serve models and agent tools often ship with no live docs, so
+  clients guess payloads and status codes. Flasgger generates an OpenAPI spec and
+  Swagger UI from view docstrings or YAML, so request shapes, examples, and try-it
+  forms stay next to the code that implements the endpoint.
+
+use_cases:
+  - Publish Swagger UI for Flask model-inference APIs so clients can try requests
+  - Generate OpenAPI specs from Flask view docstrings for SDK and client generation
+  - Document agent-tool HTTP endpoints with examples and response schemas
+  - Keep API docs in code instead of a separate spec that drifts from the server
