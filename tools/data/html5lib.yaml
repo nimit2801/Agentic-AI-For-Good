@@ -1,0 +1,25 @@
+name: html5lib
+description: A standards-compliant Python library for parsing and serializing HTML documents and fragments the way browsers do, producing a consistent DOM even from messy, real-world markup.
+tagline: Browser-grade HTML parser for Python
+
+github_url: https://github.com/html5lib/html5lib-python
+docs_url: https://html5lib.readthedocs.io/
+install_command: pip install html5lib
+
+category: Data
+tags: [python, html, parsing, scraping, dom, web]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Web crawls and scraped pages are not well-formed XML. Strict parsers
+  drop content or throw; regex extractors miss nested tags. html5lib
+  implements the HTML5 parsing algorithm so you get a browser-like DOM
+  from broken markup, which is what RAG ingest and dataset builders need.
+
+use_cases:
+  - Parse crawled HTML into a DOM before extracting text for embeddings
+  - Serialize cleaned HTML fragments after sanitizing scraped content
+  - Use as a Beautiful Soup backend when lxml is too strict on messy pages
+  - Normalize real-world markup in web-scale training-data pipelines

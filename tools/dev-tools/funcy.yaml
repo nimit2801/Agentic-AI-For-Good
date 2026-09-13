@@ -1,0 +1,25 @@
+name: funcy
+description: A compact Python library of functional helpers for sequences, dicts, strings, and decorators, covering flatten, group_by, memoize, retry, and silent without pulling in a heavy toolkit.
+tagline: Fancy, practical functional tools for Python
+
+github_url: https://github.com/suor/funcy
+docs_url: https://funcy.readthedocs.io/
+install_command: pip install funcy
+
+category: Dev Tools
+tags: [python, functional, utilities, decorators, data-processing]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Data and ML code is full of one-off loops to flatten nested lists, group
+  records, retry a flaky call, or memoize a transform. itertools covers a
+  slice of that and still leaves you writing glue. funcy packages the
+  everyday functional helpers so pipelines stay short and readable.
+
+use_cases:
+  - Flatten, chunk, and group nested model outputs before downstream steps
+  - Memoize expensive feature transforms without a custom cache layer
+  - Retry and silence flaky I/O around scrapers or LLM API calls
+  - Select, merge, and project dicts when shaping JSON for training data
