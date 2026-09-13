@@ -1,0 +1,26 @@
+name: email-validator
+description: Robust email syntax and deliverability checks for Python. email-validator parses RFC addresses, normalizes Unicode domains, and optionally tests DNS so signup and notify flows reject bad addresses early.
+tagline: RFC email syntax and deliverability checks for Python
+
+github_url: https://github.com/JoshData/python-email-validator
+website_url: https://github.com/JoshData/python-email-validator
+docs_url: https://github.com/JoshData/python-email-validator
+install_command: pip install email-validator
+
+category: Dev Tools
+tags: [python, email, validation, dns, rfc, unicode]
+pricing: free
+is_open_source: true
+license: Unlicense
+
+problem_solved: |
+  Agent signup forms and notification pipelines accept emails with regex
+  that miss IDN domains, quoted local parts, and undeliverable hosts.
+  email-validator parses RFC syntax, normalizes Unicode, and can check DNS
+  so bad addresses fail before they hit SMTP or a vendor API.
+
+use_cases:
+  - Validate user emails before sending eval reports or waitlist invites
+  - Normalize Unicode domain emails in a contacts import
+  - Reject undeliverable addresses with DNS checks in a notify worker
+  - Parse display-name plus address strings from scraped datasets

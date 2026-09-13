@@ -1,0 +1,25 @@
+name: pipdeptree
+description: Command-line utility that prints the installed Python package dependency tree. pipdeptree shows reverse deps, conflicts, and freeze output so ML environments can be audited without guessing who pulled in a package.
+tagline: Dependency tree for installed Python packages
+
+github_url: https://github.com/tox-dev/pipdeptree
+website_url: https://pipdeptree.readthedocs.io
+docs_url: https://pipdeptree.readthedocs.io
+install_command: pip install pipdeptree
+
+category: Dev Tools
+tags: [python, pip, dependencies, packaging, cli, auditing]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Training images balloon because pip freeze hides which package pulled in
+  a transitive pin. pipdeptree renders the install graph, reverse deps, and
+  conflicts so you can trim unused libraries and explain version clashes.
+
+use_cases:
+  - Print why a CUDA or numpy pin landed in a training image
+  - Find reverse dependencies before removing a utility package
+  - Export a freeze that matches the actual installed tree
+  - Spot conflicting requirement versions in CI
