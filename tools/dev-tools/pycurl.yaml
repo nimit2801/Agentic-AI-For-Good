@@ -1,0 +1,26 @@
+name: PycURL
+description: PycURL is a Python interface to libcurl for high-performance HTTP, FTP, and other transfers. It exposes curl's connection pooling, streaming, and protocol options so data pipelines and model-download jobs can fetch large artifacts without going through a slower pure-Python HTTP stack.
+tagline: Python bindings for libcurl HTTP and file transfers
+
+github_url: https://github.com/pycurl/pycurl
+website_url: https://pycurl.github.io/
+docs_url: https://pycurl.github.io/
+install_command: pip install pycurl
+
+category: Dev Tools
+tags: [python, http, libcurl, networking, downloads, data-pipeline]
+pricing: free
+is_open_source: true
+license: LGPL-2.1
+
+problem_solved: |
+  Python HTTP clients struggle with large model weights, multi-protocol URLs, and
+  fine-grained curl options like timeouts, proxies, and streaming writes. PycURL
+  wraps libcurl so download and webhook clients reuse curl's performance, SSL, and
+  protocol coverage instead of reimplementing transfers in pure Python.
+
+use_cases:
+  - Stream large model checkpoints and datasets to disk with libcurl performance
+  - POST training metrics or webhook payloads with custom SSL and proxy settings
+  - Fetch artifacts over HTTP, FTP, or other curl-supported protocols in one client
+  - Tune connection reuse and timeouts for high-volume data-pipeline downloads
