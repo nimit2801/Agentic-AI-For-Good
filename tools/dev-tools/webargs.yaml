@@ -1,0 +1,27 @@
+name: webargs
+description: webargs is a Python library for parsing HTTP request arguments with built-in support for Flask, Django, Bottle, Tornado, Falcon, Pyramid, and aiohttp. It uses marshmallow schemas so API handlers get validated query, JSON, form, and header values instead of ad-hoc request parsing.
+tagline: Framework-agnostic HTTP argument parsing with marshmallow
+
+github_url: https://github.com/marshmallow-code/webargs
+website_url: https://webargs.readthedocs.io/
+docs_url: https://webargs.readthedocs.io/
+install_command: pip install webargs
+
+category: Dev Tools
+tags: [python, flask, django, api, validation, marshmallow, http]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Every web framework has a different way to read query strings, JSON bodies, forms,
+  and headers, so API handlers mix parsing, validation, and business logic. webargs
+  declares argument schemas once and loads them from the request, so model-serving
+  and agent-tool endpoints fail fast on bad input across Flask, Bottle, Falcon, and
+  other Python frameworks.
+
+use_cases:
+  - Parse and validate JSON payloads for Flask model-inference endpoints
+  - Load query parameters and headers in Bottle or Falcon agent-tool APIs
+  - Share marshmallow schemas between request parsing and response serialization
+  - Reject malformed webhook bodies before they reach a training or pipeline job

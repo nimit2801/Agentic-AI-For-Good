@@ -1,0 +1,26 @@
+name: apispec
+description: apispec is a pluggable Python generator for OpenAPI specifications from code, marshmallow schemas, and plugins. It produces machine-readable API docs for Flask and other frameworks so model-serving and agent-tool APIs can ship a spec without maintaining a hand-written YAML file.
+tagline: Pluggable OpenAPI spec generator for Python APIs
+
+github_url: https://github.com/marshmallow-code/apispec
+website_url: https://apispec.readthedocs.io/
+docs_url: https://apispec.readthedocs.io/
+install_command: pip install apispec
+
+category: Dev Tools
+tags: [python, openapi, swagger, api, documentation, marshmallow]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  OpenAPI files drift from the code that implements model and agent APIs, so clients
+  call the wrong fields. apispec builds the spec from marshmallow schemas and
+  plugins, so documentation, validation, and the live API stay aligned without a
+  separate hand-edited swagger file.
+
+use_cases:
+  - Generate OpenAPI specs from marshmallow schemas used by Flask inference APIs
+  - Plug apispec into Flask or aiohttp apps to document agent-tool HTTP endpoints
+  - Export a machine-readable spec for SDK generation and contract tests
+  - Keep request and response schemas in code instead of a drifting YAML spec
