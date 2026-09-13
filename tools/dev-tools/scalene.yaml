@@ -1,0 +1,25 @@
+name: Scalene
+description: High-precision CPU, GPU, and memory profiler for Python with AI-powered optimization hints. Scalene attributes time and RAM per line, including GPU kernels, so ML code can be tuned without guessing.
+tagline: CPU, GPU, and memory profiler for Python with AI hints
+
+github_url: https://github.com/plasma-umass/scalene
+website_url: https://github.com/plasma-umass/scalene
+docs_url: https://github.com/plasma-umass/scalene
+install_command: pip install scalene
+
+category: Dev Tools
+tags: [python, profiler, gpu, memory, performance, cuda]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Standard profilers miss GPU time and per-line memory growth in training
+  loops. Scalene reports CPU, GPU, and RAM by line, with optional AI
+  suggestions, so you can find leaks and kernel stalls in one run.
+
+use_cases:
+  - Profile a PyTorch training step for CPU vs GPU time per line
+  - Find memory leaks in a data loader without a separate heap tool
+  - Compare copy-vs-compute in a preprocessing script
+  - Get optimization hints on a slow inference function
