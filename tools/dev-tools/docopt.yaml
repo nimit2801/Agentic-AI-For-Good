@@ -1,0 +1,26 @@
+name: docopt
+description: docopt generates a command-line interface from a program's help text. You write the usage string humans read, and docopt parses sys.argv to match it, keeping CLI tools consistent with their own documentation.
+tagline: CLIs generated from usage help text
+
+github_url: https://github.com/docopt/docopt
+website_url: http://docopt.org
+docs_url: http://docopt.org
+install_command: pip install docopt
+
+category: Dev Tools
+tags: [python, cli, argparse, documentation, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  argparse and click can drift from the help text users actually read.
+  Training scripts and data CLIs end up with flags the README never
+  mentions. docopt inverts that - the usage string is the spec - so the
+  interface and the docs cannot disagree.
+
+use_cases:
+  - Define a training-script CLI from its usage docstring and parse argv to match
+  - Keep a data-prep tool's help text as the single source of truth for flags
+  - Prototype agent CLIs where the usage string is easier to write than argparse
+  - Generate consistent option parsing for small Python utilities in an ML repo
