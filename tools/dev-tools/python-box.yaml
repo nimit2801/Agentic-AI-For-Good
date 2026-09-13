@@ -1,0 +1,26 @@
+name: python-box
+description: Python dictionaries with dot-notation access, recursive conversion, and safe defaults. python-box wraps nested JSON-like data so config, API payloads, and model outputs can be read as attributes.
+tagline: Dot-notation dicts for nested Python data
+
+github_url: https://github.com/cdgriffith/Box
+website_url: https://github.com/cdgriffith/Box/wiki
+docs_url: https://github.com/cdgriffith/Box/wiki
+install_command: pip install python-box
+
+category: Dev Tools
+tags: [python, dict, json, config, data-structures]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Nested dicts from JSON configs, LLM tool results, and API payloads force
+  noisy key lookups and .get() chains. python-box turns those dicts into
+  objects with dot access, defaults, and conversion helpers so pipeline
+  code reads like attributes instead of nested brackets.
+
+use_cases:
+  - Load YAML or JSON agent configs and access nested keys with dot notation
+  - Wrap LLM tool-call JSON so handlers read fields as attributes
+  - Convert API payloads into Box objects before feature extraction
+  - Freeze or default nested config trees in training and eval jobs
