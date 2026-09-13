@@ -1,0 +1,25 @@
+name: responses
+description: A utility for mocking the Python Requests library. responses intercepts HTTP calls in tests so LLM clients, webhooks, and data fetchers can be asserted without hitting live APIs.
+tagline: Mock Python Requests in unit tests
+
+github_url: https://github.com/getsentry/responses
+website_url: https://github.com/getsentry/responses
+docs_url: https://github.com/getsentry/responses
+install_command: pip install responses
+
+category: Dev Tools
+tags: [python, testing, http, mock, requests, unit-tests]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Tests for RAG retrievers, webhook handlers, and LLM HTTP clients often hit
+  real networks or skip coverage. responses stubs Requests at the library
+  layer so you assert URLs, bodies, and status codes without live endpoints.
+
+use_cases:
+  - Stub OpenAI-compatible HTTP calls in agent unit tests
+  - Mock webhook POSTs from GitHub or Slack in CI
+  - Replay recorded API payloads for data-pipeline tests
+  - Assert request headers and query params without a local server
