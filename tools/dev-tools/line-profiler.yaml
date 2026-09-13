@@ -1,0 +1,25 @@
+name: line-profiler
+description: Line-by-line CPU profiler for Python. line-profiler times each line inside decorated functions so hot loops in training and data code show up without a full sampling session.
+tagline: Line-by-line CPU timing for Python functions
+
+github_url: https://github.com/pyutils/line_profiler
+website_url: https://github.com/pyutils/line_profiler
+docs_url: https://github.com/pyutils/line_profiler
+install_command: pip install line-profiler
+
+category: Dev Tools
+tags: [python, profiler, cpu, performance, kernprof]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Function-level profilers hide which line in a training step is slow.
+  line-profiler records hits and time per line so you can see the exact
+  statement that dominates CPU inside a hot function.
+
+use_cases:
+  - Time each line of a tokenization or batching function
+  - Find slow numpy vs Python loops in feature code
+  - Compare two implementations of a loss helper by line
+  - Profile a CLI command that feels stuck in one function
