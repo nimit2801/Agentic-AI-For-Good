@@ -1,0 +1,25 @@
+name: yappi
+description: Multithread, asyncio, and gevent-aware Python profiler. yappi records CPU or wall time per function across threads so concurrent agent servers and workers can be profiled without missing other threads.
+tagline: Thread and asyncio-aware profiler for Python
+
+github_url: https://github.com/sumerc/yappi
+website_url: https://github.com/sumerc/yappi
+docs_url: https://github.com/sumerc/yappi
+install_command: pip install yappi
+
+category: Dev Tools
+tags: [python, profiler, asyncio, threading, gevent, performance]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  cProfile is single-thread biased and misses work on other threads or
+  event loops. yappi profiles CPU or wall clock across threads, asyncio,
+  and gevent so concurrent agent servers show the real hot path.
+
+use_cases:
+  - Profile an asyncio agent server without dropping background tasks
+  - Compare CPU vs wall time in a multithreaded data loader
+  - Capture gevent worker time in a legacy serving stack
+  - Dump function stats from a running process after a load test

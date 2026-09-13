@@ -1,0 +1,25 @@
+name: environs
+description: Simplified environment variable parsing for Python, built on marshmallow. environs reads .env files, casts types, and validates required vars so agent services fail fast on bad config.
+tagline: Marshmallow-powered env var parsing for Python
+
+github_url: https://github.com/sloria/environs
+website_url: https://github.com/sloria/environs
+docs_url: https://github.com/sloria/environs
+install_command: pip install environs
+
+category: Dev Tools
+tags: [python, env, config, marshmallow, dotenv, validation]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  os.getenv returns strings and silent defaults, so a missing API key
+  becomes a cryptic runtime error. environs parses .env with marshmallow
+  casts and required fields so boot fails with a clear message.
+
+use_cases:
+  - Parse typed LLM API keys and timeouts from env at process start
+  - Load a .env file in local dev and real env in production
+  - Validate required settings before a worker pool starts
+  - Cast lists and JSON env values for feature flags
