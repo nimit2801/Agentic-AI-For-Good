@@ -1,0 +1,26 @@
+name: Flask-SQLAlchemy
+description: Flask-SQLAlchemy adds SQLAlchemy support to Flask with app-bound sessions, model mixins, and query helpers. It is the usual way to persist users, experiment metadata, and job state next to Flask model-serving and internal AI dashboards.
+tagline: SQLAlchemy integration for Flask apps
+
+github_url: https://github.com/pallets-eco/flask-sqlalchemy
+website_url: https://flask-sqlalchemy.readthedocs.io
+docs_url: https://flask-sqlalchemy.readthedocs.io
+install_command: pip install Flask-SQLAlchemy
+
+category: Dev Tools
+tags: [python, flask, sqlalchemy, orm, database, backend]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Flask has no ORM, so teams wire SQLAlchemy engines, sessions, and teardown by hand.
+  Flask-SQLAlchemy binds SQLAlchemy to the Flask app context, so request-scoped
+  sessions, models, and migrations stay consistent for dashboards, job tables, and
+  user stores around model APIs.
+
+use_cases:
+  - Persist experiment runs, prompts, and inference logs from a Flask API
+  - Store users and API keys for internal model-serving dashboards
+  - Query job and dataset metadata with SQLAlchemy models in Flask views
+  - Share a request-scoped database session across Flask blueprints

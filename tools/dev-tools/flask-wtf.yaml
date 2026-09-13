@@ -1,0 +1,26 @@
+name: Flask-WTF
+description: Flask-WTF integrates WTForms with Flask, including CSRF protection, file uploads, and reCAPTCHA. It is used to build settings forms, dataset upload pages, and admin screens on Flask dashboards that sit in front of models and pipelines.
+tagline: WTForms, CSRF, and file uploads for Flask
+
+github_url: https://github.com/pallets-eco/flask-wtf
+website_url: https://flask-wtf.readthedocs.io
+docs_url: https://flask-wtf.readthedocs.io
+install_command: pip install Flask-WTF
+
+category: Dev Tools
+tags: [python, flask, forms, csrf, wtforms, security]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  HTML forms in Flask dashboards need CSRF tokens, validation, and file handling or
+  they leak state-changing POSTs. Flask-WTF wires WTForms into Flask so prompt
+  editors, dataset uploads, and settings pages validate input and reject forged
+  requests without custom token code.
+
+use_cases:
+  - Add CSRF-protected settings forms to Flask model-serving dashboards
+  - Accept dataset and checkpoint file uploads with WTForms file fields
+  - Validate prompt and hyperparameter forms before kicking off a training job
+  - Protect admin POST routes on internal AI tools from cross-site request forgery

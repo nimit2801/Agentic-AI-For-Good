@@ -1,0 +1,26 @@
+name: Flask-Cors
+description: Flask-Cors adds Cross-Origin Resource Sharing headers to Flask so browser apps can call APIs on another origin. It is a common dependency when a React or Vue console talks to a Flask model-inference or agent-tool backend.
+tagline: CORS headers for Flask APIs
+
+github_url: https://github.com/corydolphin/flask-cors
+website_url: https://flask-cors.readthedocs.io/en/latest/
+docs_url: https://flask-cors.readthedocs.io/en/latest/
+install_command: pip install Flask-Cors
+
+category: Dev Tools
+tags: [python, flask, cors, http, api, frontend]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Browser dashboards hosted on a different origin than a Flask inference API are
+  blocked by the same-origin policy unless CORS headers are set correctly.
+  Flask-Cors applies those headers with origin, method, and credential options so
+  frontends can call model and agent endpoints without a reverse-proxy rewrite.
+
+use_cases:
+  - Allow a local frontend to call a Flask model-inference API during development
+  - Expose selected origins for a production AI dashboard talking to Flask
+  - Enable credentialed CORS for authenticated Flask agent-tool backends
+  - Restrict CORS methods and headers on public prediction endpoints
