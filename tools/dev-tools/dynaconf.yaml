@@ -1,0 +1,25 @@
+name: dynaconf
+description: Configuration management for Python that layers env vars, files, Redis, and vaults. dynaconf loads typed settings per environment so agent services keep secrets and feature flags out of code.
+tagline: Layered configuration for Python apps and environments
+
+github_url: https://github.com/dynaconf/dynaconf
+website_url: https://dynaconf.com
+docs_url: https://www.dynaconf.com
+install_command: pip install dynaconf
+
+category: Dev Tools
+tags: [python, config, env, secrets, settings, vault]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Agent stacks mix .env, YAML, and os.getenv with no environment overlay.
+  dynaconf layers files, env vars, Redis, and vaults with typed access so
+  local, staging, and prod settings stay consistent without if-env branches.
+
+use_cases:
+  - Load model names and API keys per environment from layered files
+  - Overlay CI secrets on a committed settings.toml without edits
+  - Pull feature flags from Redis for a running inference service
+  - Validate required settings at boot before a training job starts

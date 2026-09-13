@@ -1,0 +1,25 @@
+name: Python Fire
+description: Google library that turns any Python object into a CLI. Fire inspects functions, classes, and modules and generates flags, help, and nested commands so agent scripts expose a CLI without argparse boilerplate.
+tagline: Auto-generate CLIs from any Python object
+
+github_url: https://github.com/google/python-fire
+website_url: https://google.github.io/python-fire/
+docs_url: https://google.github.io/python-fire/
+install_command: pip install fire
+
+category: Dev Tools
+tags: [python, cli, argparse, google, scripting]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Training launchers and data scripts grow argparse trees that drift from
+  the functions they wrap. Python Fire reflects on the object itself and
+  builds flags, help, and nested commands so the CLI stays in sync with code.
+
+use_cases:
+  - Expose a training function as a CLI with typed flags
+  - Nested commands for dataset prep, train, and eval from one module
+  - Interactive REPL exploration of a pipeline object from the shell
+  - Quick internal tools without writing argparse parsers

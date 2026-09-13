@@ -1,0 +1,25 @@
+name: py-spy
+description: Sampling profiler for Python written in Rust. py-spy attaches to a running process with low overhead, so you can profile production agent workers and training jobs without restarting or modifying code.
+tagline: Low-overhead sampling profiler for live Python processes
+
+github_url: https://github.com/benfred/py-spy
+website_url: https://github.com/benfred/py-spy
+docs_url: https://github.com/benfred/py-spy
+install_command: pip install py-spy
+
+category: Dev Tools
+tags: [python, profiler, rust, sampling, performance, production]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  cProfile requires instrumenting and restarting the process, which is
+  unsafe on live GPU jobs. py-spy samples from the outside in Rust so you
+  can see where a stuck agent or trainer spends time without downtime.
+
+use_cases:
+  - Attach to a hung training worker and dump a flame graph
+  - Sample a production FastAPI inference process with low overhead
+  - Record wall-clock vs CPU time for data-loader bottlenecks
+  - Profile a multiprocess Ray or Celery worker without code changes

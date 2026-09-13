@@ -1,0 +1,25 @@
+name: memory-profiler
+description: Line-by-line memory monitor for Python. memory-profiler reports RSS growth per line and can plot usage over time so leaks in data pipelines and training loops are visible without a full heap dump.
+tagline: Line-by-line memory usage for Python code
+
+github_url: https://github.com/pythonprofilers/memory_profiler
+website_url: https://github.com/pythonprofilers/memory_profiler
+docs_url: https://github.com/pythonprofilers/memory_profiler
+install_command: pip install memory-profiler
+
+category: Dev Tools
+tags: [python, profiler, memory, debugging, performance]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Training jobs OOM without a clear line that allocated the spike.
+  memory-profiler decorates functions and records RSS per line, plus
+  time-series plots, so you can see which transform grew the heap.
+
+use_cases:
+  - Decorate a dataset transform to see per-line RSS growth
+  - Plot memory over time while a training epoch runs
+  - Compare list vs generator pipelines before a large ingest
+  - Find the line that retains tensors after a validation loop
