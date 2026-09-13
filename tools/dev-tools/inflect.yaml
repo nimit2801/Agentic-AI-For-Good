@@ -1,0 +1,25 @@
+name: inflect
+description: Python library that generates correct English plurals, ordinals, and indefinite articles, and converts numbers to words. Inflect keeps generated copy, labels, and logs grammatically correct without hand-written special cases.
+tagline: English plurals, ordinals, and number-to-words for Python
+
+github_url: https://github.com/jaraco/inflect
+website_url: https://pypi.org/project/inflect
+docs_url: https://github.com/jaraco/inflect
+install_command: pip install inflect
+
+category: Dev Tools
+tags: [python, nlp, text, plurals, i18n, grammar]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Agent UIs, eval reports, and dataset labels hard-code "1 item" vs "N items"
+  and ordinal ranks with ad-hoc ifs. Inflect produces correct English plurals,
+  articles, and number words so generated text stays grammatical at any count.
+
+use_cases:
+  - Pluralize metric names in eval dashboards and CLI summaries
+  - Convert rank numbers to ordinals in leaderboard copy
+  - Generate grammatically correct log lines for batch job counts
+  - Turn numeric quantities into words in report templates

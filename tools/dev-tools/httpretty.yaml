@@ -1,0 +1,25 @@
+name: HTTPretty
+description: Python HTTP mock that intercepts requests at the socket layer. HTTPretty fakes the socket module so urllib, Requests, and other clients can be tested without a real network.
+tagline: Socket-level HTTP mocking for Python tests
+
+github_url: https://github.com/gabrielfalcao/HTTPretty
+website_url: https://httpretty.readthedocs.org
+docs_url: https://httpretty.readthedocs.org
+install_command: pip install httpretty
+
+category: Dev Tools
+tags: [python, testing, http, mock, sockets, unit-tests]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  HTTP clients besides Requests leak onto the real network in tests, or each
+  library needs its own mock. HTTPretty intercepts at the socket so urllib,
+  Requests, and similar clients can be stubbed with one fixture.
+
+use_cases:
+  - Mock urllib and Requests together in a single test fixture
+  - Fake embedding and model HTTP APIs without starting a local server
+  - Record and replay HTTP traffic for offline CI
+  - Assert socket-level request paths from mixed HTTP clients

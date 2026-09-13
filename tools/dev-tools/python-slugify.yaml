@@ -1,0 +1,26 @@
+name: python-slugify
+description: Unicode-aware slug generator for Python. Converts titles, filenames, and user input into URL-safe slugs with transliteration, custom separators, and stop-word handling.
+tagline: Unicode slugs for URLs, filenames, and IDs
+
+github_url: https://github.com/un33k/python-slugify
+website_url: https://github.com/un33k/python-slugify
+docs_url: https://github.com/un33k/python-slugify
+install_command: pip install python-slugify
+
+category: Dev Tools
+tags: [python, slug, unicode, urls, filenames, text]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Dataset names, experiment IDs, and artifact paths often include Unicode,
+  punctuation, or spaces that break URLs and filesystems. python-slugify
+  turns those strings into ASCII-safe slugs with transliteration so pipelines
+  can name objects consistently without hand-rolled regex.
+
+use_cases:
+  - Slugify dataset and experiment names before writing object-store keys
+  - Generate URL paths for model cards and eval report pages
+  - Normalize uploaded filenames in data ingestion APIs
+  - Build unique but readable IDs from multilingual titles

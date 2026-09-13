@@ -1,0 +1,26 @@
+name: plumbum
+description: Python library of shell combinators for local and remote commands. Plumbum treats binaries as first-class objects with piping, redirection, and SSH, so CLI pipelines stay in Python instead of brittle shell strings.
+tagline: Shell combinators for local and remote Python CLIs
+
+github_url: https://github.com/tomerfiliba/plumbum
+website_url: https://plumbum.readthedocs.io
+docs_url: https://plumbum.readthedocs.io
+install_command: pip install plumbum
+
+category: Dev Tools
+tags: [python, shell, cli, ssh, piping, devops]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Training and data jobs still glue ffmpeg, git, and cluster tools with
+  subprocess plus quoted shell strings. Plumbum models commands as objects
+  with pipes, redirections, and SSH so those pipelines stay typed Python
+  instead of fragile one-liners.
+
+use_cases:
+  - Pipe ffmpeg and python steps in a dataset prep CLI without subprocess quoting
+  - Run git and docker commands on a remote GPU box over SSH from Python
+  - Build a training launcher that composes local tools with typed flags
+  - Capture stdout and exit codes from chained shell tools in eval scripts
