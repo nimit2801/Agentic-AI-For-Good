@@ -1,0 +1,27 @@
+name: Prompt Toolkit
+description: Python library for building interactive command-line applications with syntax highlighting, autocompletion, multiline editing, and full-screen TUIs, used by IPython, ptpython, and many ML CLIs.
+tagline: Build powerful interactive Python command-line apps
+
+github_url: https://github.com/prompt-toolkit/python-prompt-toolkit
+website_url: https://python-prompt-toolkit.readthedocs.io/
+docs_url: https://python-prompt-toolkit.readthedocs.io/
+install_command: pip install prompt_toolkit
+
+category: Dev Tools
+tags: [python, cli, tui, repl, terminal, autocomplete]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Stock input() and argparse give you a dead prompt. Training jobs, agent
+  shells, and data CLIs need completion, history, vi/emacs bindings, and
+  syntax highlighting. Prompt Toolkit is the library behind IPython's
+  prompt, so you can ship the same class of interactive UX without writing
+  a terminal emulator.
+
+use_cases:
+  - Build a REPL for querying models, vector stores, or agent traces
+  - Add tab-completion and history to a training or eval CLI
+  - Ship a full-screen TUI for dataset inspection or job monitoring
+  - Embed a syntax-highlighted prompt in an ML ops tool the way IPython does

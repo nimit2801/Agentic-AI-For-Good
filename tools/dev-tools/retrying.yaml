@@ -1,0 +1,24 @@
+name: retrying
+description: An Apache-2.0 Python library of decorators that add retry behavior with exponential backoff, jitter, and stop conditions to almost any callable, useful around flaky APIs and I/O.
+tagline: General-purpose retry decorators for Python
+
+github_url: https://github.com/rholder/retrying
+install_command: pip install retrying
+
+category: Dev Tools
+tags: [python, retry, backoff, resilience, decorators, api]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  LLM APIs, scrapers, and object stores fail transiently. Hand-rolled
+  retry loops are inconsistent and easy to get wrong (no jitter, infinite
+  retries). retrying wraps any callable with configurable attempts,
+  exponential backoff, and exception filters so jobs survive blips.
+
+use_cases:
+  - Retry LLM and embedding API calls that return 429 or 5xx
+  - Wrap file and object-store downloads that fail on transient network errors
+  - Add backoff to web crawlers hitting rate limits
+  - Decorate flaky test fixtures or data-load steps in training jobs

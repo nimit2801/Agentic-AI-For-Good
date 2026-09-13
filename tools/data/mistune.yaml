@@ -1,0 +1,26 @@
+name: mistune
+description: A fast Python Markdown parser with pluggable renderers and plugins. mistune converts Markdown to HTML or custom AST output and is designed to be both strict and extensible for docs and RAG ingest.
+tagline: Fast Python Markdown parser with plugins
+
+github_url: https://github.com/lepture/mistune
+website_url: https://mistune.lepture.com/
+docs_url: https://mistune.readthedocs.io/
+install_command: pip install mistune
+
+category: Data
+tags: [python, markdown, parsing, html, rag, documentation]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Markdown is the default format for READMEs, wikis, and many RAG corpora,
+  but naive regex converters break on nested blocks and custom directives.
+  mistune is a fast, plugin-based parser that emits HTML or a custom AST
+  so ingest pipelines can chunk, sanitize, and render Markdown reliably.
+
+use_cases:
+  - Convert Markdown docs into HTML or an AST before chunking for RAG
+  - Render README and wiki corpora as structured text for embeddings
+  - Add plugins for tables, footnotes, or custom directives in a docs pipeline
+  - Sanitize and normalize user-authored Markdown before storing it
