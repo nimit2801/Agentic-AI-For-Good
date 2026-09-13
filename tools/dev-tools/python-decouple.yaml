@@ -1,0 +1,25 @@
+name: python-decouple
+description: Strict separation of config from code for Python apps. python-decouple reads env vars, .env files, and INI with typed casts so secrets and environment settings stay out of source.
+tagline: Env vars and .env files without mixing config into code
+
+github_url: https://github.com/HBNetwork/python-decouple
+website_url: https://github.com/HBNetwork/python-decouple
+docs_url: https://github.com/HBNetwork/python-decouple
+install_command: pip install python-decouple
+
+category: Dev Tools
+tags: [python, config, env, dotenv, secrets, settings]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Agent services still import API keys and hostnames from modules that get
+  committed. python-decouple loads env, .env, and INI with casts and defaults
+  so config stays outside code across local, CI, and production.
+
+use_cases:
+  - Load OPENAI_API_KEY and model names from env in an agent service
+  - Cast boolean and integer flags for training jobs without os.getenv noise
+  - Share a .env template while keeping production values in the host env
+  - Switch database URLs per environment without editing Python modules
