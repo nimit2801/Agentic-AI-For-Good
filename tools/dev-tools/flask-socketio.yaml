@@ -1,0 +1,26 @@
+name: Flask-SocketIO
+description: Flask-SocketIO adds Socket.IO to Flask so servers can push events to browsers over WebSockets with long-polling fallback. It is used for streaming tokens, job progress, and live logs from model-serving and agent dashboards.
+tagline: Socket.IO realtime events for Flask apps
+
+github_url: https://github.com/miguelgrinberg/Flask-SocketIO
+website_url: https://flask-socketio.readthedocs.io
+docs_url: https://flask-socketio.readthedocs.io
+install_command: pip install Flask-SocketIO
+
+category: Dev Tools
+tags: [python, flask, websocket, socketio, realtime, streaming]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Flask request-response cannot stream token-by-token inference or live job status
+  without polling. Flask-SocketIO gives Flask a Socket.IO server so dashboards
+  receive progress, logs, and partial model output as events instead of spinning
+  on HTTP.
+
+use_cases:
+  - Stream LLM tokens and agent traces to a Flask dashboard over Socket.IO
+  - Push training-job progress and logs to operators without polling
+  - Broadcast dataset-processing status to multiple browser clients
+  - Build collaborative annotation or prompt-editing UIs on Flask
