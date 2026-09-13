@@ -1,0 +1,26 @@
+name: chardet
+description: chardet is a Python character-encoding detector that guesses the encoding of byte sequences so pipelines can decode web crawls, emails, and files when charset headers are missing or wrong.
+tagline: Universal character encoding detector for Python
+
+github_url: https://github.com/chardet/chardet
+website_url: https://chardet.readthedocs.io
+docs_url: https://chardet.readthedocs.io
+install_command: pip install chardet
+
+category: Data
+tags: [python, encoding, unicode, text, parsing, nlp]
+pricing: free
+is_open_source: true
+license: 0BSD
+
+problem_solved: |
+  Bytes from the web, email, and legacy files often have no charset header
+  or a lying one. Decoding as UTF-8 then fails or produces garbage. chardet
+  inspects the bytes, reports a likely encoding (and language), and lets
+  data pipelines decode mixed sources before NLP, RAG ingest, or training.
+
+use_cases:
+  - Detect encoding of downloaded files before loading them into a DataFrame
+  - Decode email and web-crawl bodies that omit or mislabel charset
+  - Preprocess mixed-encoding corpora so tokenizers see real Unicode text
+  - Stream-detect encoding on large binary blobs without loading the whole file
