@@ -1,0 +1,26 @@
+name: Flask-Migrate
+description: Flask-Migrate wraps Alembic so Flask apps can generate and apply SQLAlchemy schema migrations. Teams shipping model dashboards and job databases get versioned schema changes without running Alembic as a separate project.
+tagline: Alembic database migrations for Flask-SQLAlchemy
+
+github_url: https://github.com/miguelgrinberg/Flask-Migrate
+website_url: https://flask-migrate.readthedocs.io
+docs_url: https://flask-migrate.readthedocs.io
+install_command: pip install Flask-Migrate
+
+category: Dev Tools
+tags: [python, flask, alembic, migrations, sqlalchemy, database]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Schema changes for Flask apps that store users, jobs, and experiment metadata are
+  easy to apply by hand and hard to replay. Flask-Migrate exposes Alembic through
+  Flask CLI commands so migrate, upgrade, and downgrade stay in the same project as
+  the models.
+
+use_cases:
+  - Generate Alembic revisions when Flask-SQLAlchemy models for jobs or users change
+  - Apply database upgrades in CI before deploying a Flask model-serving app
+  - Downgrade a schema during rollback of an internal AI dashboard release
+  - Keep migration history next to Flask application code instead of a separate repo

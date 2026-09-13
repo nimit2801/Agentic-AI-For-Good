@@ -1,0 +1,26 @@
+name: Flask-Caching
+description: Flask-Caching is a Flask extension for memoizing view and function results with backends such as Redis, Memcached, and simple in-memory caches. Teams use it to cache expensive inference, embedding, and template responses on Flask APIs.
+tagline: View and function caching for Flask apps
+
+github_url: https://github.com/pallets-eco/flask-caching
+website_url: https://flask-caching.readthedocs.io
+docs_url: https://flask-caching.readthedocs.io
+install_command: pip install Flask-Caching
+
+category: Dev Tools
+tags: [python, flask, cache, redis, memcached, performance]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Repeated Flask view calls for embeddings, retrieval snippets, or rendered pages
+  hit the model or database every time. Flask-Caching memoizes functions and views
+  with a configurable backend so hot responses skip duplicate work without a custom
+  cache layer.
+
+use_cases:
+  - Cache embedding or retrieval results on Flask endpoints that repeat the same query
+  - Memoize expensive dashboard views that aggregate experiment metrics
+  - Use Redis as a shared cache across Flask workers serving inference APIs
+  - Set timeouts so cached model responses expire when source data changes
