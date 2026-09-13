@@ -1,0 +1,26 @@
+name: Bottle
+description: Bottle is a fast, single-file Python micro-framework for web apps and APIs with no dependencies beyond the standard library. Routing, templates, and a built-in HTTP server live in one file, making it a common choice for wrapping ML models, serving inference endpoints, and shipping tiny internal tools.
+tagline: Single-file Python micro-framework for tiny APIs and model servers
+
+github_url: https://github.com/bottlepy/bottle
+website_url: https://bottlepy.org/
+docs_url: https://bottlepy.org/docs/dev/
+install_command: pip install bottle
+
+category: Dev Tools
+tags: [python, web-framework, api, micro-framework, model-serving, backend]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Serving a model or webhook often does not need Flask, FastAPI, or a dependency tree.
+  Bottle packs routing, templates, request parsing, and a development server into one
+  file with zero required packages, so teams can wrap inference functions, health checks,
+  and internal tools as HTTP endpoints without a virtualenv full of web-stack extras.
+
+use_cases:
+  - Wrap a local ML model as a tiny REST endpoint with a single Python file
+  - Ship internal webhooks that trigger training jobs or data pipeline steps
+  - Prototype inference APIs on constrained hosts where extra dependencies are costly
+  - Serve simple HTML dashboards and JSON health checks next to a model process

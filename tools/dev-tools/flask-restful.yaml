@@ -1,0 +1,26 @@
+name: Flask-RESTful
+description: Flask-RESTful is a Flask extension for building REST APIs with resource classes, request parsing, and output marshalling. It adds a thin, opinionated layer on Flask so ML and backend teams can expose model inference, agent tools, and pipeline webhooks as clean REST resources without rolling custom serializers.
+tagline: Resource-oriented REST APIs on top of Flask
+
+github_url: https://github.com/flask-restful/flask-restful
+website_url: https://flask-restful.readthedocs.io
+docs_url: https://flask-restful.readthedocs.io
+install_command: pip install flask-restful
+
+category: Dev Tools
+tags: [python, flask, rest, api, backend, model-serving]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Flask leaves REST structure, input parsing, and response shaping to the application.
+  Flask-RESTful maps HTTP methods to Resource classes, parses arguments, and marshalls
+  output so model-serving and agent-tool APIs stay consistent without ad-hoc jsonify
+  helpers in every route.
+
+use_cases:
+  - Expose ML model inference as Flask Resource classes with typed request arguments
+  - Build versioned REST APIs for agent tools, embeddings, and pipeline webhooks
+  - Marshall prediction responses into stable JSON fields for downstream clients
+  - Add argument parsing and error handling to existing Flask model-serving apps

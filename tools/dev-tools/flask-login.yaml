@@ -1,0 +1,26 @@
+name: Flask-Login
+description: Flask-Login provides user session management for Flask, covering login, logout, session persistence, and remember-me cookies. It keeps auth out of route handlers so AI dashboards, model-serving consoles, and internal tools can gate access without reinventing session cookies.
+tagline: User session management for Flask apps
+
+github_url: https://github.com/maxcountryman/flask-login
+website_url: https://flask-login.readthedocs.io/
+docs_url: https://flask-login.readthedocs.io/
+install_command: pip install Flask-Login
+
+category: Dev Tools
+tags: [python, flask, auth, sessions, security, backend]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Internal AI dashboards and model consoles need login state, but rolling session
+  cookies, remember-me tokens, and current-user helpers is easy to get wrong.
+  Flask-Login stores a user id in the session, reloads the user, and protects views
+  so Flask apps can require auth without a custom security stack.
+
+use_cases:
+  - Gate Flask model-serving dashboards behind login_required views
+  - Persist user sessions across browser restarts with remember-me cookies
+  - Attach the current user to Flask request context for audit logs on inference calls
+  - Add logout and anonymous-user handling to internal data-science web tools

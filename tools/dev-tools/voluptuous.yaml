@@ -1,0 +1,26 @@
+name: voluptuous
+description: Voluptuous is a Python data validation library for nested dictionaries, lists, and scalar types using declarative schemas. It checks configs, API payloads, and pipeline inputs so ML jobs fail fast on bad data instead of failing mid-run.
+tagline: Declarative Python schemas for nested data validation
+
+github_url: https://github.com/alecthomas/voluptuous
+website_url: https://pypi.org/project/voluptuous
+docs_url: https://github.com/alecthomas/voluptuous
+install_command: pip install voluptuous
+
+category: Dev Tools
+tags: [python, validation, schema, config, data-quality, api]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Training jobs, agent configs, and API payloads often arrive as nested dicts with
+  missing keys, wrong types, or extra fields. Voluptuous validates that structure
+  with a schema you can read like the data itself, so bad input fails at the edge
+  instead of crashing a long-running pipeline.
+
+use_cases:
+  - Validate YAML and JSON config files before launching training or inference jobs
+  - Check webhook and API payloads in Flask or Bottle handlers before calling a model
+  - Enforce required fields and types on feature dictionaries entering a data pipeline
+  - Coerce string config values into ints, bools, and nested objects at process start
