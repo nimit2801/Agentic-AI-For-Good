@@ -1,0 +1,25 @@
+name: Flask-Limiter
+description: Flask-Limiter adds rate limiting to Flask routes using Redis, Memcached, or in-memory storage. It protects public model-inference and agent-tool endpoints from burst traffic without a separate API gateway.
+tagline: Rate limiting for Flask routes
+
+github_url: https://github.com/alisaifee/flask-limiter
+website_url: https://flask-limiter.readthedocs.org
+docs_url: https://flask-limiter.readthedocs.org
+install_command: pip install Flask-Limiter
+
+category: Dev Tools
+tags: [python, flask, rate-limit, redis, api, security]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Public Flask inference APIs get hammered by retries, scrapers, and shared keys.
+  Flask-Limiter decorates routes with per-IP or per-key quotas backed by Redis so
+  expensive model calls fail with 429 before they exhaust GPU or token budget.
+
+use_cases:
+  - Cap requests per minute on Flask model-inference endpoints
+  - Apply stricter limits to unauthenticated agent-tool routes
+  - Share Redis-backed counters across Flask workers serving the same API
+  - Return 429 with retry headers when a client exceeds its quota

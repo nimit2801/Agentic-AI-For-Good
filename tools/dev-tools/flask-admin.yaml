@@ -1,0 +1,26 @@
+name: Flask-Admin
+description: Flask-Admin is an extensible admin interface for Flask that generates CRUD screens for SQLAlchemy, MongoEngine, and other backends. Teams use it to inspect users, jobs, datasets, and experiment rows without writing a custom back office.
+tagline: Extensible admin CRUD UI for Flask
+
+github_url: https://github.com/pallets-eco/flask-admin
+website_url: https://flask-admin.readthedocs.io
+docs_url: https://flask-admin.readthedocs.io
+install_command: pip install Flask-Admin
+
+category: Dev Tools
+tags: [python, flask, admin, crud, sqlalchemy, dashboard]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Internal AI products need a way to browse and edit users, jobs, and dataset
+  rows, but custom admin pages take longer than the API itself. Flask-Admin
+  generates CRUD views from models with auth hooks, so operators can inspect
+  and fix data without a separate admin app.
+
+use_cases:
+  - Browse and edit Flask-SQLAlchemy models for jobs, users, and experiments
+  - Give operators a CRUD UI over dataset and prompt tables
+  - Restrict admin views with Flask-Login so only staff can mutate records
+  - Customize list filters and formatters for inference-log tables
