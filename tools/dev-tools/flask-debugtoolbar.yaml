@@ -1,0 +1,26 @@
+name: Flask-DebugToolbar
+description: Flask-DebugToolbar overlays a request debugger on Flask pages with timing, SQL, config, and template panels. Teams building model dashboards and agent consoles can inspect slow queries and template context in development without adding a separate APM agent.
+tagline: In-browser debug toolbar for Flask
+
+github_url: https://github.com/pallets-eco/flask-debugtoolbar
+website_url: https://flask-debugtoolbar.readthedocs.io
+docs_url: https://flask-debugtoolbar.readthedocs.io
+install_command: pip install Flask-DebugToolbar
+
+category: Dev Tools
+tags: [python, flask, debugging, profiling, development, sql]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Flask apps that render ML dashboards hide slow SQL, template work, and config
+  mistakes until production. Flask-DebugToolbar injects a request overlay in
+  development so engineers can inspect timing, queries, and template context
+  without wiring a full APM stack for local work.
+
+use_cases:
+  - Profile slow SQL on Flask pages that list training jobs and datasets
+  - Inspect template context when rendering model-eval dashboards
+  - Catch config mistakes in local Flask agent-console development
+  - Compare request timing across Flask routes that call inference backends

@@ -1,0 +1,26 @@
+name: Flask-Dance
+description: Flask-Dance implements OAuth 1 and OAuth 2 login for Flask using requests-oauthlib, with built-in providers such as GitHub, Google, and Slack. AI product teams can add social or GitHub login to model dashboards without writing OAuth redirect flows from scratch.
+tagline: OAuth login for Flask with style
+
+github_url: https://github.com/singingwolfboy/flask-dance
+website_url: https://flask-dance.readthedocs.io
+docs_url: https://flask-dance.readthedocs.io
+install_command: pip install Flask-Dance
+
+category: Dev Tools
+tags: [python, flask, oauth, auth, github, login]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Flask apps that front model consoles often need GitHub or Google login, but
+  OAuth redirect, token, and callback code is easy to get wrong. Flask-Dance
+  wraps requests-oauthlib and ships provider blueprints so Flask routes can
+  complete the OAuth dance without a custom client.
+
+use_cases:
+  - Add GitHub OAuth login to a Flask agent or model dashboard
+  - Let internal users sign in with Google on Flask ML consoles
+  - Store OAuth tokens for calling GitHub APIs from Flask automation tools
+  - Drop in Slack or other provider blueprints for team-gated Flask apps
