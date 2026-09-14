@@ -1,0 +1,26 @@
+name: Flask-Babel
+description: Flask-Babel adds i18n and l10n to Flask using Babel and pytz, covering translations, locale selection, and date or number formatting. Teams shipping AI dashboards to mixed-language users can localize UI strings and timestamps without a custom gettext stack.
+tagline: i18n and l10n for Flask apps
+
+github_url: https://github.com/python-babel/flask-babel
+website_url: https://python-babel.github.io/flask-babel/
+docs_url: https://python-babel.github.io/flask-babel/
+install_command: pip install Flask-Babel
+
+category: Dev Tools
+tags: [python, flask, i18n, l10n, babel, localization]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Internal AI dashboards and model consoles often ship to mixed-language teams,
+  but Flask has no built-in translation or locale-aware formatting. Flask-Babel
+  wires Babel gettext, locale selection, and timezone-aware dates so Flask apps
+  can localize strings and timestamps without a custom i18n layer.
+
+use_cases:
+  - Localize Flask model-serving dashboards for mixed-language ML teams
+  - Format job timestamps and metrics in the user's locale and timezone
+  - Extract and compile translation catalogs for agent console UI strings
+  - Select locale from Accept-Language headers on public inference UIs

@@ -1,0 +1,26 @@
+name: Flask-Smorest
+description: Flask-Smorest builds auto-documented REST APIs on Flask using marshmallow schemas for request and response validation. It is database-agnostic and generates OpenAPI docs, so ML backends can expose typed inference and agent-tool endpoints without hand-writing serializers or Swagger YAML.
+tagline: Marshmallow REST APIs with OpenAPI on Flask
+
+github_url: https://github.com/marshmallow-code/flask-smorest
+website_url: https://flask-smorest.readthedocs.io
+docs_url: https://flask-smorest.readthedocs.io
+install_command: pip install flask-smorest
+
+category: Dev Tools
+tags: [python, flask, rest, api, marshmallow, openapi]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  REST APIs for models and agents need input validation, output shaping, and
+  OpenAPI docs, but wiring those by hand drifts from the live code. Flask-Smorest
+  uses marshmallow schemas as the source of truth so Flask services stay typed,
+  documented, and database-agnostic without a separate spec file.
+
+use_cases:
+  - Validate inference request payloads with marshmallow schemas on Flask routes
+  - Auto-generate OpenAPI docs for agent-tool and embedding APIs
+  - Return consistently serialized prediction objects to downstream clients
+  - Build database-agnostic REST layers in front of model-serving services
