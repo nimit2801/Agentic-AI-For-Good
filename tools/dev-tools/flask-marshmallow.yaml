@@ -1,0 +1,26 @@
+name: Flask-Marshmallow
+description: Flask-Marshmallow integrates marshmallow schemas with Flask for request parsing, response serialization, and URL generation. ML backends use it to validate inference payloads and emit typed JSON without writing ad-hoc serializers in every route.
+tagline: Marshmallow schemas for Flask APIs
+
+github_url: https://github.com/marshmallow-code/flask-marshmallow
+website_url: https://flask-marshmallow.readthedocs.io
+docs_url: https://flask-marshmallow.readthedocs.io
+install_command: pip install flask-marshmallow
+
+category: Dev Tools
+tags: [python, flask, marshmallow, serialization, api, validation]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Flask APIs that serve models still need request validation and consistent JSON
+  output, but dumping dicts by hand drifts and misses type checks. Flask-Marshmallow
+  binds marshmallow schemas to Flask so inference and agent-tool routes parse
+  input and serialize output from one schema definition.
+
+use_cases:
+  - Validate inference request bodies with marshmallow schemas on Flask routes
+  - Serialize prediction objects to stable JSON for downstream agent clients
+  - Generate resource URLs inside serialized ML job and dataset responses
+  - Share schema definitions between Flask views and background pipeline workers

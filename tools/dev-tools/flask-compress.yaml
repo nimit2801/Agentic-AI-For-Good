@@ -1,0 +1,25 @@
+name: Flask-Compress
+description: Flask-Compress gzip or Brotli-compresses Flask responses so JSON payloads, OpenAPI docs, and dashboard assets ship smaller over the wire. Model-serving APIs that return embeddings, traces, or large prediction objects can cut bandwidth without a reverse-proxy-only setup.
+tagline: Gzip and Brotli compression for Flask responses
+
+github_url: https://github.com/colour-science/flask-compress
+website_url: https://github.com/colour-science/flask-compress
+install_command: pip install Flask-Compress
+
+category: Dev Tools
+tags: [python, flask, compression, gzip, brotli, performance]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Inference and tracing APIs often return large JSON payloads that waste bandwidth
+  when Flask sends them uncompressed. Flask-Compress negotiates gzip or Brotli
+  and compresses responses in-process so Flask services shrink traffic without
+  requiring NGINX or another proxy for every environment.
+
+use_cases:
+  - Gzip large embedding or prediction JSON from Flask inference routes
+  - Brotli-compress OpenAPI docs and dashboard assets on Flask apps
+  - Cut bandwidth for tracing and eval payloads returned to agent clients
+  - Enable response compression in local and container Flask deploys without NGINX

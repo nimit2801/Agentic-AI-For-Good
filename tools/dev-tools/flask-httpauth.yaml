@@ -1,0 +1,26 @@
+name: Flask-HTTPAuth
+description: Flask-HTTPAuth adds Basic, Digest, and token HTTP authentication to Flask routes with a small decorator API. Teams exposing model inference and agent tools can require credentials or API tokens without standing up a full session or OAuth stack.
+tagline: Basic, Digest, and token auth for Flask routes
+
+github_url: https://github.com/miguelgrinberg/Flask-HTTPAuth
+website_url: https://flask-httpauth.readthedocs.io
+docs_url: https://flask-httpauth.readthedocs.io
+install_command: pip install Flask-HTTPAuth
+
+category: Dev Tools
+tags: [python, flask, auth, http, api, security]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Internal inference APIs and agent-tool endpoints often need HTTP Basic, Digest,
+  or bearer-token checks, but Flask has no built-in auth. Flask-HTTPAuth wraps
+  those schemes in decorators so Flask routes can require credentials without a
+  custom WSGI auth layer or a full user-session system.
+
+use_cases:
+  - Require HTTP Basic auth on Flask model-serving admin routes
+  - Protect agent-tool endpoints with bearer tokens via HTTPTokenAuth
+  - Add Digest auth to internal data-pipeline Flask webhooks
+  - Combine multiple auth schemes on a single Flask inference API
