@@ -1,0 +1,26 @@
+name: Flask-Session
+description: Flask-Session stores Flask sessions on the server using Redis, Memcached, MongoDB, SQLAlchemy, or the filesystem instead of unsigned client cookies. ML dashboards and agent consoles can keep larger session state, such as job ids and user prefs, without stuffing it into cookies.
+tagline: Server-side sessions for Flask apps
+
+github_url: https://github.com/pallets-eco/flask-session
+website_url: https://flask-session.readthedocs.io
+docs_url: https://flask-session.readthedocs.io
+install_command: pip install Flask-Session
+
+category: Dev Tools
+tags: [python, flask, sessions, redis, backend, caching]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Flask's default cookie sessions are size-limited and visible to the client, so
+  dashboards cannot safely store job ids, dataset filters, or auth extras. Flask-Session
+  moves session data to Redis, Memcached, MongoDB, SQLAlchemy, or disk so Flask
+  apps keep server-side state without a custom session backend.
+
+use_cases:
+  - Store training-job and inference-run ids in Redis-backed Flask sessions
+  - Keep ML dashboard filters and user prefs off the client cookie
+  - Share session state across Flask workers with Memcached or MongoDB
+  - Persist server-side sessions for agent consoles that exceed cookie size limits
