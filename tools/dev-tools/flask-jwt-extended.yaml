@@ -1,0 +1,27 @@
+name: Flask-JWT-Extended
+description: Flask-JWT-Extended adds JSON Web Token auth to Flask with access and refresh tokens, token blocklisting, and claim decorators. ML teams use it to protect inference APIs, agent tool endpoints, and internal dashboards without rolling a custom JWT stack.
+tagline: JWT authentication for Flask APIs
+
+github_url: https://github.com/vimalloc/flask-jwt-extended
+website_url: https://flask-jwt-extended.readthedocs.io/en/stable/
+docs_url: https://flask-jwt-extended.readthedocs.io/en/stable/
+install_command: pip install Flask-JWT-Extended
+
+category: Dev Tools
+tags: [python, flask, jwt, auth, api, security]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Serving models and agent tools over HTTP needs token auth, but hand-rolled JWT
+  create, refresh, and revoke flows are easy to get wrong. Flask-JWT-Extended
+  issues access and refresh tokens, loads claims in request context, and
+  protects views so Flask inference APIs can require auth without a custom
+  security layer.
+
+use_cases:
+  - Protect Flask model-inference endpoints with JWT access tokens
+  - Issue refresh tokens for long-running agent clients that call tool APIs
+  - Blocklist stolen tokens after logout from an ML ops dashboard
+  - Require custom JWT claims such as tenant or model-scope on prediction routes

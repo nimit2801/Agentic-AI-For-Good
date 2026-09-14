@@ -1,0 +1,26 @@
+name: Flask-RESTX
+description: Flask-RESTX is a Flask framework for REST APIs with resource classes, request parsing, marshalling, and auto-generated Swagger docs. It is the maintained fork of Flask-RESTPlus, used to expose model inference, agent tools, and pipeline webhooks as documented REST resources.
+tagline: Documented REST APIs on Flask with Swagger
+
+github_url: https://github.com/python-restx/flask-restx
+website_url: https://flask-restx.readthedocs.io/en/latest/
+docs_url: https://flask-restx.readthedocs.io/en/latest/
+install_command: pip install flask-restx
+
+category: Dev Tools
+tags: [python, flask, rest, api, swagger, model-serving]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Flask leaves REST structure and API docs to the application. Flask-RESTX maps
+  HTTP methods to Resource classes, parses arguments, marshalls output, and
+  generates Swagger so model-serving and agent-tool APIs stay consistent and
+  documented without ad-hoc jsonify helpers in every route.
+
+use_cases:
+  - Expose ML model inference as Flask Resource classes with Swagger docs
+  - Build versioned REST APIs for agent tools, embeddings, and pipeline webhooks
+  - Marshall prediction responses into stable JSON fields for downstream clients
+  - Replace unmaintained Flask-RESTPlus apps with a documented REST layer

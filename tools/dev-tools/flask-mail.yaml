@@ -1,0 +1,26 @@
+name: Flask-Mail
+description: Flask-Mail adds SMTP email sending to Flask applications with message objects, attachments, and optional async send. AI product teams use it to deliver signup confirmations, alert digests, and pipeline failure notices from the same Flask app that serves models or agent dashboards.
+tagline: SMTP email sending for Flask apps
+
+github_url: https://github.com/pallets-eco/flask-mail
+website_url: https://flask-mail.readthedocs.io
+docs_url: https://flask-mail.readthedocs.io
+install_command: pip install Flask-Mail
+
+category: Dev Tools
+tags: [python, flask, email, smtp, notifications, backend]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Flask apps that serve models or agent dashboards still need to send email for
+  signups, alerts, and job failures, but raw SMTP clients scatter credentials and
+  MIME code across routes. Flask-Mail wraps SMTP in Flask config so messages,
+  attachments, and bulk sends stay in one extension.
+
+use_cases:
+  - Email users when a training or inference job finishes or fails
+  - Send signup and password-reset mail from Flask ML consoles
+  - Attach CSV or report files to digest emails from pipeline dashboards
+  - Fire SMTP alerts from Flask webhooks that watch agent runs
