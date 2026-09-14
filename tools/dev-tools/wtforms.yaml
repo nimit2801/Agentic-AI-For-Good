@@ -1,0 +1,26 @@
+name: WTForms
+description: WTForms is a flexible Python library for form validation and rendering, independent of any web framework and used heavily with Flask-WTF. Teams building ML consoles can validate upload, config, and job-submit forms in Python instead of trusting raw request dicts.
+tagline: Form validation and rendering for Python
+
+github_url: https://github.com/pallets-eco/wtforms
+website_url: https://wtforms.readthedocs.io
+docs_url: https://wtforms.readthedocs.io
+install_command: pip install WTForms
+
+category: Dev Tools
+tags: [python, forms, validation, flask, html, backend]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  HTML forms for dataset upload, training config, and job submit are easy to
+  accept as raw dicts and hard to validate consistently. WTForms defines fields,
+  validators, and widgets in Python so Flask and other apps can reject bad input
+  before it reaches a training or inference pipeline.
+
+use_cases:
+  - Validate dataset-upload and training-config forms on Flask ML dashboards
+  - Render HTML widgets for job-submit forms in agent consoles
+  - Share field validators between Flask views and CLI job launchers
+  - Reject malformed numeric and file fields before kicking off training
