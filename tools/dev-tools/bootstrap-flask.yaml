@@ -1,0 +1,26 @@
+name: Bootstrap-Flask
+description: Bootstrap-Flask helpers render Bootstrap 4 and 5 components, forms, and macros in Flask Jinja templates. Teams shipping internal ML dashboards can get a consistent Bootstrap UI without copying CSS snippets into every template.
+tagline: Bootstrap 4 and 5 helpers for Flask
+
+github_url: https://github.com/helloflask/bootstrap-flask
+website_url: https://bootstrap-flask.readthedocs.io
+docs_url: https://bootstrap-flask.readthedocs.io
+install_command: pip install Bootstrap-Flask
+
+category: Dev Tools
+tags: [python, flask, bootstrap, ui, jinja, frontend]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Internal Flask dashboards for models and agents still need a consistent UI,
+  but copying Bootstrap markup into every Jinja template drifts. Bootstrap-Flask
+  ships macros and form helpers so Flask apps can render Bootstrap 4 or 5
+  components from one extension.
+
+use_cases:
+  - Render Bootstrap forms for training-job and dataset pages in Flask
+  - Drop Bootstrap nav and pagination macros into an ML ops dashboard
+  - Switch Flask templates between Bootstrap 4 and 5 without rewriting markup
+  - Style agent-console flash messages and tables with Bootstrap helpers

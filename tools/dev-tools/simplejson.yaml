@@ -1,0 +1,26 @@
+name: simplejson
+description: simplejson is a fast, extensible JSON encoder and decoder for Python, including the stdlib json module's original implementation with extra speedups. ML pipelines use it to serialize nested prediction objects, traces, and dataset records when they need encoding options beyond the standard library.
+tagline: Fast, extensible JSON for Python
+
+github_url: https://github.com/simplejson/simplejson
+website_url: https://simplejson.readthedocs.io/
+docs_url: https://simplejson.readthedocs.io/
+install_command: pip install simplejson
+
+category: Dev Tools
+tags: [python, json, serialization, encoding, data, backend]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Python's json module covers the common case, but pipelines that dump nested
+  predictions, traces, and dataset records often need C speedups, Decimal
+  support, or custom encoders. simplejson is the extensible encoder the stdlib
+  json module came from, so those jobs keep a drop-in JSON library with extras.
+
+use_cases:
+  - Serialize nested model predictions and traces with C speedups
+  - Encode Decimal and other numeric types in dataset export JSON
+  - Drop in as a faster json replacement in Flask inference APIs
+  - Decode large eval-result JSON files in Python data pipelines
