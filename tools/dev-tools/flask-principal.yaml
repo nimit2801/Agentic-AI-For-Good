@@ -1,0 +1,25 @@
+name: Flask-Principal
+description: Flask-Principal adds identity, permission, and Need/Permission checks to Flask so apps can authorize beyond login. ML dashboards can gate admin, dataset, and model-ops actions with named permissions instead of ad-hoc role if-statements in every view.
+tagline: Identity and permission management for Flask
+
+github_url: https://github.com/pallets-eco/flask-principal
+website_url: https://github.com/pallets-eco/flask-principal
+install_command: pip install Flask-Principal
+
+category: Dev Tools
+tags: [python, flask, auth, permissions, identity, security]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Flask-Login covers who the user is, not what they may do. Internal AI consoles
+  still need permission checks for admin, dataset, and model actions. Flask-Principal
+  models identity and named permissions so Flask views can require a Need without
+  scattering role if-statements across routes.
+
+use_cases:
+  - Gate model-deploy and dataset-delete actions behind named Flask permissions
+  - Attach identity to Flask sessions after login for ML ops dashboards
+  - Require admin Need on internal agent-console management routes
+  - Combine Flask-Login identity with permission checks on inference admin APIs

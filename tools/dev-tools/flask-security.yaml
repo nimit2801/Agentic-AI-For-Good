@@ -1,0 +1,26 @@
+name: Flask-Security
+description: Flask-Security adds login, registration, password reset, two-factor, and role-based access to Flask on top of Flask-Login and Flask-Principal. Teams shipping ML dashboards can get a full user-security stack instead of assembling auth views by hand.
+tagline: Full-stack auth and roles for Flask apps
+
+github_url: https://github.com/pallets-eco/flask-security
+website_url: https://flask-security.readthedocs.io
+docs_url: https://flask-security.readthedocs.io
+install_command: pip install Flask-Security
+
+category: Dev Tools
+tags: [python, flask, auth, security, roles, 2fa]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Internal AI products need signup, reset, roles, and often two-factor auth, but
+  wiring Flask-Login plus mail plus permissions is a full project. Flask-Security
+  bundles those flows so Flask dashboards can ship user security without a custom
+  auth application.
+
+use_cases:
+  - Add registration, login, and password reset to a Flask ML ops console
+  - Require two-factor auth on Flask routes that deploy or delete models
+  - Assign roles that gate dataset and agent-admin actions
+  - Send security emails from Flask apps that already use Flask-Mail
