@@ -1,0 +1,25 @@
+name: PyInstaller
+description: PyInstaller freezes Python programs into standalone executables by bundling the interpreter, dependencies, and data files. ML teams use it to ship inference CLIs and desktop tools to machines that do not have a Python environment.
+tagline: Freeze Python apps into standalone executables
+
+github_url: https://github.com/pyinstaller/pyinstaller
+website_url: https://www.pyinstaller.org
+docs_url: https://pyinstaller.org/en/stable/
+install_command: pip install pyinstaller
+
+category: Dev Tools
+tags: [python, packaging, executables, deployment, freeze, desktop]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  End users of an ML tool often cannot install Python, CUDA wheels, or a
+  virtualenv. PyInstaller collects the script, interpreter, and hidden
+  imports into one folder or one-file binary so the same CLI runs on a
+  laptop without a development environment.
+
+use_cases:
+  - Bundle a FastAPI or CLI inference app into a one-file executable for field machines
+  - Ship a desktop labeling or eval tool that includes model weights as data files
+  - Package a Windows or macOS binary of an internal agent helper without requiring pip

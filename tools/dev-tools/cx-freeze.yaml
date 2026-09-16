@@ -1,0 +1,25 @@
+name: cx_Freeze
+description: cx_Freeze creates standalone executables from Python scripts while keeping original script performance. Teams use it to package cross-platform inference tools and desktop utilities without requiring a Python install on the target machine.
+tagline: Cross-platform standalone executables from Python scripts
+
+github_url: https://github.com/marcelotduarte/cx_Freeze
+website_url: https://marcelotduarte.github.io/cx_Freeze/
+docs_url: https://cx-freeze.readthedocs.io
+install_command: pip install cx_Freeze
+
+category: Dev Tools
+tags: [python, packaging, executables, freeze, deployment, cross-platform]
+pricing: free
+is_open_source: true
+license: PSF-2.0
+
+problem_solved: |
+  Distributing a Python ML utility to Windows, macOS, and Linux often
+  requires three freeze toolchains. cx_Freeze builds standalone binaries
+  from the same setup so a CLI or GUI keeps native performance without
+  asking users to install Python.
+
+use_cases:
+  - Freeze a Python inference CLI into a Windows or Linux executable for non-developer users
+  - Package a desktop eval or plotting tool with its dependencies as a folder of binaries
+  - Cross-build a command-line agent helper that runs without a virtualenv on the target OS
