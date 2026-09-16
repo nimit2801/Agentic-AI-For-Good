@@ -1,0 +1,17 @@
+name: pydantic-settings
+description: "Official Pydantic settings management that loads validated config from environment variables, .env files, secrets directories, and nested sources with type conversion and aliasing."
+tagline: "Typed settings from env vars via Pydantic"
+github_url: https://github.com/pydantic/pydantic-settings
+website_url: https://docs.pydantic.dev/latest/concepts/pydantic_settings/
+docs_url: https://docs.pydantic.dev/latest/concepts/pydantic_settings/
+install_command: pip install pydantic-settings
+category: Dev Tools
+tags: [python, pydantic, configuration, environment-variables, validation]
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "Application config scattered across os.environ, YAML, and ad-hoc parsers is untyped and fails late at runtime. pydantic-settings lets you declare a BaseSettings model once, then load env vars, .env files, and secret files into validated types so missing keys, bad URLs, and wrong types fail at startup instead of in production."
+use_cases:
+  - "Define a typed Settings class for an LLM API service that loads OPENAI_API_KEY, model names, and timeouts from the environment"
+  - "Combine .env files for local development with Docker secrets and Kubernetes env vars using nested settings sources"
+  - "Fail fast at process start when required config is missing or the wrong type instead of discovering it on the first request"

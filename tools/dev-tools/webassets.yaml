@@ -1,0 +1,16 @@
+name: webassets
+description: "A Python asset pipeline that bundles, minifies, and versions CSS, JavaScript, and related static files, with filters for compilers and a cache-busting URL scheme for web apps."
+tagline: "Python asset pipeline for CSS and JS"
+github_url: https://github.com/miracle2k/webassets
+docs_url: https://webassets.readthedocs.io
+install_command: pip install webassets
+category: Dev Tools
+tags: [python, assets, css, javascript, bundling, web]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+problem_solved: "Python web apps often serve unbundled CSS and JS, or glue together ad-hoc minify scripts that break cache headers. webassets defines bundles with filters (uglify, cssmin, compilers), writes versioned URLs, and integrates with Flask and Django so static assets are compiled once and cache-busted in templates."
+use_cases:
+  - "Bundle and minify CSS and JavaScript for a Flask or Django dashboard that serves ML experiment UIs"
+  - "Generate cache-busted asset URLs so browsers pick up new frontend builds after a model-serving app deploy"
+  - "Compile Sass or CoffeeScript through filters in the same Python asset pipeline used by the backend"
