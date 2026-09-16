@@ -1,0 +1,26 @@
+name: Volta
+description: A Rust-based JavaScript toolchain manager that pins Node.js, npm, yarn, and pnpm versions per project. Volta installs shims on PATH, fetches tools on demand, and records the toolchain in package.json so every developer and CI job uses the same versions.
+tagline: Hassle-free JavaScript toolchain manager
+
+github_url: https://github.com/volta-cli/volta
+website_url: https://volta.sh
+docs_url: https://docs.volta.sh
+install_command: brew install volta
+
+category: Dev Tools
+tags: [javascript, node, toolchain, version-manager, rust, ci]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Node, npm, yarn, and pnpm versions drift across laptops and CI, so agent UIs, Next.js
+  apps, and MCP servers fail with "works on my machine" errors. Volta pins the exact
+  toolchain in package.json, swaps versions per directory via shims, and keeps the
+  same Node and package manager on every machine without nvm-style shell hooks.
+
+use_cases:
+  - Pin Node and pnpm in a Next.js agent dashboard so CI and contributors match local versions
+  - Switch Node versions automatically when hopping between a Python-wrapped JS UI and a Node MCP server
+  - Install yarn or npm as project tools without polluting a global Node install
+  - Record volta node and packageManager fields so onboarding a new ML frontend repo is one clone

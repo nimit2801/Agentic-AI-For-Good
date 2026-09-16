@@ -1,0 +1,26 @@
+name: Maven
+description: Apache Maven is a Java build and dependency manager that uses a POM to declare artifacts, plugins, and lifecycle phases. It is the default build for many JVM libraries that wrap or serve ML models, including Spring Boot inference APIs and Java clients for vector databases.
+tagline: Java build and dependency management via POM
+
+github_url: https://github.com/apache/maven
+website_url: https://maven.apache.org
+docs_url: https://maven.apache.org/guides/index.html
+install_command: brew install maven
+
+category: Dev Tools
+tags: [java, jvm, build, dependencies, apache, packaging]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JVM AI services need a reproducible way to resolve artifacts, run tests, and package
+  fat JARs for model-serving APIs. Maven's POM and plugin lifecycle compile, test, and
+  assemble Java and Kotlin projects so Spring Boot inference apps, LangChain4j clients,
+  and ONNX Runtime Java bindings build the same way in CI and production.
+
+use_cases:
+  - Build a Spring Boot service that exposes a local LLM or embedding model as an HTTP API
+  - Resolve LangChain4j, ONNX Runtime, and vector DB Java clients from Maven Central
+  - Package a fat JAR for a batch feature-engineering job that runs on Kubernetes
+  - Run the Maven test and verify phases as a quality gate before shipping a Java RAG backend
