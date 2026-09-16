@@ -1,0 +1,25 @@
+name: scikit-build
+description: scikit-build is a setuptools helper that builds Python C, C++, Cython, and Fortran extensions with CMake. ML libraries use it to compile native kernels and CUDA or CPU extensions into pip-installable wheels without a custom setup.py compiler maze.
+tagline: CMake-based builds for Python native extensions
+
+github_url: https://github.com/scikit-build/scikit-build
+website_url: https://scikit-build.readthedocs.io
+docs_url: https://scikit-build.readthedocs.io
+install_command: pip install scikit-build
+
+category: Dev Tools
+tags: [python, cmake, build, cython, native-extensions, packaging]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Shipping Python packages with C or CUDA extensions usually means a fragile
+  setup.py full of compiler flags. scikit-build drives CMake from setuptools
+  so scientific and ML libraries produce portable wheels with a standard
+  CMakeLists.txt instead of ad-hoc compiler glue.
+
+use_cases:
+  - Build a Cython or pybind11 extension module with CMake and ship it as a pip wheel
+  - Compile CUDA or C++ kernels for an ML library using the same CMake project used in CI
+  - Replace a custom setup.py compiler maze with scikit-build when packaging a native Python extension

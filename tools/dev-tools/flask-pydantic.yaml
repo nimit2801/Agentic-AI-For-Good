@@ -1,0 +1,23 @@
+name: Flask-Pydantic
+description: Flask-Pydantic is a Flask extension that validates request query, body, and form data with Pydantic models and serializes responses. Teams use it to type-check API payloads on Flask inference and agent endpoints without hand-written parsers.
+tagline: Pydantic request and response validation for Flask
+
+github_url: https://github.com/pallets-eco/flask-pydantic
+install_command: pip install Flask-Pydantic
+
+category: Dev Tools
+tags: [python, flask, pydantic, validation, api, typing]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Flask view functions often parse JSON and query strings by hand, so bad
+  types and missing fields fail late inside the handler. Flask-Pydantic binds
+  Pydantic models to query, body, and form data and returns typed responses so
+  invalid payloads fail with 400s before business logic runs.
+
+use_cases:
+  - Validate JSON bodies on Flask inference endpoints with a Pydantic request model
+  - Parse typed query parameters for pagination, model name, and temperature on a Flask LLM API
+  - Serialize Pydantic response models from Flask views that return agent or retrieval results

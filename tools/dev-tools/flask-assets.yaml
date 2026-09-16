@@ -1,0 +1,24 @@
+name: Flask-Assets
+description: Flask-Assets is a Flask extension that integrates the webassets pipeline so apps can bundle, minify, and version CSS and JavaScript from templates. Teams use it to compile frontend assets for Flask dashboards and model-serving UIs without a separate Node build.
+tagline: Flask integration for the webassets CSS and JS pipeline
+
+github_url: https://github.com/miracle2k/flask-assets
+docs_url: https://webassets.readthedocs.io
+install_command: pip install Flask-Assets
+
+category: Dev Tools
+tags: [python, flask, assets, css, javascript, bundling]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Flask apps often serve unbundled CSS and JS or glue together ad-hoc minify
+  scripts that break cache headers. Flask-Assets wires webassets into Flask so
+  templates register bundles, filters compile and minify them, and versioned
+  URLs cache-bust after deploys.
+
+use_cases:
+  - Bundle and minify CSS and JavaScript for a Flask dashboard that serves ML experiment UIs
+  - Generate cache-busted asset URLs so browsers pick up new frontend builds after a model-serving app deploy
+  - Compile Sass or CoffeeScript through webassets filters inside a Flask template pipeline

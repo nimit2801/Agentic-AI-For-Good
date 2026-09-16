@@ -1,0 +1,17 @@
+name: PyCUDA
+description: "Python bindings for NVIDIA CUDA that compile and run GPU kernels from Python, with numpy-like GPU arrays, automatic memory management, and metaprogramming helpers for custom CUDA code."
+tagline: "CUDA from Python with GPU arrays"
+github_url: https://github.com/inducer/pycuda
+website_url: https://mathema.tician.de/software/pycuda
+docs_url: https://documen.tician.de/pycuda/
+install_command: pip install pycuda
+category: Dev Tools
+tags: [python, cuda, gpu, nvidia, kernels, scientific-computing]
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "Writing CUDA in C++ for one-off kernels is heavy when the rest of an ML or scientific stack is Python. PyCUDA lets you compile CUDA C from strings, allocate GPU arrays that talk to NumPy, and launch kernels without a separate C++ build, so researchers can prototype GPU code next to their training and data pipelines."
+use_cases:
+  - "Prototype a custom CUDA kernel for an attention or reduction op and launch it from a Python training script"
+  - "Move NumPy arrays to the GPU, run elementwise or reduction kernels, and copy results back without writing a C++ wrapper"
+  - "Teach or experiment with CUDA memory and occupancy using Python instead of a full nvcc C++ project"

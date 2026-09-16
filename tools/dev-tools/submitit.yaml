@@ -1,0 +1,15 @@
+name: submitit
+description: "A Python toolbox for submitting function calls as Slurm jobs, with pickle-based serialization, job arrays, timeout handling, and a local executor so the same code runs on a laptop or a cluster."
+tagline: "Submit Python functions as Slurm jobs"
+github_url: https://github.com/facebookincubator/submitit
+install_command: pip install submitit
+category: Dev Tools
+tags: [python, slurm, hpc, job-scheduler, distributed, training]
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "ML researchers writing #SBATCH scripts by hand duplicate boilerplate for GPUs, timeouts, job arrays, and logging, then cannot rerun the same experiment locally. submitit wraps a Python function as a Slurm job (or a local process) so hyperparameter sweeps, checkpointed training, and map-style cluster work stay in Python instead of shell templates."
+use_cases:
+  - "Launch a grid of fine-tuning jobs on a Slurm GPU partition from a Python script without writing sbatch files"
+  - "Map a dataset preprocessing function across cluster nodes with job arrays and collect results back in Python"
+  - "Debug the same training function locally with the debug executor, then switch to Slurm for the full run"

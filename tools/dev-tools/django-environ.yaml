@@ -1,0 +1,17 @@
+name: django-environ
+description: "A 12-factor settings helper for Django that reads typed configuration from environment variables and .env files, including database URLs, secrets, booleans, lists, and nested values."
+tagline: "12-factor env config for Django settings"
+github_url: https://github.com/joke2k/django-environ
+website_url: https://django-environ.readthedocs.io
+docs_url: https://django-environ.readthedocs.io
+install_command: pip install django-environ
+category: Dev Tools
+tags: [python, django, configuration, environment-variables, 12-factor]
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "Django settings modules often hardcode secrets, database URLs, and environment-specific flags, which leaks credentials into git and makes the same codebase painful to run across local, CI, and production. django-environ maps os.environ and .env files into typed Python values so teams keep one settings.py, parse DATABASE_URL-style strings, and switch environments without copying secrets into source."
+use_cases:
+  - "Load DATABASE_URL, REDIS_URL, and SECRET_KEY from a .env file in local Django development without committing credentials"
+  - "Parse booleans, lists, and integers from environment variables in production Django settings instead of stringly-typed os.environ lookups"
+  - "Share one settings.py across staging and production by switching env vars rather than maintaining per-environment settings modules"
