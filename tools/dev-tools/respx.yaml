@@ -1,0 +1,25 @@
+name: respx
+description: respx is a mock toolkit for HTTPX that matches requests with patterns and returns scripted responses or side effects. Teams use it to test LLM clients, agent HTTP tools, and async APIs without hitting the network.
+tagline: Mock HTTPX requests with patterns and side effects
+
+github_url: https://github.com/lundberg/respx
+website_url: https://lundberg.github.io/respx
+docs_url: https://lundberg.github.io/respx
+install_command: pip install respx
+
+category: Dev Tools
+tags: [python, httpx, testing, mock, async, http]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  HTTPX-based LLM and agent clients are hard to unit test because unittest
+  mocks do not understand async transports. respx intercepts HTTPX calls
+  with route patterns so tests assert URLs, JSON bodies, and error paths
+  without opening sockets.
+
+use_cases:
+  - Mock OpenAI or local inference HTTP calls in pytest while testing an HTTPX client
+  - Simulate 429 and timeout responses for an agent tool that retries HTTP requests
+  - Assert request URL, headers, and JSON body of an async retrieval client without the network

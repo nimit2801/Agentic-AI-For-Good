@@ -1,0 +1,25 @@
+name: CUDA Python
+description: CUDA Python is NVIDIA's official Python bindings for the CUDA runtime, driver, and NVRTC APIs. Teams use it to launch kernels, manage GPU memory, and compile CUDA from Python without wrapping the C APIs by hand.
+tagline: Official NVIDIA Python bindings for the CUDA APIs
+
+github_url: https://github.com/NVIDIA/cuda-python
+website_url: https://nvidia.github.io/cuda-python/
+docs_url: https://nvidia.github.io/cuda-python/
+install_command: pip install cuda-python
+
+category: Dev Tools
+tags: [python, cuda, gpu, nvidia, kernels, runtime]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Calling CUDA from Python used to mean Cython wrappers or third-party
+  bindings that lag the driver. CUDA Python exposes the runtime, driver,
+  and NVRTC APIs so custom kernels, memory, and streams stay in Python
+  next to training code.
+
+use_cases:
+  - Allocate GPU memory and launch a custom CUDA kernel from a Python training script
+  - Compile CUDA C++ at runtime with NVRTC and load the module without a separate nvcc build
+  - Drive CUDA streams and events from Python when writing a custom inference runtime
