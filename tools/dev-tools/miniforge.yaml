@@ -1,0 +1,24 @@
+name: Miniforge
+description: Miniforge is a conda-forge first installer that ships conda or micromamba with conda-forge as the default channel. ML teams use it to create lightweight, community-packaged Python environments without Anaconda's defaults.
+tagline: conda-forge first installer for conda and micromamba
+
+github_url: https://github.com/conda-forge/miniforge
+website_url: https://conda-forge.org/download
+docs_url: https://conda-forge.org/download
+
+category: Dev Tools
+tags: [python, conda, conda-forge, environments, packaging, micromamba]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Anaconda installers default to the defaults channel and a large base
+  env, which is slow and license-constrained for many teams. Miniforge
+  bootstraps a small conda-forge environment so GPU and scientific
+  packages install from the community channel from day one.
+
+use_cases:
+  - Bootstrap a conda-forge environment on a GPU box without installing full Anaconda
+  - Create reproducible ML environments with conda-forge CUDA and scientific packages
+  - Use micromamba-based Miniforge installs in CI to resolve env files faster than classic conda
