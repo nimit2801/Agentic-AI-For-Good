@@ -1,0 +1,26 @@
+name: Nixpacks
+description: App source plus Nix packages plus Docker equals an image. Nixpacks auto-detects the language, installs dependencies with Nix, and builds a reproducible container without a Dockerfile, which is useful for shipping agent APIs and ML demo apps from a git repo.
+tagline: Turn app source into Docker images with Nix
+
+github_url: https://github.com/railwayapp/nixpacks
+website_url: https://nixpacks.com
+docs_url: https://nixpacks.com/docs
+install_command: brew install nixpacks
+
+category: Dev Tools
+tags: [containers, docker, nix, build, railway, deployment]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Teams shipping agent backends and demo UIs often lack a maintained Dockerfile, so
+  deploys fail when Python, Node, or Go versions drift. Nixpacks inspects the repo,
+  selects Nix packages for the detected stack, and produces a Docker image with pinned
+  build and start commands so Railway-style deploys stay reproducible.
+
+use_cases:
+  - Build a Docker image for a FastAPI agent API without writing a Dockerfile
+  - Pin extra Nix packages when an ML demo needs system libs that pip cannot provide
+  - Customize build and start commands for a Next.js frontend that talks to a local LLM
+  - Produce the same image locally and in CI from app source plus a nixpacks.toml file

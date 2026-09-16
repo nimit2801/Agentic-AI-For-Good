@@ -1,0 +1,26 @@
+name: Cloud Native Buildpacks
+description: CNCF specification and tooling that turns application source into OCI images without a Dockerfile. The pack CLI and CNB lifecycle detect the language, apply buildpacks, and produce images used by Heroku, Google, and Paketo for deploying APIs and worker services.
+tagline: Source-to-OCI images without a Dockerfile
+
+github_url: https://github.com/buildpacks/pack
+website_url: https://buildpacks.io
+docs_url: https://buildpacks.io/docs/
+install_command: brew install buildpacks/tap/pack
+
+category: Dev Tools
+tags: [containers, oci, cncf, docker, pack, heroku]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Writing and patching Dockerfiles for every Python, Java, or Node AI service is slow
+  and easy to get wrong on base-image CVEs. Cloud Native Buildpacks inspect source,
+  run language-specific buildpacks, and emit OCI images with rebasing so platform
+  teams can rebuild agent APIs when the run image updates without rewriting Dockerfiles.
+
+use_cases:
+  - Build an OCI image for a Python RAG API with pack build and a Paketo Python buildpack
+  - Rebase a production agent image onto a patched run image without a full rebuild
+  - Standardize source-to-image for Java model-serving apps across Heroku-style platforms
+  - Inspect layers with pack to see which buildpack supplied the JVM or Python runtime

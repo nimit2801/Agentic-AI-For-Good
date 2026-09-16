@@ -1,0 +1,24 @@
+name: Distroless
+description: Language-focused container images from Google that omit a full Linux distro. Distroless ships only the runtime and your app, cutting attack surface and image size for Python, Java, Node, and Go services that host LLM APIs, RAG backends, or embedding workers.
+tagline: Minimal container images without a Linux distro
+
+github_url: https://github.com/GoogleContainerTools/distroless
+docs_url: https://github.com/GoogleContainerTools/distroless
+
+category: Dev Tools
+tags: [containers, docker, security, python, java, golang]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Full distro images include shells, package managers, and extra binaries that expand
+  the CVE surface of model-serving containers. Distroless bases like python3, java17,
+  and nodejs ship only the language runtime so inference APIs and RAG workers run with
+  fewer packages to patch and a smaller image to pull on GPU or CPU nodes.
+
+use_cases:
+  - Run a FastAPI embedding service on gcr.io/distroless/python3 without a shell in the image
+  - Ship a Spring Boot LLM gateway on a Distroless Java base to shrink production CVEs
+  - Deploy a Go model-proxy binary on static Distroless for a tiny, non-root runtime
+  - Use debug Distroless variants in staging, then switch to the non-debug image in production
