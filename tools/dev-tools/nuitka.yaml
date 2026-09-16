@@ -1,0 +1,25 @@
+name: Nuitka
+description: Nuitka is a Python compiler that translates Python to C and produces standalone executables or extension modules. Teams use it to ship inference CLIs and agent tools as binaries with fewer runtime dependencies than a frozen interpreter.
+tagline: Compile Python to C executables and extension modules
+
+github_url: https://github.com/Nuitka/Nuitka
+website_url: https://nuitka.net
+docs_url: https://nuitka.net/doc/user-manual.html
+install_command: pip install nuitka
+
+category: Dev Tools
+tags: [python, compiler, packaging, executables, c, deployment]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Shipping a Python inference CLI usually means a full interpreter plus a
+  site-packages tree, which is slow to start and hard to protect. Nuitka
+  compiles the program to C and a native binary so tools ship as one
+  executable instead of a fragile virtualenv.
+
+use_cases:
+  - Compile a Python inference CLI into a standalone binary for machines without Python
+  - Turn a hot Python module into a compiled extension to speed agent or training loops
+  - Package an internal ML utility so source is not shipped as plain .py files

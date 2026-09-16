@@ -1,0 +1,25 @@
+name: llvmlite
+description: llvmlite is a lightweight Python binding to LLVM used as the compiler backend for Numba. It lets JIT compilers emit LLVM IR from Python without taking a heavy llvmpy-style dependency.
+tagline: Lightweight LLVM bindings for Python JIT compilers
+
+github_url: https://github.com/numba/llvmlite
+website_url: https://llvmlite.pydata.org
+docs_url: https://llvmlite.readthedocs.io
+install_command: pip install llvmlite
+
+category: Dev Tools
+tags: [python, llvm, jit, compiler, numba, codegen]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Writing a Python JIT used to mean wrapping all of LLVM through fragile
+  bindings. llvmlite exposes a small IR builder and LLVM engine so Numba
+  and similar compilers can generate and run machine code without a full
+  LLVM Python stack.
+
+use_cases:
+  - Power Numba JIT compilation of numerical kernels used in training and preprocessing
+  - Emit LLVM IR from a custom Python DSL for an ML operator and run it in-process
+  - Prototype a JIT for array kernels without binding the entire LLVM C++ API

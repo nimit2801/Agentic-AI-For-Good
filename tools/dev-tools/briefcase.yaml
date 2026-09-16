@@ -1,0 +1,25 @@
+name: Briefcase
+description: Briefcase is a BeeWare tool that packages a Python project as a native app for macOS, Windows, Linux, iOS, and Android. Teams use it to ship ML demos and agent UIs as installable desktop or mobile apps.
+tagline: Package Python projects as native desktop and mobile apps
+
+github_url: https://github.com/beeware/briefcase
+website_url: https://briefcase.beeware.org
+docs_url: https://briefcase.beeware.org
+install_command: pip install briefcase
+
+category: Dev Tools
+tags: [python, packaging, desktop, mobile, beeware, deployment]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Python ML demos stay stuck in notebooks or CLI scripts because turning
+  them into an installable app means a different packager per OS. Briefcase
+  uses one project config to produce native installers so the same Toga or
+  GUI app ships to desktop and mobile stores.
+
+use_cases:
+  - Package a Python desktop demo of a retrieval or agent UI as a macOS or Windows installer
+  - Build an Android or iOS wrapper around a Python ML prototype with a shared codebase
+  - Generate Linux packages for an internal tool without writing per-distro packaging scripts
