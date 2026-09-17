@@ -1,0 +1,24 @@
+name: GPyTorch
+description: "GPyTorch is a highly efficient Gaussian process library built on PyTorch. It uses black-box matrix-matrix multiplication and GPU kernels so GPs can scale beyond toy datasets for regression, uncertainty estimation, and Bayesian optimization backends."
+tagline: "Scalable Gaussian processes in PyTorch"
+github_url: https://github.com/cornellius-gp/gpytorch
+website_url: https://gpytorch.ai
+docs_url: https://docs.gpytorch.ai
+install_command: "pip install gpytorch"
+category: Fine-tuning
+tags:
+  - python
+  - pytorch
+  - gaussian-process
+  - uncertainty
+  - bayesian
+  - gpu
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "Classic GP libraries choke on large datasets and do not compose with deep learning stacks. GPyTorch implements GPs as PyTorch modules with GPU-friendly linear algebra, so you can put calibrated uncertainty under neural models and power Bayesian optimization at useful scale."
+use_cases:
+  - "Fit scalable Gaussian process regressors with GPU acceleration in PyTorch"
+  - "Add calibrated predictive uncertainty to scientific and ML surrogate models"
+  - "Serve as the GP backend for BoTorch Bayesian optimization loops"
+  - "Compose kernel GPs with deep feature extractors for hybrid models"
