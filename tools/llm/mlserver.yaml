@@ -1,0 +1,24 @@
+name: MLServer
+description: "MLServer is Seldon's open inference server for machine learning models. It implements the V2 inference protocol, supports multi-model serving, and ships runtimes for scikit-learn, XGBoost, Hugging Face, and custom Python models."
+tagline: "Open inference server for multi-model ML serving"
+github_url: https://github.com/SeldonIO/MLServer
+website_url: https://mlserver.readthedocs.io/en/latest/
+docs_url: https://mlserver.readthedocs.io/en/latest/
+install_command: "pip install mlserver"
+category: LLM
+tags:
+  - python
+  - inference
+  - model-serving
+  - seldon
+  - huggingface
+  - kubernetes
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Serving mixed ML and LLM models usually means a custom FastAPI wrapper per framework. MLServer gives a standard V2 inference API, multi-model packing, and built-in runtimes so teams can deploy sklearn, XGBoost, and Hugging Face models behind one server."
+use_cases:
+  - "Serve scikit-learn, XGBoost, and Hugging Face models over the V2 inference protocol"
+  - "Pack multiple models in one MLServer process for dense inference workloads"
+  - "Deploy custom Python inference runtimes next to Seldon Core on Kubernetes"
+  - "Expose LLM and embedding models with a consistent REST and gRPC interface"
