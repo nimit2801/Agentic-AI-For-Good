@@ -1,0 +1,24 @@
+name: GluonTS
+description: "GluonTS is AWS Labs' Python toolkit for probabilistic time series modeling. It provides dataset utilities, evaluation metrics, and deep forecasting models (DeepAR, TFT, and Transformer variants) with a PyTorch backend for research and production forecasts."
+tagline: "Probabilistic time series modeling in Python"
+github_url: https://github.com/awslabs/gluonts
+website_url: https://ts.gluon.ai
+docs_url: https://ts.gluon.ai
+install_command: "pip install gluonts[torch]"
+category: Data
+tags:
+  - python
+  - time-series
+  - forecasting
+  - probabilistic
+  - pytorch
+  - aws
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Building probabilistic forecasters usually means stitching datasets, training loops, and CRPS-style metrics yourself. GluonTS gives a shared Python stack for DeepAR-class models, so teams can train, evaluate, and compare probabilistic forecasts without rewriting boilerplate for every architecture."
+use_cases:
+  - "Train DeepAR or temporal fusion models on panel time series with a PyTorch backend"
+  - "Evaluate probabilistic forecasts with GluonTS metrics and backtesting utilities"
+  - "Prototype new neural forecasting architectures on standard GluonTS datasets"
+  - "Produce quantile forecasts for demand, traffic, and cloud-capacity planning"
