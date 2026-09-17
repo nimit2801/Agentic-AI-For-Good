@@ -1,0 +1,24 @@
+name: Chronos
+description: "Chronos is Amazon's family of pretrained time series forecasting models. It tokenizes series into a language-model vocabulary and predicts future values zero-shot or after light fine-tuning, covering Chronos and Chronos-2 checkpoints for probabilistic forecasts."
+tagline: "Pretrained foundation models for time series forecasting"
+github_url: https://github.com/amazon-science/chronos-forecasting
+website_url: https://github.com/amazon-science/chronos-forecasting
+docs_url: https://arxiv.org/abs/2403.07815
+install_command: "pip install chronos-forecasting"
+category: Other
+tags:
+  - python
+  - time-series
+  - forecasting
+  - foundation-model
+  - amazon
+  - transformers
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Classical forecasting stacks need a separate model per dataset and heavy feature engineering. Teams that want a pretrained, transferable forecaster have few open options that work zero-shot across frequencies and domains. Chronos treats time series as a language-modeling problem so one checkpoint can forecast many series without per-task architectures."
+use_cases:
+  - "Zero-shot probabilistic forecasting on new univariate series without training a custom model"
+  - "Fine-tune Chronos checkpoints on domain data such as retail demand or cloud metrics"
+  - "Benchmark pretrained time series models against classical statistical baselines in Python"
+  - "Generate quantile forecasts for inventory, capacity, and anomaly-aware planning"

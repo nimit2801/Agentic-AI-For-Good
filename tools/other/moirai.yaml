@@ -1,0 +1,24 @@
+name: Moirai
+description: "Moirai is Salesforce's universal time series forecasting transformer, trained with the Uni2TS framework. It handles multiple frequencies, variates, and prediction lengths in one model, with open weights for zero-shot and fine-tuned probabilistic forecasting."
+tagline: "Universal transformer for time series forecasting"
+github_url: https://github.com/SalesforceAIResearch/uni2ts
+website_url: https://huggingface.co/Salesforce/moirai-1.0-R-large
+docs_url: https://github.com/SalesforceAIResearch/uni2ts
+install_command: "pip install uni2ts"
+category: Other
+tags:
+  - python
+  - time-series
+  - forecasting
+  - transformer
+  - salesforce
+  - foundation-model
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Most forecasting models are trained on one frequency, one variate count, and one horizon. Switching datasets means retraining or stitching specialists. Moirai is a universal transformer trained across heterogeneous series so one checkpoint can forecast mixed-frequency, multivariate data at variable horizons."
+use_cases:
+  - "Zero-shot forecast mixed-frequency business and sensor time series with one pretrained model"
+  - "Fine-tune Moirai on private multivariate series for longer-horizon probabilistic forecasts"
+  - "Train custom universal time series transformers with the Uni2TS research framework"
+  - "Compare foundation-model forecasts against dataset-specific neural forecasting stacks"

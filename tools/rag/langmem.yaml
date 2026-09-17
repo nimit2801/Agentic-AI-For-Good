@@ -1,0 +1,24 @@
+name: LangMem
+description: "LangMem is LangChain's library for agent long-term memory. It extracts facts from conversations, searches them later, and refines prompts over time, with hot-path memory tools plus a background manager and native LangGraph store integration."
+tagline: "Long-term memory tools for LangGraph agents"
+github_url: https://github.com/langchain-ai/langmem
+website_url: https://langchain-ai.github.io/langmem/
+docs_url: https://langchain-ai.github.io/langmem/
+install_command: "pip install -U langmem"
+category: RAG
+tags:
+  - python
+  - memory
+  - langgraph
+  - langchain
+  - agents
+  - retrieval
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "LLM agents forget across sessions. They cannot store user preferences, past decisions, or extracted facts unless you wire a custom store, extraction pipeline, and retrieval tools. LangMem gives agents manage-and-search memory tools for the hot path and a background manager that consolidates knowledge, so personalization and continuity work without a one-off memory stack."
+use_cases:
+  - "Give a LangGraph agent tools to record and search long-term facts during a live conversation"
+  - "Run a background memory manager that extracts and consolidates knowledge from conversation history"
+  - "Personalize agent replies across sessions using LangGraph's long-term memory store"
+  - "Refine system prompts over time from successful and failed interaction traces"

@@ -1,0 +1,23 @@
+name: Lag-Llama
+description: "Lag-Llama is an open-source foundation model for probabilistic time series forecasting. A decoder-only transformer uses lag features to produce distributional forecasts at any frequency and horizon, with public weights plus Colab demos for zero-shot prediction and fine-tuning."
+tagline: "Open foundation model for probabilistic time series forecasts"
+github_url: https://github.com/time-series-foundation-models/lag-llama
+website_url: https://huggingface.co/time-series-foundation-models/Lag-Llama
+docs_url: https://github.com/time-series-foundation-models/lag-llama
+category: Other
+tags:
+  - python
+  - time-series
+  - forecasting
+  - foundation-model
+  - llama
+  - probabilistic
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Teams that want a Llama-style foundation model for time series often hit closed weights or univariate point forecasts. Lag-Llama publishes an open decoder-only checkpoint that outputs a probability distribution per future timestep, so you can zero-shot or fine-tune probabilistic forecasts without training a model from scratch."
+use_cases:
+  - "Zero-shot probabilistic forecasting on series of any frequency and prediction length"
+  - "Fine-tune the public Lag-Llama checkpoint on a domain dataset with early stopping"
+  - "Reproduce paper pretraining and fine-tuning setups using the released scripts"
+  - "Benchmark open time series foundation models against statistical and neural baselines"
