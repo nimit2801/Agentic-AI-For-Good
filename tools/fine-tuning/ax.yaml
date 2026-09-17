@@ -1,0 +1,24 @@
+name: Ax
+description: "Ax is Meta's adaptive experimentation platform. It schedules and analyzes Bayesian optimization and A/B-style experiments, wrapping BoTorch so teams can tune hyperparameters, infrastructure, and product metrics with a service-like Python API."
+tagline: "Adaptive experimentation platform from Meta"
+github_url: https://github.com/facebook/Ax
+website_url: https://ax.dev
+docs_url: https://ax.dev/docs/why-from-scratch.html
+install_command: "pip install ax-platform"
+category: Fine-tuning
+tags:
+  - python
+  - bayesian-optimization
+  - hyperparameter-tuning
+  - experimentation
+  - meta
+  - botorch
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "Running adaptive experiments (hyperparameter search, config tuning, metric optimization) usually means gluing an optimizer to a scheduler and a results store. Ax is a full experimentation layer on BoTorch that suggests trials, tracks outcomes, and supports multi-objective and constrained optimization."
+use_cases:
+  - "Tune model training hyperparameters with managed Bayesian optimization trials"
+  - "Run multi-objective experiments that trade off accuracy, latency, and cost"
+  - "Optimize production configs and infrastructure knobs with sequential experiments"
+  - "Analyze A/B-style adaptive experiments through Ax's Python service API"

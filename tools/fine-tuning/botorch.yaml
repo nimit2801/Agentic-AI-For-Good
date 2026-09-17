@@ -1,0 +1,24 @@
+name: BoTorch
+description: "BoTorch is Meta's Bayesian optimization library built on PyTorch and GPyTorch. It provides modular primitives for Gaussian-process models, acquisition functions, and sample-efficient optimization of expensive black-box objectives, including hyperparameter tuning."
+tagline: "Bayesian optimization in PyTorch"
+github_url: https://github.com/meta-pytorch/botorch
+website_url: https://botorch.org/
+docs_url: https://botorch.org/docs/introduction
+install_command: "pip install botorch"
+category: Fine-tuning
+tags:
+  - python
+  - pytorch
+  - bayesian-optimization
+  - hyperparameter-tuning
+  - gaussian-process
+  - meta
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "Tuning LLM and ML hyperparameters is expensive when each trial trains a model. Grid search wastes budget; simple Bayesian tools are hard to extend. BoTorch gives GPU-ready GP models and acquisition functions so you can optimize costly objectives with far fewer evaluations."
+use_cases:
+  - "Tune LLM fine-tuning hyperparameters with sample-efficient Bayesian optimization"
+  - "Optimize expensive black-box training or simulation objectives on GPU with PyTorch"
+  - "Compose custom acquisition functions for multi-objective or constrained HPO"
+  - "Pair with Ax to run production adaptive experiments on model training jobs"
