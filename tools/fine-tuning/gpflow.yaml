@@ -1,0 +1,24 @@
+name: GPflow
+description: "GPflow is a Gaussian process library built on TensorFlow. It implements GP regression, classification, and sparse variational methods so you can train scalable GPs with GPU acceleration and TensorFlow Probability integrations."
+tagline: "Gaussian processes in TensorFlow"
+github_url: https://github.com/GPflow/GPflow
+website_url: https://gpflow.github.io/GPflow/
+docs_url: https://gpflow.github.io/GPflow/develop/index.html
+install_command: "pip install gpflow"
+category: Fine-tuning
+tags:
+  - python
+  - tensorflow
+  - gaussian-process
+  - bayesian
+  - uncertainty
+  - gpu
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Gaussian processes are the gold standard for calibrated uncertainty but classic implementations do not use TensorFlow graphs or GPUs. GPflow brings sparse variational GPs into the TensorFlow stack so research and production teams can scale kernel models without abandoning TF tooling."
+use_cases:
+  - "Fit sparse variational GP regressors on large datasets with TensorFlow GPU training"
+  - "Build GP classifiers and multi-output models with TensorFlow Probability kernels"
+  - "Use GPs as uncertainty-aware surrogates during hyperparameter search"
+  - "Prototype Bayesian optimization backends that stay inside the TensorFlow ecosystem"

@@ -1,0 +1,24 @@
+name: NumPyro
+description: "NumPyro is a probabilistic programming library powered by NumPy and JAX. It compiles models with autograd and JIT to CPU, GPU, or TPU, offering SVI and MCMC (including NUTS) for scalable Bayesian inference without a PyTorch dependency."
+tagline: "JAX-powered probabilistic programming"
+github_url: https://github.com/pyro-ppl/numpyro
+website_url: https://num.pyro.ai
+docs_url: https://num.pyro.ai/en/stable/
+install_command: "pip install numpyro"
+category: Fine-tuning
+tags:
+  - python
+  - jax
+  - probabilistic-programming
+  - bayesian
+  - mcmc
+  - numpy
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Pyro-style probabilistic programs on PyTorch are hard to run on TPU and sometimes slower to JIT. NumPyro reimplements the Pyro modeling API on JAX so the same generative models compile to XLA, scale across accelerators, and still support NUTS and variational inference."
+use_cases:
+  - "Write Bayesian models in Python and infer posteriors with JAX-compiled NUTS"
+  - "Run stochastic variational inference on GPU or TPU without a PyTorch stack"
+  - "Port Pyro models to JAX for faster research iteration and accelerator support"
+  - "Fit hierarchical models used in experiment analysis and scientific ML"
