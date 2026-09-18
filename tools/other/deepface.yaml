@@ -1,0 +1,23 @@
+name: DeepFace
+description: Lightweight Python library for face recognition and facial attribute analysis. It wraps backends such as VGG-Face, FaceNet, ArcFace, and Dlib behind a simple API for verification, identification, age, gender, emotion, and race.
+tagline: Face recognition and attribute analysis with a one-line Python API
+
+github_url: https://github.com/serengil/deepface
+website_url: https://github.com/serengil/deepface
+install_command: pip install deepface
+
+category: Other
+tags: [face-recognition, computer-vision, python, facial-analysis, identity, opencv]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Production face recognition usually means wiring together detection, alignment, embedding models, and similarity search by hand. DeepFace wraps those steps behind a small Python API so you can verify identities, search a gallery, and estimate age, gender, emotion, and race without assembling a custom computer-vision stack.
+
+use_cases:
+  - Verify whether two photos show the same person in login, KYC, or access-control flows
+  - Search a face gallery to identify a person against a known set of embeddings
+  - Estimate age, gender, and emotion from images for analytics and content tagging
+  - Swap between VGG-Face, FaceNet, ArcFace, and Dlib backends without rewriting pipelines
+  - Prototype face-aware features in Python notebooks before deploying a heavier CV service

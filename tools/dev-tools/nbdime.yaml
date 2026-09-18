@@ -1,0 +1,24 @@
+name: nbdime
+description: Diff and merge tools built for Jupyter notebooks. nbdime understands cells, source, and outputs so git reviews show meaningful notebook changes instead of unreadable JSON, with CLI, git integration, and a web UI.
+tagline: Diff and merge Jupyter notebooks without drowning in JSON
+
+github_url: https://github.com/jupyter/nbdime
+website_url: https://nbdime.readthedocs.io/
+docs_url: https://nbdime.readthedocs.io/
+install_command: pip install nbdime
+
+category: Dev Tools
+tags: [jupyter, notebooks, git, diff, merge, python, version-control]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Git treats notebooks as giant JSON blobs, so diffs hide real code changes behind output noise and merge conflicts become unusable. nbdime diffs and merges at the cell level, showing source and output changes clearly, and plugs into git so notebook collaboration works like ordinary source files.
+
+use_cases:
+  - Review notebook pull requests with cell-level diffs instead of raw JSON
+  - Merge conflicting notebook changes without corrupting cell structure
+  - Ignore noisy output diffs and focus on source and markdown edits
+  - Use the nbdime web UI to inspect notebook changes during code review
+  - Configure git diff and merge drivers so notebooks version cleanly in ML repos
