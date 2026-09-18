@@ -1,0 +1,25 @@
+name: CP2K
+description: Quantum chemistry and solid-state physics package for large condensed-phase systems. CP2K runs DFT, ab initio MD, and hybrid simulations on HPC so materials pipelines can sample bulk, surfaces, and liquids at scale.
+tagline: DFT and ab initio MD for condensed-phase systems
+
+github_url: https://github.com/cp2k/cp2k
+website_url: https://www.cp2k.org
+docs_url: https://manual.cp2k.org/trunk/
+
+category: Data
+tags: [quantum-chemistry, dft, molecular-dynamics, materials, hpc, open-source]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Periodic DFT on liquids and surfaces needs a code that scales beyond
+  small-molecule packages. CP2K combines Gaussian and plane-wave methods
+  so materials and catalysis groups can run ab initio MD and generate
+  training data for ML potentials on HPC.
+
+use_cases:
+  - Run ab initio MD of liquids and interfaces for ML potential datasets
+  - Compute periodic DFT energies on surfaces and bulk crystals
+  - Hybrid QM/MM sampling of catalytic sites
+  - Scale condensed-phase electronic structure across GPU clusters
