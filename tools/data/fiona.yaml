@@ -1,0 +1,26 @@
+name: Fiona
+description: Python library for reading and writing geographic vector files. Fiona is a simpler GDAL/OGR wrapper so shapefiles, GeoJSON, and other vector formats stream as GeoJSON-like records without a full GIS stack.
+tagline: Reads and writes geographic vector files
+
+github_url: https://github.com/Toblerity/Fiona
+website_url: https://fiona.readthedocs.io
+docs_url: https://fiona.readthedocs.io/en/stable/
+install_command: pip install fiona
+
+category: Data
+tags: [python, gis, vector, shapefile, gdal, geospatial, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Vector GIS files need driver and CRS handling that csv readers do not
+  provide. Fiona opens OGR formats as Python records with geometry and
+  properties, so shapefile ETL and GeoJSON conversion stay in scripts
+  instead of desktop GIS.
+
+use_cases:
+  - Stream shapefile features into a GeoJSON or parquet pipeline
+  - Write filtered vector layers after a spatial query
+  - Inspect CRS and schema of an incoming GIS dataset
+  - Convert between shapefile, GeoPackage, and GeoJSON

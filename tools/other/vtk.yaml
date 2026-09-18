@@ -1,0 +1,26 @@
+name: VTK
+description: Visualization Toolkit for 3D computer graphics and scientific visualization. VTK filters, volumes, and meshes power ParaView and PyVista so simulation, medical, and 3D ML pipelines share one rendering and data-object model.
+tagline: 3D graphics and scientific visualization toolkit
+
+github_url: https://github.com/Kitware/VTK
+website_url: https://vtk.org
+docs_url: https://docs.vtk.org
+install_command: pip install vtk
+
+category: Other
+tags: [c++, python, 3d, visualization, scientific-computing, mesh, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Scientific 3D data needs filters, volume rendering, and a pipeline, not
+  just a triangle dump. VTK is the shared toolkit behind ParaView so
+  simulation and medical volumes are processed with the same data model
+  used for visualization.
+
+use_cases:
+  - Volume-render medical or CFD grids in a Python pipeline
+  - Filter and resample meshes before 3D learning
+  - Build custom 3D viewers on the VTK pipeline
+  - Exchange VTK data objects with ParaView and PyVista

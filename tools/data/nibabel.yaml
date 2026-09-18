@@ -1,0 +1,25 @@
+name: nibabel
+description: Python package for neuroimaging file formats. nibabel reads NIfTI, GIFTI, CIFTI, MGH, and related volumes so MRI and fMRI pipelines load images as arrays with affine transforms instead of format-specific readers.
+tagline: Access neuroimaging file formats in Python
+
+github_url: https://github.com/nipy/nibabel
+website_url: https://nipy.org/nibabel/
+docs_url: https://nipy.org/nibabel/
+install_command: pip install nibabel
+
+category: Data
+tags: [python, neuroimaging, nifti, mri, fmri, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Brain images live in NIfTI and related formats with affines that plain
+  array loaders drop. nibabel reads those files into data plus voxel-to-world
+  transforms so neuroimaging ML jobs keep spatial metadata.
+
+use_cases:
+  - Load NIfTI volumes into NumPy for MRI model training
+  - Preserve affine transforms when saving predicted segmentations
+  - Convert between neuroimaging formats in a BIDS pipeline
+  - Inspect header metadata before a dataset QA pass
