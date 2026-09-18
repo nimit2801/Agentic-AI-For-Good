@@ -1,0 +1,25 @@
+name: ParaView
+description: VTK-based open application for large-scale scientific visualization. ParaView renders meshes, volumes, and time-varying simulation output so ML teams inspect CFD, climate, and medical volumes without writing a custom VTK viewer.
+tagline: Large-scale scientific visualization on VTK
+
+github_url: https://github.com/Kitware/ParaView
+website_url: https://www.paraview.org
+docs_url: https://docs.paraview.org
+
+category: Other
+tags: [cpp, visualization, vtk, hpc, simulation, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Simulation and volumetric ML data are too large for desktop plots.
+  ParaView streams VTK datasets, applies filters, and renders in
+  parallel so teams inspect CFD, climate, and medical volumes that
+  would not fit in a notebook matplotlib figure.
+
+use_cases:
+  - Visualize CFD or climate simulation output before training a surrogate
+  - Slice and volume-render medical or materials datasets for QC
+  - Script Python filters to extract features from VTK meshes
+  - Compare predicted vs simulated fields in a shared 3D view

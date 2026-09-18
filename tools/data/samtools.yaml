@@ -1,0 +1,25 @@
+name: SAMtools
+description: C toolkit for next-generation sequencing data via HTSlib. SAMtools views, sorts, indexes, and piles up SAM/BAM/CRAM so genomics ML pipelines start from aligned reads instead of ad-hoc binary parsers.
+tagline: SAM, BAM, and CRAM tools for NGS data
+
+github_url: https://github.com/samtools/samtools
+website_url: https://www.htslib.org
+docs_url: https://www.htslib.org/doc/samtools.html
+
+category: Data
+tags: [c, bioinformatics, ngs, bam, sam, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Aligned sequencing files are huge and format-specific. SAMtools
+  sorts, indexes, filters, and pileups SAM/BAM/CRAM through HTSlib
+  so variant, coverage, and foundation-model pipelines consume
+  indexed reads instead of custom binary readers.
+
+use_cases:
+  - Sort and index BAM files before a variant-calling or coverage model
+  - Filter alignments by map quality for training-set QC
+  - Compute pileups as features for SNP or RNA-editing classifiers
+  - Convert SAM to compressed CRAM to store large NGS corpora
