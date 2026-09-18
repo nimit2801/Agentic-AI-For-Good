@@ -1,0 +1,27 @@
+name: Cellpose
+description: Generalist deep-learning model for cellular segmentation. Cellpose labels cells in microscopy images with human-in-the-loop training so biologists get instance masks without hand-tuning classical pipelines.
+tagline: Generalist cellular segmentation with human-in-the-loop training
+
+github_url: https://github.com/MouseLand/cellpose
+website_url: https://huggingface.co/spaces/mouseland/cellpose
+docs_url: https://cellpose.readthedocs.io
+install_command: pip install cellpose
+
+category: Other
+tags: [python, cell-segmentation, microscopy, deep-learning, bioimaging, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Cell instance masks are the first step for most bioimage ML, but
+  classical segmenters break when cell shape, stain, or modality changes.
+  Cellpose ships a generalist model plus GUI retraining so labs get
+  reliable masks across fluorescence and brightfield without writing a
+  new pipeline per experiment.
+
+use_cases:
+  - Segment cells in fluorescence microscopy for downstream phenotype models
+  - Retrain on a few labeled frames when a new stain or species appears
+  - Export instance masks as training labels for custom bioimage networks
+  - Batch-process time-lapse movies into cell tracks and morphology tables

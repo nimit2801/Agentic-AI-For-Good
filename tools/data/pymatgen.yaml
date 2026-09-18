@@ -1,0 +1,26 @@
+name: pymatgen
+description: Python Materials Genomics library for crystal structures and electronic-structure codes. Pymatgen defines Structure and Molecule objects that power the Materials Project and materials-informatics pipelines.
+tagline: Materials analysis library behind the Materials Project
+
+github_url: https://github.com/materialsproject/pymatgen
+website_url: https://pymatgen.org
+docs_url: https://pymatgen.org
+install_command: pip install pymatgen
+
+category: Data
+tags: [python, materials-science, crystals, dft, materials-project, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Materials ML needs a shared representation of crystals, molecules, and
+  DFT outputs across VASP, Quantum ESPRESSO, and CIF files. Pymatgen
+  provides those objects plus transformations so structure datasets and
+  Materials Project workflows do not reimplement parsing per code.
+
+use_cases:
+  - Parse CIF and POSCAR files into Structure objects for materials ML
+  - Transform crystals (supercells, substitutions) before DFT or graph models
+  - Compute composition, space group, and neighbor features for datasets
+  - Convert between electronic-structure code input and output formats
