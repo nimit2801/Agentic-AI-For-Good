@@ -1,0 +1,25 @@
+name: AlphaFold
+description: Open-source AlphaFold 2 pipeline that predicts 3D protein structures from amino-acid sequences. Labs get atomic coordinates for many targets without crystallography, then feed those structures into docking, design, and ML datasets.
+tagline: Protein structure prediction from sequence
+
+github_url: https://github.com/google-deepmind/alphafold
+website_url: https://alphafold.ebi.ac.uk
+docs_url: https://github.com/google-deepmind/alphafold
+
+category: Other
+tags: [python, protein-structure, deep-learning, structural-biology, alphafold, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Experimental structure determination is slow and fails for many proteins.
+  AlphaFold infers 3D coordinates from sequence so structural biology and
+  protein ML pipelines can start from models instead of waiting on crystals
+  or cryo-EM for every target.
+
+use_cases:
+  - Predict monomer structures for uncharacterized proteins before wet-lab work
+  - Build structure datasets for downstream docking and binder-design models
+  - Screen variant effects by comparing predicted folds across mutations
+  - Seed molecular dynamics or docking jobs with predicted starting coordinates

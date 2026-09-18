@@ -1,0 +1,26 @@
+name: DeepLabCut
+description: Markerless pose-estimation toolkit that trains deep networks on user-defined keypoints. DeepLabCut tracks animals and humans in video so labs quantify behavior without physical markers or commercial motion-capture rigs.
+tagline: Markerless animal and human pose estimation
+
+github_url: https://github.com/DeepLabCut/DeepLabCut
+website_url: http://deeplabcut.org
+docs_url: https://deeplabcut.github.io/DeepLabCut/README.html
+install_command: pip install deeplabcut
+
+category: Other
+tags: [python, pose-estimation, computer-vision, neuroscience, pytorch, open-source]
+pricing: free
+is_open_source: true
+license: LGPL-3.0
+
+problem_solved: |
+  Behavior quantification used to mean sewing markers onto animals or buying
+  motion-capture hardware. DeepLabCut lets researchers label a few frames,
+  train a network, and track user-defined keypoints across videos for
+  neuroscience, robotics, and ethology datasets.
+
+use_cases:
+  - Track rodent limbs in maze videos for neuroscience behavior pipelines
+  - Label custom keypoints on wildlife footage without attaching markers
+  - Export pose time series as features for behavior classification models
+  - Train a project-specific network when a new species or camera angle appears

@@ -1,0 +1,24 @@
+name: OpenFold
+description: Trainable PyTorch reproduction of AlphaFold 2 that is memory-efficient and GPU-friendly. OpenFold lets labs fine-tune structure prediction on private sequences instead of treating AlphaFold as a frozen inference black box.
+tagline: Trainable PyTorch AlphaFold 2 reproduction
+
+github_url: https://github.com/aqlaboratory/openfold
+docs_url: https://openfold.readthedocs.io/en/latest/
+
+category: Other
+tags: [python, pytorch, protein-structure, alphafold, fine-tuning, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AlphaFold 2 inference weights are public, but the original JAX stack is
+  hard to train on custom data. OpenFold reimplements the model in PyTorch
+  so groups can fine-tune, distill, and serve structure prediction on their
+  own sequences and hardware.
+
+use_cases:
+  - Fine-tune structure prediction on a private protein family
+  - Train student models that distill AlphaFold-quality folds
+  - Run GPU-efficient inference in PyTorch serving stacks
+  - Benchmark custom MSA or template features against AlphaFold 2
