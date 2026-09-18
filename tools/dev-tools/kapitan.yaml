@@ -1,0 +1,27 @@
+name: Kapitan
+description: Generic templated configuration management for Kubernetes, Terraform, and related stacks. It compiles inventory and templates into manifests so ML platform configs stay DRY across environments without a one-off generator.
+tagline: Templated configuration management for Kubernetes and Terraform
+
+github_url: https://github.com/kapicorp/kapitan
+website_url: https://kapitan.dev
+docs_url: https://kapitan.dev/documentation/
+
+install_command: pip install kapitan
+
+category: Dev Tools
+tags: [python, kubernetes, terraform, config, templating, gitops, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Copy-pasted Helm values and Terraform files drift between staging and
+  production GPU clusters. Kapitan compiles an inventory of classes and
+  templates into concrete manifests, so shared ML platform config is reused
+  and only environment-specific values change.
+
+use_cases:
+  - Compile Kubernetes manifests for training and inference from one inventory
+  - Reuse Terraform snippets across staging and production ML accounts
+  - Keep secrets references and data values separate from templates
+  - Generate GitOps-ready YAML for an ML platform without ad-hoc scripts

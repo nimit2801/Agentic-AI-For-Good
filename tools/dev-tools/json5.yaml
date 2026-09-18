@@ -1,0 +1,29 @@
+name: JSON5
+description: JSON for Humans. It extends JSON with comments, trailing commas, and unquoted keys so ML config files stay valid data while remaining readable in git reviews and hand-edited experiment files.
+tagline: JSON for Humans
+
+github_url: https://github.com/json5/json5
+website_url: https://json5.org
+docs_url: https://json5.org
+
+install_command: |
+  npm install json5
+  pip install json5
+
+category: Dev Tools
+tags: [json, config, javascript, python, parsing, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Strict JSON forbids comments and trailing commas, so experiment configs
+  either lose documentation or get stored as ad-hoc YAML. JSON5 is a
+  superset that parses like JSON after a small transform, letting teams
+  comment hyperparameters without abandoning JSON tooling.
+
+use_cases:
+  - Store commented hyperparameter files that still parse as structured data
+  - Round-trip JSON5 configs in a Node or Python training launcher
+  - Review ML pipeline settings in git with comments next to keys
+  - Migrate noisy JSON configs to a human-editable superset

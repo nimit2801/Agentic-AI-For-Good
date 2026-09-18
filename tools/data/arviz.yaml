@@ -1,0 +1,27 @@
+name: ArviZ
+description: Python library for exploratory analysis of Bayesian models. It stores InferenceData, plots diagnostics, and compares models so MCMC and variational fits from PyMC, Stan, and emcee are inspected in one workflow.
+tagline: Exploratory analysis of Bayesian models
+
+github_url: https://github.com/arviz-devs/arviz
+website_url: https://www.arviz.org
+docs_url: https://python.arviz.org
+
+install_command: pip install arviz
+
+category: Data
+tags: [python, bayesian, mcmc, visualization, pymc, stan, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Bayesian sampler output is a pile of arrays with no shared diagnostics.
+  ArviZ wraps draws as InferenceData and plots traces, ESS, r-hat, and
+  posterior predictives, so scientists compare PyMC, Stan, and emcee fits
+  without rewriting plotting code for each backend.
+
+use_cases:
+  - Plot MCMC traces and rank plots after fitting a scientific model
+  - Store multi-chain posterior draws as netCDF InferenceData
+  - Compare WAIC and LOO across candidate Bayesian models
+  - Diagnose divergences and poor mixing before publishing results

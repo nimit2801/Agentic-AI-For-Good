@@ -1,0 +1,25 @@
+name: HCL
+description: HashiCorp Configuration Language, the structured language behind Terraform, Nomad, and Vault. It writes human-readable config with blocks and expressions so ML infrastructure stays declarative without dropping into a general-purpose language.
+tagline: HashiCorp configuration language
+
+github_url: https://github.com/hashicorp/hcl
+website_url: https://github.com/hashicorp/hcl
+docs_url: https://github.com/hashicorp/hcl/blob/main/README.md
+
+category: Dev Tools
+tags: [config, hashicorp, terraform, hcl, infrastructure, open-source]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  JSON is noisy for humans and YAML is under-specified for infrastructure as
+  code. HCL is a structured config language with blocks, attributes, and
+  expressions that Terraform and other HashiCorp tools share, so GPU clusters
+  and model-serving stacks are declared in one readable syntax.
+
+use_cases:
+  - Author Terraform modules that provision GPU training clusters
+  - Share HCL snippets across Nomad jobs and Vault policies for ML services
+  - Review infrastructure changes as readable blocks instead of JSON diffs
+  - Parse and generate HCL for automated ML environment scaffolding
