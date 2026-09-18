@@ -1,0 +1,24 @@
+name: pdoc
+description: Automatic API documentation generator for Python. pdoc inspects modules and produces a searchable HTML site from type annotations and docstrings, with no config files required for a useful first pass.
+tagline: Zero-config API docs from Python type annotations and docstrings
+
+github_url: https://github.com/mitmproxy/pdoc
+website_url: https://pdoc.dev
+docs_url: https://pdoc.dev
+install_command: pip install pdoc
+
+category: Dev Tools
+tags: [documentation, python, api-docs, type-annotations, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT-0
+
+problem_solved: |
+  Sphinx-style docs need a lot of config before they show an API. pdoc generates a navigable HTML reference from live modules, docstrings, and type hints so libraries can publish docs from `pdoc mymodule` without a docs framework project.
+
+use_cases:
+  - Generate HTML API docs for a Python package from docstrings and types
+  - Preview documentation locally while writing library code
+  - Publish a searchable module reference in CI without a Sphinx tree
+  - Document ML toolkits whose public API is mostly Python functions and classes
+  - Replace stale wiki pages with docs that always match the installed package

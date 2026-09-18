@@ -1,0 +1,24 @@
+name: Pint
+description: Python units library that attaches physical units to numbers and NumPy arrays. Pint converts, checks, and computes with quantities so scientific and ML code cannot silently mix meters with seconds.
+tagline: Physical units and quantity math for Python and NumPy
+
+github_url: https://github.com/hgrecco/pint
+website_url: https://pint.readthedocs.io/
+docs_url: https://pint.readthedocs.io/
+install_command: pip install pint
+
+category: Data
+tags: [units, scientific-computing, python, numpy, quantities, physics]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Scientific pipelines mix SI and imperial units, then fail in production when a constant is wrong by 1000x. Pint wraps values in units, converts them explicitly, and errors on incompatible math so data and simulation code stay physically consistent.
+
+use_cases:
+  - Annotate sensor readings with units and convert them before training
+  - Catch unit mismatches in scientific Python when combining arrays
+  - Define custom unit registries for domain-specific ML feature pipelines
+  - Convert between SI and imperial units in engineering datasets
+  - Keep NumPy computations unit-aware without rewriting numeric kernels
