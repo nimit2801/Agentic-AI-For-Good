@@ -1,0 +1,22 @@
+name: DINOv2
+description: Meta's self-supervised Vision Transformer that learns features from unlabeled images. DINOv2 weights transfer to classification, retrieval, segmentation, and depth with little or no fine-tuning, making a strong frozen backbone for vision systems.
+tagline: Self-supervised Vision Transformer features from unlabeled images
+
+github_url: https://github.com/facebookresearch/dinov2
+website_url: https://github.com/facebookresearch/dinov2
+
+category: Other
+tags: [computer-vision, self-supervised, vision-transformer, pytorch, embeddings, meta]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Labeled image datasets are expensive, and supervised backbones overfit to classification. DINOv2 pretrains a ViT on unlabeled images so one frozen encoder produces features that work for classification, retrieval, segmentation, and depth, cutting labeling cost and custom training for many vision tasks.
+
+use_cases:
+  - Extract image embeddings for similarity search and retrieval without task-specific labels
+  - Use a frozen DINOv2 backbone for classification, segmentation, or depth with a light head
+  - Bootstrap a vision pipeline when labeled data is scarce or expensive
+  - Compare self-supervised features against supervised ImageNet backbones in research
+  - Build multimodal or agent perception stacks that need a general visual encoder

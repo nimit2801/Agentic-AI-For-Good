@@ -1,0 +1,22 @@
+name: Zoekt
+description: Fast trigram-based code search engine from Sourcegraph. Zoekt indexes repositories so substring and regex queries stay interactive across large codebases, with local CLI tools, a web UI, and Docker deployment.
+tagline: Fast trigram code search for large repositories
+
+github_url: https://github.com/sourcegraph/zoekt
+website_url: https://github.com/sourcegraph/zoekt
+
+category: Dev Tools
+tags: [code-search, indexing, sourcegraph, golang, search, developer-tools]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Grep does not scale once a company has gigabytes of source. Zoekt builds trigram indexes so substring and regex search stay fast across many repos, giving teams Sourcegraph-style search they can run locally or self-host without scanning every file on each query.
+
+use_cases:
+  - Index a large monorepo and search symbols or strings in milliseconds
+  - Self-host code search for private repositories that cannot go to a SaaS indexer
+  - Power IDE or internal portal search with Zoekt's indexed query API
+  - Run zoekt-webserver as a lightweight search UI for a team of engineers
+  - Keep a local index in sync with git so agent and human search share the same corpus

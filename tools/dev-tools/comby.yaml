@@ -1,0 +1,24 @@
+name: Comby
+description: Structural search-and-replace tool that matches code by AST-like templates instead of regex. It supports most languages so you can rewrite APIs, fix patterns, and migrate codebases with one matcher that is not tied to a single parser.
+tagline: Structural search and replace for almost every language
+
+github_url: https://github.com/comby-tools/comby
+website_url: https://comby.dev
+docs_url: https://comby.dev
+install_command: brew install comby
+
+category: Dev Tools
+tags: [code-search, refactoring, ast, rewrite, developer-tools, polyglot]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Regex refactors break on whitespace, nested expressions, and language syntax. Comby matches code with structural templates that respect language shape, so teams can search and rewrite patterns across many languages without writing a custom AST visitor for each one.
+
+use_cases:
+  - Rewrite a deprecated API call across a polyglot monorepo without fragile regex
+  - Find every function that matches a structural pattern, including nested arguments
+  - Migrate error-handling or logging idioms in bulk with match-and-replace templates
+  - Review large-scale refactors by previewing structural diffs before applying them
+  - Teach or enforce code conventions by matching anti-patterns structurally, not textually
