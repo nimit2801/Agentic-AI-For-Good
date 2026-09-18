@@ -1,0 +1,24 @@
+name: SAHI
+description: Framework-agnostic sliced and tiled inference for object detection on large images. SAHI cuts high-resolution images into overlapping slices, runs detectors such as YOLO, and merges results so small objects are not lost.
+tagline: Sliced inference so detectors find small objects in large images
+
+github_url: https://github.com/obss/sahi
+website_url: https://obss.github.io/sahi/
+docs_url: https://obss.github.io/sahi/
+install_command: pip install sahi
+
+category: Other
+tags: [object-detection, computer-vision, yolo, sliced-inference, python, aerial-imagery]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Detectors miss small objects when images are huge, as in satellite, drone, and medical scans, because models downsample the full frame. SAHI tiles the image, runs any detector on each slice, and merges boxes so small instances stay visible without retraining the model.
+
+use_cases:
+  - Detect small vehicles or buildings in satellite and aerial imagery
+  - Run tiled YOLO inference on high-resolution medical or industrial photos
+  - Compare error analysis plots across sliced versus full-frame detection
+  - Wrap MMDetection, Ultralytics, or Detectron2 models with the same slice API
+  - Serve an interactive UI for inspecting sliced detections on large images

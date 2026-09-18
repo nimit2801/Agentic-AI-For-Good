@@ -1,0 +1,24 @@
+name: Jupytext
+description: Round-trips Jupyter notebooks to Markdown, Julia, Python, or R scripts. Pair a .ipynb with a text file so notebooks stay git-friendly, editable in any editor, and still open in Jupyter with outputs intact.
+tagline: Jupyter notebooks as Markdown, Python, Julia, or R scripts
+
+github_url: https://github.com/jupytext/jupytext
+website_url: https://jupytext.org/
+docs_url: https://jupytext.readthedocs.io/
+install_command: pip install jupytext
+
+category: Dev Tools
+tags: [jupyter, notebooks, markdown, git, python, reproducibility]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Notebooks are JSON that diffs poorly and cannot be edited as ordinary source. Jupytext keeps a paired Markdown or script file next to the .ipynb so git reviews stay readable, text editors work, and Jupyter still loads the notebook with outputs when you need them.
+
+use_cases:
+  - Version notebooks as Markdown or percent scripts for clean git diffs
+  - Edit notebook source in VS Code or vim without opening Jupyter
+  - Pair .ipynb files with .py scripts so CI can run the text representation
+  - Sync documentation in MyST Markdown with executable Jupyter notebooks
+  - Keep outputs in the notebook while committing only the text companion
