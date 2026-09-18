@@ -1,0 +1,24 @@
+name: ProteinMPNN
+description: Message-passing neural network for protein backbone sequence design. ProteinMPNN assigns amino acids to a 3D backbone so design pipelines can generate sequences that fold into a target structure.
+tagline: Neural sequence design on protein backbones
+
+github_url: https://github.com/dauparas/ProteinMPNN
+docs_url: https://github.com/dauparas/ProteinMPNN
+
+category: Other
+tags: [python, protein-design, deep-learning, structural-biology, pytorch, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Inverse folding needs sequences that will adopt a given backbone, not
+  just a structure from sequence. ProteinMPNN scores and samples amino
+  acids on 3D coordinates so binder and enzyme design loops can propose
+  sequences without a closed Rosetta license.
+
+use_cases:
+  - Design sequences for a target backbone before experimental expression
+  - Score mutations on an existing fold for stability screens
+  - Generate diverse sequences that share one designed interface
+  - Pair with structure predictors to close a design-and-validate loop

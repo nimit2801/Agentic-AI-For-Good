@@ -1,0 +1,26 @@
+name: Open Babel
+description: Chemical toolbox that converts, searches, and filters molecules across 100-plus file formats. Open Babel is the interchange layer for cheminformatics and ML pipelines that ingest SDF, MOL2, PDB, and SMILES.
+tagline: Chemistry file conversion and cheminformatics toolkit
+
+github_url: https://github.com/openbabel/openbabel
+website_url: https://openbabel.org
+docs_url: https://openbabel.org/docs/
+install_command: pip install openbabel
+
+category: Data
+tags: [python, cheminformatics, chemistry, file-conversion, molecules, open-source]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Every chemistry code speaks a different file format. Open Babel
+  converts and canonicalizes molecules so docking, MD, and property-ML
+  pipelines can share structures without one-off parsers for SDF, PDB,
+  MOL2, and SMILES.
+
+use_cases:
+  - Convert vendor SDF libraries into SMILES for molecular ML datasets
+  - Filter compounds by weight, rings, or SMARTS before docking
+  - Generate 3D coordinates from 2D sketches for simulation input
+  - Canonicalize identifiers when merging multi-source chemical tables
