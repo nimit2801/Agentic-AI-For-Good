@@ -1,0 +1,27 @@
+name: ytt
+description: YAML templating tool that operates on YAML structure instead of text. It overlays, data values, and Starlark snippets so Kubernetes and ML deploy manifests stay valid YAML instead of string-stitched templates.
+tagline: YAML templating that works on structure instead of text
+
+github_url: https://github.com/carvel-dev/ytt
+website_url: https://carvel.dev/ytt
+docs_url: https://carvel.dev/ytt/docs/latest/
+
+install_command: brew install ytt
+
+category: Dev Tools
+tags: [yaml, kubernetes, templating, carvel, config, devops, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Text templating of YAML (Helm-style string substitution) produces invalid
+  documents and indentation bugs in training and serving manifests. ytt edits
+  the YAML data structure with overlays and typed data values, so GPU cluster
+  configs merge cleanly and remain parseable after render.
+
+use_cases:
+  - Overlay environment-specific values onto Kubernetes ML serving YAML
+  - Generate valid training-job manifests without string templates
+  - Merge base and patch YAML for staging versus production clusters
+  - Validate structured data values before applying deploy configs

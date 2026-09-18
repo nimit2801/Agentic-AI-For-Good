@@ -1,0 +1,27 @@
+name: emcee
+description: Python ensemble sampler for affine-invariant MCMC. It explores posterior distributions with stretch-move walkers so astronomers and ML researchers fit models when gradients are unavailable or the likelihood is expensive.
+tagline: Ensemble sampling toolkit for affine-invariant MCMC
+
+github_url: https://github.com/dfm/emcee
+website_url: https://emcee.readthedocs.io
+docs_url: https://emcee.readthedocs.io
+
+install_command: pip install emcee
+
+category: Data
+tags: [python, mcmc, bayesian, sampling, astronomy, scientific, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Bayesian fits for scientific models often lack gradients and have correlated
+  parameters that Metropolis-Hastings mixes poorly on. emcee runs an ensemble of
+  affine-invariant walkers that stretch along the posterior, so parameter
+  inference works on black-box likelihoods common in astronomy and ML.
+
+use_cases:
+  - Sample posteriors for astrophysical models without analytic gradients
+  - Fit noisy scientific curves when the likelihood is a black-box function
+  - Run parallel MCMC walkers for hyperparameter uncertainty estimates
+  - Compare Bayesian model evidence on observational datasets

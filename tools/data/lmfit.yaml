@@ -1,0 +1,27 @@
+name: LMFIT
+description: Python library for non-linear least-squares minimization with named Parameters. It wraps SciPy optimizers, bounds, and constraints so scientists fit curves and models without packing parameter arrays by hand.
+tagline: Non-linear least-squares minimization with flexible Parameters
+
+github_url: https://github.com/lmfit/lmfit-py
+website_url: https://lmfit.github.io/lmfit-py/
+docs_url: https://lmfit.github.io/lmfit-py/
+
+install_command: pip install lmfit
+
+category: Data
+tags: [python, curve-fitting, optimization, scipy, scientific, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  SciPy least-squares expects a flat parameter vector, so bounds, names, and
+  constraints live in glue code that is easy to get wrong. LMFIT uses named
+  Parameter objects with bounds and expressions, then reports uncertainties,
+  so scientific curve fitting stays readable and reproducible.
+
+use_cases:
+  - Fit named model parameters with bounds to experimental curves
+  - Constrain related parameters with algebraic expressions during optimization
+  - Report parameter uncertainties after a least-squares scientific fit
+  - Compare SciPy optimizer backends on the same Parameter model
