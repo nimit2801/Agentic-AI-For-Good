@@ -1,0 +1,26 @@
+name: RDKit
+description: Open-source cheminformatics toolkit. RDKit fingerprints molecules, reads SMILES and SDF, and computes descriptors so drug-discovery and molecular ML pipelines share one chemistry library across Python and C++.
+tagline: Open-source cheminformatics and molecular ML toolkit
+
+github_url: https://github.com/rdkit/rdkit
+website_url: https://www.rdkit.org
+docs_url: https://www.rdkit.org/docs/
+install_command: pip install rdkit
+
+category: Data
+tags: [python, chemistry, cheminformatics, smiles, molecules, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Molecular ML needs fingerprints, sanitization, and 2D or 3D conformers
+  from SMILES. RDKit is the shared chemistry engine so dataset cleaning,
+  descriptor tables, and graph featurization do not depend on a closed
+  vendor toolkit.
+
+use_cases:
+  - Convert SMILES to molecules and Morgan fingerprints for QSAR models
+  - Filter invalid or reactive structures before training a generative model
+  - Compute descriptors and similarity for virtual screening
+  - Generate 2D depictions of predicted compounds for review
