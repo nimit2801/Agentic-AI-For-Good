@@ -1,0 +1,26 @@
+name: napari
+description: Fast n-dimensional image viewer for Python that overlays labels, points, and tracks on arrays. napari is the GUI layer for bioimage and scientific ML pipelines that need interactive inspection of tensors.
+tagline: N-dimensional image viewer for scientific Python
+
+github_url: https://github.com/napari/napari
+website_url: https://napari.org
+docs_url: https://napari.org/stable
+install_command: pip install napari
+
+category: Data
+tags: [python, image-viewer, bioimaging, numpy, visualization, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Scientific arrays are more than 2D RGB. napari lets researchers overlay
+  segmentation masks, tracks, and points on n-D images so ML bioimage
+  pipelines can be inspected interactively instead of dumping PNGs from
+  Matplotlib.
+
+use_cases:
+  - Inspect 3D microscopy volumes with label overlays after segmentation
+  - Debug model predictions by painting and correcting masks in a viewer
+  - Visualize tracking results as points and tracks on time-lapse movies
+  - Plug custom layers into a Python GUI for dataset QA

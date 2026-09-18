@@ -1,0 +1,25 @@
+name: ColabFold
+description: Accessible protein-structure prediction built on AlphaFold. ColabFold speeds MSA search with MMseqs2 so labs fold proteins in Colab or locally without the full AlphaFold database stack.
+tagline: Fast, accessible protein folding for everyone
+
+github_url: https://github.com/sokrypton/ColabFold
+docs_url: https://github.com/sokrypton/ColabFold
+install_command: pip install colabfold
+
+category: Other
+tags: [python, protein-structure, alphafold, colab, mmseqs2, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Full AlphaFold installs need terabytes of databases and Docker. ColabFold
+  replaces that with MMseqs2 MSAs and a Colab or pip workflow so students
+  and labs can predict structures on a laptop or notebook without an HPC
+  data drop.
+
+use_cases:
+  - Fold proteins in Google Colab without a local AlphaFold database
+  - Batch-predict structures from FASTA with MMseqs2 MSAs
+  - Teach structure prediction without a 3 TB disk requirement
+  - Combine OpenMM relaxation with ColabFold predictions locally

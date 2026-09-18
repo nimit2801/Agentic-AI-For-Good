@@ -1,0 +1,26 @@
+name: OpenMM
+description: High-performance toolkit for molecular simulation with GPU kernels. OpenMM runs classical MD and custom forces from Python so researchers can sample biomolecules and train ML potentials without writing CUDA by hand.
+tagline: GPU molecular dynamics from Python
+
+github_url: https://github.com/openmm/openmm
+website_url: https://openmm.org
+docs_url: https://docs.openmm.org
+install_command: pip install openmm
+
+category: Data
+tags: [python, molecular-dynamics, gpu, biomolecular, simulation, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Molecular dynamics codes are often Fortran/C++ engines with awkward Python
+  bindings. OpenMM exposes GPU-accelerated integrators and custom forces as
+  a Python API so structure-relaxation, free-energy, and ML-potential
+  workflows can stay in one notebook.
+
+use_cases:
+  - Relax predicted protein structures after AlphaFold or ColabFold
+  - Sample biomolecular trajectories on GPU from a Python script
+  - Implement custom forces for machine-learned potentials
+  - Teach MD without compiling a full CHARMM or AMBER stack
