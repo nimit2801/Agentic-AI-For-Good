@@ -1,0 +1,25 @@
+name: MMseqs2
+description: Ultra-fast sequence search and clustering suite. MMseqs2 searches and clusters protein or nucleotide databases at BLAST-like sensitivity so metagenomics and protein ML pipelines preprocess millions of sequences without a BLAST bottleneck.
+tagline: Ultra-fast sequence search and clustering
+
+github_url: https://github.com/soedinglab/MMseqs2
+website_url: https://mmseqs.com
+docs_url: https://github.com/soedinglab/MMseqs2/wiki
+
+category: Data
+tags: [cpp, bioinformatics, sequence-search, clustering, proteins, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Homology search on million-scale protein sets is too slow with BLAST.
+  MMseqs2 clusters and searches sequences with BLAST-like sensitivity
+  at much higher throughput, so embedding, MSA, and metagenome
+  pipelines start from clustered FASTA instead of raw redundancy.
+
+use_cases:
+  - Cluster protein FASTA before training a sequence embedding model
+  - Search a query set against UniRef-scale databases
+  - Deduplicate metagenomic contigs for annotation ML
+  - Build MSAs as input features for structure or function models

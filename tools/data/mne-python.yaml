@@ -1,0 +1,26 @@
+name: MNE-Python
+description: Python toolkit for MEG, EEG, and other electrophysiology. MNE-Python loads recordings, filters, and source-localizes signals so neuroscience ML pipelines share one preprocessing path from raw files to evoked features.
+tagline: MEG and EEG analysis in Python
+
+github_url: https://github.com/mne-tools/mne-python
+website_url: https://mne.tools
+docs_url: https://mne.tools/stable/index.html
+install_command: pip install mne
+
+category: Data
+tags: [python, eeg, meg, neuroscience, electrophysiology, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Electrophysiology files are vendor-specific and preprocessing is easy
+  to fragment. MNE-Python reads MEG/EEG, applies filters, ICA, and
+  source localization, so BCI and neural-decoding models train on
+  consistent epochs instead of ad-hoc MATLAB scripts.
+
+use_cases:
+  - Read FIF, EDF, or BrainVision files into a common raw object
+  - Epoch, filter, and ICA-clean EEG before a decoding model
+  - Compute evoked responses and time-frequency features for classifiers
+  - Source-localize MEG/EEG onto cortical surfaces for connectivity ML

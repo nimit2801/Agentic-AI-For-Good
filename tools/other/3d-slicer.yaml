@@ -1,0 +1,25 @@
+name: 3D Slicer
+description: Multi-platform open software for medical image visualization and computing. 3D Slicer loads DICOM, runs registration and segmentation modules, and scripts Python so clinical volumes become training data without a vendor workstation.
+tagline: Open medical image visualization and computing
+
+github_url: https://github.com/Slicer/Slicer
+website_url: https://www.slicer.org
+docs_url: https://slicer.readthedocs.io
+
+category: Other
+tags: [cpp, medical-imaging, visualization, dicom, segmentation, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Clinical imaging lives in DICOM and vendor GUIs that do not export
+  ML-ready volumes. 3D Slicer opens those studies, registers and
+  segments them, and exposes Python scripting so hospitals and labs
+  turn CT/MRI series into NIfTI training sets.
+
+use_cases:
+  - Load DICOM studies and export NIfTI volumes for segmentation models
+  - Register pre- and post-treatment scans before a longitudinal model
+  - Run interactive 3D segmentation to create gold-standard labels
+  - Script batch conversion of clinical archives into ML datasets
