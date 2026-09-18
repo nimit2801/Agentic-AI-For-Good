@@ -1,0 +1,27 @@
+name: Toil
+description: Workflow engine with WDL, CWL, and Python APIs that runs on laptops, HPC, and cloud. It scales scientific and ML pipelines across backends so the same workflow definition does not have to be rewritten for each cluster.
+tagline: Cross-platform workflow engine for WDL, CWL, and Python
+
+github_url: https://github.com/DataBiosphere/toil
+website_url: https://toil.ucsc-cgl.org
+docs_url: https://toil.readthedocs.io
+
+install_command: pip install toil
+
+category: Data
+tags: [python, workflow, cwl, wdl, hpc, pipeline, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Pipeline code written for one cluster will not run on another scheduler.
+  Toil executes WDL, CWL, and Python workflows on local, HPC, and cloud
+  backends with the same definition, so dataset builds and training prep
+  move between environments without a rewrite.
+
+use_cases:
+  - Run a CWL dataset-prep workflow on a laptop then on AWS Batch
+  - Execute WDL genomics or feature pipelines through a Python API
+  - Scale ML preprocessing across HPC nodes without scheduler lock-in
+  - Restart failed workflow jobs while keeping successful task outputs
