@@ -1,0 +1,27 @@
+name: Pkl
+description: Configuration-as-code language from Apple with rich types, validation, and IDE tooling. Teams write typed config that generates JSON, YAML, or properties so ML pipelines catch invalid values before a training job starts.
+tagline: Configuration as code with rich validation and tooling
+
+github_url: https://github.com/apple/pkl
+website_url: https://pkl-lang.org
+docs_url: https://pkl-lang.org/main/current/index.html
+
+install_command: brew install pkl
+
+category: Dev Tools
+tags: [config, apple, typed, yaml, json, validation, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  YAML and JSON configs for training jobs and Kubernetes have no types, so a typo
+  or missing field only fails after the cluster starts. Pkl is a typed config
+  language that validates constraints in the editor and renders JSON or YAML,
+  catching bad hyperparameters and deploy settings before they hit production.
+
+use_cases:
+  - Generate typed Kubernetes manifests for GPU training workloads
+  - Validate hyperparameter and cluster config before launching a job
+  - Share reusable Pkl modules across ML service deploy configs
+  - Render JSON and YAML from one source of truth for CI and runtime

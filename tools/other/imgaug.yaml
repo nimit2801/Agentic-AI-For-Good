@@ -1,0 +1,27 @@
+name: imgaug
+description: Python library for image augmentation in machine learning experiments. It applies geometric transforms, color jitter, noise, and weather effects so computer vision models train on more diverse images without extra labeled data.
+tagline: Image augmentation for machine learning experiments
+
+github_url: https://github.com/aleju/imgaug
+website_url: https://imgaug.readthedocs.io
+docs_url: https://imgaug.readthedocs.io
+
+install_command: pip install imgaug
+
+category: Other
+tags: [python, computer-vision, augmentation, images, data-augmentation, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Vision models overfit when the training set is small or lacks pose, lighting,
+  and background variety. imgaug composes affine transforms, crops, blur, noise,
+  and weather overlays into stochastic pipelines so each epoch sees new variants
+  of the same labeled image without recapturing data.
+
+use_cases:
+  - Augment object-detection datasets with affine, crop, and flip pipelines
+  - Simulate rain, fog, and lighting changes for robustness testing
+  - Generate more training views for medical or satellite imagery
+  - Compose stochastic augmentation graphs for reproducible CV experiments
