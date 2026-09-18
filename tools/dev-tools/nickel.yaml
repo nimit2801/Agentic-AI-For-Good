@@ -1,0 +1,27 @@
+name: Nickel
+description: Gradually typed configuration language that merges, validates, and contracts config. It writes JSON, YAML, and TOML with optional types so large ML platform configs stay modular without a full programming language.
+tagline: Better configuration for less
+
+github_url: https://github.com/nickel-lang/nickel
+website_url: https://nickel-lang.org
+docs_url: https://nickel-lang.org/user-manual/introduction/
+
+install_command: brew install nickel
+
+category: Dev Tools
+tags: [config, typed, json, yaml, toml, nix, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Untyped JSON and YAML for model serving and Nix-style deploys grow into
+  unreadable trees with no contracts. Nickel is a gradually typed config
+  language with merging and contracts, so teams validate required fields and
+  export JSON or YAML without abandoning existing tooling.
+
+use_cases:
+  - Write typed service config that exports JSON for an inference API
+  - Merge environment overlays for staging and production ML stacks
+  - Add contracts that reject missing GPU or replica fields at eval time
+  - Generate YAML for Kubernetes from Nickel modules instead of templates

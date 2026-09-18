@@ -1,0 +1,27 @@
+name: Dhall
+description: Programmable configuration language that is not Turing-complete. It imports, functions, and types JSON-like config so ML infrastructure files stay DRY and type-checked without becoming another application codebase.
+tagline: Maintainable configuration files
+
+github_url: https://github.com/dhall-lang/dhall-lang
+website_url: https://dhall-lang.org
+docs_url: https://docs.dhall-lang.org
+
+install_command: brew install dhall
+
+category: Dev Tools
+tags: [config, functional, typed, yaml, json, infrastructure, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Copy-pasted YAML for similar training and serving stacks drifts until one
+  environment is wrong. Dhall adds functions, types, and imports to config
+  without Turing-complete scripts, so teams share typed modules and freeze
+  imports while still emitting JSON or YAML for Kubernetes and CI.
+
+use_cases:
+  - Deduplicate Kubernetes YAML for training and inference environments
+  - Type-check infrastructure config before applying it to a cluster
+  - Freeze remote Dhall imports so ML deploy configs stay reproducible
+  - Generate JSON and YAML from shared functions instead of copy-paste

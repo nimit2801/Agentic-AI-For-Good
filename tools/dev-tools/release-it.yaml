@@ -1,0 +1,26 @@
+name: release-it
+description: Generic CLI that automates versioning and package publishing. It bumps semver, writes changelogs, creates Git tags and GitHub releases, and publishes to npm so library maintainers ship without a handwritten release checklist.
+tagline: Automate versioning and package publishing
+
+github_url: https://github.com/release-it/release-it
+docs_url: https://github.com/release-it/release-it
+
+install_command: npm install --save-dev release-it
+
+category: Dev Tools
+tags: [javascript, npm, release, versioning, changelog, ci, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Shipping a package still means bumping versions, writing a changelog, tagging
+  git, and publishing to npm by hand. One missed step leaves the registry, git
+  tag, and GitHub release out of sync. release-it runs that sequence from one
+  command or CI job so SDK and model-client releases stay consistent.
+
+use_cases:
+  - Bump semver and publish an npm SDK from a single CLI command
+  - Generate changelogs and GitHub releases for an ML tooling library
+  - Run release-it in CI to tag and publish after tests pass
+  - Automate monorepo package versioning without a custom shell script
