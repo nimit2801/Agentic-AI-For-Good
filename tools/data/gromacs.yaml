@@ -1,0 +1,25 @@
+name: GROMACS
+description: High-performance molecular dynamics engine for biomolecules. GROMACS simulates proteins, lipids, and nucleic acids at atomistic scale so labs generate trajectories for ML force fields, free-energy models, and structure-based drug design.
+tagline: Fast molecular dynamics for biomolecular simulation
+
+github_url: https://github.com/gromacs/gromacs
+website_url: https://www.gromacs.org
+docs_url: https://manual.gromacs.org
+
+category: Data
+tags: [molecular-dynamics, simulation, biomolecules, gpu, cpp, open-source]
+pricing: free
+is_open_source: true
+license: LGPL-2.1
+
+problem_solved: |
+  Atomistic biomolecular simulation is too slow and too fragmented for
+  ML-scale datasets. GROMACS runs GPU-accelerated MD with a common
+  topology and trajectory format, so labs produce protein, lipid, and
+  ligand trajectories that train force fields and free-energy models.
+
+use_cases:
+  - Simulate protein-ligand complexes to generate training trajectories for ML force fields
+  - Run membrane and nucleic-acid systems for structure-based drug design
+  - Produce free-energy estimates from alchemical or enhanced-sampling MD
+  - Export GROMACS trajectories into Python analysis stacks such as MDTraj

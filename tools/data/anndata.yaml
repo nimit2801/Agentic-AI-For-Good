@@ -1,0 +1,26 @@
+name: AnnData
+description: Annotated data matrix for single-cell and spatial omics. AnnData stores observations, variables, and unstructured metadata in one on-disk object so Scanpy, Squidpy, and scverse tools share a common format for ML-ready cell atlases.
+tagline: Annotated matrices for single-cell omics
+
+github_url: https://github.com/scverse/anndata
+website_url: https://anndata.scverse.org
+docs_url: https://anndata.readthedocs.io
+install_command: pip install anndata
+
+category: Data
+tags: [python, single-cell, anndata, omics, scverse, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Single-cell counts, gene annotations, and embeddings used to live in
+  disconnected arrays. AnnData keeps cells, genes, layers, and obsm
+  embeddings in one object with lazy HDF5/Zarr backing, so atlas-scale
+  scRNA-seq pipelines feed models without copying giant matrices.
+
+use_cases:
+  - Store scRNA-seq counts plus QC metrics in one object for Scanpy
+  - Back large cell atlases on disk with HDF5 or Zarr without loading everything
+  - Share embeddings and cluster labels across scverse tools
+  - Export observation tables as features for downstream cell-type classifiers

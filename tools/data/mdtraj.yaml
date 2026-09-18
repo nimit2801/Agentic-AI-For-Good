@@ -1,0 +1,26 @@
+name: MDTraj
+description: Python library for analyzing molecular dynamics trajectories. MDTraj reads GROMACS, AMBER, CHARMM, and PDB outputs and computes RMSD, hydrogen bonds, and secondary structure so simulation data becomes features for ML models.
+tagline: Analyze molecular dynamics trajectories in Python
+
+github_url: https://github.com/mdtraj/mdtraj
+website_url: https://www.mdtraj.org
+docs_url: https://mdtraj.readthedocs.io
+install_command: pip install mdtraj
+
+category: Data
+tags: [python, molecular-dynamics, trajectories, simulation, analysis, open-source]
+pricing: free
+is_open_source: true
+license: LGPL-2.1
+
+problem_solved: |
+  MD engines write binary trajectories that are awkward to inspect in
+  Python. MDTraj loads GROMACS, AMBER, and CHARMM files and computes
+  RMSD, contacts, and secondary structure, so simulation output becomes
+  numeric features for clustering, free-energy models, and ML force fields.
+
+use_cases:
+  - Load GROMACS xtc or AMBER netcdf trajectories into NumPy arrays
+  - Compute RMSD, hydrogen bonds, and DSSP secondary structure at scale
+  - Featurize protein trajectories for clustering or kinetic models
+  - Convert simulation formats before training structure-based ML models
