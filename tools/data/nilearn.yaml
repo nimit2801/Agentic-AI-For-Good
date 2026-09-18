@@ -1,0 +1,26 @@
+name: Nilearn
+description: Python library for statistical learning on neuroimaging data. Nilearn turns fMRI, MRI, and PET volumes into scikit-learn datasets so brain-decoding, connectivity, and GLM pipelines share one API.
+tagline: Machine learning for neuroimaging in Python
+
+github_url: https://github.com/nilearn/nilearn
+website_url: https://nilearn.github.io
+docs_url: https://nilearn.github.io/stable/index.html
+install_command: pip install nilearn
+
+category: Data
+tags: [python, neuroimaging, fmri, scikit-learn, neuroscience, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Neuroimaging ML needs NIfTI volumes converted into samples, masks, and
+  connectivity matrices before scikit-learn. Nilearn wraps that conversion
+  so decoding, connectomes, and GLM maps do not live in one-off MATLAB
+  scripts or ad-hoc NumPy reshaping.
+
+use_cases:
+  - Decode cognitive states from fMRI with scikit-learn estimators
+  - Build functional connectivity matrices for connectome ML datasets
+  - Plot statistical maps and glass brains for model inspection
+  - Mask and resample NIfTI volumes before a deep learning pipeline

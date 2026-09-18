@@ -1,0 +1,26 @@
+name: MDAnalysis
+description: Python library for analyzing molecular dynamics simulations. MDAnalysis reads trajectories from GROMACS, AMBER, NAMD, and more, then computes distances, RMSD, and hydrogen bonds for simulation ML datasets.
+tagline: Analyze molecular dynamics trajectories in Python
+
+github_url: https://github.com/MDAnalysis/mdanalysis
+website_url: https://www.mdanalysis.org
+docs_url: https://docs.mdanalysis.org
+install_command: pip install MDAnalysis
+
+category: Data
+tags: [python, molecular-dynamics, trajectories, biophysics, simulation, open-source]
+pricing: free
+is_open_source: true
+license: LGPL-3.0-or-later
+
+problem_solved: |
+  MD trajectories live in engine-specific formats and are too large to
+  load as dense arrays. MDAnalysis streams frames from GROMACS, AMBER,
+  and NAMD into atom selections so RMSD, contacts, and feature tables
+  for simulation ML do not depend on a single vendor analysis GUI.
+
+use_cases:
+  - Load GROMACS or AMBER trajectories and compute RMSD over time
+  - Extract hydrogen-bond and contact features for binding classifiers
+  - Align protein trajectories before clustering or PCA
+  - Build per-residue feature tables for ML on simulation ensembles
