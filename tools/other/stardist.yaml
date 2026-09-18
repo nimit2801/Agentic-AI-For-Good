@@ -1,0 +1,26 @@
+name: StarDist
+description: Object detection method that represents cell nuclei as star-convex polygons. StarDist segments crowded nuclei in fluorescence images so bioimage pipelines get instance masks without watershed hacks.
+tagline: Star-convex nuclei and cell instance segmentation
+
+github_url: https://github.com/stardist/stardist
+website_url: https://stardist.net
+docs_url: https://stardist.net
+install_command: pip install stardist
+
+category: Other
+tags: [python, cell-segmentation, bioimaging, deep-learning, nuclei, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Crowded nuclei overlap and break classical watershed. StarDist
+  predicts star-convex shapes so instance segmentation stays reliable
+  in dense fluorescence fields and can feed cell-level features into
+  phenotype models.
+
+use_cases:
+  - Segment nuclei in fluorescence microscopy for high-content screens
+  - Count overlapping cells where watershed splits or merges objects
+  - Export instance masks as training labels for custom networks
+  - Run 2D or 3D star-convex detection inside a napari workflow

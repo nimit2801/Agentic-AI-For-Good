@@ -1,0 +1,26 @@
+name: scvi-tools
+description: Deep probabilistic models for single-cell and spatial omics. scvi-tools provides scVI, scANVI, and related VAEs so labs can integrate batches, impute, and annotate cells with one Python API.
+tagline: Deep probabilistic models for single-cell omics
+
+github_url: https://github.com/scverse/scvi-tools
+website_url: https://scvi-tools.org
+docs_url: https://docs.scvi-tools.org
+install_command: pip install scvi-tools
+
+category: Data
+tags: [python, single-cell, variational-autoencoder, pytorch, omics, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Single-cell counts are sparse, batched, and noisy. scvi-tools wraps
+  variational models that learn a shared latent space so integration,
+  imputation, and cell-type annotation do not depend on one-off
+  Scanpy recipes per dataset.
+
+use_cases:
+  - Integrate multi-batch scRNA-seq before clustering and annotation
+  - Impute dropout in sparse count matrices for downstream ML
+  - Transfer cell-type labels with scANVI across studies
+  - Analyze spatial omics with the same probabilistic API
