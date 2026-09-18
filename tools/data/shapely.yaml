@@ -1,0 +1,26 @@
+name: Shapely
+description: Python library for planar geometric objects. Shapely wraps GEOS so points, polygons, buffers, and intersections are computed in Python for GIS cleaning, spatial features, and geometry validation before mapping or ML.
+tagline: Manipulation and analysis of geometric objects
+
+github_url: https://github.com/shapely/shapely
+website_url: https://shapely.readthedocs.io
+docs_url: https://shapely.readthedocs.io/en/stable/
+install_command: pip install shapely
+
+category: Data
+tags: [python, geometry, gis, geos, geospatial, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Spatial feature code often reimplements buffers, containment, and polygon
+  repair. Shapely exposes GEOS operations on Point, LineString, and Polygon
+  objects so GIS cleaning and geometry features are correct, fast, and
+  shared with GeoPandas instead of ad-hoc math.
+
+use_cases:
+  - Buffer GPS traces into polygons for geofence features
+  - Test whether sampled points fall inside a region polygon
+  - Repair invalid polygons before writing a training GeoJSON
+  - Compute intersections and unions for map overlay features

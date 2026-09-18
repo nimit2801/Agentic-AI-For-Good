@@ -1,0 +1,26 @@
+name: Biopython
+description: Python toolkit for computational biology. Biopython parses sequence formats, talks to NCBI, and handles alignments, phylogenetics, and structure so bioinformatics pipelines stay in Python instead of one-off parsers.
+tagline: Python toolkit for computational biology
+
+github_url: https://github.com/biopython/biopython
+website_url: https://biopython.org
+docs_url: https://biopython.org/wiki/Documentation
+install_command: pip install biopython
+
+category: Data
+tags: [python, bioinformatics, sequences, genomics, ncbi, open-source]
+pricing: free
+is_open_source: true
+license: Biopython License
+
+problem_solved: |
+  Biology data arrives as FASTA, GenBank, BLAST XML, and PDB with no shared
+  Python API. Biopython reads those formats, wraps NCBI and UniProt, and
+  exposes Seq records so sequence ML datasets and annotation jobs share one
+  library instead of custom parsers per file type.
+
+use_cases:
+  - Parse FASTA and GenBank files into Seq records for training data
+  - Query NCBI Entrez and BLAST from a Python preprocessing script
+  - Read protein structures and alignments before a binder model
+  - Convert sequence formats in a genomics ETL pipeline

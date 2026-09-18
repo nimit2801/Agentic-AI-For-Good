@@ -1,0 +1,26 @@
+name: rasterio
+description: Python library for geospatial rasters. Rasterio reads and writes GeoTIFF and other GDAL formats with NumPy arrays so satellite imagery, elevation, and land-cover rasters become tensors for mapping and ML without a GIS GUI.
+tagline: Reads and writes geospatial raster datasets
+
+github_url: https://github.com/rasterio/rasterio
+website_url: https://rasterio.readthedocs.io
+docs_url: https://rasterio.readthedocs.io/en/stable/
+install_command: pip install rasterio
+
+category: Data
+tags: [python, gis, raster, geotiff, satellite, gdal, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Satellite and elevation data sit in GeoTIFF with CRS and transform metadata
+  that plain image loaders drop. Rasterio reads windows into NumPy, preserves
+  georeferencing, and writes new rasters so remote-sensing ML jobs crop,
+  reproject, and stack bands without a desktop GIS.
+
+use_cases:
+  - Read GeoTIFF windows into NumPy for satellite model training
+  - Reproject rasters to a shared CRS before stacking features
+  - Write model prediction maps as georeferenced GeoTIFF
+  - Sample raster values at point coordinates for tabular ML
