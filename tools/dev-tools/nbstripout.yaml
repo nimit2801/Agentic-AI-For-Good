@@ -1,0 +1,22 @@
+name: nbstripout
+description: Git filter that strips outputs, execution counts, and metadata from Jupyter notebooks on commit. It keeps repositories small and diffs focused on source so notebook collaboration does not drown in plot JSON.
+tagline: Strip Jupyter notebook outputs before they hit git
+
+github_url: https://github.com/kynan/nbstripout
+website_url: https://github.com/kynan/nbstripout
+install_command: pip install nbstripout
+
+category: Dev Tools
+tags: [jupyter, notebooks, git, python, version-control, cleanup]
+pricing: free
+is_open_source: true
+
+problem_solved: |
+  Committed notebook outputs bloat git history and hide real code changes. nbstripout installs as a git filter that removes outputs and execution counts on commit while leaving local notebooks intact, so teams can keep working in Jupyter without polluting the repo.
+
+use_cases:
+  - Install a git filter so notebook commits never include cell outputs
+  - Shrink ML repository size by dropping large plot and dataframe payloads
+  - Make notebook pull requests reviewable by showing source-only diffs
+  - Clean existing notebooks in a repo before adding them to version control
+  - Keep local executed notebooks while sharing clean source with collaborators

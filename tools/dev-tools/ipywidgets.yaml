@@ -1,0 +1,24 @@
+name: ipywidgets
+description: Interactive HTML widgets for Jupyter notebooks and JupyterLab. ipywidgets lets you add sliders, dropdowns, buttons, and custom controls that talk to Python kernels so exploratory analysis becomes a small UI instead of rerunning cells.
+tagline: Interactive widgets for Jupyter notebooks and JupyterLab
+
+github_url: https://github.com/jupyter-widgets/ipywidgets
+website_url: https://ipywidgets.readthedocs.io
+docs_url: https://ipywidgets.readthedocs.io
+install_command: pip install ipywidgets
+
+category: Dev Tools
+tags: [jupyter, widgets, python, interactive, visualization, notebooks]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Notebooks are static once a cell runs, so changing a parameter means editing code and re-executing. ipywidgets binds Python values to sliders, dropdowns, and buttons so analysts can explore hyperparameters, filters, and plots interactively without rewriting cells.
+
+use_cases:
+  - Add sliders to sweep a model hyperparameter and redraw plots live
+  - Build a small notebook UI for filtering a dataframe without extra web apps
+  - Expose experiment controls to non-coders who still work in Jupyter
+  - Compose custom widgets that wrap ML inference for interactive demos
+  - Teach concepts with notebooks that respond to student input in real time
