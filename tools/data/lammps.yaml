@@ -1,0 +1,25 @@
+name: LAMMPS
+description: Large-scale atomic/molecular massively parallel simulator for classical molecular dynamics. LAMMPS runs materials, biomolecule, and mesoscale simulations on CPUs and GPUs for force-field research and ML potential training.
+tagline: Massively parallel classical molecular dynamics
+
+github_url: https://github.com/lammps/lammps
+website_url: https://www.lammps.org
+docs_url: https://docs.lammps.org
+
+category: Data
+tags: [molecular-dynamics, materials, hpc, gpu, force-fields, open-source]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Atomistic simulation needs a code that scales from laptops to supercomputers
+  across many force fields. LAMMPS provides that engine so materials and
+  biomolecular pipelines can generate trajectories, train ML potentials, and
+  validate energies without writing a custom MD integrator.
+
+use_cases:
+  - Train machine-learned interatomic potentials on LAMMPS trajectories
+  - Simulate polymers, metals, and biomolecules with published force fields
+  - Scale MD jobs across GPU clusters for production sampling
+  - Couple custom pair styles into an existing materials workflow
