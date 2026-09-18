@@ -1,0 +1,26 @@
+name: GDAL
+description: Translator library for raster and vector geospatial formats. GDAL and OGR read, write, and reproject GeoTIFF, shapefiles, and dozens of GIS formats so Earth-observation and mapping pipelines share one I/O layer across languages.
+tagline: Translator library for raster and vector geospatial data
+
+github_url: https://github.com/OSGeo/gdal
+website_url: https://gdal.org
+docs_url: https://gdal.org/
+install_command: pip install gdal
+
+category: Data
+tags: [gis, raster, vector, geotiff, geospatial, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Earth data is trapped in dozens of raster and vector formats with different
+  CRS and drivers. GDAL is the shared translator so satellite archives,
+  shapefiles, and map tiles convert, warp, and clip in one library instead
+  of a format-specific toolchain per sensor.
+
+use_cases:
+  - Convert satellite scenes between GeoTIFF, COG, and other raster formats
+  - Warp rasters to a target CRS before training a land-cover model
+  - Clip vector layers and rasters to a region of interest
+  - Inspect drivers and metadata for an incoming GIS dataset

@@ -1,0 +1,26 @@
+name: GeoPandas
+description: Python tools for geographic vector data. GeoPandas adds a geometry column to pandas so shapefiles, GeoJSON, and spatial joins work like DataFrames for mapping, GIS ETL, and location features in ML pipelines.
+tagline: Geographic data in pandas DataFrames
+
+github_url: https://github.com/geopandas/geopandas
+website_url: https://geopandas.org
+docs_url: https://geopandas.org/en/stable/
+install_command: pip install geopandas
+
+category: Data
+tags: [python, gis, geospatial, pandas, shapefile, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Location data lives in shapefiles and GeoJSON while features live in pandas,
+  so GIS work becomes a join across two stacks. GeoPandas stores geometries
+  on a DataFrame, so spatial joins, reprojection, and choropleths stay in
+  the same table workflow used for the rest of an ML feature store.
+
+use_cases:
+  - Load shapefiles and GeoJSON into GeoDataFrames for feature engineering
+  - Spatial-join points to polygons for region labels on training rows
+  - Reproject CRS before mixing GPS traces with administrative boundaries
+  - Plot maps of model errors against geographic regions
