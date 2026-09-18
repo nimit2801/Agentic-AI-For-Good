@@ -1,0 +1,27 @@
+name: Cromwell
+description: Workflow engine for WDL that scales from a laptop to HPC and cloud backends. It runs scientific pipelines as typed tasks so genomics and ML preprocessing jobs retry, scatter, and cache without a custom scheduler.
+tagline: Scientific workflow engine for WDL
+
+github_url: https://github.com/broadinstitute/cromwell
+website_url: https://cromwell.readthedocs.io
+docs_url: https://cromwell.readthedocs.io
+
+install_command: brew install cromwell
+
+category: Data
+tags: [wdl, workflow, genomics, hpc, pipeline, broad-institute, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Multi-step scientific pipelines fail partway and are hard to rerun on a
+  cluster. Cromwell executes WDL workflows with scatter, retry, and call
+  caching across local, HPC, and cloud backends, so data-prep and model
+  training stages are portable instead of cluster-specific scripts.
+
+use_cases:
+  - Run a WDL preprocessing pipeline locally then on an HPC cluster
+  - Scatter feature-extraction tasks across cloud workers with call caching
+  - Retry failed genomics or dataset-build steps without rerunning successes
+  - Share typed WDL workflows for ML data preparation across teams
