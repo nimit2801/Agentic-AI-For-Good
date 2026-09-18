@@ -1,0 +1,25 @@
+name: Gephi
+description: Open platform for graph visualization and exploration. Gephi layouts, filters, and ranks large networks interactively so ML teams inspect embeddings, citation graphs, and knowledge graphs without writing a custom viz stack.
+tagline: Open graph visualization and exploration
+
+github_url: https://github.com/gephi/gephi
+website_url: https://gephi.org
+docs_url: https://gephi.org/users/
+
+category: Other
+tags: [java, graph, visualization, network-analysis, open-source]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Graph ML outputs are hard to debug as adjacency lists. Gephi loads
+  GEXF, GraphML, and CSV edges and runs force layouts plus metrics so
+  teams see communities, hubs, and outliers in knowledge graphs and
+  embedding neighborhoods before shipping a model.
+
+use_cases:
+  - Visualize a knowledge graph extracted from an LLM pipeline
+  - Inspect citation or collaboration networks before a GNN training run
+  - Filter and rank nodes by centrality to QC graph datasets
+  - Export layouts as figures for papers and model cards

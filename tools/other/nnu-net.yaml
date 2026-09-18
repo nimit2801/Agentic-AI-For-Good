@@ -1,0 +1,26 @@
+name: nnU-Net
+description: Self-configuring deep learning framework for biomedical image segmentation. nnU-Net fingerprints a dataset and builds preprocessing, architecture, and training so medical imaging teams get strong 3D segmentations without hand-tuning U-Nets.
+tagline: Self-configuring biomedical image segmentation
+
+github_url: https://github.com/MIC-DKFZ/nnUNet
+website_url: https://github.com/MIC-DKFZ/nnUNet
+docs_url: https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/installation_instructions.md
+install_command: pip install nnunetv2
+
+category: Other
+tags: [python, medical-imaging, segmentation, deep-learning, 3d, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Medical segmentation models usually need a custom U-Net, loss, and
+  preprocessor per dataset. nnU-Net infers those choices from image
+  geometry and trains a 2D/3D ensemble, so labs get competitive masks
+  on CT, MRI, and microscopy without an architecture search.
+
+use_cases:
+  - Train a 3D organ segmentation model from a small labeled CT dataset
+  - Benchmark a new medical dataset against a strong self-configuring baseline
+  - Export nnU-Net softmax maps as labels for downstream radiomics
+  - Fine-tune a pretrained nnU-Net plan on a new scanner or contrast
