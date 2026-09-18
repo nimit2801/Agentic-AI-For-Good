@@ -1,0 +1,26 @@
+name: trimesh
+description: Python library for loading and using triangular meshes. trimesh reads STL, OBJ, and GLTF, then computes watertight checks, collision, and scene graphs so 3D printing, robotics, and mesh-ML pipelines share one geometry object.
+tagline: Python library for triangular meshes
+
+github_url: https://github.com/mikedh/trimesh
+website_url: https://trimesh.org
+docs_url: https://trimesh.org
+install_command: pip install trimesh
+
+category: Other
+tags: [python, 3d, mesh, stl, geometry, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Mesh files arrive as STL or OBJ with no shared Python API for volume,
+  watertightness, or collision. trimesh loads those formats and exposes
+  queries so 3D ML datasets and robotics scenes are validated before
+  training or simulation.
+
+use_cases:
+  - Load STL and OBJ meshes for 3D model training
+  - Check watertightness and volume before 3D printing or sim
+  - Compute collisions between mesh parts in a scene
+  - Export repaired meshes to GLTF for visualization

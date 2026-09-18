@@ -1,0 +1,26 @@
+name: Cartopy
+description: Cartographic Python library with Matplotlib support. Cartopy draws maps with real projections and coastlines so geospatial ML results, climate fields, and GPS traces plot in the correct CRS instead of a naive xy scatter.
+tagline: Cartographic plotting with Matplotlib
+
+github_url: https://github.com/SciTools/cartopy
+website_url: https://scitools.org.uk/cartopy
+docs_url: https://scitools.org.uk/cartopy/docs/latest/
+install_command: pip install cartopy
+
+category: Data
+tags: [python, gis, mapping, matplotlib, projections, geospatial, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Matplotlib scatter plots ignore map projections, so lat-lon data looks
+  warped. Cartopy adds CRS-aware axes, coastlines, and transforms so
+  climate, satellite, and location-model figures are geographically
+  honest.
+
+use_cases:
+  - Plot model predictions on a projected map with coastlines
+  - Transform lat-lon tracks into a target map projection
+  - Overlay raster and vector layers in the same CRS
+  - Produce publication maps of geospatial ML error
