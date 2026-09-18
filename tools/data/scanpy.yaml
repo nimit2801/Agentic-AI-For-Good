@@ -1,0 +1,26 @@
+name: Scanpy
+description: Python toolkit for single-cell analysis. Scanpy scales preprocessing, clustering, embedding, and differential expression to millions of cells so scRNA-seq pipelines stay in AnnData instead of fragmented notebooks.
+tagline: Single-cell analysis in Python
+
+github_url: https://github.com/scverse/scanpy
+website_url: https://scanpy.scverse.org
+docs_url: https://scanpy.readthedocs.io
+install_command: pip install scanpy
+
+category: Data
+tags: [python, single-cell, scrna-seq, anndata, bioinformatics, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Single-cell RNA-seq matrices are huge and analysis steps (QC, neighbors,
+  UMAP, clustering) used to live in disconnected scripts. Scanpy stores
+  cells in AnnData and runs those steps at scale, so atlas-scale scRNA-seq
+  ML datasets share one preprocessing graph.
+
+use_cases:
+  - Filter and normalize scRNA-seq counts before a cell-type model
+  - Compute neighbors, UMAP, and Leiden clusters on millions of cells
+  - Rank marker genes for cluster annotation
+  - Export AnnData embeddings as features for downstream classifiers

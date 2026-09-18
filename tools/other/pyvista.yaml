@@ -1,0 +1,26 @@
+name: PyVista
+description: 3D visualization and mesh analysis for science and engineering. PyVista wraps VTK so point clouds, volumetric grids, and surface meshes plot and filter in Python for simulation, medical, and 3D ML workflows.
+tagline: 3D visualization and mesh analysis in Python
+
+github_url: https://github.com/pyvista/pyvista
+website_url: https://docs.pyvista.org
+docs_url: https://docs.pyvista.org
+install_command: pip install pyvista
+
+category: Other
+tags: [python, 3d, visualization, vtk, mesh, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  VTK is powerful but verbose, so 3D science code either skips visualization
+  or copies mesh IO. PyVista gives a NumPy-friendly mesh API for plotting,
+  clipping, and filtering so simulation and 3D ML datasets are inspected
+  without a full VTK application.
+
+use_cases:
+  - Plot volumetric simulation grids and point clouds in a notebook
+  - Clip and resample meshes before 3D model training
+  - Load STL, VTK, and other mesh formats into a shared Python object
+  - Compare predicted surfaces against ground-truth geometry
