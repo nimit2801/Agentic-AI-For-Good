@@ -1,0 +1,25 @@
+name: Psi4
+description: Open-source quantum chemistry package driven from Python with a C++ core. Psi4 computes energies, gradients, and properties so computational chemistry and ML-potential pipelines can call DFT and wavefunction methods from a notebook.
+tagline: Python-driven open-source quantum chemistry
+
+github_url: https://github.com/psi4/psi4
+website_url: https://psicode.org
+docs_url: https://psicode.org/psi4manual/master/index.html
+
+category: Data
+tags: [python, quantum-chemistry, dft, electronic-structure, simulation, open-source]
+pricing: free
+is_open_source: true
+license: LGPL-3.0
+
+problem_solved: |
+  Electronic-structure codes are often compiled Fortran with weak Python
+  hooks. Psi4 exposes DFT and correlated methods as a Python API so
+  chemistry ML pipelines can compute labels, forces, and properties
+  without wrapping a commercial Gaussian job.
+
+use_cases:
+  - Compute DFT energies as labels for molecular ML potentials
+  - Run geometry optimizations from a Python driver script
+  - Benchmark wavefunction methods against neural network potentials
+  - Teach quantum chemistry with an open engine instead of a license server
