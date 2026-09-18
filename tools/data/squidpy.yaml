@@ -1,0 +1,26 @@
+name: Squidpy
+description: Spatial single-cell analysis in Python. Squidpy adds neighborhood graphs, image features, and spatial statistics on AnnData so tissue slides become ML-ready graphs instead of disconnected cell tables.
+tagline: Spatial single-cell analysis on AnnData
+
+github_url: https://github.com/scverse/squidpy
+website_url: https://squidpy.readthedocs.io
+docs_url: https://squidpy.readthedocs.io
+install_command: pip install squidpy
+
+category: Data
+tags: [python, spatial, single-cell, anndata, scverse, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Spatial omics mixes cell tables with tissue images, and the two rarely
+  share one API. Squidpy stores spots on AnnData, builds neighbor graphs,
+  and extracts image features so visium and imaging-based atlases feed
+  spatial models without a custom glue layer.
+
+use_cases:
+  - Build spatial neighbor graphs from Visium or imaging-based cell tables
+  - Extract tissue image features and join them onto AnnData observations
+  - Run spatial autocorrelation and co-occurrence stats before a graph model
+  - Visualize clusters on tissue coordinates for QC of spatial ML datasets
