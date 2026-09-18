@@ -1,0 +1,25 @@
+name: BEDtools
+description: Swiss army knife for genome arithmetic. BEDtools intersects, merges, and windows BED/GFF/VCF intervals so genomics ML pipelines build coverage and overlap features from annotations instead of custom interval code.
+tagline: Genome arithmetic for intervals and annotations
+
+github_url: https://github.com/arq5x/bedtools2
+website_url: https://bedtools.readthedocs.io
+docs_url: https://bedtools.readthedocs.io
+
+category: Data
+tags: [cpp, bioinformatics, genomics, bed, intervals, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Genomic ML features live in overlapping intervals across BED,
+  GFF, and BAM. BEDtools intersects, merges, and windows those
+  tracks so models get coverage and annotation features without
+  a custom interval engine.
+
+use_cases:
+  - Intersect peaks with gene annotations before a regulatory model
+  - Compute coverage windows as features for a sequence classifier
+  - Merge overlapping variants into a non-redundant training set
+  - Subtract blacklist regions from a genomics dataset

@@ -1,0 +1,25 @@
+name: DOLFINx
+description: Next-generation FEniCS environment for finite element problems. DOLFINx assembles and solves PDEs in C++ and Python so scientific ML and physics-informed models train against high-fidelity FEM fields instead of toy meshes.
+tagline: Next-generation FEniCS finite element solver
+
+github_url: https://github.com/FEniCS/dolfinx
+website_url: https://fenicsproject.org
+docs_url: https://docs.fenicsproject.org
+
+category: Data
+tags: [cpp, python, finite-element, pde, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: LGPL-3.0
+
+problem_solved: |
+  Physics-informed ML needs trustworthy PDE solutions, not
+  hand-rolled discretizations. DOLFINx provides a modern FEniCS
+  runtime that assembles variational forms and solves them at
+  scale so PINN and surrogate models compare against FEM truth.
+
+use_cases:
+  - Generate FEM ground truth for a physics-informed neural network
+  - Solve a continuum mechanics PDE as a surrogate-model training target
+  - Couple Python ML code with a C++ finite element assembly loop
+  - Export mesh fields as features for a scientific ML pipeline
