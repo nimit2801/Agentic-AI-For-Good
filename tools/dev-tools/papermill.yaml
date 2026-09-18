@@ -1,0 +1,24 @@
+name: Papermill
+description: Tool for parameterizing, executing, and collecting output from Jupyter notebooks. Inject parameters, run notebooks in any environment, and treat .ipynb files as reproducible pipeline steps instead of one-off scratchpads.
+tagline: Parameterize and execute Jupyter notebooks as pipeline jobs
+
+github_url: https://github.com/nteract/papermill
+website_url: https://papermill.readthedocs.io/en/latest/
+docs_url: https://papermill.readthedocs.io/en/latest/
+install_command: pip install papermill
+
+category: Dev Tools
+tags: [jupyter, notebooks, python, pipelines, reproducibility, automation]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Jupyter notebooks are hard to reuse as jobs because parameters live in cells and execution is manual. Papermill injects parameters, runs the notebook headlessly, and stores cell outputs so data and ML teams can schedule the same notebook across dates, models, or datasets without copying files by hand.
+
+use_cases:
+  - Run the same analysis notebook daily with a different date or dataset parameter
+  - Turn exploratory ML notebooks into scheduled training or evaluation jobs
+  - Collect executed notebook outputs as artifacts for review and audit trails
+  - Parameterize report notebooks that generate HTML or PDF for stakeholders
+  - Orchestrate notebook steps inside Airflow, Prefect, or CI without rewriting them as scripts

@@ -1,0 +1,24 @@
+name: nbconvert
+description: Converts Jupyter notebooks into HTML, PDF, LaTeX, Markdown, slides, and Python scripts. It is the standard way to share notebooks, generate docs, and turn .ipynb files into reports without opening the notebook UI.
+tagline: Convert Jupyter notebooks to HTML, PDF, Markdown, and scripts
+
+github_url: https://github.com/jupyter/nbconvert
+website_url: https://nbconvert.readthedocs.io/
+docs_url: https://nbconvert.readthedocs.io/
+install_command: pip install nbconvert
+
+category: Dev Tools
+tags: [jupyter, notebooks, python, conversion, documentation, reporting]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Notebooks are JSON that most publishing and review tools cannot consume. nbconvert turns .ipynb files into HTML, PDF, Markdown, slides, or scripts so teams can share results, generate documentation, and ship reports from the same notebooks they used for analysis.
+
+use_cases:
+  - Export executed notebooks to HTML or PDF reports for stakeholders
+  - Convert notebooks to Markdown or RST for documentation sites
+  - Generate Reveal.js slides from a notebook for talks and demos
+  - Extract Python scripts from notebooks to reuse logic outside Jupyter
+  - Automate notebook-to-artifact conversion in CI for reproducible research packages
