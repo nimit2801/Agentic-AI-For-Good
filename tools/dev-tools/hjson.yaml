@@ -1,0 +1,29 @@
+name: Hjson
+description: User interface for JSON with comments, optional quotes, and less punctuation. It reads relaxed config and writes JSON so ML experiment files stay editable by humans without breaking machine parsers.
+tagline: A user interface for JSON
+
+github_url: https://github.com/hjson/hjson
+website_url: https://hjson.github.io
+docs_url: https://hjson.github.io
+
+install_command: |
+  npm install hjson
+  pip install hjson
+
+category: Dev Tools
+tags: [json, config, javascript, python, parsing, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  JSON configs for agents and training jobs are painful to edit and cannot
+  hold comments. Hjson relaxes quotes and commas, then converts to JSON at
+  runtime, so teams keep a readable source file and a strict JSON payload
+  for APIs and job runners.
+
+use_cases:
+  - Edit training-job config with comments and unquoted keys
+  - Convert Hjson experiment files to JSON before an API submit
+  - Keep human-readable defaults next to machine-parsed JSON
+  - Share config snippets in docs without escaping every quote
