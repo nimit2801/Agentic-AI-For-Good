@@ -1,0 +1,27 @@
+name: SunPy
+description: Python library for solar physics data analysis. It loads solar imagery and time series from observatories, handles coordinates and FITS metadata, and plots results so researchers work from one stack instead of ad-hoc file scripts.
+tagline: Python for solar physics
+
+github_url: https://github.com/sunpy/sunpy
+website_url: https://sunpy.org
+docs_url: https://docs.sunpy.org
+
+install_command: pip install sunpy
+
+category: Data
+tags: [python, astronomy, solar-physics, scientific, astropy, open-source]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Solar observatory data arrives in mixed FITS formats with instrument-specific
+  coordinates and time systems. SunPy wraps maps, time series, and coordinates
+  on Astropy so teams search, calibrate, and plot solar imagery without writing
+  a one-off loader for each mission.
+
+use_cases:
+  - Load SDO and SOHO FITS maps into a common Map object for analysis
+  - Search and download solar observations for a time window
+  - Convert solar coordinates between observer frames before overlaying data
+  - Plot time series of solar activity alongside imagery in notebooks
