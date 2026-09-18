@@ -1,0 +1,24 @@
+name: Lightly
+description: Self-supervised learning and dataset curation library for computer vision. Lightly trains embeddings on unlabeled images and selects diverse, high-value samples so teams label less and train better detectors and classifiers.
+tagline: Self-supervised embeddings and dataset curation for computer vision
+
+github_url: https://github.com/lightly-ai/lightly
+website_url: https://www.lightly.ai
+docs_url: https://docs.lightly.ai
+install_command: pip install lightly
+
+category: Data
+tags: [self-supervised, computer-vision, data-curation, embeddings, python, pytorch]
+pricing: freemium
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Vision datasets are huge and mostly redundant, so labeling everything wastes money and training on near-duplicates hurts models. Lightly learns embeddings with self-supervised methods and samples a diverse subset so annotation budgets go to images that actually change the model.
+
+use_cases:
+  - Train self-supervised image embeddings without labels for retrieval or clustering
+  - Select a diverse subset of a large unlabeled corpus before paying for annotation
+  - Find edge-case and outlier images that a detector currently misses
+  - Reduce dataset size while keeping accuracy for faster training cycles
+  - Combine open-source SSL training with Lightly's cloud curation workflows

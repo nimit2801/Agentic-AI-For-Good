@@ -1,0 +1,24 @@
+name: Astropy
+description: Core Python library for astronomy and astrophysics. Astropy provides units, coordinates, FITS I/O, time, cosmology, and table tools that the scientific Python stack uses for observational and theoretical astronomy.
+tagline: Core Python library for astronomy and astrophysics
+
+github_url: https://github.com/astropy/astropy
+website_url: https://www.astropy.org
+docs_url: https://docs.astropy.org/
+install_command: pip install astropy
+
+category: Data
+tags: [astronomy, astrophysics, python, scientific-computing, fits, units]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Astronomy code used to reinvent units, sky coordinates, FITS readers, and time scales in every project. Astropy is the shared core so catalogs, simulations, and observation pipelines speak the same coordinate frames, time systems, and file formats without one-off conversions.
+
+use_cases:
+  - Read and write FITS images and tables from observatory archives
+  - Convert sky coordinates between ICRS, galactic, and alt-az frames
+  - Attach physical units to numeric arrays so unit mistakes fail fast
+  - Handle astronomical time scales and leap seconds in observation planning
+  - Build cosmology and catalog analysis pipelines on a common Python core
