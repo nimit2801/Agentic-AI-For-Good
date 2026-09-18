@@ -1,0 +1,26 @@
+name: SimpleITK
+description: Simplified interface to the Insight Toolkit for medical image analysis. SimpleITK wraps ITK filters in Python, R, C++, and Java so registration, segmentation, and resampling become short scripts instead of template-heavy C++.
+tagline: Simplified ITK for medical image analysis
+
+github_url: https://github.com/SimpleITK/SimpleITK
+website_url: https://simpleitk.org
+docs_url: https://simpleitk.readthedocs.io
+install_command: pip install SimpleITK
+
+category: Data
+tags: [python, medical-imaging, itk, registration, segmentation, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  ITK is the standard medical-image toolkit but its C++ templates slow
+  down prototyping. SimpleITK exposes registration, segmentation, and
+  resampling as a procedural API in Python so DICOM and NIfTI volumes
+  become ML training tensors without a custom ITK build.
+
+use_cases:
+  - Register MRI or CT volumes before stacking them as model inputs
+  - Resample NIfTI images to a common spacing for a segmentation network
+  - Apply ITK filters from Python without writing templated C++
+  - Convert DICOM series into arrays for medical-image ML pipelines

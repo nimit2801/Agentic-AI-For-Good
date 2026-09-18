@@ -1,0 +1,25 @@
+name: Bio-Formats
+description: Java library for reading and writing life-science image file formats. Bio-Formats opens 150-plus microscopy formats into a common pixel and metadata model so ML pipelines ingest vendor files without a per-camera converter.
+tagline: Read microscopy formats into a common pixel model
+
+github_url: https://github.com/ome/bioformats
+website_url: https://www.openmicroscopy.org/bio-formats
+docs_url: https://bio-formats.readthedocs.io
+
+category: Data
+tags: [java, microscopy, bioimaging, file-formats, ome, open-source]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Every microscope vendor ships a proprietary file layout. Bio-Formats
+  decodes those files into OME metadata and pixel planes so training
+  pipelines, ImageJ, and OMERO ingest ND2, CZI, LIF, and related stacks
+  without writing a reader per instrument.
+
+use_cases:
+  - Convert vendor microscopy files into TIFF or OME-TIFF for training sets
+  - Extract channel, time, and Z metadata before tiling a segmentation dataset
+  - Open proprietary stacks in ImageJ or OMERO without vendor software
+  - Batch-ingest mixed-format core-facility data into one ML preprocessing path
