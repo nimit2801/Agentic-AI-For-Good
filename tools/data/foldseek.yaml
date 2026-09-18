@@ -1,0 +1,25 @@
+name: Foldseek
+description: Fast structural search for protein 3D shapes. Foldseek compares AlphaFold-scale structure sets at sequence-search speed so function annotation and protein ML pipelines retrieve homologs by fold, not just sequence.
+tagline: Fast protein structure search at sequence speed
+
+github_url: https://github.com/steineggerlab/foldseek
+website_url: https://foldseek.com
+docs_url: https://github.com/steineggerlab/foldseek
+
+category: Data
+tags: [cpp, proteins, structure-search, alphafold, bioinformatics, open-source]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Sequence search misses remote homologs that share a fold.
+  Foldseek encodes 3D structure as an alphabet and searches
+  AlphaFold DB-scale sets in seconds, so annotation and protein
+  ML pipelines retrieve structural neighbors without TM-align.
+
+use_cases:
+  - Search a predicted structure against AlphaFold DB for remote homologs
+  - Cluster protein structures before training a fold embedding
+  - Annotate metagenomic proteins when sequence identity is too low
+  - Build structural MSAs as features for function or design models
