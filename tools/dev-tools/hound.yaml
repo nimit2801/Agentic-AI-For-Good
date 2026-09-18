@@ -1,0 +1,22 @@
+name: Hound
+description: Self-hosted code search that indexes git repositories and serves lightning-fast regex queries in a simple web UI. Hound is designed for teams that want Etsy-style search over private code without standing up a heavy search cluster.
+tagline: Lightning-fast self-hosted code search for git repos
+
+github_url: https://github.com/hound-search/hound
+website_url: https://github.com/hound-search/hound
+
+category: Dev Tools
+tags: [code-search, git, self-hosted, golang, regex, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Teams outgrow local grep but do not want a full Sourcegraph deployment. Hound indexes git remotes, keeps them updated, and serves regex search from a small Go service and web UI so engineers can find code across many repos from the browser.
+
+use_cases:
+  - Search every internal git repository from a single self-hosted web UI
+  - Index GitHub, GitLab, or Bitbucket remotes and keep search current as code lands
+  - Run regex queries across a company's private codebase without sending code to SaaS
+  - Deploy Hound with Docker for a lightweight engineering search box
+  - Onboard new engineers by letting them discover APIs and examples via code search

@@ -1,0 +1,23 @@
+name: YOLOX
+description: Anchor-free YOLO object detector that exceeds YOLOv3 through YOLOv5 on accuracy and speed. YOLOX ships MegEngine, PyTorch, ONNX, TensorRT, ncnn, and OpenVINO paths for research and production detection.
+tagline: Anchor-free YOLO detector with production export backends
+
+github_url: https://github.com/Megvii-BaseDetection/YOLOX
+docs_url: https://yolox.readthedocs.io/
+install_command: pip install yolox
+
+category: Other
+tags: [object-detection, computer-vision, yolo, pytorch, onnx, tensorrt, python]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Classic YOLO models depend on hand-crafted anchors that are brittle across datasets and hardware. YOLOX drops anchors, uses decoupled heads and SimOTA assignment, and exports to ONNX, TensorRT, ncnn, and OpenVINO so detection stays accurate from research notebooks to edge devices.
+
+use_cases:
+  - Train an object detector on a custom dataset without tuning YOLO anchors
+  - Export a YOLOX model to TensorRT or ONNX for low-latency production inference
+  - Deploy detection to mobile and edge devices via ncnn or OpenVINO
+  - Benchmark detector accuracy against YOLOv3 through YOLOv5 baselines
+  - Prototype computer-vision pipelines in PyTorch then ship the same weights to MegEngine
