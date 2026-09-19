@@ -1,0 +1,35 @@
+name: OpenMLDB
+description: OpenMLDB is an open-source machine learning database that provides a feature platform computing consistent features for training and inference. It bridges the gap between offline feature engineering and online serving, ensuring feature consistency across both environments with millisecond latency.
+tagline: Open-source ML database for consistent feature engineering
+
+github_url: https://github.com/4paradigm/OpenMLDB
+website_url: https://openmldb.ai
+docs_url: https://openmldb.ai/docs/en/main/
+
+install_command: pip install openmldb
+
+category: Data
+tags:
+  - database
+  - feature-store
+  - machine-learning
+  - feature-engineering
+  - real-time
+  - sql
+pricing: free
+is_open_source: true
+license: Apache 2.0
+
+problem_solved: |
+  Feature inconsistency between training and inference pipelines is a major source
+  of model performance degradation in production. Data scientists engineer features
+  offline with Spark or Pandas, then engineers rewrite them in C++ or Java for online
+  serving — often introducing subtle differences. OpenMLDB eliminates this gap by using
+  the same SQL-based feature definitions for both offline training and online inference,
+  guaranteeing exact feature consistency.
+
+use_cases:
+  - "Build real-time feature platforms for recommendation systems with millisecond latency"
+  - "Ensure feature consistency between offline model training and online inference pipelines"
+  - "Deploy SQL-based feature engineering workflows that run identically in batch and streaming modes"
+  - "Create feature stores for fraud detection models requiring consistent transaction features"

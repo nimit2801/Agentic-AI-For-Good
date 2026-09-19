@@ -1,0 +1,37 @@
+name: PennyLane
+description: PennyLane is an open-source quantum software platform for quantum computing, quantum machine learning, and quantum chemistry. It integrates with PyTorch, TensorFlow, and JAX to enable differentiable quantum programming, allowing researchers to train quantum circuits like neural networks.
+tagline: Quantum machine learning platform for differentiable quantum circuits
+
+github_url: https://github.com/PennyLaneAI/pennylane
+website_url: https://pennylane.ai
+docs_url: https://docs.pennylane.ai/
+
+install_command: pip install pennylane
+
+category: Other
+tags:
+  - quantum
+  - quantum-computing
+  - machine-learning
+  - pytorch
+  - tensorflow
+  - jax
+  - quantum-chemistry
+pricing: free
+is_open_source: true
+license: Apache 2.0
+
+problem_solved: |
+  Quantum computing research has been fragmented across proprietary hardware SDKs with
+  no unified interface for hybrid classical-quantum machine learning. PennyLane bridges
+  this gap by providing a cross-platform framework that treats quantum circuits as
+  differentiable functions, integrating seamlessly with PyTorch, TensorFlow, and JAX
+  autograd. This enables researchers to train variational quantum circuits using standard
+  backpropagation across simulators and real quantum hardware from IBM, Google, Amazon,
+  and others.
+
+use_cases:
+  - "Train variational quantum circuits for quantum machine learning using PyTorch or TensorFlow autograd"
+  - "Simulate quantum chemistry molecules and optimize molecular ground states with differentiable quantum algorithms"
+  - "Build hybrid classical-quantum neural networks that run on both GPUs and quantum processors"
+  - "Prototype quantum optimization algorithms across multiple quantum hardware backends from a single codebase"

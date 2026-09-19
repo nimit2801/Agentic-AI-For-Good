@@ -1,0 +1,35 @@
+name: OpenVINO Model Server
+description: OpenVINO Model Server is a scalable inference server for models optimized with OpenVINO. It exposes gRPC and REST APIs for model serving, supports multiple frameworks including TensorFlow, PyTorch, and ONNX, and runs on CPU, GPU, and edge devices via Docker or Kubernetes.
+tagline: Scalable inference server for OpenVINO-optimized models
+
+github_url: https://github.com/openvinotoolkit/model_server
+website_url: https://docs.openvino.ai/2026/model-server/ovms_what_is_openvino_model_server.html
+docs_url: https://docs.openvino.ai/2026/model-server/ovms_docs.html
+
+category: Dev Tools
+tags:
+  - inference
+  - model-serving
+  - openvino
+  - kubernetes
+  - edge
+  - grpc
+  - rest-api
+  - intel
+pricing: free
+is_open_source: true
+license: Apache 2.0
+
+problem_solved: |
+  Deploying optimized ML models to production at scale requires complex infrastructure
+  for batching, versioning, and hardware acceleration. OpenVINO Model Server provides
+  a production-ready inference service with gRPC and REST endpoints, dynamic batching,
+  model versioning, and support for Intel CPUs, GPUs, and NPUs — enabling teams to serve
+  optimized models on-premises, in the cloud, or at the edge without building custom
+  serving infrastructure.
+
+use_cases:
+  - "Serve computer vision models at scale on Intel hardware with optimized OpenVINO inference"
+  - "Deploy generative AI models via gRPC and REST APIs with dynamic batching support"
+  - "Run edge inference on lightweight devices using Docker-based model serving"
+  - "Manage model versioning and A/B testing in Kubernetes clusters"
