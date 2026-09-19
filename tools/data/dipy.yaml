@@ -1,0 +1,26 @@
+name: DIPY
+description: Python library for 3D/4D+ medical imaging. DIPY reconstructs diffusion MRI, tracks fibers, and denoises volumes so neuroimaging ML pipelines share one path from DWI scans to tractograms and tissue features.
+tagline: Diffusion MRI and computational neuroanatomy in Python
+
+github_url: https://github.com/dipy/dipy
+website_url: https://dipy.org
+docs_url: https://docs.dipy.org/stable
+install_command: pip install dipy
+
+category: Data
+tags: [python, medical-imaging, diffusion-mri, neuroimaging, tractography, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Diffusion MRI needs reconstruction, tracking, and denoising before
+  it is usable as features. DIPY implements DTI/CSD reconstruction,
+  tractography, and Patch2Self denoising so connectome and imaging
+  models train on tractograms instead of vendor-specific DWI dumps.
+
+use_cases:
+  - Reconstruct fiber orientations from multi-shell DWI for a connectome model
+  - Run probabilistic tractography as input to a white-matter classifier
+  - Denoise diffusion volumes with Patch2Self before training
+  - Register and visualize tractograms across subjects in a cohort study

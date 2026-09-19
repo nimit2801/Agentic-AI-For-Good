@@ -1,0 +1,26 @@
+name: HTSlib
+description: C library for high-throughput sequencing formats. HTSlib reads and writes SAM, BAM, CRAM, VCF, and BCF so genomics tools and ML pipelines share one I/O layer instead of custom binary parsers.
+tagline: C library for SAM, BAM, CRAM, and VCF I/O
+
+github_url: https://github.com/samtools/htslib
+website_url: https://www.htslib.org
+docs_url: https://www.htslib.org/doc/
+install_command: brew install htslib
+
+category: Data
+tags: [c, bioinformatics, ngs, bam, vcf, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Sequencing files are large, compressed, and format-specific.
+  HTSlib is the shared C I/O layer for SAM/BAM/CRAM and VCF/BCF
+  so SAMtools, BCFtools, and genomics ML wrappers read indexed
+  alignments instead of each writing a custom binary parser.
+
+use_cases:
+  - Stream indexed BAM records into a variant or coverage model
+  - Read and write CRAM to store large NGS training corpora
+  - Parse VCF/BCF variants as features for a genotyping classifier
+  - Link HTSlib from C/C++ tools that need SAM header and index access
