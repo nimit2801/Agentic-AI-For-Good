@@ -1,0 +1,24 @@
+name: Spark TTS
+description: LLM-based text-to-speech system built on Qwen2.5 that reconstructs audio from a single stream of speech tokens. Supports zero-shot voice cloning, Chinese and English, and controllable virtual speakers without a separate flow-matching model.
+tagline: Efficient LLM text-to-speech with speech tokens
+
+github_url: https://github.com/SparkAudio/Spark-TTS
+website_url: https://github.com/SparkAudio/Spark-TTS
+
+category: Other
+tags: [python, tts, speech, voice-cloning, qwen, llm, audio]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Many neural TTS stacks chain an LLM with a separate acoustic or flow-matching
+  model, which is heavy to train and serve. Spark TTS predicts decoupled speech
+  tokens with Qwen2.5 and reconstructs waveform directly, so teams get
+  zero-shot cloning and bilingual synthesis from one efficient inference path.
+
+use_cases:
+  - Clone a speaker from a short reference clip without per-voice fine-tuning
+  - Synthesize bilingual Chinese and English speech with code-switching
+  - Create virtual speakers by setting gender, pitch, and speaking rate
+  - Serve TTS behind Nvidia Triton for production inference

@@ -1,0 +1,25 @@
+name: HoneyHive
+description: SaaS observability and evaluation platform for production AI agents. OpenTelemetry-native tracing, online evals, session replay, and human review so teams can debug multi-agent systems and catch quality regressions before users do.
+tagline: Observability layer for production agents
+
+website_url: https://www.honeyhive.ai
+docs_url: https://docs.honeyhive.ai
+install_command: pip install honeyhive
+
+category: Monitoring
+tags: [saas, agents, observability, evaluation, opentelemetry, tracing, llm]
+pricing: freemium
+is_open_source: false
+
+problem_solved: |
+  Production agents fail in ways logs cannot explain: bad tool calls, drifting
+  prompts, and silent quality drops across thousands of sessions. HoneyHive
+  unifies traces, online evaluation, and human review so teams can replay
+  sessions, alert on failure modes, and turn production bugs into offline
+  test suites before the next release.
+
+use_cases:
+  - Instrument an agent stack with OpenTelemetry and debug multi-agent traces in one UI
+  - Run live LLM-as-a-judge evals on production traffic and alert on quality drift
+  - Route failing traces to domain experts for rubric-based human review
+  - Turn production failures into datasets and regression experiments before shipping

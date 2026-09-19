@@ -1,0 +1,25 @@
+name: Orpheus TTS
+description: Open-source text-to-speech system built on a Llama 3B backbone for human-like intonation, emotion tags, and zero-shot voice cloning. Streaming latency around 200ms, with pretrained and finetuned English models plus a multilingual research family.
+tagline: Llama-backed speech with emotion and streaming
+
+github_url: https://github.com/canopyai/Orpheus-TTS
+website_url: https://canopylabs.ai
+install_command: pip install orpheus-tts
+
+category: Other
+tags: [python, tts, speech, llama, streaming, voice-cloning, realtime]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Closed TTS APIs sound good but lock voice quality behind a vendor, while
+  many open models lack streaming and emotion control. Orpheus uses a Llama
+  backbone so speech can carry tags for emotion and intonation, clone voices
+  zero-shot, and stream at roughly 200ms for realtime agents.
+
+use_cases:
+  - Stream conversational TTS for a voice agent with about 200ms latency
+  - Clone a voice from a short sample without training a speaker adapter
+  - Control emotion and intonation with simple tags in the prompt
+  - Fine-tune a multilingual Orpheus checkpoint on custom speech data
