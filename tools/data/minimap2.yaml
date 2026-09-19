@@ -1,0 +1,25 @@
+name: minimap2
+description: Versatile pairwise aligner for genomic and spliced nucleotide sequences. Minimap2 maps long reads and assemblies so NGS ML pipelines start from alignments instead of raw FASTQ.
+tagline: Fast pairwise aligner for long genomic reads
+
+github_url: https://github.com/lh3/minimap2
+website_url: https://lh3.github.io/minimap2
+docs_url: https://lh3.github.io/minimap2/minimap2.html
+
+category: Data
+tags: [c, bioinformatics, alignment, long-reads, ngs, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Long-read and assembly mapping is too slow with short-read
+  aligners. Minimap2 maps PacBio, ONT, and spliced RNA reads
+  quickly so variant, isoform, and foundation-model pipelines
+  start from SAM/PAF instead of unaligned FASTQ.
+
+use_cases:
+  - Map Oxford Nanopore reads to a reference before a variant model
+  - Align spliced RNA-seq for isoform or splice-site classifiers
+  - Overlay long-read assemblies as features for a pangenome model
+  - Generate PAF alignments as input to a sequence embedding pipeline

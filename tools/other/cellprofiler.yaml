@@ -1,0 +1,26 @@
+name: CellProfiler
+description: Open-source application for biological image analysis. CellProfiler measures cells, organelles, and phenotypes from microscopy plates so imaging ML pipelines start from quantified features instead of raw pixels.
+tagline: Quantitative biology from microscopy images
+
+github_url: https://github.com/CellProfiler/CellProfiler
+website_url: https://cellprofiler.org
+docs_url: https://cellprofiler.org/manuals
+install_command: pip install cellprofiler
+
+category: Other
+tags: [python, microscopy, image-analysis, biology, high-content, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  High-content screens produce thousands of microscopy fields that
+  are hard to score by hand. CellProfiler identifies cells and
+  organelles, then exports per-object measurements so phenotype
+  models train on features instead of unlabeled pixels.
+
+use_cases:
+  - Measure cell morphology and intensity features from a screening plate
+  - Export object tables as labels for a phenotype classification model
+  - Batch-process time-lapse microscopy into per-cell trajectories
+  - Build a high-content imaging QC pipeline before deep learning

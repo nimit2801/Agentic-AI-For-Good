@@ -1,0 +1,25 @@
+name: OpenSlide
+description: C library for reading virtual slide images. OpenSlide opens whole-slide formats from Aperio, Hamamatsu, and others so digital pathology ML pipelines load tiles without a vendor SDK.
+tagline: Read whole-slide images without a vendor SDK
+
+github_url: https://github.com/openslide/openslide
+website_url: https://openslide.org
+docs_url: https://openslide.org/api/openslide_8h.html
+
+category: Data
+tags: [c, pathology, whole-slide, medical-imaging, microscopy, open-source]
+pricing: free
+is_open_source: true
+license: LGPL-2.1
+
+problem_solved: |
+  Pathology scanners write proprietary pyramid files that PyTorch
+  cannot open. OpenSlide reads SVS, NDPI, and related formats so
+  digital pathology models sample tiles from whole slides without
+  a vendor library.
+
+use_cases:
+  - Load Aperio SVS slides and extract tiles for a tumor classifier
+  - Stream pyramid levels into a WSI preprocessing pipeline
+  - Convert vendor whole-slide files into training-ready image tiles
+  - Inspect slide metadata before building a pathology dataset
