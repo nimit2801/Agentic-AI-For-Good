@@ -1,0 +1,27 @@
+name: Browserbase
+description: Cloud platform that gives AI agents real headless browsers, web search, page fetch, and identity to get past CAPTCHAs and auth walls. One API key spins up isolated Chromium sessions at scale with logs, live view, and session replay.
+tagline: Browser infrastructure for agents that use the real web
+
+website_url: https://www.browserbase.com
+docs_url: https://docs.browserbase.com
+install_command: |
+  pip install browserbase
+  npm install @browserbasehq/sdk
+
+category: Dev Tools
+tags: [browser-automation, headless-chrome, agents, cloud, captcha, playwright, saas]
+pricing: freemium
+is_open_source: false
+
+problem_solved: |
+  Agents need the live web, not just APIs, but self-hosting headless Chrome,
+  proxies, CAPTCHA solving, and session isolation is a full ops job. Browserbase
+  supplies production Chromium fleets, search, fetch, and agent identity so
+  teams can run browser agents without assembling five vendors or managing
+  browser clusters.
+
+use_cases:
+  - Run thousands of isolated browser sessions for scraping and form filling
+  - Give an LLM agent a real browser to complete multi-step web workflows
+  - Fetch pages as markdown or search the web without spinning a full session
+  - Debug agent runs with live view, logs, and session replay
