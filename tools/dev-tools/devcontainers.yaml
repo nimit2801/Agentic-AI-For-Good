@@ -1,0 +1,26 @@
+name: Devcontainers
+description: Reference CLI for the Development Container Specification. Reads devcontainer.json to create, start, and configure a containerized coding environment so the same tools, runtimes, and settings work in VS Code, GitHub Codespaces, and CI.
+tagline: One spec for containerized development environments
+
+github_url: https://github.com/devcontainers/cli
+website_url: https://containers.dev
+docs_url: https://containers.dev
+install_command: npm install -g @devcontainers/cli
+
+category: Dev Tools
+tags: [javascript, docker, vscode, codespaces, cli, reproducibility, ci]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  ML and app repos fail on new machines because Python, CUDA, and system
+  packages differ from CI. Devcontainers encode the environment in
+  devcontainer.json so editors, Codespaces, and pipelines build the same
+  image instead of documenting a fragile local setup.
+
+use_cases:
+  - Check in a GPU-ready ML environment that VS Code and Codespaces both launch
+  - Run the same container definition in GitHub Actions as developers use locally
+  - Share Features and Templates so teams reuse CUDA or Node setup steps
+  - Bootstrap a contributor environment with one CLI command from a clone

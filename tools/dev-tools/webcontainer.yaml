@@ -1,0 +1,26 @@
+name: WebContainer
+description: Browser-based Node.js runtime from StackBlitz that boots a full Linux-like environment in a tab. Run npm, dev servers, and Wasm workloads inside a web app for tutorials, IDEs, and AI coding products without a remote VM.
+tagline: Node.js dev environments inside the browser
+
+github_url: https://github.com/stackblitz/webcontainer-core
+website_url: https://webcontainers.io
+docs_url: https://webcontainers.io/guides/quickstart
+install_command: npm install @webcontainer/api
+
+category: Dev Tools
+tags: [javascript, typescript, browser, nodejs, sandbox, stackblitz, ide]
+pricing: freemium
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Interactive coding products usually need a remote container per user, which is
+  slow, costly, and hard to embed. WebContainer runs Node.js, npm, and a
+  filesystem in the browser so tutorials, PR previews, and AI IDEs can execute
+  real full-stack apps on the user's CPU without provisioning a backend sandbox.
+
+use_cases:
+  - Embed an in-browser Node.js playground in docs or a course
+  - Power an AI IDE that installs packages and runs a dev server in the tab
+  - Preview pull requests as disposable full-stack apps without a cloud VM
+  - Let SDK maintainers ship a live demo that runs npm install in the browser
