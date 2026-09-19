@@ -1,0 +1,35 @@
+name: DataX
+description: DataX is Alibaba's open-source offline data synchronization tool and platform. It provides a unified framework for efficiently transferring data between heterogeneous data sources including relational databases, HDFS, Hive, ODPS, HBase, and various NoSQL stores with built-in concurrency control and fault tolerance.
+tagline: Alibaba's open-source offline data synchronization platform
+
+github_url: https://github.com/alibaba/DataX
+website_url: https://github.com/alibaba/DataX
+docs_url: https://github.com/alibaba/DataX/blob/master/userGuid.md
+
+category: Data
+tags:
+  - etl
+  - data-integration
+  - data-synchronization
+  - batch-processing
+  - alibaba
+  - hadoop
+  - hdfs
+  - hive
+pricing: free
+is_open_source: true
+license: NOASSERTION
+
+problem_solved: |
+  Moving data between heterogeneous storage systems requires writing custom
+  connectors for each source-destination pair, leading to fragmented ETL pipelines
+  and maintenance overhead. DataX solves this by providing a unified plugin-based
+  framework with pre-built connectors for 20+ data sources, enabling efficient
+  offline batch synchronization with automatic concurrency control, rate limiting,
+  and fault-tolerant retry mechanisms.
+
+use_cases:
+  - "Synchronize data between MySQL, PostgreSQL, Oracle, and SQL Server in batch pipelines"
+  - "Migrate data from Hadoop HDFS and Hive to cloud data warehouses"
+  - "Build offline ETL workflows importing data from MongoDB, HBase, and Elasticsearch"
+  - "Transfer data between Alibaba Cloud ODPS and on-premises relational databases"
