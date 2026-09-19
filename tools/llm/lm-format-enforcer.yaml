@@ -1,0 +1,25 @@
+name: LM Format Enforcer
+description: Token-filtering library that enforces JSON Schema or regex on any Python LLM at decode time. Unlike rigid formatters, it lets the model choose whitespace and field order while still guaranteeing parseable structured output.
+tagline: Enforce JSON Schema without freezing the model's style
+
+github_url: https://github.com/noamgat/lm-format-enforcer
+install_command: pip install lm-format-enforcer
+
+category: LLM
+tags: [python, llm, structured-output, json-schema, regex, transformers, vllm, constrained-decoding]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Prompted JSON still comes back malformed, and many constrained decoders force
+  exact field order and whitespace, which can hurt quality. LM Format Enforcer
+  filters illegal tokens at each step for transformers, vLLM, llama.cpp, and
+  Haystack while still allowing natural formatting, so APIs get valid JSON without
+  rewriting the generation loop.
+
+use_cases:
+  - Force Pydantic JSON Schema output from a Hugging Face transformers pipeline
+  - Enable guided JSON or regex decoding on a vLLM OpenAI-compatible server
+  - Extract typed records from local llama.cpp or ExLlamaV2 models
+  - Constrain batched or beam-search generations where each beam has its own schema

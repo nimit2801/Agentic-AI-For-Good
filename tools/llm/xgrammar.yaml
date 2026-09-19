@@ -1,0 +1,27 @@
+name: XGrammar
+description: Fast structured generation library that constrains LLM output with JSON, regex, or context-free grammars. Default backend in vLLM, SGLang, TensorRT-LLM, and MLC-LLM, with near-zero overhead for JSON decoding across CPU and GPU.
+tagline: Near-zero-overhead structured generation for LLMs
+
+github_url: https://github.com/mlc-ai/xgrammar
+website_url: https://xgrammar.mlc.ai/docs
+docs_url: https://xgrammar.mlc.ai/docs
+install_command: pip install xgrammar
+
+category: LLM
+tags: [python, llm, structured-output, json-schema, grammar, vllm, sglang, constrained-decoding]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Serving stacks need guaranteed JSON or grammar-valid tokens without adding
+  latency to every decode step. Prompt-only constraints still emit invalid JSON,
+  and slow constrained decoders kill throughput. XGrammar compiles grammars into
+  an efficient token mask used by vLLM, SGLang, and TensorRT-LLM, so production
+  APIs get 100 percent structural correctness at near unconstrained speed.
+
+use_cases:
+  - Serve JSON Schema constrained chat completions on vLLM or SGLang with almost no extra latency
+  - Constrain tool-calling and function-calling outputs to a context-free grammar
+  - Generate regex-valid IDs, dates, or enums from open-source models
+  - Integrate portable structured decoding into C++, Python, JavaScript, or Swift inference stacks

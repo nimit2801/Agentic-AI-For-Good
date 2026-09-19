@@ -1,0 +1,27 @@
+name: MInference
+description: Microsoft library that speeds up long-context LLM prefill with approximate dynamic sparse attention. Cuts prefill latency by up to 10x on A100 GPUs while keeping accuracy, with drop-in hooks for Hugging Face and vLLM.
+tagline: Sparse attention for faster long-context prefill
+
+github_url: https://github.com/microsoft/MInference
+website_url: https://aka.ms/MInference
+docs_url: https://aka.ms/MInference
+install_command: pip install minference
+
+category: LLM
+tags: [python, llm, inference, sparse-attention, long-context, microsoft, vllm]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Long-context prefills scale with sequence length squared, so 100k-token prompts
+  stall GPUs before the first token. Full attention is accurate but slow; static
+  sparsity often drops quality. MInference estimates which attention indices
+  matter at runtime and skips the rest, so serving stacks can take long documents
+  without waiting on dense prefill.
+
+use_cases:
+  - Speed up Hugging Face generate() for 32k-plus token prompts on a single A100
+  - Drop sparse prefill into a vLLM serving path for retrieval-heavy chat
+  - Benchmark long-context models without paying full quadratic attention cost
+  - Serve document QA agents that stuff large PDFs into the prompt window
