@@ -1,0 +1,26 @@
+name: Chunkr
+description: Open-source document intelligence API that turns PDFs, slides, Word docs, and images into layout-aware RAG chunks. Layout analysis, OCR with bounding boxes, and semantic chunking so retrieval pipelines get structured segments instead of naive page splits.
+tagline: Layout-aware chunks for RAG from complex documents
+
+github_url: https://github.com/lumina-ai-inc/chunkr
+website_url: https://chunkr.ai
+docs_url: https://docs.chunkr.ai
+install_command: pip install chunkr-ai
+
+category: RAG
+tags: [python, rag, documents, ocr, chunking, pdf, layout-analysis]
+pricing: freemium
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Naive text splitters ignore tables, headings, and figures, so RAG retrieves
+  broken context from PDFs and scans. Chunkr runs layout analysis and OCR,
+  then emits semantically bounded chunks with metadata so embedding pipelines
+  can index invoices, papers, and slide decks without hand-written parsers.
+
+use_cases:
+  - Convert a PDF corpus into RAG-ready markdown chunks with bounding boxes
+  - OCR scanned invoices and medical reports before loading a vector store
+  - Tune chunk length to a GPT tokenizer instead of splitting on page breaks
+  - Self-host document parsing with Docker Compose when cloud APIs are off limits
