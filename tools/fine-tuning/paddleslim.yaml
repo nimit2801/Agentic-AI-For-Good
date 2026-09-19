@@ -1,0 +1,35 @@
+name: PaddleSlim
+description: PaddleSlim is an open-source library for deep model compression and architecture search. It provides tools for pruning, quantization, distillation, and neural architecture search on PaddlePaddle models, enabling efficient deployment of compressed models to mobile and edge devices.
+tagline: Deep model compression and neural architecture search toolkit
+
+github_url: https://github.com/PaddlePaddle/PaddleSlim
+website_url: https://paddleslim.readthedocs.io/zh_CN/latest/
+docs_url: https://paddleslim.readthedocs.io/zh_CN/latest/
+
+install_command: pip install paddleslim
+
+category: Fine-tuning
+tags:
+  - compression
+  - quantization
+  - pruning
+  - distillation
+  - neural-architecture-search
+  - paddlepaddle
+  - edge-deployment
+pricing: free
+is_open_source: true
+license: Apache 2.0
+
+problem_solved: |
+  Large deep learning models achieve high accuracy but are too computationally expensive
+  for mobile and edge deployment. PaddleSlim addresses this by providing a unified toolkit
+  for model compression including structured and unstructured pruning, post-training and
+  quantization-aware training, knowledge distillation, and neural architecture search —
+  enabling up to 10x model size reduction with minimal accuracy loss.
+
+use_cases:
+  - "Compress large language models for edge deployment using structured pruning and quantization"
+  - "Apply knowledge distillation to transfer accuracy from large teacher models to smaller student models"
+  - "Search optimal model architectures for mobile vision tasks with neural architecture search"
+  - "Quantize PaddlePaddle models to INT8 for accelerated inference on ARM devices"
