@@ -1,0 +1,27 @@
+name: NNCF
+description: Intel Neural Network Compression Framework for post-training and training-time quantization, pruning, and weight compression. Optimizes PyTorch, ONNX, TorchFX, and OpenVINO models for faster inference with a small accuracy drop.
+tagline: Compress neural nets for OpenVINO and PyTorch inference
+
+github_url: https://github.com/openvinotoolkit/nncf
+website_url: https://docs.openvino.ai/nncf
+docs_url: https://docs.openvino.ai/nncf
+install_command: pip install nncf
+
+category: Fine-tuning
+tags: [python, quantization, pruning, compression, openvino, pytorch, onnx, intel]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Full-precision models are too large and slow for edge and CPU inference, but
+  naive quantization often wrecks accuracy. NNCF applies post-training quantization,
+  weight compression, pruning, and quantization-aware training on PyTorch, ONNX,
+  and OpenVINO graphs so teams can ship INT8 or compressed weights with a
+  measured accuracy budget instead of hand-tuning each layer.
+
+use_cases:
+  - Post-training INT8 quantization of an OpenVINO or ONNX model with a small calibration set
+  - Quantization-aware training of a PyTorch model to recover accuracy after compression
+  - Weight-only compression of LLMs before export to OpenVINO IR
+  - Prune convolutional backbones for faster CPU inference in production
