@@ -1,0 +1,26 @@
+name: Feathr
+description: LinkedIn-origin feature store and data platform for defining, sharing, and serving ML features at scale. Point-in-time-correct joins, time-window aggregations, and online materialization so training and production use the same transformations.
+tagline: Enterprise feature store from LinkedIn
+
+github_url: https://github.com/feathr-ai/feathr
+docs_url: https://feathr-ai.github.io/feathr/
+install_command: pip install feathr
+
+category: Data
+tags: [python, feature-store, spark, mlops, azure, feature-engineering, linkedin]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Teams rewrite feature logic for training and serving, then leak future
+  labels through naive joins. Feathr lets you name transformations once,
+  compute point-in-time-correct training sets on Spark, and materialize the
+  same features for online inference so models do not train on data they
+  would never see in production.
+
+use_cases:
+  - Define sliding-window aggregations on batch or streaming sources with Pythonic APIs
+  - Build point-in-time-correct training datasets without label leakage
+  - Materialize features to an online store for low-latency model serving
+  - Share named features across teams instead of copying Spark jobs
