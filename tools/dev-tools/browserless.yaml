@@ -1,0 +1,29 @@
+name: Browserless
+description: Deploy headless browsers in Docker. Run on our cloud or bring your own. Free for non-commercial uses.
+tagline: Headless browser infrastructure for web scraping and automation
+
+github_url: https://github.com/browserless/browserless
+website_url: https://www.browserless.io
+docs_url: https://docs.browserless.io
+
+category: Dev Tools
+tags: [browser, headless, puppeteer, playwright, docker, scraping, automation]
+pricing: freemium
+is_open_source: true
+license: SSPL-1.0
+
+install_command: docker run -p 3000:3000 ghcr.io/browserless/chromium
+
+problem_solved: |
+  Running headless browsers at scale is fragile — Chrome crashes, memory leaks, and bot detection
+  block scripts. Browserless packages Chromium into a resilient Docker service with queueing,
+  session persistence, live debug viewing, and anti-detection features. It exposes a WebSocket
+  endpoint that works with standard Puppeteer and Playwright clients, so you get production-grade
+  browser automation without managing Chrome processes yourself.
+
+use_cases:
+  - Scrape JavaScript-rendered sites at scale without managing headless Chrome infrastructure
+  - Automate form submission and data extraction across websites using Puppeteer or Playwright
+  - Generate PDFs and screenshots from web pages via a simple REST API
+  - Run browser-based integration tests in CI with session replay for debugging failures
+  - Bypass bot detection and captchas with built-in stealth mode and residential proxy rotation
