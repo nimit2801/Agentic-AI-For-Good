@@ -1,0 +1,35 @@
+name: Apache Linkis
+description: Apache Linkis builds a computation middleware layer to facilitate connection, governance, and orchestration between upper applications and underlying data engines. It provides standardized REST, WebSocket, and JDBC interfaces for accessing engines like Spark, Hive, Presto, and Flink with unified resource management.
+tagline: Computation middleware for connecting applications to data engines
+
+github_url: https://github.com/apache/linkis
+website_url: https://linkis.apache.org/
+docs_url: https://linkis.apache.org/docs/latest/
+
+category: Data
+tags:
+  - middleware
+  - data-engineering
+  - spark
+  - hive
+  - flink
+  - presto
+  - jdbc
+  - apache
+pricing: free
+is_open_source: true
+license: Apache 2.0
+
+problem_solved: |
+  Big data platforms often require applications to integrate with multiple compute
+  engines using different APIs and connection patterns, creating fragmented resource
+  management and governance. Apache Linkis solves this by providing a unified
+  computation middleware layer with standard interfaces, enabling seamless access
+  to Spark, Hive, Presto, Flink, and other engines while centralizing user resources,
+  scripts, UDFs, and resource files across the entire data platform.
+
+use_cases:
+  - "Unify access to multiple data engines through standard REST, WebSocket, and JDBC interfaces"
+  - "Centralize resource management and governance across Spark, Hive, Presto, and Flink workloads"
+  - "Enable cross-engine data pipeline orchestration with shared variables, UDFs, and resource files"
+  - "Build data platform portals that abstract engine complexity from end users"

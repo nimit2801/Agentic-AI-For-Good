@@ -1,0 +1,37 @@
+name: GridDB
+description: GridDB is a next-generation open source database designed for time series IoT and big data workloads. It combines the performance of NoSQL with SQL query capabilities, providing in-memory processing, automatic data tiering, and high concurrency for industrial IoT applications.
+tagline: High-performance time-series database for IoT and big data
+
+github_url: https://github.com/griddb/griddb
+website_url: https://griddb.org/
+docs_url: https://docs.griddb.net/
+
+install_command: pip install griddb-python
+
+category: Data
+tags:
+  - time-series
+  - database
+  - iot
+  - big-data
+  - nosql
+  - sql
+  - in-memory
+  - industrial-iot
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Industrial IoT generates massive volumes of time-series data that traditional
+  relational databases cannot ingest or query efficiently. GridDB addresses this
+  by providing a purpose-built time-series database with in-memory hot storage,
+  automatic cold data tiering, and key-container data modeling optimized for
+  sensor data. Its hybrid NoSQL/SQL architecture enables both high-speed ingestion
+  and complex analytical queries on time-series workloads.
+
+use_cases:
+  - "Ingest high-frequency sensor data from manufacturing equipment with sub-millisecond latency"
+  - "Store and analyze time-series telemetry from connected vehicles and fleets"
+  - "Build smart city platforms aggregating IoT data from traffic, energy, and environmental sensors"
+  - "Perform real-time anomaly detection on industrial equipment using SQL time-window queries"
