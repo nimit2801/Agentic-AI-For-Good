@@ -1,0 +1,27 @@
+name: SDL
+description: Simple DirectMedia Layer is a cross-platform C library for low-level access to audio, keyboard, mouse, joystick, and graphics hardware. SDL is the foundation for games, emulators, and ML visualization apps that need portable windowing and input without a full GUI toolkit.
+tagline: Cross-platform audio, input, and graphics foundation library
+
+github_url: https://github.com/libsdl-org/SDL
+website_url: https://libsdl.org
+docs_url: https://wiki.libsdl.org
+install_command: brew install sdl3
+
+category: Dev Tools
+tags: [graphics, audio, input, windowing, gamedev, c, cross-platform]
+pricing: free
+is_open_source: true
+license: Zlib
+
+problem_solved: |
+  Games, emulators, and interactive ML viewers need windows, audio, and
+  input that work on Windows, macOS, Linux, and consoles. Writing that
+  per platform is a large surface, and full GUI toolkits are the wrong
+  abstraction for real-time rendering. SDL provides a portable C API for
+  hardware access so graphics code stays independent of Win32, Cocoa, and X11.
+
+use_cases:
+  - Create a portable window and renderer for a C or C++ ML visualization demo
+  - Handle keyboard, mouse, gamepad, and audio in a cross-platform interactive tool
+  - Pair with Dear ImGui or Nuklear to host an in-app debug UI
+  - Ship games and emulators that share one input and graphics backend across desktops
