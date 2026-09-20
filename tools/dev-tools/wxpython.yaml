@@ -1,0 +1,27 @@
+name: wxPython
+description: Cross-platform Python bindings for the wxWidgets native GUI toolkit. wxPython (Project Phoenix) lets Python apps use native widgets on Windows, macOS, and Linux, which is useful for desktop ML tools, data-labeling apps, and operator consoles that should look like the host OS.
+tagline: Native Python GUI toolkit built on wxWidgets
+
+github_url: https://github.com/wxWidgets/Phoenix
+website_url: https://wxpython.org
+docs_url: https://docs.wxpython.org
+install_command: pip install wxPython
+
+category: Dev Tools
+tags: [python, gui, desktop, wxwidgets, native, cross-platform, ui]
+pricing: free
+is_open_source: true
+license: wxWindows Library Licence
+
+problem_solved: |
+  Python ML and data tools often need a real desktop UI with native look
+  and feel, not a web wrapper or a custom-drawn toolkit. Tkinter is limited,
+  and many Python GUI stacks do not use OS widgets. wxPython wraps wxWidgets
+  so Python apps get native controls, layouts, and dialogs on Windows, macOS,
+  and Linux from one codebase.
+
+use_cases:
+  - Build a native-looking Python desktop app for labeling, review, or experiment control
+  - Ship an operator console that uses OS widgets instead of a browser UI
+  - Wrap research scripts in a cross-platform GUI with menus, dialogs, and file pickers
+  - Prototype internal Windows, macOS, and Linux tools from a single Python codebase
