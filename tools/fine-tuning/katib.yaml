@@ -1,0 +1,26 @@
+name: Katib
+description: Kubeflow AutoML operator for hyperparameter tuning, neural architecture search, and early stopping on Kubernetes. Runs experiments as jobs with a Python SDK, metrics collectors, and a dashboard.
+tagline: Kubernetes-native hyperparameter tuning for ML jobs
+
+github_url: https://github.com/kubeflow/katib
+website_url: https://www.kubeflow.org/docs/components/katib
+docs_url: https://www.kubeflow.org/docs/components/katib
+install_command: pip install -U kubeflow-katib
+
+category: Fine-tuning
+tags: [python, kubernetes, kubeflow, hyperparameter-tuning, automl, nas]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Tuning learning rates, batch sizes, and architectures for training jobs on
+  Kubernetes usually means custom loops and ad hoc job YAML. Katib runs those
+  experiments as cluster jobs with search algorithms, early stopping, and a
+  dashboard so AutoML sits next to Kubeflow training.
+
+use_cases:
+  - Sweep hyperparameters for a Kubeflow training job with random, Bayesian, or grid search
+  - Stop underperforming trials early to save GPU time on a shared cluster
+  - Run neural architecture search experiments as Kubernetes jobs
+  - Drive Katib trials from Python with the kubeflow-katib SDK

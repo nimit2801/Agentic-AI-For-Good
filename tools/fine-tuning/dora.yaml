@@ -1,0 +1,25 @@
+name: DoRA
+description: Weight-Decomposed Low-Rank Adaptation from NVIDIA (ICML 2024). Splits pretrained weights into magnitude and direction so LoRA-style adapters use more of the model capacity, and ships in Hugging Face PEFT via use_dora=True.
+tagline: LoRA with decomposed magnitude and direction
+
+github_url: https://github.com/NVlabs/DoRA
+website_url: https://nbasyl.github.io/DoRA-project-page/
+docs_url: https://huggingface.co/docs/peft/en/developer_guides/lora#weight-decomposed-low-rank-adaptation-dora
+install_command: pip install peft
+
+category: Fine-tuning
+tags: [python, fine-tuning, lora, peft, nvidia, icml, adapters]
+pricing: free
+is_open_source: true
+
+problem_solved: |
+  Standard LoRA updates a low-rank residual while leaving magnitude and
+  direction of the frozen weights coupled, which can leave capacity unused.
+  DoRA decomposes those weights and learns a directional update, so adapters
+  often match or beat LoRA at the same rank without a full fine-tune.
+
+use_cases:
+  - Fine-tune an LLM with PEFT by setting use_dora=True on LoraConfig
+  - Swap LoRA for DoRA on Conv1d, Conv2d, or bitsandbytes-quantized linear layers
+  - Compare DoRA and LoRA at the same rank on a custom instruction dataset
+  - Train a vision or diffusion adapter with weight-decomposed low-rank updates
