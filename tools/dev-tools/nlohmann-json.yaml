@@ -1,0 +1,27 @@
+name: nlohmann json
+description: Header-only JSON for Modern C++ with an intuitive API that feels like Python dicts. nlohmann/json is the default C++ JSON library in many ML runtimes, config loaders, and inference servers that need serialization without a heavy parser dependency.
+tagline: Header-only JSON library for modern C++
+
+github_url: https://github.com/nlohmann/json
+website_url: https://json.nlohmann.me
+docs_url: https://json.nlohmann.me/home/exceptions/
+install_command: brew install nlohmann-json
+
+category: Dev Tools
+tags: [cpp, json, serialization, header-only, config, parsing]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  C++ ML services and tools constantly read and write JSON configs,
+  API payloads, and model metadata. Hand-rolled parsers and older C
+  libraries are verbose and error-prone. nlohmann/json is a single-header
+  library with an STL-like API, so C++ code can treat JSON as first-class
+  values without generating bindings.
+
+use_cases:
+  - Parse model-serving configs and request payloads in a C++ inference server
+  - Serialize experiment metadata and metrics to JSON from a C++ training tool
+  - Load nested configuration files with an STL-like C++ JSON API
+  - Exchange JSON between a C++ runtime and a Python or TypeScript control plane
