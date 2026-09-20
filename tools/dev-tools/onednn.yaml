@@ -1,0 +1,27 @@
+name: oneDNN
+description: An open source cross-platform performance library of deep learning primitives. oneDNN implements the oneAPI DNN spec with optimized kernels for Intel, AMD, Arm CPUs and Intel GPUs, and is the CPU backend inside PyTorch, TensorFlow, OpenVINO, and llama.cpp.
+tagline: Cross-platform deep learning primitives for CPUs and GPUs
+
+github_url: https://github.com/uxlfoundation/oneDNN
+website_url: https://uxlfoundation.github.io/oneDNN/
+docs_url: https://uxlfoundation.github.io/oneDNN/
+
+category: Dev Tools
+tags: [deep-learning, cpu, gpu, oneapi, kernels, pytorch, tensorflow, performance]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Framework authors should not rewrite convolution, matmul, and attention
+  kernels for every CPU and GPU. oneDNN is a UXL Foundation library of
+  optimized deep learning primitives for Intel, AMD, and Arm CPUs plus
+  Intel GPUs, so PyTorch, TensorFlow, OpenVINO, and llama.cpp can share
+  one high-performance backend instead of each shipping a custom kernel
+  stack.
+
+use_cases:
+  - Speed up PyTorch or TensorFlow CPU inference with oneDNN convolution and matmul kernels
+  - Use llama.cpp or OpenVINO on Intel and Arm CPUs without writing custom GEMM kernels
+  - Port a deep learning runtime to AMD64, AArch64, or Intel GPU via oneDNN primitives
+  - Benchmark fused DNN ops across CPUs without depending on CUDA

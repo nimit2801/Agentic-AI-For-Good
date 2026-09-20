@@ -1,0 +1,29 @@
+name: OpenBLAS
+description: An optimized BLAS library based on GotoBLAS2. OpenBLAS ships tuned GEMM, LAPACK, and multi-threaded linear algebra for x86, ARM, POWER, and RISC-V, and is the default CPU backend many NumPy, SciPy, and ML builds use for dense matrix math.
+tagline: Optimized BLAS and LAPACK for scientific and ML compute
+
+github_url: https://github.com/OpenMathLib/OpenBLAS
+website_url: https://www.openblas.net
+docs_url: https://www.openmathlib.org/OpenBLAS/docs/
+
+category: Data
+tags: [blas, lapack, linear-algebra, numpy, cpu, gemm, scientific-computing]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+install_command: brew install openblas
+
+problem_solved: |
+  Dense linear algebra is the inner loop of NumPy, SciPy, and many CPU
+  ML kernels. Reference BLAS is correct but slow; vendor libraries are
+  locked to one CPU family. OpenBLAS is a BSD GotoBLAS2 fork with
+  architecture-tuned GEMM and LAPACK, so scientific and ML stacks get
+  competitive multi-threaded matmul on x86, ARM, POWER, and RISC-V
+  without a proprietary runtime.
+
+use_cases:
+  - Build NumPy or SciPy against OpenBLAS for faster CPU matmul and LAPACK
+  - Link a C++ ML runtime to a multi-threaded GEMM that works on x86 and ARM
+  - Replace a slow reference BLAS in a training or inference binary
+  - Ship a portable linear-algebra backend without depending on MKL
