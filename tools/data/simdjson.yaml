@@ -1,0 +1,26 @@
+name: simdjson
+description: A SIMD-accelerated C++ JSON parser that processes gigabytes per second. simdjson is used by ClickHouse, Node.js, Milvus, and other data systems that need to ingest JSON at line rate without the usual parser bottleneck.
+tagline: SIMD JSON parser that reads gigabytes per second
+
+github_url: https://github.com/simdjson/simdjson
+website_url: https://simdjson.org
+docs_url: https://simdjson.org/api/latest/
+install_command: brew install simdjson
+
+category: Data
+tags: [json, parsing, simd, cpp, performance, data-ingest, clickhouse]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Data pipelines and vector databases often ingest huge JSON streams.
+  Conventional parsers become the bottleneck long before disk or network.
+  simdjson uses SIMD instructions to validate and parse JSON at gigabytes
+  per second, so analytics and ML ingest paths stay CPU-efficient at scale.
+
+use_cases:
+  - Ingest high-volume JSON logs or events into an analytics or feature pipeline
+  - Parse API payloads at line rate inside a C++ data system or vector database
+  - Replace a slow JSON parser in a ClickHouse, Milvus, or similar ingest path
+  - Benchmark and ship SIMD-accelerated JSON validation in a C++ service

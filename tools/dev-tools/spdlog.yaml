@@ -1,0 +1,26 @@
+name: spdlog
+description: A fast C++ logging library built on the fmt library, with synchronous and asynchronous loggers, rotating files, and a small header-only option. spdlog is the usual logging layer in C++ ML runtimes, inference servers, and native tools.
+tagline: Fast C++ logging library used across native ML stacks
+
+github_url: https://github.com/gabime/spdlog
+docs_url: https://github.com/gabime/spdlog/wiki
+install_command: brew install spdlog
+
+category: Dev Tools
+tags: [cpp, logging, fmt, async, observability, native]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  C++ inference servers and training tools need structured, high-throughput
+  logs without stalling the hot path. Naive printf logging is slow and
+  unformatted; heavy logging frameworks add dependencies. spdlog gives
+  fmt-based, optionally async logging with sinks for console and rotating
+  files, so native ML services can log at production volume.
+
+use_cases:
+  - Add async, rotating-file logs to a C++ model-serving binary
+  - Replace printf debugging in a native training or inference tool
+  - Share a fmt-based logging API across C++ microservices in an ML stack
+  - Tune log levels and sinks without rewriting application code
