@@ -1,0 +1,26 @@
+name: Gravitino
+description: Apache open data catalog for geo-distributed, federated metadata. Unifies Hive, Iceberg, filesets, and model metadata across regions so teams can query and govern a metadata lake instead of per-engine catalogs.
+tagline: Federated metadata lake for multi-engine data
+
+github_url: https://github.com/apache/gravitino
+website_url: https://gravitino.apache.org
+docs_url: https://gravitino.apache.org
+install_command: pip install apache-gravitino
+
+category: Data
+tags: [python, data-catalog, apache, iceberg, hive, metadata, lakehouse]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Multi-region data platforms end up with Hive, Iceberg, and file catalogs
+  that do not talk to each other. Gravitino federates those catalogs into
+  one metadata lake so jobs can discover tables and models across engines
+  and geographies.
+
+use_cases:
+  - Federate Hive and Iceberg catalogs into one metadata plane
+  - Discover filesets and model assets across regions from a single API
+  - Drive Spark or Trino jobs against Gravitino-registered tables
+  - Use the Python client to manage metalakes, catalogs, and schemas

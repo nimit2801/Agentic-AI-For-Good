@@ -1,0 +1,25 @@
+name: Fugue
+description: Unified interface for distributed computing. Run the same SQL, Python, Pandas, or Polars code on Spark, Dask, and Ray without rewrites, so local prototypes scale to a cluster.
+tagline: Write once, run on Spark, Dask, or Ray
+
+github_url: https://github.com/fugue-project/fugue
+website_url: https://fugue-tutorials.readthedocs.io/
+docs_url: https://fugue-tutorials.readthedocs.io/
+install_command: pip install fugue
+
+category: Data
+tags: [python, spark, dask, ray, pandas, sql, distributed]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Pandas code that works on a laptop usually has to be rewritten for Spark
+  or Ray when the dataset grows. Fugue lets you keep SQL and DataFrame logic
+  and execute it on Spark, Dask, or Ray without an engine-specific rewrite.
+
+use_cases:
+  - Prototype a transform in Pandas, then run the same code on Spark
+  - Execute FugueSQL over Pandas, Spark, Dask, or Ray backends
+  - Scale a local ETL script to a cluster without rewriting for each engine
+  - Share one SQL-plus-Python pipeline across teams using different compute

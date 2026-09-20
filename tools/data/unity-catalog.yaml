@@ -1,0 +1,26 @@
+name: Unity Catalog
+description: Open, multi-modal catalog for data and AI assets. Unifies tables, files, models, and more behind an open API so lakehouse metadata is not locked to one vendor, with an Apache-2.0 implementation and Python client.
+tagline: Open catalog for tables, files, and AI models
+
+github_url: https://github.com/unitycatalog/unitycatalog
+website_url: https://unitycatalog.io/
+docs_url: https://docs.unitycatalog.io/
+install_command: pip install unitycatalog
+
+category: Data
+tags: [python, data-catalog, lakehouse, metadata, open-source, ai-assets]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Lakehouse metadata often lives in a vendor catalog that does not cover
+  models or files, and cannot be self-hosted. Unity Catalog is an open
+  multi-modal catalog so tables, volumes, and AI assets share one API
+  across clouds and engines.
+
+use_cases:
+  - Register tables, files, and ML models in one open catalog API
+  - Self-host a lakehouse catalog instead of tying metadata to a single vendor
+  - Let Spark, DuckDB, or other engines discover assets through Unity Catalog
+  - Govern AI model artifacts next to the datasets they were trained on
