@@ -1,0 +1,28 @@
+name: Dear PyGui
+description: A fast GPU-accelerated Python GUI toolkit with minimal dependencies. Dear PyGui wraps Dear ImGui so you can build real-time dashboards, model inspectors, and debug tools that stay responsive while training or serving models.
+tagline: GPU-accelerated Python GUI toolkit with almost no dependencies
+
+github_url: https://github.com/hoffstadt/DearPyGui
+website_url: https://dearpygui.readthedocs.io/en/latest/
+docs_url: https://dearpygui.readthedocs.io/en/latest/
+
+category: Dev Tools
+tags: [python, gui, imgui, gpu, desktop, visualization]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install dearpygui
+
+problem_solved: |
+  Python GUI stacks are either slow (Tk) or heavy (Qt) when you need a
+  live inspector next to a training loop. Dear PyGui is a GPU-drawn ImGui
+  binding with almost no deps, so you can plot metrics, tweak hyperparameters,
+  and inspect tensors at interactive frame rates without standing up a web
+  frontend.
+
+use_cases:
+  - Build a real-time training dashboard that plots loss while a GPU job runs
+  - Ship a model inspector or hyperparameter tuner as a native Python window
+  - Prototype debug UIs for robotics and CV pipelines at interactive frame rates
+  - Replace a sluggish Tkinter control panel with a GPU-accelerated ImGui layout
