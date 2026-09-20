@@ -1,0 +1,25 @@
+name: OmniQuant
+description: ICLR 2024 quantization method for large language models. Calibrates weights and activations for W4A16, W3A16, W2A16, and mixed weight-activation schemes so LLaMA, OPT, Falcon, and Mixtral models can run at low bit-width with small accuracy loss.
+tagline: Calibrated low-bit quantization for LLMs
+
+github_url: https://github.com/OpenGVLab/OmniQuant
+website_url: https://arxiv.org/abs/2308.13137
+docs_url: https://github.com/OpenGVLab/OmniQuant
+
+category: Fine-tuning
+tags: [python, quantization, llm, llama, inference, compression, iclr]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Serving 70B-class models at full precision needs far more GPU memory than
+  most teams have. OmniQuant learns quantization parameters that keep W4/W3/W2
+  and mixed activation setups close to FP16 quality, so LLaMA, Mixtral, and
+  Falcon checkpoints fit on fewer GPUs or even mobile runtimes.
+
+use_cases:
+  - Quantize LLaMA or LLaMA-2 to W4A16 or W3A16 for single-GPU inference
+  - Compress Mixtral-8x7B from roughly 87GB to about 23GB with near-lossless 4-bit
+  - Run Falcon-180B-class checkpoints on a single A100 80GB after OmniQuant
+  - Export quantized LLaMA-2-Chat weights for on-device inference with MLC-LLM

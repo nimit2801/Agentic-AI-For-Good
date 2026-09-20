@@ -1,0 +1,25 @@
+name: OneTrainer
+description: GUI and CLI toolkit for training diffusion models. Supports full fine-tuning, LoRA, and embeddings across Stable Diffusion, SDXL, FLUX, PixArt, Hunyuan Video, and related architectures, with aspect-ratio bucketing, masked training, and dataset captioning.
+tagline: One-stop GUI for diffusion model training
+
+github_url: https://github.com/Nerogar/OneTrainer
+website_url: https://github.com/Nerogar/OneTrainer
+docs_url: https://github.com/Nerogar/OneTrainer/wiki
+
+category: Fine-tuning
+tags: [python, fine-tuning, diffusion, lora, stable-diffusion, flux, gui, image-generation]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Training custom diffusion models usually means stitching scripts, captions,
+  aspect-ratio buckets, and checkpoint formats by hand. OneTrainer packages
+  dataset tooling, LoRA and full fine-tuning, backups, and a sampling UI so
+  image and video training can run from one GUI or CLI.
+
+use_cases:
+  - Train a FLUX or SDXL LoRA on a custom image dataset from the OneTrainer GUI
+  - Caption and mask a dataset with BLIP, WD-1.4, or ClipSeg before masked training
+  - Fine-tune Hunyuan Video or other video diffusion models with aspect-ratio bucketing
+  - Convert between diffusers and checkpoint formats without writing conversion scripts

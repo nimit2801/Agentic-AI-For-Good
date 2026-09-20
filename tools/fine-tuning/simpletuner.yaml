@@ -1,0 +1,26 @@
+name: SimpleTuner
+description: Fine-tuning kit for image, video, and audio diffusion models. Covers LoRA, LyCORIS, and full-rank training across Flux, SDXL, Hunyuan Video, Wan, Qwen Image, and more, with a web UI, DeepSpeed, FSDP2, and multi-GPU support.
+tagline: Train image, video, and audio diffusion models from one kit
+
+github_url: https://github.com/bghira/SimpleTuner
+website_url: https://github.com/bghira/SimpleTuner
+docs_url: https://github.com/bghira/SimpleTuner/blob/main/documentation/QUICKSTART.md
+install_command: pip install simpletuner
+
+category: Fine-tuning
+tags: [python, fine-tuning, diffusion, lora, flux, video, multi-gpu, deepspeed]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Each diffusion family ships its own trainer, so switching from Flux LoRA to
+  video or audio fine-tuning means new scripts and memory hacks. SimpleTuner
+  gives one pipeline, web UI, and sharding stack for image, video, and audio
+  models from small LoRAs up to multi-GPU full-rank jobs.
+
+use_cases:
+  - Train a Flux or SDXL LoRA from the SimpleTuner web UI with aspect bucketing
+  - Fine-tune Hunyuan Video, Wan, or other video models with DeepSpeed offload
+  - Run multi-GPU full-rank training with FSDP2 on large diffusion checkpoints
+  - Caption datasets and cache embeddings so repeated runs skip re-encoding
