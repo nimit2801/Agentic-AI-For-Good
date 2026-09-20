@@ -1,0 +1,26 @@
+name: Dear ImGui
+description: A bloat-free immediate-mode GUI library for C++ with minimal dependencies. Dear ImGui is widely used for in-engine debug tools, profilers, and ML experiment viewers that overlay controls on OpenGL, Vulkan, DirectX, or Metal without a retained-mode UI stack.
+tagline: Immediate-mode C++ GUI for tools, debug, and visualization
+
+github_url: https://github.com/ocornut/imgui
+docs_url: https://github.com/ocornut/imgui/wiki
+
+category: Dev Tools
+tags: [gui, cpp, immediate-mode, graphics, debugging, visualization, gamedev]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Graphics, simulation, and ML tooling often needs live debug panels,
+  inspectors, and plots inside the same process that renders the scene.
+  Retained-mode UI frameworks add heavy dependencies and a separate event
+  loop. Dear ImGui is a header-friendly immediate-mode library that draws
+  widgets each frame through your existing renderer, so teams ship in-app
+  tools without a full GUI stack.
+
+use_cases:
+  - Build in-engine debug HUDs, profilers, and parameter tweakers for graphics or ML demos
+  - Overlay live training metrics and camera controls on an OpenGL or Vulkan viewport
+  - Prototype internal tools and asset inspectors without shipping a desktop UI framework
+  - Add a developer console and object inspector to a C++ simulation or inference viewer

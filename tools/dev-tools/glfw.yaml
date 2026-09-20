@@ -1,0 +1,27 @@
+name: GLFW
+description: A multi-platform C library for creating windows, OpenGL and Vulkan contexts, and receiving input. GLFW is the standard windowing layer for graphics, visualization, and ML demo apps that need portable keyboard, mouse, and joystick handling without tying to a full GUI toolkit.
+tagline: Multi-platform window, context, and input library for OpenGL and Vulkan
+
+github_url: https://github.com/glfw/glfw
+website_url: https://www.glfw.org
+docs_url: https://www.glfw.org/docs/latest/
+
+category: Dev Tools
+tags: [opengl, vulkan, windowing, graphics, cpp, input, cross-platform]
+pricing: free
+is_open_source: true
+license: Zlib
+install_command: brew install glfw
+
+problem_solved: |
+  OpenGL, Vulkan, and compute visualization apps need a window, a graphics
+  context, and input on Windows, macOS, and Linux. Writing that per platform
+  is a large, error-prone surface. GLFW provides a small C API for windows,
+  contexts, monitors, and input so graphics and ML demo code stays portable
+  without depending on Qt, GTK, or a game engine.
+
+use_cases:
+  - Create a portable OpenGL or Vulkan window for an ML visualization or inference demo
+  - Handle keyboard, mouse, and joystick input in a C++ graphics or simulation tool
+  - Pair with Dear ImGui to host an in-app debug UI on desktop
+  - Bootstrap cross-platform GPU context setup without writing Win32, Cocoa, and X11 code

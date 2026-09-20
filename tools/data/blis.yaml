@@ -1,0 +1,27 @@
+name: BLIS
+description: A portable framework for instantiating high-performance BLAS-like dense linear algebra libraries. BLIS exposes a finer-grained API than classic BLAS, with architecture-tuned kernels for GEMM and related operations used by NumPy, PyTorch, and scientific ML stacks.
+tagline: Portable high-performance BLAS-like dense linear algebra
+
+github_url: https://github.com/flame/blis
+docs_url: https://github.com/flame/blis/blob/master/docs/BLISTypedAPI.md
+
+category: Data
+tags: [blas, linear-algebra, gemm, scientific-computing, cpu, numerical-computing]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+install_command: brew install blis
+
+problem_solved: |
+  Dense matrix math is the inner loop of NumPy, SciPy, and many CPU ML
+  kernels, but classic BLAS is a coarse API and vendor libraries lock you
+  to one CPU family. BLIS is a portable framework that instantiates
+  BLAS-like operations from architecture-tuned microkernels, so scientific
+  and ML stacks get competitive GEMM on x86, ARM, and other targets without
+  a proprietary runtime.
+
+use_cases:
+  - Link a C or Fortran ML runtime to a portable, multi-threaded GEMM backend
+  - Replace a slow reference BLAS in NumPy or SciPy builds with BLIS kernels
+  - Prototype new dense linear-algebra kernels using BLIS's typed object API
+  - Ship CPU inference binaries that need fast matmul without depending on MKL
