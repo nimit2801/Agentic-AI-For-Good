@@ -1,0 +1,25 @@
+name: minGPT
+description: Minimal PyTorch re-implementation of GPT training from Andrej Karpathy. A small, readable codebase for learning transformer training rather than a production serving stack.
+tagline: Tiny GPT trainer you can actually read
+
+github_url: https://github.com/karpathy/minGPT
+website_url: https://github.com/karpathy/minGPT
+docs_url: https://github.com/karpathy/minGPT
+
+category: LLM
+tags: [python, pytorch, gpt, transformers, education, training]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Production GPT stacks hide the training loop behind layers of config and
+  distributed code, which is a poor way to learn how next-token models work.
+  minGPT is a short PyTorch implementation of GPT training you can read,
+  modify, and run on small datasets.
+
+use_cases:
+  - Teach transformer training from a codebase small enough to read in one sitting
+  - Prototype a character-level or small GPT on a custom corpus
+  - Compare attention and training-loop changes without a full Megatron stack
+  - Use as a reference when implementing your own GPT-style trainer

@@ -1,0 +1,25 @@
+name: JSONFormer
+description: Constrained decoding library that fills a JSON schema token by token so language models emit valid JSON without retries or regex post-processing.
+tagline: Generate schema-valid JSON from language models
+
+github_url: https://github.com/1rgs/jsonformer
+website_url: https://github.com/1rgs/jsonformer
+docs_url: https://github.com/1rgs/jsonformer
+install_command: pip install jsonformer
+
+category: LLM
+tags: [python, structured-output, json, constrained-decoding, transformers, llm]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Asking an LLM for JSON often yields extra prose, trailing commas, or missing
+  keys, so you retry or parse with brittle regex. JSONFormer walks the schema
+  during generation and only samples tokens that keep the output valid.
+
+use_cases:
+  - Generate API payloads or tool-call arguments that match a JSON schema
+  - Extract structured records from unstructured text without a repair loop
+  - Constrain Hugging Face model output to objects, arrays, and typed fields
+  - Prototype schema-guided generation before moving to a larger structured-output stack

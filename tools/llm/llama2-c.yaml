@@ -1,0 +1,25 @@
+name: llama2.c
+description: Train Llama 2-style models in PyTorch and run inference from a single roughly 700-line C file. A fullstack train-plus-inference kit aimed at tiny domain models and educational use.
+tagline: Llama 2 inference in one file of pure C
+
+github_url: https://github.com/karpathy/llama2.c
+website_url: https://github.com/karpathy/llama2.c
+docs_url: https://github.com/karpathy/llama2.c
+
+category: LLM
+tags: [c, llama, inference, education, pytorch, tiny-models]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Running even a small Llama-style model usually means a Python stack, CUDA,
+  and a large checkpoint. llama2.c trains tiny domain models in PyTorch then
+  infers them from one C file you can compile with gcc, so CPU inference stays
+  simple and portable.
+
+use_cases:
+  - Compile run.c and generate text from a tiny Llama 2 checkpoint on a laptop CPU
+  - Train a small domain model in PyTorch, export weights, and infer in C
+  - Teach LLM inference internals from a single readable C implementation
+  - Experiment with custom tokenizers and TinyStories-scale models without a GPU cluster
