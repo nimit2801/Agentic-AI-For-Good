@@ -1,0 +1,24 @@
+name: SIE
+description: |-
+  Open-source inference server and production cluster serving 100+ open models through one OpenAI-compatible API. Handles search, document-to-markdown, structured output, content safety, agent loops, translation, vision, and transcription with on-demand loading.
+problem_solved: |-
+  Replacing the patchwork of separate model servers per task with one unified system that serves embedding, retrieval, OCR, guardrails, chat, and vision models via a single OpenAI-compatible API with Kubernetes and Helm deployment support.
+use_cases:
+  - "Unified inference cluster for agent search, retrieval, and reranking"
+  - "Document-to-markdown conversion with OCR and vision models"
+  - "Structured JSON output extraction and content safety guardrails"
+  - "Multi-model serving with on-demand loading and LRU eviction"
+github_url: https://github.com/superlinked/sie
+website_url: https://superlinked.com
+docs_url: https://superlinked.com/docs/
+category: LLM
+tags:
+  - inference-server
+  - open-source-models
+  - kubernetes
+  - openai-compatible
+  - agent-infrastructure
+pricing: free
+is_open_source: true
+license: Apache-2.0
+install_command: pip install sie-sdk
