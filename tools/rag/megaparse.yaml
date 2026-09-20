@@ -1,0 +1,25 @@
+name: MegaParse
+description: Open-source document parser for LLM ingestion. Converts PDFs, Word, PowerPoint, Excel, and CSV into clean structured text while preserving tables, headers, footers, and images, with an optional vision mode that uses multimodal models.
+tagline: Parse documents for RAG without losing tables or layout
+
+github_url: https://github.com/The-Vibe-Company/megaparse
+website_url: https://megaparse.com
+docs_url: https://github.com/The-Vibe-Company/megaparse
+install_command: pip install megaparse
+
+category: RAG
+tags: [python, rag, document-parsing, pdf, llm-ingestion, ocr, multimodal]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  RAG pipelines lose tables, headers, and layout when PDFs and Office files are
+  flattened to plain text. MegaParse extracts those structures into LLM-ready
+  output, with a vision path for complex pages that rule-based parsers mangle.
+
+use_cases:
+  - Ingest PDFs, Word, and PowerPoint files into a RAG corpus without dropping tables
+  - Parse scanned or layout-heavy documents with MegaParse Vision and a multimodal LLM
+  - Serve document parsing as a FastAPI endpoint for downstream retrieval pipelines
+  - Benchmark MegaParse against Unstructured or LlamaParse on your own evaluation set
