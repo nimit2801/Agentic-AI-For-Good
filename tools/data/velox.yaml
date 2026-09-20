@@ -1,0 +1,25 @@
+name: Velox
+description: Composable C++ execution engine from Meta for analytical data systems. Provides vectorized operators, type system, and connectors that Presto, Spark, and other engines can reuse instead of each rewriting a runtime.
+tagline: Vectorized C++ runtime for analytical engines
+
+github_url: https://github.com/facebookincubator/velox
+website_url: https://velox-lib.io/
+docs_url: https://facebookincubator.github.io/velox/
+
+category: Data
+tags: [cpp, query-engine, vectorized, presto, spark, analytics]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Every SQL engine used to ship its own vectorized runtime, so operators,
+  types, and connectors were rewritten per project. Velox is a shared C++
+  execution library that Presto, Spark, and similar systems can embed for
+  a common high-performance compute layer.
+
+use_cases:
+  - Embed a vectorized execution engine inside a custom SQL or lakehouse system
+  - Share operators and connectors across Presto and Spark-style engines
+  - Accelerate analytical scans and joins with a C++ expression runtime
+  - Prototype new data types or functions once and reuse them in multiple engines
