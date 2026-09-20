@@ -1,0 +1,27 @@
+name: Abseil
+description: Google's open-source C++ common libraries, providing battle-tested implementations of strings, hashing, synchronization, time, status, and containers. Abseil is the shared foundation many production C++ ML runtimes and data systems use instead of rolling their own utilities.
+tagline: Production C++ common libraries from Google
+
+github_url: https://github.com/abseil/abseil-cpp
+website_url: https://abseil.io
+docs_url: https://abseil.io/docs/cpp/
+install_command: brew install abseil
+
+category: Dev Tools
+tags: [cpp, libraries, google, utilities, hashing, concurrency, production]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Production C++ services and ML runtimes need consistent, well-tested
+  utilities for strings, hashing, time, status codes, and synchronization.
+  The C++ standard library leaves gaps, and every team reinventing those
+  pieces creates bugs and ABI drift. Abseil ships the libraries Google
+  uses internally so C++ AI infrastructure can share one foundation.
+
+use_cases:
+  - Use absl::Status and StatusOr for consistent error handling in a C++ inference server
+  - Replace ad-hoc string and hashing helpers with Abseil containers and Swiss tables
+  - Share time, logging, and synchronization primitives across C++ ML microservices
+  - Depend on a stable C++ utility layer used by TensorFlow, gRPC, and Protobuf stacks

@@ -1,0 +1,27 @@
+name: Assimp
+description: Open Asset Import Library loads 40-plus 3D file formats into one clean in-memory scene graph. Assimp is the usual importer behind graphics engines, dataset pipelines, and ML 3D tools that need OBJ, FBX, glTF, COLLADA, and related assets without writing a parser per format.
+tagline: Portable importer for 40-plus 3D model formats
+
+github_url: https://github.com/assimp/assimp
+website_url: https://www.assimp.org
+docs_url: https://assimp-docs.readthedocs.io
+install_command: brew install assimp
+
+category: Data
+tags: [3d, assets, importer, graphics, gltf, mesh, computer-vision]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  3D ML, simulation, and graphics pipelines ingest meshes from dozens of
+  formats. Writing a robust OBJ, FBX, glTF, or COLLADA parser for each
+  source is expensive and error-prone. Assimp imports those formats into
+  one scene structure with nodes, meshes, materials, and animations, so
+  dataset loaders and engines share a single importer.
+
+use_cases:
+  - Load mixed 3D datasets (OBJ, FBX, glTF) into a unified mesh pipeline for training
+  - Import artist-authored models into a C++ visualization or simulation runtime
+  - Convert proprietary CAD or DCC exports into a clean scene graph for ML tools
+  - Build a 3D asset ingest step that does not require a full game engine
