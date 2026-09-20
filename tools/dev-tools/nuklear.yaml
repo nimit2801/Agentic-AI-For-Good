@@ -1,0 +1,25 @@
+name: Nuklear
+description: A single-header ANSI C immediate-mode GUI library with no dependencies. Nuklear renders through a small backend you provide, making it a common choice for embedded tools, game engines, and C/C++ ML viewers that need widgets without linking a retained-mode UI framework.
+tagline: Single-header ANSI C immediate-mode GUI library
+
+github_url: https://github.com/Immediate-Mode-UI/Nuklear
+website_url: https://immediate-mode-ui.github.io/Nuklear/
+
+category: Dev Tools
+tags: [gui, c, immediate-mode, single-header, embedded, graphics, gamedev]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  C and embedded graphics apps often need buttons, sliders, and layouts
+  without pulling in Qt, GTK, or a C++ GUI stack. Those frameworks are
+  heavy, retained-mode, and hard to vendor. Nuklear is a single-header
+  immediate-mode library you drop into the project and drive from your
+  existing renderer, so tools and debug UIs stay portable and dependency-free.
+
+use_cases:
+  - Add debug widgets to a C engine or ML viewer without a retained-mode GUI framework
+  - Build embedded or game-tool overlays that render through OpenGL, SDL, or a custom backend
+  - Prototype desktop utilities in ANSI C with a single header and no extra libraries
+  - Ship a lightweight inspector UI inside a C/C++ simulation or inference binary
