@@ -1,0 +1,26 @@
+name: bgfx
+description: A cross-platform, graphics-API-agnostic rendering library in the bring-your-own-engine style. bgfx talks to Direct3D, Metal, Vulkan, and OpenGL from one API, so C++ visualization and ML viewers can target many GPUs without writing a backend per graphics API.
+tagline: Graphics-API-agnostic rendering library for C++ engines
+
+github_url: https://github.com/bkaradzic/bgfx
+website_url: https://bkaradzic.github.io/bgfx/overview.html
+docs_url: https://bkaradzic.github.io/bgfx/bgfx.html
+
+category: Other
+tags: [graphics, rendering, vulkan, metal, opengl, cpp, gamedev]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  C++ engines and ML visualization tools need GPU drawing on Windows, macOS,
+  Linux, and consoles. Each OS has a different graphics API, so teams either
+  pick one backend or write several. bgfx is a thin, API-agnostic renderer
+  that submits draws to Direct3D, Metal, Vulkan, or OpenGL, so the app keeps
+  one rendering path.
+
+use_cases:
+  - Add a portable GPU renderer to a C++ ML visualization or simulation tool
+  - Target Vulkan, Metal, and Direct3D from one draw-submission API
+  - Build a custom engine or viewer without writing per-API graphics backends
+  - Prototype compute and graphics demos that must run across desktop GPUs
