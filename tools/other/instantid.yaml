@@ -1,0 +1,24 @@
+name: InstantID
+description: Zero-shot identity-preserving image generation. Uses a face embedding plus ControlNet-style adapters so diffusion models can keep a person's identity from a single photo without per-identity fine-tuning.
+tagline: Keep a face identity in diffusion images from one photo
+
+github_url: https://github.com/instantX-research/InstantID
+website_url: https://instantid.github.io/
+docs_url: https://github.com/instantX-research/InstantID
+
+category: Other
+tags: [python, diffusion, identity, controlnet, face, image-generation]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Custom character or headshot generation usually needs DreamBooth or LoRA
+  training on many photos of one person. InstantID conditions a diffusion
+  model on a single face embedding so identity holds without that training.
+
+use_cases:
+  - Generate new portraits of a person from one reference photo
+  - Keep identity consistent across styles without training a character LoRA
+  - Build a face-preserving image pipeline on top of SDXL or similar models
+  - Prototype identity-conditioned generation for avatars or product mockups

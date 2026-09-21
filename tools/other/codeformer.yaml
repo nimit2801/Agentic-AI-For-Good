@@ -1,0 +1,24 @@
+name: CodeFormer
+description: Blind face restoration with a codebook lookup transformer (NeurIPS 2022). Recovers identity and detail from old, compressed, or tiny face photos for restoration and video enhancement.
+tagline: Restore degraded faces with a codebook transformer
+
+github_url: https://github.com/sczhou/CodeFormer
+website_url: https://github.com/sczhou/CodeFormer
+docs_url: https://github.com/sczhou/CodeFormer
+install_command: pip install codeformer
+
+category: Other
+tags: [python, face-restoration, transformer, image-enhancement, neurips]
+pricing: free
+is_open_source: true
+
+problem_solved: |
+  Old, tiny, or heavily compressed face photos lose identity when you
+  upscale them with a generic super-resolution model. CodeFormer looks
+  up a learned face codebook so restored faces stay recognizable.
+
+use_cases:
+  - Restore scanned or compressed family photos before upscaling
+  - Enhance faces in old video frames without a per-clip fine-tune
+  - Clean AI-generated faces that came out blurry or artifacted
+  - Batch-restore a portrait dataset before training a diffusion model

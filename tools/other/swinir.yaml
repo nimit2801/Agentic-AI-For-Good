@@ -1,0 +1,24 @@
+name: SwinIR
+description: Image restoration with a Swin Transformer. Handles super-resolution, denoising, and JPEG artifact removal with one architecture, used as a strong baseline for classical restoration tasks.
+tagline: Swin Transformer for super-resolution and denoising
+
+github_url: https://github.com/JingyunLiang/SwinIR
+website_url: https://arxiv.org/abs/2108.10257
+docs_url: https://github.com/JingyunLiang/SwinIR
+
+category: Other
+tags: [python, super-resolution, denoising, transformer, image-restoration]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Super-resolution, denoising, and JPEG cleanup each used to need a
+  different CNN. SwinIR uses a Swin Transformer restoration backbone
+  so those tasks share one model family with competitive quality.
+
+use_cases:
+  - Super-resolve low-resolution photos with a Swin Transformer backbone
+  - Denoise camera or compression noise without a task-specific CNN
+  - Remove JPEG artifacts before feeding images into a vision or generative pipeline
+  - Benchmark new restoration methods against a widely used transformer baseline
