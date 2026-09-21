@@ -1,0 +1,25 @@
+name: Grounded SAM
+description: Grounded SAM combines Grounding DINO with Segment Anything so a text prompt can detect objects and produce pixel-perfect masks. The pipeline can also feed those masks into Stable Diffusion for inpainting and generation, covering detect, segment, and generate in one workflow.
+tagline: Detect, segment, and generate anything from text
+
+github_url: https://github.com/IDEA-Research/Grounded-Segment-Anything
+website_url: https://arxiv.org/abs/2401.14159
+docs_url: https://github.com/IDEA-Research/Grounded-Segment-Anything#readme
+
+category: Other
+tags: [computer-vision, segmentation, object-detection, grounding-dino, sam, open-vocabulary, generative]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Grounding DINO localizes objects from text but returns boxes, while Segment
+  Anything produces masks but needs geometric prompts. Grounded SAM chains them
+  so a natural-language phrase becomes automatic detection plus segmentation,
+  without drawing boxes or collecting category-specific masks.
+
+use_cases:
+  - Segment any object in an image from a text prompt for dataset labeling or photo editing
+  - Detect then mask products, defects, or scenes in industrial inspection without a closed label set
+  - Feed text-driven masks into Stable Diffusion for inpainting, replacement, or layout-controlled generation
+  - Build an open-vocabulary visual pipeline that goes from language to boxes, masks, and generated pixels

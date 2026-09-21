@@ -1,0 +1,26 @@
+name: CLIP
+description: OpenAI's Contrastive Language-Image Pre-training model maps images and text into a shared embedding space. CLIP enables zero-shot image classification, image-text retrieval, and robust visual representations without collecting task-specific labeled data.
+tagline: Zero-shot vision from natural language supervision
+
+github_url: https://github.com/openai/CLIP
+website_url: https://arxiv.org/abs/2103.00020
+docs_url: https://github.com/openai/CLIP#readme
+install_command: pip install openai-clip
+
+category: Other
+tags: [computer-vision, multimodal, zero-shot, clip, vision-language, openai, embeddings]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Training a separate image classifier for every new category requires labeled
+  datasets and a full retrain. CLIP learns visual concepts from natural language
+  at scale, so you can classify or retrieve images with free-form text prompts
+  without collecting task-specific training data.
+
+use_cases:
+  - Classify images into arbitrary categories by writing text prompts instead of training a new classifier
+  - Build image-text retrieval for product search, DAM systems, or dataset exploration
+  - Extract CLIP embeddings as a backbone for clustering, similarity search, and multimodal RAG
+  - Zero-shot filter or moderate visual content using natural-language policy descriptions
