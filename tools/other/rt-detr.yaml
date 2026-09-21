@@ -1,0 +1,21 @@
+name: RT-DETR
+description: RT-DETR is a real-time detection transformer that outperforms YOLO models on accuracy and speed, using an efficient hybrid encoder and IoU-aware query selection for fast end-to-end object detection.
+tagline: Real-time detection transformer that beats YOLO on speed and accuracy
+
+github_url: https://github.com/lyuwenyu/RT-DETR
+docs_url: https://github.com/lyuwenyu/RT-DETR#readme
+
+category: Other
+tags: [object-detection, computer-vision, transformer, real-time, yolo, pytorch, paddle]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  DETR transformers are accurate but too slow for real-time applications, while YOLO models are fast but lag on accuracy. RT-DETR bridges this gap with an efficient hybrid encoder and IoU-aware query selection, delivering transformer-level accuracy at YOLO-level latency without hand-crafted components like anchors or NMS.
+
+use_cases:
+  - Deploy high-accuracy real-time object detection on edge cameras and drones
+  - Replace YOLO pipelines with transformer-based detection for better small-object accuracy
+  - Export models to ONNX and TensorRT for optimized production inference
+  - Benchmark detection architectures for research on real-time transformer efficiency

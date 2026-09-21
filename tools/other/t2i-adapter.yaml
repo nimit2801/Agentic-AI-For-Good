@@ -1,0 +1,20 @@
+name: T2I-Adapter
+description: T2I-Adapter provides lightweight conditioning adapters for diffusion models, enabling fine-grained control over image generation via sketch, depth, pose, and semantic maps without retraining the base model.
+tagline: Lightweight adapters for controllable text-to-image generation
+
+github_url: https://github.com/TencentARC/T2I-Adapter
+docs_url: https://github.com/TencentARC/T2I-Adapter#readme
+
+category: Other
+tags: [diffusion, text-to-image, image-generation, control, adapter, computer-vision, pytorch]
+pricing: free
+is_open_source: true
+
+problem_solved: |
+  Text-to-image diffusion models struggle to follow precise spatial constraints like pose, depth, or edge structure from text alone. T2I-Adapter injects lightweight conditioning maps into the diffusion process, giving users pixel-level control over generated images without expensive fine-tuning of the base model.
+
+use_cases:
+  - Generate characters in exact poses using skeleton keypoint maps
+  - Create architectural renders guided by depth maps and edge sketches
+  - Produce fashion designs matching specific garment silhouettes and structures
+  - Build interactive drawing tools that turn rough sketches into detailed artwork

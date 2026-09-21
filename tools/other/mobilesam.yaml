@@ -1,0 +1,22 @@
+name: MobileSAM
+description: MobileSAM compresses the Segment Anything Model to under 10 MB using a tiny image encoder, enabling on-device segmentation on mobile phones, edge devices, and browsers without sacrificing mask accuracy.
+tagline: Lightweight SAM for mobile and edge segmentation
+
+github_url: https://github.com/ChaoningZhang/MobileSAM
+docs_url: https://github.com/ChaoningZhang/MobileSAM#readme
+install_command: pip install git+https://github.com/ChaoningZhang/MobileSAM.git
+
+category: Other
+tags: [image-segmentation, computer-vision, sam, mobile, edge, pytorch, lightweight]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  SAM's default ViT-H encoder is over 2 GB and too large for mobile devices and browsers. MobileSAM distills SAM's knowledge into a tiny encoder under 10 MB, making zero-shot segmentation possible on phones, tablets, and edge hardware while keeping mask quality nearly identical to the original model.
+
+use_cases:
+  - Run real-time segmentation on mobile apps for AR filters and object selection
+  - Deploy segmentation in browser-based photo editors without server round-trips
+  - Power edge-camera pipelines for inventory counting and defect detection
+  - Enable on-device medical imaging segmentation where cloud upload is restricted

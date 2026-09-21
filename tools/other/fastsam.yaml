@@ -1,0 +1,22 @@
+name: FastSAM
+description: FastSAM speeds up Meta's Segment Anything Model by ~50x using a single CNN-based decoder instead of the heavy ViT encoder, making real-time segmentation possible on consumer GPUs while preserving mask quality.
+tagline: Real-time Segment Anything for fast image segmentation
+
+github_url: https://github.com/CASIA-LMC-Lab/FastSAM
+docs_url: https://github.com/CASIA-LMC-Lab/FastSAM#readme
+install_command: pip install git+https://github.com/CASIA-LMC-Lab/FastSAM.git
+
+category: Other
+tags: [image-segmentation, computer-vision, sam, zero-shot, pytorch, real-time]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  SAM's ViT-H encoder is too slow for real-time applications, taking multiple seconds per image on standard GPUs. FastSAM replaces the heavy transformer encoder with a lightweight CNN backbone and a single-shot decoder, achieving ~50x speedup while maintaining comparable segmentation mask quality for interactive editing, robotics, and live video pipelines.
+
+use_cases:
+  - Segment any object in real-time video streams for robotics perception
+  - Build interactive photo editing tools with instant mask generation
+  - Create background removal pipelines that process images in milliseconds
+  - Generate training masks for computer vision datasets without manual labeling
