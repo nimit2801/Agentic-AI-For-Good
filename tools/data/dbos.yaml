@@ -1,0 +1,25 @@
+name: DBOS
+description: Database-backed durable workflow library for Python. Checkpoints steps in Postgres so long-running jobs, queues, and agent loops resume after crashes without a separate orchestrator cluster.
+tagline: Durable Python workflows backed by your database
+
+github_url: https://github.com/dbos-inc/dbos-transact-py
+website_url: https://docs.dbos.dev
+docs_url: https://docs.dbos.dev
+install_command: pip install dbos
+
+category: Data
+tags: [python, workflows, durable-execution, postgres, orchestration]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Long-running Python jobs die on process crash unless you add Temporal,
+  Celery, or custom checkpoint tables. DBOS stores workflow state in your
+  Postgres database so steps resume in-process without a separate cluster.
+
+use_cases:
+  - Make a multi-step ETL or agent loop crash-safe with Postgres checkpoints
+  - Replace a queue-plus-worker stack with durable functions in one Python app
+  - Resume a billing or notification workflow after a deploy or crash
+  - Run background jobs that need exactly-once steps without Temporal

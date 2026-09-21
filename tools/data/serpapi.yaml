@@ -1,0 +1,25 @@
+name: SerpAPI
+description: Search-engine results API for Google, Bing, Yahoo, and other SERPs. Returns structured JSON so agents and RAG pipelines can ground answers in live web results without scraping HTML.
+tagline: Structured search results API for agents and RAG
+
+github_url: https://github.com/serpapi/serpapi-python
+website_url: https://serpapi.com
+docs_url: https://serpapi.com/search-api
+install_command: pip install serpapi
+
+category: Data
+tags: [python, web-search, serp, rag, agents, api]
+pricing: freemium
+is_open_source: false
+
+problem_solved: |
+  Agents that need current Google or Bing results usually scrape HTML that
+  breaks and triggers blocks. SerpAPI returns parsed SERP JSON from multiple
+  engines so retrieval and research tools can use live search without a
+  scraper farm.
+
+use_cases:
+  - Ground a RAG or agent answer with live Google search results
+  - Pull news, shopping, or local SERP data as structured JSON
+  - Replace brittle HTML scraping in a research pipeline
+  - Compare rankings across engines from one API
