@@ -1,0 +1,25 @@
+name: Vision Transformer
+description: Google's original Vision Transformer treats an image as a sequence of patches and runs a standard Transformer encoder over them. ViT showed that pure transformers can match or exceed CNNs on image classification when pre-trained at scale, and became the backbone for modern vision and multimodal models.
+tagline: Images as patch sequences for transformer vision
+
+github_url: https://github.com/google-research/vision_transformer
+website_url: https://arxiv.org/abs/2010.11929
+docs_url: https://github.com/google-research/vision_transformer#readme
+
+category: Other
+tags: [computer-vision, transformer, vit, image-classification, jax, google, deep-learning]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Convolutional networks dominated vision but do not scale as cleanly as
+  transformers did in language. ViT removes the CNN inductive bias by splitting
+  images into patches and applying a vanilla transformer, unlocking large-scale
+  pre-training that later powered CLIP, SAM, and most modern vision-language models.
+
+use_cases:
+  - Pre-train or fine-tune ViT backbones for image classification at ImageNet and JFT scale
+  - Study scaling laws for vision transformers with the original JAX implementation and checkpoints
+  - Use ViT embeddings as a backbone for detection, segmentation, and multimodal models
+  - Reproduce the original Vision Transformer paper results and transfer them to custom datasets
