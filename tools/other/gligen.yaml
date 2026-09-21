@@ -1,0 +1,21 @@
+name: GLIGEN
+description: GLIGEN enables open-set grounded text-to-image generation by injecting spatial grounding information into diffusion models, allowing precise control over object location, size, and count via bounding box prompts.
+tagline: Open-set grounded text-to-image generation with spatial control
+
+github_url: https://github.com/gligen/GLIGEN
+docs_url: https://github.com/gligen/GLIGEN#readme
+
+category: Other
+tags: [diffusion, text-to-image, image-generation, grounding, computer-vision, control]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Text-to-image diffusion models generate images from descriptions but ignore spatial constraints, making it hard to control where objects appear or how many there are. GLIGEN injects grounding information directly into the diffusion UNet via gated self-attention, enabling precise object placement, sizing, and counting from bounding box prompts without retraining the base model.
+
+use_cases:
+  - Generate marketing visuals with products placed in exact screen positions
+  - Create storyboard frames where characters appear at specified locations and sizes
+  - Build UI mockup generators that place interface elements in defined layouts
+  - Produce dataset images with controlled object distributions for training
