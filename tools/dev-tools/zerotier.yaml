@@ -1,0 +1,26 @@
+name: ZeroTier
+description: ZeroTier is a smart Ethernet overlay that joins laptops, GPU boxes, and cloud VMs into one virtual LAN. ML teams reach private Jupyter hosts and inference nodes without a classic VPN concentrator or inbound ports.
+tagline: Software-defined Ethernet overlay for private infrastructure
+
+github_url: https://github.com/zerotier/ZeroTierOne
+website_url: https://www.zerotier.com
+docs_url: https://docs.zerotier.com
+install_command: brew install --cask zerotier-one
+
+category: Dev Tools
+tags: [vpn, overlay, networking, sdn, mesh, zero-trust]
+pricing: freemium
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  Lab machines, GPU boxes, and cloud VMs sit on networks that cannot
+  talk without a site-to-site VPN. ZeroTier builds a software-defined
+  Ethernet overlay so those hosts share a virtual LAN with managed
+  routes, without inbound firewall holes or a hardware concentrator.
+
+use_cases:
+  - Put GPU workers and laptops on one virtual LAN for private training access
+  - Reach a Jupyter or model API host as if it were on the same Ethernet segment
+  - Connect CI runners to on-prem data stores without exposing ports
+  - Replace a brittle site-to-site VPN with a managed overlay for ML labs
