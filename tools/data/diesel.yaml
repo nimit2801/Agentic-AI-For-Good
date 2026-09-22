@@ -1,0 +1,27 @@
+name: Diesel
+description: Diesel is a safe, extensible ORM and query builder for Rust. It checks SQL against your schema at compile time and talks to PostgreSQL, MySQL, and SQLite, which suits typed metadata stores in Rust AI services.
+tagline: Safe compile-time ORM and query builder for Rust
+
+github_url: https://github.com/diesel-rs/diesel
+website_url: https://diesel.rs
+docs_url: https://diesel.rs/guides
+
+install_command: cargo add diesel
+
+category: Data
+tags: [rust, orm, sql, postgres, mysql, sqlite, database]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Raw SQL in Rust is easy to get wrong, and schema drift shows up at
+  runtime. Diesel generates typed query builders from your schema so
+  Postgres, MySQL, and SQLite access in inference APIs and job trackers
+  fails at compile time instead of in production.
+
+use_cases:
+  - Query Postgres experiment metadata from a Rust training-job service
+  - Model SQLite local state for a desktop agent with compile-time schema checks
+  - Replace stringly-typed SQL in a Rust model registry
+  - Migrate MySQL feature-store tables with Diesel migrations

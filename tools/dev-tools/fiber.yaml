@@ -1,0 +1,27 @@
+name: Fiber
+description: Fiber is an Express-inspired web framework for Go built on fasthttp. It is a common choice for low-latency inference gateways, webhook receivers, and agent APIs that need Express-like routing with Go performance.
+tagline: Express-inspired Go web framework on fasthttp for fast APIs
+
+github_url: https://github.com/gofiber/fiber
+website_url: https://gofiber.io
+docs_url: https://docs.gofiber.io
+
+install_command: go get github.com/gofiber/fiber/v2
+
+category: Dev Tools
+tags: [go, web-framework, http, api, fasthttp]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go net/http is verbose for JSON APIs, and heavier frameworks add latency
+  on the hot path next to a GPU. Fiber copies Express routing and middleware
+  onto fasthttp so inference gateways, webhooks, and agent backends stay
+  fast without leaving Go.
+
+use_cases:
+  - Serve a low-latency OpenAI-compatible inference gateway in Go
+  - Receive agent webhooks and tool callbacks with Express-style middleware
+  - Prototype a REST control plane for training jobs without a large framework
+  - Replace Gin or Echo when fasthttp throughput matters more than net/http compatibility

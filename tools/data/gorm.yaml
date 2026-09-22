@@ -1,0 +1,28 @@
+name: GORM
+description: GORM is the most widely used ORM for Go. It maps structs to Postgres, MySQL, SQLite, and SQL Server with associations, hooks, and migrations so Go inference APIs and training-job services can persist metadata without writing raw SQL.
+tagline: Developer-friendly ORM for Go with associations, hooks, and migrations
+
+github_url: https://github.com/go-gorm/gorm
+website_url: https://gorm.io
+docs_url: https://gorm.io/docs/
+
+install_command: go get -u gorm.io/gorm
+
+category: Data
+tags: [go, orm, postgres, mysql, sqlite, database]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go AI services that store runs, users, and job state either sprinkle
+  database/sql or invent a mapper. GORM is the default Go ORM with
+  associations, hooks, preloading, and migrations across Postgres, MySQL,
+  SQLite, and SQL Server, so metadata and control-plane tables stay in
+  idiomatic Go.
+
+use_cases:
+  - Persist training-run and experiment metadata from a Go API to Postgres
+  - Model users, API keys, and job queues with associations and hooks
+  - Migrate SQLite local state to MySQL when an agent control plane scales out
+  - Replace hand-written SQL in a Go model-registry service
