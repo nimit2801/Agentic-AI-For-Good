@@ -1,0 +1,28 @@
+name: Tauri
+description: Tauri is a Rust framework for building desktop and mobile apps with a web frontend. It ships a tiny WebView shell, OS APIs, and a security model so AI tools can ship native Mac, Windows, Linux, iOS, and Android clients without Electron's memory cost.
+tagline: Rust toolkit for small, secure desktop and mobile apps with a web UI
+
+github_url: https://github.com/tauri-apps/tauri
+website_url: https://tauri.app
+docs_url: https://v2.tauri.app
+
+install_command: npm install -g @tauri-apps/cli
+
+category: Dev Tools
+tags: [rust, desktop, mobile, webview, typescript, javascript, native-apps]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Shipping an AI desktop app with Electron means a 150MB+ Chromium runtime
+  and high RAM use next to local models. Tauri wraps the OS WebView in a
+  Rust core with a small binary, IPC, and a capability-based security model
+  so local LLM, TTS, and agent UIs can ship as native Mac, Windows, Linux,
+  iOS, and Android apps without bundling a browser.
+
+use_cases:
+  - Package a local LLM chat UI as a native Mac and Windows app under 10MB
+  - Call Rust inference or filesystem plugins from a React or Svelte frontend
+  - Ship the same web UI to iOS and Android with Tauri mobile
+  - Replace Electron for an agent control panel that must stay light beside GPU inference
