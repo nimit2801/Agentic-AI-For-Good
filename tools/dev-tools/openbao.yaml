@@ -1,0 +1,25 @@
+name: OpenBao
+description: OpenBao is an open-source secrets manager forked from HashiCorp Vault under MPL-2.0. It stores, rotates, and audits API keys, certificates, and credentials for ML pipelines without a BusL license.
+tagline: Open-source secrets manager forked from HashiCorp Vault
+
+github_url: https://github.com/openbao/openbao
+website_url: https://openbao.org
+docs_url: https://openbao.org/docs
+
+category: Dev Tools
+tags: [security, secrets-management, vault, encryption, devops, open-source]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  HashiCorp Vault moved to BUSL, which blocks some teams from shipping
+  Vault in products. OpenBao is an MPL-2.0 fork that keeps dynamic
+  secrets, rotation, and audit logs so ML pipelines can inject LLM keys
+  and DB credentials without a restrictive license.
+
+use_cases:
+  - Inject short-lived LLM provider keys into training and inference jobs
+  - Rotate database credentials for feature stores without BUSL Vault
+  - Store TLS certs for model-serving endpoints with audit logs
+  - Run a self-hosted secrets manager compatible with Vault workflows

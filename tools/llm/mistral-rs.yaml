@@ -1,0 +1,26 @@
+name: Mistral.rs
+description: Mistral.rs is a fast LLM inference engine written in Rust. It serves quantized open models on Metal, CUDA, and CPU with an OpenAI-compatible API so teams run local agents without Python serving stacks.
+tagline: Fast Rust LLM inference engine with OpenAI-compatible serving
+
+github_url: https://github.com/EricLBuehler/mistral.rs
+website_url: https://mistralrs.dev
+docs_url: https://docs.mistralrs.dev
+install_command: curl -fsSL https://mistralrs.dev/install.sh | sh
+
+category: LLM
+tags: [rust, llm, inference, quantization, metal, cuda, openai-api, local-llm]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Local LLM serving is often Python-heavy and slow on Apple Silicon or
+  mixed GPU fleets. Mistral.rs is a Rust engine with Metal, CUDA, and
+  CPU backends plus an OpenAI-compatible API so agents talk to a local
+  quantized model without a Python serving stack.
+
+use_cases:
+  - Serve a quantized open model locally with an OpenAI-compatible API
+  - Run agent tool-calling against a Metal-accelerated model on a Mac
+  - Deploy CPU or CUDA inference where Python vLLM is too heavy
+  - Swap cloud LLM endpoints for a local Mistral.rs server in development
