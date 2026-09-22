@@ -1,0 +1,23 @@
+name: TokenSpeed
+slug: tokenspeed
+category: LLM
+tagline: Speed-of-light LLM inference engine for agentic workloads
+description: |-
+  TokenSpeed is a speed-of-light LLM inference engine designed for agentic workloads. It separates the C++ control plane from the Python execution plane to deliver TensorRT-LLM-level performance with vLLM-level usability.
+problem_solved: Production agentic workloads demand extremely low latency and high throughput from LLM inference, but existing engines trade off correctness guarantees for speed. TokenSpeed uses a type-safe finite-state machine in C++ for scheduling while keeping the execution plane in Python for rapid iteration.
+use_cases:
+  - "Serving LLMs for agentic workloads with sub-100ms TTFT"
+  - "Running high-throughput inference on NVIDIA and AMD GPUs"
+  - "Deploying production LLM APIs with OpenAI-compatible endpoints"
+  - "Optimizing MLA attention for large-scale model serving"
+github_url: https://github.com/lightseekorg/tokenspeed
+website_url: https://lightseek.org/tokenspeed/
+docs_url: https://lightseek.org/tokenspeed/
+license: MIT
+pricing: free
+is_open_source: true
+tags:
+  - inference
+  - llm-serving
+  - gpu
+  - agents
