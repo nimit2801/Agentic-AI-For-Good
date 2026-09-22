@@ -1,0 +1,26 @@
+name: Tokio
+description: Tokio is the async runtime for Rust. It provides I/O, timers, and a work-stealing scheduler so AI services can run concurrent inference APIs, agent loops, and network clients without blocking threads.
+tagline: Async runtime for reliable concurrent Rust applications
+
+github_url: https://github.com/tokio-rs/tokio
+website_url: https://tokio.rs
+docs_url: https://docs.rs/tokio
+install_command: cargo add tokio
+
+category: Dev Tools
+tags: [rust, async, runtime, tokio, networking, concurrency, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Rust AI services need thousands of concurrent HTTP calls, WebSocket
+  agent streams, and timer-driven jobs without blocking OS threads.
+  Tokio is the de facto async runtime with I/O, scheduling, and timers
+  so inference APIs and agent loops stay non-blocking.
+
+use_cases:
+  - Run a concurrent Rust LLM or embedding HTTP server
+  - Drive agent tool-calling loops over async WebSockets
+  - Schedule background jobs and retries without blocking worker threads
+  - Share one runtime across Axum, reqwest, and tonic in a Rust AI stack
