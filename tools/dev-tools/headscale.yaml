@@ -1,0 +1,25 @@
+name: Headscale
+description: Headscale is an open-source, self-hosted implementation of the Tailscale control server. Teams run a private coordination plane so GPU boxes, laptops, and cloud VMs join a WireGuard mesh without Tailscale's SaaS.
+tagline: Self-hosted Tailscale control server for private WireGuard meshes
+
+github_url: https://github.com/juanfont/headscale
+website_url: https://headscale.net
+docs_url: https://headscale.net
+
+category: Dev Tools
+tags: [vpn, wireguard, tailscale, self-hosted, networking, zero-trust, go]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Tailscale's client is open source, but the coordination server is a SaaS
+  control plane. Headscale replaces that server so ML labs can run identity-aware
+  WireGuard meshes for GPU boxes and private inference hosts without sending
+  node metadata to a vendor or paying per-seat for the control plane.
+
+use_cases:
+  - Self-host the Tailscale control plane for an on-prem GPU cluster
+  - Connect laptops to private model APIs over WireGuard without Tailscale SaaS
+  - Keep node registration and ACLs inside your own network for research infra
+  - Run a zero-trust mesh for CI runners and lab machines under your domain
