@@ -1,0 +1,26 @@
+name: Kysely
+description: Kysely is a type-safe TypeScript SQL query builder. It infers table types so Node AI services query Postgres, MySQL, and SQLite with compile-time checks instead of stringly-typed SQL.
+tagline: Type-safe TypeScript SQL query builder
+
+github_url: https://github.com/kysely-org/kysely
+website_url: https://kysely.dev
+docs_url: https://kysely.dev/docs/intro
+install_command: npm install kysely
+
+category: Dev Tools
+tags: [typescript, sql, query-builder, postgres, mysql, sqlite, node]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Node AI services often concatenate SQL strings and discover schema
+  bugs at runtime. Kysely is a typed query builder that infers tables
+  so Postgres, MySQL, and SQLite access in agent backends fails at
+  compile time.
+
+use_cases:
+  - Query Postgres experiment metadata from a TypeScript inference API
+  - Replace stringly-typed SQL in a Node agent or job tracker
+  - Talk to SQLite local state with compile-time table types
+  - Build typed migrations and selects for a model-registry service

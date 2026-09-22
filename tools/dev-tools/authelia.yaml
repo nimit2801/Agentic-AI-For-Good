@@ -1,0 +1,25 @@
+name: Authelia
+description: Authelia is an open-source SSO and MFA portal for self-hosted web apps. It sits in front of reverse proxies so ML UIs, Grafana, and internal tools get 2FA and OpenID without a commercial identity suite.
+tagline: SSO and MFA portal for self-hosted web applications
+
+github_url: https://github.com/authelia/authelia
+website_url: https://www.authelia.com
+docs_url: https://www.authelia.com/overview/prologue/introduction
+
+category: Dev Tools
+tags: [sso, mfa, oidc, authentication, reverse-proxy, self-hosted, security]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Homelab and internal ML stacks expose Grafana, Jupyter, and agent UIs
+  with weak auth. Authelia is a dedicated SSO and MFA portal that sits
+  in front of Traefik or NGINX so those apps get 2FA and OpenID without
+  a commercial IdP.
+
+use_cases:
+  - Add MFA in front of Grafana, Jupyter, or an internal agent UI
+  - Provide OpenID Connect to self-hosted ML tools behind Traefik
+  - Replace basic-auth on reverse proxies with a real SSO portal
+  - Gate access to experiment dashboards with 2FA policies
