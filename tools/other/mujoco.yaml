@@ -1,0 +1,26 @@
+name: MuJoCo
+description: MuJoCo is DeepMind's fast physics engine for robotics, biomechanics, and RL. It simulates multi-joint contact dynamics so teams train locomotion and manipulation policies against accurate, differentiable-friendly scenes.
+tagline: Fast physics engine for robotics, biomechanics, and reinforcement learning
+
+github_url: https://github.com/google-deepmind/mujoco
+website_url: https://mujoco.org
+docs_url: https://mujoco.readthedocs.io
+install_command: pip install mujoco
+
+category: Other
+tags: [python, cpp, physics, robotics, reinforcement-learning, simulation, deepmind]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Training robot policies needs contact-rich physics that game engines
+  get wrong and that slower academic simulators cannot run at scale.
+  MuJoCo is a fast multi-joint engine with Python bindings so locomotion
+  and manipulation agents train against accurate scenes.
+
+use_cases:
+  - Train locomotion or manipulation policies in a contact-rich physics sim
+  - Prototype robot morphologies before hardware trials
+  - Benchmark RL algorithms on standard MuJoCo locomotion tasks
+  - Couple MuJoCo scenes to Gymnasium or LeRobot training loops

@@ -1,0 +1,26 @@
+name: wgpu
+description: wgpu is a cross-platform, safe graphics API in Rust that targets Vulkan, Metal, DX12, and WebGPU. Teams use it to render ML visualizations, simulation views, and GPU compute without writing per-backend shaders.
+tagline: Cross-platform Rust graphics API targeting Vulkan, Metal, DX12, and WebGPU
+
+github_url: https://github.com/gfx-rs/wgpu
+website_url: https://wgpu.rs
+docs_url: https://docs.rs/wgpu
+install_command: cargo add wgpu
+
+category: Other
+tags: [rust, graphics, webgpu, vulkan, metal, gpu, visualization, compute]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Interactive ML demos and simulation viewers need GPU rendering that
+  works on desktop and the web. Native Vulkan or Metal lock you to one
+  backend. wgpu is a safe Rust WebGPU implementation so one codebase
+  targets Vulkan, Metal, DX12, and the browser.
+
+use_cases:
+  - Render real-time 3D visualizations of agent or robotics environments
+  - Run GPU compute shaders for preprocessing without CUDA lock-in
+  - Ship a browser WebGPU demo of a model or simulation from Rust
+  - Power a custom renderer under Bevy or a research visualization tool

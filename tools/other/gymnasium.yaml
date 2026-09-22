@@ -1,0 +1,26 @@
+name: Gymnasium
+description: Gymnasium is the standard Python API for single-agent reinforcement learning environments, the maintained successor to OpenAI Gym. It ships reference environments and wrappers used to train and evaluate RL agents.
+tagline: Standard API for single-agent reinforcement learning environments
+
+github_url: https://github.com/Farama-Foundation/Gymnasium
+website_url: https://gymnasium.farama.org
+docs_url: https://gymnasium.farama.org
+install_command: pip install gymnasium
+
+category: Other
+tags: [python, reinforcement-learning, rl, gym, environments, farama]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  RL research used to break when Gym APIs drifted and environments were
+  unmaintained. Gymnasium is the Farama successor with a stable Env API,
+  wrappers, and reference tasks so agents, baselines, and simulators
+  share one interface.
+
+use_cases:
+  - Train a single-agent RL policy against CartPole, MuJoCo, or Atari
+  - Wrap a custom robotics or game sim as a Gymnasium Env for Stable-Baselines3
+  - Benchmark agent algorithms on maintained reference environments
+  - Replace unmaintained OpenAI Gym imports in an existing RL codebase
