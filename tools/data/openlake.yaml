@@ -1,0 +1,23 @@
+name: OpenLake
+slug: openlake
+category: Data
+tagline: High-performance storage engine for LLM inference and GPU training
+description: |-
+  OpenLake is a distributed storage engine for AI infrastructure built in Rust on io_uring. It delivers million-plus IOPS within 1ms for small-file workloads, keeping GPUs fed during training and inference with KV cache offload and ultra-fast checkpointing.
+problem_solved: GPU training and inference pipelines are bottlenecked by storage I/O, especially for small files, KV cache serialization, and checkpoint writes. OpenLake provides a high-throughput, low-latency storage layer that co-locates with GPU nodes to eliminate idle time and accelerate AI workloads.
+use_cases:
+  - "Offloading petabyte-scale KV cache for LLM inference cost reduction"
+  - "Accelerating model checkpointing and recovery for RL training"
+  - "Storing vector indexes for fast embedding serving"
+  - "Enabling fast random reads for small-file training datasets"
+github_url: https://github.com/openlake-project/openlake
+website_url: https://theopenlake.com
+docs_url: https://github.com/openlake-project/openlake/tree/main/docs
+license: Apache-2.0
+pricing: free
+is_open_source: true
+tags:
+  - storage
+  - gpu
+  - rust
+  - inference
