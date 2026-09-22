@@ -1,0 +1,23 @@
+name: Authentik
+description: Authentik is an open-source identity provider that glues SSO, MFA, and proxy auth onto apps. Teams use it to protect ML dashboards, model registries, and internal agent UIs without a commercial IdP.
+tagline: Open-source identity provider and SSO glue for internal apps
+
+github_url: https://github.com/goauthentik/authentik
+website_url: https://goauthentik.io
+docs_url: https://docs.goauthentik.io
+
+category: Dev Tools
+tags: [identity, sso, mfa, oauth, oidc, authentication, self-hosted]
+pricing: free
+is_open_source: true
+
+problem_solved: |
+  Internal ML dashboards and agent UIs often sit behind ad-hoc passwords
+  or a paid IdP. Authentik is self-hosted SSO with OIDC, SAML, MFA, and
+  a reverse-proxy outpost so those tools get one login without Okta.
+
+use_cases:
+  - Put SSO and MFA in front of a model registry or experiment UI
+  - Protect internal agent dashboards with OIDC from Authentik
+  - Replace a commercial IdP for self-hosted ML infrastructure
+  - Proxy-authenticate JupyterHub or Grafana with one identity stack
