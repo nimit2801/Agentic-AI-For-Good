@@ -1,0 +1,23 @@
+name: Pebble
+description: Pebble is CockroachDB's RocksDB-inspired key-value store written in Go. It is an embeddable LSM engine used as local storage for metadata, WAL-like logs, and feature keys in Go AI services.
+tagline: RocksDB-inspired embedded key-value store in Go
+
+github_url: https://github.com/cockroachdb/pebble
+docs_url: https://pkg.go.dev/github.com/cockroachdb/pebble
+
+category: Data
+tags: [go, key-value, lsm, embedded, database, cockroachdb, rocksdb]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Go services that need local LSM storage often wrap RocksDB through CGO.
+  Pebble is a pure-Go RocksDB-inspired engine, so metadata, write-ahead
+  logs, and feature keys stay in-process without a C++ toolchain.
+
+use_cases:
+  - Embed an LSM key-value engine in a Go inference or agent service
+  - Store local experiment metadata without standing up RocksDB
+  - Back write-heavy caches and queues in a Cockroach-style storage layer
+  - Replace CGO RocksDB bindings in a Go data pipeline
