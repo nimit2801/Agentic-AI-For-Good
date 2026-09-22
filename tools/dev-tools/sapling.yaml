@@ -1,0 +1,26 @@
+name: Sapling
+description: Sapling is Meta's scalable source control client with a Git-friendly UX. It handles huge monorepos with smarter status, review, and stacking workflows than vanilla Git, so ML codebases stay usable as they grow.
+tagline: Scalable, user-friendly source control for large repos
+
+github_url: https://github.com/facebook/sapling
+website_url: https://sapling-scm.com
+docs_url: https://sapling-scm.com/docs/introduction/what-is-sapling
+install_command: brew install sapling
+
+category: Dev Tools
+tags: [source-control, git, monorepo, rust, version-control, meta]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Vanilla Git slows down on huge monorepos used by ML platforms: status,
+  checkout, and stacked reviews become painful. Sapling is a scalable SCM
+  client with a Git-compatible mental model, faster working-copy operations,
+  and first-class stacking so large model and infra repos stay usable.
+
+use_cases:
+  - Work in a large ML monorepo without Git status and checkout grinding to a halt
+  - Stack small reviewable commits instead of one giant training-code PR
+  - Clone and update model-infra repos with Sapling's sparse and lazy workflows
+  - Keep a Git-friendly CLI while using Meta-scale source control primitives
