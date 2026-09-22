@@ -1,0 +1,27 @@
+name: Pinocchio
+description: Pinocchio is a fast rigid-body dynamics library with analytical derivatives. Robotics and embodied-AI teams use it for kinematics, dynamics, and differentiable simulation of manipulators in C++ and Python.
+tagline: Fast rigid-body dynamics with analytical derivatives
+
+github_url: https://github.com/stack-of-tasks/pinocchio
+website_url: https://stack-of-tasks.github.io/pinocchio/
+docs_url: https://stack-of-tasks.github.io/pinocchio/overview.html
+install_command: pip install pin
+
+category: Other
+tags: [robotics, dynamics, kinematics, python, cpp, simulation, differentiable]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Robot learning and control need accurate kinematics, dynamics, and
+  derivatives, not a game-engine approximation. Pinocchio computes
+  rigid-body algorithms and their analytical derivatives in C++ with
+  Python bindings so teams can plan, differentiate, and simulate
+  manipulators at speeds that work inside a training loop.
+
+use_cases:
+  - Compute forward and inverse dynamics for a robot arm inside a control loop
+  - Differentiate rigid-body models for trajectory optimization and learning
+  - Simulate manipulator kinematics in Python without a heavyweight robotics suite
+  - Pair with Drake or a custom planner when you need fast dynamics derivatives

@@ -1,0 +1,26 @@
+name: Teleport
+description: Teleport is identity-aware access for SSH, Kubernetes, databases, and web apps. ML teams replace shared keys with SSO and audit logs so GPU boxes and cluster APIs are reachable without opening inbound ports.
+tagline: Identity-aware access for SSH, Kubernetes, and infrastructure
+
+github_url: https://github.com/gravitational/teleport
+website_url: https://goteleport.com
+docs_url: https://goteleport.com/docs
+install_command: brew install teleport
+
+category: Dev Tools
+tags: [ssh, kubernetes, identity, zero-trust, access, security, audit]
+pricing: freemium
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Shared SSH keys and bastion hosts do not scale for GPU clusters and
+  Kubernetes APIs. Teleport puts SSO, short-lived certs, and audit logs
+  in front of SSH, kube, and databases so researchers reach training
+  nodes without inbound port 22 or a password that never rotates.
+
+use_cases:
+  - Replace shared SSH keys on GPU workers with SSO and short-lived certs
+  - Access Kubernetes clusters that run training jobs through identity-aware kube
+  - Audit who connected to a model-serving host without a separate bastion log
+  - Give contractors time-boxed access to lab machines without opening inbound SSH
