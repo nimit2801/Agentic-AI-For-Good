@@ -1,0 +1,24 @@
+name: Sled
+description: Sled is an embedded, crash-safe key-value store written in Rust. It gives AI services a local concurrent KV without running Redis or SQLite when process-local durability is enough.
+tagline: Embedded crash-safe key-value store for Rust services
+
+github_url: https://github.com/spacejam/sled
+docs_url: https://docs.rs/sled
+install_command: cargo add sled
+
+category: Data
+tags: [rust, key-value, embedded, database, concurrent, crash-safe]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Rust AI services often need durable local state without standing up Redis
+  or SQLite. Sled is an embedded concurrent KV with crash safety, so agent
+  memory, job queues, and cache indexes live in-process and survive restarts.
+
+use_cases:
+  - Persist local agent memory and tool-call caches in a Rust service
+  - Store embedding-id maps or feature keys without an external database
+  - Back a crash-safe job queue for local inference workers
+  - Replace an in-memory HashMap when process restarts must keep state
