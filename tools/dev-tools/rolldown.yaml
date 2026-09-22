@@ -1,0 +1,28 @@
+name: Rolldown
+description: Rolldown is a Rust bundler for JavaScript and TypeScript with a Rollup-compatible API. Vite is adopting it as the successor to Rollup and esbuild so AI web apps and agent UIs bundle faster with less config churn.
+tagline: Rust JS/TS bundler with a Rollup-compatible API, built for Vite
+
+github_url: https://github.com/rolldown/rolldown
+website_url: https://rolldown.rs
+docs_url: https://rolldown.rs
+
+install_command: npm install rolldown
+
+category: Dev Tools
+tags: [javascript, typescript, bundler, rust, vite, rollup, build]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Vite still leans on esbuild for transform and Rollup for production, so
+  plugin behavior diverges and large agent dashboards take minutes to ship.
+  Rolldown is a Rust bundler with a Rollup-compatible plugin API that Vite
+  is moving onto, giving one fast pipeline for both dev and production
+  without rewriting Rollup plugins.
+
+use_cases:
+  - Bundle a TypeScript agent dashboard or LLM playground with Rollup plugins on a Rust core
+  - Cut Vite production-build time for large React or Vue frontends
+  - Prototype Vite plugins against the Rollup API that will run on Rolldown
+  - Replace esbuild-plus-Rollup dual pipelines in a JS toolchain

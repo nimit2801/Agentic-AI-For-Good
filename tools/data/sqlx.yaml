@@ -1,0 +1,25 @@
+name: sqlx
+description: sqlx is an async Rust SQL toolkit with compile-time checked queries and no ORM DSL. It talks to PostgreSQL, MySQL, and SQLite so Rust AI services can query training metadata and feature stores with type-safe SQL.
+tagline: Async Rust SQL toolkit with compile-time checked queries, no ORM
+
+github_url: https://github.com/transact-rs/sqlx
+website_url: https://github.com/transact-rs/sqlx
+docs_url: https://docs.rs/sqlx
+
+category: Data
+tags: [rust, sql, postgres, mysql, sqlite, async, database]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Rust services that talk to Postgres or SQLite either write stringly-typed
+  SQL or pull in a heavy ORM. sqlx checks queries against a live database
+  at compile time, returning typed rows over async runtimes, so inference
+  gateways and training-job APIs catch schema drift before deploy.
+
+use_cases:
+  - Query Postgres training-run metadata from a Rust inference or job API
+  - Use compile-time checked SQLite queries in a local agent or desktop tool
+  - Replace Diesel or a stringly-typed client when you want SQL, not an ORM
+  - Stream MySQL feature rows into a Rust data pipeline with tokio

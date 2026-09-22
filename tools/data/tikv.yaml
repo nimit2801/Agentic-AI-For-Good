@@ -1,0 +1,26 @@
+name: TiKV
+description: TiKV is a distributed transactional key-value store originally built for TiDB. It offers Raft-replicated, ACID KV with Snapshot Isolation and is used as a horizontally scalable metadata and feature store behind AI data platforms.
+tagline: Distributed transactional key-value store with Raft and ACID semantics
+
+github_url: https://github.com/tikv/tikv
+website_url: https://tikv.org
+docs_url: https://tikv.org/docs
+
+category: Data
+tags: [key-value, distributed, rust, raft, acid, database, cncf]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Single-node Redis or RocksDB cannot hold strongly consistent metadata
+  and feature keys across a GPU cluster without a custom consensus layer.
+  TiKV is a CNCF distributed KV with Raft, ACID transactions, and Snapshot
+  Isolation, so feature stores, job queues, and model-registry metadata
+  scale horizontally without giving up consistency.
+
+use_cases:
+  - Store model-registry and experiment metadata with ACID transactions across regions
+  - Back a feature store or embedding-id map that must survive node failures
+  - Use TiKV as the KV engine under TiDB for SQL access to training metadata
+  - Replace a single-node Redis for strongly consistent agent session state
