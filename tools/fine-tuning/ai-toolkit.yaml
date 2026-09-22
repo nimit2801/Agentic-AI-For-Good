@@ -1,0 +1,27 @@
+name: AI Toolkit
+description: Ostris AI Toolkit is a training suite for fine-tuning diffusion models including FLUX, SDXL, and Wan. It ships a web UI to start, stop, and monitor LoRA jobs plus configs for low-VRAM consumer GPUs.
+tagline: GUI toolkit for fine-tuning FLUX, SDXL, and video diffusion LoRAs
+
+github_url: https://github.com/ostris/ai-toolkit
+website_url: https://github.com/ostris/ai-toolkit
+
+install_command: pip install ostris-ai-toolkit
+
+category: Fine-tuning
+tags: [fine-tuning, lora, flux, sdxl, diffusion, training, python, gui]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Fine-tuning FLUX and video diffusion models usually means hand-written
+  Accelerate scripts, scattered YAML, and guessing VRAM budgets. AI Toolkit
+  wraps LoRA training for FLUX, SDXL, and Wan in a web UI with job control
+  and low-VRAM presets so artists can train custom adapters without
+  assembling a training stack from scratch.
+
+use_cases:
+  - Train a FLUX LoRA on a custom character or style dataset from the web UI
+  - Fine-tune SDXL or Wan video adapters on a single consumer GPU with low-VRAM configs
+  - Queue, pause, and monitor multiple diffusion training jobs without CLI babysitting
+  - Export trained LoRAs for ComfyUI, Forge, or production inference

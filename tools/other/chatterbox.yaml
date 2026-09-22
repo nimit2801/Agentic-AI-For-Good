@@ -1,0 +1,27 @@
+name: Chatterbox
+description: Chatterbox is Resemble AI's open-source text-to-speech and voice conversion model. It generates expressive speech from text with voice cloning from short samples, and is a drop-in local alternative to closed TTS APIs.
+tagline: Open-source TTS and voice cloning from Resemble AI
+
+github_url: https://github.com/resemble-ai/chatterbox
+website_url: https://resemble-ai.github.io/chatterbox_demopage/
+
+install_command: pip install chatterbox-tts
+
+category: Other
+tags: [tts, voice-cloning, speech-synthesis, audio, python, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  High-quality TTS and voice cloning are locked behind paid APIs with usage
+  limits and data-retention risk. Chatterbox is an MIT-licensed local model
+  that clones a voice from a short sample and synthesizes expressive speech
+  on your own GPU, so products can ship custom voices without sending audio
+  to a third-party API.
+
+use_cases:
+  - Clone a speaker from a short reference clip and generate narration locally
+  - Replace ElevenLabs or cloud TTS in an agent that needs on-device speech
+  - Convert one speaker's voice to another for localization or character work
+  - Prototype voice agents without paying per-character TTS fees

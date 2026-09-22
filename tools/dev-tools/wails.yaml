@@ -1,0 +1,27 @@
+name: Wails
+description: Wails is a Go framework for desktop apps that pair a web frontend with a native Go backend. It binds Go methods to JavaScript and uses the OS WebView so AI tools can ship lightweight Mac, Windows, and Linux clients without embedding Chromium.
+tagline: Build native desktop apps in Go with a web frontend
+
+github_url: https://github.com/wailsapp/wails
+website_url: https://wails.io
+docs_url: https://wails.io/docs/introduction
+
+install_command: go install github.com/wailsapp/wails/v2/cmd/wails@latest
+
+category: Dev Tools
+tags: [go, desktop, webview, javascript, native-apps, typescript]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go services that talk to models, queues, and GPUs still need a desktop
+  shell, and Electron forces a second runtime. Wails binds Go functions to
+  JavaScript over the OS WebView so you keep one Go binary for inference
+  orchestration, config, and UI without shipping Chromium next to the model.
+
+use_cases:
+  - Wrap a local inference or agent process in a native Mac and Windows UI
+  - Bind Go backend methods to a React or Vue frontend without writing a REST API
+  - Ship a lightweight desktop client for an ML ops or labeling tool
+  - Replace Electron when the product already lives in Go

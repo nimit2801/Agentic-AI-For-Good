@@ -1,0 +1,24 @@
+name: Musubi Tuner
+description: Musubi Tuner is Kohya's unofficial LoRA trainer for HunyuanVideo, Wan, FramePack, FLUX.1 Kontext, FLUX.2, Qwen-Image, and related image and video models. It caches latents and text-encoder outputs so large video LoRAs train on a single GPU.
+tagline: Kohya LoRA trainer for HunyuanVideo, Wan, FLUX, and Qwen-Image
+
+github_url: https://github.com/kohya-ss/musubi-tuner
+website_url: https://github.com/kohya-ss/musubi-tuner
+
+category: Fine-tuning
+tags: [fine-tuning, lora, hunyuanvideo, wan, flux, video-generation, python, training]
+pricing: free
+is_open_source: true
+
+problem_solved: |
+  Official HunyuanVideo, Wan, and FLUX.2 training stacks are heavy, poorly
+  documented for LoRA, and assume multi-GPU clusters. Musubi Tuner is Kohya's
+  script set that caches latents and text-encoder outputs so you can train
+  image and video LoRAs for those architectures on a single GPU without
+  rewriting each vendor's training code.
+
+use_cases:
+  - Train a HunyuanVideo or Wan LoRA on a custom motion and style dataset
+  - Fine-tune FLUX.1 Kontext or FLUX.2 adapters with cached latents on one GPU
+  - Cache Qwen-Image text-encoder outputs once and reuse them across LoRA runs
+  - Convert trained LoRAs into formats consumed by ComfyUI video workflows
