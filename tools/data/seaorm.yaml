@@ -1,0 +1,27 @@
+name: SeaORM
+description: SeaORM is an async dynamic ORM for Rust built on SQLx. It supports PostgreSQL, MySQL, and SQLite with entities, relations, and migrations so Tokio-based AI services can persist data without a blocking ORM.
+tagline: Async dynamic ORM for Rust on PostgreSQL, MySQL, and SQLite
+
+github_url: https://github.com/SeaQL/sea-orm
+website_url: https://www.sea-ql.org/SeaORM/
+docs_url: https://www.sea-ql.org/SeaORM/docs/index/
+
+install_command: cargo add sea-orm
+
+category: Data
+tags: [rust, orm, async, sql, postgres, mysql, sqlite, tokio]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Diesel is sync-first and sqlx is SQL-first, so async Rust APIs often
+  invent their own mapper. SeaORM is a dynamic async ORM on SQLx with
+  entities, relations, and migrations for Postgres, MySQL, and SQLite,
+  fitting Tokio inference gateways and agent backends.
+
+use_cases:
+  - Persist async job and session state in a Tokio inference API
+  - Model relations between users, API keys, and runs without handwritten SQL
+  - Run SeaORM migrations against SQLite in a local Rust agent
+  - Use an async ORM when sqlx compile-time checking is more ceremony than you need

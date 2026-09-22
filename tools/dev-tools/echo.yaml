@@ -1,0 +1,27 @@
+name: Echo
+description: Echo is a high-performance, minimalist Go web framework with routing, middleware, and data binding. Teams use it for HTTP APIs in front of models, vector stores, and job queues when they want net/http compatibility and a small core.
+tagline: High-performance minimalist Go web framework for HTTP APIs
+
+github_url: https://github.com/labstack/echo
+website_url: https://echo.labstack.com
+docs_url: https://echo.labstack.com/docs
+
+install_command: go get github.com/labstack/echo/v4
+
+category: Dev Tools
+tags: [go, web-framework, http, api, middleware]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go HTTP APIs for model serving need routing, JWT, and JSON binding without
+  a large framework or fasthttp lock-in. Echo is a small net/http framework
+  with middleware and data binding, so inference and agent backends stay
+  explicit and fast.
+
+use_cases:
+  - Build a REST API in front of a local or remote LLM with JWT middleware
+  - Bind JSON tool-call payloads in an agent callback server
+  - Expose health and metrics endpoints next to a Go inference process
+  - Prefer net/http compatibility over fasthttp for middleware that needs the standard library
