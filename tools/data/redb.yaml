@@ -1,0 +1,25 @@
+name: Redb
+description: Redb is a pure-Rust embedded key-value database inspired by LMDB. It offers ACID transactions and zero-copy reads for local agent state, caches, and feature stores without a C dependency.
+tagline: Pure-Rust embedded KV with ACID transactions and zero-copy reads
+
+github_url: https://github.com/cberner/redb
+website_url: https://www.redb.org
+docs_url: https://docs.rs/redb
+install_command: cargo add redb
+
+category: Data
+tags: [rust, key-value, embedded, database, acid, lmdb, zero-copy]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Embedding LMDB or RocksDB in a Rust binary pulls C/C++ and FFI risk.
+  Redb is a pure-Rust ACID KV with zero-copy reads, so local agent state,
+  caches, and feature maps stay typed, transactional, and easy to ship.
+
+use_cases:
+  - Store transactional local state for a Rust agent or inference worker
+  - Cache embeddings or feature rows with ACID commits and zero-copy reads
+  - Replace LMDB in a Rust service that cannot depend on C bindings
+  - Persist model-registry metadata on disk without a server database

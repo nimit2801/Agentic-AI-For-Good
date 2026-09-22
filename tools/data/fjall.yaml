@@ -1,0 +1,25 @@
+name: Fjall
+description: Fjall is a log-structured, embeddable key-value engine written in Rust. It stores local KV data for agents and inference services with LSM-tree performance and no native C bindings.
+tagline: Log-structured embeddable KV engine written in Rust
+
+github_url: https://github.com/fjall-rs/fjall
+website_url: https://fjall-rs.github.io
+docs_url: https://docs.rs/fjall
+install_command: cargo add fjall
+
+category: Data
+tags: [rust, key-value, embedded, lsm, database, log-structured]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Write-heavy local KV in Rust often means RocksDB and a C++ toolchain.
+  Fjall is a pure-Rust LSM engine, so agent logs, event stores, and
+  inference caches get log-structured write performance without FFI.
+
+use_cases:
+  - Persist write-heavy agent event logs in a Rust process
+  - Back a local feature or embedding cache with LSM-tree writes
+  - Embed a KV engine in an inference worker without RocksDB
+  - Store sequential telemetry for offline training pipelines
