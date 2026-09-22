@@ -1,0 +1,28 @@
+name: ConnectorX
+description: ConnectorX loads SQL query results from Postgres, MySQL, SQLite, and other databases into Pandas, Polars, PyArrow, and Modin DataFrames. Written in Rust, it parallelizes extraction so ML feature pipelines spend less time waiting on the database.
+tagline: Fastest path from SQL databases to Pandas, Polars, and Arrow DataFrames
+
+github_url: https://github.com/sfu-db/connector-x
+website_url: https://sfu-db.github.io/connector-x/intro.html
+docs_url: https://sfu-db.github.io/connector-x/intro.html
+
+install_command: pip install connectorx
+
+category: Data
+tags: [python, rust, pandas, polars, sql, etl, dataframe, postgres]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Pandas read_sql and similar clients pull rows through a single Python
+  process, so feature tables of millions of rows stall training jobs.
+  ConnectorX is a Rust extractor that partitions SQL reads and writes
+  Arrow, Pandas, Polars, or Modin frames in parallel, cutting database-to-
+  DataFrame time without changing the SQL.
+
+use_cases:
+  - Load a Postgres feature table into Polars or Pandas for model training
+  - Parallel-extract MySQL or SQLite query results into PyArrow for a Spark or Ray job
+  - Replace pandas.read_sql in an ETL step that is CPU-bound on row conversion
+  - Feed DuckDB or downstream vector pipelines from partitioned SQL reads
