@@ -1,0 +1,24 @@
+name: NetBird
+description: NetBird builds a WireGuard overlay that connects devices, users, and agents with SSO, MFA, and access controls. ML teams mesh GPU boxes and private inference hosts without a classic VPN concentrator.
+tagline: WireGuard overlay network with SSO and access controls
+
+github_url: https://github.com/netbirdio/netbird
+website_url: https://netbird.io
+docs_url: https://docs.netbird.io
+
+category: Dev Tools
+tags: [vpn, wireguard, overlay, networking, sso, zero-trust, self-hosted]
+pricing: freemium
+is_open_source: true
+
+problem_solved: |
+  GPU workers, Jupyter hosts, and private model APIs live on networks
+  that laptops cannot reach without a brittle site-to-site VPN. NetBird
+  builds a WireGuard overlay with SSO and granular ACLs so those machines
+  join one mesh under identity, without inbound ports or Tailscale SaaS.
+
+use_cases:
+  - Mesh on-prem GPU boxes and cloud VMs for private training access
+  - Reach a private inference endpoint from a laptop with SSO and MFA
+  - Replace a site-to-site VPN with identity-aware WireGuard for ML labs
+  - Connect CI runners to internal vector databases without exposing ports
