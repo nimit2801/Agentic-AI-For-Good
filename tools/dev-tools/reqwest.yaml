@@ -1,0 +1,26 @@
+name: Reqwest
+description: Reqwest is an ergonomic HTTP client for Rust built on hyper and Tokio. AI services use it to call LLM APIs, vector databases, and webhooks with async requests, JSON, and TLS without assembling hyper by hand.
+tagline: Ergonomic async HTTP client for Rust
+
+github_url: https://github.com/seanmonstar/reqwest
+website_url: https://docs.rs/reqwest
+docs_url: https://docs.rs/reqwest
+install_command: cargo add reqwest
+
+category: Dev Tools
+tags: [rust, http, client, tokio, async, json, networking]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Rust AI services need to call OpenAI-compatible APIs, vector DBs, and
+  webhooks without assembling hyper, TLS, and JSON by hand. Reqwest is
+  the standard async HTTP client on Tokio so those calls stay typed and
+  non-blocking.
+
+use_cases:
+  - Call an OpenAI-compatible LLM API from a Rust agent or gateway
+  - POST embeddings and search queries to a vector database
+  - Send async webhooks from a Tokio inference worker
+  - Fetch training artifacts over HTTPS with JSON and TLS built in
