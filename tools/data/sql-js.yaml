@@ -1,0 +1,26 @@
+name: sql.js
+description: sql.js is SQLite compiled to WebAssembly so browsers and Node can run a full SQL database with no native bindings. AI apps use it for in-browser indexes, local agent memory, and offline caches.
+tagline: SQLite compiled to WebAssembly for the browser and Node
+
+github_url: https://github.com/sql-js/sql.js
+website_url: https://sql.js.org
+docs_url: https://sql.js.org
+install_command: npm install sql.js
+
+category: Data
+tags: [sqlite, wasm, javascript, browser, embedded, sql, local-first]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Browser and edge AI apps need a real SQL store without native SQLite
+  bindings or a server. sql.js compiles SQLite to WebAssembly so you can
+  open, query, and persist a database in the page or in Node, which is how
+  teams keep agent memory, RAG indexes, and embedding caches fully client-side.
+
+use_cases:
+  - Run a local SQLite database in the browser for agent memory and chat history
+  - Persist embeddings and retrieval indexes without a backend database
+  - Query structured experiment metadata in a Node or web app with no native addon
+  - Ship offline-first AI demos that store state in a downloadable SQLite file
