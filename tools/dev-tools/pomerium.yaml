@@ -1,0 +1,27 @@
+name: Pomerium
+description: Pomerium is an identity-aware access proxy that puts SSO and context policies in front of internal apps. ML teams expose Jupyter, Grafana, and model consoles without a VPN or opening inbound ports.
+tagline: Identity-aware access proxy for internal apps and APIs
+
+github_url: https://github.com/pomerium/pomerium
+website_url: https://www.pomerium.com
+docs_url: https://www.pomerium.com/docs
+install_command: brew install pomerium
+
+category: Dev Tools
+tags: [identity, proxy, sso, zero-trust, access, security, go]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Internal ML dashboards and agent UIs are either on a VPN that nobody
+  wants to join or exposed with a shared password. Pomerium is an
+  identity-aware reverse proxy that authenticates via OIDC and enforces
+  context policies so those tools are reachable by the right people
+  without a mesh VPN or inbound firewall holes.
+
+use_cases:
+  - Put SSO in front of Jupyter, Grafana, and model-registry UIs
+  - Expose an internal agent console with identity-aware access instead of a VPN
+  - Enforce context policies on who can hit private inference endpoints
+  - Replace a shared basic-auth proxy with OIDC for ML ops tools
