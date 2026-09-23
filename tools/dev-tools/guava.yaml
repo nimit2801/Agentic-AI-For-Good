@@ -1,0 +1,26 @@
+name: Guava
+description: Google core libraries for Java with collections, caching, concurrency, and I/O helpers. Guava fills JDK gaps so JVM model gateways and agent workers share battle-tested utilities instead of one-off helpers.
+tagline: Google core libraries for Java
+
+github_url: https://github.com/google/guava
+website_url: https://guava.dev
+docs_url: https://guava.dev/releases/snapshot-jre/api/docs/
+
+category: Dev Tools
+tags: [java, jvm, collections, cache, concurrency, google]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JVM AI services reinvent immutable lists, rate limiters, and in-process
+  caches around LLM clients. Guava ships collections, caching, hashing,
+  and concurrency primitives so model-gateway and agent code stays
+  consistent instead of copying utility classes.
+
+use_cases:
+  - Use ImmutableList and Multimap for RAG chunk and metadata collections
+  - Rate-limit outbound model API calls with Guava RateLimiter
+  - Cache prompt templates with CacheBuilder in a Java gateway
+  - Split and join document text with Guava CharMatcher and Splitter
+  - Coordinate agent worker threads with ListenableFuture

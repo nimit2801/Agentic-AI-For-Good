@@ -1,0 +1,26 @@
+name: Gson
+description: Java library that converts objects to JSON and back. Gson maps DTOs so JVM model gateways, tool-call payloads, and RAG APIs serialize chat requests without a heavy annotation processor.
+tagline: Java objects to JSON and back
+
+github_url: https://github.com/google/gson
+website_url: https://github.com/google/gson
+docs_url: https://github.com/google/gson/blob/main/UserGuide.md
+
+category: Dev Tools
+tags: [java, json, gson, serialization, jvm, google]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JVM services talking to LLM and embedding HTTP APIs need to serialize
+  request DTOs and parse JSON responses. Gson converts Java objects to
+  JSON with sensible defaults so model-gateway and agent clients avoid
+  handwritten parsers.
+
+use_cases:
+  - Serialize OpenAI-compatible chat request DTOs from a Java client
+  - Parse embedding API JSON into typed Java objects
+  - Convert agent tool-call arguments between maps and POJOs
+  - Pretty-print RAG document payloads for debugging a JVM service
+  - Customize field naming when a model provider uses snake_case JSON

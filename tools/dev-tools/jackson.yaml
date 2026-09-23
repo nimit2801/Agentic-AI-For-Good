@@ -1,0 +1,26 @@
+name: Jackson
+description: JSON processor for Java with streaming, databind, and annotations. Jackson is the default JSON stack for Spring and JVM model gateways so chat, embedding, and tool-call payloads map to typed objects.
+tagline: JSON processor for Java
+
+github_url: https://github.com/FasterXML/jackson
+website_url: https://github.com/FasterXML/jackson
+docs_url: https://github.com/FasterXML/jackson#documentation
+
+category: Dev Tools
+tags: [java, json, jackson, serialization, databind, jvm]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JVM model-gateway and agent services parse large JSON chat and
+  embedding payloads. Jackson streams and databinds those payloads to
+  POJOs with annotations so teams avoid Gson-only defaults and get
+  modules for dates, Kotlin, and Afterburner performance.
+
+use_cases:
+  - Databind OpenAI-compatible chat JSON into Java DTOs
+  - Stream large RAG document JSON without loading the whole tree
+  - Serialize agent tool-call results with custom Jackson modules
+  - Parse embedding API arrays into typed Java records
+  - Share ObjectMapper config across Spring Boot model-gateway services
