@@ -1,0 +1,26 @@
+name: Ktor
+description: Asynchronous Kotlin framework for HTTP servers and clients. Ktor builds model-gateway APIs, webhooks, and SSE token streams with coroutines and a small engine on Netty, CIO, or Jetty.
+tagline: Async Kotlin HTTP framework for servers and clients
+
+github_url: https://github.com/ktorio/ktor
+website_url: https://ktor.io
+docs_url: https://ktor.io/docs/welcome.html
+
+category: Dev Tools
+tags: [kotlin, ktor, http, coroutines, jetbrains, server]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Kotlin teams that need an HTTP API for agents often pull Spring Boot
+  for a few routes. Ktor is a coroutine-first server and client with
+  routing, SSE, and WebSockets so model gateways and tool webhooks stay
+  small and non-blocking on JVM, Native, and Kotlin Multiplatform.
+
+use_cases:
+  - Serve a Kotlin model-gateway API on Netty with Ktor routing
+  - Stream chat tokens to clients over Server-Sent Events
+  - Call OpenAI-compatible APIs with the Ktor HTTP client
+  - Expose webhook endpoints for agent tool callbacks
+  - Share Ktor client code across JVM and Kotlin Multiplatform apps

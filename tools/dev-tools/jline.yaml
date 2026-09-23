@@ -1,0 +1,26 @@
+name: JLine
+description: Java library for console input with line editing, history, and completion. JLine powers JVM CLIs so agent REPLs and model-gateway shells feel like a real terminal instead of System.in.
+tagline: Console line editing for Java CLIs
+
+github_url: https://github.com/jline/jline3
+website_url: https://jline.org
+docs_url: https://jline.org
+
+category: Dev Tools
+tags: [java, jvm, cli, terminal, jline, console]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Java agent CLIs and REPL tools read System.in with no history or tab
+  completion. JLine handles terminals, ANSI, completion, and history so
+  JVM shells for model gateways and local agents match the UX of Python
+  CLIs without native bindings.
+
+use_cases:
+  - Build a Java REPL for chatting with a local agent
+  - Add tab completion for tool names in a JVM CLI
+  - Keep command history in a model-gateway admin shell
+  - Render ANSI progress for embedding batch jobs in a terminal
+  - Power interactive prompts in a Kotlin command-line agent
