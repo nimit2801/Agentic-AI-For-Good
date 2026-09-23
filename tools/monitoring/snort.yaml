@@ -1,0 +1,26 @@
+name: Snort
+description: Widely deployed network intrusion detection and prevention engine from Cisco. Snort 3 inspects packets with rules and protocol parsers so teams can alert on exploits aimed at APIs, model servers, and data stores.
+tagline: Rule-based network IDS and IPS engine
+
+github_url: https://github.com/snort3/snort3
+website_url: https://www.snort.org
+docs_url: https://www.snort.org/documents
+
+category: Monitoring
+tags: [ids, ips, network, security, rules, cisco, packet-inspection]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Application firewalls miss payload patterns that classic IDS rules
+  already cover, and many ML stacks have no packet-level visibility.
+  Snort 3 is a multithreaded IDS/IPS with a large rule ecosystem, so you
+  can inspect traffic to model APIs and training clusters and alert or
+  drop known exploit signatures.
+
+use_cases:
+  - "Run Snort as IDS on the path in front of model serving and vector databases"
+  - "Load community or custom rules to detect exploit traffic against ML endpoints"
+  - "Deploy inline IPS mode to drop known attack signatures at the network edge"
+  - "Feed Snort alerts into a SIEM for incident review of AI platform traffic"

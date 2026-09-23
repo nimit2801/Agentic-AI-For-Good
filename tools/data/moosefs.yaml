@@ -1,0 +1,26 @@
+name: MooseFS
+description: Petabyte-scale POSIX distributed file system with fault tolerance, snapshots, and software-defined storage. MooseFS presents one namespace across commodity servers so training clusters can share datasets and checkpoints.
+tagline: Petabyte POSIX distributed file system
+
+github_url: https://github.com/moosefs/moosefs
+website_url: https://moosefs.com
+docs_url: https://moosefs.com/documentation/
+
+category: Data
+tags: [distributed-storage, filesystem, posix, fuse, hpc, snapshots, sds]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Training clusters need a POSIX namespace that survives node loss and
+  grows past a single NAS, without locking into a proprietary appliance.
+  MooseFS is an open-source distributed file system with metadata servers,
+  chunkservers, and FUSE clients, so GPU jobs can read shared datasets and
+  write checkpoints with replication and snapshots on commodity disks.
+
+use_cases:
+  - "Mount a shared POSIX volume for multi-node GPU training on commodity hardware"
+  - "Snapshot datasets and checkpoints before a long training run"
+  - "Grow storage by adding chunkservers without rewriting training jobs"
+  - "Keep model artifacts available after a storage node fails"

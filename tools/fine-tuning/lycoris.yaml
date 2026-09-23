@@ -1,0 +1,28 @@
+name: LyCORIS
+description: Parameter-efficient fine-tuning methods beyond vanilla LoRA for Stable Diffusion and other networks. LyCORIS implements LoHa, LoKr, DyLoRA, and related adapters so you train style and concept adapters with fewer parameters.
+tagline: LoRA-beyond adapters for Stable Diffusion
+
+github_url: https://github.com/KohakuBlueleaf/LyCORIS
+website_url: https://github.com/KohakuBlueleaf/LyCORIS
+docs_url: https://github.com/KohakuBlueleaf/LyCORIS
+
+install_command: pip install lycoris-lora
+
+category: Fine-tuning
+tags: [lora, peft, stable-diffusion, fine-tuning, loha, lokr, python]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Vanilla LoRA is a single low-rank recipe and often underfits style or
+  character training on diffusion models. LyCORIS (LoRA beYond Conventional
+  methods) adds LoHa, LoKr, and related adapters that compose rank in
+  different ways, so you can pick a method that matches the concept you
+  are training without full-model fine-tuning.
+
+use_cases:
+  - "Train a Stable Diffusion style or character adapter with LoHa instead of vanilla LoRA"
+  - "Compare LoKr and DyLoRA adapters on the same dataset without swapping training stacks"
+  - "Plug LyCORIS modules into Kohya or sd-scripts style training pipelines"
+  - "Ship smaller PEFT weights for image-generation concepts than a full UNet fine-tune"
