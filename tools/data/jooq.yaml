@@ -1,0 +1,26 @@
+name: jOOQ
+description: Type-safe SQL builder and code generator for Java. jOOQ maps tables to fluent Java APIs so RAG metadata stores, feature tables, and agent job queues stay SQL-native without a heavy ORM.
+tagline: Type-safe SQL in Java
+
+github_url: https://github.com/jOOQ/jOOQ
+website_url: https://www.jooq.org
+docs_url: https://www.jooq.org/doc/
+
+category: Data
+tags: [java, sql, jooq, orm, codegen, postgres, jdbc]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JVM AI pipelines store documents, embeddings metadata, and job state
+  in SQL but lose type safety with string queries or hide SQL behind
+  an ORM. jOOQ generates fluent, typed SQL from your schema so
+  RAG and agent services write real SQL that the compiler checks.
+
+use_cases:
+  - Query RAG document and chunk tables with type-safe SQL from Java
+  - Generate Java classes from a Postgres schema used by a feature store
+  - Insert agent job rows and poll status without handwritten JDBC
+  - Join embedding-metadata tables for eval reports in a JVM service
+  - Keep complex analytics SQL in code instead of string templates

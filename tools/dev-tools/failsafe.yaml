@@ -1,0 +1,26 @@
+name: Failsafe
+description: Fault-tolerance library for the JVM with retries, circuit breakers, rate limiters, timeouts, and fallbacks. Failsafe wraps Java calls so model gateways and agent workers survive provider outages without Hystrix.
+tagline: Resilience patterns for Java and the JVM
+
+github_url: https://github.com/failsafe-lib/failsafe
+website_url: https://failsafe.dev
+docs_url: https://failsafe.dev/getting-started/
+
+category: Dev Tools
+tags: [java, jvm, retry, circuit-breaker, timeout, resilience]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JVM clients that call LLM, embedding, or vector-search APIs fail hard
+  when a provider times out or rate-limits. Failsafe composes retries,
+  circuit breakers, timeouts, and fallbacks around a call so agent
+  workers degrade instead of cascading.
+
+use_cases:
+  - Retry transient OpenAI-compatible chat errors with backoff from Java
+  - Circuit-break a failing embedding endpoint in a JVM gateway
+  - Time out slow vector-search calls so an agent worker stays responsive
+  - Fall back to a cached answer when a model provider is down
+  - Rate-limit outbound tool HTTP calls from a Java agent
