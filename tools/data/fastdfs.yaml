@@ -1,0 +1,26 @@
+name: FastDFS
+description: High-performance distributed file system for storing, syncing, and serving large numbers of files. FastDFS balances capacity across storage servers and is widely used for media, datasets, and model artifact serving.
+tagline: Lightweight distributed file storage for many files
+
+github_url: https://github.com/happyfish100/fastdfs
+website_url: https://github.com/happyfish100/fastdfs
+docs_url: https://github.com/happyfish100/fastdfs/wiki
+
+category: Data
+tags: [distributed-storage, filesystem, object-storage, media, datasets, c]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Serving millions of medium-sized files (images, shards, checkpoints)
+  on a POSIX NAS becomes a metadata bottleneck. FastDFS is a tracker-plus-
+  storage design that syncs files across servers, balances capacity, and
+  serves them over HTTP so dataset and artifact traffic stays cheap to
+  operate without a full object-store stack.
+
+use_cases:
+  - "Store and serve large image or audio training datasets across multiple storage nodes"
+  - "Sync model artifacts between tracker-coordinated FastDFS storage servers"
+  - "Offload media and file serving from application servers onto a dedicated DFS"
+  - "Balance capacity as new storage servers join a production file cluster"

@@ -1,0 +1,29 @@
+name: KrakenD
+description: High-performance, stateless, declarative API gateway written in Go. KrakenD aggregates, transforms, and routes backend services with linear scalability and an optional AI gateway path for LLM traffic.
+tagline: Ultra-high-performance declarative API gateway
+
+github_url: https://github.com/krakend/krakend-ce
+website_url: https://www.krakend.io
+docs_url: https://www.krakend.io/docs/
+
+install_command: brew install krakend
+
+category: Dev Tools
+tags: [api-gateway, go, microservices, reverse-proxy, graphql, cloud-native, ai-gateway]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Teams exposing many microservices and LLM backends need a single edge that
+  aggregates endpoints, applies auth and rate limits, and stays fast under
+  bursty traffic. KrakenD is a stateless Go gateway configured from a
+  declarative file, so you scale by adding instances without a shared
+  database, while still transforming, combining, and caching backend
+  responses for API and AI workloads.
+
+use_cases:
+  - "Aggregate dozens of microservice endpoints into one public API without writing glue services"
+  - "Put a high-throughput gateway in front of multiple LLM providers with rate limits and auth"
+  - "Transform and combine backend JSON responses at the edge so clients hit one round trip"
+  - "Run a linearly scalable, stateless API gateway on Kubernetes or bare metal from a config file"

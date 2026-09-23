@@ -1,0 +1,26 @@
+name: Zuul
+description: Netflix JVM API gateway for dynamic routing, monitoring, resiliency, and security. Zuul sits at the edge of a microservice fleet, applying filters for auth, load shedding, and routing so APIs fail closed under load.
+tagline: Netflix edge gateway for dynamic routing
+
+github_url: https://github.com/Netflix/zuul
+website_url: https://github.com/Netflix/zuul
+docs_url: https://github.com/Netflix/zuul/wiki
+
+category: Dev Tools
+tags: [api-gateway, java, netflix, microservices, resiliency, routing, jvm]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Large JVM service fleets need an edge that can change routing, shed load,
+  and enforce security without redeploying every backend. Zuul is Netflix's
+  filter-based gateway: inbound requests pass through inspectable filters
+  for auth, routing, and metrics so AI and data APIs stay reachable when
+  downstream instances fail or traffic spikes.
+
+use_cases:
+  - "Put a JVM edge gateway in front of Spring and Netflix-style microservice stacks"
+  - "Apply auth, routing, and load-shedding filters without changing backend services"
+  - "Fail closed at the edge when a model or data API becomes unhealthy"
+  - "Collect request metrics and tracing as traffic enters a large Java service fleet"
