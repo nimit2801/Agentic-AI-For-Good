@@ -1,0 +1,26 @@
+name: Immutables
+description: Java annotation processor that generates immutable value objects and builders, including for records. Immutables removes boilerplate so JVM DTOs for chat, tools, and embeddings stay typed and thread-safe.
+tagline: Generate immutable Java value objects and builders
+
+github_url: https://github.com/immutables/immutables
+website_url: https://immutables.org
+docs_url: https://immutables.org
+
+category: Dev Tools
+tags: [java, jvm, immutables, codegen, builders, records]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JVM model-gateway DTOs accumulate getters, builders, and equals
+  methods that drift from the schema. Immutables generates immutable
+  types and builders from annotated interfaces or records so chat,
+  tool-call, and embedding payloads stay consistent and thread-safe.
+
+use_cases:
+  - Generate immutable chat-message DTOs for a Java gateway
+  - Build typed tool-call payloads with generated builders
+  - Add wither methods on Java records for RAG metadata copies
+  - Share immutable config objects across agent worker threads
+  - Replace hand-written POJO boilerplate for embedding responses
