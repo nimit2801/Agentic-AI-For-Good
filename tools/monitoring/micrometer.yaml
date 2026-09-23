@@ -1,0 +1,26 @@
+name: Micrometer
+description: Application observability facade for the JVM. Micrometer is SLF4J for metrics so Java model gateways and agent workers emit timers, counters, and traces to Prometheus, Datadog, or OpenTelemetry.
+tagline: Observability facade for JVM applications
+
+github_url: https://github.com/micrometer-metrics/micrometer
+website_url: https://micrometer.io
+docs_url: https://docs.micrometer.io
+
+category: Monitoring
+tags: [java, jvm, metrics, prometheus, opentelemetry, observability]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JVM AI services need latency, error, and token-use metrics but each
+  backend has its own client. Micrometer provides one MeterRegistry
+  API so model-gateway and agent workers instrument once and export
+  to Prometheus, Datadog, or OTel.
+
+use_cases:
+  - Time LLM chat calls from a Spring Boot gateway with Timer metrics
+  - Count embedding API errors and export them to Prometheus
+  - Track agent tool-call duration histograms on the JVM
+  - Bind JVM memory and GC metrics next to RAG query latency
+  - Export the same meters to OpenTelemetry and Datadog without dual clients
