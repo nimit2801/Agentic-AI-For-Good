@@ -1,0 +1,25 @@
+name: Drone CI
+description: Container-native CI/CD platform, now part of Harness Open Source, that runs pipelines as Docker steps for building, testing, and deploying AI services from Git.
+tagline: Container-native CI pipelines as Docker steps
+
+github_url: https://github.com/harness/harness
+website_url: https://www.drone.io
+docs_url: https://docs.drone.io
+
+category: Dev Tools
+tags: [ci-cd, docker, pipelines, continuous-integration, self-hosted, git]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  ML and agent repos need CI that runs each step in a clean container without a
+  heavy Jenkins estate. Drone CI defines pipelines as YAML and executes them as
+  Docker containers, so tests, image builds, and model-package jobs stay
+  reproducible from Git without sharing state across builds.
+
+use_cases:
+  - Run pytest, lint, and Docker image builds on every Git push
+  - Package model-serving containers as isolated CI steps
+  - Self-host CI next to Git so secrets never leave your network
+  - Gate deploys of AI APIs until containerized tests pass

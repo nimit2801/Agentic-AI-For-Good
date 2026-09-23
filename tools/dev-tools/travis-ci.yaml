@@ -1,0 +1,24 @@
+name: Travis CI
+description: Hosted continuous integration service that builds and tests GitHub projects on Linux, macOS, and Windows, long used for open-source Python and ML libraries.
+tagline: Hosted CI for GitHub projects across OS matrices
+
+github_url: https://github.com/travis-ci/travis-ci
+website_url: https://travis-ci.com
+docs_url: https://docs.travis-ci.com
+
+category: Dev Tools
+tags: [ci-cd, github, testing, continuous-integration, saas, open-source]
+pricing: freemium
+is_open_source: false
+
+problem_solved: |
+  Open-source ML libraries need a hosted matrix of OS and language versions without
+  running their own Jenkins. Travis CI watches GitHub and runs .travis.yml jobs on
+  Linux, macOS, and Windows so packages can prove they install and test before a
+  release, which is why so many Python and scientific libraries still ship with it.
+
+use_cases:
+  - Test Python ML packages across multiple language and OS versions on GitHub PRs
+  - Run install and unit tests for open-source libraries without self-hosting CI
+  - Publish build status badges that show whether the default branch is green
+  - Automate release checks for packages that still use .travis.yml

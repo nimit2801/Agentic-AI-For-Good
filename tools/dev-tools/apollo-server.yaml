@@ -1,0 +1,27 @@
+name: Apollo Server
+description: Spec-compliant GraphQL server for Node.js that lets teams expose typed APIs in front of data sources, including services that back AI products and agent tools.
+tagline: Production GraphQL server for Node.js
+
+github_url: https://github.com/apollographql/apollo-server
+website_url: https://www.apollographql.com/docs/apollo-server/
+docs_url: https://www.apollographql.com/docs/apollo-server/
+
+install_command: npm install @apollo/server
+
+category: Dev Tools
+tags: [graphql, nodejs, api, typescript, server, schema]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  AI products that stitch databases, vector stores, and internal tools into one API
+  often end up with ad-hoc REST handlers. Apollo Server gives a schema-first GraphQL
+  layer for Node.js so clients and agents can query exactly the fields they need,
+  with a production-ready server that plugs into Express and other Node frameworks.
+
+use_cases:
+  - Expose a GraphQL API over feature stores, user data, and model metadata
+  - Let agent tools query typed fields instead of many REST endpoints
+  - Schema-first development of Node backends that sit in front of ML services
+  - Compose resolvers that fetch from databases, caches, and inference APIs
