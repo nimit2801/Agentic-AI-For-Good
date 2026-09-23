@@ -1,0 +1,28 @@
+name: Netty
+description: Asynchronous event-driven network application framework for the JVM. Netty is the NIO client and server stack behind gRPC Java, Elasticsearch, Spark, and many model-serving gateways that need HTTP/2, TLS, and custom protocol codecs without blocking I/O.
+tagline: Async NIO networking for high-performance JVM servers
+
+github_url: https://github.com/netty/netty
+website_url: https://netty.io
+docs_url: https://netty.io/wiki/user-guide.html
+
+category: Dev Tools
+tags: [java, jvm, networking, nio, http2, tls, async, model-serving]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JVM teams that front LLM inference, embeddings, or agent traffic often
+  start from blocking sockets or a servlet container and then hit latency
+  and connection-count limits. Netty gives a unified event-driven API for
+  TCP, UDP, HTTP, HTTP/2, and TLS so model gateways and streaming
+  inference servers keep thousands of connections open without a thread
+  per request.
+
+use_cases:
+  - Build a non-blocking HTTP/2 inference gateway in front of JVM model servers
+  - Terminate TLS and stream token responses from an LLM backend without blocking I/O
+  - Implement custom binary protocols between embedding workers and vector stores
+  - Power gRPC Java and other RPC stacks that need multiplexed HTTP/2 on the JVM
+  - Handle WebSocket or long-lived connections for agent tool-call callbacks

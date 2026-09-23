@@ -1,0 +1,27 @@
+name: Retrofit
+description: Type-safe HTTP client for Android and the JVM built on OkHttp. Retrofit turns REST endpoints into Java or Kotlin interfaces so model-gateway, vector-search, and agent-tool clients stay typed instead of assembling URLs by hand.
+tagline: Type-safe REST client for Android and the JVM
+
+github_url: https://github.com/lysine-dev/retrofit
+website_url: https://github.com/lysine-dev/retrofit
+docs_url: https://github.com/lysine-dev/retrofit
+
+category: Dev Tools
+tags: [java, kotlin, android, http, rest, okhttp, jvm, client]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JVM teams talking to LLM, embedding, or vector-search HTTP APIs often
+  concatenate URLs and parse JSON by hand. Retrofit maps annotated
+  interfaces onto OkHttp so model-gateway and agent-tool clients get
+  typed request and response objects, converters, and call adapters
+  without a custom REST layer.
+
+use_cases:
+  - Declare a typed Kotlin interface for an OpenAI-compatible chat API
+  - Call vector-search and embedding REST endpoints from Android or JVM services
+  - Convert protobuf or JSON tool-call payloads with Retrofit converters
+  - Share one OkHttp client and interceptors across several model-provider APIs
+  - Generate coroutine or Rx adapters for async agent HTTP workflows
