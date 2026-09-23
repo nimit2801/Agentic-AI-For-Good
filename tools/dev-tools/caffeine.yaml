@@ -1,0 +1,26 @@
+name: Caffeine
+description: High-performance in-memory cache for Java inspired by Guava Cache. Caffeine uses Window TinyLFU eviction so JVM model gateways, embedding lookups, and agent workers keep hot keys in process without a remote cache for local hits.
+tagline: Near-optimal in-memory cache for Java
+
+github_url: https://github.com/ben-manes/caffeine
+website_url: https://github.com/ben-manes/caffeine
+docs_url: https://github.com/ben-manes/caffeine/wiki
+
+category: Dev Tools
+tags: [java, jvm, cache, in-memory, guava, caffeine]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JVM AI services repeatedly fetch embeddings, tool results, or prompt
+  templates from Redis or a model API. Caffeine keeps a bounded local
+  cache with size and time eviction so hot keys stay in-process and
+  remote round trips drop without hand-rolled ConcurrentHashMap logic.
+
+use_cases:
+  - Cache embedding vectors for repeated RAG queries in a JVM gateway
+  - Memoize LLM tool-call results with expire-after-write in an agent worker
+  - Bound an in-process prompt-template cache with maximumSize eviction
+  - Refresh stale model-config entries asynchronously after first stale hit
+  - Collect hit-rate stats on a Java inference client's local cache

@@ -1,0 +1,26 @@
+name: Lombok
+description: Java annotation processor that generates getters, builders, and logging boilerplate at compile time. Lombok keeps JVM DTO, config, and tool-call classes short so model-gateway and agent code stays readable without hand-written equals methods.
+tagline: Compile-time boilerplate reduction for Java
+
+github_url: https://github.com/projectlombok/lombok
+website_url: https://projectlombok.org
+docs_url: https://projectlombok.org/features/
+
+category: Dev Tools
+tags: [java, jvm, lombok, annotation-processor, boilerplate, builder]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Java model-gateway and agent codebases drown in getters, setters, and
+  equals methods on DTOs and config types. Lombok plugs into javac and
+  IDEs so @Data, @Builder, and @Slf4j generate that boilerplate at
+  compile time without runtime reflection.
+
+use_cases:
+  - Generate builders for LLM request and response DTOs in a Java client
+  - Add @Slf4j logging to an agent worker without manual Logger factories
+  - Keep embedding and tool-call config classes as @Value records-style types
+  - Cut equals and hashCode noise on RAG document and chunk models
+  - Share @Builder payloads between Spring services and GraalVM native images
