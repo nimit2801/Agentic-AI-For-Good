@@ -1,0 +1,27 @@
+name: Review Board
+description: Extensible code review tool for Git, Mercurial, and other SCMs, used by teams that want structured review outside of GitHub pull requests.
+tagline: Extensible code review for projects of any size
+
+github_url: https://github.com/reviewboard/reviewboard
+website_url: https://www.reviewboard.org
+docs_url: https://www.reviewboard.org/docs/
+
+install_command: pip install ReviewBoard
+
+category: Dev Tools
+tags: [code-review, git, collaboration, python, self-hosted, scm]
+pricing: freemium
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Some ML and platform teams still review patches outside GitHub, or need review
+  across multiple SCMs. Review Board gives a self-hosted review UI with diffs,
+  comments, and ship-it workflow so model, data, and infra changes get the same
+  structured review whether they live in Git, Mercurial, or Perforce.
+
+use_cases:
+  - Review Git and Mercurial changes for ML libraries that are not on GitHub
+  - Host an internal review server with comments, issues, and ship-it votes
+  - Track review history for model-training code that must stay auditable
+  - Integrate review into existing SCM hosting without moving to GitHub PRs
