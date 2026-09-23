@@ -1,0 +1,26 @@
+name: Byte Buddy
+description: Runtime code generation library for the JVM. Byte Buddy creates classes and intercepts methods so Java agent workers, mock frameworks, and AOP layers instrument model clients without hand-written ASM.
+tagline: Runtime code generation for the Java virtual machine
+
+github_url: https://github.com/raphw/byte-buddy
+website_url: https://bytebuddy.net
+docs_url: https://bytebuddy.net/#/tutorial
+
+category: Dev Tools
+tags: [java, jvm, bytecode, codegen, instrumentation, aop]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JVM teams that need mocks, tracing agents, or dynamic proxies around
+  LLM clients either write ASM by hand or pull a heavy AOP stack.
+  Byte Buddy generates and redefines classes at runtime so instrumentation
+  stays typed and maintainable.
+
+use_cases:
+  - Intercept Java model-client methods to add tracing around LLM calls
+  - Generate test doubles for embedding and vector-search interfaces
+  - Build a Java agent that rewrites RAG service classes at load time
+  - Create dynamic proxies for tool-calling adapters without handwritten ASM
+  - Instrument agent workers with method timing without a full AOP framework

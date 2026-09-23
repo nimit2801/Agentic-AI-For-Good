@@ -1,0 +1,26 @@
+name: Hibernate
+description: Idiomatic ORM for Java and relational databases. Hibernate maps entities so JVM RAG stores, feature tables, and agent job queues persist without handwritten JDBC.
+tagline: Idiomatic persistence for Java and SQL databases
+
+github_url: https://github.com/hibernate/hibernate-orm
+website_url: https://hibernate.org
+docs_url: https://docs.jboss.org/hibernate/orm/current/userguide/html_single/Hibernate_User_Guide.html
+
+category: Data
+tags: [java, orm, hibernate, jpa, sql, jdbc]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JVM AI pipelines store documents, eval rows, and agent job state in
+  SQL but drown in JDBC boilerplate. Hibernate maps Java entities to
+  tables with JPA so RAG and agent services persist objects and query
+  with HQL or criteria without raw SQL strings.
+
+use_cases:
+  - Persist RAG document and chunk entities to Postgres from Java
+  - Map agent conversation and tool-call history to JPA entities
+  - Query feature-store rows with HQL in a JVM training job
+  - Lazy-load related eval and dataset records in a Spring service
+  - Generate schema updates for an agent job-queue database
