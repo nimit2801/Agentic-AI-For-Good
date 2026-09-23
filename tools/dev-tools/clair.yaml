@@ -1,0 +1,25 @@
+name: Clair
+description: Static analysis tool that scans container images and other artifacts for known vulnerabilities, used to gate AI service images before they ship.
+tagline: Container vulnerability scanning for image registries
+
+github_url: https://github.com/quay/clair
+website_url: https://quay.github.io/clair/
+docs_url: https://quay.github.io/clair/
+
+category: Dev Tools
+tags: [security, containers, vulnerability-scanning, docker, oci, registry]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Model-serving images and training containers pick up OS and library CVEs that
+  teams only notice in production. Clair indexes vulnerability data and scans OCI
+  images so registries and CI can fail builds that ship known issues, without
+  waiting for a pentest after deploy.
+
+use_cases:
+  - Scan Docker images for AI services before they are pushed to production
+  - Index CVE data and alert when a base image used by training jobs is vulnerable
+  - Integrate image scanning into a registry such as Quay or a custom OCI store
+  - Gate CI deploys of inference containers on a clean vulnerability report

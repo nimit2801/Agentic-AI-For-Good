@@ -1,0 +1,25 @@
+name: Nexus Repository
+description: Sonatype Nexus Repository for hosting, proxying, and promoting Maven, npm, PyPI, Docker, and other artifacts used in AI and application build pipelines.
+tagline: Universal artifact repository for build pipelines
+
+github_url: https://github.com/sonatype/nexus-public
+website_url: https://www.sonatype.com/products/nexus-repository
+docs_url: https://help.sonatype.com/repomanager3
+
+category: Dev Tools
+tags: [artifact-repository, maven, npm, docker, pypi, packaging, ci-cd]
+pricing: freemium
+is_open_source: true
+license: EPL-1.0
+
+problem_solved: |
+  AI and app teams pull PyPI, npm, Maven, and Docker artifacts on every CI run and
+  need a place to publish internal wheels and images. Nexus Repository proxies public
+  registries and hosts private artifacts so builds stay fast, repeatable, and able to
+  ship internal model packages without depending only on the public internet.
+
+use_cases:
+  - Proxy PyPI, npm, and Maven so CI does not hit public registries on every job
+  - Host private Python wheels and Docker images for internal ML services
+  - Promote artifacts through staging repositories before production deploys
+  - Cache third-party packages for air-gapped or restricted build networks
