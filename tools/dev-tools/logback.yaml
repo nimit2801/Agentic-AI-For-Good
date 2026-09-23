@@ -1,0 +1,26 @@
+name: Logback
+description: Reliable, generic, fast Java logging framework and the native SLF4J implementation. Logback writes rolling JSON logs for JVM model gateways and agent workers so production traces stay structured and cheap.
+tagline: Fast SLF4J logging implementation for Java
+
+github_url: https://github.com/qos-ch/logback
+website_url: https://logback.qos.ch
+docs_url: https://logback.qos.ch/documentation.html
+
+category: Dev Tools
+tags: [java, jvm, logging, slf4j, observability, logback]
+pricing: free
+is_open_source: true
+license: EPL-2.0 OR LGPL-2.1
+
+problem_solved: |
+  JVM AI services need a production logger behind SLF4J, not a facade
+  alone. Logback is the native SLF4J implementation with rolling files,
+  async appenders, and XML or Groovy config so model-gateway and agent
+  workers emit structured logs without Log4j classpath fights.
+
+use_cases:
+  - Configure rolling JSON logs for a Java model-gateway service
+  - Use async appenders so agent workers do not block on disk I/O
+  - Bind SLF4J in Spring Boot to Logback for production tracing
+  - Filter noisy embedding-client logs with Logback turbo filters
+  - Ship JVM agent logs to a file then Filebeat without extra bridges

@@ -1,0 +1,26 @@
+name: Jedis
+description: Redis Java client built for performance and ease of use. Jedis talks to Redis, Cluster, and Sentinel from JVM services so agent caches, rate-limit keys, and embedding queues stay in one small client.
+tagline: Redis Java client for JVM services
+
+github_url: https://github.com/redis/jedis
+website_url: https://redis.github.io/jedis/
+docs_url: https://redis.github.io/jedis/
+
+category: Dev Tools
+tags: [java, jvm, redis, cache, client, jedis]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  JVM model gateways and agent workers need a small Redis client for
+  caches, locks, and queues. Jedis is the straightforward Java client
+  for Redis 7 and 8, covering Cluster and Sentinel so teams store
+  prompt caches and job keys without a reactive stack.
+
+use_cases:
+  - Cache LLM responses in Redis from a Java gateway
+  - Store agent session state as Redis hashes
+  - Use Redis lists as a job queue for embedding workers
+  - Connect a Spring Boot service to Redis Cluster
+  - Set TTL keys for rate-limit counters around model APIs
