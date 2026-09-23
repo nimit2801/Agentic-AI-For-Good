@@ -1,0 +1,25 @@
+name: MaxScale
+description: MariaDB database proxy that provides query routing, load balancing, and high availability in front of MariaDB and MySQL clusters used by AI data platforms.
+tagline: Intelligent database proxy for MariaDB and MySQL
+
+github_url: https://github.com/mariadb-corporation/MaxScale
+website_url: https://mariadb.com/products/maxscale/
+docs_url: https://mariadb.com/docs/maxscale/
+
+category: Data
+tags: [mariadb, mysql, proxy, load-balancing, high-availability, query-routing]
+pricing: paid
+is_open_source: false
+
+problem_solved: |
+  Applications that connect straight to MariaDB or MySQL must handle failover, read/write
+  splitting, and traffic shaping themselves. MaxScale sits between clients and the cluster
+  to route queries, balance load, and fail over transparently, so AI platforms can keep
+  using SQL backends for features, metadata, and serving state without baking HA logic
+  into every service.
+
+use_cases:
+  - Put a HA proxy in front of MariaDB clusters that store AI application data
+  - Split reads and writes across primaries and replicas for ML metadata stores
+  - Shield services from failover events when a MariaDB primary is promoted
+  - Filter or rewrite SQL traffic before it reaches production database nodes

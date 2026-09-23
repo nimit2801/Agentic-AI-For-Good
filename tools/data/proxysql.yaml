@@ -1,0 +1,26 @@
+name: ProxySQL
+description: High-performance proxy for MySQL and PostgreSQL that adds connection pooling, query routing, and failover in front of the databases that power AI application backends.
+tagline: High-performance MySQL and PostgreSQL proxy
+
+github_url: https://github.com/sysown/proxysql
+website_url: https://proxysql.com
+docs_url: https://proxysql.com/documentation/
+
+category: Data
+tags: [mysql, postgresql, proxy, connection-pooling, query-routing, high-availability]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  AI services that talk directly to MySQL or PostgreSQL exhaust connection limits, cannot
+  split reads from writes, and fail over slowly when a primary dies. ProxySQL sits in
+  front of those databases with connection pooling, query routing, caching, and health
+  checks, so feature stores and application backends keep serving traffic while replicas
+  and primaries change underneath.
+
+use_cases:
+  - Pool connections from many AI workers so they do not overwhelm MySQL or PostgreSQL
+  - Route read queries to replicas and writes to the primary for feature-store traffic
+  - Fail over database traffic automatically when a primary becomes unhealthy
+  - Cache repeated metadata queries that AI services issue on every request
