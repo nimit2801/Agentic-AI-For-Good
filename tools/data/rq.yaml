@@ -1,0 +1,37 @@
+name: RQ
+description: Simple job queues for Python backed by Redis. RQ provides an easy-to-use interface for enqueueing Python functions as background jobs, with support for job monitoring, scheduling, retries, and result storage.
+tagline: Simple Python job queues with Redis
+
+github_url: https://github.com/rq/rq
+website_url: https://python-rq.org/
+docs_url: https://python-rq.org/docs/
+
+install_command: pip install rq
+
+category: Data
+tags:
+  - job-queue
+  - redis
+  - background-jobs
+  - python
+  - task-queue
+  - open-source
+pricing: free
+is_open_source: true
+license: Other
+
+problem_solved: |
+  Python web applications and data pipelines often need to offload long-running tasks
+  such as report generation, image processing, or API calls to background workers without
+  blocking the main thread. Building a robust task queue from scratch requires handling
+  job serialization, worker management, retry logic, and result persistence. RQ simplifies
+  this by providing a minimal, Redis-backed job queue that enqueues Python functions with
+  a single decorator or function call, handles worker processes automatically, and provides
+  a built-in dashboard for monitoring job status and failures.
+
+use_cases:
+  - Offload long-running API calls and data exports from web request handlers
+  - Build asynchronous email notification and report generation pipelines
+  - Process image and video uploads in background workers for web applications
+  - Schedule periodic data synchronization and ETL tasks with cron-like job scheduling
+  - Monitor job queues and worker health through the built-in RQ dashboard

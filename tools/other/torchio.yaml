@@ -1,0 +1,37 @@
+name: TorchIO
+description: Medical imaging processing for AI applications. TorchIO provides tools for efficient loading, preprocessing, augmentation, and patch-based sampling of 3D medical images for deep learning with PyTorch.
+tagline: Medical imaging processing toolkit for deep learning
+
+github_url: https://github.com/TorchIO-project/torchio
+website_url: https://docs.torchio.org/
+docs_url: https://docs.torchio.org/
+
+install_command: pip install torchio
+
+category: Other
+tags:
+  - medical-imaging
+  - pytorch
+  - data-augmentation
+  - deep-learning
+  - python
+  - open-source
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Medical imaging deep learning requires specialized preprocessing for 3D volumetric data
+  such as MRI and CT scans, including spatial transforms, intensity normalization, and
+  patch-based sampling that standard computer vision libraries do not support. Building
+  these pipelines from scratch is error-prone and computationally inefficient. TorchIO
+  provides optimized medical imaging transforms, lazy loading for large 3D volumes, and
+  seamless PyTorch integration so researchers can focus on model development rather than
+  data engineering for medical images.
+
+use_cases:
+  - Apply spatial and intensity augmentations to 3D medical images for model training
+  - Efficiently load and preprocess large MRI and CT volumes with lazy sampling
+  - Extract random or grid-based patches from volumetric scans for patch-based training
+  - Normalize medical images across scanners and protocols for multi-site studies
+  - Build reproducible preprocessing pipelines for clinical AI model development
