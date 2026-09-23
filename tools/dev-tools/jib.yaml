@@ -1,0 +1,26 @@
+name: Jib
+description: Container image builder for Java apps that runs as a Maven or Gradle plugin. Jib produces OCI images for model gateways and agent workers without a Docker daemon.
+tagline: Build Java container images without Docker
+
+github_url: https://github.com/GoogleContainerTools/jib
+website_url: https://github.com/GoogleContainerTools/jib
+docs_url: https://github.com/GoogleContainerTools/jib/tree/master/docs
+
+category: Dev Tools
+tags: [java, containers, docker, maven, gradle, oci, jib]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JVM AI services need container images for Kubernetes, but Dockerfiles
+  and a local daemon slow CI. Jib layers Maven or Gradle builds into
+  OCI images so model-gateway and agent workers ship from the same
+  build that compiles the code.
+
+use_cases:
+  - Build a Spring Boot model-gateway image from Maven without Docker
+  - Push a Gradle agent-worker image to a registry in CI
+  - Layer Java dependencies separately so RAG API rebuilds stay fast
+  - Produce reproducible OCI images for a Quarkus native-image service
+  - Skip Dockerfiles when deploying a JVM embedding API to Kubernetes

@@ -1,0 +1,26 @@
+name: Jdbi
+description: Idiomatic SQL library for Java and other JVM languages. Jdbi binds queries to objects with fluent APIs so RAG metadata stores and agent job queues stay SQL-native without a full ORM.
+tagline: Convenient SQL access for Java and the JVM
+
+github_url: https://github.com/jdbi/jdbi
+website_url: https://jdbi.org
+docs_url: https://jdbi.org/
+
+category: Data
+tags: [java, sql, jdbi, jdbc, kotlin, mapper]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JVM AI services that persist documents and job state often choose
+  between raw JDBC and a heavy ORM. Jdbi wraps JDBC with fluent SQL,
+  mappers, and Kotlin-friendly APIs so RAG and agent pipelines keep
+  SQL visible without boilerplate.
+
+use_cases:
+  - Map RAG document rows to Java records with SQL object APIs
+  - Insert agent job and tool-call history without handwritten JDBC
+  - Query feature-store batches from Postgres in a Kotlin JVM job
+  - Use fluent Handle APIs for eval-report SQL in a Java service
+  - Share SQL mappers across Spring Boot model-gateway services

@@ -1,0 +1,26 @@
+name: RxJava
+description: Reactive Extensions for the JVM. RxJava composes async streams so Java model clients, embedding fetchers, and agent workers chain retries, backpressure, and fan-out without nested callbacks.
+tagline: Reactive streams for Java and the JVM
+
+github_url: https://github.com/ReactiveX/RxJava
+website_url: https://github.com/ReactiveX/RxJava
+docs_url: https://github.com/ReactiveX/RxJava/wiki
+
+category: Dev Tools
+tags: [java, jvm, reactive, rxjava, async, streams]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JVM clients that call LLM and embedding APIs in parallel drown in
+  callbacks and thread pools. RxJava models those calls as observable
+  sequences with operators for retry, timeout, and merge so agent
+  workers compose async work without nested futures.
+
+use_cases:
+  - Fan out embedding requests and merge results with Observable.zip
+  - Retry transient model-API errors with RxJava retryWhen
+  - Stream token chunks from an LLM client as a Flowable
+  - Apply backpressure when an agent worker outruns a vector-search API
+  - Compose timeout and fallback for a Java chat-completion client
