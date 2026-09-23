@@ -1,0 +1,28 @@
+name: Peewee
+description: A small, expressive Python ORM for PostgreSQL, MySQL, and SQLite, including asyncio support, used to model application and ML metadata without a heavy framework.
+tagline: Small expressive Python ORM for Postgres, MySQL, and SQLite
+
+github_url: https://github.com/coleifer/peewee
+website_url: http://docs.peewee-orm.com/
+docs_url: http://docs.peewee-orm.com/
+
+install_command: pip install peewee
+
+category: Data
+tags: [python, orm, postgresql, mysql, sqlite, asyncio, database]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Python AI services often need a lightweight way to persist jobs, users, and experiment
+  records without pulling in Django or SQLAlchemy. Peewee gives a small, expressive ORM
+  over PostgreSQL, MySQL, and SQLite, with optional asyncio, so teams can model tables and
+  queries in a few lines while keeping the data layer easy to embed in training scripts
+  and inference APIs.
+
+use_cases:
+  - Model experiment, job, and dataset metadata tables in Python ML services
+  - Query SQLite or Postgres from training scripts without a heavy web framework
+  - Build asyncio APIs that persist application state next to model serving code
+  - Map Python classes to SQL tables for feature-store side data and user records
