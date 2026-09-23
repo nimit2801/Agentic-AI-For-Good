@@ -1,0 +1,26 @@
+name: Google Cloud Spanner
+description: Google Cloud's globally consistent, horizontally scalable relational database that combines SQL semantics with unlimited scale for AI data platforms and operational workloads.
+tagline: Globally consistent relational database at unlimited scale
+
+website_url: https://cloud.google.com/spanner
+docs_url: https://cloud.google.com/spanner/docs
+
+install_command: pip install google-cloud-spanner
+
+category: Data
+tags: [relational-database, sql, google-cloud, globally-distributed, oltp, scalable]
+pricing: paid
+is_open_source: false
+
+problem_solved: |
+  AI platforms outgrow a single-region relational database when feature stores, user state,
+  and experiment metadata must stay strongly consistent across continents. Spanner provides
+  external consistency and horizontal scale with standard SQL, so teams can keep transactional
+  AI application data, feature tables, and serving state in one database without sharding
+  MySQL or sacrificing consistency for geographic scale.
+
+use_cases:
+  - Store feature tables and user state with strong consistency across multiple regions
+  - Back AI application backends that need SQL transactions at global scale
+  - Keep experiment assignments, model metadata, and billing records in one relational store
+  - Serve low-latency reads of operational AI data without managing custom sharding

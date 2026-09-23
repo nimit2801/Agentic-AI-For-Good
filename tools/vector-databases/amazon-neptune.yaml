@@ -1,0 +1,24 @@
+name: Amazon Neptune
+description: AWS managed graph database for property graphs and RDF, with vector search for GraphRAG, knowledge graphs, and relationship-aware AI applications.
+tagline: Managed graph database with vector search for GraphRAG
+
+website_url: https://aws.amazon.com/neptune/
+docs_url: https://docs.aws.amazon.com/neptune/
+
+category: Vector DB
+tags: [graph-database, knowledge-graph, vector-search, graphrag, aws, gremlin, sparql]
+pricing: paid
+is_open_source: false
+
+problem_solved: |
+  RAG pipelines that treat documents as isolated chunks miss the relationships between
+  entities, events, and documents. Amazon Neptune stores property graphs and RDF triples
+  and adds vector search, so AI applications can combine semantic similarity with multi-hop
+  graph traversal for GraphRAG, fraud detection, and knowledge-graph question answering
+  without running a separate graph store and vector database.
+
+use_cases:
+  - Build GraphRAG systems that retrieve related entities by traversing a knowledge graph
+  - Combine vector similarity with Gremlin or SPARQL queries for multi-hop question answering
+  - Model fraud, identity, or supply-chain networks alongside embedding-based lookups
+  - Store enterprise knowledge graphs that power LLM agents with relationship-aware context
