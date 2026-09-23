@@ -1,0 +1,27 @@
+name: httprouter
+description: High-performance HTTP request router for Go. httprouter scales radix-tree matching so inference gateways and agent APIs get explicit method-and-path routing without a heavier framework.
+tagline: High-performance HTTP router for Go
+
+github_url: https://github.com/julienschmidt/httprouter
+website_url: https://pkg.go.dev/github.com/julienschmidt/httprouter
+docs_url: https://pkg.go.dev/github.com/julienschmidt/httprouter
+install_command: go get github.com/julienschmidt/httprouter
+
+category: Dev Tools
+tags: [go, http, router, net-http, api, performance]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Go net/http ServeMux historically lacked method-aware, parameterized
+  routes, so LLM gateways either switch to Gin or write regex matching.
+  httprouter is a small radix-tree router that stays compatible with
+  net/http so agent APIs get explicit GET/POST paths without a full
+  framework.
+
+use_cases:
+  - Route /v1/chat/completions and /v1/embeddings on a Go inference gateway
+  - Dispatch agent webhook paths with method-aware handlers
+  - Keep a net/http stack instead of adopting Gin or Fiber
+  - Parameterize model-name paths without regex ServeMux hacks

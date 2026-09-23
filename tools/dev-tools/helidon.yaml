@@ -1,0 +1,25 @@
+name: Helidon
+description: Java libraries from Oracle for writing microservices, with SE and MP flavors. Helidon gives virtual-thread HTTP, observability, and config so JVM teams ship model-serving APIs without a full Spring stack.
+tagline: Lightweight Java microservices libraries from Oracle
+
+github_url: https://github.com/helidon-io/helidon
+website_url: https://helidon.io
+docs_url: https://helidon.io/docs
+
+category: Dev Tools
+tags: [java, jvm, microservices, http, virtual-threads, observability]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JVM teams that want MicroProfile or a small SE HTTP API for model serving
+  often do not need Spring Boot. Helidon provides routing, config, metrics,
+  and virtual threads so LLM gateways and agent workers stay lightweight
+  on the JDK.
+
+use_cases:
+  - Serve a Helidon SE HTTP API in front of an LLM or embedding backend
+  - Expose MicroProfile health and metrics for a JVM agent worker
+  - Run virtual-thread request handlers for concurrent tool-call fan-out
+  - Package a GraalVM-friendly Java sidecar next to a vector store

@@ -1,0 +1,26 @@
+name: lumberjack
+description: Log rolling package for Go. lumberjack rotates, compresses, and retains files so model-serving and agent workers do not fill disks with unbounded stdout logs.
+tagline: Rolling file logger for Go
+
+github_url: https://github.com/natefinch/lumberjack
+website_url: https://github.com/natefinch/lumberjack
+docs_url: https://pkg.go.dev/gopkg.in/natefinch/lumberjack.v2
+install_command: go get gopkg.in/natefinch/lumberjack.v2
+
+category: Dev Tools
+tags: [go, logging, log-rotation, files, observability]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go inference servers that write to a single log file grow until the
+  disk fills. lumberjack is an io.WriteCloser that rotates by size and
+  age so logrus, zerolog, or the standard library can keep bounded
+  files on GPU boxes and agent workers.
+
+use_cases:
+  - Rotate JSON logs from a Go LLM gateway by size and day
+  - Compress and retain a week of agent-worker logs on disk
+  - Plug lumberjack into logrus or zerolog as the file writer
+  - Cap log growth on a vector-search sidecar without logrotate
