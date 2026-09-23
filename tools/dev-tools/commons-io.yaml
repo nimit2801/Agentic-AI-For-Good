@@ -1,0 +1,24 @@
+name: Commons IO
+description: Apache Commons IO is a library of utilities to assist with developing IO functionality in Java.
+tagline: Simplified file handling, stream copying, and directory monitoring for Java
+
+github_url: https://github.com/apache/commons-io
+website_url: https://commons.apache.org/proper/commons-io/
+docs_url: https://commons.apache.org/proper/commons-io/apidocs/
+
+category: Dev Tools
+tags: [java, io, files, streams, utilities, apache]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Java's built-in IO APIs are verbose and low-level for common tasks like reading files, copying
+  streams, and monitoring directories. Commons IO provides concise, reliable helpers that turn
+  multi-line boilerplate into one-liners for file handling, stream copying, and directory watching.
+
+use_cases:
+  - Read entire files into strings or byte arrays with a single method call instead of manual buffer management
+  - Copy, move, and delete files recursively with utilities that handle edge cases automatically
+  - Monitor directories for file changes using built-in file system watcher abstractions
+  - Implement robust stream handling with null-safe wrappers and automatic resource closing
