@@ -1,0 +1,27 @@
+name: ClassGraph
+description: Fast parallelized Java classpath and module scanner. ClassGraph finds classes, annotations, and resources without loading them so JVM agent runtimes and plugin loaders discover tools, routes, and configs at startup.
+tagline: Uber-fast JVM classpath and module scanner
+
+github_url: https://github.com/classgraph/classgraph
+website_url: https://github.com/classgraph/classgraph
+docs_url: https://github.com/classgraph/classgraph/wiki
+
+category: Dev Tools
+tags: [java, jvm, classpath, scanning, annotations, plugins]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  JVM agent frameworks and plugin loaders need every class that
+  implements a tool interface or carries a route annotation. The JDK
+  reflection API cannot invert that lookup. ClassGraph scans the
+  classpath and module path in parallel and returns subclasses,
+  annotated types, and matching resources without initializing them.
+
+use_cases:
+  - Discover agent tool classes annotated with a custom @Tool marker
+  - Load JSON configs from META-INF across all classloaders
+  - Find every implementation of a Java embedding-provider interface
+  - Scan a plugin JAR for RAG pipeline extensions at runtime
+  - Index Spring-style route annotations without starting the app

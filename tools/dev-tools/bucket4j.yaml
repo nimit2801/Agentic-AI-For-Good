@@ -1,0 +1,26 @@
+name: Bucket4j
+description: Java rate-limiting library based on the token-bucket algorithm. Bucket4j caps local or clustered JVM traffic so model gateways, agent workers, and embedding clients stay within API quotas without floating-point math.
+tagline: Token-bucket rate limiting for the JVM
+
+github_url: https://github.com/bucket4j/bucket4j
+website_url: https://bucket4j.com
+docs_url: https://bucket4j.github.io
+
+category: Dev Tools
+tags: [java, jvm, rate-limiting, token-bucket, concurrency]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JVM model gateways and agent workers hammer LLM and embedding APIs
+  until quotas trip. Bucket4j applies lock-free token buckets locally
+  or across JCache, Redis, and Hazelcast so request rates stay inside
+  provider limits without custom counters or float rounding errors.
+
+use_cases:
+  - Cap outbound OpenAI-compatible chat calls per tenant
+  - Rate-limit embedding batch jobs on a Java worker pool
+  - Share a clustered token bucket across model-gateway replicas
+  - Protect a vector-search endpoint from agent fan-out storms
+  - Combine local and Redis-backed buckets for hybrid quotas

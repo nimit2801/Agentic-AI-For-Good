@@ -1,0 +1,26 @@
+name: GraphQL Java
+description: Reference GraphQL implementation for the JVM. GraphQL Java parses schemas, executes queries, and powers Spring GraphQL so agent APIs, tool catalogs, and RAG metadata can be queried as a typed graph instead of ad hoc REST.
+tagline: GraphQL runtime for Java and the JVM
+
+github_url: https://github.com/graphql-java/graphql-java
+website_url: https://www.graphql-java.com
+docs_url: https://www.graphql-java.com/documentation/getting-started
+
+category: Dev Tools
+tags: [java, jvm, graphql, api, schema, spring]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  JVM backends that expose agent tools, catalog entries, and RAG
+  metadata as REST endpoints force clients to over-fetch. GraphQL Java
+  is the JVM GraphQL engine behind Spring GraphQL, so callers request
+  exactly the fields they need and federated services share one schema.
+
+use_cases:
+  - Expose a tool catalog as a GraphQL schema for IDE agents
+  - Query RAG document metadata without over-fetching REST payloads
+  - Power Spring GraphQL resolvers for a Java model-gateway API
+  - Build federated subgraphs for multi-service agent platforms
+  - Execute typed GraphQL queries against JVM tool registries
