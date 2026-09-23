@@ -1,0 +1,26 @@
+name: Kotlinx Coroutines
+description: Official Kotlin library for coroutines, Flow, and structured concurrency. kotlinx.coroutines lets Kotlin agent workers launch, cancel, and stream model calls without thread-per-request pools.
+tagline: Coroutines, Flow, and structured concurrency for Kotlin
+
+github_url: https://github.com/Kotlin/kotlinx.coroutines
+website_url: https://github.com/Kotlin/kotlinx.coroutines
+docs_url: https://kotlinlang.org/api/kotlinx.coroutines/
+
+category: Dev Tools
+tags: [kotlin, coroutines, async, flow, jetbrains, concurrency]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Kotlin agent and Android apps that call LLM APIs on threads drown in
+  callbacks and leaks. kotlinx.coroutines adds launch, async, Flow, and
+  structured cancellation so model calls, embedding streams, and UI
+  work share one concurrency model across JVM, Android, and KMP.
+
+use_cases:
+  - Launch concurrent embedding requests with async and await
+  - Stream LLM tokens as a Flow in a Kotlin agent worker
+  - Cancel in-flight model calls when a user closes a session
+  - Use Dispatchers.IO for blocking Redis or JDBC from coroutines
+  - Supervise child jobs in a Kotlin multi-agent runtime

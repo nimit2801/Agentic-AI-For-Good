@@ -1,0 +1,26 @@
+name: Redisson
+description: Java client and real-time data platform for Redis and Valkey. Redisson adds distributed locks, maps, queues, and JCache so JVM agent workers share state without writing Redis commands by hand.
+tagline: Redis and Valkey Java client with distributed objects
+
+github_url: https://github.com/redisson/redisson
+website_url: https://redisson.pro
+docs_url: https://redisson.pro/docs/
+
+category: Dev Tools
+tags: [java, jvm, redis, valkey, redisson, distributed]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JVM agent clusters need locks, maps, and queues on Redis or Valkey
+  without raw commands. Redisson exposes JDK-like distributed objects,
+  Spring and JCache adapters, and sync, async, RxJava, and reactive
+  APIs so workers share session state and rate limits across nodes.
+
+use_cases:
+  - Take a distributed lock around a Java model-gateway critical section
+  - Store agent session maps in Redis with Redisson RMap
+  - Use RQueue as a job queue for embedding workers
+  - Back Spring Cache with Redis or Valkey in a JVM service
+  - Share a clustered rate-limit counter across gateway replicas
