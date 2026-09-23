@@ -1,0 +1,25 @@
+name: Javassist
+description: A Java bytecode engineering toolkit that lets developers manipulate bytecode at load time or build time without deep JVM knowledge.
+tagline: High-level Java bytecode manipulation for runtime class transformation
+
+github_url: https://github.com/jboss-javassist/javassist
+website_url: https://www.javassist.org
+docs_url: https://www.javassist.org/tutorial/tutorial.html
+
+category: Dev Tools
+tags: [java, bytecode, jvm, instrumentation, proxy, aop]
+pricing: free
+is_open_source: true
+license: NOASSERTION
+
+problem_solved: |
+  Modifying Java class behavior traditionally requires writing complex bytecode by hand or using
+  low-level ASM. Javassist provides a high-level API that makes bytecode manipulation accessible
+  — you can insert code snippets as strings, create classes dynamically, and transform classes at
+  load time without becoming a JVM internals expert.
+
+use_cases:
+  - Implement aspect-oriented programming by weaving cross-cutting concerns into compiled classes at runtime
+  - Generate proxy classes dynamically for dependency injection frameworks like Spring and Hibernate
+  - Instrument Java applications for monitoring by inserting timing and logging code at load time
+  - Create mock objects and test doubles by generating subclasses that override specific methods
