@@ -1,0 +1,26 @@
+name: OpenResty
+description: High-performance web platform that embeds LuaJIT into NGINX. OpenResty lets you write request-path logic in Lua for routing, auth, caching, and rate limits in front of APIs and model servers.
+tagline: NGINX plus LuaJIT for programmable gateways
+
+github_url: https://github.com/openresty/openresty
+website_url: https://openresty.org
+docs_url: https://openresty.org/en/getting-started.html
+
+category: Dev Tools
+tags: [nginx, lua, reverse-proxy, api-gateway, web-server, luajit, caching]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Plain NGINX config cannot express custom auth, request rewriting, or
+  cache keys without compiling C modules. OpenResty ships NGINX with
+  LuaJIT so you write that logic in Lua at the edge, keeping latency low
+  while putting programmable gates in front of inference APIs and data
+  services.
+
+use_cases:
+  - "Put Lua-powered auth and rate limits in front of model serving endpoints"
+  - "Rewrite and cache inference requests at the NGINX edge without a separate app"
+  - "Build an API gateway with OpenResty Lua modules instead of a heavy JVM proxy"
+  - "Terminate TLS and route traffic to multiple FastAPI or Triton backends"
