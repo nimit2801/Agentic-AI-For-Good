@@ -1,0 +1,26 @@
+name: zerolog
+description: Zero-allocation JSON logger for Go. zerolog writes structured events with a chained API so high-QPS inference servers and agent workers log without the heap cost of fmt-based loggers.
+tagline: Zero-allocation JSON logger for Go
+
+github_url: https://github.com/rs/zerolog
+website_url: https://github.com/rs/zerolog
+docs_url: https://github.com/rs/zerolog
+install_command: go get github.com/rs/zerolog
+
+category: Dev Tools
+tags: [go, logging, structured-logging, json, performance, observability]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  High-QPS Go model gateways cannot afford allocating loggers on every
+  inference request. zerolog's chained, zero-allocation JSON API records
+  latency, model IDs, and errors without fmt overhead so agent workers
+  stay fast under load.
+
+use_cases:
+  - Log token-stream latency from a Go LLM proxy without extra allocations
+  - Attach request IDs and model names to JSON events in an agent worker
+  - Sample error-level logs from embedding clients into stdout JSON
+  - Replace fmt logging in a high-throughput vector-search sidecar

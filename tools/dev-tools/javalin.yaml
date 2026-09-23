@@ -1,0 +1,25 @@
+name: Javalin
+description: Simple Java and Kotlin web framework on top of Jetty. Javalin keeps HTTP APIs small so JVM teams can wrap LLM, embedding, and agent webhook endpoints without a full Spring Boot application.
+tagline: Lightweight Java and Kotlin web framework
+
+github_url: https://github.com/javalin/javalin
+website_url: https://javalin.io
+docs_url: https://javalin.io/documentation
+
+category: Dev Tools
+tags: [java, kotlin, jvm, web-framework, http, api, jetty]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JVM teams that only need a few HTTP routes for model serving or agent
+  callbacks often inherit Spring Boot auto-configuration they do not use.
+  Javalin sits on Jetty with a tiny API so chat, embedding, and webhook
+  services stay readable without a full application framework.
+
+use_cases:
+  - Wrap an LLM or embedding client behind a small Kotlin HTTP API
+  - Receive agent webhooks and tool callbacks without Spring Boot
+  - Prototype JVM model-serving endpoints before moving to a heavier stack
+  - Serve OpenAPI-documented REST routes for a vector-search sidecar

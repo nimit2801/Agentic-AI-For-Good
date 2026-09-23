@@ -1,0 +1,25 @@
+name: Tomcat
+description: Apache Tomcat is the standard Java servlet and JSP container. Spring Boot, many JVM model-serving APIs, and agent gateways still embed Tomcat as the HTTP runtime that hosts filters, sessions, and WAR deployments.
+tagline: Standard Java servlet container for HTTP APIs
+
+github_url: https://github.com/apache/tomcat
+website_url: https://tomcat.apache.org
+docs_url: https://tomcat.apache.org/tomcat-11.0-doc/index.html
+
+category: Dev Tools
+tags: [java, jvm, servlet, http, application-server, spring]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JVM model-serving and agent APIs need a servlet container for filters,
+  TLS, and WAR or embedded HTTP. Tomcat is the default runtime Spring Boot
+  and countless Java services already ship, so teams get production HTTP
+  without writing a custom server.
+
+use_cases:
+  - Embed Tomcat as the HTTP runtime for a Spring Boot LLM gateway
+  - Host servlet filters that auth and rate-limit embedding API traffic
+  - Deploy a WAR that fronts a JVM RAG or vector-search backend
+  - Terminate TLS and serve WebSocket callbacks for agent tool workers
