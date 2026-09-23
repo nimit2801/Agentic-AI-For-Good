@@ -1,0 +1,25 @@
+name: Reactor Netty
+description: Reactive TCP, HTTP, UDP, and QUIC client/server built on Netty with Project Reactor's non-blocking API.
+tagline: Reactive networking for Java microservices and streaming backends
+
+github_url: https://github.com/reactor/reactor-netty
+website_url: https://projectreactor.io/docs/netty/release/reference/index.html
+docs_url: https://projectreactor.io/docs/netty/release/api/
+
+category: Dev Tools
+tags: [java, netty, reactive, http, tcp, udp, quic, microservices]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Building high-throughput, non-blocking network services in Java requires managing Netty's
+  complex event loop and channel pipeline manually. Reactor Netty wraps Netty in Project
+  Reactor's fluent API, providing reactive TCP, HTTP, UDP, and QUIC clients and servers with
+  backpressure support, connection pooling, and automatic resource management.
+
+use_cases:
+  - Build reactive HTTP microservices that handle thousands of concurrent connections with backpressure
+  - Implement WebSocket servers for real-time data streaming with automatic frame handling
+  - Create non-blocking HTTP clients with connection pooling, retries, and load balancing out of the box
+  - Deploy UDP and QUIC endpoints for low-latency IoT and gaming communication protocols

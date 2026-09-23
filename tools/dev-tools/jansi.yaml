@@ -1,0 +1,25 @@
+name: Jansi
+description: A small Java library that enables ANSI escape sequences for colored and styled console output, even on Windows.
+tagline: Cross-platform ANSI colors and terminal styling for Java CLI apps
+
+github_url: https://github.com/fusesource/jansi
+website_url: https://fusesource.github.io/jansi/
+docs_url: https://fusesource.github.io/jansi/documentation/api/
+
+category: Dev Tools
+tags: [java, terminal, ansi, colors, cli, console, cross-platform]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Java console applications lack cross-platform support for colored output, progress bars, and
+  cursor manipulation. Windows in particular strips ANSI escape codes by default. Jansi detects
+  the terminal capabilities and translates ANSI sequences into native Windows console API calls,
+  giving Java developers consistent styled output across macOS, Linux, and Windows.
+
+use_cases:
+  - Add colored log levels and styled error messages to CLI applications with a single library
+  - Render progress bars and spinners in terminal UIs that work natively on Windows Command Prompt
+  - Build cross-platform developer tools with consistent ANSI formatting across operating systems
+  - Implement terminal dashboards with cursor positioning and screen clearing in Java console apps
