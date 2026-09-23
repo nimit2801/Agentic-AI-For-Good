@@ -1,0 +1,26 @@
+name: Feign
+description: Java HTTP client binder that turns annotated interfaces into REST calls. Feign templates requests so JVM model-gateway and agent-tool clients talk to LLM, embedding, and vector-search APIs without assembling URLs by hand.
+tagline: Annotation-driven HTTP clients for Java
+
+github_url: https://github.com/OpenFeign/feign
+website_url: https://github.com/OpenFeign/feign
+docs_url: https://github.com/OpenFeign/feign/wiki
+
+category: Dev Tools
+tags: [java, jvm, http, rest, client, openfeign, spring]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JVM teams calling OpenAI-compatible chat, embedding, or vector-search
+  HTTP APIs often concatenate URLs and parse JSON by hand. Feign maps
+  annotated interfaces onto a templatized client with pluggable encoders,
+  retries, and logging so model and agent clients stay typed.
+
+use_cases:
+  - Declare a typed Java interface for an OpenAI-compatible chat API
+  - Call embedding and vector-search REST endpoints from Spring Cloud services
+  - Replay and unit-test LLM HTTP conversions without a live provider
+  - Plug custom decoders for JSON or protobuf tool-call payloads
+  - Share one Feign client with retries across several model-provider APIs

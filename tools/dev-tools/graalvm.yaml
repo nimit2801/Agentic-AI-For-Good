@@ -1,0 +1,26 @@
+name: GraalVM
+description: JDK and native-image compiler that turns Java apps into instant-start executables. GraalVM Native Image cuts RSS and warmup so JVM model gateways, RAG APIs, and agent workers scale in containers without a full HotSpot heap.
+tagline: Native images and a polyglot JDK for Java services
+
+github_url: https://github.com/oracle/graal
+website_url: https://www.graalvm.org
+docs_url: https://www.graalvm.org/latest/docs/
+
+category: Dev Tools
+tags: [java, jvm, graalvm, native-image, aot, containers]
+pricing: free
+is_open_source: true
+license: GPL-2.0-with-classpath-exception
+
+problem_solved: |
+  JVM AI services on Kubernetes start slowly and waste memory per replica,
+  which hurts scale-to-zero inference gateways. GraalVM compiles Java
+  ahead of time into a native executable so model APIs and agent workers
+  boot instantly and run in smaller containers than HotSpot.
+
+use_cases:
+  - Compile a Spring Boot or Quarkus model-gateway into a native image
+  - Cut RSS for a Java RAG API that scales to zero on Kubernetes
+  - Ship a scratch-container inference client with a statically linked binary
+  - Run polyglot Java plus Python or JS snippets in one GraalVM runtime
+  - Debug a native-image agent worker with GDB and JFR

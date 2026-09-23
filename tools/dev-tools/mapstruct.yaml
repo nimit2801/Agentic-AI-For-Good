@@ -1,0 +1,26 @@
+name: MapStruct
+description: Compile-time Java bean mapper that generates type-safe mapping code. MapStruct turns entities into DTOs with plain method calls so JVM RAG, model-gateway, and agent services avoid slow reflection mappers.
+tagline: Type-safe bean mappings generated at compile time
+
+github_url: https://github.com/mapstruct/mapstruct
+website_url: https://mapstruct.org
+docs_url: https://mapstruct.org/documentation/stable/reference/html/
+
+category: Dev Tools
+tags: [java, jvm, mapstruct, dto, mapping, annotation-processor]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Multi-layer JVM AI services map JPA entities to API DTOs and tool-call
+  payloads by hand or with reflection mappers that fail at runtime.
+  MapStruct generates mapping implementations at compile time so
+  conversions are fast, typed, and checked when you build.
+
+use_cases:
+  - Map RAG document entities to API DTOs without handwritten field copies
+  - Convert LLM chat request objects between internal and provider models
+  - Generate mappers from agent tool-call payloads to domain types
+  - Catch missing DTO fields at compile time instead of in production
+  - Keep mapping code as plain Java so GraalVM native images stay simple
