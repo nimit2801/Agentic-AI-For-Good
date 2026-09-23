@@ -1,0 +1,25 @@
+name: Undertow
+description: High-performance non-blocking Java web server from Red Hat. Undertow is the default HTTP runtime in WildFly and a common embedded choice for Quarkus-style JVM services that front model APIs.
+tagline: Non-blocking Java web server for high-concurrency APIs
+
+github_url: https://github.com/undertow-io/undertow
+website_url: https://undertow.io
+docs_url: https://undertow.io/documentation.html
+
+category: Dev Tools
+tags: [java, jvm, http, non-blocking, servlet, wildfly, web-server]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Blocking servlet containers waste threads on long LLM streams and many
+  concurrent agent callbacks. Undertow is a non-blocking Java web server
+  with HTTP handlers and servlet support so JVM model gateways keep
+  thousands of connections without a thread per request.
+
+use_cases:
+  - Embed Undertow as the HTTP layer for a JVM inference or embedding API
+  - Stream tokens over non-blocking handlers from a Java agent worker
+  - Run servlet and WebSocket endpoints in the same WildFly or standalone process
+  - Front a vector-search sidecar with HTTP/2 and TLS on the JVM

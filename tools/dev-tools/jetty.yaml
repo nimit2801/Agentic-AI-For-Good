@@ -1,0 +1,25 @@
+name: Jetty
+description: Eclipse Jetty is a Java HTTP server and servlet container with HTTP/3, HTTP/2, WebSocket, and client APIs. Javalin, many Spring Boot apps, and JVM model gateways embed Jetty as the non-blocking HTTP runtime.
+tagline: HTTP/2 and HTTP/3 servlet container for the JVM
+
+github_url: https://github.com/jetty/jetty.project
+website_url: https://jetty.org
+docs_url: https://jetty.org/docs.html
+
+category: Dev Tools
+tags: [java, jvm, servlet, http, http2, websocket, application-server]
+pricing: free
+is_open_source: true
+license: EPL-2.0
+
+problem_solved: |
+  JVM inference gateways need HTTP/2, WebSocket, and servlet filters without
+  a full application server. Jetty is the embeddable container Javalin and
+  many Spring Boot apps already use, so teams get HTTP/3, TLS, and async
+  I/O without writing a custom NIO stack.
+
+use_cases:
+  - Embed Jetty as the HTTP runtime for a JVM LLM or embedding gateway
+  - Serve WebSocket token streams from a Java agent worker
+  - Terminate HTTP/2 and HTTP/3 in front of a servlet-based RAG API
+  - Host servlet filters that auth and rate-limit model-serving traffic
