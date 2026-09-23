@@ -1,0 +1,28 @@
+name: Tonic
+description: Native gRPC client and server for Rust with async/await, built on Tokio, hyper, and Tower. Tonic generates typed stubs from protobuf so Rust inference services and agent workers speak gRPC without a C++ runtime.
+tagline: Async gRPC for Rust on Tokio and Tower
+
+github_url: https://github.com/grpc/grpc-rust
+website_url: https://docs.rs/tonic
+docs_url: https://docs.rs/tonic
+install_command: cargo add tonic
+
+category: Dev Tools
+tags: [rust, grpc, protobuf, tokio, tower, async, rpc, model-serving]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Rust teams that expose or consume gRPC for model serving usually
+  either bind the C++ gRPC core or assemble hyper and HTTP/2 by hand.
+  Tonic is a native async implementation with tonic-build codegen so
+  inference servers and agent workers get typed clients, streaming,
+  TLS, and Tower middleware on Tokio.
+
+use_cases:
+  - Serve a Rust LLM or embedding gRPC API generated from protobuf
+  - Stream inference tokens over server-streaming RPCs with backpressure
+  - Call Python or Go model servers from a typed Rust tonic client
+  - Add Tower timeouts, auth, and tracing around agent gRPC tool calls
+  - Share proto definitions between tonic-build and other language stubs

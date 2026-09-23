@@ -1,0 +1,27 @@
+name: OkHttp
+description: HTTP client for the JVM, Android, and GraalVM. OkHttp handles connection pooling, HTTP/2, TLS, and interceptors so Java model-serving clients, embedding fetchers, and agent tool-callers talk to APIs without hand-rolled sockets.
+tagline: Efficient HTTP client for the JVM and Android
+
+github_url: https://github.com/lysine-dev/okhttp
+website_url: https://github.com/lysine-dev/okhttp
+docs_url: https://github.com/lysine-dev/okhttp/blob/master/docs/index.md
+
+category: Dev Tools
+tags: [java, kotlin, android, http, http2, tls, jvm, client]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Java services that call LLM APIs, embedding endpoints, or vector-search
+  backends waste time on retries, connection reuse, and TLS. OkHttp
+  pools connections, multiplexes HTTP/2, and runs interceptors so
+  model-gateway and agent clients get timeouts, auth headers, and
+  logging without a custom HTTP stack.
+
+use_cases:
+  - Call OpenAI-compatible chat and embedding APIs from JVM services
+  - Add auth, retry, and tracing interceptors around agent tool HTTP calls
+  - Stream SSE or chunked LLM responses with connection pooling
+  - Fetch documents and web pages for RAG ingest from Android or server JVMs
+  - Share one HTTP client across Spring, Vert.x, or GraalVM native image apps

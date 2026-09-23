@@ -1,0 +1,27 @@
+name: Vert.x
+description: Reactive toolkit for building non-blocking JVM applications. Vert.x composes HTTP, messaging, and database clients so teams ship high-concurrency model-serving APIs and agent workers without a heavyweight framework.
+tagline: Reactive toolkit for non-blocking JVM services
+
+github_url: https://github.com/eclipse-vertx/vert.x
+website_url: https://vertx.io
+docs_url: https://vertx.io/docs/
+
+category: Dev Tools
+tags: [java, jvm, reactive, async, http, event-loop, microservices]
+pricing: free
+is_open_source: true
+license: EPL-2.0
+
+problem_solved: |
+  Blocking servlet stacks burn a thread per in-flight LLM or embedding
+  request, which collapses under streaming inference and many concurrent
+  agent workers. Vert.x is an embeddable event-loop toolkit with HTTP,
+  messaging, and clients so JVM teams serve high-concurrency model APIs
+  without a full Spring-style framework.
+
+use_cases:
+  - Serve a reactive HTTP API in front of LLM or embedding backends
+  - Fan out agent tool calls over event-bus workers without blocking threads
+  - Stream tokens to clients with Vert.x Web and backpressure
+  - Connect Kafka, Postgres, or Redis from the same non-blocking event loop
+  - Embed Vert.x inside an existing JVM process as a lightweight HTTP layer
