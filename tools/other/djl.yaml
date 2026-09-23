@@ -1,0 +1,26 @@
+name: DJL
+description: Engine-agnostic deep learning framework for Java. DJL trains and serves models with a native Java API over PyTorch, TensorFlow, ONNX, and MXNet so JVM teams run inference without wrapping Python processes.
+tagline: Deep learning in Java without picking an engine
+
+github_url: https://github.com/deepjavalibrary/djl
+website_url: https://djl.ai
+docs_url: https://docs.djl.ai/master/index.html
+
+category: Other
+tags: [java, jvm, deep-learning, inference, pytorch, onnx]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Java services that need embeddings, vision, or LLM-side models often
+  shell out to Python. DJL gives a single Java API that loads zoo
+  models or ONNX/PyTorch engines, trains or predicts in-process, and
+  picks CPU or GPU from hardware so JVM apps stay in one runtime.
+
+use_cases:
+  - Run ONNX embedding models inside a Java API gateway
+  - Load a zoo object-detection model for document image pipelines
+  - Train a small MLP on JVM without a Python training loop
+  - Serve PyTorch inference from a Spring Boot service
+  - Switch between PyTorch and ONNX engines without rewriting callers

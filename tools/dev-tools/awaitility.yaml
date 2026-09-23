@@ -1,0 +1,26 @@
+name: Awaitility
+description: Java DSL for synchronizing asynchronous operations in tests. Awaitility replaces sleep-and-retry loops so JVM agent, model-gateway, and RAG tests wait until a job, cache, or broker event actually completes.
+tagline: Wait for async Java conditions without sleep loops
+
+github_url: https://github.com/awaitility/awaitility
+website_url: https://github.com/awaitility/awaitility
+docs_url: https://github.com/awaitility/awaitility/wiki
+
+category: Dev Tools
+tags: [java, jvm, testing, async, awaitility, dsl]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JVM tests of agent workers, embedding jobs, and message-driven RAG
+  pipelines often sleep a fixed time and flake. Awaitility expresses
+  until-conditions with timeouts and polling so tests wait for the
+  real async outcome instead of guessing how long a model call takes.
+
+use_cases:
+  - Wait until an async agent worker writes a result to a queue
+  - Poll until an embedding job finishes before asserting vector count
+  - Await a Spring event after a model-gateway callback
+  - Replace Thread.sleep in RAG pipeline integration tests
+  - Wait for a Redis cache key after an LLM response is stored
