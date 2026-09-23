@@ -1,0 +1,26 @@
+name: logrus
+description: Structured, pluggable logging library for Go. logrus adds fields, hooks, and formatters so model-serving and agent workers emit JSON logs that ship to aggregators instead of unstructured println output.
+tagline: Structured, pluggable logging for Go
+
+github_url: https://github.com/sirupsen/logrus
+website_url: https://github.com/sirupsen/logrus
+docs_url: https://github.com/sirupsen/logrus
+install_command: go get github.com/sirupsen/logrus
+
+category: Dev Tools
+tags: [go, logging, structured-logging, json, observability]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go inference servers and agent workers that log with fmt.Println lose
+  request IDs, model names, and latency in aggregators. logrus structured
+  fields, hooks, and JSON formatters attach that context so LLM gateway
+  logs stay queryable in ELK, Loki, or CloudWatch.
+
+use_cases:
+  - Emit JSON logs with model name, token count, and request ID from a Go LLM gateway
+  - Hook logrus into syslog or a metrics sink for agent worker failures
+  - Add field-level context around embedding and vector-search client errors
+  - Switch formatters between pretty-print local debug and JSON production
