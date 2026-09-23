@@ -1,0 +1,36 @@
+name: Augmentor
+description: Image augmentation library in Python for machine learning. Augmentor provides a pipeline-based API for applying random geometric transforms, color adjustments, and noise to training images, improving model generalization without collecting additional labeled data.
+tagline: Image augmentation pipeline for machine learning training data
+
+github_url: https://github.com/mdbloice/Augmentor
+website_url: https://augmentor.readthedocs.io/en/stable
+docs_url: https://augmentor.readthedocs.io/en/stable
+
+install_command: pip install Augmentor
+
+category: Other
+tags:
+  - image-augmentation
+  - computer-vision
+  - data-augmentation
+  - python
+  - machine-learning
+  - open-source
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Machine learning models for computer vision often overfit to limited training datasets,
+  producing poor performance on real-world images with different lighting, angles, or noise.
+  Collecting and labeling additional training data is expensive and time-consuming. Augmentor
+  generates synthetic training variations by applying randomized transformations to existing
+  images, effectively expanding dataset diversity and helping models generalize better to
+  unseen inputs without manual data collection.
+
+use_cases:
+  - Expand small image classification datasets with rotations, flips, and color jitter
+  - Generate diverse training data for object detection models with random crops and zooms
+  - Create robust medical imaging models by augmenting X-rays and scans with noise and blur
+  - Build balanced datasets for rare classes by oversampling with heavy augmentation pipelines
+  - Simulate real-world camera variations for autonomous vehicle perception training

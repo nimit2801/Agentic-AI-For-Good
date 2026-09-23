@@ -1,0 +1,37 @@
+name: AugLy
+description: A data augmentations library for audio, image, text, and video from Meta AI. AugLy provides over 100 augmentation transforms across modalities to help build more robust AI models by simulating real-world data variations during training.
+tagline: Multimodal data augmentation library for audio, image, text, and video
+
+github_url: https://github.com/facebookresearch/AugLy
+website_url: https://ai.facebook.com/blog/augly-a-new-data-augmentation-library-to-help-build-more-robust-ai-models/
+docs_url: https://github.com/facebookresearch/AugLy
+
+install_command: pip install augly
+
+category: Other
+tags:
+  - data-augmentation
+  - multimodal
+  - audio
+  - image
+  - text
+  - video
+  - open-source
+pricing: free
+is_open_source: true
+license: Other
+
+problem_solved: |
+  AI models trained on clean, curated datasets often fail in production when faced with noisy,
+  distorted, or modified inputs across different modalities. Building separate augmentation
+  pipelines for each data type requires significant engineering effort and domain expertise.
+  AugLy provides a unified library with over 100 augmentations spanning audio, image, text,
+  and video, enabling teams to stress-test and improve model robustness with realistic data
+  variations from a single toolkit.
+
+use_cases:
+  - Apply text paraphrasing, spelling errors, and insertions to stress-test NLP models
+  - Augment image datasets with overlays, blur, and color transforms for vision model training
+  - Simulate audio noise, pitch shifts, and speed changes for speech recognition robustness
+  - Create video training variations with frame drops, resolution changes, and time stretches
+  - Benchmark model robustness by measuring accuracy degradation across augmented test sets

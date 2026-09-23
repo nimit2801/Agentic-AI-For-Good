@@ -1,0 +1,34 @@
+name: RediSearch
+description: A query and indexing engine for Redis that provides secondary indexing, full-text search, vector similarity search, and aggregations. RediSearch extends Redis with advanced search capabilities including hybrid vector and text queries for AI retrieval pipelines.
+tagline: Redis search and query engine with vector similarity search
+
+github_url: https://github.com/RediSearch/RediSearch
+website_url: https://redis.io/docs/latest/develop/ai/search-and-query/
+docs_url: https://redis.io/docs/latest/develop/ai/search-and-query/
+
+category: Vector DB
+tags:
+  - redis
+  - vector-search
+  - full-text-search
+  - secondary-index
+  - real-time
+  - open-source
+pricing: free
+is_open_source: true
+license: Other
+
+problem_solved: |
+  Traditional Redis key-value lookups cannot efficiently handle complex queries, full-text search,
+  or vector similarity search required by modern AI applications. Building separate search
+  infrastructure alongside Redis adds operational complexity, latency, and data synchronization
+  challenges. RediSearch integrates advanced indexing directly into Redis, enabling hybrid
+  vector and text queries, aggregations, and geospatial searches within the same high-performance
+  data store teams already operate.
+
+use_cases:
+  - Build real-time semantic search with hybrid vector and full-text retrieval in Redis
+  - Power recommendation engines with vector similarity search over user and item embeddings
+  - Implement faceted search and aggregations for e-commerce and content discovery platforms
+  - Combine geospatial queries with vector search for location-aware AI applications
+  - Index and query structured document metadata alongside vector embeddings in a single store
