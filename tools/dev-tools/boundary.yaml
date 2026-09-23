@@ -1,0 +1,23 @@
+name: Boundary
+description: Boundary enables identity-based access management for dynamic infrastructure. It provides secure access to hosts and services without exposing networks, replacing VPNs and bastion hosts with fine-grained, auditable sessions.
+tagline: Identity-based secure access for dynamic infrastructure
+
+github_url: https://github.com/hashicorp/boundary
+website_url: https://www.boundaryproject.io
+docs_url: https://developer.hashicorp.com/boundary/docs
+
+category: Dev Tools
+tags: [security, zero-trust, access-management, ssh, infrastructure, identity]
+pricing: freemium
+is_open_source: true
+
+problem_solved: |
+  Traditional VPNs and bastion hosts grant broad network access, creating security risks and audit
+  blind spots. Boundary provides zero-trust access where every session is authenticated, authorized,
+  and logged with fine-grained identity-based permissions for dynamic cloud infrastructure.
+
+use_cases:
+  - Replacing VPNs with identity-based access to SSH, RDP, and database endpoints
+  - Providing just-in-time access to production infrastructure for on-call engineers
+  - Auditing all infrastructure access sessions with full session recording and logs
+  - Enforcing least-privilege access to dynamic cloud resources across multi-cloud
