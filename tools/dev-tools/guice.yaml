@@ -1,0 +1,25 @@
+name: Guice
+description: Lightweight dependency injection framework for Java from Google. Guice binds modules so JVM model-serving and agent apps wire clients, stores, and workers without XML or a full Spring container.
+tagline: Lightweight Java dependency injection from Google
+
+github_url: https://github.com/google/guice
+website_url: https://github.com/google/guice
+docs_url: https://github.com/google/guice/wiki
+
+category: Dev Tools
+tags: [java, dependency-injection, jvm, google, modules]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JVM inference and agent services that avoid Spring still need to wire
+  HTTP clients, vector stores, and workers. Guice modules and just-in-time
+  bindings inject those dependencies with annotations instead of manual
+  constructors or XML.
+
+use_cases:
+  - Inject LLM, embedding, and vector-store clients into a Java gateway
+  - Swap mock model backends in tests with Guice modules
+  - Bind scoped workers for concurrent agent tool-call execution
+  - Keep a Dropwizard or custom HTTP service free of Spring DI

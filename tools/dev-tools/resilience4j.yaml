@@ -1,0 +1,25 @@
+name: Resilience4j
+description: Fault-tolerance library for Java 8 and functional programming. Resilience4j adds circuit breakers, retries, rate limiters, and bulkheads so JVM model clients survive provider outages without Hystrix.
+tagline: Circuit breakers and retries for Java services
+
+github_url: https://github.com/resilience4j/resilience4j
+website_url: https://resilience4j.readme.io
+docs_url: https://resilience4j.readme.io/docs
+
+category: Dev Tools
+tags: [java, jvm, circuit-breaker, retry, rate-limit, fault-tolerance]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JVM gateways that call LLM APIs fail hard when a provider times out or
+  rate-limits. Resilience4j decorates functional calls with circuit
+  breakers, retries, and bulkheads so embedding and agent clients degrade
+  instead of cascading.
+
+use_cases:
+  - Circuit-break a failing OpenAI-compatible chat endpoint from Java
+  - Retry transient embedding API errors with exponential backoff
+  - Rate-limit outbound tool calls from an agent worker
+  - Isolate bulkheads so one slow vector-search client cannot starve others

@@ -1,0 +1,25 @@
+name: HikariCP
+description: High-performance JDBC connection pool for Java. HikariCP is the default pool in Spring Boot so JVM RAG, feature-store, and agent services reuse database connections instead of opening a socket per query.
+tagline: Fast JDBC connection pool for Java
+
+github_url: https://github.com/brettwooldridge/HikariCP
+website_url: https://github.com/brettwooldridge/HikariCP
+docs_url: https://github.com/brettwooldridge/HikariCP
+
+category: Dev Tools
+tags: [java, jdbc, connection-pool, database, spring, jvm]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JVM RAG and agent services that open a JDBC connection per query stall
+  under load and exhaust Postgres or MySQL. HikariCP is a small, fast
+  pool (Spring Boot's default) so feature stores and metadata DBs stay
+  healthy next to model-serving traffic.
+
+use_cases:
+  - Pool Postgres connections for a Java RAG metadata and chunk store
+  - Share a HikariCP pool across Spring Boot LLM gateway repositories
+  - Cap concurrent JDBC usage from agent workers that write run history
+  - Replace older pools (c3p0, DBCP) with a lower-latency default

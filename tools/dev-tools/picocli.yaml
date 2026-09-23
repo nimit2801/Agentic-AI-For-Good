@@ -1,0 +1,25 @@
+name: picocli
+description: Modern Java CLI framework with colors, subcommands, autocomplete, and GraalVM native-image support. picocli lets JVM teams ship model-eval, dataset, and agent-ops command-line tools from one source file or a Maven dependency.
+tagline: Modern CLI framework for Java and GraalVM
+
+github_url: https://github.com/remkop/picocli
+website_url: https://picocli.info
+docs_url: https://picocli.info
+
+category: Dev Tools
+tags: [java, cli, graalvm, kotlin, command-line, jvm]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JVM teams writing eval runners, dataset importers, or agent-ops CLIs
+  often parse argv by hand or pull a heavy framework. picocli generates
+  help, subcommands, and GraalVM-friendly native images so those tools
+  ship as a single binary without Spring Boot.
+
+use_cases:
+  - Build a GraalVM-native CLI that runs LLM evals against a dataset
+  - Add subcommands for ingest, embed, and query on a JVM RAG toolkit
+  - Parse flags for an agent-ops tool that starts and stops workers
+  - Generate ANSI help and bash completion for a model-registry CLI
