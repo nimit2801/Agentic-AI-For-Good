@@ -1,0 +1,25 @@
+name: Reflections
+description: Java runtime metadata analysis library for scanning classpath metadata, annotations, and type hierarchies at runtime.
+tagline: High-performance classpath scanner for Java annotations, subtypes, and resources
+
+github_url: https://github.com/ronmamo/reflections
+website_url: https://github.com/ronmamo/reflections
+docs_url: https://github.com/ronmamo/reflections/wiki
+
+category: Dev Tools
+tags: [java, reflection, classpath, annotations, metadata, scanning]
+pricing: free
+is_open_source: true
+license: WTFPL
+
+problem_solved: |
+  Discovering classes, methods, and annotations at runtime in Java requires complex classpath
+  scanning and reflection code. Reflections provides a simple, high-performance API for scanning
+  classpath metadata, indexing annotated elements, and querying type hierarchies without writing
+  custom classloaders or recursive directory traversal.
+
+use_cases:
+  - Discover all classes annotated with a custom annotation for plugin registration and dependency injection
+  - Find all implementations of an interface at runtime for strategy pattern or factory method discovery
+  - Scan classpath for resources and configuration files without hardcoding package names
+  - Build framework-level metadata indexes for annotation-driven configuration in Spring-like containers

@@ -1,0 +1,25 @@
+name: Kotlinx Serialization
+description: Kotlin multiplatform serialization framework supporting JSON, Protocol Buffers, CBOR, and Properties formats with compile-time code generation.
+tagline: Type-safe multiplatform serialization for Kotlin with zero reflection overhead
+
+github_url: https://github.com/Kotlin/kotlinx.serialization
+website_url: https://kotlinlang.org/docs/serialization.html
+docs_url: https://kotlinlang.org/api/kotlinx.serialization/
+
+category: Dev Tools
+tags: [kotlin, serialization, json, protobuf, multiplatform, compile-time]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Serializing data across platforms in Kotlin projects often requires platform-specific libraries
+  or verbose boilerplate. Kotlinx Serialization provides a single, type-safe, multiplatform
+  serialization framework with compile-time code generation, eliminating reflection overhead and
+  ensuring consistent behavior across JVM, JS, Native, and Android targets.
+
+use_cases:
+  - Serialize Kotlin data classes to JSON for REST API communication without runtime reflection overhead
+  - Exchange data between Kotlin/JVM backend and Kotlin/Native mobile apps using Protocol Buffers
+  - Parse configuration files in Properties or HOCON format with type-safe deserialization
+  - Build cross-platform SDKs that share serialization logic across Android, iOS, and server targets
