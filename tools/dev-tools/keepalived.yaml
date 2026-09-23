@@ -1,0 +1,25 @@
+name: Keepalived
+description: Routing software that provides high availability and load balancing for Linux-based systems using VRRP and health checks.
+tagline: High availability and load balancing for Linux servers
+
+github_url: https://github.com/acassen/keepalived
+website_url: https://www.keepalived.org
+docs_url: https://www.keepalived.org/doc/
+
+category: Dev Tools
+tags: [high-availability, load-balancer, vrrp, linux, networking, infrastructure]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Single points of failure in critical infrastructure can cause hours of downtime when a server,
+  load balancer, or network path fails. Keepalived implements the Virtual Router Redundancy Protocol
+  (VRRP) to automatically fail over IP addresses and services between redundant servers, combined
+  with Layer 4 health checks to ensure traffic is only routed to healthy backends.
+
+use_cases:
+  - Configure automatic failover between primary and backup load balancers with sub-second detection
+  - Set up Layer 4 health checks for HTTP, TCP, and SSL services to remove failed backends from rotation
+  - Implement floating virtual IP addresses that migrate to a standby server during maintenance or outages
+  - Build highly available proxy and gateway tiers for AI inference services with zero-downtime failover

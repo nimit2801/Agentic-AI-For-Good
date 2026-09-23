@@ -1,0 +1,26 @@
+name: Milvus Lite
+description: A lightweight, embeddable version of Milvus that runs locally without Docker, ideal for prototyping and small-scale vector search.
+tagline: Lightweight embeddable vector database for local development
+
+github_url: https://github.com/milvus-io/milvus-lite
+website_url: https://milvus.io
+docs_url: https://milvus.io/docs/milvus_lite.md
+
+category: Vector DB
+tags: [vector-database, embeddings, similarity-search, python, local, lightweight]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+install_command: pip install milvus-lite
+
+problem_solved: |
+  Running a full Milvus cluster requires Docker or Kubernetes, which adds overhead for prototyping,
+  local development, and small applications. Milvus Lite packages the same vector search engine into
+  a pip-installable Python library that runs entirely in-process, letting developers add semantic
+  search and RAG capabilities to their apps without managing containers.
+
+use_cases:
+  - Prototype RAG applications locally with the same Milvus API used in production clusters
+  - Add vector search to Python scripts and Jupyter notebooks without Docker overhead
+  - Build small-scale semantic search into desktop applications with an embedded vector store
+  - Run unit tests for vector database queries in CI pipelines without container orchestration

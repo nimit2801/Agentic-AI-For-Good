@@ -1,0 +1,26 @@
+name: Rollbar
+description: Real-time error tracking and debugging platform that captures exceptions, traces deployments, and correlates errors with code changes.
+tagline: Error tracking and debugging with deployment correlation
+
+github_url: https://github.com/rollbar/rollbar.js
+website_url: https://rollbar.com
+docs_url: https://docs.rollbar.com
+
+category: Monitoring
+tags: [error-tracking, monitoring, debugging, deployments, javascript]
+pricing: freemium
+is_open_source: true
+license: MIT
+install_command: npm install rollbar
+
+problem_solved: |
+  Finding the root cause of production errors often requires manually correlating stack traces with
+  recent deployments, environment variables, and user actions. Rollbar automatically captures
+  exceptions across the full stack, enriches them with deployment and environment context, and uses
+  machine learning to group related errors and identify the deploy that introduced them.
+
+use_cases:
+  - Track errors across frontend JavaScript, backend APIs, and mobile apps in a unified dashboard
+  - Correlate error spikes with specific code deployments to identify which release caused a regression
+  - Automatically create tickets in Jira or GitHub Issues when new error types are detected
+  - Monitor error rates and set up Slack or PagerDuty alerts when critical issues exceed thresholds
