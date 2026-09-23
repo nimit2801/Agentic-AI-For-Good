@@ -1,0 +1,26 @@
+name: JMH
+description: Java Microbenchmark Harness for nano to macro JVM benchmarks. JMH generates harness code so teams measure tokenizer, embedding, and serialization hot paths without JIT and warmup distorting the numbers.
+tagline: Official JVM microbenchmark harness
+
+github_url: https://github.com/openjdk/jmh
+website_url: https://openjdk.org/projects/code-tools/jmh
+docs_url: https://github.com/openjdk/jmh/tree/master/jmh-samples
+
+category: Dev Tools
+tags: [java, jvm, benchmark, jmh, performance, openjdk]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Naive System.nanoTime loops lie about JVM performance because of JIT,
+  warmup, and dead-code elimination. JMH is the OpenJDK harness that
+  generates benchmark bytecode so tokenizer, JSON, and embedding client
+  hot paths get reliable throughput and latency numbers.
+
+use_cases:
+  - Benchmark JSON serialization of chat payloads on the JVM
+  - Measure tokenizer throughput before shipping a Java gateway
+  - Compare embedding client codecs under JMH forks and warmup
+  - Profile vector-distance kernels used in a Java RAG service
+  - Generate a Maven JMH project for agent-runtime microbenchmarks

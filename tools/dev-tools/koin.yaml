@@ -1,0 +1,26 @@
+name: Koin
+description: Pragmatic lightweight dependency injection for Kotlin and Kotlin Multiplatform. Koin wires agent services, model clients, and Android or JVM apps with a DSL and optional compile-time checks instead of annotation processors.
+tagline: Lightweight DI for Kotlin and KMP
+
+github_url: https://github.com/InsertKoinIO/koin
+website_url: https://insert-koin.io
+docs_url: https://insert-koin.io/docs/setup/koin
+
+category: Dev Tools
+tags: [kotlin, kmp, dependency-injection, koin, android, jvm]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Kotlin agent and Android apps need DI without Dagger processors or
+  Spring. Koin uses a DSL plus an optional compiler plugin so missing
+  bindings fail at compile time, and the same modules work on JVM,
+  Android, and Kotlin Multiplatform targets.
+
+use_cases:
+  - Inject an LLM client into Kotlin agent workers with a Koin module
+  - Share DI modules across Android and JVM Kotlin Multiplatform apps
+  - Catch missing tool-registry bindings at compile time
+  - Replace Dagger in a Kotlin model-gateway service
+  - Scope per-request embedding clients in a Ktor application

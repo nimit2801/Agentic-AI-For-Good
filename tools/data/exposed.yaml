@@ -1,0 +1,26 @@
+name: Exposed
+description: Kotlin SQL library with a typesafe DSL and a lightweight DAO over JDBC or R2DBC. Exposed talks to Postgres, MySQL, SQLite, and more so Kotlin agent backends store sessions and RAG metadata without a heavy ORM.
+tagline: Kotlin SQL DSL and DAO over JDBC and R2DBC
+
+github_url: https://github.com/JetBrains/Exposed
+website_url: https://www.jetbrains.com/exposed/
+docs_url: https://www.jetbrains.com/help/exposed/home.html
+
+category: Data
+tags: [kotlin, sql, orm, jdbc, r2dbc, jetbrains]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Kotlin services that persist agent sessions, tool catalogs, and RAG
+  chunks often drop to raw JDBC or a Java ORM. Exposed gives a typesafe
+  SQL DSL and a DAO on JDBC or R2DBC, so teams switch databases with
+  little code change and stay in Kotlin.
+
+use_cases:
+  - Store agent conversation sessions in Postgres from Kotlin
+  - Query RAG document metadata with the Exposed SQL DSL
+  - Use the DAO API for tool-catalog tables in a Ktor service
+  - Talk to SQLite locally and Postgres in production with one schema
+  - Run R2DBC queries for non-blocking Kotlin embedding workers

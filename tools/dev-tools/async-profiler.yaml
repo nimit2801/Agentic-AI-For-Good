@@ -1,0 +1,26 @@
+name: async-profiler
+description: Low-overhead sampling profiler for HotSpot JVMs. async-profiler captures CPU, heap, native, and lock stacks without safepoint bias so Java model gateways and agent workers get honest flame graphs in production.
+tagline: Low-overhead HotSpot CPU and heap profiler
+
+github_url: https://github.com/async-profiler/async-profiler
+website_url: https://github.com/async-profiler/async-profiler
+docs_url: https://github.com/async-profiler/async-profiler/blob/master/docs/ProfilingModes.md
+
+category: Dev Tools
+tags: [java, jvm, profiler, flamegraph, performance, hotspot]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Traditional Java samplers pause at safepoints and miss GC, JIT, and
+  native frames. async-profiler uses AsyncGetCallTrace and perf_events
+  so production JVM model gateways get CPU, allocation, and lock
+  profiles with kernel frames and HTML flame graphs.
+
+use_cases:
+  - Sample CPU of a Java model-gateway process into a flame graph
+  - Find heap allocation hot spots in an embedding worker
+  - Profile contended locks in a multi-threaded agent runtime
+  - Attach asprof to a live JVM without a restart
+  - Include GC and JIT frames when diagnosing inference latency
