@@ -1,0 +1,26 @@
+name: Vavr
+description: Object-functional library for Java 8+ with persistent collections, Try, Option, and concurrent helpers. Vavr cuts null and checked-exception noise in JVM agent and model-gateway code.
+tagline: Functional collections and error types for Java
+
+github_url: https://github.com/vavr-io/vavr
+website_url: https://vavr.io
+docs_url: https://docs.vavr.io
+
+category: Dev Tools
+tags: [java, jvm, functional, collections, vavr, immutable]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Java agent and gateway code drowns in null checks, mutable lists,
+  and checked exceptions around model APIs. Vavr adds persistent
+  collections plus Option, Try, and Either so JVM services compose
+  fallible LLM calls without nested try/catch or Guava-only helpers.
+
+use_cases:
+  - Wrap model-API calls in Try instead of checked exceptions
+  - Store RAG chunk lists in persistent Vector and Seq types
+  - Use Option to skip missing embedding metadata without nulls
+  - Pattern-match Either success or failure in an agent worker
+  - Share immutable maps of tool schemas across Java threads

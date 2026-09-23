@@ -1,0 +1,27 @@
+name: Lettuce
+description: Thread-safe Redis Java client for sync, async, and reactive use. Lettuce shares a Netty connection across threads and supports Cluster, Sentinel, RedisJSON, and vector sets for JVM AI caches.
+tagline: Advanced thread-safe Redis client for Java
+
+github_url: https://github.com/redis/lettuce
+website_url: https://redis.github.io/lettuce/
+docs_url: https://redis.github.io/lettuce/
+
+category: Dev Tools
+tags: [java, jvm, redis, lettuce, reactive, netty]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  JVM agent workers that share one Redis connection cannot use a
+  blocking client safely. Lettuce is thread-safe, built on Netty, and
+  offers sync, async, and reactive APIs plus Cluster, Sentinel, JSON,
+  and vector-set commands so high-concurrency model gateways reuse
+  connections without per-thread pools.
+
+use_cases:
+  - Share one Redis connection across Java agent worker threads
+  - Call RedisJSON from a reactive Spring WebFlux model gateway
+  - Use Redis Cluster for distributed prompt-cache storage
+  - Stream Redis pub/sub events into an async agent pipeline
+  - Query Redis vector sets from a JVM retrieval service
