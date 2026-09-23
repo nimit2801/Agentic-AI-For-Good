@@ -1,0 +1,34 @@
+name: Beats
+description: Lightweight shippers for Elasticsearch and Logstash. Beats is a family of single-purpose data shippers that collect logs, metrics, network data, and audit data from machines and ship them to Elasticsearch or Logstash for indexing and analysis.
+tagline: Lightweight data shippers for Elasticsearch and Logstash
+
+github_url: https://github.com/elastic/beats
+website_url: https://www.elastic.co/products/beats
+docs_url: https://www.elastic.co/guide/en/beats/libbeat/current/index.html
+
+category: Monitoring
+tags:
+  - logging
+  - metrics
+  - data-shipping
+  - elasticsearch
+  - observability
+  - open-source
+pricing: free
+is_open_source: true
+license: Other
+
+problem_solved: |
+  Collecting logs, metrics, and operational data from distributed systems requires lightweight
+  agents that can run on every machine without consuming significant resources. Traditional
+  log aggregation solutions are often heavy, complex to configure, and difficult to scale
+  across heterogeneous infrastructure. Beats provides a family of focused, lightweight data
+  shippers that install quickly, use minimal resources, and reliably forward operational data
+  to Elasticsearch or Logstash, enabling comprehensive observability without operational overhead.
+
+use_cases:
+  - Ship system logs, application logs, and container logs to Elasticsearch for centralized analysis
+  - Collect server and service metrics with Metricbeat for infrastructure monitoring dashboards
+  - Monitor network traffic and flows with Packetbeat for security and performance analysis
+  - Audit file integrity and system changes with Auditbeat for compliance and security monitoring
+  - Collect uptime and availability data with Heartbeat for service-level monitoring and alerting

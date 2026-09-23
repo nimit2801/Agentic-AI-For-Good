@@ -1,0 +1,36 @@
+name: Skorch
+description: A scikit-learn compatible neural network library that wraps PyTorch. Skorch provides a high-level API for training PyTorch models with scikit-learn-style fit, predict, and cross-validation workflows, making deep learning accessible to scikit-learn users.
+tagline: scikit-learn compatible neural network library for PyTorch
+
+github_url: https://github.com/skorch-dev/skorch
+website_url: https://skorch.readthedocs.io/en/stable/
+docs_url: https://skorch.readthedocs.io/en/stable/
+
+install_command: pip install skorch
+
+category: Other
+tags:
+  - pytorch
+  - scikit-learn
+  - neural-networks
+  - machine-learning
+  - python
+  - open-source
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  PyTorch provides powerful deep learning primitives but lacks the high-level training
+  abstractions that scikit-learn users expect, such as fit/predict interfaces, grid search,
+  and cross-validation. This creates a steep learning curve for data scientists who want
+  to adopt neural networks without rewriting their entire ML pipeline. Skorch bridges this
+  gap by wrapping PyTorch modules in a scikit-learn compatible estimator interface, enabling
+  seamless integration with existing scikit-learn workflows, pipelines, and model selection.
+
+use_cases:
+  - Train PyTorch neural networks using familiar scikit-learn fit and predict methods
+  - Perform hyperparameter tuning with scikit-learn GridSearchCV on PyTorch models
+  - Build ensemble models combining PyTorch neural networks with traditional ML estimators
+  - Deploy PyTorch models in production pipelines designed for scikit-learn interfaces
+  - Migrate existing scikit-learn workflows to deep learning without pipeline rewrites
