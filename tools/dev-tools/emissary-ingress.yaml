@@ -1,0 +1,27 @@
+name: Emissary Ingress
+description: Kubernetes-native API gateway and ingress controller built on Envoy Proxy. Emissary maps Kubernetes resources to Envoy config for routing, TLS, rate limits, and canary traffic to microservices and model backends.
+tagline: Kubernetes-native API gateway on Envoy
+
+github_url: https://github.com/emissary-ingress/emissary
+website_url: https://www.getambassador.io
+docs_url: https://www.getambassador.io/docs/emissary
+
+category: Dev Tools
+tags: [api-gateway, kubernetes, envoy, ingress, microservices, cloud-native, cncf]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Kubernetes teams need more than a basic Ingress for canaries, TLS, and
+  per-route policies in front of microservices and model servers. Emissary
+  Ingress (formerly Ambassador) is a Kubernetes-native control plane for
+  Envoy that turns Custom Resources into live Envoy config, so routing,
+  retries, and traffic splitting stay in Git instead of hand-edited proxy
+  files.
+
+use_cases:
+  - "Expose Kubernetes services through Envoy with CRD-driven routes, TLS, and timeouts"
+  - "Canary a new model-serving revision by splitting traffic between two Deployments"
+  - "Apply rate limits and auth filters at the cluster edge without rewriting application code"
+  - "Migrate from annotation-based Ingress to Gateway API style routing on Envoy"

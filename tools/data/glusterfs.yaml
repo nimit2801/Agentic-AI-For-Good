@@ -1,0 +1,25 @@
+name: GlusterFS
+description: Scale-out distributed file system that aggregates disks from many servers into one POSIX namespace. GlusterFS offers replication, erasure coding, and FUSE mounts so training data and model artifacts can live on commodity hardware.
+tagline: Scale-out POSIX distributed file system
+
+github_url: https://github.com/gluster/glusterfs
+website_url: https://www.gluster.org
+docs_url: https://docs.gluster.org
+
+category: Data
+tags: [distributed-storage, filesystem, posix, fuse, replication, hpc, mlops]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  ML teams outgrow a single NAS when datasets and checkpoints need
+  petabyte-scale POSIX access from many training nodes. GlusterFS bricks
+  commodity servers into one namespace with replication and erasure coding,
+  so jobs can read and write shared files without a proprietary SAN.
+
+use_cases:
+  - "Mount a shared POSIX volume for multi-node training jobs on commodity disks"
+  - "Replicate model checkpoints across servers so a node failure does not lose weights"
+  - "Serve large image and video datasets to GPU workers over a FUSE mount"
+  - "Grow storage by adding bricks instead of replacing a monolithic file appliance"
