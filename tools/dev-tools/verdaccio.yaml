@@ -1,0 +1,27 @@
+name: Verdaccio
+description: Lightweight private npm registry that proxies the public registry and caches packages, used to host internal Node libraries for AI and app teams.
+tagline: Lightweight private npm proxy registry
+
+github_url: https://github.com/verdaccio/verdaccio
+website_url: https://verdaccio.org
+docs_url: https://verdaccio.org/docs/
+
+install_command: npm install -g verdaccio
+
+category: Dev Tools
+tags: [npm, registry, nodejs, proxy, packaging, private-packages]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Teams that publish private Node packages or need a cache of npm in CI should not
+  depend only on the public registry. Verdaccio runs a local proxy registry that
+  caches downloads and hosts private packages, so AI web apps and JS tooling keep
+  installing when the public registry is slow or when packages must stay internal.
+
+use_cases:
+  - Host private Node packages for internal AI dashboards and CLIs
+  - Cache npm downloads in CI so builds do not hit the public registry every time
+  - Run an offline-friendly registry for air-gapped or restricted networks
+  - Publish scoped packages that should never leave the company network

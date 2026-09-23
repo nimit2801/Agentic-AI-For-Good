@@ -1,0 +1,27 @@
+name: Apache HTTP Server
+description: The Apache HTTP Server (httpd), a widely deployed open-source web server used to serve static sites, reverse-proxy APIs, and front ML model endpoints.
+tagline: The original open-source HTTP server
+
+github_url: https://github.com/apache/httpd
+website_url: https://httpd.apache.org
+docs_url: https://httpd.apache.org/docs/
+
+install_command: brew install httpd
+
+category: Dev Tools
+tags: [web-server, http, reverse-proxy, apache, infrastructure, model-serving]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Many AI demos, docs sites, and internal model APIs still need a battle-tested HTTP
+  server for static files, TLS, and reverse proxying. Apache HTTP Server provides
+  modules for auth, rewriting, and proxying so teams can put a stable front door in
+  front of inference services without writing that layer themselves.
+
+use_cases:
+  - Serve documentation and static frontends for AI products
+  - Reverse-proxy inference APIs with TLS termination and access control
+  - Host internal model galleries or demo apps on a standard httpd stack
+  - Route HTTP traffic to FastAPI, Flask, or Triton backends via proxy modules
