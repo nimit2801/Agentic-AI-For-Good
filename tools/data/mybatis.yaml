@@ -1,0 +1,26 @@
+name: MyBatis
+description: SQL mapper framework for Java that binds queries to objects with XML or annotations. MyBatis lets JVM RAG, feature-store, and agent services keep SQL explicit instead of hiding it behind a full ORM.
+tagline: SQL mapper for Java without a heavy ORM
+
+github_url: https://github.com/mybatis/mybatis-3
+website_url: https://mybatis.org/mybatis-3/
+docs_url: https://mybatis.org/mybatis-3/getting-started.html
+
+category: Data
+tags: [java, sql, mybatis, orm, jdbc, mapper]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JVM teams loading documents, eval rows, or agent job state from SQL
+  either concatenate JDBC strings or adopt a heavy ORM. MyBatis maps
+  SQL statements to Java objects with XML or annotations so RAG and
+  agent services keep SQL visible and results typed.
+
+use_cases:
+  - Map RAG document rows to Java objects with annotated SQL
+  - Load feature-store batches for training from Postgres in a JVM job
+  - Persist agent conversation and tool-call history with mapper XML
+  - Run custom eval-report queries without an ORM session cache
+  - Share SQL mappers across Spring Boot model-gateway services
