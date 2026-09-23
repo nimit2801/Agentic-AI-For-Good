@@ -1,0 +1,26 @@
+name: Aerospike
+description: A flash-optimized, in-memory NoSQL database with native vector search for real-time AI applications that need predictable latency at extreme scale.
+tagline: Flash-optimized NoSQL database with native vector search
+
+github_url: https://github.com/aerospike/aerospike-server
+website_url: https://aerospike.com
+docs_url: https://aerospike.com/docs
+
+category: Vector DB
+tags: [nosql, vector-search, in-memory, real-time, embeddings, rag, database]
+pricing: freemium
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Real-time AI apps need to store and query both operational records and high-dimensional
+  embeddings without stitching a separate vector store onto a cache or key-value system.
+  Aerospike combines a hybrid-memory NoSQL engine with native vector search so teams can
+  serve lookups, filters, and similarity queries at millisecond latency on large datasets
+  without managing a second database for RAG or recommendations.
+
+use_cases:
+  - Store product or user embeddings next to operational records for real-time semantic search
+  - Power RAG retrieval with filtered vector queries over large, frequently updated catalogs
+  - Serve recommendation and personalization lookups at high QPS with predictable latency
+  - Run hybrid searches that combine metadata filters with nearest-neighbor vector matching

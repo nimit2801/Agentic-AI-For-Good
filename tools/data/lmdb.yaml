@@ -1,0 +1,27 @@
+name: LMDB
+description: Lightning Memory-Mapped Database, an embedded key-value store used as the storage engine behind many ML datasets, model caches, and high-performance AI systems.
+tagline: Embedded memory-mapped key-value store for ML systems
+
+github_url: https://github.com/LMDB/lmdb
+website_url: http://www.lmdb.tech/doc/
+docs_url: http://www.lmdb.tech/doc/
+
+install_command: pip install lmdb
+
+category: Data
+tags: [key-value-store, embedded-database, memory-mapped, storage-engine, ml-datasets]
+pricing: free
+is_open_source: true
+license: OLDAP-2.8
+
+problem_solved: |
+  ML pipelines need a fast, crash-safe embedded store for samples, caches, and indexes without
+  running a separate database server. LMDB memory-maps a B+tree on disk so readers see
+  zero-copy access, writers stay ACID-compliant, and tools such as Caffe, PyTorch data loaders,
+  and feature caches can persist large binary datasets with minimal overhead.
+
+use_cases:
+  - Store image, text, or feature samples for high-throughput ML data loaders
+  - Persist embedding caches and lookup tables inside training or inference processes
+  - Use as an embedded storage engine for tools that need concurrent readers and ACID writes
+  - Replace heavier local databases when an ML job only needs a fast key-value map

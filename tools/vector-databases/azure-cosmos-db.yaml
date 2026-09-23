@@ -1,0 +1,26 @@
+name: Azure Cosmos DB
+description: Microsoft's globally distributed multi-model database with DiskANN vector search for RAG, semantic search, and AI apps that need low-latency reads worldwide.
+tagline: Globally distributed database with DiskANN vector search
+
+website_url: https://azure.microsoft.com/products/cosmos-db
+docs_url: https://learn.microsoft.com/azure/cosmos-db/
+
+install_command: pip install azure-cosmos
+
+category: Vector DB
+tags: [vector-search, nosql, azure, diskann, rag, semantic-search, globally-distributed]
+pricing: freemium
+is_open_source: false
+
+problem_solved: |
+  Teams building AI features on Azure often keep operational data in Cosmos DB and embeddings
+  in a separate vector store, then struggle to keep both in sync across regions. Cosmos DB
+  adds DiskANN vector search to the same globally distributed document store, so applications
+  can run similarity queries next to business data with multi-region replication, SLA-backed
+  latency, and a single SDK.
+
+use_cases:
+  - Build RAG apps that store documents and embeddings together in a globally distributed database
+  - Run semantic product or knowledge-base search with DiskANN indexes on Cosmos DB containers
+  - Serve multi-region AI assistants that query the same operational and vector data everywhere
+  - Combine SQL-style filters with vector similarity for hybrid retrieval in Azure applications
