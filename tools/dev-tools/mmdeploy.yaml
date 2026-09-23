@@ -1,0 +1,27 @@
+name: MMDeploy
+description: OpenMMLab model deployment framework that converts MMDetection, MMClassification, and related models to ONNX, TensorRT, ncnn, and other inference backends.
+tagline: OpenMMLab framework for deploying CV models
+
+github_url: https://github.com/open-mmlab/mmdeploy
+website_url: https://mmdeploy.readthedocs.io/en/latest/
+docs_url: https://mmdeploy.readthedocs.io/en/latest/
+
+install_command: pip install mmdeploy
+
+category: Dev Tools
+tags: [model-deployment, onnx, tensorrt, computer-vision, openmmlab, inference]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  OpenMMLab training code does not run as-is on TensorRT, ncnn, or other production
+  runtimes. MMDeploy converts those models to backend-specific graphs, so detection,
+  classification, and restoration models can leave PyTorch and serve with the latency
+  and hardware targets production inference needs.
+
+use_cases:
+  - Export MMDetection or MMClassification models to ONNX or TensorRT
+  - Deploy OpenMMLab restoration and generation models on edge or GPU runtimes
+  - Compare inference backends for the same trained computer-vision model
+  - Package CV models for production without rewriting the training graph by hand

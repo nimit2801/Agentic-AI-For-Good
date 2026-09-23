@@ -1,0 +1,27 @@
+name: Mongoose
+description: MongoDB object modeling library for Node.js that defines schemas, validation, and queries for application and AI service data stored in MongoDB.
+tagline: Elegant MongoDB object modeling for Node.js
+
+github_url: https://github.com/Automattic/mongoose
+website_url: https://mongoosejs.com
+docs_url: https://mongoosejs.com/docs/
+
+install_command: npm install mongoose
+
+category: Data
+tags: [mongodb, nodejs, odm, schema, javascript, database]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Node.js services that talk to MongoDB with the raw driver scatter validation, casting,
+  and query logic across the codebase. Mongoose adds schemas, middleware, and a model
+  API so AI apps can persist jobs, users, embeddings metadata, and chat history with
+  typed documents instead of ad-hoc collections.
+
+use_cases:
+  - Define schemas for users, jobs, and conversation history in Node.js AI backends
+  - Validate and cast MongoDB documents before they reach model-serving APIs
+  - Query application data with a model layer instead of raw MongoDB driver calls
+  - Attach middleware that logs or enriches documents as they are saved
