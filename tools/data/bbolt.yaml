@@ -1,0 +1,26 @@
+name: bbolt
+description: Embedded key/value database for Go, forked from Bolt and maintained by the etcd project. bbolt stores data in a single file with ACID transactions and a small API, so Go services that do not need Postgres can persist buckets of keys reliably, including production stores up to terabyte scale.
+tagline: Embedded key-value store for Go
+
+github_url: https://github.com/etcd-io/bbolt
+website_url: https://go.etcd.io/bbolt
+docs_url: https://pkg.go.dev/go.etcd.io/bbolt
+install_command: go get go.etcd.io/bbolt@latest
+
+category: Data
+tags: [key-value, embedded, go, etcd, bolt, database]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Many Go services need durable local storage without running a database server.
+  bbolt is an embedded, single-file key/value store with ACID transactions and
+  a tiny API, actively maintained as the etcd fork of Bolt, so you can persist
+  buckets of keys without Postgres, MySQL, or an external process.
+
+use_cases:
+  - Persist local state, feature caches, or job queues inside a Go agent
+  - Embed a transactional KV store in CLI tools and desktop apps that ship as one binary
+  - Back a service that must survive restarts without standing up Redis or SQLite schemas
+  - Inspect and backup bbolt files with the bbolt CLI during incident response

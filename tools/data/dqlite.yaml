@@ -1,0 +1,26 @@
+name: dqlite
+description: Embeddable, replicated SQL engine that turns SQLite into a highly available cluster. dqlite adds a Raft-based network protocol so application instances share one SQL database with automatic failover and no external database server, which is useful for edge agents and clustered control planes.
+tagline: Distributed SQLite with Raft replication
+
+github_url: https://github.com/canonical/dqlite
+website_url: https://dqlite.io
+docs_url: https://canonical.com/dqlite/docs
+install_command: brew install dqlite
+
+category: Data
+tags: [sqlite, raft, replication, embedded, c, sql, high-availability]
+pricing: free
+is_open_source: true
+license: LGPL-3.0
+
+problem_solved: |
+  SQLite is fast and embeddable but not clustered. Standing up Postgres for a
+  small control plane is heavy. dqlite extends SQLite with Raft replication so
+  multiple application processes share one SQL database, elect a leader, and
+  fail over automatically without an external database server.
+
+use_cases:
+  - Give a multi-node agent or control plane a highly available SQL store without Postgres
+  - Replicate local SQLite state across edge nodes with automatic leader election
+  - Inspect and snapshot a running dqlite cluster with dqlite-utils
+  - Embed a fault-tolerant SQL engine in a C or Go service via libdqlite

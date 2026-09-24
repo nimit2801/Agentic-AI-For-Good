@@ -1,0 +1,26 @@
+name: miniserve
+description: Self-contained CLI that serves files and directories over HTTP from a single binary. miniserve supports auth, TLS, uploads, SPA fallback, and QR codes, so you can share a dataset folder, model checkpoint, or build artifact on the local network without standing up nginx or Python's http.server.
+tagline: Serve files over HTTP right now
+
+github_url: https://github.com/svenstaro/miniserve
+website_url: https://github.com/svenstaro/miniserve
+docs_url: https://github.com/svenstaro/miniserve/blob/master/README.md
+install_command: brew install miniserve
+
+category: Dev Tools
+tags: [http, file-server, cli, rust, sharing, static, tls]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Sharing a directory over HTTP usually means installing nginx, running Python's
+  http.server (slow, weak MIME handling), or uploading to cloud storage. miniserve
+  is a single binary that serves files now, with optional auth, TLS, uploads, and
+  SPA routing, so a dataset or artifact is reachable on the LAN in one command.
+
+use_cases:
+  - Share a local dataset or checkpoint directory with teammates on the same network
+  - Serve a static demo or SPA build with fallback routing during development
+  - Accept file uploads into a folder without configuring a full web server
+  - Expose a directory over TLS with HTTP basic auth for a quick private dropbox
