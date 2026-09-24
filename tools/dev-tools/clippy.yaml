@@ -1,0 +1,22 @@
+name: Clippy
+description: The official Rust linter. Hundreds of lints catch common mistakes, pedantic style issues, and performance pitfalls so Rust crates used in ML systems stay idiomatic before they hit CI.
+tagline: Official linter for catching mistakes in Rust code
+
+github_url: https://github.com/rust-lang/rust-clippy
+website_url: https://doc.rust-lang.org/clippy
+docs_url: https://doc.rust-lang.org/clippy
+
+category: Dev Tools
+tags: [rust, linter, static-analysis, code-quality, ci]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+install_command: rustup component add clippy
+
+problem_solved: |
+  Rust is now the language of tokenizers, vector engines, and inference sidecars, but rustc alone misses a long tail of correctness and style bugs. Clippy adds hundreds of lints for common mistakes, performance pitfalls, and idiomatic Rust so ML infrastructure crates fail in CI instead of in production.
+
+use_cases:
+  - Gate Rust ML crates in CI with cargo clippy before merge
+  - Catch performance and correctness lints in tokenizers and inference sidecars
+  - Enforce idiomatic Rust across a mixed Python and Rust ML monorepo
