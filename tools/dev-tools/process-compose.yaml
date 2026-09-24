@@ -1,0 +1,25 @@
+name: process-compose
+description: Scheduler and orchestrator for non-containerized processes, with a TUI, dependencies, and health checks similar to Docker Compose for local binaries.
+tagline: Compose-style orchestrator for local processes
+
+github_url: https://github.com/F1bonacc1/process-compose
+website_url: https://f1bonacc1.github.io/process-compose/
+docs_url: https://f1bonacc1.github.io/process-compose/
+
+category: Dev Tools
+tags: [process-manager, local-dev, tui, orchestration, golang, compose]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Local AI stacks often mix a vector DB, an API, a worker, and a frontend that
+  are not all in Docker. process-compose starts those binaries with dependencies
+  and a TUI, so developers get Compose-like orchestration without wrapping every
+  process in a container.
+
+use_cases:
+  - Start a local API, worker, and database replica from one YAML file
+  - Restart crashed inference sidecars with health checks
+  - Run a TUI dashboard of all processes in an AI demo stack
+  - Replace ad-hoc shell scripts that launch many local services

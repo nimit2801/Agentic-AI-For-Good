@@ -1,0 +1,27 @@
+name: Release Please
+description: Google tool that opens release PRs from Conventional Commits, bumping versions and changelogs so libraries and AI SDKs can ship without hand-written release notes.
+tagline: Automated release PRs from Conventional Commits
+
+github_url: https://github.com/googleapis/release-please
+website_url: https://github.com/googleapis/release-please
+docs_url: https://github.com/googleapis/release-please#readme
+
+install_command: npm install -g release-please
+
+category: Dev Tools
+tags: [release-automation, conventional-commits, changelog, github, ci, versioning]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Python and JS AI libraries often skip releases because changelogs and tags are
+  manual. Release Please reads Conventional Commits and opens a release PR with
+  the next version and notes, so maintainers can merge and tag without writing
+  that boilerplate by hand.
+
+use_cases:
+  - Open a release PR when Conventional Commits land on the default branch
+  - Generate changelogs for ML SDKs and CLI tools automatically
+  - Bump package versions in lockstep with GitHub tags
+  - Keep open-source AI libraries on a predictable release cadence

@@ -1,0 +1,26 @@
+name: commitlint
+description: Linter for commit messages that enforces Conventional Commits or a custom schema so Git history stays machine-readable for changelogs and release tooling.
+tagline: Lint commit messages against Conventional Commits
+
+github_url: https://github.com/conventional-changelog/commitlint
+website_url: https://commitlint.js.org
+docs_url: https://commitlint.js.org/docs/
+
+install_command: npm install --save-dev @commitlint/cli @commitlint/config-conventional
+
+category: Dev Tools
+tags: [git, conventional-commits, linting, changelog, ci, nodejs]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Release Please and changelog generators only work if commit messages follow a
+  schema. commitlint checks messages in a hook or CI so AI library repos do not
+  merge "wip" or "fix stuff" commits that break automated versioning.
+
+use_cases:
+  - Enforce Conventional Commits on every git commit via a hook
+  - Fail CI when a pull request contains non-conforming commit messages
+  - Keep changelog and release-please pipelines fed with typed commits
+  - Share a commit schema across many packages in an AI monorepo
