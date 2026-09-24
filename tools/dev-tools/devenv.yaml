@@ -1,0 +1,25 @@
+name: devenv
+description: Nix-based developer environments with 50-plus languages, 40-plus services, and a Rust process manager. Declare packages, Postgres, Redis, and tasks in devenv.nix, then share instant, cached shells across Linux, macOS, and WSL.
+tagline: Declarative Nix developer environments with services and tasks
+
+github_url: https://github.com/cachix/devenv
+website_url: https://devenv.sh
+docs_url: https://devenv.sh/getting-started/
+
+category: Dev Tools
+tags: [nix, developer-environment, reproducibility, docker, processes, caching]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  ML repos rot when Python, CUDA, and Postgres versions differ per laptop.
+  devenv declares languages, Nixpkgs packages, and services in one file, then
+  caches evaluation so teammates and CI get the same shell, databases, and
+  process graph without Docker Compose as the only shared environment.
+
+use_cases:
+  - Pin Python, CUDA toolchains, and Node in devenv.nix for an ML monorepo
+  - Run Postgres, Redis, and Caddy as devenv services next to a local agent stack
+  - Share instant cached Nix shells across Linux, macOS, and WSL
+  - Build OCI containers from the same environment without a Docker-first workflow
