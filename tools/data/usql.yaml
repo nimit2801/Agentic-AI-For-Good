@@ -1,0 +1,26 @@
+name: usql
+description: Universal command-line SQL client modelled on psql that talks to PostgreSQL, MySQL, SQLite, SQL Server, Oracle, and many NoSQL stores. usql adds syntax highlighting, completion, and copy-between-databases, so you can inspect mixed data backends from one binary instead of juggling vendor CLIs.
+tagline: Universal CLI for SQL and NoSQL databases
+
+github_url: https://github.com/xo/usql
+website_url: https://github.com/xo/usql
+docs_url: https://github.com/xo/usql#using
+install_command: go install github.com/xo/usql@latest
+
+category: Data
+tags: [sql, cli, postgres, mysql, sqlite, go, database]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Every database ships its own CLI with different flags and no shared muscle
+  memory. usql is a psql-style client that connects to Postgres, MySQL, SQLite,
+  SQL Server, Oracle, and many NoSQL stores, with highlighting, completion, and
+  copy between databases, so mixed stacks stay in one terminal tool.
+
+use_cases:
+  - Query Postgres, MySQL, and SQLite from one REPL while building an ML data plane
+  - Copy rows between heterogeneous databases without writing ETL glue
+  - Run psql-style backslash commands and variables against non-Postgres engines
+  - Inspect NoSQL and SQL backends during incident response from a single binary

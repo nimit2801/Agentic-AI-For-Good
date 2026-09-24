@@ -1,0 +1,26 @@
+name: jc
+description: CLI and Python library that converts the output of common Unix commands, file types, and strings into JSON, YAML, or dictionaries. jc lets you pipe dig, ps, ls, and dozens of other tools into jq, so automation and agent scripts parse structured data instead of scraping text.
+tagline: Convert CLI output to JSON
+
+github_url: https://github.com/kellyjonbrazil/jc
+website_url: https://github.com/kellyjonbrazil/jc
+docs_url: https://kellyjonbrazil.github.io/jc/
+install_command: brew install jc
+
+category: Dev Tools
+tags: [json, cli, parsing, python, jq, automation, devops]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Shell scripts that scrape dig, ps, or ls with awk break the moment output
+  layout changes. jc parses dozens of common command outputs and file types
+  into strict JSON (or Python dicts), so you can pipe into jq and write
+  automation that depends on fields, not column positions.
+
+use_cases:
+  - Pipe dig, ps, ls, or df into jq to extract fields in agent and CI scripts
+  - Parse command output as Python dicts inside automation without custom regex
+  - Convert system-tool output to YAML for config generators and runbooks
+  - Use the Ansible jc filter to structure command results in playbooks

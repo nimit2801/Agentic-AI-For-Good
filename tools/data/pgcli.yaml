@@ -1,0 +1,26 @@
+name: pgcli
+description: Postgres terminal client with auto-completion and syntax highlighting. pgcli is a drop-in REPL for psql that completes table and column names as you type, so exploring schemas, writing joins, and inspecting ML feature stores is faster than in the stock Postgres client.
+tagline: Postgres CLI with auto-completion and highlighting
+
+github_url: https://github.com/dbcli/pgcli
+website_url: https://pgcli.com
+docs_url: https://www.pgcli.com/docs
+install_command: brew install pgcli
+
+category: Data
+tags: [postgres, cli, sql, autocomplete, python, database]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Stock psql has no smart completion, so exploring a large Postgres schema means
+  memorizing table names or constantly querying information_schema. pgcli adds
+  context-aware auto-completion and syntax highlighting in a REPL that still
+  speaks the Postgres URI, so feature-store and analytics queries land faster.
+
+use_cases:
+  - Explore a Postgres feature store with table and column completion as you type
+  - Run ad-hoc SQL against training metadata databases with syntax highlighting
+  - Connect via a Postgres URI with SSL options without leaving the terminal
+  - Replace psql in day-to-day development of RAG and agent backends that use Postgres
