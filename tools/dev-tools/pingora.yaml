@@ -1,0 +1,26 @@
+name: Pingora
+description: Rust framework from Cloudflare for building fast, reliable, programmable network services and HTTP proxies. Pingora has served tens of millions of requests per second in production, with HTTP/1 and HTTP/2 proxying, gRPC, WebSocket, and customizable load balancing, as a memory-safe alternative to C/C++ proxies.
+tagline: Cloudflare's programmable proxy framework
+
+github_url: https://github.com/cloudflare/pingora
+website_url: https://github.com/cloudflare/pingora
+docs_url: https://github.com/cloudflare/pingora/blob/main/docs/user_guide/index.md
+install_command: cargo add pingora
+
+category: Dev Tools
+tags: [proxy, rust, http, load-balancing, cloudflare, networking, grpc]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  High-traffic proxies written in C/C++ are fast but memory-unsafe, and generic
+  reverse proxies are hard to customize. Pingora is a battle-tested Rust
+  framework for programmable HTTP/1, HTTP/2, gRPC, and WebSocket proxies with
+  graceful reload and custom load balancing, used at Cloudflare scale.
+
+use_cases:
+  - Build a custom inference gateway that load-balances LLM backends with failover
+  - Replace a C/C++ reverse proxy with a memory-safe Rust service at high RPS
+  - Add programmable request filters, retries, and observability to an HTTP proxy
+  - Terminate TLS and proxy gRPC or WebSocket traffic with Cloudflare-grade internals
