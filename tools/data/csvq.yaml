@@ -1,0 +1,26 @@
+name: csvq
+description: SQL-like command-line tool for querying, updating, and transforming CSV, TSV, JSON, and JSON Lines files. csvq runs SELECT, INSERT, UPDATE, and DELETE against tabular files, with transactions, cursors, and an interactive shell, so data work that would otherwise need a spreadsheet or a one-off Python script stays in a single portable binary.
+tagline: SQL for CSV, TSV, and JSON files
+
+github_url: https://github.com/mithrandie/csvq
+website_url: https://mithrandie.github.io/csvq
+docs_url: https://mithrandie.github.io/csvq/reference
+install_command: brew install csvq
+
+category: Data
+tags: [csv, sql, tsv, json, cli, data-processing, go, query]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Spreadsheets choke on messy CSV dumps and one-off Python scripts are overkill for
+  filtering, joining, or updating a few tables. csvq lets you run SQL-like SELECT,
+  INSERT, UPDATE, and DELETE against CSV, TSV, JSON, and JSON Lines files, with
+  transactions and an interactive shell, from a single portable binary.
+
+use_cases:
+  - Query evaluation logs, dataset manifests, or experiment CSVs with SELECT, JOIN, and aggregates
+  - Update or delete rows in tabular files without opening a spreadsheet or writing a script
+  - Convert CSV to JSON (or the reverse) in a pipeline while applying SQL filters
+  - Load statements from a .sql file to share repeatable data-cleanup steps with a team

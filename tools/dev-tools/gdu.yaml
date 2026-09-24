@@ -1,0 +1,27 @@
+name: gdu
+description: Fast disk usage analyzer with a console interface written in Go. gdu parallelizes scans for SSDs, shows an interactive tree of the largest directories, and can delete or trash files in place, making it a ncurses-style replacement for du when you need to reclaim space on ML workstations and data disks.
+tagline: Fast interactive disk usage analyzer
+
+github_url: https://github.com/dundee/gdu
+website_url: https://github.com/dundee/gdu
+docs_url: https://github.com/dundee/gdu/blob/master/README.md
+install_command: brew install gdu
+
+category: Dev Tools
+tags: [disk-usage, cli, go, tui, storage, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Finding what filled a GPU workstation or dataset disk with du is slow and
+  non-interactive. gdu parallelizes directory walks on SSDs, presents a
+  navigable tree of the largest paths, and lets you delete or trash files
+  without leaving the terminal, so reclaiming space is minutes instead of
+  a hunting expedition through nested caches.
+
+use_cases:
+  - Find which Hugging Face caches, Docker layers, or checkpoint dirs are filling a workstation
+  - Scan a data disk in non-interactive mode and print the top N largest files for a cleanup script
+  - Delete or trash large directories from an interactive TUI without running rm by hand
+  - Export a JSON disk-usage report for later comparison after a training run

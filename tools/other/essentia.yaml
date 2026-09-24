@@ -1,0 +1,27 @@
+name: Essentia
+description: Open-source C++ library for audio analysis and music information retrieval, with Python bindings. Essentia ships spectral, temporal, tonal, and high-level music descriptors plus DSP building blocks, so researchers and product teams can extract robust audio features without assembling a custom signal-processing stack.
+tagline: Audio analysis and music information retrieval library
+
+github_url: https://github.com/MTG/essentia
+website_url: https://essentia.upf.edu
+docs_url: https://essentia.upf.edu/documentation/installing.html
+install_command: pip install essentia
+
+category: Other
+tags: [audio, music, mir, dsp, python, c++, feature-extraction, tensorflow]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Building a music-information-retrieval pipeline from raw FFT code is slow and
+  brittle. Essentia provides battle-tested C++ algorithms for audio I/O, DSP,
+  and high-level music descriptors, with Python bindings, so you can extract
+  tempo, key, loudness, embeddings, and related features without assembling a
+  custom signal-processing stack.
+
+use_cases:
+  - Extract spectral, temporal, and tonal descriptors from audio datasets for ML training
+  - Prototype music recommendation or tagging models with Python bindings and TensorFlow extractors
+  - Run command-line music extractors on large audio corpora without writing custom DSP code
+  - Embed robust audio analysis in production apps via the C++ library on Linux, macOS, and mobile
