@@ -1,0 +1,21 @@
+name: Apache Tez
+description: A Hadoop DAG execution engine that runs complex data-processing jobs as a directed acyclic graph of tasks. Hive and other SQL-on-Hadoop engines use it for faster, lower-latency analytics than MapReduce.
+tagline: DAG execution engine for Hadoop data processing jobs
+
+github_url: https://github.com/apache/tez
+website_url: https://tez.apache.org
+docs_url: https://tez.apache.org
+
+category: Data
+tags: [hadoop, dag, apache, java, hive, batch, data-processing]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Hive and other Hadoop SQL engines used to compile queries into many MapReduce stages, paying job-startup and HDFS shuffle costs on every hop. Tez runs the same work as one DAG of tasks with in-memory shuffling and container reuse, so feature-engineering SQL on large event tables finishes faster without rewriting queries or leaving the Hadoop stack.
+
+use_cases:
+  - Speed HiveQL feature-engineering jobs by replacing MapReduce with Tez DAGs
+  - Run multi-stage Hadoop ETL as one DAG instead of chained MapReduce jobs
+  - Process large partitioned event tables for training datasets with lower latency

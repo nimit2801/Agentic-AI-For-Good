@@ -1,0 +1,22 @@
+name: frictionless
+description: A Python data management framework for describing, extracting, validating, and transforming tabular data with Table Schema and Data Package standards across CSV, Excel, SQL, and cloud sources.
+tagline: Describe, extract, validate, and transform tabular data in Python
+
+github_url: https://github.com/frictionlessdata/frictionless-py
+website_url: https://framework.frictionlessdata.io
+docs_url: https://framework.frictionlessdata.io
+
+category: Data
+tags: [python, tabular, validation, data-package, etl, csv, schema]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: pip install frictionless
+
+problem_solved: |
+  ML datasets arrive as messy CSVs, spreadsheets, and SQL extracts with missing types, encoding bugs, and undocumented columns. frictionless describes those tables with Table Schema and Data Package metadata, then extracts, validates, and transforms them in one Python API so training pipelines fail fast on schema drift instead of silently training on broken rows.
+
+use_cases:
+  - Validate CSV and Excel training datasets against Table Schema before a training job starts
+  - Extract tabular resources from Data Packages into pandas-ready frames for feature work
+  - Catch encoding, type, and constraint errors in ETL pipelines that feed model training
