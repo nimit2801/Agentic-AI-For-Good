@@ -1,0 +1,26 @@
+name: Apache Traffic Server
+description: A fast, scalable, and extensible HTTP/1.1 and HTTP/2 compliant caching proxy server for high-traffic web infrastructure.
+tagline: High-performance caching proxy server for web traffic
+
+github_url: https://github.com/apache/trafficserver
+website_url: https://trafficserver.apache.org
+docs_url: https://docs.trafficserver.apache.org
+
+category: Dev Tools
+tags: [proxy, caching, http, web, server, apache, infrastructure]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Serving high volumes of web traffic directly from application servers creates bottlenecks,
+  increases latency, and wastes compute on repeated requests for the same content. Apache Traffic
+  Server acts as a caching reverse proxy and forward proxy, dramatically reducing backend load by
+  serving cached responses close to users while supporting plugins for request transformation,
+  authentication, and traffic shaping.
+
+use_cases:
+  - Deploy a caching reverse proxy in front of web applications to reduce origin server load and latency
+  - Build a content delivery layer that caches static assets and API responses at the edge
+  - Implement request routing and load balancing across multiple backend services with custom plugins
+  - Handle TLS termination and HTTP/2 multiplexing for legacy backend services
