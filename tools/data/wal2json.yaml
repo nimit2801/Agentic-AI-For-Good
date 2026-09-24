@@ -1,0 +1,25 @@
+name: wal2json
+description: PostgreSQL logical decoding plugin that emits row changes as JSON. wal2json turns INSERT, UPDATE, and DELETE into JSON from a replication slot so CDC pipelines, feature stores, and RAG indexers can follow Postgres without custom parsers.
+tagline: JSON change streams from PostgreSQL logical decoding
+
+github_url: https://github.com/eulerto/wal2json
+website_url: https://github.com/eulerto/wal2json
+docs_url: https://github.com/eulerto/wal2json
+
+category: Data
+tags: [postgresql, cdc, json, replication, decoding, streaming]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Consuming Postgres writes as structured events usually means parsing
+  SQL or writing a custom output plugin. wal2json is a logical decoding
+  plugin that emits INSERT, UPDATE, and DELETE as JSON from a replication
+  slot so CDC and search indexers can follow the WAL.
+
+use_cases:
+  - Stream Postgres row changes as JSON into a Kafka or feature-store pipeline
+  - Keep a RAG index in sync with a source-of-truth Postgres table
+  - Capture old and new tuples on UPDATE for audit or replay jobs
+  - Consume a logical replication slot from Python or Go without a binary decoder

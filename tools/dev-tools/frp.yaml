@@ -1,0 +1,28 @@
+name: frp
+description: Fast reverse proxy that exposes a local server behind NAT or a firewall to the internet. frp tunnels TCP, UDP, HTTP, and HTTPS so you can demo an agent API, receive webhooks, or share a GPU box without opening inbound ports.
+tagline: Reverse proxy that exposes local services behind NAT
+
+github_url: https://github.com/fatedier/frp
+website_url: https://github.com/fatedier/frp
+docs_url: https://github.com/fatedier/frp/blob/dev/README.md
+install_command: |
+  brew install frpc
+  brew install frps
+
+category: Dev Tools
+tags: [tunnel, reverse-proxy, networking, nat, golang, cli]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Local agent servers, webhook receivers, and GPU boxes sit behind NAT
+  and cannot accept public traffic without port forwarding. frp runs a
+  client on the inner host and a server on a public VPS so TCP, UDP, and
+  HTTP services become reachable without opening inbound firewall holes.
+
+use_cases:
+  - Expose a local agent or MCP server to a teammate behind NAT
+  - Receive GitHub or Stripe webhooks on a laptop during development
+  - Share an SSH or HTTP endpoint on a GPU box without public inbound ports
+  - Load-balance several inner HTTP services through one public frps host
