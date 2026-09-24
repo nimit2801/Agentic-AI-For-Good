@@ -1,0 +1,25 @@
+name: Odyssey
+description: Scalable PostgreSQL connection pooler from Yandex, written in C with multi-threaded workers. Odyssey handles large numbers of clients with advanced pooling and routing, so bursty agent and notebook traffic does not exhaust Postgres max_connections.
+tagline: Scalable PostgreSQL connection pooler
+
+github_url: https://github.com/yandex/odyssey
+website_url: https://pg-odyssey.tech/
+docs_url: https://github.com/yandex/odyssey/blob/master/README.md
+
+category: Data
+tags: [postgresql, connection-pooling, c, performance, yandex, database]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Lightweight poolers struggle when thousands of short-lived agent and notebook
+  connections hit Postgres at once. Odyssey is a multi-threaded pooler with
+  routing and advanced pooling modes so high-concurrency ML services share a
+  smaller set of server connections without dropping queries.
+
+use_cases:
+  - Pool thousands of agent and notebook connections onto a Postgres feature store
+  - Route read traffic to replicas while writes go to the primary
+  - Absorb connection storms from bursty RAG workers without raising max_connections
+  - Run a multi-threaded pooler when PgBouncer's single-thread model is the bottleneck

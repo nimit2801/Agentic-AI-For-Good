@@ -1,0 +1,25 @@
+name: Stolon
+description: Cloud-native PostgreSQL high availability manager with a Kubernetes-friendly keeper, sentinel, and proxy. Stolon elects a primary, streams WAL to standbys, and routes clients through a proxy so Postgres that holds ML metadata survives node loss.
+tagline: Cloud-native PostgreSQL high availability
+
+github_url: https://github.com/sorintlab/stolon
+website_url: https://github.com/sorintlab/stolon
+docs_url: https://github.com/sorintlab/stolon/blob/master/doc/postgres_parameters.md
+
+category: Data
+tags: [postgresql, high-availability, kubernetes, failover, go, cluster]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Patroni-style failover still leaves clients pointing at a dead primary unless
+  you add a proxy. Stolon pairs keepers and sentinels with a proxy that only
+  routes to the elected primary, so Kubernetes Postgres for feature metadata
+  fails over without teaching every ML service a new connection string.
+
+use_cases:
+  - Run Postgres HA on Kubernetes for experiment tracking and feature metadata
+  - Fail over a primary without updating application connection strings
+  - Keep synchronous standbys streaming WAL while sentinels watch health
+  - Expose a single proxy endpoint to RAG services in front of a Stolon cluster
