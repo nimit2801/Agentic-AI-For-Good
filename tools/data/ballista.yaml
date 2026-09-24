@@ -1,0 +1,25 @@
+name: Ballista
+description: Apache DataFusion Ballista is a distributed query engine that runs DataFusion SQL and DataFrame workloads across a cluster of schedulers and executors. Existing single-node DataFusion apps scale to multiple machines with small code changes, including Docker and Kubernetes deploys.
+tagline: Distributed query engine for Apache DataFusion
+
+github_url: https://github.com/apache/datafusion-ballista
+website_url: https://datafusion.apache.org/ballista
+docs_url: https://datafusion.apache.org/ballista/
+
+category: Data
+tags: [datafusion, distributed, rust, sql, arrow, query-engine, kubernetes]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Apache DataFusion runs analytical SQL in-process, but a single node runs out
+  of memory and CPU on lake-scale Parquet. Ballista adds a scheduler and
+  executors so the same SQL and DataFrame APIs run as distributed stages with
+  shuffles, including Docker and Kubernetes, without rewriting jobs in Spark.
+
+use_cases:
+  - Scale an existing DataFusion SQL job from one machine to a multi-node cluster
+  - Run distributed SQL over Parquet training lakes on Kubernetes with Arrow shuffles
+  - Deploy Ballista scheduler and executors with Docker Compose for batch feature queries
+  - Embed Ballista standalone mode in a Rust service that later grows to a cluster

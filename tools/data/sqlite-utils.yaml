@@ -1,0 +1,26 @@
+name: sqlite-utils
+description: Python CLI and library for creating and transforming SQLite databases. sqlite-utils inserts JSON, CSV, and TSV, runs SQL, builds full-text search, and reshapes tables, so eval dumps and feature extracts become queryable SQLite files without writing boilerplate.
+tagline: CLI and Python library for SQLite databases
+
+github_url: https://github.com/simonw/sqlite-utils
+website_url: https://sqlite-utils.datasette.io
+docs_url: https://sqlite-utils.datasette.io/en/stable/
+install_command: pip install sqlite-utils
+
+category: Data
+tags: [sqlite, python, cli, csv, json, full-text-search, datasette]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Turning JSON logs, CSV exports, or crawl dumps into a queryable SQLite file
+  usually means writing insert loops and schema code. sqlite-utils creates tables
+  from those files, upserts rows, adds FTS, and exposes the same helpers as a CLI
+  and Python API, so ML datasets become Datasette-ready without a custom loader.
+
+use_cases:
+  - Convert JSONL eval results or crawl dumps into a SQLite database from the CLI
+  - Insert CSV feature tables and add SQLite full-text search for later retrieval
+  - Transform columns and extract lookup tables before publishing with Datasette
+  - Query CSV or JSON in memory with SQL without first writing a database file

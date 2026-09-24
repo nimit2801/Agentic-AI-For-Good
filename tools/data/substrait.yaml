@@ -1,0 +1,25 @@
+name: Substrait
+description: Cross-language specification for data compute plans, with a human-readable form and a compact protobuf binary. Substrait lets query engines, dataframe libraries, and ML pipelines exchange relational plans without tying producers and consumers to one engine's internals.
+tagline: Cross-language standard for data compute plans
+
+github_url: https://github.com/substrait-io/substrait
+website_url: https://substrait.io
+docs_url: https://substrait.io
+
+category: Data
+tags: [query-plans, protobuf, sql, datafusion, interoperability, specification]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Each query engine serializes plans in its own format, so a producer cannot
+  hand a logical plan to DuckDB, DataFusion, or Spark without a custom adapter.
+  Substrait defines a shared specification and protobuf encoding for relational
+  algebra so engines and ML pipelines can exchange compute plans independently.
+
+use_cases:
+  - Emit a Substrait plan from a dataframe library and execute it in DataFusion
+  - Share a standardized relational plan between a feature pipeline and a query engine
+  - Implement a producer or consumer that speaks Substrait instead of engine-specific IR
+  - Enable Ballista or similar engines to accept plans from non-DataFusion clients
