@@ -1,0 +1,26 @@
+name: trippy
+description: Network diagnostic tool that combines traceroute and ping in a TUI. trippy traces hops, measures loss and latency per hop, and runs on Linux, BSD, macOS, and Windows, so debugging slow inference endpoints, VPN paths, and data-center routes does not require stitching mtr, ping, and traceroute together.
+tagline: Traceroute and ping in one TUI
+
+github_url: https://github.com/fujiapple852/trippy
+website_url: https://trippy.rs
+docs_url: https://trippy.rs/start/getting-started
+install_command: brew install trippy
+
+category: Dev Tools
+tags: [networking, traceroute, ping, tui, rust, diagnostics, cli]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Diagnosing a slow API or GPU-cluster path means running traceroute, then ping,
+  then mtr, and correlating the output by hand. trippy combines hop tracing with
+  per-hop loss and latency in one TUI across Linux, macOS, BSD, and Windows, so
+  network issues on the way to model endpoints show up in a single view.
+
+use_cases:
+  - Trace the path to an inference API and see per-hop loss without leaving the TUI
+  - Debug VPN or data-center routing issues that look like model-latency regressions
+  - Compare IPv4 and IPv6 paths to a remote vector database or object store
+  - Replace ad-hoc ping plus traceroute sessions during on-call network incidents

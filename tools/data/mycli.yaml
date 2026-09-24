@@ -1,0 +1,26 @@
+name: mycli
+description: Rich MySQL and MariaDB terminal client with auto-completion, syntax highlighting, and dataframe output. mycli also talks to TiDB, Percona, and Apache Doris, so teams that store experiment logs or product data in MySQL-compatible engines get a modern REPL instead of the stock mysql client.
+tagline: MySQL CLI with auto-completion and highlighting
+
+github_url: https://github.com/dbcli/mycli
+website_url: https://www.mycli.net
+docs_url: https://mycli.net/docs
+install_command: brew install mycli
+
+category: Data
+tags: [mysql, mariadb, cli, sql, autocomplete, python, database]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  The stock mysql client is a 1990s REPL with no completion and weak highlighting.
+  mycli adds context-aware auto-completion, syntax highlighting, and dataframe
+  output for MySQL, MariaDB, TiDB, Percona, and Apache Doris, so inspecting
+  application and experiment databases is as fast as typing.
+
+use_cases:
+  - Query MySQL or MariaDB experiment logs with table and column auto-completion
+  - Connect to TiDB or Apache Doris warehouses from a highlighted terminal REPL
+  - Export query results as dataframes for follow-up analysis in Python
+  - Replace the stock mysql client in local development of agent backends
