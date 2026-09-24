@@ -1,0 +1,26 @@
+name: pgAdmin
+description: Open-source administration and development platform for PostgreSQL. pgAdmin lets you browse schemas, run SQL, and inspect query plans from a desktop or web UI so feature stores and agent databases stay visible without living in psql.
+tagline: The standard GUI for PostgreSQL administration
+
+github_url: https://github.com/pgadmin-org/pgadmin4
+website_url: https://www.pgadmin.org
+docs_url: https://www.pgadmin.org/docs/
+install_command: brew install --cask pgadmin4
+
+category: Data
+tags: [postgresql, gui, sql, administration, desktop, database]
+pricing: free
+is_open_source: true
+license: PostgreSQL
+
+problem_solved: |
+  Working with Postgres from psql alone is slow when you need to browse
+  schemas, compare objects, and read EXPLAIN plans. pgAdmin is the
+  community GUI for creating objects, running queries, and managing
+  servers from a desktop app or a browser.
+
+use_cases:
+  - Browse a Postgres feature-store schema and run ad-hoc SQL from a GUI
+  - Inspect graphical EXPLAIN plans while tuning RAG retrieval queries
+  - Manage local and remote Postgres servers from one desktop or web UI
+  - Create tables, roles, and extensions without memorizing DDL

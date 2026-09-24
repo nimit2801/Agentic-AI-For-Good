@@ -1,0 +1,26 @@
+name: chisel
+description: Fast TCP/UDP tunnel over HTTP, secured with SSH. chisel ships as a single Go binary with client and server so you can punch through firewalls, reverse-forward ports, and reach a private agent or database from the outside.
+tagline: TCP/UDP tunnel over HTTP with SSH encryption
+
+github_url: https://github.com/jpillora/chisel
+website_url: https://github.com/jpillora/chisel
+docs_url: https://github.com/jpillora/chisel
+install_command: brew install chisel-tunnel
+
+category: Dev Tools
+tags: [tunnel, http, ssh, networking, golang, firewall]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Firewalls often allow outbound HTTP but block arbitrary TCP. chisel
+  wraps TCP and UDP tunnels in HTTP, encrypts them with SSH, and auto
+  reconnects so a laptop or CI runner can reach a private agent, database,
+  or webhook port without a VPN.
+
+use_cases:
+  - Tunnel a local agent port to a public host over HTTP through a firewall
+  - Reverse-forward a private Postgres or Redis port for debugging
+  - Use chisel as an SSH ProxyCommand to reach hosts that only allow HTTP
+  - Expose a SOCKS5 endpoint through the tunnel for ad-hoc access
