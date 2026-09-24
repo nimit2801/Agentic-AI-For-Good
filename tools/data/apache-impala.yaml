@@ -1,0 +1,21 @@
+name: Apache Impala
+description: An open source MPP analytic database for Hadoop and open table formats. It runs low-latency, high-concurrency SQL on Iceberg, Parquet, and cloud storage using the same metadata and security as Hive.
+tagline: Native analytic database for open data and table formats
+
+github_url: https://github.com/apache/impala
+website_url: https://impala.apache.org
+docs_url: https://impala.apache.org/docs.html
+
+category: Data
+tags: [sql, analytics, hadoop, iceberg, mpp, apache, data-warehouse]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  BI and feature engineering on lakehouse data need interactive SQL, not batch MapReduce. Impala is a native analytic engine for open data formats that runs concurrent BI-style queries on Iceberg and Hadoop storage with linear scale, Hive metadata, Kerberos, and Ranger. Data teams query training tables and feature warehouses without copying data into a separate warehouse engine.
+
+use_cases:
+  - Run interactive SQL on Iceberg and Parquet tables for feature engineering
+  - Serve concurrent BI queries on Hadoop and cloud object storage without a second warehouse
+  - Query Hive-metastore tables with Kerberos and Ranger controls for shared ML data
