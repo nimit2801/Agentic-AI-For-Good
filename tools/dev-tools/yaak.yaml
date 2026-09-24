@@ -1,0 +1,25 @@
+name: Yaak
+description: Offline-first desktop API client for REST, GraphQL, gRPC, WebSockets, and SSE. Built with Tauri, Rust, and React, with imports from Postman, Insomnia, OpenAPI, and curl, plus OS keychain secrets and no telemetry.
+tagline: Privacy-first desktop client for REST, GraphQL, and gRPC
+
+github_url: https://github.com/yaakapp/app
+website_url: https://yaak.app
+docs_url: https://yaak.app/docs
+
+category: Dev Tools
+tags: [api-client, rest, graphql, grpc, tauri, desktop, http]
+pricing: freemium
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Cloud API clients add telemetry and lock collections behind an account.
+  Yaak is a local Tauri app that sends REST, GraphQL, gRPC, WebSocket, and
+  SSE requests, stores secrets in the OS keychain, and imports Postman or
+  OpenAPI collections without sending traffic to a vendor cloud.
+
+use_cases:
+  - Debug REST and GraphQL LLM APIs from a local desktop client
+  - Call gRPC model-serving endpoints and inspect streaming responses
+  - Import a Postman or OpenAPI collection and keep secrets in the OS keychain
+  - Filter JSON responses with JSONPath while testing agent tool backends

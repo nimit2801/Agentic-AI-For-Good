@@ -1,0 +1,27 @@
+name: Kamal
+description: Zero-downtime deploy tool from 37signals that ships Dockerized web apps to any VM with kamal-proxy. From bare metal to cloud, it builds, pushes, and switches containers without tying you to a single PaaS.
+tagline: Deploy Docker web apps to any VM with zero downtime
+
+github_url: https://github.com/basecamp/kamal
+website_url: https://kamal-deploy.org
+docs_url: https://kamal-deploy.org/docs/installation
+
+install_command: gem install kamal
+
+category: Dev Tools
+tags: [deploy, docker, ruby, devops, zero-downtime, vps]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Hosting an agent API or demo app often means a PaaS bill or a fragile
+  docker-compose restart. Kamal builds the image, pushes it to your servers,
+  and uses kamal-proxy to switch traffic with zero downtime, so you can run
+  web apps on bare metal or cloud VMs you already pay for.
+
+use_cases:
+  - Deploy a Dockerized LLM demo or agent API to a VPS with zero downtime
+  - Replace a PaaS for a small ML web app running on cloud VMs
+  - Roll out accessory containers such as Redis next to the web process
+  - Switch production traffic through kamal-proxy after a health-checked boot
