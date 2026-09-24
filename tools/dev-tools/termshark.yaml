@@ -1,0 +1,22 @@
+name: Termshark
+description: A terminal UI for tshark inspired by Wireshark. Browse packet captures in a TUI with filters and stream reassembly when you cannot open a GUI on a remote GPU or inference host.
+tagline: Wireshark-style packet browser in the terminal
+
+github_url: https://github.com/gcla/termshark
+website_url: https://termshark.io
+docs_url: https://github.com/gcla/termshark
+
+category: Dev Tools
+tags: [networking, tui, pcap, wireshark, debugging, go]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: go install github.com/gcla/termshark/v2/cmd/termshark@latest
+
+problem_solved: |
+  Debugging gRPC, WebSocket, and HTTP inference traffic on a headless GPU box is painful because Wireshark needs a display. Termshark wraps tshark in a terminal UI so you can filter pcaps, inspect streams, and chase protocol bugs over SSH without copying captures to a laptop.
+
+use_cases:
+  - Inspect pcaps on a remote GPU host over SSH without a GUI
+  - Filter tshark output in a TUI while debugging inference HTTP and gRPC
+  - Reassemble streams from packet captures during agent tool-call debugging

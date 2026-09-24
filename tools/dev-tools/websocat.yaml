@@ -1,0 +1,22 @@
+name: websocat
+description: A command-line WebSocket client in the spirit of netcat and socat. Connect, proxy, and pipe between ws://, stdio, TCP, and files so you can debug streaming APIs from the terminal.
+tagline: netcat for WebSockets
+
+github_url: https://github.com/vi/websocat
+website_url: https://github.com/vi/websocat
+docs_url: https://github.com/vi/websocat
+
+category: Dev Tools
+tags: [websocket, cli, rust, netcat, debugging, networking]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: brew install websocat
+
+problem_solved: |
+  Streaming LLM APIs, agent sockets, and live inference endpoints speak WebSockets, but curl and netcat do not. websocat is a socat-style CLI that connects, proxies, and pipes between ws://, stdio, and TCP so you can inspect and script those streams from the terminal without writing a one-off client.
+
+use_cases:
+  - Debug streaming LLM and agent WebSocket APIs from the terminal
+  - Pipe stdio into a ws:// endpoint for scripted eval traffic
+  - Proxy between TCP and WebSockets when testing local inference UIs
