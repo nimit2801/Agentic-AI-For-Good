@@ -1,0 +1,26 @@
+name: Duplicacy
+description: Lock-free, chunk-based cloud backup tool that lets multiple machines back up to the same storage with cross-computer deduplication. Duplicacy stores each chunk independently by hash, supports encryption and erasure coding, and talks to S3, B2, GCS, Azure, SFTP, and many other backends without a centralized chunk database.
+tagline: Lock-free deduplicating cloud backup
+
+github_url: https://github.com/gilbertchen/duplicacy
+website_url: https://duplicacy.com
+docs_url: https://github.com/gilbertchen/duplicacy/wiki
+
+category: Dev Tools
+tags: [backup, deduplication, cloud, s3, cli, encryption, go]
+pricing: freemium
+is_open_source: true
+license: Custom
+
+problem_solved: |
+  Most backup tools either chain incremental snapshots that break if one file is
+  deleted, or lock a shared store so two machines cannot backup concurrently.
+  Duplicacy uses lock-free chunk storage keyed by hash so multiple computers can
+  backup to the same cloud bucket, share identical chunks, and still restore
+  independent full snapshots.
+
+use_cases:
+  - Back up ML workstations and dataset disks to S3, B2, or GCS with cross-machine deduplication
+  - Keep encrypted, erasure-coded snapshots of model checkpoints without a local chunk database
+  - Restore a full snapshot from cloud storage without replaying a chain of incremental backups
+  - Share a single backup repository across laptops and servers without distributed locking

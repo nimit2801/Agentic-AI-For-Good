@@ -1,0 +1,27 @@
+name: gojq
+description: Pure Go implementation of jq that also embeds as a library. gojq keeps arbitrary-precision integers, reads YAML as well as JSON, and ships as a single portable binary, so you can filter model configs, API payloads, and pipeline metadata without depending on jq's C library.
+tagline: Pure Go jq for JSON and YAML
+
+github_url: https://github.com/itchyny/gojq
+website_url: https://github.com/itchyny/gojq
+docs_url: https://github.com/itchyny/gojq/blob/main/README.md
+install_command: brew install gojq
+
+category: Dev Tools
+tags: [json, yaml, jq, go, cli, parsing, data-processing]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  jq is the standard JSON filter, but it depends on C libraries and loses
+  precision on large integers. gojq is a pure Go reimplementation that keeps
+  arbitrary-precision integers, accepts YAML input, and embeds as a library,
+  so Go services and portable CLIs can query structured data without linking
+  against jq.
+
+use_cases:
+  - Filter JSON API responses and model-config files in shell pipelines with jq syntax
+  - Query YAML as well as JSON in CI scripts without a separate YAML converter
+  - Embed jq-style queries inside a Go service to reshape structured payloads
+  - Preserve large integer IDs and token counts that standard jq would round away
