@@ -1,0 +1,22 @@
+name: Electron
+description: A framework for building cross-platform desktop apps with JavaScript, HTML, and CSS. Chromium plus Node.js so one codebase ships on macOS, Windows, and Linux, including many local AI and developer tools.
+tagline: Cross-platform desktop apps with web tech
+
+github_url: https://github.com/electron/electron
+website_url: https://www.electronjs.org
+docs_url: https://www.electronjs.org/docs/latest
+
+category: Dev Tools
+tags: [desktop, javascript, chromium, nodejs, cross-platform, ui]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: npm install electron
+
+problem_solved: |
+  Local LLM UIs, labeling tools, and agent consoles need a desktop shell with filesystem and GPU-adjacent access, but shipping three native apps is too expensive. Electron wraps Chromium and Node so one JavaScript codebase becomes a macOS, Windows, and Linux app, which is why so many AI desktop clients and internal ML tools ship on it.
+
+use_cases:
+  - Package a local LLM chat UI as a desktop app for macOS, Windows, and Linux
+  - Ship an internal labeling or evaluation console with filesystem access
+  - Build a cross-platform agent control panel without three native codebases

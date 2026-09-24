@@ -1,0 +1,24 @@
+name: OpenSRE
+description: An open source toolkit for building AI SRE agents that investigate incidents, query telemetry, and propose remediations. Install a CLI, then orchestrate agents around your existing observability stack.
+tagline: Open source toolkit for building AI SRE agents
+
+github_url: https://github.com/Tracer-Cloud/opensre
+website_url: https://github.com/Tracer-Cloud/opensre
+docs_url: https://github.com/Tracer-Cloud/opensre/blob/main/docs/install.mdx
+
+category: Agents
+tags: [sre, agents, observability, incident-response, python, devops]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+install_command: |
+  brew tap tracer-cloud/tap
+  brew install tracer-cloud/tap/opensre
+
+problem_solved: |
+  On-call for ML platforms still means humans grepping dashboards while GPUs idle and queues back up. OpenSRE is a toolkit for AI SRE agents that can investigate incidents, pull telemetry, and propose remediations against the stack you already run, so teams can automate first-pass incident response without buying a closed AIOps box.
+
+use_cases:
+  - Build an on-call agent that investigates inference outages from existing telemetry
+  - Query metrics and logs through an SRE agent instead of clicking six dashboards
+  - Prototype remediations for GPU cluster and pipeline incidents with an open toolkit

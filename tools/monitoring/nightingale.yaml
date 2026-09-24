@@ -1,0 +1,21 @@
+name: Nightingale
+description: An open source monitoring and alerting platform that sits next to Grafana for visualization. It unifies metric, log, and event alerting with rule pipelines, notification channels, and a built-in time series store.
+tagline: Cloud-native monitoring and alerting beside Grafana
+
+github_url: https://github.com/ccfos/nightingale
+website_url: https://n9e.github.io
+docs_url: https://n9e.github.io
+
+category: Monitoring
+tags: [monitoring, alerting, observability, prometheus, metrics, logs, golang]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Grafana visualizes metrics well but leaves rule authoring, mute windows, notification routing, and on-call event pipelines to a pile of extra tools. Nightingale is the alerting counterpart: Prometheus-compatible rules, log explorers for Elasticsearch/Loki/VictoriaLogs, and notification channels in one place so ML ops teams can page on GPU, inference, and pipeline failures without stitching Alertmanager plus three more products.
+
+use_cases:
+  - Alert on GPU, inference latency, and pipeline failures with Prometheus-compatible rules
+  - Route mute, subscribe, and notification rules for on-call ML platform incidents
+  - Explore logs from Elasticsearch, Loki, or VictoriaLogs next to metric alerts
