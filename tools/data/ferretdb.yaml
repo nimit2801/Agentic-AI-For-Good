@@ -1,0 +1,25 @@
+name: FerretDB
+description: Open-source MongoDB alternative that stores data in PostgreSQL. FerretDB speaks the MongoDB wire protocol so existing drivers and tools work, while the backend is Postgres, which fits teams that want document APIs on SQL infrastructure.
+tagline: MongoDB-compatible database on PostgreSQL
+
+github_url: https://github.com/FerretDB/FerretDB
+website_url: https://www.ferretdb.com
+docs_url: https://docs.ferretdb.io/
+
+category: Data
+tags: [mongodb, postgresql, document-database, go, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  MongoDB-compatible apps often need a document API but teams already run
+  Postgres for features and metadata. FerretDB translates the MongoDB wire
+  protocol onto PostgreSQL so those apps keep their drivers while storage,
+  backups, and HA stay on the Postgres stack already in the ML platform.
+
+use_cases:
+  - Run a MongoDB-compatible document API on an existing Postgres cluster
+  - Keep agent memory or eval JSON documents in Postgres without a second database
+  - Replace a MongoDB sidecar with FerretDB when the rest of the stack is SQL
+  - Use MongoDB drivers in Python while backups and HA stay on Postgres tooling

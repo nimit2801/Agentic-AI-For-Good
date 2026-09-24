@@ -1,0 +1,25 @@
+name: PgHero
+description: Performance dashboard for PostgreSQL that surfaces slow queries, unused indexes, connection storms, and disk bloat. PgHero is a Ruby app you can mount or run as a Docker service so ML teams can see why a feature-store database is slow without reading pg_stat_statements by hand.
+tagline: Performance dashboard for PostgreSQL
+
+github_url: https://github.com/ankane/pghero
+website_url: https://github.com/ankane/pghero
+docs_url: https://github.com/ankane/pghero
+
+category: Monitoring
+tags: [postgresql, performance, dashboard, slow-queries, ruby, database]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Postgres slowdowns show up as training jobs waiting on feature queries, but
+  reading pg_stat_statements and index catalogs by hand is slow. PgHero is a
+  dashboard for slow queries, unused indexes, connections, and bloat so you
+  can fix the database instead of guessing from application logs.
+
+use_cases:
+  - Find slow feature-store queries that stall training data loaders
+  - Spot unused indexes and table bloat on a Postgres metadata database
+  - Watch connection counts when many agents and notebooks share one instance
+  - Explain a sudden latency spike without SSHing in to run EXPLAIN by hand

@@ -1,0 +1,25 @@
+name: Citus
+description: PostgreSQL extension that distributes tables across a cluster of nodes so a single Postgres instance can scale out. Citus shards and colocates data, which lets feature stores and analytics stay in SQL while growing past one machine without moving to Spark.
+tagline: Distributed PostgreSQL as an extension
+
+github_url: https://github.com/citusdata/citus
+website_url: https://www.citusdata.com
+docs_url: https://docs.citusdata.com/
+
+category: Data
+tags: [postgresql, distributed, sharding, sql, extension, analytics]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  A single Postgres node runs out of CPU and disk when feature tables and
+  event logs grow. Citus is an extension that shards tables across worker
+  nodes while keeping the Postgres SQL surface, so teams scale out without
+  rewriting pipelines for a separate warehouse engine.
+
+use_cases:
+  - Shard a Postgres feature store across workers while keeping SQL clients
+  - Colocate related tables so multi-tenant analytics queries stay local to a shard
+  - Run real-time rollups on event data that no longer fits on one Postgres host
+  - Scale out embeddings metadata without migrating off PostgreSQL
