@@ -1,0 +1,27 @@
+name: AG-UI
+description: Open event protocol that standardizes how AI agents stream chat, state, tools, and generative UI into user-facing apps. Agent backends emit about 16 standard events that any frontend can render over SSE, WebSockets, or webhooks.
+tagline: Agent-user interaction protocol for in-app agents
+
+github_url: https://github.com/ag-ui-protocol/ag-ui
+website_url: https://ag-ui.com
+docs_url: https://docs.ag-ui.com
+
+install_command: npx create-ag-ui-app my-agent-app
+
+category: Agents
+tags: [agents, protocol, generative-ui, typescript, frontend, streaming]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  MCP gives agents tools and A2A lets agents talk to each other, but there is no
+  shared way to stream agent runs into a product UI. AG-UI defines a small set of
+  events for chat, state sync, generative UI, and human-in-the-loop so any agent
+  backend can drive a frontend without a custom websocket protocol.
+
+use_cases:
+  - Stream agent chat, tool calls, and shared state into a React or Angular app
+  - Render generative UI from agent events instead of building a custom event bus
+  - Add human-in-the-loop confirmation to in-app agent workflows
+  - Scaffold a new AG-UI app with the create-ag-ui-app starter

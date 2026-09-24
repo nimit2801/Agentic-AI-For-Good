@@ -1,0 +1,26 @@
+name: BCC
+description: BPF Compiler Collection for writing and running eBPF programs on Linux. It ships Python and C front-ends plus ready-made tools for tracing I/O, networking, syscalls, and CPU so you can profile production systems without kernel modules.
+tagline: eBPF toolkit for Linux tracing and performance analysis
+
+github_url: https://github.com/iovisor/bcc
+website_url: https://github.com/iovisor/bcc
+docs_url: https://github.com/iovisor/bcc/blob/master/docs/reference_guide.md
+
+category: Monitoring
+tags: [ebpf, linux, tracing, performance, profiling, python, kernel]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Debugging latency on Linux GPU boxes and inference hosts often means guessing
+  from userspace metrics. BCC lets you attach eBPF programs to kprobes and
+  tracepoints, then run packaged tools or custom Python scripts to histogram I/O,
+  trace TCP connects, and sample stacks with almost no overhead and no kernel
+  module to load.
+
+use_cases:
+  - Trace block I/O size and latency on training or vector-db hosts
+  - Sample kernel and user stacks to find CPU hot spots in serving processes
+  - Trace TCP connects, DNS, and syscalls while debugging an agent runtime
+  - Write custom eBPF tools in Python and C without a kernel module

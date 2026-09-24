@@ -1,0 +1,26 @@
+name: Pixie
+description: CNCF open-source Kubernetes observability that uses eBPF to auto-collect full-body requests, metrics, and CPU profiles in-cluster. Query the data with PxL from the UI, CLI, or APIs without adding application instrumentation.
+tagline: eBPF observability for Kubernetes applications
+
+github_url: https://github.com/pixie-io/pixie
+website_url: https://px.dev
+docs_url: https://docs.px.dev
+
+category: Monitoring
+tags: [ebpf, kubernetes, observability, tracing, cncf, profiling]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Instrumenting every ML service for traces and profiles is slow and often
+  incomplete. Pixie uses eBPF to capture request bodies, resource metrics, and
+  CPU flame graphs inside the cluster, then stores and queries that data locally
+  so platform teams can debug inference latency and pod health without shipping
+  telemetry off-cluster first.
+
+use_cases:
+  - Map service traffic and latency for Kubernetes inference stacks without code changes
+  - Inspect full-body HTTP, gRPC, and DNS requests to debug agent or API failures
+  - Pull CPU flame graphs per pod when a training or serving job spikes
+  - Query cluster telemetry with PxL from the Pixie UI, CLI, or client APIs
