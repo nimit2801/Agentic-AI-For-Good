@@ -1,0 +1,25 @@
+name: OrioleDB
+description: Cloud-native storage engine for PostgreSQL that replaces heap with a modern pluggable table access method. OrioleDB cuts WAL and IOPS with undo, page compression, and less bloat so large feature tables scale without a warehouse rewrite.
+tagline: Cloud-native storage engine for PostgreSQL
+
+github_url: https://github.com/orioledb/orioledb
+website_url: https://orioledb.com
+docs_url: https://www.orioledb.com/docs
+
+category: Data
+tags: [postgresql, storage-engine, extension, compression, performance, cloud]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  PostgreSQL heap and WAL amplify writes as tables grow, which burns
+  IOPS and disk on large feature and event stores. OrioleDB is a
+  pluggable storage engine with undo, compression, and fewer dirty
+  pages so the same SQL scales with less I/O.
+
+use_cases:
+  - Store a large feature table with page compression instead of heap
+  - Cut disk IOPS on write-heavy agent event logs in Postgres
+  - Run Postgres SQL on a cloud-native engine without leaving the ecosystem
+  - Reduce bloat versus heap VACUUM on high-churn training metadata

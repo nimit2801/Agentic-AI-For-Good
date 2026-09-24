@@ -1,0 +1,25 @@
+name: Maxwell
+description: Change data capture daemon that reads MySQL binlogs and writes row changes as JSON to Kafka, Kinesis, and other streams. Maxwell turns MySQL writes into events for ETL, cache invalidation, and search indexing without application hooks.
+tagline: MySQL binlog CDC to JSON streams
+
+github_url: https://github.com/zendesk/maxwell
+website_url: https://maxwells-daemon.io/
+docs_url: https://maxwells-daemon.io/
+
+category: Data
+tags: [mysql, cdc, kafka, binlog, json, streaming]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Getting row-level MySQL changes into Kafka or a search index usually
+  means triggers or polling. Maxwell tails the binlog and emits JSON
+  events so caches, feature stores, and RAG indexes stay in sync without
+  touching application code.
+
+use_cases:
+  - Stream MySQL inserts and updates into Kafka as JSON for ETL
+  - Invalidate a cache or search index when source rows change
+  - Keep an audit log of every write to a production MySQL database
+  - Feed a downstream feature store from an operational MySQL cluster
