@@ -1,0 +1,25 @@
+name: Cloud Hypervisor
+description: Rust virtual machine monitor for cloud workloads, with a small footprint, hotplug, and a focus on security for running modern Linux and Windows guests.
+tagline: Rust VMM for modern cloud workloads
+
+github_url: https://github.com/cloud-hypervisor/cloud-hypervisor
+website_url: https://www.cloudhypervisor.org
+docs_url: https://www.cloudhypervisor.org/docs/
+
+category: Dev Tools
+tags: [virtualization, rust, vmm, cloud, kvm, security]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AI platforms that isolate untrusted training jobs or multi-tenant inference
+  need a VMM smaller than QEMU. Cloud Hypervisor is a Rust VMM built for cloud
+  guests with hotplug and a reduced attack surface, so operators can run secure
+  VMs for workloads that should not share a kernel with the host.
+
+use_cases:
+  - Run isolated VMs for untrusted model-training or evaluation jobs
+  - Host multi-tenant inference guests with a minimal VMM footprint
+  - Hotplug CPU and memory for cloud VMs that serve AI services
+  - Replace heavier hypervisors where a Rust VMM is enough
