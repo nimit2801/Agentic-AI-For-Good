@@ -1,0 +1,26 @@
+name: ADBC
+description: Apache Arrow Database Connectivity is a cross-language API for fetching query results as Arrow record batches. ADBC drivers for Postgres, SQLite, Snowflake, and others avoid row-wise ODBC copies, so Python and C++ ML pipelines ingest columnar data from SQL databases with less serialization.
+tagline: Arrow-native database connectivity API
+
+github_url: https://github.com/apache/arrow-adbc
+website_url: https://arrow.apache.org/adbc/
+docs_url: https://arrow.apache.org/adbc/current/index.html
+install_command: pip install adbc-driver-manager
+
+category: Data
+tags: [arrow, database, python, sql, postgres, columnar, connectivity]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Fetching SQL results through ODBC or DB-API materializes rows then converts
+  them to Arrow or pandas, which copies large result sets twice. ADBC is a
+  vendor-neutral API whose drivers stream Arrow batches from Postgres, SQLite,
+  and others, so feature extraction and training loaders stay columnar end to end.
+
+use_cases:
+  - Load a Postgres feature query into PyArrow or pandas without a row-wise copy
+  - Swap SQLite and Snowflake backends behind one ADBC driver-manager API
+  - Stream Arrow record batches from SQL into a C++ or Go training preprocessor
+  - Build a dataframe pipeline that talks to multiple databases through Arrow
