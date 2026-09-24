@@ -1,0 +1,22 @@
+name: Magic Wormhole
+description: A tool for sending files and directories between computers with a short, human-pronounceable code. PAKE-based transfer so two machines can exchange data without accounts or a shared filesystem.
+tagline: Send files between computers with a short code
+
+github_url: https://github.com/magic-wormhole/magic-wormhole
+website_url: https://magic-wormhole.readthedocs.io
+docs_url: https://magic-wormhole.readthedocs.io/en/latest/
+
+category: Dev Tools
+tags: [file-transfer, pake, python, cli, security, sharing]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: pip install magic-wormhole
+
+problem_solved: |
+  Sharing a checkpoint, dataset slice, or log dump between laptops usually means uploading to cloud storage or standing up scp with keys. Magic Wormhole uses a short PAKE code so two machines can transfer files directly without accounts, making ad-hoc ML artifact handoff safer and faster than a public link.
+
+use_cases:
+  - Send a model checkpoint or dataset slice to a teammate with a short code
+  - Hand off logs and traces between laptops without a shared drive
+  - Transfer secrets or config files without emailing them in the clear
