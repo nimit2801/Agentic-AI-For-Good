@@ -1,0 +1,26 @@
+name: jid
+description: Interactive JSON digger that lets you drill into nested documents with jq-style filters, tab completion, and JMESPath. jid highlights matching keys as you type, so exploring API payloads, model configs, and log objects is faster than writing a jq one-liner from scratch.
+tagline: Interactive JSON incremental digger
+
+github_url: https://github.com/simeji/jid
+website_url: https://github.com/simeji/jid
+docs_url: https://github.com/simeji/jid#usage
+install_command: brew install jid
+
+category: Dev Tools
+tags: [json, jq, cli, go, jmespath, explorer, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Writing jq filters against an unfamiliar JSON blob is guesswork. jid is an
+  interactive digger with suggestion, auto-completion, and JMESPath so you can
+  walk nested keys, see matches highlighted live, and leave with a filter that
+  actually works on API payloads and config files.
+
+use_cases:
+  - Explore a nested LLM API response interactively before writing a jq pipeline
+  - Tab-complete fields in a large model-config JSON without opening an editor
+  - Try JMESPath expressions against a sample payload and copy the working filter
+  - Pipe curl output into jid during debugging of agent tool-call traces

@@ -1,0 +1,26 @@
+name: WAL-G
+description: Cloud archival and restore tool for PostgreSQL, MySQL/MariaDB, and SQL Server, with beta support for MongoDB and Redis. WAL-G is the WAL-E successor with LZ4/ZSTD compression, multi-core backups, and object-storage backends, so database disaster recovery does not wait on single-threaded dumps.
+tagline: Fast cloud archival for databases
+
+github_url: https://github.com/wal-g/wal-g
+website_url: https://wal-g.readthedocs.io
+docs_url: https://wal-g.readthedocs.io
+install_command: brew install wal-g
+
+category: Data
+tags: [postgres, mysql, backup, wal, s3, go, restore, database]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  WAL-E-era Postgres backups were slow and single-threaded, and dumping MySQL
+  or SQL Server to object storage needed separate toolchains. WAL-G compresses
+  with LZ4, LZMA, ZSTD, or Brotli, uses multiple cores, and restores Postgres,
+  MySQL, and SQL Server from S3-compatible storage without exclusive locks.
+
+use_cases:
+  - Continuously archive Postgres WAL and base backups to S3 for point-in-time restore
+  - Back up MySQL or MariaDB to object storage with multi-core compression
+  - Restore a Postgres cluster faster than WAL-E after an incident
+  - Encrypt backups with libsodium or cloud KMS before they leave the database host
