@@ -1,0 +1,25 @@
+name: Talos
+description: Minimal Linux distribution built for Kubernetes, with API-driven management and an immutable OS designed for secure, automated cluster nodes.
+tagline: Immutable Linux distro purpose-built for Kubernetes
+
+github_url: https://github.com/siderolabs/talos
+website_url: https://www.talos.dev
+docs_url: https://www.talos.dev/latest/
+
+category: Dev Tools
+tags: [kubernetes, linux, immutable-os, cluster, security, infrastructure]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  GPU and inference clusters still run general-purpose Linux that SSH, package
+  drift, and unattended upgrades can break. Talos is an immutable Linux distro
+  managed only through an API, so Kubernetes nodes stay minimal and consistent
+  for AI workloads without a traditional login shell on every machine.
+
+use_cases:
+  - Run Kubernetes worker nodes for training and inference on an immutable OS
+  - Manage cluster node config through the Talos API instead of SSH
+  - Reduce OS attack surface on GPU boxes that serve models
+  - Bootstrap Kubernetes clusters with a Linux distro designed only for that job

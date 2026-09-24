@@ -1,0 +1,27 @@
+name: reviewdog
+description: Automated code review dog that reports linter and analyzer findings as GitHub, GitLab, or review comments, regardless of programming language.
+tagline: Automated review comments from any linter
+
+github_url: https://github.com/reviewdog/reviewdog
+website_url: https://github.com/reviewdog/reviewdog
+docs_url: https://github.com/reviewdog/reviewdog#readme
+
+install_command: brew install reviewdog/tap/reviewdog
+
+category: Dev Tools
+tags: [code-review, linting, ci, github, gitlab, static-analysis]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  CI can run ruff, eslint, or custom ML linters, but findings never land on the
+  pull request. reviewdog pipes any analyzer that speaks checkstyle, rdjson, or
+  similar formats into GitHub and GitLab comments so AI and app repos get inline
+  review from the same tools the pipeline already runs.
+
+use_cases:
+  - Post ruff or mypy findings as GitHub pull request comments
+  - Run language-agnostic linters in CI and report only new issues
+  - Integrate custom static checks for notebooks or configs into review
+  - Keep GitLab merge requests annotated with the same analyzer output

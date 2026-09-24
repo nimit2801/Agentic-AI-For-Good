@@ -1,0 +1,26 @@
+name: Headlamp
+description: Kubernetes web UI from kubernetes-sigs that is fully featured, user-friendly, and extensible with plugins for inspecting clusters, workloads, and AI platform namespaces.
+tagline: Extensible Kubernetes web UI
+
+github_url: https://github.com/kubernetes-sigs/headlamp
+website_url: https://headlamp.dev
+docs_url: https://headlamp.dev/docs
+
+category: Dev Tools
+tags: [kubernetes, dashboard, web-ui, cluster-management, plugins, cncf]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Operators of GPU clusters and model-serving namespaces need a Kubernetes UI that
+  is not stuck on the old Dashboard and can grow with plugins. Headlamp is a
+  kubernetes-sigs web UI for inspecting workloads, logs, and cluster state, so AI
+  platform teams can debug training jobs and inference services without living in
+  kubectl alone.
+
+use_cases:
+  - Inspect GPU training jobs and inference Deployments from a Kubernetes web UI
+  - Browse logs, events, and resource YAML for AI platform namespaces
+  - Extend the UI with plugins for custom ML operators and CRDs
+  - Give platform users a friendlier cluster view than raw kubectl
