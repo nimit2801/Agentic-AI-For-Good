@@ -1,0 +1,25 @@
+name: pg_partman
+description: PostgreSQL extension that creates and manages time-based and numeric table partitions. pg_partman automates child tables, retention, and maintenance so event logs and feature tables stay queryable as they grow without manual DDL.
+tagline: Automated partition management for PostgreSQL
+
+github_url: https://github.com/pgpartman/pg_partman
+website_url: https://github.com/pgpartman/pg_partman
+docs_url: https://github.com/pgpartman/pg_partman/blob/development/doc/pg_partman.md
+
+category: Data
+tags: [postgresql, partitioning, extension, time-series, retention, sql]
+pricing: free
+is_open_source: true
+license: PostgreSQL
+
+problem_solved: |
+  Large Postgres event and feature tables slow down vacuum, backups, and
+  queries unless they are partitioned, but creating and dropping child
+  tables by hand is error-prone. pg_partman automates declarative
+  partitions, retention, and background maintenance on a schedule.
+
+use_cases:
+  - Auto-create daily partitions for an LLM request or event log table
+  - Drop partitions older than a retention window without manual DDL
+  - Convert an existing heap table into a declarative partitioned set
+  - Run background partition maintenance without an external cron host
