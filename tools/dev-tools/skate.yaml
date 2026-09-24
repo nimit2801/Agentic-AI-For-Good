@@ -1,0 +1,26 @@
+name: skate
+description: Personal key-value store CLI from Charm for saving and retrieving strings or binary blobs locally. skate set/get/list works from scripts and SSH sessions, so API tokens, checkpoint paths, and small artifacts stay in a local store instead of ad-hoc files.
+tagline: Personal key-value store for the terminal
+
+github_url: https://github.com/charmbracelet/skate
+website_url: https://github.com/charmbracelet/skate
+docs_url: https://github.com/charmbracelet/skate
+install_command: go install github.com/charmbracelet/skate@latest
+
+category: Dev Tools
+tags: [cli, key-value, golang, terminal, charm, local-storage]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Scripts stash API keys, last-run IDs, and small binary blobs in env files or
+  tmp paths that are hard to list and easy to lose over SSH. skate is a local
+  key-value CLI that set/get/list strings and binaries, with optional named
+  databases, so agent wrappers and ML scripts share a simple personal store.
+
+use_cases:
+  - Store and retrieve API tokens or last-run experiment IDs from shell scripts
+  - Save a small binary blob such as a profile image or model card snippet by key
+  - List keys in a named database to inspect what a local agent wrapper cached
+  - Pipe skate list into xargs to drive follow-up commands from stored values

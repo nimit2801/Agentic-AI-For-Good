@@ -1,0 +1,26 @@
+name: litecli
+description: SQLite terminal client with auto-completion and syntax highlighting. litecli is a drop-in REPL for the sqlite3 shell that completes table and column names as you type, so exploring local eval dumps, agent memory DBs, and feature stores is faster than in the stock client.
+tagline: SQLite CLI with auto-completion and highlighting
+
+github_url: https://github.com/dbcli/litecli
+website_url: https://litecli.com
+docs_url: https://litecli.com/features/
+install_command: pip install litecli
+
+category: Data
+tags: [sqlite, cli, sql, autocomplete, python, database]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Stock sqlite3 has no smart completion, so exploring a local SQLite schema means
+  memorizing table names or running PRAGMA table_info on every table. litecli adds
+  context-aware auto-completion and syntax highlighting in a REPL that still opens
+  a file path, so eval dumps and agent memory databases are faster to inspect.
+
+use_cases:
+  - Explore a local SQLite feature store with table and column completion as you type
+  - Inspect agent memory or eval dump databases without leaving the terminal
+  - Run ad-hoc SQL against SQLite training metadata with syntax highlighting
+  - Replace sqlite3 in day-to-day development of RAG backends that persist to SQLite
