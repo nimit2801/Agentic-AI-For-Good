@@ -1,0 +1,25 @@
+name: Parseable
+description: Open-source observability data lake in Rust that stores logs, metrics, traces, and events on object storage. OpenTelemetry-native ingest, dashboards, alerting, and agent-ready APIs cut telemetry storage cost versus hot index stores.
+tagline: Columnar observability data lake on object storage
+
+github_url: https://github.com/parseablehq/parseable
+website_url: https://parseable.com
+docs_url: https://parseable.com/docs
+
+category: Monitoring
+tags: [observability, logs, opentelemetry, rust, data-lake, tracing, metrics]
+pricing: freemium
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Hot log indexes get expensive as LLM traces and agent logs grow. Parseable
+  puts telemetry on a columnar lake over object storage, so you keep logs,
+  metrics, and traces queryable without paying Elasticsearch-class storage,
+  while still ingesting OpenTelemetry and exposing APIs that agents can query.
+
+use_cases:
+  - Ingest OpenTelemetry logs, metrics, and traces into object storage
+  - Query LLM and agent telemetry without a hot Elasticsearch cluster
+  - Run dashboards, alerts, and anomaly detection on a self-hosted observability lake
+  - Observe AI agents and let LLMs analyze telemetry through Parseable APIs

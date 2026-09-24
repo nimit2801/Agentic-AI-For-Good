@@ -1,0 +1,25 @@
+name: OpenBuddy
+description: Open multilingual chatbot models fine-tuned from Llama and Falcon with extended CJK vocabularies. Weights from 3B to 70B on Hugging Face and ModelScope, with llama.cpp quantization for offline English, Chinese, Japanese, and Korean chat.
+tagline: Open multilingual chatbot models for offline chat
+
+github_url: https://github.com/OpenBuddy/OpenBuddy
+website_url: https://openbuddy.ai
+docs_url: https://huggingface.co/OpenBuddy
+
+category: LLM
+tags: [llm, multilingual, chinese, llama, chat, huggingface, open-weights]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  English-centric chat models mangle CJK text and need a hosted API. OpenBuddy
+  fine-tunes Llama and Falcon with an extended vocabulary and multi-turn
+  dialogue data, then publishes 3B to 70B weights you can run offline, including
+  quantized llama.cpp builds for local Chinese, Japanese, and Korean assistants.
+
+use_cases:
+  - Run an offline Chinese-English chatbot from Hugging Face OpenBuddy weights
+  - Quantize OpenBuddy with llama.cpp for CPU-only multilingual inference
+  - Fine-tune OpenBuddy on domain multi-turn dialogue for a local assistant
+  - Serve Japanese or Korean chat without a hosted commercial API

@@ -1,0 +1,26 @@
+name: Apache Kylin
+description: Open-source OLAP engine for sub-second SQL on trillions of records. Builds cube and internal-table indexes on big data warehouses, with Kafka streaming sources, BI tool connectors, and a native engine for lakehouse analytics.
+tagline: Sub-second OLAP engine for big data warehouses
+
+github_url: https://github.com/apache/kylin
+website_url: https://kylin.apache.org/
+docs_url: https://kylin.apache.org/docs/overview
+
+category: Data
+tags: [olap, sql, warehouse, spark, kafka, lakehouse, analytics, apache]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Ad-hoc SQL on lakehouse-scale fact tables is too slow for interactive BI and
+  feature exploration. Kylin precomputes models and indexes, including
+  recommendation from query history and Kafka streaming sources, so analytics
+  and ML feature queries return in sub-seconds on trillions of rows instead of
+  scanning raw parquet every time.
+
+use_cases:
+  - Serve sub-second OLAP SQL on a Spark or lakehouse warehouse
+  - Auto-build models and indexes from query history for BI dashboards
+  - Ingest Kafka streams into a fusion model for hybrid batch-streaming analysis
+  - Connect Tableau, Superset, or other BI tools to precomputed cubes

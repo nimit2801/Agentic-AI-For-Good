@@ -1,0 +1,26 @@
+name: Apache Kyuubi
+description: Distributed multi-tenant SQL gateway that exposes Spark, Flink, and other engines over HiveServer2 JDBC/ODBC. Run serverless SQL on warehouses and lakehouses with per-user sessions instead of dedicating a Spark cluster to each client.
+tagline: Multi-tenant serverless SQL gateway for Spark and lakehouses
+
+github_url: https://github.com/apache/kyuubi
+website_url: https://kyuubi.apache.org/
+docs_url: https://kyuubi.readthedocs.io/
+
+category: Data
+tags: [sql, spark, jdbc, lakehouse, multi-tenant, hive, apache]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Giving every analyst or feature job a Spark cluster wastes cluster time and
+  leaks tenant isolation. Kyuubi is a HiveServer2-compatible gateway that
+  multiplexes Spark and other engines across tenants, so BI tools, notebooks,
+  and ML pipelines share serverless SQL on the lakehouse without standing up
+  one cluster per user.
+
+use_cases:
+  - Expose Spark SQL to BI tools over JDBC without a dedicated cluster per user
+  - Run multi-tenant serverless SQL on Iceberg, Hive, or other lakehouse tables
+  - Let notebooks and feature pipelines share a Kyuubi gateway instead of yarn-client Spark
+  - Replace HiveServer2 with a Spark-backed SQL endpoint for analytics and ML
