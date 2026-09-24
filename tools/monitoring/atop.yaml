@@ -1,0 +1,25 @@
+name: atop
+description: Linux system and process monitor that records historical snapshots of CPU, memory, disk, and network so you can replay what a box was doing hours ago. Unlike a live TUI, atop logs every interval, which helps debug overnight training jobs after they already finished.
+tagline: Historical Linux system and process monitor
+
+github_url: https://github.com/Atoptool/atop
+website_url: https://www.atoptool.nl
+docs_url: https://www.atoptool.nl/downloadatop.php
+
+category: Monitoring
+tags: [linux, processes, cpu, memory, disk, historical, cli]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Live viewers like htop only show the current second, so an overnight training
+  job that OOMed is gone by morning. atop writes interval snapshots of process
+  and system counters to a log, so you can replay CPU, memory, disk, and network
+  for the window when the job failed instead of guessing from syslog.
+
+use_cases:
+  - Replay CPU and memory for the hour a training job was killed by the OOM killer
+  - Diagnose disk saturation on a feature-store host after a nightly ETL finished
+  - Compare process-level network use across intervals during a distributed job
+  - Keep a rolling log of system counters on GPU boxes without a full metrics stack

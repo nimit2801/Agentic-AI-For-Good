@@ -1,0 +1,26 @@
+name: Barman
+description: Backup and Recovery Manager for PostgreSQL from EnterpriseDB. Barman handles WAL archiving, cataloging, remote backups, and point-in-time recovery so production Postgres feature stores can be restored without custom rsync and WAL scripts.
+tagline: Backup and recovery manager for PostgreSQL
+
+github_url: https://github.com/EnterpriseDB/barman
+website_url: https://www.pgbarman.org/
+docs_url: https://docs.pgbarman.org/
+install_command: pip install barman
+
+category: Data
+tags: [postgres, backup, wal, recovery, python, database, pitr]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Homegrown Postgres backup scripts miss WAL segments, skip remote hosts, and
+  make point-in-time restore a guess. Barman catalogs backups, archives WAL,
+  and restores to a chosen timestamp from a dedicated backup server, so feature
+  stores and metadata databases recover without rewriting rsync playbooks.
+
+use_cases:
+  - Archive WAL and take remote backups of a production Postgres feature store
+  - Restore a cluster to a point in time after a bad migration or data load
+  - Catalog and retain backups on a dedicated Barman server separate from primaries
+  - Verify backup integrity before promoting a replica after an incident
