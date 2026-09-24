@@ -1,0 +1,25 @@
+name: pgAudit
+description: PostgreSQL extension that records detailed session and object audit logs. pgAudit logs SELECT, DML, and DDL so regulated feature stores and agent databases can prove who read or changed data without application-level logging.
+tagline: Session and object audit logging for PostgreSQL
+
+github_url: https://github.com/pgaudit/pgaudit
+website_url: https://www.pgaudit.org/
+docs_url: https://github.com/pgaudit/pgaudit
+
+category: Data
+tags: [postgresql, audit, security, logging, compliance, extension]
+pricing: free
+is_open_source: true
+license: PostgreSQL
+
+problem_solved: |
+  Standard Postgres logs do not show which rows or objects a user
+  touched. pgAudit emits detailed session and object audit records for
+  SELECT, DML, and DDL so teams can meet compliance on feature stores
+  and agent databases.
+
+use_cases:
+  - Log who queried a sensitive feature or PII table
+  - Record DDL changes on a production Postgres used by RAG pipelines
+  - Feed audit events into SIEM for regulated ML workloads
+  - Prove access history during a security review of agent data

@@ -1,0 +1,25 @@
+name: Sequin
+description: Postgres change data capture that streams row changes to Kafka, SQS, Elasticsearch, HTTP, and more. Sequin turns WAL events into queues and search updates so RAG indexes and feature stores stay current without custom CDC glue.
+tagline: Postgres CDC to streams, queues, and search indexes
+
+github_url: https://github.com/sequinstream/sequin
+website_url: https://sequinstream.com
+docs_url: https://sequinstream.com/docs
+
+category: Data
+tags: [postgresql, cdc, kafka, elasticsearch, streaming, queues]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Keeping Kafka, SQS, and search indexes in sync with Postgres usually
+  means a custom WAL consumer. Sequin captures logical changes and
+  delivers them to streams, queues, and HTTP endpoints so RAG and
+  feature pipelines follow the source of truth.
+
+use_cases:
+  - Stream Postgres row changes into Kafka for downstream ML jobs
+  - Update Elasticsearch when a source-of-truth catalog table changes
+  - Push CDC events to SQS or HTTP webhooks for agent workflows
+  - Replace polling jobs that lag behind operational Postgres writes

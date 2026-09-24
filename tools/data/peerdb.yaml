@@ -1,0 +1,25 @@
+name: PeerDB
+description: Fast Postgres replication into data warehouses, queues, and object storage. PeerDB uses logical decoding and parallel apply so feature tables and event logs land in Snowflake, BigQuery, ClickHouse, or Kafka without expensive ETL jobs.
+tagline: Postgres replication to warehouses, queues, and storage
+
+github_url: https://github.com/PeerDB-io/peerdb
+website_url: https://peerdb.io
+docs_url: https://docs.peerdb.io
+
+category: Data
+tags: [postgresql, cdc, warehouse, replication, clickhouse, kafka]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Moving Postgres into a warehouse or queue often means slow batch ETL
+  and laggy dashboards. PeerDB streams logical changes in parallel to
+  Snowflake, BigQuery, ClickHouse, Kafka, and object storage so analytics
+  and feature pipelines stay close to operational data.
+
+use_cases:
+  - Replicate Postgres feature tables into ClickHouse or BigQuery
+  - Stream operational events into Kafka without a custom Debezium stack
+  - Land Postgres CDC into object storage for lakehouse training jobs
+  - Keep a warehouse mirror of agent telemetry with low lag
