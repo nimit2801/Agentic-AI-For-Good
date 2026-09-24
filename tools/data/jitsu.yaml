@@ -1,0 +1,28 @@
+name: Jitsu
+description: Open-source Segment alternative that collects events from apps and servers, then delivers them to warehouses and SaaS tools in near real time. Self-host or use Jitsu Cloud, with JavaScript functions, connector syncs, and an MCP server for agents.
+tagline: Open-source event collection platform and Segment alternative
+
+github_url: https://github.com/jitsucom/jitsu
+website_url: https://jitsu.com
+docs_url: https://jitsu.com/docs
+
+install_command: npm install -g jitsu-cli
+
+category: Data
+tags: [events, cdp, warehouse, clickhouse, mcp, analytics, etl]
+pricing: freemium
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Product and AI teams need first-party events in warehouses without waiting on
+  a closed CDP that bills by monthly tracked users and batches once or twice a
+  day. Jitsu ingests browser, mobile, and server events, transforms them with
+  JavaScript functions, and lands them in ClickHouse, BigQuery, Snowflake, or
+  S3 in minutes, including an MCP server so agents can operate the pipeline.
+
+use_cases:
+  - Collect product events and land them in ClickHouse, BigQuery, or Snowflake
+  - Transform and enrich events with JavaScript functions before warehouse load
+  - Self-host an MIT-licensed Segment alternative or start on Jitsu Cloud
+  - Let coding agents configure sources and destinations through the Jitsu MCP server
