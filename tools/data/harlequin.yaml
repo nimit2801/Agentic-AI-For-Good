@@ -1,0 +1,26 @@
+name: Harlequin
+description: Terminal SQL IDE with a TUI editor, results grid, and adapter plugins for DuckDB, Postgres, MySQL, and more. Harlequin ships DuckDB in-process by default and includes hsql, a headless companion CLI for agents, so exploring local and remote databases stays in the terminal.
+tagline: SQL IDE for your terminal
+
+github_url: https://github.com/tconbeer/harlequin
+website_url: https://harlequin.sh
+docs_url: https://harlequin.sh/docs/getting-started/index
+install_command: brew install harlequin
+
+category: Data
+tags: [sql, tui, duckdb, postgres, ide, python, database]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  GUI SQL IDEs leave the terminal, and stock CLIs have no editor or results grid.
+  Harlequin is a full SQL IDE in the terminal with adapters for DuckDB, Postgres,
+  MySQL, and more, plus a headless hsql CLI for agents, so query work and
+  automation share the same adapters and config.
+
+use_cases:
+  - Explore a local DuckDB or Parquet dataset in a TUI editor with a results grid
+  - Connect to Postgres or MySQL feature stores without leaving the terminal
+  - Let an agent run SQL via the bundled hsql CLI against the same adapters
+  - Browse schemas and write multi-statement scripts with syntax highlighting

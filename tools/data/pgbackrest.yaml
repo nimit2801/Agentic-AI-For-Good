@@ -1,0 +1,26 @@
+name: pgBackRest
+description: Parallel backup and restore tool for PostgreSQL that scales to large clusters. pgBackRest supports full, differential, and block-level incremental backups, async WAL archive, page checksums, and S3/Azure/GCS repositories, so production Postgres can be restored without rsync time-resolution bugs.
+tagline: Reliable PostgreSQL backup and restore
+
+github_url: https://github.com/pgbackrest/pgbackrest
+website_url: https://pgbackrest.org
+docs_url: https://pgbackrest.org/user-guide.html
+install_command: brew install pgbackrest
+
+category: Data
+tags: [postgres, backup, wal, s3, restore, database, cli]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Backing up large Postgres clusters with rsync or dump scripts is slow, and
+  time-resolution bugs can skip changed files. pgBackRest parallelizes backup
+  and restore, supports block-level incrementals, verifies page checksums, and
+  ships WAL asynchronously to local or cloud repositories with retention.
+
+use_cases:
+  - Take parallel full and incremental backups of a production Postgres feature store
+  - Archive WAL to S3, Azure, or GCS with async compression for high-write clusters
+  - Restore a terabyte-scale database with delta restore that skips unchanged files
+  - Validate page checksums during backup so corruption is caught before retention expires
