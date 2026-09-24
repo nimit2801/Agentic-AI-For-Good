@@ -1,0 +1,26 @@
+name: wishlist
+description: SSH directory from Charm that lists hosts from YAML, SSH config, or Tailscale and opens an interactive picker. wishlist is a single binary so jumping between GPU boxes, jump hosts, and Git servers does not mean grepping ~/.ssh/config.
+tagline: Interactive SSH directory for the terminal
+
+github_url: https://github.com/charmbracelet/wishlist
+website_url: https://github.com/charmbracelet/wishlist
+docs_url: https://github.com/charmbracelet/wishlist
+install_command: go install github.com/charmbracelet/wishlist@latest
+
+category: Dev Tools
+tags: [ssh, golang, terminal, charm, tailscale, cli]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  ML engineers hop between GPU boxes, jump hosts, and Git servers with long
+  ssh config aliases that are hard to search. wishlist builds a TUI directory
+  from YAML, SSH config, or Tailscale so you pick a host and connect without
+  memorizing names.
+
+use_cases:
+  - Pick a GPU training box from a TUI instead of grepping SSH config
+  - Load Tailscale hosts into an SSH directory for ad-hoc cluster access
+  - Keep a YAML list of jump hosts and Git servers for a research team
+  - Open an SSH session to a soft-serve Git host from the same picker

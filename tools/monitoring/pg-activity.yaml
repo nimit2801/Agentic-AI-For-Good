@@ -1,0 +1,26 @@
+name: pg_activity
+description: Top-like TUI for PostgreSQL server activity from Dalibo. pg_activity shows running queries, wait events, locks, and vacuum progress so you can see which feature-store or metadata query is blocking a node without reading pg_stat_activity by hand.
+tagline: Top-like monitor for PostgreSQL activity
+
+github_url: https://github.com/dalibo/pg_activity
+website_url: https://github.com/dalibo/pg_activity
+docs_url: https://github.com/dalibo/pg_activity
+install_command: pip install pg_activity
+
+category: Monitoring
+tags: [postgresql, tui, queries, python, database, performance]
+pricing: free
+is_open_source: true
+license: PostgreSQL
+
+problem_solved: |
+  pg_stat_activity dumps are hard to read when a feature-store query is stuck
+  behind a lock or a long vacuum. pg_activity is a live top-like view of
+  running queries, waits, and backends so you can cancel the blocker instead
+  of restarting Postgres.
+
+use_cases:
+  - Watch running queries on a Postgres feature store during a training load
+  - Find the backend holding a lock that stalls agent metadata writes
+  - Track vacuum and I/O so a bloated table is caught before jobs time out
+  - Cancel a runaway query from the TUI without psql and pg_terminate_backend

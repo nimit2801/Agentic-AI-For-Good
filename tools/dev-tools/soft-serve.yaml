@@ -1,0 +1,26 @@
+name: soft-serve
+description: Self-hostable Git server from Charm that you access over SSH from the terminal. soft-serve serves repos with a TUI, access control, and Git protocol support so ML teams can host private prompt, eval, and model-card repos without standing up a full GitHub appliance.
+tagline: Self-hostable Git server for the command line
+
+github_url: https://github.com/charmbracelet/soft-serve
+website_url: https://github.com/charmbracelet/soft-serve
+docs_url: https://github.com/charmbracelet/soft-serve
+install_command: go install github.com/charmbracelet/soft-serve/cmd/soft@latest
+
+category: Dev Tools
+tags: [git, ssh, golang, self-hosted, charm, terminal]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Private prompt packs, eval scripts, and model cards often live on a laptop or
+  a heavy GitHub Enterprise box. soft-serve is a single-binary Git server you
+  SSH into, with a TUI and access control, so small teams host those repos
+  without running a full forge.
+
+use_cases:
+  - Host private prompt and eval repos on a lab machine over SSH
+  - Browse and clone model-card Git repos from a TUI without a web UI
+  - Give contractors SSH access to a subset of internal Git repos
+  - Run a lightweight Git server next to training boxes instead of GitHub Enterprise
