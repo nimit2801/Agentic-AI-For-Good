@@ -1,0 +1,28 @@
+name: PyTerrier
+description: Python IR framework on Apache Terrier for sparse, learned-sparse, and dense indexing plus retrieval. Compose BM25, neural rerankers, and RAG pipelines, then run experiments on ir_datasets collections with standard ranking metrics.
+tagline: Python IR pipelines for retrieval experiments and RAG
+
+github_url: https://github.com/terrier-org/pyterrier
+website_url: https://pyterrier.readthedocs.io/
+docs_url: https://pyterrier.readthedocs.io/en/latest/
+
+install_command: pip install 'pyterrier[all]'
+
+category: RAG
+tags: [python, ir, retrieval, terrier, bm25, reranking, rag, experiments]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  Building a first-stage retriever and comparing it to a neural reranker usually
+  means gluing Lucene, Faiss, and evaluation scripts by hand. PyTerrier models
+  each stage as a transformer you can chain, with Hugging Face indexes and
+  ir_datasets topics and qrels, so RAG teams can retrieve, rerank, and measure
+  nDCG without rewriting IR plumbing.
+
+use_cases:
+  - Chain Terrier BM25 with MonoT5 or other neural rerankers for RAG first-stage retrieval
+  - Run retrieval experiments on MS MARCO, Vaswani, or other ir_datasets collections
+  - Compare sparse, learned-sparse, and dense pipelines with nDCG and AP metrics
+  - Load a Terrier index from Hugging Face and search from a Python notebook
