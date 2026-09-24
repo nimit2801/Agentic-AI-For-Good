@@ -1,0 +1,26 @@
+name: rqlite
+description: Lightweight, fault-tolerant distributed database built on SQLite and Raft. rqlite replicates a SQLite database across nodes with an HTTP API so edge services and agents get high availability without running a full Postgres cluster.
+tagline: Distributed SQLite with Raft consensus
+
+github_url: https://github.com/rqlite/rqlite
+website_url: https://rqlite.io
+docs_url: https://rqlite.io/docs/quick-start
+install_command: brew install rqlite
+
+category: Data
+tags: [sqlite, distributed, raft, replication, database, golang]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  SQLite is a single-node file database. When an agent, edge API, or feature
+  cache needs SQL with failover, teams either accept downtime or move to
+  Postgres. rqlite wraps SQLite in Raft so writes replicate across nodes and
+  any survivor can keep serving the same SQL over HTTP.
+
+use_cases:
+  - Run a highly available SQLite cluster for agent memory and tool state
+  - Replicate a local feature cache across edge nodes without Postgres
+  - Give a Go or Python service a distributed SQL store with an HTTP API
+  - Form a three-node Raft cluster that survives a single machine failure

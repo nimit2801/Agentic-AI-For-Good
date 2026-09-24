@@ -1,0 +1,25 @@
+name: pg_cron
+description: Cron-style job scheduler that runs inside PostgreSQL as an extension. pg_cron lets you schedule SQL, VACUUM, rollups, and retention deletes with crontab syntax so feature stores and RAG databases maintain themselves without an external worker.
+tagline: Run cron jobs inside PostgreSQL
+
+github_url: https://github.com/citusdata/pg_cron
+website_url: https://github.com/citusdata/pg_cron
+docs_url: https://github.com/citusdata/pg_cron
+
+category: Data
+tags: [postgresql, cron, scheduler, extension, jobs, maintenance]
+pricing: free
+is_open_source: true
+license: PostgreSQL
+
+problem_solved: |
+  Periodic Postgres work (VACUUM, partition maintenance, deleting stale
+  events) usually needs an external cron host that must stay connected and
+  credentialed. pg_cron runs a background worker inside the database so
+  schedules live next to the data and survive as long as Postgres does.
+
+use_cases:
+  - Schedule nightly VACUUM and ANALYZE on a feature-store database
+  - Delete events older than a week with a Saturday crontab expression
+  - Refresh rollup tables every few minutes for an analytics dashboard
+  - Pair with pg_partman to create and drop partitions on a timer

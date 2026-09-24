@@ -1,0 +1,25 @@
+name: LiteFS
+description: FUSE-based filesystem from Fly.io that replicates SQLite databases across a cluster. LiteFS intercepts SQLite writes, records transactions as LTX files, and streams them so each node can serve a local replica without a separate database server.
+tagline: FUSE filesystem that replicates SQLite across a cluster
+
+github_url: https://github.com/superfly/litefs
+website_url: https://fly.io/docs/litefs/
+docs_url: https://fly.io/docs/litefs/getting-started/
+
+category: Data
+tags: [sqlite, replication, fuse, flyio, distributed, database]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  SQLite cannot natively replicate live writes across machines. LiteFS mounts
+  a FUSE filesystem that captures transaction boundaries, ships LTX change
+  files to replicas, and lets each app instance read a local SQLite file
+  while a primary handles writes.
+
+use_cases:
+  - Replicate a SQLite app database across Fly.io machines with a local file per node
+  - Give read replicas a local SQLite copy instead of round-tripping to a primary
+  - Capture SQLite transactions as LTX files for cluster recovery
+  - Run a globally distributed SQLite workload without moving to Postgres
