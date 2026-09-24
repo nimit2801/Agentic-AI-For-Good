@@ -1,0 +1,22 @@
+name: MikroORM
+description: A TypeScript ORM for Node.js based on Data Mapper, Unit of Work, and Identity Map. It tracks entity changes, batches writes, and supports MongoDB, PostgreSQL, MySQL, MariaDB, SQLite, libSQL, and MS SQL Server.
+tagline: Type-safe TypeScript ORM with Unit of Work and Identity Map
+
+github_url: https://github.com/mikro-orm/mikro-orm
+website_url: https://mikro-orm.io
+docs_url: https://mikro-orm.io/docs
+
+category: Data
+tags: [typescript, orm, nodejs, postgresql, mongodb, data-mapper, identity-map]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: npm install @mikro-orm/core
+
+problem_solved: |
+  Node and TypeScript backends for AI products need a type-safe data layer that does not hide SQL or leak identity bugs across requests. MikroORM uses Data Mapper, Unit of Work, and Identity Map so entities are tracked, changes flush in one transaction, and populate hints stay compile-time checked. Teams can model training metadata, feature records, and app state across SQL and Mongo without a different ORM per database.
+
+use_cases:
+  - Persist chat sessions, tool traces, and user records in PostgreSQL with type-safe populate hints
+  - Flush batched entity changes in one transaction when an agent writes multiple related rows
+  - Share one ORM across MongoDB and SQL stores for mixed metadata and document payloads

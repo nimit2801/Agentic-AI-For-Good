@@ -1,0 +1,22 @@
+name: PgCat
+description: A PostgreSQL pooler and proxy written in Rust, in the same role as PgBouncer, with sharding, load balancing, failover, TLS, and Prometheus metrics for high-throughput Postgres deployments.
+tagline: Next-gen PostgreSQL pooler with sharding and failover
+
+github_url: https://github.com/postgresml/pgcat
+website_url: https://github.com/postgresml/pgcat
+docs_url: https://github.com/postgresml/pgcat/blob/main/CONFIG.md
+
+category: Data
+tags: [postgresql, connection-pooler, sharding, rust, load-balancing, failover, proxy]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: docker pull ghcr.io/postgresml/pgcat:latest
+
+problem_solved: |
+  AI apps that store embeddings, chat history, and feature rows in Postgres hit connection limits and single-primary bottlenecks long before query CPU does. PgCat pools clients, load-balances reads across replicas, fails over unhealthy nodes, and can shard or mirror traffic. That keeps inference and training pipelines talking to Postgres at hundreds of thousands of queries per second without rewriting application SQL.
+
+use_cases:
+  - Pool Postgres connections from many inference workers without exhausting server slots
+  - Load-balance read queries across replicas for feature lookup and chat history
+  - Fail over around unhealthy Postgres nodes during training and serving traffic

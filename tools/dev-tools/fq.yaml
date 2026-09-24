@@ -1,0 +1,24 @@
+name: fq
+description: A jq-like CLI, language, and decoder set for binary formats. Inspect, query, and transform protobuf, media containers, archives, and other binary files with the same composable filters used on JSON.
+tagline: jq for binary formats
+
+github_url: https://github.com/wader/fq
+website_url: https://wader.github.io/fq/
+docs_url: https://github.com/wader/fq
+
+category: Dev Tools
+tags: [cli, binary, jq, protobuf, decoding, go, debugging]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: |
+  brew install wader/tap/fq
+  go install github.com/wader/fq@latest
+
+problem_solved: |
+  ML and infra engineers spend hours hex-dumping model checkpoints, protobuf payloads, media files, and packed datasets because jq only works on text JSON. fq decodes dozens of binary formats into a queryable tree and applies jq-style filters so you can inspect fields, extract slices, and debug serialization without writing a one-off parser for each format.
+
+use_cases:
+  - Query protobuf and packed dataset files with jq-style filters instead of a hex dump
+  - Inspect media containers and model artifacts to confirm codecs, headers, and payload layout
+  - Debug binary RPC and archive formats in CI by decoding fields into structured output
