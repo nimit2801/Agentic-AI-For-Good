@@ -1,0 +1,26 @@
+name: PostGIS
+description: Spatial database extension for PostgreSQL that stores, indexes, and queries geometry and geography. PostGIS adds points, polygons, rasters, and distance functions so location-aware RAG, routing, and geospatial ML stay in SQL.
+tagline: Geospatial types and functions for PostgreSQL
+
+github_url: https://github.com/postgis/postgis
+website_url: https://postgis.net
+docs_url: https://postgis.net/documentation/
+install_command: brew install postgis
+
+category: Data
+tags: [postgresql, geospatial, gis, extension, sql, raster]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Location data in Postgres is just numbers until you can index it and
+  run spatial predicates. PostGIS adds geometry and geography types,
+  GiST indexes, and functions for distance, intersection, and rasters
+  so maps, routing, and geo RAG stay in SQL.
+
+use_cases:
+  - Store and index lat/long points for location-aware retrieval
+  - Run ST_DWithin queries to find nearby stores or sensors
+  - Keep raster weather or elevation tiles next to vector features
+  - Feed QGIS or GeoServer from the same Postgres used by ML jobs

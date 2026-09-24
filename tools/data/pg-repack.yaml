@@ -1,0 +1,25 @@
+name: pg_repack
+description: PostgreSQL extension that removes table and index bloat online with minimal locks. pg_repack reorganizes heap and indexes without VACUUM FULL exclusive locks so feature stores stay available while reclaiming disk.
+tagline: Online bloat removal for PostgreSQL tables
+
+github_url: https://github.com/reorg/pg_repack
+website_url: https://reorg.github.io/pg_repack/
+docs_url: https://reorg.github.io/pg_repack/
+
+category: Data
+tags: [postgresql, bloat, vacuum, extension, maintenance, performance]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  VACUUM FULL and CLUSTER rewrite a table under an exclusive lock, which
+  takes a busy feature store offline. pg_repack rebuilds the table in the
+  background and swaps it in, reclaiming bloat with only short locks at
+  the end.
+
+use_cases:
+  - Reclaim disk on a bloated events or embeddings metadata table
+  - Rebuild a clustered index online without stopping writes
+  - Shrink indexes after a large delete of expired training rows
+  - Run periodic online reorg instead of overnight VACUUM FULL

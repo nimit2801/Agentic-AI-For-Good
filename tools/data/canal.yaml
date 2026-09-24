@@ -1,0 +1,25 @@
+name: Canal
+description: Alibaba MySQL binlog incremental subscription and consumption platform. Canal parses binlog and delivers row changes to Kafka, RocketMQ, or custom clients so search indexes, caches, and warehouses stay current without dual writes.
+tagline: MySQL binlog incremental subscription from Alibaba
+
+github_url: https://github.com/alibaba/canal
+website_url: https://github.com/alibaba/canal
+docs_url: https://github.com/alibaba/canal/wiki
+
+category: Data
+tags: [mysql, cdc, binlog, kafka, streaming, alibaba]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Cross-region MySQL replicas and search indexes need a reliable stream
+  of row changes. Canal pretends to be a MySQL replica, parses binlog,
+  and publishes incremental events so caches, inverted indexes, and
+  warehouses update without application dual writes.
+
+use_cases:
+  - Subscribe to MySQL binlog and push row events into Kafka or RocketMQ
+  - Keep a search index in sync with an operational MySQL catalog
+  - Refresh a business cache when source tables change
+  - Mirror MySQL increments into another store for analytics or RAG
