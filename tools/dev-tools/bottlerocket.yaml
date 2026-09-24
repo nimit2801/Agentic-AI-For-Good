@@ -1,0 +1,25 @@
+name: Bottlerocket
+description: AWS Linux OS built to host containers, with a minimal image, image-based updates, and security defaults for Kubernetes and ECS nodes.
+tagline: Container-optimized Linux OS from AWS
+
+github_url: https://github.com/bottlerocket-os/bottlerocket
+website_url: https://bottlerocket.dev
+docs_url: https://bottlerocket.dev/en/os/
+
+category: Dev Tools
+tags: [linux, containers, kubernetes, aws, ecs, immutable-os, security]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  GPU and inference nodes on AWS often run general AMIs that need patching and
+  SSH. Bottlerocket is a container-optimized OS with image-based updates and a
+  small attack surface, so EKS and ECS clusters that serve models stay locked
+  down and updated as atomic images instead of package-by-package.
+
+use_cases:
+  - Run EKS GPU node groups on a container-optimized OS
+  - Host ECS inference tasks with image-based OS updates
+  - Reduce SSH and package drift on production Kubernetes workers
+  - Standardize AWS container hosts for AI platform clusters
