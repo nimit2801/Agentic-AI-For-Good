@@ -1,0 +1,28 @@
+name: Turso
+description: In-process SQL database written in Rust, compatible with SQLite and now speaking Postgres as an experimental frontend. Embed it in agents and edge apps when you want SQLite semantics with a modern engine, or use the JS, Python, and Java bindings.
+tagline: SQLite-compatible SQL database written in Rust
+
+github_url: https://github.com/tursodatabase/turso
+website_url: https://turso.tech
+docs_url: https://github.com/tursodatabase/turso
+install_command: |
+  pip install pyturso
+  npm install @tursodatabase/database
+
+category: Data
+tags: [sqlite, rust, embedded, database, postgres, olap, edge]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  SQLite is C and hard to embed safely in modern runtimes; libSQL is the
+  fork, not a from-scratch engine. Turso is a Rust rewrite of the SQLite
+  virtual machine with JS, Python, and Java bindings plus an experimental
+  Postgres frontend, so agents can ship an in-process SQL store without C.
+
+use_cases:
+  - Embed a SQLite-compatible database inside a Python or Node agent
+  - Run local OLTP for edge apps with the pyturso or JS bindings
+  - Experiment with a Postgres frontend on the same VDBE engine
+  - Replace C SQLite in a Rust service with a memory-safe engine

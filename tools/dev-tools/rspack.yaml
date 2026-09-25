@@ -1,0 +1,26 @@
+name: Rspack
+description: Fast Rust bundler with a webpack-compatible API, loaders, and plugins. Swap it in for webpack when JavaScript and TypeScript apps need faster cold starts and HMR without rewriting the build config from scratch.
+tagline: Rust bundler with a webpack-compatible API
+
+github_url: https://github.com/web-infra-dev/rspack
+website_url: https://rspack.rs
+docs_url: https://rspack.rs/guide/start/introduction
+install_command: npm install --save-dev @rspack/core
+
+category: Dev Tools
+tags: [bundler, rust, webpack, javascript, hmr, build-tools, typescript]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Webpack is the ecosystem standard but slow on large TypeScript apps.
+  Rspack reimplements a webpack-compatible API in Rust so existing loaders
+  and plugins keep working while cold starts and HMR drop from minutes to
+  seconds on agent UIs and docs sites.
+
+use_cases:
+  - Replace webpack in a React or Vue app without rewriting loaders
+  - Speed up HMR on a large TypeScript dashboard during local dev
+  - Bundle a production agent UI with tree-shaking and minification
+  - Adopt Module Federation on a Rust-speed bundler for microfrontends
