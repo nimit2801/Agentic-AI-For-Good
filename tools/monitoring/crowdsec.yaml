@@ -1,0 +1,25 @@
+name: CrowdSec
+description: Open-source IDS, IPS, and WAF that parses logs, detects attacks, and shares a community IP blocklist. Detection and remediation are split so you can ban at the firewall, reverse proxy, or CDN.
+tagline: Crowdsourced IDS, IPS, and WAF for modern stacks
+
+github_url: https://github.com/crowdsecurity/crowdsec
+website_url: https://www.crowdsec.net
+docs_url: https://docs.crowdsec.net
+
+category: Monitoring
+tags: [security, ids, ips, waf, blocklist, logs, observability]
+pricing: freemium
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  fail2ban stays local and ModSecurity only sees HTTP. CrowdSec reads
+  logs and HTTP on one machine, remediates on another, and contributes
+  malicious IPs to a community blocklist so GPU hosts, inference APIs,
+  and agent dashboards get banned before the same attacker reaches you.
+
+use_cases:
+  - Ban brute-force IPs on SSH and inference API hosts from parsed logs
+  - Run the AppSec WAF in front of an Open WebUI or agent control plane
+  - Share detected scrapers with the community blocklist and consume it
+  - Decouple log parsing on app nodes from firewall bans on the edge

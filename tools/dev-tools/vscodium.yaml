@@ -1,0 +1,26 @@
+name: VSCodium
+description: Community builds of VS Code without Microsoft branding, telemetry, or the proprietary license. Same editor and extension model, shipped as MIT-licensed binaries you can install yourself.
+tagline: VS Code binaries without Microsoft telemetry
+
+github_url: https://github.com/VSCodium/vscodium
+website_url: https://vscodium.com
+docs_url: https://github.com/VSCodium/vscodium/blob/master/docs/index.md
+install_command: brew install --cask vscodium
+
+category: Dev Tools
+tags: [editor, vscode, telemetry, mit, ide, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Microsoft VS Code is MIT in source but the official binaries add
+  telemetry and a product license. VSCodium rebuilds the same editor
+  without those extras, so teams that want a VS Code workflow on laptops
+  used for model work can stay on MIT binaries and Open VSX extensions.
+
+use_cases:
+  - Run a VS Code-compatible editor without Microsoft telemetry on a research laptop
+  - Install MIT-licensed binaries via Homebrew for air-gapped ML workstations
+  - Use Open VSX extensions instead of the Microsoft marketplace
+  - Keep a familiar VS Code UI while meeting open-source binary requirements

@@ -1,0 +1,26 @@
+name: Lapce
+description: Lightning-fast code editor written in Rust. Uses a GPU-accelerated UI, built-in LSP, remote development, and a plugin system so you get a native IDE without Electron.
+tagline: GPU-accelerated code editor written in Rust
+
+github_url: https://github.com/lapce/lapce
+website_url: https://lap.dev/lapce/
+docs_url: https://docs.lapce.dev/
+install_command: brew install --cask lapce
+
+category: Dev Tools
+tags: [editor, rust, lsp, gpu, ide, remote-development]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  VS Code is Electron-heavy, and terminal editors skip a native GUI.
+  Lapce is a Rust editor with a WGPU UI, built-in LSP, Vim mode, and
+  remote workspaces, so ML engineers get a fast desktop IDE for Python
+  and Rust without a Chromium process in the background.
+
+use_cases:
+  - Edit Python training code with LSP diagnostics in a native Rust editor
+  - Open a remote workspace over SSH without running VS Code Server
+  - Use Vim keybindings in a GPU-accelerated GUI instead of a terminal
+  - Work on a mixed Rust and TypeScript agent stack with built-in LSP

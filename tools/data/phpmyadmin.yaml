@@ -1,0 +1,26 @@
+name: phpMyAdmin
+description: Web interface for MySQL and MariaDB. Browse databases, run SQL, import dumps, and manage users from a browser so you do not need a desktop SQL client on every host.
+tagline: Web UI for MySQL and MariaDB administration
+
+github_url: https://github.com/phpMyAdmin/phpMyAdmin
+website_url: https://www.phpmyadmin.net/
+docs_url: https://docs.phpmyadmin.net/
+install_command: brew install phpmyadmin
+
+category: Data
+tags: [mysql, mariadb, sql, php, admin, web-ui, database]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  MySQL on a remote host is awkward without a GUI, and shipping a desktop
+  client to every engineer does not scale. phpMyAdmin is a PHP web app you
+  drop next to the database so teams can browse schemas, run queries, and
+  import dumps from a browser with role-aware MySQL privileges.
+
+use_cases:
+  - Browse MySQL schemas used as metadata stores for RAG pipelines
+  - Import and export dumps when seeding a staging MariaDB for agents
+  - Manage users and privileges on a shared MySQL without a desktop client
+  - Run ad-hoc SQL against production-like replicas from a locked-down host
