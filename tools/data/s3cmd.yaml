@@ -1,0 +1,25 @@
+name: s3cmd
+description: Command-line tool for uploading, downloading, syncing, and managing objects on Amazon S3 and S3-compatible stores. Used to move datasets, model artifacts, and backups to object storage from scripts and CI without a full SDK.
+tagline: Command-line client for S3 and compatible object stores
+
+github_url: https://github.com/s3tools/s3cmd
+website_url: https://s3tools.org/s3cmd
+docs_url: https://s3tools.org/usage
+install_command: pip install s3cmd
+
+category: Data
+tags: [s3, object-storage, cli, python, datasets, backup, cloud-storage]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  ML pipelines need a small CLI to put datasets and checkpoints on S3 or MinIO
+  from shells and CI, without wiring an SDK. s3cmd covers upload, download, sync,
+  ACLs, and CloudFront so data jobs can talk to object storage with one tool.
+
+use_cases:
+  - Sync training datasets and model checkpoints to Amazon S3 or MinIO from CI
+  - Script recursive uploads of experiment artifacts with include and exclude filters
+  - Manage buckets, ACLs, and CloudFront invalidations for public dataset releases
+  - Mirror local data directories to S3-compatible storage for disaster recovery
