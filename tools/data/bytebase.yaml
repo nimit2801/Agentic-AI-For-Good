@@ -1,0 +1,26 @@
+name: Bytebase
+description: Open-source database governance platform. Review, deploy, and audit schema changes across Postgres, MySQL, and more, with GitOps, SQL review, and an MCP server for AI agents.
+tagline: Database change governance for humans and agents
+
+github_url: https://github.com/bytebase/bytebase
+website_url: https://www.bytebase.com
+docs_url: https://docs.bytebase.com
+install_command: docker run --init --name bytebase --publish 8080:8080 --volume ~/.bytebase/data:/var/opt/bytebase bytebase/bytebase:latest
+
+category: Data
+tags: [database, gitops, sql-review, postgres, mysql, governance, mcp]
+pricing: freemium
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Schema changes still go through chat, tickets, and raw SQL clients, so
+  agents and humans bypass review. Bytebase sits in front of Postgres,
+  MySQL, and warehouses as a control plane: request, review, deploy, and
+  audit every change, with an MCP server so coding agents use the same path.
+
+use_cases:
+  - Review and deploy Postgres migrations for a RAG metadata database via GitOps
+  - Give an AI agent MCP access to run SQL only through Bytebase policies
+  - Enforce 200-plus SQL lint rules before applying ClickHouse or MySQL DDL
+  - Grant time-boxed just-in-time access to a feature-store database
