@@ -1,0 +1,25 @@
+name: TablePlus
+description: Native GUI client for relational databases. Connects to PostgreSQL, MySQL, SQLite, Redis, ClickHouse, and more from a fast desktop app with a query editor, schema browser, and SSH tunnels.
+tagline: Native GUI client for relational databases
+
+github_url: https://github.com/TablePlus/TablePlus
+website_url: https://tableplus.com
+docs_url: https://docs.tableplus.com
+install_command: brew install --cask tableplus
+
+category: Data
+tags: [database, sql-client, gui, postgresql, mysql, redis, desktop]
+pricing: paid
+is_open_source: false
+
+problem_solved: |
+  Browser SQL UIs and Java IDEs feel heavy when you just need to inspect a
+  Postgres feature store or Redis cache. TablePlus is a native desktop client
+  with tabs, SSH tunnels, and a fast query editor so you can browse schemas
+  and edit rows without phpMyAdmin or a JVM.
+
+use_cases:
+  - Browse a PostgreSQL RAG metadata database over an SSH tunnel
+  - Run ad-hoc SQL against MySQL and ClickHouse from one native window
+  - Inspect Redis keys used as an inference cache during debugging
+  - Edit rows in a SQLite experiment log without writing UPDATE by hand

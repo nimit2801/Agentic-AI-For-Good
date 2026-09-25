@@ -1,0 +1,26 @@
+name: Helix
+description: Post-modern modal text editor written in Rust. Ships with a built-in LSP client, tree-sitter highlighting, and multiple selections, so you get IDE-like editing without a plugin manager.
+tagline: Post-modern modal editor with built-in LSP
+
+github_url: https://github.com/helix-editor/helix
+website_url: https://helix-editor.com
+docs_url: https://docs.helix-editor.com
+install_command: brew install helix
+
+category: Dev Tools
+tags: [editor, rust, lsp, tree-sitter, modal, terminal, vim]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  Vim and Neovim need a plugin stack for LSP, treesitter, and fuzzy find.
+  Helix bakes those in: native LSP, tree-sitter grammars, multiple cursors,
+  and a selection-first modal model, so ML engineers get a fast terminal
+  editor that works over SSH without configuring a plugin manager.
+
+use_cases:
+  - Edit Python training scripts with built-in LSP diagnostics over SSH
+  - Navigate a large YAML catalog or Rust crate with tree-sitter motions
+  - Pair-edit agent code in tmux without installing a Neovim plugin suite
+  - Use multiple selections to rename symbols across a config directory
