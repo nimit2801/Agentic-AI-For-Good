@@ -1,0 +1,26 @@
+name: Beszel
+description: Lightweight hub-and-agent server monitor with historical charts, Docker and Podman stats, GPU metrics, S.M.A.R.T. disk health, and alerts. Smaller than Prometheus-plus-Grafana stacks when you just need a dashboard and notifications on lab hosts.
+tagline: Lightweight server monitoring with Docker stats and alerts
+
+github_url: https://github.com/henrygd/beszel
+website_url: https://beszel.dev
+docs_url: https://beszel.dev/guide/getting-started
+
+category: Monitoring
+tags: [monitoring, docker, gpu, alerts, self-hosted, observability, pocketbase]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Prometheus plus Grafana is heavy when you only need CPU, RAM, disk, GPU,
+  and container charts plus alerts. Beszel is a PocketBase hub with a tiny
+  agent per host that records history, Docker stats, S.M.A.R.T., and GPU
+  so a homelab or GPU box gets a dashboard without a full metrics stack.
+
+use_cases:
+  - Watch CPU, memory, disk, and GPU on lab and homelab hosts from one hub
+  - Track Docker or Podman container CPU, memory, and network over time
+  - Alert on disk health, high load, or GPU power without Prometheus
+  - Share systems across users with OAuth and per-user ownership
+  - Back up monitoring history to disk or S3-compatible storage

@@ -1,0 +1,27 @@
+name: qBittorrent
+description: Open-source BitTorrent client in C++ and Qt with an embedded search engine, RSS downloader, Web UI, and sequential download. Used to fetch public datasets, model weights, and Linux ISOs without a proprietary client or tracker lock-in.
+tagline: Open-source BitTorrent client with a built-in Web UI
+
+github_url: https://github.com/qbittorrent/qBittorrent
+website_url: https://www.qbittorrent.org
+docs_url: https://github.com/qbittorrent/qBittorrent/wiki
+install_command: brew install qbittorrent
+
+category: Other
+tags: [bittorrent, p2p, download, datasets, self-hosted, qt]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Public ML datasets, model weights, and Linux images are often seeded
+  over BitTorrent, but closed clients inject ads or phone home. qBittorrent
+  is a GPL client with RSS, search, and a Web UI so labs can fetch large
+  torrents on a NAS or headless box without a proprietary downloader.
+
+use_cases:
+  - Download public datasets and model weight torrents onto a lab NAS
+  - Run the Web UI on a headless server and manage transfers remotely
+  - Subscribe to RSS feeds that publish new dataset or ISO torrents
+  - Sequential-download a large archive so training can start before 100 percent
+  - Replace ad-supported torrent clients for internal dataset distribution
