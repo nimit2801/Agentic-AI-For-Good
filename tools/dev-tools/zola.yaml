@@ -1,0 +1,28 @@
+name: Zola
+description: Fast static site generator in a single Rust binary with Markdown, Sass, syntax highlighting, and built-in search. AI teams publish model cards, eval writeups, and docs from Git without a Node toolchain or CMS.
+tagline: Single-binary static sites for docs and model cards
+
+github_url: https://github.com/getzola/zola
+website_url: https://www.getzola.org
+docs_url: https://www.getzola.org/documentation/getting-started/overview/
+
+install_command: brew install zola
+
+category: Dev Tools
+tags: [static-site, rust, markdown, documentation, sass, cli]
+pricing: free
+is_open_source: true
+license: EUPL-1.2
+
+problem_solved: |
+  Model cards and eval reports stall when a CMS or Node toolchain is required
+  just to ship Markdown. Zola builds those sites from a single binary with
+  Sass, search, and live reload so teams can publish experiment writeups in
+  CI without Hugo templates or a JavaScript stack.
+
+use_cases:
+  - Publish model cards and eval reports as a Git-backed static site
+  - Host API docs with built-in search and no third-party search SaaS
+  - Rebuild documentation on every merge as a single-binary CI artifact
+  - Generate a project landing page from Markdown without a Node toolchain
+  - Serve experiment writeups locally with live reload while editing
