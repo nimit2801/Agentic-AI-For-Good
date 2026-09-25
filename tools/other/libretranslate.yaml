@@ -1,0 +1,26 @@
+name: LibreTranslate
+description: Self-hosted machine translation API that runs offline with no telemetry. Useful when RAG, localization, and data pipelines need language conversion without sending text to a commercial translation cloud.
+tagline: Self-hosted offline machine translation API
+
+github_url: https://github.com/LibreTranslate/LibreTranslate
+website_url: https://libretranslate.com
+docs_url: https://docs.libretranslate.com
+install_command: pip install libretranslate
+
+category: Other
+tags: [translation, nlp, self-hosted, api, python, offline, agpl]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Translating documents and prompts usually means sending text to a cloud
+  API. LibreTranslate is a self-hosted translation service you can run
+  offline, so RAG pipelines and localization jobs keep content on your
+  infrastructure.
+
+use_cases:
+  - Translate crawled documents before embedding them in a private RAG index
+  - Localize UI strings and datasets without a commercial translation API
+  - Run an offline translation endpoint for air-gapped research environments
+  - Batch-translate multilingual support tickets or research papers on your GPU
