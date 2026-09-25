@@ -1,0 +1,26 @@
+name: rust-analyzer
+description: Official Rust language server that gives IDEs go-to-definition, completions, rustfmt, and clippy diagnostics over LSP. Use it from VS Code, Neovim, Emacs, or Zed when you edit tokenizers, inference kernels, or CLI tools in Rust.
+tagline: Rust language server for IDEs via LSP
+
+github_url: https://github.com/rust-lang/rust-analyzer
+website_url: https://rust-analyzer.github.io
+docs_url: https://rust-analyzer.github.io/book/installation.html
+install_command: rustup component add rust-analyzer
+
+category: Dev Tools
+tags: [rust, lsp, ide, language-server, completions, clippy]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Rust without an IDE is compile-and-pray. rust-analyzer is the compiler
+  front-end that speaks LSP, so VS Code, Neovim, and Zed get completions,
+  go-to-definition, rustfmt, and clippy without waiting on a full cargo
+  build for every hover in a tokenizer or kernel crate.
+
+use_cases:
+  - Edit a Rust inference crate in Neovim with go-to-definition and clippy
+  - Autocomplete traits and macros in a tokenizers or candle project
+  - Format and diagnose on save via rustfmt and rustc through LSP
+  - Use the same language server from VS Code, Emacs, Helix, or Zed

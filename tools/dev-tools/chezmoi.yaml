@@ -1,0 +1,26 @@
+name: Chezmoi
+description: Dotfile manager that templates, encrypts, and syncs config across machines from a git repo. Keep Neovim, SSH, and GPU-host shells consistent without copying files by hand or committing secrets in the clear.
+tagline: Manage dotfiles across machines, securely
+
+github_url: https://github.com/twpayne/chezmoi
+website_url: https://www.chezmoi.io
+docs_url: https://www.chezmoi.io
+install_command: brew install chezmoi
+
+category: Dev Tools
+tags: [dotfiles, git, secrets, golang, devops, config]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Dotfiles drift across laptops, GPU boxes, and jump hosts, and git repos
+  leak secrets. Chezmoi templates configs per machine, encrypts private
+  files, and applies them from one repo so Neovim, SSH, and shell setup
+  stay in sync without copying by hand.
+
+use_cases:
+  - Sync Neovim and shell config from a laptop to a GPU SSH host
+  - Encrypt API tokens in the dotfile repo instead of committing them
+  - Template hostname-specific aliases for lab vs home machines
+  - Bootstrap a new workstation with one chezmoi init from git

@@ -1,0 +1,26 @@
+name: Dokploy
+description: Self-hosted PaaS that deploys apps and databases on your VPS with Docker Compose, Traefik, backups, and multi-server support. Open-source alternative to Vercel, Netlify, and Heroku for agent APIs and demos you want to keep on hardware you control.
+tagline: Self-hosted PaaS alternative to Vercel and Heroku
+
+github_url: https://github.com/Dokploy/dokploy
+website_url: https://dokploy.com
+docs_url: https://docs.dokploy.com
+install_command: curl -sSL https://dokploy.com/install.sh | bash
+
+category: Dev Tools
+tags: [paas, docker, self-hosted, deploy, traefik, vps, databases]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Shipping an agent API or demo often means a Vercel bill or a pile of
+  docker-compose files. Dokploy is a self-hosted PaaS that deploys apps and
+  databases on your VPS with Traefik, backups, and multi-server support so
+  you keep Git-push deploys without a public cloud lock-in.
+
+use_cases:
+  - Deploy a Dockerized agent API or Next.js demo to a VPS you already pay for
+  - Host Postgres, Redis, and Mongo next to the app with automated backups
+  - Scale a compose stack across Docker Swarm nodes from one dashboard
+  - Get Slack or Discord alerts when a production deploy fails

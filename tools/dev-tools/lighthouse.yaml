@@ -1,0 +1,26 @@
+name: Lighthouse
+description: Automated audits for performance, accessibility, SEO, and best practices on web pages. Run it in Chrome DevTools, CI, or the Node CLI to catch slow agent dashboards and docs sites before they ship.
+tagline: Automated web performance and quality audits
+
+github_url: https://github.com/GoogleChrome/lighthouse
+website_url: https://developer.chrome.com/docs/lighthouse/overview
+docs_url: https://github.com/GoogleChrome/lighthouse
+install_command: npm install -g lighthouse
+
+category: Dev Tools
+tags: [performance, accessibility, seo, chrome, ci, auditing, web]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Agent UIs and docs sites ship without a performance budget until users
+  complain. Lighthouse scores performance, a11y, SEO, and best practices
+  in DevTools, CI, or the CLI so you catch layout shift and unused JS
+  before a dashboard goes to production.
+
+use_cases:
+  - Audit an agent control-plane UI for LCP and layout shift in CI
+  - Score accessibility on a public docs or catalog site before launch
+  - Run the Node CLI against staging URLs in GitHub Actions
+  - Compare Lighthouse reports after a frontend rewrite or bundler swap
