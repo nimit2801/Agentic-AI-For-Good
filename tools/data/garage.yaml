@@ -1,0 +1,26 @@
+name: Garage
+description: Lightweight S3-compatible object store designed for geo-distributed self-hosting. Replicates data across zones so you can keep model artifacts and datasets available even on modest, multi-site hardware.
+tagline: S3 object store for geo-distributed self-hosting
+
+github_url: https://github.com/deuxfleurs-org/garage
+website_url: https://garagehq.deuxfleurs.fr
+docs_url: https://garagehq.deuxfleurs.fr/documentation/
+install_command: brew install garage
+
+category: Data
+tags: [s3, object-storage, self-hosted, distributed-storage, rust, backup]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  MinIO and Ceph assume a datacenter. Garage targets small, geo-spread
+  clusters: it implements the S3 API, replicates chunks across zones, and
+  stays operational when sites are weakly connected, so teams can self-host
+  training data, checkpoints, and backups without a full object-storage ops team.
+
+use_cases:
+  - Store model checkpoints on a three-site homelab or office cluster via S3
+  - Back up RAG corpora to a self-hosted S3 endpoint compatible with rclone
+  - Host static dataset buckets for training jobs that already speak S3
+  - Replace a single-node MinIO with zone-replicated object storage

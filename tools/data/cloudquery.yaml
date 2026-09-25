@@ -1,0 +1,26 @@
+name: CloudQuery
+description: Open-source ELT that syncs cloud infrastructure, security, and SaaS metadata from AWS, Azure, GCP, and 70+ sources into Postgres, warehouses, and lakes so you can query your cloud as SQL.
+tagline: Sync cloud config into SQL for inventory and FinOps
+
+github_url: https://github.com/cloudquery/cloudquery
+website_url: https://www.cloudquery.io
+docs_url: https://www.cloudquery.io/docs
+install_command: brew install cloudquery
+
+category: Data
+tags: [elt, cloud, aws, gcp, azure, sql, asset-inventory, postgres, finops]
+pricing: freemium
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  Cloud APIs are fragmented, rate-limited, and poorly documented, so teams
+  write one-off scripts to inventory GPUs, IAM, and spend. CloudQuery runs
+  on your infra, normalizes 80+ sources into tables, and lands them in
+  Postgres or a warehouse so RAG agents and FinOps dashboards query one schema.
+
+use_cases:
+  - Build a SQL inventory of GPU instances and IAM across AWS, GCP, and Azure
+  - Sync GitHub, Wiz, and cloud billing into Postgres for a FinOps dashboard
+  - Feed a RAG agent structured cloud-config context without hitting live APIs
+  - Enforce CSPM policies with SQL over normalized multi-cloud asset tables

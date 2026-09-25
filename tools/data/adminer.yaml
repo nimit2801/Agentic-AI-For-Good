@@ -1,0 +1,25 @@
+name: Adminer
+description: Full-featured database admin in a single PHP file. Connects to MySQL, MariaDB, PostgreSQL, SQLite, MS SQL, Oracle, and more, so you can inspect schemas and run SQL without installing phpMyAdmin.
+tagline: Database management in a single PHP file
+
+github_url: https://github.com/vrana/adminer
+website_url: https://www.adminer.org/
+docs_url: https://www.adminer.org/
+
+category: Data
+tags: [database, sql, php, mysql, postgresql, sqlite, admin]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  phpMyAdmin is a large PHP app with many files and MySQL-only roots.
+  Adminer ships as one file you drop on a host, talks to seven SQL engines
+  plus plugins for Elasticsearch, MongoDB, and ClickHouse, and stays small
+  enough to use as a temporary admin UI on a feature-store or RAG database.
+
+use_cases:
+  - Inspect PostgreSQL schemas and run EXPLAIN on a RAG metadata database
+  - Browse SQLite files used as local caches for agent experiments
+  - Give a teammate a one-file SQL UI on a staging MySQL without phpMyAdmin
+  - Query ClickHouse or Elasticsearch via Adminer plugins during debugging

@@ -1,0 +1,26 @@
+name: pglogical
+description: Logical replication extension for PostgreSQL that copies selected tables, rows, and columns between clusters, including across major versions, faster than trigger-based tools like Slony or Bucardo.
+tagline: Selective logical replication for PostgreSQL
+
+github_url: https://github.com/2ndQuadrant/pglogical
+website_url: https://www.enterprisedb.com/docs/supported-open-source/pglogical2/
+docs_url: https://www.enterprisedb.com/docs/supported-open-source/pglogical2/
+
+category: Data
+tags: [postgresql, replication, cdc, extension, upgrades, data-pipeline]
+pricing: free
+is_open_source: true
+license: PostgreSQL
+
+problem_solved: |
+  Physical streaming replication copies the whole cluster and cannot skip
+  versions or filter tables. pglogical publishes logical changes so you can
+  replicate a subset of tables (or rows) between Postgres versions, feed a
+  read replica for RAG queries, or run online major-version upgrades without
+  dumping the entire database.
+
+use_cases:
+  - Replicate selected feature-store tables to an analytics Postgres replica
+  - Online major-version upgrade of a production Postgres used by agents
+  - Filter rows at the publisher so staging only receives a tenant subset
+  - Keep a reporting cluster in sync without trigger-based Slony overhead

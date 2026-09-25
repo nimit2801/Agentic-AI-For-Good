@@ -1,0 +1,26 @@
+name: HypoPG
+description: PostgreSQL extension that creates hypothetical indexes so you can test whether a proposed index would be used by the planner without building it on disk or spending CPU.
+tagline: Hypothetical indexes for PostgreSQL query planning
+
+github_url: https://github.com/HypoPG/hypopg
+website_url: https://hypopg.readthedocs.io
+docs_url: https://hypopg.readthedocs.io
+install_command: brew install hypopg
+
+category: Data
+tags: [postgresql, indexes, query-planning, extension, performance, explain]
+pricing: free
+is_open_source: true
+license: PostgreSQL
+
+problem_solved: |
+  Choosing indexes for RAG metadata tables, feature stores, and agent
+  event logs usually means CREATE INDEX, wait, EXPLAIN, DROP. HypoPG lets
+  you inject virtual indexes into a single backend so EXPLAIN shows whether
+  Postgres would use them, with no disk cost and no impact on other sessions.
+
+use_cases:
+  - Test whether a btree on embedding_id would change a slow RAG lookup plan
+  - Compare hypothetical composite indexes on a feature-store fact table
+  - Teach query planning in notebooks without mutating a shared Postgres
+  - Screen index ideas before running CREATE INDEX CONCURRENTLY in production
