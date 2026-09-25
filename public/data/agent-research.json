@@ -1,282 +1,709 @@
 {
-  "generatedAt": "2026-09-23T18:30:40Z",
+  "generatedAt": "2026-09-25T20:39:04Z",
   "windowDays": 7,
-  "summary": "This cycle says tiny tool-calling models are becoming real. The deeper pattern is that agentic AI is being compressed, packaged, and made more inspectable at the same time.",
+  "summary": "Claude Opus 5.5 (1,797 HN points) and GPT-6 Sol/Luna (1,771) landed on the same day, and the routing question is now dollars per agent-hour, not which model is smartest. Opus 5.5 leads Terminal-Bench 4.0 at 66.4% and costs about 40% less than Opus 5; Sol at xhigh beats Opus 5 on AutomationBench at 9% of the cost. After the launches, Claude agents found a novel CRISPR-like enzyme system, an OpenAI research agent hit an Australian government site, and a US appeals court left Anthropic designated a Pentagon supply-chain risk. Underneath the lab news, System-1 decision models (Laya at 24k stars in a week, Kev, Ollaya) and Google AX are what builders are actually cloning.",
   "sourceStats": {
-    "items": 26,
+    "items": 32,
     "sources": {
-      "GitHub": 24,
-      "Hacker News": 1,
-      "OpenAI": 1
+      "Anthropic": 4,
+      "OpenAI": 1,
+      "Google": 1,
+      "xAI": 1,
+      "Qwen": 1,
+      "Hacker News": 12,
+      "Hugging Face": 2,
+      "GitHub": 10
     }
   },
   "highlights": [
     {
-      "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-      "url": "https://openai.com/index/ringg",
-      "publishedAt": "Thu, 24 Sep 2026 12:00:00 GMT",
-      "source": "OpenAI",
-      "meta": "Thu, 24 Sep 2026 12:00:00 GMT",
       "topics": [
-        "Major labs"
+        "Major labs",
+        "Coding agents",
+        "Evaluation"
       ],
-      "score": 180,
-      "summary": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-      "why": "Major lab launches still reshape the practical design space for agent builders almost overnight."
+      "score": 4037,
+      "summary": "First Claude 5.5 model. Anthropic says it matches Fable 5.1 on most work, costs about 40% less than Opus 5, and leads Terminal-Bench 4.0 at 66.4%. API id claude-opus-5-5. Input $4 / output $20 per 1M tokens; cache reads $0.20.",
+      "why": "The default coding-agent engine just got cheaper and faster. Opus 5.5 is the new bar for long migrations, computer use, and prompt-injection resistance, with thinking mode no longer optional.",
+      "title": "Claude Opus 5.5",
+      "source": "Anthropic",
+      "url": "https://www.anthropic.com/claude-opus-5-5",
+      "meta": "1797 pts · 1120 comments",
+      "publishedAt": "2026-09-22T16:29:05Z"
     },
     {
-      "title": "Show HN: Cactus Needle 3: 8-29MB automation models can match DeepSeek V4 Flash",
-      "source": "Hacker News",
-      "url": "https://cactuscompute.com/needle",
-      "meta": "236 pts · 92 comments",
       "topics": [
-        "Tool use",
-        "Evaluation",
-        "Open weights",
-        "Major labs"
-      ],
-      "publishedAt": "2026-09-18T00:11:44Z",
-      "score": 868,
-      "summary": "Hey HN, Henry from Cactus here. We submitted Needle 2 here a few weeks ago, and the feedback in the discussion thread was incredibly valuable, thanks! Thanks to all that feedback, we’ve been able to move quickly to release Needle 3 and I&#x27;d love to hear what you think again. The key features: 1) Automation (tool calls & structured JSON output): Needle still doesn&#x27;t chat by design, its quite challenging to pack general capacity into such small models, so we focus on tool calls and structured JSON. If no tool you declared fits the request, you get an empty list back (note for when playing with the demo). 2) Intelligence Laddering: Every layer (2 to 20) is a deployable subnetwork, so one set of weights, 25 to 121 million parameters at 2-bit, shipping as 8-29MB binaries. On a Raspberry Pi 5 it decodes at up to 4k tokens&#x2F;sec and prefills at up to 10k. 3) Monarch Hadamard MLP: replaces the dense FFN with three learnable Walsh-Hadamard-initialized Kronecker (Monarch) factor pairs interleaved with per-channel diagonal scales, fixed permutations, a SiLU nonlinearity, and a rank-8 input-conditioned gate, so each token gets a fully mixed nonlinear transform of its d_model channels at O(d√d) parameters and compute instead of the O(d²) a dense 4x-expansion MLP would cost. 4) Performance: On Mobile Actions (phone commands, scored on the exact call) the 20-layer model gets 86.0 through the shipped 2-bit binary; LFM2.5 1.2B is at 82.4, Qwen3.5 0.8B at 76.0, Apple&#x27;s on-device model at 57.6, all at f16. More results on the link, we do not win everywhere ofc. 5) Multilingual: Needle 3 now supports English, French, Spanish, German, Dutch, Italian, Polish, with more languages coming. 6) Finetuning: You can achieve DeepSeek v4 Flash grade performance on a narrow task with just 4L, stress on \"narrow task\", we found that production users often prefer tuning before production. 7) Triggers: Grounding is a common challenge for tool call, at least for Needle 2, so we added support case-insensitive regular expressions matched against each request to gate false negatives. 8) Confidence: Every response also carries a calibrated confidence score, the minimum of a judgement on the finished call and its decode probability. Act above your threshold, show the call and ask below it, or escalate to a bigger model. 9) Supported Platforms: macOS, Linux on x86-64, ARM64, ARMv7, RISC-V and MIPS32, Windows x64 and ARM, Android, iOS, watchOS, tvOS, the browser as WebAssembly, and a WASI component. Thanks for reading and as always, thoughts appreciated!",
-      "why": "A 26M-parameter function-calling model is a real compression milestone: useful tool use is getting small enough to run on tiny devices, not just cloud GPUs."
-    },
-    {
-      "title": "google-gemini/gemini-cli",
-      "source": "GitHub",
-      "url": "https://github.com/google-gemini/gemini-cli",
-      "meta": "107138 stars · updated Wed, 23 Sep 2026 18:02:49 UTC",
-      "topics": [
-        "Tool use",
-        "Open weights",
         "Major labs",
         "Coding agents"
       ],
-      "publishedAt": "2025-04-17T17:04:31Z",
-      "score": 672210,
-      "summary": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
-      "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
+      "score": 3469,
+      "summary": "Cost-down siblings of GPT-6 Astra. Sol is $2/$10 per 1M tokens; Luna is $0.10/$0.50. OpenAI says Sol at xhigh beats Claude Opus 5 on AutomationBench at 9% of the cost.",
+      "why": "Routing is no longer \"pick the smartest model.\" Sol and Luna make dollars per agent-hour the first-class design choice for worker fleets.",
+      "title": "GPT-6 Sol and Luna",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+      "meta": "1771 pts · 849 comments",
+      "publishedAt": "2026-09-22T18:00:34Z"
     },
     {
-      "title": "LearningCircuit/local-deep-research",
-      "source": "GitHub",
-      "url": "https://github.com/LearningCircuit/local-deep-research",
-      "meta": "9121 stars · updated Wed, 23 Sep 2026 08:06:01 UTC",
       "topics": [
-        "Tool use",
-        "Evaluation",
-        "Open weights",
+        "Major labs",
+        "Multi-agent workflows",
+        "Evaluation"
+      ],
+      "score": 2359,
+      "summary": "Anthropic launched a life-sciences lab where Claude mined DNA with only high-level scientist direction and found a reverse-transcriptase system with CRISPR-like repeats.",
+      "why": "A real multi-agent science loop, not a toy demo. Long-horizon agents with lab tools are now producing claims that biologists have to check.",
+      "title": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+      "source": "Anthropic",
+      "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+      "meta": "773 pts · 793 comments",
+      "publishedAt": "2026-09-23T18:06:47Z"
+    },
+    {
+      "topics": [
+        "Multi-agent workflows",
+        "Infra and retrieval",
         "Major labs"
       ],
-      "publishedAt": "2025-02-09T15:41:32Z",
-      "score": 56498,
-      "summary": "~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all local and cloud LLMs (llama.cpp, Ollama, Google, ...). 10+ search engines - arXiv, PubMed, your private documents. Everything Local & Encrypted.",
-      "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
+      "score": 1261,
+      "summary": "Google open-sourced AX, a Kubernetes-shaped orchestrator with Task, Workspace, Gateway, and Model primitives, MCP and skills pre-wired, plus network fencing and suspend/resume. Apache-2.0.",
+      "why": "This is infrastructure for dense agent fleets, not another chat wrapper. If you run many agents, AX is the open control plane to try.",
+      "title": "AX – Google’s Open Agentic Orchestrator",
+      "source": "Hacker News",
+      "url": "https://github.com/google/ax",
+      "meta": "663 pts · 299 comments · 11391 stars",
+      "publishedAt": "2026-09-20T22:32:43Z"
+    },
+    {
+      "topics": [
+        "Coding agents",
+        "Tool use"
+      ],
+      "score": 1045,
+      "summary": "A remote feature flag gated local AGENTS.md loading. Privacy-minded and Bedrock/Vertex users silently lost project instructions. Workaround was a one-line CLAUDE.md with @AGENTS.md. Anthropic later fixed it.",
+      "why": "Shared instruction files are now load-bearing infrastructure. If a cloud flag can hide AGENTS.md, your agent config is not actually local.",
+      "title": "Claude Code reads AGENTS.md only when telemetry is on [fixed]",
+      "source": "Hacker News",
+      "url": "https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/",
+      "meta": "481 pts · 282 comments",
+      "publishedAt": "2026-09-23T12:15:33Z"
+    },
+    {
+      "topics": [
+        "Open weights",
+        "Tool use",
+        "Evaluation"
+      ],
+      "score": 864,
+      "summary": "Jared Palmer released trainable open-weight Jev clones (0.8B–9B, Apache-2.0) on Qwen 3.5/3.8 for typed yes/no, choice, and score decisions in one pass.",
+      "why": "Typed System-1 gates no longer require a closed API. Kev lets you train and run the decision head that sits in front of a slower planner.",
+      "title": "Kev: Tiny Jev-like family of decision models built on top of Qwen3.5",
+      "source": "Hacker News",
+      "url": "https://github.com/jaredpalmer/kev",
+      "meta": "460 pts · 202 comments · 6980 stars",
+      "publishedAt": "2026-09-21T07:11:55Z"
+    },
+    {
+      "topics": [
+        "Open weights",
+        "Tool use",
+        "Coding agents"
+      ],
+      "score": 800,
+      "summary": "Non-autoregressive System-1 decision engine: typed choice, score, and yes/no over any text in one forward pass, 100+ languages, with a router that picks the checkpoint per request. Apache-2.0.",
+      "why": "24k stars in a week is the gravity well under Kev, Ollaya, Laya-MLX, and Jev-Mem. Fast local decisions are becoming a separate model class from generation.",
+      "title": "NandhaKishorM/laya",
+      "source": "GitHub",
+      "url": "https://github.com/NandhaKishorM/laya",
+      "meta": "24512 stars · created 18 Sep 2026",
+      "publishedAt": "2026-09-18T04:46:33Z"
+    },
+    {
+      "topics": [
+        "Major labs"
+      ],
+      "score": 1163,
+      "summary": "A US appeals court left Anthropic designated a Pentagon supply-chain risk, which keeps Claude off DoD and many contractor systems.",
+      "why": "Enterprise agent stacks that assume Claude everywhere now need a non-Anthropic fallback for government and defense work.",
+      "title": "U.S. appeals court upholds designation of Anthropic as supply chain risk",
+      "source": "Hacker News",
+      "url": "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html",
+      "meta": "285 pts · 439 comments",
+      "publishedAt": "2026-09-25T15:29:25Z"
+    },
+    {
+      "topics": [
+        "Major labs",
+        "Tool use",
+        "Evaluation"
+      ],
+      "score": 649,
+      "summary": "Australia’s prime minister said an OpenAI research agent reached a non-public Medicare stats portal. Disclosure was delayed.",
+      "why": "Production agents need egress allowlists, sandboxes, and incident SLAs. A research crawl that hits a government site is now a diplomatic event.",
+      "title": "OpenAI agent hacked Australian government website, PM says",
+      "source": "Hacker News",
+      "url": "https://www.bbc.com/news/live/cvgl73pxgndwt",
+      "meta": "253 pts · 198 comments",
+      "publishedAt": "2026-09-24T02:44:48Z"
+    },
+    {
+      "topics": [
+        "Voice and multimodal",
+        "Major labs",
+        "Interfaces"
+      ],
+      "score": 320,
+      "summary": "Live Avatar adds a visual persona on Gemini 3.8 Live: async tool calls while speech and video keep going, lip-sync across 97 languages, custom avatars from a reference image. Gemini Enterprise only for now.",
+      "why": "Voice agents can stay present during background tool work instead of going silent. Presence is becoming part of the agent runtime, not a skin.",
+      "title": "Introducing Gemini 3.8 Live with Live Avatar",
+      "source": "Google",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
+      "meta": "Google blog · 24 Sep 2026",
+      "publishedAt": "2026-09-24T00:00:00Z"
     }
   ],
-  "sourceSections": [
-    {
-      "key": "major-labs",
-      "label": "Major labs",
-      "items": [
-        {
-          "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-          "url": "https://openai.com/index/ringg",
-          "publishedAt": "Thu, 24 Sep 2026 12:00:00 GMT",
-          "source": "OpenAI",
-          "meta": "Thu, 24 Sep 2026 12:00:00 GMT",
-          "topics": [
-            "Major labs"
-          ],
-          "score": 180,
-          "summary": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-          "why": "Major lab launches still reshape the practical design space for agent builders almost overnight."
-        }
-      ]
-    },
-    {
-      "key": "hacker-news",
-      "label": "Hacker News",
-      "items": [
-        {
-          "title": "Show HN: Cactus Needle 3: 8-29MB automation models can match DeepSeek V4 Flash",
-          "source": "Hacker News",
-          "url": "https://cactuscompute.com/needle",
-          "meta": "236 pts · 92 comments",
-          "topics": [
-            "Tool use",
-            "Evaluation",
-            "Open weights",
-            "Major labs"
-          ],
-          "publishedAt": "2026-09-18T00:11:44Z",
-          "score": 868,
-          "summary": "Hey HN, Henry from Cactus here. We submitted Needle 2 here a few weeks ago, and the feedback in the discussion thread was incredibly valuable, thanks! Thanks to all that feedback, we’ve been able to move quickly to release Needle 3 and I&#x27;d love to hear what you think again. The key features: 1) Automation (tool calls & structured JSON output): Needle still doesn&#x27;t chat by design, its quite challenging to pack general capacity into such small models, so we focus on tool calls and structured JSON. If no tool you declared fits the request, you get an empty list back (note for when playing with the demo). 2) Intelligence Laddering: Every layer (2 to 20) is a deployable subnetwork, so one set of weights, 25 to 121 million parameters at 2-bit, shipping as 8-29MB binaries. On a Raspberry Pi 5 it decodes at up to 4k tokens&#x2F;sec and prefills at up to 10k. 3) Monarch Hadamard MLP: replaces the dense FFN with three learnable Walsh-Hadamard-initialized Kronecker (Monarch) factor pairs interleaved with per-channel diagonal scales, fixed permutations, a SiLU nonlinearity, and a rank-8 input-conditioned gate, so each token gets a fully mixed nonlinear transform of its d_model channels at O(d√d) parameters and compute instead of the O(d²) a dense 4x-expansion MLP would cost. 4) Performance: On Mobile Actions (phone commands, scored on the exact call) the 20-layer model gets 86.0 through the shipped 2-bit binary; LFM2.5 1.2B is at 82.4, Qwen3.5 0.8B at 76.0, Apple&#x27;s on-device model at 57.6, all at f16. More results on the link, we do not win everywhere ofc. 5) Multilingual: Needle 3 now supports English, French, Spanish, German, Dutch, Italian, Polish, with more languages coming. 6) Finetuning: You can achieve DeepSeek v4 Flash grade performance on a narrow task with just 4L, stress on \"narrow task\", we found that production users often prefer tuning before production. 7) Triggers: Grounding is a common challenge for tool call, at least for Needle 2, so we added support case-insensitive regular expressions matched against each request to gate false negatives. 8) Confidence: Every response also carries a calibrated confidence score, the minimum of a judgement on the finished call and its decode probability. Act above your threshold, show the call and ask below it, or escalate to a bigger model. 9) Supported Platforms: macOS, Linux on x86-64, ARM64, ARMv7, RISC-V and MIPS32, Windows x64 and ARM, Android, iOS, watchOS, tvOS, the browser as WebAssembly, and a WASI component. Thanks for reading and as always, thoughts appreciated!",
-          "why": "A 26M-parameter function-calling model is a real compression milestone: useful tool use is getting small enough to run on tiny devices, not just cloud GPUs."
-        }
-      ]
-    },
-    {
-      "key": "reddit",
-      "label": "Reddit",
-      "items": []
-    },
-    {
-      "key": "hugging-face",
-      "label": "Hugging Face",
-      "items": []
-    },
-    {
-      "key": "github",
-      "label": "GitHub",
-      "items": [
-        {
-          "title": "google-gemini/gemini-cli",
-          "source": "GitHub",
-          "url": "https://github.com/google-gemini/gemini-cli",
-          "meta": "107138 stars · updated Wed, 23 Sep 2026 18:02:49 UTC",
-          "topics": [
-            "Tool use",
-            "Open weights",
-            "Major labs",
-            "Coding agents"
-          ],
-          "publishedAt": "2025-04-17T17:04:31Z",
-          "score": 672210,
-          "summary": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
-          "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
-        },
-        {
-          "title": "LearningCircuit/local-deep-research",
-          "source": "GitHub",
-          "url": "https://github.com/LearningCircuit/local-deep-research",
-          "meta": "9121 stars · updated Wed, 23 Sep 2026 08:06:01 UTC",
-          "topics": [
-            "Tool use",
-            "Evaluation",
-            "Open weights",
-            "Major labs"
-          ],
-          "publishedAt": "2025-02-09T15:41:32Z",
-          "score": 56498,
-          "summary": "~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all local and cloud LLMs (llama.cpp, Ollama, Google, ...). 10+ search engines - arXiv, PubMed, your private documents. Everything Local & Encrypted.",
-          "why": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate."
-        },
-        {
-          "title": "tamaratran/fast-jev-compaction",
-          "source": "GitHub",
-          "url": "https://github.com/tamaratran/fast-jev-compaction",
-          "meta": "6522 stars · updated Fri, 18 Sep 2026 04:45:31 UTC",
-          "topics": [
-            "Tool use",
-            "Coding agents"
-          ],
-          "publishedAt": "2026-09-18T04:45:31Z",
-          "score": 40062,
-          "summary": "Claude Code plugin that replaces the compaction summary with Jev decisions: every tool call and result is scored in one fast request, stale ones are dropped or truncated, everything kept stays verbatim.",
-          "why": "The strongest practical signal right now is still better tooling around how models call, sequence, and recover from actions."
-        },
-        {
-          "title": "MinishLab/semble",
-          "source": "GitHub",
-          "url": "https://github.com/MinishLab/semble",
-          "meta": "6136 stars · updated Fri, 18 Sep 2026 08:15:22 UTC",
-          "topics": [
-            "Tool use",
-            "Evaluation",
-            "Coding agents"
-          ],
-          "publishedAt": "2026-04-06T14:56:45Z",
-          "score": 37476,
-          "summary": "Fast and Accurate Code Search for Agents. Uses 99% fewer tokens than grep+read",
-          "why": "This is a strong agent-engineering efficiency signal: giving coding agents semantic code search instead of grep-based token waste directly reduces cost and improves latency on every agent loop."
-        }
-      ]
-    }
-  ],
+  "sourceSections": {
+    "majorLabs": [
+      {
+        "topics": [
+          "Major labs",
+          "Coding agents",
+          "Evaluation"
+        ],
+        "score": 4037,
+        "summary": "First Claude 5.5 model. Anthropic says it matches Fable 5.1 on most work, costs about 40% less than Opus 5, and leads Terminal-Bench 4.0 at 66.4%. API id claude-opus-5-5. Input $4 / output $20 per 1M tokens; cache reads $0.20.",
+        "why": "The default coding-agent engine just got cheaper and faster. Opus 5.5 is the new bar for long migrations, computer use, and prompt-injection resistance, with thinking mode no longer optional.",
+        "title": "Claude Opus 5.5",
+        "source": "Anthropic",
+        "url": "https://www.anthropic.com/claude-opus-5-5",
+        "meta": "1797 pts · 1120 comments",
+        "publishedAt": "2026-09-22T16:29:05Z"
+      },
+      {
+        "topics": [
+          "Major labs",
+          "Coding agents"
+        ],
+        "score": 3469,
+        "summary": "Cost-down siblings of GPT-6 Astra. Sol is $2/$10 per 1M tokens; Luna is $0.10/$0.50. OpenAI says Sol at xhigh beats Claude Opus 5 on AutomationBench at 9% of the cost.",
+        "why": "Routing is no longer \"pick the smartest model.\" Sol and Luna make dollars per agent-hour the first-class design choice for worker fleets.",
+        "title": "GPT-6 Sol and Luna",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+        "meta": "1771 pts · 849 comments",
+        "publishedAt": "2026-09-22T18:00:34Z"
+      },
+      {
+        "topics": [
+          "Major labs",
+          "Multi-agent workflows",
+          "Evaluation"
+        ],
+        "score": 2359,
+        "summary": "Anthropic launched a life-sciences lab where Claude mined DNA with only high-level scientist direction and found a reverse-transcriptase system with CRISPR-like repeats.",
+        "why": "A real multi-agent science loop, not a toy demo. Long-horizon agents with lab tools are now producing claims that biologists have to check.",
+        "title": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+        "source": "Anthropic",
+        "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+        "meta": "773 pts · 793 comments",
+        "publishedAt": "2026-09-23T18:06:47Z"
+      },
+      {
+        "topics": [
+          "Voice and multimodal",
+          "Major labs",
+          "Interfaces"
+        ],
+        "score": 320,
+        "summary": "Live Avatar adds a visual persona on Gemini 3.8 Live: async tool calls while speech and video keep going, lip-sync across 97 languages, custom avatars from a reference image. Gemini Enterprise only for now.",
+        "why": "Voice agents can stay present during background tool work instead of going silent. Presence is becoming part of the agent runtime, not a skin.",
+        "title": "Introducing Gemini 3.8 Live with Live Avatar",
+        "source": "Google",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
+        "meta": "Google blog · 24 Sep 2026",
+        "publishedAt": "2026-09-24T00:00:00Z"
+      },
+      {
+        "topics": [
+          "Major labs",
+          "Coding agents"
+        ],
+        "score": 280,
+        "summary": "Grok 4.7 is priced like 4.6 ($2 in / $6 out per 1M tokens), trained for multi-hour tasks and the Grok Bot harness. CursorBench 4.0: 46.3%. Default in Grok Build and Cursor.",
+        "why": "Same price as 4.6 with a longer RL run. Another frontier coding model that is cheap enough to leave on as the default agent engine.",
+        "title": "Introducing Grok 4.7",
+        "source": "xAI",
+        "url": "https://x.ai/news/grok-4-7",
+        "meta": "xAI blog · 21 Sep 2026",
+        "publishedAt": "2026-09-21T00:00:00Z"
+      },
+      {
+        "topics": [
+          "Major labs",
+          "Open weights",
+          "Voice and multimodal"
+        ],
+        "score": 260,
+        "summary": "At Apsara Conference Alibaba said Qwen 4 is in training, with Qwen 4.5/5 aimed at 5–10T params. Qwen3.8-Max ran 33 automated RSI cycles. Qwen Intelligence is a phone-OEM agent stack; Qwen-Audio-3.1 covers TTS, ASR, and realtime.",
+        "why": "The open-weight and mobile-agent counter to the US lab drops. RSI loops plus an on-device planner are the parts builders should watch.",
+        "title": "Alibaba unveils full-stack AI roadmap: Qwen 4 in training, agentic cloud, phone agents",
+        "source": "Qwen",
+        "url": "https://www.alibabacloud.com/en/press-room/alibaba-unveils-roadmap-on-full-stack-ai-strategy",
+        "meta": "Alibaba Cloud · 22 Sep 2026",
+        "publishedAt": "2026-09-22T00:00:00Z"
+      },
+      {
+        "topics": [
+          "Major labs",
+          "Evaluation"
+        ],
+        "score": 194,
+        "summary": "Anthropic reports Claude Science (Fable 5.1) computed N=4 SYM to nine loops for about $1–2k.",
+        "why": "Long-horizon scientific agents are in the keep-going-overnight regime. Cost per research loop is now a planning input.",
+        "title": "Yes, Claude can do nine loops",
+        "source": "Anthropic",
+        "url": "https://www.anthropic.com/research/yes-claude-can-do-nine-loops",
+        "meta": "100 pts · 47 comments",
+        "publishedAt": "2026-09-25T18:11:48Z"
+      },
+      {
+        "topics": [
+          "Major labs",
+          "Evaluation",
+          "Coding agents"
+        ],
+        "score": 524,
+        "summary": "Anthropic used Claude to cut claude.ai time-to-interactive from 3.1s to 0.55s by measuring, writing benches, and ratcheting.",
+        "why": "Eval-driven agent loops beat prompt-and-hope. If the agent can see a metric, it can grind the metric.",
+        "title": "Once Claude can measure something, it can make it faster",
+        "source": "Anthropic",
+        "url": "https://claude.dev/blog/how-we-made-claude-ai-faster/",
+        "meta": "224 pts · 150 comments",
+        "publishedAt": "2026-09-23T19:23:40Z"
+      }
+    ],
+    "hackerNews": [
+      {
+        "topics": [
+          "Coding agents",
+          "Tool use"
+        ],
+        "score": 1045,
+        "summary": "A remote feature flag gated local AGENTS.md loading. Privacy-minded and Bedrock/Vertex users silently lost project instructions. Workaround was a one-line CLAUDE.md with @AGENTS.md. Anthropic later fixed it.",
+        "why": "Shared instruction files are now load-bearing infrastructure. If a cloud flag can hide AGENTS.md, your agent config is not actually local.",
+        "title": "Claude Code reads AGENTS.md only when telemetry is on [fixed]",
+        "source": "Hacker News",
+        "url": "https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/",
+        "meta": "481 pts · 282 comments",
+        "publishedAt": "2026-09-23T12:15:33Z"
+      },
+      {
+        "topics": [
+          "Multi-agent workflows",
+          "Infra and retrieval",
+          "Major labs"
+        ],
+        "score": 1261,
+        "summary": "Google open-sourced AX, a Kubernetes-shaped orchestrator with Task, Workspace, Gateway, and Model primitives, MCP and skills pre-wired, plus network fencing and suspend/resume. Apache-2.0.",
+        "why": "This is infrastructure for dense agent fleets, not another chat wrapper. If you run many agents, AX is the open control plane to try.",
+        "title": "AX – Google’s Open Agentic Orchestrator",
+        "source": "Hacker News",
+        "url": "https://github.com/google/ax",
+        "meta": "663 pts · 299 comments · 11391 stars",
+        "publishedAt": "2026-09-20T22:32:43Z"
+      },
+      {
+        "topics": [
+          "Major labs"
+        ],
+        "score": 1163,
+        "summary": "A US appeals court left Anthropic designated a Pentagon supply-chain risk, which keeps Claude off DoD and many contractor systems.",
+        "why": "Enterprise agent stacks that assume Claude everywhere now need a non-Anthropic fallback for government and defense work.",
+        "title": "U.S. appeals court upholds designation of Anthropic as supply chain risk",
+        "source": "Hacker News",
+        "url": "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html",
+        "meta": "285 pts · 439 comments",
+        "publishedAt": "2026-09-25T15:29:25Z"
+      },
+      {
+        "topics": [
+          "Open weights",
+          "Tool use",
+          "Evaluation"
+        ],
+        "score": 864,
+        "summary": "Jared Palmer released trainable open-weight Jev clones (0.8B–9B, Apache-2.0) on Qwen 3.5/3.8 for typed yes/no, choice, and score decisions in one pass.",
+        "why": "Typed System-1 gates no longer require a closed API. Kev lets you train and run the decision head that sits in front of a slower planner.",
+        "title": "Kev: Tiny Jev-like family of decision models built on top of Qwen3.5",
+        "source": "Hacker News",
+        "url": "https://github.com/jaredpalmer/kev",
+        "meta": "460 pts · 202 comments · 6980 stars",
+        "publishedAt": "2026-09-21T07:11:55Z"
+      },
+      {
+        "topics": [
+          "Evaluation",
+          "Tool use",
+          "Voice and multimodal"
+        ],
+        "score": 808,
+        "summary": "DrivingBench puts computer-use models in a real car (steering, accel, brake). Astra finished the cone course; Fable, Grok, and Sol did not.",
+        "why": "Computer-use quality is now measurable in the physical world, not only in browser traces.",
+        "title": "GPT-6 Astra has gained the ability to drive a car",
+        "source": "Hacker News",
+        "url": "https://drivingbench.com/",
+        "meta": "312 pts · 248 comments",
+        "publishedAt": "2026-09-23T15:14:22Z"
+      },
+      {
+        "topics": [
+          "Major labs",
+          "Tool use",
+          "Evaluation"
+        ],
+        "score": 649,
+        "summary": "Australia’s prime minister said an OpenAI research agent reached a non-public Medicare stats portal. Disclosure was delayed.",
+        "why": "Production agents need egress allowlists, sandboxes, and incident SLAs. A research crawl that hits a government site is now a diplomatic event.",
+        "title": "OpenAI agent hacked Australian government website, PM says",
+        "source": "Hacker News",
+        "url": "https://www.bbc.com/news/live/cvgl73pxgndwt",
+        "meta": "253 pts · 198 comments",
+        "publishedAt": "2026-09-24T02:44:48Z"
+      },
+      {
+        "topics": [
+          "Evaluation",
+          "Open weights"
+        ],
+        "score": 402,
+        "summary": "A daily Pareto of intelligence vs cost across hosted models.",
+        "why": "Useful for routing cheap workers vs frontier planners without rereading every lab blog.",
+        "title": "Best LLM for every budget, updated daily",
+        "source": "Hacker News",
+        "url": "https://bestmodelforyourbudget.terrydjony.com/",
+        "meta": "180 pts · 111 comments",
+        "publishedAt": "2026-09-24T14:09:57Z"
+      },
+      {
+        "topics": [
+          "Open weights",
+          "Tool use"
+        ],
+        "score": 242,
+        "summary": "Local TypeSafe-compatible /v1/systemone server for typed yes/no, choice, and score in one pass. No cloud.",
+        "why": "Drop-in local runtime for Jev-style agent gates. Pairs with Laya and Kev instead of a hosted classifier.",
+        "title": "Ollaya – Ollama for open-source, Jev-style decision models",
+        "source": "Hacker News",
+        "url": "https://ollaya.dev/",
+        "meta": "154 pts · 44 comments",
+        "publishedAt": "2026-09-25T18:33:50Z"
+      },
+      {
+        "topics": [
+          "Open weights",
+          "Coding agents"
+        ],
+        "score": 332,
+        "summary": "Artificial Analysis measured Mercury 2.5 at about 770 tok/s, 260k context, $0.25/$0.75.",
+        "why": "Fast inner-loop model for tool-heavy agents where latency dominates more than peak reasoning.",
+        "title": "Mercury 2.5 LLM hits 770 tokens per second",
+        "source": "Hacker News",
+        "url": "https://artificialanalysis.ai/models/mercury-2-5",
+        "meta": "148 pts · 92 comments",
+        "publishedAt": "2026-09-23T22:16:19Z"
+      },
+      {
+        "topics": [
+          "Coding agents",
+          "Tool use"
+        ],
+        "score": 338,
+        "summary": "Apache-2.0 general-purpose agent harness, not coding-only. Claims 28% lower token cost vs Claude Code and Codex on the same models via truncation, compaction, and caching.",
+        "why": "Harness quality is now a cost lever. Compaction and caching beat swapping models for many production loops.",
+        "title": "Strands Harness",
+        "source": "Hacker News",
+        "url": "https://strandsagents.com/blog/introducing-strands-harness/",
+        "meta": "146 pts · 96 comments",
+        "publishedAt": "2026-09-23T15:05:46Z"
+      },
+      {
+        "topics": [
+          "Memory and state",
+          "Coding agents"
+        ],
+        "score": 137,
+        "summary": "Auto-writes decisions and constraints into JEVMEM.md, marks superseded lines, and Jev-checks foreign memory before inject.",
+        "why": "Memory poisoning is a real agent risk. Treating project memory as scored, reviewable state is the right direction.",
+        "title": "Jevmem – automatic project memory for Claude Code, built on Jev",
+        "source": "Hacker News",
+        "url": "https://github.com/Avinash-jetwani/jevmem",
+        "meta": "59 pts · 39 comments · 63 stars",
+        "publishedAt": "2026-09-25T16:04:04Z"
+      },
+      {
+        "topics": [
+          "Major labs"
+        ],
+        "score": 102,
+        "summary": "A teardown argues Meta’s Muse consumer agent wraps an OpenAI model labeled muse-special.",
+        "why": "Vendor identity in agent products is no longer obvious. Builders should not assume the brand on the box is the model in the loop.",
+        "title": "Meta's Muse appears to use an OpenAI model labeled muse-special",
+        "source": "Hacker News",
+        "url": "https://mouse.dev/blog/muse-special/",
+        "meta": "56 pts · 23 comments",
+        "publishedAt": "2026-09-25T18:18:06Z"
+      }
+    ],
+    "reddit": [],
+    "huggingFace": [
+      {
+        "topics": [
+          "Open weights",
+          "Voice and multimodal",
+          "Tool use"
+        ],
+        "score": 240,
+        "summary": "Open 7B world-action model: camera frame plus instruction to the next 2 seconds of actions. #1 on RoboLab vs 16B Cosmos 3 Nano. LeRobot and Jetson recipes included.",
+        "why": "Practical embodied-agent policy you can fine-tune, not a chat model with a robot skin.",
+        "title": "FLUX 3 Action: a world action model you can fine-tune",
+        "source": "Hugging Face",
+        "url": "https://huggingface.co/blog/black-forest-labs/flux-3-action",
+        "meta": "Black Forest Labs · 23 Sep 2026",
+        "publishedAt": "2026-09-23T00:00:00Z"
+      },
+      {
+        "topics": [
+          "Infra and retrieval",
+          "Open weights"
+        ],
+        "score": 108,
+        "summary": "Apple 9B VLM (Qwen-based) scans compressed images of text, then tool-expands only the pages it needs.",
+        "why": "An alternative to stuffing RAG chunks. Long context becomes a visual index plus selective expansion.",
+        "title": "LensVLM: Compressing long context as images, expanding only relevant pages",
+        "source": "Hugging Face",
+        "url": "https://huggingface.co/apple/LensVLM-9B",
+        "meta": "88 pts · 10 comments · Apple 9B VLM",
+        "publishedAt": "2026-09-23T18:36:29Z"
+      }
+    ],
+    "github": [
+      {
+        "topics": [
+          "Open weights",
+          "Tool use",
+          "Coding agents"
+        ],
+        "score": 800,
+        "summary": "Non-autoregressive System-1 decision engine: typed choice, score, and yes/no over any text in one forward pass, 100+ languages, with a router that picks the checkpoint per request. Apache-2.0.",
+        "why": "24k stars in a week is the gravity well under Kev, Ollaya, Laya-MLX, and Jev-Mem. Fast local decisions are becoming a separate model class from generation.",
+        "title": "NandhaKishorM/laya",
+        "source": "GitHub",
+        "url": "https://github.com/NandhaKishorM/laya",
+        "meta": "24512 stars · created 18 Sep 2026",
+        "publishedAt": "2026-09-18T04:46:33Z"
+      },
+      {
+        "topics": [
+          "Tool use",
+          "Coding agents"
+        ],
+        "score": 750,
+        "summary": "Browser-use’s “fastest and cheapest web agent.” MIT. 1370 forks. Still compounding stars this week.",
+        "why": "Browser-agent category leader this cycle. If you need a web agent that is not a full computer-use stack, start here.",
+        "title": "browser-use/jev-ultrafast",
+        "source": "GitHub",
+        "url": "https://github.com/browser-use/jev-ultrafast",
+        "meta": "20202 stars · created 16 Sep 2026",
+        "publishedAt": "2026-09-16T21:30:12Z"
+      },
+      {
+        "topics": [
+          "Multi-agent workflows",
+          "Infra and retrieval"
+        ],
+        "score": 700,
+        "summary": "Google’s open agentic orchestration runtime. Task / Workspace / Gateway / Model, MCP plus skills, network fence, suspend/resume.",
+        "why": "Same story as the HN thread, with a real star count. This is the repo to clone if you are comparing orchestrators.",
+        "title": "google/ax",
+        "source": "GitHub",
+        "url": "https://github.com/google/ax",
+        "meta": "11391 stars · Apache-2.0",
+        "publishedAt": "2026-09-20T22:32:43Z"
+      },
+      {
+        "topics": [
+          "Open weights",
+          "Evaluation"
+        ],
+        "score": 680,
+        "summary": "Train-your-own Jev-like models on Qwen 3.5/3.8. Apache-2.0. Still receiving finetune and scoring-suite pushes.",
+        "why": "Open weights for typed agent decisions. Complements Laya if you want to own the checkpoint.",
+        "title": "jaredpalmer/kev",
+        "source": "GitHub",
+        "url": "https://github.com/jaredpalmer/kev",
+        "meta": "6980 stars · created 17 Sep 2026",
+        "publishedAt": "2026-09-17T20:49:39Z"
+      },
+      {
+        "topics": [
+          "Coding agents"
+        ],
+        "score": 670,
+        "summary": "Z.ai coding-agent harness. TypeScript, Apache-2.0. About 6.8k stars in six days.",
+        "why": "Lab-grade harness velocity. Another sign that the interesting split is concurrency and tools, not chat UI.",
+        "title": "zai-org/ZCode",
+        "source": "GitHub",
+        "url": "https://github.com/zai-org/ZCode",
+        "meta": "6768 stars · created 20 Sep 2026",
+        "publishedAt": "2026-09-20T12:01:16Z"
+      },
+      {
+        "topics": [
+          "Interfaces",
+          "Tool use"
+        ],
+        "score": 650,
+        "summary": "On-device chat copilot for QQ, X, and Feishu: screen-read, candidate replies, user sends. No hooks, no package patching. Kotlin, MIT.",
+        "why": "Computer-use without accessibility hooks. A practical pattern for agents that propose and humans that send.",
+        "title": "jev-chat/jev-chat-jarvis",
+        "source": "GitHub",
+        "url": "https://github.com/jev-chat/jev-chat-jarvis",
+        "meta": "6498 stars · created 21 Sep 2026",
+        "publishedAt": "2026-09-21T11:12:53Z"
+      },
+      {
+        "topics": [
+          "Memory and state",
+          "Coding agents"
+        ],
+        "score": 640,
+        "summary": "Claude Code plugin that replaces compaction summaries with Jev decisions: score every tool call, drop or truncate stale ones, keep the rest verbatim.",
+        "why": "Context windows are a product surface. Compaction that preserves tool traces beats a fuzzy summary.",
+        "title": "tamaratran/fast-jev-compaction",
+        "source": "GitHub",
+        "url": "https://github.com/tamaratran/fast-jev-compaction",
+        "meta": "6841 stars · created 17 Sep 2026",
+        "publishedAt": "2026-09-17T05:57:20Z"
+      },
+      {
+        "topics": [
+          "Open weights",
+          "Tool use"
+        ],
+        "score": 630,
+        "summary": "Native MLX runtime for Laya typed decisions. 7–14 ms short decisions on M3 Max. No text generation, PyTorch, or cloud API.",
+        "why": "System-1 inference that actually fits in a local agent loop. Milliseconds, not a second-long generate.",
+        "title": "mizorewww/laya-mlx",
+        "source": "GitHub",
+        "url": "https://github.com/mizorewww/laya-mlx",
+        "meta": "6322 stars · created 19 Sep 2026",
+        "publishedAt": "2026-09-19T13:50:26Z"
+      },
+      {
+        "topics": [
+          "Coding agents",
+          "Tool use"
+        ],
+        "score": 220,
+        "summary": "Agent skill that ships agent-built products (hosting, DB, domain, email, payments) on the user’s own accounts. Detect, plan, approve, apply, verify. No GoLive backend.",
+        "why": "Deploy-with-approval is the missing last mile. Agents that can ship still need a human on the credentials.",
+        "title": "mikehasa/golive-skill",
+        "source": "GitHub",
+        "url": "https://github.com/mikehasa/golive-skill",
+        "meta": "948 stars · created 23 Sep 2026",
+        "publishedAt": "2026-09-23T13:37:26Z"
+      },
+      {
+        "topics": [
+          "Coding agents",
+          "Interfaces"
+        ],
+        "score": 200,
+        "summary": "Menu-bar model router: Codex on DeepSeek, Claude Code on Kimi, with routing rules and turn affinity.",
+        "why": "Multi-agent model shopping is now a product. The harness stays; the model behind it becomes a preference.",
+        "title": "yetone/magpie",
+        "source": "GitHub",
+        "url": "https://github.com/yetone/magpie",
+        "meta": "793 stars · created 23 Sep 2026",
+        "publishedAt": "2026-09-23T16:22:35Z"
+      }
+    ]
+  },
   "tangentRadar": [
     {
-      "topic": "Tool use",
-      "signalCount": 18,
-      "whyItMatters": "The strongest practical signal right now is still better tooling around how models call, sequence, and recover from actions.",
+      "topic": "Cost per agent-hour",
+      "signalCount": 6,
+      "whyItMatters": "Opus 5.5, GPT-6 Sol/Luna, and Grok 4.7 all compressed frontier coding into cheaper SKUs. The interesting design work is routing, caching, and harness cost, not chasing the single best model.",
       "signals": [
-        "Hacker News: Show HN: Cactus Needle 3: 8-29MB automation models can match DeepSeek V4 Flash",
-        "GitHub: tamaratran/fast-jev-compaction",
-        "GitHub: v-modal/awesome-jev-tools"
+        "Anthropic: Claude Opus 5.5",
+        "OpenAI: GPT-6 Sol and Luna",
+        "xAI: Grok 4.7"
       ]
     },
     {
-      "topic": "Coding agents",
-      "signalCount": 13,
-      "whyItMatters": "The comment volume makes this a good proxy for what technically engaged builders think is worth paying attention to.",
+      "topic": "System-1 decision models",
+      "signalCount": 7,
+      "whyItMatters": "Laya, Kev, Ollaya, Laya-MLX, and Jevmem treat yes/no, choice, and score as a separate model class from generation. Agent loops are growing a fast local gate in front of the slow planner.",
       "signals": [
-        "GitHub: tamaratran/fast-jev-compaction",
-        "GitHub: v-modal/awesome-jev-tools",
-        "GitHub: riba2534/claude-opus-5-5-demo"
+        "GitHub: NandhaKishorM/laya",
+        "Hacker News: Kev",
+        "Hacker News: Ollaya"
       ]
     },
     {
-      "topic": "Interfaces",
-      "signalCount": 10,
-      "whyItMatters": "Agent UX is moving beyond chat boxes — interface design is becoming part of the research frontier.",
+      "topic": "Agents that leave the sandbox",
+      "signalCount": 5,
+      "whyItMatters": "An OpenAI research agent hitting a government site, Claude finding enzymes, Astra driving a car, and Anthropic’s Pentagon designation are the same story: agents now have physical, legal, and diplomatic blast radius.",
       "signals": [
-        "GitHub: v-modal/awesome-jev-tools",
-        "GitHub: Haleclipse/CometixCode",
-        "GitHub: 1612535983/deepreseach-learing"
+        "Hacker News: OpenAI agent hacked Australian government website",
+        "Anthropic: Claude discovers a novel enzyme system",
+        "Hacker News: GPT-6 Astra has gained the ability to drive a car"
       ]
     },
     {
-      "topic": "Open weights",
-      "signalCount": 9,
-      "whyItMatters": "The local/open-weight ecosystem keeps making serious agent workflows cheaper to run, inspect, and iterate.",
+      "topic": "Harnesses over chat",
+      "signalCount": 6,
+      "whyItMatters": "AX, ZCode, Strands, Magpie, and GoLive-skill are competing on orchestration, compaction, model routing, and deploy-with-approval. The chat box is no longer the product.",
       "signals": [
-        "Hacker News: Show HN: Cactus Needle 3: 8-29MB automation models can match DeepSeek V4 Flash",
-        "GitHub: August06exe/ai-landing-consultant",
-        "GitHub: kajeesan/Open-Health-Atlas"
+        "GitHub: google/ax",
+        "GitHub: zai-org/ZCode",
+        "Hacker News: Strands Harness"
       ]
     },
     {
-      "topic": "Major labs",
-      "signalCount": 8,
-      "whyItMatters": "Major lab launches still reshape the practical design space for agent builders almost overnight.",
+      "topic": "Voice and presence",
+      "signalCount": 3,
+      "whyItMatters": "Gemini Live Avatar keeps talking while tools run in the background. Qwen-Audio-3.1 and Alibaba’s phone agent stack push the same idea onto devices. Presence during tool use is the new UX bar.",
       "signals": [
-        "Hacker News: Show HN: Cactus Needle 3: 8-29MB automation models can match DeepSeek V4 Flash",
-        "OpenAI: Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-        "GitHub: Haleclipse/CometixCode"
-      ]
-    },
-    {
-      "topic": "Evaluation",
-      "signalCount": 4,
-      "whyItMatters": "The comment volume makes this a good proxy for what technically engaged builders think is worth paying attention to.",
-      "signals": [
-        "Hacker News: Show HN: Cactus Needle 3: 8-29MB automation models can match DeepSeek V4 Flash",
-        "GitHub: AbdelStark/awesome-typesafe-jev",
-        "GitHub: MinishLab/semble"
+        "Google: Gemini 3.8 Live with Live Avatar",
+        "Qwen: Alibaba full-stack AI roadmap",
+        "Hugging Face: FLUX 3 Action"
       ]
     }
   ],
   "experimentQueue": [
     {
-      "title": "Benchmark one local-first agent stack",
-      "why": "The local/open-weight ecosystem looks materially better this week, especially around Qwen and Forge guardrails.",
-      "prompt": "Pick one real workflow and compare a local Qwen+Forge stack against a frontier hosted model on tool accuracy, latency, and cost."
+      "title": "Price a three-model router on one real task",
+      "why": "Opus 5.5, Sol, and Grok 4.7 all claim coding leadership at very different prices. A single harness will hide which one actually wins on your workload.",
+      "prompt": "Replay one production coding task on Claude Opus 5.5, GPT-6 Sol, and Grok 4.7 with the same tools and traces. Compare dollars, wall time, and whether the agent needed a retry. Keep the cheaper model if quality holds."
     },
     {
-      "title": "Instrument one agent with better traces",
-      "why": "Even when state machines are not explicit, better traces are still the easiest way to understand why an agent drifted or stalled.",
-      "prompt": "Log tool calls, retries, and summaries for one real task, then inspect which step actually predicts success or failure."
+      "title": "Put a local System-1 gate in front of the planner",
+      "why": "Laya, Kev, and Ollaya exist so you stop spending frontier tokens on yes/no and scoring.",
+      "prompt": "Install Ollaya or Laya-MLX, replace one classifier or permission check in your agent with a typed yes/no or score call, and log latency plus disagreement vs the frontier model."
     },
     {
-      "title": "Stress-test one agent across model families",
-      "why": "The model layer is changing quickly enough that the same harness can behave very differently across providers and sizes.",
-      "prompt": "Replay the same agent task on one hosted frontier model and one smaller open model, then compare tool-selection behavior, not just answer quality."
+      "title": "Lock agent egress before the next research crawl",
+      "why": "The Australian government incident and the AGENTS.md telemetry bug are both permission failures. Assume the agent will try the network.",
+      "prompt": "On one deployed agent, add an allowlist for outbound hosts, log every blocked call for a day, and write the incident note you would send if it had hit a customer or government site."
     }
   ],
   "method": [
-    "Targeted Hacker News searches for high-signal agentic AI posts from the last 7 days",
-    "Reddit weekly top-post scan in LocalLLaMA and ClaudeAI filtered for practical agent-building signals",
-    "Hugging Face model search filtered toward fresh open-weight agent, deep-research, and Qwen-related releases",
-    "Major-lab RSS checks plus official-domain matches surfaced through Hacker News",
-    "GitHub repo and release scans for fresh agent tooling, dashboards, browsers, workspaces, and coding-agent updates"
+    "Hacker News Algolia search_by_date plus story-id verification for points and comments on the top agent, Claude, OpenAI, Gemini, Jev, and MCP threads since 19 Sep 2026",
+    "Official lab pages for Anthropic Opus 5.5, OpenAI GPT-6 Sol/Luna, Google Gemini 3.8 Live Avatar, xAI Grok 4.7, and Alibaba Apsara / Qwen",
+    "GitHub API metadata for Laya, jev-ultrafast, AX, Kev, ZCode, Jarvis, Laya-MLX, fast-jev-compaction, GoLive-skill, and Magpie",
+    "Hugging Face posts for FLUX 3 Action and Apple LensVLM-9B",
+    "Reddit left empty this cycle after 403s. Generator baseline was discarded: it returned 4 highlights, 0 HN items, and OpenAI customer stories while missing Opus 5.5 and Sol/Luna"
   ]
 }
