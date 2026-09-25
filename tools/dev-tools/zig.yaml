@@ -1,0 +1,26 @@
+name: Zig
+description: A systems programming language designed for robustness, optimality, and maintainability, with a simple toolchain that also compiles C and C++ for building high-performance native AI runtimes and tooling.
+tagline: Systems language for robust, high-performance native code
+
+github_url: https://github.com/ziglang/zig
+website_url: https://ziglang.org
+docs_url: https://ziglang.org/documentation/master/
+install_command: brew install zig
+
+category: Dev Tools
+tags: [systems, compiler, language, native, performance, c-interop]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  High-performance inference kernels, tokenizers, and native bindings often
+  sit in C or C++ with heavy toolchains and undefined behavior. Zig offers
+  a simpler language and compiler that can also build C/C++ code, so teams
+  can write safe, fast native components without a maze of build systems.
+
+use_cases:
+  - Build a native tokenizer or inference helper as a Zig library called from Python
+  - Compile C/C++ CUDA or CPU kernels with Zig as the drop-in C compiler
+  - Ship a single static binary for an AI CLI without a large runtime
+  - Replace fragile Makefile and CMake setups for mixed C and Zig tooling

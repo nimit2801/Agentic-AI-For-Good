@@ -1,0 +1,26 @@
+name: Certbot
+description: EFF's ACME client that obtains and renews TLS certificates from Let's Encrypt and other CAs, and can automatically configure HTTPS on Apache and nginx.
+tagline: Let's Encrypt certificates with automatic HTTPS
+
+github_url: https://github.com/certbot/certbot
+website_url: https://certbot.eff.org
+docs_url: https://eff-certbot.readthedocs.io
+install_command: pip install certbot
+
+category: Dev Tools
+tags: [tls, certificates, letsencrypt, acme, https, security, python]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Public AI APIs, agent dashboards, and model gateways need valid TLS, but
+  issuing and renewing certificates by hand is error-prone and expires
+  without warning. Certbot talks ACME to Let's Encrypt, writes certs, and
+  can reconfigure Apache or nginx so HTTPS stays valid on a schedule.
+
+use_cases:
+  - Issue and auto-renew Let's Encrypt certs for a public LLM or agent API
+  - Enable HTTPS on nginx in front of an inference server with one command
+  - Keep TLS current on a self-hosted Open WebUI or RAG dashboard
+  - Obtain certificates for staging domains before promoting an AI service
