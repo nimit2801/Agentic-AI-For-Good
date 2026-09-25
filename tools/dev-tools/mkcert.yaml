@@ -1,0 +1,26 @@
+name: mkcert
+description: Zero-config tool that makes locally trusted development certificates. Generates a local CA and issues certs for any names you need so HTTPS works in browsers without clicking through warnings.
+tagline: Locally trusted development certificates in one command
+
+github_url: https://github.com/FiloSottile/mkcert
+website_url: https://mkcert.dev
+docs_url: https://github.com/FiloSottile/mkcert
+install_command: brew install mkcert
+
+category: Dev Tools
+tags: [tls, certificates, https, local-development, security, pki]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Local agent UIs, webhooks, and model servers need HTTPS, but self-signed
+  certs trip browsers and HTTP clients. mkcert installs a local CA and
+  issues trusted certificates for localhost and custom names so you can
+  develop TLS-only flows without Let's Encrypt or clicking through warnings.
+
+use_cases:
+  - Issue a trusted localhost cert for an Open WebUI or agent dashboard
+  - Test webhook receivers that require HTTPS during local development
+  - Generate certs for custom .test domains used by a local inference proxy
+  - Avoid browser certificate warnings on a team of ML engineering laptops

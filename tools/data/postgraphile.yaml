@@ -1,0 +1,26 @@
+name: PostGraphile
+description: Instant GraphQL API for PostgreSQL. Introspects your schema, generates queries and mutations, and serves them with high performance so apps and agents talk to Postgres without hand-written resolvers.
+tagline: Instant GraphQL API for PostgreSQL
+
+github_url: https://github.com/graphile/crystal
+website_url: https://postgraphile.org/
+docs_url: https://postgraphile.org/
+install_command: npm install postgraphile
+
+category: Data
+tags: [graphql, postgresql, api, nodejs, schema, database]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Hand-written GraphQL resolvers drift from the Postgres schema and become
+  a bottleneck for agent and app access. PostGraphile introspects tables,
+  relations, and RLS, then serves a typed GraphQL API so RAG UIs and
+  internal tools query Postgres without a custom API layer.
+
+use_cases:
+  - Expose a Postgres feature store as GraphQL for an internal agent UI
+  - Auto-generate queries and mutations from RLS-protected tenant tables
+  - Serve a high-performance GraphQL API in front of a RAG metadata database
+  - Iterate on schema-first product APIs without writing resolvers by hand

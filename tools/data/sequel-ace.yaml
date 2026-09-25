@@ -1,0 +1,26 @@
+name: Sequel Ace
+description: Native macOS client for MySQL and MariaDB. Fork of Sequel Pro with a query editor, table browser, and SSH tunnels so you can manage databases without phpMyAdmin or a JVM.
+tagline: Native MySQL and MariaDB client for macOS
+
+github_url: https://github.com/sequel-ace/sequel-ace
+website_url: https://sequel-ace.com
+docs_url: https://sequel-ace.com
+install_command: brew install --cask sequel-ace
+
+category: Data
+tags: [mysql, mariadb, sql-client, macos, gui, database]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Sequel Pro is unmaintained and phpMyAdmin needs a PHP host. Sequel Ace
+  is the native macOS fork: connect over SSH, browse tables, and run SQL
+  against MySQL or MariaDB used as metadata stores, without a web stack
+  or a cross-platform Java IDE.
+
+use_cases:
+  - Browse a MariaDB metadata database for a local RAG prototype on macOS
+  - Run SQL over an SSH tunnel against a staging MySQL without phpMyAdmin
+  - Edit rows and export CSV from MySQL tables during agent debugging
+  - Replace unmaintained Sequel Pro with an actively developed native client
