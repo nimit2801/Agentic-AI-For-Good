@@ -1,0 +1,26 @@
+name: WireGuard
+description: Fast, modern VPN that uses cryptography-friendly key exchange and a small kernel codebase. Create point-to-point tunnels so GPU boxes, home labs, and laptops share a private network without a heavy IPsec or OpenVPN stack.
+tagline: Fast, modern VPN with a tiny trusted codebase
+
+github_url: https://github.com/WireGuard/wireguard-tools
+website_url: https://www.wireguard.com
+docs_url: https://www.wireguard.com/quickstart
+install_command: brew install wireguard-tools
+
+category: Dev Tools
+tags: [vpn, networking, security, linux, kernel, tunnel]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Remote GPU hosts and home labs need a private network, but OpenVPN and
+  IPsec are heavy. WireGuard is a kernel VPN with short keys and a small
+  codebase, so you stand up wg0 tunnels between laptops and training
+  boxes without a full VPN appliance.
+
+use_cases:
+  - Tunnel a laptop to a GPU box so Jupyter and SSH stay on a private net
+  - Mesh lab servers without exposing SSH on the public internet
+  - Replace OpenVPN for site-to-site access to a self-hosted catalog
+  - Script wg-quick configs for ephemeral training nodes
