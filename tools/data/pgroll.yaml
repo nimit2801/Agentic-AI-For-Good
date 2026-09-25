@@ -1,0 +1,26 @@
+name: pgroll
+description: A PostgreSQL migration tool that applies schema changes with zero downtime by serving old and new schema versions at once, with automatic column backfill and instant rollback.
+tagline: Zero-downtime, reversible Postgres schema migrations
+
+github_url: https://github.com/xataio/pgroll
+website_url: https://pgroll.com
+docs_url: https://pgroll.com/docs
+install_command: brew install pgroll
+
+category: Data
+tags: [postgres, migrations, schema, zero-downtime, database, go]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Feature stores, agent memory tables, and RAG metadata live in Postgres,
+  and a locking ALTER can take the app down. pgroll expands migrations into
+  dual-schema versions so old and new clients keep working, backfills when
+  needed, and rolls back instantly if a deploy goes wrong.
+
+use_cases:
+  - Add a column to an embeddings metadata table without locking writes
+  - Expand then contract a breaking rename while old agent workers catch up
+  - Instantly roll back a failed migration on a production RAG database
+  - Run dual-version schemas during a rolling deploy of an AI backend

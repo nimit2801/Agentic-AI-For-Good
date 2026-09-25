@@ -1,0 +1,26 @@
+name: oauth2-proxy
+description: A reverse proxy that authenticates requests with Google, Azure, GitHub, OpenID Connect, and other identity providers, then forwards verified user identity to upstream apps as HTTP headers.
+tagline: OAuth2 and OIDC reverse proxy for protecting web apps
+
+github_url: https://github.com/oauth2-proxy/oauth2-proxy
+website_url: https://oauth2-proxy.github.io/oauth2-proxy/
+docs_url: https://oauth2-proxy.github.io/oauth2-proxy/
+install_command: brew install oauth2_proxy
+
+category: Dev Tools
+tags: [oauth2, oidc, reverse-proxy, authentication, security, go]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Internal AI dashboards, Jupyter, and model UIs often ship with no real
+  auth. oauth2-proxy sits in front, redirects users to Google, Azure, GitHub,
+  or any OIDC provider, and passes identity headers upstream so you can lock
+  down tools without rewriting application code.
+
+use_cases:
+  - Put Google or GitHub login in front of Open WebUI, Grafana, or a RAG app
+  - Protect an internal LLM playground with Azure Entra ID or OIDC
+  - Forward email and group headers so upstream apps can authorize by team
+  - Run as middleware beside nginx or Traefik for SSO across AI services

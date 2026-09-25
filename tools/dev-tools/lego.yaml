@@ -1,0 +1,26 @@
+name: lego
+description: A Go ACME client and library for Let's Encrypt and other CAs, with a CLI, 200-plus DNS providers, and HTTP-01, DNS-01, and TLS-ALPN-01 challenge support for automated certificates.
+tagline: ACME client and library with 200-plus DNS providers
+
+github_url: https://github.com/go-acme/lego
+website_url: https://go-acme.github.io/lego/
+docs_url: https://go-acme.github.io/lego/
+install_command: brew install lego
+
+category: Dev Tools
+tags: [acme, letsencrypt, tls, certificates, dns, go, https]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Wildcard and multi-domain certs for AI APIs often need DNS-01 against
+  dozens of providers, and embedding ACME in a Go service is painful from
+  scratch. lego is both a CLI and a library with 200-plus DNS backends so
+  you can issue, renew, and revoke certificates from scripts or Go code.
+
+use_cases:
+  - Issue a wildcard Let's Encrypt cert via Route 53 or Cloudflare DNS-01
+  - Embed ACME issuance in a Go control plane that fronts model endpoints
+  - Renew certificates for internal AI services on a cron with the lego CLI
+  - Obtain IP-address or SAN certificates for staging inference hosts
