@@ -1,0 +1,26 @@
+name: Lakekeeper
+description: Apache Iceberg REST Catalog in Rust with access control, credential vending, and audit for every engine and AI agent. Define policy once in the catalog and enforce it across Spark, Trino, PyIceberg, and other Iceberg clients.
+tagline: Secure Apache Iceberg REST catalog in Rust
+
+github_url: https://github.com/lakekeeper/lakekeeper
+website_url: https://docs.lakekeeper.io
+docs_url: https://docs.lakekeeper.io
+
+category: Data
+tags: [iceberg, catalog, data-lake, rust, access-control, lakehouse]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Iceberg tables need a REST catalog, but access rules often get copied into
+  every engine. Lakekeeper is an Apache-2.0 Iceberg REST Catalog in Rust that
+  vends credentials, checks policy before reads, and audits requests so Spark,
+  Trino, and agents share one control plane on the lakehouse.
+
+use_cases:
+  - Run an Iceberg REST catalog in front of object storage for Spark and Trino
+  - Enforce table access control once instead of per query engine
+  - Vend short-lived storage credentials to AI agents querying the lake
+  - Audit which engine or user read which Iceberg table
+  - Deploy via Docker or Helm next to an existing Iceberg warehouse

@@ -1,0 +1,25 @@
+name: Fail2ban
+description: Log-scanning jail that bans IPs after too many failed logins by updating firewall rules. Ships filters for sshd, Apache, and custom logs so GPU hosts and inference APIs can drop brute-force traffic without a full IDS.
+tagline: Ban IPs that fail authentication too many times
+
+github_url: https://github.com/fail2ban/fail2ban
+website_url: https://www.fail2ban.org
+docs_url: https://fail2ban.readthedocs.io
+
+category: Monitoring
+tags: [security, firewall, ssh, brute-force, logs, ips, self-hosted]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  SSH and API hosts see constant password guessing, and a full IDS is overkill
+  for a lab box. Fail2ban tails auth logs, matches failed attempts, and inserts
+  firewall bans for a cooldown so GPU nodes and agent dashboards drop repeat
+  attackers without rewriting iptables by hand.
+
+use_cases:
+  - Ban brute-force SSH logins on GPU and jump hosts from auth.log
+  - Jail failed attempts against an inference API or reverse proxy
+  - Add a custom filter for a self-hosted LLM UI login endpoint
+  - Pair with CrowdSec or keep a local-only jail on air-gapped labs
