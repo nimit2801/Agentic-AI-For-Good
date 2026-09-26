@@ -1,0 +1,26 @@
+name: VideoMAEv2
+description: CVPR 2023 dual-masking video MAE that scales self-supervised video pretraining from ViT-small to ViT-giant. OpenGVLab ships distilled Kinetics checkpoints, Hugging Face weights, and MMAction2 support for action recognition and temporal localization.
+tagline: Dual-masking video MAE scaled to ViT-giant
+
+github_url: https://github.com/OpenGVLab/VideoMAEv2
+website_url: https://arxiv.org/abs/2303.16727
+docs_url: https://huggingface.co/OpenGVLab/VideoMAE2
+
+category: Other
+tags: [python, video, self-supervised, transformer, action-recognition, huggingface, cvpr]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  VideoMAE already exists in this catalog as a masked autoencoder, but
+  it does not scale cleanly to giant ViTs or dual encoder-decoder masking.
+  VideoMAEv2 adds dual masking and distilled ViT-S/B teachers so labs can
+  pretrain or fine-tune stronger video backbones for Kinetics, AVA, and
+  temporal action detection without extra labeled data.
+
+use_cases:
+  - Pretrain or load a ViT-giant VideoMAEv2 backbone for Kinetics-400 and Kinetics-710 classification
+  - Distill VideoMAEv2-g into ViT-small or ViT-base for cheaper action recognition serving
+  - Extract VideoMAEv2 features for THUMOS14 and FineAction temporal action localization
+  - Fine-tune OpenGVLab Hugging Face checkpoints inside MMAction2 video pipelines

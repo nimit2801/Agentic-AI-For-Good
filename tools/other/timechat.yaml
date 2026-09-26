@@ -1,0 +1,26 @@
+name: TimeChat
+description: CVPR 2024 time-sensitive video MLLM that binds each frame to a timestamp and uses a sliding video Q-Former for long clips. Ships TimeChat-7B, the TimeIT 125K instruction set, and Hugging Face checkpoints for captioning, grounding, and highlight detection.
+tagline: Timestamp-aware MLLM for long video understanding
+
+github_url: https://github.com/RenShuhuai-Andy/TimeChat
+website_url: https://arxiv.org/abs/2312.02051
+docs_url: https://huggingface.co/ShuhuaiRen/TimeChat-7b
+
+category: Other
+tags: [python, video, multimodal, llm, temporal-grounding, huggingface, cvpr]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Generic video LLMs drop timestamps and compress long clips into a
+  fixed token budget, so they cannot say when an event happens.
+  TimeChat binds frames to timestamps and lets the Q-Former grow with
+  duration, which makes dense captioning, temporal grounding, and
+  highlight detection work on hour-scale video instead of short clips.
+
+use_cases:
+  - Localize events in long videos with timestamped answers instead of clip-level summaries
+  - Dense-caption untrimmed footage using TimeChat-7B and the TimeIT instruction set
+  - Detect highlights in sports or meeting recordings from time-aware video tokens
+  - Fine-tune TimeChat on custom temporal grounding data with LoRA on LLaMA-2 7B
