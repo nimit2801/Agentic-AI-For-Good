@@ -1,0 +1,28 @@
+name: SWE-bench
+description: A software engineering benchmark that asks language models to resolve real GitHub issues by producing patches. It includes Verified and Multimodal splits, a Docker evaluation harness, and a public leaderboard used across coding-agent research.
+tagline: Real GitHub issues as a coding-agent benchmark
+
+github_url: https://github.com/SWE-bench/SWE-bench
+website_url: https://www.swebench.com
+docs_url: https://www.swebench.com
+
+install_command: pip install swebench
+
+category: Monitoring
+tags: [python, benchmark, evaluation, software-engineering, coding-agents, docker, llm]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Coding-agent claims are hard to compare when each paper uses a private
+  bug set. SWE-bench scores models on real GitHub issues with unit tests
+  inside Docker, including a Verified subset humans confirmed are solvable.
+  Labs get a shared, contamination-aware yardstick for whether an agent
+  can actually fix production software.
+
+use_cases:
+  - Score a coding agent on SWE-bench Verified before claiming it can fix real repository issues
+  - Run containerized evaluations locally or on Modal so results reproduce across machines
+  - Compare patches from OpenHands, SWE-agent, and custom harnesses on the same issue set
+  - Load the Hugging Face dataset to train or filter models on software engineering tasks

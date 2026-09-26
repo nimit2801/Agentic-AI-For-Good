@@ -1,0 +1,25 @@
+name: AgentBench
+description: An ICLR 2024 benchmark from THUDM that evaluates LLMs as agents across environments such as operating systems, databases, knowledge graphs, web shops, and ALFWorld. The function-calling edition runs fully containerized with AgentRL.
+tagline: Multi-environment benchmark for LLM agents
+
+github_url: https://github.com/THUDM/AgentBench
+docs_url: https://github.com/THUDM/AgentBench#readme
+
+category: Monitoring
+tags: [python, benchmark, evaluation, agents, llm, function-calling, docker, thudm]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Agent papers often report a single toy environment, so scores do not
+  transfer. AgentBench runs the same model through OS interaction, SQL,
+  knowledge graphs, web shopping, and embodied ALFWorld tasks. The
+  function-calling build deploys those workers in Docker so labs can
+  compare agents on a shared multi-task suite instead of one demo.
+
+use_cases:
+  - Compare function-calling agents across OS, database, KG, WebShop, and ALFWorld tasks
+  - Stand up the Docker Compose stack to reproduce AgentBench FC leaderboard numbers
+  - Use AgentBench environments as RL tasks inside the AgentRL training loop
+  - Diagnose where a generalist agent fails when it leaves chat and hits a real tool environment
