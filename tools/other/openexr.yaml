@@ -1,0 +1,26 @@
+name: OpenEXR
+description: Academy Software Foundation high-dynamic-range image format and library. OpenEXR stores multi-channel, deep, and tiled HDR frames so VFX, neural rendering, and computer vision pipelines exchange professional-grade EXR files with lossless or lossy compression.
+tagline: HDR EXR image format for VFX and neural rendering
+
+github_url: https://github.com/AcademySoftwareFoundation/openexr
+website_url: https://openexr.com/
+docs_url: https://openexr.com/en/latest/
+install_command: pip install OpenEXR
+
+category: Other
+tags: [cpp, python, hdr, image-format, vfx, aswf]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  8-bit PNG and JPEG crush highlights and cannot carry multi-channel
+  AOVs. OpenEXR stores HDR, deep, and tiled multi-channel frames so
+  VFX, neural rendering, and CV pipelines keep full float data with
+  industry-standard compression.
+
+use_cases:
+  - Read and write multi-channel HDR EXR frames from a Python training loop
+  - Store beauty, depth, and crypto AOVs from a production renderer
+  - Exchange deep compositing buffers between Nuke, Houdini, and custom tools
+  - Load lossless HDR ground truth for inverse rendering or NeRF datasets

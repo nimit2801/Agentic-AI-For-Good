@@ -1,0 +1,25 @@
+name: OSPRay
+description: Intel scalable CPU ray tracing engine for high-fidelity scientific visualization. OSPRay renders large unstructured volumes, meshes, and path-traced scenes so HPC viz, digital twins, and neural rendering research get production-quality rays without a GPU-only stack.
+tagline: Scalable CPU ray tracing for scientific visualization
+
+github_url: https://github.com/RenderKit/ospray
+website_url: https://www.ospray.org/
+docs_url: https://www.ospray.org/documentation.html
+
+category: Other
+tags: [cpp, ray-tracing, visualization, intel, hpc, rendering]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Scientific visualization of large meshes and volumes often needs
+  path tracing on CPU clusters, not a game GPU. OSPRay scales Intel
+  Embree kernels across nodes so HPC viz, digital twins, and research
+  renderers get high-fidelity rays without a GPU-only stack.
+
+use_cases:
+  - Path-trace large scientific meshes and unstructured volumes on CPU
+  - Build ParaView or VisIt backends on OSPRay instead of rasterization
+  - Visualize digital-twin geometry with scalable ray tracing
+  - Prototype research renderers on Embree without writing a full engine
