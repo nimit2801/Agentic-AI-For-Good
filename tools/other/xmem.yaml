@@ -1,0 +1,26 @@
+name: XMem
+description: ECCV 2022 long-term video object segmentation with an Atkinson-Shiffrin memory model. XMem tracks masks across long videos by combining working, long-term, and sensory memory so objects stay labeled after occlusion or minutes of footage.
+tagline: Long-term video object segmentation with memory
+
+github_url: https://github.com/hkchengrex/XMem
+website_url: https://hkchengrex.com/XMem/
+docs_url: https://github.com/hkchengrex/XMem/blob/main/docs/GETTING_STARTED.md
+
+category: Other
+tags: [python, pytorch, video-segmentation, tracking, computer-vision, eccv]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Short-term VOS models forget objects after occlusion or long
+  sequences because they only keep a tiny temporal window. XMem
+  stores working and long-term memory like human memory, so a
+  click or first-frame mask stays attached through minutes of
+  video, which is why Track-Anything and similar tools built on it.
+
+use_cases:
+  - Segment and track objects through long videos after a first-frame mask
+  - Recover identities after occlusion in annotation or VFX pipelines
+  - Power interactive video labeling tools such as Track-Anything
+  - Benchmark long-term VOS against STM and XMem2 on DAVIS or YouTube-VOS

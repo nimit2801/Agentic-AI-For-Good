@@ -1,0 +1,26 @@
+name: XFeat
+description: CVPR 2024 accelerated local feature extractor from UFMG VerLab. XFeat produces sparse keypoints and descriptors with SuperPoint-class robustness at real-time CPU speed for SLAM, visual localization, and image matching without a GPU.
+tagline: Real-time local features that run on CPU
+
+github_url: https://github.com/verlab/accelerated_features
+website_url: https://www.verlab.dcc.ufmg.br/descriptors/xfeat_cvpr24
+docs_url: https://github.com/verlab/accelerated_features
+
+category: Other
+tags: [python, pytorch, computer-vision, local-features, slam, matching, cvpr]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Classic learned matchers such as SuperPoint need a GPU for real-time
+  sparse inference. XFeat is a lightweight CNN that extracts robust
+  keypoints and descriptors on CPU at high FPS, so SLAM, visual
+  localization, and matching pipelines can run on laptops and edge
+  devices without dropping SuperPoint-level geometry.
+
+use_cases:
+  - Replace SuperPoint in a visual SLAM frontend that must run on CPU
+  - Match image pairs for SfM or visual localization without a GPU
+  - Benchmark accelerated local features against SuperPoint and DISK
+  - Run the XFeat real-time matching demo on webcam or video input
