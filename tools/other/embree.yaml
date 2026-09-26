@@ -1,0 +1,25 @@
+name: Embree
+description: High-performance ray tracing kernels from Intel. Embree provides optimized CPU and GPU intersection for triangles, curves, subdivision surfaces, and instances so production renderers and neural rendering pipelines get accurate, low-memory ray queries.
+tagline: Intel high-performance ray tracing kernels
+
+github_url: https://github.com/RenderKit/embree
+website_url: https://www.embree.org/
+docs_url: https://www.embree.org/api.html
+
+category: Other
+tags: [cpp, ray-tracing, rendering, intel, gpu, 3d]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Production path tracers need fast, accurate intersection on incoherent
+  rays without a huge memory footprint. Embree ships CPU and GPU kernels
+  for triangles, curves, subdivision, instances, and motion blur so
+  renderers and neural pipelines query rays instead of writing BVHs.
+
+use_cases:
+  - Accelerate production path tracers with CPU or Intel GPU ray kernels
+  - Intersect hair, curves, and subdivision surfaces without custom BVHs
+  - Build a single-source CPU and SYCL GPU renderer on Embree
+  - Drive Monte Carlo or neural rendering with high-quality ray queries

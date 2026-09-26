@@ -1,0 +1,26 @@
+name: libigl
+description: A simple header-only C++ geometry processing library built on Eigen. libigl covers mesh I/O, discrete operators, parameterization, boolean operations, and visualization so research and production geometry pipelines stay compact and readable.
+tagline: Header-only C++ geometry processing library on Eigen
+
+github_url: https://github.com/libigl/libigl
+website_url: https://libigl.github.io/libigl/
+docs_url: https://libigl.github.io/libigl/
+install_command: pip install libigl
+
+category: Other
+tags: [cpp, python, geometry, mesh, eigen, 3d]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  Geometry research often glues many mesh libraries together and loses
+  a readable code path. libigl is a header-only Eigen-based toolkit
+  with discrete operators, parameterization, booleans, and viewers so
+  you prototype mesh algorithms without a heavy scene-graph stack.
+
+use_cases:
+  - Compute discrete Laplacian, curvature, and geodesic operators on triangle meshes
+  - Parameterize or remesh surfaces for graphics and simulation pipelines
+  - Run mesh boolean operations and collision queries in C++ or Python
+  - Teach or prototype geometry papers against a compact Eigen-based API

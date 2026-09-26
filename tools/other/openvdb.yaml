@@ -1,0 +1,25 @@
+name: OpenVDB
+description: Hierarchical sparse volume data structure and tools from DreamWorks, now an Academy Software Foundation project. OpenVDB stores and manipulates sparse 3D grids efficiently for VFX, simulation, and neural rendering pipelines that need compact volumetric data.
+tagline: Sparse volumetric grids for VFX, simulation, and 3D ML
+
+github_url: https://github.com/AcademySoftwareFoundation/openvdb
+website_url: https://www.openvdb.org/
+docs_url: https://www.openvdb.org/documentation/doxygen/
+
+category: Other
+tags: [cpp, volumes, vfx, simulation, 3d, aswf]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Dense 3D grids waste memory on empty space in smoke, clouds, and
+  level sets. OpenVDB stores sparse hierarchical volumes so VFX,
+  simulation, and neural rendering pipelines keep high-resolution
+  fields without paying for empty voxels.
+
+use_cases:
+  - Store sparse smoke, cloud, and level-set volumes for film VFX
+  - Convert meshes to narrow-band signed distance fields at high resolution
+  - Exchange volumetric caches between Houdini, Maya, and custom solvers
+  - Feed compact 3D grids into neural rendering or simulation training
