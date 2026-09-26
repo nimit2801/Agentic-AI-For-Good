@@ -1,0 +1,28 @@
+name: BrowserGym
+description: A ServiceNow gym environment for web agent research in Chromium. It unifies WebArena, VisualWebArena, WorkArena, MiniWoB, and other browser benchmarks behind one Python API so labs can train and evaluate agents without rewriting each harness.
+tagline: Gym environments for web agents in Chromium
+
+github_url: https://github.com/ServiceNow/BrowserGym
+docs_url: https://github.com/ServiceNow/BrowserGym#readme
+
+install_command: pip install browsergym
+
+category: Agents
+tags: [python, agents, browser, gym, evaluation, webarena, servicenow, playwright]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Every web-agent paper ships its own Playwright wrapper, so results
+  cannot be compared and new benchmarks take weeks to wire up.
+  BrowserGym gives a Gymnasium-style API over Chromium and plugs in
+  WebArena, WorkArena, MiniWoB, and related suites. Researchers run
+  the same agent code across benchmarks and design new ones by
+  subclassing a task class instead of forking a browser stack.
+
+use_cases:
+  - Train a web agent once and evaluate it on WebArena, WorkArena, and MiniWoB without changing the loop
+  - Pair BrowserGym with AgentLab to collect traces and compare agent runs in parallel
+  - Add a custom website benchmark by inheriting the BrowserGym task interface
+  - Stress-test agent security with DoomArena attacks injected into BrowserGym pages

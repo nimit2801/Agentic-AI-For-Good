@@ -1,0 +1,26 @@
+name: WebArena
+description: A self-hostable website environment for autonomous web agents. It ships realistic sites such as shopping, Reddit, GitLab, and maps plus hundreds of long-horizon tasks so agents can be tested off the live internet.
+tagline: Self-hosted websites for realistic web-agent tasks
+
+github_url: https://github.com/web-arena-x/webarena
+website_url: https://webarena.dev
+docs_url: https://github.com/web-arena-x/webarena#readme
+
+category: Agents
+tags: [python, agents, browser, benchmark, evaluation, web-agents, self-hosted]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Live-web agent evals rot as sites change and raise legal risk.
+  WebArena hosts fully functional clones of e-commerce, forums,
+  GitLab, and maps with deterministic tasks. Teams measure whether
+  an agent can complete multi-page work on a stable stack they
+  control, then plug the same env into BrowserGym for parallel runs.
+
+use_cases:
+  - Evaluate a browser agent on shopping, GitLab, Reddit, and maps tasks without hitting production sites
+  - Self-host WebArena domains so experiments stay reproducible across weeks
+  - Generate per-task config files and run the official test split for paper numbers
+  - Combine WebArena with BrowserGym and AgentLab for parallel web-agent experiments

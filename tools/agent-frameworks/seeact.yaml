@@ -1,0 +1,28 @@
+name: SeeAct
+description: An ICML 2024 system from OSU NLP for generalist web agents powered by large multimodal models such as GPT-4V. It runs agents on live sites, includes a Chrome extension, and pairs with Mind2Web for grounded evaluation.
+tagline: GPT-4V web agents that act on live websites
+
+github_url: https://github.com/OSU-NLP-Group/SeeAct
+website_url: https://osu-nlp-group.github.io/SeeAct/
+docs_url: https://github.com/OSU-NLP-Group/SeeAct#readme
+
+install_command: pip install seeact
+
+category: Agents
+tags: [python, agents, web-agents, multimodal, gpt-4v, mind2web, browser]
+pricing: free
+is_open_source: true
+license: OpenRAIL-S
+
+problem_solved: |
+  Vision-language models can describe a page but rarely click the
+  right control. SeeAct grounds GPT-4V-style models in live websites
+  with a two-stage act-and-ground loop, plus a Chrome extension so
+  people can try it without a research harness. Teams get a working
+  generalist web agent instead of screenshot QA demos.
+
+use_cases:
+  - Run a GPT-4V web agent on live sites from the SeeAct Python package
+  - Try web agents in the browser via the SeeAct Chrome extension
+  - Evaluate multimodal agents on Multimodal-Mind2Web without downloading the 300GB raw dump
+  - Add crawler mode to collect site traces for later agent training
