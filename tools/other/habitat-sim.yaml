@@ -1,0 +1,26 @@
+name: Habitat Sim
+description: A flexible, high-performance 3D simulator for embodied AI. Habitat-Sim renders indoor scans and CAD scenes at thousands of FPS with RGB-D sensors, URDF robots, and Bullet physics so navigation and manipulation agents train without waiting on a slow renderer.
+tagline: High-performance 3D simulator for embodied AI research
+
+github_url: https://github.com/facebookresearch/habitat-sim
+website_url: https://aihabitat.org/
+docs_url: https://aihabitat.org/docs/habitat-sim/
+install_command: conda install habitat-sim -c conda-forge -c aihabitat
+
+category: Other
+tags: [python, cpp, simulation, embodied-ai, robotics, 3d, facebook]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Embodied agents need thousands of environment steps per second, but
+  game engines are too slow for large-scale RL. Habitat-Sim renders
+  photoreal indoor scans and CAD scenes with RGB-D, physics, and URDF
+  robots so navigation and rearrangement train at thousands of FPS.
+
+use_cases:
+  - Train indoor navigation agents on Matterport3D, Gibson, or HM3D scans
+  - Simulate Fetch or Franka robots rearranging objects in ReplicaCAD
+  - Benchmark RGB-D embodied agents with Habitat-Lab task definitions
+  - Collect high-throughput sensor data for imitation or RL pipelines
