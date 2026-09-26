@@ -1,0 +1,25 @@
+name: Windows Agent Arena
+description: Microsoft benchmark that tests multimodal desktop agents inside a reproducible Windows 11 VM. It scales via Azure ML so hundreds of OS tasks finish in minutes, with a harder mode where the agent must also launch the right app.
+tagline: Scalable Windows OS benchmark for desktop agents
+
+github_url: https://github.com/microsoft/WindowsAgentArena
+website_url: https://microsoft.github.io/WindowsAgentArena
+docs_url: https://github.com/microsoft/WindowsAgentArena#readme
+
+category: Monitoring
+tags: [python, benchmark, evaluation, windows, computer-use, gui, microsoft, multimodal]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Most computer-use benches run Linux or a browser, so Windows desktop
+  agents are scored on the wrong OS. Windows Agent Arena ships a real
+  Windows 11 environment with diverse tasks and cloud-parallel runs,
+  so labs can measure multimodal agents on the OS users actually use.
+
+use_cases:
+  - Benchmark a multimodal desktop agent on Windows 11 tasks in a Docker VM
+  - Run the hard difficulty where the agent must open the correct application itself
+  - Parallelize hundreds of Windows agent trials on Azure ML instead of one local VM
+  - Compare screen parsers such as OmniParser against the Navi agent baseline
