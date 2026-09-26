@@ -1,0 +1,27 @@
+name: PowerDNS
+description: Authoritative DNS, recursor, and dnsdist from one C++ codebase. Run internal zones and load-balanced DNS for a lab without a BIND-only stack.
+tagline: Authoritative DNS, recursor, and dnsdist
+
+github_url: https://github.com/PowerDNS/pdns
+website_url: https://www.powerdns.com
+docs_url: https://doc.powerdns.com
+
+category: Other
+tags: [dns, authoritative, recursor, cpp, networking, self-hosted]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+install_command: brew install pdns
+
+problem_solved: |
+  BIND is one daemon for every DNS role. PowerDNS splits authoritative DNS,
+  recursion, and dnsdist load balancing so a lab can store zones in SQL,
+  recurse separately, and front DNS with a balancer instead of a single
+  named process.
+
+use_cases:
+  - Host internal zones in SQL instead of zone files
+  - Run a recursor in front of public resolvers
+  - Load-balance DNS with dnsdist
+  - Serve split-horizon records for GPU cluster hostnames
