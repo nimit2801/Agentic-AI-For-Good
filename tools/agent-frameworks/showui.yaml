@@ -1,0 +1,25 @@
+name: ShowUI
+description: CVPR 2025 vision-language-action model from Show Lab that grounds GUI widgets from screenshots and emits clicks for computer-use agents. Ships a 2B Qwen2-VL checkpoint, Hugging Face demo, and training code for desktop and web UI control.
+tagline: Lightweight VLA for GUI agents and computer use
+
+github_url: https://github.com/showlab/ShowUI
+website_url: https://huggingface.co/showlab/ShowUI-2B
+docs_url: https://github.com/showlab/ShowUI/blob/main/QUICK_START.md
+
+category: Agents
+tags: [python, agents, gui, computer-use, vision-language, qwen, cvpr]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  GUI agents usually parse accessibility trees or brittle selectors that break
+  across apps. ShowUI treats the screenshot as the interface: a lightweight VLA
+  locates widgets, predicts clicks, and can be trained or served from a 2B
+  checkpoint so labs can study computer-use without a proprietary desktop agent.
+
+use_cases:
+  - Ground a widget on a web or desktop screenshot with the ShowUI-2B checkpoint
+  - Drive a PC from screenshots via the companion Computer Use OOTB demo
+  - Fine-tune ShowUI on custom GUI traces with the provided training scripts
+  - Serve screenshot-to-click inference through the Hugging Face Spaces demo

@@ -1,0 +1,25 @@
+name: AndroidWorld
+description: Google Research environment that runs autonomous agents on a live Android emulator. It ships 116 hand-crafted tasks across 20 apps with randomized parameters, plus MiniWoB++ web tasks rendered as native Android widgets.
+tagline: Dynamic Android benchmark for computer-control agents
+
+github_url: https://github.com/google-research/android_world
+website_url: https://google-research.github.io/android_world/
+docs_url: https://github.com/google-research/android_world#readme
+
+category: Agents
+tags: [python, agents, android, benchmark, computer-use, google, emulator]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Mobile agent papers often freeze a few scripted Android tasks, so results do
+  not transfer. AndroidWorld runs a live emulator with 116 tasks across 20 apps
+  and millions of parameter variants, giving a reproducible computer-control
+  benchmark instead of a one-off demo.
+
+use_cases:
+  - Benchmark a mobile GUI agent on the 116-task AndroidWorld suite
+  - Run MiniWoB++ tasks as native Android widgets inside the same emulator
+  - Add a custom agent by subclassing EnvironmentInteractingAgent and calling step
+  - Reproduce leaderboard runs with randomized task parameters and checkpoints

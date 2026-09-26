@@ -1,0 +1,25 @@
+name: S2ORC
+description: Allen AI corpus of machine-readable scientific papers with parsed full text, abstracts, and citation links. Now shipped as a Semantic Scholar bulk dataset so NLP and RAG pipelines can train on literature without scraping PDFs.
+tagline: Open full-text corpus of scientific papers
+
+github_url: https://github.com/allenai/s2orc
+website_url: https://www.semanticscholar.org/product/api
+docs_url: https://api.semanticscholar.org/api-docs/datasets
+
+category: Data
+tags: [dataset, nlp, scientific-papers, citations, rag, allenai, corpus]
+pricing: free
+is_open_source: true
+license: ODC-By-1.0
+
+problem_solved: |
+  Scientific NLP and RAG need full paper text with citations, not title-abstract
+  scraps. S2ORC parses PDFs into structured JSON with sections, references, and
+  links, now maintained as a Semantic Scholar bulk dump so labs can train
+  literature models without scraping publisher sites.
+
+use_cases:
+  - Download the latest S2ORC bulk dump through the Semantic Scholar datasets API
+  - Pretrain a scientific language model on parsed full text instead of abstracts
+  - Build a literature RAG index with section-level paper JSON and citation edges
+  - Parse new PDFs into S2ORC-style JSON with the companion s2orc-doc2json toolkit
