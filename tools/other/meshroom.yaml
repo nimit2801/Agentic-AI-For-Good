@@ -1,0 +1,26 @@
+name: Meshroom
+description: AliceVision node-based photogrammetry desktop that turns photo sets into textured meshes. Graph editor, 2D/3D viewers, local or render-farm execution, and official computer-vision plugins wrapping the AliceVision SfM/MVS stack.
+tagline: Node-based 3D reconstruction from photos
+
+github_url: https://github.com/alicevision/Meshroom
+website_url: http://meshroom.org
+docs_url: https://github.com/alicevision/Meshroom#readme
+
+category: Other
+tags: [photogrammetry, 3d-reconstruction, sfm, mvs, alicevision, desktop, computer-vision]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  Building a photogrammetry pipeline from COLMAP and MVS binaries is
+  a graph of undocumented scripts. Meshroom exposes AliceVision as a
+  node graph with invalidation, so artists reconstruct a textured
+  mesh from a photo folder and farm the heavy nodes without writing
+  SfM glue.
+
+use_cases:
+  - Reconstruct a textured mesh from a folder of photos in the Meshroom GUI
+  - Customize an AliceVision SfM/MVS template and farm nodes on a render farm
+  - Inspect cameras, depth maps, and meshes in the built-in 2D and 3D viewers
+  - Add a custom Python or CLI node to extend a photogrammetry graph

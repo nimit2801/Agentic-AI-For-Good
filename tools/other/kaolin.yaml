@@ -1,0 +1,25 @@
+name: Kaolin
+description: NVIDIA PyTorch library of GPU-optimized 3D deep learning modules. Differentiable rendering, Gaussian splat I/O, physics on meshes and point clouds, octrees, and USD conversions so research code stops reinventing 3D ops.
+tagline: PyTorch library for 3D deep learning research
+
+github_url: https://github.com/NVIDIAGameWorks/kaolin
+website_url: https://kaolin.readthedocs.io/en/latest/
+docs_url: https://kaolin.readthedocs.io/en/latest/
+
+category: Other
+tags: [python, 3d, pytorch, nvidia, differentiable-rendering, gaussian-splatting, cuda]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  3D research forks reimplement renderers, conversions, and physics
+  for every paper. Kaolin packages NVIDIA's reusable CUDA modules so
+  a trainer can load USD or PLY Gaussians, render differentiably, and
+  run mesh physics without assembling a private ops library.
+
+use_cases:
+  - Differentiable-render a mesh or Gaussian splat batch inside a PyTorch trainer
+  - Convert between meshes, point clouds, voxel grids, and Structured Point Clouds
+  - Run representation-agnostic physics on meshes, splats, or point clouds
+  - Load USD assets and export optimized 3D Gaussians from a research pipeline
