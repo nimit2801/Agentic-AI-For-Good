@@ -1,0 +1,25 @@
+name: OS-Atlas
+description: ICLR 2025 foundation action model for generalist GUI agents. OS-Atlas-Base 4B and 7B, finetuned from InternVL2 and Qwen2-VL, output normalized click points or boxes on screenshots of any size.
+tagline: Foundation action model for generalist GUI agents
+
+github_url: https://github.com/OS-Copilot/OS-Atlas
+website_url: https://osatlas.github.io
+docs_url: https://github.com/OS-Copilot/OS-Atlas#readme
+
+category: Agents
+tags: [python, agents, gui, computer-use, grounding, internvl, qwen, iclr]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Generalist GUI agents need a shared grounding backbone, not a new
+  locator per app. OS-Atlas trains foundation action models that map
+  any screenshot to relative coordinates, with ScreenSpot-v2 and open
+  data so labs can plug a 4B or 7B locator into desktop or mobile agents.
+
+use_cases:
+  - Run OS-Atlas-Base-7B to return click points or boxes on a screenshot
+  - Swap InternVL2-4B or Qwen2-VL-7B grounding weights into a GUI agent loop
+  - Evaluate GUI locators on the ScreenSpot-v2 Hugging Face split
+  - Train a custom action model on the OS-Atlas-data collection

@@ -1,0 +1,25 @@
+name: UGround
+description: ICLR 2025 Oral universal visual grounding model for GUI agents from OSU NLP and Orby AI. Qwen2-VL UGround-V1 checkpoints from 2B to 72B locate widgets from screenshots across web, desktop, and Android.
+tagline: Universal visual grounding for GUI agents
+
+github_url: https://github.com/OSU-NLP-Group/UGround
+website_url: https://osu-nlp-group.github.io/UGround/
+docs_url: https://github.com/OSU-NLP-Group/UGround#readme
+
+category: Agents
+tags: [python, agents, gui, grounding, qwen, computer-use, iclr, huggingface]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  GUI agents often pair a chat model with a weak locator, so they miss
+  icons and high-res professional UIs. UGround trains universal visual
+  grounding on large screenshot data and scores ScreenSpot-Pro, so the
+  planner can point at the right widget on web, desktop, or Android.
+
+use_cases:
+  - Ground GUI elements with UGround-V1-7B or 72B on ScreenSpot-Pro
+  - Pair UGround with a planner for AndroidWorld or Mind2Web-Live agents
+  - Train a custom grounding model on the UGround-V1 screenshot dataset
+  - Try the Hugging Face Spaces demo before wiring coordinates into a controller
