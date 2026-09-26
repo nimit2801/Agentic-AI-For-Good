@@ -1,0 +1,28 @@
+name: LightAgent
+description: A lightweight Python framework for OpenAI-compatible agents with tools, memory, guardrails, tracing, lifecycle hooks, multi-agent collaboration, and workflows. It targets teams that want an agent runtime without a heavy orchestration stack.
+tagline: Lightweight OpenAI-compatible agent runtime
+
+github_url: https://github.com/wanxingai/LightAgent
+docs_url: https://github.com/wanxingai/LightAgent#readme
+
+install_command: pip install lightagent
+
+category: Agents
+tags: [python, agents, openai-compatible, memory, tools, guardrails, tracing, multi-agent]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Full agent platforms pull in graphs, servers, and cloud accounts
+  before a first tool call works. LightAgent keeps a small Python
+  runtime that speaks OpenAI-compatible APIs, with memory, tools,
+  guardrails, tracing, and multi-agent workflows in one package.
+  Builders ship an agent without adopting a large orchestration
+  framework.
+
+use_cases:
+  - Stand up an OpenAI-compatible agent with tools and memory in a few lines of Python
+  - Add guardrails and tracing around tool calls without a separate observability stack
+  - Coordinate several LightAgent workers on a shared workflow
+  - Prototype tree-of-thought or lifecycle-hook agents before moving to a heavier framework
