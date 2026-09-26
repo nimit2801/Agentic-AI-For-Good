@@ -1,0 +1,25 @@
+name: LightGlue
+description: ICCV 2023 ETH Zurich matcher that pairs SuperPoint, DISK, ALIKED, or SIFT keypoints across images with an adaptive transformer. Fast on easy pairs, accurate on hard ones, with Hugging Face Transformers support.
+tagline: Local feature matching at light speed
+
+github_url: https://github.com/cvg/LightGlue
+website_url: https://huggingface.co/spaces/ETH-CVG/LightGlue
+docs_url: https://github.com/cvg/LightGlue#readme
+
+category: Other
+tags: [python, feature-matching, computer-vision, sfm, pytorch, transformer, iccv]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  SuperGlue-style matchers are accurate but too slow for easy pairs.
+  LightGlue prunes attention as correspondence confidence grows so
+  SfM, SLAM, and visual localization keep SuperPoint-level matches
+  without paying a full GNN cost on every image pair.
+
+use_cases:
+  - Match SuperPoint or DISK keypoints between two photos for SfM
+  - Swap SuperGlue for LightGlue in an hloc visual localization pipeline
+  - Run LightGlue from Hugging Face Transformers on an image pair
+  - Train a custom matcher with glue-factory using LightGlue as the decoder

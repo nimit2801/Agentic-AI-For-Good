@@ -1,0 +1,25 @@
+name: tiny-cuda-nn
+description: NVIDIA C++/CUDA framework for tiny fully fused MLPs and hash-grid encodings. Powers Instant-NGP-style NeRF, SDF, and image fitting with PyTorch bindings so a 64-wide network trains far faster than TensorFlow or naive CUDA.
+tagline: Fully fused CUDA MLPs and hash encodings
+
+github_url: https://github.com/NVlabs/tiny-cuda-nn
+docs_url: https://github.com/NVlabs/tiny-cuda-nn#readme
+install_command: pip install git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
+
+category: Other
+tags: [cuda, mlp, hash-encoding, nerf, nvidia, pytorch, cpp]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Small MLPs with hash encodings are the bottleneck in Instant-NGP
+  and similar neural fields, and generic frameworks waste bandwidth
+  on them. tiny-cuda-nn fuses the MLP into one CUDA kernel so NeRF,
+  SDF, and image fitters train at interactive rates on a single GPU.
+
+use_cases:
+  - Train an Instant-NGP style NeRF with fully fused MLPs and hash grids
+  - Fit a signed distance field or HDR image using tcnn encodings
+  - Call tiny-cuda-nn from PyTorch instead of writing custom fused kernels
+  - Benchmark fused 64-wide MLPs against TensorFlow XLA on the same GPU

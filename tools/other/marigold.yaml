@@ -1,0 +1,25 @@
+name: Marigold
+description: ETH Zurich CVPR 2024 method that fine-tunes Stable Diffusion for monocular depth, surface normals, and intrinsic decomposition. Zero-shot high-resolution maps from a single photo, with Diffusers and Hugging Face demos.
+tagline: Diffusion models for monocular depth and geometry
+
+github_url: https://github.com/prs-eth/Marigold
+website_url: https://marigoldcomputervision.github.io
+docs_url: https://huggingface.co/docs/diffusers/using-diffusers/marigold_usage
+
+category: Other
+tags: [python, depth-estimation, diffusion, computer-vision, huggingface, pytorch, cvpr]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Discriminative depth networks overfit to their training domain and
+  blur thin structure. Marigold repurposes a latent diffusion prior
+  so a single indoor or outdoor photo yields sharp metric-looking
+  depth, normals, or albedo without a task-specific architecture.
+
+use_cases:
+  - Estimate monocular depth from a single photo with the Diffusers Marigold pipeline
+  - Predict surface normals for relighting or 3D reconstruction from one image
+  - Decompose appearance and lighting with Marigold intrinsic image models
+  - Fine-tune Marigold on a small synthetic set on one GPU for a new dense task
