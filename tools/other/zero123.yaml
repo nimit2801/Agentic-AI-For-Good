@@ -1,0 +1,26 @@
+name: Zero123
+description: ICCV 2023 Zero-1-to-3 model that synthesizes novel views of an object from a single RGB image. Zero123 conditions a diffusion model on relative camera pose so one photo becomes multi-view images for 3D reconstruction.
+tagline: Zero-shot novel views from a single image
+
+github_url: https://github.com/cvlab-columbia/zero123
+website_url: https://zero123.cs.columbia.edu/
+docs_url: https://github.com/cvlab-columbia/zero123
+
+category: Other
+tags: [python, pytorch, 3d-generation, diffusion, novel-view, iccv, computer-vision]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Reconstructing an object from one photo lacks the extra views SfM
+  needs. Zero123 is a pose-conditioned diffusion model that
+  hallucinates consistent novel views from a single RGB image, which
+  later image-to-3D pipelines (Wonder3D, Magic123, InstantMesh) use
+  as the multi-view prior.
+
+use_cases:
+  - Synthesize novel camera views of an object from one photo
+  - Feed generated multi-view images into NeRF or Gaussian reconstruction
+  - Bootstrap single-image to 3D pipelines that need extra viewpoints
+  - Benchmark pose-conditioned diffusion against later Zero123-XL variants
