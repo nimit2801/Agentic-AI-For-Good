@@ -1,0 +1,26 @@
+name: VGGT
+description: CVPR 2025 Best Paper Visual Geometry Grounded Transformer from Meta FAIR. One feed-forward network infers cameras, depth, and point maps from one or many images, replacing slow per-scene SfM optimization for many reconstruction jobs.
+tagline: Feed-forward visual geometry from one or many images
+
+github_url: https://github.com/facebookresearch/vggt
+website_url: https://arxiv.org/abs/2503.11651
+docs_url: https://github.com/facebookresearch/vggt#readme
+
+category: Other
+tags: [python, 3d-reconstruction, transformer, depth, cameras, cvpr, meta]
+pricing: free
+is_open_source: true
+license: Meta Research License
+
+problem_solved: |
+  COLMAP-style SfM is accurate but slow and brittle on textureless
+  frames. VGGT predicts cameras and dense geometry in a single forward
+  pass from unordered photos, so robotics and 3DGS pipelines can
+  bootstrap poses and point maps without running incremental bundle
+  adjustment on every capture.
+
+use_cases:
+  - Infer camera poses and dense depth from a photo set without running COLMAP
+  - Initialize 3D Gaussian splatting or NeRF from VGGT point maps
+  - Reconstruct indoor scenes from a phone burst in one transformer forward pass
+  - Benchmark feed-forward geometry against DUSt3R, MASt3R, and classic SfM

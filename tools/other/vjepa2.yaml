@@ -1,0 +1,26 @@
+name: VJEPA2
+description: Meta FAIR V-JEPA 2 self-supervised video model that predicts embeddings in latent space instead of pixels. MIT PyTorch code, Hugging Face ViT-L/H/G checkpoints, and a processor API for action understanding and video representation learning.
+tagline: Joint-embedding predictive video pretraining
+
+github_url: https://github.com/facebookresearch/vjepa2
+website_url: https://huggingface.co/collections/facebook/v-jepa-2-6841bad8413014e185b497a6
+docs_url: https://huggingface.co/facebook/vjepa2-vitg-fpc64-256
+
+category: Other
+tags: [python, video, self-supervised, jepa, huggingface, meta, pytorch]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Pixel reconstruction pretraining wastes capacity on textures that do
+  not matter for action. VJEPA2 predicts future embeddings, so the
+  backbone learns motion and structure that transfer to probing and
+  downstream video tasks, with public giant ViT checkpoints instead of
+  a closed research dump.
+
+use_cases:
+  - Load facebook/vjepa2-vitg-fpc64-256 from Transformers for video feature extraction
+  - Probe VJEPA2 embeddings for action recognition without full fine-tuning
+  - Pretrain or evaluate joint-embedding video models against VideoMAE-style MAE baselines
+  - Swap pixel reconstruction losses for latent prediction in a custom video SSL stack

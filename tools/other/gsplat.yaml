@@ -1,0 +1,27 @@
+name: gsplat
+description: CUDA-accelerated 3D Gaussian splatting rasterizer from the Nerfstudio team. Apache-2.0 Python package with fused kernels, densification, and docs so you can train and render 3DGS scenes without forking the original INRIA CUDA.
+tagline: Fast Gaussian splatting rasterization from Nerfstudio
+
+github_url: https://github.com/nerfstudio-project/gsplat
+website_url: https://docs.gsplat.studio/
+docs_url: https://docs.gsplat.studio/
+install_command: pip install gsplat
+
+category: Other
+tags: [python, cuda, gaussian-splatting, nerf, 3d-reconstruction, nerfstudio]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  The original 3DGS CUDA is a research dump that is hard to depend on.
+  gsplat packages a maintained, faster rasterizer with Python bindings,
+  so Nerfstudio and custom trainers can densify, render, and export
+  Gaussian scenes without vendoring INRIA kernels or rewriting backward
+  passes.
+
+use_cases:
+  - Train a 3D Gaussian splatting scene from COLMAP cameras with pip-installable CUDA kernels
+  - Swap the original INRIA rasterizer for gsplat inside a custom PyTorch 3DGS trainer
+  - Export optimized Gaussians for real-time viewers after Nerfstudio training
+  - Benchmark splat throughput against Instant-NGP hash-grid NeRF on the same capture

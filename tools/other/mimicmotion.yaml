@@ -1,0 +1,26 @@
+name: MimicMotion
+description: Tencent pose-guided human motion video generator with confidence-aware guidance. Apache-2.0 code, project page, and checkpoints that animate a reference image from a driving pose sequence without collapsing hands and limbs.
+tagline: Confidence-aware pose-guided human motion video
+
+github_url: https://github.com/Tencent/MimicMotion
+website_url: https://tencent.github.io/MimicMotion/
+docs_url: https://github.com/Tencent/MimicMotion#readme
+
+category: Other
+tags: [python, video-generation, pose, animation, diffusion, tencent]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Animate-Anyone-style pose2video often warps hands and identity when
+  the pose estimator is unsure. MimicMotion weights guidance by pose
+  confidence so low-quality keypoints do not drag the diffusion, which
+  yields more stable long human motion videos from a single reference
+  image plus a driving skeleton.
+
+use_cases:
+  - Animate a character still using a driving pose video without a full 3D rig
+  - Generate longer human motion clips with confidence-aware pose guidance
+  - Compare MimicMotion against Moore-AnimateAnyone and MagicAnimate on hand fidelity
+  - Fine-tune pose-guided video diffusion on a custom character sheet
