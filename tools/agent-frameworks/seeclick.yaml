@@ -1,0 +1,25 @@
+name: SeeClick
+description: ACL 2024 visual GUI agent that grounds widgets from screenshots using Qwen-VL. It introduced ScreenSpot, a 1200-instruction grounding bench across iOS, Android, desktop, and web, plus open web GUI pre-training data from Common Crawl.
+tagline: GUI grounding agent with the ScreenSpot benchmark
+
+github_url: https://github.com/njucckevin/SeeClick
+website_url: https://arxiv.org/abs/2401.10935
+docs_url: https://github.com/njucckevin/SeeClick#readme
+
+category: Agents
+tags: [python, agents, gui, computer-use, vision-language, qwen, grounding, acl]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  GUI agents fail when they cannot locate the widget a user named.
+  SeeClick pre-trains Qwen-VL on screenshot-to-box data and scores
+  grounding on ScreenSpot across five platforms, so labs can measure
+  visual click accuracy instead of hoping a chat model finds the button.
+
+use_cases:
+  - Ground a click target on iOS, Android, desktop, or web screenshots with SeeClick
+  - Evaluate GUI locators on the ScreenSpot text versus icon splits
+  - Pre-train a visual GUI agent on the Common Crawl web grounding corpus
+  - Fine-tune SeeClick on agent tasks using the repo agent_tasks setup

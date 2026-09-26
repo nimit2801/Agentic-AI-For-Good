@@ -1,0 +1,25 @@
+name: WebVoyager
+description: End-to-end multimodal web agent that completes tasks on live sites with Selenium and a large multimodal model. It ships 643 queries across 15 popular websites, a GPT-4V auto-eval protocol, and a GAIA web subset.
+tagline: Multimodal agent for live website tasks
+
+github_url: https://github.com/MinorJerry/WebVoyager
+website_url: https://arxiv.org/abs/2401.13919
+docs_url: https://github.com/MinorJerry/WebVoyager#readme
+
+category: Agents
+tags: [python, agents, browser, multimodal, selenium, evaluation, web-agents]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Many web agents train on frozen HTML dumps that never match the live
+  page. WebVoyager browses real sites with screenshots plus text, ships
+  643 tasks on 15 sites, and scores runs with GPT-4V so labs can test
+  end-to-end agents on the current internet instead of a sandbox clone.
+
+use_cases:
+  - Run a multimodal Selenium agent on the 643 WebVoyager site-task pairs
+  - Score trajectories with the GPT-4V automated evaluation protocol
+  - Expand the task pool with the GPT-4 prompt templates in the repo
+  - Replay GAIA web-browser tasks starting from Google Search

@@ -1,0 +1,25 @@
+name: OpenCUA
+description: NeurIPS 2025 Spotlight open stack for computer-use agents from xlang. It pairs AgentNet trajectories across three OSes with OpenCUA-7B/32B/72B models that plan and click, including a 72B checkpoint that led OSWorld-Verified.
+tagline: Open foundations for computer-use agents
+
+github_url: https://github.com/xlang-ai/OpenCUA
+website_url: https://opencua.xlang.ai
+docs_url: https://github.com/xlang-ai/OpenCUA#readme
+
+category: Agents
+tags: [python, agents, computer-use, gui, osworld, huggingface, neurips, vllm]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Closed computer-use models hide data and weights, so labs cannot
+  scale desktop agents. OpenCUA releases AgentNet demos across 200-plus
+  apps, annotation tools, an offline action bench, and 7B to 72B models
+  that emit executable clicks with open training and vLLM serving.
+
+use_cases:
+  - Serve OpenCUA-7B or 72B with vLLM for screenshot-to-action computer use
+  - Train on AgentNet trajectories spanning Windows, macOS, and Linux apps
+  - Score predicted low-level actions offline with AgentNetBench
+  - Capture new human demos with AgentNetTool for domain-specific CUA data
