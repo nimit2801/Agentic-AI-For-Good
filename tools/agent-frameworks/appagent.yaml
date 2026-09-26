@@ -1,0 +1,26 @@
+name: AppAgent
+description: A CHI 2025 multimodal agent framework from Tencent that uses smartphone apps by tapping and swiping like a person. It learns new apps through autonomous exploration or human demos, then stores that knowledge for later tasks.
+tagline: LLM agents that operate smartphone apps like a human
+
+github_url: https://github.com/TencentQQGYLab/AppAgent
+website_url: https://appagent-official.github.io/
+docs_url: https://github.com/TencentQQGYLab/AppAgent#readme
+
+category: Agents
+tags: [python, agents, mobile, multimodal, gui, android, tencent, gpt-4v]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Smartphone automation usually needs accessibility APIs or per-app
+  integrations that break across vendors. AppAgent watches the screen,
+  taps and swipes in a small action space, and learns each app by
+  exploring it or watching a human. That knowledge base lets the same
+  agent run complex flows on apps it has never been hard-coded for.
+
+use_cases:
+  - Teach an agent a new Android app by demonstration, then replay multi-step flows without APIs
+  - Evaluate GPT-4V or Qwen-VL agents on real smartphone tasks such as social follow or form fill
+  - Prototype mobile GUI agents on an Android emulator when no physical device is available
+  - Build a reusable app knowledge base so later tasks reuse learned UI maps
