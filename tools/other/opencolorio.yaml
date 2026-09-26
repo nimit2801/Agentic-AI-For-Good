@@ -1,0 +1,26 @@
+name: OpenColorIO
+description: Color management framework for visual effects and animation from the Academy Software Foundation. OpenColorIO applies ACES and studio LUTs consistently so renderers, compositors, and ML image pipelines share the same color transform graph.
+tagline: Studio color management for VFX, animation, and ML
+
+github_url: https://github.com/AcademySoftwareFoundation/OpenColorIO
+website_url: https://opencolorio.org/
+docs_url: https://opencolorio.readthedocs.io
+install_command: pip install OpenColorIO
+
+category: Other
+tags: [cpp, python, color-management, vfx, aces, aswf]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Each DCC app applies its own gamma and LUT stack, so plates look
+  different in the renderer, compositor, and training loader.
+  OpenColorIO shares ACES configs and studio LUTs so color stays
+  consistent across VFX and ML image pipelines.
+
+use_cases:
+  - Apply ACES display and view transforms in a Python image loader
+  - Share a studio OCIO config across renderer, compositor, and ML jobs
+  - Convert camera log footage to a linear working space before training
+  - Preview HDR EXR frames with the same LUT graph used in production

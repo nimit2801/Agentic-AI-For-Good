@@ -1,0 +1,25 @@
+name: OpenSubdiv
+description: Pixar open-source subdivision surface library. OpenSubdiv evaluates Catmull-Clark and related schemes on CPU and GPU so film, games, and 3D ML pipelines tessellate high-quality surfaces without a proprietary subdiv kernel.
+tagline: Pixar GPU subdivision surfaces for film and 3D ML
+
+github_url: https://github.com/PixarAnimationStudios/OpenSubdiv
+website_url: https://graphics.pixar.com/opensubdiv/docs/intro.html
+docs_url: https://graphics.pixar.com/opensubdiv/docs/intro.html
+
+category: Other
+tags: [cpp, gpu, subdivision, 3d, pixar, vfx]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Smooth character and hard-surface meshes need Catmull-Clark
+  tessellation, but each DCC ships a private subdiv kernel.
+  OpenSubdiv evaluates the same schemes on CPU and GPU so USD,
+  renderers, and 3D ML tools share film-quality surfaces.
+
+use_cases:
+  - Tessellate Catmull-Clark character meshes for a production renderer
+  - Evaluate GPU subdivision in a real-time viewport or game engine
+  - Feed OpenUSD subdiv surfaces into a neural rendering dataset
+  - Replace a custom subdiv kernel with Pixar OpenSubdiv

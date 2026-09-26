@@ -1,0 +1,26 @@
+name: OpenImageIO
+description: Format-agnostic image I/O library for VFX. OpenImageIO reads and writes EXR, TIFF, PNG, JPEG, and dozens of other formats through one API so rendering, compositing, and ML data loaders do not each ship a custom image stack.
+tagline: Format-agnostic image I/O for VFX and ML pipelines
+
+github_url: https://github.com/AcademySoftwareFoundation/OpenImageIO
+website_url: https://openimageio.readthedocs.io
+docs_url: https://openimageio.readthedocs.io
+install_command: pip install OpenImageIO
+
+category: Other
+tags: [cpp, python, image-io, vfx, rendering, aswf]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Renderers and dataset loaders each glue a different image library,
+  so EXR, TIFF, and PNG paths diverge. OpenImageIO gives one API for
+  dozens of formats, color spaces, and metadata so VFX and ML
+  pipelines share a single I/O layer.
+
+use_cases:
+  - Load mixed EXR, TIFF, and PNG training images through one Python API
+  - Write renderer AOVs without embedding a custom image encoder
+  - Convert and resize production plates with color-aware image buffers
+  - Inspect image metadata across a VFX or synthetic-data cache
