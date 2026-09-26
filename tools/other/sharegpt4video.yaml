@@ -1,0 +1,25 @@
+name: ShareGPT4Video
+description: NeurIPS 2024 video-language project with 40K GPT-4 Vision captions, a general ShareCaptioner-Video model, and ShareGPT4Video-8B. Open training, Hugging Face demos, and captions that also lift text-to-video generation quality.
+tagline: High-quality video captions for understanding and generation
+
+github_url: https://github.com/ShareGPT4Omni/ShareGPT4Video
+website_url: https://sharegpt4video.github.io
+docs_url: https://github.com/ShareGPT4Omni/ShareGPT4Video#readme
+
+category: Other
+tags: [python, multimodal, video, captions, vision-language, neurips, huggingface]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Video VLMs and text-to-video models starve on short, noisy captions.
+  ShareGPT4Video releases 40K dense GPT-4 Vision captions plus an
+  open 8B video-language model so teams can train better video
+  understanding and generation from richer supervision.
+
+use_cases:
+  - Caption arbitrary-length videos with ShareCaptioner-Video in quality or efficiency mode
+  - Chat about a local video using ShareGPT4Video-8B via run.py or the Gradio demo
+  - Replace noisy VideoChatGPT captions with ShareGPT4Video data when fine-tuning Video-LLaVA
+  - Improve Open-Sora-style text-to-video training with denser ShareGPT4Video captions

@@ -1,0 +1,25 @@
+name: Aguvis
+description: ICML 2025 unified pure-vision GUI agent from xlang that operates web, desktop, and mobile from screenshots instead of HTML or accessibility trees. Open training code, Hugging Face 7B checkpoints, and a two-stage grounding then planning pipeline.
+tagline: Pure-vision GUI agents across web, desktop, and mobile
+
+github_url: https://github.com/xlang-ai/aguvis
+website_url: https://aguvis-project.github.io
+docs_url: https://github.com/xlang-ai/aguvis#readme
+
+category: Agents
+tags: [python, agents, gui, computer-use, multimodal, vision, icml]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  GUI agents that depend on HTML, accessibility trees, or closed APIs
+  break across platforms. Aguvis uses only screenshots and a shared
+  action space so one open model can ground, plan, and act on web,
+  desktop, and mobile without a DOM wrapper per app.
+
+use_cases:
+  - Train a pure-vision GUI agent with the two-stage Aguvis grounding and planning datasets
+  - Run Aguvis-7B-720P inference on a screenshot plus instruction for computer-use actions
+  - Evaluate cross-platform GUI agents on Android World, Mind2Web-Live, and OSWorld-style tasks
+  - Collect multimodal GUI trajectories with inner-monologue planning instead of HTML parsers

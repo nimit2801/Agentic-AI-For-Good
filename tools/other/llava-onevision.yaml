@@ -1,0 +1,25 @@
+name: LLaVA-OneVision
+description: Fully open multimodal training stack from EvolvingLMMs-Lab that unifies image, long video, and spatial reasoning in one 8B model. Codec-aligned encoders, public datasets, checkpoints, and reproducible training from Docker or Megatron.
+tagline: Open multimodal training for image, video, and spatial tasks
+
+github_url: https://github.com/EvolvingLMMs-Lab/LLaVA-OneVision-2
+website_url: https://evolvinglmms-lab.github.io/LLaVA-OneVision-2/
+docs_url: https://github.com/EvolvingLMMs-Lab/LLaVA-OneVision-2#readme
+
+category: Other
+tags: [python, multimodal, vision-language, video, llava, training, apache]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Most open VLMs stay on single images and hide data or training logs.
+  LLaVA-OneVision ships codec-aligned encoders, long-video and spatial
+  datasets, and full configs so labs can reproduce an 8B model that
+  handles images, long clips, OCR, and 3D layout from one stack.
+
+use_cases:
+  - Train LLaVA-OneVision-2 on a single 8-GPU node with the published quick-start Docker bundle
+  - Run native-resolution image, long-video, and spatial reasoning from one 8B instruct checkpoint
+  - Evaluate OneVision models with the lmms-eval llava-onevision2 branch and codec backend
+  - Fine-tune on LLaVA-OneVision-2-VideoCaption or Spatial datasets without closed data mixes
