@@ -1,0 +1,27 @@
+name: COLMAP
+description: Open structure-from-motion and multi-view stereo pipeline that reconstructs cameras and dense geometry from unordered photos. The default SfM backend for Nerfstudio, 3DGS, and most photogrammetry research. BSD-3-Clause, CLI plus GUI, Homebrew formula.
+tagline: Structure-from-motion and multi-view stereo
+
+github_url: https://github.com/colmap/colmap
+website_url: https://colmap.github.io/
+docs_url: https://colmap.github.io/cli.html
+install_command: brew install colmap
+
+category: Other
+tags: [cpp, photogrammetry, sfm, mvs, 3d-reconstruction, nerf, computer-vision]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Building camera poses from a folder of photos used to mean a
+  research stack of feature matching, bundle adjustment, and MVS.
+  COLMAP packages that pipeline so NeRF and Gaussian splatting
+  projects can ingest a video or photo set and get calibrated
+  cameras plus a sparse or dense point cloud without writing SfM.
+
+use_cases:
+  - Reconstruct camera poses from a phone video before training a NeRF or 3DGS scene
+  - Run incremental SfM plus patch-match MVS on unordered architectural photos
+  - Export COLMAP sparse models into Nerfstudio or gsplat training
+  - Use the COLMAP GUI to inspect tracks, cameras, and dense stereo

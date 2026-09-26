@@ -1,0 +1,26 @@
+name: Depth Anything
+description: CVPR 2024 monocular depth foundation model trained on 1.5M labeled plus 62M unlabeled images. Open Apache-2.0 weights, a public demo, and a V2 follow-up for metric-scale indoor and outdoor depth from a single RGB frame.
+tagline: Foundation model for monocular depth estimation
+
+github_url: https://github.com/LiheYoung/Depth-Anything
+website_url: https://depth-anything.github.io
+docs_url: https://github.com/LiheYoung/Depth-Anything#readme
+
+category: Other
+tags: [python, depth-estimation, computer-vision, foundation-model, huggingface, cvpr]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Classic monocular depth nets overfit to one dataset and fail when
+  you move from KITTI streets to indoor phones. Depth Anything
+  pretrains on a huge unlabeled mix so a single checkpoint produces
+  relative depth that generalizes across domains, with V2 adding
+  metric indoor and outdoor heads without a second stereo rig.
+
+use_cases:
+  - Estimate relative depth from a single photo for 3D photo or relighting pipelines
+  - Initialize metric depth for robotics navigation when no stereo or LiDAR is available
+  - Fine-tune Depth Anything on a custom indoor dataset for AR occlusion
+  - Compare Depth Anything V2 metric heads against ZoeDepth or MiDaS

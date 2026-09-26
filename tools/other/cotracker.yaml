@@ -1,0 +1,25 @@
+name: CoTracker
+description: Meta FAIR point tracker that jointly tracks any pixel across a video with a transformer. CoTracker2/3 checkpoints, a project page, and online inference so you can click points once and follow them through occlusion and camera motion.
+tagline: Track any pixel through a video
+
+github_url: https://github.com/facebookresearch/co-tracker
+website_url: https://co-tracker.github.io/
+docs_url: https://github.com/facebookresearch/co-tracker#readme
+
+category: Other
+tags: [python, video, tracking, transformer, computer-vision, meta, pytorch]
+pricing: free
+is_open_source: true
+license: CC-BY-NC-4.0
+
+problem_solved: |
+  Optical flow is pairwise and TAP-style trackers often drop points
+  under occlusion. CoTracker attends across space and time so queried
+  pixels stay attached through long videos, which is what VFX,
+  robotics, and 4D reconstruction need instead of frame-to-frame flow.
+
+use_cases:
+  - Click sparse points on a first frame and track them through an untrimmed clip
+  - Bootstrap 4D reconstruction or dynamic Gaussian splatting with dense long-range tracks
+  - Evaluate TAP-Vid style any-point tracking against PIPs or TAPIR
+  - Run CoTracker3 online inference for live camera tracking demos
