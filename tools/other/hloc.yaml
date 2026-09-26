@@ -1,0 +1,24 @@
+name: HLoc
+description: ETH Zurich hierarchical localization toolbox for 6-DoF pose from images. Combines image retrieval with SuperPoint, SuperGlue, or LightGlue matching and COLMAP so you can map a scene and localize internet photos without a custom SfM stack.
+tagline: Hierarchical visual localization toolbox
+
+github_url: https://github.com/cvg/Hierarchical-Localization
+docs_url: https://github.com/cvg/Hierarchical-Localization#readme
+
+category: Other
+tags: [python, visual-localization, sfm, superpoint, colmap, computer-vision, pytorch]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Visual localization papers mix retrieval, matching, and PnP in
+  incompatible scripts. hloc wires those stages so a team can build
+  a COLMAP map with SuperPoint plus LightGlue, then localize a query
+  photo on indoor or outdoor benchmarks without rewriting SfM glue.
+
+use_cases:
+  - Build an SfM map of your own photos with SuperPoint and SuperGlue or LightGlue
+  - Localize an internet query image against a prebuilt hierarchical map
+  - Reproduce indoor and outdoor visual localization benchmarks from one toolbox
+  - Plug custom local features or retrieval into hloc and debug the pose pipeline

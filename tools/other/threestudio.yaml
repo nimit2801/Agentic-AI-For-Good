@@ -1,0 +1,25 @@
+name: threestudio
+description: Unified PyTorch framework for 3D content creation from text, a single image, or few-shot views. Implements DreamFusion, ProlificDreamer, Zero-1-to-3, Magic123, and related score-distillation methods behind one config-driven trainer.
+tagline: Unified framework for text-to-3D generation
+
+github_url: https://github.com/threestudio-project/threestudio
+docs_url: https://github.com/threestudio-project/threestudio#readme
+
+category: Other
+tags: [python, text-to-3d, nerf, dreamfusion, pytorch, 3d-generation, computer-vision]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Every text-to-3D paper ships a one-off trainer, so comparing
+  DreamFusion, Magic3D, and Zero-1-to-3 means cloning four repos.
+  threestudio puts those methods in one config-driven framework so
+  you can lift a 2D diffusion prior into a NeRF or mesh without
+  rewriting the SDS loop each time.
+
+use_cases:
+  - Generate a 3D asset from a text prompt with DreamFusion or ProlificDreamer
+  - Reconstruct a mesh from a single image using Zero-1-to-3 or Magic123
+  - Edit an existing NeRF with InstructNeRF2NeRF inside one trainer
+  - Swap SDS backends under the same threestudio config for a research ablation

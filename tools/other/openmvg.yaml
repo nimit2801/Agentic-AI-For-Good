@@ -1,0 +1,25 @@
+name: OpenMVG
+description: C++ multiple-view geometry library and photogrammetry pipeline. Feature detection, matching, camera models, and structure-from-motion binaries so researchers reconstruct cameras and sparse geometry from image sets on Linux, macOS, Windows, and mobile.
+tagline: Open multiple-view geometry and SfM library
+
+github_url: https://github.com/openMVG/openMVG
+docs_url: https://github.com/openMVG/openMVG/wiki
+
+category: Other
+tags: [cpp, sfm, photogrammetry, 3d-reconstruction, computer-vision, multiple-view-geometry]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  Teaching or embedding SfM usually means reading papers then
+  stitching undocumented binaries. OpenMVG gives tested C++ libraries
+  plus pipeline binaries so a photogrammetry or robotics stack can
+  detect features, match views, and solve cameras without a black-box
+  COLMAP-only path.
+
+use_cases:
+  - Run an end-to-end SfM pipeline on a custom image dataset
+  - Embed OpenMVG camera models and feature tracking in a CMake C++ project
+  - Compare incremental versus global SfM on the same photo collection
+  - Export sparse reconstructions into OpenMVS or Meshroom for dense meshing
