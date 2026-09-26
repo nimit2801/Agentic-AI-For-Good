@@ -1,0 +1,26 @@
+name: Gaussian Splatting
+description: Official INRIA GRAPHDECO implementation of 3D Gaussian Splatting. Represents scenes as anisotropic 3D Gaussians and rasterizes them for real-time 1080p novel-view synthesis after minutes of training from COLMAP captures.
+tagline: Real-time radiance fields with 3D Gaussians
+
+github_url: https://github.com/graphdeco-inria/gaussian-splatting
+website_url: https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/
+docs_url: https://github.com/graphdeco-inria/gaussian-splatting#readme
+
+category: Other
+tags: [3d, gaussian-splatting, nerf, novel-view-synthesis, computer-vision, cuda, pytorch]
+pricing: free
+is_open_source: true
+license: Gaussian-Splatting License
+
+problem_solved: |
+  Neural radiance fields looked great but were too slow to train and
+  render at 1080p. 3D Gaussian Splatting replaces the MLP with explicit
+  anisotropic Gaussians plus a visibility-aware rasterizer so a COLMAP
+  capture trains in minutes and plays back in real time without trading
+  away visual quality on unbounded scenes.
+
+use_cases:
+  - Reconstruct a real-time 3DGS scene from a phone video after COLMAP SfM
+  - Render novel 1080p views of architecture or film sets at 30-plus fps
+  - Train with depth regularization and anti-aliasing on Mip-NeRF 360 data
+  - Inspect optimization live in the SIBR network viewer or OpenGL viewer

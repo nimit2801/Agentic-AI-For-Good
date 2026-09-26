@@ -1,0 +1,26 @@
+name: DUSt3R
+description: NAVER Labs geometric 3D vision model that predicts aligned pointmaps from uncalibrated image pairs. Recovers cameras, dense geometry, and correspondences without known intrinsics, making two-view reconstruction a single forward pass.
+tagline: Geometric 3D vision from uncalibrated image pairs
+
+github_url: https://github.com/naver/dust3r
+website_url: https://dust3r.europe.naverlabs.com/
+docs_url: https://github.com/naver/dust3r#readme
+
+category: Other
+tags: [python, 3d-reconstruction, computer-vision, pointmap, stereo, pytorch, naver]
+pricing: free
+is_open_source: true
+license: CC-BY-NC-SA-4.0
+
+problem_solved: |
+  Classic SfM needs calibrated cameras, feature matching, and bundle
+  adjustment before you get geometry. DUSt3R regresses dense 3D
+  pointmaps in a shared frame from two photos, so robotics, AR, and
+  photogrammetry pipelines can recover pose and scene structure from
+  casual captures without an SfM preprocessor.
+
+use_cases:
+  - Reconstruct a scene from two uncalibrated photos without known focal length
+  - Bootstrap global alignment across many views for dense multi-view geometry
+  - Feed pointmaps into visual localization or metric reconstruction pipelines
+  - Run the interactive DUSt3R demo to inspect pairwise 3D reconstructions
