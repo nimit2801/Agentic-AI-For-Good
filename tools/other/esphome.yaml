@@ -1,0 +1,26 @@
+name: ESPHome
+description: YAML firmware system for ESP32 and ESP8266 boards that compiles to native firmware and talks to Home Assistant. Use it so lab sensors and relays are config files you flash, not one-off Arduino sketches.
+tagline: YAML firmware for ESP boards in the lab
+
+github_url: https://github.com/esphome/esphome
+website_url: https://esphome.io
+docs_url: https://esphome.io
+
+category: Other
+tags: [iot, firmware, esp32, home-assistant, sensors, python]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+install_command: pip install esphome
+
+problem_solved: |
+  Lab sensors and relays usually mean one-off Arduino sketches and brittle OTA.
+  ESPHome turns ESP32 and ESP8266 boards into YAML config that compiles to
+  firmware and talks to Home Assistant, so temperature, power, and door sensors
+  are versioned files you flash instead of mystery binaries.
+
+use_cases:
+  - Flash ESP32 boards as YAML-defined lab sensors
+  - Expose power and temperature readings to Home Assistant
+  - OTA-update firmware for a fleet of workshop devices
+  - Prototype a GPIO relay without writing C++ by hand

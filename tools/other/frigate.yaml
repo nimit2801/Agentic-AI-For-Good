@@ -1,0 +1,25 @@
+name: Frigate
+description: Local NVR that runs realtime object detection on IP cameras. Self-host it so a lab or workshop gets person and vehicle alerts from camera feeds without sending video to a cloud vendor.
+tagline: Local NVR with realtime object detection
+
+github_url: https://github.com/blakeblackshear/frigate
+website_url: https://frigate.video
+docs_url: https://docs.frigate.video
+
+category: Other
+tags: [nvr, computer-vision, object-detection, self-hosted, cameras, docker]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Cloud camera vendors upload every frame. A lab or workshop that needs person
+  and vehicle alerts should keep video on-prem. Frigate is a local NVR that runs
+  realtime object detection on IP cameras, so clips and events stay on hardware
+  you control instead of a doorbell cloud.
+
+use_cases:
+  - Run local person detection on lab or workshop IP cameras
+  - Keep NVR clips on-prem instead of a vendor cloud
+  - Alert when a GPU rack room is occupied after hours
+  - Feed camera events into Home Assistant without leaving the LAN
