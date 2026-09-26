@@ -1,0 +1,25 @@
+name: Molmo
+description: Allen AI family of open vision-language models trained without proprietary VLM data. Molmo-7B-D and 72B checkpoints plus the PixMo datasets cover dense captions, pointing, counting, and document QA with fully open training code.
+tagline: Open VLMs trained on the PixMo datasets
+
+github_url: https://github.com/allenai/molmo
+website_url: https://molmo.allenai.org
+docs_url: https://github.com/allenai/molmo#readme
+
+category: Other
+tags: [python, multimodal, vision-language, allenai, huggingface, pointing, open-data]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Many strong VLMs hide training data or distill closed models, so
+  results cannot be reproduced. Molmo trains open 1B to 72B models on
+  PixMo, a human-authored suite without VLM-generated labels, giving
+  labs a fully inspectable stack for captioning, pointing, and docs.
+
+use_cases:
+  - Run Molmo-7B-D in the public demo or locally for image question answering
+  - Fine-tune on PixMo-Points to ground referring expressions with click points
+  - Train a document VLM on PixMo-Docs charts, tables, and diagrams
+  - Reproduce Molmo training from the OLMo-based codebase and PixMo dumps

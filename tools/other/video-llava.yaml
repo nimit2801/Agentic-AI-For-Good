@@ -1,0 +1,25 @@
+name: Video-LLaVA
+description: EMNLP 2024 video-language model that aligns image and video features before projection so one model answers both stills and clips. Training code, Hugging Face demo, and LanguageBind encoders support zero-shot video QA.
+tagline: Unified image and video LLaVA-style VLM
+
+github_url: https://github.com/PKU-YuanGroup/Video-LLaVA
+website_url: https://huggingface.co/spaces/LanguageBind/Video-LLaVA
+docs_url: https://github.com/PKU-YuanGroup/Video-LLaVA#readme
+
+category: Other
+tags: [python, multimodal, video, vision-language, llava, huggingface, emnlp]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Image VLMs and video VLMs usually need separate encoders, so a
+  single assistant cannot mix a screenshot and a clip. Video-LLaVA
+  aligns both modalities before the LLM projection, giving one
+  open model for zero-shot video QA and image chat from the same weights.
+
+use_cases:
+  - Run zero-shot video question answering on MSRVTT, MSVD, or TGIF clips
+  - Chat about mixed image and video inputs from a single Video-LLaVA checkpoint
+  - Launch the Hugging Face Spaces demo or the local Gradio app for video QA
+  - Fine-tune Video-LLaVA with the pip install -e .[train] extras and flash-attn
