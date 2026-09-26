@@ -1,0 +1,25 @@
+name: Molmo2
+description: Allen AI open VLM for video understanding, pointing, and tracking across images and clips. Molmo2-8B, 4B, and OLMo-backed checkpoints ship with training code, Transformers inference, and vLLM support from 0.15.
+tagline: Open video VLMs with pointing and tracking
+
+github_url: https://github.com/allenai/molmo2
+website_url: https://allenai.org/blog/molmo2
+docs_url: https://github.com/allenai/molmo2#readme
+
+category: Other
+tags: [python, multimodal, video, vision-language, allenai, pointing, vllm]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Molmo covered still images, but open video VLMs rarely point or
+  track objects across frames. Molmo2 adds multi-image and video
+  grounding with public 4B and 8B checkpoints so labs can train
+  and serve pointing, tracking, and long-clip QA without closed APIs.
+
+use_cases:
+  - Run Molmo2-8B in Transformers for image QA, video QA, and multi-image pointing
+  - Serve Molmo2 with vLLM 0.15 plus molmo-utils for Gradio computer-use demos
+  - Train Molmo2 from the open pretrain, SFT, and long-context SFT checkpoints
+  - Track objects across video frames with MolmoPoint on the Molmo2 codebase
