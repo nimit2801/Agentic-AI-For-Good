@@ -1,0 +1,26 @@
+name: OpenUSD
+description: Universal Scene Description from Pixar. OpenUSD is an efficient, scalable system for authoring, reading, and streaming time-sampled 3D scene description so graphics, simulation, and embodied AI tools interchange the same composed scene graph.
+tagline: Pixar scene graph for interchangeable 3D pipelines
+
+github_url: https://github.com/PixarAnimationStudios/OpenUSD
+website_url: https://openusd.org/
+docs_url: https://openusd.org/release/index.html
+install_command: pip install usd-core
+
+category: Other
+tags: [cpp, python, 3d, scene-graph, vfx, simulation, pixar]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  DCC apps, renderers, and simulators each own a private scene format,
+  so assets cannot compose or stream across tools. OpenUSD gives a
+  layered, time-sampled scene graph so graphics, robotics, and
+  embodied AI pipelines share the same composed 3D world.
+
+use_cases:
+  - Interchange layered 3D scenes between DCC apps, renderers, and simulators
+  - Compose large film or digital-twin assets with references and variants
+  - Stream time-sampled geometry into robotics or embodied AI runtimes
+  - Author USD stages in Python with usd-core for dataset generation

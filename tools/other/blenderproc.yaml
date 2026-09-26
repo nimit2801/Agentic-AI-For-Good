@@ -1,0 +1,26 @@
+name: BlenderProc
+description: A procedural Blender pipeline for photorealistic training image generation. BlenderProc loads meshes, samples materials, lights, and cameras, then renders RGB, depth, normals, and segmentation with COCO or BOP annotations for computer vision datasets.
+tagline: Procedural Blender pipeline for photorealistic CV training data
+
+github_url: https://github.com/DLR-RM/BlenderProc
+website_url: https://dlr-rm.github.io/BlenderProc/
+docs_url: https://dlr-rm.github.io/BlenderProc/
+install_command: pip install blenderproc
+
+category: Other
+tags: [python, blender, synthetic-data, computer-vision, rendering, dataset]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Photorealistic labeled images for detection, pose, and segmentation
+  are expensive to capture. BlenderProc scripts a Blender scene so you
+  sample objects, materials, lights, and cameras, then dump RGB, depth,
+  normals, and COCO or BOP labels without hand-annotating photos.
+
+use_cases:
+  - Generate photorealistic RGB-D and segmentation datasets for object detection
+  - Produce BOP-format 6D pose annotations from CAD meshes in Blender
+  - Sample physically based materials and lighting for domain randomization
+  - Render stereo, depth, and normal maps for sim-to-real vision training
