@@ -1,0 +1,25 @@
+name: Sana
+description: NVIDIA linear diffusion transformer for efficient high-resolution image and video generation. SANA, Sprint, Video 2.0, and Streaming share open training, Diffusers, ComfyUI, and SGLang paths from 1024 images to 720p video.
+tagline: Efficient linear DiT for image and video generation
+
+github_url: https://github.com/NVlabs/Sana
+website_url: https://nvlabs.github.io/Sana
+docs_url: https://nvlabs.github.io/Sana/docs/
+
+category: Other
+tags: [python, diffusion, text-to-image, video, nvidia, diffusers, comfyui]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  High-res diffusion is slow and VRAM-heavy, especially for video.
+  SANA replaces quadratic attention with linear DiT blocks so 1024
+  and 4K images, few-step Sprint sampling, and 720p video fit on a
+  single GPU with open training and serving code.
+
+use_cases:
+  - Generate 1024 or 4K images with SANA Diffusers pipelines or ComfyUI
+  - Run SANA-Sprint one-step sampling on a 4090 or H100
+  - Train or sample SANA-Video 2.0 720p text-to-video and image-to-video
+  - Serve SANA through SGLang with an OpenAI-compatible API

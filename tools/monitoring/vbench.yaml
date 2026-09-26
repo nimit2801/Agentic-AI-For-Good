@@ -1,0 +1,27 @@
+name: VBench
+description: CVPR 2024 benchmark suite for video generative models, with hierarchical quality dimensions, prompt suites, and human-aligned automatic scores. VBench++ adds image-to-video, long video, and trustworthiness evals plus a public leaderboard.
+tagline: Comprehensive benchmark for video generative models
+
+github_url: https://github.com/Vchitect/VBench
+website_url: https://vchitect.github.io/VBench-project
+docs_url: https://github.com/Vchitect/VBench#readme
+
+install_command: pip install vbench
+
+category: Monitoring
+tags: [python, benchmark, evaluation, video, generation, cvpr, huggingface]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Video generators are judged with a single FID-like number that hides
+  flicker, motion, and prompt following. VBench splits quality into
+  16 automatic dimensions aligned with human ratings so labs can
+  compare T2V and I2V models on a shared leaderboard.
+
+use_cases:
+  - Score text-to-video samples on subject consistency, flicker, and motion smoothness
+  - Compare generators on the public VBench Hugging Face leaderboard
+  - Evaluate image-to-video and long clips with VBench++ suites
+  - Run pip install vbench against a folder of sampled videos and the official prompts
