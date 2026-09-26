@@ -1,0 +1,26 @@
+name: RustDesk
+description: Open-source remote desktop you can self-host as a TeamViewer alternative. Run your own rendezvous server so lab machines, GPU boxes, and on-call laptops stay reachable without a vendor relay.
+tagline: Self-hosted remote desktop, TeamViewer alternative
+
+github_url: https://github.com/rustdesk/rustdesk
+website_url: https://rustdesk.com
+docs_url: https://rustdesk.com/docs/en/
+
+category: Other
+tags: [remote-desktop, self-hosted, rust, teamviewer-alternative, vnc]
+pricing: freemium
+is_open_source: true
+license: AGPL-3.0
+install_command: brew install --cask rustdesk
+
+problem_solved: |
+  TeamViewer and AnyDesk lock remote access behind a vendor relay. A lab that
+  needs to reach GPU boxes and on-call laptops should own the path. RustDesk is
+  an open-source remote desktop you can self-host, so screen sharing and file
+  transfer stay on a rendezvous server you control.
+
+use_cases:
+  - Remote into a GPU workstation without a vendor relay
+  - Self-host a rendezvous server for a lab fleet
+  - Share a screen during on-call without TeamViewer
+  - Transfer files to a headless training box over the LAN
