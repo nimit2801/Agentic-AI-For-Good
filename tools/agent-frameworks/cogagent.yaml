@@ -1,0 +1,26 @@
+name: CogAgent
+description: Open VLM GUI agent from Tsinghua and Zhipu AI that plans clicks from screenshots on Windows, Mac, and mobile. The 9B 2024 release improves GUI grounding, bilingual prompts, and action completeness versus the original CogAgent-18B.
+tagline: Screenshot-to-action VLM for GUI agents
+
+github_url: https://github.com/zai-org/CogAgent
+website_url: https://cogagent.aminer.cn/home
+docs_url: https://github.com/zai-org/CogAgent#readme
+
+category: Agents
+tags: [python, agents, gui, computer-use, vision-language, glm, zhipu]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Screenshot-to-action GUI agents need high-resolution perception and a complete
+  action space, which generic VLMs lack. CogAgent is trained as an execution
+  agent: it reads the screen, returns grounded clicks with status and plan
+  fields, and covers Windows, Mac, and mobile so researchers can benchmark
+  computer-use without wrapping a chat model.
+
+use_cases:
+  - Run bilingual GUI tasks on Windows, Mac, or mobile from a single screenshot
+  - Benchmark GUI grounding against ScreenSpot and OSWorld with CogAgent-9B
+  - Parse grounded CLICK operations with box coordinates into a desktop controller
+  - Fine-tune CogAgent on in-house GUI traces using the repo finetune scripts

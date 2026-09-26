@@ -1,0 +1,25 @@
+name: Ferret
+description: Apple MLLM that refers to and grounds regions of any shape or size in an image. Hybrid region features plus a spatial sampler let it answer questions about boxes, scribbles, or points and return grounded boxes in the reply.
+tagline: Refer and ground anything at any granularity
+
+github_url: https://github.com/apple-aiml-research/ml-ferret
+website_url: https://arxiv.org/abs/2310.07704
+docs_url: https://github.com/apple-aiml-research/ml-ferret#readme
+
+category: Other
+tags: [python, multimodal, referring, grounding, vision-language, apple, mllm]
+pricing: free
+is_open_source: true
+license: CC-BY-NC
+
+problem_solved: |
+  Most VLMs only take a whole image or a coarse box, so they cannot talk about
+  a scribble, a tiny icon, or an open-vocabulary region. Ferret adds hybrid
+  region tokens and a spatial visual sampler so users can point at anything
+  and the model both refers and grounds at any granularity.
+
+use_cases:
+  - Ask a model about a freeform scribble or point on an image and get a grounded box
+  - Evaluate referring and grounding jointly with the Ferret-Bench suite
+  - Train a region-aware MLLM on the GRIT ground-and-refer instruction set
+  - Prototype UI referring with the Ferret-UI extension in the same repo
