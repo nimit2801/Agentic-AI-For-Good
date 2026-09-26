@@ -1,0 +1,26 @@
+name: LGM
+description: ECCV 2024 Oral large multi-view Gaussian model for high-resolution 3D content. LGM generates 3D Gaussians from multi-view images in one forward pass so single-image or text-to-3D pipelines can produce high-resolution assets without slow per-scene optimization.
+tagline: Large multi-view Gaussian model for 3D content
+
+github_url: https://github.com/3DTopia/LGM
+website_url: https://me.kiui.moe/lgm/
+docs_url: https://github.com/3DTopia/LGM
+
+category: Other
+tags: [python, pytorch, gaussian-splatting, 3d-generation, eccv, computer-vision]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  3D Gaussian splatting usually optimizes one scene for minutes.
+  LGM is a feed-forward model that maps multi-view images to
+  high-resolution Gaussians in one pass, so image-to-3D and
+  text-to-3D pipelines can emit assets at interactive speed instead
+  of running per-scene densification.
+
+use_cases:
+  - Generate high-resolution 3D Gaussians from multi-view images in one pass
+  - Convert a single image into a 3D Gaussian asset via multi-view synthesis
+  - Speed up text-to-3D pipelines that previously optimized 3DGS per prompt
+  - Benchmark feed-forward Gaussian generation against Wonder3D meshes
