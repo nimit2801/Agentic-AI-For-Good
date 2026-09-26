@@ -1,0 +1,26 @@
+name: nvdiffrast
+description: NVIDIA modular primitives for high-performance differentiable rendering. nvdiffrast provides CUDA and OpenGL rasterization with gradients so PyTorch and TensorFlow 3D pipelines can backprop through mesh rasterization for inverse graphics and neural rendering.
+tagline: Differentiable rasterization primitives from NVIDIA
+
+github_url: https://github.com/NVlabs/nvdiffrast
+website_url: https://nvlabs.github.io/nvdiffrast
+docs_url: https://nvlabs.github.io/nvdiffrast
+install_command: pip install git+https://github.com/NVlabs/nvdiffrast.git --no-build-isolation
+
+category: Other
+tags: [cuda, python, differentiable-rendering, nvidia, 3d, inverse-graphics]
+pricing: free
+is_open_source: true
+license: NVIDIA Source Code License
+
+problem_solved: |
+  Soft rasterizers in pure PyTorch are too slow for production-scale
+  inverse graphics. nvdiffrast exposes CUDA and OpenGL rasterization
+  with analytic gradients, so mesh, texture, and camera optimization
+  can run at interactive rates inside PyTorch or TensorFlow trainers.
+
+use_cases:
+  - Differentiable mesh rendering inside a PyTorch inverse-graphics trainer
+  - Optimize texture, lighting, or camera parameters from multi-view photos
+  - Replace a slow PyTorch3D rasterizer with NVIDIA CUDA primitives
+  - Prototype neural rendering papers that need rasterization gradients

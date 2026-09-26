@@ -1,0 +1,27 @@
+name: MoGe
+description: Microsoft CVPR 2025 Oral model for monocular geometry. MoGe recovers metric point maps, depth, normals, and camera FOV from a single open-domain image in one forward pass, with MoGe-2 and MoGe-3 adding sharper detail and metric scale.
+tagline: Metric monocular geometry from a single image
+
+github_url: https://github.com/microsoft/MoGe
+website_url: https://wangrc.site/MoGePage/
+docs_url: https://github.com/microsoft/MoGe
+install_command: pip install git+https://github.com/microsoft/MoGe.git
+
+category: Other
+tags: [python, pytorch, depth-estimation, 3d-reconstruction, microsoft, monocular, cvpr]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Monocular depth models often output relative scale and miss
+  normals or camera FOV, so you cannot lift a photo into a metric
+  point map. MoGe estimates point maps, depth, normals, and FOV
+  together from one image, which is what 3D reconstruction, robotics,
+  and novel-view pipelines need before multi-view stereo.
+
+use_cases:
+  - Recover a metric point map and depth from a single photo
+  - Estimate surface normals and camera FOV for 3D reconstruction
+  - Lift open-domain images into geometry for robotics or AR
+  - Compare MoGe-2 and MoGe-3 against Depth Anything or Depth Pro

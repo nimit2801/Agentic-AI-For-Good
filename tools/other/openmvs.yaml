@@ -1,0 +1,26 @@
+name: OpenMVS
+description: Open Multi-View Stereo library that turns camera poses and a sparse point cloud into a dense, textured mesh. OpenMVS covers dense reconstruction, mesh reconstruction, refinement, and texturing so photogrammetry pipelines can finish after OpenMVG or COLMAP SfM.
+tagline: Open Multi-View Stereo for dense textured meshes
+
+github_url: https://github.com/cdcseacave/openMVS
+website_url: http://cdcseacave.github.io/openMVS
+docs_url: https://github.com/cdcseacave/openMVS/wiki
+
+category: Other
+tags: [cpp, photogrammetry, multi-view-stereo, 3d-reconstruction, mesh, openmvg]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  OpenMVG and COLMAP recover cameras and a sparse cloud, then stop.
+  OpenMVS fills the rest of the photogrammetry chain with dense
+  stereo, mesh reconstruction, refinement, and texturing so a photo
+  set becomes a complete textured surface instead of undocumented
+  binaries or closed photogrammetry suites.
+
+use_cases:
+  - Densify an OpenMVG or COLMAP sparse reconstruction into a point cloud
+  - Reconstruct and refine a watertight mesh from multi-view stereo
+  - Texture a reconstructed mesh from the original photo set
+  - Run an open photogrammetry pipeline from images to a textured OBJ
