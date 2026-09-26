@@ -1,0 +1,27 @@
+name: Taichi
+description: Productive GPU programming language embedded in Python. Taichi compiles parallel kernels to CUDA, Metal, Vulkan, and CPU so ML and graphics code gets high-performance spatial compute without writing CUDA by hand.
+tagline: Productive, portable GPU programming in Python
+
+github_url: https://github.com/taichi-dev/taichi
+website_url: https://www.taichi-lang.org
+docs_url: https://docs.taichi-lang.org
+install_command: pip install taichi
+
+category: Dev Tools
+tags: [python, gpu, cuda, vulkan, compiler, graphics, simulation]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Python loops over voxels, particles, or pixels are too slow, and
+  writing CUDA for every experiment is painful. Taichi lets you
+  decorate Python functions as parallel kernels that compile to CUDA,
+  Metal, or Vulkan, so graphics, physics, and ML preprocessing run
+  at native GPU speed from a notebook.
+
+use_cases:
+  - Write GPU particle or voxel kernels in Python without CUDA
+  - Accelerate image, mesh, or simulation loops that NumPy cannot vectorize
+  - Prototype differentiable graphics or physics on CUDA, Metal, or Vulkan
+  - Port a research CUDA kernel to a portable Taichi kernel for laptops

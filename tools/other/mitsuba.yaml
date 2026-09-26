@@ -1,0 +1,27 @@
+name: Mitsuba
+description: Retargetable forward and inverse renderer (Mitsuba 3). Mitsuba compiles scene graphs to CPU, GPU, or differentiable backends so research and production pipelines run physically based rendering and inverse graphics from one codebase.
+tagline: Retargetable forward and inverse physically based renderer
+
+github_url: https://github.com/mitsuba-renderer/mitsuba3
+website_url: https://www.mitsuba-renderer.org/
+docs_url: https://mitsuba.readthedocs.io
+install_command: pip install mitsuba
+
+category: Other
+tags: [python, cpp, rendering, inverse-graphics, differentiable, physically-based]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Research renderers and production PBR engines do not share a
+  codebase, and inverse graphics needs gradients through light
+  transport. Mitsuba 3 retargets one scene graph to CPU, GPU, and
+  differentiable backends so you can both render and invert materials,
+  lights, and geometry without rewriting the renderer.
+
+use_cases:
+  - Run physically based rendering of research scenes on CPU or GPU
+  - Differentiate through light transport for inverse material estimation
+  - Prototype differentiable rendering papers against a common Mitsuba scene
+  - Replace a custom path tracer with a pip-installable PBR backend
