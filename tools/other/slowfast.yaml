@@ -1,0 +1,24 @@
+name: SlowFast
+description: FAIR PySlowFast video understanding library with SlowFast, X3D, MViT, and MAE video backbones. Open training, a large model zoo, and detection plus classification recipes cover Kinetics, AVA, and self-supervised video pretraining.
+tagline: FAIR video backbones for classification and detection
+
+github_url: https://github.com/facebookresearch/SlowFast
+docs_url: https://github.com/facebookresearch/SlowFast#readme
+
+category: Other
+tags: [python, video, pytorch, classification, detection, fair, transformers]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Video research needs a shared PyTorch stack for SlowFast, X3D, and
+  MViT instead of one-off training scripts. PySlowFast ships those
+  backbones with Kinetics and AVA recipes so labs can train, fine-tune,
+  and detect actions from a single FAIR codebase.
+
+use_cases:
+  - Train SlowFast or X3D classifiers on Kinetics with the official configs
+  - Run AVA action detection from a PySlowFast checkpoint
+  - Pretrain video transformers with MaskFeat, MAE, or MViTv2 projects
+  - Benchmark a new video backbone against the PySlowFast model zoo

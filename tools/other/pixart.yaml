@@ -1,0 +1,25 @@
+name: PixArt
+description: ICLR 2024 diffusion transformer for photorealistic text-to-image, with PixArt-alpha, LCM, and ControlNet variants. Open training code, Diffusers pipelines, and ComfyUI support target 256 to 1024 resolution from a 0.6B DiT.
+tagline: Fast DiT training for photorealistic text-to-image
+
+github_url: https://github.com/PixArt-alpha/PixArt-alpha
+website_url: https://pixart-alpha.github.io
+docs_url: https://huggingface.co/docs/diffusers/main/en/api/pipelines/pixart
+
+category: Other
+tags: [python, diffusion, text-to-image, transformer, diffusers, comfyui, iclr]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Large UNet diffusion models are slow to train and heavy to sample.
+  PixArt-alpha trains a 0.6B DiT on T5 captions so labs can reach
+  photorealistic 1024 images, LCM few-step sampling, and ControlNet
+  without a Stable Diffusion-scale compute budget.
+
+use_cases:
+  - Sample PixArt-XL-2-1024 with Diffusers PixArtAlphaPipeline
+  - Train LoRA or LCM adapters on custom captions with the released scripts
+  - Run PixArt ControlNet for layout-conditioned generation
+  - Generate images in ComfyUI from the ExtraModels PixArt nodes

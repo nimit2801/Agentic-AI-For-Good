@@ -1,0 +1,25 @@
+name: Emu3
+description: BAAI next-token multimodal models that tokenize images, text, and video into one transformer. Emu3-Chat, Emu3-Gen, and a vision tokenizer generate and understand media without a separate diffusion or CLIP stack.
+tagline: Next-token prediction for image, text, and video
+
+github_url: https://github.com/baaivision/Emu3
+website_url: https://emu.baai.ac.cn
+docs_url: https://github.com/baaivision/Emu3#readme
+
+category: Other
+tags: [python, multimodal, generation, vision-language, video, baai, transformers]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Image generation usually needs a diffusion UNet while VLMs need CLIP
+  plus an LLM. Emu3 trains one transformer on discrete image, text, and
+  video tokens so the same next-token model can caption, generate stills,
+  and extend clips without a task-specific architecture.
+
+use_cases:
+  - Generate images from text with Emu3-Gen through Transformers
+  - Chat about images with Emu3-Chat, including the vLLM backend
+  - Continue a video clip by predicting the next vision tokens
+  - Instruction-tune Emu3-Stage1 with the released SFT scripts
