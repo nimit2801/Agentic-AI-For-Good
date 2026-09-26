@@ -1,0 +1,26 @@
+name: Mind2Web
+description: A NeurIPS 2023 dataset and benchmark for generalist web agents. It covers 2,000-plus tasks on 137 real websites across 31 domains, with HTML traces, screenshots, and a multimodal follow-up so models learn real user interaction patterns.
+tagline: Large-scale dataset of real website tasks for web agents
+
+github_url: https://github.com/OSU-NLP-Group/Mind2Web
+website_url: https://osu-nlp-group.github.io/Mind2Web/
+docs_url: https://github.com/OSU-NLP-Group/Mind2Web#readme
+
+category: Data
+tags: [dataset, web-agents, benchmark, huggingface, multimodal, nlp, browser]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Web-agent research lacked a large corpus of real sites and tasks,
+  so models overfit MiniWoB toys. Mind2Web records thousands of
+  tasks on live websites with DOM snapshots, screenshots, and action
+  traces. Labs train and evaluate generalist agents on authentic
+  user flows instead of synthetic forms.
+
+use_cases:
+  - Train a web agent on the Hugging Face Mind2Web split covering 137 websites
+  - Evaluate action prediction with the official macro-average accuracy script
+  - Use Multimodal-Mind2Web screenshots without downloading the 300GB raw dump
+  - Pair Mind2Web traces with SeeAct to test GPT-4V agents on held-out sites
