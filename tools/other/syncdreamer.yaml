@@ -1,0 +1,26 @@
+name: SyncDreamer
+description: ICLR 2024 Spotlight model that generates multi-view-consistent images from a single view. SyncDreamer synchronizes a diffusion process across cameras so novel views stay geometrically consistent for downstream 3D reconstruction.
+tagline: Multi-view-consistent images from a single view
+
+github_url: https://github.com/liuyuan-pal/SyncDreamer
+website_url: https://liuyuan-pal.github.io/SyncDreamer/
+docs_url: https://github.com/liuyuan-pal/SyncDreamer
+
+category: Other
+tags: [python, pytorch, 3d-generation, diffusion, novel-view, iclr, computer-vision]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Independent novel-view diffusion (Zero123-style) produces views that
+  do not agree, so reconstructed meshes break. SyncDreamer models
+  multi-view generation as a synchronized diffusion process so the
+  extra cameras stay consistent, which is what mesh and NeRF
+  reconstruction actually need from a single photo.
+
+use_cases:
+  - Generate multi-view-consistent images from one object photo
+  - Feed synchronized views into NeuS or Gaussian reconstruction
+  - Reduce geometric drift versus independent Zero123 novel views
+  - Benchmark multi-view diffusion against Wonder3D and Zero123
