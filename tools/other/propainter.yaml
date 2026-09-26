@@ -1,0 +1,26 @@
+name: ProPainter
+description: NTU S-Lab ICCV 2023 video inpainting model that combines dual-domain propagation with a mask-guided sparse transformer. Fills object-removal holes across frames with coherent motion and appearance for film and VFX cleanup.
+tagline: Propagation-plus-transformer video inpainting
+
+github_url: https://github.com/sczhou/ProPainter
+website_url: https://shangchenzhou.com/projects/ProPainter/
+docs_url: https://github.com/sczhou/ProPainter#readme
+
+category: Other
+tags: [python, video-inpainting, object-removal, transformer, computer-vision, pytorch]
+pricing: free
+is_open_source: true
+license: NTU S-Lab License 1.0
+
+problem_solved: |
+  Video object removal used to flicker because flow warping drifted and
+  transformers ignored long-range context. ProPainter propagates known
+  pixels in image and feature space, then a sparse transformer fills
+  remaining holes so masks stay temporally consistent without a full
+  per-frame paint job.
+
+use_cases:
+  - Remove a moving object from a clip given a mask sequence
+  - Fill occluded regions in video while preserving background motion
+  - Run memory-efficient fp16 inference on long clips with limited VRAM
+  - Prototype video cleanup in the Hugging Face ProPainter demo

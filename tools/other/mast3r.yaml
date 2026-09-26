@@ -1,0 +1,25 @@
+name: MASt3R
+description: NAVER Labs follow-up to DUSt3R that grounds image matching in 3D with a local feature head and metric pointmaps. Produces correspondences and scalable global alignment for unconstrained structure-from-motion from casual photos.
+tagline: Ground image matching in 3D with metric pointmaps
+
+github_url: https://github.com/naver/mast3r
+website_url: https://europe.naverlabs.com/blog/mast3r-matching-and-stereo-3d-reconstruction/
+docs_url: https://github.com/naver/mast3r#readme
+
+category: Other
+tags: [python, 3d-reconstruction, image-matching, sfm, computer-vision, pytorch, naver]
+pricing: free
+is_open_source: true
+license: CC-BY-NC-SA-4.0
+
+problem_solved: |
+  DUSt3R recovers pairwise geometry but matching and metric scale stay
+  weak for large collections. MASt3R adds a local feature head and
+  metric pointmaps so unconstrained SfM can match, align, and localize
+  from unordered photos without a classic detector-descriptor pipeline.
+
+use_cases:
+  - Match two images with 3D-aware local features instead of 2D descriptors
+  - Run MASt3R-SfM on an unconstrained photo collection for camera poses
+  - Localize a query image against a reconstructed map with metric pointmaps
+  - Upgrade a DUSt3R pairwise reconstruction with scalable global alignment

@@ -1,0 +1,25 @@
+name: ORB-SLAM3
+description: University of Zaragoza C++ SLAM library for visual, visual-inertial, and multi-map localization. Supports monocular, stereo, and RGB-D cameras with pin-hole and fisheye models, Atlas multi-map reuse, and real-time pose tracking.
+tagline: Visual, visual-inertial, and multi-map SLAM
+
+github_url: https://github.com/UZ-SLAMLab/ORB_SLAM3
+docs_url: https://github.com/UZ-SLAMLab/ORB_SLAM3#readme
+
+category: Other
+tags: [cpp, slam, visual-inertial, robotics, localization, computer-vision, opencv]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Robot and AR stacks need real-time pose and a reusable map from a
+  camera, with or without an IMU. ORB-SLAM3 unifies monocular, stereo,
+  RGB-D, and visual-inertial SLAM plus Atlas multi-map merging so a
+  drone or handheld rig can relocalize after tracking loss without
+  restarting mapping from scratch.
+
+use_cases:
+  - Track a stereo-inertial MAV on EuRoC with real-time visual-inertial SLAM
+  - Run RGB-D indoor mapping on a robot with pin-hole or fisheye cameras
+  - Relocalize into a previous Atlas map after the camera leaves and returns
+  - Process ROS camera streams for monocular, stereo, or RGB-D SLAM
