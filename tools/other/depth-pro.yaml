@@ -1,0 +1,26 @@
+name: Depth Pro
+description: Apple foundation model for zero-shot metric monocular depth. Depth Pro produces sharp 2.25-megapixel metric depth maps in about 0.3 seconds on a GPU, with absolute scale and focal length from a single RGB image and no camera metadata.
+tagline: Sharp metric monocular depth in under a second
+
+github_url: https://github.com/apple-aiml-research/ml-depth-pro
+website_url: https://arxiv.org/abs/2410.02073
+docs_url: https://github.com/apple-aiml-research/ml-depth-pro
+
+category: Other
+tags: [python, pytorch, depth-estimation, apple, monocular, computer-vision]
+pricing: free
+is_open_source: true
+license: Apple Software License
+
+problem_solved: |
+  Most monocular depth models output relative scale and blur object
+  boundaries, so you cannot lift a photo into metric 3D without
+  intrinsics. Depth Pro predicts sharp metric depth and focal length
+  from one RGB frame in under a second, which is what AR, robotics,
+  and 3D photo pipelines need when no stereo or LiDAR is available.
+
+use_cases:
+  - Estimate metric depth from a single photo without camera intrinsics
+  - Recover focal length alongside a high-resolution depth map
+  - Generate sharp occlusion maps for AR or 3D photo effects
+  - Benchmark boundary-accurate metric depth against Depth Anything V2

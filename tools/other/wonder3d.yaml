@@ -1,0 +1,26 @@
+name: Wonder3D
+description: Single-image to 3D generation with cross-domain diffusion. Wonder3D predicts multi-view RGB and normal maps from one photo, then reconstructs a textured mesh so character and product images become 3D assets without a capture rig.
+tagline: Single image to 3D via cross-domain diffusion
+
+github_url: https://github.com/xxlong0/Wonder3D
+website_url: https://www.xxlong.site/Wonder3D/
+docs_url: https://github.com/xxlong0/Wonder3D
+
+category: Other
+tags: [python, pytorch, 3d-generation, diffusion, mesh, computer-vision]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Turning one product or character photo into a mesh usually needs
+  multi-view capture or a closed SaaS. Wonder3D uses cross-domain
+  diffusion to hallucinate consistent RGB and normal views, then
+  reconstructs a textured mesh so game, VFX, and e-commerce pipelines
+  get a 3D asset from a single image.
+
+use_cases:
+  - Generate multi-view RGB and normals from a single product photo
+  - Reconstruct a textured mesh for a character or object without a scan
+  - Bootstrap 3D assets for games or e-commerce from catalog images
+  - Compare single-image 3D generation against Zero123 and LGM
