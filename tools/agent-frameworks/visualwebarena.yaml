@@ -1,0 +1,25 @@
+name: VisualWebArena
+description: Multimodal web-agent benchmark from the WebArena team with 910 visual tasks on self-hosted classifieds, shopping, Reddit, and Wikipedia sites. Agents must use screenshots, not just HTML, to complete realistic visual web work.
+tagline: Visual web tasks for multimodal browser agents
+
+github_url: https://github.com/web-arena-x/visualwebarena
+website_url: https://jykoh.com/vwa
+docs_url: https://github.com/web-arena-x/visualwebarena#readme
+
+category: Agents
+tags: [python, agents, browser, benchmark, multimodal, webarena, evaluation, playwright]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Text-only web benches ignore images, listings, and visual layout that
+  real sites depend on. VisualWebArena adds 910 screenshot-grounded
+  tasks on self-hosted clones so multimodal agents are scored on seeing
+  the page, not just parsing the DOM.
+
+use_cases:
+  - Evaluate a GPT-4V Set-of-Marks agent on the 910 VisualWebArena tasks
+  - Self-host classifieds, shopping, Reddit, and Wikipedia clones for visual agent eval
+  - Run the demo script to try a multimodal agent on an arbitrary live webpage
+  - Compare screenshot agents against WebArena text-only baselines on the same stack

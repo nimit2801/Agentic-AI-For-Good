@@ -1,0 +1,25 @@
+name: Online-Mind2Web
+description: COLM 2025 live-web benchmark of 300 tasks on 136 real websites. Unlike offline Mind2Web traces, agents act on the current internet, with a public leaderboard, WebJudge reward model, and regularly refreshed tasks.
+tagline: Live-website tasks for real-world web agents
+
+github_url: https://github.com/OSU-NLP-Group/Online-Mind2Web
+website_url: https://huggingface.co/datasets/osunlp/Online-Mind2Web
+docs_url: https://github.com/OSU-NLP-Group/Online-Mind2Web#readme
+
+category: Data
+tags: [dataset, web-agents, benchmark, huggingface, evaluation, mind2web, leaderboard]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Offline web-agent dumps go stale as sites change, so reported gains can
+  be an illusion. Online-Mind2Web scores agents on 300 live tasks across
+  136 current websites and refreshes invalid items, giving a realistic
+  measure of whether a browser agent still works on the open web.
+
+use_cases:
+  - Evaluate a browser agent on 300 live tasks spanning shopping, housing, and travel sites
+  - Submit trajectories to the Online-Mind2Web Hugging Face leaderboard
+  - Train a web-agent reward model with WebJudge-7B against human agreement labels
+  - Replace stale Mind2Web offline traces with the regularly updated live task set
