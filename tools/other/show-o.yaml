@@ -1,0 +1,26 @@
+name: Show-o
+description: Unified transformer from NUS Show Lab that does multimodal understanding and generation in one model, spanning text-to-image, visual QA, and Show-o2 native image-to-video. ICLR and NeurIPS 2025 papers, Hugging Face weights, and a public demo.
+tagline: One transformer for multimodal understanding and generation
+
+github_url: https://github.com/showlab/Show-o
+website_url: https://arxiv.org/abs/2408.12528
+docs_url: https://huggingface.co/spaces/showlab/Show-o
+
+category: Other
+tags: [python, multimodal, transformer, text-to-image, video-generation, huggingface, iclr]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Most labs stitch a VLM for understanding and a diffusion model for
+  generation, which doubles serving cost and breaks a shared representation.
+  Show-o trains one transformer that both answers visual questions and
+  generates images or video, so research and product stacks can share
+  weights instead of running two model families.
+
+use_cases:
+  - Generate images from text prompts with the same Show-o checkpoint used for visual question answering
+  - Run Show-o2 image-to-video generation without a separate video diffusion pipeline
+  - Fine-tune a unified understanding-generation transformer on custom multimodal instruction data
+  - Benchmark native unified models against split VLM plus diffusion stacks

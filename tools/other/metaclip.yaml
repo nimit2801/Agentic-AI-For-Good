@@ -1,0 +1,26 @@
+name: MetaCLIP
+description: Meta FAIR CLIP recipe that demystifies CLIP data curation and scales to worldwide multilingual training (Meta CLIP 2). Open weights on Hugging Face and OpenCLIP, from ViT-B/32 through ViT-bigG, for zero-shot classification without opaque WIT-style data.
+tagline: Transparent CLIP data curation, now worldwide
+
+github_url: https://github.com/facebookresearch/MetaCLIP
+website_url: https://arxiv.org/abs/2309.16671
+docs_url: https://huggingface.co/collections/facebook/meta-clip-687e97787e9155bc480ef446
+
+category: Other
+tags: [python, clip, multimodal, zero-shot, multilingual, huggingface, meta]
+pricing: free
+is_open_source: true
+license: CC-BY-NC-4.0
+
+problem_solved: |
+  OpenAI CLIP is strong but its training data is closed, so labs cannot
+  reproduce or extend the recipe. MetaCLIP publishes metadata-driven
+  curation, data cards, and later Meta CLIP 2 worldwide scaling so
+  English and non-English CLIP can improve together instead of trading
+  off accuracy when you leave English-only WIT clones.
+
+use_cases:
+  - Load Meta CLIP 2 worldwide ViT-H or ViT-bigG weights for multilingual zero-shot classification
+  - Reproduce CLIP training with public metadata curation instead of opaque web datasets
+  - Swap OpenAI CLIP weights for MetaCLIP checkpoints inside OpenCLIP or Hugging Face Transformers
+  - Distill Meta CLIP 2 huge teachers into ViT-S/B students for cheaper multilingual retrieval
