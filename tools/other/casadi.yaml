@@ -1,0 +1,26 @@
+name: CasADi
+description: Symbolic framework for numeric optimization with automatic differentiation on sparse matrix-valued graphs. CasADi generates C code and talks to IPOPT, SUNDIALS, and other solvers so robotics, MPC, and optimal control problems are written once in Python, C++, or MATLAB.
+tagline: Symbolic AD and optimal control for robotics and MPC
+
+github_url: https://github.com/casadi/casadi
+website_url: https://web.casadi.org/
+docs_url: https://web.casadi.org/docs/
+install_command: pip install casadi
+
+category: Other
+tags: [python, cpp, matlab, optimization, automatic-differentiation, mpc, robotics]
+pricing: free
+is_open_source: true
+license: LGPL-3.0
+
+problem_solved: |
+  Optimal control and MPC need sparse AD, codegen, and NLP solvers
+  glued together. CasADi builds matrix-valued computational graphs,
+  differentiates them, and emits C or talks to IPOPT and SUNDIALS
+  so robotics and process control share one modeling layer.
+
+use_cases:
+  - Formulate nonlinear MPC for robots or vehicles in Python
+  - Generate C code from a CasADi graph for embedded optimal control
+  - Differentiate sparse DAEs and couple them to IPOPT or SUNDIALS
+  - Prototype trajectory optimization shared across MATLAB and C++
