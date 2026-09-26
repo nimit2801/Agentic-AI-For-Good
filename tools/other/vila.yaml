@@ -1,0 +1,25 @@
+name: VILA
+description: NVIDIA VLM family optimized for multi-image and video understanding, from VILA-1.5 through NVILA and LongVILA. Open training code, AWQ 4-bit builds, and TinyChat or TensorRT-LLM backends target GPUs from Orin Nano to A100.
+tagline: Efficient VLMs for video and multi-image tasks
+
+github_url: https://github.com/NVlabs/VILA
+website_url: https://vila.hanlab.ai
+docs_url: https://github.com/NVlabs/VILA#readme
+
+category: Other
+tags: [python, multimodal, vision-language, nvidia, video, quantization, tensorrt]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Video and multi-image VLMs are heavy to train and serve, especially
+  on edge GPUs. VILA interleaves image-text pretraining and ships
+  quantized 3B to 40B models with TinyChat and TensorRT-LLM paths so
+  teams can run long video understanding without a data-center-only stack.
+
+use_cases:
+  - Serve NVILA-3B with TinyChat on a 4090 or Jetson Orin for video QA
+  - Train a long-context video VLM with LongVILA and sequence parallelism
+  - Deploy AWQ 4-bit VILA-1.5 through TensorRT-LLM on NVIDIA GPUs
+  - Fine-tune VILA-M3-style medical VLMs from the VILA 1.5 checkpoints
