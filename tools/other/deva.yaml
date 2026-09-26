@@ -1,0 +1,26 @@
+name: DEVA
+description: ICCV 2023 decoupled video segmentation that pairs any image model with a class-agnostic temporal propagator. Tracks anything from text prompts or SAM detections across long videos without task-specific video finetuning.
+tagline: Track anything with decoupled video segmentation
+
+github_url: https://github.com/hkchengrex/Tracking-Anything-with-DEVA
+website_url: https://hkchengrex.com/Tracking-Anything-with-DEVA/
+docs_url: https://github.com/hkchengrex/Tracking-Anything-with-DEVA#readme
+
+category: Other
+tags: [python, video-segmentation, tracking, open-vocabulary, sam, computer-vision, pytorch]
+pricing: free
+is_open_source: true
+license: CC-BY-NC-SA-4.0
+
+problem_solved: |
+  Video models are expensive to train per task, so image detectors
+  fail to stay consistent across frames. DEVA decouples image
+  segmentation from bi-directional temporal propagation so Grounded
+  SAM or your own detector tracks open-vocabulary objects through
+  long videos without a video-specific finetune.
+
+use_cases:
+  - Track text-prompted objects through a long video with Grounded Segment Anything
+  - Propagate SAM automatic masks temporally without querying already-segmented regions
+  - Plug a custom image detector into DEVA for open-world video panoptic segmentation
+  - Evaluate large-vocabulary video panoptic tracking without end-to-end video training

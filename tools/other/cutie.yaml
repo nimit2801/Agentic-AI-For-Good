@@ -1,0 +1,25 @@
+name: Cutie
+description: CVPR 2024 video object segmentation follow-up to XMem. Puts object queries back into memory matching for more consistent masks, with a GUI and scripting API for interactive multi-object tracking on long videos.
+tagline: Consistent video object segmentation
+
+github_url: https://github.com/hkchengrex/Cutie
+website_url: https://hkchengrex.com/Cutie/
+docs_url: https://github.com/hkchengrex/Cutie#readme
+
+category: Other
+tags: [python, video-object-segmentation, tracking, computer-vision, pytorch, cvpr]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Memory-based VOS often drifts because matching ignores object-level
+  identity. Cutie injects object queries into the memory readout so
+  masks stay consistent on long clips, which is what interactive
+  editors and robotics need instead of per-frame SAM clicks.
+
+use_cases:
+  - Segment and track multiple objects through a long video from first-frame masks
+  - Use the Cutie GUI with permanent memory for interactive video editing
+  - Script Cutie in a Python pipeline to add or delete objects mid-sequence
+  - Upgrade an XMem VOS stack to Cutie for better temporal consistency
