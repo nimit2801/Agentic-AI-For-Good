@@ -1,0 +1,26 @@
+name: UniFormer
+description: ICLR 2022 and TPAMI 2023 backbone that unifies convolution and self-attention for images and video. SenseTime ships ImageNet, Kinetics, detection, segmentation, and pose checkpoints plus lightweight UniFormer-XS/XXS variants.
+tagline: Convolution plus attention in one visual backbone
+
+github_url: https://github.com/Sense-X/UniFormer
+website_url: https://arxiv.org/abs/2201.04676
+docs_url: https://github.com/Sense-X/UniFormer#readme
+
+category: Other
+tags: [python, video, transformer, convolution, action-recognition, detection, iclr]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Pure CNNs miss long-range context and pure ViTs are expensive on
+  video tokens. UniFormer mixes local convolution with global attention
+  in one block so the same family covers ImageNet, Kinetics, COCO, ADE20K,
+  and pose without swapping backbones, including XS/XXS variants that
+  beat MobileViT and X3D on CPU.
+
+use_cases:
+  - Fine-tune UniFormer on Kinetics video classification instead of a 3D CNN or plain ViT
+  - Swap a ResNet or Swin backbone for UniFormer in detection and semantic segmentation
+  - Run UniFormer-XS or XXS on CPU for mobile image and video recognition
+  - Transfer UniFormer image weights into video classification with the official video code

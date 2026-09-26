@@ -1,0 +1,27 @@
+name: X-CLIP
+description: ACM MM 2022 multi-grained contrastive model for video-text retrieval. Cross-grained matching plus an attention-over-similarity filter ranks clips against captions on MSR-VTT, MSVD, LSMDC, DiDeMo, and ActivityNet from CLIP ViT-B/32 and B/16.
+tagline: Multi-grained contrastive video-text retrieval
+
+github_url: https://github.com/xuguohai/X-CLIP
+website_url: https://arxiv.org/abs/2207.07285
+docs_url: https://github.com/xuguohai/X-CLIP#readme
+
+category: Other
+tags: [python, video, clip, retrieval, contrastive, pytorch, acmmm]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Frame-level CLIP retrieval treats a video as a bag of images and
+  misses which words match which shots. X-CLIP adds cross-grained
+  contrastive learning and attention over the similarity matrix so
+  coarse video-text scores and fine frame-word scores both contribute,
+  which lifts retrieval on MSR-VTT and ActivityNet without a custom
+  video encoder from scratch.
+
+use_cases:
+  - Retrieve MSR-VTT or MSVD clips from natural-language queries with CLIP ViT-B/32 or B/16
+  - Rank ActivityNet and DiDeMo videos against paragraph captions using multi-grained matching
+  - Ablate cross-grained contrastive loss versus CLIP4Clip-style mean pooling
+  - Fine-tune X-CLIP on a private video-caption corpus for product or lecture search

@@ -1,0 +1,26 @@
+name: InternVideo2
+description: OpenGVLab video foundation series (InternVideo repo) that scales generative plus discriminative pretraining for multimodal video understanding. InternVideo2 adds 1B-to-8B checkpoints, InternVid data, and VideoChat-style dialogue on top of the ECCV 2024 InternVideo stack.
+tagline: Scaled video foundation models for multimodal understanding
+
+github_url: https://github.com/OpenGVLab/InternVideo
+website_url: https://arxiv.org/abs/2403.15377
+docs_url: https://huggingface.co/OpenGVLab/InternVideo2-Stage2_1B-224p-f4
+
+category: Other
+tags: [python, video, foundation-model, multimodal, huggingface, opengvlab, eccv]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Image foundation models transfer poorly to long video, and most video
+  backbones stop at action classification. InternVideo2 scales a shared
+  video encoder with InternVid captions so the same weights support
+  retrieval, captioning, and VideoChat dialogue, with distilled S/B/L
+  students when a 1B or 8B teacher is too expensive to serve.
+
+use_cases:
+  - Load InternVideo2-1B or Stage3-8B weights for video-text retrieval and captioning
+  - Distill InternVideo2-1B into S/B/L students for cheaper action recognition
+  - Train a video chatbot on InternVid instruction data with the InternVideo2 encoder
+  - Benchmark long-video MLLMs against InternVideo2.5 rich-context modeling
