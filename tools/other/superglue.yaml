@@ -1,0 +1,25 @@
+name: SuperGlue
+description: Learning-based feature matcher from Magic Leap (CVPR 2020). SuperGlue uses a graph neural network to match sparse local features across images, improving visual localization, SLAM, and 3D reconstruction over nearest-neighbor descriptor matching.
+tagline: GNN feature matcher for localization and reconstruction
+
+github_url: https://github.com/magicleap/SuperGluePretrainedNetwork
+website_url: https://psarlin.com/superglue/
+docs_url: https://github.com/magicleap/SuperGluePretrainedNetwork
+
+category: Other
+tags: [python, pytorch, computer-vision, feature-matching, slam, gnn]
+pricing: free
+is_open_source: true
+license: Magic Leap Noncommercial
+
+problem_solved: |
+  Nearest-neighbor matching of SuperPoint or SIFT descriptors fails
+  under viewpoint and lighting change. SuperGlue attends over a
+  complete graph of keypoints so indoor and outdoor localization,
+  SLAM, and reconstruction keep geometrically consistent matches.
+
+use_cases:
+  - Match SuperPoint keypoints across indoor or outdoor image pairs
+  - Improve visual localization and pose estimation under viewpoint change
+  - Feed GNN matches into SfM or SLAM instead of nearest-neighbor matching
+  - Benchmark learned matchers against classical descriptor pipelines
