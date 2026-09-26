@@ -1,0 +1,28 @@
+name: LocalSend
+description: Open-source AirDrop alternative that shares files and messages between nearby devices over the LAN with HTTPS. No internet or third-party server required.
+tagline: Cross-platform AirDrop without the cloud
+
+github_url: https://github.com/localsend/localsend
+website_url: https://localsend.org
+docs_url: https://github.com/localsend/protocol
+
+category: Other
+tags: [file-sharing, lan, airdrop, flutter, privacy, self-hosted]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: brew install --cask localsend
+
+problem_solved: |
+  Sharing datasets, logs, or model checkpoints between a laptop, phone, and
+  lab box usually means a USB stick, a cloud drive, or AirDrop locked to one
+  vendor. LocalSend talks HTTPS on the LAN with on-device certificates, so
+  nearby machines exchange files without an internet path or a third-party
+  server in the middle.
+
+use_cases:
+  - Send a dataset zip from a laptop to a training box on the same Wi-Fi
+  - Move eval screenshots between a phone and a workstation without USB
+  - Share logs with a teammate in the same office without uploading to Drive
+  - Transfer checkpoints on an air-gapped lab network

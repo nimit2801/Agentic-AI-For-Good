@@ -1,0 +1,28 @@
+name: Unbound
+description: Validating, recursive, caching DNS resolver from NLnetLabs. Self-host it as a local recursive resolver with DNSSEC so training boxes and agents do not depend on a public resolver.
+tagline: Validating recursive DNS resolver
+
+github_url: https://github.com/NLnetLabs/unbound
+website_url: https://nlnetlabs.nl/unbound
+docs_url: https://unbound.docs.nlnetlabs.nl/
+
+category: Other
+tags: [dns, dnssec, networking, caching, self-hosted, c]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+install_command: brew install unbound
+
+problem_solved: |
+  Public resolvers leak query logs, rate-limit bulk lookups, and fail when
+  the lab is offline. Unbound is a validating, recursive, caching DNS
+  resolver you run locally with DNSSEC, so model downloads, package installs,
+  and agent tool calls resolve privately and stay up when upstream DNS is
+  flaky.
+
+use_cases:
+  - Run a local recursive resolver for a GPU cluster or home lab
+  - Cache package and model-registry lookups to cut install latency
+  - Enforce DNSSEC validation for internal ML services
+  - Pair with a local blocklist to keep training boxes off tracker domains
