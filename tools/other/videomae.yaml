@@ -1,0 +1,25 @@
+name: VideoMAE
+description: NeurIPS 2022 masked autoencoder for self-supervised video pretraining with 90-95 percent tube masking on a plain ViT. Open code, Hugging Face Transformers support, and Kinetics, SSv2, UCF101, and AVA checkpoints without extra data.
+tagline: Masked autoencoders for self-supervised video pretraining
+
+github_url: https://github.com/MCG-NJU/VideoMAE
+website_url: https://arxiv.org/abs/2203.12602
+docs_url: https://huggingface.co/docs/transformers/model_doc/videomae
+
+category: Other
+tags: [python, video, self-supervised, transformer, huggingface, neurips, vit]
+pricing: free
+is_open_source: true
+license: CC-BY-NC-4.0
+
+problem_solved: |
+  Contrastive video pretraining is slow and hungry for extra data.
+  VideoMAE trains a plain ViT with extreme tube masking so labs can
+  reach strong Kinetics and SSv2 accuracy from unlabeled clips, then
+  load the same architecture from Hugging Face Transformers.
+
+use_cases:
+  - Pretrain a ViT video backbone with 90-95 percent tube masking on Kinetics
+  - Fine-tune VideoMAE on Something-Something V2 or UCF101 action recognition
+  - Load VideoMAE from Hugging Face Transformers for video classification
+  - Transfer VideoMAE features into AVA action detection

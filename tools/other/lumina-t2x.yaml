@@ -1,0 +1,25 @@
+name: Lumina-T2X
+description: ICLR 2025 flow-based large diffusion transformers that turn text into images, video, and other modalities at flexible resolution and duration. Open Lumina-Next and Lumina-T2I checkpoints plus Diffusers-ready weights.
+tagline: Flow-based DiTs from text to any modality
+
+github_url: https://github.com/Alpha-VLLM/Lumina-T2X
+website_url: https://huggingface.co/spaces/Alpha-VLLM/Lumina-Next-T2I
+docs_url: https://github.com/Alpha-VLLM/Lumina-T2X#readme
+
+category: Other
+tags: [python, diffusion, text-to-image, multimodal, generation, iclr, huggingface]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Text-to-image, text-to-video, and text-to-music usually need separate
+  generators. Lumina-T2X trains flow-based large DiTs that share one
+  framework across modalities, resolution, and duration so labs can
+  generate stills or longer media from the same open stack.
+
+use_cases:
+  - Generate images with Lumina-Next-SFT Diffusers checkpoints
+  - Sample Lumina-T2I 5B for high-resolution text-to-image
+  - Extend the T2X framework to video or music generation recipes
+  - Fine-tune Lumina-Next on custom captions from the released training code
