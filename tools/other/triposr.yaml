@@ -1,0 +1,25 @@
+name: TripoSR
+description: Fast feed-forward 3D reconstruction from a single image, from Tripo AI and Stability AI. LRM-style transformer predicts a NeRF in under a second so you can export a mesh from one photo without per-scene optimization.
+tagline: Single-image 3D reconstruction in under a second
+
+github_url: https://github.com/VAST-AI-Research/TripoSR
+website_url: https://www.tripo3d.ai/research/triposr
+docs_url: https://github.com/VAST-AI-Research/TripoSR#readme
+
+category: Other
+tags: [python, 3d-reconstruction, lrm, nerf, image-to-3d, pytorch, stability-ai]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Score-distillation text-to-3D takes minutes per asset and still
+  needs many views. TripoSR runs a large reconstruction model in
+  one forward pass so a product photo or sketch becomes a mesh in
+  seconds without SDS or multi-view capture.
+
+use_cases:
+  - Reconstruct a 3D mesh from a single product photo with run.py
+  - Batch-convert catalog images into NeRF or mesh assets for a viewer
+  - Compare feed-forward LRM reconstruction against SDS methods like DreamFusion
+  - Prototype image-to-3D in an app using the MIT-licensed TripoSR checkpoint
