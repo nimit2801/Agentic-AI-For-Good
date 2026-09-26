@@ -1,0 +1,27 @@
+name: Blocky
+description: Fast Go DNS proxy and ad blocker for a local network. Point lab machines at it to cut tracker domains and cache lookups without a heavy Pi-hole stack.
+tagline: Lightweight DNS proxy and ad blocker
+
+github_url: https://github.com/0xERR0R/blocky
+website_url: https://0xERR0R.github.io/blocky/
+docs_url: https://0xERR0R.github.io/blocky/latest/
+
+category: Other
+tags: [dns, adblock, golang, networking, self-hosted, privacy]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: brew install blocky
+
+problem_solved: |
+  Pi-hole is heavy for a laptop lab, and public resolvers leak queries.
+  Blocky is a small Go DNS proxy with blocklists, caching, and Prometheus
+  metrics, so every device on the LAN can skip trackers and reuse lookups
+  without standing up a full ad-block appliance.
+
+use_cases:
+  - Run a LAN DNS ad blocker on a spare box
+  - Cache package and model-registry lookups for a GPU cluster
+  - Export DNS metrics to Prometheus
+  - Split-horizon resolve internal ML hostnames
