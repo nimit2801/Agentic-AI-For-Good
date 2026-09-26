@@ -1,0 +1,27 @@
+name: Apprise
+description: Python library and CLI that sends the same notification to 100-plus services from one URL. Wrap training jobs, evals, and agent runs so Slack, Discord, email, and SMS all get the same alert.
+tagline: One API for 100-plus notification backends
+
+github_url: https://github.com/caronc/apprise
+website_url: https://appriseit.com
+docs_url: https://appriseit.com/getting-started/
+
+category: Other
+tags: [python, notifications, alerting, cli, slack, discord]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+install_command: pip install apprise
+
+problem_solved: |
+  Training jobs, evals, and agent runs need to ping Slack, Discord, email,
+  SMS, and a dozen other sinks, each with its own SDK. Apprise wraps 100-plus
+  services behind one URL scheme and a single notify() call, so a job can
+  fan out the same alert without per-vendor clients.
+
+use_cases:
+  - Page Slack and SMS when a fine-tune run finishes or OOMs
+  - Send Discord plus email alerts from a nightly eval cron
+  - Attach a screenshot or log snippet to a Telegram notification
+  - Standardize alerting across agent tools that each speak a different chat API

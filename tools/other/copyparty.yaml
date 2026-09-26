@@ -1,0 +1,28 @@
+name: Copyparty
+description: Portable Python file server with resumable uploads, dedup, WebDAV, SFTP, FTP, and a media indexer in one process. Drop it on a lab machine to share datasets without standing up a full NAS.
+tagline: One-file file server with resumable uploads
+
+github_url: https://github.com/9001/copyparty
+website_url: https://github.com/9001/copyparty
+docs_url: https://github.com/9001/copyparty#readme
+
+category: Other
+tags: [file-server, python, webdav, sftp, self-hosted, datasets]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install copyparty
+
+problem_solved: |
+  Sharing training data, checkpoints, and media across a lab usually means
+  standing up Nextcloud, NFS, or object storage. Copyparty is a single Python
+  process that speaks HTTP, WebDAV, SFTP, and FTP with resumable uploads,
+  dedup, and a browser UI, so a dataset drop box can run on any machine with
+  pip.
+
+use_cases:
+  - Host a write-only upload folder for teammates to drop datasets
+  - Serve media and checkpoints over WebDAV from a spare lab box
+  - Resume huge model-file uploads after a flaky Wi-Fi drop
+  - Index and browse a local audio or video corpus from the browser

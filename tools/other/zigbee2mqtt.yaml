@@ -1,0 +1,27 @@
+name: Zigbee2MQTT
+description: Zigbee-to-MQTT bridge that replaces vendor hubs. Pair sensors and actuators once, then drive them from Home Assistant, Node-RED, or any MQTT client without a proprietary gateway.
+tagline: Zigbee devices on MQTT without a vendor hub
+
+github_url: https://github.com/Koenkk/zigbee2mqtt
+website_url: https://www.zigbee2mqtt.io
+docs_url: https://www.zigbee2mqtt.io
+
+category: Other
+tags: [iot, zigbee, mqtt, home-assistant, self-hosted, typescript]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+install_command: npm install zigbee2mqtt
+
+problem_solved: |
+  Zigbee sensors and actuators ship with vendor bridges that lock the mesh
+  to one app. Zigbee2MQTT talks to a USB coordinator, exposes every device
+  over MQTT, and works with Home Assistant, Node-RED, or any MQTT client so
+  lab and home automations stay off proprietary hubs.
+
+use_cases:
+  - Pair cheap Zigbee sensors to MQTT for a home-lab dashboard
+  - Drive lights and plugs from Home Assistant without a vendor bridge
+  - Feed occupancy and temperature into an agent that controls a workspace
+  - Replace a failed proprietary hub while keeping existing Zigbee devices
