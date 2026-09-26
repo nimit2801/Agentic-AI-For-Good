@@ -1,0 +1,26 @@
+name: LiveCodeBench
+description: A contamination-free coding benchmark that continuously adds new problems from recent contests. It evaluates LLMs on code generation, self-repair, execution, and test output prediction so scores stay honest as models train on older public sets.
+tagline: Live, contamination-free evaluation of code LLMs
+
+github_url: https://github.com/LiveCodeBench/LiveCodeBench
+website_url: https://livecodebench.github.io/
+docs_url: https://livecodebench.github.io/
+
+category: Monitoring
+tags: [python, benchmark, evaluation, code-generation, llm, contamination-free]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Static coding benchmarks leak into training data, so leaderboard
+  jumps may just mean the model memorized HumanEval. LiveCodeBench
+  keeps adding fresh contest problems and scores generation, repair,
+  execution, and test prediction. Teams get a moving target that
+  better reflects whether a code model can still solve unseen tasks.
+
+use_cases:
+  - Evaluate a code LLM on problems released after its training cutoff
+  - Compare models on self-repair and test-output prediction, not only codegen
+  - Track contamination by slicing scores by contest date
+  - Use the public leaderboard when choosing a coding model for an agent harness
