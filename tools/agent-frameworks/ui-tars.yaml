@@ -1,0 +1,27 @@
+name: UI-TARS
+description: A ByteDance native GUI agent that interacts with desktops and apps from screenshots and actions. It pioneered automated GUI interaction with an end-to-end vision-language agent rather than accessibility-tree wrappers.
+tagline: Native GUI agents that drive screens from pixels
+
+github_url: https://github.com/bytedance/UI-TARS
+docs_url: https://github.com/bytedance/UI-TARS#readme
+
+install_command: pip install ui-tars
+
+category: Agents
+tags: [python, agents, gui, computer-use, multimodal, bytedance, vision-language]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  GUI automation often depends on selectors and accessibility
+  APIs that break across apps. UI-TARS treats the screen as
+  input and emits native actions, so the same agent can operate
+  software it was not wired to. Researchers get a strong open
+  baseline for computer-use instead of a RPA script per app.
+
+use_cases:
+  - Drive desktop software from screenshots using a native GUI agent
+  - Parse LLM GUI action instructions into PyAutoGUI-style scripts
+  - Benchmark computer-use models against a ByteDance open GUI agent
+  - Prototype multimodal agents that click and type without DOM access

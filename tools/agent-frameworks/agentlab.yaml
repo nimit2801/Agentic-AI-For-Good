@@ -1,0 +1,27 @@
+name: AgentLab
+description: A ServiceNow framework for developing, testing, and benchmarking web agents. It runs agents on BrowserGym suites such as WebArena and WorkArena, collects traces, and compares experiments at scale.
+tagline: Lab stack for web-agent experiments and traces
+
+github_url: https://github.com/ServiceNow/AgentLab
+docs_url: https://github.com/ServiceNow/AgentLab#readme
+
+install_command: pip install agentlab
+
+category: Agents
+tags: [python, agents, web-agents, benchmark, evaluation, browsergym, servicenow]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Running one web agent on one site is easy. Running dozens of
+  seeds across WebArena, WorkArena, and MiniWoB with comparable
+  traces is not. AgentLab sits on BrowserGym and handles parallel
+  experiments, logging, and analysis so labs can iterate on agents
+  instead of rewriting launch scripts.
+
+use_cases:
+  - Launch parallel WebArena and WorkArena runs for several agent configs
+  - Collect and compare browser-agent traces after a prompt or model change
+  - Reproduce paper numbers on BrowserGym benchmarks from one Python package
+  - Develop a new web agent against a shared evaluation loop instead of a custom harness
