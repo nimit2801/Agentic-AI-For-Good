@@ -1,0 +1,26 @@
+name: Pi-hole
+description: Network-wide DNS sinkhole that blocks ads and trackers for every device on the LAN. Point your router at it so ML lab browsers, dashboards, and IoT gear stop leaking telemetry without a per-app blocker.
+tagline: A black hole for ads on your whole network
+
+github_url: https://github.com/pi-hole/pi-hole
+website_url: https://pi-hole.net
+docs_url: https://docs.pi-hole.net
+
+category: Other
+tags: [dns, adblock, privacy, self-hosted, raspberry-pi, networking]
+pricing: free
+is_open_source: true
+license: EUPL-1.2
+install_command: curl -sSL https://install.pi-hole.net | bash
+
+problem_solved: |
+  Browser extensions only cover one device. A lab full of laptops, dashboards, and IoT
+  still phones home. Pi-hole is a network-wide DNS sinkhole you run on a Pi or VM so
+  every client that uses it as resolver drops ads and trackers before they load, without
+  installing software on each machine.
+
+use_cases:
+  - Block ads and trackers for every device on a lab network
+  - Run a local DNS resolver with query logs for debugging
+  - Keep IoT gear from calling home on a research LAN
+  - Pair with a VPN so remote machines use the same blocklists

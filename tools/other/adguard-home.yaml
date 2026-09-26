@@ -1,0 +1,25 @@
+name: AdGuard Home
+description: Network-wide DNS server that blocks ads and trackers for every device on the LAN. Self-host it as a recursive resolver with blocklists, so lab traffic stays private without a per-browser extension.
+tagline: Network-wide DNS ad blocking in one binary
+
+github_url: https://github.com/AdguardTeam/AdGuardHome
+website_url: https://adguard.com/adguard-home/overview.html
+docs_url: https://github.com/AdguardTeam/AdGuardHome/wiki
+
+category: Other
+tags: [dns, adblock, privacy, self-hosted, golang, networking]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Per-browser blockers miss phones, TVs, and CI runners. AdGuard Home is a
+  network-wide DNS server you self-host so every device that uses it as resolver
+  drops ads and trackers, with a dashboard for query logs, blocklists, and
+  rewrites instead of installing an extension on each client.
+
+use_cases:
+  - Run a LAN-wide DNS blocker for a home lab or office
+  - Inspect DNS query logs when a model download is slow
+  - Rewrite internal hostnames for self-hosted ML services
+  - Combine encrypted DNS upstreams with local blocklists
