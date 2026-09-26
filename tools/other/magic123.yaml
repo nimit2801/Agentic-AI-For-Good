@@ -1,0 +1,26 @@
+name: Magic123
+description: ICLR 2024 one-image to high-quality 3D object generation using both 2D and 3D diffusion priors. Magic123 combines Zero123-style novel views with a 3D prior so a single photo becomes a textured NeRF or mesh without a capture rig.
+tagline: One image to 3D with 2D and 3D diffusion priors
+
+github_url: https://github.com/guochengqian/Magic123
+website_url: https://guochengqian.github.io/project/magic123
+docs_url: https://github.com/guochengqian/Magic123
+install_command: pip install magic123
+
+category: Other
+tags: [python, pytorch, 3d-generation, diffusion, nerf, iclr, computer-vision]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  2D-only image-to-3D drifts in geometry; 3D-only priors lack texture
+  fidelity. Magic123 jointly uses a 2D diffusion prior (Zero123-style
+  novel views) and a 3D diffusion prior so one RGB photo becomes a
+  high-quality NeRF or mesh instead of a blurry blob.
+
+use_cases:
+  - Generate a textured 3D object from a single product photo
+  - Combine 2D novel-view diffusion with a 3D prior for cleaner geometry
+  - Bootstrap e-commerce or game assets without a multi-view capture
+  - Compare 2D-plus-3D priors against Zero123-only reconstruction

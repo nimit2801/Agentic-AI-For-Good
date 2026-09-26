@@ -1,0 +1,26 @@
+name: OpenLRM
+description: Open-source Large Reconstruction Model that lifts a single image to a 3D triplane NeRF in one feed-forward pass. OpenLRM reimplements LRM so image-to-3D pipelines can skip per-scene optimization and emit a NeRF in seconds.
+tagline: Open feed-forward large reconstruction model for image-to-3D
+
+github_url: https://github.com/3DTopia/OpenLRM
+website_url: https://github.com/3DTopia/OpenLRM
+docs_url: https://github.com/3DTopia/OpenLRM
+
+category: Other
+tags: [python, pytorch, 3d-reconstruction, nerf, feed-forward, computer-vision]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Classic NeRF and 3DGS optimize one scene for minutes. Large
+  Reconstruction Models predict a triplane NeRF from one image in a
+  single forward pass, but the original LRM was closed. OpenLRM
+  publishes an open implementation so research and product pipelines
+  can run feed-forward image-to-3D without a vendor API.
+
+use_cases:
+  - Reconstruct a triplane NeRF from a single RGB image in one pass
+  - Skip per-scene NeRF optimization for fast image-to-3D previews
+  - Benchmark open LRM weights against InstantMesh and TripoSR
+  - Serve feed-forward 3D reconstruction as a research baseline

@@ -1,0 +1,26 @@
+name: Polyscope
+description: C++ and Python 3D viewer for meshes, point clouds, and volume data. Polyscope gives research code an immediate GUI with picking, slicing, and scalar fields so geometry algorithms can be inspected without writing a custom OpenGL app.
+tagline: Immediate-mode 3D viewer for meshes and point clouds
+
+github_url: https://github.com/nmwsharp/polyscope
+website_url: https://polyscope.run
+docs_url: https://polyscope.run
+install_command: pip install polyscope
+
+category: Other
+tags: [python, cpp, 3d, visualization, mesh, point-cloud, geometry]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Geometry research dumps meshes and clouds to disk then opens MeshLab.
+  Polyscope is an immediate-mode viewer you call from C++ or Python so
+  algorithms can show scalar fields, slices, and picks live, without
+  writing a custom OpenGL GUI for every paper.
+
+use_cases:
+  - Visualize a reconstructed mesh or point cloud while debugging SfM
+  - Plot scalar and vector fields on a surface during geometry processing
+  - Inspect volume slices from a 3D reconstruction without MeshLab
+  - Add an interactive 3D GUI to a Python research script in a few lines
