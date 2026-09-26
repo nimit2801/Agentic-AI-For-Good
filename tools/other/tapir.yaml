@@ -1,0 +1,25 @@
+name: TAPIR
+description: DeepMind Tracking Any Point model that locates a query pixel on every video frame, then refines the trajectory with local correlations. Apache-2.0 JAX and PyTorch checkpoints plus TAP-Vid benchmarks for long-range point tracking.
+tagline: Track any point through a video
+
+github_url: https://github.com/google-deepmind/tapnet
+website_url: https://deepmind-tapir.github.io/
+docs_url: https://github.com/google-deepmind/tapnet#readme
+
+category: Other
+tags: [python, video, tracking, computer-vision, jax, pytorch, deepmind]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Optical flow is pairwise and drops points under occlusion. TAPIR
+  matches a query pixel independently on every frame, then refines
+  the trajectory so robotics, VFX, and 4D reconstruction can follow
+  any point through long videos without a detector or ID model.
+
+use_cases:
+  - Click query points on a first frame and track them through an untrimmed clip
+  - Evaluate TAP-Vid real and synthetic videos against CoTracker or PIPs
+  - Run causal online TAPIR on GPU for real-time robotics point tracks
+  - Bootstrap video object tracking or dynamic 3DGS with dense TAPIR trajectories

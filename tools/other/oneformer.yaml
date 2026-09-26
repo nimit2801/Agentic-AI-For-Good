@@ -1,0 +1,25 @@
+name: OneFormer
+description: CVPR 2023 universal image segmentation transformer trained once for semantic, instance, and panoptic tasks. A task token conditions a single Detectron2 model so one checkpoint outperforms task-specific Mask2Former-style stacks.
+tagline: One transformer for universal image segmentation
+
+github_url: https://github.com/SHI-Labs/OneFormer
+website_url: https://praeclarumjj3.github.io/oneformer/
+docs_url: https://huggingface.co/docs/transformers/main/en/model_doc/oneformer
+
+category: Other
+tags: [python, image-segmentation, panoptic, transformer, detectron2, pytorch, computer-vision]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Semantic, instance, and panoptic segmentation usually mean three
+  models and three training runs. OneFormer trains one transformer
+  with a task token so a single ADE20K, Cityscapes, or COCO checkpoint
+  switches tasks at inference without a separate architecture per head.
+
+use_cases:
+  - Run panoptic, instance, and semantic segmentation from one Cityscapes checkpoint
+  - Swap a Mask2Former stack for a single OneFormer model in Detectron2
+  - Call Hugging Face transformers OneFormer for ADE20K panoptic inference
+  - Benchmark universal segmentation against task-specific Mask2Former baselines
