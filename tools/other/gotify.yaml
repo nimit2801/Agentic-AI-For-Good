@@ -1,0 +1,25 @@
+name: Gotify
+description: Self-hosted push server that delivers messages over WebSocket to a web UI and Android app. Run it so lab jobs and webhooks can notify a phone without a third-party push vendor.
+tagline: Self-hosted push messages over WebSocket
+
+github_url: https://github.com/gotify/server
+website_url: https://gotify.net
+docs_url: https://gotify.net/docs
+
+category: Other
+tags: [notifications, self-hosted, websocket, golang, android, push]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Webhook-to-phone alerts usually mean a SaaS push vendor. Gotify is a
+  self-hosted server that takes REST messages and delivers them over WebSocket
+  to a web UI and Android app, so training jobs, uptime checks, and on-call
+  scripts can notify you on infrastructure you control.
+
+use_cases:
+  - Push a phone alert when a GPU job fails
+  - Receive webhook messages in a self-hosted Android app
+  - Replace a SaaS push vendor for lab on-call
+  - Show a live message stream in a browser dashboard

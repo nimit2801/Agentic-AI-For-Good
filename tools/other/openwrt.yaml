@@ -1,0 +1,25 @@
+name: OpenWrt
+description: Linux firmware for embedded routers that you build and flash yourself. Run it so a lab gateway can host VLANs, VPN, and DNS for GPU boxes instead of a locked-down ISP router.
+tagline: Open Linux firmware for routers you control
+
+github_url: https://github.com/openwrt/openwrt
+website_url: https://openwrt.org
+docs_url: https://openwrt.org/docs/start
+
+category: Other
+tags: [firmware, router, networking, linux, embedded, self-hosted]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Stock ISP routers hide VLANs, VPN, and DNS behind a locked firmware. OpenWrt is
+  a Linux distribution you flash onto supported hardware so a lab gateway can
+  segment GPU boxes, run WireGuard, and point the LAN at Pi-hole without waiting
+  on vendor firmware.
+
+use_cases:
+  - Flash a lab gateway with VLANs for GPU and IoT networks
+  - Run WireGuard on the router instead of a cloud VPN
+  - Point LAN DNS at a local blocker or recursive resolver
+  - Build custom firmware packages for embedded research hardware

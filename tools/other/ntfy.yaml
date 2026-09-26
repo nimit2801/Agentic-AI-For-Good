@@ -1,0 +1,26 @@
+name: ntfy
+description: HTTP pub-sub that sends push notifications to phone and desktop from a PUT or POST. Self-host it so training jobs, CI, and on-call scripts can ping you without a vendor push SDK.
+tagline: Push notifications via HTTP PUT
+
+github_url: https://github.com/binwiederhier/ntfy
+website_url: https://ntfy.sh
+docs_url: https://docs.ntfy.sh
+
+category: Other
+tags: [notifications, self-hosted, http, pubsub, golang, mobile]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+install_command: brew install ntfy
+
+problem_solved: |
+  Training jobs and CI need to ping a phone without a vendor push SDK or email
+  delay. ntfy is an HTTP pub-sub server: PUT or POST to a topic and every
+  subscribed phone or desktop gets the message. Self-host it so on-call alerts
+  stay on your network.
+
+use_cases:
+  - Ping a phone when a training job finishes or OOMs
+  - Send CI failure alerts without Slack or email
+  - Self-host a topic server for lab on-call scripts
+  - Subscribe to topics from Android, iOS, or the CLI
