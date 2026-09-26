@@ -1,0 +1,25 @@
+name: LLaMA-VID
+description: ECCV 2024 video-language model that represents each frame with two tokens so hour-long videos fit in an LLM context. Open LLaVA-style training, Hugging Face checkpoints, and movie-chat data for long-video QA.
+tagline: Two-token video frames for hour-long LLM context
+
+github_url: https://github.com/dvlab-research/LLaMA-VID
+website_url: https://llama-vid.github.io
+docs_url: https://github.com/dvlab-research/LLaMA-VID#readme
+
+category: Other
+tags: [python, multimodal, video, vision-language, llama, eccv, huggingface]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Video VLMs blow the context window when every frame is a dense token
+  grid, so hour-long movies are out of reach. LLaMA-VID compresses each
+  frame to a context token plus a content token, letting open 7B models
+  chat about long videos without a huge context budget.
+
+use_cases:
+  - Chat about hour-long movies with the llama-vid-7b-full-224-long-video checkpoint
+  - Train LLaMA-VID from the LLaVA-style Stage 1-3 scripts and released data
+  - Evaluate long-video QA without sampling only a handful of frames
+  - Compress video features to two tokens per frame for other LLM backends

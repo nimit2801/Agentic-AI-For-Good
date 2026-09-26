@@ -1,0 +1,25 @@
+name: LanguageBind
+description: ICLR 2024 video-language pretraining that aligns video, audio, depth, and thermal to language. Open LanguageBind encoders, VIDAL data, and Hugging Face checkpoints power zero-shot retrieval and later Video-LLaVA models.
+tagline: Language-aligned encoders for video, audio, depth, and thermal
+
+github_url: https://github.com/PKU-YuanGroup/LanguageBind
+website_url: https://huggingface.co/spaces/LanguageBind/LanguageBind
+docs_url: https://github.com/PKU-YuanGroup/LanguageBind#readme
+
+category: Other
+tags: [python, multimodal, video, audio, retrieval, iclr, huggingface]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  CLIP-style models stop at image-text, so video, audio, depth, and
+  thermal need separate towers. LanguageBind aligns those modalities
+  to language with open encoders and VIDAL data so one embedding space
+  supports zero-shot retrieval and downstream VLMs.
+
+use_cases:
+  - Run zero-shot video retrieval on MSR-VTT or ActivityNet with LanguageBind-Video
+  - Classify audio on AudioSet or VGGSound from LanguageBind-Audio embeddings
+  - Encode depth or thermal frames into the same language-aligned space
+  - Use LanguageBind encoders as the vision tower in Video-LLaVA-style models
