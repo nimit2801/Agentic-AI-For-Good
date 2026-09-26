@@ -1,0 +1,26 @@
+name: Instant-NGP
+description: NVIDIA real-time neural graphics primitives that train and render NeRF, signed distance fields, and images in seconds via hash-grid encodings and fully fused CUDA kernels. Project page, Windows and Linux binaries, and the paper that made interactive NeRF practical.
+tagline: Instant neural graphics primitives for NeRF
+
+github_url: https://github.com/NVlabs/instant-ngp
+website_url: https://nvlabs.github.io/instant-ngp
+docs_url: https://github.com/NVlabs/instant-ngp#readme
+
+category: Other
+tags: [cuda, nerf, 3d-reconstruction, nvidia, neural-rendering, hash-encoding]
+pricing: free
+is_open_source: true
+license: NVIDIA Source Code License
+
+problem_solved: |
+  Classic NeRF took hours or days to fit one scene. Instant-NGP
+  replaces the MLP with a multi-resolution hash grid and fused CUDA
+  kernels so a COLMAP capture trains and renders interactively,
+  which is why it became the default fast NeRF baseline before
+  3D Gaussian splatting.
+
+use_cases:
+  - Train a NeRF of a COLMAP capture in minutes instead of hours
+  - Fit a signed distance field or HDR image with the same hash-grid primitives
+  - Benchmark hash encodings against later 3DGS and Nerfstudio pipelines
+  - Preview novel views in the Instant-NGP GUI while training on a single GPU

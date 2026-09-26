@@ -1,0 +1,26 @@
+name: Swin Transformer
+description: Hierarchical vision transformer from Microsoft that computes self-attention inside shifted windows. ICCV 2021 Best Paper with ImageNet, COCO, and ADE20K checkpoints, plus later Swin-V2 scaling. A standard backbone for detection and segmentation.
+tagline: Shifted-window hierarchical vision transformer
+
+github_url: https://github.com/microsoft/Swin-Transformer
+website_url: https://arxiv.org/abs/2103.14030
+docs_url: https://github.com/microsoft/Swin-Transformer#readme
+
+category: Other
+tags: [python, transformer, computer-vision, backbone, detection, segmentation, microsoft]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Global ViT attention is quadratic in image size, so high-res detection
+  and segmentation blow up memory. Swin Transformer restricts attention
+  to shifted windows and builds a hierarchical feature pyramid, which
+  lets the same backbone replace ResNet in classification, COCO
+  detection, and ADE20K segmentation without a full-image attention tax.
+
+use_cases:
+  - Replace a ResNet-50 backbone with Swin-T or Swin-B for COCO object detection
+  - Fine-tune Swin on ADE20K semantic segmentation with hierarchical features
+  - Pretrain or load ImageNet-22K Swin checkpoints for transfer learning
+  - Scale to Swin-V2 when training larger windows and higher-resolution images
