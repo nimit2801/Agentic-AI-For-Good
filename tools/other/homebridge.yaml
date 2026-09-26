@@ -1,0 +1,26 @@
+name: Homebridge
+description: Node.js bridge that exposes non-HomeKit devices to Apple Home. Run it so lab sensors, ESP boards, and cameras show up in HomeKit without waiting for official HomeKit firmware.
+tagline: HomeKit for devices that never shipped it
+
+github_url: https://github.com/homebridge/homebridge
+website_url: https://homebridge.io
+docs_url: https://github.com/homebridge/homebridge/wiki
+
+category: Other
+tags: [homekit, iot, home-automation, nodejs, plugins, self-hosted]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+install_command: npm install -g homebridge
+
+problem_solved: |
+  Most lab sensors and cameras never ship HomeKit. Homebridge is a Node.js
+  bridge with a plugin ecosystem that exposes those devices to Apple Home, so
+  ESP boards, Frigate cameras, and power meters show up on iPhone without
+  official HomeKit firmware.
+
+use_cases:
+  - Expose ESPHome sensors to Apple Home via plugins
+  - Bring IP cameras into HomeKit without official firmware
+  - Automate lab lights and relays from iPhone shortcuts
+  - Run a plugin host for devices Home Assistant already sees
