@@ -1,0 +1,25 @@
+name: Technitium
+description: Cross-platform DNS server with a web console, blocklists, and split-horizon zones. Self-host recursive or authoritative DNS for a lab without binding to BIND.
+tagline: DNS server with a web console
+
+github_url: https://github.com/TechnitiumSoftware/DnsServer
+website_url: https://technitium.com/dns/
+docs_url: https://technitium.com/dns/
+
+category: Other
+tags: [dns, csharp, self-hosted, networking, blocklist, recursive]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  BIND and Unbound are config-file heavy. Technitium is a cross-platform DNS
+  server with a web console, blocklists, and split-horizon zones, so a lab can
+  run recursive or authoritative DNS and edit records in a browser instead of
+  named.conf.
+
+use_cases:
+  - Run a recursive DNS server with a web UI for a home lab
+  - Host split-horizon zones for internal ML services
+  - Apply blocklists without standing up Pi-hole
+  - Serve authoritative records for a private domain
