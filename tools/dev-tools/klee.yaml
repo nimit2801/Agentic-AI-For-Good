@@ -1,0 +1,23 @@
+name: KLEE
+description: LLVM-based symbolic execution engine for C and C++ programs. Test and verification teams generate high-coverage tests and find bugs by exploring program paths with constraint solving instead of writing cases by hand.
+tagline: Symbolic execution engine for C and C++
+
+github_url: https://github.com/klee/klee
+website_url: https://klee-se.org/
+docs_url: https://klee-se.org/docs/
+install_command: brew install klee
+
+category: Dev Tools
+tags: [cpp, llvm, symbolic-execution, testing, verification, open-source]
+pricing: free
+is_open_source: true
+license: NCSA
+
+problem_solved: |
+  Hand-written tests miss paths in C and C++ programs that later become production bugs. KLEE is an LLVM symbolic execution engine so teams can explore paths with constraint solving, generate high-coverage tests, and find assertion failures automatically.
+
+use_cases:
+  - Generate high-coverage unit tests for C and C++ libraries
+  - Find assertion failures and crashes via symbolic path exploration
+  - Verify programs compiled to LLVM IR without writing every test case
+  - Teach symbolic execution with KLEE on small C benchmarks

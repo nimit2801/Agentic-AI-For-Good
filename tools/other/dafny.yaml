@@ -1,0 +1,23 @@
+name: Dafny
+description: Verification-aware programming language that compiles to C#, Java, Go, and JavaScript. Teams write programs with preconditions, postconditions, and invariants, then let the verifier prove correctness before code generation.
+tagline: Verification-aware language that compiles to several backends
+
+github_url: https://github.com/dafny-lang/dafny
+website_url: https://dafny.org
+docs_url: https://dafny.org/dafny/DafnyRef/DafnyRef.html
+install_command: brew install dafny
+
+category: Other
+tags: [csharp, verification, formal-methods, theorem-proving, compilers, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Proving production code correct usually means a separate proof assistant and an unverified implementation. Dafny is a verification-aware language so teams can write specs alongside the program, discharge proofs automatically, and compile to C#, Java, Go, or JavaScript.
+
+use_cases:
+  - Prove algorithms correct before compiling to C# or Java
+  - Teach program verification with preconditions and invariants
+  - Specify and verify distributed or cryptographic protocols
+  - Generate verified implementations for systems that need a proof trail
