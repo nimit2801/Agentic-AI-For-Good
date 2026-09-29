@@ -1,0 +1,23 @@
+name: BayesianOptimization
+description: Python library for sequential global optimization with Gaussian processes. Tune expensive black-box functions such as ML hyperparameters, simulation parameters, and experiment designs with a small BayesianOptimization API.
+tagline: Gaussian-process Bayesian optimization in Python
+
+github_url: https://github.com/bayesian-optimization/BayesianOptimization
+website_url: https://bayesian-optimization.github.io/BayesianOptimization/index.html
+docs_url: https://bayesian-optimization.github.io/BayesianOptimization/index.html
+install_command: pip install bayesian-optimization
+
+category: Other
+tags: [python, bayesian-optimization, gaussian-process, hyperparameter-tuning, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Grid and random search waste evaluations on expensive black-box functions such as model training and simulations. BayesianOptimization fits a Gaussian process and picks the next sample so teams can tune hyperparameters and experiment designs with far fewer trials.
+
+use_cases:
+  - Tune ML hyperparameters when each trial is a full training run
+  - Optimize simulation or lab experiment parameters with a small evaluation budget
+  - Search continuous and bounded parameter spaces without gradients
+  - Prototype Bayesian optimization before moving to a larger AutoML stack

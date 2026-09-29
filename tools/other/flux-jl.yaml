@@ -1,0 +1,23 @@
+name: Flux.jl
+description: Julia machine learning library that treats models as ordinary Julia code. Researchers write layers, losses, and training loops without a separate tensor language, then run on CPU or GPU through the Julia compiler.
+tagline: Julia ML library that does not make you tensor
+
+github_url: https://github.com/FluxML/Flux.jl
+website_url: https://fluxml.ai/
+docs_url: https://fluxml.ai/Flux.jl/stable/
+install_command: julia -e 'using Pkg; Pkg.add("Flux")'
+
+category: Other
+tags: [julia, machine-learning, neural-networks, gpu, differentiable-programming, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Most ML stacks force models into a tensor DSL that sits apart from the host language. Flux.jl is a Julia library so researchers can write layers and training loops as ordinary Julia, differentiate them, and run on CPU or GPU without leaving the language.
+
+use_cases:
+  - Train neural networks in Julia on CPU or GPU
+  - Mix custom Julia numerics with Flux layers in one model
+  - Prototype differentiable scientific models alongside SciML solvers
+  - Teach deep learning without leaving the Julia REPL or notebooks

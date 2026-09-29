@@ -1,0 +1,23 @@
+name: oneTBB
+description: Intel oneAPI Threading Building Blocks, a C++ library for task-based parallelism. ML runtimes and HPC codes compose nested parallel loops, pipelines, and concurrent containers without writing raw threads.
+tagline: C++ task library for nested parallelism
+
+github_url: https://github.com/uxlfoundation/oneTBB
+website_url: https://uxlfoundation.github.io/oneTBB/
+docs_url: https://uxlfoundation.github.io/oneTBB/
+install_command: brew install tbb
+
+category: Dev Tools
+tags: [cpp, parallelism, threading, hpc, intel, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Hand-rolled threads and OpenMP loops break down on nested, irregular parallel work in C++ ML and HPC codes. oneTBB is a task scheduler with concurrent containers and pipelines so teams can compose nested parallelism without managing threads themselves.
+
+use_cases:
+  - Parallelize nested C++ loops in a training or inference runtime
+  - Build a data-processing pipeline with oneTBB flow graphs
+  - Share concurrent hash maps and queues across worker tasks
+  - Replace raw pthread or std::thread pools in a C++ scientific code
