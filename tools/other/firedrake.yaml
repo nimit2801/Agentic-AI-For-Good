@@ -1,0 +1,22 @@
+name: Firedrake
+description: Automated system for solving partial differential equations with the finite element method. Scientists write UFL forms and get generated high-performance FEM code coupled to PETSc solvers on unstructured meshes.
+tagline: Automated FEM for PDEs with UFL and PETSc
+
+github_url: https://github.com/firedrakeproject/firedrake
+website_url: https://firedrakeproject.org
+docs_url: https://www.firedrakeproject.org
+
+category: Other
+tags: [python, fem, pde, scientific-computing, petsc, open-source]
+pricing: free
+is_open_source: true
+license: LGPL-3.0
+
+problem_solved: |
+  Writing performant FEM code for every PDE is slow and error-prone. Firedrake is an LGPL automated FEM system so scientists can specify forms in UFL, generate optimized discretizations, and solve with PETSc without hand-writing assembly kernels.
+
+use_cases:
+  - Specify a PDE in Unified Form Language and generate FEM assembly
+  - Solve unstructured-mesh PDEs with PETSc Krylov solvers
+  - Run geometric multigrid and hybridized DG methods
+  - Build ocean or climate models such as Thetis on Firedrake
