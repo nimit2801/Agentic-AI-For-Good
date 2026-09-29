@@ -1,0 +1,24 @@
+name: Clp
+description: COIN-OR C++ linear programming solver with primal and dual simplex plus a barrier method. Operations-research teams call it as a library or CLI for LPs, and it is the LP engine behind Cbc and several Python modeling layers.
+tagline: COIN-OR simplex and barrier LP solver
+
+github_url: https://github.com/coin-or/Clp
+website_url: https://github.com/coin-or/Clp
+docs_url: https://github.com/coin-or/Clp#readme
+
+install_command: brew install clp
+
+category: Other
+tags: [c++, lp, simplex, optimization, coin-or, operations-research, open-source]
+pricing: free
+is_open_source: true
+license: EPL-2.0
+
+problem_solved: |
+  Linear programs need a free simplex and barrier solver that can run as a callable library. Clp is the COIN-OR LP solver so OR teams can solve LPs from C++ or a CLI and reuse it as the LP engine inside Cbc without a commercial license.
+
+use_cases:
+  - Solve linear programs with primal or dual simplex
+  - Call Clp as a C++ library from a custom OR service
+  - Use Clp as the LP engine behind Cbc branch-and-cut
+  - Run the Clp CLI on MPS or LP files
