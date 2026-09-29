@@ -1,0 +1,21 @@
+name: Kissat
+description: SAT solver from Armin Biere used as a backend in many verification and synthesis tools. Teams feed CNF formulas to Kissat and get SAT or UNSAT answers with competitive CDCL performance.
+tagline: Compact CDCL SAT solver for CNF formulas
+
+github_url: https://github.com/arminbiere/kissat
+docs_url: https://github.com/arminbiere/kissat
+
+category: Other
+tags: [sat, cdcl, verification, c, theorem-prover, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  SAT backends in verification tools need a competitive CDCL solver that is small enough to embed. Kissat is Armin Biere's SAT solver so CNF pipelines can get SAT or UNSAT answers without a heavier solver suite.
+
+use_cases:
+  - Solve SAT instances encoded as CNF from a verification pipeline
+  - Embed Kissat as the SAT backend in a synthesizer or model checker
+  - Benchmark CDCL performance against MiniSat or CaDiCaL
+  - Check unsatisfiability of a hardware or software encoding

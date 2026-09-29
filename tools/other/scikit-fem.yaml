@@ -1,0 +1,24 @@
+name: scikit-fem
+description: Lightweight finite element assemblers in Python built on NumPy and SciPy. Teams discretize weak forms of PDEs without a heavyweight FEM framework, then solve with SciPy sparse linear algebra.
+tagline: Lightweight finite element assemblers on NumPy and SciPy
+
+github_url: https://github.com/kinnala/scikit-fem
+website_url: https://scikit-fem.readthedocs.io
+docs_url: https://scikit-fem.readthedocs.io/en/latest/
+
+install_command: pip install scikit-fem
+
+category: Other
+tags: [python, fem, pde, numpy, scipy, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Simple FEM experiments should not require a full multiphysics stack. scikit-fem provides lightweight assemblers on NumPy and SciPy so teams can discretize weak forms and solve with sparse linear algebra.
+
+use_cases:
+  - Assemble weak forms of PDEs with a small Python FEM library
+  - Solve Poisson or elasticity problems using SciPy sparse solvers
+  - Prototype a custom finite element without a heavyweight FEM stack
+  - Teach Galerkin methods with NumPy-based assembly
