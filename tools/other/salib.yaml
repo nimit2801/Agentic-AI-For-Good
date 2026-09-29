@@ -1,0 +1,24 @@
+name: SALib
+description: Python library for global sensitivity analysis with Sobol, Morris, FAST, and related methods. Modeling teams sample inputs, run a black-box model, and rank which parameters drive outputs without rewriting the simulator.
+tagline: Global sensitivity analysis in Python
+
+github_url: https://github.com/SALib/SALib
+website_url: https://salib.github.io/SALib/
+docs_url: https://salib.readthedocs.io
+
+install_command: pip install SALib
+
+category: Other
+tags: [python, sensitivity-analysis, sobol, morris, uncertainty, modeling, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Simulation teams need to know which inputs drive outputs without rewriting the model. SALib implements Sobol, Morris, FAST, and related global sensitivity methods so Python workflows can sample parameters, run a black-box simulator, and rank effects with a small API.
+
+use_cases:
+  - Rank which parameters drive a Python simulation with Sobol indices
+  - Screen many inputs cheaply with the Method of Morris
+  - Run eFAST or delta-moment independent analysis on a black-box model
+  - Couple SALib sampling with a scientific Python or HPC simulator
