@@ -1,0 +1,23 @@
+name: DifferentialEquations.jl
+description: Julia suite for high-performance differential equation solvers and scientific machine learning. It covers ODEs, SDEs, DDEs, DAEs, and hybrid systems with a common interface used across the SciML stack.
+tagline: High-performance DE solvers for scientific ML in Julia
+
+github_url: https://github.com/SciML/DifferentialEquations.jl
+website_url: https://docs.sciml.ai/DiffEqDocs/stable/
+docs_url: https://docs.sciml.ai/DiffEqDocs/stable/
+install_command: julia -e 'using Pkg; Pkg.add("DifferentialEquations")'
+
+category: Other
+tags: [julia, differential-equations, sciml, ode, sde, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Scientific models mix ODEs, SDEs, delays, and algebraic constraints, and most solver libraries cover only one class. DifferentialEquations.jl is a common Julia interface so researchers can swap solvers, add events, and couple equations to scientific ML without rewriting the model.
+
+use_cases:
+  - Solve stiff and nonstiff ODEs in Julia scientific models
+  - Simulate stochastic and delay differential equations with a shared API
+  - Couple differential equation solvers to neural networks for SciML
+  - Benchmark solver algorithms on hybrid and DAE systems
