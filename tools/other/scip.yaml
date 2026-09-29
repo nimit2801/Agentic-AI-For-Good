@@ -1,0 +1,24 @@
+name: SCIP
+description: Constraint integer programming solver that combines MIP, constraint programming, and SAT. Operations-research teams use SCIP as a branch-and-cut-and-price framework for MILPs and MINLPs from C or Python.
+tagline: Constraint integer programming solver and plugin framework
+
+github_url: https://github.com/scipopt/scip
+website_url: https://www.scipopt.org
+docs_url: https://www.scipopt.org/doc
+
+install_command: pip install pyscipopt
+
+category: Other
+tags: [c, python, optimization, milp, minlp, constraint-programming, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Hard mixed-integer and constraint programs need a free solver that exposes branch-and-price internals. SCIP is an Apache constraint integer programming framework so OR teams can solve MILPs and MINLPs and plug in custom plugins.
+
+use_cases:
+  - Solve mixed-integer linear and nonlinear programs from Python
+  - Implement custom branch-and-price plugins on the SCIP core
+  - Combine MIP, constraint programming, and SAT in one solver
+  - Use SCIP as a research framework for new cut or branching rules

@@ -1,0 +1,22 @@
+name: METIS
+description: Serial graph partitioning and fill-reducing matrix ordering library from Karypis Lab. HPC and FEM codes use METIS to partition unstructured meshes and reorder sparse matrices before calling a direct or iterative solver.
+tagline: Graph partitioning and sparse matrix ordering library
+
+github_url: https://github.com/KarypisLab/METIS
+website_url: https://github.com/KarypisLab/METIS
+docs_url: https://github.com/KarypisLab/METIS
+
+category: Other
+tags: [c, graph, partitioning, sparse, hpc, fem, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Unstructured FEM and sparse linear algebra need a serial graph partitioner that is not tied to one mesh package. METIS is an Apache C library so simulation codes can partition meshes and reorder matrices before calling a solver.
+
+use_cases:
+  - Partition an unstructured FEM mesh before a parallel solve
+  - Compute a fill-reducing ordering for a sparse direct solver
+  - Embed METIS in a custom HPC or CFD code
+  - Reduce fill-in when factoring large sparse Jacobian matrices
