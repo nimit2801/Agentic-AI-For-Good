@@ -1,0 +1,22 @@
+name: IPOPT
+description: Interior Point Optimizer for large-scale nonlinear programming. COIN-OR's solver handles general NLPs with sparse derivatives and is called from AMPL, JuMP, Pyomo, and C++ applications on scientific and engineering models.
+tagline: Interior-point solver for large-scale nonlinear programs
+
+github_url: https://github.com/coin-or/Ipopt
+website_url: https://coin-or.github.io/Ipopt
+docs_url: https://coin-or.github.io/Ipopt/
+
+category: Other
+tags: [c++, optimization, nlp, coin-or, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: EPL-2.0
+
+problem_solved: |
+  Large nonlinear programs need a sparse interior-point solver, not a dense QP code. IPOPT is COIN-OR's EPL NLP solver so engineering models can optimize with inequality and equality constraints without a commercial nonlinear package.
+
+use_cases:
+  - Solve large sparse NLPs from a process or structural model
+  - Call IPOPT from AMPL, JuMP, or Pyomo as the NLP backend
+  - Interface a C++ application to IPOPT with sparse Jacobians
+  - Run nonlinear programs on NEOS or a local HPC cluster

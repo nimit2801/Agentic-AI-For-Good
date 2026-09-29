@@ -1,0 +1,24 @@
+name: OSQP
+description: Operator-splitting quadratic program solver based on ADMM. Control and ML teams use it for convex QPs in model predictive control, embedded code generation, and as a backend for modeling languages such as CVXPY.
+tagline: ADMM quadratic program solver for MPC and embedded use
+
+github_url: https://github.com/osqp/osqp
+website_url: https://osqp.org
+docs_url: https://osqp.org/docs/get_started/
+
+install_command: pip install osqp
+
+category: Other
+tags: [c, python, optimization, qp, mpc, embedded, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Quadratic programs in MPC and ML need a robust first-order solver that embeds without a memory manager. OSQP is an Apache ADMM QP solver so control stacks can generate C code and solve convex QPs without a commercial interior-point library.
+
+use_cases:
+  - Solve convex QPs inside a model predictive controller
+  - Generate embeddable C code with no heap allocator
+  - Call OSQP from Python, Julia, MATLAB, or Rust
+  - Use OSQP as the QP backend for CVXPY or another modeling layer

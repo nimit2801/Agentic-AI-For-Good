@@ -1,0 +1,24 @@
+name: Pyomo
+description: Python-based open-source optimization modeling language. Teams declare variables, objectives, and constraints in Python, then solve LP, MILP, NLP, and stochastic models with solvers such as IPOPT, CBC, and Gurobi.
+tagline: Python algebraic modeling language for optimization
+
+github_url: https://github.com/Pyomo/pyomo
+website_url: https://www.pyomo.org
+docs_url: https://pyomo.readthedocs.io/
+
+install_command: pip install pyomo
+
+category: Other
+tags: [python, optimization, modeling, milp, nlp, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Algebraic modeling usually means AMPL or GAMS, not Python. Pyomo is a BSD modeling language so researchers can write LP, MILP, and NLP models in Python and dispatch to IPOPT, CBC, or commercial solvers without leaving the scientific stack.
+
+use_cases:
+  - Model mixed-integer linear programs in Python
+  - Solve nonlinear process models with IPOPT as the backend
+  - Build stochastic and bilevel optimization models
+  - Teach operations research with solver-agnostic Pyomo scripts

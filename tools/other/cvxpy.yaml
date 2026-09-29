@@ -1,0 +1,24 @@
+name: CVXPY
+description: Python-embedded modeling language for convex optimization. Teams write problems in natural math, then CVXPY canonicalizes and calls solvers such as OSQP, Clarabel, SCS, and HiGHS, with optional disciplined nonlinear programming.
+tagline: Python modeling language for convex optimization
+
+github_url: https://github.com/cvxpy/cvxpy
+website_url: https://www.cvxpy.org
+docs_url: https://www.cvxpy.org/tutorial/index.html
+
+install_command: pip install cvxpy
+
+category: Other
+tags: [python, optimization, convex, modeling, solvers, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Convex solvers want problems in restrictive standard form. CVXPY is an Apache Python DSL so researchers can write objectives and constraints in math-like code, then dispatch to OSQP, Clarabel, or SCS without hand-building the canonical form.
+
+use_cases:
+  - Model least-squares, SVM, or portfolio problems in Python
+  - Dispatch a convex program to OSQP, Clarabel, SCS, or HiGHS
+  - Prototype disciplined nonlinear programs with IPOPT backends
+  - Teach convex optimization with code that matches the textbook math
