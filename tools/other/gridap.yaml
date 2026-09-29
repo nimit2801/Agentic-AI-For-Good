@@ -1,0 +1,23 @@
+name: Gridap.jl
+description: Julia library for grid-based approximation of partial differential equations. Researchers write finite-element weak forms in Julia and solve elliptic, parabolic, and nonlinear PDEs without leaving the language for a Fortran or C++ FEM stack.
+tagline: Grid-based finite-element PDEs in Julia
+
+github_url: https://github.com/gridap/Gridap.jl
+website_url: https://gridap.github.io/Gridap.jl/stable/
+docs_url: https://gridap.github.io/Gridap.jl/stable/
+install_command: julia -e 'using Pkg; Pkg.add("Gridap")'
+
+category: Other
+tags: [julia, finite-elements, pde, scientific-computing, fem, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Finite-element PDE codes usually live in C++ or Fortran, so Julia scientific models have to leave the language to solve continuum problems. Gridap.jl is a Julia FEM library so researchers can write weak forms and solve elliptic and nonlinear PDEs in the same stack as SciML.
+
+use_cases:
+  - Solve elliptic and parabolic PDEs with finite elements in Julia
+  - Write weak forms of continuum models without a C++ FEM toolchain
+  - Couple Gridap discretizations with Julia scientific ML workflows
+  - Prototype nonlinear PDE solvers in notebooks before HPC deployment
