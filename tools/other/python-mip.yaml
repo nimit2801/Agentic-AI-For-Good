@@ -1,0 +1,24 @@
+name: python-mip
+description: Python modeling library for mixed-integer linear programs with a PuLP-like API and CFFI bindings to CBC or Gurobi. OR teams write MIP models in Python and use cuts, lazy constraints, MIP starts, and solution pools.
+tagline: Python MIP modeling with CBC or Gurobi
+
+github_url: https://github.com/coin-or/python-mip
+website_url: https://www.python-mip.com
+docs_url: https://docs.python-mip.com
+
+install_command: pip install mip
+
+category: Other
+tags: [python, mip, milp, optimization, coin-or, cbc, open-source]
+pricing: free
+is_open_source: true
+license: EPL-2.0
+
+problem_solved: |
+  Python MIP modeling often hides solver features such as cuts, lazy constraints, and solution pools. python-mip talks to CBC or Gurobi through CFFI so teams can write MILPs in Python and use those advanced features without rewriting the model.
+
+use_cases:
+  - Formulate mixed-integer linear programs in Python with operator overloading
+  - Add cut generators or lazy constraints during branch-and-cut
+  - Start a MIP search from a heuristic feasible solution
+  - Switch the backend between CBC and Gurobi on the same model

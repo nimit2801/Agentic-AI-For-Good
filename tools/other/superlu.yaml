@@ -1,0 +1,24 @@
+name: SuperLU
+description: Lawrence Berkeley supernodal sparse direct solver for large nonsymmetric linear systems. Scientific computing teams factor sparse Ax=b problems from C or Fortran and reuse SuperLU as the sparse backend in PETSc, SciPy, and related stacks.
+tagline: Supernodal sparse direct solver for Ax=b
+
+github_url: https://github.com/xiaoyeli/superlu
+website_url: https://portal.nersc.gov/project/sparse/superlu/
+docs_url: https://portal.nersc.gov/project/sparse/superlu/
+
+install_command: brew install superlu
+
+category: Other
+tags: [c, sparse-linear-algebra, scientific-computing, lbnl, solver, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Large sparse nonsymmetric linear systems need a production direct solver, not a dense LU. SuperLU is LBNL's supernodal sparse factorization so scientific codes can solve Ax=b from C or Fortran and reuse the same backend from PETSc or SciPy.
+
+use_cases:
+  - Factor and solve large sparse nonsymmetric linear systems
+  - Use SuperLU as the sparse direct backend in PETSc or SciPy
+  - Call SuperLU from C or Fortran scientific applications
+  - Benchmark supernodal LU against iterative sparse solvers
