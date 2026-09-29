@@ -1,0 +1,24 @@
+name: ECOS
+description: Lightweight C solver for convex second-order cone programs on embedded hardware. Control teams use it for SOCPs and mixed-integer SOCPs from Python, MATLAB, Julia, or a C library with a small memory footprint.
+tagline: Embedded second-order cone solver for SOCPs
+
+github_url: https://github.com/embotech/ecos
+website_url: https://github.com/embotech/ecos
+docs_url: https://github.com/embotech/ecos/wiki
+
+install_command: pip install ecos
+
+category: Other
+tags: [c, python, optimization, socp, embedded, mpc, open-source]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Embedded control needs an SOCP solver that fits in a small C library, not a desktop interior-point stack. ECOS is a lightweight cone solver so MPC and CVX stacks can solve second-order and exponential cone programs on embedded hardware.
+
+use_cases:
+  - Solve SOCPs on an embedded controller from C or Python
+  - Run mixed-integer SOCPs with the ECOS_BB branch-and-bound wrapper
+  - Call ECOS from MATLAB, Julia, or R modeling stacks
+  - Use ECOS as a small-footprint cone backend for CVX
