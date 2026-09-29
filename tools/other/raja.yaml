@@ -1,0 +1,22 @@
+name: RAJA
+description: C++ performance-portability layer from LLNL for parallel loops across CPUs and GPUs. Teams write one RAJA kernel and run it on CUDA, HIP, SYCL, or OpenMP without rewriting the algorithm for each backend.
+tagline: LLNL C++ portability layer for parallel HPC loops
+
+github_url: https://github.com/LLNL/RAJA
+website_url: https://raja.readthedocs.io
+docs_url: https://raja.readthedocs.io/en/develop/
+
+category: Other
+tags: [c++, hpc, gpu, cuda, hip, openmp, performance-portability, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  HPC loop nests often have to be rewritten for CUDA, HIP, SYCL, and OpenMP. RAJA is an LLNL C++ layer so scientific codes can express parallel loops once and run them on CPUs and GPUs without a backend-specific rewrite.
+
+use_cases:
+  - Write a parallel loop once and run it on CUDA, HIP, or OpenMP
+  - Port a scientific C++ kernel to GPUs without a CUDA-only rewrite
+  - Combine RAJA with Umpire memory management on an HPC cluster
+  - Compare RAJA and Kokkos backends on the same loop nest
