@@ -1,0 +1,24 @@
+name: Clarabel
+description: Interior-point solver for convex conic optimization written in Rust with a Python interface. It solves LPs, QPs, SOCPs, and SDPs plus exponential and power cones without rewriting quadratic objectives as epigraphs.
+tagline: Rust interior-point solver for convex cone programs
+
+github_url: https://github.com/oxfordcontrol/Clarabel.rs
+website_url: https://clarabel.org
+docs_url: https://clarabel.org
+
+install_command: pip install clarabel
+
+category: Other
+tags: [rust, python, optimization, conic, interior-point, cvxpy, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Interior-point cone solvers often force quadratic objectives into an epigraph form, which slows LPs and QPs. Clarabel is a homogeneous-embedding IPM in Rust so Python and Julia stacks can solve LPs, QPs, SOCPs, and SDPs without that rewrite.
+
+use_cases:
+  - Solve LPs, QPs, SOCPs, and SDPs from Python or Rust
+  - Use Clarabel as a CVXPY backend for cone programs
+  - Detect infeasible cone programs via homogeneous embedding
+  - Handle exponential, power, and generalized power cone constraints

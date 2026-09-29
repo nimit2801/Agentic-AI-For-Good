@@ -1,0 +1,22 @@
+name: qpOASES
+description: Open-source C++ QP solver using an online active-set strategy for model predictive control. Control teams use it for parametric QPs, including semi-definite or ill-posed problems, from MATLAB, Simulink, or C++.
+tagline: Online active-set QP solver for model predictive control
+
+github_url: https://github.com/coin-or/qpOASES
+website_url: https://github.com/coin-or/qpOASES
+docs_url: https://github.com/coin-or/qpOASES/blob/master/doc/manual.pdf
+
+category: Other
+tags: [c++, matlab, optimization, qp, mpc, control, open-source]
+pricing: free
+is_open_source: true
+license: LGPL-2.1
+
+problem_solved: |
+  Model predictive control needs a QP solver that stays fast as the active set changes from one sample to the next. qpOASES implements an online active-set strategy so control stacks can solve parametric QPs, even when they are semi-definite or ill-posed.
+
+use_cases:
+  - Solve parametric QPs inside a receding-horizon controller
+  - Warm-start successive QPs as the active set changes
+  - Call qpOASES from MATLAB, Simulink, or embedded C++
+  - Handle semi-definite or ill-posed QPs in real-time control
