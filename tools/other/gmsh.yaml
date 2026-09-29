@@ -1,0 +1,24 @@
+name: Gmsh
+description: Open source 3D finite element mesh generator with a built-in CAD engine and post-processor. Engineers drive geometry, meshing, and visualization from a GUI, .geo scripts, or C++, Python, Julia, and Fortran APIs.
+tagline: 3D finite element mesh generator with CAD and post-processing
+
+website_url: https://gmsh.info/
+docs_url: https://gmsh.info/doc/texinfo/gmsh.html
+github_url: https://github.com/live-clones/gmsh
+
+install_command: pip install gmsh
+
+category: Other
+tags: [c++, python, mesh, fem, cad, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Finite element codes need quality 3D meshes from CAD without a heavy commercial preprocessor. Gmsh is a GPL mesh generator with geometry, mesh, solver, and post-processing modules so teams can script .geo files or call the Python API instead of a closed mesher.
+
+use_cases:
+  - Generate tetrahedral or hexahedral meshes from CAD geometry for FEM
+  - Script parametric meshes with .geo files and the Python API
+  - Visualize high-order finite element results in the built-in post-processor
+  - Drive an external solver such as GetDP through the ONELAB interface

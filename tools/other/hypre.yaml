@@ -1,0 +1,22 @@
+name: hypre
+description: High-performance preconditioners and solvers featuring multigrid methods for large sparse linear systems on massively parallel computers. LLNL's library is used in PDE codes that need scalable algebraic and structured multigrid.
+tagline: Parallel multigrid preconditioners for sparse linear systems
+
+github_url: https://github.com/hypre-space/hypre
+website_url: https://www.llnl.gov/casc/hypre/
+docs_url: https://hypre.readthedocs.io/en/latest/
+
+category: Other
+tags: [c, hpc, solvers, multigrid, preconditioners, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Sparse linear systems from PDEs stall without scalable multigrid. hypre is LLNL's dual-licensed library of algebraic and structured multigrid preconditioners so HPC codes can solve huge systems on thousands of ranks without a custom AMG stack.
+
+use_cases:
+  - Precondition sparse linear systems with algebraic multigrid at HPC scale
+  - Use structured multigrid on regular grids in a PDE solver
+  - Couple hypre with PETSc or another Krylov library as the preconditioner
+  - Drive hypre solvers from Python, MATLAB, or Julia via hypredrive

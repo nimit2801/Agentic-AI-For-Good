@@ -1,0 +1,24 @@
+name: PETSc
+description: Portable, Extensible Toolkit for Scientific Computation. HPC teams solve large sparse linear and nonlinear systems, ODEs, and PDEs with scalable Krylov solvers, preconditioners, and time integrators on clusters and supercomputers.
+tagline: Scalable solvers for scientific linear and nonlinear systems
+
+github_url: https://github.com/petsc/petsc
+website_url: https://petsc.org
+docs_url: https://petsc.org/release/
+
+install_command: pip install petsc
+
+category: Other
+tags: [c, python, hpc, solvers, pde, scientific-computing, mpi, open-source]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Large PDE and optimization codes need Krylov solvers and preconditioners that scale across MPI ranks. PETSc is a BSD scientific toolkit so research teams can assemble linear, nonlinear, and time-stepping methods without writing a custom parallel solver stack.
+
+use_cases:
+  - Solve sparse linear systems with Krylov methods on an HPC cluster
+  - Assemble nonlinear solvers and time integrators for PDE codes
+  - Call PETSc from Python with petsc4py in a scientific workflow
+  - Couple discretization and solver packages in a multiphysics application
