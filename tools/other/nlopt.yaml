@@ -1,0 +1,24 @@
+name: NLopt
+description: Nonlinear optimization library with global and local algorithms, derivative-free and gradient-based methods, and bound or nonlinear constraints. Scientists call it from C, Python, Julia, MATLAB, and Fortran without locking into one solver family.
+tagline: Nonlinear optimization library with many global and local algorithms
+
+github_url: https://github.com/stevengj/nlopt
+website_url: https://nlopt.readthedocs.io/en/latest/
+docs_url: https://nlopt.readthedocs.io/en/latest/NLopt_Introduction/
+
+install_command: pip install nlopt
+
+category: Other
+tags: [c, python, optimization, nonlinear, global-optimization, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Nonlinear optimization often means picking one algorithm family and rewriting the model. NLopt is a mixed-license library of global and local methods so teams can switch derivative-free or gradient solvers behind one C API.
+
+use_cases:
+  - Run derivative-free global search on a black-box objective
+  - Optimize with bound and nonlinear constraints from Python
+  - Compare local gradient methods without changing the model API
+  - Embed NLopt in a C or Fortran scientific code
