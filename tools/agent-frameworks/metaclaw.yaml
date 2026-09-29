@@ -1,0 +1,22 @@
+name: MetaClaw
+description: Agent runtime that meta-learns from live conversations and evolves skills without a GPU cluster. Talk to OpenClaw-style agents as usual; MetaClaw turns each session into a learning signal with optional RL and skill evolution.
+tagline: Agents that meta-learn and evolve from live conversations
+
+github_url: https://github.com/aiming-lab/MetaClaw
+website_url: https://github.com/aiming-lab/MetaClaw
+docs_url: https://arxiv.org/abs/2603.17187
+
+category: Agents
+tags: [python, agents, meta-learning, reinforcement-learning, openclaw, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Deployed agents freeze after training; improving them means offline datasets and a GPU cluster. MetaClaw turns live conversations into a learning signal so OpenClaw-style agents can evolve skills and run optional RL without a dedicated training farm.
+
+use_cases:
+  - Evolve OpenClaw agent skills from production conversations
+  - Run scheduled RL updates during idle or sleep hours
+  - Persist cross-session memory for users and projects
+  - Deploy MetaClaw as a native OpenClaw extension with one CLI

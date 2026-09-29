@@ -1,0 +1,23 @@
+name: SageAttention
+description: Quantized attention kernels that speed FlashAttention-style compute by 2-5x without dropping end-to-end metrics. Language, image, and video models swap in an 8-bit plug-and-play attention kernel for training and inference.
+tagline: Quantized attention kernels 2-5x faster than FlashAttention
+
+github_url: https://github.com/thu-ml/SageAttention
+website_url: https://github.com/thu-ml/SageAttention
+docs_url: https://github.com/thu-ml/SageAttention
+install_command: pip install sageattention
+
+category: Fine-tuning
+tags: [cuda, python, attention, quantization, inference, training, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Attention is the bottleneck in large language, image, and video models even after FlashAttention. SageAttention is a quantized kernel so teams can get 2-5x attention speedups without losing end-to-end metrics across those modalities.
+
+use_cases:
+  - Speed up transformer training with quantized attention kernels
+  - Drop SageAttention into inference stacks that already use FlashAttention
+  - Accelerate image and video diffusion models without metric loss
+  - Benchmark 8-bit attention against FlashAttention on an LLM workload

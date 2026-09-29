@@ -1,0 +1,23 @@
+name: Endee
+description: High-performance vector database designed to hold up to a billion vectors on a single node. AI search and RAG teams get optimized indexing and a Python client, with a managed cloud at endee.io.
+tagline: Single-node vector database for billion-scale search
+
+github_url: https://github.com/endee-io/endee
+website_url: https://endee.io
+docs_url: https://endee.io
+install_command: pip install endee
+
+category: Vector DB
+tags: [cpp, python, vector-database, similarity-search, rag, embeddings, open-source]
+pricing: freemium
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Billion-scale vector search usually means a cluster before a single node is saturated. Endee is a C++ vector database so RAG and semantic search teams can index large embedding sets on one node, then move to Endee Cloud when they need a managed service.
+
+use_cases:
+  - Index product or document embeddings for semantic search at large scale
+  - Power RAG retrieval from a single-node vector store
+  - Prototype Hinglish or multilingual search on Endee embeddings
+  - Move from self-hosted Endee to Endee Cloud without changing the client
