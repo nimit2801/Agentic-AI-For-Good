@@ -1,0 +1,24 @@
+name: HiGHS
+description: High-performance open-source solver for large-scale linear optimization. Operations-research teams use HiGHS for LPs, MILPs, and QPs from C++, Python, Julia, or as a backend for modeling layers such as PuLP and SciPy.
+tagline: Open-source simplex and MIP solver for large LPs
+
+github_url: https://github.com/ERGO-Code/HiGHS
+website_url: https://highs.dev
+docs_url: https://ergo-code.github.io/HiGHS
+
+install_command: pip install highspy
+
+category: Other
+tags: [c++, python, optimization, lp, milp, simplex, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Large linear and mixed-integer programs need a free simplex and MIP solver that scales past textbook codes. HiGHS is an MIT C++ solver so Python and Julia stacks can solve LPs, MILPs, and QPs without a commercial optimizer license.
+
+use_cases:
+  - Solve large linear and mixed-integer programs from Python
+  - Use HiGHS as the LP or MIP backend for PuLP or SciPy
+  - Call the C++ API from a custom operations-research service
+  - Benchmark simplex and interior-point LP solves against CBC
