@@ -1,0 +1,23 @@
+name: Z3
+description: Microsoft's SMT theorem prover for software verification, synthesis, and constraint solving. Teams encode SAT, bit-vector, arithmetic, and array theories in Python, C++, Java, or .NET and ask Z3 whether a formula is satisfiable.
+tagline: SMT solver for SAT, arithmetic, and program verification
+
+github_url: https://github.com/Z3Prover/z3
+docs_url: https://microsoft.github.io/z3guide/
+
+install_command: pip install z3-solver
+
+category: Other
+tags: [smt, sat, verification, python, c++, theorem-prover, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Constraint solving and program verification need an SMT engine that handles SAT, bit-vectors, arithmetic, and arrays in one solver. Z3 is Microsoft's theorem prover so Python and C++ stacks can decide formulas without building a custom SAT or SMT backend.
+
+use_cases:
+  - Decide SMT formulas from Python with the z3-solver package
+  - Verify program properties encoded as bit-vector or arithmetic constraints
+  - Solve synthesis and scheduling problems as SAT or SMT queries
+  - Embed Z3 as a C++ library inside a compiler or static analyzer

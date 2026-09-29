@@ -1,0 +1,23 @@
+name: torchdiffeq
+description: PyTorch library of differentiable ODE solvers with GPU support and O(1)-memory adjoint backpropagation. Neural ODE and continuous-depth models train by treating residual networks as ODE discretizations.
+tagline: Differentiable ODE solvers for neural ODEs in PyTorch
+
+github_url: https://github.com/rtqichen/torchdiffeq
+docs_url: https://github.com/rtqichen/torchdiffeq
+
+install_command: pip install torchdiffeq
+
+category: Other
+tags: [pytorch, ode, neural-ode, differentiable, gpu, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Training neural ODEs in PyTorch needs ODE solvers that backpropagate through the continuous dynamics without storing every step. torchdiffeq implements adjoint sensitivity so GPU models can train continuous-depth networks with constant memory.
+
+use_cases:
+  - Train neural ODE models with adjoint backpropagation on GPU
+  - Replace residual blocks with continuous-depth ODE layers
+  - Integrate stiff or nonstiff ODEs inside a PyTorch training loop
+  - Compare dopri5, adams, and implicit solvers on a dynamics dataset
