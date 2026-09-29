@@ -1,0 +1,24 @@
+name: do-mpc
+description: Python toolbox for model predictive control of nonlinear systems. Teams discretize ODE or DAE models, set up receding-horizon optimal control, and deploy MPC with CasADi as the backend.
+tagline: Python toolbox for nonlinear model predictive control
+
+github_url: https://github.com/do-mpc/do-mpc
+website_url: https://www.do-mpc.com/
+docs_url: https://www.do-mpc.com/en/latest/
+
+install_command: pip install do-mpc
+
+category: Other
+tags: [python, mpc, control, casadi, ode, optimization, open-source]
+pricing: free
+is_open_source: true
+license: LGPL-3.0
+
+problem_solved: |
+  Nonlinear model predictive control in Python usually means stitching CasADi, integrators, and an optimizer by hand. do-mpc is an MPC toolbox so control teams can discretize ODE or DAE models and run receding-horizon optimal control without building that stack.
+
+use_cases:
+  - Design nonlinear MPC for an ODE or DAE plant model in Python
+  - Use CasADi as the backend for receding-horizon optimal control
+  - Simulate closed-loop MPC before deploying a controller
+  - Teach model predictive control with a small Python example

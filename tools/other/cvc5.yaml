@@ -1,0 +1,24 @@
+name: cvc5
+description: Automatic theorem prover for SMT with theories for arithmetic, bit-vectors, arrays, strings, and floating point. Teams encode verification and synthesis problems and ask cvc5 whether a formula is satisfiable.
+tagline: SMT solver for arithmetic, strings, and bit-vectors
+
+github_url: https://github.com/cvc5/cvc5
+website_url: https://cvc5.github.io
+docs_url: https://cvc5.github.io/docs/
+
+install_command: pip install cvc5
+
+category: Other
+tags: [smt, theorem-prover, verification, python, c++, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  SMT queries beyond SAT need a solver with arithmetic, strings, bit-vectors, and arrays in one engine. cvc5 is an automatic theorem prover so verification and synthesis stacks can decide formulas without assembling theory solvers themselves.
+
+use_cases:
+  - Decide SMT formulas from Python with the cvc5 bindings
+  - Verify software properties encoded as arithmetic or string constraints
+  - Use cvc5 as an SMT backend in a compiler or synthesizer
+  - Compare cvc5 with Z3 on a bit-vector or string benchmark
