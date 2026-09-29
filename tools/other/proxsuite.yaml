@@ -1,0 +1,24 @@
+name: ProxSuite
+description: Proximal interior-point QP solver for robotics and beyond. Teams solve dense and sparse quadratic programs from Python or C++ with warm starts suited to model predictive control and whole-body control.
+tagline: Proximal QP solver for robotics and MPC
+
+github_url: https://github.com/Simple-Robotics/proxsuite
+website_url: https://simple-robotics.github.io/proxsuite/
+docs_url: https://simple-robotics.github.io/proxsuite/
+
+install_command: pip install proxsuite
+
+category: Other
+tags: [c++, python, optimization, qp, robotics, mpc, open-source]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Robotics MPC and whole-body control need a QP solver that warm-starts dense and sparse problems every control cycle. ProxSuite is a proximal interior-point toolbox so Python and C++ stacks can solve QPs without a commercial solver.
+
+use_cases:
+  - Solve dense or sparse QPs in a robot whole-body controller
+  - Warm-start successive QPs in model predictive control
+  - Call ProxSuite from Python or C++ in a robotics stack
+  - Benchmark proximal QP solves against OSQP or qpOASES

@@ -1,0 +1,22 @@
+name: libMesh
+description: C++ finite-element library for parallel adaptive PDE simulation. Research codes assemble continuous and discontinuous Galerkin discretizations, couple optional PETSc solvers, and run the same mesh on serial or MPI builds.
+tagline: Parallel C++ finite-element library for adaptive PDEs
+
+github_url: https://github.com/libMesh/libmesh
+website_url: http://libmesh.github.io
+docs_url: https://libmesh.github.io
+
+category: Other
+tags: [c++, fem, pde, mpi, adaptive-mesh, petsc, open-source]
+pricing: free
+is_open_source: true
+license: LGPL-2.1
+
+problem_solved: |
+  Adaptive FEM research codes need a parallel mesh and assembly layer that is not tied to one physics package. libMesh is an LGPL C++ library so teams can build continuous or DG discretizations and scale from serial to MPI without writing a mesh stack.
+
+use_cases:
+  - Assemble continuous or DG finite-element systems in C++
+  - Run adaptive mesh refinement on serial or MPI builds
+  - Couple libMesh assembly with PETSc nonlinear solvers
+  - Share one mesh library across multiple research physics codes
