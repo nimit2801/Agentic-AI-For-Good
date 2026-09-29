@@ -1,0 +1,24 @@
+name: MFEM
+description: Lightweight, scalable C++ library for finite element methods. HPC and research codes assemble high-order FEM discretizations on unstructured meshes and solve PDEs in parallel.
+tagline: Scalable C++ finite element library
+
+github_url: https://github.com/mfem/mfem
+website_url: https://mfem.org
+docs_url: https://mfem.org/documentation/
+
+install_command: brew install mfem
+
+category: Other
+tags: [c++, finite-element, pde, hpc, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  High-order FEM on unstructured meshes at HPC scale needs a small, modular kernel. MFEM is a BSD C++ library so research codes can assemble, solve, and adapt PDE discretizations without a heavy commercial FEA stack.
+
+use_cases:
+  - Discretize PDEs with high-order finite elements on unstructured meshes
+  - Run parallel FEM solvers on HPC clusters
+  - Couple MFEM with hypre or PETSc linear solvers
+  - Generate FEM residual and Jacobian data for scientific ML

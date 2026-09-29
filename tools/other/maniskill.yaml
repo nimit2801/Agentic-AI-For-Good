@@ -1,0 +1,24 @@
+name: ManiSkill
+description: GPU-parallel robotics simulator and benchmark for generalizable manipulation skills. Teams train and evaluate robot policies across many tasks and embodiments with batched simulation in Python.
+tagline: GPU-parallel simulator for robot manipulation skills
+
+github_url: https://github.com/mani-skill/ManiSkill
+website_url: https://maniskill.ai/
+docs_url: https://maniskill.ai/
+
+install_command: pip install mani-skill
+
+category: Other
+tags: [python, robotics, simulation, reinforcement-learning, manipulation, gpu, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Training robot manipulation policies needs thousands of parallel rollouts and a shared task suite. ManiSkill GPU-batches simulation and ships manipulation benchmarks so RL teams can train and compare policies without building a custom sim stack.
+
+use_cases:
+  - Train manipulation policies across many GPU-parallel environments
+  - Benchmark generalizable robot skills on a shared task suite
+  - Evaluate policies on multiple robot embodiments in one simulator
+  - Prototype visuomotor learning with batched RGB and point-cloud obs
