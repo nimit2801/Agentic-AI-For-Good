@@ -1,0 +1,22 @@
+name: xtensor
+description: C++ library for multi-dimensional arrays with NumPy-style broadcasting and lazy computing. Scientific codes use it for tensor expressions that compile to efficient loops without a Python runtime.
+tagline: C++ tensors with NumPy-style broadcasting
+
+github_url: https://github.com/xtensor-stack/xtensor
+website_url: https://xtensor.readthedocs.io/en/latest/
+docs_url: https://xtensor.readthedocs.io/en/latest/
+
+category: Other
+tags: [c++, scientific-computing, arrays, numpy, tensors, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  C++ scientific codes often hand-write nested loops instead of NumPy-style tensor math. xtensor is a BSD header library so teams can write broadcasting and lazy expressions that compile to tight loops without embedding Python.
+
+use_cases:
+  - Write NumPy-like broadcasting expressions in C++
+  - Lazily evaluate tensor expressions in a scientific kernel
+  - Port a Python numerical prototype to a C++ library
+  - Combine xtensor with xtensor-python for mixed-language arrays
