@@ -1,0 +1,22 @@
+name: Kokkos
+description: C++ performance-portability programming model for parallel execution and memory across CPUs, GPUs, and HPC backends. Teams write one Kokkos kernel and run it on CUDA, HIP, SYCL, OpenMP, or serial without rewriting the algorithm.
+tagline: C++ parallel programming model for CPU and GPU HPC
+
+github_url: https://github.com/kokkos/kokkos
+website_url: https://kokkos.org
+docs_url: https://kokkos.org/kokkos-core-wiki/
+
+category: Other
+tags: [c++, hpc, gpu, cuda, hip, openmp, performance-portability, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  HPC kernels often have to be rewritten for CUDA, HIP, SYCL, and OpenMP. Kokkos is a C++ programming model so scientific codes can express parallel loops and memory spaces once and run them on CPUs and GPUs without a backend-specific rewrite.
+
+use_cases:
+  - Write a parallel kernel once and run it on CUDA, HIP, or OpenMP
+  - Port a scientific C++ code to GPUs without a CUDA-only rewrite
+  - Manage host and device memory spaces through Kokkos Views
+  - Combine Kokkos with Trilinos or other HPC libraries on a cluster
