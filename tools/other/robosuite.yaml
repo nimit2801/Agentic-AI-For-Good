@@ -1,0 +1,24 @@
+name: robosuite
+description: Modular robot learning simulation framework built on MuJoCo. Teams compose robots, grippers, and arenas to train and benchmark manipulation policies with standardized environments.
+tagline: Modular MuJoCo framework for robot learning
+
+github_url: https://github.com/ARISE-Initiative/robosuite
+website_url: https://robosuite.ai
+docs_url: https://robosuite.ai
+
+install_command: pip install robosuite
+
+category: Other
+tags: [python, robotics, simulation, mujoco, reinforcement-learning, manipulation, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Robot learning papers often ship one-off MuJoCo scenes that cannot be reused. robosuite composes robots, grippers, and arenas into standard environments so teams can train and compare manipulation policies without rewriting a sim stack.
+
+use_cases:
+  - Train grasping and pick-and-place policies in modular MuJoCo scenes
+  - Swap robots and grippers without rewriting environment code
+  - Benchmark imitation and RL algorithms on shared robosuite tasks
+  - Collect demonstration data from scripted or teleop controllers

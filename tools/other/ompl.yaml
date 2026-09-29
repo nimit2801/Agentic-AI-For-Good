@@ -1,0 +1,24 @@
+name: OMPL
+description: Open Motion Planning Library of sampling-based planners for geometric and control planning. Robotics stacks use OMPL for RRT, PRM, and kinodynamic planning in configuration space.
+tagline: Sampling-based motion planning library
+
+github_url: https://github.com/ompl/ompl
+website_url: https://ompl.kavrakilab.org
+docs_url: https://ompl.kavrakilab.org
+
+install_command: pip install ompl
+
+category: Other
+tags: [c++, python, robotics, motion-planning, rrt, prm, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Sampling-based motion planning is easy to get wrong and hard to compare. OMPL implements RRT, PRM, and kinodynamic planners behind one API so robot stacks can plan in configuration space without writing a custom planner suite.
+
+use_cases:
+  - Plan geometric paths with RRT and PRM in a robot configuration space
+  - Run kinodynamic planning for systems with differential constraints
+  - Benchmark sampling-based planners on a shared OMPL problem
+  - Embed OMPL as the planner backend in MoveIt or a custom stack
