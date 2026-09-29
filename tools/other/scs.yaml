@@ -1,0 +1,24 @@
+name: SCS
+description: Splitting conic solver for large-scale convex cone programs using ADMM with Anderson acceleration. CVXPY uses it as the default backend for SDP, exponential-cone, and power-cone problems.
+tagline: ADMM splitting solver for large convex cone programs
+
+github_url: https://github.com/cvxgrp/scs
+website_url: https://www.cvxgrp.org/scs/
+docs_url: https://www.cvxgrp.org/scs/
+
+install_command: pip install scs
+
+category: Other
+tags: [c, python, optimization, conic, admm, cvxpy, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Large cone programs need a first-order solver that scales past interior-point memory limits. SCS splits cone programs with ADMM and Anderson acceleration so CVXPY and similar stacks can solve SDPs and exponential-cone models at scale.
+
+use_cases:
+  - Solve large SDPs, SOCPs, and exponential-cone programs
+  - Use SCS as the CVXPY default for SDP and power-cone models
+  - Warm-start successive cone programs from Python or Julia
+  - Run GPU or MKL linear-algebra backends on large cone problems

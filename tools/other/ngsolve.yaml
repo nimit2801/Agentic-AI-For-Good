@@ -1,0 +1,24 @@
+name: NGSolve
+description: High-performance multiphysics finite element software for solid mechanics, fluids, and electromagnetics. Teams implement new PDEs and solvers through a Python interface on top of a C++ FEM core.
+tagline: Python-driven multiphysics finite element library
+
+github_url: https://github.com/NGSolve/ngsolve
+website_url: https://ngsolve.org
+docs_url: https://docu.ngsolve.org
+
+install_command: pip install ngsolve
+
+category: Other
+tags: [c++, python, fem, multiphysics, simulation, pde, open-source]
+pricing: free
+is_open_source: true
+license: LGPL-2.1
+
+problem_solved: |
+  Multiphysics FEM work often means stitching separate codes for solids, fluids, and electromagnetics. NGSolve is a C++ finite-element library with a Python front end so researchers can add equations and solvers without rewriting a full FEM stack.
+
+use_cases:
+  - Simulate solid mechanics, fluids, or electromagnetics in one FEM code
+  - Prototype a custom PDE and solver from Python
+  - Couple Netgen meshing with NGSolve assembly for industrial models
+  - Teach finite-element methods with a scriptable C++ backend
