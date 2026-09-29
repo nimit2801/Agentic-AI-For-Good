@@ -1,0 +1,22 @@
+name: ProtoMotions
+description: GPU-accelerated simulation and learning framework for physically simulated digital humans and humanoid robots. Teams train motion policies on AMASS-scale data, retarget skills to robots, and deploy tracking policies to hardware such as Unitree G1.
+tagline: GPU framework for simulated humanoid motion learning
+
+github_url: https://github.com/NVlabs/ProtoMotions
+website_url: https://nvlabs.github.io/ProtoMotions/
+docs_url: https://protomotions.github.io/
+
+category: Other
+tags: [python, robotics, humanoid, simulation, reinforcement-learning, gpu, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Training physically simulated humans and humanoids usually means a one-off Isaac or MuJoCo stack. ProtoMotions is an Apache GPU framework so animation and robotics teams can learn AMASS-scale motion, retarget to robots, and deploy tracking policies without rewriting the sim loop.
+
+use_cases:
+  - Train a physics-based character on the full AMASS motion dataset
+  - Retarget human motion to a humanoid robot with one command
+  - Run sim-to-sim checks of a policy across Newton, Isaac Gym, and MuJoCo
+  - Deploy a general tracking policy to a Unitree G1 from simulation
