@@ -1,0 +1,24 @@
+name: PuLP
+description: Python linear programming API that builds LP and MILP models and calls solvers such as CBC, HiGHS, GLPK, CPLEX, and Gurobi. Data and OR teams write models in Python and swap solvers without rewriting the formulation.
+tagline: Python modeling API for linear and mixed-integer programs
+
+github_url: https://github.com/coin-or/pulp
+website_url: http://coin-or.github.io/pulp/
+docs_url: https://coin-or.github.io/pulp/
+
+install_command: pip install pulp
+
+category: Other
+tags: [python, optimization, lp, milp, modeling, coin-or, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Python OR work often hard-codes one solver API and cannot switch backends. PuLP is a modeling layer that writes MPS or LP files so teams can formulate MILPs in Python and call CBC, HiGHS, GLPK, or commercial solvers from the same model.
+
+use_cases:
+  - Formulate linear and mixed-integer programs in Python
+  - Swap CBC, HiGHS, GLPK, or a commercial solver on one model
+  - Export MPS or LP files for an external MIP solver
+  - Teach operations research with a small Python modeling API
