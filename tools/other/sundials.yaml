@@ -1,0 +1,22 @@
+name: SUNDIALS
+description: LLNL suite of nonlinear and differential/algebraic equation solvers. Simulation codes use CVODE, ARKODE, IDA, and KINSOL for adaptive ODE, DAE, and nonlinear algebraic systems on CPUs and GPUs.
+tagline: Suite of ODE, DAE, and nonlinear solvers from LLNL
+
+github_url: https://github.com/LLNL/sundials
+website_url: https://computing.llnl.gov/projects/sundials
+docs_url: https://sundials.readthedocs.io/
+
+category: Other
+tags: [c, hpc, ode, dae, scientific-computing, solvers, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Simulation codes need robust adaptive ODE and DAE integrators they can drop in. SUNDIALS is LLNL's BSD suite so teams can solve IVPs, DAEs, and nonlinear systems with CVODE, ARKODE, IDA, and KINSOL without writing a custom time stepper.
+
+use_cases:
+  - Integrate stiff ODE systems with CVODE or ARKODE
+  - Solve DAE initial-value problems with IDA
+  - Run nonlinear algebraic solves with KINSOL in a simulation loop
+  - Attach sensitivity analysis with CVODES or IDAS
