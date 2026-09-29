@@ -1,0 +1,24 @@
+name: SuiteSparse
+description: Suite of sparse matrix algorithms including CHOLMOD, UMFPACK, and GraphBLAS. Scientific and ML codes factor, solve, and multiply large sparse systems with Tim Davis's libraries.
+tagline: Sparse matrix algorithms including CHOLMOD and UMFPACK
+
+github_url: https://github.com/DrTimothyAldenDavis/SuiteSparse
+website_url: https://people.engr.tamu.edu/davis/suitesparse.html
+docs_url: https://people.engr.tamu.edu/davis/suitesparse.html
+
+install_command: brew install suite-sparse
+
+category: Other
+tags: [c, sparse-matrix, linear-algebra, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Large sparse linear systems need specialized factorizations, not a dense BLAS call. SuiteSparse ships CHOLMOD, UMFPACK, and GraphBLAS so scientific and ML codes can factor and solve sparse matrices without writing custom supernodal kernels.
+
+use_cases:
+  - Factor sparse symmetric systems with CHOLMOD in a FEM solver
+  - Solve unsymmetric sparse systems with UMFPACK
+  - Run GraphBLAS kernels for graph and sparse ML workloads
+  - Link SuiteSparse as the sparse backend in MATLAB or Julia
