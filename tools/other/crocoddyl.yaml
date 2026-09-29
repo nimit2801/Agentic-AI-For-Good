@@ -1,0 +1,24 @@
+name: Crocoddyl
+description: Optimal control library for robot motion under contact, based on differential dynamic programming. Teams plan whole-body trajectories with contacts for humanoids and manipulators using DDP-style solvers.
+tagline: Contact-aware optimal control for robots
+
+github_url: https://github.com/loco-3d/crocoddyl
+website_url: https://github.com/loco-3d/crocoddyl
+docs_url: https://github.com/loco-3d/crocoddyl
+
+install_command: pip install crocoddyl
+
+category: Other
+tags: [python, c++, robotics, optimal-control, ddp, locomotion, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Whole-body robot motion with contacts is hard to transcribe as a generic NLP. Crocoddyl implements DDP-style solvers for hybrid dynamics so locomotion teams can plan contact sequences and trajectories without a custom DDP stack.
+
+use_cases:
+  - Plan humanoid walking and jumping with contact sequences
+  - Optimize manipulator motions that make and break contacts
+  - Prototype MPC around a Crocoddyl DDP rollout
+  - Benchmark differential dynamic programming on robot models
