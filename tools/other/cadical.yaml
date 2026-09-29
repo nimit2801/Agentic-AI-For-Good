@@ -1,0 +1,21 @@
+name: CaDiCaL
+description: SAT solver from Armin Biere designed as a compact, well-documented CDCL engine. Verification and synthesis tools use CaDiCaL as an embeddable backend that solves CNF formulas with incremental SAT support.
+tagline: Compact CDCL SAT solver with incremental solving
+
+github_url: https://github.com/arminbiere/cadical
+docs_url: https://github.com/arminbiere/cadical
+
+category: Other
+tags: [sat, cdcl, verification, c++, theorem-prover, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Many SAT pipelines need a solver that is both competitive and easy to embed with incremental assumptions. CaDiCaL is Armin Biere's CDCL engine so verification tools can solve CNF formulas without a heavier SAT suite.
+
+use_cases:
+  - Solve SAT instances encoded as CNF from a verification pipeline
+  - Embed CaDiCaL as an incremental SAT backend in a synthesizer
+  - Benchmark CDCL performance against Kissat or MiniSat
+  - Check unsatisfiability of a hardware or software encoding
