@@ -1,0 +1,24 @@
+name: GStreamer
+description: Open-source multimedia framework for building graphs of audio, video, and streaming components. Teams decode, encode, mix, and stream media with plugins, including camera ingest and inference pipelines for vision AI.
+tagline: Plugin-based multimedia framework for audio and video
+
+github_url: https://github.com/GStreamer/gstreamer
+website_url: https://gstreamer.freedesktop.org
+docs_url: https://gstreamer.freedesktop.org/documentation/
+
+install_command: brew install gstreamer
+
+category: Other
+tags: [c, multimedia, video, audio, streaming, plugins, open-source]
+pricing: free
+is_open_source: true
+license: LGPL-2.1
+
+problem_solved: |
+  Media pipelines that mix cameras, codecs, and AI inference usually stitch proprietary SDKs. GStreamer composes decode, encode, mix, and stream as a plugin graph so vision and audio teams can ingest cameras, run filters, and output streams without rewriting a media stack.
+
+use_cases:
+  - Ingest RTSP or USB cameras into a vision inference pipeline
+  - Transcode and mux training video while applying filters in one graph
+  - Stream live audio and video with hardware-accelerated codecs
+  - Embed media playback and capture in desktop or embedded apps

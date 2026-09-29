@@ -1,0 +1,24 @@
+name: PyMeshLab
+description: Python interface to MeshLab that loads, filters, repairs, and exports triangle meshes from scripts. Teams apply MeshLab filters in batch so reconstructed or generated 3D assets can be cleaned inside dataset and training pipelines without opening the GUI.
+tagline: Python bindings for MeshLab mesh processing
+
+github_url: https://github.com/cnr-isti-vclab/PyMeshLab
+website_url: https://pymeshlab.readthedocs.io
+docs_url: https://pymeshlab.readthedocs.io
+
+install_command: pip install pymeshlab
+
+category: Other
+tags: [python, 3d, mesh, geometry, computer-vision, open-source]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  MeshLab's GUI cannot scale to thousands of reconstructed or generated meshes. PyMeshLab exposes the same filters as a Python library so dataset pipelines can load, repair, simplify, and export meshes in batch without a desktop session.
+
+use_cases:
+  - Batch-repair reconstructed meshes before they enter a 3D training set
+  - Apply MeshLab filters to generated geometry from 3D foundation models
+  - Convert and clean mesh formats inside a Python data pipeline
+  - Compute convex hulls, remeshes, and simplification as preprocessing steps

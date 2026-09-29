@@ -1,0 +1,24 @@
+name: PCL
+description: Point Cloud Library for 2D/3D image and point cloud processing. PCL filters, registers, segments, and visualizes LiDAR and RGB-D data used in robotics, mapping, and 3D perception pipelines.
+tagline: Open-source library for 3D point cloud processing
+
+github_url: https://github.com/PointCloudLibrary/pcl
+website_url: https://pointclouds.org/
+docs_url: https://pointcloudlibrary.github.io/documentation
+
+install_command: brew install pcl
+
+category: Other
+tags: [c++, 3d, point-cloud, lidar, robotics, computer-vision, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  LiDAR and RGB-D pipelines need filtering, registration, segmentation, and features on large point clouds. PCL is a modular BSD library so robotics and mapping teams can downsample, align, and segment clouds without assembling a custom 3D stack from scratch.
+
+use_cases:
+  - Filter and downsample LiDAR scans before mapping or detection
+  - Register successive point clouds with ICP for SLAM or reconstruction
+  - Segment planes and clusters from indoor RGB-D scenes
+  - Extract 3D features and keypoints for object recognition

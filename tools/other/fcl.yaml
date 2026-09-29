@@ -1,0 +1,24 @@
+name: FCL
+description: Flexible Collision Library for proximity, distance, and collision queries on meshes, primitives, and octrees. Robotics and simulation stacks use FCL to test contacts between geometric models at runtime.
+tagline: Collision and proximity queries for 3D geometry
+
+github_url: https://github.com/flexible-collision-library/fcl
+website_url: https://flexible-collision-library.github.io/
+docs_url: https://flexible-collision-library.github.io/
+
+install_command: brew install fcl
+
+category: Other
+tags: [c++, robotics, collision, geometry, simulation, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Robot motion planning and physics need fast collision and distance queries on mixed geometry. FCL answers proximity, contact, and continuous collision between meshes, primitives, and octrees so planners can reject invalid poses without writing a custom BVH stack.
+
+use_cases:
+  - Check robot arm self-collision and environment contacts during planning
+  - Compute minimum distance between meshes for grasp or assembly
+  - Run continuous collision detection along a trajectory
+  - Query octomap occupancy against a robot model in simulation
