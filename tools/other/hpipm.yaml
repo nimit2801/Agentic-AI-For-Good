@@ -1,0 +1,21 @@
+name: HPIPM
+description: High-performance interior-point method solvers for dense, optimal-control, and tree-structured convex QPs and QCQPs. Control teams use it for model predictive control and embedded optimization on top of BLASFEO linear algebra.
+tagline: Interior-point QP and QCQP solvers for MPC
+
+github_url: https://github.com/giaf/hpipm
+docs_url: https://github.com/giaf/hpipm/tree/master/doc
+
+category: Other
+tags: [c, python, mpc, optimization, qp, embedded, open-source]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Model predictive control needs small-to-medium QP solves that fit in an embedded loop. HPIPM is a BSD interior-point solver for dense, OCP, and tree QPs so control stacks can run structure-exploiting IPM without a generic QP library.
+
+use_cases:
+  - Solve OCP-structured QPs inside a model predictive controller
+  - Run dense QP and QCQP solves for embedded optimization
+  - Call HPIPM from C, Python, or MATLAB in a control stack
+  - Use tree-structured QPs for scenario or branched MPC
