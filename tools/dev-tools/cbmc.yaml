@@ -1,0 +1,23 @@
+name: CBMC
+description: C Bounded Model Checker for C, C++, and Java. Verification teams prove assertions, find buffer overflows, and check concurrency bugs by unrolling programs into SAT and SMT queries.
+tagline: Bounded model checker for C, C++, and Java
+
+github_url: https://github.com/diffblue/cbmc
+website_url: https://diffblue.github.io/cbmc
+docs_url: https://diffblue.github.io/cbmc
+install_command: brew install cbmc
+
+category: Dev Tools
+tags: [cpp, model-checking, verification, sat, smt, testing, open-source]
+pricing: free
+is_open_source: true
+license: BSD-4-Clause
+
+problem_solved: |
+  Memory-safety and assertion bugs in C and C++ are hard to catch with tests alone. CBMC is a bounded model checker so teams can unroll loops, encode programs as SAT or SMT queries, and prove or refute properties without running the binary.
+
+use_cases:
+  - Prove assertions and find buffer overflows in C programs
+  - Check concurrency bugs with bounded model checking
+  - Verify safety properties of embedded C firmware
+  - Integrate CBMC into a CI gate for memory-safety regressions

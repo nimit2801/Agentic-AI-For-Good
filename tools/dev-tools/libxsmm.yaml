@@ -1,0 +1,22 @@
+name: LIBXSMM
+description: Library for specialized dense and sparse matrix operations and deep-learning primitives. HPC and ML runtimes get just-in-time small-matrix kernels on x86 and Arm instead of calling a generic BLAS for tiny GEMMs.
+tagline: JIT small-matrix kernels for HPC and deep learning
+
+github_url: https://github.com/libxsmm/libxsmm
+website_url: https://libxsmm.readthedocs.io/
+docs_url: https://libxsmm.readthedocs.io/
+
+category: Dev Tools
+tags: [c, hpc, gemm, deep-learning, jit, x86, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Small GEMMs and sparse kernels in ML and HPC codes lose performance when they call a generic BLAS. LIBXSMM JIT-compiles specialized dense and sparse kernels so runtimes can hit peak on tiny matrix operations that vendor BLAS leaves on the table.
+
+use_cases:
+  - Accelerate small GEMMs in a deep-learning runtime
+  - JIT dense and sparse matrix kernels for HPC simulations
+  - Replace generic BLAS calls for tiny x86 or Arm matrix ops
+  - Build custom convolution and tensor primitives on LIBXSMM
