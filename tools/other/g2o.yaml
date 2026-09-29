@@ -1,0 +1,24 @@
+name: g2o
+description: Open-source C++ framework for graph-based nonlinear least squares, used for SLAM and bundle adjustment. Robotics and vision teams specify vertices and edges in a few lines and solve pose graphs with sparse linear algebra backends.
+tagline: Graph optimization framework for SLAM and BA
+
+github_url: https://github.com/RainerKuemmerle/g2o
+website_url: https://openslam-org.github.io/g2o.html
+docs_url: https://github.com/RainerKuemmerle/g2o#readme
+
+install_command: brew install g2o
+
+category: Other
+tags: [c++, optimization, slam, bundle-adjustment, robotics, computer-vision, open-source]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  SLAM and bundle adjustment are graph-structured nonlinear least squares problems that need sparse solvers and custom vertices. g2o is a C++ framework so teams can define pose-graph or BA problems in a few lines and reuse sparse backends instead of writing a custom optimizer.
+
+use_cases:
+  - Optimize a 2D or 3D pose graph from odometry and loop closures
+  - Run bundle adjustment on camera poses and 3D landmarks
+  - Embed g2o as the graph optimizer inside a visual SLAM stack
+  - Extend g2o with custom vertices and edges for a new residual

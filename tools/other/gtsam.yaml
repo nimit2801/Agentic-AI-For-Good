@@ -1,0 +1,24 @@
+name: GTSAM
+description: Georgia Tech C++ library for smoothing and mapping with factor graphs and Bayes nets. Robotics and vision teams use it for SLAM, bundle adjustment, and IMU fusion, with Python and MATLAB wrappers on top of the C++ core.
+tagline: Factor-graph library for SLAM and smoothing
+
+github_url: https://github.com/borglab/gtsam
+website_url: https://gtsam.org/
+docs_url: https://borglab.github.io/gtsam/
+
+install_command: pip install gtsam
+
+category: Other
+tags: [c++, python, slam, factor-graphs, robotics, computer-vision, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Robot localization and mapping need a sparse factor-graph optimizer, not dense matrix algebra. GTSAM models measurements as factors on manifolds so SLAM, visual-inertial odometry, and bundle adjustment share one incremental smoother with Python and MATLAB wrappers.
+
+use_cases:
+  - Build a visual or lidar SLAM backend on a factor graph
+  - Fuse IMU, GPS, and camera factors for visual-inertial odometry
+  - Run incremental smoothing and mapping from Python
+  - Linearize and solve pose-graph SLAM on SE(2) or SE(3)

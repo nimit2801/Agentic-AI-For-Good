@@ -1,0 +1,24 @@
+name: Ceres Solver
+description: Google C++ library for large-scale nonlinear least squares and unconstrained optimization. Computer-vision and robotics teams use it for bundle adjustment, pose-graph problems, and camera calibration with automatic differentiation.
+tagline: Large-scale C++ nonlinear least squares solver
+
+github_url: https://github.com/ceres-solver/ceres-solver
+website_url: http://ceres-solver.org/
+docs_url: http://ceres-solver.org/
+
+install_command: brew install ceres-solver
+
+category: Other
+tags: [c++, optimization, nonlinear-least-squares, bundle-adjustment, computer-vision, robotics, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Bundle adjustment and pose-graph problems need a production nonlinear least-squares solver with autodiff and sparse linear algebra. Ceres Solver is Google's C++ library so vision and robotics stacks can model residuals, add bounds, and solve large NLS problems without writing a custom minimizer.
+
+use_cases:
+  - Run bundle adjustment on large SfM reconstructions from C++
+  - Solve pose-graph or camera-calibration residuals with autodiff
+  - Fit nonlinear models with bounds-constrained least squares
+  - Embed Ceres as the NLS backend in a SLAM or photogrammetry pipeline
