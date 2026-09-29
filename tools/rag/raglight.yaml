@@ -1,0 +1,23 @@
+name: RAGLight
+description: Modular Python framework for retrieval-augmented generation. Swap LLMs, embeddings, and vector stores, then add MCP tools, hybrid search, and a REST serve mode without rewriting the retrieval pipeline.
+tagline: Modular RAG framework with MCP and hybrid search
+
+github_url: https://github.com/Bessouat40/RAGLight
+website_url: https://raglight.mintlify.app/
+docs_url: https://raglight.mintlify.app/
+install_command: pip install raglight
+
+category: RAG
+tags: [python, rag, retrieval, mcp, hybrid-search, embeddings, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Building a RAG stack usually means wiring an LLM, embedder, and vector store by hand, then repeating the work for MCP tools or hybrid search. RAGLight is a modular Python framework so teams can swap providers, add MCP, and serve a RAG API without rewriting the pipeline.
+
+use_cases:
+  - Chat with local documents using Ollama, Gemini, or OpenAI backends
+  - Swap embeddings and vector stores without rewriting retrieval code
+  - Add MCP tools and hybrid BM25 plus semantic search to a RAG app
+  - Deploy a RAG REST API with raglight serve or Docker Compose

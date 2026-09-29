@@ -1,0 +1,23 @@
+name: Turing.jl
+description: Julia probabilistic programming library for Bayesian inference. Researchers write generative models as ordinary Julia, then sample with HMC, NUTS, particle filters, and variational methods through a shared Turing interface.
+tagline: Bayesian inference with probabilistic programming in Julia
+
+github_url: https://github.com/TuringLang/Turing.jl
+website_url: https://turinglang.org
+docs_url: https://turinglang.org/docs/
+install_command: julia -e 'using Pkg; Pkg.add("Turing")'
+
+category: Other
+tags: [julia, probabilistic-programming, bayesian, mcmc, inference, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Bayesian models in Julia need a PPL that composes with the rest of the scientific stack, not a Python wrapper. Turing.jl lets researchers write generative models as ordinary Julia and swap HMC, NUTS, and variational inference without leaving the language.
+
+use_cases:
+  - Fit Bayesian models in Julia with NUTS or HMC sampling
+  - Combine Turing inference with DifferentialEquations.jl scientific models
+  - Prototype hierarchical models in notebooks and production Julia code
+  - Compare MCMC and variational inference on the same generative model

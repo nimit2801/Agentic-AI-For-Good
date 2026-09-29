@@ -1,0 +1,23 @@
+name: ForwardDiff.jl
+description: Forward-mode automatic differentiation for Julia. Compute gradients, Jacobians, and Hessians of native Julia functions with dual numbers, without tracing graphs or rewriting numerics in a tensor DSL.
+tagline: Forward-mode automatic differentiation for Julia
+
+github_url: https://github.com/JuliaDiff/ForwardDiff.jl
+website_url: https://juliadiff.org/ForwardDiff.jl/stable/
+docs_url: https://juliadiff.org/ForwardDiff.jl/stable/
+install_command: julia -e 'using Pkg; Pkg.add("ForwardDiff")'
+
+category: Other
+tags: [julia, automatic-differentiation, gradients, scientific-computing, dual-numbers, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Gradients of native Julia functions often mean a tracing AD framework or a rewrite in another language. ForwardDiff.jl uses dual numbers so scientific codes can get gradients, Jacobians, and Hessians of existing Julia functions without leaving the language.
+
+use_cases:
+  - Compute gradients of Julia objective functions for optimization
+  - Get Jacobians and Hessians of scientific kernels without a tracing graph
+  - Differentiate existing Julia numerics inside Flux or SciML models
+  - Teach forward-mode AD with dual numbers in Julia notebooks
