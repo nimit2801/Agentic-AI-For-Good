@@ -1,0 +1,22 @@
+name: Enzyme
+description: LLVM and MLIR plugin for high-performance automatic differentiation. Compilers and scientific codes get reverse-mode gradients of existing C++, Julia, or Rust functions without rewriting them in a tracing AD framework.
+tagline: LLVM plugin for reverse-mode automatic differentiation
+
+github_url: https://github.com/EnzymeAD/Enzyme
+website_url: https://enzyme.mit.edu
+docs_url: https://enzyme.mit.edu/getting_started/GettingStarted/
+
+category: Other
+tags: [llvm, mlir, automatic-differentiation, c++, julia, compilers, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Automatic differentiation of existing C++ and LLVM code usually means a tracing framework or a full rewrite. Enzyme is an LLVM plugin so compilers and scientific codes can get reverse-mode gradients of unmodified functions at compile time.
+
+use_cases:
+  - Differentiate existing C++ scientific kernels at LLVM compile time
+  - Get reverse-mode gradients of Julia or Rust code through Enzyme
+  - Embed Enzyme in a compiler pipeline that already emits LLVM IR
+  - Compare Enzyme AD with tracing frameworks on an HPC simulation
