@@ -1,0 +1,26 @@
+name: DimensionalData
+description: Named dimensions and lookup indices for Julia arrays. DimensionalData.jl is an xarray-style layer used by Rasters.jl so spatial and scientific arrays index by X, Y, or time instead of positional integers, with no-cost named abstractions.
+tagline: Named dimensions and lookups for Julia arrays
+
+github_url: https://github.com/rafaqz/DimensionalData.jl
+website_url: https://rafaqz.github.io/DimensionalData.jl/stable/
+docs_url: https://rafaqz.github.io/DimensionalData.jl/stable/
+install_command: julia -e 'using Pkg; Pkg.add("DimensionalData")'
+
+category: Data
+tags: [julia, named-dimensions, xarray, rasters, arrays, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Scientific Julia arrays are still indexed by integer position, so X versus
+  Y mix-ups are common. DimensionalData.jl adds named dims and lookups, in
+  the spirit of xarray, so Rasters.jl and similar stacks select by dimension
+  name without paying a runtime tax.
+
+use_cases:
+  - Build a DimArray with named X and Y dimensions and a sampled lookup
+  - Index a raster or time series by dimension name instead of axis order
+  - Share named-dimension arrays with Rasters.jl spatial workflows
+  - Plot or reduce along a named dim without tracking integer axis numbers

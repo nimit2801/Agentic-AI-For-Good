@@ -1,0 +1,26 @@
+name: Krylov
+description: Hand-picked Krylov methods for Julia linear systems. Krylov.jl solves Ax = b and least-squares problems with CG, GMRES, MINRES, LSQR, and related solvers so large sparse or matrix-free systems stay in Julia.
+tagline: CG, GMRES, and friends for Julia linear systems
+
+github_url: https://github.com/JuliaSmoothOptimizers/Krylov.jl
+website_url: https://juliasmoothoptimizers.github.io/Krylov.jl/stable
+docs_url: https://juliasmoothoptimizers.github.io/Krylov.jl/stable
+install_command: julia -e 'using Pkg; Pkg.add("Krylov")'
+
+category: Other
+tags: [julia, krylov, linear-algebra, sparse, iterative-solvers, open-source]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  Large sparse and matrix-free linear systems in Julia need a maintained
+  set of Krylov solvers, not a one-off CG. Krylov.jl implements CG, GMRES,
+  MINRES, LSQR, and related methods for square and least-squares problems
+  so SciML and optimization stacks can iterate without assembling A.
+
+use_cases:
+  - Solve a sparse square system with CG, GMRES, or MINRES in Julia
+  - Run LSQR or similar Krylov methods on a least-squares problem
+  - Iterate on a matrix-free operator without assembling a dense A
+  - Swap Krylov algorithms in a SciML or optimization linear solve

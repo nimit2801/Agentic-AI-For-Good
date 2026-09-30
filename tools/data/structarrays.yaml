@@ -1,0 +1,26 @@
+name: StructArrays
+description: Arrays of structs stored as a struct of arrays in Julia. StructArray keeps one array per field so columnar access, GPU kernels, and broadcasting stay cache-friendly without changing the element-wise API.
+tagline: Struct-of-arrays layout with an array-of-structs API
+
+github_url: https://github.com/JuliaArrays/StructArrays.jl
+website_url: https://juliaarrays.github.io/StructArrays.jl/stable
+docs_url: https://juliaarrays.github.io/StructArrays.jl/stable
+install_command: julia -e 'using Pkg; Pkg.add("StructArrays")'
+
+category: Data
+tags: [julia, struct-of-arrays, arrays, gpu, columnar, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  An array of Julia structs packs fields together per element, which hurts
+  cache locality when a kernel only needs one field. StructArrays.jl stores
+  each field in its own array while still indexing like an array of structs,
+  so GPU and numeric code can stay columnar.
+
+use_cases:
+  - Store particles or records as a StructArray for field-wise GPU kernels
+  - Broadcast over one struct field without gathering a dense array of structs
+  - Convert between array-of-structs and struct-of-arrays layouts in Julia
+  - Keep named fields while iterating like a regular AbstractArray

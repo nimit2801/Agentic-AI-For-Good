@@ -1,0 +1,26 @@
+name: LazyArrays
+description: Lazy array operations and linear algebra in Julia. LazyArrays.jl defers vcat, hcat, and multiplication until materialize so matrix-free iterative solvers compose operators without allocating every intermediate.
+tagline: Lazy vcat, hcat, and matmul for Julia linear algebra
+
+github_url: https://github.com/JuliaArrays/LazyArrays.jl
+website_url: https://juliaarrays.github.io/LazyArrays.jl/dev
+docs_url: https://juliaarrays.github.io/LazyArrays.jl/dev
+install_command: julia -e 'using Pkg; Pkg.add("LazyArrays")'
+
+category: Data
+tags: [julia, lazy-evaluation, linear-algebra, matrix-free, arrays, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Chaining vcat, hcat, and matmul in Julia allocates every intermediate.
+  Matrix-free solvers need the operator graph, not the dense product.
+  LazyArrays.jl wraps applied(f, ...) and @~ so copyto! and broadcasting
+  run on the lazy form until materialize.
+
+use_cases:
+  - Represent a block operator as lazy vcat/hcat without assembling it
+  - Feed a matrix-free iterative solver a lazy multiplication
+  - Defer exp or similar calls with applied until materialize
+  - Broadcast over a lazy array faster than the eager Base analogue
