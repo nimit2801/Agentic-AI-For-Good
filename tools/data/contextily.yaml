@@ -1,0 +1,26 @@
+name: contextily
+description: Python library that adds basemap tiles under GeoPandas plots. contextily pulls OpenStreetMap, Stamen, and other XYZ tiles so choropleths and point maps of training data or model predictions sit on real geography instead of a blank matplotlib canvas.
+tagline: Basemap tiles for GeoPandas and matplotlib maps
+
+github_url: https://github.com/geopandas/contextily
+website_url: https://contextily.readthedocs.io
+docs_url: https://contextily.readthedocs.io/en/latest/
+install_command: pip install contextily
+
+category: Data
+tags: [python, geospatial, geopandas, basemap, tiles, matplotlib, osm]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  GeoPandas plots geometries on a blank axes unless you add a basemap yourself.
+  contextily fetches XYZ tiles, aligns them to the GeoDataFrame CRS, and draws
+  them under matplotlib artists so spatial EDA and model-error maps show streets
+  and terrain without a separate GIS app.
+
+use_cases:
+  - Add an OpenStreetMap basemap under a GeoPandas choropleth of model errors
+  - Align XYZ tiles to a projected GeoDataFrame before matplotlib export
+  - Download a static tile crop for a bounding box used in spatial training data
+  - Compare predicted vs actual locations on a street map in a notebook

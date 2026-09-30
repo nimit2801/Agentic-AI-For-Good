@@ -1,0 +1,26 @@
+name: NetworKit
+description: Open-source toolkit for large-scale network analysis. NetworKit combines a C++ core with a Python API for community detection, centrality, graph generators, and streaming algorithms on graphs that are too large for NetworkX in-memory workflows.
+tagline: Large-scale network analysis with a Python API
+
+github_url: https://github.com/networkit/networkit
+website_url: https://networkit.github.io
+docs_url: https://networkit.github.io/dev-docs/index.html
+install_command: pip install networkit
+
+category: Data
+tags: [python, graph, network-analysis, centrality, community-detection, cpp, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  NetworkX is convenient but struggles on graphs with tens of millions of edges.
+  NetworKit runs community detection, centrality, and generators in a parallel C++
+  core with a Python API, so ML feature pipelines can analyze large social,
+  citation, or knowledge graphs without leaving Python.
+
+use_cases:
+  - Compute PageRank and betweenness on graphs too large for NetworkX
+  - Detect communities in citation or social graphs for graph ML features
+  - Generate synthetic large graphs for GNN training benchmarks
+  - Stream graph algorithms over evolving network snapshots
