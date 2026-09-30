@@ -1,0 +1,26 @@
+name: h5py
+description: Pythonic interface to the HDF5 binary format. h5py maps groups and datasets to NumPy-like objects so ML and scientific pipelines can stream chunked, compressed arrays from disk without loading an entire file into memory.
+tagline: HDF5 for Python, NumPy-style arrays on disk
+
+github_url: https://github.com/h5py/h5py
+website_url: https://www.h5py.org/
+docs_url: https://docs.h5py.org/en/stable/
+install_command: pip install h5py
+
+category: Data
+tags: [python, hdf5, numpy, scientific-data, arrays, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Training and scientific datasets outgrow pickle and npy dumps, and you
+  still need partial reads and compression. HDF5 is the on-disk format;
+  h5py is the Python API that maps groups and datasets to NumPy so pipelines
+  can stream chunks instead of loading the whole file.
+
+use_cases:
+  - Store large NumPy training arrays in a chunked HDF5 file
+  - Stream a slice of a terabyte scientific dataset without full load
+  - Attach metadata attributes to HDF5 groups in an experiment dump
+  - Share portable HDF5 files between Python, C++, and MATLAB pipelines
