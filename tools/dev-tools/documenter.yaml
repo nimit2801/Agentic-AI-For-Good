@@ -1,0 +1,26 @@
+name: Documenter
+description: Documentation generator for Julia packages. Documenter.jl turns docstrings and markdown into versioned HTML so SciML and ML libraries ship API docs from CI without a separate Sphinx or MkDocs stack.
+tagline: Documentation generator for Julia packages
+
+github_url: https://github.com/JuliaDocs/Documenter.jl
+website_url: https://documenter.juliadocs.org
+docs_url: https://documenter.juliadocs.org
+install_command: julia -e 'using Pkg; Pkg.add("Documenter")'
+
+category: Dev Tools
+tags: [julia, documentation, docs, ci, markdown, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Julia packages cannot lean on Sphinx the way Python libraries do, so docs
+  often lag the code. Documenter.jl builds HTML from Julia docstrings and
+  markdown, runs doctests, and publishes versioned sites from CI so ML and
+  SciML libraries keep API docs in the same repo as the package.
+
+use_cases:
+  - Generate HTML API docs from Julia docstrings and markdown
+  - Run doctests in CI so documented examples stay executable
+  - Publish versioned package docs to GitHub Pages
+  - Document a Julia ML library without a Sphinx or MkDocs toolchain

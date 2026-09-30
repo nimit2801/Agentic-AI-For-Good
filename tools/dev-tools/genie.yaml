@@ -1,0 +1,26 @@
+name: Genie
+description: Julia web framework for APIs, dashboards, and full-stack apps. Genie.jl adds MVC routing, HTML and JSON rendering, and database plugins so ML teams serve Julia models over HTTP without leaving the language.
+tagline: Productive Julia web framework for APIs and dashboards
+
+github_url: https://github.com/GenieFramework/Genie.jl
+website_url: https://genieframework.com
+docs_url: https://learn.genieframework.com/docs/guides
+install_command: julia -e 'using Pkg; Pkg.add("Genie")'
+
+category: Dev Tools
+tags: [julia, web-framework, api, mvc, dashboards, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Serving a Julia model usually means wrapping it in Flask or FastAPI, which
+  splits the stack across languages. Genie.jl is a Julia web framework with
+  routing, HTML and JSON rendering, and auth plugins so ML teams ship HTTP
+  APIs and data dashboards without leaving Julia.
+
+use_cases:
+  - Serve a Julia ML model as a JSON HTTP API
+  - Build an interactive data dashboard around SciML or Flux results
+  - Add database-backed auth to a restricted Julia web app
+  - Prototype full-stack Julia apps with MVC routing and HTML templates
