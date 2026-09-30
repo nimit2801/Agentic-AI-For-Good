@@ -1,0 +1,23 @@
+name: Knet
+description: Koç University deep learning framework for Julia. Knet trains models written as ordinary Julia code with dynamic graphs, GPU support, and automatic differentiation so researchers can define layers and losses without a separate tensor language.
+tagline: Deep learning in plain Julia from Koç University
+
+github_url: https://github.com/denizyuret/Knet.jl
+website_url: https://denizyuret.github.io/Knet.jl/latest
+docs_url: https://denizyuret.github.io/Knet.jl/latest
+install_command: julia -e 'using Pkg; Pkg.add("Knet")'
+
+category: Other
+tags: [julia, deep-learning, gpu, automatic-differentiation, neural-networks, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Early Julia ML work needed a framework that treated models as ordinary Julia rather than a tensor DSL. Knet provides GPU kernels and dynamic-graph autodiff so researchers can write layers, losses, and training loops in Julia and run them on GPU.
+
+use_cases:
+  - Train convolutional networks such as LeNet on MNIST in Julia
+  - Define custom layers as Julia structs with GPU-backed parameters
+  - Prototype sequence and attention models with dynamic computational graphs
+  - Teach deep learning with a small Julia codebase instead of a Python stack

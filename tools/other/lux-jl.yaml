@@ -1,0 +1,23 @@
+name: Lux.jl
+description: Elegant and performant deep learning library for Julia. Lux.jl keeps parameters explicit, works with SciML and Enzyme, and compiles models through Reactant and XLA so researchers can train neural networks with Julia's type system instead of a hidden state bag.
+tagline: Explicit, XLA-ready deep learning in Julia
+
+github_url: https://github.com/LuxDL/Lux.jl
+website_url: https://lux.csail.mit.edu/
+docs_url: https://lux.csail.mit.edu/stable/
+install_command: julia -e 'using Pkg; Pkg.add("Lux")'
+
+category: Other
+tags: [julia, deep-learning, neural-networks, scientific-machine-learning, gpu, xla, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Implicit parameter bags make scientific ML models hard to differentiate, serialize, and compile. Lux.jl stores weights as explicit trees, so SciML solvers, Enzyme, and XLA can train neural networks without a hidden Flux-style state.
+
+use_cases:
+  - Train neural networks in Julia with explicit parameter and state trees
+  - Couple Lux layers with SciML differential equation solvers
+  - Compile models through Reactant and XLA for GPU and TPU training
+  - Differentiate scientific models with Enzyme instead of a tape-based AD runtime

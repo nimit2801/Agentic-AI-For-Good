@@ -1,0 +1,23 @@
+name: AlgebraOfGraphics
+description: Algebraic grammar-of-graphics plotting for Julia, built on Makie. AlgebraOfGraphics.jl composes data, mappings, and layers with + and * so scientists can build statistical visualizations without leaving the Julia stack.
+tagline: Grammar of graphics for Makie in Julia
+
+github_url: https://github.com/MakieOrg/AlgebraOfGraphics.jl
+website_url: https://aog.makie.org
+docs_url: https://aog.makie.org/stable
+install_command: julia -e 'using Pkg; Pkg.add("AlgebraOfGraphics")'
+
+category: Other
+tags: [julia, visualization, grammar-of-graphics, makie, plotting, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Statistical plots in Julia often mean dropping into ggplot2 or assembling Makie primitives by hand. AlgebraOfGraphics.jl composes data, mappings, and layers algebraically on top of Makie so researchers can build faceted, themed figures in Julia.
+
+use_cases:
+  - Build layered statistical plots from data, mapping, and visual specs
+  - Facet scientific figures by category with algebraic composition
+  - Produce publication plots on CairoMakie without leaving Julia
+  - Combine regression overlays with scatter layers using + and *
