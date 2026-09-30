@@ -1,0 +1,27 @@
+name: pydicom
+description: Pure-Python library for reading, modifying, and writing DICOM medical imaging files. pydicom exposes datasets, tags, and pixel data as Python objects so radiology and ML pipelines can ingest hospital scans without a vendor SDK.
+tagline: Read and write DICOM files in pure Python
+
+github_url: https://github.com/pydicom/pydicom
+website_url: https://pydicom.github.io/pydicom
+docs_url: https://pydicom.github.io/pydicom
+install_command: pip install pydicom
+
+category: Data
+tags: [python, dicom, medical-imaging, healthcare, radiology, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Hospital imaging is stored as DICOM, a nested binary format that generic
+  image loaders cannot parse. Vendor SDKs lock teams to one PACS. pydicom
+  reads and writes DICOM datasets in pure Python so ML and radiology
+  pipelines can extract pixels, tags, and metadata without a proprietary
+  toolkit.
+
+use_cases:
+  - Load DICOM CT or MRI series into NumPy arrays for model training
+  - Anonymize patient tags before sharing a research imaging dataset
+  - Write derived DICOM series from a segmentation or reconstruction job
+  - Inspect DICOM metadata without opening a clinical viewer

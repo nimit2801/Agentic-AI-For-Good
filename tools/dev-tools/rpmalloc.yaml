@@ -1,0 +1,23 @@
+name: rpmalloc
+description: Public-domain lock-free thread-caching allocator in C with 16-byte alignment. rpmalloc is a tiny drop-in malloc for games and native runtimes that need predictable latency without the weight of jemalloc or tcmalloc.
+tagline: Tiny lock-free thread-caching malloc in C
+
+github_url: https://github.com/mjansson/rpmalloc
+
+category: Dev Tools
+tags: [c, allocator, memory, lock-free, performance, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Games and native ML runtimes need a tiny, lock-free malloc with stable
+  latency. Full allocators like jemalloc are large to embed. rpmalloc is a
+  public-domain thread-caching allocator with 16-byte alignment so C
+  codebases can swap malloc without pulling in a heavy heap.
+
+use_cases:
+  - Drop rpmalloc into a C game or simulation engine for lower latency
+  - Embed a small thread-caching allocator in a native ML extension
+  - Replace system malloc in a lock-sensitive multi-threaded runtime
+  - Align allocations to 16 bytes for SIMD-heavy numerical kernels

@@ -1,0 +1,26 @@
+name: PyTables
+description: Python package for hierarchical datasets on top of HDF5. PyTables adds typed tables, indexing, and out-of-core queries so scientific and ML pipelines can store billions of rows and filter them without pulling the whole file into RAM.
+tagline: Hierarchical HDF5 tables for huge Python datasets
+
+github_url: https://github.com/PyTables/PyTables
+website_url: http://www.pytables.org
+docs_url: http://www.pytables.org
+install_command: pip install tables
+
+category: Data
+tags: [python, hdf5, tables, scientific-data, out-of-core, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Huge tabular scientific datasets do not fit in pandas RAM, and raw HDF5
+  is too low-level for typed rows and queries. PyTables layers tables,
+  indexes, and out-of-core filters on HDF5 so pipelines can store billions
+  of rows and select them without loading the file.
+
+use_cases:
+  - Store a multi-billion-row experiment log as a typed HDF5 table
+  - Query a subset of columns out of core instead of loading pandas
+  - Index scientific time-series tables for fast range filters
+  - Compress hierarchical datasets while keeping NumPy-friendly access

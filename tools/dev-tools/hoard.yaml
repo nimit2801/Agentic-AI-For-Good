@@ -1,0 +1,25 @@
+name: Hoard
+description: Fast, scalable, memory-efficient malloc for Linux, Windows, and macOS. Hoard avoids false sharing and heap blowup across threads so C and C++ services keep RSS bounded when many cores allocate at once.
+tagline: Scalable multi-threaded malloc for Linux, Windows, and Mac
+
+github_url: https://github.com/emeryberger/Hoard
+website_url: http://www.hoard.org
+docs_url: http://www.hoard.org
+
+category: Dev Tools
+tags: [cpp, allocator, memory, performance, concurrency, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Multi-threaded C++ programs blow up RSS and fight false sharing on the
+  system allocator. Hoard is a drop-in malloc designed to scale across
+  cores and keep per-thread heaps from leaking into each other, so
+  long-running services stay memory-efficient on Linux, Windows, and macOS.
+
+use_cases:
+  - LD_PRELOAD Hoard into a multi-threaded C++ backend on Linux
+  - Cut false sharing in a many-core allocation-heavy runtime
+  - Bound RSS growth versus glibc malloc under thread churn
+  - Use one allocator across Linux, Windows, and macOS native builds
