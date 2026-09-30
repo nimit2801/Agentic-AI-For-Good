@@ -1,0 +1,26 @@
+name: MixedModels
+description: Mixed-effects models for Julia, in the spirit of R's lme4. MixedModels.jl fits linear and generalized linear mixed models with random effects so hierarchical experiment data and longitudinal studies can be modeled without leaving Julia.
+tagline: Mixed-effects models for Julia
+
+github_url: https://github.com/JuliaStats/MixedModels.jl
+website_url: https://juliastats.org/MixedModels.jl/stable
+docs_url: https://juliastats.org/MixedModels.jl/stable
+install_command: julia -e 'using Pkg; Pkg.add("MixedModels")'
+
+category: Data
+tags: [julia, statistics, mixed-models, lme4, hierarchical, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Hierarchical experiment data and longitudinal studies need random
+  effects, not ordinary least squares. MixedModels.jl fits linear and
+  generalized linear mixed models in Julia with lme4-style formulas so
+  researchers can model grouped measurements without exporting to R.
+
+use_cases:
+  - Fit linear mixed models on grouped experiment or A/B test data
+  - Model longitudinal measurements with subject-level random effects
+  - Run generalized linear mixed models for binary or count outcomes
+  - Compare nested mixed-model specifications in a Julia stats workflow

@@ -1,0 +1,26 @@
+name: TimerOutputs
+description: Nested section timers with formatted tables for Julia code. TimerOutputs.jl records wall time and allocations per labeled block so you can profile training loops, solvers, and data pipelines without a full sampling profiler.
+tagline: Formatted nested timers for Julia code
+
+github_url: https://github.com/KristofferC/TimerOutputs.jl
+website_url: https://github.com/KristofferC/TimerOutputs.jl
+docs_url: https://github.com/KristofferC/TimerOutputs.jl
+install_command: julia -e 'using Pkg; Pkg.add("TimerOutputs")'
+
+category: Dev Tools
+tags: [julia, profiling, timing, performance, allocations, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Finding which Julia block burns wall time or allocations usually means
+  wiring a full profiler. TimerOutputs.jl lets you label nested sections
+  and print a formatted table of time and memory so training loops and
+  solvers can be compared section-by-section from a single run.
+
+use_cases:
+  - Time nested stages of a Julia training or inference loop
+  - Compare allocation cost of solver phases after a code change
+  - Print a formatted timing table at the end of a data pipeline
+  - Instrument scientific simulations without attaching a sampling profiler

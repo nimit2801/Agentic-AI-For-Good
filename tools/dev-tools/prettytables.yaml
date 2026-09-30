@@ -1,0 +1,26 @@
+name: PrettyTables
+description: Multi-backend formatted tables for Julia data. PrettyTables.jl renders matrices and tables as text, HTML, LaTeX, Markdown, Typst, Excel, or Word so notebooks, papers, and CLIs can share one table API instead of ad-hoc print formatting.
+tagline: Formatted tables for Julia across text, HTML, and LaTeX
+
+github_url: https://github.com/ronisbr/PrettyTables.jl
+website_url: https://ronisbr.github.io/PrettyTables.jl/stable/
+docs_url: https://ronisbr.github.io/PrettyTables.jl/stable/
+install_command: julia -e 'using Pkg; Pkg.add("PrettyTables")'
+
+category: Dev Tools
+tags: [julia, tables, formatting, html, latex, markdown, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Julia notebooks, papers, and CLIs each need a different table format,
+  so teams copy-paste print logic per backend. PrettyTables.jl prints the
+  same matrix or DataFrame as text, HTML, LaTeX, Markdown, Typst, Excel,
+  or Word so eval metrics and experiment tables stay consistent.
+
+use_cases:
+  - Print model metrics as aligned text tables in a Julia REPL
+  - Export experiment comparison tables to LaTeX for a paper
+  - Render HTML tables from DataFrames in Pluto or Jupyter
+  - Write eval results to Excel or Markdown from a Julia script
