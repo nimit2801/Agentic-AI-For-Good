@@ -1,0 +1,23 @@
+name: Metal.jl
+description: Native Metal programming for Julia on Apple GPUs. Metal.jl compiles Julia kernels to Apple silicon, wraps the Metal framework, and provides GPU arrays so scientific and ML codes can run on Mac GPUs without leaving Julia.
+tagline: Metal GPU programming in Julia
+
+github_url: https://github.com/JuliaGPU/Metal.jl
+website_url: https://metal.juliagpu.org/stable/
+docs_url: https://metal.juliagpu.org/stable/
+install_command: julia -e 'using Pkg; Pkg.add("Metal")'
+
+category: Other
+tags: [julia, gpu, metal, apple-silicon, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Apple GPU work in Julia used to mean wrapping Metal C++ or skipping the Mac entirely. Metal.jl compiles Julia functions to Apple silicon GPUs and ships array APIs, so researchers can prototype scientific and ML kernels on M-series Macs in one language.
+
+use_cases:
+  - Write and launch Metal kernels directly in Julia on Apple silicon
+  - Accelerate array computations on Mac GPUs with MtlArray
+  - Port CUDA.jl-style scientific kernels to Apple GPUs
+  - Prototype ML GPU code on a laptop without an NVIDIA card

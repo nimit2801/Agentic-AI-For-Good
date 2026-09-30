@@ -1,0 +1,23 @@
+name: StatsBase
+description: Basic statistics for Julia. StatsBase.jl implements ranking, sampling, covariances, empirical densities, and scalar statistics so data and ML pipelines can compute summary stats without pulling in a full modeling stack.
+tagline: Core statistics primitives for Julia
+
+github_url: https://github.com/JuliaStats/StatsBase.jl
+website_url: https://juliastats.org/StatsBase.jl/stable/
+docs_url: https://juliastats.org/StatsBase.jl/stable/
+install_command: julia -e 'using Pkg; Pkg.add("StatsBase")'
+
+category: Data
+tags: [julia, statistics, sampling, data-analysis, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Julia Base covers means and sums, but data pipelines still need ranking, weighted sampling, covariances, and empirical densities. StatsBase.jl is the shared statistics layer so ML and scientific code can compute those summaries without a heavier modeling package.
+
+use_cases:
+  - Compute weighted means, quantiles, and other scalar statistics in Julia
+  - Sample from empirical populations for bootstrap and resampling
+  - Estimate covariances and correlations for feature analysis
+  - Rank observations and build empirical density estimates
