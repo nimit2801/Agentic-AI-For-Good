@@ -1,0 +1,23 @@
+name: GPUArrays
+description: Shared GPU array interface for Julia backends. GPUArrays.jl implements broadcasting, mapreduce, and sparse layouts so CUDA.jl, AMDGPU.jl, oneAPI.jl, and Metal.jl can reuse one AbstractArray stack instead of rewriting GPU array code per vendor.
+tagline: Shared GPU array interface for Julia backends
+
+github_url: https://github.com/JuliaGPU/GPUArrays.jl
+website_url: https://juliagpu.github.io/GPUArrays.jl/stable/
+docs_url: https://juliagpu.github.io/GPUArrays.jl/stable/
+install_command: julia -e 'using Pkg; Pkg.add("GPUArrays")'
+
+category: Other
+tags: [julia, gpu, arrays, cuda, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Each Julia GPU backend would otherwise reimplement broadcasting, reductions, and sparse layouts. GPUArrays.jl is the shared AbstractArray layer so CUDA.jl, AMDGPU.jl, oneAPI.jl, and Metal.jl can ship vendor arrays without duplicating the GPU array stack.
+
+use_cases:
+  - Implement a new Julia GPU backend on a shared array interface
+  - Reuse broadcasting and mapreduce across CUDA, ROCm, oneAPI, and Metal
+  - Provide device-side sparse CSC, CSR, COO, and BSR arrays for GPU code
+  - Test GPU array algorithms on the CPU JLArrays reference backend

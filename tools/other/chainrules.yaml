@@ -1,0 +1,23 @@
+name: ChainRules
+description: Forward- and reverse-mode AD primitives for Julia Base and the standard library. ChainRules.jl lets Zygote, Diffractor, and other AD systems share rrules and frules so package authors add gradients once without coupling to a single autodiff backend.
+tagline: Shared AD rules for Julia, independent of the backend
+
+github_url: https://github.com/JuliaDiff/ChainRules.jl
+website_url: https://juliadiff.org/ChainRulesCore.jl/stable
+docs_url: https://juliadiff.org/ChainRulesCore.jl/stable
+install_command: julia -e 'using Pkg; Pkg.add("ChainRules")'
+
+category: Other
+tags: [julia, automatic-differentiation, chain-rules, reverse-mode, forward-mode, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Every Julia AD system used to ship its own derivative table for Base and stdlib. ChainRules.jl defines shared frules and rrules so Zygote, Diffractor, and custom AD tools reuse one primitive set, and packages add rules without depending on a specific backend.
+
+use_cases:
+  - Add rrules and frules for a Julia package without depending on Zygote
+  - Differentiate Julia Base and stdlib functions through a shared rule set
+  - Mix forward- and reverse-mode primitives in a downstream AD system
+  - Test custom AD rules with ChainRulesTestUtils before shipping a package

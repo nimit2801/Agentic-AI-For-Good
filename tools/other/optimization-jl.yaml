@@ -1,0 +1,23 @@
+name: Optimization.jl
+description: Unified mathematical optimization interface for Julia from SciML. Optimization.jl wraps local, global, gradient, derivative-free, convex, and mixed-integer solvers behind one differentiable API so scientific ML codes can swap optimizers without rewriting the problem.
+tagline: One Julia API for local, global, and ML optimizers
+
+github_url: https://github.com/SciML/Optimization.jl
+website_url: https://docs.sciml.ai/Optimization/stable/
+docs_url: https://docs.sciml.ai/Optimization/stable/
+install_command: julia -e 'using Pkg; Pkg.add("Optimization")'
+
+category: Other
+tags: [julia, optimization, sciml, automatic-differentiation, scientific-machine-learning, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Julia optimization is split across Optim, NLopt, Ipopt, evolutionary solvers, and ML optimizers with different APIs. Optimization.jl unifies them behind one differentiable problem type so SciML and ML codes can swap solvers without rewriting the model.
+
+use_cases:
+  - Fit scientific model parameters with L-BFGS, Ipopt, or evolutionary solvers
+  - Train neural networks through the same API as classical nonlinear optimization
+  - Run global search then refine locally without changing the problem definition
+  - Differentiate optimization problems with ForwardDiff, Zygote, or Enzyme
