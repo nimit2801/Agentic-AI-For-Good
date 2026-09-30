@@ -1,0 +1,23 @@
+name: ReverseDiff
+description: Tape-based reverse-mode automatic differentiation for Julia. ReverseDiff.jl records native Julia functions onto a compileable tape so scientific and ML code can take gradients, Jacobians, and Hessians without a tracing graph framework.
+tagline: Compileable reverse-mode AD tapes for Julia
+
+github_url: https://github.com/JuliaDiff/ReverseDiff.jl
+website_url: https://juliadiff.org/ReverseDiff.jl/stable
+docs_url: https://juliadiff.org/ReverseDiff.jl/stable
+install_command: julia -e 'using Pkg; Pkg.add("ReverseDiff")'
+
+category: Other
+tags: [julia, automatic-differentiation, reverse-mode, gradients, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Reverse-mode AD of native Julia often means a tracing system that is hard to compile and reuse. ReverseDiff.jl records a tape that can be compiled and replayed, so scientific objectives get gradients, Jacobians, and Hessians of loops and control flow.
+
+use_cases:
+  - Compute gradients of Julia objective functions for optimization
+  - Compile and reuse AD tapes across many evaluations of the same model
+  - Get Jacobians and Hessians of scientific kernels with reverse-mode AD
+  - Differentiate Julia functions that use loops, recursion, and control flow

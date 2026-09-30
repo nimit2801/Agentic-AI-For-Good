@@ -1,0 +1,23 @@
+name: BenchmarkTools
+description: Benchmarking framework for Julia. BenchmarkTools.jl times functions with @btime and @benchmark, groups results, and compares runs so scientific and ML developers can track performance without noisy one-shot timings.
+tagline: Reliable microbenchmarks for Julia code
+
+github_url: https://github.com/JuliaCI/BenchmarkTools.jl
+website_url: https://juliaci.github.io/BenchmarkTools.jl/stable
+docs_url: https://juliaci.github.io/BenchmarkTools.jl/stable
+install_command: julia -e 'using Pkg; Pkg.add("BenchmarkTools")'
+
+category: Dev Tools
+tags: [julia, benchmarking, performance, developer-tools, ci, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Naive Julia timings mix compilation, GC, and noise, so performance claims do not stick. BenchmarkTools.jl warms up, samples, and groups measurements so scientific and ML developers can compare kernels and track regressions with stable statistics.
+
+use_cases:
+  - Time Julia kernels with @btime after warmup and multiple samples
+  - Group related benchmarks and compare results across git revisions
+  - Track performance of scientific and ML inner loops in CI
+  - Tune allocations and runtime of GPU or AD-heavy Julia code
