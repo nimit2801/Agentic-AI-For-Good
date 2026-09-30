@@ -1,0 +1,26 @@
+name: leafmap
+description: Python package for interactive mapping and geospatial analysis in Jupyter with minimal code. leafmap wraps Folium, ipyleaflet, and whitebox tools so notebooks can add basemaps, vector layers, and raster analysis without a heavy GIS stack.
+tagline: Interactive geospatial maps in Jupyter with minimal code
+
+github_url: https://github.com/opengeos/leafmap
+website_url: https://leafmap.org
+docs_url: https://leafmap.org
+install_command: pip install leafmap
+
+category: Data
+tags: [python, geospatial, jupyter, mapping, folium, raster, vector]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Building an interactive map in Jupyter usually means wiring Folium, ipyleaflet,
+  and raster helpers by hand. leafmap gives one high-level API for basemaps,
+  vector overlays, and whitebox analysis so spatial EDA and model-error maps
+  stay in a notebook instead of a desktop GIS.
+
+use_cases:
+  - Plot GeoDataFrames on an interactive Jupyter map with one call
+  - Overlay model predictions on XYZ basemaps for spatial error review
+  - Run whitebox raster hydrology tools from a notebook
+  - Split-map compare before and after a land-cover classifier

@@ -1,0 +1,26 @@
+name: geopy
+description: Python client for several popular geocoding web services. geopy turns addresses into coordinates and back through Nominatim, Google, Bing, and others, so ML feature pipelines can geocode user locations without vendor-specific HTTP clients.
+tagline: Geocoding library for Python
+
+github_url: https://github.com/geopy/geopy
+website_url: https://geopy.readthedocs.io
+docs_url: https://geopy.readthedocs.io
+install_command: pip install geopy
+
+category: Data
+tags: [python, geocoding, geospatial, nominatim, google-maps, coordinates]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Address-to-coordinate lookups differ across Nominatim, Google, and Bing APIs.
+  geopy wraps those geocoders behind one Python interface with rate limiting and
+  distance helpers, so feature stores and RAG location filters geocode without
+  a custom HTTP client per provider.
+
+use_cases:
+  - Geocode user addresses to lat/lon features for a training table
+  - Reverse-geocode GPS points from a mobile dataset into city names
+  - Swap Nominatim and Google geocoders behind one Python API
+  - Compute geodesic distance between predicted and actual locations
