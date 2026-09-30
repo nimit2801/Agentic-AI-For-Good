@@ -1,0 +1,23 @@
+name: Cryptol
+description: Domain-specific language for specifying and verifying cryptographic algorithms. Security teams write bit-precise specs, prove equivalence of implementations, and generate test vectors without leaving a Haskell-hosted toolchain.
+tagline: Domain-specific language for cryptographic algorithms
+
+github_url: https://github.com/GaloisInc/cryptol
+website_url: https://galoisinc.github.io/cryptol/master/RefMan.html
+docs_url: https://galoisinc.github.io/cryptol/master/RefMan.html
+install_command: brew install cryptol
+
+category: Other
+tags: [haskell, cryptography, formal-methods, dsl, verification, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Cryptographic algorithms are specified in papers and reimplemented in C, where bit-level mismatches hide for years. Cryptol is a DSL so security teams can write bit-precise specs, prove implementations equivalent, and generate test vectors from one source.
+
+use_cases:
+  - Specify AES, SHA, or custom ciphers as bit-precise Cryptol programs
+  - Prove equivalence of a reference spec and a production implementation
+  - Generate test vectors for hardware or software crypto modules
+  - Teach cryptographic algorithm design with an executable spec language

@@ -1,0 +1,22 @@
+name: CompCert
+description: Formally verified C compiler whose compilation passes are proven correct in Coq. High-assurance teams compile C to assembly with a machine-checked guarantee that the generated code matches the source semantics.
+tagline: Formally verified C compiler proven in Coq
+
+github_url: https://github.com/AbsInt/CompCert
+website_url: https://compcert.org
+docs_url: https://compcert.org/man/
+
+category: Other
+tags: [c, compilers, formal-verification, coq, high-assurance, open-source]
+pricing: free
+is_open_source: false
+license: INRIA Non-Commercial
+
+problem_solved: |
+  Production C compilers are trusted without a proof that optimizations preserve semantics. CompCert is a Coq-verified compiler so high-assurance teams can compile C to assembly with a machine-checked guarantee that the generated code matches the source.
+
+use_cases:
+  - Compile high-assurance C firmware with a verified compiler
+  - Teach compiler correctness with Coq-proven compilation passes
+  - Compare CompCert output against GCC or Clang on safety-critical code
+  - Evaluate formally verified compilation for aerospace or automotive C
