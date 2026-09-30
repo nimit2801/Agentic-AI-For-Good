@@ -1,0 +1,26 @@
+name: vedo
+description: Python module for scientific analysis of 3D data on top of VTK and NumPy. vedo plots meshes, volumes, and point clouds with a concise API so research notebooks can inspect geometry without writing raw VTK.
+tagline: Scientific 3D visualization in Python on VTK
+
+github_url: https://github.com/marcomusy/vedo
+website_url: https://vedo.embl.es
+docs_url: https://vedo.embl.es
+install_command: pip install vedo
+
+category: Other
+tags: [python, vtk, 3d, visualization, mesh, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Scientific 3D work needs meshes, volumes, and point clouds on screen,
+  but raw VTK is verbose. vedo wraps VTK and NumPy so notebooks can load
+  a mesh, cut a volume, and screenshot a scene without a C++ visualization
+  stack.
+
+use_cases:
+  - Visualize FEM or medical meshes in a Jupyter notebook
+  - Slice and inspect 3D volumes from scientific imaging
+  - Plot point clouds with interactive VTK cameras
+  - Export annotated 3D scenes from a Python analysis script

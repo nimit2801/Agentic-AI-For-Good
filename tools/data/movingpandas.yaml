@@ -1,0 +1,26 @@
+name: MovingPandas
+description: Python library for movement data exploration and analysis on top of pandas and GeoPandas. MovingPandas models trajectories as time-ordered points so mobility, AIS, and GPS pipelines can stop, split, and smooth tracks without custom geometry code.
+tagline: Trajectory analysis for movement data in Python
+
+github_url: https://github.com/movingpandas/movingpandas
+website_url: http://movingpandas.org
+docs_url: https://movingpandas.readthedocs.io
+install_command: pip install movingpandas
+
+category: Data
+tags: [python, geospatial, trajectories, mobility, geopandas, pandas, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  GPS, AIS, and wildlife tracks are time-ordered points, not static
+  polygons. GeoPandas has no trajectory primitives. MovingPandas adds
+  stop detection, splitting, and smoothing on pandas so mobility
+  pipelines can analyze movement without hand-rolled geometry.
+
+use_cases:
+  - Detect stops and trips in vehicle GPS tracks
+  - Smooth and generalize AIS ship trajectories for visualization
+  - Split long wildlife tracks into daily segments
+  - Compute speed and heading along a GeoPandas trajectory
