@@ -1,0 +1,26 @@
+name: DrWatson
+description: Scientific project assistant for Julia simulations. DrWatson.jl standardizes experiment folders, parameter naming, result saving, and reproducibility so research code does not scatter scripts and output files by hand.
+tagline: Scientific project assistant for Julia
+
+github_url: https://github.com/JuliaDynamics/DrWatson.jl
+website_url: https://juliadynamics.github.io/DrWatson.jl/stable/
+docs_url: https://juliadynamics.github.io/DrWatson.jl/stable/
+install_command: julia -e 'using Pkg; Pkg.add("DrWatson")'
+
+category: Dev Tools
+tags: [julia, reproducibility, experiments, scientific-computing, project-management, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Scientific Julia projects often scatter scripts, parameters, and
+  output files until a run cannot be reproduced. DrWatson.jl sets a
+  project layout, names result files from parameters, and loads data
+  relative to the project root so simulations stay reproducible.
+
+use_cases:
+  - Scaffold a Julia simulation project with a standard folder layout
+  - Save experiment results keyed by parameter dictionaries
+  - Locate data files relative to the project root from any script
+  - Reproduce a published simulation from a DrWatson project

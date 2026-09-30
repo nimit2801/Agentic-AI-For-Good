@@ -1,0 +1,26 @@
+name: IJulia
+description: Julia kernel for Jupyter Notebook and JupyterLab. IJulia.jl lets you run Julia cells with rich plots, LaTeX, and multimedia output so scientific ML notebooks can mix Julia compute with the Jupyter UI already used for Python.
+tagline: Julia kernel for Jupyter notebooks
+
+github_url: https://github.com/JuliaLang/IJulia.jl
+website_url: https://ijulia.org/
+docs_url: https://ijulia.org/stable
+install_command: julia -e 'using Pkg; Pkg.add("IJulia")'
+
+category: Dev Tools
+tags: [julia, jupyter, notebooks, kernel, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Julia compute often lives in the REPL while notebooks stay Python-only.
+  IJulia.jl is a Jupyter kernel so teams can run Julia cells with plots,
+  LaTeX, and multimedia in Notebook, JupyterLab, or nteract without a
+  separate IDE for scientific ML work.
+
+use_cases:
+  - Run Julia training and analysis cells inside JupyterLab
+  - Share scientific notebooks that mix Julia code, plots, and markdown
+  - Teach Julia alongside Python in the same Jupyter environment
+  - Reuse IJulia notebooks from other Julia code via NBInclude
