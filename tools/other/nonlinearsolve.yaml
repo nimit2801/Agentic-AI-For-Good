@@ -1,0 +1,26 @@
+name: NonlinearSolve
+description: High-performance nonlinear solvers for Julia. NonlinearSolve.jl wraps Newton, trust-region, and bracketed rootfinding with AD and sparsity so SciML and ML residual systems share one solver interface.
+tagline: Differentiation-enabled nonlinear solvers for Julia
+
+github_url: https://github.com/SciML/NonlinearSolve.jl
+website_url: https://docs.sciml.ai/NonlinearSolve/stable/
+docs_url: https://docs.sciml.ai/NonlinearSolve/stable/
+install_command: julia -e 'using Pkg; Pkg.add("NonlinearSolve")'
+
+category: Other
+tags: [julia, nonlinear, newton, sciml, rootfinding, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Nonlinear residuals in SciML and ML models need Newton, Krylov, and
+  bracketed solvers with automatic differentiation, not a one-off fsolve.
+  NonlinearSolve.jl is a unified Julia interface with sparsity and
+  Newton-Krylov support so those systems share one solver stack.
+
+use_cases:
+  - Solve a nonlinear residual from a SciML model with Newton-Krylov
+  - Bracket a scalar root when a derivative is unavailable
+  - Switch factorization and Krylov linear solvers behind one interface
+  - Use AD-enabled Jacobians for a physics-informed residual
