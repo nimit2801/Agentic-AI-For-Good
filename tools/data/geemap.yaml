@@ -1,0 +1,26 @@
+name: geemap
+description: Python package for interactive geospatial analysis with Google Earth Engine. geemap wraps GEE in Jupyter widgets so researchers can search imagery, compute indices, and export training chips without writing the Earth Engine JavaScript API.
+tagline: Interactive Google Earth Engine maps in Python
+
+github_url: https://github.com/gee-community/geemap
+website_url: https://geemap.org
+docs_url: https://geemap.org
+install_command: pip install geemap
+
+category: Data
+tags: [python, google-earth-engine, geospatial, jupyter, remote-sensing, mapping]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Google Earth Engine's primary API is JavaScript, which is awkward in Python ML
+  notebooks. geemap exposes GEE collections, reducers, and interactive maps in
+  Jupyter so satellite-feature pipelines can search imagery and export chips
+  without leaving Python.
+
+use_cases:
+  - Browse Earth Engine image collections on an interactive Jupyter map
+  - Compute NDVI or land-cover layers and export chips for a vision model
+  - Compare time-series satellite scenes for a spatial training set
+  - Share a GEE analysis notebook without rewriting it in JavaScript

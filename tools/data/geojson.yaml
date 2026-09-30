@@ -1,0 +1,26 @@
+name: geojson
+description: Python bindings and utilities for the GeoJSON format. geojson encodes Points, LineStrings, and Features as Python objects so GIS ETL and spatial ML pipelines can read and write RFC 7946 without hand-built dicts.
+tagline: Python bindings for the GeoJSON format
+
+github_url: https://github.com/jazzband/geojson
+website_url: https://pypi.org/project/geojson/
+docs_url: https://github.com/jazzband/geojson#geojson
+install_command: pip install geojson
+
+category: Data
+tags: [python, geojson, geospatial, json, gis, rfc7946]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  GeoJSON is just JSON, but geometry types and FeatureCollections are easy to
+  get wrong by hand. geojson provides Point, Polygon, and Feature classes that
+  encode and decode RFC 7946, so spatial APIs and training labels stay valid
+  GeoJSON instead of ad-hoc dicts.
+
+use_cases:
+  - Encode predicted lat/lon points as a GeoJSON FeatureCollection
+  - Validate incoming GeoJSON labels before a spatial training job
+  - Convert Python geometry objects to RFC 7946 for a mapping API
+  - Round-trip GeoJSON Features in a GIS ETL notebook

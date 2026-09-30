@@ -1,0 +1,26 @@
+name: intake
+description: Lightweight Python catalog for finding, loading, and sharing datasets. Intake describes data sources in YAML so Pandas, Dask, and xarray jobs open CSV, Parquet, and remote files through a named catalog instead of hardcoded paths.
+tagline: Data catalogs for finding and loading Python datasets
+
+github_url: https://github.com/intake/intake
+website_url: https://intake.readthedocs.io
+docs_url: https://intake.readthedocs.io
+install_command: pip install intake
+
+category: Data
+tags: [python, data-catalog, pandas, dask, xarray, yaml, datasets]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Training jobs scatter hardcoded S3 paths and driver kwargs across notebooks.
+  Intake catalogs those sources in YAML with plugins for Pandas, Dask, and
+  xarray, so a team opens named datasets the same way in every environment
+  instead of copying path strings.
+
+use_cases:
+  - Publish a YAML catalog of Parquet and CSV sources for a research team
+  - Load a named dataset into Pandas or Dask without hardcoding S3 paths
+  - Discover remote data plugins from a shared Intake catalog server
+  - Standardize train and eval splits as catalog entries across notebooks
