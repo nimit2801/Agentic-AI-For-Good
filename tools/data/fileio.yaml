@@ -1,0 +1,26 @@
+name: FileIO
+description: Common load and save dispatch for formatted files in Julia. FileIO.jl detects formats and routes to registered readers so Images, JLD2, and other IO packages share one load/save API instead of colliding names.
+tagline: Shared load and save dispatch for Julia file formats
+
+github_url: https://github.com/JuliaIO/FileIO.jl
+website_url: https://juliaio.github.io/FileIO.jl/stable
+docs_url: https://juliaio.github.io/FileIO.jl/stable
+install_command: julia -e 'using Pkg; Pkg.add("FileIO")'
+
+category: Data
+tags: [julia, io, file-formats, load, save, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Every Julia IO package used to ship its own load and save, so callers
+  hit name collisions and had to know the format package up front.
+  FileIO.jl detects the format and dispatches to registered readers so
+  Images, JLD2, and similar packages share one high-level API.
+
+use_cases:
+  - Call load and save without importing the format-specific package first
+  - Register a new file format with add_format for a Julia IO package
+  - Open images, audio, or scientific files through one dispatch table
+  - Avoid name collisions between packages that both export load and save

@@ -1,0 +1,26 @@
+name: KernelDensity
+description: Kernel density estimators for Julia. KernelDensity.jl builds univariate and bivariate KDEs with FFT-backed grids, Silverman bandwidth, and Distributions.jl kernels so statistical plots and density features come from a typed Julia object.
+tagline: FFT-backed kernel density estimates for Julia
+
+github_url: https://github.com/JuliaStats/KernelDensity.jl
+website_url: https://juliastats.org/KernelDensity.jl/stable/
+docs_url: https://juliastats.org/KernelDensity.jl/stable/
+install_command: julia -e 'using Pkg; Pkg.add("KernelDensity")'
+
+category: Data
+tags: [julia, kde, statistics, density-estimation, fft, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Density estimates in Julia used to mean rolling a custom smoother or
+  calling out to Python. KernelDensity.jl gives FFT-backed univariate and
+  bivariate KDEs with Silverman or LSCV bandwidth, so plots and features
+  come from a typed UnivariateKDE or BivariateKDE object.
+
+use_cases:
+  - Estimate a univariate density from a real vector with kde(data)
+  - Select bandwidth by least-squares cross validation with kde_lscv
+  - Plot a KDE grid from U.x and U.density in Makie or Plots
+  - Weight observations or swap the kernel via Distributions.jl
