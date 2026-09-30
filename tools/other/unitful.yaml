@@ -1,0 +1,26 @@
+name: Unitful
+description: Physical quantities with units in Julia. Unitful.jl attaches SI and custom units to numeric values so scientific ML and simulation code can catch unit mismatches at compile time instead of silently mixing meters and seconds.
+tagline: Physical quantities with units for Julia
+
+github_url: https://github.com/JuliaPhysics/Unitful.jl
+website_url: https://juliaphysics.github.io/Unitful.jl/stable/
+docs_url: https://juliaphysics.github.io/Unitful.jl/stable/
+install_command: julia -e 'using Pkg; Pkg.add("Unitful")'
+
+category: Other
+tags: [julia, units, physics, scientific-computing, dimensional-analysis, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Scientific Julia code often stores meters, seconds, and dimensionless
+  floats in the same arrays and only fails at runtime. Unitful.jl wraps
+  numbers with SI and custom units so dimensional mismatches are caught
+  when combining physical quantities in models and simulations.
+
+use_cases:
+  - Attach SI units to parameters in a Julia physics simulation
+  - Catch meter-versus-second bugs before a training or solver run
+  - Convert between unit systems in a scientific ML data pipeline
+  - Define custom units for domain-specific scientific models

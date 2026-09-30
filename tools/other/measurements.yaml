@@ -1,0 +1,26 @@
+name: Measurements
+description: Error-propagation arithmetic for physical measurements in Julia. Measurements.jl tracks uncertainties through calculations so scientific ML and lab-data pipelines can report values with errors instead of dropping the uncertainty column.
+tagline: Error propagation for physical measurements in Julia
+
+github_url: https://github.com/JuliaPhysics/Measurements.jl
+website_url: https://juliaphysics.github.io/Measurements.jl/stable/
+docs_url: https://juliaphysics.github.io/Measurements.jl/stable/
+install_command: julia -e 'using Pkg; Pkg.add("Measurements")'
+
+category: Other
+tags: [julia, uncertainty, error-propagation, physics, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Lab and simulation pipelines often drop the uncertainty column and
+  treat measurements as exact floats. Measurements.jl wraps values with
+  errors and propagates them through arithmetic so scientific Julia
+  code can report results with uncertainty automatically.
+
+use_cases:
+  - Propagate measurement error through a Julia physics calculation
+  - Fit a model to lab data while keeping uncertainty on inputs
+  - Report scientific results with automatic error bars
+  - Combine Measurements.jl with Unitful for unit-aware uncertain values

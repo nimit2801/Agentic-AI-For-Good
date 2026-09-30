@@ -1,0 +1,26 @@
+name: Images
+description: Image loading, representation, and basic processing for Julia. Images.jl is the core JuliaImages library so computer-vision and scientific imaging pipelines can read, convert, and manipulate arrays without dropping to OpenCV or PIL.
+tagline: Core image library for Julia
+
+github_url: https://github.com/JuliaImages/Images.jl
+website_url: https://juliaimages.org/
+docs_url: https://juliaimages.org/latest/
+install_command: julia -e 'using Pkg; Pkg.add("Images")'
+
+category: Data
+tags: [julia, images, computer-vision, scientific-imaging, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Julia CV pipelines often export arrays to OpenCV or PIL for load and
+  color conversion. Images.jl is the core JuliaImages package for
+  reading, representing, and processing images as arrays so scientific
+  imaging stays in the same runtime as the model.
+
+use_cases:
+  - Load and convert images for a Julia computer-vision pipeline
+  - Represent scientific micrographs as typed arrays for analysis
+  - Combine Images.jl with ImageFiltering for convolution workflows
+  - Prepare image datasets without leaving the Julia runtime
