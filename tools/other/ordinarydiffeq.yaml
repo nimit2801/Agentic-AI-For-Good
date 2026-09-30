@@ -1,0 +1,23 @@
+name: OrdinaryDiffEq
+description: High-performance ODE and DAE solvers for Julia, including neural ODEs. OrdinaryDiffEq.jl is the SciML integrator suite used to simulate stiff and nonstiff differential equations with adaptive time stepping.
+tagline: High-performance ODE and DAE solvers for Julia
+
+github_url: https://github.com/SciML/OrdinaryDiffEq.jl
+website_url: https://docs.sciml.ai/DiffEqDocs/stable/
+docs_url: https://docs.sciml.ai/DiffEqDocs/stable/
+install_command: julia -e 'using Pkg; Pkg.add("OrdinaryDiffEq")'
+
+category: Other
+tags: [julia, ode, dae, sciml, neural-ode, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Scientific ML in Julia needs ODE integrators that are both fast and differentiable. OrdinaryDiffEq.jl provides stiff and nonstiff solvers, including neural ODE methods, so researchers can simulate and train continuous-time models inside SciML.
+
+use_cases:
+  - Integrate stiff and nonstiff ODEs with adaptive time stepping
+  - Train neural ODEs as part of a SciML scientific machine learning pipeline
+  - Solve differential-algebraic equations from physical models
+  - Swap solver algorithms without rewriting the problem definition
