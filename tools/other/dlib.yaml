@@ -1,0 +1,23 @@
+name: dlib
+description: A modern C++ toolkit for machine learning and real-world software. dlib ships face detection, SVMs, deep nets, and linear algebra with a Python API, so CV and robotics teams can train and deploy without assembling a pile of one-off libraries.
+tagline: C++ machine learning toolkit with a Python API
+
+github_url: https://github.com/davisking/dlib
+website_url: http://dlib.net
+docs_url: http://dlib.net
+install_command: pip install dlib
+
+category: Other
+tags: [c++, python, machine-learning, computer-vision, face-detection, open-source]
+pricing: free
+is_open_source: true
+license: BSL-1.0
+
+problem_solved: |
+  C++ CV and robotics code still needs face detection, SVMs, and numeric primitives without a Python-only stack. dlib packages those algorithms with a maintained Python binding, so production vision pipelines can compile natively and still prototype from Python.
+
+use_cases:
+  - Detect and landmark faces in production C++ or Python vision apps
+  - Train SVMs and small deep nets without a heavy ML framework
+  - Embed linear algebra and optimization in a robotics codebase
+  - Prototype dlib models in Python then ship the same toolkit in C++

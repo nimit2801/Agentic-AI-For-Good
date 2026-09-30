@@ -1,0 +1,23 @@
+name: mlpack
+description: A fast, header-only C++ machine learning library with Python, Julia, Go, and R bindings. mlpack implements clustering, neighbor search, density estimation, and more as a LAPACK-style toolkit for research and production C++ ML.
+tagline: Header-only C++ machine learning with language bindings
+
+github_url: https://github.com/mlpack/mlpack
+website_url: https://www.mlpack.org/
+docs_url: https://www.mlpack.org/doc/index.html
+install_command: pip install mlpack
+
+category: Other
+tags: [c++, python, machine-learning, header-only, clustering, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Production C++ services cannot always pull PyTorch just to cluster or search neighbors. mlpack is a header-only ML toolkit with CLI and language bindings, so teams can call fast C++ algorithms from Python, Julia, Go, or R without a Python runtime in the hot path.
+
+use_cases:
+  - Run clustering and nearest-neighbor search from header-only C++
+  - Prototype mlpack models in Python then deploy the same C++ core
+  - Call density estimation and recommendation methods from Julia or R
+  - Ship CLI ML tools without a Python interpreter on the server
