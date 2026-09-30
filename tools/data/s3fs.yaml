@@ -1,0 +1,25 @@
+name: s3fs
+description: fsspec filesystem for Amazon S3. s3fs exposes S3 buckets as a Pythonic filesystem so Pandas, Dask, and training jobs can open s3:// paths with glob, caching, and async I/O without embedding the AWS SDK in application code.
+tagline: Pythonic S3 filesystem for fsspec, Pandas, and Dask
+
+github_url: https://github.com/fsspec/s3fs
+website_url: https://s3fs.readthedocs.io
+docs_url: https://s3fs.readthedocs.io/en/latest/
+install_command: pip install s3fs
+
+category: Data
+tags: [python, s3, fsspec, aws, filesystem, pandas, dask, object-storage]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  fsspec is the interface; S3 still needs a backend that maps boto3 to open, glob,
+  and cache. s3fs is that backend, so dataset loaders and checkpoint writers use
+  s3:// URLs without AWS SDK calls in every training or RAG job.
+
+use_cases:
+  - Open s3:// dataset prefixes from Pandas or Dask with one filesystem API
+  - Cache remote training shards locally across repeated epoch reads
+  - Write model checkpoints to S3 without boto3 in application code
+  - Glob and list S3 prefixes the same way you glob a local directory

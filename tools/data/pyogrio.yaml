@@ -1,0 +1,26 @@
+name: pyogrio
+description: Vectorized Python I/O for OGR vector formats. Pyogrio reads and writes shapefiles, GeoPackage, GeoJSON, and other GDAL/OGR layers as NumPy arrays or Arrow tables, so GeoPandas can load large GIS files without Fiona's per-feature Python overhead.
+tagline: Fast vectorized I/O for GeoPandas and OGR formats
+
+github_url: https://github.com/geopandas/pyogrio
+website_url: https://pyogrio.readthedocs.io
+docs_url: https://pyogrio.readthedocs.io
+install_command: pip install pyogrio
+
+category: Data
+tags: [python, geospatial, gdal, ogr, geopandas, vector, arrow, numpy]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Fiona streams OGR features as Python dicts, which is slow on million-row GIS layers.
+  Pyogrio bulk-reads those layers into NumPy and Arrow, so GeoPandas and ML feature
+  pipelines ingest shapefiles and GeoPackages at array speed instead of one record
+  at a time.
+
+use_cases:
+  - Load a large GeoPackage into GeoPandas with engine pyogrio instead of Fiona
+  - Write filtered vector layers to shapefile or GeoJSON from Arrow tables
+  - Convert OGR datasets to GeoArrow for spatial feature stores
+  - Speed up GIS ETL that currently iterates Fiona records one by one

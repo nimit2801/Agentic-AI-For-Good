@@ -1,0 +1,26 @@
+name: fastparquet
+description: A Python implementation of the Apache Parquet format with optional C acceleration. fastparquet reads and writes Parquet files for Pandas and Dask, including nested types, statistics, and S3 paths, as a lighter alternative to pyarrow for many dataframe pipelines.
+tagline: Python Parquet reader and writer for Pandas and Dask
+
+github_url: https://github.com/dask/fastparquet
+website_url: https://fastparquet.readthedocs.io
+docs_url: https://fastparquet.readthedocs.io
+install_command: pip install fastparquet
+
+category: Data
+tags: [python, parquet, pandas, dask, columnar, dataframe, storage]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Apache Parquet is a format, not a Python library. Teams that want Pandas and Dask
+  to read Parquet without a full PyArrow install need a native writer. fastparquet
+  implements the format in Python with optional C speedups so dataframe jobs can
+  persist nested columns and statistics to disk or S3.
+
+use_cases:
+  - Read and write Parquet datasets from Pandas without requiring PyArrow
+  - Persist Dask dataframe partitions with column statistics for predicate pushdown
+  - Store nested Python objects in Parquet for feature-store snapshots
+  - Round-trip dataframe pipelines that already use s3fs or fsspec paths
