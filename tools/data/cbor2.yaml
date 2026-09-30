@@ -1,0 +1,25 @@
+name: cbor2
+description: Python encoder and decoder for Concise Binary Object Representation (CBOR, RFC 8949). cbor2 supports tags, streaming, and C speedups so ML jobs can serialize nested Python objects more compactly than JSON for model metadata, caches, and inter-service payloads.
+tagline: Python CBOR encoder and decoder with tag support
+
+github_url: https://github.com/agronholm/cbor2
+docs_url: https://cbor2.readthedocs.io
+install_command: pip install cbor2
+
+category: Data
+tags: [python, cbor, serialization, binary, rfc8949, encoding]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  JSON is verbose for nested model metadata and binary-adjacent payloads. CBOR is
+  a compact binary JSON cousin, but Python needs a tagged encoder. cbor2 implements
+  RFC 8949 with streaming and optional C speedups so caches, feature stores, and
+  RPC payloads stay smaller than JSON without a custom binary format.
+
+use_cases:
+  - Serialize nested Python dicts and datetime tags more compactly than JSON
+  - Decode CBOR model-metadata blobs from an inference cache
+  - Stream CBOR objects from a file without loading the whole payload
+  - Exchange typed binary messages between Python training workers
