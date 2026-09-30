@@ -1,0 +1,23 @@
+name: CryptoMiniSat
+description: Advanced incremental SAT solver with XOR clause support. CryptoMiniSat solves DIMACS CNF formulas from the command line, C++ library, or Python, and is widely used in cryptography and verification pipelines.
+tagline: Incremental SAT solver with XOR clauses
+
+github_url: https://github.com/msoos/cryptominisat
+website_url: https://www.msoos.org
+docs_url: https://github.com/msoos/cryptominisat
+install_command: pip install pycryptosat
+
+category: Other
+tags: [sat, cdcl, cryptography, verification, python, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  SAT encodings for cryptography and verification often need XOR clauses and incremental assumptions, which basic MiniSat-style solvers handle poorly. CryptoMiniSat adds XOR-native solving plus C++, Python, and CLI interfaces so those pipelines can reuse one competitive SAT engine.
+
+use_cases:
+  - Solve DIMACS CNF formulas with native XOR clauses from the command line
+  - Call an incremental SAT solver from Python with pip-installable pycryptosat
+  - Embed CryptoMiniSat as a C++ SAT backend in a verification tool
+  - Attack or verify cryptographic encodings that rely on XOR-heavy SAT instances
