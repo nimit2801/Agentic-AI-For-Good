@@ -1,0 +1,26 @@
+name: mahotas
+description: Python computer vision library built on NumPy for fast image processing. mahotas implements watershed, morphological operations, texture features, and thresholding in C++ so scientific imaging code can extract features without a heavy OpenCV dependency.
+tagline: Fast computer vision in Python on NumPy arrays
+
+github_url: https://github.com/luispedro/mahotas
+website_url: https://mahotas.readthedocs.io
+docs_url: https://mahotas.readthedocs.io
+install_command: pip install mahotas
+
+category: Other
+tags: [python, computer-vision, image-processing, numpy, morphology, features, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Scientific imaging needs watershed, Haralick texture, and morphological
+  ops on NumPy arrays without pulling in OpenCV. mahotas implements those
+  algorithms in C++ behind a Python API so bioimage and ML feature pipelines
+  stay NumPy-native and stay light.
+
+use_cases:
+  - Segment cells with watershed on microscopy images
+  - Compute Haralick texture features for a classification dataset
+  - Run morphological open, close, and skeletonize on binary masks
+  - Threshold and label connected components in scientific images

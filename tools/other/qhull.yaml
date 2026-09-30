@@ -1,0 +1,27 @@
+name: Qhull
+description: C library that computes convex hulls, Delaunay triangulations, Voronoi diagrams, and halfspace intersections in 2-D to n-D. Qhull is the geometry engine SciPy, MATLAB, and R call for hulls, so scientific and ML pipelines get robust n-dimensional convex geometry.
+tagline: Convex hulls and Delaunay triangulations in n dimensions
+
+github_url: https://github.com/qhull/qhull
+website_url: http://www.qhull.org/
+docs_url: http://www.qhull.org/
+install_command: brew install qhull
+
+category: Other
+tags: [c, geometry, convex-hull, delaunay, voronoi, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: Qhull
+
+problem_solved: |
+  Scientific and ML code needs convex hulls, Delaunay triangulations, and
+  Voronoi diagrams in more than two dimensions. Rolling a hull algorithm
+  is error-prone at scale. Qhull is the n-D geometry engine SciPy and
+  MATLAB wrap, so pipelines get stable hulls without writing computational
+  geometry from scratch.
+
+use_cases:
+  - Compute convex hulls of high-dimensional point clouds in a geometry pipeline
+  - Build Delaunay triangulations for mesh generation and interpolation
+  - Derive Voronoi diagrams for spatial partitioning in scientific computing
+  - Intersect halfspaces when solving linear constraint geometry
