@@ -1,0 +1,26 @@
+name: Cthulhu
+description: Interactive Julia compiler inspector. Cthulhu.jl lets you descend into inferred types, IR, and native code so you can find type instability and dynamic dispatch that slow ML and scientific Julia kernels.
+tagline: Interactive inspector for Julia type inference
+
+github_url: https://github.com/JuliaDebug/Cthulhu.jl
+website_url: https://github.com/JuliaDebug/Cthulhu.jl
+docs_url: https://github.com/JuliaDebug/Cthulhu.jl
+install_command: julia -e 'using Pkg; Pkg.add("Cthulhu")'
+
+category: Dev Tools
+tags: [julia, compiler, type-inference, debugging, performance, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Julia performance bugs hide in type instability and dynamic dispatch that
+  @code_warntype only shows for one method. Cthulhu.jl is an interactive
+  inspector that descends through inferred types, IR, and native code so you
+  can find the call that made a hot ML or scientific kernel allocate.
+
+use_cases:
+  - Descend through inferred types to find a type-unstable call
+  - Inspect LLVM IR and native code for a hot Julia kernel
+  - Debug dynamic dispatch that is slowing a Flux or SciML inner loop
+  - Pair with SnoopCompile to locate invalidations after a package update

@@ -1,0 +1,26 @@
+name: HTTP.jl
+description: HTTP client and server library for Julia. HTTP.jl handles requests, websockets, and cookies so agent services and model APIs speak HTTP from the Julia REPL without wrapping a Python or Go sidecar.
+tagline: HTTP client and server for Julia
+
+github_url: https://github.com/JuliaWeb/HTTP.jl
+website_url: https://juliaweb.github.io/HTTP.jl/stable/
+docs_url: https://juliaweb.github.io/HTTP.jl/stable/
+install_command: julia -e 'using Pkg; Pkg.add("HTTP")'
+
+category: Dev Tools
+tags: [julia, http, client, server, websockets, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Julia services that call LLM APIs or expose model endpoints still need a
+  first-class HTTP stack in-process. HTTP.jl is the Julia HTTP client and
+  server, covering requests, cookies, and websockets so you do not wrap a
+  Python or Go sidecar just to speak HTTP.
+
+use_cases:
+  - Call OpenAI-compatible APIs from Julia without a Python HTTP client
+  - Serve a lightweight Julia HTTP endpoint in front of a Flux or SciML model
+  - Stream websocket events into a Julia agent or dashboard
+  - Parse cookies and headers in a Julia web service

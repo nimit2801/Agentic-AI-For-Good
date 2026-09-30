@@ -1,0 +1,26 @@
+name: OnlineStats
+description: Single-pass statistics for streaming data in Julia. OnlineStats.jl updates means, histograms, and regressions in constant memory so ML pipelines summarize unbounded logs without storing every sample.
+tagline: Single-pass streaming statistics for Julia
+
+github_url: https://github.com/joshday/OnlineStats.jl
+website_url: https://joshday.github.io/OnlineStats.jl/latest/
+docs_url: https://joshday.github.io/OnlineStats.jl/latest/
+install_command: julia -e 'using Pkg; Pkg.add("OnlineStats")'
+
+category: Data
+tags: [julia, streaming, statistics, online-learning, histograms, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Batch stats libraries keep every sample in memory, which fails on unbounded
+  logs and training streams. OnlineStats.jl is a Julia library of single-pass
+  estimators so you can update means, histograms, covariances, and regressions
+  in constant memory as data arrives.
+
+use_cases:
+  - Compute running means and histograms over an unbounded event stream
+  - Track feature distributions during online ML training without storing the full dataset
+  - Merge stats from parallel workers with associative online estimators
+  - Summarize production inference logs in constant memory
