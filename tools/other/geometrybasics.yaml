@@ -1,0 +1,23 @@
+name: GeometryBasics
+description: Basic geometry types for Julia. GeometryBasics.jl defines points, meshes, and related primitives that carry metadata, so plotting, finite-element, and geospatial stacks share one Julian geometry API with C-interop-friendly layouts.
+tagline: Standard geometry types for Julia graphics and mesh work
+
+github_url: https://github.com/JuliaGeometry/GeometryBasics.jl
+website_url: https://juliageometry.github.io/GeometryBasics.jl/stable/
+docs_url: https://juliageometry.github.io/GeometryBasics.jl/stable/
+install_command: julia -e 'using Pkg; Pkg.add("GeometryBasics")'
+
+category: Other
+tags: [julia, geometry, meshes, graphics, plotting, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Plotting, FEM, and geo stacks each reinvent points and meshes, then fight over memory layout. GeometryBasics.jl is the shared primitive layer so Makie, mesh, and spatial code can attach metadata, query geometry, and stay C-interop friendly without a one-off type zoo.
+
+use_cases:
+  - Represent points, faces, and meshes shared across Julia plotting stacks
+  - Attach metadata to geometry for rendering and analysis pipelines
+  - Interoperate with C mesh layouts in scientific visualization
+  - Build finite-element or geospatial geometry on a common type set

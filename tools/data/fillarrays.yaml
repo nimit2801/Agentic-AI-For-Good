@@ -1,0 +1,23 @@
+name: FillArrays
+description: Julia package for lazily representing arrays filled with a single value. FillArrays.jl exports Fill, Ones, Zeros, Eye, Trues, and Falses so ML and scientific code can keep constant and identity arrays without allocating dense storage.
+tagline: Lazy constant and identity arrays for Julia
+
+github_url: https://github.com/JuliaArrays/FillArrays.jl
+website_url: https://juliaarrays.github.io/FillArrays.jl/
+docs_url: https://juliaarrays.github.io/FillArrays.jl/
+install_command: julia -e 'using Pkg; Pkg.add("FillArrays")'
+
+category: Data
+tags: [julia, arrays, lazy, linear-algebra, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Constant, zero, and identity arrays show up everywhere in ML and linear algebra, but materializing them wastes memory. FillArrays.jl stores a single value plus shape, so Julia code can add, multiply, and broadcast against Fill, Ones, Zeros, and Eye without a dense allocation.
+
+use_cases:
+  - Represent zeros, ones, and constant tensors without allocating dense storage
+  - Build lazy identity matrices with Eye for linear algebra
+  - Broadcast and multiply fill arrays inside Julia ML pipelines
+  - Construct infinite or custom-axis fill arrays with InfiniteArrays
