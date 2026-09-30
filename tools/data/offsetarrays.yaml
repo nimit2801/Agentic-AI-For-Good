@@ -1,0 +1,26 @@
+name: OffsetArrays
+description: Julia arrays with arbitrary indices, including zero and negative starts. OffsetArrays.jl wraps an AbstractArray and shifts axes so Fortran-style and stencil code index from the origin the algorithm actually uses.
+tagline: Fortran-style arbitrary indexing for Julia arrays
+
+github_url: https://github.com/JuliaArrays/OffsetArrays.jl
+website_url: https://github.com/JuliaArrays/OffsetArrays.jl
+docs_url: https://github.com/JuliaArrays/OffsetArrays.jl
+install_command: julia -e 'using Pkg; Pkg.add("OffsetArrays")'
+
+category: Data
+tags: [julia, arrays, indexing, fortran, stencils, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Julia arrays are 1-based, but stencils, FFTs, and ports from Fortran want
+  zero or custom origins. Reindexing by hand is easy to get wrong.
+  OffsetArrays.jl wraps the parent array and shifts axes so OA[-1, 0] hits
+  the logical origin without copying data.
+
+use_cases:
+  - Wrap a matrix so indices run from -1:1 instead of 1:3
+  - Keep stencil neighborhoods centered at zero in a PDE solver
+  - Port Fortran numerical kernels that index from 0 without rewriting loops
+  - Shift only the axes of an existing AbstractArray without allocating a copy
