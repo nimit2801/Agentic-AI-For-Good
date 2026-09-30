@@ -1,0 +1,23 @@
+name: Plots
+description: Convenient plotting library for Julia with multiple backends. Plots.jl lets scientists compose 2D figures from a single API that can render through GR, Plotly, and other backends without rewriting plot code.
+tagline: Backend-agnostic plotting for Julia
+
+github_url: https://github.com/JuliaPlots/Plots.jl
+website_url: https://docs.juliaplots.org
+docs_url: https://docs.juliaplots.org/stable/
+install_command: julia -e 'using Pkg; Pkg.add("Plots")'
+
+category: Other
+tags: [julia, visualization, plotting, data-analysis, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Julia visualization used to mean picking one backend and rewriting plots when you switched. Plots.jl is a single plotting API with swappable backends so research notebooks can produce figures without locking into GR, Plotly, or another renderer.
+
+use_cases:
+  - Plot scientific and ML experiment results in Julia notebooks
+  - Switch plotting backends without rewriting figure code
+  - Compose statistical graphics with StatsPlots recipes
+  - Export publication figures from Julia data analysis scripts

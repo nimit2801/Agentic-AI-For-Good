@@ -1,0 +1,23 @@
+name: Optim
+description: Univariate and multivariate optimization library for Julia. Optim.jl implements gradient, Hessian, and derivative-free methods so scientific and ML codes can minimize scalar objectives without leaving Julia.
+tagline: Optimization routines for Julia
+
+github_url: https://github.com/JuliaNLSolvers/Optim.jl
+website_url: https://julianlsolvers.github.io/Optim.jl/stable/
+docs_url: https://julianlsolvers.github.io/Optim.jl/stable/
+install_command: julia -e 'using Pkg; Pkg.add("Optim")'
+
+category: Other
+tags: [julia, optimization, gradient, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Scientific Julia code often needs local minimization without pulling in a full modeling language. Optim.jl provides gradient, Newton, and derivative-free solvers so researchers can optimize scalar objectives with a small, composable Julia package.
+
+use_cases:
+  - Minimize scalar scientific objectives with gradient-based methods
+  - Fit parameters of a Julia model using L-BFGS or Nelder-Mead
+  - Run derivative-free optimization when gradients are unavailable
+  - Combine Optim.jl solvers with automatic differentiation packages
