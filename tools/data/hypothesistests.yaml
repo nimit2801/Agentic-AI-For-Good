@@ -1,0 +1,26 @@
+name: HypothesisTests
+description: Hypothesis tests for Julia covering t-tests, proportion tests, and nonparametric checks. HypothesisTests.jl returns p-values, confidence intervals, and test statistics so experiment analysis and A/B evaluation can stay in Julia without calling R or scipy.stats.
+tagline: Statistical hypothesis tests for Julia
+
+github_url: https://github.com/JuliaStats/HypothesisTests.jl
+website_url: https://juliastats.github.io/HypothesisTests.jl/stable/
+docs_url: https://juliastats.github.io/HypothesisTests.jl/stable/
+install_command: julia -e 'using Pkg; Pkg.add("HypothesisTests")'
+
+category: Data
+tags: [julia, statistics, hypothesis-testing, ab-testing, p-value, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Experiment analysis in Julia often drops to R or scipy.stats for a
+  t-test or confidence interval. HypothesisTests.jl implements one- and
+  two-sample tests with p-values and intervals so A/B evaluation and
+  model comparison can stay in the same Julia notebook as the data.
+
+use_cases:
+  - Run a one-sample or two-sample t-test on experiment metrics
+  - Compute confidence intervals for an A/B test in a Julia notebook
+  - Compare equal-variance and unequal-variance tests on the same data
+  - Report p-values from nonparametric tests without leaving Julia
