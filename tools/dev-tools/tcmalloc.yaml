@@ -1,0 +1,24 @@
+name: tcmalloc
+description: Google's C and C++ allocator used across production services. tcmalloc is a fast multi-threaded malloc with per-CPU caches, huge-page awareness, and heap sampling so ML runtimes and C++ backends get predictable allocation latency instead of glibc contention.
+tagline: Google's fast multi-threaded malloc for C and C++
+
+github_url: https://github.com/google/tcmalloc
+docs_url: https://github.com/google/tcmalloc/blob/master/docs/overview.md
+
+category: Dev Tools
+tags: [cpp, allocator, memory, google, performance, bazel, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Multi-threaded C++ services stall on glibc malloc locks and lack heap
+  sampling to find leaks. tcmalloc is Google's production allocator with
+  per-CPU caches, huge pages, and sampled traces so inference backends
+  and data systems keep allocation latency predictable at scale.
+
+use_cases:
+  - Link tcmalloc into a C++ model-serving binary built with Bazel
+  - Sample heap allocations to find leaks in a long-running backend
+  - Tune per-CPU caches for high-QPS inference traffic
+  - Use huge-page-aware allocation on Linux ML hosts

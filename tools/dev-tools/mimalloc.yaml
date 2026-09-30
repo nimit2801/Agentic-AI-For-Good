@@ -1,0 +1,27 @@
+name: mimalloc
+description: Compact general-purpose allocator from Microsoft Research with excellent multi-threaded performance. mimalloc drops in for malloc and new so C and C++ ML runtimes get bounded fragmentation, first-class stats, and a small code footprint versus glibc or jemalloc.
+tagline: Compact high-performance allocator from Microsoft
+
+github_url: https://github.com/microsoft/mimalloc
+website_url: https://microsoft.github.io/mimalloc
+docs_url: https://microsoft.github.io/mimalloc
+install_command: brew install mimalloc
+
+category: Dev Tools
+tags: [c, cpp, allocator, memory, performance, microsoft, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Production C and C++ services need a drop-in malloc that stays fast under
+  many threads without a huge code surface. glibc fragments, and heavier
+  allocators are hard to embed. mimalloc is a compact general-purpose
+  allocator with first-class stats so inference servers and native ML
+  extensions can swap malloc without rewriting the heap.
+
+use_cases:
+  - Replace system malloc in a C++ inference server for lower fragmentation
+  - Embed a small allocator in a native Python or Node extension
+  - Collect heap stats while tuning a multi-threaded C runtime
+  - LD_PRELOAD mimalloc into a long-running Linux service

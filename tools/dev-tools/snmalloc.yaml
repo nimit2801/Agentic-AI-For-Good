@@ -1,0 +1,24 @@
+name: snmalloc
+description: High-performance message-passing allocator from Microsoft Research. snmalloc recycles remote frees without locks, so C++ runtimes that allocate on one thread and free on another keep scaling instead of collapsing under allocator contention.
+tagline: Message-passing malloc that scales across threads
+
+github_url: https://github.com/microsoft/snmalloc
+docs_url: https://github.com/microsoft/snmalloc
+
+category: Dev Tools
+tags: [cpp, allocator, memory, performance, microsoft, concurrency, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Allocators choke when one thread allocates and another frees, or when
+  frees arrive in huge batches. snmalloc returns remote memory with a
+  lock-free message-passing scheme so actor runtimes, browsers, and C++
+  ML servers keep scaling instead of serializing on a global heap lock.
+
+use_cases:
+  - LD_PRELOAD snmalloc on Linux for a multi-threaded C++ service
+  - Use snmalloc as a header-only allocator inside a C++ project
+  - Absorb batch frees from worker threads without lock convoy
+  - Enable the hardened build for bounds-checked memcpy in security-sensitive runtimes
