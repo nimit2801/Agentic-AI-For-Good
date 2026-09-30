@@ -1,0 +1,22 @@
+name: GEOS
+description: A C++ library for operations on two-dimensional vector geometries. GEOS ports the JTS Topology Suite and powers PostGIS, Shapely, and sf, so GIS and geospatial ML pipelines can buffer, overlay, and validate geometries in a shared engine.
+tagline: 2D vector geometry engine behind PostGIS and Shapely
+
+github_url: https://github.com/libgeos/geos
+website_url: https://libgeos.org
+docs_url: https://libgeos.org
+
+category: Data
+tags: [gis, geometry, geospatial, postgis, shapely, open-source]
+pricing: free
+is_open_source: true
+license: LGPL-2.1
+
+problem_solved: |
+  Vector GIS and geospatial ML need buffers, overlays, and topology checks that stay consistent across PostGIS, Python, and R. GEOS is that shared 2D engine, a JTS port, so Shapely, sf, and spatial databases compute the same predicates instead of drifting per language.
+
+use_cases:
+  - Buffer, overlay, and validate 2D vector geometries in C++ GIS code
+  - Power PostGIS spatial predicates from a shared geometry engine
+  - Back Shapely and GeoPandas operations with GEOS algorithms
+  - Compute spatial joins and topology checks in a mapping pipeline

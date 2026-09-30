@@ -1,0 +1,23 @@
+name: pyproj
+description: Python interface to PROJ for cartographic projections and coordinate transforms. pyproj wraps CRS objects, transformers, and geodetic calculations so GeoPandas and raster pipelines can reproject without calling the PROJ CLI.
+tagline: Python bindings for PROJ coordinate transforms
+
+github_url: https://github.com/pyproj4/pyproj
+website_url: https://pyproj4.github.io/pyproj/stable/
+docs_url: https://pyproj4.github.io/pyproj/stable/
+install_command: pip install pyproj
+
+category: Data
+tags: [python, gis, projections, crs, geospatial, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Python GIS code needs CRS transforms without shelling out to cs2cs. pyproj wraps PROJ so GeoPandas, rasterio, and custom pipelines can build Transformer objects, convert lon/lat to projected grids, and query CRS metadata in-process.
+
+use_cases:
+  - Reproject GeoPandas geometries with a pyproj Transformer
+  - Convert WGS84 lon/lat to UTM inside a Python raster pipeline
+  - Inspect CRS definitions before joining geospatial datasets
+  - Run geodesic distance and area calculations from Python

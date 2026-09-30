@@ -1,0 +1,23 @@
+name: Nipype
+description: Workflows and interfaces for neuroimaging packages. Nipype wraps FSL, SPM, FreeSurfer, and related tools as Python nodes so researchers can build reproducible MRI pipelines without glue scripts around each CLI.
+tagline: Python workflows for neuroimaging toolchains
+
+github_url: https://github.com/nipy/nipype
+website_url: https://nipy.org/nipype/
+docs_url: https://nipype.readthedocs.org/en/latest/
+install_command: pip install nipype
+
+category: Data
+tags: [python, neuroimaging, mri, workflows, fsl, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  MRI analysis chains FSL, SPM, and FreeSurfer CLIs with fragile shell glue. Nipype turns those tools into Python workflow nodes with caching and provenance, so neuroimaging pipelines can mix packages, rerun failed steps, and stay reproducible.
+
+use_cases:
+  - Chain FSL and FreeSurfer steps into a Python MRI workflow
+  - Cache and rerun failed neuroimaging nodes without full recompute
+  - Record provenance for a multi-package fMRI preprocessing graph
+  - Interface SPM batch jobs from Python instead of MATLAB glue
