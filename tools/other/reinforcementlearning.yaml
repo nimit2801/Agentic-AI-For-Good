@@ -1,0 +1,26 @@
+name: ReinforcementLearning
+description: Reinforcement learning algorithms and environments for Julia. ReinforcementLearning.jl provides a modular stack for policies, trajectories, and trainers so RL experiments can run natively in Julia instead of wrapping Python libraries.
+tagline: Reinforcement learning stack for Julia
+
+github_url: https://github.com/JuliaReinforcementLearning/ReinforcementLearning.jl
+website_url: https://juliareinforcementlearning.org
+docs_url: https://juliareinforcementlearning.org
+install_command: julia -e 'using Pkg; Pkg.add("ReinforcementLearning")'
+
+category: Other
+tags: [julia, reinforcement-learning, rl, agents, environments, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Julia RL work often wraps Python libraries and loses type stability.
+  ReinforcementLearning.jl is a native stack for policies, trajectories,
+  and trainers so experiments, environments, and algorithms stay in one
+  Julia runtime.
+
+use_cases:
+  - Train a policy on a Julia RL environment without Python interop
+  - Compose custom trainers from modular algorithm components
+  - Log trajectories from an experiment for offline RL analysis
+  - Benchmark RL algorithms against shared Julia environments
