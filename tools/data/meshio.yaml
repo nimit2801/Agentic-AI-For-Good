@@ -1,0 +1,25 @@
+name: meshio
+description: Python library for reading and writing many mesh formats, from VTK and STL to Gmsh, Exodus, and XDMF. meshio converts meshes between tools so finite-element and 3D ML pipelines do not rewrite I/O for every simulator.
+tagline: Input and output for many mesh formats in Python
+
+github_url: https://github.com/nschloe/meshio
+docs_url: https://github.com/nschloe/meshio
+install_command: pip install meshio
+
+category: Data
+tags: [python, mesh, vtk, finite-element, 3d, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Simulation and 3D ML pipelines juggle VTK, STL, Gmsh, Exodus, and XDMF,
+  each with a different reader. meshio reads and writes those formats as
+  points and cells so scientific code can convert meshes without a
+  per-simulator I/O stack.
+
+use_cases:
+  - Convert a Gmsh mesh to VTK for visualization in a FEM pipeline
+  - Load STL or OBJ geometry into NumPy arrays for 3D processing
+  - Write XDMF output from a custom solver for ParaView
+  - Round-trip meshes between FEniCS, Gmsh, and visualization tools
