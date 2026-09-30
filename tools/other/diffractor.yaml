@@ -1,0 +1,23 @@
+name: Diffractor
+description: Compiler-based automatic differentiation for Julia. Diffractor.jl uses opaque closures and demand-driven IR transforms so scientific and ML code can get forward-mode and nested derivatives without operator overloading or relaxed container types.
+tagline: Compiler-based next-generation AD for Julia
+
+github_url: https://github.com/JuliaDiff/Diffractor.jl
+website_url: https://juliadiff.org/Diffractor.jl/dev
+docs_url: https://juliadiff.org/Diffractor.jl/dev
+install_command: julia -e 'using Pkg; Pkg.add("Diffractor")'
+
+category: Other
+tags: [julia, automatic-differentiation, compiler, forward-mode, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Operator-overloading AD forces Julia code to relax types and wrap arrays in dual numbers. Diffractor.jl differentiates at the compiler IR level with ChainRules frules, so scientific kernels keep concrete types while still computing forward-mode and higher-order derivatives.
+
+use_cases:
+  - Compute forward-mode gradients of typed Julia scientific kernels
+  - Get higher-order Taylor derivatives without dual-number containers
+  - Use ChainRules frules directly from compiler-based AD
+  - Prototype nested AD for models that need Hessians or higher derivatives
