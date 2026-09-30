@@ -1,0 +1,25 @@
+name: yaml-cpp
+description: C++ YAML parser and emitter for YAML 1.2. yaml-cpp lets native services read Kubernetes-style configs and emit YAML without shelling out to Python, so C++ ML and data tools can share the same config format as the rest of the stack.
+tagline: C++ YAML 1.2 parser and emitter
+
+github_url: https://github.com/jbeder/yaml-cpp
+docs_url: https://github.com/jbeder/yaml-cpp
+install_command: brew install yaml-cpp
+
+category: Dev Tools
+tags: [cpp, yaml, parser, config, kubernetes, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  C++ services are configured in YAML next to Kubernetes and Python stacks,
+  but native code cannot call PyYAML. yaml-cpp parses and emits YAML 1.2
+  so ML runtimes and data tools can load the same config files without
+  embedding an interpreter.
+
+use_cases:
+  - Load YAML training or serving configs in a C++ binary
+  - Emit YAML manifests from a native deployment tool
+  - Parse nested YAML maps and sequences with a Node API
+  - Share Kubernetes-style config files between Python and C++ services

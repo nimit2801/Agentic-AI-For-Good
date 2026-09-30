@@ -1,0 +1,25 @@
+name: JsonCpp
+description: C++ library for reading and writing JSON with a DOM-style Value API. JsonCpp is the classic parser many native tools still ship, so C++ backends can load configs and interchange JSON without a header-only-only design.
+tagline: Classic C++ JSON library with a DOM Value API
+
+github_url: https://github.com/open-source-parsers/jsoncpp
+docs_url: https://github.com/open-source-parsers/jsoncpp
+install_command: brew install jsoncpp
+
+category: Dev Tools
+tags: [cpp, json, parser, config, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  C++ services still need a stable JSON DOM they can serialize, mutate, and
+  round-trip. Newer header-only parsers are not always drop-in. JsonCpp
+  provides a Value tree and reader/writer so native tools can load configs
+  and interchange JSON with a well-known C++ API.
+
+use_cases:
+  - Load JSON configuration files in a C++ ML or data service
+  - Build and serialize a JSON response tree from native code
+  - Round-trip JSON configs without switching to a header-only parser
+  - Parse nested JSON documents with Json::Value accessors

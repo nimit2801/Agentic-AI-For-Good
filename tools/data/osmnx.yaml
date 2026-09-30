@@ -1,0 +1,26 @@
+name: OSMnx
+description: Python package to download, model, analyze, and visualize street networks and other features from OpenStreetMap. OSMnx turns OSM into NetworkX graphs so routing, accessibility, and urban-analytics pipelines stay in Python.
+tagline: OpenStreetMap street networks as NetworkX graphs
+
+github_url: https://github.com/gboeing/osmnx
+website_url: https://osmnx.readthedocs.io
+docs_url: https://osmnx.readthedocs.io
+install_command: pip install osmnx
+
+category: Data
+tags: [python, geospatial, openstreetmap, networkx, routing, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Street-network analysis needs graph topology, not just map tiles. Pulling
+  OSM by hand and converting to NetworkX is slow and error-prone. OSMnx
+  downloads, simplifies, and analyzes OSM networks so routing and urban
+  ML pipelines get walkable, drivable graphs in Python.
+
+use_cases:
+  - Download a city's walkable street network as a NetworkX graph
+  - Compute shortest paths and isochrones on OSM road graphs
+  - Visualize building footprints and street centerlines from OSM
+  - Build routing features for urban analytics or mobility models
