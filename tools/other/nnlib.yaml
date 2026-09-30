@@ -1,0 +1,26 @@
+name: NNlib
+description: Neural-network primitives for Julia, used by Flux. NNlib.jl implements softmax, sigmoid, batched matmul, convolutions, and pooling with ChainRules gradients and CUDA or AMDGPU extensions so kernels stay backend-agnostic.
+tagline: Softmax, conv, and pooling primitives for Julia neural nets
+
+github_url: https://github.com/FluxML/NNlib.jl
+website_url: https://fluxml.ai/NNlib.jl/stable/
+docs_url: https://fluxml.ai/NNlib.jl/stable/
+install_command: julia -e 'using Pkg; Pkg.add("NNlib")'
+
+category: Other
+tags: [julia, flux, neural-networks, convolution, softmax, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Flux and other Julia ML stacks need shared conv, pooling, and activation
+  kernels instead of each framework shipping its own. NNlib.jl provides those
+  primitives with ChainRules gradients and optional CUDA or AMDGPU backends
+  so models stay portable.
+
+use_cases:
+  - Call softmax, sigmoid, and batched matmul outside a Flux layer
+  - Run convolutions and pooling with GPU extensions via CUDA or AMDGPU
+  - Differentiate NNlib ops through Zygote via ChainRules
+  - Share one primitive library across Flux and custom Julia models

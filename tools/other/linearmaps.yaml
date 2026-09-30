@@ -1,0 +1,26 @@
+name: LinearMaps
+description: Linear maps (operators) for Julia that only need an efficient multiply. LinearMaps.jl wraps matrix-free transformations so Krylov solvers and custom operators act on vectors without assembling a dense matrix.
+tagline: Matrix-free linear operators for Julia
+
+github_url: https://github.com/JuliaLinearAlgebra/LinearMaps.jl
+website_url: https://julialinearalgebra.github.io/LinearMaps.jl/stable
+docs_url: https://julialinearalgebra.github.io/LinearMaps.jl/stable
+install_command: julia -e 'using Pkg; Pkg.add("LinearMaps")'
+
+category: Other
+tags: [julia, linear-algebra, matrix-free, operators, krylov, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Iterative solvers need A*x, not a stored matrix. Building a dense A for
+  a PDE or implicit operator wastes memory. LinearMaps.jl lets any efficient
+  multiply register as a LinearMap so Krylov.jl and similar solvers treat
+  custom operators like matrices.
+
+use_cases:
+  - Wrap a matrix-free PDE operator as a LinearMap for Krylov.jl
+  - Compose linear maps without assembling the product matrix
+  - Multiply a custom transformation against a vector in a solver loop
+  - Keep large implicit operators out of dense storage

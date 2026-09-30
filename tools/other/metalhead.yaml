@@ -1,0 +1,26 @@
+name: Metalhead
+description: Standard computer-vision models for Flux.jl. Metalhead.jl ships ResNet, VGG, EfficientNet, ViT-style mixers, and related architectures as pure Flux layers, with pretrained weights for several families.
+tagline: ResNet, VGG, and other vision models for Flux
+
+github_url: https://github.com/FluxML/Metalhead.jl
+website_url: https://fluxml.ai/Metalhead.jl/dev
+docs_url: https://fluxml.ai/Metalhead.jl/dev
+install_command: julia -e 'using Pkg; Pkg.add("Metalhead")'
+
+category: Other
+tags: [julia, flux, computer-vision, resnet, pretrained, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Julia CV work on Flux used to mean reimplementing ResNet blocks by hand.
+  Metalhead.jl provides standard vision architectures as Flux layers, with
+  pretrained ResNet, VGG, SqueezeNet, and related weights, so transfer
+  learning starts from a known model.
+
+use_cases:
+  - Load a pretrained ResNet or VGG for Julia image classification
+  - Build EfficientNet, MobileNet, or ConvNeXt in pure Flux layers
+  - Reuse residual and inception blocks from Metalhead.Layers
+  - Fine-tune a Flux vision model without porting PyTorch weights first
