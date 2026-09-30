@@ -1,0 +1,26 @@
+name: UnicodePlots
+description: Unicode scientific plotting for the Julia terminal. UnicodePlots.jl draws scatter, line, bar, heatmap, and histogram plots in the REPL so SSH sessions and CI logs can show charts without a GUI or browser backend.
+tagline: Terminal scientific plots for Julia
+
+github_url: https://github.com/JuliaPlots/UnicodePlots.jl
+website_url: https://juliaplots.org/UnicodePlots.jl/stable/
+docs_url: https://juliaplots.org/UnicodePlots.jl/stable/
+install_command: julia -e 'using Pkg; Pkg.add("UnicodePlots")'
+
+category: Other
+tags: [julia, plotting, terminal, unicode, visualization, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Headless Julia jobs and SSH sessions cannot open a GUI plot window.
+  UnicodePlots.jl renders scatter, line, heatmap, and histogram charts
+  as Unicode in the terminal so training curves and data previews show
+  up in the REPL, CI logs, and remote shells.
+
+use_cases:
+  - Plot a training loss curve in a Julia REPL over SSH
+  - Print a heatmap of a confusion matrix in CI logs
+  - Preview a histogram of dataset features without a notebook
+  - Add terminal plots to a headless scientific simulation run

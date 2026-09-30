@@ -1,0 +1,26 @@
+name: POMDPs
+description: Interface for Markov and partially observable Markov decision processes in Julia. POMDPs.jl defines problems, solvers, and simulators for discrete and continuous MDPs and POMDPs so RL research can share one vocabulary across solvers.
+tagline: MDPs and POMDPs interface for Julia
+
+github_url: https://github.com/JuliaPOMDP/POMDPs.jl
+website_url: https://juliapomdp.github.io/POMDPs.jl/stable
+docs_url: https://juliapomdp.github.io/POMDPs.jl/stable
+install_command: julia -e 'using Pkg; Pkg.add("POMDPs")'
+
+category: Other
+tags: [julia, pomdp, mdp, reinforcement-learning, planning, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  MDP and POMDP research in Julia used to couple problem definitions to
+  a single solver. POMDPs.jl is a shared interface for expressing
+  problems, writing solvers, and running simulations on discrete and
+  continuous spaces so algorithms can be swapped without a rewrite.
+
+use_cases:
+  - Define a POMDP for a robotics or dialogue planning problem
+  - Swap solvers behind one problem interface for a benchmark
+  - Simulate fully and partially observable MDPs in Julia
+  - Share policies and belief updaters via the POMDPTools stdlib
