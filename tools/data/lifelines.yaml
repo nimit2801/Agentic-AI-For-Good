@@ -1,0 +1,26 @@
+name: lifelines
+description: Survival analysis in Python, including Kaplan-Meier, Nelson-Aalen, and Cox regression. lifelines fits censored time-to-event models on pandas data so churn, reliability, and clinical pipelines do not have to drop into R.
+tagline: Survival analysis and Cox models in Python
+
+github_url: https://github.com/CamDavidsonPilon/lifelines
+website_url: https://lifelines.readthedocs.io
+docs_url: https://lifelines.readthedocs.io
+install_command: pip install lifelines
+
+category: Data
+tags: [python, survival-analysis, statistics, cox, pandas, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Time-to-event data is censored, so ordinary regression is wrong for churn,
+  hardware failure, and clinical outcomes. R has survival; Python did not.
+  lifelines implements Kaplan-Meier, Nelson-Aalen, and Cox models on pandas
+  so ML and research pipelines can fit censored data in Python.
+
+use_cases:
+  - Fit a Kaplan-Meier curve for customer churn with right-censored accounts
+  - Train a Cox proportional hazards model on clinical time-to-event data
+  - Estimate cumulative hazard with Nelson-Aalen for reliability engineering
+  - Compare survival curves across cohorts in a pandas notebook
