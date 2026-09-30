@@ -1,0 +1,23 @@
+name: Symbolics
+description: Fast computer algebra system for Julia. Symbolics.jl builds symbolic expressions, derivatives, Jacobians, and equation systems that compile into numerical SciML models without leaving the Julia language.
+tagline: High-performance symbolic algebra for Julia
+
+github_url: https://github.com/JuliaSymbolics/Symbolics.jl
+website_url: https://docs.sciml.ai/Symbolics/stable/
+docs_url: https://docs.sciml.ai/Symbolics/stable/
+install_command: julia -e 'using Pkg; Pkg.add("Symbolics")'
+
+category: Other
+tags: [julia, cas, symbolic, sciml, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Symbolic math stacks in other languages are slow to extend and hard to compile into production solvers. Symbolics.jl is a Julia CAS so researchers can differentiate, simplify, and generate code for ODE and PDE models in the same language as the numerics.
+
+use_cases:
+  - Build and simplify symbolic expressions for scientific models in Julia
+  - Compute Jacobians and derivatives that feed SciML ODE and PDE solvers
+  - Generate numerical code from symbolic equation systems
+  - Substitute parameters into symbolic models before numerical simulation

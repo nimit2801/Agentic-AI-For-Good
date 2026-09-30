@@ -1,0 +1,23 @@
+name: Trixi
+description: Adaptive high-order numerical simulation framework for conservation laws in Julia. Trixi.jl runs discontinuous Galerkin and SBP methods on adaptive meshes for Euler, MHD, and related PDEs, with SciML time integrators and differentiable programming support.
+tagline: High-order conservation-law simulations in Julia
+
+github_url: https://github.com/trixi-framework/Trixi.jl
+website_url: https://trixi-framework.org/TrixiDocumentation
+docs_url: https://trixi-framework.github.io/TrixiDocumentation/stable
+install_command: julia -e 'using Pkg; Pkg.add("Trixi")'
+
+category: Other
+tags: [julia, pde, dg, conservation-laws, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  High-order CFD and MHD solvers are usually large C++ codes that are hard to extend or differentiate. Trixi.jl is a Julia DG framework so students and researchers can run adaptive conservation-law simulations, couple SciML integrators, and take derivatives of the solver.
+
+use_cases:
+  - Simulate compressible Euler and Navier-Stokes flows with discontinuous Galerkin methods
+  - Run magnetohydrodynamics problems on adaptive quadtree and octree meshes
+  - Couple conservation-law solvers with SciML time integrators
+  - Differentiate simulation outputs with forward-mode automatic differentiation

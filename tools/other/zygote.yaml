@@ -1,0 +1,23 @@
+name: Zygote
+description: Source-to-source automatic differentiation for Julia. Zygote hooks into the compiler to generate reverse-mode gradients for Flux models, scientific codes, and nested Julia programs with control flow, recursion, and closures.
+tagline: Source-to-source automatic differentiation for Julia
+
+github_url: https://github.com/FluxML/Zygote.jl
+website_url: https://fluxml.ai/Zygote.jl/
+docs_url: https://fluxml.ai/Zygote.jl/dev
+install_command: julia -e 'using Pkg; Pkg.add("Zygote")'
+
+category: Other
+tags: [julia, autodiff, reverse-mode, flux, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Reverse-mode AD in dynamic languages often traces a tape that is slow to replay and hard to compile. Zygote generates the backward pass as Julia code, so Flux models and scientific programs get compiler-optimized gradients without leaving the language.
+
+use_cases:
+  - Train Flux neural networks with compiler-generated reverse-mode gradients
+  - Differentiate Julia scientific models that use control flow and recursion
+  - Define custom rrules via ChainRulesCore for domain-specific operators
+  - Compute gradients of nested model structs without a separate tracing runtime

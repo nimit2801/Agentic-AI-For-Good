@@ -1,0 +1,23 @@
+name: CUDA.jl
+description: Native CUDA programming for Julia. CUDA.jl compiles Julia kernels to NVIDIA GPUs, wraps cuBLAS and related libraries, and provides array abstractions so scientific and ML codes can run on GPU without leaving Julia.
+tagline: CUDA programming in Julia
+
+github_url: https://github.com/JuliaGPU/CUDA.jl
+website_url: https://juliagpu.org/backends/cuda/
+docs_url: https://cuda.juliagpu.org/stable/
+install_command: julia -e 'using Pkg; Pkg.add("CUDA")'
+
+category: Other
+tags: [julia, cuda, gpu, nvidia, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  GPU work in Julia used to mean dropping into CUDA C++ or wrapping Python kernels. CUDA.jl compiles Julia functions to NVIDIA GPUs and ships array APIs plus library wrappers, so researchers keep one language from prototype through GPU-accelerated production.
+
+use_cases:
+  - Write and launch CUDA kernels directly in Julia
+  - Accelerate array computations on NVIDIA GPUs with CuArray
+  - Call cuBLAS, cuDNN, and related CUDA libraries from Julia
+  - Prototype scientific and ML GPU code without a separate C++ toolchain
