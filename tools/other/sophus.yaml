@@ -1,0 +1,20 @@
+name: Sophus
+description: C++ Lie groups for 2D and 3D computer vision and robotics. Sophus implements SO(2), SO(3), SE(2), and SE(3) on Eigen so SLAM, calibration, and control code can compose rotations and rigid transforms without rolling custom quaternion math.
+tagline: Lie groups for 2D and 3D robotics and vision
+
+github_url: https://github.com/strasdat/Sophus
+
+category: Other
+tags: [c++, lie-groups, robotics, slam, eigen, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  SLAM and robotics stacks need SO(3) and SE(3) with correct interpolation, not ad-hoc quaternion code. Sophus implements those Lie groups on Eigen, so pose graphs, calibration, and control can compose rotations and rigid transforms with a shared, tested API.
+
+use_cases:
+  - Represent camera and robot poses as SE(3) in a SLAM system
+  - Interpolate and compose SO(3) rotations without custom quaternion bugs
+  - Convert between rotation matrices, quaternions, and Lie algebra twists
+  - Share a Lie-group type across C++ vision and robotics packages

@@ -1,0 +1,22 @@
+name: PROJ
+description: Cartographic projections and coordinate transformations. PROJ converts coordinates between CRS definitions, with CLI tools for projections, geodesy, and datum shifts so GIS and geospatial ML pipelines can reproject without a one-off transform layer.
+tagline: Coordinate reference system transformations for geospatial data
+
+github_url: https://github.com/OSGeo/PROJ
+website_url: https://proj.org/
+docs_url: https://proj.org/
+
+category: Data
+tags: [gis, geospatial, projections, crs, cartography, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Geospatial ML and GIS pipelines mix WGS84, UTM, and local grids, then silently misalign features. PROJ is the shared CRS transform layer, with cs2cs, projinfo, and datum grids, so Python, GDAL, and C++ code can reproject points and rasters against one library.
+
+use_cases:
+  - Reproject vector and raster coordinates between CRS definitions
+  - Convert WGS84 lon/lat to UTM or a local projected grid
+  - Query coordinate operations with projinfo before a GIS pipeline
+  - Apply geodetic datum shifts in a mapping or remote-sensing workflow
