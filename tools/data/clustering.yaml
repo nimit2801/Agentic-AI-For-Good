@@ -1,0 +1,26 @@
+name: Clustering
+description: Data clustering algorithms for Julia. Clustering.jl implements k-means, hierarchical, DBSCAN, and fuzzy c-means so ML pipelines cluster embeddings and tabular features without calling sklearn.
+tagline: Data clustering algorithms for Julia
+
+github_url: https://github.com/JuliaStats/Clustering.jl
+website_url: https://juliastats.org/Clustering.jl/
+docs_url: https://juliastats.org/Clustering.jl/stable/
+install_command: julia -e 'using Pkg; Pkg.add("Clustering")'
+
+category: Data
+tags: [julia, clustering, k-means, dbscan, unsupervised, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Clustering from Julia usually means wrapping sklearn, which splits the
+  stack and copies arrays. Clustering.jl implements k-means, hierarchical,
+  DBSCAN, and fuzzy c-means in Julia so embedding and tabular pipelines
+  stay in-process.
+
+use_cases:
+  - Run k-means on Julia embeddings without sklearn
+  - Cluster tabular features with hierarchical or DBSCAN algorithms
+  - Evaluate cluster quality with built-in silhouettes and VI scores
+  - Pair Distances.jl metrics with fuzzy c-means for soft assignments

@@ -1,0 +1,26 @@
+name: SnoopCompile
+description: Latency profiler for Julia packages. SnoopCompile.jl records invalidations and precompile needs so ML libraries cut time-to-first-execution instead of guessing which methods to precompile.
+tagline: Insights about Julia package latency and invalidations
+
+github_url: https://github.com/JuliaDebug/SnoopCompile.jl
+website_url: https://juliadebug.github.io/SnoopCompile.jl/dev/
+docs_url: https://juliadebug.github.io/SnoopCompile.jl/dev/
+install_command: julia -e 'using Pkg; Pkg.add("SnoopCompile")'
+
+category: Dev Tools
+tags: [julia, latency, precompile, invalidations, profiling, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Julia packages pay a large time-to-first-execution tax, and guessing
+  precompile statements rarely helps. SnoopCompile.jl records invalidations
+  and compile traces so ML libraries generate the right precompiles and
+  find the method that invalidated a hot path.
+
+use_cases:
+  - Profile time-to-first-plot or time-to-first-train for a Julia ML package
+  - Generate precompile statements from a workload trace
+  - Find invalidations that broke inference after a dependency update
+  - Pair with Cthulhu to inspect a method that became type-unstable
