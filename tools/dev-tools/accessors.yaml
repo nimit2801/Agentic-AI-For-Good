@@ -1,0 +1,25 @@
+name: Accessors
+description: Update immutable Julia data without mutation. Accessors.jl is the Setfield.jl successor. @set and @reset rebuild NamedTuples, structs, and nested fields and return a new copy instead of throwing on nt.b = 3.
+tagline: Update immutable Julia structs with @set and @reset
+
+github_url: https://github.com/JuliaObjects/Accessors.jl
+website_url: https://juliaobjects.github.io/Accessors.jl/stable/
+docs_url: https://juliaobjects.github.io/Accessors.jl/stable/
+install_command: julia -e 'using Pkg; Pkg.add("Accessors")'
+
+category: Dev Tools
+tags: [julia, immutability, lenses, structs, setfield, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Julia NamedTuples and structs are immutable, so nt.b = 3 throws. Reconstructing
+  nested fields by hand is error-prone. Accessors.jl (successor to Setfield.jl)
+  uses @set and @reset to return an updated copy, including nested paths.
+
+use_cases:
+  - Change one field of a NamedTuple with @set nt.b = 3
+  - Rebind a variable to the updated copy with @reset
+  - Update nested struct fields without handwritten reconstruction
+  - Keep ML config and model structs immutable while still editing them
