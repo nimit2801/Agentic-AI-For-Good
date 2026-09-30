@@ -1,0 +1,23 @@
+name: SimpleChains
+description: A Julia library for small neural networks on CPU. SimpleChains.jl trains dense chains with in-place valgrad, dropout, and TurboDense layers so tiny models can beat Flux on latency and allocations for small-batch scientific ML.
+tagline: Fast small neural nets on CPU in Julia
+
+github_url: https://github.com/PumasAI/SimpleChains.jl
+website_url: https://pumasai.github.io/SimpleChains.jl/stable/
+docs_url: https://pumasai.github.io/SimpleChains.jl/stable/
+install_command: julia -e 'using Pkg; Pkg.add("SimpleChains")'
+
+category: Other
+tags: [julia, neural-networks, cpu, scientific-ml, flux, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Small dense networks on CPU pay Flux-scale allocation and AD overhead that swamp the math. SimpleChains.jl evaluates and differentiates tiny chains in place with TurboDense and valgrad, so scientific ML and simulation loops can train small models without a GPU stack.
+
+use_cases:
+  - Train small dense networks on CPU with in-place gradients
+  - Benchmark tiny models against Flux without GPU overhead
+  - Fit low-dimensional scientific models with dropout and TurboDense layers
+  - Embed a fast CPU chain inside a larger Julia simulation loop

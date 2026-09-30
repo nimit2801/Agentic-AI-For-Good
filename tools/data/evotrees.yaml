@@ -1,0 +1,23 @@
+name: EvoTrees
+description: Boosted trees for tabular data in Julia. EvoTrees.jl trains histogram gradient boosting on CPU and GPU, with regressor, classifier, count, and MLE losses plus Shapley values and MLJ integration for production tabular ML.
+tagline: Histogram gradient boosting for Julia tabular ML
+
+github_url: https://github.com/Evovest/EvoTrees.jl
+website_url: https://evovest.github.io/EvoTrees.jl/stable/
+docs_url: https://evovest.github.io/EvoTrees.jl/stable/
+install_command: julia -e 'using Pkg; Pkg.add("EvoTrees")'
+
+category: Data
+tags: [julia, gradient-boosting, tabular, xgboost, gpu, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Tabular ML in Julia still needs competitive gradient boosting without leaving for XGBoost Python. EvoTrees.jl trains histogram trees on CPU and GPU, with multi-target losses, early stopping, Shapley values, and MLJ fit, so production tabular models can stay in Julia.
+
+use_cases:
+  - Train gradient-boosted regressors and classifiers on tabular Julia data
+  - Fit count and max-likelihood tree models with GPU histogram boosting
+  - Compute Shapley values and feature gain for model explanation
+  - Serve boosted trees through MLJ with DataFrames feature columns
