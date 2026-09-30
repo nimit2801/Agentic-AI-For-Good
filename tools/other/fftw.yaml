@@ -1,0 +1,25 @@
+name: FFTW
+description: Julia bindings to the FFTW library for fast Fourier transforms. FFTW.jl plans and runs FFTs on CPU so signal-processing and spectral ML pipelines stay in Julia instead of calling NumPy or MATLAB.
+tagline: Julia bindings to the FFTW FFT library
+
+github_url: https://github.com/JuliaMath/FFTW.jl
+website_url: https://juliamath.github.io/FFTW.jl/stable
+docs_url: https://juliamath.github.io/FFTW.jl/stable
+install_command: julia -e 'using Pkg; Pkg.add("FFTW")'
+
+category: Other
+tags: [julia, fft, signal-processing, fftw, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Fast Fourier transforms in Julia need a maintained binding to FFTW, not a
+  one-off ccall. FFTW.jl wraps planning and execution so spectral ML, audio,
+  and PDE codes run FFTs from Julia without dropping into NumPy or MATLAB.
+
+use_cases:
+  - Run planned FFTs on Julia arrays for signal processing
+  - Transform features in a spectral ML or audio pipeline
+  - Solve PDEs that need fast Poisson or Helmholtz transforms
+  - Use FFTW wisdom plans from Julia without writing C wrappers

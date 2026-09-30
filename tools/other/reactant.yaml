@@ -1,0 +1,25 @@
+name: Reactant
+description: Compile Julia functions with MLIR and XLA for CPU, GPU, and TPU. Reactant.jl traces ordinary Julia into an XLA graph so SciML and ML kernels run at accelerator speed without rewriting them in JAX.
+tagline: Optimize Julia with MLIR and XLA
+
+github_url: https://github.com/EnzymeAD/Reactant.jl
+website_url: https://enzymead.github.io/Reactant.jl/
+docs_url: https://enzymead.github.io/Reactant.jl/stable
+install_command: julia -e 'using Pkg; Pkg.add("Reactant")'
+
+category: Other
+tags: [julia, xla, mlir, compiler, gpu, tpu, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Julia kernels that need TPU or XLA-class GPU speed usually get rewritten in
+  JAX. Reactant.jl traces ordinary Julia into MLIR and XLA so SciML and ML
+  functions compile for CPU, GPU, and TPU without leaving the language.
+
+use_cases:
+  - Compile a Julia ML kernel to XLA for GPU or TPU
+  - Run SciML solvers on accelerators without a JAX rewrite
+  - Trace Julia functions into MLIR for high-performance execution
+  - Share an Enzyme AD model across CPU, GPU, and TPU backends
