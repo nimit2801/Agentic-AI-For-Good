@@ -1,0 +1,26 @@
+name: Distances
+description: Julia package for vector distances and pairwise metrics. Distances.jl evaluates Euclidean, cosine, KL, and Mahalanobis distances with column-wise kernels so clustering and retrieval code stays in Julia instead of SciPy.
+tagline: Vector distances and pairwise metrics for Julia
+
+github_url: https://github.com/JuliaStats/Distances.jl
+website_url: https://github.com/JuliaStats/Distances.jl
+docs_url: https://github.com/JuliaStats/Distances.jl
+install_command: julia -e 'using Pkg; Pkg.add("Distances")'
+
+category: Data
+tags: [julia, distances, metrics, clustering, similarity, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Pairwise distance loops in Julia allocate and miss SIMD, and SciPy metrics
+  pull you out of the language. Distances.jl implements Euclidean, cosine,
+  KL, and Mahalanobis with column-wise and pairwise kernels so clustering
+  and retrieval stay fast in-process.
+
+use_cases:
+  - Compute pairwise cosine distances for embedding retrieval
+  - Evaluate KL or Jensen-Shannon divergence between distributions
+  - Feed a metric into Clustering.jl or NearestNeighbors.jl
+  - Replace a SciPy cdist call in a Julia ML pipeline

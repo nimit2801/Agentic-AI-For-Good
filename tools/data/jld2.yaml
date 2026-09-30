@@ -1,0 +1,26 @@
+name: JLD2
+description: HDF5-compatible file format written in pure Julia. JLD2.jl saves arrays, structs, and model checkpoints without a C HDF5 dependency so ML pipelines persist Julia objects that round-trip across sessions.
+tagline: HDF5-compatible Julia file format
+
+github_url: https://github.com/JuliaIO/JLD2.jl
+website_url: https://juliaio.github.io/JLD2.jl/
+docs_url: https://juliaio.github.io/JLD2.jl/dev
+install_command: julia -e 'using Pkg; Pkg.add("JLD2")'
+
+category: Data
+tags: [julia, hdf5, serialization, checkpoints, io, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Saving Julia structs through HDF.jl needs a C library, and pickle-style
+  dumps do not round-trip types. JLD2.jl is a pure-Julia HDF5-compatible
+  format so ML pipelines persist arrays, structs, and checkpoints without
+  a native HDF5 dependency.
+
+use_cases:
+  - Save Flux or SciML checkpoints that reload as typed Julia structs
+  - Persist training arrays in an HDF5-compatible file from pure Julia
+  - Share intermediate datasets between Julia workers without a C HDF5 install
+  - Round-trip custom structs across Julia sessions

@@ -1,0 +1,26 @@
+name: Graphs
+description: Optimized graph library for Julia. Graphs.jl stores vertices and edges in compact adjacency structures so knowledge-graph, RAG, and network-science code can run shortest paths and centrality without leaving Julia.
+tagline: Optimized graphs package for Julia
+
+github_url: https://github.com/JuliaGraphs/Graphs.jl
+website_url: https://juliagraphs.org/Graphs.jl/
+docs_url: https://juliagraphs.org/Graphs.jl/stable/
+install_command: julia -e 'using Pkg; Pkg.add("Graphs")'
+
+category: Other
+tags: [julia, graphs, network-science, algorithms, knowledge-graph, open-source]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Graph algorithms in Julia used to live in LightGraphs, which forked and
+  stalled. Graphs.jl is the maintained successor with compact adjacency
+  storage so knowledge-graph, RAG, and network-science code can run shortest
+  paths and centrality in-process.
+
+use_cases:
+  - Run shortest-path and centrality on a Julia knowledge graph
+  - Build a citation or entity graph for a RAG pipeline
+  - Prototype network-science algorithms without NetworkX
+  - Store a sparse adjacency graph for agent routing
