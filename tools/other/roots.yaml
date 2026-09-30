@@ -1,0 +1,26 @@
+name: Roots
+description: Scalar root finding for Julia with bracketing and derivative-free methods. Roots.jl exposes find_zero over bisection, Alefeld-Potra-Shi, and several derivative-free algorithms so scientific and ML codes can solve f(x)=0 on a real line without a full nonlinear solver stack.
+tagline: Scalar root finding for Julia
+
+github_url: https://github.com/JuliaMath/Roots.jl
+website_url: https://juliamath.github.io/Roots.jl/stable
+docs_url: https://juliamath.github.io/Roots.jl/stable
+install_command: julia -e 'using Pkg; Pkg.add("Roots")'
+
+category: Other
+tags: [julia, root-finding, numerical, bisection, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Scalar f(x)=0 problems do not need a multivariate Newton stack, but
+  many Julia codes still roll a one-off bisection. Roots.jl provides
+  guaranteed bracketing methods plus derivative-free solvers behind
+  find_zero so scientific and ML code can locate real roots reliably.
+
+use_cases:
+  - Bracket a scalar residual when a sign change is known
+  - Find a real root with a derivative-free method from a starting guess
+  - Solve inverse problems that reduce to a one-dimensional zero
+  - Swap bisection and Alefeld-Potra-Shi without changing call sites

@@ -1,0 +1,26 @@
+name: ProgressMeter
+description: Progress bars for long-running Julia loops, maps, and reductions. ProgressMeter.jl prints ETA, rate, and elapsed time so training jobs and scientific simulations can show live progress without custom logging.
+tagline: Progress bars for long-running Julia computations
+
+github_url: https://github.com/timholy/ProgressMeter.jl
+website_url: https://github.com/timholy/ProgressMeter.jl
+docs_url: https://github.com/timholy/ProgressMeter.jl
+install_command: julia -e 'using Pkg; Pkg.add("ProgressMeter")'
+
+category: Dev Tools
+tags: [julia, progress-bar, cli, training, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Long Julia training loops and scientific simulations often run with no
+  live ETA, so jobs look hung until they finish. ProgressMeter.jl wraps
+  for-loops, map, pmap, and reduce with a terminal progress bar, rate, and
+  remaining-time estimate so operators can see whether a run is still moving.
+
+use_cases:
+  - Show ETA while a Julia training or hyperparameter sweep iterates
+  - Wrap Distributed.pmap jobs with a live progress bar
+  - Report elapsed time on long data-preprocessing loops in notebooks
+  - Add @showprogress to scientific simulations that otherwise print nothing
