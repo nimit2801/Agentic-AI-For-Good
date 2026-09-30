@@ -1,0 +1,25 @@
+name: AMDGPU
+description: AMD ROCm GPU programming for Julia. AMDGPU.jl is the CUDA.jl counterpart for AMD GPUs, so Flux and SciML kernels run on Radeon and Instinct hardware through the JuliaGPU stack.
+tagline: AMD ROCm GPU programming in Julia
+
+github_url: https://github.com/JuliaGPU/AMDGPU.jl
+website_url: https://amdgpu.juliagpu.org/stable/
+docs_url: https://amdgpu.juliagpu.org/stable/
+install_command: julia -e 'using Pkg; Pkg.add("AMDGPU")'
+
+category: Other
+tags: [julia, amd, rocm, gpu, juliagpu, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Julia GPU code historically targeted NVIDIA through CUDA.jl, leaving AMD
+  hardware out. AMDGPU.jl is the ROCm backend in the JuliaGPU stack so Flux
+  and SciML kernels run on Radeon and Instinct GPUs without a CUDA rewrite.
+
+use_cases:
+  - Run Flux or GPUArrays kernels on AMD ROCm hardware
+  - Port a CUDA.jl kernel to Radeon or Instinct GPUs
+  - Benchmark Julia ML workloads on AMD vs NVIDIA from the same array API
+  - Use ROCm-accelerated linear algebra inside SciML solvers

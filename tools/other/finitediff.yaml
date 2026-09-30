@@ -1,0 +1,26 @@
+name: FiniteDiff
+description: Fast finite-difference gradients, Jacobians, and Hessians in Julia. FiniteDiff.jl computes sparse derivatives without allocations so SciML and optimization code can fall back when automatic differentiation is unavailable.
+tagline: Fast non-allocating finite differences for Julia
+
+github_url: https://github.com/JuliaDiff/FiniteDiff.jl
+website_url: https://juliadiff.org/FiniteDiff.jl/
+docs_url: https://docs.sciml.ai/FiniteDiff/stable/
+install_command: julia -e 'using Pkg; Pkg.add("FiniteDiff")'
+
+category: Other
+tags: [julia, finite-differences, jacobian, hessian, sciml, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Automatic differentiation fails on some black-box or mixed-language models,
+  and naive finite differences allocate on every perturbation. FiniteDiff.jl
+  computes gradients, Jacobians, and Hessians with sparsity support and no
+  extra allocations so SciML solvers still get derivatives.
+
+use_cases:
+  - Compute a sparse Jacobian when AD cannot trace a model
+  - Get a Hessian for a Julia optimization problem without allocations
+  - Fall back from Enzyme or Zygote to finite differences in SciML
+  - Color a sparse derivative pattern for cheaper finite-difference sweeps
