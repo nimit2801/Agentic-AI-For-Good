@@ -1,0 +1,23 @@
+name: StaticArrays
+description: Statically sized arrays for Julia. StaticArrays.jl ships SVector, SMatrix, and mutable counterparts so small linear algebra in scientific and ML kernels can be stack-allocated and unrolled instead of hitting heap Array overhead.
+tagline: Stack-allocated, size-known arrays for Julia
+
+github_url: https://github.com/JuliaArrays/StaticArrays.jl
+website_url: https://juliaarrays.github.io/StaticArrays.jl/stable
+docs_url: https://juliaarrays.github.io/StaticArrays.jl/stable
+install_command: julia -e 'using Pkg; Pkg.add("StaticArrays")'
+
+category: Other
+tags: [julia, arrays, linear-algebra, performance, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Tiny vectors and matrices in Julia still allocate heap Arrays and miss compile-time unrolling. StaticArrays.jl encodes size in the type so 2D/3D geometry, Kalman filters, and small ML kernels can run as stack-allocated, specialized linear algebra.
+
+use_cases:
+  - Represent 2D and 3D geometry with stack-allocated SVector and SMatrix
+  - Speed up small linear algebra inside scientific inner loops
+  - Embed FieldVector structs as fast static vectors in physical models
+  - Annotate existing Arrays with SizedArray for static size information

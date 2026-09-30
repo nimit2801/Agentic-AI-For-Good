@@ -1,0 +1,23 @@
+name: DataStructures
+description: Extra data structures for Julia beyond Base. DataStructures.jl provides heaps, queues, deques, tries, ordered dicts, disjoint sets, and priority queues so scientific and ML code can use standard containers without writing them from scratch.
+tagline: Heaps, queues, tries, and ordered dicts for Julia
+
+github_url: https://github.com/JuliaCollections/DataStructures.jl
+website_url: https://juliacollections.github.io/DataStructures.jl/stable
+docs_url: https://juliacollections.github.io/DataStructures.jl/stable
+install_command: julia -e 'using Pkg; Pkg.add("DataStructures")'
+
+category: Other
+tags: [julia, data-structures, collections, algorithms, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Julia Base covers Dict, Set, and Vector, but scientific code still needs heaps, deques, tries, and ordered maps. DataStructures.jl implements those containers in Julia so algorithms and ML pipelines do not reimplement priority queues or disjoint sets.
+
+use_cases:
+  - Implement Dijkstra and A-star with a Julia priority queue
+  - Buffer streaming ML data with circular buffers and deques
+  - Count tokens or events with accumulators and ordered dictionaries
+  - Maintain disjoint-set union-find for clustering and graph algorithms

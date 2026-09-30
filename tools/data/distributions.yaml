@@ -1,0 +1,23 @@
+name: Distributions
+description: Probability distributions for Julia. Distributions.jl implements pdf, sampling, moments, and MLE for hundreds of univariate and multivariate laws so scientific and ML code can fit, sample, and score models without leaving Julia.
+tagline: Probability distributions and sampling for Julia
+
+github_url: https://github.com/JuliaStats/Distributions.jl
+website_url: https://juliastats.org/Distributions.jl/stable/
+docs_url: https://juliastats.org/Distributions.jl/stable/
+install_command: julia -e 'using Pkg; Pkg.add("Distributions")'
+
+category: Data
+tags: [julia, statistics, probability, sampling, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Scientific Julia code needs densities, samplers, and moments for common probability laws without wrapping R or Python. Distributions.jl provides a shared interface for pdf, logpdf, rand, and MLE so stats and ML pipelines stay in Julia.
+
+use_cases:
+  - Sample from univariate and multivariate distributions in Julia simulations
+  - Evaluate pdf and logpdf for probabilistic ML models
+  - Fit distribution parameters with maximum likelihood estimation
+  - Compute means, variances, and other moments for statistical analysis

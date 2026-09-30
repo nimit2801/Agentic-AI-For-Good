@@ -1,0 +1,23 @@
+name: Pluto
+description: Reactive notebooks for Julia. Pluto.jl reruns dependent cells when a variable or function changes, so scientists can explore models and share results without hidden workspace state or a Python notebook kernel.
+tagline: Simple reactive notebooks for Julia
+
+github_url: https://github.com/JuliaPluto/Pluto.jl
+website_url: https://plutojl.org/
+docs_url: https://plutojl.org/
+install_command: julia -e 'using Pkg; Pkg.add("Pluto")'
+
+category: Other
+tags: [julia, notebooks, reactive, scientific-computing, education, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Jupyter-style notebooks hide workspace state, so changing one cell can leave stale results elsewhere. Pluto.jl is a reactive Julia notebook that reruns dependent cells automatically, making experiments reproducible without a hidden kernel state.
+
+use_cases:
+  - Explore scientific models in a reactive Julia notebook
+  - Share teaching notebooks that update dependent cells on every edit
+  - Prototype ML and SciML experiments without restarting a kernel
+  - Publish lightweight Julia notebooks that run in the browser via Binder
