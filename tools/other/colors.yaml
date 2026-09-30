@@ -1,0 +1,23 @@
+name: Colors
+description: Color manipulation utilities for Julia. Colors.jl converts between RGB, HSV, Lab, and other spaces, measures color distance, parses color names, simulates color deficiency, and builds colormaps for plots and graphics.
+tagline: Color spaces, distances, and colormaps for Julia
+
+github_url: https://github.com/JuliaGraphics/Colors.jl
+website_url: https://juliagraphics.github.io/Colors.jl/stable/
+docs_url: https://juliagraphics.github.io/Colors.jl/stable/
+install_command: julia -e 'using Pkg; Pkg.add("Colors")'
+
+category: Other
+tags: [julia, color, graphics, colormaps, visualization, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Plotting and imaging code needs conversions, perceptual distances, and accessible palettes, not just RGB tuples. Colors.jl is the shared color layer so Julia graphics, computer vision, and scientific plots can convert spaces, measure difference, and generate scales without a one-off color module.
+
+use_cases:
+  - Convert colors between RGB, HSV, Lab, and other spaces in Julia
+  - Measure perceptual distance when matching or clustering colors
+  - Generate colormaps and scales for scientific plots
+  - Simulate color deficiency when checking visualization accessibility

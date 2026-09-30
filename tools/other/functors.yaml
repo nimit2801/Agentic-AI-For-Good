@@ -1,0 +1,23 @@
+name: Functors
+description: Tools to map functions over nested Julia structures. Functors.jl walks model trees with fmap so Flux and Lux code can change precision, move parameters to GPU, or apply optimizer steps without flattening weights into one vector.
+tagline: Map over nested model parameters in Julia
+
+github_url: https://github.com/FluxML/Functors.jl
+website_url: https://fluxml.ai/Functors.jl/stable/
+docs_url: https://fluxml.ai/Functors.jl/stable/
+install_command: julia -e 'using Pkg; Pkg.add("Functors")'
+
+category: Other
+tags: [julia, flux, deep-learning, parameters, nested-structs, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Nested ML models need one walk over every parameter, for precision, device moves, and optimizer steps, without flattening into a vector. Functors.jl reconstructs structs after fmap so Flux, Lux, and custom models can transform leaves and keep the original tree.
+
+use_cases:
+  - Change parameter precision across a nested Flux or Lux model
+  - Move model weights to GPU without flattening the struct tree
+  - Apply optimizer updates to every array leaf in a custom model
+  - Mark types as leaves so fmap does not traverse non-parameter fields

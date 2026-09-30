@@ -1,0 +1,21 @@
+name: Wavelets
+description: A Julia package for fast discrete wavelet transforms. Wavelets.jl runs 1-D, 2-D, and 3-D DWT and wavelet packet transforms via filter banks or lifting, plus thresholding, best-basis selection, and denoising helpers for signal and image pipelines.
+tagline: Fast discrete wavelet transforms in Julia
+
+github_url: https://github.com/JuliaDSP/Wavelets.jl
+install_command: julia -e 'using Pkg; Pkg.add("Wavelets")'
+
+category: Other
+tags: [julia, wavelets, dsp, signal-processing, denoising, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Signal and image pipelines need Haar, Daubechies, and related wavelet bases without leaving Julia. Wavelets.jl gives filter and lifting DWT/WPT, plus thresholding and cycle-spinning denoising, so DSP and scientific imaging code can transform, denoise, and reconstruct in one package.
+
+use_cases:
+  - Run discrete wavelet transforms on 1-D signals, images, and volumes in Julia
+  - Denoise sensor data with thresholding and cycle-spinning
+  - Select a best wavelet-packet basis for compression or feature extraction
+  - Visualize scaling functions and wavelet coefficients during DSP research
