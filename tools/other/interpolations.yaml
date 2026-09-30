@@ -1,0 +1,26 @@
+name: Interpolations
+description: Fast continuous interpolation of discrete datasets in Julia. Interpolations.jl builds B-spline and gridded interpolants so ML feature pipelines and SciML solvers query between samples without dropping into SciPy.
+tagline: Fast interpolation of discrete data in Julia
+
+github_url: https://github.com/JuliaMath/Interpolations.jl
+website_url: https://juliamath.github.io/Interpolations.jl/
+docs_url: https://juliamath.github.io/Interpolations.jl/stable
+install_command: julia -e 'using Pkg; Pkg.add("Interpolations")'
+
+category: Other
+tags: [julia, interpolation, b-spline, scientific-computing, grids, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Discrete samples from simulations and sensors need a continuous function
+  for solvers and feature pipelines. Interpolations.jl builds B-spline and
+  gridded interpolants in Julia so you query between samples without calling
+  SciPy or writing a custom stencil.
+
+use_cases:
+  - Interpolate a simulation grid for a SciML residual
+  - Build a B-spline of sensor data for ML feature extraction
+  - Query a regular grid between training samples
+  - Replace a SciPy interpolate call in a Julia pipeline

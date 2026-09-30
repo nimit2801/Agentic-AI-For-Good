@@ -1,0 +1,25 @@
+name: NearestNeighbors
+description: High-performance nearest-neighbor search in Julia. NearestNeighbors.jl builds KD-trees and ball trees so kNN retrieval over embeddings and spatial data runs in-process without a FAISS or sklearn dependency.
+tagline: KD-tree and ball-tree nearest neighbor search for Julia
+
+github_url: https://github.com/KristofferC/NearestNeighbors.jl
+website_url: https://github.com/KristofferC/NearestNeighbors.jl
+docs_url: https://github.com/KristofferC/NearestNeighbors.jl
+install_command: julia -e 'using Pkg; Pkg.add("NearestNeighbors")'
+
+category: Data
+tags: [julia, knn, kd-tree, ball-tree, retrieval, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  kNN search from Julia usually calls FAISS or sklearn, which splits the
+  stack. NearestNeighbors.jl builds KD-trees and ball trees over Distances.jl
+  metrics so embedding retrieval and spatial queries stay in-process.
+
+use_cases:
+  - kNN-search embeddings for a Julia RAG prototype
+  - Query a KD-tree of spatial features in a simulation
+  - Use a ball tree with a custom Distances.jl metric
+  - Rebuild a tree each training step with the mutating constructors
