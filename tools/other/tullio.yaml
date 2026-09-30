@@ -1,0 +1,22 @@
+name: Tullio
+description: Flexible einsum macro for Julia array code. Tullio.jl turns index notation into nested loops, SIMD kernels, and optional GPU kernels so scientific and ML code can express convolutions, reductions, and scatter without hand-written loops.
+tagline: Einsum macro for Julia tensors and kernels
+
+github_url: https://github.com/mcabbott/Tullio.jl
+docs_url: https://github.com/mcabbott/Tullio.jl
+install_command: julia -e 'using Pkg; Pkg.add("Tullio")'
+
+category: Other
+tags: [julia, einsum, tensors, automatic-differentiation, gpu, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Tensor contractions, stencils, and scatter/gather in Julia often mean writing nested loops by hand or dropping into a limited einsum helper. Tullio.jl compiles index notation into threaded, vectorized, and GPU kernels with gradients for Zygote and ChainRules.
+
+use_cases:
+  - Express convolutions and stencils in index notation instead of nested loops
+  - Fuse einsum-style reductions with LoopVectorization SIMD kernels
+  - Generate GPU kernels for tensor contractions via KernelAbstractions
+  - Provide reverse-mode gradients for custom tensor expressions in Flux models

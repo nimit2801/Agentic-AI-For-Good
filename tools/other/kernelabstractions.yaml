@@ -1,0 +1,23 @@
+name: KernelAbstractions
+description: Write GPU-like kernels in Julia that run on CUDA, ROCm, oneAPI, Metal, and CPU. KernelAbstractions.jl lets scientific and ML libraries ship one kernel that targets multiple backends without rewriting CUDA C++.
+tagline: Write once, run Julia kernels on any GPU
+
+github_url: https://github.com/JuliaGPU/KernelAbstractions.jl
+website_url: https://juliagpu.github.io/KernelAbstractions.jl/stable
+docs_url: https://juliagpu.github.io/KernelAbstractions.jl/stable
+install_command: julia -e 'using Pkg; Pkg.add("KernelAbstractions")'
+
+category: Other
+tags: [julia, gpu, cuda, rocm, heterogeneous-computing, kernels, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  GPU kernels in scientific Julia code used to be rewritten per vendor. KernelAbstractions.jl provides a common kernel DSL so libraries can target CUDA, ROCm, oneAPI, Metal, and CPU from one implementation.
+
+use_cases:
+  - Write portable GPU kernels that run on NVIDIA, AMD, Intel, and Apple GPUs
+  - Share one numerical kernel between CPU tests and GPU production runs
+  - Build array libraries that dispatch across JuliaGPU backends
+  - Prototype heterogeneous ML kernels without a separate CUDA C++ codebase
