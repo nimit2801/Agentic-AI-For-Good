@@ -1,0 +1,26 @@
+name: DecisionTree
+description: CART decision trees and random forests in Julia. DecisionTree.jl trains classifiers and regressors with pruning, bagging, AdaBoost stumps, and n-fold CV, and plugs into MLJ and ScikitLearn.jl.
+tagline: CART trees and random forests for Julia ML
+
+github_url: https://github.com/JuliaAI/DecisionTree.jl
+website_url: https://github.com/JuliaAI/DecisionTree.jl
+docs_url: https://juliahub.com/docs/DecisionTree
+install_command: julia -e 'using Pkg; Pkg.add("DecisionTree")'
+
+category: Data
+tags: [julia, decision-trees, random-forest, cart, mlj, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Julia ML stacks need a native CART and random-forest implementation that
+  does not round-trip through scikit-learn. DecisionTree.jl trains trees and
+  forests with pruning, bagging, AdaBoost stumps, and n-fold CV, and exposes
+  ScikitLearn.jl and MLJ model wrappers.
+
+use_cases:
+  - Train a DecisionTreeClassifier or RandomForestClassifier on tabular data
+  - Fit a DecisionTreeRegressor when targets are floating-point arrays
+  - Run AdaBoost stumps and n-fold cross validation in pure Julia
+  - Plug trees into MLJ.jl or ScikitLearn.jl pipelines

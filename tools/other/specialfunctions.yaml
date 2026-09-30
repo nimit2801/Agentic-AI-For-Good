@@ -1,0 +1,26 @@
+name: SpecialFunctions
+description: Special mathematical functions for Julia, including Bessel, Hankel, Airy, error, Dawson, gamma, loggamma, digamma, and zeta. SpecialFunctions.jl moved these from Base so scientific and ML code can call the same special-function set across Julia versions.
+tagline: Bessel, gamma, and other special functions for Julia
+
+github_url: https://github.com/JuliaMath/SpecialFunctions.jl
+website_url: https://specialfunctions.juliamath.org/stable/
+docs_url: https://specialfunctions.juliamath.org/stable/
+install_command: julia -e 'using Pkg; Pkg.add("SpecialFunctions")'
+
+category: Other
+tags: [julia, special-functions, bessel, gamma, math, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Julia Base no longer ships Bessel, gamma, Airy, and related special functions.
+  Scientific and ML code still needs a maintained, differentiable implementation.
+  SpecialFunctions.jl restores that set as a package so solvers, densities, and
+  activations share one implementation across Julia versions.
+
+use_cases:
+  - Call Bessel, Hankel, and Airy functions from a Julia physics or signal model
+  - Use gamma, loggamma, and digamma in probabilistic and GLM likelihoods
+  - Evaluate error, Dawson, and exponential-integral functions in numerical kernels
+  - Keep special-function calls stable after they moved out of Julia Base

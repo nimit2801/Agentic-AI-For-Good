@@ -1,0 +1,26 @@
+name: Transducers
+description: Composable transducers for Julia sequences, inspired by Clojure. Transducers.jl composes Filter, Map, Scan, and Partition so the same pipeline runs sequentially or in parallel without rewriting the reduction.
+tagline: Composable transducers for sequential and parallel Julia pipelines
+
+github_url: https://github.com/JuliaFolds/Transducers.jl
+website_url: https://juliafolds.github.io/Transducers.jl/dev/
+docs_url: https://juliafolds.github.io/Transducers.jl/dev/
+install_command: julia -e 'using Pkg; Pkg.add("Transducers")'
+
+category: Dev Tools
+tags: [julia, transducers, parallelism, folds, iterators, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Nested Julia iterators get slow and do not reuse the same pipeline in
+  sequential foldl and parallel reduce. Transducers.jl uses a transducer
+  protocol so Filter, Map, Scan, and Partition compose once and run on
+  threads, processes, or GPUs through Folds.jl and FLoops.jl.
+
+use_cases:
+  - Compose Filter, Map, and Scan pipelines that stay fast after nesting
+  - Reuse one transducer in sequential foldl and parallel reduce
+  - Process partitioned windows of a sequence without writing a custom loop
+  - Drive Folds.jl and FLoops.jl parallelism from the same transducer protocol
