@@ -1,0 +1,23 @@
+name: AbstractFFTs
+description: A Julia framework for fast Fourier transforms. AbstractFFTs.jl defines the shared fft and plan_fft API so FFTW.jl, FastTransforms.jl, and GPU FFT packages can coexist behind one interface for signal processing and scientific ML.
+tagline: Shared FFT interface for Julia backends
+
+github_url: https://github.com/JuliaMath/AbstractFFTs.jl
+website_url: https://juliamath.github.io/AbstractFFTs.jl/stable/
+docs_url: https://juliamath.github.io/AbstractFFTs.jl/stable/
+install_command: julia -e 'using Pkg; Pkg.add("AbstractFFTs")'
+
+category: Other
+tags: [julia, fft, signal-processing, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  FFT backends each ship their own fft call, so DSP and ML code cannot swap FFTW, FastTransforms, or GPU plans. AbstractFFTs.jl is the shared plan_fft interface so Julia packages implement one API and callers keep fft(x) regardless of the backend.
+
+use_cases:
+  - Call fft and plan_fft without locking to a single FFT backend
+  - Implement a new FFT package against the AbstractFFTs interface
+  - Swap CPU FFTW and GPU FFT plans in a signal-processing pipeline
+  - Share FFT plans across SciML and DSP packages

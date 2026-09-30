@@ -1,0 +1,23 @@
+name: MLUtils
+description: Interfaces and utilities for Julia machine learning pipelines. MLUtils.jl covers dataloaders, lazy views, train/test splits, k-folds, resampling, and batching so Flux and Lux training loops can iterate observations without copying the full dataset.
+tagline: Data iteration and splitting utilities for Julia ML
+
+github_url: https://github.com/JuliaML/MLUtils.jl
+website_url: https://juliaml.github.io/MLUtils.jl/stable/
+docs_url: https://juliaml.github.io/MLUtils.jl/stable/
+install_command: julia -e 'using Pkg; Pkg.add("MLUtils")'
+
+category: Data
+tags: [julia, machine-learning, dataloaders, cross-validation, flux, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Training loops need minibatches, k-folds, and lazy views without copying the full dataset on every epoch. MLUtils.jl unifies numobs/getobs, DataLoader, splitobs, and kfolds so Flux, Lux, and custom Julia ML code can iterate, resample, and partition observations in one package.
+
+use_cases:
+  - Iterate minibatches with DataLoader during Flux or Lux training
+  - Split and k-fold datasets for cross-validation without copying arrays
+  - Oversample or undersample classes before a classification run
+  - Apply lazy mapobs transforms for data augmentation
