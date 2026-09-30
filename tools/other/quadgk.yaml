@@ -1,0 +1,26 @@
+name: QuadGK
+description: Adaptive one-dimensional Gauss-Kronrod quadrature for Julia. QuadGK.jl integrates scalar, BigFloat, and even matrix-valued functions with error estimates so scientific ML and probability workloads can compute definite integrals without a heavy solver stack.
+tagline: Adaptive 1D Gauss-Kronrod integration for Julia
+
+github_url: https://github.com/JuliaMath/QuadGK.jl
+website_url: https://juliamath.github.io/QuadGK.jl/stable
+docs_url: https://juliamath.github.io/QuadGK.jl/stable
+install_command: julia -e 'using Pkg; Pkg.add("QuadGK")'
+
+category: Other
+tags: [julia, quadrature, integration, numerical, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  One-dimensional integrals in scientific ML often need adaptive
+  quadrature with an error bound, not a fixed grid. QuadGK.jl, originally
+  in Base Julia, integrates arbitrary numeric types including BigFloat
+  and matrix-valued integrands with a Gauss-Kronrod error estimate.
+
+use_cases:
+  - Integrate a smooth 1D likelihood or kernel to a given relative tolerance
+  - Compute Gauss and Kronrod nodes for custom quadrature rules
+  - Integrate BigFloat or matrix-valued functions with an error estimate
+  - Evaluate definite integrals inside a Julia scientific ML pipeline

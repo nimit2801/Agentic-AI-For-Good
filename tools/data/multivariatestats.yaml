@@ -1,0 +1,26 @@
+name: MultivariateStats
+description: Multivariate statistics and dimensionality reduction for Julia. MultivariateStats.jl implements PCA, LDA, CCA, MDS, FastICA, factor analysis, and kernel PCA so embedding and feature-reduction pipelines can stay in Julia instead of exporting to scikit-learn.
+tagline: PCA, LDA, ICA, and related multivariate methods for Julia
+
+github_url: https://github.com/JuliaStats/MultivariateStats.jl
+website_url: https://juliastats.org/MultivariateStats.jl/stable
+docs_url: https://juliastats.org/MultivariateStats.jl/stable
+install_command: julia -e 'using Pkg; Pkg.add("MultivariateStats")'
+
+category: Data
+tags: [julia, pca, lda, ica, dimensionality-reduction, statistics, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Julia ML pipelines often export features to Python for PCA, LDA, or ICA.
+  MultivariateStats.jl keeps those methods in Julia with PCA, CCA, MDS,
+  FastICA, factor analysis, and kernel PCA so embedding and reduction
+  steps stay in the same runtime as the rest of the model.
+
+use_cases:
+  - Reduce embedding or feature matrices with PCA before clustering
+  - Train linear discriminant analysis for multi-class feature separation
+  - Run FastICA to unmix sources in sensor or audio features
+  - Apply kernel PCA when linear PCA fails to capture structure
