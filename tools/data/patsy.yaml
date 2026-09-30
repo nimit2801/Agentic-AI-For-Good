@@ -1,0 +1,25 @@
+name: patsy
+description: Python package for describing statistical models with symbolic formulas and building design matrices. patsy is the formula layer statsmodels and other PyData tools use so regression code can write y ~ x1 + x2 instead of assembling dummy columns by hand.
+tagline: Symbolic statistical formulas and design matrices in Python
+
+github_url: https://github.com/pydata/patsy
+docs_url: https://patsy.readthedocs.io
+install_command: pip install patsy
+
+category: Data
+tags: [python, statistics, formulas, regression, pandas, open-source]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Statistical models in Python need R-style formulas that expand categoricals,
+  interactions, and transforms into design matrices. Hand-building dummy
+  columns is brittle. patsy is the formula language statsmodels uses so
+  regression pipelines can write y ~ x1 * x2 and get a correct matrix.
+
+use_cases:
+  - Build design matrices from pandas DataFrames with y ~ x1 + x2 formulas
+  - Expand categorical variables and interactions for a linear model
+  - Share one formula syntax across statsmodels and custom estimators
+  - Transform predictors with centering and scaling inside a formula

@@ -1,0 +1,26 @@
+name: pingouin
+description: Pandas-based statistical package for Python with tests, effect sizes, and plots that researchers actually report. pingouin wraps ANOVA, correlations, reliability, and Bayesian t-tests so analysis notebooks stay in pandas instead of dropping into R.
+tagline: Pandas-based statistics for Python researchers
+
+github_url: https://github.com/raphaelvallat/pingouin
+website_url: https://pingouin-stats.org/
+docs_url: https://pingouin-stats.org/
+install_command: pip install pingouin
+
+category: Data
+tags: [python, statistics, pandas, anova, hypothesis-testing, open-source]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Python stats often stop at p-values. Papers need effect sizes, post-hoc
+  tests, and reliability metrics that live in R packages. pingouin is a
+  pandas-based stats library with ANOVA, correlations, and Bayesian tests
+  so analysis notebooks can report complete results without leaving Python.
+
+use_cases:
+  - Run repeated-measures ANOVA with effect sizes on a pandas DataFrame
+  - Compute pairwise correlations and plot a correlation matrix
+  - Report Cronbach's alpha and other reliability stats for a survey
+  - Run Bayesian t-tests alongside frequentist results in a notebook
