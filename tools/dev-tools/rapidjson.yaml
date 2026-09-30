@@ -1,0 +1,26 @@
+name: RapidJSON
+description: Fast C++ JSON parser and generator with SAX and DOM APIs. RapidJSON is a header-only library used in game engines and native ML services that need low-allocation parse of large JSON payloads without pulling in a heavier runtime.
+tagline: Header-only C++ JSON parser with SAX and DOM APIs
+
+github_url: https://github.com/Tencent/rapidjson
+website_url: http://rapidjson.org/
+docs_url: http://rapidjson.org/
+install_command: brew install rapidjson
+
+category: Dev Tools
+tags: [cpp, json, parser, header-only, performance, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Native C++ services parse large JSON payloads and cannot afford Python
+  or Node runtimes. Heavier C++ JSON libs allocate too much. RapidJSON is
+  a header-only SAX/DOM parser so inference servers and game backends can
+  decode JSON with low allocation and no extra dependency runtime.
+
+use_cases:
+  - Parse model-serving request JSON in a C++ inference server
+  - Stream large JSON documents with a SAX handler instead of a DOM tree
+  - Generate compact JSON responses from a native C++ API
+  - Embed a header-only JSON library in a game or simulation engine
