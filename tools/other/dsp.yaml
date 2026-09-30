@@ -1,0 +1,26 @@
+name: DSP
+description: Digital signal processing routines for Julia. DSP.jl covers filter design, periodograms, window functions, convolution, LPC, and estimation so audio, sensor, and time-series pipelines stay in Julia instead of calling out to MATLAB or SciPy.
+tagline: Filters, periodograms, and windows for Julia DSP
+
+github_url: https://github.com/JuliaDSP/DSP.jl
+website_url: https://docs.juliadsp.org/stable/
+docs_url: https://docs.juliadsp.org/stable/
+install_command: julia -e 'using Pkg; Pkg.add("DSP")'
+
+category: Other
+tags: [julia, dsp, filters, periodogram, audio, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Audio, sensor, and time-series work in Julia still needs FIR/IIR design,
+  periodograms, and window functions. Calling MATLAB or SciPy breaks the
+  stack. DSP.jl provides those routines natively so signal pipelines stay
+  in Julia from filtering through spectral estimation.
+
+use_cases:
+  - Design and apply FIR or IIR filters to a Julia signal vector
+  - Estimate periodograms and power spectral density for time series
+  - Apply window functions before an FFT in an audio or sensor pipeline
+  - Run convolution and linear predictive coding without leaving Julia

@@ -1,0 +1,26 @@
+name: OhMyThreads
+description: Simple task-based multithreading for Julia. OhMyThreads.jl gives tmapreduce and a @tasks for-loop so data-parallel map-reduce runs across Julia threads without dropping to raw Threads.@threads boilerplate.
+tagline: Friendly data-parallel multithreading for Julia
+
+github_url: https://github.com/JuliaFolds2/OhMyThreads.jl
+website_url: https://juliafolds2.github.io/OhMyThreads.jl/stable
+docs_url: https://juliafolds2.github.io/OhMyThreads.jl/stable
+install_command: julia -e 'using Pkg; Pkg.add("OhMyThreads")'
+
+category: Dev Tools
+tags: [julia, multithreading, parallelism, mapreduce, data-parallel, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Julia Threads.@threads is low-level for map-reduce over arrays. OhMyThreads.jl
+  wraps task-based data parallelism in tmapreduce and @tasks so Monte Carlo,
+  reductions, and embarrassingly parallel loops scale across threads without
+  writing scheduler code.
+
+use_cases:
+  - Parallelize a Monte Carlo reduction with tmapreduce across Julia threads
+  - Replace Threads.@threads loops with a @tasks for-loop
+  - Tune ntasks independently of nthreads for load balancing
+  - Run embarrassingly parallel numeric kernels without a custom thread pool
