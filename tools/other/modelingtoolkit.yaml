@@ -1,0 +1,23 @@
+name: ModelingToolkit
+description: Acausal modeling framework for scientific machine learning in Julia. ModelingToolkit.jl turns high-level symbolic ODE, DAE, and PDE models into fast Jacobians, reduced-index systems, and parallel numerical code for SciML solvers.
+tagline: Symbolic-numeric modeling for scientific ML in Julia
+
+github_url: https://github.com/SciML/ModelingToolkit.jl
+website_url: https://docs.sciml.ai/ModelingToolkit/stable/
+docs_url: https://docs.sciml.ai/ModelingToolkit/stable/
+install_command: julia -e 'using Pkg; Pkg.add("ModelingToolkit")'
+
+category: Other
+tags: [julia, sciml, modeling, ode, symbolic, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Physics models written as raw ODEs are hard to differentiate, sparsify, or reduce before a numerical solve. ModelingToolkit.jl lets researchers describe systems symbolically so SciML can generate Jacobians, apply index reduction, and emit fast solver code automatically.
+
+use_cases:
+  - Build acausal ODE and DAE models from symbolic equations in Julia
+  - Generate sparse Jacobians for scientific machine learning solvers
+  - Apply index reduction before integrating stiff physical systems
+  - Compose physics-informed models with SciML numerical integrators

@@ -1,0 +1,23 @@
+name: MLJ
+description: Machine learning toolbox for Julia with a common interface to 200-plus models. MLJ.jl lets teams select, tune, evaluate, and compose models written in Julia and other languages without rewriting training pipelines.
+tagline: Unified machine learning toolbox for Julia
+
+github_url: https://github.com/JuliaAI/MLJ.jl
+website_url: https://juliaml.ai
+docs_url: https://JuliaAI.github.io/MLJ.jl/stable/
+install_command: julia -e 'using Pkg; Pkg.add("MLJ")'
+
+category: Other
+tags: [julia, machine-learning, model-selection, hyperparameter-tuning, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Julia ML models ship with incompatible fit and predict APIs, so comparing learners means rewriting pipelines. MLJ.jl is a common interface and meta-algorithm layer so teams can select, tune, and compose 200-plus models without a new training loop per package.
+
+use_cases:
+  - Compare Julia and external ML models through one fit and predict API
+  - Tune hyperparameters and evaluate models with shared resampling
+  - Compose preprocessing and learning steps into MLJ pipelines
+  - Integrate a custom model into the MLJ model browser

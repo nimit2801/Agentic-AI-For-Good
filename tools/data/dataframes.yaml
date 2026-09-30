@@ -1,0 +1,23 @@
+name: DataFrames
+description: In-memory tabular data library for Julia. DataFrames.jl provides pandas-like tables with filtering, joins, grouping, and missing-value handling so data science and ML pipelines can stay in Julia.
+tagline: In-memory tabular data for Julia
+
+github_url: https://github.com/JuliaData/DataFrames.jl
+website_url: https://dataframes.juliadata.org/stable/
+docs_url: https://dataframes.juliadata.org/stable/
+install_command: julia -e 'using Pkg; Pkg.add("DataFrames")'
+
+category: Data
+tags: [julia, dataframe, tabular, data-science, etl, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Julia data work often fell back to pandas or CSV dumps because there was no first-class table type. DataFrames.jl gives researchers in-memory tables with joins, group-by, and missing-value handling so feature engineering can stay in the same language as the model.
+
+use_cases:
+  - Load, filter, and join tabular datasets in Julia
+  - Group and aggregate experiment results before model training
+  - Clean missing values in ML feature tables
+  - Keep pandas-style data wrangling inside a Julia scientific stack
