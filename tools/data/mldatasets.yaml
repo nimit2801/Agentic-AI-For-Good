@@ -1,0 +1,26 @@
+name: MLDatasets
+description: Common machine-learning datasets for Julia, built on DataDeps.jl. MLDatasets.jl downloads and unpacks MNIST, CIFAR, graph benchmarks, and text corpora behind one interface so Flux and MLJ examples share the same loaders.
+tagline: MNIST, CIFAR, and other ML datasets for Julia
+
+github_url: https://github.com/JuliaML/MLDatasets.jl
+website_url: https://juliaml.github.io/MLDatasets.jl/stable
+docs_url: https://juliaml.github.io/MLDatasets.jl/stable
+install_command: julia -e 'using Pkg; Pkg.add("MLDatasets")'
+
+category: Data
+tags: [julia, datasets, mnist, cifar, flux, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Julia ML tutorials each rolled their own MNIST or CIFAR loader.
+  MLDatasets.jl downloads, unpacks, and serves vision, graph, text, and
+  tabular benchmarks through DataDeps.jl so Flux and MLJ examples share
+  one dataset API.
+
+use_cases:
+  - Load MNIST or CIFAR-10 for a Flux training script
+  - Access Cora, PubMed, or CiteSeer graph datasets from Julia
+  - Download a text corpus for a language-model example
+  - Share one dataset loader across MLJ and Flux notebooks
