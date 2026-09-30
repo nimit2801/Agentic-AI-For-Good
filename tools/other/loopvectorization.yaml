@@ -1,0 +1,23 @@
+name: LoopVectorization
+description: Julia macros that SIMD-vectorize loops. LoopVectorization.jl rewrites numerical loops with @turbo so scientific and ML kernels run closer to hand-tuned SIMD without leaving Julia.
+tagline: SIMD loop vectorization macros for Julia
+
+github_url: https://github.com/JuliaSIMD/LoopVectorization.jl
+website_url: https://JuliaSIMD.github.io/LoopVectorization.jl/stable
+docs_url: https://JuliaSIMD.github.io/LoopVectorization.jl/stable
+install_command: julia -e 'using Pkg; Pkg.add("LoopVectorization")'
+
+category: Other
+tags: [julia, simd, performance, vectorization, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Tight numerical loops in Julia often miss SIMD width unless rewritten by hand. LoopVectorization.jl's @turbo macro reorders and vectorizes eligible loops so scientific kernels can run closer to peak SIMD without dropping into C or assembly.
+
+use_cases:
+  - Speed up dense numerical loops in Julia scientific code
+  - Vectorize ML kernel hot paths with the @turbo macro
+  - Prototype SIMD-friendly array kernels without writing LLVM IR
+  - Combine LoopVectorization with other Julia performance tools

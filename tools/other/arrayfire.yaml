@@ -1,0 +1,23 @@
+name: ArrayFire
+description: General-purpose tensor library for CPUs, GPUs, and other accelerators. ArrayFire provides a high-level array API that compiles operations into kernels for CUDA, oneAPI, OpenCL, and native CPU backends.
+tagline: Cross-platform GPU tensor library
+
+github_url: https://github.com/arrayfire/arrayfire
+website_url: https://arrayfire.com
+docs_url: https://arrayfire.org/docs
+install_command: pip install arrayfire
+
+category: Other
+tags: [gpu, cuda, opencl, tensors, scientific-computing, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Writing portable GPU kernels for linear algebra, image processing, and signal work means maintaining CUDA, OpenCL, and CPU paths. ArrayFire gives one array API that lowers to those backends so scientific and ML code can target accelerators without a separate kernel for each device.
+
+use_cases:
+  - Accelerate linear algebra and signal processing on CUDA or OpenCL GPUs
+  - Run the same tensor code on CPU and GPU backends
+  - Prototype computer vision kernels with ArrayFire image functions
+  - Call ArrayFire from Python without writing device kernels by hand
