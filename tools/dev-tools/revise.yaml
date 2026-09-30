@@ -1,0 +1,23 @@
+name: Revise
+description: Reload Julia code without restarting the session. Revise.jl watches source files and packages so developers can edit functions, switch git branches, and keep the REPL, tests, and JIT state instead of paying startup cost again.
+tagline: Edit Julia code without restarting the REPL
+
+github_url: https://github.com/timholy/Revise.jl
+website_url: https://timholy.github.io/Revise.jl/stable
+docs_url: https://timholy.github.io/Revise.jl/stable
+install_command: julia -e 'using Pkg; Pkg.add("Revise")'
+
+category: Dev Tools
+tags: [julia, repl, developer-tools, hot-reload, productivity, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Restarting Julia to pick up a one-line change throws away JIT compile time and loaded packages. Revise.jl watches source files and incorporates edits into the running session so ML and scientific developers can iterate without paying startup cost again.
+
+use_cases:
+  - Edit package source and use the new method on the next REPL command
+  - Switch git branches in a long-running Julia session without restarting
+  - Load Revise from startup.jl so every session hot-reloads by default
+  - Iterate on scientific kernels while keeping compiled GPU and AD state
