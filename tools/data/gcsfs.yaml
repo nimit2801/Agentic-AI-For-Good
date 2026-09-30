@@ -1,0 +1,25 @@
+name: gcsfs
+description: fsspec filesystem for Google Cloud Storage. gcsfs exposes GCS buckets as a Pythonic filesystem so Pandas, Dask, and Vertex training jobs can open gs:// paths with glob, caching, and async I/O without the Google Cloud SDK in application code.
+tagline: Pythonic GCS filesystem for fsspec, Pandas, and Dask
+
+github_url: https://github.com/fsspec/gcsfs
+website_url: https://gcsfs.readthedocs.io
+docs_url: https://gcsfs.readthedocs.io/en/latest/
+install_command: pip install gcsfs
+
+category: Data
+tags: [python, gcs, fsspec, gcp, filesystem, pandas, dask, object-storage]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  fsspec is the interface; GCS still needs a backend that maps google-cloud-storage
+  to open, glob, and cache. gcsfs is that backend, so dataset loaders and checkpoint
+  writers use gs:// URLs without GCP SDK calls in every training or RAG job.
+
+use_cases:
+  - Open gs:// dataset prefixes from Pandas or Dask with one filesystem API
+  - Cache remote training shards locally across repeated epoch reads
+  - Write model checkpoints to GCS without the Google Cloud SDK in app code
+  - Glob and list GCS prefixes the same way you glob a local directory

@@ -1,0 +1,25 @@
+name: threadpoolctl
+description: Python helpers that inspect and limit native BLAS and OpenMP thread pools. threadpoolctl stops NumPy, SciPy, and scikit-learn from oversubscribing CPUs when you already parallelize at a higher level with joblib, Dask, or multiprocessing.
+tagline: Limit BLAS and OpenMP threads from Python
+
+github_url: https://github.com/joblib/threadpoolctl
+docs_url: https://github.com/joblib/threadpoolctl#readme
+install_command: pip install threadpoolctl
+
+category: Dev Tools
+tags: [python, threading, blas, openmp, numpy, scikit-learn, performance, joblib]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Nested parallelism wastes cores when joblib or Dask already parallelize while
+  OpenBLAS, MKL, or OpenMP spawn their own threads inside each worker. threadpoolctl
+  discovers those native pools and caps them so ML jobs stay within the intended
+  CPU budget instead of thrashing.
+
+use_cases:
+  - Cap BLAS threads to 1 inside each joblib worker during scikit-learn CV
+  - Inspect which OpenMP and BLAS libraries NumPy linked at runtime
+  - Prevent oversubscription in Dask workers that call NumPy linear algebra
+  - Set thread limits around a nested training loop without restarting the process
