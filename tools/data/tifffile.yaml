@@ -1,0 +1,26 @@
+name: tifffile
+description: Python library for reading and writing TIFF, BigTIFF, OME-TIFF, and related scientific image formats. tifffile handles multi-page, multi-series, and memory-mapped arrays so microscopy and geospatial pipelines can load large rasters without a GUI viewer.
+tagline: Read and write scientific TIFF files in Python
+
+github_url: https://github.com/cgohlke/tifffile
+website_url: https://pypi.org/project/tifffile
+docs_url: https://www.cgohlke.com/docs/tifffile/
+install_command: pip install tifffile
+
+category: Data
+tags: [python, tiff, imaging, microscopy, scientific-data, numpy, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Scientific imaging stores volumes as multi-page TIFF, BigTIFF, and OME-TIFF
+  that Pillow and generic readers cannot stream or memory-map. tifffile reads
+  and writes those formats as NumPy arrays so microscopy, geospatial, and
+  bioimage pipelines can load terabyte rasters without a proprietary viewer.
+
+use_cases:
+  - Load multi-page OME-TIFF microscopy stacks as NumPy arrays
+  - Stream BigTIFF satellite rasters with memory mapping
+  - Write annotated TIFF series from a scientific imaging pipeline
+  - Inspect TIFF tags and metadata without opening a GUI

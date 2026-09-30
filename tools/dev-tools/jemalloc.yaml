@@ -1,0 +1,27 @@
+name: jemalloc
+description: General-purpose malloc implementation that reduces fragmentation and scales under many threads. jemalloc is the allocator Redis, Firefox, and many C++ ML runtimes swap in so long-running services avoid heap blowups that the system malloc cannot contain.
+tagline: Fragmentation-aware malloc for long-running services
+
+github_url: https://github.com/jemalloc/jemalloc
+website_url: http://jemalloc.net/
+docs_url: http://jemalloc.net/
+install_command: brew install jemalloc
+
+category: Dev Tools
+tags: [c, allocator, memory, performance, fragmentation, concurrency, open-source]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Long-running C and C++ services fragment the heap under the system malloc,
+  especially with many threads allocating small objects. jemalloc is a
+  drop-in allocator with arenas, size classes, and profiling so Redis,
+  browsers, and ML runtimes keep RSS stable instead of leaking address
+  space over days.
+
+use_cases:
+  - Replace glibc malloc in a C++ inference server to cut fragmentation
+  - Profile heap growth in a long-running Redis or C service
+  - Tune arena and dirty-page decay for multi-threaded ML runtimes
+  - Link jemalloc into a Python or Java native extension that leaks RSS
