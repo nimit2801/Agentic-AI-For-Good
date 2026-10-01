@@ -1,0 +1,26 @@
+name: spectral-cube
+description: Library for reading and analyzing astrophysical spectral data cubes. spectral-cube wraps FITS cubes so radio and IR pipelines slice, moment-map, and mask cubes without a custom NumPy stack.
+tagline: Astrophysical spectral cubes in Python
+
+github_url: https://github.com/radio-astro-tools/spectral-cube
+website_url: https://spectral-cube.readthedocs.io
+docs_url: https://spectral-cube.readthedocs.io
+install_command: pip install spectral-cube
+
+category: Data
+tags: [python, astronomy, radio, spectral-cube, fits, scientific]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Radio and IR cubes live in FITS with world coordinates, so
+  moment maps and masks get rewritten per survey. spectral-cube
+  wraps those cubes so pipelines slice, collapse, and mask on
+  a common API instead of a custom NumPy stack.
+
+use_cases:
+  - Load a radio spectral cube and extract a velocity moment map
+  - Mask a cube on signal-to-noise before a line-width fit
+  - Slice a subcube around a source for a follow-up analysis
+  - Convert a FITS cube into a world-coordinate spectral cube object

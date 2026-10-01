@@ -1,0 +1,26 @@
+name: ccdproc
+description: Astropy affiliated package for reducing optical and IR CCD data. ccdproc combines, subtracts, and calibrates CCD frames so observatory pipelines reduce images without a custom IRAF clone.
+tagline: Optical and IR CCD reduction in Astropy
+
+github_url: https://github.com/astropy/ccdproc
+website_url: https://ccdproc.readthedocs.io
+docs_url: https://ccdproc.readthedocs.io
+install_command: pip install ccdproc
+
+category: Data
+tags: [python, astronomy, ccd, astropy, reduction, scientific]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Optical CCD reduction needs bias, dark, and flat steps, but
+  IRAF clones get rewritten per observatory. ccdproc combines
+  and calibrates CCD frames so pipelines reduce images on
+  Astropy objects instead of a custom FITS workflow.
+
+use_cases:
+  - Subtract bias and dark frames from a night of CCD images
+  - Combine flats and apply them to science frames
+  - Cosmic-ray clean a CCD image before photometry
+  - Build a reduction pipeline with Astropy CCDData objects
