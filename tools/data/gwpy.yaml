@@ -1,0 +1,26 @@
+name: GWpy
+description: Python package for gravitational-wave data. GWpy loads LIGO and Virgo time series so detection pipelines plot strain, spectrograms, and spectra without a custom GWOSC parser.
+tagline: Gravitational-wave data analysis in Python
+
+github_url: https://github.com/gwpy/gwpy
+website_url: https://gwpy.github.io
+docs_url: https://gwpy.github.io/docs/
+install_command: pip install gwpy
+
+category: Data
+tags: [python, gravitational-waves, ligo, timeseries, scientific, spectrograms]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  LIGO and Virgo publish strain time series, but raw GWOSC files need
+  custom readers for spectrograms and spectra. GWpy loads those series
+  so detection and ML pipelines plot, filter, and export gravitational
+  wave data without a one-off parser.
+
+use_cases:
+  - Fetch a LIGO strain segment around a known event time
+  - Plot a Q-transform spectrogram of a gravitational-wave candidate
+  - High-pass filter a time series before a matched-filter search
+  - Export a spectrum from a science-mode lock stretch

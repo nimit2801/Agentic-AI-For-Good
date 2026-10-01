@@ -1,0 +1,25 @@
+name: colorcet
+description: Collection of perceptually uniform colormaps for scientific plotting. colorcet supplies CET maps so ML and visualization pipelines avoid rainbow palettes that distort magnitude.
+tagline: Perceptually uniform colormaps for science
+
+github_url: https://github.com/holoviz/colorcet
+website_url: https://colorcet.holoviz.org
+docs_url: https://colorcet.holoviz.org
+install_command: pip install colorcet
+
+category: Other
+tags: [python, colormaps, visualization, scientific, matplotlib, holoviz]
+pricing: free
+is_open_source: true
+license: CC-BY-4.0
+
+problem_solved: |
+  Default matplotlib palettes bend perceived magnitude, so heatmaps
+  invent structure. colorcet ships perceptually uniform CET maps so
+  scientific and ML figures encode values without rainbow artifacts.
+
+use_cases:
+  - Swap a rainbow heatmap for a CET colormap in a matplotlib figure
+  - Color a 2D embedding plot with a perceptually uniform sequential map
+  - Standardize colormaps across a HoloViews dashboard
+  - Export a CET palette into a paper figure pipeline

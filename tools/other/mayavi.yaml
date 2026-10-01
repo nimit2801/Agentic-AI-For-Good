@@ -1,0 +1,26 @@
+name: Mayavi
+description: 3D visualization of scientific data in Python, built on VTK. Mayavi renders volumes, surfaces, and vector fields so simulation and ML pipelines inspect 3D arrays without a custom VTK scene.
+tagline: 3D scientific visualization in Python
+
+github_url: https://github.com/enthought/mayavi
+website_url: https://docs.enthought.com/mayavi/mayavi/
+docs_url: https://docs.enthought.com/mayavi/mayavi/
+install_command: pip install mayavi
+
+category: Other
+tags: [python, visualization, 3d, vtk, scientific, volumes]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Simulation outputs live in 3D volumes and vector fields, but
+  matplotlib cannot render them interactively. Mayavi wraps VTK so
+  notebooks and apps plot isosurfaces, streamlines, and meshes
+  without assembling a raw VTK pipeline.
+
+use_cases:
+  - Render an isosurface from a 3D simulation volume
+  - Plot streamlines through a vector field from a CFD run
+  - Inspect a finite-element mesh before a solver step
+  - Embed a 3D scientific scene in a Jupyter notebook
