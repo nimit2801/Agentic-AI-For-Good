@@ -1,0 +1,26 @@
+name: cyclopts
+description: Python CLI framework that builds commands from type hints. cyclopts turns annotated functions into argparse-quality CLIs so ML tooling can ship typed command-line interfaces without Click or Typer boilerplate.
+tagline: Type-hint CLIs for Python tools
+
+github_url: https://github.com/BrianPugh/cyclopts
+website_url: https://github.com/BrianPugh/cyclopts
+docs_url: https://github.com/BrianPugh/cyclopts
+install_command: pip install cyclopts
+
+category: Dev Tools
+tags: [python, cli, type-hints, argparse, developer-tools]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  ML scripts need a CLI, but wiring argparse by hand or mapping Click
+  decorators onto typed functions is boilerplate. cyclopts reads Python
+  type hints and docstrings so training and data tools can expose a
+  typed command line without a separate parser layer.
+
+use_cases:
+  - Turn a typed training function into a command-line entry point
+  - Ship a data-prep CLI with automatic help from annotations
+  - Parse nested config options from type hints instead of argparse
+  - Replace Click boilerplate in an internal ML utilities package
