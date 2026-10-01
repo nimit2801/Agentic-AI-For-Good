@@ -1,0 +1,26 @@
+name: astroalign
+description: Asterism-matching library for aligning astronomical images. astroalign registers frames from star patterns so survey pipelines stack images without WCS or a custom matcher.
+tagline: Align astronomical images from star patterns
+
+github_url: https://github.com/quatrope/astroalign
+website_url: https://astroalign.readthedocs.io
+docs_url: https://astroalign.readthedocs.io
+install_command: pip install astroalign
+
+category: Data
+tags: [python, astronomy, image-alignment, photometry, scientific]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Survey frames need registration before stacking, but
+  WCS is often missing or wrong. astroalign matches
+  asterisms so pipelines align images without a custom
+  star-pattern matcher.
+
+use_cases:
+  - Align a dithered CCD sequence before stacking
+  - Register a transient discovery image onto a template
+  - Estimate a transform between two unsolved FITS frames
+  - Build a coadd from images that lack reliable WCS
