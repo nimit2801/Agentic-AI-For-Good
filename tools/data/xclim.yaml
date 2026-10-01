@@ -1,0 +1,26 @@
+name: xclim
+description: xarray library for computing climate indices and indicators. xclim derives CF-compliant variables such as heat waves and drought metrics so climate ML pipelines can turn raw temperature and precipitation cubes into analysis-ready features.
+tagline: Climate indices on xarray Datasets
+
+github_url: https://github.com/Ouranosinc/xclim
+website_url: https://xclim.readthedocs.io
+docs_url: https://xclim.readthedocs.io
+install_command: pip install xclim
+
+category: Data
+tags: [python, xarray, climate, indices, netcdf, cf-conventions, scientific]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Climate ML features like heat-wave duration sit one layer above raw
+  temperature cubes, and every team reimplements those indices. xclim
+  computes CF-compliant indicators on xarray so pipelines can derive
+  drought, frost, and heat metrics without custom NumPy loops.
+
+use_cases:
+  - Compute heat-wave duration from a daily temperature Dataset
+  - Derive drought indicators from precipitation cubes before training
+  - Convert raw climate model output into CF climate indices
+  - Bias-adjust downscaled fields as part of a climate-impact pipeline

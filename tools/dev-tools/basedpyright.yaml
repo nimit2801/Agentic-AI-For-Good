@@ -1,0 +1,26 @@
+name: basedpyright
+description: Pyright fork with stricter type checking and Pylance language-server features built in. basedpyright gives Python ML codebases a standalone checker and LSP so teams can enforce types without depending on the closed-source Pylance extension.
+tagline: Standalone Pyright fork with Pylance-class checking
+
+github_url: https://github.com/DetachHead/basedpyright
+website_url: https://docs.basedpyright.com
+docs_url: https://docs.basedpyright.com
+install_command: pip install basedpyright
+
+category: Dev Tools
+tags: [python, type-checking, pyright, lsp, static-analysis, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Pyright is open source, but many useful checks live only in Pylance.
+  basedpyright forks Pyright with those improvements and a built-in
+  language server so ML codebases can type-check in CI and editors
+  without the closed-source VS Code extension.
+
+use_cases:
+  - Run a stricter type check on a Python ML package in CI
+  - Use a Pylance-class language server outside Visual Studio Code
+  - Catch optional-type and import errors Pyright misses by default
+  - Standardize Python typing across a research and production monorepo
