@@ -1,0 +1,26 @@
+name: zfit
+description: TensorFlow-based model fitting library for probability density functions. zfit scales likelihood fits for HEP analyses so teams compose, parallelize, and optimize PDFs without rewriting custom minimizers.
+tagline: Scalable PDF model fitting with TensorFlow
+
+github_url: https://github.com/zfit/zfit
+website_url: https://zfit.readthedocs.io
+docs_url: https://zfit.readthedocs.io
+install_command: pip install zfit
+
+category: Data
+tags: [python, hep, tensorflow, likelihood, model-fitting, pdf, scientific]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Unbinned HEP fits need composable PDFs and scalable minimizers, but
+  RooFit models are hard to embed in TensorFlow ML stacks. zfit lets
+  analysts build, combine, and fit probability densities with automatic
+  differentiation so likelihood pipelines stay in Python.
+
+use_cases:
+  - Fit an unbinned mass peak with signal and background PDFs
+  - Combine custom TensorFlow densities into a simultaneous fit
+  - Scale a likelihood fit across GPUs for a large collision sample
+  - Export fitted parameters into a downstream classification pipeline

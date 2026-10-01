@@ -1,0 +1,26 @@
+name: mplhep
+description: Matplotlib extension for HEP histogram plotting and collaboration styles. mplhep draws 1D and 2D histograms with CMS, ATLAS, and LHCb styles so collider analyses publish plots that match experiment templates without hand-tuning rcParams.
+tagline: HEP histogram plotting on matplotlib
+
+github_url: https://github.com/scikit-hep/mplhep
+website_url: https://scikit-hep.org/mplhep
+docs_url: https://scikit-hep.org/mplhep
+install_command: pip install mplhep
+
+category: Data
+tags: [python, hep, matplotlib, histograms, plotting, visualization, scientific]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  HEP papers need histogram plots in CMS, ATLAS, or LHCb house style,
+  but raw matplotlib leaves labels, hatches, and ratio pads to each
+  analyst. mplhep wraps histogram artists and collaboration styles so
+  analyses publish consistent figures without a per-plot rcParams file.
+
+use_cases:
+  - Plot a 1D histogram with CMS Preliminary styling for an internal note
+  - Draw data versus stacked MC with a ratio pad for an ATLAS search
+  - Apply LHCb plot style to a 2D histogram in a notebook analysis
+  - Export publication figures from hist and boost-histogram objects
