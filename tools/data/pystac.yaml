@@ -1,0 +1,27 @@
+name: pystac
+description: Python library for reading, writing, and manipulating SpatioTemporal Asset Catalog (STAC) metadata. pystac models catalogs, collections, items, and assets so geospatial ML pipelines can index satellite and Earth observation data with a standard JSON layout.
+tagline: Python library for SpatioTemporal Asset Catalogs
+
+github_url: https://github.com/stac-utils/pystac
+website_url: https://pystac.readthedocs.io
+docs_url: https://pystac.readthedocs.io
+install_command: pip install pystac
+
+category: Data
+tags: [python, stac, geospatial, satellite, metadata, earth-observation]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Satellite and Earth observation datasets are scattered across catalogs
+  with inconsistent metadata, so training jobs cannot discover assets by
+  time, bbox, or band. pystac implements the STAC spec in Python so
+  pipelines can read and write catalogs, collections, and items as a
+  shared JSON layout.
+
+use_cases:
+  - Build a STAC catalog for a private satellite imagery training set
+  - Read collection and item metadata before downloading COG assets
+  - Validate STAC JSON before publishing a geospatial dataset
+  - Walk catalog links to assemble a time-bounded Earth observation slice
