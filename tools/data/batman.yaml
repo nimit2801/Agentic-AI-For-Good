@@ -1,0 +1,26 @@
+name: batman
+description: Fast analytic transit light-curve models in Python. batman computes Mandel-Agol transits so exoplanet pipelines fit TESS and Kepler curves without a slow numerical integrator.
+tagline: Fast analytic transit light curves
+
+github_url: https://github.com/lkreidberg/batman
+website_url: https://lkreidberg.github.io/batman
+docs_url: https://lkreidberg.github.io/batman
+install_command: pip install batman-package
+
+category: Data
+tags: [python, astronomy, exoplanets, transits, light-curves, scientific]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Transit fits need Mandel-Agol models, but numerical
+  integrators are too slow for large MCMC runs. batman
+  evaluates analytic transits so Kepler and TESS pipelines
+  fit light curves without a custom C kernel.
+
+use_cases:
+  - Generate a Mandel-Agol transit model for a TESS light curve
+  - Fit planet radius and inclination with a fast analytic curve
+  - Batch-evaluate transit models inside an exoplanet MCMC
+  - Compare quadratic-limb-darkening models across bandpasses
