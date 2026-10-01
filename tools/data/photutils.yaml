@@ -1,0 +1,27 @@
+name: photutils
+description: Astropy-affiliated package for source detection and photometry. photutils finds stars and galaxies on images, measures fluxes with apertures or PSF models, and builds catalogs so astronomy ML pipelines can extract sources without custom IRAF or IDL scripts.
+tagline: Source detection and photometry for astronomy
+
+github_url: https://github.com/astropy/photutils
+website_url: https://photutils.readthedocs.io
+docs_url: https://photutils.readthedocs.io
+install_command: pip install photutils
+
+category: Data
+tags: [python, astronomy, photometry, astropy, source-detection, scientific]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Astronomical images need star and galaxy catalogs before photometry
+  or ML training, but IRAF and IDL scripts do not sit on modern Python
+  stacks. photutils detects sources, measures aperture and PSF fluxes,
+  and writes catalogs so pipelines extract photometry without a custom
+  detection loop for every survey.
+
+use_cases:
+  - Detect stars and galaxies on a survey image and write a source catalog
+  - Measure aperture photometry for a list of known object coordinates
+  - Fit PSF models to crowded stellar fields before feeding fluxes to a classifier
+  - Build a background-subtracted cutout dataset for astronomy ML training

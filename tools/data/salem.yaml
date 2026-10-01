@@ -1,0 +1,26 @@
+name: salem
+description: Geolocalised subsetting, masking, and plotting for xarray. salem adds map projections, region clipping, and WRF-aware plotting so climate and weather pipelines subset georeferenced cubes without rolling custom cartopy glue.
+tagline: Geolocalised xarray subsetting and plotting
+
+github_url: https://github.com/fmaussion/salem
+website_url: https://salem.readthedocs.io
+docs_url: https://salem.readthedocs.io
+install_command: pip install salem
+
+category: Data
+tags: [python, xarray, climate, wrf, geospatial, cartopy, scientific]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Climate and WRF datasets sit on map projections that xarray does not
+  subset by region or shapefile out of the box. salem adds geolocalised
+  clipping, masking, and plotting so weather ML pipelines cut grids to
+  a basin or country without custom projection math.
+
+use_cases:
+  - Clip an xarray WRF cube to a shapefile region before training
+  - Mask ocean cells out of a climate Dataset using a land-sea map
+  - Plot a georeferenced temperature field with the native WRF projection
+  - Subset a multi-file climate archive to a bounding box for inference

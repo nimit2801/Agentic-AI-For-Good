@@ -1,0 +1,26 @@
+name: pyhf
+description: Pure-Python HistFactory implementation with tensor backends and autodiff. pyhf builds binned likelihood models for HEP statistical inference so teams can fit, set limits, and run hypothesis tests without ROOT HistFactory.
+tagline: Pure-Python HistFactory statistical inference
+
+github_url: https://github.com/scikit-hep/pyhf
+website_url: https://pyhf.readthedocs.io
+docs_url: https://pyhf.readthedocs.io
+install_command: pip install pyhf
+
+category: Data
+tags: [python, hep, statistics, histfactory, jax, numpy, scientific]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Collider analyses need binned likelihood fits and CLs limits, but
+  ROOT HistFactory locks that workflow to C++ and a full ROOT stack.
+  pyhf implements HistFactory in Python with NumPy, JAX, and autodiff
+  so HEP ML pipelines can fit models and publish limits from notebooks.
+
+use_cases:
+  - Build a HistFactory likelihood from binned signal and background templates
+  - Compute observed and expected CLs limits for a new-physics search
+  - Fit nuisance parameters with JAX autodiff instead of a ROOT minimizer
+  - Serialize a workspace JSON so a paper analysis can be reproduced without ROOT
