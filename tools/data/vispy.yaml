@@ -1,0 +1,26 @@
+name: vispy
+description: High-performance interactive 2D and 3D visualization library built on OpenGL. vispy renders large scientific datasets at interactive rates so ML and imaging pipelines inspect point clouds and volumes without a slow matplotlib loop.
+tagline: High-performance OpenGL visualization for science
+
+github_url: https://github.com/vispy/vispy
+website_url: https://vispy.org
+docs_url: https://vispy.org
+install_command: pip install vispy
+
+category: Data
+tags: [python, visualization, opengl, scientific, 3d, gpu]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Scientific ML pipelines need to inspect million-point clouds and
+  volumes, but matplotlib and CPU plotters drop frames. vispy talks to
+  OpenGL so notebooks and apps render large arrays interactively without
+  downsampling first.
+
+use_cases:
+  - Visualize a large point cloud from a 3D reconstruction model
+  - Render a volumetric MRI stack at interactive frame rates
+  - Plot streaming scientific time series without dropping samples
+  - Build a GPU-backed scene for exploring high-dimensional embeddings

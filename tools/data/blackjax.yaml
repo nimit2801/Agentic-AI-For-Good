@@ -1,0 +1,26 @@
+name: blackjax
+description: Bayesian inference library built on JAX for fast, modular sampling. blackjax ships HMC, NUTS, and SMC algorithms so probabilistic ML pipelines sample posteriors on GPU without rewriting sampler kernels.
+tagline: Fast modular Bayesian inference on JAX
+
+github_url: https://github.com/blackjax-devs/blackjax
+website_url: https://blackjax-devs.github.io/blackjax
+docs_url: https://blackjax-devs.github.io/blackjax
+install_command: pip install blackjax
+
+category: Data
+tags: [python, jax, bayesian, mcmc, hmc, probabilistic, scientific]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Bayesian ML stacks need HMC and SMC on accelerators, but classic
+  samplers sit outside JAX transforms. blackjax implements those
+  algorithms as JAX programs so pipelines sample posteriors on GPU
+  without a custom kernel.
+
+use_cases:
+  - Run NUTS on a JAX posterior for a hierarchical model
+  - Compose custom MCMC kernels for a research sampler experiment
+  - Sample a Bayesian neural net posterior on GPU
+  - Pair sequential Monte Carlo with a JAX likelihood in a notebook

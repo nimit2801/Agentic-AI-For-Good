@@ -1,0 +1,26 @@
+name: stumpy
+description: Scalable Python library for modern time series analysis. stumpy computes matrix profiles so ML pipelines find motifs, discords, and semantic segments in long series without hand-rolled sliding-window distances.
+tagline: Matrix profiles for scalable time series analysis
+
+github_url: https://github.com/stumpy-dev/stumpy
+website_url: https://stumpy.readthedocs.io
+docs_url: https://stumpy.readthedocs.io
+install_command: pip install stumpy
+
+category: Data
+tags: [python, time-series, matrix-profile, motifs, scientific, numpy]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Time series ML jobs need motifs and anomalies, but pairwise window
+  distances explode on long series. stumpy computes matrix profiles
+  with Numba so pipelines find repeating patterns and discords without
+  a custom sliding-window loop.
+
+use_cases:
+  - Find repeating motifs in a sensor time series before clustering
+  - Detect discords as anomaly candidates in an industrial telemetry stream
+  - Segment a long series into semantically similar windows
+  - Scale matrix profile search across a multi-dimensional IoT archive

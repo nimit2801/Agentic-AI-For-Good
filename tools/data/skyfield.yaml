@@ -1,0 +1,26 @@
+name: skyfield
+description: Pure-Python astronomy library for research-grade planet and satellite positions. skyfield loads JPL ephemerides so ML and space pipelines compute RA, Dec, and ranges without wrapping SPICE in a custom C binding.
+tagline: Elegant research-grade astronomy in Python
+
+github_url: https://github.com/skyfielders/python-skyfield
+website_url: https://rhodesmill.org/skyfield
+docs_url: https://rhodesmill.org/skyfield
+install_command: pip install skyfield
+
+category: Data
+tags: [python, astronomy, ephemeris, satellites, scientific, numpy]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Space and astronomy pipelines need precise planet and satellite
+  positions, but SPICE toolkits are C-heavy and awkward in notebooks.
+  skyfield loads JPL kernels in pure Python so teams compute RA, Dec,
+  and range without a native astronomy stack.
+
+use_cases:
+  - Compute Mars RA and Dec from Earth at a given observation time
+  - Propagate Earth satellite positions from a TLE catalog
+  - Generate training labels for a sky-object detection model
+  - Convert between timescale and barycentric coordinates in a survey pipeline
