@@ -1,0 +1,26 @@
+name: ctapipe
+description: Event reconstruction framework for Imaging Atmospheric Cherenkov Telescopes. ctapipe processes CTAO-like camera data so gamma-ray pipelines reconstruct showers without a custom Cherenkov stack.
+tagline: Cherenkov telescope event reconstruction for CTAO
+
+github_url: https://github.com/cta-observatory/ctapipe
+website_url: https://ctapipe.readthedocs.io
+docs_url: https://ctapipe.readthedocs.io
+install_command: pip install ctapipe
+
+category: Data
+tags: [python, astronomy, gamma-ray, ctao, cherenkov, scientific]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  IACT arrays produce camera images that need calibration
+  and shower reconstruction, but each site rewrites a
+  pipeline. ctapipe standardizes those steps so gamma-ray
+  analyses process CTAO-like events without a custom stack.
+
+use_cases:
+  - Calibrate a Cherenkov camera image from a CTAO prototype
+  - Reconstruct shower direction and energy from stereo images
+  - Simulate an IACT event and run it through ctapipe
+  - Build a low-level gamma-ray pipeline on Cherenkov data

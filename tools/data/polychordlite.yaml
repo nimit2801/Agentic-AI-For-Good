@@ -1,0 +1,25 @@
+name: PolyChordLite
+description: Nested sampling engine for high-dimensional Bayesian inference. PolyChordLite explores correlated posteriors with slice sampling so cosmology pipelines compute evidence without a custom nested sampler.
+tagline: Nested sampling for high-dimensional posteriors
+
+github_url: https://github.com/PolyChord/PolyChordLite
+website_url: https://polychord.io
+docs_url: https://github.com/PolyChord/PolyChordLite
+install_command: pip install pypolychord
+
+category: Data
+tags: [python, nested-sampling, bayesian, cosmology, inference, scientific]
+pricing: free
+is_open_source: true
+
+problem_solved: |
+  High-dimensional cosmological posteriors stall classic
+  nested samplers. PolyChordLite uses slice sampling so
+  pipelines compute evidence on those models without a
+  custom nested-sampling engine.
+
+use_cases:
+  - Sample a high-dimensional cosmological likelihood
+  - Compute Bayesian evidence for competing dark-energy models
+  - Call PolyChord from Python through pypolychord
+  - Explore a correlated posterior that nested sampling struggles with
