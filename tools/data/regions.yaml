@@ -1,0 +1,26 @@
+name: regions
+description: Astropy coordinated package for astronomical region handling. regions represents DS9 and CIAO sky regions so pipelines mask sources and apertures without a custom WCS polygon stack.
+tagline: Astronomical sky regions in Astropy
+
+github_url: https://github.com/astropy/regions
+website_url: https://astropy-regions.readthedocs.io
+docs_url: https://astropy-regions.readthedocs.io
+install_command: pip install regions
+
+category: Data
+tags: [python, astronomy, astropy, regions, wcs, scientific]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Source masks and apertures live in DS9 or CIAO region files,
+  but each pipeline rewrites polygon WCS code. regions stores
+  those shapes as Astropy objects so catalogs mask and measure
+  without a custom sky-region parser.
+
+use_cases:
+  - Load a DS9 region file and mask sources on a FITS image
+  - Convert pixel apertures to sky coordinates with WCS
+  - Intersect catalog sources with a CIAO region footprint
+  - Draw circular and polygonal apertures for photometry
