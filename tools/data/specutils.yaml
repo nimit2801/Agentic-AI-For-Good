@@ -1,0 +1,26 @@
+name: specutils
+description: Astropy coordinated package for astronomical spectroscopy. specutils represents spectra, lines, and continuum fits so observatory and ML pipelines analyze 1D spectra without a custom FITS reader.
+tagline: Astronomical spectroscopy in Astropy
+
+github_url: https://github.com/astropy/specutils
+website_url: https://specutils.readthedocs.io
+docs_url: https://specutils.readthedocs.io
+install_command: pip install specutils
+
+category: Data
+tags: [python, astronomy, spectroscopy, astropy, scientific, spectra]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Spectroscopic FITS files differ by instrument, so line fitting
+  and continuum subtraction get rewritten per survey. specutils
+  stores 1D spectra as Astropy objects so pipelines extract lines,
+  fit continua, and resample wavelengths on a common API.
+
+use_cases:
+  - Load a 1D spectrum from FITS and plot flux versus wavelength
+  - Fit an emission line and measure equivalent width
+  - Subtract a fitted continuum before a redshift estimate
+  - Resample spectra onto a common wavelength grid for stacking
