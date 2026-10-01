@@ -1,0 +1,26 @@
+name: xskillscore
+description: Metrics library for verifying forecasts on xarray and NumPy arrays. xskillscore computes RMSE, CRPS, correlation, and contingency scores so weather and climate ML pipelines can score predictions without rolling their own metric functions.
+tagline: Forecast verification metrics for xarray
+
+github_url: https://github.com/xarray-contrib/xskillscore
+website_url: https://xskillscore.readthedocs.io
+docs_url: https://xskillscore.readthedocs.io
+install_command: pip install xskillscore
+
+category: Data
+tags: [python, xarray, forecast, metrics, climate, weather, scientific]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Forecast ML jobs need RMSE, CRPS, and correlation on labeled xarray
+  cubes, but NumPy metric snippets drop coordinates and ensembles.
+  xskillscore keeps those scores label-aware so climate pipelines can
+  verify predictions without flattening grids first.
+
+use_cases:
+  - Compute CRPS of an ensemble forecast Dataset against observations
+  - Score RMSE and Pearson correlation on a climate hindcast cube
+  - Evaluate contingency metrics for a binary precipitation forecast
+  - Apply Dask-backed skill scores to a multi-TB verification archive

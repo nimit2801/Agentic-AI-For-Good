@@ -1,0 +1,26 @@
+name: climpred
+description: Python library for verifying weather and climate forecasts against observations. climpred computes skill scores, bias, and ensemble metrics on xarray so climate ML pipelines can evaluate initialized predictions without custom verification loops.
+tagline: Verification of weather and climate forecasts
+
+github_url: https://github.com/pangeo-data/climpred
+website_url: https://climpred.readthedocs.io
+docs_url: https://climpred.readthedocs.io
+install_command: pip install climpred
+
+category: Data
+tags: [python, climate, weather, forecast, xarray, verification, scientific]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Initialized climate and weather forecasts need skill scores against
+  observations, and every team reimplements lead-time alignment by hand.
+  climpred handles hindcast alignment and ensemble metrics on xarray so
+  ML evaluation jobs can score predictions without custom verification.
+
+use_cases:
+  - Compute anomaly correlation of a seasonal forecast hindcast
+  - Align initialized ensemble members to observations by lead time
+  - Score a weather model against reanalysis with RMSE and CRPSS
+  - Compare ensemble mean skill across forecast systems before training
