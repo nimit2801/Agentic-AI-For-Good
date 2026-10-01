@@ -1,0 +1,26 @@
+name: PyTensor
+description: Library for defining, optimizing, and evaluating multi-dimensional array expressions. PyTensor compiles symbolic graphs so probabilistic ML stacks like PyMC rewrite and accelerate math without hand-tuned kernels.
+tagline: Symbolic array graphs for scientific computing
+
+github_url: https://github.com/pymc-devs/pytensor
+website_url: https://pytensor.readthedocs.io
+docs_url: https://pytensor.readthedocs.io
+install_command: pip install pytensor
+
+category: Data
+tags: [python, symbolic, arrays, pymc, theano, scientific, compiler]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Probabilistic models need optimized array graphs, but rewriting Theano
+  math by hand does not scale. PyTensor defines, rewrites, and compiles
+  those expressions so PyMC and scientific pipelines evaluate likelihoods
+  without custom kernels.
+
+use_cases:
+  - Compile a symbolic log-likelihood graph for a PyMC model
+  - Optimize einsum-heavy array math before sampling
+  - Evaluate a rewritten computational graph on NumPy or C backends
+  - Replace a Theano graph in a legacy Bayesian pipeline

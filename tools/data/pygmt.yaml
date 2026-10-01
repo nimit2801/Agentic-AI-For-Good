@@ -1,0 +1,26 @@
+name: pygmt
+description: Python interface for the Generic Mapping Tools. pygmt builds publication maps, along-track plots, and grid operations so geoscience ML pipelines produce cartography without wrapping GMT in shell scripts.
+tagline: Python interface for Generic Mapping Tools
+
+github_url: https://github.com/GenericMappingTools/pygmt
+website_url: https://www.pygmt.org
+docs_url: https://www.pygmt.org
+install_command: pip install pygmt
+
+category: Data
+tags: [python, gmt, mapping, geoscience, cartography, scientific]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Geoscience papers need GMT-quality maps, but the classic GMT CLI is
+  awkward inside Python ML notebooks. pygmt wraps those modules so
+  pipelines plot grids, tracks, and coastlines without shelling out to
+  GMT for every figure.
+
+use_cases:
+  - Plot a global bathymetry grid with coastlines for a paper figure
+  - Map earthquake epicenters on a regional projection
+  - Overlay satellite tracks on a climate model grid
+  - Generate along-track profiles from a geoscience ML prediction

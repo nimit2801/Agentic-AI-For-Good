@@ -1,0 +1,26 @@
+name: earthaccess
+description: Python library for NASA Earthdata APIs. earthaccess authenticates, searches, and opens granules so climate ML pipelines load satellite archives without hand-rolling Earthdata login and CMR queries.
+tagline: NASA Earthdata search and access in Python
+
+github_url: https://github.com/earthaccess-dev/earthaccess
+website_url: https://earthaccess.readthedocs.io
+docs_url: https://earthaccess.readthedocs.io
+install_command: pip install earthaccess
+
+category: Data
+tags: [python, nasa, earthdata, satellite, climate, scientific]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Climate ML jobs need NASA satellite granules, but Earthdata login and
+  CMR search are a maze of tokens and XML. earthaccess authenticates,
+  searches, and opens those datasets so pipelines load granules without
+  a custom NASA client.
+
+use_cases:
+  - Search MODIS granules for a region and date window
+  - Open NASA Earthdata files as xarray datasets after one login
+  - Stream satellite observations into a climate downscaling pipeline
+  - Authenticate once and reuse credentials across a batch of downloads
