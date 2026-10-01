@@ -1,0 +1,26 @@
+name: coffea
+description: Columnar analysis tools for collider high-energy physics. coffea wraps Awkward and uproot so HEP ML pipelines can run NanoAOD-style analyses at scale without ROOT macros or alien syntax.
+tagline: Columnar collider HEP analysis in Python
+
+github_url: https://github.com/scikit-hep/coffea
+website_url: https://coffea-hep.readthedocs.io
+docs_url: https://coffea-hep.readthedocs.io
+install_command: pip install coffea
+
+category: Data
+tags: [python, hep, coffea, awkward, uproot, particle-physics, scientific]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Collider analyses historically live in ROOT macros that do not scale
+  on columnar Python ML stacks. coffea wraps Awkward and uproot so HEP
+  pipelines can cut, histogram, and scale NanoAOD events without alien
+  syntax or a full ROOT install.
+
+use_cases:
+  - Run a CMS NanoAOD analysis as a columnar processor
+  - Histogram jagged collision events with Awkward arrays
+  - Scale a HEP skimming job across a cluster with Dask
+  - Feed processed collider features into a classification model
