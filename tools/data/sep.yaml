@@ -1,0 +1,26 @@
+name: SEP
+description: Python and C library for astronomical source extraction and photometry. SEP ports Source Extractor so imaging pipelines detect sources and measure fluxes without the classic Fortran binary.
+tagline: Source extraction and photometry in Python
+
+github_url: https://github.com/sep-developers/sep
+website_url: https://sep-pjw.readthedocs.io
+docs_url: https://sep-pjw.readthedocs.io
+install_command: pip install sep
+
+category: Data
+tags: [python, astronomy, photometry, source-extraction, imaging, scientific]
+pricing: free
+is_open_source: true
+license: LGPL-3.0
+
+problem_solved: |
+  Imaging surveys need source detection and aperture
+  photometry, but classic Source Extractor is a Fortran
+  binary outside Python. SEP ports those algorithms so
+  pipelines extract sources without shelling out to SExtractor.
+
+use_cases:
+  - Detect sources on a FITS image and measure aperture fluxes
+  - Subtract a spatially varying background before photometry
+  - Extract a source catalog from a survey CCD frame in Python
+  - Match SEP detections against a reference catalog for QC

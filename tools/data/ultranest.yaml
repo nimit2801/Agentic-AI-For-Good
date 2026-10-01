@@ -1,0 +1,26 @@
+name: UltraNest
+description: Advanced nested sampling for fitting and comparing complex models. UltraNest explores multimodal posteriors so Bayesian pipelines run parameter estimation without a fragile custom sampler.
+tagline: Reliable nested sampling for complex models
+
+github_url: https://github.com/JohannesBuchner/UltraNest
+website_url: https://johannesbuchner.github.io/UltraNest/
+docs_url: https://johannesbuchner.github.io/UltraNest/
+install_command: pip install ultranest
+
+category: Data
+tags: [python, nested-sampling, bayesian, inference, scientific]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Complex likelihoods stall classic nested samplers on
+  multimodal or degeneracy-heavy models. UltraNest
+  explores those posteriors with reactive nested sampling
+  so pipelines compare models without a fragile sampler.
+
+use_cases:
+  - Fit a multimodal astrophysical model with nested sampling
+  - Compare nested models using Bayesian evidence
+  - Sample a custom likelihood from Python without writing a sampler
+  - Diagnose posterior degeneracies with UltraNest live plots

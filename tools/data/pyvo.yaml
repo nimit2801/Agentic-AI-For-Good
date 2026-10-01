@@ -1,0 +1,26 @@
+name: PyVO
+description: Astropy affiliated package for Virtual Observatory services. PyVO queries TAP, SIA, and SCS endpoints so astronomy pipelines pull remote catalogs without a custom VO client.
+tagline: Python client for Virtual Observatory services
+
+github_url: https://github.com/astropy/pyvo
+website_url: https://pyvo.readthedocs.io
+docs_url: https://pyvo.readthedocs.io
+install_command: pip install pyvo
+
+category: Data
+tags: [python, astronomy, virtual-observatory, tap, catalogs, scientific]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Survey catalogs live behind TAP, SIA, and cone-search
+  services, but each archive ships a different client.
+  PyVO speaks those IVOA protocols so pipelines query
+  remote tables without a custom VO wrapper.
+
+use_cases:
+  - Run an ADQL TAP query against an archive and return a table
+  - Cone-search a catalog around a target coordinate
+  - Discover SIA image services and download cutouts
+  - Join remote VO tables with a local Astropy catalog
