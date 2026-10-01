@@ -1,0 +1,26 @@
+name: pooch
+description: Python library that fetches, caches, and version-checks data files for scientific packages. pooch downloads sample datasets and model weights to a local cache with hashes so ML pipelines can ship reproducible data without bundling large files in the repo.
+tagline: Fetch and cache data files for scientific Python
+
+github_url: https://github.com/fatiando/pooch
+website_url: https://www.fatiando.org/pooch
+docs_url: https://www.fatiando.org/pooch
+install_command: pip install pooch
+
+category: Data
+tags: [python, datasets, caching, scientific, reproducibility, download]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Scientific Python packages need sample data and weights, but shipping
+  them in the repo bloats releases and breaks hashes. pooch downloads
+  files on first use, verifies checksums, and caches them so ML tutorials
+  and libraries stay reproducible without embedding binaries.
+
+use_cases:
+  - Download a hashed sample NetCDF into a package cache on first import
+  - Pin tutorial datasets by DOI or URL with a checksum
+  - Fetch pretrained scientific weights without bundling them in git
+  - Share a registry of data files across a research Python library

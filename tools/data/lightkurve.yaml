@@ -1,0 +1,26 @@
+name: lightkurve
+description: Python package for Kepler and TESS time-series analysis. lightkurve opens light curves and target pixel files so exoplanet and stellar-variability ML pipelines can detrend, fold, and search transit signals without NASA archive glue.
+tagline: Kepler and TESS light-curve analysis in Python
+
+github_url: https://github.com/lightkurve/lightkurve
+website_url: https://lightkurve.github.io/lightkurve/
+docs_url: https://lightkurve.github.io/lightkurve/
+install_command: pip install lightkurve
+
+category: Data
+tags: [python, astronomy, tess, kepler, time-series, exoplanet, scientific]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Kepler and TESS light curves live in mission-specific FITS products,
+  and turning them into clean time series is a specialized pipeline.
+  lightkurve opens those files, detrends systematics, and folds periods
+  so exoplanet ML jobs start from analysis-ready flux arrays.
+
+use_cases:
+  - Download a TESS light curve and flatten it before transit search
+  - Fold a Kepler periodogram to inspect a candidate exoplanet signal
+  - Convert target pixel files into custom aperture light curves
+  - Build a stellar-variability training set from MAST time series
