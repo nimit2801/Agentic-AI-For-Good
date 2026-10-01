@@ -1,0 +1,26 @@
+name: adlfs
+description: fsspec filesystem for Azure Blob Storage and Azure Data Lake Storage Gen2. Registers the abfs:// and az:// protocols so Dask, pandas, and PyArrow can read and write CSV, Parquet, and other files on Azure with account keys, SAS tokens, or DefaultAzureCredential.
+tagline: fsspec Azure Blob and Data Lake filesystem
+
+github_url: https://github.com/fsspec/adlfs
+website_url: https://fsspec.github.io/adlfs/api/
+docs_url: https://fsspec.github.io/adlfs/api/
+install_command: pip install adlfs
+
+category: Data
+tags: [python, azure, fsspec, blob-storage, adls, dask, parquet]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Azure Blob and ADLS Gen2 are common homes for training data, but pandas
+  and Dask need an fsspec implementation to treat them like local paths.
+  adlfs adds abfs:// and az:// so ML pipelines can stream CSV and Parquet
+  from Azure using account keys, SAS tokens, or DefaultAzureCredential.
+
+use_cases:
+  - Read partitioned Parquet from Azure Blob with Dask or pandas
+  - Write training CSV shards to ADLS Gen2 over abfs://
+  - Access public Azure Open Datasets with only an account_name
+  - Authenticate to private containers via DefaultAzureCredential in Azure ML
