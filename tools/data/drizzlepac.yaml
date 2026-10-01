@@ -1,0 +1,26 @@
+name: drizzlepac
+description: STScI software for aligning and combining Hubble Space Telescope images with AstroDrizzle. drizzlepac mosaics visits, removes cosmic rays, and models distortion so HST pipelines produce science-ready mosaics without a custom drizzle rewrite.
+tagline: HST image combination and mosaics with AstroDrizzle
+
+github_url: https://github.com/spacetelescope/drizzlepac
+website_url: https://drizzlepac.readthedocs.io
+docs_url: https://drizzlepac.readthedocs.io
+install_command: pip install drizzlepac
+
+category: Data
+tags: [python, astronomy, hst, stsci, drizzle, scientific]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  HST visits need alignment, distortion correction, and
+  cosmic-ray rejection before a mosaic is science-ready.
+  drizzlepac runs AstroDrizzle and TweakReg so pipelines
+  combine HST images without a custom drizzle stack.
+
+use_cases:
+  - Drizzle a Hubble ACS visit into a distortion-corrected mosaic
+  - Align overlapping HST exposures with TweakReg before combination
+  - Reject cosmic rays across a multi-exposure WFC3 stack
+  - Produce HAP single-visit mosaics for an HST archive program
