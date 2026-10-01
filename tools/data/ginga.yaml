@@ -1,0 +1,26 @@
+name: Ginga
+description: Scientific FITS image viewer and toolkit for astronomy. Ginga displays large FITS frames with pan, zoom, and plugin tools so observatory pipelines inspect images without a custom Qt viewer.
+tagline: Astronomical FITS image viewer and toolkit
+
+github_url: https://github.com/ejeschke/ginga
+website_url: https://ejeschke.github.io/ginga/
+docs_url: https://ginga.readthedocs.io
+install_command: pip install ginga
+
+category: Data
+tags: [python, astronomy, fits, image-viewer, scientific, visualization]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Observatory FITS frames are huge, so teams rewrite Qt viewers
+  for pan, zoom, and cutouts. Ginga is a scientific image viewer
+  and toolkit so pipelines inspect FITS data with plugins instead
+  of a custom desktop viewer.
+
+use_cases:
+  - Open a large FITS image and pan or zoom without loading it all
+  - Inspect observatory frames with plugins for cuts and overlays
+  - Embed a Ginga viewer widget in a custom astronomy desktop app
+  - Compare FITS cutouts during a night of telescope operations

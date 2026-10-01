@@ -1,0 +1,26 @@
+name: exoplanet
+description: Fast MCMC toolkit for exoplanet transit and radial-velocity models. exoplanet builds Gaussian-process and Keplerian models on PyMC so transit fits scale without a custom NUTS sampler.
+tagline: Fast MCMC for exoplanet transit and RV models
+
+github_url: https://github.com/exoplanet-dev/exoplanet
+website_url: https://docs.exoplanet.codes
+docs_url: https://docs.exoplanet.codes
+install_command: pip install exoplanet
+
+category: Data
+tags: [python, astronomy, exoplanets, mcmc, pymc, scientific]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Transit and radial-velocity fits need Keplerian orbits plus
+  Gaussian processes, but custom NUTS code is slow and brittle.
+  exoplanet builds those models on PyMC so MCMC scales for
+  multi-planet systems without a handwritten sampler.
+
+use_cases:
+  - Fit a Keplerian transit model to TESS light curves with PyMC
+  - Jointly model radial-velocity and transit data for a multi-planet system
+  - Add a Gaussian-process noise model to an exoplanet light curve
+  - Sample posterior planet parameters without writing a custom NUTS kernel
