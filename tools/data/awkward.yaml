@@ -1,0 +1,26 @@
+name: Awkward
+description: Manipulate JSON-like nested data with NumPy-like idioms. Awkward Array keeps jagged particle-physics and event records columnar so scientific ML pipelines can vectorize variable-length structures without padding to dense tensors first.
+tagline: Nested arrays with NumPy-like operations
+
+github_url: https://github.com/scikit-hep/awkward
+website_url: https://awkward-array.org
+docs_url: https://awkward-array.org
+install_command: pip install awkward
+
+category: Data
+tags: [python, numpy, nested, jagged-array, hep, scientific, columnar]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Particle physics and event logs store variable-length nested records
+  that NumPy cannot vectorize without padding. Awkward Array keeps those
+  jagged structures columnar so scientific ML pipelines can slice and
+  compute without exploding memory on dense tensors.
+
+use_cases:
+  - Vectorize jagged collision events without padding to a dense array
+  - Convert nested JSON-like records into columnar Awkward arrays
+  - Slice variable-length tracks before a high-energy physics model
+  - Interoperate Awkward arrays with NumPy and Arrow in a training job

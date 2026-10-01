@@ -1,0 +1,26 @@
+name: Satpy
+description: Python package for earth-observing satellite data processing. Satpy reads dozens of meteorological satellite formats into a common scene so remote-sensing ML pipelines can resample, composite, and write analysis-ready imagery without per-sensor readers.
+tagline: Earth-observing satellite data processing in Python
+
+github_url: https://github.com/pytroll/satpy
+website_url: https://satpy.readthedocs.io
+docs_url: https://satpy.readthedocs.io
+install_command: pip install satpy
+
+category: Data
+tags: [python, satellite, remote-sensing, weather, geospatial, pytroll, earth-observation]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Meteorological satellites ship proprietary Level-1 formats that each
+  need a custom reader. Satpy loads those sensors into a shared Scene
+  so remote-sensing ML pipelines can resample, composite, and export
+  analysis-ready imagery without per-sensor code.
+
+use_cases:
+  - Read GOES or MSG Level-1 files into a common satellite Scene
+  - Resample multi-sensor imagery onto a shared area definition
+  - Composite true-color channels before a wildfire detection model
+  - Write processed satellite scenes to GeoTIFF for training

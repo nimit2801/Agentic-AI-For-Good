@@ -1,0 +1,26 @@
+name: GeoViews
+description: HoloViz library for concise geographical visualization in Python. GeoViews overlays xarray, GeoPandas, and tile sources so climate and remote-sensing ML pipelines can inspect spatial datasets interactively before training.
+tagline: Concise geographical visualization in Python
+
+github_url: https://github.com/holoviz/geoviews
+website_url: https://geoviews.org
+docs_url: https://geoviews.org
+install_command: pip install geoviews
+
+category: Data
+tags: [python, geospatial, visualization, holoviz, xarray, climate, mapping]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Climate and remote-sensing arrays are hard to sanity-check without a
+  map. GeoViews sits on HoloViews so pipelines can overlay xarray fields,
+  GeoPandas shapes, and tiles interactively instead of exporting static
+  cartopy figures for every QA pass.
+
+use_cases:
+  - Overlay a climate DataArray on web tiles before a training run
+  - Inspect GeoPandas features against a satellite raster interactively
+  - Build a dashboard of meteorological fields from xarray input
+  - QA a regridded Earth-observation cube on a geographic map
