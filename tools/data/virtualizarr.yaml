@@ -1,0 +1,26 @@
+name: VirtualiZarr
+description: Create virtual Zarr stores from archival NetCDF, HDF5, and similar files using xarray syntax. VirtualiZarr cloud-optimizes scientific data in place so pipelines can read legacy formats through Zarr without copying the originals.
+tagline: Virtual Zarr stores from archival scientific files
+
+github_url: https://github.com/zarr-developers/VirtualiZarr
+website_url: https://virtualizarr.readthedocs.io
+docs_url: https://virtualizarr.readthedocs.io
+install_command: pip install virtualizarr
+
+category: Data
+tags: [python, zarr, xarray, netcdf, hdf5, cloud, object-storage]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Climate and remote-sensing archives still live as NetCDF or HDF5 files
+  that are expensive to rewrite as Zarr. VirtualiZarr builds virtual stores
+  with xarray so those originals stay in place while Zarr and object storage
+  clients fetch only the chunks a training or analysis job needs.
+
+use_cases:
+  - Wrap a NetCDF climate archive as a virtual Zarr store on S3
+  - Open heterogeneous HDF5 granules through xarray without rewriting them
+  - Migrate Kerchunk references to VirtualiZarr for new science pipelines
+  - Cloud-optimize a multi-file observational dataset for parallel reads

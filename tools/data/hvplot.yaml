@@ -1,0 +1,26 @@
+name: hvplot
+description: High-level plotting API for pandas, Dask, xarray, and NetworkX built on HoloViews. hvplot adds a .hvplot accessor so exploratory charts of tabular and labeled-array data stay interactive without dropping into low-level Bokeh or Matplotlib code.
+tagline: High-level plotting for pandas, Dask, and xarray
+
+github_url: https://github.com/holoviz/hvplot
+website_url: https://hvplot.holoviz.org
+docs_url: https://hvplot.holoviz.org
+install_command: pip install hvplot
+
+category: Data
+tags: [python, plotting, pandas, xarray, dask, holoviews, visualization]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Exploring large pandas or xarray datasets often means rewriting the same
+  Matplotlib or Bokeh boilerplate for every chart. hvplot adds a .hvplot
+  accessor so interactive line, scatter, image, and choropleth views come
+  from one API across pandas, Dask, xarray, and NetworkX.
+
+use_cases:
+  - Plot a pandas feature table with interactive scatter and hist charts
+  - Visualize an xarray climate cube as a time slider image
+  - Explore a Dask dataframe without collecting the full result first
+  - Build a HoloViews dashboard from the same .hvplot calls used in a notebook

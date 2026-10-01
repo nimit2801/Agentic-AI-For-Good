@@ -1,0 +1,27 @@
+name: Icechunk
+description: Cloud-native transactional storage engine for tensor data on object storage. Icechunk extends Zarr with commits, branches, and time travel so ML and science teams can version large ND-arrays on S3, GCS, or Azure without rewriting prefixes.
+tagline: Transactional Zarr storage for cloud tensors
+
+github_url: https://github.com/earth-mover/icechunk
+website_url: https://icechunk.io
+docs_url: https://icechunk.io/en/latest/
+install_command: pip install icechunk
+
+category: Data
+tags: [python, zarr, object-storage, tensors, versioning, s3, rust]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Plain Zarr on object storage has no commits or isolation, so concurrent
+  writes can corrupt prefixes and there is no way to roll back a bad array
+  snapshot. Icechunk adds a transactional store on top of Zarr so training
+  and science jobs can branch, commit, and time-travel large tensors on S3,
+  GCS, or Azure.
+
+use_cases:
+  - Version a multi-terabyte Zarr training array on S3 with git-like commits
+  - Branch a climate cube, run an experiment, and merge or discard the write
+  - Time-travel to a prior tensor snapshot after a bad preprocessing job
+  - Share a consistent cloud array with concurrent readers during a write

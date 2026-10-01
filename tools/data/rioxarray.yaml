@@ -1,0 +1,26 @@
+name: rioxarray
+description: Geospatial extension for xarray powered by rasterio. rioxarray adds CRS, clipping, reprojection, and GeoTIFF I/O to labeled arrays so climate and remote-sensing ML pipelines stay in xarray instead of dropping to GDAL for every raster step.
+tagline: Geospatial xarray extension powered by rasterio
+
+github_url: https://github.com/corteva/rioxarray
+website_url: https://corteva.github.io/rioxarray
+docs_url: https://corteva.github.io/rioxarray
+install_command: pip install rioxarray
+
+category: Data
+tags: [python, xarray, rasterio, geospatial, geotiff, gdal, remote-sensing]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  xarray is the default for labeled climate arrays, but CRS, clipping, and
+  GeoTIFF I/O usually force a hop to rasterio or GDAL. rioxarray attaches
+  those geospatial operations to the array so remote-sensing and ML
+  pipelines can reproject and write rasters without leaving xarray.
+
+use_cases:
+  - Clip and reproject a satellite DataArray to a training AOI
+  - Read a GeoTIFF into xarray with CRS and transform metadata
+  - Write a labeled climate array back to Cloud Optimized GeoTIFF
+  - Mask raster features against a GeoJSON boundary before model input
