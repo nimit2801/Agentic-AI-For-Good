@@ -1,0 +1,26 @@
+name: pygrib
+description: High-level Python interface to ECMWF ecCodes for reading and writing GRIB files. pygrib lets weather ML pipelines decode GRIB 1/2 messages into NumPy arrays, inspect keys, and rewrite selected fields without dropping to the C API.
+tagline: Python reader and writer for GRIB weather files
+
+github_url: https://github.com/jswhit/pygrib
+website_url: https://jswhit.github.io/pygrib
+docs_url: https://jswhit.github.io/pygrib
+install_command: pip install pygrib
+
+category: Data
+tags: [python, grib, weather, climate, ecmwf, numpy, scientific]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Operational weather archives still ship as GRIB, and decoding them in
+  Python usually means wrapping the ecCodes C library by hand. pygrib
+  exposes GRIB 1/2 messages as NumPy arrays with inspectable keys so
+  forecasting ML jobs can read and lightly rewrite fields without C glue.
+
+use_cases:
+  - Decode an ECMWF GRIB forecast into NumPy arrays for a training batch
+  - Inspect GRIB keys such as level, parameter, and valid time before ingest
+  - Rewrite selected messages in an existing GRIB file after quality control
+  - Pull HRRR surface fields into a weather nowcasting pipeline

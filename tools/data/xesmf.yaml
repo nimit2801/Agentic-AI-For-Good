@@ -1,0 +1,26 @@
+name: xESMF
+description: Universal regridder for geospatial data built on ESMF and xarray. xESMF remaps climate and weather fields between rectilinear and curvilinear grids with bilinear, conservative, and nearest-neighbor methods so ML pipelines can align datasets without Fortran ESMF glue.
+tagline: xarray regridding for climate and weather grids
+
+github_url: https://github.com/pangeo-data/xESMF
+website_url: https://xesmf.readthedocs.io/
+docs_url: https://xesmf.readthedocs.io/
+install_command: pip install xesmf
+
+category: Data
+tags: [python, xarray, regridding, climate, weather, esmf, dask, scientific]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Climate ML stacks mix model output, satellite fields, and reanalysis on
+  different grids, and ESMF itself is a heavy Fortran stack. xESMF wraps
+  ESMF regridding in an xarray API with Dask so pipelines can bilinear or
+  conservatively remap cubes without writing ESMPy boilerplate.
+
+use_cases:
+  - Regrid a CMIP ocean field onto a regular lat-lon training grid
+  - Conservatively remap precipitation from a satellite grid onto a model mesh
+  - Apply a nearest-neighbor regrid when aligning sparse weather stations
+  - Parallelize out-of-core regridding of a multi-TB climate archive with Dask
