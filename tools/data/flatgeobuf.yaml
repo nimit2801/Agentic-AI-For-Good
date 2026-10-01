@@ -1,0 +1,26 @@
+name: FlatGeobuf
+description: Performant binary encoding for geographic features based on FlatBuffers. FlatGeobuf streams vector features with random access so geospatial ML pipelines can read large GeoJSON-scale datasets without parsing the whole file first.
+tagline: Binary encoding for streaming geographic features
+
+github_url: https://github.com/flatgeobuf/flatgeobuf
+website_url: https://flatgeobuf.org
+docs_url: https://flatgeobuf.org
+install_command: npm install flatgeobuf
+
+category: Data
+tags: [geospatial, vector, flatbuffers, geojson, streaming, javascript, binary]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Large vector datasets in GeoJSON are slow to parse and cannot seek to a
+  bounding box without reading the whole file. FlatGeobuf encodes features
+  with FlatBuffers so geospatial ML pipelines can stream and randomly
+  access millions of geometries.
+
+use_cases:
+  - Stream country-scale vector features into a training pipeline
+  - Serve a bounding-box slice of a large geospatial dataset over HTTP
+  - Convert GeoJSON archives to a seekable binary feature format
+  - Read FlatGeobuf tiles in a JavaScript mapping or feature-prep job

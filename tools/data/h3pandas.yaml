@@ -1,0 +1,26 @@
+name: h3pandas
+description: Pandas and GeoPandas accessors for Uber H3 hexagonal indexing. h3pandas bins points and polygons into H3 cells so geospatial ML pipelines can aggregate location data on a hierarchical hex grid without dropping to the raw H3 API.
+tagline: H3 hexagonal indexing for Pandas and GeoPandas
+
+github_url: https://github.com/DahnJ/H3-Pandas
+website_url: https://h3-pandas.readthedocs.io
+docs_url: https://h3-pandas.readthedocs.io
+install_command: pip install h3pandas
+
+category: Data
+tags: [python, pandas, geopandas, h3, geospatial, hexagon, indexing]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Location ML jobs need a stable spatial index, but wiring Uber H3 through
+  raw hex IDs next to GeoPandas is boilerplate-heavy. h3pandas adds H3
+  accessors on Series and GeoDataFrames so pipelines can bin points and
+  polygons on a hierarchical hex grid in one call.
+
+use_cases:
+  - Aggregate GPS points into H3 cells before a demand-forecasting model
+  - Convert polygon boundaries to H3 indexes for spatial joins
+  - Smooth sparse location counts across neighboring hex rings
+  - Attach H3 resolution columns to a GeoPandas training frame
