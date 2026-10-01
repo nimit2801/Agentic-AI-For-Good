@@ -1,0 +1,26 @@
+name: ACT
+description: Atmospheric data Community Toolkit from ARM DOE. ACT explores and plots time-series atmospheric datasets so weather pipelines QC ARM observations without a custom xarray dashboard.
+tagline: Atmospheric time-series toolkit from ARM DOE
+
+github_url: https://github.com/ARM-DOE/ACT
+website_url: https://arm-doe.github.io/ACT/
+docs_url: https://arm-doe.github.io/ACT/
+install_command: pip install act-atmos
+
+category: Data
+tags: [python, atmospheric, weather, arm, time-series, scientific]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  ARM atmospheric time series need QC, retrievals, and plots,
+  but each site rewrites xarray dashboards. ACT loads those
+  datasets so weather pipelines explore and quality-control
+  observations without a custom ARM reader.
+
+use_cases:
+  - Load an ARM netCDF time series and plot a sounding
+  - Quality-control ceilometer or radiometer observations
+  - Compare multi-instrument atmospheric retrievals in one notebook
+  - Visualize precipitation and aerosol time series from ARM sites
