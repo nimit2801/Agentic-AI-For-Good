@@ -1,0 +1,26 @@
+name: universal-pathlib
+description: pathlib-compatible API extended to fsspec backends. universal-pathlib lets Python code use Path-style joins, glob, and open on S3, GCS, Azure, and other fsspec URLs so ML pipelines do not special-case cloud paths.
+tagline: pathlib API for fsspec cloud filesystems
+
+github_url: https://github.com/fsspec/universal_pathlib
+website_url: https://universal-pathlib.readthedocs.org
+docs_url: https://universal-pathlib.readthedocs.org
+install_command: pip install universal-pathlib
+
+category: Dev Tools
+tags: [python, pathlib, fsspec, s3, gcs, filesystem]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  pathlib only works on local disks, so cloud ML jobs fork path logic
+  for S3, GCS, and Azure. universal-pathlib implements the Path API on
+  fsspec URLs so the same glob, join, and open calls work on object
+  storage and local files.
+
+use_cases:
+  - Glob training shards on s3:// with Path-style syntax
+  - Open a GCS checkpoint using the same API as a local file
+  - Write config and artifacts to abfs:// without boto3 path glue
+  - Share path helpers across local dev and cloud training jobs

@@ -1,0 +1,26 @@
+name: stackstac
+description: Load a STAC catalog into a Dask-backed xarray DataArray. stackstac stacks Cloud Optimized GeoTIFF assets along time and band so remote-sensing ML pipelines can slice satellite imagery lazily without downloading full scenes first.
+tagline: STAC catalogs to Dask-backed xarray arrays
+
+github_url: https://github.com/gjoseph92/stackstac
+website_url: https://stackstac.readthedocs.io
+docs_url: https://stackstac.readthedocs.io
+install_command: pip install stackstac
+
+category: Data
+tags: [python, stac, xarray, dask, geotiff, remote-sensing, satellite]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Satellite STAC items point at many COGs, and stacking them into a
+  time-by-band array usually means custom rasterio loops. stackstac
+  turns a STAC search into a Dask xarray so training jobs can slice
+  imagery lazily without pulling every scene locally.
+
+use_cases:
+  - Stack Sentinel-2 STAC items into a time series DataArray
+  - Slice a bounding box and date range from a planetary STAC search
+  - Feed lazy COG chunks into a Dask remote-sensing training job
+  - Mosaic overlapping satellite assets along a common grid

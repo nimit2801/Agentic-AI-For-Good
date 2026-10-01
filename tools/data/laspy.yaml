@@ -1,0 +1,26 @@
+name: laspy
+description: Pythonic reader, writer, and editor for LAS and LAZ LiDAR files covering specs 1.0 through 1.4. laspy exposes point records as NumPy arrays so 3D perception and mapping pipelines can work with airborne and terrestrial point clouds in Python.
+tagline: Python I/O for LAS and LAZ LiDAR point clouds
+
+github_url: https://github.com/laspy/laspy
+website_url: https://laspy.readthedocs.io/en/latest/
+docs_url: https://laspy.readthedocs.io/en/latest/
+install_command: pip install laspy
+
+category: Data
+tags: [python, lidar, las, point-cloud, geospatial, numpy]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  LiDAR surveys ship as LAS/LAZ, and pulling them into Python usually
+  means a C++ tool or a slow parser. laspy reads and writes those
+  files as NumPy arrays so mapping and 3D ML jobs can filter, crop,
+  and convert point clouds without leaving Python.
+
+use_cases:
+  - Load an airborne LAS tile into NumPy for ground classification
+  - Crop a LAZ cloud to a training bounding box
+  - Convert LAS 1.4 extra dimensions into a feature table
+  - Write a filtered point cloud back to LAZ for downstream mapping
