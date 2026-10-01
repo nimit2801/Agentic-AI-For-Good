@@ -1,0 +1,26 @@
+name: xgcm
+description: Python package for analyzing general circulation model output with xarray. xgcm understands staggered C-grids so ocean and atmosphere ML pipelines can interpolate, differentiate, and grid-transform GCM fields without hand-rolled finite-difference code.
+tagline: Analyze GCM grids with xarray
+
+github_url: https://github.com/xgcm/xgcm
+website_url: https://xgcm.readthedocs.io
+docs_url: https://xgcm.readthedocs.io
+install_command: pip install xgcm
+
+category: Data
+tags: [python, xarray, climate, ocean, gcm, grids, scientific]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Ocean and atmosphere GCMs store velocity, tracers, and metrics on
+  staggered C-grids that plain xarray cannot interpolate. xgcm models
+  those grids so climate ML pipelines can differentiate and transform
+  fields without writing finite-difference code by hand.
+
+use_cases:
+  - Interpolate staggered velocity fields onto a tracer grid
+  - Compute finite-difference gradients on a GCM C-grid Dataset
+  - Transform ocean model output between grid positions before training
+  - Analyze MITgcm or similar circulation output inside xarray

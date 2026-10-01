@@ -1,0 +1,26 @@
+name: odc-stac
+description: Load STAC items into xarray Datasets using the Open Data Cube data model. odc-stac turns STAC search results into labeled, chunked arrays so Earth observation ML pipelines can read Cloud Optimized GeoTIFFs as analysis-ready cubes.
+tagline: Load STAC items into xarray Datasets
+
+github_url: https://github.com/opendatacube/odc-stac
+website_url: https://odc-stac.readthedocs.io
+docs_url: https://odc-stac.readthedocs.io
+install_command: pip install odc-stac
+
+category: Data
+tags: [python, stac, xarray, opendatacube, geotiff, remote-sensing, satellite]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  STAC items point at rasters, but ML jobs need a labeled xarray cube
+  on a shared grid. odc-stac maps those items onto the Open Data Cube
+  model so Earth-observation pipelines can load COGs as chunked
+  Datasets instead of writing custom rasterio stacks.
+
+use_cases:
+  - Load a pystac-client search into an xarray Dataset on a common grid
+  - Chunk Cloud Optimized GeoTIFF assets for a Dask remote-sensing job
+  - Reproject STAC bands into an analysis-ready Earth observation cube
+  - Assemble time-stacked satellite imagery without a full ODC database
