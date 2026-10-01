@@ -1,0 +1,26 @@
+name: POPPY
+description: Physical Optics Propagation in Python from STScI. POPPY simulates diffraction, PSFs, and optical systems so JWST and telescope pipelines model point-spread functions without a custom Fourier optics stack.
+tagline: Physical optics and PSF simulation in Python
+
+github_url: https://github.com/spacetelescope/poppy
+website_url: https://poppy-optics.readthedocs.io
+docs_url: https://poppy-optics.readthedocs.io
+install_command: pip install poppy
+
+category: Data
+tags: [python, optics, psf, astronomy, diffraction, scientific]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Telescope and coronagraph design needs diffraction PSFs, but
+  Fourier optics code is rewritten per instrument. POPPY propagates
+  wavefronts through optical systems so JWST and lab pipelines
+  simulate PSFs without a custom FFT optics stack.
+
+use_cases:
+  - Simulate a telescope PSF including diffraction and obscuration
+  - Model a coronagraph optical train before an instrument review
+  - Compare measured and simulated PSFs for a JWST observation
+  - Propagate a wavefront through a segmented-aperture model
