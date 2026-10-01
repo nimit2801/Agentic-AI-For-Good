@@ -1,0 +1,26 @@
+name: ndcube
+description: SunPy affiliated package for WCS-aware n-dimensional arrays. ndcube combines data, units, masks, and coordinates so solar pipelines slice cubes without a custom WCS wrapper.
+tagline: Coordinate-aware n-dimensional arrays for solar data
+
+github_url: https://github.com/sunpy/ndcube
+website_url: https://docs.sunpy.org/projects/ndcube
+docs_url: https://docs.sunpy.org/projects/ndcube
+install_command: pip install ndcube
+
+category: Data
+tags: [python, astronomy, sunpy, wcs, arrays, scientific]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Solar and space cubes mix spatial, spectral, and time
+  axes, but numpy slices drop WCS. ndcube keeps data,
+  units, masks, and world coordinates together so pipelines
+  crop and plot cubes without a custom coordinate wrapper.
+
+use_cases:
+  - Slice a solar spectral cube along wavelength with WCS intact
+  - Plot a SunPy map sequence as a coordinate-aware NDCube
+  - Reproject a multi-dimensional observation onto a new WCS grid
+  - Crop an IRIS or AIA cube by world coordinates instead of pixels

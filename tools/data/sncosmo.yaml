@@ -1,0 +1,26 @@
+name: sncosmo
+description: Astropy-affiliated Python library for supernova cosmology. sncosmo fits light curves, synthesizes photometry, and compares SN Ia models so cosmology pipelines analyze transients without a custom SED fitter.
+tagline: Supernova cosmology and light-curve fitting
+
+github_url: https://github.com/sncosmo/sncosmo
+website_url: https://sncosmo.readthedocs.io
+docs_url: https://sncosmo.readthedocs.io
+install_command: pip install sncosmo
+
+category: Data
+tags: [python, astronomy, supernova, cosmology, photometry, scientific]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Type Ia supernova cosmology needs light-curve models,
+  bandpasses, and dust, but each survey rewrites a fitter.
+  sncosmo synthesizes photometry and fits transients so
+  pipelines compare SN models without a custom SED stack.
+
+use_cases:
+  - Fit an SN Ia light curve with SALT2 and report stretch and color
+  - Synthesize photometry through survey bandpasses from an SED
+  - Compare supernova models against multi-band observations
+  - Simulate a transient survey catalog with dust and redshift
