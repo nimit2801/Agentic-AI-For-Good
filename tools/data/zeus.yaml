@@ -1,0 +1,26 @@
+name: zeus
+description: Ensemble slice-sampling MCMC sampler for Python. zeus explores correlated posteriors so Bayesian pipelines sample parameters without hand-tuning a Metropolis random walk.
+tagline: Lightning-fast ensemble slice MCMC
+
+github_url: https://github.com/minaskar/zeus
+website_url: https://zeus-mcmc.readthedocs.io
+docs_url: https://zeus-mcmc.readthedocs.io
+install_command: pip install zeus-mcmc
+
+category: Data
+tags: [python, mcmc, bayesian, slice-sampling, inference, scientific]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Correlated posteriors stall random-walk MCMC and need
+  careful tuning. zeus uses ensemble slice sampling so
+  Bayesian pipelines explore those densities without
+  hand-tuning a Metropolis step.
+
+use_cases:
+  - Sample a correlated astrophysical posterior with ensemble MCMC
+  - Replace emcee on a problem where walkers mix slowly
+  - Diagnose chain convergence with zeus diagnostics
+  - Fit a custom likelihood from Python without writing a sampler

@@ -1,0 +1,26 @@
+name: PyMultiNest
+description: Python bindings for MultiNest nested sampling and Cuba cubature. PyMultiNest runs Bayesian evidence and posterior sampling so inference pipelines fit multimodal models without wrapping the Fortran library by hand.
+tagline: Python access to MultiNest nested sampling
+
+github_url: https://github.com/JohannesBuchner/PyMultiNest
+website_url: https://johannesbuchner.github.io/PyMultiNest/
+docs_url: https://johannesbuchner.github.io/PyMultiNest/
+install_command: pip install pymultinest
+
+category: Data
+tags: [python, nested-sampling, bayesian, multinest, inference, scientific]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  MultiNest is a Fortran nested sampler that most Python
+  models cannot call directly. PyMultiNest wraps MultiNest
+  and Cuba so inference pipelines compute evidence and
+  posteriors without a custom Fortran bridge.
+
+use_cases:
+  - Sample a multimodal likelihood with MultiNest from Python
+  - Compare nested models using Bayesian evidence
+  - Plot MultiNest posterior marginals after a fit
+  - Integrate a high-dimensional function with PyCuba

@@ -1,0 +1,27 @@
+name: stingray
+description: Spectral timing library for X-ray astronomy. stingray computes power spectra, lags, and periodograms so high-energy pipelines analyze light curves without a custom X-ray timing stack.
+tagline: Spectral timing for X-ray astronomy
+
+github_url: https://github.com/StingraySoftware/stingray
+website_url: https://stingray.science
+docs_url: https://docs.stingray.science
+install_command: pip install stingray
+
+category: Data
+tags: [python, astronomy, x-ray, timing, periodogram, scientific]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  X-ray light curves need power spectra, lags, and
+  quasi-periodic oscillation searches, but HEASoft
+  scripts sit outside Python. stingray implements those
+  estimators so pipelines time compact objects without
+  a custom X-ray stack.
+
+use_cases:
+  - Compute a power spectrum from an RXTE or NICER event list
+  - Measure time lags between energy bands in an AGN light curve
+  - Search a neutron-star observation for quasi-periodic oscillations
+  - Simulate a timing observation and recover injected variability

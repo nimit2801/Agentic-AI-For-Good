@@ -1,0 +1,26 @@
+name: spacepy
+description: Space science library for Python from Los Alamos. spacepy handles magnetic field models, coordinate transforms, and superposed epochs so heliophysics pipelines analyze spacecraft data without a custom LANL stack.
+tagline: Space science toolkit for heliophysics data
+
+github_url: https://github.com/spacepy/spacepy
+website_url: https://spacepy.github.io
+docs_url: https://spacepy.github.io
+install_command: pip install spacepy
+
+category: Data
+tags: [python, space-science, heliophysics, magnetosphere, scientific]
+pricing: free
+is_open_source: true
+
+problem_solved: |
+  Spacecraft magnetosphere data need field models,
+  coordinates, and superposed epochs, but each mission
+  rewrites converters. spacepy wraps those LANL tools
+  so heliophysics pipelines analyze data without a
+  custom space-physics stack.
+
+use_cases:
+  - Convert spacecraft times and coordinates into a common frame
+  - Trace drift shells through a magnetic field model
+  - Run a superposed-epoch analysis on storm-time observations
+  - Compute bootstrap confidence limits on a space-physics time series
