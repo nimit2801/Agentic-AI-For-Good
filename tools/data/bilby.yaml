@@ -1,0 +1,27 @@
+name: Bilby
+description: Unified Python framework for Bayesian sampling and gravitational-wave inference. Bilby wraps nested samplers and GW likelihoods so LIGO analyses run parameter estimation without a custom sampler stack.
+tagline: Bayesian inference for gravitational waves
+
+github_url: https://github.com/bilby-dev/bilby
+website_url: https://bilby-dev.github.io/bilby/
+docs_url: https://bilby-dev.github.io/bilby/
+install_command: pip install bilby
+
+category: Data
+tags: [python, gravitational-waves, bayesian, nested-sampling, ligo, scientific]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Gravitational-wave parameter estimation needs nested
+  samplers, likelihoods, and priors, but each analysis
+  rewires dynesty or emcee by hand. Bilby unifies those
+  pieces so LIGO pipelines run PE without a custom sampler
+  stack.
+
+use_cases:
+  - Run Bayesian PE on a binary black hole gravitational-wave event
+  - Swap dynesty, nestle, or emcee behind one likelihood interface
+  - Sample a custom astrophysical model with nested sampling
+  - Reproduce an LIGO parameter-estimation result from a config

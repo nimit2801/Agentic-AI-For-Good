@@ -1,0 +1,27 @@
+name: nbodykit
+description: Parallel Python toolkit for large-scale structure catalogs. nbodykit computes power spectra, correlation functions, and mock statistics so cosmology pipelines analyze N-body outputs without a custom MPI stack.
+tagline: Parallel large-scale structure analysis
+
+github_url: https://github.com/bccp/nbodykit
+website_url: https://nbodykit.readthedocs.io
+docs_url: https://nbodykit.readthedocs.io
+install_command: pip install nbodykit
+
+category: Data
+tags: [python, cosmology, n-body, mpi, large-scale-structure, scientific]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Galaxy survey and N-body catalogs need power spectra
+  and two-point stats, but serial numpy code does not
+  scale. nbodykit parallelizes those estimators so
+  cosmology pipelines analyze mocks without a custom MPI
+  stack.
+
+use_cases:
+  - Measure the power spectrum of a galaxy catalog on a cluster
+  - Compute two-point correlation functions for a mock survey
+  - Paint a halo catalog onto a mesh and estimate clustering
+  - Combine multiple simulation boxes into a single LSS analysis

@@ -1,0 +1,26 @@
+name: dustmaps
+description: Uniform Python interface for 2D and 3D interstellar dust maps. dustmaps queries SFD, Planck, Bayestar, and related reddening maps from SkyCoord so photometry pipelines apply extinction without custom map loaders.
+tagline: One API for interstellar dust reddening maps
+
+github_url: https://github.com/gregreen/dustmaps
+website_url: https://dustmaps.readthedocs.io
+docs_url: https://dustmaps.readthedocs.io
+install_command: pip install dustmaps
+
+category: Data
+tags: [python, astronomy, dust, extinction, photometry, scientific]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Galactic extinction corrections need SFD, Planck, or
+  Bayestar maps, but each survey ships a different loader.
+  dustmaps queries those maps from SkyCoord so photometry
+  pipelines apply reddening without a custom map reader.
+
+use_cases:
+  - Query SFD extinction for a catalog of stellar coordinates
+  - Compare Bayestar 3D reddening with Planck dust at a sightline
+  - Correct supernova or galaxy photometry for Galactic dust
+  - Fetch and cache a dust map once, then query it in a pipeline
