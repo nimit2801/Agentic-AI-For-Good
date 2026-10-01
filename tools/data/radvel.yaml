@@ -1,0 +1,26 @@
+name: radvel
+description: Toolkit for modeling radial-velocity time series from the California Planet Search. radvel fits Keplerian orbits so exoplanet pipelines extract planet masses without a custom RV likelihood.
+tagline: Radial-velocity orbit modeling for exoplanets
+
+github_url: https://github.com/California-Planet-Search/radvel
+website_url: https://radvel.readthedocs.io
+docs_url: https://radvel.readthedocs.io
+install_command: pip install radvel
+
+category: Data
+tags: [python, astronomy, exoplanets, radial-velocity, mcmc, scientific]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  RV planet searches need Keplerian orbits plus GP noise,
+  but likelihoods get rewritten per spectrograph. radvel
+  fits those time series so pipelines extract planet masses
+  without a custom RV model.
+
+use_cases:
+  - Fit a Keplerian RV model to Keck or HARPS time series
+  - Run MCMC on a multi-planet radial-velocity dataset
+  - Add a Gaussian-process noise term to an RV likelihood
+  - Report planet masses and periods from a CPS-style fit

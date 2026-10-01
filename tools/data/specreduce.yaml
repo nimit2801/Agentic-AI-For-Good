@@ -1,0 +1,26 @@
+name: specreduce
+description: Astropy coordinated package for optical and NIR spectroscopic reductions. specreduce traces, extracts, and calibrates 2D spectra so observatory pipelines reduce slits without a custom IRAF clone.
+tagline: Optical and NIR spectroscopic reduction in Astropy
+
+github_url: https://github.com/astropy/specreduce
+website_url: https://specreduce.readthedocs.io
+docs_url: https://specreduce.readthedocs.io
+install_command: pip install specreduce
+
+category: Data
+tags: [python, astronomy, spectroscopy, astropy, reduction, scientific]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Optical and NIR slit spectra need tracing and extraction,
+  but IRAF clones get rewritten per instrument. specreduce
+  traces, extracts, and wavelength-calibrates 2D spectra so
+  pipelines reduce slits on Astropy objects.
+
+use_cases:
+  - Trace a 2D slit spectrum and extract a 1D source
+  - Wavelength-calibrate an optical spectrum from arc lamps
+  - Subtract sky from a NIR long-slit exposure
+  - Build a spectroscopic reduction pipeline without IRAF

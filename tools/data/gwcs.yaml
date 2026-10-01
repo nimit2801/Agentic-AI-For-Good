@@ -1,0 +1,26 @@
+name: gwcs
+description: Generalized World Coordinate System from STScI. gwcs models instrument WCS as a transform pipeline so JWST and HST reductions map detector pixels to sky without FITS WCS limits.
+tagline: Generalized WCS transforms for space telescopes
+
+github_url: https://github.com/spacetelescope/gwcs
+website_url: https://gwcs.readthedocs.io
+docs_url: https://gwcs.readthedocs.io
+install_command: pip install gwcs
+
+category: Data
+tags: [python, astronomy, wcs, jwst, astropy, scientific]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  JWST and HST instruments need pixel-to-sky transforms that
+  FITS WCS cannot express. gwcs models those as a transform
+  pipeline so reductions map detector coordinates without
+  stretching classic FITS WCS.
+
+use_cases:
+  - Map JWST detector pixels to sky coordinates in a reduction
+  - Compose optical transforms for a multi-instrument WCS
+  - Replace FITS WCS with a generalized transform pipeline
+  - Serialize instrument WCS for an HST or JWST data product
