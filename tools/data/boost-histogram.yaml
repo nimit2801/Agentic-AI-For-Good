@@ -1,0 +1,26 @@
+name: boost-histogram
+description: Python bindings for the C++14 Boost.Histogram library. boost-histogram fills multi-dimensional histograms at native speed so HEP and scientific ML pipelines bin events without a ROOT dependency or a slow pure-Python loop.
+tagline: Fast multi-dimensional histograms in Python
+
+github_url: https://github.com/scikit-hep/boost-histogram
+website_url: https://boost-histogram.readthedocs.io
+docs_url: https://boost-histogram.readthedocs.io
+install_command: pip install boost-histogram
+
+category: Data
+tags: [python, hep, histograms, boost, scientific, numpy]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Scientific pipelines need fast multi-axis histograms, but NumPy
+  histogramdd is slow on jagged HEP events and ROOT histograms do not
+  sit on a Python ML stack. boost-histogram fills Boost.Histogram from
+  NumPy so analyses bin millions of events without a C++ macro.
+
+use_cases:
+  - Fill a multi-dimensional histogram from a NumPy collision array
+  - Bin jagged HEP features without converting to a dense grid first
+  - Project and slice histogram axes before feeding counts to a model
+  - Replace ROOT TH1 filling in a Python-only analysis notebook
