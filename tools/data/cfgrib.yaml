@@ -1,0 +1,26 @@
+name: cfgrib
+description: Python interface that maps GRIB files to the NetCDF Common Data Model with CF conventions via ECMWF ecCodes. cfgrib is the xarray engine for GRIB so weather and climate ML pipelines can open GRIB 1/2 archives lazily without a custom decoder.
+tagline: xarray engine for GRIB weather archives
+
+github_url: https://github.com/ecmwf/cfgrib
+website_url: https://github.com/ecmwf/cfgrib
+docs_url: https://github.com/ecmwf/cfgrib
+install_command: pip install cfgrib
+
+category: Data
+tags: [python, grib, xarray, weather, climate, ecmwf, netcdf]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Weather model output still ships as GRIB 1/2, which xarray cannot open
+  without a dedicated engine. cfgrib maps those files onto the CF NetCDF
+  data model via ecCodes so climate and forecasting ML jobs can lazy-load
+  GRIB through xarray and Dask.
+
+use_cases:
+  - Open an ECMWF GRIB forecast as an xarray Dataset
+  - Lazy-load a heterogeneous GRIB archive with cfgrib.open_datasets
+  - Feed weather fields into a Dask training pipeline without decoding first
+  - Translate GRIB coordinates to CF names for a climate feature store

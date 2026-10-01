@@ -1,0 +1,26 @@
+name: imageio
+description: Python library for reading and writing image and video data, including animated images, volumetric arrays, and scientific formats. imageio exposes a small imread/imwrite API that returns NumPy arrays so ML data loaders can ingest many formats without a custom decoder stack.
+tagline: Read and write images and video as NumPy arrays
+
+github_url: https://github.com/imageio/imageio
+website_url: https://imageio.readthedocs.io
+docs_url: https://imageio.readthedocs.io
+install_command: pip install imageio
+
+category: Data
+tags: [python, images, video, numpy, scientific, io]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Training and vision pipelines pull frames from JPEG, PNG, TIFF, GIF, and
+  video containers, each with its own decoder. imageio wraps those formats
+  behind imread and imwrite so loaders get NumPy arrays without maintaining
+  a custom codec stack for every source.
+
+use_cases:
+  - Load mixed JPEG and TIFF training images into NumPy arrays
+  - Write model visualization frames to GIF or MP4
+  - Read volumetric scientific image stacks for 3D vision models
+  - Convert between image formats in a preprocessing job

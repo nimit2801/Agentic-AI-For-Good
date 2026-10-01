@@ -1,0 +1,27 @@
+name: obstore
+description: Rust-powered Python client for Amazon S3, Google Cloud Storage, Azure Storage, and S3-compatible APIs. obstore offers sync and async streaming uploads and downloads, fsspec integration, and zero-copy buffers so ML jobs can move large objects without a heavy Python SDK stack.
+tagline: High-throughput Python object storage client
+
+github_url: https://github.com/developmentseed/obstore
+website_url: https://developmentseed.org/obstore
+docs_url: https://developmentseed.org/obstore
+install_command: pip install obstore
+
+category: Data
+tags: [python, rust, s3, gcs, azure, object-storage, fsspec]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  boto3, google-cloud-storage, and azure-storage-blob each have different
+  APIs and heavy dependency trees, which slows large training-data copies.
+  obstore gives one typed sync/async client for S3, GCS, and Azure with
+  streaming, multipart uploads, and fsspec so pipelines move objects
+  without juggling three SDKs.
+
+use_cases:
+  - Stream a multi-gigabyte checkpoint from S3 without loading it in RAM
+  - Upload sharded Parquet from an async iterator to GCS
+  - List an Azure prefix as Arrow instead of Python dicts
+  - Swap S3 and MinIO backends behind one obstore client in CI
