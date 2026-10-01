@@ -1,0 +1,26 @@
+name: uproot
+description: Pure-Python and NumPy reader for ROOT files used in high-energy physics. uproot opens TTrees without a ROOT install so particle-physics ML pipelines can stream jagged branches into Awkward or NumPy arrays for training.
+tagline: ROOT I/O in pure Python and NumPy
+
+github_url: https://github.com/scikit-hep/uproot5
+website_url: https://uproot.readthedocs.io
+docs_url: https://uproot.readthedocs.io
+install_command: pip install uproot
+
+category: Data
+tags: [python, hep, root, numpy, awkward, scientific, particle-physics]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  High-energy physics datasets live in ROOT files, and installing CERN
+  ROOT just to read TTrees is a heavy dependency for ML jobs. uproot
+  reads those files in pure Python and NumPy so pipelines can stream
+  jagged branches without linking against ROOT.
+
+use_cases:
+  - Open a CMS NanoAOD ROOT file into Awkward arrays for training
+  - Stream selected TTree branches without loading the full event
+  - Convert HEP histograms from a ROOT file into NumPy for analysis
+  - Feed jagged collision records into a scikit-hep ML pipeline
