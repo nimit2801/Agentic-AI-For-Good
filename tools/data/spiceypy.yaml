@@ -1,0 +1,26 @@
+name: SpiceyPy
+description: Pythonic wrapper for NASA NAIF SPICE. SpiceyPy loads kernels and computes solar-system geometry so planetary science and spacecraft pipelines query positions, orientations, and lighting without calling C SPICE by hand.
+tagline: Python wrapper for the NASA SPICE toolkit
+
+github_url: https://github.com/AndrewAnnex/SpiceyPy
+website_url: https://spiceypy.readthedocs.io
+docs_url: https://spiceypy.readthedocs.io
+install_command: pip install spiceypy
+
+category: Data
+tags: [python, spice, planetary-science, geometry, nasa, kernels]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Planetary missions publish SPICE kernels for spacecraft and body
+  geometry, but the official toolkit is C. SpiceyPy wraps NAIF SPICE
+  so Python pipelines load kernels and query positions, orientations,
+  and illumination without compiling C bindings per project.
+
+use_cases:
+  - Load a spacecraft SPK kernel and query its position at a UTC time
+  - Compute solar illumination on a planetary surface for an observation
+  - Convert between planetocentric frames using FK and CK kernels
+  - Build a geometry time series for a flyby trajectory analysis

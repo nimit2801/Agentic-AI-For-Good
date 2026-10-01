@@ -1,0 +1,26 @@
+name: astroplan
+description: Observation planning package for astronomers, built on Astropy. astroplan computes rise, set, and altitude constraints so observatory and survey pipelines schedule targets without a custom ephemeris spreadsheet.
+tagline: Observation planning for astronomers
+
+github_url: https://github.com/astropy/astroplan
+website_url: https://astroplan.readthedocs.io
+docs_url: https://astroplan.readthedocs.io
+install_command: pip install astroplan
+
+category: Data
+tags: [python, astronomy, astropy, scheduling, observations, scientific]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Observing nights fail when targets are below the horizon or too
+  close to the Moon. astroplan applies altitude, airmass, and
+  moonlight constraints so teams score observability and plot
+  altitude curves without maintaining a custom ephemeris sheet.
+
+use_cases:
+  - Check whether a target is observable from a site on a given night
+  - Rank a candidate list by airmass and moonlight constraints
+  - Plot altitude versus time for a night of scheduled observations
+  - Plan a multi-target survey window around twilight constraints

@@ -1,0 +1,26 @@
+name: dynesty
+description: Dynamic nested sampling package for Bayesian posteriors and evidences. dynesty explores likelihoods in pure Python so astrophysics and ML pipelines compute model evidence without a custom nested-sampling loop.
+tagline: Dynamic nested sampling for Bayesian evidence
+
+github_url: https://github.com/joshspeagle/dynesty
+website_url: https://dynesty.readthedocs.io
+docs_url: https://dynesty.readthedocs.io
+install_command: pip install dynesty
+
+category: Data
+tags: [python, bayesian, nested-sampling, mcmc, scientific, evidence]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Model comparison needs Bayesian evidence, but MCMC samplers only
+  give posteriors. dynesty runs dynamic nested sampling in pure Python
+  so teams estimate evidence and posteriors for multimodal likelihoods
+  without writing a custom nested-sampling integrator.
+
+use_cases:
+  - Compute Bayesian evidence for competing astrophysical models
+  - Sample a multimodal posterior that MCMC chains miss
+  - Compare nested models with a likelihood from a simulation code
+  - Plot nested-sampling traces while tuning live-point count
