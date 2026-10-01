@@ -1,0 +1,26 @@
+name: fastavro
+description: Fast Avro reader and writer for Python, implemented in C. fastavro encodes and decodes Avro records without the JVM so data pipelines can stream Kafka, Pub/Sub, and file-based Avro into pandas or training jobs at high throughput.
+tagline: Fast Avro encoding and decoding for Python
+
+github_url: https://github.com/fastavro/fastavro
+website_url: https://fastavro.readthedocs.io
+docs_url: https://fastavro.readthedocs.io
+install_command: pip install fastavro
+
+category: Data
+tags: [python, avro, kafka, serialization, etl, c]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Apache Avro is common in Kafka and data lakes, but the official
+  Python stack is slow and often pulls a JVM. fastavro is a C-backed
+  reader and writer so Python ETL and ML jobs can decode Avro streams
+  without that overhead.
+
+use_cases:
+  - Decode a Kafka Avro topic into Python dicts for a feature job
+  - Write training records to Avro files without a JVM schema registry client
+  - Validate Avro schemas in a CI pipeline
+  - Stream Pub/Sub Avro payloads into a pandas preprocessing step
