@@ -1,0 +1,26 @@
+name: Siphon
+description: Python utilities for retrieving atmospheric and oceanic data from remote Unidata sources. Siphon pulls catalogs, grids, and point observations from THREDDS so weather ML pipelines can download model output and station data without hand-written TDS clients.
+tagline: Download weather data from Unidata THREDDS servers
+
+github_url: https://github.com/Unidata/siphon
+website_url: https://unidata.github.io/siphon
+docs_url: https://unidata.github.io/siphon
+install_command: pip install siphon
+
+category: Data
+tags: [python, weather, thredds, unidata, netcdf, atmospheric, scientific]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Weather ML jobs need model grids and station observations from THREDDS
+  Data Servers, but TDS catalog and NCSS APIs are awkward to call by hand.
+  Siphon wraps those Unidata services so pipelines can list catalogs and
+  subset remote atmospheric datasets without a custom HTTP client.
+
+use_cases:
+  - Subset a GFS forecast from a THREDDS Data Server into a NumPy array
+  - List catalog datasets on a remote Unidata TDS before a training run
+  - Pull METAR station observations into a nowcasting feature store
+  - Download a NetCDF subset of oceanic fields via NCSS without full-file copies

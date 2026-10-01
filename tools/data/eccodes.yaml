@@ -1,0 +1,26 @@
+name: ecCodes
+description: ECMWF library for encoding and decoding GRIB and BUFR meteorological messages. ecCodes is the reference decoder behind weather ML ingest so pipelines can read WMO GRIB 1/2 and BUFR archives, inspect keys, and write standards-compliant files.
+tagline: ECMWF GRIB and BUFR encoder and decoder
+
+github_url: https://github.com/ecmwf/eccodes
+website_url: https://confluence.ecmwf.int/display/ECC
+docs_url: https://confluence.ecmwf.int/display/ECC
+install_command: pip install eccodes
+
+category: Data
+tags: [c++, grib, bufr, weather, climate, ecmwf, wmo, scientific]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Weather centers still exchange GRIB and BUFR, and every ML ingest path
+  needs a WMO-compliant decoder. ecCodes is ECMWF's reference library so
+  pipelines can decode, inspect, and encode meteorological messages without
+  a custom binary parser.
+
+use_cases:
+  - Decode an ECMWF GRIB 2 forecast archive into fields for training
+  - Inspect BUFR keys from a radiosonde bulletin before feature extraction
+  - Encode processed weather fields back to GRIB for operational delivery
+  - Power Python GRIB engines such as cfgrib and pygrib in a climate stack

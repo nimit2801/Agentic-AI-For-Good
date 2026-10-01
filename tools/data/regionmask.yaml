@@ -1,0 +1,27 @@
+name: regionmask
+description: Python package that creates masks of geospatial regions for arbitrary longitude-latitude grids. regionmask turns countries, basins, and literature regions into 2D or 3D masks so climate ML pipelines can aggregate gridded fields without custom shapefile logic.
+tagline: Masks of geospatial regions for climate grids
+
+github_url: https://github.com/regionmask/regionmask
+website_url: https://regionmask.readthedocs.io/
+docs_url: https://regionmask.readthedocs.io/
+install_command: pip install regionmask
+
+category: Data
+tags: [python, climate, geospatial, xarray, masking, shapefile, scientific]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Climate and weather ML jobs need regional averages over countries or
+  basins, but building consistent grid masks from shapefiles is error-prone
+  at region edges. regionmask builds 2D integer and 3D boolean masks for
+  arbitrary lat-lon grids so pipelines can aggregate fields without
+  one-off geometry code.
+
+use_cases:
+  - Mask a CMIP temperature cube to IPCC AR6 regions before training
+  - Average reanalysis precipitation over countries from Natural Earth
+  - Build a 3D boolean mask for overlapping river basins on a curvilinear grid
+  - Convert a GeoPandas shapefile of custom study areas into an xarray mask
