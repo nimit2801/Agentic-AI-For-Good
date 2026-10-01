@@ -1,0 +1,26 @@
+name: PyCBC
+description: Core package to analyze gravitational-wave data, find signals, and study parameters. PyCBC powered the first LIGO detection and still searches LIGO and Virgo strain without a custom matched-filter stack.
+tagline: Gravitational-wave search and parameter estimation
+
+github_url: https://github.com/gwastro/pycbc
+website_url: https://pycbc.org
+docs_url: https://pycbc.org/pycbc/latest/html/
+install_command: pip install pycbc
+
+category: Data
+tags: [python, gravitational-waves, ligo, matched-filter, scientific, search]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Compact-binary searches need matched filters over terabytes of
+  strain. PyCBC provides templates, coincidence, and parameter
+  estimation so LIGO analyses find signals without assembling a
+  custom search pipeline from C libraries.
+
+use_cases:
+  - Run a matched-filter search on a LIGO strain segment
+  - Estimate binary-merger parameters from a candidate event
+  - Generate a template bank for a compact-binary coalescence search
+  - Reproduce a published gravitational-wave detection workflow
