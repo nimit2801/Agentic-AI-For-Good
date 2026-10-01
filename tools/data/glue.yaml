@@ -1,0 +1,26 @@
+name: Glue
+description: Linked-data visualization for exploring tables, images, and catalogs together. Glue links selections across scatter plots, images, and histograms so astronomy and science pipelines inspect the same objects in every view.
+tagline: Linked multidimensional data visualization
+
+github_url: https://github.com/glue-viz/glue
+website_url: https://www.glueviz.org
+docs_url: https://docs.glueviz.org
+install_command: pip install glueviz
+
+category: Data
+tags: [python, visualization, astronomy, linked-views, scientific, catalogs]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Science catalogs, images, and tables live in separate files, so
+  selecting a source in one view does not highlight it in another.
+  Glue links datasets so a brush on a scatter plot, image, or
+  histogram selects the same objects everywhere.
+
+use_cases:
+  - Brush a color-magnitude diagram and see the same stars on an image
+  - Link a spectral cube to a catalog and inspect selected sources
+  - Explore a multi-file survey by connecting tables and FITS images
+  - Teach linked-view data analysis without writing a custom dashboard

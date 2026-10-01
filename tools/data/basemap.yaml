@@ -1,0 +1,26 @@
+name: basemap
+description: Matplotlib toolkit for drawing data on map projections with coastlines and political boundaries. Basemap plots lat-lon fields on common projections so geoscience pipelines map observations without a GIS stack.
+tagline: Map projections for matplotlib
+
+github_url: https://github.com/matplotlib/basemap
+website_url: https://matplotlib.org/basemap
+docs_url: https://matplotlib.org/basemap
+install_command: pip install basemap
+
+category: Data
+tags: [python, matplotlib, mapping, geoscience, projections, visualization]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Plotting latitude-longitude data on a globe needs projections,
+  coastlines, and political boundaries. Basemap adds those layers
+  to matplotlib so climate, weather, and survey maps render without
+  a GIS desktop or web tile stack.
+
+use_cases:
+  - Plot a temperature field on a Lambert conformal projection
+  - Draw coastlines and country borders under station observations
+  - Convert lat-lon points into a map projection for a paper figure
+  - Overlay a satellite swath on a global cylindrical map

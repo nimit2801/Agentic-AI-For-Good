@@ -1,0 +1,26 @@
+name: sgp4
+description: Python SGP4 propagator for Earth satellite positions from TLEs. sgp4 wraps the official C++ routine so tracking and space-ops pipelines compute inertial coordinates without a custom orbit kernel.
+tagline: Python SGP4 satellite orbit propagator
+
+github_url: https://github.com/brandon-rhodes/python-sgp4
+website_url: https://github.com/brandon-rhodes/python-sgp4
+docs_url: https://github.com/brandon-rhodes/python-sgp4#readme
+install_command: pip install sgp4
+
+category: Data
+tags: [python, satellite, orbit, tle, space, astronomy]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Earth satellites publish TLEs, but turning those lines into
+  positions needs the SGP4 propagator. sgp4 wraps the official
+  C++ routine so Python trackers compute TEME coordinates without
+  a custom orbit kernel.
+
+use_cases:
+  - Propagate a TLE to get satellite position at a UTC time
+  - Batch-evaluate a catalog of TLEs for a pass-prediction window
+  - Compare SGP4 positions against a GPS or radar track
+  - Feed inertial coordinates into a ground-station pointing script
