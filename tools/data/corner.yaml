@@ -1,0 +1,26 @@
+name: corner
+description: Python library for scatterplot matrices, also called corner plots. corner visualizes MCMC posterior samples so Bayesian ML and astrophysics pipelines inspect parameter covariances without a custom pair-plot loop.
+tagline: Scatterplot matrices for MCMC posteriors
+
+github_url: https://github.com/dfm/corner.py
+website_url: https://corner.readthedocs.io
+docs_url: https://corner.readthedocs.io
+install_command: pip install corner
+
+category: Data
+tags: [python, visualization, mcmc, bayesian, scatterplot, scientific]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Bayesian inference produces high-dimensional posterior samples, but
+  matplotlib scatter grids hide covariances and 1D marginals. corner
+  draws publication-ready corner plots so teams inspect parameter
+  degeneracies and credible intervals from MCMC chains in one figure.
+
+use_cases:
+  - Plot a 2D posterior from an emcee or PyMC sampling run
+  - Compare overlapping MCMC chains on the same corner figure
+  - Show 1-sigma and 2-sigma contours for a cosmology parameter set
+  - Diagnose degeneracies between fitted ML model hyperparameters

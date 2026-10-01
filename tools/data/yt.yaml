@@ -1,0 +1,27 @@
+name: yt
+description: Open-source Python library for analyzing and visualizing volumetric data. yt reads structured meshes, unstructured meshes, and particles so astrophysics and simulation pipelines inspect physically meaningful fields without custom I/O.
+tagline: Analyze and visualize volumetric scientific data
+
+github_url: https://github.com/yt-project/yt
+website_url: https://yt-project.org
+docs_url: https://yt-project.org/docs/dev/
+install_command: pip install yt
+
+category: Data
+tags: [python, scientific, visualization, astrophysics, volumetric, meshes]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Simulation and observational pipelines store volumetric fields on
+  adaptive meshes and particles, but each code has its own I/O. yt
+  loads those formats into a common analysis layer so teams slice,
+  profile, and volume-render physically meaningful quantities without
+  writing a custom reader for every dataset.
+
+use_cases:
+  - Load an adaptive-mesh hydro simulation and plot a density projection
+  - Derive temperature and metallicity fields from raw simulation arrays
+  - Volume-render a 3D astrophysical dataset for a paper figure
+  - Profile radial quantities across a time series of snapshot files
