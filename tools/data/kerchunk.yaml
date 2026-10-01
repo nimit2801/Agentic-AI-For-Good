@@ -1,0 +1,27 @@
+name: Kerchunk
+description: Library that extracts byte-range and compression metadata from NetCDF, HDF5, GRIB, TIFF, and similar chunked files so fsspec and Zarr can read archival datasets in place from object storage without copying or rewriting the originals.
+tagline: Cloud-friendly virtual datasets over archival files
+
+github_url: https://github.com/fsspec/kerchunk
+website_url: https://fsspec.github.io/kerchunk/
+docs_url: https://fsspec.github.io/kerchunk/
+install_command: pip install kerchunk
+
+category: Data
+tags: [python, zarr, fsspec, netcdf, hdf5, grib, cloud, object-storage]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Climate and scientific archives still ship as many NetCDF, HDF5, or GRIB
+  files that are slow to open from S3 or GCS. Kerchunk stores byte ranges
+  and codecs in a small reference file so Zarr and fsspec can treat those
+  originals as one virtual dataset and fetch only the chunks a training or
+  analysis job needs.
+
+use_cases:
+  - Build a virtual Zarr dataset over thousands of NetCDF files on S3
+  - Read GRIB2 weather archives from object storage without rewriting them
+  - Consolidate metadata so a many-file climate dataset opens in one read
+  - Serve HDF5 and TIFF collections through fsspec without a dedicated driver

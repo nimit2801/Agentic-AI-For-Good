@@ -1,0 +1,27 @@
+name: Rtree
+description: ctypes Python wrapper around libspatialindex that provides R-tree spatial indexes for GIS and geospatial ML. Supports nearest-neighbor and intersection queries, multi-dimensional indexes, bulk loading, disk serialization, and custom storage backends.
+tagline: Spatial R-tree index for Python GIS
+
+github_url: https://github.com/Toblerity/rtree
+website_url: https://rtree.readthedocs.io
+docs_url: https://rtree.readthedocs.io
+install_command: pip install rtree
+
+category: Data
+tags: [python, gis, spatial, rtree, indexing, geospatial, libspatialindex]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Bounding-box and nearest-neighbor lookups over millions of geospatial
+  features are too slow as linear scans. Rtree wraps libspatialindex so
+  Python GIS and ML pipelines can index polygons, points, and boxes on disk
+  or in memory and answer intersection and k-NN queries without loading the
+  full dataset.
+
+use_cases:
+  - Index shapefile or GeoJSON features for fast bounding-box intersection
+  - Find k nearest neighbors of a lat-long query against a large point set
+  - Bulk-load multi-dimensional boxes for geospatial feature engineering
+  - Persist a spatial index to disk and reuse it across training jobs
