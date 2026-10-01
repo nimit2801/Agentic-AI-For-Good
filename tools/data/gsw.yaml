@@ -1,0 +1,26 @@
+name: GSW
+description: Python implementation of the TEOS-10 Gibbs SeaWater oceanographic toolbox. GSW wraps the official C library as NumPy ufuncs so ocean ML pipelines compute salinity, density, and heat content without porting Fortran seawater routines.
+tagline: TEOS-10 Gibbs SeaWater toolbox for Python
+
+github_url: https://github.com/TEOS-10/GSW-Python
+website_url: https://teos-10.github.io/GSW-Python
+docs_url: https://teos-10.github.io/GSW-Python
+install_command: pip install gsw
+
+category: Data
+tags: [python, oceanography, teos-10, seawater, scientific, numpy]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Ocean models need TEOS-10 salinity, density, and enthalpy, but the
+  official toolbox is C and Fortran that Python ML stacks do not call
+  cleanly. GSW wraps those routines as NumPy ufuncs so pipelines compute
+  seawater properties on arrays without a custom native binding.
+
+use_cases:
+  - Convert practical salinity to Absolute Salinity on a CTD profile
+  - Compute in-situ density and heat content for an ocean reanalysis cube
+  - Derive conservative temperature for a climate downscaling pipeline
+  - Vectorize TEOS-10 calculations across a gridded Argo dataset

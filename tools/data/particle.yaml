@@ -1,0 +1,26 @@
+name: particle
+description: Pythonic interface to PDG particle data tables and identification codes. particle looks up masses, charges, and PDG IDs so HEP ML pipelines classify collision products without scraping the Particle Data Group booklet.
+tagline: PDG particle data and ID codes in Python
+
+github_url: https://github.com/scikit-hep/particle
+website_url: https://github.com/scikit-hep/particle
+docs_url: https://github.com/scikit-hep/particle
+install_command: pip install particle
+
+category: Data
+tags: [python, hep, pdg, particle-physics, scikit-hep, scientific]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Collider analyses need masses, charges, and PDG ID queries, but the
+  Particle Data Group tables are not a Python API. particle wraps those
+  tables and HepPID-style queries so HEP pipelines look up particles
+  and classify IDs without scraping the booklet.
+
+use_cases:
+  - Look up the mass and charge of a PDG ID in a reconstruction pipeline
+  - Filter Monte Carlo truth records to mesons or baryons by PDG query
+  - Search the PDG table for particles matching a name or quantum numbers
+  - Map generator particle names onto standard PDG IDs before training
