@@ -1,0 +1,26 @@
+name: Cubed
+description: Scalable array processing with bounded memory, built for Zarr and object storage. Cubed runs xarray-style computations as a task graph with a fixed memory cap so climate and ML pipelines can process out-of-core arrays without a Dask cluster.
+tagline: Bounded-memory scalable array processing
+
+github_url: https://github.com/cubed-dev/cubed
+website_url: https://cubed-dev.github.io/cubed/
+docs_url: https://cubed-dev.github.io/cubed/
+install_command: pip install cubed
+
+category: Data
+tags: [python, zarr, xarray, arrays, object-storage, dask, out-of-core]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Dask array graphs can blow memory or need a cluster just to rechunk a
+  cloud Zarr store. Cubed executes the same style of computation with a
+  bounded memory budget so science and ML jobs can process out-of-core
+  arrays on a laptop or a batch worker.
+
+use_cases:
+  - Rechunk a multi-terabyte Zarr cube with a fixed RAM cap
+  - Run an xarray reduction on object storage without a Dask scheduler
+  - Process climate arrays on a single VM with predictable memory
+  - Prototype an out-of-core pipeline before moving to a cluster

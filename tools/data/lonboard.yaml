@@ -1,0 +1,26 @@
+name: lonboard
+description: Fast interactive geospatial visualization for Jupyter, built on GeoArrow and deck.gl. lonboard renders large GeoPandas and Arrow tables in the notebook so spatial ML work can inspect millions of features without dropping to a separate mapping app.
+tagline: Fast geospatial visualization in Jupyter
+
+github_url: https://github.com/developmentseed/lonboard
+website_url: https://developmentseed.org/lonboard
+docs_url: https://developmentseed.org/lonboard
+install_command: pip install lonboard
+
+category: Data
+tags: [python, jupyter, geospatial, geoarrow, deckgl, visualization]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Plotting a large GeoPandas frame in folium or matplotlib either samples
+  the data or freezes the notebook. lonboard uses GeoArrow and deck.gl so
+  Jupyter can interactively render millions of points and polygons during
+  spatial EDA and model debugging.
+
+use_cases:
+  - Inspect a million-row GeoPandas training set in a Jupyter map
+  - Overlay model residuals on polygons without sampling the frame
+  - Render Arrow-backed spatial tables from DuckDB in a notebook
+  - Iterate on a clustering result with an interactive deck.gl view

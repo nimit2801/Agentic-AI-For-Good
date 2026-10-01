@@ -1,0 +1,26 @@
+name: tippecanoe
+description: Command-line tool that builds Mapbox Vector Tiles from large GeoJSON, CSV, and similar feature collections. tippecanoe drops and merges features by zoom so web maps and geospatial ML viewers can serve millions of points from compact tilesets.
+tagline: Build vector tilesets from large GeoJSON collections
+
+github_url: https://github.com/felt/tippecanoe
+website_url: https://github.com/felt/tippecanoe
+docs_url: https://github.com/felt/tippecanoe
+install_command: brew install tippecanoe
+
+category: Data
+tags: [geospatial, vector-tiles, geojson, mapping, cli, mvt]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Serving millions of GeoJSON features to a map client overloads the
+  browser and the API. tippecanoe tiles the collection, dropping and
+  merging features by zoom, so web maps and spatial ML viewers load
+  only the geometry needed at each scale.
+
+use_cases:
+  - Tile a nationwide building footprint GeoJSON for a web map
+  - Build zoom-aware vector tiles from GPS traces for annotation
+  - Merge overlapping polygons into a compact MBTiles archive
+  - Prepare a large feature collection for MapLibre or PMTiles serving

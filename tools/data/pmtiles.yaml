@@ -1,0 +1,25 @@
+name: PMTiles
+description: Single-file archive for pyramids of map tiles on static storage. PMTiles packs zoom levels into one object on S3 or similar so web maps and geospatial apps can range-request tiles without a tile server.
+tagline: Single-file map tile archives on static storage
+
+github_url: https://github.com/protomaps/PMTiles
+website_url: https://protomaps.com/docs/pmtiles/
+docs_url: https://protomaps.com/docs/pmtiles/
+
+category: Data
+tags: [geospatial, mapping, tiles, s3, static-storage, protomaps]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Hosting a tile pyramid usually needs a tile server or millions of
+  small objects on S3. PMTiles packs the pyramid into one file so maps
+  can HTTP range-request tiles from static storage without standing up
+  a tileserver.
+
+use_cases:
+  - Serve a tippecanoe tileset from a single S3 object
+  - Host a basemap on Cloudflare or GitHub Pages without a tile server
+  - Range-request vector tiles into MapLibre from a PMTiles archive
+  - Archive a zoom pyramid as one portable file for offline maps

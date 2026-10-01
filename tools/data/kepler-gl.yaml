@@ -1,0 +1,26 @@
+name: Kepler.gl
+description: Open-source geospatial analysis tool for large-scale location datasets. Kepler.gl renders millions of points, arcs, and hexbins in the browser so teams can explore GPS, mobility, and Earth observation features without standing up a GIS stack.
+tagline: Browser geospatial analysis for large location datasets
+
+github_url: https://github.com/keplergl/kepler.gl
+website_url: https://kepler.gl
+docs_url: https://docs.kepler.gl
+install_command: npm install kepler.gl
+
+category: Data
+tags: [geospatial, visualization, javascript, mapping, hexbin, mobility]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Exploring millions of GPS or mobility rows in QGIS or a custom WebGL
+  app is slow to stand up. Kepler.gl loads CSV, GeoJSON, and similar
+  location data in the browser and renders points, arcs, and hexbins so
+  ML and ops teams can inspect spatial features without a GIS server.
+
+use_cases:
+  - Explore a multi-million-row GPS trace as a hexbin heatmap
+  - Overlay mobility arcs on a city map before feature engineering
+  - Share a Kepler.gl scene of Earth observation points with a stakeholder
+  - Embed Kepler.gl in a React dashboard for spatial model errors
