@@ -1,0 +1,26 @@
+name: iminuit
+description: Jupyter-friendly Python interface to CERN Minuit2. iminuit fits likelihoods and least squares so HEP and scientific ML pipelines get best-fit parameters and profile errors without a ROOT-only workflow.
+tagline: Python interface to CERN Minuit2
+
+github_url: https://github.com/scikit-hep/iminuit
+website_url: https://scikit-hep.org/iminuit
+docs_url: https://scikit-hep.org/iminuit
+install_command: pip install iminuit
+
+category: Data
+tags: [python, optimization, fitting, hep, likelihood, scientific]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Statistical fits need robust errors, but SciPy minimizers skip
+  profile-likelihood intervals. iminuit wraps CERN Minuit2 with
+  built-in cost functions so HEP and science pipelines report
+  MIGRAD fits and MINOS errors from Jupyter without a ROOT install.
+
+use_cases:
+  - Fit an unbinned likelihood to particle-physics event counts
+  - Run a least-squares fit with MINOS profile errors on parameters
+  - Combine cost functions for a joint template plus Gaussian penalty
+  - Visualize a fitted model interactively in a Jupyter notebook
