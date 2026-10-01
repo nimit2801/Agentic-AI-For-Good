@@ -1,0 +1,26 @@
+name: gala
+description: Python package for galactic and gravitational dynamics with orbit integration and potential models. gala is an Astropy affiliated library so stellar-stream pipelines integrate orbits without a custom N-body rewrite.
+tagline: Galactic and gravitational dynamics in Python
+
+github_url: https://github.com/adrn/gala
+website_url: https://gala.adrian.pw
+docs_url: https://gala.adrian.pw
+install_command: pip install gala
+
+category: Data
+tags: [python, astronomy, galactic-dynamics, astropy, orbits, scientific]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Stream and cluster papers need orbit integration in
+  custom potentials, but each group rolls its own.
+  gala integrates orbits and composes potentials so
+  dynamics pipelines reuse one Astropy-affiliated stack.
+
+use_cases:
+  - Integrate a globular-cluster orbit in a Milky Way model
+  - Compose a custom gravitational potential for a stream fit
+  - Transform phase-space coordinates with Astropy frames
+  - Build a stellar-stream mock catalog from gala orbits

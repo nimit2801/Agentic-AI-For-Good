@@ -1,0 +1,26 @@
+name: CAMB
+description: Cosmology code for CMB, lensing, and matter power spectra with a Python API over Fortran numerics. CAMB computes transfer functions and background evolution so cosmology pipelines get spectra without a custom Boltzmann solver.
+tagline: CMB and matter power spectra from a Boltzmann solver
+
+github_url: https://github.com/cmbant/CAMB
+website_url: https://camb.info
+docs_url: https://camb.readthedocs.io
+install_command: pip install camb
+
+category: Data
+tags: [python, cosmology, cmb, boltzmann, power-spectrum, scientific]
+pricing: free
+is_open_source: true
+license: LGPL-3.0
+
+problem_solved: |
+  Cosmology fits need CMB and matter spectra from a
+  Boltzmann solver, but Fortran codes are hard to call.
+  CAMB exposes those spectra in Python so pipelines
+  compute power spectra without a custom solver.
+
+use_cases:
+  - Compute CMB temperature and polarization spectra for a cosmology
+  - Generate a matter power spectrum for an N-body initial condition
+  - Evaluate lensing and 21cm angular spectra in a parameter scan
+  - Call CAMB from a Bayesian sampler during a cosmological fit
