@@ -1,0 +1,27 @@
+name: jwst
+description: STScI calibration pipeline for James Webb Space Telescope imagery and spectroscopy. jwst turns uncalibrated JWST observations into science-ready products so teams reduce NIRCam, MIRI, and NIRSpec data without a custom observatory pipeline.
+tagline: Official JWST science calibration pipeline from STScI
+
+github_url: https://github.com/spacetelescope/jwst
+website_url: https://jwst-pipeline.readthedocs.io
+docs_url: https://jwst-pipeline.readthedocs.io
+install_command: pip install jwst
+
+category: Data
+tags: [python, astronomy, jwst, stsci, calibration, scientific]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  JWST imagers and spectrographs land uncalibrated
+  data that still need detector, WCS, and flux steps.
+  jwst runs the official STScI pipeline so teams
+  produce science-ready products without a custom
+  observatory reduction stack.
+
+use_cases:
+  - Calibrate a NIRCam imaging visit from uncalibrated FITS
+  - Reduce MIRI spectroscopy through the STScI pipeline stages
+  - Process NIRSpec data with CRDS reference files
+  - Build a JWST reduction workflow that matches archive products

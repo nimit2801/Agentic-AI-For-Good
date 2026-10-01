@@ -1,0 +1,27 @@
+name: wrf-python
+description: NCAR Python library of diagnostic and interpolation routines for Weather Research and Forecasting (WRF-ARW) output. wrf-python computes CAPE, vorticity, and interpolates model fields so atmospheric pipelines analyze WRF data without an NCL rewrite.
+tagline: WRF-ARW diagnostics and interpolation in Python
+
+github_url: https://github.com/NCAR/wrf-python
+website_url: https://wrf-python.readthedocs.io
+docs_url: https://wrf-python.readthedocs.io
+install_command: conda install -c conda-forge wrf-python
+
+category: Data
+tags: [python, weather, wrf, ncar, atmosphere, scientific]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  WRF-ARW output needs CAPE, vorticity, and vertical
+  interpolation, but NCL scripts get rewritten per lab.
+  wrf-python computes those diagnostics on WRF fields
+  so atmospheric pipelines analyze model output without
+  a custom NCL stack.
+
+use_cases:
+  - Compute CAPE and CIN from a WRF-ARW forecast file
+  - Interpolate WRF 3D fields onto a constant pressure surface
+  - Extract sea-level pressure and plot it with Cartopy
+  - Convert WRF lat-lon grids for a downstream ML weather pipeline

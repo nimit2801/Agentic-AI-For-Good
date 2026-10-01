@@ -1,0 +1,27 @@
+name: synphot
+description: STScI Astropy library for synthetic photometry. synphot replaces IRAF SYNPHOT so astronomers model spectra, bandpasses, and predicted counts without a custom STSDAS photometry stack.
+tagline: Synthetic photometry on Astropy spectra and bandpasses
+
+github_url: https://github.com/spacetelescope/synphot_refactor
+website_url: https://synphot.readthedocs.io
+docs_url: https://synphot.readthedocs.io
+install_command: pip install synphot
+
+category: Data
+tags: [python, astronomy, photometry, astropy, stsci, scientific]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Observation planning needs predicted counts through
+  a bandpass, but IRAF SYNPHOT is frozen. synphot
+  models spectra and filters on Astropy so pipelines
+  compute synthetic photometry without a custom
+  STSDAS rewrite.
+
+use_cases:
+  - Predict counts for a spectrum through a telescope bandpass
+  - Combine filter curves and reddening for an observing proposal
+  - Convert a model spectrum to magnitudes in a survey filter
+  - Replace an IRAF SYNPHOT script with an Astropy notebook

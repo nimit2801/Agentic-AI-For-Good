@@ -1,0 +1,27 @@
+name: geocat-comp
+description: NCAR GeoCAT computational library that ports NCL geoscience functions to Python. geocat-comp computes climatology, interpolation, and atmospheric diagnostics on xarray data so climate pipelines replace NCL scripts without a custom Fortran stack.
+tagline: NCL-era geoscience computations on xarray data
+
+github_url: https://github.com/NCAR/geocat-comp
+website_url: https://geocat-comp.readthedocs.io
+docs_url: https://geocat-comp.readthedocs.io
+install_command: pip install geocat-comp
+
+category: Data
+tags: [python, climate, ncar, ncl, xarray, scientific]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Climate labs still depend on NCL diagnostics, but
+  those scripts do not sit on xarray pipelines. geocat-comp
+  ports NCL computational functions so geoscience
+  workflows compute climatology and interpolation
+  without a custom Fortran rewrite.
+
+use_cases:
+  - Compute a monthly climatology on an xarray climate dataset
+  - Interpolate atmospheric fields with GeoCAT NCL-style functions
+  - Run EOF or moisture diagnostics in a Python climate notebook
+  - Replace an NCL analysis script with geocat-comp on NetCDF
