@@ -1,0 +1,26 @@
+name: cf-xarray
+description: xarray accessor that interprets Climate and Forecast (CF) metadata attributes. cf-xarray lets climate ML pipelines select variables by standard names, latitude, and longitude instead of guessing dataset-specific dimension labels.
+tagline: CF metadata accessor for xarray objects
+
+github_url: https://github.com/xarray-contrib/cf-xarray
+website_url: https://cf-xarray.readthedocs.io
+docs_url: https://cf-xarray.readthedocs.io
+install_command: pip install cf-xarray
+
+category: Data
+tags: [python, xarray, cf-conventions, climate, metadata, netcdf, scientific]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Climate NetCDF files follow CF conventions, but every dataset names
+  latitude, longitude, and time differently. cf-xarray reads those
+  attributes so pipelines can select by standard names instead of
+  hard-coding each file's dimension labels.
+
+use_cases:
+  - Select temperature by CF standard name across mixed climate archives
+  - Decode latitude and longitude coordinates without per-file aliases
+  - Plot or subset a Dataset using CF axis names instead of raw dims
+  - Normalize climate arrays before feeding them to an ML training job

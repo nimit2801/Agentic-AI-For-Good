@@ -1,0 +1,26 @@
+name: h5netcdf
+description: Pythonic netCDF4 interface built on h5py instead of the netCDF-C library. h5netcdf lets climate and ML pipelines read and write HDF5-backed NetCDF files with xarray while keeping a pure-Python HDF5 stack.
+tagline: netCDF4 via h5py for climate arrays
+
+github_url: https://github.com/h5netcdf/h5netcdf
+website_url: https://h5netcdf.org
+docs_url: https://h5netcdf.org
+install_command: pip install h5netcdf
+
+category: Data
+tags: [python, netcdf, hdf5, h5py, xarray, climate, scientific]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Climate and Earth-observation arrays often live in NetCDF, but the
+  classic netCDF-C stack is heavy to install and awkward next to h5py.
+  h5netcdf speaks the netCDF4 data model through h5py so xarray pipelines
+  can read and write HDF5-backed NetCDF without that C library.
+
+use_cases:
+  - Open an HDF5-backed NetCDF climate file as an xarray Dataset
+  - Write labeled weather arrays to netCDF4 without installing netCDF-C
+  - Share a pure-Python HDF5 NetCDF path in a scientific ML environment
+  - Inspect groups, dimensions, and attributes on an existing .nc file

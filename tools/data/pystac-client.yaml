@@ -1,0 +1,26 @@
+name: pystac-client
+description: Python client for searching SpatioTemporal Asset Catalog APIs. pystac-client queries STAC endpoints by bbox, datetime, and collections so geospatial ML pipelines can discover satellite assets without downloading full catalogs first.
+tagline: Python client for searching STAC APIs
+
+github_url: https://github.com/stac-utils/pystac-client
+website_url: https://pystac-client.readthedocs.io
+docs_url: https://pystac-client.readthedocs.io
+install_command: pip install pystac-client
+
+category: Data
+tags: [python, stac, geospatial, satellite, earth-observation, search, api]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  pystac models local STAC JSON, but discovering live satellite assets
+  means paging a STAC API by time, bbox, and collection. pystac-client
+  is the search client for those APIs so training jobs can find COG
+  items without downloading an entire catalog first.
+
+use_cases:
+  - Search a public STAC API for Sentinel-2 scenes over a training AOI
+  - Page ItemSearch results by datetime before downloading COG assets
+  - Filter collections and cloud cover when assembling a satellite dataset
+  - Inspect matched STAC items before handing them to stackstac or odc-stac
