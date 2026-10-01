@@ -1,0 +1,26 @@
+name: threeML
+description: Multi-Mission Maximum Likelihood framework for high-energy astrophysics. threeML jointly fits X-ray, gamma-ray, and neutrino datasets so pipelines combine instruments without a custom likelihood stack.
+tagline: Joint likelihood fits across high-energy missions
+
+github_url: https://github.com/threeML/threeML
+website_url: https://threeml.readthedocs.io
+docs_url: https://threeml.readthedocs.io
+install_command: pip install threeML
+
+category: Data
+tags: [python, astronomy, gamma-ray, x-ray, likelihood, scientific]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Multi-wavelength transients need one likelihood across
+  Fermi, Swift, and neutrino data, but each mission ships
+  its own fitter. threeML shares those likelihoods so
+  pipelines jointly fit instruments without a custom stack.
+
+use_cases:
+  - Jointly fit a GRB spectrum across Fermi GBM and LAT
+  - Combine X-ray and gamma-ray likelihoods for a blazar
+  - Sample a custom astrophysical model with nested sampling
+  - Compare spectral models on a multi-mission dataset
