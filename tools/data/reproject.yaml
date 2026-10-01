@@ -1,0 +1,26 @@
+name: reproject
+description: Astropy package for reprojecting astronomical images between WCS frames. reproject resamples FITS images onto a common sky grid so survey mosaics align without a custom WCS interpolator.
+tagline: Reproject astronomical images between WCS frames
+
+github_url: https://github.com/astropy/reproject
+website_url: https://reproject.readthedocs.io
+docs_url: https://reproject.readthedocs.io
+install_command: pip install reproject
+
+category: Data
+tags: [python, astronomy, wcs, astropy, mosaics, scientific]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Survey images sit on different WCS frames, so mosaics need
+  a custom interpolator per instrument. reproject resamples
+  FITS images onto a common sky grid so pipelines stack and
+  compare fields without handwritten WCS code.
+
+use_cases:
+  - Reproject a FITS image onto a target WCS for a mosaic
+  - Align multi-survey images before a difference stack
+  - Resample a HEALPix map onto a TAN projection
+  - Coadd overlapping fields from two telescopes

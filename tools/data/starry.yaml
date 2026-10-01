@@ -1,0 +1,26 @@
+name: starry
+description: Analytic occultation and surface-map models for stars and planets. starry computes light curves and spherical-harmonic maps so exoplanet pipelines fit transits without a slow numerical integrator.
+tagline: Analytic occultation light curves for stars and planets
+
+github_url: https://github.com/rodluger/starry
+website_url: https://starry.readthedocs.io
+docs_url: https://starry.readthedocs.io
+install_command: pip install starry
+
+category: Data
+tags: [python, astronomy, exoplanets, light-curves, mapping, scientific]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Occultation light curves and surface maps need spherical
+  harmonics, but numerical integrators are slow for MCMC.
+  starry evaluates analytic transits and maps so exoplanet
+  fits stay exact without a custom occultation kernel.
+
+use_cases:
+  - Fit an analytic transit light curve for a spotted star
+  - Map a planetary surface from phase-curve observations
+  - Generate occultation models for a multi-planet MCMC fit
+  - Compare spherical-harmonic maps across rotation phases

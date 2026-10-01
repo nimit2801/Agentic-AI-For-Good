@@ -1,0 +1,26 @@
+name: pyresample
+description: Geospatial image resampling in Python from the Pytroll stack. pyresample regrids satellite swaths onto map projections so weather and Earth-observation pipelines resample without a custom KD-tree.
+tagline: Geospatial image resampling for satellite data
+
+github_url: https://github.com/pytroll/pyresample
+website_url: https://pyresample.readthedocs.io
+docs_url: https://pyresample.readthedocs.io
+install_command: pip install pyresample
+
+category: Data
+tags: [python, geospatial, satellite, resampling, pytroll, scientific]
+pricing: free
+is_open_source: true
+license: LGPL-3.0
+
+problem_solved: |
+  Satellite swaths arrive on irregular grids, so teams rewrite
+  KD-tree resampling for every sensor. pyresample regrids those
+  swaths onto map projections so weather and EO pipelines share
+  a common resampling stack.
+
+use_cases:
+  - Resample a polar-orbiting swath onto a regional map grid
+  - Regrid satellite imagery before a weather nowcast model
+  - Combine multi-sensor Earth-observation scenes on one projection
+  - Speed up nearest-neighbor resampling with a KD-tree cache
