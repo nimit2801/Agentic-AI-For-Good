@@ -1,0 +1,26 @@
+name: galpy
+description: Python package for galactic dynamics with orbit integration, distribution functions, and action-angle coordinates. galpy is an Astropy affiliated library so stellar-halo pipelines integrate orbits without a custom potential stack.
+tagline: Galactic dynamics, orbits, and actions in Python
+
+github_url: https://github.com/jobovy/galpy
+website_url: https://www.galpy.org
+docs_url: https://docs.galpy.org
+install_command: pip install galpy
+
+category: Data
+tags: [python, astronomy, galactic-dynamics, astropy, orbits, scientific]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Stellar-halo work needs orbits in Milky Way potentials,
+  but labs rewrite integrators per paper. galpy integrates
+  orbits, samples DFs, and computes actions so dynamics
+  pipelines reuse one Astropy-aware library.
+
+use_cases:
+  - Integrate a stellar orbit in a Milky Way potential
+  - Sample a distribution function for a mock halo catalog
+  - Compute action-angle coordinates for a Gaia subsample
+  - Build a galactic-dynamics notebook with Astropy units

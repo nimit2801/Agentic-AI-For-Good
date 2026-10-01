@@ -1,0 +1,26 @@
+name: GalSim
+description: Modular toolkit for simulating images of stars and galaxies with accurate sizes and shears. GalSim renders weak-lensing scenes so survey pipelines generate training images without a custom C++ renderer.
+tagline: High-fidelity galaxy and star image simulations
+
+github_url: https://github.com/GalSim-developers/GalSim
+website_url: https://galsim-developers.github.io/GalSim/_build/html/index.html
+docs_url: https://galsim-developers.github.io/GalSim/_build/html/index.html
+install_command: pip install galsim
+
+category: Data
+tags: [python, astronomy, simulation, weak-lensing, galaxies, scientific]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Weak-lensing challenges need galaxy images with known
+  shear, but custom renderers disagree on PSF and noise.
+  GalSim simulates stars and galaxies so survey pipelines
+  generate training scenes without a one-off C++ stack.
+
+use_cases:
+  - Render a weak-lensing galaxy scene with a known shear
+  - Convolve a galaxy model with a measured PSF for a survey sim
+  - Generate star and galaxy stamps for a shear-measurement test
+  - Drive GalSim from a config file for a GREAT-style challenge
