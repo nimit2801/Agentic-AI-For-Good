@@ -1,0 +1,26 @@
+name: REBOUND
+description: Open-source multi-purpose N-body code for gravitational dynamics. REBOUND integrates planetary systems and collisional debris so astrophysics ML pipelines simulate orbits without writing a custom integrator.
+tagline: Multi-purpose N-body gravity simulations
+
+github_url: https://github.com/hannorein/rebound
+website_url: https://rebound.hanno-rein.de
+docs_url: https://rebound.readthedocs.io
+install_command: pip install rebound
+
+category: Data
+tags: [python, n-body, astrophysics, orbits, simulation, scientific]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Planetary dynamics and debris simulations need symplectic N-body
+  integrators, but rolling a custom gravity code is slow and error
+  prone. REBOUND ships WHFast and other integrators so pipelines
+  evolve orbits and collisions from Python.
+
+use_cases:
+  - Integrate a planetary system to study long-term orbital stability
+  - Simulate collisional debris around a star for a survey model
+  - Generate synthetic transit timing datasets from N-body runs
+  - Embed an N-body integrator inside a likelihood for orbit fitting
