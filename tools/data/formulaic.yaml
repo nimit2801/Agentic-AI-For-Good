@@ -1,0 +1,26 @@
+name: Formulaic
+description: High-performance Wilkinson formulas for Python. Formulaic turns formula strings into model matrices so stats and ML pipelines encode categoricals, interactions, and sparse design matrices without a slow patsy pass.
+tagline: Fast Wilkinson formulas for model matrices
+
+github_url: https://github.com/matthewwardrop/formulaic
+website_url: https://matthewwardrop.github.io/formulaic
+docs_url: https://matthewwardrop.github.io/formulaic
+install_command: pip install formulaic
+
+category: Data
+tags: [python, formulas, statistics, pandas, model-matrix, sparse]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Statistical models need design matrices from formula strings, but
+  patsy is slow and cannot emit sparse output. Formulaic parses
+  Wilkinson formulas and builds dense or sparse matrices so GLM and
+  survival pipelines reuse encodings across train and test frames.
+
+use_cases:
+  - Build a model matrix from y ~ x + z on a pandas DataFrame
+  - Encode categoricals once on train data and reuse on a test set
+  - Emit a sparse CSC matrix for a high-cardinality GLM feature set
+  - Parse interaction terms for a survival or mixed-effects model

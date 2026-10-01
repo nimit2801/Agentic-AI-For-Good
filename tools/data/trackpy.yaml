@@ -1,0 +1,26 @@
+name: trackpy
+description: Python particle tracking toolkit for 2D, 3D, and higher dimensions. trackpy locates features across video frames so soft-matter and microscopy pipelines reconstruct trajectories without a custom linker.
+tagline: Particle tracking in 2D, 3D, and beyond
+
+github_url: https://github.com/soft-matter/trackpy
+website_url: https://soft-matter.github.io/trackpy
+docs_url: https://soft-matter.github.io/trackpy
+install_command: pip install trackpy
+
+category: Data
+tags: [python, particle-tracking, microscopy, scientific, trajectories, imaging]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Microscopy and colloidal experiments record particles across frames,
+  but linking detections into trajectories is error-prone by hand.
+  trackpy locates features and links them in 2D or 3D so labs compute
+  diffusion, drift, and mean-squared displacement from raw video.
+
+use_cases:
+  - Locate colloidal particles in a microscopy movie and link tracks
+  - Reconstruct 3D trajectories from a confocal image stack
+  - Compute mean-squared displacement for a Brownian motion experiment
+  - Filter spurious links before fitting a diffusion coefficient

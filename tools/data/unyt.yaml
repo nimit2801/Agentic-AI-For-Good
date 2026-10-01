@@ -1,0 +1,26 @@
+name: unyt
+description: NumPy ndarray subclass that carries physical units. unyt converts, multiplies, and compares scientific arrays with unit metadata so ML and simulation pipelines stop mixing meters with miles.
+tagline: NumPy arrays that know their units
+
+github_url: https://github.com/yt-project/unyt
+website_url: https://unyt.readthedocs.io
+docs_url: https://unyt.readthedocs.io
+install_command: pip install unyt
+
+category: Data
+tags: [python, units, numpy, scientific, arrays, conversion]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Scientific arrays lose unit metadata the moment they become NumPy
+  ndarrays, so pipelines mix kilometers with miles and fail silently.
+  unyt subclasses ndarray with unit tracking so conversions and
+  arithmetic stay dimensionally consistent without a parallel units table.
+
+use_cases:
+  - Convert a distance array from miles to kilometers in one call
+  - Multiply velocity and time arrays and get a length with units
+  - Guard a simulation pipeline against mixing cgs and SI quantities
+  - Attach solar-mass units to a particle mass column before analysis
