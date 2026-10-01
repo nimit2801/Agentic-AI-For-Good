@@ -1,0 +1,26 @@
+name: mocpy
+description: Python library for Multi-Order Coverage maps from CDS. mocpy creates and queries MOCs so astronomy pipelines filter HEALPix sky coverage without a custom nested-index stack.
+tagline: Multi-Order Coverage maps for astronomy
+
+github_url: https://github.com/cds-astro/mocpy
+website_url: https://cds-astro.github.io/mocpy/
+docs_url: https://cds-astro.github.io/mocpy/
+install_command: pip install mocpy
+
+category: Data
+tags: [python, astronomy, healpix, moc, cds, scientific]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Survey footprints need HEALPix coverage maps, but nested
+  index code is rewritten per catalog. mocpy creates and
+  queries MOCs so pipelines filter sky coverage without a
+  custom nested-pixel stack.
+
+use_cases:
+  - Build a MOC from a catalog and query sources inside the footprint
+  - Intersect two survey coverage maps before a cross-match
+  - Filter a HEALPix map to the region observed by a telescope
+  - Serialize a Multi-Order Coverage map for a VO service

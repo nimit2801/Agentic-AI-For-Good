@@ -1,0 +1,26 @@
+name: astroscrappy
+description: Speedy cosmic-ray annihilation package in Python. astroscrappy detects and replaces cosmic-ray hits on CCD frames so optical pipelines clean images without a slow Laplacian kernel rewrite.
+tagline: Fast cosmic-ray detection for CCD images
+
+github_url: https://github.com/astropy/astroscrappy
+website_url: https://github.com/astropy/astroscrappy
+docs_url: https://github.com/astropy/astroscrappy
+install_command: pip install astroscrappy
+
+category: Data
+tags: [python, astronomy, ccd, cosmic-rays, astropy, scientific]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Optical CCD frames pick up cosmic-ray hits, but Laplacian
+  cleaners are rewritten per observatory and run slowly.
+  astroscrappy detects and replaces those hits so reduction
+  pipelines clean images without a custom C kernel.
+
+use_cases:
+  - Clean cosmic-ray hits from a night of CCD science frames
+  - Replace Laplacian detection in an optical reduction pipeline
+  - Mask cosmic rays before photometry on a long exposure
+  - Batch-clean a survey mosaic without a slow Python loop
