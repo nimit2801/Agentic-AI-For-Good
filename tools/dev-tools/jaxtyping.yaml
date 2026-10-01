@@ -1,0 +1,25 @@
+name: jaxtyping
+description: Type annotations and runtime checks for array shape and dtype across JAX, NumPy, and PyTorch. jaxtyping catches axis mistakes so ML code documents tensor ranks instead of failing inside a later matmul.
+tagline: Shape and dtype annotations for JAX and PyTorch
+
+github_url: https://github.com/patrick-kidger/jaxtyping
+website_url: https://docs.kidger.site/jaxtyping
+docs_url: https://docs.kidger.site/jaxtyping
+install_command: pip install jaxtyping
+
+category: Dev Tools
+tags: [python, jax, pytorch, numpy, typing, tensors, scientific]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Array ML code hides rank and dtype in comments until a matmul crashes.
+  jaxtyping annotates shapes at type-check and runtime so JAX, NumPy, and
+  PyTorch functions fail early when an axis is wrong.
+
+use_cases:
+  - Annotate a JAX network forward pass with Float[Array, "b n d"]
+  - Catch a transposed attention tensor before training starts
+  - Document PyTorch layer input ranks for a shared research codebase
+  - Add runtime shape checks around a NumPy preprocessing function
