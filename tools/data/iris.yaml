@@ -1,0 +1,26 @@
+name: Iris
+description: Format-agnostic Python package for analysing and visualising Earth science data. Iris wraps cubes with CF metadata so climate ML pipelines can load NetCDF, GRIB, and PP files as labeled arrays without writing a reader per archive.
+tagline: Earth science cubes with CF metadata
+
+github_url: https://github.com/SciTools/iris
+website_url: https://scitools-iris.readthedocs.io
+docs_url: https://scitools-iris.readthedocs.io
+install_command: pip install scitools-iris
+
+category: Data
+tags: [python, climate, netcdf, grib, earth-science, cf-conventions, scientific]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Climate archives mix NetCDF, GRIB, and PP with inconsistent coordinates.
+  Iris loads those files as CF cubes so Earth-science ML pipelines can
+  subset, regrid, and plot labeled fields without a custom reader for
+  every archive.
+
+use_cases:
+  - Load a mixed NetCDF and GRIB climate archive as CF cubes
+  - Subset a global temperature cube to a regional training domain
+  - Regrid Earth-science fields onto a common analysis grid
+  - Plot cube diagnostics before feeding arrays into a forecast model

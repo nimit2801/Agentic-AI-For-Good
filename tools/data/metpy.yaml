@@ -1,0 +1,26 @@
+name: MetPy
+description: Python toolkit for reading, visualizing, and calculating with weather data. MetPy gives atmospheric ML pipelines unit-aware thermodynamics, interpolation, and sounding plots so meteorological arrays stay physically consistent before training.
+tagline: Weather calculations and plots for atmospheric data
+
+github_url: https://github.com/Unidata/MetPy
+website_url: https://unidata.github.io/MetPy/
+docs_url: https://unidata.github.io/MetPy/
+install_command: pip install MetPy
+
+category: Data
+tags: [python, weather, meteorology, climate, xarray, scientific, visualization]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Weather ML jobs need dewpoint, CAPE, and unit-aware interpolation, but
+  those calculations usually live in one-off NumPy scripts. MetPy packages
+  meteorological formulas and plots so atmospheric pipelines can keep
+  physically consistent arrays before training.
+
+use_cases:
+  - Compute CAPE and dewpoint on a gridded forecast Dataset
+  - Plot a sounding from radiosonde observations before model input
+  - Interpolate station weather onto a regular lat-lon grid
+  - Convert mixed weather units into a consistent training tensor
