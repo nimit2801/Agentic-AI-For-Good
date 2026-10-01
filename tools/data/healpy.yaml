@@ -1,0 +1,26 @@
+name: healpy
+description: Python tools for HEALPix spherical maps used in cosmology and astronomy. healpy reads, writes, and transforms spherical pixelizations so CMB and all-sky ML pipelines can work with HEALPix maps without the C++ HEALPix stack.
+tagline: Python HEALPix maps for cosmology and astronomy
+
+github_url: https://github.com/healpy/healpy
+website_url: https://healpy.readthedocs.io
+docs_url: https://healpy.readthedocs.io
+install_command: pip install healpy
+
+category: Data
+tags: [python, astronomy, cosmology, healpix, spherical, scientific]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Cosmology and all-sky surveys store maps on the HEALPix sphere, and
+  the C++ HEALPix library is awkward to call from Python ML jobs.
+  healpy wraps that pixelization so pipelines can read FITS maps,
+  compute spherical harmonics, and resample without Fortran glue.
+
+use_cases:
+  - Read a Planck CMB HEALPix map into a NumPy array for training
+  - Downgrade an all-sky survey map to a coarser NSIDE before a model
+  - Compute spherical harmonic coefficients of a temperature map
+  - Visualize a Mollweide projection of an astronomical sky map

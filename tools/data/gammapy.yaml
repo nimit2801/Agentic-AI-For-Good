@@ -1,0 +1,26 @@
+name: Gammapy
+description: Python package for gamma-ray astronomy data analysis. Gammapy reduces event lists from IACT and Fermi-LAT style instruments into maps, spectra, and light curves so high-energy astronomy ML pipelines can work from analysis-ready products.
+tagline: Gamma-ray astronomy analysis in Python
+
+github_url: https://github.com/gammapy/gammapy
+website_url: https://gammapy.org
+docs_url: https://docs.gammapy.org
+install_command: pip install gammapy
+
+category: Data
+tags: [python, astronomy, gamma-ray, astropy, scientific, high-energy]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Gamma-ray observatories deliver event lists that need instrument
+  response, background, and spectral fitting before they are ML-ready.
+  Gammapy reduces those events into maps and spectra so high-energy
+  astronomy pipelines can skip one-off IACT analysis code.
+
+use_cases:
+  - Reduce IACT event lists into a sky map for a source search
+  - Fit a gamma-ray spectrum with instrument response functions
+  - Build a light curve from Fermi-LAT style event data
+  - Prepare analysis-ready high-energy maps for a classification model

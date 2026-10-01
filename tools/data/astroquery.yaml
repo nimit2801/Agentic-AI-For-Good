@@ -1,0 +1,26 @@
+name: astroquery
+description: Astropy-affiliated package for querying online astronomy archives. astroquery pulls catalogs, images, and spectra from SIMBAD, VizieR, MAST, and ESA so astronomy ML pipelines can fetch labeled sky data without hand-written archive clients.
+tagline: Query astronomy archives from Python
+
+github_url: https://github.com/astropy/astroquery
+website_url: https://astroquery.readthedocs.io
+docs_url: https://astroquery.readthedocs.io
+install_command: pip install astroquery
+
+category: Data
+tags: [python, astronomy, astropy, catalogs, scientific, data-access]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Astronomy ML jobs need catalogs and cutouts from many archives, each
+  with its own HTTP API. astroquery wraps SIMBAD, VizieR, MAST, and ESA
+  services so pipelines can query coordinates and download tables without
+  a custom client per archive.
+
+use_cases:
+  - Query SIMBAD object metadata for a list of target coordinates
+  - Download a VizieR catalog table as an Astropy Table for training
+  - Fetch MAST cutouts around TESS or Hubble targets
+  - Pull ESA archive spectra into a classification pipeline
