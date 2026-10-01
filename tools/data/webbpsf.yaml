@@ -1,0 +1,26 @@
+name: WebbPSF
+description: STScI simulator for James Webb Space Telescope point-spread functions. WebbPSF models JWST instrument PSFs so observation planning and data reduction use optical models instead of a custom diffraction stack.
+tagline: JWST point-spread function simulation from STScI
+
+github_url: https://github.com/spacetelescope/webbpsf
+website_url: https://webbpsf.readthedocs.io
+docs_url: https://webbpsf.readthedocs.io
+install_command: pip install webbpsf
+
+category: Data
+tags: [python, astronomy, jwst, psf, optics, scientific]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  JWST reduction and planning need instrument PSFs, but Fourier
+  optics models are rewritten per NIRCam or MIRI setup. WebbPSF
+  simulates telescope PSFs so pipelines compare observations to
+  optical models without a custom diffraction stack.
+
+use_cases:
+  - Simulate a NIRCam PSF for a JWST observation proposal
+  - Compare a measured JWST star image to a WebbPSF model
+  - Generate MIRI PSFs across wavelengths for a reduction pipeline
+  - Model coronagraph PSFs before a high-contrast imaging program

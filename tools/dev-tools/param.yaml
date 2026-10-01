@@ -1,0 +1,26 @@
+name: param
+description: HoloViz library for declarative parameters and reactive Python classes. Param turns attributes into typed, watchable parameters so dashboards and scientific apps share state without a custom observer layer.
+tagline: Declarative parameters for reactive Python classes
+
+github_url: https://github.com/holoviz/param
+website_url: https://param.holoviz.org
+docs_url: https://param.holoviz.org
+install_command: pip install param
+
+category: Dev Tools
+tags: [python, parameters, reactive, holoviz, dashboard, scientific]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Scientific dashboards and ML apps need typed, watchable settings,
+  but ad hoc attributes and callbacks drift out of sync. Param
+  declares parameters on classes so HoloViews, Panel, and custom
+  tools share reactive state without a homemade observer layer.
+
+use_cases:
+  - Declare typed, bounded parameters on a scientific Python class
+  - Watch parameter changes to update a Panel or HoloViews dashboard
+  - Share configuration state across a HoloViz visualization stack
+  - Build a reactive ML control panel without a custom observer bus
