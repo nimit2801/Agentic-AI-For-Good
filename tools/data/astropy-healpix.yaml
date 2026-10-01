@@ -1,0 +1,26 @@
+name: astropy-healpix
+description: BSD-licensed HEALPix pixelization for Astropy, based on astrometry.net C code. astropy-healpix converts sky coordinates to HEALPix indices so astronomy pipelines map all-sky data without a GPL HEALPix dependency.
+tagline: BSD HEALPix pixelization inside the Astropy stack
+
+github_url: https://github.com/astropy/astropy-healpix
+website_url: https://astropy-healpix.readthedocs.io
+docs_url: https://astropy-healpix.readthedocs.io
+install_command: pip install astropy-healpix
+
+category: Data
+tags: [python, astronomy, healpix, astropy, pixelization, scientific]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  All-sky catalogs need HEALPix indices, but the classic
+  HEALPix library is GPL. astropy-healpix maps coordinates
+  to pixels under BSD so Astropy pipelines pixelize
+  surveys without a license conflict.
+
+use_cases:
+  - Convert RA/Dec catalogs to HEALPix indices for an all-sky map
+  - Interpolate a HEALPix temperature map onto Astropy coordinates
+  - Nested-to-ring convert HEALPix pixels in a survey pipeline
+  - Build an all-sky density map without a GPL HEALPix dependency

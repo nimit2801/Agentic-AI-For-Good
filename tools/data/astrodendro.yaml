@@ -1,0 +1,26 @@
+name: astrodendro
+description: Python package for computing astronomical dendrograms from observed or simulated data. astrodendro segments hierarchical structure in cubes so ISM pipelines extract clumps without a custom friends-of-friends rewrite.
+tagline: Hierarchical dendrograms for astronomical data cubes
+
+github_url: https://github.com/dendrograms/astrodendro
+website_url: https://dendrograms.readthedocs.io
+docs_url: https://dendrograms.readthedocs.io
+install_command: pip install astrodendro
+
+category: Data
+tags: [python, astronomy, dendrogram, ism, cubes, scientific]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Molecular clouds show nested clumps that friends-of-friends
+  catalogs flatten. astrodendro builds hierarchical
+  dendrograms on cubes so ISM pipelines extract structure
+  without a custom segmentation stack.
+
+use_cases:
+  - Compute a dendrogram on a molecular-line data cube
+  - Extract nested clumps from a simulated ISM density field
+  - Catalog hierarchical structure in an ALMA map
+  - Compare dendrogram leaves across two survey cubes

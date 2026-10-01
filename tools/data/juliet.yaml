@@ -1,0 +1,26 @@
+name: juliet
+description: Python modelling tool for transiting and radial-velocity exoplanet systems. juliet fits light curves and RVs with nested sampling so exoplanet pipelines infer planets without a custom batman-plus-radvel stack.
+tagline: Joint transit and RV modelling for exoplanet systems
+
+github_url: https://github.com/nespinoza/juliet
+website_url: https://juliet.readthedocs.io
+docs_url: https://juliet.readthedocs.io
+install_command: pip install juliet
+
+category: Data
+tags: [python, astronomy, exoplanet, transit, radial-velocity, scientific]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Exoplanet fits need transits and RVs in one model, but
+  labs glue batman and radvel by hand. juliet jointly
+  models light curves and velocities with nested sampling
+  so pipelines infer planets without a custom stack.
+
+use_cases:
+  - Fit a TESS light curve and HARPS RVs in one juliet run
+  - Model a multi-planet system with nested sampling
+  - Compare transit-only and joint RV fits for a candidate
+  - Build an exoplanet inference notebook on published photometry
