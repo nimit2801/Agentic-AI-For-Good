@@ -1,0 +1,26 @@
+name: jplephem
+description: Python reader for NASA JPL DE ephemerides used to predict planet positions. jplephem interpolates DE4xx kernels so astronomy pipelines get barycentric coordinates without SPICE.
+tagline: NASA JPL ephemerides for planet positions in Python
+
+github_url: https://github.com/brandon-rhodes/python-jplephem
+website_url: https://github.com/brandon-rhodes/python-jplephem
+docs_url: https://github.com/brandon-rhodes/python-jplephem
+install_command: pip install jplephem
+
+category: Data
+tags: [python, astronomy, ephemeris, jpl, planets, scientific]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Planet and spacecraft geometry needs JPL DE kernels, but
+  SPICE is heavy for a Python-only pipeline. jplephem reads
+  DE4xx files so barycentric positions come from a small
+  interpolator instead of a full SPICE stack.
+
+use_cases:
+  - Predict Earth and Mars barycentric positions from a DE440 kernel
+  - Compute light-time corrected planet coordinates for an observation
+  - Feed JPL ephemerides into a Python orbit or transit model
+  - Replace a SPICE call with a lightweight DE file reader

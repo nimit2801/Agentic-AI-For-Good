@@ -1,0 +1,26 @@
+name: pyorbital
+description: Pytroll library for satellite orbit and astronomy computations. pyorbital predicts satellite passes and viewing geometry so weather pipelines schedule acquisitions without a custom SGP4 wrapper.
+tagline: Satellite orbit and pass scheduling in Python
+
+github_url: https://github.com/pytroll/pyorbital
+website_url: https://pyorbital.readthedocs.io
+docs_url: https://pyorbital.readthedocs.io
+install_command: pip install pyorbital
+
+category: Data
+tags: [python, satellite, orbit, sgp4, pytroll, scientific]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Weather and EO pipelines need next-pass times and viewing
+  geometry, but SGP4 wrappers get rewritten per mission.
+  pyorbital computes orbits and pass schedules so acquisition
+  jobs run without a custom two-line-element stack.
+
+use_cases:
+  - Predict the next NOAA or Metop pass over a ground station
+  - Compute satellite viewing angles for a weather scene
+  - Convert two-line elements into Earth-centered positions
+  - Schedule a polar-orbiting download window from TLE data
