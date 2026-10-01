@@ -1,0 +1,27 @@
+name: getdist
+description: Python package for analysing MCMC samples with kernel density estimates, triangle plots, and a GUI. getdist turns CosmoMC and cobaya chains into publication plots so cosmology pipelines skip a custom GetDist clone.
+tagline: MCMC sample analysis, KDE, and triangle plots
+
+github_url: https://github.com/cmbant/getdist
+website_url: https://getdist.readthedocs.io
+docs_url: https://getdist.readthedocs.io
+install_command: pip install getdist
+
+category: Data
+tags: [python, cosmology, mcmc, plotting, kde, scientific]
+pricing: free
+is_open_source: true
+license: LGPL-3.0
+
+problem_solved: |
+  Cosmology chains need marginalized constraints and
+  triangle plots, but matplotlib scripts disagree on
+  bandwidth. getdist estimates densities and plots
+  contours so pipelines publish results without a
+  custom chain analyzer.
+
+use_cases:
+  - Make a triangle plot from cobaya or CosmoMC chains
+  - Print LaTeX 1D constraints for a cosmology paper
+  - Compare two MCMC runs with GetDist KDE contours
+  - Open chain files in the GetDist GUI for a quick look

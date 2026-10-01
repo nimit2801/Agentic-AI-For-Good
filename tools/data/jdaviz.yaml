@@ -1,0 +1,26 @@
+name: jdaviz
+description: STScI Jupyter tools for interactive astronomy visualization. jdaviz combines image, spectrum, and cube viewers so JWST pipelines inspect observations without a custom desktop viewer.
+tagline: Interactive JWST-ready visualization in Jupyter
+
+github_url: https://github.com/spacetelescope/jdaviz
+website_url: https://jdaviz.readthedocs.io
+docs_url: https://jdaviz.readthedocs.io
+install_command: pip install jdaviz
+
+category: Data
+tags: [python, astronomy, jupyter, jwst, visualization, scientific]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  JWST cubes and spectra need linked viewers, but IRAF
+  and desktop tools sit outside notebooks. jdaviz
+  combines Imviz, Specviz, and Cubeviz so pipelines
+  inspect observations without a custom GUI.
+
+use_cases:
+  - Inspect a JWST NIRSpec cube inside a Jupyter notebook
+  - Measure spectral lines on a 1D extraction with Specviz
+  - Run aperture photometry on an HST or JWST image in Imviz
+  - Explore a multi-object spectrograph visit with Mosviz

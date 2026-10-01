@@ -1,0 +1,26 @@
+name: cobaya
+description: Bayesian sampling framework for cosmology with MCMC and nested sampling. cobaya wraps CAMB, CLASS, and experiment likelihoods so cosmology pipelines explore posteriors without a custom CosmoMC rewrite.
+tagline: Bayesian sampling for cosmology likelihoods
+
+github_url: https://github.com/CobayaSampler/cobaya
+website_url: https://cobaya.readthedocs.io
+docs_url: https://cobaya.readthedocs.io
+install_command: pip install cobaya
+
+category: Data
+tags: [python, cosmology, bayesian, mcmc, camb, scientific]
+pricing: free
+is_open_source: true
+license: LGPL-3.0
+
+problem_solved: |
+  Cosmology fits glue CAMB or CLASS to Planck likelihoods
+  by hand. cobaya samples those posteriors with MCMC and
+  nested sampling so pipelines explore parameters without
+  a custom CosmoMC stack.
+
+use_cases:
+  - Sample a Planck likelihood with CAMB theory in cobaya
+  - Run PolyChord nested sampling on a custom cosmology prior
+  - Compare CLASS and CAMB spectra inside one cobaya input
+  - Produce GetDist-ready chains from a cosmology MCMC run
