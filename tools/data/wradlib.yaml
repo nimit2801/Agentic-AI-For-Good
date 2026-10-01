@@ -1,0 +1,26 @@
+name: wradlib
+description: Python library for weather radar data processing. wradlib reads common radar formats, georeferences sweeps, converts reflectivity to rainfall, and corrects clutter so precipitation ML pipelines can turn raw polar volumes into analysis-ready fields.
+tagline: Weather radar processing for rainfall ML pipelines
+
+github_url: https://github.com/wradlib/wradlib
+website_url: https://wradlib.org
+docs_url: https://docs.wradlib.org
+install_command: pip install wradlib
+
+category: Data
+tags: [python, weather, radar, precipitation, geospatial, scientific]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Weather radar volumes arrive in polar coordinates with clutter and
+  attenuation, and turning them into rainfall fields is a specialized
+  pipeline. wradlib reads common radar formats and applies georeferencing
+  plus quality corrections so precipitation ML jobs start from clean grids.
+
+use_cases:
+  - Convert radar reflectivity to rainfall intensity for a nowcast model
+  - Georeference polar sweeps onto a Cartesian grid before training
+  - Identify and remove clutter from a weather radar volume
+  - Visualize corrected rainfall fields from an operational radar archive

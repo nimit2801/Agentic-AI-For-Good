@@ -1,0 +1,26 @@
+name: intake-esm
+description: Intake plugin that parses Earth System Model catalogs and loads assets into xarray. intake-esm turns ESM collection JSON into queryable catalogs so climate ML pipelines can find and open NetCDF or Zarr assets without hunting paths on HPC or cloud storage.
+tagline: ESM catalog loader for xarray climate datasets
+
+github_url: https://github.com/intake/intake-esm
+website_url: https://intake-esm.readthedocs.io
+docs_url: https://intake-esm.readthedocs.io
+install_command: pip install intake-esm
+
+category: Data
+tags: [python, climate, xarray, intake, netcdf, zarr, esm, scientific]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Earth-system simulations scatter NetCDF and Zarr assets across HPC
+  and cloud stores, and finding the right ensemble member is slow.
+  intake-esm parses ESM collection catalogs so climate ML jobs can
+  query and load compute-ready xarray datasets instead of globbing paths.
+
+use_cases:
+  - Query a CMIP6 catalog for a model, experiment, and variable
+  - Load matching Zarr assets into an xarray Dataset for training
+  - Browse an ESM collection JSON before a climate downscaling job
+  - Open a Pangeo cloud catalog subset without downloading every file

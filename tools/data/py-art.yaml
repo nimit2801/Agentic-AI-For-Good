@@ -1,0 +1,26 @@
+name: Py-ART
+description: Python ARM Radar Toolkit for working with weather radar data. Py-ART provides a data-model-driven API to read, map, correct, and visualize polarimetric radar so atmospheric ML pipelines can turn ARM and NEXRAD volumes into gridded fields.
+tagline: Interactive toolkit for weather radar volumes
+
+github_url: https://github.com/ARM-DOE/pyart
+website_url: https://arm-doe.github.io/pyart/
+docs_url: https://arm-doe.github.io/pyart/
+install_command: pip install arm-pyart
+
+category: Data
+tags: [python, weather, radar, arm, nexrad, atmospheric, scientific]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Atmospheric ML jobs need polarimetric radar from ARM and NEXRAD, but
+  each format has its own reader and grid mapping. Py-ART gives a shared
+  data model so pipelines can read, correct, and grid radar volumes
+  without one-off parsers for every instrument.
+
+use_cases:
+  - Read an ARM or NEXRAD polarimetric volume into a Radar object
+  - Grid polar sweeps onto a Cartesian field for a nowcasting model
+  - Apply attenuation and dealiasing corrections before training
+  - Visualize dual-pol moments from a research radar campaign
