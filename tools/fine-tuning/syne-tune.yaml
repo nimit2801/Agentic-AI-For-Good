@@ -1,0 +1,26 @@
+name: Syne Tune
+description: Large-scale asynchronous hyperparameter and architecture optimization toolkit. Syne Tune schedules trials across local, SageMaker, and custom backends so HPO does not wait on a sequential loop.
+tagline: Asynchronous HPO across local and cloud backends
+
+github_url: https://github.com/syne-tune/syne-tune
+website_url: https://syne-tune.readthedocs.io
+docs_url: https://syne-tune.readthedocs.io
+install_command: pip install syne-tune
+
+category: Fine-tuning
+tags: [python, hyperparameter-tuning, hpo, aws, asynchronous, architecture-search]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Hyperparameter and NAS jobs stall when trials run one at
+  a time on a single backend. Syne Tune schedules asynchronous
+  HPO across local machines and SageMaker so workers start the
+  next trial as soon as a slot frees.
+
+use_cases:
+  - Run asynchronous Bayesian optimization across many workers
+  - Tune a model on SageMaker without a sequential trial loop
+  - Compare HPO schedulers on the same search space
+  - Search neural architectures with early-stopping schedulers

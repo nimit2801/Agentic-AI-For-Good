@@ -1,0 +1,25 @@
+name: Spearmint
+description: Bayesian optimization codebase for hyperparameter search with Gaussian process models. Spearmint proposes the next experiment so ML teams tune models without a grid search.
+tagline: Bayesian optimization for hyperparameter search
+
+github_url: https://github.com/HIPS/Spearmint
+website_url: https://github.com/HIPS/Spearmint
+docs_url: https://github.com/HIPS/Spearmint
+
+category: Fine-tuning
+tags: [python, bayesian-optimization, hyperparameter-tuning, gaussian-process, research]
+pricing: free
+is_open_source: true
+license: Academic
+
+problem_solved: |
+  Hyperparameter search wastes compute on grid and random
+  trials that ignore previous results. Spearmint fits a
+  Gaussian process over experiments so the next trial is
+  chosen by expected improvement instead of brute force.
+
+use_cases:
+  - Tune learning rate and regularizers with a Gaussian process
+  - Choose the next training run from expected improvement
+  - Parallelize Bayesian optimization across a compute cluster
+  - Replace grid search on a small experimental budget
