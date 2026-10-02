@@ -1,0 +1,26 @@
+name: KeOps
+description: Kernel operations on CPUs and GPUs with autodiff and no memory overflows. KeOps compiles symbolic reductions so Gaussian processes and nearest-neighbor ML scale past GPU RAM limits.
+tagline: GPU kernel reductions without memory overflows
+
+github_url: https://github.com/getkeops/keops
+website_url: https://www.kernel-operations.io
+docs_url: https://www.kernel-operations.io
+install_command: pip install pykeops
+
+category: Data
+tags: [python, cuda, kernels, gaussian-process, gpu, scientific]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Pairwise kernel matrices overflow GPU memory long before the
+  math is the bottleneck. KeOps compiles symbolic reductions
+  so Gaussian processes, optimal transport, and nearest-neighbor
+  ML run on millions of points without materializing N-by-N maps.
+
+use_cases:
+  - Compute a Gaussian kernel sum on millions of points without OOM
+  - Train a kernel machine with autodiff through a KeOps reduction
+  - Run GPU nearest-neighbor search without a dense distance matrix
+  - Scale an optimal-transport kernel beyond GPU RAM limits

@@ -1,0 +1,26 @@
+name: einx
+description: Universal Einstein-style notation for tensor operations across NumPy, JAX, PyTorch, and TensorFlow. einx rewrites named-axis expressions so ML code rearranges tensors without backend-specific einsum.
+tagline: Named-axis tensor ops across NumPy, JAX, and PyTorch
+
+github_url: https://github.com/fferflo/einx
+website_url: https://einx.readthedocs.io
+docs_url: https://einx.readthedocs.io
+install_command: pip install einx
+
+category: Dev Tools
+tags: [python, tensors, jax, pytorch, numpy, einsum, scientific]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Tensor rearranges differ across NumPy, JAX, and PyTorch, so
+  shared ML code forks on reshape and einsum. einx compiles
+  named-axis expressions to each backend so the same formula
+  runs without a custom rearrange helper per framework.
+
+use_cases:
+  - Rewrite a multi-head attention rearrange as a named-axis expression
+  - Share one tensor formula across NumPy tests and JAX training
+  - Replace a chain of permute and reshape with a single einx call
+  - Express a batched einsum without memorizing backend argument order

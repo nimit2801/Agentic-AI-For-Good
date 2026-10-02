@@ -1,0 +1,26 @@
+name: george
+description: Fast Gaussian process regression for large, irregularly sampled datasets. george uses HODLR factorization so astronomy and ML pipelines fit GPs without a dense covariance matrix.
+tagline: Fast Gaussian process regression without dense covariances
+
+github_url: https://github.com/dfm/george
+website_url: http://george.readthedocs.io
+docs_url: http://george.readthedocs.io
+install_command: pip install george
+
+category: Data
+tags: [python, gaussian-process, astronomy, kernels, scientific, regression]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Gaussian process fits on large time series explode when the
+  covariance is dense. george uses HODLR and kernel structure
+  so astronomy and ML pipelines regress on irregular samples
+  without materializing an N-by-N matrix.
+
+use_cases:
+  - Fit a GP to irregularly sampled stellar photometry
+  - Model correlated noise in an exoplanet transit light curve
+  - Regress a scientific time series without a dense covariance
+  - Swap kernels while keeping the same fast HODLR solver
