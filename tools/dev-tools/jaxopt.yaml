@@ -1,0 +1,26 @@
+name: JAXopt
+description: Hardware-accelerated, batchable, and differentiable optimizers in JAX. JAXopt wraps LBFGS, projected gradient, and implicit differentiation so training loops stay on accelerators.
+tagline: Differentiable JAX optimizers that batch and JIT
+
+github_url: https://github.com/google/jaxopt
+website_url: https://jaxopt.github.io
+docs_url: https://jaxopt.github.io
+install_command: pip install jaxopt
+
+category: Dev Tools
+tags: [python, jax, optimization, autodiff, lbfgs, scientific]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JAX training often needs second-order or constrained solvers,
+  but SciPy optimizers drop off the accelerator. JAXopt provides
+  batchable, differentiable LBFGS and projected-gradient methods
+  so inner loops stay JIT-compiled and implicit-diff friendly.
+
+use_cases:
+  - Run LBFGS on a JAX loss without leaving the accelerator
+  - Differentiate through an inner optimizer with implicit diffs
+  - Batch projected-gradient solves across a dataset of problems
+  - Fit a constrained scientific model inside a JAX training loop

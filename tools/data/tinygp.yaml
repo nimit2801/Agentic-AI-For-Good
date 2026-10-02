@@ -1,0 +1,26 @@
+name: tinygp
+description: JAX Gaussian process library with custom kernels and scalable inference. tinygp fits GPs on JAX arrays so scientific ML pipelines model uncertainty without leaving the autodiff stack.
+tagline: Tiny Gaussian processes on the JAX autodiff stack
+
+github_url: https://github.com/dfm/tinygp
+website_url: https://tinygp.readthedocs.io
+docs_url: https://tinygp.readthedocs.io
+install_command: pip install tinygp
+
+category: Data
+tags: [python, jax, gaussian-process, kernels, scientific, uncertainty]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Scientific ML needs Gaussian processes that compose with JAX
+  transforms, but classic GP libraries sit outside autodiff.
+  tinygp implements kernels and inference in JAX so pipelines
+  fit GPs, take gradients, and JIT without leaving the stack.
+
+use_cases:
+  - Fit a JAX Gaussian process to irregularly sampled sensor data
+  - Define a custom kernel and differentiate it through a JAX loss
+  - Model aleatoric uncertainty in a scientific surrogate model
+  - JIT-compile GP prediction for a downstream simulation loop
