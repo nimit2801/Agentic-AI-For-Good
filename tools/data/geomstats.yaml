@@ -1,0 +1,26 @@
+name: geomstats
+description: Computations and statistics on manifolds with geometric structure. geomstats implements Riemannian metrics so ML pipelines run PCA, clustering, and regression on spheres and SPD matrices.
+tagline: Statistics and ML on Riemannian manifolds
+
+github_url: https://github.com/geomstats/geomstats
+website_url: http://geomstats.ai
+docs_url: https://geomstats.github.io
+install_command: pip install geomstats
+
+category: Data
+tags: [python, geometry, manifolds, riemannian, scientific, statistics]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Shape, pose, and covariance data live on manifolds, but
+  Euclidean ML ops ignore that geometry. geomstats provides
+  Riemannian metrics, geodesics, and stats so pipelines run
+  PCA and clustering on spheres and SPD matrices correctly.
+
+use_cases:
+  - Run Frechet mean and PCA on a sphere of unit directions
+  - Cluster covariance matrices with an SPD Riemannian metric
+  - Compute geodesics between poses in a robotics dataset
+  - Fit a manifold-aware regression on shape landmarks
