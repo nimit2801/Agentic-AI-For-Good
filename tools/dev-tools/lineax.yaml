@@ -1,0 +1,26 @@
+name: Lineax
+description: Linear solvers in JAX and Equinox for least squares, linear systems, and iterative methods. Lineax keeps solves differentiable and GPU-resident so scientific ML does not drop to NumPy linalg.
+tagline: Differentiable linear solvers for JAX and Equinox
+
+github_url: https://github.com/patrick-kidger/lineax
+website_url: https://docs.kidger.site/lineax
+docs_url: https://docs.kidger.site/lineax
+install_command: pip install lineax
+
+category: Dev Tools
+tags: [python, jax, linear-algebra, equinox, least-squares, scientific]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JAX models often need least-squares or iterative linear
+  solves that stay on device and through autodiff. SciPy
+  linalg leaves the accelerator. Lineax wraps those solvers
+  so Equinox training loops invert systems without a host copy.
+
+use_cases:
+  - Solve a batched least-squares problem inside a JAX loss
+  - Invert a linear system with a GPU-resident iterative solver
+  - Differentiate through a Lineax solve in an Equinox model
+  - Replace a NumPy linalg call that was copying off device

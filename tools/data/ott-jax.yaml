@@ -1,0 +1,26 @@
+name: OTT-JAX
+description: Optimal transport tools in JAX for large-scale matching, Sinkhorn, and Wasserstein problems. OTT-JAX solves OT on accelerators so ML pipelines align distributions without a CPU solver.
+tagline: JAX optimal transport for large-scale matching
+
+github_url: https://github.com/ott-jax/ott
+website_url: https://ott-jax.readthedocs.io
+docs_url: https://ott-jax.readthedocs.io
+install_command: pip install ott-jax
+
+category: Data
+tags: [python, jax, optimal-transport, sinkhorn, wasserstein, matching]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Matching and Wasserstein losses need Sinkhorn-scale OT that
+  runs on GPU, but classic OT solvers stay on CPU. OTT-JAX
+  implements those tools in JAX so pipelines align point clouds
+  and distributions without leaving the accelerator.
+
+use_cases:
+  - Compute a Sinkhorn divergence between two point clouds in JAX
+  - Align unpaired datasets with a GPU Wasserstein loss
+  - Solve a large-scale matching problem without a CPU OT solver
+  - Differentiate through an OT map inside a training loop

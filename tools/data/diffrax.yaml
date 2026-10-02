@@ -1,0 +1,26 @@
+name: Diffrax
+description: Numerical differential equation solvers in JAX that are autodifferentiable and GPU-capable. Diffrax integrates ODEs, SDEs, and CDEs so scientific ML trains neural ODEs without leaving the JAX stack.
+tagline: Autodiff ODE, SDE, and CDE solvers in JAX
+
+github_url: https://github.com/patrick-kidger/diffrax
+website_url: https://docs.kidger.site/diffrax
+docs_url: https://docs.kidger.site/diffrax
+install_command: pip install diffrax
+
+category: Data
+tags: [python, jax, ode, sde, neural-ode, scientific, autodiff]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Neural ODEs and scientific models need GPU DE solvers that
+  differentiate through the trajectory, but SciPy integrators
+  drop off the accelerator. Diffrax solves ODEs, SDEs, and
+  CDEs in JAX so training stays JIT-compiled and autodiffable.
+
+use_cases:
+  - Train a neural ODE on a time series without leaving JAX
+  - Integrate an SDE with GPU-capable stochastic solvers
+  - Differentiate through a controlled differential equation
+  - Swap ODE solvers while keeping the same Equinox model

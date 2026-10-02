@@ -1,0 +1,26 @@
+name: JAX-MD
+description: Differentiable, hardware-accelerated molecular dynamics in JAX. JAX-MD simulates particles with autodiff so scientific ML trains potentials without a separate MD engine.
+tagline: Differentiable molecular dynamics on the JAX stack
+
+github_url: https://github.com/jax-md/jax-md
+website_url: https://github.com/jax-md/jax-md
+docs_url: https://github.com/jax-md/jax-md
+install_command: pip install jax-md
+
+category: Data
+tags: [python, jax, molecular-dynamics, simulation, autodiff, scientific]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Learning force fields needs MD that differentiates through
+  trajectories, but classic engines sit outside autodiff.
+  JAX-MD runs particle simulations in JAX so potentials train
+  with GPU kernels and gradients through the integrator.
+
+use_cases:
+  - Simulate a particle system with a differentiable JAX integrator
+  - Train a learned potential by differentiating through MD steps
+  - Run neighbor-list dynamics on GPU without a separate MD engine
+  - Prototype a materials simulation inside a JAX research notebook
