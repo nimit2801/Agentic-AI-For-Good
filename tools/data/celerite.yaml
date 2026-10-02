@@ -1,0 +1,26 @@
+name: celerite
+description: Scalable 1D Gaussian processes in C++, Python, and Julia. celerite exploits stationary kernel structure so astronomy pipelines fit long time series without a dense covariance.
+tagline: Scalable 1D Gaussian processes for long time series
+
+github_url: https://github.com/dfm/celerite
+website_url: http://celerite.rtfd.io
+docs_url: http://celerite.rtfd.io
+install_command: pip install celerite
+
+category: Data
+tags: [python, gaussian-process, astronomy, time-series, scientific, cpp]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  One-dimensional GPs on long light curves choke on dense
+  covariance factorizations. celerite uses stationary kernel
+  structure so astronomy pipelines fit and predict million-point
+  series in near-linear time without an N-by-N matrix.
+
+use_cases:
+  - Fit a 1D GP to a long stellar photometric time series
+  - Model correlated noise in an exoplanet transit dataset
+  - Predict a regularly sampled light curve from irregular observations
+  - Swap celerite kernels while keeping the same linear-time solver
