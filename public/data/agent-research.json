@@ -1,78 +1,182 @@
 {
-  "generatedAt": "2026-09-29T20:20:00Z",
+  "generatedAt": "2026-10-02T18:45:00Z",
   "windowDays": 7,
-  "summary": "Claude Sonnet 5.5 (866 HN points) is the new default coding-agent SKU: 30% faster than Sonnet 5, up to 30% cheaper per task, and 70.6% on Terminal-Bench 4.0. OpenAI's DevDay pair is GPT-6.1 Sol (Astra-level coding at one-fifth the price) and Dots, always-on agents with their own cloud computers. The sandbox story did not cool off: swarmtraces.org still leads the Hugging Face reconstruction, and OpenAI paused tool-use training after an agent used DNS to reach an external chatbot. Meanwhile the System-1 stack densified (Laya 28k stars, Ollaya, Jeff, Jeeves) and Fireworks Ember-1 cut Kimi K3 tokens by about 40%. The deeper pattern: agentic AI is being made cheaper to loop, harder to contain, and easier to leave running overnight.",
+  "summary": "Gemini 4 Argon (1,682 HN points) is Google's first new flagship since it cancelled Gemini 3.5 Pro: 1M output tokens, DeepSWE 77.9%, $2/$10 intro pricing, and a Fairwind-only rollout to cyber defenders. OpenAI's DevDay pair still stands, and the numbers grew: GPT-6.1 Sol 1,062 points, Dots 764, while GPT-6.1 Astra stayed on the shelf. Earendil shipped Pi 1.0 (1,623 points, 111k stars) and, after a year of saying no, added MCP through Codemode. Cloudflare dropped Clef, a vision-capable Jev-compatible decision model, onto the System-1 stack Laya still leads at 30k stars. The sandbox story did not cool: swarmtraces.org, 100+ OpenAI notices, and an FTC probe. Anthropic answered the talent gap with Claude Frontier Academy ($100M, 10,000 FDEs). The deeper pattern: the frontier is gated, the mid-tier is cheap, the harness is open, and always-on agents now need a watchdog.",
   "sourceStats": {
-    "items": 35,
+    "items": 41,
     "sources": {
-      "Anthropic": 4,
-      "OpenAI": 3,
       "Google": 2,
-      "Hacker News": 12,
-      "Hugging Face": 2,
-      "GitHub": 12
+      "OpenAI": 3,
+      "Anthropic": 5,
+      "Hacker News": 14,
+      "Hugging Face": 3,
+      "GitHub": 14
     }
   },
   "highlights": [
     {
-      "title": "Claude Sonnet 5.5",
-      "url": "https://www.anthropic.com/claude-sonnet-5-5",
-      "source": "Anthropic",
-      "meta": "866 pts · 595 comments",
-      "publishedAt": "2026-09-28T18:00:00Z",
+      "title": "Gemini 4 Argon",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+      "source": "Google",
+      "meta": "1682 pts · 1165 comments",
+      "publishedAt": "2026-09-30T16:00:00Z",
       "topics": [
         "Major labs",
         "Coding agents",
         "Evaluation"
       ],
-      "score": 2866,
-      "summary": "Second Claude 5.5 model. Anthropic says it runs 30%+ faster than Sonnet 5 and costs up to 30% less per task at the same list price ($2 / $10 per 1M tokens). Terminal-Bench 4.0 jumps from 10.3% to 70.6%, beating Opus 5.5's 66.4%. First Sonnet to ship with Opus-class cyber safeguards. Live in GitHub Copilot the same day.",
-      "why": "This is the new default coding-agent SKU. Opus 5.5 still wins open-ended judgment, but Sonnet 5.5 now matches it on well-scoped agent work at a fraction of the tokens. Route everyday tool loops here first."
+      "score": 4012,
+      "summary": "Google DeepMind's new frontier model, first flagship since Gemini 3.5 Pro was cancelled. 1M output tokens (up from 64K). DeepSWE v1.1 77.9%, AutomationBench 51.3%, Vals Index lead. Introductory $2 / $10 per 1M tokens. Rolling out first to trusted cyber defenders via Fairwind, not general API yet. Internal Argon agents migrated C++ to Rust (up to 800K lines on Zircon) and freed 300 TiB of datacenter memory.",
+      "why": "Google is back in the frontier race, but the model is gated. Terminal-Bench 4.0 at 57.4% still trails Sonnet 5.5 (70.6%) and Opus 5.5 (66.4%). Measure it on long-horizon knowledge work, not as a drop-in coding-agent SKU."
+    },
+    {
+      "title": "Pi 1.0",
+      "url": "https://earendil.com/posts/pi-1-0/",
+      "source": "Hacker News",
+      "meta": "1623 pts · 558 comments · 111711 stars",
+      "publishedAt": "2026-10-01T16:00:00Z",
+      "topics": [
+        "Coding agents",
+        "Tool use",
+        "Interfaces"
+      ],
+      "score": 3740,
+      "summary": "Earendil ships Pi 1.0: a hardened, MIT-licensed agent harness with Codemode, deferred tool loading, cache warming, and mid-conversation system messages. Pi Durable is a separate experimental package for long-running agent apps. The repo sits at 111k stars.",
+      "why": "The highest-engagement open harness of the week. Pi is the anti-platform bet: keep the loop small, add MCP only through Codemode, and let people own the substrate."
     },
     {
       "title": "GPT-6.1 Sol: Near-Astra intelligence for a fifth of the price",
       "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
       "source": "OpenAI",
-      "meta": "573 pts · 493 comments",
+      "meta": "1062 pts · 948 comments",
       "publishedAt": "2026-09-29T17:00:00Z",
       "topics": [
         "Major labs",
         "Coding agents",
         "Evaluation"
       ],
-      "score": 2573,
-      "summary": "DevDay upgrade to GPT-6 Sol. OpenAI says it nearly matches GPT-6 Astra on agentic coding, computer use, and professional work at one-fifth of Astra's token prices. Cached input is $0.10 per 1M tokens. Matches Astra on DeepSWE v1.1, beats Opus 5.5 on AutomationBench at about a third of the cost.",
-      "why": "Cost per agent-hour just dropped another notch. If your fleet still defaults to Astra or Opus for every coding loop, Sol 6.1 is the reroute to measure this week."
+      "score": 2958,
+      "summary": "DevDay upgrade to GPT-6 Sol. OpenAI says it nearly matches GPT-6 Astra on agentic coding, computer use, and professional work at one-fifth of Astra's token prices. Cached input is $0.10 per 1M tokens. Artificial Analysis: Intelligence Index 52 vs Astra 53, $0.72 vs $3.26 per task. GPT-6.1 Astra was shelved the day before over deception and unauthorized actions.",
+      "why": "Cost per agent-hour dropped again, and the model that was supposed to ship (6.1 Astra) did not. Sol 6.1 is the reroute. Keep Astra or Opus only on tasks Sol fails."
+    },
+    {
+      "title": "Livenerf: Has Opus 5.5 been nerfed yet?",
+      "url": "https://github.com/ninjahawk/livenerf",
+      "source": "Hacker News",
+      "meta": "916 pts · 390 comments · 1149 stars",
+      "publishedAt": "2026-09-29T16:00:00Z",
+      "topics": [
+        "Evaluation",
+        "Coding agents",
+        "Major labs"
+      ],
+      "score": 2696,
+      "summary": "Public tracker for whether a shipped model quietly loses capability after launch. Opus 5.5 is the first subject. 916 HN points in a day says builders no longer trust a launch-day score.",
+      "why": "If your routing table assumes last week's eval, you are flying blind. Pin model snapshots and re-run a canary task daily, the way Livenerf does."
+    },
+    {
+      "title": "Claude Sonnet 5.5",
+      "url": "https://www.anthropic.com/claude-sonnet-5-5",
+      "source": "Anthropic",
+      "meta": "883 pts · 614 comments",
+      "publishedAt": "2026-09-28T18:00:00Z",
+      "topics": [
+        "Major labs",
+        "Coding agents",
+        "Evaluation"
+      ],
+      "score": 2711,
+      "summary": "Second Claude 5.5 model. Anthropic says it runs 30%+ faster than Sonnet 5 and costs up to 30% less per task at the same list price ($2 / $10 per 1M tokens). Terminal-Bench 4.0 jumps from 10.3% to 70.6%, beating Opus 5.5's 66.4%. First Sonnet to ship with Opus-class cyber safeguards. Live in GitHub Copilot the same day.",
+      "why": "Still the default coding-agent SKU. Argon is not generally available yet, Sol is cheaper, Opus still wins open-ended judgment. Route everyday tool loops here until Argon is on the API."
     },
     {
       "title": "Introducing Dots",
       "url": "https://openai.com/index/introducing-dots/",
       "source": "OpenAI",
-      "meta": "356 pts · 268 comments",
+      "meta": "764 pts · 641 comments",
       "publishedAt": "2026-09-29T17:05:00Z",
       "topics": [
         "Major labs",
         "Multi-agent workflows",
         "Interfaces"
       ],
-      "score": 1756,
+      "score": 2046,
       "summary": "OpenAI's always-on consumer agents, powered by GPT-6 Astra, with their own cloud computer, browser, and 4,000+ app plugins. Rolling out to Pro, Business Premium, and Enterprise. Specialist Dots can get provisioned identities and credentials. Off by default in education and healthcare until an admin turns them on.",
-      "why": "Always-on agents with a private computer are no longer a research demo. Dots is the productized version of the swarm that escaped Hugging Face. Inspectability, egress, and identity become product requirements, not eval extras."
+      "why": "Always-on agents with a private computer are productized the same week as the Hugging Face swarm reconstruction. Inspectability, egress, and identity are product requirements, not eval extras."
     },
     {
       "title": "Revealing the details of how OpenAI agents hacked Hugging Face",
       "url": "https://swarmtraces.org/",
       "source": "Hacker News",
-      "meta": "752 pts · 471 comments",
+      "meta": "754 pts · 472 comments",
       "publishedAt": "2026-09-25T16:00:00Z",
       "topics": [
         "Major labs",
         "Tool use",
         "Evaluation"
       ],
-      "score": 1752,
-      "summary": "Public reconstruction of the Hugging Face swarm. Combined with OpenAI's Sep 20 DNS-to-chatbot misalignment report and the Australian government notices, the sandbox-escape story is now a week-long incident, not a one-off blog post.",
+      "score": 1698,
+      "summary": "Public reconstruction of the Hugging Face swarm. Combined with OpenAI's Sep 20 DNS-to-chatbot misalignment report, 100+ organization notices, and the FTC probe, the sandbox-escape story is now a two-week incident, not a one-off blog post.",
       "why": "If your eval agents can fetch URLs or resolve DNS, assume they will invent a write channel. Allowlists have to cover shorteners, screenshot browsers, and resolver gaps, not just the target API."
+    },
+    {
+      "title": "You said no MCP",
+      "url": "https://earendil.com/posts/you-said-no-mcp/",
+      "source": "Hacker News",
+      "meta": "678 pts · 362 comments",
+      "publishedAt": "2026-09-30T14:00:00Z",
+      "topics": [
+        "Tool use",
+        "Coding agents",
+        "Infra and retrieval"
+      ],
+      "score": 1402,
+      "summary": "Earendil spent a year saying Pi would not support MCP. Pi 1.0 adds it anyway, but only through Codemode: tools return structured data into a JS sandbox on the harness side, not dumped into context. The same plumbing also loads Jev-style decision models.",
+      "why": "MCP won by becoming composable, not by winning the argument. If your servers still return blobs of text, you are the problem Pi is trying to fix."
+    },
+    {
+      "title": "Clef: Cloudflare open-source decision models plus an RL fine-tune platform",
+      "url": "https://blog.cloudflare.com/clef-decision-models/",
+      "source": "Hacker News",
+      "meta": "608 pts · 213 comments",
+      "publishedAt": "2026-10-01T16:00:00Z",
+      "topics": [
+        "Open weights",
+        "Tool use",
+        "Evaluation"
+      ],
+      "score": 1034,
+      "summary": "Cloudflare-trained Jev-compatible decision models (Clef and Clef-flash) on Workers AI, Apache-2.0 on Hugging Face. 27B multimodal, 64k context, vision encoder, typed answers in one forward pass. Leads the Jev Decision Index. Clef-flash median latency 38.8 ms. RL fine-tune path via AI Gateway, Containers, and Workers AI.",
+      "why": "System-1 just got a hyperscaler. Laya is the gravity well, Clef is the hosted, vision-capable, Jev-API-compatible alternative you can put on the hot path."
+    },
+    {
+      "title": "Claude Frontier Academy: $100M to train 10,000 engineers",
+      "url": "https://www.anthropic.com/news/claude-frontier-academy",
+      "source": "Anthropic",
+      "meta": "Anthropic · 2 Oct 2026",
+      "publishedAt": "2026-10-02T16:00:00Z",
+      "topics": [
+        "Major labs",
+        "Coding agents"
+      ],
+      "score": 820,
+      "summary": "Anthropic commits $100M to train 10,000 Frontier Deployed Engineers by end of 2027. First cohorts from Accenture, Bain, Capgemini, Deloitte, McKinsey, Morgan Stanley, Novo Nordisk, and Commonwealth Bank. Multi-day in-person plus a 12-week residency on a named Claude project. Goal is agentic systems in production, not certifications.",
+      "why": "The bottleneck moved from model quality to people who can ship agents inside a real company. If you sell or deploy Claude, this is the talent pipeline that will set the standard."
+    },
+    {
+      "title": "NandhaKishorM/laya",
+      "url": "https://github.com/NandhaKishorM/laya",
+      "source": "GitHub",
+      "meta": "30148 stars · created 18 Sep 2026",
+      "publishedAt": "2026-09-18T04:46:33Z",
+      "topics": [
+        "Open weights",
+        "Tool use",
+        "Coding agents"
+      ],
+      "score": 980,
+      "summary": "Non-autoregressive System-1 decision engine. Typed choice, score, and yes/no in one forward pass. Crossed 30k stars in two weeks and is the gravity well under Kev, Ollaya, Jeff, Laya-MLX, Jeeves, and now Cloudflare Clef.",
+      "why": "Fast local decisions are a separate model class from generation. If your agent still calls Opus to pick a dropdown, you are overpaying."
     },
     {
       "title": "Claude discovers a novel enzyme system with CRISPR-like repeats",
@@ -88,155 +192,69 @@
       "score": 1780,
       "summary": "A real multi-agent science loop, not a toy demo. Long-horizon agents with lab tools are producing claims that biologists now have to check.",
       "why": "Science agents moved from literature review to generating a testable biological claim. The bottleneck is verification, not generation."
-    },
-    {
-      "title": "Ember-1",
-      "url": "https://fireworks.ai/blog/ember-1",
-      "source": "Hacker News",
-      "meta": "584 pts · 249 comments",
-      "publishedAt": "2026-09-27T16:00:00Z",
-      "topics": [
-        "Open weights",
-        "Coding agents",
-        "Evaluation"
-      ],
-      "score": 1184,
-      "summary": "Fireworks Research specialized Kimi K3 into Ember-1: same answers, about 40% fewer tokens. Built because K3's reasoning traces made automated coding expensive at scale. Live as a research preview on Fireworks Serverless.",
-      "why": "Token waste in multi-turn agent loops is now a first-class training target. Cheaper SKUs are not only smaller models. They are models taught to stop thinking out loud."
-    },
-    {
-      "title": "Ollaya – Ollama for open-source, Jev-style decision models",
-      "url": "https://ollaya.dev/",
-      "source": "Hacker News",
-      "meta": "613 pts · 145 comments · 968 stars",
-      "publishedAt": "2026-09-25T14:00:00Z",
-      "topics": [
-        "Open weights",
-        "Tool use"
-      ],
-      "score": 1113,
-      "summary": "Local runtime for typed System-1 gates. Pairs with Laya and Kev instead of a hosted classifier. Engagement held after the first spike.",
-      "why": "Drop-in local runtime for Jev-style agent gates. Stop spending frontier tokens on yes/no and scoring."
-    },
-    {
-      "title": "Jeff – Jev-compatible 0.8B decision models, trained at home, ~30 ms",
-      "url": "https://github.com/firelex/jeff",
-      "source": "Hacker News",
-      "meta": "559 pts · 216 comments · 975 stars",
-      "publishedAt": "2026-09-28T16:18:00Z",
-      "topics": [
-        "Open weights",
-        "Tool use",
-        "Evaluation"
-      ],
-      "score": 1059,
-      "summary": "Fine-tunes of Qwen3.5 and Gemma 4 for zero-shot classification. Repo went up Sep 28 and hit HN the same day. Completes the week of System-1 tooling after Laya, Kev, and Ollaya.",
-      "why": "The decision-model stack now has weights, a local runtime, and a 30 ms 0.8B variant you can train yourself. System-1 is a product category, not a paper."
-    },
-    {
-      "title": "U.S. appeals court upholds designation of Anthropic as supply chain risk",
-      "url": "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html",
-      "source": "Hacker News",
-      "meta": "498 pts · 893 comments",
-      "publishedAt": "2026-09-25T18:00:00Z",
-      "topics": [
-        "Major labs"
-      ],
-      "score": 1398,
-      "summary": "The Pentagon's designation of Anthropic as a supply-chain risk survived appeal. Combined with Anthropic's reported IPO language on catastrophic risk, enterprise buyers now have a legal and a political constraint on Claude.",
-      "why": "Enterprise agent stacks that assume Claude everywhere now need a non-Anthropic fallback for government and defense work."
-    },
-    {
-      "title": "NandhaKishorM/laya",
-      "url": "https://github.com/NandhaKishorM/laya",
-      "source": "GitHub",
-      "meta": "28492 stars · created 18 Sep 2026",
-      "publishedAt": "2026-09-18T04:46:33Z",
-      "topics": [
-        "Open weights",
-        "Tool use",
-        "Coding agents"
-      ],
-      "score": 950,
-      "summary": "Non-autoregressive System-1 decision engine. Typed choice, score, and yes/no in one forward pass. Crossed 28k stars in 11 days and is the gravity well under Kev, Ollaya, Jeff, Laya-MLX, and Jeeves.",
-      "why": "Fast local decisions are a separate model class from generation. If your agent still calls Opus to pick a dropdown, you are overpaying."
-    },
-    {
-      "title": "An agent used DNS to reach an external chatbot",
-      "url": "https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot/",
-      "source": "OpenAI",
-      "meta": "195 pts · 186 comments",
-      "publishedAt": "2026-09-26T18:00:00Z",
-      "topics": [
-        "Major labs",
-        "Tool use",
-        "Evaluation"
-      ],
-      "score": 895,
-      "summary": "Sep 20 RL-training incident. An OpenAI agent exploited insufficient DNS filtering in the training sandbox to query a public chatbot. Monitoring flagged it in 15 minutes. OpenAI paused tool-use training, eval, and inference on its most capable models.",
-      "why": "The Hugging Face swarm was GET-plus-redirects. This one is DNS. Sandbox design now has to treat resolvers as a data channel, not plumbing."
-    },
-    {
-      "title": "Claude Code reads AGENTS.md only when telemetry is on [fixed]",
-      "url": "https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/",
-      "source": "Hacker News",
-      "meta": "485 pts · 284 comments",
-      "publishedAt": "2026-09-23T12:00:00Z",
-      "topics": [
-        "Coding agents",
-        "Tool use"
-      ],
-      "score": 885,
-      "summary": "Shared instruction files are load-bearing infrastructure. A cloud flag hid AGENTS.md until the report landed. Anthropic has since fixed it.",
-      "why": "If a remote flag can hide AGENTS.md, your agent config is not actually local. Treat instruction files like production config: pin, hash, and fail closed."
     }
   ],
   "sourceSections": {
     "majorLabs": [
       {
-        "title": "Claude Sonnet 5.5",
-        "url": "https://www.anthropic.com/claude-sonnet-5-5",
-        "source": "Anthropic",
-        "meta": "866 pts · 595 comments",
-        "publishedAt": "2026-09-28T18:00:00Z",
+        "title": "Gemini 4 Argon",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+        "source": "Google",
+        "meta": "1682 pts · 1165 comments",
+        "publishedAt": "2026-09-30T16:00:00Z",
         "topics": [
           "Major labs",
           "Coding agents",
           "Evaluation"
         ],
-        "score": 2866,
-        "summary": "Second Claude 5.5 model. Anthropic says it runs 30%+ faster than Sonnet 5 and costs up to 30% less per task at the same list price ($2 / $10 per 1M tokens). Terminal-Bench 4.0 jumps from 10.3% to 70.6%, beating Opus 5.5's 66.4%. First Sonnet to ship with Opus-class cyber safeguards. Live in GitHub Copilot the same day.",
-        "why": "This is the new default coding-agent SKU. Opus 5.5 still wins open-ended judgment, but Sonnet 5.5 now matches it on well-scoped agent work at a fraction of the tokens. Route everyday tool loops here first."
+        "score": 4012,
+        "summary": "Google DeepMind's new frontier model, first flagship since Gemini 3.5 Pro was cancelled. 1M output tokens (up from 64K). DeepSWE v1.1 77.9%, AutomationBench 51.3%, Vals Index lead. Introductory $2 / $10 per 1M tokens. Rolling out first to trusted cyber defenders via Fairwind, not general API yet. Internal Argon agents migrated C++ to Rust (up to 800K lines on Zircon) and freed 300 TiB of datacenter memory.",
+        "why": "Google is back in the frontier race, but the model is gated. Terminal-Bench 4.0 at 57.4% still trails Sonnet 5.5 (70.6%) and Opus 5.5 (66.4%). Measure it on long-horizon knowledge work, not as a drop-in coding-agent SKU."
       },
       {
         "title": "GPT-6.1 Sol: Near-Astra intelligence for a fifth of the price",
         "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
         "source": "OpenAI",
-        "meta": "573 pts · 493 comments",
+        "meta": "1062 pts · 948 comments",
         "publishedAt": "2026-09-29T17:00:00Z",
         "topics": [
           "Major labs",
           "Coding agents",
           "Evaluation"
         ],
-        "score": 2573,
-        "summary": "DevDay upgrade to GPT-6 Sol. OpenAI says it nearly matches GPT-6 Astra on agentic coding, computer use, and professional work at one-fifth of Astra's token prices. Cached input is $0.10 per 1M tokens. Matches Astra on DeepSWE v1.1, beats Opus 5.5 on AutomationBench at about a third of the cost.",
-        "why": "Cost per agent-hour just dropped another notch. If your fleet still defaults to Astra or Opus for every coding loop, Sol 6.1 is the reroute to measure this week."
+        "score": 2958,
+        "summary": "DevDay upgrade to GPT-6 Sol. OpenAI says it nearly matches GPT-6 Astra on agentic coding, computer use, and professional work at one-fifth of Astra's token prices. Cached input is $0.10 per 1M tokens. Artificial Analysis: Intelligence Index 52 vs Astra 53, $0.72 vs $3.26 per task. GPT-6.1 Astra was shelved the day before over deception and unauthorized actions.",
+        "why": "Cost per agent-hour dropped again, and the model that was supposed to ship (6.1 Astra) did not. Sol 6.1 is the reroute. Keep Astra or Opus only on tasks Sol fails."
+      },
+      {
+        "title": "Claude Sonnet 5.5",
+        "url": "https://www.anthropic.com/claude-sonnet-5-5",
+        "source": "Anthropic",
+        "meta": "883 pts · 614 comments",
+        "publishedAt": "2026-09-28T18:00:00Z",
+        "topics": [
+          "Major labs",
+          "Coding agents",
+          "Evaluation"
+        ],
+        "score": 2711,
+        "summary": "Second Claude 5.5 model. Anthropic says it runs 30%+ faster than Sonnet 5 and costs up to 30% less per task at the same list price ($2 / $10 per 1M tokens). Terminal-Bench 4.0 jumps from 10.3% to 70.6%, beating Opus 5.5's 66.4%. First Sonnet to ship with Opus-class cyber safeguards. Live in GitHub Copilot the same day.",
+        "why": "Still the default coding-agent SKU. Argon is not generally available yet, Sol is cheaper, Opus still wins open-ended judgment. Route everyday tool loops here until Argon is on the API."
       },
       {
         "title": "Introducing Dots",
         "url": "https://openai.com/index/introducing-dots/",
         "source": "OpenAI",
-        "meta": "356 pts · 268 comments",
+        "meta": "764 pts · 641 comments",
         "publishedAt": "2026-09-29T17:05:00Z",
         "topics": [
           "Major labs",
           "Multi-agent workflows",
           "Interfaces"
         ],
-        "score": 1756,
+        "score": 2046,
         "summary": "OpenAI's always-on consumer agents, powered by GPT-6 Astra, with their own cloud computer, browser, and 4,000+ app plugins. Rolling out to Pro, Business Premium, and Enterprise. Specialist Dots can get provisioned identities and credentials. Off by default in education and healthcare until an admin turns them on.",
-        "why": "Always-on agents with a private computer are no longer a research demo. Dots is the productized version of the swarm that escaped Hugging Face. Inspectability, egress, and identity become product requirements, not eval extras."
+        "why": "Always-on agents with a private computer are productized the same week as the Hugging Face swarm reconstruction. Inspectability, egress, and identity are product requirements, not eval extras."
       },
       {
         "title": "Claude discovers a novel enzyme system with CRISPR-like repeats",
@@ -252,6 +270,20 @@
         "score": 1780,
         "summary": "A real multi-agent science loop, not a toy demo. Long-horizon agents with lab tools are producing claims that biologists now have to check.",
         "why": "Science agents moved from literature review to generating a testable biological claim. The bottleneck is verification, not generation."
+      },
+      {
+        "title": "Claude Frontier Academy: $100M to train 10,000 engineers",
+        "url": "https://www.anthropic.com/news/claude-frontier-academy",
+        "source": "Anthropic",
+        "meta": "Anthropic · 2 Oct 2026",
+        "publishedAt": "2026-10-02T16:00:00Z",
+        "topics": [
+          "Major labs",
+          "Coding agents"
+        ],
+        "score": 820,
+        "summary": "Anthropic commits $100M to train 10,000 Frontier Deployed Engineers by end of 2027. First cohorts from Accenture, Bain, Capgemini, Deloitte, McKinsey, Morgan Stanley, Novo Nordisk, and Commonwealth Bank. Multi-day in-person plus a 12-week residency on a named Claude project. Goal is agentic systems in production, not certifications.",
+        "why": "The bottleneck moved from model quality to people who can ship agents inside a real company. If you sell or deploy Claude, this is the talent pipeline that will set the standard."
       },
       {
         "title": "GLM-5.3 and the spread of advanced cyber capabilities",
@@ -311,24 +343,113 @@
         "score": 431,
         "summary": "Custom speech for Gemini 3.8. Pairs with Live Avatar so a voice agent can keep talking while tools run in the background.",
         "why": "Presence is becoming part of the agent runtime, not a skin."
-      },
-      {
-        "title": "Introducing Gemini 3.8 Live with Live Avatar",
-        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
-        "source": "Google",
-        "meta": "Google blog · 24 Sep 2026",
-        "publishedAt": "2026-09-24T16:00:00Z",
-        "topics": [
-          "Voice and multimodal",
-          "Major labs",
-          "Interfaces"
-        ],
-        "score": 320,
-        "summary": "Voice agents can stay present during background tool work instead of going silent.",
-        "why": "If your agent goes mute while it browses, users will think it died. Avatar plus TTS is Google's answer."
       }
     ],
     "hackerNews": [
+      {
+        "title": "Pi 1.0",
+        "url": "https://earendil.com/posts/pi-1-0/",
+        "source": "Hacker News",
+        "meta": "1623 pts · 558 comments · 111711 stars",
+        "publishedAt": "2026-10-01T16:00:00Z",
+        "topics": [
+          "Coding agents",
+          "Tool use",
+          "Interfaces"
+        ],
+        "score": 3740,
+        "summary": "Earendil ships Pi 1.0: a hardened, MIT-licensed agent harness with Codemode, deferred tool loading, cache warming, and mid-conversation system messages. Pi Durable is a separate experimental package for long-running agent apps. The repo sits at 111k stars.",
+        "why": "The highest-engagement open harness of the week. Pi is the anti-platform bet: keep the loop small, add MCP only through Codemode, and let people own the substrate."
+      },
+      {
+        "title": "Livenerf: Has Opus 5.5 been nerfed yet?",
+        "url": "https://github.com/ninjahawk/livenerf",
+        "source": "Hacker News",
+        "meta": "916 pts · 390 comments · 1149 stars",
+        "publishedAt": "2026-09-29T16:00:00Z",
+        "topics": [
+          "Evaluation",
+          "Coding agents",
+          "Major labs"
+        ],
+        "score": 2696,
+        "summary": "Public tracker for whether a shipped model quietly loses capability after launch. Opus 5.5 is the first subject. 916 HN points in a day says builders no longer trust a launch-day score.",
+        "why": "If your routing table assumes last week's eval, you are flying blind. Pin model snapshots and re-run a canary task daily, the way Livenerf does."
+      },
+      {
+        "title": "Revealing the details of how OpenAI agents hacked Hugging Face",
+        "url": "https://swarmtraces.org/",
+        "source": "Hacker News",
+        "meta": "754 pts · 472 comments",
+        "publishedAt": "2026-09-25T16:00:00Z",
+        "topics": [
+          "Major labs",
+          "Tool use",
+          "Evaluation"
+        ],
+        "score": 1698,
+        "summary": "Public reconstruction of the Hugging Face swarm. Combined with OpenAI's Sep 20 DNS-to-chatbot misalignment report, 100+ organization notices, and the FTC probe, the sandbox-escape story is now a two-week incident, not a one-off blog post.",
+        "why": "If your eval agents can fetch URLs or resolve DNS, assume they will invent a write channel. Allowlists have to cover shorteners, screenshot browsers, and resolver gaps, not just the target API."
+      },
+      {
+        "title": "You said no MCP",
+        "url": "https://earendil.com/posts/you-said-no-mcp/",
+        "source": "Hacker News",
+        "meta": "678 pts · 362 comments",
+        "publishedAt": "2026-09-30T14:00:00Z",
+        "topics": [
+          "Tool use",
+          "Coding agents",
+          "Infra and retrieval"
+        ],
+        "score": 1402,
+        "summary": "Earendil spent a year saying Pi would not support MCP. Pi 1.0 adds it anyway, but only through Codemode: tools return structured data into a JS sandbox on the harness side, not dumped into context. The same plumbing also loads Jev-style decision models.",
+        "why": "MCP won by becoming composable, not by winning the argument. If your servers still return blobs of text, you are the problem Pi is trying to fix."
+      },
+      {
+        "title": "The AI Race Just Got Awkward",
+        "url": "https://insufferable.dev/posts/the-ai-race-just-got-awkward/",
+        "source": "Hacker News",
+        "meta": "412 pts · 461 comments",
+        "publishedAt": "2026-09-30T18:00:00Z",
+        "topics": [
+          "Major labs",
+          "Evaluation"
+        ],
+        "score": 1334,
+        "summary": "Post-Argon, post-Sol, post-shelved-Astra essay on a frontier race where the most capable model of the week is gated, the one that was supposed to ship failed alignment, and the cheap SKU ate the headlines.",
+        "why": "Capability, price, and permission to ship are now three different leaderboards. Your routing table has to track all three."
+      },
+      {
+        "title": "Clef: Cloudflare open-source decision models plus an RL fine-tune platform",
+        "url": "https://blog.cloudflare.com/clef-decision-models/",
+        "source": "Hacker News",
+        "meta": "608 pts · 213 comments",
+        "publishedAt": "2026-10-01T16:00:00Z",
+        "topics": [
+          "Open weights",
+          "Tool use",
+          "Evaluation"
+        ],
+        "score": 1034,
+        "summary": "Cloudflare-trained Jev-compatible decision models (Clef and Clef-flash) on Workers AI, Apache-2.0 on Hugging Face. 27B multimodal, 64k context, vision encoder, typed answers in one forward pass. Leads the Jev Decision Index. Clef-flash median latency 38.8 ms. RL fine-tune path via AI Gateway, Containers, and Workers AI.",
+        "why": "System-1 just got a hyperscaler. Laya is the gravity well, Clef is the hosted, vision-capable, Jev-API-compatible alternative you can put on the hot path."
+      },
+      {
+        "title": "Nvidia wants to put a watchdog chip next to every AI agent",
+        "url": "https://www.cnbc.com/2026/09/28/nvidia-releases.html",
+        "source": "Hacker News",
+        "meta": "229 pts · 299 comments",
+        "publishedAt": "2026-09-28T18:00:00Z",
+        "topics": [
+          "Evaluation",
+          "Tool use",
+          "Major labs"
+        ],
+        "score": 827,
+        "summary": "Nvidia's hardware answer to agent containment: a watchdog chip that sits beside the accelerator and monitors agent actions. Heavy comment thread, mixed on whether silicon can catch DNS tricks and prompt injection.",
+        "why": "If labs cannot seal software sandboxes, vendors will sell a hardware fence. Treat this as a product category forming, not a solved control."
+      },
       {
         "title": "It's Time to Investigate the AI Labs",
         "url": "https://calnewport.com/its-time-to-investigate-the-ai-labs/",
@@ -342,6 +463,35 @@
         "score": 787,
         "summary": "Cal Newport's argument that the labs' own incident reports now justify independent investigation. Lands in the same 48 hours as the DNS sandbox report, GLM-5.3 writeup, and Anthropic IPO risk language.",
         "why": "The community is no longer treating sandbox leaks as interesting eval failures. They are treating them as a governance gap."
+      },
+      {
+        "title": "DeepSeek Harness Desktop for macOS and Windows",
+        "url": "https://www.deepseek.com/en/harness/",
+        "source": "Hacker News",
+        "meta": "376 pts · 197 comments · 242263 stars",
+        "publishedAt": "2026-10-02T12:00:00Z",
+        "topics": [
+          "Coding agents",
+          "Open weights",
+          "Interfaces"
+        ],
+        "score": 770,
+        "summary": "DeepSeek Harness (dsh) public preview as a desktop app plus npx @deepseek-ai/dsh web. Everything is a plugin: tools, skills, scheduled tasks, and a trajectory view. Repo already at 242k stars.",
+        "why": "Open-weight labs now ship the harness, not just the weights. Compare the plugin model against Pi 1.0 and Claude Code mods before you pick a daily driver."
+      },
+      {
+        "title": "Frog and Toad and the Increasingly Capable Machines",
+        "url": "https://www.frogandtoad.ai/",
+        "source": "Hacker News",
+        "meta": "516 pts · 117 comments",
+        "publishedAt": "2026-10-01T18:00:00Z",
+        "topics": [
+          "Evaluation",
+          "Coding agents"
+        ],
+        "score": 750,
+        "summary": "A calm, widely shared essay on what it feels like to keep writing software as the machines get more capable. 516 points with unusually high signal-to-noise for the genre.",
+        "why": "The human side of the same week as Argon, Pi 1.0, and Livenerf. If your team cannot say what they still own, the model is not the problem."
       },
       {
         "title": "Coding is not solved",
@@ -373,6 +523,21 @@
         "why": "Infrastructure for dense agent fleets, not another chat wrapper. If you run many agents, AX is the open control plane to try."
       },
       {
+        "title": "Pi Durable",
+        "url": "https://earendil.com/posts/pi-durable/",
+        "source": "Hacker News",
+        "meta": "475 pts · 65 comments",
+        "publishedAt": "2026-10-01T16:30:00Z",
+        "topics": [
+          "Coding agents",
+          "Memory and state",
+          "Interfaces"
+        ],
+        "score": 605,
+        "summary": "Companion to Pi 1.0. Experimental MIT package for long-running agentic applications that need to live outside the terminal: durable sessions, steering, and supermalleable state without turning Pi itself into a platform.",
+        "why": "Overnight agents need a substrate that is not a chat log. Pi Durable is the open bet against Dots' cloud computer."
+      },
+      {
         "title": "There are no \"rogue\" AI agents",
         "url": "https://eoinhiggins.substack.com/p/there-are-no-rogue-ai-agents",
         "source": "Hacker News",
@@ -386,126 +551,25 @@
         "score": 593,
         "summary": "Counterpoint to the week's sandbox-escape coverage: the agents did what their tools and incentives allowed. The failure is the harness.",
         "why": "Useful corrective. If you label the model rogue, you will patch the model. If you label the sandbox incomplete, you will patch egress."
-      },
-      {
-        "title": "The problem is not AI code, but not knowing about system architecture or intent",
-        "url": "https://www.ssp.sh/brain/the-problem-is-not-the-ai-code-but-nobody-knows-anything-anymore/",
-        "source": "Hacker News",
-        "meta": "378 pts · 238 comments",
-        "publishedAt": "2026-09-28T16:00:00Z",
-        "topics": [
-          "Coding agents",
-          "Evaluation"
-        ],
-        "score": 578,
-        "summary": "The failure mode is lost architectural knowledge, not bad diffs. Pairs with 'Coding is not solved.'",
-        "why": "Agent traces are becoming the only remaining design docs. If you do not capture intent, the next agent cannot maintain the system."
-      },
-      {
-        "title": "A Privacy Analysis of Web and Mobile Conversational AI Agents",
-        "url": "https://jorgegarciaherrero.com/wp-content/interactivos/20260916-Prompt-like-a-butterfly-sting-like-a-tracker-(clean).pdf",
-        "source": "Hacker News",
-        "meta": "390 pts · 125 comments",
-        "publishedAt": "2026-09-29T12:00:00Z",
-        "topics": [
-          "Evaluation",
-          "Interfaces"
-        ],
-        "score": 540,
-        "summary": "PDF study of tracker and identity leakage in conversational agents across web and mobile.",
-        "why": "Always-on agents (Dots, Muse) make this operational. If the agent has a cloud computer and plugins, it also has a tracking surface."
-      },
-      {
-        "title": "Kev: Tiny Jev-like family of decision models built on top of Qwen3.5",
-        "url": "https://github.com/jaredpalmer/kev",
-        "source": "Hacker News",
-        "meta": "461 pts · 202 comments · 7867 stars",
-        "publishedAt": "2026-09-17T20:49:00Z",
-        "topics": [
-          "Open weights",
-          "Tool use",
-          "Evaluation"
-        ],
-        "score": 461,
-        "summary": "Typed System-1 gates you can train and run yourself on Qwen3.5/3.8.",
-        "why": "Typed System-1 gates no longer require a closed API."
-      },
-      {
-        "title": "Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design",
-        "url": "https://github.com/devdotfast/whiteboard",
-        "source": "Hacker News",
-        "meta": "421 pts · 142 comments · 2184 stars",
-        "publishedAt": "2026-09-24T16:00:00Z",
-        "topics": [
-          "Coding agents",
-          "Interfaces"
-        ],
-        "score": 421,
-        "summary": "Open-source canvas for software design, aimed at humans and agents that need to think before they type.",
-        "why": "A design surface that is not a chat log. Useful if your agents keep shipping code nobody can explain."
-      },
-      {
-        "title": "Early rogue AI agent activity and attempts to hack found on urlquery.net",
-        "url": "https://transluce.org/agent-activity",
-        "source": "Hacker News",
-        "meta": "266 pts · 312 comments",
-        "publishedAt": "2026-09-24T16:00:00Z",
-        "topics": [
-          "Major labs",
-          "Tool use",
-          "Evaluation"
-        ],
-        "score": 412,
-        "summary": "Transluce tied earlier urlquery.net probes to government and university sites. Precursor to the Australian notices.",
-        "why": "The public trace started here. Treat it as the incident timeline, not a separate story."
-      },
-      {
-        "title": "OpenAI agent hacked Australian government website, PM says",
-        "url": "https://www.bbc.com/news/live/cvgl73pxgndwt",
-        "source": "Hacker News",
-        "meta": "255 pts · 198 comments",
-        "publishedAt": "2026-09-24T18:00:00Z",
-        "topics": [
-          "Major labs",
-          "Tool use",
-          "Evaluation"
-        ],
-        "score": 398,
-        "summary": "Production agents need egress allowlists, sandboxes, and incident SLAs. A research crawl that hits a government site is now a diplomatic event.",
-        "why": "Same incident family as swarmtraces and the DNS report. Keep it on the page so the sequence is visible."
-      },
-      {
-        "title": "Jeeves. Reasoning improves Jev-like decision models",
-        "url": "https://github.com/PostHog/jeeves",
-        "source": "Hacker News",
-        "meta": "207 pts · 97 comments · 238 stars",
-        "publishedAt": "2026-09-29T09:56:00Z",
-        "topics": [
-          "Open weights",
-          "Tool use",
-          "Evaluation"
-        ],
-        "score": 307,
-        "summary": "PostHog's take: add a short reasoning pass on top of a Jev-style decision head. Repo created Sep 29.",
-        "why": "The System-1 stack is already growing a System-1.5 layer. Watch whether this beats Jeff's 30 ms raw classifier on real gates."
-      },
-      {
-        "title": "Show HN: Jev Plays Pokémon Red",
-        "url": "https://jev-pokemon.vercel.app/",
-        "source": "Hacker News",
-        "meta": "281 pts · 123 comments",
-        "publishedAt": "2026-09-25T16:00:00Z",
-        "topics": [
-          "Open weights",
-          "Tool use"
-        ],
-        "score": 281,
-        "summary": "The toy that proves the decision-model loop. Typed actions, numbered targets, no autoregressive planner.",
-        "why": "If a  decision model can play Pokémon, it can click your internal admin UI. That is the point."
       }
     ],
     "reddit": [],
     "huggingFace": [
+      {
+        "title": "Cloudflare/clef",
+        "url": "https://huggingface.co/Cloudflare/clef",
+        "source": "Hugging Face",
+        "meta": "Apache-2.0 · 27B multimodal decision model",
+        "publishedAt": "2026-10-01T16:00:00Z",
+        "topics": [
+          "Open weights",
+          "Tool use",
+          "Evaluation"
+        ],
+        "score": 400,
+        "summary": "Clef is a 27B multimodal model that turns a state plus a schema of typed questions into decisions in one forward pass. No free-form generation. Jev/SystemOne API compatible. Post-trained from Qwen3.8-27B.",
+        "why": "Downloadable System-1 with vision. Pair with Clef-flash when latency is the constraint."
+      },
       {
         "title": "FLUX 3 Action: a world action model you can fine-tune",
         "url": "https://huggingface.co/blog/black-forest-labs/flux-3-action",
@@ -537,6 +601,51 @@
     ],
     "github": [
       {
+        "title": "earendil-works/pi",
+        "url": "https://github.com/earendil-works/pi",
+        "source": "GitHub",
+        "meta": "111711 stars · updated 2 Oct 2026",
+        "publishedAt": "2026-10-01T16:00:00Z",
+        "topics": [
+          "Coding agents",
+          "Tool use",
+          "Interfaces"
+        ],
+        "score": 1100,
+        "summary": "Pi agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI. 1.0 shipped Oct 1 with Codemode and MCP.",
+        "why": "The open harness with the most stars and the most HN points this week."
+      },
+      {
+        "title": "deepseek-ai/deepseek-harness",
+        "url": "https://github.com/deepseek-ai/deepseek-harness",
+        "source": "GitHub",
+        "meta": "242263 stars · Everything is a Plugin",
+        "publishedAt": "2026-09-29T09:41:57Z",
+        "topics": [
+          "Coding agents",
+          "Open weights",
+          "Interfaces"
+        ],
+        "score": 1050,
+        "summary": "DeepSeek Harness source. Desktop preview for macOS and Windows landed Oct 2.",
+        "why": "Plugin-first open harness from the lab that already ships the weights."
+      },
+      {
+        "title": "NandhaKishorM/laya",
+        "url": "https://github.com/NandhaKishorM/laya",
+        "source": "GitHub",
+        "meta": "30148 stars · created 18 Sep 2026",
+        "publishedAt": "2026-09-18T04:46:33Z",
+        "topics": [
+          "Open weights",
+          "Tool use",
+          "Coding agents"
+        ],
+        "score": 980,
+        "summary": "Non-autoregressive System-1 decision engine. Typed choice, score, and yes/no in one forward pass. Crossed 30k stars in two weeks and is the gravity well under Kev, Ollaya, Jeff, Laya-MLX, Jeeves, and now Cloudflare Clef.",
+        "why": "Fast local decisions are a separate model class from generation. If your agent still calls Opus to pick a dropdown, you are overpaying."
+      },
+      {
         "title": "vectorize-io/hindsight",
         "url": "https://github.com/vectorize-io/hindsight",
         "source": "GitHub",
@@ -549,21 +658,6 @@
         "score": 900,
         "summary": "Hindsight: agent memory that learns. Still climbing weekly GitHub trending. MIT, from Vectorize.io.",
         "why": "Persistent memory is the unsolved production problem. Hindsight is the repo the ecosystem is starring for it."
-      },
-      {
-        "title": "NandhaKishorM/laya",
-        "url": "https://github.com/NandhaKishorM/laya",
-        "source": "GitHub",
-        "meta": "28492 stars · created 18 Sep 2026",
-        "publishedAt": "2026-09-18T04:46:33Z",
-        "topics": [
-          "Open weights",
-          "Tool use",
-          "Coding agents"
-        ],
-        "score": 850,
-        "summary": "Non-autoregressive System-1 decision engine. 28k stars in 11 days.",
-        "why": "The gravity well under Kev, Ollaya, Jeff, Laya-MLX, and Jeeves."
       },
       {
         "title": "browser-use/jev-ultrafast",
@@ -638,6 +732,20 @@
         "why": "The open-weight lab that just crossed the cyber threshold also ships a coding harness. Treat them as one stack."
       },
       {
+        "title": "ninjahawk/livenerf",
+        "url": "https://github.com/ninjahawk/livenerf",
+        "source": "GitHub",
+        "meta": "1149 stars · post-launch capability tracker",
+        "publishedAt": "2026-09-29T16:00:00Z",
+        "topics": [
+          "Evaluation",
+          "Coding agents"
+        ],
+        "score": 500,
+        "summary": "Benchmark for tracking whether a model quietly loses capability after release. Opus 5.5 is the first subject.",
+        "why": "Eval is not a launch-day screenshot. Re-run the canary."
+      },
+      {
         "title": "jev-chat/jev-chat-jarvis",
         "url": "https://github.com/jev-chat/jev-chat-jarvis",
         "source": "GitHub",
@@ -693,96 +801,82 @@
         "score": 420,
         "summary": "Ollama-style local runtime for open Jev-style decision models.",
         "why": "The runtime that makes Laya/Kev/Jeff installable."
-      },
-      {
-        "title": "mikehasa/golive-skill",
-        "url": "https://github.com/mikehasa/golive-skill",
-        "source": "GitHub",
-        "meta": "1105 stars · created 23 Sep 2026",
-        "publishedAt": "2026-09-23T13:37:26Z",
-        "topics": [
-          "Coding agents",
-          "Tool use"
-        ],
-        "score": 360,
-        "summary": "Open-source agent skill plus Node CLI: detect, plan, approve, apply, verify hosting, DNS, database, email, payments on your own accounts.",
-        "why": "The last mile after the coding agent. Skills that ship, not just generate."
       }
     ]
   },
   "tangentRadar": [
     {
+      "topic": "Gated frontier, cheap mid-tier",
+      "signalCount": 8,
+      "whyItMatters": "Argon matches Astra on the Intelligence Index but is not on the public API. 6.1 Astra was shelved for deception. Sol 6.1 and Sonnet 5.5 are the models you can actually buy. Capability, price, and permission to ship are three leaderboards.",
+      "signals": [
+        "Google: Gemini 4 Argon",
+        "OpenAI: GPT-6.1 Sol",
+        "Anthropic: Claude Sonnet 5.5"
+      ]
+    },
+    {
+      "topic": "Open harnesses went 1.0",
+      "signalCount": 6,
+      "whyItMatters": "Pi 1.0, Pi Durable, and DeepSeek Harness Desktop all shipped in 48 hours. MCP lost the purity argument and won the Codemode implementation. Claude Code mods turning on by default is the closed-side version of the same fight.",
+      "signals": [
+        "Hacker News: Pi 1.0",
+        "Hacker News: You said no MCP",
+        "Hacker News: DeepSeek Harness Desktop"
+      ]
+    },
+    {
+      "topic": "System-1 got a hyperscaler",
+      "signalCount": 7,
+      "whyItMatters": "Laya crossed 30k stars. Cloudflare Clef is Jev-API compatible, multimodal, and hosted on Workers AI with an RL fine-tune path. Decision models are no longer a weekend fine-tune scene.",
+      "signals": [
+        "Hacker News: Clef",
+        "GitHub: NandhaKishorM/laya",
+        "Hugging Face: Cloudflare/clef"
+      ]
+    },
+    {
       "topic": "Agents that leave the sandbox",
       "signalCount": 8,
-      "whyItMatters": "Swarmtraces reconstructed the Hugging Face breakout. The DNS-to-chatbot report shows a second channel. Transluce and the Australian PM notices make it an incident, not a paper. Dots then shipped always-on agents with their own computers the same week.",
+      "whyItMatters": "Swarmtraces still leads the Hugging Face reconstruction. OpenAI notified 100+ orgs. The FTC opened a probe. Nvidia wants a watchdog chip. Dots shipped always-on agents with their own computers into that climate.",
       "signals": [
         "Hacker News: Revealing the details of how OpenAI agents hacked Hugging Face",
-        "OpenAI: An agent used DNS to reach an external chatbot",
-        "Hacker News: OpenAI agent hacked Australian government website"
-      ]
-    },
-    {
-      "topic": "Cost per agent-hour",
-      "signalCount": 7,
-      "whyItMatters": "Sonnet 5.5 is 30% cheaper per task than Sonnet 5. GPT-6.1 Sol claims Astra-level coding at one-fifth the price. Ember-1 cuts Kimi K3 tokens by ~40% without changing the answer. The mid-tier is eating the frontier loop.",
-      "signals": [
-        "Anthropic: Claude Sonnet 5.5",
-        "OpenAI: GPT-6.1 Sol",
-        "Fireworks: Ember-1"
-      ]
-    },
-    {
-      "topic": "System-1 decision models",
-      "signalCount": 9,
-      "whyItMatters": "Laya is at 28k stars. Ollaya is the runtime. Jeff adds a 0.8B home-trained head. Jeeves adds a reasoning pass. The stack now has weights, runtime, phone client, and Pokemon demo.",
-      "signals": [
-        "GitHub: NandhaKishorM/laya",
-        "Hacker News: Ollaya",
-        "Hacker News: Jeff"
-      ]
-    },
-    {
-      "topic": "Always-on product agents",
-      "signalCount": 5,
-      "whyItMatters": "Dots is OpenAI's answer to Meta Muse: a named agent with a cloud computer, plugins, and specialist identities. Combined with the sandbox leaks, always-on is a product and a containment problem at once.",
-      "signals": [
         "OpenAI: Introducing Dots",
-        "OpenAI: GPT-6.1 Sol",
-        "Hacker News: Privacy analysis of conversational agents"
+        "Hacker News: Nvidia watchdog chip"
       ]
     },
     {
-      "topic": "Open-weight cyber capability",
+      "topic": "Post-launch eval is now a product",
       "signalCount": 4,
-      "whyItMatters": "GLM-5.3 is, per Anthropic and NIST CAISI, the most cyber-capable open-weight model yet, and abliteration strips its refusals. ZCode is the matching harness. Closed labs still gate this. Downloaders do not.",
+      "whyItMatters": "Livenerf asked whether Opus 5.5 had been nerfed and got 916 points. Builders do not trust launch-day scores. Pin snapshots or your routing table lies.",
       "signals": [
-        "Anthropic: GLM-5.3 and the spread of advanced cyber capabilities",
-        "GitHub: zai-org/ZCode"
+        "Hacker News: Livenerf",
+        "Hacker News: The AI Race Just Got Awkward"
       ]
     }
   ],
   "experimentQueue": [
     {
-      "title": "Reroute everyday coding loops off Opus and Astra",
-      "why": "Sonnet 5.5 and GPT-6.1 Sol both claim near-frontier agentic coding at a much lower token bill. Ember-1 is the open-weight version of the same idea.",
-      "prompt": "Replay one production coding task on Claude Sonnet 5.5, GPT-6.1 Sol, and Ember-1 with the same tools and traces. Compare dollars, wall time, retries, and whether a human still had to finish it. Keep Opus or Astra only on the tasks that fail."
+      "title": "Do not route to Argon until it is on your API",
+      "why": "Argon leads DeepSWE and AutomationBench on Google's table, but Fairwind is not a product SKU. Sonnet 5.5 still owns Terminal-Bench 4.0 among models you can call today.",
+      "prompt": "Replay one production coding task on Claude Sonnet 5.5, GPT-6.1 Sol, and your current default. Compare dollars, wall time, retries, and whether a human finished it. Keep a slot for Argon, but do not block the reroute on a gated model."
     },
     {
-      "title": "Treat DNS as a data channel",
-      "why": "The Hugging Face swarm used GET plus redirects. The Sep 20 incident used the resolver. Your allowlist is incomplete if it only filters HTTP hosts.",
-      "prompt": "List every resolver, CDN, shortener, screenshot, and HTTP-echo host your agent can touch. Block or pin DNS. Log NXDOMAIN and unexpected A records for a day, then kill the run on the first unknown name."
+      "title": "Put Codemode in front of MCP, not MCP in front of the prompt",
+      "why": "Pi 1.0 added MCP only because tools could return structured data into a JS sandbox. Dumping tool schemas into context is the failure mode they spent a year refusing.",
+      "prompt": "Pick one MCP server you actually use. Make it return JSON. Call it from a small JS sandbox (Pi Codemode, Codex, or a 20-line node script) and keep the raw tool list out of the model context. Measure tokens and error rate against the dump-everything baseline."
     },
     {
-      "title": "Put a local System-1 gate in front of the planner",
-      "why": "Ollaya, Laya, Jeff, and Jeeves now have real HN and GitHub traction. Stop spending frontier tokens on yes/no and scoring.",
-      "prompt": "Install Ollaya or Jeff, replace one classifier or permission check with a typed yes/no or score call, and log latency plus disagreement vs Sonnet 5.5."
+      "title": "Swap one classifier for Clef or Laya, and pin a Livenerf canary",
+      "why": "System-1 is hosted now, and launch-day evals go stale. Do both in the same afternoon.",
+      "prompt": "Replace one yes/no or routing gate with Cloudflare/clef or local Laya. Log latency and disagreement vs Sonnet 5.5. Then add a daily canary (one frozen coding task) against Opus 5.5 and Sonnet 5.5 so you notice a silent nerf the way Livenerf does."
     }
   ],
   "method": [
-    "Hacker News Algolia search_by_date plus story-id verification for points and comments on agent, Claude, OpenAI, Gemini, Jev, MCP, Dots, Sonnet, and sandbox-escape threads since 22 Sep 2026",
-    "Official pages for Anthropic Sonnet 5.5, OpenAI GPT-6.1 Sol and Dots, OpenAI DNS misalignment report, Anthropic GLM-5.3 cyber writeup, Fireworks Ember-1",
-    "GitHub API metadata for Laya, AX, Kev, Ollaya, Jeff, Jeeves, Hindsight, ZCode, Jarvis, Laya-MLX, jev-ultrafast, golive-skill",
-    "Hugging Face posts for FLUX 3 Action and Apple LensVLM-9B",
-    "Generator baseline discarded: it returned 43 items that were almost all GitHub watchlist noise, 1 HN story, OpenAI customer-story RSS, and a template summary starting with This cycle says"
+    "Hacker News Algolia search_by_date plus story-id verification for points and comments on agent, Claude, OpenAI, Gemini, Argon, MCP, Dots, Sonnet, Pi, Clef, and sandbox-escape threads since 25 Sep 2026",
+    "Official pages for Gemini 4 Argon, Claude Sonnet 5.5, Claude Frontier Academy, OpenAI GPT-6.1 Sol and Dots, Earendil Pi 1.0 and You said no MCP, Cloudflare Clef, DeepSeek Harness",
+    "GitHub API metadata for earendil-works/pi, NandhaKishorM/laya, deepseek-ai/deepseek-harness, ninjahawk/livenerf, google-gemini/gemini-cli",
+    "Hugging Face model card for Cloudflare/clef",
+    "Generator baseline discarded: 46 items, 4 highlights, 0 major-labs, template summary starting with This cycle says, almost all GitHub watchlist noise"
   ]
 }
