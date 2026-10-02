@@ -1,0 +1,26 @@
+name: Chex
+description: JAX testing and assertion utilities from DeepMind. Chex checks pytree shapes, variants, and device placement so JAX tests catch rank bugs before training.
+tagline: Pytree assertions and test helpers for JAX
+
+github_url: https://github.com/google-deepmind/chex
+website_url: https://chex.readthedocs.io
+docs_url: https://chex.readthedocs.io
+install_command: pip install chex
+
+category: Dev Tools
+tags: [python, jax, testing, pytrees, assertions, deepmind]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  JAX code fails late when pytree structure or device
+  placement drifts, and plain assert misses variants.
+  Chex adds shape, dtype, and variants helpers so tests
+  catch rank and device bugs before a training step.
+
+use_cases:
+  - Assert a JAX pytree matches an expected shape and dtype
+  - Parameterize a unit test across CPU and GPU variants
+  - Catch a device-placement bug before a JIT training step
+  - Check tree structure after a Flax or Haiku transform

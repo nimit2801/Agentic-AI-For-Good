@@ -1,0 +1,26 @@
+name: TensorFlow Probability
+description: Probabilistic reasoning and statistical analysis library for TensorFlow. TensorFlow Probability layers distributions, MCMC, and variational inference so ML pipelines train Bayesian models on the TF stack.
+tagline: Bayesian layers, MCMC, and VI on TensorFlow
+
+github_url: https://github.com/tensorflow/probability
+website_url: https://www.tensorflow.org/probability
+docs_url: https://www.tensorflow.org/probability
+install_command: pip install tensorflow-probability
+
+category: Data
+tags: [python, tensorflow, probabilistic, bayesian, mcmc, variational-inference]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Bayesian deep learning needs distributions, MCMC, and
+  variational layers that compose with TensorFlow graphs.
+  Ad hoc NumPy samplers sit outside TF. TensorFlow Probability
+  ships those primitives so models train uncertainty on GPU.
+
+use_cases:
+  - Place a TFP distribution layer on a TensorFlow network head
+  - Run Hamiltonian Monte Carlo on a TensorFlow joint density
+  - Train a variational autoencoder with TFP bijectors
+  - Sample a Bayesian neural net without leaving the TF graph

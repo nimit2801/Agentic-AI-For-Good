@@ -1,0 +1,26 @@
+name: TorchOpt
+description: Differentiable optimization library built on PyTorch. TorchOpt treats optimizers as functions so meta-learning and implicit-diff training nest inner steps without a custom loop.
+tagline: Differentiable PyTorch optimizers for meta-learning
+
+github_url: https://github.com/metaopt/torchopt
+website_url: https://torchopt.readthedocs.io
+docs_url: https://torchopt.readthedocs.io
+install_command: pip install torchopt
+
+category: Dev Tools
+tags: [python, pytorch, optimization, meta-learning, autodiff, implicit-differentiation]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Meta-learning needs gradients through an inner optimizer,
+  but PyTorch step() is not a differentiable transform.
+  TorchOpt exposes functional, implicit-diff optimizers so
+  MAML-style loops nest updates without a homemade tape.
+
+use_cases:
+  - Differentiate through inner SGD steps in a MAML trainer
+  - Replace torch.optim with a functional optimizer in a loop
+  - Apply implicit differentiation to a bilevel PyTorch problem
+  - Meta-learn hyperparameters by unrolling TorchOpt updates
