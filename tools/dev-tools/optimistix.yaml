@@ -1,0 +1,26 @@
+name: Optimistix
+description: Nonlinear optimisation in JAX and Equinox for root-finding, least squares, and minimisation. Optimistix keeps solvers differentiable so scientific ML nests inner fits inside a training loop.
+tagline: Nonlinear root-finding and least squares in JAX
+
+github_url: https://github.com/patrick-kidger/optimistix
+website_url: https://docs.kidger.site/optimistix
+docs_url: https://docs.kidger.site/optimistix
+install_command: pip install optimistix
+
+category: Dev Tools
+tags: [python, jax, optimization, equinox, least-squares, root-finding]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Nested scientific models need root-finding and nonlinear
+  least squares that stay in JAX, but SciPy optimize drops
+  off the accelerator. Optimistix provides those solvers so
+  Equinox loops differentiate through an inner fit.
+
+use_cases:
+  - Nest a nonlinear least-squares fit inside a JAX training loop
+  - Solve a root-finding problem with a differentiable JAX solver
+  - Minimise a scientific residual without leaving Equinox
+  - Replace a SciPy optimize call that copied arrays off GPU
