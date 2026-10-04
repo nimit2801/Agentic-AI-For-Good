@@ -1,0 +1,26 @@
+name: Reverb
+description: Reverb is DeepMind's efficient data storage and transport system for machine learning research. It is used mainly as an experience replay service for distributed RL, with FIFO, LIFO, and priority queues plus rate limiting and checkpointing.
+tagline: Experience replay and data transport for distributed RL
+
+github_url: https://github.com/google-deepmind/reverb
+
+category: Data
+tags: [python, reinforcement-learning, replay-buffer, deepmind, distributed, tensorflow]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install dm-reverb
+
+problem_solved: |
+  Distributed RL needs a shared store that actors can write to and learners
+  can sample from with priorities, rate limits, and checkpointing. Ad-hoc
+  queues drop samples or stall the learner. Reverb provides tables with
+  FIFO, LIFO, and prioritized sampling plus sharding so replay traffic
+  stays consistent across a training cluster.
+
+use_cases:
+  - Run a prioritized experience replay table for a distributed DQN or IMPALA learner
+  - Rate-limit actors so the replay buffer does not overflow while the learner catches up
+  - Checkpoint replay tables and restore them when a long RL job restarts
+  - Use FIFO or LIFO tables as a transport queue between data producers and a training worker

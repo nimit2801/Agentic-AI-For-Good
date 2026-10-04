@@ -1,0 +1,26 @@
+name: Distrax
+description: Distrax is a JAX-native library of probability distributions and bijectors from DeepMind. It reimplements a subset of TensorFlow Probability with a readable, extensible API that composes with JAX transforms for sampling, log-prob, and density estimation in research code.
+tagline: Probability distributions and bijectors for JAX
+
+github_url: https://github.com/google-deepmind/distrax
+
+category: Data
+tags: [python, jax, probability, distributions, deepmind, bijectors]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install distrax
+
+problem_solved: |
+  Probabilistic ML in JAX often means wrapping TensorFlow Probability or
+  hand-rolling distributions that do not compose with jit, vmap, and custom
+  policies. Distrax provides JAX-first distributions and bijectors with a
+  TFP-compatible API, so researchers can sample, score, and transform densities
+  without leaving the JAX stack or rewriting core probability code.
+
+use_cases:
+  - Define a MultivariateNormalDiag policy for a JAX RL agent and sample actions under jit
+  - Build a normalizing-flow density model with Distrax bijectors and train it with JAX grad
+  - Mix Distrax and TensorFlow Probability distributions in one pipeline via the compatibility layer
+  - Implement a custom distribution for a stochastic policy without forking a full TFP substrate
