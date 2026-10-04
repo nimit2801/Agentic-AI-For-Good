@@ -1,0 +1,28 @@
+name: TensorFlow IO
+description: TensorFlow I/O is a SIG-IO library of file systems and formats missing from core TensorFlow. It reads Kafka, BigQuery, Parquet, HTTP, and other sources as tf.data datasets so training pipelines ingest data without a separate ETL hop.
+tagline: Extra file systems and formats for TensorFlow datasets
+
+github_url: https://github.com/tensorflow/io
+website_url: https://www.tensorflow.org/io
+docs_url: https://www.tensorflow.org/io
+
+category: Data
+tags: [python, tensorflow, data-loading, parquet, kafka, tfdata, google]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install tensorflow-io
+
+problem_solved: |
+  Core TensorFlow only speaks a handful of file formats, so Kafka,
+  Parquet, or HTTP sources need a download-and-convert step. TensorFlow
+  I/O adds those as tf.data readers, including HTTP filesystem support,
+  so a Keras fit() can stream remote or streaming data without a
+  separate ETL job.
+
+use_cases:
+  - Stream MNIST or custom files over HTTPS into a tf.data pipeline with IODataset
+  - Read Parquet training features directly in TensorFlow without converting to TFRecord
+  - Consume Kafka events as a tf.data dataset for online training
+  - Load BigQuery tables into a Keras training loop via TensorFlow I/O

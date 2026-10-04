@@ -1,0 +1,26 @@
+name: Edward2
+description: Edward2 is a simple probabilistic programming language on TensorFlow, JAX, and NumPy. Random variables and Bayesian layers let you write models as probabilistic programs and train them with flexible inference without a heavy PPL runtime.
+tagline: Simple probabilistic programming on TensorFlow and JAX
+
+github_url: https://github.com/google/edward2
+
+category: Data
+tags: [python, tensorflow, jax, probabilistic-programming, bayesian, uncertainty, google]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install edward2
+
+problem_solved: |
+  Full probabilistic programming stacks are heavy, while raw TFP still
+  makes you wire every random variable by hand. Edward2 gives
+  RandomVariable objects and Bayesian Keras layers so models are
+  written as programs, then intercepted for variational inference or
+  MCMC without leaving TensorFlow or JAX.
+
+use_cases:
+  - Write a Bayesian neural net with Edward2 layers and train it variationally
+  - Intercept random variables in a probabilistic program to swap inference
+  - Port an Edward model to Edward2 RandomVariables on TensorFlow Probability
+  - Prototype uncertainty baselines using Edward2 on the JAX backend
