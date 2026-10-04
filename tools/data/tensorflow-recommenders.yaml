@@ -1,0 +1,27 @@
+name: TensorFlow Recommenders
+description: TensorFlow Recommenders is a Keras library for building retrieval and ranking recommender models. It provides two-tower retrieval, ranking losses, metrics, and dataset utilities so teams can train production-style recommenders on TensorFlow.
+tagline: Build retrieval and ranking recommenders in TensorFlow
+
+github_url: https://github.com/tensorflow/recommenders
+docs_url: https://www.tensorflow.org/recommenders
+
+category: Data
+tags: [python, tensorflow, recommenders, retrieval, ranking, keras]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install tensorflow-recommenders
+
+problem_solved: |
+  Recommender research code often hand-rolls two-tower retrieval, ranking
+  losses, and candidate metrics on top of Keras. TensorFlow Recommenders
+  packages those patterns as a library with retrieval and ranking tasks,
+  FactorizedTopK metrics, and ScaNN integration so teams can train and
+  evaluate recommenders without rebuilding the scaffolding.
+
+use_cases:
+  - Train a two-tower retrieval model for item recommendations from user and item features
+  - Rank candidate items with a Keras ranking head and TensorFlow Recommenders losses
+  - Evaluate retrieval quality with FactorizedTopK metrics during training
+  - Serve approximate nearest-neighbor retrieval with ScaNN on a trained embedding model

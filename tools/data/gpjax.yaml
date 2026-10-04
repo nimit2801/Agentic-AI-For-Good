@@ -1,0 +1,28 @@
+name: GPJax
+description: GPJax is a Gaussian process library built on JAX and Equinox. It provides kernels, likelihoods, and variational inference so researchers can fit and sample GPs with jit, grad, and GPU or TPU backends without leaving the JAX stack.
+tagline: Gaussian processes in JAX and Equinox
+
+github_url: https://github.com/QuantClimate/GPJax
+website_url: https://gpjax.quantclimate.com
+docs_url: https://gpjax.quantclimate.com
+
+category: Data
+tags: [python, jax, gaussian-processes, bayesian, equinox, research]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install gpjax
+
+problem_solved: |
+  Gaussian process code in Python is often NumPy-bound or tied to GPyTorch,
+  so it does not compose with JAX transforms or Equinox models. GPJax
+  implements kernels, sparse variational GPs, and posterior sampling as
+  Equinox modules, letting Bayesian models train and jit alongside the rest
+  of a JAX research stack.
+
+use_cases:
+  - Fit a sparse variational Gaussian process on a large tabular dataset with JAX GPU acceleration
+  - Combine GPJax kernels with an Equinox neural net for deep kernel learning
+  - Sample posterior functions for uncertainty-aware scientific interpolation
+  - Prototype a custom kernel and train it with JAX automatic differentiation
