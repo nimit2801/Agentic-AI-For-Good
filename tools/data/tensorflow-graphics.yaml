@@ -1,0 +1,28 @@
+name: TensorFlow Graphics
+description: TensorFlow Graphics is a library of differentiable graphics layers for TensorFlow. It models cameras, geometry, materials, and renderers as TF ops so 3D vision models can train with geometric priors and analysis-by-synthesis instead of labels alone.
+tagline: Differentiable graphics layers for TensorFlow
+
+github_url: https://github.com/tensorflow/graphics
+website_url: https://www.tensorflow.org/graphics
+docs_url: https://www.tensorflow.org/graphics
+
+category: Data
+tags: [python, tensorflow, 3d, graphics, differentiable-rendering, computer-vision, google]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install tensorflow-graphics
+
+problem_solved: |
+  3D vision models often treat cameras, poses, and renderers as black boxes
+  outside the training graph, so they need dense labels. TensorFlow Graphics
+  inserts cameras, transformations, lighting, and differentiable renderers
+  as TensorFlow layers, letting networks train from geometric constraints
+  and reconstruct scenes by synthesizing images that match the input.
+
+use_cases:
+  - Estimate object pose by rendering a mesh and matching it to an input image
+  - Train a self-supervised depth network with a differentiable camera projection layer
+  - Insert spherical harmonics lighting into a TensorFlow reconstruction model
+  - Convert between 3D rotation representations inside a Keras training loop

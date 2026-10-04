@@ -1,0 +1,27 @@
+name: Lingvo
+description: Lingvo is a TensorFlow framework for building sequence models at scale. Google used it for speech recognition, machine translation, language modeling, and GShard transformers, with shared layers, input pipelines, and multi-host trainers.
+tagline: TensorFlow framework for large sequence models
+
+github_url: https://github.com/tensorflow/lingvo
+docs_url: https://tensorflow.github.io/lingvo
+
+category: Fine-tuning
+tags: [python, tensorflow, sequence-models, speech, translation, llm, google]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install lingvo
+
+problem_solved: |
+  Production sequence models need more than a Keras loop: custom input
+  pipelines, distributed trainers, beam search, and reusable layers for
+  ASR and MT. Lingvo packages those as a TensorFlow framework so teams
+  can train speech, translation, and language models with the same
+  stack Google used for GShard-scale transformers.
+
+use_cases:
+  - Train an automatic speech recognition model with Lingvo's ASR recipes
+  - Fine-tune a machine translation Transformer on a custom parallel corpus
+  - Run a GShard-style mixture-of-experts language model on multiple hosts
+  - Prototype a sequence model that shares Lingvo layers across speech and text

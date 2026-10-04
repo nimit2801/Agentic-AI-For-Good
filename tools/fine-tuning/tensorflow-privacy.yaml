@@ -1,0 +1,27 @@
+name: TensorFlow Privacy
+description: TensorFlow Privacy implements differentially private TensorFlow optimizers and accounting tools. Teams wrap Keras training with DP-SGD, clip per-example gradients, and compute epsilon so models train on sensitive data with formal privacy guarantees.
+tagline: Differentially private training for TensorFlow models
+
+github_url: https://github.com/tensorflow/privacy
+docs_url: https://github.com/tensorflow/privacy
+
+category: Fine-tuning
+tags: [python, tensorflow, differential-privacy, dp-sgd, keras, privacy, google]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install tensorflow-privacy
+
+problem_solved: |
+  Standard SGD memorizes training examples, which is unsafe on medical,
+  financial, or user data. TensorFlow Privacy ships DP-SGD Keras
+  optimizers, per-example gradient clipping, and RDP accountants so
+  teams can train models with a measured epsilon instead of hoping
+  regularization is enough.
+
+use_cases:
+  - Fine-tune a Keras classifier with DP-SGD and report the resulting epsilon
+  - Clip per-example gradients on a Dense-and-Embedding model without microbatching
+  - Compare privacy budgets across training runs with the RDP accountant
+  - Train a language model on user text under a formal differential-privacy bound
