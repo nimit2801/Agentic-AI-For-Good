@@ -1,0 +1,28 @@
+name: TensorFlow Hub
+description: TensorFlow Hub is a library and repository for reusable TensorFlow model modules. Teams load pretrained image, text, audio, and embedding models as Keras layers for transfer learning instead of retraining feature extractors from scratch.
+tagline: Reusable TensorFlow modules for transfer learning
+
+github_url: https://github.com/tensorflow/hub
+website_url: https://www.tensorflow.org/hub
+docs_url: https://www.tensorflow.org/hub
+
+category: LLM
+tags: [python, tensorflow, transfer-learning, pretrained-models, embeddings, google]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install tensorflow-hub
+
+problem_solved: |
+  Transfer learning in TensorFlow used to mean downloading checkpoints and
+  wiring feature extractors by hand. TensorFlow Hub publishes reusable
+  modules that load as Keras layers with a single handle, so teams can
+  compose pretrained embeddings, classifiers, and encoders without
+  reconstructing each publisher's SavedModel layout.
+
+use_cases:
+  - Load a pretrained text embedding from TensorFlow Hub as a Keras layer in a classifier
+  - Fine-tune an image feature extractor from Hub on a small custom dataset
+  - Publish a reusable SavedModel module for other teams to consume via a Hub handle
+  - Swap Hub embedding modules in an NLP pipeline without changing downstream Keras code

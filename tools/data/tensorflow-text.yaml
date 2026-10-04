@@ -1,0 +1,28 @@
+name: TensorFlow Text
+description: TensorFlow Text is a library of text ops, modules, and subgraphs that make tokenization, n-grams, and sequence preprocessing first-class TensorFlow operations so NLP pipelines can run inside the graph on CPU, GPU, or TPU.
+tagline: Text processing ops as first-class TensorFlow citizens
+
+github_url: https://github.com/tensorflow/text
+website_url: https://www.tensorflow.org/text
+docs_url: https://www.tensorflow.org/text
+
+category: Data
+tags: [python, tensorflow, nlp, tokenization, text-processing, google]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install tensorflow-text
+
+problem_solved: |
+  Tokenizers and string ops often live outside the TensorFlow graph, which
+  breaks SavedModel export and accelerator training. TensorFlow Text ships
+  BERT, SentencePiece, and Unicode tokenizers plus n-gram and sequence
+  helpers as TF ops, so NLP preprocessing trains, serves, and exports with
+  the rest of the model.
+
+use_cases:
+  - Tokenize BERT or SentencePiece inputs inside a TensorFlow training step instead of a Python map
+  - Export a SavedModel that includes Unicode normalization and n-gram features
+  - Build a text classification pipeline whose preprocessing runs on TPU with the rest of the graph
+  - Combine TensorFlow Text tokenizers with Keras layers for an end-to-end NLP model
