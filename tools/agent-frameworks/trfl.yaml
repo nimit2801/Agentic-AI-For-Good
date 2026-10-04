@@ -1,0 +1,25 @@
+name: TRFL
+description: TRFL is DeepMind's TensorFlow Reinforcement Learning library of building-block ops. It implements losses, returns, and value operators used in DQN, actor-critic, and distributional RL so researchers can compose algorithms without re-deriving the math.
+tagline: TensorFlow building blocks for reinforcement learning
+
+github_url: https://github.com/google-deepmind/trfl
+
+category: Agents
+tags: [python, tensorflow, reinforcement-learning, losses, deepmind, research]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install trfl
+
+problem_solved: |
+  RL papers reimplement TD losses, n-step returns, and distributional
+  heads in slightly incompatible ways. TRFL ships those as TensorFlow
+  ops DeepMind used internally, so an agent can compose standard RL
+  losses instead of copying formulas from appendices.
+
+use_cases:
+  - Compute n-step TD returns as a TensorFlow op inside a custom trainer
+  - Add a distributional RL loss from TRFL to a DQN-style agent
+  - Share actor-critic loss implementations across multiple TensorFlow agents
+  - Prototype a new value-based algorithm using TRFL's building-block ops

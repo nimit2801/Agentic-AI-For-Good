@@ -1,0 +1,27 @@
+name: OpenSpiel
+description: OpenSpiel is DeepMind's collection of environments and algorithms for research in general reinforcement learning, search, and planning in games. It covers single-agent, two-player, and multi-player games with Python and C++ APIs.
+tagline: Game environments and algorithms for RL and search research
+
+github_url: https://github.com/google-deepmind/open_spiel
+docs_url: https://openspiel.readthedocs.io
+
+category: Agents
+tags: [python, cpp, reinforcement-learning, games, search, deepmind, multi-agent]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install open-spiel
+
+problem_solved: |
+  Game AI research is split across chess engines, poker solvers, and
+  RL libraries that do not share an API. OpenSpiel unifies dozens of
+  games (Go, poker, bridge, combinatorial games) with standard RL and
+  search algorithms so researchers can compare agents, solvers, and
+  self-play methods in one codebase.
+
+use_cases:
+  - Train a reinforcement learning agent on poker or Go with OpenSpiel environments
+  - Compare MCTS search against a learned policy on a combinatorial game
+  - Prototype a multi-agent self-play loop across imperfect-information games
+  - Benchmark a new search algorithm against OpenSpiel's built-in solvers
