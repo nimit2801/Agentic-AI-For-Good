@@ -1,0 +1,27 @@
+name: PIX
+description: PIX is a JAX image processing library from DeepMind that provides differentiable, JIT-compatible transforms such as flips, crops, color jitter, and kernels so vision pipelines can be optimized and batched with jax.jit, vmap, and pmap.
+tagline: Image processing functions in JAX, for JAX
+
+github_url: https://github.com/google-deepmind/dm_pix
+docs_url: https://dm-pix.readthedocs.io
+website_url: https://dm-pix.readthedocs.io
+
+category: Data
+tags: [python, jax, image-processing, computer-vision, deepmind, augmentation]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install dm-pix
+
+problem_solved: |
+  Standard image libraries sit outside JAX, so augmentations break jit, vmap,
+  and GPU/TPU batching and force host-device copies. PIX implements image
+  ops as pure JAX functions that compile and parallelize with the rest of a
+  training step, keeping vision preprocessing on-device and differentiable.
+
+use_cases:
+  - Flip, crop, and color-jitter a batch of training images inside a jitted JAX training step
+  - Vectorize data augmentation across a device mesh with jax.vmap or jax.pmap
+  - Build a differentiable image pipeline for contrastive or self-supervised vision research
+  - Replace NumPy or OpenCV host-side transforms with on-device PIX ops in a JAX dataloader

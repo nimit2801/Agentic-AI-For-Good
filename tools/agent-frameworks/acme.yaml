@@ -1,0 +1,27 @@
+name: Acme
+description: Acme is DeepMind's research framework of reinforcement learning components and agents. It exposes readable baseline agents that scale from a single stream to distributed setups, so researchers can start from strong implementations rather than rewriting infrastructure.
+tagline: Reinforcement learning agents and building blocks from DeepMind
+
+github_url: https://github.com/google-deepmind/acme
+docs_url: https://dm-acme.readthedocs.io
+
+category: Agents
+tags: [python, reinforcement-learning, agents, deepmind, distributed, research]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install dm-acme
+
+problem_solved: |
+  Research RL code often mixes algorithm logic with replay, acting, and
+  distributed plumbing, which makes baselines hard to compare and scale.
+  Acme splits agents into reusable actors, learners, and adders with
+  reference implementations that run locally or distributed, so new
+  algorithms can reuse infrastructure instead of rewriting it.
+
+use_cases:
+  - Train a published baseline agent from Acme on a dm_control or Gym environment
+  - Scale a single-stream learner to a distributed actor-learner setup with the same agent code
+  - Prototype a new RL algorithm by swapping the learner while keeping Acme's replay and acting stack
+  - Compare agent implementations against DeepMind reference baselines before publishing results

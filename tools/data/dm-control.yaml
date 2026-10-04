@@ -1,0 +1,26 @@
+name: dm_control
+description: dm_control is DeepMind's software stack for physics-based simulation and reinforcement learning environments built on MuJoCo, including Python bindings, the Control Suite, an interactive viewer, and composer tools for custom continuous-control tasks.
+tagline: MuJoCo simulation and RL environments from DeepMind
+
+github_url: https://github.com/google-deepmind/dm_control
+
+category: Data
+tags: [python, mujoco, reinforcement-learning, simulation, deepmind, robotics]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install dm_control
+
+problem_solved: |
+  Building continuous-control RL experiments usually means gluing MuJoCo
+  bindings, task definitions, and a viewer together by hand. dm_control
+  packages DeepMind's MuJoCo Python stack, the Control Suite of standard
+  tasks, MJCF composition, and locomotion environments so researchers can
+  train and debug physics agents without assembling that infrastructure.
+
+use_cases:
+  - Benchmark a continuous-control algorithm on the DeepMind Control Suite cartpole and walker tasks
+  - Compose custom MuJoCo MJCF models in Python and wrap them as RL environments
+  - Prototype multi-agent soccer or locomotion tasks with the locomotion libraries
+  - Inspect and debug a physics episode with the interactive dm_control viewer
