@@ -1,0 +1,27 @@
+name: ml_collections
+description: ML Collections is a Google library of Python collections for ML configs. ConfigDict and FrozenConfigDict give nested dicts with dot access, locking, FieldReferences, and flag integration so experiment configs stay typed, overridable, and hard to misspell.
+tagline: Dot-access config dicts for ML experiments
+
+github_url: https://github.com/google/ml_collections
+docs_url: https://ml-collections.readthedocs.io
+
+category: Dev Tools
+tags: [python, config, experiments, jax, flax, google]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install ml_collections
+
+problem_solved: |
+  Nested experiment configs as plain dicts are easy to misspell and hard
+  to override from flags. ML Collections ConfigDict adds dot access,
+  locking, placeholders, and FrozenConfigDict hashing so JAX and Flax
+  trainers can load a config.py, freeze it, and pass it through
+  distributed jobs without silent key typos.
+
+use_cases:
+  - Define a nested Flax training config with ConfigDict and lock unused keys
+  - Override a learning rate from the command line via config_flags
+  - Share a FieldReference so two config fields always stay in sync
+  - Freeze a ConfigDict so it can be hashed as a sweep key

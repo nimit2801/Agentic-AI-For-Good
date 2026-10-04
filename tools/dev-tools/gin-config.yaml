@@ -1,0 +1,27 @@
+name: Gin Config
+description: Gin Config is a lightweight Python configuration library based on dependency injection. Decorate functions with gin.configurable and bind nested hyperparameters from a config file or the command line without writing boilerplate config objects.
+tagline: Dependency-injection configs for ML experiments
+
+github_url: https://github.com/google/gin-config
+docs_url: https://github.com/google/gin-config/blob/master/docs/index.md
+
+category: Dev Tools
+tags: [python, config, hyperparameters, tensorflow, experiments, google]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install gin-config
+
+problem_solved: |
+  ML experiments bury nested hyperparameters in argparse flags, protos,
+  or factory code that is painful to override. Gin lets you decorate
+  functions and bind parameters from a .gin file, including references
+  to other configurables, so trainers, optimizers, and networks can be
+  rewired without changing Python.
+
+use_cases:
+  - Bind optimizer class and learning rate from a gin file instead of argparse
+  - Swap activation functions in a network via configurable references
+  - Share one gin config across a multi-stage TensorFlow training pipeline
+  - Override a nested hyperparameter from the command line for a sweep
