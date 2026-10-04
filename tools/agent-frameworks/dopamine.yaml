@@ -1,0 +1,28 @@
+name: Dopamine
+description: Dopamine is a compact Google research framework for prototyping reinforcement learning agents. It ships JAX implementations of DQN, Rainbow, IQN, SAC, and PPO with Atari and MuJoCo baselines so labs can reproduce and extend a small, reliable RL stack.
+tagline: Compact JAX framework for RL research
+
+github_url: https://github.com/google/dopamine
+website_url: https://google.github.io/dopamine
+docs_url: https://google.github.io/dopamine/docs
+
+category: Agents
+tags: [python, jax, reinforcement-learning, dqn, rainbow, atari, google]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install dopamine-rl
+
+problem_solved: |
+  Full RL libraries are huge, so swapping a loss or replay buffer means
+  wading through thousands of lines. Dopamine keeps a small set of
+  battle-tested agents (DQN, Rainbow, IQN, SAC, PPO) in a compact JAX
+  codebase with published Atari baselines, making speculative research
+  and reproduction tractable.
+
+use_cases:
+  - Reproduce Rainbow Atari results from Dopamine's published baselines
+  - Prototype a new value-based agent by forking the compact DQN JAX code
+  - Train SAC or PPO on MuJoCo with Dopamine's continuous-control agents
+  - Compare a custom replay buffer against Dopamine's default Atari agent

@@ -1,0 +1,26 @@
+name: bsuite
+description: bsuite is DeepMind's Behaviour Suite for reinforcement learning. It is a collection of carefully designed experiments that isolate core RL capabilities such as memory, exploration, and credit assignment, with a shared API and analysis notebook.
+tagline: Diagnostic RL experiments for agent capabilities
+
+github_url: https://github.com/google-deepmind/bsuite
+
+category: Other
+tags: [python, reinforcement-learning, benchmarks, deepmind, evaluation, research]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install bsuite
+
+problem_solved: |
+  Atari and MuJoCo scores mix many skills, so it is hard to tell whether
+  an agent failed at memory, exploration, or credit assignment. bsuite
+  isolates those capabilities in small, reproducible environments with
+  a shared load API and analysis plots, so researchers can diagnose
+  agents instead of chasing a single aggregate score.
+
+use_cases:
+  - Run the full bsuite experiment set to profile an agent's core RL skills
+  - Debug poor exploration by isolating bsuite's deep-sea environments
+  - Compare two agents on memory tasks without confounding Atari visuals
+  - Plot bsuite radar scores in the analysis notebook after a training sweep
