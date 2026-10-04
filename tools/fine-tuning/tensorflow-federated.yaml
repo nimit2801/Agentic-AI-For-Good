@@ -1,0 +1,28 @@
+name: TensorFlow Federated
+description: TensorFlow Federated is an open-source framework for machine learning on decentralized data. It provides federated averaging, evaluation, and a typed Federated Core so teams can train shared models across clients that keep data local.
+tagline: Federated learning and analytics on decentralized data
+
+github_url: https://github.com/google-parfait/tensorflow-federated
+website_url: https://www.tensorflow.org/federated
+docs_url: https://www.tensorflow.org/federated
+
+category: Fine-tuning
+tags: [python, tensorflow, federated-learning, privacy, decentralized, google]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install tensorflow-federated
+
+problem_solved: |
+  Training on phones, hospitals, or banks usually means uploading raw
+  data to a server, which privacy rules forbid. TensorFlow Federated
+  lets you express federated averaging and custom aggregations so a
+  shared model trains across clients that keep examples local, with a
+  simulation runtime for research before deploying to devices.
+
+use_cases:
+  - Train a keyboard next-word model with federated averaging on simulated clients
+  - Evaluate a Keras classifier across heterogeneous client datasets without pooling data
+  - Prototype a new federated algorithm with TFF's Federated Core operators
+  - Run aggregated analytics over decentralized logs instead of collecting raw events

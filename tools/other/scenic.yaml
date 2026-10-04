@@ -1,0 +1,24 @@
+name: Scenic
+description: Scenic is a JAX and Flax research codebase for attention-based computer vision. It ships shared libraries for multi-host training plus projects that implement classification, segmentation, detection, and multimodal models for images, video, and audio.
+tagline: JAX research library for vision transformers and beyond
+
+github_url: https://github.com/google-research/scenic
+
+category: Other
+tags: [python, jax, flax, computer-vision, transformers, google, research]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Large-scale vision transformer research in JAX usually means rebuilding
+  input pipelines, multi-host trainers, and evaluation loops for every
+  paper. Scenic shares that boilerplate and hosts fleshed-out projects
+  (ViViT, TokenLearner, OWL-ViT) so labs can train classification,
+  detection, and multimodal models without forking a new codebase each time.
+
+use_cases:
+  - Train a Vision Transformer classifier on ImageNet with Scenic's multi-host JAX trainer
+  - Fine-tune a video transformer such as ViViT on a custom action-recognition dataset
+  - Run open-vocabulary detection with Scenic's OWL-ViT project
+  - Prototype a multimodal image-plus-audio model using Scenic input pipelines
