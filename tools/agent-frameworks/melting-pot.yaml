@@ -1,0 +1,27 @@
+name: Melting Pot
+description: Melting Pot is DeepMind's suite of multi-agent RL test scenarios. It offers 50-plus substrates and 256 held-out social situations covering cooperation, competition, and trust so researchers can measure whether agents generalize to unfamiliar partners.
+tagline: Multi-agent RL scenarios for social generalization
+
+github_url: https://github.com/google-deepmind/meltingpot
+docs_url: https://github.com/google-deepmind/meltingpot
+
+category: Agents
+tags: [python, reinforcement-learning, multi-agent, deepmind, evaluation, research]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install dm-meltingpot
+
+problem_solved: |
+  Most multi-agent RL benchmarks train and test on the same population,
+  so scores hide failure with strangers. Melting Pot holds out test
+  scenarios with unfamiliar partners across cooperation, deception, and
+  competition, ranking algorithms by social generalization instead of
+  in-distribution self-play.
+
+use_cases:
+  - Train a multi-agent policy on a Melting Pot substrate then evaluate on held-out scenarios
+  - Benchmark cooperation versus competition generalization across unfamiliar partners
+  - Rank MARL algorithms using Melting Pot's social-interaction test suite
+  - Extend Melting Pot with a custom substrate for a new social dilemma
