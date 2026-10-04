@@ -1,0 +1,28 @@
+name: TF-Agents
+description: TF-Agents is a TensorFlow library for reinforcement learning and contextual bandits. It provides modular agents, policies, replay buffers, and drivers so teams can implement DQN, PPO, SAC, DDPG, and bandit algorithms with tested TensorFlow components.
+tagline: TensorFlow library for RL agents and contextual bandits
+
+github_url: https://github.com/tensorflow/agents
+website_url: https://www.tensorflow.org/agents
+docs_url: https://www.tensorflow.org/agents
+
+category: Agents
+tags: [python, tensorflow, reinforcement-learning, bandits, dqn, ppo, google]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install tf-agents
+
+problem_solved: |
+  Wiring a TensorFlow RL loop means rebuilding policies, replay, and
+  drivers for every algorithm. TF-Agents packages those as modular
+  components with DQN, PPO, SAC, DDPG, TD3, and a bandits suite, so
+  teams can train and deploy agents without assembling the plumbing
+  from notebooks.
+
+use_cases:
+  - Train a DQN agent on CartPole with TF-Agents drivers and replay buffers
+  - Implement a contextual bandit for recommendation using TF-Agents bandit agents
+  - Fine-tune PPO or SAC on a continuous-control environment in TensorFlow
+  - Swap a custom policy network into an existing TF-Agents agent without rewriting the trainer

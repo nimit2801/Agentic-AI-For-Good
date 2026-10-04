@@ -1,0 +1,27 @@
+name: dm-tree
+description: dm-tree is DeepMind's C++-backed library for nested Python data structures. It flattens and maps over trees of lists, tuples, and dicts the way JAX tree_util does, so ML code can transform nested tensors without hand-written recursion.
+tagline: Nested data-structure ops for ML pipelines
+
+github_url: https://github.com/google-deepmind/tree
+docs_url: https://tree.readthedocs.io
+
+category: Dev Tools
+tags: [python, nested-data, jax, tensorflow, deepmind, utilities]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install dm-tree
+
+problem_solved: |
+  Model state, replay batches, and pytrees are nested, but Python's
+  map only walks flat sequences. dm-tree flattens and maps over
+  nested lists, tuples, and dicts with a fast C++ core, so trainers
+  can transform leaves while preserving structure without recursive
+  helpers in every project.
+
+use_cases:
+  - Flatten a nested replay-buffer batch into a list of tensors for a loss
+  - Map a function over every leaf of a nested parameter pytree
+  - Convert between nested dicts and flat lists when crossing a C++ boundary
+  - Share tree.map_structure helpers across TensorFlow and JAX training code

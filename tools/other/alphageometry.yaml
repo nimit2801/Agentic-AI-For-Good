@@ -1,0 +1,24 @@
+name: AlphaGeometry
+description: AlphaGeometry is DeepMind's neuro-symbolic geometry theorem prover from the Nature 2024 paper. It pairs a language model that proposes constructions with a symbolic deduction engine so it can solve Olympiad geometry problems without human proof demonstrations.
+tagline: Neuro-symbolic Olympiad geometry theorem prover
+
+github_url: https://github.com/google-deepmind/alphageometry
+
+category: Other
+tags: [python, theorem-proving, geometry, neuro-symbolic, deepmind, research]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Automated geometry proving either needs human proof traces or fails
+  on Olympiad-hard constructions. AlphaGeometry trains a language
+  model to propose auxiliary points and a symbolic DDAR engine to
+  close proofs, reproducing IMO-level geometry results without
+  human demonstration data.
+
+use_cases:
+  - Reproduce AlphaGeometry's IMO geometry proofs from the public checkpoint
+  - Run the DDAR symbolic solver on a custom Euclidean geometry problem
+  - Study neuro-symbolic search by swapping the language-model proposer
+  - Benchmark a new geometry dataset against AlphaGeometry's deduction rules
