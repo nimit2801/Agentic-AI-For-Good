@@ -1,0 +1,26 @@
+name: ViZDoom
+description: ViZDoom is a Farama reinforcement learning platform based on Doom. It exposes visual observations, custom scenarios, and a Gymnasium wrapper so agents can learn navigation, combat, and multi-agent play from pixels in a fast 1993-era engine.
+tagline: Doom-based reinforcement learning environments from pixels
+
+github_url: https://github.com/Farama-Foundation/ViZDoom
+website_url: https://vizdoom.farama.org
+docs_url: https://vizdoom.farama.org
+install_command: pip install vizdoom
+
+category: Agents
+tags: [python, reinforcement-learning, gymnasium, vizdoom, pixels, farama, simulation]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Pixel-based RL needs a fast 3D world with custom rewards, but modern game
+  engines are slow to reset and hard to script. ViZDoom runs Doom scenarios
+  with API-level control of observations, buttons, and maps so researchers can
+  train visual agents without waiting on a heavyweight simulator.
+
+use_cases:
+  - Train a pixel-based DQN agent on a built-in ViZDoom combat or navigation scenario
+  - Wrap ViZDoom with Gymnasium and plug it into Stable Baselines3 or Tianshou
+  - Design a custom scenario with scripted rewards for multi-agent deathmatch research
+  - Benchmark sample-efficient visual RL algorithms on a cheap, deterministic 3D env

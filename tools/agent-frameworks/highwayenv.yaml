@@ -1,0 +1,26 @@
+name: HighwayEnv
+description: HighwayEnv is a Farama collection of Gymnasium environments for autonomous driving and tactical decision-making. It simulates highway, merge, roundabout, and intersection scenes so RL agents can learn lane changes, merging, and collision avoidance without a full driving stack.
+tagline: Gymnasium environments for autonomous driving research
+
+github_url: https://github.com/Farama-Foundation/HighwayEnv
+website_url: https://highway-env.farama.org
+docs_url: https://highway-env.farama.org
+install_command: pip install highway-env
+
+category: Agents
+tags: [python, gymnasium, reinforcement-learning, autonomous-driving, simulation, farama]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Full driving simulators are heavy for tactical RL, so researchers cannot
+  iterate on lane-change and merge policies quickly. HighwayEnv gives compact
+  Gymnasium scenes for highways, roundabouts, and intersections so agents can
+  practice tactical driving decisions without spinning up CARLA or a game engine.
+
+use_cases:
+  - Train a DQN or PPO agent on highway-v0 to learn lane changes among other vehicles
+  - Benchmark merge and roundabout policies before moving to a high-fidelity driving simulator
+  - Prototype collision-avoidance rewards on intersection-v0 with Gymnasium wrappers
+  - Teach multi-agent driving tactics by placing several HighwayEnv vehicles in one scene
