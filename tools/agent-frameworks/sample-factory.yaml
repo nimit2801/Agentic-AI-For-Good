@@ -1,0 +1,26 @@
+name: Sample Factory
+description: Sample Factory is a high-throughput PyTorch library for synchronous and asynchronous reinforcement learning. It scales PPO-style training across many workers so researchers can collect millions of environment steps per second on CPU-heavy simulators like VizDoom and Isaac Gym.
+tagline: High-throughput synchronous and asynchronous reinforcement learning
+
+github_url: https://github.com/alex-petrenko/sample-factory
+website_url: https://samplefactory.dev
+docs_url: https://www.samplefactory.dev
+install_command: pip install sample-factory
+
+category: Agents
+tags: [python, pytorch, reinforcement-learning, ppo, distributed, high-throughput]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Standard RL trainers bottleneck on sampling, so experiments on fast
+  simulators still wait on a single process. Sample Factory runs synchronous
+  and asynchronous PPO at high throughput across many workers, letting teams
+  collect millions of steps per second without rewriting the algorithm.
+
+use_cases:
+  - Train high-throughput PPO on VizDoom or Isaac Gym with many parallel workers
+  - Compare synchronous versus asynchronous sample collection on the same policy
+  - Scale a custom Gymnasium environment to millions of steps without a custom distributed trainer
+  - Reproduce sample-efficient versus sample-hungry RL baselines with a shared fast collector
