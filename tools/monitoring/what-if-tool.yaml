@@ -1,0 +1,29 @@
+name: What-If Tool
+description: |-
+  The What-If Tool (WIT) is a visual plugin for TensorBoard, Jupyter, and Colab that lets you inspect black-box classification and regression models. Run inference on a dataset, edit examples, and compare performance and fairness across subsets without writing extra code.
+tagline: Visual what-if analysis for trained ML models
+
+github_url: https://github.com/PAIR-code/what-if-tool
+website_url: https://pair-code.github.io/what-if-tool
+docs_url: https://pair-code.github.io/what-if-tool/
+
+install_command: pip install witwidget
+
+category: Monitoring
+tags: [tensorflow, tensorboard, fairness, interpretability, jupyter, visualization, python]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  After a model is trained, it is hard to see how individual features, counterfactuals, or
+  subgroups change predictions without writing custom analysis code. The What-If Tool loads a
+  trained classifier or regressor, runs inference on a dataset, and lets you edit examples,
+  compare slices, and inspect fairness metrics in TensorBoard or a notebook.
+
+use_cases:
+  - Explore how flipping a feature on a census example changes a salary classifier's prediction
+  - Compare model performance and fairness metrics across demographic slices of an evaluation set
+  - Edit images or tabular examples in a notebook and immediately re-run inference
+  - Visualize attribution values alongside predictions for a regression or classification model
+  - Demo a trained TensorFlow Estimator to non-engineers through TensorBoard without extra code
