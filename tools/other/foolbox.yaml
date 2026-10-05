@@ -1,0 +1,29 @@
+name: Foolbox
+description: |-
+  Foolbox is a Python library for running adversarial attacks against neural networks in PyTorch, TensorFlow, and JAX. Built on EagerPy, it provides gradient-based and decision-based attacks with native performance and real batch support.
+tagline: Native adversarial attacks for PyTorch, TensorFlow, and JAX
+
+github_url: https://github.com/bethgelab/foolbox
+website_url: https://foolbox.jonasrauber.de
+docs_url: https://foolbox.readthedocs.io/en/stable/
+
+install_command: pip install foolbox
+
+category: Other
+tags: [adversarial, robustness, pytorch, tensorflow, jax, security, python]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Robustness evaluation often means rewriting attacks for each framework, which is slow and easy
+  to get wrong. Foolbox wraps PyTorch, TensorFlow, and JAX models behind one API, runs
+  state-of-the-art gradient and decision-based attacks natively, and reports success across
+  epsilon values so teams can measure how easily a model is fooled.
+
+use_cases:
+  - Run L-inf PGD against a PyTorch ResNet and plot attack success across a range of epsilons
+  - Compare gradient-based and decision-based attacks on the same TensorFlow or JAX model
+  - Benchmark model robustness without rewriting attack code when switching ML frameworks
+  - Generate adversarial examples in batch for robustness training or evaluation datasets
+  - Wrap an existing model with Foolbox bounds and evaluate it in a few lines of Python

@@ -1,0 +1,29 @@
+name: TensorFlow Data Validation
+description: |-
+  TensorFlow Data Validation (TFDV) explores and validates machine learning data at scale. It computes statistics, infers a schema, and flags anomalies such as missing features, type mismatches, and drift between training and serving data.
+tagline: Schema-aware validation for ML training data
+
+github_url: https://github.com/tensorflow/data-validation
+website_url: https://www.tensorflow.org/tfx/data_validation
+docs_url: https://www.tensorflow.org/tfx/data_validation/get_started
+
+install_command: pip install tensorflow-data-validation
+
+category: Data
+tags: [tensorflow, data-validation, schema, tfx, apache-beam, statistics, python]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Silent data issues such as missing features, unexpected categories, or train-serving skew break
+  models long before metrics drop in production. TFDV computes scalable statistics, generates a
+  schema of expected types and ranges, and surfaces anomalies so data scientists can catch bad
+  batches before they enter training or serving.
+
+use_cases:
+  - Generate a data schema from a training set and fail a pipeline when new batches violate it
+  - Compare training and serving statistics to detect feature drift before retraining
+  - Visualize feature distributions with Facets to inspect skew, missingness, and outliers
+  - Scale data statistics over large datasets using Apache Beam in local mode or Cloud Dataflow
+  - Catch type mismatches, out-of-range values, and unexpected categorical values in TFX pipelines
