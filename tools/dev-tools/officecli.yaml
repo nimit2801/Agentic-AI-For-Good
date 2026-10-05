@@ -1,0 +1,26 @@
+name: OfficeCLI
+description: OfficeCLI is an open-source CLI for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. It ships as a single binary with no Microsoft Office install, exposing a document DOM so agents can create and modify Office files from the terminal.
+tagline: Agent-native CLI for Word, Excel, and PowerPoint files
+
+github_url: https://github.com/iOfficeAI/OfficeCLI
+website_url: https://officecli.ai
+docs_url: https://officecli.ai
+install_command: brew install officecli
+
+category: Dev Tools
+tags: [cli, agents, office, word, excel, powerpoint, documents]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Agents that need to produce Word, Excel, or PowerPoint files usually require
+  a full Office install or fragile COM automation. OfficeCLI is a single binary
+  with a document DOM so coding agents can create, read, and edit those files
+  without Microsoft Office on the machine.
+
+use_cases:
+  - Generate an editable PowerPoint or Word file from an agent session without installing Office
+  - Read and update Excel workbooks from a CLI skill in Claude Code or Cursor
+  - Automate report production by composing DOCX and XLSX files in CI
+  - Install the OfficeCLI skill so an agent learns document DOM commands automatically
