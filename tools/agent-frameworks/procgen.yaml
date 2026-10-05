@@ -1,0 +1,23 @@
+name: Procgen
+description: Procgen is OpenAI's benchmark of procedurally generated game-like Gym environments. Sixteen 2D games randomize levels so RL agents must generalize beyond memorized maps, measuring robustness rather than overfitting to a fixed layout.
+tagline: Procedurally generated game environments for RL generalization
+
+github_url: https://github.com/openai/procgen
+website_url: https://openai.com/index/procgen-benchmark
+docs_url: https://github.com/openai/procgen
+install_command: pip install procgen
+
+category: Agents
+tags: [python, reinforcement-learning, gym, procgen, generalization, openai]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Fixed-level RL games let agents memorize maps instead of learning transferable skills, so reported scores overstate generalization. Procgen randomizes CoinRun, Maze, BossFight, and related games at every episode so researchers can measure whether a policy actually generalizes to unseen levels.
+
+use_cases:
+  - Benchmark PPO or IMPALA on Procgen easy and hard generalization splits
+  - Test whether an exploration method transfers across procedurally generated mazes
+  - Train a pixel-based agent that must handle new CoinRun or StarPilot levels
+  - Compare sample efficiency of RL algorithms on 16 shared game-like environments

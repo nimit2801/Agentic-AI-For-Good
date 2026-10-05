@@ -1,0 +1,23 @@
+name: OpenViking
+description: OpenViking is an open-source context database for AI agents that unifies knowledge, memory, and skills as a browsable viking:// filesystem. Agents search directory-scoped context, inspect generated summaries, and retrieve RAG evidence without a black-box vector store.
+tagline: Context database that unifies agent memory, knowledge, and skills
+
+github_url: https://github.com/volcengine/OpenViking
+website_url: https://openviking.ai
+docs_url: https://docs.openviking.ai
+install_command: pip install openviking
+
+category: RAG
+tags: [python, rag, agent-memory, context, filesystem, knowledge, mcp]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Agent memory is usually a black box of embeddings you cannot inspect or scope. OpenViking stores knowledge, memories, and skills as a virtual filesystem with directory-aware search and layered summaries so agents retrieve the right subtree, and humans can read or edit what was stored.
+
+use_cases:
+  - Give Claude Code, Cursor, or Hermes long-term memory via OpenViking MCP
+  - Index a repo as viking:// resources and search a project subtree, not the whole store
+  - Compile sessions into inspectable Markdown memories and knowledge pages
+  - Run directory-aware RAG so agents read L0/L1 summaries before loading full docs

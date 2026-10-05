@@ -1,0 +1,23 @@
+name: EnvPool
+description: EnvPool is a C++ batched environment pool for high-performance reinforcement learning. It vectorizes Atari, MuJoCo, Procgen, and other sims with Gymnasium and dm_env APIs, reaching roughly 1M Atari frames per second on large CPU hosts.
+tagline: High-performance C++ vectorized environments for reinforcement learning
+
+github_url: https://github.com/sail-sg/envpool
+website_url: https://envpool.readthedocs.io
+docs_url: https://envpool.readthedocs.io
+install_command: pip install envpool
+
+category: Agents
+tags: [python, cpp, reinforcement-learning, vectorized, gymnasium, atari, mujoco]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Python subprocess vector envs waste CPU on serialization and process overhead, so large-scale RL training is bottlenecked by environment steps. EnvPool runs a C++ thread-pool of batched envs with Gymnasium-compatible APIs so PPO and SAC trainers collect millions of frames per second without rewriting the algorithm.
+
+use_cases:
+  - Speed up Atari PPO training by replacing gym.vector with EnvPool batched envs
+  - Run MuJoCo or DeepMind Control rollouts at millions of steps per second on CPU
+  - Plug EnvPool into Stable-Baselines3, CleanRL, Tianshou, or ACME trainers
+  - Add a custom C++ env to the pool when Python wrappers are too slow
