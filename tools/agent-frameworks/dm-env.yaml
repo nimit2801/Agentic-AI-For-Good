@@ -1,0 +1,28 @@
+name: dm-env
+description: |-
+  dm-env is DeepMind's Python interface for reinforcement learning environments. It defines Environment, TimeStep, and specs so agents can consume a consistent observation, reward, discount, and action contract across research environments.
+tagline: Shared Python API for reinforcement learning environments
+
+github_url: https://github.com/google-deepmind/dm_env
+docs_url: https://github.com/google-deepmind/dm_env/blob/master/docs/index.md
+
+install_command: pip install dm-env
+
+category: Agents
+tags: [reinforcement-learning, deepmind, python, environments, agents, api]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  RL environments each invent their own reset, step, and observation shapes, so agents cannot
+  be reused across labs or simulators. dm-env standardizes the contract with Environment,
+  TimeStep, and typed specs, plus test utilities that check implementations, so research code
+  can target one API instead of wrapping every simulator.
+
+use_cases:
+  - Wrap a custom simulator so DeepMind-style agents can train against a standard TimeStep
+  - Share observation, action, reward, and discount specs across multiple research environments
+  - Test that a new environment implementation conforms to the dm-env contract
+  - Port an agent from DeepMind Lab or Lab2D to another simulator that speaks dm-env
+  - Prototype an RL loop in Python without depending on a single environment library

@@ -1,0 +1,27 @@
+name: StableHLO
+description: |-
+  StableHLO is a versioned operation set for high-level ML compute, used as a portability layer between frameworks such as TensorFlow, JAX, and PyTorch and compilers such as XLA and IREE. It serializes programs as MLIR bytecode with backward and forward compatibility.
+tagline: Versioned HLO opset between ML frameworks and compilers
+
+github_url: https://github.com/openxla/stablehlo
+website_url: https://openxla.org/stablehlo
+docs_url: https://openxla.org/stablehlo
+
+category: Dev Tools
+tags: [mlir, xla, compilers, jax, tensorflow, pytorch, openxla]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Each ML framework emits a different IR, so compilers and runtimes must reimplement frontend
+  support and break when ops change. StableHLO defines a shared, versioned HLO opset with MLIR
+  bytecode serialization and compatibility guarantees, so a JAX, TensorFlow, or PyTorch program
+  can target XLA, IREE, or on-device runtimes without rewriting the graph.
+
+use_cases:
+  - Export a JAX or TensorFlow program to StableHLO for consumption by XLA or IREE
+  - Version ML compiler IR so framework upgrades do not immediately break downstream compilers
+  - Lower PyTorch models through a StableHLO path for portable compilation
+  - Target on-device runtimes such as Google AI Edge from a single StableHLO artifact
+  - Inspect and test HLO programs against the StableHLO specification in C++ or Python

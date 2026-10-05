@@ -1,0 +1,28 @@
+name: Lab2D
+description: |-
+  DeepMind Lab2D is a C++ and Lua system for building 2D grid-world environments for agent research. Worlds are defined with text maps and Lua behaviour, and agents interact through the Python dm_env API or a C API, including multi-agent setups.
+tagline: Fast 2D grid worlds for multi-agent research
+
+github_url: https://github.com/google-deepmind/lab2d
+docs_url: https://github.com/google-deepmind/lab2d
+
+install_command: pip install dmlab2d
+
+category: Agents
+tags: [reinforcement-learning, deepmind, multi-agent, simulation, python, lua]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Building custom 2D research environments is usually slow and hard to share, especially when
+  multiple agents must interact. Lab2D lets researchers define grid layouts as text maps and
+  behaviour in Lua, then expose the world through dm_env or a C API so Python agents can train
+  at high throughput without writing a new engine.
+
+use_cases:
+  - Create a multi-agent cleanup or gathering grid world with a text map and Lua rules
+  - Train Python agents against Lab2D through the dm_env API used by other DeepMind environments
+  - Prototype social dilemma experiments where several agents share one 2D map
+  - Run a random agent against a named level to preview environment behaviour before training
+  - Use the C API when embedding Lab2D in a non-Python agent runtime
