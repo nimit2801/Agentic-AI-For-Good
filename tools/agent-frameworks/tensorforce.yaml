@@ -1,0 +1,25 @@
+name: Tensorforce
+description: Tensorforce is a TensorFlow library for applied reinforcement learning. It emphasizes a configurable agent API, so practitioners can assemble DQN, PPO, and policy-gradient agents from modules instead of copying research code into production systems.
+tagline: TensorFlow library for applied reinforcement learning
+
+github_url: https://github.com/tensorforce/tensorforce
+docs_url: https://tensorforce.readthedocs.io
+install_command: pip install tensorforce
+
+category: Agents
+tags: [python, tensorflow, reinforcement-learning, ppo, dqn, applied-rl]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Applied RL in TensorFlow often means gluing paper implementations that are
+  not configurable for production environments. Tensorforce exposes modular
+  agents, memories, and execution modes so teams can specify DQN or PPO in
+  config and run them against real control or recommendation tasks.
+
+use_cases:
+  - Configure a PPO or DQN agent in Tensorforce and train it on a Gymnasium env
+  - Deploy an applied RL agent where TensorFlow serving is already the stack
+  - Swap replay, exploration, and network modules without rewriting the trainer
+  - Prototype a production control policy with a config-driven TensorFlow agent

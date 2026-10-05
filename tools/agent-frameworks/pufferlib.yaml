@@ -1,0 +1,26 @@
+name: PufferLib
+description: PufferLib is a high-performance reinforcement learning library that vectorizes environments and training so agents learn faster on CPU-heavy sims. It wraps Gymnasium, NetHack, Pokemon, and custom envs with optimized batching aimed at millions of steps per second.
+tagline: High-performance vectorized reinforcement learning
+
+github_url: https://github.com/PufferAI/PufferLib
+website_url: https://puffer.ai
+docs_url: https://puffer.ai
+install_command: pip install pufferlib
+
+category: Agents
+tags: [python, reinforcement-learning, vectorized, gymnasium, high-throughput, puffer]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Many RL environments cannot keep a GPU busy because stepping is slow and
+  poorly batched. PufferLib vectorizes env execution and training so researchers
+  can run millions of steps per second on CPU-heavy games and custom sims
+  without writing a one-off collector.
+
+use_cases:
+  - Train a fast PPO agent on NetHack, Pokemon, or another PufferLib-wrapped env
+  - Vectorize a custom Gymnasium environment to raise sample throughput
+  - Benchmark environment wrappers against EnvPool or Sample Factory collectors
+  - Prototype a game-playing agent where simulation speed is the bottleneck
