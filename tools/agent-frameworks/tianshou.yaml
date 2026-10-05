@@ -1,0 +1,27 @@
+name: Tianshou
+description: Tianshou is a PyTorch reinforcement learning library with a Pythonic API for building deep RL agents. It ships DQN, PPO, SAC, TD3, CQL, and many other algorithms plus replay buffers so researchers can train and compare agents without rewriting infrastructure.
+tagline: PyTorch reinforcement learning platform with a Pythonic API
+
+github_url: https://github.com/thu-ml/tianshou
+website_url: https://tianshou.org
+docs_url: https://tianshou.org
+install_command: pip install tianshou
+
+category: Agents
+tags: [python, pytorch, reinforcement-learning, agents, dqn, ppo, sac]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Many RL libraries bury algorithms behind nested classes or slow TensorFlow
+  stacks, so researchers rewrite trainers instead of comparing policies.
+  Tianshou exposes a Pythonic PyTorch API with production-quality algorithm
+  implementations, prioritized and HER replay, and imitation-learning methods
+  so you can assemble agents from documented building blocks.
+
+use_cases:
+  - Train PPO, SAC, or TD3 on a Gymnasium control environment with Tianshou's trainer loop
+  - Compare Rainbow DQN, C51, and IQN on Atari without rewriting the replay and collection stack
+  - Run offline RL with CQL, BCQ, or TD3+BC on a logged dataset when online interaction is unavailable
+  - Add hindsight experience replay or an intrinsic curiosity module to an existing Tianshou agent

@@ -1,0 +1,27 @@
+name: Minari
+description: Minari is Farama's dataset API for offline reinforcement learning. It hosts Gymnasium-compatible datasets on Hugging Face Hub with CLI download, episode sampling, filtering, and dataset generation utilities so researchers can train and benchmark offline RL algorithms on a shared format.
+tagline: Standard dataset API for offline reinforcement learning
+
+github_url: https://github.com/Farama-Foundation/Minari
+website_url: https://minari.farama.org
+docs_url: https://minari.farama.org
+install_command: pip install minari
+
+category: Agents
+tags: [python, offline-rl, datasets, gymnasium, farama, huggingface, reinforcement-learning]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Offline RL experiments stall when every paper ships a different dataset
+  format, download path, and episode schema. Minari standardizes Gymnasium
+  trajectories with a CLI, Hugging Face hosting, and sampling utilities so
+  researchers can share D4RL-style datasets and train algorithms against
+  the same episodes instead of rewriting loaders.
+
+use_cases:
+  - Download a D4RL door or hopper dataset with the Minari CLI and train an offline RL algorithm
+  - Sample and filter episodes from a hosted dataset before fitting CQL or IQL
+  - Generate a custom Gymnasium dataset from your own policy rollouts in the Minari format
+  - Share an offline RL benchmark on Hugging Face Hub that other Minari users can download in one command
