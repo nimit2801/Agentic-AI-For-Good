@@ -1,0 +1,29 @@
+name: TensorFlow Decision Forests
+description: |-
+  TensorFlow Decision Forests (TF-DF) trains, serves, and interprets decision forest models such as Random Forests and Gradient Boosted Trees in TensorFlow. It covers classification, regression, and ranking, and shares models with Yggdrasil Decision Forests.
+tagline: Decision forests as first-class TensorFlow models
+
+github_url: https://github.com/tensorflow/decision-forests
+website_url: https://www.tensorflow.org/decision_forests
+docs_url: https://www.tensorflow.org/decision_forests/tutorials
+
+install_command: pip install tensorflow-decision-forests
+
+category: Fine-tuning
+tags: [tensorflow, decision-trees, random-forest, gradient-boosting, keras, python]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Tabular problems often beat deep nets with random forests or GBTs, but those models sit outside
+  the TensorFlow training and serving stack. TF-DF trains Keras decision forest models on TensorFlow
+  datasets, exports SavedModels, and stays compatible with Yggdrasil so the same forest can be
+  inspected, served, or converted without leaving the TF ecosystem.
+
+use_cases:
+  - Train a Keras RandomForestModel on a pandas table converted to a tf.data dataset
+  - Mix gradient boosted trees with neural layers in a TensorFlow ranking or classification pipeline
+  - Export a TF-DF SavedModel that serving stacks already know how to load
+  - Inspect feature importance and tree structure after fitting a forest on tabular data
+  - Convert between TF-DF and Yggdrasil Decision Forests models for C++ or CLI inference
