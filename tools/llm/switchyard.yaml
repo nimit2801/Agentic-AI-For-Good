@@ -1,0 +1,22 @@
+name: Switchyard
+description: NVIDIA NeMo Switchyard routes each LLM request across models and providers while keeping OpenAI and Anthropic API compatibility. It balances cost, latency, and task success with Auto, Task, Execution, and Composite routing algorithms.
+tagline: Route LLM traffic across models without changing client APIs
+
+github_url: https://github.com/NVIDIA-NeMo/Switchyard
+website_url: https://github.com/NVIDIA-NeMo/Switchyard
+docs_url: https://github.com/NVIDIA-NeMo/Switchyard
+
+category: LLM
+tags: [llm, routing, nvidia, nemo, openai-compatible, anthropic, gateway]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Sending every agent turn to the strongest model wastes money, while a cheap default fails hard tasks. Switchyard inspects the request or recent tool activity and picks a model from your pool so gateways can mix efficient and capable models without rewriting clients.
+
+use_cases:
+  - Route coding-agent turns to a cheap model and escalate when tools fail
+  - Plug Switchyard into LiteLLM or NeMo Relay with OpenAI-compatible clients
+  - Benchmark Auto vs Execution routing against a single-model cost baseline
+  - Embed Switchyard routing in a custom Rust or Python agent harness

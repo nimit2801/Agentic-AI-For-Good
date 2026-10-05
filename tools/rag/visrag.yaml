@@ -1,0 +1,22 @@
+name: VisRAG
+description: VisRAG is a parsing-free RAG pipeline from OpenBMB that embeds documents as images with vision-language models. EVisRAG adds evidence-guided multi-image reasoning so retrieval keeps layout, charts, and figures instead of losing them in OCR.
+tagline: Parsing-free visual RAG with vision-language models
+
+github_url: https://github.com/OpenBMB/VisRAG
+website_url: https://huggingface.co/collections/openbmb/visrag-6717bbfb471bb018a49f1c69
+docs_url: https://github.com/OpenBMB/VisRAG
+
+category: RAG
+tags: [python, rag, vision, vlm, multimodal, documents, openbmb]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Text RAG parses PDFs into tokens and drops charts, layout, and figures that often hold the answer. VisRAG embeds pages as images with a VLM retriever and generator so visual evidence survives retrieval, and EVisRAG reasons over multiple retrieved page images.
+
+use_cases:
+  - Retrieve PDF pages as images for chart-heavy or scanned document QA
+  - Benchmark visual document retrieval with VisRAG-Ret on SlideVQA or ChartQA
+  - Run EVisRAG multi-image reasoning when answers span several document pages
+  - Replace OCR-then-chunk pipelines with a VLM embedding of the original page
