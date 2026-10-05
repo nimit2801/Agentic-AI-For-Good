@@ -1,0 +1,29 @@
+name: TensorFlow Compression
+description: |-
+  TensorFlow Compression (TFC) adds learned data compression to TensorFlow models. It ships range coding ops, entropy models, and Keras layers so training can optimize rate and distortion together for images, features, and other tensors.
+tagline: Learned compression layers and entropy models for TensorFlow
+
+github_url: https://github.com/tensorflow/compression
+website_url: https://www.tensorflow.org/api_docs/python/tfc
+docs_url: https://www.tensorflow.org/tutorials/generative/data_compression
+
+install_command: pip install tensorflow-compression
+
+category: Data
+tags: [tensorflow, compression, entropy-coding, keras, images, python]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Storing or transmitting tensors from an ML pipeline wastes bits unless you hand-design codecs
+  that then diverge from the model. TFC lets the training loop jointly optimize rate and
+  distortion with range coding ops and entropy models, so representations of images or features
+  stay small while remaining differentiable.
+
+use_cases:
+  - Train a lossy image compression model with TFC entropy layers and range coding ops
+  - Compress intermediate features in a multi-stage pipeline without a separate codec
+  - Experiment with nonlinear transform coding using Keras layers from the TFC library
+  - Encode integer alphabets with overflow-capable range coding in a TensorFlow graph
+  - Follow the TensorFlow data compression tutorial to add a rate term to an existing model

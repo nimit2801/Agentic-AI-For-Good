@@ -1,0 +1,29 @@
+name: TensorFlow Model Optimization
+description: |-
+  The TensorFlow Model Optimization Toolkit (TFMOT) quantizes, prunes, and clusters Keras and TensorFlow models for smaller, faster deployment. It exposes stable Python APIs for post-training and training-aware techniques aimed at mobile and edge hardware.
+tagline: Quantization, pruning, and clustering for TensorFlow models
+
+github_url: https://github.com/tensorflow/model-optimization
+website_url: https://www.tensorflow.org/model_optimization
+docs_url: https://www.tensorflow.org/model_optimization/guide
+
+install_command: pip install tensorflow-model-optimization
+
+category: Fine-tuning
+tags: [tensorflow, quantization, pruning, keras, compression, edge, python]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Full-precision TensorFlow models are often too large or too slow for phones and edge devices.
+  TFMOT adds Keras-friendly quantization, sparsity pruning, and weight clustering so teams can
+  shrink models during or after training without rewriting the architecture, then export a
+  smaller graph for TensorFlow Lite or similar runtimes.
+
+use_cases:
+  - Apply quantization-aware training to a Keras classifier before converting it to TensorFlow Lite
+  - Prune sparse weights during fine-tuning to cut model size for mobile inference
+  - Cluster weights to compress a deployed model with limited accuracy loss
+  - Combine pruning and quantization in a deployment pipeline for on-device vision models
+  - Follow tensorflow.org tutorials to optimize an existing SavedModel for edge hardware

@@ -1,0 +1,29 @@
+name: Neural Structured Learning
+description: |-
+  Neural Structured Learning (NSL) trains TensorFlow models with structured signals such as graphs or adversarial perturbations, in addition to feature inputs. Keras APIs and graph-building tools support semi-supervised learning and more robust models.
+tagline: Train neural nets with graphs and adversarial structure
+
+github_url: https://github.com/tensorflow/neural-structured-learning
+website_url: https://www.tensorflow.org/neural_structured_learning
+docs_url: https://www.tensorflow.org/neural_structured_learning/framework
+
+install_command: pip install neural-structured-learning
+
+category: Fine-tuning
+tags: [tensorflow, graphs, adversarial, keras, semi-supervised, python]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  When labels are scarce, related examples still share structure that a plain supervised loss
+  ignores, and undefended models are easy to fool with tiny perturbations. NSL injects graph
+  neighbors or adversarial examples into Keras training so models use unlabeled relations and
+  become harder to attack, without changing the serving graph.
+
+use_cases:
+  - Train a classifier with a neighbor graph so unlabeled similar examples improve accuracy
+  - Add adversarial perturbations during Keras training to harden a model against attacks
+  - Build training graphs from similarity scores when only a small labeled set exists
+  - Wrap an existing feed-forward, CNN, or RNN model with NSL Keras APIs
+  - Keep inference unchanged while using structured signals only in the training loop
