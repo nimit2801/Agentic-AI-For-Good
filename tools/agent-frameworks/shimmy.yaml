@@ -1,0 +1,26 @@
+name: Shimmy
+description: Shimmy is Farama's set of Gymnasium and PettingZoo bindings for popular RL environments that live outside the Farama API. It wraps DeepMind Control, OpenSpiel, DMLab, and similar suites so trainers that expect Gymnasium can run those envs without custom adapters.
+tagline: Gymnasium and PettingZoo bindings for external RL environments
+
+github_url: https://github.com/Farama-Foundation/Shimmy
+website_url: https://shimmy.farama.org
+docs_url: https://shimmy.farama.org
+install_command: pip install shimmy
+
+category: Agents
+tags: [python, gymnasium, pettingzoo, farama, dm-control, openspiel, wrappers]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Many classic RL suites still use one-off APIs, so a Gymnasium trainer cannot
+  load dm_control or OpenSpiel without a hand-written wrapper. Shimmy provides
+  those bindings so researchers can keep a single trainer loop across Farama
+  and external environments.
+
+use_cases:
+  - Wrap DeepMind Control Suite tasks as Gymnasium envs for Stable Baselines3
+  - Run OpenSpiel games through PettingZoo bindings without a custom adapter
+  - Plug DMLab or other legacy suites into a Gymnasium-only training pipeline
+  - Standardize environment APIs when comparing algorithms across labs
