@@ -1,0 +1,29 @@
+name: TensorFlow Transform
+description: |-
+  TensorFlow Transform (tf.Transform) preprocesses ML data with full-pass operations such as vocabulary generation, normalization, and bucketization. It exports a TensorFlow graph so the same transforms run at training and serving time.
+tagline: Full-pass preprocessing that trains and serves identically
+
+github_url: https://github.com/tensorflow/transform
+website_url: https://www.tensorflow.org/tfx/transform
+docs_url: https://www.tensorflow.org/tfx/transform/get_started
+
+install_command: pip install tensorflow-transform
+
+category: Data
+tags: [tensorflow, preprocessing, tfx, apache-beam, feature-engineering, python]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Feature transforms written once for training often diverge from serving code, causing silent
+  train-serving skew. tf.Transform runs full-pass operations such as mean-std normalization and
+  vocabulary building over the dataset, then exports a TensorFlow graph used in both training and
+  serving so the same transformations apply in both stages.
+
+use_cases:
+  - Build a vocabulary over all training strings and reuse the same mapping at serving time
+  - Normalize numeric features with dataset-wide mean and standard deviation without leaking test statistics
+  - Bucketize continuous features from the observed distribution and apply identical buckets in production
+  - Run Apache Beam preprocessing at scale, then export a tf.Graph for TensorFlow Serving
+  - Keep TFX training and serving pipelines aligned by sharing one tf.Transform artifact

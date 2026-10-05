@@ -1,0 +1,29 @@
+name: TensorFlow Model Analysis
+description: |-
+  TensorFlow Model Analysis (TFMA) evaluates TensorFlow models on large datasets in a distributed way, using the same metrics defined in training. Metrics can be computed over data slices and visualized in Jupyter notebooks or Kubeflow Pipelines.
+tagline: Slice-aware evaluation for TensorFlow models
+
+github_url: https://github.com/tensorflow/model-analysis
+website_url: https://www.tensorflow.org/tfx/model_analysis
+docs_url: https://www.tensorflow.org/tfx/model_analysis/get_started
+
+install_command: pip install tensorflow-model-analysis
+
+category: Monitoring
+tags: [tensorflow, evaluation, metrics, tfx, apache-beam, jupyter, python]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Aggregate accuracy hides failures on important slices such as a rare class, a region, or a
+  demographic group. TFMA runs the same training metrics over large evaluation sets with Apache
+  Beam, then breaks results down by slice so teams can see where a model actually degrades before
+  it ships.
+
+use_cases:
+  - Compute fairness and accuracy metrics per slice of a production TensorFlow model on millions of examples
+  - Compare candidate models against a baseline using the same trainer-defined metrics in a TFX pipeline
+  - Visualize sliced evaluation results in a Jupyter notebook before promoting a model to serving
+  - Run distributed model evaluation on Apache Beam or Cloud Dataflow when the eval set no longer fits on one machine
+  - Embed TFMA viewers in Kubeflow Pipelines so reviewers can inspect slice metrics without leaving the run UI

@@ -1,0 +1,29 @@
+name: CleverHans
+description: |-
+  CleverHans is a Python library for constructing adversarial attacks, building defenses, and benchmarking machine learning models against adversarial examples. Version 4 supports JAX, PyTorch, and TensorFlow 2 with reference implementations of FGSM, PGD, and related attacks.
+tagline: Reference adversarial attacks for JAX, PyTorch, and TF2
+
+github_url: https://github.com/cleverhans-lab/cleverhans
+website_url: https://cleverhans.io
+docs_url: https://github.com/cleverhans-lab/cleverhans
+
+install_command: pip install cleverhans
+
+category: Other
+tags: [adversarial, robustness, pytorch, jax, tensorflow, security, python]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Models that score well on a test set can still fail on tiny, targeted perturbations, and teams
+  lack a shared, versioned way to measure that gap. CleverHans provides reference implementations
+  of adversarial attacks and defenses across JAX, PyTorch, and TensorFlow 2 so researchers can
+  benchmark robustness instead of reimplementing FGSM and PGD for every paper.
+
+use_cases:
+  - Benchmark a PyTorch image classifier against FGSM and PGD with a pinned CleverHans release
+  - Train models with adversarial examples to measure how much robustness training actually buys
+  - Compare attack success rates across JAX, PyTorch, and TensorFlow 2 using the same library
+  - Reproduce published robustness numbers with a versioned attack configuration
+  - Prototype a new defense and evaluate it against the library's reference attack implementations
