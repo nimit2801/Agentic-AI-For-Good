@@ -1,0 +1,29 @@
+name: TensorFlow Quantum
+description: |-
+  TensorFlow Quantum (TFQ) is a Python framework for hybrid quantum-classical machine learning. It interleaves Cirq circuits and qsim simulation with TensorFlow Keras, exposing quantum ops as first-class TensorFlow operations with automatic differentiation.
+tagline: Hybrid quantum-classical ML on TensorFlow and Cirq
+
+github_url: https://github.com/tensorflow/quantum
+website_url: https://www.tensorflow.org/quantum
+docs_url: https://www.tensorflow.org/quantum/overview
+
+install_command: pip install tensorflow-quantum
+
+category: Other
+tags: [tensorflow, quantum, cirq, keras, simulation, python]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Quantum ML research needs to train models that mix Cirq circuits with classical TensorFlow
+  layers, including gradients through simulation of millions of moderately sized circuits. TFQ
+  turns Cirq programs into TensorFlow ops, supports parameter-shift and adjoint gradients, and
+  uses Keras so hybrid models train like any other TF graph.
+
+use_cases:
+  - Train a hybrid Keras model that classifies quantum data with a parameterized Cirq circuit
+  - Differentiate through qsim circuit simulation using parameter-shift or adjoint methods
+  - Batch-simulate many moderately sized circuits inside a TensorFlow training loop
+  - Prototype quantum algorithms that reuse TensorFlow optimizers and TensorBoard
+  - Combine Cirq circuit construction with Keras layers for research on quantum datasets

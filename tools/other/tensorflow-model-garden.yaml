@@ -1,0 +1,29 @@
+name: TensorFlow Model Garden
+description: |-
+  TensorFlow Model Garden is Google's collection of state-of-the-art model implementations, training recipes, and the Orbit training-loop library. The official package ships vision, NLP, and other SOTA models maintained against current TensorFlow 2 APIs.
+tagline: Official SOTA TensorFlow model implementations and recipes
+
+github_url: https://github.com/tensorflow/models
+website_url: https://www.tensorflow.org/tfmodels
+docs_url: https://www.tensorflow.org/tfmodels
+
+install_command: pip install tf-models-official
+
+category: Other
+tags: [tensorflow, models, nlp, vision, orbit, keras, python]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Reimplementing SOTA vision or NLP models in TensorFlow is slow and easy to get wrong relative
+  to papers. Model Garden provides officially maintained implementations, training configs, and
+  Orbit loops that follow current TF 2 APIs so teams can fine-tune or reproduce published models
+  instead of rewriting them from scratch.
+
+use_cases:
+  - Fine-tune an official NLP or vision model from tf-models-official on a custom dataset
+  - Use Orbit to write a distributed TensorFlow training loop that runs on GPU or TPU
+  - Reproduce a published TensorFlow 2 SOTA baseline with the official training recipe
+  - Start a research model from the research/ directory instead of a blank Keras project
+  - Import modeling libraries from the pip package without cloning the full models repo

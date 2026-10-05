@@ -1,0 +1,26 @@
+name: TensorFlow Lite Micro
+description: |-
+  TensorFlow Lite for Microcontrollers (TFLM) runs machine learning models on DSPs, microcontrollers, and other devices with very little memory. It is a port of TensorFlow Lite aimed at Cortex-M, RISC-V, Hexagon, Xtensa, Arduino, and similar targets.
+tagline: On-device ML for microcontrollers and DSPs
+
+github_url: https://github.com/tensorflow/tflite-micro
+website_url: https://www.tensorflow.org/lite/microcontrollers
+docs_url: https://www.tensorflow.org/lite/microcontrollers
+
+category: Dev Tools
+tags: [tensorflow, tflite, microcontrollers, embedded, edge, c++]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Phones and Linux boards can run TensorFlow Lite, but microcontrollers often have kilobytes of
+  RAM and no OS. TFLM strips the runtime down so a converted TFLite model can run on DSPs and
+  MCUs, with ports for Cortex-M, RISC-V, Hexagon, Xtensa, and Arduino-class boards.
+
+use_cases:
+  - Deploy a keyword-spotting or gesture model on an Arduino-class microcontroller
+  - Run inference on a Cortex-M or RISC-V MCU without a full operating system
+  - Port TFLM to a custom DSP or Hexagon target for always-on sensing
+  - Convert a TensorFlow Lite model for extremely memory-constrained embedded hardware
+  - Evaluate community TFLM examples on Coral Dev Board Micro or similar kits

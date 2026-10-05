@@ -1,0 +1,29 @@
+name: TensorFlow GNN
+description: |-
+  TensorFlow GNN (TF-GNN) builds graph neural networks on TensorFlow. It provides GraphTensor for heterogeneous graphs, a Beam sampler for subgraphs from huge databases, ready-to-use Keras layers, and a high-level training runner.
+tagline: Heterogeneous graph neural networks on TensorFlow
+
+github_url: https://github.com/tensorflow/gnn
+website_url: https://www.tensorflow.org/gnn
+docs_url: https://github.com/tensorflow/gnn/blob/master/tensorflow_gnn/docs/guide/overview.md
+
+install_command: pip install tensorflow-gnn
+
+category: Other
+tags: [tensorflow, gnn, graphs, keras, apache-beam, python]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Real graphs are huge and heterogeneous, with many node and edge types, so teams cannot train a
+  GNN on the full database in one shot. TF-GNN represents those schemas as GraphTensor, samples
+  training subgraphs with Apache Beam, and supplies Keras layers and a runner so models train on
+  TensorFlow without a custom graph pipeline.
+
+use_cases:
+  - Classify molecules on the MUTAG dataset using a TF-GNN Keras model in Colab
+  - Sample heterogeneous subgraphs from OGBN-MAG with the Beam sampler for distributed training
+  - Predict shortest-path edges with an encoder-process-decoder Graph Network
+  - Train a node classifier on a production knowledge graph that has multiple edge types
+  - Orchestrate GNN training with the TF-GNN runner instead of hand-rolled tf.distribute loops
