@@ -1,0 +1,26 @@
+name: DeepMind Lab
+description: |-
+  DeepMind Lab is a 3D learning environment based on Quake III Arena via ioquake3. It offers navigation and puzzle-solving tasks for deep reinforcement learning research, with Python agents, human play, and customizable level scripts.
+tagline: 3D navigation and puzzle environments for RL research
+
+github_url: https://github.com/google-deepmind/lab
+docs_url: https://github.com/google-deepmind/lab/blob/master/docs/users/build.md
+
+category: Agents
+tags: [reinforcement-learning, deepmind, 3d, simulation, python, bazel]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Deep RL needs visually rich 3D tasks that are harder than grid worlds, but building a custom
+  engine is expensive. DeepMind Lab wraps Quake III into a research testbed with navigation
+  mazes, laser tag, and puzzle levels so agents can be trained and evaluated in a shared 3D
+  environment with scripted maps.
+
+use_cases:
+  - Train a deep RL agent on 3D navigation mazes with first-person observations
+  - Evaluate exploration and memory on laser-tag and puzzle levels from the Lab suite
+  - Run a random Python agent with Bazel to smoke-test a custom level script
+  - Play a level as a human to inspect observations before attaching a learning agent
+  - Benchmark navigation policies in a shared DeepMind Lab map used across papers
