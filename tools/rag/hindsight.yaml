@@ -1,0 +1,23 @@
+name: Hindsight
+description: Hindsight is an agent memory system that learns over time instead of only recalling chat history. It retain/recall/reflects observations into mental models and knowledge pages, with self-hosted and cloud options and state-of-the-art LongMemEval scores.
+tagline: Agent memory that learns, not just remembers
+
+github_url: https://github.com/vectorize-io/hindsight
+website_url: https://hindsight.vectorize.io
+docs_url: https://hindsight.vectorize.io
+install_command: pip install hindsight-api
+
+category: RAG
+tags: [python, agent-memory, rag, long-term-memory, vectorize, mcp]
+pricing: freemium
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Most agent memory stacks dump transcripts into RAG and never form durable beliefs, so agents repeat themselves and fail long-horizon tasks. Hindsight retain/recall/reflects facts into mental models so agents learn user preferences and world knowledge across sessions, not just retrieve last week's chat.
+
+use_cases:
+  - Add retain/recall memory to an OpenAI or Anthropic agent with a two-line wrapper
+  - Personalize a chatbot with per-user memory banks and metadata filters
+  - Self-host Hindsight with Docker or PostgreSQL for production agent memory
+  - Benchmark long-term agent memory against LongMemEval with Hindsight Cloud or OSS

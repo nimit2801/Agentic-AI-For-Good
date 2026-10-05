@@ -1,0 +1,23 @@
+name: Unity ML-Agents
+description: Unity ML-Agents is an open-source toolkit that turns Unity games and simulations into training environments for deep reinforcement learning and imitation learning. Agents learn in 3D scenes with Python trainers, sensors, and Gymnasium-style interfaces.
+tagline: Train RL and imitation learning agents inside Unity simulations
+
+github_url: https://github.com/Unity-Technologies/ml-agents
+website_url: https://unity.com/products/machine-learning-agents
+docs_url: https://unity-technologies.github.io/ml-agents
+install_command: pip install mlagents
+
+category: Agents
+tags: [python, unity, reinforcement-learning, imitation-learning, simulation, games]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Training agents in photorealistic 3D worlds usually means writing a custom simulator and a separate RL stack. Unity ML-Agents connects Unity scenes to Python trainers so game NPCs, robots, and embodied agents can learn with PPO, SAC, or imitation learning without leaving the Unity editor.
+
+use_cases:
+  - Train a game NPC or camera agent with PPO inside a Unity scene
+  - Collect demonstrations in Unity and train an imitation-learning policy
+  - Prototype robotics or warehouse sims in Unity then train with mlagents-learn
+  - Export a trained behavior for runtime inference in a shipped Unity game
