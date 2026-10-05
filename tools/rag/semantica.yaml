@@ -1,0 +1,23 @@
+name: Semantica
+description: Semantica is graph-native infrastructure for context and accountable AI. It turns enterprise data into a queryable knowledge graph with ontologies, deterministic reasoning, and W3C provenance so agents can explain why a decision was made.
+tagline: Graph-native context layer for accountable AI systems
+
+github_url: https://github.com/semantica-agi/semantica
+website_url: https://getsemantica.ai
+docs_url: https://docs.getsemantica.ai
+install_command: pip install semantica
+
+category: RAG
+tags: [python, knowledge-graph, rag, provenance, ontology, reasoning, enterprise]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Vector RAG returns similar chunks with no structure, relationships, or audit trail, so regulated teams cannot answer why an agent decided something. Semantica builds a context graph with OWL/SHACL ontologies, Datalog reasoning, and PROV-O provenance so retrieval, policy, and decisions are inspectable.
+
+use_cases:
+  - Build a governed knowledge graph from Databricks, Snowflake, or SAP tables
+  - Trace an agent decision with W3C PROV-O provenance for a compliance review
+  - Run SPARQL or Datalog reasoning over enterprise entities instead of embedding search
+  - Give CrewAI or LangChain agents a structured context graph instead of a flat vector index
