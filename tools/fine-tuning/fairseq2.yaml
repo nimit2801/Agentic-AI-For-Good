@@ -1,0 +1,23 @@
+name: Fairseq2
+description: Fairseq2 is FAIR's sequence modeling toolkit for training and evaluating modern speech, translation, and language models. It succeeds fairseq with a PyTorch-first recipe system, model hubs, and documented CUDA and CPU variants.
+tagline: FAIR sequence modeling toolkit for training modern models
+
+github_url: https://github.com/facebookresearch/fairseq2
+website_url: https://facebookresearch.github.io/fairseq2
+docs_url: https://facebookresearch.github.io/fairseq2
+install_command: pip install fairseq2
+
+category: Fine-tuning
+tags: [python, pytorch, fairseq, speech, translation, training, meta]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  The original fairseq stack aged out of current PyTorch and hardware, so FAIR research recipes were hard to reproduce. Fairseq2 rebuilds sequence modeling with a cleaner recipe API, published model cards, and installable CUDA/CPU wheels so teams can train and evaluate speech and LLM workloads.
+
+use_cases:
+  - Train or evaluate a FAIR speech or translation recipe with pip-installed fairseq2
+  - Load published Fairseq2 model cards for inference without rebuilding fairseq
+  - Prototype a custom sequence model on top of Fairseq2's PyTorch recipe system
+  - Reproduce Meta FAIR training setups on CUDA or CPU wheels
