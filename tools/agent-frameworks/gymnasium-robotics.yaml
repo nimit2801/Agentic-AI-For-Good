@@ -1,0 +1,26 @@
+name: Gymnasium Robotics
+description: Gymnasium Robotics is Farama's collection of MuJoCo robotic simulation environments for reinforcement learning. It includes Fetch, Shadow Hand, and Maze tasks with Gymnasium APIs so researchers can train manipulation and navigation policies on standard robotics benchmarks.
+tagline: MuJoCo robotics environments for Gymnasium
+
+github_url: https://github.com/Farama-Foundation/Gymnasium-Robotics
+website_url: https://robotics.farama.org
+docs_url: https://robotics.farama.org
+install_command: pip install gymnasium-robotics
+
+category: Agents
+tags: [python, mujoco, robotics, gymnasium, farama, manipulation]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Robotics RL papers need shared Fetch and Shadow Hand tasks, but those used
+  to live in unmaintained Gym robotics extras. Gymnasium Robotics restores
+  those MuJoCo environments with a current Gymnasium API so teams can train
+  manipulation policies on the same benchmarks.
+
+use_cases:
+  - Train a FetchReach or FetchPickAndPlace policy with HER or SAC
+  - Benchmark Shadow Hand manipulation against published robotics RL results
+  - Run maze navigation tasks as a sparse-reward robotics baseline
+  - Compare multi-goal robotic algorithms on Farama's maintained env suite

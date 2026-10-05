@@ -1,0 +1,26 @@
+name: Arcade Learning Environment
+description: The Arcade Learning Environment is Farama's framework for building AI agents on Atari 2600 games. It exposes RAM and pixel observations plus a Gymnasium interface so researchers can train and benchmark visual RL algorithms on the classic ALE suite.
+tagline: Atari 2600 environments for visual reinforcement learning
+
+github_url: https://github.com/Farama-Foundation/Arcade-Learning-Environment
+website_url: https://ale.farama.org
+docs_url: https://ale.farama.org
+install_command: pip install ale-py
+
+category: Agents
+tags: [python, atari, reinforcement-learning, gymnasium, farama, pixels]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Visual RL needs a shared Atari benchmark, but raw Stella emulation is painful
+  to wire into modern trainers. ALE gives RAM and pixel observations with a
+  Gymnasium API so papers can compare DQN-family agents on the same 2600 games
+  without each lab packaging the emulator.
+
+use_cases:
+  - Train Rainbow DQN or PPO on Breakout, Pong, or Montezuma's Revenge via ale-py
+  - Benchmark sample-efficient visual RL algorithms on the standard ALE suite
+  - Use RAM observations when pixel-based training is too slow for a prototype
+  - Plug Atari into Stable Baselines3 or Tianshou through the Gymnasium wrapper

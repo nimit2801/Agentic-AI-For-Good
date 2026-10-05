@@ -1,0 +1,26 @@
+name: MO-Gymnasium
+description: MO-Gymnasium is Farama's suite of multi-objective Gymnasium environments for reinforcement learning. Each env returns a vector of rewards so researchers can train and evaluate policies that trade off competing objectives instead of a single scalar score.
+tagline: Multi-objective Gymnasium environments for RL
+
+github_url: https://github.com/Farama-Foundation/MO-Gymnasium
+website_url: https://mo-gymnasium.farama.org
+docs_url: https://mo-gymnasium.farama.org
+install_command: pip install mo-gymnasium
+
+category: Agents
+tags: [python, gymnasium, multi-objective, reinforcement-learning, farama]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Standard Gymnasium envs collapse every tradeoff into one reward, which hides
+  safety, cost, and performance conflicts. MO-Gymnasium returns vector rewards
+  so researchers can study Pareto policies and multi-objective algorithms on
+  maintained Farama environments.
+
+use_cases:
+  - Train a multi-objective PPO agent that trades speed against energy on an MO env
+  - Evaluate Pareto fronts instead of a single scalar score on Deep Sea Treasure
+  - Benchmark MORL algorithms on Farama's maintained multi-objective suite
+  - Convert a scalar Gymnasium task into a vector-reward experiment with wrappers
