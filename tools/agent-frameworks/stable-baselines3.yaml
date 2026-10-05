@@ -1,0 +1,23 @@
+name: Stable Baselines3
+description: Stable Baselines3 is a PyTorch library of reliable reinforcement learning algorithm implementations. It provides documented PPO, SAC, TD3, DQN, and A2C baselines with callbacks, wrappers, and Gymnasium integration for research and production RL.
+tagline: Reliable PyTorch implementations of reinforcement learning algorithms
+
+github_url: https://github.com/DLR-RM/stable-baselines3
+website_url: https://stable-baselines3.readthedocs.io
+docs_url: https://stable-baselines3.readthedocs.io
+install_command: pip install stable-baselines3
+
+category: Agents
+tags: [python, pytorch, reinforcement-learning, ppo, sac, baselines, gymnasium]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Research RL code is often brittle, undocumented, and hard to reproduce, so teams rewrite PPO or SAC from scratch. Stable Baselines3 ships battle-tested algorithm implementations with a consistent API, logging, and Gymnasium support so you can train, evaluate, and ship policies without reimplementing the stack.
+
+use_cases:
+  - Train a PPO or SAC policy on a Gymnasium robotics or control environment
+  - Fine-tune a DQN agent on Atari with callbacks for checkpoints and evaluation
+  - Prototype a custom reward or observation wrapper on top of a documented SB3 algorithm
+  - Compare baseline RL algorithms on the same env before writing a custom trainer

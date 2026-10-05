@@ -1,0 +1,23 @@
+name: TorchRL
+description: TorchRL is a modular, primitive-first PyTorch library for reinforcement learning. It provides composable tensors, environments, replay buffers, and trainers so you can assemble custom RL pipelines without leaving the PyTorch ecosystem.
+tagline: Modular PyTorch library for reinforcement learning primitives
+
+github_url: https://github.com/pytorch/rl
+website_url: https://pytorch.org/rl
+docs_url: https://pytorch.org/rl
+install_command: pip install torchrl
+
+category: Agents
+tags: [python, pytorch, reinforcement-learning, tensors, replay-buffer, modular]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Custom RL research often fights PyTorch data layouts, environment wrappers, and replay plumbing that do not compose. TorchRL gives TensorDict-based primitives for envs, collectors, and buffers so you can build single-agent, multi-agent, or offline pipelines that stay native to PyTorch.
+
+use_cases:
+  - Build a custom PPO or SAC trainer from TorchRL collectors, losses, and replay buffers
+  - Run multi-agent RL with TorchRL's MARL environment and tensordict APIs
+  - Train offline RL policies from datasets using TorchRL replay and loss modules
+  - Integrate Gymnasium, DMControl, or custom sims into a PyTorch-native RL loop
