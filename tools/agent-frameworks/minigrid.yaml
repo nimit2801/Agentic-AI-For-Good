@@ -1,0 +1,23 @@
+name: MiniGrid
+description: MiniGrid provides simple, easily configurable grid-world environments for reinforcement learning. The Farama-maintained Gymnasium environments cover navigation, memory, and sparse-reward tasks used to prototype and benchmark RL agents.
+tagline: Configurable grid-world environments for reinforcement learning
+
+github_url: https://github.com/Farama-Foundation/Minigrid
+website_url: https://minigrid.farama.org
+docs_url: https://minigrid.farama.org
+install_command: pip install minigrid
+
+category: Agents
+tags: [python, reinforcement-learning, gymnasium, grid-world, environments, farama]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Full physics sims are too heavy when you need to debug exploration, memory, or sparse rewards. MiniGrid ships lightweight grid worlds with a Gymnasium API so researchers can iterate on algorithms, curriculum, and partial observability without waiting on expensive simulators.
+
+use_cases:
+  - Prototype a sparse-reward exploration algorithm on MiniGrid navigation tasks
+  - Benchmark memory and partial-observability agents on BabyAI-style missions
+  - Teach RL concepts with configurable grid worlds that run on a laptop
+  - Test curriculum learning by composing MiniGrid rooms, doors, and keys

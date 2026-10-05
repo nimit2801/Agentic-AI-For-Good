@@ -1,0 +1,23 @@
+name: PettingZoo
+description: PettingZoo is a standard Python API for multi-agent reinforcement learning environments, maintained by the Farama Foundation. It ships popular reference environments and utilities so MARL agents can train and evaluate against a shared interface.
+tagline: Standard API for multi-agent reinforcement learning environments
+
+github_url: https://github.com/Farama-Foundation/PettingZoo
+website_url: https://pettingzoo.farama.org
+docs_url: https://pettingzoo.farama.org
+install_command: pip install pettingzoo
+
+category: Agents
+tags: [python, reinforcement-learning, multi-agent, marl, environments, farama]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Multi-agent RL research used to fragment across incompatible environment APIs, so agents trained in one library could not be evaluated in another. PettingZoo standardizes AEC and parallel APIs with maintained reference environments so MARL algorithms, baselines, and simulators share one interface.
+
+use_cases:
+  - Train a multi-agent policy on PettingZoo Atari, MPE, or SISL environments
+  - Wrap a custom multi-agent sim as a PettingZoo AEC or Parallel env for MARL baselines
+  - Benchmark cooperative and competitive agents against maintained reference tasks
+  - Convert Gymnasium single-agent envs into multi-agent setups with PettingZoo wrappers

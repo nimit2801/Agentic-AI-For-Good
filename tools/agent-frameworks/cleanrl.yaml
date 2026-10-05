@@ -1,0 +1,23 @@
+name: CleanRL
+description: CleanRL provides high-quality single-file implementations of deep reinforcement learning algorithms with research-friendly features. Each algorithm lives in one documented file covering PPO, DQN, C51, DDPG, TD3, SAC, and PPG.
+tagline: Single-file deep reinforcement learning algorithm implementations
+
+github_url: https://github.com/vwxyzjn/cleanrl
+website_url: https://docs.cleanrl.dev
+docs_url: https://docs.cleanrl.dev
+install_command: pip install cleanrl
+
+category: Agents
+tags: [python, pytorch, reinforcement-learning, ppo, dqn, research, single-file]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Production RL libraries hide algorithm details behind layers of abstraction, which makes ablation studies and paper reproductions painful. CleanRL keeps each algorithm in one readable file with documented hyperparameters, experiment tracking, and benchmark scores so researchers can inspect, modify, and cite exact implementations.
+
+use_cases:
+  - Reproduce a PPO or SAC paper result from a single documented training script
+  - Ablate an RL algorithm by editing one file instead of tracing a framework
+  - Benchmark DQN, C51, TD3, or PPG against CleanRL's published scores
+  - Teach deep RL by walking students through a complete single-file trainer
