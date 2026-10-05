@@ -1,0 +1,26 @@
+name: Imitation
+description: Imitation is a Center for Human-Compatible AI library of clean PyTorch implementations of imitation and reward learning algorithms. It covers behavioral cloning, GAIL, AIRL, and related methods so researchers can train policies from expert demonstrations instead of sparse rewards.
+tagline: PyTorch imitation and reward learning algorithms
+
+github_url: https://github.com/HumanCompatibleAI/imitation
+website_url: https://imitation.readthedocs.io
+docs_url: https://imitation.readthedocs.io
+install_command: pip install imitation
+
+category: Agents
+tags: [python, pytorch, imitation-learning, gail, airl, behavioral-cloning, reinforcement-learning]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Sparse-reward RL is slow when the only signal is a rare success, and many
+  papers reimplement GAIL or AIRL with incompatible APIs. Imitation ships
+  documented PyTorch algorithms that learn from expert trajectories, so teams
+  can clone demonstrations or recover rewards without rewriting the stack.
+
+use_cases:
+  - Train behavioral cloning on expert Gymnasium rollouts when reward design is hard
+  - Run GAIL or AIRL to recover a reward function from demonstrations
+  - Compare imitation algorithms against PPO on the same environment with shared data
+  - Fine-tune a cloned policy with RL after seeding from a human or scripted expert

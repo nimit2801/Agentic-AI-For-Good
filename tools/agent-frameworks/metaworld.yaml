@@ -1,0 +1,26 @@
+name: Meta-World
+description: Meta-World is a Farama suite of MuJoCo robotic manipulation environments for multi-task and meta reinforcement learning. It includes dozens of tabletop tasks with shared robot morphology so algorithms can be benchmarked on few-shot adaptation across related skills.
+tagline: Multi-task robotic manipulation benchmark for meta-RL
+
+github_url: https://github.com/Farama-Foundation/Metaworld
+website_url: https://metaworld.farama.org
+docs_url: https://metaworld.farama.org
+install_command: pip install metaworld
+
+category: Agents
+tags: [python, mujoco, robotics, meta-rl, multi-task, gymnasium, farama]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Meta-RL papers need many related manipulation tasks with one robot, but
+  assembling that suite by hand is slow and inconsistent. Meta-World ships
+  dozens of Gymnasium tabletop tasks on a shared Sawyer-style morphology so
+  researchers can measure few-shot adaptation instead of building envs.
+
+use_cases:
+  - Benchmark a multi-task SAC agent across Meta-World ML1 or ML10 task splits
+  - Evaluate few-shot meta-RL adaptation from training tasks to held-out MT50 skills
+  - Collect multi-task robotic demonstrations for imitation or offline RL research
+  - Compare single-task PPO against a shared multi-task policy on the same robot
