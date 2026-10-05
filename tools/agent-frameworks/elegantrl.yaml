@@ -1,0 +1,27 @@
+name: ElegantRL
+description: ElegantRL is a massively parallel deep reinforcement learning library from AI4Finance. It uses GPU vectorization to train PPO, SAC, DDPG, and related algorithms at scale, targeting finance and control workloads that need high-throughput policy optimization.
+tagline: Massively parallel deep reinforcement learning on GPUs
+
+github_url: https://github.com/AI4Finance-Foundation/ElegantRL
+website_url: https://ai4finance.org
+docs_url: https://elegantrl.readthedocs.io
+install_command: pip install ElegantRL
+
+category: Agents
+tags: [python, pytorch, reinforcement-learning, gpu, finance, ppo, sac]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Standard RL trainers underuse the GPU because environments and updates run
+  sequentially, so finance and robotics experiments take days. ElegantRL
+  vectorizes environments and learners for massively parallel PPO, SAC, and
+  DDPG training, cutting wall-clock time for large-batch policy optimization
+  without rewriting the algorithm.
+
+use_cases:
+  - Train a PPO or SAC trading agent on vectorized market environments using GPU batching
+  - Scale DDPG or TD3 on continuous-control tasks with ElegantRL's parallel sampler
+  - Prototype a finance RL experiment from the helloworld notebooks before writing a custom env
+  - Compare massively parallel ElegantRL runs against a single-process Stable Baselines3 baseline

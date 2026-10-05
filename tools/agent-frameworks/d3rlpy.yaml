@@ -1,0 +1,27 @@
+name: d3rlpy
+description: d3rlpy is a Python library for offline and online deep reinforcement learning with scikit-learn-style APIs. It implements CQL, BCQ, TD3+BC, and other algorithms so practitioners can train policies from logged datasets when online environment interaction is not feasible.
+tagline: Offline deep reinforcement learning with a scikit-learn-style API
+
+github_url: https://github.com/takuseno/d3rlpy
+website_url: https://takuseno.github.io/d3rlpy
+docs_url: https://d3rlpy.readthedocs.io
+install_command: pip install d3rlpy
+
+category: Agents
+tags: [python, pytorch, offline-rl, reinforcement-learning, cql, bcq, datasets]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Online RL needs live environment interaction, which is unsafe or impossible
+  in robotics, healthcare, and production systems that only have logged data.
+  d3rlpy trains CQL, BCQ, and related offline algorithms from those datasets
+  through a scikit-learn-style fit API, so teams can learn policies without
+  rolling out untrained agents.
+
+use_cases:
+  - Fit Conservative Q-Learning on a D4RL or Minari dataset and evaluate the resulting policy
+  - Train Discrete CQL on Atari replay when you cannot collect new game frames online
+  - Compare online SAC against offline CQL on the same continuous-control task with one API
+  - Prototype an offline RL pipeline on PyBullet hopper data before moving to a production log
