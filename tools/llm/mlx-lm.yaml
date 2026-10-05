@@ -1,0 +1,23 @@
+name: mlx-lm
+description: mlx-lm runs and fine-tunes large language models on Apple silicon with MLX. It loads Hugging Face Hub models, quantizes them, and supports LoRA, full fine-tuning, chat, and distributed inference from a Python API or CLI.
+tagline: Run and fine-tune LLMs on Apple silicon with MLX
+
+github_url: https://github.com/ml-explore/mlx-lm
+website_url: https://github.com/ml-explore/mlx-lm
+docs_url: https://github.com/ml-explore/mlx-lm
+install_command: pip install mlx-lm
+
+category: LLM
+tags: [python, mlx, apple-silicon, llm, quantization, lora, huggingface]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Running open LLMs on a Mac usually means CUDA stacks that do not exist on Apple silicon. mlx-lm generates, chats, quantizes, and LoRA-tunes Hugging Face models with MLX so Mac users can serve and adapt models locally without a GPU server.
+
+use_cases:
+  - Chat with a 4-bit Llama or Mistral model on Apple silicon from the CLI
+  - Quantize a Hugging Face checkpoint and upload it to the MLX Community hub
+  - LoRA fine-tune an MLX model on a Mac without CUDA
+  - Cache a long prompt and reuse it across generate calls for multi-turn chat

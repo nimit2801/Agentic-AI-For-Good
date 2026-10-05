@@ -1,0 +1,22 @@
+name: OpenInstruct
+description: OpenInstruct is AllenAI's open post-training codebase for SFT, DPO, and RLVR on public datasets. It is the stack behind Tulu 3 and OLMo instruct models, with unified data formats, preference tuning, and verifiable-reward RL.
+tagline: AllenAI post-training stack for SFT, DPO, and RLVR
+
+github_url: https://github.com/allenai/open-instruct
+website_url: https://allenai.github.io/open-instruct
+docs_url: https://allenai.github.io/open-instruct
+
+category: Fine-tuning
+tags: [python, sft, dpo, rlvr, tulu, olmo, allenai, post-training]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Open instruction-tuning papers often ship one-off scripts that do not cover SFT, DPO, and RL with verifiable rewards in one repo. OpenInstruct unifies those stages on public data so labs can reproduce Tulu 3 / OLMo instruct recipes instead of stitching trainers together.
+
+use_cases:
+  - Supervised-finetune Llama 3.1 or OLMo on Tulu public instruction mixes
+  - Run DPO preference tuning from OpenInstruct configs on 8 GPUs
+  - Train RLVR with GRPO on code or math verifiable-reward tasks
+  - Reproduce Tulu 3 post-training stages from the published scripts

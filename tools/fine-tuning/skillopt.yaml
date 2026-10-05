@@ -1,0 +1,23 @@
+name: SkillOpt
+description: SkillOpt is Microsoft's text-space optimizer that trains reusable natural-language skills for frozen LLM agents. It edits a skill document from scored rollouts with validation gates and deploys a compact best_skill.md without changing model weights.
+tagline: Train agent skills like neural nets, without touching weights
+
+github_url: https://github.com/microsoft/SkillOpt
+website_url: https://aka.ms/skillopt
+docs_url: https://microsoft.github.io/SkillOpt
+install_command: pip install skillopt
+
+category: Fine-tuning
+tags: [python, agents, skills, microsoft, optimization, frozen-llm]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Agent skills are usually hand-written or one-shot generated, so they do not improve under feedback. SkillOpt treats the skill markdown as trainable state, applies bounded edits from rollouts, and only keeps changes that beat a held-out validation score, with zero extra model calls at deploy time.
+
+use_cases:
+  - Optimize a Claude Code or Codex skill from scored trajectories with a validation gate
+  - Train a reusable best_skill.md that transfers across GPT, Claude, and Qwen agents
+  - Run SkillOpt-Sleep overnight to harvest sessions and consolidate validated skills
+  - Benchmark skill optimization on SearchQA or other SkillOpt environments

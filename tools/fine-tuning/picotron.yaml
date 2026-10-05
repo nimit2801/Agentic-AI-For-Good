@@ -1,0 +1,22 @@
+name: picotron
+description: picotron is Hugging Face's minimal 4D-parallelism trainer for Llama-like models. Data, tensor, pipeline, and context parallel code stays under 300 lines so researchers can learn distributed pre-training without a production Megatron stack.
+tagline: Educational 4D-parallel trainer for Llama-like models
+
+github_url: https://github.com/huggingface/picotron
+website_url: https://github.com/huggingface/picotron
+docs_url: https://github.com/huggingface/picotron
+
+category: Fine-tuning
+tags: [python, pytorch, distributed-training, llama, huggingface, educational]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Production distributed trainers hide data, tensor, pipeline, and context parallel details behind thousands of lines, so students cannot see how 4D parallelism actually works. picotron keeps each parallel mode in a short file so you can pre-train a Llama-like model and read the whole stack.
+
+use_cases:
+  - Teach 4D parallelism by reading picotron's data, tensor, pipeline, and context modules
+  - Pre-train a SmolLM or Llama-2 replica with torchrun on 8 GPUs
+  - Experiment with 1F1B pipeline engines without Megatron complexity
+  - Follow the Picotron tutorial videos while hacking train.py under 300 lines
