@@ -1,0 +1,26 @@
+name: SKRL
+description: SKRL is a modular reinforcement learning library implemented in PyTorch, JAX, and NVIDIA Warp. It supports Gymnasium, Isaac Lab, and MuJoCo Playground so robotics researchers can train PPO, SAC, and related agents across simulators with one API.
+tagline: Modular RL library for PyTorch, JAX, and NVIDIA Warp
+
+github_url: https://github.com/Toni-SM/skrl
+website_url: https://skrl.readthedocs.io
+docs_url: https://skrl.readthedocs.io
+install_command: pip install skrl
+
+category: Agents
+tags: [python, pytorch, jax, warp, isaac-lab, reinforcement-learning, robotics]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Robotics RL stacks often lock you to one simulator and one backend, so moving
+  a PPO agent from Gymnasium to Isaac Lab means a rewrite. SKRL shares trainers
+  across PyTorch, JAX, and Warp with first-class Isaac Lab support so the same
+  agent code can follow the robot into GPU simulation.
+
+use_cases:
+  - Train PPO or SAC on NVIDIA Isaac Lab with SKRL's PyTorch or JAX backend
+  - Run the same SKRL agent on Gymnasium and MuJoCo Playground without a new trainer
+  - Prototype a modular actor-critic stack that you can swap between Warp and PyTorch
+  - Benchmark robotics policies across CPU Gymnasium and GPU Isaac environments

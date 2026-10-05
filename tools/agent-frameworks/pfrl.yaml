@@ -1,0 +1,25 @@
+name: PFRL
+description: PFRL is Preferred Networks' PyTorch library of deep reinforcement learning algorithms. It provides DQN, Rainbow, PPO, SAC, TD3, and related implementations with reproducible examples so researchers can train agents without rewriting trainers from papers.
+tagline: PyTorch deep reinforcement learning library from Preferred Networks
+
+github_url: https://github.com/pfnet/pfrl
+docs_url: https://pfrl.readthedocs.io
+install_command: pip install pfrl
+
+category: Agents
+tags: [python, pytorch, reinforcement-learning, dqn, ppo, sac, preferred-networks]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Paper RL code is often one-off and hard to reuse across DQN, PPO, and SAC
+  experiments. PFRL ships documented PyTorch implementations with a shared
+  agent API and examples so teams can train published algorithms instead of
+  reimplementing each paper's trainer.
+
+use_cases:
+  - Train Rainbow DQN or PPO on Atari using PFRL's documented examples
+  - Swap SAC and TD3 on a continuous-control task with the same agent interface
+  - Reproduce a Preferred Networks baseline before adding a custom network
+  - Teach deep RL by starting from PFRL's algorithm implementations rather than scratch code
