@@ -1,0 +1,25 @@
+name: Zephyr
+description: Zephyr is a scalable, secure RTOS for constrained devices across many CPU architectures. It ships a kernel, device drivers, networking, and a west-based SDK so robotics, IoT, and wearable teams build firmware without a vendor-locked OS.
+tagline: Scalable open-source RTOS for constrained and multi-architecture devices
+
+github_url: https://github.com/zephyrproject-rtos/zephyr
+website_url: https://www.zephyrproject.org
+docs_url: https://docs.zephyrproject.org
+
+category: Other
+tags: [c, rtos, embedded, iot, firmware, robotics, linux-foundation, west]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Embedded products need a small, portable OS with drivers and networking
+  instead of a vendor HAL. Zephyr is a Linux Foundation RTOS with a
+  kernel, device tree, and west workflow so teams ship firmware on many
+  boards without rewriting the stack.
+
+use_cases:
+  - Build IoT firmware with Zephyr networking and device-tree drivers
+  - Run a robotics or wearable MCU app on ARM, RISC-V, or x86
+  - Use west to initialize, build, and flash a multi-repo Zephyr workspace
+  - Add Bluetooth, Thread, or MQTT stacks without a vendor RTOS lock-in
