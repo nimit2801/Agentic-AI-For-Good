@@ -1,0 +1,27 @@
+name: MLForecast
+description: MLForecast is Nixtla's framework for time series forecasting with classical machine learning models. It builds lag and date features, fits sklearn-style estimators locally or on remote clusters, and scales panel forecasts without writing custom feature pipelines.
+tagline: Scalable machine learning forecasts with lag features and sklearn models
+
+github_url: https://github.com/Nixtla/mlforecast
+website_url: https://nixtlaverse.nixtla.io/mlforecast
+docs_url: https://nixtlaverse.nixtla.io/mlforecast
+install_command: pip install mlforecast
+
+category: Data
+tags: [python, time-series, forecasting, machine-learning, sklearn, nixtla, spark]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Gradient boosting and sklearn models forecast well once you engineer
+  lags, rolling stats, and calendar features, but that plumbing does not
+  scale across thousands of series. MLForecast builds those features,
+  fits local or distributed estimators, and produces panel forecasts so
+  teams reuse LightGBM or XGBoost instead of hand-rolled lag pipelines.
+
+use_cases:
+  - Forecast many SKUs with LightGBM or XGBoost on lag and date features
+  - Scale panel forecasting to Spark or Dask clusters without rewriting feature code
+  - Combine exogenous regressors with recursive or direct multi-step strategies
+  - Benchmark ML models against StatsForecast and NeuralForecast in the Nixtla stack

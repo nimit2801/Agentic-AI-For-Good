@@ -1,0 +1,26 @@
+name: Nav2
+description: Nav2 is the ROS 2 navigation framework for mobile robots. It plans, controls, and recovers through a behavior-tree stack with plugins for planners, controllers, costmaps, and localization so robots move from maps to goals in warehouses, campuses, and indoor spaces.
+tagline: ROS 2 navigation stack with planners, controllers, and behavior trees
+
+github_url: https://github.com/ros-navigation/navigation2
+website_url: https://nav2.org
+docs_url: https://docs.nav2.org
+
+category: Other
+tags: [ros2, robotics, navigation, path-planning, localization, behavior-trees, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Mobile robots need more than a single planner. They need costmaps,
+  controllers, recovery behaviors, and localization that work together
+  at runtime. Nav2 is the ROS 2 navigation system with a behavior-tree
+  supervisor and plugin interfaces so teams ship indoor and warehouse
+  autonomy without assembling a stack from scratch.
+
+use_cases:
+  - Navigate a warehouse AMR from a map to dynamic goals with recovery behaviors
+  - Swap planners and controllers through Nav2 plugins without rewriting the stack
+  - Run SLAM, localization, and costmaps alongside ROS 2 robot drivers
+  - Simulate Nav2 in Gazebo or Isaac Sim before deploying on hardware
