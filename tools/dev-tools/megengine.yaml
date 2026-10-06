@@ -1,0 +1,26 @@
+name: MegEngine
+description: MegEngine is Megvii's deep learning framework for training and inference on one graph. It supports auto-diff, quantization, and low-memory GPU training, then deploys the same model to x86, Arm, CUDA, and mobile with a Python API.
+tagline: Train and deploy models on one low-memory DL framework
+
+github_url: https://github.com/MegEngine/MegEngine
+website_url: https://megengine.org.cn/
+docs_url: https://www.megengine.org.cn/doc/stable/en/index.html
+install_command: pip install megengine
+
+category: Dev Tools
+tags: [python, deep-learning, training, inference, cuda, quantization, megvii]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Teams often train in one framework and rewrite for mobile or Arm
+  inference. MegEngine keeps training, quantization, and deployment
+  on one graph, cuts GPU memory with DTR, and runs the same model
+  on x86, CUDA, Arm, and mobile without a separate export stack.
+
+use_cases:
+  - Train vision models with automatic differentiation on CUDA GPUs
+  - Quantize a trained graph and deploy it to Arm or mobile devices
+  - Cut GPU memory during training with dynamic tensor rematerialization
+  - Serve the same MegEngine model on Linux, Windows, iOS, or Android

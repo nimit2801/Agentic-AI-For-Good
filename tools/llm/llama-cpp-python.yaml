@@ -1,0 +1,25 @@
+name: llama-cpp-python
+description: llama-cpp-python provides Python bindings for llama.cpp with a high-level Llama API and an OpenAI-compatible server. It loads GGUF models for chat, embeddings, function calling, and multimodal inference without wrapping the C++ CLI.
+tagline: Python bindings and OpenAI-style API for llama.cpp
+
+github_url: https://github.com/abetlen/llama-cpp-python
+docs_url: https://llama-cpp-python.readthedocs.io
+install_command: pip install llama-cpp-python
+
+category: LLM
+tags: [python, llm, llama-cpp, gguf, local-llm, openai-compatible, inference]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  llama.cpp is a C++ runtime, so Python apps must shell out or
+  rewrite bindings. llama-cpp-python exposes the C API plus chat
+  completions, embeddings, and an OpenAI-compatible server so
+  local GGUF models drop into existing Python LLM code.
+
+use_cases:
+  - Load a GGUF model in Python and run chat completions locally
+  - Serve llama.cpp behind an OpenAI-compatible HTTP API
+  - Call tools and JSON-mode completions from Python agents
+  - Run multimodal GGUF models with image-aware chat handlers
