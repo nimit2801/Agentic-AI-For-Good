@@ -1,0 +1,25 @@
+name: D4RL
+description: D4RL is Farama's collection of reference environments and datasets for offline reinforcement learning. Each Gym task ships a fixed trajectory dataset so algorithms can be compared without collecting new online rollouts.
+tagline: Offline RL datasets and reference environments
+
+github_url: https://github.com/Farama-Foundation/D4RL
+docs_url: https://github.com/Farama-Foundation/D4RL
+install_command: pip install d4rl
+
+category: Agents
+tags: [python, offline-rl, datasets, gym, mujoco, farama]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Offline RL needs fixed datasets, but labs used to collect their own
+  rollouts and could not compare algorithms. D4RL attaches a standard
+  dataset to each Gym task via env.get_dataset so CQL, IQL, and similar
+  methods train on the same observations and actions.
+
+use_cases:
+  - Train an offline RL algorithm on D4RL MuJoCo locomotion datasets
+  - Compare CQL or IQL against published D4RL scores without new environment interaction
+  - Load observations, actions, and terminals from env.get_dataset for custom learners
+  - Evaluate offline policies on Maze2D, AntMaze, or Adroit manipulation tasks

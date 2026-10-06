@@ -1,0 +1,25 @@
+name: MushroomRL
+description: MushroomRL is a Python library of reinforcement learning algorithms and interfaces. It covers classic and deep methods on Gym, MuJoCo, Atari, and PyBullet so researchers can prototype agents without assembling each algorithm from scratch.
+tagline: Python library of classic and deep RL algorithms
+
+github_url: https://github.com/MushroomRL/mushroom-rl
+docs_url: https://github.com/MushroomRL/mushroom-rl
+install_command: pip install mushroom-rl
+
+category: Agents
+tags: [python, pytorch, reinforcement-learning, dqn, sac, mujoco]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  RL research often reimplements DQN, DDPG, SAC, or TRPO against slightly
+  different env wrappers. MushroomRL provides a shared agent and MDP API
+  with those algorithms on Gym, MuJoCo, Atari, and PyBullet so experiments
+  can start from maintained implementations.
+
+use_cases:
+  - Train DQN on Atari or SAC on MuJoCo using MushroomRL agents
+  - Prototype a new policy by swapping the approximator while keeping the MDP interface
+  - Compare classic Q-learning and deep RL algorithms in one Python library
+  - Run PyBullet or OpenAI Gym tasks without rewriting replay and training loops

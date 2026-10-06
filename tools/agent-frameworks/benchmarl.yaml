@@ -1,0 +1,26 @@
+name: BenchMARL
+description: BenchMARL is Meta's library for benchmarking multi-agent reinforcement learning. It standardizes algorithms, tasks, and models on TorchRL so teams can compare MARL methods with reproducible configs instead of one-off scripts.
+tagline: Standardized benchmarking library for multi-agent RL
+
+github_url: https://github.com/facebookresearch/BenchMARL
+website_url: https://benchmarl.readthedocs.io
+docs_url: https://benchmarl.readthedocs.io
+install_command: pip install benchmarl
+
+category: Agents
+tags: [python, pytorch, marl, multi-agent, benchmark, torchrl]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  MARL papers often mix algorithm code with environment wiring, so results
+  cannot be compared fairly. BenchMARL separates algorithms, tasks, and
+  models on TorchRL with shared configs so researchers can swap one axis
+  and keep the rest of the experiment identical.
+
+use_cases:
+  - Compare MAPPO, QMIX, or IPPO on the same VMAS or PettingZoo task
+  - Run a reproducible MARL sweep from BenchMARL configs instead of custom scripts
+  - Benchmark a new multi-agent algorithm against TorchRL baselines
+  - Standardize logging and seeds across MARL experiments for a paper
