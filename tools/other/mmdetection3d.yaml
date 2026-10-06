@@ -1,0 +1,26 @@
+name: MMDetection3D
+description: MMDetection3D is OpenMMLab's toolbox for 3D object detection. It trains indoor and outdoor detectors on LiDAR, camera, and multi-modal inputs with shared configs so autonomous-driving and robotics teams share one 3D detection stack.
+tagline: OpenMMLab toolbox for indoor and outdoor 3D detection
+
+github_url: https://github.com/open-mmlab/mmdetection3d
+website_url: https://mmdetection3d.readthedocs.io/en/latest/
+docs_url: https://mmdetection3d.readthedocs.io/en/latest/
+install_command: pip install mmdet3d
+
+category: Other
+tags: [python, computer-vision, 3d-detection, lidar, autonomous-driving, openmmlab]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Indoor and outdoor 3D detectors usually live in separate codebases.
+  MMDetection3D unifies LiDAR, camera, and multi-modal 3D detection
+  on the OpenMMLab config system so driving and robotics teams
+  train and compare models without stitching research repos.
+
+use_cases:
+  - Train LiDAR 3D detectors on KITTI, nuScenes, or Waymo
+  - Run indoor 3D detection on ScanNet or SUN RGB-D scenes
+  - Fuse camera and LiDAR inputs for multi-modal 3D detection
+  - Benchmark OpenMMLab 3D configs against custom datasets

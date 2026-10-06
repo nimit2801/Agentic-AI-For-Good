@@ -1,0 +1,24 @@
+name: OpenPCDet
+description: OpenPCDet is OpenMMLab's toolbox for LiDAR-based 3D object detection. It implements SECOND, PointRCNN, PV-RCNN, and related detectors with shared data pipelines so autonomous-driving teams train point-cloud models from one codebase.
+tagline: LiDAR 3D object detection toolbox from OpenMMLab
+
+github_url: https://github.com/open-mmlab/OpenPCDet
+docs_url: https://github.com/open-mmlab/OpenPCDet
+
+category: Other
+tags: [python, computer-vision, 3d-detection, lidar, point-cloud, autonomous-driving]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  LiDAR detectors like SECOND and PV-RCNN ship as one-off papers.
+  OpenPCDet puts those models on shared point-cloud pipelines and
+  KITTI or Waymo loaders so driving teams train and compare 3D
+  detectors without reimplementing each paper from scratch.
+
+use_cases:
+  - Train SECOND, PointRCNN, or PV-RCNN on KITTI LiDAR
+  - Benchmark point-cloud detectors on Waymo or nuScenes
+  - Swap backbone configs for custom autonomous-driving datasets
+  - Export OpenPCDet models for onboard 3D perception stacks

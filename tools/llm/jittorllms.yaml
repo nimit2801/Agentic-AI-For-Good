@@ -1,0 +1,24 @@
+name: JittorLLMs
+description: JittorLLMs is Tsinghua's LLM inference library on Jittor. It targets low-resource Chinese-friendly serving with a portable Python API so teams run large language models without a heavy CUDA-only stack.
+tagline: Low-resource LLM inference library on Jittor
+
+github_url: https://github.com/Jittor/JittorLLMs
+website_url: https://cg.cs.tsinghua.edu.cn/jittor/
+
+category: LLM
+tags: [python, llm, inference, jittor, chinese, serving]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Running open LLMs often needs high VRAM and CUDA-only runtimes.
+  JittorLLMs serves models on the Jittor JIT stack with lower
+  hardware requirements and stronger Chinese support so teams
+  infer locally without a full PyTorch serving stack.
+
+use_cases:
+  - Run open Chinese LLMs locally with a Jittor inference API
+  - Serve language models on machines that cannot host vLLM
+  - Port Jittor research models into a shared LLM runtime
+  - Benchmark low-resource inference against CUDA-only servers
