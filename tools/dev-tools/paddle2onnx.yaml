@@ -1,0 +1,25 @@
+name: Paddle2ONNX
+description: Paddle2ONNX converts PaddlePaddle models to ONNX so the same graph can run on TensorRT, OpenVINO, MNN, TNN, NCNN, and other ONNX runtimes without rewriting inference code.
+tagline: Export PaddlePaddle models to ONNX for multi-runtime deployment
+
+github_url: https://github.com/PaddlePaddle/Paddle2ONNX
+docs_url: https://github.com/PaddlePaddle/Paddle2ONNX/blob/develop/README.md
+install_command: pip install paddle2onnx
+
+category: Dev Tools
+tags: [python, onnx, paddlepaddle, model-export, tensorrt, openvino, inference]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  PaddlePaddle checkpoints do not run natively on TensorRT, OpenVINO, or
+  mobile ONNX engines. Paddle2ONNX exports the graph and weights to ONNX
+  so CV and NLP teams deploy the same model across those runtimes without
+  a custom converter per backend.
+
+use_cases:
+  - Convert a PaddleDetection or PaddleOCR model to ONNX for TensorRT serving
+  - Export PaddlePaddle graphs to OpenVINO for CPU inference
+  - Move a Paddle model onto MNN, TNN, or NCNN for mobile deployment
+  - Check and optimize exported ONNX graphs before production serving

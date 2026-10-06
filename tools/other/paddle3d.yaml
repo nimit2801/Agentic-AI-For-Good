@@ -1,0 +1,25 @@
+name: Paddle3D
+description: Paddle3D is Baidu's 3D perception toolkit on PaddlePaddle for autonomous driving. It covers lidar and camera 3D detection, BEV models, and point-cloud segmentation with KITTI, nuScenes, and Waymo pipelines.
+tagline: 3D detection and BEV perception toolkit on PaddlePaddle
+
+github_url: https://github.com/PaddlePaddle/Paddle3D
+docs_url: https://github.com/PaddlePaddle/Paddle3D/blob/develop/README.md
+install_command: pip install paddle3d
+
+category: Other
+tags: [python, computer-vision, 3d-detection, autonomous-driving, paddlepaddle, bev, lidar]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Lidar, camera, and BEV 3D detection usually live in separate research
+  repos. Paddle3D puts PointPillars, CenterPoint, BEVFormer, PETR, and
+  related models on PaddlePaddle with KITTI, nuScenes, and Waymo pipelines
+  so driving teams train and deploy one 3D perception stack.
+
+use_cases:
+  - Train PointPillars or CenterPoint on lidar point clouds
+  - Run monocular 3D detection with SMOKE or CaDDN on camera images
+  - Train BEVFormer or PETR multi-camera 3D detection for driving
+  - Segment point clouds and export models toward Apollo deployment
