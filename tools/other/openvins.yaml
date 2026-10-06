@@ -1,0 +1,25 @@
+name: OpenVINS
+description: OpenVINS is an open visual-inertial navigation platform with a filter-based VIO estimator, simulation, and evaluation tools. It fuses camera and IMU data for research-grade odometry and is widely used as a baseline for SLAM and VIO papers.
+tagline: Open visual-inertial odometry platform for research and robotics
+
+github_url: https://github.com/rpng/open_vins
+website_url: https://docs.openvins.com
+docs_url: https://docs.openvins.com
+
+category: Other
+tags: [c++, robotics, vio, slam, imu, camera, localization, research]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Visual-inertial odometry papers need a documented, tunable filter
+  rather than a black-box binary. OpenVINS provides a sliding-window
+  MSCKF-style estimator, simulation, and eval scripts so teams run,
+  compare, and extend camera-IMU odometry with published baselines.
+
+use_cases:
+  - Run stereo or monocular VIO on a robot with a calibrated IMU
+  - Benchmark visual-inertial estimators against OpenVINS on public datasets
+  - Simulate camera-IMU trajectories before hardware experiments
+  - Extend the filter with custom features or GNSS fusion for research

@@ -1,0 +1,25 @@
+name: Kalibr
+description: Kalibr is ETH Zurich's visual-inertial calibration toolbox. It estimates camera intrinsics, camera-IMU extrinsics, and time offsets from calibration targets so multi-sensor robots get accurate projection and IMU alignment for VIO and SLAM.
+tagline: Visual-inertial camera and IMU calibration toolbox
+
+github_url: https://github.com/ethz-asl/kalibr
+website_url: https://github.com/ethz-asl/kalibr
+docs_url: https://github.com/ethz-asl/kalibr/wiki
+
+category: Other
+tags: [python, robotics, calibration, camera, imu, vio, slam, ethz]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Visual-inertial odometry fails when camera intrinsics, IMU noise, and
+  camera-IMU extrinsics are wrong. Kalibr calibrates multi-camera and
+  camera-IMU rigs from target sequences so SLAM and VIO stacks start
+  from accurate geometry instead of guessed transforms.
+
+use_cases:
+  - Calibrate camera intrinsics and distortion from a checkerboard sequence
+  - Estimate camera-IMU extrinsics and time offset for a VIO rig
+  - Calibrate a multi-camera stereo or surround rig before mapping
+  - Validate IMU noise and scale parameters used in visual-inertial fusion
