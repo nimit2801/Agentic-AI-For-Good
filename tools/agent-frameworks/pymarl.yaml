@@ -1,0 +1,23 @@
+name: PyMARL
+description: PyMARL is Oxford WhiRL's PyTorch framework for deep multi-agent reinforcement learning. It ships QMIX, COMA, VDN, IQL, and QTRAN implementations aimed at the StarCraft Multi-Agent Challenge so teams can train cooperative agents on SMAC maps.
+tagline: Deep multi-agent RL framework behind SMAC algorithms
+
+github_url: https://github.com/oxwhirl/pymarl
+
+category: Agents
+tags: [python, agents, multi-agent, reinforcement-learning, marl, pytorch, starcraft]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Cooperative MARL papers need a shared training loop for value
+  factorization methods. PyMARL packages QMIX, COMA, VDN, IQL, and
+  QTRAN on StarCraft SMAC maps so researchers compare cooperative
+  agents without reimplementing each algorithm from scratch.
+
+use_cases:
+  - Train QMIX or VDN agents on SMAC maps like 2s3z and 3s5z
+  - Compare COMA counterfactual gradients with independent Q-learning
+  - Save and reload MARL checkpoints for SMAC evaluation replays
+  - Reproduce SMAC paper baselines with a shared PyTorch trainer

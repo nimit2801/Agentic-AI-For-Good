@@ -1,0 +1,23 @@
+name: EPyMARL
+description: EPyMARL extends PyMARL with extra MARL algorithms, Gymnasium environments, and fair comparison defaults. It adds IA2C, IPPO, MADDPG, MAPPO, PettingZoo and SMAC support, individual-reward training, and W&B logging for cooperative multi-agent research.
+tagline: Extended PyMARL for fair multi-agent RL benchmarks
+
+github_url: https://github.com/uoe-agents/epymarl
+
+category: Agents
+tags: [python, agents, multi-agent, reinforcement-learning, marl, pytorch, gymnasium]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Comparing MARL algorithms is hard when each paper ships a different
+  stack. EPyMARL keeps PyMARL's training loop and adds MAPPO, IPPO,
+  Gymnasium envs, and shared vs unshared parameters so cooperative
+  agent results stay comparable across LBF, RWARE, and SMAC.
+
+use_cases:
+  - Benchmark MAPPO, QMIX, and IPPO on Level-Based Foraging or RWARE
+  - Train cooperative agents on SMAC and SMACv2 StarCraft maps
+  - Run PettingZoo or VMAS environments through a shared MARL trainer
+  - Log multi-agent experiments to Weights and Biases for comparison
