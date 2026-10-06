@@ -1,0 +1,25 @@
+name: FastDeploy
+description: FastDeploy is Baidu's high-performance inference toolkit for LLMs and VLMs on PaddlePaddle. It serves ERNIE and similar models with online APIs, speculative decoding, prefix caching, and disaggregated serving across NVIDIA, XPU, and other accelerators.
+tagline: High-performance LLM and VLM serving on PaddlePaddle
+
+github_url: https://github.com/PaddlePaddle/FastDeploy
+website_url: https://paddlepaddle.github.io/FastDeploy/
+docs_url: https://paddlepaddle.github.io/FastDeploy/
+
+category: LLM
+tags: [python, llm, inference, serving, paddlepaddle, vlm, ernie]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Serving PaddlePaddle LLMs and VLMs needs a stack that is not
+  vLLM-only. FastDeploy adds online serving, speculative decoding,
+  prefix cache, and disaggregated prefill so ERNIE-class models
+  run on NVIDIA and domestic accelerators without a custom server.
+
+use_cases:
+  - Serve ERNIE-4.5 or ERNIE-VL with an OpenAI-compatible API
+  - Run speculative decoding and prefix caching for higher throughput
+  - Deploy disaggregated prefill and decode workers at scale
+  - Benchmark LLM serving on NVIDIA, XPU, MLU, or Gaudi hardware
