@@ -1,0 +1,24 @@
+name: FreeRTOS
+description: FreeRTOS is a real-time operating system kernel for microcontrollers and small processors. It provides tasks, queues, timers, and memory management so embedded and robotics teams schedule concurrent firmware without writing a custom scheduler.
+tagline: Widely used real-time kernel for microcontroller firmware
+
+github_url: https://github.com/FreeRTOS/FreeRTOS
+website_url: https://www.freertos.org
+docs_url: https://www.freertos.org/Documentation/00-Overview.html
+
+category: Other
+tags: [c, rtos, embedded, microcontroller, firmware, kernel, amazon, iot]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Bare-metal loops do not scale once firmware needs concurrent sensors,
+  comms, and control. FreeRTOS is a tiny kernel with tasks, queues, and
+  timers so MCU teams add preemptive scheduling without a heavy OS.
+
+use_cases:
+  - Schedule sensor, control, and comms tasks on an STM32 or ESP32 board
+  - Use queues and notifications to pass data between ISR and task context
+  - Port a robotics MCU app onto FreeRTOS with a vendor HAL
+  - Add software timers and heap management to constrained firmware

@@ -1,0 +1,26 @@
+name: PlatformIO
+description: PlatformIO is a cross-platform embedded build system and library manager. It unifies boards, frameworks, and toolchains behind one CLI and IDE so firmware teams compile, test, and upload Arduino, ESP-IDF, Zephyr, and STM32 projects without juggling vendor IDEs.
+tagline: Unified CLI and IDE for embedded build, libraries, and flashing
+
+github_url: https://github.com/platformio/platformio-core
+website_url: https://platformio.org
+docs_url: https://docs.platformio.org
+install_command: pip install platformio
+
+category: Dev Tools
+tags: [python, embedded, firmware, build, iot, arduino, esp32, ide]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Embedded projects split across Arduino IDE, vendor SDKs, and ad-hoc
+  Make files. PlatformIO is one CLI and VS Code workflow for boards,
+  libraries, unit tests, and flashing so teams share firmware without
+  a vendor-locked toolchain.
+
+use_cases:
+  - Build and flash an ESP32 or STM32 firmware project from one platformio.ini
+  - Share library dependencies across Arduino, ESP-IDF, and Zephyr boards
+  - Run unit tests and CI for embedded code without a vendor IDE
+  - Use PlatformIO Core in VS Code or the CLI for multi-board firmware
