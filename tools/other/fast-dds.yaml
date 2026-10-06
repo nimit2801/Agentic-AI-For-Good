@@ -1,0 +1,25 @@
+name: Fast DDS
+description: Fast DDS is eProsima's DDS implementation and a default ROS 2 middleware. It provides publish/subscribe, discovery, QoS, and real-time communication so robot and distributed systems exchange typed messages with a proven OMG DDS stack.
+tagline: High-performance DDS middleware used as a default ROS 2 RMW
+
+github_url: https://github.com/eProsima/Fast-DDS
+website_url: https://eprosima.com
+docs_url: https://fast-dds.docs.eprosima.com
+
+category: Other
+tags: [c++, robotics, dds, middleware, ros, pubsub, realtime, eprosima]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Distributed robot software needs typed, QoS-aware pub/sub that works
+  on the LAN and in ROS 2. Fast DDS is a complete OMG DDS stack and a
+  default ROS 2 RMW so teams get discovery, reliability, and real-time
+  messaging without writing a custom bus.
+
+use_cases:
+  - Run ROS 2 with Fast DDS as the RMW on a robot network
+  - Publish sensor and command topics with DDS QoS policies
+  - Connect non-ROS applications to a ROS 2 graph over DDS
+  - Tune discovery and reliability for multi-robot deployments

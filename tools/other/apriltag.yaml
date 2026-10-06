@@ -1,0 +1,25 @@
+name: AprilTag
+description: AprilTag is a visual fiducial system from the University of Michigan for robotics research. It detects square coded tags in camera images to recover pose, identity, and correspondences for calibration, localization, and multi-robot experiments.
+tagline: Visual fiducial tags for robot pose, calibration, and tracking
+
+github_url: https://github.com/AprilRobotics/apriltag
+website_url: https://april.eecs.umich.edu/software/apriltag
+docs_url: https://github.com/AprilRobotics/apriltag
+
+category: Other
+tags: [c, python, robotics, fiducial, computer-vision, localization, calibration, pose]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Robots need known landmarks in a camera image for pose and identity.
+  AprilTag detects robust square codes and estimates 6-DoF pose so
+  teams calibrate cameras, localize relative to a map of tags, and
+  run multi-robot experiments without custom markers.
+
+use_cases:
+  - Localize a robot or camera relative to printed AprilTag landmarks
+  - Calibrate camera extrinsics using detected tag poses
+  - Track objects or docks that carry fiducial tags
+  - Run multi-robot experiments with unique tag IDs per agent

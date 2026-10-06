@@ -1,0 +1,25 @@
+name: Iceoryx
+description: Eclipse iceoryx is a true zero-copy inter-process communication middleware. It shares memory between publishers and subscribers so large sensor payloads move between processes without serialization, and it underpins ROS 2's iceoryx RMW and LoanedMessage APIs.
+tagline: True zero-copy IPC for large robot and automotive payloads
+
+github_url: https://github.com/eclipse-iceoryx/iceoryx
+website_url: https://iceoryx.io
+docs_url: https://iceoryx.io
+
+category: Other
+tags: [c++, robotics, ipc, middleware, zero-copy, ros, automotive, eclipse]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Camera and lidar messages are too large to copy between robot
+  processes. Iceoryx shares shared-memory chunks with true zero-copy
+  so publishers and subscribers exchange payloads without serialization,
+  which ROS 2 uses for high-bandwidth intra-host communication.
+
+use_cases:
+  - Share lidar and camera frames between processes without copying
+  - Use iceoryx as a ROS 2 RMW for intra-host zero-copy messaging
+  - Build automotive or robot stacks that pass large shared-memory samples
+  - Reduce CPU and latency versus serialized pub/sub on one machine
