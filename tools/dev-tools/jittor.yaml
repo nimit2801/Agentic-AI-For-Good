@@ -1,0 +1,26 @@
+name: Jittor
+description: Jittor is a JIT-compiled deep learning framework from Tsinghua with meta-operators and a PyTorch-like Python API. The backend generates specialized CUDA and C++ kernels at runtime for training vision, geometry, and generation models with high performance.
+tagline: JIT deep learning framework with meta-operators
+
+github_url: https://github.com/Jittor/jittor
+website_url: https://cg.cs.tsinghua.edu.cn/jittor/
+docs_url: https://cg.cs.tsinghua.edu.cn/jittor/assets/docs/index.html
+install_command: pip install jittor
+
+category: Dev Tools
+tags: [python, deep-learning, jit, cuda, pytorch-like, tsinghua, training]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Training custom models often needs kernels specialized per graph,
+  not a fixed op set. Jittor JIT-compiles meta-operators into CUDA
+  and C++ so vision, geometry, and generation networks train with
+  a Python Module API without hand-writing those kernels.
+
+use_cases:
+  - Train image recognition and detection models with a PyTorch-like API
+  - JIT-compile custom convolution or geometry operators for CUDA
+  - Port research models that need unified dynamic and static graphs
+  - Run Jittor model libraries for segmentation, generation, or rendering

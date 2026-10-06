@@ -1,0 +1,26 @@
+name: Habitat-Lab
+description: Habitat-Lab is Meta's modular library for training embodied AI agents. It defines navigation, rearrangement, and instruction-following tasks, configures robots and sensors, and runs imitation or RL training on Habitat-Sim indoor scenes with Gym-compatible environments.
+tagline: Train embodied AI agents across indoor tasks and robots
+
+github_url: https://github.com/facebookresearch/habitat-lab
+website_url: https://aihabitat.org/
+docs_url: https://aihabitat.org/docs/habitat-lab/
+install_command: pip install habitat-lab
+
+category: Agents
+tags: [python, agents, embodied-ai, reinforcement-learning, robotics, habitat, facebook]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Embodied agents need task definitions, robot configs, and training
+  loops on top of a simulator. Habitat-Lab supplies navigation and
+  rearrangement benchmarks, PPO baselines, and Gym wrappers so teams
+  train indoor agents without writing that stack from scratch.
+
+use_cases:
+  - Train point-goal and object-goal navigation agents on indoor scans
+  - Benchmark rearrangement skills like pick, place, and open on ReplicaCAD
+  - Run multi-agent or human-in-the-loop Habitat 3.0 co-habitation tasks
+  - Fine-tune PPO baselines from habitat-baselines on custom configs
