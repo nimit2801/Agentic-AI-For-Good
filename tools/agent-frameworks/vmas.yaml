@@ -1,0 +1,25 @@
+name: VMAS
+description: VMAS is a vectorized PyTorch simulator for multi-agent reinforcement learning. It ships a 2D physics engine and multi-robot scenarios so MARL algorithms can train many environments in one batched step.
+tagline: Vectorized multi-agent simulator for MARL benchmarking
+
+github_url: https://github.com/proroklab/VectorizedMultiAgentSimulator
+website_url: https://vmas.readthedocs.io
+docs_url: https://vmas.readthedocs.io
+install_command: pip install vmas
+
+category: Agents
+tags: [python, pytorch, marl, multi-agent, robotics, simulation]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Multi-robot MARL is slow when each scenario runs as a separate CPU
+  process. VMAS vectorizes 2D physics in PyTorch with modular scenarios
+  so hundreds of multi-agent environments step together on GPU.
+
+use_cases:
+  - Benchmark MAPPO or IPPO on VMAS multi-robot navigation scenarios
+  - Train cooperative robots in a batched 2D physics environment
+  - Add a custom multi-agent scenario through VMAS's modular interface
+  - Wrap VMAS for Gymnasium or RLlib without rewriting the simulator

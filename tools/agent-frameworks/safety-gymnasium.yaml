@@ -1,0 +1,26 @@
+name: Safety-Gymnasium
+description: Safety-Gymnasium is a unified benchmark for safe reinforcement learning. It extends Gymnasium with cost signals and constraint tasks so agents can optimize reward while staying inside safety limits.
+tagline: Unified benchmark for safe reinforcement learning
+
+github_url: https://github.com/PKU-Alignment/safety-gymnasium
+website_url: https://safety-gymnasium.readthedocs.io/en/latest/
+docs_url: https://safety-gymnasium.readthedocs.io/en/latest/
+install_command: pip install safety-gymnasium
+
+category: Agents
+tags: [python, reinforcement-learning, safety, gymnasium, constraints, benchmark]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Safe RL needs shared tasks that report costs, not only reward, or
+  constraint methods cannot be compared. Safety-Gymnasium provides
+  Gymnasium environments with safety costs so researchers can train
+  constrained policies on a common NeurIPS 2023 benchmark.
+
+use_cases:
+  - Train a constrained PPO agent that respects Safety-Gymnasium cost limits
+  - Benchmark safe RL algorithms on navigation and locomotion constraint tasks
+  - Compare constraint-satisfaction methods on a shared Gymnasium API
+  - Evaluate whether a policy stays inside safety-critical regions during rollout
