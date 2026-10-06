@@ -1,0 +1,26 @@
+name: MMSelfSup
+description: MMSelfSup is OpenMMLab's self-supervised learning toolbox and benchmark. It trains contrastive, masked-image, and clustering methods with a shared config and model zoo so vision teams pretrain backbones without stitching paper repos.
+tagline: OpenMMLab self-supervised learning toolbox and benchmark
+
+github_url: https://github.com/open-mmlab/mmselfsup
+website_url: https://mmselfsup.readthedocs.io/en/latest/
+docs_url: https://mmselfsup.readthedocs.io/en/latest/get_started.html
+install_command: pip install mmselfsup
+
+category: Other
+tags: [python, computer-vision, self-supervised, pretraining, openmmlab, pytorch, contrastive]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Self-supervised vision methods live in incompatible paper codebases.
+  MMSelfSup unifies contrastive, masked-image, and clustering recipes
+  under OpenMMLab configs so teams pretrain and transfer backbones
+  without rebuilding each method's data pipeline.
+
+use_cases:
+  - Pretrain vision backbones with MoCo, SimCLR, or MAE-style recipes
+  - Transfer self-supervised checkpoints into MMDetection or classification
+  - Benchmark SSL methods on ImageNet-style datasets with one toolbox
+  - Fine-tune unlabeled-domain backbones before downstream detection

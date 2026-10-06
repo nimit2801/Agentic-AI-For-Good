@@ -1,0 +1,26 @@
+name: MMRazor
+description: MMRazor is OpenMMLab's model compression toolbox for pruning, knowledge distillation, and NAS. It wraps MMDetection, classification, and segmentation models so teams shrink inference cost without leaving the OpenMMLab training stack.
+tagline: OpenMMLab toolbox for pruning, distillation, and NAS
+
+github_url: https://github.com/open-mmlab/mmrazor
+website_url: https://mmrazor.readthedocs.io/en/latest/
+docs_url: https://mmrazor.readthedocs.io/en/latest/get_started/installation.html
+install_command: pip install mmrazor
+
+category: Fine-tuning
+tags: [python, pytorch, pruning, distillation, nas, compression, openmmlab, fine-tuning]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Compressing OpenMMLab detectors and classifiers usually means a
+  separate pruning or distillation repo. MMRazor plugs pruning, KD, and
+  NAS into MMEngine so teams slim models for edge deployment without
+  rewriting the training loop.
+
+use_cases:
+  - Prune MMDetection models for faster edge inference
+  - Distill a large classifier into a smaller student with MMRazor recipes
+  - Search compact architectures with NAS on OpenMMLab backbones
+  - Compress segmentation models before mobile or embedded deploy
