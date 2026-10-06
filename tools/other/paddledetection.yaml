@@ -1,0 +1,25 @@
+name: PaddleDetection
+description: PaddleDetection is Baidu's object detection toolkit on PaddlePaddle. It covers detection, instance segmentation, multi-object tracking, and realtime keypoint models with pretrained configs for production CV pipelines.
+tagline: Object detection and tracking toolkit on PaddlePaddle
+
+github_url: https://github.com/PaddlePaddle/PaddleDetection
+docs_url: https://github.com/PaddlePaddle/PaddleDetection/blob/develop/README.md
+install_command: pip install paddledet
+
+category: Other
+tags: [python, computer-vision, object-detection, tracking, paddlepaddle, segmentation]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Shipping detection, tracking, and keypoints usually means stitching
+  separate repos. PaddleDetection puts YOLO-style detectors, instance
+  segmentation, MOT, and keypoint models on PaddlePaddle with shared
+  configs so CV teams train and deploy one detection stack.
+
+use_cases:
+  - Train YOLO and two-stage detectors on custom object datasets
+  - Run instance segmentation and realtime multi-person keypoints
+  - Track multiple objects across video with MOT configs
+  - Export PaddleDetection models for production CV serving

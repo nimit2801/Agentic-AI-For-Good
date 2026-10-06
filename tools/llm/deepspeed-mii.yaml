@@ -1,0 +1,26 @@
+name: DeepSpeed-MII
+description: DeepSpeed-MII is Microsoft's inference engine for low-latency, high-throughput LLM serving. It adds blocked KV-cache, continuous batching, Dynamic SplitFuse, and tensor parallelism on DeepSpeed-Inference for Llama, Mixtral, and similar models.
+tagline: High-throughput LLM inference powered by DeepSpeed
+
+github_url: https://github.com/deepspeedai/DeepSpeed-MII
+website_url: https://www.deepspeed.ai
+docs_url: https://github.com/deepspeedai/DeepSpeed-MII
+install_command: pip install deepspeed-mii
+
+category: LLM
+tags: [python, llm, inference, serving, deepspeed, batching, llama]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Serving large LLMs needs continuous batching and KV-cache tricks
+  that training stacks do not provide. DeepSpeed-MII wraps
+  DeepSpeed-Inference so teams deploy Llama or Mixtral with a
+  pipeline or gRPC server instead of hand-tuning those kernels.
+
+use_cases:
+  - Serve Llama or Mixtral with continuous batching and blocked KV-cache
+  - Run a persistent gRPC or REST endpoint for multi-client generation
+  - Deploy a non-persistent Python pipeline for batch text generation
+  - Compare DeepSpeed FastGen throughput against other LLM servers
