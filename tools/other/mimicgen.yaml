@@ -1,0 +1,26 @@
+name: MimicGen
+description: MimicGen is NVIDIA's data generation system that turns a few human robot demonstrations into large imitation datasets. It adapts demo trajectories across object poses in simulation and ships 48k-plus demonstrations across 12 manipulation tasks for scalable robot learning.
+tagline: Generate large robot imitation datasets from a few human demonstrations
+
+github_url: https://github.com/NVlabs/mimicgen
+website_url: https://mimicgen.github.io
+docs_url: https://mimicgen.github.io/docs/introduction/overview.html
+
+category: Other
+tags: [python, robotics, imitation-learning, data-generation, simulation, nvidia, manipulation]
+pricing: free
+is_open_source: true
+license: NVIDIA Source Code License
+
+problem_solved: |
+  Imitation learning needs thousands of demos, but collecting them on
+  hardware is slow. MimicGen takes a handful of human demonstrations
+  and generates new successful trajectories across object poses in
+  simulation so teams scale robot datasets without teleoperating every
+  scene.
+
+use_cases:
+  - Expand a few human demos into thousands of simulated manipulation trajectories
+  - Train imitation policies on MimicGen's 12-task, 48k-demo released datasets
+  - Generate data for custom simulation environments from seed demonstrations
+  - Reproduce CoRL 2023 robot learning experiments with published generation configs
