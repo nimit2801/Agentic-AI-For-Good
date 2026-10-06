@@ -1,0 +1,25 @@
+name: RTAB-Map
+description: RTAB-Map is a real-time appearance-based SLAM library and app for RGB-D, stereo, and lidar robots. It uses loop closure memory management so long sessions stay bounded, and ships ROS, standalone, and visualization tools for indoor mapping.
+tagline: Appearance-based RGB-D, stereo, and lidar SLAM with loop closure
+
+github_url: https://github.com/introlab/rtabmap
+website_url: https://introlab.github.io/rtabmap
+docs_url: https://introlab.github.io/rtabmap
+
+category: Other
+tags: [c++, robotics, slam, rgb-d, lidar, loop-closure, ros, mapping]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Long robot sessions blow up graph SLAM memory and miss loop closures
+  in changing indoor scenes. RTAB-Map uses appearance-based loop
+  detection and memory management so RGB-D, stereo, and lidar robots
+  map for hours without unbounded graphs.
+
+use_cases:
+  - Map an indoor space with an RGB-D camera and export 3D reconstructions
+  - Run RTAB-Map ROS nodes for localization against a prior map
+  - Fuse lidar and visual loop closures on a mobile robot
+  - Visualize and edit maps in the RTAB-Map standalone application

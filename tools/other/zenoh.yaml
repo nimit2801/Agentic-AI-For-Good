@@ -1,0 +1,26 @@
+name: Zenoh
+description: Zenoh is Eclipse's pub/sub, query, and storage protocol that unifies data in motion and at rest. It is used as a ROS 2 RMW, IoT fabric, and edge-to-cloud bus with Rust, C, Python, and embedded implementations for efficient geo-distributed robotics data.
+tagline: Pub/sub, query, and storage protocol for robots, edge, and cloud
+
+github_url: https://github.com/eclipse-zenoh/zenoh
+website_url: https://zenoh.io
+docs_url: https://zenoh.io/docs
+install_command: pip install eclipse-zenoh
+
+category: Other
+tags: [rust, python, robotics, pubsub, middleware, ros, iot, eclipse]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Robot and edge systems need pub/sub plus queries across LAN, WAN, and
+  constrained devices. Zenoh blends those patterns with a compact wire
+  protocol and a ROS 2 RMW so teams move sensor data from MCU to cloud
+  without stacking DDS, MQTT, and a database.
+
+use_cases:
+  - Use Zenoh as the ROS 2 RMW for bandwidth-efficient robot networking
+  - Stream sensor data from edge devices to cloud queries and storages
+  - Replace MQTT-plus-DDS stacks with one pub/sub and query fabric
+  - Run Zenoh on constrained robots and gateways with Rust or C bindings

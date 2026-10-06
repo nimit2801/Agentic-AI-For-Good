@@ -1,0 +1,25 @@
+name: Cartographer
+description: Cartographer is Google's real-time SLAM library for 2D and 3D mapping across lidar, IMU, and other sensors. It builds submaps, runs loop closure, and publishes occupancy grids so robots localize and map indoors, outdoors, and on multiple platforms.
+tagline: Real-time 2D and 3D SLAM for lidar and multi-sensor robots
+
+github_url: https://github.com/cartographer-project/cartographer
+website_url: https://google-cartographer.readthedocs.io
+docs_url: https://google-cartographer.readthedocs.io
+
+category: Other
+tags: [c++, robotics, slam, lidar, localization, mapping, google]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Robots need consistent maps from noisy lidar and IMU streams in real
+  time. Cartographer builds submaps, matches scans, and closes loops in
+  2D and 3D so teams get occupancy grids and poses without assembling a
+  custom SLAM pipeline.
+
+use_cases:
+  - Run 2D lidar SLAM on an indoor mobile robot with IMU fusion
+  - Build 3D maps from multi-lidar platforms and close loops online
+  - Integrate Cartographer ROS nodes for occupancy-grid navigation
+  - Localize a robot in a previously built Cartographer map
