@@ -1,0 +1,26 @@
+name: MLIR
+description: MLIR is LLVM's Multi-Level Intermediate Representation for building reusable compilers. Dialects, passes, and progressive lowering let teams model tensor, GPU, and hardware graphs in one IR so ML frameworks, DSLs, and accelerators share optimizations instead of each writing a bespoke compiler stack.
+tagline: Multi-level IR and compiler infrastructure inside the LLVM project
+
+github_url: https://github.com/llvm/llvm-project
+website_url: https://mlir.llvm.org
+docs_url: https://mlir.llvm.org/docs/
+
+category: Dev Tools
+tags: [compiler, llvm, mlir, ir, gpu, ml-compiler, hardware, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  ML and hardware compilers used to invent a new IR for every framework
+  and chip, so optimizations could not be shared. MLIR gives a common
+  multi-level IR with dialects and progressive lowering so tensor
+  graphs, GPU kernels, and custom accelerators reuse passes instead of
+  rewriting a compiler from scratch.
+
+use_cases:
+  - Lower tensor and linalg dialects into GPU or CPU kernels for ML runtimes
+  - Build a domain-specific compiler with custom MLIR dialects and passes
+  - Target AI accelerators by adding a hardware dialect on top of existing IRs
+  - Share optimization passes across PyTorch, JAX, and TensorFlow compiler stacks

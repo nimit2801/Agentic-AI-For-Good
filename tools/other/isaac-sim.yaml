@@ -1,0 +1,27 @@
+name: Isaac Sim
+description: NVIDIA Isaac Sim is an open-source Omniverse application for developing, simulating, and testing AI robots. It imports URDF, MJCF, and CAD, runs GPU physics and RTX sensors, and supports synthetic data, ROS 2, reinforcement learning, and digital twins before hardware deployment.
+tagline: GPU robot simulator on NVIDIA Omniverse for AI robotics and digital twins
+
+github_url: https://github.com/isaac-sim/IsaacSim
+website_url: https://developer.nvidia.com/isaac/sim
+docs_url: https://docs.isaacsim.omniverse.nvidia.com/latest/index.html
+
+category: Other
+tags: [python, robotics, simulation, nvidia, omniverse, ros, reinforcement-learning, digital-twin]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Robot teams need photoreal sensors and accurate physics before they
+  touch hardware, but game engines and academic sims rarely combine
+  both at GPU scale. Isaac Sim sits on Omniverse with RTX cameras,
+  GPU physics, URDF import, ROS 2, and synthetic data so policies and
+  perception stacks train in simulation and transfer to real robots.
+
+use_cases:
+  - Import a URDF robot and tune physics before running locomotion or manipulation
+  - Generate synthetic RTX camera and lidar data for perception training
+  - Bridge Isaac Sim to ROS 2 for software-in-the-loop robot stacks
+  - Host Isaac Lab reinforcement learning in a photoreal digital twin
+  - Test multi-robot warehouse or humanoid scenes before hardware trials
