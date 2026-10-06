@@ -1,0 +1,27 @@
+name: NeuralProphet
+description: NeuralProphet is a PyTorch forecasting library that mixes neural nets with Prophet-style seasonality, trends, and holidays. It is built for iterative, interpretable forecasts on longer high-frequency series, with AR-Net components and a simple fit, visualize, and iterate loop.
+tagline: Interpretable neural time series forecasting inspired by Prophet
+
+github_url: https://github.com/ourownstory/neural_prophet
+website_url: https://neuralprophet.com
+docs_url: https://neuralprophet.com
+install_command: pip install neuralprophet
+
+category: Data
+tags: [python, pytorch, time-series, forecasting, prophet, interpretable, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Classical Prophet is easy to explain but weak on high-frequency series,
+  while deep forecasters are accurate and opaque. NeuralProphet keeps
+  trend, seasonality, and holiday components you can plot, then adds
+  PyTorch AR-Net terms so teams iterate on interpretable forecasts
+  without jumping to a black-box neural stack.
+
+use_cases:
+  - Forecast sub-daily metrics with weekly and yearly seasonality you can inspect
+  - Add holidays and changepoints while keeping a Prophet-like decomposition
+  - Iterate human-in-the-loop models with plots of trend, seasonality, and residuals
+  - Train autoregressive neural components on long high-frequency series

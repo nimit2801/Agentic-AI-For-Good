@@ -1,0 +1,25 @@
+name: OCS2
+description: OCS2 is a C++ toolbox for nonlinear optimal control and real-time MPC on robots. It solves switched-system problems with SLQ, iLQR, SQP, and IPM solvers, URDF helpers, automatic differentiation, and ROS interfaces for legged robots and manipulators.
+tagline: Real-time MPC and optimal control toolbox for switched robotic systems
+
+github_url: https://github.com/leggedrobotics/ocs2
+website_url: https://leggedrobotics.github.io/ocs2
+docs_url: https://leggedrobotics.github.io/ocs2
+category: Other
+tags: [cpp, robotics, mpc, optimal-control, legged-robots, ros, pinocchio]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Real-time MPC on legged robots and manipulators needs switched
+  dynamics, hard constraints, and fast derivatives, not a generic NLP
+  dump. OCS2 packages DDP-family and SQP solvers with URDF models,
+  self-collision constraints, and ROS nodes so teams run onboard
+  nonlinear MPC with limited compute.
+
+use_cases:
+  - Run whole-body MPC on a quadruped or humanoid with contact mode schedules
+  - Track end-effectors on a mobile manipulator with self-collision constraints
+  - Generate code from automatic differentiation for onboard control loops
+  - Deploy OCS2 solvers through ROS 1 or ROS 2 interfaces on real robots

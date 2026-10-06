@@ -1,0 +1,26 @@
+name: Control Toolbox
+description: The Control Toolbox is ETH Zurich's C++ library for modelling, optimal control, estimation, and nonlinear MPC in robotics. It implements iLQR, multiple shooting, and GNMS with IPOPT, SNOPT, and HPIPM backends for trajectory optimization on dynamical systems.
+tagline: C++ library for robotics optimal control, estimation, and nonlinear MPC
+
+github_url: https://github.com/ethz-adrl/control-toolbox
+website_url: https://ethz-adrl.github.io/ct/
+docs_url: https://ethz-adrl.github.io/ct/
+
+category: Other
+tags: [cpp, robotics, mpc, optimal-control, trajectory-optimization, ilqr, open-source]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Robotics labs often rewrite iLQR, multiple shooting, and constraint
+  plumbing for every new plant. The Control Toolbox gives shared C++
+  models, cost functions, and NLP backends so teams run trajectory
+  optimization and nonlinear MPC against ODE plants without assembling
+  a solver stack from papers.
+
+use_cases:
+  - Optimize robot trajectories with iLQR or Gauss-Newton multiple shooting
+  - Run nonlinear MPC using IPOPT, SNOPT, or HPIPM backends
+  - Model ODE plants and costs with autodiff-friendly C++ interfaces
+  - Prototype motion planning and estimation loops before hardware tests
