@@ -1,0 +1,24 @@
+name: FBGEMM
+description: FBGEMM is Meta's high-performance low-precision matrix multiplication and convolution library for server-side inference. It powers quantized GEMM, fused kernels, and GPU operators used in PyTorch recommendation and generative AI stacks.
+tagline: Low-precision GEMM and convolution kernels for server inference
+
+github_url: https://github.com/pytorch/FBGEMM
+docs_url: https://github.com/pytorch/FBGEMM
+
+category: Dev Tools
+tags: [c++, inference, quantization, gemm, pytorch, recommendation, performance]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Server inference at INT8 and mixed precision needs kernels that
+  stay accurate at small batches. FBGEMM supplies quantized GEMM,
+  convolution, and fused ops so PyTorch recommendation and GenAI
+  stacks avoid rewriting SIMD kernels for every model.
+
+use_cases:
+  - Accelerate quantized recommendation models on CPU servers
+  - Fuse low-precision GEMM with bandwidth-bound ops in PyTorch
+  - Train and serve recsys operators via FBGEMM-GPU
+  - Run FP8 and collective kernels for generative inference

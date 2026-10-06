@@ -1,0 +1,26 @@
+name: PaddleRec
+description: PaddleRec is Baidu's large-scale recommendation algorithm library on PaddlePaddle. It ships classic and recent models such as DeepFM, DIN, DCN, MMOE, and Bert4Rec with shared datasets and training configs for CTR and ranking research.
+tagline: Large-scale recommendation algorithm library on PaddlePaddle
+
+github_url: https://github.com/PaddlePaddle/PaddleRec
+website_url: https://paddlerec.readthedocs.io/
+docs_url: https://paddlerec.readthedocs.io/
+install_command: pip install paddle-rec
+
+category: Other
+tags: [python, recommendation, ctr, ranking, paddlepaddle, deepfm, recsys]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Recommendation research splits CTR, ranking, and sequential models
+  across paper repos. PaddleRec puts DeepFM, DIN, DCN, MMOE, and
+  Bert4Rec on PaddlePaddle with shared datasets so teams train and
+  compare recsys models without rebuilding each paper's pipeline.
+
+use_cases:
+  - Train DeepFM or DIN click-through models on Criteo-style datasets
+  - Benchmark multi-task recommenders such as MMOE and PLE
+  - Run sequential recommenders like Bert4Rec and GRU4Rec
+  - Prototype industrial ranking pipelines on PaddlePaddle
