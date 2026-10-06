@@ -1,0 +1,25 @@
+name: YOLOv10
+description: YOLOv10 is a real-time end-to-end object detector from Tsinghua that removes NMS from the YOLO pipeline. The NeurIPS 2024 official code trains consistent dual assignments for latency-friendly detection without a post-processing bottleneck.
+tagline: Real-time end-to-end YOLO detector without NMS
+
+github_url: https://github.com/THU-MIG/yolov10
+website_url: https://arxiv.org/abs/2405.14458
+docs_url: https://github.com/THU-MIG/yolov10
+
+category: Other
+tags: [python, computer-vision, object-detection, yolo, realtime, pytorch, nms-free]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  YOLO pipelines still wait on non-maximum suppression at inference.
+  YOLOv10 trains consistent dual assignments so detection is end-to-end
+  and NMS-free, cutting latency for real-time cameras without a separate
+  post-process stage.
+
+use_cases:
+  - Train NMS-free YOLOv10 detectors on custom object datasets
+  - Deploy real-time end-to-end detection on GPU video
+  - Benchmark latency against YOLOv8 and YOLOv9 with NMS
+  - Fine-tune YOLOv10 for industrial inspection cameras

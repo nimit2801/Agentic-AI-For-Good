@@ -1,0 +1,25 @@
+name: LoFTR
+description: LoFTR is a detector-free local feature matcher that uses transformers to establish dense correspondences between image pairs. It matches texture-poor indoor and outdoor scenes for pose estimation, SLAM, and 3D reconstruction without sparse keypoints.
+tagline: Detector-free transformer matcher for dense image correspondences
+
+github_url: https://github.com/zju3dv/LoFTR
+website_url: https://zju3dv.github.io/loftr/
+docs_url: https://zju3dv.github.io/loftr/
+
+category: Other
+tags: [python, computer-vision, feature-matching, transformers, slam, 3d, pose]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Sparse keypoint matchers fail on low-texture walls and repetitive
+  patterns. LoFTR dense-matches image pairs with transformers so
+  visual odometry and reconstruction keep correspondences where
+  SuperPoint-style detectors drop out.
+
+use_cases:
+  - Match indoor image pairs for visual localization and SLAM
+  - Estimate relative pose from texture-poor photo pairs
+  - Feed dense correspondences into 3D reconstruction pipelines
+  - Benchmark detector-free matching against SuperGlue on ScanNet

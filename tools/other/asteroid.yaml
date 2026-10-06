@@ -1,0 +1,26 @@
+name: Asteroid
+description: Asteroid is a PyTorch toolkit for audio source separation research. It trains, evaluates, and infers speech and music separation models with shared datasets, metrics, and recipes so labs compare architectures without rebuilding training loops.
+tagline: PyTorch toolkit for audio source separation research
+
+github_url: https://github.com/asteroid-team/asteroid
+website_url: https://asteroid-team.github.io/
+docs_url: https://asteroid.readthedocs.io/
+install_command: pip install asteroid
+
+category: Other
+tags: [python, audio, source-separation, speech, pytorch, music, dsp]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Speech and music separation papers ship one-off training code.
+  Asteroid puts Conv-TasNet-style models, datasets, and SI-SDR
+  metrics behind one PyTorch API so researchers train and compare
+  separators without rewriting each recipe.
+
+use_cases:
+  - Train speech separation models on WHAM or LibriMix recipes
+  - Evaluate source separators with SI-SDR and related metrics
+  - Run music or speech enhancement inference from pretrained Asteroid models
+  - Prototype new separator architectures on shared Asteroid datasets
