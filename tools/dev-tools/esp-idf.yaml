@@ -1,0 +1,25 @@
+name: ESP-IDF
+description: ESP-IDF is Espressif's official IoT development framework for ESP32-class SoCs. It provides FreeRTOS, Wi-Fi, Bluetooth, drivers, and a CMake toolchain so firmware teams build connected devices without stitching vendor samples by hand.
+tagline: Official Espressif SDK for ESP32-class IoT and embedded firmware
+
+github_url: https://github.com/espressif/esp-idf
+website_url: https://www.espressif.com
+docs_url: https://docs.espressif.com/projects/esp-idf
+
+category: Dev Tools
+tags: [c, embedded, iot, esp32, firmware, freertos, wifi, espressif]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  ESP32 products need Wi-Fi, Bluetooth, and drivers on a supported SDK,
+  not a pile of samples. ESP-IDF is Espressif's official framework with
+  FreeRTOS, networking, and CMake so teams ship firmware on ESP32-class
+  chips without a vendor IDE lock-in.
+
+use_cases:
+  - Build Wi-Fi and Bluetooth firmware for an ESP32 or ESP32-S3 board
+  - Use ESP-IDF components and CMake to share drivers across products
+  - Flash and monitor devices with idf.py from CI or a local shell
+  - Port a FreeRTOS IoT app onto Espressif silicon with official drivers

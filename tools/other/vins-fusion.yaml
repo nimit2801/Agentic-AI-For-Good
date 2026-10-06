@@ -1,0 +1,25 @@
+name: VINS-Fusion
+description: VINS-Fusion is an optimization-based multi-sensor visual-inertial state estimator. It fuses stereo or mono cameras with IMU, GPS, and other sensors so robots and drones get metric pose without a motion-capture lab.
+tagline: Multi-sensor visual-inertial odometry for robots and drones
+
+github_url: https://github.com/HKUST-Aerial-Robotics/VINS-Fusion
+website_url: https://github.com/HKUST-Aerial-Robotics/VINS-Fusion
+docs_url: https://github.com/HKUST-Aerial-Robotics/VINS-Fusion
+
+category: Other
+tags: [c++, robotics, slam, vio, imu, drones, ros, localization]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Robots and UAVs need metric pose indoors and outdoors without mocap.
+  VINS-Fusion is an optimization-based VIO stack that fuses cameras,
+  IMU, and GPS so teams estimate pose on ROS without writing a custom
+  estimator.
+
+use_cases:
+  - Run stereo-inertial odometry on a UAV or ground robot in ROS
+  - Fuse GPS with visual-inertial estimates for outdoor localization
+  - Calibrate camera-IMU extrinsics and run VINS on recorded bags
+  - Compare mono, stereo, and IMU configurations on the same estimator
