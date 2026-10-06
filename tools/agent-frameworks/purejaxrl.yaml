@@ -1,0 +1,24 @@
+name: PureJaxRL
+description: PureJaxRL is a set of end-to-end JAX implementations of deep RL algorithms. Training loops JIT-compile with the environment so PPO and related agents run at hardware speed on GPU or TPU.
+tagline: End-to-end JAX implementations of deep RL algorithms
+
+github_url: https://github.com/luchris429/purejaxrl
+docs_url: https://github.com/luchris429/purejaxrl
+
+category: Agents
+tags: [python, jax, reinforcement-learning, ppo, gpu, research]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Typical RL stacks bounce between Python env steps and a separate learner,
+  so GPU time is wasted on host round-trips. PureJaxRL keeps PPO and the
+  environment in one JAX program that compiles end to end, which makes
+  large sweeps practical on accelerators.
+
+use_cases:
+  - Train PPO end-to-end in JAX on Gymnax, Brax, or MinAtar environments
+  - Benchmark how fast a compiled RL loop runs versus a PyTorch baseline
+  - Prototype a new JAX agent by editing a single-file PureJaxRL implementation
+  - Run GPU or TPU RL experiments without a CPU environment bottleneck

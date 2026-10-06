@@ -1,0 +1,26 @@
+name: MineRL
+description: MineRL is a Minecraft Gym environment and dataset for sample-efficient reinforcement learning. Agents receive pixels and act in the game, with human demonstration data from the MineRL competitions.
+tagline: Minecraft environment and dataset for sample-efficient RL
+
+github_url: https://github.com/minerllabs/minerl
+website_url: https://minerl.io/docs/
+docs_url: https://minerl.io/docs/
+install_command: pip install minerl
+
+category: Agents
+tags: [python, minecraft, reinforcement-learning, imitation-learning, gym, dataset]
+pricing: free
+is_open_source: true
+license: CC-BY-NC-SA-4.0
+
+problem_solved: |
+  Open-world pixel control is hard to study without a shared game and
+  human demos. MineRL wraps Minecraft as a Gym env and ships competition
+  datasets so agents can learn from pixels plus demonstrations instead
+  of exploring from scratch.
+
+use_cases:
+  - Train a sample-efficient RL agent to obtain diamonds in Minecraft
+  - Imitate human MineRL-v0 demonstrations before online fine-tuning
+  - Benchmark BASALT or Diamond competition tasks in a Gym loop
+  - Collect pixel observations and discrete actions for hierarchical agents

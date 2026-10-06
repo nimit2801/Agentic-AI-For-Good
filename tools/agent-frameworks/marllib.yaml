@@ -1,0 +1,26 @@
+name: MARLlib
+description: MARLlib is a multi-agent reinforcement learning library built on Ray RLlib. It unifies algorithms and environment wrappers so teams can train cooperative and competitive MARL agents from one codebase.
+tagline: Multi-agent RL library on Ray RLlib
+
+github_url: https://github.com/Replicable-MARL/MARLlib
+website_url: https://marllib.readthedocs.io
+docs_url: https://marllib.readthedocs.io
+install_command: pip install marllib
+
+category: Agents
+tags: [python, pytorch, marl, multi-agent, rllib, ray]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  MARL research splits across algorithm repos and env-specific forks, so
+  comparing methods is painful. MARLlib wraps popular multi-agent tasks
+  for RLlib and ships many algorithms in one library so experiments share
+  the same training interface.
+
+use_cases:
+  - Train MAPPO, QMIX, or other MARL algorithms through a shared RLlib interface
+  - Wrap SMAC, MPE, or PettingZoo tasks without maintaining per-env forks
+  - Compare cooperative and competitive agents with MARLlib configs
+  - Reproduce multi-agent baselines on Ray without assembling algorithm code
