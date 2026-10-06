@@ -1,0 +1,26 @@
+name: robomimic
+description: robomimic is a modular framework for robot learning from demonstration. It ships manipulation datasets and offline algorithms such as BC, Diffusion Policy, and IQL so labs can train visuomotor policies on shared robot tasks.
+tagline: Robot learning from demonstration with shared datasets
+
+github_url: https://github.com/ARISE-Initiative/robomimic
+website_url: https://robomimic.github.io/
+docs_url: https://robomimic.github.io/docs/introduction/overview.html
+install_command: pip install robomimic
+
+category: Agents
+tags: [python, robotics, imitation-learning, offline-rl, robosuite, pytorch]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Robot imitation papers used incompatible datasets and algorithm code,
+  so results were hard to reproduce. robomimic packages demonstration
+  datasets with BC, offline RL, and Diffusion Policy so researchers can
+  train visuomotor policies on the same lift, can, and square tasks.
+
+use_cases:
+  - Train a Diffusion Policy or BC-Transformer on robomimic manipulation datasets
+  - Benchmark offline RL algorithms like IQL or CQL on shared robot demos
+  - Fine-tune a language-conditioned robot policy across multiple datasets
+  - Reproduce published robomimic study results on simulated and real robot tasks
