@@ -1,0 +1,26 @@
+name: Halide
+description: Halide is a language for fast, portable data-parallel computation. It separates algorithms from schedules so image processing and ML kernels compile to CPU, GPU, and Hexagon without rewriting the compute graph for each target.
+tagline: Language for fast portable data-parallel image and tensor kernels
+
+github_url: https://github.com/halide/Halide
+website_url: https://halide-lang.org
+docs_url: https://halide-lang.org/docs
+install_command: pip install halide
+
+category: Dev Tools
+tags: [c++, python, compilers, image-processing, gpu, scheduling, performance]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Hand-tuned SIMD and CUDA kernels couple the algorithm to one
+  hardware target. Halide splits compute from schedule so teams
+  write an image or tensor pipeline once and retarget CPU, GPU,
+  and Hexagon without rewriting the math.
+
+use_cases:
+  - Schedule image-processing pipelines for CPU and GPU from one algorithm
+  - Generate portable kernels for camera ISP and computational photography
+  - Prototype ML operator schedules without rewriting CUDA by hand
+  - Compile Halide generators into production C++ or Python runtimes
