@@ -1,0 +1,24 @@
+name: RIOT
+description: RIOT is an open-source OS for the Internet of Things. It runs on 8- to 32-bit MCUs with a real-time kernel, IPv6/6LoWPAN, and a GNU/Linux-like API so constrained devices ship connected firmware without a heavy Linux port.
+tagline: Friendly open-source OS for constrained IoT devices
+
+github_url: https://github.com/RIOT-OS/RIOT
+website_url: https://www.riot-os.org
+docs_url: https://doc.riot-os.org
+
+category: Other
+tags: [c, rtos, iot, embedded, ipv6, 6lowpan, firmware, microcontroller]
+pricing: free
+is_open_source: true
+license: LGPL-2.1
+
+problem_solved: |
+  Tiny IoT boards cannot run Linux but still need networking and threads.
+  RIOT is a small OS with IPv6, 6LoWPAN, and a Linux-like API so teams
+  ship connected firmware on 8- to 32-bit MCUs.
+
+use_cases:
+  - Build 6LoWPAN or IPv6 firmware for a low-power sensor node
+  - Run multithreaded IoT apps on ARM Cortex-M without Linux
+  - Use RIOT networking stacks for CoAP, MQTT, or UDP on MCUs
+  - Port a constrained device prototype across many RIOT boards

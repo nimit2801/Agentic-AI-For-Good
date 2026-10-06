@@ -1,0 +1,24 @@
+name: NuttX
+description: Apache NuttX is a POSIX-like real-time OS for microcontrollers and small CPUs. It offers a tiny Unix API, filesystems, networking, and drivers so embedded and robotics teams write portable firmware instead of vendor-locked loops.
+tagline: POSIX-like Apache RTOS for microcontrollers and small CPUs
+
+github_url: https://github.com/apache/nuttx
+website_url: https://nuttx.apache.org
+docs_url: https://nuttx.apache.org/docs/latest/
+
+category: Other
+tags: [c, rtos, embedded, posix, apache, firmware, iot, microcontroller]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  MCU firmware often has no portable POSIX API. NuttX is an Apache RTOS
+  with tasks, filesystems, and sockets so teams write Unix-like embedded
+  code on many chips without a vendor OS.
+
+use_cases:
+  - Run POSIX-style firmware on an STM32, ESP32, or RISC-V board
+  - Use NuttX networking and filesystems in an IoT device
+  - Port a robotics MCU app onto NuttX with standard pthreads
+  - Build PX4-class flight firmware that targets the NuttX kernel

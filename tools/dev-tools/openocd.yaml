@@ -1,0 +1,25 @@
+name: OpenOCD
+description: OpenOCD is the Open On-Chip Debugger for JTAG, SWD, and chip flashing. It talks to adapters and MCUs so firmware teams halt cores, flash images, and GDB-debug embedded boards without a vendor-only probe tool.
+tagline: Open on-chip debugger for JTAG, SWD, flashing, and GDB
+
+github_url: https://github.com/openocd-org/openocd
+website_url: https://openocd.org
+docs_url: https://openocd.org/doc/
+install_command: brew install open-ocd
+
+category: Dev Tools
+tags: [c, embedded, jtag, swd, debugger, firmware, gdb, flashing]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Flashing and debugging MCUs often needs a closed vendor probe stack.
+  OpenOCD is the open JTAG/SWD daemon that talks to adapters and GDB
+  so teams halt, flash, and inspect chips without a proprietary tool.
+
+use_cases:
+  - Flash firmware onto an STM32 or ESP32 over a cheap JTAG adapter
+  - Attach GDB to a halted Cortex-M core during bring-up
+  - Script reset, halt, and memory dumps in CI for hardware tests
+  - Debug SWD boards that a vendor IDE does not support
