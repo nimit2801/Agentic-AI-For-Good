@@ -1,0 +1,27 @@
+name: Open-Unmix
+description: Open-Unmix is a PyTorch reference model for music source separation. Bidirectional LSTM networks learn magnitude masks so a mixture splits into vocals, drums, bass, and other stems, with pretrained MUSDB18 weights, a differentiable Wiener filter, and a speech enhancement variant.
+tagline: PyTorch music source separation into vocals, drums, bass, and other
+
+github_url: https://github.com/sigsep/open-unmix-pytorch
+website_url: https://sigsep.github.io/open-unmix/
+docs_url: https://sigsep.github.io/open-unmix/
+install_command: pip install openunmix
+
+category: Other
+tags: [python, pytorch, audio, music, source-separation, speech-enhancement, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Music and speech pipelines need a reproducible stem separator, not a
+  closed commercial unmixer. Open-Unmix ships pretrained PyTorch models
+  that mask spectrograms into vocals, drums, bass, and other, plus a
+  speech enhancement checkpoint, so researchers and audio engineers
+  evaluate and fine-tune source separation against MUSDB18.
+
+use_cases:
+  - Separate a stereo mix into vocals, drums, bass, and accompaniment stems
+  - Benchmark music source separation models on MUSDB18 with museval
+  - Enhance noisy speech with the umxse checkpoint before ASR
+  - Train a custom Open-Unmix target model on in-house multitrack data

@@ -1,0 +1,28 @@
+name: PaddleTS
+description: PaddleTS is Baidu's PaddlePaddle library for deep time series work. It unifies TSDataset, transforms, AutoTS search, and models for forecasting, representation learning, anomaly detection, and classification, including N-BEATS, N-HiTS, Informer, DeepAR, PatchTST, and TimesNet.
+tagline: Deep time series forecasting, anomaly detection, and AutoTS on PaddlePaddle
+
+github_url: https://github.com/PaddlePaddle/PaddleTS
+website_url: https://paddlets.readthedocs.io
+docs_url: https://paddlets.readthedocs.io
+install_command: pip install paddlets
+
+category: Data
+tags: [python, time-series, forecasting, anomaly-detection, paddlepaddle, autots, deep-learning]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Deep time series stacks usually glue datasets, transforms, and SOTA models
+  by hand across forecasting, anomaly detection, and representation tasks.
+  PaddleTS gives a single TSDataset API, AutoTS tuning, and PaddlePaddle
+  models so teams train, backtest, and ensemble temporal pipelines without
+  rewriting data loaders for each architecture.
+
+use_cases:
+  - Forecast multivariate demand or energy load with N-BEATS, N-HiTS, or Informer
+  - Detect anomalies in industrial sensors with Autoencoder, VAE, or AnomalyTransformer
+  - Run AutoTS hyperparameter search across models and datasets
+  - Learn time series representations with TS2Vec or CoST for downstream classifiers
+  - Build a PaddlePaddle pipeline from missing-value fills through ensemble forecasts
