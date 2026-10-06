@@ -1,0 +1,26 @@
+name: MMFlow
+description: OpenMMLab optical flow toolbox and benchmark. MMFlow trains and evaluates flow models such as PWC-Net, RAFT, and FlowNet with unified configs, datasets, and a model zoo for video motion estimation.
+tagline: OpenMMLab optical flow toolbox and benchmark
+
+github_url: https://github.com/open-mmlab/mmflow
+website_url: https://mmflow.readthedocs.io/en/latest/
+docs_url: https://mmflow.readthedocs.io/en/latest/
+install_command: pip install mmflow
+
+category: Other
+tags: [python, computer-vision, optical-flow, pytorch, openmmlab, video, motion]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Optical flow research is split across one-off repos with incompatible
+  datasets and eval scripts. MMFlow puts PWC-Net, RAFT, FlowNet, and
+  related models on a shared OpenMMLab pipeline so teams train, benchmark,
+  and deploy video motion estimation without stitching research code.
+
+use_cases:
+  - Train RAFT or PWC-Net optical flow on FlyingChairs and Sintel
+  - Estimate dense motion between video frames for tracking or interpolation
+  - Benchmark flow models with a unified OpenMMLab evaluation protocol
+  - Fine-tune pretrained flow checkpoints on custom video datasets

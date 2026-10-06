@@ -1,0 +1,26 @@
+name: MMFewShot
+description: OpenMMLab few-shot learning toolbox and benchmark. MMFewShot covers few-shot classification and detection with standardized configs so CV teams train models that still work when labeled data is scarce.
+tagline: OpenMMLab few-shot classification and detection toolbox
+
+github_url: https://github.com/open-mmlab/mmfewshot
+website_url: https://mmfewshot.readthedocs.io/en/latest/
+docs_url: https://mmfewshot.readthedocs.io/en/latest/
+install_command: pip install mmfewshot
+
+category: Other
+tags: [python, computer-vision, few-shot, pytorch, openmmlab, classification, detection]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Few-shot classification and detection usually live in separate research
+  repos with incompatible episode samplers and metrics. MMFewShot puts
+  those tasks on OpenMMLab configs so teams train models that generalize
+  from a handful of labeled examples without rewriting the training loop.
+
+use_cases:
+  - Train few-shot image classifiers with episode sampling on miniImageNet
+  - Fine-tune few-shot detectors when a class has only a few boxes
+  - Benchmark meta-learning methods under a shared OpenMMLab protocol
+  - Adapt pretrained few-shot models to a new domain with limited labels
