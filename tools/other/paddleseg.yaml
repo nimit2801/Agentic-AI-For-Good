@@ -1,0 +1,25 @@
+name: PaddleSeg
+description: PaddleSeg is Baidu's image segmentation toolkit on PaddlePaddle. It covers semantic, panoptic, interactive, matting, and 3D segmentation with a large pretrained zoo so CV teams train and deploy segmentation models without assembling separate repos.
+tagline: End-to-end image segmentation toolkit on PaddlePaddle
+
+github_url: https://github.com/PaddlePaddle/PaddleSeg
+docs_url: https://github.com/PaddlePaddle/PaddleSeg
+install_command: pip install paddleseg
+
+category: Other
+tags: [python, computer-vision, segmentation, paddlepaddle, matting, panoptic]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Semantic, panoptic, and matting pipelines usually live in separate
+  codebases. PaddleSeg puts those tasks on PaddlePaddle with shared
+  configs and a pretrained zoo so teams train and export segmentation
+  models without stitching multiple research repos.
+
+use_cases:
+  - Train semantic segmentation models on Cityscapes-style datasets
+  - Run interactive or panoptic segmentation with pretrained configs
+  - Apply image matting for portrait or product cutouts
+  - Deploy PaddleSeg models for medical or autonomous-driving masks

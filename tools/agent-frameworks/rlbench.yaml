@@ -1,0 +1,23 @@
+name: RLBench
+description: RLBench is Imperial College's robot learning benchmark on CoppeliaSim. It offers 100-plus vision-guided manipulation tasks with demos, Gym wrappers, and few-shot splits so agents train imitation, RL, and multi-task skills in one environment.
+tagline: Large-scale robot manipulation benchmark and learning env
+
+github_url: https://github.com/stepjam/RLBench
+install_command: pip install git+https://github.com/stepjam/RLBench.git
+
+category: Agents
+tags: [python, agents, robotics, reinforcement-learning, imitation-learning, simulation, gym]
+pricing: free
+is_open_source: true
+
+problem_solved: |
+  Vision-guided manipulation research needs many tasks, demos, and
+  few-shot splits, not a single reach-target env. RLBench puts 100-plus
+  CoppeliaSim tasks behind one API with demonstrations and Gym
+  wrappers so imitation and multi-task agents share a benchmark.
+
+use_cases:
+  - Train few-shot manipulation agents on FS10 or FS25 task splits
+  - Collect demonstration trajectories for imitation learning
+  - Run Gym-compatible RL on reach, pick, and open-door tasks
+  - Domain-randomize visuals for sim-to-real robot transfer
