@@ -1,0 +1,26 @@
+name: MMHuman3D
+description: MMHuman3D is OpenMMLab's 3D human parametric model toolbox. It estimates SMPL-style body meshes, keypoints, and motion from images and video with a shared config, datasets, and evaluation for human reconstruction research.
+tagline: OpenMMLab 3D human parametric model toolbox
+
+github_url: https://github.com/open-mmlab/mmhuman3d
+website_url: https://mmhuman3d.readthedocs.io/
+docs_url: https://mmhuman3d.readthedocs.io/
+install_command: pip install mmhuman3d
+
+category: Other
+tags: [python, computer-vision, 3d, human-pose, smpl, openmmlab, pytorch, reconstruction]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  3D human mesh estimation is split across SMPL fitting, keypoint, and
+  motion repos. MMHuman3D puts parametric body models, datasets, and
+  evaluation in one OpenMMLab toolbox so teams recover meshes from
+  images and video without stitching paper code.
+
+use_cases:
+  - Estimate SMPL body meshes from single images or video
+  - Train 3D human reconstruction models on standard parametric datasets
+  - Evaluate keypoint and mesh metrics with MMHuman3D benchmarks
+  - Prototype avatar or motion-capture pipelines from RGB input

@@ -1,0 +1,24 @@
+name: XNNPACK
+description: XNNPACK is Google's highly optimized neural network operator library for ARM, x86, WebAssembly, and RISC-V. It accelerates TensorFlow Lite, ONNX Runtime, PyTorch, ExecuTorch, and MediaPipe inference rather than being used as a standalone trainer.
+tagline: High-efficiency NN operators for mobile, server, and Web inference
+
+github_url: https://github.com/google/XNNPACK
+docs_url: https://github.com/google/XNNPACK
+
+category: Dev Tools
+tags: [c, inference, mobile, wasm, arm, onnx, tflite, executorch, performance]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Mobile and Web inference needs fast conv, pooling, and elementwise
+  kernels across ARM, x86, and WASM. XNNPACK supplies those operators
+  so TFLite, ONNX Runtime, PyTorch, and ExecuTorch share one optimized
+  backend instead of each framework rewriting SIMD kernels.
+
+use_cases:
+  - Accelerate TensorFlow Lite models on ARM phones and x86 servers
+  - Speed up ONNX Runtime and PyTorch mobile inference with XNNPACK kernels
+  - Run WebAssembly neural nets in the browser via WASM SIMD
+  - Back ExecuTorch and MediaPipe on-device pipelines with shared operators
