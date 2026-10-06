@@ -1,0 +1,26 @@
+name: PlotJuggler
+description: PlotJuggler is an open-source desktop tool for live and recorded time-series visualization in robotics. It plots ROS, MQTT, and custom streams, overlays runs, applies Lua or Python transforms, and syncs images, video, and 3D views while you debug controllers and logs.
+tagline: Interactive time-series visualization for robotics logs and live data
+
+github_url: https://github.com/PlotJuggler/PlotJuggler
+website_url: https://www.plotjuggler.io
+docs_url: https://github.com/PlotJuggler/PlotJuggler
+
+category: Monitoring
+tags: [cpp, robotics, visualization, time-series, ros, debugging, open-source]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  Robot logs mix joint torques, camera frames, and custom topics that
+  spreadsheets and generic APM tools cannot inspect together. PlotJuggler
+  is a desktop visualizer that plots live or recorded streams, overlays
+  runs, and runs Lua or Python transforms so teams debug controllers
+  and perception without writing a one-off plot script.
+
+use_cases:
+  - Plot live ROS topics while tuning a controller on a real robot
+  - Overlay two bag recordings to compare a failing run against a healthy one
+  - Derive filtered or FFT series with Lua or Python transforms
+  - Inspect synchronized camera, depth, and joint-torque plots in one layout

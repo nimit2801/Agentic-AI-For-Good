@@ -1,0 +1,26 @@
+name: Diffusion Policy
+description: Diffusion Policy is a visuomotor imitation-learning method that treats robot actions as a denoising diffusion process. It captures multimodal action distributions from demonstrations for contact-rich manipulation, with state and vision variants plus paper checkpoints.
+tagline: Visuomotor robot policies learned by denoising action trajectories
+
+github_url: https://github.com/real-stanford/diffusion_policy
+website_url: https://diffusion-policy.cs.columbia.edu/
+docs_url: https://diffusion-policy.cs.columbia.edu/
+
+category: Other
+tags: [python, robotics, imitation-learning, diffusion, visuomotor, manipulation, pytorch]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Imitation policies often collapse to one mode when human demos contain
+  several valid ways to complete a contact-rich task. Diffusion Policy
+  models the action sequence as a diffusion process so robots sample
+  multimodal trajectories from vision or state observations instead of
+  averaging incompatible behaviors.
+
+use_cases:
+  - Train a visuomotor policy from human demos for contact-rich tabletop tasks
+  - Compare state-based and vision-based diffusion policies on simulation benchmarks
+  - Reproduce RSS 2023 checkpoints and logs for manipulation research
+  - Generate multimodal robot action sequences instead of a single mean trajectory
