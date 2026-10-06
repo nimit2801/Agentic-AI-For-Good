@@ -1,0 +1,26 @@
+name: Jumanji
+description: Jumanji is InstaDeep's suite of scalable reinforcement learning environments written in JAX. It ships 22 hardware-accelerated tasks from games to combinatorial problems so researchers can iterate faster on GPU and TPU.
+tagline: JAX environments for scalable reinforcement learning research
+
+github_url: https://github.com/instadeepai/jumanji
+website_url: https://instadeepai.github.io/jumanji
+docs_url: https://instadeepai.github.io/jumanji
+install_command: pip install jumanji
+
+category: Agents
+tags: [python, jax, reinforcement-learning, environments, instadeep, gpu]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  CPU-bound RL environments make large-scale sweeps slow and hard to vectorize
+  on accelerators. Jumanji provides a JAX Env API and a suite of games plus
+  combinatorial tasks whose difficulty can scale, so training loops can JIT
+  compile end to end on GPU or TPU.
+
+use_cases:
+  - Train a JAX policy on Snake, PacMan, or other game environments at hardware speed
+  - Benchmark combinatorial RL on routing, packing, or job-shop style Jumanji tasks
+  - Wrap Jumanji environments for Acme, RLlib, Stable-Baselines3, or Gymnasium
+  - Scale environment difficulty to stress-test industrial planning agents

@@ -1,0 +1,25 @@
+name: PySC2
+description: PySC2 is DeepMind's Python environment for StarCraft II reinforcement learning. It wraps Blizzard's Machine Learning API so agents can receive observations and send actions in a rich real-time strategy game.
+tagline: StarCraft II learning environment from DeepMind
+
+github_url: https://github.com/google-deepmind/pysc2
+docs_url: https://github.com/google-deepmind/pysc2
+install_command: pip install pysc2
+
+category: Agents
+tags: [python, reinforcement-learning, starcraft, deepmind, rts, environments]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Real-time strategy games mix long-horizon planning, partial observability,
+  and huge action spaces that gridworlds do not capture. PySC2 exposes
+  StarCraft II as an RL environment so agents can train on Blizzard's
+  observations and actions instead of a toy simulator.
+
+use_cases:
+  - Train an RL agent on mini-games or full StarCraft II maps via the SC2 API
+  - Collect replay features and unit observations for imitation or offline RL
+  - Benchmark multi-agent micro-management policies against published SC2LE results
+  - Prototype RTS agents that issue camera, build, and combat actions in Python
