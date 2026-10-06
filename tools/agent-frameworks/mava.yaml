@@ -1,0 +1,24 @@
+name: Mava
+description: Mava is InstaDeep's JAX research codebase for distributed multi-agent reinforcement learning. It ships single-file SOTA algorithms and Anakin/Sebulba scaling so researchers can iterate on MARL ideas at accelerator speed.
+tagline: Distributed multi-agent RL research codebase in JAX
+
+github_url: https://github.com/instadeepai/Mava
+docs_url: https://github.com/instadeepai/Mava
+
+category: Agents
+tags: [python, jax, marl, multi-agent, reinforcement-learning, instadeep]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Distributed MARL stacks are usually heavy frameworks that are slow to
+  modify. Mava keeps algorithms in single files with Anakin JIT loops for
+  JAX environments and Sebulba for CPU sims, so researchers can hack a
+  baseline and scale it across accelerators without rewriting plumbing.
+
+use_cases:
+  - Clone Mava and train a Sable or other SOTA MARL algorithm on JAX environments
+  - Scale an Anakin training loop across GPU or TPU for end-to-end compiled MARL
+  - Run Sebulba when the environment is not written in JAX but a GPU learner is available
+  - Log JSON metrics that plug into MARL-eval for statistically robust plots

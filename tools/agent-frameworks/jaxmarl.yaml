@@ -1,0 +1,26 @@
+name: JaxMARL
+description: JaxMARL is a JAX library for multi-agent reinforcement learning with GPU-accelerated environments and baseline algorithms. It includes SMAX, Overcooked, MPE, and Hanabi so MARL methods can be evaluated at hardware speed.
+tagline: Multi-agent RL environments and baselines in JAX
+
+github_url: https://github.com/bold-lab-ai/JaxMARL
+website_url: https://jaxmarl.foersterlab.com/
+docs_url: https://jaxmarl.foersterlab.com/
+install_command: pip install jaxmarl
+
+category: Agents
+tags: [python, jax, marl, multi-agent, reinforcement-learning, gpu]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  MARL experiments stall when each environment needs its own CPU simulator
+  and baselines live in separate codebases. JaxMARL vectorizes popular
+  multi-agent tasks in JAX, including SMAX as a StarCraft-style benchmark
+  without the game engine, so algorithms can train and compare on GPU.
+
+use_cases:
+  - Train MAPPO or IPPO baselines on SMAX, MPE, Hanabi, or Overcooked in JAX
+  - Benchmark cooperative MARL without installing the StarCraft II engine
+  - Vectorize multi-agent Brax robotics control on GPU for faster sweeps
+  - Compare new MARL algorithms against JaxMARL's maintained reference implementations
