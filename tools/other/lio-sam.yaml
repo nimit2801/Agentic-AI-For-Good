@@ -1,0 +1,24 @@
+name: LIO-SAM
+description: LIO-SAM is tightly coupled LiDAR-inertial odometry via smoothing and mapping. It uses a factor graph with IMU preintegration, LiDAR odometry, GPS, and loop closure so robots build consistent maps without a loosely coupled stack.
+tagline: Tightly coupled LiDAR-inertial smoothing and mapping
+
+github_url: https://github.com/TixiaoShan/LIO-SAM
+website_url: https://github.com/TixiaoShan/LIO-SAM
+docs_url: https://github.com/TixiaoShan/LIO-SAM
+
+category: Other
+tags: [c++, robotics, lidar, slam, imu, mapping, ros, localization]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Loosely coupled LiDAR odometry drifts and ignores IMU constraints.
+  LIO-SAM is a factor-graph LIO with IMU preintegration, GPS, and loop
+  closure so ground robots build consistent maps in ROS.
+
+use_cases:
+  - Build a LiDAR map of a campus or warehouse with IMU and GPS factors
+  - Run loop closure on a ground robot to correct long-term drift
+  - Fuse GPS with LiDAR-inertial odometry for outdoor surveying
+  - Replay LIO-SAM on recorded bags to compare mapping quality
