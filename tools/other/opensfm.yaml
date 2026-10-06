@@ -1,0 +1,25 @@
+name: OpenSfM
+description: OpenSfM is Mapillary's open-source Structure-from-Motion pipeline. It reconstructs camera poses and sparse 3D points from unordered images so mapping and robotics teams run SfM without a closed photogrammetry suite.
+tagline: Open-source Structure-from-Motion pipeline from Mapillary
+
+github_url: https://github.com/mapillary/OpenSfM
+website_url: https://www.opensfm.org
+docs_url: https://opensfm.readthedocs.io
+
+category: Other
+tags: [python, computer-vision, sfm, 3d, mapping, photogrammetry, mapillary, reconstruction]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Building 3D maps from photos usually means a closed SfM suite.
+  OpenSfM is an open pipeline for feature matching, pose estimation,
+  and sparse reconstruction so mapping teams process street-level
+  and drone imagery without a proprietary stack.
+
+use_cases:
+  - Reconstruct camera poses and sparse points from a drone image set
+  - Run incremental SfM on street-level mapping imagery
+  - Export reconstructions for dense MVS or GIS pipelines
+  - Integrate OpenSfM into a custom mapping or robotics workflow
