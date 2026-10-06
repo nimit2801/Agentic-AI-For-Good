@@ -1,0 +1,26 @@
+name: MMRotate
+description: MMRotate is OpenMMLab's rotated object detection toolbox and benchmark. It trains and evaluates oriented detectors for aerial imagery, text, and other rotated boxes with configs, a model zoo, and evaluation on DOTA-style datasets.
+tagline: OpenMMLab toolbox for rotated object detection
+
+github_url: https://github.com/open-mmlab/mmrotate
+website_url: https://mmrotate.readthedocs.io/en/latest/
+docs_url: https://mmrotate.readthedocs.io/en/latest/install.html
+install_command: pip install mmrotate
+
+category: Other
+tags: [python, computer-vision, object-detection, rotated-detection, aerial, openmmlab, pytorch]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Axis-aligned detectors fail on aerial and document images where objects
+  sit at arbitrary angles. MMRotate adds oriented boxes, rotated NMS, and
+  DOTA-style metrics on top of MMDetection so teams train rotated
+  detectors without rewriting every aerial-detection paper.
+
+use_cases:
+  - Detect rotated vehicles, ships, and storage tanks in satellite imagery
+  - Train oriented text or document detectors with MMRotate configs
+  - Benchmark rotated detectors on DOTA and similar aerial datasets
+  - Fine-tune OpenMMLab rotated models on custom oriented-box datasets

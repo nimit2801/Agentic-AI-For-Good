@@ -1,0 +1,26 @@
+name: PaddleGAN
+description: PaddleGAN is Baidu's generative adversarial network toolkit on PaddlePaddle. It ships First-Order motion transfer, Wav2Lip, image restoration, photo-to-cartoon, style transfer, and GPEN models for research and production image and video synthesis.
+tagline: GAN toolkit for motion transfer, restoration, and style on PaddlePaddle
+
+github_url: https://github.com/PaddlePaddle/PaddleGAN
+docs_url: https://github.com/PaddlePaddle/PaddleGAN
+install_command: pip install ppgan
+
+category: Other
+tags: [python, computer-vision, gan, generative, paddlepaddle, video, image-restoration]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  GAN applications such as talking-head animation, face restoration, and
+  style transfer live in separate paper repos. PaddleGAN puts First-Order,
+  Wav2Lip, GPEN, and photo2cartoon models on PaddlePaddle with shared
+  configs so CV teams train and run generative video and image pipelines
+  from one toolkit.
+
+use_cases:
+  - Animate a still portrait with First-Order motion transfer from a driving video
+  - Lip-sync generated faces to speech with Wav2Lip
+  - Restore old or low-quality photos with GPEN and inpainting models
+  - Convert photos to cartoon or artistic styles with pretrained PaddleGAN configs

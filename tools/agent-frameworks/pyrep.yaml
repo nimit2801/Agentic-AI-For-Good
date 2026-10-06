@@ -1,0 +1,24 @@
+name: PyRep
+description: PyRep is a Python toolkit for robot learning research on CoppeliaSim. It wraps the simulator so agents control robots, cameras, and objects from Python for imitation learning, reinforcement learning, and manipulation experiments.
+tagline: Python toolkit for robot learning on CoppeliaSim
+
+github_url: https://github.com/stepjam/PyRep
+docs_url: https://github.com/stepjam/PyRep
+
+category: Agents
+tags: [python, agents, robotics, simulation, coppeliasim, reinforcement-learning, imitation-learning]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Robot learning in CoppeliaSim usually means C++ plugins or brittle
+  remote APIs. PyRep exposes robots, cameras, and scene objects as
+  Python objects so researchers script imitation and RL experiments
+  without leaving the Python stack that RLBench and similar benchmarks use.
+
+use_cases:
+  - Drive CoppeliaSim robots and cameras from Python during RL training
+  - Prototype manipulation scenes with Franka, Sawyer, and mobile bases
+  - Collect demonstration trajectories for imitation learning research
+  - Headless-simulate robot learning jobs on Linux GPU servers

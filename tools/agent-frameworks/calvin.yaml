@@ -1,0 +1,26 @@
+name: CALVIN
+description: CALVIN is a simulated benchmark for language-conditioned robot policy learning on long-horizon manipulation. Agents complete multi-step tasks from onboard sensors using only human language, with flexible camera and tactile observation suites.
+tagline: Language-conditioned long-horizon robot manipulation benchmark
+
+github_url: https://github.com/mees/calvin
+website_url: http://calvin.cs.uni-freiburg.de
+docs_url: https://github.com/mees/calvin
+
+category: Agents
+tags: [python, agents, robotics, language-conditioned, manipulation, simulation, benchmark]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Language-conditioned robot agents need long-horizon tasks, not single-step
+  pick-and-place demos. CALVIN gives a shared simulated kitchen with
+  multi-step language goals, onboard cameras, and tactile options so
+  researchers train and compare policies that follow human instructions
+  over many sequential actions.
+
+use_cases:
+  - Train language-conditioned manipulation policies on CALVIN's D, ABC, or ABCD splits
+  - Evaluate long-horizon instruction following with onboard RGB and tactile sensors
+  - Benchmark multi-task robot agents that chain open, pick, and place skills
+  - Prototype vision-language robot policies before transferring to real hardware
