@@ -1,0 +1,25 @@
+name: MAVLink
+description: MAVLink is a lightweight messaging protocol for drones and onboard components. It defines telemetry, commands, and mission messages so autopilots, ground stations, and companion computers talk over serial, UDP, or radio without a custom packet format.
+tagline: Lightweight drone messaging protocol for autopilots and ground stations
+
+github_url: https://github.com/mavlink/mavlink
+website_url: https://mavlink.io
+docs_url: https://mavlink.io/en/
+
+category: Other
+tags: [c, robotics, drones, protocol, mavlink, uav, telemetry, px4]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Autopilots, GCS apps, and companion computers need a shared message
+  format. MAVLink is the lightweight drone protocol for telemetry,
+  commands, and missions so PX4, ArduPilot, and QGroundControl interoperate
+  without a custom bus.
+
+use_cases:
+  - Send heartbeat, attitude, and GPS telemetry from an autopilot to a GCS
+  - Upload waypoint missions over serial, UDP, or radio links
+  - Generate language bindings from a MAVLink XML dialect
+  - Bridge a companion computer to PX4 or ArduPilot over MAVLink
