@@ -1,0 +1,24 @@
+name: FAST-LIO
+description: FAST-LIO is a computationally efficient LiDAR-inertial odometry package. It tightly couples LiDAR and IMU in an iterated Kalman filter so robots and drones get robust pose on spinning or solid-state LiDARs without a heavy factor-graph backend.
+tagline: Fast LiDAR-inertial odometry for robots and UAVs
+
+github_url: https://github.com/hku-mars/FAST_LIO
+website_url: https://github.com/hku-mars/FAST_LIO
+docs_url: https://github.com/hku-mars/FAST_LIO
+
+category: Other
+tags: [c++, robotics, lidar, slam, imu, odometry, ros, localization]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  LiDAR SLAM is often too heavy for onboard CPUs. FAST-LIO is a tight
+  LiDAR-IMU Kalman filter that runs in real time on spinning and solid-state
+  LiDARs so mobile robots get pose without a slow factor graph.
+
+use_cases:
+  - Run LiDAR-inertial odometry on a UAV or ground robot in ROS
+  - Localize with spinning Velodyne, Livox, or Ouster LiDAR plus IMU
+  - Map indoor and outdoor environments while estimating pose onboard
+  - Compare FAST-LIO against heavier LIO backends on the same bag
