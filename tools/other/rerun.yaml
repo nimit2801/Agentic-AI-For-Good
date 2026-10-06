@@ -1,0 +1,26 @@
+name: Rerun
+description: Rerun is an SDK and visualizer for multimodal robotics and spatial data. Log images, point clouds, transforms, tensors, and time series from Python, C++, or Rust, then inspect live streams or recordings to debug perception, SLAM, and robot learning pipelines.
+tagline: Visualize and stream multimodal robotics data for debugging and training
+
+github_url: https://github.com/rerun-io/rerun
+website_url: https://rerun.io
+docs_url: https://rerun.io/docs
+install_command: pip install rerun-sdk
+
+category: Other
+tags: [python, rust, robotics, visualization, logging, spatial, slam, multimodal]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Robotics and spatial AI stacks produce images, point clouds, poses, and
+  tensors that are hard to inspect together. Rerun logs those streams from
+  Python, C++, or Rust and plays them back in a visualizer so teams debug
+  perception, SLAM, and robot learning without custom plotting glue.
+
+use_cases:
+  - Log camera frames, point clouds, and robot transforms while debugging SLAM
+  - Stream live sensor data from a robot into the Rerun viewer during a field test
+  - Inspect recorded multimodal logs when training or evaluating robot policies
+  - Visualize 3D annotations and time series alongside model outputs in one timeline
