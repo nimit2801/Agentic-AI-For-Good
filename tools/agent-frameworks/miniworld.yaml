@@ -1,0 +1,25 @@
+name: MiniWorld
+description: MiniWorld is Farama's simple 3D FPS-style environment suite for reinforcement learning. Researchers can configure rooms and objects quickly to train navigation and interaction policies without a heavy simulator.
+tagline: Lightweight 3D environments for reinforcement learning
+
+github_url: https://github.com/Farama-Foundation/Miniworld
+docs_url: https://github.com/Farama-Foundation/Miniworld
+install_command: pip install miniworld
+
+category: Agents
+tags: [python, reinforcement-learning, 3d, gymnasium, farama, navigation]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Full 3D simulators are slow to configure when you only need rooms,
+  hallways, and objects for visual RL. MiniWorld provides FPS-like
+  Gymnasium environments that are easy to customize so agents can learn
+  navigation without standing up Habitat or Unity.
+
+use_cases:
+  - Train a visual navigation policy in a configurable MiniWorld maze
+  - Prototype a custom 3D room layout without a full robotics simulator
+  - Benchmark sample-efficient RL on lightweight first-person tasks
+  - Teach an agent to pick up and carry objects in a simple indoor world

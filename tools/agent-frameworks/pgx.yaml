@@ -1,0 +1,26 @@
+name: PGX
+description: PGX is a suite of vectorized board-game environments written in JAX. Chess, Go, Shogi, and other games JIT-compile so AlphaZero-style agents can train thousands of matches in parallel on GPU.
+tagline: Vectorized JAX environments for classic board games
+
+github_url: https://github.com/sotetsuk/pgx
+website_url: http://sotets.uk/pgx/
+docs_url: http://sotets.uk/pgx/
+install_command: pip install pgx
+
+category: Agents
+tags: [python, jax, board-games, chess, go, reinforcement-learning]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Board-game RL usually steps one match at a time on CPU, which makes
+  AlphaZero-scale self-play expensive. PGX implements Chess, Go, Shogi,
+  and more as JAX-native environments so thousands of games can run in
+  parallel on GPU or TPU.
+
+use_cases:
+  - Train an AlphaZero-style agent on Chess or Go with batched JAX self-play
+  - Benchmark game RL algorithms across Shogi, Backgammon, and poker environments
+  - JIT-compile game step functions for hardware-accelerated research
+  - Prototype a new board-game agent without writing a custom simulator
