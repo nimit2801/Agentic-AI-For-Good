@@ -1,0 +1,26 @@
+name: MCAP
+description: MCAP is a modular, serialization-agnostic container format for pub/sub and robotics recordings. It stores heterogeneous message streams with indexes for efficient seeking and is used by ROS 2, Foxglove, and robot data pipelines as a self-contained log file.
+tagline: Modular container format for robotics and pub/sub log recordings
+
+github_url: https://github.com/foxglove/mcap
+website_url: https://mcap.dev
+docs_url: https://mcap.dev/guides
+install_command: pip install mcap
+
+category: Data
+tags: [python, robotics, logging, ros, serialization, data-format, foxglove]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Robot and pub/sub systems mix protobuf, CDR, JSON, and custom schemas in
+  one recording. MCAP is a self-contained log format with indexes, attachments,
+  and multiple serialization encodings so teams store, seek, and share
+  heterogeneous streams without a ROS bag or vendor lock-in.
+
+use_cases:
+  - Record ROS 2 and custom pub/sub topics into a single portable log file
+  - Seek large robot recordings by timestamp without scanning the whole file
+  - Share self-contained logs that include schemas, attachments, and metadata
+  - Convert or inspect MCAP files in Python pipelines and visualization tools
