@@ -1,0 +1,25 @@
+name: Apicula
+description: Apicula reverse-engineers Gowin FPGA bitstreams. It documents the format and provides pack tools so Yosys and nextpnr program Gowin parts without a closed vendor bitstream compiler.
+tagline: Open bitstream tools for Gowin FPGAs
+
+github_url: https://github.com/YosysHQ/apicula
+website_url: https://github.com/YosysHQ/apicula
+docs_url: https://github.com/YosysHQ/apicula
+install_command: pip install apycula
+
+category: Dev Tools
+tags: [apicula, fpga, bitstream, gowin, yosys, nextpnr, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Gowin FPGA bitstreams used to need a closed vendor compiler. Apicula
+  documents the format and ships pack tools so Yosys and nextpnr
+  program Gowin parts from a fully open flow.
+
+use_cases:
+  - Pack a nextpnr Gowin place-and-route result into a bitstream
+  - Inspect a Gowin bitstream and dump logic tiles and routing
+  - Program a Tang Nano or other Gowin board from Yosys and Apicula
+  - Combine Apicula with nextpnr-gowin instead of Gowin's IDE

@@ -1,0 +1,24 @@
+name: Magic
+description: Magic is an open VLSI layout editor. It paints polygons, extracts netlists, and DRC-checks chips so teams draw custom analog and digital layouts without a closed vendor layout tool.
+tagline: Open-source VLSI layout editor for custom chips
+
+github_url: https://github.com/RTimothyEdwards/magic
+website_url: http://opencircuitdesign.com/magic/
+docs_url: http://opencircuitdesign.com/magic/
+
+category: Dev Tools
+tags: [magic, vlsi, layout, asic, drc, analog, open-source]
+pricing: free
+is_open_source: true
+license: custom
+
+problem_solved: |
+  Custom chip layout is usually locked in a vendor editor. Magic paints
+  polygons, extracts SPICE, and runs DRC so analog and digital teams
+  draw layouts and feed OpenLane or OpenROAD without a closed license.
+
+use_cases:
+  - Draw a custom analog cell and extract a SPICE netlist
+  - Run DRC on a VLSI layout before handing GDS to a foundry flow
+  - Edit standard-cell or pad-frame layouts in an open editor
+  - Pair Magic with Netgen LVS in an OpenLane-style RTL-to-GDS flow

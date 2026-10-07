@@ -1,0 +1,24 @@
+name: OpenSTA
+description: OpenSTA is the static timing analysis engine used by OpenROAD. It reads liberty, SPEF, and netlists so chip teams compute slack and critical paths in an open RTL-to-GDS flow without a vendor STA license.
+tagline: Open static timing analysis engine for OpenROAD
+
+github_url: https://github.com/The-OpenROAD-Project/OpenSTA
+website_url: https://github.com/The-OpenROAD-Project/OpenSTA
+docs_url: https://github.com/The-OpenROAD-Project/OpenSTA
+
+category: Dev Tools
+tags: [opensta, sta, timing, openroad, asic, vlsi, liberty]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Open ASIC flows still need a timer that speaks liberty and SPEF.
+  OpenSTA is OpenROAD's STA engine so teams report slack and paths
+  without a closed vendor timing license.
+
+use_cases:
+  - Time a gate-level netlist with liberty and SPEF in an OpenROAD flow
+  - Report worst slack and critical paths after place and route
+  - Script STA in Tcl the way a vendor timer would be scripted
+  - Use OpenSTA as a standalone timer outside the full OpenROAD app

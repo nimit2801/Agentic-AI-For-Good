@@ -1,0 +1,25 @@
+name: pyuvm
+description: pyuvm is the Universal Verification Methodology written in Python. It runs UVM testbenches with cocotb so teams verify HDL in Python instead of SystemVerilog UVM on a licensed simulator.
+tagline: Python implementation of UVM for cocotb testbenches
+
+github_url: https://github.com/pyuvm/pyuvm
+website_url: https://github.com/pyuvm/pyuvm
+docs_url: https://github.com/pyuvm/pyuvm
+install_command: pip install pyuvm
+
+category: Dev Tools
+tags: [pyuvm, uvm, cocotb, verification, python, systemverilog, testing]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  UVM testbenches usually need SystemVerilog and a licensed simulator.
+  pyuvm ports UVM to Python on top of cocotb so teams write sequences,
+  agents, and scoreboards without a vendor UVM stack.
+
+use_cases:
+  - Write a UVM agent and sequence in Python and drive a DUT via cocotb
+  - Port a SystemVerilog UVM testbench pattern to an open Python flow
+  - Combine pyuvm with Icarus, Verilator, or GHDL instead of a vendor sim
+  - Teach UVM methodology without a SystemVerilog simulator license
