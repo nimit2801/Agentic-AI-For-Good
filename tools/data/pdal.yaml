@@ -1,0 +1,27 @@
+name: PDAL
+description: PDAL is the Point Data Abstraction Library, GDAL for point clouds. It reads, filters, and writes LiDAR and other point formats so geospatial pipelines translate LAS, LAZ, and EPT data without a one-off converter for every sensor.
+tagline: GDAL-style library for LiDAR and point cloud pipelines
+
+github_url: https://github.com/PDAL/PDAL
+website_url: https://pdal.io
+docs_url: https://pdal.io/en/latest/
+
+category: Data
+tags: [cpp, python, lidar, point-cloud, geospatial, las, gdal, gis]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+install_command: pip install pdal
+
+problem_solved: |
+  LiDAR and photogrammetry clouds arrive in many formats and need
+  crop, filter, and reproject steps. PDAL is GDAL for point clouds
+  so pipelines read LAS, LAZ, and EPT, run filters, and write
+  results without a custom converter per sensor.
+
+use_cases:
+  - Convert LAS or LAZ LiDAR to another format in a batch pipeline
+  - Crop, filter, and reproject point clouds before a GIS or ML job
+  - Stream EPT tiles from object storage into a processing pipeline
+  - Build a Python PDAL pipeline that classifies ground returns

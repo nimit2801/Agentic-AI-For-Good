@@ -1,0 +1,25 @@
+name: Mbed OS
+description: Arm Mbed OS is a platform operating system for the Internet of Things. It runs on Cortex-M boards with RTOS, networking, and security so constrained devices ship connected firmware without porting a full Linux stack.
+tagline: Arm IoT operating system for Cortex-M microcontrollers
+
+github_url: https://github.com/ARMmbed/mbed-os
+website_url: https://os.mbed.com
+docs_url: https://os.mbed.com/docs/mbed-os/latest/
+
+category: Other
+tags: [c, rtos, iot, embedded, arm, cortex-m, firmware, microcontroller]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Tiny Cortex-M boards cannot run Linux but still need threads,
+  TLS, and radios. Mbed OS is Arm's IoT platform with an RTOS,
+  networking, and security so teams ship connected firmware
+  without porting a full OS.
+
+use_cases:
+  - Build Wi-Fi or BLE firmware on an Arm Cortex-M development board
+  - Use Mbed TLS and RTOS primitives on a constrained IoT node
+  - Prototype a connected sensor without writing a bare-metal stack
+  - Target many Mbed-enabled boards with one application codebase

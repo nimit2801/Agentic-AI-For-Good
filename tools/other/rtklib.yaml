@@ -1,0 +1,23 @@
+name: RTKLIB
+description: RTKLIB is an open-source C library and app suite for GNSS positioning. It supports GPS, GLONASS, Galileo, QZSS, BeiDou, and SBAS in real-time and post-processed RTK, PPP, and DGPS modes so survey and robotics teams compute precise positions without a closed GNSS stack.
+tagline: Open-source GNSS library for RTK, PPP, and precise positioning
+
+github_url: https://github.com/tomojitakasu/RTKLIB
+
+category: Other
+tags: [c, gnss, gps, rtk, surveying, robotics, positioning, geospatial]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Precise GNSS work needs RTK and PPP, not a phone GPS fix. RTKLIB is
+  an open C library and app suite for GPS, GLONASS, Galileo, BeiDou,
+  and SBAS so survey and robotics teams compute centimeter positions
+  without a closed receiver stack.
+
+use_cases:
+  - Run real-time kinematic GNSS on a rover with a base station correction
+  - Post-process RINEX observations into a precise trajectory
+  - Stream NTRIP corrections into an RTKLIB positioning app
+  - Embed GNSS RTK in a mapping robot without a vendor SDK

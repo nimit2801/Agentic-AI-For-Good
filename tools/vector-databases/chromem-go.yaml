@@ -1,0 +1,25 @@
+name: chromem-go
+description: chromem-go is an embeddable Go vector database with a Chroma-like API and zero third-party dependencies. It stores embeddings in memory with optional persistence so Go apps run RAG and KNN search without a sidecar vector server.
+tagline: Embeddable Go vector database with a Chroma-like API
+
+github_url: https://github.com/philippgille/chromem-go
+
+category: Vector DB
+tags: [go, vector-search, embeddings, rag, knn, in-memory, embedded, chroma]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+install_command: go get github.com/philippgille/chromem-go
+
+problem_solved: |
+  Go services that need RAG often stand up a separate vector DB.
+  chromem-go is an in-process store with a Chroma-like API and no
+  third-party deps so embeddings live in the app, with optional
+  persistence, instead of a sidecar.
+
+use_cases:
+  - Embed vector search in a Go API without running Chroma or Qdrant
+  - Persist collections to disk and reload them on process start
+  - Prototype local RAG in a CLI or backend with in-memory embeddings
+  - Run KNN over document chunks inside a single Go binary
