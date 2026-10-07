@@ -1,0 +1,26 @@
+name: LiteX
+description: LiteX is a Python framework for building FPGA SoCs. It generates CPUs, buses, cores, and BIOS so teams assemble a custom system-on-chip without writing the interconnect by hand.
+tagline: Python framework for building FPGA SoCs
+
+github_url: https://github.com/enjoy-digital/litex
+website_url: https://github.com/enjoy-digital/litex
+docs_url: https://github.com/enjoy-digital/litex/wiki
+install_command: pip install litex
+
+category: Dev Tools
+tags: [litex, fpga, soc, python, risc-v, hdl, migen]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Custom FPGA SoCs mean wiring a CPU, bus, DRAM, and peripherals in
+  Verilog by hand. LiteX generates that infrastructure in Python so
+  teams pick a core, add LiteX cores, and get a synthesizable SoC
+  plus BIOS without a vendor SoC builder.
+
+use_cases:
+  - Generate a RISC-V FPGA SoC with DRAM, UART, and Ethernet from Python
+  - Mix LiteX cores with custom Amaranth or Verilog IP on one bus
+  - Boot a LiteX BIOS and Linux-capable system on a supported board
+  - Prototype an accelerator SoC without writing interconnect RTL

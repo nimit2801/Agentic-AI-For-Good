@@ -1,0 +1,26 @@
+name: Amaranth
+description: Amaranth is a Python-based hardware definition language and toolchain. It builds synchronous digital designs as Python, then emits Verilog so FPGA teams write RTL without leaving a Python workflow.
+tagline: Python HDL and toolchain for digital hardware
+
+github_url: https://github.com/amaranth-lang/amaranth
+website_url: https://amaranth-lang.org
+docs_url: https://amaranth-lang.org/docs/amaranth/
+install_command: pip install amaranth
+
+category: Dev Tools
+tags: [amaranth, hdl, python, fpga, verilog, rtl]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Verilog is verbose and sits outside the Python stack most hardware
+  teams already use for tests and tooling. Amaranth lets you describe
+  synchronous digital logic in Python, simulate it, and emit Verilog
+  for FPGA synthesis without a separate HDL language.
+
+use_cases:
+  - Describe an FPGA core in Python and emit Verilog for Yosys or vendor tools
+  - Simulate synchronous logic with Amaranth's built-in Python simulator
+  - Generate parameterized hardware from Python instead of Verilog generate blocks
+  - Teach digital design with Python before introducing Verilog syntax
