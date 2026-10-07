@@ -1,0 +1,24 @@
+name: ChibiOS
+description: ChibiOS is a compact real-time operating system for microcontrollers. It ships a preemptible kernel, HAL, and RTOS so embedded teams run hard real-time firmware on ARM, STM32, and other MCUs without a heavy operating system.
+tagline: Compact RTOS and HAL for microcontroller firmware
+
+github_url: https://github.com/ChibiOS/ChibiOS
+website_url: https://www.chibios.org
+docs_url: https://www.chibios.org/dokuwiki/doku.php
+
+category: Other
+tags: [c, rtos, embedded, stm32, arm, firmware, microcontroller, realtime]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Hard real-time MCU firmware needs a small preemptible kernel, not
+  Linux. ChibiOS is a compact RTOS with a HAL so teams schedule
+  threads on STM32 and other ARM boards without a heavy OS.
+
+use_cases:
+  - Run preemptible threads on an STM32 with microsecond deadlines
+  - Use the ChibiOS HAL for GPIO, UART, and timers across MCU families
+  - Port a motor-control or robotics firmware onto a small RTOS
+  - Prototype hard real-time firmware without a commercial RTOS license
