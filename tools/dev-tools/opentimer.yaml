@@ -1,0 +1,24 @@
+name: OpenTimer
+description: OpenTimer is a high-performance static timing analysis tool for VLSI. It reports slack, paths, and incremental updates so chip teams STA open RTL-to-GDS flows without a closed vendor timer.
+tagline: Open-source static timing analysis for VLSI
+
+github_url: https://github.com/OpenTimer/OpenTimer
+website_url: https://github.com/OpenTimer/OpenTimer
+docs_url: https://github.com/OpenTimer/OpenTimer
+
+category: Dev Tools
+tags: [opentimer, sta, timing, vlsi, asic, eda, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Static timing analysis is usually locked in a vendor STA engine.
+  OpenTimer reports slack and critical paths with incremental updates
+  so open RTL-to-GDS flows time a chip without a closed license.
+
+use_cases:
+  - Run static timing analysis on a gate-level netlist and liberty files
+  - Report worst slack and critical paths after place and route
+  - Incremental-update timing after a local netlist ECO
+  - Plug OpenTimer into an open ASIC flow as the STA engine

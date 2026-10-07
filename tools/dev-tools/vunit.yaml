@@ -1,0 +1,25 @@
+name: VUnit
+description: VUnit is a unit-testing framework for VHDL and SystemVerilog. It automates compile, simulate, and check so HDL teams write Python-driven tests instead of one-off simulator scripts.
+tagline: Unit testing framework for VHDL and SystemVerilog
+
+github_url: https://github.com/VUnit/vunit
+website_url: https://vunit.github.io
+docs_url: https://vunit.github.io
+install_command: pip install vunit-hdl
+
+category: Dev Tools
+tags: [vunit, vhdl, systemverilog, testing, simulation, fpga, verification]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  HDL tests are often one-off simulator scripts with no discovery or
+  reporting. VUnit compiles, simulates, and checks VHDL and SystemVerilog
+  from Python so teams run unit tests like software CI.
+
+use_cases:
+  - Write VHDL unit tests and run them from a Python VUnit runner
+  - Drive GHDL, NVC, or a vendor simulator from one test suite
+  - Scan a project for testbenches and report pass or fail in CI
+  - Mix SystemVerilog testbenches with the same VUnit runner
