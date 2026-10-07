@@ -1,0 +1,25 @@
+name: Ibex
+description: Ibex is a production-quality 32-bit RISC-V CPU written in SystemVerilog. It is parametrizable for embedded control, extensively verified, and has seen multiple tape-outs as the core in OpenTitan.
+tagline: Production-quality 32-bit RISC-V CPU core
+
+github_url: https://github.com/lowRISC/ibex
+website_url: https://www.lowrisc.org
+docs_url: https://ibex-core.readthedocs.io
+
+category: Dev Tools
+tags: [ibex, risc-v, cpu, systemverilog, embedded, opentitan, lowrisc]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Embedded SoCs need a small RISC-V core with real verification,
+  not a toy RTL sample. Ibex is a parametrizable 32-bit core with
+  PMP, bitmanip, and tape-out history so teams drop a production
+  CPU into control paths without licensed IP.
+
+use_cases:
+  - Instantiate a 32-bit RISC-V core in an embedded SoC or FPGA
+  - Configure Ibex for area, performance, or PMP security features
+  - Use Ibex as the OpenTitan embedded CPU in a silicon root of trust
+  - Run CoreMark and directed tests on the Ibex Simple System
