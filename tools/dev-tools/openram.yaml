@@ -1,0 +1,26 @@
+name: OpenRAM
+description: OpenRAM is an open-source SRAM compiler. It generates layout, netlists, timing, and power views so ASIC teams instantiate memory compilers in commercial or open PDK flows without licensed SRAM IP.
+tagline: Open-source SRAM compiler for ASIC memory views
+
+github_url: https://github.com/VLSIDA/OpenRAM
+website_url: https://www.openram.org
+docs_url: https://openram.readthedocs.io
+install_command: pip install openram
+
+category: Dev Tools
+tags: [openram, sram, asic, memory, compiler, pdk, layout]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  ASIC SRAMs usually come from licensed compilers that lock teams
+  to a foundry IP catalog. OpenRAM generates layout, spice,
+  timing, and LEF views in Python so research and open-PDK chips
+  get on-die memory without that license.
+
+use_cases:
+  - Compile an SRAM macro for an open PDK shuttle with layout and timing views
+  - Generate SPICE netlists and power models for a custom memory size
+  - Port OpenRAM to a new process technology for academic tapeouts
+  - Drop compiled SRAM views into a commercial or OpenROAD ASIC flow

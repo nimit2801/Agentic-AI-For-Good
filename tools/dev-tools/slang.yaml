@@ -1,0 +1,25 @@
+name: slang
+description: slang is a SystemVerilog compiler and language-services library. It lexes, parses, type-checks, and elaborates IEEE 1800 so synthesis tools, linters, and editors share a fast, compliant frontend instead of a custom parser.
+tagline: Fast SystemVerilog compiler and language services library
+
+github_url: https://github.com/MikePopoloski/slang
+website_url: https://sv-lang.com
+docs_url: https://sv-lang.com
+
+category: Dev Tools
+tags: [slang, systemverilog, compiler, parser, linter, rtl, lsp]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Every SV linter, editor, and synthesizer used to ship a fragile
+  custom parser. slang provides a fast, sv-tests-compliant
+  frontend that elaborates production-scale projects so tools
+  reuse one compiler instead of rewriting IEEE 1800.
+
+use_cases:
+  - Syntax-check and lint a SystemVerilog project from the slang CLI
+  - Embed slang as a frontend for a synthesis or simulation tool
+  - Dump a design AST to JSON for source introspection
+  - Drive an editor language server from slang language services

@@ -1,0 +1,25 @@
+name: DREAMPlace
+description: DREAMPlace is a GPU-accelerated VLSI placer built on deep-learning toolkits. It runs global placement, legalization, and detailed placement on CPU or GPU so chip teams place million-cell designs without a closed EDA seat.
+tagline: GPU-accelerated VLSI placement on deep-learning toolkits
+
+github_url: https://github.com/limbo018/DREAMPlace
+website_url: https://github.com/limbo018/DREAMPlace
+docs_url: https://github.com/limbo018/DREAMPlace
+
+category: Dev Tools
+tags: [dreamplace, vlsi, placement, gpu, asic, eda, cuda]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Global placement of million-cell ASICs is slow on CPU placers
+  and locked to licensed EDA. DREAMPlace casts placement as a
+  deep-learning training problem so teams run global, legalize,
+  and detailed place on GPU at tens of times CPU speed.
+
+use_cases:
+  - Run GPU global placement on ISPD or industrial netlists
+  - Legalize and detailed-place million-cell designs with ABCDPlace
+  - Compare open placement quality against RePlAce or NTUPlace
+  - Prototype placement research without a closed physical-design license
