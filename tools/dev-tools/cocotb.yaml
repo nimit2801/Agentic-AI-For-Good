@@ -1,0 +1,26 @@
+name: cocotb
+description: cocotb is a Python framework for RTL verification. It drives simulators such as Verilator and Icarus so teams write chip testbenches in Python instead of SystemVerilog.
+tagline: Python testbenches for HDL chip verification
+
+github_url: https://github.com/cocotb/cocotb
+website_url: https://www.cocotb.org
+docs_url: https://docs.cocotb.org
+install_command: pip install cocotb
+
+category: Dev Tools
+tags: [cocotb, hdl, python, verification, rtl, verilog, vhdl]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Chip verification usually means SystemVerilog testbenches and licensed
+  simulators. cocotb lets Python coroutines drive clocks, poke signals,
+  and check RTL through existing simulators so hardware teams reuse
+  Python tests instead of a second HDL verification language.
+
+use_cases:
+  - Write a Python testbench that drives a Verilog or VHDL DUT
+  - Run cocotb regressions with Verilator, Icarus Verilog, or GHDL
+  - Reuse Python models and numpy checks against cycle-accurate RTL
+  - Teach hardware verification without a SystemVerilog UVM stack
