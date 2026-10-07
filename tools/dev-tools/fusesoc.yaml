@@ -1,0 +1,26 @@
+name: FuseSoC
+description: FuseSoC is a package manager and build tool for HDL. It tracks IP cores, EDA backends, and board targets so FPGA and ASIC teams reuse cores and run the same design on simulators or synthesis tools.
+tagline: Package manager and build tool for HDL IP cores
+
+github_url: https://github.com/olofk/fusesoc
+website_url: https://fusesoc.net
+docs_url: https://fusesoc.readthedocs.io
+install_command: pip install fusesoc
+
+category: Dev Tools
+tags: [fusesoc, hdl, fpga, asic, ip-cores, package-manager, eda]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  HDL projects copy cores and rewrite tool scripts for each
+  simulator or FPGA board. FuseSoC packages IP, configs, and
+  backends so teams reuse cores, retarget boards, and run the
+  same design through simulation or synthesis.
+
+use_cases:
+  - Package an HDL IP core and depend on it from other FuseSoC projects
+  - Run the same SoC through multiple simulators from one core description
+  - Port a design to a new FPGA board without rewriting tool scripts
+  - Generate an FPGA SBOM from a FuseSoC core library

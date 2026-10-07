@@ -1,0 +1,25 @@
+name: Clash
+description: Clash is a Haskell-based hardware description language. It compiles typed Haskell to VHDL, Verilog, or SystemVerilog so teams describe circuits with functions and a REPL instead of verbose RTL.
+tagline: Haskell-to-VHDL/Verilog compiler for typed hardware design
+
+github_url: https://github.com/clash-lang/clash-compiler
+website_url: https://clash-lang.org
+docs_url: https://clash-lang.readthedocs.io
+
+category: Dev Tools
+tags: [clash, hdl, haskell, verilog, vhdl, fpga, asic]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  RTL in Verilog or VHDL is weakly typed and hard to parameterize.
+  Clash lets teams describe circuits in Haskell with type-safe
+  clocks and a REPL, then emit VHDL, Verilog, or SystemVerilog
+  for synthesis without a closed HLS toolchain.
+
+use_cases:
+  - Describe a synchronous circuit in Haskell and emit Verilog or VHDL
+  - Load a design in the Clash REPL and test components without a testbench
+  - Use type-safe clock domains when crossing clock boundaries
+  - Parameterize hardware generators with Haskell higher-order functions
