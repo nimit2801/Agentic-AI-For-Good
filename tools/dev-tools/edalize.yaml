@@ -1,0 +1,26 @@
+name: Edalize
+description: Edalize is a Python library that talks to EDA tools through one API. It writes project files for Icarus, Yosys, Verilator, Vivado, GHDL, and Quartus so HDL teams switch simulators without rewriting tool scripts.
+tagline: Python library for a common EDA tool interface
+
+github_url: https://github.com/olofk/edalize
+website_url: https://edalize.readthedocs.io
+docs_url: https://edalize.readthedocs.io
+install_command: pip install edalize
+
+category: Dev Tools
+tags: [edalize, eda, fpga, simulation, yosys, verilator, python]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Each simulator and FPGA toolchain wants different project files,
+  defines, and plusargs. Edalize takes a file list and parameters
+  once, then drives Icarus, Yosys, Vivado, or Verilator so teams
+  switch tools without rewriting build scripts.
+
+use_cases:
+  - Drive Yosys, Verilator, or Icarus from one Python project description
+  - Switch simulators to shake out tool-specific HDL bugs
+  - Generate Vivado or Quartus project files from an HDL file list
+  - Integrate EDA backends into FuseSoC or a custom Python flow
