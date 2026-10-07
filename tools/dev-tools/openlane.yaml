@@ -1,0 +1,25 @@
+name: OpenLane
+description: OpenLane is an automated RTL-to-GDSII ASIC flow. It wraps OpenROAD, Yosys, Magic, Netgen, and KLayout so chip teams go from Verilog to manufacturable layout without a closed EDA stack.
+tagline: Automated open-source RTL-to-GDSII ASIC implementation flow
+
+github_url: https://github.com/The-OpenROAD-Project/OpenLane
+website_url: https://openlane.readthedocs.io
+docs_url: https://openlane.readthedocs.io
+
+category: Dev Tools
+tags: [openlane, asic, rtl, gdsii, eda, openroad, yosys, tapeout]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Tape-out quality GDSII usually needs a stack of licensed EDA tools
+  for synthesis, place, route, DRC, and GDS. OpenLane scripts those
+  steps around OpenROAD and open PDKs so research and shuttle teams
+  can harden Verilog to layout without vendor lock-in.
+
+use_cases:
+  - Harden Verilog RTL to GDSII for an open PDK shuttle run
+  - Explore design variants with OpenROAD, Yosys, Magic, and KLayout in one flow
+  - Reproduce Google MPW and chipIgnite tapeouts with a containerized ASIC flow
+  - Teach digital implementation without closed-source EDA licenses

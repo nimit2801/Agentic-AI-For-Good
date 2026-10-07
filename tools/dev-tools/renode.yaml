@@ -1,0 +1,25 @@
+name: Renode
+description: Renode is Antmicro's open-source simulator for complex embedded systems. It models CPUs, peripherals, and networks so firmware teams develop and test boards before silicon or hardware is available.
+tagline: Open-source simulation framework for complex embedded systems
+
+github_url: https://github.com/renode/renode
+website_url: https://renode.io
+docs_url: https://renode.readthedocs.io
+
+category: Dev Tools
+tags: [renode, simulation, embedded, firmware, risc-v, arm, fpga]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Embedded firmware usually waits on boards, JTAG, and lab hardware.
+  Renode simulates multi-core SoCs, peripherals, and networks so
+  teams write, debug, and CI-test firmware before silicon or a
+  development kit exists.
+
+use_cases:
+  - Simulate a multi-core RISC-V or ARM board before hardware arrives
+  - CI-test firmware against a virtual SoC instead of a physical lab rack
+  - Model networks of embedded nodes and debug them from one Renode session
+  - Co-simulate FPGA IP with software using Renode and Verilator

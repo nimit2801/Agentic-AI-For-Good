@@ -1,0 +1,26 @@
+name: SBCL
+description: Steel Bank Common Lisp is a high-performance native Common Lisp compiler and runtime. It compiles to machine code with a native-code compiler, threads, and a foreign function interface for production Lisp systems.
+tagline: High-performance native-code Common Lisp compiler
+
+github_url: https://github.com/sbcl/sbcl
+website_url: https://www.sbcl.org
+docs_url: https://www.sbcl.org/manual/index.html
+install_command: brew install sbcl
+
+category: Dev Tools
+tags: [sbcl, common-lisp, lisp, compiler, runtime, native-code]
+pricing: free
+is_open_source: true
+license: public-domain
+
+problem_solved: |
+  Many Lisp implementations interpret or emit slow bytecode, which
+  blocks production systems. SBCL compiles Common Lisp to native
+  machine code with threads, a native FFI, and a mature runtime so
+  teams ship fast Lisp services and research code.
+
+use_cases:
+  - Compile Common Lisp applications to native binaries for production
+  - Call C libraries from Lisp through the SBCL foreign function interface
+  - Run multi-threaded Lisp servers on a high-performance runtime
+  - Develop and debug Common Lisp with the SBCL REPL and native debugger
