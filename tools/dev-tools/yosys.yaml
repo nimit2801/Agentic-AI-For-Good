@@ -1,0 +1,26 @@
+name: Yosys
+description: Yosys is an open-source RTL synthesis suite for Verilog. It maps designs to gates, runs optimizations, and feeds FPGA and ASIC flows so hardware teams synthesize chips without a closed EDA toolchain.
+tagline: Open-source Verilog synthesis for FPGA and ASIC flows
+
+github_url: https://github.com/YosysHQ/yosys
+website_url: https://yosyshq.net/yosys/
+docs_url: https://yosyshq.readthedocs.io/projects/yosys/en/latest/
+install_command: brew install yosys
+
+category: Dev Tools
+tags: [yosys, hdl, verilog, synthesis, fpga, asic, eda]
+pricing: free
+is_open_source: true
+license: ISC
+
+problem_solved: |
+  RTL synthesis is often locked behind expensive EDA licenses. Yosys
+  compiles Verilog to gate-level netlists with optimization and
+  technology mapping so FPGA and ASIC teams can synthesize, inspect,
+  and script chip flows with an open toolchain.
+
+use_cases:
+  - Synthesize a Verilog design to a gate-level netlist for FPGA or ASIC
+  - Script a Yosys pass to optimize or inspect RTL before place-and-route
+  - Feed nextpnr or an open FPGA flow from a Yosys netlist
+  - Teach digital design with a free synthesis tool instead of a vendor GUI
