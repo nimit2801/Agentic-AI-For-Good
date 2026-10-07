@@ -1,0 +1,24 @@
+name: CIRCT
+description: CIRCT is LLVM's Circuit IR Compilers and Tools project. It uses MLIR dialects to represent hardware so compilers lower HDL, HLS, and accelerators to Verilog instead of each writing a custom RTL IR.
+tagline: MLIR-based circuit IR and compilers for hardware design
+
+github_url: https://github.com/llvm/circt
+website_url: https://circt.org
+docs_url: https://circt.llvm.org
+
+category: Dev Tools
+tags: [circt, mlir, llvm, hdl, rtl, verilog, hardware, compilers]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Hardware compilers used to invent a new RTL IR for every HLS, HDL, and
+  accelerator flow. CIRCT gives MLIR dialects and passes so FIRRTL,
+  Handshake, and custom hardware lower to Verilog on one LLVM-based stack.
+
+use_cases:
+  - Lower FIRRTL or Handshake IR to Verilog through CIRCT dialects
+  - Build an HLS or HDL compiler on CIRCT instead of a custom RTL IR
+  - Emit SystemVerilog from MLIR hardware dialects for FPGA or ASIC flows
+  - Share CIRCT passes across accelerator and chip-generator compilers

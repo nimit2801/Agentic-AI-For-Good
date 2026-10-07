@@ -1,0 +1,25 @@
+name: Hardcaml
+description: Hardcaml is an OCaml library for designing hardware. It simulates circuits and emits Verilog or VHDL so teams describe RTL with OCaml types and functions instead of weakly typed HDL.
+tagline: OCaml library for typed hardware design and RTL generation
+
+github_url: https://github.com/janestreet/hardcaml
+website_url: https://ocaml.org/p/hardcaml/latest
+docs_url: https://ocaml.org/p/hardcaml/latest/doc/Hardcaml/index.html
+install_command: opam install hardcaml
+
+category: Dev Tools
+tags: [hardcaml, ocaml, hdl, rtl, verilog, vhdl, fpga, simulation]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Verilog and VHDL are weakly typed and hard to parameterize. Hardcaml
+  lets teams describe circuits in OCaml, simulate them, and emit
+  hierarchical Verilog or VHDL without a closed HLS toolchain.
+
+use_cases:
+  - Describe a circuit in OCaml and emit hierarchical Verilog or VHDL
+  - Simulate a design in OCaml and print ASCII waveforms with waveterm
+  - Parameterize hardware generators with OCaml functors and functions
+  - Convert a Hardcaml design to a Verilator model for faster simulation

@@ -1,0 +1,25 @@
+name: Bluespec
+description: Bluespec is a high-level HDL compiler. It compiles Bluespec SystemVerilog and Bluespec Haskell to Verilog with guarded atomic actions so teams write modular hardware with a compiler-picked schedule.
+tagline: High-level HDL compiler with guarded atomic actions
+
+github_url: https://github.com/B-Lang-org/bsc
+website_url: https://github.com/B-Lang-org/bsc
+docs_url: https://github.com/B-Lang-org/bsc#documentation
+install_command: brew install bsc
+
+category: Dev Tools
+tags: [bluespec, hdl, bsv, verilog, fpga, asic, compiler, hardware]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  RTL modules are hard to compose because scheduling is implicit.
+  Bluespec uses guarded atomic actions and a compiler-picked schedule
+  so teams write modular hardware that still emits standard Verilog.
+
+use_cases:
+  - Compile Bluespec SystemVerilog or Bluespec Haskell to synthesizable Verilog
+  - Simulate a design with Bluesim before handing Verilog to a vendor flow
+  - Describe a processor or SoC with guarded atomic actions instead of always-blocks
+  - Reuse Bluespec libraries for FIFOs, memories, and interconnect
