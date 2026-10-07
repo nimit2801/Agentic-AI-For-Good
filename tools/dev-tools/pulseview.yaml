@@ -1,0 +1,24 @@
+name: PulseView
+description: PulseView is sigrok's GUI for logic analyzers and scopes. It captures and decodes protocol traces so hardware teams inspect I2C, SPI, UART, and other buses without a closed vendor analyzer app.
+tagline: Sigrok GUI for logic analyzers and protocol decode
+
+github_url: https://github.com/sigrokproject/pulseview
+website_url: https://sigrok.org/wiki/PulseView
+docs_url: https://sigrok.org/wiki/PulseView
+
+category: Dev Tools
+tags: [pulseview, sigrok, logic-analyzer, protocol, debug, hardware, oscilloscope]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Logic-analyzer vendors ship closed GUIs tied to one probe. PulseView
+  talks to many sigrok-supported devices and decodes I2C, SPI, UART, and
+  other buses so teams inspect traces from an open viewer.
+
+use_cases:
+  - Capture a logic-analyzer trace and decode I2C or SPI in PulseView
+  - Inspect UART or CAN traffic from a cheap USB analyzer
+  - Save a session and share protocol traces with firmware teammates
+  - Use PulseView with a supported scope as a mixed-signal viewer

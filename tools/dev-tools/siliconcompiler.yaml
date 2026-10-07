@@ -1,0 +1,25 @@
+name: SiliconCompiler
+description: SiliconCompiler is a modular Python build system for chips. It compiles RTL to GDSII across tools and PDKs so teams automate silicon flows the way Make automates software, without a closed EDA project GUI.
+tagline: Modular Python build system from RTL to silicon
+
+github_url: https://github.com/siliconcompiler/siliconcompiler
+website_url: https://docs.siliconcompiler.com
+docs_url: https://docs.siliconcompiler.com/en/latest/
+install_command: pip install siliconcompiler
+
+category: Dev Tools
+tags: [siliconcompiler, asic, rtl, gdsii, pdk, eda, python, build-system]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Chip builds glue Yosys, OpenROAD, and PDKs with ad-hoc scripts. SiliconCompiler
+  uses a schema and flowgraph so teams swap tools and process kits, track
+  metrics, and run RTL-to-GDS without a closed EDA project GUI.
+
+use_cases:
+  - Compile an RTL design to GDSII through a Python SiliconCompiler flow
+  - Swap PDKs or EDA backends without rewriting project scripts
+  - Track area, timing, and power metrics across flowgraph nodes
+  - Run a remote client-server compile when local EDA licenses are limited

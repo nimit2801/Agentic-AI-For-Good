@@ -1,0 +1,25 @@
+name: IceStorm
+description: IceStorm reverse-engineers Lattice iCE40 FPGA bitstreams. It documents the format and provides pack, unpack, and timing tools so teams program iCE40 parts from Yosys and nextpnr without a vendor bitstream tool.
+tagline: Open bitstream tools for Lattice iCE40 FPGAs
+
+github_url: https://github.com/YosysHQ/icestorm
+website_url: https://prjicestorm.readthedocs.io
+docs_url: https://prjicestorm.readthedocs.io
+install_command: brew install icestorm
+
+category: Dev Tools
+tags: [icestorm, fpga, bitstream, lattice, ice40, yosys, nextpnr]
+pricing: free
+is_open_source: true
+license: ISC
+
+problem_solved: |
+  Lattice iCE40 bitstreams used to need a closed vendor tool. IceStorm
+  documents the format and ships pack, unpack, and timing utilities so
+  Yosys and nextpnr program iCE40 FPGAs from an open flow.
+
+use_cases:
+  - Pack a nextpnr place-and-route result into an iCE40 bitstream
+  - Unpack a vendor bitstream and inspect logic tiles and routing
+  - Time an iCE40 netlist with IceStorm timing data
+  - Program an iCE40 board from a fully open Yosys-nextpnr-IceStorm flow
