@@ -1,0 +1,26 @@
+name: Erlang
+description: Erlang/OTP is a battle-tested language and runtime for concurrent, distributed, fault-tolerant systems. Lightweight processes, supervisors, and hot code loading power telecom, messaging, and always-on backends.
+tagline: Concurrent language and OTP runtime for always-on systems
+
+github_url: https://github.com/erlang/otp
+website_url: https://www.erlang.org
+docs_url: https://www.erlang.org/docs
+install_command: brew install erlang
+
+category: Dev Tools
+tags: [erlang, otp, beam, concurrency, distributed, fault-tolerance, telecom]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Always-on services fail when one crash takes down the process or when
+  threads cannot scale. Erlang/OTP isolates work in millions of lightweight
+  processes with supervisors, distribution, and hot upgrades so messaging
+  and backend systems stay available without stopping the node.
+
+use_cases:
+  - Run a distributed message broker or chat backend with OTP supervisors
+  - Build a telecom or IoT gateway that restarts failed workers in place
+  - Hot-upgrade a production BEAM node without dropping connections
+  - Host Elixir, Gleam, or Erlang services on the same OTP runtime

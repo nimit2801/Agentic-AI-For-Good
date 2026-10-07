@@ -1,0 +1,26 @@
+name: Gleam
+description: Gleam is a friendly, statically typed language for the Erlang VM and JavaScript. It compiles to BEAM and JS so teams ship concurrent, type-safe backends and frontends with a small language and clear compiler errors.
+tagline: Type-safe language for the Erlang VM and JavaScript
+
+github_url: https://github.com/gleam-lang/gleam
+website_url: https://gleam.run
+docs_url: https://hexdocs.pm/gleam_stdlib/
+install_command: brew install gleam
+
+category: Dev Tools
+tags: [gleam, erlang, beam, javascript, functional, type-safe, concurrency]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Concurrent backends on the BEAM often mean dynamic Erlang or Elixir with
+  weaker static checking. Gleam adds a small, fully static type system that
+  compiles to Erlang and JavaScript, so services get BEAM reliability and
+  compiler-checked APIs without a large language surface.
+
+use_cases:
+  - Build a type-safe HTTP API that runs on the Erlang VM
+  - Share Gleam types and modules between a BEAM backend and a JS frontend
+  - Rewrite a hot Elixir or Erlang path in a language with exhaustive pattern matching
+  - Ship a concurrent worker that uses OTP supervision with static types

@@ -1,0 +1,26 @@
+name: Racket
+description: Racket is a programmable programming language in the Lisp family. It ships a mature IDE, a module system, and language-oriented tools so teams design DSLs, teaching languages, and research compilers as libraries.
+tagline: Lisp language for building languages and DSLs
+
+github_url: https://github.com/racket/racket
+website_url: https://racket-lang.org
+docs_url: https://docs.racket-lang.org
+install_command: brew install racket
+
+category: Dev Tools
+tags: [racket, lisp, scheme, dsl, language-oriented, macros, education]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Custom languages and research compilers usually mean writing a parser
+  and runtime from scratch. Racket treats languages as libraries with
+  macros, a module system, and DrRacket, so teams ship DSLs and teaching
+  languages without leaving one toolchain.
+
+use_cases:
+  - Design a domain-specific language as a Racket #lang module
+  - Teach programming with a custom student language and DrRacket
+  - Prototype a compiler or macro system with hygienic macros
+  - Script research tooling in a Lisp with a batteries-included standard library
