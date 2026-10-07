@@ -1,0 +1,26 @@
+name: Emscripten
+description: Emscripten is an LLVM-to-WebAssembly compiler. It compiles C and C++ to Wasm and JS so native libraries and games run in the browser or Node without a hand-written Wasm port.
+tagline: LLVM-to-WebAssembly compiler for C and C++
+
+github_url: https://github.com/emscripten-core/emscripten
+website_url: https://emscripten.org
+docs_url: https://emscripten.org/docs/introducing_emscripten/index.html
+
+category: Dev Tools
+tags: [cpp, webassembly, llvm, javascript, compilers, browser, wasm, c]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: brew install emscripten
+
+problem_solved: |
+  C and C++ libraries do not run in the browser as-is. Emscripten
+  compiles LLVM bitcode to WebAssembly and JS so native code, games,
+  and codecs run on the web without a manual Wasm rewrite.
+
+use_cases:
+  - Compile a C or C++ library to WebAssembly for a web app
+  - Port a native game or codec to the browser with Emscripten APIs
+  - Call compiled C functions from JavaScript in Node or Chrome
+  - Build a Wasm toolchain around LLVM without writing a backend

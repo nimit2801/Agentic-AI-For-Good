@@ -1,0 +1,26 @@
+name: Pyodide
+description: Pyodide is a Python distribution for the browser and Node.js based on WebAssembly. It runs CPython and scientific packages in Wasm so notebooks and web apps execute Python without a server kernel.
+tagline: CPython and scientific stack in the browser via WebAssembly
+
+github_url: https://github.com/pyodide/pyodide
+website_url: https://pyodide.org/en/stable/
+docs_url: https://pyodide.org/en/stable/
+
+category: Dev Tools
+tags: [python, webassembly, browser, jupyter, numpy, scientific, wasm, cpython]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+install_command: npm install pyodide
+
+problem_solved: |
+  Running Python in a web app usually needs a remote kernel.
+  Pyodide is CPython compiled to WebAssembly so browsers and Node
+  execute Python and scientific packages without a server.
+
+use_cases:
+  - Run NumPy or Pandas in the browser without a backend kernel
+  - Embed a Python REPL in a documentation or education site
+  - Execute user Python in Node as Wasm instead of spawning CPython
+  - Build a client-side notebook that imports Pyodide packages

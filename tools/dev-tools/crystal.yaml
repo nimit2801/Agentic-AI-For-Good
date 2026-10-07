@@ -1,0 +1,26 @@
+name: Crystal
+description: Crystal is a compiled language with Ruby-like syntax and static types. It generates native binaries with a Go-style concurrency model so teams write fast backend tools without leaving a Ruby-shaped language.
+tagline: Fast compiled language with Ruby-like syntax
+
+github_url: https://github.com/crystal-lang/crystal
+website_url: https://crystal-lang.org
+docs_url: https://crystal-lang.org/reference/latest/
+
+category: Dev Tools
+tags: [crystal, compilers, ruby, native, concurrency, backend, systems]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: brew install crystal
+
+problem_solved: |
+  Ruby-like code is easy to write but slow to run. Crystal is a
+  compiled, statically typed language with that syntax so backends
+  and CLIs ship as native binaries without a VM.
+
+use_cases:
+  - Write a fast HTTP service with Ruby-like syntax and native speed
+  - Compile a CLI that ships as a single binary
+  - Use Crystal fibers for concurrent IO without a heavy runtime
+  - Port a Ruby prototype to a typed compiled language
