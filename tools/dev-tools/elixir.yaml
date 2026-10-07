@@ -1,0 +1,26 @@
+name: Elixir
+description: Elixir is a dynamic, functional language on the Erlang VM. It pairs Ruby-like syntax with OTP concurrency so teams build fault-tolerant APIs, realtime channels, and distributed workers that stay up under load.
+tagline: Functional language for scalable, fault-tolerant systems
+
+github_url: https://github.com/elixir-lang/elixir
+website_url: https://elixir-lang.org
+docs_url: https://hexdocs.pm/elixir
+install_command: brew install elixir
+
+category: Dev Tools
+tags: [elixir, erlang, beam, otp, phoenix, functional, concurrency, distributed]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  High-concurrency APIs and realtime systems need millions of lightweight
+  processes, supervision, and hot upgrades. Elixir puts OTP on a modern
+  syntax so teams ship fault-tolerant backends without writing Erlang
+  or running a thread-per-request web stack.
+
+use_cases:
+  - Build a Phoenix API or LiveView app that handles huge concurrent traffic
+  - Run a distributed worker pool with OTP supervisors and hot code reload
+  - Stream tokens or tool results over channels without blocking the VM
+  - Mix Elixir services with existing Erlang libraries on the same BEAM
