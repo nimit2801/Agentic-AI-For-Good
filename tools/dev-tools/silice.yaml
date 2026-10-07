@@ -1,0 +1,25 @@
+name: Silice
+description: Silice is a hardware description language for FPGA algorithms. It combines pipelines, parallelism, and per-cycle logic, then emits Verilog so teams hardcode compute onto boards without a closed HLS tool.
+tagline: HDL for pipelined algorithms on FPGA hardware
+
+github_url: https://github.com/sylefeb/Silice
+website_url: https://github.com/sylefeb/Silice
+docs_url: https://github.com/sylefeb/Silice/blob/master/learn-silice/Documentation.md
+
+category: Dev Tools
+tags: [silice, hdl, fpga, verilog, pipelines, risc-v]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  FPGA algorithms in Verilog mix pipeline stages by hand and
+  stay hard to retarget. Silice describes algorithms, pipelines,
+  and cycle logic in one language, then emits Verilog for open
+  or vendor toolchains without a closed HLS compiler.
+
+use_cases:
+  - Describe a pipelined FPGA algorithm and emit Verilog for synthesis
+  - Prototype a RISC-V core or GPU-style rasterizer on a supported board
+  - Combine per-cycle logic with multi-cycle algorithms in one HDL
+  - Simulate and formally verify Silice designs before FPGA bring-up

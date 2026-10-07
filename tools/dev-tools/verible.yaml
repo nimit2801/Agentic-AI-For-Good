@@ -1,0 +1,25 @@
+name: Verible
+description: Verible is a SystemVerilog parser, style linter, and formatter from CHIPS Alliance. It parses un-preprocessed IEEE 1800 source so teams lint and format RTL without building their own SV frontend.
+tagline: SystemVerilog parser, style linter, and formatter
+
+github_url: https://github.com/chipsalliance/verible
+website_url: https://chipsalliance.github.io/verible/
+docs_url: https://chipsalliance.github.io/verible/
+
+category: Dev Tools
+tags: [verible, systemverilog, linter, formatter, parser, rtl, chipsalliance]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  SystemVerilog is hard to parse, so every linter and formatter
+  used to ship a fragile custom frontend. Verible provides a
+  shared IEEE 1800 parser plus style lint and format so teams
+  check un-preprocessed RTL without writing another SV parser.
+
+use_cases:
+  - Lint SystemVerilog style across a chip repo in CI
+  - Format SV sources with a shared, parser-based formatter
+  - Parse un-preprocessed IEEE 1800 files for custom developer tools
+  - Check language compliance against the sv-tests suite
