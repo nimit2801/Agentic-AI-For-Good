@@ -1,0 +1,25 @@
+name: NVC
+description: NVC is a free VHDL compiler and simulator. It implements IEEE 1076-2008 so teams compile and simulate VHDL without a closed vendor simulator or a GHDL-only flow.
+tagline: Open-source VHDL compiler and simulator
+
+github_url: https://github.com/nickg/nvc
+website_url: https://www.nickg.me.uk/nvc/
+docs_url: https://www.nickg.me.uk/nvc/manual.html
+install_command: brew install nvc
+
+category: Dev Tools
+tags: [nvc, vhdl, simulation, compiler, fpga, asic, open-source]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  VHDL simulation often needs a paid vendor tool. NVC compiles almost
+  all of IEEE 1076-2008 and runs simulations so teams develop and
+  regress VHDL without a closed license or a GHDL-only flow.
+
+use_cases:
+  - Compile and simulate a VHDL-2008 design from the NVC CLI
+  - Dump waveforms from an NVC run and inspect them in GTKWave
+  - Regression-test VHDL IP without a vendor simulator license
+  - Mix VHDL libraries in an open FPGA or ASIC verification flow

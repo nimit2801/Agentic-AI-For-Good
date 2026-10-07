@@ -1,0 +1,24 @@
+name: sv2v
+description: sv2v converts synthesizable SystemVerilog to Verilog. It targets Yosys and other Verilog-only tools so teams keep IEEE 1800 sources without a commercial SystemVerilog frontend.
+tagline: SystemVerilog-to-Verilog converter for open synthesis flows
+
+github_url: https://github.com/zachjs/sv2v
+website_url: https://github.com/zachjs/sv2v
+docs_url: https://github.com/zachjs/sv2v#usage
+
+category: Dev Tools
+tags: [sv2v, systemverilog, verilog, yosys, synthesis, hdl, conversion]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Many open synthesizers still expect Verilog, not full SystemVerilog.
+  sv2v converts IEEE 1800 sources to IEEE 1364 Verilog so teams keep
+  packages, interfaces, and logic types without a commercial frontend.
+
+use_cases:
+  - Convert a SystemVerilog design to Verilog before a Yosys synthesis run
+  - Pass through Yosys-supported SV features and convert the rest
+  - Write adjacent .v files for every .sv source in a project
+  - Feed converted Verilog to Icarus or another Verilog-only simulator
