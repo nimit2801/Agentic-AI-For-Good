@@ -1,0 +1,25 @@
+name: Rocket Chip
+description: Rocket Chip is a Chisel generator for RISC-V SoCs. It instantiates the Rocket in-order core with caches, TileLink, and peripherals so teams parameterize a Linux-capable chip without writing the interconnect by hand.
+tagline: Chisel generator for parameterized RISC-V Rocket SoCs
+
+github_url: https://github.com/chipsalliance/rocket-chip
+website_url: https://github.com/chipsalliance/rocket-chip
+docs_url: https://github.com/chipsalliance/rocket-chip
+
+category: Dev Tools
+tags: [rocket-chip, risc-v, chisel, soc, cpu, fpga, chipsalliance]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Building a RISC-V SoC means wiring a core, caches, bus, and
+  devices in RTL by hand. Rocket Chip generates a parameterized
+  Rocket core and TileLink system in Chisel so teams simulate,
+  FPGA-prototype, or tape out a Linux-capable chip from config.
+
+use_cases:
+  - Generate a parameterized RISC-V SoC with Rocket cores and TileLink
+  - Cycle-accurate Verilator simulation of a Rocket Chip configuration
+  - Map a Rocket core to FPGA for software bring-up before silicon
+  - Push a Rocket Chip instance through an open or commercial VLSI flow

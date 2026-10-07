@@ -1,0 +1,25 @@
+name: CVA6
+description: CVA6 is a 6-stage in-order RISC-V CPU from OpenHW. Application-class configs boot Linux with IMA and C extensions, while smaller configs target embedded SoCs, all from one configurable core.
+tagline: Configurable 6-stage RISC-V core that can boot Linux
+
+github_url: https://github.com/openhwfoundation/cva6
+website_url: https://docs.openhwgroup.org/projects/cva6-user-manual/
+docs_url: https://docs.openhwgroup.org/projects/cva6-user-manual/
+
+category: Dev Tools
+tags: [cva6, risc-v, cpu, linux, openhw, asic, fpga]
+pricing: free
+is_open_source: true
+license: Solderpad-0.51
+
+problem_solved: |
+  Linux-capable RISC-V cores are often closed or split across
+  incompatible RTL trees. CVA6 is a configurable 6-stage in-order
+  core with MMU, TLBs, and privilege modes so teams boot Unix-like
+  OS images on FPGA or ASIC from one open design.
+
+use_cases:
+  - Boot Linux on a 64-bit CVA6 application-class configuration
+  - Configure a smaller CVA6 core for an embedded RISC-V SoC
+  - Simulate CVA6 with Verilator and the CORE-V APU testbench
+  - Evaluate microarchitecture changes with the CVA6 performance model

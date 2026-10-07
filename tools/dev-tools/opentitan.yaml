@@ -1,0 +1,25 @@
+name: OpenTitan
+description: OpenTitan is an open-source silicon root of trust. It ships RTL, firmware, and verification so teams instantiate a transparent RoT instead of a closed security chip.
+tagline: Open-source silicon root of trust
+
+github_url: https://github.com/lowRISC/opentitan
+website_url: https://www.opentitan.org
+docs_url: https://opentitan.org/book/
+
+category: Dev Tools
+tags: [opentitan, risc-v, root-of-trust, security, asic, silicon, lowrisc]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Silicon roots of trust are usually closed chips that platforms
+  cannot inspect. OpenTitan publishes RTL, firmware, and docs so
+  enterprises and chip vendors instantiate a transparent RoT
+  instead of trusting a black-box security island.
+
+use_cases:
+  - Instantiate an open silicon root of trust in an SoC or discrete chip
+  - Audit RoT firmware, crypto, and boot flow against published RTL
+  - Verify OpenTitan IP with the project's testbenches before tapeout
+  - Integrate a transparent security island instead of a closed TPM-class chip
