@@ -1,0 +1,26 @@
+name: nextpnr
+description: nextpnr is a portable FPGA place-and-route tool. It maps Yosys netlists onto FPGA fabrics so hardware teams finish open FPGA flows without vendor P&R binaries.
+tagline: Portable open-source FPGA place and route
+
+github_url: https://github.com/YosysHQ/nextpnr
+website_url: https://github.com/YosysHQ/nextpnr
+docs_url: https://github.com/YosysHQ/nextpnr/blob/master/docs/usage.md
+install_command: brew install nextpnr
+
+category: Dev Tools
+tags: [nextpnr, fpga, place-and-route, yosys, eda, bitstream]
+pricing: free
+is_open_source: true
+license: ISC
+
+problem_solved: |
+  FPGA place-and-route is usually locked inside vendor tools after
+  synthesis. nextpnr takes a Yosys netlist and places and routes it
+  on supported FPGA families so teams complete an open bitstream flow
+  without a proprietary P&R step.
+
+use_cases:
+  - Place and route a Yosys netlist onto a supported FPGA family
+  - Finish an open FPGA flow from Verilog through bitstream
+  - Experiment with packing and routing on iCE40, ECP5, or similar fabrics
+  - Teach FPGA implementation without vendor place-and-route licenses
