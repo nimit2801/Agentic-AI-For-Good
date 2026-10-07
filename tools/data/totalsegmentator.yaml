@@ -1,0 +1,25 @@
+name: TotalSegmentator
+description: TotalSegmentator is a tool for robust segmentation of more than 100 anatomical structures in CT and MR images. It wraps nnU-Net models so radiology pipelines label organs and bones without training a custom 3D network.
+tagline: CT and MR segmentation of 100-plus anatomical structures
+
+github_url: https://github.com/wasserth/TotalSegmentator
+docs_url: https://github.com/wasserth/TotalSegmentator
+
+category: Data
+tags: [python, medical-imaging, segmentation, ct, mri, nnu-net, radiology, pytorch]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install TotalSegmentator
+
+problem_solved: |
+  Labeling organs on CT and MR usually means training a 3D network.
+  TotalSegmentator ships robust models for 100-plus structures so
+  radiology pipelines segment anatomy without a custom dataset.
+
+use_cases:
+  - Segment organs and bones on a CT volume before a downstream ML job
+  - Label MR anatomy for radiotherapy or surgical planning research
+  - Batch-process hospital scans into structure masks with nnU-Net
+  - Bootstrap a medical imaging dataset with off-the-shelf labels
