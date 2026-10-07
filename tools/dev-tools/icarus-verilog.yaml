@@ -1,0 +1,26 @@
+name: Icarus Verilog
+description: Icarus Verilog is a free Verilog simulation and synthesis compiler. It compiles IEEE Verilog to a virtual machine or netlist so teams simulate and check RTL without a commercial simulator.
+tagline: Open-source Verilog simulator and compiler
+
+github_url: https://github.com/steveicarus/iverilog
+website_url: https://steveicarus.github.io/iverilog/
+docs_url: https://steveicarus.github.io/iverilog/
+install_command: brew install icarus-verilog
+
+category: Dev Tools
+tags: [icarus-verilog, verilog, hdl, simulation, compiler, fpga]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Verilog simulation often means a licensed event-driven simulator.
+  Icarus Verilog compiles IEEE Verilog to a portable runtime so teams
+  run testbenches, dump waveforms, and check RTL on a laptop without
+  a commercial sim seat.
+
+use_cases:
+  - Compile and simulate a Verilog testbench with iverilog and vvp
+  - Dump VCD waveforms for a digital design class or CI job
+  - Check Verilog syntax and elaboration before FPGA synthesis
+  - Run regression tests on RTL without a vendor simulator license

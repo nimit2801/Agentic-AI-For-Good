@@ -1,0 +1,25 @@
+name: SpinalHDL
+description: SpinalHDL is a Scala-based hardware description language. It generates VHDL or Verilog from typed Scala so teams describe digital hardware with objects and functions instead of verbose HDL.
+tagline: Scala-based HDL that generates VHDL and Verilog
+
+github_url: https://github.com/SpinalHDL/SpinalHDL
+website_url: https://spinalhdl.github.io/SpinalDoc-RTD/
+docs_url: https://spinalhdl.github.io/SpinalDoc-RTD/
+
+category: Dev Tools
+tags: [spinalhdl, hdl, scala, verilog, vhdl, fpga, asic]
+pricing: free
+is_open_source: true
+license: LGPL-3.0
+
+problem_solved: |
+  Verilog and VHDL are verbose and weakly structured for large designs.
+  SpinalHDL lets teams describe hardware in Scala with types, objects,
+  and functions, then emit VHDL or Verilog so FPGA and ASIC flows stay
+  compatible without writing the RTL by hand.
+
+use_cases:
+  - Describe a digital core in Scala and emit Verilog or VHDL for synthesis
+  - Reuse object-oriented hardware generators across FPGA projects
+  - Generate a SoC interconnect or peripheral from typed SpinalHDL components
+  - Mix SpinalHDL IP with existing Verilog testbenches and EDA tools

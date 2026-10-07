@@ -1,0 +1,25 @@
+name: GHDL
+description: GHDL is an open-source VHDL simulator. It compiles VHDL-2008, 93, and 87 to a native or LLVM binary so teams simulate VHDL designs without a commercial HDL simulator.
+tagline: Open-source VHDL simulator
+
+github_url: https://github.com/ghdl/ghdl
+website_url: https://ghdl.github.io/ghdl/
+docs_url: https://ghdl.github.io/ghdl/
+install_command: brew install ghdl
+
+category: Dev Tools
+tags: [ghdl, vhdl, hdl, simulation, fpga, asic]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  VHDL simulation is still dominated by licensed tools. GHDL compiles
+  VHDL-2008/93/87 to a fast native or LLVM executable so teams run
+  testbenches, coverage, and CI on VHDL RTL without a vendor simulator.
+
+use_cases:
+  - Simulate a VHDL-2008 design and testbench from the command line
+  - Co-simulate VHDL with Verilog via GHDL and a mixed-language flow
+  - Run VHDL regressions in CI without a commercial simulator license
+  - Analyze VHDL syntax and elaboration errors before synthesis
