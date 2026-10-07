@@ -1,0 +1,25 @@
+name: MAVROS
+description: MAVROS is a MAVLink-to-ROS gateway with a proxy for ground control stations. It publishes autopilot telemetry as ROS topics and services so PX4 or ArduPilot vehicles plug into ROS 1 and ROS 2 stacks without a custom MAVLink node.
+tagline: MAVLink to ROS gateway for drones and ground stations
+
+github_url: https://github.com/mavlink/mavros
+website_url: https://wiki.ros.org/mavros
+docs_url: https://docs.ros.org/en/humble/p/mavros/
+
+category: Other
+tags: [cpp, ros, ros2, drones, mavlink, px4, ardupilot, robotics]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  ROS robots and MAVLink autopilots speak different buses. MAVROS
+  bridges them so PX4 or ArduPilot telemetry, setpoints, and GCS
+  traffic appear as ROS topics and services instead of a one-off
+  MAVLink node on every vehicle.
+
+use_cases:
+  - Publish autopilot IMU, GPS, and state as ROS topics on a companion computer
+  - Send position or velocity setpoints from a ROS planner to PX4
+  - Proxy a ground control station through ROS while keeping MAVLink intact
+  - Run ROS 2 navigation on an ArduPilot vehicle using MAVROS plugins

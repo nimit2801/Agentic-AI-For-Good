@@ -1,0 +1,27 @@
+name: CycloneDDS
+description: Eclipse Cyclone DDS is an open-source OMG DDS implementation in C. It delivers pub/sub, discovery, and QoS for robotics and IoT so ROS 2 and embedded systems share typed data without a custom message bus.
+tagline: Eclipse DDS implementation for robotics and IoT pub/sub
+
+github_url: https://github.com/eclipse-cyclonedds/cyclonedds
+website_url: https://cyclonedds.io
+docs_url: https://cyclonedds.io/docs/cyclonedds/latest/
+
+category: Other
+tags: [c, dds, ros2, robotics, iot, middleware, pubsub, eclipse]
+pricing: free
+is_open_source: true
+license: EPL-2.0
+
+install_command: pip install cyclonedds
+
+problem_solved: |
+  Distributed robots and IoT nodes need typed pub/sub with discovery
+  and QoS, not a homegrown UDP protocol. Cyclone DDS is an Eclipse
+  OMG DDS implementation used as a ROS 2 RMW so nodes share data
+  across machines without a custom bus.
+
+use_cases:
+  - Run ROS 2 with rmw_cyclonedds_cpp as the DDS middleware
+  - Publish sensor streams between robots with DDS discovery and QoS
+  - Embed a small DDS participant on an IoT or edge device
+  - Prototype typed pub/sub in Python with the cyclonedds package

@@ -1,0 +1,27 @@
+name: MAVSDK
+description: MAVSDK is a C++ library and multi-language API for MAVLink vehicles. It wraps takeoff, missions, telemetry, and camera control so companion computers and ground apps talk to PX4 or ArduPilot without hand-rolled MAVLink packets.
+tagline: High-level MAVLink SDK for drones and companion computers
+
+github_url: https://github.com/mavlink/MAVSDK
+website_url: https://mavsdk.mavlink.io
+docs_url: https://mavsdk.mavlink.io/main/en/
+
+category: Other
+tags: [cpp, python, drones, mavlink, px4, ardupilot, uav, sdk]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+install_command: pip install mavsdk
+
+problem_solved: |
+  Companion computers and GCS apps should not parse raw MAVLink frames
+  for every takeoff, waypoint, or camera command. MAVSDK exposes those
+  actions as a typed API in C++, Python, and other languages so PX4 and
+  ArduPilot vehicles can be scripted without a custom protocol stack.
+
+use_cases:
+  - Script takeoff, waypoint missions, and RTL from a companion computer
+  - Stream GPS, battery, and attitude telemetry into a ground or cloud app
+  - Control gimbal and camera payloads over MAVLink from Python
+  - Build a PX4 SITL integration test that flies a mission without a GCS
