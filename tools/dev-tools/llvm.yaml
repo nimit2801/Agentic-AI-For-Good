@@ -1,0 +1,26 @@
+name: LLVM
+description: LLVM is a collection of modular compiler and toolchain technologies. It provides IR, backends, and optimizers so languages and AI compilers target many CPUs and GPUs from one intermediate representation.
+tagline: Modular compiler infrastructure for languages and toolchains
+
+github_url: https://github.com/llvm/llvm-project
+website_url: https://llvm.org
+docs_url: https://llvm.org/docs/
+
+category: Dev Tools
+tags: [cpp, compilers, ir, toolchain, clang, gpu, optimization, systems]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: brew install llvm
+
+problem_solved: |
+  New languages and AI compilers should not write a backend per chip.
+  LLVM is modular IR, optimizers, and targets so compilers lower to
+  many CPUs and GPUs from one representation.
+
+use_cases:
+  - Lower a language or ML compiler to LLVM IR for CPU and GPU targets
+  - Use Clang and LLVM tools to build and analyze native code
+  - Optimize kernels with LLVM passes before codegen
+  - Target new hardware from an existing LLVM-based compiler
