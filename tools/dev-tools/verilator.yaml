@@ -1,0 +1,26 @@
+name: Verilator
+description: Verilator is an open-source SystemVerilog simulator and linter. It compiles HDL to multithreaded C++ so teams run cycle-accurate tests far faster than event-driven simulators, with lint checks in the same pass.
+tagline: Fast open-source SystemVerilog simulator and linter
+
+github_url: https://github.com/verilator/verilator
+website_url: https://verilator.org
+docs_url: https://verilator.org/guide/latest/
+install_command: brew install verilator
+
+category: Dev Tools
+tags: [verilator, systemverilog, hdl, simulation, lint, fpga, asic]
+pricing: free
+is_open_source: true
+license: LGPL-3.0
+
+problem_solved: |
+  Event-driven Verilog simulators are slow on large designs and often
+  licensed. Verilator compiles SystemVerilog to multithreaded C++ so
+  teams get cycle-accurate tests, coverage, and lint without a closed
+  simulator or overnight regression queues.
+
+use_cases:
+  - Compile a SystemVerilog design to a fast C++ testbench
+  - Lint RTL for width mismatches and unsynthesizable constructs
+  - Run multithreaded regressions on FPGA or ASIC blocks
+  - Co-simulate hardware with a C++ or Python software model
