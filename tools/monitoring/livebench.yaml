@@ -1,0 +1,24 @@
+name: LiveBench
+description: LiveBench is a contamination-free LLM benchmark that releases new questions over time. It scores models on coding, math, reasoning, and language tasks so leaderboards stay harder to game than static exam dumps.
+tagline: Contamination-free LLM benchmark with regularly refreshed tasks
+
+github_url: https://github.com/LiveBench/LiveBench
+website_url: https://livebench.ai
+
+category: Monitoring
+tags: [python, llm, benchmark, evaluation, leaderboard, reasoning, coding]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Static LLM tests leak into training data and inflate scores.
+  LiveBench ships new questions over time across coding, math,
+  and reasoning so evaluations stay harder to game than a frozen
+  exam dump.
+
+use_cases:
+  - Compare foundation models on a contamination-resistant leaderboard
+  - Score a fine-tuned checkpoint against LiveBench coding and math tasks
+  - Track monthly model quality without relying on MMLU memorization
+  - Publish eval results that refresh as new LiveBench questions land

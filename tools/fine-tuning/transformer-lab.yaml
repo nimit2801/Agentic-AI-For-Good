@@ -1,0 +1,25 @@
+name: Transformer Lab
+description: Transformer Lab is an open-source app for training, evaluating, and serving LLMs on local GPUs or clusters. It wraps datasets, LoRA, evals, and inference in a desktop UI so researchers run the model loop without assembling a custom stack.
+tagline: Local app for training, evaluating, and serving LLMs
+
+github_url: https://github.com/transformerlab/transformerlab-app
+website_url: https://lab.cloud
+docs_url: https://lab.cloud/docs
+
+category: Fine-tuning
+tags: [python, llm, fine-tuning, lora, evaluation, local, gpu, training]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Local LLM work usually means wiring datasets, trainers, evals, and
+  a server by hand. Transformer Lab is a desktop research app that
+  trains, evaluates, and serves models on a GPU or cluster without
+  a custom pipeline.
+
+use_cases:
+  - Fine-tune a LoRA adapter on a local GPU from a desktop UI
+  - Evaluate checkpoints with built-in benchmarks before shipping
+  - Serve a local model for chat and API tests on the same machine
+  - Scale a training job from a laptop GPU to a remote cluster
