@@ -1,0 +1,25 @@
+name: VexRiscv
+description: VexRiscv is a 32-bit RISC-V CPU written in SpinalHDL. It is FPGA-friendly and plugin-based so teams generate a custom core with caches, FPU, MMU, or Linux support without a closed ISA IP license.
+tagline: FPGA-friendly 32-bit RISC-V CPU written in SpinalHDL
+
+github_url: https://github.com/SpinalHDL/VexRiscv
+website_url: https://github.com/SpinalHDL/VexRiscv
+docs_url: https://github.com/SpinalHDL/VexRiscv
+
+category: Dev Tools
+tags: [vexriscv, risc-v, cpu, fpga, spinalhdl, hdl, linux]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Soft RISC-V cores on FPGA are often rigid or licensed. VexRiscv
+  generates a 32-bit pipeline in SpinalHDL with plugins for caches,
+  FPU, MMU, and custom instructions so teams size the core to the
+  FPGA and still boot Linux or run bare metal.
+
+use_cases:
+  - Generate a cached RISC-V core for an FPGA SoC without licensed CPU IP
+  - Add custom instructions or CSRs through the VexRiscv plugin system
+  - Boot Linux on a VexRiscv configuration with MMU and caches
+  - Simulate the CPU with Verilator and debug via GDB and OpenOCD
