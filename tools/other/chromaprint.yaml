@@ -1,0 +1,27 @@
+name: chromaprint
+description: Chromaprint is a C library for generating compact audio fingerprints used by AcoustID. It identifies near-identical recordings so apps can match, deduplicate, and monitor audio without storing full waveforms.
+tagline: Compact audio fingerprint library used by AcoustID
+
+github_url: https://github.com/acoustid/chromaprint
+website_url: https://acoustid.org/chromaprint
+docs_url: https://acoustid.org/chromaprint
+
+install_command: brew install chromaprint
+
+category: Other
+tags: [chromaprint, acoustid, audio, fingerprinting, musicbrainz, dsp, fpcalc]
+pricing: free
+is_open_source: true
+license: LGPL-2.1
+
+problem_solved: |
+  Identifying the same recording across encodings, offsets, and noisy copies
+  is expensive if you store full audio. Chromaprint generates compact
+  AcoustID fingerprints so catalog tools, taggers, and stream monitors can
+  match near-identical files without a general-purpose audio search index.
+
+use_cases:
+  - Fingerprint a music library and look up recordings via AcoustID
+  - Detect duplicate audio files that differ only by encoding or offset
+  - Run fpcalc in a tagging pipeline such as MusicBrainz Picard
+  - Monitor a long audio stream for known tracks without storing waveforms
