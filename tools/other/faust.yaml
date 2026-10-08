@@ -1,0 +1,27 @@
+name: Faust
+description: Faust is a functional programming language for real-time signal processing and sound synthesis. DSP authors write equations that compile to C++, LLVM, WebAudio, and plugin formats.
+tagline: Functional language that compiles DSP to plugins and C++
+
+github_url: https://github.com/grame-cncm/faust
+website_url: https://faust.grame.fr
+docs_url: https://faustdoc.grame.fr/
+
+install_command: brew install faust
+
+category: Other
+tags: [faust, dsp, synthesis, audio, compiler, llvm, plugins]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Writing realtime DSP usually means C++ plugins per host. Faust is
+  a functional language that compiles signal equations to C++, LLVM,
+  WebAudio, and VST/AU so researchers prototype synths and effects
+  once and ship them to many runtimes.
+
+use_cases:
+  - Write a Faust synth and compile it to a VST or AU plugin
+  - Generate C++ DSP from signal equations for an embedded target
+  - Prototype effects in the Faust IDE and hear them in real time
+  - Compile Faust to WebAudio for a browser-based instrument

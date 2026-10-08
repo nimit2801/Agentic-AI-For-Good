@@ -1,0 +1,27 @@
+name: Aubio
+description: Aubio is a library for audio and music analysis. It extracts pitch, onset, beat, and tempo from signals so Python and C tools annotate music without a closed MIR stack.
+tagline: Library for pitch, onset, beat, and tempo analysis
+
+github_url: https://github.com/aubio/aubio
+website_url: https://aubio.org
+docs_url: https://aubio.org/manual/latest/
+
+install_command: pip install aubio
+
+category: Other
+tags: [aubio, audio, mir, pitch, onset, beat, python, c]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Music information retrieval needs onset, pitch, and beat tracking
+  without a closed research suite. Aubio is a C library with Python
+  bindings that annotates audio so ML pipelines extract tempo and
+  notes without rolling custom DSP.
+
+use_cases:
+  - Detect onsets and beats in a music track from Python
+  - Extract pitch contours for a singing or instrument recording
+  - Annotate tempo for a dataset before training a rhythm model
+  - Run aubio-onset or aubio-pitch from the command line
