@@ -1,0 +1,25 @@
+name: MPICH
+description: MPICH is a high-performance, portable implementation of the MPI standard from Argonne. It runs distributed HPC and ML jobs across clusters so teams scale C, C++, and Fortran codes without a vendor MPI.
+tagline: Portable MPI implementation from Argonne National Laboratory
+
+github_url: https://github.com/pmodels/mpich
+website_url: https://www.mpich.org
+docs_url: https://www.mpich.org/documentation/guides/
+install_command: brew install mpich
+
+category: Dev Tools
+tags: [mpich, mpi, hpc, distributed, cluster, parallel, argonne, ml]
+pricing: free
+is_open_source: true
+license: BSD
+
+problem_solved: |
+  Distributed scientific and ML codes need a portable MPI runtime that
+  works across interconnects. MPICH implements the MPI standard so teams
+  launch multi-node jobs without locking to a vendor MPI stack.
+
+use_cases:
+  - Compile and launch a multi-node C++ simulation with mpicc and mpirun
+  - Run distributed linear algebra or CFD codes on a campus cluster
+  - Compare MPICH and Open MPI on the same MPI application
+  - Teach parallel programming with a reference MPI implementation
