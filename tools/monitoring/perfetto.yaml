@@ -1,0 +1,26 @@
+name: Perfetto
+description: Perfetto is Google's production tracing stack. It records system and app traces, then opens them in a timeline UI so Android, Linux, and Chrome teams find CPU, memory, and I/O stalls in complex software.
+tagline: Production tracing and profiling stack from Google
+
+github_url: https://github.com/google/perfetto
+website_url: https://www.perfetto.dev
+docs_url: https://perfetto.dev/docs/
+
+category: Monitoring
+tags: [perfetto, tracing, profiling, android, linux, chrome, observability, performance]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Short stalls in mobile, Chrome, and Linux stacks are hard to see
+  with sampling profilers. Perfetto records ftrace, userspace, and
+  heap events into a protobuf trace and opens a timeline UI so ML
+  on-device runtimes and native servers get production-grade traces
+  without a vendor APM.
+
+use_cases:
+  - Trace CPU and memory stalls in an on-device ML runtime
+  - Open a system trace in the Perfetto UI to find I/O bubbles
+  - Collect ftrace and userspace events from a Linux inference host
+  - Compare traces across Chrome, Android, and native Linux services

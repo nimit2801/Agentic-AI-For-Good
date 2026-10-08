@@ -1,0 +1,25 @@
+name: Hyperscan
+description: Hyperscan is Intel's high-performance regex library. It matches many patterns at once with SIMD so DPI, log scanners, and content filters search streams at line rate without a slow backtracking engine.
+tagline: High-performance multi-pattern regular expression matching
+
+github_url: https://github.com/intel/hyperscan
+website_url: https://www.hyperscan.io
+docs_url: https://intel.github.io/hyperscan/dev-reference/
+
+category: Dev Tools
+tags: [hyperscan, regex, simd, dpi, pattern-matching, intel, c++, streaming]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Matching thousands of regexes on a live stream with PCRE-style
+  backtracking cannot keep up with NICs. Hyperscan compiles many
+  patterns into SIMD automata so log scanners, DPI, and content
+  filters search packets and files at line rate.
+
+use_cases:
+  - Scan logs or packets against thousands of regexes at once
+  - Build a DPI or content-filter pipeline on SIMD automata
+  - Match streaming buffers without backtracking catastrophic cases
+  - Replace a slow multi-pattern grep in a security or telemetry path
