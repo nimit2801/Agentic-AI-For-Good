@@ -1,0 +1,28 @@
+name: libsndfile
+description: libsndfile is a C library for reading and writing sampled sound files. It handles WAV, FLAC, Ogg, and many other formats so audio tools decode and encode files without a format-specific parser.
+tagline: C library for reading and writing sampled sound files
+
+github_url: https://github.com/libsndfile/libsndfile
+website_url: https://libsndfile.github.io/libsndfile/
+docs_url: https://libsndfile.github.io/libsndfile/api.html
+
+install_command: brew install libsndfile
+
+category: Other
+tags: [libsndfile, audio, wav, flac, ogg, c, codec, sound-files]
+pricing: free
+is_open_source: true
+license: LGPL-2.1
+
+problem_solved: |
+  Audio pipelines need to read and write many file formats, and
+  writing a parser per codec is fragile. libsndfile opens WAV,
+  FLAC, Ogg, and dozens of other sampled formats through one C
+  API so tools, DAWs, and ML loaders decode and encode without
+  a custom format stack.
+
+use_cases:
+  - Read WAV or FLAC training audio into a C or Python pipeline
+  - Write model-generated samples to a standard sound file
+  - Convert between sampled audio formats without FFmpeg
+  - Link libsndfile as the file I/O layer in a native audio tool
