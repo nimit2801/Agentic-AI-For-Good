@@ -1,0 +1,27 @@
+name: SuperCollider
+description: SuperCollider is an audio server, programming language, and IDE for sound synthesis and algorithmic composition. Live-coders and researchers write synths, patterns, and DSP graphs that run in real time.
+tagline: Audio server, language, and IDE for real-time synthesis
+
+github_url: https://github.com/supercollider/supercollider
+website_url: https://supercollider.github.io
+docs_url: https://doc.sccode.org/
+
+install_command: brew install --cask supercollider
+
+category: Other
+tags: [supercollider, synthesis, dsp, live-coding, audio, scsynth, sclang]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Building custom synths and algorithmic scores needs a real-time audio
+  server plus a language that can spawn graphs on the fly. SuperCollider
+  ships scsynth, sclang, and an IDE so researchers and live-coders write
+  DSP, patterns, and installations without a commercial DAW plugin stack.
+
+use_cases:
+  - Write a custom synth graph and hear it on the scsynth audio server
+  - Live-code patterns and generative scores in a concert setting
+  - Prototype DSP algorithms before compiling them as native plugins
+  - Control SuperCollider from Python or OSC in an ML audio experiment

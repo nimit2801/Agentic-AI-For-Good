@@ -1,0 +1,27 @@
+name: JACK
+description: JACK is a low-latency audio server that routes audio and MIDI between applications. Pro audio tools, DAWs, and synths share a real-time graph so live coding and ML audio pipelines stay in sync.
+tagline: Low-latency audio server that routes apps in real time
+
+github_url: https://github.com/jackaudio/jack2
+website_url: https://jackaudio.org
+docs_url: https://jackaudio.org/api/
+
+install_command: brew install jack
+
+category: Other
+tags: [jack, audio, midi, realtime, low-latency, routing, pro-audio]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Desktop audio stacks mix apps independently, which adds latency and
+  breaks sample-accurate routing. JACK is a real-time server that connects
+  DAWs, synths, and live-coding tools on one graph so capture, playback,
+  and ML audio pipelines share clocks without a hardware mixer.
+
+use_cases:
+  - Route a live-coding synth into a DAW with sample-accurate timing
+  - Connect microphone capture to an ML inference process over JACK
+  - Share one audio device across SuperCollider, FluidSynth, and a DAW
+  - Build a headless low-latency audio graph on Linux for batch rendering
