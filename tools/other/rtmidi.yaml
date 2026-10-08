@@ -1,0 +1,26 @@
+name: RtMidi
+description: RtMidi is a C++ API for realtime MIDI input and output on Linux, macOS, and Windows. Apps talk to MIDI hardware through one portable layer instead of ALSA, CoreMIDI, or WinMM separately.
+tagline: Cross-platform C++ API for realtime MIDI I/O
+
+github_url: https://github.com/thestk/rtmidi
+website_url: https://github.com/thestk/rtmidi
+docs_url: https://github.com/thestk/rtmidi
+
+install_command: brew install rtmidi
+
+category: Other
+tags: [rtmidi, midi, c++, realtime, alsa, coremidi, audio]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  MIDI I/O is a different API on every OS. RtMidi wraps ALSA, JACK,
+  CoreMIDI, and WinMM so C++ apps send and receive realtime MIDI
+  through one portable layer instead of three platform backends.
+
+use_cases:
+  - Send MIDI from a C++ synth or sequencer to hardware
+  - Receive controller input in a cross-platform music app
+  - Prototype MIDI routing without writing ALSA or CoreMIDI code
+  - Embed portable MIDI I/O in a plugin or standalone instrument
