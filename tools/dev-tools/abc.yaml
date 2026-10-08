@@ -1,0 +1,25 @@
+name: ABC
+description: ABC is a system for sequential logic synthesis and formal verification. It rewrites, maps, and proves gate-level circuits so FPGA and ASIC tools such as Yosys optimize netlists without a closed synthesis kernel.
+tagline: Sequential logic synthesis and formal verification library
+
+github_url: https://github.com/berkeley-abc/abc
+website_url: https://people.eecs.berkeley.edu/~alanmi/abc/
+docs_url: https://people.eecs.berkeley.edu/~alanmi/abc/
+
+category: Dev Tools
+tags: [abc, logic-synthesis, formal-verification, yosys, asic, fpga, eda, aig]
+pricing: free
+is_open_source: true
+license: BSD
+
+problem_solved: |
+  Gate-level optimization and sequential verification need a synthesis
+  kernel most teams cannot license. ABC rewrites AIGs, maps logic, and
+  proves properties so Yosys and open ASIC flows optimize netlists
+  without a closed kernel.
+
+use_cases:
+  - Rewrite an AIG netlist to cut area or delay before technology mapping
+  - Embed libabc in Yosys for sequential optimization passes
+  - Prove a combinational miter with ABC's SAT and BDD engines
+  - Teach logic synthesis with a free Berkeley toolkit
