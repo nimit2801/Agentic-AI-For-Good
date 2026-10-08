@@ -1,0 +1,25 @@
+name: DPDK
+description: DPDK is a set of libraries and drivers for fast packet processing in user space. It polls NICs, skips the kernel network stack, and lets servers and inference gateways move packets at line rate.
+tagline: User-space libraries for line-rate packet processing
+
+github_url: https://github.com/DPDK/dpdk
+website_url: https://www.dpdk.org/
+docs_url: https://doc.dpdk.org/
+
+category: Dev Tools
+tags: [dpdk, networking, packet-processing, nic, user-space, performance, linux]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Kernel sockets copy packets and cannot fill 100G NICs. DPDK
+  polls devices in user space with huge pages and lockless rings
+  so databases, Seastar services, and inference gateways process
+  packets at line rate without the kernel network stack.
+
+use_cases:
+  - Poll a NIC in user space for a line-rate packet pipeline
+  - Back a Seastar or custom C server with DPDK I/O
+  - Bypass the kernel stack in a low-latency inference gateway
+  - Build a user-space switch or load balancer on huge pages

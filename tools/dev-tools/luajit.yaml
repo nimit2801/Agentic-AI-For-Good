@@ -1,0 +1,25 @@
+name: LuaJIT
+description: LuaJIT is a Just-In-Time compiler for Lua 5.1. It runs Lua with a tracing JIT and FFI so games, Nginx, and embedding hosts get near-C speed without leaving the Lua language.
+tagline: Tracing JIT compiler for Lua with C FFI
+
+github_url: https://github.com/LuaJIT/LuaJIT
+website_url: https://luajit.org
+docs_url: https://luajit.org/luajit.html
+
+category: Dev Tools
+tags: [luajit, lua, jit, ffi, embedding, nginx, performance, c]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Standard Lua is too slow for hot paths in games, proxies, and
+  embedded agents. LuaJIT compiles traces to machine code and
+  calls C via FFI so teams keep Lua scripts while matching C
+  performance on numeric and I/O heavy loops.
+
+use_cases:
+  - Embed a fast Lua runtime in a native agent or game engine
+  - Speed up Nginx and OpenResty scripts with the LuaJIT FFI
+  - Call C libraries from Lua without a handwritten binding
+  - Run numeric hot loops in Lua at near-C speed
