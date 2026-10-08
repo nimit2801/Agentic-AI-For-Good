@@ -1,0 +1,27 @@
+name: Pedalboard
+description: Pedalboard is a Python library for audio from Spotify. It loads plugins, applies effects, and processes buffers so ML pipelines add studio-quality FX without a DAW.
+tagline: Python library for audio effects and plugin hosting
+
+github_url: https://github.com/spotify/pedalboard
+website_url: https://spotify.github.io/pedalboard/
+docs_url: https://spotify.github.io/pedalboard/
+
+install_command: pip install pedalboard
+
+category: Other
+tags: [pedalboard, python, audio, effects, vst, spotify, dsp]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Adding studio effects to ML audio usually means bouncing through
+  a DAW. Pedalboard loads VST/AU plugins and built-in FX in Python
+  so training and inference pipelines compress, reverb, and mix
+  buffers without leaving NumPy.
+
+use_cases:
+  - Apply reverb, compression, or EQ to model audio in Python
+  - Host VST3 or Audio Unit plugins inside a training pipeline
+  - Augment speech or music datasets with studio effects
+  - Mix generated stems without bouncing through a DAW
