@@ -1,0 +1,25 @@
+name: PortAudio
+description: PortAudio is a cross-platform C API for real-time audio I/O. It talks to Core Audio, WASAPI, ALSA, and JACK so apps play and capture streams without writing a backend per OS.
+tagline: Cross-platform C API for real-time audio input and output
+
+github_url: https://github.com/PortAudio/portaudio
+website_url: https://www.portaudio.com/
+docs_url: https://www.portaudio.com/docs/v19-doxydocs/
+
+category: Other
+tags: [portaudio, audio, realtime, capture, playback, c, alsa, wasapi, coreaudio]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Real-time capture and playback APIs differ on every OS. PortAudio
+  wraps Core Audio, WASAPI, ALSA, and JACK into one C callback API
+  so speech tools, DAWs, and native ML demos stream audio without
+  a backend per platform.
+
+use_cases:
+  - Capture microphone input for a local speech or TTS pipeline
+  - Play model audio samples from a cross-platform C or C++ app
+  - Write one audio callback that runs on macOS, Windows, and Linux
+  - Back Python bindings such as PyAudio without owning OS backends

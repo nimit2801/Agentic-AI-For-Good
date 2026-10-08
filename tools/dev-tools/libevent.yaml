@@ -1,0 +1,25 @@
+name: libevent
+description: libevent is a C event-notification library. It watches sockets, signals, and timers on one loop so servers and clients stay portable across epoll, kqueue, and Windows without writing OS-specific I/O.
+tagline: Portable C event-notification library for sockets and timers
+
+github_url: https://github.com/libevent/libevent
+website_url: https://libevent.org
+docs_url: https://libevent.org/doc/
+
+category: Dev Tools
+tags: [libevent, event-loop, async, sockets, c, networking, epoll, kqueue]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Native servers need one loop for sockets, signals, and timers, but
+  epoll, kqueue, and IOCP APIs differ. libevent wraps those backends
+  so memcached-style services, proxies, and agent workers stay
+  portable without rewriting I/O per OS.
+
+use_cases:
+  - Drive a portable event loop in a C proxy or model gateway
+  - Watch sockets and timers without writing epoll and kqueue by hand
+  - Port a Unix server to Windows with the same libevent APIs
+  - Build a lightweight async client for telemetry or agent callbacks

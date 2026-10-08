@@ -1,0 +1,26 @@
+name: PipeWire
+description: PipeWire is a Linux multimedia server for audio and video. It unifies JACK, PulseAudio, and capture so desktop and sandbox apps share low-latency streams without fighting over the sound device.
+tagline: Linux multimedia server that unifies audio and video streams
+
+github_url: https://github.com/PipeWire/pipewire
+website_url: https://pipewire.org
+docs_url: https://docs.pipewire.org/
+
+category: Other
+tags: [pipewire, linux, audio, video, pulseaudio, jack, multimedia, capture]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Linux audio used to split JACK, PulseAudio, and camera capture
+  into competing daemons. PipeWire is one graph that offers
+  low-latency pro audio, desktop playback, and video capture so
+  speech apps, sandboxes, and ML demos share devices without
+  fighting over the sound card.
+
+use_cases:
+  - Route microphone and speaker streams for a local speech app on Linux
+  - Replace PulseAudio and JACK with one session for desktop ML demos
+  - Capture camera and audio into a sandbox without device conflicts
+  - Graph low-latency audio nodes for a Linux recording or inference box
