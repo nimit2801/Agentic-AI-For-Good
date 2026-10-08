@@ -1,0 +1,27 @@
+name: mido
+description: mido is a Python library for working with MIDI messages, files, and ports. Scripts send and receive MIDI without binding to a single OS MIDI API.
+tagline: MIDI objects, files, and ports for Python
+
+github_url: https://github.com/mido/mido
+website_url: https://mido.readthedocs.io
+docs_url: https://mido.readthedocs.io
+
+install_command: pip install mido
+
+category: Other
+tags: [mido, python, midi, ports, messages, music]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Sending MIDI from Python usually means wrapping CoreMIDI, ALSA, or
+  WinMM yourself. mido gives a small object model for messages, files,
+  and ports so scripts talk to hardware and sequencers without an
+  OS-specific MIDI binding.
+
+use_cases:
+  - Send MIDI notes from a Python script to a hardware synth
+  - Parse and rewrite Standard MIDI Files in a data pipeline
+  - Bridge MIDI between ports in a live coding or ML setup
+  - Log incoming controller messages for mapping or dataset capture

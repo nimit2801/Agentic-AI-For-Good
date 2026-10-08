@@ -1,0 +1,26 @@
+name: pretty-midi
+description: pretty_midi is a Python library for handling MIDI in an intuitive object model. Researchers load, edit, and synthesize MIDI so symbolic music pipelines stay in Python without a DAW.
+tagline: Python library for intuitive MIDI handling
+
+github_url: https://github.com/craffel/pretty-midi
+website_url: https://github.com/craffel/pretty-midi
+docs_url: https://craffel.github.io/pretty-midi/
+
+install_command: pip install pretty_midi
+
+category: Other
+tags: [pretty-midi, python, midi, music, synthesis, symbolic]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Working with MIDI in Python is painful if you only have raw tick lists.
+  pretty_midi wraps notes, instruments, and timing in objects so ML and
+  MIR pipelines load, edit, and synthesize MIDI without a sequencer GUI.
+
+use_cases:
+  - Load a MIDI file and inspect notes, tempos, and instruments in Python
+  - Synthesize MIDI to audio for listening or dataset checks
+  - Edit note timings and pitches before training a symbolic music model
+  - Convert between MIDI objects and piano-roll arrays for ML

@@ -1,0 +1,27 @@
+name: FLAC
+description: FLAC is the Free Lossless Audio Codec. Archives and production pipelines compress PCM without quality loss so music and speech stay bit-exact at a fraction of WAV size.
+tagline: Free lossless audio codec for bit-exact PCM
+
+github_url: https://github.com/xiph/flac
+website_url: https://xiph.org/flac/
+docs_url: https://xiph.org/flac/documentation.html
+
+install_command: brew install flac
+
+category: Other
+tags: [flac, audio, codec, lossless, xiph, compression]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Storing production audio as WAV wastes disk, while lossy codecs destroy
+  samples needed for mastering and ML. FLAC losslessly compresses PCM so
+  archives, DAWs, and datasets keep bit-exact audio at a fraction of
+  uncompressed size.
+
+use_cases:
+  - Archive a music library losslessly instead of WAV
+  - Encode training audio without introducing codec artifacts
+  - Decode FLAC streams in a player or DSP pipeline
+  - Ship reference audio with open tools instead of a closed lossless codec
