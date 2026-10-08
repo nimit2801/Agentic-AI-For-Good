@@ -1,0 +1,27 @@
+name: ChucK
+description: ChucK is a strongly-timed programming language for real-time sound synthesis and music creation. Composers and researchers write concurrent audio programs that can be added and modified on the fly.
+tagline: Strongly-timed language for real-time sound synthesis
+
+github_url: https://github.com/ccrma/chuck
+website_url: https://chuck.stanford.edu/
+docs_url: https://chuck.stanford.edu/doc/
+
+install_command: brew install chuck
+
+category: Other
+tags: [chuck, audio, synthesis, music, live-coding, dsp, concurrent]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Real-time computer music needs a language that treats time as a first-class
+  primitive, not a callback afterthought. ChucK is a strongly-timed concurrent
+  language so composers and researchers write synthesis, analysis, and live
+  patches that can be modified on the fly without a commercial DAW plugin stack.
+
+use_cases:
+  - Live-code a concurrent synth patch and hear it change on the fly
+  - Teach computer music with a time-based language instead of a DAW
+  - Prototype DSP algorithms with precise control rates and concurrency
+  - Drive MIDI, OSC, and HID devices from a ChucK performance program

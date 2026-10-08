@@ -1,0 +1,27 @@
+name: OpenAL Soft
+description: OpenAL Soft is a software implementation of the OpenAL 3D audio API. Games and spatial-audio apps render positional sound, HRTF, and effects without depending on a vendor-specific hardware OpenAL driver.
+tagline: Software implementation of the OpenAL 3D audio API
+
+github_url: https://github.com/kcat/openal-soft
+website_url: https://openal-soft.org/
+docs_url: https://openal-soft.org/
+
+install_command: brew install openal-soft
+
+category: Other
+tags: [openal, 3d-audio, spatial-audio, hrtf, games, audio, c++]
+pricing: free
+is_open_source: true
+license: LGPL-2.1
+
+problem_solved: |
+  Spatial audio in games and simulations often depends on closed vendor OpenAL
+  drivers that vanish or stall. OpenAL Soft is a maintained software renderer
+  for the OpenAL API so engines get positional sound, HRTF, and effects on
+  Linux, macOS, and Windows without a hardware-specific driver.
+
+use_cases:
+  - Render positional 3D audio in a game engine through the OpenAL API
+  - Enable HRTF headphone spatialization without a proprietary audio SDK
+  - Ship cross-platform OpenAL support when hardware drivers are missing
+  - Prototype spatial effects and reverb for VR or simulation audio

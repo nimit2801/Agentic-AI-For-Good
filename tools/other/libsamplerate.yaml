@@ -1,0 +1,27 @@
+name: libsamplerate
+description: libsamplerate is a high-quality audio sample rate conversion library. DAWs, players, and DSP pipelines resample PCM between rates with sinc interpolators instead of naive linear interpolation that aliases.
+tagline: High-quality audio sample rate conversion library
+
+github_url: https://github.com/libsndfile/libsamplerate
+website_url: https://libsndfile.github.io/libsamplerate/
+docs_url: https://libsndfile.github.io/libsamplerate/
+
+install_command: brew install libsamplerate
+
+category: Other
+tags: [libsamplerate, audio, resampling, dsp, pcm, secret-rabbit-code]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Changing sample rate with linear interpolation aliases and dulls transients.
+  Production audio needs a converter that preserves bandwidth. libsamplerate
+  (Secret Rabbit Code) is a sinc-based SRC library so players, DAWs, and
+  DSP pipelines resample PCM between rates without a closed codec stack.
+
+use_cases:
+  - Resample PCM between 44.1 kHz and 48 kHz in a player or DAW
+  - Convert training audio to a model sample rate without naive interpolation
+  - Embed high-quality SRC in a C or C++ audio engine
+  - Batch-convert a corpus to a single rate before feature extraction

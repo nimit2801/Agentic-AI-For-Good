@@ -1,0 +1,28 @@
+name: madmom
+description: Python audio and music signal processing library from JKU Linz. madmom ships MIR algorithms and pretrained models for beat, downbeat, onset, and chord tasks so researchers extract musical structure without training from scratch.
+tagline: Python MIR library for beat, onset, and chord analysis
+
+github_url: https://github.com/CPJKU/madmom
+website_url: https://madmom.readthedocs.io
+docs_url: https://madmom.readthedocs.io
+
+install_command: pip install madmom
+
+category: Other
+tags: [madmom, python, mir, audio, beat-tracking, onset, chords, dsp]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Music information retrieval needs more than generic spectrograms. Beat,
+  downbeat, onset, and chord tracking require specialized models and DSP.
+  madmom is a Python library with reference algorithms and pretrained
+  processors so researchers extract musical structure without rebuilding
+  the MIR stack from papers.
+
+use_cases:
+  - Track beats and downbeats on a music corpus for alignment or remixing
+  - Detect onsets and notes as features for transcription or ML datasets
+  - Estimate chords and key as inputs to a recommendation or analysis pipeline
+  - Reproduce MIR paper baselines with madmom processors in Python
