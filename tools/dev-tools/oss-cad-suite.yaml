@@ -1,0 +1,25 @@
+name: OSS CAD Suite
+description: OSS CAD Suite is a nightly binary distribution of open digital design tools. It bundles Yosys, nextpnr, formal solvers, and FPGA programmers so hardware teams install a complete open CAD flow without building each tool.
+tagline: Nightly builds of open-source digital design and verification tools
+
+github_url: https://github.com/YosysHQ/oss-cad-suite-build
+website_url: https://github.com/YosysHQ/oss-cad-suite-build
+docs_url: https://github.com/YosysHQ/oss-cad-suite-build#installation
+
+category: Dev Tools
+tags: [oss-cad-suite, yosys, fpga, formal-verification, nextpnr, eda, toolchain]
+pricing: free
+is_open_source: true
+license: ISC
+
+problem_solved: |
+  Open FPGA and formal tools each have their own build and solver
+  dependencies. OSS CAD Suite ships nightly binaries of Yosys, nextpnr,
+  sby, and programmers so teams get a working CAD flow without compiling
+  every package.
+
+use_cases:
+  - Install Yosys, nextpnr, and sby from one nightly tarball
+  - Run a formal proof with bundled SMT solvers instead of compiling them
+  - Program an iCE40 or ECP5 board with the included openFPGALoader
+  - Teach an FPGA lab from a single portable toolchain archive

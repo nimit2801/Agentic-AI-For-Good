@@ -1,0 +1,24 @@
+name: XLS
+description: XLS is Google's high-level synthesis toolchain. It compiles high-level hardware descriptions to synthesizable Verilog and native host software so teams co-design IP that is both a simulator and a silicon block.
+tagline: Accelerated high-level hardware synthesis from Google
+
+github_url: https://github.com/google/xls
+website_url: https://google.github.io/xls/
+docs_url: https://google.github.io/xls/tools_quick_start/
+
+category: Dev Tools
+tags: [xls, hls, verilog, systemverilog, google, hardware, synthesis, eda]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Hardware IP is usually written at RTL and reimplemented as host models.
+  XLS compiles one high-level description to synthesizable Verilog and
+  native software so teams keep a single source for silicon and simulation.
+
+use_cases:
+  - Compile a DSLX function into pipelined synthesizable Verilog
+  - Run the same XLS design as host software for fast simulation
+  - Formally check that generated hardware matches the software model
+  - Prototype a hardware accelerator without starting from Verilog
