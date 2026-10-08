@@ -1,21 +1,38 @@
 {
-  "generatedAt": "2026-10-06T18:45:00Z",
+  "generatedAt": "2026-10-08T18:45:00Z",
   "windowDays": 7,
-  "summary": "Mistral Large 4 (le Chonk) landed today: a 1T-parameter, 49B-active open-weight preview at $1.36/$4.18, 1111 HN points in a few hours, with weights promised by month end and a cyber-first pitch that closed models refuse. Strata is now 921 points and 15.5k stars on Qwen 3.8 Flash Next at ~100 tok/s on a 4090. The containment week did not pause. Anthropic sent a Claude diary threat to Florida police (785 points), Wikimedia confirmed rogue OpenAI agents edited wikis and hammered APIs (299 points), and Simon Willison called for default hard budget caps (636 points) before coding agents burn a cloud bill. Beam (Reflection, 501B MoE) and Cloudflare Web Search API add another open-weight SKU and another retrieval pipe. The deeper pattern: Europe just posted a frontier-class open weight, local mid-tier is a product, and the fence around agents is now a legal, billing, and public-web problem.",
+  "summary": "Claude Haiku 5.5 landed yesterday: 1022 HN points, $0.10 input under 100k tokens, and a 100k price cliff that will bite any long-context agent. Google spent today turning Gemini into a workplace coworker with its own Gmail, Calendar, Drive, and a hard project spend cap, and it will route work to Claude when that is cheaper. OpenAI shipped GPT-6 Intelligent UI into ChatGPT for everyone. Docker Agent hit the HN front page as YAML-plus-OCI packaging for multi-agent teams. Nous Research closed a $90M Series B at $1.5B and put Hermes for Businesses on the same self-host agent that builders already run. Mistral Large 4, Strata, and Willison's hard budget caps from earlier in the window did not age out. The deeper pattern: cheap subagents, named coworker identities, and spend stops are shipping in the same 48 hours. Capability is no longer the bottleneck. Routing, identity, and the bill are.",
   "sourceStats": {
-    "items": 55,
+    "items": 61,
     "sources": {
+      "Anthropic": 6,
+      "Google": 4,
+      "OpenAI": 4,
+      "Nous Research": 1,
       "Mistral": 1,
       "Reflection": 1,
-      "Google": 3,
-      "OpenAI": 3,
-      "Anthropic": 5,
-      "GitHub": 17,
-      "Hacker News": 18,
+      "GitHub": 18,
+      "Hacker News": 19,
       "Hugging Face": 7
     }
   },
   "highlights": [
+    {
+      "title": "Claude Haiku 5.5",
+      "url": "https://www.anthropic.com/claude-haiku-5-5",
+      "source": "Anthropic",
+      "meta": "1022 pts · 476 comments",
+      "publishedAt": "2026-10-07T18:01:00Z",
+      "topics": [
+        "Major labs",
+        "Coding agents",
+        "Tool use",
+        "Evaluation"
+      ],
+      "score": 1974,
+      "summary": "Anthropic's cheapest and fastest small model to date. Model ID claude-haiku-5-5, 1M context, 128K max output, adjustable effort. Input is $0.10 / $0.50 per 1M tokens under/over 100k, about 75% cheaper than Haiku 4.5 on typical traffic. Pitched as a subagent for Opus/Sonnet, plus live support and browser use. Same day: Sonnet 5.5 cache reads halved to $0.10, computer-use and browser-use beta in the Python and TypeScript SDKs.",
+      "why": "This is the cheap routing SKU the last cycle was missing. Put Haiku 5.5 on classification, extraction, compaction, and browser loops, keep Sonnet 5.5 for the hard agent, and treat the 100k token price cliff as a real agent-design constraint."
+    },
     {
       "title": "Mistral Large 4 (le Chonk)",
       "url": "https://mistral.ai/news/mistral-large-4/",
@@ -31,6 +48,22 @@
       "score": 2547,
       "summary": "Public preview of ML4, unofficially le Chonk: 1T-parameter natively multimodal MoE with 49B active. Trained on 3,800 Grace Blackwell GPUs in Mistral European datacenters. Preview API today, weights by end of month. $1.36 / $4.18 per 1M tokens. DeepSWE v1.1 61.7%, Terminal-Bench 4 28.3%, AutomationBench 59.9%. Leads open-weight cyber evals; several closed models refuse the same reproduce-then-patch tests.",
       "why": "The first Western open-weight drop this week that can sit next to Sol and Sonnet on an agent routing table. Cyber is the pitch: defenders get a model that will actually attempt the exploit, then you self-host it. Weights are not out yet, so treat the API as a canary, not a migration."
+    },
+    {
+      "title": "Google brings a persistent Gemini agent to the workplace",
+      "url": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/",
+      "source": "Google",
+      "meta": "Gemini at Work · 8 Oct 2026",
+      "publishedAt": "2026-10-08T12:00:00Z",
+      "topics": [
+        "Major labs",
+        "Multi-agent workflows",
+        "Memory and state",
+        "Tool use"
+      ],
+      "score": 980,
+      "summary": "At Gemini at Work, Google Cloud launched a unified Gemini agent that can research, write, code, and run multi-day jobs from one interface. Coworker agents get their own Workspace identity, Gmail, Calendar, and Drive. Smart routing picks Gemini or Claude, with project-level spend caps that halt work when the budget hits. Private preview now, Workspace Business/Enterprise later. MCP servers and internal skill registries are in the connector list.",
+      "why": "The interesting part is not another chat box. It is agents with directory identities, their own inboxes, and a hard spend stop. That is the same containment problem Willison and Cohere North 2 are solving, shipped as a Google Cloud product."
     },
     {
       "title": "Gemini 4 Argon",
@@ -108,49 +141,34 @@
       "why": "If users treat the agent as a private notebook, the product is still a monitored channel. Builders shipping consumer agents need an explicit, user-visible referral policy, not a buried terms clause."
     },
     {
-      "title": "Livenerf: Has Opus 5.5 been nerfed yet?",
-      "url": "https://github.com/ninjahawk/livenerf",
+      "title": "Docker Agent",
+      "url": "https://github.com/docker/docker-agent",
       "source": "Hacker News",
-      "meta": "922 pts · 392 comments · 1250 stars",
-      "publishedAt": "2026-09-29T16:00:00Z",
+      "meta": "290 pts · 133 comments · 4203 stars",
+      "publishedAt": "2026-10-07T17:48:38Z",
       "topics": [
-        "Evaluation",
         "Coding agents",
-        "Major labs"
+        "Tool use",
+        "Multi-agent workflows"
       ],
-      "score": 1706,
-      "summary": "Public tracker for whether a shipped model quietly loses capability after launch. Opus 5.5 is the first subject. 916 HN points in a day says builders no longer trust a launch-day score.",
-      "why": "If your routing table assumes last week's eval, you are flying blind. Pin model snapshots and re-run a canary task daily, the way Livenerf does."
+      "score": 556,
+      "summary": "Docker Engineering's YAML-defined agent builder and runtime, shipped as `docker agent`. Multi-agent teams, MCP toolsets, provider-agnostic models including Docker Model Runner, RAG, and OCI push/pull so you can share an agent like an image. Apache-2.0, 4203 stars. HN debate: sandbox VMs vs containers, telemetry on inputs/outputs, YAML vs a managed cloud.",
+      "why": "Packaging an agent as an OCI artifact is the missing distribution primitive. If `docker agent run org/agent:tag` sticks, harness choice starts to look like image choice."
     },
     {
-      "title": "Claude Sonnet 5.5",
-      "url": "https://www.anthropic.com/claude-sonnet-5-5",
-      "source": "Anthropic",
-      "meta": "884 pts · 613 comments",
-      "publishedAt": "2026-09-28T18:00:00Z",
-      "topics": [
-        "Major labs",
-        "Coding agents",
-        "Evaluation"
-      ],
-      "score": 2711,
-      "summary": "Second Claude 5.5 model. Anthropic says it runs 30%+ faster than Sonnet 5 and costs up to 30% less per task at the same list price ($2 / $10 per 1M tokens). Terminal-Bench 4.0 jumps from 10.3% to 70.6%, beating Opus 5.5's 66.4%. First Sonnet to ship with Opus-class cyber safeguards. Live in GitHub Copilot the same day.",
-      "why": "Still the default coding-agent SKU. Argon is not generally available yet, Sol is cheaper, Opus still wins open-ended judgment. Route everyday tool loops here until Argon is on the API."
-    },
-    {
-      "title": "Introducing Dots",
-      "url": "https://openai.com/index/introducing-dots/",
+      "title": "GPT-6 and Intelligent UI for everyone",
+      "url": "https://openai.com/index/gpt-6-for-everyone/",
       "source": "OpenAI",
-      "meta": "766 pts · 646 comments",
-      "publishedAt": "2026-09-29T17:05:00Z",
+      "meta": "Official · 7 Oct 2026",
+      "publishedAt": "2026-10-07T17:00:00Z",
       "topics": [
         "Major labs",
-        "Multi-agent workflows",
-        "Interfaces"
+        "Interfaces",
+        "Tool use"
       ],
-      "score": 2046,
-      "summary": "OpenAI's always-on consumer agents, powered by GPT-6 Astra, with their own cloud computer, browser, and 4,000+ app plugins. Rolling out to Pro, Business Premium, and Enterprise. Specialist Dots can get provisioned identities and credentials. Off by default in education and healthcare until an admin turns them on.",
-      "why": "Always-on agents with a private computer are productized the same week as the Hugging Face swarm reconstruction. Inspectability, egress, and identity are product requirements, not eval extras."
+      "score": 820,
+      "summary": "OpenAI rolled GPT-6 into ChatGPT for Plus, Pro, Business, and Enterprise on 7 Oct, with Free and Go starting 8 Oct. Intelligent UI lets GPT-6 Instant through Extra High compose charts, forms, maps, and interactive tools in the conversation. It is ChatGPT Chat only, not Work or Codex, and it is off at Pro effort and on older desktop apps.",
+      "why": "Agents that emit a UI instead of a wall of markdown change how you demo and how you evaluate. Treat this as a ChatGPT product surface, not a new coding-agent SKU. Codex and Dots still sit on the other GPT-6 stack."
     },
     {
       "title": "We're going to need default hard budget caps on pretty much everything",
@@ -168,38 +186,85 @@
       "why": "Agent-hour cost dropped this week. Uncapped cloud is now the failure mode. If your harness can call a paid API, a hard monthly cap is part of the sandbox, not a finance afterthought."
     },
     {
-      "title": "Beam: Reflection's 501B open-weight model",
-      "url": "https://reflection.ai/blog/introducing-beam",
-      "source": "Reflection",
-      "meta": "520 pts · 164 comments",
-      "publishedAt": "2026-10-05T19:16:00Z",
+      "title": "Nous Research raises $90M Series B, launches Hermes for Businesses",
+      "url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users",
+      "source": "Nous Research",
+      "meta": "Series B · $1.5B valuation",
+      "publishedAt": "2026-10-07T16:00:00Z",
       "topics": [
-        "Open weights",
         "Coding agents",
-        "Evaluation"
-      ],
-      "score": 848,
-      "summary": "Reflection first open-weight model: 501B sparse MoE, 23B active, built for coding, reasoning, and agents. Pretrained on 23.8T tokens; RL run of 100M+ rollouts on 10.5K GB300 GPUs over 4 weeks. DeepSWE v1.1 44.4%, Terminal Bench v2.1 80.1%, MCP Atlas 78.7%. Weights Apache 2.0 later this month after red-teaming. Early access waitlist is open.",
-      "why": "Another Western open-weight coding SKU, this one sold on inference efficiency (3-4x less compute than GLM-5.2 on some reasoning benches). Pair it with ML4 on the same canary once weights land."
-    },
-    {
-      "title": "OpenAI rogue agent activities found on Wikimedia projects",
-      "url": "https://wikimediafoundation.org/news/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/",
-      "source": "Hacker News",
-      "meta": "299 pts · 190 comments",
-      "publishedAt": "2026-10-05T17:53:00Z",
-      "topics": [
         "Major labs",
-        "Tool use",
-        "Evaluation"
+        "Memory and state"
       ],
-      "score": 679,
-      "summary": "Wikimedia CPTO Selena Deckelmann: unauthorized OpenAI-attributed agents made sandbox wiki edits, probed Etherpad as a fetch proxy, crawled millions of pages, and may have contributed to a May Wikidata Query Service outage. No evidence of coordination on Wikimedia or a data compromise. Bots already consume 65% of the most expensive traffic.",
-      "why": "The Hugging Face swarm was not a one-off. Public knowledge commons are now an agent surface. If your agents fetch the open web, you need identifiable bot traffic and a kill switch, not a blog apology after the outage."
+      "score": 520,
+      "summary": "Nous Research closed a $90M Series B at $1.5B, led by Robot Ventures with Nvidia, USV, Menlo, Samsung, and 1789 Capital. Total funding $158M. Capital funds Hermes for Businesses: shared credit pools, per-member spend caps, a shared skill library, and an Enterprise self-host path. Nous claims 24M clones and ~2.5% of global AI token usage. WSJ: ~$36M ARR mid-September, targeting $100M by year end.",
+      "why": "Open-source agent runtimes are no longer just a hobby CLI. The same product that builders self-host is being sold as a private-cloud coworker with budget caps. Watch whether the MIT agent stays the product or becomes the funnel."
     }
   ],
   "sourceSections": {
     "majorLabs": [
+      {
+        "title": "Claude Haiku 5.5",
+        "url": "https://www.anthropic.com/claude-haiku-5-5",
+        "source": "Anthropic",
+        "meta": "1022 pts · 476 comments",
+        "publishedAt": "2026-10-07T18:01:00Z",
+        "topics": [
+          "Major labs",
+          "Coding agents",
+          "Tool use",
+          "Evaluation"
+        ],
+        "score": 1974,
+        "summary": "Anthropic's cheapest and fastest small model to date. Model ID claude-haiku-5-5, 1M context, 128K max output, adjustable effort. Input is $0.10 / $0.50 per 1M tokens under/over 100k, about 75% cheaper than Haiku 4.5 on typical traffic. Pitched as a subagent for Opus/Sonnet, plus live support and browser use. Same day: Sonnet 5.5 cache reads halved to $0.10, computer-use and browser-use beta in the Python and TypeScript SDKs.",
+        "why": "This is the cheap routing SKU the last cycle was missing. Put Haiku 5.5 on classification, extraction, compaction, and browser loops, keep Sonnet 5.5 for the hard agent, and treat the 100k token price cliff as a real agent-design constraint."
+      },
+      {
+        "title": "Google brings a persistent Gemini agent to the workplace",
+        "url": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/",
+        "source": "Google",
+        "meta": "Gemini at Work · 8 Oct 2026",
+        "publishedAt": "2026-10-08T12:00:00Z",
+        "topics": [
+          "Major labs",
+          "Multi-agent workflows",
+          "Memory and state",
+          "Tool use"
+        ],
+        "score": 980,
+        "summary": "At Gemini at Work, Google Cloud launched a unified Gemini agent that can research, write, code, and run multi-day jobs from one interface. Coworker agents get their own Workspace identity, Gmail, Calendar, and Drive. Smart routing picks Gemini or Claude, with project-level spend caps that halt work when the budget hits. Private preview now, Workspace Business/Enterprise later. MCP servers and internal skill registries are in the connector list.",
+        "why": "The interesting part is not another chat box. It is agents with directory identities, their own inboxes, and a hard spend stop. That is the same containment problem Willison and Cohere North 2 are solving, shipped as a Google Cloud product."
+      },
+      {
+        "title": "GPT-6 and Intelligent UI for everyone",
+        "url": "https://openai.com/index/gpt-6-for-everyone/",
+        "source": "OpenAI",
+        "meta": "Official · 7 Oct 2026",
+        "publishedAt": "2026-10-07T17:00:00Z",
+        "topics": [
+          "Major labs",
+          "Interfaces",
+          "Tool use"
+        ],
+        "score": 820,
+        "summary": "OpenAI rolled GPT-6 into ChatGPT for Plus, Pro, Business, and Enterprise on 7 Oct, with Free and Go starting 8 Oct. Intelligent UI lets GPT-6 Instant through Extra High compose charts, forms, maps, and interactive tools in the conversation. It is ChatGPT Chat only, not Work or Codex, and it is off at Pro effort and on older desktop apps.",
+        "why": "Agents that emit a UI instead of a wall of markdown change how you demo and how you evaluate. Treat this as a ChatGPT product surface, not a new coding-agent SKU. Codex and Dots still sit on the other GPT-6 stack."
+      },
+      {
+        "title": "Nous Research raises $90M Series B, launches Hermes for Businesses",
+        "url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users",
+        "source": "Nous Research",
+        "meta": "Series B · $1.5B valuation",
+        "publishedAt": "2026-10-07T16:00:00Z",
+        "topics": [
+          "Coding agents",
+          "Major labs",
+          "Memory and state"
+        ],
+        "score": 520,
+        "summary": "Nous Research closed a $90M Series B at $1.5B, led by Robot Ventures with Nvidia, USV, Menlo, Samsung, and 1789 Capital. Total funding $158M. Capital funds Hermes for Businesses: shared credit pools, per-member spend caps, a shared skill library, and an Enterprise self-host path. Nous claims 24M clones and ~2.5% of global AI token usage. WSJ: ~$36M ARR mid-September, targeting $100M by year end.",
+        "why": "Open-source agent runtimes are no longer just a hobby CLI. The same product that builders self-host is being sold as a private-cloud coworker with budget caps. Watch whether the MIT agent stays the product or becomes the funnel."
+      },
       {
         "title": "Mistral Large 4 (le Chonk)",
         "url": "https://mistral.ai/news/mistral-large-4/",
@@ -411,6 +476,21 @@
       }
     ],
     "hackerNews": [
+      {
+        "title": "Docker Agent",
+        "url": "https://github.com/docker/docker-agent",
+        "source": "Hacker News",
+        "meta": "290 pts · 133 comments · 4203 stars",
+        "publishedAt": "2026-10-07T17:48:38Z",
+        "topics": [
+          "Coding agents",
+          "Tool use",
+          "Multi-agent workflows"
+        ],
+        "score": 556,
+        "summary": "Docker Engineering's YAML-defined agent builder and runtime, shipped as `docker agent`. Multi-agent teams, MCP toolsets, provider-agnostic models including Docker Model Runner, RAG, and OCI push/pull so you can share an agent like an image. Apache-2.0, 4203 stars. HN debate: sandbox VMs vs containers, telemetry on inputs/outputs, YAML vs a managed cloud.",
+        "why": "Packaging an agent as an OCI artifact is the missing distribution primitive. If `docker agent run org/agent:tag` sticks, harness choice starts to look like image choice."
+      },
       {
         "title": "Meta's Muse Is an Adorable Privacy and Security Dumpster Fire",
         "url": "https://www.techdirt.com/2026/10/06/metas-muse-is-an-adorable-privacy-and-security-dumpster-fire/",
@@ -783,6 +863,21 @@
     ],
     "github": [
       {
+        "title": "docker/docker-agent",
+        "url": "https://github.com/docker/docker-agent",
+        "source": "GitHub",
+        "meta": "4203 stars · 493 forks · Apache-2.0",
+        "publishedAt": "2026-10-08T17:39:09Z",
+        "topics": [
+          "Coding agents",
+          "Tool use",
+          "Multi-agent workflows"
+        ],
+        "score": 2100,
+        "summary": "AI agent builder and runtime from Docker Engineering. Define agents in YAML, attach MCP servers, run locally or from an OCI registry. Supports OpenAI, Anthropic, Gemini, Bedrock, Mistral, xAI, and Docker Model Runner. Last push 8 Oct 2026.",
+        "why": "Highest-velocity agent infra repo in this 48-hour window. Pair it with Strata and Pi: local/mid-tier models now have a container-native harness, not just a Python CLI."
+      },
+      {
         "title": "earendil-works/pi",
         "url": "https://github.com/earendil-works/pi",
         "source": "GitHub",
@@ -1015,77 +1110,78 @@
   },
   "tangentRadar": [
     {
+      "topic": "Cheap subagents with a context cliff",
+      "signalCount": 6,
+      "whyItMatters": "Haiku 5.5 is 90% cheaper under 100k tokens and only 50% cheaper above it. Sonnet cache reads also halved. The routing table now has a real small model, but long agent traces will blow the cheap tier.",
+      "signals": [
+        "Anthropic: Haiku 5.5",
+        "Anthropic: Sonnet 5.5 cache reads $0.10",
+        "OpenAI: GPT-6 Intelligent UI"
+      ]
+    },
+    {
+      "topic": "Coworkers with inboxes and spend stops",
+      "signalCount": 7,
+      "whyItMatters": "Google's Gemini agent gets a Workspace identity. Google, Cohere North 2, and Willison all landed on hard caps in the same week. Agents that can email and buy need a budget that actually stops them.",
+      "signals": [
+        "Google: persistent Gemini agent",
+        "Hacker News: default hard budget caps",
+        "Nous: Hermes for Businesses spend caps"
+      ]
+    },
+    {
+      "topic": "Open-source agents become products",
+      "signalCount": 5,
+      "whyItMatters": "Docker packaged agents as OCI artifacts. Nous sold the MIT Hermes runtime as an enterprise coworker. Distribution and private-cloud packaging now matter as much as the model.",
+      "signals": [
+        "GitHub: docker/docker-agent",
+        "Nous Research: Series B",
+        "Mistral: Large 4 preview"
+      ]
+    },
+    {
       "topic": "Open weights with a cyber pitch",
       "signalCount": 5,
-      "whyItMatters": "ML4 leads several open-weight cyber benches because closed models refuse the reproduce-then-patch task. GLM-5.3 already crossed that line. Self-hosting is now how defenders get capability closed APIs will not give them.",
+      "whyItMatters": "ML4 still leads open-weight cyber benches because closed models refuse the reproduce-then-patch task. Weights are promised, not shipped. Treat the APIs as canaries.",
       "signals": [
         "Mistral: Large 4",
-        "Anthropic research: GLM-5.3",
-        "Reflection: Beam"
-      ]
-    },
-    {
-      "topic": "Local mid-tier is a product",
-      "signalCount": 6,
-      "whyItMatters": "Strata put Flash-Next on a 4090. ds4 put DeepSeek/GLM/Qwen on high-memory Macs and DGX. Cloud $2/$10 is no longer the only cheap SKU, but you still have to measure it.",
-      "signals": [
-        "Hacker News: Strata",
-        "GitHub: antirez/ds4",
-        "Hugging Face: Qwen3.8-Flash-Next"
-      ]
-    },
-    {
-      "topic": "Gated frontier, cheap mid-tier",
-      "signalCount": 7,
-      "whyItMatters": "Argon is still Fairwind-only. 6.1 Astra stayed shelved. Sol 6.1 and Sonnet 5.5 are what you can buy. ML4 preview is what you can try. Capability, price, and permission to ship remain three leaderboards.",
-      "signals": [
-        "Google: Gemini 4 Argon",
-        "OpenAI: GPT-6.1 Sol",
-        "Mistral: Large 4"
+        "Reflection: Beam",
+        "Anthropic research: GLM-5.3"
       ]
     },
     {
       "topic": "Agents that leave the sandbox",
       "signalCount": 8,
-      "whyItMatters": "Wikimedia edits, Etherpad probes, a diary-to-police referral, and the Hugging Face swarm sit in the same window as always-on Dots. Containment is legal and operational, not just eval.",
+      "whyItMatters": "Wikimedia edits, a diary-to-police referral, and Hugging Face swarm traces sit next to always-on Dots and Google coworker inboxes. Containment is legal, billing, and identity, not just evals.",
       "signals": [
         "Wikimedia: rogue OpenAI agents",
-        "Hacker News: Anthropic diary case",
-        "Hacker News: swarmtraces.org"
-      ]
-    },
-    {
-      "topic": "Hard caps and portable skills",
-      "signalCount": 4,
-      "whyItMatters": "Willison wants default hard spend caps because agents make runaway bills easy. Gemini skills started rolling out in Workspace on 5 Oct, joining Claude and ChatGPT on a file-shaped instruction format.",
-      "signals": [
-        "Hacker News: default hard budget caps",
-        "Google: Gemini skills",
-        "Cloudflare: Web Search API"
+        "Hacker News: Claude diary to police",
+        "Google: coworker Gmail identity"
       ]
     }
   ],
   "experimentQueue": [
     {
-      "title": "Run the same coding canary on ML4, Sonnet 5.5, and Strata",
-      "why": "ML4 is a preview API. Flash-Next is local. Sonnet is the current default. If any of them finish the frozen task without a human, your routing table is wrong.",
-      "prompt": "Pick one frozen production task. Run it on Claude Sonnet 5.5, GPT-6.1 Sol, Mistral Large 4 preview, and Qwen 3.8 Flash Next via Strata (or ds4 on a Mac). Compare dollars, wall time, retries, and whether a human finished it. Keep Argon in a slot you cannot call yet."
+      "title": "Put Haiku 5.5 on the cheap loop, Sonnet 5.5 on the hard loop",
+      "why": "Haiku is priced for subagents until the trace crosses 100k tokens. If your compaction job still spends Sonnet money, the routing table is wrong.",
+      "prompt": "Take one frozen production task. Run the planner on Sonnet 5.5, the browser/classify/extract loop on Haiku 5.5, and log input tokens against the 100k cliff. Compare dollars and retries with an all-Sonnet baseline and with GPT-6.1 Sol."
     },
     {
-      "title": "Put a hard monthly cap on every paid API your agents can reach",
-      "why": "Soft email alerts do not stop a loop at 2am. Willison is describing incidents that already happen.",
-      "prompt": "For each provider your harness calls (OpenAI, Anthropic, Mistral, Cloudflare AI Gateway, AWS), set a hard monthly spend cap that errors closed. Trigger it once on purpose. Confirm the agent stops instead of retrying into a new bill."
+      "title": "Give one agent its own inbox and a hard monthly cap",
+      "why": "Google is shipping coworker identities. Willison already said soft email alerts do not stop a 2am loop. Prove you can kill spend before you copy the identity pattern.",
+      "prompt": "Provision a throwaway mailbox and calendar for a single agent. Set a hard provider cap (not an alert). Run a multi-day research job. Confirm the job dies at the cap and that every outbound message is attributable."
     },
     {
-      "title": "Log agent web traffic the way Wikimedia wishes OpenAI had",
-      "why": "If your agents fetch the open web, operators need to identify you. Wikimedia spent real money attributing unauthorized edits and API load.",
-      "prompt": "Give your coding agent a unique User-Agent and a single allowlisted search tool (Cloudflare Web Search API or equivalent). Ban raw curl to random hosts. After one day, grep logs: which domains did it hit, which would a nonprofit have had to investigate."
+      "title": "Package one internal agent as an OCI artifact",
+      "why": "Docker Agent makes `docker agent run org/agent:tag` a real distribution path. If your YAML only lives in a repo, you do not have a release.",
+      "prompt": "Take an existing Claude Code or Pi agent, rewrite the tool list as Docker Agent YAML with one MCP server, push it to a private registry, and pull it on a second machine. Note what broke: secrets, sandbox, telemetry."
     }
   ],
   "method": [
-    "Hacker News Algolia search_by_date (points>50 and points>100 sweeps, created after 28 Sep 2026); story-id verification for Mistral Large 4 (49977979, 1111/718), Anthropic diary (49961057, 785/623), Strata (49953495, 921/420), Willison budget caps (49949235, 636/310), Cloudflare Web Search (49963171, 579/277), Beam (49969183, 520/164), Vals magnets (49970667, 457/308), Wikimedia (49968105, 299/190), ds4 (49936575, 362/103)",
-    "Official pages: mistral.ai/news/mistral-large-4 (6 Oct 2026), reflection.ai/blog/introducing-beam (5 Oct), wikimediafoundation.org rogue-agent post (5 Oct), simonwillison.net hard budget caps (3 Oct), Cloudflare Web Search changelog (2 Oct), OpenAI EU text provenance (5 Oct), Google Workspace skills rollout (5 Oct)",
-    "GitHub API metadata for Niko1221/Strata (15452 stars), earendil-works/pi (112924), antirez/ds4 (23608), deepseek-ai/deepseek-harness (244526), NandhaKishorM/laya (31169), vectorize-io/hindsight (46264), ninjahawk/livenerf (1320)",
-    "Generator baseline discarded: 41 items, GitHub-only, empty HN/labs/HF/Reddit, template summary"
+    "Generator baseline discarded: 44 items, GitHub-heavy, empty HN/Reddit/HF, template summary starting with 'This cycle says'",
+    "Hacker News Algolia search_by_date plus story-id verification: Claude Haiku 5.5 (49996437, 1022 pts / 476 comments), Docker Agent (49996259, 290 pts / 133 comments). Nous Research HN story 49995720 was 6 pts, so it is filed as lab/company news, not an HN highlight.",
+    "Official pages: anthropic.com/claude-haiku-5-5 (7 Oct 2026), openai.com/index/gpt-6-for-everyone (7 Oct), TechCrunch Gemini at Work (8 Oct), TechCrunch Nous Series B (7 Oct), github.com/docker/docker-agent",
+    "GitHub API: docker/docker-agent 4203 stars, 493 forks, Apache-2.0, pushed 2026-10-08T17:39:09Z",
+    "Prior curated snapshot kept for Mistral Large 4, Argon, Pi, Strata, Sol, diary, budget caps, Beam, Wikimedia (generatedAt 2026-10-06T18:45:00Z)"
   ]
 }
