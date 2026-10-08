@@ -1,0 +1,25 @@
+name: UHDM
+description: UHDM is the Universal Hardware Data Model. It serializes the IEEE SystemVerilog object model with VPI so Surelog, Yosys, and simulators share one compiled interchange format instead of each parsing SV.
+tagline: Compiled SystemVerilog interchange format for open EDA tools
+
+github_url: https://github.com/chipsalliance/UHDM
+website_url: https://github.com/chipsalliance/UHDM
+docs_url: https://github.com/chipsalliance/UHDM
+install_command: brew install uhdm
+
+category: Dev Tools
+tags: [uhdm, systemverilog, surelog, yosys, vpi, hdl, eda, chipsalliance]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Open EDA tools each reimplement SystemVerilog parsing and disagree on
+  elaboration. UHDM is a compiled IEEE object model with VPI so Surelog,
+  Yosys, and simulators share one interchange format.
+
+use_cases:
+  - Read a Surelog-elaborated design into Yosys through UHDM
+  - Serialize a SystemVerilog object model for a custom linter
+  - Visit elaborated SV with the UHDM listener and VPI APIs
+  - Share one compiled design between a simulator and a synthesis tool
