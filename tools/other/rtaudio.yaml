@@ -1,0 +1,27 @@
+name: RtAudio
+description: RtAudio is a C++ API for realtime audio input and output across Linux, macOS, and Windows. Apps talk to ALSA, JACK, Core Audio, WASAPI, and ASIO through one callback interface.
+tagline: Cross-platform C++ API for realtime audio I/O
+
+github_url: https://github.com/thestk/rtaudio
+website_url: https://www.music.mcgill.ca/~gary/rtaudio/
+docs_url: https://www.music.mcgill.ca/~gary/rtaudio/classRtAudio.html
+
+install_command: brew install rtaudio
+
+category: Other
+tags: [rtaudio, audio, realtime, cpp, alsa, wasapi, coreaudio, asio]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Native apps that capture or play audio must target a different backend
+  on every OS. RtAudio wraps ALSA, JACK, Core Audio, WASAPI, and ASIO
+  behind one C++ callback API so speech tools, synths, and ML demos
+  stream audio without writing a host layer per platform.
+
+use_cases:
+  - Capture microphone input in a C++ speech or TTS pipeline
+  - Play model audio samples from a cross-platform native app
+  - Select ALSA, JACK, Core Audio, or WASAPI through one API
+  - Prototype a synth callback before wiring a full DAW plugin

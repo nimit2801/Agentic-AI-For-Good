@@ -1,0 +1,27 @@
+name: FluidSynth
+description: FluidSynth is a real-time software synthesizer based on the SoundFont 2 specification. It turns MIDI into sampled instruments without hardware, so DAWs, games, and ML audio pipelines play GM banks in software.
+tagline: SoundFont 2 software synthesizer for MIDI playback
+
+github_url: https://github.com/FluidSynth/fluidsynth
+website_url: https://www.fluidsynth.org
+docs_url: https://www.fluidsynth.org/api/
+
+install_command: brew install fluid-synth
+
+category: Other
+tags: [fluidsynth, soundfont, midi, synthesizer, audio, sf2, playback]
+pricing: free
+is_open_source: true
+license: LGPL-2.1
+
+problem_solved: |
+  MIDI files and generative scores need sampled instruments, but hardware
+  synths and closed SoundFont players are awkward in pipelines. FluidSynth
+  renders SoundFont 2 banks in software so DAWs, games, and ML audio tools
+  play GM instruments from a CLI, library, or JACK/ALSA client.
+
+use_cases:
+  - Render MIDI to audio with a SoundFont 2 bank from the command line
+  - Embed a software GM synth in a game or DAW without hardware
+  - Play generated MIDI from an ML composition model through FluidSynth
+  - Route FluidSynth as a JACK or ALSA client in a live audio graph
