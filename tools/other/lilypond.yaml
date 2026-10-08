@@ -1,0 +1,27 @@
+name: LilyPond
+description: LilyPond is a GNU music engraving system. Composers write scores in a text language that compiles to publication-quality sheet music, MIDI, and MusicXML without a commercial notation suite.
+tagline: GNU text-based music engraving system
+
+github_url: https://github.com/lilypond/lilypond
+website_url: https://lilypond.org
+docs_url: https://lilypond.org/manuals.html
+
+install_command: brew install lilypond
+
+category: Other
+tags: [lilypond, notation, engraving, sheet-music, midi, music, gnu]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Publication-quality scores usually mean a closed notation GUI. LilyPond
+  is a text-based engraving compiler so composers and publishers write
+  music as code, version it in git, and produce sheet music and MIDI
+  without a commercial Finale or Sibelius license.
+
+use_cases:
+  - Engrave a score from text and export PDF for print
+  - Version-control sheet music alongside lyrics and parts in git
+  - Generate MIDI from a LilyPond score for playback or ML pipelines
+  - Automate part extraction and layout for a large ensemble catalog

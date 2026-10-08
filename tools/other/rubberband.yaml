@@ -1,0 +1,27 @@
+name: Rubber Band
+description: Rubber Band is an audio time-stretching and pitch-shifting library. DAWs, players, and ML pipelines change tempo or pitch of recordings without a closed elastique-style processor.
+tagline: Audio time-stretching and pitch-shifting library
+
+github_url: https://github.com/breakfastquay/rubberband
+website_url: https://breakfastquay.com/rubberband/
+docs_url: https://breakfastquay.com/rubberband/
+
+install_command: brew install rubberband
+
+category: Other
+tags: [rubberband, audio, time-stretch, pitch-shift, dsp, music]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Changing tempo or pitch without wrecking transients usually means a
+  closed commercial stretcher. Rubber Band is an open library and CLI
+  so DAWs, players, and research pipelines time-stretch and pitch-shift
+  audio without an elastique-style license.
+
+use_cases:
+  - Time-stretch a stem to a new tempo without changing pitch
+  - Pitch-shift a vocal or instrument while keeping duration
+  - Batch-align training audio to a target tempo for ML datasets
+  - Embed Rubber Band in a player or DAW as the stretch engine
