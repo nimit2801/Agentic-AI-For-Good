@@ -1,0 +1,27 @@
+name: Opus
+description: Opus is a modern audio codec for the internet from Xiph and IETF. Apps encode speech and music at low bitrate with low latency so calls, streams, and WebRTC stay clear without a proprietary codec.
+tagline: Low-latency audio codec for speech and music
+
+github_url: https://github.com/xiph/opus
+website_url: https://opus-codec.org/
+docs_url: https://opus-codec.org/docs/
+
+install_command: brew install opus
+
+category: Other
+tags: [opus, audio, codec, webrtc, speech, xiph, streaming]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Real-time speech and music over the network need a codec that is both
+  low-latency and high-quality. Proprietary options lock products into
+  licenses. Opus is an IETF/Xiph codec so calls, streams, and WebRTC
+  encode audio without a closed AMR or AAC stack.
+
+use_cases:
+  - Encode voice for WebRTC or VoIP at low bitrate and latency
+  - Stream music or podcasts with an open codec instead of AAC
+  - Decode Opus in a player, game, or conferencing stack
+  - Package reference audio for ML speech datasets in an open format
