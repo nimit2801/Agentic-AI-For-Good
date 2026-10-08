@@ -1,0 +1,25 @@
+name: HTCondor
+description: HTCondor is an open-source high-throughput computing scheduler. It matches jobs to idle campus and grid machines so research and ML teams run thousands of independent tasks without a dedicated HPC queue.
+tagline: High-throughput computing scheduler for campus and grid jobs
+
+github_url: https://github.com/htcondor/htcondor
+website_url: https://htcondor.org
+docs_url: https://htcondor.readthedocs.io
+
+category: Dev Tools
+tags: [htcondor, hpc, scheduler, grid, high-throughput, batch, ml, research]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Many scientific and ML workloads are thousands of independent jobs,
+  not tightly coupled MPI ranks. HTCondor harvests idle campus and grid
+  machines so teams run high-throughput work without a dedicated cluster
+  queue.
+
+use_cases:
+  - Submit thousands of independent simulation or training jobs to a pool
+  - Harvest idle lab desktops into a campus high-throughput flock
+  - Match GPU or software requirements when placing a job
+  - Run a DAG of analysis steps with HTCondor job dependencies

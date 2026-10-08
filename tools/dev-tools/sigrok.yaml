@@ -1,0 +1,25 @@
+name: sigrok
+description: sigrok is an open-source signal analysis suite. libsigrok talks to logic analyzers, oscilloscopes, and multimeters so hardware teams capture and decode digital buses without a vendor GUI.
+tagline: Open-source logic analyzer and signal analysis suite
+
+github_url: https://github.com/sigrokproject/libsigrok
+website_url: https://sigrok.org
+docs_url: https://sigrok.org/wiki/Main_Page
+install_command: brew install libsigrok
+
+category: Dev Tools
+tags: [sigrok, logic-analyzer, hardware, debugging, electronics, pulseview, eda]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Logic analyzers ship with closed vendor software that rarely shares
+  captures. sigrok provides drivers and a protocol stack so teams talk
+  to many instruments and decode buses without a vendor GUI.
+
+use_cases:
+  - Capture SPI, I2C, or UART from a USB logic analyzer
+  - Decode a mixed-signal trace without the vendor's closed software
+  - Script repeated measurements through libsigrok
+  - Pair PulseView with sigrok drivers for an open bench setup
