@@ -1,0 +1,25 @@
+name: SystemC
+description: SystemC is Accellera's C++ library for system-level hardware modeling. It simulates clocks, signals, and transactions so SoC teams verify architecture before RTL is frozen.
+tagline: C++ library for system-level hardware modeling and simulation
+
+github_url: https://github.com/accellera-official/systemc
+website_url: https://systemc.org/overview/systemc/
+docs_url: https://systemc.org/overview/systemc/
+
+category: Dev Tools
+tags: [systemc, hardware, tlm, soc, simulation, c++, verification, esl]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  SoC architecture is too late to debug once RTL is frozen.
+  SystemC models clocks, signals, and TLM transactions in C++ so
+  teams simulate interconnects, accelerators, and firmware before
+  committing to Verilog.
+
+use_cases:
+  - Simulate a SoC interconnect before writing RTL
+  - Model an ML accelerator at transaction level with TLM
+  - Co-simulate firmware against a SystemC virtual platform
+  - Explore architecture tradeoffs in C++ instead of gate-level sims

@@ -1,0 +1,28 @@
+name: ITK
+description: ITK is the Insight Toolkit for multidimensional image analysis. It registers, segments, and filters medical and scientific volumes so pipelines share spatial algorithms without rewriting them.
+tagline: Open toolkit for multidimensional scientific image analysis
+
+github_url: https://github.com/InsightSoftwareConsortium/ITK
+website_url: https://itk.org
+docs_url: https://itk.org/ItkSoftwareGuide.pdf
+
+category: Data
+tags: [itk, image-analysis, medical-imaging, segmentation, registration, scientific-computing, python]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install itk
+
+problem_solved: |
+  Medical and scientific volumes need registration, segmentation,
+  and filtering that generic image libraries do not provide. ITK
+  is a spatial toolkit with Python bindings so imaging pipelines
+  share proven algorithms instead of rewriting them for each
+  dataset.
+
+use_cases:
+  - Register and segment 3D medical or microscopy volumes
+  - Filter multidimensional scientific images in a Python pipeline
+  - Feed ITK preprocessed volumes into a medical imaging model
+  - Share spatial algorithms across C++ and Python imaging tools

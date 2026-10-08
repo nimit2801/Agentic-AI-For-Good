@@ -1,0 +1,28 @@
+name: PySCF
+description: PySCF is a Python quantum chemistry package. It implements Hartree-Fock, DFT, and post-HF methods so researchers script electronic-structure calculations without leaving NumPy and Python.
+tagline: Python module for quantum chemistry calculations
+
+github_url: https://github.com/pyscf/pyscf
+website_url: https://pyscf.org
+docs_url: https://pyscf.org/user.html
+
+category: Data
+tags: [pyscf, quantum-chemistry, dft, hartree-fock, python, numpy, scientific-computing]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install pyscf
+
+problem_solved: |
+  Electronic-structure codes are often Fortran binaries with little
+  Python glue. PySCF exposes Hartree-Fock, DFT, and post-HF methods
+  as Python objects on NumPy so chemistry and materials teams script
+  calculations, couple to ML models, and extend methods without a
+  closed package.
+
+use_cases:
+  - Run DFT or Hartree-Fock calculations from a Python notebook
+  - Couple electronic-structure features into a materials ML pipeline
+  - Prototype a post-HF method on top of PySCF integrals
+  - Script geometry scans without a Fortran-only chemistry code

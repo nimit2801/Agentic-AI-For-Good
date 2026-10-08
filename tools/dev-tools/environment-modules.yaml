@@ -1,0 +1,25 @@
+name: Environment Modules
+description: Environment Modules dynamically changes PATH, compilers, and libraries per shell. It lets HPC users load MPI, CUDA, and Python stacks without conflicting system prefixes.
+tagline: Dynamic shell environment modules for HPC software stacks
+
+github_url: https://github.com/envmodules/modules
+website_url: https://modules.sourceforge.net/
+docs_url: https://modules.readthedocs.io/
+
+category: Dev Tools
+tags: [environment-modules, hpc, modules, shell, compilers, cuda, path]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Cluster users need different compilers, MPI, and CUDA in the
+  same login shell. Environment Modules loads and unloads PATH
+  and library variables from modulefiles so training jobs pick a
+  stack without a single global prefix or conflicting installs.
+
+use_cases:
+  - Load a CUDA and MPI stack for an HPC training job
+  - Switch compilers in a login shell without editing bashrc
+  - Publish modulefiles for a site-wide scientific software tree
+  - Unload one Python or MPI version before loading another
