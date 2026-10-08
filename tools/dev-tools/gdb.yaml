@@ -1,0 +1,25 @@
+name: GDB
+description: GDB is the GNU debugger. It inspects running and crashed programs, sets breakpoints, and examines memory so C, C++, Rust, and assembly teams find bugs without a closed IDE debugger.
+tagline: GNU debugger for native programs and cores
+
+website_url: https://www.gnu.org/software/gdb/
+docs_url: https://sourceware.org/gdb/documentation/
+install_command: brew install gdb
+
+category: Dev Tools
+tags: [gdb, debugger, gnu, c, cpp, assembly, systems, toolchain]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Native crashes and logic bugs need a debugger that can attach to
+  processes, read cores, and step assembly. GDB does that across
+  languages and architectures so teams inspect programs without a
+  vendor IDE.
+
+use_cases:
+  - Attach to a running process and inspect variables at a breakpoint
+  - Debug a core dump from a crashed C or C++ service
+  - Step assembly while reverse-engineering a native binary
+  - Remote-debug an embedded target over gdbserver

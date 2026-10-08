@@ -1,0 +1,25 @@
+name: ngspice
+description: ngspice is an open-source SPICE circuit simulator. It runs analog, digital, and mixed-signal netlists so chip and electronics teams verify circuits without a closed analog simulator.
+tagline: Open-source SPICE circuit simulator
+
+github_url: https://github.com/ngspice/ngspice
+website_url: https://ngspice.sourceforge.io
+docs_url: https://ngspice.sourceforge.io/docs.html
+install_command: brew install ngspice
+
+category: Dev Tools
+tags: [ngspice, spice, circuit, analog, simulation, asic, eda, electronics]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Analog and mixed-signal circuits need SPICE-level simulation before
+  layout. ngspice runs those netlists with open models so hardware
+  teams verify analog behavior without a closed analog EDA license.
+
+use_cases:
+  - Simulate an analog netlist from an open PDK before tape-out
+  - Mix digital and analog blocks in a mixed-signal SPICE run
+  - Sweep device parameters to find operating points and margins
+  - Teach circuit simulation with a free SPICE engine

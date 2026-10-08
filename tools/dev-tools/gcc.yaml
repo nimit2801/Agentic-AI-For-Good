@@ -1,0 +1,25 @@
+name: GCC
+description: GCC is the GNU Compiler Collection. It compiles C, C++, Fortran, and other languages to native code so systems and ML teams build software across architectures without a single-vendor compiler.
+tagline: GNU compiler collection for C, C++, Fortran, and more
+
+github_url: https://github.com/gcc-mirror/gcc
+website_url: https://gcc.gnu.org
+docs_url: https://gcc.gnu.org/onlinedocs/
+install_command: brew install gcc
+
+category: Dev Tools
+tags: [gcc, compiler, gnu, c, cpp, fortran, toolchain, systems]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Native code still needs a portable compiler that targets many CPUs
+  and languages. GCC compiles C, C++, Fortran, and more so teams build
+  systems software without locking to one vendor toolchain.
+
+use_cases:
+  - Compile a C or C++ project for Linux, macOS, or embedded targets
+  - Build Fortran numerical code used in scientific and ML pipelines
+  - Cross-compile firmware with a GCC target triplet
+  - Compare generated assembly against Clang on the same source
