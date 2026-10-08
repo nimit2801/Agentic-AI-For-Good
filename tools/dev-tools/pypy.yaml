@@ -1,0 +1,26 @@
+name: PyPy
+description: PyPy is a fast, compliant alternative Python interpreter. It uses a tracing JIT so pure-Python numeric and agent loops run much faster than CPython without rewriting the code in C.
+tagline: Fast tracing-JIT implementation of Python
+
+github_url: https://github.com/pypy/pypy
+website_url: https://pypy.org
+docs_url: https://doc.pypy.org/
+
+category: Dev Tools
+tags: [pypy, python, jit, interpreter, performance, rpython]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  CPython is slow on tight pure-Python loops that show up in
+  simulators, agents, and numeric prototypes. PyPy traces those
+  loops to machine code so teams keep Python source while cutting
+  runtime, as long as the workload is not dominated by CPython C
+  extensions.
+
+use_cases:
+  - Speed up a pure-Python simulator or agent loop without Cython
+  - Run a CPython-compatible interpreter with a tracing JIT
+  - Prototype numeric code in Python before dropping to C
+  - Replace CPython for long-running workers that stay in Python
