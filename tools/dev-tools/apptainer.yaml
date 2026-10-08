@@ -1,0 +1,26 @@
+name: Apptainer
+description: Apptainer is an application container runtime for HPC. It runs unprivileged, portable containers so research and ML teams ship GPU workloads on shared clusters without root Docker daemons.
+tagline: Unprivileged HPC containers, formerly Singularity
+
+github_url: https://github.com/apptainer/apptainer
+website_url: https://apptainer.org
+docs_url: https://apptainer.org/docs/
+install_command: brew install apptainer
+
+category: Dev Tools
+tags: [apptainer, singularity, containers, hpc, gpu, linux, mlops]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Shared HPC clusters rarely allow root Docker daemons. Apptainer
+  (formerly Singularity) runs unprivileged, portable containers so
+  research teams ship GPU and scientific workloads without cluster
+  admin rights.
+
+use_cases:
+  - Package a GPU training environment as an Apptainer SIF image
+  - Run a containerized scientific code on a shared SLURM cluster
+  - Convert a Docker image into an unprivileged HPC container
+  - Reproduce a paper's software stack on a campus supercomputer

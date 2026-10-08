@@ -1,0 +1,25 @@
+name: OpenMPI
+description: Open MPI is an open-source Message Passing Interface implementation. It runs distributed HPC and ML jobs across nodes so teams scale C, C++, and Python workloads without a vendor MPI stack.
+tagline: Open-source MPI for distributed HPC and ML jobs
+
+github_url: https://github.com/open-mpi/ompi
+website_url: https://www.open-mpi.org
+docs_url: https://docs.open-mpi.org
+install_command: brew install open-mpi
+
+category: Dev Tools
+tags: [openmpi, mpi, hpc, distributed, gpu, cluster, parallel, ml]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Multi-node training and simulation need a portable MPI runtime.
+  Open MPI implements the MPI standard so teams launch distributed
+  jobs across clusters without locking to a vendor MPI.
+
+use_cases:
+  - Launch a multi-node C++ or Fortran simulation with mpirun
+  - Scale a PyTorch or Horovod training job over InfiniBand
+  - Mix MPI with OpenMP inside a hybrid HPC application
+  - Teach distributed computing with a free MPI implementation

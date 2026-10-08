@@ -1,0 +1,24 @@
+name: SLURM
+description: SLURM is a highly scalable workload manager for Linux clusters. It queues, schedules, and accounts for batch and interactive jobs so HPC and ML teams share GPUs and CPUs without a closed scheduler.
+tagline: Open-source cluster workload manager for HPC and GPU jobs
+
+github_url: https://github.com/SchedMD/slurm
+website_url: https://slurm.schedmd.com
+docs_url: https://slurm.schedmd.com/documentation.html
+
+category: Dev Tools
+tags: [slurm, hpc, scheduler, gpu, cluster, batch, mlops, workload]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Shared GPU and CPU clusters need a scheduler that queues jobs, enforces
+  limits, and accounts for usage. SLURM does that at HPC scale so ML
+  teams run training and inference without a vendor workload manager.
+
+use_cases:
+  - Queue GPU training jobs across a multi-node Linux cluster
+  - Allocate CPUs and memory for batch inference or data prep
+  - Account cluster usage by user, account, and partition
+  - Run interactive debug allocations before a long training job
