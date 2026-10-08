@@ -1,0 +1,25 @@
+name: UVVM
+description: UVVM is an open-source VHDL verification methodology and library. It provides utility helpers, bus functional models, and VHDL verification components so FPGA teams write structured, reusable testbenches.
+tagline: Universal VHDL verification methodology and library
+
+github_url: https://github.com/UVVM/UVVM
+website_url: https://uvvm.org
+docs_url: https://uvvm.github.io
+
+category: Dev Tools
+tags: [uvvm, vhdl, verification, fpga, asic, testbench, bfm, eda]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  VHDL testbenches often become unstructured scripts that are hard to
+  reuse across interfaces. UVVM gives a methodology, BFMs, and VVCs so
+  FPGA teams build readable, maintainable verification without a
+  closed UVM stack.
+
+use_cases:
+  - Build a structured VHDL testbench with UVVM utility logging and checks
+  - Drive AXI, UART, or SPI from a UVVM bus functional model
+  - Compose VVCs so multiple interfaces are verified in one harness
+  - Teach FPGA verification with reusable VHDL components instead of ad hoc TB code

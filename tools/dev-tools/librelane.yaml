@@ -1,0 +1,26 @@
+name: LibreLane
+description: LibreLane is open-source ASIC implementation flow infrastructure, the successor to OpenLane. It builds RTL-to-GDSII flows around open EDA tools and PDKs so chip teams harden Verilog without a closed vendor stack.
+tagline: Open-source ASIC flow infrastructure, successor to OpenLane
+
+github_url: https://github.com/librelane/librelane
+website_url: https://librelane.org
+docs_url: https://librelane.readthedocs.io
+install_command: pip install librelane
+
+category: Dev Tools
+tags: [librelane, openlane, asic, rtl, gdsii, eda, pdk, tapeout]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  OpenLane was a scripted RTL-to-GDSII wrapper that is hard to extend.
+  LibreLane rebuilds that flow as a Python infrastructure library with
+  hermetic steps and plugins so teams customize ASIC implementation
+  without a closed EDA stack.
+
+use_cases:
+  - Harden Verilog RTL to GDSII on an open PDK such as sky130
+  - Write a Python plugin that inserts a custom ECO into the ASIC flow
+  - Replay a hermetic step snapshot after changing one flow config
+  - Teach digital implementation with Classic and Chip reference flows

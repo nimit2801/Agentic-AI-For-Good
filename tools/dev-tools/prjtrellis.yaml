@@ -1,0 +1,25 @@
+name: prjtrellis
+description: Project Trellis documents the Lattice ECP5 bitstream format and ships pack tools. It feeds Yosys and nextpnr so teams program ECP5 FPGAs from an open flow without a vendor bitstream utility.
+tagline: Open bitstream tools for Lattice ECP5 FPGAs
+
+github_url: https://github.com/YosysHQ/prjtrellis
+website_url: https://prjtrellis.readthedocs.io
+docs_url: https://prjtrellis.readthedocs.io
+install_command: brew install prjtrellis
+
+category: Dev Tools
+tags: [prjtrellis, ecp5, fpga, bitstream, lattice, yosys, nextpnr, eda]
+pricing: free
+is_open_source: true
+license: ISC
+
+problem_solved: |
+  Lattice ECP5 bitstreams used to need a closed vendor packer after
+  place-and-route. Project Trellis documents the format and ships
+  libtrellis so Yosys and nextpnr program ECP5 FPGAs from an open flow.
+
+use_cases:
+  - Pack a nextpnr ECP5 place-and-route result into a bitstream
+  - Unpack a vendor bitstream and inspect ECP5 tiles and routing
+  - Build an open Yosys-nextpnr-Trellis flow for an ULX3S board
+  - Teach FPGA implementation on ECP5 without a Lattice toolchain

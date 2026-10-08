@@ -1,0 +1,26 @@
+name: SymbiYosys
+description: SymbiYosys (sby) is a front-end for Yosys-based formal hardware verification. It drives bounded model checking, k-induction, and cover traces so FPGA and ASIC teams prove RTL properties without a closed formal tool.
+tagline: Front-end for Yosys-based formal hardware verification
+
+github_url: https://github.com/YosysHQ/sby
+website_url: https://yosyshq.readthedocs.io/projects/sby/
+docs_url: https://yosyshq.readthedocs.io/projects/sby/
+install_command: brew install sby
+
+category: Dev Tools
+tags: [symbiyosys, sby, yosys, formal-verification, hdl, fpga, asic, eda]
+pricing: free
+is_open_source: true
+license: ISC
+
+problem_solved: |
+  Formal property checking is usually locked in expensive vendor tools.
+  SymbiYosys wraps Yosys and open solvers so hardware teams run BMC,
+  induction, and cover queries from a .sby file without a closed formal
+  license.
+
+use_cases:
+  - Prove an RTL invariant with bounded model checking from a .sby script
+  - Run k-induction to show a safety property holds unbounded
+  - Generate a cover trace that reaches a stated hardware condition
+  - Teach formal verification with Yosys instead of a vendor GUI
