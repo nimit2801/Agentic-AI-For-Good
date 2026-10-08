@@ -1,0 +1,26 @@
+name: Surelog
+description: Surelog is a SystemVerilog 2017 preprocessor, parser, elaborator, and UHDM compiler. It exposes IEEE VPI and Python AST APIs so linters, simulators, and Yosys-based synthesis consume a standard compiled design model.
+tagline: SystemVerilog 2017 frontend and UHDM compiler
+
+github_url: https://github.com/chipsalliance/Surelog
+website_url: https://github.com/chipsalliance/Surelog
+docs_url: https://github.com/chipsalliance/Surelog
+install_command: brew install surelog
+
+category: Dev Tools
+tags: [surelog, systemverilog, uhdm, parser, elaborator, yosys, hdl, eda]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Open synthesis and lint tools each reimplement SystemVerilog parsing
+  and miss testbench constructs. Surelog compiles IEEE SV 2017 to UHDM
+  so Yosys, simulators, and linters share one frontend instead of
+  forking their own parsers.
+
+use_cases:
+  - Elaborate a SystemVerilog design into a UHDM database for Yosys
+  - Lint SV with a Python visitor over the Surelog AST
+  - Feed an open simulator or formal tool from a serialized UHDM model
+  - Compile UVM packages once and reuse them across verification runs
