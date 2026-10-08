@@ -1,0 +1,25 @@
+name: Seastar
+description: Seastar is a C++ framework for high-performance servers on shared-nothing cores. It uses futures, DPDK, and a share-nothing model so databases and inference gateways saturate NICs without locks.
+tagline: Share-nothing C++ framework for high-performance servers
+
+github_url: https://github.com/scylladb/seastar
+website_url: http://seastar.io
+docs_url: https://docs.seastar.io/
+
+category: Dev Tools
+tags: [seastar, c++, async, dpdk, futures, high-performance, networking, scylla]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Lock-heavy thread pools cannot fill modern NICs. Seastar pins a
+  shard per core with futures, message passing, and optional DPDK
+  so databases, feature stores, and inference gateways run
+  shared-nothing I/O without cross-core locks.
+
+use_cases:
+  - Build a shared-nothing C++ inference or feature-store server
+  - Saturate a NIC with DPDK-backed Seastar shards
+  - Replace lock-based thread pools in a latency-sensitive gateway
+  - Write futures-based C++ services that scale linearly per core
