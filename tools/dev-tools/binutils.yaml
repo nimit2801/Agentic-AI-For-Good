@@ -1,0 +1,24 @@
+name: binutils
+description: GNU binutils is a set of binary tools including as, ld, objdump, and readelf. It assembles, links, and inspects object files so systems teams work with ELF and other binaries without a closed toolchain.
+tagline: GNU assembler, linker, and binary inspection tools
+
+website_url: https://www.gnu.org/software/binutils/
+docs_url: https://sourceware.org/binutils/docs/
+install_command: brew install binutils
+
+category: Dev Tools
+tags: [binutils, gnu, linker, assembler, elf, objdump, toolchain, systems]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Compilers emit object files that still need assembling, linking, and
+  inspection. GNU binutils provides as, ld, objdump, and readelf so
+  teams finish a native toolchain without vendor binary utilities.
+
+use_cases:
+  - Link object files into an executable with GNU ld
+  - Disassemble a binary with objdump during a crash investigation
+  - Inspect ELF sections and symbols with readelf
+  - Assemble architecture-specific code with GNU as
