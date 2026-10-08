@@ -1,0 +1,28 @@
+name: NWChem
+description: NWChem is an open-source high-performance computational chemistry package. It runs DFT, ab initio, and molecular dynamics on HPC clusters so chemistry teams simulate molecules at scale.
+tagline: High-performance open-source computational chemistry
+
+github_url: https://github.com/nwchemgit/nwchem
+website_url: https://nwchemgit.github.io
+docs_url: https://nwchemgit.github.io/Documentation.html
+
+install_command: brew install nwchem
+
+category: Data
+tags: [nwchem, computational-chemistry, dft, hpc, molecular-dynamics, scientific-computing]
+pricing: free
+is_open_source: true
+license: ECL-2.0
+
+problem_solved: |
+  Electronic-structure and molecular-dynamics runs at cluster scale
+  need a code that parallelizes across CPUs and GPUs. NWChem is an
+  open HPC chemistry package for DFT, ab initio, and MD so research
+  teams simulate molecules without a closed commercial chemistry
+  suite.
+
+use_cases:
+  - Run DFT or ab initio calculations on an HPC cluster
+  - Simulate molecular dynamics for a materials or chemistry study
+  - Couple NWChem energies into a machine-learned potential pipeline
+  - Benchmark quantum-chemistry methods on large molecular systems

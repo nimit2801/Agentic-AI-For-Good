@@ -1,0 +1,27 @@
+name: sounddevice
+description: sounddevice is a Python module for playing and recording audio. It wraps PortAudio so notebooks and ML pipelines capture microphones and play arrays without writing C bindings.
+tagline: Play and record sound from Python via PortAudio
+
+github_url: https://github.com/spatialaudio/python-sounddevice
+website_url: https://python-sounddevice.readthedocs.io/
+docs_url: https://python-sounddevice.readthedocs.io/en/latest/
+
+install_command: pip install sounddevice
+
+category: Other
+tags: [sounddevice, python, audio, portaudio, playback, capture, numpy]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Python speech and audio demos need microphone input and playback
+  without dropping into C. sounddevice wraps PortAudio so NumPy
+  arrays stream to and from the sound card, giving ML notebooks a
+  realtime I/O layer without a GUI DAW or custom bindings.
+
+use_cases:
+  - Capture microphone input into a NumPy array for a speech model
+  - Play TTS or generated audio from a Python notebook
+  - Stream callback-based realtime audio in a local ML demo
+  - Record and play through PortAudio without writing C bindings
