@@ -1,0 +1,25 @@
+name: svlint
+description: svlint is a SystemVerilog linter written in Rust. It checks IEEE 1800-2017 RTL against configurable rules so FPGA and ASIC teams catch syntax and style issues in the editor before simulation.
+tagline: IEEE 1800-2017 SystemVerilog linter
+
+github_url: https://github.com/dalance/svlint
+website_url: https://github.com/dalance/svlint
+docs_url: https://github.com/dalance/svlint/blob/master/MANUAL.md
+install_command: cargo install svlint
+
+category: Dev Tools
+tags: [svlint, systemverilog, linter, hdl, rust, fpga, asic, eda]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  SystemVerilog style and syntax issues often wait until a simulator or
+  synthesis run. svlint checks IEEE 1800-2017 RTL with configurable rules
+  so teams catch problems in the editor before a long compile.
+
+use_cases:
+  - Lint SystemVerilog RTL in CI with a project rule file
+  - Catch non-synthesizable constructs before a Yosys or Vivado run
+  - Pair svlint with the svls language server in an editor
+  - Enforce a parse-only or style ruleset across an FPGA codebase

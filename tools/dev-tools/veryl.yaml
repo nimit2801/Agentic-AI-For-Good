@@ -1,0 +1,25 @@
+name: Veryl
+description: Veryl is a modern hardware description language based on SystemVerilog. It transpiles to readable SV with a package manager, formatter, and editor tooling so FPGA teams write synthesizable RTL without SV boilerplate.
+tagline: Modern SystemVerilog-based hardware description language
+
+github_url: https://github.com/veryl-lang/veryl
+website_url: https://veryl-lang.org
+docs_url: https://doc.veryl-lang.org/book/
+install_command: cargo install veryl
+
+category: Dev Tools
+tags: [veryl, hdl, systemverilog, fpga, rtl, rust, eda]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  SystemVerilog is powerful but verbose and easy to write in ways that
+  will not synthesize. Veryl is a modern HDL that transpiles to readable
+  SV with tooling so teams keep SV interoperability without the boilerplate.
+
+use_cases:
+  - Write synthesizable RTL in Veryl and transpile it to SystemVerilog
+  - Mix Veryl modules with an existing SystemVerilog IP library
+  - Format and lint HDL in VS Code, Vim, or Emacs with Veryl tooling
+  - Teach digital design with a simpler syntax that still emits SV
