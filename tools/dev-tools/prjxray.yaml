@@ -1,0 +1,24 @@
+name: prjxray
+description: Project X-Ray documents the Xilinx 7-series bitstream format. It ships tools and a device database so open FPGA flows can pack, unpack, and program Artix, Kintex, and Zynq parts without a closed bitstream utility.
+tagline: Open bitstream documentation for Xilinx 7-series FPGAs
+
+github_url: https://github.com/f4pga/prjxray
+website_url: https://prjxray.readthedocs.io
+docs_url: https://prjxray.readthedocs.io
+
+category: Dev Tools
+tags: [prjxray, xilinx, fpga, bitstream, f4pga, yosys, nextpnr, eda]
+pricing: free
+is_open_source: true
+license: ISC
+
+problem_solved: |
+  Xilinx 7-series bitstreams used to need Vivado after place-and-route.
+  Project X-Ray documents the format and ships pack tools so open FPGA
+  flows program Artix, Kintex, and Zynq parts without a closed packer.
+
+use_cases:
+  - Pack a nextpnr or F4PGA place-and-route result into a 7-series bitstream
+  - Unpack a vendor bitstream and inspect 7-series tiles and routing
+  - Build an open Yosys flow targeting Artix-7 or Zynq-7000
+  - Teach FPGA implementation on Xilinx parts without a Vivado license

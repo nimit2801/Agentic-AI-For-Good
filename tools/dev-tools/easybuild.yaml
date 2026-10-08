@@ -1,0 +1,25 @@
+name: EasyBuild
+description: EasyBuild is a Python framework for building and installing scientific software on HPC systems. It compiles toolchains, libraries, and applications from easyconfig files so clusters stay reproducible without ad hoc module scripts.
+tagline: Framework for building scientific software on HPC clusters
+
+github_url: https://github.com/easybuilders/easybuild
+website_url: https://easybuild.io
+docs_url: https://docs.easybuild.io
+install_command: pip install easybuild
+
+category: Dev Tools
+tags: [easybuild, hpc, build, modules, scientific-computing, python, cluster]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  HPC sites install compilers, MPI, and scientific codes by hand and
+  drift between nodes. EasyBuild builds those stacks from easyconfig
+  files so clusters stay reproducible without ad hoc module scripts.
+
+use_cases:
+  - Install a GCC plus Open MPI toolchain from a single easyconfig
+  - Build WRF, GROMACS, or similar scientific codes on a shared cluster
+  - Generate environment modules for every installed software stack
+  - Reproduce a paper's HPC software stack from published easyconfigs
