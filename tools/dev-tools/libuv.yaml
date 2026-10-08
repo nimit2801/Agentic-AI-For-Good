@@ -1,0 +1,26 @@
+name: libuv
+description: libuv is a cross-platform C library for asynchronous I/O. It powers the Node.js event loop with TCP, UDP, files, and processes so runtimes and agents share one portable async backend on Unix and Windows.
+tagline: Cross-platform asynchronous I/O library behind Node.js
+
+github_url: https://github.com/libuv/libuv
+website_url: https://libuv.org/
+docs_url: https://docs.libuv.org/
+
+category: Dev Tools
+tags: [libuv, async, io, event-loop, nodejs, networking, c, cross-platform]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Native runtimes need non-blocking sockets, files, and child
+  processes on every OS, but each platform's APIs differ. libuv
+  wraps epoll, kqueue, IOCP, and thread pools into one C API so
+  Node.js, Python event loops, and agent runtimes share portable
+  async I/O without rewriting per OS.
+
+use_cases:
+  - Build a portable event loop for a native agent or model server
+  - Drive TCP and UDP sockets without writing epoll and IOCP by hand
+  - Spawn and watch child processes from an async runtime
+  - Back a language runtime's I/O on Unix and Windows with one library

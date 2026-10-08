@@ -1,0 +1,25 @@
+name: rr
+description: rr is a Linux record-and-replay debugger. It records a process once, then replays it under gdb with reverse execution so flaky native bugs in ML runtimes and data pipelines become deterministic.
+tagline: Record-and-replay debugger with reverse execution
+
+github_url: https://github.com/rr-debugger/rr
+website_url: http://rr-project.org/
+docs_url: https://rr-project.org/
+
+category: Dev Tools
+tags: [rr, debugger, record-replay, gdb, linux, reverse-execution, c++]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Heisenbugs in native runtimes vanish when you attach a live
+  debugger. rr records a failing Linux process once, then replays
+  it under gdb with reverse-continue so data-loader crashes, CUDA
+  host bugs, and flaky C++ agent workers become deterministic.
+
+use_cases:
+  - Record a flaky C++ data loader crash and reverse-execute to the cause
+  - Replay a non-deterministic ML runtime hang under gdb
+  - Bisect a failing test by replaying the same recorded schedule
+  - Debug a multi-threaded native extension without perturbing timing

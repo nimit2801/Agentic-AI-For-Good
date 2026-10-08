@@ -1,0 +1,26 @@
+name: Tracy
+description: Tracy is a real-time, nanosecond-resolution frame profiler for games and native apps. It captures CPU, GPU, locks, and memory on a remote viewer so teams find frame spikes without sampling profilers that miss short stalls.
+tagline: Real-time nanosecond frame profiler for native apps
+
+github_url: https://github.com/wolfpld/tracy
+website_url: https://tracy.nereid.pl/
+docs_url: https://github.com/wolfpld/tracy
+
+category: Dev Tools
+tags: [tracy, profiler, frame-profiler, performance, gpu, cpu, c++, gamedev]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Sampling profilers miss short stalls and GPU bubbles that ruin
+  interactive latency. Tracy instruments C++ with nanosecond zones
+  and streams CPU, GPU, lock, and memory events to a remote viewer
+  so ML viewers, simulators, and inference UIs get honest frame
+  timelines without a heavyweight sampling setup.
+
+use_cases:
+  - Instrument a C++ inference viewer and inspect frame-time spikes
+  - Capture GPU and CPU zones together when a training viz UI stutters
+  - Find lock contention in a real-time data acquisition loop
+  - Profile memory allocations that hitch an interactive simulation

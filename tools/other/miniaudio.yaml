@@ -1,0 +1,25 @@
+name: miniaudio
+description: miniaudio is a single-file C library for playback and capture. It decodes WAV, FLAC, MP3, and Vorbis with no dependencies so tools add audio I/O without a heavy multimedia stack.
+tagline: Single-file C library for audio playback and capture
+
+github_url: https://github.com/mackron/miniaudio
+website_url: https://miniaud.io
+docs_url: https://miniaud.io/docs/manual/index.html
+
+category: Other
+tags: [miniaudio, audio, playback, capture, c, wav, mp3, flac, header-only]
+pricing: free
+is_open_source: true
+license: Unlicense
+
+problem_solved: |
+  Adding playback or capture usually pulls in a large multimedia
+  stack. miniaudio is one C file with no dependencies that talks
+  to WASAPI, Core Audio, ALSA, and others, so native tools and
+  speech demos play or record audio without FFmpeg or PortAudio.
+
+use_cases:
+  - Play TTS or model audio samples from a native desktop tool
+  - Capture microphone input for a local speech pipeline
+  - Decode WAV, FLAC, MP3, or Vorbis without extra decoder libraries
+  - Drop a single header into a C or C++ app that needs audio I/O
