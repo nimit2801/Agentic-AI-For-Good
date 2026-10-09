@@ -1,0 +1,26 @@
+name: aom
+description: aom is the Alliance for Open Media reference library for AV1. Apps encode and decode AV1 with the official codec so browsers, FFmpeg, and archives use a royalty-free video format instead of HEVC patent pools.
+tagline: Alliance for Open Media AV1 reference codec
+
+website_url: https://aomedia.googlesource.com/aom
+docs_url: https://aomedia.googlesource.com/aom
+
+install_command: brew install aom
+
+category: Other
+tags: [aom, av1, codec, video, aomedia, encoder, decoder]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Shipping video without HEVC patents needs an open codec with a
+  reference implementation. aom is the AOMedia AV1 library so
+  FFmpeg, browsers, and archives encode and decode royalty-free
+  video from the official source.
+
+use_cases:
+  - Encode AV1 with the official libaom encoder from FFmpeg
+  - Decode AV1 streams in a player that links libaom
+  - Benchmark AV1 against VP9 or HEVC on the same source
+  - Build a royalty-free 4K archive without HEVC licenses
