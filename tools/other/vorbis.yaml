@@ -1,0 +1,26 @@
+name: Vorbis
+description: Vorbis is the Xiph lossy audio codec that ships with Ogg. Apps encode music and speech at modest bitrates with an open library so streams and games avoid MP3 or AAC patent stacks.
+tagline: Open lossy audio codec from the Xiph.Org Foundation
+
+github_url: https://github.com/xiph/vorbis
+website_url: https://xiph.org/vorbis/
+docs_url: https://xiph.org/vorbis/doc/
+
+install_command: brew install libvorbis
+
+category: Other
+tags: [vorbis, ogg, audio, codec, xiph, compression, streaming]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Lossy music and game audio often lock teams into MP3 or AAC
+  licenses. Vorbis is an open Xiph codec so players, games, and
+  streams compress audio without a proprietary encoder.
+
+use_cases:
+  - Encode Ogg Vorbis for a game, podcast, or music archive
+  - Decode Vorbis in a player or WebAudio pipeline
+  - Package reference speech datasets in an open lossy format
+  - Ship audio with libvorbis instead of a closed MP3 encoder
