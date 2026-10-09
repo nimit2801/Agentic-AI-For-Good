@@ -1,0 +1,27 @@
+name: openSMILE
+description: openSMILE extracts large-scale speech and music features in C++. Research pipelines compute ComParE, GeMAPS, and eGeMAPS descriptors so emotion, paralinguistics, and MIR models train on standard feature sets instead of ad-hoc DSP.
+tagline: Open toolkit for speech and music feature extraction
+
+github_url: https://github.com/audeering/opensmile
+website_url: https://audeering.github.io/opensmile/
+docs_url: https://audeering.github.io/opensmile/
+
+install_command: pip install opensmile
+
+category: Other
+tags: [opensmile, audio, speech, features, emotion, mir, paralinguistics]
+pricing: freemium
+is_open_source: true
+license: audEERING Research License
+
+problem_solved: |
+  Speech emotion and paralinguistic models need standard acoustic
+  feature sets, not one-off DSP. openSMILE extracts ComParE and
+  GeMAPS descriptors in C++ (with a Python wrapper) so research
+  pipelines stay comparable across papers.
+
+use_cases:
+  - Extract GeMAPS or eGeMAPS features for speech emotion models
+  - Compute ComParE functionals on a large audio corpus
+  - Run SMILExtract configs for speaker or affect classification
+  - Prototype audio ML features in Python via pip install opensmile

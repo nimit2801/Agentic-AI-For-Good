@@ -1,0 +1,26 @@
+name: libvpx
+description: libvpx is the WebM Project reference codec for VP8 and VP9. Apps encode and decode WebM video with an open library so streams and recordings stay royalty-free instead of depending on H.264 or HEVC licenses.
+tagline: VP8 and VP9 video codec from the WebM Project
+
+github_url: https://github.com/webmproject/libvpx
+website_url: https://www.webmproject.org/code/
+docs_url: https://www.webmproject.org/code/
+
+install_command: brew install libvpx
+
+category: Other
+tags: [libvpx, vp8, vp9, webm, video, codec, google]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Shipping video on the web often means H.264 or HEVC patent pools.
+  libvpx is the open VP8/VP9 codec so browsers, RTC stacks, and
+  recorders encode WebM without a proprietary video license.
+
+use_cases:
+  - Encode VP9 WebM for YouTube-style streaming or local archives
+  - Decode VP8 or VP9 in a player, browser, or WebRTC pipeline
+  - Build FFmpeg or GStreamer with open VP8/VP9 support
+  - Record screen or camera output as royalty-free WebM

@@ -1,0 +1,27 @@
+name: dav1d
+description: dav1d is VideoLAN's fast AV1 video decoder. Players and browsers decode AV1 streams with a small, portable C library so 4K and HDR playback stays CPU-efficient without a heavy encoder stack.
+tagline: Fast, small AV1 video decoder from VideoLAN
+
+github_url: https://github.com/videolan/dav1d
+website_url: https://code.videolan.org/videolan/dav1d
+docs_url: https://code.videolan.org/videolan/dav1d
+
+install_command: brew install dav1d
+
+category: Other
+tags: [dav1d, av1, video, decoder, videolan, codec, playback]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  AV1 saves bandwidth but decoding it is expensive on CPU. Heavy
+  encoder SDKs are the wrong tool for playback. dav1d is a focused
+  decoder so players, browsers, and FFmpeg builds play AV1 without
+  shipping a full encoding stack.
+
+use_cases:
+  - Decode AV1 in a media player or browser with a small library
+  - Link dav1d from FFmpeg for faster AV1 playback
+  - Ship 4K or HDR AV1 streams without a proprietary decoder
+  - Benchmark AV1 decode on desktop, mobile, or embedded CPUs
