@@ -1,0 +1,27 @@
+name: aeneas
+description: aeneas is a Python/C toolkit for forced alignment of audio and text. Pipelines sync narration to transcripts so captions, language learning, and audiobook indexes get word-level timestamps without a closed aligner.
+tagline: Forced alignment of audio and text
+
+github_url: https://github.com/readbeyond/aeneas
+website_url: https://www.readbeyond.it/aeneas/
+docs_url: https://github.com/readbeyond/aeneas/blob/master/wiki/HOWTO.md
+
+install_command: pip install aeneas
+
+category: Other
+tags: [aeneas, forced-alignment, audio, captions, asr, python]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Captioning and language tools need word-level timestamps, not just
+  a transcript. Closed aligners lock that step. aeneas syncs audio
+  to text with a Python/C library so pipelines generate SMIL, SRT,
+  and JSON timings without a proprietary ASR.
+
+use_cases:
+  - Align an audiobook chapter to its transcript for word timings
+  - Generate SRT or SMIL captions from narration plus a script
+  - Build a language-learning player that highlights spoken words
+  - Batch-align a speech corpus before training a TTS or ASR model

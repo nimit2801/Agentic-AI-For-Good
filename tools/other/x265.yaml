@@ -1,0 +1,26 @@
+name: x265
+description: x265 is the open H.265/HEVC video encoder from MulticoreWare. Pipelines compress 4K and HDR video with HEVC so archives and streams shrink versus H.264 without a closed encoder SDK.
+tagline: Open H.265/HEVC video encoder
+
+github_url: https://github.com/videolan/x265
+website_url: https://www.videolan.org/developers/x265.html
+docs_url: https://x265.readthedocs.io/
+
+install_command: brew install x265
+
+category: Other
+tags: [x265, hevc, h265, video, encoder, codec, videolan]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  4K and HDR video is huge as H.264. Closed HEVC SDKs add license
+  friction. x265 is the open encoder so FFmpeg, broadcast, and
+  archive pipelines compress HEVC without a proprietary stack.
+
+use_cases:
+  - Encode 4K or HDR video as HEVC from FFmpeg or the CLI
+  - Shrink archival masters versus H.264 at similar quality
+  - Build a streaming ladder with open HEVC instead of a closed SDK
+  - Benchmark HEVC bitrate against VP9 or AV1 on the same source

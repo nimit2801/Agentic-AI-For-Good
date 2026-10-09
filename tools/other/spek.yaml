@@ -1,0 +1,26 @@
+name: Spek
+description: Spek is an acoustic spectrum analyser for audio files. Engineers drop a track and read the spectrogram so transcodes, low-bitrate MP3s, and upsampled fakes show as missing highs instead of trusting the file tag.
+tagline: Acoustic spectrum analyser for audio files
+
+github_url: https://github.com/alexkay/spek
+website_url: https://www.spek.cc
+docs_url: https://www.spek.cc
+
+install_command: brew install spek
+
+category: Other
+tags: [spek, spectrogram, audio, analyser, quality, transcode]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  File tags lie about bitrate and sample rate. A transcoded MP3 can
+  look like a lossless FLAC. Spek draws a spectrogram so engineers
+  see frequency cutoffs and fake hi-res without a full DAW.
+
+use_cases:
+  - Check whether a FLAC is a transcoded MP3 by reading the spectrogram
+  - Inspect frequency cutoffs on a lossy encode before shipping audio
+  - Compare two encodes of the same track visually
+  - Spot upsampled 16-bit masters sold as 24-bit hi-res
