@@ -1,0 +1,27 @@
+name: PulseAudio
+description: PulseAudio is a sound server for POSIX systems. Desktops route, mix, and resample audio from many apps so Linux and Unix machines share devices, Bluetooth, and network streams without each app owning the ALSA device.
+tagline: Sound server for POSIX desktops
+
+github_url: https://github.com/pulseaudio/pulseaudio
+website_url: https://www.freedesktop.org/wiki/Software/PulseAudio/
+docs_url: https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/
+
+install_command: brew install pulseaudio
+
+category: Other
+tags: [pulseaudio, audio, sound-server, linux, mixing, bluetooth]
+pricing: free
+is_open_source: true
+license: LGPL-2.1
+
+problem_solved: |
+  On Linux, apps fighting over ALSA cannot mix, Bluetooth, or
+  network audio cleanly. PulseAudio is a userspace sound server
+  so desktops share devices, resample, and stream without each
+  client owning the hardware.
+
+use_cases:
+  - Mix desktop apps onto one output without ALSA device conflicts
+  - Route Bluetooth headsets through a userspace sound server
+  - Stream audio over the network between POSIX machines
+  - Resample mismatched rates so players share a single device

@@ -1,0 +1,27 @@
+name: OpenMPT
+description: OpenMPT is a tracker and libopenmpt is its decoder. Musicians edit MOD, XM, IT, and S3M modules while apps decode tracked music with a BSD library so chiptune and game audio stay playable without a closed player.
+tagline: Tracker editor and library for module music
+
+github_url: https://github.com/OpenMPT/openmpt
+website_url: https://openmpt.org/
+docs_url: https://lib.openmpt.org/libopenmpt/
+
+install_command: brew install libopenmpt
+
+category: Other
+tags: [openmpt, tracker, module, chiptune, audio, libopenmpt]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Module music (MOD, XM, IT) needs a tracker to edit and a library
+  to play. Closed players drop formats. OpenMPT edits modules and
+  libopenmpt decodes them so games and players keep chiptune audio
+  without a proprietary codec.
+
+use_cases:
+  - Edit Fasttracker or Impulse Tracker modules in OpenMPT
+  - Decode MOD, XM, IT, or S3M in a game or player via libopenmpt
+  - Convert tracked music to PCM for an audio pipeline
+  - Preserve a chiptune library with an open decoder
