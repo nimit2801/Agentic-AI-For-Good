@@ -1,0 +1,26 @@
+name: rav1e
+description: rav1e is the Xiph AV1 encoder written in Rust. Pipelines encode AV1 with a memory-safe library so 4K and streaming jobs get a fast open encoder without relying only on libaom or SVT-AV1.
+tagline: Fastest and safest AV1 video encoder
+
+github_url: https://github.com/xiph/rav1e
+website_url: https://github.com/xiph/rav1e
+docs_url: https://docs.rs/rav1e
+
+install_command: brew install rav1e
+
+category: Other
+tags: [rav1e, av1, video, encoder, rust, xiph, codec]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  AV1 encoding is slow or unsafe in C-only stacks. rav1e is a Rust
+  encoder from Xiph so FFmpeg and batch jobs compress AV1 with a
+  memory-safe, high-speed alternative to libaom.
+
+use_cases:
+  - Encode AV1 from FFmpeg or the rav1e CLI for 4K archives
+  - Batch-reencode a library with a memory-safe AV1 encoder
+  - Compare rav1e bitrate against SVT-AV1 or libaom on the same source
+  - Ship AV1 in a Rust media pipeline without C encoder bindings

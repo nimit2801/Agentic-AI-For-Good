@@ -1,0 +1,26 @@
+name: Cardinal
+description: Cardinal is a DISTRHO virtual modular synth plugin that wraps VCV Rack modules. DAWs load a self-contained Rack as VST, CLAP, or LV2 so modular patches sit in a session without a separate Rack app.
+tagline: Virtual modular synthesizer plugin from DISTRHO
+
+github_url: https://github.com/DISTRHO/Cardinal
+website_url: https://cardinal.kx.studio/
+docs_url: https://github.com/DISTRHO/Cardinal/blob/main/docs/README.md
+
+install_command: brew install --cask cardinal
+
+category: Other
+tags: [cardinal, modular, vst, clap, lv2, synthesizer, distrho]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  VCV Rack is a standalone app, so DAW sessions cannot host the
+  patch natively. Cardinal packages Rack modules as VST, CLAP, and
+  LV2 so modular patches live inside the DAW.
+
+use_cases:
+  - Load a VCV-style modular patch as a VST or CLAP in a DAW
+  - Run Cardinal as LV2 on Linux without a separate Rack process
+  - Share self-contained modular patches with a plugin, not a Rack file
+  - Perform live with modular synthesis hosted inside the session
