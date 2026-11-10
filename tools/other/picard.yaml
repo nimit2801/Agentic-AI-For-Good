@@ -1,0 +1,27 @@
+name: Picard
+description: Picard is a cross-platform music tagger powered by MusicBrainz. It looks up albums and recordings, then writes tags, cover art, and filenames so libraries match canonical metadata instead of ripped or downloaded filenames.
+tagline: MusicBrainz-powered cross-platform music tagger
+
+github_url: https://github.com/metabrainz/picard
+website_url: https://picard.musicbrainz.org/
+docs_url: https://picard.musicbrainz.org/docs/
+
+install_command: pip install picard
+
+category: Other
+tags: [picard, musicbrainz, tagging, metadata, music, desktop]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Rips and downloads often have wrong artist, album, and track tags.
+  Picard matches files to MusicBrainz recordings and writes canonical
+  tags, cover art, and filenames so a library is searchable and
+  consistent.
+
+use_cases:
+  - Tag a ripped album against MusicBrainz in a desktop UI
+  - Rewrite filenames from canonical artist and track titles
+  - Attach cover art from MusicBrainz or plugin providers
+  - Cluster unmatched files and submit new recordings to MusicBrainz

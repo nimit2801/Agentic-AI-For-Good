@@ -1,0 +1,27 @@
+name: libarchive
+description: libarchive is a multi-format archive and compression library. Apps read and write tar, zip, 7z, ISO, and related formats through one C API so tools extract datasets and packages without a format-specific parser for each archive type.
+tagline: Multi-format archive and compression library
+
+github_url: https://github.com/libarchive/libarchive
+website_url: https://www.libarchive.org/
+docs_url: https://github.com/libarchive/libarchive/wiki
+
+install_command: brew install libarchive
+
+category: Dev Tools
+tags: [libarchive, tar, zip, compression, archives, bsdtar, lib]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Dataset dumps, model weights, and OS packages arrive as tar, zip, 7z,
+  or ISO. Parsing each format separately is fragile. libarchive is one
+  C API so tools extract and create those archives without a per-format
+  stack.
+
+use_cases:
+  - Extract tar and zip dataset dumps in a training pipeline
+  - Create portable archives of model artifacts
+  - Read ISO or 7z files from a packaging tool
+  - Link libarchive as the backend for bsdtar in a CI image

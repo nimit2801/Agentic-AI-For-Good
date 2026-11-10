@@ -1,0 +1,27 @@
+name: Beets
+description: Beets is a music library manager and MusicBrainz tagger. It imports albums, fixes tags and paths, and plugins handle lyrics, replaygain, and metadata so local collections stay consistent without hand-editing files.
+tagline: Music library manager and MusicBrainz tagger
+
+github_url: https://github.com/beetbox/beets
+website_url: https://beets.io/
+docs_url: https://beets.readthedocs.io/
+
+install_command: pip install beets
+
+category: Other
+tags: [beets, music, metadata, musicbrainz, tagging, python, library]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Local music folders drift into bad tags, duplicate albums, and messy
+  paths. Beets imports files against MusicBrainz, rewrites metadata, and
+  organizes the library so collections stay consistent without manual
+  tagging.
+
+use_cases:
+  - Import a ripped CD collection and auto-tag from MusicBrainz
+  - Rename and move albums into a consistent folder layout
+  - Fetch lyrics, cover art, and ReplayGain via plugins
+  - Query a local library from scripts with the beets CLI
