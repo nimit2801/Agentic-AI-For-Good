@@ -1,0 +1,25 @@
+name: meshoptimizer
+description: meshoptimizer makes 3D meshes smaller and faster to render. Apps simplify, index, cache-optimize, and compress geometry so engines draw the same model with fewer vertices and better GPU locality.
+tagline: Mesh simplification and GPU-friendly geometry optimizer
+
+github_url: https://github.com/zeux/meshoptimizer
+website_url: https://meshoptimizer.org/
+docs_url: https://meshoptimizer.org/
+
+category: Other
+tags: [meshoptimizer, 3d, mesh, lod, compression, gpu, geometry]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Raw meshes waste GPU time with bad index order, extra
+  vertices, and no LODs. meshoptimizer simplifies and
+  reorders geometry so engines draw faster from the same
+  source model.
+
+use_cases:
+  - Generate mesh LODs for a game or CAD viewer
+  - Optimize vertex cache order before shipping GPU assets
+  - Compress geometry with meshlet or index codecs
+  - Simplify scanned meshes for real-time rendering

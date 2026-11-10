@@ -1,0 +1,27 @@
+name: libass
+description: libass is a portable renderer for ASS and SSA subtitles. Players draw styled, positioned, and animated captions so video apps render karaoke and typeset subtitles without a player-only parser.
+tagline: Portable ASS/SSA subtitle renderer
+
+github_url: https://github.com/libass/libass
+website_url: https://github.com/libass/libass
+docs_url: https://github.com/libass/libass
+
+install_command: brew install libass
+
+category: Other
+tags: [libass, subtitles, ass, ssa, video, ffmpeg, renderer]
+pricing: free
+is_open_source: true
+license: ISC
+
+problem_solved: |
+  ASS/SSA subtitles mix fonts, timing, and animation that
+  SRT cannot express. libass renders them so players and
+  FFmpeg draw karaoke and typeset captions without a
+  custom layout engine.
+
+use_cases:
+  - Render ASS subtitles in a video player
+  - Burn styled captions with FFmpeg or mpv
+  - Draw karaoke timing and fonts from an SSA script
+  - Link libass as the subtitle backend in a media toolkit
