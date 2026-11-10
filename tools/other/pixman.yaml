@@ -1,0 +1,24 @@
+name: pixman
+description: Low-level pixel manipulation library. Apps composite, scale, and convert images with SIMD-backed raster ops so cairo, X, and Wayland share one portable pixel engine.
+tagline: Low-level pixel compositing library used by cairo and X
+
+website_url: https://gitlab.freedesktop.org/pixman/pixman
+docs_url: https://gitlab.freedesktop.org/pixman/pixman
+install_command: brew install pixman
+
+category: Other
+tags: [graphics, pixels, compositing, simd, cairo, c]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  2D stacks need fast compositing and format conversion on every CPU.
+  pixman is the portable pixel library so cairo, X, and Wayland share
+  one SIMD-backed raster engine instead of per-platform blitters.
+
+use_cases:
+  - Composite image layers in a 2D graphics or UI toolkit
+  - Scale and convert pixel formats in a cairo or X rendering path
+  - Accelerate software rasterization when a GPU path is unavailable
+  - Share one pixel engine across Wayland, X, and cairo backends
