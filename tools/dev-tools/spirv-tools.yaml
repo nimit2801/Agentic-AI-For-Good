@@ -1,0 +1,27 @@
+name: SPIRV-Tools
+description: SPIRV-Tools is the Khronos API and CLI for processing SPIR-V modules. Apps assemble, disassemble, validate, and optimize SPIR-V so Vulkan and OpenCL pipelines check bytecode instead of shipping raw compiler output.
+tagline: Assemble, validate, and optimize SPIR-V modules
+
+github_url: https://github.com/KhronosGroup/SPIRV-Tools
+website_url: https://github.com/KhronosGroup/SPIRV-Tools
+docs_url: https://github.com/KhronosGroup/SPIRV-Tools
+
+install_command: brew install spirv-tools
+
+category: Dev Tools
+tags: [spirv, vulkan, shaders, khronos, optimizer, validator]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  SPIR-V from a compiler still needs validation and size or
+  performance passes. SPIRV-Tools is the Khronos assembler,
+  validator, and optimizer so GPU pipelines ship checked
+  bytecode instead of raw frontend output.
+
+use_cases:
+  - Validate SPIR-V modules before loading them in Vulkan
+  - Optimize SPIR-V size and performance in a shader pipeline
+  - Disassemble SPIR-V for debugging a GPU crash
+  - Assemble hand-written SPIR-V in a compiler test suite
