@@ -1,0 +1,25 @@
+name: Extempore
+description: Extempore is a live-coding environment for music and audio. It pairs a Scheme interpreter with xtlang, a lisp that compiles to LLVM at runtime, so you can reshape a running program while it keeps making sound.
+tagline: Scheme plus xtlang live-coding for music and audio
+
+github_url: https://github.com/digego/extempore
+website_url: https://extemporelang.github.io/
+docs_url: https://extemporelang.github.io/docs/
+
+category: Other
+tags: [extempore, live-coding, scheme, llvm, music, audio, xtlang]
+pricing: free
+is_open_source: true
+
+problem_solved: |
+  Live audio programs usually force a choice between a slow dynamic
+  language and a compiled DSP graph you cannot change mid-show. Extempore
+  pairs Scheme with xtlang, a typed lisp that JIT-compiles to LLVM, so you
+  can rewrite a running cyber-physical program while it keeps producing
+  sound on Linux, macOS, and Windows.
+
+use_cases:
+  - Live-code an audio graph in Scheme and xtlang during a performance
+  - JIT-compile DSP routines to LLVM without stopping the running process
+  - Prototype cyber-physical audio experiments on Linux, macOS, or Windows
+  - Load examples and editor tooling from a self-contained Extempore release
