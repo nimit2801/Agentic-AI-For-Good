@@ -1,0 +1,27 @@
+name: 7-Zip
+description: High-ratio archiver with the 7z format. Apps pack and extract 7z, ZIP, tar, and many other archives from a CLI and library so backups, dataset drops, and Windows packaging share one well-known compressor.
+tagline: High-ratio 7z archiver and multi-format extractor
+
+github_url: https://github.com/ip7z/7zip
+website_url: https://7-zip.org
+docs_url: https://7-zip.org
+
+install_command: brew install sevenzip
+
+category: Dev Tools
+tags: [archive, 7z, compression, cli, packaging, backup]
+pricing: free
+is_open_source: true
+license: LGPL-2.1-or-later
+
+problem_solved: |
+  Datasets, model drops, and backups arrive as 7z, ZIP, RAR, or tar.
+  Shipping a different extractor per format is painful. 7-Zip is the
+  high-ratio 7z archiver plus a multi-format extractor so packaging and
+  data ops use one tool.
+
+use_cases:
+  - Pack dataset or model drops as 7z for smaller downloads
+  - Extract mixed ZIP, tar, and 7z archives in a data ingest job
+  - Create Windows installers or backup volumes with 7z
+  - Script archive create and extract from CI with the 7z CLI

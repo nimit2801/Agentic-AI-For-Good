@@ -1,0 +1,27 @@
+name: PCRE2
+description: Perl-compatible regular expression library with a C API. Apps compile and match Unicode patterns with JIT, capture groups, and replacement so CLIs, languages, and log parsers share one battle-tested regex engine.
+tagline: Perl-compatible regex library with JIT and Unicode
+
+github_url: https://github.com/PCRE2Project/pcre2
+website_url: https://www.pcre.org/
+docs_url: https://www.pcre.org/current/doc/html/
+
+install_command: brew install pcre2
+
+category: Dev Tools
+tags: [regex, pcre, unicode, jit, c, library]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  POSIX regex is too weak for Unicode, lookaround, and Perl syntax that
+  languages and log tools expect. PCRE2 is the C library behind that
+  dialect, with JIT and a stable API so CLIs and runtimes match patterns
+  without shipping a custom engine.
+
+use_cases:
+  - Compile and match Perl-style patterns from a C or C++ CLI
+  - Power regex in a language runtime or log parser
+  - Run Unicode-aware search and replace on large text streams
+  - JIT-compile hot patterns in a high-throughput filter
