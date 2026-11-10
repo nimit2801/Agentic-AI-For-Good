@@ -1,0 +1,26 @@
+name: fmt
+description: Modern C++ formatting library. Apps format strings with Python-like syntax, type safety, and speed that replaced iostreams in many codebases and became the basis for C++20 std::format.
+tagline: Fast type-safe C++ formatting library behind std::format
+
+github_url: https://github.com/fmtlib/fmt
+website_url: https://fmt.dev
+docs_url: https://fmt.dev/latest/
+
+install_command: brew install fmt
+
+category: Dev Tools
+tags: [cpp, formatting, logging, std-format, library]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  iostreams and printf are slow or unsafe. fmt gives C++ Python-like
+  format strings with compile-time checks and high speed, and it is the
+  library that shaped std::format so logs and CLIs stay readable.
+
+use_cases:
+  - Replace iostreams in a C++ service log path
+  - Format CLI output with type-safe format strings
+  - Share formatting with spdlog in a C++ app
+  - Prototype std::format-style APIs on older compilers

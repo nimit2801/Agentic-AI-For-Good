@@ -1,0 +1,25 @@
+name: cairo
+description: 2D vector graphics library. Apps draw paths, text, and images to PDF, PNG, SVG, and display surfaces with a C API used by GTK, Firefox, and print pipelines that need device-independent rendering.
+tagline: 2D vector graphics library for PDF, PNG, SVG, and displays
+
+website_url: https://cairographics.org/
+docs_url: https://www.cairographics.org/documentation/
+
+install_command: brew install cairo
+
+category: Other
+tags: [graphics, 2d, pdf, svg, gtk, c]
+pricing: free
+is_open_source: true
+license: LGPL-2.1-only
+
+problem_solved: |
+  Drawing to screens, PDF, and SVG with one code path is hard. cairo is
+  a 2D vector library so GTK, browsers, and print tools stroke paths,
+  text, and images onto multiple backends without a per-device renderer.
+
+use_cases:
+  - Render charts or UI to PNG and PDF from the same drawing code
+  - Draw vector text and paths in a GTK or desktop app
+  - Export SVG from a C graphics pipeline
+  - Print device-independent 2D scenes from a report generator

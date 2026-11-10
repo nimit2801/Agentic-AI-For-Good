@@ -1,0 +1,26 @@
+name: libffi
+description: Portable foreign-function interface library. Apps call C functions from other languages and JITs with a stable ABI so Python, Ruby, and runtimes bind native code without writing per-platform assembly.
+tagline: Portable FFI library for calling C from other languages
+
+github_url: https://github.com/libffi/libffi
+website_url: https://sourceware.org/libffi/
+docs_url: https://sourceware.org/libffi/
+
+install_command: brew install libffi
+
+category: Dev Tools
+tags: [ffi, c, bindings, jit, runtime, abi]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Calling C from a VM or JIT needs calling-convention glue on every CPU.
+  libffi is the portable FFI so languages can invoke native functions
+  without writing per-platform assembly for each OS and architecture.
+
+use_cases:
+  - Power ctypes-style bindings in a language runtime
+  - Call native libraries from a JIT or interpreter
+  - Build a plugin ABI that loads C callbacks
+  - Link FFI support into Python, Ruby, or a custom VM
