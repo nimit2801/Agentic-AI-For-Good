@@ -1,0 +1,25 @@
+name: Vulkan
+description: Cross-platform GPU graphics and compute API from Khronos. Apps submit command buffers to GPUs for rendering and compute so engines and ML runtimes talk to modern GPUs without a vendor-only API.
+tagline: Cross-platform GPU graphics and compute API
+
+github_url: https://github.com/KhronosGroup/Vulkan-Docs
+website_url: https://www.vulkan.org/
+docs_url: https://docs.vulkan.org/
+install_command: brew install vulkan-headers
+
+category: Other
+tags: [gpu, graphics, compute, khronos, vulkan, rendering]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Modern GPUs need an explicit API, not a hidden driver. Vulkan is the
+  Khronos graphics and compute API so engines and ML runtimes submit
+  work to GPUs with one cross-platform specification.
+
+use_cases:
+  - Render 3D scenes with an explicit GPU command buffer API
+  - Dispatch compute shaders for image or ML preprocessing
+  - Target Vulkan across Windows, Linux, and Android
+  - Build a graphics or viz engine on a vendor-neutral GPU API

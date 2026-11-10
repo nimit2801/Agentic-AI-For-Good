@@ -1,0 +1,25 @@
+name: nghttp3
+description: HTTP/3 library written in C. Apps parse and generate HTTP/3 frames on top of QUIC so clients and servers speak the latest HTTP without embedding a full browser stack.
+tagline: C library for HTTP/3 framing on top of QUIC
+
+github_url: https://github.com/ngtcp2/nghttp3
+website_url: https://nghttp2.org/nghttp3/
+docs_url: https://nghttp2.org/nghttp3/
+install_command: brew install libnghttp3
+
+category: Dev Tools
+tags: [http3, quic, c, networking, http, ngtcp2]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  HTTP/3 sits on QUIC and needs a dedicated framing library.
+  nghttp3 is the C HTTP/3 codec so clients and servers speak
+  HTTP/3 without embedding a browser networking stack.
+
+use_cases:
+  - Parse HTTP/3 frames in a C client or reverse proxy
+  - Pair with ngtcp2 to build a native HTTP/3 stack
+  - Add HTTP/3 support to a C library that already speaks HTTP/2
+  - Prototype QUIC-based model serving without a browser engine

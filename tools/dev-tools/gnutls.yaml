@@ -1,0 +1,25 @@
+name: GnuTLS
+description: GNU Transport Layer Security library. Apps speak TLS and DTLS with X.509, OpenPGP, and PKCS APIs so C services encrypt traffic without depending on OpenSSL.
+tagline: GNU TLS library for encrypted C networking
+
+github_url: https://github.com/gnutls/gnutls
+website_url: https://gnutls.org/
+docs_url: https://gnutls.org/documentation.html
+install_command: brew install gnutls
+
+category: Dev Tools
+tags: [tls, ssl, crypto, gnu, networking, security]
+pricing: free
+is_open_source: true
+license: LGPL-2.1
+
+problem_solved: |
+  C services need TLS without locking to OpenSSL. GnuTLS is the GNU
+  TLS and DTLS library so apps encrypt traffic with X.509 and a
+  LGPL-licensed stack.
+
+use_cases:
+  - Terminate TLS in a C HTTP or gRPC server without OpenSSL
+  - Speak DTLS for datagram protocols from native code
+  - Load X.509 certificates and keys in a GNU-licensed service
+  - Link a TLS client into a CLI that talks to HTTPS APIs
