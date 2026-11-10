@@ -1,0 +1,27 @@
+name: OpenJPEG
+description: OpenJPEG is the open-source JPEG 2000 codec from UCLouvain. Apps encode and decode JP2 and J2K files used in GIS, medical imaging, and digital cinema without a proprietary JPEG 2000 library.
+tagline: Open-source JPEG 2000 encoder and decoder
+
+github_url: https://github.com/uclouvain/openjpeg
+website_url: https://www.openjpeg.org/
+docs_url: https://www.openjpeg.org/
+
+install_command: brew install openjpeg
+
+category: Other
+tags: [openjpeg, jpeg2000, images, codec, gis, medical, jp2]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  JPEG 2000 shows up in GIS, DICOM, and cinema packages that JPEG
+  and PNG do not cover. Proprietary codecs lock those pipelines.
+  OpenJPEG is the reference open codec so apps read and write JP2
+  and J2K without a vendor SDK.
+
+use_cases:
+  - Decode JPEG 2000 tiles in a GIS or mapping pipeline
+  - Read JP2 frames from a medical or cinema archive
+  - Encode lossless JPEG 2000 for archival image storage
+  - Link OpenJPEG as the JP2 backend for an image toolkit
