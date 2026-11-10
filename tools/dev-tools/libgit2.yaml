@@ -1,0 +1,26 @@
+name: libgit2
+description: Linkable C implementation of Git. Apps clone, commit, diff, and merge without shelling out to the git CLI, so IDEs, CI, and ML experiment trackers embed real Git operations in-process.
+tagline: Portable C library that embeds Git in your application
+
+github_url: https://github.com/libgit2/libgit2
+website_url: https://libgit2.org
+docs_url: https://libgit2.org/docs/
+
+install_command: brew install libgit2
+
+category: Dev Tools
+tags: [git, vcs, c, library, ide, ci]
+pricing: free
+is_open_source: true
+license: GPL-2.0-only
+
+problem_solved: |
+  Shelling out to git is slow, brittle, and hard to sandbox. libgit2 is
+  a linkable Git implementation so IDEs, CI, and experiment trackers can
+  clone, commit, and diff in-process with a stable C API.
+
+use_cases:
+  - Clone and fetch repos from an IDE or editor plugin
+  - Commit experiment artifacts from a training pipeline
+  - Diff and merge in a code review or CI bot
+  - Embed Git operations in a desktop or server app

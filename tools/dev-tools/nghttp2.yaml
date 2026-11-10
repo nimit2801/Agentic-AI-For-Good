@@ -1,0 +1,26 @@
+name: nghttp2
+description: HTTP/2 C library and tools. Apps speak HTTP/2 as a client or server with HPACK, multiplexing, and a battle-tested framing layer used by curl, Envoy, and reverse proxies.
+tagline: HTTP/2 C library with HPACK and multiplexing
+
+github_url: https://github.com/nghttp2/nghttp2
+website_url: https://nghttp2.org
+docs_url: https://nghttp2.org/documentation/
+
+install_command: brew install nghttp2
+
+category: Dev Tools
+tags: [http2, hpack, networking, c, curl, proxy]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  HTTP/2 framing, HPACK, and stream multiplexing are easy to get wrong.
+  nghttp2 is the C library behind curl and many proxies so clients and
+  servers can speak HTTP/2 without implementing the spec from scratch.
+
+use_cases:
+  - Add HTTP/2 client support to a C or C++ service
+  - Terminate HTTP/2 in a reverse proxy or load tester
+  - Inspect HPACK and frames with nghttp2 CLI tools
+  - Link the library into curl or a custom RPC stack

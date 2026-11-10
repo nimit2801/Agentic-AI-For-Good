@@ -1,0 +1,26 @@
+name: libsodium
+description: Modern portable crypto library. Apps encrypt, sign, hash, and key-exchange with a small C API so services avoid OpenSSL complexity and get audited NaCl-style primitives that are hard to misuse.
+tagline: Modern easy-to-use crypto library in portable C
+
+github_url: https://github.com/jedisct1/libsodium
+website_url: https://libsodium.org
+docs_url: https://doc.libsodium.org/
+
+install_command: brew install libsodium
+
+category: Other
+tags: [crypto, encryption, nacl, c, security, hashing]
+pricing: free
+is_open_source: true
+license: ISC
+
+problem_solved: |
+  Rolling crypto is dangerous and OpenSSL is a large surface. libsodium
+  wraps NaCl primitives behind a small API so apps can encrypt, sign,
+  and hash with defaults that are hard to misuse on every platform.
+
+use_cases:
+  - Encrypt API tokens and secrets at rest with secret-box
+  - Sign and verify messages with public-key crypto
+  - Derive keys and hashes for password storage
+  - Add portable crypto to a C, Python, or Rust service
