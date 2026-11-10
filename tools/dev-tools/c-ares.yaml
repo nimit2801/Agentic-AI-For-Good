@@ -1,0 +1,25 @@
+name: c-ares
+description: C library for asynchronous DNS requests. Apps resolve hostnames without blocking so event loops, HTTP clients, and gRPC stacks look up names while other I/O continues.
+tagline: Asynchronous C DNS resolver for non-blocking name lookups
+
+github_url: https://github.com/c-ares/c-ares
+website_url: https://c-ares.org/
+docs_url: https://c-ares.org/docs.html
+install_command: brew install c-ares
+
+category: Dev Tools
+tags: [dns, async, c, networking, resolver, http]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Blocking DNS stalls event loops and inference servers. Rolling an
+  async resolver is error-prone across platforms. c-ares is the portable
+  C library many HTTP, gRPC, and curl stacks use for non-blocking lookups.
+
+use_cases:
+  - Resolve hostnames from a C event loop without blocking the thread
+  - Power async DNS in an HTTP client, proxy, or gRPC stack
+  - Look up SRV and TXT records for service discovery in native code
+  - Replace getaddrinfo in a high-concurrency ML serving process
