@@ -1,0 +1,26 @@
+name: mpg123
+description: mpg123 is a fast MP3 player and decoder library for Linux and UNIX. Apps decode MPEG audio with libmpg123 or play files from the command line without a heavy media framework.
+tagline: Fast MP3 player and libmpg123 decoder for Linux and UNIX
+
+website_url: https://www.mpg123.de/
+docs_url: https://www.mpg123.de/api/
+
+install_command: brew install mpg123
+
+category: Other
+tags: [mpg123, mp3, audio, decoder, mpeg, linux, library]
+pricing: free
+is_open_source: true
+license: LGPL-2.1
+
+problem_solved: |
+  Many tools need to decode MP3 without pulling in a full media stack.
+  mpg123 is a small, fast MPEG audio player and libmpg123 so command-line
+  tools and apps decode MP3 on Linux and UNIX with a focused library
+  instead of a desktop player.
+
+use_cases:
+  - Play MP3 files from the command line on Linux or UNIX
+  - Decode MPEG audio in an app that links libmpg123
+  - Convert or inspect MP3 streams without a GUI player
+  - Embed a lightweight MP3 decoder in a media pipeline

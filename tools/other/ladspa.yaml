@@ -1,0 +1,26 @@
+name: LADSPA
+description: LADSPA is the Linux Audio Developer's Simple Plugin API. Hosts load small C plugins for EQ, dynamics, and effects so Linux audio apps share a common plugin format without a heavy plugin SDK.
+tagline: Simple C plugin API shared by Linux audio hosts
+
+website_url: https://www.ladspa.org
+docs_url: https://www.ladspa.org/cmt/overview.html
+
+install_command: brew install ladspa-sdk
+
+category: Other
+tags: [ladspa, audio, plugins, linux, dsp, effects, sdk]
+pricing: free
+is_open_source: true
+license: LGPL-2.1
+
+problem_solved: |
+  Linux audio apps each used to ship private effect formats, so an EQ
+  written for one host would not load in another. LADSPA is a small C
+  plugin API so hosts load shared EQ, dynamics, and effects plugins
+  without a commercial SDK.
+
+use_cases:
+  - Write a small C audio effect that loads in any LADSPA host
+  - Run LADSPA plugins from a JACK or ALSA host on Linux
+  - Install the LADSPA SDK to build and test plugin binaries
+  - Share EQ and dynamics plugins across Linux audio apps

@@ -1,0 +1,26 @@
+name: x264
+description: x264 is VideoLAN's H.264/AVC encoder. FFmpeg, HandBrake, and broadcast stacks use it to produce widely compatible H.264 video with mature rate control and preset speed knobs.
+tagline: VideoLAN H.264/AVC encoder used across FFmpeg and HandBrake
+
+website_url: https://www.videolan.org/developers/x264.html
+docs_url: https://www.videolan.org/developers/x264.html
+
+install_command: brew install x264
+
+category: Other
+tags: [x264, h264, avc, codec, video, encoder, videolan, ffmpeg]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Shipping video that plays everywhere still means H.264, and rolling
+  an encoder from the spec is a research project. x264 is VideoLAN's
+  production H.264 encoder so FFmpeg, HandBrake, and broadcast tools
+  get presets, rate control, and wide player compatibility.
+
+use_cases:
+  - Encode H.264 in FFmpeg or HandBrake with x264 presets
+  - Produce broadcast or web video that plays on phones and TVs
+  - Tune CRF and preset speed knobs for archive vs live encodes
+  - Build a transcode pipeline that depends on libx264
