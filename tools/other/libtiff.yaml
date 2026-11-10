@@ -1,0 +1,26 @@
+name: libtiff
+description: libtiff is the reference library for Tagged Image File Format. Apps read and write TIFF, including tiled, multi-page, and high-bit-depth files used in scanning, GIS, and print, without a one-off parser.
+tagline: Reference library for reading and writing TIFF
+
+website_url: https://libtiff.gitlab.io/libtiff/
+docs_url: https://libtiff.gitlab.io/libtiff/
+
+install_command: brew install libtiff
+
+category: Other
+tags: [libtiff, tiff, images, codec, graphics, gis, scanner]
+pricing: free
+is_open_source: true
+license: libtiff
+
+problem_solved: |
+  TIFF carries multi-page scans, tiled GIS rasters, and 16-bit print
+  plates that PNG and JPEG do not. Rolling a parser mishandles
+  compression and tags. libtiff is the reference library so apps
+  read and write those files correctly.
+
+use_cases:
+  - Read multi-page scanned documents from a TIFF file
+  - Write tiled GeoTIFF rasters in a mapping or GIS pipeline
+  - Decode 16-bit TIFF plates in a print or imaging workflow
+  - Convert TIFF assets with the official encoder and decoder
