@@ -1,0 +1,25 @@
+name: CLAP
+description: CLAP is an open audio plugin API from u-he and Bitwig. Hosts and plugins talk over a simple C ABI so instruments and effects load in CLAP-capable DAWs without a proprietary SDK.
+tagline: Open C ABI audio plugin API from u-he and Bitwig
+
+github_url: https://github.com/free-audio/clap
+website_url: https://cleveraudio.org/
+docs_url: https://cleveraudio.org/
+
+category: Other
+tags: [clap, audio, plugins, daw, dsp, plugin-api, bitwig]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  VST and AU plugin APIs are vendor-controlled, so hosts and makers
+  wait on NDAs and SDK drops. CLAP is an open C ABI from u-he and
+  Bitwig so instruments and effects load in supporting DAWs without a
+  proprietary plugin SDK.
+
+use_cases:
+  - Implement a CLAP instrument or effect that Bitwig and other hosts can load
+  - Host CLAP plugins in a DAW without a proprietary SDK
+  - Port an existing plugin to the CLAP C ABI
+  - Test parameter automation and note events against the CLAP headers

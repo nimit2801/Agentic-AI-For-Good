@@ -1,0 +1,26 @@
+name: libwebp
+description: libwebp is Google's library for the WebP image format. Apps encode and decode lossy and lossless web images so sites ship smaller photos than JPEG or PNG without a browser-only encoder.
+tagline: Google library for lossy and lossless WebP images
+
+github_url: https://github.com/webmproject/libwebp
+website_url: https://developers.google.com/speed/webp
+docs_url: https://developers.google.com/speed/webp/docs/api
+
+install_command: brew install webp
+
+category: Other
+tags: [libwebp, webp, images, codec, compression, google, web]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  JPEG and PNG are either lossy-blocky or bulky for the web. libwebp is
+  Google's encoder and decoder so apps and CDNs produce smaller lossy
+  and lossless images that browsers already understand.
+
+use_cases:
+  - Encode photos to WebP for a smaller web payload than JPEG
+  - Decode WebP assets in a native app that links libwebp
+  - Convert PNG screenshots to lossless WebP in a build step
+  - Run cwebp and dwebp from a CI image pipeline
