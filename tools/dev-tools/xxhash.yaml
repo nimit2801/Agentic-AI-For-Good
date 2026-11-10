@@ -1,0 +1,25 @@
+name: xxHash
+description: Extremely fast non-cryptographic hash algorithm. Apps checksum files, shard keys, and fingerprint buffers at RAM speed so data pipelines hash without waiting on SHA or MD5.
+tagline: Extremely fast non-cryptographic hash for checksums and keys
+
+github_url: https://github.com/Cyan4973/xxHash
+website_url: https://xxhash.com/
+docs_url: https://xxhash.com/
+install_command: brew install xxhash
+
+category: Dev Tools
+tags: [hash, checksum, c, performance, xxh3, fingerprint]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Cryptographic hashes are too slow for checksums and sharding.
+  xxHash is a RAM-speed non-crypto hash so pipelines fingerprint
+  buffers and files without waiting on SHA or MD5.
+
+use_cases:
+  - Checksum large datasets and model artifacts at RAM speed
+  - Hash map keys and shard identifiers in a C or C++ service
+  - Fingerprint training samples without a cryptographic hash
+  - Replace MD5 checksums in a high-throughput ingest path
