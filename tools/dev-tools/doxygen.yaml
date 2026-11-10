@@ -1,0 +1,26 @@
+name: Doxygen
+description: Source-code documentation generator. Apps turn commented C++, Python, Java, and other sources into HTML, PDF, and XML docs so libraries and ML SDKs keep API reference in sync with the code.
+tagline: Generate API docs from commented source code
+
+github_url: https://github.com/doxygen/doxygen
+website_url: https://www.doxygen.nl/
+docs_url: https://www.doxygen.nl/manual/
+
+install_command: brew install doxygen
+
+category: Dev Tools
+tags: [documentation, api-docs, cplusplus, generator, html]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  API reference drifts when docs live in a wiki. Doxygen reads comments
+  in the source and emits HTML, PDF, and XML so C++ and mixed-language
+  libraries keep a searchable reference that matches the code.
+
+use_cases:
+  - Generate HTML API docs for a C++ library in CI
+  - Emit XML docs that feed a custom portal or LLM index
+  - Document mixed C, Python, and Java sources in one project
+  - Publish PDF manuals from annotated headers
