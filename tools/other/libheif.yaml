@@ -1,0 +1,26 @@
+name: libheif
+description: libheif is an HEIF and AVIF decoder and encoder. Apps read and write HEIC camera stills and related ISOBMFF images so photo pipelines handle phone-camera files without a closed Apple or Android decoder.
+tagline: HEIF and AVIF decoder and encoder library
+
+github_url: https://github.com/strukturag/libheif
+website_url: https://github.com/strukturag/libheif
+docs_url: https://github.com/strukturag/libheif
+
+install_command: brew install libheif
+
+category: Other
+tags: [libheif, heif, heic, avif, images, codec, iso]
+pricing: free
+is_open_source: true
+license: LGPL-3.0-or-later
+
+problem_solved: |
+  Phone cameras write HEIC, but many pipelines only speak JPEG or PNG.
+  libheif decodes and encodes HEIF so apps open camera stills and write
+  ISOBMFF images without a closed vendor decoder.
+
+use_cases:
+  - Decode HEIC photos from iPhone or Android cameras
+  - Convert HEIF stills to JPEG or PNG in a dataset pipeline
+  - Encode HEIF output from a native photo app
+  - Link libheif as the HEIF backend in an image converter

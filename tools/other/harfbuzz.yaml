@@ -1,0 +1,26 @@
+name: HarfBuzz
+description: HarfBuzz is an OpenType text shaping engine. Apps turn Unicode plus a font into correctly positioned glyphs so complex scripts, ligatures, and emoji render without a browser-only shaper.
+tagline: OpenType text shaping engine for complex scripts
+
+github_url: https://github.com/harfbuzz/harfbuzz
+website_url: https://harfbuzz.github.io/
+docs_url: https://harfbuzz.github.io/
+
+install_command: brew install harfbuzz
+
+category: Other
+tags: [harfbuzz, fonts, text, shaping, opentype, unicode, i18n]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Unicode plus a font is not enough for Arabic, Indic, ligatures, or
+  emoji. HarfBuzz shapes OpenType so apps place glyphs correctly instead
+  of drawing one code point per glyph.
+
+use_cases:
+  - Shape Arabic or Indic text in a native UI
+  - Apply OpenType ligatures and kerning in a design tool
+  - Render emoji sequences with a color font
+  - Link HarfBuzz with FreeType in a game or document renderer

@@ -1,0 +1,26 @@
+name: FreeType
+description: FreeType is a software library that renders fonts to bitmaps. Apps draw TrueType, OpenType, and other outline fonts so UIs, games, and document tools rasterize text without a platform-only font engine.
+tagline: Font rasterizer for TrueType and OpenType
+
+github_url: https://github.com/freetype/freetype
+website_url: https://www.freetype.org/
+docs_url: https://freetype.org/freetype2/docs/documentation.html
+
+install_command: brew install freetype
+
+category: Other
+tags: [freetype, fonts, rasterizer, truetype, opentype, graphics, text]
+pricing: free
+is_open_source: true
+license: FTL
+
+problem_solved: |
+  Drawing text needs a rasterizer that understands outline fonts. Platform
+  APIs differ and skip some formats. FreeType renders TrueType, OpenType,
+  and related fonts so apps draw glyphs the same way on every OS.
+
+use_cases:
+  - Rasterize UI fonts in a game or embedded device
+  - Render PDF or document text with an open font engine
+  - Load TrueType and OpenType files in a design tool
+  - Link FreeType as the text backend for a GUI toolkit

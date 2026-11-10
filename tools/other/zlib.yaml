@@ -1,0 +1,26 @@
+name: zlib
+description: zlib is a general-purpose lossless compression library. Apps deflate and inflate data with the same algorithm as gzip and PNG so files, networks, and image codecs share a tiny, portable compressor.
+tagline: Portable deflate compression library used by gzip and PNG
+
+github_url: https://github.com/madler/zlib
+website_url: https://zlib.net/
+docs_url: https://zlib.net/manual.html
+
+install_command: brew install zlib
+
+category: Other
+tags: [zlib, compression, deflate, gzip, png, library]
+pricing: free
+is_open_source: true
+license: Zlib
+
+problem_solved: |
+  Almost every file format and protocol needs deflate. Rolling a
+  compressor is error-prone. zlib is the portable library behind gzip
+  and PNG so apps compress and decompress with a tiny, well-tested API.
+
+use_cases:
+  - Compress API payloads with deflate or gzip
+  - Inflate PNG IDAT streams in an image decoder
+  - Read and write gzip files from a C or C++ tool
+  - Link zlib as the compression backend for an archive or network stack
