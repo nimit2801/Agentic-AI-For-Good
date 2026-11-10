@@ -1,0 +1,27 @@
+name: svt-av1
+description: SVT-AV1 is Intel's Scalable Video Technology encoder for AV1. Video pipelines encode royalty-free AV1 at production speed for FFmpeg, streaming, and archives instead of waiting on the slower libaom reference encoder.
+tagline: Production-speed AV1 encoder used by FFmpeg and streaming
+
+github_url: https://github.com/AOMediaCodec/SVT-AV1
+website_url: https://gitlab.com/AOMediaCodec/SVT-AV1
+docs_url: https://gitlab.com/AOMediaCodec/SVT-AV1
+
+install_command: brew install svt-av1
+
+category: Other
+tags: [svt-av1, av1, codec, video, encoder, ffmpeg, aomedia]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause-Clear
+
+problem_solved: |
+  libaom is the AV1 reference encoder but it is too slow for production
+  encodes. SVT-AV1 is Intel's scalable AV1 encoder so FFmpeg, streaming
+  platforms, and archives get royalty-free AV1 at usable speed with
+  threading across many cores.
+
+use_cases:
+  - Encode AV1 in FFmpeg with the SVT-AV1 encoder instead of libaom
+  - Batch-transcode archives to royalty-free AV1 on a multi-core box
+  - Stream AV1 at production speed without HEVC patent licenses
+  - Compare SVT-AV1 quality and speed against libaom or rav1e
