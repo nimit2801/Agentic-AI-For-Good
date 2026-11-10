@@ -27,12 +27,14 @@ interface WeeklyDigestEmailProps {
   tools: DigestTool[]
   weekOf: string // e.g. "April 14, 2026"
   unsubscribeUrl: string
+  issueUrl?: string
 }
 
 export default function WeeklyDigestEmail({
   tools,
   weekOf,
   unsubscribeUrl,
+  issueUrl,
 }: WeeklyDigestEmailProps) {
   const preview =
     tools.length === 0
@@ -135,6 +137,13 @@ export default function WeeklyDigestEmail({
           <Hr style={divider} />
 
           <Section style={footer}>
+            {issueUrl && (
+              <Text style={footerText}>
+                <Link href={issueUrl} style={unsubscribeLink}>
+                  Read this issue on the web
+                </Link>
+              </Text>
+            )}
             <Text style={footerText}>
               Agentic AI For Good · Weekly AI tool digest
             </Text>

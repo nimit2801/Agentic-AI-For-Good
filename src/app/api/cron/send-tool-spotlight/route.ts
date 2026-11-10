@@ -3,6 +3,7 @@ import { NextResponse } from 'next/server'
 import { sendEmail, buildUnsubscribeUrl } from '@/lib/email'
 import SpotlightEmail from '@/emails/SpotlightEmail'
 import { createElement } from 'react'
+import { issueUrl, istDateKey } from '@/lib/newsletter'
 
 export const maxDuration = 300
 
@@ -15,17 +16,30 @@ export async function GET(req: Request) {
   const supabase = createServerSupabaseClient()
 
   // Pick a featured tool that hasn't been spotlighted recently (or ever)
-  const { data: tool, error: toolError } = await supabase
+  const notRecent = 'spotlight_sent_at.is.null,spotlight_sent_at.lt.' + new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString()
+  const { data: featured } = await supabase
     .from('tools')
     .select('*')
     .eq('approved', true)
     .eq('featured', true)
-    .or('spotlight_sent_at.is.null,spotlight_sent_at.lt.' + new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString())
+    .or(notRecent)
     .order('spotlight_sent_at', { ascending: true, nullsFirst: true })
     .limit(1)
-    .single()
 
-  if (toolError || !tool) {
+  let tool = featured?.[0]
+  if (!tool) {
+    // No featured tool left: fall back to the most-starred approved tool not spotlighted recently
+    const { data: fallback } = await supabase
+      .from('tools')
+      .select('*')
+      .eq('approved', true)
+      .or(notRecent)
+      .order('github_stars', { ascending: false, nullsFirst: false })
+      .limit(1)
+    tool = fallback?.[0]
+  }
+
+  if (!tool) {
     console.log('[tool-spotlight] No eligible tool found — skipping')
     return NextResponse.json({ message: 'No eligible tool for spotlight', sent: 0 })
   }
@@ -56,7 +70,7 @@ export async function GET(req: Request) {
     const result = await sendEmail({
       to: sub.email,
       subject: `Tool spotlight: ${tool.name} — Agentic AI For Good`,
-      react: createElement(SpotlightEmail, { tool, unsubscribeUrl }),
+      react: createElement(SpotlightEmail, { tool, unsubscribeUrl, issueUrl: issueUrl(istDateKey()) }),
     })
 
     if (result.success) sent++

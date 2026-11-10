@@ -30,13 +30,14 @@ interface SpotlightTool {
 interface SpotlightEmailProps {
   tool: SpotlightTool
   unsubscribeUrl: string
+  issueUrl?: string
 }
 
 function formatStars(n: number): string {
   return n >= 1000 ? `${(n / 1000).toFixed(1)}k` : String(n)
 }
 
-export default function SpotlightEmail({ tool, unsubscribeUrl }: SpotlightEmailProps) {
+export default function SpotlightEmail({ tool, unsubscribeUrl, issueUrl }: SpotlightEmailProps) {
   const websiteUrl = tool.url ?? tool.website_url
   const toolUrl = `https://agenticaiforgood.com/tools/${tool.slug}`
 
@@ -114,6 +115,13 @@ export default function SpotlightEmail({ tool, unsubscribeUrl }: SpotlightEmailP
           <Hr style={divider} />
 
           <Section style={footer}>
+            {issueUrl && (
+              <Text style={footerText}>
+                <Link href={issueUrl} style={unsubscribeLink}>
+                  Read this issue on the web
+                </Link>
+              </Text>
+            )}
             <Text style={footerText}>
               Agentic AI For Good · Tool Spotlight — every Friday
             </Text>

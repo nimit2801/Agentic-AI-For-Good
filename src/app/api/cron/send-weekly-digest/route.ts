@@ -3,6 +3,7 @@ import { NextResponse } from 'next/server'
 import { sendEmail, buildUnsubscribeUrl } from '@/lib/email'
 import WeeklyDigestEmail from '@/emails/WeeklyDigestEmail'
 import { createElement } from 'react'
+import { getDigestTools, issueUrl, istDateKey } from '@/lib/newsletter'
 
 export const maxDuration = 300
 
@@ -13,21 +14,16 @@ export async function GET(req: Request) {
   }
 
   const supabase = createServerSupabaseClient()
-  const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString()
+  const now = new Date()
+  const webUrl = issueUrl(istDateKey(now))
 
-  // Fetch tools added in last 7 days
-  const { data: newTools, error: toolsError } = await supabase
-    .from('tools')
-    .select('name, slug, tagline, description, category, pricing, is_open_source')
-    .eq('approved', true)
-    .gte('created_at', sevenDaysAgo)
-    .order('created_at', { ascending: false })
-
-  if (toolsError) {
-    return NextResponse.json({ error: toolsError.message }, { status: 500 })
+  // Tools added in the last 7 days (same window the public archive page renders)
+  let tools
+  try {
+    tools = await getDigestTools(now)
+  } catch (err) {
+    return NextResponse.json({ error: err instanceof Error ? err.message : String(err) }, { status: 500 })
   }
-
-  const tools = newTools ?? []
   console.log(`[weekly-digest] ${tools.length} new tools this week`)
 
   // Fetch all active subscribers
@@ -63,7 +59,7 @@ export async function GET(req: Request) {
       subject: tools.length > 0
         ? `${tools.length} new AI tool${tools.length > 1 ? 's' : ''} this week — Agentic AI For Good`
         : 'Your weekly AI tools digest — Agentic AI For Good',
-      react: createElement(WeeklyDigestEmail, { tools, weekOf, unsubscribeUrl }),
+      react: createElement(WeeklyDigestEmail, { tools, weekOf, unsubscribeUrl, issueUrl: webUrl }),
     })
 
     if (result.success) sent++
@@ -71,5 +67,5 @@ export async function GET(req: Request) {
   }
 
   console.log(`[weekly-digest] Done — ${sent} sent, ${failed} failed`)
-  return NextResponse.json({ sent, failed, newTools: tools.length, subscribers: subscribers.length })
+  return NextResponse.json({ sent, failed, newTools: tools.length, subscribers: subscribers.length, issueUrl: webUrl })
 }
