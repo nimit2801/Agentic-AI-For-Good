@@ -1,0 +1,26 @@
+name: giflib
+description: giflib is a C library for reading, writing, and manipulating GIF files. Apps decode animated and still GIFs with LZW, palettes, and extensions instead of a custom decoder that mishandles the format.
+tagline: C library for reading and writing GIF files
+
+website_url: https://giflib.sourceforge.net/
+docs_url: https://giflib.sourceforge.net/
+
+install_command: brew install giflib
+
+category: Other
+tags: [giflib, gif, images, codec, animation, graphics, decoder]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  GIF still shows up in stickers, UI assets, and legacy archives.
+  LZW, palettes, and Netscape loops are easy to get wrong. giflib
+  is the standard C library so apps decode and encode GIF without
+  a one-off parser.
+
+use_cases:
+  - Decode animated GIF frames in a viewer or chat client
+  - Encode palette-based GIF stickers from a graphics pipeline
+  - Extract GIF comments and extensions in a media tool
+  - Link giflib as the GIF backend for an image toolkit

@@ -1,0 +1,27 @@
+name: libxslt
+description: libxslt is GNOME's C XSLT 1.0 engine, built on libxml2. Apps transform XML with stylesheets so document pipelines, SOAP stacks, and HTML generators apply XSLT without a Java or browser-only processor.
+tagline: C XSLT 1.0 engine from GNOME
+
+github_url: https://github.com/GNOME/libxslt
+website_url: http://xmlsoft.org/XSLT/
+docs_url: http://xmlsoft.org/XSLT/
+
+install_command: brew install libxslt
+
+category: Dev Tools
+tags: [libxslt, xslt, xml, libxml2, gnome, transform, c]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  XML often needs XSLT to become HTML, another schema, or a report.
+  Browser and Java processors are heavy for C services. libxslt is
+  the portable C engine on libxml2 so pipelines transform documents
+  in-process.
+
+use_cases:
+  - Apply an XSLT stylesheet to XML in a C or C++ service
+  - Generate HTML from XML documents in a publishing pipeline
+  - Transform SOAP or config XML before validation or storage
+  - Link libxslt as the XSLT backend for a document toolchain

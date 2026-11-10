@@ -1,0 +1,27 @@
+name: FriBidi
+description: GNU FriBidi implements the Unicode Bidirectional Algorithm. Apps lay out mixed left-to-right and right-to-left text so Arabic, Hebrew, and mixed-script UIs reverse runs correctly without a browser-only bidi engine.
+tagline: Unicode bidirectional text layout library
+
+github_url: https://github.com/fribidi/fribidi
+website_url: https://github.com/fribidi/fribidi
+docs_url: https://github.com/fribidi/fribidi
+
+install_command: brew install fribidi
+
+category: Other
+tags: [fribidi, bidi, unicode, i18n, text, arabic, hebrew]
+pricing: free
+is_open_source: true
+license: LGPL-2.1
+
+problem_solved: |
+  Mixed LTR and RTL text must reverse runs, pair brackets, and
+  apply mirroring. Platform APIs differ. FriBidi implements Unicode
+  Bidirectional Algorithm so UIs, subtitles, and terminals lay out
+  Arabic and Hebrew correctly.
+
+use_cases:
+  - Lay out Arabic or Hebrew UI strings in a native app
+  - Mix English and RTL text in a subtitle or terminal renderer
+  - Apply Unicode bidi mirroring for punctuation in a text engine
+  - Link FriBidi with HarfBuzz and FreeType in a document renderer

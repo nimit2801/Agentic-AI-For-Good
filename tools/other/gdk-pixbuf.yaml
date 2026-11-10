@@ -1,0 +1,26 @@
+name: GDK-Pixbuf
+description: GDK-Pixbuf loads, scales, and saves image buffers for GTK. Apps decode PNG, JPEG, TIFF, and GIF into a portable pixel buffer so UI toolkits share one loader instead of per-format parsers.
+tagline: GTK image loading and pixel buffer library
+
+github_url: https://github.com/GNOME/gdk-pixbuf
+website_url: https://gitlab.gnome.org/GNOME/gdk-pixbuf
+docs_url: https://docs.gtk.org/gdk-pixbuf/
+
+install_command: brew install gdk-pixbuf
+
+category: Other
+tags: [gdk-pixbuf, gtk, images, pixel-buffer, graphics, gnome, decoder]
+pricing: free
+is_open_source: true
+license: LGPL-2.1
+
+problem_solved: |
+  UI toolkits need one API to load PNG, JPEG, TIFF, and GIF into a
+  pixel buffer. GDK-Pixbuf is the GTK image loader so apps scale,
+  composite, and save rasters without a custom decoder per format.
+
+use_cases:
+  - Load PNG and JPEG assets into a GTK or GNOME application
+  - Scale and composite pixel buffers in a UI or icon pipeline
+  - Save rendered frames to PNG or JPEG from a graphics tool
+  - Decode TIFF and GIF alongside PNG in a desktop image viewer
