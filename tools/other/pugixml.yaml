@@ -1,0 +1,26 @@
+name: pugixml
+description: Light-weight C++ XML parser with XPath. Apps load, mutate, and query XML DOMs with a header-friendly library so game, config, and document pipelines parse XML without a heavy dependency.
+tagline: Fast C++ XML parser with built-in XPath
+
+github_url: https://github.com/zeux/pugixml
+website_url: https://pugixml.org/
+docs_url: https://pugixml.org/docs/quickstart.html
+
+install_command: brew install pugixml
+
+category: Other
+tags: [xml, xpath, cpp, parser, dom]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  C++ XML stacks are often huge or DOM-only without XPath. pugixml is a
+  small, fast parser with in-place DOM and XPath so games, configs, and
+  document tools can read and edit XML with one header-friendly library.
+
+use_cases:
+  - Load and edit game or app config XML
+  - Run XPath queries over documents in a C++ pipeline
+  - Serialize XML from a DOM in a data export job
+  - Parse large XML files with a low-allocation C++ parser
