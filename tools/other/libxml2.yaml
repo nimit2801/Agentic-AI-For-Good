@@ -1,0 +1,27 @@
+name: libxml2
+description: GNOME XML C parser and toolkit. Apps parse, validate, XPath-query, and serialize XML and HTML with a portable library that underpins browsers, Linux distros, and document pipelines.
+tagline: Portable XML and HTML parser toolkit from GNOME
+
+github_url: https://github.com/GNOME/libxml2
+website_url: https://gitlab.gnome.org/GNOME/libxml2
+docs_url: https://gitlab.gnome.org/GNOME/libxml2
+
+install_command: brew install libxml2
+
+category: Other
+tags: [xml, html, parser, xpath, gnome, c]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  XML and HTML show up in configs, docs, and web scrapes. Rolling a parser
+  is a security minefield. libxml2 is the portable C toolkit for parse,
+  DTD/schema validate, XPath, and serialize so Linux tools and document
+  pipelines share one well-tested implementation.
+
+use_cases:
+  - Parse and validate XML configs or SOAP payloads in a C service
+  - Run XPath queries over documents in a data extraction pipeline
+  - Convert HTML to well-formed trees for scraping or sanitizing
+  - Serialize XML output from a document or metadata encoder

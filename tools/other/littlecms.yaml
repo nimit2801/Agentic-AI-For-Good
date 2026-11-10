@@ -1,0 +1,27 @@
+name: LittleCMS
+description: Open-source color management engine. Apps convert pixels between ICC profiles with fast C transforms so photos, print, and GPU pipelines keep color consistent across devices and file formats.
+tagline: Fast open-source ICC color management engine
+
+github_url: https://github.com/mm2/Little-CMS
+website_url: https://www.littlecms.com
+docs_url: https://www.littlecms.com/resources/
+
+install_command: brew install little-cms2
+
+category: Other
+tags: [color-management, icc, cms, imaging, print, c]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Cameras, displays, and printers all speak different color spaces. Without
+  ICC transforms, images shift hue between devices. LittleCMS is a small C
+  engine that applies ICC profiles so photo, print, and ML image pipelines
+  convert color accurately and quickly.
+
+use_cases:
+  - Convert sRGB photos to a printer ICC profile before RIP
+  - Apply display or working-space profiles in an image editor
+  - Keep color consistent across a dataset preprocessing pipeline
+  - Embed ICC transforms in a C or Python imaging library

@@ -1,0 +1,26 @@
+name: libde265
+description: Open-source H.265/HEVC decoder library. Apps decode HEVC bitstreams in C with a compact API used by libheif, GStreamer, and image pipelines that need HEVC stills and video without a full FFmpeg stack.
+tagline: Open H.265/HEVC decoder for video and HEIF stills
+
+github_url: https://github.com/strukturag/libde265
+website_url: https://github.com/strukturag/libde265
+docs_url: https://github.com/strukturag/libde265
+
+install_command: brew install libde265
+
+category: Other
+tags: [hevc, h265, video, decoder, codec, heif, c]
+pricing: free
+is_open_source: true
+license: LGPL-3.0-or-later
+
+problem_solved: |
+  HEVC is the codec behind HEIF photos and a lot of 4K video, but pulling
+  in a full FFmpeg stack is heavy. libde265 is a focused open H.265 decoder
+  so image and media tools can decode HEVC bitstreams with a small C library.
+
+use_cases:
+  - Decode HEVC stills inside a HEIF or AVIF image pipeline
+  - Play or transcode H.265 video in a GStreamer or custom media app
+  - Link a compact HEVC decoder into an embedded or desktop C/C++ product
+  - Inspect HEVC bitstreams without shipping a full FFmpeg build
