@@ -1,0 +1,24 @@
+name: bzip2
+description: Block-sorting compressor and C library. Apps shrink files with the bzip2 format used in tarballs and distros so archives and data dumps get better ratios than gzip at the cost of speed.
+tagline: Block-sorting compressor used in tarballs and distro packages
+
+website_url: https://sourceware.org/bzip2/
+docs_url: https://sourceware.org/bzip2/manual/index.html
+install_command: brew install bzip2
+
+category: Other
+tags: [compression, bzip2, archives, c, tarball]
+pricing: free
+is_open_source: true
+license: bzip2-1.0.6
+
+problem_solved: |
+  Source tarballs and long-lived dumps need a compressor with better
+  ratios than gzip. bzip2 is the block-sorting format and C library so
+  archives, distros, and native tools share one well-known codec.
+
+use_cases:
+  - Compress source tarballs and dataset dumps with bzip2
+  - Decompress .bz2 files from a C pipeline without shelling out
+  - Link libbz2 as the bzip2 backend in an archive or package tool
+  - Read distro packages that still ship bzip2-compressed payloads

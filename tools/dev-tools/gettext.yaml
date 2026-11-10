@@ -1,0 +1,25 @@
+name: GNU gettext
+description: GNU internationalization and localization toolkit. Apps mark strings, extract catalogs, and load translations so CLIs and libraries ship in many languages from one PO/MO workflow.
+tagline: GNU i18n toolkit for translating C and other apps
+
+github_url: https://github.com/autotools-mirror/gettext
+website_url: https://www.gnu.org/software/gettext/
+docs_url: https://www.gnu.org/software/gettext/manual/
+install_command: brew install gettext
+
+category: Dev Tools
+tags: [i18n, l10n, translation, c, gnu, localization]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Shipping software in many languages needs a shared catalog format,
+  not ad-hoc string tables. GNU gettext is the i18n toolkit so apps
+  extract, translate, and load messages through PO and MO files.
+
+use_cases:
+  - Mark and extract translatable strings from a C or C++ codebase
+  - Load locale catalogs at runtime in a CLI or library
+  - Maintain PO files for translators across a multi-language project
+  - Localize an ML tooling CLI without rolling a custom i18n layer

@@ -1,0 +1,25 @@
+name: Fontconfig
+description: XML-based font configuration library. Apps match, alias, and locate fonts across Linux and Unix so GTK, cairo, and browsers pick the right face without hard-coding font paths.
+tagline: Font matching and configuration library for Unix desktops
+
+github_url: https://github.com/fontconfig/fontconfig
+website_url: https://www.freedesktop.org/wiki/Software/fontconfig/
+docs_url: https://www.freedesktop.org/software/fontconfig/fontconfig-user.html
+install_command: brew install fontconfig
+
+category: Other
+tags: [fonts, linux, gtk, cairo, c, rendering]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  GUI and document tools need a consistent way to find and alias fonts
+  across machines. Fontconfig is the XML-based matcher so cairo, GTK,
+  and browsers locate faces without hard-coded font paths.
+
+use_cases:
+  - Resolve a font family to a file path in a native rendering stack
+  - Alias missing fonts so a PDF or UI still renders on Linux
+  - Configure system-wide font preferences for GTK and cairo apps
+  - List available faces for a document or chart renderer
