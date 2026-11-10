@@ -1,0 +1,27 @@
+name: Snappy
+description: Google's fast compression library. Apps compress and decompress with a tiny C++ codec optimized for speed over ratio, used in Bigtable, LevelDB, and ML feature stores that need cheap in-memory and on-disk packing.
+tagline: Fast compression library optimized for speed over ratio
+
+github_url: https://github.com/google/snappy
+website_url: https://google.github.io/snappy/
+docs_url: https://google.github.io/snappy/
+
+install_command: brew install snappy
+
+category: Other
+tags: [compression, snappy, google, codec, cpp, library]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  High-throughput stores cannot afford gzip CPU. They need a compressor
+  that is cheap enough to run on every write. Snappy trades ratio for
+  speed so databases, RPC, and feature stores pack bytes without stalling
+  the hot path.
+
+use_cases:
+  - Compress SSTable or log blocks in a storage engine
+  - Pack RPC payloads where latency beats archive size
+  - Store ML features on disk with cheap encode and decode
+  - Link a fast codec into a C++ data pipeline
