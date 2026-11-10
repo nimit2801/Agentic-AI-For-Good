@@ -1,0 +1,27 @@
+name: shaderc
+description: shaderc is Google's collection of libraries and tools for Vulkan shader compilation. Apps compile GLSL and HLSL to SPIR-V through one API so engines do not wire glslang, dxc, and spirv-tools by hand.
+tagline: Libraries and tools for Vulkan shader compilation
+
+github_url: https://github.com/google/shaderc
+website_url: https://github.com/google/shaderc
+docs_url: https://github.com/google/shaderc
+
+install_command: brew install shaderc
+
+category: Dev Tools
+tags: [shaderc, vulkan, spirv, glsl, hlsl, shaders, google]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Compiling shaders for Vulkan means glslang, HLSL, and SPIR-V
+  optimization in one pipeline. Wiring those by hand is brittle.
+  shaderc wraps them so apps compile GLSL and HLSL to SPIR-V
+  through one library and CLI.
+
+use_cases:
+  - Compile GLSL to SPIR-V at runtime in a Vulkan engine
+  - Batch-compile HLSL shaders in an asset pipeline
+  - Wrap glslang and SPIRV-Tools behind one C API
+  - Validate shader compile errors before shipping a GPU build

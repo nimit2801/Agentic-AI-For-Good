@@ -1,0 +1,24 @@
+name: DXVK
+description: DXVK is a Vulkan-based implementation of Direct3D 8, 9, 10, and 11 for Linux and Wine. Apps and games that ship D3D binaries run on Vulkan so Windows titles work on Linux without a native Direct3D driver.
+tagline: Direct3D 8-11 on Vulkan for Linux and Wine
+
+github_url: https://github.com/doitsujin/dxvk
+website_url: https://github.com/doitsujin/dxvk
+docs_url: https://github.com/doitsujin/dxvk
+
+category: Other
+tags: [dxvk, vulkan, direct3d, wine, linux, graphics, translation]
+pricing: free
+is_open_source: true
+license: Zlib
+
+problem_solved: |
+  Windows games speak Direct3D. Linux GPUs speak Vulkan.
+  DXVK translates D3D8 through D3D11 to Vulkan so Wine and
+  Proton run those titles without a native Direct3D stack.
+
+use_cases:
+  - Run Direct3D 11 Windows games on Linux via Wine or Proton
+  - Translate D3D9 call streams onto Vulkan for older titles
+  - Debug D3D-to-Vulkan translation in a compatibility layer
+  - Ship a Linux build path for an engine that still uses D3D11

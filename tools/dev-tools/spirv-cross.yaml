@@ -1,0 +1,27 @@
+name: SPIRV-Cross
+description: SPIRV-Cross reflects SPIR-V and disassembles it back to GLSL, HLSL, MSL, and other high-level shading languages. Apps translate one SPIR-V blob onto Metal, D3D, and OpenGL without maintaining per-API shader sources.
+tagline: Reflect and translate SPIR-V back to high-level shaders
+
+github_url: https://github.com/KhronosGroup/SPIRV-Cross
+website_url: https://github.com/KhronosGroup/SPIRV-Cross
+docs_url: https://github.com/KhronosGroup/SPIRV-Cross
+
+install_command: brew install spirv-cross
+
+category: Dev Tools
+tags: [spirv, glsl, hlsl, metal, shaders, khronos, translation]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Engines want one shader IR and many backends. Hand-porting
+  GLSL to MSL and HLSL does not scale. SPIRV-Cross reflects
+  SPIR-V and emits high-level shaders so one compile target
+  covers Vulkan, Metal, and D3D.
+
+use_cases:
+  - Translate SPIR-V to MSL for a Metal renderer
+  - Emit HLSL from SPIR-V for a Direct3D backend
+  - Reflect shader resources and bindings at load time
+  - Convert GLSL-origin SPIR-V back to readable GLSL for debug
