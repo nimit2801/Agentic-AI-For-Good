@@ -1,0 +1,25 @@
+name: libssh2
+description: Client-side C library for the SSH2 protocol. Apps run remote commands, SFTP, and port forwarding without shelling out to OpenSSH so deploy tools and data pipelines speak SSH from native code.
+tagline: Portable C client library for SSH2, SFTP, and tunneling
+
+github_url: https://github.com/libssh2/libssh2
+website_url: https://libssh2.org/
+docs_url: https://libssh2.org/docs.html
+install_command: brew install libssh2
+
+category: Dev Tools
+tags: [ssh, sftp, c, networking, security, remote]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Native tools that copy artifacts, run remote jobs, or tunnel ports
+  should not spawn OpenSSH. libssh2 is the portable SSH2 client so C
+  and C++ apps speak SSH, SFTP, and forwarding with one library.
+
+use_cases:
+  - Run remote commands from a C deploy or orchestration tool
+  - Transfer model checkpoints over SFTP without a shell-out
+  - Open an SSH tunnel for a private inference or database endpoint
+  - Embed SSH client support in a language binding or CI agent

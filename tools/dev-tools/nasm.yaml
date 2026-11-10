@@ -1,0 +1,26 @@
+name: NASM
+description: Netwide Assembler for x86 and x86-64. Developers assemble Intel-syntax sources into object files for kernels, codecs, and SIMD kernels without depending on a vendor assembler.
+tagline: Cross-platform x86 assembler with Intel-like syntax
+
+github_url: https://github.com/netwide-assembler/nasm
+website_url: https://www.nasm.us/
+docs_url: https://www.nasm.us/docs.php
+install_command: brew install nasm
+
+category: Dev Tools
+tags: [assembler, x86, assembly, simd, compiler, low-level]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Hand-tuned x86 kernels still need an assembler that matches Intel
+  syntax and emits portable objects. NASM is the cross-platform
+  assembler so codecs, SIMD kernels, and boot code assemble without a
+  vendor toolchain.
+
+use_cases:
+  - Assemble Intel-syntax SIMD kernels used in codecs or inference
+  - Build bootloaders and OS stubs that need raw x86 object files
+  - Compile performance-critical assembly without depending on GAS syntax
+  - Ship a portable x86 assembler in a CI image for native ML libraries

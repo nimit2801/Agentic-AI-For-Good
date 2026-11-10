@@ -1,0 +1,25 @@
+name: GNU Bison
+description: GNU parser generator that turns annotated context-free grammars into C, C++, or Java parsers. Compilers, DSLs, and config languages get LALR or GLR parsers from a yacc-compatible grammar.
+tagline: Yacc-compatible parser generator for C, C++, and Java
+
+github_url: https://github.com/akimd/bison
+website_url: https://www.gnu.org/software/bison/
+docs_url: https://www.gnu.org/software/bison/manual/
+install_command: brew install bison
+
+category: Dev Tools
+tags: [parser, yacc, compiler, grammar, c, dsl]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Compilers and DSLs need a parser from a grammar, not a hand-written
+  recursive descent. GNU Bison is the yacc-compatible generator so
+  teams emit LALR or GLR parsers in C, C++, or Java from one spec.
+
+use_cases:
+  - Generate a C parser for a config language or query DSL
+  - Build a compiler frontend from a yacc-style grammar
+  - Emit a GLR parser when the grammar is ambiguous
+  - Pair Bison with Flex to tokenize and parse a custom language

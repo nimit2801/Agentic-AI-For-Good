@@ -1,0 +1,25 @@
+name: LibYAML
+description: Canonical C library for YAML 1.1 parsing and emitting. Language bindings and config loaders share one event-based API so Python, Ruby, and native tools read the same YAML documents.
+tagline: Canonical C YAML 1.1 parser and emitter
+
+github_url: https://github.com/yaml/libyaml
+website_url: https://pyyaml.org/wiki/LibYAML
+docs_url: https://github.com/yaml/libyaml
+install_command: brew install libyaml
+
+category: Other
+tags: [yaml, parser, c, serialization, config, bindings]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  YAML configs power ML pipelines, but every language reimplementing
+  the spec drifts. LibYAML is the canonical C parser and emitter so
+  bindings and native tools share one event-based YAML 1.1 engine.
+
+use_cases:
+  - Parse YAML configs in a C or C++ training or serving binary
+  - Back a language YAML binding with the canonical C library
+  - Emit YAML documents from a native exporter or CLI
+  - Stream large YAML files with LibYAML's event API instead of a DOM
