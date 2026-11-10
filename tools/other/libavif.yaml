@@ -1,0 +1,26 @@
+name: libavif
+description: libavif is the Alliance for Open Media library for encoding and decoding AVIF files. Apps produce AV1 stills so the web ships smaller photos than JPEG with an open codec instead of a closed HEIC stack.
+tagline: Official library for encoding and decoding AVIF
+
+github_url: https://github.com/AOMediaCodec/libavif
+website_url: https://github.com/AOMediaCodec/libavif
+docs_url: https://github.com/AOMediaCodec/libavif
+
+install_command: brew install libavif
+
+category: Other
+tags: [libavif, avif, av1, images, codec, aomedia, compression]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  JPEG is bulky and HEIC is not always open. libavif encodes and decodes
+  AVIF so sites and datasets ship AV1 stills with an Alliance for Open
+  Media library instead of a closed still-image codec.
+
+use_cases:
+  - Encode product photos as AVIF for a smaller web payload
+  - Decode AVIF assets in a native app or converter
+  - Convert JPEG datasets to AVIF in a build step
+  - Run avifenc and avifdec from a CI image pipeline
