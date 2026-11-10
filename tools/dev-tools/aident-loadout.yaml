@@ -1,0 +1,32 @@
+name: Aident Loadout
+description: Aident Loadout connects Codex, Claude Code, Cursor, ChatGPT and other MCP clients to the apps and 400+ expert-built Skills you choose, through one remote MCP server, CLI or Skill. You connect accounts once and reuse them across agents, credentials stay in Aident Vault, and every action is recorded in an audit log.
+tagline: One reusable setup that gives every AI agent your apps and Skills
+
+website_url: https://aident.ai
+docs_url: https://docs.aident.ai/loadout/overview
+github_url: https://github.com/Aident-AI/aident-skill
+
+install_command: npm i -g @aident-ai/cli
+
+category: Dev Tools
+tags: [ai-agents, mcp, tool-integration, oauth, agent-skills, audit-log, claude-code, codex, cursor, developer-tools]
+pricing: freemium
+is_open_source: false
+license: MIT (Skill only; hosted service is proprietary)
+
+problem_solved: |
+  Teams that use several coding and chat agents end up wiring the same
+  integrations again for each one: a separate MCP config, OAuth app and
+  pasted API key per agent, with no shared record of what the agents did.
+  Loadout keeps one set of connected accounts and Skills that every agent
+  reuses. OAuth happens in the browser, API keys stay in a vault so the
+  model sees results rather than raw credentials, an action's cost is shown
+  before it runs, and an audit log records which agent ran what and whether
+  it worked.
+
+use_cases:
+  - Give Claude Code and Codex the same Gmail, GitHub and Linear access without configuring each agent separately
+  - Let an agent search available actions by intent, read the live schema and run the action through one MCP endpoint
+  - Start a research or outreach task from a ready-made Skill instead of writing the workflow prompt from scratch
+  - Keep third-party API keys out of agent prompts and .env files by storing them in a vault
+  - Review an audit trail of which agent ran which action, whether it succeeded and what it cost
