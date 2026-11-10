@@ -1,0 +1,27 @@
+name: LV2
+description: LV2 is a portable audio plugin standard for Linux and other hosts. Developers ship instruments and effects as self-contained bundles that DAWs and JACK hosts load without a vendor SDK.
+tagline: Portable audio plugin standard for Linux hosts
+
+github_url: https://github.com/lv2/lv2
+website_url: https://lv2plug.in/
+docs_url: https://lv2plug.in/ns/
+
+install_command: brew install lv2
+
+category: Other
+tags: [lv2, audio, plugins, linux, dsp, jack, plugin-api]
+pricing: free
+is_open_source: true
+license: ISC
+
+problem_solved: |
+  LADSPA is too small for instruments, presets, and rich UIs, and
+  commercial plugin APIs lock Linux hosts out. LV2 is a portable plugin
+  standard so developers ship instruments and effects as bundles that
+  JACK hosts and DAWs load without a vendor SDK.
+
+use_cases:
+  - Ship an LV2 instrument or effect bundle that Linux DAWs can load
+  - Host LV2 plugins in a JACK or Ardour session
+  - Extend a plugin with LV2 MIDI, presets, and UI extensions
+  - Build against the LV2 SDK instead of a commercial plugin API

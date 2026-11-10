@@ -1,0 +1,27 @@
+name: libpng
+description: libpng is the official Portable Network Graphics library. Apps read and write PNG files with the reference encoder and decoder instead of a one-off parser that mishandles chunks and interlacing.
+tagline: Official reference library for reading and writing PNG
+
+github_url: https://github.com/pnggroup/libpng
+website_url: https://www.libpng.org/pub/png/libpng.html
+docs_url: https://www.libpng.org/pub/png/libpng-manual.txt
+
+install_command: brew install libpng
+
+category: Other
+tags: [libpng, png, images, codec, graphics, decoder, encoder]
+pricing: free
+is_open_source: true
+license: libpng-2.0
+
+problem_solved: |
+  PNG is the default lossless web and UI image format, but rolling a
+  parser misses chunks, interlacing, and gamma. libpng is the official
+  library so apps read and write PNG with the reference encoder and
+  decoder.
+
+use_cases:
+  - Read and write PNG files from a C or C++ app
+  - Decode interlaced and 16-bit PNG assets in a graphics pipeline
+  - Link libpng as the PNG backend for a game or UI toolkit
+  - Convert images to PNG with the official encoder
