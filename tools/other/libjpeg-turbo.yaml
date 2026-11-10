@@ -1,0 +1,26 @@
+name: libjpeg-turbo
+description: libjpeg-turbo is a SIMD-accelerated JPEG codec compatible with libjpeg. Apps encode and decode JPEG images several times faster than libjpeg so vision pipelines, browsers, and datasets process photos without waiting on a scalar decoder.
+tagline: Fast SIMD JPEG codec compatible with libjpeg
+
+github_url: https://github.com/libjpeg-turbo/libjpeg-turbo
+website_url: https://libjpeg-turbo.org
+docs_url: https://libjpeg-turbo.org
+
+install_command: brew install jpeg-turbo
+
+category: Other
+tags: [libjpeg-turbo, jpeg, images, codec, simd, compression]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Baseline libjpeg is too slow for high-volume image pipelines. libjpeg-turbo
+  uses SIMD so encode and decode stay ABI-compatible with libjpeg while
+  finishing several times faster on CPU.
+
+use_cases:
+  - Decode JPEG datasets faster in a computer vision training pipeline
+  - Encode thumbnails in a web or CDN image service
+  - Link libjpeg-turbo in a browser or native app that already uses libjpeg
+  - Replace a slow libjpeg build in FFmpeg or OpenCV

@@ -1,0 +1,26 @@
+name: WavPack
+description: WavPack is a hybrid lossless and lossy audio compressor. Pipelines archive PCM with an optional extra lossy layer so music and speech stay smaller than WAV while remaining open and bit-exact when lossless.
+tagline: Hybrid lossless and lossy audio compressor
+
+github_url: https://github.com/dbry/WavPack
+website_url: https://www.wavpack.com/
+docs_url: https://www.wavpack.com/index.html
+
+install_command: brew install wavpack
+
+category: Other
+tags: [wavpack, audio, codec, lossless, compression, hybrid]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  WAV wastes disk and lossy codecs destroy samples. WavPack compresses PCM
+  losslessly, with an optional extra lossy layer, so archives and datasets
+  keep open, bit-exact audio at a fraction of uncompressed size.
+
+use_cases:
+  - Archive a music library losslessly instead of WAV
+  - Encode training audio without introducing codec artifacts
+  - Decode WavPack streams in a player or DSP pipeline
+  - Ship hybrid lossless-plus-lossy files for streaming and archival

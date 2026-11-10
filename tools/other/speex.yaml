@@ -1,0 +1,26 @@
+name: Speex
+description: Speex is a patent-free speech codec from Xiph. VoIP, radio, and voice apps encode speech at low bitrate so calls stay intelligible on narrow links without a proprietary AMR stack.
+tagline: Patent-free speech codec for VoIP and radio
+
+github_url: https://github.com/xiph/speex
+website_url: https://www.speex.org/
+docs_url: https://www.speex.org/docs/
+
+install_command: brew install speex
+
+category: Other
+tags: [speex, audio, codec, speech, voip, xiph]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Narrowband voice still needs a speech codec that is open and cheap to
+  license. Speex encodes speech at low bitrate for VoIP, radio, and
+  embedded voice without a closed AMR or Speex-incompatible stack.
+
+use_cases:
+  - Encode VoIP speech on a low-bandwidth link
+  - Decode Speex files in a radio or ham-radio pipeline
+  - Package speech samples for a dataset that already uses Speex
+  - Link libspeex in an embedded voice application

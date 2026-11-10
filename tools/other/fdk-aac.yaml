@@ -1,0 +1,24 @@
+name: fdk-aac
+description: fdk-aac is a standalone Fraunhofer FDK AAC encoder and decoder extracted from Android. Apps encode AAC-LC, HE-AAC, and related profiles so media pipelines produce interoperable AAC without a closed encoder.
+tagline: Standalone Fraunhofer FDK AAC encoder and decoder
+
+github_url: https://github.com/mstorsjo/fdk-aac
+website_url: https://sourceforge.net/projects/opencore-amr/
+docs_url: https://github.com/mstorsjo/fdk-aac
+
+category: Other
+tags: [fdk-aac, aac, audio, codec, fraunhofer, android]
+pricing: free
+is_open_source: true
+license: NOASSERTION
+
+problem_solved: |
+  AAC is the default codec for many players and streams, but closed
+  encoders lock products into licenses. fdk-aac is the Android FDK AAC
+  library as a standalone encoder and decoder for interoperable AAC.
+
+use_cases:
+  - Encode AAC-LC or HE-AAC in a media transcode pipeline
+  - Decode AAC streams in a native player that links fdk-aac
+  - Build FFmpeg with an FDK AAC encoder for higher-quality AAC
+  - Package Android-compatible AAC in a mobile or embedded app
