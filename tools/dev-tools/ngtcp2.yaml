@@ -1,0 +1,27 @@
+name: ngtcp2
+description: ngtcp2 is a C implementation of IETF QUIC. Apps speak HTTP/3 and other QUIC protocols with a focused transport library instead of embedding a full browser stack for UDP congestion control and TLS.
+tagline: C library implementing the IETF QUIC protocol
+
+github_url: https://github.com/ngtcp2/ngtcp2
+website_url: https://nghttp2.org/ngtcp2/
+docs_url: https://nghttp2.org/ngtcp2/
+
+install_command: brew install libngtcp2
+
+category: Dev Tools
+tags: [ngtcp2, quic, http3, tls, networking, c, udp]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  QUIC replaces TCP plus TLS for HTTP/3, but the protocol is large.
+  Browser stacks are heavy for servers and clients. ngtcp2 is a C
+  QUIC implementation so apps get congestion control, 0-RTT, and
+  streams without shipping Chromium.
+
+use_cases:
+  - Add QUIC transport under an HTTP/3 client or server
+  - Speak IETF QUIC from a C service that already uses nghttp3
+  - Experiment with 0-RTT and connection migration in a network stack
+  - Link ngtcp2 as the QUIC backend for curl or a custom proxy

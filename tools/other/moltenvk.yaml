@@ -1,0 +1,27 @@
+name: MoltenVK
+description: MoltenVK is a Vulkan Portability layer over Apple Metal. Apps run a subset of Vulkan on macOS, iOS, and tvOS so engines keep one graphics API instead of a separate Metal renderer for Apple platforms.
+tagline: Vulkan Portability implementation on top of Metal
+
+github_url: https://github.com/KhronosGroup/MoltenVK
+website_url: https://github.com/KhronosGroup/MoltenVK
+docs_url: https://github.com/KhronosGroup/MoltenVK
+
+install_command: brew install molten-vk
+
+category: Other
+tags: [moltenvk, vulkan, metal, apple, macos, ios, graphics]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Apple GPUs speak Metal, not native Vulkan. Engines that already
+  target Vulkan need a translation layer. MoltenVK implements
+  Vulkan Portability on Metal so the same renderer runs on macOS,
+  iOS, and tvOS.
+
+use_cases:
+  - Run a Vulkan game engine on macOS without a Metal rewrite
+  - Ship iOS builds from an existing Vulkan renderer
+  - Test Vulkan Portability coverage on Apple GPUs
+  - Link MoltenVK as the macOS backend for a cross-platform engine

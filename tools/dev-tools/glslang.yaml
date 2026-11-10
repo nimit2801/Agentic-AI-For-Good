@@ -1,0 +1,27 @@
+name: glslang
+description: glslang is the Khronos reference compiler for GLSL and ESSL, with a partial HLSL front end and a SPIR-V generator. Apps compile shaders to SPIR-V so Vulkan and OpenGL ES pipelines share one official frontend.
+tagline: Khronos reference GLSL compiler and SPIR-V generator
+
+github_url: https://github.com/KhronosGroup/glslang
+website_url: https://www.khronos.org/opengles/sdk/tools/Reference-Compiler/
+docs_url: https://github.com/KhronosGroup/glslang
+
+install_command: brew install glslang
+
+category: Dev Tools
+tags: [glslang, glsl, spirv, vulkan, shaders, khronos, compiler]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  GPU shaders need a compiler that matches the Khronos spec.
+  Vendor tools diverge. glslang is the reference GLSL/ESSL
+  frontend and SPIR-V generator so engines compile shaders
+  the same way across Vulkan and OpenGL ES.
+
+use_cases:
+  - Compile GLSL shaders to SPIR-V for a Vulkan renderer
+  - Validate GLSL or ESSL at build time in a game engine
+  - Convert HLSL subsets toward SPIR-V in a graphics toolchain
+  - Link glslang as the shader compiler in an offline asset pipeline
