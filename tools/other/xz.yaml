@@ -1,0 +1,27 @@
+name: xz
+description: XZ Utils is the LZMA2 compression toolkit. Apps compress archives and packages with xz, lzma, and liblzma so Linux distros, model weights, and backups get high ratios with a small, portable C library.
+tagline: LZMA2 compression toolkit used by Linux packages
+
+github_url: https://github.com/tukaani-project/xz
+website_url: https://tukaani.org/xz/
+docs_url: https://tukaani.org/xz/
+
+install_command: brew install xz
+
+category: Other
+tags: [compression, lzma, xz, archives, liblzma, c]
+pricing: free
+is_open_source: true
+license: 0BSD
+
+problem_solved: |
+  Source tarballs, kernel packages, and large artifacts need better
+  ratios than gzip. XZ Utils ships xz/lzma tools and liblzma so distros
+  and ML artifact pipelines compress and decompress LZMA2 streams with
+  a portable C library.
+
+use_cases:
+  - Compress source tarballs and package artifacts with xz
+  - Decompress .xz model weights or datasets in a training pipeline
+  - Link liblzma for in-process LZMA2 in a C or Python tool
+  - Convert between xz, lzma, and raw LZMA streams in a backup job

@@ -1,0 +1,27 @@
+name: Expat
+description: Fast streaming XML parser written in C99. Apps parse XML as events instead of loading a full DOM, so feeds, configs, and document pipelines stay small and handle huge files without blowing memory.
+tagline: Fast streaming XML parser in C99
+
+github_url: https://github.com/libexpat/libexpat
+website_url: https://libexpat.github.io/
+docs_url: https://libexpat.github.io/doc/
+
+install_command: brew install expat
+
+category: Other
+tags: [xml, parser, sax, streaming, c, c99]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  XML configs, feeds, and documents can be huge. A DOM parser loads the
+  whole tree and runs out of RAM. Expat is a streaming SAX parser in C99
+  so tools can process XML as events with high coverage tests and a tiny
+  footprint.
+
+use_cases:
+  - Parse large XML feeds or exports without loading a DOM
+  - Read application config and SOAP payloads in a C service
+  - Stream XML events into a data pipeline or ETL job
+  - Embed a battle-tested XML parser in an image or document codec
