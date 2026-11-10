@@ -1,0 +1,24 @@
+name: Wayland
+description: Display server protocol that replaces X11. Compositors and clients exchange buffers, input, and surfaces so Linux desktops render without the X Window System.
+tagline: Modern Linux display protocol replacing X11
+
+website_url: https://wayland.freedesktop.org/
+docs_url: https://wayland.freedesktop.org/docs/html/
+install_command: brew install wayland
+
+category: Other
+tags: [linux, display, compositor, graphics, protocol, desktop]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  X11 is large and hard to sandbox. Wayland is a simpler protocol so
+  compositors and clients share buffers and input without the X
+  Window System sitting in the middle.
+
+use_cases:
+  - Build a Wayland compositor or window manager
+  - Present GPU buffers from a native Linux GUI or ML viz app
+  - Replace X11 in a Linux desktop or kiosk stack
+  - Talk the Wayland protocol from a toolkit such as GTK or Qt
