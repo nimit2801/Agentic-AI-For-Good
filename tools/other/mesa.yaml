@@ -1,0 +1,24 @@
+name: Mesa
+description: Open-source 3D graphics library implementing OpenGL, Vulkan, and related APIs. Apps and drivers share one stack so Linux GPUs and software renderers speak standard graphics APIs.
+tagline: Open-source OpenGL and Vulkan graphics stack
+
+website_url: https://www.mesa3d.org/
+docs_url: https://docs.mesa3d.org/
+install_command: brew install mesa
+
+category: Other
+tags: [graphics, opengl, vulkan, gpu, linux, drivers]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  GPU APIs need a portable implementation across vendors. Mesa is the
+  open-source OpenGL and Vulkan stack so Linux apps and drivers share
+  one well-tested graphics library instead of vendor-only SDKs.
+
+use_cases:
+  - Run OpenGL or Vulkan apps on Linux without a vendor-only stack
+  - Use a software renderer when no GPU is available in CI
+  - Build GPU drivers and ICD pieces against the Mesa stack
+  - Prototype graphics or viz code on Mesa before a vendor driver

@@ -1,0 +1,24 @@
+name: GNU Readline
+description: GNU library for command-line editing. Apps give users history, tab completion, and Emacs or Vi keybindings so interactive shells and REPLs edit input without a custom line editor.
+tagline: Command-line editing library with history and completion
+
+website_url: https://tiswww.case.edu/php/chet/readline/rltop.html
+docs_url: https://tiswww.case.edu/php/chet/readline/readline.html
+install_command: brew install readline
+
+category: Dev Tools
+tags: [cli, readline, gnu, shell, repl, completion]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Interactive CLIs need history, completion, and keybindings, not a
+  raw fgets loop. GNU Readline is the line editor so shells and REPLs
+  share one well-known editing model instead of a custom prompt.
+
+use_cases:
+  - Add history and tab completion to a C REPL or shell
+  - Give an ML CLI Emacs-style line editing out of the box
+  - Share input editing with bash-compatible keybindings
+  - Link readline in a language runtime prompt

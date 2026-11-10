@@ -1,0 +1,25 @@
+name: GLib
+description: Core C application library from GNOME. Apps get data structures, main loops, Unicode, and I/O so GTK, GStreamer, and native tools share one portable runtime instead of rolling libc helpers.
+tagline: GNOME core C library for data structures, events, and I/O
+
+github_url: https://github.com/GNOME/glib
+website_url: https://docs.gtk.org/glib/
+docs_url: https://docs.gtk.org/glib/
+install_command: brew install glib
+
+category: Other
+tags: [c, gnome, gtk, runtime, unicode, event-loop]
+pricing: free
+is_open_source: true
+license: LGPL-2.1
+
+problem_solved: |
+  Native Linux apps need portable containers, Unicode, and a main loop
+  beyond libc. GLib is the GNOME core library so GTK, GStreamer, and
+  C tools share one well-tested runtime instead of ad-hoc helpers.
+
+use_cases:
+  - Run a GMainLoop event loop in a native Linux or GTK app
+  - Use GHashTable, GArray, and GString instead of homegrown C containers
+  - Handle UTF-8 and file I/O with GLib utilities in a CLI
+  - Depend on the same core library GTK and GStreamer already require

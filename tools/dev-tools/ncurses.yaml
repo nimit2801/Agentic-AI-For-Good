@@ -1,0 +1,25 @@
+name: ncurses
+description: Terminal control library for text UIs. Apps draw windows, colors, and key input on a character screen so CLIs and TUI tools work across terminals without raw escape codes.
+tagline: Text UI library for windows, colors, and keyboard input
+
+github_url: https://github.com/mirror/ncurses
+website_url: https://invisible-island.net/ncurses/
+docs_url: https://invisible-island.net/ncurses/ncurses.faq.html
+install_command: brew install ncurses
+
+category: Dev Tools
+tags: [tui, terminal, c, cli, curses, ncurses]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Building a text UI with raw ANSI codes breaks across terminals.
+  ncurses is the portable curses library so CLIs draw windows, colors,
+  and handle keys without encoding every escape sequence by hand.
+
+use_cases:
+  - Build a TUI dashboard for jobs, logs, or model training
+  - Handle keyboard input and window layout in a C CLI
+  - Port a curses app across Linux, macOS, and BSD terminals
+  - Draw color menus without depending on a full GUI toolkit
