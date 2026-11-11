@@ -1,0 +1,24 @@
+name: Tilix
+description: GTK 3 tiling terminal for Linux with splits, quake mode, and session save/restore. Run training jobs, Docker, and SSH panes in one window without a separate multiplexer.
+tagline: GTK tiling terminal with sessions and quake mode
+
+github_url: https://github.com/gnunn1/tilix
+website_url: https://gnunn1.github.io/tilix-web/
+docs_url: https://gnunn1.github.io/tilix-web/manual/
+
+category: Dev Tools
+tags: [terminal, linux, gtk, tiling, sessions, quake]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  Linux ML desktops need several shells but tmux configs do not travel
+  well. Tilix tiles VTE terminals in a GTK window, saves sessions, and
+  offers a quake drop-down so logs and SSH stay one layout away.
+
+use_cases:
+  - Restore a saved session of train, tensorboard, and SSH panes after reboot
+  - Drop down a quake terminal over a browser notebook with one hotkey
+  - Split Docker logs and a Python REPL while debugging a serving container
+  - Customize titles, badges, and profiles per GPU host or conda env
