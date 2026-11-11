@@ -1,0 +1,27 @@
+name: HarmBench
+description: A standardized evaluation framework for automated red teaming and robust refusal on large language models. HarmBench measures whether models and defenses actually refuse harmful requests across a broad, comparable attack suite.
+tagline: Standardized red-teaming eval for LLM refusals
+
+github_url: https://github.com/centerforaisafety/HarmBench
+website_url: https://harmbench.org
+docs_url: https://github.com/centerforaisafety/HarmBench
+
+category: Monitoring
+tags: [llm, red-teaming, safety, evaluation, jailbreak, robustness, benchmark]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  LLM safety claims are hard to compare because every lab uses a different attack
+  set, success metric, and refusal definition. HarmBench standardizes harmful
+  behaviors, automated attackers, and scoring so red-teaming results are
+  reproducible. Teams can measure whether a guardrail or aligned model actually
+  reduces attack success instead of overfitting to a handful of prompts.
+
+use_cases:
+  - Benchmark a chat model's refusal rate against a fixed suite of harmful behaviors before shipping
+  - Compare jailbreak attacks and defenses with the same HarmBench metrics instead of ad-hoc prompt lists
+  - Track safety regressions in CI when a new system prompt, tool, or fine-tune lands
+  - Evaluate automated red-teaming methods against a public, cited attack and behavior set
+  - Report comparable robust-refusal numbers in a paper or model card

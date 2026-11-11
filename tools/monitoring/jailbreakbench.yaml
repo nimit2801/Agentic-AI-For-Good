@@ -1,0 +1,29 @@
+name: JailbreakBench
+description: An open robustness benchmark for jailbreaking language models, introduced at NeurIPS 2024. JailbreakBench tracks attack success, defenses, and artifacts so labs can compare jailbreaks on a shared leaderboard instead of private prompt sets.
+tagline: NeurIPS benchmark for LLM jailbreak robustness
+
+github_url: https://github.com/JailbreakBench/jailbreakbench
+website_url: https://jailbreakbench.github.io
+docs_url: https://jailbreakbench.github.io
+
+category: Monitoring
+tags: [llm, jailbreak, safety, benchmark, robustness, evaluation, neurips]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install jailbreakbench
+
+problem_solved: |
+  Jailbreak papers rarely share the same models, attacks, or success criteria, so
+  a new defense looks strong until the next unpublished prompt lands. JailbreakBench
+  publishes a living leaderboard, artifacts, and a Python library so attack and
+  defense results can be reproduced and compared. Safety teams get a public
+  yardstick instead of a private spreadsheet of prompts.
+
+use_cases:
+  - Score a model's jailbreak robustness on the JailbreakBench leaderboard before a release
+  - Reproduce published jailbreak artifacts instead of re-implementing attacks from a paper
+  - Compare a new defense against baseline attacks with the shared JailbreakBench library
+  - Monitor whether a system-prompt or filter change actually drops attack success rate
+  - Cite a NeurIPS Datasets and Benchmarks eval in a model card or safety report
