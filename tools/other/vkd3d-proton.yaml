@@ -1,0 +1,26 @@
+name: vkd3d-proton
+description: A Proton-focused fork of VKD3D that translates Direct3D 12 to Vulkan so Windows D3D12 applications and games run on Linux. vkd3d-proton is the D3D12 backend Valve ships in Proton for Steam Play compatibility.
+tagline: Direct3D 12 to Vulkan translation for Proton
+
+github_url: https://github.com/HansKristian-Work/vkd3d-proton
+website_url: https://github.com/HansKristian-Work/vkd3d-proton
+
+category: Other
+tags: [vulkan, direct3d, d3d12, proton, wine, graphics, linux, translation]
+pricing: free
+is_open_source: true
+license: LGPL-2.1
+
+problem_solved: |
+  Direct3D 12 is the GPU API many Windows games, engines, and GPU compute tools
+  target, but Linux and Steam Deck speak Vulkan. Without a translation layer,
+  those binaries cannot run. vkd3d-proton implements D3D12 on top of Vulkan and
+  is the backend Proton uses, so Windows D3D12 titles and some GPU workloads
+  run on Linux without a vendor rewrite.
+
+use_cases:
+  - Run Windows Direct3D 12 games and engines on Linux or Steam Deck via Proton
+  - Debug D3D12-to-Vulkan translation issues when a title misbehaves under Steam Play
+  - Evaluate Linux GPU compatibility for a Windows-only D3D12 rendering or compute app
+  - Contribute shader or command-list translation fixes used by the wider Proton stack
+  - Prototype a Linux path for a D3D12-based visualization tool without a native Vulkan port

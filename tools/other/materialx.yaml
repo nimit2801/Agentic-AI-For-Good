@@ -1,0 +1,29 @@
+name: MaterialX
+description: An open standard and C++ library for exchanging physically based materials and look-development graphs across DCC tools and renderers. MaterialX describes shading networks as portable node graphs used by Autodesk, Adobe, ILM, and Pixar.
+tagline: Portable material graphs across DCC tools and renderers
+
+github_url: https://github.com/AcademySoftwareFoundation/MaterialX
+website_url: http://www.materialx.org/
+docs_url: https://materialx.org/Specification.html
+
+category: Other
+tags: [graphics, materials, 3d, rendering, aswf, vfx, shading, node-graph]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install MaterialX
+
+problem_solved: |
+  Look-development work is trapped inside each DCC and renderer. A shader graph
+  built in Maya, Houdini, or a custom path tracer does not round-trip, so film
+  and game pipelines rebuild materials per tool. MaterialX is an Academy Software
+  Foundation standard plus a C++/Python library that stores node graphs, looks,
+  and PBR definitions in a portable format those applications already speak.
+
+use_cases:
+  - Exchange physically based material graphs between Maya, Houdini, and a production renderer without rebuilding shaders
+  - Author look-development node graphs in Python with the MaterialX library and feed them into a USD or Hydra pipeline
+  - Standardize PBR surface definitions across a VFX or game studio so lighting looks match in every DCC
+  - Generate or inspect shading networks for synthetic training data used in 3D and inverse-rendering ML
+  - Embed MaterialX documents in USD assets so look-dev travels with geometry into downstream render farms

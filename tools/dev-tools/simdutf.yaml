@@ -1,0 +1,29 @@
+name: simdutf
+description: Fast Unicode and Base64 routines using SIMD (SSE2, AVX2, NEON, AVX-512, RVV). simdutf validates and transcodes UTF-8, UTF-16, and UTF-32 at billions of characters per second and ships inside Node.js, Chromium, Safari, Bun, and Cloudflare Workers.
+tagline: SIMD Unicode and Base64 at billions of chars per second
+
+github_url: https://github.com/simdutf/simdutf
+website_url: https://simdutf.github.io/simdutf/
+docs_url: https://simdutf.github.io/simdutf/
+
+category: Dev Tools
+tags: [unicode, utf8, simd, cpp, performance, base64, transcoding]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: brew install simdutf
+
+problem_solved: |
+  Validating and converting Unicode is a hidden tax in every text pipeline.
+  Naive UTF-8 checks and iconv-style transcoding stall JSON parsers, tokenizers,
+  and log ingest on large corpora. simdutf uses runtime-dispatched SIMD to
+  validate and transcode UTF-8/16/32 and Base64 at memory-bandwidth speeds, the
+  same code already running in Node.js, Chromium, and Bun.
+
+use_cases:
+  - Validate UTF-8 on ingest before tokenization or embedding so malformed bytes never reach the model
+  - Transcode UTF-16 Windows text to UTF-8 in a C++ data loader without iconv overhead
+  - Decode Base64 payloads in a native inference or dataset pipeline at SIMD speed
+  - Drop simdutf into a C++ JSON or log parser that currently spends most of its time in Unicode checks
+  - Match the Unicode path used by Node.js and Chromium in a custom JS or WASM runtime
