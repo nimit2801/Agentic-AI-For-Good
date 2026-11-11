@@ -1,0 +1,27 @@
+name: Dia TTS
+description: 1.6B-parameter open-source TTS model from Nari Labs that generates ultra-realistic multi-speaker dialogue from a transcript in one pass, including nonverbal cues like laughter and coughs.
+tagline: One-pass TTS for realistic multi-speaker dialogue
+
+github_url: https://github.com/nari-labs/dia
+website_url: https://huggingface.co/nari-labs/Dia-1.6B-0626
+docs_url: https://github.com/nari-labs/dia
+
+install_command: pip install git+https://github.com/nari-labs/dia.git
+
+category: Other
+tags: [tts, dialogue, speech-synthesis, voice-cloning, open-source, python, huggingface]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Most TTS engines render one speaker at a time and sound like narration, not conversation.
+  Dia generates a full two-speaker dialogue from a tagged transcript in a single pass, with
+  optional audio conditioning for tone and nonverbal events, so you can prototype podcasts
+  and agent conversations without stitching clips.
+
+use_cases:
+  - Generate two-speaker podcast-style dialogue from an [S1]/[S2] transcript
+  - Condition on a short clip to clone emotion and tone in English speech
+  - Produce nonverbal cues such as laughter or a cough inside generated dialogue
+  - Run Dia locally with Transformers or a Gradio UI for research and demos

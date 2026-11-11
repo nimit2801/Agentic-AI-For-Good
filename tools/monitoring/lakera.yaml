@@ -1,0 +1,23 @@
+name: Lakera
+description: Runtime AI security platform that screens prompts, responses, and agent tool calls for prompt injection, jailbreaks, PII leakage, and policy violations via a Guard API.
+tagline: Screen LLM and agent traffic for prompt attacks in real time
+
+website_url: https://www.lakera.ai
+docs_url: https://docs.lakera.ai
+
+category: Monitoring
+tags: [security, guardrails, prompt-injection, llm, monitoring, saas, agents]
+pricing: paid
+is_open_source: false
+
+problem_solved: |
+  Prompt injection, jailbreaks, PII leaks, and off-policy tool use slip through application-layer
+  filters because they look like ordinary language. Lakera Guard sits in front of LLM and agent
+  traffic, scoring messages, tool descriptions, and tool results against a policy so teams can
+  block or log attacks without rewriting every model call.
+
+use_cases:
+  - Screen user prompts and model replies for prompt injection and jailbreaks before they reach production
+  - Flag PII leakage and unsafe content in agent tool calls and tool responses
+  - Enforce a custom policy across Bedrock, Copilot Studio, and other agent platforms
+  - Self-host Guard as a sidecar and wire health probes into a Kubernetes inference stack
