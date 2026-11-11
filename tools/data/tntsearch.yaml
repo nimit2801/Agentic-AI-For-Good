@@ -1,0 +1,27 @@
+name: TNTSearch
+description: Fully featured full-text search engine written in PHP, with fuzzy matching, geo search, and a Laravel Scout driver so you can index Eloquent models without a separate search cluster.
+tagline: In-process full-text search for PHP and Laravel
+
+github_url: https://github.com/teamtnt/tntsearch
+website_url: https://tnt.studio/solving-the-search-problem-with-laravel-and-tntsearch
+docs_url: https://github.com/teamtnt/tntsearch
+
+install_command: composer require teamtnt/tntsearch
+
+category: Data
+tags: [search, php, laravel, full-text, indexing, sqlite]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  PHP apps that need search often add Elasticsearch just to match titles and bodies. TNTSearch
+  is an embeddable engine with fuzzy search, boolean queries, and a Scout driver, so Laravel
+  and plain PHP projects can keep an inverted index next to the app instead of operating a
+  separate search cluster.
+
+use_cases:
+  - Add full-text search to a Laravel app via the TNTSearch Scout driver
+  - Run fuzzy and boolean queries over a PHP document corpus without Elasticsearch
+  - Index Eloquent models into a local TNTSearch store for product or docs search
+  - Prototype geo and full-text queries in PHP before adopting a hosted search SaaS
