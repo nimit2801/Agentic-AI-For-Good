@@ -1,0 +1,29 @@
+name: RewardBench
+description: Allen AI's evaluation suite for reward models and LLM-as-a-judge systems. RewardBench scores how well a reward model prefers chosen over rejected responses across chat, safety, and reasoning subsets.
+tagline: Leaderboard for reward models and LLM judges
+
+github_url: https://github.com/allenai/reward-bench
+website_url: https://huggingface.co/spaces/allenai/reward-bench
+docs_url: https://github.com/allenai/reward-bench
+
+category: Monitoring
+tags: [reward-model, rlhf, evaluation, llm, allenai, benchmark, alignment]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install rewardbench
+
+problem_solved: |
+  RLHF and RLAIF stacks live or die by the reward model, but there was no shared
+  way to tell if an RM actually prefers good answers. Labs trained RMs that looked
+  fine on in-house prefs and failed on safety or reasoning. RewardBench is a
+  public eval and leaderboard for reward models and LLM judges so you can compare
+  them before they gate a training run.
+
+use_cases:
+  - Rank a new reward model against the RewardBench leaderboard before an RLHF run
+  - Check whether an LLM-as-a-judge agrees with chosen vs rejected pairs on chat and safety
+  - Catch reward-hacking risk when a DPO or PPO policy is trained against a weak RM
+  - Compare generative judges and classifier RMs on the same preference subsets
+  - Report RM quality in a model card with a cited Allen AI benchmark instead of private prefs

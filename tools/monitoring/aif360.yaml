@@ -1,0 +1,29 @@
+name: AIF360
+description: IBM's AI Fairness 360 toolkit of fairness metrics, explanations, and bias-mitigation algorithms for datasets and machine learning models. AIF360 helps teams measure and reduce disparate impact before a model ships.
+tagline: Fairness metrics and bias mitigation for ML models
+
+github_url: https://github.com/Trusted-AI/AIF360
+website_url: https://aif360.res.ibm.com/
+docs_url: https://aif360.readthedocs.io/
+
+category: Monitoring
+tags: [fairness, bias, ethics, metrics, ibm, machine-learning, evaluation]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install aif360
+
+problem_solved: |
+  Production ML models can treat groups differently without anyone noticing until
+  an audit. Ad-hoc fairness checks are inconsistent across teams and rarely cover
+  both data and post-training mitigation. AIF360 packages standard metrics,
+  explanations, and mitigation algorithms so you can measure disparate impact and
+  try reweighing or reductions in one Python toolkit.
+
+use_cases:
+  - Compute demographic parity, equalized odds, and related metrics on a classification dataset
+  - Compare bias-mitigation algorithms before deploying a credit, hiring, or healthcare model
+  - Explain which features drive group-wise performance gaps in a batch evaluation
+  - Add a fairness report to an ML monitoring pipeline alongside accuracy and drift
+  - Teach or audit responsible-AI reviews with a documented IBM toolkit instead of one-off scripts
