@@ -1,0 +1,29 @@
+name: doctest
+description: A fast, feature-rich C++11 through C++23 testing framework shipped as a single header. doctest aims to be the lightest practical alternative to Catch2 and Google Test, with compile-time and runtime overhead low enough to keep tests next to production code.
+tagline: Single-header C++ tests with Catch2-like syntax
+
+github_url: https://github.com/doctest/doctest
+website_url: https://github.com/doctest/doctest
+docs_url: https://github.com/doctest/doctest/blob/master/doc/markdown/tutorial.md
+
+category: Dev Tools
+tags: [cpp, testing, unit-test, header-only, catch2, google-test, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: brew install doctest
+
+problem_solved: |
+  Heavy C++ test frameworks slow compile times and discourage writing tests next
+  to the code they cover. Google Test and Catch2 pull in large translation units,
+  so native ML operators, header-only numeric libraries, and small C++ tools skip
+  tests. doctest is a single header with Catch2-like assertions and very low
+  compile cost, so tests can live in the same files as production C++.
+
+use_cases:
+  - Unit-test header-only C++ numeric or tensor helpers without pulling Google Test into every translation unit
+  - Keep tests beside production code in small C++ CLI tools and native extensions used by Python ML stacks
+  - Replace Catch2 in compile-time-sensitive projects where every extra include blows up incremental builds
+  - Run a fast C++ test binary in CI for CUDA host-side helpers and CPU fallback kernels
+  - Teach or prototype C++11+ libraries with assertions that compile as quickly as the library itself

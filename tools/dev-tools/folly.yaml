@@ -1,0 +1,30 @@
+name: Folly
+description: Meta's open-source C++ library of production-tested components used at Facebook scale. Folly fills gaps in the C++ standard library with futures, lock-free queues, hashing, string utilities, and high-performance containers for large systems.
+tagline: Production C++ components from Meta's infrastructure stack
+
+github_url: https://github.com/meta/folly
+website_url: https://github.com/meta/folly
+docs_url: https://github.com/meta/folly/blob/main/README.md
+
+category: Dev Tools
+tags: [cpp, library, facebook, meta, concurrency, futures, high-performance, infrastructure]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: brew install folly
+
+problem_solved: |
+  The C++ standard library lags behind what large production systems need for
+  concurrency, I/O, and high-throughput data structures. Teams reinvent futures,
+  lock-free queues, and string helpers, then spend years hardening them. Folly
+  is the battle-tested library Meta uses internally: drop-in components for
+  async programming, hashing, compression, and containers that already run at
+  Facebook scale.
+
+use_cases:
+  - Add Folly Futures and executors to a C++ service that needs composable async I/O beyond std::async
+  - Use Folly's lock-free queues and concurrent hash maps in high-throughput inference or feature-serving paths
+  - Replace ad-hoc string, hashing, and serialization helpers with Folly utilities already proven at Meta scale
+  - Build C++ training or serving daemons that share the same concurrency primitives as Facebook's production stack
+  - Speed up CMake/C++ AI infra by depending on Homebrew Folly instead of vendoring a custom utility layer
