@@ -1,0 +1,27 @@
+name: BLAKE3
+description: Fast cryptographic hash function with official Rust and C implementations, used for content addressing, integrity checks, and high-throughput hashing in data pipelines.
+tagline: Fast cryptographic hash for integrity and content addressing
+
+github_url: https://github.com/BLAKE3-team/BLAKE3
+website_url: https://github.com/BLAKE3-team/BLAKE3
+docs_url: https://github.com/BLAKE3-team/BLAKE3
+
+install_command: pip install blake3
+
+category: Dev Tools
+tags: [hashing, cryptography, rust, integrity, content-addressing, python]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  SHA-2 and SHA-3 are too slow for hashing large training artifacts and datasets at
+  pipeline speed. BLAKE3 is a parallel cryptographic hash with official Rust and C
+  implementations and Python bindings, so you can content-address files and verify
+  integrity without waiting on SHA.
+
+use_cases:
+  - Hash model checkpoints and datasets for content-addressed storage
+  - Verify download integrity of large artifacts faster than SHA-256
+  - Use BLAKE3 as a Merkle-friendly hash in data versioning pipelines
+  - Call the official Python bindings from preprocessing jobs
