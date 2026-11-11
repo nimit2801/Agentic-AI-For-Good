@@ -1,0 +1,27 @@
+name: Micro
+description: A modern terminal text editor with familiar keybindings, mouse support, a plugin system, and no heavy dependencies. It aims to be easier than Vim while remaining a single static binary you can drop onto a server.
+tagline: Intuitive terminal text editor in a single binary
+
+github_url: https://github.com/zyedidia/micro
+website_url: https://micro-editor.github.io
+docs_url: https://github.com/zyedidia/micro/blob/master/runtime/help/help.md
+
+install_command: brew install micro
+
+category: Dev Tools
+tags: [editor, terminal, cli, golang, plugins, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  nano is too limited for serious editing and Vim has a steep learning curve,
+  especially on remote servers. Micro is a terminal editor with Windows-style
+  shortcuts, mouse support, and a single static binary so you can edit files
+  over SSH without installing an IDE.
+
+use_cases:
+  - Edit config and source files on remote servers over SSH
+  - Use mouse, clipboard, and Ctrl-based shortcuts in a terminal editor
+  - Extend the editor with a Lua plugin system
+  - Drop a single static binary onto machines without a package manager
