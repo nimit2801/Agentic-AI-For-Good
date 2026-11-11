@@ -1,0 +1,25 @@
+name: ToolBench
+description: Open platform from OpenBMB for training, serving, and evaluating LLMs on tool use, with a large API-call dataset and ICLR 2024 ToolLLM methods for teaching models to call real tools.
+tagline: Train and evaluate LLMs on real tool-use APIs
+
+github_url: https://github.com/OpenBMB/ToolBench
+website_url: https://openbmb.github.io/ToolBench/
+docs_url: https://github.com/OpenBMB/ToolBench
+
+category: Agents
+tags: [agents, tool-use, llm, evaluation, dataset, python, open-source]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Tool-using agents are hard to train because public datasets do not cover
+  thousands of real APIs. ToolBench releases instruction data, ToolLLM
+  training recipes, and an eval harness so teams can measure and improve
+  function calling on realistic tool traces.
+
+use_cases:
+  - Fine-tune an LLM to call REST APIs from ToolBench instruction data
+  - Evaluate tool-use accuracy against the ToolBench test split
+  - Serve a tool-augmented model with the project's inference stack
+  - Benchmark agent frameworks on ICLR 2024 ToolLLM-style tasks
