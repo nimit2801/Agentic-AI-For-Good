@@ -1,0 +1,25 @@
+name: Windows Terminal
+description: Microsoft's modern Windows console host with tabs, GPU text rendering, profiles, and Unicode. One window for PowerShell, WSL, CMD, and SSH so ML and DevOps work on Windows uses a single terminal.
+tagline: Modern Windows terminal for PowerShell, WSL, and SSH
+
+github_url: https://github.com/microsoft/terminal
+website_url: https://aka.ms/terminal
+docs_url: https://learn.microsoft.com/windows/terminal/
+install_command: winget install Microsoft.WindowsTerminal
+
+category: Dev Tools
+tags: [terminal, windows, wsl, powershell, unicode, gpu]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Classic Windows consoles are slow, lack tabs, and handle Unicode poorly.
+  Windows Terminal unifies PowerShell, WSL, CMD, and SSH in one GPU-rendered
+  window so Windows ML and DevOps work stays in a single host.
+
+use_cases:
+  - Run WSL Ubuntu and PowerShell side by side while training models on Windows
+  - Keep SSH, Git, and CUDA CLI sessions in tabs instead of many conhost windows
+  - Render Unicode logs and progress bars from Python training scripts correctly
+  - Define profiles for conda, Docker, and Azure CLI on Windows workstations
