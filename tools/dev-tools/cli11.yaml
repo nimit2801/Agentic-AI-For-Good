@@ -1,0 +1,29 @@
+name: CLI11
+description: A command-line parser for C++11 and later with a simple, intuitive API and a rich feature set. CLI11 supports subcommands, validators, config files, and callbacks while remaining header-only, so C++ tools can ship a polished CLI without extra dependencies.
+tagline: Header-only C++11 command-line parser
+
+github_url: https://github.com/CLIUtils/CLI11
+website_url: https://cliutils.github.io/CLI11/
+docs_url: https://cliutils.github.io/CLI11/book/
+
+category: Dev Tools
+tags: [cpp, cli, argument-parser, header-only, command-line, developer-tools]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+install_command: brew install cli11
+
+problem_solved: |
+  C++ tools still roll their own argv parsing or depend on Getopt, Boost.Program_options,
+  or argparse ports that are painful to vendor. That leads to inconsistent flags,
+  missing help text, and no subcommands on inference CLIs, data converters, and
+  training wrappers. CLI11 is a header-only C++11 parser with subcommands,
+  validators, and config-file support so a native binary can match Python argparse UX.
+
+use_cases:
+  - Add subcommands, typed flags, and generated help to a C++ inference or data-prep CLI
+  - Parse a YAML or INI config file plus command-line overrides in a native training wrapper
+  - Replace Boost.Program_options in a header-only or lightly-dependent C++ tool
+  - Validate numeric ranges, existing paths, and enum choices before a C++ binary starts work
+  - Ship a polished argv interface on CUDA or C++ utilities that Python pipelines shell out to

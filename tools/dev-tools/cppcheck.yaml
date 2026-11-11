@@ -1,0 +1,29 @@
+name: cppcheck
+description: A static analysis tool for C and C++ that finds bugs, undefined behavior, and style issues without a full compiler toolchain. cppcheck catches out-of-bounds access, memory leaks, null pointer use, and unused functions in existing codebases.
+tagline: Static analysis for C and C++ without a full compile
+
+github_url: https://github.com/danmar/cppcheck
+website_url: https://cppcheck.sourceforge.io/
+docs_url: https://cppcheck.sourceforge.io/manual.html
+
+category: Dev Tools
+tags: [cpp, static-analysis, lint, code-quality, security, c, developer-tools]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+install_command: brew install cppcheck
+
+problem_solved: |
+  C and C++ compilers miss many classes of bugs until a specific code path
+  runs. Memory leaks, null dereferences, and out-of-bounds writes hide in
+  rarely tested branches of ML kernels, CUDA wrappers, and native extensions.
+  cppcheck analyzes source without a full build, so it can scan incomplete
+  trees, generated code, and third-party C++ that never compiles cleanly in CI.
+
+use_cases:
+  - Scan C++ inference kernels and native Python extensions for memory leaks and null pointer use before merge
+  - Add a cheap static-analysis step to CI that does not require a full CMake compile of every PR
+  - Catch undefined behavior in CUDA/C++ glue code that unit tests never exercise
+  - Audit vendored C libraries in an ML stack for buffer overflows and unused dead code
+  - Generate XML or HTML reports of defects across a large C++ monorepo without waiting on a full toolchain

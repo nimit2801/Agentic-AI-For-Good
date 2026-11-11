@@ -1,0 +1,29 @@
+name: Leptonica
+description: An open-source C library for image processing and image analysis used as the raster engine under Tesseract OCR. Leptonica provides rasterops, connected components, morphology, scaling, deskew, and I/O for many image formats.
+tagline: Image processing library behind Tesseract OCR
+
+github_url: https://github.com/DanBloomberg/leptonica
+website_url: http://www.leptonica.org/
+docs_url: http://www.leptonica.org/source/README.html
+
+category: Other
+tags: [image-processing, ocr, tesseract, c, computer-vision, raster, morphology]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+install_command: brew install leptonica
+
+problem_solved: |
+  OCR and document pipelines need more than a neural net. Pages must be deskewed,
+  binarized, scaled, and cleaned before Tesseract or another recognizer can read
+  them. Rolling that raster work in Python is slow and lossy. Leptonica is the
+  C library Tesseract already depends on for connected components, morphology,
+  and format I/O, so document AI stacks can preprocess images with the same engine.
+
+use_cases:
+  - Deskew, binarize, and scale scanned pages before sending them to Tesseract or another OCR model
+  - Run connected-component analysis and morphological cleanup on document images in a C or Python pipeline
+  - Read and write many raster formats in a native preprocessing step for document AI
+  - Build an OCR service that shares Leptonica with Tesseract instead of a second image stack
+  - Prototype page-segmentation and layout heuristics on binary images without a full CV framework
