@@ -1,0 +1,27 @@
+name: OpenPlayground
+description: Local LLM playground that runs on your laptop, with a full UI for history, parameter tuning, and side-by-side comparison across OpenAI, Anthropic, Cohere, Hugging Face, Replicate, and llama.cpp models.
+tagline: Run a multi-provider LLM playground on your laptop
+
+github_url: https://github.com/nat/openplayground
+website_url: https://nat.dev
+docs_url: https://github.com/nat/openplayground
+
+install_command: pip install openplayground
+
+category: LLM
+tags: [llm, playground, local, openai, anthropic, huggingface, llama-cpp, comparison]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Trying the same prompt across vendors means bouncing between dashboards, losing parameter
+  history, and never seeing outputs side by side. OpenPlayground gives you one local UI that
+  talks to hosted APIs and local Hugging Face or llama.cpp models so you can tune, retry, and
+  compare without leaving your machine.
+
+use_cases:
+  - Compare OpenAI, Anthropic, and local llama.cpp outputs on the same prompt
+  - Tune temperature and other parameters per model and retry without losing history
+  - Detect models already in your Hugging Face cache and run them locally
+  - Self-host the playground with Docker and keep API keys on disk, not in a vendor UI

@@ -1,0 +1,27 @@
+name: Higgs Audio
+description: Text-audio foundation model from Boson AI for conversational TTS, zero-shot voice cloning, and multilingual speech, available as open weights and an OpenAI-compatible hosted API.
+tagline: Conversational TTS and voice cloning from a text-audio model
+
+github_url: https://github.com/boson-ai/higgs-audio
+website_url: https://www.boson.ai
+docs_url: https://docs.boson.ai/models/higgs-audio-tts/overview
+
+install_command: pip install boson-multimodal
+
+category: LLM
+tags: [tts, audio, voice-cloning, speech, multimodal, open-weights, python]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Conversational voice apps need cloning, emotion control, and many languages without stitching
+  a separate TTS stack per locale. Higgs Audio is a text-audio foundation model you can call
+  via a hosted OpenAI-compatible API or serve from open weights, covering zero-shot cloning and
+  long-form speech in one model family.
+
+use_cases:
+  - Clone a speaker from a short sample and generate new conversational speech
+  - Serve multilingual TTS through the Boson API or self-host open weights
+  - Add inline emotion, style, and prosody control to agent voice replies
+  - Stream long-form dialogue audio without swapping engines per language
