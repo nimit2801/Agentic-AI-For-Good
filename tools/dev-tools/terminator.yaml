@@ -1,0 +1,24 @@
+name: Terminator
+description: GNOME terminal emulator that tiles many terminals in one window with keyboard splits, tabs, and broadcast input. Linux ML workstations use it to watch training logs, SSH, and local shells side by side.
+tagline: Tiling GNOME terminal with splits, tabs, and broadcast
+
+github_url: https://github.com/gnome-terminator/terminator
+website_url: https://gnome-terminator.org
+docs_url: https://gnome-terminator.org/docs/
+
+category: Dev Tools
+tags: [terminal, linux, gnome, tiling, ssh, multiplexer]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  GPU jobs, SSH, and log tails each want a shell, and tmux is extra
+  ceremony for a desktop. Terminator splits one GNOME window into panes
+  and can broadcast a command to every terminal at once.
+
+use_cases:
+  - Split a window between a training run and nvidia-smi on a Linux workstation
+  - Broadcast git pull or pytest across several project directories
+  - Keep SSH sessions to GPU boxes in tabs next to a local shell
+  - Arrange persistent pane layouts for data prep, train, and eval
