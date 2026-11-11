@@ -1,0 +1,25 @@
+name: LabelMe
+description: Python image annotation tool for polygons, boxes, circles, lines, and points, with optional AI-assisted labeling. Exports JSON used to train computer-vision models for detection and segmentation.
+tagline: Python GUI for polygon and box image annotation
+
+github_url: https://github.com/wkentaro/labelme
+website_url: https://labelme.io
+docs_url: https://labelme.io
+install_command: pip install labelme
+
+category: Data
+tags: [annotation, computer-vision, segmentation, labeling, python, dataset]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Vision datasets need polygon and box labels, not just class folders. LabelMe
+  is a Python GUI that annotates images as JSON so detection and segmentation
+  training data can be created locally without a SaaS labeler.
+
+use_cases:
+  - Draw polygons around objects to build semantic segmentation datasets
+  - Label bounding boxes for object-detection model training
+  - Export JSON annotations into COCO or custom training pipelines
+  - Use AI-assisted annotation to speed labeling of large image batches
