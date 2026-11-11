@@ -1,0 +1,24 @@
+name: Android Studio
+description: Official Android IDE from Google, based on IntelliJ, with emulators, Gradle, and on-device profilers. Used to ship on-device ML, camera pipelines, and LLM apps on phones and edge hardware.
+tagline: Official IDE for Android and on-device ML apps
+
+website_url: https://developer.android.com/studio
+docs_url: https://developer.android.com/studio/intro
+
+install_command: brew install --cask android-studio
+
+category: Dev Tools
+tags: [android, ide, mobile, on-device, gradle, google]
+pricing: free
+is_open_source: false
+
+problem_solved: |
+  On-device ML apps need Gradle, emulators, and profilers that a generic editor
+  does not ship. Android Studio is the official IDE for building, running, and
+  profiling Android apps, including camera and LiteRT inference paths on phones.
+
+use_cases:
+  - Build Android apps that run on-device models with LiteRT or NNAPI
+  - Profile CPU, GPU, and memory on an emulator or physical device
+  - Debug camera and sensor pipelines feeding a mobile model
+  - Manage Gradle dependencies for ML Android libraries

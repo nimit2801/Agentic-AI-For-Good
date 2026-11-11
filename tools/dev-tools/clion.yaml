@@ -1,0 +1,25 @@
+name: CLion
+description: JetBrains C and C++ IDE with CMake, debugger, and sanitizer support. Used for CUDA kernels, native extensions, and performance-sensitive inference code that Python IDEs do not cover well.
+tagline: JetBrains IDE for C, C++, and native ML backends
+
+website_url: https://www.jetbrains.com/clion/
+docs_url: https://www.jetbrains.com/help/clion/
+
+install_command: brew install --cask clion
+
+category: Dev Tools
+tags: [c++, cmake, ide, jetbrains, cuda, debugger, native]
+pricing: paid
+is_open_source: false
+
+problem_solved: |
+  CUDA kernels, pybind11 modules, and inference runtimes live in CMake trees that
+  a Python editor barely understands. CLion brings CMake, a native debugger, and
+  sanitizers so you can navigate and debug the C++ side of an ML stack without
+  leaving an IDE.
+
+use_cases:
+  - Debug CUDA and C++ inference kernels with breakpoints and sanitizers
+  - Navigate large CMake projects for native ML extensions
+  - Profile C++ backends that sit under Python training code
+  - Edit pybind11 and TensorRT code with JetBrains inspections
