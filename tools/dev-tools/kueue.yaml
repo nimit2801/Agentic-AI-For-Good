@@ -1,0 +1,25 @@
+name: Kueue
+description: Kubernetes-native job queueing from SIG Scheduling that admits batch Jobs, JobSets, and AI workloads based on quotas, so clusters can fair-share GPUs without a custom scheduler rewrite.
+tagline: Kubernetes-native job queues and quotas for batch and AI
+
+github_url: https://github.com/kubernetes-sigs/kueue
+website_url: https://kueue.sigs.k8s.io
+docs_url: https://kueue.sigs.k8s.io/docs/
+
+category: Dev Tools
+tags: [kubernetes, queueing, batch, gpu, scheduling, quotas, mlops]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  GPU clusters fill up with Jobs that ignore team quotas and never wait in a real queue.
+  Kueue sits in front of the Kubernetes Job APIs, admitting work when quota is free so
+  training, batch, and inference jobs share accelerators without replacing the whole
+  scheduler.
+
+use_cases:
+  - Put Kubernetes Jobs and JobSets behind cluster queues with per-team quotas
+  - Fair-share GPUs across training jobs instead of first-come first-served
+  - Admit AI workloads only when the cluster has enough accelerators
+  - Install Kueue with kubectl or Helm on an existing Kubernetes cluster

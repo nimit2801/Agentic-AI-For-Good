@@ -1,0 +1,25 @@
+name: Toshi
+description: Full-text search engine written in stable Rust, designed as an Elasticsearch-like server on top of Tantivy, with an HTTP API for indexing and querying documents.
+tagline: Elasticsearch-style full-text search in stable Rust
+
+github_url: https://github.com/toshi-search/Toshi
+website_url: https://github.com/toshi-search/Toshi
+docs_url: https://github.com/toshi-search/Toshi
+
+category: Vector DB
+tags: [search, rust, tantivy, full-text, elasticsearch, indexing]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Running Elasticsearch for modest full-text search brings JVM overhead and a large ops surface.
+  Toshi aims to be to Elasticsearch what Tantivy is to Lucene: a smaller Rust search server with
+  an HTTP API, stable-Rust constraints, and on-disk indices you can run locally without a Java
+  cluster.
+
+use_cases:
+  - Stand up a local full-text index for docs, logs, or product catalogs
+  - Replace a heavy Elasticsearch sidecar in a Rust-heavy stack
+  - Experiment with Tantivy-backed HTTP search before committing to a hosted engine
+  - Index JSON documents and query them through Toshi's REST API

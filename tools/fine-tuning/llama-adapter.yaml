@@ -1,0 +1,25 @@
+name: LLaMA-Adapter
+description: Parameter-efficient instruction-tuning method that adapts LLaMA with about 1.2M parameters in roughly one hour, later extended to LLaMA-Adapter V2 for multimodal instruction following.
+tagline: Instruction-tune LLaMA with 1.2M parameters in about an hour
+
+github_url: https://github.com/OpenGVLab/LLaMA-Adapter
+website_url: https://github.com/OpenGVLab/LLaMA-Adapter
+docs_url: https://github.com/OpenGVLab/LLaMA-Adapter
+
+category: Fine-tuning
+tags: [fine-tuning, llama, peft, instruction-tuning, multimodal, python, open-source]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Full fine-tunes of LLaMA are slow and GPU-heavy when you only need instruction following.
+  LLaMA-Adapter injects a tiny set of learnable adaptation prompts so you can instruction-tune
+  a LLaMA checkpoint in about an hour with 1.2M extra parameters, then reuse the same idea
+  for vision-language instruction following in V2.
+
+use_cases:
+  - Instruction-tune LLaMA on a custom dataset without a full-parameter fine-tune
+  - Compare adapter-based PEFT against LoRA on the same LLaMA checkpoint
+  - Run LLaMA-Adapter V2 for image-conditioned instruction following
+  - Prototype ICLR-style PEFT baselines before moving to production LoRA stacks

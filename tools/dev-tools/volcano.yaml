@@ -1,0 +1,25 @@
+name: Volcano
+description: CNCF cloud-native batch system for Kubernetes that schedules high-performance jobs, including GPU training, Spark, TensorFlow, and MPI, with queues, fair sharing, and gang scheduling.
+tagline: Kubernetes batch scheduler for GPU and HPC jobs
+
+github_url: https://github.com/volcano-sh/volcano
+website_url: https://volcano.sh
+docs_url: https://volcano.sh/en/docs/
+
+category: Dev Tools
+tags: [kubernetes, batch, gpu, scheduling, hpc, cncf, training]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Default Kubernetes scheduling is a poor fit for gang-scheduled GPU training and HPC jobs that
+  must start together or wait. Volcano adds queues, fair sharing, and gang scheduling so ML and
+  batch workloads can share a cluster without one job starving the rest or leaving half a gang
+  pending.
+
+use_cases:
+  - Queue multi-GPU training jobs so they gang-schedule instead of deadlocking
+  - Share a GPU cluster across teams with fair-share queues
+  - Run Spark, TensorFlow, and MPI jobs on the same Kubernetes batch layer
+  - Install Volcano with Helm as the batch scheduler next to the default kube-scheduler
