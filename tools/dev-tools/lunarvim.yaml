@@ -1,0 +1,26 @@
+name: LunarVim
+description: Community-driven IDE layer for Neovim that preconfigures LSP, completions, a debugger, and a plugin suite so you can treat Neovim like a full IDE without writing a config from scratch.
+tagline: IDE layer for Neovim, free and community driven
+
+github_url: https://github.com/LunarVim/LunarVim
+website_url: https://www.lunarvim.org
+docs_url: https://www.lunarvim.org/docs/installation
+
+install_command: bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/master/utils/installer/install.sh)
+
+category: Dev Tools
+tags: [neovim, lua, editor, ide, lsp, terminal]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Neovim can be an IDE, but only after you wire LSP, DAP, completions, and a status
+  line. LunarVim is an opinionated layer on Neovim that installs that stack for you,
+  so engineers get a free, keyboard-driven IDE without maintaining a 500-line init.lua.
+
+use_cases:
+  - Install a batteries-included Neovim IDE with the official installer
+  - Debug Python and other languages through the prewired DAP setup
+  - Use LunarVim as a remote-friendly alternative to VS Code on GPU boxes
+  - Customize the community config instead of starting from a blank Neovim

@@ -1,0 +1,27 @@
+name: Extism
+description: Framework for embedding WebAssembly plugins in host applications, with SDKs to load wasm modules, move data across the host-guest boundary, and call exported functions safely.
+tagline: Embed Wasm plugins in any host application
+
+github_url: https://github.com/extism/extism
+website_url: https://extism.org
+docs_url: https://extism.org/docs/
+
+install_command: pip install extism
+
+category: Dev Tools
+tags: [webassembly, plugins, wasm, rust, python, extensibility]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Shipping user or vendor plugins in the host language means memory unsafety and a
+  new ABI per language. Extism loads Wasm modules through a stable PDK and host SDKs
+  so you can run untrusted or polyglot extensions with a single call path for data
+  and functions.
+
+use_cases:
+  - Load a Wasm plugin from Python and call its exported functions
+  - Let users extend an agent or pipeline without giving them native code
+  - Share one plugin binary across Rust, Go, and Python hosts
+  - Sandbox third-party transforms as Wasm instead of subprocesses

@@ -1,0 +1,27 @@
+name: wasmCloud
+description: CNCF project for building, managing, and scaling polyglot WebAssembly applications across cloud, Kubernetes, and edge, with the wash CLI and a Kubernetes operator.
+tagline: Run polyglot Wasm apps across cloud, Kubernetes, and edge
+
+github_url: https://github.com/wasmCloud/wasmCloud
+website_url: https://wasmcloud.com
+docs_url: https://wasmcloud.com/docs/
+
+install_command: brew install wasmcloud/wasmcloud/wash
+
+category: Dev Tools
+tags: [webassembly, cncf, kubernetes, edge, rust, wasm, distributed]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Polyglot microservices on Kubernetes still ship OS containers even when the logic
+  is a small Wasm component. wasmCloud runs components on a capability-driven host
+  with wash for local dev and an operator for clusters, so the same artifact can
+  move from laptop to Kubernetes to edge.
+
+use_cases:
+  - Scaffold and run a Wasm HTTP component locally with wash
+  - Deploy wasmCloud on Kubernetes with the runtime operator Helm chart
+  - Share one component across cloud and edge without rebuilding containers
+  - Embed wash-runtime in a custom host for plugin-style Wasm capabilities
