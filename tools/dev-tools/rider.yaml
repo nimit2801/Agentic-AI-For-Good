@@ -1,0 +1,24 @@
+name: Rider
+description: JetBrains .NET IDE for C#, Unity, and ASP.NET, with a debugger, inspections, and solution-wide navigation. Used when ML services, Unity sims, or game clients live in a .NET stack.
+tagline: JetBrains IDE for C#, Unity, and .NET services
+
+website_url: https://www.jetbrains.com/rider/
+docs_url: https://www.jetbrains.com/help/rider/
+
+install_command: brew install --cask rider
+
+category: Dev Tools
+tags: [dotnet, csharp, ide, jetbrains, unity, debugger]
+pricing: paid
+is_open_source: false
+
+problem_solved: |
+  .NET ML services and Unity simulation clients are awkward in editors that
+  treat C# as just another language. Rider understands solutions, Unity, and
+  ASP.NET so you can debug C# inference hosts and game clients in one IDE.
+
+use_cases:
+  - Debug ASP.NET services that wrap model APIs in C#
+  - Edit Unity projects used as ML simulation or robotics clients
+  - Navigate large .NET solutions with inspections and a debugger
+  - Work on ML.NET or ONNX Runtime C# bindings without Visual Studio
