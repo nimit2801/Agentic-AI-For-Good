@@ -1,0 +1,27 @@
+name: Chemprop
+description: Message-passing neural networks for molecular property prediction. Train graph models on SMILES or molecule graphs to forecast activity, solubility, and other chemical endpoints used in drug discovery and materials work.
+tagline: Graph neural nets for molecular property prediction
+
+github_url: https://github.com/chemprop/chemprop
+docs_url: https://chemprop.readthedocs.io/en/main/
+
+install_command: pip install chemprop
+
+category: Data
+tags: [chemistry, molecules, graph-neural-networks, property-prediction, drug-discovery, python, smiles]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Chemical property models need graphs, not flattened fingerprints, and
+  many custom GNN stacks are hard to train reproducibly. Chemprop is a
+  maintained message-passing toolkit so teams can train and evaluate
+  molecule models from SMILES with a standard pipeline.
+
+use_cases:
+  - Predict activity or solubility from a SMILES CSV with a directed message-passing network
+  - Train a multi-task molecular property model for a screening library
+  - Benchmark graph models against fingerprint baselines in a drug-discovery loop
+  - Fine-tune Chemprop on an in-house assay set and export predictions
+  - Run the documented notebooks to prototype a QSAR model without writing GNN layers
