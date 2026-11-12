@@ -1,0 +1,26 @@
+name: AutoDock Vina
+description: Open-source molecular docking engine for ligand-receptor scoring and virtual screening. Supports batch docking, multiple ligands, macrocycles, and Python bindings for screening pipelines.
+tagline: Fast open-source docking for virtual screening
+
+github_url: https://github.com/forlilab/AutoDock-Vina
+website_url: https://autodock-vina.readthedocs.io
+docs_url: https://autodock-vina.readthedocs.io/en/latest/
+install_command: pip install vina
+
+category: Data
+tags: [molecular-docking, virtual-screening, python, drug-discovery, chemistry]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Virtual screening needs a fast docking engine that can score many ligands
+  against a receptor without a commercial license. AutoDock Vina provides
+  gradient-optimization docking, batch mode, and Python bindings so chemistry
+  and ML teams can rank poses in screening pipelines.
+
+use_cases:
+  - Dock small molecules against a protein receptor for virtual screening
+  - Run batch docking of ligand libraries with Python bindings
+  - Score multiple ligands and macrocycles in one AutoDock Vina job
+  - Generate poses and affinities for ML-based drug discovery datasets
