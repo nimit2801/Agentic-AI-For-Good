@@ -1,0 +1,27 @@
+name: Wave Terminal
+description: Open-source, AI-integrated terminal for macOS, Linux, and Windows with durable SSH, inline file previews, and a context-aware assistant. Works with OpenAI, Claude, Gemini, Ollama, and LM Studio using your own keys.
+tagline: AI-integrated terminal with durable SSH and workspace blocks
+
+github_url: https://github.com/wavetermdev/waveterm
+website_url: https://www.waveterm.dev/
+docs_url: https://docs.waveterm.dev/
+install_command: brew install --cask wave
+
+category: Dev Tools
+tags: [terminal, ssh, ai, electron, workspace, ollama, cli]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  GPU jobs, remote training boxes, and LLM CLIs live in terminals that lose SSH
+  sessions and have no model context. Wave keeps durable SSH, inline file
+  previews, and a BYOK assistant that can read terminal output so debugging
+  remote ML work stays in one window.
+
+use_cases:
+  - Keep SSH sessions to GPU boxes alive across network drops and app restarts
+  - Ask Wave AI to explain failed training logs using terminal scrollback
+  - Preview remote CSVs, markdown, and images without leaving the terminal
+  - Edit remote files over SSH with a graphical editor and syntax highlighting
+  - Run local models via Ollama or LM Studio next to cloud LLM keys
