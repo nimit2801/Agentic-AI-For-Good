@@ -1,0 +1,27 @@
+name: Picsellia
+description: End-to-end MLOps platform for computer vision covering datalake management, AI-assisted labeling, experiment tracking, model deployment, and production monitoring so CV teams keep lineage from raw images to live predictions.
+tagline: End-to-end MLOps platform for computer vision pipelines
+
+website_url: https://www.picsellia.com
+docs_url: https://documentation.picsellia.com
+
+install_command: pip install picsellia
+
+category: Data
+tags: [mlops, computer-vision, data-labeling, experiment-tracking, model-deployment, monitoring, python, saas]
+pricing: freemium
+is_open_source: false
+
+problem_solved: |
+  Computer vision teams often glue together separate tools for storage,
+  labeling, training, deployment, and monitoring, then lose lineage when a
+  production prediction fails. Picsellia is a CV-native MLOps platform that
+  keeps datasets, experiments, and deployed models in one system so you can
+  trace a bad prediction back to the training data that caused it.
+
+use_cases:
+  - Store and version image and video datasets in a datalake with search and embeddings
+  - Label detection and segmentation data with AI-assisted annotation and review
+  - Track training experiments and attach dataset versions through the Python SDK
+  - Deploy vision models and monitor prediction drift, then send failures back for relabeling
+  - Run a closed-loop CV pipeline from raw images to production without stitching five tools

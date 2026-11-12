@@ -1,0 +1,28 @@
+name: TabPFN
+description: In-context foundation model for tabular classification and regression. Fit on a labeled table in one forward pass and predict new rows without gradient training, targeting small and medium datasets where boosted trees are the default.
+tagline: Tabular foundation model that predicts without a training loop
+
+github_url: https://github.com/PriorLabs/TabPFN
+website_url: https://priorlabs.ai
+docs_url: https://priorlabs.ai/docs
+
+install_command: pip install tabpfn
+
+category: Data
+tags: [tabular, foundation-model, classification, regression, python, scikit-learn, in-context-learning]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Gradient-boosted trees still dominate small tabular jobs, but they need
+  tuning, retraining, and feature work for every new table. TabPFN
+  conditions on the training rows at inference so you can get strong
+  predictions on a new CSV without a training loop.
+
+use_cases:
+  - Classify a small clinical or churn table with TabPFNClassifier in a scikit-learn pipeline
+  - Regress a numeric target on a medium CSV without hyperparameter search
+  - Benchmark TabPFN against XGBoost or CatBoost on datasets with under 10k rows
+  - Prototype a tabular model in minutes when you cannot wait for AutoML search
+  - Add tabpfn-extensions for interpretability, unlabeled data, and extra estimators
