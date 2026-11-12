@@ -1,0 +1,24 @@
+name: Qodana
+description: JetBrains static analysis platform that runs IDE inspections in CI. Builds quality gates for Python, JVM, JS, and 60-plus languages so ML repos fail the pipeline on real inspection issues, not only tests.
+tagline: JetBrains code quality platform for CI quality gates
+
+website_url: https://www.jetbrains.com/qodana/
+docs_url: https://www.jetbrains.com/help/qodana/
+github_url: https://github.com/JetBrains/qodana-cli
+
+category: Dev Tools
+tags: [static-analysis, ci, jetbrains, quality-gates, inspections, python]
+pricing: freemium
+is_open_source: false
+
+problem_solved: |
+  IDE inspections stay on developer machines unless CI runs them. Qodana
+  executes JetBrains inspections in the pipeline and reports quality gates
+  so Python and JVM ML services cannot merge with the same issues the IDE
+  already flagged.
+
+use_cases:
+  - Run JetBrains inspections on Python training and API repos in GitHub Actions
+  - Block merges when Qodana quality gates fail on new findings
+  - Scan JVM and JavaScript services that sit around model endpoints
+  - Compare baseline vs new issues so legacy ML code does not fail the first run
