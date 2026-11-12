@@ -1,0 +1,24 @@
+name: Home Manager
+description: Nix module for declaratively managing a user environment. Configure packages, dotfiles, shells, and services in one Nix file so ML laptops and GPU boxes share a reproducible home setup.
+tagline: Declarative Nix configs for user packages and dotfiles
+
+github_url: https://github.com/nix-community/home-manager
+website_url: https://nix-community.github.io/home-manager/
+docs_url: https://nix-community.github.io/home-manager/
+
+category: Dev Tools
+tags: [nix, dotfiles, declarative, reproducibility, linux, macos]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  ML engineers copy dotfiles and brew lists between laptops and GPU boxes and
+  they drift. Home Manager describes packages, shells, and config files in Nix
+  so a user environment can be rebuilt the same way on every machine.
+
+use_cases:
+  - Declare shell, git, and Python toolchain config in one Nix home file
+  - Share the same user packages across a laptop and a remote GPU box
+  - Manage dotfiles without a separate stow or chezmoi layer on NixOS
+  - Pin editor and CLI tools so research machines stay reproducible
