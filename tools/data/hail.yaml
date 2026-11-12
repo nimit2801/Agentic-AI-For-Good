@@ -1,0 +1,28 @@
+name: Hail
+description: Cloud-native genomic dataframes and batch compute. Query variants, genotypes, and annotations at biobank scale with a Python API that runs locally or on Spark so GWAS and QC pipelines stay in one system.
+tagline: Genomic dataframes and batch compute for biobank-scale genetics
+
+github_url: https://github.com/hail-is/hail
+website_url: https://hail.is
+docs_url: https://hail.is/docs/0.2/
+
+install_command: pip install hail
+
+category: Data
+tags: [genomics, gwas, spark, dataframes, python, bioinformatics, batch]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Population genetics tables are too wide and sparse for pandas, and
+  rolling custom Spark jobs for every QC step does not scale. Hail is a
+  genomic dataframe library so teams can filter variants, run GWAS, and
+  share pipelines from a laptop to a cluster.
+
+use_cases:
+  - Load VCF or MatrixTable data and run variant QC before association tests
+  - Compute GWAS summary statistics on a biobank-scale genotype matrix
+  - Annotate variants with public frequency and consequence datasets
+  - Run Hail Batch jobs on cloud VMs for sequencing secondary analysis
+  - Export cleaned genetic tables to pandas or Spark for downstream ML
