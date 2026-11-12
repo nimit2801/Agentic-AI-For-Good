@@ -1,0 +1,24 @@
+name: RustRover
+description: JetBrains IDE for Rust with Cargo, debugging, and test runners built in. Teams use it for inference runtimes, CLI agents, and systems code that Python editors do not cover well.
+tagline: JetBrains IDE for Rust and Cargo projects
+
+website_url: https://www.jetbrains.com/rust/
+docs_url: https://www.jetbrains.com/help/rust/
+install_command: brew install --cask rustrover
+
+category: Dev Tools
+tags: [ide, rust, cargo, jetbrains, systems, debugger]
+pricing: paid
+is_open_source: false
+
+problem_solved: |
+  Rust inference runtimes, tokenizers, and CLI agents live in Cargo workspaces that a
+  generic editor barely understands. RustRover brings Cargo, a debugger, and Rust-aware
+  inspections so you can navigate and debug the systems side of an ML stack without
+  leaving an IDE.
+
+use_cases:
+  - Debug Rust inference runtimes and tokenizers with breakpoints and Cargo tests
+  - Navigate large Cargo workspaces for agent CLIs and native ML backends
+  - Edit PyO3 and rust-bindgen extensions next to the Python code they serve
+  - Run rustfmt, clippy, and tests from a dedicated Rust IDE

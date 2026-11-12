@@ -1,0 +1,27 @@
+name: EvalML
+description: AutoML library that builds, optimizes, and evaluates machine learning pipelines using domain-specific objective functions. Includes data checks, preprocessing, feature engineering, and model understanding tools.
+tagline: AutoML for pipelines with domain-specific objectives
+
+github_url: https://github.com/alteryx/evalml
+website_url: https://evalml.alteryx.com
+docs_url: https://evalml.alteryx.com/en/stable/
+install_command: pip install evalml
+
+category: Data
+tags: [automl, python, pipelines, feature-engineering, classification, regression]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Hand-tuning preprocessing, model choice, and hyperparameters is slow and easy
+  to get wrong on new tabular problems. EvalML searches pipelines end to end
+  with data checks and domain-specific objectives so teams get a ranked set of
+  models instead of a one-off sklearn script.
+
+use_cases:
+  - Search binary and multiclass classification pipelines with AutoMLSearch
+  - Catch data quality issues before modeling with built-in data checks
+  - Optimize pipelines against domain-specific objective functions
+  - Inspect feature importance and model behavior after AutoML search
+  - Compare preprocessing and estimator combinations without manual grid search
