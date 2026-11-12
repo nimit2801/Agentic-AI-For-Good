@@ -1,0 +1,28 @@
+name: Qiskit
+description: Open-source SDK for building, optimizing, and running quantum circuits. Used for quantum machine learning research, circuit compilation, and primitives that talk to IBM Quantum and other backends.
+tagline: Python SDK for quantum circuits, primitives, and backends
+
+github_url: https://github.com/Qiskit/qiskit
+website_url: https://www.ibm.com/quantum/qiskit
+docs_url: https://quantum.cloud.ibm.com/docs
+
+install_command: pip install qiskit
+
+category: Other
+tags: [quantum, sdk, python, ibm, circuits, machine-learning, simulators]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Quantum experiments need a portable circuit IR, transpilers, and a
+  backend API, not one-off notebook math. Qiskit is the standard Python
+  SDK so researchers can compose circuits, optimize them, and run on
+  simulators or IBM Quantum hardware.
+
+use_cases:
+  - Build and transpile a variational circuit for a quantum machine learning experiment
+  - Run primitives such as Sampler and Estimator against a local simulator
+  - Submit optimized circuits to IBM Quantum backends from Python
+  - Teach quantum computing with Qiskit's circuit library and visualization tools
+  - Compile the same circuit for multiple hardware targets without rewriting gates

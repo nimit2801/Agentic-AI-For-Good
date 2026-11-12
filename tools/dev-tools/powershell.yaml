@@ -1,0 +1,28 @@
+name: PowerShell
+description: Cross-platform shell and scripting language from Microsoft. Object pipelines, remoting, and a large module ecosystem make it the default automation surface for Windows and a common glue layer for cloud and ML ops scripts.
+tagline: Cross-platform shell for Windows, Linux, and macOS automation
+
+github_url: https://github.com/PowerShell/PowerShell
+website_url: https://learn.microsoft.com/powershell/
+docs_url: https://learn.microsoft.com/powershell/
+
+install_command: brew install powershell
+
+category: Dev Tools
+tags: [shell, scripting, windows, automation, cli, microsoft, devops]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  POSIX shells pass text; Windows automation needs objects, remoting, and
+  modules. PowerShell is a cross-platform shell so ML and platform teams
+  can script Azure, GPU hosts, and CI with structured pipelines instead of
+  parsing command output.
+
+use_cases:
+  - Automate Windows GPU host setup and driver checks with object pipelines
+  - Remotely manage Azure or on-prem machines used for training jobs
+  - Write CI scripts that call REST APIs and parse JSON without fragile text scraping
+  - Share modules for dataset sync, artifact upload, and environment bootstrap
+  - Run the same automation on Windows, Linux, and macOS from one script

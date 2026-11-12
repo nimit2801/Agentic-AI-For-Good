@@ -1,0 +1,28 @@
+name: Moonshine
+description: Open-source on-device toolkit for real-time voice agents. Speech-to-text and text-to-speech run locally across Python, JavaScript, mobile, and Raspberry Pi, with streaming models from Whisper-class accuracy down to 1MB footprints.
+tagline: On-device streaming speech-to-text and text-to-speech toolkit
+
+github_url: https://github.com/moonshine-ai/moonshine
+website_url: https://moonshine.ai
+docs_url: https://moonshine-voice.readthedocs.io
+
+install_command: pip install moonshine-voice
+
+category: Other
+tags: [speech-to-text, text-to-speech, voice-agents, on-device, streaming, python, asr, tts]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Cloud ASR and TTS add latency, cost, and privacy risk for live voice
+  agents. Moonshine runs streaming speech models on-device so you can
+  transcribe while the user is still talking and synthesize replies
+  without an API key.
+
+use_cases:
+  - Stream microphone audio into on-device English or multilingual speech-to-text
+  - Build a local voice agent that transcribes and speaks without cloud APIs
+  - Ship a tiny 1MB speech model on Raspberry Pi or mobile
+  - Add JavaScript or WASM speech I/O to a browser voice interface
+  - Swap Whisper-class accuracy for lower-latency streaming recognition

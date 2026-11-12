@@ -1,0 +1,28 @@
+name: tslearn
+description: Python machine learning toolkit for time series. Provides clustering, classification, regression, and metric learning with DTW and shapelets so you can model sequences without flattening them into tabular features.
+tagline: scikit-learn style machine learning for time series
+
+github_url: https://github.com/tslearn-team/tslearn
+website_url: https://tslearn.readthedocs.io
+docs_url: https://tslearn.readthedocs.io
+
+install_command: pip install tslearn
+
+category: Data
+tags: [time-series, clustering, dtw, shapelets, classification, python, scikit-learn]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Tabular estimators drop time structure, and writing Dynamic Time Warping
+  or shapelet code from scratch is error-prone. tslearn gives scikit-learn
+  compatible clustering, classification, and regression estimators that
+  operate on sequences directly.
+
+use_cases:
+  - Cluster sensor traces with TimeSeriesKMeans and DTW barycenters
+  - Classify variable-length series with shapelet or KNN-DTW estimators
+  - Resample, scale, and impute time series before a forecasting pipeline
+  - Learn a metric on labeled sequences for nearest-neighbor retrieval
+  - Compare DTW clustering against Euclidean k-means on the same dataset
