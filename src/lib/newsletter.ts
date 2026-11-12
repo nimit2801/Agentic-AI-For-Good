@@ -92,7 +92,8 @@ export async function getSpotlightTool(date: string): Promise<NewsletterTool | n
   const end = new Date(start.getTime() + DAY_MS)
   const { data } = await supabase
     .from('tools')
-    .select('name, slug, tagline, description, category, pricing, is_open_source, github_stars, use_cases, install_command, url')
+    // select('*'): optional columns like use_cases/install_command don't exist on every deploy of the tools table
+    .select('*')
     .gte('spotlight_sent_at', start.toISOString())
     .lt('spotlight_sent_at', end.toISOString())
     .limit(1)

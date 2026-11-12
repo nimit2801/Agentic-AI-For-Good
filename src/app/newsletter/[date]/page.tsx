@@ -11,7 +11,7 @@ import {
   type NewsletterTool,
 } from '@/lib/newsletter'
 
-export const revalidate = 3600
+export const revalidate = 300
 
 interface Props {
   params: Promise<{ date: string }>

@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 import { listIssues, SITE_URL } from '@/lib/newsletter'
 
-export const revalidate = 600
+export const dynamic = 'force-dynamic'
 
 export async function GET() {
   const [latest] = await listIssues()
