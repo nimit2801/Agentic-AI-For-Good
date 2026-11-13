@@ -1,0 +1,26 @@
+name: JARVIS-Tools
+description: Open-source Python package for data-driven atomistic materials design from NIST JARVIS. JARVIS-Tools provides datasets, descriptors, and workflows so materials informatics teams query computed properties and train models on a common atomistic corpus.
+tagline: Data-driven atomistic materials design toolkit
+
+github_url: https://github.com/usnistgov/jarvis
+website_url: https://jarvis.nist.gov
+docs_url: https://pages.nist.gov/jarvis/
+install_command: pip install jarvis-tools
+
+category: Data
+tags: [python, materials-science, datasets, descriptors, nist, atomistic]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Materials ML needs aligned DFT datasets and descriptors, not ad hoc
+  CSV dumps. JARVIS-Tools exposes the NIST JARVIS corpus plus
+  structure and graph features so labs train property models on a
+  documented atomistic collection instead of scraping papers.
+
+use_cases:
+  - Download JARVIS DFT properties as training labels for materials models
+  - Featurize crystals with JARVIS descriptors before supervised learning
+  - Screen candidate structures against JARVIS formation energies and gaps
+  - Build atomistic graphs from JARVIS entries for GNN property prediction
