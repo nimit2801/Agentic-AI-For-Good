@@ -1,0 +1,26 @@
+name: FastQC
+description: Quality-control tool for high-throughput sequencing data that plots per-base quality, GC content, adapter content, and overrepresented sequences so a FASTQ run can be checked before alignment.
+tagline: Per-sample QC plots for sequencing FASTQ files
+
+github_url: https://github.com/s-andrews/FastQC
+website_url: https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
+docs_url: https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/
+install_command: conda install -c bioconda fastqc
+
+category: Data
+tags: [java, bioinformatics, qc, ngs, fastq, genomics]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Raw FASTQ files hide adapter contamination, quality drop-off, and
+  biased GC content until alignment fails. FastQC reads a FASTQ file
+  and produces plots and pass/warn/fail modules so a sequencing run
+  can be rejected or trimmed before it enters a production pipeline.
+
+use_cases:
+  - QC a sequencing lane of FASTQ files before alignment
+  - Detect adapter contamination and overrepresented sequences
+  - Feed FastQC output into MultiQC for a multi-sample report
+  - Compare per-base quality across a core-lab sequencing batch
