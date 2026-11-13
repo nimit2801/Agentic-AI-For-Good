@@ -1,0 +1,26 @@
+name: ParmEd
+description: Python toolkit for reading, editing, and converting molecular mechanics topologies. ParmEd moves parameters between AMBER, GROMACS, CHARMM, and OpenMM so MD and ML potential workflows can mix engines without rewriting force-field files.
+tagline: Inter-package molecular mechanics topology toolkit
+
+github_url: https://github.com/ParmEd/ParmEd
+website_url: https://parmed.github.io/ParmEd
+docs_url: https://parmed.github.io/ParmEd/html/index.html
+install_command: pip install ParmEd
+
+category: Data
+tags: [python, molecular-dynamics, force-fields, topology, amber, gromacs]
+pricing: free
+is_open_source: true
+license: LGPL-2.1
+
+problem_solved: |
+  Every MD engine stores topologies and parameters differently, which
+  blocks multi-engine studies and ML potential training. ParmEd reads
+  and converts those files so a system parameterized in AMBER can run
+  in OpenMM or GROMACS without a manual rewrite.
+
+use_cases:
+  - Convert AMBER prmtop/inpcrd systems into GROMACS or OpenMM inputs
+  - Edit charges, atom types, and residues in an existing topology
+  - Validate force-field parameters before a production MD run
+  - Bridge classical MM topologies into Python ML potential pipelines

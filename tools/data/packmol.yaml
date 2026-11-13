@@ -1,0 +1,26 @@
+name: Packmol
+description: Packmol builds initial molecular configurations by packing molecules into defined regions without overlap. It prepares mixed solvents, membranes, and boxes for MD so simulation and ML-force-field workflows start from valid geometries.
+tagline: Pack molecules into overlap-free MD starting boxes
+
+github_url: https://github.com/m3g/packmol
+website_url: https://m3g.github.io/packmol
+docs_url: https://m3g.github.io/packmol
+install_command: pip install packmol
+
+category: Data
+tags: [molecular-dynamics, packing, python, fortran, simulation-setup, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  MD engines need non-overlapping starting coordinates for mixtures,
+  membranes, and solvated proteins. Packmol packs molecules into
+  spheres, boxes, and planes so labs generate valid initial
+  configurations instead of hand-editing PDB files.
+
+use_cases:
+  - Build mixed-solvent boxes around a ligand before MD equilibration
+  - Pack lipid bilayers and proteins into membrane simulation systems
+  - Generate diverse starting configurations for ML force-field training
+  - Create spherical droplets or slabs as inputs to GROMACS or LAMMPS

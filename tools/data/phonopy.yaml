@@ -1,0 +1,26 @@
+name: phonopy
+description: Open-source phonon calculation code for crystals. phonopy computes phonon dispersions, thermal properties, and force constants from DFT displacements so materials ML pipelines can add vibrational labels without writing lattice-dynamics solvers.
+tagline: Phonon and lattice-dynamics calculations for crystals
+
+github_url: https://github.com/phonopy/phonopy
+website_url: https://phonopy.github.io/phonopy/
+docs_url: https://phonopy.github.io/phonopy/
+install_command: pip install phonopy
+
+category: Data
+tags: [python, phonons, materials-science, dft, lattice-dynamics, crystals]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Vibrational properties of crystals need force constants and Brillouin-zone
+  sampling that most DFT codes do not expose as a simple workflow. phonopy
+  drives finite-displacement phonon calculations and post-processing so
+  labs get dispersions, DOS, and free energies for materials datasets.
+
+use_cases:
+  - Compute phonon band structures from VASP or Quantum ESPRESSO displacement sets
+  - Estimate vibrational free energy and heat capacity for phase-stability models
+  - Generate force-constant data that trains ML interatomic potentials
+  - Compare experimental Raman or INS peaks against calculated phonon modes
