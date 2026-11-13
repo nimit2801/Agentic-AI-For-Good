@@ -1,0 +1,26 @@
+name: MEGAHIT
+description: MEGAHIT is an ultra-fast, memory-efficient NGS assembler optimized for metagenomes. It also assembles isolate and single-cell genomes, so labs can reconstruct contigs from large shotgun datasets without the RAM cost of older de Bruijn assemblers.
+tagline: Memory-efficient assembler for metagenomes and NGS
+
+github_url: https://github.com/voutcn/megahit
+website_url: https://github.com/voutcn/megahit
+docs_url: https://github.com/voutcn/megahit
+install_command: conda install -c bioconda megahit
+
+category: Data
+tags: [genome-assembly, metagenomics, ngs, bioinformatics, sequencing]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Metagenome assembly used to require servers with hundreds of gigabytes of
+  RAM. MEGAHIT uses a compact succinct de Bruijn graph so groups can
+  assemble large environmental or clinical shotgun datasets on modest
+  hardware, then feed contigs into binning, MAG recovery, or ML pipelines.
+
+use_cases:
+  - Assemble environmental or gut metagenomes from Illumina shotgun reads
+  - Reconstruct isolate or single-cell genomes when memory is limited
+  - Generate contigs for MAG binning and taxonomic profiling
+  - Run assembly on a workstation instead of a large shared-memory node
