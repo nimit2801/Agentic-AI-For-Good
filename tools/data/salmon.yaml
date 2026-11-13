@@ -1,0 +1,26 @@
+name: Salmon
+description: Transcript-level RNA-seq quantification using selective alignment so expression pipelines estimate isoform abundances from reads without a full splice-aware genome alignment.
+tagline: Fast transcript quantification from RNA-seq reads
+
+github_url: https://github.com/COMBINE-lab/salmon
+website_url: https://combine-lab.github.io/salmon
+docs_url: https://combine-lab.github.io/salmon/getting_started/
+install_command: conda install -c bioconda -c conda-forge salmon
+
+category: Data
+tags: [cpp, bioinformatics, rna-seq, quantification, transcriptome, ngs]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  RNA-seq abundance estimates usually wait on a slow genome alignment
+  that still mishandles multi-mapping isoforms. Salmon uses selective
+  alignment against a transcriptome to quantify transcripts quickly
+  and accurately so differential expression can start from counts.
+
+use_cases:
+  - Quantify transcript abundances from bulk RNA-seq FASTQ files
+  - Build a salmon index from a transcriptome FASTA for a new species
+  - Feed transcript counts into DESeq2 or similar DE workflows
+  - Compare isoform expression without a full STAR or HISAT2 alignment

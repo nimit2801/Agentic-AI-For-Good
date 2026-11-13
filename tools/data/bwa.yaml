@@ -1,0 +1,26 @@
+name: BWA
+description: Burrows-Wheeler Aligner maps short DNA sequencing reads to a large reference genome with BWA-MEM, BWA-backtrack, and BWA-SW so variant and RNA-seq pipelines can start from BAM alignments.
+tagline: Short-read alignment against large reference genomes
+
+github_url: https://github.com/lh3/bwa
+website_url: https://github.com/lh3/bwa
+docs_url: https://github.com/lh3/bwa
+install_command: conda install -c bioconda bwa
+
+category: Data
+tags: [c, bioinformatics, alignment, ngs, genomics, short-read]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Short Illumina reads must be placed on a human-scale reference before
+  variant calling, but naive alignment is too slow for production NGS.
+  BWA uses the Burrows-Wheeler transform to map reads quickly and
+  accurately so pipelines can produce SAM/BAM without a custom aligner.
+
+use_cases:
+  - Align whole-genome short reads to GRCh38 before variant calling
+  - Map exome or targeted-panel reads for clinical NGS analysis
+  - Produce BAM inputs for GATK, FreeBayes, or similar callers
+  - Index a custom reference and align amplicon or microbial reads
