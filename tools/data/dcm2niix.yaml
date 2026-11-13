@@ -1,0 +1,27 @@
+name: dcm2niix
+description: dcm2niix converts DICOM medical images to NIfTI, the format most neuroimaging and ML pipelines expect. It handles modern scanner dialects, BIDS sidecars, and batch conversion so labs can turn hospital DICOMs into analysis-ready volumes without a GUI.
+tagline: DICOM to NIfTI converter for neuroimaging pipelines
+
+github_url: https://github.com/rordenlab/dcm2niix
+website_url: https://www.nitrc.org/plugins/mwiki/index.php/dcm2nii:MainPage
+docs_url: https://www.nitrc.org/plugins/mwiki/index.php/dcm2nii:MainPage
+install_command: pip install dcm2niix
+
+category: Data
+tags: [dicom, nifti, neuroimaging, mri, bids, medical-imaging]
+pricing: free
+is_open_source: true
+license: BSD
+
+problem_solved: |
+  Scanner DICOM is vendor-specific and poorly suited to research pipelines
+  that expect NIfTI plus JSON metadata. dcm2niix converts those series,
+  writes BIDS sidecars, and preserves diffusion and fMRI details so labs
+  can ingest hospital data into FSL, AFNI, or ML training sets without
+  hand-fixing headers.
+
+use_cases:
+  - Convert MRI DICOM series to NIfTI for FSL, AFNI, or PyTorch loaders
+  - Generate BIDS JSON sidecars during batch conversion of a study
+  - Preserve diffusion b-vectors and fMRI timing when leaving the scanner
+  - Script hospital-to-research image ingestion on Linux, macOS, and Windows

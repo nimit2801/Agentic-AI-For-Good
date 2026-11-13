@@ -1,0 +1,26 @@
+name: Kraken2
+description: Kraken2 is a taxonomic sequence classifier that assigns shotgun reads to taxa using k-mers. It is a rewrite of Kraken 1 with a smaller, faster index so metagenomics pipelines can label millions of reads against RefSeq-scale databases.
+tagline: k-mer taxonomic classifier for metagenomic reads
+
+github_url: https://github.com/DerrickWood/kraken2
+website_url: https://github.com/DerrickWood/kraken2
+docs_url: https://github.com/DerrickWood/kraken2/blob/master/docs/MANUAL.markdown
+
+category: Data
+tags: [metagenomics, taxonomy, k-mer, sequencing, bioinformatics, genomics]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Shotgun metagenomes produce millions of short reads that need a taxon
+  before they are useful as data. Kraken2 matches k-mers to a compact
+  taxonomic index so labs can classify reads against large reference
+  collections without the memory cost of Kraken 1, then report species
+  composition for downstream ML or surveillance.
+
+use_cases:
+  - Classify Illumina or Nanopore reads against a Kraken2 taxonomic database
+  - Estimate species composition of clinical or environmental metagenomes
+  - Build custom Kraken2 indexes from selected RefSeq genomes
+  - Feed taxonomic labels into microbiome ML or outbreak surveillance pipelines

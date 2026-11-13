@@ -1,0 +1,26 @@
+name: Gnina
+description: Gnina is a molecular docking program that scores and optimizes ligands with convolutional neural networks. It is a fork of smina and AutoDock Vina that adds deep-learning scoring so structure-based screening can rank poses with CNN models instead of classical scoring only.
+tagline: CNN-scored molecular docking from AutoDock Vina
+
+github_url: https://github.com/gnina/gnina
+website_url: https://github.com/gnina/gnina
+docs_url: https://github.com/gnina/gnina
+
+category: Other
+tags: [c++, cuda, molecular-docking, drug-discovery, cnn, vina]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Classical docking scores often miss pose quality that 3D CNNs can see in
+  protein-ligand density. Gnina keeps a Vina-style search while scoring and
+  optimizing ligands with convolutional networks, so screening campaigns can
+  rerank docks with learned models without abandoning the familiar docking
+  workflow.
+
+use_cases:
+  - Dock ligands into a protein pocket with CNN scoring and optimization
+  - Rerank AutoDock Vina poses using Gnina convolutional scoring
+  - Run virtual screening campaigns that mix classical search with deep scores
+  - Benchmark structure-based drug design models on cross-docked complexes
