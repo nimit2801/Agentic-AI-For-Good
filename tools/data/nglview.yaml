@@ -1,0 +1,26 @@
+name: NGLView
+description: Jupyter widget that wraps NGL so Python sessions can interactively view molecular structures and MD trajectories. NGLView loads PDB, mmCIF, and trajectory files into a WebGL viewer inside notebooks used for structural biology and ML-on-structure work.
+tagline: Interactive molecular viewer widget for Jupyter
+
+github_url: https://github.com/nglviewer/nglview
+website_url: https://nglviewer.org/nglview/latest/
+docs_url: https://nglviewer.org/nglview/latest/
+install_command: pip install nglview
+
+category: Data
+tags: [python, jupyter, molecular-visualization, trajectories, pdb, widget]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Structure and trajectory analysis in Python still needs a 3D view.
+  NGLView puts an NGL WebGL viewer in Jupyter so MDAnalysis, MDTraj,
+  and BioPython pipelines can inspect conformations without exporting
+  files to a separate desktop program.
+
+use_cases:
+  - Visualize MD trajectories from MDAnalysis or MDTraj inside a Jupyter notebook
+  - Inspect predicted protein structures next to the Python code that loaded them
+  - Share notebook reports that include interactive 3D molecular views
+  - Color residues by ML scores, pLDDT, or experimental B-factors in the widget
