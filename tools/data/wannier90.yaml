@@ -1,0 +1,26 @@
+name: Wannier90
+description: Wannier90 generates maximally-localised Wannier functions from electronic-structure calculations. Codes use it as a standalone program or a Fortran, C, and Python library to compute interpolations, topology, and transport without repeating expensive Brillouin-zone sampling.
+tagline: Maximally-localised Wannier functions for materials
+
+github_url: https://github.com/wannier-developers/wannier90
+website_url: https://www.wannier.org
+docs_url: https://wannier90.readthedocs.io/
+
+category: Data
+tags: [fortran, wannier, electronic-structure, materials-science, dft, interpolation]
+pricing: free
+is_open_source: true
+license: LGPL-2.1
+
+problem_solved: |
+  Dense k-point sampling of electronic properties is expensive when every
+  point needs a full DFT Hamiltonian. Wannier90 builds maximally-localised
+  Wannier functions so groups can interpolate bands, Berry curvature, and
+  transport quantities from a coarse DFT mesh, and DFT codes can drive the
+  same engine in-memory through the library API.
+
+use_cases:
+  - Interpolate electronic band structures from a coarse DFT k-mesh
+  - Compute Berry curvature, anomalous Hall, and related topological quantities
+  - Generate Wannier-based tight-binding models for transport or ML Hamiltonians
+  - Call Wannier90 from Python or Fortran as an in-memory library after DFT
