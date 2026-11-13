@@ -1,0 +1,25 @@
+name: matminer
+description: Python library for data mining in materials science. matminer featurizes crystal structures, compositions, and band structures into ML-ready tables so materials informatics pipelines can train models without hand-rolling descriptors.
+tagline: Featurize materials data for machine learning
+
+github_url: https://github.com/hackingmaterials/matminer
+website_url: https://hackingmaterials.lbl.gov/matminer/
+docs_url: https://hackingmaterials.lbl.gov/matminer/
+install_command: pip install matminer
+
+category: Data
+tags: [python, materials-science, featurization, machine-learning, crystals, pymatgen]
+pricing: free
+is_open_source: true
+
+problem_solved: |
+  Materials ML needs numeric features from structures and compositions,
+  not raw CIF files. matminer implements dozens of composition, site,
+  and structure featurizers on top of pymatgen so datasets become
+  tables that scikit-learn or AutoML models can train on.
+
+use_cases:
+  - Convert crystal structures into Magpie or site-statistics features for property models
+  - Build composition-based descriptors for formation-energy or band-gap prediction
+  - Retrieve and featurize datasets from Materials Project for supervised learning
+  - Join experimental tabular data with computed structure features in one pipeline

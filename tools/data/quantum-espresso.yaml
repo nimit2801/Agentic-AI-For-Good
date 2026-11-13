@@ -1,0 +1,25 @@
+name: Quantum ESPRESSO
+description: Open-source plane-wave DFT suite for electronic-structure calculations on materials. Quantum ESPRESSO computes ground states, phonons, and spectroscopies for crystals and molecules so materials ML pipelines can generate first-principles labels at scale.
+tagline: Plane-wave DFT for materials electronic structure
+
+github_url: https://github.com/QEF/q-e
+website_url: https://www.quantum-espresso.org
+docs_url: https://www.quantum-espresso.org/documentation/
+
+category: Data
+tags: [dft, electronic-structure, materials-science, plane-wave, fortran, open-source]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Materials models need DFT energies, forces, and spectra, but closed
+  codes lock labs into licenses. Quantum ESPRESSO is a free plane-wave
+  suite that produces those labels for crystals and interfaces, so
+  ML potentials and high-throughput screening can run on open software.
+
+use_cases:
+  - Compute DFT energies and forces to train ML interatomic potentials
+  - Run phonon calculations for thermal and spectroscopic materials properties
+  - Generate high-throughput crystal datasets for formation-energy models
+  - Study surfaces and defects that feed catalysis and battery materials ML
