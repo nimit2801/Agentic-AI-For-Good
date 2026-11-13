@@ -1,0 +1,26 @@
+name: OpenFF Toolkit
+description: Python toolkit that assigns SMIRNOFF force-field parameters to molecules. OpenFF Toolkit turns SMILES and 3D conformers into parameterized systems for OpenMM so biomolecular and ML force-field work uses an open, extensible parameter engine.
+tagline: Open force-field parameterization for molecular simulation
+
+github_url: https://github.com/openforcefield/openff-toolkit
+website_url: https://openforcefield.org
+docs_url: https://docs.openforcefield.org
+install_command: pip install openff-toolkit
+
+category: Data
+tags: [python, force-fields, openmm, smirks, molecular-mechanics, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Classical MD still depends on closed or hard-to-extend force fields.
+  OpenFF Toolkit applies SMIRNOFF parameters from chemical perception
+  rules so labs parameterize small molecules and proteins with an
+  open specification that ML force-field projects can also consume.
+
+use_cases:
+  - Parameterize ligands with OpenFF Sage and run them in OpenMM
+  - Assign charges and valence terms from SMILES for high-throughput MD
+  - Combine protein and small-molecule parameters in one OpenMM system
+  - Export parameterized molecules into datasets for ML potential training

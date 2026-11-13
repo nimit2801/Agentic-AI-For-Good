@@ -1,0 +1,25 @@
+name: HOOMD-blue
+description: Particle simulation engine for molecular dynamics and Monte Carlo on GPUs. HOOMD-blue runs coarse-grained soft-matter systems at high throughput so materials and ML teams generate trajectories for polymers, colloids, and many-particle potentials.
+tagline: GPU molecular dynamics and Monte Carlo for soft matter
+
+github_url: https://github.com/glotzerlab/hoomd-blue
+website_url: https://hoomd-blue.readthedocs.io
+docs_url: https://hoomd-blue.readthedocs.io
+
+category: Data
+tags: [molecular-dynamics, gpu, monte-carlo, python, soft-matter, open-source]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Soft-matter MD at colloidal and polymer scales is too slow on CPU
+  engines built for atomistic biomolecules. HOOMD-blue runs GPU
+  molecular dynamics and Monte Carlo with a Python API so labs
+  sample large particle systems and train coarse-grained potentials.
+
+use_cases:
+  - Simulate coarse-grained polymers and colloids on GPUs for materials design
+  - Run Monte Carlo sampling of many-particle systems with a Python driver
+  - Generate trajectories for training ML coarse-grained force fields
+  - Prototype custom pair potentials without rewriting a C++ MD engine
