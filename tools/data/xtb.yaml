@@ -1,0 +1,27 @@
+name: xtb
+description: Semiempirical extended tight-binding program for fast quantum chemistry on large molecules. xtb computes geometries, frequencies, and energies with GFN methods so screening, conformer search, and ML-force-field workflows get DFT-like quality at much lower cost.
+tagline: Fast tight-binding quantum chemistry for large molecules
+
+github_url: https://github.com/grimme-lab/xtb
+website_url: https://xtb-docs.readthedocs.io
+docs_url: https://xtb-docs.readthedocs.io
+install_command: pip install xtb
+
+category: Data
+tags: [quantum-chemistry, tight-binding, python, fortran, conformers, semiempirical]
+pricing: free
+is_open_source: true
+license: LGPL-3.0
+
+problem_solved: |
+  DFT is too slow for high-throughput geometry and conformer work on
+  drug-sized molecules. xtb runs GFN tight-binding calculations that
+  give reliable structures and energies in seconds, so screening and
+  ML dataset generation can cover thousands of molecules without a
+  full DFT budget.
+
+use_cases:
+  - Optimize ligand geometries before docking or ML property prediction
+  - Run GFN2-xTB conformer searches to expand training sets for ML potentials
+  - Compute frequencies and thermochemistry as a cheap prefilter to DFT
+  - Drive Python screening loops through the xtb API for batch quantum chemistry

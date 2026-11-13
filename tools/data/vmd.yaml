@@ -1,0 +1,23 @@
+name: VMD
+description: Desktop molecular visualization program from UIUC for analyzing MD trajectories, volumetric maps, and biomolecular structures. VMD loads GROMACS, NAMD, and PDB files so simulation and ML-structure teams inspect dynamics, density, and predicted folds.
+tagline: Visualize and analyze molecular dynamics trajectories
+
+website_url: https://www.ks.uiuc.edu/Research/vmd/
+docs_url: https://www.ks.uiuc.edu/Research/vmd/current/ug/
+
+category: Data
+tags: [molecular-visualization, molecular-dynamics, structural-biology, pdb, trajectories, gpu]
+pricing: free
+is_open_source: true
+
+problem_solved: |
+  MD engines produce huge trajectory files that are hard to inspect as raw
+  coordinates. VMD renders proteins, lipids, and volumetric data interactively,
+  so labs debug simulations, compare ML-predicted structures, and export
+  publication figures without writing custom graphics code.
+
+use_cases:
+  - Load GROMACS or NAMD trajectories to inspect protein-ligand dynamics frame by frame
+  - Overlay electron density or cryo-EM maps with predicted or experimental coordinates
+  - Script analysis of hydrogen bonds, RMSD, and secondary structure across an MD run
+  - Render publication-quality molecular images and movies from simulation output

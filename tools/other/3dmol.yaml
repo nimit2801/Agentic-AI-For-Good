@@ -1,0 +1,28 @@
+name: 3Dmol.js
+description: WebGL molecular graphics library for embedding interactive 3D structures in browsers and notebooks. 3Dmol.js renders PDB, SDF, and CIF files as cartoons, surfaces, and sticks so web apps and Jupyter sessions show proteins without a desktop viewer.
+tagline: WebGL molecular visualization for the browser
+
+github_url: https://github.com/3dmol/3Dmol.js
+website_url: https://3dmol.org
+docs_url: https://3dmol.org/doc/index.html
+install_command: |
+  npm install 3dmol
+  pip install py3Dmol
+
+category: Other
+tags: [javascript, webgl, molecular-visualization, jupyter, pdb, typescript]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Sharing 3D biomolecular structures usually means installing a desktop
+  viewer. 3Dmol.js draws proteins, ligands, and surfaces in the browser
+  with WebGL, so dashboards, papers, and notebooks can show interactive
+  structures with no plugin and no local graphics application.
+
+use_cases:
+  - Embed an interactive PDB viewer in a web app or documentation page
+  - Display AlphaFold or docking poses inside a Jupyter notebook with py3Dmol
+  - Render ligand sticks and protein cartoons for structure-based ML demos
+  - Build custom coloring and selection UIs on top of the 3Dmol.js API
