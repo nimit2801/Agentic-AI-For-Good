@@ -1,0 +1,27 @@
+name: TorchDrug
+description: TorchDrug is a PyTorch toolbox for graph machine learning in drug discovery. It implements molecules, proteins, and datasets as PyTorch objects so teams can train property predictors, generative models, and retrosynthesis systems with GPU-backed graph operations.
+tagline: PyTorch graph ML toolbox for drug discovery
+
+github_url: https://github.com/DeepGraphLearning/torchdrug
+website_url: https://torchdrug.ai/
+docs_url: https://deepgraphlearning.github.io/torchdrug-site/docs
+install_command: pip install torchdrug
+
+category: Other
+tags: [python, pytorch, drug-discovery, graph-neural-networks, molecules, proteins]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Drug-discovery ML mixes molecules, proteins, and graphs in ways that
+  generic PyTorch data loaders do not cover. TorchDrug provides GPU graph
+  operations, standard datasets, and task APIs so practitioners can
+  prototype property prediction, generation, and protein modeling without
+  writing a custom molecular graph stack.
+
+use_cases:
+  - Train molecular property predictors on standard drug-discovery benchmarks
+  - Build graph generative models for de novo molecule design
+  - Model proteins and protein-ligand tasks with TorchProtein components
+  - Prototype retrosynthesis or reaction prediction research in PyTorch

@@ -1,0 +1,26 @@
+name: SPAdes
+description: SPAdes is a genome assembler for Illumina and IonTorrent reads, with hybrid modes that add PacBio or Nanopore long reads. It ships pipelines for isolates, single-cell, metagenomes, and transcriptomes so labs can assemble genomes without stitching several assemblers together.
+tagline: Genome assembler for short and hybrid long-read data
+
+github_url: https://github.com/ablab/spades
+website_url: https://ablab.github.io/spades/
+docs_url: https://ablab.github.io/spades/
+
+category: Data
+tags: [genome-assembly, bioinformatics, illumina, nanopore, metagenomics, sequencing]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Short-read assembly fails on repeats, plasmids, and mixed communities
+  unless the graph algorithm matches the sample type. SPAdes provides
+  dedicated pipelines for isolates, single-cell, metagenomes, and RNA
+  plus hybrid long-read support so groups can assemble bacterial and
+  metagenomic genomes from one toolkit.
+
+use_cases:
+  - Assemble bacterial isolate genomes from Illumina paired-end reads
+  - Run hybrid assembly that supplements short reads with Nanopore or PacBio
+  - Assemble metagenomes or single-cell MDA datasets with dedicated modes
+  - Recover plasmids or RNA viruses as part of a sequencing analysis pipeline
