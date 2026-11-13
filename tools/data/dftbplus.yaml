@@ -1,0 +1,27 @@
+name: DFTB+
+description: DFTB+ is a package for fast quantum-mechanical atomistic simulations using density-functional tight-binding. It runs as a standalone program or a library so materials pipelines can compute electronic structure, dynamics, and properties at DFTB cost instead of full DFT.
+tagline: Fast DFTB atomistic simulations for materials
+
+github_url: https://github.com/dftbplus/dftbplus
+website_url: https://www.dftbplus.org
+docs_url: https://www.dftbplus.org
+install_command: conda install -c conda-forge dftbplus
+
+category: Data
+tags: [fortran, dftb, materials-science, electronic-structure, atomistic, simulations]
+pricing: free
+is_open_source: true
+license: LGPL-3.0
+
+problem_solved: |
+  Full DFT is too slow for large systems, long molecular dynamics, and
+  high-throughput screening of thousands of structures. DFTB+ implements
+  density-functional tight-binding with self-consistent charge, spin, and
+  many-body options so labs get quantum-level energies and forces at a
+  fraction of DFT cost, and can embed the same engine as a library in other codes.
+
+use_cases:
+  - Run SCC-DFTB geometry optimization and MD on systems too large for routine DFT
+  - Generate approximate electronic structure labels for materials ML datasets
+  - Embed DFTB+ as a library inside custom simulation or screening pipelines
+  - Compare DFTB and DFT energies when building interatomic potential training sets

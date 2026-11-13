@@ -1,0 +1,27 @@
+name: atomate2
+description: atomate2 is a Python library of computational materials science workflows built on pymatgen, custodian, and jobflow. It turns standard DFT jobs into composable flows for band structures, phonons, elasticity, and defects that scale from one material to large databases.
+tagline: Composable DFT workflows for materials science
+
+github_url: https://github.com/materialsproject/atomate2
+website_url: https://materialsproject.github.io/atomate2/
+docs_url: https://materialsproject.github.io/atomate2/
+install_command: pip install atomate2
+
+category: Data
+tags: [python, materials-science, dft, workflows, pymatgen, jobflow]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  High-throughput materials DFT needs more than a single calculation. Each
+  property requires chained jobs, error handling, and consistent outputs.
+  atomate2 packages those sequences as Maker objects so labs can relax a
+  structure, compute a band structure, or run phonons with recorded inputs
+  and results that scale from one compound to tens of thousands.
+
+use_cases:
+  - Run VASP relax plus band-structure and density-of-states flows on a crystal
+  - Compute phonons, elastic tensors, or defect formation energies in batch
+  - Chain custom makers into multi-step screening campaigns with jobflow
+  - Build queryable databases of DFT properties for materials ML datasets
