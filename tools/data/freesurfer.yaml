@@ -1,0 +1,24 @@
+name: FreeSurfer
+description: Open-source neuroimaging suite for cortical reconstruction and analysis of MRI. FreeSurfer segments brains, inflates surfaces, and maps thickness so neuroscience and ML teams turn raw scans into surface meshes and regional features.
+tagline: MRI cortical reconstruction and brain morphometry
+
+github_url: https://github.com/freesurfer/freesurfer
+website_url: https://surfer.nmr.mgh.harvard.edu
+docs_url: https://surfer.nmr.mgh.harvard.edu/fswiki
+
+category: Data
+tags: [neuroimaging, mri, brain, morphometry, segmentation, open-source]
+pricing: free
+is_open_source: true
+
+problem_solved: |
+  Raw MRI volumes are not ready for morphometry or surface-based ML.
+  FreeSurfer reconstructs cortical surfaces and subcortical labels so
+  labs get thickness, area, and ROI tables that can train disease
+  and aging models without hand-tracing anatomy.
+
+use_cases:
+  - Reconstruct cortical surfaces and measure thickness from T1-weighted MRI
+  - Extract regional volumes as features for neurological ML classifiers
+  - Map fMRI or PET data onto inflated surfaces for group analysis
+  - Build standardized brain meshes for geometric deep learning on cortex

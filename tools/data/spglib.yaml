@@ -1,0 +1,26 @@
+name: spglib
+description: C library with Python bindings for crystal symmetry detection. spglib finds space groups, primitive cells, and irreducible k-points so materials pipelines standardize structures before DFT or ML featurization.
+tagline: Crystal symmetry and space-group library
+
+github_url: https://github.com/spglib/spglib
+website_url: https://spglib.readthedocs.io
+docs_url: https://spglib.readthedocs.io
+install_command: pip install spglib
+
+category: Data
+tags: [python, crystals, symmetry, space-group, materials-science, c]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Crystal datasets mix conventional cells, primitive cells, and noisy
+  coordinates, which breaks DFT k-grids and ML structure matching.
+  spglib detects space groups and reduces cells so every structure
+  is standardized before simulation or featurization.
+
+use_cases:
+  - Assign space groups to CIF files before high-throughput DFT
+  - Reduce supercells to primitive cells for cheaper electronic-structure jobs
+  - Generate irreducible k-point meshes consistent with crystal symmetry
+  - Deduplicate materials datasets by standardized symmetry fingerprints
