@@ -1,0 +1,26 @@
+name: PLUMED
+description: Open-source plugin for enhanced sampling and analysis in molecular dynamics. PLUMED adds collective variables, metadynamics, and free-energy methods to engines such as GROMACS and LAMMPS so rare events and ML-collective-variable work become practical.
+tagline: Enhanced sampling and free-energy analysis for MD
+
+github_url: https://github.com/plumed/plumed2
+website_url: https://www.plumed.org
+docs_url: https://www.plumed.org/doc
+install_command: pip install plumed
+
+category: Data
+tags: [molecular-dynamics, enhanced-sampling, metadynamics, free-energy, python, collective-variables]
+pricing: free
+is_open_source: true
+license: LGPL-3.0
+
+problem_solved: |
+  Unbiased MD rarely samples rare conformational events on lab timescales.
+  PLUMED plugs into production MD engines and drives sampling along
+  collective variables, so free-energy surfaces and ML-learned CVs can
+  be computed without rewriting the simulator.
+
+use_cases:
+  - Run metadynamics on a protein conformational change with GROMACS plus PLUMED
+  - Define custom collective variables for ligand unbinding free-energy estimates
+  - Analyze existing trajectories with PLUMED CVs without rerunning MD
+  - Couple ML-learned collective variables to enhanced sampling in production engines

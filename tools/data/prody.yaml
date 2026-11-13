@@ -1,0 +1,26 @@
+name: ProDy
+description: Python package for protein structure and dynamics analysis. ProDy compares ensembles, computes normal modes, and mines PDB dynamics so structural biology and ML teams quantify flexibility without writing custom linear-algebra pipelines.
+tagline: Protein structure and dynamics analysis in Python
+
+github_url: https://github.com/prody/ProDy
+website_url: https://www.bahargroup.org/prody
+docs_url: https://www.bahargroup.org/prody/tutorials.html
+install_command: pip install ProDy
+
+category: Data
+tags: [python, structural-biology, protein-dynamics, normal-modes, pdb, ensemble]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Protein flexibility is hard to measure from a single PDB snapshot.
+  ProDy analyzes conformational ensembles and elastic network models
+  so labs extract principal motions, compare mutants, and feed
+  dynamics features into ML models of function and binding.
+
+use_cases:
+  - Compute ANM or GNM normal modes to identify flexible regions of a protein
+  - Compare NMR or MD ensembles with PCA to find dominant conformational changes
+  - Fetch and analyze related PDB structures as a dynamics ensemble
+  - Export residue mobility scores as features for function or allostery models
