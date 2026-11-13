@@ -1,0 +1,26 @@
+name: seqkit
+description: Cross-platform toolkit for FASTA and FASTQ manipulation that greps, converts, samples, and stats sequence files so bioinformatics pipelines can reshape reads without slow custom scripts.
+tagline: Ultrafast FASTA and FASTQ file toolkit
+
+github_url: https://github.com/shenwei356/seqkit
+website_url: https://bioinf.shenwei.me/seqkit
+docs_url: https://bioinf.shenwei.me/seqkit/usage/
+install_command: conda install -c bioconda seqkit
+
+category: Data
+tags: [go, bioinformatics, fasta, fastq, ngs, sequences]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  FASTA and FASTQ files need subsetting, format conversion, and stats
+  long before alignment, but ad-hoc scripts choke on large gzipped
+  files. seqkit provides a fast, streaming CLI for grep, sample, convert,
+  and stat so sequence wrangling stays in one tool.
+
+use_cases:
+  - Compute length and GC stats on a multi-gigabyte FASTQ
+  - Extract records by ID or sequence pattern from a FASTA
+  - Sample a subset of reads for a quick pipeline test
+  - Convert between FASTA and FASTQ and split files by size

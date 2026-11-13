@@ -1,0 +1,25 @@
+name: DeepVariant
+description: Deep-learning variant caller that turns aligned NGS reads into SNP and indel calls using a convolutional network, so germline pipelines can genotype without a hand-tuned statistical caller.
+tagline: Neural-network germline variant calling from NGS
+
+github_url: https://github.com/google/deepvariant
+website_url: https://github.com/google/deepvariant
+docs_url: https://github.com/google/deepvariant/blob/r1.9/docs/deepvariant-quick-start.md
+
+category: Data
+tags: [python, bioinformatics, variants, deep-learning, ngs, genomics]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Statistical variant callers need per-sequencer tuning and still miss
+  or overcall indels on noisy data. DeepVariant encodes pileups as
+  images and classifies SNPs and indels with a neural net so germline
+  calling stays accurate across Illumina, HiFi, and related chemistries.
+
+use_cases:
+  - Call germline SNPs and indels from an Illumina WGS BAM
+  - Genotype PacBio HiFi or other long-read alignments
+  - Run DeepVariant in Docker as a step in a production WGS pipeline
+  - Compare neural-net calls against GATK or FreeBayes on a truth set
