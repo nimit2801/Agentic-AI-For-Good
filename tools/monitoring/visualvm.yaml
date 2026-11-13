@@ -1,0 +1,29 @@
+name: VisualVM
+description: VisualVM is an all-in-one Java troubleshooting tool for CPU, memory, threads, and heap dumps on local or remote JVMs. It attaches to running processes, inspects MBeans, and samples or profiles so teams can find leaks and hot methods without a commercial profiler.
+tagline: All-in-one Java process troubleshooting and profiling
+
+github_url: https://github.com/oracle/visualvm
+website_url: https://visualvm.github.io/
+docs_url: https://visualvm.github.io/documentation.html
+
+install_command: brew install --cask visualvm
+
+category: Monitoring
+tags: [java, jvm, profiler, monitoring, heap-dump, threads, troubleshooting]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  JVM services fail in ways logs do not show: leaking heaps, blocked
+  threads, and CPU spikes inside the runtime. VisualVM attaches to a
+  live process, captures thread dumps and heap histograms, and samples
+  CPU so Java model servers and agent workers can be diagnosed with one
+  free tool instead of a pile of JDK command-line utilities.
+
+use_cases:
+  - Attach to a local Java inference or API process and inspect CPU and heap
+  - Capture a heap dump and find retained objects after a memory leak
+  - Sample threads to see which methods block a model-serving JVM
+  - Browse MBeans on a remote JVM that hosts an embedding or agent worker
+  - Compare two process snapshots before and after a suspected regression

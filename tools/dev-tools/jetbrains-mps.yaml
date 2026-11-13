@@ -1,0 +1,29 @@
+name: JetBrains MPS
+description: JetBrains MPS is a language workbench for designing domain-specific languages with projectional editing. You define structure, editor, typesystem, and generator so a DSL compiles to Java or other targets without writing a parser by hand.
+tagline: Projectional language workbench for custom DSLs
+
+github_url: https://github.com/JetBrains/MPS
+website_url: https://www.jetbrains.com/mps/
+docs_url: https://www.jetbrains.com/help/mps/
+
+install_command: brew install --cask mps
+
+category: Dev Tools
+tags: [dsl, language-workbench, jetbrains, java, projectional-editing, ide]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Domain experts need languages that match their concepts, but writing
+  parsers, editors, and generators from scratch is slow and brittle.
+  MPS stores programs as ASTs with projectional editors, so teams ship
+  DSLs for pipelines, configs, or agent specs that generate Java without
+  fighting grammar conflicts.
+
+use_cases:
+  - Design a domain-specific language for ML pipeline or agent configuration
+  - Generate Java from a DSL instead of maintaining a handwritten parser
+  - Build projectional editors so domain experts edit structured models, not raw text
+  - Extend an existing MPS language with new concepts, constraints, and generators
+  - Prototype internal languages for data schemas without a traditional compiler toolchain
