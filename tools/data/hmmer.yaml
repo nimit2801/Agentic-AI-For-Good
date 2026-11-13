@@ -1,0 +1,26 @@
+name: HMMER
+description: HMMER searches biological sequence databases with profile hidden Markov models. Protein family databases and annotation pipelines use it to find remote homologs from a sequence or alignment query with better sensitivity than simple BLAST-style matching.
+tagline: Profile HMM search for protein sequence homologs
+
+github_url: https://github.com/EddyRivasLab/hmmer
+website_url: http://hmmer.org
+docs_url: http://hmmer.org
+install_command: pip install hmmer
+
+category: Data
+tags: [bioinformatics, hmm, protein, sequence-search, genomics, homologs]
+pricing: free
+is_open_source: true
+license: BSD
+
+problem_solved: |
+  Remote protein homologs are easy to miss with k-mer BLAST when families
+  are diverse. HMMER builds profile HMMs from sequences or alignments and
+  searches large databases so annotation pipelines and InterPro-style
+  resources can assign domains with the sensitivity those families need.
+
+use_cases:
+  - Search UniProt or custom protein databases with a profile HMM
+  - Build HMMs from multiple sequence alignments for family annotation
+  - Assign protein domains in genome annotation pipelines
+  - Screen metagenomic proteins for remote homologs of a query family
