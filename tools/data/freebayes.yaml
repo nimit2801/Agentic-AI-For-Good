@@ -1,0 +1,26 @@
+name: FreeBayes
+description: Bayesian haplotype-based variant caller that finds SNPs, indels, and MNPs from aligned NGS reads so germline pipelines can genotype without a pileup-only SNP scanner.
+tagline: Haplotype-based Bayesian variant discovery
+
+github_url: https://github.com/freebayes/freebayes
+website_url: https://github.com/freebayes/freebayes
+docs_url: https://github.com/freebayes/freebayes
+install_command: conda install -c bioconda freebayes
+
+category: Data
+tags: [cpp, bioinformatics, variants, ngs, genotyping, genomics]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Pileup SNP callers miss multi-nucleotide polymorphisms and local
+  haplotypes, so true variants get split or dropped. FreeBayes models
+  haplotypes in a Bayesian caller so SNPs, indels, and MNPs come out
+  of BAM alignments in one VCF without a separate haplotype step.
+
+use_cases:
+  - Call germline SNPs and indels from a WGS or WES BAM
+  - Discover MNPs and complex variants in a small cohort
+  - Parallelize calling across regions in a Snakemake workflow
+  - Compare haplotype-based calls against DeepVariant or GATK

@@ -1,0 +1,26 @@
+name: QUAST
+description: Genome assembly evaluation tool that reports N50, misassemblies, and completeness against a reference so assemblers can be compared on the same metrics instead of ad-hoc scripts.
+tagline: Quality assessment for genome assemblies
+
+github_url: https://github.com/ablab/quast
+website_url: https://github.com/ablab/quast
+docs_url: https://github.com/ablab/quast
+install_command: pip install quast
+
+category: Data
+tags: [python, bioinformatics, assembly, qc, genomics, ngs]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  De novo assemblies are hard to compare because N50 alone hides
+  misassemblies and missing genes. QUAST computes contig stats,
+  reference-based misassemblies, and plots so a lab can rank Flye,
+  Hifiasm, or SPAdes outputs on the same report.
+
+use_cases:
+  - Score a bacterial assembly with N50, L50, and misassembly counts
+  - Compare several assemblers on the same long-read dataset
+  - Run metaQUAST on a metagenome assembly without a single reference
+  - Plot contig length distributions for a genome announcement
