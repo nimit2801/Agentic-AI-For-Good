@@ -1,0 +1,26 @@
+name: Seurat
+description: R toolkit for single-cell genomics that handles QC, normalization, integration, clustering, and visualization so scRNA-seq analyses can move from count matrices to cell-type maps.
+tagline: R toolkit for single-cell RNA-seq analysis
+
+github_url: https://github.com/satijalab/seurat
+website_url: https://satijalab.org/seurat/
+docs_url: https://satijalab.org/seurat/articles/get_started.html
+install_command: install.packages("Seurat")
+
+category: Data
+tags: [r, bioinformatics, single-cell, rna-seq, clustering, genomics]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Single-cell RNA-seq count matrices need QC, integration, and clustering
+  before cell types appear, and stitching those steps from scratch is
+  error-prone. Seurat provides a standard R workflow from counts through
+  UMAP, markers, and integration so labs share one analysis language.
+
+use_cases:
+  - QC and cluster a 10x Genomics scRNA-seq experiment
+  - Integrate multiple samples to remove batch effects
+  - Find cluster marker genes and assign cell-type labels
+  - Visualize UMAP embeddings and feature plots in R

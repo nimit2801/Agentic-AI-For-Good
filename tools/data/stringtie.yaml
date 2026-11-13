@@ -1,0 +1,26 @@
+name: StringTie
+description: Transcript assembler and quantifier for RNA-seq that reconstructs isoforms from spliced alignments and estimates abundances so expression pipelines can work without a fixed annotation-only count.
+tagline: Transcript assembly and quantification for RNA-seq
+
+github_url: https://github.com/gpertea/stringtie
+website_url: https://ccb.jhu.edu/software/stringtie/
+docs_url: https://ccb.jhu.edu/software/stringtie/index.shtml?t=manual
+install_command: conda install -c bioconda stringtie
+
+category: Data
+tags: [cpp, bioinformatics, rna-seq, transcriptome, assembly, ngs]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  RNA-seq quantification against a frozen GTF misses novel isoforms
+  and local splicing, while de novo transcript assembly is slow.
+  StringTie reconstructs transcripts from spliced BAM alignments and
+  estimates abundances so known and novel isoforms can be counted together.
+
+use_cases:
+  - Assemble transcripts from HISAT2 or STAR RNA-seq BAM files
+  - Quantify known genes and novel isoforms in one GTF output
+  - Merge sample GTFs into a consensus transcriptome
+  - Feed abundances into downstream differential expression
