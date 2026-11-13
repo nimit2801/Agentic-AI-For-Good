@@ -1,0 +1,26 @@
+name: GPAW
+description: GPAW is a density-functional theory code based on the projector-augmented wave method and the Atomic Simulation Environment. It computes electronic structure, including time-dependent DFT and GW, from Python so materials workflows can run PAW calculations without a closed DFT stack.
+tagline: Python PAW DFT for materials electronic structure
+
+website_url: https://gpaw.readthedocs.io/
+docs_url: https://gpaw.readthedocs.io/
+install_command: pip install gpaw
+
+category: Data
+tags: [python, dft, materials-science, paw, ase, electronic-structure]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Plane-wave and PAW DFT is often locked behind compiled Fortran codes with
+  limited Python control. GPAW implements the projector-augmented wave method
+  on real-space grids, plane waves, or LCAO with ASE, so groups can script
+  ground-state, TDDFT, and GW calculations in Python and feed results into
+  materials datasets.
+
+use_cases:
+  - Compute ground-state DFT energies and forces with PAW in Python
+  - Run TDDFT or GW calculations for optical and quasiparticle spectra
+  - Drive GPAW from ASE for structure relaxation and high-throughput screening
+  - Generate electronic-structure labels for materials machine-learning datasets
