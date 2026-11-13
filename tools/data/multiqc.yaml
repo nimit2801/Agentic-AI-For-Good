@@ -1,0 +1,26 @@
+name: MultiQC
+description: Aggregates results from bioinformatics analyses across many samples into one HTML report so sequencing pipelines can compare QC without opening each tool's output folder.
+tagline: One report for every sample in a sequencing run
+
+github_url: https://github.com/MultiQC/MultiQC
+website_url: https://seqera.io/multiqc/
+docs_url: https://docs.seqera.io/multiqc
+install_command: pip install multiqc
+
+category: Data
+tags: [python, bioinformatics, qc, ngs, genomics, reporting]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  NGS pipelines emit FastQC, alignment, and quantification logs per sample,
+  so operators open dozens of files to spot a failed library. MultiQC parses
+  those logs into one interactive HTML report with plots and tables so a run
+  can be reviewed without hunting through each tool's output directory.
+
+use_cases:
+  - Combine FastQC, Fastp, and alignment stats for a whole sequencing run
+  - Flag underperforming libraries before they enter a production analysis
+  - Publish a shareable QC report at the end of an RNA-seq or WGS pipeline
+  - Compare QC metrics across batches in a clinical or core-lab workflow

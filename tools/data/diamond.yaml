@@ -1,0 +1,26 @@
+name: DIAMOND
+description: Sequence aligner for protein and translated DNA searches that runs BLAST-compatible local alignment at far higher speed, so metagenome and proteome pipelines can search large databases on ordinary hardware.
+tagline: BLAST-scale protein search at orders-of-magnitude speed
+
+github_url: https://github.com/bbuchfink/diamond
+website_url: https://github.com/bbuchfink/diamond
+docs_url: https://github.com/bbuchfink/diamond/wiki
+install_command: conda install -c bioconda diamond
+
+category: Data
+tags: [cpp, bioinformatics, protein, alignment, blast, metagenomics]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  BLAST protein search is too slow for metagenomes and large protein
+  databases, so labs wait hours or skip sensitive searches. DIAMOND
+  produces BLAST-compatible pairwise alignments at 100x to 10,000x
+  BLAST speed with frameshift modes and clustering, on a desktop.
+
+use_cases:
+  - Search metagenomic reads against UniRef or NCBI nr at BLAST-like sensitivity
+  - Cluster protein sequences across many genomes with DIAMOND DeepClust
+  - Taxonomically classify translated DNA with BLAST tabular or XML output
+  - Align long reads with frameshifts against a protein reference

@@ -1,0 +1,26 @@
+name: Flye
+description: De novo assembler for PacBio and Oxford Nanopore long reads that builds a repeat graph from raw reads and outputs polished contigs, covering bacterial through mammalian genomes plus a metagenome mode.
+tagline: Long-read de novo assembly with repeat graphs
+
+github_url: https://github.com/mikolmogorov/Flye
+website_url: https://github.com/mikolmogorov/Flye
+docs_url: https://github.com/mikolmogorov/Flye/blob/flye/docs/USAGE.md
+install_command: conda install flye
+
+category: Data
+tags: [python, bioinformatics, assembly, long-read, nanopore, pacbio]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  PacBio and ONT reads are long but noisy, so short-read assemblers
+  fragment repeats and stall on mammalian or metagenome data. Flye
+  builds a repeat graph from raw long reads and polishes contigs so
+  a single command can assemble bacteria through large genomes.
+
+use_cases:
+  - Assemble a bacterial genome from Oxford Nanopore or PacBio reads
+  - Build a mammalian draft assembly from HiFi or ONT long reads
+  - Run metaFlye on a mixed microbial community without prior binning
+  - Polish long-read contigs and export a GFA assembly graph
