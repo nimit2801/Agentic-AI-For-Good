@@ -1,0 +1,26 @@
+name: Cutadapt
+description: Finds and removes adapter sequences, primers, and poly-A tails from high-throughput sequencing reads so FASTQ files can be cleaned before alignment or quantification.
+tagline: Adapter and primer trimming for sequencing reads
+
+github_url: https://github.com/marcelm/cutadapt
+website_url: https://cutadapt.readthedocs.io
+docs_url: https://cutadapt.readthedocs.io
+install_command: pip install cutadapt
+
+category: Data
+tags: [python, bioinformatics, qc, adapters, ngs, fastq]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Adapter and primer leftovers in FASTQ files create false alignments
+  and biased quantification if they are not trimmed first. Cutadapt
+  finds those sequences, including linked adapters and poly-A tails,
+  so a preprocessing step can emit clean reads for the rest of the pipeline.
+
+use_cases:
+  - Trim Illumina adapters from paired-end FASTQ files
+  - Remove primers from amplicon or targeted-panel reads
+  - Cut poly-A tails from RNA-seq reads before alignment
+  - Quality-trim read ends while discarding too-short fragments

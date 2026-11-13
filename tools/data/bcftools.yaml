@@ -1,0 +1,26 @@
+name: BCFtools
+description: Utilities for variant calling and manipulating VCF and BCF files, covering filtering, annotation, consensus, and stats so NGS pipelines can process variant calls without ad-hoc scripts.
+tagline: VCF and BCF variant calling and manipulation
+
+github_url: https://github.com/samtools/bcftools
+website_url: https://samtools.github.io/bcftools/
+docs_url: https://samtools.github.io/bcftools/howtos/install.html
+install_command: conda install -c bioconda bcftools
+
+category: Data
+tags: [c, bioinformatics, vcf, variants, ngs, genomics]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Variant call files pile up as VCF or BCF and need filtering, merging,
+  and stats before they are useful, but one-off scripts break on format
+  versions. BCFtools calls, views, filters, and annotates those files
+  so a pipeline can work from a standard CLI instead of custom parsers.
+
+use_cases:
+  - Call SNPs and indels from aligned BAM files into a VCF
+  - Filter a cohort VCF by quality, depth, or INFO annotations
+  - Merge sample VCFs and compute per-sample variant stats
+  - Build a consensus FASTA from a reference plus a VCF

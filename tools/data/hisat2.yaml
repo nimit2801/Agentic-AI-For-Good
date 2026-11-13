@@ -1,0 +1,26 @@
+name: HISAT2
+description: Graph-based splice-aware aligner that maps RNA-seq and DNA-seq reads to a genome using a hierarchical graph FM index, so transcriptomic pipelines can place spliced reads without a slower ungapped mapper.
+tagline: Graph-based splice-aware alignment for RNA-seq
+
+github_url: https://github.com/DaehwanKimLab/hisat2
+website_url: https://daehwankimlab.github.io/hisat2/
+docs_url: https://daehwankimlab.github.io/hisat2/manual/
+install_command: conda install -c bioconda hisat2
+
+category: Data
+tags: [cpp, bioinformatics, alignment, rna-seq, splice-aware, ngs]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  RNA-seq reads span splice junctions, so unspliced aligners drop or
+  misplace them and slow graph methods do not scale to human genomes.
+  HISAT2 uses a hierarchical graph FM index to map spliced and
+  unspliced reads quickly so expression pipelines get usable BAM.
+
+use_cases:
+  - Align bulk RNA-seq reads to a genome with known splice sites
+  - Map DNA-seq reads to a HISAT2 graph index for variant workflows
+  - Build a HISAT2 index that includes SNPs and haplotypes
+  - Produce BAM for StringTie or featureCounts quantification
