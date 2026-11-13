@@ -1,0 +1,27 @@
+name: JProfiler
+description: JProfiler is a commercial Java profiler for CPU, memory, threads, and JDBC with a GUI that attaches to local or remote JVMs. Call graphs, heap walkers, and telemetry help teams find leaks and hot paths in backend services without stitching several open-source tools together.
+tagline: Commercial Java profiler for CPU, memory, and JDBC
+
+website_url: https://www.ej-technologies.com/jprofiler
+docs_url: https://www.ej-technologies.com/resources/jprofiler/help/doc/
+
+install_command: brew install --cask jprofiler
+
+category: Monitoring
+tags: [java, jvm, profiler, performance, memory, cpu, jdbc]
+pricing: paid
+is_open_source: false
+
+problem_solved: |
+  Production JVM backends need CPU, allocation, and database traces in
+  one session, not a patchwork of sampling scripts. JProfiler attaches
+  an agent to local or remote JVMs, walks heaps, and records JDBC so
+  teams shipping Java model gateways can pinpoint leaks, hot methods,
+  and slow queries with a supported commercial profiler.
+
+use_cases:
+  - Profile CPU of a Java API or model gateway and inspect the call graph
+  - Walk the heap to find leaking caches in a long-running JVM worker
+  - Record JDBC calls to see which queries dominate request latency
+  - Attach to a remote JVM in Docker or Kubernetes with the profiling agent
+  - Compare telemetry across runs after a suspected performance regression
