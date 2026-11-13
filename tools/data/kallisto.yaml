@@ -1,0 +1,26 @@
+name: Kallisto
+description: Near-optimal RNA-seq quantification via pseudoalignment, so transcript abundances can be estimated from reads in minutes on a desktop without a full splice-aware genome alignment.
+tagline: Fast transcript quantification by pseudoalignment
+
+github_url: https://github.com/pachterlab/kallisto
+website_url: https://pachterlab.github.io/kallisto
+docs_url: https://pachterlab.github.io/kallisto/manual.html
+install_command: conda install kallisto
+
+category: Data
+tags: [cpp, bioinformatics, rna-seq, quantification, transcriptome, ngs]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Full RNA-seq alignment is slow and still mishandles multi-mapping
+  isoforms, delaying abundance estimates. Kallisto pseudoaligns reads
+  to a transcriptome index so bulk RNA-seq can be quantified in minutes
+  on a desktop, with accuracy comparable to slower aligners.
+
+use_cases:
+  - Quantify transcript abundances from bulk RNA-seq FASTQ files
+  - Build a kallisto index from a transcriptome FASTA for a new species
+  - Feed abundances into sleuth for differential expression
+  - Preprocess single-cell RNA-seq with bustools from kallisto output

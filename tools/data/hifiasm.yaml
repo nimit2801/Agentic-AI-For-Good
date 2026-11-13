@@ -1,0 +1,27 @@
+name: Hifiasm
+description: Haplotype-resolved de novo assembler for PacBio HiFi and ONT long reads that outputs phased contigs, including trio, Hi-C, and ultralong modes for diploid and inbred genomes.
+tagline: Haplotype-resolved assembly from accurate long reads
+
+github_url: https://github.com/chhylp123/hifiasm
+website_url: https://github.com/chhylp123/hifiasm
+docs_url: https://github.com/chhylp123/hifiasm
+install_command: conda install -c bioconda hifiasm
+
+category: Data
+tags: [cpp, bioinformatics, assembly, hifi, pacbio, genomics]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Accurate HiFi reads still collapse haplotypes in heterozygous genomes,
+  so diploid assemblies lose phase and mix parental alleles. Hifiasm
+  resolves haplotypes during assembly, with trio, Hi-C, and ultralong
+  options, so a sample can produce phased contigs without a separate
+  haplotyping pipeline.
+
+use_cases:
+  - Assemble a diploid human genome from PacBio HiFi reads
+  - Phase haplotypes with parental yak indexes in a trio assembly
+  - Combine HiFi, ultralong ONT, and Hi-C for telomere-to-telomere drafts
+  - Assemble an inbred or homozygous genome with duplication purging off

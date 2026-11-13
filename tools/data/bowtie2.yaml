@@ -1,0 +1,26 @@
+name: Bowtie2
+description: Fast gapped-read aligner for mapping sequencing reads to long reference genomes, with local and end-to-end modes so NGS pipelines can produce SAM alignments without a slower ungapped index.
+tagline: Fast gapped alignment of sequencing reads
+
+github_url: https://github.com/BenLangmead/bowtie2
+website_url: https://github.com/BenLangmead/bowtie2
+docs_url: https://bowtie-bio.sourceforge.net/bowtie2/manual.shtml
+install_command: conda install bowtie2
+
+category: Data
+tags: [cpp, bioinformatics, alignment, ngs, genomics, short-read]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Mapping short or mixed-length reads to a large reference needs gapped
+  alignment, but many fast aligners drop indels or stall on big genomes.
+  Bowtie2 indexes the reference and aligns reads in local or end-to-end
+  mode so pipelines get SAM output that keeps insertions and deletions.
+
+use_cases:
+  - Align Illumina RNA-seq or DNA-seq reads to a genome index
+  - Map ChIP-seq or ATAC-seq reads for peak-calling workflows
+  - Build a Bowtie2 index for a custom microbial or plant reference
+  - Produce SAM/BAM for downstream variant or abundance tools
