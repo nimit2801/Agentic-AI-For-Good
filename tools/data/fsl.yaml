@@ -1,0 +1,25 @@
+name: FSL
+description: FSL (FMRIB Software Library) is a suite of tools for analyzing MRI brain imaging data. It covers structural, functional, and diffusion MRI with programs such as BET, FLIRT, and FEAT that labs use to preprocess and model neuroimaging datasets.
+tagline: MRI analysis toolkit for structural, functional, and diffusion data
+
+website_url: https://fsl.fmrib.ox.ac.uk
+docs_url: https://fsl.fmrib.ox.ac.uk/fsl/docs/
+
+category: Data
+tags: [neuroimaging, mri, fmri, diffusion, brain, medical-imaging]
+pricing: free
+is_open_source: false
+license: FSL License
+
+problem_solved: |
+  MRI studies produce large 4D volumes that need skull stripping, registration,
+  statistical modeling, and diffusion fitting before they are usable as data.
+  FSL packages those steps as a documented command-line and GUI suite so labs
+  can run BET, FLIRT, FEAT, and related tools on structural, functional, and
+  diffusion MRI without assembling a one-off pipeline from scratch.
+
+use_cases:
+  - Skull-strip and register structural MRI scans for group studies
+  - Run FEAT-style fMRI modeling and higher-level group statistics
+  - Fit diffusion tensors and tractography from DWI acquisitions
+  - Build batch neuroimaging pipelines that feed ML or clinical datasets
