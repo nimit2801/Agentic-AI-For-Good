@@ -1,0 +1,27 @@
+name: Delly
+description: Structural variant and CNV caller that uses paired-end, split-read, and read-depth evidence in short-read and long-read WGS. Delly discovers, genotypes, and visualizes deletions, insertions, duplications, inversions, and translocations.
+tagline: Integrated SV and CNV calling from WGS alignments
+
+github_url: https://github.com/dellytools/delly
+website_url: https://github.com/dellytools/delly
+docs_url: https://github.com/dellytools/delly
+install_command: brew install delly
+
+category: Data
+tags: [cpp, bioinformatics, structural-variants, cnv, ngs, genomics]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Short-read and long-read WGS hide large deletions, insertions, and
+  rearrangements that SNP callers miss. Delly combines paired-end,
+  split-read, and depth signals to discover and genotype SVs and CNVs
+  so tumor-normal and germline pipelines can emit VCF without a
+  separate caller per SV class.
+
+use_cases:
+  - Call germline SVs from a short-read WGS BAM against a reference FASTA
+  - Discover SVs in PacBio or ONT long-read alignments
+  - Filter somatic SVs from tumor-normal pairs with a sample table
+  - Merge and genotype SV sites across a cohort of WGS samples
