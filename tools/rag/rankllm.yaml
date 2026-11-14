@@ -1,0 +1,26 @@
+name: RankLLM
+description: Python toolkit for reproducible IR research with LLM rerankers. RankLLM covers pointwise, pairwise, and listwise models, including open models on vLLM plus RankGPT-style APIs, so retrieval pipelines can rerank candidates with a documented recipe.
+tagline: LLM reranking toolkit for retrieval research
+
+github_url: https://github.com/castorini/rank_llm
+website_url: http://rankllm.ai
+docs_url: https://github.com/castorini/rank_llm
+install_command: pip install rank-llm
+
+category: RAG
+tags: [python, rag, reranking, retrieval, llm, ir]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  First-stage retrievers return noisy candidate lists, and ad hoc LLM
+  rerank prompts are hard to compare. RankLLM standardizes pointwise,
+  pairwise, and listwise rerankers, including open models and RankGPT
+  APIs, so IR teams can rerank with a reproducible recipe.
+
+use_cases:
+  - Listwise rerank BM25 or dense retrieval hits with an open LLM
+  - Compare MonoT5, DuoT5, and RankGPT variants on a shared IR benchmark
+  - Serve rerankers through the rank-llm CLI in a RAG pipeline
+  - Train or evaluate custom listwise prompts against a candidate set

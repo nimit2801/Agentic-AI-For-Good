@@ -1,0 +1,26 @@
+name: TrnRT
+description: Open LLM inference engine for AWS Trainium. TrnRT serves an OpenAI-compatible API from a Trainium2 box, using NKI megakernels, 1M-token context, and prefix caching, starting with GLM-5.3-Flash and more open models over time.
+tagline: Open LLM serving on AWS Trainium2
+
+github_url: https://github.com/RunanywhereAI/trnrt
+website_url: https://runanywhere.ai
+docs_url: https://github.com/RunanywhereAI/trnrt
+install_command: pip install trnrt
+
+category: LLM
+tags: [python, llm, inference, aws, trainium, serving]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AWS Trainium GPUs need a serving stack, and generic runtimes leave
+  Neuron kernels unused. TrnRT is an open engine that fuses decode
+  into NKI megakernels, keeps a 1M-token prefix cache, and exposes
+  OpenAI chat APIs so a single trn2 box can serve open models.
+
+use_cases:
+  - Serve GLM-5.3-Flash from one trn2.48xlarge with an OpenAI-compatible API
+  - Compile graphs on a CPU host and load them on a Trainium serving box
+  - Stream chat, tool calls, and reasoning output from Trainium inference
+  - Benchmark NKI megakernel decode against a baseline Neuron runtime
