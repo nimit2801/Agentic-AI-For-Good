@@ -1,0 +1,27 @@
+name: Sniffles
+description: Structural variant caller for PacBio and Oxford Nanopore long-read alignments. Sniffles detects germline, mosaic, and population SVs from BAM or CRAM and writes VCF, with multi-sample SNF merging and force-genotyping of known variants.
+tagline: Long-read structural variant calling for PacBio and ONT
+
+github_url: https://github.com/fritzsedlazeck/Sniffles
+website_url: https://github.com/fritzsedlazeck/Sniffles
+docs_url: https://github.com/fritzsedlazeck/Sniffles
+install_command: pip install sniffles
+
+category: Data
+tags: [python, bioinformatics, structural-variants, long-read, pacbio, nanopore]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Short-read callers miss large insertions, deletions, and other SVs
+  that span repeats. Sniffles uses long-read alignments to call
+  germline, mosaic, and population structural variants and write VCF
+  so PacBio and ONT pipelines can genotype SVs without a short-read
+  discovery step.
+
+use_cases:
+  - Call germline SVs from a PacBio or ONT BAM into a VCF
+  - Merge per-sample SNF files into a multi-sample population VCF
+  - Detect mosaic or somatic SVs with mosaic mode
+  - Force-genotype a known SV VCF against a new long-read alignment

@@ -1,0 +1,26 @@
+name: Mosdepth
+description: Fast BAM and CRAM depth calculator for WGS, exome, and targeted sequencing. Mosdepth reports per-base, window, and BED-region coverage plus genome-wide distributions, typically about twice as fast as samtools depth.
+tagline: Fast coverage depth from BAM and CRAM alignments
+
+github_url: https://github.com/brentp/mosdepth
+website_url: https://github.com/brentp/mosdepth
+docs_url: https://github.com/brentp/mosdepth
+install_command: brew install mosdepth
+
+category: Data
+tags: [nim, bioinformatics, coverage, bam, cram, ngs, genomics]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Coverage QC on whole-genome BAM files is slow when every base is
+  counted with samtools depth. Mosdepth streams alignments and writes
+  per-base, window, and region summaries plus distribution plots so
+  WGS and exome pipelines can flag low-coverage regions quickly.
+
+use_cases:
+  - Compute per-base WGS coverage about twice as fast as samtools depth
+  - Report mean depth in BED capture regions for an exome or panel
+  - Quantize coverage bins for CNV screening without a full per-base file
+  - Summarize chromosome and genome-wide depth distributions for QC

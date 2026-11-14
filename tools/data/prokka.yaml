@@ -1,0 +1,27 @@
+name: Prokka
+description: Rapid prokaryotic genome annotation for bacteria, archaea, and viruses. Prokka finds genes and writes GFF, GenBank, and FASTA outputs that meet submission standards, typically finishing a typical isolate in minutes.
+tagline: Rapid annotation for bacterial and viral genomes
+
+github_url: https://github.com/tseemann/prokka
+website_url: https://github.com/tseemann/prokka
+docs_url: https://github.com/tseemann/prokka
+install_command: conda install -c bioconda prokka
+
+category: Data
+tags: [perl, bioinformatics, annotation, bacteria, genomics, ngs]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Assembled bacterial contigs still need genes, products, and
+  standards-compliant files before NCBI submission or downstream
+  analysis. Prokka runs a lean annotation pipeline that labels CDS,
+  rRNA, tRNA, and other features and writes GFF, GBK, and protein
+  FASTA without a heavy web service.
+
+use_cases:
+  - Annotate a bacterial isolate assembly before NCBI GenBank submission
+  - Label archaeal or viral genomes with kingdom-specific databases
+  - Produce GFF and protein FASTA for pangenome or AMR pipelines
+  - Re-annotate a mutant using a curated GenBank as the protein source

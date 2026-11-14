@@ -1,0 +1,27 @@
+name: Canu
+description: Hierarchical long-read assembler for noisy PacBio and Oxford Nanopore data. Canu corrects, trims, and assembles single-molecule reads for genomes large and small, forked from Celera Assembler for high-error long reads.
+tagline: Hierarchical assembler for noisy PacBio and ONT reads
+
+github_url: https://github.com/marbl/canu
+website_url: https://canu.readthedocs.io/
+docs_url: https://canu.readthedocs.io/
+install_command: conda install -c bioconda canu
+
+category: Data
+tags: [cpp, bioinformatics, assembly, long-read, pacbio, nanopore, genomics]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Early PacBio and Nanopore reads were too noisy for short-read
+  assemblers, which fragmented repeats and collapsed haplotypes.
+  Canu overlaps raw long reads, corrects consensus, trims, and
+  assembles so a single pipeline can draft bacterial through large
+  eukaryotic genomes from high-error single-molecule data.
+
+use_cases:
+  - Assemble a bacterial genome from noisy PacBio RS II or early ONT reads
+  - Correct and trim long reads before a downstream assembly step
+  - Draft a large eukaryotic genome with hierarchical overlap consensus
+  - Reproduce historical long-read assemblies that used Canu as the engine

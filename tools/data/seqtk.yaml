@@ -1,0 +1,26 @@
+name: seqtk
+description: Fast C toolkit for FASTA and FASTQ files, including gzip. Seqtk converts formats, samples reads, trims by quality, reverse-complements, and extracts named or BED-defined subsequences without loading whole files into memory.
+tagline: Fast FASTA and FASTQ sequence processing toolkit
+
+github_url: https://github.com/lh3/seqtk
+website_url: https://github.com/lh3/seqtk
+docs_url: https://github.com/lh3/seqtk
+install_command: brew install seqtk
+
+category: Data
+tags: [c, bioinformatics, fasta, fastq, ngs, genomics]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  FASTA and FASTQ files are huge and often gzipped, so ad hoc scripts stall
+  on format conversion, subsampling, and quality trimming. Seqtk is a small
+  C toolkit that streams compressed sequence files for everyday NGS prep
+  without loading a whole run into RAM.
+
+use_cases:
+  - Convert gzipped FASTQ to FASTA before assembly or alignment
+  - Subsample paired FASTQ files with a shared random seed
+  - Trim low-quality bases from both ends of short reads
+  - Extract named sequences or BED regions from a reference FASTA
