@@ -1,0 +1,26 @@
+name: LiteRT-LM
+description: Google production inference framework for running LLMs on edge devices with LiteRT. LiteRT-LM targets Android, iOS, web, desktop, and IoT with GPU and NPU acceleration, plus vision, audio, and tool-use support for on-device Gemma and Llama models.
+tagline: On-device LLM inference across mobile, web, and IoT
+
+github_url: https://github.com/google-ai-edge/LiteRT-LM
+website_url: https://ai.google.dev/edge/litert-lm
+docs_url: https://ai.google.dev/edge/litert-lm
+install_command: npm install @litert-lm/core
+
+category: LLM
+tags: [cpp, llm, on-device, edge, gemma, inference, mobile]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Cloud LLM APIs add latency, cost, and privacy risk for mobile and
+  IoT apps that need local generation. LiteRT-LM is Google's on-device
+  runtime for Gemma, Llama, and similar models, with GPU and NPU
+  backends so Chrome, Pixel, and custom apps can run GenAI offline.
+
+use_cases:
+  - Run Gemma on Android or iOS with GPU or NPU acceleration
+  - Ship an on-device chat demo in Chrome or on a Raspberry Pi
+  - Add vision and audio inputs to a local multimodal LLM
+  - Call tools from an on-device agent without a cloud round trip
