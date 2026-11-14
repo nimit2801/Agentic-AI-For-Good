@@ -1,0 +1,26 @@
+name: Trimmomatic
+description: Java trimmer for Illumina NGS reads in single-end and paired-end mode. Trimmomatic clips adapters, applies sliding-window quality filters, and drops short reads so FASTQ enters alignment with fewer adapter dimers and low-quality tails.
+tagline: Adapter and quality trimming for Illumina FASTQ
+
+github_url: https://github.com/usadellab/Trimmomatic
+website_url: https://github.com/usadellab/Trimmomatic
+docs_url: https://github.com/usadellab/Trimmomatic
+install_command: conda install -c bioconda trimmomatic
+
+category: Data
+tags: [java, bioinformatics, illumina, trimming, fastq, ngs]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Raw Illumina FASTQ still contains adapters, polyG tails, and
+  low-quality ends that inflate misalignments. Trimmomatic clips
+  Illumina adapters and applies sliding-window quality and length
+  filters so paired and single-end reads are clean before mapping.
+
+use_cases:
+  - Trim TruSeq adapters from paired-end Illumina FASTQ
+  - Apply sliding-window quality filters and a minimum read length
+  - Clean NovaSeq two-colour polyG tails before alignment
+  - Process single-end or paired-end libraries in a Galaxy or HPC job

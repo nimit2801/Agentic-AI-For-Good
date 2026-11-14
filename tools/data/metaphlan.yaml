@@ -1,0 +1,27 @@
+name: MetaPhlAn
+description: Species-level profiler for bacteria, archaea, eukaryotes, and viruses from metagenomic shotgun data. MetaPhlAn uses clade-specific markers, and StrainPhlAn inside the same toolkit adds strain-level population genomics.
+tagline: Marker-based taxonomic profiling of metagenomes
+
+github_url: https://github.com/biobakery/MetaPhlAn
+website_url: http://segatalab.cibio.unitn.it/tools/metaphlan/index.html
+docs_url: https://github.com/biobakery/MetaPhlAn/wiki/MetaPhlAn-4
+install_command: pip install metaphlan
+
+category: Data
+tags: [python, bioinformatics, metagenomics, taxonomy, microbiome, ngs]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Shotgun metagenomes mix thousands of taxa, so whole-genome mapping
+  is slow and misses uncultured species. MetaPhlAn matches reads to
+  clade-specific markers for species-level profiles, with StrainPhlAn
+  for strain tracking, so microbiome studies can quantify composition
+  without assembling every genome.
+
+use_cases:
+  - Profile species composition of a human gut shotgun metagenome
+  - Compare microbial communities across a cohort with relative abundances
+  - Run StrainPhlAn to track strain-level variation between samples
+  - Include viral taxa with the MetaPhlAn viral module

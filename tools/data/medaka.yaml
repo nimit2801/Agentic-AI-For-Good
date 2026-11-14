@@ -1,0 +1,26 @@
+name: Medaka
+description: Neural-network consensus polisher and variant caller for Oxford Nanopore reads. Medaka piles basecalled FASTA or FASTQ against a draft or reference and writes a consensus or VCF, faster than graph-based polishers such as Racon.
+tagline: Neural consensus polishing for Nanopore sequencing
+
+github_url: https://github.com/nanoporetech/medaka
+website_url: https://nanoporetech.com
+docs_url: https://github.com/nanoporetech/medaka
+install_command: pip install medaka
+
+category: Data
+tags: [python, bioinformatics, nanopore, polishing, consensus, variants]
+pricing: free
+is_open_source: true
+license: Oxford Nanopore Public License 1.0
+
+problem_solved: |
+  Draft Nanopore assemblies still carry insertion and deletion errors
+  that break genes and variant calls. Medaka applies a neural network
+  to a pileup of basecalled reads so a Flye or similar draft can be
+  polished into a consensus or VCF without slow signal-level tools.
+
+use_cases:
+  - Polish a Flye Nanopore assembly into a higher-accuracy consensus
+  - Call small variants from ONT reads against a reference genome
+  - Run GPU or CPU consensus correction in a Nanopore finishing pipeline
+  - Train a custom correction network on in-house Nanopore data
