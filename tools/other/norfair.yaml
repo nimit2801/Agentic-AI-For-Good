@@ -1,0 +1,26 @@
+name: Norfair
+description: Lightweight Python library that adds real-time multi-object tracking to any detector with a few lines of code. Works with centroid or box detections, moving cameras, appearance re-ID, and custom distance functions without owning the detector.
+tagline: Drop-in realtime tracking for any detector
+
+github_url: https://github.com/tryolabs/norfair
+website_url: https://tryolabs.github.io/norfair/
+docs_url: https://tryolabs.github.io/norfair/latest/getting_started/
+install_command: pip install norfair
+
+category: Other
+tags: [python, computer-vision, multi-object-tracking, realtime, yolo, detectron2, tracking]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Most MOT code is tied to one detector and a research training loop.
+  Production teams need a small library that accepts any (x, y) detections
+  and returns stable track IDs. Norfair slots into YOLO, Detectron2, or
+  custom detectors, including moving-camera and embedding re-ID cases.
+
+use_cases:
+  - Add tracking to YOLOv5 or YOLOv7 detections with a few lines of Python
+  - Track soccer players under a moving broadcast camera
+  - Follow keypoints or 3D detections with a custom distance function
+  - Evaluate MOT metrics on a detector you already run in production

@@ -1,0 +1,26 @@
+name: ByteTrack
+description: ECCV 2022 multi-object tracker that associates every detection box, including low-score occluded ones, instead of dropping them. On MOT17 it reports 80.3 MOTA, 77.3 IDF1, and 63.1 HOTA at about 30 FPS on a single V100 GPU.
+tagline: Associate every box, not just the high-score ones
+
+github_url: https://github.com/FoundationVision/ByteTrack
+website_url: https://arxiv.org/abs/2110.06864
+docs_url: https://github.com/FoundationVision/ByteTrack#readme
+
+category: Other
+tags: [python, computer-vision, multi-object-tracking, mot, yolo, pytorch, eccv]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Most MOT pipelines throw away low-score detections, so occluded people
+  and vehicles lose IDs and trajectories fragment. ByteTrack keeps those
+  boxes and matches them to existing tracklets, recovering true objects
+  while filtering background, which is what surveillance, sports, and
+  traffic analytics need when detectors flicker under occlusion.
+
+use_cases:
+  - Track pedestrians on MOT17 or MOT20 without dropping occluded boxes
+  - Plug ByteTrack association into YOLOX or other detectors for online MOT
+  - Benchmark IDF1 and HOTA against SORT, DeepSORT, and FairMOT
+  - Run multi-camera traffic or sports tracking where IDs must survive overlap
