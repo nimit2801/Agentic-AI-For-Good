@@ -1,0 +1,27 @@
+name: Lexbor
+description: Open-source HTML parsing and rendering library written in C with a browser-grade tokenizer, tree builder, CSS, selectors, and encoding support. Lexbor is used when you need fast, standards-aware HTML without embedding a full browser.
+tagline: Fast C HTML parser and renderer without a full browser
+
+github_url: https://github.com/lexbor/lexbor
+website_url: https://lexbor.com
+docs_url: https://lexbor.com
+
+install_command: brew install lexbor
+
+category: Dev Tools
+tags: [html, parser, c, css, scraping, encoding]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Scrapers and sanitizers that call a full browser are heavy, while naive regex
+  HTML parsers break on real markup. Lexbor implements HTML5 tokenization, DOM,
+  CSS, and selectors in portable C so tools can parse and query pages quickly
+  without Chromium.
+
+use_cases:
+  - Parse HTML5 documents in a C or native extension without libxml quirks
+  - Run CSS selectors over scraped pages in a lightweight pipeline
+  - Sanitize or rewrite markup with a standards-aware tree builder
+  - Embed an HTML parser in a scraping worker where a browser is too large

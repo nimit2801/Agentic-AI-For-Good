@@ -1,0 +1,25 @@
+name: Paddle Lite
+description: High-performance PaddlePaddle inference engine for mobile and edge devices. Paddle Lite runs quantized computer-vision and NLP models on Android, iOS, Linux, and NPUs so teams can deploy Paddle models without the full training framework.
+tagline: PaddlePaddle inference runtime for mobile and edge
+
+github_url: https://github.com/PaddlePaddle/Paddle-Lite
+website_url: https://www.paddlepaddle.org.cn/lite
+docs_url: https://www.paddlepaddle.org.cn/lite/develop/index_en.html
+
+category: Dev Tools
+tags: [edge-ai, mobile, inference, paddlepaddle, quantization, npu, android]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  PaddlePaddle training graphs are too large for phones and embedded boards.
+  Paddle Lite converts and runs quantized models on CPU, GPU, and NPU delegates
+  for Android, iOS, and Linux so detection and classification models can ship
+  on-device without a server round trip.
+
+use_cases:
+  - Deploy a quantized Paddle detection model in an Android camera app
+  - Run on-device classification on an NPU-backed Linux board
+  - Convert a PaddlePaddle model to a mobile-optimized runtime
+  - Benchmark CPU versus NPU delegates for an edge vision pipeline
