@@ -1,0 +1,27 @@
+name: Serilog
+description: Structured logging library for .NET with message templates and sinks. Serilog records fully-structured events so C# model-serving, agent, and eval services can query logs by property instead of scraping text.
+tagline: Structured logging for .NET
+
+github_url: https://github.com/serilog/serilog
+website_url: https://serilog.net
+docs_url: https://github.com/serilog/serilog/wiki
+install_command: dotnet add package Serilog
+
+category: Dev Tools
+tags: [dotnet, csharp, logging, structured, observability]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  .NET services that call LLMs, embeddings, or agent tools often log
+  plain strings that cannot be filtered by request id or model name.
+  Serilog uses message templates and sinks so those events stay
+  structured and ship to files, consoles, or log backends.
+
+use_cases:
+  - Log LLM request ids, model names, and latency from a C# gateway
+  - Ship structured agent tool-call events to Seq or a log sink
+  - Capture eval-run properties without string concatenation
+  - Separate debug and error streams in an ASP.NET model-serving API
+  - Enrich logs with correlation ids across multi-step agent jobs

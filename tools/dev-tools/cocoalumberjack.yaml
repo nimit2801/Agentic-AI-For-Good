@@ -1,0 +1,26 @@
+name: CocoaLumberjack
+description: Fast logging framework for Apple platforms including iOS, macOS, tvOS, watchOS, and visionOS. CocoaLumberjack fans logs to files, ASL, and custom loggers so on-device ML and agent apps keep structured traces without blocking the main thread.
+tagline: Fast, flexible logger for Apple platforms
+
+github_url: https://github.com/CocoaLumberjack/CocoaLumberjack
+website_url: https://cocoalumberjack.github.io
+docs_url: https://cocoalumberjack.github.io
+
+category: Dev Tools
+tags: [ios, macos, swift, objc, logging, debugging, apple]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  NSLog and print are slow, unfiltered, and awkward to persist. On-device
+  inference and agent apps need levels, file rolling, and custom sinks
+  without stalling the UI. CocoaLumberjack logs asynchronously with
+  pluggable loggers so traces survive across launches.
+
+use_cases:
+  - Log on-device inference timing from an iOS or macOS ML app
+  - Roll file logs for an agent chat client during TestFlight QA
+  - Add a crash-reporting logger around model API and tool calls
+  - Filter debug vs error streams in a vision or speech demo
+  - Capture background-task traces on watchOS or tvOS companion apps
