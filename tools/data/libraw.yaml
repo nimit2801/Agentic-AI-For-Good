@@ -1,0 +1,27 @@
+name: LibRaw
+description: C++ library for reading RAW files from digital cameras, exposing decoded pixels, metadata, and camera-specific unpackers. LibRaw is the decode layer behind many photo pipelines that turn camera RAW into arrays for vision and scientific work.
+tagline: Library for reading camera RAW files
+
+github_url: https://github.com/LibRaw/LibRaw
+website_url: https://www.libraw.org/
+docs_url: https://www.libraw.org/docs
+install_command: brew install libraw
+
+category: Data
+tags: [raw, photography, cplusplus, images, decoding, cameras]
+pricing: free
+is_open_source: true
+license: LGPL-2.1 OR CDDL-1.0
+
+problem_solved: |
+  Vision pipelines that start from camera RAW cannot use JPEG decoders.
+  Each maker uses a different packed format. LibRaw unpacks those files
+  into pixels and metadata so dataset jobs can demosaic, color-manage,
+  and train without depending on a vendor SDK.
+
+use_cases:
+  - Decode camera RAW captures into arrays before a vision training job
+  - Extract EXIF and maker notes while unpacking a field-photo corpus
+  - Feed LibRaw output into a demosaic and color-management pipeline
+  - Build a Python or C++ ingest path for scientific camera RAW
+  - Validate that a dataset of CR2, NEF, and ARW files decodes cleanly
