@@ -1,0 +1,27 @@
+name: SDWebImage
+description: Asynchronous image downloader and cache for iOS, macOS, tvOS, watchOS, and visionOS. SDWebImage adds UIImageView categories plus memory and disk cache so Objective-C and Swift apps can load remote images, animated formats, and model-generated assets without blocking the UI.
+tagline: Async image downloader and cache for Apple platforms
+
+github_url: https://github.com/SDWebImage/SDWebImage
+website_url: https://sdwebimage.github.io
+docs_url: https://sdwebimage.github.io
+
+category: Dev Tools
+tags: [objc, swift, ios, image, cache, macos, ui]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Apple-platform apps that render remote images from APIs, datasets, or
+  generated media still need async download, cache, and format support.
+  SDWebImage loads images on UIImageView with memory and disk cache,
+  animated WebP/GIF/APNG, and coder plugins so AI product UIs do not
+  block the main thread on every thumbnail.
+
+use_cases:
+  - Load generated images and dataset previews into UIImageView without blocking UI
+  - Cache remote thumbnails for an iOS ML labeling or evaluation app
+  - Display animated WebP or GIF model outputs with coder plugins
+  - Prefetch images for a chat or gallery UI that shows agent attachments
+  - Share one image cache across UIKit and SwiftUI screens
