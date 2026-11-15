@@ -1,0 +1,26 @@
+name: yyjson
+description: High-performance ANSI C JSON library focused on parse and serialize speed with a small footprint. Used as an embedded JSON engine in native services, game engines, and language bindings that cannot afford a heavy runtime.
+tagline: Fast JSON in portable C
+
+github_url: https://github.com/ibireme/yyjson
+website_url: https://ibireme.github.io/yyjson/doc/doxygen/html/
+docs_url: https://ibireme.github.io/yyjson/doc/doxygen/html/
+install_command: brew install yyjson
+
+category: Dev Tools
+tags: [c, json, parsing, serialization, embedded, performance]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Many JSON parsers are slow, allocate heavily, or need C++.
+  Native services and game engines need a small C library that
+  parses and serializes JSON quickly with a clear lifetime model.
+  yyjson is that engine, including immutable and mutable documents.
+
+use_cases:
+  - Parse high-volume JSON logs or API payloads in a C service
+  - Embed JSON config loading in a game engine without C++
+  - Bind yyjson from Python, Rust, or other languages for speed
+  - Replace heavier parsers where binary size and latency matter

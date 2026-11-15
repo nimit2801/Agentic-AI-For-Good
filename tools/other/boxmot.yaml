@@ -1,0 +1,26 @@
+name: BoxMOT
+description: Pluggable Python and C++ multi-object tracking modules you can drop onto YOLO, segmentation, or pose models. Supports axis-aligned and oriented boxes and ships SORT, DeepSORT, ByteTrack, BoT-SORT, StrongSORT, and OC-SORT as swappable backends.
+tagline: Plug SOTA trackers onto any detector
+
+github_url: https://github.com/mikel-brostrom/boxmot
+website_url: https://mikel-brostrom.github.io/boxmot/
+docs_url: https://mikel-brostrom.github.io/boxmot/
+install_command: pip install boxmot
+
+category: Other
+tags: [python, computer-vision, multi-object-tracking, yolo, bytetrack, deepsort, mot]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Research MOT code is glued to one detector and one paper. Teams
+  that already run YOLO or a pose model need trackers they can swap
+  without rewriting association. BoxMOT packages SOTA MOT backends
+  as modules for axis-aligned and rotated boxes.
+
+use_cases:
+  - Swap ByteTrack, StrongSORT, or OC-SORT behind an Ultralytics YOLO detector
+  - Track oriented boxes on aerial or document imagery
+  - Add MOT to a segmentation or pose model without forking the tracker repo
+  - Compare MOT backends on the same video with one Python API
