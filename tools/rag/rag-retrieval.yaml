@@ -1,0 +1,27 @@
+name: RAG-Retrieval
+description: Python toolkit for fine-tuning RAG retrievers including embedding models, ColBERT, and rerankers. RAG-Retrieval trains dense and late-interaction retrievers so teams can improve recall on private corpora without assembling separate training stacks.
+tagline: Fine-tune embeddings, ColBERT, and rerankers
+
+github_url: https://github.com/NovaSearch-Team/RAG-Retrieval
+docs_url: https://github.com/NovaSearch-Team/RAG-Retrieval
+
+install_command: pip install rag-retrieval
+
+category: RAG
+tags: [python, rag, colbert, reranker, embeddings, fine-tuning, retrieval]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  RAG quality often stalls on a generic embedding model. Training
+  ColBERT, dense retrievers, and rerankers usually means separate
+  repos and scripts. RAG-Retrieval unifies those fine-tuning paths
+  so a private corpus can get a matched retriever stack.
+
+use_cases:
+  - Fine-tune a dense embedding model on domain question-passage pairs
+  - Train ColBERT late interaction for high-recall RAG retrieval
+  - Fit a reranker on labeled query-document pairs from production logs
+  - Compare embedding, ColBERT, and rerank pipelines on one corpus
+  - Distill a smaller retriever for on-prem RAG serving

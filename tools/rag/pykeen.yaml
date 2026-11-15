@@ -1,0 +1,27 @@
+name: PyKEEN
+description: Python library for training and evaluating knowledge graph embeddings with TransE, RotatE, ComplEx, and related models. PyKEEN turns triples into vectors so GraphRAG and link-prediction pipelines can score missing facts in a knowledge graph.
+tagline: Knowledge graph embeddings in Python
+
+github_url: https://github.com/pykeen/pykeen
+docs_url: https://pykeen.readthedocs.io/en/stable/
+
+install_command: pip install pykeen
+
+category: RAG
+tags: [python, knowledge-graph, embeddings, kge, rotate, link-prediction]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  GraphRAG and knowledge-base completion need entity and relation
+  vectors, not only text embeddings. Reimplementing TransE or RotatE
+  is error-prone. PyKEEN trains and evaluates those models so triples
+  become embeddings that retrieval and link prediction can use.
+
+use_cases:
+  - Train RotatE embeddings on a domain knowledge graph for retrieval
+  - Rank candidate tails for missing triples before a RAG answer
+  - Benchmark TransE, ComplEx, and RotatE on the same triple set
+  - Export entity vectors that mix with text embeddings in hybrid RAG
+  - Evaluate link prediction hits at K on a held-out knowledge graph

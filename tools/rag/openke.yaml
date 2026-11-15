@@ -1,0 +1,25 @@
+name: OpenKE
+description: Open toolkit from THUNLP for knowledge graph embeddings including TransE, TransH, DistMult, and ComplEx. OpenKE trains entity and relation vectors so GraphRAG and KB completion systems can score triples at scale.
+tagline: Knowledge embedding toolkit from THUNLP
+
+github_url: https://github.com/thunlp/OpenKE
+website_url: http://openke.thunlp.org/
+docs_url: https://github.com/thunlp/OpenKE
+
+category: RAG
+tags: [python, knowledge-graph, embeddings, transe, thunlp, pytorch]
+pricing: free
+is_open_source: true
+
+problem_solved: |
+  Knowledge-graph completion and GraphRAG need trained TransE-style
+  embeddings. Research code for each model is fragmented. OpenKE
+  packages those KGE models with C++ sampling so teams can train
+  entity and relation vectors on standard benchmarks and custom graphs.
+
+use_cases:
+  - Train TransE or ComplEx on Freebase or a private triple store
+  - Produce entity embeddings that feed a GraphRAG retriever
+  - Run link prediction to find missing facts in a knowledge base
+  - Compare DistMult and TransH on the same training triples
+  - Export embeddings for Wikidata-scale graphs used in QA
