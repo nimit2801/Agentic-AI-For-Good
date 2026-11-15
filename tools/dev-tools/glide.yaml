@@ -1,0 +1,27 @@
+name: Glide
+description: Image loading and caching library for Android focused on smooth scrolling. Glide decodes, caches, and displays remote and local images so Android apps can show model outputs, dataset galleries, and media-heavy lists without jank.
+tagline: Smooth-scrolling image loader for Android
+
+github_url: https://github.com/bumptech/glide
+website_url: https://bumptech.github.io/glide/
+docs_url: https://bumptech.github.io/glide/
+
+category: Dev Tools
+tags: [android, java, image, cache, ui, media]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Android lists that bind remote images from APIs, datasets, or generated
+  media stutter when decode and cache work hits the main thread. Glide
+  loads images into ImageView and RecyclerView with memory and disk
+  cache, downsampling, and lifecycle-aware requests so ML product UIs
+  scroll smoothly.
+
+use_cases:
+  - Bind generated images into a RecyclerView gallery of model outputs
+  - Cache dataset thumbnails for an Android labeling or evaluation app
+  - Load avatars and attachment previews in an agent chat list
+  - Decode local camera or file images for on-device vision pipelines
+  - Prefetch media for offline review of training or RAG source images

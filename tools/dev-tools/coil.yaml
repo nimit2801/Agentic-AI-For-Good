@@ -1,0 +1,27 @@
+name: Coil
+description: Kotlin image loading library for Android and Compose Multiplatform. Coil (Coroutine Image Loader) downloads, caches, and displays images with coroutines so Android and Compose apps can show model outputs, dataset previews, and remote assets with little boilerplate.
+tagline: Coroutine image loader for Android and Compose
+
+github_url: https://github.com/coil-kt/coil
+website_url: https://coil-kt.github.io/coil/
+docs_url: https://coil-kt.github.io/coil/getting_started/
+
+category: Dev Tools
+tags: [kotlin, android, compose, image, coroutines, cache, ui]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Android and Compose apps that show remote images from model APIs or
+  datasets need download, cache, and cancellation. Older Java loaders
+  are heavier than a Kotlin-first stack. Coil uses coroutines, Okio,
+  and Compose integration so image requests pause with the UI and
+  cache results without a custom Glide or Picasso wrapper.
+
+use_cases:
+  - Display generated images from a vision or diffusion API in Jetpack Compose
+  - Cache dataset thumbnails in an Android ML labeling or review app
+  - Load avatars and tool icons in a Compose agent chat UI
+  - Use OkHttp or Ktor networking backends for authenticated model-asset URLs
+  - Share one ImageLoader across Android and Compose Multiplatform screens

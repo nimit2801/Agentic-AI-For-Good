@@ -1,0 +1,26 @@
+name: Kingfisher
+description: Pure-Swift library for downloading and caching images from the web on iOS, macOS, tvOS, watchOS, and visionOS. Kingfisher loads, caches, and transforms remote images so Swift UIs can show model outputs, dataset previews, and avatar thumbnails without a custom downloader.
+tagline: Swift image download and cache library
+
+github_url: https://github.com/onevcat/Kingfisher
+docs_url: https://github.com/onevcat/Kingfisher
+
+category: Dev Tools
+tags: [swift, ios, image, cache, macos, ui, networking]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Swift apps that display remote images from model APIs, datasets, or
+  generated assets need download, cache, and placeholder handling.
+  Hand-rolled URLSession plus disk cache is error-prone. Kingfisher
+  loads images into UIImageView and SwiftUI Image with memory and disk
+  cache, processors, and placeholders so AI product UIs stay fast.
+
+use_cases:
+  - Show generated images from a diffusion or vision API in a SwiftUI gallery
+  - Cache dataset thumbnails for an on-device ML labeling or review app
+  - Load user avatars and tool icons in an iOS agent chat interface
+  - Apply processors to resize and crop remote model outputs before display
+  - Prefetch product or document images for offline review on iOS

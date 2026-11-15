@@ -1,0 +1,26 @@
+name: Alamofire
+description: Swift HTTP networking library for iOS, macOS, tvOS, and watchOS. Alamofire wraps URLSession with request chaining, authentication, retries, and response validation so Swift apps can call LLM APIs, agent backends, and model gateways without hand-rolled URLSession code.
+tagline: Elegant HTTP networking in Swift
+
+github_url: https://github.com/Alamofire/Alamofire
+docs_url: https://github.com/Alamofire/Alamofire
+
+category: Dev Tools
+tags: [swift, ios, http, networking, urlsession, macos, client]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Swift apps that talk to LLM APIs, agent backends, or model-serving
+  endpoints often copy URLSession boilerplate for auth, retries, and
+  JSON decoding. Alamofire gives a chainable request API with interceptors,
+  retry policies, and response handlers so iOS and macOS clients can call
+  those APIs without a custom HTTP stack.
+
+use_cases:
+  - Call OpenAI-compatible chat and embedding APIs from an iOS or macOS app
+  - Add retry and auth interceptors around agent tool HTTP calls
+  - Upload training images or documents from a Swift client to a model pipeline
+  - Stream JSON responses from a local or remote model gateway
+  - Share one Session configuration across several backend services
