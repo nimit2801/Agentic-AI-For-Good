@@ -1,0 +1,27 @@
+name: NLog
+description: Flexible structured logging library for .NET across desktop, web, and mobile runtimes. NLog routes events to files, databases, and network sinks so C# model-serving and agent services keep configurable traces without a custom logger.
+tagline: Flexible structured logging for .NET
+
+github_url: https://github.com/NLog/NLog
+website_url: https://nlog-project.org
+docs_url: https://nlog-project.org/config/
+install_command: dotnet add package NLog
+
+category: Dev Tools
+tags: [dotnet, csharp, logging, structured, observability]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  .NET services that call LLMs and agent tools need levels, targets, and
+  layouts that change without a rebuild. Console.WriteLine cannot do that.
+  NLog configures file, database, and network sinks so those events stay
+  structured and filterable in production.
+
+use_cases:
+  - Log LLM request ids and latency from an ASP.NET model gateway
+  - Route agent tool-call errors to a file target during eval runs
+  - Configure per-environment log levels without recompiling
+  - Ship structured events from a worker that embeds or retrains models
+  - Capture correlation ids across multi-step C# agent jobs
