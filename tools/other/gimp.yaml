@@ -1,0 +1,27 @@
+name: GIMP
+description: GNU Image Manipulation Program, a free raster editor for photo retouching, composition, and image authoring. GIMP is used to prepare training images, annotate datasets, and export assets for vision and generative-AI pipelines without a paid desktop editor.
+tagline: Free raster image editor for dataset and asset work
+
+github_url: https://github.com/GNOME/gimp
+website_url: https://www.gimp.org/
+docs_url: https://www.gimp.org/docs/
+
+category: Other
+tags: [image, editor, raster, desktop, vision, open-source]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+install_command: brew install --cask gimp
+
+problem_solved: |
+  Vision and generative-AI teams still need a desktop editor to crop,
+  mask, retouch, and export training images. Paid tools lock that work
+  behind licenses. GIMP provides layers, masks, and batch-friendly
+  export so datasets and model assets can be prepared on a free stack.
+
+use_cases:
+  - Crop, mask, and retouch images before adding them to a vision training set
+  - Annotate or composite sample assets for a generative model demo
+  - Convert and export images to formats used by OCR or diffusion pipelines
+  - Batch-clean screenshots used as RAG or UI-agent evaluation fixtures
+  - Prepare transparent PNGs and icons for an AI product interface

@@ -1,0 +1,28 @@
+name: json-c
+description: JSON parser for C with a reference-counted object model. json-c lets native services, inference runtimes, and data pipelines read and write JSON configs and payloads without pulling in a C++ or higher-level runtime.
+tagline: Reference-counted JSON library for C
+
+github_url: https://github.com/json-c/json-c
+website_url: https://github.com/json-c/json-c/wiki
+docs_url: https://json-c.github.io/json-c/
+install_command: brew install json-c
+
+category: Dev Tools
+tags: [c, json, parser, config, native, open-source]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  C inference servers, native data tools, and embedded clients still
+  need to parse JSON configs and API payloads. C++ libraries are not
+  always an option. json-c provides a reference-counted object tree
+  so native code can load, mutate, and serialize JSON without a
+  heavier runtime.
+
+use_cases:
+  - Load JSON configuration for a C inference or embedding service
+  - Parse JSON API payloads in a native model-gateway helper
+  - Serialize metrics or traces from a C runtime to JSON logs
+  - Round-trip JSON configs in CLI tools that wrap ML binaries
+  - Embed a small JSON parser in a native plugin that talks to an LLM API
