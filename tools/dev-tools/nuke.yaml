@@ -1,0 +1,26 @@
+name: Nuke
+description: Swift image loading system with memory and disk cache, pipeline processing, and SwiftUI plus UIKit integrations. Nuke fetches and displays remote images so iOS apps can show generated art, dataset previews, and chat attachments without a custom downloader.
+tagline: Image loading system for Swift
+
+github_url: https://github.com/kean/Nuke
+website_url: https://kean.blog/nuke
+docs_url: https://kean.blog/nuke
+
+category: Dev Tools
+tags: [swift, ios, image, cache, swiftui, uikit, networking]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Swift apps that show generated images, dataset thumbnails, or chat
+  attachments need download, decode, and cache logic. Custom URLSession
+  pipelines miss cancellation and memory pressure. Nuke loads images
+  through a cache-aware pipeline so iOS AI UIs stay responsive.
+
+use_cases:
+  - Display diffusion or vision-model outputs in a SwiftUI gallery
+  - Cache dataset thumbnails for an on-device labeling or review app
+  - Load chat image attachments in an iOS agent messenger
+  - Prefetch product or document images for offline review on iPhone
+  - Decode and resize remote model screenshots before showing them in UIKit

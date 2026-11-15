@@ -1,0 +1,25 @@
+name: ObjectMapper
+description: Swift library that maps JSON to model objects and back. ObjectMapper converts LLM API responses, tool schemas, and agent payloads into typed Swift structs so iOS clients can decode nested JSON without hand-written parsers.
+tagline: JSON object mapping for Swift
+
+github_url: https://github.com/tristanhimmelman/ObjectMapper
+docs_url: https://github.com/tristanhimmelman/ObjectMapper
+
+category: Dev Tools
+tags: [swift, ios, json, mapping, models, api, macos]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Swift clients talking to LLM and agent APIs need typed models for nested
+  JSON. Hand-written dictionary parsing drifts as schemas change.
+  ObjectMapper maps JSON to Swift objects and back so iOS apps can decode
+  completions, tool calls, and config payloads into stable types.
+
+use_cases:
+  - Map chat completion JSON into Swift model objects in an iOS client
+  - Decode tool-call argument payloads into typed structs for agent UIs
+  - Serialize local prompt templates and settings back to JSON for an API
+  - Transform nested evaluation or tracing events from a backend into models
+  - Keep a shared mapping layer across iOS and macOS LLM client targets

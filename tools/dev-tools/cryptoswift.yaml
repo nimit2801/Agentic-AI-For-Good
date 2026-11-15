@@ -1,0 +1,26 @@
+name: CryptoSwift
+description: Pure-Swift cryptography library implementing AES, SHA, HMAC, and related algorithms. CryptoSwift lets iOS and macOS apps hash prompts, encrypt API keys, and protect on-device model artifacts without linking CommonCrypto or a C crypto stack.
+tagline: Pure-Swift crypto algorithms
+
+github_url: https://github.com/krzyzanowskim/CryptoSwift
+website_url: http://cryptoswift.io
+docs_url: https://github.com/krzyzanowskim/CryptoSwift
+
+category: Dev Tools
+tags: [swift, ios, cryptography, aes, sha, hmac, macos, security]
+pricing: free
+is_open_source: true
+license: zlib-style
+
+problem_solved: |
+  Swift apps that store API keys, hash prompts, or encrypt on-device model
+  files often wrap CommonCrypto or ship a C library. CryptoSwift provides
+  AES, SHA, HMAC, and related algorithms in Swift so iOS and macOS clients
+  can protect secrets and artifacts without a native crypto binding.
+
+use_cases:
+  - Hash prompt or document bytes before sending them to an embedding API
+  - Encrypt API keys and tokens stored in an iOS agent client
+  - Compute HMAC signatures for authenticated calls to a model gateway
+  - Protect on-device model weights or caches at rest on macOS
+  - Derive keys for local encryption of chat history in a Swift app

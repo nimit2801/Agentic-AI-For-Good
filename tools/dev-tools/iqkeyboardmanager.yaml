@@ -1,0 +1,25 @@
+name: IQKeyboardManager
+description: Codeless Swift library that keeps UITextField and UITextView visible when the iOS keyboard appears. IQKeyboardManager handles keyboard avoidance, next and previous navigation, and toolbar setup so chat and form screens in AI apps stay usable without custom insets.
+tagline: Codeless iOS keyboard avoidance
+
+github_url: https://github.com/hackiftekhar/IQKeyboardManager
+docs_url: https://github.com/hackiftekhar/IQKeyboardManager
+
+category: Dev Tools
+tags: [swift, ios, keyboard, uikit, chat, forms, ux]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  iOS keyboards cover text fields in chat, prompt, and login screens unless
+  the app tracks keyboard height and content insets. IQKeyboardManager
+  auto-scrolls the focused field into view and adds a toolbar, so Swift
+  AI apps keep prompt input usable without per-screen keyboard code.
+
+use_cases:
+  - Keep a chat composer visible while the user types prompts on iPhone
+  - Avoid keyboard overlap on login and API-key entry forms in an AI app
+  - Add next and previous field navigation on multi-step onboarding screens
+  - Ship a UIKit agent demo without writing UIKeyboard notifications
+  - Preserve scroll position in a feedback form that collects model ratings

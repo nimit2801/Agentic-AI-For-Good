@@ -1,0 +1,25 @@
+name: SwiftyJSON
+description: Swift library for parsing JSON with a concise subscript API. SwiftyJSON wraps nested dictionaries and arrays so iOS and macOS apps can read LLM API payloads, tool-call arguments, and model config files without optional-chaining boilerplate.
+tagline: Concise JSON parsing for Swift
+
+github_url: https://github.com/SwiftyJSON/SwiftyJSON
+docs_url: https://github.com/SwiftyJSON/SwiftyJSON
+
+category: Dev Tools
+tags: [swift, ios, json, parsing, macos, api, client]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Swift clients that consume LLM APIs, tool-call JSON, or model config
+  files end up with nested optionals and type casts. SwiftyJSON gives a
+  subscript API over JSON so iOS and macOS apps can pull strings, numbers,
+  and arrays from those payloads without hand-rolled dictionary walking.
+
+use_cases:
+  - Parse chat completion and embedding JSON from an OpenAI-compatible API in Swift
+  - Read tool-call argument objects from an agent backend without nested optionals
+  - Load model and prompt config files shipped as JSON in an iOS app bundle
+  - Inspect error payloads from a model gateway during client debugging
+  - Convert loosely typed JSON into values used by a SwiftUI agent chat UI
