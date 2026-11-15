@@ -1,0 +1,26 @@
+name: Thumbor
+description: Open-source on-demand image thumbnail service that crops, resizes, and filters photos from a URL. Thumbor is the classic self-hosted imaging endpoint for newsrooms and product sites that need smart cropping without a commercial CDN.
+tagline: On-demand thumbnails with smart crop
+
+github_url: https://github.com/thumbor/thumbor
+website_url: https://thumbor.org
+docs_url: https://thumbor.readthedocs.io/
+install_command: pip install thumbor
+
+category: Dev Tools
+tags: [python, images, thumbnails, cropping, imaging]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Sites that store original photos still need dozens of crop sizes
+  per page. Shipping every size from the CMS is wasteful. Thumbor
+  generates and caches thumbnails on demand with focal-point smart
+  crop, which is what media teams used before managed image CDNs.
+
+use_cases:
+  - Generate article thumbnails from original newsroom photos
+  - Smart-crop faces or focal points for social cards
+  - Self-host an imaging endpoint instead of a commercial image CDN
+  - Apply filters and watermarks through URL-based transforms
