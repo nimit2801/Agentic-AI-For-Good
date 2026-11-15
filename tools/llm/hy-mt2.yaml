@@ -1,0 +1,28 @@
+name: Hy-MT2
+description: >-
+  Hy-MT2 is Tencent Hunyuan's family of fast-thinking multilingual translation
+  models (1.8B, 7B, and 30B-A3B MoE). It covers 33 languages, follows translation
+  instructions, and ships a 440 MB 1.25-bit on-device build of the 1.8B model.
+tagline: Tencent Hunyuan multilingual translation models
+
+github_url: https://github.com/Tencent-Hunyuan/Hy-MT2
+website_url: https://huggingface.co/tencent/Hy-MT2-1.8B
+docs_url: https://huggingface.co/tencent/Hy-MT2-1.8B
+
+category: LLM
+tags: [llm, translation, multilingual, hunyuan, tencent, huggingface, on-device]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  General chat models waste compute on translation and miss instruction-following
+  for terminology, formality, and domain style. Hy-MT2 is trained for translation
+  across 33 languages with 1.8B, 7B, and 30B-A3B sizes, plus AngelSlim 1.25-bit
+  quantization so the 1.8B model fits in 440 MB for offline subtitle and device work.
+
+use_cases:
+  - Translate documents and chat across 33 languages with Hy-MT2-7B or 30B-A3B
+  - Run Hy-MT2-1.8B on-device or offline for private subtitle translation
+  - Follow translation instructions for terminology, tone, and domain constraints
+  - Fine-tune Hy-MT2 with LoRA or full weights via LLaMA-Factory and DeepSpeed

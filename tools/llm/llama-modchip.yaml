@@ -1,0 +1,28 @@
+name: llama-modchip
+description: >-
+  llama-modchip is a llama.cpp fork that runs 284B DeepSeek-V4-Flash and 30B MoE
+  models on CPU RAM with Fractal-64 and LUT-VQ3-64 quantization, speculative
+  decoding, and no GPU required.
+tagline: CPU inference for 284B MoE models with no GPU
+
+github_url: https://github.com/synchopate/llama-modchip
+website_url: https://github.com/synchopate/llama-modchip
+docs_url: https://github.com/synchopate/llama-modchip#readme
+
+category: LLM
+tags: [llm, llama-cpp, cpu-inference, quantization, moe, deepseek, gguf, speculative-decoding]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Serving 30B-284B MoE models usually needs a GPU rack because 4-bit GGUF still
+  blows past laptop RAM and bandwidth. llama-modchip adds Fractal-64 and LUT-VQ3-64
+  block quantization plus speculative decoding so DeepSeek-V4-Flash 284B fits in
+  64 GB RAM and Nemotron 30B runs on 16-32 GB CPU machines with zero GPUs.
+
+use_cases:
+  - Run DeepSeek-V4-Flash 284B on a 64 GB desktop with no discrete GPU
+  - Serve Nemotron 30B MoE on a 16-32 GB laptop for local coding agents
+  - Hybrid-split hot attention onto a 16 GB GPU while MoE experts stay in CPU RAM
+  - Benchmark CPU tok/s and perplexity against Q4_0 and IQ1 GGUF baselines
