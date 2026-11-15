@@ -1,0 +1,26 @@
+name: SwiftLog
+description: Apple's official logging API for Swift. SwiftLog defines a Logger protocol and pluggable backends so server-side Swift and Apple-platform apps share one logging interface across console, file, and observability sinks.
+tagline: Official logging API for Swift
+
+github_url: https://github.com/apple/swift-log
+website_url: https://swiftpackageindex.com/apple/swift-log
+docs_url: https://swiftpackageindex.com/apple/swift-log/documentation
+
+category: Dev Tools
+tags: [swift, logging, apple, spm, server-side-swift, observability]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Swift services that call LLMs and agent tools need a shared Logger
+  API rather than ad hoc print statements. SwiftLog is the SSWG
+  logging interface, so libraries and apps log through one protocol
+  and swap backends without rewriting call sites.
+
+use_cases:
+  - Log LLM request ids from a Vapor or Hummingbird model gateway
+  - Plug a file or OTLP backend under agent tool-call traces
+  - Keep library and app logs on one Logger protocol in a Swift package
+  - Unit-test log output from a Swift agent client with a recording backend
+  - Standardize log levels across iOS and Linux Swift services

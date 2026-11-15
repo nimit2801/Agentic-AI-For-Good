@@ -1,0 +1,28 @@
+name: ExifTool
+description: Perl library and CLI for reading and writing EXIF, IPTC, XMP, and other metadata across thousands of file formats. ExifTool is the standard tool for inspecting and repairing image and media metadata in dataset pipelines.
+tagline: Read and write image and media metadata
+
+github_url: https://github.com/exiftool/exiftool
+website_url: https://exiftool.org/
+docs_url: https://exiftool.org/
+install_command: brew install exiftool
+
+category: Data
+tags: [exif, metadata, images, perl, cli, iptc, xmp]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Vision datasets often arrive with missing, wrong, or privacy-leaking
+  EXIF. Custom parsers cover a few formats and miss GPS, timestamps,
+  and camera fields. ExifTool reads and writes metadata across thousands
+  of formats so ingestion jobs can strip PII, fix dates, and keep
+  camera tags without a one-off parser.
+
+use_cases:
+  - Strip GPS and camera serials from images before a public training set
+  - Repair DateTimeOriginal on photos used as a vision or OCR corpus
+  - Extract camera make, lens, and ISO into a dataset manifest
+  - Copy XMP sidecar tags onto converted files in a preprocessing job
+  - Audit a media dump for hidden metadata before RAG or labeling
