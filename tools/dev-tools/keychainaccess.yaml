@@ -1,0 +1,25 @@
+name: KeychainAccess
+description: Simple Swift wrapper for the Apple Keychain on iOS, watchOS, tvOS, and macOS. KeychainAccess stores API keys, tokens, and on-device secrets so Swift AI clients can persist credentials without writing Security.framework code.
+tagline: Simple Swift Keychain wrapper
+
+github_url: https://github.com/kishikawakatsumi/KeychainAccess
+docs_url: https://github.com/kishikawakatsumi/KeychainAccess
+
+category: Dev Tools
+tags: [swift, ios, keychain, security, macos, credentials, secrets]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Swift apps that call LLM APIs need to store tokens and API keys on
+  device. Raw Security.framework calls are verbose and easy to get
+  wrong. KeychainAccess wraps Keychain read and write so iOS and macOS
+  clients can persist those secrets without custom keychain code.
+
+use_cases:
+  - Store OpenAI or Anthropic API keys in the iOS Keychain
+  - Persist agent session tokens across app launches on macOS
+  - Save OAuth refresh tokens for a model-gateway login flow
+  - Isolate per-environment secrets for debug versus production clients
+  - Read stored credentials into a Swift HTTP client at startup

@@ -1,0 +1,26 @@
+name: SwiftSoup
+description: Pure Swift HTML parser with DOM, CSS, and jQuery-style selectors for iOS, macOS, tvOS, watchOS, and Linux. SwiftSoup extracts and cleans HTML so Swift apps can scrape docs, strip markup from RAG sources, and sanitize untrusted web content without a Java jsoup port.
+tagline: Pure Swift HTML parser
+
+github_url: https://github.com/scinfu/SwiftSoup
+website_url: https://scinfu.github.io/SwiftSoup/
+docs_url: https://scinfu.github.io/SwiftSoup/
+
+category: Dev Tools
+tags: [swift, html, parser, scraping, ios, macos, rag, sanitizer]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Swift clients that ingest web pages for RAG, docs, or chat previews
+  need HTML parsing and sanitizing. Shipping a C parser or calling a
+  server just to strip tags is heavy. SwiftSoup gives DOM and CSS
+  selectors in Swift so those pipelines stay on-device.
+
+use_cases:
+  - Strip HTML from documentation pages before embedding them in a RAG index
+  - Extract article text from scraped pages in an iOS research agent
+  - Sanitize untrusted HTML before showing it in a SwiftUI chat view
+  - Select links and headings with CSS queries for a crawling pipeline
+  - Clean model-generated HTML snippets on macOS before export
