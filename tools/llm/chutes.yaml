@@ -1,0 +1,31 @@
+name: Chutes
+description: >-
+  Chutes is a decentralized serverless AI inference platform on Bittensor SN64.
+  It serves open-source LLMs plus image, video, and speech models through an
+  OpenAI-compatible API, with pay-per-token hosted models and private GPU chutes
+  you can deploy yourself.
+tagline: Decentralized serverless inference for open-source models
+
+github_url: https://github.com/chutesai/chutes
+website_url: https://chutes.ai
+docs_url: https://chutes.ai/docs/getting-started/quickstart
+install_command: pip install chutes
+
+category: LLM
+tags: [llm, inference, serverless, bittensor, openai-compatible, gpu, open-source-models]
+pricing: paid
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Hosted LLM APIs add markup and lock you into one cloud, while self-hosting
+  means standing up GPUs that sit idle. Chutes puts independent GPU operators
+  on Bittensor SN64 behind an OpenAI-compatible endpoint, so you pay per token
+  for hot models or deploy a private chute billed by the second, including TEE
+  options, without owning the cluster.
+
+use_cases:
+  - Point an OpenAI client at llm.chutes.ai/v1 for DeepSeek, Kimi, GLM, or Qwen
+  - Deploy a private vLLM chute for a custom fine-tune and pay only while it is hot
+  - Run image, video, speech, and embedding models on the same serverless network
+  - Use TEE-backed models when prompts and weights must stay in confidential compute
