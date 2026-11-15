@@ -1,0 +1,26 @@
+name: TuGraph
+description: High-performance graph database from Ant Group for large property graphs with Cypher, stored procedures, and HTAP workloads. TuGraph serves knowledge graphs, fraud detection, and GraphRAG at billion-edge scale.
+tagline: High-performance graph database
+
+github_url: https://github.com/TuGraph-family/tugraph-db
+website_url: https://tugraph.tech
+docs_url: https://tugraph-db.readthedocs.io/
+
+category: Vector DB
+tags: [graph, cypher, knowledge-graph, graphrag, htap, cpp, ant-group]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Fraud, recommendation, and GraphRAG systems need low-latency hops on
+  billion-edge graphs. General SQL stores crawl on multi-hop queries.
+  TuGraph is a native graph database with Cypher and stored procedures
+  so those traversals stay fast at production scale.
+
+use_cases:
+  - Serve multi-hop fraud and risk queries on a large property graph
+  - Back a knowledge graph used by GraphRAG retrieval
+  - Run Cypher plus stored procedures for online graph recommendations
+  - HTAP analytics over entity-relationship data without a separate OLAP copy
+  - Load billion-edge graphs for enterprise knowledge applications

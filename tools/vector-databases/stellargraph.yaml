@@ -1,0 +1,27 @@
+name: StellarGraph
+description: Python library for machine learning on graphs, with algorithms for node classification, link prediction, and graph classification. StellarGraph wraps NetworkX and TensorFlow so teams can train GNNs on knowledge graphs used in recommendations and GraphRAG.
+tagline: Machine learning on graphs in Python
+
+github_url: https://github.com/stellargraph/stellargraph
+docs_url: https://stellargraph.readthedocs.io/
+
+install_command: pip install stellargraph
+
+category: Vector DB
+tags: [python, gnn, graphsage, knowledge-graph, tensorflow, networkx]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Building node embeddings and link predictors for knowledge graphs
+  usually means assembling NetworkX, NumPy, and a GNN framework.
+  StellarGraph provides GraphSAGE, GCN, and related models so Python
+  teams can train those tasks without a custom training loop.
+
+use_cases:
+  - Train GraphSAGE embeddings on a knowledge graph for retrieval
+  - Predict missing links between entities before a GraphRAG index
+  - Classify nodes in a citation or product graph
+  - Prototype GNN recommenders from NetworkX graphs in Python
+  - Generate graph features that feed an LLM ranking step
