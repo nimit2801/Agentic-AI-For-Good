@@ -1,0 +1,24 @@
+name: Codecov
+description: Hosted code coverage reporting for GitHub, GitLab, and Bitbucket. Codecov uploads coverage from CI, shows diffs on pull requests, and tracks coverage trends so teams catch untested lines before merge.
+tagline: Coverage reports and PR comments from your CI uploads
+
+website_url: https://about.codecov.io
+docs_url: https://docs.codecov.com
+github_url: https://github.com/codecov/codecov-action
+
+category: Dev Tools
+tags: [coverage, ci, github-actions, testing, quality, saas]
+pricing: freemium
+is_open_source: false
+
+problem_solved: |
+  Coverage XML sitting in CI artifacts does not tell reviewers which new lines are
+  untested. Codecov ingests uploads from GitHub Actions and other CI, comments on
+  pull requests with coverage diffs, and charts history so regressions are visible
+  without opening a local HTML report.
+
+use_cases:
+  - Comment coverage diffs on GitHub pull requests from a GitHub Action upload
+  - Track coverage trends across default-branch builds for a Python or TypeScript repo
+  - Fail CI when a PR drops coverage below a project target
+  - Combine flags so backend and frontend coverage report as separate components

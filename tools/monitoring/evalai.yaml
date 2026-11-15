@@ -1,0 +1,26 @@
+name: EvalAI
+description: Open platform for creating, hosting, and participating in AI challenge evaluations. EvalAI runs submitted models and Docker agents against private test sets so organizers can compare state-of-the-art methods without leaking labels.
+tagline: Host AI challenges and evaluate submitted models
+
+github_url: https://github.com/Cloud-CV/EvalAI
+website_url: https://eval.ai
+docs_url: https://evalai.readthedocs.io
+
+install_command: pip install evalai
+
+category: Monitoring
+tags: [evaluation, benchmarks, challenges, computer-vision, agents, docker]
+pricing: free
+is_open_source: true
+
+problem_solved: |
+  Research challenges need private test labels, reproducible scoring, and a
+  leaderboard without emailing zip files. EvalAI hosts challenges, accepts
+  model or Docker-agent submissions, evaluates them on hidden data, and
+  publishes rankings so organizers can compare methods fairly.
+
+use_cases:
+  - Host a computer-vision challenge with a private test set and public leaderboard
+  - Submit a Docker agent for evaluation inside a sandboxed environment
+  - Track challenge metrics over time for an academic benchmark
+  - Use the EvalAI CLI to upload predictions without opening the web UI

@@ -1,0 +1,27 @@
+name: Quix Streams
+description: Python library for Kafka streaming applications using a Streaming DataFrame API. Quix Streams lets data engineers transform, window, and aggregate event streams in Python without writing low-level Kafka consumer loops.
+tagline: Streaming DataFrames for Kafka in Python
+
+github_url: https://github.com/quixio/quix-streams
+website_url: https://docs.quix.io
+docs_url: https://docs.quix.io
+
+install_command: pip install quixstreams
+
+category: Data
+tags: [kafka, streaming, python, dataframes, event-processing, real-time]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Building Kafka apps in Python usually means manual consumer groups, serde, and
+  windowing code that is easy to get wrong under backpressure. Quix Streams gives
+  a pandas-like Streaming DataFrame over Kafka topics so you can filter, join,
+  window, and produce results without a JVM streaming cluster.
+
+use_cases:
+  - Transform a Kafka topic of inference events into a cleaned feature stream
+  - Window clickstream data in Python and write aggregates back to Kafka
+  - Join two event topics with a streaming DataFrame instead of a Flink job
+  - Prototype a real-time ML feature pipeline locally against a Kafka broker

@@ -1,0 +1,27 @@
+name: Dataform
+description: Framework for SQL-based data transformations in BigQuery. Dataform lets teams version warehouse models, tests, and documentation as code, then compile and run them in Google Cloud with dependency-aware pipelines.
+tagline: SQL workflow-as-code for BigQuery
+
+github_url: https://github.com/dataform-co/dataform
+website_url: https://cloud.google.com/dataform/docs
+docs_url: https://cloud.google.com/dataform/docs
+
+install_command: npm i -g @dataform/cli
+
+category: Data
+tags: [bigquery, sql, data-warehouse, elt, google-cloud, javascript]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Ad hoc BigQuery SQL in the console has no tests, lineage, or code review.
+  Dataform treats warehouse tables as versioned models with assertions and
+  documentation, compiles a dependency graph, and runs it in Google Cloud so
+  feature tables for ML stay reproducible instead of copy-pasted scripts.
+
+use_cases:
+  - Define BigQuery feature tables as Dataform models with tests and docs
+  - Compile a dependency graph of SQL transformations and run it on a schedule
+  - Review warehouse changes in Git instead of editing queries in the console
+  - Publish documented datasets that downstream RAG and training jobs can trust
