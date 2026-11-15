@@ -1,0 +1,25 @@
+name: Elephant Goldfish Model
+description: Google open-source plugin that helps coding agents design and review software using the Elephant-Goldfish Model. EGM skills walk agents through brainstorming, specification, and code review so large-context planning stays separate from goldfish-sized implementation.
+tagline: Spec-driven design and review skills for coding agents
+
+github_url: https://github.com/google/elephant-goldfish-model
+website_url: https://egm.dev
+docs_url: https://egm.dev
+
+category: Dev Tools
+tags: [agents, spec-driven, code-review, claude-code, plugin, google, software-design]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Coding agents mix long-horizon design with short-context implementation and produce specs
+  that drift from the code. Elephant Goldfish Model (EGM) is a plugin of skills that keep
+  elephant-scale planning (brainstorm, design docs, review) separate from goldfish-scale
+  edits, so agents review live code against a written design instead of improvising.
+
+use_cases:
+  - Brainstorm a feature with an agent, then lock a design doc before any code is written
+  - Review a PR plan against the live repository using EGM reviewer prompts
+  - Install the EGM plugin in Claude Code, Codex, or Antigravity for spec-driven sessions
+  - Audit an existing README or architecture note for gaps before implementation starts

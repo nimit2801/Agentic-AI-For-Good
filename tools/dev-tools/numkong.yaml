@@ -1,0 +1,29 @@
+name: NumKong
+description: Portable mixed-precision math, linear algebra, and retrieval kernel library with thousands of SIMD symbols from 4-bit numbers to 128-bit complex types. Targets x86, Arm, RISC-V, LoongArch, Power, and WASM including AMX and SME.
+tagline: Mixed-precision SIMD kernels for math, linear algebra, and retrieval
+
+github_url: https://github.com/ashvardanian/NumKong
+website_url: https://ashvardanian.com/docs/numkong
+docs_url: https://ashvardanian.com/docs/numkong
+
+install_command: |
+  pip install numkong
+  npm install numkong
+
+category: Dev Tools
+tags: [simd, linear-algebra, retrieval, mixed-precision, python, javascript, rust, kernels]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Similarity search, quantization, and mixed-precision linear algebra need hand-tuned SIMD
+  kernels that most teams cannot maintain across x86, Arm, RISC-V, and WASM. NumKong ships
+  thousands of portable kernels from 4-bit integers to 128-bit complex types, including AMX
+  and SME, so retrieval and numeric code can share one library instead of per-ISA forks.
+
+use_cases:
+  - Score embedding batches with mixed-precision SIMD kernels instead of naive NumPy loops
+  - Run the same retrieval kernels from Python, JavaScript, and Rust on x86 and Arm
+  - Prototype 4-bit and 8-bit quantized similarity search without writing assembly
+  - Benchmark AMX and SME paths for linear algebra used in on-device inference
