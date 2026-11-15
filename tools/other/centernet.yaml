@@ -1,0 +1,25 @@
+name: CenterNet
+description: Object detection, 3D detection, and pose estimation by modeling each object as a single center point instead of a box proposal. CenterNet is a standard anchor-free detector baseline used in research and production computer vision stacks.
+tagline: Objects as points
+
+github_url: https://github.com/xingyizhou/CenterNet
+website_url: https://arxiv.org/abs/1904.07850
+docs_url: https://github.com/xingyizhou/CenterNet#readme
+
+category: Other
+tags: [python, computer-vision, object-detection, pose-estimation, anchor-free, pytorch]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Anchor-based detectors spend compute on proposal matching and NMS
+  heuristics. CenterNet predicts a center keypoint plus size and
+  offset, which is a simpler way to detect objects, estimate 3D
+  boxes, and regress poses from the same point representation.
+
+use_cases:
+  - Train an anchor-free COCO detector without region proposals
+  - Estimate 3D vehicle boxes from a single image using center points
+  - Run human pose estimation from the same CenterNet backbone
+  - Baseline a new detector against Objects as Points on COCO

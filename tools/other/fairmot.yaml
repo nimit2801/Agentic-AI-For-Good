@@ -1,0 +1,25 @@
+name: FairMOT
+description: IJCV 2021 multi-object tracker that trains detection and re-identification in one network so the two tasks share features instead of competing. FairMOT is a widely used joint-detection MOT baseline on MOT17 and similar pedestrian benchmarks.
+tagline: One network for detection and re-ID
+
+github_url: https://github.com/ifzhang/FairMOT
+website_url: https://arxiv.org/abs/2004.01888
+docs_url: https://github.com/ifzhang/FairMOT#readme
+
+category: Other
+tags: [python, computer-vision, multi-object-tracking, mot, re-identification, pytorch]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Separate detectors and re-ID models fight over features, so IDs
+  drift when people occlude. FairMOT trains both heads together on
+  a shared backbone, which is what MOT teams need when they want
+  stable pedestrian identities without a two-stage pipeline.
+
+use_cases:
+  - Train a joint detector and re-ID model on MOT17 pedestrian video
+  - Benchmark IDF1 against SORT, DeepSORT, and ByteTrack on MOT challenge sets
+  - Track crowded street or mall cameras where appearance and detection must share features
+  - Fine-tune FairMOT on a custom camera network for people counting

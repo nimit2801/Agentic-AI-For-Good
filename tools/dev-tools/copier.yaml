@@ -1,0 +1,26 @@
+name: Copier
+description: Library and CLI for rendering project templates from Git. Copier can update an already generated project when the template changes, which one-shot cookiecutter-style generators cannot do well for long-lived repos.
+tagline: Project templates that can update later
+
+github_url: https://github.com/copier-org/copier
+website_url: https://copier.readthedocs.io/en/stable/
+docs_url: https://copier.readthedocs.io/en/stable/
+install_command: pip install copier
+
+category: Dev Tools
+tags: [python, scaffolding, templates, cli, cookiecutter, git]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Cookiecutter copies a template once, then the generated repo
+  drifts. Platform and ML teams need to push template fixes into
+  many projects. Copier renders from Git and re-applies updates
+  so generated code can stay in sync with the source template.
+
+use_cases:
+  - Scaffold a new Python or ML service from a Git template
+  - Update dozens of generated repos after a template security fix
+  - Ship an internal project generator with questions and answers
+  - Replace cookiecutter when you need ongoing template migrations
