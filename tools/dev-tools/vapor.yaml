@@ -1,0 +1,27 @@
+name: Vapor
+description: Server-side Swift HTTP web framework for building APIs and sites. Vapor sits on SwiftNIO so teams can serve LLM gateways, agent webhooks, and JSON APIs in Swift with async routes, middleware, and Fluent ORM.
+tagline: Server-side Swift web framework
+
+github_url: https://github.com/vapor/vapor
+website_url: https://vapor.codes
+docs_url: https://docs.vapor.codes
+install_command: brew install vapor
+
+category: Dev Tools
+tags: [swift, web-framework, http, server-side-swift, async, api]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Swift teams that want to serve model and agent APIs usually leave
+  the language at the iOS client. Vapor is an HTTP framework on
+  SwiftNIO so the same language can host routes, middleware, and
+  JSON endpoints for LLM gateways without switching to Node or Go.
+
+use_cases:
+  - Serve an LLM chat and tool-call API from a Swift backend
+  - Expose agent webhooks with async routes and middleware
+  - Put a JSON gateway in front of embeddings or vector search
+  - Share Swift types between an iOS client and a model-serving API
+  - Run a Hummingbird-alternative Vapor service on Linux or macOS

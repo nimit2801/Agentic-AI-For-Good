@@ -1,0 +1,26 @@
+name: Realm
+description: Mobile object database for iOS, macOS, and other Apple platforms that replaces Core Data and SQLite for local persistence. Realm stores live objects so Swift apps can cache agent state, chat history, and on-device model metadata with a small footprint.
+tagline: Mobile database replacing Core Data and SQLite
+
+github_url: https://github.com/realm/realm-swift
+website_url: https://realm.io
+docs_url: https://www.mongodb.com/docs/atlas/device-sdks/sdk/swift/
+
+category: Data
+tags: [swift, ios, database, mobile, sqlite-alternative, offline]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  iOS agent and chat apps need local persistence for threads, tool
+  results, and offline caches. Core Data is heavy and SQLite is
+  boilerplate. Realm stores live objects so those records stay
+  reactive on device without a custom SQL layer.
+
+use_cases:
+  - Cache LLM chat threads and tool results on iOS for offline replay
+  - Persist on-device embedding index metadata in a Swift app
+  - Store agent session state that survives app restarts
+  - Observe live objects as a model-download job updates progress
+  - Replace Core Data for a small Swift client that talks to an LLM API
