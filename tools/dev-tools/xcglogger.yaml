@@ -1,0 +1,25 @@
+name: XCGLogger
+description: Debug logging framework for Swift on iOS, macOS, tvOS, and watchOS. XCGLogger writes console and file logs with date, function, file, and line so Apple-platform apps keep richer traces than print or NSLog.
+tagline: Debug logging for Swift with file and line context
+
+github_url: https://github.com/DaveWoodCom/XCGLogger
+docs_url: https://github.com/DaveWoodCom/XCGLogger
+
+category: Dev Tools
+tags: [swift, ios, macos, logging, cocoapods, spm]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Swift apps that call LLMs and agent APIs often log with print or
+  NSLog, which drop function, file, and line. XCGLogger adds leveled
+  destinations, including files, so those events stay searchable
+  after a crash or a long agent run.
+
+use_cases:
+  - Log LLM request ids with file and line from an iOS chat client
+  - Write agent tool-call errors to a rolling log file on macOS
+  - Replace NSLog in a watchOS companion that streams model status
+  - Filter debug noise while keeping error traces in a TestFlight build
+  - Capture function-level traces during an on-device eval run
