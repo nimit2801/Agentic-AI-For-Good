@@ -1,0 +1,27 @@
+name: Volley
+description: Google HTTP library for Android that queues and caches network requests. Volley handles retries, request cancellation, and disk cache so Android apps can call LLM APIs, agent backends, and model gateways without a custom request queue.
+tagline: Google HTTP request queue for Android
+
+github_url: https://github.com/google/volley
+website_url: https://google.github.io/volley
+docs_url: https://google.github.io/volley
+
+category: Dev Tools
+tags: [android, java, http, networking, cache, google, client]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Android apps that call LLM, embedding, or agent HTTP APIs still need
+  a request queue with retries and cancellation as screens rotate.
+  Volley batches requests, caches responses, and cancels in-flight
+  work with the activity lifecycle so model-gateway clients do not
+  write a custom HttpURLConnection stack.
+
+use_cases:
+  - Queue chat and embedding HTTP calls from an Android agent client
+  - Cancel in-flight model API requests when an Activity is destroyed
+  - Cache JSON responses from a local or remote model gateway
+  - Fetch dataset manifests or evaluation fixtures over HTTP
+  - Retry transient failures against rate-limited LLM endpoints

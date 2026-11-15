@@ -1,0 +1,25 @@
+name: RxSwift
+description: Reactive programming library for Swift. RxSwift models async events as observables so iOS and macOS apps can compose network calls, UI events, and model-stream updates without nested callbacks.
+tagline: Reactive programming in Swift
+
+github_url: https://github.com/ReactiveX/RxSwift
+docs_url: https://github.com/ReactiveX/RxSwift
+
+category: Dev Tools
+tags: [swift, ios, reactive, rx, async, macos]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Swift apps that stream LLM tokens, bind search queries, and react
+  to UI events end up with nested callbacks. RxSwift turns those
+  sources into observables you can map, debounce, and dispose with
+  the view lifecycle so agent and model clients stay composable.
+
+use_cases:
+  - Bind a search box to a debounced embedding or vector-search API
+  - Stream chat tokens from an LLM endpoint into a SwiftUI or UIKit view
+  - Combine auth, tool-call, and model HTTP streams in one observable chain
+  - Dispose network subscriptions when an agent chat screen disappears
+  - Unit-test async UI pipelines with RxTest schedulers

@@ -1,0 +1,26 @@
+name: Moya
+description: Network abstraction layer for Swift built on Alamofire. Moya maps API endpoints to enums so iOS and macOS apps can call LLM, agent, and model-gateway HTTP APIs with typed targets instead of scattering URLSession or Alamofire calls.
+tagline: Typed Swift network layer on Alamofire
+
+github_url: https://github.com/Moya/Moya
+website_url: https://moya.github.io
+docs_url: https://moya.github.io
+
+category: Dev Tools
+tags: [swift, ios, http, networking, alamofire, macos, client]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Swift clients that talk to several LLM or agent backends copy
+  Alamofire call sites across the app. Moya encodes each API as a
+  TargetType enum with path, method, and sample data so model-gateway
+  and tool-call HTTP stays typed, testable, and stubbable.
+
+use_cases:
+  - Declare a typed enum for an OpenAI-compatible chat and embeddings API
+  - Stub LLM HTTP responses in iOS unit tests with Moya sample data
+  - Share one Provider across agent, auth, and vector-search endpoints
+  - Map plugin interceptors for auth and logging on model API calls
+  - Keep SwiftUI views free of raw Alamofire request builders
