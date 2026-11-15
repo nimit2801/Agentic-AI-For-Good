@@ -1,28 +1,55 @@
 {
-  "generatedAt": "2026-11-10T18:33:14Z",
+  "generatedAt": "2026-11-15T18:38:29Z",
   "windowDays": 7,
-  "summary": "This cycle is Claude Fable 5.2. The launch post and its 961-comment HN thread dwarf everything else, with Mythos still gated and Fable cheaper and faster than 5.1. The rest of the week argues about what sits around the model: Amazon's Strands Decider story (624 points) says a harness swap beat another Sonnet bill, Anthropic published a memory design that prefers a few good files over hundreds of notes, and Google shipped Omni 1.2 Flash plus Gemini 4 Carbon while catching a 696-point privacy story about Drive and Gmail going to human annotators. Meta's Muse Ember is aimed at cheap tool-call workers. Builder sentiment is splitting: one-shot games on one side, unread 100% AI codebases on the other.",
+  "summary": "This cycle is agents hitting the real world and bouncing. A 1036-point Maya-site writeup and a 681-point United Airlines booking ban sit next to Anthropic's IPO (1003 points, 917 comments) and Claude Fable 5.2 (923 points, 1054 comments). Google shipped Gemini 4 Hydrogen, Carbon, and a Decisions API in the same window Amazon claimed millions saved by swapping Sonnet for a specialized decider. Builder sentiment split in public: Jane Street's Socratic Tutor skill and Fable one-shot games on one side, unread AI codebases and 'is Opus nerfed' on the other. Skills became both the unit of work and the unit of risk (SkillSpector, SkillEvaluator). Reddit was blocked this run, so community signal is HN plus GitHub.",
   "sourceStats": {
-    "items": 32,
+    "items": 34,
     "sources": {
-      "Anthropic": 2,
-      "Google AI": 2,
+      "Hacker News": 14,
+      "Anthropic": 3,
       "Google DeepMind": 1,
+      "Google AI": 4,
       "Meta AI": 1,
-      "OpenAI": 3,
-      "Hacker News": 8,
-      "Reddit": 1,
-      "Hugging Face": 5,
-      "GitHub": 4
+      "OpenAI": 1,
+      "Hugging Face": 2,
+      "GitHub": 8
     }
   },
   "highlights": [
     {
+      "title": "My AI agents found an unmapped Maya site?",
+      "source": "Hacker News",
+      "url": "https://pietromiotti.com/latest/maya-site",
+      "meta": "1036 pts · 392 comments",
+      "points": 1036,
+      "publishedAt": "2026-11-11T12:05:22Z",
+      "date": "2026-11-11T12:05:22Z",
+      "topics": [
+        "Tool use",
+        "Multi-agent workflows",
+        "Evaluation"
+      ],
+      "why": "The week's highest-point story is a field-research agent loop (maps, imagery, literature), not a model card. Treat the discovery claim with HN's skepticism, and treat the workflow as a bar for multi-tool agents that leave the IDE."
+    },
+    {
+      "title": "Anthropic IPO",
+      "source": "Hacker News",
+      "url": "https://ipo.anthropic.com/us/",
+      "meta": "1003 pts · 917 comments",
+      "points": 1003,
+      "publishedAt": "2026-11-12T11:46:41Z",
+      "date": "2026-11-12T11:46:41Z",
+      "topics": [
+        "Major labs"
+      ],
+      "why": "Claude is now a public-market story. Builders on Anthropic APIs and Claude Code should treat vendor concentration, pricing, and terms as design constraints, not background noise."
+    },
+    {
       "title": "Claude Fable 5.2 and Mythos 5.2",
       "source": "Anthropic",
       "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
-      "meta": "840 pts · 961 comments",
-      "points": 840,
+      "meta": "923 pts · 1054 comments",
+      "points": 923,
       "publishedAt": "2026-11-09T18:01:10Z",
       "date": "2026-11-09T18:01:10Z",
       "topics": [
@@ -30,28 +57,43 @@
         "Coding agents",
         "Evaluation"
       ],
-      "why": "Anthropic's Nov 9 drop is the week's actual headline: Fable 5.2 is cheaper ($8/$40 per million tokens), up to 30% faster than 5.1, optional 2.5x fast mode, and it became Claude Code's default. Mythos stays gated. HN's 961-comment thread is where builders are stress-testing it, not the duplicate 6-comment post."
+      "why": "The week's main Anthropic drop, and the largest comment thread. Coding-agent quality shifted enough that evals, prompts, and default-model choices need a re-run, not a patch. Mythos stays gated."
+    },
+    {
+      "title": "Is Opus 5.5 nerfed? Thinking patterns changed on November 3",
+      "source": "Hacker News",
+      "url": "https://twitter.com/shanemelaugh/status/2119192075505893695",
+      "meta": "825 pts · 520 comments",
+      "points": 825,
+      "publishedAt": "2026-11-09T07:04:25Z",
+      "date": "2026-11-09T07:04:25Z",
+      "topics": [
+        "Major labs",
+        "Coding agents",
+        "Evaluation"
+      ],
+      "why": "Silent behavior change on a production coding model is an ops incident. Pin model IDs, log traces, and treat 'same name, different thinking' as a regression class you have to detect."
     },
     {
       "title": "Google Gemini routes personal Drive files and emails to human annotators",
       "source": "Hacker News",
       "url": "https://github.com/thisisme6598/gemini_files/",
-      "meta": "696 pts · 145 comments",
-      "points": 696,
+      "meta": "737 pts · 148 comments",
+      "points": 737,
       "publishedAt": "2026-11-09T18:24:38Z",
       "date": "2026-11-09T18:24:38Z",
       "topics": [
         "Major labs",
         "Evaluation"
       ],
-      "why": "Privacy is now an agent-product issue, not a policy footnote. If Gemini can send Drive and Gmail content to human annotators, every agent with mailbox or docs access inherits that risk. 696 points says this landed harder than most model cards."
+      "why": "If your agent reads Gmail or Drive, user data may leave the model boundary. Privacy defaults and 'do not send PII to consumer Gemini' are product requirements, not footnotes."
     },
     {
       "title": "Amazon saves millions by replacing Sonnet 4.6 with Strands Decider",
       "source": "Hacker News",
       "url": "https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/",
-      "meta": "624 pts · 218 comments",
-      "points": 624,
+      "meta": "732 pts · 262 comments",
+      "points": 732,
       "publishedAt": "2026-11-10T06:01:08Z",
       "date": "2026-11-10T06:01:08Z",
       "topics": [
@@ -59,14 +101,42 @@
         "Multi-agent workflows",
         "Coding agents"
       ],
-      "why": "The week's strongest harness-over-model story. Amazon's public claim is cost, not a new frontier score: swap the decider layer, keep the rest of the agent, save millions. That matches the broader pattern that routing, memory, and tool gates move scores more than another model bump."
+      "why": "Frontier models are being pulled out of high-volume agent routing in favor of cheaper specialized deciders. Put expensive LLMs behind a router and measure task-level ROI."
+    },
+    {
+      "title": "Socratic Tutor",
+      "source": "Hacker News",
+      "url": "https://github.com/janestreet/agent_skills/blob/master/socratic-tutor/SKILL.md",
+      "meta": "712 pts · 170 comments",
+      "points": 712,
+      "publishedAt": "2026-11-10T10:18:22Z",
+      "date": "2026-11-10T10:18:22Z",
+      "topics": [
+        "Coding agents",
+        "Evaluation"
+      ],
+      "why": "Jane Street shipping a skill that teaches instead of dumping answers is a concrete SKILL.md pattern: constrain agent behavior with a small, opinionated prompt artifact. Repo: 8895 stars."
+    },
+    {
+      "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
+      "source": "Hacker News",
+      "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+      "meta": "681 pts · 707 comments",
+      "points": 681,
+      "publishedAt": "2026-11-11T21:24:35Z",
+      "date": "2026-11-11T21:24:35Z",
+      "topics": [
+        "Browser agents",
+        "Tool use"
+      ],
+      "why": "Incumbents are blocking unsupervised booking agents at the policy layer. Consumer-agent products need official APIs, identity, and human-in-the-loop checkout. Scraping as the user is becoming a banned path."
     },
     {
       "title": "AlphaProof Code",
       "source": "Google DeepMind",
       "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
-      "meta": "472 pts · 153 comments",
-      "points": 472,
+      "meta": "679 pts · 197 comments",
+      "points": 679,
       "publishedAt": "2026-11-10T12:11:12Z",
       "date": "2026-11-10T12:11:12Z",
       "topics": [
@@ -74,121 +144,50 @@
         "Coding agents",
         "Evaluation"
       ],
-      "why": "Formal proof work leaking into coding agents is a different bet than autocomplete. If DeepMind is putting AlphaProof-style search on code, the interesting question is whether agent loops start treating tests and proofs as the same kind of verifier."
-    },
-    {
-      "title": "Fable 5.2 one-shotted my nephew's dream game",
-      "source": "Hacker News",
-      "url": "https://notesbylex.com/fable-5-2-one-shotted-my-nephews-dream-game",
-      "meta": "468 pts · 408 comments",
-      "points": 468,
-      "publishedAt": "2026-11-09T23:08:13Z",
-      "date": "2026-11-09T23:08:13Z",
-      "topics": [
-        "Coding agents",
-        "Interfaces"
-      ],
-      "why": "This is the consumer-side of the Fable drop: one long agent run, a finished artifact, 408 comments arguing about whether that is impressive or disposable. It is the same capability labs are selling as 18-hour unattended work."
-    },
-    {
-      "title": "Gemini Omni 1.2 Flash",
-      "source": "Google AI",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
-      "meta": "369 pts · 253 comments",
-      "points": 369,
-      "publishedAt": "2026-11-06T13:35:27Z",
-      "date": "2026-11-06T13:35:27Z",
-      "topics": [
-        "Major labs",
-        "Voice and multimodal",
-        "Tool use"
-      ],
-      "why": "Google's cheap multimodal worker for longer clips and lower price. For agent stacks this is a subagent model: video in, tools out, billed like Flash rather than the frontier coding models."
-    },
-    {
-      "title": "Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far",
-      "source": "Hacker News",
-      "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
-      "meta": "364 pts · 261 comments",
-      "points": 364,
-      "publishedAt": "2026-11-09T20:04:55Z",
-      "date": "2026-11-09T20:04:55Z",
-      "topics": [
-        "Evaluation",
-        "Major labs"
-      ],
-      "why": "Independent leaderboard confirmation of the launch, not Anthropic's own OSWorld number. Builders are using AA as the public scoreboard for whether a coding agent upgrade is real."
-    },
-    {
-      "title": "Muse Ember: Our smallest, most efficient model",
-      "source": "Meta AI",
-      "url": "https://research.meta.ai/blog/muse-ember",
-      "meta": "322 pts · 139 comments",
-      "points": 322,
-      "publishedAt": "2026-11-09T17:58:46Z",
-      "date": "2026-11-09T17:58:46Z",
-      "topics": [
-        "Major labs",
-        "Tool use",
-        "Open weights"
-      ],
-      "why": "Meta is pitching Ember as the cheap repeating worker: tool calls, coding subtasks, routing, extraction. That is the Haiku/Luna slot. If the cost curve holds, multi-agent graphs get a new default leaf model."
-    },
-    {
-      "title": "The Components of Agent Memory",
-      "source": "Anthropic",
-      "url": "https://www.anthropic.com/research/components-of-agent-memory",
-      "meta": "188 pts · 104 comments",
-      "points": 188,
-      "publishedAt": "2026-11-07T06:39:04Z",
-      "date": "2026-11-07T06:39:04Z",
-      "topics": [
-        "Memory and state",
-        "Tool use"
-      ],
-      "why": "Anthropic's engineering note is the week's best primary source on memory: transcripts vs notes vs navigable wikis, plus offline dreaming passes. The practical lesson is fewer well-kept files beat dumping hundreds of notes into context."
-    },
-    {
-      "title": "Gemini 4 Carbon is now available",
-      "source": "Google AI",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
-      "meta": "223 pts · 121 comments",
-      "points": 223,
-      "publishedAt": "2026-11-10T16:07:15Z",
-      "date": "2026-11-10T16:07:15Z",
-      "topics": [
-        "Major labs",
-        "Coding agents"
-      ],
-      "why": "Carbon is Google's other model move this window, landing the day after Fable 5.2. For agent builders it is the question of whether Antigravity and Gemini CLI get a new default, not another chat model."
+      "why": "DeepMind extending proof-search into code is a different coding-agent bet than chat-and-patch. Watch this if you care about verified generation, formal specs, and agents that search rather than sample."
     },
     {
       "title": "AI usage generates a fragile codebase",
       "source": "Hacker News",
       "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
-      "meta": "158 pts · 203 comments",
-      "points": 158,
+      "meta": "645 pts · 626 comments",
+      "points": 645,
       "publishedAt": "2026-11-10T10:25:58Z",
       "date": "2026-11-10T10:25:58Z",
       "topics": [
         "Coding agents",
         "Evaluation"
       ],
-      "why": "Counterweight to the one-shot demos. The comment thread is builders describing code they can ship and cannot maintain. Agent research that only tracks merge speed is missing this failure mode."
+      "why": "The week's main 'coding agents rot the repo' thread. If you ship agent-written code, tests, ownership, and review gates belong in the agent loop, not as later cleanup."
     },
     {
-      "title": "CodeRabbit scales agentic software development and ships 20x more",
-      "source": "OpenAI",
-      "url": "https://openai.com/index/coderabbit-codex-daybreak",
-      "meta": "OpenAI customer story · Nov 9",
-      "publishedAt": "2026-11-09T08:00:00Z",
-      "date": "2026-11-09T08:00:00Z",
+      "title": "All AI-generated code should be Open Source",
+      "source": "Hacker News",
+      "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+      "meta": "640 pts · 347 comments",
+      "points": 640,
+      "publishedAt": "2026-11-15T14:46:58Z",
+      "date": "2026-11-15T14:46:58Z",
       "topics": [
         "Coding agents",
-        "Major labs",
-        "Evaluation"
+        "Open weights"
       ],
-      "why": "OpenAI's Codex distribution story this week: a review agent claiming 20x shipping, which is the enterprise version of the same Fable one-shot energy. Treat the multiplier as marketing, treat the shape (review agent in the loop) as real."
+      "why": "Licensing and provenance of agent output is becoming a legal fight, not just a blog take. Assume customers will ask what training data and generation pipeline produced the code."
+    },
+    {
+      "title": "Gemini 4 Hydrogen",
+      "source": "Google AI",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+      "meta": "570 pts · 352 comments",
+      "points": 570,
+      "publishedAt": "2026-11-12T18:01:48Z",
+      "date": "2026-11-12T18:01:48Z",
+      "topics": [
+        "Major labs",
+        "Multi-agent workflows",
+        "Coding agents"
+      ],
+      "why": "Google's fast execution model for everyday agent loops, paired in-thread with Antigravity Orchestrator switching Carbon and Hydrogen in-session. Re-benchmark tool use before locking a default."
     }
   ],
   "sourceSections": {
@@ -197,8 +196,8 @@
         "title": "Claude Fable 5.2 and Mythos 5.2",
         "source": "Anthropic",
         "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
-        "meta": "840 pts · 961 comments",
-        "points": 840,
+        "meta": "923 pts · 1054 comments",
+        "points": 923,
         "publishedAt": "2026-11-09T18:01:10Z",
         "date": "2026-11-09T18:01:10Z",
         "topics": [
@@ -206,451 +205,570 @@
           "Coding agents",
           "Evaluation"
         ],
-        "why": "Anthropic's Nov 9 drop is the week's actual headline: Fable 5.2 is cheaper ($8/$40 per million tokens), up to 30% faster than 5.1, optional 2.5x fast mode, and it became Claude Code's default. Mythos stays gated. HN's 961-comment thread is where builders are stress-testing it, not the duplicate 6-comment post."
+        "why": "The week's main Anthropic drop, and the largest comment thread. Coding-agent quality shifted enough that evals, prompts, and default-model choices need a re-run, not a patch. Mythos stays gated."
       },
       {
-        "title": "Gemini Omni 1.2 Flash",
+        "title": "Gemini 4 Hydrogen",
         "source": "Google AI",
-        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
-        "meta": "369 pts · 253 comments",
-        "points": 369,
-        "publishedAt": "2026-11-06T13:35:27Z",
-        "date": "2026-11-06T13:35:27Z",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+        "meta": "570 pts · 352 comments",
+        "points": 570,
+        "publishedAt": "2026-11-12T18:01:48Z",
+        "date": "2026-11-12T18:01:48Z",
         "topics": [
           "Major labs",
-          "Voice and multimodal"
+          "Multi-agent workflows",
+          "Coding agents"
         ],
-        "why": "Cheap multimodal Flash-class model with longer clips. Useful as a browser or video subagent, not as the planner."
+        "why": "Google's fast execution model for everyday agent loops, paired in-thread with Antigravity Orchestrator switching Carbon and Hydrogen in-session. Re-benchmark tool use before locking a default."
       },
       {
-        "title": "Gemini 4 Carbon is now available",
+        "title": "Gemini Decisions API",
         "source": "Google AI",
-        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
-        "meta": "223 pts · 121 comments",
-        "points": 223,
-        "publishedAt": "2026-11-10T16:07:15Z",
-        "date": "2026-11-10T16:07:15Z",
-        "topics": [
-          "Major labs"
-        ],
-        "why": "Google's same-week frontier availability drop, competing for the coding-agent default slot."
-      },
-      {
-        "title": "Muse Ember: Our smallest, most efficient model",
-        "source": "Meta AI",
-        "url": "https://research.meta.ai/blog/muse-ember",
-        "meta": "322 pts · 139 comments",
-        "points": 322,
-        "publishedAt": "2026-11-09T17:58:46Z",
-        "date": "2026-11-09T17:58:46Z",
+        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+        "meta": "569 pts · 161 comments",
+        "points": 569,
+        "publishedAt": "2026-11-11T18:32:42Z",
+        "date": "2026-11-11T18:32:42Z",
         "topics": [
           "Major labs",
-          "Tool use"
+          "Tool use",
+          "Multi-agent workflows"
         ],
-        "why": "Positioned against Haiku 5.5 and GPT-6 Luna for repeated tool work."
-      },
-      {
-        "title": "The Components of Agent Memory",
-        "source": "Anthropic",
-        "url": "https://www.anthropic.com/research/components-of-agent-memory",
-        "meta": "188 pts · 104 comments",
-        "points": 188,
-        "publishedAt": "2026-11-07T06:39:04Z",
-        "date": "2026-11-07T06:39:04Z",
-        "topics": [
-          "Memory and state"
-        ],
-        "why": "Primary-source memory architecture: transcripts, notes, wikis, and dreaming."
-      },
-      {
-        "title": "GPT-6 Cyber: Advancing the frontier of aligned cybersecurity agents",
-        "source": "OpenAI",
-        "url": "https://openai.com/index/introducing-gpt-6-cyber",
-        "meta": "61 pts · 7 comments",
-        "points": 61,
-        "publishedAt": "2026-11-05T17:07:57Z",
-        "date": "2026-11-05T17:07:57Z",
-        "topics": [
-          "Major labs",
-          "Evaluation"
-        ],
-        "why": "Gated security-agent model. Low HN points, high product signal: labs are shipping specialist agents, not just chat."
-      },
-      {
-        "title": "CodeRabbit scales agentic software development and ships 20x more",
-        "source": "OpenAI",
-        "url": "https://openai.com/index/coderabbit-codex-daybreak",
-        "meta": "OpenAI · Nov 9",
-        "publishedAt": "2026-11-09T08:00:00Z",
-        "date": "2026-11-09T08:00:00Z",
-        "topics": [
-          "Coding agents",
-          "Major labs"
-        ],
-        "why": "Codex customer story for review agents inside the PR loop."
-      },
-      {
-        "title": "Measuring how AI agents handle everyday wet-lab science",
-        "source": "OpenAI",
-        "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
-        "meta": "OpenAI · Nov 6",
-        "publishedAt": "2026-11-06T00:00:00Z",
-        "date": "2026-11-06T00:00:00Z",
-        "topics": [
-          "Evaluation",
-          "Major labs"
-        ],
-        "why": "Agent evals leaving software: wet-lab tasks are a new benchmark family for tool-using agents."
+        "why": "A dedicated decisions endpoint for routing, policy checks, and tool choice. Same theme as Amazon's Strands Decider: the control plane is a product now, not a chat completion."
       },
       {
         "title": "AlphaProof Code",
         "source": "Google DeepMind",
         "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
-        "meta": "472 pts · 153 comments",
-        "points": 472,
+        "meta": "679 pts · 197 comments",
+        "points": 679,
         "publishedAt": "2026-11-10T12:11:12Z",
         "date": "2026-11-10T12:11:12Z",
         "topics": [
           "Major labs",
+          "Coding agents",
+          "Evaluation"
+        ],
+        "why": "DeepMind extending proof-search into code is a different coding-agent bet than chat-and-patch. Watch this if you care about verified generation, formal specs, and agents that search rather than sample."
+      },
+      {
+        "title": "Gemini 4 Carbon is now available",
+        "source": "Google AI",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+        "meta": "295 pts · 165 comments",
+        "points": 295,
+        "publishedAt": "2026-11-10T16:07:15Z",
+        "date": "2026-11-10T16:07:15Z",
+        "topics": [
+          "Major labs",
           "Coding agents"
         ],
-        "why": "Proof search applied to code. Verifier-heavy agents, not prompt-and-pray generation."
+        "why": "Google's long-horizon frontier model in the same week as Hydrogen. Competing for the coding-agent default slot alongside Fable 5.2."
+      },
+      {
+        "title": "Muse Ember: Our smallest, most efficient model",
+        "source": "Meta AI",
+        "url": "https://research.meta.ai/blog/muse-ember",
+        "meta": "Lab post · Nov 9",
+        "publishedAt": "2026-11-09T12:00:00Z",
+        "date": "2026-11-09T12:00:00Z",
+        "topics": [
+          "Major labs",
+          "Tool use"
+        ],
+        "why": "Positioned as a cheap worker for high-volume agent steps. Pair a planner with a leaf model that is good at tool calls and cheap enough to spam."
+      },
+      {
+        "title": "Claude Whiteboards, Claude Sheets, and Claude Data",
+        "source": "Anthropic",
+        "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
+        "meta": "297 pts · 218 comments",
+        "points": 297,
+        "publishedAt": "2026-11-10T17:55:07Z",
+        "date": "2026-11-10T17:55:07Z",
+        "topics": [
+          "Major labs",
+          "Interfaces"
+        ],
+        "why": "Anthropic is turning Claude into a workspace, not just a coding CLI. Artifacts and structured canvases may matter as much as terminal tool use."
+      },
+      {
+        "title": "Anthropic upgrades Claude Code Projects to run parallel AI workers",
+        "source": "Anthropic",
+        "url": "https://claude.com/resources/articles/projects-redesigned",
+        "meta": "99 pts · 95 comments",
+        "points": 99,
+        "publishedAt": "2026-11-14T00:28:11Z",
+        "date": "2026-11-14T00:28:11Z",
+        "topics": [
+          "Major labs",
+          "Multi-agent workflows",
+          "Coding agents"
+        ],
+        "why": "Multi-worker orchestration going first-party. Cost, fake tests, and herding agents showed up in the thread immediately."
+      },
+      {
+        "title": "Securing persistent agents like OpenClaw at OpenAI",
+        "source": "OpenAI",
+        "url": "https://developers.openai.com/blog/securing-persistent-agents-like-openclaw-at-openai",
+        "meta": "OpenAI Developers · Nov 14",
+        "publishedAt": "2026-11-14T12:00:00Z",
+        "date": "2026-11-14T12:00:00Z",
+        "topics": [
+          "Major labs",
+          "Evaluation",
+          "Tool use"
+        ],
+        "why": "Production notes from internal 24/7 agents: split trusted gateway vs untrusted harness, isolate network/workspace/secrets, no danger-full-access. Pattern for anyone running persistent agents."
+      },
+      {
+        "title": "Gemini 4 Hydrogen and Orchestrator",
+        "source": "Google AI",
+        "url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/",
+        "meta": "503 pts · 165 comments",
+        "points": 503,
+        "publishedAt": "2026-11-12T18:52:01Z",
+        "date": "2026-11-12T18:52:01Z",
+        "topics": [
+          "Major labs",
+          "Multi-agent workflows"
+        ],
+        "why": "Hydrogen paired with Google's Orchestrator/Antigravity stack is the agent-runtime story, not just a model card."
       }
     ],
     "hackerNews": [
       {
-        "title": "Claude Fable 5.2 and Mythos 5.2",
+        "title": "My AI agents found an unmapped Maya site?",
         "source": "Hacker News",
-        "url": "https://news.ycombinator.com/item?id=50429068",
-        "meta": "840 pts · 961 comments",
-        "points": 840,
-        "publishedAt": "2026-11-09T18:01:10Z",
-        "date": "2026-11-09T18:01:10Z",
+        "url": "https://pietromiotti.com/latest/maya-site",
+        "meta": "1036 pts · 392 comments",
+        "points": 1036,
+        "publishedAt": "2026-11-11T12:05:22Z",
+        "date": "2026-11-11T12:05:22Z",
+        "topics": [
+          "Tool use",
+          "Multi-agent workflows",
+          "Evaluation"
+        ],
+        "why": "The week's highest-point story is a field-research agent loop (maps, imagery, literature), not a model card. Treat the discovery claim with HN's skepticism, and treat the workflow as a bar for multi-tool agents that leave the IDE."
+      },
+      {
+        "title": "Anthropic IPO",
+        "source": "Hacker News",
+        "url": "https://ipo.anthropic.com/us/",
+        "meta": "1003 pts · 917 comments",
+        "points": 1003,
+        "publishedAt": "2026-11-12T11:46:41Z",
+        "date": "2026-11-12T11:46:41Z",
+        "topics": [
+          "Major labs"
+        ],
+        "why": "Claude is now a public-market story. Builders on Anthropic APIs and Claude Code should treat vendor concentration, pricing, and terms as design constraints, not background noise."
+      },
+      {
+        "title": "Is Opus 5.5 nerfed? Thinking patterns changed on November 3",
+        "source": "Hacker News",
+        "url": "https://twitter.com/shanemelaugh/status/2119192075505893695",
+        "meta": "825 pts · 520 comments",
+        "points": 825,
+        "publishedAt": "2026-11-09T07:04:25Z",
+        "date": "2026-11-09T07:04:25Z",
         "topics": [
           "Major labs",
-          "Coding agents"
+          "Coding agents",
+          "Evaluation"
         ],
-        "why": "The discussion thread to read. Duplicate post 50429906 shows 983 points and only 6 comments; this is the real conversation."
+        "why": "Silent behavior change on a production coding model is an ops incident. Pin model IDs, log traces, and treat 'same name, different thinking' as a regression class you have to detect."
       },
       {
         "title": "Google Gemini routes personal Drive files and emails to human annotators",
         "source": "Hacker News",
-        "url": "https://news.ycombinator.com/item?id=50429426",
-        "meta": "696 pts · 145 comments",
-        "points": 696,
+        "url": "https://github.com/thisisme6598/gemini_files/",
+        "meta": "737 pts · 148 comments",
+        "points": 737,
         "publishedAt": "2026-11-09T18:24:38Z",
         "date": "2026-11-09T18:24:38Z",
         "topics": [
-          "Major labs"
+          "Major labs",
+          "Evaluation"
         ],
-        "why": "Highest non-launch HN story in the window. Direct hit on agent data paths."
+        "why": "If your agent reads Gmail or Drive, user data may leave the model boundary. Privacy defaults and 'do not send PII to consumer Gemini' are product requirements, not footnotes."
       },
       {
         "title": "Amazon saves millions by replacing Sonnet 4.6 with Strands Decider",
         "source": "Hacker News",
-        "url": "https://news.ycombinator.com/item?id=50436640",
-        "meta": "624 pts · 218 comments",
-        "points": 624,
+        "url": "https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/",
+        "meta": "732 pts · 262 comments",
+        "points": 732,
         "publishedAt": "2026-11-10T06:01:08Z",
         "date": "2026-11-10T06:01:08Z",
         "topics": [
           "Tool use",
-          "Multi-agent workflows"
-        ],
-        "why": "Harness vs model, with a cost number attached."
-      },
-      {
-        "title": "Fable 5.2 one-shotted my nephew's dream game",
-        "source": "Hacker News",
-        "url": "https://news.ycombinator.com/item?id=50433659",
-        "meta": "468 pts · 408 comments",
-        "points": 468,
-        "publishedAt": "2026-11-09T23:08:13Z",
-        "date": "2026-11-09T23:08:13Z",
-        "topics": [
+          "Multi-agent workflows",
           "Coding agents"
         ],
-        "why": "Long-run coding demo plus a skeptical comment section."
+        "why": "Frontier models are being pulled out of high-volume agent routing in favor of cheaper specialized deciders. Put expensive LLMs behind a router and measure task-level ROI."
       },
       {
-        "title": "Claude Fable 5.2 scores 65 on Artificial Analysis, highest so far",
+        "title": "Socratic Tutor",
         "source": "Hacker News",
-        "url": "https://news.ycombinator.com/item?id=50431144",
-        "meta": "364 pts · 261 comments",
-        "points": 364,
-        "publishedAt": "2026-11-09T20:04:55Z",
-        "date": "2026-11-09T20:04:55Z",
+        "url": "https://github.com/janestreet/agent_skills/blob/master/socratic-tutor/SKILL.md",
+        "meta": "712 pts · 170 comments",
+        "points": 712,
+        "publishedAt": "2026-11-10T10:18:22Z",
+        "date": "2026-11-10T10:18:22Z",
         "topics": [
+          "Coding agents",
           "Evaluation"
         ],
-        "why": "Public benchmark thread for the launch."
+        "why": "Jane Street shipping a skill that teaches instead of dumping answers is a concrete SKILL.md pattern: constrain agent behavior with a small, opinionated prompt artifact. Repo: 8895 stars."
       },
       {
-        "title": "Gemini Omni 1.2 Flash",
+        "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
         "source": "Hacker News",
-        "url": "https://news.ycombinator.com/item?id=50392118",
-        "meta": "369 pts · 253 comments",
-        "points": 369,
-        "publishedAt": "2026-11-06T13:35:27Z",
-        "date": "2026-11-06T13:35:27Z",
+        "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+        "meta": "681 pts · 707 comments",
+        "points": 681,
+        "publishedAt": "2026-11-11T21:24:35Z",
+        "date": "2026-11-11T21:24:35Z",
         "topics": [
-          "Voice and multimodal"
+          "Browser agents",
+          "Tool use"
         ],
-        "why": "Verified Algolia hit for Google's Flash multimodal drop."
-      },
-      {
-        "title": "The Components of Agent Memory",
-        "source": "Hacker News",
-        "url": "https://news.ycombinator.com/item?id=50402212",
-        "meta": "188 pts · 104 comments",
-        "points": 188,
-        "publishedAt": "2026-11-07T06:39:04Z",
-        "date": "2026-11-07T06:39:04Z",
-        "topics": [
-          "Memory and state"
-        ],
-        "why": "Engineers actually read this one."
+        "why": "Incumbents are blocking unsupervised booking agents at the policy layer. Consumer-agent products need official APIs, identity, and human-in-the-loop checkout. Scraping as the user is becoming a banned path."
       },
       {
         "title": "AI usage generates a fragile codebase",
         "source": "Hacker News",
-        "url": "https://news.ycombinator.com/item?id=50438318",
-        "meta": "158 pts · 203 comments",
-        "points": 158,
+        "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
+        "meta": "645 pts · 626 comments",
+        "points": 645,
         "publishedAt": "2026-11-10T10:25:58Z",
         "date": "2026-11-10T10:25:58Z",
-        "topics": [
-          "Coding agents"
-        ],
-        "why": "Maintainability backlash, not a launch."
-      }
-    ],
-    "reddit": [
-      {
-        "title": "A year after the 100% AI mandate nobody understands our code",
-        "source": "Reddit",
-        "url": "https://www.reddit.com/r/ClaudeCode/comments/1xq2n3t/a_year_after_the_100_ai_mandate_nobody/",
-        "meta": "144 pts on HN · r/ClaudeCode",
-        "points": 144,
-        "publishedAt": "2026-11-09T22:19:12Z",
-        "date": "2026-11-09T22:19:12Z",
         "topics": [
           "Coding agents",
           "Evaluation"
         ],
-        "why": "Found via HN (144 points), original post is r/ClaudeCode. This is the social version of the fragile-codebase essay: generated systems with no remaining owners."
+        "why": "The week's main 'coding agents rot the repo' thread. If you ship agent-written code, tests, ownership, and review gates belong in the agent loop, not as later cleanup."
+      },
+      {
+        "title": "All AI-generated code should be Open Source",
+        "source": "Hacker News",
+        "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+        "meta": "640 pts · 347 comments",
+        "points": 640,
+        "publishedAt": "2026-11-15T14:46:58Z",
+        "date": "2026-11-15T14:46:58Z",
+        "topics": [
+          "Coding agents",
+          "Open weights"
+        ],
+        "why": "Licensing and provenance of agent output is becoming a legal fight, not just a blog take. Assume customers will ask what training data and generation pipeline produced the code."
+      },
+      {
+        "title": "Fable 5.2 one-shotted my nephew's dream game",
+        "source": "Hacker News",
+        "url": "https://notesbylex.com/fable-5-2-one-shotted-my-nephews-dream-game",
+        "meta": "505 pts · 450 comments",
+        "points": 505,
+        "publishedAt": "2026-11-09T23:08:13Z",
+        "date": "2026-11-09T23:08:13Z",
+        "topics": [
+          "Coding agents",
+          "Interfaces"
+        ],
+        "why": "Heavily discussed evidence that Fable 5.2 is strong at single-shot interactive artifacts. Relevant if your agent UX is 'generate a working thing,' not 'open a PR.' Pair with the fragile-codebase thread."
+      },
+      {
+        "title": "Brave Search API now accepts agentic payments via the x402 protocol",
+        "source": "Hacker News",
+        "url": "https://brave.com/blog/search-api-agentic-payments/",
+        "meta": "261 pts · 151 comments",
+        "points": 261,
+        "publishedAt": "2026-11-13T03:08:08Z",
+        "date": "2026-11-13T03:08:08Z",
+        "topics": [
+          "Tool use",
+          "Browser agents"
+        ],
+        "why": "Machine-to-machine payments for search. Comments split between a paid alternative to scraping and micropayment UX risk. Rhymes with United's booking ban: access is being gated."
+      },
+      {
+        "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+        "source": "Hacker News",
+        "url": "https://github.com/GoogleChrome/modern-web-guidance",
+        "meta": "447 pts · 146 comments",
+        "points": 447,
+        "publishedAt": "2026-11-10T18:01:15Z",
+        "date": "2026-11-10T18:01:15Z",
+        "topics": [
+          "Coding agents",
+          "Tool use"
+        ],
+        "why": "Chrome shipping guidance for coding agents (17347 stars). If your agent writes frontend, inject current primitives or it will keep scaffolding 2019 stacks."
+      },
+      {
+        "title": "Ggml v1.0.0",
+        "source": "Hacker News",
+        "url": "https://github.com/ggml-org/ggml/releases/tag/v1.0.0",
+        "meta": "413 pts · 68 comments",
+        "points": 413,
+        "publishedAt": "2026-11-14T02:28:29Z",
+        "date": "2026-11-14T02:28:29Z",
+        "topics": [
+          "Open weights",
+          "Coding agents"
+        ],
+        "why": "ggml hitting 1.0 is a local-inference infrastructure milestone under llama.cpp-class stacks. Relevant for on-device or self-hosted agents rather than only cloud APIs."
+      },
+      {
+        "title": "Show HN: AgentRun – open-source, Self-improving Managed Agents",
+        "source": "Hacker News",
+        "url": "https://github.com/Parcha-ai/agentrun",
+        "meta": "138 pts · 40 comments",
+        "points": 138,
+        "publishedAt": "2026-11-12T18:15:48Z",
+        "date": "2026-11-12T18:15:48Z",
+        "topics": [
+          "Multi-agent workflows",
+          "Coding agents",
+          "Evaluation"
+        ],
+        "why": "Compile repeated agent loops into cheaper workflows. Review loops, skill/memory non-determinism, and 'when does it leave the compiled path' are the live questions. 1127 stars."
       }
     ],
     "huggingFace": [
       {
-        "title": "Qwen/Qwen3.8-27B",
+        "title": "thinkingmachines/Inkling-2-Small",
         "source": "Hugging Face",
-        "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-        "meta": "19.5k likes · 7.4M downloads",
-        "publishedAt": "2026-11-10T18:33:14Z",
-        "date": "2026-11-10T18:33:14Z",
+        "url": "https://huggingface.co/thinkingmachines/Inkling-2-Small",
+        "meta": "336 likes · 7329 downloads · updated 2026-11-15",
+        "publishedAt": "2026-11-15T05:54:46Z",
+        "date": "2026-11-15T05:54:46Z",
         "topics": [
           "Open weights",
-          "Coding agents"
+          "Voice and multimodal",
+          "Tool use"
         ],
-        "why": "Highest-liked current Qwen multimodal checkpoint on Hugging Face. This is the local-deep-research class of model people actually run."
+        "why": "Apache-2.0 multimodal MoE on HF this week, built for agents and tool use. Native NVFP4. Fresh weights, not a months-old checkpoint riding the trending board."
       },
       {
-        "title": "moonshotai/Kimi-K3",
+        "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
         "source": "Hugging Face",
-        "url": "https://huggingface.co/moonshotai/Kimi-K3",
-        "meta": "12.0k likes · 752k downloads",
-        "publishedAt": "2026-11-10T18:33:14Z",
-        "date": "2026-11-10T18:33:14Z",
+        "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+        "meta": "5727 likes · 460551 downloads · updated 2026-11-10",
+        "publishedAt": "2026-11-10T02:22:56Z",
+        "date": "2026-11-10T02:22:56Z",
         "topics": [
           "Open weights",
-          "Coding agents"
+          "Coding agents",
+          "Voice and multimodal"
         ],
-        "why": "Moonshot's Kimi line is what a lot of coding-agent users fall back to when frontier APIs rate-limit."
-      },
-      {
-        "title": "deepseek-ai/DeepSeek-R1",
-        "source": "Hugging Face",
-        "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
-        "meta": "14.4k likes · 1.6M downloads",
-        "publishedAt": "2026-11-10T18:33:14Z",
-        "date": "2026-11-10T18:33:14Z",
-        "topics": [
-          "Open weights"
-        ],
-        "why": "Still the default open reasoning stack people wire into agent loops."
-      },
-      {
-        "title": "openai/gpt-oss-20b",
-        "source": "Hugging Face",
-        "url": "https://huggingface.co/openai/gpt-oss-20b",
-        "meta": "5.3k likes · 5.8M downloads",
-        "publishedAt": "2026-11-10T18:33:14Z",
-        "date": "2026-11-10T18:33:14Z",
-        "topics": [
-          "Open weights",
-          "Major labs"
-        ],
-        "why": "OpenAI's open-weight 20B is high-download this cycle, which matters for local subagents more than for chat demos."
-      },
-      {
-        "title": "deepseek-ai/DeepSeek-V3.2",
-        "source": "Hugging Face",
-        "url": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2",
-        "meta": "1.6k likes · 7.9M downloads",
-        "publishedAt": "2026-11-10T18:33:14Z",
-        "date": "2026-11-10T18:33:14Z",
-        "topics": [
-          "Open weights"
-        ],
-        "why": "High-download text-generation checkpoint, useful as a cheap local planner or reviewer."
+        "why": "MIT-licensed multimodal still at the top of HF activity this week. Practical open-weight coding/agent base if you need to self-host rather than wait on a Qwen 4 API preview."
       }
     ],
     "github": [
       {
-        "title": "google-gemini/gemini-cli",
+        "title": "NVIDIA/SkillSpector",
         "source": "GitHub",
-        "url": "https://github.com/google-gemini/gemini-cli",
-        "meta": "108762 stars · updated 2026-11-10",
-        "publishedAt": "2026-11-10T18:19:22Z",
-        "date": "2026-11-10T18:19:22Z",
+        "url": "https://github.com/NVIDIA/SkillSpector",
+        "meta": "26193 stars · pushed 2026-11-14",
+        "publishedAt": "2026-11-14T04:49:48Z",
+        "date": "2026-11-14T04:49:48Z",
         "topics": [
-          "Coding agents",
-          "Major labs",
-          "Tool use"
+          "Evaluation",
+          "Tool use",
+          "Coding agents"
         ],
-        "why": "Google's terminal agent, still the most-starred coding-agent CLI in this catalog refresh."
+        "why": "Security scanner for agent skills: prompt injection, exfil, supply-chain. Skills are now a unit of risk, not just a prompt file."
       },
       {
-        "title": "LearningCircuit/local-deep-research",
+        "title": "backnotprop/plannotator",
         "source": "GitHub",
-        "url": "https://github.com/LearningCircuit/local-deep-research",
-        "meta": "9560 stars · updated 2026-11-10",
-        "publishedAt": "2026-11-10T18:20:51Z",
-        "date": "2026-11-10T18:20:51Z",
+        "url": "https://github.com/backnotprop/plannotator",
+        "meta": "11727 stars · pushed 2026-11-15",
+        "publishedAt": "2026-11-15T18:31:21Z",
+        "date": "2026-11-15T18:31:21Z",
         "topics": [
-          "Open weights",
-          "Tool use"
+          "Coding agents",
+          "Multi-agent workflows",
+          "Interfaces"
         ],
-        "why": "Local encrypted deep-research loop. The anti-cloud answer to lab Deep Research products."
+        "why": "Human-in-the-loop workspace: plan, annotate, review, send feedback to agents in one click. Matches the week's 'herding agents' complaints."
       },
       {
-        "title": "MinishLab/semble",
+        "title": "openai/codex-security",
         "source": "GitHub",
-        "url": "https://github.com/MinishLab/semble",
-        "meta": "6391 stars · updated 2026-11-10",
-        "publishedAt": "2026-11-10T14:44:47Z",
-        "date": "2026-11-10T14:44:47Z",
+        "url": "https://github.com/openai/codex-security",
+        "meta": "13610 stars · pushed 2026-11-15",
+        "publishedAt": "2026-11-15T17:18:33Z",
+        "date": "2026-11-15T17:18:33Z",
+        "topics": [
+          "Coding agents",
+          "Evaluation",
+          "Major labs"
+        ],
+        "why": "OpenAI's security CLI/SDK for find-validate-fix. Agent security becoming a product, not a blog post."
+      },
+      {
+        "title": "GoogleChrome/modern-web-guidance",
+        "source": "GitHub",
+        "url": "https://github.com/GoogleChrome/modern-web-guidance",
+        "meta": "17347 stars · pushed 2026-11-10",
+        "publishedAt": "2026-11-10T03:22:38Z",
+        "date": "2026-11-10T03:22:38Z",
         "topics": [
           "Coding agents",
           "Tool use"
         ],
-        "why": "Code search for agents that claims 99% fewer tokens than grep-and-read. Direct cost lever on every coding loop."
+        "why": "Keep coding agents on current web primitives. Same story as the 447-point Show HN."
       },
       {
-        "title": "KKKKhazix/agent-autoloop",
+        "title": "ggml-org/ggml",
         "source": "GitHub",
-        "url": "https://github.com/KKKKhazix/agent-autoloop",
-        "meta": "4414 stars · updated 2026-11-10",
-        "publishedAt": "2026-11-10T16:46:24Z",
-        "date": "2026-11-10T16:46:24Z",
+        "url": "https://github.com/ggml-org/ggml",
+        "meta": "15856 stars · v1.0.0 · pushed 2026-11-13",
+        "publishedAt": "2026-11-13T08:34:20Z",
+        "date": "2026-11-13T08:34:20Z",
         "topics": [
-          "Coding agents",
-          "Multi-agent workflows"
+          "Open weights"
         ],
-        "why": "Background CLI agent that only pings a human when it is stuck. Same idea as this week's teletap/Show HN crop."
+        "why": "Tensor library behind local LLM stacks hit 1.0 this week. Infrastructure for self-hosted agents."
+      },
+      {
+        "title": "Parcha-ai/agentrun",
+        "source": "GitHub",
+        "url": "https://github.com/Parcha-ai/agentrun",
+        "meta": "1127 stars · pushed 2026-11-15",
+        "publishedAt": "2026-11-15T18:37:10Z",
+        "date": "2026-11-15T18:37:10Z",
+        "topics": [
+          "Multi-agent workflows",
+          "Coding agents"
+        ],
+        "why": "Self-improving managed agents on top of Pi, Claude Agents, Codex, OpenCode. Durable execution plus a control plane."
+      },
+      {
+        "title": "NVIDIA/SkillEvaluator",
+        "source": "GitHub",
+        "url": "https://github.com/NVIDIA/SkillEvaluator",
+        "meta": "1494 stars · pushed 2026-11-15",
+        "publishedAt": "2026-11-15T12:03:33Z",
+        "date": "2026-11-15T12:03:33Z",
+        "topics": [
+          "Evaluation",
+          "Coding agents"
+        ],
+        "why": "Quality gates, overlap detection, and live measurement of how skills change agent behavior. Pair with SkillSpector."
+      },
+      {
+        "title": "ChromeDevTools/chrome-devtools-mcp",
+        "source": "GitHub",
+        "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+        "meta": "56796 stars · pushed 2026-11-15",
+        "publishedAt": "2026-11-15T03:06:25Z",
+        "date": "2026-11-15T03:06:25Z",
+        "topics": [
+          "Browser agents",
+          "Tool use",
+          "MCP"
+        ],
+        "why": "Browser and DevTools as agent tools, still moving this week. Complements Chrome's modern-web-guidance drop."
       }
     ]
   },
   "tangentRadar": [
     {
-      "topic": "Harness over model",
+      "topic": "Doors closing on autonomous agents",
+      "signalCount": 3,
+      "signals": [
+        "United Airlines booking ban",
+        "Brave Search x402 agentic payments",
+        "Gemini Drive/Gmail annotators"
+      ],
+      "whyItMatters": "The loudest non-model story is access. Airlines, search APIs, and consumer Gemini data paths are all drawing a line around unsupervised agents. Official APIs, identity, and human checkout are becoming the product, not scraping."
+    },
+    {
+      "topic": "Harness and router over frontier weights",
       "signalCount": 3,
       "signals": [
         "Amazon Strands Decider vs Sonnet 4.6",
-        "Anthropic agent memory / dreaming",
-        "Semble token-cheap code search"
+        "Gemini Decisions API",
+        "Muse Ember cheap workers"
       ],
-      "whyItMatters": "The largest cost and quality claims this week are about routing, memory, and retrieval, not a new weights file. If a decider or a search tool moves the bill more than the model, agent roadmaps that only track frontier releases are looking at the wrong layer."
+      "whyItMatters": "The largest cost claims this week are about routing and leaf models, not a new weights file. If a decider or a $0.10 worker moves the bill more than the planner, roadmaps that only track frontier releases are looking at the wrong layer."
     },
     {
-      "topic": "Long unattended coding runs",
-      "signalCount": 3,
-      "signals": [
-        "Fable 5.2 launch",
-        "One-shot game demo",
-        "CodeRabbit Codex story"
-      ],
-      "whyItMatters": "Labs are selling hours-to-days of unattended work. Demos look like finished games and 20x shipping. The matching failure mode showed up in the same window: code nobody on the team can read."
-    },
-    {
-      "topic": "Agent data paths",
-      "signalCount": 2,
-      "signals": [
-        "Gemini Drive/Gmail annotators",
-        "Fireworks / Notion vendor incident on HN"
-      ],
-      "whyItMatters": "Once agents have mail, docs, and vendor tools, privacy incidents become product incidents. Annotator pipelines and third-party AI vendors are now in the same blast radius as the model."
-    },
-    {
-      "topic": "Cheap specialist workers",
-      "signalCount": 3,
-      "signals": [
-        "Muse Ember",
-        "Gemini Omni 1.2 Flash",
-        "Fable 5.2 price cut"
-      ],
-      "whyItMatters": "Multi-agent graphs need a leaf model that is good at tool calls and cheap enough to spam. Ember, Omni Flash, and the Fable price cut are all aimed at that slot."
-    },
-    {
-      "topic": "Verifier-heavy agents",
-      "signalCount": 2,
-      "signals": [
-        "AlphaProof Code",
-        "OpenAI wet-lab agent evals"
-      ],
-      "whyItMatters": "Proof search and wet-lab benchmarks both assume the agent can be checked. That is a different architecture than chat-with-tools."
-    },
-    {
-      "topic": "Open-weight coding loops",
+      "topic": "Skills as work and as risk",
       "signalCount": 4,
       "signals": [
-        "gemini-cli",
-        "local-deep-research",
-        "Qwen3.8-27B",
-        "gpt-oss-20b"
+        "Jane Street Socratic Tutor",
+        "NVIDIA SkillSpector",
+        "NVIDIA SkillEvaluator",
+        "Claude Code parallel workers"
       ],
-      "whyItMatters": "The GitHub and Hugging Face side of the feed is still local CLIs and open checkpoints. They do not win HN, but they are what people run when APIs throttle."
+      "whyItMatters": "SKILL.md is now a distribution format with a scanner and an eval harness. Frontmatter, model drift, and malicious skills are in the same conversation as 'how do I teach the agent'."
+    },
+    {
+      "topic": "Fragile AI code vs one-shot demos",
+      "signalCount": 3,
+      "signals": [
+        "AI usage generates a fragile codebase",
+        "Fable 5.2 one-shot game",
+        "All AI-generated code should be Open Source"
+      ],
+      "whyItMatters": "The same week Fable one-shots a game, HN argues that AI code rot and licensing are the bill coming due. Speed is not the eval. Ownership, tests, and provenance are."
+    },
+    {
+      "topic": "First-party orchestration",
+      "signalCount": 3,
+      "signals": [
+        "Gemini 4 Hydrogen + Antigravity Orchestrator",
+        "Claude Code parallel workers",
+        "AgentRun compiled loops"
+      ],
+      "whyItMatters": "Labs are packaging planning plus tool execution as a product. Home-grown coordinators now compete with first-party workers, and the complaints are cost, fake tests, and review loops."
+    },
+    {
+      "topic": "Local inference still moving",
+      "signalCount": 3,
+      "signals": [
+        "ggml v1.0.0",
+        "smolmaxxing on old devices",
+        "DeepSeek-V4.1-Flash on Hugging Face"
+      ],
+      "whyItMatters": "The GitHub and HF side of the feed is still local CLIs and open checkpoints. They do not always win HN, but they are what people run when APIs throttle or data cannot leave the box."
     }
   ],
   "experimentQueue": [
     {
-      "title": "Run the same repo task on Fable 5.2 vs your current default",
-      "why": "The launch is cheap enough to A/B. Keep the harness fixed so you learn about the model, not about prompt drift.",
-      "prompt": "Same AGENTS.md, same repo, same ticket. Fable 5.2 vs last week's default. Compare diff quality, tokens, and whether a human can review the result."
+      "title": "Re-run the same repo task on Fable 5.2 vs Hydrogen vs last week's default",
+      "why": "Three labs shipped or GA'd coding models in one week. Keep the harness fixed so you learn about the model, not about prompt drift.",
+      "prompt": "Same AGENTS.md, same repo, same ticket. Fable 5.2 vs Gemini 4 Hydrogen vs last week's default. Compare diff quality, tokens, and whether a human can review the result."
     },
     {
-      "title": "Trim agent memory to a handful of files",
-      "why": "Anthropic's memory note says organized notes beat volume. Most coding agents are still dumping transcripts into context.",
-      "prompt": "Take one long-running agent. Keep transcripts on disk, expose a small index, and add an offline pass that rewrites notes against the source files."
+      "title": "Put a cheap decider in front of the frontier planner",
+      "why": "Strands Decider and Gemini Decisions API are the same architectural bet: do not spend Sonnet on yes/no routing.",
+      "prompt": "Route classification, policy checks, and tool choice to a decider or Ember-class worker. Keep the planner on Fable or Carbon. Measure cost per merged PR."
     },
     {
-      "title": "Put a cheaper worker on tool calls",
-      "why": "Ember and Omni Flash are being sold as leaf models. If your planner is frontier-priced, your grep loop should not be.",
-      "prompt": "Route search, extraction, and browser subagents to a Flash/Ember-class model. Keep the planner on Fable or Carbon. Measure cost per merged PR."
+      "title": "Scan your skill pack like it is supply chain",
+      "why": "SkillSpector and SkillEvaluator exist because skills are loadable code. A SKILL.md from the internet is an unreviewed dependency.",
+      "prompt": "Run SkillSpector on every skill your agents load. Add SkillEvaluator or a writtenFor field so a model bump does not silently change behavior."
     },
     {
       "title": "Audit one generated module for owners",
-      "why": "The fragile-codebase and 100% AI mandate threads are the same warning. Shipping speed is not the eval.",
+      "why": "The fragile-codebase thread is the matching failure mode for this week's one-shot demos.",
       "prompt": "Pick a module written mostly by agents in the last 90 days. Can two teammates explain it without the original session? If not, add tests and a human-owned map before the next agent pass."
     }
   ],
   "method": [
-    "Baseline generated by scripts/generate-agent-research.mjs (exit 0, 40 items).",
-    "HN Algolia search_by_date for created_at after 2026-11-04 with points > 80, plus title lookups for Fable 5.2, Gemini Omni 1.2, GPT-6 Cyber, and agent memory.",
-    "Official pages fetched for Anthropic Fable 5.2, Anthropic agent memory, Google Omni 1.2 Flash, Google Gemini 4 Carbon, Meta Muse Ember, and Strands Agents.",
-    "GitHub metadata via gh api for gemini-cli, local-deep-research, semble, and agent-autoloop.",
-    "Hugging Face public model API (likes and downloads). Reddit left thin on purpose: one r/ClaudeCode post that also hit HN, no fabricated subreddit scores.",
-    "Generator HN/Reddit/HF sections were empty or generic. Ranking uses real HN points, not the generator score."
+    "Baseline generated by scripts/generate-agent-research.mjs (exit 0, 40 items). Generator ranked OpenAI customer stories and star-inflated GitHub repos above 1000-point HN threads.",
+    "HN Algolia search?tags=story_{id} for points and num_comments (not /items/{id} children). Window 2026-11-09 to 2026-11-16.",
+    "Official pages fetched: Anthropic Fable 5.2, Anthropic IPO, Gemini 4 Hydrogen, Gemini Decisions API, Gemini 4 Carbon, AlphaProof Code, Muse Ember, Claude Sheets/Whiteboards, Claude Code Projects, OpenAI persistent-agents blog.",
+    "OpenAI consumer blog URLs (ChatGPT Wallet, Control Room, Businesses) returned 403 and were omitted.",
+    "GitHub metadata via gh api. Hugging Face public model API for likes/downloads. Reddit JSON returned 403; no Reddit items fabricated.",
+    "Ranking uses real HN points and verified star/like counts, not the generator score."
   ]
 }
