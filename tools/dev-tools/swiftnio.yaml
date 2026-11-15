@@ -1,0 +1,26 @@
+name: SwiftNIO
+description: Event-driven non-blocking networking framework for Swift. SwiftNIO is the I/O layer under Vapor and Hummingbird, so high-performance protocol servers and clients can handle HTTP, WebSockets, and custom agents without blocking threads.
+tagline: Event-driven networking for Swift servers
+
+github_url: https://github.com/apple/swift-nio
+website_url: https://swiftpackageindex.com/apple/swift-nio
+docs_url: https://swiftpackageindex.com/apple/swift-nio/documentation
+
+category: Dev Tools
+tags: [swift, networking, async, nio, server-side-swift, http]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Swift servers that stream LLM tokens or accept agent WebSockets
+  cannot block on BSD sockets. SwiftNIO provides event-driven
+  channels and byte buffers so those services stay non-blocking
+  on Linux and Apple platforms.
+
+use_cases:
+  - Stream LLM tokens over HTTP or WebSockets from a Swift server
+  - Build a custom TCP protocol for an on-prem agent runtime
+  - Share one NIO event loop across model-gateway connections
+  - Implement a non-blocking reverse proxy in front of inference
+  - Power Vapor or Hummingbird routes that call embedding APIs

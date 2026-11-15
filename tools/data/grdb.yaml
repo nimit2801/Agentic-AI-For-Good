@@ -1,0 +1,25 @@
+name: GRDB
+description: Swift toolkit for SQLite with a query builder, record layer, and database observation. GRDB lets iOS and macOS apps persist agent traces, chat history, and eval fixtures in a local SQL file without a heavy ORM.
+tagline: SQLite toolkit for Swift apps
+
+github_url: https://github.com/groue/GRDB.swift
+docs_url: https://swiftpackageindex.com/groue/GRDB.swift/documentation
+
+category: Data
+tags: [swift, sqlite, ios, macos, sql, spm]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Swift apps that log agent runs and chat history need SQL without
+  Core Data. Raw SQLite C APIs are error-prone. GRDB gives a Swift
+  query builder and value observation so those records stay typed
+  and can trigger UI updates when rows change.
+
+use_cases:
+  - Store LLM chat messages in a local SQLite file on iOS
+  - Observe agent-run rows and refresh a SwiftUI trace view
+  - Persist eval fixtures and scores for an on-device test harness
+  - Query tool-call history with a type-safe SQL builder
+  - Migrate a print-debug cache into durable SQLite records
