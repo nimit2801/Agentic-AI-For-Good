@@ -1,0 +1,26 @@
+name: Serde
+description: Serialization framework for Rust that converts data structures to and from many formats through a single Serialize and Deserialize model. Serde is the default way Rust services speak JSON, YAML, MessagePack, and custom binary codecs.
+tagline: Serialize and deserialize Rust data
+
+github_url: https://github.com/serde-rs/serde
+website_url: https://serde.rs/
+docs_url: https://serde.rs/
+install_command: cargo add serde
+
+category: Dev Tools
+tags: [rust, serialization, json, derive, crates]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Rust APIs and CLIs need a generic way to turn structs into JSON
+  or other formats without writing a parser per type. Serde plus
+  derive macros is that layer, which is why nearly every Rust
+  service depends on it for config, queues, and HTTP bodies.
+
+use_cases:
+  - Derive Serialize and Deserialize on API request and response types
+  - Load YAML or TOML config into strongly typed Rust structs
+  - Speak JSON over HTTP in Axum, Actix, or a custom server
+  - Plug a custom binary format into the same Serde data model

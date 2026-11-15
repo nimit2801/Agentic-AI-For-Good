@@ -1,0 +1,26 @@
+name: cJSON
+description: Ultralightweight JSON parser and printer in ANSI C with no dependencies. cJSON is the usual choice when a C or embedded project needs to read or write JSON without pulling in a large runtime or C++ standard library.
+tagline: Tiny JSON parser for C
+
+github_url: https://github.com/DaveGamble/cJSON
+website_url: https://github.com/DaveGamble/cJSON
+docs_url: https://github.com/DaveGamble/cJSON#readme
+install_command: brew install cjson
+
+category: Dev Tools
+tags: [c, json, parsing, embedded, cmake]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  C services and firmware cannot always take a C++ JSON stack or a
+  heavy allocator. cJSON is a single-library ANSI C parser you can
+  vendor or install, which is what embedded and native teams use
+  when they need JSON with a small footprint.
+
+use_cases:
+  - Parse JSON config or API payloads in a C daemon
+  - Vendor cJSON into firmware that cannot link C++
+  - Print structured logs as JSON from a native service
+  - Teach JSON parsing without a large third-party runtime

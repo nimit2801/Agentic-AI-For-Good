@@ -1,0 +1,27 @@
+name: imgproxy
+description: Fast, secure standalone server for resizing, processing, and converting images on the fly. imgproxy fetches a source image, applies signed URL transforms, and serves the result so apps do not process untrusted image bytes in-process.
+tagline: On-the-fly image processing behind signed URLs
+
+github_url: https://github.com/imgproxy/imgproxy
+website_url: https://imgproxy.net
+docs_url: https://docs.imgproxy.net
+install_command: brew install imgproxy
+
+category: Dev Tools
+tags: [go, images, cdn, resizing, docker, vips]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  App servers that resize user uploads in-process burn CPU and are
+  a malware vector. imgproxy is a dedicated image CDN worker that
+  only accepts signed URLs, which is what product teams need when
+  they want thumbnails and format conversion without ImageMagick
+  in the request path.
+
+use_cases:
+  - Serve resized product photos from object storage via signed URLs
+  - Convert uploads to WebP or AVIF at the edge without app-server CPU
+  - Replace in-process ImageMagick with a dedicated image service
+  - Protect origin images so clients cannot request arbitrary transforms
