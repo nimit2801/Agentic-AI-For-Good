@@ -1,0 +1,28 @@
+name: GraphScope
+description: One-stop large-scale graph computing system from Alibaba covering graph storage, analytics, and GNN training. GraphScope processes billion-edge graphs so teams can run GraphRAG, recommendations, and graph ML without stitching Gremlin, Spark, and PyG by hand.
+tagline: Large-scale graph computing from Alibaba
+
+github_url: https://github.com/alibaba/GraphScope
+website_url: https://graphscope.io
+docs_url: https://graphscope.io/docs
+
+install_command: pip install graphscope
+
+category: Vector DB
+tags: [graph, gnn, analytics, alibaba, python, knowledge-graph, distributed]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Large graph ML and analytics stacks often split storage, Gremlin
+  queries, and GNN training across tools. GraphScope unifies those
+  stages so billion-edge graphs can be queried, analyzed, and trained
+  on without a custom pipeline between systems.
+
+use_cases:
+  - Train GNNs on a large knowledge graph for entity or link prediction
+  - Run distributed graph analytics before embedding nodes for retrieval
+  - Query and process billion-edge graphs for recommendation features
+  - Prototype GraphRAG over a graph that already lives in GraphScope
+  - Combine graph algorithms and Python notebooks on the same dataset

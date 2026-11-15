@@ -1,0 +1,26 @@
+name: AgensGraph
+description: PostgreSQL-based transactional graph database that stores property graphs and relational tables in one engine. AgensGraph runs Cypher plus SQL so knowledge-graph and GraphRAG apps can join graph hops with tabular features without a second store.
+tagline: PostgreSQL graph database with Cypher
+
+github_url: https://github.com/skaiworldwide-oss/agensgraph
+website_url: https://tech.skaiworldwide.com/docs/
+docs_url: https://tech.skaiworldwide.com/docs/
+
+category: Vector DB
+tags: [graph, postgresql, cypher, sql, knowledge-graph, graphrag, oltp]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Teams that need both graph traversals and relational joins often run
+  Neo4j next to Postgres and sync them. AgensGraph is a Postgres fork
+  that speaks Cypher and SQL on one engine so knowledge graphs and
+  GraphRAG queries share transactions with tabular data.
+
+use_cases:
+  - Store a knowledge graph beside relational features for GraphRAG
+  - Run Cypher traversals and SQL analytics in the same Postgres-compatible engine
+  - Prototype multi-hop entity lookup without standing up a separate graph DB
+  - Join user tables with graph neighborhoods for recommendation features
+  - Migrate a Postgres app toward property-graph queries without a new vendor

@@ -1,0 +1,26 @@
+name: Virtuoso
+description: Multi-model RDBMS and Linked Data platform that stores SQL, RDF, and XML with SPARQL and HTTP services. Virtuoso publishes knowledge graphs as Linked Data so RAG and agent systems can query RDF at scale.
+tagline: Multi-model RDBMS and Linked Data server
+
+github_url: https://github.com/openlink/virtuoso-opensource
+website_url: https://vos.openlinksw.com
+docs_url: https://vos.openlinksw.com/owiki/wiki/VOS
+
+category: Vector DB
+tags: [rdf, sparql, linked-data, sql, knowledge-graph, rdbms, openlink]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Publishing RDF knowledge graphs for SPARQL and Linked Data often
+  needs a server that also speaks SQL. Separate triple stores and
+  relational DBs drift. Virtuoso is a multi-model engine so those
+  graphs, tables, and HTTP Linked Data views share one store.
+
+use_cases:
+  - Host an RDF knowledge graph queried by SPARQL for GraphRAG
+  - Publish Linked Data HTTP views of enterprise entities
+  - Mix SQL tables and RDF triples in one retrieval backend
+  - Load DBpedia-scale triples for open-domain question answering
+  - Expose SPARQL endpoints that agents can call as tools
