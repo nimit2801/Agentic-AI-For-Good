@@ -1,0 +1,27 @@
+name: Picasso
+description: Android image downloading and caching library from Square. Picasso loads remote and local images into ImageView with memory and disk cache, request cancellation, and transforms so Android UIs can show model outputs and dataset thumbnails without a custom downloader.
+tagline: Square image download and cache library for Android
+
+github_url: https://github.com/square/picasso
+website_url: https://square.github.io/picasso/
+docs_url: https://square.github.io/picasso/
+
+category: Dev Tools
+tags: [android, java, image, cache, ui, square]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Android apps that bind remote images from model APIs, datasets, or
+  generated assets still need download, cache, and adapter-aware
+  cancellation. Picasso fills ImageView from a URL with memory and disk
+  cache plus transforms so ML product UIs do not write a custom image
+  stack on top of OkHttp.
+
+use_cases:
+  - Load generated images from a vision or diffusion API into ImageView
+  - Cache dataset thumbnails for an Android labeling or review list
+  - Cancel in-flight image requests as a RecyclerView recycles rows
+  - Transform and crop remote model outputs before display
+  - Share one Picasso singleton across screens that show agent attachments
