@@ -1,0 +1,27 @@
+name: Scrapling
+description: Python web scraping framework that covers a single request through a full-scale crawl, with adaptive parsing, stealth fetchers, and anti-bot handling. Built so scrapers keep working when site markup changes.
+tagline: Adaptive Python scraping from one request to a full crawl
+
+github_url: https://github.com/D4Vinci/Scrapling
+website_url: https://scrapling.readthedocs.io/en/latest/
+docs_url: https://scrapling.readthedocs.io/en/latest/
+
+install_command: pip install scrapling
+
+category: Data
+tags: [web-scraping, python, crawling, anti-bot, parsing, data-extraction]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Site markup changes break CSS and XPath scrapers, and anti-bot pages need a different
+  fetcher than a simple HTTP client. Scrapling combines an adaptive parser with stealth
+  fetchers and crawl spiders so one library can fetch protected pages, extract fields that
+  survive layout churn, and scale from a single request to a site-wide crawl.
+
+use_cases:
+  - Scrape product pages whose CSS classes change weekly without rewriting selectors
+  - Fetch Cloudflare-protected HTML with stealth fetchers instead of a full browser farm
+  - Crawl a documentation site into markdown for a RAG corpus
+  - Give a coding agent the Scrapling skill so generated scrapers match the current API

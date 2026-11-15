@@ -1,0 +1,25 @@
+name: GPU Taskman
+description: Cross-platform GPU task manager for Windows, Linux, and WSL that shows per-process VRAM, GPU activity, and LLM model plus KV-cache insights for NVIDIA and AMD GPUs. Built for local LLM users who need to see which process is filling VRAM.
+tagline: htop for GPU VRAM, engine load, and local LLM memory
+
+github_url: https://github.com/shanselman/gputaskman
+
+install_command: pip install gputaskman
+
+category: Dev Tools
+tags: [gpu, vram, nvidia, amd, llm, monitoring, python, local-inference]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Local LLM users hit mysterious out-of-memory errors because nvidia-smi and Activity Monitor
+  do not show which process owns VRAM or how much is model weights versus KV cache. GPU Taskman
+  lists per-process VRAM, engine load, and LLM memory breakdowns on Windows, Linux, and WSL
+  so you can kill the hog instead of rebooting.
+
+use_cases:
+  - See which local LLM server is holding VRAM before starting another model
+  - Break down GPU memory into model weights versus KV cache on NVIDIA and AMD
+  - Watch per-process GPU engine load while fine-tuning or running inference on WSL
+  - Find leaked CUDA contexts after a crashed training job without rebooting

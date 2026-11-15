@@ -1,0 +1,27 @@
+name: Agent Browser
+description: Browser automation CLI from Vercel Labs for AI agents. It drives a real Chrome instance with snapshot, click, type, and screenshot commands so coding agents can browse, fill forms, and extract page state without a heavyweight Playwright script.
+tagline: Native browser automation CLI built for coding agents
+
+github_url: https://github.com/vercel-labs/agent-browser
+website_url: https://agent-browser.dev
+docs_url: https://agent-browser.dev
+
+install_command: npm install -g agent-browser
+
+category: Dev Tools
+tags: [browser-automation, cli, agents, chrome, rust, npm, vercel]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Coding agents need to click through real websites, but Playwright and Puppeteer scripts are
+  heavy, session-fragile, and hard for an LLM to drive turn by turn. Agent Browser ships a
+  native CLI that opens Chrome, returns accessibility snapshots, and exposes click, type, and
+  screenshot commands agents can call without writing a browser harness.
+
+use_cases:
+  - Let a coding agent fill a login form, click through a dashboard, and extract table data
+  - Snapshot a live page as an accessibility tree so an LLM can choose the next click
+  - Run headless Chrome checks in CI for agent-generated UI without a custom Playwright runner
+  - Install the discovery skill so Claude Code or Codex can browse docs while implementing a feature
