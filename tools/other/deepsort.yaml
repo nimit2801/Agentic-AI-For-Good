@@ -1,0 +1,25 @@
+name: DeepSORT
+description: Online multi-object tracker that extends SORT with a deep appearance descriptor so identities survive occlusion and camera motion better than motion-only Kalman association. Widely used as the appearance-aware baseline for pedestrian and vehicle tracking.
+tagline: SORT plus a deep appearance metric
+
+github_url: https://github.com/nwojke/deep_sort
+website_url: https://arxiv.org/abs/1703.07402
+docs_url: https://github.com/nwojke/deep_sort#readme
+
+category: Other
+tags: [python, computer-vision, multi-object-tracking, mot, sort, appearance, kalman]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Classic SORT associates boxes with Kalman motion only, so IDs swap when
+  people cross or the camera moves. DeepSORT adds a CNN appearance embedding
+  as the association metric, which is the default way teams keep pedestrian
+  and vehicle identities stable in realtime MOT without a joint detector.
+
+use_cases:
+  - Track MOT16 pedestrians with appearance-aware association instead of SORT
+  - Re-identify people after brief occlusions using the bundled CNN descriptor
+  - Baseline a new MOT method against the standard Deep SORT association stack
+  - Run online vehicle or retail tracking from detector boxes plus embeddings
