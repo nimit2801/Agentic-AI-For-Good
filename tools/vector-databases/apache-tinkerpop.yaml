@@ -1,0 +1,26 @@
+name: Apache TinkerPop
+description: Open graph computing framework that defines the Gremlin traversal language and Gremlin Server. TinkerPop is the query layer behind JanusGraph, Amazon Neptune, and other graph stores used for knowledge graphs and GraphRAG.
+tagline: Graph computing framework and Gremlin
+
+github_url: https://github.com/apache/tinkerpop
+website_url: https://tinkerpop.apache.org/
+docs_url: https://tinkerpop.apache.org/docs/current/reference/
+
+category: Vector DB
+tags: [graph, gremlin, knowledge-graph, graph-rag, java, traversal, apache]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Knowledge graphs and GraphRAG systems need a portable traversal
+  language across vendors. Vendor-specific Cypher or SPARQL locks
+  queries to one store. TinkerPop's Gremlin and Gremlin Server give
+  one traversal model that runs on JanusGraph, Neptune, and others.
+
+use_cases:
+  - Query a knowledge graph with Gremlin for GraphRAG retrieval
+  - Run Gremlin Server as a local graph backend during agent development
+  - Port graph traversals across Neptune, JanusGraph, and other TinkerPop stores
+  - Explore entity neighborhoods before embedding them for retrieval
+  - Prototype multi-hop reasoning over a property graph without a vendor lock-in

@@ -1,0 +1,26 @@
+name: Exiv2
+description: C++ library and command-line tool for reading and writing image metadata including Exif, IPTC, and XMP. Exiv2 inspects and edits tags on photos and generated images so dataset pipelines can keep provenance, GPS, and copyright fields consistent.
+tagline: Image metadata library and CLI
+
+github_url: https://github.com/Exiv2/exiv2
+website_url: http://www.exiv2.org/
+docs_url: https://exiv2.org/manpage.html
+
+category: Data
+tags: [exif, metadata, images, xmp, iptc, cplusplus, datasets]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Vision datasets and generated-image pipelines need Exif, IPTC, and
+  XMP tags for provenance and licensing. Ad-hoc scripts miss vendor
+  maker notes. Exiv2 reads and writes those tags from a C++ library
+  and CLI so image corpora stay labeled and searchable.
+
+use_cases:
+  - Strip GPS and camera tags from photos before publishing a vision dataset
+  - Stamp copyright and license XMP on generated images in a render farm
+  - Inventory Exif fields across a folder of training JPEGs
+  - Copy metadata from a RAW file onto a processed PNG used for labeling
+  - Audit maker notes that leak device identity from a scraped image dump
