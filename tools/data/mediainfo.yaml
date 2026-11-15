@@ -1,0 +1,27 @@
+name: MediaInfo
+description: CLI and library that reports technical and tag metadata for audio and video files in one view. MediaInfo is the standard inspect step before transcode or dataset ingest, covering codecs, bitrates, duration, and container tags.
+tagline: Technical metadata for audio and video files
+
+github_url: https://github.com/MediaArea/MediaInfo
+website_url: https://mediaarea.net/en/MediaInfo
+docs_url: https://mediaarea.net/en/MediaInfo
+install_command: brew install media-info
+
+category: Data
+tags: [video, audio, metadata, cli, codecs, media]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Video and audio datasets arrive with unknown codecs, frame rates,
+  and tag fields. FFmpeg probes help but are noisy. MediaInfo prints
+  a compact technical and tag report so ingest jobs can reject bad
+  files and record codec facts before transcode.
+
+use_cases:
+  - Inventory codecs, duration, and resolution in a video training dump
+  - Reject files whose audio sample rate would break a speech pipeline
+  - Export MediaInfo XML into a dataset manifest before labeling
+  - Compare container tags after a transcode in CI
+  - Audit a media corpus for missing language or title tags

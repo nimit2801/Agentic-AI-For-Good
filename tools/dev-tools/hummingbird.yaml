@@ -1,0 +1,26 @@
+name: Hummingbird
+description: Lightweight Swift HTTP server framework built on SwiftNIO. Hummingbird offers a small, composable alternative to Vapor so teams can serve LLM gateways, webhooks, and JSON APIs in Swift with less framework surface.
+tagline: Lightweight Swift HTTP server framework
+
+github_url: https://github.com/hummingbird-project/hummingbird
+website_url: https://hummingbird.codes/
+docs_url: https://docs.hummingbird.codes/
+
+category: Dev Tools
+tags: [swift, http, server-side-swift, nio, web-framework, api]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Swift services that only need HTTP routes for model and agent APIs
+  can be overweight on a full web framework. Hummingbird is a small
+  NIO server with composable middleware so those gateways stay
+  explicit and easy to embed.
+
+use_cases:
+  - Serve an LLM or embedding JSON API from a small Swift process
+  - Handle agent webhooks with SwiftNIO-backed routes
+  - Embed an HTTP health server next to a Swift inference worker
+  - Build middleware for auth and tracing around model calls
+  - Run a Linux Swift gateway with a smaller dependency graph than Vapor
