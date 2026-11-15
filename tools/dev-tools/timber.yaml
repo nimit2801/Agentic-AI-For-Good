@@ -1,0 +1,26 @@
+name: Timber
+description: Android logging library with a small Tree API on top of android.util.Log. Timber plants debug or crash-reporting trees so AI Android apps log inference, network, and agent events without leaking tags or production noise.
+tagline: Extensible logger for Android apps
+
+github_url: https://github.com/JakeWharton/timber
+website_url: https://jakewharton.github.io/timber/docs/5.x/
+docs_url: https://jakewharton.github.io/timber/docs/5.x/
+
+category: Dev Tools
+tags: [android, java, kotlin, logging, debugging, mobile]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Android Log calls need a class tag, skip lint, and often stay on in
+  production. Timber plants a DebugTree in debug builds and a crash
+  reporter in release so on-device inference, model API, and agent
+  apps get automatic tags, format checks, and no stray production logs.
+
+use_cases:
+  - Log on-device inference timing and errors from an Android ML app
+  - Plant a crash-reporting tree for production agent or chatbot builds
+  - Replace android.util.Log with tagged debug output during model-API work
+  - Capture network and tool-call traces while testing an Android agent UI
+  - Lint format-string mistakes in logging around embedding or chat requests
