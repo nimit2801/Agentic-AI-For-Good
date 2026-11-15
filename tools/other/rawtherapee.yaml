@@ -1,0 +1,28 @@
+name: RawTherapee
+description: Cross-platform raw photo processor with non-destructive editing, advanced demosaicing, and color management. RawTherapee develops camera RAW files into training-ready images without a Lightroom license.
+tagline: Open-source raw photo processor
+
+github_url: https://github.com/RawTherapee/RawTherapee
+website_url: https://rawtherapee.com
+docs_url: https://rawpedia.rawtherapee.com
+install_command: brew install --cask rawtherapee
+
+category: Other
+tags: [photography, raw, demosaic, desktop, color-management, open-source]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Camera RAW files cannot train vision models until they are demosaiced
+  and color-managed. Paid converters lock that step behind a license.
+  RawTherapee develops RAW into TIFF or JPEG with profiles and
+  non-destructive edits so datasets keep highlight detail without
+  Adobe Camera Raw.
+
+use_cases:
+  - Convert camera RAW captures into TIFF training images with consistent color
+  - Recover highlight and shadow detail before labeling a vision dataset
+  - Apply a shared processing profile across a batch of field photos
+  - Inspect demosaic artifacts that would poison a generative training set
+  - Export color-managed JPEGs for OCR or document-vision pipelines

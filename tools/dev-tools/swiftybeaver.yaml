@@ -1,0 +1,26 @@
+name: SwiftyBeaver
+description: Swift logging library for iOS, macOS, tvOS, and server-side Swift. SwiftyBeaver writes colored console, file, and cloud destinations so app and agent clients keep filterable logs in development and production.
+tagline: Convenient logging for Swift apps and servers
+
+github_url: https://github.com/SwiftyBeaver/SwiftyBeaver
+website_url: https://swiftybeaver.com
+docs_url: https://docs.swiftybeaver.com
+
+category: Dev Tools
+tags: [swift, ios, macos, logging, cocoapods, vapor]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Swift apps that call LLMs, embeddings, or agent APIs need logs that
+  survive beyond print() and reach files or a remote destination.
+  SwiftyBeaver adds leveled destinations so those events stay readable
+  in Xcode and persist after a device or server restart.
+
+use_cases:
+  - Log LLM request ids and latency from an iOS chat client
+  - Write agent tool-call errors to a rolling file on macOS
+  - Color-code debug vs error output in a Vapor model gateway
+  - Ship production logs from a tvOS or iOS app to a remote destination
+  - Filter noisy network traces while keeping model-call failures
