@@ -1,0 +1,25 @@
+name: QLever
+description: SPARQL and RDF graph engine that scales to more than a trillion triples on a single machine. QLever answers SPARQL queries over large knowledge graphs so GraphRAG and Linked Data apps can retrieve facts without a distributed cluster.
+tagline: Fast SPARQL engine for huge RDF graphs
+
+github_url: https://github.com/ad-freiburg/qlever
+docs_url: https://github.com/ad-freiburg/qlever
+
+category: Vector DB
+tags: [sparql, rdf, knowledge-graph, graphrag, cpp, linked-data]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  SPARQL over billion- and trillion-triple graphs usually needs a
+  cluster. QLever indexes RDF on one commodity machine and answers
+  SPARQL fast, so knowledge-graph and GraphRAG teams can query huge
+  Linked Data dumps without a distributed triple store.
+
+use_cases:
+  - Query Wikidata-scale RDF with SPARQL for GraphRAG retrieval
+  - Host a local SPARQL endpoint over a domain knowledge graph
+  - Join text search with graph patterns for entity-centric RAG
+  - Benchmark SPARQL workloads before picking a production triple store
+  - Serve Linked Data facts that agents call as retrieval tools

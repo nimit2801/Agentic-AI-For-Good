@@ -1,0 +1,27 @@
+name: AmpliGraph
+description: Python library from Accenture for representation learning on knowledge graphs, with TransE, DistMult, ComplEx, and ConvE plus discovery APIs. AmpliGraph scores triples so teams can find missing links that GraphRAG and recommendation graphs should include.
+tagline: Knowledge graph representation learning
+
+github_url: https://github.com/Accenture/AmpliGraph
+docs_url: https://docs.ampligraph.org
+
+install_command: pip install ampligraph
+
+category: RAG
+tags: [python, knowledge-graph, embeddings, link-prediction, tensorflow]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Finding missing links in a knowledge graph for RAG or recommenders
+  needs trained KGE models and evaluation. Wiring TensorFlow models
+  by hand is slow. AmpliGraph trains TransE-family models and scores
+  triples so those missing facts can be ranked and added.
+
+use_cases:
+  - Discover missing triples in an enterprise knowledge graph
+  - Train ComplEx embeddings that seed GraphRAG entity retrieval
+  - Rank candidate relations between two entities for an agent tool
+  - Evaluate Hits at K on a held-out knowledge graph split
+  - Generate graph features for a recommendation or fraud model
