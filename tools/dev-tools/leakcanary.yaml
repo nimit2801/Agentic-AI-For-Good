@@ -1,0 +1,27 @@
+name: LeakCanary
+description: Memory leak detection library for Android from Square. LeakCanary watches Activity, Fragment, and ViewModel teardown so Android AI apps that hold bitmaps, model sessions, and OkHttp clients can catch leaks in debug builds.
+tagline: Android memory leak detection from Square
+
+github_url: https://github.com/square/leakcanary
+website_url: https://square.github.io/leakcanary
+docs_url: https://square.github.io/leakcanary
+
+category: Dev Tools
+tags: [android, java, kotlin, memory, debugging, leak, square]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Android apps that load model images, keep inference sessions, or
+  hold network clients often leak Activities after rotation. Those
+  leaks are hard to see until the process is killed. LeakCanary
+  dumps the retained object graph in debug builds so ML product
+  teams can fix leaks before they hit production.
+
+use_cases:
+  - Catch Activity leaks in an Android agent chat or image-gallery screen
+  - Find retained bitmaps after a generated-image viewer is closed
+  - Debug ViewModel and OkHttp client leaks around model API calls
+  - Watch Fragment teardown in a dataset labeling app
+  - Dump a leak trace during QA of an on-device inference demo
