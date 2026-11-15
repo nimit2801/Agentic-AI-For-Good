@@ -1,0 +1,29 @@
+name: StringZilla
+description: SIMD, SWAR, and GPU kernel library for strings covering search, hashing, sorting, edit distances, and UTF-8. StringZilla speeds up Python, JavaScript, Rust, and C string workloads on x86, Arm, and NVIDIA GPUs.
+tagline: SIMD string kernels for search, hash, sort, and edit distance
+
+github_url: https://github.com/ashvardanian/StringZilla
+website_url: https://ashvardanian.com/posts/stringzilla
+docs_url: https://ashvardanian.com/posts/stringzilla
+
+install_command: |
+  pip install stringzilla
+  npm install stringzilla
+
+category: Dev Tools
+tags: [simd, strings, python, rust, javascript, gpu, hashing]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Python and JavaScript string search, hashing, and fuzzy match sit on scalar
+  loops that waste SIMD units. StringZilla ships portable kernels for find,
+  hash, sort, and edit distance, including GPU paths, so RAG chunking and log
+  parsing can use one library instead of per-language regex hot spots.
+
+use_cases:
+  - Replace Python str.find and hashlib loops with SIMD kernels on large corpora
+  - Compute edit distances for fuzzy entity matching in a data-cleaning pipeline
+  - Hash and sort log lines faster than the standard library on Arm and x86
+  - Use the same string kernels from Python, JavaScript, and Rust

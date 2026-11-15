@@ -1,0 +1,25 @@
+name: Arm NN
+description: Arm inference engine that runs neural networks on Arm CPUs, GPUs, and NPUs. Arm NN translates models from TensorFlow, ONNX, and other frameworks onto Arm Compute Library backends so mobile and embedded ML can use Arm hardware acceleration.
+tagline: Neural network inference on Arm CPU, GPU, and NPU
+
+github_url: https://github.com/ARM-software/armnn
+website_url: https://developer.arm.com/Tools%20and%20Software/Arm%20NN
+docs_url: https://developer.arm.com/documentation/109283/latest/
+
+category: Dev Tools
+tags: [arm, inference, mobile, embedded, onnx, tensorflow, npu]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Generic ONNX runtimes miss Arm GPU and NPU paths that phones actually have.
+  Arm NN loads TensorFlow and ONNX graphs onto Arm Compute Library backends so
+  the same model can run on Cortex-A CPUs, Mali GPUs, and NPUs without a
+  vendor-specific SDK for each chip.
+
+use_cases:
+  - Run an ONNX vision model on an Arm CPU with Compute Library kernels
+  - Delegate inference to a Mali GPU or NPU on a mobile SoC
+  - Convert a TensorFlow graph for on-device Arm deployment
+  - Compare CPU versus GPU latency for an embedded classification model
