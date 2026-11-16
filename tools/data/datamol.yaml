@@ -1,0 +1,27 @@
+name: Datamol
+description: A lightweight Python library on top of RDKit for molecular processing, with sensible defaults, built-in parallelization, and remote-path I/O for SDF, CSV, and other chemistry file formats.
+tagline: Molecular processing made easy on top of RDKit
+
+github_url: https://github.com/datamol-io/datamol
+website_url: https://datamol.io
+docs_url: https://docs.datamol.io
+
+category: Data
+tags: [python, cheminformatics, rdkit, molecules, drug-discovery, chemistry]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+install_command: pip install datamol
+
+problem_solved: |
+  RDKit is powerful but verbose, with many knobs for sanitization, conformers, and
+  I/O that are easy to get wrong. Datamol wraps RDKit molecules with a pythonic API,
+  good defaults, optional progress bars, and fsspec remote paths so chemistry teams
+  can standardize preprocessing without reinventing boilerplate.
+
+use_cases:
+  - Standardize, sanitize, and featurize small-molecule libraries before ML training
+  - Read and write SDF, CSV, and Excel molecule files from local or remote storage
+  - Generate conformers with symmetry-aware RMS cutoffs for 3D QSAR pipelines
+  - Parallelize descriptor calculation and molecule transforms across large compound sets
+  - Convert between RDKit objects, SMILES, and binary property dictionaries in production jobs

@@ -1,0 +1,28 @@
+name: TorchSim
+description: A PyTorch-native atomistic simulation engine that batches molecular dynamics, relaxation, and Monte Carlo on GPUs, accelerating machine learning interatomic potentials such as MACE, Fairchem, SevenNet, ORB, and MatterSim.
+tagline: GPU-batched atomistic simulation for ML interatomic potentials
+
+github_url: https://github.com/TorchSim/torch-sim
+website_url: https://torchsim.github.io/torch-sim/
+docs_url: https://torchsim.github.io/torch-sim/
+
+category: Data
+tags: [python, pytorch, molecular-dynamics, atomistic-simulation, mlip, materials, gpu]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: pip install torch-sim-atomistic
+
+problem_solved: |
+  Classical MD engines were not built for batched GPU inference of machine learning
+  interatomic potentials, so researchers waste cycles looping over structures one at
+  a time. TorchSim rewrites atomistic primitives in PyTorch with automatic batching
+  and memory management, so MD, FIRE relaxation, and swap Monte Carlo can run many
+  systems in parallel on one GPU with ASE and Pymatgen interoperability.
+
+use_cases:
+  - Run batched NVT or NPT molecular dynamics with MACE, SevenNet, or Fairchem potentials
+  - Relax atomic positions and cells with FIRE or gradient descent across many candidates
+  - Screen materials by evaluating energies and elastic properties from MLIP trajectories
+  - Integrate atomistic simulation with ASE, Pymatgen, and Phonopy in a PyTorch workflow
+  - Write extensible binary trajectories that store arbitrary per-frame simulation properties

@@ -1,0 +1,26 @@
+name: Marian
+description: A fast neural machine translation framework written in pure C++ with minimal dependencies, supporting transformer and deep RNN models for multi-GPU training and GPU or CPU translation.
+tagline: Fast neural machine translation in C++
+
+github_url: https://github.com/marian-nmt/marian
+website_url: https://marian-nmt.github.io
+docs_url: https://marian-nmt.github.io/docs
+
+category: Other
+tags: [cpp, nmt, machine-translation, transformer, gpu, nlp]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Production neural machine translation needs high-throughput GPU training and
+  CPU or GPU decoding without a heavy Python runtime. Marian implements state of
+  the art transformer and deep RNN models in C++ so teams can train and serve
+  translation systems with low overhead and a permissive MIT license.
+
+use_cases:
+  - Train transformer NMT models on multiple GPUs for custom language pairs
+  - Serve high-throughput translation on GPU or CPU with a compact C++ binary
+  - Deploy on-device or in-browser translation stacks built on Marian (Bergamot)
+  - Fine-tune domain-specific translation systems from existing Marian checkpoints
+  - Run research experiments on deep RNN and transformer architectures without Python
