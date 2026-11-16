@@ -1,0 +1,22 @@
+name: CGCNN
+description: Crystal graph convolutional neural network for predicting material properties. CGCNN represents crystals as graphs of atoms and bonds so labs can learn formation energies, band gaps, and elastic properties from DFT-labeled structures.
+tagline: Crystal graph CNNs for materials properties
+
+github_url: https://github.com/txie-93/cgcnn
+
+category: Data
+tags: [python, pytorch, materials-science, graph-neural-networks, crystals, cgcnn]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Crystal property models need a way to encode periodic 3D structure without
+  hand-built descriptors. CGCNN turns crystals into atom-bond graphs and
+  learns convolutional filters that predict DFT labels from structure files.
+
+use_cases:
+  - Predict formation energy of candidate crystals from CIF files
+  - Screen band-gap or elastic-modulus targets before running DFT
+  - Train a CGCNN on Materials Project property labels
+  - Benchmark graph models for periodic materials against CGCNN

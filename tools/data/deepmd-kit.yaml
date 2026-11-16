@@ -1,0 +1,24 @@
+name: DeepMD-kit
+description: Deep learning package for many-body potential energy representation and molecular dynamics. DeepMD-kit trains neural network potentials that plug into LAMMPS, GROMACS, and ASE so large-scale MD can keep quantum-level accuracy without a DFT call at every step.
+tagline: Deep potential molecular dynamics
+
+github_url: https://github.com/deepmodeling/deepmd-kit
+docs_url: https://docs.deepmodeling.com/projects/deepmd/
+install_command: pip install deepmd-kit
+
+category: Data
+tags: [python, molecular-dynamics, interatomic-potentials, deepmd, lammps, materials-science]
+pricing: free
+is_open_source: true
+license: LGPL-3.0
+
+problem_solved: |
+  Classical force fields miss chemistry while DFT is too slow for long MD.
+  DeepMD-kit learns many-body neural potentials and ships engine plugins so
+  teams run production molecular dynamics with learned energies and forces.
+
+use_cases:
+  - Train a Deep Potential model on DFT energy-force datasets
+  - Run LAMMPS or GROMACS MD with a DeepMD neural network potential
+  - Fine-tune Deep Potential models on in-house materials data
+  - Couple ASE workflows to DeepMD inference for structure relaxation

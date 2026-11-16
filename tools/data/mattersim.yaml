@@ -1,0 +1,25 @@
+name: MatterSim
+description: Deep learning atomistic model that covers the periodic table across temperatures and pressures. MatterSim predicts energies, forces, and stresses for materials so labs can relax structures and run MD without a DFT calculation at every configuration.
+tagline: Universal atomistic model across T and P
+
+github_url: https://github.com/microsoft/mattersim
+website_url: https://microsoft.github.io/mattersim/
+docs_url: https://microsoft.github.io/mattersim/
+install_command: pip install mattersim
+
+category: Data
+tags: [python, pytorch, materials-science, interatomic-potentials, microsoft, molecular-dynamics]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Universal ML potentials often break outside ambient conditions. MatterSim
+  is trained across elements, temperatures, and pressures so materials teams
+  can relax crystals and run finite-T MD with one pretrained model.
+
+use_cases:
+  - Relax crystal structures with a pretrained MatterSim calculator
+  - Run molecular dynamics across temperature and pressure ranges
+  - Predict energies, forces, and stresses for combinatorial materials screens
+  - Fine-tune MatterSim on a small in-domain DFT dataset
