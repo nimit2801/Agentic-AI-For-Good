@@ -1,0 +1,24 @@
+name: MACE
+description: Fast machine learning interatomic potentials with higher-order equivariant message passing. MACE trains ACE-style models that reach DFT-level energies and forces so molecular dynamics can run at scale without a full quantum calculation at every step.
+tagline: Higher-order equivariant interatomic potentials
+
+github_url: https://github.com/ACEsuit/mace
+docs_url: https://mace-docs.readthedocs.io/en/latest/
+install_command: pip install mace-torch
+
+category: Data
+tags: [python, pytorch, interatomic-potentials, equivariant, molecular-dynamics, materials-science]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Classical force fields miss chemistry, while DFT is too slow for long MD.
+  MACE learns higher-order equivariant message-passing potentials that keep
+  quantum accuracy on energies and forces at MD-relevant speed.
+
+use_cases:
+  - Train a MACE potential on DFT labels for a materials or molecular system
+  - Run ASE or LAMMPS molecular dynamics with a pretrained MACE model
+  - Fine-tune foundation MACE models on a small in-house energy-force set
+  - Screen crystal or molecule geometries with ML energies before DFT

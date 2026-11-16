@@ -1,0 +1,24 @@
+name: e3nn
+description: Modular PyTorch framework for neural networks with Euclidean E(3) symmetry. e3nn supplies irreducible representations, tensor products, and equivariant convolutions so geometric ML models respect 3D rotations, translations, and inversion.
+tagline: Euclidean E(3)-equivariant neural networks
+
+github_url: https://github.com/e3nn/e3nn
+docs_url: https://docs.e3nn.org/en/latest/
+install_command: pip install e3nn
+
+category: Data
+tags: [python, pytorch, equivariant, geometric-deep-learning, e3, tensor-product]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  3D molecular and materials models break if they treat coordinates as plain
+  vectors. e3nn gives the irreps, Clebsch-Gordan tensor products, and gated
+  nonlinearities needed to build rotation-equivariant networks correctly.
+
+use_cases:
+  - Build E(3)-equivariant layers for molecular energy and force models
+  - Implement steerable convolutions for 3D point clouds or crystals
+  - Prototype new equivariant architectures on top of documented irreps APIs
+  - Teach or reproduce papers that depend on e3nn tensor products

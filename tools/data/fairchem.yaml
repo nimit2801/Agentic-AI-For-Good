@@ -1,0 +1,26 @@
+name: FairChem
+description: FAIR Chemistry library of machine learning methods for chemistry and materials. FairChem trains and serves equivariant models for energies, forces, and catalysis so labs can run atomistic ML without assembling a custom training stack.
+tagline: Machine learning models for chemistry from FAIR Chemistry
+
+github_url: https://github.com/facebookresearch/fairchem
+website_url: https://facebookresearch.github.io/fairchem/
+docs_url: https://facebookresearch.github.io/fairchem/
+install_command: pip install fairchem-core
+
+category: Data
+tags: [python, chemistry, materials-science, equivariant, interatomic-potentials, pytorch]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Chemistry and catalysis ML needs shared datasets, equivariant architectures,
+  and inference paths into MD engines. FairChem packages pretrained models and
+  training code so teams predict energies and forces without rebuilding the
+  FAIR Chemistry stack from papers.
+
+use_cases:
+  - Train or fine-tune UMA and related models on catalysis or materials datasets
+  - Predict energies and forces for adsorbates on surfaces in screening loops
+  - Run multi-GPU inference for large-scale molecular dynamics with LAMMPS
+  - Benchmark atomistic ML methods against FAIR Chemistry open datasets

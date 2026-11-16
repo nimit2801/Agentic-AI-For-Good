@@ -1,0 +1,23 @@
+name: torch-cluster
+description: PyTorch extension library of optimized graph clustering algorithms. torch-cluster implements knn, radius, fps, and Graclus ops used by PyG geometric models so GNN pipelines can sample neighborhoods without writing CUDA kernels.
+tagline: Optimized graph clustering ops for PyTorch
+
+github_url: https://github.com/rusty1s/pytorch_cluster
+install_command: pip install torch-cluster
+
+category: Dev Tools
+tags: [python, pytorch, geometric-deep-learning, clustering, cuda, pyg]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Geometric GNNs need fast nearest-neighbor, radius, and sampling kernels on
+  GPU. torch-cluster ships those clustering primitives as PyTorch ops so
+  PyG models do not reimplement CUDA neighborhood search.
+
+use_cases:
+  - Build k-NN or radius graphs for point-cloud GNN layers
+  - Farthest-point sample point clouds before downsampling in 3D models
+  - Cluster nodes with Graclus or voxel grid pooling in PyG pipelines
+  - Speed up molecular graph construction during training batches
