@@ -1,0 +1,26 @@
+name: LigandMPNN
+description: Inference code for LigandMPNN and ProteinMPNN models that design protein sequences conditioned on backbone coordinates and nearby ligands, returning FASTA and PDB outputs with per-residue confidence scores.
+tagline: Ligand-aware protein sequence design from backbone structures
+
+github_url: https://github.com/dauparas/LigandMPNN
+website_url: https://www.biorxiv.org/content/10.1101/2023.12.22.573103v1
+
+category: Data
+tags: [python, protein-design, sequence-design, ligands, proteinmpnn, pytorch]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  ProteinMPNN designs sequences from backbone geometry but ignores small-molecule
+  context, so pocket residues around ligands are often wrong. LigandMPNN conditions
+  on protein backbone plus ligand atoms, preserves PDB chain and residue numbering,
+  and reports ligand-aware confidence so designers can redesign binding sites
+  without losing ligand contacts.
+
+use_cases:
+  - Redesign a protein pocket around a bound ligand while keeping the backbone fixed
+  - Run ProteinMPNN or LigandMPNN from the same CLI with selectable checkpoints
+  - Fix or bias specific residues by PDB chain letter and residue index
+  - Pack side chains and write PDB outputs that keep insertion codes and chain IDs
+  - Score redesigned sequences with overall and ligand confidence for hit filtering

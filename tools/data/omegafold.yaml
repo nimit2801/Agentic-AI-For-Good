@@ -1,0 +1,24 @@
+name: OmegaFold
+description: A high-resolution de novo protein structure predictor from HeliXon that folds single sequences without MSAs, with subbatch inference that can handle proteins thousands of residues long on high-memory GPUs.
+tagline: Single-sequence de novo protein structure prediction
+
+github_url: https://github.com/HeliXonProtein/OmegaFold
+
+category: Data
+tags: [python, protein-structure, folding, single-sequence, pytorch, structural-biology]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  AlphaFold-style predictors need deep MSAs, which fail for orphans, designed
+  proteins, and sequences with few homologs. OmegaFold predicts high-resolution
+  structures from primary sequence alone, with a subbatch mode that trades time
+  for GPU memory so long chains can still be folded.
+
+use_cases:
+  - Fold orphan or designed proteins that lack useful multiple sequence alignments
+  - Predict high-resolution structures from a FASTA sequence on a single GPU
+  - Reduce GPU memory for long chains by lowering OmegaFold subbatch size
+  - Compare single-sequence folds against MSA-based AlphaFold models
+  - Run model 1 or model 2 checkpoints for de novo structure prediction
