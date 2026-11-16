@@ -1,0 +1,26 @@
+name: Custodian
+description: Custodian is a just-in-time job manager for long-running scientific calculations. It wraps jobs with error checking and recovery plugins so high-throughput VASP, QChem, NwChem, FEFF, Lobster, and CP2K campaigns can restart after random IO or convergence failures.
+tagline: JIT error recovery for high-throughput compute jobs
+
+github_url: https://github.com/materialsproject/custodian
+docs_url: https://materialsproject.github.io/custodian/
+
+category: Data
+tags: [python, materials-science, vasp, high-throughput, error-recovery, job-management]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: pip install custodian
+
+problem_solved: |
+  High-throughput DFT and quantum-chemistry campaigns fail from random IO,
+  convergence, and resource errors at a rate that cannot be fixed by hand.
+  Custodian wraps each job with checkers and handlers that rewrite inputs
+  and restart, so Materials Project-style VASP and QChem queues keep
+  producing data instead of filling with dead jobs.
+
+use_cases:
+  - Recover VASP jobs that crash on electronic convergence or disk IO errors
+  - Wrap QChem and NwChem calculations with automatic retry handlers
+  - Run FireWorks or Jobflow workers that self-heal long DFT campaigns
+  - Write custom Job and ErrorHandler plugins for in-house simulation codes
