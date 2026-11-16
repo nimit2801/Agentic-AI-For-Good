@@ -1,0 +1,26 @@
+name: MOSES
+description: Molecular Sets is a benchmarking platform for molecular generation models, with a filtered ZINC dataset, implemented baselines, and metrics for validity, uniqueness, diversity, and scaffold novelty.
+tagline: Standard benchmark for molecular generation models
+
+github_url: https://github.com/molecularsets/moses
+website_url: https://arxiv.org/abs/1811.12823
+
+category: Data
+tags: [python, molecular-generation, benchmark, drug-discovery, zinc, cheminformatics]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: pip install molsets
+
+problem_solved: |
+  Generative chemistry papers used incompatible datasets and metrics, so models
+  could not be compared fairly. MOSES standardizes a filtered ZINC lead-like set
+  plus validity, uniqueness, diversity, and scaffold-split metrics, with reference
+  implementations of popular generators.
+
+use_cases:
+  - Train and evaluate a molecule generator on the MOSES ZINC split
+  - Measure validity, uniqueness, and internal diversity of generated SMILES
+  - Test scaffold novelty on a held-out Bemis-Murcko scaffold test set
+  - Compare new models against MOSES baseline generators under the same metrics
+  - Share molecular generation results using a community-standard dataset
