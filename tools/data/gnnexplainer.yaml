@@ -1,0 +1,24 @@
+name: GNNExplainer
+description: Reference implementation of GNNExplainer. It finds the compact subgraph and node features that most influence a GNN prediction, so researchers can debug graph classifiers without treating the model as a black box.
+tagline: Subgraph explanations for graph neural networks
+
+github_url: https://github.com/RexYing/gnn-model-explainer
+
+category: Data
+tags: [python, pytorch, gnn, explainability, interpretability, graphs]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  GNN classifiers give a label but not the edges or features that drove it,
+  which blocks debugging on molecules, social graphs, and citation networks.
+  GNNExplainer searches for a compact subgraph and a feature mask that
+  preserve the prediction, producing human-readable explanations for node
+  and graph classification models.
+
+use_cases:
+  - Explain why a GNN classified a molecule as toxic by highlighting bonds
+  - Find the citation subgraph that drives a paper-topic prediction
+  - Debug a node classifier by inspecting the explainer feature mask
+  - Benchmark graph explanation methods against the original GNNExplainer

@@ -1,0 +1,24 @@
+name: GraphCL
+description: NeurIPS 2020 graph contrastive learning with graph augmentations. GraphCL pretrains GNN encoders by maximizing agreement across node dropping, edge perturbation, attribute masking, and subgraph sampling views.
+tagline: Contrastive pretraining for graph neural networks
+
+github_url: https://github.com/Shen-Lab/GraphCL
+
+category: Data
+tags: [python, pytorch, gnn, contrastive-learning, self-supervised, pretraining]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Labeled graphs are scarce, and naive contrastive copies of SimCLR fail
+  because graph augmentations can destroy semantics. GraphCL studies which
+  augmentations (node drop, edge perturb, attribute mask, subgraph sample)
+  produce useful views, then pretrains GNN encoders that transfer to
+  classification with few labels.
+
+use_cases:
+  - Pretrain a GIN encoder on unlabeled molecules then fine-tune for property prediction
+  - Compare node-dropping versus subgraph sampling as GraphCL views
+  - Transfer a GraphCL checkpoint to a small graph classification benchmark
+  - Reproduce NeurIPS 2020 GraphCL results as a self-supervised GNN baseline

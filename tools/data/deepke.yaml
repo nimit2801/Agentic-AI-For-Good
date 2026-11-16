@@ -1,0 +1,28 @@
+name: DeepKE
+description: Open toolkit from ZJU NLP for knowledge graph construction. DeepKE covers entity, relation, and attribute extraction in low-resource, document-level, multimodal, and LLM settings, with cnSchema models and an EMNLP 2022 demo.
+tagline: Deep learning toolkit for knowledge graph extraction
+
+github_url: https://github.com/zjunlp/DeepKE
+website_url: http://deepke.zjukg.cn/
+docs_url: https://zjunlp.github.io/DeepKE/
+
+category: Data
+tags: [python, knowledge-graph, ner, relation-extraction, nlp, pytorch]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install deepke
+
+problem_solved: |
+  Building a knowledge graph from text means stitching NER, relation, and
+  attribute extractors, then repeating the work for few-shot, document-level,
+  and multimodal inputs. DeepKE packages those extractors, cnSchema models,
+  and a DeepKE-LLM path so teams construct KGs without assembling a custom
+  information-extraction stack.
+
+use_cases:
+  - Extract entities and relations from Chinese or English text into a KG
+  - Run few-shot NER with LightNER when labeled mentions are scarce
+  - Pull relational triples with PRGC, PURE, or ASP models
+  - Combine DeepKE-LLM with OneKE for LLM-based knowledge extraction
