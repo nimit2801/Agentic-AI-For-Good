@@ -1,0 +1,26 @@
+name: ALIGNN
+description: Atomistic line graph neural network for materials property prediction. ALIGNN encodes both atom graphs and line graphs of bonds so NIST JARVIS models can learn crystal properties from structure files with bond-angle information included.
+tagline: Atomistic line graph neural networks
+
+github_url: https://github.com/usnistgov/alignn
+website_url: https://jarvis.nist.gov/jalignn/
+docs_url: https://jarvis.nist.gov/jalignn/
+install_command: pip install alignn
+
+category: Data
+tags: [python, pytorch, materials-science, graph-neural-networks, jarvis, nist]
+pricing: free
+is_open_source: true
+license: NIST
+
+problem_solved: |
+  Crystal GNNs that only use atom-neighbor graphs miss explicit bond-angle
+  geometry. ALIGNN adds a line graph of bonds so models trained on JARVIS
+  and similar datasets can predict materials properties with three-body
+  information included.
+
+use_cases:
+  - Predict formation energy and band gap from CIF crystal files
+  - Train ALIGNN models on JARVIS DFT property datasets
+  - Screen candidate crystals before running expensive DFT
+  - Serve pretrained ALIGNN models through the NIST JARVIS interface

@@ -1,0 +1,25 @@
+name: DScribe
+description: Python package for machine learning descriptors of atomistic systems. DScribe computes SOAP, ACSF, MBTR, and related fingerprints so materials models can train on geometry without hand-rolling descriptor code.
+tagline: Atomistic ML descriptors for materials
+
+github_url: https://github.com/SINGROUP/dscribe
+website_url: https://singroup.github.io/dscribe/
+docs_url: https://singroup.github.io/dscribe/
+install_command: pip install dscribe
+
+category: Data
+tags: [python, materials-science, descriptors, soap, fingerprints, machine-learning]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Atomistic ML still often needs classical descriptors, not only GNNs. DScribe
+  implements SOAP, ACSF, MBTR, and related fingerprints with a shared API so
+  labs can featurize molecules and crystals without rewriting descriptor math.
+
+use_cases:
+  - Compute SOAP descriptors for molecular and crystal datasets
+  - Build ACSF or MBTR features for kernel ridge materials models
+  - Compare descriptor-based baselines against graph neural networks
+  - Featurize ASE atoms objects inside a materials screening loop

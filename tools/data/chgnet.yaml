@@ -1,0 +1,25 @@
+name: CHGNet
+description: Pretrained universal neural network potential for charge-informed atomistic modeling. CHGNet predicts energies, forces, stresses, and magnetic moments so materials teams can relax structures and run MD with charge degrees of freedom included.
+tagline: Charge-informed universal atomistic potential
+
+github_url: https://github.com/CederGroupHub/chgnet
+website_url: https://chgnet.lbl.gov
+docs_url: https://chgnet.lbl.gov
+install_command: pip install chgnet
+
+category: Data
+tags: [python, pytorch, materials-science, interatomic-potentials, charge, molecular-dynamics]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Many universal potentials ignore charge and magnetism, so they fail on
+  oxides and correlated materials. CHGNet predicts charge-informed energies,
+  forces, stresses, and magnetic moments for structure relaxation and MD.
+
+use_cases:
+  - Relax crystal structures with a pretrained CHGNet calculator
+  - Run charge-informed molecular dynamics on oxide materials
+  - Predict magnetic moments alongside energies and forces
+  - Fine-tune CHGNet on in-house DFT labels for a chemical space
