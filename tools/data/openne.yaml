@@ -1,0 +1,24 @@
+name: OpenNE
+description: Open-source network embedding toolkit from Tsinghua NLP that unifies DeepWalk, LINE, node2vec, GraRep, GCN, HOPE, SDNE, and TADW behind one training and evaluation interface, with TensorFlow implementations that can train on GPUs.
+tagline: Unified toolkit for classic network embedding models
+
+github_url: https://github.com/thunlp/OpenNE
+
+category: Data
+tags: [python, tensorflow, graph-embedding, network-embedding, gnn, node-classification]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Classic network embedding papers each ship a different data format, CLI,
+  and evaluation script, so comparing DeepWalk, LINE, node2vec, and GCN on
+  the same graph is slow and error-prone. OpenNE standardizes input, output,
+  and node-classification eval so you can train and benchmark those models
+  from one toolkit, including TADW when nodes have text attributes.
+
+use_cases:
+  - Train DeepWalk, LINE, or node2vec embeddings on a citation or social graph
+  - Benchmark GraRep, HOPE, SDNE, and Laplacian Eigenmaps on the same edgelist
+  - Run TADW or GCN when nodes include text features, as on Cora-style datasets
+  - Reproduce node-classification Micro-F1 and Macro-F1 scores across NE models

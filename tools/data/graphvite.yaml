@@ -1,0 +1,27 @@
+name: GraphVite
+description: High-performance graph embedding system for large graphs and knowledge graphs. GraphVite trains DeepWalk, LINE, TransE, and related models with multi-GPU C++ kernels and a Python API, plus visualization of the resulting vectors.
+tagline: Multi-GPU graph and knowledge-graph embeddings
+
+github_url: https://github.com/DeepGraphLearning/graphvite
+website_url: https://graphvite.io
+docs_url: https://graphvite.io
+install_command: conda install -c milagraph graphvite
+
+category: Data
+tags: [python, c++, graph-embedding, knowledge-graph, gpu, deepwalk]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Training embeddings on graphs with tens of millions of edges is slow in
+  pure Python walkers, and knowledge-graph models often live in a separate
+  stack. GraphVite shares high-performance CPU/GPU kernels across graph,
+  knowledge-graph, and visualization workloads so you can train DeepWalk,
+  LINE, and TransE-style models at scale from one system.
+
+use_cases:
+  - Train DeepWalk or LINE embeddings on a large social or web graph with GPUs
+  - Learn TransE-style knowledge-graph embeddings for link prediction
+  - Visualize high-dimensional embeddings without exporting to a separate tool
+  - Benchmark graph embedding throughput against CPU-only implementations

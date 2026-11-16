@@ -1,0 +1,27 @@
+name: Graspologic
+description: Python package for statistical graph analysis covering embeddings, community detection, graph matching, and hypothesis tests. graspologic helps you model networks with reproducible statistical methods rather than ad hoc clustering scripts.
+tagline: Statistical algorithms for graph and network analysis
+
+github_url: https://github.com/graspologic-org/graspologic
+website_url: https://graspologic-org.github.io/graspologic/
+docs_url: https://graspologic-org.github.io/graspologic/
+install_command: pip install graspologic
+
+category: Data
+tags: [python, graphs, statistics, embeddings, community-detection, network-analysis]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Network data is not i.i.d. tabular data, so off-the-shelf clustering and
+  PCA miss community structure, alignment, and significance. graspologic
+  packages embeddings, community detection, graph matching, and statistical
+  tests so you can analyze connectomes, social graphs, and similar networks
+  with methods designed for graphs.
+
+use_cases:
+  - Embed graphs with ASE or LSE before clustering or visualization
+  - Detect communities and compare partitions across related networks
+  - Match two graphs to align nodes that represent the same entities
+  - Run hypothesis tests on whether two networks share latent structure
