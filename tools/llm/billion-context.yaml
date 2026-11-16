@@ -1,0 +1,28 @@
+name: Billion Context
+description: A context-compression plugin that sits between coding agents and model APIs, rewriting streams so a 100K window can host month-long sessions spanning billions of tokens. Compression is incremental, reversible, and prefix-cache friendly rather than hard truncation.
+tagline: Compress agent context so a 100K window lasts for months
+
+github_url: https://github.com/ranxianglei/billion-context
+website_url: https://www.npmjs.com/package/billion-context
+
+category: LLM
+tags: [typescript, context-compression, agents, coding-agents, npm, openai, anthropic]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: npm install -g billion-context
+
+problem_solved: |
+  Long coding-agent sessions blow past the model context window, then either die or
+  get naively summarized and lose detail. Billion Context intercepts Anthropic and
+  OpenAI streams, compresses consumed conversation into layered summaries the model
+  can decompress on demand, and keeps the prefix cache intact. Teams can run a
+  single session for days without paying full-context token costs or hitting
+  window-limit failures.
+
+use_cases:
+  - Keep a Claude Code or Codex session alive across weeks of work without restarting context
+  - Cut input-token spend on marathon agent runs by compressing old turns into high-fidelity summaries
+  - Plug the same compressor into OpenCode, Gemini CLI, or Hermes without changing the host agent
+  - Benchmark context survival against full-window and RAG baselines on long-memory tasks
