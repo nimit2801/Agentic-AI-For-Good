@@ -1,0 +1,23 @@
+name: FastGCN
+description: TensorFlow implementation of FastGCN (ICLR 2018). It interprets graph convolutions as integral transforms and uses importance sampling so GCN minibatches stay cheap on large graphs such as Reddit instead of exploding with layer-wise neighbors.
+tagline: Importance-sampled GCN training for large graphs
+
+github_url: https://github.com/matenure/FastGCN
+
+category: Data
+tags: [python, tensorflow, gnn, gcn, importance-sampling, large-scale]
+pricing: free
+is_open_source: true
+
+problem_solved: |
+  Recursive neighbor expansion in GCN minibatches grows with depth and
+  makes Reddit-scale training too slow. FastGCN recasts convolution as an
+  integral, samples vertices with importance weights, and keeps batch cost
+  independent of neighborhood explosion so inductive GCNs train on large
+  citation and social graphs.
+
+use_cases:
+  - Train an inductive GCN on Reddit with importance sampling enabled
+  - Compare uniform versus importance sampling on Pubmed and Cora
+  - Convert Reddit data to GraphSAGE format to benchmark against GraphSAGE
+  - Approximate two-layer GCNs without recursive neighborhood expansion

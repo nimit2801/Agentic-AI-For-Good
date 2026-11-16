@@ -1,0 +1,26 @@
+name: OGDF
+description: Self-contained C++ library for graph algorithms and automatic graph drawing. OGDF ships layouts, planarity tools, and graph data structures used in scientific applications, with Conan, vcpkg, and Python wheel distributions.
+tagline: Open Graph Drawing Framework in C++
+
+github_url: https://github.com/ogdf/ogdf
+website_url: http://www.ogdf.net/
+docs_url: https://ogdf.github.io/doc/ogdf/
+
+category: Data
+tags: [cpp, graph-drawing, graph-algorithms, layout, planarity, scientific-computing]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Scientific and visualization apps need layered, orthogonal, and planar
+  graph layouts plus matching data structures, but rolling those algorithms
+  in-house is a research project. OGDF packages decades of graph-drawing
+  algorithms as a C++ library with Conan, vcpkg, and an ogdf-wheel Python
+  build so tools can embed production layouts without rewriting them.
+
+use_cases:
+  - Embed Sugiyama or orthogonal layouts in a C++ visualization tool
+  - Test planarity and compute planar embeddings for circuit graphs
+  - Consume OGDF from Python via the ogdf-wheel package
+  - Prototype graph algorithms on OGDF data structures instead of ad hoc C++
