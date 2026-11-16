@@ -1,0 +1,27 @@
+name: Gloo
+description: A collective communications library from Meta and PyTorch with barrier, broadcast, and allreduce primitives for multi-machine training over TCP or InfiniBand, including GPUDirect transfers and CPU or GPU buffers.
+tagline: Collective communications for multi-machine ML training
+
+github_url: https://github.com/pytorch/gloo
+website_url: https://pytorch.org/docs/stable/distributed.html
+docs_url: https://github.com/pytorch/gloo/tree/main/docs
+
+category: Dev Tools
+tags: [cpp, distributed-training, collectives, pytorch, allreduce, infiniband, gpu]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Distributed training needs reliable collectives when NCCL is unavailable, such
+  as CPU-only jobs, mixed CPU-GPU buffers, or Ethernet without GPUDirect. Gloo
+  provides barrier, broadcast, and allreduce over TCP or InfiniBand so PyTorch
+  Distributed and other trainers can scale across machines without tying every
+  job to an NVIDIA-only backend.
+
+use_cases:
+  - Run PyTorch Distributed Data Parallel on CPU or Ethernet clusters using the Gloo backend
+  - Allreduce gradients across machines over TCP when InfiniBand or NCCL is not available
+  - Broadcast model parameters at job start in multi-node training
+  - Use GPUDirect with InfiniBand or RoCE for GPU-to-GPU transfers across hosts
+  - Coordinate multi-machine training with a portable C++ collective library

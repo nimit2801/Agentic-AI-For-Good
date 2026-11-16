@@ -1,0 +1,28 @@
+name: SevenNet
+description: A graph neural network interatomic potential package based on NequIP that supports pretrained universal models, ASE calculators, multi-GPU LAMMPS molecular dynamics, and multi-fidelity fine-tuning for materials simulations.
+tagline: Scalable GNN interatomic potentials for parallel MD
+
+github_url: https://github.com/MDIL-SNU/SevenNet
+website_url: https://sevennet.readthedocs.io
+docs_url: https://sevennet.readthedocs.io
+
+category: Data
+tags: [python, mlip, graph-neural-network, molecular-dynamics, lammps, ase, materials]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: pip install sevenn
+
+problem_solved: |
+  Running graph neural network potentials at MD scale is hard because tensor
+  products and multi-GPU parallelism are not built into typical ASE calculators.
+  SevenNet packages NequIP-style equivariant models with LAMMPS GPU parallelism,
+  pretrained checkpoints, D3 dispersion, and continual fine-tuning so materials
+  groups can simulate large cells without writing a custom GNN MD stack.
+
+use_cases:
+  - Run GPU-parallel LAMMPS molecular dynamics with a SevenNet interatomic potential
+  - Fine-tune pretrained SevenNet models on in-house DFT data with multi-fidelity training
+  - Use the ASE calculator to relax structures and compute energies in Python workflows
+  - Combine datasets computed at different levels of theory in one multi-fidelity potential
+  - Apply CUDA-accelerated D3 dispersion on top of a GNN potential for van der Waals systems
