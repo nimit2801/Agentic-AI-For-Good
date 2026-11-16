@@ -1,0 +1,26 @@
+name: OpenHGNN
+description: An open-source toolkit for heterogeneous graph neural networks built on DGL and PyTorch. OpenHGNN registers dozens of SOTA models and tasks so you can train on graphs with multiple node and edge types without assembling each paper from scratch.
+tagline: Heterogeneous graph neural networks on DGL and PyTorch
+
+github_url: https://github.com/BUPT-GAMMA/OpenHGNN
+docs_url: https://openhgnn.readthedocs.io/en/latest/
+
+category: Data
+tags: [python, heterogeneous-graphs, gnn, dgl, pytorch, knowledge-graph]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install openhgnn
+
+problem_solved: |
+  Real graphs mix users, items, papers, and many edge types, but most GNN libraries
+  assume a homogeneous graph. OpenHGNN packages heterogeneous GNN models, datasets,
+  and trainer flows on DGL so teams can run node classification, node regression, and
+  related tasks on multi-type graphs without reimplementing each CIKM or SIGIR paper.
+
+use_cases:
+  - Train a heterogeneous GNN for node classification on a multi-type academic or social graph
+  - Run node regression on continuous labels without writing a custom DGL trainer
+  - Compare registered OpenHGNN models on the built-in heterogeneous graph benchmark
+  - Add a new heterogeneous model through the DGL trainerflow and dataset checklist

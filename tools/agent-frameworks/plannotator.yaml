@@ -1,0 +1,27 @@
+name: Plannotator
+description: A local browser workspace for reviewing coding-agent plans, diffs, HTML artifacts, and decisions. Plannotator plugs into Claude Code, Codex, OpenCode, and similar agents so you can annotate, comment, and send feedback back to the agent in one click.
+tagline: Review and annotate agent plans, diffs, and artifacts
+
+github_url: https://github.com/backnotprop/plannotator
+website_url: https://plannotator.ai
+
+category: Agents
+tags: [agents, code-review, planning, typescript, claude-code, human-in-the-loop]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: curl -fsSL https://plannotator.ai/install.sh | bash
+
+problem_solved: |
+  Multi-agent coding work produces plans, prototypes, and diffs faster than a human
+  can review in the terminal. Plannotator is a local review surface that opens in the
+  browser when an agent proposes a plan or finishes a change, lets you mark up the
+  artifact, and sends that feedback to the agent so you stay in the loop without
+  pasting comments back by hand.
+
+use_cases:
+  - Annotate an agent-written plan or spec and send inline comments back to Claude Code
+  - Review a coding-agent diff or PR in the Plannotator inbox instead of a raw terminal dump
+  - Mark up HTML prototypes the agent generated and request a revision in one click
+  - Keep a shared review inbox across Codex, OpenCode, Gemini CLI, and Pi sessions

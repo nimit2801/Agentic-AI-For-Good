@@ -1,0 +1,28 @@
+name: Astryx
+description: Meta's open-source React 19 design system, agent-ready and fully customizable. Astryx ships 150-plus accessible components, CSS-variable theming, and a CLI so people and coding agents build UI from the same typed components without a styling lock-in.
+tagline: Agent-ready React design system from Meta
+
+github_url: https://github.com/meta/astryx
+website_url: https://astryx.atmeta.com
+docs_url: https://astryx.atmeta.com
+
+category: Dev Tools
+tags: [react, design-system, typescript, stylex, ui, agents, npm]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: npm install @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex
+
+problem_solved: |
+  Coding agents generate UI that fights whatever design system the app already uses,
+  and most component libraries hide internals behind a closed API. Astryx grew inside
+  Meta as a themable React system with open internals, CSS custom properties, and docs
+  written for both humans and agents, so an assistant can compose the same components
+  a designer already themed.
+
+use_cases:
+  - Scaffold a React 19 app with accessible Astryx components and a Neutral theme
+  - Let a coding agent compose typed Astryx components instead of inventing one-off CSS
+  - Theme the system with CSS custom properties without wrapping every component
+  - Swizzle a component into the project when you need to own the source
