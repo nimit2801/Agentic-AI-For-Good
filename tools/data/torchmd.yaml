@@ -1,0 +1,23 @@
+name: TorchMD
+description: End-to-end molecular dynamics engine built on PyTorch. TorchMD runs differentiable MD so researchers can train potentials, compute forces, and backprop through trajectories without leaving a standard deep learning stack.
+tagline: Differentiable molecular dynamics in PyTorch
+
+github_url: https://github.com/torchmd/torchmd
+install_command: pip install torchmd
+
+category: Data
+tags: [python, pytorch, molecular-dynamics, differentiable, chemistry, simulation]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  MD engines and neural potentials usually live in separate stacks, so you
+  cannot backprop through a trajectory. TorchMD implements MD in PyTorch so
+  forces, integrators, and learned potentials share one autodiff graph.
+
+use_cases:
+  - Run PyTorch molecular dynamics with neural network potentials
+  - Train force fields by differentiating through short MD trajectories
+  - Prototype custom integrators and thermostats in Python
+  - Couple learned energy models to classical MD simulation loops

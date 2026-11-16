@@ -1,0 +1,25 @@
+name: MatGL
+description: Graph deep learning library for materials science. MatGL trains and serves MEGNet, M3GNet, TensorNet, and related models so labs can predict properties and run universal potentials from one PyTorch materials graph stack.
+tagline: Graph deep learning for materials
+
+github_url: https://github.com/materialyzeai/matgl
+website_url: https://matgl.ai/
+install_command: pip install matgl
+
+category: Data
+tags: [python, pytorch, materials-science, graph-neural-networks, interatomic-potentials, m3gnet]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Materials GNNs and universal potentials were scattered across archived
+  MEGNet and M3GNet repos. MatGL unifies those architectures with training
+  and inference APIs so property prediction and structure relaxation share
+  one maintained library.
+
+use_cases:
+  - Predict formation energies and band gaps with pretrained MatGL models
+  - Relax crystals using M3GNet-style universal potentials
+  - Train TensorNet or MEGNet models on custom materials datasets
+  - Swap PyTorch, Warp, or JAX backends for faster PES inference
