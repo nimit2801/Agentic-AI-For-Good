@@ -1,0 +1,28 @@
+name: Spektral
+description: A Python library for graph neural networks built on Keras and TensorFlow 2. Spektral ships popular convolutional and pooling layers plus graph utilities so you can classify nodes, predict links, and generate graphs without assembling a custom GNN stack.
+tagline: Graph neural networks with Keras and TensorFlow 2
+
+github_url: https://github.com/danielegrattarola/spektral
+website_url: https://graphneural.network
+docs_url: https://graphneural.network
+
+category: Data
+tags: [python, graph-neural-networks, keras, tensorflow, gnn, deep-learning]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install spektral
+
+problem_solved: |
+  Graph tasks such as social-network classification, molecular property prediction,
+  and link prediction need GCN, GAT, GraphSAGE, and pooling layers that Keras does
+  not ship. Spektral wraps those layers and graph transforms in a Keras-native API
+  so TensorFlow users can train GNNs with the same fit/predict loop they already
+  use for images and sequences.
+
+use_cases:
+  - Classify users or posts in a social graph with GCN or GAT layers in Keras
+  - Predict molecular properties from chemical graphs using Chebyshev or GIN convolutions
+  - Cluster nodes or pool graphs with MinCut, DiffPool, or SAG pooling
+  - Generate new graphs with GAN-style Spektral models for synthetic network data

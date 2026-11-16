@@ -1,0 +1,26 @@
+name: OpenNRE
+description: An open-source neural relation extraction toolkit from Tsinghua NLP that pulls structured relation triples from plain text. OpenNRE unifies supervised and distant-supervised models, including CNN-ATT and BERT, behind one interface for knowledge graph construction.
+tagline: Neural relation extraction for knowledge graph construction
+
+github_url: https://github.com/thunlp/OpenNRE
+docs_url: https://opennre-docs.readthedocs.io/en/latest/
+
+category: Data
+tags: [python, nlp, relation-extraction, knowledge-graph, pytorch, bert]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Knowledge graphs need relation triples such as (Bill Gates, founder of, Microsoft),
+  but extracting them from unstructured text used to mean wiring a different data
+  pipeline for every model family. OpenNRE gives researchers and builders a single
+  toolkit for CNN, attention, and pretrained language model extractors, plus NYT10
+  and other common benchmarks, so you can train, evaluate, and ship relation
+  extractors without rewriting input and output adapters.
+
+use_cases:
+  - Extract founder-of, located-in, and similar triples from news or Wikipedia to grow a knowledge graph
+  - Train a distant-supervised CNN-ATT extractor on NYT10 without assembling a custom data loader
+  - Swap a BERT relation classifier into an existing OpenNRE pipeline for higher-precision extraction
+  - Prototype a question answering or recommender backend that needs structured facts from raw documents

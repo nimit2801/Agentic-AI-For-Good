@@ -1,0 +1,25 @@
+name: TinyChatEngine
+description: An on-device LLM and VLM inference library from MIT HAN Lab, written from scratch in C/C++. TinyChatEngine runs SmoothQuant and AWQ compressed models on x86, Apple Silicon, ARM, and CUDA without a heavy runtime dependency.
+tagline: On-device LLM and VLM inference with SmoothQuant and AWQ
+
+github_url: https://github.com/mit-han-lab/TinyChatEngine
+website_url: https://mit-han-lab.github.io/TinyChatEngine/
+
+category: LLM
+tags: [c++, on-device, inference, quantization, awq, llama, edge, cuda]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Serving a chat or vision-language model on a laptop, robot, or car usually means
+  shipping a large Python stack or calling a cloud API. TinyChatEngine is a
+  from-scratch C/C++ engine co-designed with SmoothQuant and AWQ so compressed
+  Llama, Code Llama, and VILA models run in real time on MacBooks, Raspberry Pi,
+  and NVIDIA laptops, keeping data local and responses instant.
+
+use_cases:
+  - Run a Llama-3 instruct chat locally on an Apple M1 or M2 MacBook without a cloud API
+  - Deploy Code Llama as an on-device coding copilot on an NVIDIA GeForce laptop
+  - Serve a VILA vision-language chatbot on edge hardware with CUDA or Metal
+  - Prototype private on-device assistants for cars, robots, or office copilot features

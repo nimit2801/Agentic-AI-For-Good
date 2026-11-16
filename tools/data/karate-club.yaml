@@ -1,0 +1,27 @@
+name: Karate Club
+description: An unsupervised machine learning library for NetworkX graphs. Karate Club implements node and graph embeddings plus overlapping and non-overlapping community detection so researchers can mine small graphs without assembling algorithms from papers.
+tagline: Unsupervised graph mining and embeddings for NetworkX
+
+github_url: https://github.com/benedekrozemberczki/karateclub
+docs_url: https://karateclub.readthedocs.io
+
+category: Data
+tags: [python, graphs, networkx, embeddings, community-detection, unsupervised]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+install_command: pip install karateclub
+
+problem_solved: |
+  Unsupervised graph mining usually means reimplementing community detection and
+  embedding papers on top of NetworkX. Karate Club gives an API-oriented Python
+  library with node embeddings, whole-graph embeddings, and overlapping or
+  non-overlapping community methods, so you can fit EgoNetSplitter, Node2Vec-style
+  embeddings, and related algorithms with a few lines of code.
+
+use_cases:
+  - Detect overlapping communities on a social or citation graph with EgoNetSplitter
+  - Learn node embeddings for downstream classification without a labeled training set
+  - Embed entire graphs for graph-level clustering or similarity search
+  - Benchmark community detection methods on small NetworkX graphs in a research notebook
