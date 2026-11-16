@@ -1,0 +1,26 @@
+name: Leidenalg
+description: Python package that implements the Leiden community-detection algorithm in C++ on top of igraph. leidenalg finds partitions with modularity, CPM, Significance, Surprise, and multiplex quality functions on graphs up to millions of nodes.
+tagline: Leiden community detection for igraph
+
+github_url: https://github.com/vtraag/leidenalg
+docs_url: http://leidenalg.readthedocs.io/en/latest/
+install_command: pip install leidenalg
+
+category: Data
+tags: [python, c++, graphs, community-detection, igraph, clustering]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Louvain community detection can produce disconnected communities and does
+  not expose a single Python API for modularity, CPM, and multiplex graphs.
+  leidenalg implements the Leiden algorithm with those quality functions on
+  igraph so you can partition large networks more reliably than classic
+  Louvain scripts.
+
+use_cases:
+  - Find communities in a social or citation graph with modularity
+  - Cluster networks with the Constant Potts model instead of modularity
+  - Run multiplex community detection across time slices or signed edges
+  - Partition graphs with millions of nodes that still fit in memory

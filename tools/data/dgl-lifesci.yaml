@@ -1,0 +1,26 @@
+name: DGL-LifeSci
+description: DGL-based Python package for graph neural networks in chemistry and biology. DGL-LifeSci covers molecular graph construction, featurization, model architectures, training scripts, and pretrained models for life-science tasks.
+tagline: Graph neural networks for chemistry and biology
+
+github_url: https://github.com/awslabs/dgl-lifesci
+docs_url: https://lifesci.dgl.ai/index.html
+install_command: pip install dgllife
+
+category: Data
+tags: [python, dgl, gnn, chemistry, biology, molecules]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Molecules and biological networks are graphs, but wiring DGL for chemistry
+  means custom atom featurization, graph construction, and eval loops for
+  every paper. DGL-LifeSci packages those pieces plus model zoos and
+  pretrained weights so you can train GNNs on life-science tasks without
+  rebuilding the molecular pipeline.
+
+use_cases:
+  - Featurize SMILES into molecular graphs for property prediction
+  - Train GNN models for toxicity, solubility, or binding tasks
+  - Run pretrained DGL-LifeSci models on new compound libraries
+  - Build biological network models with DGL graph construction helpers
