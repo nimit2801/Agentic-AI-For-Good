@@ -1,0 +1,26 @@
+name: PGL
+description: PaddlePaddle graph learning framework with message passing, heterogeneous graphs, and distributed training. PGL covers GNN and walk-based models plus Graph4Rec and Graph4KG toolkits for recommenders and knowledge graphs.
+tagline: Graph neural networks on PaddlePaddle
+
+github_url: https://github.com/PaddlePaddle/PGL
+docs_url: https://pgl.readthedocs.io/en/latest/
+install_command: pip install pgl
+
+category: Data
+tags: [python, paddlepaddle, gnn, graphs, heterogeneous-graphs, recommenders]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Building GNNs on PaddlePaddle without a graph library means hand-coding
+  send/recv message passing, heterogeneous sampling, and distributed graph
+  storage. PGL provides a DGL-style message-passing API, MetaPath sampling,
+  and distributed engines so you can train GCN, GraphSAGE, and KG models on
+  large graphs inside the Paddle stack.
+
+use_cases:
+  - Implement a custom GNN with send and recv functions on PaddlePaddle
+  - Train heterogeneous GNNs with MetaPath sampling for POI or knowledge graphs
+  - Run Graph4Rec models for large-scale graph recommenders
+  - Learn knowledge-graph embeddings with Graph4KG on massive KGs

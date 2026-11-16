@@ -1,0 +1,27 @@
+name: PyGOD
+description: Python library for graph outlier detection on PyTorch Geometric. PyGOD ships detector models for node, edge, and graph-level anomalies so you can flag fraud, intrusion, and noisy structure in attributed graphs.
+tagline: Graph outlier detection on PyTorch Geometric
+
+github_url: https://github.com/pygod-team/pygod
+website_url: https://pygod.org
+docs_url: https://docs.pygod.org
+install_command: pip install pygod
+
+category: Data
+tags: [python, pytorch, pytorch-geometric, graph, anomaly-detection, outlier-detection]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Fraud, bots, and sensor faults often show up as outliers on graphs, but
+  tabular anomaly detectors ignore neighborhood structure. PyGOD gives a
+  common PyG-based API over graph outlier models so you can train detectors
+  on attributed graphs and score nodes, edges, or whole graphs without
+  reimplementing each paper from scratch.
+
+use_cases:
+  - Detect fraudulent accounts in a payment or social graph using node-level detectors
+  - Flag anomalous edges that look like money-mule or lateral-movement links
+  - Score whole graphs for rare molecular or process-network structures
+  - Benchmark graph outlier methods on attributed citation or transaction graphs
