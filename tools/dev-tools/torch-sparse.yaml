@@ -1,0 +1,25 @@
+name: torch-sparse
+description: PyTorch extension for sparse matrix ops with autograd. torch-sparse implements coalesce, transpose, and sparse-dense plus sparse-sparse multiplication on index and value tensors for CPU and GPU GNN backends.
+tagline: Sparse matrix ops with autograd for PyTorch GNNs
+
+github_url: https://github.com/rusty1s/pytorch_sparse
+
+category: Dev Tools
+tags: [python, pytorch, pyg, sparse, gpu, gnn]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install torch-sparse
+
+problem_solved: |
+  GNN layers multiply sparse adjacency by dense feature matrices, and
+  torch.sparse_coo_tensor is awkward for autograd on values only. torch-sparse
+  takes index and value tensors, then runs coalesce, transpose, spmm, and
+  spspmm on CPU and GPU so PyG message passing stays differentiable.
+
+use_cases:
+  - Multiply a sparse adjacency matrix by node features with autograd
+  - Coalesce duplicate edge indices before a GNN forward pass
+  - Sparse-sparse multiply two graphs for higher-order GNN operators
+  - Use torch-sparse as the PyG backend for GPU sparse kernels

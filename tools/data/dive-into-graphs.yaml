@@ -1,0 +1,27 @@
+name: Dive into Graphs
+description: JMLR library for graph deep learning research. DIG (Dive into Graphs) ships unified APIs for graph generation, self-supervised learning, explainability, 3D graphs, and OOD generalization so papers share one PyG-based research stack.
+tagline: Unified library for graph deep learning research
+
+github_url: https://github.com/divelab/DIG
+docs_url: https://diveintographs.readthedocs.io/
+
+category: Data
+tags: [python, pytorch, pyg, gnn, graph-generation, explainability]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+install_command: pip install dive-into-graphs
+
+problem_solved: |
+  Graph ML papers reimplement generation, SSL, explainability, 3D molecules,
+  and OOD splits with incompatible data loaders and metrics. DIG packages
+  those directions as dig.ggraph, dig.sslgraph, dig.xgraph, dig.threedgraph,
+  and dig.oodgraph so researchers benchmark SphereNet, GraphDF, and GNN
+  explainers on one stack.
+
+use_cases:
+  - Train SphereNet on QM9 3D molecules with dig.threedgraph
+  - Benchmark GNN explainers through the dig.xgraph interface
+  - Run self-supervised graph pretraining recipes in dig.sslgraph
+  - Evaluate out-of-distribution graph splits with dig.oodgraph
