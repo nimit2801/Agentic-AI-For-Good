@@ -1,0 +1,25 @@
+name: gitoxide
+description: gitoxide is a pure-Rust implementation of Git focused on correctness, safety, and speed. It ships the gix library and CLI so tools can read, write, and traverse Git objects without shelling out to git, including large repos where process-per-command overhead hurts.
+tagline: Pure-Rust Git library and CLI
+
+github_url: https://github.com/GitoxideLabs/gitoxide
+docs_url: https://docs.rs/gix
+
+category: Dev Tools
+tags: [rust, git, vcs, cli, library, performance]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+install_command: cargo install gitoxide
+
+problem_solved: |
+  Most Git automation shells out to git, paying process startup and
+  parsing costs on every call. gitoxide provides a safe Rust library and
+  gix CLI that speak Git objects natively, so developer tools can walk
+  history, packs, and worktrees without spawning git for each query.
+
+use_cases:
+  - Embed gix in a Rust tool to list commits and trees without calling git
+  - Clone and fetch repositories with the gitoxide CLI on large monorepos
+  - Inspect pack files and object graphs during Git tooling development
+  - Replace git-subprocess wrappers in CI utilities with a native library
