@@ -1,0 +1,26 @@
+name: Sherlock
+description: A command-line OSINT tool that hunts social media accounts by username across hundreds of sites. Sherlock takes one handle and reports where that name exists so investigators and security teams can map an online footprint fast.
+tagline: Hunt usernames across social networks from the command line
+
+github_url: https://github.com/sherlock-project/sherlock
+website_url: https://sherlockproject.xyz
+
+category: Other
+tags: [python, osint, username, cli, security, social-media]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install sherlock-project
+
+problem_solved: |
+  Checking whether a username exists on dozens of social networks is slow and easy
+  to get wrong by hand. Sherlock automates that sweep from the command line, hitting
+  a large site list and returning where the handle is taken so OSINT, incident
+  response, and brand-protection work starts from a complete footprint.
+
+use_cases:
+  - Look up a single username across social networks during an incident response investigation
+  - Check whether a brand handle is already claimed before a product launch
+  - Map a person's public accounts as the first step of an OSINT dossier
+  - Run Sherlock in a pipeline to flag newly registered lookalike usernames
