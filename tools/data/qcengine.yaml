@@ -1,0 +1,28 @@
+name: QCEngine
+description: A MolSSI quantum chemistry program executor and QCSchema I/O standardizer that runs energy and property jobs through engines such as Psi4 from a single Python API and returns structured provenance-rich results.
+tagline: Unified executor for quantum chemistry programs
+
+github_url: https://github.com/MolSSI/QCEngine
+website_url: https://molssi.github.io/QCEngine/
+docs_url: https://molssi.github.io/QCEngine/
+
+category: Data
+tags: [python, quantum-chemistry, qcschema, psi4, molssi, computational-chemistry]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+install_command: pip install qcengine
+
+problem_solved: |
+  Every quantum chemistry package has its own input files, options, and output
+  parsers, so pipelines break when swapping Psi4, NWChem, or other engines.
+  QCEngine executes QCSchema AtomicInput jobs against many backends and returns
+  standardized energies, properties, and provenance so research software can
+  treat QC codes as interchangeable compute engines.
+
+use_cases:
+  - Compute SCF energies and dipole moments through Psi4 using QCSchema inputs
+  - Swap quantum chemistry backends without rewriting molecule and driver code
+  - Capture CPU, program, and version provenance on every quantum chemistry result
+  - Standardize I/O for high-throughput molecular property screening
+  - Embed quantum chemistry calls in Python workflows via a single compute API
