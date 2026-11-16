@@ -1,0 +1,25 @@
+name: JGraphT
+description: Java library of graph-theory objects and algorithms, dual-licensed EPL-2.0 and LGPL-2.1. JGraphT covers directed, undirected, weighted, and complex graphs plus matching, shortest paths, flows, and spanning trees for JVM applications.
+tagline: Graph theory library for the JVM
+
+github_url: https://github.com/jgrapht/jgrapht
+website_url: https://jgrapht.org
+docs_url: https://jgrapht.org/guide/UserOverview
+
+category: Data
+tags: [java, graphs, algorithms, shortest-paths, jvm, maven]
+pricing: free
+is_open_source: true
+license: EPL-2.0
+
+problem_solved: |
+  JVM services that need shortest paths, flows, or matchings often reinvent
+  adjacency lists instead of using a tested graph library. JGraphT provides
+  graph types and classic algorithms on JDK 21+ so backend and data
+  pipelines can run graph theory without dropping into Python or C++.
+
+use_cases:
+  - Compute shortest paths and spanning trees inside a Java service
+  - Model directed or weighted graphs for routing and dependency analysis
+  - Run max-flow or matching algorithms on JVM-hosted network data
+  - Add JGraphT via Maven when a Spring or Spark job needs graph primitives

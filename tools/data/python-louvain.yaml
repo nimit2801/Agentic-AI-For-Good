@@ -1,0 +1,25 @@
+name: python-louvain
+description: Python implementation of Louvain community detection for NetworkX graphs. python-louvain finds modularity partitions and is imported as community, which is the usual Louvain entry point in Python data science notebooks.
+tagline: Louvain community detection for NetworkX
+
+github_url: https://github.com/taynaud/python-louvain
+docs_url: http://python-louvain.readthedocs.io/
+install_command: pip install python-louvain
+
+category: Data
+tags: [python, networkx, community-detection, louvain, graphs, clustering]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  NetworkX has no built-in Louvain modularity optimizer, so notebooks copy
+  one-off clustering scripts. python-louvain implements Blondel et al.
+  Louvain on NetworkX graphs (imported as community) so you can partition
+  social and citation networks with the algorithm most papers still cite.
+
+use_cases:
+  - Partition a NetworkX social graph into Louvain communities
+  - Compute modularity of a candidate clustering on citation data
+  - Compare Louvain partitions against Leiden on the same edgelist
+  - Prototype community labels before feeding them into a GNN pipeline

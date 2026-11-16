@@ -1,0 +1,25 @@
+name: Gunrock
+description: CUDA and C++ GPU graph analytics library with a frontier-based programming model. Gunrock implements BFS, SSSP, PageRank, connected components, and custom primitives that scale from one GPU to many with relatively small application code.
+tagline: GPU graph analytics in CUDA and C++
+
+github_url: https://github.com/gunrock/gunrock
+docs_url: https://gunrock.github.io/gunrock/
+
+category: Data
+tags: [cuda, c++, gpu, graphs, bfs, pagerank]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Writing GPU graph kernels by hand is slow and load-balancing is hard,
+  while CPU libraries leave BFS and PageRank on the table for large graphs.
+  Gunrock exposes a frontier-based CUDA/C++ model so you can run and extend
+  graph primitives on NVIDIA or ROCm GPUs without writing every kernel from
+  scratch.
+
+use_cases:
+  - Run BFS, SSSP, or PageRank on large graphs using GPU frontiers
+  - Prototype a custom graph primitive with Gunrock's data-centric API
+  - Scale a single-node multi-GPU analytics kernel without a full GNN stack
+  - Benchmark GPU graph throughput against CPU libraries like SNAP or igraph
