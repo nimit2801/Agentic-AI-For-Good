@@ -1,0 +1,26 @@
+name: aqua
+description: aqua is a declarative CLI version manager written in Go. It installs tools from a YAML registry with lazy install and Renovate-friendly pins so teams share the same CLI versions across laptops and CI without per-tool install scripts.
+tagline: Declarative CLI version manager
+
+github_url: https://github.com/aquaproj/aqua
+website_url: https://aquaproj.github.io
+docs_url: https://aquaproj.github.io/docs/
+
+category: Dev Tools
+tags: [go, cli, version-manager, devops, ci, renovate]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+install_command: brew install aquaproj/aqua/aqua
+
+problem_solved: |
+  Teams scatter kubectl, terraform, and linter installs across brew,
+  asdf, and Docker images, so CI and laptops drift. aqua pins CLI
+  versions in YAML, installs lazily from a registry, and works with
+  Renovate so every environment uses the same tool versions.
+
+use_cases:
+  - Pin kubectl, terraform, and gh versions in aqua.yaml for a repo
+  - Lazy-install CLIs on CI runners without baking every binary into images
+  - Update tool versions with Renovate against the aqua registry
+  - Switch CLI versions per project directory without asdf plugins
