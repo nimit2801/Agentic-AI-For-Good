@@ -1,0 +1,24 @@
+name: GraphMAE
+description: Self-supervised masked graph autoencoder from THUDM (KDD 2022). GraphMAE masks node features, reconstructs them with GAT encoders and decoders, and matches or beats contrastive GNNs on node classification, graph classification, and molecular property prediction.
+tagline: Masked autoencoders for self-supervised graph learning
+
+github_url: https://github.com/THUDM/GraphMAE
+
+category: Data
+tags: [python, pytorch, dgl, gnn, self-supervised, graph-autoencoder]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Contrastive graph SSL needs careful negative sampling and augmentation
+  choices that do not transfer across node, graph, and molecule tasks.
+  GraphMAE masks features, reconstructs them with a GAT encoder-decoder,
+  and trains one generative objective that works for Cora-style node
+  labels, graph classification, and molecular property prediction.
+
+use_cases:
+  - Pretrain a GAT encoder on Cora, Citeseer, or ogbn-arxiv then classify nodes
+  - Run inductive GraphMAE on Reddit or PPI without labels at pretrain time
+  - Predict molecular properties from the chemistry GraphMAE scripts
+  - Compare masked graph autoencoders against contrastive GNN baselines
