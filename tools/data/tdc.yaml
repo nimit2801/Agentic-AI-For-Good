@@ -1,0 +1,27 @@
+name: TDC
+description: Therapeutics Data Commons is an open-science platform of AI-ready datasets, tasks, and leaderboards spanning drug discovery stages and modalities, from small molecules and antibodies to safety, efficacy, and manufacturing.
+tagline: AI-ready datasets and benchmarks for therapeutic science
+
+github_url: https://github.com/mims-harvard/TDC
+website_url: https://tdcommons.ai
+docs_url: https://tdc.readthedocs.io
+
+category: Data
+tags: [python, drug-discovery, datasets, benchmarks, therapeutics, machine-learning, admet]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: pip install PyTDC
+
+problem_solved: |
+  Therapeutic ML research is fragmented across modalities, splits, and metrics, so
+  models are hard to compare and datasets are painful to load. TDC gives a single
+  Python API for AI-ready tasks, curated splits, evaluators, molecule oracles, and
+  public leaderboards covering target discovery through manufacturing.
+
+use_cases:
+  - Load ADMET, DTI, and molecule generation datasets in three lines of Python
+  - Benchmark drug discovery models on TDC leaderboards with standardized splits
+  - Evaluate generated molecules with built-in oracles and data processing helpers
+  - Train multimodal models across small molecules, antibodies, and other modalities
+  - Share reproducible therapeutic ML experiments without custom dataset loaders

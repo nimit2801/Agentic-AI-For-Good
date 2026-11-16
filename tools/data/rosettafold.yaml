@@ -1,0 +1,26 @@
+name: RoseTTAFold
+description: A three-track deep network from the Baker lab that predicts protein structures and interactions from sequence, combining 1D, 2D, and 3D information for monomer folding and protein-protein complex modeling.
+tagline: Three-track protein structure and interaction prediction
+
+github_url: https://github.com/RosettaCommons/RoseTTAFold
+docs_url: https://github.com/RosettaCommons/RoseTTAFold
+
+category: Data
+tags: [python, protein-structure, folding, deep-learning, baker-lab, complexes, structural-biology]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Accurate protein structure and complex prediction from sequence used to require
+  separate 1D, 2D, and 3D pipelines that did not share information. RoseTTAFold
+  jointly reasons over sequence, residue-residue distances, and 3D coordinates in
+  a three-track network, enabling monomer models, protein-protein complexes, and
+  faster two-track PPI screening from MSAs.
+
+use_cases:
+  - Predict monomer protein structures from a FASTA sequence using the end-to-end or PyRosetta pipeline
+  - Model protein-protein complexes from paired MSAs with estimated per-residue confidence
+  - Screen yeast-scale protein-protein interactions with the faster two-track RoseTTAFold network
+  - Generate starting structures for design, docking, and molecular dynamics of novel proteins
+  - Combine MSA search, template databases, and neural inference in a local folding workflow
