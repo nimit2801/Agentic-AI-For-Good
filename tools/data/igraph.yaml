@@ -1,0 +1,27 @@
+name: igraph
+description: C library for complex network analysis and graph theory, with official Python, R, and Mathematica interfaces. igraph covers classic algorithms for centrality, communities, flows, and generators with an emphasis on efficiency and portability.
+tagline: High-performance library for network analysis
+
+github_url: https://github.com/igraph/igraph
+website_url: https://igraph.org
+docs_url: https://igraph.org/c/
+install_command: pip install igraph
+
+category: Data
+tags: [c, python, r, graphs, network-analysis, community-detection]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Network analysis in research code often mixes slow pure-Python loops with
+  one-off C snippets that do not share data structures. igraph provides a
+  portable C core plus Python and R bindings so centrality, community
+  detection, flows, and graph generation run on the same efficient
+  representation across languages.
+
+use_cases:
+  - Compute PageRank, betweenness, or shortest paths on large networks
+  - Detect communities and connected components in social or citation graphs
+  - Generate and transform classic random graph models for experiments
+  - Use the same graph object from Python (pip install igraph) or R
