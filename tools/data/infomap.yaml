@@ -1,0 +1,26 @@
+name: Infomap
+description: Network clustering algorithm based on the Map Equation, with CLI, Python, R, JavaScript, and Docker packages. Infomap finds multi-level communities by compressing a random walk, which is a different objective than modularity-based Louvain or Leiden.
+tagline: Map Equation clustering for multi-level networks
+
+github_url: https://github.com/mapequation/infomap
+website_url: https://www.mapequation.org/infomap/
+docs_url: https://www.mapequation.org/infomap/
+install_command: pip install infomap
+
+category: Data
+tags: [python, r, javascript, community-detection, map-equation, graphs]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Modularity clustering misses hierarchical flow structure that a random
+  walk would treat as modules. Infomap optimizes the Map Equation instead,
+  so you get multi-level communities from the same network via CLI, Python,
+  R, or JS without rewriting the C++ core.
+
+use_cases:
+  - Cluster a citation or web graph into multi-level Map Equation modules
+  - Compare Infomap partitions with Louvain or Leiden on the same edgelist
+  - Call Infomap from Python notebooks with pip install infomap
+  - Run the CLI or Docker image on networks too large for a notebook kernel

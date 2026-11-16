@@ -1,0 +1,26 @@
+name: CDlib
+description: Python meta-library for community detection on NetworkX and igraph graphs. CDlib wraps many clustering algorithms, fitness functions, and visualizations behind one input/output API so you can compare partitions without swapping implementations.
+tagline: Community detection meta-library for NetworkX
+
+github_url: https://github.com/GiulioRossetti/cdlib
+docs_url: https://cdlib.readthedocs.io
+install_command: pip install cdlib
+
+category: Data
+tags: [python, networkx, igraph, community-detection, graphs, clustering]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Community detection papers each ship a different API, graph type, and
+  evaluation script, so comparing Louvain, Leiden, Infomap, and label
+  propagation is messy. CDlib wraps those algorithms plus fitness scores
+  and plots on NetworkX (converting to igraph when needed) so partitions
+  share one input/output contract.
+
+use_cases:
+  - Run multiple community detection algorithms on the same NetworkX graph
+  - Compare partition quality with CDlib fitness functions
+  - Visualize overlapping or crisp communities without custom plotting code
+  - Convert between NetworkX and igraph backends for algorithms that need either

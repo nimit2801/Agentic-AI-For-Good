@@ -1,0 +1,24 @@
+name: GraphSAINT
+description: Graph sampling framework for training GNNs on large graphs. GraphSAINT samples a subgraph per minibatch, builds a complete GNN on that subgraph, and applies bias-correcting normalization so training cost scales linearly with depth instead of exploding neighbors.
+tagline: Subgraph sampling for large-scale GNN training
+
+github_url: https://github.com/GraphSAINT/GraphSAINT
+
+category: Data
+tags: [python, tensorflow, pytorch, gnn, graph-sampling, graphsage]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Layer-wise neighbor sampling explodes as GNN depth grows, so minibatches
+  no longer fit on a GPU for million-node graphs. GraphSAINT samples a
+  subgraph first, then trains a complete GNN on it with normalization that
+  removes sampling bias, so cost stays linear in depth and subgraphs stay
+  GPU-sized even when the full graph does not.
+
+use_cases:
+  - Train GraphSAGE or GAT on million-node graphs that do not fit in GPU memory
+  - Replace layer sampling with subgraph minibatches to control neighbor explosion
+  - Compare TensorFlow and PyTorch GraphSAINT trainers on the same dataset
+  - Scale inductive GNN training where JK-Net-style architectures need complete layers
