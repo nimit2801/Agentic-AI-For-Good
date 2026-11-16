@@ -1,0 +1,25 @@
+name: TorchANI
+description: Open-source PyTorch library for training and running ANI-style neural network interatomic potentials. TorchANI implements the ANI architecture so chemistry groups can train, evaluate, and deploy neural potentials without rewriting CUDA kernels.
+tagline: PyTorch ANI neural network potentials
+
+github_url: https://github.com/aiqm/torchani
+website_url: https://aiqm.github.io/torchani/
+docs_url: https://aiqm.github.io/torchani/
+install_command: pip install torchani
+
+category: Data
+tags: [python, pytorch, interatomic-potentials, ani, chemistry, molecular-dynamics]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  ANI potentials need custom CUDA and training code that most labs do not want
+  to maintain. TorchANI provides a PyTorch implementation of ANI models so
+  researchers can train and run neural potentials in a standard ML stack.
+
+use_cases:
+  - Train ANI-style potentials on organic molecule energy-force datasets
+  - Run neural network potential inference inside ASE workflows
+  - Transfer pretrained ANI models to related chemical spaces
+  - Benchmark ANI architectures against other ML interatomic potentials

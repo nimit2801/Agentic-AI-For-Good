@@ -1,0 +1,24 @@
+name: SchNetPack
+description: Deep neural networks for atomistic systems. SchNetPack trains SchNet-style models on molecules and materials, then exposes ASE calculators so energy, force, and property prediction drop into existing simulation workflows.
+tagline: Atomistic neural networks for molecules and materials
+
+github_url: https://github.com/atomistic-machine-learning/schnetpack
+docs_url: https://schnetpack.readthedocs.io/en/latest/
+install_command: pip install schnetpack
+
+category: Data
+tags: [python, pytorch, atomistic, molecular-dynamics, materials-science, schnet]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Atomistic ML often stays in notebooks instead of production MD. SchNetPack
+  wraps SchNet-style networks with data loaders, training loops, and ASE
+  calculators so labs predict energies, forces, and properties in one stack.
+
+use_cases:
+  - Train SchNet models on QM9 or custom molecular datasets
+  - Predict molecular energies, forces, and dipole moments for screening
+  - Drive ASE molecular dynamics with a trained SchNetPack calculator
+  - Fine-tune atomistic networks on in-house DFT labels

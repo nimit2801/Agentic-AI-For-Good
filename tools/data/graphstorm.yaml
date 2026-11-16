@@ -1,0 +1,25 @@
+name: GraphStorm
+description: Enterprise graph machine learning framework for billion-scale graphs. GraphStorm lets data scientists train GNN models on huge heterogeneous graphs with distributed PyTorch jobs instead of hand-rolling DGL cluster code.
+tagline: Billion-scale graph ML for enterprise graphs
+
+github_url: https://github.com/awslabs/graphstorm
+docs_url: https://graphstorm.readthedocs.io/en/latest/
+install_command: pip install graphstorm
+
+category: Data
+tags: [python, pytorch, gnn, graph-ml, distributed, dgl, aws]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Training GNNs on billion-edge heterogeneous graphs usually means custom DGL
+  and distributed PyTorch glue. GraphStorm packages that stack so ML teams can
+  train, infer, and deploy large-graph models with configuration instead of
+  cluster engineering.
+
+use_cases:
+  - Train node classification models on billion-scale heterogeneous graphs
+  - Run distributed GNN training on Amazon SageMaker or self-managed clusters
+  - Score link-prediction models for recommendation or fraud graphs
+  - Export trained GraphStorm models for production inference jobs
