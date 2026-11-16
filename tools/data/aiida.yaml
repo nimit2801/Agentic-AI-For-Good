@@ -1,0 +1,27 @@
+name: AiiDA
+description: A workflow manager for computational science with automatic provenance graphs, HPC scheduler plugins, and Python workflows that scale to tens of thousands of processes while remaining reproducible and shareable.
+tagline: Provenance-tracking workflows for computational science
+
+github_url: https://github.com/aiidateam/aiida-core
+website_url: https://www.aiida.net
+docs_url: https://aiida-core.readthedocs.io
+
+category: Data
+tags: [python, workflows, provenance, hpc, materials, computational-science]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: pip install aiida-core
+
+problem_solved: |
+  High-throughput simulation campaigns lose track of inputs, codes, and scheduler
+  details, so results cannot be reproduced or queried later. AiiDA records a
+  provenance graph for every calculation, talks to SLURM, PBS, SGE, and LSF, and
+  lets researchers move jobs between computers by changing one line of code.
+
+use_cases:
+  - Run high-throughput DFT campaigns with automatic tracking of every input and output
+  - Query a provenance graph of millions of nodes to find how a result was produced
+  - Submit jobs to SLURM or PBS from Python and retarget the same workflow to another cluster
+  - Share subsets of a materials workflow on Materials Cloud for open science
+  - Extend AiiDA with plugins for new simulation codes, data types, and schedulers

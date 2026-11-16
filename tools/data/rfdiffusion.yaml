@@ -1,0 +1,26 @@
+name: RFdiffusion
+description: An open-source protein structure generation method from the Institute for Protein Design that uses a RoseTTAFold-based diffusion model for motif scaffolding, binder design, unconditional generation, and symmetric oligomer design.
+tagline: Diffusion models for protein structure generation and design
+
+github_url: https://github.com/RosettaCommons/RFdiffusion
+docs_url: https://sites.google.com/omsf.io/rfdiffusion/overview
+
+category: Data
+tags: [python, protein-design, diffusion, rosettafold, binder-design, structural-biology]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Designing proteins that scaffold a motif, bind a target, or assemble with
+  symmetry used to need heavy expert sampling in Rosetta. RFdiffusion generates
+  backbones with a RoseTTAFold diffusion model, optionally conditioned on motifs
+  or binders, so teams can explore large design spaces and then sequence-design
+  the resulting folds.
+
+use_cases:
+  - Generate unconditional protein monomers of a chosen length as design starting points
+  - Scaffold functional motifs into new folds while holding active-site residues fixed
+  - Design protein binders against a target structure with partial diffusion around hits
+  - Generate cyclic, dihedral, or tetrahedral symmetric oligomers for nanomaterials
+  - Diversify an existing design by partially noising and denoising the backbone

@@ -1,0 +1,24 @@
+name: FastFold
+description: A high-performance AlphaFold training and inference stack with optimized Evoformer kernels, Dynamic Axial Parallelism, and lower GPU memory so ultra-long protein sequences can be trained and folded on GPU clusters.
+tagline: Faster AlphaFold training and inference on GPU clusters
+
+github_url: https://github.com/hpcaitech/FastFold
+
+category: Data
+tags: [python, alphafold, protein-structure, gpu, evoformer, distributed-training]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Stock AlphaFold hits GPU memory and runtime walls on long sequences and large
+  training jobs. FastFold reimplements Evoformer with high-performance kernels and
+  Dynamic Axial Parallelism, cutting memory enough to infer sequences over 10,000
+  residues and speeding monomer and multimer data processing.
+
+use_cases:
+  - Train AlphaFold-like Evoformer models across heterogeneous GPU clusters
+  - Infer ultra-long protein sequences that do not fit in a single-GPU AlphaFold run
+  - Speed monomer and multimer MSA data processing before structure prediction
+  - Run AlphaFold v2.3-compatible training and inference with Colossal-AI parallelism
+  - Deploy folding on NVIDIA CUDA or Intel Habana accelerators
