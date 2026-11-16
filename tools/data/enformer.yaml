@@ -1,0 +1,26 @@
+name: Enformer
+description: Enformer is DeepMind's transformer for gene expression from DNA sequence. The widely used PyTorch port implements the attention network that predicts CAGE and chromatin tracks across long genomic windows so labs can score variant effects without training from scratch.
+tagline: Attention network for gene expression from DNA
+
+github_url: https://github.com/lucidrains/enformer-pytorch
+docs_url: https://github.com/lucidrains/enformer-pytorch
+
+category: Data
+tags: [python, pytorch, genomics, transformers, gene-expression, chromatin, deepmind]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: pip install enformer-pytorch
+
+problem_solved: |
+  Predicting how DNA sequence drives gene expression over long ranges needs
+  more context than short CNN windows. Enformer uses transformer attention
+  over genomic sequence to predict CAGE and chromatin tracks, so variant
+  effect and regulatory maps can use a pretrained sequence model instead
+  of training a new CNN per assay.
+
+use_cases:
+  - Predict gene expression and chromatin tracks from long DNA windows
+  - Score noncoding variants for effects on CAGE and regulatory activity
+  - Fine-tune Enformer on custom genomic assays in PyTorch
+  - Compare long-range sequence attention maps across loci of interest

@@ -1,0 +1,27 @@
+name: OPTIMADE
+description: OPTIMADE is a common REST API for querying materials databases. Python tools implement OPTIMADE servers and clients so crystal-structure providers expose a shared filter language and researchers pull structures from many catalogs through one interface.
+tagline: Common REST API for materials databases
+
+github_url: https://github.com/Materials-Consortia/optimade-python-tools
+website_url: https://www.optimade.org
+docs_url: https://www.optimade.org/optimade-python-tools/
+
+category: Data
+tags: [python, materials-science, rest-api, crystal-structures, databases, interoperability]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: pip install optimade
+
+problem_solved: |
+  Materials databases each ship a different query API, so screening crystals
+  across providers means rewriting clients. OPTIMADE defines a shared REST
+  filter language and Python tools that serve or consume it, so structure
+  catalogs can interoperate and researchers query many sources with one
+  client.
+
+use_cases:
+  - Stand up an OPTIMADE API in front of a local crystal-structure database
+  - Query multiple public materials providers with one OPTIMADE client
+  - Validate that a materials API conforms to the OPTIMADE specification
+  - Filter structures by chemistry and lattice parameters across catalogs
