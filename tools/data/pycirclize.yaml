@@ -1,0 +1,26 @@
+name: pyCirclize
+description: pyCirclize is a Python library for circular genomics visualizations. It draws Circos-style plots, chord diagrams, and radar charts so bioinformatics notebooks can publish multi-track genome figures without leaving Python for Circos config files.
+tagline: Circos-style circular plots in Python
+
+github_url: https://github.com/moshi4/pyCirclize
+website_url: https://moshi4.github.io/pyCirclize/
+docs_url: https://moshi4.github.io/pyCirclize/
+
+category: Data
+tags: [python, genomics, visualization, circos, bioinformatics, matplotlib]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: pip install pycirclize
+
+problem_solved: |
+  Circular multi-track genome figures usually require Circos config files
+  outside the notebook. pyCirclize builds Circos-style plots, chords, and
+  radar charts in Python so bioinformatics pipelines can emit publication
+  figures from the same environment that computes the tracks.
+
+use_cases:
+  - Draw Circos-style multi-track plots of microbial or eukaryotic genomes
+  - Visualize synteny or interaction data as chord diagrams
+  - Publish radar charts of multi-sample genomics metrics
+  - Combine pyCirclize figures with matplotlib in analysis notebooks

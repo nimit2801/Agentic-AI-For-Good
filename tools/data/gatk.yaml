@@ -1,0 +1,26 @@
+name: GATK
+description: GATK is the Broad Institute toolkit for variant discovery in high-throughput sequencing. It provides Best Practices pipelines for alignment processing, SNP and indel calling, and filtering so genomics labs can produce analysis-ready VCFs from short-read data.
+tagline: Broad Institute variant discovery toolkit
+
+github_url: https://github.com/broadinstitute/gatk
+website_url: https://gatk.broadinstitute.org
+docs_url: https://gatk.broadinstitute.org/hc/en-us
+
+category: Data
+tags: [java, genomics, variant-calling, sequencing, vcf, bioinformatics]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Calling SNPs and indels from short-read BAM files needs a documented,
+  versioned pipeline, not ad-hoc scripts. GATK implements Broad Best
+  Practices for base recalibration, haplotype calling, and filtering so
+  labs produce comparable VCFs across cohorts without reinventing the
+  germline and somatic workflows.
+
+use_cases:
+  - Call germline SNPs and indels from aligned whole-genome BAM files
+  - Run Mutect2-style somatic variant discovery on tumor-normal pairs
+  - Apply GATK Best Practices BQSR and VQSR before joint genotyping
+  - Filter and annotate VCFs as part of a clinical or research pipeline
