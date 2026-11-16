@@ -1,0 +1,25 @@
+name: Graphormer
+description: Microsoft transformer backbone for graph and molecular modeling. Graphormer won the Open Catalyst Challenge and OGB-LSC quantum track, with pretrained models, PyG, DGL, and OGB interfaces plus a Fairseq training stack for drug and materials discovery.
+tagline: Transformer backbone for molecular graph modeling
+
+github_url: https://github.com/microsoft/Graphormer
+website_url: https://www.microsoft.com/en-us/research/project/graphormer/
+docs_url: https://graphormer.readthedocs.io/
+
+category: Data
+tags: [python, pytorch, graph-transformer, molecular-modeling, drug-discovery, fairseq]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Standard Transformers ignore graph structure, while message-passing GNNs
+  struggle with long-range molecular interactions. Graphormer adds centrality,
+  spatial, and edge encodings so attention operates on atoms and bonds, then
+  ships pretrained checkpoints for quantum property and catalyst tasks.
+
+use_cases:
+  - Predict molecular quantum properties on PCQM4M with pretrained Graphormer
+  - Fine-tune Graphormer on Open Catalyst adsorbate-catalyst structures
+  - Train custom molecule models through the PyG, DGL, or OGB data interfaces
+  - Benchmark graph Transformers against GIN and GCN on OGB molecular datasets

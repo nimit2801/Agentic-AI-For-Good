@@ -1,0 +1,25 @@
+name: GraphSAGE
+description: Original TensorFlow implementation of GraphSAGE, the inductive graph embedding algorithm that samples and aggregates neighborhood features so node representations generalize to unseen nodes on large, evolving graphs.
+tagline: Inductive embeddings for large, evolving graphs
+
+github_url: https://github.com/williamleif/GraphSAGE
+website_url: http://snap.stanford.edu/graphsage/
+
+category: Data
+tags: [python, tensorflow, gnn, graph-embeddings, inductive-learning, graphsage]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Transductive embeddings such as DeepWalk only cover nodes seen at training
+  time, so they fail on growing social, citation, and biological graphs.
+  GraphSAGE samples a node's neighborhood and aggregates features through
+  mean, LSTM, or pooling aggregators, producing embeddings that transfer to
+  unseen nodes without retraining on the full graph.
+
+use_cases:
+  - Generate embeddings for new users in a social graph without a full retrain
+  - Classify proteins in PPI graphs that were not present during training
+  - Learn unsupervised node representations on Reddit-scale interaction graphs
+  - Benchmark inductive GNN sampling against GraphSAINT and Cluster-GCN
