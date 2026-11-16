@@ -1,0 +1,26 @@
+name: GuacaMol
+description: An open-source Python package from BenevolentAI for benchmarking de novo molecular design models, covering distribution-learning and goal-directed tasks with standardized scoring functions.
+tagline: Benchmarks for de novo molecular design
+
+github_url: https://github.com/BenevolentAI/guacamol
+website_url: https://arxiv.org/abs/1811.09621
+
+category: Data
+tags: [python, molecular-design, benchmark, drug-discovery, generative-chemistry]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: pip install guacamol
+
+problem_solved: |
+  De novo design models were scored with ad hoc goals, so a model that looked
+  strong on one paper's task failed on another. GuacaMol defines distribution
+  matching and goal-directed benchmarks with shared scoring functions so chemistry
+  ML teams can compare generators on the same suite.
+
+use_cases:
+  - Benchmark a generative model on GuacaMol distribution-learning tasks
+  - Run goal-directed optimization against standardized molecular scoring functions
+  - Compare de novo design methods using published GuacaMol baseline scores
+  - Plug a custom molecule generator into DistributionMatchingGenerator for evaluation
+  - Validate a chemistry ML pipeline with GuacaMol unit tests after install

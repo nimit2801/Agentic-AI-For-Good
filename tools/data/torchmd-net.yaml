@@ -1,0 +1,26 @@
+name: TorchMD-NET
+description: A PyTorch library of neural network potentials such as TensorNet, with training utilities and integrations into OpenMM, TorchMD, and ACEMD for GPU-accelerated molecular dynamics.
+tagline: Train and run neural network potentials in PyTorch MD
+
+github_url: https://github.com/torchmd/torchmd-net
+docs_url: https://torchmd-net.readthedocs.io
+
+category: Data
+tags: [python, pytorch, mlip, molecular-dynamics, tensornet, openmm]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: pip install torchmd-net
+
+problem_solved: |
+  Training modern neural network potentials and then running them in production MD
+  often means stitching together separate codes. TorchMD-NET exposes TensorNet and
+  related architectures as PyTorch modules, trains them, and plugs the same models
+  into OpenMM, TorchMD, and ACEMD so research and simulation share one potential.
+
+use_cases:
+  - Train TensorNet neural network potentials on DFT datasets in PyTorch
+  - Run GPU molecular dynamics in OpenMM or TorchMD with a TorchMD-NET calculator
+  - Compare deprecated Equivariant Transformer checkpoints against TensorNet models
+  - Export trained NNPs into ACEMD for production biomolecular simulations
+  - Fine-tune published TorchMD-NET architectures on a custom materials dataset
