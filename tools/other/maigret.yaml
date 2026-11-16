@@ -1,0 +1,27 @@
+name: Maigret
+description: An OSINT tool that collects a dossier on a person by username from thousands of websites. Maigret goes beyond existence checks with site-specific parsing so you get profile details, not just a yes or no, from one CLI run.
+tagline: Collect username dossiers across thousands of sites
+
+github_url: https://github.com/soxoj/maigret
+website_url: https://maigret.app/gh
+docs_url: https://maigret.readthedocs.io
+
+category: Other
+tags: [python, osint, username, cli, investigation, security]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install maigret
+
+problem_solved: |
+  Username search tools often stop at whether an account exists. Maigret queries
+  thousands of sites and extracts profile fields into a structured dossier, including
+  optional PDF reports, so investigators get usable records instead of a list of
+  URLs to click through by hand.
+
+use_cases:
+  - Build a username dossier across 6,000-plus sites from a single CLI command
+  - Export an investigation report as HTML or PDF for an incident-response case file
+  - Feed Maigret results into a larger OSINT pipeline with socid-extractor
+  - Let an AI agent run username reconnaissance through the Maigret MCP server
