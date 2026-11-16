@@ -1,0 +1,24 @@
+name: DGI
+description: Reference implementation of Deep Graph Infomax. DGI learns unsupervised node embeddings by maximizing mutual information between local patches and a graph-level summary, without labels on citation and social graphs.
+tagline: Unsupervised node embeddings via Deep Graph Infomax
+
+github_url: https://github.com/PetarV-/DGI
+
+category: Data
+tags: [python, pytorch, gnn, self-supervised, node-embeddings, infomax]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Node classification often has few labels, and skip-gram graph embeddings
+  ignore features. DGI trains an encoder to maximize mutual information
+  between a node's patch representation and a graph summary, yielding
+  unsupervised embeddings that compete with supervised GCNs on Cora,
+  Citeseer, and Pubmed.
+
+use_cases:
+  - Learn unlabeled node embeddings on Cora then train a linear classifier
+  - Pretrain a GCN encoder with DGI before fine-tuning on scarce labels
+  - Compare infomax graph SSL against GraphCL and GraphMAE
+  - Generate features for social-graph nodes that lack class annotations

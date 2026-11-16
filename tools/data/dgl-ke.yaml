@@ -1,0 +1,27 @@
+name: DGL-KE
+description: DGL package for large-scale knowledge graph embeddings. DGL-KE trains TransE, DistMult, ComplEx, RotatE, TransR, and RESCAL on CPU, GPU, or clusters, with CLI tools for train, eval, link prediction, and embedding similarity.
+tagline: Scalable knowledge graph embeddings on DGL
+
+github_url: https://github.com/awslabs/dgl-ke
+docs_url: https://dglke.dgl.ai/doc/
+
+category: Data
+tags: [python, dgl, knowledge-graph, embeddings, pytorch, distributed]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: pip install dglke
+
+problem_solved: |
+  Translational KG embedding models need multi-GPU or multi-machine training
+  once graphs leave the FB15k toy regime, and research code rarely ships a
+  CLI. DGL-KE implements TransE, DistMult, ComplEx, RotatE, TransR, and
+  RESCAL on DGL with dglke_train, dglke_eval, and dglke_predict so embeddings
+  scale from a laptop to a cluster.
+
+use_cases:
+  - Train TransE on FB15k with dglke_train on multiple CPU workers
+  - Learn RotatE embeddings for link prediction on a large enterprise KG
+  - Evaluate pretrained DistMult embeddings with dglke_eval
+  - Run entity similarity search over trained embeddings with dglke_emb_sim
