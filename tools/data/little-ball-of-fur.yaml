@@ -1,0 +1,25 @@
+name: Little Ball of Fur
+description: Python graph sampling library for NetworkX and NetworKit. Little Ball of Fur unifies vertex, edge, and exploration samplers behind one API so you can downsample large graphs before GNN training or network analysis.
+tagline: Graph sampling library for NetworkX and NetworKit
+
+github_url: https://github.com/benedekrozemberczki/littleballoffur
+docs_url: https://little-ball-of-fur.readthedocs.io/
+install_command: pip install littleballoffur
+
+category: Data
+tags: [python, graphs, sampling, networkx, networkit, gnn]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Full graphs are often too large for prototyping GNN training or exploratory
+  analysis, and sampling papers each ship a one-off script. Little Ball of Fur
+  wraps vertex, edge, and exploration samplers in one NetworkX/NetworKit API
+  so you can downsample graphs without reimplementing each method.
+
+use_cases:
+  - Sample a large social graph with diffusion or random-walk exploration
+  - Downsample citation networks before training a GNN prototype
+  - Compare vertex versus edge sampling on the same NetworkX graph
+  - Generate smaller graphs for visualization while keeping local structure

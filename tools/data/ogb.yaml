@@ -1,0 +1,26 @@
+name: OGB
+description: Open Graph Benchmark from Stanford SNAP. OGB ships standardized graph ML datasets, loaders, and evaluators for node, link, and graph property prediction so papers compare models on the same splits and metrics.
+tagline: Standard datasets and evaluators for graph machine learning
+
+github_url: https://github.com/snap-stanford/ogb
+website_url: https://ogb.stanford.edu
+docs_url: https://ogb.stanford.edu/docs/home/
+install_command: pip install ogb
+
+category: Data
+tags: [python, graphs, benchmarks, datasets, gnn, pytorch]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Graph ML papers used private splits and custom metrics, so results were
+  hard to compare. OGB provides public datasets, data loaders, and official
+  evaluators for node, link, and graph tasks, including large-scale OGB-LSC
+  tracks, so models train and score against a shared leaderboard.
+
+use_cases:
+  - Train a GNN on ogbn-arxiv or ogbn-products with the official node splits
+  - Evaluate link prediction on ogbl-citation2 or ogbl-ppa with OGB evaluators
+  - Benchmark molecular graph property prediction on ogbg-molhiv
+  - Load OGB-LSC scale datasets for MAG, WikiKG, or PCQM-style competitions
