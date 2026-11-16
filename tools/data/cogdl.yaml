@@ -1,0 +1,28 @@
+name: CogDL
+description: A graph deep learning toolkit from Tsinghua that trains and compares GNN baselines for node classification, graph classification, and related tasks. CogDL adds optimized operators, experiment APIs, and self-supervised examples such as GraphMAE on top of a unified training loop.
+tagline: Graph deep learning toolkit for training and comparing GNNs
+
+github_url: https://github.com/THUDM/CogDL
+website_url: https://cogdl.ai
+docs_url: https://cogdl.readthedocs.io
+
+category: Data
+tags: [python, graph-neural-networks, gnn, pytorch, node-classification, self-supervised]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install cogdl
+
+problem_solved: |
+  Comparing GNN models across datasets usually means rewriting data loaders, trainers,
+  and metrics for each paper. CogDL gives researchers a single toolkit with a unified
+  training loop, hyperparameter search, and optimized sparse operators so you can run
+  node and graph classification experiments, including self-supervised methods, without
+  assembling a custom benchmark harness.
+
+use_cases:
+  - Train and compare GCN-style models on standard node classification datasets
+  - Run graph classification experiments with a shared experiment API and hyperparameter search
+  - Try GraphMAE or BGRL self-supervised pretraining without forking a separate repo
+  - Speed up GNN training with CogDL sparse operators when GPU memory is tight

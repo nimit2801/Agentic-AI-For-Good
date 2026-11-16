@@ -1,0 +1,26 @@
+name: Agent Desktop
+description: A computer-use CLI from Vercel Labs that lets AI agents see and operate desktop apps on macOS, Windows, and Linux through the OS accessibility tree. Agents snapshot UI as JSON refs, then click or type without screenshot matching or an embedded model.
+tagline: Desktop computer use for AI agents via accessibility trees
+
+github_url: https://github.com/vercel-labs/agent-desktop
+website_url: https://agent-browser.dev/desktop
+
+category: Dev Tools
+tags: [computer-use, cli, agents, accessibility, rust, npm, vercel, macos]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+install_command: npm install -g agent-desktop
+
+problem_solved: |
+  Browser automation cannot click native Finder, Slack, or IDE windows, and screenshot
+  computer-use is slow and brittle. Agent Desktop reads the OS accessibility tree,
+  returns JSON with a ref for every interactive element, and lets the agent click or
+  type on those refs. The loop stays in your agent. There is no model inside the CLI.
+
+use_cases:
+  - Let a coding agent snapshot Finder or Slack and click a ref instead of matching pixels
+  - Drive a native macOS or Windows app from Claude Code or Codex through the accessibility API
+  - Check platform permissions and supported surfaces with agent-desktop status before a run
+  - Combine with Agent Browser so an agent can work in Chrome and in desktop apps
