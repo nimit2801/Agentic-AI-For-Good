@@ -1,0 +1,26 @@
+name: Nx
+description: Nx is a monorepo build platform that computes a project graph, caches tasks, and orchestrates CI. It runs affected tests and builds so large JS and polyglot workspaces ship faster without rebuilding unchanged packages on every PR.
+tagline: Monorepo builds, cache, and affected CI
+
+github_url: https://github.com/nrwl/nx
+website_url: https://nx.dev
+docs_url: https://nx.dev/getting-started/intro
+
+category: Dev Tools
+tags: [typescript, javascript, monorepo, ci, build-system, caching]
+pricing: freemium
+is_open_source: true
+license: MIT
+install_command: npm install -g nx
+
+problem_solved: |
+  Large JS monorepos rebuild and retest everything on each PR, wasting CI
+  minutes. Nx infers a project graph, caches task outputs, and runs only
+  affected projects so teams keep one workspace without paying full-repo
+  build cost on every change.
+
+use_cases:
+  - Generate a project graph and run affected tests on a pull request
+  - Cache build outputs locally and in remote CI for TypeScript packages
+  - Scaffold apps and libs in a polyglot Nx workspace
+  - Enforce module boundaries so packages cannot import forbidden code

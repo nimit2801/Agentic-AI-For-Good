@@ -1,0 +1,26 @@
+name: entr
+description: entr runs a command whenever files change. Point it at sources or logs and it re-runs tests, rebuilds, or reloads tools on save, giving a tiny file-watch loop without a language-specific watcher daemon.
+tagline: Run commands when files change
+
+github_url: https://github.com/eradman/entr
+website_url: https://eradman.com/entrproject/
+docs_url: https://eradman.com/entrproject/
+
+category: Dev Tools
+tags: [c, cli, file-watching, testing, developer-tools]
+pricing: free
+is_open_source: true
+license: ISC
+install_command: brew install entr
+
+problem_solved: |
+  Re-running tests or rebuilds on save often means a language-specific
+  watcher or a heavy task runner. entr reads a file list from stdin and
+  executes a command on change, so Unix pipelines get a tiny, reliable
+  watch loop without extra daemons.
+
+use_cases:
+  - Pipe find or ls into entr to re-run pytest on Python file saves
+  - Rebuild a C project whenever a source file changes
+  - Restart a local server when configuration files are edited
+  - Tail logs and trigger a notify command when new files appear

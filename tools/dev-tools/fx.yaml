@@ -1,0 +1,26 @@
+name: fx
+description: fx is a terminal JSON viewer and processor. It pretty-prints, folds, and streams JSON from files or pipes so you can inspect API payloads and logs without opening a browser or writing one-off jq scripts for every field.
+tagline: Terminal JSON viewer and processor
+
+github_url: https://github.com/antonmedv/fx
+website_url: https://fx.wtf
+docs_url: https://fx.wtf
+
+category: Dev Tools
+tags: [javascript, json, cli, terminal, viewer]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: npm install -g fx
+
+problem_solved: |
+  Inspecting nested JSON from APIs and logs in the terminal usually means
+  piping through jq or dumping into a browser. fx opens an interactive
+  viewer with folding, streaming, and a JS processing mode so you can
+  explore large payloads without writing a filter for every field.
+
+use_cases:
+  - Pretty-print and fold API response JSON in the terminal
+  - Stream large JSON logs and jump to nested keys interactively
+  - Pipe curl output into fx to inspect REST payloads during debugging
+  - Run JavaScript reducers on JSON documents without a full Node script

@@ -1,0 +1,26 @@
+name: ccache
+description: ccache is a compiler cache for C, C++, and other compiled languages. It stores preprocessor-keyed object files so rebuilds skip unchanged translation units, cutting iteration time on large C++ and CUDA codebases.
+tagline: Compiler cache for C and C++ rebuilds
+
+github_url: https://github.com/ccache/ccache
+website_url: https://ccache.dev
+docs_url: https://ccache.dev/documentation.html
+
+category: Dev Tools
+tags: [c, cpp, compiler, cache, build-system, performance]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+install_command: brew install ccache
+
+problem_solved: |
+  Compiling large C++ trees repeats the same translation units across
+  clean builds and CI agents. ccache caches compiler outputs keyed by
+  preprocessed source so unchanged files hit cache, shrinking rebuild and
+  CI times without changing the build system.
+
+use_cases:
+  - Prefix CXX with ccache in CMake or Make to cache object files
+  - Share a ccache directory across CI jobs for C++ projects
+  - Speed up CUDA and Objective-C rebuilds with the same cache
+  - Debug cache hits and misses with ccache statistics during local builds
