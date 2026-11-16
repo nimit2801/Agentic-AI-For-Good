@@ -1,0 +1,26 @@
+name: torch-scatter
+description: PyTorch extension of optimized scatter and segment reductions. torch-scatter fills the group-index reduce ops missing from core PyTorch, with CPU and GPU kernels used throughout PyG message passing.
+tagline: Optimized scatter reductions for PyTorch GNNs
+
+github_url: https://github.com/rusty1s/pytorch_scatter
+docs_url: https://pytorch-scatter.readthedocs.io/
+
+category: Dev Tools
+tags: [python, pytorch, pyg, scatter, gpu, sparse]
+pricing: free
+is_open_source: true
+license: MIT
+
+install_command: pip install torch-scatter
+
+problem_solved: |
+  Message passing on graphs reduces neighbor features by index, but core
+  PyTorch has no fast scatter-add, scatter-mean, or scatter-max. torch-scatter
+  adds those group-index reductions on CPU and GPU so PyG and custom GNN
+  layers aggregate neighbors without writing CUDA kernels.
+
+use_cases:
+  - Scatter-add neighbor messages onto destination nodes in a GNN layer
+  - Compute scatter-mean and scatter-max pooling over variable-size graphs
+  - Segment-reduce sorted index tensors in a batched sparse pipeline
+  - Depend on torch-scatter as the PyG runtime backend for aggregations
