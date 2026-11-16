@@ -1,0 +1,27 @@
+name: Netgraph
+description: Python library for publication-quality network visualizations on Matplotlib. Netgraph accepts NetworkX, igraph, and graph-tool graphs, layouts multi-component networks, routes edges to cut crossings, and supports interactive editing of nodes and labels.
+tagline: Publication-quality network visualizations in Python
+
+github_url: https://github.com/paulbrodersen/netgraph
+docs_url: https://netgraph.readthedocs.io/en/latest/
+
+category: Data
+tags: [python, visualization, networkx, matplotlib, graphs, igraph]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+install_command: pip install netgraph
+
+problem_solved: |
+  NetworkX and Matplotlib draw graphs, but default layouts break on
+  disconnected components, overlap labels, and leave edge crossings that
+  papers cannot publish. Netgraph adds layout and edge-routing heuristics,
+  accepts NetworkX, igraph, and graph-tool objects, and exposes Matplotlib
+  artists plus interactive and editable graph classes.
+
+use_cases:
+  - Draw a multi-component NetworkX graph without layout collapse
+  - Produce publication figures with reduced node, edge, and label overlap
+  - Interactively reposition nodes and relabel edges in a Jupyter notebook
+  - Convert an igraph or graph-tool network into a Matplotlib figure

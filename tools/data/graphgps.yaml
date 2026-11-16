@@ -1,0 +1,24 @@
+name: GraphGPS
+description: PyG recipe for building scalable graph Transformers by combining positional encodings, local message passing, and global attention. GraphGPS trains GPS, SAN, and related models on ZINC, OGB, and PCQM4Mv2 with linear-complexity attention options.
+tagline: Recipe for general, scalable graph Transformers
+
+github_url: https://github.com/rampasek/GraphGPS
+
+category: Data
+tags: [python, pytorch, pyg, graph-transformer, gnn, positional-encoding]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Graph Transformers either overfit small molecules or blow up to quadratic
+  attention on large graphs, and it is unclear which encodings and local
+  layers to pair. GraphGPS gives a three-part recipe: LapPE or RWSE encodings,
+  GatedGCN or GINE message passing, and Transformer, Performer, or BigBird
+  attention so models stay linear and competitive on ZINC and PCQM4Mv2.
+
+use_cases:
+  - Train a GPS model with RWSE encodings on ZINC for graph regression
+  - Mix GatedGCN local layers with Performer attention for linear scaling
+  - Reproduce PCQM4Mv2 GPS-small, GPS-medium, and GPS-deep paper configs
+  - Compare SAN, GPS, and vanilla Transformer baselines in one GraphGym stack

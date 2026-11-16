@@ -1,0 +1,24 @@
+name: ClusterGCN
+description: PyTorch implementation of Cluster-GCN (KDD 2019). It clusters the graph, samples dense subgraphs, and restricts neighborhood search so deep GCNs train on million-node graphs without exploding memory or neighbor explosion.
+tagline: Cluster-sampled GCN training for million-node graphs
+
+github_url: https://github.com/benedekrozemberczki/ClusterGCN
+
+category: Data
+tags: [python, pytorch, pyg, gnn, gcn, graph-clustering, large-scale]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Full-batch GCNs keep the entire graph and every node embedding in GPU
+  memory, and layer-wise neighbor sampling grows exponentially with depth.
+  Cluster-GCN partitions the graph with METIS, samples a dense cluster as
+  each minibatch, and trains a GCN only inside that subgraph so 4-plus layer
+  models fit on Amazon2M-scale graphs.
+
+use_cases:
+  - Train a 5-layer GCN on PPI without running out of GPU memory
+  - Scale node classification to Amazon2M with cluster minibatches
+  - Replace neighbor sampling with METIS partitions for deeper GCNs
+  - Compare Cluster-GCN memory use against VR-GCN and GraphSAGE on Pubmed
