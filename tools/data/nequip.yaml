@@ -1,0 +1,25 @@
+name: NequIP
+description: Open-source code for building E(3)-equivariant interatomic potentials. NequIP trains data-efficient graph networks on atomic neighborhoods and ships foundation potentials plus ASE and LAMMPS integrations for production molecular dynamics.
+tagline: E(3)-equivariant interatomic potentials
+
+github_url: https://github.com/mir-group/nequip
+website_url: https://www.nequip.net/
+docs_url: https://nequip.readthedocs.io/en/latest/
+install_command: pip install nequip
+
+category: Data
+tags: [python, pytorch, equivariant, interatomic-potentials, molecular-dynamics, materials-science]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Accurate MD usually needs huge DFT datasets or slow quantum steps. NequIP
+  learns E(3)-equivariant potentials from relatively few labels and provides
+  compiled inference, foundation models, and MD engine plugins for production.
+
+use_cases:
+  - Train an equivariant potential on a custom energy-force dataset
+  - Download foundation potentials covering most of the periodic table
+  - Drive ASE calculators or LAMMPS pair styles with a compiled NequIP model
+  - Fine-tune a foundation potential on a small in-domain DFT set
