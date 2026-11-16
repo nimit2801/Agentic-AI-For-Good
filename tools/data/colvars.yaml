@@ -1,0 +1,26 @@
+name: COLVARS
+description: COLVARS is a collective-variables library for molecular simulation and analysis. It implements sampling algorithms on reduced, continuously differentiable coordinates and ships inside NAMD, LAMMPS, GROMACS, VMD, and Tinker-HP for free-energy and enhanced-sampling work.
+tagline: Collective variables for molecular simulation engines
+
+github_url: https://github.com/Colvars/colvars
+website_url: https://colvars.github.io/
+docs_url: https://colvars.github.io/
+
+category: Data
+tags: [cpp, molecular-dynamics, collective-variables, free-energy, namd, lammps, gromacs]
+pricing: free
+is_open_source: true
+license: LGPL-3.0
+
+problem_solved: |
+  Enhanced sampling and free-energy estimates need a reduced coordinate
+  space that MD engines can differentiate. COLVARS supplies that library
+  once, so NAMD, LAMMPS, GROMACS, VMD, and Tinker-HP users can define
+  distances, angles, and custom CVs plus thermodynamic estimators without
+  rewriting sampling code for each engine.
+
+use_cases:
+  - Define distance and angle collective variables for NAMD or LAMMPS free-energy runs
+  - Run metadynamics or harmonic restraints on reduced coordinates in GROMACS
+  - Analyze trajectories interactively in VMD with the Colvars Dashboard
+  - Share one Colvars config file across simulation engines in a materials workflow

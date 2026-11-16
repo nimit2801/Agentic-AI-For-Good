@@ -1,0 +1,27 @@
+name: tblite
+description: tblite is a light-weight library for extended tight-binding (xTB) single-point calculations. It shares the xTB Hamiltonian between xtb and DFTB+ and exposes high-level methods plus low-level access to energy terms and parametrization data.
+tagline: Light-weight extended tight-binding library
+
+github_url: https://github.com/tblite/tblite
+website_url: https://tblite.readthedocs.io
+docs_url: https://tblite.readthedocs.io
+
+category: Data
+tags: [fortran, python, tight-binding, xtb, quantum-chemistry, electronic-structure]
+pricing: free
+is_open_source: true
+license: LGPL-3.0
+install_command: pip install tblite
+
+problem_solved: |
+  Extended tight-binding methods were split across xtb and DFTB+ with
+  little shared library surface. tblite implements the xTB Hamiltonian as
+  a reusable library so codes can run single-point energies, inspect energy
+  terms, and manipulate parametrization data without depending on a full
+  standalone xtb binary.
+
+use_cases:
+  - Run GFN2-xTB single-point energies from Python on molecular geometries
+  - Embed tblite as the xTB backend inside DFTB+ or custom Fortran codes
+  - Inspect and edit tight-binding parametrization data for method development
+  - Screen large conformer sets with a cheap electronic-structure Hamiltonian

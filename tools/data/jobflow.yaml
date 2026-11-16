@@ -1,0 +1,27 @@
+name: Jobflow
+description: Jobflow is a Python library for writing computational workflows as decorated functions. Jobs and nested flows pass outputs automatically, store results in Maggma-backed databases, and run locally or on queues through jobflow-remote or FireWorks.
+tagline: Python workflows for computational materials science
+
+github_url: https://github.com/materialsproject/jobflow
+website_url: https://materialsproject.github.io/jobflow
+docs_url: https://materialsproject.github.io/jobflow
+
+category: Data
+tags: [python, workflows, materials-science, fireworks, high-throughput, maggma]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+install_command: pip install jobflow
+
+problem_solved: |
+  Materials workflows need jobs that pass structured outputs, nest into
+  larger flows, and run on HPC queues without rewriting graph plumbing.
+  Jobflow turns Python functions into jobs, infers connectivity from
+  outputs, stores results in Maggma databases, and executes locally or via
+  FireWorks so DFT pipelines stay composable.
+
+use_cases:
+  - Decorate Python functions as jobs and chain outputs into a Flow graph
+  - Store workflow results in MongoDB, S3, or GridFS through Maggma
+  - Submit nested materials workflows to HPC queues with jobflow-remote
+  - Build dynamic flows that spawn follow-up jobs from runtime results
