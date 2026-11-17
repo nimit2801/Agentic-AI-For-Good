@@ -1,0 +1,24 @@
+name: SoupX
+description: SoupX estimates and removes ambient mRNA contamination from droplet scRNA-seq. It profiles the cell-free "soup" in empty droplets and adjusts counts so downstream clustering is less biased by ambient transcripts.
+tagline: Remove ambient mRNA soup from droplet scRNA-seq
+
+github_url: https://github.com/constantAmateur/SoupX
+docs_url: https://github.com/constantAmateur/SoupX
+
+category: Data
+tags: [r, scrna-seq, ambient-rna, droplets, contamination, single-cell]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Droplet scRNA-seq captures ambient mRNA from lysed cells, which can
+  be 2-50% of UMIs and looks like a batch effect. SoupX estimates that
+  contamination from empty droplets and subtracts it so marker genes
+  and clusters reflect cells, not the input soup.
+
+use_cases:
+  - Auto-estimate contamination on 10x Cell Ranger outs and adjust counts
+  - Quantify ambient RNA fraction before deciding whether to correct a channel
+  - Remove soup-driven expression of highly abundant genes from clusters
+  - Load non-10x count matrices with cluster labels and run SoupX correction

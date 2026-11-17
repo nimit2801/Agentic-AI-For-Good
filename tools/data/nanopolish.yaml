@@ -1,0 +1,24 @@
+name: Nanopolish
+description: Nanopolish runs signal-level analysis on Oxford Nanopore reads. It polishes draft assemblies, calls SNPs and indels, detects base modifications, and estimates poly-A tails from FAST5 or SLOW5 signal plus alignments.
+tagline: Signal-level consensus and methylation for Nanopore reads
+
+github_url: https://github.com/jts/nanopolish
+docs_url: https://github.com/jts/nanopolish
+
+category: Data
+tags: [bioinformatics, nanopore, polishing, methylation, variants, sequencing]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Basecalled Nanopore reads still leave consensus and methylation
+  errors that need the raw signal. Nanopolish realigns events to a
+  draft or reference so assemblies can be polished, 5mC called, and
+  variants reported without a separate HMM toolkit.
+
+use_cases:
+  - Polish a draft microbial assembly with nanopolish variants and vcf2fasta
+  - Call CpG methylation from Nanopore signal against a reference BAM
+  - Estimate poly-A tail lengths on direct RNA Nanopore reads
+  - Index FAST5 or SLOW5 files and event-align reads for signal exploration
