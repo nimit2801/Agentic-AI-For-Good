@@ -1,0 +1,25 @@
+name: PhyML
+description: PhyML estimates phylogenetic trees from DNA or protein alignments using maximum likelihood. It searches topologies and branch lengths under standard substitution models so systematic studies can build ML trees without a Bayesian sampler.
+tagline: Maximum-likelihood phylogenetic tree estimation
+
+github_url: https://github.com/stephaneguindon/phyml
+website_url: https://github.com/stephaneguindon/phyml
+docs_url: https://github.com/stephaneguindon/phyml
+
+category: Data
+tags: [bioinformatics, phylogenetics, maximum-likelihood, genomics, alignment, c]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Many phylogeny packages either skip likelihood or bury it in a
+  Bayesian sampler. PhyML searches ML topologies and branch lengths
+  under standard nucleotide and protein models so systematics papers
+  can report a likelihood tree with aLRT or bootstrap support.
+
+use_cases:
+  - Infer an ML gene tree from a nucleotide alignment
+  - Estimate a protein family tree under a substitution model
+  - Compute aLRT branch support without a full bootstrap
+  - Compare PhyML topologies against IQ-TREE on the same MSA

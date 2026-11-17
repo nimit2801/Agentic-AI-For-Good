@@ -1,0 +1,26 @@
+name: MrBayes
+description: MrBayes infers phylogenies using Bayesian MCMC across a wide range of evolutionary models. It samples trees, branch lengths, and substitution parameters so systematics studies can report posterior probabilities instead of a single ML point estimate.
+tagline: Bayesian MCMC inference of phylogenetic trees
+
+github_url: https://github.com/NBISweden/MrBayes
+website_url: https://nbisweden.github.io/MrBayes/
+docs_url: https://nbisweden.github.io/MrBayes/manual.html
+install_command: brew install mrbayes
+
+category: Data
+tags: [bioinformatics, phylogenetics, bayesian, mcmc, genomics, c]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Maximum-likelihood trees are a point estimate with no posterior on
+  clades. MrBayes runs MCMC over trees and substitution models so
+  labs can report clade probabilities and compare evolutionary models
+  on the same alignment.
+
+use_cases:
+  - Sample a posterior of species trees from a DNA alignment
+  - Compare substitution models with Bayes factors
+  - Estimate divergence times under a clock model
+  - Summarize clade posterior probabilities for a systematics paper

@@ -1,0 +1,25 @@
+name: Snippy
+description: Snippy calls SNPs and indels from bacterial NGS reads against a haploid reference and can build a core-genome alignment. It wraps mapping and variant calling so outbreak labs can type isolates without assembling each genome first.
+tagline: Rapid haploid variant calling for bacteria
+
+github_url: https://github.com/tseemann/snippy
+website_url: https://github.com/tseemann/snippy
+docs_url: https://github.com/tseemann/snippy
+
+category: Data
+tags: [bioinformatics, variant-calling, bacteria, snp, outbreak, genomics]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Bacterial outbreak typing needs SNPs, not a de novo assembly per
+  isolate. Snippy maps reads to a haploid reference, calls variants,
+  and can emit a core alignment so labs can build a phylogeny without
+  finishing every genome.
+
+use_cases:
+  - Call SNPs for a foodborne outbreak isolate against a reference
+  - Build a core-genome SNP alignment across a bacterial cluster
+  - Compare haploid VCFs before phylogenetic tree building
+  - Type plasmids and chromosomes from Illumina isolate reads
