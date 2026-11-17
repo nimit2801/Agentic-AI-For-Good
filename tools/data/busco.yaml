@@ -1,0 +1,25 @@
+name: BUSCO
+description: BUSCO scores genome, transcriptome, and gene-set completeness using universal single-copy orthologs. It reports complete, duplicated, fragmented, and missing genes across lineage datasets so assembly papers can quote a biological completeness metric.
+tagline: Ortholog-based completeness scores for genomes
+
+website_url: https://busco.ezlab.org
+docs_url: https://busco.ezlab.org/busco_userguide
+github_url: https://gitlab.com/ezlab/busco
+
+category: Data
+tags: [python, bioinformatics, genomics, completeness, orthologs, assembly]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  N50 says nothing about whether genes are present. BUSCO searches
+  lineage-specific single-copy orthologs so genome and annotation
+  releases can report biological completeness, redundancy, and
+  missing genes instead of contig-length stats alone.
+
+use_cases:
+  - Score a new genome assembly against a lineage BUSCO dataset
+  - Compare MAG completeness after different binning tools
+  - Assess transcriptome or annotated gene-set completeness
+  - Auto-select a BUSCO lineage for a poorly classified organism

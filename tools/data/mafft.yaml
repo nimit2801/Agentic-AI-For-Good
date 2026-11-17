@@ -1,0 +1,26 @@
+name: MAFFT
+description: MAFFT aligns multiple nucleotide or amino acid sequences using fast Fourier transforms. It scales from small gene families to large alignments and offers accuracy modes for phylogenetics, protein families, and genome-scale DNA.
+tagline: FFT multiple sequence alignment for DNA and proteins
+
+github_url: https://github.com/GSLBiotech/mafft
+website_url: https://mafft.cbrc.jp/alignment/software/
+docs_url: https://mafft.cbrc.jp/alignment/software/manual/manual.html
+install_command: brew install mafft
+
+category: Data
+tags: [bioinformatics, alignment, MSA, phylogenetics, genomics, proteins]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Accurate multiple alignment is slow on large sequence sets. MAFFT
+  uses FFT homology detection and progressive alignment so labs can
+  build phylogenies and motif maps without waiting on Clustal-scale
+  runtimes, with slower high-accuracy modes when needed.
+
+use_cases:
+  - Align a protein family before phylogenetic tree building
+  - Build a nucleotide MSA for amplicon or viral gene analysis
+  - Add sequences to an existing alignment with MAFFT add
+  - Compare FFT-NS and L-INS-i accuracy modes on a gene set
