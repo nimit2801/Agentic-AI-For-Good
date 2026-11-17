@@ -1,0 +1,26 @@
+name: CheckM2
+description: CheckM2 predicts completeness and contamination of genome bins with machine learning. It applies lineage-agnostic models so MAG and SAG quality estimates work for novel or reduced genomes that CheckM1 under-calls.
+tagline: ML quality estimates for metagenome bins
+
+github_url: https://github.com/chklovski/CheckM2
+website_url: https://github.com/chklovski/CheckM2
+docs_url: https://github.com/chklovski/CheckM2
+install_command: pip install checkm2
+
+category: Data
+tags: [python, bioinformatics, metagenomics, mag, quality, genomics]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Marker-gene completeness fails on novel or reduced genomes.
+  CheckM2 trains ML models on many lineages so MAG and SAG bins
+  get completeness and contamination scores even when the
+  organism is poorly represented in RefSeq.
+
+use_cases:
+  - Score MAG completeness and contamination after binning
+  - Filter a MAG catalog to high-quality bins before publication
+  - Assess single-amplified genomes with unusual biology
+  - Compare CheckM2 quality reports across binning methods
