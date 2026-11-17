@@ -1,0 +1,25 @@
+name: DESeq2
+description: DESeq2 estimates differential expression from RNA-seq count matrices using a negative binomial model. It shrinks log fold changes and tests genes so transcriptomics studies can rank treatment effects without treating raw counts as normal data.
+tagline: Negative binomial differential expression for RNA-seq
+
+github_url: https://github.com/thelovelab/DESeq2
+website_url: https://bioconductor.org/packages/DESeq2
+docs_url: https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html
+
+category: Data
+tags: [r, bioconductor, rna-seq, differential-expression, genomics, bioinformatics]
+pricing: free
+is_open_source: true
+license: LGPL-3.0
+
+problem_solved: |
+  RNA-seq counts are overdispersed, so t-tests on raw tables overcall
+  noisy genes. DESeq2 fits a negative binomial model with shrinkage so
+  labs get stable log fold changes and FDR-controlled gene lists from
+  typical bulk RNA-seq designs.
+
+use_cases:
+  - Find differentially expressed genes between treatment and control
+  - Shrink log fold changes before ranking a drug-response gene list
+  - Analyze a multi-factor RNA-seq design with batch covariates
+  - Export DESeq2 results into a pathway or volcano-plot workflow
