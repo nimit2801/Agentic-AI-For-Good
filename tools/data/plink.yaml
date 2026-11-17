@@ -1,0 +1,26 @@
+name: PLINK
+description: PLINK is a whole-genome association analysis toolset for SNP and sequence data. It filters genotypes, computes relatedness, and runs association tests so GWAS pipelines can handle large cohorts without loading every variant into R.
+tagline: Whole-genome association analysis at scale
+
+github_url: https://github.com/chrchang/plink-ng
+website_url: https://www.cog-genomics.org/plink/2.0/
+docs_url: https://www.cog-genomics.org/plink/2.0/general_usage
+install_command: brew install plink2
+
+category: Data
+tags: [bioinformatics, gwas, genomics, snp, genetics, c++]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  GWAS cohorts have millions of SNPs and cannot sit in a general-purpose
+  stats environment. PLINK streams genotypes, QC filters, and association
+  tests so labs can run relatedness, PCA, and case-control scans on
+  whole-genome files without custom C++.
+
+use_cases:
+  - QC a SNP array or WGS cohort before association testing
+  - Run case-control GWAS scans on binary PLINK filesets
+  - Compute relatedness and PCA covariates for mixed-model GWAS
+  - Convert VCF genotypes into PLINK 2.0 pgen format for downstream tools
