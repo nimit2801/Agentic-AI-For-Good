@@ -1,0 +1,25 @@
+name: Centrifuge
+description: Centrifuge is a metagenomic classifier that labels sequencing reads with an FM-index of microbial genomes. It keeps a compact index and classifies millions of reads on a desktop, reporting species abundance for bulk metagenomes.
+tagline: Rapid taxonomic classifier for metagenomic reads
+
+github_url: https://github.com/DaehwanKimLab/centrifuge
+website_url: http://www.ccb.jhu.edu/software/centrifuge
+docs_url: https://github.com/DaehwanKimLab/centrifuge/blob/master/MANUAL
+
+category: Data
+tags: [bioinformatics, metagenomics, taxonomy, FM-index, sequencing, genomics]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Assigning taxa to millions of shotgun reads used to need huge memory
+  indexes. Centrifuge stores bacterial, viral, and human genomes in a
+  compact BWT/FM index so a desktop can classify a typical sequencing
+  run in minutes and quantify species composition.
+
+use_cases:
+  - Classify short or long metagenomic reads against a microbial index
+  - Quantify bacterial and viral abundance in clinical shotgun samples
+  - Build custom Centrifuge indexes from selected reference genomes
+  - Screen sequencing runs for microbial contamination on a workstation

@@ -1,0 +1,25 @@
+name: VirSorter2
+description: VirSorter2 detects diverse DNA and RNA virus genomes in metagenomic data. It combines multiple classifiers and genomic features so pipelines can recover dsDNA phages, ssDNA viruses, RNA viruses, NCLDV, and virophages from assemblies.
+tagline: Multi-classifier virus discovery from metagenomes
+
+github_url: https://github.com/jiarong/VirSorter2
+website_url: https://github.com/jiarong/VirSorter2
+docs_url: https://github.com/jiarong/VirSorter2
+
+category: Data
+tags: [bioinformatics, viruses, metagenomics, phage, RNA-virus, genomics]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Early virus finders missed RNA viruses and giant viruses because they
+  were trained on dsDNA phages. VirSorter2 uses group-specific ML
+  classifiers and hallmark genes so MAG pipelines can recover a wider
+  range of viral sequences from metagenomes with tunable groups.
+
+use_cases:
+  - Identify dsDNA phage and ssDNA virus contigs in metagenome bins
+  - Recover RNA virus and NCLDV sequences with extra classifier groups
+  - Score viralness of assemblies using hallmark genes and annotation
+  - Quality-control putative viral sequences before publication
