@@ -1,0 +1,26 @@
+name: Pilon
+description: Pilon is an automated genome assembly improvement and variant detection tool. It uses BAM alignments of reads to a draft assembly to correct bases, fix small indels, and call variants so Illumina data can polish microbial and eukaryotic drafts.
+tagline: Assembly improvement and variant detection from BAM
+
+github_url: https://github.com/broadinstitute/pilon
+website_url: https://github.com/broadinstitute/pilon
+docs_url: https://github.com/broadinstitute/pilon/wiki
+install_command: conda install -c bioconda pilon
+
+category: Data
+tags: [java, bioinformatics, genomics, polishing, variants, assembly]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Draft assemblies still carry substitution and small-indel errors that
+  short reads can fix. Pilon walks BAM alignments against the draft to
+  correct bases and call variants, so Illumina data can polish a genome
+  without a separate variant-calling pipeline.
+
+use_cases:
+  - Polish a microbial draft assembly with Illumina BAM alignments
+  - Call SNPs and small indels relative to a reference or draft
+  - Improve eukaryotic assemblies after long-read contigging
+  - Compare Pilon corrections against Polypolish or NextPolish

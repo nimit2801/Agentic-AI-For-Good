@@ -1,0 +1,26 @@
+name: Auspice
+description: Auspice is Nextstrain's web app for visualizing pathogen evolution. It renders trees, maps, and frequencies from Augur JSON so genomic epidemiology results can be explored in the browser.
+tagline: Web app for visualizing pathogen evolution
+
+github_url: https://github.com/nextstrain/auspice
+website_url: https://docs.nextstrain.org/projects/auspice/
+docs_url: https://docs.nextstrain.org/projects/auspice/
+install_command: npm install --global auspice
+
+category: Data
+tags: [javascript, bioinformatics, visualization, nextstrain, phylogenetics, epidemiology]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Phylodynamic pipelines produce trees that stay hard to explore without
+  a dedicated viewer. Auspice turns Augur JSON into interactive trees,
+  maps, and frequencies so genomic epidemiology results can be shared
+  in the browser instead of static figures.
+
+use_cases:
+  - View a Nextstrain Augur JSON tree, map, and frequency panel
+  - Host a local Auspice server for an outbreak genomic build
+  - Customize colorings and filters for public pathogen dashboards
+  - Pair Auspice with Augur as the visualization half of Nextstrain

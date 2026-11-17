@@ -1,0 +1,26 @@
+name: Racon
+description: Racon is a consensus module for long-read assemblies. It polishes a draft with minimap alignments of raw reads so overlap-layout assemblers like Miniasm gain a consensus without a slower error-correction pass.
+tagline: Rapid consensus for long-read draft assemblies
+
+github_url: https://github.com/isovic/racon
+website_url: https://github.com/isovic/racon
+docs_url: https://github.com/isovic/racon
+install_command: conda install -c bioconda racon
+
+category: Data
+tags: [cpp, bioinformatics, genomics, polishing, consensus, long-read]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Overlap-layout assemblers such as Miniasm emit structure without a
+  consensus, so raw drafts stay too noisy to annotate. Racon polishes
+  those drafts from minimap alignments of the original reads, adding
+  consensus without a full error-correction assembler.
+
+use_cases:
+  - Polish a Miniasm draft with raw Nanopore or PacBio reads
+  - Run iterative Racon rounds before a short-read polish
+  - Consensus circular bacterial unitigs after overlap layout
+  - Compare Racon consensus against Medaka on the same draft
