@@ -1,0 +1,26 @@
+name: HTSeq
+description: HTSeq is a Python library for counting and analyzing high-throughput sequencing reads against gene models. htseq-count builds count tables from BAM and GTF so RNA-seq pipelines can feed DESeq2 without a custom overlap script.
+tagline: Python counting and HTS analysis for RNA-seq
+
+github_url: https://github.com/htseq/htseq
+website_url: https://htseq.readthedocs.io
+docs_url: https://htseq.readthedocs.io/en/latest/
+install_command: pip install HTSeq
+
+category: Data
+tags: [python, rna-seq, bioinformatics, counting, ngs, genomics]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Differential expression needs gene counts, not raw BAM files.
+  Writing overlap logic per project is error-prone. HTSeq walks
+  alignments against a GTF so RNA-seq pipelines emit a count matrix
+  that DESeq2 and edgeR can use.
+
+use_cases:
+  - Count stranded RNA-seq reads per gene from a BAM and GTF
+  - Build a count matrix for a DESeq2 differential expression run
+  - Inspect read-gene overlap modes before choosing union or intersection
+  - Script custom HTS quality checks on BAM files in Python

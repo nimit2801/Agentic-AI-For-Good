@@ -1,0 +1,25 @@
+name: Gubbins
+description: Gubbins detects recombination in bacterial whole-genome SNP alignments and rebuilds a phylogeny on the filtered sites so outbreak trees are not distorted by horizontally imported sequence from other lineages.
+tagline: Recombination-aware phylogeny for bacteria
+
+github_url: https://github.com/nickjcroucher/gubbins
+website_url: https://nickjcroucher.github.io/gubbins/
+docs_url: https://nickjcroucher.github.io/gubbins/
+
+category: Data
+tags: [bioinformatics, phylogenetics, recombination, bacteria, outbreak, genomics]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Bacterial SNP trees treat recombinant imports as vertical change,
+  which inflates branch lengths and misplaces outbreak isolates.
+  Gubbins finds recombinant blocks in a core alignment and rebuilds
+  the tree on the remaining sites.
+
+use_cases:
+  - Mask recombinant regions in a pneumococcal core SNP alignment
+  - Rebuild an outbreak tree after removing imported sequence
+  - Compare recombination maps across a bacterial population
+  - Feed Gubbins-filtered alignments into IQ-TREE or RAxML
