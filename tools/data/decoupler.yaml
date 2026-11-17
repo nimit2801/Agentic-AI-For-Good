@@ -1,0 +1,26 @@
+name: decoupler
+description: decoupler is a Python package of enrichment methods that infer biological activity scores from omics data. It runs multiple statistical methods in one API so single-cell and bulk pipelines can score gene sets, TFs, and pathways.
+tagline: Ensemble enrichment scores from omics data
+
+github_url: https://github.com/scverse/decoupler
+website_url: https://decoupler.scverse.org/
+docs_url: https://decoupler.scverse.org/
+install_command: pip install decoupler
+
+category: Data
+tags: [python, bioinformatics, omics, enrichment, single-cell, scverse]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Omics matrices are large but hard to interpret as pathway or
+  transcription-factor activity. decoupler runs several enrichment
+  methods on the same gene sets so single-cell and bulk studies
+  get comparable biological scores without stitching tools together.
+
+use_cases:
+  - Score transcription factor activity from a single-cell RNA-seq matrix
+  - Run pathway enrichment on bulk proteomics or transcriptomics
+  - Compare multiple enrichment methods on the same gene-set collection
+  - Add decoupler scores as features in a downstream ML model

@@ -1,0 +1,27 @@
+name: GTDB-Tk
+description: GTDB-Tk assigns bacterial and archaeal genomes to the Genome Taxonomy Database. It classifies isolate, MAG, and single-cell assemblies so microbiome pipelines get consistent species and higher-rank labels.
+tagline: Objective GTDB taxonomy for bacterial and archaeal genomes
+
+github_url: https://github.com/Ecogenomics/GTDBTk
+website_url: https://ecogenomics.github.io/GTDBTk/
+docs_url: https://ecogenomics.github.io/GTDBTk/
+install_command: pip install gtdbtk
+
+category: Data
+tags: [python, bioinformatics, taxonomy, metagenomics, genomics, bacteria]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Metagenome-assembled genomes need a shared taxonomy before they
+  can be compared across studies. GTDB-Tk places bacterial and
+  archaeal assemblies on the GTDB reference tree using markers and
+  ANI, so MAG catalogs, isolate collections, and single-cell genomes
+  get consistent genus and species labels for downstream analysis.
+
+use_cases:
+  - Classify bacterial MAGs from an environmental metagenome against GTDB
+  - Assign archaeal isolate genomes to GTDB species clusters
+  - Screen thousands of assemblies with the ANI sketch before tree placement
+  - Produce taxonomic tables for microbiome comparative genomics

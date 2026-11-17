@@ -1,0 +1,26 @@
+name: NanoPlot
+description: NanoPlot produces quality plots and summary statistics for long-read sequencing data. It reads FASTQ, BAM, FASTA, and Nanopore sequencing_summary files so labs can inspect length, quality, and throughput before analysis.
+tagline: Quality plots for long-read sequencing runs
+
+github_url: https://github.com/wdecoster/NanoPlot
+website_url: http://nanoplot.bioinf.be
+docs_url: https://github.com/wdecoster/NanoPlot
+install_command: pip install NanoPlot
+
+category: Data
+tags: [python, bioinformatics, nanopore, long-reads, qc, ngs]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Long-read runs fail silently when length, quality, or yield
+  drift. NanoPlot extracts those metrics from FASTQ, BAM, and
+  Nanopore summary tables and plots them so labs catch bad
+  flow cells before wasting a mapping or assembly pipeline.
+
+use_cases:
+  - Plot read length versus Phred quality for an Oxford Nanopore run
+  - Summarize yield and N50 from a sequencing_summary.txt file
+  - Compare QC plots across multiplexed long-read samples
+  - Inspect BAM alignments for clipped or low-quality long reads
