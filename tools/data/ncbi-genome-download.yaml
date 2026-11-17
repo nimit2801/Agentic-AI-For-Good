@@ -1,0 +1,24 @@
+name: NCBI Genome Download
+description: NCBI Genome Download is a Python CLI that fetches bacterial, viral, and other genomes from NCBI FTP. It filters by assembly level, taxonomy, and format so bioinformatics pipelines can build reference sets without scraping NCBI by hand.
+tagline: Download NCBI genomes by taxon and assembly
+
+github_url: https://github.com/kblin/ncbi-genome-download
+install_command: pip install ncbi-genome-download
+
+category: Data
+tags: [python, genomics, ncbi, reference-genomes, bioinformatics, ftp]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  NCBI restructured FTP so ad-hoc wget scripts break when building Kraken
+  or other reference libraries. NCBI Genome Download walks the current
+  layout, filters by group and assembly, and downloads in parallel so
+  pipelines get consistent genome sets without custom FTP parsers.
+
+use_cases:
+  - Download all RefSeq bacterial genomes in GenBank format for a classifier
+  - Fetch viral assemblies in parallel for a local BLAST or Kraken library
+  - Restrict downloads to complete genomes for a curated reference panel
+  - Refresh a species genome cache in CI without hand-maintained URL lists

@@ -1,0 +1,26 @@
+name: Chef
+description: Chef Infra is a configuration management platform that turns infrastructure into code. It automates how servers, packages, and services are configured, deployed, and kept consistent across any environment so ML clusters and data pipelines stay reproducible at scale.
+tagline: Infrastructure as code for servers at any scale
+
+github_url: https://github.com/chef/chef
+website_url: https://www.chef.io/products/chef-infra
+docs_url: https://docs.chef.io/
+install_command: gem install chef
+
+category: Dev Tools
+tags: [ruby, configuration-management, infrastructure, devops, automation, iac]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  ML clusters drift when GPU drivers, CUDA libraries, and serving runtimes
+  are installed by hand on each node. Chef Infra models desired state as
+  cookbooks and converges hosts so training and inference machines stay
+  identical without one-off SSH scripts.
+
+use_cases:
+  - Converge GPU worker nodes with drivers, CUDA, and Python runtimes from a cookbook
+  - Keep model serving hosts on a known package set across staging and production
+  - Automate bootstrap of data pipeline VMs with the same recipes used in CI
+  - Roll a security patch across a heterogeneous ML lab without rewriting shell scripts

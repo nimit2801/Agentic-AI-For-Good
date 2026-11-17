@@ -1,0 +1,26 @@
+name: Kuma
+description: Kuma is a CNCF Envoy-based service mesh that runs on Kubernetes and VMs, in one zone or many. It provides connectivity, mTLS, traffic routing, and observability without requiring Envoy expertise, including multi-mesh and multi-zone setups for ML inference stacks.
+tagline: Universal Envoy service mesh for Kubernetes and VMs
+
+github_url: https://github.com/kumahq/kuma
+website_url: https://kuma.io
+docs_url: https://kuma.io/docs
+install_command: curl -L https://kuma.io/installer.sh | sh -
+
+category: Dev Tools
+tags: [service-mesh, kubernetes, envoy, mTLS, traffic-management, cncf, microservices]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Model servers, embedding APIs, and feature stores need retries, mTLS, and
+  traffic splitting, but teams cannot rewrite that into every service. Kuma
+  offloads L4/L7 policy to Envoy with a control plane that works on both
+  Kubernetes and VMs, including hybrid multi-zone meshes.
+
+use_cases:
+  - Split inference traffic between two model versions during a canary rollout
+  - Enforce mTLS between embedding, retrieval, and generation services
+  - Run one mesh across a Kubernetes cluster and VM-based GPU hosts
+  - Isolate team meshes on a shared control plane without separate Istio installs

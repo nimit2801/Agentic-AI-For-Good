@@ -1,0 +1,26 @@
+name: ADAM
+description: ADAM is a Spark-based genomics analysis platform with Avro and Parquet schemas for reads, variants, and features. It scales SAM/BAM/CRAM, VCF, and BED workflows across clusters so labs can process sequencing data without single-node file-format bottlenecks.
+tagline: Distributed genomics analysis on Apache Spark
+
+github_url: https://github.com/bigdatagenomics/adam
+website_url: https://bdgenomics.org
+docs_url: https://adam.readthedocs.io
+install_command: conda install adam
+
+category: Data
+tags: [spark, genomics, parquet, bam, vcf, bioinformatics, scala]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Sequencing pipelines glue single-node tools with intermediate SAM and VCF
+  files, so scale and disk I/O become the bottleneck. ADAM stores genomic
+  records in Spark with Avro/Parquet schemas so alignment, variant, and
+  feature jobs run in memory across a cluster instead of per-sample scripts.
+
+use_cases:
+  - Convert BAM and VCF cohorts to Parquet for Spark SQL exploration
+  - Parallelize read preprocessing and variant transforms on a Hadoop cluster
+  - Query genotypes from Python, R, or notebooks against a shared ADAM dataset
+  - Replace disk-heavy SAM/BAM shuffle steps with in-memory Spark stages
