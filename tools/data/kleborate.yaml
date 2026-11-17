@@ -1,0 +1,26 @@
+name: Kleborate
+description: Kleborate genotypes Klebsiella pneumoniae species-complex assemblies for species, MLST, capsule and O loci, and known resistance and virulence markers. Public-health labs use it as a genomic surveillance screen without assembling those calls by hand.
+tagline: Genomic surveillance genotyping for Klebsiella
+
+github_url: https://github.com/klebgenomics/Kleborate
+website_url: https://github.com/klebgenomics/Kleborate
+docs_url: https://kleborate.readthedocs.io/en/latest/
+install_command: pip install kleborate
+
+category: Data
+tags: [python, bioinformatics, genomics, klebsiella, mlst, public-health]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Typing Klebsiella assemblies for species, ST, serotype, and known
+  resistance markers usually means chaining several tools. Kleborate
+  runs those screens in one modular pipeline so surveillance labs can
+  genotype isolate genomes without a custom typing stack.
+
+use_cases:
+  - Assign species and MLST from a Klebsiella pneumoniae assembly
+  - Predict K and O loci with Kaptive calls from draft genomes
+  - Screen isolate collections for known resistance gene and SNP markers
+  - Add Kleborate typing to a hospital or public-health genomic workflow
