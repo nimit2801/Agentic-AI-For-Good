@@ -1,0 +1,26 @@
+name: eggNOG-mapper
+description: eggNOG-mapper annotates novel proteins by transferring functions from fine-grained orthologs in the eggNOG database. It is faster and more precise than BLAST-style homology for genomes, transcriptomes, and metagenomic gene catalogs.
+tagline: Fast functional annotation via orthology assignment
+
+github_url: https://github.com/eggnogdb/eggnog-mapper
+website_url: https://eggnog-mapper.cgmlab.org
+docs_url: https://github.com/eggnogdb/eggnog-mapper/wiki
+install_command: pip install eggnog-mapper
+
+category: Data
+tags: [python, bioinformatics, annotation, orthology, genomics, metagenomics]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Homology search transfers function from paralogs that often diverged.
+  eggNOG-mapper uses precomputed orthologous groups so annotations come
+  from true orthologs, giving higher precision on new genomes,
+  transcriptomes, and metagenomic gene catalogs.
+
+use_cases:
+  - Annotate a newly assembled bacterial or eukaryotic genome
+  - Assign functions to a metagenomic gene catalog at scale
+  - Annotate a transcriptome with eggNOG orthology and GO terms
+  - Run functional annotation on the public eggNOG-mapper web server

@@ -1,0 +1,25 @@
+name: MaAsLin2
+description: MaAsLin2 finds multivariable associations between clinical metadata and microbial features. It fits general linear models with filtering, normalization, and transforms so epidemiologists can test microbiome associations in cross-sectional and longitudinal studies.
+tagline: Multivariable associations for microbiome meta-omics
+
+github_url: https://github.com/biobakery/Maaslin2
+website_url: http://huttenhower.sph.harvard.edu/maaslin2
+docs_url: https://github.com/biobakery/biobakery/wiki/maaslin2
+
+category: Data
+tags: [r, bioinformatics, microbiome, statistics, metagenomics, epidemiology]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Microbiome tables mix compositionality, sparsity, and many covariates.
+  MaAsLin2 applies GLM-based association tests with built-in
+  normalization and transforms so studies can link taxa or pathways to
+  clinical metadata without a custom stats pipeline.
+
+use_cases:
+  - Associate taxa abundances with diet, drugs, or disease metadata
+  - Model longitudinal microbiome samples with repeated measures
+  - Normalize and transform feature tables before association testing
+  - Visualize significant microbial associations as heatmaps
