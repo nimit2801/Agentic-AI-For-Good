@@ -1,0 +1,25 @@
+name: QIIME 2
+description: QIIME 2 is a microbiome bioinformatics platform for amplicon and metagenomic analysis. It wraps plugins for demultiplexing, quality control, OTU/ASV clustering, taxonomy, diversity stats, and visualizations behind a reproducible, provenance-tracked workflow.
+tagline: Reproducible microbiome analysis from reads to stats
+
+github_url: https://github.com/qiime2/qiime2
+website_url: https://qiime2.org
+docs_url: https://docs.qiime2.org
+
+category: Data
+tags: [python, bioinformatics, microbiome, amplicon, metagenomics, 16S, genomics]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Microbiome pipelines mix many tools and lose provenance. QIIME 2
+  packages quality control, taxonomy, and diversity analyses as plugins
+  with saved artifacts so studies can rerun 16S or shotgun workflows
+  with a recorded graph of every step.
+
+use_cases:
+  - Process 16S amplicon reads into ASV tables with DADA2 or Deblur
+  - Assign taxonomy and compute alpha and beta diversity metrics
+  - Visualize microbiome results in QIIME 2 viewable artifacts
+  - Share a fully provenance-tracked analysis with collaborators

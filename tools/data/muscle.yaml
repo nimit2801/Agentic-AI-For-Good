@@ -1,0 +1,25 @@
+name: MUSCLE
+description: MUSCLE is a multiple sequence alignment program for proteins and nucleotides. It produces high-accuracy alignments that scale to thousands of sequences and can emit replicate alignments to test downstream trees and structures.
+tagline: High-accuracy multiple sequence alignment at scale
+
+github_url: https://github.com/rcedgar/muscle
+website_url: https://drive5.com/muscle
+docs_url: https://drive5.com/muscle5
+
+category: Data
+tags: [bioinformatics, alignment, MSA, phylogenetics, proteins, genomics]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Phylogenies and structure models fail when the MSA is wrong.
+  MUSCLE scores near the top of MSA benchmarks and can generate
+  replicate alignments so labs can see whether a tree or fold
+  depends on a single alignment artifact.
+
+use_cases:
+  - Align thousands of protein sequences for a gene family tree
+  - Generate replicate MSAs to test phylogenetic robustness
+  - Align nucleotide coding sequences before selection analysis
+  - Compare MUSCLE alignments with MAFFT on a shared benchmark

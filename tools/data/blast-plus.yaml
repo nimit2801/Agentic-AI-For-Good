@@ -1,0 +1,25 @@
+name: BLAST+
+description: BLAST+ is NCBI's command-line suite for comparing nucleotide and protein sequences to local or remote databases. It includes blastn, blastp, blastx, and database tools so pipelines can search assemblies against nr, nt, or custom FASTA libraries.
+tagline: NCBI command-line sequence similarity search
+
+website_url: https://blast.ncbi.nlm.nih.gov
+docs_url: https://www.ncbi.nlm.nih.gov/books/NBK279690/
+install_command: brew install blast
+
+category: Data
+tags: [bioinformatics, alignment, homology, genomics, NCBI, BLAST]
+pricing: free
+is_open_source: true
+license: Public Domain
+
+problem_solved: |
+  Web BLAST cannot batch millions of queries or sit inside a pipeline.
+  BLAST+ ships local blastn/blastp/makeblastdb so labs can search
+  custom databases, control E-values, and export tabular hits for
+  annotation and contamination screens.
+
+use_cases:
+  - Search assembled contigs against NCBI nr or a custom protein DB
+  - Identify contamination by blasting reads to a host genome
+  - Build a local BLAST database with makeblastdb for private FASTA
+  - Annotate genes by blastp against Swiss-Prot or RefSeq
