@@ -1,0 +1,26 @@
+name: Ensembl VEP
+description: Ensembl VEP predicts functional effects of genomic variants on genes, transcripts, and proteins. It annotates SNPs, indels, and structural variants against Ensembl or RefSeq so pipelines can report consequence, impact, and known-variant IDs.
+tagline: Predict functional effects of genomic variants
+
+github_url: https://github.com/Ensembl/ensembl-vep
+website_url: https://www.ensembl.org/vep
+docs_url: https://www.ensembl.org/info/docs/tools/vep/index.html
+
+category: Data
+tags: [bioinformatics, genomics, variants, annotation, ensembl, vcf]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Raw VCF calls list alleles but not what they do to genes. VEP maps
+  variants onto transcripts and regulatory features, adding consequence
+  terms, impact, HGVS, and ClinVar or COSMIC IDs so clinical and
+  research pipelines can filter and interpret variants without a
+  custom annotation stack.
+
+use_cases:
+  - Annotate a germline or somatic VCF against Ensembl or RefSeq caches
+  - Rank coding variants by consequence, impact, and known-variant identifiers
+  - Run VEP offline with a local cache for high-throughput WGS pipelines
+  - Add custom BigWig or GFF annotation tracks alongside Ensembl features
