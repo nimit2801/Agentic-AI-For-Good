@@ -1,0 +1,26 @@
+name: dRep
+description: dRep compares and dereplicates microbial genome sets. It clusters highly similar assemblies and picks a representative so MAG catalogs drop redundant bins before taxonomy or pangenome analysis.
+tagline: Rapid genome comparison and MAG dereplication
+
+github_url: https://github.com/MrOlm/drep
+website_url: https://drep.readthedocs.io/en/latest/
+docs_url: https://drep.readthedocs.io/en/latest/
+install_command: pip install drep
+
+category: Data
+tags: [python, bioinformatics, metagenomics, mag, genomics, clustering]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Metagenome binning produces many near-identical genomes across
+  samples. dRep compares large genome sets with skani, clusters
+  redundant MAGs, and keeps the best representative so catalogs
+  stay unique without an all-versus-all memory blow-up.
+
+use_cases:
+  - Dereplicate MAG bins from a multi-sample metagenome study
+  - Compare thousands of isolate genomes by ANI-like sketches
+  - Choose the highest-quality representative per species cluster
+  - Reduce a MAG catalog before GTDB-Tk classification

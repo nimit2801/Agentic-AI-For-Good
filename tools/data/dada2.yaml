@@ -1,0 +1,25 @@
+name: DADA2
+description: DADA2 infers exact amplicon sequence variants from 16S and other marker-gene data. It resolves variants that differ by one nucleotide so microbiome studies replace OTU clustering with sample-level ASVs.
+tagline: Exact amplicon sequence variants from NGS data
+
+github_url: https://github.com/benjjneb/dada2
+website_url: http://benjjneb.github.io/dada2/
+docs_url: https://benjjneb.github.io/dada2/tutorial.html
+
+category: Data
+tags: [r, bioinformatics, microbiome, amplicon, 16s, ngs]
+pricing: free
+is_open_source: true
+license: LGPL-3.0
+
+problem_solved: |
+  OTU clustering collapses real one-base differences in 16S
+  data. DADA2 models Illumina error rates and infers exact
+  sequence variants so amplicon studies keep single-nucleotide
+  resolution without arbitrary similarity cutoffs.
+
+use_cases:
+  - Infer ASVs from paired-end Illumina 16S MiSeq reads
+  - Replace OTU tables with exact sequence variants in a microbiome study
+  - Learn run-specific error models before sample inference
+  - Process ITS or other marker-gene amplicons through the DADA2 pipeline

@@ -1,0 +1,25 @@
+name: CoverM
+description: CoverM calculates read coverage and relative abundance for metagenomic genomes and contigs. It maps BAM or raw reads onto MAG catalogs so labs get fast, configurable coverage tables for binning and abundance.
+tagline: Fast coverage and abundance for metagenomes
+
+github_url: https://github.com/wwood/CoverM
+website_url: https://github.com/wwood/CoverM
+docs_url: https://wwood.github.io/CoverM/coverm-genome.html
+
+category: Data
+tags: [rust, bioinformatics, metagenomics, coverage, mag, ngs]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Metagenomic abundance needs coverage of each MAG or contig,
+  but general-purpose BAM stats are slow and awkward. CoverM
+  computes genome and contig coverage from BAM or reads so
+  binning and relative-abundance tables come from one tool.
+
+use_cases:
+  - Compute MAG relative abundance from paired Illumina reads
+  - Measure contig coverage to support metagenomic binning
+  - Summarize coverage across a multi-sample MAG catalog
+  - Convert sorted BAM alignments into genome coverage tables
