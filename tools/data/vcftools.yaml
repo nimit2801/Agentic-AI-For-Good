@@ -1,0 +1,26 @@
+name: VCFtools
+description: VCFtools is a program package for working with VCF files from variant calling. It filters, summarizes, and converts variant data so population-genomics pipelines can subset SNPs without writing one-off parsers.
+tagline: Filter and summarize VCF variant files
+
+github_url: https://github.com/vcftools/vcftools
+website_url: https://vcftools.github.io
+docs_url: https://vcftools.github.io/man_latest.html
+install_command: conda install -c bioconda vcftools
+
+category: Data
+tags: [cpp, bioinformatics, genomics, vcf, variants, population-genetics]
+pricing: free
+is_open_source: true
+license: LGPL-3.0
+
+problem_solved: |
+  Variant call files are large and awkward to subset by site, sample, or
+  quality without a dedicated parser. VCFtools filters and summarizes VCF
+  so population-genomics workflows can extract SNPs and stats without
+  custom file handling.
+
+use_cases:
+  - Filter a VCF by quality, depth, or sample set before association tests
+  - Compute allele frequency and missingness summaries on a cohort VCF
+  - Convert VCF to PLINK or other formats for downstream genetics tools
+  - Extract sites in a BED interval from a whole-genome variant file

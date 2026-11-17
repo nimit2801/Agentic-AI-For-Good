@@ -1,0 +1,25 @@
+name: khmer
+description: khmer is a library and toolkit for k-mer counting, graph traversal, and read filtering in shotgun sequencing data. It trims, diginorms, and partitions reads so metagenome and assembly pipelines stay memory-bounded.
+tagline: k-mer counting and read filtering for shotgun data
+
+github_url: https://github.com/dib-lab/khmer
+website_url: https://khmer.readthedocs.io
+docs_url: https://khmer.readthedocs.io/en/latest/
+install_command: pip install khmer
+
+category: Data
+tags: [python, c++, bioinformatics, genomics, kmer, metagenomics, assembly]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Shotgun and metagenome assemblies stall when unique k-mers explode
+  memory. khmer counts, trims, and digital-normalizes reads so coverage
+  is bounded and downstream assemblers can run on commodity hardware.
+
+use_cases:
+  - Digital-normalize shotgun reads before a memory-heavy assembly
+  - Trim low-abundance k-mers from error-prone reads
+  - Partition reads by k-mer graph connectivity for metagenomes
+  - Count k-mers from Python in a custom sequencing workflow
