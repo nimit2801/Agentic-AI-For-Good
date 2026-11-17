@@ -1,0 +1,26 @@
+name: TreeTime
+description: TreeTime infers time-scaled phylogenies and ancestral sequences with a maximum-likelihood molecular clock. It reroots trees, dates internal nodes, and reconstructs sequences so outbreak datasets become dated phylogenies rather than substitution-only trees.
+tagline: Maximum-likelihood dating and ancestral reconstruction
+
+github_url: https://github.com/neherlab/treetime
+website_url: https://treetime.biozentrum.unibas.ch
+docs_url: https://treetime.readthedocs.io/en/latest/
+install_command: pip install treetime
+
+category: Data
+tags: [python, bioinformatics, phylogenetics, molecular-clock, ancestral-reconstruction]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Substitution trees do not place nodes in calendar time, so outbreak
+  datasets stay hard to date. TreeTime fits a molecular clock, reroots
+  for temporal signal, and reconstructs ancestral sequences so phylogenies
+  become time-scaled without a separate dating pipeline.
+
+use_cases:
+  - Date a viral phylogeny from sampling times and a substitution tree
+  - Reconstruct ancestral sequences on a molecular-clock tree
+  - Reroot a tree to maximize root-to-tip temporal signal
+  - Fit a simple coalescent model on a time-scaled phylogeny

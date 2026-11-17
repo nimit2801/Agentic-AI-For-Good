@@ -1,0 +1,26 @@
+name: Augur
+description: Augur is Nextstrain's bioinformatics toolkit for phylodynamic pipelines. It filters sequences, aligns, builds trees, and exports JSON for Auspice so genomic epidemiology datasets can be tracked from FASTA to a public tree.
+tagline: Nextstrain pipeline components for phylodynamic analysis
+
+github_url: https://github.com/nextstrain/augur
+website_url: https://nextstrain.org
+docs_url: https://docs.nextstrain.org/projects/augur/
+install_command: pip install nextstrain-augur
+
+category: Data
+tags: [python, bioinformatics, phylogenetics, nextstrain, genomics, epidemiology]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Turning genomic sequences into a public phylogeny means filtering,
+  aligning, tree-building, and exporting viz JSON by hand. Augur
+  composes those steps so Nextstrain pipelines can go from FASTA to
+  Auspice without a one-off phylodynamics stack.
+
+use_cases:
+  - Filter and align viral genomes for a Nextstrain build
+  - Infer a time-scaled tree and ancestral traits with Augur commands
+  - Export Auspice JSON from an Augur pipeline for public trees
+  - Compose a genomic epidemiology workflow from reusable Augur steps
