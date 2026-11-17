@@ -1,0 +1,26 @@
+name: Panaroo
+description: Panaroo is a bacterial pangenome pipeline that builds a cleaned gene graph from annotated assemblies. It corrects fragmented and misannotated genes so core and accessory genome estimates stay accurate at large isolate counts.
+tagline: Graph-based bacterial pangenome pipeline
+
+github_url: https://github.com/gtonkinhill/panaroo
+website_url: https://gtonkinhill.github.io/panaroo
+docs_url: https://gtonkinhill.github.io/panaroo
+install_command: conda install -c conda-forge -c bioconda panaroo
+
+category: Data
+tags: [python, bioinformatics, genomics, pangenome, bacteria, annotation]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Fragmented genes and annotation errors inflate accessory-genome size in
+  bacterial pangenomes. Panaroo builds a gene graph that merges and cleans
+  those errors, so core versus accessory estimates stay stable as isolate
+  collections grow.
+
+use_cases:
+  - Build a cleaned pangenome from Prokka-annotated bacterial GFF files
+  - Estimate core and accessory gene content for a species collection
+  - Export a gene presence-absence matrix for association or phylogeny
+  - Compare Panaroo gene graphs against Roary on the same isolate set

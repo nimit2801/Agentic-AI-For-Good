@@ -1,0 +1,26 @@
+name: ABRicate
+description: ABRicate screens assembled contigs against public gene databases for antimicrobial resistance and virulence markers. It wraps BLAST so public-health and research labs can annotate bacterial genomes without writing a custom search pipeline.
+tagline: Mass screening of contigs for resistance and virulence genes
+
+github_url: https://github.com/tseemann/abricate
+website_url: https://github.com/tseemann/abricate
+docs_url: https://github.com/tseemann/abricate
+install_command: conda install -c conda-forge -c bioconda abricate
+
+category: Data
+tags: [perl, bioinformatics, genomics, amr, blast, bacteria, public-health]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Annotating assembled bacterial genomes for known resistance and virulence
+  genes usually means wiring BLAST to several public databases by hand.
+  ABRicate runs those screens with a consistent CLI, so labs can report
+  gene hits from contigs without building a custom search stack.
+
+use_cases:
+  - Screen isolate assemblies against NCBI AMRFinderPlus or ResFinder databases
+  - Compare resistance gene calls across a collection of bacterial genomes
+  - Add a contig screening step to a public-health genomic surveillance pipeline
+  - Update local gene databases and re-run mass screening on existing assemblies

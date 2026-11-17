@@ -1,0 +1,26 @@
+name: Trycycler
+description: Trycycler builds a consensus bacterial genome from several independent long-read assemblies of the same isolate. It reconciles circular replicons so the output is more accurate than any single assembler when Flye, Miniasm, and Raven disagree on structure.
+tagline: Consensus long-read assemblies for bacterial genomes
+
+github_url: https://github.com/rrwick/Trycycler
+website_url: https://github.com/rrwick/Trycycler
+docs_url: https://github.com/rrwick/Trycycler/wiki
+install_command: conda install -c bioconda -c conda-forge trycycler
+
+category: Data
+tags: [python, bioinformatics, genomics, assembly, long-read, nanopore, bacteria]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Independent long-read assemblers often disagree on circular chromosome
+  and plasmid structure for the same isolate. Trycycler clusters, reconciles,
+  and polishes those assemblies into one consensus so bacterial genomes are
+  more complete and consistent than any single assembler output.
+
+use_cases:
+  - Combine Flye, Raven, and Miniasm assemblies of one isolate into a consensus genome
+  - Resolve circular bacterial chromosomes and plasmids from Nanopore long reads
+  - Reduce assembler-specific structural errors before annotation
+  - Produce a high-quality isolate reference for genomic surveillance pipelines

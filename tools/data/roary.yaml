@@ -1,0 +1,26 @@
+name: Roary
+description: Roary performs rapid large-scale prokaryote pan-genome analysis from annotated GFF3 files. It identifies core and accessory genes, builds a presence-absence matrix, and supports outbreak phylogenomics without a custom clustering pipeline.
+tagline: Rapid large-scale prokaryote pan-genome analysis
+
+github_url: https://github.com/sanger-pathogens/Roary
+website_url: http://sanger-pathogens.github.io/Roary
+docs_url: http://sanger-pathogens.github.io/Roary
+install_command: conda install -c bioconda roary
+
+category: Data
+tags: [perl, bioinformatics, genomics, pangenome, bacteria, phylogenomics]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Comparing gene content across hundreds of bacterial genomes is slow if
+  you cluster proteins and build a presence-absence matrix by hand. Roary
+  takes annotated GFF3 files and produces core, accessory, and phylogeny
+  outputs so isolate collections can be compared at scale.
+
+use_cases:
+  - Compute a bacterial pan-genome from Prokka GFF3 annotations
+  - Build a gene presence-absence matrix for outbreak isolate collections
+  - Extract core-gene alignments for downstream phylogeny
+  - Compare accessory gene content across a species or clone
