@@ -1,0 +1,26 @@
+name: epiScanpy
+description: epiScanpy is a Scanpy-style toolkit for single-cell epigenomics. It analyzes scATAC-seq and single-cell DNA methylation so chromatin accessibility and methylome experiments use the same AnnData workflows as scRNA-seq.
+tagline: Single-cell epigenomics analysis in Python
+
+github_url: https://github.com/colomemaria/epiScanpy
+website_url: https://colomemaria.github.io/episcanpy_doc
+docs_url: https://episcanpy.readthedocs.io/en/latest/
+install_command: pip install episcanpy
+
+category: Data
+tags: [python, bioinformatics, single-cell, epigenomics, atac-seq, scanpy]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Scanpy covers scRNA-seq but not open chromatin or methylation.
+  epiScanpy loads scATAC-seq and single-cell methylome counts into
+  AnnData, then clusters and visualizes cells so epigenomic
+  experiments reuse the Scanpy analysis pattern.
+
+use_cases:
+  - Cluster cells from a scATAC-seq peak-by-cell matrix
+  - Visualize single-cell DNA methylation with Scanpy-style embeddings
+  - Build AnnData objects from epigenomic count matrices
+  - Compare chromatin accessibility across cell types in a tissue
