@@ -1,0 +1,26 @@
+name: Prodigal
+description: Prodigal predicts protein-coding genes in microbial genomes from finished or draft DNA. It trains on the input sequence so bacterial annotation pipelines can call ORFs without a pre-built model for every isolate.
+tagline: Fast gene prediction for microbial genomes
+
+github_url: https://github.com/hyattpd/Prodigal
+website_url: https://github.com/hyattpd/Prodigal
+docs_url: https://github.com/hyattpd/Prodigal/wiki
+install_command: brew install prodigal
+
+category: Data
+tags: [bioinformatics, gene-prediction, bacteria, genomics, annotation, microbes]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Draft bacterial assemblies need gene calls before functional
+  annotation. Prodigal trains on the input genome and emits GFF and
+  protein FASTA so annotation pipelines can run on isolates without
+  a species-specific training set.
+
+use_cases:
+  - Predict ORFs on a finished bacterial chromosome
+  - Call genes on metagenomic bins before functional annotation
+  - Emit protein FASTA for downstream BLAST or HMM searches
+  - Feed Prodigal GFF into a Prokka-style annotation pipeline

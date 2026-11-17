@@ -1,0 +1,25 @@
+name: Bandage
+description: Bandage visualizes de novo assembly graphs from GFA or FASTG files. It lets genome finishers zoom, search BLAST hits, and follow paths so tangled SPAdes or Unicycler graphs can be inspected instead of treated as a black box.
+tagline: Navigate de novo assembly graphs visually
+
+github_url: https://github.com/rrwick/Bandage
+website_url: https://rrwick.github.io/Bandage/
+docs_url: https://rrwick.github.io/Bandage/wiki.html
+
+category: Data
+tags: [bioinformatics, genome-assembly, visualization, gfa, bacteria, genomics]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Assemblers emit graphs that FASTA contigs hide. Repeat collapse and
+  unresolved plasmids only show up in the GFA. Bandage draws that graph
+  so finishers can follow paths, BLAST nodes, and decide where to add
+  long reads.
+
+use_cases:
+  - Open a Unicycler or SPAdes GFA to inspect unresolved repeats
+  - BLAST assembly nodes against a reference chromosome
+  - Trace a plasmid path through a bacterial assembly graph
+  - Screenshot graph neighborhoods for a genome-announcement figure
