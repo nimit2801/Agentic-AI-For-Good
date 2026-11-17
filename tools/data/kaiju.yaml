@@ -1,0 +1,25 @@
+name: Kaiju
+description: Kaiju classifies metagenomic reads against a protein reference and NCBI taxonomy. It is fast on Illumina shotgun data so microbiome pipelines get taxonomic labels from translated amino-acid matches instead of nucleotide k-mers alone.
+tagline: Protein-based taxonomic classifier for metagenomes
+
+github_url: https://github.com/bioinformatics-centre/kaiju
+website_url: http://kaiju.binf.ku.dk
+docs_url: https://bioinformatics-centre.github.io/kaiju/
+
+category: Data
+tags: [bioinformatics, metagenomics, taxonomy, proteins, ngs, microbiome]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Nucleotide classifiers miss distant homologs in metagenomes.
+  Kaiju translates reads and matches them to microbial and viral
+  proteins, so taxonomic profiles stay sensitive when nucleotide
+  identity to the reference is low.
+
+use_cases:
+  - Classify Illumina shotgun reads against a Kaiju protein database
+  - Profile viruses and microbes from environmental metagenomes
+  - Compare protein-based taxonomy with Kraken nucleotide calls
+  - Build a custom Kaiju index from selected protein FASTA

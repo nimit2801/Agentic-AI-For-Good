@@ -1,0 +1,25 @@
+name: Chopper
+description: Chopper is a Rust filter and trimmer for long-read FASTQ and unaligned BAM. It applies quality, length, and GC filters plus head/tail or quality-based trimming so Nanopore and PacBio pipelines clean reads at high throughput.
+tagline: Fast long-read filter and trimmer
+
+github_url: https://github.com/wdecoster/chopper
+website_url: https://github.com/wdecoster/chopper
+docs_url: https://github.com/wdecoster/chopper
+
+category: Data
+tags: [rust, bioinformatics, long-reads, nanopore, qc, ngs]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Python NanoFilt is too slow on large Nanopore runs. Chopper
+  reimplements filtering and trimming in Rust so labs drop
+  low-quality or off-length reads from FASTQ or uBAM without
+  waiting on a Python QC step.
+
+use_cases:
+  - Filter Nanopore FASTQ by minimum length and mean quality
+  - Trim low-quality heads and tails from PacBio reads
+  - Remove poly(A) tails from long-read RNA FASTQ
+  - Stream cleaned long reads from stdin to an assembler
