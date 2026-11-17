@@ -1,0 +1,25 @@
+name: Bracken
+description: Bracken estimates species-level abundance from Kraken, Kraken2, or KrakenUniq classifications. It redistributes reads assigned to higher ranks so metagenomic samples report composition at a chosen taxonomic level.
+tagline: Bayesian species abundance from Kraken classifications
+
+github_url: https://github.com/jenniferlu717/Bracken
+website_url: http://ccb.jhu.edu/software/bracken/index.shtml
+docs_url: http://ccb.jhu.edu/software/bracken/index.shtml
+
+category: Data
+tags: [bioinformatics, metagenomics, taxonomy, kraken, abundance, ngs]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Kraken labels many reads only to genus or family, so species
+  abundance is undercounted. Bracken uses a Bayesian model on
+  those classifications to reestimate abundance at a chosen rank,
+  giving metagenomic samples usable species or genus profiles.
+
+use_cases:
+  - Estimate species abundance from a Kraken2 report
+  - Build a Bracken database for a chosen read length
+  - Compare microbiome composition across samples at genus level
+  - Feed species abundances into downstream surveillance or ML models

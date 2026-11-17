@@ -1,0 +1,26 @@
+name: Porechop
+description: Porechop finds and removes adapters from Oxford Nanopore reads. It trims end adapters, splits chimeric reads with internal adapters, and can demultiplex native, PCR, and rapid barcodes.
+tagline: Adapter trimmer for Oxford Nanopore reads
+
+github_url: https://github.com/rrwick/Porechop
+website_url: https://github.com/rrwick/Porechop
+docs_url: https://github.com/rrwick/Porechop
+
+category: Data
+tags: [python, bioinformatics, nanopore, adapters, long-reads, ngs]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Nanopore reads often keep kit adapters on the ends or in the
+  middle of chimeras, which poisons mapping and assembly. Porechop
+  aligns known adapter sequences, trims them, splits chimeric
+  reads, and optionally demultiplexes barcodes before downstream
+  analysis.
+
+use_cases:
+  - Trim Nanopore adapters from a FASTQ file before assembly
+  - Split chimeric reads that contain internal adapter sequence
+  - Demultiplex Native Barcoding Kit Nanopore libraries
+  - Clean long reads prior to mapping or consensus polishing
