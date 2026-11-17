@@ -1,0 +1,25 @@
+name: antiSMASH
+description: antiSMASH finds biosynthetic gene clusters in bacterial and fungal genomes. It annotates NRPS, PKS, RiPP, and other secondary metabolite loci and compares them to known BGCs so labs can prioritize natural-product discovery.
+tagline: Biosynthetic gene cluster finder for microbial genomes
+
+github_url: https://github.com/antismash/antismash
+website_url: https://antismash.secondarymetabolites.org
+docs_url: https://docs.antismash.secondarymetabolites.org
+
+category: Data
+tags: [bioinformatics, genomics, BGC, secondary-metabolites, bacteria, natural-products]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Secondary metabolite genes are scattered across microbial genomes and
+  easy to miss by BLAST. antiSMASH rules and HMMs locate biosynthetic
+  gene clusters, predict product class, and compare regions to known
+  BGCs so discovery teams can rank isolates for natural products.
+
+use_cases:
+  - Scan bacterial or fungal assemblies for NRPS, PKS, and RiPP clusters
+  - Compare predicted BGCs against MIBiG to find novel chemistry
+  - Prioritize isolates for natural-product genome mining campaigns
+  - Submit genomes to the public antiSMASH web server for annotation

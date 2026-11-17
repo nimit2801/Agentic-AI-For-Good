@@ -1,0 +1,26 @@
+name: geNomad
+description: geNomad identifies viruses and plasmids in isolate, metagenome, and metatranscriptome sequences. It combines marker profiles with neural networks to classify mobile genetic elements, assign viral taxonomy, and find proviruses.
+tagline: Identify viruses and plasmids in genomic data
+
+github_url: https://github.com/apcamargo/genomad
+website_url: https://portal.nersc.gov/genomad/
+docs_url: https://portal.nersc.gov/genomad/
+install_command: pip install genomad
+
+category: Data
+tags: [python, bioinformatics, viruses, plasmids, metagenomics, MGE, genomics]
+pricing: free
+is_open_source: true
+license: LBNL Academic Non-Commercial
+
+problem_solved: |
+  Viruses and plasmids hide in assemblies and get mixed with chromosomal
+  DNA. geNomad scores sequences with markers and a neural classifier so
+  labs can recover mobile genetic elements, taxonomically label viruses,
+  and mark integrated proviruses without a separate plasmid pipeline.
+
+use_cases:
+  - Detect viral and plasmid contigs in metagenomic assemblies
+  - Assign taxonomy to recovered viral genomes
+  - Find proviruses integrated in host chromosomes
+  - Annotate MGE proteins with geNomad marker functions

@@ -1,0 +1,26 @@
+name: VSEARCH
+description: VSEARCH is an open-source USEARCH alternative for microbiome analysis. It clusters, dereplicates, and globally aligns nucleotide sequences with SIMD vectorization, and supports chimera detection, FASTQ filtering, and paired-end merging.
+tagline: Vectorized search for microbiome sequence analysis
+
+github_url: https://github.com/torognes/vsearch
+website_url: https://torognes.github.io/vsearch
+docs_url: https://torognes.github.io/vsearch
+install_command: brew install vsearch
+
+category: Data
+tags: [bioinformatics, microbiome, clustering, alignment, FASTQ, metagenomics, genomics]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause OR GPL-3.0
+
+problem_solved: |
+  Closed-source USEARCH limits 64-bit databases and reproducible pipelines.
+  VSEARCH provides a free, SIMD-accelerated global aligner for chimera
+  detection, OTU clustering, and FASTQ processing so labs can scale
+  microbiome analysis without license fees or 32-bit memory ceilings.
+
+use_cases:
+  - Cluster 16S amplicons into OTUs with de novo chimera filtering
+  - Search query reads against a reference FASTA at a given identity
+  - Merge paired-end Illumina reads and filter low-quality FASTQ
+  - Dereplicate large nucleotide libraries before diversity analysis
