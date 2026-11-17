@@ -1,0 +1,26 @@
+name: deepTools
+description: deepTools is a suite for processing and visualizing deep-sequencing data. It computes coverage tracks, heatmaps, and quality metrics from BAM files so NGS labs can compare ChIP, RNA, and ATAC experiments without one-off plotting scripts.
+tagline: Coverage tracks and heatmaps for NGS data
+
+github_url: https://github.com/deeptools/deepTools
+website_url: https://deeptools.readthedocs.io
+docs_url: https://deeptools.readthedocs.io
+install_command: pip install deeptools
+
+category: Data
+tags: [python, ngs, chip-seq, visualization, genomics, bioinformatics, bam]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Comparing ChIP-Seq and ATAC-Seq across samples needs normalized
+  coverage, heatmaps, and QC, not raw BAM plots. deepTools turns
+  alignments into bigWig tracks and clustered heatmaps so labs
+  inspect enrichment around genes or peaks without custom R glue.
+
+use_cases:
+  - Convert BAM alignments to normalized bigWig coverage tracks
+  - Plot peak heatmaps and profiles around TSS or custom BED regions
+  - Compute fingerprint and coverage QC before peak calling
+  - Compare multiple ChIP or ATAC samples on the same genomic scale
