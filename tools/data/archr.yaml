@@ -1,0 +1,25 @@
+name: ArchR
+description: ArchR is an R toolkit for large-scale single-cell ATAC-Seq. It handles peak calling, gene scores, trajectory analysis, and scATAC plus scRNA integration so chromatin labs can analyze hundreds of thousands of cells without custom C++ pipelines.
+tagline: Scalable single-cell ATAC-Seq analysis in R
+
+github_url: https://github.com/GreenleafLab/ArchR
+website_url: https://www.archrproject.com
+docs_url: https://www.archrproject.com
+
+category: Data
+tags: [r, single-cell, atac-seq, chromatin, genomics, bioinformatics]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  scATAC-Seq matrices are sparse and huge, so naive R objects run
+  out of memory before peak-to-gene links. ArchR stores Arrow
+  fragments, computes gene scores, and runs trajectories so labs
+  analyze large chromatin atlases on a workstation.
+
+use_cases:
+  - Call peaks and gene scores from scATAC fragment files
+  - Integrate scATAC with matched scRNA multiome samples
+  - Infer chromatin trajectories across cell states
+  - Annotate cell types from gene-score matrices in a large atlas

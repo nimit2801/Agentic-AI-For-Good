@@ -1,0 +1,26 @@
+name: CellRank
+description: CellRank infers directed cell-state dynamics from multi-view single-cell data. It combines RNA velocity, pseudotime, and experimental cues so labs can identify initial, terminal, and intermediate states without hand-drawing trajectory graphs.
+tagline: Directed dynamics from multi-view single-cell data
+
+github_url: https://github.com/scverse/cellrank
+website_url: https://cellrank.readthedocs.io
+docs_url: https://cellrank.readthedocs.io
+install_command: pip install cellrank
+
+category: Data
+tags: [python, single-cell, trajectory, rna-velocity, scanpy, bioinformatics]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  RNA velocity and pseudotime each miss fate probabilities when
+  lineages branch. CellRank builds a directed Markov model on
+  AnnData so labs recover terminal states and absorption
+  probabilities instead of a single handmade lineage tree.
+
+use_cases:
+  - Identify terminal and initial states from velocity or pseudotime
+  - Compute fate probabilities toward each lineage in a branching atlas
+  - Combine RNA velocity with experimental time labels
+  - Rank genes that correlate with fate commitment along a trajectory
