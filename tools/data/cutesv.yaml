@@ -1,0 +1,26 @@
+name: cuteSV
+description: cuteSV detects structural variants from long-read alignments. It clusters SV signatures in PacBio and Oxford Nanopore BAM files so human genomics pipelines call insertions, deletions, inversions, and other SVs at scale.
+tagline: Long-read structural variant caller
+
+github_url: https://github.com/tjiangHIT/cuteSV
+website_url: https://github.com/tjiangHIT/cuteSV
+docs_url: https://github.com/tjiangHIT/cuteSV
+install_command: pip install cuteSV
+
+category: Data
+tags: [python, bioinformatics, structural-variants, long-reads, nanopore, pacbio]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Noisy long reads make structural variant calling slow and
+  insensitive. cuteSV collects signatures for each SV type and
+  refines clusters so PacBio and Nanopore human genomes yield
+  high-sensitivity insertion, deletion, and inversion calls.
+
+use_cases:
+  - Call structural variants from a Nanopore BAM aligned to GRCh38
+  - Detect insertions and deletions in a PacBio HiFi genome
+  - Benchmark long-read SV callers on GIAB truth sets
+  - Produce VCF SVs as features for a downstream genomics model

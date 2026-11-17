@@ -1,0 +1,26 @@
+name: HUMAnN
+description: HUMAnN profiles microbial pathways from metagenomic and metatranscriptomic reads. It reports presence and abundance of metabolic functions so microbiome studies go beyond taxonomy to what a community can do.
+tagline: Functional profiling of microbial communities
+
+github_url: https://github.com/biobakery/humann
+website_url: http://huttenhower.sph.harvard.edu/humann
+docs_url: https://github.com/biobakery/biobakery/wiki/humann
+install_command: pip install humann
+
+category: Data
+tags: [python, bioinformatics, metagenomics, microbiome, pathways, ngs]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Taxonomic profiles do not say which pathways a microbiome
+  encodes or expresses. HUMAnN maps shotgun DNA or RNA reads
+  to UniRef and MetaCyc so studies quantify microbial functions
+  and which species contribute each pathway.
+
+use_cases:
+  - Profile MetaCyc pathway abundance in a gut metagenome
+  - Compare functional potential across a microbiome cohort
+  - Quantify pathway expression from metatranscriptomic reads
+  - Attribute pathway copies to contributing taxa in a sample
