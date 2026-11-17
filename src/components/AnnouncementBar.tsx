@@ -7,19 +7,17 @@ export default function AnnouncementBar() {
     <div className="announcement-bar w-full bg-[#1A1A1A] text-white text-xs sm:text-sm py-2.5 px-3 sm:px-4 text-center relative z-[60] leading-tight">
       <>
         <Link
-          href="https://luma.com/51qkhk0q"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/newsletter/latest"
           className="inline-flex items-center gap-1.5 sm:gap-2 hover:text-[#D4754E] transition-colors duration-200"
         >
           <span className="inline-flex items-center gap-1 sm:gap-1.5">
             <span className="bg-[#D4754E] text-white text-[9px] sm:text-[10px] font-bold uppercase tracking-wider px-1.5 sm:px-2 py-0.5 rounded-full shrink-0">
-              Jun 13
+              New
             </span>
             <span className="truncate max-w-[220px] xs:max-w-none">
-              Vibe with Hermes Agent — Bengaluru ·{ ' ' }
+              Weekly newsletter with catalog picks and agent news ·{' '}
               <span className="underline underline-offset-2 decoration-[#D4754E]/50 hover:decoration-[#D4754E]">
-                RSVP
+                Read
               </span>
             </span>
           </span>
@@ -29,19 +27,17 @@ export default function AnnouncementBar() {
         </Link>
         <span className="mx-1.5 sm:mx-3 text-white/30 hidden sm:inline">|</span>
         <Link
-          href="https://luma.com/5r86uitl"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/community"
           className="inline-flex items-center gap-1.5 sm:gap-2 hover:text-[#D4754E] transition-colors duration-200 hidden sm:inline-flex"
         >
           <span className="inline-flex items-center gap-1 sm:gap-1.5">
             <span className="bg-[#D4754E] text-white text-[9px] sm:text-[10px] font-bold uppercase tracking-wider px-1.5 sm:px-2 py-0.5 rounded-full">
-              Jun 17
+              Community
             </span>
             <span>
-              Mumbai Mixer ·{ ' ' }
+              Discord, meetups, and LinkedIn Lives ·{' '}
               <span className="underline underline-offset-2 decoration-[#D4754E]/50 hover:decoration-[#D4754E]">
-                RSVP
+                Visit
               </span>
             </span>
           </span>

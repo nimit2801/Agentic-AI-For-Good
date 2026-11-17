@@ -5,7 +5,7 @@ import gsap from 'gsap'
 const links = [
   {
     label: 'Discord Community',
-    description: 'Join the conversation — share builds, ask questions, connect with builders.',
+    description: 'Join the conversation. Share builds, ask questions, and connect with builders.',
     href: 'https://discord.gg/cgffxH9KQx',
     icon: (
       <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
@@ -40,8 +40,8 @@ const links = [
     tag: 'Open Source',
   },
   {
-    label: 'Offline Meetup — Bengaluru',
-    description: 'Our first physical meetup! Sat May 23, 4-7 PM in Bengaluru. Co-hosted with Project Humans in the Loop. Builders, founders, demos, conversations.',
+    label: 'Offline Meetup: Bengaluru',
+    description: 'Our first physical meetup. Sat May 23, 4-7 PM in Bengaluru. Co-hosted with Project Humans in the Loop. Builders, founders, demos, conversations.',
     href: 'https://luma.com/4xc1g1hc',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
@@ -50,7 +50,7 @@ const links = [
       </svg>
     ),
     accent: '#D4754E',
-    tag: 'Upcoming',
+    tag: 'Past',
   },
   {
     label: 'Vibe with Hermes Agent',
@@ -64,11 +64,11 @@ const links = [
       </svg>
     ),
     accent: '#D4754E',
-    tag: 'Jun 13',
+    tag: 'Past',
   },
   {
-    label: 'After OSS India — Mumbai Mixer',
-    description: 'Curated evening for India\'s AI & OSS builders. Jun 17, 5:30-8PM in Mumbai. Co-hosted with Shubhangi Gupta, Neo4j & Qualcomm. No talks — just builders.',
+    label: 'After OSS India: Mumbai Mixer',
+    description: 'Curated evening for India\'s AI & OSS builders. Jun 17, 5:30-8PM in Mumbai. Co-hosted with Shubhangi Gupta, Neo4j & Qualcomm. No talks, just builders.',
     href: 'https://luma.com/5r86uitl',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
@@ -79,12 +79,12 @@ const links = [
       </svg>
     ),
     accent: '#D4754E',
-    tag: 'Jun 17',
+    tag: 'Past',
   },
   {
-    label: 'Episode 1 — OpenClaw',
-    description: 'Our first live session on personal AI and open agent architectures.',
-    href: 'https://www.linkedin.com/events/7460580585044881409?viewAsMember=true',
+    label: 'Episode 1: OpenClaw',
+    description: 'Our first LinkedIn Live, Feb 12, 2026, with Jason Koo. A session on personal AI and open agent architectures.',
+    href: 'https://www.linkedin.com/posts/agentic-ai-for-good_openclaw-personalai-aiagents-activity-7426691323774189568-CAZ1',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
         <polygon points="5 3 19 12 5 21 5 3" />
@@ -94,9 +94,21 @@ const links = [
     tag: 'Past',
   },
   {
-    label: 'Episode 2 — Personal AI Agents',
-    description: 'Our second episode diving deep into personal AI and agentic workflows.',
-    href: 'https://www.linkedin.com/posts/nimitsavant_openclaw-personalai-aiagents-activity-7426241106318635008-K8-z',
+    label: 'Episode 2: Hermes',
+    description: 'LinkedIn Live on Hermes, Thu May 14, 2026, with Nimit Savant and Kshitij Varma. How a personal AI agent can grow with your workflow.',
+    href: 'https://www.linkedin.com/events/7460580585044881409',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
+        <polygon points="5 3 19 12 5 21 5 3" />
+      </svg>
+    ),
+    accent: '#0A66C2',
+    tag: 'Past',
+  },
+  {
+    label: 'Episode 3: Skills and the agent harness',
+    description: 'LinkedIn Live, Sat Jun 6, 2026, with Nimit Savant and Animesh Pathak. We built a game to show how skills steer your agent harness.',
+    href: 'https://www.linkedin.com/events/7468641740669902848',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
         <polygon points="5 3 19 12 5 21 5 3" />
@@ -195,20 +207,6 @@ export default function Community() {
           ))}
         </div>
 
-        {/* Linktree CTA */}
-        <div className="mt-16 max-w-5xl">
-          <a
-            href="https://linktr.ee/agenticaiforgood"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-[#1A1A1A] text-white px-8 py-4 rounded-full font-medium text-base hover:bg-[#D4754E] transition-colors duration-300"
-          >
-            <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
-              <path d="M7.953 15.066c-.08.163-.08.324 0 .487l2.56 4.43c.08.163.243.243.406.243h2.163c.163 0 .325-.08.406-.243l2.56-4.43c.08-.163.08-.324 0-.487l-2.56-4.43c-.08-.163-.243-.243-.406-.243h-2.163c-.163 0-.325.08-.406.243l-2.56 4.43zm3.374-8.893L9.22 9.58H6.416c-.163 0-.325.08-.406.244L3.45 13.937c-.081.163-.081.325 0 .487l2.56 4.113c.08.163.243.244.406.244h2.804l2.107 3.63c.08.163.243.244.406.244h2.56c.163 0 .325-.081.406-.244l2.107-3.63h2.804c.163 0 .325-.081.406-.244l2.56-4.113c.081-.162.081-.324 0-.487L20.016 9.824c-.08-.163-.243-.244-.406-.244h-2.804L14.7 6.173c-.081-.163-.244-.244-.406-.244h-2.56c-.163 0-.325.081-.406.244z" />
-            </svg>
-            All links on Linktree
-          </a>
-        </div>
       </div>
     </section>
   )
