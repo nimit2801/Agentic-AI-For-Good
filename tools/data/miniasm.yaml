@@ -1,0 +1,26 @@
+name: Miniasm
+description: Miniasm is an ultrafast de novo assembler for long noisy reads. It skips a consensus step and emits a unitig graph from minimap overlaps, so you get a fast structural draft before a separate polisher.
+tagline: Ultrafast long-read assembler without a consensus step
+
+github_url: https://github.com/lh3/miniasm
+website_url: https://github.com/lh3/miniasm
+docs_url: https://github.com/lh3/miniasm
+install_command: conda install -c bioconda miniasm
+
+category: Data
+tags: [c, bioinformatics, genomics, assembly, long-read, nanopore, pacbio]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Full long-read assemblers spend most of their time on consensus, which
+  delays a first look at chromosome structure. Miniasm builds unitigs from
+  minimap overlaps only, so a noisy draft appears quickly and polishing
+  can happen in a later tool.
+
+use_cases:
+  - Assemble Nanopore or PacBio reads into a fast structural draft
+  - Feed Miniasm unitigs into Racon or Medaka for consensus
+  - Inspect overlap graphs for circular bacterial replicons
+  - Benchmark overlap-layout speed against Flye or wtdbg2
