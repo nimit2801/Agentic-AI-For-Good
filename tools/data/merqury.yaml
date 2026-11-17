@@ -1,0 +1,24 @@
+name: Merqury
+description: Merqury evaluates genome assemblies with k-mers from unassembled reads. It reports completeness, consensus quality (QV), and haplotype-specific spectra so long-read assemblies can be scored without a reference genome.
+tagline: K-mer based quality and completeness for genome assemblies
+
+github_url: https://github.com/marbl/merqury
+docs_url: https://github.com/marbl/merqury
+
+category: Data
+tags: [bioinformatics, genome-assembly, k-mers, quality, genomics, haplotypes]
+pricing: free
+is_open_source: true
+license: Public Domain
+
+problem_solved: |
+  Reference-free assemblies still need a quality score. Merqury compares
+  assembly k-mers to those counted from the original reads, producing QV,
+  completeness, and hap-mer plots so teams can catch collapsed haplotypes,
+  false duplications, and base errors before publication.
+
+use_cases:
+  - Score a PacBio or Nanopore assembly for k-mer completeness and QV
+  - Separate maternal and paternal haplotypes with hap-mer spectra
+  - Compare competing assemblies from the same read set without a reference
+  - Flag collapsed repeats or false duplications from k-mer copy-number plots

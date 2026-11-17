@@ -1,0 +1,24 @@
+name: KMC
+description: KMC is a disk-based k-mer counter for FASTA and FASTQ. It counts large k-mers from whole-genome reads with modest RAM by spilling to disk, then dumps or transforms the database for assembly evaluation and QC tools.
+tagline: Fast disk-based k-mer counter for sequencing reads
+
+github_url: https://github.com/refresh-bio/KMC
+docs_url: https://github.com/refresh-bio/KMC/wiki
+
+category: Data
+tags: [bioinformatics, k-mers, ngs, genomics, counting, sequencing]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Naive k-mer counting blows RAM on whole-genome FASTQ. KMC streams
+  reads, spills sorted bins to disk, and builds a compact database so
+  labs can count 27-mers and beyond on a workstation, then dump or
+  intersect those k-mers for assembly QC and genome-size estimates.
+
+use_cases:
+  - Count k-mers from gzipped Illumina FASTQ with bounded RAM and temp disk
+  - Dump a KMC database to text for downstream assembly or QC scripts
+  - Intersect or transform k-mer sets with kmc_tools before Merqury or GenomeScope
+  - Feed k-mer histograms into genome-size and heterozygosity estimates

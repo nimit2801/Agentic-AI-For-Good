@@ -1,0 +1,25 @@
+name: Octopus
+description: Octopus is a haplotype-based Bayesian variant caller for SNVs, indels, and small complex alleles. Dedicated models cover individuals, trios, populations, tumors, polyclones, and single cells from mapped BAM or CRAM reads.
+tagline: Haplotype-based caller for germline and somatic variants
+
+github_url: https://github.com/luntergroup/octopus
+website_url: https://luntergroup.github.io/octopus/
+docs_url: https://luntergroup.github.io/octopus/
+
+category: Data
+tags: [bioinformatics, variant-calling, haplotypes, ngs, somatic, vcf]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Independent SNP and indel callers miss complex alleles and struggle
+  with trios, tumors, and mixed clones. Octopus builds a haplotype tree
+  from mapped reads and applies model-specific priors so one engine can
+  call germline, de novo, somatic, and polyclonal variants into VCF.
+
+use_cases:
+  - Call germline SNVs and indels in a single individual from aligned reads
+  - Jointly call a parent-offspring trio including de novo mutations
+  - Detect somatic mutations in tumor-normal pairs with the cancer model
+  - Call variants in polyclonal bacterial or single-cell sample sets

@@ -1,0 +1,24 @@
+name: Trinity
+description: Trinity reconstructs full-length transcripts from RNA-seq without a reference genome. Inchworm, Chrysalis, and Butterfly cluster reads into genes and isoforms so labs can assemble de novo transcriptomes for non-model organisms.
+tagline: De novo RNA-seq transcriptome assembler
+
+github_url: https://github.com/trinityrnaseq/trinityrnaseq
+docs_url: https://github.com/trinityrnaseq/trinityrnaseq/wiki
+
+category: Data
+tags: [bioinformatics, rna-seq, transcriptome, assembly, ngs, isoforms]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Non-model organisms lack a reference genome, so RNA-seq cannot be
+  mapped to known transcripts. Trinity assembles reads into full-length
+  isoform candidates from short reads alone, giving labs a transcriptome
+  for annotation, differential expression, and downstream gene discovery.
+
+use_cases:
+  - Assemble a de novo transcriptome from Illumina RNA-seq of a non-model species
+  - Recover alternative isoforms after clustering Inchworm contigs into components
+  - Feed Trinity transcripts into annotation or differential-expression pipelines
+  - Combine multiple RNA-seq libraries into one Trinity assembly for a tissue atlas
