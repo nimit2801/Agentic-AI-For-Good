@@ -1,0 +1,24 @@
+name: GRIDSS
+description: GRIDSS calls structural variants from Illumina BAM files using split reads, read pairs, and a genome-wide break-end assembler. GRIDSS2 adds single breakends and SV phasing so somatic rearrangement catalogs include events other callers leave as breakpoints only.
+tagline: Illumina structural variant caller with break-end assembly
+
+github_url: https://github.com/PapenfussLab/gridss
+docs_url: https://github.com/PapenfussLab/gridss/wiki/GRIDSS-Documentation
+
+category: Data
+tags: [bioinformatics, structural-variants, illumina, cancer, genomics, assembly]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Many SV callers miss single breakends and unpartnered junctions in
+  cancer genomes. GRIDSS assembles break-ends across the genome and
+  emits VCF breakpoints plus single breakends so somatic pipelines can
+  phase rearrangements instead of reporting only paired breakpoints.
+
+use_cases:
+  - Call somatic structural variants from tumor-normal Illumina BAMs
+  - Report single breakends when one side of a junction cannot be placed
+  - Run VIRUSBreakend to find viral integrations in assembled genomes
+  - Feed GRIDSS VCF into LINX or other SV annotation for cancer genomes

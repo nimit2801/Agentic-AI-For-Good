@@ -1,0 +1,25 @@
+name: Nextclade
+description: Nextclade assigns viral genomes to clades, calls mutations, and scores sequence quality. A web app and CLI place samples on Nextstrain trees so labs can QC SARS-CoV-2, influenza, and other pathogen FASTA without a custom phylogeny pipeline.
+tagline: Clade assignment and QC for viral genomes
+
+github_url: https://github.com/nextstrain/nextclade
+website_url: https://clades.nextstrain.org
+docs_url: https://docs.nextstrain.org/projects/nextclade/
+
+category: Data
+tags: [bioinformatics, viruses, phylogenetics, qc, nextstrain, genomics]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Outbreak sequencing needs clade labels and mutation lists faster than
+  a full Nextstrain rebuild. Nextclade aligns each genome to a pathogen
+  dataset, assigns a clade, and flags QC issues so diagnostic labs can
+  screen FASTA batches in the browser or CLI.
+
+use_cases:
+  - Assign SARS-CoV-2 or influenza FASTA to clades in the Nextclade web app
+  - Call amino-acid mutations and private differences versus a reference tree
+  - QC assembled viral genomes for frameshifts, missing genes, and mixed sites
+  - Run the Nextclade CLI on a batch of consensus sequences in a surveillance pipeline

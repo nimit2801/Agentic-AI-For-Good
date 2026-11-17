@@ -1,0 +1,24 @@
+name: Lumpy
+description: Lumpy discovers structural variants by combining paired-end, split-read, and read-depth signals in a probabilistic model. lumpyexpress automates BAM preprocessing so Illumina WGS can emit a breakpoint VCF without wiring each evidence type by hand.
+tagline: Probabilistic structural variant discovery from mapped reads
+
+github_url: https://github.com/arq5x/lumpy-sv
+docs_url: https://github.com/arq5x/lumpy-sv
+
+category: Data
+tags: [bioinformatics, structural-variants, illumina, genomics, vcf, ngs]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Split-read and discordant-pair callers disagree on the same
+  rearrangement. Lumpy unifies those evidence types in one likelihood
+  so germline and somatic SV detection can share a single breakpoint
+  model instead of merging three VCFs after the fact.
+
+use_cases:
+  - Call deletions, duplications, inversions, and translocations from WGS BAMs
+  - Run lumpyexpress with splitters and discordants extracted from a CRAM or BAM
+  - Combine paired-end and split-read evidence for a joint breakpoint VCF
+  - Use Lumpy as the SV engine inside smoove for population cohorts
