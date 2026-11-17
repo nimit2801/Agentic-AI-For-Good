@@ -1,0 +1,24 @@
+name: Shovill
+description: Shovill assembles bacterial isolate genomes from Illumina paired-end reads. It wraps SPAdes, SKESA, Velvet, or MEGAHIT with depth reduction, stitching, and contig cleanup so isolate WGS finishes faster than a default SPAdes run.
+tagline: Fast isolate assembler pipeline around SPAdes
+
+github_url: https://github.com/tseemann/shovill
+docs_url: https://github.com/tseemann/shovill
+
+category: Data
+tags: [bioinformatics, genome-assembly, bacteria, illumina, ngs, isolates]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Default SPAdes is slow on high-depth isolate WGS and keeps junk
+  contigs. Shovill downsamples, stitches overlapping pairs, runs a
+  tuned assembler, then maps reads back so labs get named isolate
+  contigs without a custom pre- and post-processing script.
+
+use_cases:
+  - Assemble a bacterial isolate from Illumina R1/R2 FASTQ into contigs.fa
+  - Swap SPAdes for SKESA or MEGAHIT inside the same Shovill pre/post steps
+  - Downsample deep isolate libraries to a target coverage before assembly
+  - Filter short, low-coverage, and homopolymer contigs after the assembler
