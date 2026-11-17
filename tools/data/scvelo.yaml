@@ -1,0 +1,26 @@
+name: scVelo
+description: scVelo estimates RNA velocity in single-cell data with dynamical models on AnnData. It recovers latent time and directed trajectories so developmental studies can infer cell-state transitions beyond static UMAP clusters.
+tagline: Dynamical RNA velocity for single-cell data
+
+github_url: https://github.com/theislab/scvelo
+website_url: https://scvelo.org
+docs_url: https://scvelo.readthedocs.io
+install_command: pip install scvelo
+
+category: Data
+tags: [python, single-cell, rna-velocity, anndata, scanpy, bioinformatics]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Static single-cell embeddings do not say which way a cell is
+  differentiating. scVelo fits splicing dynamics on AnnData so
+  labs get velocity streams and latent time instead of guessing
+  trajectory direction from cluster order.
+
+use_cases:
+  - Compute RNA velocity on a spliced/unspliced count AnnData object
+  - Recover latent time along a developmental trajectory
+  - Plot velocity streams on UMAP for a differentiation atlas
+  - Rank putative driver genes along a dynamical transition

@@ -1,0 +1,26 @@
+name: sambamba
+description: sambamba is a high-performance toolkit for SAM and BAM files, written in D. It parallelizes view, sort, index, merge, and markdup so sequencing centers can process alignments faster than single-threaded samtools on large WGS BAMs.
+tagline: Fast parallel SAM/BAM processing
+
+github_url: https://github.com/biod/sambamba
+website_url: https://lomereiter.github.io/sambamba/
+docs_url: https://lomereiter.github.io/sambamba/
+install_command: brew install sambamba
+
+category: Data
+tags: [bam, sam, genomics, ngs, bioinformatics, alignment]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Whole-genome BAM sort, merge, and duplicate marking dominate wall
+  time on large cohorts when tools stay single-threaded. sambamba
+  uses multicore D code for the same SAM/BAM tasks so centers cut
+  preprocessing hours without changing downstream VCF callers.
+
+use_cases:
+  - Sort and index multi-lane WGS BAM files with all available cores
+  - Mark duplicates on merged sample BAMs before variant calling
+  - Filter or slice BAM regions in a streaming pipeline
+  - Merge lane-level alignments into a sample-level BAM

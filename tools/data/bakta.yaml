@@ -1,0 +1,26 @@
+name: Bakta
+description: Bakta annotates bacterial genomes, MAGs, and plasmids in a local, taxonomy-independent pipeline. It writes GFF3 and INSDC files with UniRef-backed CDS identifiers so labs can submit and compare assemblies without running NCBI PGAP.
+tagline: Rapid annotation of bacterial genomes and MAGs
+
+github_url: https://github.com/oschwengers/bakta
+website_url: https://github.com/oschwengers/bakta
+docs_url: https://github.com/oschwengers/bakta
+install_command: pip install bakta
+
+category: Data
+tags: [python, genomics, annotation, bacteria, mag, bioinformatics]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Bacterial genome annotation is a choice between slow cloud PGAP and
+  older local tools that lack stable protein IDs. Bakta runs offline
+  with a versioned UniRef database and FAIR dbxrefs so MAG and isolate
+  pipelines get submission-ready GFF3 without NCBI round-trips.
+
+use_cases:
+  - Annotate isolate genomes to GenBank-ready GFF3 and EMBL files
+  - Label CDS in metagenome-assembled genomes with UniRef identifiers
+  - Merge AMR and virulence expert hits into a single annotation pass
+  - Standardize plasmid annotation across a surveillance collection
