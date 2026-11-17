@@ -1,0 +1,26 @@
+name: Palantir
+description: Palantir infers single-cell trajectories and branch probabilities from diffusion maps. It models differentiation as a Markov process so labs can recover fate trends and gene dynamics without forcing cells onto a single tree.
+tagline: Single-cell trajectory and fate probabilities
+
+github_url: https://github.com/dpeerlab/Palantir
+website_url: https://palantir.readthedocs.io
+docs_url: https://palantir.readthedocs.io
+install_command: pip install palantir
+
+category: Data
+tags: [python, single-cell, trajectory, fate, scanpy, bioinformatics]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Branching differentiation is poorly captured by one pseudotime
+  axis. Palantir builds a diffusion Markov model so labs get
+  waypoint trends and branch probabilities instead of a handmade
+  lineage tree.
+
+use_cases:
+  - Infer a differentiation trajectory from a single-cell embedding
+  - Compute branch probabilities toward multiple terminal fates
+  - Plot gene expression trends along Palantir pseudotime
+  - Identify early cells that commit to a lineage

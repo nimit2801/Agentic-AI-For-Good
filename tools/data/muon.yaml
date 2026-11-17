@@ -1,0 +1,26 @@
+name: muon
+description: muon is a multimodal omics framework on AnnData and MuData. It stores RNA, ATAC, CITE-Seq, and other assays in one object so Python pipelines can analyze multiome experiments without juggling disconnected AnnData files.
+tagline: Multimodal omics on AnnData and MuData
+
+github_url: https://github.com/scverse/muon
+website_url: https://muon.scverse.org
+docs_url: https://muon.readthedocs.io
+install_command: pip install muon
+
+category: Data
+tags: [python, multimodal, single-cell, anndata, mudata, scverse]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Multiome experiments split RNA and ATAC into separate AnnData
+  objects, so joint QC and neighbors fall apart. muon wraps assays
+  in MuData so labs run multimodal neighbors, WNN-style fusion,
+  and per-modality plots from one Python object.
+
+use_cases:
+  - Combine scRNA and scATAC AnnData into a MuData object
+  - Run multimodal neighbors on CITE-Seq protein plus RNA
+  - Plot per-modality embeddings from a shared cell barcode
+  - Feed multiome data into scverse tools without file juggling

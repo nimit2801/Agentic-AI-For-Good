@@ -1,0 +1,24 @@
+name: Signac
+description: Signac is an R toolkit for single-cell chromatin data. It extends Seurat with peak-matrix QC, motif analysis, and scATAC workflows so labs can analyze 10x ATAC and multiome experiments in the same object model as RNA.
+tagline: Single-cell chromatin analysis in R
+
+github_url: https://github.com/stuart-lab/signac
+website_url: https://stuartlab.org/signac/
+docs_url: https://stuartlab.org/signac/
+
+category: Data
+tags: [r, single-cell, atac-seq, chromatin, seurat, bioinformatics]
+pricing: free
+is_open_source: true
+
+problem_solved: |
+  scATAC peak matrices do not fit Seurat RNA workflows without a
+  chromatin-aware object. Signac stores fragments and peaks beside
+  Seurat assays so labs run QC, motif, and linkage analysis without
+  exporting to a second toolkit.
+
+use_cases:
+  - Load 10x scATAC fragment files into a Seurat-compatible assay
+  - Call motifs and gene activity scores from peak matrices
+  - Integrate scATAC with scRNA in a multiome Seurat object
+  - Visualize coverage tracks at a locus for cluster-level QC
