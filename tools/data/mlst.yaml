@@ -1,0 +1,24 @@
+name: mlst
+description: mlst assigns PubMLST sequence types by scanning contig or genome files against classical MLST schemes. It reports scheme, ST, and allele IDs for bacterial isolates so surveillance pipelines can type assemblies without a web form.
+tagline: PubMLST sequence typing from assembled genomes
+
+github_url: https://github.com/tseemann/mlst
+docs_url: https://github.com/tseemann/mlst
+
+category: Data
+tags: [bioinformatics, mlst, bacteria, typing, genomics, surveillance]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Manual PubMLST lookups do not scale to isolate batches. mlst BLAST-searches
+  assembled FASTA, GenBank, or EMBL files against bundled schemes and
+  prints scheme, ST, and alleles so labs can type Staphylococcus,
+  Salmonella, and other pathogens in one command.
+
+use_cases:
+  - Type a bacterial contig FASTA against the matching PubMLST scheme
+  - Batch-scan a directory of isolate assemblies and emit TSV or CSV
+  - Report novel or partial allele calls when an ST is not yet assigned
+  - Label compressed GenBank or FASTA genomes in a surveillance pipeline

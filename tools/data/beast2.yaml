@@ -1,0 +1,25 @@
+name: BEAST2
+description: BEAST2 infers time-measured phylogenies from molecular sequences with Bayesian MCMC. Strict and relaxed clocks, plus a package ecosystem, let labs date trees and test evolutionary hypotheses without conditioning on one topology.
+tagline: Bayesian MCMC for time-measured phylogenies
+
+github_url: https://github.com/CompEvol/beast2
+website_url: https://www.beast2.org
+docs_url: https://www.beast2.org
+
+category: Data
+tags: [bioinformatics, phylogenetics, bayesian, mcmc, evolution, sequences]
+pricing: free
+is_open_source: true
+license: LGPL-2.1
+
+problem_solved: |
+  Point-estimate trees hide dating uncertainty. BEAST2 samples rooted,
+  time-measured phylogenies with molecular clocks so posterior trees,
+  divergence times, and evolutionary models can be compared without
+  locking the analysis to a single topology.
+
+use_cases:
+  - Infer a time-calibrated phylogeny from aligned nucleotide or amino-acid sequences
+  - Compare strict versus relaxed clock models on the same alignment
+  - Date outbreak or species trees with fossil or sampling-time calibrations
+  - Run BEAUti to build an XML analysis and Tracer to inspect MCMC output

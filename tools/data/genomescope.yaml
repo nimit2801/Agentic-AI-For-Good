@@ -1,0 +1,25 @@
+name: GenomeScope
+description: GenomeScope estimates genome size, heterozygosity, and repetitiveness from a k-mer histogram of unassembled reads. Version 2.0 fits polyploid mixture models so labs can profile diploids and polyploids before they spend compute on assembly.
+tagline: Reference-free genome size and heterozygosity from k-mers
+
+github_url: https://github.com/tbenavi1/genomescope2.0
+website_url: http://genomescope.org/genomescope2.0
+docs_url: https://github.com/tbenavi1/genomescope2.0
+
+category: Data
+tags: [bioinformatics, genomics, k-mers, genome-size, heterozygosity, polyploid]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Assembly teams need genome size and heterozygosity before they pick
+  a strategy, but older profilers assume diploids. GenomeScope 2.0 fits
+  a polyploid-aware k-mer model on KMC or Jellyfish histograms so
+  coverage, ploidy, and repeat content are estimated from reads alone.
+
+use_cases:
+  - Estimate haploid genome size from an Illumina k-mer histogram before assembly
+  - Fit heterozygosity and repetitiveness for diploid or polyploid samples
+  - Run the web app at genomescope.org when a command-line R install is unavailable
+  - Compare k-mer models across candidate k values after counting with KMC
