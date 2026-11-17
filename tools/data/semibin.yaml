@@ -1,0 +1,26 @@
+name: SemiBin
+description: SemiBin bins metagenomic contigs into MAGs with self-supervised deep learning. It uses siamese networks on short and long reads so MAG pipelines can recover more complete genomes across environments without extra labeled data.
+tagline: Deep-learning binning for metagenome-assembled genomes
+
+github_url: https://github.com/BigDataBiology/SemiBin
+website_url: https://semibin.readthedocs.io
+docs_url: https://semibin.readthedocs.io
+install_command: pip install semibin
+
+category: Data
+tags: [python, bioinformatics, metagenomics, MAG, binning, deep-learning, genomics]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Reference-based binning fails on novel microbes and mixed samples.
+  SemiBin trains a siamese network on contig composition and coverage
+  so MAG recovery works for short and long reads across gut, soil, and
+  ocean datasets without environment-specific labels.
+
+use_cases:
+  - Bin a single-sample metagenome with a pretrained environment model
+  - Recover MAGs from long-read assemblies with SemiBin2
+  - Run multi-sample binning across related shotgun libraries
+  - Improve MAG completeness after SPAdes or Flye assembly
