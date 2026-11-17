@@ -1,0 +1,26 @@
+name: wtdbg2
+description: wtdbg2 is a de novo assembler for PacBio and Nanopore long noisy reads. It builds a fuzzy Bruijn graph without a separate error-correction step, so large genomes assemble faster than many overlap-layout assemblers.
+tagline: Fast long-read assembler using a fuzzy Bruijn graph
+
+github_url: https://github.com/ruanjue/wtdbg2
+website_url: https://github.com/ruanjue/wtdbg2
+docs_url: https://github.com/ruanjue/wtdbg2
+install_command: conda install -c bioconda wtdbg
+
+category: Data
+tags: [c, bioinformatics, genomics, assembly, long-read, pacbio, nanopore]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Overlap-layout assemblers are slow on large long-read genomes because
+  they error-correct then overlap every read. wtdbg2 assembles noisy
+  PacBio and Nanopore reads via a fuzzy Bruijn graph, so human-scale
+  genomes finish faster with comparable contig accuracy.
+
+use_cases:
+  - Assemble a bacterial or eukaryotic genome from PacBio or ONT reads
+  - Run a fast long-read draft before polishing with short reads
+  - Compare fuzzy Bruijn assemblies against Canu or Flye on the same data
+  - Generate consensus contigs with wtpoa-cns after the layout step

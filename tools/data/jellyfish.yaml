@@ -1,0 +1,26 @@
+name: Jellyfish
+description: Jellyfish counts k-mers in DNA sequences with a lock-free hash table. Genome size estimates, error profiles, and de Bruijn graphs start from those counts without a slower k-mer counter.
+tagline: Fast lock-free k-mer counting for DNA sequences
+
+github_url: https://github.com/gmarcais/Jellyfish
+website_url: https://github.com/gmarcais/Jellyfish
+docs_url: https://github.com/gmarcais/Jellyfish
+install_command: conda install -c bioconda jellyfish
+
+category: Data
+tags: [cpp, bioinformatics, genomics, kmer, assembly, counting]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Naive k-mer counting blows memory and time on large shotgun datasets,
+  which blocks genome-size estimates and error histograms. Jellyfish
+  uses a lock-free hash table so those counts finish quickly enough to
+  feed assembly and QC pipelines.
+
+use_cases:
+  - Count k-mers in a genome or shotgun library for size estimation
+  - Build a k-mer histogram to inspect sequencing error modes
+  - Dump a k-mer database for downstream de Bruijn graph tools
+  - Compare k-mer spectra across libraries before assembly
