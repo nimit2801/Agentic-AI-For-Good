@@ -1,0 +1,26 @@
+name: sourmash
+description: sourmash compares genomic and metagenomic datasets with k-mer sketches. It estimates containment and similarity so large sequence collections can be searched without aligning every read to every genome.
+tagline: k-mer sketches for genomic search and comparison
+
+github_url: https://github.com/sourmash-bio/sourmash
+website_url: https://sourmash.bio/
+docs_url: https://sourmash.readthedocs.io
+install_command: pip install sourmash
+
+category: Data
+tags: [python, bioinformatics, metagenomics, k-mer, sketches, ngs]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Comparing many genomes or metagenomes by alignment does not
+  scale. sourmash builds compact k-mer sketches so labs can
+  search, cluster, and taxonomically gather sequence datasets
+  from FracMinHash signatures instead of raw FASTA.
+
+use_cases:
+  - Sketch a metagenome and search it against a genome collection
+  - Estimate containment between MAG bins and reference genomes
+  - Cluster isolate genomes by k-mer similarity
+  - Gather taxonomic matches from a sourmash database

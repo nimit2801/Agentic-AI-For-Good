@@ -1,0 +1,25 @@
+name: Filtlong
+description: Filtlong quality-filters long reads for assembly and mapping. It scores Oxford Nanopore and PacBio reads by length and accuracy so pipelines keep the best subset of a noisy FASTQ instead of using every read.
+tagline: Quality filter for long-read FASTQ
+
+github_url: https://github.com/rrwick/Filtlong
+website_url: https://github.com/rrwick/Filtlong
+docs_url: https://github.com/rrwick/Filtlong
+
+category: Data
+tags: [bioinformatics, long-reads, nanopore, pacbio, qc, ngs]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Long-read FASTQ files mix high-quality sequence with short or
+  inaccurate reads that hurt assembly. Filtlong scores each read
+  and keeps a length-and-quality subset so Nanopore and PacBio
+  pipelines start from cleaner input.
+
+use_cases:
+  - Keep the highest-quality 500 Mb of a Nanopore FASTQ before assembly
+  - Filter PacBio reads by length and identity prior to mapping
+  - Downsample a noisy long-read set to a target bases budget
+  - Trim and split low-quality long reads as a QC step

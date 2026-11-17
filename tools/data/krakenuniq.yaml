@@ -1,0 +1,25 @@
+name: KrakenUniq
+description: KrakenUniq classifies metagenomic reads with Kraken-style k-mers plus unique k-mer coverage. It reduces false-positive taxa so pathogen and microbiome studies can trust low-abundance calls instead of raw Kraken hits.
+tagline: Metagenomic classifier with unique k-mer counts
+
+github_url: https://github.com/fbreitwieser/krakenuniq
+website_url: https://github.com/fbreitwieser/krakenuniq
+docs_url: https://github.com/fbreitwieser/krakenuniq
+
+category: Data
+tags: [bioinformatics, metagenomics, taxonomy, k-mer, pathogen, ngs]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Standard Kraken often reports taxa that have almost no unique
+  sequence support. KrakenUniq counts distinct k-mers per taxon
+  so low-abundance pathogen calls can be separated from noise
+  without a large extra memory cost.
+
+use_cases:
+  - Classify clinical metagenomes while down-weighting false-positive taxa
+  - Distinguish low-abundance pathogens from Kraken noise
+  - Run KrakenUniq on a laptop with the preload-size option
+  - Compare unique k-mer coverage across microbiome samples
