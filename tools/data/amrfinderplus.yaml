@@ -1,0 +1,24 @@
+name: AMRFinderPlus
+description: AMRFinderPlus finds acquired antimicrobial resistance genes, point mutations, and selected virulence and stress genes in assembled bacterial DNA or proteins. NCBI curates the Reference Gene Catalog so isolate WGS can be screened without a custom BLAST database.
+tagline: NCBI gene finder for AMR, virulence, and stress
+
+github_url: https://github.com/ncbi/amr
+docs_url: https://github.com/ncbi/amr/wiki
+
+category: Data
+tags: [bioinformatics, amr, bacteria, genomics, virulence, ncbi]
+pricing: free
+is_open_source: true
+license: Public Domain
+
+problem_solved: |
+  Homegrown BLAST hits against resistance FASTA files drift as
+  nomenclature changes. AMRFinderPlus pairs NCBI's curated gene catalog
+  with protein and nucleotide search, plus organism-specific point
+  mutations, so surveillance pipelines report comparable AMR genotypes.
+
+use_cases:
+  - Screen assembled bacterial contigs for acquired AMR genes
+  - Detect species-specific resistance point mutations in proteins
+  - Report virulence and stress genes for curated organisms alongside AMR
+  - Update the Reference Gene Catalog and re-run a batch of isolate genomes

@@ -1,0 +1,26 @@
+name: CellTypist
+description: CellTypist annotates scRNA-seq cells with logistic regression models trained on curated atlases. Built-in immune models and custom classifiers transfer labels across datasets so clustering notebooks get consistent cell-type names.
+tagline: Automated cell type labels for scRNA-seq
+
+github_url: https://github.com/Teichlab/celltypist
+website_url: https://www.celltypist.org
+docs_url: https://celltypist.readthedocs.io
+
+category: Data
+tags: [python, scrna-seq, cell-types, annotation, immunology, single-cell]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: pip install celltypist
+
+problem_solved: |
+  Manual cluster annotation does not transfer across studies. CellTypist
+  applies SGD logistic models, including immune-focused atlases, so
+  cells get predicted types and majority-voted cluster labels without
+  redrawing marker heatmaps for every dataset.
+
+use_cases:
+  - Annotate an AnnData object with a built-in immune CellTypist model
+  - Train a custom model on labeled scRNA-seq and apply it to a new study
+  - Majority-vote predicted labels onto Leiden or Louvain clusters
+  - Transfer cell-type labels across datasets in a large atlas integration

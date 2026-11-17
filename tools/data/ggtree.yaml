@@ -1,0 +1,25 @@
+name: ggtree
+description: ggtree extends ggplot2 to visualize and annotate phylogenetic trees. It maps associated data onto circular, rectangular, and unrooted layouts so papers can combine trees, alignments, and trait heatmaps in one grammar-of-graphics figure.
+tagline: ggplot2 grammar for phylogenetic tree figures
+
+github_url: https://github.com/YuLab-SMU/ggtree
+website_url: https://bioconductor.org/packages/ggtree/
+docs_url: https://yulab-smu.top/treedata-book/
+
+category: Data
+tags: [r, phylogenetics, visualization, ggplot2, bioconductor, trees]
+pricing: free
+is_open_source: true
+license: Artistic-2.0
+
+problem_solved: |
+  Base tree viewers export static figures that are hard to combine with
+  experimental data. ggtree treats trees as ggplot objects so bootstrap
+  values, alignments, and trait matrices can be layered, faceted, and
+  themed like any other grammar-of-graphics plot.
+
+use_cases:
+  - Draw a circular or rectangular phylogeny with bootstrap support as ggplot layers
+  - Annotate clades with heatmaps of traits or sequence alignments
+  - Combine multiple trees or time-scaled BEAST output in one figure
+  - Export publication figures from R Markdown using ggtree and ggtreeExtra
