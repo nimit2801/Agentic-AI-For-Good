@@ -1,0 +1,26 @@
+name: MACS
+description: MACS is a model-based peak caller for ChIP-Seq and related assays. It estimates fragment length and local background so labs can call enriched genomic regions from BAM or BED reads without ad-hoc window counting.
+tagline: Model-based peak calling for ChIP-Seq
+
+github_url: https://github.com/macs3-project/MACS
+website_url: https://macs3-project.github.io/MACS/
+docs_url: https://macs3-project.github.io/MACS/
+install_command: pip install MACS3
+
+category: Data
+tags: [python, chip-seq, peak-calling, genomics, bioinformatics, sequencing]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  ChIP-Seq peaks are not uniform windows. Background and fragment size
+  vary by experiment, so naive coverage thresholds overcall noise.
+  MACS models local Poisson background and fragment distribution so
+  enrichment calls are comparable across samples and histone marks.
+
+use_cases:
+  - Call transcription-factor peaks from aligned ChIP-Seq BAM files
+  - Find broad histone-mark domains with MACS broad-peak mode
+  - Compare treatment versus control libraries before motif analysis
+  - Export narrowPeak files for downstream annotation and ML features

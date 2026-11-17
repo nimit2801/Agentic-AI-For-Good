@@ -1,0 +1,25 @@
+name: IGV
+description: IGV is the Broad Institute Integrative Genomics Viewer, a desktop tool for exploring alignments, variants, and annotations at genomic scale. It loads BAM, VCF, and bigWig tracks so researchers can inspect loci without writing custom genome browsers.
+tagline: Desktop genome browser for alignments and variants
+
+github_url: https://github.com/igvteam/igv
+website_url: https://igv.org
+docs_url: https://igv.org/doc/desktop/
+
+category: Data
+tags: [java, genomics, visualization, bam, vcf, bioinformatics, genome-browser]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Sequencing QC and variant review need a fast local browser for BAM
+  and VCF, not a web app that cannot open a 100 GB alignment. IGV
+  streams large tracks, overlays annotations, and jumps to loci so
+  labs inspect calls and coverage without exporting screenshots from R.
+
+use_cases:
+  - Inspect BAM pileups at a variant site during VCF review
+  - Overlay RNA-Seq coverage with gene annotations for isoform checks
+  - Load multiple bigWig tracks to compare ChIP or ATAC signal at a locus
+  - Screenshot a region with alignments and variants for a paper figure
