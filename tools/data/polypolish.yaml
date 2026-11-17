@@ -1,0 +1,26 @@
+name: Polypolish
+description: Polypolish polishes long-read bacterial assemblies with short reads using all-mapping SAM alignments rather than a single best hit. That lets it repair errors in repeats while staying conservative so it rarely introduces new substitutions.
+tagline: Short-read polishing that can fix repeat errors
+
+github_url: https://github.com/rrwick/Polypolish
+website_url: https://github.com/rrwick/Polypolish
+docs_url: https://github.com/rrwick/Polypolish/wiki
+install_command: conda install -c conda-forge -c bioconda polypolish
+
+category: Data
+tags: [rust, bioinformatics, genomics, polishing, assembly, short-read, bacteria]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Short-read polishers that keep only the best alignment miss errors inside
+  repeats because reads map equally well to many copies. Polypolish uses
+  all-mapping SAM files so it can correct those repeats without over-editing
+  unique sequence, which keeps long-read bacterial assemblies more accurate.
+
+use_cases:
+  - Polish a Nanopore or PacBio bacterial assembly with Illumina reads
+  - Repair substitutions in repeat regions that single-best-hit polishers miss
+  - Run a conservative polish step after Trycycler or Flye consensus
+  - Compare all-mapping polish results against Pilon or Medaka
