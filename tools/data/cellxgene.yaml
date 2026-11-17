@@ -1,0 +1,26 @@
+name: cellxgene
+description: CELLxGENE Annotate is an interactive explorer for single-cell transcriptomics. It visualizes AnnData datasets of up to a million cells in the browser so biologists can cross-filter genes, cell types, and embeddings without writing custom plotting code.
+tagline: Interactive explorer for single-cell AnnData
+
+github_url: https://github.com/chanzuckerberg/cellxgene
+website_url: https://cellxgene.cziscience.com
+docs_url: https://github.com/chanzuckerberg/cellxgene-documentation
+install_command: pip install cellxgene
+
+category: Data
+tags: [python, single-cell, anndata, visualization, transcriptomics, bioinformatics]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Single-cell datasets are too large for static scatter plots, so biologists
+  wait on custom dashboards. CELLxGENE Annotate loads AnnData and lets users
+  cross-filter embeddings, genes, and cell metadata in the browser at
+  million-cell scale without a bespoke viz stack.
+
+use_cases:
+  - Launch a local explorer on an h5ad file to inspect clusters and marker genes
+  - Cross-filter cell types against gene expression for QC of an atlas
+  - Share a formatted AnnData dataset for collaborators to browse without Jupyter
+  - Explore Human Cell Atlas-style embeddings before training a cell-type model
