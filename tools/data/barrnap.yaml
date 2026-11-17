@@ -1,0 +1,25 @@
+name: Barrnap
+description: Barrnap predicts ribosomal RNA genes in bacterial, archaeal, and eukaryotic genomes using HMMER. It emits GFF so microbial annotation pipelines can mark 5S, 16S, and 23S loci without running a full RNAmmer stack.
+tagline: Rapid rRNA gene prediction for microbes
+
+github_url: https://github.com/tseemann/barrnap
+website_url: https://github.com/tseemann/barrnap
+docs_url: https://github.com/tseemann/barrnap
+
+category: Data
+tags: [bioinformatics, rrna, annotation, bacteria, genomics, hmm]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Genome annotation needs rRNA coordinates before submitting a
+  bacterial record. RNAmmer is slow to install. Barrnap wraps HMMER
+  models for 5S, 16S, and 23S so annotation pipelines can mark rRNA
+  loci on draft assemblies in seconds.
+
+use_cases:
+  - Predict 16S and 23S loci on a bacterial draft genome
+  - Emit rRNA GFF for a Prokka-style annotation pipeline
+  - Screen metagenomic bins for ribosomal RNA genes
+  - Extract 16S sequences from assemblies for taxonomy
