@@ -1,0 +1,26 @@
+name: IQ-TREE
+description: IQ-TREE infers phylogenetic trees from DNA or protein alignments using maximum likelihood. It pairs ModelFinder substitution-model selection with ultrafast bootstrap so phylogenomic studies can test and date trees without running slower ML packages on every dataset.
+tagline: Maximum-likelihood phylogenetics with ModelFinder
+
+github_url: https://github.com/iqtree/iqtree2
+website_url: http://www.iqtree.org
+docs_url: http://www.iqtree.org/doc/
+install_command: brew install iqtree3
+
+category: Data
+tags: [bioinformatics, phylogenetics, maximum-likelihood, genomics, alignment, c++]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Species and gene trees need a substitution model and support values,
+  not a neighbor-joining sketch. IQ-TREE selects models with ModelFinder
+  and reports ultrafast bootstrap so phylogenomic matrices can be dated
+  and tested without waiting on slower maximum-likelihood packages.
+
+use_cases:
+  - Infer a maximum-likelihood tree from a concatenated protein alignment
+  - Run ModelFinder to pick a substitution model before tree search
+  - Compute ultrafast bootstrap support on a multi-locus phylogenomic matrix
+  - Date a species tree with partitioned models on DNA alignments

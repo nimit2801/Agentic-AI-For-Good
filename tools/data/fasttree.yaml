@@ -1,0 +1,25 @@
+name: FastTree
+description: FastTree builds approximately-maximum-likelihood phylogenetic trees from large nucleotide or protein alignments in minutes. It trades a small accuracy cost for speed so microbiome and metagenomic studies can tree thousands of sequences that full ML methods cannot finish.
+tagline: Approximate ML trees for very large alignments
+
+github_url: https://github.com/morgannprice/fasttree
+website_url: http://www.microbesonline.org/fasttree/
+docs_url: http://www.microbesonline.org/fasttree/
+
+category: Data
+tags: [bioinformatics, phylogenetics, metagenomics, microbiome, alignment, c]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Full maximum-likelihood search is too slow for alignments with tens
+  of thousands of OTUs or proteins. FastTree uses neighbor-joining and
+  a local ML refinement so microbiome and metagenome studies can produce
+  usable trees in minutes instead of days.
+
+use_cases:
+  - Tree thousands of 16S OTUs from a microbiome survey
+  - Draft a protein family tree before a slower IQ-TREE run
+  - Build a metagenomic gene tree from a large nucleotide MSA
+  - Compare approximate ML topologies against RAxML on a shared alignment
