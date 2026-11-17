@@ -1,0 +1,25 @@
+name: OrthoFinder
+description: OrthoFinder infers orthogroups, gene trees, and a rooted species tree from proteomes. It is a standard comparative-genomics tool for assigning orthologs across dozens of genomes without a prebuilt orthology database.
+tagline: Phylogenetic orthology inference from proteomes
+
+github_url: https://github.com/davidemms/OrthoFinder
+website_url: https://davidemms.github.io
+docs_url: https://davidemms.github.io
+
+category: Data
+tags: [python, bioinformatics, orthology, comparative-genomics, phylogenetics, genomics]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Reciprocal BLAST orthologs miss many-to-many relationships.
+  OrthoFinder builds gene trees and a species tree from input
+  proteomes so comparative studies get orthogroups, duplications,
+  and phylogenetic profiles without eggNOG or OrthoDB.
+
+use_cases:
+  - Infer orthogroups across a set of newly sequenced genomes
+  - Reconstruct a species tree from proteomes of related taxa
+  - Count gene duplications and losses on a phylogenetic tree
+  - Assign orthologs before comparative expression analysis
