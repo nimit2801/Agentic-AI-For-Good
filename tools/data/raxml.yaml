@@ -1,0 +1,26 @@
+name: RAxML
+description: RAxML (RAxML-NG) infers maximum-likelihood phylogenetic trees from large DNA and protein alignments. It scales partitioned models and bootstrap support to phylogenomic matrices so labs can build species trees without the original RAxML memory and runtime limits.
+tagline: Next-generation maximum-likelihood phylogenetic trees
+
+github_url: https://github.com/amkozlov/raxml-ng
+website_url: https://cme.h-its.org/exelixis/web/software/raxml/
+docs_url: https://github.com/amkozlov/raxml-ng/wiki
+install_command: brew install raxml-ng
+
+category: Data
+tags: [bioinformatics, phylogenetics, maximum-likelihood, genomics, c, alignment]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Classic RAxML hits memory and runtime walls on modern phylogenomic
+  alignments. RAxML-NG rebuilds the same maximum-likelihood search with
+  better partitioning, checkpointing, and parallel scaling so species
+  trees and bootstrap support finish on matrices that stalled before.
+
+use_cases:
+  - Build a partitioned ML tree from a multi-gene DNA alignment
+  - Run bootstrap replicates on a large protein phylogenomic matrix
+  - Restart a long tree search from a RAxML-NG checkpoint
+  - Compare ML topologies against FastTree drafts on the same MSA

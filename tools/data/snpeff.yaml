@@ -1,0 +1,25 @@
+name: SnpEff
+description: SnpEff annotates genomic variants in VCF files with gene, transcript, and protein effects. It predicts impact classes across thousands of genomes so NGS pipelines can filter coding and splice-site mutations without looking up each variant by hand.
+tagline: Variant effect prediction for VCF files
+
+github_url: https://github.com/pcingola/SnpEff
+website_url: https://pcingola.github.io/SnpEff/
+docs_url: https://pcingola.github.io/SnpEff/snpeff/introduction/
+
+category: Data
+tags: [java, bioinformatics, genomics, variant-annotation, vcf, ngs]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Raw VCF calls do not say whether a SNP changes a protein or a splice
+  site. SnpEff maps variants onto transcripts and assigns impact so
+  pipelines can keep high-effect coding mutations and drop silent
+  changes without manual genome-browser lookup.
+
+use_cases:
+  - Annotate a GATK VCF with gene names and protein-level effects
+  - Filter high-impact coding and splice-site variants in a WGS cohort
+  - Build a SnpEff database for a non-model organism reference
+  - Combine SnpEff impact scores with GATK Best Practices filtering
