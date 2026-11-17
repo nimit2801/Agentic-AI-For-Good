@@ -1,0 +1,25 @@
+name: FastANI
+description: FastANI estimates average nucleotide identity between whole genomes. It uses MashMap alignment-free mapping so labs can compare thousands of bacterial genomes and decide species boundaries without slow ANIb BLAST.
+tagline: Fast whole-genome ANI for microbial species
+
+github_url: https://github.com/ParBLiSS/FastANI
+website_url: https://github.com/ParBLiSS/FastANI
+docs_url: https://github.com/ParBLiSS/FastANI
+
+category: Data
+tags: [bioinformatics, genomics, ANI, bacteria, taxonomy, comparative-genomics]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Pairwise ANIb BLAST does not scale to thousands of genomes.
+  FastANI maps whole genomes with MashMap so species clusters and
+  contamination checks finish in minutes on a typical bacterial
+  isolate collection.
+
+use_cases:
+  - Compute pairwise ANI for a set of bacterial isolate genomes
+  - Cluster genomes at 95 percent ANI for species assignment
+  - Screen assemblies against a reference species set
+  - Compare MAG quality by ANI to the closest GTDB genome

@@ -1,0 +1,25 @@
+name: CD-HIT
+description: CD-HIT clusters protein or nucleotide sequences by identity to remove redundancy. It scales to large metagenomic gene catalogs so pipelines can shrink BLAST databases and pick representative sequences before annotation.
+tagline: Fast clustering to reduce sequence redundancy
+
+github_url: https://github.com/weizhongli/cdhit
+website_url: https://sites.google.com/view/cd-hit
+docs_url: https://github.com/weizhongli/cdhit/wiki
+
+category: Data
+tags: [bioinformatics, clustering, proteins, metagenomics, redundancy, genomics]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Duplicate sequences inflate BLAST databases and gene catalogs.
+  CD-HIT greedily clusters at a chosen identity so labs keep one
+  representative per group and cut search time without losing
+  the diversity they care about.
+
+use_cases:
+  - Cluster a protein FASTA at 90 percent identity before BLAST
+  - Dereplicate a metagenomic gene catalog to representative genes
+  - Reduce a nucleotide library before assembly or mapping
+  - Build non-redundant databases for annotation pipelines
