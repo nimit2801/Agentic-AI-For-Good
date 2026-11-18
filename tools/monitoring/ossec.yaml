@@ -1,0 +1,26 @@
+name: OSSEC
+description: Open-source host-based intrusion detection system that does log analysis, file integrity checks, rootkit detection, and active response. OSSEC watches servers that host training jobs and model APIs for unexpected file and log changes.
+tagline: Host-based intrusion detection with log and file integrity checks
+
+github_url: https://github.com/ossec/ossec-hids
+website_url: https://www.ossec.net
+docs_url: https://www.ossec.net/docs/
+
+category: Monitoring
+tags: [security, hids, log-analysis, integrity, alerting, linux]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  GPU nodes and model servers still need host intrusion detection.
+  OSSEC tails logs, checksums critical files, and alerts on rootkits
+  so a training box or inference host is watched without a heavy
+  commercial SIEM.
+
+use_cases:
+  - Watch file integrity on a GPU node that stores model weights
+  - Alert on suspicious SSH and sudo activity on training hosts
+  - Detect rootkits on self-hosted inference servers
+  - Centralize log analysis from a small ML cluster
+  - Trigger an active response when a critical config file changes

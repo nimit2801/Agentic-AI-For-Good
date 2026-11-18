@@ -1,0 +1,28 @@
+name: RecBole
+description: Unified Python library for building and benchmarking recommendation models. RecBole ships dozens of algorithms, datasets, and evaluation protocols so recsys experiments share one API instead of a pile of one-off trainers.
+tagline: Unified library for recommendation models and benchmarks
+
+github_url: https://github.com/RUCAIBox/RecBole
+website_url: https://recbole.io
+docs_url: https://recbole.io/docs
+
+install_command: pip install recbole
+
+category: Data
+tags: [python, recommendation, recsys, pytorch, benchmark, ranking]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Recsys papers reimplement loaders, metrics, and trainers for every
+  model. RecBole gives one PyTorch API over many algorithms and
+  datasets so a comparison uses the same split and metric instead of
+  incomparable custom scripts.
+
+use_cases:
+  - Benchmark several recommendation models on a public dataset
+  - Train a sequential recommender from a RecBole config
+  - Evaluate ranking metrics under a shared protocol
+  - Swap datasets without rewriting the training loop
+  - Prototype a new recsys idea on top of RecBole trainers

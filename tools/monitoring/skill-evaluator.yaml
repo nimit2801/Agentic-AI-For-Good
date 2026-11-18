@@ -1,0 +1,28 @@
+name: Skill Evaluator
+description: NVIDIA framework for evaluating AI agent skills and plugins with quality gates, overlap detection, and live agent tests. Skill Evaluator measures whether a skill actually changes agent behavior before you ship it.
+tagline: Evaluate AI agent skills with quality gates and live tests
+
+github_url: https://github.com/NVIDIA/SkillEvaluator
+website_url: https://docs.nvidia.com/skills/skillevaluator/
+docs_url: https://docs.nvidia.com/skills/skillevaluator/
+
+install_command: pip install skillevaluator
+
+category: Monitoring
+tags: [python, agents, skills, evaluation, nvidia, security]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Agent skills can overlap, fail silently, or change behavior in ways
+  a README never shows. Skill Evaluator runs quality gates, overlap
+  checks, and live agent tests so a skill is measured before it is
+  installed into Claude Code, Codex, or similar harnesses.
+
+use_cases:
+  - Score a new agent skill against quality gates before install
+  - Detect semantic overlap between two skills in a library
+  - Generate a synthetic evaluation set for a skill
+  - Measure how a skill changes live agent behavior
+  - Scan skills for security issues as part of a CI gate
