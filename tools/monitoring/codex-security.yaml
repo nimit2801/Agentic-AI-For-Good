@@ -1,0 +1,28 @@
+name: Codex Security
+description: OpenAI CLI and TypeScript SDK that finds, validates, and helps fix security vulnerabilities in code. Codex Security is a dedicated scanner, not the Codex coding agent, and plugs into DevSecOps workflows.
+tagline: OpenAI CLI and SDK for finding and fixing code vulnerabilities
+
+github_url: https://github.com/openai/codex-security
+website_url: https://developers.openai.com/codex/security
+docs_url: https://developers.openai.com/codex/security
+
+install_command: npm install -g @openai/codex-security
+
+category: Monitoring
+tags: [security, cli, typescript, openai, vulnerability-scanning, devsecops]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Coding agents ship patches faster than security review can keep up.
+  Codex Security scans for vulnerabilities and helps validate fixes so
+  a repo gets an OpenAI-backed security pass without treating the
+  Codex coding agent as a scanner.
+
+use_cases:
+  - Scan a repository for known vulnerability classes from the CLI
+  - Validate that a proposed patch actually closes a finding
+  - Call the TypeScript SDK from a CI security job
+  - Review agent-generated diffs before merge
+  - Track application-security issues alongside code review
