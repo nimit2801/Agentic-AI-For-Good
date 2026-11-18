@@ -1,0 +1,26 @@
+name: RTG Tools
+description: RTG Tools is a Java toolkit for VCF and sequence data, led by vcfeval, which compares variant calls at the haplotype level. It handles complex representations that position-based VCF diffs miss and can plot ROC curves from those comparisons.
+tagline: Haplotype-aware VCF comparison and sequence utilities
+
+github_url: https://github.com/RealTimeGenomics/rtg-tools
+docs_url: https://github.com/RealTimeGenomics/rtg-tools
+install_command: conda install -c bioconda rtg-tools
+
+category: Data
+tags: [java, bioinformatics, vcf, variant-calling, benchmarking, ngs]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Variant callers spell the same haplotype in different VCF
+  records, so a site-by-site diff overcounts errors. RTG vcfeval
+  checks whether genotypes reconstruct the same sequence on the
+  reference and writes ROC data so filtering thresholds can be
+  chosen from a fair comparison.
+
+use_cases:
+  - Compare a query VCF to a truth VCF with vcfeval
+  - Plot ROC curves from vcfeval score files with rocplot
+  - Benchmark complex indels that break position-based diffs
+  - Manipulate VCF and sequence files with the rest of RTG Tools

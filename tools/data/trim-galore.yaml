@@ -1,0 +1,26 @@
+name: Trim Galore
+description: Trim Galore is a single binary that adapter-trims, quality-trims, and filters NGS FASTQ or unaligned BAM in one pass. Version 2 bundles FastQC-style reporting so RRBS and standard Illumina libraries can be cleaned without a separate Cutadapt install.
+tagline: One-pass adapter and quality trimming for NGS reads
+
+github_url: https://github.com/FelixKrueger/TrimGalore
+website_url: https://www.trimgalore.com/
+docs_url: https://www.trimgalore.com/install/
+install_command: conda install -c bioconda trim-galore
+
+category: Data
+tags: [rust, bioinformatics, adapters, qc, ngs, fastq]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Adapter and quality trimming used to need Cutadapt plus FastQC
+  as separate installs. Trim Galore v2 runs adapter detection,
+  quality trimming, filtering, and optional QC in one pass over
+  FASTQ or unaligned BAM so a library can be cleaned in a single step.
+
+use_cases:
+  - Trim Illumina adapters from paired-end FASTQ files
+  - Quality-trim and filter RRBS bisulfite libraries
+  - Produce FastQC-style reports from the bundled library
+  - Trim unaligned BAM without converting to FASTQ first
