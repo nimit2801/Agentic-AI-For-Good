@@ -1,0 +1,25 @@
+name: DiffBind
+description: Bioconductor package for differential binding analysis of ChIP-seq peak sets. DiffBind counts reads in consensus peaks and tests occupancy so labs find condition-specific binding without treating peaks as RNA-seq genes.
+tagline: Differential binding from ChIP-seq peak sets
+
+website_url: https://bioconductor.org/packages/DiffBind/
+docs_url: https://bioconductor.org/packages/release/bioc/html/DiffBind.html
+install_command: BiocManager::install("DiffBind")
+
+category: Data
+tags: [r, bioconductor, chip-seq, differential-binding, peaks, bioinformatics]
+pricing: free
+is_open_source: true
+license: Artistic-2.0
+
+problem_solved: |
+  Peak callers emit per-sample BED files that do not say which
+  sites change occupancy. DiffBind builds a consensus peak set,
+  counts reads, and runs DESeq2 or edgeR so labs call differential
+  binding across ChIP-seq conditions with replicate stats.
+
+use_cases:
+  - Find differentially bound peaks between two ChIP-seq conditions
+  - Build a consensus peakset from MACS peak files and BAMs
+  - Plot occupancy PCA and heatmaps across ChIP replicates
+  - Export differentially bound sites for motif or gene annotation

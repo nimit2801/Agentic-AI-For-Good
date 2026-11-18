@@ -1,0 +1,25 @@
+name: limma
+description: Bioconductor linear-model package for microarray and RNA-seq differential expression. limma uses empirical Bayes shrinkage so labs test contrasts across complex designs without a custom statistics stack.
+tagline: Linear models for microarray and RNA-seq
+
+website_url: https://bioconductor.org/packages/limma/
+docs_url: https://bioconductor.org/packages/release/bioc/html/limma.html
+install_command: BiocManager::install("limma")
+
+category: Data
+tags: [r, bioconductor, microarray, rna-seq, differential-expression, bioinformatics]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Multi-factor expression designs need shared variance estimates
+  or every gene is underpowered. limma fits linear models with
+  empirical Bayes shrinkage so labs test contrasts, time courses,
+  and voom-transformed RNA-seq counts in one framework.
+
+use_cases:
+  - Fit a linear model to microarray intensities with a design matrix
+  - Run voom-limma differential expression on RNA-seq counts
+  - Test multiple contrasts after a factorial experiment
+  - Rank genes by moderated t-statistics for pathway input

@@ -1,0 +1,26 @@
+name: ChIPseeker
+description: Bioconductor package that annotates ChIP-seq and ATAC-seq peaks to genes and genomic features so labs compare peak sets and visualize occupancy without a custom interval-to-gene script.
+tagline: Annotate and visualize ChIP and ATAC peaks
+
+github_url: https://github.com/YuLab-SMU/ChIPseeker
+website_url: https://bioconductor.org/packages/ChIPseeker/
+docs_url: https://bioconductor.org/packages/release/bioc/html/ChIPseeker.html
+install_command: BiocManager::install("ChIPseeker")
+
+category: Data
+tags: [r, bioconductor, chip-seq, atac-seq, annotation, bioinformatics]
+pricing: free
+is_open_source: true
+license: Artistic-2.0
+
+problem_solved: |
+  Peak BED files do not say which gene or feature they hit, so
+  labs write one-off nearest-gene scripts that do not match.
+  ChIPseeker annotates peaks to TxDb features and plots coverage
+  so occupancy comparisons use one annotation grammar.
+
+use_cases:
+  - Annotate ChIP-seq peaks to the nearest gene and genomic region
+  - Compare peak overlap across conditions with upset or venn plots
+  - Plot average profile of peaks around transcription start sites
+  - Visualize ATAC-seq peak distribution across promoters and exons

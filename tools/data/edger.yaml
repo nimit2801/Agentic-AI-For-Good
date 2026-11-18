@@ -1,0 +1,25 @@
+name: edgeR
+description: Bioconductor package for differential expression of RNA-seq counts using empirical Bayes. edgeR estimates dispersion so labs call DE genes from small replicate designs without a full linear-model stack.
+tagline: Empirical Bayes RNA-seq differential expression
+
+website_url: https://bioconductor.org/packages/edgeR/
+docs_url: https://bioconductor.org/packages/release/bioc/html/edgeR.html
+install_command: BiocManager::install("edgeR")
+
+category: Data
+tags: [r, bioconductor, rna-seq, differential-expression, counts, bioinformatics]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  RNA-seq count tables have few replicates and extra Poisson
+  variation, so naive fold-change cutoffs overcall genes. edgeR
+  shares dispersion across genes with empirical Bayes so labs
+  get DE p-values that stay calibrated on small bulk designs.
+
+use_cases:
+  - Call differentially expressed genes from a bulk RNA-seq count matrix
+  - Estimate tagwise dispersion in a two-group experiment
+  - Run GLM-based DE with a simple design matrix
+  - Compare edgeR results against DESeq2 on the same counts
