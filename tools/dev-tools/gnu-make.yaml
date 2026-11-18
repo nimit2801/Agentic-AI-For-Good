@@ -1,0 +1,28 @@
+name: GNU Make
+description: GNU Make is the classic build driver that rebuilds targets from a Makefile when sources change. It still compiles C/C++ extensions, CUDA kernels, and dataset artifacts in ML repos that predate newer task runners.
+tagline: Rebuild targets from a Makefile when sources change
+
+github_url: https://github.com/mirror/make
+website_url: https://www.gnu.org/software/make/
+docs_url: https://www.gnu.org/software/make/manual/
+
+install_command: brew install make
+
+category: Dev Tools
+tags: [cli, gnu, build, makefile, c, cpp, toolchain]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Native extensions, CUDA kernels, and generated datasets still need a
+  rebuild only when inputs change. GNU Make encodes those dependencies in
+  a Makefile so incremental builds skip work that is already up to date,
+  without a heavier task runner.
+
+use_cases:
+  - Compile C or CUDA extensions as part of an ML package build
+  - Rebuild generated dataset files only when the source list changes
+  - Drive a multi-step preprocess then train recipe from one Makefile
+  - Cross-compile a native helper for Linux and macOS from the same rules
+  - Keep a research repo reproducible with documented make targets

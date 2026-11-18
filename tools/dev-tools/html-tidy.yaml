@@ -1,0 +1,28 @@
+name: HTML Tidy
+description: HTML Tidy is a command-line tool and library that cleans, pretty-prints, and validates HTML and XML. It fixes markup errors and emits modern HTML5 so scrapers, docs pipelines, and static generators start from well-formed pages.
+tagline: Clean, pretty-print, and validate HTML and XML
+
+github_url: https://github.com/htacg/tidy-html5
+website_url: https://www.html-tidy.org
+docs_url: https://api.html-tidy.org
+
+install_command: brew install tidy-html5
+
+category: Dev Tools
+tags: [html, xml, lint, cli, parsing, scraping]
+pricing: free
+is_open_source: true
+license: Zlib
+
+problem_solved: |
+  Crawled pages, exported docs, and generated HTML often contain broken
+  tags that break parsers and RAG chunkers. HTML Tidy repairs and
+  pretty-prints markup so downstream extractors see valid HTML5 instead
+  of a tag soup.
+
+use_cases:
+  - Clean crawled HTML before feeding it to a document parser
+  - Pretty-print generated HTML from a static site build
+  - Validate markup in a CI check for docs sites
+  - Convert messy XHTML exports into HTML5
+  - Normalize scraped pages before embedding or indexing
