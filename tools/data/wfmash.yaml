@@ -1,0 +1,25 @@
+name: wfmash
+description: Pangenome-scale DNA aligner that finds homology with MashMap minmers, then computes base-accurate alignments with the Wavefront Alignment algorithm. It handles gigabase genomes and sequence identity down to about 70%.
+tagline: Whole-genome alignments with MashMap and WFA
+
+github_url: https://github.com/waveygang/wfmash
+website_url: https://github.com/waveygang/wfmash
+docs_url: https://github.com/waveygang/wfmash#readme
+
+category: Data
+tags: [cpp, genomics, pangenome, alignment, mashmap, wfa, bioinformatics]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  All-to-all whole-genome alignment for pangenome graphs is too slow or too
+  approximate when identity is low. wfmash maps homologous segments with
+  MashMap, then refines them with WFA so teams can align hundreds of human
+  genomes into a pangenome without a custom mapping stack.
+
+use_cases:
+  - Align query genomes to a reference and write PAF for downstream graph building
+  - Run all-to-all alignments that seed pggb pangenome graphs
+  - Map divergent assemblies with automatic ANI-based identity thresholds
+  - Skip base alignment and keep approximate MashMap mappings for huge genomes

@@ -1,0 +1,25 @@
+name: SURVIVOR
+description: C++ toolkit for simulating, merging, comparing, and converting structural variants in VCF. SURVIVOR builds consensus SV call sets across callers and samples and evaluates SV pipelines on simulated data.
+tagline: Merge, compare, and simulate structural variant VCFs
+
+github_url: https://github.com/fritzsedlazeck/SURVIVOR
+website_url: https://github.com/fritzsedlazeck/SURVIVOR
+docs_url: https://github.com/fritzsedlazeck/SURVIVOR/wiki
+
+category: Data
+tags: [cpp, genomics, structural-variants, vcf, bioinformatics]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Structural variant callers disagree on breakpoints and sample overlap, so
+  teams cannot compare or union VCFs without custom scripts. SURVIVOR merges
+  and filters SV calls, converts common SV formats to VCF, and simulates SVs
+  so pipelines can be evaluated on known truth sets.
+
+use_cases:
+  - Merge SV VCFs from multiple callers into a consensus call set
+  - Compare structural variants across samples in a multi-sample VCF
+  - Simulate SVs and long reads to evaluate a variant calling pipeline
+  - Convert BED, BEDPE, or smap SV files into VCF

@@ -1,0 +1,26 @@
+name: Truvari
+description: Python toolkit for benchmarking, collapsing, and annotating structural variants in VCF. Truvari compares a comparison VCF against a truth set, then can refine and collapse redundant representations.
+tagline: Benchmark and collapse structural variant VCFs
+
+github_url: https://github.com/ACEnglish/truvari
+website_url: https://github.com/ACEnglish/truvari
+docs_url: https://truvari.readthedocs.io/en/latest/
+install_command: pip install truvari
+
+category: Data
+tags: [python, genomics, structural-variants, vcf, benchmarking, bioinformatics]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  SV callers report the same event with different breakpoints, alleles, and
+  genotypes, which breaks naive VCF comparison. Truvari matches variants with
+  configurable sequence and position thresholds, reports precision and recall,
+  and collapses redundant merged calls so SV benchmarks stay honest.
+
+use_cases:
+  - Benchmark a structural variant caller against a GIAB or other truth VCF
+  - Collapse redundant SV records after merging multi-sample VCFs
+  - Harmonize phased variant representations before a second comparison pass
+  - Annotate SV VCFs with extra sequence and region metadata
