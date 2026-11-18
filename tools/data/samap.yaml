@@ -1,0 +1,26 @@
+name: SAMap
+description: Python tool that maps scRNA-seq datasets from evolutionarily distant organisms so labs transfer cell types across species using BLAST-informed gene homology instead of one-to-one ortholog tables.
+tagline: Cross-species mapping for single-cell RNA-seq
+
+github_url: https://github.com/atarashansky/SAMap
+website_url: https://github.com/atarashansky/SAMap
+docs_url: https://github.com/atarashansky/SAMap
+install_command: pip install sc-samap
+
+category: Data
+tags: [python, single-cell, homology, comparative-genomics, scrna-seq, bioinformatics]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Cell-type labels do not transfer across distant species when gene
+  names diverge and one-to-one orthologs are sparse. SAMap combines
+  BLAST homology with manifold alignment so labs map homologous cell
+  types between organisms that do not share a simple gene table.
+
+use_cases:
+  - Map cell types between two evolutionarily distant scRNA-seq atlases
+  - Build a homology graph when one-to-one orthologs are missing
+  - Transfer annotations from a model organism to a non-model species
+  - Compare developmental trajectories across species manifolds
