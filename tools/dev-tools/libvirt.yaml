@@ -1,0 +1,23 @@
+name: libvirt
+description: "Open source API, daemon, and tools for managing virtualization hosts. libvirt talks to KVM, QEMU, Xen, and other hypervisors so teams can define VMs, networks, and storage in a consistent XML model instead of hypervisor-specific CLIs."
+tagline: "Virtualization API and tools for KVM and QEMU"
+github_url: https://github.com/libvirt/libvirt
+website_url: https://libvirt.org
+docs_url: https://libvirt.org/docs.html
+category: Dev Tools
+tags:
+  - virtualization
+  - kvm
+  - qemu
+  - linux
+  - infrastructure
+  - vms
+pricing: free
+is_open_source: true
+license: LGPL-2.1
+problem_solved: "GPU and CPU VMs for ML training sit on KVM or QEMU, but each hypervisor has its own CLI and XML dialect. Operators need one API to start domains, attach devices, and snapshot disks. libvirt is the common management layer used by virt-manager, OpenStack, and homelab GPU hosts to control virtual machines uniformly."
+use_cases:
+  - "Define and start KVM guests for isolated ML experiment environments"
+  - "Attach GPU or VFIO devices to VMs through a stable domain XML API"
+  - "Script VM lifecycle, snapshots, and network setup without hypervisor-specific tools"
+  - "Integrate virtualization into an internal cloud that already speaks the libvirt API"

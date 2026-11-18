@@ -1,0 +1,24 @@
+name: taplo
+description: "TOML toolkit written in Rust, with a CLI, language server, and formatter. taplo validates and formats Cargo, pyproject, and other TOML files so ML and systems projects can keep config consistent in editors and CI."
+tagline: "TOML formatter, linter, and language server"
+github_url: https://github.com/tamasfe/taplo
+website_url: https://taplo.tamasfe.dev
+docs_url: https://taplo.tamasfe.dev/cli/introduction.html
+install_command: cargo install taplo-cli
+category: Dev Tools
+tags:
+  - toml
+  - formatter
+  - linter
+  - lsp
+  - rust
+  - config
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "TOML is the config format for Cargo, pyproject.toml, and many AI tooling manifests, but most editors treat it as plain text. Inconsistent indentation and invalid keys break installs in CI. taplo provides a spec-aware parser, formatter, linter, and LSP so teams can validate and format TOML the same way they format JSON or YAML."
+use_cases:
+  - "Format pyproject.toml and Cargo.toml in CI so dependency manifests stay consistent"
+  - "Run the taplo language server in an editor for schema-aware TOML completion and diagnostics"
+  - "Lint invalid TOML keys and types before a Python or Rust package build fails"
+  - "Validate workspace config files against JSON Schema for internal tooling manifests"

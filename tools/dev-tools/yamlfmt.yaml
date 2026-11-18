@@ -1,0 +1,23 @@
+name: yamlfmt
+description: "Extensible command-line YAML formatter from Google. yamlfmt applies consistent indentation, key wrapping, and document layout across Kubernetes, GitHub Actions, and ML pipeline YAML so reviews are not derailed by whitespace noise."
+tagline: "Extensible YAML formatter from Google"
+github_url: https://github.com/google/yamlfmt
+docs_url: https://github.com/google/yamlfmt
+install_command: go install github.com/google/yamlfmt/cmd/yamlfmt@latest
+category: Dev Tools
+tags:
+  - yaml
+  - formatter
+  - go
+  - kubernetes
+  - ci
+  - google
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "YAML files in Kubernetes, GitHub Actions, and training configs drift in indentation and line wrapping, producing noisy diffs and parse errors. Generic pretty-printers mishandle comments and multiline strings. yamlfmt is a Go formatter with configurable conf files so teams can enforce one YAML style in pre-commit and CI."
+use_cases:
+  - "Format Kubernetes manifests and Helm values files in a pre-commit hook"
+  - "Normalize GitHub Actions workflows so pull requests do not churn on whitespace"
+  - "Apply a shared yamlfmt config across monorepo ML pipeline YAML"
+  - "Check YAML formatting in CI without rewriting comments or document structure incorrectly"
