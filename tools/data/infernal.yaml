@@ -1,0 +1,26 @@
+name: Infernal
+description: Covariance-model toolkit for RNA homology. Infernal builds CMs from structure-annotated alignments, then cmsearch and cmalign find and align homologs, powering the Rfam RNA database.
+tagline: RNA homology search with covariance models
+
+github_url: https://github.com/EddyRivasLab/infernal
+website_url: http://eddylab.org/infernal
+docs_url: http://eddylab.org/infernal
+
+category: Data
+tags: [c, rna, homology, covariance-models, rfam, bioinformatics]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+install_command: conda install -c bioconda infernal
+
+problem_solved: |
+  Sequence-only BLAST misses remote RNA homologs because secondary structure
+  is the conserved signal. Infernal builds covariance models from
+  structure-annotated alignments so cmsearch can find Rfam-style RNA
+  families that sequence search skips.
+
+use_cases:
+  - Build a covariance model from a structure-annotated RNA alignment with cmbuild
+  - Search a genome for homologs of an RNA family with cmsearch
+  - Align many sequences to a CM consensus with cmalign
+  - Reproduce Rfam-style ncRNA annotation on a newly sequenced genome

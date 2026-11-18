@@ -1,0 +1,25 @@
+name: pyfaidx
+description: Pure-Python samtools-compatible FASTA indexer for random subsequence access, in-place edits, and a faidx CLI, without loading the full genome into memory.
+tagline: Pythonic random access to FASTA subsequences
+
+github_url: https://github.com/mdshw5/pyfaidx
+website_url: https://pypi.org/project/pyfaidx/
+docs_url: https://github.com/mdshw5/pyfaidx#readme
+
+category: Data
+tags: [python, genomics, fasta, indexing, bioinformatics]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+install_command: pip install pyfaidx
+
+problem_solved: |
+  Pulling a gene from a multi-GB FASTA usually means loading the whole file
+  or shelling out to samtools faidx. pyfaidx builds a .fai-compatible index
+  and fetches slices in Python, with a faidx CLI for the same operations.
+
+use_cases:
+  - Fetch a chromosome interval from a reference FASTA in a Python script
+  - Build a samtools-compatible .fai index for a genome FASTA
+  - Extract many regions from the command line with the faidx tool
+  - Rewrite FASTA headers or sequences in place without a full rewrite pass
