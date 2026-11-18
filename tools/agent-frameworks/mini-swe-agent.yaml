@@ -1,0 +1,27 @@
+name: Mini-SWE-Agent
+description: A 100-line software engineering agent from the SWE-agent team. It solves GitHub issues and CLI tasks using bash only, with no custom tools or huge configs, and scores over 74% on SWE-bench Verified.
+tagline: 100-line coding agent that still scores on SWE-bench
+
+github_url: https://github.com/SWE-agent/mini-swe-agent
+website_url: https://mini-swe-agent.com
+docs_url: https://mini-swe-agent.com/latest/
+install_command: pip install mini-swe-agent
+
+category: Agents
+tags: [python, agents, coding-agent, swe-bench, cli, bash, litellm]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Full coding agents are hard to read, fork, and sandbox because they ship large
+  tool stacks and stateful shells. Mini-SWE-Agent keeps a linear message history
+  and runs each action independently, so researchers and teams can benchmark
+  models, debug trajectories, and deploy in Docker or local shells without a
+  giant scaffold.
+
+use_cases:
+  - Run a SWE-bench baseline that isolates model skill from agent complexity
+  - Solve GitHub issues from the CLI with bash in local or Docker environments
+  - Benchmark any LiteLLM, OpenRouter, or Portkey model on coding tasks
+  - Teach or fork a readable agent class of about 100 lines of Python

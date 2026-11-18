@@ -1,0 +1,25 @@
+name: VeritasGraph
+description: Open-source governed GraphRAG framework for on-prem multi-hop answers with citations. It uses an ontology, answer receipts, and abstention when evidence is missing, plus Studio UI and an MCP server for agents.
+tagline: GraphRAG that cites sources and abstains when it cannot
+
+github_url: https://github.com/bibinprathap/VeritasGraph
+website_url: https://veritasgraph.netlify.app/
+docs_url: https://bibinprathap.github.io/VeritasGraph/studio/
+
+category: RAG
+tags: [python, rag, graph-rag, knowledge-graph, mcp, ontology, citations]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Vector RAG often answers from similar chunks without showing a path or saying
+  when evidence is missing. VeritasGraph reasons over a governed ontology, cites
+  sources, and abstains when citations do not match retrieved nodes, so teams can
+  run auditable GraphRAG locally with Studio and MCP tools.
+
+use_cases:
+  - Serve governed GraphRAG answers with citations and abstention on private data
+  - Expose ontology, receipts, and retrieval tools to agents over MCP
+  - Compile and certify business vocabulary before extraction runs
+  - Run Studio plus a local LLM for on-prem document and database Q and A
