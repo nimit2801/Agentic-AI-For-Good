@@ -1,0 +1,25 @@
+name: CNVnator
+description: CNV discovery and genotyping from read-depth of mapped NGS reads so labs call deletions and duplications across a whole genome without a paired-end structural variant assembler.
+tagline: Read-depth CNV discovery and genotyping
+
+github_url: https://github.com/abyzovlab/CNVnator
+website_url: https://github.com/abyzovlab/CNVnator
+docs_url: https://github.com/abyzovlab/CNVnator
+install_command: conda install -c bioconda cnvnator
+
+category: Data
+tags: [cpp, genomics, cnv, structural-variants, ngs, bioinformatics]
+pricing: free
+is_open_source: true
+
+problem_solved: |
+  Copy-number variants hide in read-depth, not just split reads, and
+  many SV callers miss large deletions or duplications. CNVnator
+  partitions coverage with a mean-shift model so labs genotype CNVs
+  from a BAM even when paired-end evidence is thin.
+
+use_cases:
+  - Call deletions and duplications from a WGS BAM
+  - Genotype CNVs in a cohort using read-depth histograms
+  - Visualize coverage partitions around a candidate locus
+  - Combine CNVnator calls with split-read SV callers

@@ -1,0 +1,26 @@
+name: BEDOPS
+description: High-performance suite for set operations on genomic interval files. BEDOPS streams BED, Starch, and VCF so labs compute overlap, proximity, and compression on large feature sets without loading everything into RAM.
+tagline: Streaming set operations on genomic intervals
+
+github_url: https://github.com/bedops/bedops
+website_url: https://bedops.readthedocs.io/
+docs_url: https://bedops.readthedocs.io/
+install_command: conda install -c bioconda bedops
+
+category: Data
+tags: [cpp, genomics, bed, intervals, bioinformatics, ngs]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Interval overlap and proximity queries on genome-wide BED files
+  blow up when tools load every feature into memory. BEDOPS streams
+  sorted intervals so labs intersect, merge, and compress large
+  feature sets with a constant memory footprint.
+
+use_cases:
+  - Intersect peaks with genes without loading both files into RAM
+  - Compress BED tracks to Starch for archival storage
+  - Find features within a window of a set of SNPs
+  - Pipe sorted interval operations in a WGS annotation workflow
