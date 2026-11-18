@@ -1,0 +1,26 @@
+name: CortexDB
+description: Local-first AI agent memory stored in one SQLite file. CortexDB combines a knowledge graph, ontology constraints, SPARQL, and traceable recall so coding agents share facts across sessions, machines, and tools.
+tagline: Shared local memory for coding agents, one SQLite file
+
+github_url: https://github.com/liliang-cn/cortexdb
+website_url: https://liliang-cn.github.io/cortexdb/
+docs_url: https://liliang-cn.github.io/cortexdb/
+install_command: go get github.com/liliang-cn/cortexdb/v2
+
+category: RAG
+tags: [go, rag, knowledge-graph, agent-memory, sqlite, sparql, mcp]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Agent sessions forget preferences, decisions, and project facts, and each tool
+  keeps its own notes. CortexDB stores memories in a constrained knowledge graph
+  with recall traces, so Claude Code, Codex, and custom agents can share one
+  brain without a hosted vector database.
+
+use_cases:
+  - Give Claude Code and Codex a shared local memory of project decisions
+  - Recall user preferences and facts across machines from one SQLite file
+  - Query agent memory with SPARQL or Cypher when you need the full graph
+  - Run GraphRAG-style retrieval without standing up a separate vector database

@@ -1,0 +1,25 @@
+name: PathRAG
+description: Path-based Retrieval-Augmented Generation that retrieves relational paths on a knowledge graph instead of dumping whole neighborhoods. It mixes vector search with graph traversal so answers follow explicit entity connections with less noise.
+tagline: Graph RAG that retrieves paths, not whole neighborhoods
+
+github_url: https://github.com/BUPT-GAMMA/PathRAG
+website_url: https://github.com/BUPT-GAMMA/PathRAG
+docs_url: https://github.com/BUPT-GAMMA/PathRAG#readme
+
+category: RAG
+tags: [python, rag, graph-rag, knowledge-graph, path-retrieval, fastapi]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Graph RAG often pulls large neighborhoods around every matched node, which
+  adds tokens, noise, and weaker answers. PathRAG prunes the graph to relational
+  paths between query entities, then combines those paths with vector search so
+  multi-hop answers stay grounded in explicit connections.
+
+use_cases:
+  - Answer multi-hop questions by following entity paths instead of whole subgraphs
+  - Build a knowledge graph from uploaded PDFs, DOCX, Markdown, and HTML
+  - Visualize extracted entities and relations while chatting over a corpus
+  - Compare path-pruned retrieval with neighborhood GraphRAG on the same documents

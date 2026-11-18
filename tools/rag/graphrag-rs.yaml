@@ -1,0 +1,26 @@
+name: GraphRAG-rs
+description: High-performance Rust GraphRAG library and CLI that builds a knowledge graph from UTF-8 documents. The default local path uses hash embeddings and rule-based entity extraction with no LLM required, with optional llama.cpp, Ollama, and Qdrant backends.
+tagline: Local GraphRAG in Rust, with or without an LLM
+
+github_url: https://github.com/automataIA/graphrag-rs
+website_url: https://automataia.github.io/graphrag-rs/
+docs_url: https://automataia.github.io/graphrag-rs/
+install_command: cargo add graphrag
+
+category: RAG
+tags: [rust, rag, graph-rag, knowledge-graph, cli, ollama, local]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Most GraphRAG stacks need Python, an LLM, and a network service just to index
+  text. GraphRAG-rs offers a local, deterministic Rust path that indexes UTF-8
+  documents into a knowledge graph you can query from a CLI or library, then
+  optionally plug in llama.cpp, Ollama, or Qdrant when you want neural retrieval.
+
+use_cases:
+  - Index Markdown or plain text into a local knowledge graph with a Rust CLI
+  - Query documents offline without an LLM using hash embeddings and lexical retrieval
+  - Embed GraphRAG in a Rust service via the graphrag crate
+  - Add Ollama or Qdrant later for neural entity extraction and vector search
