@@ -1,0 +1,26 @@
+name: CellBender
+description: Broad Institute package that removes ambient RNA and empty-droplet noise from scRNA-seq count matrices so downstream clustering is not driven by soup contamination.
+tagline: Remove ambient RNA from single-cell count matrices
+
+github_url: https://github.com/broadinstitute/CellBender
+website_url: https://cellbender.readthedocs.io
+docs_url: https://cellbender.readthedocs.io
+
+category: Data
+tags: [python, single-cell, scrna-seq, ambient-rna, 10x, bioinformatics]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+install_command: pip install cellbender
+
+problem_solved: |
+  Droplet scRNA-seq mixes cell RNA with ambient soup, so empty droplets and
+  background counts leak into expression matrices. CellBender models that
+  noise and emits cleaned counts so clustering and DE are not driven by
+  soup genes.
+
+use_cases:
+  - Remove ambient RNA from a 10x Cell Ranger raw_feature_bc_matrix
+  - Filter empty droplets before Scanpy or Seurat clustering
+  - Compare soup-corrected versus raw counts on the same library
+  - Feed cleaned matrices into batch integration without background genes

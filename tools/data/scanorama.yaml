@@ -1,0 +1,26 @@
+name: Scanorama
+description: Panoramic integration and batch correction for heterogeneous scRNA-seq datasets. Scanorama stitches cell-by-gene matrices so clustering and visualization can span technologies and labs.
+tagline: Integrate heterogeneous scRNA-seq datasets
+
+github_url: https://github.com/brianhie/scanorama
+website_url: https://github.com/brianhie/scanorama
+docs_url: https://scanpy.readthedocs.io/en/stable/generated/scanpy.external.pp.scanorama_integrate.html
+
+category: Data
+tags: [python, single-cell, batch-correction, scanpy, scrna-seq, integration]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: pip install scanorama
+
+problem_solved: |
+  Combining scRNA-seq from different labs or platforms leaves batch-specific
+  clusters. Scanorama finds mutual nearest neighbors across datasets and
+  returns integrated matrices that Scanpy and other tools can cluster
+  without a shared experimental protocol.
+
+use_cases:
+  - Integrate multiple cells-by-genes matrices with scanorama.integrate
+  - Call Scanorama from Scanpy's external API after HVG filtering
+  - Batch-correct datasets from different 10x chemistries before UMAP
+  - Sketch large atlases then integrate the sketches to save runtime

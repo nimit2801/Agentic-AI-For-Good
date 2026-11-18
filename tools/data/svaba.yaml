@@ -1,0 +1,25 @@
+name: SvABA
+description: Short-read SV and indel caller that locally assembles discordant regions, realigns contigs with BWA-MEM, and scores variants from reassembled support for tumor/normal, trio, or germline BAM.
+tagline: SV and indel calling by local assembly of short reads
+
+github_url: https://github.com/walaj/svaba
+website_url: https://github.com/walaj/svaba
+docs_url: https://github.com/walaj/svaba#readme
+
+category: Data
+tags: [cpp, genomics, structural-variants, indels, assembly, cancer, bioinformatics]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Read-pair SV callers miss novel insertions and complex indels that do not
+  span a reference allele. SvABA assembles local contigs from short-read
+  BAM, realigns them with BWA-MEM, and writes VCF plus per-sample evidence
+  for tumor/normal or germline runs.
+
+use_cases:
+  - Call SVs and indels from a tumor/normal BAM pair into VCF
+  - Run single-sample germline SV discovery on a WGS BAM
+  - Inspect bps.txt.gz companion evidence for reassembled support
+  - Detect medium indels that paired-end callers under-report

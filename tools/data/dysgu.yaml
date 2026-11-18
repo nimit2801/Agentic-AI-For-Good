@@ -1,0 +1,26 @@
+name: dysgu
+description: Structural variant caller for paired-end and long-read BAM. dysgu fetches SV-supporting reads, then calls insertions, deletions, and other SVs with a Python API and CLI for PacBio, Nanopore, and Illumina data.
+tagline: SV calling for short and long reads with a Python API
+
+github_url: https://github.com/kcleal/dysgu
+website_url: https://github.com/kcleal/dysgu
+docs_url: https://kcleal.github.io/dysgu/
+
+category: Data
+tags: [python, genomics, structural-variants, long-reads, pacbio, illumina, bioinformatics]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: pip install dysgu
+
+problem_solved: |
+  Many SV callers are short-read or long-read only, so mixed cohorts need
+  two stacks. dysgu fetches SV-informative reads from BAM and calls
+  insertions, deletions, and related events for Illumina, PacBio, and
+  Nanopore with one CLI and Python API.
+
+use_cases:
+  - Call structural variants from an Illumina paired-end BAM with dysgu run
+  - Benchmark PacBio HiFi or Nanopore SVs against other long-read callers
+  - Fetch SV-supporting reads first, then call with tuned parameters
+  - Use the Python API to inspect calls inside a custom annotation script
