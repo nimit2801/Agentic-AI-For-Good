@@ -1,0 +1,26 @@
+name: AdapterRemoval
+description: AdapterRemoval trims adapter sequences and low-quality bases from high-throughput FASTQ, merges overlapping paired-end reads, and demultiplexes barcode samples. Version 3 adds SIMD-accelerated alignment and HTML or JSON QC reports.
+tagline: Adapter trimming, merging, and FASTQ QC
+
+github_url: https://github.com/MikkelSchubert/adapterremoval
+website_url: https://adapterremoval.readthedocs.io/
+docs_url: https://adapterremoval.readthedocs.io/
+install_command: conda install -c bioconda adapterremoval
+
+category: Data
+tags: [cpp, bioinformatics, adapters, qc, ngs, fastq]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Adapter leftovers, low-quality tails, and unmerged overlapping
+  pairs distort alignment and consensus. AdapterRemoval trims
+  adapters, quality-filters reads, merges overlapping pairs, and
+  writes QC reports so FASTQ can enter a mapping pipeline clean.
+
+use_cases:
+  - Trim Illumina adapters from paired-end FASTQ files
+  - Merge overlapping paired-end reads into consensus sequences
+  - Demultiplex samples by 5-prime barcodes
+  - Produce HTML and JSON QC reports for a sequencing batch

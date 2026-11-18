@@ -1,0 +1,25 @@
+name: HOMER
+description: HOMER (Hypergeometric Optimization of Motif EnRichment) is a suite of command-line tools for de novo motif discovery and ChIP-seq analysis. It finds short sequence motifs in large genomics datasets and annotates peaks, promoters, and differential enrichment.
+tagline: Motif discovery and ChIP-seq annotation suite
+
+website_url: http://homer.ucsd.edu/homer/index.html
+docs_url: http://homer.ucsd.edu/homer/introduction/install.html
+install_command: conda install -c bioconda homer
+
+category: Data
+tags: [perl, bioinformatics, motif, chip-seq, ngs, genomics]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  ChIP-seq and ATAC-seq peak lists do not say which transcription
+  factor motifs are enriched. HOMER scans peaks for known and de
+  novo motifs, annotates genomic context, and reports differential
+  enrichment so labs can map binding sites to regulators.
+
+use_cases:
+  - Find de novo motifs in ChIP-seq peak BED files
+  - Annotate peaks to nearby genes and promoters
+  - Compare motif enrichment between two peak sets
+  - Analyze RNA-seq or GRO-seq coverage with HOMER NGS tools
