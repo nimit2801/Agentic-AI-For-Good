@@ -1,0 +1,26 @@
+name: odgi
+description: Optimized dynamic genome graph toolkit that sorts, visualizes, and extracts paths from pangenome GFA graphs so large haplotype graphs stay compact enough to analyze on a workstation.
+tagline: Analyze and visualize dynamic pangenome graphs
+
+github_url: https://github.com/pangenome/odgi
+website_url: https://odgi.readthedocs.io
+docs_url: https://odgi.readthedocs.io
+install_command: conda install -c bioconda odgi
+
+category: Data
+tags: [cpp, bioinformatics, pangenome, genomics, gfa, visualization, graphs]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Pangenome graphs from many haplotypes are huge and hard to sort or
+  draw with generic graph libraries. odgi stores DNA graphs compactly
+  and provides path, layout, and stats tools so PGGB-scale graphs can
+  be visualized and queried without exploding RAM.
+
+use_cases:
+  - Sort and compact a PGGB GFA graph before visualization
+  - Extract paths or subgraphs for a region of interest
+  - Draw 1D or 2D layouts of a pangenome for QC
+  - Compute graph statistics after pangenome construction

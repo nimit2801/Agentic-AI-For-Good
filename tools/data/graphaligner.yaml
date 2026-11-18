@@ -1,0 +1,25 @@
+name: GraphAligner
+description: Seed-and-extend aligner for mapping long, error-prone reads to genome graphs so pangenome pipelines can place PacBio or ONT reads on GFA paths and emit GAF or GAM alignments.
+tagline: Align long error-prone reads to genome graphs
+
+github_url: https://github.com/maickrau/GraphAligner
+docs_url: https://github.com/maickrau/GraphAligner
+install_command: conda install -c bioconda graphaligner
+
+category: Data
+tags: [cpp, bioinformatics, pangenome, genomics, long-read, alignment, gfa]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Long noisy reads need a graph-aware aligner; linear mappers drop
+  paths that exist only as alternate haplotypes. GraphAligner seeds
+  and extends on genome graphs so PacBio and ONT reads land on GFA
+  nodes with GAF or vg-compatible GAM output.
+
+use_cases:
+  - Align ONT or PacBio reads to a vg or PGGB pangenome graph
+  - Emit GAF alignments with identity and CIGAR for graph paths
+  - Produce GAM output for downstream vg genotyping
+  - Tune secondary alignments with a score-fraction cutoff
