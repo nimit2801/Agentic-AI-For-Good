@@ -1,0 +1,27 @@
+name: GNU Parallel
+description: GNU Parallel runs shell jobs concurrently across CPU cores or remote hosts. It replaces slow for-loops with xargs-style argument lists so dataset conversion, embedding, and eval jobs finish on one machine instead of waiting serially.
+tagline: Run shell jobs in parallel across cores or hosts
+
+website_url: https://www.gnu.org/software/parallel/
+docs_url: https://www.gnu.org/software/parallel/man.html
+
+install_command: brew install parallel
+
+category: Dev Tools
+tags: [cli, gnu, shell, parallelism, batch, linux]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Dataset conversion, embedding, and eval loops often wait on one file at
+  a time even when the machine has idle cores. GNU Parallel fans those
+  jobs out across CPUs or SSH hosts with a simple command-line interface,
+  without rewriting the work as a Python multiprocessing script.
+
+use_cases:
+  - Convert thousands of audio or image files across all CPU cores
+  - Run embedding or eval scripts over a shard list in parallel
+  - Fan SSH jobs across a small GPU fleet with one command
+  - Replace a serial bash for-loop with a progress bar and job log
+  - Retry failed items from a previous parallel run
