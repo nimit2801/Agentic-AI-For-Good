@@ -1,0 +1,26 @@
+name: Monocle3
+description: R toolkit for single-cell RNA-seq that learns trajectories, clusters cells, and finds genes that change along development so labs reconstruct cell fate without a predefined lineage tree.
+tagline: Trajectory analysis for single-cell RNA-seq
+
+github_url: https://github.com/cole-trapnell-lab/monocle3
+website_url: https://cole-trapnell-lab.github.io/monocle3/
+docs_url: https://cole-trapnell-lab.github.io/monocle3/docs/introduction/
+install_command: devtools::install_github('cole-trapnell-lab/monocle3')
+
+category: Data
+tags: [r, single-cell, trajectory, scrna-seq, bioinformatics, clustering]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  scRNA-seq atlases mix cell types and time points, and a static
+  UMAP does not say which states are ancestors. Monocle3 learns a
+  principal graph on cells so labs get trajectories, branches, and
+  genes that vary along pseudotime without drawing the lineage by hand.
+
+use_cases:
+  - Learn a trajectory graph from a developing tissue scRNA-seq dataset
+  - Cluster cells and find marker genes along a developmental path
+  - Order cells in pseudotime after a perturbation time course
+  - Compare branch-specific gene modules in a CellDataSet object

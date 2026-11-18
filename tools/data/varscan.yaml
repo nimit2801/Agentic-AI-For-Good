@@ -1,0 +1,26 @@
+name: VarScan
+description: Variant caller for SNPs, indels, somatic mutations, and copy-number changes from NGS pileups so tumor-normal and germline pipelines can genotype without a full haplotype assembler.
+tagline: Pileup-based SNP, indel, and somatic calling
+
+github_url: https://github.com/dkoboldt/varscan
+website_url: https://github.com/dkoboldt/varscan
+docs_url: https://github.com/dkoboldt/varscan
+install_command: conda install -c bioconda varscan
+
+category: Data
+tags: [java, genomics, variant-calling, somatic, ngs, bioinformatics]
+pricing: free
+is_open_source: true
+license: NPOSL-3.0
+
+problem_solved: |
+  Many callers need haplotype assembly or a matched workflow that
+  is hard to run on pileups. VarScan reads SAMtools mpileup so labs
+  call SNPs, indels, somatic mutations, and CNVs from tumor-normal
+  or germline BAMs with heuristic and Fisher's exact tests.
+
+use_cases:
+  - Call germline SNPs and indels from a WES or WGS pileup
+  - Detect somatic mutations in a tumor-normal pair
+  - Estimate copy-number changes from sequencing depth
+  - Filter low-confidence variants before VCF annotation

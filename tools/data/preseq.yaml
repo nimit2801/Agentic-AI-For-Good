@@ -1,0 +1,26 @@
+name: preseq
+description: C++ tool that predicts library complexity and genome coverage from initial sequencing so labs decide whether more reads will yield new molecules before wasting sequencer time.
+tagline: Predict sequencing library complexity and coverage
+
+github_url: https://github.com/smithlabcode/preseq
+website_url: https://preseq.readthedocs.io
+docs_url: https://preseq.readthedocs.io
+install_command: conda install -c bioconda preseq
+
+category: Data
+tags: [cpp, genomics, ngs, library-complexity, coverage, bioinformatics]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Extra sequencing on a duplicate-heavy library yields few new
+  molecules, but that is only obvious after the run. preseq
+  extrapolates complexity from early reads so labs stop, redilute,
+  or sequence deeper before burning remaining flow-cell capacity.
+
+use_cases:
+  - Estimate unique molecule yield if a library is sequenced deeper
+  - Decide whether a ChIP-seq or RNA-seq library is exhausted
+  - Predict genome coverage from a shallow WGS subsample
+  - Compare complexity curves across library prep protocols

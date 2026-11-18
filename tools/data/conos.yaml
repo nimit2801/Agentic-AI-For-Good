@@ -1,0 +1,26 @@
+name: Conos
+description: R package for joint analysis of multiple scRNA-seq datasets. Conos builds a graph across samples so labs integrate batches and transfer cell labels without collapsing every experiment into one matrix first.
+tagline: Joint graphs for multi-sample scRNA-seq
+
+github_url: https://github.com/kharchenkolab/conos
+website_url: https://github.com/kharchenkolab/conos
+docs_url: https://github.com/kharchenkolab/conos
+install_command: install.packages('conos')
+
+category: Data
+tags: [r, single-cell, integration, scrna-seq, batch-correction, bioinformatics]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Multi-sample scRNA-seq studies need shared cell types across batches,
+  but naive concatenation mixes technical effects. Conos builds a
+  nearest-neighbor graph between samples so labs propagate clusters
+  and embeddings without forcing a single joint count matrix.
+
+use_cases:
+  - Integrate several scRNA-seq samples into one joint graph
+  - Transfer cluster labels from a reference sample to new batches
+  - Align embeddings across donors before downstream modeling
+  - Visualize a pagoda2-backed joint manifold of related datasets
