@@ -1,0 +1,24 @@
+name: biotite
+description: "Comprehensive Python library for computational molecular biology. Biotite reads and writes sequence and structure formats, runs alignments and structure analyses, and visualizes biomolecules without wrapping a pile of disconnected bioinformatics binaries."
+tagline: "Python library for computational molecular biology"
+github_url: https://github.com/biotite-dev/biotite
+website_url: https://www.biotite-python.org
+docs_url: https://www.biotite-python.org
+install_command: pip install biotite
+category: Data
+tags:
+  - python
+  - bioinformatics
+  - sequences
+  - protein-structure
+  - molecular-biology
+  - visualization
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+problem_solved: "Python bioinformatics stacks often glue together BioPython, command-line BLAST, and one-off PDB parsers with inconsistent APIs. Teams analyzing sequences and 3D structures need one library for I/O, alignment, structure metrics, and plotting. Biotite provides NumPy-backed sequence and structure objects, file format readers, and analysis utilities so molecular ML pipelines can stay in Python."
+use_cases:
+  - "Load FASTA, GenBank, and PDB files into NumPy-backed objects for sequence and structure ML features"
+  - "Run pairwise or multiple sequence alignments and compute conservation scores in Python"
+  - "Measure distances, angles, and secondary structure on protein models before training structure models"
+  - "Plot sequence logos, structure cartoons, and contact maps for dataset inspection notebooks"

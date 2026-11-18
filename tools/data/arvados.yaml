@@ -1,0 +1,23 @@
+name: Arvados
+description: "Open source platform for managing and analyzing biomedical big data. Arvados stores Keep content-addressed files, runs Crunch container workflows, and tracks provenance so labs can share petabyte genomic datasets with reproducible compute."
+tagline: "Platform for biomedical big data and reproducible compute"
+github_url: https://github.com/arvados/arvados
+website_url: https://arvados.org
+docs_url: https://doc.arvados.org
+category: Data
+tags:
+  - genomics
+  - biomedical
+  - data-management
+  - provenance
+  - containers
+  - workflows
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+problem_solved: "Genomics labs accumulate petabytes of sequencing files with weak provenance, making it hard to know which BAM produced which result. Sharing data across groups while keeping compute reproducible is even harder on ad hoc NFS shares. Arvados combines content-addressed Keep storage, containerized Crunch jobs, and a Workbench UI so biomedical teams can store, analyze, and share data with cryptographic identifiers and full run history."
+use_cases:
+  - "Store sequencing runs in content-addressed Keep so identical files are deduplicated and cited by hash"
+  - "Run containerized variant-calling or QC workflows with Crunch and keep full input-output provenance"
+  - "Share biomedical datasets across labs with collection UUIDs instead of copying NFS directories"
+  - "Track which container image, inputs, and parameters produced a published analysis result"
