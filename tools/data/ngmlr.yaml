@@ -1,0 +1,26 @@
+name: ngmlr
+description: Long-read mapper that uses SV-aware k-mer search and a convex gap-cost alignment to map PacBio and Nanopore reads across complex and nested structural variants.
+tagline: SV-aware long-read mapper for PacBio and Nanopore
+
+github_url: https://github.com/philres/ngmlr
+website_url: https://github.com/philres/ngmlr
+docs_url: https://github.com/philres/ngmlr#readme
+
+category: Data
+tags: [cpp, genomics, long-reads, pacbio, nanopore, alignment, structural-variants]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: conda install -c bioconda ngmlr
+
+problem_solved: |
+  Linear long-read mappers split or clip reads that span nested SVs, so
+  breakpoints land in the wrong place. ngmlr searches with SV-aware k-mers
+  and a convex gap model so PacBio and Nanopore reads that cross inversions
+  and nested events still align.
+
+use_cases:
+  - Align PacBio long reads to a large reference for SV-aware mapping
+  - Map Oxford Nanopore reads with the ont preset into SAM
+  - Recover alignments that span nested inversions flanked by deletions
+  - Feed ngmlr SAM into a long-read structural variant caller

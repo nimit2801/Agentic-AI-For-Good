@@ -1,0 +1,25 @@
+name: rasusa
+description: Rust tool that randomly subsamples sequencing reads or alignments to a target coverage or read count, so FASTQ and BAM downsampling does not need one-off scripts.
+tagline: Randomly subsample reads or alignments to target coverage
+
+github_url: https://github.com/mbhall88/rasusa
+website_url: https://github.com/mbhall88/rasusa
+docs_url: https://github.com/mbhall88/rasusa#readme
+
+category: Data
+tags: [rust, genomics, downsampling, fastq, bam, coverage, bioinformatics]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: cargo install rasusa
+
+problem_solved: |
+  Excess coverage wastes aligner time and biases some callers, but naive
+  head/tail cuts are not random. rasusa samples reads or alignments to a
+  stated coverage or count so you can downsample FASTQ or BAM reproducibly.
+
+use_cases:
+  - Downsample a FASTQ to 30x coverage before assembly or variant calling
+  - Subsample a BAM to a fixed read count for benchmark comparisons
+  - Reduce Nanopore or PacBio datasets to a coverage target for QC plots
+  - Draw a random subset of paired-end reads without breaking pairs

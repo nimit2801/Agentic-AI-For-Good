@@ -1,0 +1,26 @@
+name: pysam
+description: Python module wrapping htslib, samtools, and bcftools for reading and writing SAM, BAM, CRAM, VCF, BCF, and tabix-indexed files, so NGS pipelines can stay in Python.
+tagline: Python bindings for SAM/BAM/CRAM and tabix
+
+github_url: https://github.com/pysam-developers/pysam
+website_url: https://pysam.readthedocs.io
+docs_url: https://pysam.readthedocs.io
+
+category: Data
+tags: [python, genomics, bam, sam, cram, htslib, bioinformatics]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: pip install pysam
+
+problem_solved: |
+  Genomic alignment and variant files are C-level formats. Without a
+  binding, Python pipelines shell out to samtools and parse text. pysam
+  wraps the htslib C API so you iterate BAM/CRAM/VCF records, fetch
+  regions, and write files without leaving Python.
+
+use_cases:
+  - Iterate alignments in a BAM or CRAM and filter by mapping quality
+  - Fetch reads overlapping a gene interval via a tabix or BAM index
+  - Read and write VCF or BCF records in a Python variant-annotation script
+  - Call wrapped samtools and bcftools utilities from a Python workflow
