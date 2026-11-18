@@ -1,0 +1,28 @@
+name: Vowpal Wabbit
+description: Online machine learning system for fast linear, reduction, and contextual-bandit learning on large sparse data. Vowpal Wabbit trains from a stream with hashing and allreduce so feature-heavy ranking and recommendation jobs stay in memory.
+tagline: Fast online learning for ranking, reductions, and bandits
+
+github_url: https://github.com/VowpalWabbit/vowpal_wabbit
+website_url: https://vowpalwabbit.org
+docs_url: https://vowpalwabbit.org/docs/vowpal_wabbit/python/latest/index.html
+
+install_command: pip install vowpalwabbit
+
+category: Fine-tuning
+tags: [python, online-learning, bandits, ranking, sparse, cli]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Ranking, click prediction, and contextual bandits often arrive as a
+  high-cardinality sparse stream that will not fit a batch trainer.
+  Vowpal Wabbit hashes features and updates online so those jobs train
+  in one pass instead of materializing a giant dense matrix.
+
+use_cases:
+  - Train a click or ranking model from a sparse feature stream
+  - Run a contextual bandit for news or product recommendations
+  - Learn reductions such as cost-sensitive classification at scale
+  - Hash high-cardinality IDs without an explicit vocabulary
+  - Distribute training with allreduce across a small cluster

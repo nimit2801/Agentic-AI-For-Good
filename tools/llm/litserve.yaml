@@ -1,0 +1,28 @@
+name: LitServe
+description: Python framework for custom AI inference servers with batching, streaming, and scaling built in. LitServe gives full control over request logic so teams serve models without a heavyweight MLOps stack.
+tagline: Minimal Python framework for custom AI inference servers
+
+github_url: https://github.com/Lightning-AI/LitServe
+website_url: https://lightning.ai/litserve
+docs_url: https://lightning.ai/docs/litserve
+
+install_command: pip install litserve
+
+category: LLM
+tags: [python, inference, serving, batching, llm, api]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Serving a custom model usually means gluing FastAPI, a batcher, and
+  GPU lifecycle code by hand. LitServe provides an inference server
+  with batching, streaming, and scaling so a Python class becomes an
+  HTTP endpoint without a full MLOps platform.
+
+use_cases:
+  - Serve a custom LLM or vision model behind an HTTP API
+  - Batch GPU inference requests without writing a queue
+  - Stream tokens from a generation endpoint
+  - Scale a Python inference class across workers
+  - Prototype a model server before moving to a production cluster
