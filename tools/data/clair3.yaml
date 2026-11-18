@@ -1,0 +1,26 @@
+name: Clair3
+description: Deep learning variant caller that combines pileup and full-alignment models for long-read SNPs and indels so labs genotype Oxford Nanopore and PacBio BAMs without a short-read haplotype caller.
+tagline: Long-read SNP and indel calling with pileup plus alignment
+
+github_url: https://github.com/HKU-BAL/Clair3
+website_url: https://github.com/HKU-BAL/Clair3
+docs_url: https://github.com/HKU-BAL/Clair3
+install_command: conda install -c bioconda clair3
+
+category: Data
+tags: [python, genomics, variant-calling, long-read, ont, bioinformatics]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Long-read BAMs have error profiles that short-read callers were
+  not trained on, so SNPs and indels are missed or overcalled.
+  Clair3 runs a pileup network then a full-alignment network so
+  labs call variants on ONT and PacBio data with platform models.
+
+use_cases:
+  - Call SNPs and indels from an Oxford Nanopore WGS BAM
+  - Genotype PacBio HiFi reads with a Clair3 PacBio model
+  - Emit gVCF for joint genotyping a long-read cohort
+  - Benchmark long-read calls against GIAB truth sets

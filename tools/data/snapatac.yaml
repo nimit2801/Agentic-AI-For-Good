@@ -1,0 +1,28 @@
+name: SnapATAC
+description: R pipeline for single-cell ATAC-seq that bins the genome, clusters cells, and finds peaks so labs analyze chromatin accessibility without treating scATAC as scRNA-seq counts.
+tagline: Single-cell ATAC-seq analysis pipeline
+
+github_url: https://github.com/r3fang/SnapATAC
+website_url: https://github.com/r3fang/SnapATAC
+docs_url: https://github.com/r3fang/SnapATAC
+install_command: |
+  pip install snaptools
+  # R: devtools::install_github("r3fang/SnapATAC")
+
+category: Data
+tags: [r, python, atac-seq, single-cell, chromatin, bioinformatics]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  scATAC-seq is mostly zeros, so RNA-seq clustering recipes fail on
+  peak-by-cell matrices. SnapATAC bins the genome into a snap file
+  and clusters cells from accessibility so labs recover cell types
+  and peaks without forcing a gene-activity matrix first.
+
+use_cases:
+  - Convert scATAC fragments into a snap file with snaptools
+  - Cluster cells from genome-wide accessibility bins
+  - Call peaks per cluster after cell-type assignment
+  - Find differentially accessible regions between cell states

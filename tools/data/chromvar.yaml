@@ -1,0 +1,26 @@
+name: chromVAR
+description: R/Bioconductor package that measures chromatin variation across peaks so labs score transcription-factor motif activity from sparse ATAC-seq or ChIP-seq count matrices.
+tagline: Motif activity from sparse chromatin counts
+
+github_url: https://github.com/GreenleafLab/chromVAR
+website_url: https://greenleaflab.github.io/chromVAR/
+docs_url: https://greenleaflab.github.io/chromVAR/articles/Introduction.html
+install_command: BiocManager::install("chromVAR")
+
+category: Data
+tags: [r, atac-seq, chromatin, motifs, bioconductor, bioinformatics]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Sparse ATAC-seq peak matrices make per-peak differential tests
+  noisy, so motif activity is hard to recover. chromVAR aggregates
+  accessibility deviations across motif matches so labs score
+  transcription-factor activity even when each peak has few counts.
+
+use_cases:
+  - Score motif deviations in a single-cell ATAC-seq peak matrix
+  - Rank transcription factors that vary across cell types
+  - Compare chromatin variability between conditions in bulk ATAC
+  - Annotate peaks with motif matches before a chromVAR deviation run
