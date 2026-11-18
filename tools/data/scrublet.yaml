@@ -1,0 +1,25 @@
+name: Scrublet
+description: Python tool that simulates doublets from a scRNA-seq counts matrix and scores each cell so droplet experiments can drop multiplets before clustering and cell-type assignment.
+tagline: Detect doublets in single-cell RNA-seq data
+
+github_url: https://github.com/swolock/scrublet
+docs_url: https://github.com/swolock/scrublet
+install_command: pip install scrublet
+
+category: Data
+tags: [python, bioinformatics, single-cell, rna-seq, doublets, genomics]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Droplet scRNA-seq often captures two cells in one bead, which
+  invents fake intermediate cell types in clustering. Scrublet
+  simulates doublets from the observed matrix and scores each
+  transcriptome so labs can filter multiplets before analysis.
+
+use_cases:
+  - Score and flag doublets in a 10x Genomics counts matrix
+  - Run Scrublet per sample before merging batches
+  - Threshold simulated doublet scores and inspect UMAP colocated calls
+  - Remove predicted multiplets before clustering in Scanpy or Seurat

@@ -1,0 +1,26 @@
+name: vg
+description: Toolkit for genome variation graphs that maps reads, genotypes, and calls variants on GFA pangenomes so analyses can use haplotype paths instead of a single linear reference.
+tagline: Map, genotype, and call variants on genome graphs
+
+github_url: https://github.com/vgteam/vg
+website_url: https://www.biostars.org/tag/vg/
+docs_url: https://github.com/vgteam/vg/wiki
+install_command: conda install -c bioconda vg
+
+category: Data
+tags: [cpp, bioinformatics, pangenome, genomics, gfa, alignment, variants]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Linear references hide alternate haplotypes, so mapping and genotyping
+  miss variation that only exists as a graph path. vg stores genomes as
+  variation graphs and maps reads onto them so pangenome pipelines can
+  genotype and call variants without collapsing to one FASTA.
+
+use_cases:
+  - Map short or long reads to a pangenome GFA and emit GAM or GAF
+  - Genotype SNPs and SVs from graph alignments against haplotype paths
+  - Convert between vg, GFA, and VCF representations of a pangenome
+  - Call variants from a graph built by PGGB or minigraph-cactus
