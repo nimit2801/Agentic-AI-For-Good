@@ -1,0 +1,25 @@
+name: Qualimap
+description: Qualimap is a Java and R application that quality-checks NGS alignment data in BAM files. It reports coverage, GC bias, insert size, and RNA-seq gene-body coverage so mapping artifacts can be caught before variant calling or quantification.
+tagline: Alignment QC reports for BAM and RNA-seq counts
+
+website_url: http://qualimap.conesalab.org/
+docs_url: http://qualimap.conesalab.org/doc_html/intro.html
+install_command: conda install -c bioconda qualimap
+
+category: Data
+tags: [java, bioinformatics, qc, bam, ngs, rna-seq]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Mapped BAM files hide coverage holes, GC bias, and RNA-seq
+  3-prime bias until downstream analysis fails. Qualimap inspects
+  alignments and feature counts and produces plots so a run can be
+  rejected or re-mapped before variant calling.
+
+use_cases:
+  - Run BAM QC on whole-genome or exome alignments
+  - Check RNA-seq gene-body coverage and saturation
+  - Compare multiple samples in a multi-BAM QC report
+  - Count reads overlapping GFF features before differential expression

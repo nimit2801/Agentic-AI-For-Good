@@ -1,0 +1,25 @@
+name: longshot
+description: Longshot calls diploid SNVs from error-prone long reads such as PacBio SMRT and Oxford Nanopore. It takes an aligned BAM or CRAM file and writes a phased VCF with haplotypes, and can split reads into haplotype BAMs.
+tagline: Diploid SNV caller for long error-prone reads
+
+github_url: https://github.com/pjedge/longshot
+docs_url: https://github.com/pjedge/longshot
+install_command: conda install -c bioconda longshot
+
+category: Data
+tags: [rust, bioinformatics, variant-calling, long-reads, pacbio, nanopore]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Short-read SNV callers miss heterozygous sites in long, noisy
+  PacBio and Nanopore alignments. Longshot genotypes diploid SNVs
+  from a BAM or CRAM file, phases haplotypes, and can emit
+  haplotype-separated BAMs for downstream analysis.
+
+use_cases:
+  - Call diploid SNVs from PacBio HiFi or CLR alignments
+  - Phase heterozygous SNVs from Oxford Nanopore BAM files
+  - Genotype known variants from an input VCF on long reads
+  - Write haplotype-separated BAM files for allele-specific analysis

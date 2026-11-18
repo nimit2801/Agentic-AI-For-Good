@@ -1,0 +1,25 @@
+name: NanoFilt
+description: NanoFilt filters and trims long-read FASTQ by length, average quality, and GC content. It reads from stdin and writes to stdout so Nanopore reads can be cleaned in a stream between basecalling and mapping.
+tagline: Length and quality filtering for long-read FASTQ
+
+github_url: https://github.com/wdecoster/nanofilt
+docs_url: https://github.com/wdecoster/nanofilt
+install_command: pip install nanofilt
+
+category: Data
+tags: [python, bioinformatics, nanopore, long-reads, qc, fastq]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Raw Nanopore FASTQ mixes short, low-quality, and GC-biased
+  reads that waste mapping time and inflate error rates. NanoFilt
+  drops those reads by length, quality, or GC and can crop heads
+  or tails so a mapping step sees a cleaner stream.
+
+use_cases:
+  - Filter Nanopore FASTQ to a minimum length and Phred quality
+  - Crop adapter-like bases from read heads and tails
+  - Stream gzipped FASTQ through NanoFilt into minimap2
+  - Filter using Guppy or Albacore sequencing_summary quality scores
