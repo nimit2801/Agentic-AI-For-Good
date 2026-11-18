@@ -1,0 +1,26 @@
+name: SVIM
+description: Structural variant caller for PacBio and Nanopore long reads. SVIM detects deletions, insertions, inversions, tandem and interspersed duplications, and translocations from BAM or FASTA/FASTQ, and genotypes diploid events.
+tagline: Long-read structural variant caller for six SV classes
+
+github_url: https://github.com/eldariont/svim
+website_url: https://github.com/eldariont/svim
+docs_url: https://github.com/eldariont/svim#readme
+
+category: Data
+tags: [python, genomics, structural-variants, pacbio, nanopore, long-reads, bioinformatics]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+install_command: pip install svim
+
+problem_solved: |
+  Short-read SV callers miss large events in repeats, and many long-read
+  callers mix tandem duplications with insertions. SVIM clusters alignment
+  signatures across the genome so PacBio and Nanopore BAMs yield classified
+  SVs with diploid genotypes.
+
+use_cases:
+  - Call deletions, insertions, and inversions from sorted PacBio or Nanopore BAM
+  - Distinguish tandem duplications from interspersed duplications in a long-read sample
+  - Genotype diploid SVs and write a VCF for downstream annotation
+  - Run SVIM on FASTA or FASTQ long reads when a BAM is not yet available
