@@ -1,0 +1,24 @@
+name: gemmi
+description: "Macromolecular crystallography library and utilities for reading mmCIF, PDB, and MTZ files. gemmi is a fast C++ library with Python bindings used to parse, validate, and transform protein structures and reflection data in structural biology pipelines."
+tagline: "Macromolecular crystallography library and utilities"
+github_url: https://github.com/project-gemmi/gemmi
+website_url: https://project-gemmi.github.io/
+docs_url: https://gemmi.readthedocs.io
+install_command: pip install gemmi
+category: Data
+tags:
+  - crystallography
+  - pdb
+  - mmcif
+  - protein-structure
+  - python
+  - cpp
+pricing: free
+is_open_source: true
+license: MPL-2.0
+problem_solved: "Structural biology pipelines need a reliable parser for mmCIF, PDB, and MTZ that is faster than ad hoc BioPython snippets and does not pull a GUI suite. gemmi provides a small C++ core and Python bindings for coordinates, symmetry, density maps, and reflection files so ML and refinement workflows can read PDB-scale data without CCP4 as a hard dependency."
+use_cases:
+  - "Parse mmCIF and PDB coordinate files in Python for structure-feature extraction"
+  - "Read MTZ reflection data and map coefficients for density or cryo-EM preprocessing"
+  - "Validate symmetry, space groups, and unit cells before training structure models"
+  - "Convert and clean macromolecular files in batch as a CLI step in a crystallography pipeline"
