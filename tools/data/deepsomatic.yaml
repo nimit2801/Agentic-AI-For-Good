@@ -1,0 +1,22 @@
+name: DeepSomatic
+description: "Google analysis pipeline that uses a deep neural network to call somatic variants from tumor-normal and tumor-only sequencing data. DeepSomatic extends the DeepVariant approach to cancer genomics so labs can call SNVs and indels without hand-tuned somatic filters."
+tagline: "Deep learning somatic variant caller for tumor sequencing"
+github_url: https://github.com/google/deepsomatic
+docs_url: https://github.com/google/deepsomatic
+category: Data
+tags:
+  - genomics
+  - somatic-variants
+  - deep-learning
+  - cancer
+  - sequencing
+  - google
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+problem_solved: "Somatic variant calling in tumors is noisy: tumor purity, copy-number changes, and sequencing artifacts produce false positives that classical filters miss. Teams need a trained model that works on tumor-normal pairs and tumor-only data across short-read platforms. DeepSomatic uses a convolutional network over pileup images, like DeepVariant, to call somatic SNVs and indels with published accuracy on cancer sequencing."
+use_cases:
+  - "Call somatic SNVs and indels from tumor-normal whole-genome or exome BAM files"
+  - "Run tumor-only somatic calling when a matched normal sample is not available"
+  - "Benchmark cancer variant callers against DeepSomatic on GIAB or in-house tumor truth sets"
+  - "Add a containerized somatic calling step to a clinical or research NGS pipeline"
