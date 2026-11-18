@@ -1,0 +1,23 @@
+name: FlameGraph
+description: "Stack trace visualizer that turns collapsed profile samples into interactive SVG flame graphs. FlameGraph is the original Brendan Gregg toolkit used to find CPU hot spots in services, kernels, and ML runtimes from perf, DTrace, or any sampler that emits stacks."
+tagline: "Stack trace visualizer for CPU flame graphs"
+github_url: https://github.com/brendangregg/FlameGraph
+website_url: https://www.brendangregg.com/flamegraphs.html
+docs_url: https://www.brendangregg.com/FlameGraphs/cpuflamegraphs.html
+category: Dev Tools
+tags:
+  - profiling
+  - performance
+  - visualization
+  - linux
+  - perf
+  - observability
+pricing: free
+is_open_source: true
+license: CDDL-1.0
+problem_solved: "CPU profiles as raw stack dumps are unreadable. Engineers need a compact view of where time is spent across user and kernel stacks. FlameGraph folds stacks and draws SVG flame charts so a slow training loop, inference server, or data loader can be diagnosed from perf, eBPF, or language profilers."
+use_cases:
+  - "Convert Linux perf script output into an SVG flame graph of CPU time"
+  - "Compare on-CPU hot spots in a model-serving process before and after an optimization"
+  - "Visualize kernel and user stacks together when an ML job is stalled in syscalls"
+  - "Fold custom sampler output into the collapsed-stack format for ad hoc profiling"
