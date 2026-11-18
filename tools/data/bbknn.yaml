@@ -1,0 +1,26 @@
+name: BBKNN
+description: Batch-balanced k-nearest-neighbors graph for Scanpy. BBKNN finds neighbors in each batch separately so single-cell clustering, UMAP, and pseudotime are less dominated by technical batch effects.
+tagline: Batch-balanced neighbors for Scanpy single-cell graphs
+
+github_url: https://github.com/Teichlab/bbknn
+website_url: https://github.com/Teichlab/bbknn
+docs_url: https://github.com/Teichlab/bbknn#readme
+
+category: Data
+tags: [python, single-cell, scanpy, batch-correction, knn, transcriptomics]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: pip install bbknn
+
+problem_solved: |
+  Default kNN graphs mix nearest neighbors across the whole dataset, so
+  batch artifacts glue same-batch cells together. BBKNN takes a smaller k
+  per batch and merges those neighbors, linking matching cell types across
+  batches without changing counts or PCA.
+
+use_cases:
+  - Replace scanpy.pp.neighbors with a batch-aware graph on an AnnData object
+  - Integrate multiple 10x samples whose batch key lives in adata.obs
+  - Improve UMAP and Leiden clustering when operator or protocol batches split cell types
+  - Feed a BBKNN graph into Scanpy diffusion pseudotime

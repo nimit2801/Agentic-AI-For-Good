@@ -1,0 +1,25 @@
+name: Raven
+description: De novo genome assembler for long uncorrected reads. Raven finds minimizer overlaps, builds an assembly graph, and writes contigs from PacBio or Nanopore FASTA/FASTQ without a prior correction step.
+tagline: De novo assembler for uncorrected long reads
+
+github_url: https://github.com/lbcb-sci/raven
+website_url: https://github.com/lbcb-sci/raven
+docs_url: https://github.com/lbcb-sci/raven#readme
+
+category: Data
+tags: [cpp, genomics, assembly, long-reads, pacbio, nanopore, bioinformatics]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Many long-read assemblers expect error-corrected reads, which adds a slow
+  pre-pass. Raven overlaps uncorrected PacBio or Nanopore sequences with
+  minimizers and writes FASTA contigs so you can assemble without a separate
+  correction tool.
+
+use_cases:
+  - Assemble a bacterial or small eukaryotic genome from Nanopore FASTQ
+  - Build contigs from uncorrected PacBio reads with tunable k-mer and window length
+  - Run a gzip-compressed multi-file long-read set through raven to stdout FASTA
+  - Compare uncorrected-read assemblies against Flye or Canu on the same sample

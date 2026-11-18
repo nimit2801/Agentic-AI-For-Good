@@ -1,0 +1,26 @@
+name: samblaster
+description: Fast duplicate marker for read-id grouped paired-end SAM. samblaster flags or drops duplicates and can emit discordant pairs, split reads, and clipped sequences for SV workflows.
+tagline: Fast SAM duplicate marking and SV read extraction
+
+github_url: https://github.com/GregoryFaust/samblaster
+website_url: https://github.com/GregoryFaust/samblaster
+docs_url: https://github.com/GregoryFaust/samblaster#readme
+
+category: Data
+tags: [cpp, genomics, sam, duplicates, structural-variants, bioinformatics]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: conda install -c bioconda samblaster
+
+problem_solved: |
+  Picard-style duplicate marking is heavy in a streaming aligner pipe, and
+  SV callers still need discordant and split reads pulled out. samblaster
+  marks duplicates on read-id grouped SAM from stdin and can write those
+  SV-informative reads to extra files in one pass.
+
+use_cases:
+  - Mark duplicates in a bwa mem SAM stream before converting to BAM
+  - Remove duplicate alignments with --removeDups in a mapping pipeline
+  - Extract discordant pairs and split reads for a structural variant caller
+  - Write unmapped or clipped reads to FASTQ for a second alignment pass
