@@ -1,0 +1,25 @@
+name: Yak
+description: Heng Li's k-mer analyzer for estimating assembly and HiFi read QV from short-read spectra without a reference genome, plus sex-chromosome partitioning in human de novo assemblies.
+tagline: Reference-free k-mer QV for assemblies and HiFi reads
+
+github_url: https://github.com/lh3/yak
+website_url: https://github.com/lh3/yak
+docs_url: https://github.com/lh3/yak#readme
+
+category: Data
+tags: [c, genomics, kmers, assembly, hifi, qv, bioinformatics]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Assembly and CCS QV near Q50 is hard to estimate because unsampled and
+  erroneous short-read k-mers bias naive counters. Yak compares sequences
+  to a short-read k-mer spectrum with an empirical model, so QV and
+  completeness do not need a truth reference.
+
+use_cases:
+  - Count k-mers from short reads and estimate assembly contig QV
+  - Compare HiFi CCS reads against a short-read spectrum for k-mer QV
+  - Inspect completeness of an assembly versus a short-read k-mer table
+  - Partition chrX and chrY haplotypes in a human de novo assembly

@@ -1,0 +1,26 @@
+name: AgenticGoKit
+description: Open-source Go framework for streaming-first multi-agent systems. LLM-agnostic providers, MCP tool discovery, built-in RAG memory, and OpenTelemetry tracing, with sequential, parallel, DAG, and loop orchestration.
+tagline: Streaming-first multi-agent framework for Go
+
+github_url: https://github.com/AgenticGoKit/AgenticGoKit
+website_url: https://docs.agenticgokit.com/
+docs_url: https://docs.agenticgokit.com/
+
+category: Agents
+tags: [go, agents, multi-agent, mcp, rag, streaming, opentelemetry, orchestration]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+install_command: go get github.com/agenticgokit/agenticgokit/v1beta
+
+problem_solved: |
+  Most agent frameworks target Python, so Go services either shell out or
+  rewrite orchestration. AgenticGoKit gives compiled Go a streaming agent
+  API with multi-provider LLMs, MCP tools, RAG memory, and tracing without
+  leaving the Go toolchain.
+
+use_cases:
+  - Build a chat agent in Go against Ollama, OpenAI, or Anthropic with one builder
+  - Orchestrate sequential, parallel, DAG, or loop multi-agent workflows
+  - Stream agent reasoning with OpenTelemetry traces for production debugging
+  - Attach MCP tools and built-in RAG memory to a compiled Go binary

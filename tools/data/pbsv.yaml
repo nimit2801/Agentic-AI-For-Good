@@ -1,0 +1,26 @@
+name: pbsv
+description: PacBio structural variant caller for diploid genomes from SMRT reads. Discovers SV signatures then calls insertions, deletions, inversions, duplications, and translocations for single-sample or joint calling.
+tagline: PacBio SMRT structural variant calling and genotyping
+
+github_url: https://github.com/PacificBiosciences/pbsv
+website_url: https://github.com/PacificBiosciences/pbsv
+docs_url: https://github.com/PacificBiosciences/pbsv#readme
+
+category: Data
+tags: [genomics, structural-variants, pacbio, smrt, vcf, bioinformatics]
+pricing: free
+is_open_source: false
+license: PacBio Software License
+install_command: conda install -c bioconda pbsv
+
+problem_solved: |
+  Generic short-read SV callers miss large insertions and inversions that
+  PacBio SMRT reads span. pbsv discovers signatures from pbmm2 BAM, then
+  genotypes insertions, deletions, inversions, duplications, and
+  translocations for one sample or a joint cohort.
+
+use_cases:
+  - Discover SV signatures from pbmm2-aligned PacBio BAM into svsig.gz
+  - Call insertions from 20 bp to 10 kb and deletions up to 100 kb
+  - Joint-call structural variants across multiple PacBio samples into one VCF
+  - Power the Structural Variant Calling workflow in PacBio SMRT Link
