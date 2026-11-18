@@ -1,0 +1,26 @@
+name: cyvcf2
+description: Cython wrapper around htslib for fast Python parsing of VCF and BCF files, with numpy-backed genotype arrays, region queries, and diploid depth helpers ready for downstream analysis.
+tagline: Fast Python VCF/BCF parsing via htslib
+
+github_url: https://github.com/brentp/cyvcf2
+website_url: https://brentp.github.io/cyvcf2/
+docs_url: https://brentp.github.io/cyvcf2/
+
+category: Data
+tags: [python, genomics, vcf, bcf, htslib, cython, bioinformatics]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: pip install cyvcf2
+
+problem_solved: |
+  Pure-Python VCF parsers stall on multi-sample VCFs because each genotype
+  is decoded in Python. cyvcf2 streams htslib records into numpy arrays for
+  genotype, depth, and region queries so cohort-scale VCFs stay usable in
+  Python.
+
+use_cases:
+  - Stream a multi-sample VCF and pull numpy arrays of genotypes per site
+  - Query variants in a genomic region from a tabix-indexed VCF or BCF
+  - Filter sites by allele frequency or missingness without leaving Python
+  - Build annotation or GWAS QC scripts on BCF with htslib-speed parsing

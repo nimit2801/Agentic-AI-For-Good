@@ -1,0 +1,26 @@
+name: WhatsHap
+description: Read-based phasing tool for genomic variants. WhatsHap assembles haplotypes from long or short DNA sequencing reads that span heterozygous variants, without needing a pedigree.
+tagline: Read-based haplotype phasing for long and short reads
+
+github_url: https://github.com/whatshap/whatshap
+website_url: https://whatshap.readthedocs.io
+docs_url: https://whatshap.readthedocs.io
+
+category: Data
+tags: [python, genomics, phasing, haplotypes, long-reads, vcf, bioinformatics]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: pip install whatshap
+
+problem_solved: |
+  Unphased VCFs leave heterozygous variants unassigned to haplotypes, which
+  breaks compound-het interpretation and long-read polishing. WhatsHap
+  walks reads that span multiple hets and writes a phased VCF, working for
+  both long and short reads.
+
+use_cases:
+  - Phase a diploid VCF using PacBio or Nanopore reads spanning hets
+  - Phase short-read alignments when pedigree data is not available
+  - Output haplotype-tagged BAM for downstream assembly or imputation
+  - Combine WhatsHap phasing with long-read SV or small-variant calls
