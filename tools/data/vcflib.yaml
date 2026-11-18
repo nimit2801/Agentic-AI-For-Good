@@ -1,0 +1,26 @@
+name: vcflib
+description: C++ library and command-line tools for parsing, filtering, and transforming VCF files so variant pipelines can stream annotations, allele stats, and format conversions without custom parsers.
+tagline: Parse and manipulate VCF variant files from the command line
+
+github_url: https://github.com/vcflib/vcflib
+website_url: https://github.com/vcflib/vcflib
+docs_url: https://github.com/vcflib/vcflib#vcflib
+install_command: brew install vcflib
+
+category: Data
+tags: [cpp, bioinformatics, genomics, vcf, variants, ngs]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Variant call files need filtering, allele-frequency annotation, and
+  format tweaks that are painful to write as one-off parsers. vcflib
+  streams those operations as Unix tools so genomics pipelines can
+  reshape VCF on the command line without loading the whole file.
+
+use_cases:
+  - Filter and annotate a cohort VCF by allele frequency or INFO fields
+  - Flatten multi-allelic sites before downstream association tests
+  - Stream VCF through Unix pipes for parallel variant processing
+  - Convert or subset variant records without writing a custom parser
