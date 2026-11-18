@@ -1,0 +1,25 @@
+name: bamtools
+description: BamTools is a C++ API and command-line toolkit for reading, writing, and filtering BAM alignment files. It converts, merges, counts, and inspects headers so pipelines can slice BAM data without a full SAMtools workflow.
+tagline: C++ API and CLI for BAM alignment files
+
+github_url: https://github.com/pezmaster31/bamtools
+docs_url: https://github.com/pezmaster31/bamtools/wiki
+install_command: conda install -c bioconda bamtools
+
+category: Data
+tags: [cpp, bioinformatics, bam, ngs, genomics]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Scripts that only need to filter, merge, or inspect BAM files
+  still pull in a heavy SAMtools stack. BamTools exposes a C++
+  API and a small CLI so those steps can convert, count, and
+  subset alignments without extra toolchain weight.
+
+use_cases:
+  - Convert SAM to BAM or BAM to FASTQ in a pipeline step
+  - Filter BAM records by mapping quality or flags
+  - Merge lane-level BAM files into a sample BAM
+  - Inspect BAM headers and alignment counts from a C++ tool
