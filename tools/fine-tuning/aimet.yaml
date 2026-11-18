@@ -1,0 +1,28 @@
+name: AIMET
+description: Qualcomm library for post-training quantization, quantization-aware training, and compression of neural networks. AIMET shrinks trained PyTorch models for on-device inference with less accuracy loss than naive INT8 conversion.
+tagline: Quantize and compress trained models for on-device inference
+
+github_url: https://github.com/qualcomm/aimet
+website_url: https://quic.github.io/aimet-pages/index.html
+docs_url: https://qualcomm.github.io/aimet-pages/releases/latest/index.html
+
+install_command: pip install aimet-torch
+
+category: Fine-tuning
+tags: [python, quantization, compression, pytorch, on-device, qat]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Deploying a trained network on phones or edge GPUs needs smaller,
+  quantized weights without a large accuracy drop. AIMET applies
+  post-training quantization, QAT, and compression so a PyTorch model
+  fits on-device instead of a naive INT8 cast that wrecks quality.
+
+use_cases:
+  - Apply post-training quantization to a PyTorch vision or LLM checkpoint
+  - Run quantization-aware training before exporting an on-device model
+  - Compress a model with channel pruning before mobile deployment
+  - Compare INT8 accuracy against the original FP32 baseline
+  - Prepare a Qualcomm AI Hub or ONNX export from a quantized graph

@@ -1,0 +1,26 @@
+name: CoAI
+description: Self-hosted multi-tenant LLM gateway with admin, billing, and routing across 200-plus models and 35-plus providers. CoAI unifies chat, cost control, and load balancing so a team shares one OpenAI-compatible endpoint.
+tagline: Self-hosted multi-tenant gateway for 200-plus LLM providers
+
+github_url: https://github.com/coaidev/coai
+website_url: https://coai.dev
+docs_url: https://coai.dev/docs
+
+category: LLM
+tags: [golang, llm-gateway, openai, proxy, billing, self-hosted]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Teams that mix OpenAI, Gemini, and local models need one endpoint,
+  quotas, and a bill. CoAI is a self-hosted gateway with routing,
+  load balancing, and credit billing so users share 200-plus models
+  without each app talking to every vendor SDK.
+
+use_cases:
+  - Put one OpenAI-compatible proxy in front of many LLM vendors
+  - Bill internal teams with credits or subscriptions per model
+  - Route traffic by priority and cost across providers
+  - Host a multi-tenant chat UI with admin controls
+  - Cache model responses to cut repeat inference spend

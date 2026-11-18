@@ -1,0 +1,28 @@
+name: Opacus
+description: Opacus trains PyTorch models with differential privacy by wrapping the optimizer and tracking per-sample gradients. It lets teams add DP-SGD to existing training loops without rewriting the model.
+tagline: Train PyTorch models with differential privacy
+
+github_url: https://github.com/meta-pytorch/opacus
+website_url: https://opacus.ai
+docs_url: https://opacus.ai/api/
+
+install_command: pip install opacus
+
+category: Fine-tuning
+tags: [python, pytorch, differential-privacy, dp-sgd, privacy, training]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Fine-tuning on private user data can leak examples through gradients.
+  Opacus adds DP-SGD to a PyTorch loop with privacy accounting so teams
+  train or fine-tune models with a stated epsilon instead of hoping
+  the optimizer does not memorize records.
+
+use_cases:
+  - Fine-tune a classifier on private user data with a privacy budget
+  - Wrap an existing PyTorch optimizer with DP-SGD
+  - Track epsilon and delta during a training run
+  - Train a language model on sensitive text with per-sample clipping
+  - Prototype a differentially private training pipeline before production
