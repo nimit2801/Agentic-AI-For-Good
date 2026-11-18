@@ -1,0 +1,26 @@
+name: Harmony
+description: Fast integration method for single-cell data that removes dataset-specific batch effects while preserving biological variation so labs can merge scRNA-seq experiments into one embedding.
+tagline: Integrate single-cell datasets across batches and studies
+
+github_url: https://github.com/immunogenomics/harmony
+website_url: https://pati-ni.github.io/harmony/
+docs_url: https://pati-ni.github.io/harmony/
+install_command: install.packages("harmony")
+
+category: Data
+tags: [r, bioinformatics, single-cell, rna-seq, batch-correction, genomics]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Merging scRNA-seq runs from different labs or chemistries mixes batch
+  effects into clustering so cell types split by dataset instead of
+  biology. Harmony integrates embeddings quickly, removing technical
+  shift while keeping real cell-type structure for joint analysis.
+
+use_cases:
+  - Integrate multiple scRNA-seq batches before clustering in Seurat
+  - Merge public and in-house single-cell datasets into one embedding
+  - Remove donor or chemistry batch effects without erasing cell types
+  - Run Harmony from R as part of a standard single-cell workflow

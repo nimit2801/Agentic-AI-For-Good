@@ -1,0 +1,26 @@
+name: PGGB
+description: PanGenome Graph Builder constructs variation graphs from assembled genomes using all-to-all alignment, graph induction, and normalization so pangenome projects can emit GFA graphs and reference-relative VCFs.
+tagline: Build pangenome variation graphs from assembled genomes
+
+github_url: https://github.com/pangenome/pggb
+website_url: https://pggb.readthedocs.io
+docs_url: https://pggb.readthedocs.io
+install_command: conda install -c bioconda pggb
+
+category: Data
+tags: [bioinformatics, pangenome, genomics, gfa, assembly, variation-graph]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Linear references hide structural diversity across haplotypes, and
+  stitching aligners, graph inducers, and normalizers by hand is
+  brittle. PGGB runs all-to-all alignment through graph smoothing so
+  pangenome projects get a GFA variation graph and optional VCF.
+
+use_cases:
+  - Build a pangenome graph from haplotype FASTA assemblies in one pipeline
+  - Call small and large variants from a graph relative to a chosen reference
+  - Partition chromosome communities before whole-genome graph construction
+  - Produce GFA graphs for vg or odgi downstream analysis

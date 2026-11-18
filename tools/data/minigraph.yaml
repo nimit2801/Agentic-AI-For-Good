@@ -1,0 +1,26 @@
+name: minigraph
+description: Sequence-to-graph mapper and pangenome graph generator that incrementally aligns assemblies onto a graph so large-scale pangenomes can be built and queried without an all-versus-all MSA.
+tagline: Map sequences to graphs and grow pangenome graphs
+
+github_url: https://github.com/lh3/minigraph
+website_url: https://lh3.github.io/minigraph
+docs_url: https://lh3.github.io/minigraph
+install_command: conda install -c bioconda minigraph
+
+category: Data
+tags: [c, bioinformatics, pangenome, genomics, alignment, gfa, assembly]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Mapping reads or assemblies to a linear FASTA misses paths that only
+  exist as alternate haplotypes. minigraph maps sequences to GFA graphs
+  and can grow a pangenome incrementally so large cohorts get graph
+  alignments without a full multiple-sequence alignment.
+
+use_cases:
+  - Map long reads or assemblies to a pangenome GFA and emit GAF alignments
+  - Incrementally add haplotypes to build a minigraph-cactus style pangenome
+  - Generate a variation graph from multiple assembled genomes
+  - Use graph mapping as a faster alternative to all-versus-all MSA

@@ -1,0 +1,25 @@
+name: smoove
+description: Smoove wraps Lumpy, svtyper, and related SV tools so Illumina WGS cohorts get jointly called, genotyped structural-variant VCFs without stitching those callers by hand.
+tagline: Smooth structural variant calling for WGS cohorts
+
+github_url: https://github.com/brentp/smoove
+docs_url: https://github.com/brentp/smoove
+install_command: conda install -c bioconda smoove
+
+category: Data
+tags: [go, bioinformatics, structural-variants, illumina, genomics, vcf, ngs]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Lumpy, genotyping, and VCF merge steps for structural variants are
+  easy to wire incorrectly across a cohort. Smoove runs calling,
+  parallel genotyping, and indexing so WGS pipelines emit one
+  genotyped SV VCF without a custom glue script per sample.
+
+use_cases:
+  - Jointly call and genotype SVs from a small Illumina WGS cohort in one command
+  - Call per-sample SVs then merge sites for a large population WGS study
+  - Exclude decoy and high-depth regions with a BED file before SV calling
+  - Produce compressed, indexed SV VCFs ready for downstream filtering
