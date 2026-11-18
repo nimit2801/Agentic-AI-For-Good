@@ -1,0 +1,26 @@
+name: BWA-MEM2
+description: Next-generation BWA-MEM aligner with a smaller FM-index and faster SIMD mapping. BWA-MEM2 keeps SAM output compatible with bwa mem 0.7.17 while cutting human-genome index size on disk from about 80 GB to 10 GB.
+tagline: Faster BWA-MEM with a much smaller genome index
+
+github_url: https://github.com/bwa-mem2/bwa-mem2
+website_url: https://github.com/bwa-mem2/bwa-mem2
+docs_url: https://github.com/bwa-mem2/bwa-mem2#readme
+
+category: Data
+tags: [cpp, genomics, alignment, bwa, ngs, bioinformatics]
+pricing: free
+is_open_source: true
+license: NOASSERTION
+install_command: conda install -c bioconda bwa-mem2
+
+problem_solved: |
+  Classic bwa mem indexes a human genome at tens of GB, which slows node
+  startup and wastes RAM. BWA-MEM2 rebuilds a compressed FM-index so mem
+  mapping stays SAM-compatible while index disk and memory drop several
+  fold.
+
+use_cases:
+  - Index a reference FASTA and map paired-end reads to SAM with bwa-mem2 mem
+  - Drop-in replace bwa mem 0.7.17 in an Illumina WGS pipeline
+  - Cut human-genome index footprint on shared HPC nodes
+  - Keep MC flags and SAM fields aligned with original bwa mem output
