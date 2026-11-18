@@ -1,0 +1,25 @@
+name: hap.py
+description: hap.py benchmarks variant calls against a gold-standard truth VCF at the haplotype level. It compares diploid genotypes so representation differences between callers do not inflate false positives, and som.py compares alleles for somatic callsets.
+tagline: Haplotype-level VCF comparison against truth sets
+
+github_url: https://github.com/Illumina/hap.py
+docs_url: https://github.com/Illumina/hap.py
+install_command: conda install -c bioconda hap.py
+
+category: Data
+tags: [cpp, bioinformatics, vcf, variant-calling, benchmarking, ngs]
+pricing: free
+is_open_source: true
+
+problem_solved: |
+  Two VCFs can describe the same diploid haplotype with different
+  alleles and positions, so a naive site comparison reports errors
+  that are not real. hap.py compares genotypes at the haplotype
+  level against a truth VCF and confident BED so caller accuracy
+  can be measured fairly.
+
+use_cases:
+  - Benchmark a germline VCF against a GIAB truth set
+  - Restrict comparison to a confident-regions BED file
+  - Compare somatic callsets with som.py on allele identity
+  - Count true positives and false positives for a variant caller

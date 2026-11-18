@@ -1,0 +1,25 @@
+name: HapCUT2
+description: HapCUT2 assembles diploid haplotypes from aligned reads and a VCF of heterozygous variants. It works across Illumina, PacBio, Nanopore, linked-reads, and Hi-C so one individual can be phased without a technology-specific assembler.
+tagline: Diploid haplotype assembly across sequencing technologies
+
+github_url: https://github.com/vibansal/HapCUT2
+docs_url: https://github.com/vibansal/HapCUT2
+install_command: conda install -c bioconda hapcut2
+
+category: Data
+tags: [cpp, bioinformatics, phasing, haplotypes, ngs, long-reads]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Heterozygous variants in a VCF are unphased until reads connect
+  them into haplotype blocks. HapCUT2 extracts haplotype-informative
+  fragments from a BAM and assembles maximum-likelihood blocks so
+  an individual can be phased from short reads, long reads, or Hi-C.
+
+use_cases:
+  - Phase heterozygous SNVs from Illumina or long-read BAM files
+  - Assemble haplotypes from 10X or other linked-read data
+  - Scaffold long-read haplotypes with Hi-C proximity ligations
+  - Convert BAM plus VCF into a compact fragment file with extractHAIRS

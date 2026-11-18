@@ -1,0 +1,26 @@
+name: cwltool
+description: cwltool is the reference implementation of the Common Workflow Language. It runs CWL workflows and command-line tools locally, resolving Docker or software requirements so a portable workflow file can execute on a laptop or cluster.
+tagline: Reference runner for Common Workflow Language workflows
+
+github_url: https://github.com/common-workflow-language/cwltool
+website_url: https://cwltool.readthedocs.io/
+docs_url: https://cwltool.readthedocs.io/
+install_command: pip install cwltool
+
+category: Dev Tools
+tags: [python, workflow, cwl, bioinformatics, reproducibility]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  CWL workflow files are portable, but they still need a runner
+  that resolves inputs, containers, and command-line bindings.
+  cwltool executes those documents locally so a workflow can be
+  tested before it is submitted to a cluster or cloud engine.
+
+use_cases:
+  - Run a CWL CommandLineTool on a local FASTQ sample
+  - Validate a CWL workflow document before cluster submission
+  - Execute containerized bioinformatics steps from a CWL file
+  - Debug input bindings and runtime requirements on a laptop
