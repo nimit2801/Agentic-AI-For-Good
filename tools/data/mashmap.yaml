@@ -1,0 +1,25 @@
+name: MashMap
+description: Fast approximate aligner for long DNA sequences. MashMap estimates local alignment boundaries and identity with minmers and MinHash instead of computing base-level alignments, so assemblies and long reads map to references in minutes.
+tagline: Approximate long-sequence mapping with minmers
+
+github_url: https://github.com/marbl/MashMap
+website_url: https://github.com/marbl/MashMap
+docs_url: https://github.com/marbl/MashMap#readme
+
+category: Data
+tags: [cpp, genomics, alignment, long-reads, minhash, pangenome, bioinformatics]
+pricing: free
+is_open_source: true
+license: Public Domain
+
+problem_solved: |
+  Exact whole-genome alignment is too slow and memory-heavy when you only need
+  homology boundaries and identity. MashMap reports local mappings and ANI
+  estimates from sampled k-mers, so assemblies and PacBio or ONT reads can be
+  placed against a reference without a full pairwise alignment.
+
+use_cases:
+  - Map a genome assembly to a reference and write PAF with predicted ANI
+  - Approximate-map PacBio or ONT reads before a slower exact aligner
+  - Align a query set against a list of reference genomes
+  - Seed pangenome pipelines that need fast homology maps, such as wfmash

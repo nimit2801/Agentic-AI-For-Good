@@ -1,0 +1,26 @@
+name: WorkflowBuilder
+description: Open-source React workflow editor plus Temporal orchestration for products that let users draw automations. It includes human approval steps, versioned graphs, and a live run view so AI agent workflows wait, retry, and resume on your own infrastructure.
+tagline: White-label workflow editor that runs on Temporal
+
+github_url: https://github.com/synergycodes/workflowbuilder
+website_url: https://www.workflowbuilder.io/
+docs_url: https://www.workflowbuilder.io/docs/overview/
+install_command: npm install @workflowbuilder/sdk
+
+category: Agents
+tags: [typescript, react, agents, workflow, temporal, human-in-the-loop]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Embedding a workflow canvas is easy. Making those graphs durable, versioned,
+  and pauseable for human approval is not. WorkflowBuilder ships a white-label
+  React editor and a Temporal backend so product teams can run user-drawn agent
+  and business workflows on their own Postgres without a per-run vendor bill.
+
+use_cases:
+  - Embed a schema-driven workflow editor in a SaaS product
+  - Run user-drawn graphs as durable Temporal workflows with retries
+  - Pause an agent step until a person approves, corrects, or rejects it
+  - Show a live canvas of running, failed, and waiting steps for each run

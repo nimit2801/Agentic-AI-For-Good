@@ -1,0 +1,25 @@
+name: meryl
+description: Genomic k-mer counter and sequence utility from the MARBL group. meryl builds a directory of k-mer databases, looks up or compresses k-mers, and can count directly from BAM or CRAM.
+tagline: Fast genomic k-mer counting for assemblies and mappers
+
+github_url: https://github.com/marbl/meryl
+website_url: https://github.com/marbl/meryl
+docs_url: https://github.com/marbl/meryl#readme
+
+category: Data
+tags: [c, genomics, kmers, assembly, bioinformatics]
+pricing: free
+is_open_source: true
+license: Public Domain
+
+problem_solved: |
+  Repeat-aware mappers and T2T assemblers need high-frequency k-mers from a
+  reference, and older k-mer DBs are slow or incompatible. meryl counts,
+  lookups, and filters k-mers from FASTA, BAM, or CRAM so tools such as
+  Winnowmap can down-weight repeats without a separate counting stack.
+
+use_cases:
+  - Count k-mers in a reference and print the most frequent for Winnowmap
+  - Look up whether a sequence's k-mers appear in a meryl database
+  - Count k-mers directly from BAM or CRAM without converting to FASTA
+  - Compress k-mer sets used in genome assembly quality checks
