@@ -1,0 +1,24 @@
+name: Parsl
+description: "Python parallel scripting library that turns ordinary Python functions into scalable workflows. Parsl executes apps across laptops, clusters, clouds, and supercomputers with dataflow dependencies, so scientific and ML pipelines can grow from a script to HPC without a rewrite."
+tagline: "Python parallel scripting for HPC and clouds"
+github_url: https://github.com/Parsl/parsl
+website_url: https://parsl-project.org
+docs_url: https://parsl.readthedocs.io
+install_command: pip install parsl
+category: Dev Tools
+tags:
+  - python
+  - hpc
+  - workflows
+  - parallel
+  - scientific-computing
+  - dataflow
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Scientific Python scripts hit a wall when a loop over files needs a cluster, cloud, or supercomputer. Rewriting the same logic in a DAG engine or batch scheduler is slow and error-prone. Parsl annotates Python functions as apps, tracks dataflow futures, and plugs into Slurm, Kubernetes, AWS, and local threads so the same script scales from a laptop to HPC."
+use_cases:
+  - "Parallelize a parameter sweep or simulation ensemble across an HPC Slurm cluster from a Python script"
+  - "Run ML preprocessing and inference tasks on Kubernetes or cloud workers with dataflow futures"
+  - "Compose multi-step scientific pipelines where later apps wait on files produced by earlier apps"
+  - "Prototype a workflow on a laptop executor, then switch the same code to a cluster configuration"

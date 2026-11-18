@@ -1,0 +1,23 @@
+name: SRA Toolkit
+description: "NCBI command-line tools for downloading, converting, and inspecting Sequence Read Archive data. Teams use it to fetch public sequencing runs, dump FASTQ or SAM, and configure cloud access to petabyte-scale genomic archives without copying entire studies locally."
+tagline: "NCBI tools for Sequence Read Archive data"
+github_url: https://github.com/ncbi/sra-tools
+website_url: https://www.ncbi.nlm.nih.gov/sra
+docs_url: https://github.com/ncbi/sra-tools/wiki
+category: Data
+tags:
+  - genomics
+  - sequencing
+  - ncbi
+  - sra
+  - bioinformatics
+  - fastq
+pricing: free
+is_open_source: true
+license: Public Domain
+problem_solved: "Public sequencing data lives in NCBI's Sequence Read Archive in proprietary SRA format, not as ready-to-train FASTQ. ML and bioinformatics teams need a supported way to prefetch runs, convert them to FASTQ or SAM, and stream from cloud buckets without downloading entire studies. SRA Toolkit is the official NCBI CLI for prefetch, fasterq-dump, and vdb-config so training and analysis pipelines can pull exactly the reads they need."
+use_cases:
+  - "Prefetch public RNA-seq or WGS runs by accession and convert them to FASTQ for model training"
+  - "Stream SRA data from AWS or GCP cloud buckets instead of copying full studies to local disk"
+  - "Convert SRA alignments to SAM or BAM for variant calling and quality-control workflows"
+  - "Configure NCBI cloud credentials and cache paths so batch jobs can pull SRA data reproducibly"

@@ -1,0 +1,23 @@
+name: miniwdl
+description: "Local runner and developer toolkit for the Workflow Description Language (WDL). miniwdl validates WDL documents, runs workflows on a laptop or server with Docker or Singularity, and helps debug bioinformatics pipelines without standing up a full Cromwell cluster."
+tagline: "Local WDL runner and developer tools"
+github_url: https://github.com/chanzuckerberg/miniwdl
+docs_url: https://miniwdl.readthedocs.io
+install_command: pip install miniwdl
+category: Dev Tools
+tags:
+  - wdl
+  - workflow
+  - bioinformatics
+  - python
+  - docker
+  - pipelines
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "WDL is the language many genomics pipelines use, but the reference Cromwell engine is heavy for local development. Scientists iterating on a workflow need fast validation, readable error messages, and a runner that works with Docker on a laptop. miniwdl is a Python WDL parser, linter, and local runner that executes tasks as containers, tracks outputs, and surfaces task-level logs so pipeline authors can develop and test WDL before submitting to a production engine."
+use_cases:
+  - "Validate and lint WDL workflow files locally before submitting them to a Cromwell or Terra cluster"
+  - "Run genomics WDL pipelines on a laptop or workstation using Docker or Singularity task isolation"
+  - "Debug failing WDL tasks with per-task logs, inputs, and outputs instead of opaque cluster job dumps"
+  - "Develop reusable WDL tasks for sequencing QC, alignment, and variant calling without a shared HPC queue"
