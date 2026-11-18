@@ -1,0 +1,25 @@
+name: Winnowmap
+description: Long-read mapper built on minimap2 that uses weighted minimizers and confidently alignable substrings to place ONT and PacBio reads in repetitive genome regions with fewer mapping errors.
+tagline: Long-read mapping that holds up in repeats
+
+github_url: https://github.com/marbl/Winnowmap
+website_url: https://github.com/marbl/Winnowmap
+docs_url: https://github.com/marbl/Winnowmap#readme
+
+category: Data
+tags: [c, genomics, long-reads, alignment, ont, pacbio, bioinformatics]
+pricing: free
+is_open_source: true
+license: Public Domain
+
+problem_solved: |
+  Standard minimizer mappers mask frequent k-mers and then miss or misplace
+  reads in tandem repeats and centromeres. Winnowmap down-weights those k-mers
+  instead of dropping them, and maps minimal high-quality substrings, so
+  PacBio and ONT reads land more accurately on repetitive references.
+
+use_cases:
+  - Map ONT or PacBio HiFi WGS reads to a repeat-rich human reference
+  - Align genome assemblies through centromeres and tandem repeats
+  - Reduce allelic bias when a read carries a non-reference allele in a repeat
+  - Precompute frequent k-mers with meryl, then emit SAM or PAF alignments
