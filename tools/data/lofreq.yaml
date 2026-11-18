@@ -1,0 +1,26 @@
+name: LoFreq
+description: Sensitive variant caller for low-frequency SNPs and indels in deep sequencing so labs detect subclonal mutations and viral quasispecies that pileup SNP scanners miss.
+tagline: Low-frequency variant calling from deep sequencing
+
+github_url: https://github.com/CSB5/lofreq
+website_url: http://csb5.github.io/lofreq/
+docs_url: http://csb5.github.io/lofreq/
+install_command: conda install -c bioconda lofreq
+
+category: Data
+tags: [c, genomics, variant-calling, low-frequency, ngs, bioinformatics]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Standard SNP callers assume germline allele frequencies, so
+  subclonal tumor mutations and viral variants disappear into noise.
+  LoFreq models base-call quality and strand bias so labs call
+  variants well below 1 percent frequency in deep BAM alignments.
+
+use_cases:
+  - Call subclonal SNPs in a deep tumor sequencing BAM
+  - Detect low-frequency indels in viral quasispecies data
+  - Run somatic calling without a matched normal when coverage is high
+  - Filter strand-biased artifacts before reporting rare variants
