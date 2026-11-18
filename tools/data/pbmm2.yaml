@@ -1,0 +1,25 @@
+name: pbmm2
+description: Official PacBio minimap2 wrapper that takes native PacBio BAM or XML in and writes sorted BAM out. pbmm2 replaces BLASR with recommended presets, on-the-fly sorting, and postprocessed alignments for polishing.
+tagline: minimap2 wrapper for native PacBio BAM
+
+github_url: https://github.com/PacificBiosciences/pbmm2
+website_url: https://github.com/PacificBiosciences/pbmm2
+docs_url: https://github.com/PacificBiosciences/pbmm2#readme
+
+category: Data
+tags: [cpp, genomics, pacbio, alignment, minimap2, bam, bioinformatics]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause-Clear
+
+problem_solved: |
+  Generic minimap2 does not speak PacBio BAM, XML datasets, or SMRT presets,
+  so labs had to convert formats and tune flags by hand. pbmm2 wraps minimap2
+  with native PacBio I/O, recommended presets, and sorted BAM ready for
+  GenomicConsensus polishing.
+
+use_cases:
+  - Align PacBio subreads or HiFi BAM to a reference with a SUBREAD preset
+  - Build a reusable .mmi index, then align many movies against it
+  - Sort alignments on the fly and emit BAM plus PBI for downstream polishing
+  - Replace BLASR in PacBio mapping workflows with faster identity and runtime

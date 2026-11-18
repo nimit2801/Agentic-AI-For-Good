@@ -1,0 +1,25 @@
+name: Verkko
+description: Hybrid telomere-to-telomere genome assembler for accurate long reads plus Oxford Nanopore ultra-longs. Verkko builds a multiplex de Bruijn graph, resolves tangles with HiFi then ONT, and emits contig consensus.
+tagline: T2T assembly from HiFi and ultra-long ONT reads
+
+github_url: https://github.com/marbl/verkko
+website_url: https://github.com/marbl/verkko
+docs_url: https://github.com/marbl/verkko#readme
+
+category: Data
+tags: [python, genomics, assembly, hifi, ont, t2t, bioinformatics]
+pricing: free
+is_open_source: true
+license: Public Domain
+
+problem_solved: |
+  Telomere-to-telomere assembly needs both accurate long reads and ultra-long
+  ONT to span repeats, and stitching those graphs by hand does not scale.
+  Verkko combines MBG, GraphAligner, MashMap, and Canu consensus into one
+  pipeline so labs can assemble complete chromosomes from HiFi plus UL data.
+
+use_cases:
+  - Assemble a T2T genome from PacBio HiFi and ONT ultra-long reads
+  - Resolve centromeric loops after building a multiplex de Bruijn graph
+  - Produce contig consensus for human or other large eukaryotic genomes
+  - Add Hi-C or Pore-C data when haplotype phasing is required
