@@ -1,0 +1,25 @@
+name: PowerfulSeal
+description: Kubernetes chaos testing tool originally from Bloomberg. PowerfulSeal kills pods, adds latency, and follows policies or interactive hunts so ML platforms can validate recovery with scenario files instead of one-off kubectl deletes.
+tagline: Policy-driven chaos testing for Kubernetes
+
+github_url: https://github.com/powerfulseal/powerfulseal
+docs_url: https://powerfulseal.github.io/powerfulseal/
+
+category: Dev Tools
+tags: [chaos-engineering, kubernetes, testing, python, bloomberg, resilience]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+install_command: pip install powerfulseal
+
+problem_solved: |
+  kubectl delete is not a repeatable chaos plan. PowerfulSeal describes
+  pod kills, network faults, and node pressure as policies so staging
+  ML clusters get the same experiment every run and CI can fail when
+  inference or retrieval stops recovering.
+
+use_cases:
+  - Run a policy that kills RAG API pods and checks the gateway still serves
+  - Interactive hunt mode to pick victims in a live ML namespace
+  - Inject network faults between embedding workers and a vector DB
+  - Gate a Kubernetes ML platform release on PowerfulSeal scenario exit codes

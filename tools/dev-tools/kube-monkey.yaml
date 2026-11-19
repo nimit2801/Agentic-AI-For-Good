@@ -1,0 +1,24 @@
+name: kube-monkey
+description: Chaos Monkey for Kubernetes. kube-monkey randomly kills pods in opted-in namespaces so ML serving Deployments can prove they survive instance death the way Netflix Chaos Monkey does for VMs.
+tagline: Random pod killer for Kubernetes chaos testing
+
+github_url: https://github.com/asobti/kube-monkey
+docs_url: https://asobti.github.io/kube-monkey/getting-started/
+
+category: Dev Tools
+tags: [chaos-engineering, kubernetes, testing, resilience, helm]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Kubernetes inference and RAG workloads look fine until a pod vanishes.
+  kube-monkey schedules random pod kills for labeled apps so replica
+  sets, readiness probes, and model gateways are forced to recover
+  without waiting for a real node failure.
+
+use_cases:
+  - Kill random inference pods in a staging namespace during business hours
+  - Opt in a vector-DB StatefulSet and watch failover under pod death
+  - Validate HPA and PDB behavior for GPU training jobs
+  - Run weekday chaos on agent worker Deployments before production
