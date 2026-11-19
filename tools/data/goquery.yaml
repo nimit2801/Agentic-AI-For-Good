@@ -1,0 +1,24 @@
+name: goquery
+description: jQuery-like HTML parser and scraper for Go built on net/html. Used to extract tables, links, and text from docs, papers, and web pages in data pipelines without a browser.
+tagline: jQuery-like HTML parsing and scraping for Go
+
+github_url: https://github.com/PuerkitoBio/goquery
+docs_url: https://github.com/PuerkitoBio/goquery#readme
+install_command: go get github.com/PuerkitoBio/goquery
+
+category: Data
+tags: [go, html, scraping, parser, extraction]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Go data pipelines that pull text from HTML still hand-walk net/html
+  nodes. goquery adds CSS-selector queries so docs, papers, and pages
+  can be scraped into training records without a browser.
+
+use_cases:
+  - Extract article text from HTML for an LLM training corpus
+  - Pull tables from docs pages into structured Go records
+  - Collect links and metadata from model-card HTML
+  - Clean scraped markup before chunking for RAG

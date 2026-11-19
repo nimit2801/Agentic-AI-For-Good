@@ -1,0 +1,24 @@
+name: fastjson
+description: Fast JSON parser and validator for Go with no custom structs, codegen, or reflection. Used to read nested fields from high-volume event and feature JSON on the hot path.
+tagline: Fast JSON parser and validator for Go
+
+github_url: https://github.com/valyala/fastjson
+docs_url: https://github.com/valyala/fastjson#readme
+install_command: go get github.com/valyala/fastjson
+
+category: Data
+tags: [go, json, parser, validation, performance]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go workers that only need a few JSON fields still pay full unmarshal
+  cost. fastjson parses and validates in place with no structs so
+  event and feature payloads can be read on the hot path.
+
+use_cases:
+  - Read nested fields from Kafka JSON events in a Go worker
+  - Validate inference webhook payloads without structs
+  - Extract feature keys from high-volume JSON logs
+  - Filter eval records by a JSON path before full decode
