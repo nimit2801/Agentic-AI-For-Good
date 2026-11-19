@@ -1,0 +1,25 @@
+name: Redigo
+description: Lower-level Go client for Redis with a connection pool and support for every Redis command. Redigo is used when caches, queues, and session state need a thin Redis protocol client rather than a higher-level wrapper.
+tagline: Go client for Redis
+
+github_url: https://github.com/gomodule/redigo
+docs_url: https://github.com/gomodule/redigo#readme
+install_command: go get github.com/gomodule/redigo
+
+category: Data
+tags: [go, redis, cache, client, connection-pool]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Some Go services want a thin Redis protocol client with a pool
+  instead of a high-level command wrapper. Redigo exposes commands
+  over a pooled connection so caches, queues, and session keys stay
+  close to Redis without extra abstractions.
+
+use_cases:
+  - Cache embeddings and prompt results in Redis from a Go worker
+  - Use Redis lists as job queues for agent task dispatch
+  - Pool Redis connections for session and rate-limit keys
+  - Send raw Redis commands for Lua scripts in an inference gateway

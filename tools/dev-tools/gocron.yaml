@@ -1,0 +1,25 @@
+name: gocron
+description: Fluent in-process cron scheduler for Go. gocron runs periodic embedding refresh, eval jobs, and agent heartbeats inside a service without a separate cron daemon or Kubernetes CronJob.
+tagline: Fluent cron scheduling for Go
+
+github_url: https://github.com/go-co-op/gocron
+docs_url: https://github.com/go-co-op/gocron#readme
+install_command: go get github.com/go-co-op/gocron
+
+category: Dev Tools
+tags: [go, cron, scheduler, jobs, background]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go agent and inference services need recurring work such as cache
+  refresh and health pings without depending on system cron. gocron
+  schedules jobs in-process with a fluent API so those tasks run
+  inside the same binary with start, stop, and concurrency limits.
+
+use_cases:
+  - Refresh embedding caches on a fixed interval inside a Go API
+  - Run nightly eval suites from a long-lived worker process
+  - Heartbeat agent workers so an orchestrator sees liveness
+  - Limit concurrent scheduled jobs so GPU or Redis load stays bounded

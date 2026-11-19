@@ -1,0 +1,25 @@
+name: cleanenv
+description: Clean environment configuration reader for Go that loads env vars, .env files, and YAML or TOML into structs. cleanenv is used so agent workers and model servers start with typed config and defaults.
+tagline: Clean environment configuration for Go
+
+github_url: https://github.com/ilyakaznacheev/cleanenv
+docs_url: https://github.com/ilyakaznacheev/cleanenv#readme
+install_command: go get github.com/ilyakaznacheev/cleanenv
+
+category: Dev Tools
+tags: [go, config, env, yaml, toml, 12-factor]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go agent and inference processes take config from env, files, and
+  defaults, and parsing each source by hand drifts from struct fields.
+  cleanenv fills structs from environment variables, .env, YAML, and
+  TOML so typed config, required fields, and defaults stay in one place.
+
+use_cases:
+  - Load model name, API keys, and queue URLs into a Go config struct
+  - Combine a YAML config file with env overrides in a worker container
+  - Fail fast when required settings are missing at process start
+  - Document 12-factor settings next to struct tags for an LLM gateway

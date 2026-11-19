@@ -1,0 +1,26 @@
+name: Gorilla Sessions
+description: Cookie and filesystem session store for Go with hooks for custom backends. Gorilla Sessions keeps login and agent-dashboard state on net/http APIs without rolling a cookie format by hand.
+tagline: Cookie and filesystem sessions for Go
+
+github_url: https://github.com/gorilla/sessions
+website_url: https://gorilla.github.io
+docs_url: https://github.com/gorilla/sessions#readme
+install_command: go get github.com/gorilla/sessions
+
+category: Dev Tools
+tags: [go, http, sessions, cookies, web, auth]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Go net/http APIs that serve eval dashboards and agent consoles need
+  signed cookies or filesystem sessions. Gorilla Sessions provides
+  cookie and filesystem stores plus room for custom backends so those
+  apps keep session state without inventing cookie encoding.
+
+use_cases:
+  - Store login sessions for a Go eval or labeling dashboard
+  - Keep flash messages after agent job submit on a net/http UI
+  - Use a cookie store for short-lived auth on an internal ML admin API
+  - Plug a Redis-backed session store into Gorilla for multi-instance agents
