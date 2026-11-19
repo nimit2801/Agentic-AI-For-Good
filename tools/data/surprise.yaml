@@ -1,0 +1,26 @@
+name: Surprise
+description: Python scikit for building and analyzing recommender systems. Surprise ships SVD, NMF, and k-NN collaborative filtering with MovieLens datasets, cross-validation, and grid search so you can benchmark recommenders without writing matrix factorization from scratch.
+tagline: Scikit for collaborative filtering recommenders
+
+github_url: https://github.com/NicolasHug/Surprise
+website_url: http://surpriselib.com
+docs_url: https://surpriselib.com
+install_command: pip install scikit-surprise
+
+category: Data
+tags: [python, recommender-systems, collaborative-filtering, svd, machine-learning, scikit]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Teams that need a recommendation baseline often reimplement SVD, k-NN, and
+  evaluation loops by hand. Surprise wraps classic collaborative filtering
+  algorithms, built-in datasets, and cross-validation so you can compare
+  recommenders and tune hyperparameters without writing matrix math from scratch.
+
+use_cases:
+  - Train an SVD or NMF recommender on MovieLens and report RMSE with built-in cross-validation
+  - Benchmark k-NN collaborative filtering against matrix factorization on a custom ratings file
+  - Grid-search neighborhood size and regularization before shipping a recs prototype
+  - Teach recommender-system algorithms with a scikit-learn style fit/predict API

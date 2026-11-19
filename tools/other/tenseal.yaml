@@ -1,0 +1,26 @@
+name: TenSEAL
+description: Homomorphic encryption library for tensors built on Microsoft SEAL. TenSEAL lets you add and multiply encrypted vectors and matrices from Python so privacy-preserving ML can score data without decrypting it on the server.
+tagline: Homomorphic encryption operations on tensors
+
+github_url: https://github.com/OpenMined/TenSEAL
+website_url: https://github.com/OpenMined/TenSEAL
+docs_url: https://github.com/OpenMined/TenSEAL
+install_command: pip install tenseal
+
+category: Other
+tags: [python, cpp, homomorphic-encryption, privacy, cryptography, tensors, seal]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Scoring user data on a remote model usually means sending plaintext features
+  to the server. TenSEAL wraps Microsoft SEAL so you can encrypt tensors in
+  Python and run addition and multiplication on ciphertext, keeping features
+  private while still computing linear models and encrypted aggregations.
+
+use_cases:
+  - Run encrypted linear regression or logistic scoring without decrypting client features
+  - Compute encrypted vector addition and element-wise products for private analytics
+  - Prototype CKKS approximate arithmetic on tensors before integrating a full HE stack
+  - Keep training-adjacent feature transforms on ciphertext in a privacy-preserving ML demo
