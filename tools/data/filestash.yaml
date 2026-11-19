@@ -1,0 +1,25 @@
+name: Filestash
+description: Self-hosted file manager that connects S3, SFTP, Git, Dropbox, and other backends into one web UI. Built for humans and agents, it lets teams browse, edit, and share datasets without installing a desktop client for every storage system.
+tagline: Universal file manager for humans and agents
+
+github_url: https://github.com/mickael-kerjean/filestash
+website_url: https://www.filestash.app/
+docs_url: https://www.filestash.app/docs
+
+category: Data
+tags: [file-manager, s3, sftp, self-hosted, web-ui, go, agents]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Training data, checkpoints, and experiment artifacts live across S3,
+  SFTP, Git, and SaaS drives. Filestash puts those backends behind one
+  browser UI with share links and plugins, so people and agents can
+  browse and edit files without juggling desktop clients or raw CLI keys.
+
+use_cases:
+  - Browse S3 training buckets in the browser without AWS console access
+  - Give a research team a shared UI over SFTP and Git-backed datasets
+  - Let agents list and fetch files from mixed storage through one HTTP front door
+  - Share selected folders via links instead of copying cloud credentials

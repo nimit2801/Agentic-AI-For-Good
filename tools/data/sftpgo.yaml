@@ -1,0 +1,26 @@
+name: SFTPGo
+description: Full-featured SFTP, HTTP/S, FTP/S, and WebDAV server with virtual folders on local disk, S3, Google Cloud Storage, and Azure Blob. Adds users, quotas, and a web admin so teams can share training data without exposing raw object-store credentials.
+tagline: SFTP and WebDAV server on S3 and local disk
+
+github_url: https://github.com/drakkan/sftpgo
+website_url: https://sftpgo.com
+docs_url: https://docs.sftpgo.com
+install_command: brew install sftpgo
+
+category: Data
+tags: [sftp, webdav, ftp, s3, file-transfer, go, self-hosted]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  ML teams still need SFTP and WebDAV for partners, labs, and legacy tools,
+  but object stores do not speak those protocols. SFTPGo fronts local disk
+  or S3-compatible buckets with users, quotas, and virtual folders so
+  datasets and checkpoints can be exchanged without handing out cloud keys.
+
+use_cases:
+  - Expose an S3 dataset bucket over SFTP for partner labs that cannot use the AWS CLI
+  - Give researchers WebDAV access to model checkpoints with per-user quotas
+  - Front Azure Blob or GCS with FTP/S for legacy data-ingest pipelines
+  - Self-host a file gateway with a web admin instead of a raw OpenSSH chroot

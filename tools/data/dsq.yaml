@@ -1,0 +1,26 @@
+name: dsq
+description: Command-line tool that runs SQL queries against JSON, CSV, Excel, Parquet, and other files without a database. Pipe logs or dump experiment metrics and query them with familiar SELECT syntax instead of writing one-off parsers.
+tagline: SQL queries against JSON, CSV, Excel, and Parquet
+
+github_url: https://github.com/multiprocessio/dsq
+website_url: https://github.com/multiprocessio/dsq
+docs_url: https://github.com/multiprocessio/dsq
+install_command: brew install dsq
+
+category: Data
+tags: [sql, json, csv, parquet, cli, go, data-analysis]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Experiment dumps, eval logs, and API traces arrive as JSON or CSV, and
+  spinning up a warehouse to ask one question is overkill. dsq lets you
+  run SQL directly on those files so you can filter, join, and aggregate
+  locally without loading DuckDB or writing a custom parser.
+
+use_cases:
+  - Query JSONL eval logs with SQL without importing them into a database
+  - Join a CSV of prompts with a Parquet of model scores on the command line
+  - Filter nested JSON API traces during debugging of an agent pipeline
+  - Explore Excel experiment spreadsheets with SELECT instead of a GUI
