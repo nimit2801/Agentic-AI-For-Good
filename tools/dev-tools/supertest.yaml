@@ -1,0 +1,26 @@
+name: SuperTest
+description: SuperAgent-based library for testing Node.js HTTP servers with a fluent API. Assert status codes, headers, and JSON bodies against Express, Fastify, and other apps without standing up a real port in every test.
+tagline: Fluent HTTP assertions for Node.js servers
+
+github_url: https://github.com/forwardemail/supertest
+website_url: https://github.com/forwardemail/supertest
+docs_url: https://github.com/forwardemail/supertest
+install_command: npm install supertest
+
+category: Dev Tools
+tags: [nodejs, testing, http, express, superagent, javascript]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  HTTP handler tests often need a running server and brittle curl
+  wrappers. SuperTest talks to the Node request listener directly, so
+  you can assert status, headers, and JSON on agent gateways and model
+  APIs with the same fluent style as SuperAgent.
+
+use_cases:
+  - Integration-test an Express LLM proxy without binding a public port
+  - Assert JSON error shapes from a Node agent webhook handler
+  - Cover Fastify RAG routes with status and body expectations in CI
+  - Replace ad-hoc http.get fixtures with readable SuperTest chains

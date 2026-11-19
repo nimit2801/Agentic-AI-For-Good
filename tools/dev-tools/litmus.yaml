@@ -1,0 +1,25 @@
+name: Litmus
+description: Cloud-native chaos engineering toolkit for Kubernetes. SREs define experiments as custom resources, run them against microservices, and score how agent platforms and data pipelines recover from failure.
+tagline: Chaos engineering for cloud-native platforms
+
+github_url: https://github.com/litmuschaos/litmus
+website_url: https://litmuschaos.io
+docs_url: https://docs.litmuschaos.io
+
+category: Dev Tools
+tags: [chaos-engineering, kubernetes, cncf, testing, sre, resilience]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Reliability work often stays as runbooks. Litmus turns chaos into
+  Kubernetes experiments with a hub of probes, so teams can break CPU,
+  network, and pods in a controlled way and prove that ML services and
+  agent runtimes meet their recovery goals.
+
+use_cases:
+  - Run pod-delete experiments against an LLM gateway in staging
+  - Stress CPU on embedding workers and watch queue backpressure
+  - Validate that a feature-store failover actually completes under network chaos
+  - Share ChaosHub experiments across SRE and ML platform teams

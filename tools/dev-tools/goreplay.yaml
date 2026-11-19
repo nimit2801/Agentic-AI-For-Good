@@ -1,0 +1,25 @@
+name: GoReplay
+description: Open-source HTTP traffic capture and replay. Shadow live API calls onto a staging service so you can test a new model gateway or agent backend against real production request patterns without touching users.
+tagline: Capture and replay live HTTP traffic
+
+github_url: https://github.com/buger/goreplay
+website_url: https://goreplay.org
+docs_url: https://goreplay.org
+
+category: Dev Tools
+tags: [http, traffic-replay, testing, go, load-testing, observability]
+pricing: free
+is_open_source: true
+license: LGPL-3.0
+
+problem_solved: |
+  Synthetic load rarely matches production. GoReplay sniffs live HTTP,
+  then replays it against a candidate service so you can compare a new
+  inference API or agent router with real payloads, headers, and timing
+  before you cut traffic over.
+
+use_cases:
+  - Shadow production LLM gateway traffic onto a canary model server
+  - Replay captured RAG HTTP calls while tuning retrieval latency
+  - Compare old and new agent backends using the same live request stream
+  - Feed recorded HTTP into staging without writing a custom load script
