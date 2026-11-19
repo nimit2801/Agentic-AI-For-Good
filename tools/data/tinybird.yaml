@@ -1,0 +1,24 @@
+name: Tinybird
+description: Real-time analytics platform that turns event streams and ClickHouse-style SQL into APIs. Tinybird ingests Kafka, webhooks, and files then serves low-latency endpoints so product and ML features query fresh aggregates without running a warehouse.
+tagline: Real-time analytics APIs on streaming data
+
+website_url: https://www.tinybird.co
+docs_url: https://www.tinybird.co/docs
+install_command: pip install tinybird-cli
+
+category: Data
+tags: [analytics, streaming, sql, apis, clickhouse, realtime]
+pricing: freemium
+is_open_source: false
+
+problem_solved: |
+  Product features that need fresh aggregates usually wait on a warehouse
+  or a hand-rolled ClickHouse cluster. Tinybird ingests streams and files,
+  lets you write SQL pipes, and publishes them as APIs so dashboards and
+  online features query seconds-old data without ops.
+
+use_cases:
+  - Publish SQL aggregations over Kafka events as low-latency HTTP APIs
+  - Power in-product analytics and ML features on streaming click and usage data
+  - Replace ad-hoc ClickHouse ops with hosted pipes and materialized endpoints
+  - Ingest webhooks and files, then query them with SQL from the Tinybird CLI

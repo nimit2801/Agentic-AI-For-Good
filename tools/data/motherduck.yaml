@@ -1,0 +1,23 @@
+name: MotherDuck
+description: Serverless cloud analytics built on DuckDB. MotherDuck lets teams query data lakes and local DuckDB files in a hosted warehouse so analytics and ML feature jobs scale without operating a database cluster.
+tagline: Serverless DuckDB analytics in the cloud
+
+website_url: https://motherduck.com
+docs_url: https://motherduck.com/docs
+
+category: Data
+tags: [duckdb, serverless, analytics, sql, cloud, data-warehouse]
+pricing: freemium
+is_open_source: false
+
+problem_solved: |
+  DuckDB is fast on a laptop but teams still need shared cloud compute,
+  storage, and collaboration. MotherDuck hosts DuckDB as a serverless
+  warehouse so you can query S3 and local files with the same SQL without
+  running your own cluster.
+
+use_cases:
+  - Run DuckDB SQL in the cloud against S3 and local parquet without a warehouse cluster
+  - Share analytics notebooks and hybrid local-cloud queries across a data team
+  - Power feature engineering jobs with serverless DuckDB instead of a heavy Spark cluster
+  - Connect BI tools to MotherDuck for interactive SQL on lakehouse files

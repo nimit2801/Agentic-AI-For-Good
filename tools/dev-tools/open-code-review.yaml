@@ -1,0 +1,26 @@
+name: Open Code Review
+description: Hybrid code review tool from Alibaba that combines deterministic pipelines with an LLM agent. Open Code Review posts precise line-level comments and ships built-in rules for NPE, thread-safety, XSS, and SQL injection, compatible with OpenAI and Anthropic APIs.
+tagline: Deterministic plus LLM agent code review at Alibaba scale
+
+github_url: https://github.com/alibaba/open-code-review
+website_url: https://open-codereview.ai
+docs_url: https://open-codereview.ai/docs/quickstart
+install_command: npm install -g @alibaba-group/open-code-review
+
+category: Dev Tools
+tags: [go, typescript, code-review, llm, security, ci, agents]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  LLM-only review bots miss deterministic bugs and flood PRs with noise.
+  Open Code Review pairs a rule pipeline with an LLM agent so comments land
+  on the right lines, covering NPE, XSS, SQL injection, and thread-safety
+  with models you already host.
+
+use_cases:
+  - Run ocr in CI to post line-level review comments on pull requests
+  - Catch NPE, XSS, and SQL injection issues with built-in language rulesets
+  - Delegate review to Claude Code, Cursor, or OpenCode via OCR skills and plugins
+  - Point OCR at OpenAI- or Anthropic-compatible endpoints for private model review
