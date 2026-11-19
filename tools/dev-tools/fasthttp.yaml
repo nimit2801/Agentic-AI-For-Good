@@ -1,0 +1,25 @@
+name: fasthttp
+description: High-performance HTTP package for Go tuned for low allocations on hot paths. fasthttp is used when inference gateways and embedding APIs need more throughput than net/http on the same hardware.
+tagline: Fast HTTP implementation for Go
+
+github_url: https://github.com/valyala/fasthttp
+docs_url: https://github.com/valyala/fasthttp#readme
+install_command: go get -u github.com/valyala/fasthttp
+
+category: Dev Tools
+tags: [go, http, performance, server, client]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  net/http allocation cost shows up on high-QPS embedding and
+  classification endpoints. fasthttp trades some API compatibility
+  for fewer allocations so those Go services serve more requests per
+  core when the bottleneck is HTTP overhead, not the model.
+
+use_cases:
+  - Serve a high-QPS embedding or classification HTTP API in Go
+  - Build a reverse proxy in front of local model servers
+  - Reduce GC pressure on a Go inference gateway under load
+  - Use Fiber or other fasthttp frameworks for agent-facing HTTP APIs

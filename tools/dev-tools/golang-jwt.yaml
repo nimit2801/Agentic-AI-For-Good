@@ -1,0 +1,26 @@
+name: golang-jwt
+description: Go implementation of JSON Web Tokens for signing, parsing, and validating JWTs. golang-jwt is the maintained successor to dgrijalva/jwt-go for auth on model APIs and agent callbacks.
+tagline: JSON Web Tokens for Go
+
+github_url: https://github.com/golang-jwt/jwt
+website_url: https://golang-jwt.github.io/jwt/
+docs_url: https://golang-jwt.github.io/jwt/
+install_command: go get -u github.com/golang-jwt/jwt/v5
+
+category: Dev Tools
+tags: [go, jwt, auth, security, tokens]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go inference APIs and agent callbacks need signed tokens without a
+  full auth server. golang-jwt signs and verifies JWTs with standard
+  algorithms so those services can trust callers after the original
+  jwt-go library was unmaintained.
+
+use_cases:
+  - Issue JWTs for a Go model-serving API after login
+  - Verify Bearer tokens on agent webhook and callback routes
+  - Sign short-lived tokens for internal ML microservice calls
+  - Migrate from the unmaintained dgrijalva/jwt-go import path

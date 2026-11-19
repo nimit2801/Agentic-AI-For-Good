@@ -1,0 +1,25 @@
+name: pflag
+description: Drop-in replacement for Go's flag package with POSIX and GNU-style --flags. pflag underpins Cobra and is used by kubectl-style CLIs for agent and ML ops tools.
+tagline: POSIX/GNU-style flags for Go
+
+github_url: https://github.com/spf13/pflag
+docs_url: https://github.com/spf13/pflag#readme
+install_command: go get github.com/spf13/pflag@latest
+
+category: Dev Tools
+tags: [go, cli, flags, cobra, posix]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Go's flag package does not accept GNU-style --long flags that users
+  expect on agent CLIs. pflag is a drop-in replacement with POSIX/GNU
+  syntax so Cobra and custom CLIs share the same flag behavior as
+  kubectl.
+
+use_cases:
+  - Add --model and --output flags to a Go agent CLI
+  - Share pflag FlagSets across Cobra subcommands for ML ops tools
+  - Parse shorthand and long flags the same way as GNU utilities
+  - Replace the standard library flag package without rewriting command code

@@ -1,0 +1,26 @@
+name: Resty
+description: Simple HTTP, REST, and SSE client library for Go with retries, middleware, and JSON helpers. Resty is a higher-level client than net/http for calling LLM APIs, vector stores, and internal agent services.
+tagline: Simple HTTP, REST, and SSE client for Go
+
+github_url: https://github.com/go-resty/resty
+website_url: https://resty.dev
+docs_url: https://resty.dev
+install_command: go get github.com/go-resty/resty/v2
+
+category: Dev Tools
+tags: [go, http, rest, client, sse, retry]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  net/http clients for LLM and vector APIs accumulate boilerplate for
+  JSON, headers, and retries. Resty provides a fluent client with
+  middleware and SSE so Go agent code talks to HTTP APIs without
+  rewriting that glue.
+
+use_cases:
+  - Call OpenAI-compatible chat APIs from Go with JSON request helpers
+  - Retry failed vector-store HTTP calls from an indexing worker
+  - Consume SSE token streams from a local model server
+  - Attach auth middleware once for every internal ML service client
