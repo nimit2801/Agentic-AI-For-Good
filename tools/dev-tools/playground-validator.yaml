@@ -1,0 +1,25 @@
+name: Playground Validator
+description: Struct and field validation for Go with tags, cross-field rules, and diving into maps and slices. Playground Validator checks request bodies and config structs before agent and inference handlers run.
+tagline: Struct and field validation for Go
+
+github_url: https://github.com/go-playground/validator
+docs_url: https://github.com/go-playground/validator#readme
+install_command: go get github.com/go-playground/validator/v10
+
+category: Dev Tools
+tags: [go, validation, structs, tags, api]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go APIs accept JSON into structs with no built-in required,
+  email, or range checks. Playground Validator reads struct tags
+  and nested fields so agent and inference handlers reject bad
+  input before it hits a model or queue.
+
+use_cases:
+  - Validate inference request JSON before calling a model API
+  - Enforce required fields on agent tool-call payloads
+  - Check nested config structs at process start
+  - Return field-level errors from a Go HTTP handler

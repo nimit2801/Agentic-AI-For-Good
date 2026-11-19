@@ -1,0 +1,25 @@
+name: Bubble Tea
+description: Elm-inspired TUI framework for Go. Bubble Tea is used to build interactive CLIs for agent consoles, model pickers, and local inference dashboards with keyboard-driven views and commands.
+tagline: Elm-inspired TUI framework for Go
+
+github_url: https://github.com/charmbracelet/bubbletea
+docs_url: https://github.com/charmbracelet/bubbletea#readme
+install_command: go get github.com/charmbracelet/bubbletea
+
+category: Dev Tools
+tags: [go, tui, cli, terminal, charmbracelet]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go agent CLIs need interactive terminals beyond fmt.Println, and
+  raw termios is painful. Bubble Tea models views and commands like
+  Elm so model pickers, log views, and local dashboards stay
+  keyboard-driven without a web UI.
+
+use_cases:
+  - Build a local agent console with selectable tools and logs
+  - Pick models and endpoints from a terminal menu
+  - Stream inference progress in a TUI status view
+  - Ship a Charm-style CLI for eval job control

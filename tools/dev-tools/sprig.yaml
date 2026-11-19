@@ -1,0 +1,26 @@
+name: Sprig
+description: Template function library for Go text and HTML templates. Sprig adds string, date, dict, and crypto helpers so Helm-style configs and prompt templates stay in templates instead of scattered Go helpers.
+tagline: Useful template functions for Go templates
+
+github_url: https://github.com/Masterminds/sprig
+website_url: http://masterminds.github.io/sprig/
+docs_url: http://masterminds.github.io/sprig/
+install_command: go get github.com/Masterminds/sprig/v3
+
+category: Dev Tools
+tags: [go, templates, helm, functions, config]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go templates lack helpers for strings, dates, and dicts that
+  prompt and config rendering need. Sprig registers those functions
+  so Helm-style YAML and LLM prompt templates stay declarative
+  instead of growing one-off FuncMap code.
+
+use_cases:
+  - Render agent prompt templates with string and date helpers
+  - Generate Helm-style config for model-serving charts
+  - Format eval report HTML with Sprig dict and list functions
+  - Share one FuncMap across CLI and server template paths
