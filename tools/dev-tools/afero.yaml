@@ -1,0 +1,25 @@
+name: Afero
+description: Universal filesystem abstraction for Go with backends for OS, memory, zip, and HTTP. Used to test and swap storage in ML CLIs, dataset loaders, and agent tools without coupling to the real disk.
+tagline: Universal filesystem abstraction for Go
+
+github_url: https://github.com/spf13/afero
+docs_url: https://github.com/spf13/afero#readme
+install_command: go get github.com/spf13/afero
+
+category: Dev Tools
+tags: [go, filesystem, testing, abstraction, io]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Go ML tools that read configs, datasets, and checkpoints are hard to
+  test when they call os.Open directly. Afero swaps OS, memory, and
+  archive backends so loaders and agent file tools stay testable
+  without touching the real disk.
+
+use_cases:
+  - Unit-test dataset loaders with an in-memory Afero filesystem
+  - Read model configs from OS or embedded zip with the same API
+  - Sandbox agent file tools behind a restricted Afero backend
+  - Swap storage backends in a Go CLI without rewriting path code
