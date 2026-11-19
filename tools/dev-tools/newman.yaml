@@ -1,0 +1,26 @@
+name: Newman
+description: Command-line collection runner for Postman. Newman executes API collections in CI so LLM gateway, agent tool, and RAG endpoint tests that live in Postman run headlessly on every pull request.
+tagline: Run Postman collections from the command line
+
+github_url: https://github.com/postmanlabs/newman
+website_url: https://www.postman.com
+docs_url: https://learning.postman.com/docs/collections/using-newman-cli/command-line-integration-with-newman/
+
+category: Dev Tools
+tags: [postman, testing, api, ci, cli, javascript]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+install_command: npm install -g newman
+
+problem_solved: |
+  API checks for model gateways often live in Postman and never run in CI.
+  Newman replays those collections from the command line with reporters
+  and exit codes so embedding, chat, and webhook contracts fail the build
+  when a provider change breaks them.
+
+use_cases:
+  - Run Postman smoke tests against a staging LLM gateway in GitHub Actions
+  - Regression-test RAG HTTP APIs from a shared collection on every PR
+  - Generate CI reports for agent-tool webhook collections
+  - Parameterize Newman runs across env URLs for multi-region inference

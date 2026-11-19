@@ -1,0 +1,26 @@
+name: Yaegi
+description: Another elegant Go interpreter from Traefik. Yaegi embeds or REPLs Go so plugin-style agent tools, eval scripts, and config hooks can run without a full compile cycle.
+tagline: Embedded Go interpreter for scripts and plugins
+
+github_url: https://github.com/traefik/yaegi
+website_url: https://pkg.go.dev/github.com/traefik/yaegi
+docs_url: https://pkg.go.dev/github.com/traefik/yaegi
+
+category: Dev Tools
+tags: [go, interpreter, repl, plugins, traefik]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+install_command: go install github.com/traefik/yaegi/cmd/yaegi@latest
+
+problem_solved: |
+  Go inference servers and agent runtimes are compiled, so hot-loading
+  user scripts or plugin tools usually means a rebuild. Yaegi interprets
+  Go source in-process so teams can experiment with tool handlers and
+  eval glue without shipping a new binary for every change.
+
+use_cases:
+  - REPL through Go client code against a local model gateway
+  - Hot-load plugin tools in a Go agent host without recompiling
+  - Evaluate user-supplied Go snippets in a sandboxed eval service
+  - Prototype Traefik-style middleware that calls embedding APIs

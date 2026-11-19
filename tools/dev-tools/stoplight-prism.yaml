@@ -1,0 +1,26 @@
+name: Stoplight Prism
+description: OpenAPI and Postman mock server from Stoplight. Prism turns a spec into a validating mock so LLM gateway and agent-tool clients can develop against contract-accurate HTTP without a live backend.
+tagline: Mock and validate APIs from OpenAPI specs
+
+github_url: https://github.com/stoplightio/prism
+website_url: https://stoplight.io/open-source/prism
+docs_url: https://docs.stoplight.io/docs/prism
+
+category: Dev Tools
+tags: [openapi, mocking, api, testing, http, cli]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+install_command: npm install -g @stoplight/prism-cli
+
+problem_solved: |
+  AI product clients need HTTP backends that match an OpenAPI contract,
+  but live model APIs are slow, billed, and drift from the spec. Prism
+  serves a mock from the spec and validates requests so gateway and
+  agent-tool clients fail fast when they send the wrong shape.
+
+use_cases:
+  - Mock an OpenAPI LLM gateway locally while building a RAG client
+  - Validate agent-tool HTTP calls against the published spec in CI
+  - Replay example responses from a Postman collection as a mock server
+  - Catch request schema drift before hitting paid inference endpoints

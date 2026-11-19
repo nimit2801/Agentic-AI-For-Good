@@ -1,0 +1,25 @@
+name: gofakeit
+description: Random fake data generator for Go. gofakeit fills structs with names, addresses, JSON, and domain values so tests and seed jobs for RAG corpora, agent fixtures, and API mocks do not depend on production PII.
+tagline: Fake data generator for Go tests and fixtures
+
+github_url: https://github.com/brianvoe/gofakeit
+docs_url: https://pkg.go.dev/github.com/brianvoe/gofakeit/v7
+
+category: Dev Tools
+tags: [go, testing, fake-data, fixtures, faker]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: go get github.com/brianvoe/gofakeit/v7
+
+problem_solved: |
+  Go services around AI products need realistic documents, users, and
+  payloads in tests, but copying production data leaks PII. gofakeit
+  generates structured fake values and can fill structs so RAG fixtures
+  and agent tool tests stay deterministic without real customer records.
+
+use_cases:
+  - Seed a local vector index with fake documents for RAG tests
+  - Fill Go structs for LLM gateway request fixtures
+  - Generate fake users and tickets for agent workflow demos
+  - Avoid production PII in CI datasets for ranking and retrieval
