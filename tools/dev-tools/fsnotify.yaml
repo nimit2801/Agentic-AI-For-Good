@@ -1,0 +1,25 @@
+name: fsnotify
+description: Cross-platform filesystem notifications for Go. fsnotify is used to reload configs, watch prompt files, and trigger re-index jobs when local datasets change without polling the disk.
+tagline: Cross-platform filesystem notifications for Go
+
+github_url: https://github.com/fsnotify/fsnotify
+docs_url: https://github.com/fsnotify/fsnotify#readme
+install_command: go get github.com/fsnotify/fsnotify
+
+category: Dev Tools
+tags: [go, filesystem, watch, inotify, kqueue, config]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Go agent and inference processes need to react when configs or
+  local files change, and polling wastes CPU. fsnotify watches
+  directories with inotify, kqueue, and ReadDirectoryChanges so
+  those services reload or re-index on real filesystem events.
+
+use_cases:
+  - Reload model and API config when a YAML file changes
+  - Watch a prompts directory and hot-reload agent templates
+  - Trigger embedding re-index when local dataset files update
+  - Restart a worker on certificate or secret file rotation

@@ -1,0 +1,25 @@
+name: Colly
+description: Elegant scraper and crawler framework for Go. Colly is used to collect docs, product pages, and training text with callbacks, rate limits, and parallelism without writing a raw HTTP crawler.
+tagline: Scraper and crawler framework for Go
+
+github_url: https://github.com/gocolly/colly
+website_url: http://go-colly.org
+docs_url: http://go-colly.org/docs
+install_command: go get github.com/gocolly/colly/v2
+
+category: Data
+tags: [go, scraping, crawler, http, data-collection]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Collecting HTML for RAG corpora and training sets needs callbacks,
+  politeness, and parallelism. Colly wraps HTTP crawling so those
+  jobs extract links and text without a hand-rolled scraper.
+
+use_cases:
+  - Crawl documentation sites into markdown for a RAG corpus
+  - Collect product pages with rate limits for an embeddings pipeline
+  - Follow pagination while scraping eval datasets
+  - Run parallel collectors for multi-domain web data jobs
