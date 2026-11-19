@@ -1,0 +1,25 @@
+name: Squirrel
+description: Fluent SQL query builder for Go that composes SELECT, INSERT, UPDATE, and DELETE without an ORM. Teams use Squirrel to query feature stores and job tables in agent backends while keeping SQL explicit.
+tagline: Fluent SQL generation for Go
+
+github_url: https://github.com/Masterminds/squirrel
+docs_url: https://github.com/Masterminds/squirrel#readme
+install_command: go get github.com/Masterminds/squirrel
+
+category: Data
+tags: [go, sql, query-builder, postgres, mysql]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Hand-concatenated SQL in Go services is error-prone once filters and
+  joins grow for jobs, embeddings, and users. Squirrel builds
+  parameterized queries fluently so agent backends keep SQL visible
+  without string formatting bugs.
+
+use_cases:
+  - Build filtered SELECT queries for job and run history in a Go agent API
+  - Compose inserts for embedding metadata without an ORM
+  - Share WHERE clauses across list and count queries for an eval dashboard
+  - Target Postgres or MySQL placeholders from the same query builder

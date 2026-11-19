@@ -1,0 +1,25 @@
+name: godotenv
+description: Go port of Ruby dotenv that loads environment variables from .env files. godotenv is the usual way to keep API keys and model names out of source while running agent CLIs and local inference services.
+tagline: Load environment variables from .env files in Go
+
+github_url: https://github.com/joho/godotenv
+docs_url: https://github.com/joho/godotenv#readme
+install_command: go get github.com/joho/godotenv
+
+category: Dev Tools
+tags: [go, dotenv, env, config, local-dev]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Local Go agent and inference apps need secrets and model names without
+  exporting them in every shell. godotenv loads a .env file into the
+  process environment so the same 12-factor code works in development
+  and in containers that inject real env vars.
+
+use_cases:
+  - Load OPENAI_API_KEY and model names from .env in a local Go CLI
+  - Keep staging vs local agent settings in gitignored dotenv files
+  - Call godotenv.Load in tests so fixture env matches developer machines
+  - Use the godotenv CLI to run a binary with a specific env file
