@@ -1,0 +1,25 @@
+name: golang-migrate
+description: Database migration CLI and Go library that versions SQL (and Go) migrations across Postgres, MySQL, SQLite, MongoDB, and more. golang-migrate keeps schema changes for AI backends repeatable in CI and production.
+tagline: Versioned database migrations for Go and SQL
+
+github_url: https://github.com/golang-migrate/migrate
+website_url: https://github.com/golang-migrate/migrate
+docs_url: https://github.com/golang-migrate/migrate#readme
+install_command: brew install golang-migrate
+
+category: Data
+tags: [go, migrations, postgres, mysql, sqlite, sql]
+pricing: free
+is_open_source: true
+
+problem_solved: |
+  Feature stores, job tables, and prompt-log schemas drift when each
+  environment is patched by hand. golang-migrate versions up and down
+  migrations as files, so Go services that store embeddings metadata
+  and eval results apply the same schema in CI, staging, and prod.
+
+use_cases:
+  - Version Postgres tables for traces, evals, and document chunks in a RAG backend
+  - Run migrate up in CI before integration tests that need a real schema
+  - Roll back a failed feature-store migration with migrate down
+  - Check in SQL migration files next to a Go ingest API so schema and code ship together
