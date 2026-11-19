@@ -1,0 +1,26 @@
+name: Gorilla CSRF
+description: Cross-Site Request Forgery prevention middleware for Go web apps. Gorilla CSRF issues tokens and checks them on state-changing requests so eval dashboards and agent consoles are not forged from other origins.
+tagline: CSRF prevention middleware for Go
+
+github_url: https://github.com/gorilla/csrf
+website_url: https://gorilla.github.io
+docs_url: https://github.com/gorilla/csrf#readme
+install_command: go get github.com/gorilla/csrf
+
+category: Dev Tools
+tags: [go, http, csrf, security, web, middleware]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Go net/http dashboards for evals and agents accept POST and PUT
+  without CSRF checks, so a third-party page can forge those actions.
+  Gorilla CSRF issues per-session tokens and rejects mismatched
+  requests so state-changing routes stay origin-safe.
+
+use_cases:
+  - Protect form POSTs on a Go eval or labeling dashboard
+  - Reject forged job-cancel requests on an agent admin UI
+  - Issue CSRF tokens for cookie-session net/http apps
+  - Exempt JSON APIs while still covering HTML form routes
