@@ -1,0 +1,24 @@
+name: Bombardier
+description: Fast cross-platform HTTP benchmarking tool written in Go. Bombardier opens many concurrent connections and reports latency and throughput so you can stress model APIs and gateways from a single static binary.
+tagline: Fast HTTP benchmarking from a Go binary
+
+github_url: https://github.com/codesenberg/bombardier
+website_url: https://github.com/codesenberg/bombardier
+docs_url: https://github.com/codesenberg/bombardier#readme
+
+category: Dev Tools
+tags: [go, http, load-testing, benchmarking, cli]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  HTTP load tools that need Node, Java, or Python slow down CI images.
+  Bombardier is a static Go binary that fires concurrent HTTP requests and
+  prints latency stats, so you can benchmark inference endpoints anywhere.
+
+use_cases:
+  - Stress-test an OpenAI-compatible inference server from a single binary
+  - Compare gateway throughput before and after a proxy or cache change
+  - Add a lightweight HTTP benchmark step to GPU serving CI without Node
+  - Measure error rates under concurrent load on embedding HTTP APIs
