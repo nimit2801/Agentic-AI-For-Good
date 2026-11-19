@@ -1,0 +1,26 @@
+name: miniredis
+description: Pure Go in-process Redis server for unit tests. miniredis speaks the Redis protocol in memory so Go services can exercise cache, queue, and session logic without Docker or a real Redis instance.
+tagline: In-process Redis server for Go tests
+
+github_url: https://github.com/alicebob/miniredis
+website_url: https://pkg.go.dev/github.com/alicebob/miniredis/v2
+docs_url: https://pkg.go.dev/github.com/alicebob/miniredis/v2
+install_command: go get github.com/alicebob/miniredis/v2
+
+category: Dev Tools
+tags: [go, redis, testing, in-memory, cache]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go AI gateways use Redis for rate limits, session state, and job
+  queues, but tests that need a real Redis are slow and flaky in CI.
+  miniredis runs a protocol-compatible server in-process so cache and
+  queue code can be tested without Docker or network.
+
+use_cases:
+  - Unit-test Redis-backed rate limiting in a Go LLM gateway
+  - Exercise job queues and pub/sub used by agent workers without Docker Redis
+  - Fast-forward miniredis time to test TTL expiry on cached embeddings
+  - Run Redis-dependent Go tests in CI with no external service

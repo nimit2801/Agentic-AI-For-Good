@@ -1,0 +1,26 @@
+name: go-cmp
+description: Google's Go package for comparing values in tests. go-cmp produces readable diffs for structs, slices, and maps, with options to ignore fields, transform values, and compare protocol buffers.
+tagline: Readable value diffs for Go tests
+
+github_url: https://github.com/google/go-cmp
+website_url: https://pkg.go.dev/github.com/google/go-cmp/cmp
+docs_url: https://pkg.go.dev/github.com/google/go-cmp/cmp
+install_command: go get github.com/google/go-cmp/cmp
+
+category: Dev Tools
+tags: [go, testing, assertions, diffs, google]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  reflect.DeepEqual fails tests without showing what differed, which
+  makes large Go structs for prompts, tool calls, and model responses
+  painful to debug. go-cmp prints a field-level diff and lets you ignore
+  unstable fields so CI failures are readable.
+
+use_cases:
+  - Diff expected vs actual LLM response structs in Go unit tests
+  - Ignore timestamps and request IDs when comparing agent event payloads
+  - Compare nested maps of embeddings metadata with custom equality options
+  - Assert protobuf or JSON-decoded values with Transformers instead of DeepEqual

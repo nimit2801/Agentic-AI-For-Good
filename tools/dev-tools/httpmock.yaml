@@ -1,0 +1,26 @@
+name: httpmock
+description: HTTP mocking library for Go that activates a transport and registers responders by method and URL. httpmock stubs outbound HTTP so tests can return canned JSON without a live server.
+tagline: Activate-and-register HTTP mocks for Go
+
+github_url: https://github.com/jarcoal/httpmock
+website_url: https://pkg.go.dev/github.com/jarcoal/httpmock
+docs_url: https://pkg.go.dev/github.com/jarcoal/httpmock
+install_command: go get github.com/jarcoal/httpmock
+
+category: Dev Tools
+tags: [go, testing, http, mocking, net-http]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go clients for model APIs and webhooks need HTTP stubs in unit tests.
+  Spinning up httptest servers per case is verbose. httpmock swaps the
+  default transport, matches method plus URL, and returns canned bodies
+  so inference clients can be tested offline.
+
+use_cases:
+  - Register a POST responder for an OpenAI-compatible chat completions path
+  - Return 429 then 200 to test retry logic in a Go embedding client
+  - Count outbound calls to a vector-search HTTP API without a live backend
+  - Stub webhook deliveries from an agent worker during unit tests
