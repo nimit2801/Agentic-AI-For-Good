@@ -1,0 +1,26 @@
+name: Whistle
+description: HTTP, HTTP/2, HTTPS, and WebSocket debugging proxy. Capture, rewrite, and mock traffic from the browser or CLI so you can inspect agent and model API calls without a commercial proxy license.
+tagline: HTTP and WebSocket debugging proxy
+
+github_url: https://github.com/avwo/whistle
+website_url: https://wproxy.org/
+docs_url: https://wproxy.org/
+install_command: npm install -g whistle
+
+category: Dev Tools
+tags: [http, https, websocket, proxy, debugging, nodejs, mocking]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Debugging HTTPS agent traffic often means paying for Charles or
+  Proxyman. Whistle is an open-source proxy that decrypts, rewrites, and
+  mocks HTTP/2 and WebSockets, so you can inspect prompts, headers, and
+  streaming responses on your own machine.
+
+use_cases:
+  - Capture HTTPS calls from a local agent to an LLM provider
+  - Rewrite model API hosts to a staging gateway without code changes
+  - Mock streaming WebSocket responses while developing a chat UI
+  - Share whistle rules so the team debugs the same HTTP rewrite setup
