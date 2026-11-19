@@ -1,0 +1,25 @@
+name: GoMock
+description: Mocking framework for Go, now maintained by Uber as uber-go/mock. GoMock generates type-safe mocks from interfaces so inference clients, vector-store adapters, and agent tools can be unit-tested without live backends.
+tagline: Generate type-safe mocks from Go interfaces
+
+github_url: https://github.com/uber-go/mock
+docs_url: https://pkg.go.dev/go.uber.org/mock
+
+category: Dev Tools
+tags: [go, testing, mocking, codegen, uber]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+install_command: go install go.uber.org/mock/mockgen@latest
+
+problem_solved: |
+  Go services around AI products depend on HTTP and gRPC interfaces that
+  are expensive to hit in unit tests. GoMock generates mocks from those
+  interfaces so teams can assert how model clients and tool runners are
+  called without standing up vendor APIs.
+
+use_cases:
+  - Mock a Go LLM client interface in gateway unit tests
+  - Stub vector-store adapters while testing RAG retrieval logic
+  - Verify agent tool dispatch without calling real HTTP tools
+  - Generate mocks in CI from checked-in interface definitions
