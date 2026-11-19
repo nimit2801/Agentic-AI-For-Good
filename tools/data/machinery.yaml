@@ -1,0 +1,25 @@
+name: Machinery
+description: Asynchronous task queue for Go based on distributed message passing. Machinery runs delayed and retryable jobs over AMQP, Redis, AWS SQS, and MongoDB backends, similar to Celery for Python services.
+tagline: Distributed task queue for Go
+
+github_url: https://github.com/RichardKnop/machinery
+docs_url: https://github.com/RichardKnop/machinery#readme
+install_command: go get github.com/RichardKnop/machinery/v2
+
+category: Data
+tags: [go, task-queue, amqp, redis, sqs, jobs]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  Go services that train, embed, or call models need background jobs
+  with retries and brokers. Machinery is a Celery-style task queue
+  over AMQP, Redis, and SQS so those jobs leave the request path
+  without a custom worker protocol.
+
+use_cases:
+  - Queue embedding and indexing jobs from a Go API onto Redis or RabbitMQ
+  - Retry failed LLM provider calls with delayed Machinery tasks
+  - Fan out batch evaluation work across Go workers on SQS
+  - Schedule periodic data-prep tasks for a Go ML pipeline

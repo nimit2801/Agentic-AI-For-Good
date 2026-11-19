@@ -1,0 +1,26 @@
+name: httpexpect
+description: End-to-end HTTP and REST API testing library for Go. httpexpect chains requests and assertions so teams can exercise model gateways, webhooks, and agent APIs without a heavy browser stack.
+tagline: End-to-end HTTP and REST API testing for Go
+
+github_url: https://github.com/gavv/httpexpect
+website_url: https://pkg.go.dev/github.com/gavv/httpexpect/v2
+docs_url: https://pkg.go.dev/github.com/gavv/httpexpect/v2
+install_command: go get github.com/gavv/httpexpect/v2
+
+category: Dev Tools
+tags: [go, testing, http, rest, api]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Testing Go HTTP APIs for inference and agents often means mixing
+  httptest with ad hoc JSON asserts. httpexpect chains request
+  builders and matchers so status, headers, and JSON paths stay in
+  one fluent test without a separate client.
+
+use_cases:
+  - Assert JSON fields on a Go LLM gateway from table-driven tests
+  - Exercise webhook and callback routes used by agent runtimes
+  - Check auth headers and error bodies on internal ML service APIs
+  - Run the same httpexpect suite against httptest.Server and a live staging URL
