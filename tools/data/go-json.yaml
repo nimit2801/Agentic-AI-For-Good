@@ -1,0 +1,24 @@
+name: go-json
+description: Fast JSON encoder and decoder for Go that stays compatible with encoding/json. Used to marshal inference events, feature records, and API payloads with less CPU than the standard library.
+tagline: Fast encoding/json-compatible JSON library for Go
+
+github_url: https://github.com/goccy/go-json
+docs_url: https://github.com/goccy/go-json#readme
+install_command: go get github.com/goccy/go-json
+
+category: Data
+tags: [go, json, serialization, performance, encoding]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go services that marshal high-volume inference JSON hit encoding/json
+  CPU limits. go-json keeps the same API while encoding faster so
+  feature records and API payloads stay cheap on the hot path.
+
+use_cases:
+  - Drop-in replace encoding/json in a Go inference API
+  - Marshal feature records in a streaming Go worker
+  - Decode webhook JSON for agent tool callbacks
+  - Cut JSON CPU in a Go Kafka producer without codegen

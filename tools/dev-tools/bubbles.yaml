@@ -1,0 +1,25 @@
+name: Bubbles
+description: TUI component library for Bubble Tea with spinners, text inputs, lists, viewports, and progress bars. Used to assemble agent consoles and model-picker CLIs without drawing every widget from scratch.
+tagline: TUI components for Bubble Tea
+
+github_url: https://github.com/charmbracelet/bubbles
+docs_url: https://github.com/charmbracelet/bubbles#readme
+install_command: go get github.com/charmbracelet/bubbles
+
+category: Dev Tools
+tags: [go, tui, cli, components, charmbracelet, bubbletea]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Bubble Tea apps still need reusable widgets for lists, inputs, and
+  progress. Bubbles ships those components so agent consoles and
+  model pickers do not reimplement spinner, viewport, and text-input
+  from raw ANSI.
+
+use_cases:
+  - Add a spinner and progress bar to a Go inference CLI
+  - Build a selectable model list in a Bubble Tea agent console
+  - Capture API keys with a TUI text input component
+  - Scroll log viewports in a local eval dashboard

@@ -1,0 +1,24 @@
+name: Glamour
+description: Stylesheet-based markdown renderer for Go CLIs. Used to pretty-print README, prompt, and eval-report markdown in the terminal with ANSI styles instead of dumping raw markup.
+tagline: Stylesheet-based markdown rendering for CLI apps
+
+github_url: https://github.com/charmbracelet/glamour
+docs_url: https://github.com/charmbracelet/glamour#readme
+install_command: go get github.com/charmbracelet/glamour
+
+category: Dev Tools
+tags: [go, markdown, cli, terminal, charmbracelet]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go CLIs that print markdown dumps raw hashes and fences into the
+  terminal. Glamour renders CommonMark with ANSI stylesheets so
+  READMEs, prompts, and eval reports stay readable in agent consoles.
+
+use_cases:
+  - Render eval-report markdown in a Go CLI
+  - Pretty-print prompt templates in an agent terminal
+  - Display README help inside a Charm TUI
+  - Style changelog output for a local model-tool CLI

@@ -1,0 +1,25 @@
+name: Harmonica
+description: Physics-based animation library for Go TUIs. Used with Charm Bubble Tea to spring, decay, and interpolate motion in agent consoles and local dashboards instead of instant layout jumps.
+tagline: Physics-based animation library for Go TUIs
+
+github_url: https://github.com/charmbracelet/harmonica
+docs_url: https://github.com/charmbracelet/harmonica#readme
+install_command: go get github.com/charmbracelet/harmonica
+
+category: Dev Tools
+tags: [go, tui, animation, charmbracelet, cli]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Charm TUIs that snap between frames feel abrupt for progress and
+  panel motion. Harmonica adds spring and decay animation so agent
+  consoles and local dashboards interpolate layout without a custom
+  physics loop.
+
+use_cases:
+  - Spring-animate panel open in a Bubble Tea agent console
+  - Smooth progress and meter motion in a local inference TUI
+  - Interpolate list selection highlight without jumpy frames
+  - Decay overlay opacity in a Charm CLI status view
