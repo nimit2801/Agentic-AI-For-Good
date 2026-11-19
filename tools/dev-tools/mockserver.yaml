@@ -1,0 +1,25 @@
+name: MockServer
+description: HTTP mock server and proxy for tests. Mock APIs, inspect live traffic, and inject failures across HTTP/2, gRPC, WebSockets, and LLM HTTP APIs from a single port so suites do not depend on real backends.
+tagline: HTTP mock server and proxy for API tests
+
+github_url: https://github.com/mock-server/mockserver-monorepo
+website_url: https://www.mock-server.com
+docs_url: https://www.mock-server.com
+
+category: Dev Tools
+tags: [api-mocking, http, grpc, websocket, testing, java, proxy]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Integration tests stall when a vendor API, gRPC service, or model
+  endpoint is unavailable. MockServer stands in as an HTTP and gRPC
+  double, matches requests, and can proxy or fail them, so CI can run
+  against a controlled fake instead of the live stack.
+
+use_cases:
+  - Mock an LLM HTTP API in Java and Node test suites without spending credits
+  - Inspect and rewrite traffic to a RAG backend during local debugging
+  - Inject 5xx and timeouts to verify agent retry logic
+  - Stub gRPC and WebSocket services that are too heavy to run in CI

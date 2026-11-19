@@ -1,0 +1,25 @@
+name: Microcks
+description: Cloud-native API mocking and testing platform, now a CNCF incubating project. Turn OpenAPI, AsyncAPI, and gRPC contracts into mocks and contract tests so agent integrations can run before the real service exists.
+tagline: Cloud-native API mocking and contract testing
+
+github_url: https://github.com/microcks/microcks
+website_url: https://microcks.io
+docs_url: https://microcks.io/documentation/
+
+category: Dev Tools
+tags: [api-mocking, contract-testing, openapi, grpc, cncf, kubernetes]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Frontend and agent teams wait on backends that only exist as OpenAPI
+  files. Microcks turns those contracts into live mocks and contract
+  tests in Kubernetes, so HTTP, async, and gRPC clients can develop and
+  CI-check against the spec instead of a missing service.
+
+use_cases:
+  - Stand up OpenAPI mocks for an LLM gateway the backend has not shipped
+  - Contract-test gRPC embedding services from AsyncAPI and proto files
+  - Give each PR a disposable mock environment in Kubernetes
+  - Keep mock examples in git so API consumers share one source of truth
