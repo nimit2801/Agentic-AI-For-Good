@@ -1,0 +1,27 @@
+name: Chaos Toolkit
+description: Open-source chaos engineering orchestration for developers. Chaos Toolkit describes experiments as JSON or YAML, runs probes and actions, and reports whether AI services still meet steady-state hypotheses under failure.
+tagline: Declare and run chaos experiments as code
+
+github_url: https://github.com/chaostoolkit/chaostoolkit
+website_url: https://chaostoolkit.org
+docs_url: https://chaostoolkit.org/reference/usage/install/
+
+category: Dev Tools
+tags: [chaos-engineering, python, testing, orchestration, resilience, yaml]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+install_command: pip install chaostoolkit
+
+problem_solved: |
+  Chaos tools are often runtime-specific CLIs that do not compose into a
+  repeatable experiment. Chaos Toolkit turns probes, actions, and
+  rollbacks into versioned experiment files so ML teams can assert a
+  steady state, inject failure, and fail CI when RAG or serving stacks
+  no longer recover.
+
+use_cases:
+  - Encode a Kubernetes pod-kill experiment against an inference deployment
+  - Probe latency of a RAG API before and after injecting network faults
+  - Orchestrate host, cloud, and Kubernetes drivers in one experiment file
+  - Gate a staging ML platform deploy on chaos experiment pass or fail

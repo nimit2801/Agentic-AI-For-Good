@@ -1,0 +1,25 @@
+name: Pumba
+description: Chaos testing and network emulation for Docker, containerd, and Podman. Pumba kills, pauses, and stresses containers and injects packet loss or delay so ML serving stacks can be tested against real runtime failure, not only happy paths.
+tagline: Container-level chaos testing for Docker and Podman
+
+github_url: https://github.com/alexei-led/pumba
+docs_url: https://github.com/alexei-led/pumba#readme
+
+category: Dev Tools
+tags: [chaos-engineering, docker, containers, testing, network, resilience]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+install_command: brew install pumba
+
+problem_solved: |
+  GPU workers, inference sidecars, and vector DB containers fail in ways
+  unit tests never see. Pumba talks to the container runtime to kill,
+  pause, or network-emulate named containers so teams can prove retries,
+  health checks, and failover actually recover local ML stacks.
+
+use_cases:
+  - Kill a local inference container and confirm the gateway still serves traffic
+  - Inject network delay between a RAG worker and a vector database container
+  - Stress CPU or memory on a training sidecar to test resource limits
+  - Pause a message-queue container to verify agent job retry and backoff

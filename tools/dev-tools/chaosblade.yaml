@@ -1,0 +1,25 @@
+name: ChaosBlade
+description: Alibaba's chaos engineering toolkit for hosts, Kubernetes, Docker, and JVM apps. ChaosBlade injects CPU, network, disk, and process faults with a simple CLI so ML platforms can prove recovery before production incidents.
+tagline: Chaos experiments for hosts, Kubernetes, and JVM apps
+
+github_url: https://github.com/chaosblade-io/chaosblade
+website_url: https://chaosblade.io
+docs_url: https://chaosblade.io/en/docs
+
+category: Dev Tools
+tags: [chaos-engineering, kubernetes, testing, jvm, alibaba, resilience]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Training jobs, inference pods, and JVM model servers fail under CPU
+  saturation, network loss, and disk pressure that happy-path tests miss.
+  ChaosBlade injects those faults on hosts, containers, and Java processes
+  so teams can see whether autoscaling, retries, and failover actually work.
+
+use_cases:
+  - Saturate CPU on a GPU node and check whether inference still meets SLO
+  - Kill Kubernetes pods serving embeddings and watch the gateway recover
+  - Inject JVM method delays in a Java model client to test timeouts
+  - Run disk-fill experiments against checkpoint storage before a training run
