@@ -1,0 +1,25 @@
+name: Chaos Monkey
+description: Netflix resiliency tool that randomly terminates instances in production-like environments. Chaos Monkey is built for Spinnaker so ML serving fleets on AWS, GCP, and Azure can prove they survive random VM and container death.
+tagline: Randomly terminate instances to test production resilience
+
+github_url: https://github.com/Netflix/chaosmonkey
+website_url: https://netflix.github.io/chaosmonkey
+docs_url: https://netflix.github.io/chaosmonkey
+
+category: Dev Tools
+tags: [chaos-engineering, netflix, spinnaker, resilience, aws, kubernetes]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Inference fleets and training workers look healthy until a node
+  disappears. Chaos Monkey schedules random instance terminations through
+  Spinnaker so autoscaling groups, load balancers, and model gateways are
+  forced to recover the way they would in a real outage.
+
+use_cases:
+  - Terminate random GPU workers and confirm training job restart
+  - Kill inference VMs behind a model gateway and watch traffic shift
+  - Schedule weekday chaos hours on a staging ML platform via Spinnaker
+  - Prove multi-AZ RAG services survive single-instance loss
