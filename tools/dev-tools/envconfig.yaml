@@ -1,0 +1,25 @@
+name: envconfig
+description: Go library that populates structs from environment variables with prefixes, defaults, and required fields. envconfig is a common way to load 12-factor config for agent workers and model-serving processes.
+tagline: Populate Go structs from environment variables
+
+github_url: https://github.com/kelseyhightower/envconfig
+docs_url: https://github.com/kelseyhightower/envconfig#readme
+install_command: go get github.com/kelseyhightower/envconfig
+
+category: Dev Tools
+tags: [go, config, env, 12-factor, kubernetes]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go services in Kubernetes and CI get config from env vars, and
+  parsing them by hand drifts from struct fields. envconfig maps
+  prefixed environment variables onto structs with defaults and
+  required tags so agent and inference processes start with typed config.
+
+use_cases:
+  - Load model name, API keys, and queue URLs from env into a Go struct
+  - Fail fast when required env vars are missing in a worker container
+  - Use prefixed envconfig keys so multiple services share one deployment env
+  - Document 12-factor settings next to struct tags for an LLM gateway
