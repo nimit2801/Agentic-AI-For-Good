@@ -1,0 +1,25 @@
+name: koanf
+description: Lightweight Go configuration library that merges JSON, TOML, YAML, env, flags, files, and S3. koanf is a smaller alternative to Viper for agent CLIs and inference services that need layered config without a heavy dependency tree.
+tagline: Lightweight extensible configuration library for Go
+
+github_url: https://github.com/knadh/koanf
+docs_url: https://github.com/knadh/koanf#readme
+install_command: go get -u github.com/knadh/koanf/v2
+
+category: Dev Tools
+tags: [go, config, yaml, toml, env, flags]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go services for agents and model APIs need config from files, env,
+  flags, and object storage without Viper's weight. koanf loads and
+  merges those sources with small provider packages so runtime
+  settings stay explicit and easy to test.
+
+use_cases:
+  - Load YAML plus env overrides for a Go LLM gateway
+  - Merge CLI flags over file config in an agent worker
+  - Read model-routing config from S3 at process start
+  - Swap parsers for TOML or JSON without changing application code

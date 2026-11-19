@@ -1,0 +1,26 @@
+name: gomplate
+description: Template renderer CLI that fills Go templates from JSON, YAML, env, Consul, Vault, and HTTP datasources. Teams use gomplate to generate configs, manifests, and prompts from live data without a custom renderer.
+tagline: Flexible command-line template renderer
+
+github_url: https://github.com/hairyhenderson/gomplate
+website_url: https://gomplate.ca
+docs_url: https://docs.gomplate.ca
+install_command: go install github.com/hairyhenderson/gomplate/v4/cmd/gomplate@latest
+
+category: Dev Tools
+tags: [go, templates, cli, config, vault, consul]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Shipping agent and inference configs means merging env, files, and
+  secrets into templates. gomplate renders Go templates from many
+  datasources so Kubernetes manifests, prompt files, and dotenv
+  output stay generated instead of hand-edited.
+
+use_cases:
+  - Render Kubernetes manifests for a model-serving stack from YAML datasources
+  - Inject Vault or Consul secrets into an agent runtime config at deploy time
+  - Generate prompt or system-message files from JSON experiment metadata
+  - Template .env files for local LLM stacks from environment and remote URLs

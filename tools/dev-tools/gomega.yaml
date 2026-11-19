@@ -1,0 +1,26 @@
+name: Gomega
+description: Matcher and assertion library for Go tests, usually paired with Ginkgo. Gomega covers HTTP, JSON, channels, and async Eventually matchers used in tests for model gateways and agent services.
+tagline: Preferred matcher library for Ginkgo tests
+
+github_url: https://github.com/onsi/gomega
+website_url: https://onsi.github.io/gomega/
+docs_url: https://onsi.github.io/gomega/
+install_command: go get github.com/onsi/gomega
+
+category: Dev Tools
+tags: [go, testing, matchers, ginkgo, assertions]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Default Go test assertions are verbose for HTTP bodies, JSON, and
+  eventual consistency. Gomega provides composable matchers plus
+  Eventually and Consistently so gateway and agent tests wait for
+  async work without flaky sleeps.
+
+use_cases:
+  - Assert JSON fields on a Go inference API response in Ginkgo specs
+  - Wait with Eventually until an agent job reaches a terminal status
+  - Match HTTP status and headers in ghttp tests for a model gateway
+  - Use Consistently to check that a metrics endpoint stays healthy under load
