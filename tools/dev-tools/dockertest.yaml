@@ -1,0 +1,26 @@
+name: dockertest
+description: Go library from Ory that boots ephemeral Docker containers for integration tests. dockertest starts Redis, Postgres, or custom images, waits until they are ready, then cleans them up when the test ends.
+tagline: Ephemeral Docker containers for Go tests
+
+github_url: https://github.com/ory/dockertest
+website_url: https://github.com/ory/dockertest
+docs_url: https://pkg.go.dev/github.com/ory/dockertest/v4
+install_command: go get github.com/ory/dockertest/v4
+
+category: Dev Tools
+tags: [go, docker, testing, integration-tests, ory]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Go tests for queues, databases, and model sidecars often assume
+  Docker Compose is already running, which is flaky in CI. dockertest
+  starts the needed container from the test, waits on a readiness
+  check, and removes it so integration tests stay self-contained.
+
+use_cases:
+  - Boot Redis in a Go test for Asynq workers that process embedding jobs
+  - Start Postgres for golang-migrate plus API tests without a shared compose file
+  - Run a mock HTTP or vector DB image and tear it down after each package test
+  - Gate integration tests on Docker availability while keeping unit tests pure

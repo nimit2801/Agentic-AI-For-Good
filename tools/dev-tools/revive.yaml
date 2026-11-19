@@ -1,0 +1,26 @@
+name: Revive
+description: Fast, configurable Go linter that is a drop-in successor to golint. Revive ships extensible rules, confidence thresholds, and formatter-friendly output for CI and editor workflows.
+tagline: Fast, configurable golint replacement for Go
+
+github_url: https://github.com/revive-lint/revive
+website_url: https://revive.run
+docs_url: https://github.com/revive-lint/revive#readme
+install_command: go install github.com/mgechev/revive@latest
+
+category: Dev Tools
+tags: [go, linter, static-analysis, golint, ci]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  golint is frozen, so Go AI services lose a style checker that teams
+  still expect in review. Revive reimplements those checks with extra
+  rules, per-rule confidence, and exclude patterns so CI can fail on
+  real issues without golint's all-or-nothing noise.
+
+use_cases:
+  - Replace golint in Go inference and agent repos with a maintained linter
+  - Enable extra rules for error naming and unused parameters in a shared TOML config
+  - Run Revive inside golangci-lint alongside staticcheck and gosec
+  - Format findings for GitHub Actions so style nits show up on the PR

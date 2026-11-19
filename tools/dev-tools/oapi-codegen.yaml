@@ -1,0 +1,26 @@
+name: oapi-codegen
+description: Generates Go server stubs, client SDKs, and models from OpenAPI 3 specs. oapi-codegen keeps HTTP handlers for model gateways and agent APIs aligned with the contract instead of hand-written boilerplate.
+tagline: Generate Go servers and clients from OpenAPI 3
+
+github_url: https://github.com/oapi-codegen/oapi-codegen
+website_url: https://github.com/oapi-codegen/oapi-codegen
+docs_url: https://github.com/oapi-codegen/oapi-codegen#readme
+install_command: go install github.com/oapi-codegen/oapi-codegen/v2/cmd/oapi-codegen@latest
+
+category: Dev Tools
+tags: [go, openapi, codegen, http, client, server]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Hand-written Go handlers drift from OpenAPI docs, so agent and model
+  HTTP APIs ship the wrong types. oapi-codegen emits chi, echo, gin, or
+  stdlib server code plus clients from the spec so the contract is the
+  source of truth.
+
+use_cases:
+  - Generate a typed Go client for an OpenAI-compatible chat completions API
+  - Scaffold chi or gin server stubs from an OpenAPI spec for an agent gateway
+  - Regenerate models in CI when the OpenAPI file changes so types cannot drift
+  - Share one spec between a Go backend and other language clients without copy-paste
