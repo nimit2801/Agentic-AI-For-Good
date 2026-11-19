@@ -1,0 +1,26 @@
+name: Mountebank
+description: Over-the-wire test doubles that stub and mock HTTP, TCP, and SMTP from a single process. Record responses, match on predicates, and inject failures so microservice and agent tests do not need live downstream services.
+tagline: Over-the-wire test doubles for HTTP and TCP
+
+github_url: https://github.com/mountebank-testing/mountebank
+website_url: https://www.mbtest.org
+docs_url: https://www.mbtest.org
+install_command: npm install -g mountebank
+
+category: Dev Tools
+tags: [api-mocking, service-virtualization, testing, http, nodejs, stubbing]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Integration tests fail when a dependent HTTP, TCP, or SMTP service is
+  missing or expensive to run. Mountebank stands up imposters that match
+  requests with predicates and return canned or recorded responses, so
+  agent and microservice suites can run without the real downstream stack.
+
+use_cases:
+  - Stub a billing or auth HTTP API while testing an agent orchestration path
+  - Inject timeouts and 5xx responses to verify retry behavior in CI
+  - Mock SMTP so notification tests do not send real mail
+  - Record production-like TCP responses and replay them in local test runs
