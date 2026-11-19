@@ -1,0 +1,25 @@
+name: easyjson
+description: Fast JSON serializer for Go that generates marshal code instead of using reflection. Used to encode and decode high-volume inference events, feature records, and API payloads with lower CPU and allocations.
+tagline: Fast code-generated JSON serializer for Go
+
+github_url: https://github.com/mailru/easyjson
+docs_url: https://github.com/mailru/easyjson#readme
+install_command: go get github.com/mailru/easyjson
+
+category: Data
+tags: [go, json, serialization, codegen, performance]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go services that marshal millions of inference events pay a high
+  reflection cost with encoding/json. easyjson generates marshal code
+  so feature records and API payloads encode with fewer allocations
+  on the hot path.
+
+use_cases:
+  - Encode high-volume inference events in a Go Kafka producer
+  - Decode feature JSON records in a streaming Go worker
+  - Cut JSON CPU in a Go model-serving API under load
+  - Generate marshalers for eval fixture structs in Go

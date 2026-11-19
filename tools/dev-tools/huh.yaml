@@ -1,0 +1,25 @@
+name: Huh
+description: Charm library for building terminal forms and prompts in Go. Used for model pickers, API-key setup, and eval-job wizards in agent CLIs without a web UI or raw stdin parsing.
+tagline: Build terminal forms and prompts in Go
+
+github_url: https://github.com/charmbracelet/huh
+docs_url: https://github.com/charmbracelet/huh#readme
+install_command: go get github.com/charmbracelet/huh
+
+category: Dev Tools
+tags: [go, tui, cli, forms, prompts, charmbracelet]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go agent CLIs need multi-field forms, selects, and confirms in the
+  terminal, and raw stdin is brittle. Huh composes Charm form widgets
+  so model pickers, key setup, and eval wizards stay interactive
+  without a web UI.
+
+use_cases:
+  - Prompt for model, endpoint, and API key in a Go agent CLI
+  - Build a TUI wizard to configure eval jobs
+  - Confirm destructive dataset or index operations in the terminal
+  - Collect multi-select tags before kicking off a training run
