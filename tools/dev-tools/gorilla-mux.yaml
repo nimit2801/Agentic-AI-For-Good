@@ -1,0 +1,26 @@
+name: Gorilla Mux
+description: HTTP router and URL matcher for Go with host, path, query, and method matching. Mux is used to build inference APIs, webhook receivers, and agent callback servers on net/http without a heavier framework.
+tagline: Powerful HTTP router and URL matcher for Go
+
+github_url: https://github.com/gorilla/mux
+website_url: https://gorilla.github.io
+docs_url: https://github.com/gorilla/mux#readme
+install_command: go get -u github.com/gorilla/mux
+
+category: Dev Tools
+tags: [go, http, router, mux, web, api]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Go net/http needs extra matching for host, path variables, query
+  params, and methods when serving model APIs and webhooks. Gorilla Mux
+  adds that matching on the standard library so inference and agent
+  callbacks stay on net/http without a full framework.
+
+use_cases:
+  - Route inference, health, and webhook paths on a Go model-serving API
+  - Match host and method for multi-tenant agent callback endpoints
+  - Extract path variables for job IDs in a training or eval HTTP service
+  - Wrap middleware around grouped routes for auth on internal ML APIs

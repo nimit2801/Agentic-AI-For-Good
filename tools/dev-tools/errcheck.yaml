@@ -1,0 +1,25 @@
+name: errcheck
+description: Static analysis tool that reports unchecked errors in Go code. errcheck catches ignored return values so agent clients, file I/O, and HTTP calls fail loudly instead of silently dropping errors.
+tagline: Find unchecked errors in Go
+
+github_url: https://github.com/kisielk/errcheck
+docs_url: https://github.com/kisielk/errcheck#readme
+install_command: go install github.com/kisielk/errcheck@latest
+
+category: Dev Tools
+tags: [go, linter, static-analysis, errors, ci]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go lets callers ignore error returns with a blank identifier, which
+  hides failed HTTP calls, disk writes, and SDK requests in agent
+  services. errcheck scans packages and reports unchecked errors so
+  CI fails before those bugs ship.
+
+use_cases:
+  - Fail CI when a Go LLM client ignores HTTP or JSON decode errors
+  - Scan agent worker packages for unchecked file and queue errors
+  - Add errcheck to a golangci-lint or make lint target for ML services
+  - Catch blank-identifier error drops in generated or copied Go glue code
