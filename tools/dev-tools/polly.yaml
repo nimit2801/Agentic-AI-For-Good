@@ -1,0 +1,25 @@
+name: Polly
+description: .NET resilience library for retries, circuit breakers, timeouts, bulkheads, and fallbacks. Polly wraps calls to model APIs, vector stores, and agent tools so transient faults do not take down C# inference clients.
+tagline: Fluent resilience policies for .NET services
+
+github_url: https://github.com/App-vNext/Polly
+website_url: https://www.thepollyproject.org
+docs_url: https://www.pollydocs.org
+
+category: Dev Tools
+tags: [dotnet, csharp, resilience, retry, circuit-breaker, timeout]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  C# services that call LLM APIs, embedding endpoints, and vector DBs
+  hit 429s, timeouts, and partial outages. Polly composes retry, circuit
+  breaker, timeout, and fallback policies into a pipeline so those
+  clients fail gracefully instead of cascading through the AI stack.
+
+use_cases:
+  - Retry Azure OpenAI and embedding HTTP calls with jittered backoff
+  - Circuit-break a failing vector search dependency in an ASP.NET RAG API
+  - Timeout hung model-gateway requests before they exhaust thread pool
+  - Fall back to a cached summary when the live LLM endpoint is down

@@ -1,0 +1,26 @@
+name: gock
+description: HTTP traffic mocking library for Go tests. gock intercepts net/http so Go services can stub LLM gateways, webhooks, and retrieval APIs with fluent matchers instead of standing up real backends in CI.
+tagline: Fluent HTTP mocking for Go tests
+
+github_url: https://github.com/h2non/gock
+website_url: https://pkg.go.dev/github.com/h2non/gock
+docs_url: https://pkg.go.dev/github.com/h2non/gock
+
+category: Dev Tools
+tags: [go, testing, http, mocking, net-http]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: go get -u github.com/h2non/gock
+
+problem_solved: |
+  Go inference gateways and agent workers talk over HTTP, and tests that
+  hit live model APIs are slow, flaky, and billed. gock intercepts
+  outbound net/http with matchers and stubbed responses so CI can assert
+  retries, headers, and JSON payloads without a real vendor endpoint.
+
+use_cases:
+  - Stub OpenAI-compatible chat completions in Go unit tests
+  - Simulate 429 and 5xx responses to verify retry middleware
+  - Mock embedding and vector-search HTTP APIs in agent worker tests
+  - Record expected request headers for gateway auth without a live server
