@@ -1,0 +1,26 @@
+name: Gorilla Websocket
+description: Fast, well-tested WebSocket implementation for Go. Gorilla Websocket is used to stream LLM tokens, agent chat, and bidirectional tool events from net/http servers without a heavier realtime stack.
+tagline: WebSocket implementation for Go
+
+github_url: https://github.com/gorilla/websocket
+website_url: https://gorilla.github.io
+docs_url: https://github.com/gorilla/websocket#readme
+install_command: go get github.com/gorilla/websocket
+
+category: Dev Tools
+tags: [go, websocket, realtime, streaming, http]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Go services that stream tokens and agent events need a proven
+  WebSocket library on net/http. Gorilla Websocket implements the
+  protocol with well-tested dial, upgrade, and message helpers so
+  those streams do not depend on a full realtime framework.
+
+use_cases:
+  - Stream LLM tokens to a browser from a Go inference API
+  - Bidirectional agent chat over WebSocket on net/http
+  - Push tool-call progress events to a dashboard
+  - Dial upstream WebSocket APIs from a Go worker

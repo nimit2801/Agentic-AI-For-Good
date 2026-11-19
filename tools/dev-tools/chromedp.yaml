@@ -1,0 +1,25 @@
+name: chromedp
+description: Drive Chrome through the DevTools Protocol from Go without a Selenium server. chromedp is used to render JS pages, take screenshots, and automate browsers for scraping and agent UI tests.
+tagline: Chrome DevTools Protocol driver for Go
+
+github_url: https://github.com/chromedp/chromedp
+docs_url: https://github.com/chromedp/chromedp#readme
+install_command: go get github.com/chromedp/chromedp
+
+category: Dev Tools
+tags: [go, chrome, browser, automation, scraping, cdp]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  JS-rendered pages and browser UIs need Chrome control from Go
+  without a Java Selenium stack. chromedp talks DevTools Protocol
+  so scrapers and agent tests navigate, click, and screenshot in
+  headless Chrome from a Go binary.
+
+use_cases:
+  - Render JS-heavy docs pages before extracting RAG text
+  - Screenshot agent dashboards in CI without Selenium
+  - Automate form flows for eval of a web-based LLM app
+  - Collect dynamic content that static HTTP crawlers miss

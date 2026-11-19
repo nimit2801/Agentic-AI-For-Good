@@ -1,0 +1,25 @@
+name: gjson
+description: Fast JSON getter for Go that queries values with a path syntax without full struct unmarshalling. gjson is used to pull tokens, scores, and nested fields from LLM and tool-call payloads.
+tagline: Fast JSON path queries for Go
+
+github_url: https://github.com/tidwall/gjson
+docs_url: https://github.com/tidwall/gjson#readme
+install_command: go get github.com/tidwall/gjson
+
+category: Data
+tags: [go, json, parser, path, performance]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  LLM and tool APIs return large JSON where only a few fields
+  matter, and full struct unmarshal is noisy. gjson reads values
+  by path so Go workers extract tokens, scores, and nested keys
+  without defining types for every vendor payload.
+
+use_cases:
+  - Pull streamed token text from a vendor JSON body
+  - Read nested tool-call arguments without a full struct
+  - Extract eval scores from mixed JSON result files
+  - Probe optional fields in agent webhook payloads
