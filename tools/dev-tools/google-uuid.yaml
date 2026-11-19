@@ -1,0 +1,25 @@
+name: Google UUID
+description: Go package for RFC 4122 UUIDs used as job, request, and trace IDs. Google UUID generates and parses v1 through v7 IDs so agent runs and inference requests get stable identifiers without a heavier ID service.
+tagline: RFC 4122 UUID package for Go
+
+github_url: https://github.com/google/uuid
+docs_url: https://github.com/google/uuid#readme
+install_command: go get github.com/google/uuid
+
+category: Dev Tools
+tags: [go, uuid, identifiers, rfc4122]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Agent jobs and inference requests need unique IDs that survive
+  logs and retries. Google UUID generates and parses RFC 4122
+  values so those systems get request, trace, and run IDs without
+  a separate ID service.
+
+use_cases:
+  - Assign run IDs to agent jobs in a Go worker
+  - Tag inference requests for log correlation
+  - Parse UUIDs from webhook payloads and queue messages
+  - Generate v7 time-ordered IDs for eval result rows
