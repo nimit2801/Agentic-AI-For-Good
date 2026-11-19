@@ -1,0 +1,26 @@
+name: Argos Translate
+description: Open-source offline translation library written in Python. Argos Translate runs OpenNMT models locally so you can translate between languages without sending text to a cloud API, including air-gapped and privacy-sensitive pipelines.
+tagline: Offline neural machine translation in Python
+
+github_url: https://github.com/argosopentech/argos-translate
+website_url: https://www.argosopentech.com
+docs_url: https://github.com/argosopentech/argos-translate
+install_command: pip install argostranslate
+
+category: Other
+tags: [python, translation, nmt, offline, nlp, opennmt]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Cloud translation APIs send source text off-box and fail in air-gapped
+  environments. Argos Translate packages OpenNMT models as a Python library
+  so you can install language pairs locally and translate documents, logs,
+  or user content without a network call.
+
+use_cases:
+  - Translate support tickets or docs on-device without a cloud translation API
+  - Localize dataset labels and prompts in an air-gapped training environment
+  - Add offline multilingual support to a Python app with installable language packs
+  - Preprocess non-English corpora into English before embedding or RAG indexing

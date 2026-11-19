@@ -1,0 +1,25 @@
+name: RethinkDB
+description: Open-source JSON database built for the realtime web. RethinkDB pushes query results to clients as documents change, so dashboards, multiplayer apps, and live ML monitoring UIs stay in sync without polling a REST API.
+tagline: Realtime JSON database with changefeeds
+
+github_url: https://github.com/rethinkdb/rethinkdb
+website_url: https://rethinkdb.com
+docs_url: https://rethinkdb.com/docs/
+
+category: Data
+tags: [database, json, realtime, changefeeds, nosql, distributed]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Live dashboards and collaborative apps usually poll a database and still lag.
+  RethinkDB stores JSON documents and streams changefeeds so clients receive
+  new query results as soon as data changes, without a separate pub/sub layer
+  or custom CDC pipeline.
+
+use_cases:
+  - Stream document changefeeds into a live ops dashboard for model jobs and metrics
+  - Power collaborative JSON apps where many clients must see inserts and updates instantly
+  - Replace polling loops in realtime monitoring UIs with database-native subscriptions
+  - Store JSON application state with ReQL joins and push updates to connected clients
