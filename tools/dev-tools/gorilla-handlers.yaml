@@ -1,0 +1,26 @@
+name: Gorilla Handlers
+description: Middleware collection for Go net/http covering logging, CORS, compression, recovery, and proxy headers. Used to wrap inference APIs and agent webhook servers with production HTTP behavior on the standard library.
+tagline: Useful HTTP middleware for Go net/http services
+
+github_url: https://github.com/gorilla/handlers
+website_url: https://gorilla.github.io
+docs_url: https://github.com/gorilla/handlers#readme
+install_command: go get github.com/gorilla/handlers
+
+category: Dev Tools
+tags: [go, http, middleware, cors, logging, web]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Go inference APIs on net/http still need logging, CORS, gzip, and
+  panic recovery. Gorilla Handlers adds that middleware on the
+  standard library so model and agent HTTP servers stay production-ready
+  without a full framework.
+
+use_cases:
+  - Add CORS and gzip to a Go model-serving HTTP API
+  - Log requests on agent webhook and callback endpoints
+  - Recover panics in inference handlers without crashing the process
+  - Honor X-Forwarded-For behind a proxy in front of a Go ML API
