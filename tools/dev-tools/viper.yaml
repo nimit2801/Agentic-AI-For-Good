@@ -1,0 +1,26 @@
+name: Viper
+description: Go configuration library that reads JSON, TOML, YAML, env vars, and remote stores into one API, with live watching and precedence rules. Viper is the usual config layer for Go CLIs built with Cobra.
+tagline: Go configuration with fangs
+
+github_url: https://github.com/spf13/viper
+website_url: https://github.com/spf13/viper
+docs_url: https://github.com/spf13/viper#readme
+install_command: go get github.com/spf13/viper
+
+category: Dev Tools
+tags: [go, configuration, yaml, env, cobra]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go AI services mix config files, environment variables, and flags for
+  model endpoints, timeouts, and feature flags. Hand-rolled loaders
+  disagree on precedence. Viper unifies those sources with a documented
+  override order and optional live reload.
+
+use_cases:
+  - Load model names, API bases, and rate limits from YAML with env overrides in production
+  - Bind Cobra flags to Viper keys so a serve CLI and a config file stay in sync
+  - Watch a config file and hot-reload embedding batch size without a process restart
+  - Read secrets from env while keeping non-secret defaults in a checked-in YAML file
