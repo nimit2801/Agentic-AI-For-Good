@@ -1,0 +1,26 @@
+name: Cobra
+description: A library for creating modern CLI applications in Go, with nested commands, flags, POSIX-compliant help, and shell completions. Cobra powers kubectl, Hugo, and many Go CLIs used around AI tooling.
+tagline: Commander library for modern Go CLIs
+
+github_url: https://github.com/spf13/cobra
+website_url: https://cobra.dev
+docs_url: https://github.com/spf13/cobra#readme
+install_command: go get github.com/spf13/cobra@latest
+
+category: Dev Tools
+tags: [go, cli, cobra, flags, shell-completion]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Go teams shipping agent CLIs, model-download tools, and ops wrappers
+  reinvent flag parsing, help text, and nested subcommands. Cobra
+  provides a command tree, POSIX flags, and completions so those CLIs
+  behave like kubectl without custom plumbing.
+
+use_cases:
+  - Build a Go CLI for running local agents with nested train, serve, and eval commands
+  - Add persistent flags for API keys, model names, and output format across subcommands
+  - Generate bash, zsh, and fish completions for an internal ML ops CLI
+  - Scaffold new commands with cobra-cli so contributors follow the same layout

@@ -1,0 +1,26 @@
+name: Ginkgo
+description: BDD-style testing framework for Go that pairs with Gomega matchers. Ginkgo organizes specs into nested describe blocks with parallel runs, focused specs, and rich reporting for large Go codebases.
+tagline: BDD testing framework for Go
+
+github_url: https://github.com/onsi/ginkgo
+website_url: https://onsi.github.io/ginkgo/
+docs_url: https://onsi.github.io/ginkgo/
+install_command: go install github.com/onsi/ginkgo/v2/ginkgo@latest
+
+category: Dev Tools
+tags: [go, testing, bdd, gomega, ci]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  table-driven Go tests get hard to scan once agent clients, retries,
+  and fixture setup pile up. Ginkgo gives nested specs, before-each
+  hooks, and parallel nodes so large integration suites for model
+  gateways stay readable and fast in CI.
+
+use_cases:
+  - Write nested specs for a Go LLM client covering success, timeout, and retry paths
+  - Run Ginkgo in parallel across packages in CI for a monorepo of agent services
+  - Focus a single spec while debugging a flaky embedding integration test
+  - Pair Ginkgo with Gomega matchers for HTTP and JSON assertions in gateway tests

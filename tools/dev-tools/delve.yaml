@@ -1,0 +1,26 @@
+name: Delve
+description: Debugger for the Go programming language with breakpoints, goroutine inspection, and headless DAP support. Delve is the standard way to step through Go services, including model-serving APIs and agent workers.
+tagline: Debugger for the Go programming language
+
+github_url: https://github.com/go-delve/delve
+website_url: https://github.com/go-delve/delve
+docs_url: https://github.com/go-delve/delve/tree/master/Documentation
+install_command: go install github.com/go-delve/delve/cmd/dlv@latest
+
+category: Dev Tools
+tags: [go, debugger, dap, goroutines, ide]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  gdb is a poor fit for Go goroutines, deferred calls, and optimized
+  binaries, so crashes in inference proxies are hard to inspect.
+  Delve understands Go runtime state, talks DAP to editors, and can
+  attach to running processes so you can step agent workers live.
+
+use_cases:
+  - Set breakpoints in a Go LLM gateway and inspect request structs on panic
+  - Attach to a running agent worker and list goroutines stuck on a tool call
+  - Debug tests for embedding clients from VS Code or GoLand via the DAP server
+  - Trace a race in a concurrent batch-inference loop with goroutine switching

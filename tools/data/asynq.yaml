@@ -1,0 +1,26 @@
+name: Asynq
+description: Redis-backed distributed task queue for Go with retries, cron, priorities, and a web UI. Asynq lets Go services enqueue embedding jobs, webhook deliveries, and eval runs without a custom worker pool.
+tagline: Redis-backed distributed task queue for Go
+
+github_url: https://github.com/hibiken/asynq
+website_url: https://github.com/hibiken/asynq
+docs_url: https://github.com/hibiken/asynq#readme
+install_command: go get github.com/hibiken/asynq
+
+category: Data
+tags: [go, redis, task-queue, background-jobs, workers]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go AI backends need durable background work for embeddings, evals,
+  and webhook retries. Homegrown goroutine pools drop jobs on crash.
+  Asynq stores tasks in Redis with retries, uniqueness, and a monitor
+  UI so workers can scale independently of the API process.
+
+use_cases:
+  - Enqueue embedding and chunking jobs from a Go ingest API and process them on workers
+  - Schedule cron tasks that re-run RAG eval suites overnight
+  - Retry failed webhook deliveries to agent tool endpoints with exponential backoff
+  - Inspect queues and failed tasks in asynqmon while operating a model pipeline
