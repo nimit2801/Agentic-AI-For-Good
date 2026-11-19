@@ -1,0 +1,26 @@
+name: Hoverfly
+description: Lightweight API simulation and service virtualization tool. Capture traffic, simulate downstream HTTP services, and inject latency or faults so tests of agents and backends do not depend on live third-party APIs.
+tagline: API simulation for development and testing
+
+github_url: https://github.com/SpectoLabs/hoverfly
+website_url: https://hoverfly.io
+docs_url: https://docs.hoverfly.io
+install_command: brew install hoverfly
+
+category: Dev Tools
+tags: [api-mocking, service-virtualization, testing, http, go, proxy]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Agent and backend tests stall when a vendor API is rate-limited, billed
+  per call, or down. Hoverfly sits as a proxy that records HTTP traffic
+  and replays simulations, including delays and failures, so CI can run
+  against a virtual service instead of the real endpoint.
+
+use_cases:
+  - Capture a third-party LLM HTTP API and replay it in CI without spending credits
+  - Inject latency and 5xx faults to test agent retry and fallback logic
+  - Simulate a downstream RAG or billing service that is not available in local dev
+  - Share recorded simulations so the team tests against the same virtual API
