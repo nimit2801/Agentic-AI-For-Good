@@ -1,0 +1,25 @@
+name: Negroni
+description: Idiomatic HTTP middleware for Go that chains handlers around net/http. Negroni is used to add logging, recovery, and auth around inference APIs and agent callback servers without a full web framework.
+tagline: Idiomatic HTTP middleware for Go
+
+github_url: https://github.com/urfave/negroni
+docs_url: https://github.com/urfave/negroni#readme
+install_command: go get github.com/urfave/negroni
+
+category: Dev Tools
+tags: [go, http, middleware, net-http, web, api]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go net/http has no built-in middleware stack for logging, panic
+  recovery, and auth on inference and agent APIs. Negroni chains
+  handlers around the standard library so those concerns stay
+  composable without adopting a heavier web framework.
+
+use_cases:
+  - Wrap a Go model-serving API with recovery and request logging
+  - Add auth middleware around agent webhook and callback routes
+  - Share one middleware stack across health, metrics, and inference paths
+  - Keep net/http handlers while still composing cross-cutting HTTP filters
