@@ -1,0 +1,24 @@
+name: Lip Gloss
+description: Terminal style library for Go that composes colors, borders, padding, and layout. Used with Charm TUIs to render agent consoles, model pickers, and local inference dashboards that stay readable in the terminal.
+tagline: Style definitions for nice terminal layouts in Go
+
+github_url: https://github.com/charmbracelet/lipgloss
+docs_url: https://github.com/charmbracelet/lipgloss#readme
+install_command: go get github.com/charmbracelet/lipgloss
+
+category: Dev Tools
+tags: [go, tui, cli, terminal, styling, charmbracelet]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go CLIs for agents and local inference need layout and color without
+  ad-hoc ANSI codes. Lip Gloss composes styles, borders, and flex-like
+  layout so Charm TUIs stay readable across terminals.
+
+use_cases:
+  - Style an agent console with borders, colors, and padded panels
+  - Layout a model-picker TUI with aligned columns
+  - Render inference progress boxes in a Charm Bubble Tea view
+  - Share consistent terminal styles across Go ML CLI tools

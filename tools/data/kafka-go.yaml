@@ -1,0 +1,24 @@
+name: kafka-go
+description: Pure Go Kafka client from Segment with a connection-per-topic-partition design. Reader and Writer APIs consume and produce events in Go ML services without CGo or JVM bindings.
+tagline: Pure Go Kafka client with Reader and Writer APIs
+
+github_url: https://github.com/segmentio/kafka-go
+docs_url: https://github.com/segmentio/kafka-go#readme
+install_command: go get github.com/segmentio/kafka-go
+
+category: Data
+tags: [go, kafka, streaming, producer, consumer, segment]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go data pipelines need Kafka I/O without CGo or a JVM client.
+  kafka-go uses a connection per topic-partition with Reader and
+  Writer APIs so feature events and inference logs stay in pure Go.
+
+use_cases:
+  - Write feature and training events to Kafka from a Go service
+  - Read inference-request topics with a kafka-go Reader
+  - Fan out eval job events across partitions in a Go worker
+  - Ship a CGo-free Kafka client inside a Go model-serving binary

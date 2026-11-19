@@ -1,0 +1,25 @@
+name: Sarama
+description: Go client for Apache Kafka that produces and consumes messages with consumer groups, SASL, TLS, and offset control. Used to stream training events, inference logs, and feature updates from Go services without a JVM client.
+tagline: Go client library for Apache Kafka
+
+github_url: https://github.com/IBM/sarama
+docs_url: https://github.com/IBM/sarama#readme
+install_command: go get github.com/IBM/sarama
+
+category: Data
+tags: [go, kafka, streaming, producer, consumer, messaging]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go ML services need a native Kafka client for event ingest and
+  inference logs, and JVM clients do not fit those binaries. Sarama
+  produces and consumes with consumer groups, SASL, and TLS so
+  training events and feature updates stay in Go.
+
+use_cases:
+  - Produce inference and training events to Kafka from a Go worker
+  - Consume feature-update topics with consumer groups in Go
+  - Stream model-serving logs into a Kafka observability pipeline
+  - Connect Go services to SASL/TLS Kafka clusters without JVM bindings

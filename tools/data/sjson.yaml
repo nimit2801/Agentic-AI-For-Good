@@ -1,0 +1,25 @@
+name: sjson
+description: Fast Go library for setting values in JSON documents in place without a full unmarshal. Used to patch nested fields in feature payloads, prompt templates, and event records with low allocation.
+tagline: Set JSON values quickly in Go without full unmarshal
+
+github_url: https://github.com/tidwall/sjson
+docs_url: https://github.com/tidwall/sjson#readme
+install_command: go get github.com/tidwall/sjson
+
+category: Data
+tags: [go, json, parsing, serialization, performance]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go pipelines often need to change one nested JSON field without
+  decoding the whole document. sjson sets values in place with low
+  allocation so feature payloads, prompts, and event records can be
+  patched on the hot path.
+
+use_cases:
+  - Patch a nested feature field in a JSON event before Kafka produce
+  - Inject a model version into a prompt JSON template in Go
+  - Update status fields on inference records without full unmarshal
+  - Build JSON patches for eval fixtures with path-based sets
