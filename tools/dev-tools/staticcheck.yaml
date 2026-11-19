@@ -1,0 +1,26 @@
+name: staticcheck
+description: Advanced static analysis linter for Go that finds bugs, performance issues, and API misuse beyond go vet, including unused code, incorrect concurrency, and deprecated APIs.
+tagline: Advanced Go linter beyond go vet
+
+github_url: https://github.com/dominikh/go-tools
+website_url: https://staticcheck.dev
+docs_url: https://staticcheck.dev/docs/
+install_command: go install honnef.co/go/tools/cmd/staticcheck@latest
+
+category: Dev Tools
+tags: [go, linter, static-analysis, code-quality, bugs]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  go vet misses many real Go bugs such as unused results, wrong time
+  formats, nilness, and deprecated standard-library usage. staticcheck
+  applies deeper analyzers so AI backends written in Go fail in CI
+  instead of in production.
+
+use_cases:
+  - Catch unused error returns and nil dereference risks in Go model-serving handlers
+  - Flag deprecated APIs and simple performance mistakes before merge
+  - Run as a standalone linter or as a golangci-lint analyzer in existing CI
+  - Review concurrency mistakes in worker pools that fan out embedding or tool calls

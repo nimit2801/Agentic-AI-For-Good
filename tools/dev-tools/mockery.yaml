@@ -1,0 +1,26 @@
+name: mockery
+description: Go mock code generator that reads interfaces and emits testify-compatible mocks so unit tests can stub LLM clients, HTTP APIs, and storage without hand-written boilerplate.
+tagline: Generate testify mocks from Go interfaces
+
+github_url: https://github.com/vektra/mockery
+website_url: https://vektra.github.io/mockery/
+docs_url: https://vektra.github.io/mockery/
+install_command: go install github.com/vektra/mockery/v3@latest
+
+category: Dev Tools
+tags: [go, testing, mocking, codegen, testify]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Go unit tests for AI gateways need mocks of LLM, vector, and HTTP
+  interfaces. Hand-written testify mocks drift when methods change.
+  mockery generates those mocks from the interfaces so tests stay in
+  sync without live backends.
+
+use_cases:
+  - Generate testify mocks for a Go LLM client interface used by an agent worker
+  - Stub vector-store and cache interfaces while testing RAG retrieval logic
+  - Regenerate mocks in CI when checked-in interfaces gain or drop methods
+  - Avoid hand-maintained mock structs that silently miss new interface methods
