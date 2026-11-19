@@ -1,0 +1,25 @@
+name: PySceneDetect
+description: Python and OpenCV library for detecting scene cuts and shot transitions in video. PySceneDetect splits long recordings into clips at content or threshold cuts so video ML pipelines can index, transcribe, or train on shots instead of whole files.
+tagline: Scene cut detection for video with Python and OpenCV
+
+github_url: https://github.com/Breakthrough/PySceneDetect
+website_url: https://www.scenedetect.com/
+docs_url: https://www.scenedetect.com/
+install_command: pip install scenedetect
+
+category: Data
+tags: [python, video, opencv, scene-detection, computer-vision, ffmpeg]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Video models and RAG over recordings need shot boundaries, not hour-long
+  files. PySceneDetect finds content and threshold cuts with OpenCV so you
+  can split, index, and sample clips without hand-labeling every transition.
+
+use_cases:
+  - Split lecture or demo videos into scenes before transcription or embedding
+  - Detect hard cuts in user-generated video for dataset cleaning and shot sampling
+  - Extract keyframes at scene boundaries for video search and summarization
+  - Preprocess long surveillance or sports footage into clips for training
