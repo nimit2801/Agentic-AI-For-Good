@@ -1,0 +1,24 @@
+name: Textql
+description: Execute SQL against structured text like CSV or TSV. Textql loads delimited files into a SQLite session so you can join, filter, and aggregate datasets from the command line without importing them into a warehouse.
+tagline: SQL queries against CSV and TSV files
+
+github_url: https://github.com/dinedal/textql
+website_url: https://github.com/dinedal/textql
+docs_url: https://github.com/dinedal/textql#readme
+
+category: Data
+tags: [go, sql, csv, tsv, cli, sqlite]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Quick questions on CSV exports usually mean pandas scripts or a spreadsheet.
+  Textql runs SQL on delimited files via SQLite so you can filter and join
+  training dumps and eval tables from the shell.
+
+use_cases:
+  - Query a large CSV eval dump with SQL instead of loading pandas
+  - Join two TSV annotation files from the command line before training
+  - Filter and aggregate prompt logs exported as CSV in a one-liner
+  - Inspect schema-less text tables without importing them into a warehouse

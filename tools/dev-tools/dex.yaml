@@ -1,0 +1,24 @@
+name: Dex
+description: OpenID Connect identity and OAuth 2.0 provider with pluggable connectors. Dex federates LDAP, SAML, GitHub, Google, and other IdPs behind a single OIDC endpoint so Kubernetes and internal AI tools get SSO without each app talking to every identity source.
+tagline: OIDC provider with pluggable identity connectors
+
+github_url: https://github.com/dexidp/dex
+website_url: https://dexidp.io
+docs_url: https://dexidp.io/docs/
+
+category: Dev Tools
+tags: [go, oidc, oauth2, sso, kubernetes, identity]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Every internal app talking to LDAP, GitHub, and Google separately is
+  fragile. Dex sits in front of those connectors and issues OIDC tokens so
+  Kubernetes dashboards, model consoles, and APIs share one SSO endpoint.
+
+use_cases:
+  - Put Kubernetes dashboard and internal LLM tools behind a single OIDC login
+  - Federate GitHub, Google, LDAP, and SAML into one Dex connector config
+  - Issue OAuth2 tokens to CI jobs without giving them directory credentials
+  - Standardize SSO for a cluster of AI admin UIs without Auth0
