@@ -1,0 +1,24 @@
+name: fatih Color
+description: Color package for Go that wraps ANSI output for terminals. Used to highlight status, errors, and progress in agent CLIs and local inference tools without raw escape codes.
+tagline: ANSI color package for Go terminals
+
+github_url: https://github.com/fatih/color
+docs_url: https://github.com/fatih/color#readme
+install_command: go get github.com/fatih/color
+
+category: Dev Tools
+tags: [go, cli, terminal, color, ansi]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go CLIs that print status and errors often hard-code ANSI codes that
+  break in pipes. fatih Color applies portable color helpers so agent
+  and inference tools stay readable in real terminals.
+
+use_cases:
+  - Colorize success and error lines in a Go agent CLI
+  - Highlight model-name output in a local inference tool
+  - Disable color automatically when stdout is not a TTY
+  - Style progress labels in a Go eval runner

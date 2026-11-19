@@ -1,0 +1,25 @@
+name: Goldmark
+description: Fast CommonMark markdown parser for Go with AST, extensions, and CJK support. Used to render docs, prompts, and eval reports in CLIs and HTTP services without a slower markdown stack.
+tagline: Fast CommonMark markdown processor for Go
+
+github_url: https://github.com/yuin/goldmark
+docs_url: https://github.com/yuin/goldmark#readme
+install_command: go get github.com/yuin/goldmark
+
+category: Dev Tools
+tags: [go, markdown, parser, commonmark, rendering]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go services that render docs and prompts need a CommonMark parser
+  that is fast and extensible. Goldmark builds an AST with extensions
+  so eval reports, READMEs, and agent help stay accurate without a
+  slower markdown library.
+
+use_cases:
+  - Render eval-report markdown in a Go HTTP docs page
+  - Parse prompt markdown into an AST in a Go agent
+  - Convert README files to HTML in a CLI help command
+  - Extend markdown with tables for model-card rendering
