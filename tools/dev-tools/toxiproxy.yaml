@@ -1,0 +1,26 @@
+name: Toxiproxy
+description: TCP proxy that injects latency, bandwidth limits, timeouts, and connection failures. Point clients at it to chaos-test how agents, model servers, and data pipelines behave when the network is hostile.
+tagline: TCP proxy for network chaos and resilience tests
+
+github_url: https://github.com/Shopify/toxiproxy
+website_url: https://github.com/Shopify/toxiproxy
+docs_url: https://github.com/Shopify/toxiproxy
+install_command: brew install toxiproxy
+
+category: Dev Tools
+tags: [chaos-engineering, tcp, proxy, testing, go, resilience]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Unit tests assume a clean network. Production does not. Toxiproxy sits
+  in front of Redis, Postgres, HTTP, or any TCP service and applies
+  toxics so you can prove retries, timeouts, and fallbacks before an
+  outage hits a live agent or training job.
+
+use_cases:
+  - Add 2s latency between an agent and a vector database to test timeout budgets
+  - Cut the connection to a model server and verify circuit-breaker behavior
+  - Simulate packet loss to a feature store during integration tests
+  - Share the same toxic scripts across local and CI resilience suites

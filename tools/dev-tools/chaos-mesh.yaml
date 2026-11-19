@@ -1,0 +1,25 @@
+name: Chaos Mesh
+description: Kubernetes-native chaos engineering platform. Inject pod kills, network partitions, IO faults, and time skew into clusters so ML serving and training workloads are tested against failure, not only happy paths.
+tagline: Chaos engineering platform for Kubernetes
+
+github_url: https://github.com/chaos-mesh/chaos-mesh
+website_url: https://chaos-mesh.org
+docs_url: https://chaos-mesh.org/docs
+
+category: Dev Tools
+tags: [chaos-engineering, kubernetes, testing, cncf, resilience, observability]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  GPU jobs, inference pods, and RAG services fail in ways unit tests never
+  see. Chaos Mesh schedules fault experiments in Kubernetes so teams can
+  kill pods, partition networks, and stress disks on purpose, then watch
+  whether autoscaling and retries actually recover.
+
+use_cases:
+  - Kill random inference pods and confirm the model gateway still serves traffic
+  - Partition a vector DB from RAG workers to validate fallback retrieval
+  - Inject disk IO faults on a training node to test checkpoint recovery
+  - Run scheduled chaos experiments against a staging ML platform on Kubernetes
