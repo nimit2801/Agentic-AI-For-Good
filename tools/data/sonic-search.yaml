@@ -1,0 +1,24 @@
+name: Sonic Search
+description: Fast, lightweight, schema-less search backend written in Rust. Sonic is an Elasticsearch alternative that runs on a few megabytes of RAM so product search and RAG-adjacent autocomplete can run on small boxes without a JVM cluster.
+tagline: Lightweight schema-less search backend in Rust
+
+github_url: https://github.com/valeriansaliou/sonic
+website_url: https://crates.io/crates/sonic-server
+docs_url: https://github.com/valeriansaliou/sonic#readme
+
+category: Data
+tags: [rust, search, elasticsearch-alternative, autocomplete, full-text]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  Elasticsearch is heavy for autocomplete and small-corpus search. Sonic
+  indexes terms in a compact Rust server that uses a few MB of RAM, so you
+  can offer instant search without running a JVM cluster.
+
+use_cases:
+  - Power product autocomplete and typeahead without Elasticsearch
+  - Index titles and tags for a small RAG or docs corpus on a tiny VM
+  - Replace a heavy search cluster for low-traffic apps that only need prefix search
+  - Run a schema-less search backend beside an API with a few megabytes of RAM

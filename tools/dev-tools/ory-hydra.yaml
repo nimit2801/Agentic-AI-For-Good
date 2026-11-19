@@ -1,0 +1,25 @@
+name: Ory Hydra
+description: OpenID Certified OAuth 2.1 and OpenID Connect provider written in Go. Ory Hydra issues tokens and consents through headless APIs so you can add SSO and delegated access to AI apps, integrating with any user store including Ory Kratos.
+tagline: Certified OAuth2 and OIDC provider in Go
+
+github_url: https://github.com/ory/hydra
+website_url: https://www.ory.sh/hydra
+docs_url: https://www.ory.sh/docs/hydra
+
+category: Dev Tools
+tags: [go, oauth2, oidc, sso, identity, self-hosted]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Shipping OAuth2 and OIDC correctly is hard, and hosted IdPs lock you in.
+  Ory Hydra is a certified provider that issues tokens and handles consent
+  via APIs, so AI products can offer SSO and delegated API access without
+  building an authorization server.
+
+use_cases:
+  - Issue OAuth2 access tokens for third-party apps that call your model APIs
+  - Add OpenID Connect SSO in front of internal LLM tools and admin consoles
+  - Pair Hydra with Kratos or an existing user store for login plus token issuance
+  - Self-host a certified OIDC provider for data-residency or air-gapped deployments

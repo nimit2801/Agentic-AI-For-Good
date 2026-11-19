@@ -1,0 +1,25 @@
+name: Autocannon
+description: Fast HTTP/1.1 benchmarking tool written in Node.js. Autocannon hammers an endpoint with a configurable connection count and reports latency and throughput so you can size Node and Python API servers without a heavy Java load-test stack.
+tagline: Fast HTTP/1.1 benchmarking in Node.js
+
+github_url: https://github.com/mcollina/autocannon
+website_url: https://github.com/mcollina/autocannon
+docs_url: https://github.com/mcollina/autocannon#readme
+install_command: npm install -g autocannon
+
+category: Dev Tools
+tags: [javascript, nodejs, http, load-testing, benchmarking]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Teams that ship Node or Python HTTP APIs need a quick load test without
+  standing up JMeter. Autocannon is a single CLI that opens many connections,
+  reports latency percentiles and requests per second, and fits in a CI job.
+
+use_cases:
+  - Benchmark a FastAPI or Express inference wrapper before putting it behind a gateway
+  - Compare throughput of two API builds with a one-line autocannon command
+  - Add an HTTP load step in CI to catch latency regressions on model-serving routes
+  - Size connection counts for a Node gateway that fronts embedding or chat APIs
