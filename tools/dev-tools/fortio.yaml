@@ -1,0 +1,25 @@
+name: Fortio
+description: Go load-testing library, CLI, and echo server that runs a set queries-per-second load and records latency histograms. Fortio is used to characterize HTTP, gRPC, and model-serving endpoints before they hit production traffic.
+tagline: Load testing with latency histograms in Go
+
+github_url: https://github.com/fortio/fortio
+website_url: https://fortio.org
+docs_url: https://github.com/fortio/fortio#readme
+
+category: Dev Tools
+tags: [go, load-testing, http, grpc, benchmarking, latency]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Guessing whether an inference or API endpoint will hold QPS usually means
+  ad-hoc curl loops. Fortio applies a controlled queries-per-second load and
+  records latency histograms so you can see p99 and error rates before
+  production traffic arrives.
+
+use_cases:
+  - Load-test an LLM or embedding HTTP endpoint at a fixed queries-per-second rate
+  - Record latency histograms for gRPC model-serving APIs before a launch
+  - Compare p50/p99 latency across two inference container builds
+  - Run Fortio as an echo server when debugging service-mesh or ingress latency
