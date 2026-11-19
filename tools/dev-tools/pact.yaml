@@ -1,0 +1,29 @@
+name: Pact
+description: Consumer-driven contract testing for HTTP and asynchronous APIs. Pact lets consumers define expected interactions, generate contracts, and verify providers so ML gateways, agent backends, and RAG services can evolve without breaking clients.
+tagline: Contract tests that keep API consumers and providers in sync
+
+github_url: https://github.com/pact-foundation/pact-ruby
+website_url: https://pact.io
+docs_url: https://docs.pact.io
+
+category: Dev Tools
+tags: [contract-testing, testing, api, microservices, http, python, javascript]
+pricing: free
+is_open_source: true
+license: MIT
+install_command: |
+  pip install pact-python
+  npm install @pact-foundation/pact
+
+problem_solved: |
+  AI products split across model gateways, agent services, and retrieval
+  APIs, and end-to-end tests against live backends are slow and brittle.
+  Pact captures consumer expectations as contracts and verifies providers
+  in CI so teams can change inference and RAG APIs without breaking
+  downstream clients.
+
+use_cases:
+  - Contract-test a Python RAG client against a model-gateway provider before deploy
+  - Verify JS agent frontends still match embedding and chat API schemas
+  - Catch breaking changes in webhook payloads between orchestration and tools
+  - Run provider verification in CI instead of standing up full multi-service stacks

@@ -1,0 +1,24 @@
+name: PowerMock
+description: Java unit-testing extension that mocks static methods, constructors, and final classes Mockito cannot reach. PowerMock unblocks tests for legacy JVM code wrapping model clients, feature stores, and hard-to-isolate AI adapters.
+tagline: Mock statics and finals in Java unit tests
+
+github_url: https://github.com/powermock/powermock
+docs_url: https://github.com/powermock/powermock/wiki
+
+category: Dev Tools
+tags: [java, testing, mocking, unit-tests, jvm, mockito]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Legacy JVM services around AI products hide model clients and feature
+  stores behind static factories and final classes that Mockito cannot
+  mock. PowerMock extends JUnit and Mockito so those collaborators can
+  be replaced in unit tests without standing up real inference backends.
+
+use_cases:
+  - Unit-test Java inference wrappers that call static SDK factory methods
+  - Mock final HTTP clients around LLM and embedding APIs
+  - Isolate constructors that open feature-store connections at class load
+  - Speed CI for older Spring AI backends that cannot be refactored yet
