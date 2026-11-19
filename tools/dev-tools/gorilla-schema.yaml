@@ -1,0 +1,25 @@
+name: Gorilla Schema
+description: Go library that fills structs from HTTP form values and query parameters. Used to bind webhook, eval, and agent callback forms on net/http without hand-written parsing.
+tagline: Fill Go structs from HTTP form values
+
+github_url: https://github.com/gorilla/schema
+website_url: https://gorilla.github.io
+docs_url: https://github.com/gorilla/schema#readme
+install_command: go get github.com/gorilla/schema
+
+category: Dev Tools
+tags: [go, http, forms, query, web]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Go net/http handlers still parse form and query values by hand.
+  Gorilla Schema maps those fields onto structs so webhook, eval, and
+  agent callback endpoints bind input without custom parsers.
+
+use_cases:
+  - Bind eval-job form posts to a Go struct
+  - Parse query filters on a model-listing HTTP API
+  - Decode webhook form bodies for agent callbacks
+  - Map nested form fields into config structs in Go
