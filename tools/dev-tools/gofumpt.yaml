@@ -1,0 +1,26 @@
+name: gofumpt
+description: A stricter gofmt that enforces extra formatting rules Go's default formatter leaves optional, producing more consistent Go source across teams and CI.
+tagline: A stricter drop-in replacement for gofmt
+
+github_url: https://github.com/mvdan/gofumpt
+website_url: https://pkg.go.dev/mvdan.cc/gofumpt
+docs_url: https://github.com/mvdan/gofumpt#readme
+install_command: go install mvdan.cc/gofumpt@latest
+
+category: Dev Tools
+tags: [go, formatter, gofmt, code-style, ci]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  gofmt leaves many style choices optional, so Go codebases for agents
+  and model servers still bike-shed imports, empty lines, and composite
+  literals in review. gofumpt is a stricter gofmt that applies extra
+  rules automatically so diffs stay about behavior, not layout.
+
+use_cases:
+  - Replace gofmt in editor format-on-save for Go inference and tooling repos
+  - Fail CI when source is not gofumpt-clean so reviews skip style nits
+  - Standardize composite literals and import grouping across a Go monorepo
+  - Run gofumpt -w in pre-commit alongside golangci-lint

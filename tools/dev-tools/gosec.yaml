@@ -1,0 +1,26 @@
+name: gosec
+description: Go security checker that scans source for common vulnerabilities such as SQL injection, hardcoded credentials, weak crypto, and path traversal, with SARIF output for CI.
+tagline: Static security scanner for Go source
+
+github_url: https://github.com/securego/gosec
+website_url: https://securego.io
+docs_url: https://github.com/securego/gosec#readme
+install_command: go install github.com/securego/gosec/v2/cmd/gosec@latest
+
+category: Dev Tools
+tags: [go, security, sast, static-analysis, ci]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Go services that proxy LLM APIs, store prompts, or talk to databases
+  can ship SQL injection, hardcoded secrets, weak TLS, and unsafe file
+  paths that unit tests never hit. gosec scans the AST for those
+  patterns and reports them in CI before they reach production.
+
+use_cases:
+  - Scan Go agent gateways for hardcoded API keys and weak crypto before release
+  - Detect SQL injection and command-injection sinks in data-pipeline services
+  - Emit SARIF from gosec in GitHub Actions so findings show up in code review
+  - Include gosec in golangci-lint to combine security checks with style lint
