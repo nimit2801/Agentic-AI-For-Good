@@ -1,0 +1,25 @@
+name: go-retryablehttp
+description: Retryable HTTP client for Go that wraps net/http with retries and exponential backoff. Teams use it for LLM provider calls, webhook delivery, and model downloads that fail on transient 5xx or connection errors.
+tagline: Retryable HTTP client for Go
+
+github_url: https://github.com/hashicorp/go-retryablehttp
+docs_url: https://pkg.go.dev/github.com/hashicorp/go-retryablehttp
+install_command: go get github.com/hashicorp/go-retryablehttp
+
+category: Dev Tools
+tags: [go, http, retry, backoff, hashicorp]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  net/http does not retry transient connection or 5xx failures, so Go
+  agent clients drop LLM and webhook calls on blips. go-retryablehttp
+  wraps the standard client with rewindable bodies and exponential
+  backoff so those calls recover without custom retry loops.
+
+use_cases:
+  - Retry LLM provider HTTP calls from a Go gateway on 502 and timeouts
+  - Deliver agent webhooks with backoff instead of failing the first attempt
+  - Download model artifacts over flaky networks with rewindable GET retries
+  - Drop into existing net/http code with a near-identical client API

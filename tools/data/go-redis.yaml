@@ -1,0 +1,26 @@
+name: go-redis
+description: Official Redis client for Go with commands, pipelines, pub/sub, and Redis Cluster support. go-redis is the usual client for caches, queues, and session state in agent and inference services.
+tagline: Redis client for Go
+
+github_url: https://github.com/redis/go-redis
+website_url: https://redis.uptrace.dev
+docs_url: https://redis.uptrace.dev
+install_command: go get github.com/redis/go-redis/v9
+
+category: Data
+tags: [go, redis, cache, pubsub, cluster, client]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Go services need a maintained Redis client for caching embeddings,
+  rate limits, and job state. go-redis covers commands, pipelines,
+  pub/sub, and cluster so those workloads talk to Redis without a
+  thin socket wrapper.
+
+use_cases:
+  - Cache embedding vectors and prompt results in Redis from a Go API
+  - Rate-limit LLM calls with Redis counters in an inference gateway
+  - Subscribe to pub/sub channels for agent job progress events
+  - Talk to Redis Cluster for session and queue state at scale

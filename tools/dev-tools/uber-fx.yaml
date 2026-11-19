@@ -1,0 +1,26 @@
+name: Uber Fx
+description: Uber's dependency injection framework for Go applications. Fx constructs modules, lifecycle hooks, and typed graphs so agent workers and inference services start, stop, and wire clients without a manual main() tangle.
+tagline: Dependency injection application framework for Go
+
+github_url: https://github.com/uber-go/fx
+website_url: https://uber-go.github.io/fx/
+docs_url: https://uber-go.github.io/fx/
+install_command: go get go.uber.org/fx@v1
+
+category: Dev Tools
+tags: [go, dependency-injection, uber, framework, lifecycle]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go services for agents and model APIs accumulate constructors for
+  clients, configs, and servers in main. Uber Fx builds a typed graph
+  with OnStart and OnStop hooks so those processes start in order and
+  shut down cleanly without a hand-rolled container.
+
+use_cases:
+  - Wire LLM, queue, and DB clients into a Go agent worker with Fx modules
+  - Register OnStart hooks that open connections before serving inference
+  - Shut down HTTP servers and consumers on SIGTERM via OnStop
+  - Swap test fakes for provider clients by replacing Fx modules in tests
