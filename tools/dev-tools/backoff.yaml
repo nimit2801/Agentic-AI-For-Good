@@ -1,0 +1,25 @@
+name: backoff
+description: Exponential backoff library for Go with retry, notify, and context cancellation. backoff is used to retry LLM API calls, Redis connects, and agent tool requests without hammering downstream services.
+tagline: Exponential backoff for Go retries
+
+github_url: https://github.com/cenkalti/backoff
+docs_url: https://github.com/cenkalti/backoff#readme
+install_command: go get github.com/cenkalti/backoff/v4
+
+category: Dev Tools
+tags: [go, retry, backoff, resilience, http]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go agent and inference clients fail on rate limits and blips, and
+  immediate retries make outages worse. backoff implements exponential
+  backoff with notify and context so those calls retry with jitter
+  instead of a tight loop.
+
+use_cases:
+  - Retry OpenAI or vendor HTTP calls from a Go inference gateway
+  - Back off Redis or queue reconnects in an agent worker
+  - Cap retry duration so a stuck tool call fails fast for the user
+  - Notify metrics when a model API is retried after 429s

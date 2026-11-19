@@ -1,0 +1,25 @@
+name: Alice
+description: Painless HTTP middleware chaining for Go net/http. Alice lets inference APIs and agent callback servers compose logging, auth, and recovery as constructor functions without a heavier framework.
+tagline: Painless middleware chaining for Go
+
+github_url: https://github.com/justinas/alice
+docs_url: https://github.com/justinas/alice#readme
+install_command: go get github.com/justinas/alice
+
+category: Dev Tools
+tags: [go, http, middleware, net-http, web]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go net/http middleware is nested constructor calls that become
+  unreadable as stacks grow. Alice chains Handler constructors so
+  logging, auth, and recovery on inference and agent routes stay
+  ordered and reusable without a full web framework.
+
+use_cases:
+  - Compose logging, recovery, and auth on a Go model-serving API
+  - Share one middleware chain across health and webhook routes
+  - Insert request-ID middleware in front of agent callback handlers
+  - Keep net/http handlers while still stacking cross-cutting filters
