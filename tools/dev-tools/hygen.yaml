@@ -1,0 +1,27 @@
+name: Hygen
+description: Project-local code generator that uses EJS templates stored in your repo to scaffold files, components, and boilerplate. Templates version with the codebase so every clone shares the same generators, unlike global CLI scaffolder plugins.
+tagline: In-repo code generator for repeatable scaffolding
+
+github_url: https://github.com/jondot/hygen
+website_url: https://www.hygen.io
+docs_url: https://www.hygen.io
+
+install_command: npm install -g hygen
+
+category: Dev Tools
+tags: [codegen, scaffolding, templates, javascript, cli, boilerplate, npm]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Teams copy-paste boilerplate or rely on out-of-repo generators that drift from the project's
+  conventions. Hygen keeps generators as templates inside the repo, so scaffolding a component,
+  reducer, or service always matches the current architecture and ships in the same PR as template
+  changes.
+
+use_cases:
+  - Scaffold React or Node modules from in-repo templates that match team conventions
+  - Generate new API handlers, tests, and types from a single hygen command
+  - Version generator templates with the codebase so CI and local machines stay in sync
+  - Replace ad-hoc copy-paste of boilerplate with reviewable template updates

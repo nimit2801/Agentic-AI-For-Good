@@ -1,0 +1,26 @@
+name: cargo-deny
+description: Cargo plugin that lints a Rust project's dependency graph for license compliance, security advisories, banned crates, and duplicate versions. Teams run cargo deny check in CI to catch supply-chain issues before they ship.
+tagline: Lint Rust dependencies for licenses and advisories
+
+github_url: https://github.com/EmbarkStudios/cargo-deny
+website_url: https://embarkstudios.github.io/cargo-deny/
+docs_url: https://embarkstudios.github.io/cargo-deny/
+
+install_command: cargo install --locked cargo-deny
+
+category: Dev Tools
+tags: [rust, cargo, security, licenses, supply-chain, ci, dependencies]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Rust crates pull in large transitive graphs whose licenses, advisories, and duplicate versions
+  are easy to miss until legal or security review. cargo-deny checks the lockfile against deny.toml
+  policies so CI fails on banned licenses, known vulnerabilities, and unwanted crate sources.
+
+use_cases:
+  - Block crates with disallowed licenses in CI using a deny.toml policy
+  - Fail builds when RustSec advisories hit dependencies in the lockfile
+  - Ban specific crates or git sources that the team does not want in production
+  - Detect duplicate crate versions that bloat binaries and complicate audits

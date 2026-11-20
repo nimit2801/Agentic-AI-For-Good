@@ -1,0 +1,26 @@
+name: rustfmt
+description: Official Rust code formatter that rewrites source to a consistent style. Ships as a rustup component and integrates with cargo fmt, editors, and CI so teams stop debating whitespace and keep diffs focused on real code changes.
+tagline: Official formatter for Rust source code
+
+github_url: https://github.com/rust-lang/rustfmt
+website_url: https://rust-lang.github.io/rustfmt/
+docs_url: https://rust-lang.github.io/rustfmt/
+
+install_command: rustup component add rustfmt
+
+category: Dev Tools
+tags: [rust, formatter, linting, cargo, rustup, ci, style]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Inconsistent Rust formatting creates noisy diffs and review bikeshedding over braces and
+  wrapping. rustfmt applies a standard style automatically via cargo fmt and editor integration,
+  so pull requests show logic changes instead of whitespace churn.
+
+use_cases:
+  - Run cargo fmt in CI to reject unformatted Rust pull requests
+  - Format an entire workspace before committing with rustfmt as a rustup component
+  - Configure rustfmt.toml for edition and width settings shared across a team
+  - Integrate rustfmt with VS Code, rust-analyzer, and pre-commit hooks

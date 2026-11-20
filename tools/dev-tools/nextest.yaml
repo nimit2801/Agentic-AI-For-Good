@@ -1,0 +1,27 @@
+name: nextest
+description: Next-generation test runner for Rust that executes tests in isolated processes, runs them in parallel with bounded concurrency, and produces richer failure output than cargo test. Used as a cargo plugin across large workspaces and CI.
+tagline: Faster, isolated Rust test runner
+
+github_url: https://github.com/nextest-rs/nextest
+website_url: https://nexte.st
+docs_url: https://nexte.st
+
+install_command: cargo install cargo-nextest --locked
+
+category: Dev Tools
+tags: [rust, testing, cargo, ci, cli, parallel, test-runner]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  cargo test runs tests in-process with limited isolation, so one test can poison others and CI
+  spends extra time on serial or poorly scheduled suites. nextest runs each test in its own process,
+  schedules work with bounded parallelism, and reports failures with clearer output so large Rust
+  workspaces finish faster and more reliably.
+
+use_cases:
+  - Speed up CI on large Rust workspaces by running tests in isolated processes with bounded concurrency
+  - Reproduce flaky tests without one failure contaminating the rest of the suite
+  - Filter and retry failed tests with nextest's filtersets in local development
+  - Replace cargo test in GitHub Actions for richer JUnit-style reporting
