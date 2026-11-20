@@ -1,0 +1,25 @@
+name: xid
+description: Globally unique ID generator for Go, designed for the web. xid produces 12-byte, k-sortable, base32 IDs so agent jobs, traces, and API objects get compact identifiers without a UUID service.
+tagline: Compact globally unique IDs for Go
+
+github_url: https://github.com/rs/xid
+docs_url: https://github.com/rs/xid#readme
+install_command: go get github.com/rs/xid
+
+category: Dev Tools
+tags: [go, identifiers, unique-id, web, tracing]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Agent APIs need unique, URL-safe IDs that also sort by time.
+  UUIDs are long and random; xid packs a timestamp, machine id,
+  and counter into 20 characters so run IDs stay compact in logs
+  and object keys.
+
+use_cases:
+  - Assign compact run IDs to Go agent jobs
+  - Key API objects and webhook events with sortable IDs
+  - Tag inference requests for log correlation
+  - Store xid values as MongoDB-style 12-byte binary keys
