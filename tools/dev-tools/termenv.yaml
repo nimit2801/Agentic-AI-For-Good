@@ -1,0 +1,25 @@
+name: termenv
+description: Go library for advanced ANSI style and color in terminal apps. termenv detects color profiles, supports true color, and styles CLI output so agent and eval tools stay readable across terminals.
+tagline: ANSI style and color for Go terminal apps
+
+github_url: https://github.com/muesli/termenv
+docs_url: https://github.com/muesli/termenv#readme
+install_command: go get github.com/muesli/termenv
+
+category: Dev Tools
+tags: [go, terminal, ansi, color, cli, tui]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Agent CLIs and eval TUIs need color that matches the terminal
+  without breaking pipes or CI logs. termenv detects the profile,
+  applies true-color or 256-color styles, and keeps output readable
+  on modern terminals and plain stdout.
+
+use_cases:
+  - Colorize model names and status lines in a Go agent CLI
+  - Detect whether a CI job supports ANSI before printing traces
+  - Style success, warn, and error output in an eval runner
+  - Theme TUI status bars with true color when the terminal allows it

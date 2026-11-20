@@ -1,0 +1,25 @@
+name: Charm Log
+description: A minimal, colorful Go logging library from Charm. Charm Log adds leveled structured logs with Lip Gloss styling, JSON and logfmt formatters, and slog support for agent CLIs and TUI tools.
+tagline: Colorful structured logging for Go CLIs
+
+github_url: https://github.com/charmbracelet/log
+docs_url: https://github.com/charmbracelet/log#readme
+install_command: go get charm.land/log/v2@latest
+
+category: Dev Tools
+tags: [go, logging, cli, structured-logging, charmbracelet, slog]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go agent CLIs need human-readable logs locally and structured
+  logs in production. Charm Log styles leveled output with Lip
+  Gloss, supports JSON and logfmt, and plugs into slog so the same
+  logger works in TUIs and services.
+
+use_cases:
+  - Log agent tool calls with key-value pairs in a Charm CLI
+  - Emit JSON logs from a Go worker while keeping colorful local output
+  - Attach a logger to context for per-request inference traces
+  - Wrap stdlib log or slog so existing packages share Charm formatting

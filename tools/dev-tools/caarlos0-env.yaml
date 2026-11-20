@@ -1,0 +1,26 @@
+name: caarlos0 env
+description: A zero-dependency Go library that parses environment variables into structs. caarlos0 env uses struct tags for defaults, required fields, and nested config so agent workers start with typed 12-factor settings.
+tagline: Parse environment variables into Go structs
+
+github_url: https://github.com/caarlos0/env
+website_url: https://pkg.go.dev/github.com/caarlos0/env/v11
+docs_url: https://github.com/caarlos0/env#readme
+install_command: go get github.com/caarlos0/env/v11
+
+category: Dev Tools
+tags: [go, config, env, 12-factor, kubernetes]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go agent workers and inference services take config from env
+  vars, and hand-written os.Getenv drifts from struct fields.
+  caarlos0 env maps tagged structs, defaults, and required keys
+  so processes fail fast with typed config and no extra deps.
+
+use_cases:
+  - Load model name, API keys, and queue URLs from env into a Go struct
+  - Fail startup when required secrets are missing in a worker container
+  - Parse nested and slice env values for multi-model agent services
+  - Keep 12-factor config next to struct tags without a YAML file

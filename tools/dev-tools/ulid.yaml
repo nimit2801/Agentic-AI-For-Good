@@ -1,0 +1,25 @@
+name: ULID
+description: Go implementation of Universally Unique Lexicographically Sortable Identifiers. ULIDs are 128-bit, time-ordered, and Crockford-encoded so agent jobs and inference traces sort by time without a separate ID service.
+tagline: Time-ordered unique IDs for Go
+
+github_url: https://github.com/oklog/ulid
+docs_url: https://github.com/oklog/ulid#readme
+install_command: go get github.com/oklog/ulid/v2
+
+category: Dev Tools
+tags: [go, ulid, identifiers, time-ordered, tracing]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Agent runs and inference requests need unique IDs that also
+  sort by time in logs and databases. Random UUIDs scatter rows.
+  ULID packs a timestamp and randomness into a 26-character ID
+  so traces stay unique and lexicographically ordered.
+
+use_cases:
+  - Assign time-ordered run IDs to Go agent jobs
+  - Key eval result rows so they sort by creation time
+  - Tag inference requests for log correlation without a UUID service
+  - Parse ULIDs from queue messages and webhook payloads
