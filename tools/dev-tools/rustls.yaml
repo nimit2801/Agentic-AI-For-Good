@@ -1,0 +1,25 @@
+name: rustls
+description: Modern TLS library written in Rust, designed as a memory-safe alternative to OpenSSL for clients and servers. It implements TLS 1.2 and 1.3 with pluggable crypto providers and is widely used across the Rust networking stack.
+tagline: Memory-safe TLS library in Rust
+
+github_url: https://github.com/rustls/rustls
+docs_url: https://docs.rs/rustls/
+
+install_command: cargo add rustls
+
+category: Dev Tools
+tags: [rust, tls, cryptography, networking, security, library]
+pricing: free
+is_open_source: true
+license: Apache-2.0 OR MIT OR ISC
+
+problem_solved: |
+  Binding to OpenSSL from Rust inherits C memory-safety risk and a heavy native dependency.
+  rustls implements TLS 1.2/1.3 in safe Rust with pluggable crypto backends, so HTTP clients,
+  servers, and proxies can terminate TLS without OpenSSL while staying in the Rust ecosystem.
+
+use_cases:
+  - Add TLS to a Rust HTTP client or server without linking OpenSSL
+  - Terminate TLS 1.3 in a reverse proxy or custom protocol with rustls
+  - Swap crypto providers (ring or aws-lc-rs) to match platform FIPS needs
+  - Use rustls with tokio-rustls or rustls-native-certs in async services
