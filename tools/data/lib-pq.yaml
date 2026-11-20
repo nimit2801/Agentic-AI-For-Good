@@ -1,0 +1,24 @@
+name: lib pq
+description: Go PostgreSQL driver for database/sql, historically the default pq client. Many agent and data services still use lib/pq when they want the stdlib SQL API against Postgres without a native protocol toolkit.
+tagline: PostgreSQL driver for Go database/sql
+
+github_url: https://github.com/lib/pq
+docs_url: https://pkg.go.dev/github.com/lib/pq
+install_command: go get github.com/lib/pq
+
+category: Data
+tags: [go, postgres, database, driver, sql]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Older Go services and libraries expect a database/sql driver named pq
+  for Postgres. lib/pq registers that driver so existing agent APIs and
+  ORMs can open postgres:// URLs without switching to pgx.
+
+use_cases:
+  - Open a Postgres URL from database/sql in a Go agent API
+  - Keep compatibility with libraries that import github.com/lib/pq
+  - Query eval and trace tables when you do not need COPY or LISTEN
+  - Migrate a pq-based service while still supporting the stdlib API

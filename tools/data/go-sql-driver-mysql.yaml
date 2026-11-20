@@ -1,0 +1,24 @@
+name: go-sql-driver mysql
+description: Pure-Go MySQL driver for database/sql. Agent backends and feature stores that run on MySQL or MariaDB use it to query without CGO, with pooling, timeouts, and context cancellation from the stdlib.
+tagline: MySQL driver for Go database/sql
+
+github_url: https://github.com/go-sql-driver/mysql
+docs_url: https://github.com/go-sql-driver/mysql#readme
+install_command: go get github.com/go-sql-driver/mysql
+
+category: Data
+tags: [go, mysql, database, driver, sql, mariadb]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  Go services that keep agent state or features in MySQL need a stdlib
+  driver that is pure Go. go-sql-driver/mysql implements database/sql
+  over TCP or Unix sockets so you do not link libmysqlclient.
+
+use_cases:
+  - Query MySQL tables of prompts, traces, and eval scores from Go
+  - Point database/sql at MariaDB for a local agent control plane
+  - Use context timeouts on MySQL calls inside an inference API
+  - Pool connections for a Go worker that writes job status rows
