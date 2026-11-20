@@ -1,0 +1,25 @@
+name: eyre
+description: Trait-object error type for idiomatic error handling and reporting in Rust applications. It captures backtraces and context so CLIs and services can return anyhow-style errors with better reports than a bare Box of dyn Error.
+tagline: Idiomatic error reports for Rust applications
+
+github_url: https://github.com/eyre-rs/eyre
+docs_url: https://docs.rs/eyre/
+
+install_command: cargo add eyre
+
+category: Dev Tools
+tags: [rust, errors, eyre, reporting, backtrace]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Rust services need a single error type that carries context and a
+  backtrace without defining a huge enum per crate. eyre provides that
+  Report type so CLIs and agent runtimes can bubble failures with context.
+
+use_cases:
+  - Return eyre::Result from a Rust CLI entrypoint with full reports
+  - Attach context to I/O and HTTP failures in an agent runtime
+  - Capture backtraces for unexpected errors in production services
+  - Replace a bare Box of dyn Error with structured eyre reports

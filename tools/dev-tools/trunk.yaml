@@ -1,0 +1,26 @@
+name: Trunk
+description: Wasm web app bundler for Rust that builds, watches, and serves the frontend with wasm-bindgen integration. Teams use it to ship Leptos, Yew, or Dioxus apps to the browser without a custom webpack or Vite pipeline.
+tagline: Build, bundle, and serve Rust Wasm web apps
+
+github_url: https://github.com/trunk-rs/trunk
+website_url: https://trunk-rs.github.io/trunk/
+docs_url: https://trunk-rs.github.io/trunk/
+
+install_command: cargo install trunk
+
+category: Dev Tools
+tags: [rust, wasm, bundler, frontend, wasm-bindgen, web]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Rust Wasm frontends need HTML, assets, wasm-bindgen, and a dev server
+  wired together. Trunk watches the crate, bundles Wasm, and serves the
+  app so you do not maintain a separate JS bundler for a Rust UI.
+
+use_cases:
+  - Serve a Yew or Leptos app locally with live rebuilds
+  - Bundle a Rust Wasm frontend plus static assets for production
+  - Replace a custom wasm-bindgen plus webpack script with one CLI
+  - Ship an internal ML dashboard compiled from Rust to the browser

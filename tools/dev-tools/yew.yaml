@@ -1,0 +1,26 @@
+name: Yew
+description: Rust and WebAssembly framework for building web applications with a component model similar to React. Teams write frontend UIs in Rust that compile to Wasm, sharing types with backend crates used for APIs and agent tooling.
+tagline: Component-based Rust Wasm framework for the web
+
+github_url: https://github.com/yewstack/yew
+website_url: https://yew.rs
+docs_url: https://yew.rs/docs/
+
+install_command: cargo add yew
+
+category: Dev Tools
+tags: [rust, wasm, web, frontend, components, ui]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Browser UIs for Rust backends usually mean a separate JavaScript stack
+  and duplicated types. Yew compiles a React-like component tree to Wasm
+  so the frontend stays in Rust and can share crates with the server.
+
+use_cases:
+  - Build a Wasm web UI that shares types with a Rust API crate
+  - Render an agent or model dashboard entirely in Rust components
+  - Port a small React-style app to Rust without a Node frontend
+  - Compose reusable Yew components for an internal tooling console
