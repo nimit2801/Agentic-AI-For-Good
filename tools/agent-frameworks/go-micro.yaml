@@ -1,0 +1,26 @@
+name: go-micro
+description: Go framework for building agents, tools, and services with RPC, pub/sub, and service discovery. Used to wire agent workers, tool servers, and backing services without assembling a custom microservice stack.
+tagline: Go framework for agents, tools, and services
+
+github_url: https://github.com/micro/go-micro
+website_url: https://go-micro.dev
+docs_url: https://go-micro.dev
+install_command: go get go-micro.dev/v6
+
+category: Agents
+tags: [go, agents, microservices, rpc, pubsub]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Teams building Go agents still invent RPC, discovery, and pub/sub
+  for every worker. go-micro packages those primitives so agent
+  tools and services share clients, brokers, and registries instead
+  of a one-off stack.
+
+use_cases:
+  - Run agent workers as discoverable Go services with RPC handlers
+  - Publish tool-call events over go-micro pub/sub
+  - Call a model-serving service from an agent without custom clients
+  - Compose tools and backing services under one Go framework

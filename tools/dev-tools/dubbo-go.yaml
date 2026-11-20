@@ -1,0 +1,26 @@
+name: dubbo-go
+description: Go implementation of Apache Dubbo for RPC microservices with service discovery and traffic control. Used when Go inference or agent services must join a Dubbo mesh already running in Java.
+tagline: Apache Dubbo RPC for Go
+
+github_url: https://github.com/apache/dubbo-go
+website_url: https://dubbo.apache.org/
+docs_url: https://dubbo.apache.org/en/overview/mannual/golang-sdk/
+install_command: go get dubbo.apache.org/dubbo-go/v3
+
+category: Dev Tools
+tags: [go, dubbo, rpc, microservices, apache]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Java shops on Dubbo that add Go model servers otherwise cannot
+  join the same registry and protocol. dubbo-go is the Go SDK so
+  inference and agent services register, discover, and RPC with
+  existing Dubbo consumers.
+
+use_cases:
+  - Expose a Go model server to Java Dubbo consumers
+  - Register agent workers in a Dubbo registry for discovery
+  - Apply Dubbo traffic routing to Go inference instances
+  - Mix Go and Java microservices in one RPC mesh

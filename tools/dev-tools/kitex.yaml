@@ -1,0 +1,26 @@
+name: Kitex
+description: High-performance Go RPC framework from CloudWeGo with strong extensibility for microservices. Used to serve model inference and agent RPCs with code generation, middleware, and multi-protocol transports.
+tagline: High-performance Go RPC framework from CloudWeGo
+
+github_url: https://github.com/cloudwego/kitex
+website_url: https://www.cloudwego.io/docs/kitex/
+docs_url: https://www.cloudwego.io/docs/kitex/
+install_command: go get github.com/cloudwego/kitex
+
+category: Dev Tools
+tags: [go, rpc, cloudwego, microservices, thrift]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Go inference and agent backends that outgrow JSON HTTP need a typed
+  RPC stack with codegen and middleware. Kitex generates clients and
+  servers with pluggable codecs so those services stay fast without
+  assembling gRPC plumbing by hand.
+
+use_cases:
+  - Serve a typed model-inference RPC with Kitex codegen
+  - Add tracing and timeout middleware around agent tool calls
+  - Talk Thrift or gRPC from the same Go microservice
+  - Scale internal RPCs between embedding and ranking workers
