@@ -1,0 +1,26 @@
+name: cargo-msrv
+description: Cargo subcommand that finds the Minimum Supported Rust Version of a crate or workspace. It bisects rustup toolchains so you can set rust-version from evidence instead of guessing.
+tagline: Find the Minimum Supported Rust Version of a crate
+
+github_url: https://github.com/foresterre/cargo-msrv
+website_url: https://foresterre.github.io/cargo-msrv
+docs_url: https://foresterre.github.io/cargo-msrv/
+
+install_command: cargo install cargo-msrv --locked
+
+category: Dev Tools
+tags: [rust, cargo, msrv, rustup, ci, compatibility]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Declaring rust-version too high locks out users, too low and CI never
+  catches the real floor. cargo-msrv bisects installed rustup toolchains
+  and reports the oldest Rust that still builds the crate.
+
+use_cases:
+  - Set package.rust-version from a measured MSRV before publishing a crate
+  - Verify in CI that a PR still builds on the advertised Minimum Supported Rust Version
+  - Find which dependency bump raised the MSRV of an ML or data crate
+  - Print JSON MSRV results for a workspace release checklist

@@ -1,0 +1,27 @@
+name: nannou
+description: Creative coding framework for Rust that gives sketches access to windows, audio, lasers, and GPU rendering. Artists and researchers use it to prototype visual experiments and interactive installations without leaving the Rust toolchain.
+tagline: Creative coding framework for Rust
+
+github_url: https://github.com/nannou-org/nannou
+website_url: https://nannou.cc/
+docs_url: https://www.guide.nannou.cc/
+
+install_command: cargo add nannou
+
+category: Dev Tools
+tags: [rust, creative-coding, graphics, audio, gpu, visualization]
+pricing: free
+is_open_source: true
+license: MIT OR Apache-2.0
+
+problem_solved: |
+  Rust has strong graphics crates but wiring windows, events, audio, and
+  drawing into a sketch is still a lot of glue. nannou packages that stack
+  so a creative or research prototype can start as an App loop instead of
+  a custom renderer.
+
+use_cases:
+  - Sketch generative visuals that react to audio or sensor input
+  - Prototype an interactive installation with GPU drawing in Rust
+  - Visualize model training or embedding spaces as a live sketch
+  - Teach creative coding without leaving a Cargo workspace

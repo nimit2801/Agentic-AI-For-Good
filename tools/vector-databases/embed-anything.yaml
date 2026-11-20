@@ -1,0 +1,27 @@
+name: EmbedAnything
+description: Rust-based embedding inference and ingestion library with Python bindings. It runs local models, chunks files, and indexes vectors so RAG pipelines can embed documents without standing up a separate model server.
+tagline: Local embedding inference and indexing in Rust
+
+github_url: https://github.com/StarlightSearch/EmbedAnything
+website_url: https://embed-anything.com/
+docs_url: https://docs.rs/embed_anything/
+
+install_command: pip install embed-anything
+
+category: Vector DB
+tags: [rust, python, embeddings, rag, inference, indexing, local]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Many RAG stacks call a remote embedding API or a heavy Python-only
+  pipeline just to turn files into vectors. EmbedAnything runs ingestion
+  and embedding locally in Rust, with a Python API, so indexing stays
+  fast and memory-safe on one machine.
+
+use_cases:
+  - Embed PDFs, markdown, and images locally before loading a vector store
+  - Run ColPali-style multimodal retrieval without a separate inference service
+  - Index a local corpus for an offline RAG prototype
+  - Swap cloud embedding APIs for an on-device pipeline in production

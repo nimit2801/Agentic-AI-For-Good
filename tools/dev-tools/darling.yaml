@@ -1,0 +1,26 @@
+name: darling
+description: Rust proc-macro helper that parses derive-macro attributes into typed structs. It turns #[derive] options into validated fields so crate authors spend less time on syn boilerplate and more time on the generated API.
+tagline: Typed attribute parsing for Rust derive macros
+
+github_url: https://github.com/TedDriggs/darling
+docs_url: https://docs.rs/darling/
+
+install_command: cargo add darling
+
+category: Dev Tools
+tags: [rust, proc-macro, derive, syn, attributes, crates]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Writing a derive macro usually means hand-parsing syn trees for every
+  attribute, with weak error messages when users pass bad options. darling
+  maps attributes onto structs with FromMeta so macros get typed config
+  and span-aware errors.
+
+use_cases:
+  - Parse custom #[model(...)] attributes on a derive that generates inference bindings
+  - Validate nested attribute options in a config or builder derive
+  - Surface span-accurate compile errors when a derive option is missing or mistyped
+  - Reduce syn boilerplate in a workspace of internal Rust macros
