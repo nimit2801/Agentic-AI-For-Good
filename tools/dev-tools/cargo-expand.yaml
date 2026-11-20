@@ -1,0 +1,25 @@
+name: cargo-expand
+description: Cargo subcommand that prints the result of macro expansion for a Rust crate. Developers use it to debug proc macros, inspect derive output, and see what the compiler type-checks after expansion.
+tagline: Show expanded Rust macros from cargo
+
+github_url: https://github.com/dtolnay/cargo-expand
+docs_url: https://docs.rs/cargo-expand/
+
+install_command: cargo install cargo-expand
+
+category: Dev Tools
+tags: [rust, cargo, macros, proc-macros, debugging, compiler]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Proc macros and derives hide the code the compiler actually sees, which makes
+  trait errors and unexpected generated impls hard to debug. cargo-expand runs
+  rustc expansion and pretty-prints the result so you can inspect the real AST.
+
+use_cases:
+  - Print expanded derive output for a failing Serialize or thiserror impl
+  - Debug a custom proc macro by comparing expanded tokens to the expected API
+  - Confirm feature-gated macros expand only under the intended cfg flags
+  - Share a pretty-printed expansion in a PR when reviewing generated code
