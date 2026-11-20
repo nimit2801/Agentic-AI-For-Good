@@ -1,0 +1,26 @@
+name: miette
+description: Fancy Rust diagnostics on top of std::error::Error with pretty, labeled reports. CLIs for data prep and model tools print source snippets and help text instead of a one-line unwrap panic.
+tagline: Pretty diagnostic reports for Rust errors
+
+github_url: https://github.com/zkat/miette
+docs_url: https://docs.rs/miette
+
+install_command: cargo add miette
+
+category: Dev Tools
+tags: [rust, error-handling, diagnostics, cli, crates]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Rust CLIs that fail on config or schema errors dump a Debug
+  string users cannot act on. miette prints labeled snippets,
+  related help, and exit-friendly reports so operators can fix
+  the input.
+
+use_cases:
+  - Report a YAML config parse error with the bad line highlighted
+  - Show help text when a model path or schema is invalid
+  - Wrap anyhow-style errors in a CLI-friendly diagnostic
+  - Print related causes for a failed dataset conversion

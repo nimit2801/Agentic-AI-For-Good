@@ -1,0 +1,26 @@
+name: Plop
+description: Micro-generator for project files that runs Handlebars templates from a simple config. Teams use it to scaffold agent tools, route files, and eval harnesses so new modules match the same layout every time.
+tagline: Consistency-first micro-generator for project files
+
+github_url: https://github.com/plopjs/plop
+website_url: https://plopjs.com
+docs_url: https://plopjs.com/documentation
+
+install_command: npm install --save-dev plop
+
+category: Dev Tools
+tags: [javascript, scaffolding, codegen, templates, node]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  New agent tools and API routes drift when each person copies a
+  different file. Plop generates files from templates so scaffolds
+  stay consistent without a heavy Yeoman generator stack.
+
+use_cases:
+  - Scaffold a new agent tool module from a Handlebars template
+  - Generate matching test and types files for a new API route
+  - Standardize eval-harness folders across a monorepo
+  - Prompt for name and path when adding a worker or CLI command
