@@ -1,0 +1,25 @@
+name: cmux
+description: Go connection multiplexer that serves HTTP, gRPC, and other protocols on one port by matching the first bytes. Used so model servers and agent control planes share a listen address without extra proxies.
+tagline: Serve multiple protocols on one Go port
+
+github_url: https://github.com/soheilhy/cmux
+docs_url: https://pkg.go.dev/github.com/soheilhy/cmux
+install_command: go get github.com/soheilhy/cmux
+
+category: Dev Tools
+tags: [go, networking, grpc, http, multiplexer]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Inference servers often need HTTP health checks and gRPC model APIs
+  but only one inbound port in Kubernetes. cmux inspects the first
+  bytes of each connection so one listener can demux HTTP, gRPC, and
+  TLS without a sidecar proxy.
+
+use_cases:
+  - Serve gRPC inference and HTTP health on the same container port
+  - Multiplex an agent control plane REST API with a gRPC tool channel
+  - Match TLS vs plaintext on one listen address in a Go sidecar
+  - Avoid an extra Envoy hop for local multi-protocol model servers
