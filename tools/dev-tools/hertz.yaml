@@ -1,0 +1,26 @@
+name: Hertz
+description: High-performance Go HTTP framework from CloudWeGo for microservices. Used for inference gateways, webhook receivers, and agent control planes that need fast routing without a heavy net/http stack.
+tagline: High-performance Go HTTP framework from CloudWeGo
+
+github_url: https://github.com/cloudwego/hertz
+website_url: https://www.cloudwego.io
+docs_url: https://www.cloudwego.io/docs/hertz/
+install_command: go get github.com/cloudwego/hertz
+
+category: Dev Tools
+tags: [go, http, cloudwego, microservices, web-framework]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Go teams serving inference HTTP at high QPS hit net/http overhead
+  and missing middleware. Hertz is CloudWeGo's HTTP framework with
+  fast routing and extensions so gateways and agent APIs stay
+  efficient without switching languages.
+
+use_cases:
+  - Build an OpenAI-compatible HTTP gateway in Go
+  - Receive webhooks that trigger agent jobs at high throughput
+  - Add middleware for auth and request IDs on a control plane
+  - Pair Hertz HTTP with Kitex RPC in the same CloudWeGo service

@@ -1,0 +1,26 @@
+name: Go Kratos
+description: Go microservices framework for cloud-native APIs with HTTP, gRPC, config, and middleware. Distinct from Ory Kratos. Used for inference gateways and agent backends that need layout, tracing, and service templates.
+tagline: Cloud-native Go microservices framework
+
+github_url: https://github.com/go-kratos/kratos
+website_url: https://go-kratos.dev
+docs_url: https://go-kratos.dev
+install_command: go get github.com/go-kratos/kratos/v3
+
+category: Dev Tools
+tags: [go, microservices, grpc, http, cloud-native]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Cloud-native Go services for models and agents need HTTP plus gRPC,
+  config, and tracing without copying layout from scratch. Kratos
+  provides that framework so teams scaffold inference APIs instead
+  of assembling transport and middleware by hand.
+
+use_cases:
+  - Scaffold a Go inference API with HTTP and gRPC in one service
+  - Load config and secrets for agent workers with Kratos config
+  - Add tracing and logging middleware across microservice calls
+  - Generate service layout so ML platform teams share the same structure
