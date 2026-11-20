@@ -1,0 +1,25 @@
+name: indicatif
+description: Command-line progress reporting library for Rust with spinners, bars, and ETAs. Training, download, and dataset CLIs stay readable during long embedding or fetch jobs that would otherwise look hung.
+tagline: Progress bars and spinners for Rust CLIs
+
+github_url: https://github.com/console-rs/indicatif
+docs_url: https://docs.rs/indicatif
+
+install_command: cargo add indicatif
+
+category: Dev Tools
+tags: [rust, cli, progress-bar, terminal, crates]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Long-running Rust CLIs for downloads and training look frozen with
+  no progress. indicatif renders bars, spinners, and ETAs so operators
+  can see throughput instead of staring at a blank terminal.
+
+use_cases:
+  - Show download progress for model weights in a CLI
+  - Render a progress bar over embedding or eval batches
+  - Add a spinner while waiting on a remote LLM call
+  - Multi-bar progress for parallel dataset extraction

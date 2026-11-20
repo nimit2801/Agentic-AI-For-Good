@@ -1,0 +1,25 @@
+name: Rayon
+description: Data-parallelism library for Rust that turns sequential iterators into parallel ones. Teams use it to speed up CPU-bound tokenization, embedding post-process, and batch transforms without writing thread pools by hand.
+tagline: Data parallelism for Rust iterators
+
+github_url: https://github.com/rayon-rs/rayon
+docs_url: https://docs.rs/rayon
+
+install_command: cargo add rayon
+
+category: Dev Tools
+tags: [rust, parallelism, iterators, concurrency, performance]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  CPU-bound Rust pipelines for tokenization and feature transforms sit
+  on one core if you only use sequential iterators. Rayon parallelizes
+  those iterators with work stealing so batch jobs use the whole machine.
+
+use_cases:
+  - Parallelize tokenization or chunking over a document corpus
+  - Speed up CPU post-process after embedding generation
+  - Map a transform over training rows without a custom thread pool
+  - Parallelize batch JSON parsing in a Rust data CLI
