@@ -1,0 +1,25 @@
+name: Air
+description: Live-reload CLI for Go apps. Air watches source files, rebuilds, and restarts the process so agent APIs, model servers, and local Go tools pick up changes without a manual rebuild cycle.
+tagline: Live reload for Go apps during local development
+
+github_url: https://github.com/air-verse/air
+docs_url: https://github.com/air-verse/air#readme
+install_command: go install github.com/air-verse/air@latest
+
+category: Dev Tools
+tags: [go, live-reload, cli, development, hot-reload]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Go agent servers and model APIs need a full rebuild and restart after
+  every code change, which slows local iteration. Air watches the project,
+  rebuilds on save, and restarts the binary so you stay in the editor
+  instead of bouncing between compile and run.
+
+use_cases:
+  - Reload a local Go inference or agent HTTP server as you edit handlers
+  - Rebuild CLI tools that wrap LLM APIs without quitting the process
+  - Keep a worker process running while you change queue or tool-calling code
+  - Use .air.toml to exclude vendor and model artifact dirs from watches

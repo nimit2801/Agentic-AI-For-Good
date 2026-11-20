@@ -1,0 +1,26 @@
+name: tview
+description: Terminal UI widget library for Go with forms, tables, trees, lists, and flex or grid layouts. Teams use tview to ship interactive agent consoles, cluster dashboards, and model pickers that run in a terminal.
+tagline: Rich interactive widgets for Go terminal UIs
+
+github_url: https://github.com/rivo/tview
+docs_url: https://pkg.go.dev/github.com/rivo/tview
+website_url: https://github.com/rivo/tview/wiki
+install_command: go get github.com/rivo/tview@master
+
+category: Dev Tools
+tags: [go, tui, terminal, widgets, cli]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go CLIs for agents and cluster ops need more than print loops, and
+  writing forms, tables, and navigation from raw terminal codes is
+  slow. tview gives reusable widgets and layouts so you can ship a
+  keyboard-driven console without a web frontend.
+
+use_cases:
+  - Build a terminal dashboard for Kubernetes or GPU cluster status (k9s-style)
+  - Add forms and lists to pick models, endpoints, and tools in a Go CLI
+  - Show streaming logs and job tables for local agent runs
+  - Layout multi-pane views with flex and grid for an ops TUI
