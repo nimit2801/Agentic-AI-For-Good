@@ -1,0 +1,24 @@
+name: golang-lru
+description: Thread-safe fixed-size LRU cache for Go, based on the groupcache design. Inference sidecars and agent workers use it to cache embeddings, tokenizer outputs, and config blobs in process.
+tagline: Thread-safe LRU cache for Go
+
+github_url: https://github.com/hashicorp/golang-lru
+docs_url: https://pkg.go.dev/github.com/hashicorp/golang-lru/v2
+install_command: go get github.com/hashicorp/golang-lru/v2
+
+category: Dev Tools
+tags: [go, cache, lru, hashicorp, in-memory]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  Go agent processes repeat the same embedding and config lookups and
+  need a small in-memory cache with eviction. golang-lru is a
+  thread-safe fixed-size LRU so hot keys stay in RAM without Redis.
+
+use_cases:
+  - Cache recent embeddings in a Go retrieval sidecar
+  - Remember tokenizer outputs for repeated prompts
+  - Bound memory for tool-result memoization with a 128-entry LRU
+  - Use the expirable LRU for short-lived API response caching
