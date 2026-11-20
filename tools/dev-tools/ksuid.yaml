@@ -1,0 +1,26 @@
+name: ksuid
+description: K-Sortable Globally Unique IDs from Segment. ksuid generates 160-bit, time-ordered identifiers that sort lexicographically so event logs, queue messages, and agent run IDs stay ordered without coordination.
+tagline: K-sortable globally unique IDs for Go
+
+github_url: https://github.com/segmentio/ksuid
+website_url: https://segment.com/blog/a-brief-history-of-the-uuid/
+docs_url: https://github.com/segmentio/ksuid#readme
+install_command: go get github.com/segmentio/ksuid
+
+category: Dev Tools
+tags: [go, ksuid, identifiers, time-ordered, events]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Event streams and agent run logs need unique IDs that remain
+  roughly time-ordered in indexes. Random UUIDs fragment storage.
+  ksuid encodes a timestamp plus 128 bits of payload so IDs sort
+  by time without a central generator.
+
+use_cases:
+  - Generate k-sortable IDs for agent run records in Go
+  - Key Kafka or queue messages so consumers see roughly time order
+  - Assign event IDs that sort in object-store prefixes
+  - Parse ksuid strings from logs when debugging inference traces
