@@ -1,0 +1,25 @@
+name: logr
+description: Small logging interface for Go used across Kubernetes and controller-runtime. Agent operators and control planes log through logr so implementations can swap zap, klog, or slog without rewriting call sites.
+tagline: Decoupled logging interface for Go
+
+github_url: https://github.com/go-logr/logr
+docs_url: https://pkg.go.dev/github.com/go-logr/logr
+
+install_command: go get github.com/go-logr/logr
+
+category: Dev Tools
+tags: [go, logging, kubernetes, interface, observability]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Go control planes should not hard-code zap or logrus. logr is a
+  tiny interface so Kubernetes-style operators, agent runtimes, and
+  reconcilers log with structure while the backend stays swappable.
+
+use_cases:
+  - Log from a Kubernetes operator that launches GPU jobs
+  - Swap zap or slog behind logr in an agent control plane
+  - Emit structured key-value logs from a Go reconciler loop
+  - Keep library code free of a concrete logger dependency
