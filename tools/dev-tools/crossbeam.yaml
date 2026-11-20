@@ -1,0 +1,25 @@
+name: Crossbeam
+description: Toolkit for concurrent programming in Rust, including lock-free queues, epoch-based memory reclamation, scoped threads, and channels that go beyond std. Used as the foundation for many high-performance concurrent crates.
+tagline: Concurrent data structures for Rust
+
+github_url: https://github.com/crossbeam-rs/crossbeam
+docs_url: https://docs.rs/crossbeam/
+
+install_command: cargo add crossbeam
+
+category: Dev Tools
+tags: [rust, concurrency, lock-free, channels, data-structures, library]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  std channels and mutex-based queues struggle with high-throughput producer-consumer workloads
+  and scoped parallelism. Crossbeam ships lock-free queues, epoch GC, and work-stealing primitives
+  so Rust services can share data across threads without coarse locks.
+
+use_cases:
+  - Use crossbeam channels or SegQueue in a multithreaded Rust worker pool
+  - Spawn scoped threads that borrow stack data without 'static bounds
+  - Build lock-free caches and work-stealing schedulers on crossbeam-epoch
+  - Replace mutex-protected VecDeque with a concurrent queue in a hot path

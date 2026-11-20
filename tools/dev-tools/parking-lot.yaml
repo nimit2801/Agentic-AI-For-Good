@@ -1,0 +1,25 @@
+name: parking_lot
+description: Compact, efficient Rust synchronization primitives that replace std mutexes, rwlocks, and once-init types with faster parking-lot implementations. Also exposes APIs to build custom locks without writing a futex layer from scratch.
+tagline: Fast mutexes and locks for Rust
+
+github_url: https://github.com/Amanieu/parking_lot
+docs_url: https://docs.rs/parking_lot/
+
+install_command: cargo add parking_lot
+
+category: Dev Tools
+tags: [rust, concurrency, mutex, synchronization, performance, library]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  std Mutex and RwLock in Rust are conservative and can be slow under contention, and rolling
+  custom primitives is error-prone. parking_lot provides smaller, faster mutexes, rwlocks, and
+  once cells used across the ecosystem so concurrent code waits less and binaries stay smaller.
+
+use_cases:
+  - Swap std Mutex for parking_lot Mutex in a contended Rust service
+  - Use parking_lot RwLock for read-heavy caches without writing a custom lock
+  - Build a custom synchronization primitive on the parking_lot core API
+  - Reduce lock overhead in multithreaded data pipelines and web servers
