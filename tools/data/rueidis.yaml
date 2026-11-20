@@ -1,0 +1,25 @@
+name: rueidis
+description: Fast Go Redis client with client-side caching, auto pipelining, and RESP3. Used to cache embeddings, rate-limit agent calls, and pipeline feature lookups without a generic Redis wrapper.
+tagline: Fast Go Redis client with client-side caching
+
+github_url: https://github.com/redis/rueidis
+docs_url: https://pkg.go.dev/github.com/redis/rueidis
+install_command: go get github.com/redis/rueidis
+
+category: Data
+tags: [go, redis, client-side-caching, pipelining, cache]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Go services that hit Redis for embeddings, sessions, and rate limits
+  pay round-trip cost on every GET. rueidis adds client-side caching
+  and auto pipelining so inference and agent backends reuse hot keys
+  without extra network hops.
+
+use_cases:
+  - Cache embedding vectors next to a Go inference worker with client-side caching
+  - Pipeline rate-limit INCR calls from an agent gateway
+  - Subscribe to Redis streams for feature-store invalidation events
+  - Store short-lived tool-call results without a heavier Redis ORM

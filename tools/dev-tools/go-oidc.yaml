@@ -1,0 +1,25 @@
+name: go-oidc
+description: Go OpenID Connect client for verifying ID tokens and discovering providers. Used to protect agent dashboards, model APIs, and internal tools with Google, Okta, or any OIDC issuer.
+tagline: OpenID Connect client for Go
+
+github_url: https://github.com/coreos/go-oidc
+docs_url: https://pkg.go.dev/github.com/coreos/go-oidc/v3/oidc
+install_command: go get github.com/coreos/go-oidc/v3
+
+category: Dev Tools
+tags: [go, oidc, authentication, jwt, identity]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Agent UIs and inference APIs need SSO without hand-rolled JWT
+  validation. go-oidc discovers providers, verifies ID tokens, and
+  checks issuer and audience so Go services can sit behind Google,
+  Okta, or any OIDC IdP.
+
+use_cases:
+  - Verify Google ID tokens on a Go model-serving gateway
+  - Protect an internal agent dashboard with Okta OIDC
+  - Discover JWKS and issuer metadata at startup instead of hardcoding keys
+  - Map OIDC claims to RBAC roles for tool-calling APIs

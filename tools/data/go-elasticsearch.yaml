@@ -1,0 +1,26 @@
+name: go-elasticsearch
+description: Official Go client for Elasticsearch with typed APIs for index, search, bulk, and cluster ops. Used to store logs, RAG chunks, and eval traces from Go pipelines without raw REST.
+tagline: Official Go client for Elasticsearch
+
+github_url: https://github.com/elastic/go-elasticsearch
+website_url: https://www.elastic.co/docs/reference/elasticsearch/clients/go
+docs_url: https://pkg.go.dev/github.com/elastic/go-elasticsearch/v9
+install_command: go get github.com/elastic/go-elasticsearch/v9
+
+category: Data
+tags: [go, elasticsearch, search, client, bulk]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Go data pipelines that index RAG chunks or eval logs otherwise
+  assemble Elasticsearch REST by hand. The official client handles
+  bulk helpers, retries, and versioned APIs so indexing and search
+  stay typed against a cluster.
+
+use_cases:
+  - Bulk-index document chunks from a Go ingestion worker
+  - Query Elasticsearch for retrieval before an LLM call
+  - Store agent traces and eval scores in a search index
+  - Talk to Elastic Cloud from Go without a third-party wrapper
