@@ -1,0 +1,25 @@
+name: cargo-llvm-cov
+description: Cargo subcommand for LLVM source-based coverage using rustc instrument-coverage. It runs tests, merges profraw data, and emits line coverage reports so CI can track uncovered Rust without a separate instrumentation toolchain.
+tagline: LLVM source-based coverage for Rust cargo projects
+
+github_url: https://github.com/taiki-e/cargo-llvm-cov
+docs_url: https://docs.rs/cargo-llvm-cov/
+
+install_command: cargo install cargo-llvm-cov
+
+category: Dev Tools
+tags: [rust, cargo, coverage, llvm, testing, ci]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  LLVM source-based coverage needs rustc flags, profraw merging, and report
+  generation that are easy to get wrong in CI. cargo-llvm-cov wraps that
+  pipeline as a cargo subcommand so coverage is one command in GitHub Actions.
+
+use_cases:
+  - Generate HTML or LCOV coverage for a Rust workspace in CI
+  - Fail a PR when LLVM line coverage drops below a team threshold
+  - Inspect uncovered branches in parser or unsafe modules
+  - Export coverage to Codecov using the llvm-cov LCOV output

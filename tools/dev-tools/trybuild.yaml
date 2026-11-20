@@ -1,0 +1,25 @@
+name: trybuild
+description: Test harness for Rust UI tests of compiler diagnostics. Proc-macro and derive authors snapshot rustc error output so a change that breaks expected compile failures is caught in cargo test.
+tagline: Snapshot compiler diagnostics in Rust tests
+
+github_url: https://github.com/dtolnay/trybuild
+docs_url: https://docs.rs/trybuild/
+
+install_command: cargo add trybuild --dev
+
+category: Dev Tools
+tags: [rust, testing, proc-macros, diagnostics, ui-tests]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Proc macros must fail with useful rustc errors, but cargo test does not
+  snapshot compile-fail output. trybuild runs fixture crates, captures
+  diagnostics, and diffs them so a broken error message fails the suite.
+
+use_cases:
+  - Snapshot compile-fail diagnostics for a derive or proc-macro crate
+  - Guard expected error spans when changing a macro's public API
+  - Add pass and fail fixtures that cargo test runs as UI tests
+  - Catch a regression that silences or rewords a compiler error
