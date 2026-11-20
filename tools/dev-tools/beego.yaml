@@ -1,0 +1,25 @@
+name: Beego
+description: High-performance Go web framework with MVC, ORM, and sessions. Teams use it to ship agent dashboards, webhook receivers, and model-serving APIs with routing and data access in one batteries-included stack.
+tagline: Batteries-included Go MVC web framework
+
+github_url: https://github.com/beego/beego
+docs_url: https://pkg.go.dev/github.com/beego/beego/v2
+
+install_command: go get github.com/beego/beego/v2
+
+category: Dev Tools
+tags: [go, web-framework, mvc, orm, http, api]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Go agent UIs and control planes need routing, sessions, and an ORM
+  without assembling Gin plus extra packages. Beego ships MVC, ORM,
+  and HTTP helpers so internal AI tools can ship as a single framework.
+
+use_cases:
+  - Serve an internal dashboard for agent runs and job status
+  - Receive model-provider webhooks with session-backed admin routes
+  - Expose a REST API in front of embeddings and vector search
+  - Scaffold CRUD for experiment metadata stored in Postgres

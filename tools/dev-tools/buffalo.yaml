@@ -1,0 +1,26 @@
+name: Buffalo
+description: Go web development ecosystem that generates a full-stack project with routing, assets, and database wiring. Teams ship internal AI tools and admin apps without assembling a frontend, ORM, and CLI from scratch.
+tagline: Rapid full-stack web development in Go
+
+github_url: https://github.com/gobuffalo/buffalo
+website_url: https://gobuffalo.io
+docs_url: https://gobuffalo.io/documentation/getting_started/installation
+
+install_command: go install github.com/gobuffalo/cli/cmd/buffalo@latest
+
+category: Dev Tools
+tags: [go, web-framework, full-stack, scaffolding, orm, cli]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Internal AI consoles need HTML, assets, and a database on day one.
+  Wiring mux, templates, and migrations by hand slows shipping. Buffalo
+  generates a hooked-up Go project so teams go from idea to running app.
+
+use_cases:
+  - Scaffold an internal tool for labeling or reviewing model outputs
+  - Generate a Go web app with Pop ORM for experiment metadata
+  - Ship an admin UI next to a local inference process
+  - Bootstrap a webhook and dashboard service without picking every library
