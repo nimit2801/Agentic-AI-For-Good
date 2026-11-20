@@ -1,0 +1,25 @@
+name: ndarray
+description: N-dimensional array crate for Rust with views, slicing, broadcasting, and efficient numeric operations similar in spirit to NumPy. It is the common array backbone for scientific and ML code that stays in Rust rather than calling into Python.
+tagline: N-dimensional arrays for Rust
+
+github_url: https://github.com/rust-ndarray/ndarray
+docs_url: https://docs.rs/ndarray/
+
+install_command: cargo add ndarray
+
+category: Data
+tags: [rust, arrays, numpy, scientific-computing, slicing, linear-algebra, library]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Rust lacks a standard n-dimensional array type, so numeric code either uses Vec-of-Vec or
+  FFI to NumPy. ndarray provides views, slicing, and broadcasting so scientific and ML
+  pipelines can stay in Rust with predictable memory layouts.
+
+use_cases:
+  - Store batched tensors and feature matrices in a Rust training or inference path
+  - Slice and broadcast arrays when porting NumPy prototypes to Rust
+  - Combine ndarray with ndarray-linalg for decompositions and solvers
+  - Share array views across threads without copying large numeric buffers

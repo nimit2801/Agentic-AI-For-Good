@@ -1,0 +1,25 @@
+name: Miri
+description: Interpreter for Rust's mid-level IR that detects undefined behavior, invalid unsafe, and data races by executing tests inside an abstract machine. It is a rustup component used to validate unsafe code before it hits production.
+tagline: UB detector for Rust unsafe code
+
+github_url: https://github.com/rust-lang/miri
+docs_url: https://github.com/rust-lang/miri#readme
+
+install_command: rustup +nightly component add miri
+
+category: Dev Tools
+tags: [rust, undefined-behavior, testing, unsafe, interpreter, rustup]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Unsafe Rust can compile and still hide use-after-free, unaligned reads, or data races that
+  sanitizers miss. Miri interprets MIR with a strict stacked-borrows model so tests fail when
+  code steps on undefined behavior, before it ships as a native binary.
+
+use_cases:
+  - Run cargo miri test on crates that contain unsafe blocks
+  - Catch stacked-borrows and aliasing violations in custom data structures
+  - Validate FFI wrappers and raw pointer code before a release
+  - Teach unsafe Rust by showing which operations Miri rejects

@@ -1,0 +1,26 @@
+name: ratatui
+description: Rust crate for building terminal user interfaces with widgets, layouts, and backends such as crossterm. It is the community successor to tui-rs and is used for dashboards, CLIs, and interactive TUI apps without a web frontend.
+tagline: Terminal UI toolkit for Rust
+
+github_url: https://github.com/ratatui/ratatui
+website_url: https://ratatui.rs
+docs_url: https://ratatui.rs
+
+install_command: cargo add ratatui
+
+category: Dev Tools
+tags: [rust, tui, terminal, cli, widgets, crossterm, library]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Building interactive terminal UIs in Rust used to mean forking tui-rs or drawing raw ANSI
+  by hand. ratatui provides maintained widgets, layouts, and backend adapters so you can ship
+  dashboards, installers, and operator consoles that run anywhere a terminal does.
+
+use_cases:
+  - Build a Kubernetes or log dashboard as a Rust TUI with charts and tables
+  - Add an interactive setup wizard to a CLI without depending on a GUI toolkit
+  - Render status panels and progress views in local developer tools
+  - Port a tui-rs app to the maintained ratatui widget set
