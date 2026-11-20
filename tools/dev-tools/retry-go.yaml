@@ -1,0 +1,26 @@
+name: retry-go
+description: Simple Go retry library with backoff, delay types, and retry-if predicates. Used around flaky LLM HTTP clients, embeddings, and object-store I/O in Go agent backends without copying ad-hoc retry loops.
+tagline: Configurable retries and backoff for Go
+
+github_url: https://github.com/avast/retry-go
+docs_url: https://pkg.go.dev/github.com/avast/retry-go/v5
+
+install_command: go get github.com/avast/retry-go/v5
+
+category: Dev Tools
+tags: [go, retry, backoff, resilience, http, reliability]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go inference clients hit 429s, timeouts, and brief network blips.
+  Hand-rolled retry loops miss jitter and max attempts. retry-go wraps
+  any function with backoff and predicates so LLM and storage calls
+  survive transient failures.
+
+use_cases:
+  - Retry OpenAI-compatible HTTP calls that return 429 or 5xx
+  - Wrap object-store downloads in a training or eval job
+  - Add backoff to webhook delivery from an agent control plane
+  - Retry embedding batch requests that fail on short-lived timeouts
