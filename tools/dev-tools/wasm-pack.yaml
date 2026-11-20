@@ -1,0 +1,26 @@
+name: wasm-pack
+description: Workflow tool that builds Rust crates to WebAssembly, packages them for npm, and tests in headless browsers. Teams use it to ship Rust parsers, tokenizers, and inference helpers into JavaScript apps without a custom wasm-bindgen pipeline.
+tagline: Rust-to-Wasm packaging for the web and npm
+
+github_url: https://github.com/wasm-bindgen/wasm-pack
+website_url: https://wasm-bindgen.github.io/wasm-pack/
+docs_url: https://wasm-bindgen.github.io/wasm-pack/book/
+
+install_command: cargo install wasm-pack
+
+category: Dev Tools
+tags: [rust, wasm, npm, wasm-bindgen, packaging, web]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Shipping Rust to the browser needs wasm-bindgen, wasm-opt, and npm
+  packaging that is easy to get wrong by hand. wasm-pack runs that
+  workflow so a crate becomes a Wasm package with one command.
+
+use_cases:
+  - Build a Rust tokenizer crate to Wasm and publish it on npm
+  - Test Wasm bindings in a headless browser during cargo workflows
+  - Package a Rust parser for a TypeScript RAG frontend
+  - Generate JS glue for a wasm-bindgen library without a custom script

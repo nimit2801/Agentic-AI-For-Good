@@ -1,0 +1,26 @@
+name: Dioxus
+description: Fullstack Rust app framework for web, desktop, and mobile with a React-like component model. Teams write one UI that compiles to WebAssembly, native desktops, and mobile, which is useful for agent consoles and local ML tooling that must run everywhere.
+tagline: Rust UI framework for web, desktop, and mobile
+
+github_url: https://github.com/DioxusLabs/dioxus
+website_url: https://dioxuslabs.com
+docs_url: https://dioxuslabs.com/learn/
+
+install_command: cargo add dioxus
+
+category: Dev Tools
+tags: [rust, ui, wasm, desktop, mobile, fullstack]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Agent consoles and local ML tools often need a desktop app and a web
+  UI with duplicated frontends. Dioxus uses one Rust component tree
+  that compiles to Wasm, native, and mobile so the UI is written once.
+
+use_cases:
+  - Build a cross-platform desktop console for a local agent runtime
+  - Ship the same Rust UI as a Wasm web app and a native binary
+  - Prototype an internal ML dashboard without a separate JS stack
+  - Target mobile and desktop from one Dioxus component tree

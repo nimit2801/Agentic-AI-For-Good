@@ -1,0 +1,26 @@
+name: Leptos
+description: Full-stack Rust web framework that uses fine-grained reactivity and can render on the server or in the browser via WebAssembly. Teams build fast web UIs and isomorphic apps in one language, including dashboards for model inference and agent tooling.
+tagline: Fine-grained reactive web apps in Rust
+
+github_url: https://github.com/leptos-rs/leptos
+website_url: https://leptos.dev
+docs_url: https://book.leptos.dev/
+
+install_command: cargo add leptos
+
+category: Dev Tools
+tags: [rust, wasm, web, fullstack, reactive, ui]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Web apps for ML tooling often split a JS frontend from a Rust API.
+  Leptos lets one Rust codebase render on the server and hydrate in
+  Wasm, so UI and backend share types without a separate SPA stack.
+
+use_cases:
+  - Build a reactive dashboard for local model inference in Rust
+  - Share API types between a Leptos UI and a Rust agent backend
+  - Server-render pages then hydrate in the browser via Wasm
+  - Ship a full-stack internal tool without a separate Node frontend
