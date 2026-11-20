@@ -1,0 +1,25 @@
+name: urfave CLI
+description: Declarative Go library for building command-line tools. urfave CLI maps flags, subcommands, and help text so agent CLIs and eval runners get a POSIX-style interface without a hand-rolled flag parser.
+tagline: Declarative CLI framework for Go
+
+github_url: https://github.com/urfave/cli
+docs_url: https://cli.urfave.org
+install_command: go get github.com/urfave/cli/v3
+
+category: Dev Tools
+tags: [go, cli, flags, subcommands, cobra-alternative]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Agent and eval CLIs need subcommands, flags, and help that stay
+  consistent as the surface grows. urfave CLI declares commands as
+  structs so Go tools get POSIX flags and nested commands without
+  a custom parser.
+
+use_cases:
+  - Build an agent CLI with run, eval, and serve subcommands
+  - Parse model, temperature, and output flags in a Go eval runner
+  - Generate help and bash completion for an internal LLM tool
+  - Nest dataset ingest commands under a single binary

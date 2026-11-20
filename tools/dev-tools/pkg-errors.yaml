@@ -1,0 +1,25 @@
+name: pkg errors
+description: Simple error-handling primitives for Go. pkg/errors wraps errors with stack traces so agent workers and inference clients report where a tool call or model request failed, not just the message.
+tagline: Wrap Go errors with stack traces
+
+github_url: https://github.com/pkg/errors
+docs_url: https://pkg.go.dev/github.com/pkg/errors
+install_command: go get github.com/pkg/errors
+
+category: Dev Tools
+tags: [go, errors, stack-trace, reliability]
+pricing: free
+is_open_source: true
+license: BSD-2-Clause
+
+problem_solved: |
+  Go agent pipelines lose the call site when they return bare
+  errors from tool and model clients. pkg/errors wraps and
+  annotates errors with stacks so operators see which hop failed
+  without a custom error type.
+
+use_cases:
+  - Wrap model-client failures with stack traces in a Go worker
+  - Annotate tool-call errors as they bubble through an agent loop
+  - Log cause plus stack when an embedding request fails
+  - Preserve error context across queue consumers and HTTP handlers
