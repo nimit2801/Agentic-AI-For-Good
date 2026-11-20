@@ -1,0 +1,26 @@
+name: futures-rs
+description: Zero-cost async primitives for Rust, including Future, Stream, Sink, and combinators. It is the foundation Tokio and other runtimes build on for non-blocking I/O, so agent loops and inference clients can compose async work without extra allocations.
+tagline: Zero-cost async Futures, Streams, and Sinks for Rust
+
+github_url: https://github.com/rust-lang/futures-rs
+website_url: https://rust-lang.github.io/futures-rs/
+docs_url: https://docs.rs/futures/
+
+install_command: cargo add futures
+
+category: Dev Tools
+tags: [rust, async, futures, streams, tokio, concurrency]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Async Rust needs a shared Future and Stream model that runtimes can poll
+  without extra heap traffic. futures-rs provides those traits and combinators
+  so Tokio, async-std, and custom executors share one async vocabulary.
+
+use_cases:
+  - Compose Future combinators for retries and timeouts in a Rust agent client
+  - Stream tokens or embeddings without buffering the whole response
+  - Implement a custom Sink for writing tool-call results asynchronously
+  - Share one futures crate across Tokio, async-std, and a custom executor

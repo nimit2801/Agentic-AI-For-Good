@@ -1,0 +1,26 @@
+name: cargo-make
+description: Rust task runner and build tool that defines workflows in a Makefile.toml and runs them as a cargo subcommand. Teams use it to chain format, lint, test, and custom scripts without a shell of one-off Make targets.
+tagline: Task runner for Rust cargo workspaces
+
+github_url: https://github.com/sagiegurari/cargo-make
+website_url: https://sagiegurari.github.io/cargo-make/
+docs_url: https://sagiegurari.github.io/cargo-make/
+
+install_command: cargo install --locked cargo-make
+
+category: Dev Tools
+tags: [rust, cargo, task-runner, ci, makefile, build]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Rust repos accumulate ad-hoc scripts for format, lint, test, and release that
+  differ per developer machine. cargo-make stores those flows in Makefile.toml
+  so the same named tasks run locally and in CI.
+
+use_cases:
+  - Define format, clippy, and test as one cargo make ci task
+  - Run workspace-wide scripts without a custom shell Makefile
+  - Gate a release flow on tests and license checks in one task
+  - Share named build tasks across a multi-crate Rust workspace
