@@ -1,0 +1,26 @@
+name: aisuite
+description: Unified Python client for many LLM providers behind one Chat Completions-style API. Swap OpenAI, Anthropic, and others by changing a provider prefix instead of rewriting client code.
+tagline: One Python API for many LLM providers
+
+github_url: https://github.com/andrewyng/aisuite
+docs_url: https://github.com/andrewyng/aisuite#readme
+
+install_command: pip install aisuite
+
+category: LLM
+tags: [python, llm, openai, anthropic, providers, mcp]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Each LLM vendor ships a different SDK, so switching providers means
+  rewriting calls, tools, and auth. aisuite keeps a single client and
+  routes openai:gpt-4o versus anthropic:claude by string, including MCP
+  tools when you need them.
+
+use_cases:
+  - Call OpenAI and Anthropic from one Python client in a RAG or agent app
+  - Switch providers in config without changing completion code
+  - Attach MCP server tools to a model without vendor-specific glue
+  - Prototype a chatbot that can fail over across providers

@@ -1,0 +1,23 @@
+name: FlashMLA
+description: Efficient CUDA kernels for DeepSeek Multi-head Latent Attention. Serving stacks use it to run MLA decoding faster on NVIDIA GPUs than a naive PyTorch attention implementation.
+tagline: Fast Multi-head Latent Attention kernels
+
+github_url: https://github.com/deepseek-ai/FlashMLA
+
+category: LLM
+tags: [cuda, attention, mla, deepseek, inference, gpu, kernels]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Multi-head Latent Attention is cheaper in KV cache than standard MHA,
+  but only if the kernel is fused. FlashMLA implements that decode path
+  on CUDA so DeepSeek-style models can serve tokens without a slow
+  PyTorch attention fallback.
+
+use_cases:
+  - Speed up MLA decoding in a DeepSeek or MLA-based serving stack
+  - Benchmark fused MLA kernels against PyTorch attention on Hopper GPUs
+  - Integrate FlashMLA into a custom inference engine
+  - Build CUDA wheels for MLA when packaging a local DeepSeek runtime

@@ -1,0 +1,26 @@
+name: LightEval
+description: Hugging Face toolkit for evaluating LLMs across many backends and task suites. It runs published benchmarks and custom evals without locking you to a single inference stack.
+tagline: All-in-one LLM evaluation toolkit
+
+github_url: https://github.com/huggingface/lighteval
+website_url: https://huggingface.co/docs/lighteval/en/index
+docs_url: https://huggingface.co/docs/lighteval/en/index
+
+install_command: pip install lighteval
+
+category: Monitoring
+tags: [python, evaluation, huggingface, benchmarks, llm, metrics]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  LLM evals are scattered across harnesses that each assume one backend.
+  LightEval runs the same tasks on Hugging Face, vLLM, and others so you
+  can compare checkpoints without rewriting the benchmark runner.
+
+use_cases:
+  - Score a new checkpoint on published LLM benchmarks before a release
+  - Compare two models on the same task suite across different backends
+  - Add a custom eval task without forking a full harness
+  - Track regression metrics for instruction-tuned models in CI

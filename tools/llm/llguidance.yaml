@@ -1,0 +1,25 @@
+name: llguidance
+description: Fast structured-output engine that constrains LLM tokens to JSON, regex, or context-free grammars. Inference servers use it so the model cannot emit invalid JSON or off-grammar text.
+tagline: Super-fast structured outputs for LLMs
+
+github_url: https://github.com/guidance-ai/llguidance
+docs_url: https://github.com/guidance-ai/llguidance#readme
+
+install_command: pip install llguidance
+
+category: LLM
+tags: [python, rust, structured-output, json, grammar, constrained-decoding]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Asking a model for JSON still yields broken objects, extra prose, and
+  retries. llguidance compiles a grammar and masks tokens at decode time
+  so the completion stays inside JSON, regex, or a CFG.
+
+use_cases:
+  - Force JSON Schema-valid tool calls from an OpenAI-compatible server
+  - Constrain a local model to a regex or CFG during sampling
+  - Speed up structured decoding versus interpreter-based guidance
+  - Embed grammar-constrained generation in a custom Rust or Python runtime
