@@ -1,0 +1,25 @@
+name: loom
+description: Concurrency permutation testing tool for Rust that executes tests against a model of threads, atomics, and mutexes to find race conditions. It explores interleavings that are nearly impossible to hit with ordinary stress tests.
+tagline: Concurrency permutation tester for Rust
+
+github_url: https://github.com/tokio-rs/loom
+docs_url: https://docs.rs/loom/
+
+install_command: cargo add loom --dev
+
+category: Dev Tools
+tags: [rust, concurrency, testing, atomics, race-conditions, tokio, library]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Data races in lock-free Rust only appear under rare interleavings, so cargo test can pass
+  for years. loom reimplements threads and atomics so a test explores many permutations and
+  fails when a race or deadlock is possible.
+
+use_cases:
+  - Test a custom lock-free queue against loom's model of atomics and threads
+  - Find missed Acquire/Release orderings in concurrent caches
+  - Validate Tokio-adjacent primitives before publishing a concurrency crate
+  - Reproduce a flaky CI race as a deterministic loom permutation
