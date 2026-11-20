@@ -1,0 +1,25 @@
+name: anyhow
+description: Flexible Rust Error type built on std::error::Error. Agent CLIs and inference services use it for ergonomic question-mark propagation without defining a crate-wide error enum on every binary.
+tagline: Ergonomic error handling for Rust applications
+
+github_url: https://github.com/dtolnay/anyhow
+docs_url: https://docs.rs/anyhow
+
+install_command: cargo add anyhow
+
+category: Dev Tools
+tags: [rust, error-handling, anyhow, cli, crates]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Rust agent CLIs glue HTTP, files, and subprocesses, and each crate
+  has its own error type. anyhow wraps them in one Error so binaries
+  can use ? and attach context instead of writing a giant enum.
+
+use_cases:
+  - Return anyhow Result from a model-download CLI
+  - Attach context when an LLM HTTP client or config load fails
+  - Prototype an inference binary without a custom error enum
+  - Convert mixed IO and JSON errors in a data-prep tool

@@ -1,0 +1,26 @@
+name: tracing
+description: Application-level tracing for Rust with spans and structured events. Tokio services instrument LLM clients, queues, and request lifetimes without collapsing everything into unstructured log lines.
+tagline: Span-based tracing for Rust applications
+
+github_url: https://github.com/tokio-rs/tracing
+website_url: https://tracing.rs
+docs_url: https://tracing.rs
+
+install_command: cargo add tracing
+
+category: Dev Tools
+tags: [rust, tracing, observability, tokio, logging, spans]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Rust agent services need request-scoped timing, not only println
+  logs. tracing records spans and structured fields so LLM calls,
+  queue workers, and HTTP handlers can be correlated in production.
+
+use_cases:
+  - Instrument an Axum or Tonic inference server with request spans
+  - Record duration of embedding and tool-call stages
+  - Emit structured fields for model name and token counts
+  - Bridge spans into OpenTelemetry for a collector dashboard

@@ -1,0 +1,25 @@
+name: thiserror
+description: derive(Error) for Rust structs and enums so libraries expose typed errors without handwritten Display and source impls. Used in HTTP, GPU, and config crates that agent stacks depend on.
+tagline: Derive Error for Rust library types
+
+github_url: https://github.com/dtolnay/thiserror
+docs_url: https://docs.rs/thiserror
+
+install_command: cargo add thiserror
+
+category: Dev Tools
+tags: [rust, error-handling, derive, libraries, crates]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Rust libraries should return typed errors callers can match on, but
+  writing Display, Error, and source by hand is noisy. thiserror derives
+  those impls so API crates stay precise without boilerplate.
+
+use_cases:
+  - Define typed errors for an inference HTTP client crate
+  - Distinguish config, GPU, and network failures in a library API
+  - Implement std error Error with source chaining via derive
+  - Keep public error types stable while internals change
