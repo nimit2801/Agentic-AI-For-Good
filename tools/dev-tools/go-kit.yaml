@@ -1,0 +1,26 @@
+name: Go Kit
+description: Programming toolkit for building Go microservices with endpoints, transports, and middleware. Common for inference APIs, agent control planes, and RPC services that need logging, tracing, circuit breaking, and rate limits without a heavy framework.
+tagline: Standard library for Go microservices
+
+github_url: https://github.com/go-kit/kit
+website_url: https://gokit.io
+docs_url: https://gokit.io
+install_command: go get github.com/go-kit/kit
+
+category: Dev Tools
+tags: [go, microservices, rpc, middleware, observability]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go inference gateways and agent control planes need logging, metrics,
+  tracing, retries, and transport adapters without a full framework.
+  Go Kit packages those patterns as composable endpoint middleware so
+  services stay small while still talking HTTP, gRPC, and existing SOA.
+
+use_cases:
+  - Wrap a model-serving RPC with logging, metrics, and circuit breaking
+  - Expose the same agent endpoint over HTTP and gRPC without duplicating logic
+  - Add request IDs and structured logs across a Go microservice fleet
+  - Rate-limit tool-call webhooks before they hit an expensive LLM backend

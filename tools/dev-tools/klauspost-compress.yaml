@@ -1,0 +1,25 @@
+name: klauspost compress
+description: Optimized Go compression packages covering zstd, snappy, flate, gzip, zip, and s2. Used to shrink model artifacts, dataset shards, and RPC payloads while keeping APIs close to the Go standard library.
+tagline: Fast compression packages for Go
+
+github_url: https://github.com/klauspost/compress
+docs_url: https://pkg.go.dev/github.com/klauspost/compress
+install_command: go get github.com/klauspost/compress
+
+category: Dev Tools
+tags: [go, compression, zstd, gzip, snappy]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Shipping model shards, logs, and RPC bodies with stdlib gzip is
+  often too slow or too large. klauspost/compress drop-in packages
+  speed up zstd, flate, gzip, snappy, and zip so Go data pipelines
+  and inference servers compress more with less CPU.
+
+use_cases:
+  - Compress dataset shards with zstd before uploading to object storage
+  - Speed up gzip responses from a Go model-serving HTTP API
+  - Pack checkpoint archives with faster zip writers than archive/zip
+  - Cut RPC payload size between agent workers using snappy or s2

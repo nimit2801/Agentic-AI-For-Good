@@ -1,0 +1,25 @@
+name: go-github
+description: Go client for GitHub REST API v3 covering repositories, issues, pull requests, Actions, and GitHub Apps. Used by agent tools that open issues, ship catalog PRs, or inspect CI without hand-written HTTP.
+tagline: Go client for the GitHub REST API
+
+github_url: https://github.com/google/go-github
+docs_url: https://pkg.go.dev/github.com/google/go-github/v93/github
+install_command: go get github.com/google/go-github/v93
+
+category: Dev Tools
+tags: [go, github, rest-api, ci, pull-requests]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Agent CLIs and catalog bots that talk to GitHub often hand-roll REST
+  calls, pagination, and auth. go-github is a typed client for repos,
+  issues, PRs, Actions, and Apps so those tools can open PRs, read CI,
+  and manage releases without custom HTTP plumbing.
+
+use_cases:
+  - Open a catalog PR from a Go agent with typed PullRequests APIs
+  - List failing GitHub Actions runs after a model-eval workflow
+  - Create issues from production LLM errors with labels and assignees
+  - Authenticate as a GitHub App to manage installation-scoped repos

@@ -1,0 +1,25 @@
+name: go-spew
+description: Deep pretty printer for Go data structures that dumps types, pointers, and nested values. Used to debug LLM JSON payloads, agent tool-call structs, and nested config objects when fmt.Printf is not enough.
+tagline: Deep pretty printer for Go data structures
+
+github_url: https://github.com/davecgh/go-spew
+docs_url: https://pkg.go.dev/github.com/davecgh/go-spew/spew
+install_command: go get github.com/davecgh/go-spew/spew
+
+category: Dev Tools
+tags: [go, debugging, pretty-print, testing, dump]
+pricing: free
+is_open_source: true
+license: ISC
+
+problem_solved: |
+  Nested Go structs from LLM responses and tool calls hide types,
+  pointers, and unexported fields in fmt output. go-spew dumps the
+  full tree so you can see what an agent actually received without
+  writing custom debug formatters.
+
+use_cases:
+  - Dump parsed LLM JSON into a nested struct during agent debugging
+  - Compare expected vs actual tool-call payloads in Go tests
+  - Inspect pointer cycles in cached embedding or session objects
+  - Print config trees loaded from YAML before a training run starts

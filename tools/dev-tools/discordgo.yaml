@@ -1,0 +1,25 @@
+name: discordgo
+description: Go bindings for the Discord API with gateway events, slash commands, and REST helpers. Used to build Discord bots that notify on training jobs, expose agent commands, or post catalog updates into community servers.
+tagline: Go library for Discord bots and gateway events
+
+github_url: https://github.com/bwmarrin/discordgo
+docs_url: https://pkg.go.dev/github.com/bwmarrin/discordgo
+install_command: go get github.com/bwmarrin/discordgo
+
+category: Dev Tools
+tags: [go, discord, bots, gateway, slash-commands]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Teams that want Discord alerts for training jobs or agent commands
+  otherwise wire the gateway, intents, and REST by hand. discordgo
+  handles sessions, events, and slash commands so a Go bot can post
+  status, accept commands, and react without a Node-only SDK.
+
+use_cases:
+  - Post training-run status and eval scores into a Discord channel
+  - Expose slash commands that kick off agent jobs from a community server
+  - Stream gateway events into an ops bot that pages on failed deploys
+  - Send catalog or changelog updates to a builders Discord without Node
