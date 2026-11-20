@@ -1,0 +1,25 @@
+name: jackc pgx
+description: Pure-Go PostgreSQL driver and toolkit with LISTEN/NOTIFY, COPY, and a database/sql adapter. Go agent workers and inference APIs use pgx to talk to Postgres feature stores without libpq CGO.
+tagline: High-performance PostgreSQL driver for Go
+
+github_url: https://github.com/jackc/pgx
+docs_url: https://pkg.go.dev/github.com/jackc/pgx/v5
+install_command: go get github.com/jackc/pgx/v5
+
+category: Data
+tags: [go, postgres, database, driver, sql, pgx]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go services that store agent traces and model metadata in Postgres
+  need a fast driver with COPY and notifications, not only database/sql.
+  pgx is a pure-Go client with those extras so you skip CGO and still
+  get Postgres-specific features.
+
+use_cases:
+  - Connect a Go inference API to Postgres for run metadata
+  - COPY training-job rows into Postgres from a Go worker
+  - Use LISTEN/NOTIFY to wake agent workers on new queue rows
+  - Wrap pgx in database/sql when a library expects the stdlib API

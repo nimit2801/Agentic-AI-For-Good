@@ -1,0 +1,26 @@
+name: Ent
+description: Graph-style entity framework for Go with schema-as-code and code generation. Ent maps MySQL, PostgreSQL, SQLite, and others so agent backends can query users, runs, and tool state with a typed API instead of raw SQL.
+tagline: Schema-as-code entity framework for Go
+
+github_url: https://github.com/ent/ent
+website_url: https://entgo.io
+docs_url: https://entgo.io/docs/getting-started
+install_command: go install entgo.io/ent/cmd/ent@latest
+
+category: Data
+tags: [go, orm, codegen, postgres, mysql, sqlite, graph]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Go agent and inference services accumulate large data models and
+  stringly-typed SQL. Ent models the schema in Go, generates a typed
+  client, and traverses relations so you query training runs, users, and
+  tool graphs without a hand-rolled query layer.
+
+use_cases:
+  - Model users, sessions, and agent runs as Ent schemas in PostgreSQL
+  - Generate a typed Go client for MySQL feature-store tables
+  - Traverse relation graphs for tool catalogs and evaluation jobs
+  - Use SQLite with Ent for a local agent control plane

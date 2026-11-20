@@ -1,0 +1,25 @@
+name: bytedance Sonic
+description: JIT and SIMD JSON library for Go from ByteDance. Sonic encodes and decodes large model payloads and tool-calling blobs faster than encoding/json, which matters for high-QPS agent and inference gateways.
+tagline: Fast JSON encode and decode for Go via JIT and SIMD
+
+github_url: https://github.com/bytedance/sonic
+docs_url: https://pkg.go.dev/github.com/bytedance/sonic
+install_command: go get github.com/bytedance/sonic
+
+category: Dev Tools
+tags: [go, json, simd, jit, serialization, bytedance]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Agent gateways spend a lot of CPU on JSON for prompts, tool calls, and
+  streaming chunks. encoding/json is simple but slow at high QPS. Sonic
+  uses JIT and SIMD so those payloads encode and decode with fewer
+  allocations.
+
+use_cases:
+  - Decode LLM chat and tool-calling JSON in a Go inference gateway
+  - Encode large eval result blobs without encoding/json overhead
+  - Drop Sonic in as a faster JSON backend on amd64 or arm64
+  - Cut allocator pressure on hot JSON paths in an agent API
