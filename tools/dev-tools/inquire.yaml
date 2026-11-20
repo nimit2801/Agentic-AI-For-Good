@@ -1,0 +1,27 @@
+name: inquire
+description: Rust library for interactive terminal prompts with typed answers, validation, and autocomplete. It lets CLIs collect structured user input without rolling custom raw-mode terminal handling.
+tagline: Typed interactive prompts for Rust CLIs
+
+github_url: https://github.com/mikaelmello/inquire
+website_url: https://docs.rs/inquire
+docs_url: https://docs.rs/inquire/
+
+install_command: cargo add inquire
+
+category: Dev Tools
+tags: [rust, cli, prompts, terminal, validation, autocomplete, interactive]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  CLIs that need validated, typed answers (dates, emails, multi-selects)
+  often reimplement terminal state, parsing, and error display. inquire
+  provides prompt types with validation and autocomplete so the binary
+  can ask structured questions and get structured results.
+
+use_cases:
+  - Prompt for a validated config path or model name with autocomplete
+  - Collect multi-select feature flags during an interactive CLI setup
+  - Ask for numeric or date input with inline validation errors
+  - Build a wizard that gathers experiment hyperparameters before a run
