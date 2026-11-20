@@ -1,0 +1,26 @@
+name: nalgebra
+description: Linear algebra library for Rust covering vectors, matrices, transformations, and geometric algebra used in graphics, robotics, and scientific computing. It emphasizes generic dimensions and real-time-friendly operations without a heavy BLAS requirement.
+tagline: Linear algebra for Rust
+
+github_url: https://github.com/dimforge/nalgebra
+website_url: https://nalgebra.rs
+docs_url: https://nalgebra.rs
+
+install_command: cargo add nalgebra
+
+category: Data
+tags: [rust, linear-algebra, matrices, graphics, robotics, scientific-computing, library]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Rust ML and graphics code often needs vectors, matrices, and rigid-body transforms without
+  pulling in a full Python/NumPy stack. nalgebra gives generic, well-typed linear algebra so
+  simulation, computer vision, and game math stay in native Rust.
+
+use_cases:
+  - Compute 3D transforms and quaternions in a robotics or game engine
+  - Solve small dense linear systems in scientific Rust code
+  - Represent camera and pose math for computer vision pipelines
+  - Share vector types across Rapier physics and rendering code

@@ -1,0 +1,26 @@
+name: wasm-bindgen
+description: Tooling that connects Rust and WebAssembly to JavaScript, generating JS glue and typed bindings so Wasm modules can call DOM APIs, npm packages, and JS functions. It is the standard bridge for Rust compiled to the browser or Node.
+tagline: Rust-Wasm bindings to JavaScript
+
+github_url: https://github.com/wasm-bindgen/wasm-bindgen
+website_url: https://wasm-bindgen.github.io/wasm-bindgen/
+docs_url: https://wasm-bindgen.github.io/wasm-bindgen/
+
+install_command: cargo install wasm-bindgen-cli
+
+category: Dev Tools
+tags: [rust, webassembly, javascript, wasm, bindings, browser, cli]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Raw Wasm only speaks numbers and linear memory, so calling the DOM or JS libraries from Rust
+  is painful. wasm-bindgen generates the JS shims and #[wasm_bindgen] exports that let Rust
+  functions show up as normal JS APIs in the browser or Node.
+
+use_cases:
+  - Export a Rust library to npm as a Wasm package with typed JS bindings
+  - Call fetch, canvas, and DOM APIs from Rust compiled to WebAssembly
+  - Glue a performance-critical Rust module into an existing JavaScript app
+  - Generate wasm-bindgen JS glue in CI after cargo build --target wasm32-unknown-unknown
