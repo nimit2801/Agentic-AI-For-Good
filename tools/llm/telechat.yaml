@@ -1,0 +1,24 @@
+name: TeleChat
+description: Open bilingual LLM family from China Telecom, with 1B to 12B chat checkpoints plus quantized weights. Hugging Face and ModelScope releases cover general QA, code, and math in Chinese and English.
+tagline: Bilingual chat LLMs from China Telecom
+
+github_url: https://github.com/Tele-AI/Telechat
+website_url: https://huggingface.co/Tele-AI
+
+category: LLM
+tags: [llm, chinese, bilingual, huggingface, chat, quantization]
+pricing: free
+is_open_source: true
+license: TeleChat Community License
+
+problem_solved: |
+  Teams that need a Chinese-English chat model they can self-host often
+  get stuck on closed APIs. TeleChat publishes 1B, 7B, and 12B chat
+  weights, including int8 and int4 builds, so you can run bilingual QA
+  on your own GPUs.
+
+use_cases:
+  - Run a Chinese-English chat model locally from Hugging Face weights
+  - Serve TeleChat-12B with vLLM for bilingual customer QA
+  - Fine-tune a 7B TeleChat checkpoint on domain documents
+  - Deploy an int4 quantized TeleChat build on a single consumer GPU
