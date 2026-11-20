@@ -1,0 +1,25 @@
+name: DashMap
+description: Concurrent HashMap for Rust that shards internally so many threads can read and write without a single global lock. Drop-in-like API versus std HashMap, aimed at caches, indexes, and shared state in async or threaded services.
+tagline: Concurrent HashMap for Rust
+
+github_url: https://github.com/xacrimon/dashmap
+docs_url: https://docs.rs/dashmap/
+
+install_command: cargo add dashmap
+
+category: Dev Tools
+tags: [rust, hashmap, concurrency, cache, data-structures, library]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Wrapping a std HashMap in a Mutex serializes all access and becomes a bottleneck under
+  many readers and writers. DashMap shards the map so concurrent inserts, lookups, and
+  updates scale across cores for caches, session stores, and in-memory indexes.
+
+use_cases:
+  - Share a request cache across Tokio tasks without a global mutex
+  - Store session or feature-flag state in a concurrent map inside a Rust API
+  - Build an in-memory index that many worker threads update in parallel
+  - Replace Mutex<HashMap> in CPU-bound services to cut lock contention

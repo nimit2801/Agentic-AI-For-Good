@@ -1,0 +1,25 @@
+name: Criterion
+description: Statistics-driven benchmarking library for Rust that runs criterion.rs harnesses, detects performance regressions, and plots results. It replaces naive timing loops with warmup, outlier detection, and comparison against saved baselines.
+tagline: Statistics-driven Rust benchmarking
+
+github_url: https://github.com/bheisler/criterion.rs
+docs_url: https://docs.rs/criterion/
+
+install_command: cargo add criterion --dev
+
+category: Dev Tools
+tags: [rust, benchmarking, performance, testing, cargo, library]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Hand-rolled Rust benches are noisy and hide regressions until users notice. Criterion runs
+  statistical benchmarks with warmup, outlier handling, and HTML reports so you can compare
+  against a saved baseline and fail CI when a change slows a hot path.
+
+use_cases:
+  - Benchmark a Rust crate's hot functions with cargo bench and Criterion harnesses
+  - Compare a PR against a saved baseline to catch performance regressions in CI
+  - Generate HTML plots of iteration times for algorithm experiments
+  - Measure allocation-sensitive code paths before shipping an optimization
