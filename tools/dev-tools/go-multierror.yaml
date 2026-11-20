@@ -1,0 +1,25 @@
+name: go-multierror
+description: Go package that represents a list of errors as a single error. go-multierror lets agent pipelines and batch jobs collect every failure instead of returning on the first one, while still satisfying the error interface.
+tagline: Combine multiple Go errors into one
+
+github_url: https://github.com/hashicorp/go-multierror
+docs_url: https://github.com/hashicorp/go-multierror#readme
+install_command: go get github.com/hashicorp/go-multierror
+
+category: Dev Tools
+tags: [go, errors, hashicorp, batch, reliability]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  Agent pipelines that fan out tool calls or batch evals often
+  stop at the first error and hide the rest. go-multierror appends
+  failures into one error value so shutdown, validation, and
+  cleanup still report every problem.
+
+use_cases:
+  - Collect all tool-call failures from a parallel agent step
+  - Return every validation error when loading a training config
+  - Aggregate close errors from multiple model clients on shutdown
+  - Wrap errors.As and errors.Is over a combined error list

@@ -1,0 +1,25 @@
+name: Goth
+description: Idiomatic OAuth and social login package for Go web apps. Goth wraps providers like Google, GitHub, and Slack so agent dashboards and eval portals add sign-in without writing each OAuth dance by hand.
+tagline: OAuth authentication for Go web applications
+
+github_url: https://github.com/markbates/goth
+docs_url: https://github.com/markbates/goth#readme
+install_command: go get github.com/markbates/goth
+
+category: Dev Tools
+tags: [go, oauth, authentication, web, github, google]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go agent dashboards and eval portals need GitHub or Google login,
+  and each provider has a different OAuth dance. Goth gives a single
+  session API over many providers so sign-in stays idiomatic without
+  a custom OAuth stack per vendor.
+
+use_cases:
+  - Add GitHub OAuth to a Go agent control plane
+  - Let teammates sign in with Google on an eval dashboard
+  - Support Slack or Microsoft login for an internal LLM portal
+  - Swap OAuth providers without rewriting session handling

@@ -1,0 +1,25 @@
+name: BurntSushi TOML
+description: Reflection-based TOML parser and encoder for Go. BurntSushi TOML maps config files onto structs so agent CLIs, training launchers, and data jobs read pyproject-style settings without a hand-written decoder.
+tagline: TOML parser for Go with reflection
+
+github_url: https://github.com/BurntSushi/toml
+docs_url: https://github.com/BurntSushi/toml#readme
+install_command: go get github.com/BurntSushi/toml
+
+category: Data
+tags: [go, toml, parsing, config, serialization]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go data jobs and agent CLIs take config from TOML, and custom
+  decoders drift from struct fields. BurntSushi TOML encodes and
+  decodes via reflection so experiment files and tool manifests
+  round-trip as typed structs.
+
+use_cases:
+  - Load agent and training settings from a TOML config file
+  - Encode pipeline metadata to TOML for dataset manifests
+  - Parse pyproject-style tables in a Go packaging or data tool
+  - Validate required TOML keys when starting a batch job
