@@ -1,0 +1,26 @@
+name: chi
+description: Lightweight, idiomatic, composable router for Go HTTP services. chi stays on net/http so agent APIs, webhooks, and inference gateways get nested routes and middleware without leaving the standard library.
+tagline: Idiomatic composable HTTP router for Go
+
+github_url: https://github.com/go-chi/chi
+website_url: https://go-chi.io
+docs_url: https://go-chi.io/#/
+install_command: go get github.com/go-chi/chi/v5
+
+category: Dev Tools
+tags: [go, http, router, middleware, net-http]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go services that want stdlib net/http still need nested routes
+  and middleware stacks. chi composes routers and middleware so
+  agent backends and inference APIs stay idiomatic without a
+  full framework.
+
+use_cases:
+  - Nest /v1/models and /v1/runs routes on a Go agent API
+  - Mount middleware for request IDs, timeouts, and recover
+  - Share net/http handlers with the rest of a stdlib service
+  - Build a webhook receiver that stays compatible with http.Handler

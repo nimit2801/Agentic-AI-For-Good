@@ -1,0 +1,25 @@
+name: Gin
+description: High-performance HTTP web framework for Go with a Martini-like API on httprouter. Gin is a common choice for REST inference gateways, webhook receivers, and agent control planes that need fast routing and JSON binding.
+tagline: Fast HTTP web framework for Go
+
+github_url: https://github.com/gin-gonic/gin
+website_url: https://gin-gonic.com
+docs_url: https://gin-gonic.com/en/docs/
+install_command: go get github.com/gin-gonic/gin
+
+category: Dev Tools
+tags: [go, web-framework, http, api, httprouter]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go inference and agent APIs need routing, middleware, and JSON
+  binding without a heavy framework. Gin sits on httprouter with
+  a small Martini-like API so REST gateways stay fast and explicit.
+
+use_cases:
+  - Serve an OpenAI-compatible inference gateway in Go
+  - Bind JSON tool-call payloads in an agent callback server
+  - Add middleware for API keys and request IDs on a control plane
+  - Expose health and metrics next to a model-serving process
