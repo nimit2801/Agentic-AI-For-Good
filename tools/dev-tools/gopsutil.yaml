@@ -1,0 +1,25 @@
+name: gopsutil
+description: Go port of psutil for CPU, memory, disk, host, and process stats without CGO. Agent runtimes and inference sidecars use it to read machine metrics in Go instead of shelling out to top or scraping /proc by hand.
+tagline: psutil-style system metrics for Go
+
+github_url: https://github.com/shirou/gopsutil
+docs_url: https://pkg.go.dev/github.com/shirou/gopsutil/v4
+install_command: go get github.com/shirou/gopsutil/v4
+
+category: Dev Tools
+tags: [go, metrics, system, cpu, memory, monitoring]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Go agent workers need host CPU, memory, and process stats, but parsing
+  /proc or wrapping OS tools is messy and not portable. gopsutil exposes
+  those counters as Go structs across Linux, macOS, Windows, and BSD
+  without CGO.
+
+use_cases:
+  - Report memory and CPU before starting a local model-load in a Go sidecar
+  - Watch process RSS of an inference binary from a supervisor
+  - Collect disk and host facts for GPU node health in a Go agent
+  - Replace shell-outs to free and df in ops tooling

@@ -1,0 +1,26 @@
+name: automaxprocs
+description: Uber library that sets GOMAXPROCS to the Linux container CPU quota. Import it in Go agent workers and inference servers so they stop oversubscribing cores and getting throttled in Kubernetes.
+tagline: Match GOMAXPROCS to container CPU quota
+
+github_url: https://github.com/uber-go/automaxprocs
+docs_url: https://pkg.go.dev/go.uber.org/automaxprocs
+website_url: https://godoc.org/go.uber.org/automaxprocs
+install_command: go get go.uber.org/automaxprocs
+
+category: Dev Tools
+tags: [go, kubernetes, gomaxprocs, containers, uber, performance]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go defaults GOMAXPROCS to the host CPU count, which is too high inside
+  a cgroup with a small quota. Agent and inference pods then get
+  throttled. automaxprocs reads the quota at startup and sets GOMAXPROCS
+  to match so throughput and tail latency stay stable.
+
+use_cases:
+  - Import as a blank import in a Go inference server running on Kubernetes
+  - Cut CPU throttling on agent workers with a fractional CPU request
+  - Align GOMAXPROCS with a 2-core quota instead of a 24-core node
+  - Keep P99 latency down when serving LLM APIs from cgroup-limited pods
