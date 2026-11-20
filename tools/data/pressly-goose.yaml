@@ -1,0 +1,24 @@
+name: pressly goose
+description: Database migration tool for SQL and Go functions. pressly goose versions schema changes so RAG backends, eval tables, and feature stores apply the same migrations in CI and production.
+tagline: SQL and Go database migrations
+
+github_url: https://github.com/pressly/goose
+docs_url: https://pressly.github.io/goose/
+install_command: go get github.com/pressly/goose/v3
+
+category: Data
+tags: [go, migrations, sql, postgres, mysql, sqlite]
+pricing: free
+is_open_source: true
+
+problem_solved: |
+  Feature-store and eval schemas drift when each environment is
+  patched by hand. pressly goose versions SQL and Go migrations
+  so agent backends apply the same up and down steps in CI,
+  staging, and production.
+
+use_cases:
+  - Version Postgres tables for traces, evals, and document chunks
+  - Run goose up in CI before integration tests that need a schema
+  - Mix SQL files and Go migration funcs for data backfills
+  - Roll back a failed RAG-backend migration with goose down

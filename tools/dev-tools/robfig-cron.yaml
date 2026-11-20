@@ -1,0 +1,25 @@
+name: robfig cron
+description: Cron library for Go that schedules jobs with standard crontab expressions. robfig cron runs periodic embedding refresh, eval jobs, and agent heartbeats inside a process without a system crontab.
+tagline: In-process cron scheduler for Go
+
+github_url: https://github.com/robfig/cron
+docs_url: https://github.com/robfig/cron#readme
+install_command: go get github.com/robfig/cron/v3
+
+category: Dev Tools
+tags: [go, cron, scheduler, jobs, background]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Agent workers need periodic jobs inside the process, not a
+  Kubernetes CronJob for every heartbeat. robfig cron parses
+  crontab expressions and runs Go funcs on a schedule so eval
+  refresh and cleanup stay in-process.
+
+use_cases:
+  - Refresh embeddings on a cron expression inside a Go service
+  - Run nightly eval suites from an in-process scheduler
+  - Heartbeat agent workers without an external cron daemon
+  - Schedule log and artifact cleanup in a model-serving binary

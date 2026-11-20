@@ -1,0 +1,25 @@
+name: Zap
+description: Uber's blazing-fast, structured, leveled logger for Go. Zap keeps allocations low so inference gateways and agent workers emit JSON logs with model IDs and latency without fmt overhead.
+tagline: Fast structured logging for Go
+
+github_url: https://github.com/uber-go/zap
+docs_url: https://pkg.go.dev/go.uber.org/zap
+install_command: go get go.uber.org/zap
+
+category: Dev Tools
+tags: [go, logging, structured-logging, json, uber, performance]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  High-QPS Go LLM proxies cannot afford allocating loggers on every
+  request. Zap's sugared and typed APIs write leveled JSON with
+  fields so agent workers keep model, trace, and error context
+  without fmt cost.
+
+use_cases:
+  - Log inference latency and model name from a Go LLM gateway
+  - Emit JSON logs with request IDs in an agent worker
+  - Use Zap's sugar API during local debug and typed fields in prod
+  - Sample error-level events from embedding and vector-search clients
