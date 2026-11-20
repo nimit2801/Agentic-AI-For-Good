@@ -1,0 +1,25 @@
+name: uber-go ratelimit
+description: Blocking leaky-bucket rate limiter for Go from Uber. Call Take() before each LLM or tool request so a worker stays under a per-second quota without an external Redis limiter.
+tagline: Leaky-bucket rate limiter for Go
+
+github_url: https://github.com/uber-go/ratelimit
+docs_url: https://pkg.go.dev/go.uber.org/ratelimit
+install_command: go get go.uber.org/ratelimit
+
+category: Dev Tools
+tags: [go, rate-limit, uber, leaky-bucket, concurrency]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Agent workers that call model APIs need a local QPS cap so they do
+  not stampede a provider. uber-go ratelimit sleeps in Take() using
+  elapsed time, so you stay under N operations per second without a
+  central clock.
+
+use_cases:
+  - Cap outbound LLM calls from a Go worker at 100 requests per second
+  - Space tool-calling HTTP posts so an upstream is not flooded
+  - Rate-limit embedding batch jobs on a shared GPU node
+  - Combine with retries when a provider returns 429

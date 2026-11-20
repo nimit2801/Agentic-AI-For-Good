@@ -1,0 +1,25 @@
+name: franz-go
+description: Pure-Go Kafka client covering produce, consume, transactions, and admin APIs from Kafka 0.8 through 4.x. Agent pipelines use it to stream traces, tool events, and training records without JVM clients.
+tagline: Feature-complete Kafka client in pure Go
+
+github_url: https://github.com/twmb/franz-go
+docs_url: https://pkg.go.dev/github.com/twmb/franz-go
+install_command: go get github.com/twmb/franz-go
+
+category: Data
+tags: [go, kafka, streaming, producer, consumer, messaging]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Go agent workers that emit traces and job events to Kafka need a
+  complete client, not a thin producer. franz-go speaks modern Kafka
+  in pure Go so you can produce, consume, and administer topics without
+  a Java dependency.
+
+use_cases:
+  - Produce agent traces and tool-call events to a Kafka topic
+  - Consume training-record batches in a Go feature pipeline
+  - Use transactions when writing eval results atomically
+  - Admin-create topics for a new agent environment from Go

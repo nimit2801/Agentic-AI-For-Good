@@ -1,0 +1,25 @@
+name: govalidator
+description: Go package of validators and sanitizers for strings, numbers, slices, and structs. Agent APIs use it to check emails, URLs, and request structs before they hit model or tool-calling code.
+tagline: String and struct validators for Go
+
+github_url: https://github.com/asaskevich/govalidator
+docs_url: https://pkg.go.dev/github.com/asaskevich/govalidator
+install_command: go get github.com/asaskevich/govalidator/v12
+
+category: Dev Tools
+tags: [go, validation, sanitizer, structs, strings]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Agent HTTP handlers need to reject bad emails, URLs, and payload
+  fields before calling a model. Writing those checks by hand is
+  repetitive. govalidator covers common string and struct rules so
+  request validation stays in one library.
+
+use_cases:
+  - Validate email and URL fields on an agent signup or webhook payload
+  - Sanitize string slices before they are stored as tool arguments
+  - Tag struct fields for required numeric ranges on eval job configs
+  - Reject malformed IDs in a Go inference API
