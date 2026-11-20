@@ -1,0 +1,25 @@
+name: go-version
+description: HashiCorp Go library for parsing versions and checking constraints. go-version compares SemVer-like strings so agent CLIs and plugin hosts reject incompatible model, tool, and plugin versions before they run.
+tagline: Parse and constrain versions in Go
+
+github_url: https://github.com/hashicorp/go-version
+docs_url: https://github.com/hashicorp/go-version#readme
+install_command: go get github.com/hashicorp/go-version
+
+category: Dev Tools
+tags: [go, semver, versioning, hashicorp, plugins]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  Agent CLIs and plugin hosts need to compare tool and model
+  versions, and string compares break on SemVer. go-version
+  parses versions and constraints so incompatible plugins and
+  runtimes fail before they load.
+
+use_cases:
+  - Reject agent plugins that do not satisfy a version constraint
+  - Compare model-runtime versions in a Go launcher
+  - Parse SemVer from a lockfile or manifest in CI
+  - Gate eval jobs on a minimum supported tool version

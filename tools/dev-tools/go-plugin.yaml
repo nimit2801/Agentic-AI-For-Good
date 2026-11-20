@@ -1,0 +1,25 @@
+name: go-plugin
+description: HashiCorp Go plugin system that runs plugins as separate processes over RPC. go-plugin lets agent hosts and Terraform-style tools load untrusted extensions with a real process boundary instead of in-process shared libraries.
+tagline: RPC process plugins for Go
+
+github_url: https://github.com/hashicorp/go-plugin
+docs_url: https://github.com/hashicorp/go-plugin#readme
+install_command: go get github.com/hashicorp/go-plugin
+
+category: Dev Tools
+tags: [go, plugins, rpc, hashicorp, extensibility]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  Agent hosts that load third-party tools in-process share a crash
+  domain with every plugin. go-plugin runs each plugin as a child
+  process over RPC or gRPC so hosts isolate failures and version
+  plugins independently.
+
+use_cases:
+  - Load agent tool plugins as separate Go processes
+  - Isolate untrusted eval or connector code from the host binary
+  - Version host and plugin APIs over gRPC without shared memory
+  - Build Terraform-style provider processes for an internal platform
