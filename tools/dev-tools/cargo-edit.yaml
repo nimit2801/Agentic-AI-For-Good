@@ -1,0 +1,27 @@
+name: cargo-edit
+description: Cargo extensions for adding, removing, and upgrading crate dependencies from the command line. cargo-upgrade and related commands keep Cargo.toml versions current without hand-editing manifests across a workspace.
+tagline: Manage Cargo.toml dependencies from the CLI
+
+github_url: https://github.com/killercup/cargo-edit
+website_url: http://killercup.github.io/cargo-edit/
+docs_url: https://docs.rs/cargo-edit/
+
+install_command: cargo install cargo-edit
+
+category: Dev Tools
+tags: [rust, cargo, dependencies, cli, upgrade, crates]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Editing Cargo.toml by hand across a workspace is slow and easy to get
+  wrong, especially when bumping many crates at once. cargo-edit adds
+  cargo-upgrade, cargo-rm, and related commands so version pins stay
+  consistent from the terminal.
+
+use_cases:
+  - Upgrade all workspace crates to the latest compatible versions in one pass
+  - Remove a crate from Cargo.toml without leaving a stale version pin
+  - Set package versions across a multi-crate Rust workspace before a release
+  - Script dependency updates in CI for internal ML or inference crates

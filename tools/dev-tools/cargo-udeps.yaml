@@ -1,0 +1,25 @@
+name: cargo-udeps
+description: Cargo subcommand that finds unused dependencies in Cargo.toml. It compiles your crate so unused crates surface before they bloat compile times, lockfiles, and supply-chain surface area.
+tagline: Find unused crates in Cargo.toml
+
+github_url: https://github.com/est31/cargo-udeps
+docs_url: https://docs.rs/cargo-udeps/
+
+install_command: cargo install cargo-udeps --locked
+
+category: Dev Tools
+tags: [rust, cargo, dependencies, unused, lint, ci]
+pricing: free
+is_open_source: true
+license: MIT OR Apache-2.0
+
+problem_solved: |
+  Cargo.toml often accumulates crates that are no longer imported after a
+  refactor. Those unused dependencies still compile, still pin versions, and
+  still expand the supply chain. cargo-udeps reports them so you can prune.
+
+use_cases:
+  - Remove leftover crates after extracting a module or dropping a feature
+  - Fail CI when a PR adds a dependency that is never referenced
+  - Shrink compile times in a Rust ML or data-processing workspace
+  - Audit a fork or generated project for copy-pasted unused dependencies

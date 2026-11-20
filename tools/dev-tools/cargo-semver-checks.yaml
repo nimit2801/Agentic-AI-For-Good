@@ -1,0 +1,25 @@
+name: cargo-semver-checks
+description: Cargo subcommand that lints a Rust crate for semantic versioning violations before you publish. It compares the public API against a prior release so accidental breaking changes fail CI instead of surprising downstream crates.
+tagline: Lint Rust crates for accidental SemVer breakage
+
+github_url: https://github.com/obi1kenobi/cargo-semver-checks
+docs_url: https://docs.rs/cargo-semver-checks/
+
+install_command: cargo install cargo-semver-checks --locked
+
+category: Dev Tools
+tags: [rust, cargo, semver, api, ci, lint, crates]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Rust crates can ship a patch bump that actually removes a public type, and
+  dependents only find out after cargo update. cargo-semver-checks compares
+  the current public API with a baseline so CI fails before cargo publish.
+
+use_cases:
+  - Fail CI when a PR removes or changes a public API without a major version bump
+  - Lint a workspace crate against the last crates.io release before publishing
+  - Catch accidental SemVer breakage in generated bindings or proc-macro crates
+  - Review API diffs for a library that ML tooling depends on as a stable interface

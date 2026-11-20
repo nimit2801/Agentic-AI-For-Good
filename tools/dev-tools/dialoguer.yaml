@@ -1,0 +1,26 @@
+name: dialoguer
+description: Rust library for interactive CLI prompts including confirmations, selections, inputs, and password fields with a consistent terminal UI. Cargo plugins and ML tooling CLIs use it for guided setup without a full TUI framework.
+tagline: Interactive CLI prompts for Rust
+
+github_url: https://github.com/console-rs/dialoguer
+docs_url: https://docs.rs/dialoguer/
+
+install_command: cargo add dialoguer
+
+category: Dev Tools
+tags: [rust, cli, prompts, terminal, tui, interactive]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Building a CLI that asks the user to confirm, pick from a list, or enter a
+  secret usually means raw-mode terminal handling and inconsistent UX.
+  dialoguer gives Rust CLIs ready-made prompts so setup wizards stay
+  readable and testable.
+
+use_cases:
+  - Add a confirmation prompt before a destructive cargo or dataset command
+  - Let users select a model, region, or config profile from a terminal list
+  - Collect API keys with a hidden password prompt in a setup wizard
+  - Build an interactive installer for a local inference or data pipeline CLI
