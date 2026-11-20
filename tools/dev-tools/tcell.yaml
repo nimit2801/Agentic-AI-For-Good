@@ -1,0 +1,25 @@
+name: tcell
+description: Cell-based terminal library for Go, similar to termbox but with Unicode, color, and mouse support without CGO. tcell is the rendering layer under tview and many TUIs used for agent consoles and ops dashboards.
+tagline: Portable cell-based terminal package for Go
+
+github_url: https://github.com/gdamore/tcell
+docs_url: https://pkg.go.dev/github.com/gdamore/tcell/v3
+install_command: go get github.com/gdamore/tcell/v3
+
+category: Dev Tools
+tags: [go, terminal, tui, unicode, tcell]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Building a TUI in Go on raw termios is non-portable and weak on
+  Unicode and mouse input. tcell provides a cell grid, events, and
+  colors that work across terminals so agent consoles and log viewers
+  render consistently without CGO.
+
+use_cases:
+  - Render a full-screen Go TUI for local agent or model-server control
+  - Handle keyboard, mouse, and resize events in a terminal dashboard
+  - Display Unicode logs and wide characters from multilingual model output
+  - Use tcell as the backend for tview or a custom widget set

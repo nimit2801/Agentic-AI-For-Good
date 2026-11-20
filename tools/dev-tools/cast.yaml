@@ -1,0 +1,25 @@
+name: Cast
+description: Safe type conversion library for Go. Cast turns interface values from YAML, TOML, JSON, and config maps into strings, ints, bools, and slices without panics, which is common when loading agent and model configs.
+tagline: Easy, safe casting between Go types
+
+github_url: https://github.com/spf13/cast
+docs_url: https://pkg.go.dev/github.com/spf13/cast
+install_command: go get github.com/spf13/cast
+
+category: Dev Tools
+tags: [go, types, config, yaml, conversion]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Agent configs and model metadata often arrive as untyped maps from
+  YAML or JSON. Type assertions panic or return zero values silently.
+  Cast converts those values to concrete types with optional errors so
+  loaders stay explicit instead of guessing.
+
+use_cases:
+  - Convert YAML config keys for model name, temperature, and batch size
+  - Parse mixed-type maps from tool-calling payloads into Go structs
+  - Use ToStringE and ToIntE to distinguish missing values from zeros
+  - Load feature flags and timeouts from environment-backed config maps

@@ -1,0 +1,26 @@
+name: Dig
+description: Reflection-based dependency injection toolkit for Go from Uber. Dig resolves constructor graphs at process start and powers Fx, so agent workers and inference services can wire clients without a hand-rolled container.
+tagline: Reflection-based dependency injection for Go
+
+github_url: https://github.com/uber-go/dig
+website_url: https://go.uber.org/dig
+docs_url: https://pkg.go.dev/go.uber.org/dig
+install_command: go get go.uber.org/dig@v1
+
+category: Dev Tools
+tags: [go, dependency-injection, uber, di, constructors]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Go agent workers accumulate constructors for LLM clients, queues, and
+  stores in main. Dig builds a typed graph at startup so those
+  dependencies resolve in order. Use it to power a framework like Fx,
+  not as a runtime service locator after the process is up.
+
+use_cases:
+  - Resolve LLM, database, and queue clients when a Go worker starts
+  - Power an application framework such as Uber Fx for inference services
+  - Provide test fakes by swapping constructors in the Dig container
+  - Keep startup wiring out of main without a custom DI container
