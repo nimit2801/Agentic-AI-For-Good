@@ -1,0 +1,26 @@
+name: OpenDelta
+description: Plug-and-play library for parameter-efficient delta tuning (LoRA, adapters, prefix, bit-fit, and more) on Hugging Face models. You attach a delta to a frozen backbone without rewriting the model class.
+tagline: Plug-and-play delta tuning for Hugging Face models
+
+github_url: https://github.com/thunlp/OpenDelta
+docs_url: https://opendelta.readthedocs.io/
+
+install_command: pip install opendelta
+
+category: Fine-tuning
+tags: [python, peft, lora, adapters, huggingface, fine-tuning]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Switching between LoRA, prefix tuning, and adapters often means a
+  different wrapper per method. OpenDelta attaches those deltas to a
+  frozen Hugging Face model through one API so you can swap PEFT methods
+  without forking model code.
+
+use_cases:
+  - Attach LoRA or prefix tuning to a frozen Hugging Face checkpoint
+  - Compare delta methods on the same backbone without rewriting trainers
+  - Fine-tune a large model on one GPU by updating only delta parameters
+  - Save and load delta weights separately from the base model

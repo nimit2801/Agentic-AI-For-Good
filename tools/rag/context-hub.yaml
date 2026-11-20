@@ -1,0 +1,26 @@
+name: Context Hub
+description: Curated, versioned API docs for coding agents. Agents search and fetch LLM-optimized markdown instead of guessing APIs from training data, then annotate gaps so later sessions start with better context.
+tagline: Versioned API docs that coding agents can search and fetch
+
+github_url: https://github.com/andrewyng/context-hub
+docs_url: https://github.com/andrewyng/context-hub#readme
+
+install_command: npm install -g @aisuite/chub
+
+category: RAG
+tags: [docs, agents, cli, npm, retrieval, markdown, context]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Coding agents invent APIs and forget what they learned last session.
+  Context Hub stores curated, language-specific docs as markdown so an
+  agent can search, fetch, and annotate the current interface instead of
+  relying on stale training data.
+
+use_cases:
+  - Fetch current OpenAI or Stripe API docs in Python or JavaScript before generating code
+  - Search a shared doc set for the right SDK page during an agent coding session
+  - Annotate a doc when the agent hits a gap so the next run includes that note
+  - Vote docs up or down so maintainers see which pages actually help agents

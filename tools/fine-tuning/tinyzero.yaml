@@ -1,0 +1,23 @@
+name: TinyZero
+description: Minimal reproduction of DeepSeek R1-Zero that trains a small model with RL until it shows countdown-style reasoning. Researchers use it to study how chain-of-thought emerges without a huge cluster.
+tagline: Minimal DeepSeek R1-Zero reproduction for RL reasoning
+
+github_url: https://github.com/Jiayi-Pan/TinyZero
+
+category: Fine-tuning
+tags: [rl, reasoning, r1-zero, verl, research, pytorch]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Reproducing R1-Zero-style RL usually means a large stack and opaque
+  training code. TinyZero is a small, readable setup on verl that trains
+  countdown reasoning so you can inspect how longer chains of thought
+  appear under RL.
+
+use_cases:
+  - Reproduce R1-Zero-style RL on a countdown task with a small model
+  - Study how reasoning traces lengthen during GRPO or PPO training
+  - Teach RL-for-LLMs without standing up a full production trainer
+  - Baseline a new reward or environment against a known tiny setup
