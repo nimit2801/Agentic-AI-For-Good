@@ -1,0 +1,26 @@
+name: cargo-fuzz
+description: Cargo subcommand that sets up and runs libFuzzer targets against Rust code. It generates a fuzz workspace, builds instrumented binaries, and is the standard way to fuzz parsers, codecs, and other untrusted-input paths in Rust.
+tagline: libFuzzer workflow for Rust cargo projects
+
+github_url: https://github.com/rust-fuzz/cargo-fuzz
+website_url: https://rust-fuzz.github.io/book/cargo-fuzz.html
+docs_url: https://rust-fuzz.github.io/book/cargo-fuzz.html
+
+install_command: cargo install cargo-fuzz
+
+category: Dev Tools
+tags: [rust, cargo, fuzzing, libfuzzer, testing, security]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Hand-written tests miss weird byte sequences that crash parsers and decoders.
+  cargo-fuzz wires libFuzzer into a cargo project so CI and local runs can
+  generate inputs, keep a corpus, and catch panics in untrusted-input code.
+
+use_cases:
+  - Fuzz a Rust parser or tokenizer with coverage-guided libFuzzer
+  - Add a fuzz target for a binary codec used in an ML data pipeline
+  - Reproduce a crash from a minimized test case saved in the corpus
+  - Run nightly fuzz jobs in CI against crates that ingest user files

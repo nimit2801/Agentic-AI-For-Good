@@ -1,0 +1,25 @@
+name: quickcheck
+description: Property-based testing library for Rust that generates random inputs, checks invariants, and shrinks failing cases to a minimal counterexample. Teams use it to find edge cases unit tests miss in parsers, codecs, and data structures.
+tagline: Property-based tests with shrinking for Rust
+
+github_url: https://github.com/BurntSushi/quickcheck
+docs_url: https://docs.rs/quickcheck/
+
+install_command: cargo add quickcheck --dev
+
+category: Dev Tools
+tags: [rust, testing, property-based, quickcheck, shrinking]
+pricing: free
+is_open_source: true
+license: Unlicense
+
+problem_solved: |
+  Example-based unit tests cover the cases you thought of, not the ones that
+  actually break invariants. quickcheck generates random values, fails on
+  property violations, and shrinks the input so the bug is small enough to fix.
+
+use_cases:
+  - Assert that encode then decode is identity for a binary format
+  - Check that a sort or merge never panics on arbitrary input
+  - Find a minimal failing case for a parser by shrinking random bytes
+  - Add property tests beside example tests in a Rust crate's test suite

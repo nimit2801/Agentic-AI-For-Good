@@ -1,0 +1,26 @@
+name: Crossterm
+description: Cross-platform Rust library for terminal control, covering cursor movement, colors, keyboard and mouse events, and raw mode on Windows, Unix, and macOS. TUI apps use it as a backend instead of writing OS-specific console code.
+tagline: Cross-platform terminal control for Rust
+
+github_url: https://github.com/crossterm-rs/crossterm
+website_url: https://crates.io/crates/crossterm
+docs_url: https://docs.rs/crossterm/
+
+install_command: cargo add crossterm
+
+category: Dev Tools
+tags: [rust, terminal, tui, crossterm, cli, events]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Terminal UIs need cursor, color, and input handling that differs on Windows
+  consoles versus Unix ttys. Crossterm wraps those APIs so CLIs and TUI
+  frontends can run the same event loop on every major desktop OS.
+
+use_cases:
+  - Drive a Ratatui or custom TUI dashboard for local model inference
+  - Read key and mouse events in raw mode for an interactive CLI
+  - Colorize status output without shell-specific escape sequences
+  - Alternate-screen full-screen apps that restore the terminal on exit

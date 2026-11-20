@@ -1,0 +1,28 @@
+name: LALRPOP
+description: LR(1) parser generator for Rust that compiles grammar files into typed parsers. Teams use it to build compilers, query languages, and config DSLs without writing a hand-rolled recursive-descent parser.
+tagline: LR(1) parser generator for Rust grammars
+
+github_url: https://github.com/lalrpop/lalrpop
+website_url: https://lalrpop.github.io/lalrpop/
+docs_url: https://lalrpop.github.io/lalrpop/
+
+install_command: |
+  cargo add lalrpop --build
+  cargo add lalrpop-util
+
+category: Dev Tools
+tags: [rust, parser, lalr, compiler, grammar, dsl]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Hand-written parsers for query languages and config DSLs are error-prone and
+  hard to extend as the grammar grows. LALRPOP turns an LR(1) grammar into a
+  typed Rust parser at build time so syntax lives in one place.
+
+use_cases:
+  - Generate a typed parser for an internal query or config DSL
+  - Build a compiler frontend without a hand-rolled recursive-descent parser
+  - Parse a custom prompt or tool-call syntax in a Rust agent runtime
+  - Iterate on a grammar file and rebuild the parser in cargo build
