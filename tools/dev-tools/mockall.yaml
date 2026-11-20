@@ -1,0 +1,25 @@
+name: mockall
+description: Mock object library for Rust that generates mock implementations of traits and structs with expect-style assertions. It is used in unit tests when real collaborators are expensive, async, or need precise call-order checks.
+tagline: Mock objects for Rust tests
+
+github_url: https://github.com/asomers/mockall
+docs_url: https://docs.rs/mockall/
+
+install_command: cargo add mockall --dev
+
+category: Dev Tools
+tags: [rust, testing, mocks, traits, unit-testing, library]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Rust traits and async collaborators are awkward to fake by hand, so tests either hit real
+  I/O or grow one-off stubs. mockall generates mocks with expect/returning APIs so you can
+  assert call counts and arguments without a custom fake for every trait.
+
+use_cases:
+  - Mock a database or HTTP trait in a service unit test
+  - Assert that a retry helper calls an inner client exactly N times
+  - Stub async traits so Tokio tests stay in-memory
+  - Replace hand-rolled fake structs with generated mocks in a large crate

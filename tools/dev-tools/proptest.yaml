@@ -1,0 +1,25 @@
+name: proptest
+description: Hypothesis-style property testing library for Rust that generates random inputs, shrinks failures, and replays them from a seed. It finds edge cases that example-based unit tests miss in parsers, codecs, and data structures.
+tagline: Property-based testing for Rust
+
+github_url: https://github.com/proptest-rs/proptest
+docs_url: https://docs.rs/proptest/
+
+install_command: cargo add proptest --dev
+
+category: Dev Tools
+tags: [rust, testing, property-testing, fuzzing, hypothesis, library]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Hand-written Rust unit tests cover examples you thought of, not the weird inputs production
+  will send. proptest generates values, runs properties, and shrinks failing cases so parsers,
+  serializers, and numeric code fail on a minimal counterexample.
+
+use_cases:
+  - Assert that encode-then-decode roundtrips for arbitrary generated structs
+  - Fuzz a parser with shrinking so CI stores a minimal failing input
+  - Check algebraic properties of collections and numeric helpers
+  - Replay a previously failing seed after a bugfix

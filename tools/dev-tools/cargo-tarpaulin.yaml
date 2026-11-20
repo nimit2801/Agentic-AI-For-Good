@@ -1,0 +1,25 @@
+name: cargo-tarpaulin
+description: Code coverage tool for Rust that instruments tests and reports line coverage for cargo projects. It runs as a cargo subcommand, supports LLVM coverage, and is commonly wired into CI to fail PRs that drop coverage.
+tagline: Code coverage for Rust cargo projects
+
+github_url: https://github.com/xd009642/tarpaulin
+docs_url: https://docs.rs/cargo-tarpaulin/
+
+install_command: cargo install cargo-tarpaulin
+
+category: Dev Tools
+tags: [rust, coverage, testing, cargo, ci, llvm]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Rust teams lack a first-party coverage workflow comparable to coverage.py or Istanbul.
+  cargo-tarpaulin runs the test suite with instrumentation and emits reports so CI can
+  track uncovered lines and block regressions without a custom LLVM pipeline.
+
+use_cases:
+  - Generate line coverage reports for a Rust workspace in GitHub Actions
+  - Fail a PR when coverage on a crate drops below a team threshold
+  - Inspect uncovered modules after adding tests to unsafe or parser code
+  - Export LCOV or XML coverage for Codecov and similar dashboards
