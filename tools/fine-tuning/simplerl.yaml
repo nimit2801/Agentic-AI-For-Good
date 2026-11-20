@@ -1,0 +1,23 @@
+name: SimpleRL
+description: Simple reinforcement learning recipe for LLM reasoning, built on verl. It shows that straightforward RL on math data can lift reasoning without a complex reward model or heavy process supervision.
+tagline: Simple RL training for LLM reasoning
+
+github_url: https://github.com/hkust-nlp/simpleRL-reason
+
+category: Fine-tuning
+tags: [rl, reasoning, math, verl, research, pytorch]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Many reasoning RL stacks bury the recipe under process rewards and
+  extra models. SimpleRL keeps the loop small on verl so you can train
+  math reasoning with outcome rewards and see whether the model actually
+  improves.
+
+use_cases:
+  - Fine-tune a math LLM with outcome-based RL on verl
+  - Reproduce SimpleRL-Zoo checkpoints as a reasoning baseline
+  - Compare simple RL against process-supervised recipes on the same data
+  - Teach RL-for-reasoning with a readable training entrypoint

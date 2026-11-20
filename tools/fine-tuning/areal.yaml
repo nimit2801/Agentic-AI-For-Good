@@ -1,0 +1,25 @@
+name: AReaL
+description: Open-source RL framework that trains LLM agents with scalable rollouts and flexible environments. It bridges research recipes and production agent training so teams can run GRPO-style loops without assembling a custom stack.
+tagline: RL training bridge for LLM agent applications
+
+github_url: https://github.com/areal-project/AReaL
+website_url: https://areal-ai.io
+docs_url: https://areal-ai.io
+
+category: Fine-tuning
+tags: [rl, agents, llm, grpo, training, pytorch]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Training an LLM agent with RL means wiring inference, environments,
+  rewards, and distributed rollouts by hand. AReaL packages that loop
+  so you can train search or tool-using agents with a documented recipe
+  instead of a one-off cluster script.
+
+use_cases:
+  - Train a search agent with RL on multi-step retrieval tasks
+  - Run GRPO-style updates against custom agent environments
+  - Scale rollouts across GPUs without rewriting the trainer
+  - Compare inference backends (SGLang or vLLM) for agent RL jobs
