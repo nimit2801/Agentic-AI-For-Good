@@ -1,0 +1,26 @@
+name: cargo-audit
+description: Cargo subcommand that audits a Rust lockfile against the RustSec advisory database. Teams run it in CI to catch known vulnerabilities in crates before they ship, including yanked versions and unsound APIs.
+tagline: Audit Rust dependencies against RustSec advisories
+
+github_url: https://github.com/rustsec/rustsec
+website_url: https://rustsec.org/
+docs_url: https://docs.rs/cargo-audit/
+
+install_command: cargo install cargo-audit
+
+category: Dev Tools
+tags: [rust, cargo, security, advisories, rustsec, ci, supply-chain]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Transitive Rust crates can ship CVEs that never show up in code review.
+  cargo-audit checks Cargo.lock against the RustSec database so CI fails
+  when a dependency is yanked or has a known vulnerability.
+
+use_cases:
+  - Fail CI when Cargo.lock includes a crate with a RustSec advisory
+  - Audit a workspace after adding a new ML or HTTP crate
+  - Detect yanked crate versions before a production release
+  - Generate a JSON audit report for a security review

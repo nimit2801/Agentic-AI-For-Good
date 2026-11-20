@@ -1,0 +1,25 @@
+name: cargo-binstall
+description: Installs Rust binaries from GitHub releases instead of compiling from source. Teams use it to fetch cargo plugins and CLIs in seconds, which is useful in CI images and laptops that should not rebuild every tool from crates.io.
+tagline: Install prebuilt Rust binaries from GitHub releases
+
+github_url: https://github.com/cargo-bins/cargo-binstall
+docs_url: https://github.com/cargo-bins/cargo-binstall
+
+install_command: cargo install cargo-binstall
+
+category: Dev Tools
+tags: [rust, cargo, binaries, ci, github-releases, install]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  cargo install compiles every CLI from source, which is slow in CI and on
+  laptops. cargo-binstall downloads matching GitHub release artifacts so
+  cargo plugins and tools install in seconds instead of minutes.
+
+use_cases:
+  - Install cargo-llvm-cov or cargo-nextest from GitHub releases in CI
+  - Bootstrap a laptop toolchain without compiling every cargo plugin
+  - Fetch a matching binary for the host target without a custom script
+  - Speed up Docker images that need several cargo subcommands
