@@ -1,0 +1,25 @@
+name: alecthomas Chroma
+description: Pure-Go syntax highlighter in the Pygments family. Chroma tokenizes source and emits HTML or ANSI, so agent CLIs, code-review bots, and docs sites can color Python, Go, and prompt snippets without a Python runtime.
+tagline: General-purpose syntax highlighter in pure Go
+
+github_url: https://github.com/alecthomas/chroma
+docs_url: https://pkg.go.dev/github.com/alecthomas/chroma/v2
+install_command: go get github.com/alecthomas/chroma/v2
+
+category: Dev Tools
+tags: [go, syntax-highlighting, pygments, html, cli]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Agent UIs and Go CLIs need highlighted code in HTML or the terminal,
+  but Pygments is Python-only. Chroma ports those lexers to pure Go so
+  you can color model output, diffs, and snippets inside a Go binary
+  without spawning Python.
+
+use_cases:
+  - Highlight code blocks in an agent chat UI served from Go
+  - Color diffs and source in a terminal code-review CLI
+  - Render HTML docs for generated tools and prompts
+  - Tokenize mixed-language snippets from LLM completions

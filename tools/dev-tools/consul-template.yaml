@@ -1,0 +1,26 @@
+name: consul-template
+description: HashiCorp daemon that renders files from Consul, Vault, or Nomad data and can restart a command when values change. Use it to push model endpoints, API keys, and service addresses into agent configs without a rebuild.
+tagline: Render Consul and Vault data into config files
+
+github_url: https://github.com/hashicorp/consul-template
+website_url: https://www.hashicorp.com/
+docs_url: https://github.com/hashicorp/consul-template#readme
+install_command: brew install consul-template
+
+category: Dev Tools
+tags: [hashicorp, consul, vault, templating, configuration, nomad]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  Agent and model-serving configs need live values from Consul or Vault,
+  but copying secrets by hand or baking them into images is brittle.
+  consul-template watches the cluster, writes files, and can reload the
+  process when keys or service addresses change.
+
+use_cases:
+  - Render LLM API keys from Vault into a local env file for an agent
+  - Update inference endpoint lists when Consul service health changes
+  - Restart a Go worker after Nomad or Consul template output changes
+  - Template nginx or sidecar configs for model-serving frontends
