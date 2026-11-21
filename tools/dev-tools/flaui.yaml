@@ -1,0 +1,25 @@
+name: FlaUI
+description: .NET UI automation library built on Microsoft UI Automation. FlaUI finds windows and controls, clicks, types, and inspects desktop apps so C# tests and agents can drive Win32, WinForms, WPF, and UWP GUIs without pixel matching.
+tagline: .NET UI automation on top of Microsoft UIA
+
+github_url: https://github.com/FlaUI/FlaUI
+website_url: https://github.com/FlaUI/FlaUI
+docs_url: https://github.com/FlaUI/FlaUI
+
+category: Dev Tools
+tags: [dotnet, csharp, windows, ui-automation, testing, rpa]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Windows GUI tests in .NET often depend on brittle coordinate clicks or
+  abandoned Coded UI. FlaUI wraps UIA2 and UIA3 so you can search controls,
+  wait for state, and interact with native Windows apps from C# in a way that
+  survives layout changes better than screenshots.
+
+use_cases:
+  - End-to-end test a WPF or WinForms internal tool from C#
+  - Drive a Windows-only vendor GUI from a .NET agent or RPA job
+  - Inspect control trees while debugging an accessibility issue
+  - Replace pixel-based click scripts with UIA-based control search

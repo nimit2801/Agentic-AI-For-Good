@@ -1,0 +1,26 @@
+name: tidymodels
+description: Metapackage that installs the tidymodels modeling stack for R. It loads parsnip, recipes, rsample, yardstick, workflows, and tune so you can specify models, preprocess, resample, and measure with a shared tidy API.
+tagline: Tidy modeling stack for R in one install
+
+github_url: https://github.com/tidymodels/tidymodels
+website_url: https://www.tidymodels.org
+docs_url: https://www.tidymodels.org
+install_command: install.packages("tidymodels")
+
+category: Other
+tags: [r, machine-learning, tidyverse, parsnip, recipes, resampling]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Fitting models in R usually means a different API per package plus ad-hoc
+  preprocessing. tidymodels gives one install that wires parsnip specs,
+  recipes, rsample splits, and yardstick metrics so experiment code stays
+  tidy and interchangeable across backends.
+
+use_cases:
+  - Specify a random forest and a linear model with the same parsnip API
+  - Preprocess features with recipes and resample with rsample
+  - Measure classification metrics with yardstick across model workflows
+  - Tune hyperparameters with a shared workflow object

@@ -1,0 +1,26 @@
+name: mlr3
+description: Next-generation machine learning framework for R. mlr3 unifies tasks, learners, resampling, and measures behind a consistent object-oriented API so you can swap models, run benchmarks, and nest pipelines without rewriting glue code.
+tagline: Unified machine learning experiments in R
+
+github_url: https://github.com/mlr-org/mlr3
+website_url: https://mlr3.mlr-org.com
+docs_url: https://mlr3.mlr-org.com
+install_command: install.packages("mlr3")
+
+category: Other
+tags: [r, machine-learning, benchmarking, resampling, pipelines]
+pricing: free
+is_open_source: true
+license: LGPL-3.0
+
+problem_solved: |
+  R modeling packages each have their own fit and predict signatures, which
+  makes fair benchmarks painful. mlr3 wraps learners, tasks, and resampling
+  in one API so you can compare models, tune, and build graphs without
+  rewriting evaluation code for every backend.
+
+use_cases:
+  - Benchmark several R learners on the same classification task
+  - Run cross-validation with a shared measure across model families
+  - Plug a custom learner into an mlr3 pipeline for feature processing
+  - Track nested resampling so tuning does not leak into test scores
