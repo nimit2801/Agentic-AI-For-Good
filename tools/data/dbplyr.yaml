@@ -1,0 +1,25 @@
+name: dbplyr
+description: dplyr backend for databases in R. dbplyr translates dplyr verbs into SQL so you can filter, join, and aggregate remote tables through DBI without writing dialect-specific queries by hand.
+tagline: A dplyr backend for databases
+
+github_url: https://github.com/tidyverse/dbplyr
+website_url: https://dbplyr.tidyverse.org
+docs_url: https://dbplyr.tidyverse.org
+install_command: install.packages("dbplyr")
+
+category: Data
+tags: [r, tidyverse, dplyr, sql, databases, dbi]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Feature tables often live in Postgres, BigQuery, or Snowflake, not in
+  memory. dbplyr lets dplyr pipelines run as SQL on the database, so you
+  can shape large training extracts without pulling the whole table into R.
+
+use_cases:
+  - Filter and join warehouse tables before collecting a training extract
+  - Translate dplyr pipelines into inspectable SQL for review
+  - Aggregate experiment metrics in-database instead of locally
+  - Prototype queries in dplyr then run them on production DBI backends

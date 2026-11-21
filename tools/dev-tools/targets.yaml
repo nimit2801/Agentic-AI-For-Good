@@ -1,0 +1,26 @@
+name: targets
+description: Function-oriented Make-like pipelines for R. targets skips unchanged steps, tracks object hashes, and orchestrates parallel workers so long ML and data workflows rerun only what changed instead of the whole script.
+tagline: Declarative Make-like pipelines for R
+
+github_url: https://github.com/ropensci/targets
+website_url: https://docs.ropensci.org/targets/
+docs_url: https://docs.ropensci.org/targets/
+install_command: install.packages("targets")
+
+category: Dev Tools
+tags: [r, pipelines, make, workflow, reproducibility, orchestration]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  R analysis scripts rerun everything when one input changes, wasting hours
+  of model fits. targets declares a pipeline of functions, hashes targets,
+  and skips up-to-date work so experiment code stays reproducible and
+  incremental.
+
+use_cases:
+  - Cache expensive feature-engineering steps between model experiments
+  - Rerun only downstream targets after a data file changes
+  - Parallelize independent model fits across local or cluster workers
+  - Record a reproducible graph of an R ML workflow for review
