@@ -1,0 +1,25 @@
+name: httr
+description: HTTP client for R. httr wraps URLs, headers, OAuth, and response parsing so R scripts can call model APIs and data services with retries and content helpers instead of raw sockets.
+tagline: Friendly HTTP client for R
+
+github_url: https://github.com/r-lib/httr
+website_url: https://httr.r-lib.org
+docs_url: https://httr.r-lib.org
+install_command: install.packages("httr")
+
+category: Dev Tools
+tags: [r, http, rest, oauth, api-client, cran]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Calling REST APIs from R with base sockets is brittle. httr handles
+  verbs, headers, OAuth, and content parsing so model endpoints and data
+  APIs are usable from scripts and packages.
+
+use_cases:
+  - GET JSON from a model inference HTTP endpoint in R
+  - POST training metrics to an internal API
+  - Authenticate with OAuth against a SaaS data source
+  - Parse response content into R lists or data frames

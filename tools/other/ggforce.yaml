@@ -1,0 +1,25 @@
+name: ggforce
+description: ggplot2 extension pack for extra geoms and stats. ggforce adds hulls, arcs, facets, and sina plots so embedding maps and cluster charts can show relationships ggplot2 does not draw natively.
+tagline: Extra geoms and stats for ggplot2
+
+github_url: https://github.com/thomasp85/ggforce
+website_url: https://ggforce.data-imaginist.com
+docs_url: https://ggforce.data-imaginist.com
+install_command: install.packages("ggforce")
+
+category: Other
+tags: [r, ggplot2, visualization, geoms, clustering]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  ggplot2 core geoms stop short of hulls, sina plots, and nested facets.
+  ggforce adds those layers so cluster, network, and embedding charts can
+  be drawn without dropping to a different grammar.
+
+use_cases:
+  - Draw convex hulls around clusters on an embedding scatter
+  - Facet a plot with extra layout control beyond ggplot2 facet_wrap
+  - Make sina plots for comparing metric distributions
+  - Annotate arcs and links between related points on a ggplot

@@ -1,0 +1,25 @@
+name: htmlwidgets
+description: HTML widget framework for R. htmlwidgets wraps JavaScript visualization libraries as R functions so Plotly, Leaflet, and custom JS charts render in R Markdown, Shiny, and knitr without a separate frontend app.
+tagline: HTML widgets for R
+
+github_url: https://github.com/ramnathv/htmlwidgets
+website_url: http://htmlwidgets.org
+docs_url: http://htmlwidgets.org
+install_command: install.packages("htmlwidgets")
+
+category: Dev Tools
+tags: [r, javascript, widgets, visualization, shiny, rmarkdown]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Interactive JS charts do not drop into R Markdown or Shiny by themselves.
+  htmlwidgets is the binding layer that turns a JS library into an R function
+  with JSON data and sizing, which is how most R interactive plots ship.
+
+use_cases:
+  - Wrap a JavaScript charting library as an R function
+  - Embed interactive widgets in R Markdown and flexdashboard
+  - Render htmlwidgets inside a Shiny app without custom JS glue
+  - Pass R data frames to a JS visualization via JSON

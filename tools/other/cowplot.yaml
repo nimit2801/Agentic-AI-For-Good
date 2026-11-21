@@ -1,0 +1,25 @@
+name: cowplot
+description: ggplot2 theme and annotation helpers. cowplot adds plot_grid, draw_plot, and a clean theme so publication figures combine panels, legends, and labels without fighting ggplot2 layout.
+tagline: Compose and annotate ggplot2 figures
+
+github_url: https://github.com/wilkelab/cowplot
+website_url: https://wilkelab.org/cowplot/
+docs_url: https://wilkelab.org/cowplot/
+install_command: install.packages("cowplot")
+
+category: Other
+tags: [r, ggplot2, visualization, figures, publication]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Multi-panel ggplot2 figures need extra layout code for shared legends
+  and labels. cowplot arranges plots, draws annotations, and applies a
+  clean theme so papers and model cards share one figure grammar.
+
+use_cases:
+  - Combine residual and metric plots into one publication figure
+  - Add a panel letter and shared legend across ggplot2 objects
+  - Apply a minimal theme for papers and slide decks
+  - Inset a zoomed plot inside a larger diagnostic chart
