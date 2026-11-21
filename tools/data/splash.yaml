@@ -1,0 +1,22 @@
+name: Splash
+description: Splash is a lightweight, scriptable browser-as-a-service with an HTTP API, built for rendering JavaScript pages in scraping pipelines. Scrapy and other crawlers call it to execute Lua scripts, take screenshots, and return HTML after JS runs.
+tagline: Scriptable headless browser with an HTTP API for crawlers
+github_url: https://github.com/scrapinghub/splash
+website_url: https://github.com/scrapinghub/splash
+docs_url: https://splash.readthedocs.io
+category: Data
+tags: [scraping, headless-browser, scrapy, lua, http-api, docker, javascript]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+problem_solved: |
+  Crawlers that only fetch HTML miss content rendered by JavaScript, but running
+  a full Chrome farm is heavy. Splash is a scriptable WebKit browser you call
+  over HTTP, so Scrapy and similar pipelines can render pages, run Lua, and
+  capture HAR or screenshots without embedding a desktop browser in each worker.
+use_cases:
+  - Render JavaScript-heavy pages for Scrapy spiders via an HTTP endpoint
+  - Run Lua scripts in Splash to click, wait, and extract before returning HTML
+  - Take screenshots or HAR dumps of pages inside a crawl pipeline
+  - Share one Splash service across many crawler workers instead of local Chrome
+  - Debug JS rendering for scrapers without attaching a full Playwright stack

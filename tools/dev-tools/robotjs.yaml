@@ -1,0 +1,23 @@
+name: RobotJS
+description: RobotJS is a Node.js native library for desktop automation. It can move the mouse, type keystrokes, and read pixels so scripts and agents can drive the real OS GUI, not only a browser, on Windows, macOS, and Linux.
+tagline: Native Node.js mouse, keyboard, and pixel automation
+github_url: https://github.com/octalmage/robotjs
+website_url: http://robotjs.dev
+docs_url: http://robotjs.dev
+install_command: npm install robotjs
+category: Dev Tools
+tags: [nodejs, desktop-automation, mouse, keyboard, native, gui, cross-platform]
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: |
+  Browser automation cannot click native windows, system dialogs, or desktop
+  apps. RobotJS gives Node.js scripts a native mouse, keyboard, and screen API
+  so agents and test harnesses can drive the real OS GUI across Windows, macOS,
+  and Linux without wrapping AutoHotkey or AppleScript.
+use_cases:
+  - Move the mouse and click native windows from a Node.js agent
+  - Type keystrokes into desktop apps that have no HTTP or CDP API
+  - Read pixel colors to wait for UI state in native automation
+  - Build cross-platform GUI macros in JavaScript instead of OS-specific scripts
+  - Drive installers and system dialogs during local agent computer-use

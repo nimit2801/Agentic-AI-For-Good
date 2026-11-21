@@ -1,0 +1,21 @@
+name: Nut.js
+description: Nut.js is a Node.js library for native UI testing and desktop control. It finds on-screen images, moves the mouse, and types into apps so agents and e2e tests can drive the real desktop, not only a browser.
+tagline: Native UI testing and desktop control for Node.js
+github_url: https://github.com/nut-tree/nut.js
+website_url: https://nutjs.dev
+docs_url: https://nutjs.dev
+category: Dev Tools
+tags: [nodejs, desktop-automation, ui-testing, mouse, keyboard, image-matching]
+pricing: free
+is_open_source: true
+problem_solved: |
+  WebDriver cannot see native dialogs, OS menus, or Electron chrome outside the
+  page. Nut.js gives Node.js tests image matching plus mouse and keyboard
+  control so you can assert and drive the real desktop, which is what computer-use
+  agents need when the target is an app rather than a URL.
+use_cases:
+  - Find on-screen buttons by image and click them from a Node.js test
+  - Type into native apps during desktop e2e flows
+  - Automate Electron or OS dialogs that Playwright cannot reach
+  - Build computer-use helpers that mix screenshot matching with keystrokes
+  - Run cross-platform GUI tests without wrapping AutoHotkey or AppleScript

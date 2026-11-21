@@ -1,0 +1,23 @@
+name: Helium
+description: Helium is a high-level Python library for web automation that sits on Selenium. You write click('Sign in') and wait_until instead of locators and driver boilerplate, which keeps scraping and UI scripts short.
+tagline: Lighter Python web automation on top of Selenium
+github_url: https://github.com/mherrmann/helium
+website_url: https://github.com/mherrmann/helium
+docs_url: https://github.com/mherrmann/helium
+install_command: pip install helium
+category: Dev Tools
+tags: [python, selenium, browser-automation, scraping, testing, high-level]
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: |
+  Selenium scripts spend most of their lines on locators, waits, and driver
+  setup. Helium wraps Selenium with a smaller Python API so you can click text,
+  fill fields, and wait for elements without CSS or XPath, which is faster to
+  write for demos, internal tools, and light scraping.
+use_cases:
+  - Automate logins and form fills in Python with click and write helpers
+  - Prototype browser flows without hand-writing Selenium locators
+  - Scrape pages that need a real browser using a short Helium script
+  - Teach browser automation with an API that reads like plain English
+  - Wrap existing Selenium drivers with a higher-level Helium API
