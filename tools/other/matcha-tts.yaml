@@ -1,0 +1,27 @@
+name: Matcha-TTS
+description: A non-autoregressive neural TTS system that uses conditional flow matching for fast, high-quality speech synthesis with a compact memory footprint.
+tagline: Fast TTS with conditional flow matching
+
+github_url: https://github.com/shivammehta25/Matcha-TTS
+website_url: https://shivammehta25.github.io/Matcha-TTS/
+docs_url: https://github.com/shivammehta25/Matcha-TTS
+
+install_command: pip install matcha-tts
+
+category: Other
+tags: [python, tts, speech, pytorch, audio, flow-matching]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Many neural TTS stacks are either slow autoregressive models or heavy diffusion
+  systems that need many ODE steps at inference. Matcha-TTS uses conditional flow
+  matching to synthesize natural speech quickly with a small memory footprint, so
+  you can run CLI or Gradio synthesis without a large vocoder-heavy pipeline.
+
+use_cases:
+  - Synthesize speech from text with the Matcha-TTS CLI for demos and dataset generation
+  - Batch-convert a text file into audio for voice UI prototypes or accessibility tooling
+  - Serve a local Gradio app so non-engineers can try pretrained Matcha-TTS voices
+  - Train or fine-tune a compact TTS checkpoint when you need faster ODE-based synthesis
