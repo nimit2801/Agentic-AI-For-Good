@@ -1,0 +1,25 @@
+name: flexdashboard
+description: R Markdown format for interactive dashboards. flexdashboard turns knitr documents into flexbox dashboards with gauges, value boxes, and htmlwidgets so model ops views ship as a single Rmd file.
+tagline: Interactive dashboards from R Markdown
+
+github_url: https://github.com/rstudio/flexdashboard
+website_url: https://pkgs.rstudio.com/flexdashboard/
+docs_url: https://pkgs.rstudio.com/flexdashboard/
+install_command: install.packages("flexdashboard")
+
+category: Dev Tools
+tags: [r, dashboards, rmarkdown, htmlwidgets, reporting]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Building a model dashboard usually means a separate web app. flexdashboard
+  lays out knitr output in rows and columns with gauges and htmlwidgets so
+  ops views stay an R Markdown file.
+
+use_cases:
+  - Ship a model-metrics dashboard from a single Rmd file
+  - Combine gauges, tables, and plots for an experiment readout
+  - Embed htmlwidgets in a flexbox layout for stakeholder review
+  - Schedule a flexdashboard render as a daily ops report
