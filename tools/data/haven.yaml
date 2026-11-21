@@ -1,0 +1,26 @@
+name: haven
+description: Import and export SPSS, Stata, and SAS files in R. haven uses ReadStat to preserve labelled values and missing codes so survey and clinical extracts become tibbles without a proprietary stats suite.
+tagline: Read SPSS, Stata, and SAS files from R
+
+github_url: https://github.com/tidyverse/haven
+website_url: https://haven.tidyverse.org
+docs_url: https://haven.tidyverse.org
+install_command: install.packages("haven")
+
+category: Data
+tags: [r, tidyverse, spss, stata, sas, data-ingest]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Social science and clinical datasets often ship as .sav, .dta, or
+  SAS files with labelled codes. Base R cannot read those formats well.
+  haven brings them into tibbles with labels intact so they can enter
+  dplyr pipelines.
+
+use_cases:
+  - Load SPSS survey extracts into tibbles for analysis
+  - Preserve value labels when importing Stata files
+  - Write a tibble back to .dta or .sav for collaborators
+  - Convert SAS transport files into tidyverse tables

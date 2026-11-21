@@ -1,0 +1,26 @@
+name: reticulate
+description: R interface to Python. reticulate embeds a Python session so you can import modules, convert data frames to pandas, and call TensorFlow or scikit-learn from R without leaving the R workflow.
+tagline: R interface to Python
+
+github_url: https://github.com/rstudio/reticulate
+website_url: https://rstudio.github.io/reticulate
+docs_url: https://rstudio.github.io/reticulate
+install_command: install.packages("reticulate")
+
+category: Dev Tools
+tags: [r, python, interop, pandas, tensorflow, rstudio]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Many ML libraries ship first for Python while analysis lives in R.
+  reticulate runs Python in-process, converts tibbles and pandas, and
+  exposes modules so R users can call scikit-learn, PyTorch, or custom
+  Python without rewriting the pipeline.
+
+use_cases:
+  - Call a Python model from an R Markdown or Shiny app
+  - Convert tibbles to pandas and back in a mixed-language notebook
+  - Use TensorFlow or scikit-learn from R scripts
+  - Source a Python helper module inside an R targets pipeline
