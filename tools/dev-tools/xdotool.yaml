@@ -1,0 +1,26 @@
+name: xdotool
+description: Command-line tool for fake keyboard and mouse input plus window management on X11. xdotool can type, click, move windows, search by title, and script desktop actions from the shell without a Python runtime.
+tagline: Fake keyboard, mouse, and window control for X11
+
+github_url: https://github.com/jordansissel/xdotool
+website_url: https://www.semicomplete.com/projects/xdotool/
+docs_url: https://www.semicomplete.com/projects/xdotool/
+install_command: brew install xdotool
+
+category: Dev Tools
+tags: [linux, x11, gui-automation, keyboard, mouse, cli, window-management]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Linux desktop automation often needs keystrokes and window focus from a
+  shell script, not a full Python GUI library. xdotool sends X11 events and
+  manages windows by title or class so CI jobs, agents, and RPA steps can
+  drive X apps without writing a GUI toolkit client.
+
+use_cases:
+  - Type into an X11 app and click menus from a bash agent script
+  - Focus a window by title before taking a screenshot in a Linux pipeline
+  - Move and resize windows for headless display tests of desktop ML tools
+  - Simulate hotkeys against a Linux GUI that has no CLI

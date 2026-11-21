@@ -1,0 +1,26 @@
+name: PyAutoGUI
+description: Cross-platform Python module for GUI automation. PyAutoGUI moves the mouse, clicks, types, takes screenshots, and locates images on screen so scripts can drive desktop apps the way a person would.
+tagline: Programmatic mouse, keyboard, and screenshot control for Python
+
+github_url: https://github.com/asweigart/pyautogui
+website_url: https://pyautogui.readthedocs.io
+docs_url: https://pyautogui.readthedocs.io
+install_command: pip install pyautogui
+
+category: Dev Tools
+tags: [python, gui-automation, mouse, keyboard, screenshots, desktop]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Agent and RPA workflows often need to drive apps that have no API. Pixel-level
+  click scripts are OS-specific and brittle. PyAutoGUI gives one Python API for
+  mouse, keyboard, screenshots, and image matching on Windows, macOS, and Linux
+  so desktop steps can live in the same scripts as the rest of the pipeline.
+
+use_cases:
+  - Drive a desktop labeling or annotation app that has no public API
+  - Automate screenshot capture and UI smoke checks for local ML demos
+  - Type prompts and click through a GUI tool as part of an agent loop
+  - Locate on-screen buttons by image and click them in a repeatable script
