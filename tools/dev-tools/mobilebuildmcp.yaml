@@ -1,0 +1,26 @@
+name: MobileBuildMCP
+description: A Sentry MCP server and CLI that lets coding agents build, test, and manage iOS and macOS Xcode projects, simulators, and devices from the terminal.
+tagline: MCP and CLI for Xcode iOS and macOS builds
+
+github_url: https://github.com/getsentry/MobileBuildMCP
+docs_url: https://github.com/getsentry/MobileBuildMCP
+
+install_command: npm install mobilebuildmcp
+
+category: Dev Tools
+tags: [mcp, ios, macos, xcode, cli, sentry, agents]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Agents editing Swift apps still need a human to run xcodebuild, pick simulators,
+  and install on devices. MobileBuildMCP exposes those workflows as MCP tools and
+  a CLI so Cursor or Claude can build, test, and manage Xcode projects on macOS
+  without leaving the agent loop.
+
+use_cases:
+  - Let a coding agent build and test an iOS app in the simulator through MCP
+  - Drive xcodebuild, signing, and device install from a CLI in CI or a local session
+  - Prime an agent with the MobileBuildMCP skill so it uses the right Xcode tools
+  - Debug macOS and iOS projects from Cursor or Claude Code without switching to Xcode
