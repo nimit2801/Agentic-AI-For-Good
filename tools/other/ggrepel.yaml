@@ -1,0 +1,25 @@
+name: ggrepel
+description: ggplot2 extension that repositions overlapping text labels. ggrepel adds geom_text_repel and geom_label_repel so scatter plots of embeddings, clusters, and model diagnostics stay readable when many points share a region.
+tagline: Non-overlapping text labels for ggplot2
+
+github_url: https://github.com/slowkow/ggrepel
+website_url: https://ggrepel.slowkow.com
+docs_url: https://ggrepel.slowkow.com
+install_command: install.packages("ggrepel")
+
+category: Other
+tags: [r, ggplot2, visualization, labels, plotting, tidyverse]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  ggplot2 text geoms stack on top of each other in dense scatter plots.
+  ggrepel pushes labels apart while drawing leader lines so embedding maps,
+  cluster plots, and residual charts remain readable.
+
+use_cases:
+  - Label points on a PCA or embedding scatter without collisions
+  - Annotate cluster exemplars on a ggplot2 diagnostic plot
+  - Publish readable volcano plots with gene or feature names
+  - Keep overlapping country or model names off each other in charts

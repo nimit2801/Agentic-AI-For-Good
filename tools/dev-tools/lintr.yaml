@@ -1,0 +1,25 @@
+name: lintr
+description: Static analysis linter for R. lintr flags style, syntax, and best-practice issues in R scripts and packages so ML code reviews catch unused objects, unsafe eval, and inconsistent style before they land in training pipelines.
+tagline: Static code analysis for R
+
+github_url: https://github.com/r-lib/lintr
+website_url: https://lintr.r-lib.org
+docs_url: https://lintr.r-lib.org
+install_command: install.packages("lintr")
+
+category: Dev Tools
+tags: [r, lint, static-analysis, code-quality, cran]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  R scripts in ML repos often skip the style and safety checks Python teams
+  expect. lintr scans packages and scripts for unused objects, T/F booleans,
+  and style issues so reviews catch problems before they hit a training run.
+
+use_cases:
+  - Lint an R package in CI before merging model code
+  - Flag unused variables and unsafe eval in analysis scripts
+  - Enforce a shared style across a data science team
+  - Run lintr from RStudio or the command line on a project
