@@ -1,0 +1,25 @@
+name: AgentQL
+description: AgentQL is a query language and SDK suite that lets AI agents extract data and click elements on live pages using natural language. It integrates with Playwright, ships Python and JavaScript clients, and keeps selectors working as page structure changes.
+tagline: Natural-language queries that connect AI agents to the web
+github_url: https://github.com/tinyfish-io/agentql
+website_url: https://agentql.com
+docs_url: https://docs.agentql.com/quick-start
+install_command: |
+  pip install agentql
+  npm install agentql
+category: Dev Tools
+tags: [playwright, scraping, query-language, python, javascript, ai-agents, selectors]
+pricing: freemium
+is_open_source: true
+license: MIT
+problem_solved: |
+  CSS and XPath selectors break whenever a site restyles, so agent scrapers and
+  tests constantly need new locators. AgentQL lets you describe elements and
+  data in natural language, then finds them on public or authenticated pages
+  through Playwright SDKs and a REST API, including when the DOM layout changes.
+use_cases:
+  - Extract structured product or listing data with a natural-language query
+  - Click buttons and fill forms in Playwright using semantic element locators
+  - Keep scrapers working across similar sites without rewriting CSS selectors
+  - Call the REST API to pull page data without embedding a browser SDK
+  - Debug live queries in the browser extension before exporting a Python script
