@@ -1,0 +1,23 @@
+name: undetected-chromedriver
+description: undetected-chromedriver is a patched Selenium Chromedriver that hides automation flags so Python scripts can pass Distil, Imperva, DataDome, and Cloudflare IUAM checks that block a stock Selenium driver.
+tagline: Patched Selenium Chromedriver that slips past bot checks
+github_url: https://github.com/ultrafunkamsterdam/undetected-chromedriver
+website_url: https://github.com/ultrafunkamsterdam/undetected-chromedriver
+docs_url: https://github.com/ultrafunkamsterdam/undetected-chromedriver
+install_command: pip install undetected-chromedriver
+category: Dev Tools
+tags: [python, selenium, chromedriver, scraping, undetectable, chrome, automation]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+problem_solved: |
+  Stock Selenium Chromedriver sets navigator.webdriver and other flags that
+  anti-bot products use to block scrapers. undetected-chromedriver patches the
+  driver so existing Selenium Python code can open Chrome with those leaks
+  reduced, which is often enough to pass Cloudflare IUAM and similar challenges.
+use_cases:
+  - Drop into Selenium Python scripts that get blocked by Cloudflare IUAM
+  - Collect pages behind Distil, Imperva, or DataDome bot checks
+  - Keep using the Selenium API instead of rewriting automation in Playwright
+  - Launch Chrome with a patched driver and a persistent user profile
+  - Prototype scrapers that later migrate to nodriver or Patchright

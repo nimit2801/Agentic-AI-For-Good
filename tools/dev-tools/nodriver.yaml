@@ -1,0 +1,23 @@
+name: nodriver
+description: nodriver is an async Python browser automation framework and the successor to undetected-chromedriver. It talks Chrome DevTools Protocol directly, with no Selenium WebDriver, so scrapers can get past many bot checks that flag classic drivers.
+tagline: Async CDP automation that succeeds undetected-chromedriver
+github_url: https://github.com/ultrafunkamsterdam/nodriver
+website_url: https://github.com/ultrafunkamsterdam/nodriver
+docs_url: https://github.com/ultrafunkamsterdam/nodriver
+install_command: pip install nodriver
+category: Dev Tools
+tags: [python, browser-automation, scraping, cdp, undetectable, chrome, async]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+problem_solved: |
+  Selenium Chromedriver is easy for Cloudflare, Imperva, and similar systems to
+  detect, which blocks scrapers even on public pages. nodriver drives Chrome over
+  CDP from async Python with no WebDriver binary, so automation looks closer to a
+  real browser and stays usable against checks that kill classic Selenium.
+use_cases:
+  - Scrape JavaScript sites that block Selenium Chromedriver and stock Playwright
+  - Automate Chrome from async Python without installing a WebDriver binary
+  - Bypass Cloudflare IUAM and similar checks that fingerprint WebDriver
+  - Run bot and data-collection jobs that need a real Chrome profile
+  - Replace undetected-chromedriver scripts with a CDP-native successor
