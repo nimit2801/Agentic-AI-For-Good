@@ -1,0 +1,28 @@
+name: puppeteer-extra
+description: puppeteer-extra is a plugin framework for Puppeteer that adds stealth, ad blocking, recaptcha helpers, and other plugins without forking Puppeteer. Drop it in as a replacement import and enable the plugins you need.
+tagline: Plugin framework that teaches Puppeteer new tricks
+
+github_url: https://github.com/berstend/puppeteer-extra
+website_url: https://extra.community
+docs_url: https://github.com/berstend/puppeteer-extra
+
+install_command: npm install puppeteer-extra
+
+category: Dev Tools
+tags: [puppeteer, plugins, stealth, scraping, browser-automation, nodejs, chrome, recaptcha]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Vanilla Puppeteer has no plugin system, so teams fork it or paste one-off
+  stealth and ad-block hacks into every project. puppeteer-extra wraps Puppeteer
+  with a plugin API so you can add stealth, ad blocking, recaptcha solving, and
+  user-data-dir helpers as packages instead of maintaining a private fork.
+
+use_cases:
+  - Enable puppeteer-extra-plugin-stealth to reduce headless Chrome detection
+  - Block ads and trackers in scraping runs with the adblocker plugin
+  - Solve or bypass recaptcha flows using the recaptcha plugin
+  - Share browser plugins across multiple Puppeteer scripts without forking
+  - Add user-data-dir and anonymize-ua plugins for persistent, less-bot-like sessions

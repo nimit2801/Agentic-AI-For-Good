@@ -1,0 +1,31 @@
+name: Patchright
+description: Patchright is a patched drop-in replacement for Playwright that removes common automation leaks such as default launch args and Runtime.enable, so browser tests and scrapers are harder for anti-bot systems to detect.
+tagline: Undetected drop-in replacement for Playwright
+
+github_url: https://github.com/Kaliiiiiiiiii-Vinyzu/patchright
+website_url: https://github.com/Kaliiiiiiiiii-Vinyzu/patchright
+docs_url: https://github.com/Kaliiiiiiiiii-Vinyzu/patchright
+
+install_command: |
+  npm install patchright
+  pip install patchright
+
+category: Dev Tools
+tags: [playwright, browser-automation, stealth, scraping, testing, nodejs, python, anti-detect]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Stock Playwright is easy for anti-bot systems to detect because of default
+  Chromium flags, Runtime.enable, and other automation leaks. Patchright is a
+  patched Playwright that keeps the same API as a drop-in import while closing
+  those leaks, so existing tests and scrapers can run against sites that block
+  unmodified Playwright.
+
+use_cases:
+  - Swap Playwright imports for Patchright in Node.js scraping scripts
+  - Use the Python package as an undetected Playwright client
+  - Run end-to-end tests against sites that fingerprint stock Playwright
+  - Inject init scripts without Runtime.enable so pages do not see CDP hooks
+  - Keep Playwright's API while reducing command-flag and runtime leaks

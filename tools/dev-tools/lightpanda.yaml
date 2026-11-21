@@ -1,0 +1,29 @@
+name: Lightpanda
+description: Lightpanda is a headless browser written in Zig for AI agents and automation. It implements the Chrome DevTools Protocol so Puppeteer and Playwright clients can drive it, while using far less memory than a full Chromium process.
+tagline: Headless browser built for AI agents, not Chrome's memory bill
+
+github_url: https://github.com/lightpanda-io/browser
+website_url: https://lightpanda.io
+docs_url: https://lightpanda.io
+
+install_command: brew install lightpanda-io/browser/lightpanda
+
+category: Dev Tools
+tags: [browser, headless, zig, cdp, puppeteer, playwright, ai-agents, automation]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+
+problem_solved: |
+  Chromium-based headless browsers burn hundreds of megabytes per session, which
+  makes it expensive to run many parallel agent or scraping workers. Lightpanda
+  is a purpose-built headless browser that speaks Chrome DevTools Protocol, so
+  existing Puppeteer and Playwright scripts can target it while using far less
+  memory and starting faster than a full Chrome process.
+
+use_cases:
+  - Drive agent browser tools over CDP without launching a full Chromium instance
+  - Run high-concurrency scraping or crawl workers with lower RAM per session
+  - Swap Lightpanda into Puppeteer or Playwright scripts that already speak CDP
+  - Serve a lightweight headless browser in Docker or CI for page fetch and extraction
+  - Expose MCP browser tools to coding agents without Chrome's resource footprint

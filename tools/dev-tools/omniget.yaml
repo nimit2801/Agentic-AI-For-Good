@@ -1,0 +1,31 @@
+name: Omniget
+description: Omniget is a local MCP server and desktop app that lets coding agents use your computer, logged-in accounts, browser, files, and downloads. It also downloads video, music, and purchased courses while keeping everything on your machine.
+tagline: Local MCP server so agents use your computer and accounts
+
+github_url: https://github.com/tonhowtf/omniget
+website_url: https://getomniget.com/
+docs_url: https://getomniget.com/
+
+install_command: |
+  brew tap tonhowtf/tap
+  brew install --cask omniget
+
+category: Dev Tools
+tags: [mcp, desktop, downloads, agents, local-first, rust, claude-code, cursor]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Coding agents cannot see your logged-in browser, local files, or the courses
+  and media you already paid for unless you paste context by hand. Omniget runs
+  a local MCP server and desktop app so Claude Code, Codex, Cursor, and Gemini
+  CLI can use your machine, accounts, and downloader without sending that data
+  to a third-party cloud.
+
+use_cases:
+  - Connect Claude Code or Cursor to a local MCP server that can browse and download
+  - Let an agent fetch files, chats, and feeds from accounts you are already logged into
+  - Download purchased courses, video, and music with bundled yt-dlp and FFmpeg
+  - Keep agent computer-use on your Windows, macOS, or Linux machine instead of a cloud VM
+  - Give coding agents a canvas and downloader without exposing credentials to a SaaS proxy
