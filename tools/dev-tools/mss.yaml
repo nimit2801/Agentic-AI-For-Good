@@ -1,0 +1,26 @@
+name: mss
+description: Ultra-fast cross-platform screenshot library in pure Python. mss uses ctypes to grab one or more monitors without PIL at capture time, which makes it a common choice for agents, RPA, and vision loops that need frequent screen grabs.
+tagline: Fast multi-monitor screenshots in pure Python
+
+github_url: https://github.com/BoboTiG/python-mss
+website_url: https://python-mss.readthedocs.io
+docs_url: https://python-mss.readthedocs.io
+install_command: pip install mss
+
+category: Dev Tools
+tags: [python, screenshots, desktop, ctypes, rpa, vision]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Agents that look at the desktop need cheap, frequent screenshots. Pillow and
+  OS-specific tools add overhead or extra binaries. mss captures monitors via
+  ctypes on Windows, macOS, and Linux so a Python loop can grab frames quickly
+  and optionally hand them to PIL only when encoding is needed.
+
+use_cases:
+  - Capture the primary monitor each step of a GUI agent loop
+  - Grab all monitors for a multi-display RPA workflow
+  - Benchmark screenshot FPS without pulling in a GUI toolkit
+  - Feed screen regions to a vision model for UI understanding

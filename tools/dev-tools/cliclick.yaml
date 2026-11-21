@@ -1,0 +1,26 @@
+name: cliclick
+description: macOS command-line tool for emulating mouse and keyboard events. cliclick clicks, drags, types, and moves the cursor from the shell so scripts and agents can drive GUI apps without AppleScript or a Python runtime.
+tagline: Click and type on macOS from the command line
+
+github_url: https://github.com/BlueM/cliclick
+website_url: https://www.bluem.net/jump/cliclick/
+docs_url: https://github.com/BlueM/cliclick
+install_command: brew install cliclick
+
+category: Dev Tools
+tags: [macos, cli, mouse, keyboard, gui-automation, accessibility]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  macOS GUI automation from a shell usually means AppleScript or a full Python
+  stack. cliclick is a small binary that sends clicks, drags, and keystrokes
+  from Terminal once Accessibility permission is granted, which fits CI jobs
+  and local agent scripts that should stay in bash.
+
+use_cases:
+  - Click a macOS dialog that blocks an unattended local job
+  - Type into a GUI-only Mac app from a shell agent
+  - Move the cursor and drag in a recorded desktop workflow
+  - Smoke-test a Mac app window without writing AppleScript
