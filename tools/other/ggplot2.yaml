@@ -1,0 +1,26 @@
+name: ggplot2
+description: R implementation of the Grammar of Graphics. ggplot2 builds plots from data, aesthetics, and layered geoms so ML and data teams can produce publication-quality charts from tidy data frames without hand-tuning base R graphics.
+tagline: Grammar of Graphics plotting for R
+
+github_url: https://github.com/tidyverse/ggplot2
+website_url: https://ggplot2.tidyverse.org
+docs_url: https://ggplot2.tidyverse.org
+install_command: install.packages("ggplot2")
+
+category: Other
+tags: [r, visualization, plotting, grammar-of-graphics, tidyverse, charts]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Base R graphics and ad-hoc chart scripts are hard to reuse and easy to get
+  inconsistent. ggplot2 maps columns to visual properties and stacks layers so
+  the same grammar covers scatter, bars, facets, and themes. That makes model
+  diagnostics and experiment plots repeatable across a team.
+
+use_cases:
+  - Plot training metrics and residual diagnostics from R model runs
+  - Facet experiment results by hyperparameter or dataset split
+  - Publish consistent chart themes for papers and internal reports
+  - Build exploratory plots from tidy data frames in a notebook
