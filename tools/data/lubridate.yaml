@@ -1,0 +1,26 @@
+name: lubridate
+description: Tidyverse toolkit for dates and times in R. lubridate parses messy timestamps, handles time zones, and does interval arithmetic so experiment logs and time-series features stay consistent without fighting POSIXct.
+tagline: Make working with dates in R a little easier
+
+github_url: https://github.com/tidyverse/lubridate
+website_url: https://lubridate.tidyverse.org
+docs_url: https://lubridate.tidyverse.org
+install_command: install.packages("lubridate")
+
+category: Data
+tags: [r, tidyverse, dates, time-series, timestamps, time-zones]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Base R date parsing is picky about formats, time zones, and daylight saving.
+  lubridate gives parse helpers, period and duration objects, and interval
+  math so training windows, event logs, and feature timestamps stay aligned
+  across pipelines.
+
+use_cases:
+  - Parse mixed timestamp columns from experiment CSVs into POSIXct
+  - Compute training windows and lag features from event times
+  - Convert logs between UTC and local time zones before modeling
+  - Floor and ceiling dates for daily or weekly metric rollups

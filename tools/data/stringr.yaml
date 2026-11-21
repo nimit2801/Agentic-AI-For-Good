@@ -1,0 +1,25 @@
+name: stringr
+description: Consistent string manipulation for R. stringr wraps stringi with a small set of str_ verbs for detect, extract, replace, split, and pad so text cleaning in tidy pipelines stays readable and locale-aware.
+tagline: Simple, consistent string operations for R
+
+github_url: https://github.com/tidyverse/stringr
+website_url: https://stringr.tidyverse.org
+docs_url: https://stringr.tidyverse.org
+install_command: install.packages("stringr")
+
+category: Data
+tags: [r, tidyverse, strings, text, regex, data-cleaning]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Base R string functions have inconsistent names, argument order, and NA
+  handling. stringr gives one str_ prefix, vectorized verbs, and ICU regex
+  so prompt text, IDs, and messy labels can be cleaned in dplyr pipelines.
+
+use_cases:
+  - Extract IDs and labels from messy log and filename strings
+  - Normalize whitespace and case before joining text features
+  - Detect pattern matches to filter training rows
+  - Pad and truncate token-like fields for display and export

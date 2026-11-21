@@ -1,0 +1,26 @@
+name: forcats
+description: Tools for categorical variables in R. forcats reorders, recodes, lumps, and drops factor levels so ggplot axes, model contrasts, and grouped summaries stay in a useful order instead of alphabetical accident.
+tagline: Tools for working with factors in R
+
+github_url: https://github.com/tidyverse/forcats
+website_url: https://forcats.tidyverse.org
+docs_url: https://forcats.tidyverse.org
+install_command: install.packages("forcats")
+
+category: Data
+tags: [r, tidyverse, factors, categorical, recoding, data-wrangling]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  R factors default to alphabetical levels, which makes plots and models
+  hard to read. forcats reorders by frequency or a related value, lumps
+  rare levels, and recodes categories so experiment tags and labels stay
+  usable in ggplot2 and modeling code.
+
+use_cases:
+  - Reorder factor levels by metric so charts show the strongest first
+  - Lump rare categories before one-hot encoding or modeling
+  - Recode experiment tags into a smaller set of model labels
+  - Drop unused levels after filtering a training table

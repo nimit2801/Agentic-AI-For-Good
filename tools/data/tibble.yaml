@@ -1,0 +1,26 @@
+name: tibble
+description: Modern data frame for R. tibble is a stricter tbl_df class that prints compactly, never changes column types or names silently, and is the default table type across the tidyverse for analysis and modeling pipelines.
+tagline: A modern re-imagining of the data frame
+
+github_url: https://github.com/tidyverse/tibble
+website_url: https://tibble.tidyverse.org
+docs_url: https://tibble.tidyverse.org
+install_command: install.packages("tibble")
+
+category: Data
+tags: [r, tidyverse, data-frames, tables, tibbles, data-wrangling]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Base data.frames recycle, rename, and drop types in ways that hide bugs.
+  tibble keeps column types and names as given, prints a preview instead of
+  flooding the console, and works as the shared table type for dplyr, tidyr,
+  and ggplot2.
+
+use_cases:
+  - Construct typed feature tables without silent name repair
+  - Print compact previews of wide model-output frames
+  - Convert nested list columns into tidy modeling inputs
+  - Use tibbles as the default object between dplyr pipeline steps
