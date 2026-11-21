@@ -1,0 +1,27 @@
+name: MCP Python SDK
+description: The official Python SDK for building Model Context Protocol servers and clients, including tools, resources, prompts, and a CLI for local MCP development.
+tagline: Official Python SDK for MCP
+
+github_url: https://github.com/modelcontextprotocol/python-sdk
+website_url: https://py.sdk.modelcontextprotocol.io/
+docs_url: https://github.com/modelcontextprotocol/python-sdk
+
+install_command: pip install mcp
+
+category: Dev Tools
+tags: [python, mcp, sdk, agents, tools, llm]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Teams that want to expose Python tools or data to MCP hosts otherwise hand-roll
+  JSON-RPC session plumbing. The official Python SDK implements servers and
+  clients with tools, resources, and prompts, plus an optional CLI so you can
+  run and inspect servers without writing protocol code from scratch.
+
+use_cases:
+  - Build an MCP server in Python that exposes tools and resources to Claude or Cursor
+  - Write an MCP client that connects to local or remote servers from a Python agent
+  - Use the mcp CLI extras to run, install, and debug servers during development
+  - Wrap an existing Python library as MCP tools for IDE coding agents

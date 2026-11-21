@@ -1,0 +1,26 @@
+name: mcp-chrome
+description: A Chrome-extension MCP server that lets AI assistants drive your existing Chrome session for automation, tab analysis, and semantic search without a separate browser.
+tagline: MCP server inside your daily Chrome
+
+github_url: https://github.com/hangwin/mcp-chrome
+docs_url: https://github.com/hangwin/mcp-chrome
+
+install_command: npm install -g mcp-chrome-bridge
+
+category: Dev Tools
+tags: [mcp, chrome, browser, extension, automation, agents]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Playwright-style MCP browsers start a clean profile, so agents lose logins and
+  extensions. mcp-chrome attaches to the Chrome you already run, reusing cookies
+  and tabs, and exposes screenshots, network, bookmarks, history, and semantic
+  tab search as MCP tools.
+
+use_cases:
+  - Let Claude automate tasks in a logged-in Chrome profile instead of a headless browser
+  - Search across open tabs with the built-in vector index of page content
+  - Capture screenshots, network activity, and browsing history as MCP tools
+  - Drive cross-tab workflows that depend on existing cookies and extensions
