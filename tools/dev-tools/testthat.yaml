@@ -1,0 +1,25 @@
+name: testthat
+description: Unit testing framework for R. testthat runs expectations, snapshots, and reporter output so R packages and ML helper libraries get CI coverage comparable to pytest without leaving the R toolchain.
+tagline: Unit testing for R
+
+github_url: https://github.com/r-lib/testthat
+website_url: https://testthat.r-lib.org
+docs_url: https://testthat.r-lib.org
+install_command: install.packages("testthat")
+
+category: Dev Tools
+tags: [r, testing, unit-tests, ci, cran]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  R packages without automated tests regress silently in CI. testthat
+  provides expect_* assertions, snapshot tests, and reporters so ML helper
+  libraries and analysis packages fail the build when behavior changes.
+
+use_cases:
+  - Add unit tests for an R package that wraps a model API
+  - Snapshot ggplot or text output so refactors cannot drift silently
+  - Run testthat in GitHub Actions on every pull request
+  - Test custom expect helpers for statistical numeric tolerance

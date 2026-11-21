@@ -1,0 +1,25 @@
+name: usethis
+description: Package and project setup automation for R. usethis scaffolds DESCRIPTION files, tests, CI, and git remotes so R package authors skip boilerplate when starting ML libraries and internal tools.
+tagline: Automate R package and project setup
+
+github_url: https://github.com/r-lib/usethis
+website_url: https://usethis.r-lib.org
+docs_url: https://usethis.r-lib.org
+install_command: install.packages("usethis")
+
+category: Dev Tools
+tags: [r, packages, scaffolding, project-setup, cran]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Starting an R package means hand-editing DESCRIPTION, tests, licenses,
+  and CI files. usethis generates those pieces with one function each so
+  new ML helper packages and internal tools start with a standard layout.
+
+use_cases:
+  - Scaffold a new R package with DESCRIPTION, NAMESPACE, and git
+  - Add testthat, GitHub Actions, and a license in one sitting
+  - Create a vignette or README.Rmd from a template
+  - Connect a local package to a GitHub remote without manual setup
