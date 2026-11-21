@@ -1,0 +1,31 @@
+name: Camoufox
+description: Camoufox is an open-source anti-detect Firefox browser for web scraping and AI agents. It spoofs fingerprints such as fonts, WebGL, and navigator data so automated sessions look like real users instead of Playwright or Selenium bots.
+tagline: Anti-detect Firefox browser for scraping and AI agents
+
+github_url: https://github.com/daijro/camoufox
+website_url: https://camoufox.com
+docs_url: https://camoufox.com
+
+install_command: |
+  pip install camoufox
+  npm install camoufox
+
+category: Dev Tools
+tags: [browser, firefox, anti-detect, scraping, playwright, fingerprints, automation, python]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  Standard Playwright and Selenium sessions leak automation fingerprints, so
+  anti-bot systems block them even when the page itself is public. Camoufox is
+  a Firefox build plus Python and TypeScript launchers that randomize and
+  spoof browser fingerprints so scrapers and agents can fetch pages that would
+  otherwise challenge or ban a stock automated browser.
+
+use_cases:
+  - Scrape sites that block stock Playwright or Selenium with fingerprint checks
+  - Launch an anti-detect Firefox from Python for agent browsing workflows
+  - Rotate fonts, WebGL, and navigator fingerprints across scraping workers
+  - Drive Camoufox from TypeScript using the official launcher package
+  - Combine residential proxies with a stealth Firefox for data collection
