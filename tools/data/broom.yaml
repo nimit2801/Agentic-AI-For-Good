@@ -1,0 +1,26 @@
+name: broom
+description: Tidy model summaries for R. broom turns coefficients, predictions, and glance stats from lm, glm, and many modeling packages into tibbles so results can be filtered, plotted, and joined like any other table.
+tagline: Convert statistical objects into tidy tibbles
+
+github_url: https://github.com/tidymodels/broom
+website_url: https://broom.tidymodels.org
+docs_url: https://broom.tidymodels.org
+install_command: install.packages("broom")
+
+category: Data
+tags: [r, tidymodels, tidyverse, modeling, tibbles, statistics]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Base R model objects print as text and do not join cleanly with other
+  tables. broom's tidy, glance, and augment verbs extract coefficients,
+  fit stats, and residuals into tibbles so experiment comparison and
+  plotting stay in dplyr.
+
+use_cases:
+  - Tidy regression coefficients across many fitted models
+  - Augment training data with fitted values and residuals
+  - Glance AIC and R-squared into a model-comparison table
+  - Pipe broom output into ggplot2 for coefficient plots

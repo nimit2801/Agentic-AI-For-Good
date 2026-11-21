@@ -1,0 +1,25 @@
+name: magrittr
+description: Forward-pipe operator for R. magrittr provides %>% and related pipes so nested function calls become left-to-right pipelines, the style the tidyverse and most R data workflows are written in.
+tagline: Improve R readability with the pipe
+
+github_url: https://github.com/tidyverse/magrittr
+website_url: https://magrittr.tidyverse.org
+docs_url: https://magrittr.tidyverse.org
+install_command: install.packages("magrittr")
+
+category: Dev Tools
+tags: [r, tidyverse, pipe, pipelines, syntax, readability]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Nested R calls are hard to read and to debug in long data pipelines.
+  magrittr's %>% passes the left-hand result as the first argument of the
+  next call so wrangling, modeling, and plot steps can be written in order.
+
+use_cases:
+  - Chain dplyr verbs into a readable feature-engineering pipeline
+  - Pipe cleaned tables into ggplot2 or modeling functions
+  - Use %<>% to update an object in place during iterative cleaning
+  - Teach left-to-right R style that matches existing tidyverse code

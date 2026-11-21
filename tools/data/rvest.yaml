@@ -1,0 +1,26 @@
+name: rvest
+description: Simple web scraping for R. rvest wraps xml2 and HTTP helpers so you can read HTML, extract CSS-selected nodes, and turn tables into tibbles for dataset collection without writing a full crawler.
+tagline: Simple web scraping for R
+
+github_url: https://github.com/tidyverse/rvest
+website_url: https://rvest.tidyverse.org
+docs_url: https://rvest.tidyverse.org
+install_command: install.packages("rvest")
+
+category: Data
+tags: [r, tidyverse, scraping, html, xml, data-collection]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Public HTML pages often hold tables and text that never ship as CSV.
+  rvest loads a page, selects nodes with CSS or XPath, and converts HTML
+  tables to tibbles so R users can assemble training and research datasets
+  from the web.
+
+use_cases:
+  - Extract HTML tables into tibbles for analysis
+  - Scrape article text and metadata for NLP corpora
+  - Follow pagination to collect a catalog of records
+  - Pull structured fields from CSS-selected nodes into dplyr pipelines

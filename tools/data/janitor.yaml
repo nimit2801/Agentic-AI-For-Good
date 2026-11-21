@@ -1,0 +1,26 @@
+name: janitor
+description: Data-cleaning helpers for R. janitor formats column names, removes empty rows, tabulates duplicates, and compares dirty frames so messy exports become tidyverse-ready without one-off string hacks.
+tagline: Simple tools for cleaning dirty data in R
+
+github_url: https://github.com/sfirke/janitor
+website_url: https://sfirke.github.io/janitor/
+docs_url: https://sfirke.github.io/janitor/
+install_command: install.packages("janitor")
+
+category: Data
+tags: [r, data-cleaning, tidyverse, excel, wrangling, names]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Spreadsheets arrive with spaces in headers, empty rows, and duplicate
+  keys. janitor's clean_names, remove_empty, and tabyl helpers fix those
+  problems in a few verbs so dplyr and modeling code can assume usable
+  columns.
+
+use_cases:
+  - Clean Excel column names into snake_case before dplyr
+  - Drop empty rows and columns from exported reports
+  - Tabulate duplicates and missingness in incoming feature tables
+  - Compare two messy frames to find extra or missing records
