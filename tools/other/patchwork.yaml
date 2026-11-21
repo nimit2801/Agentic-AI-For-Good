@@ -1,0 +1,26 @@
+name: patchwork
+description: ggplot2 plot composer for R. patchwork stacks, nests, and aligns multiple ggplot objects with a simple operator syntax so multi-panel model diagnostics and report figures stay one object instead of a collage of separate files.
+tagline: The composer of ggplots
+
+github_url: https://github.com/thomasp85/patchwork
+website_url: https://patchwork.data-imaginist.com
+docs_url: https://patchwork.data-imaginist.com
+install_command: install.packages("patchwork")
+
+category: Other
+tags: [r, ggplot2, visualization, plotting, layout, tidyverse]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Combining several ggplot2 charts into one figure usually means cowplot
+  hacks or exporting panels separately. patchwork uses +, |, and / to
+  assemble plots with shared legends and aligned axes so model cards and
+  papers can ship a single composed figure.
+
+use_cases:
+  - Combine residual, ROC, and calibration plots into one model card figure
+  - Align training-curve panels with shared legends for a report
+  - Nest inset plots inside a main ggplot for geographic or zoom context
+  - Assemble multi-page ggplot dashboards without leaving R
