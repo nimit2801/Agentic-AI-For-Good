@@ -1,0 +1,26 @@
+name: pywinauto
+description: Python library for Windows GUI automation. pywinauto talks to native controls by name, class, and text instead of clicking pixels, so scripts can fill forms, click buttons, and read window state on Win32 and UIA apps.
+tagline: Windows GUI automation from Python via native controls
+
+github_url: https://github.com/pywinauto/pywinauto
+website_url: https://pywinauto.github.io/
+docs_url: https://pywinauto.readthedocs.io
+install_command: pip install pywinauto
+
+category: Dev Tools
+tags: [python, windows, gui-automation, win32, uia, rpa]
+pricing: free
+is_open_source: true
+license: BSD-3-Clause
+
+problem_solved: |
+  Many Windows tools used in data and ML ops (installers, vendor GUIs, legacy
+  clients) expose no API. Pixel-click bots break when layout shifts. pywinauto
+  inspects Win32 and UI Automation controls so Python can target buttons, edits,
+  and menus by properties and wait for real window state.
+
+use_cases:
+  - Automate a Windows-only vendor client that only has a GUI
+  - Drive installers and first-run wizards in CI on Windows runners
+  - Read text from native Windows dialogs during an agent workflow
+  - Build RPA steps that click named controls instead of screen coordinates

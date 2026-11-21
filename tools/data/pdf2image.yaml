@@ -1,0 +1,26 @@
+name: pdf2image
+description: Python module that wraps pdftoppm and pdftocairo to turn PDF pages into PIL Image objects. pdf2image is a common first step before OCR, vision models, and document RAG pipelines that need page images instead of raw PDF bytes.
+tagline: Convert PDF pages to PIL images via Poppler
+
+github_url: https://github.com/Belval/pdf2image
+website_url: https://github.com/Belval/pdf2image
+docs_url: https://belval.github.io/pdf2image
+install_command: pip install pdf2image
+
+category: Data
+tags: [python, pdf, images, poppler, ocr, document-processing, pil]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Vision models, OCR, and page-level RAG need raster images, not PDF operators.
+  Calling Poppler by hand is messy across OSes. pdf2image wraps pdftoppm and
+  pdftocairo so Python code can convert paths or bytes into PIL images with
+  DPI, page range, and thread controls.
+
+use_cases:
+  - Rasterize PDF pages before sending them to a vision LLM or OCR engine
+  - Build a document RAG ingest step that stores one image per page
+  - Convert selected page ranges at a chosen DPI for thumbnail previews
+  - Turn PDF bytes from an upload into PIL images without writing temp files

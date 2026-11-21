@@ -1,0 +1,26 @@
+name: Hammerspoon
+description: macOS desktop automation app scripted in Lua. Hammerspoon binds hotkeys, watches windows and USB devices, talks to the OS via Lua bridges, and lets you build local automations that agents and power users can trigger from the keyboard.
+tagline: macOS desktop automation scripted in Lua
+
+github_url: https://github.com/Hammerspoon/hammerspoon
+website_url: https://www.hammerspoon.org
+docs_url: https://www.hammerspoon.org/docs/
+install_command: brew install --cask hammerspoon
+
+category: Dev Tools
+tags: [macos, lua, automation, hotkeys, window-management, desktop]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  macOS Shortcuts and AppleScript cover some GUI tasks but are awkward for
+  window layout, hotkeys, and OS event hooks. Hammerspoon gives a Lua runtime
+  with deep OS bridges so you can script window tiling, USB-triggered workflows,
+  and local agent helpers without shipping a full native app.
+
+use_cases:
+  - Bind hotkeys that tile windows around a local LLM or IDE session
+  - Trigger a Lua watcher when a GPU dock or USB device is plugged in
+  - Expose a local HTTP or socket helper that an agent can call to move windows
+  - Replace fragile AppleScript GUI clicks with Lua OS APIs
