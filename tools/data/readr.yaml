@@ -1,0 +1,26 @@
+name: readr
+description: Fast rectangular file reader for R. readr loads CSV, TSV, and fixed-width files into tibbles with type guessing, progress, and reproducible column specs so data ingest is faster and less error-prone than base read.csv.
+tagline: Read flat files into R quickly and reproducibly
+
+github_url: https://github.com/tidyverse/readr
+website_url: https://readr.tidyverse.org
+docs_url: https://readr.tidyverse.org
+install_command: install.packages("readr")
+
+category: Data
+tags: [r, tidyverse, csv, data-ingest, tsv, parsing]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Base R file readers are slow on large CSVs and silently coerce types.
+  readr streams rectangular text into tibbles with explicit column specs,
+  locale handling, and write helpers so ML datasets load the same way
+  every run.
+
+use_cases:
+  - Load experiment CSVs into tibbles with stable column types
+  - Write typed specs so production ingest matches local notebooks
+  - Read large TSV feature dumps without base R bottlenecks
+  - Parse locale-specific numbers and dates from partner data files
