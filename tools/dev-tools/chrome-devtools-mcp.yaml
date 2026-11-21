@@ -1,0 +1,27 @@
+name: Chrome DevTools MCP
+description: An MCP server and CLI that lets coding agents control a live Chrome browser with DevTools, including traces, network, console, screenshots, and Puppeteer automation.
+tagline: Chrome DevTools for coding agents
+
+github_url: https://github.com/ChromeDevTools/chrome-devtools-mcp
+website_url: https://developer.chrome.com/docs/devtools/agents
+docs_url: https://github.com/ChromeDevTools/chrome-devtools-mcp
+
+install_command: npm install chrome-devtools-mcp
+
+category: Dev Tools
+tags: [mcp, chrome, browser, debugging, puppeteer, agents, npm]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Coding agents guess at frontend bugs from source alone, without a real browser,
+  network waterfall, or performance trace. Chrome DevTools MCP exposes live Chrome
+  to MCP clients so agents can inspect pages, record traces, read console errors,
+  and drive reliable Puppeteer actions instead of screenshot-only automation.
+
+use_cases:
+  - Let Cursor, Claude, or Copilot debug a web app in a live Chrome tab
+  - Record a DevTools performance trace and extract insights for a slow page
+  - Inspect network requests and source-mapped console errors during agent-driven QA
+  - Automate UI flows with Puppeteer waits instead of brittle screenshot loops

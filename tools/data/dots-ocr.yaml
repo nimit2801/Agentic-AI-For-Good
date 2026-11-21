@@ -1,0 +1,25 @@
+name: dots.ocr
+description: A multilingual document layout parsing vision-language model that extracts text, tables, and structure from documents and can convert charts and diagrams into SVG.
+tagline: Multilingual document parsing VLM
+
+github_url: https://github.com/studio-dots-ai/dots.ocr
+website_url: https://huggingface.co/rednote-hilab/dots.ocr
+docs_url: https://github.com/studio-dots-ai/dots.ocr
+
+category: Data
+tags: [ocr, vision, documents, multilingual, vllm, layout, pdf]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Document parsers often fail on mixed scripts, messy layouts, and graphics that
+  are not plain text. dots.ocr is a compact vision-language model for multilingual
+  document parsing, layout extraction, web screens, scene text, and chart-to-SVG
+  conversion without a stack of language-specific OCR engines.
+
+use_cases:
+  - Parse multilingual PDFs and scans into structured text and layout for RAG corpora
+  - Convert charts and diagrams in documents into SVG for downstream editing
+  - Spot scene text and web-screen content with a single OCR-focused VLM
+  - Serve dots.ocr or dots.mocr through vLLM for batch document parsing

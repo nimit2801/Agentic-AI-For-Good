@@ -1,0 +1,25 @@
+name: CSM
+description: Sesame's Conversational Speech Model, a Llama-backed generator that produces RVQ audio codes from text and audio context for natural multi-speaker dialogue.
+tagline: Conversational speech generation from Sesame
+
+github_url: https://github.com/SesameAILabs/csm
+website_url: https://www.sesame.com/research/crossing_the_uncanny_valley_of_voice
+docs_url: https://huggingface.co/sesame/csm-1b
+
+category: Other
+tags: [speech, tts, audio, llama, conversational, sesame]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Most TTS systems read isolated sentences with no speaker continuity, so dialogue
+  sounds like concatenated clips. CSM generates conversational speech from text and
+  prior audio context using a Llama backbone and a Mimi audio decoder, which keeps
+  speaker identity and turn-taking across a conversation.
+
+use_cases:
+  - Generate a two-speaker dialogue clip with per-speaker context segments
+  - Produce short spoken lines from text using the CSM-1B Hugging Face checkpoint
+  - Prototype a voice agent that conditions on previous utterances instead of cold TTS
+  - Run CSM through Transformers once you need a conversational speech backend

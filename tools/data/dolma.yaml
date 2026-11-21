@@ -1,0 +1,28 @@
+name: Dolma
+description: Allen AI's open 3-trillion-token pretraining corpus plus a high-performance toolkit for tagging, filtering, and deduplicating large language-modeling datasets.
+tagline: Open LLM pretraining data and curation toolkit
+
+github_url: https://github.com/allenai/dolma
+website_url: https://allenai.github.io/dolma/
+docs_url: https://github.com/allenai/dolma
+
+install_command: pip install dolma
+
+category: Data
+tags: [python, datasets, pretraining, llm, allenai, curation]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  LLM pretraining needs huge, inspectable web-scale corpora and a way to filter
+  them, but most large datasets are closed and curation jobs do not scale on a
+  laptop. Dolma publishes a 3-trillion-token open corpus and a parallel toolkit
+  with built-in taggers and Bloom-filter dedup so teams can curate training data
+  on one machine, a cluster, or S3.
+
+use_cases:
+  - Download the Dolma corpus from Hugging Face as an open OLMo-style pretraining mix
+  - Run Gopher, C4, and OpenWebText-style taggers over a custom web crawl
+  - Deduplicate billions of documents with the built-in Rust Bloom filter
+  - Build a portable data-curation pipeline that reads from local disk or S3
