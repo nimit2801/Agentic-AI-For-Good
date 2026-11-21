@@ -1,0 +1,27 @@
+name: MCP TypeScript SDK
+description: The official TypeScript SDK for Model Context Protocol servers and clients, used to implement tools, resources, and prompts in Node.js and web runtimes.
+tagline: Official TypeScript SDK for MCP
+
+github_url: https://github.com/modelcontextprotocol/typescript-sdk
+website_url: https://ts.sdk.modelcontextprotocol.io/v2
+docs_url: https://github.com/modelcontextprotocol/typescript-sdk
+
+install_command: npm install @modelcontextprotocol/sdk
+
+category: Dev Tools
+tags: [typescript, mcp, sdk, nodejs, agents, tools]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Node and TypeScript agent apps need a maintained protocol implementation, not
+  ad-hoc JSON-RPC. This SDK is the official TypeScript MCP stack for servers and
+  clients, so you can register tools and resources and talk to any MCP host
+  without reimplementing the wire protocol.
+
+use_cases:
+  - Ship an MCP server from a Node.js service that coding agents can call
+  - Build a TypeScript MCP client inside a custom agent host or IDE plugin
+  - Expose tools and prompts to Claude Desktop, Cursor, or other MCP hosts
+  - Share one SDK across server and client code in a TypeScript monorepo

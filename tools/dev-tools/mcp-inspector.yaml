@@ -1,0 +1,27 @@
+name: MCP Inspector
+description: Official developer tools for inspecting MCP servers, with a web UI, CLI, and TUI so you can exercise tools, resources, and auth during development and CI.
+tagline: Inspect and debug MCP servers
+
+github_url: https://github.com/modelcontextprotocol/inspector
+website_url: https://modelcontextprotocol.io/docs/2026-07-28/tools/inspector
+docs_url: https://github.com/modelcontextprotocol/inspector
+
+install_command: npm install @modelcontextprotocol/inspector
+
+category: Dev Tools
+tags: [mcp, debugging, cli, tui, typescript, agents]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  MCP servers fail in opaque ways when you only test them through a chat host.
+  Inspector talks to a server directly through a web UI, CLI, or TUI so you can
+  call tools, check resources, and automate protocol tests in CI without a full
+  agent session.
+
+use_cases:
+  - Open the Inspector web UI against a local MCP server while implementing tools
+  - Run the CLI in CI to call tools and assert protocol responses
+  - Use the TUI to step through resources and prompts on a remote server
+  - Debug OAuth and stdio env secrets without attaching a production chat host

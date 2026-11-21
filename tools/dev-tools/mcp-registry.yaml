@@ -1,0 +1,25 @@
+name: MCP Registry
+description: A community registry API for discovering and publishing Model Context Protocol servers, acting as an app store that MCP clients can query.
+tagline: App store API for MCP servers
+
+github_url: https://github.com/modelcontextprotocol/registry
+website_url: https://registry.modelcontextprotocol.io/docs
+docs_url: https://github.com/modelcontextprotocol/registry
+
+category: Dev Tools
+tags: [mcp, registry, discovery, api, golang, agents]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  MCP clients otherwise hardcode server lists or scrape READMEs, so discovery
+  does not scale. The MCP Registry is a shared API where publishers list servers
+  and clients fetch a validated catalog, closer to an app store than a gist of
+  npx commands.
+
+use_cases:
+  - Publish an MCP server so clients can discover it through the registry API
+  - Query the live registry from an MCP host instead of maintaining a local allowlist
+  - Run a local registry with Docker Compose while developing client integrations
+  - Validate server metadata against the registry schema before a public listing
