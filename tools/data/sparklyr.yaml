@@ -1,0 +1,25 @@
+name: sparklyr
+description: R interface to Apache Spark. sparklyr lets R users connect to Spark clusters, dplyr-pipe transformations, and MLlib pipelines so large-scale feature engineering and model training stay in the tidyverse workflow instead of leaving R for PySpark.
+tagline: R interface to Apache Spark
+
+github_url: https://github.com/sparklyr/sparklyr
+website_url: https://spark.posit.co/
+docs_url: https://spark.posit.co/
+install_command: install.packages("sparklyr")
+
+category: Data
+tags: [r, spark, dplyr, ml-pipelines, distributed, posit]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  R teams often drop to PySpark or spark-submit when data no longer fits
+  memory. sparklyr keeps dplyr verbs, Spark connections, and MLlib in R so
+  feature pipelines and distributed training stay in one language.
+
+use_cases:
+  - Connect R to a Spark cluster and dplyr-filter a large feature table
+  - Train an MLlib pipeline from R without rewriting in PySpark
+  - Copy Spark tables to and from R data frames for local diagnostics
+  - Run distributed feature engineering from an R Markdown report
