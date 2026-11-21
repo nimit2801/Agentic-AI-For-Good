@@ -1,0 +1,26 @@
+name: mice
+description: Multiple imputation by chained equations for R. mice fills missing values with plausible draws, runs analyses on each complete set, and pools estimates so incomplete experiment tables do not force drop-row bias.
+tagline: Multivariate imputation by chained equations
+
+github_url: https://github.com/amices/mice
+website_url: https://amices.org/mice/
+docs_url: https://amices.org/mice/
+install_command: install.packages("mice")
+
+category: Data
+tags: [r, imputation, missing-data, statistics, chained-equations, cran]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Dropping incomplete rows biases ML and stats results. mice specifies
+  a conditional model per column, imputes multiple complete datasets,
+  and pools estimates so missing feature and survey fields can be
+  handled with documented uncertainty.
+
+use_cases:
+  - Impute missing covariates before fitting a regression
+  - Compare complete-case vs multiply-imputed experiment metrics
+  - Generate several completed tables for sensitivity analysis
+  - Pool model coefficients across imputed training sets

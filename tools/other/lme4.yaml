@@ -1,0 +1,26 @@
+name: lme4
+description: Linear mixed-effects models for R. lme4 fits LMMs and GLMMs with sparse Eigen backends so clustered, longitudinal, and nested experiment data can use random intercepts and slopes without leaving R.
+tagline: Mixed-effects models in R
+
+github_url: https://github.com/lme4/lme4
+website_url: https://cran.r-project.org/package=lme4
+docs_url: https://cran.r-project.org/web/packages/lme4/lme4.pdf
+install_command: install.packages("lme4")
+
+category: Other
+tags: [r, mixed-models, statistics, glmm, longitudinal, cran]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Independent-error models break on nested subjects, sites, or runs.
+  lme4 estimates fixed effects plus random intercepts and slopes for
+  grouped data, which is the standard way to analyze repeated measures
+  and hierarchical experiments in R.
+
+use_cases:
+  - Fit random-intercept models for users nested in experiments
+  - Analyze longitudinal metrics with random slopes over time
+  - Use GLMMs for binary or count outcomes with grouping factors
+  - Compare nested mixed models with likelihood-ratio tests
