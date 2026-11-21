@@ -1,0 +1,26 @@
+name: tidyr
+description: Tidyverse package for reshaping messy tables in R. tidyr pivots, nests, unnests, and separates columns so you can get data into tidy form before dplyr, ggplot2, or modeling steps.
+tagline: Pivot, nest, and tidy messy tables in R
+
+github_url: https://github.com/tidyverse/tidyr
+website_url: https://tidyr.tidyverse.org
+docs_url: https://tidyr.tidyverse.org
+install_command: install.packages("tidyr")
+
+category: Data
+tags: [r, tidyverse, reshape, pivot, nested-data, data-wrangling]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Spreadsheet-style tables often have values in column names, nested list
+  columns, or concatenated fields. tidyr's pivot, nest, unnest, and separate
+  verbs turn that mess into tidy rows so downstream dplyr and modeling code
+  can assume one observation per row.
+
+use_cases:
+  - Pivot wide hyperparameter grids into long metric tables for plotting
+  - Unnest list-columns of model predictions into one row per example
+  - Separate packed identifier strings into dataset, split, and run columns
+  - Nest grouped experiment rows for per-group model fits

@@ -1,0 +1,26 @@
+name: dplyr
+description: Grammar of data manipulation for R. dplyr provides filter, select, mutate, summarise, and join verbs that work on data frames, tibbles, and remote tables so analysis code reads like a pipeline instead of nested base R.
+tagline: A grammar of data manipulation for R
+
+github_url: https://github.com/tidyverse/dplyr
+website_url: https://dplyr.tidyverse.org
+docs_url: https://dplyr.tidyverse.org
+install_command: install.packages("dplyr")
+
+category: Data
+tags: [r, tidyverse, data-wrangling, data-frames, sql, pipelines]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Base R subsetting and aggregation is verbose and easy to get wrong on grouped
+  data. dplyr gives consistent verbs for filter, mutate, summarise, and joins
+  that work in memory or against databases via dbplyr, so ML feature tables and
+  experiment logs can be shaped in readable pipelines.
+
+use_cases:
+  - Filter and aggregate experiment metrics by run, model, and split
+  - Join feature tables before handing data to an R modeling package
+  - Mutate derived columns for training labels and time windows
+  - Push dplyr pipelines to a database through dbplyr without rewriting SQL

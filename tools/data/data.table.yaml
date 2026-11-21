@@ -1,0 +1,26 @@
+name: data.table
+description: High-performance extension of R data.frame. data.table adds fast keyed subsetting, grouping, rolling joins, and in-place updates so large tabular jobs stay in R without copying the whole table on every mutate.
+tagline: Fast, in-place data frames for R
+
+github_url: https://github.com/Rdatatable/data.table
+website_url: https://r-datatable.com
+docs_url: https://rdatatable.gitlab.io/data.table/
+install_command: install.packages("data.table")
+
+category: Data
+tags: [r, data-frames, performance, grouping, joins, in-place]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  Base data.frames copy on modify and slow down on large grouped aggregations.
+  data.table uses a concise DT[i, j, by] syntax with keys, GForce grouping, and
+  rolling joins so multi-million-row feature tables and logs can be wrangled
+  in memory without a Spark hop.
+
+use_cases:
+  - Aggregate multi-million-row event logs by key without copying the table
+  - Rolling-join time series features onto a sparse event table
+  - Read large CSVs with fread and write them back with fwrite
+  - In-place update of a training table column inside an R pipeline
