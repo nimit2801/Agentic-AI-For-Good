@@ -1,0 +1,23 @@
+name: Zendriver
+description: Zendriver is an async-first Python browser automation framework based on nodriver. It talks Chrome DevTools Protocol without a WebDriver binary, aiming for faster, less-detectable scraping and automation than Selenium or stock Playwright.
+tagline: Async undetectable Python browser automation via CDP
+github_url: https://github.com/cdpdriver/zendriver
+website_url: https://zendriver.dev
+docs_url: https://zendriver.dev
+install_command: pip install zendriver
+category: Dev Tools
+tags: [python, browser-automation, scraping, cdp, async, undetectable, nodriver]
+pricing: free
+is_open_source: true
+license: AGPL-3.0
+problem_solved: |
+  Selenium and Playwright spawn WebDriver stacks that anti-bot systems detect
+  and that add latency. Zendriver drives Chrome over CDP from async Python with
+  no WebDriver binary, so scrapers and agents can automate pages with a lighter
+  fingerprint and higher concurrency than classic driver-based tools.
+use_cases:
+  - Scrape JavaScript-heavy sites from async Python without a Selenium driver
+  - Automate forms and clicks in Chrome with a CDP-only control plane
+  - Run undetectable browsing workers in Docker with the official Zendriver image
+  - Replace nodriver scripts with a maintained async fork plus Docker support
+  - Collect pages that block WebDriver-based Selenium or Playwright sessions

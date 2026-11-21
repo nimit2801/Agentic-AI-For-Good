@@ -1,0 +1,23 @@
+name: DrissionPage
+description: DrissionPage is a Python web automation library that can control a real browser and send raw packets in one API. It is used for scraping and testing when teams want browser-like interaction without living entirely inside Selenium or Playwright.
+tagline: Python browser automation that also speaks raw packets
+github_url: https://github.com/g1879/DrissionPage
+website_url: https://DrissionPage.cn/
+docs_url: https://DrissionPage.cn/
+install_command: pip install DrissionPage
+category: Dev Tools
+tags: [python, browser-automation, scraping, packets, chrome, testing]
+pricing: free
+is_open_source: true
+license: Other
+problem_solved: |
+  Teams often juggle Selenium for the browser and requests for HTTP, then lose
+  cookies and sessions between the two. DrissionPage gives one Python API that
+  can drive a real browser or send packets with the same session, so scrapers
+  and tests share logins, cookies, and headers without switching libraries.
+use_cases:
+  - Control Chrome from Python for scraping pages that need a real browser
+  - Reuse the same login session for both browser actions and packet-level requests
+  - Write automation scripts that mix DOM clicks with direct HTTP calls
+  - Test web apps in Python without a full Selenium or Playwright stack
+  - Collect data from sites that require cookies set by an interactive browser
