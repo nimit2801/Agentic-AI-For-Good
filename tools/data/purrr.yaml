@@ -1,0 +1,26 @@
+name: purrr
+description: Functional programming tools for R. purrr maps, walks, and reduces over lists and vectors with consistent type-stable helpers so you can replace for-loops in data and model pipelines without nested apply calls.
+tagline: Map, reduce, and walk over lists in R
+
+github_url: https://github.com/tidyverse/purrr
+website_url: https://purrr.tidyverse.org/
+docs_url: https://purrr.tidyverse.org/
+install_command: install.packages("purrr")
+
+category: Data
+tags: [r, tidyverse, functional, map, lists, iteration]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Iterating over nested lists of models, files, or splits in R often means
+  messy for-loops or inconsistent sapply types. purrr's map family returns
+  predictable types, supports predicates, and composes with tidy pipelines so
+  batch model fits and nested experiment objects stay readable.
+
+use_cases:
+  - Map a fit function over a list of dataset splits and collect metrics
+  - Walk a directory of YAML configs and load each into a named list
+  - Reduce a list of partial feature tables into one bound data frame
+  - Keep list-column model objects type-stable inside a dplyr mutate
