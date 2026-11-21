@@ -1,0 +1,27 @@
+name: mcp-use
+description: A TypeScript framework and CLI for building, inspecting, and shipping MCP servers, ChatGPT plugins, and Claude connectors with typed tools and a built-in inspector.
+tagline: TypeScript framework for MCP apps
+
+github_url: https://github.com/mcp-use/mcp-use
+website_url: https://mcp-use.com
+docs_url: https://docs.mcp-use.com/v2/typescript/getting-started/welcome
+
+install_command: npm install mcp-use
+
+category: Dev Tools
+tags: [typescript, mcp, framework, agents, chatgpt, claude]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Shipping an MCP server plus ChatGPT or Claude UI still means stitching SDKs,
+  inspectors, and deploy glue. mcp-use is a typed TypeScript framework with a
+  scaffold CLI, inspector, and first-class agent path so you can build and test
+  MCP apps in one project.
+
+use_cases:
+  - Scaffold an MCP server with create-mcp-use-app and iterate in the inspector
+  - Build ChatGPT plugins and Claude connectors from the same typed tool definitions
+  - Run the built-in inspector against local MCP apps during development
+  - Deploy MCP servers with the Manufact hosting path when you outgrow localhost

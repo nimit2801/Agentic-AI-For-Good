@@ -1,0 +1,27 @@
+name: Context7
+description: Upstash service that fetches current, version-specific library docs and code examples into coding agents via CLI skills or an MCP server, reducing stale API hallucinations.
+tagline: Up-to-date docs for coding agents
+
+github_url: https://github.com/upstash/context7
+website_url: https://context7.com
+docs_url: https://context7.com/docs/resources/all-clients
+
+install_command: npm install ctx7
+
+category: Dev Tools
+tags: [mcp, documentation, agents, upstash, cli, npm]
+pricing: freemium
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Coding agents invent APIs from outdated training data, so generated code targets
+  last year's package versions. Context7 pulls current, version-specific docs and
+  examples from the source into the agent context through a CLI skill or MCP
+  server, so answers match the library you actually installed.
+
+use_cases:
+  - Ask an agent to implement a Next.js or Supabase flow with live Context7 docs
+  - Pin a library id and version in the prompt so docs skip fuzzy matching
+  - Install the ctx7 CLI skill in Cursor, Claude Code, or OpenCode
+  - Point an MCP client at mcp.context7.com with an API key for native doc tools
