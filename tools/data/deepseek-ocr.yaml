@@ -1,0 +1,25 @@
+name: DeepSeek-OCR
+description: A vision-language OCR model from DeepSeek that compresses document pages into visual tokens so LLMs can read dense text, tables, and layouts with far fewer context tokens.
+tagline: OCR via optical context compression
+
+github_url: https://github.com/deepseek-ai/DeepSeek-OCR
+website_url: https://huggingface.co/deepseek-ai/DeepSeek-OCR
+docs_url: https://github.com/deepseek-ai/DeepSeek-OCR
+
+category: Data
+tags: [ocr, vision, llm, documents, deepseek, vllm, pdf]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Feeding scanned pages into an LLM as text or raw images either loses layout or
+  burns huge context windows. DeepSeek-OCR treats pages as optical compression,
+  encoding dense documents into compact visual tokens so models can recover text,
+  tables, and structure without a separate OCR stack or full-page token blowup.
+
+use_cases:
+  - Run vLLM inference on document images to extract text with optical compression
+  - Convert PDFs into model-ready visual tokens for RAG or long-context reading
+  - Benchmark vision-encoder token efficiency against conventional OCR pipelines
+  - Batch-process scanned reports where tables and multi-column layout matter

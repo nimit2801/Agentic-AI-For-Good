@@ -1,0 +1,28 @@
+name: OpenWorker
+description: Andrew Ng's open-source AI coworker, a local-first desktop app and harness SDK for research, writing, code review, and governed agent tasks with human approvals.
+tagline: Local-first AI coworker with a harness SDK
+
+github_url: https://github.com/andrewyng/openworker
+website_url: https://openworker.com
+docs_url: https://github.com/andrewyng/openworker
+
+install_command: npm install @openworkerai/harness-sdk
+
+category: Agents
+tags: [agents, desktop, typescript, rust, harness, local-first, approvals]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Most agent products either run fully in the cloud or give a model unconstrained
+  shell access. OpenWorker keeps the agent loop, keys, and connectors on your
+  machine, gates actions behind approvals and sandboxes, and ships a harness SDK
+  so you can embed the same governed agent loop in your own desktop or web app.
+
+use_cases:
+  - Turn a folder of meeting notes into a brief with explicit write approvals before files change
+  - Review code and dependencies, then apply fixes only after a human signs off
+  - Connect GitHub, Slack, email, and MCP tools so an on-device coworker can work across apps
+  - Embed the OpenWorker harness SDK in a custom desktop or web product that needs agent loops
+  - Run scheduled briefs and reports locally with transcripts you can audit later

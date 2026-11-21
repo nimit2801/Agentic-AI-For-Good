@@ -1,0 +1,27 @@
+name: Vector
+description: A high-performance observability data pipeline that collects, transforms, and routes logs and metrics from any source to any destination so teams control cost, enrichment, and vendor lock-in.
+tagline: End-to-end observability data pipeline
+
+github_url: https://github.com/vectordotdev/vector
+website_url: https://vector.dev
+docs_url: https://vector.dev/docs
+
+category: Monitoring
+tags: [rust, observability, logs, metrics, pipeline, datadog, opentelemetry]
+pricing: free
+is_open_source: true
+license: MPL-2.0
+
+problem_solved: |
+  Observability stacks often run a different agent per vendor, then ship raw logs
+  and metrics at full volume. That drives cost, lock-in, and agent fatigue when
+  you add sinks or change providers. Vector is a single Rust agent and aggregator
+  that collects, transforms, and routes logs and metrics to any backend, with
+  filtering and enrichment at the edge so you keep control of the data path.
+
+use_cases:
+  - Collect host and container logs once, then fan them out to multiple vendors without a second agent
+  - Filter, redact, and sample high-volume logs before they leave the cluster to cut observability spend
+  - Migrate from one metrics or log vendor to another without rewriting every application exporter
+  - Enrich application logs with Kubernetes metadata and route traces via OpenTelemetry sources
+  - Run Vector as an aggregator that buffers, transforms, and forwards telemetry from many edge agents

@@ -1,0 +1,27 @@
+name: Chandra
+description: An OCR model from Datalab that converts images and PDFs into structured HTML, Markdown, or JSON while preserving tables, forms, handwriting, and layout.
+tagline: Layout-aware OCR for complex documents
+
+github_url: https://github.com/datalab-to/chandra
+website_url: https://www.datalab.to
+docs_url: https://documentation.datalab.to
+
+install_command: pip install chandra-ocr
+
+category: Data
+tags: [python, ocr, pdf, documents, tables, handwriting, datalab]
+pricing: freemium
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Generic OCR drops checkboxes, messy tables, handwriting, and reading order, so
+  downstream RAG and extraction jobs get unusable text. Chandra is a document OCR
+  model that emits HTML, Markdown, or JSON with layout, and it handles forms,
+  math, multilingual pages, and handwriting that simpler extractors miss.
+
+use_cases:
+  - Convert PDFs with complex tables into Markdown or HTML that keeps cell structure
+  - Extract handwritten forms and checkboxes into structured JSON for downstream systems
+  - Build a multilingual OCR pipeline covering 90-plus languages including math layouts
+  - Run Chandra locally with vLLM or Hugging Face, or use the Datalab hosted API
