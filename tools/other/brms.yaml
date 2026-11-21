@@ -1,0 +1,25 @@
+name: brms
+description: Bayesian regression models in R fitted with Stan. brms specifies GLMMs, nonlinear, and multivariate models in lme4-like formulas so teams can run MCMC, posterior predictive checks, and leave-one-out comparison without writing Stan code by hand.
+tagline: Bayesian multilevel models in R via Stan
+
+github_url: https://github.com/paul-buerkner/brms
+website_url: https://paulbuerkner.com/brms/
+docs_url: https://paulbuerkner.com/brms/
+install_command: install.packages("brms")
+
+category: Other
+tags: [r, bayesian, stan, multilevel, mcmc, statistics]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Writing Stan by hand for every hierarchical regression is slow and error
+  prone. brms maps formula syntax to Stan programs so mixed, nonlinear, and
+  multivariate Bayesian models can be fit, checked, and compared from R.
+
+use_cases:
+  - Fit Bayesian GLMMs for clustered experiment outcomes
+  - Run posterior predictive checks on a nonlinear growth model
+  - Compare models with leave-one-out information criteria
+  - Estimate multivariate outcomes without hand-written Stan

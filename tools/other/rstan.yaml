@@ -1,0 +1,25 @@
+name: rstan
+description: R interface to Stan for Bayesian inference. rstan compiles Stan models, runs HMC/NUTS sampling, and returns posterior draws in R so probabilistic ML and hierarchical experiment models can be fit without leaving the R workflow.
+tagline: R interface to Stan
+
+github_url: https://github.com/stan-dev/rstan
+website_url: https://mc-stan.org
+docs_url: https://mc-stan.org/rstan/
+install_command: install.packages("rstan")
+
+category: Other
+tags: [r, stan, bayesian, mcmc, hmc, probabilistic]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Stan models need a way to compile, sample, and inspect posteriors from R.
+  rstan wraps the Stan compiler and NUTS sampler so custom Bayesian models
+  return draws, diagnostics, and generated quantities in native R objects.
+
+use_cases:
+  - Compile and sample a custom Stan model from an R script
+  - Inspect HMC divergences and R-hat from R after a fit
+  - Extract posterior draws for downstream plotting in ggplot2
+  - Fit hierarchical Bayesian models without leaving the R toolchain
