@@ -1,728 +1,436 @@
 {
-  "generatedAt": "2026-11-20T18:40:18.253Z",
+  "generatedAt": "2026-11-21T18:40:00Z",
   "windowDays": 7,
-  "summary": "A packed model week: GPT-6.2 Astra/Sol, Gemini 4 Neon, and Qwen4-Max all landed, while Anthropic went public. The builder conversation underneath the launches is about harnesses, not checkpoints. FrontierHarness, Claude Code’s verification note, and Harvard’s review-bottleneck paper all say the same thing: generation is cheap, checking is not. Local stacks answered with ggml 1.0, Unsloth quants, and Hugging Face harness adapters that teach Qwen3.8-27B to waste fewer tool calls.",
+  "summary": "The model flood is still the headline: GPT-6.2 Astra/Sol, Gemini 4 Neon, and Qwen4-Max all landed, then Inkling 2 Mini showed up as the local-weight alternative people actually tried. Underneath the launches, the builder conversation is about review, verification, and isolation. Harvard, the Claude Code team, and a 370-point essay all say generation is cheap and checking is not. Anthropic is now a public company. OpenCode added a browser surface. Nous put Hermes Agent in Microsoft Teams. Simple Bench already punched a hole in the Astra/Sol launch numbers.",
   "sourceStats": {
-    "items": 31,
+    "items": 34,
     "sources": {
-      "Hacker News": 19,
+      "Hacker News": 18,
+      "OpenAI": 1,
+      "Google AI": 2,
+      "Anthropic": 2,
+      "Qwen": 1,
+      "Microsoft": 1,
+      "Nous Research": 1,
       "Hugging Face": 3,
-      "Anthropic": 1,
-      "Reddit": 6,
-      "GitHub": 2
+      "GitHub": 5
     }
   },
   "highlights": [
     {
-      "topics": [
-        "Major labs",
-        "Coding agents",
-        "Evaluation"
-      ],
+      "topics": ["Major labs", "Coding agents", "Evaluation"],
       "title": "GPT-6.2 Astra and Sol",
       "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
       "source": "Hacker News",
       "publishedAt": "2026-11-17T17:46:43Z",
       "date": "2026-11-17T17:46:43Z",
-      "points": 1346,
-      "meta": "1,346 pts · 862 comments",
-      "score": 1346,
-      "why": "OpenAI’s new Astra/Sol pair is the coding and long-horizon baseline everyone is A/B testing this week. Re-benchmark agent loops before last week’s GPT-6 numbers calcify in your stack."
+      "points": 1347,
+      "meta": "1,347 pts · 863 comments",
+      "score": 1347,
+      "why": "OpenAI's new Astra/Sol pair is the coding and long-horizon baseline everyone is A/B testing this week. Re-benchmark agent loops before last week's GPT-6 numbers calcify in your stack."
     },
     {
-      "topics": [
-        "Major labs",
-        "Coding agents",
-        "Tool use"
-      ],
-      "title": "Gemini 4 Neon",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
-      "source": "Hacker News",
-      "publishedAt": "2026-11-18T21:34:07Z",
-      "date": "2026-11-18T21:34:07Z",
-      "points": 1042,
-      "meta": "1,042 pts · 774 comments",
-      "score": 1042,
-      "why": "Google’s frontier drop this week, with a 1M context window and a claim on steerability. It is already showing up as #1 on independent engineering indexes, which is what coding-agent buyers actually watch."
-    },
-    {
-      "topics": [
-        "Major labs"
-      ],
-      "title": "Anthropic’s Nasdaq debut",
-      "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
-      "source": "Hacker News",
-      "publishedAt": "2026-11-19T17:02:40Z",
-      "date": "2026-11-19T17:02:40Z",
-      "points": 1121,
-      "meta": "1,121 pts · 2,265 comments",
-      "score": 1121,
-      "why": "Highest-comment story of the week. Public-market Anthropic changes capital, capacity, and product pressure on Claude Code. Builders should expect more enterprise packaging, not less."
-    },
-    {
-      "topics": [
-        "Open weights",
-        "Major labs",
-        "Coding agents"
-      ],
-      "title": "Qwen4-Max",
-      "url": "https://qwen.ai/blog?id=qwen4-max",
-      "source": "Hacker News",
-      "publishedAt": "2026-11-16T02:14:44Z",
-      "date": "2026-11-16T02:14:44Z",
-      "points": 883,
-      "meta": "883 pts · 485 comments",
-      "score": 883,
-      "why": "Alibaba’s Max drop is the price/perf story for tool-heavy agents. Weights stay closed for Max, with smaller Qwen4 open weights promised. Local builders are already asking where the 27B lands."
-    },
-    {
-      "topics": [
-        "Coding agents"
-      ],
+      "topics": ["Coding agents", "Open weights"],
       "title": "All AI-generated code should be Open Source",
       "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
       "source": "Hacker News",
       "publishedAt": "2026-11-15T14:46:58Z",
       "date": "2026-11-15T14:46:58Z",
-      "points": 1287,
-      "meta": "1,287 pts · 673 comments",
-      "score": 1287,
-      "why": "If agents emit most of the diff, licensing and liability shift with them. This is the week’s clearest fight over who owns agent-written code."
+      "points": 1288,
+      "meta": "1,288 pts · 673 comments",
+      "score": 1288,
+      "why": "Licensing of agent-written code is becoming a product and legal constraint, not a blog-post opinion. If your agents ship patches, this debate will show up in procurement."
     },
     {
-      "topics": [
-        "Coding agents",
-        "Tool use"
-      ],
-      "title": "Windows 11 is collecting data on which coding agents and developer tools you use",
+      "topics": ["Open weights", "Coding agents"],
+      "title": "Inkling 2 Mini",
+      "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+      "source": "Hacker News",
+      "publishedAt": "2026-11-20T20:12:19Z",
+      "date": "2026-11-20T20:12:19Z",
+      "points": 1254,
+      "meta": "1,254 pts · 252 comments",
+      "score": 1254,
+      "why": "Thinking Machines' small model is the local-weight drop people will actually try in harnesses this week. Hugging Face trending already has the base and Unsloth GGUF on top."
+    },
+    {
+      "topics": ["Major labs"],
+      "title": "Anthropic's Nasdaq debut",
+      "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
+      "source": "Hacker News",
+      "publishedAt": "2026-11-19T17:02:40Z",
+      "date": "2026-11-19T17:02:40Z",
+      "points": 1137,
+      "meta": "1,137 pts · 2,314 comments",
+      "score": 1137,
+      "why": "Highest-comment story of the week. Public-market Anthropic changes capital, capacity, and product pressure on Claude Code. Expect more enterprise packaging, not less."
+    },
+    {
+      "topics": ["Major labs", "Coding agents", "Tool use"],
+      "title": "Gemini 4 Neon",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "source": "Hacker News",
+      "publishedAt": "2026-11-18T21:34:07Z",
+      "date": "2026-11-18T21:34:07Z",
+      "points": 1057,
+      "meta": "1,057 pts · 775 comments",
+      "score": 1057,
+      "why": "Google's frontier drop this week, with a 1M context window. It is the other side of the dual-model routing decision for coding agents."
+    },
+    {
+      "topics": ["Open weights", "Major labs", "Coding agents"],
+      "title": "Qwen4-Max",
+      "url": "https://qwen.ai/blog?id=qwen4-max",
+      "source": "Hacker News",
+      "publishedAt": "2026-11-16T02:14:44Z",
+      "date": "2026-11-16T02:14:44Z",
+      "points": 884,
+      "meta": "884 pts · 485 comments",
+      "score": 884,
+      "why": "Alibaba's Max drop is the price/perf story for tool-heavy agents. Weights stay closed for Max, with smaller Qwen4 open weights promised."
+    },
+    {
+      "topics": ["Coding agents", "Tool use"],
+      "title": "Windows 11 is collecting data on which coding agents you use",
       "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
       "source": "Hacker News",
       "publishedAt": "2026-11-16T22:58:20Z",
       "date": "2026-11-16T22:58:20Z",
-      "points": 736,
-      "meta": "736 pts · 623 comments",
-      "score": 736,
-      "why": "Agent choice is now an OS telemetry surface, not just a CLI preference. Privacy and competitive-intel risk for anyone running local or cloud coding agents on Windows."
+      "points": 737,
+      "meta": "737 pts · 624 comments",
+      "score": 737,
+      "why": "OS-level telemetry on agent choice is a privacy and trust landmine if your product or your customers run on Windows desktops."
     },
     {
-      "topics": [
-        "Evaluation",
-        "Coding agents",
-        "Tool use"
-      ],
-      "title": "What is the best harness for each model?",
-      "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
-      "source": "Hacker News",
-      "publishedAt": "2026-11-17T14:53:43Z",
-      "date": "2026-11-17T14:53:43Z",
-      "points": 420,
-      "meta": "420 pts · 133 comments",
-      "score": 420,
-      "why": "The highest-signal eval story of the week: agent quality is harness times model, not model alone. Stop ranking raw checkpoints as if the runtime did not exist."
-    },
-    {
-      "topics": [
-        "Coding agents",
-        "Evaluation"
-      ],
-      "title": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
-      "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/",
-      "source": "Hacker News",
-      "publishedAt": "2026-11-17T21:16:12Z",
-      "date": "2026-11-17T21:16:12Z",
-      "points": 327,
-      "meta": "327 pts · 462 comments",
-      "score": 327,
-      "why": "Generation is cheap. Review, verification, and merge judgment are the scarce steps. Matches what the Claude Code team is saying in public about verification loops."
-    },
-    {
-      "topics": [
-        "Coding agents",
-        "Evaluation",
-        "Major labs"
-      ],
+      "topics": ["Coding agents", "Evaluation"],
       "title": "How the Claude Code team thinks about verification",
       "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
       "source": "Hacker News",
       "publishedAt": "2026-11-17T10:20:40Z",
       "date": "2026-11-17T10:20:40Z",
-      "points": 296,
-      "meta": "296 pts · 235 comments",
-      "score": 296,
-      "why": "First-party coding-agent ops: tests and review loops, not prompt magic. If you ship agents, this is the practice note to steal from."
+      "points": 297,
+      "meta": "297 pts · 235 comments",
+      "score": 297,
+      "why": "Primary-source playbook from the leading coding-agent team on tests, evals, and not trusting the model. This is the practical counterpart to the Harvard review-bottleneck paper."
     },
     {
-      "topics": [
-        "Open weights",
-        "Coding agents",
-        "Evaluation"
-      ],
-      "title": "Introducing harness adapters",
-      "url": "https://huggingface.co/blog/harness-adapters-at-scale",
-      "source": "Hugging Face",
-      "publishedAt": "2026-11-20T00:00:00Z",
-      "date": "2026-11-20T00:00:00Z",
-      "meta": "Hugging Face · Nov 20",
-      "score": 500,
-      "why": "LoRA adapters trained with RL inside pi, OpenCode, and Hermes on Qwen3.8-27B. Fewer tool calls, same or better accuracy. Cheapest way to specialize an open model to your harness."
-    },
-    {
-      "topics": [
-        "Major labs",
-        "Evaluation"
-      ],
-      "title": "Claude solves two open problems in the physics of black holes",
-      "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+      "topics": ["Coding agents", "Evaluation"],
+      "title": "Harvard: AI coding agents shifted the bottleneck to code review",
+      "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/",
       "source": "Hacker News",
-      "publishedAt": "2026-11-19T17:30:44Z",
-      "date": "2026-11-19T17:30:44Z",
-      "points": 543,
-      "meta": "543 pts · 260 comments",
-      "score": 543,
-      "why": "Anthropic’s science-agent claim in the same week as a viral Riemann thread. Useful as a long-horizon research-agent case study, and as a reminder that human interpretation still sits on top."
+      "publishedAt": "2026-11-17T21:16:12Z",
+      "date": "2026-11-17T21:16:12Z",
+      "points": 328,
+      "meta": "328 pts · 465 comments",
+      "score": 328,
+      "why": "Empirical backup that agent throughput is now gated by review, not generation. Eval and product design should target the check, not another prompt."
     },
     {
-      "topics": [
-        "Open weights",
-        "Coding agents"
-      ],
-      "title": "Ggml v1.0.0",
-      "url": "https://github.com/ggml-org/ggml/releases/tag/v1.0.0",
+      "topics": ["Coding agents", "Browser agents", "Tool use"],
+      "title": "OpenCode Browse",
+      "url": "https://opencode.ai/product/browse",
       "source": "Hacker News",
-      "publishedAt": "2026-11-14T02:28:29Z",
-      "date": "2026-11-14T02:28:29Z",
-      "points": 420,
-      "meta": "420 pts · 66 comments",
-      "score": 420,
-      "why": "The local-inference substrate under llama.cpp hit 1.0. If you run open-weight agents on-device, this is infrastructure, not trivia."
+      "publishedAt": "2026-11-16T21:20:37Z",
+      "date": "2026-11-16T21:20:37Z",
+      "points": 334,
+      "meta": "334 pts · 223 comments",
+      "score": 334,
+      "why": "Browser surface for a popular open coding-agent stack. Open harnesses are adding computer-use, not just terminal loops."
+    },
+    {
+      "topics": ["Major labs", "Coding agents", "Tool use"],
+      "title": "Nous Research partners with Microsoft to bring Hermes Agent to the enterprise",
+      "url": "https://nousresearch.com/hermes-enterprise-in-microsoft-teams",
+      "source": "Nous Research",
+      "publishedAt": "2026-11-18T14:00:00Z",
+      "date": "2026-11-18T14:00:00Z",
+      "meta": "Official · 18 Nov 2026",
+      "score": 180,
+      "why": "Hermes in Teams, Microsoft Store, and Azure, with isolated Container Apps sandboxes. Enterprise packaging of an open agent runtime, not another chatbot."
+    },
+    {
+      "topics": ["Evaluation", "Major labs"],
+      "title": "Astra 6.2 and Sol 6.2 flop at Simple Bench",
+      "url": "https://simple-bench.com/",
+      "source": "Hacker News",
+      "publishedAt": "2026-11-21T13:16:12Z",
+      "date": "2026-11-21T13:16:12Z",
+      "points": 128,
+      "meta": "128 pts · 113 comments",
+      "score": 128,
+      "why": "Front-page eval counterweight to the GPT-6.2 launch. Do not ship on press numbers alone."
     }
   ],
   "sourceSections": {
     "majorLabs": [
       {
-        "topics": [
-          "Major labs",
-          "Coding agents",
-          "Evaluation"
-        ],
-        "title": "GPT-6.2 Astra and Sol",
+        "title": "Introducing GPT-6.2 Astra and Sol",
         "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
-        "source": "Hacker News",
+        "source": "OpenAI",
         "publishedAt": "2026-11-17T17:46:43Z",
         "date": "2026-11-17T17:46:43Z",
-        "points": 1346,
-        "meta": "1,346 pts · 862 comments",
-        "score": 1346,
-        "why": "OpenAI’s new Astra/Sol pair is the coding and long-horizon baseline everyone is A/B testing this week. Re-benchmark agent loops before last week’s GPT-6 numbers calcify in your stack."
+        "meta": "Official · 1,347 HN pts",
+        "topics": ["Major labs", "Coding agents"],
+        "why": "Frontier plus everyday models for professional work, coding, and computer use. Default comparison set for agent harnesses this week."
       },
       {
-        "topics": [
-          "Major labs",
-          "Coding agents",
-          "Tool use"
-        ],
-        "title": "Gemini 4 Neon",
+        "title": "Introducing Gemini 4 Neon",
         "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
-        "source": "Hacker News",
+        "source": "Google AI",
         "publishedAt": "2026-11-18T21:34:07Z",
         "date": "2026-11-18T21:34:07Z",
-        "points": 1042,
-        "meta": "1,042 pts · 774 comments",
-        "score": 1042,
-        "why": "Google’s frontier drop this week, with a 1M context window and a claim on steerability. It is already showing up as #1 on independent engineering indexes, which is what coding-agent buyers actually watch."
+        "meta": "Official · 1,057 HN pts",
+        "topics": ["Major labs", "Coding agents"],
+        "why": "1M context, SWE and science claims, Gemini API plus Antigravity. The other flagship in dual-model routing."
       },
       {
-        "title": "Anthropic prices initial public offering",
-        "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+        "title": "Anthropic announces closing of IPO",
+        "url": "https://www.anthropic.com/news/ipo-close",
         "source": "Anthropic",
-        "publishedAt": "2026-11-18T23:30:09Z",
-        "date": "2026-11-18T23:30:09Z",
-        "points": 417,
-        "meta": "417 pts · 790 comments",
-        "score": 417,
-        "topics": [
-          "Major labs"
-        ],
-        "why": "Official pricing post behind the Nasdaq debut. Capital and chip-partner lock-in will shape Claude capacity for agent workloads."
+        "publishedAt": "2026-11-20T00:00:00Z",
+        "date": "2026-11-20T00:00:00Z",
+        "meta": "Official · Nasdaq ANT",
+        "topics": ["Major labs"],
+        "why": "Nasdaq listing plus a large concurrent private placement. Capital and compute for Claude coding agents just changed shape."
       },
       {
-        "topics": [
-          "Open weights",
-          "Major labs",
-          "Coding agents"
-        ],
         "title": "Qwen4-Max",
         "url": "https://qwen.ai/blog?id=qwen4-max",
-        "source": "Hacker News",
+        "source": "Qwen",
         "publishedAt": "2026-11-16T02:14:44Z",
         "date": "2026-11-16T02:14:44Z",
-        "points": 883,
-        "meta": "883 pts · 485 comments",
-        "score": 883,
-        "why": "Alibaba’s Max drop is the price/perf story for tool-heavy agents. Weights stay closed for Max, with smaller Qwen4 open weights promised. Local builders are already asking where the 27B lands."
+        "meta": "Official · 884 HN pts",
+        "topics": ["Major labs", "Open weights", "Coding agents"],
+        "why": "Closed Max weights, 1M context, long-horizon teammate positioning. Smaller Qwen4 open weights are the local follow-up to watch."
+      },
+      {
+        "title": "Claude solves two open problems in the physics of black holes",
+        "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+        "source": "Anthropic",
+        "publishedAt": "2026-11-19T17:30:44Z",
+        "date": "2026-11-19T17:30:44Z",
+        "meta": "565 pts · 272 comments",
+        "topics": ["Major labs", "Tool use", "Evaluation"],
+        "why": "Long-horizon scientific tool use as a capability demo. Treat it as a calibration point for research-agent marketing, not settled physics."
       },
       {
         "title": "MAI Code 2 and Code 2 Flash",
         "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
-        "source": "Hacker News",
+        "source": "Microsoft",
         "publishedAt": "2026-11-17T18:25:13Z",
         "date": "2026-11-17T18:25:13Z",
-        "points": 422,
         "meta": "422 pts · 171 comments",
-        "score": 422,
-        "topics": [
-          "Major labs",
-          "Coding agents"
-        ],
-        "why": "Microsoft’s coding-model pair for the agent slot, not a general chatbot SKU. Direct competitor if your harness already sits on Azure."
-      },
-      {
-        "title": "Seven new models at scalable price-performance",
-        "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
-        "source": "Hacker News",
-        "publishedAt": "2026-11-18T16:08:24Z",
-        "date": "2026-11-18T16:08:24Z",
-        "points": 601,
-        "meta": "601 pts · 377 comments",
-        "score": 601,
-        "topics": [
-          "Major labs"
-        ],
-        "why": "Ignite flooded the board with SKUs. Production agents get more price/perf choices, not one flagship."
+        "topics": ["Major labs", "Coding agents"],
+        "why": "Dedicated coding models from Microsoft. Another slot in the which-model-drives-the-harness bake-off."
       },
       {
         "title": "Genie 4 is now available",
         "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
-        "source": "Hacker News",
+        "source": "Google AI",
         "publishedAt": "2026-11-18T18:49:51Z",
         "date": "2026-11-18T18:49:51Z",
-        "points": 290,
-        "meta": "290 pts · 184 comments",
-        "score": 290,
-        "topics": [
-          "Major labs",
-          "Voice and multimodal"
-        ],
-        "why": "World model plus a Project Genie agent that orchestrates multimodal models from conversation. Relevant if you build interactive or sim agents."
+        "meta": "293 pts · 184 comments",
+        "topics": ["Major labs", "Voice and multimodal"],
+        "why": "DeepMind world-model drop. Relevant if your agents need sim or environment generation, not just text tools."
       },
       {
-        "topics": [
-          "Major labs",
-          "Evaluation"
-        ],
-        "title": "Claude solves two open problems in the physics of black holes",
-        "url": "https://www.anthropic.com/research/claude-black-hole-physics",
-        "source": "Hacker News",
-        "publishedAt": "2026-11-19T17:30:44Z",
-        "date": "2026-11-19T17:30:44Z",
-        "points": 543,
-        "meta": "543 pts · 260 comments",
-        "score": 543,
-        "why": "Anthropic’s science-agent claim in the same week as a viral Riemann thread. Useful as a long-horizon research-agent case study, and as a reminder that human interpretation still sits on top."
+        "title": "Hermes Agent in Microsoft Teams",
+        "url": "https://nousresearch.com/hermes-enterprise-in-microsoft-teams",
+        "source": "Nous Research",
+        "publishedAt": "2026-11-18T14:00:00Z",
+        "date": "2026-11-18T14:00:00Z",
+        "meta": "Official · 18 Nov 2026",
+        "topics": ["Major labs", "Coding agents", "Tool use"],
+        "why": "Enterprise distribution for Hermes with isolated sandboxes and skills from recurring work."
       }
     ],
     "hackerNews": [
       {
-        "topics": [
-          "Major labs",
-          "Coding agents",
-          "Evaluation"
-        ],
         "title": "GPT-6.2 Astra and Sol",
-        "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+        "url": "https://news.ycombinator.com/item?id=50535230",
         "source": "Hacker News",
         "publishedAt": "2026-11-17T17:46:43Z",
         "date": "2026-11-17T17:46:43Z",
-        "points": 1346,
-        "meta": "1,346 pts · 862 comments",
-        "score": 1346,
-        "why": "OpenAI’s new Astra/Sol pair is the coding and long-horizon baseline everyone is A/B testing this week. Re-benchmark agent loops before last week’s GPT-6 numbers calcify in your stack."
+        "points": 1347,
+        "meta": "1,347 pts · 863 comments",
+        "topics": ["Major labs", "Coding agents"],
+        "why": "Highest-point AI launch of the window. Thread is the live bake-off for coding agents."
       },
       {
-        "topics": [
-          "Major labs"
-        ],
-        "title": "Anthropic’s Nasdaq debut",
-        "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
-        "source": "Hacker News",
-        "publishedAt": "2026-11-19T17:02:40Z",
-        "date": "2026-11-19T17:02:40Z",
-        "points": 1121,
-        "meta": "1,121 pts · 2,265 comments",
-        "score": 1121,
-        "why": "Highest-comment story of the week. Public-market Anthropic changes capital, capacity, and product pressure on Claude Code. Builders should expect more enterprise packaging, not less."
-      },
-      {
-        "topics": [
-          "Coding agents"
-        ],
         "title": "All AI-generated code should be Open Source",
-        "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+        "url": "https://news.ycombinator.com/item?id=50507303",
         "source": "Hacker News",
         "publishedAt": "2026-11-15T14:46:58Z",
         "date": "2026-11-15T14:46:58Z",
-        "points": 1287,
-        "meta": "1,287 pts · 673 comments",
-        "score": 1287,
-        "why": "If agents emit most of the diff, licensing and liability shift with them. This is the week’s clearest fight over who owns agent-written code."
+        "points": 1288,
+        "meta": "1,288 pts · 673 comments",
+        "topics": ["Coding agents", "Open weights"],
+        "why": "Licensing fight around agent-written code, with real procurement implications."
       },
       {
-        "topics": [
-          "Major labs",
-          "Coding agents",
-          "Tool use"
-        ],
-        "title": "Gemini 4 Neon",
-        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+        "title": "Inkling 2 Mini",
+        "url": "https://news.ycombinator.com/item?id=50581260",
         "source": "Hacker News",
-        "publishedAt": "2026-11-18T21:34:07Z",
-        "date": "2026-11-18T21:34:07Z",
-        "points": 1042,
-        "meta": "1,042 pts · 774 comments",
-        "score": 1042,
-        "why": "Google’s frontier drop this week, with a 1M context window and a claim on steerability. It is already showing up as #1 on independent engineering indexes, which is what coding-agent buyers actually watch."
+        "publishedAt": "2026-11-20T20:12:19Z",
+        "date": "2026-11-20T20:12:19Z",
+        "points": 1254,
+        "meta": "1,254 pts · 252 comments",
+        "topics": ["Open weights"],
+        "why": "Local-weight alternative to the closed flagships, already on Hugging Face trending."
       },
       {
-        "topics": [
-          "Open weights",
-          "Major labs",
-          "Coding agents"
-        ],
-        "title": "Qwen4-Max",
-        "url": "https://qwen.ai/blog?id=qwen4-max",
+        "title": "Anthropic's Nasdaq debut",
+        "url": "https://news.ycombinator.com/item?id=50562754",
         "source": "Hacker News",
-        "publishedAt": "2026-11-16T02:14:44Z",
-        "date": "2026-11-16T02:14:44Z",
-        "points": 883,
-        "meta": "883 pts · 485 comments",
-        "score": 883,
-        "why": "Alibaba’s Max drop is the price/perf story for tool-heavy agents. Weights stay closed for Max, with smaller Qwen4 open weights promised. Local builders are already asking where the 27B lands."
+        "publishedAt": "2026-11-19T17:02:40Z",
+        "date": "2026-11-19T17:02:40Z",
+        "points": 1137,
+        "meta": "1,137 pts · 2,314 comments",
+        "topics": ["Major labs"],
+        "why": "Most-commented story of the week. Public Anthropic changes the Claude Code roadmap pressure."
       },
       {
-        "topics": [
-          "Coding agents",
-          "Tool use"
-        ],
-        "title": "Windows 11 is collecting data on which coding agents and developer tools you use",
-        "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+        "title": "Windows 11 coding-agent telemetry",
+        "url": "https://news.ycombinator.com/item?id=50524736",
         "source": "Hacker News",
         "publishedAt": "2026-11-16T22:58:20Z",
         "date": "2026-11-16T22:58:20Z",
-        "points": 736,
-        "meta": "736 pts · 623 comments",
-        "score": 736,
-        "why": "Agent choice is now an OS telemetry surface, not just a CLI preference. Privacy and competitive-intel risk for anyone running local or cloud coding agents on Windows."
+        "points": 737,
+        "meta": "737 pts · 624 comments",
+        "topics": ["Coding agents"],
+        "why": "OS telemetry on which agents you run. Treat like a secrets review on Windows fleets."
       },
       {
-        "title": "AI is killing All About Berlin",
-        "url": "https://nicolasbouliane.com/blog/death-by-ai",
+        "title": "We promoted developers into architects without informing them",
+        "url": "https://news.ycombinator.com/item?id=50579331",
         "source": "Hacker News",
-        "publishedAt": "2026-11-18T06:47:26Z",
-        "date": "2026-11-18T06:47:26Z",
-        "points": 812,
-        "meta": "812 pts · 711 comments",
-        "score": 812,
-        "topics": [
-          "Major labs"
-        ],
-        "why": "A concrete publisher-death case from AI Overviews and scraping. The web that agents train on and cite is shrinking."
+        "publishedAt": "2026-11-20T18:17:51Z",
+        "date": "2026-11-20T18:17:51Z",
+        "points": 542,
+        "meta": "542 pts · 296 comments",
+        "topics": ["Coding agents"],
+        "why": "Workflow piece: coding agents push humans up a level. Process design has to assume that."
       },
       {
-        "topics": [
-          "Evaluation",
-          "Coding agents",
-          "Tool use"
-        ],
-        "title": "What is the best harness for each model?",
-        "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
+        "title": "Language Models Can Rewrite Their Own Weights",
+        "url": "https://news.ycombinator.com/item?id=50577265",
         "source": "Hacker News",
-        "publishedAt": "2026-11-17T14:53:43Z",
-        "date": "2026-11-17T14:53:43Z",
-        "points": 420,
-        "meta": "420 pts · 133 comments",
-        "score": 420,
-        "why": "The highest-signal eval story of the week: agent quality is harness times model, not model alone. Stop ranking raw checkpoints as if the runtime did not exist."
+        "publishedAt": "2026-11-20T16:29:06Z",
+        "date": "2026-11-20T16:29:06Z",
+        "points": 464,
+        "meta": "464 pts · 140 comments",
+        "topics": ["Evaluation", "Memory and state"],
+        "why": "Self-modifying weights paper. New failure and control surface if an agent can touch its own params."
       },
       {
-        "topics": [
-          "Coding agents",
-          "Evaluation"
-        ],
-        "title": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
-        "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/",
+        "title": "If you stop writing code, you also get worse at reviewing it",
+        "url": "https://news.ycombinator.com/item?id=50573886",
         "source": "Hacker News",
-        "publishedAt": "2026-11-17T21:16:12Z",
-        "date": "2026-11-17T21:16:12Z",
-        "points": 327,
-        "meta": "327 pts · 462 comments",
-        "score": 327,
-        "why": "Generation is cheap. Review, verification, and merge judgment are the scarce steps. Matches what the Claude Code team is saying in public about verification loops."
-      },
-      {
-        "topics": [
-          "Coding agents",
-          "Evaluation",
-          "Major labs"
-        ],
-        "title": "How the Claude Code team thinks about verification",
-        "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
-        "source": "Hacker News",
-        "publishedAt": "2026-11-17T10:20:40Z",
-        "date": "2026-11-17T10:20:40Z",
-        "points": 296,
-        "meta": "296 pts · 235 comments",
-        "score": 296,
-        "why": "First-party coding-agent ops: tests and review loops, not prompt magic. If you ship agents, this is the practice note to steal from."
+        "publishedAt": "2026-11-20T12:41:38Z",
+        "date": "2026-11-20T12:41:38Z",
+        "points": 370,
+        "meta": "370 pts · 177 comments",
+        "topics": ["Coding agents", "Evaluation"],
+        "why": "Directly addresses the agent-era bottleneck: review quality collapses if humans only rubber-stamp diffs."
       }
     ],
-    "reddit": [
-      {
-        "title": "Xi called to support open source",
-        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1y065go/xi_called_to_support_open_source/",
-        "source": "Reddit",
-        "publishedAt": "2026-11-19T00:00:00Z",
-        "date": "2026-11-19T00:00:00Z",
-        "meta": "r/LocalLLaMA · 2,232 pts · 422 comments",
-        "score": 2232,
-        "topics": [
-          "Open weights"
-        ],
-        "why": "Policy and open-weight geopolitics is the live constraint on which models local agent stacks can keep running."
-      },
-      {
-        "title": "They're going to go after open weight models",
-        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xzvqaa/theyre_going_to_go_after_open_weight_models/",
-        "source": "Reddit",
-        "publishedAt": "2026-11-19T00:00:00Z",
-        "date": "2026-11-19T00:00:00Z",
-        "meta": "r/LocalLLaMA · 414 pts · 231 comments",
-        "score": 414,
-        "topics": [
-          "Open weights"
-        ],
-        "why": "LocalLLaMA is treating regulatory and export pressure as agent-infra risk, not a hobby-model issue."
-      },
-      {
-        "title": "I have 3 hours left, 25% Fable Usage... give me a Github Repo + an Issue and I will create a PR",
-        "url": "https://www.reddit.com/r/ClaudeAI/comments/1y14fj6/i_have_3_hours_left_25_fable_usage_and_33_weekly/",
-        "source": "Reddit",
-        "publishedAt": "2026-11-20T00:00:00Z",
-        "date": "2026-11-20T00:00:00Z",
-        "meta": "r/ClaudeAI · 241 pts · 115 comments",
-        "score": 241,
-        "topics": [
-          "Coding agents"
-        ],
-        "why": "Surplus Claude Code quota is being treated as a public coding-agent labor pool. Quota, not skill, is the bottleneck people are optimizing."
-      },
-      {
-        "title": "Codex no longer supports 'reading the code' in your IDE - why local is so important",
-        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xzmou6/codex_no_longer_supports_reading_the_code_in_your/",
-        "source": "Reddit",
-        "publishedAt": "2026-11-18T00:00:00Z",
-        "date": "2026-11-18T00:00:00Z",
-        "meta": "r/LocalLLaMA · 93 pts · 65 comments",
-        "score": 93,
-        "topics": [
-          "Coding agents",
-          "Open weights"
-        ],
-        "why": "Cloud coding-agent product limits are being used as the argument for local inference. Harness lock-in is now a community talking point."
-      },
-      {
-        "title": "We evaluated DeepSeek V4.1 Flash 1017 and Kimi K3.1 Pro on LongTail-SWE",
-        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xzjtu2/we_evaluated_deepseek_v41_flash_1017_and_kimi_k31/",
-        "source": "Reddit",
-        "publishedAt": "2026-11-18T00:00:00Z",
-        "date": "2026-11-18T00:00:00Z",
-        "meta": "r/LocalLLaMA · 94 pts · 31 comments",
-        "score": 94,
-        "topics": [
-          "Evaluation",
-          "Open weights",
-          "Coding agents"
-        ],
-        "why": "Open and cheap models are being compared on long-tail SWE, which is the actual agent workload, not chat quality."
-      },
-      {
-        "title": "DaisyRose-27B: Boosting Qwen3.8 from 5.6% to 12% on Terminal-Bench 4",
-        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xzpykf/daisyrose27b_boosting_qwen38_from_56_to_12_on/",
-        "source": "Reddit",
-        "publishedAt": "2026-11-18T00:00:00Z",
-        "date": "2026-11-18T00:00:00Z",
-        "meta": "r/LocalLLaMA · 83 pts · 25 comments",
-        "score": 83,
-        "topics": [
-          "Open weights",
-          "Evaluation",
-          "Coding agents"
-        ],
-        "why": "Fine-tunes are being scored on terminal and coding-agent benches, not MMLU. That is the right scoreboard for local agents."
-      }
-    ],
+    "reddit": [],
     "huggingFace": [
       {
-        "topics": [
-          "Open weights",
-          "Coding agents",
-          "Evaluation"
-        ],
-        "title": "Introducing harness adapters",
-        "url": "https://huggingface.co/blog/harness-adapters-at-scale",
+        "title": "thinkingmachines/Inkling-2-Mini",
+        "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
         "source": "Hugging Face",
-        "publishedAt": "2026-11-20T00:00:00Z",
-        "date": "2026-11-20T00:00:00Z",
-        "meta": "Hugging Face · Nov 20",
-        "score": 500,
-        "why": "LoRA adapters trained with RL inside pi, OpenCode, and Hermes on Qwen3.8-27B. Fewer tool calls, same or better accuracy. Cheapest way to specialize an open model to your harness."
-      },
-      {
-        "title": "Qwen3.8-27B-pi-adapted",
-        "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
-        "source": "Hugging Face",
-        "publishedAt": "2026-11-16T00:00:00Z",
-        "date": "2026-11-16T00:00:00Z",
-        "meta": "Trending · image-text-to-text",
-        "score": 400,
-        "topics": [
-          "Open weights",
-          "Coding agents",
-          "Tool use"
-        ],
-        "why": "RL adapter for the pi coding agent. Fewer tool calls on terminal and SWE tasks than the base 27B."
-      },
-      {
-        "title": "Unsloth Qwen3.8-27B Quantizations, Dynamic v3.1",
-        "url": "https://unsloth.ai/docs/models/qwen3.8",
-        "source": "Hacker News",
-        "publishedAt": "2026-11-14T00:06:04Z",
-        "date": "2026-11-14T00:06:04Z",
-        "points": 261,
-        "meta": "261 pts · 86 comments",
-        "score": 261,
-        "topics": [
-          "Open weights",
-          "Coding agents"
-        ],
-        "why": "Quant quality is what makes 27B local agents usable on consumer GPUs. This is the practical path, not the Max API."
-      },
-      {
-        "title": "DaisyRose-27B",
-        "url": "https://www.radixark.com/blog/daisyrose-27b",
-        "source": "Hacker News",
-        "publishedAt": "2026-11-18T19:39:16Z",
-        "date": "2026-11-18T19:39:16Z",
-        "points": 250,
-        "meta": "250 pts · 108 comments",
-        "score": 250,
-        "topics": [
-          "Open weights",
-          "Evaluation"
-        ],
-        "why": "A Terminal-Bench lift on Qwen3.8-27B. Local coding-agent fine-tunes are now a weekly sport."
+        "publishedAt": "2026-11-20T20:12:19Z",
+        "date": "2026-11-20T20:12:19Z",
+        "meta": "Trending #1 this cycle",
+        "topics": ["Open weights", "Coding agents"],
+        "why": "Hottest model card this week. The local alternative to Astra/Sol that people are actually downloading."
       },
       {
         "title": "tencent/Hy4-flash",
         "url": "https://huggingface.co/tencent/Hy4-flash",
         "source": "Hugging Face",
-        "publishedAt": "2026-11-17T00:00:00Z",
-        "date": "2026-11-17T00:00:00Z",
-        "meta": "Trending · 220B MoE, 12B active",
-        "score": 220,
-        "topics": [
-          "Open weights",
-          "Voice and multimodal"
-        ],
-        "why": "New 220B MoE multimodal with 12B active and 1M context. Cheap long-context agent candidate if the card holds up."
+        "publishedAt": "2026-11-16T00:00:00Z",
+        "date": "2026-11-16T00:00:00Z",
+        "meta": "Trending open weight",
+        "topics": ["Open weights", "Tool use"],
+        "why": "Cheap computer-use and docs-agent weight. The open stack's answer to closed coding models this week."
+      },
+      {
+        "title": "harness-hub/Qwen3.8-27B-pi-adapted",
+        "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
+        "source": "Hugging Face",
+        "publishedAt": "2026-11-18T00:00:00Z",
+        "date": "2026-11-18T00:00:00Z",
+        "meta": "Trending harness adapter",
+        "topics": ["Open weights", "Coding agents", "Evaluation"],
+        "why": "LoRA adapter that teaches a 27B to waste fewer tool calls inside pi/OpenCode-style harnesses. Cheaper than swapping bases."
       }
     ],
     "github": [
       {
-        "topics": [
-          "Open weights",
-          "Coding agents"
-        ],
-        "title": "Ggml v1.0.0",
-        "url": "https://github.com/ggml-org/ggml/releases/tag/v1.0.0",
-        "source": "Hacker News",
-        "publishedAt": "2026-11-14T02:28:29Z",
-        "date": "2026-11-14T02:28:29Z",
-        "points": 420,
-        "meta": "420 pts · 66 comments",
-        "score": 420,
-        "why": "The local-inference substrate under llama.cpp hit 1.0. If you run open-weight agents on-device, this is infrastructure, not trivia."
+        "title": "anomalyco/opencode",
+        "url": "https://github.com/anomalyco/opencode",
+        "source": "GitHub",
+        "publishedAt": "2026-11-21T18:23:55Z",
+        "date": "2026-11-21T18:23:55Z",
+        "meta": "228,388 stars · updated 21 Nov",
+        "topics": ["Coding agents", "Tool use"],
+        "why": "Open coding-agent runtime, still shipping this week. Browse landed as a product surface."
       },
       {
-        "title": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
-        "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
-        "source": "Hacker News",
-        "publishedAt": "2026-11-14T15:04:15Z",
-        "date": "2026-11-14T15:04:15Z",
-        "points": 276,
-        "meta": "276 pts · 30 comments",
-        "score": 276,
-        "topics": [
-          "Open weights"
-        ],
-        "why": "A readable reimplementation beats another wrapper repo. Useful if you are hacking inference for agent loops, not chatting."
-      },
-      {
-        "title": "Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos",
-        "url": "https://news.ycombinator.com/item?id=50536468",
-        "source": "Hacker News",
-        "publishedAt": "2026-11-17T19:01:43Z",
-        "date": "2026-11-17T19:01:43Z",
-        "points": 87,
-        "meta": "87 pts · 53 comments",
-        "score": 87,
-        "topics": [
-          "Coding agents",
-          "Evaluation"
-        ],
-        "why": "CI built for repos where agents, not humans, produce most of the commits. Matches the Harvard review-bottleneck finding."
+        "title": "thedotmack/claude-mem",
+        "url": "https://github.com/thedotmack/claude-mem",
+        "source": "GitHub",
+        "publishedAt": "2026-11-21T18:35:01Z",
+        "date": "2026-11-21T18:35:01Z",
+        "meta": "118,806 stars · updated 21 Nov",
+        "topics": ["Memory and state", "Coding agents"],
+        "why": "Persistent session memory across agents. The memory layer people are actually starring this week."
       },
       {
         "title": "google-gemini/gemini-cli",
         "url": "https://github.com/google-gemini/gemini-cli",
         "source": "GitHub",
-        "publishedAt": "2026-11-20T00:00:00Z",
-        "date": "2026-11-20T00:00:00Z",
-        "meta": "GitHub · coding agent CLI",
-        "score": 200,
-        "topics": [
-          "Coding agents",
-          "Major labs",
-          "Tool use"
-        ],
-        "why": "Google’s terminal coding-agent CLI remains one of the most-watched agent harnesses on GitHub as Neon lands."
+        "publishedAt": "2026-11-21T18:17:13Z",
+        "date": "2026-11-21T18:17:13Z",
+        "meta": "108,970 stars · updated 21 Nov",
+        "topics": ["Coding agents", "Major labs"],
+        "why": "Google's terminal agent, still the high-velocity CLI next to Gemini 4 Neon."
+      },
+      {
+        "title": "ChromeDevTools/chrome-devtools-mcp",
+        "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+        "source": "GitHub",
+        "publishedAt": "2026-11-21T18:32:49Z",
+        "date": "2026-11-21T18:32:49Z",
+        "meta": "58,659 stars · updated 21 Nov",
+        "topics": ["MCP", "Browser agents"],
+        "why": "Browser MCP for coding agents. Still one of the highest-velocity MCP servers this week."
       },
       {
         "title": "LearningCircuit/local-deep-research",
         "url": "https://github.com/LearningCircuit/local-deep-research",
         "source": "GitHub",
-        "publishedAt": "2026-11-20T00:00:00Z",
-        "date": "2026-11-20T00:00:00Z",
-        "meta": "GitHub · local research agent",
-        "score": 150,
-        "topics": [
-          "Tool use",
-          "Open weights"
-        ],
-        "why": "Local deep-research agent that keeps the loop on-device. Complements the ggml 1.0 and Qwen 27B local stack."
+        "publishedAt": "2026-11-21T15:57:38Z",
+        "date": "2026-11-21T15:57:38Z",
+        "meta": "9,619 stars · updated 21 Nov",
+        "topics": ["Tool use", "Open weights"],
+        "why": "Local deep-research agent that keeps the loop on-device. Complements Inkling 2 Mini and Hy4-flash."
       }
     ]
   },
   "tangentRadar": [
     {
-      "topic": "Harness over model",
+      "topic": "Review is the scarce step",
       "signalCount": 4,
       "signals": [
-        "FrontierHarness eval",
-        "Hugging Face harness adapters",
+        "Harvard review bottleneck",
         "Claude Code verification",
-        "Harvard review bottleneck"
+        "Stop writing, worse reviewing",
+        "Developers promoted to architects"
       ],
-      "whyItMatters": "The same model looks different in Claude Code, Codex, pi, and Gemini CLI. Ranking checkpoints without the runtime is now a category error."
+      "whyItMatters": "Generation is cheap. Checking is not. The highest-signal builder threads this week are about tests, merge gates, and review skill atrophy, not another model card."
     },
     {
       "topic": "Frontier model flood",
@@ -732,67 +440,67 @@
         "Gemini 4 Neon",
         "Qwen4-Max",
         "MAI Code 2",
-        "Genie 4"
+        "Simple Bench flop"
       ],
-      "whyItMatters": "Three labs shipped coding-capable flagships in four days. Default model choices in agent harnesses will churn through December."
+      "whyItMatters": "Three labs shipped coding-capable flagships in four days, then Simple Bench punched the Astra/Sol numbers. Default model choices in harnesses will churn through December. Rank runtimes, not press benches."
     },
     {
       "topic": "Local open-weight agents",
-      "signalCount": 5,
+      "signalCount": 4,
       "signals": [
-        "Qwen4-Max",
-        "ggml 1.0",
-        "Unsloth quants",
-        "DaisyRose-27B",
-        "harness adapters"
+        "Inkling 2 Mini",
+        "Hy4-flash",
+        "Qwen3.8-27B harness adapter",
+        "local-deep-research"
       ],
-      "whyItMatters": "LocalLLaMA is scoring 27B fine-tunes on Terminal-Bench, not chat. ggml 1.0 plus adapter training is the practical local agent path this week."
+      "whyItMatters": "The local stack answered the closed launches with a small model people can actually run, a cheap Tencent weight, and harness adapters that cut tool calls. This is the practical local agent path this week."
     },
     {
-      "topic": "Science agents vs. PR",
+      "topic": "Agents need isolation, not more tools",
+      "signalCount": 4,
+      "signals": [
+        "Windows coding-agent telemetry",
+        "Signal vs on-device agents",
+        "Hermes Azure sandboxes",
+        "chrome-devtools-mcp"
+      ],
+      "whyItMatters": "OS telemetry, mobile privacy, and enterprise sandboxes all landed together. Autonomy without isolation is now a product-killer, not a future risk."
+    },
+    {
+      "topic": "Open harnesses grow a browser",
       "signalCount": 3,
       "signals": [
-        "Riemann Hypothesis claim",
-        "Claude black-hole physics",
-        "Frostbite CPU"
+        "OpenCode Browse",
+        "chrome-devtools-mcp",
+        "DreamCoder IDE"
       ],
-      "whyItMatters": "A 1,659-point Riemann thread, Anthropic’s black-hole paper, and an AI-designed CPU all landed together. Treat them as tests of long-horizon agents, not as settled science."
+      "whyItMatters": "Coding agents are leaving the terminal. Browse, MCP browser, and editor-native harnesses are the same pattern: computer-use as a first-class surface."
     },
     {
-      "topic": "The web agents read is shrinking",
+      "topic": "Capital and public markets",
       "signalCount": 2,
       "signals": [
-        "All About Berlin",
-        "Google AI answers -40% traffic"
-      ],
-      "whyItMatters": "Publishers are dying from Overviews and scraping. Browse-and-cite agents inherit a thinner, more defensive web."
-    },
-    {
-      "topic": "Capital and telemetry",
-      "signalCount": 3,
-      "signals": [
         "Anthropic Nasdaq",
-        "Nvidia circular demand",
-        "Windows coding-agent telemetry"
+        "Hermes in Microsoft Teams"
       ],
-      "whyItMatters": "Who can run agents at scale is a capital and OS question this week, not just a model question. Watch Claude capacity and Windows privacy defaults."
+      "whyItMatters": "Who can run agents at scale is a capital and distribution question this week, not just a model question. Watch Claude capacity and where open runtimes get an enterprise door."
     }
   ],
   "experimentQueue": [
     {
       "title": "Re-bench your coding harness on Astra, Neon, and Qwen4-Max",
-      "why": "Three new flagships landed. Last week’s SWE numbers are stale. Run the same repo tasks through your actual harness, not a chatbot UI.",
+      "why": "Three new flagships landed, then Simple Bench contradicted the Astra/Sol launch. Last week's SWE numbers are stale. Run the same repo tasks through your actual harness, not a chatbot UI.",
       "prompt": "Pick 8 real issues from one repo. Run them on GPT-6.2 Astra, Gemini 4 Neon, and Qwen4-Max in the same harness. Score pass rate, tool calls, and review time, not just first-token quality."
     },
     {
-      "title": "Train or try a harness adapter on Qwen3.8-27B",
-      "why": "Hugging Face showed LoRA adapters that cut tool calls inside pi/OpenCode/Hermes. That is cheaper than swapping bases.",
-      "prompt": "Load Qwen3.8-27B-pi-adapted, run your terminal-bench subset, and compare tool-call count and pass rate against the base 27B at the same quant."
+      "title": "Try Inkling 2 Mini in the harness you already use",
+      "why": "It is the local-weight story of the week, already GGUF'd. Compare it against your current 27B on a short terminal-bench subset before you buy another closed coding SKU.",
+      "prompt": "Load Inkling-2-Mini (Unsloth GGUF if you need it), run 10 agent tasks you already have logs for, and compare pass rate and tool-call count against your default model."
     },
     {
       "title": "Move the bottleneck from generation to verification",
       "why": "Harvard and the Claude Code team both say review is the scarce step. Build the check, not another prompt.",
-      "prompt": "Add a mandatory verify loop to one agent workflow: tests, diff review checklist, and a human merge gate. Measure how many agent patches die in review vs. land."
+      "prompt": "Add a mandatory verify loop to one agent workflow: tests, a diff review checklist, and a human merge gate. Measure how many agent patches die in review vs. land."
     },
     {
       "title": "Audit Windows coding-agent telemetry if you ship on Win11",
@@ -801,10 +509,11 @@
     }
   ],
   "method": [
-    "Hacker News Algolia search over 2026-11-14 to 2026-11-21, ranked by points, with comment counts from search?tags=story_{id}",
-    "Parent verification of 31 HN objectIDs against Algolia before inclusion",
-    "Lab announcements cross-checked against HN threads and official URLs (OpenAI, Anthropic, Google, Qwen, Microsoft, Hugging Face)",
-    "Reddit items taken only from live r/LocalLLaMA and r/ClaudeAI pages this run; bot-blocked subs were omitted rather than invented",
+    "Hacker News Algolia search over 2026-11-15 to 2026-11-22, ranked by points, with comment counts from search?tags=story_{id}",
+    "Parent verification of 20 HN objectIDs against Algolia before inclusion",
+    "Lab announcements cross-checked against official URLs (OpenAI, Anthropic, Google, Qwen, Microsoft, Nous Research) returning HTTP 200",
+    "GitHub star and updated_at values from the live GitHub API on 2026-11-21",
+    "Reddit omitted this cycle: JSON/HTML endpoints returned a bot wall. No Reddit items were invented.",
     "Generator script output used as a baseline only; highlights ranked by real engagement, not the script score"
   ]
 }
