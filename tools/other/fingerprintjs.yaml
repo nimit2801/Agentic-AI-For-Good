@@ -1,0 +1,23 @@
+name: FingerprintJS
+description: FingerprintJS is an open-source browser fingerprinting library that identifies visitors from signals such as canvas, fonts, and WebGL. Teams use it for fraud checks, while automation authors study it to understand how sites detect bots.
+tagline: Open-source browser fingerprinting with high accuracy
+github_url: https://github.com/fingerprintjs/fingerprintjs
+website_url: https://fingerprint.com/github/
+docs_url: https://github.com/fingerprintjs/fingerprintjs
+install_command: npm install @fingerprintjs/fingerprintjs
+category: Other
+tags: [javascript, fingerprinting, browser, fraud, privacy, identification, npm]
+pricing: freemium
+is_open_source: true
+license: MIT
+problem_solved: |
+  Cookies and IP addresses are weak visitor identifiers, so fraud and abuse
+  systems need a more stable signal. FingerprintJS hashes dozens of browser
+  attributes into a visitor id that survives cookie clears, which sites use for
+  bot and account-abuse detection and which agent authors need to understand.
+use_cases:
+  - Identify returning browsers without relying only on cookies
+  - Flag suspicious logins and payment flows with a client-side visitor id
+  - Study fingerprint signals when building stealth scrapers or agent browsers
+  - Add lightweight fraud checks to a JavaScript web app
+  - Compare open-source fingerprints with a commercial identification API
