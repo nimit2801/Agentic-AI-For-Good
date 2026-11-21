@@ -1,0 +1,25 @@
+name: roxygen2
+description: In-line documentation generator for R packages. roxygen2 turns special comment blocks into Rd files, NAMESPACE exports, and collate order so package docs stay next to the functions they describe.
+tagline: In-line documentation for R packages
+
+github_url: https://github.com/r-lib/roxygen2
+website_url: https://roxygen2.r-lib.org
+docs_url: https://roxygen2.r-lib.org
+install_command: install.packages("roxygen2")
+
+category: Dev Tools
+tags: [r, documentation, packages, cran]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Hand-written Rd files drift from the functions they document. roxygen2
+  generates Rd, NAMESPACE, and collate metadata from comments in R source
+  so package docs stay next to the code.
+
+use_cases:
+  - Document exported functions in an R ML helper package
+  - Generate NAMESPACE exports from tags instead of editing by hand
+  - Keep parameter docs in sync when a model wrapper API changes
+  - Rebuild package manuals as part of R CMD check

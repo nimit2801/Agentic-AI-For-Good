@@ -1,0 +1,25 @@
+name: styler
+description: Non-invasive pretty printer for R. styler formats R code to the tidyverse style guide so ML packages and analysis scripts stay consistent in reviews without rewriting logic.
+tagline: Non-invasive pretty printing of R code
+
+github_url: https://github.com/r-lib/styler
+website_url: https://styler.r-lib.org
+docs_url: https://styler.r-lib.org
+install_command: install.packages("styler")
+
+category: Dev Tools
+tags: [r, formatter, style, tidyverse, cran]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Inconsistent R style slows reviews and hides real diffs. styler pretty-prints
+  to the tidyverse guide without changing behavior so teams share one format
+  in packages and notebooks.
+
+use_cases:
+  - Format an R package before opening a pull request
+  - Restyle a messy analysis script to the tidyverse guide
+  - Run styler in CI to fail on unformatted R files
+  - Pretty-print selected regions from RStudio

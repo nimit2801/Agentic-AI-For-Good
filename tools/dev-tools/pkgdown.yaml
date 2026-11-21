@@ -1,0 +1,25 @@
+name: pkgdown
+description: Static HTML documentation sites for R packages. pkgdown builds a reference site from Rd files and vignettes so CRAN and GitHub packages ship searchable docs without a separate docs stack.
+tagline: Static HTML docs for R packages
+
+github_url: https://github.com/r-lib/pkgdown
+website_url: https://pkgdown.r-lib.org
+docs_url: https://pkgdown.r-lib.org
+install_command: install.packages("pkgdown")
+
+category: Dev Tools
+tags: [r, documentation, static-site, packages, cran]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  R package manuals are Rd files that users rarely browse on GitHub.
+  pkgdown builds a themed HTML site from reference pages and vignettes so
+  ML packages get searchable docs on GitHub Pages or a custom domain.
+
+use_cases:
+  - Publish a reference site for an R modeling package
+  - Render vignettes into articles on a pkgdown site
+  - Deploy docs to GitHub Pages from CI after each release
+  - Customize navbar and articles for an internal R toolkit

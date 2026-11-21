@@ -1,0 +1,25 @@
+name: Rcpp
+description: Seamless R and C++ integration. Rcpp lets you write C++ functions that compile into R packages so hot loops, custom kernels, and numeric backends in ML libraries run at compiled speed without leaving the R toolchain.
+tagline: Seamless R and C++ integration
+
+github_url: https://github.com/RcppCore/Rcpp
+website_url: https://www.rcpp.org
+docs_url: https://www.rcpp.org
+install_command: install.packages("Rcpp")
+
+category: Dev Tools
+tags: [r, cpp, performance, packages, cran]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Pure R loops are too slow for numeric kernels and custom ML backends.
+  Rcpp compiles C++ into R packages with automatic type conversion so hot
+  paths run at native speed while callers stay in R.
+
+use_cases:
+  - Speed up a tight feature-transform loop inside an R package
+  - Wrap a C++ numeric library and expose it as R functions
+  - Ship compiled random-number or distance kernels with an R API
+  - Prototype a model inner loop in R, then move it to Rcpp
