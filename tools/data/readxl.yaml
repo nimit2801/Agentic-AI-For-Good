@@ -1,0 +1,26 @@
+name: readxl
+description: Excel file reader for R. readxl imports .xls and .xlsx sheets into tibbles without requiring Excel or Perl, with cell-range and type helpers so spreadsheet dumps become analysis tables quickly.
+tagline: Read Excel files into R
+
+github_url: https://github.com/tidyverse/readxl
+website_url: https://readxl.tidyverse.org
+docs_url: https://readxl.tidyverse.org
+install_command: install.packages("readxl")
+
+category: Data
+tags: [r, tidyverse, excel, xlsx, data-ingest, spreadsheets]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Experiment logs and partner data often arrive as Excel workbooks.
+  Base R has no first-class xlsx reader. readxl pulls sheets, ranges, and
+  types into tibbles so spreadsheet files can enter dplyr pipelines without
+  a commercial Excel install.
+
+use_cases:
+  - Load .xlsx experiment sheets into tibbles for modeling
+  - Read a named range instead of an entire messy workbook
+  - Inspect sheet names before importing a multi-sheet dump
+  - Preserve column types from mixed numeric and text Excel cells
