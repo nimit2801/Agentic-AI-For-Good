@@ -1,0 +1,26 @@
+name: rmarkdown
+description: Dynamic documents for R built on knitr and Pandoc. rmarkdown turns .Rmd files into HTML, PDF, Word, and dashboards so analysis, code, and narrative ship as one reproducible document.
+tagline: Dynamic documents for R via knitr and Pandoc
+
+github_url: https://github.com/rstudio/rmarkdown
+website_url: https://pkgs.rstudio.com/rmarkdown/
+docs_url: https://pkgs.rstudio.com/rmarkdown/
+install_command: install.packages("rmarkdown")
+
+category: Dev Tools
+tags: [r, rmarkdown, knitr, pandoc, reports, documentation]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Sharing R analyses as scripts plus a separate writeup splits code from
+  results. rmarkdown combines knitr execution with Pandoc output formats so
+  one .Rmd file becomes an HTML report, PDF, or Word doc with executed chunks,
+  which is the usual path for experiment notes and model documentation in R.
+
+use_cases:
+  - Render an experiment report to HTML with executed R chunks
+  - Produce a PDF methods appendix from the same .Rmd as the analysis
+  - Parameterize a report so each model run gets its own rendered doc
+  - Publish a weekly metrics memo from a scheduled rmarkdown render

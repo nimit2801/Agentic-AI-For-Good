@@ -1,0 +1,26 @@
+name: knitr
+description: General-purpose dynamic report generation for R. knitr executes code chunks in R Markdown and other literate documents, captures plots and output, and weaves them into HTML, PDF, or Markdown so analyses stay reproducible.
+tagline: Literate programming and report weaving for R
+
+github_url: https://github.com/yihui/knitr
+website_url: https://yihui.org/knitr/
+docs_url: https://yihui.org/knitr/
+install_command: install.packages("knitr")
+
+category: Dev Tools
+tags: [r, literate-programming, rmarkdown, reports, reproducibility]
+pricing: free
+is_open_source: true
+license: GPL-2.0
+
+problem_solved: |
+  Copy-pasting R console output into slides and papers drifts from the real
+  code. knitr runs chunks in place, caches results, and weaves figures into
+  the document so experiment writeups, model cards, and internal reports stay
+  tied to the script that produced them.
+
+use_cases:
+  - Knit an R Markdown model report with live metrics and ggplot2 figures
+  - Cache expensive training chunks while iterating on narrative text
+  - Generate HTML or PDF experiment summaries from a single source file
+  - Embed session info and seed output so a paper can be re-run
