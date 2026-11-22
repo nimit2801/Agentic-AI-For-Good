@@ -1,0 +1,22 @@
+name: PDF.js
+description: "Mozilla's JavaScript PDF renderer that parses and displays PDF documents in the browser without plugins. Use it as a viewer or as a library to extract text, render pages to canvas, and build custom PDF UIs."
+tagline: "PDF reader and renderer in JavaScript"
+github_url: https://github.com/mozilla/pdf.js
+website_url: https://mozilla.github.io/pdf.js/
+docs_url: https://mozilla.github.io/pdf.js/getting_started/
+install_command: npm install pdfjs-dist
+category: Dev Tools
+tags:
+  - javascript
+  - pdf
+  - rendering
+  - documents
+  - browser
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "RAG and document-agent products often ingest PDFs, but showing the source page in-browser still depends on plugins or a server-side rasterizer. PDF.js parses PDFs in JavaScript, renders pages to canvas, and exposes text content and annotations. Teams can preview citations, highlight retrieved spans, and extract text client-side without shipping users to an external viewer."
+use_cases:
+  - "Render source PDFs next to RAG answers so users can inspect cited pages in the browser"
+  - "Extract text and annotations from uploaded PDFs before sending chunks to an embedding pipeline"
+  - "Build a custom in-app PDF viewer with search, zoom, and highlight overlays for agent traces"

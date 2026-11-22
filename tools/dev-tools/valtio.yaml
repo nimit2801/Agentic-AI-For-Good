@@ -1,0 +1,22 @@
+name: Valtio
+description: "Proxy-based state for React and vanilla JavaScript. Mutate a proxy like a plain object; Valtio tracks access and re-renders only components that snapshot the fields they read."
+tagline: "Proxy state that feels like a mutable object"
+github_url: https://github.com/pmndrs/valtio
+website_url: https://valtio.dev
+docs_url: https://valtio.dev
+install_command: npm install valtio
+category: Dev Tools
+tags:
+  - react
+  - javascript
+  - state-management
+  - proxy
+  - frontend
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "React state for agent dashboards, streaming token buffers, and tool-call trees often ends up as nested reducers or context that re-renders the whole tree on every update. Valtio wraps a plain object in a proxy so you mutate nested fields directly, then snapshot only the slices a component reads. That keeps UI updates cheap when LLM streams, traces, and session objects change frequently."
+use_cases:
+  - "Hold live agent session state, traces, and streaming tokens without a reducer boilerplate"
+  - "Share mutable store objects between React UI and vanilla JS workers or canvas code"
+  - "Subscribe to nested fields so only the token counter or tool-call panel re-renders"
