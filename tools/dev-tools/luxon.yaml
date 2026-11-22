@@ -1,0 +1,26 @@
+name: Luxon
+description: Immutable date and time library for JavaScript from the Moment team. Time zones, locales, intervals, and Duration objects for logging LLM runs, scheduling agent jobs, and rendering timestamps without Moment's mutable API.
+tagline: Immutable dates and times for JavaScript
+
+github_url: https://github.com/moment/luxon
+website_url: https://moment.github.io/luxon
+docs_url: https://moment.github.io/luxon/api-docs/
+install_command: npm install luxon
+
+category: Dev Tools
+tags: [javascript, typescript, datetime, timezone, scheduling, frontend]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Native Date is timezone-hostile and Moment mutates values in place.
+  Luxon gives immutable DateTime, Duration, and Interval types so
+  experiment logs, eval windows, and agent schedules stay correct
+  across locales and zones.
+
+use_cases:
+  - Store and display LLM run start and end times in a chosen time zone
+  - Compute eval windows and SLA intervals for agent jobs
+  - Format locale-aware timestamps in an AI operations dashboard
+  - Parse ISO datetimes from model APIs without mutating Date objects
