@@ -1,0 +1,23 @@
+name: tsup
+description: "Zero-config TypeScript bundler powered by esbuild. Point it at an entry file and it emits ESM, CommonJS, and declaration files for libraries without a custom webpack or rollup setup."
+tagline: "Bundle TypeScript libraries with esbuild"
+github_url: https://github.com/egoist/tsup
+website_url: https://tsup.egoist.dev
+docs_url: https://tsup.egoist.dev
+install_command: npm install --save-dev tsup
+category: Dev Tools
+tags:
+  - typescript
+  - javascript
+  - bundler
+  - esbuild
+  - libraries
+  - build
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "Shipping an SDK, MCP client, or agent toolkit as a dual ESM/CJS package usually means a long rollup or tsc pipeline, broken types, and slow CI. tsup wraps esbuild with sensible library defaults: one command produces minified bundles, .d.ts files, and watch mode. Teams publishing TypeScript AI libraries get a fast, low-config build instead of maintaining a custom bundler config."
+use_cases:
+  - "Bundle a TypeScript MCP server SDK into ESM and CJS with generated declaration files"
+  - "Replace a slow tsc-plus-rollup pipeline with a single tsup command in CI"
+  - "Watch-rebuild a local AI toolkit package while iterating on an example app"
