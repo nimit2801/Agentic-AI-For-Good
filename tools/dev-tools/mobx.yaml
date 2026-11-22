@@ -1,0 +1,25 @@
+name: MobX
+description: Simple, scalable state management that makes application data observable. Track dependencies automatically so React, Vue, and vanilla UI stay in sync with streaming agent status, tool traces, and model results.
+tagline: Simple, scalable reactive state management
+
+github_url: https://github.com/mobxjs/mobx
+website_url: https://mobx.js.org
+docs_url: https://mobx.js.org/README.html
+install_command: npm install mobx
+
+category: Dev Tools
+tags: [javascript, typescript, state-management, reactive, react, frontend]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Manual subscriptions and prop drilling fall behind when agent UIs update
+  many panels from the same run. MobX marks state observable and tracks
+  who reads it, so views update when traces, tokens, or jobs change.
+
+use_cases:
+  - Mirror live agent run state into a React or vanilla observability UI
+  - Keep model, tool, and queue objects observable across a TypeScript app
+  - Drive dashboards that re-render only the traces that actually changed
+  - Prototype a reactive AI console without a heavy global store
