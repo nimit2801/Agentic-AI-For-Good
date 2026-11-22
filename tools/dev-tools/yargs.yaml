@@ -1,0 +1,22 @@
+name: Yargs
+description: "A pirate-themed Node.js argument parser that builds CLIs with commands, options, help text, and completion. Parse argv into a typed command tree without writing a custom flag parser."
+tagline: "The modern Node.js CLI argument parser"
+github_url: https://github.com/yargs/yargs
+website_url: https://yargs.js.org
+docs_url: https://yargs.js.org
+install_command: npm install yargs
+category: Dev Tools
+tags:
+  - nodejs
+  - javascript
+  - cli
+  - arguments
+  - developer-tools
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "Agent CLIs, eval runners, and MCP wrappers need commands, flags, and generated help. Rolling a custom argv parser leads to inconsistent help and broken completion. Yargs builds a command tree with options, defaults, and --help so TypeScript tools ship a predictable CLI without a one-off flag parser."
+use_cases:
+  - "Parse commands and flags for an agent eval runner CLI with generated help"
+  - "Add nested subcommands for ingest, embed, and query in a RAG toolkit"
+  - "Ship shell completion for a local MCP or dataset CLI"
