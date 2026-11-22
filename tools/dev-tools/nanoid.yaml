@@ -1,0 +1,25 @@
+name: nanoid
+description: Tiny, secure, URL-friendly unique string ID generator for JavaScript. Smaller than UUID, safe for public URLs, and usable in browsers, Node, and React Native for request IDs, agent run slugs, and tool-call keys.
+tagline: Tiny, secure, URL-friendly unique IDs
+
+github_url: https://github.com/ai/nanoid
+website_url: https://zelark.github.io/nano-id-cc/
+docs_url: https://github.com/ai/nanoid#readme
+install_command: npm install nanoid
+
+category: Dev Tools
+tags: [javascript, typescript, uuid, identifiers, nodejs, frontend]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  UUID strings are long and awkward in URLs, logs, and run slugs.
+  nanoid generates compact, cryptographically strong IDs that fit
+  public links and request tracing without pulling a heavy ID library.
+
+use_cases:
+  - Generate short public IDs for agent runs and eval jobs
+  - Tag LLM requests with compact correlation IDs in logs
+  - Create URL-safe slugs for shared prompt and trace links
+  - Assign tool-call keys in a browser or Node agent runtime
