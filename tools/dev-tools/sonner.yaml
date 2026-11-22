@@ -1,0 +1,27 @@
+name: Sonner
+description: Opinionated React toast component with a stacked, accessible design, promise helpers, and a tiny API. Show success, error, and loading feedback in agent consoles and LLM apps without building a notification system.
+tagline: An opinionated toast component for React
+
+github_url: https://github.com/emilkowalski/sonner
+website_url: https://sonner.emilkowal.ski
+docs_url: https://sonner.emilkowal.ski
+install_command: npm install sonner
+
+category: Dev Tools
+tags: [react, toast, notifications, ui, frontend, typescript]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Agent UIs fire many async jobs such as tool calls, embeddings, and deploys,
+  and need lightweight success, error, and loading feedback. Building a toast
+  stack from scratch is easy to get wrong on stacking, accessibility, and
+  promises. Sonner gives an opinionated React toast with promise helpers so
+  teams ship notifications without a custom system.
+
+use_cases:
+  - Toast success and failure for agent tool calls and model requests
+  - Show a loading toast while a long RAG index or fine-tune job runs
+  - Surface copy, export, and deploy confirmations in an ML dashboard
+  - Use promise toasts to track async API calls without extra state
