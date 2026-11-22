@@ -1,0 +1,23 @@
+name: Effect
+description: "A TypeScript standard library for production software: typed errors, concurrency, retry, tracing, and dependency injection. Write effectful programs as composable values instead of ad hoc promises and try/catch."
+tagline: "Production TypeScript with typed effects"
+github_url: https://github.com/Effect-TS/effect
+website_url: https://effect.website
+docs_url: https://effect.website/docs
+install_command: npm install effect
+category: Dev Tools
+tags:
+  - typescript
+  - javascript
+  - functional
+  - concurrency
+  - error-handling
+  - libraries
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "LLM clients, agent runtimes, and tool-calling pipelines in TypeScript accumulate untyped promise chains, swallowed errors, and race conditions. Effect models success and failure in the type system, with structured concurrency, retries, timeouts, and tracing as first-class operators. Teams can compose agent I/O as reusable Effects instead of wrapping every fetch in custom try/catch."
+use_cases:
+  - "Type LLM API failures and retries as Effect programs instead of ad hoc promise wrappers"
+  - "Run concurrent tool calls with structured cancellation and timeouts in an agent runtime"
+  - "Inject tracing, logging, and config into MCP servers through Effect layers"

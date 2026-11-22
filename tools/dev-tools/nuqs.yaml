@@ -1,0 +1,23 @@
+name: nuqs
+description: "Type-safe search params state for React frameworks. Use it like useState, but the value lives in the URL query string, with parsers, serializers, and Next.js App Router support."
+tagline: "useState for the URL query string"
+github_url: https://github.com/47ng/nuqs
+website_url: https://nuqs.dev
+docs_url: https://nuqs.dev/docs
+install_command: npm install nuqs
+category: Dev Tools
+tags:
+  - react
+  - nextjs
+  - typescript
+  - url
+  - state-management
+  - frontend
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "AI tool catalogs, playgrounds, and eval dashboards need shareable URLs for filters, selected models, and search queries. Hand-rolled URLSearchParams plus useState drift, lose types, and fight Next.js App Router. nuqs keeps query state typed, synced, and serializable so a filter set or agent config can be bookmarked and shared without a custom URL layer."
+use_cases:
+  - "Sync catalog search, category, and pricing filters to the URL in a Next.js App Router app"
+  - "Share playground links that restore model, temperature, and prompt from query params"
+  - "Keep eval dashboard table sort, page, and selected run IDs type-safe in the query string"
