@@ -1,0 +1,27 @@
+name: ggraph
+description: ggplot2 extension for graph and network visualization in R. ggraph maps nodes, edges, and layouts onto the Grammar of Graphics so knowledge graphs, citation networks, and agent communication graphs can be plotted with the same layering as regular ggplot charts.
+tagline: Grammar of Graphics for graphs and networks
+
+github_url: https://github.com/thomasp85/ggraph
+website_url: https://ggraph.data-imaginist.com
+docs_url: https://ggraph.data-imaginist.com
+install_command: install.packages("ggraph")
+
+category: Other
+tags: [r, ggplot2, graph, network, visualization, tidygraph]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Network plots in R often sit outside ggplot2, so teams cannot reuse
+  themes, facets, or scales from the rest of a paper. ggraph treats
+  nodes and edges as ggplot layers with dedicated layouts, which makes
+  knowledge graphs and agent interaction diagrams consistent with other
+  experiment charts.
+
+use_cases:
+  - Plot knowledge graphs and RAG entity networks with ggplot2 themes
+  - Visualize citation or dependency graphs from research and package data
+  - Draw agent communication graphs with force-directed or hierarchical layouts
+  - Facet network plots by experiment run or community cluster

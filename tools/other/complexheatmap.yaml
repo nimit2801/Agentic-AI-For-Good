@@ -1,0 +1,26 @@
+name: ComplexHeatmap
+description: R package for composing highly annotated heatmaps. ComplexHeatmap stacks heatmaps with row and column annotations, dendrograms, and upset plots so genomics and ML teams can show clustering, batch effects, and feature patterns in one figure.
+tagline: Highly annotated heatmaps for R
+
+github_url: https://github.com/jokergoo/ComplexHeatmap
+website_url: https://jokergoo.github.io/ComplexHeatmap-reference/book/
+docs_url: https://jokergoo.github.io/ComplexHeatmap-reference/book/
+install_command: install.packages("ComplexHeatmap")
+
+category: Other
+tags: [r, heatmap, visualization, clustering, genomics, bioconductor]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Simple heatmap functions cannot combine multiple matrices, annotations,
+  and clustering trees without brittle layout code. ComplexHeatmap lets
+  you stack heatmaps with row and column metadata so batch effects,
+  feature clusters, and sample groups stay aligned in one figure.
+
+use_cases:
+  - Visualize gene expression or embedding matrices with sample and feature annotations
+  - Cluster model confusion patterns or attention scores with dendrograms
+  - Combine several related heatmaps into a single multi-panel figure
+  - Show overlap among feature sets with upset plots next to a heatmap

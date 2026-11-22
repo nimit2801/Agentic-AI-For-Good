@@ -1,0 +1,26 @@
+name: sf
+description: Simple Features for R. sf stores spatial vector data as data frames with geometry columns backed by GDAL, GEOS, and PROJ so geospatial ML pipelines can read, transform, join, and write shapefiles and GeoJSON without leaving tidy R.
+tagline: Simple Features spatial data for R
+
+github_url: https://github.com/r-spatial/sf
+website_url: https://r-spatial.github.io/sf/
+docs_url: https://r-spatial.github.io/sf/
+install_command: install.packages("sf")
+
+category: Data
+tags: [r, geospatial, gis, gdal, vector, geojson]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Spatial data in R used to live in sp objects that did not play well
+  with dplyr pipelines or standard data frames. sf puts geometries in
+  a list-column so joins, filters, and CRS transforms work like ordinary
+  tidy data, which makes geospatial feature tables usable in ML workflows.
+
+use_cases:
+  - Read shapefiles and GeoJSON into R data frames for geospatial feature engineering
+  - Reproject and buffer geometries before joining them to model training tables
+  - Spatial joins of points to polygons for location-based labels
+  - Write processed vector layers back to GeoPackage or GeoJSON for downstream GIS tools
