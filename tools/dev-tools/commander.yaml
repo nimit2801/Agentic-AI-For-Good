@@ -1,0 +1,26 @@
+name: Commander
+description: Node.js library for building command-line interfaces. Parse flags, subcommands, and help text for agent CLIs, eval runners, and data pipeline tools without a custom argv parser.
+tagline: Node.js command-line interfaces made easy
+
+github_url: https://github.com/tj/commander.js
+website_url: https://github.com/tj/commander.js
+docs_url: https://github.com/tj/commander.js#readme
+install_command: npm install commander
+
+category: Dev Tools
+tags: [cli, nodejs, javascript, typescript, developer-tools]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Agent CLIs and eval runners need flags, nested subcommands, and generated
+  help, and parsing process.argv by hand breaks on options and types.
+  Commander is the standard Node.js CLI library so teams ship a typed
+  command surface without a custom parser.
+
+use_cases:
+  - Build an agent CLI with run, eval, and deploy subcommands
+  - Parse typed flags for batch embedding and fine-tune jobs
+  - Generate help and version output for an internal data pipeline tool
+  - Wrap MCP or catalog scripts as a Node.js command-line app

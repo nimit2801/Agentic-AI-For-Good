@@ -1,0 +1,26 @@
+name: PostCSS
+description: CSS transformer with a JS plugin pipeline. Autoprefix, minify, and compile Tailwind or custom CSS for ML dashboards and agent UIs as part of the frontend build.
+tagline: Transform CSS with JavaScript plugins
+
+github_url: https://github.com/postcss/postcss
+website_url: https://postcss.org
+docs_url: https://postcss.org/docs
+install_command: npm install postcss
+
+category: Dev Tools
+tags: [css, build, frontend, javascript, toolchain, plugins]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Agent dashboards ship Tailwind, vendor prefixes, and minified CSS, and
+  doing that by hand or with a single preprocessor does not scale. PostCSS
+  runs a JS plugin pipeline so teams transform CSS in the same build as
+  their JS without a separate CSS compiler.
+
+use_cases:
+  - Compile Tailwind for an agent console as part of the Vite or webpack build
+  - Autoprefix CSS for internal ML dashboards that still support older browsers
+  - Minify and optimize styles before shipping a Next.js LLM app
+  - Run custom CSS transforms for design-token pipelines in a design system
