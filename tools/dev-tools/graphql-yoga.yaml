@@ -1,0 +1,26 @@
+name: GraphQL Yoga
+description: Fully featured GraphQL server that runs on any JS runtime via the Fetch API. Serve agent schemas from Node, Cloudflare Workers, or Deno without a heavy Apollo-only stack.
+tagline: GraphQL server for any JavaScript runtime
+
+github_url: https://github.com/dotansimha/graphql-yoga
+website_url: https://the-guild.dev/graphql/yoga-server
+docs_url: https://the-guild.dev/graphql/yoga-server/docs
+install_command: npm install graphql-yoga graphql
+
+category: Dev Tools
+tags: [graphql, nodejs, typescript, server, javascript, api]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Agent backends need a GraphQL API that deploys to Node, Workers, or
+  Deno, and Apollo-centric servers are heavier than that. Yoga implements
+  the Fetch API so one schema runs across runtimes without a lock-in
+  server stack.
+
+use_cases:
+  - Serve a tool-catalog GraphQL API from Next.js or a Worker
+  - Expose agent run, trace, and eval queries on a typed schema
+  - Deploy the same GraphQL server to Node and Cloudflare
+  - Add subscriptions for live agent job status in a dashboard
