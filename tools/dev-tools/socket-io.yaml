@@ -1,0 +1,26 @@
+name: Socket.IO
+description: Bidirectional, low-latency communication for every platform. WebSocket transport with fallbacks, rooms, and acknowledgements for streaming LLM tokens, agent events, and live tool traces to browsers and services.
+tagline: Realtime bidirectional communication for every platform
+
+github_url: https://github.com/socketio/socket.io
+website_url: https://socket.io
+docs_url: https://socket.io/docs/v4/
+install_command: npm install socket.io
+
+category: Dev Tools
+tags: [javascript, websocket, realtime, nodejs, streaming, typescript]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  HTTP request-response is a poor fit for token streams and live agent
+  events. Socket.IO gives WebSockets with automatic fallbacks, rooms,
+  and acknowledgements so browsers stay connected to model and tool
+  traffic without custom reconnect code.
+
+use_cases:
+  - Stream LLM tokens to a browser as they are generated
+  - Push agent tool traces and job status into a live operator console
+  - Fan out eval progress to a room of connected reviewers
+  - Keep a Node service and a web client in sync during long agent runs

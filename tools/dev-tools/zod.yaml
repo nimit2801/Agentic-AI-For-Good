@@ -1,0 +1,26 @@
+name: Zod
+description: TypeScript-first schema declaration and validation with static type inference. Parse untrusted input, form data, and LLM JSON once, then reuse the same schema as TypeScript types across APIs, agents, and UI.
+tagline: TypeScript-first schema validation with static types
+
+github_url: https://github.com/colinhacks/zod
+website_url: https://zod.dev
+docs_url: https://zod.dev
+install_command: npm install zod
+
+category: Dev Tools
+tags: [typescript, validation, schema, type-inference, structured-output, javascript]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  APIs, forms, and LLM structured output arrive as untyped JSON that is easy
+  to trust too early. Zod lets you declare a schema once, validate at runtime,
+  and infer TypeScript types so agent tools and UI stay aligned with the
+  same contract.
+
+use_cases:
+  - Validate LLM structured output against a TypeScript schema before tool calls
+  - Parse and type request bodies for model and agent HTTP APIs
+  - Share form and config schemas between a React UI and a Node backend
+  - Reject malformed webhook payloads from model providers at the edge

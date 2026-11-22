@@ -1,0 +1,25 @@
+name: Jotai
+description: Primitive and flexible React state management built on atomic pieces of state. Each atom is independently stored and updated, so AI dashboards and agent consoles can share data without a bulky global store.
+tagline: Primitive atomic state for React
+
+github_url: https://github.com/pmndrs/jotai
+website_url: https://jotai.org
+docs_url: https://jotai.org/docs/introduction
+install_command: npm install jotai
+
+category: Dev Tools
+tags: [react, state-management, typescript, atoms, frontend, javascript]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Global stores get hard to split when an AI console mixes chat, traces,
+  and settings. Jotai models state as small atoms that compose, so React
+  trees re-render only where a value changed and agent UIs stay fast.
+
+use_cases:
+  - Hold streaming chat tokens and tool traces as independent React atoms
+  - Share selected model and temperature settings across dashboard panels
+  - Compose derived atoms for token counts and run status without extra stores
+  - Build a lightweight agent console without Redux boilerplate
