@@ -1,0 +1,26 @@
+name: SWR
+description: React Hooks for data fetching with stale-while-revalidate caching from Vercel. Deduplicate requests, revalidate on focus, and keep agent UIs and Next.js LLM apps in sync without a custom cache layer.
+tagline: React Hooks for remote data fetching
+
+github_url: https://github.com/vercel/swr
+website_url: https://swr.vercel.app
+docs_url: https://swr.vercel.app
+install_command: npm install swr
+
+category: Dev Tools
+tags: [react, nextjs, data-fetching, cache, hooks, vercel]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Next.js agent UIs need fresh server data without blocking the first paint
+  or firing duplicate fetches from every component. SWR returns cached data
+  immediately, revalidates in the background, and dedupes requests so LLM
+  dashboards stay fast without a custom cache.
+
+use_cases:
+  - Fetch tool catalog results in a Next.js agent UI with stale-while-revalidate
+  - Revalidate chat session lists when the user focuses the browser tab
+  - Deduplicate model-status requests shared across header and sidebar
+  - Stream paginated eval history with SWR infinite loading hooks

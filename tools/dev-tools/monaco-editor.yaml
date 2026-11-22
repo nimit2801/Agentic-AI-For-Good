@@ -1,0 +1,25 @@
+name: Monaco Editor
+description: Browser-based code editor that powers VS Code. Embed syntax highlighting, IntelliSense, and multi-file editing in agent IDEs, prompt playgrounds, and eval dashboards without forking VS Code.
+tagline: The browser code editor that powers VS Code
+
+github_url: https://github.com/microsoft/monaco-editor
+website_url: https://microsoft.github.io/monaco-editor/
+docs_url: https://microsoft.github.io/monaco-editor/docs.html
+install_command: npm install monaco-editor
+
+category: Dev Tools
+tags: [editor, typescript, vscode, ide, frontend, javascript]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Agent IDEs and prompt playgrounds need a real code editor in the browser,
+  not a textarea. Monaco ships VS Code highlighting, completion, and diffs
+  as a library so teams embed an IDE experience without forking the editor.
+
+use_cases:
+  - Embed a Python or TypeScript editor in an agent coding playground
+  - Show model-generated diffs for code review inside a web dashboard
+  - Let users edit YAML tool catalog files with schema-aware completion
+  - Build an eval script editor with syntax highlighting and markers
