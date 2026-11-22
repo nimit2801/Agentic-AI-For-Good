@@ -1,0 +1,26 @@
+name: TanStack Query
+description: Powerful async state management and data fetching for React, Vue, Solid, and Svelte. Cache, refetch, and sync server state in agent dashboards and LLM apps without hand-rolled loading, error, and stale-while-revalidate logic.
+tagline: Async state and data fetching for modern web apps
+
+github_url: https://github.com/TanStack/query
+website_url: https://tanstack.com/query
+docs_url: https://tanstack.com/query/latest
+install_command: npm install @tanstack/react-query
+
+category: Dev Tools
+tags: [react, typescript, data-fetching, cache, frontend, hooks]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Agent consoles and LLM apps fetch tools, traces, and eval jobs constantly,
+  and hand-rolled fetch state drifts on cache, retries, and background
+  refetch. TanStack Query gives typed async state with caching and
+  stale-while-revalidate so UIs stay in sync without a custom data layer.
+
+use_cases:
+  - Cache agent run lists, traces, and eval scores in a React dashboard
+  - Refetch model health and queue depth in the background without flicker
+  - Deduplicate identical tool-catalog or embedding API calls across widgets
+  - Sync Vue or Svelte admin UIs with the same query cache patterns
