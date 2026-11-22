@@ -1,0 +1,26 @@
+name: forecast
+description: R package for time series forecasting with exponential smoothing, ARIMA, and related linear models. forecast wraps model selection, prediction intervals, and accuracy metrics so teams can baseline univariate series before moving to neural forecasting stacks.
+tagline: Time series forecasting functions for R
+
+github_url: https://github.com/robjhyndman/forecast
+website_url: https://pkg.robjhyndman.com/forecast/
+docs_url: https://pkg.robjhyndman.com/forecast/
+install_command: install.packages("forecast")
+
+category: Other
+tags: [r, forecasting, time-series, arima, ets, statistics]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Classical time series baselines in R used to require stitching ARIMA,
+  exponential smoothing, and accuracy checks by hand. forecast unifies
+  auto.arima, ets, prediction intervals, and error metrics so ML teams
+  can publish a statistical baseline before comparing neural models.
+
+use_cases:
+  - Fit auto.arima or ETS baselines on univariate demand or metric series
+  - Produce prediction intervals for capacity planning and alerting
+  - Compare forecast accuracy across models with standard error metrics
+  - Seasonal decomposition and residual diagnostics before training neural models
