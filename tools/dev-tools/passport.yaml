@@ -1,0 +1,26 @@
+name: Passport
+description: Simple, unobtrusive authentication middleware for Node.js. Plug OAuth, SAML, and local strategies into Express or Fastify agent APIs without writing a custom identity layer.
+tagline: Authentication middleware for Node.js
+
+github_url: https://github.com/jaredhanson/passport
+website_url: https://www.passportjs.org
+docs_url: https://www.passportjs.org/docs
+install_command: npm install passport
+
+category: Dev Tools
+tags: [auth, nodejs, oauth, express, javascript, security]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Node.js agent APIs need GitHub, Google, or local login, and wiring OAuth
+  by hand is error-prone. Passport is strategy-based middleware so teams
+  add providers to Express or similar servers without a custom auth
+  implementation.
+
+use_cases:
+  - Add GitHub OAuth to an Express API that triggers agent runs
+  - Protect eval and fine-tune endpoints with local or JWT strategies
+  - Plug SAML into an internal LLM admin server
+  - Share one auth middleware across multiple Node.js agent services
