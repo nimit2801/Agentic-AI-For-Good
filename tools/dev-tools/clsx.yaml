@@ -1,0 +1,26 @@
+name: clsx
+description: Tiny JavaScript utility for constructing className strings conditionally. Compose Tailwind and component classes in agent UIs without a heavier classnames helper or error-prone string concat.
+tagline: Tiny utility for constructing className strings
+
+github_url: https://github.com/lukeed/clsx
+website_url: https://github.com/lukeed/clsx
+docs_url: https://github.com/lukeed/clsx#readme
+install_command: npm install clsx
+
+category: Dev Tools
+tags: [javascript, css, react, frontend, utility, typescript]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  React agent UIs toggle classes based on state, and concatenating strings
+  or using a large classnames helper adds noise and bundle size. clsx is a
+  239-byte helper for conditional className strings so components stay
+  readable without a heavier utility.
+
+use_cases:
+  - Toggle Tailwind classes on agent status badges and buttons
+  - Compose variant classes in a shared UI kit for LLM dashboards
+  - Build class strings from props in React tool-catalog cards
+  - Replace ad-hoc string concat in Vue or Svelte class bindings

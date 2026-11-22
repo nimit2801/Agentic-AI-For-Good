@@ -1,0 +1,26 @@
+name: Auth.js
+description: Open-source authentication for the web, including Next.js. Add OAuth, magic links, and session handling to agent consoles and LLM apps without building a custom auth stack.
+tagline: Authentication for the web
+
+github_url: https://github.com/nextauthjs/next-auth
+website_url: https://authjs.dev
+docs_url: https://authjs.dev
+install_command: npm install next-auth
+
+category: Dev Tools
+tags: [auth, nextjs, oauth, javascript, typescript, security]
+pricing: free
+is_open_source: true
+license: ISC
+
+problem_solved: |
+  Agent dashboards need login with GitHub, Google, or email, and rolling
+  OAuth plus sessions from scratch is easy to get wrong. Auth.js (NextAuth)
+  provides providers, callbacks, and session helpers so teams ship auth
+  without a custom identity service.
+
+use_cases:
+  - Add GitHub OAuth to an internal agent console on Next.js
+  - Gate eval dashboards behind email magic links
+  - Issue sessions for multi-tenant LLM apps with provider callbacks
+  - Protect API routes that trigger agent runs or tool catalog writes

@@ -1,0 +1,26 @@
+name: tailwind-merge
+description: Merge Tailwind CSS classes without style conflicts. Combine component defaults with caller overrides in agent UIs so later utilities win instead of shipping duplicate, fighting class names.
+tagline: Merge Tailwind classes without style conflicts
+
+github_url: https://github.com/dcastil/tailwind-merge
+website_url: https://www.npmjs.com/package/tailwind-merge
+docs_url: https://github.com/dcastil/tailwind-merge#readme
+install_command: npm install tailwind-merge
+
+category: Dev Tools
+tags: [tailwind, css, react, frontend, typescript, utility]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Tailwind components accept className overrides, but naive concat leaves
+  conflicting utilities like p-2 and p-4 both in the string. tailwind-merge
+  resolves conflicts so later classes win, which keeps agent UI kits
+  overridable without fighting styles.
+
+use_cases:
+  - Merge default card classes with caller overrides in a tool catalog UI
+  - Pair with clsx and CVA in a Tailwind component library
+  - Let users restyle agent chat bubbles without leftover padding clashes
+  - Build a cn() helper for Next.js LLM dashboards
