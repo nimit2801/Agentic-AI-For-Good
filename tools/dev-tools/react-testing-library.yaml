@@ -1,0 +1,27 @@
+name: React Testing Library
+description: Simple React DOM testing utilities that query components the way users do, so tests stay focused on behavior instead of implementation details.
+tagline: Test React components the way users interact with them
+
+github_url: https://github.com/testing-library/react-testing-library
+website_url: https://testing-library.com/react
+docs_url: https://testing-library.com/docs/react-testing-library/intro
+
+install_command: npm install --save-dev @testing-library/react
+
+category: Dev Tools
+tags: [react, testing, javascript, typescript, jest, frontend]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  React tests that reach into component state, class names, or internal APIs
+  break whenever the implementation changes even if the UI still works.
+  React Testing Library queries the DOM the way a user would (roles, labels,
+  text), so tests stay coupled to behavior and remain useful as the app evolves.
+
+use_cases:
+  - Write unit and integration tests for React UI that agents or ML dashboards render
+  - Assert that form labels, buttons, and error messages are accessible to users
+  - Catch regressions in client-side flows without snapshotting internal state
+  - Pair with Jest or Vitest in CI for frontend packages in AI product codebases
