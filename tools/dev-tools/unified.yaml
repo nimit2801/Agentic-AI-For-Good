@@ -1,0 +1,27 @@
+name: unified
+description: A content processing interface that parses, inspects, transforms, and serializes markdown, HTML, and other formats through plugin-driven syntax trees.
+tagline: Parse, transform, and serialize content with syntax trees
+
+github_url: https://github.com/unifiedjs/unified
+website_url: https://unifiedjs.com
+docs_url: https://unifiedjs.com/learn/
+
+install_command: npm install unified
+
+category: Dev Tools
+tags: [ast, markdown, html, javascript, plugins, content]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  Content pipelines that mix markdown, MDX, and HTML usually glue together
+  one-off parsers with string replace. unified is a shared interface for
+  syntax trees so remark, rehype, and retext plugins compose into one
+  processor, making lint, compile, and transform steps interchangeable.
+
+use_cases:
+  - Build markdown-to-HTML compilers with remark and rehype plugins
+  - Lint and rewrite documentation or prompt templates as syntax trees
+  - Share plugins across blogs, docs sites, and content-generation pipelines
+  - Inspect and transform MDX used in AI product documentation

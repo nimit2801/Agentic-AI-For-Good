@@ -1,0 +1,27 @@
+name: rehype
+description: An HTML processor in the unified collective that parses HTML into syntax trees, then transforms and serializes them through a plugin pipeline.
+tagline: HTML processor powered by unified plugins
+
+github_url: https://github.com/rehypejs/rehype
+website_url: https://unifiedjs.com
+docs_url: https://github.com/rehypejs/rehype
+
+install_command: npm install rehype
+
+category: Dev Tools
+tags: [html, ast, javascript, markdown, plugins, unified]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  HTML that comes from markdown, CMS dumps, or LLM output often needs
+  sanitizing, heading slugs, syntax highlighting, or React conversion
+  before it is safe to render. rehype turns HTML into a syntax tree so
+  plugins can transform it in a pipeline instead of fragile regex rewrites.
+
+use_cases:
+  - Sanitize and transform HTML produced by markdown or LLM content pipelines
+  - Add heading slugs, autolinks, and syntax highlighting in static sites
+  - Convert HTML trees to React elements for documentation UIs
+  - Build remark-to-rehype pipelines that compile markdown to HTML
