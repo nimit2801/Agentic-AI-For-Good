@@ -1,0 +1,26 @@
+name: pak
+description: Fast R package installer from r-lib. pak resolves CRAN, Bioconductor, and GitHub dependencies in parallel and installs them into the active library so ML projects get reproducible package trees without slow sequential install.packages calls.
+tagline: Parallel R package installer for CRAN and GitHub
+
+github_url: https://github.com/r-lib/pak
+website_url: https://pak.r-lib.org
+docs_url: https://pak.r-lib.org
+install_command: install.packages("pak")
+
+category: Dev Tools
+tags: [r, packages, installer, cran, bioconductor, r-lib]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  install.packages is sequential and weak at mixed CRAN, Bioconductor,
+  and GitHub sources, so restoring an ML stack is slow and error-prone.
+  pak plans a full dependency graph and installs in parallel, including
+  system requirements, so project setup is one command.
+
+use_cases:
+  - Install a mix of CRAN and GitHub R packages for a new modeling repo
+  - Bootstrap Bioconductor plus CRAN deps for a genomics pipeline
+  - Speed up CI image builds by parallelizing R package installation
+  - Resolve and install system libraries required by spatial R packages

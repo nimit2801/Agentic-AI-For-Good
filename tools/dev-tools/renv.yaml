@@ -1,0 +1,26 @@
+name: renv
+description: Project-local R package environments. renv snapshots dependencies into a lockfile so ML and data-science projects restore the same library on another machine, CI runner, or teammate laptop without polluting a global R install.
+tagline: Isolated, lockfile-based R project environments
+
+github_url: https://github.com/rstudio/renv
+website_url: https://rstudio.github.io/renv/
+docs_url: https://rstudio.github.io/renv/
+install_command: install.packages("renv")
+
+category: Dev Tools
+tags: [r, environments, lockfile, reproducibility, packages, rstudio]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  R projects share a user library by default, so one analysis can break
+  another when packages update. renv isolates each project and records
+  exact versions in renv.lock so training scripts and reports restore
+  the same stack in CI and on other machines.
+
+use_cases:
+  - Snapshot CRAN and GitHub R dependencies before sharing an ML notebook
+  - Restore a lockfile in GitHub Actions so model training uses the same packages
+  - Isolate experiment libraries so package upgrades do not break older analyses
+  - Record Bioconductor versions used in a genomics preprocessing pipeline
