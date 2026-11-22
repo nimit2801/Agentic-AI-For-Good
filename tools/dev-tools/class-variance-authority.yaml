@@ -1,0 +1,26 @@
+name: class-variance-authority
+description: TypeScript helper for building class variance APIs on top of Tailwind. Define component variants once so agent UIs share consistent button, badge, and card styles without copy-pasted class strings.
+tagline: First-class variant API for Tailwind components
+
+github_url: https://github.com/joe-bell/cva
+website_url: https://cva.style
+docs_url: https://cva.style
+install_command: npm install class-variance-authority
+
+category: Dev Tools
+tags: [typescript, tailwind, react, ui, frontend, variants]
+pricing: free
+is_open_source: true
+license: Apache-2.0
+
+problem_solved: |
+  Design systems for agent consoles need typed variants (size, intent,
+  disabled) without duplicating Tailwind strings in every file. CVA lets
+  you declare variants as a typed API so UI kits stay consistent and
+  autocomplete-friendly.
+
+use_cases:
+  - Define button and badge variants for an agent dashboard UI kit
+  - Pair with Tailwind and clsx in shadcn-style component libraries
+  - Type-check intent and size props on LLM chat chrome
+  - Share variant configs across React and other JSX runtimes
