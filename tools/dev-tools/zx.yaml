@@ -1,0 +1,22 @@
+name: zx
+description: "A tool for writing better scripts in JavaScript. zx wraps child processes, fetch, chalk, and glob so Node scripts read like a shell, with quoted args and readable stdout."
+tagline: "Write better scripts with JavaScript"
+github_url: https://github.com/google/zx
+website_url: https://google.github.io/zx/
+docs_url: https://google.github.io/zx/
+install_command: npm install zx
+category: Dev Tools
+tags:
+  - javascript
+  - nodejs
+  - scripting
+  - cli
+  - automation
+pricing: free
+is_open_source: true
+license: Apache-2.0
+problem_solved: "Eval pipelines, dataset downloads, and model-weight syncs often start as bash that breaks on quoting and errors. zx lets you write those jobs in JavaScript with $`command` templates, retries, and fetch. Teams automate agent ops in the same language as the product instead of a fragile shell script."
+use_cases:
+  - "Script dataset download, unzip, and embedding jobs as readable JavaScript"
+  - "Glue git, docker, and eval CLI commands in a TypeScript release script"
+  - "Replace a brittle bash onboarding script with quoted subprocess calls"
