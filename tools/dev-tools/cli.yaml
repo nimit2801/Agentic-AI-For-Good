@@ -1,0 +1,26 @@
+name: cli
+description: R package for building command-line interfaces. cli adds semantic headings, alerts, progress bars, and ANSI styling so R scripts and packages used in ML pipelines print clear, themable terminal output instead of raw cat() strings.
+tagline: Semantic CLI output for R packages and scripts
+
+github_url: https://github.com/r-lib/cli
+website_url: https://cli.r-lib.org/
+docs_url: https://cli.r-lib.org/
+install_command: install.packages("cli")
+
+category: Dev Tools
+tags: [r, cli, terminal, progress-bar, ansi, r-lib]
+pricing: free
+is_open_source: true
+license: MIT
+
+problem_solved: |
+  R scripts in training jobs often dump unstructured cat() and print()
+  output that is hard to scan in CI logs. cli gives headings, alerts,
+  spinners, and progress bars with themes so long-running ML jobs
+  report status the way a proper command-line tool would.
+
+use_cases:
+  - Show progress bars while downloading or featurizing large R datasets
+  - Print themed alerts and headings from an R training CLI
+  - Build user-facing status output for an R package used in ML pipelines
+  - Format ANSI-colored logs that stay readable in CI terminals

@@ -1,0 +1,26 @@
+name: terra
+description: R package for raster and vector spatial data. terra reads, writes, and processes large GeoTIFFs and vector layers with GDAL so geospatial ML pipelines can crop, reproject, extract, and aggregate rasters without leaving R.
+tagline: Raster and vector spatial data for R
+
+github_url: https://github.com/rspatial/terra
+website_url: https://rspatial.github.io/terra/
+docs_url: https://rspatial.github.io/terra/reference/terra-package.html
+install_command: install.packages("terra")
+
+category: Data
+tags: [r, geospatial, raster, gdal, gis, remote-sensing]
+pricing: free
+is_open_source: true
+license: GPL-3.0
+
+problem_solved: |
+  Large raster stacks used to be slow and memory-heavy in R, which
+  blocked satellite and climate features from entering ML tables.
+  terra streams GeoTIFFs through GDAL so crop, extract, and aggregate
+  steps stay in R and scale past RAM.
+
+use_cases:
+  - Extract raster values at sample points for geospatial training tables
+  - Reproject and crop satellite tiles before feeding a land-cover model
+  - Aggregate climate rasters to polygons for regional features
+  - Read and write Cloud Optimized GeoTIFFs from an R feature pipeline
