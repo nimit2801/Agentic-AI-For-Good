@@ -1,0 +1,22 @@
+name: ofetch
+description: "A better fetch API that works in Node, browsers, and workers. ofetch adds JSON parsing, interceptors, retries, and timeout on top of native fetch so HTTP clients stay consistent across runtimes."
+tagline: "A better fetch API that works everywhere"
+github_url: https://github.com/unjs/ofetch
+website_url: https://github.com/unjs/ofetch
+docs_url: https://github.com/unjs/ofetch
+install_command: npm install ofetch
+category: Dev Tools
+tags:
+  - javascript
+  - http
+  - fetch
+  - nodejs
+  - typescript
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "Calling LLM APIs, vector DBs, and MCP HTTP endpoints from mixed Node and edge runtimes means every service wraps fetch differently. ofetch standardizes JSON, retries, and errors on native fetch. Teams share one HTTP helper for OpenAI, search, and internal APIs without axios or a custom wrapper."
+use_cases:
+  - "Call OpenAI-compatible chat APIs from Node and edge workers with the same client"
+  - "Retry transient vector-search HTTP failures with interceptors and timeouts"
+  - "Parse JSON error bodies from MCP HTTP servers without a custom fetch wrapper"

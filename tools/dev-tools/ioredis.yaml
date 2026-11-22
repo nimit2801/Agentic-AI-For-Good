@@ -1,0 +1,22 @@
+name: ioredis
+description: "A performance-focused Redis client for Node.js with clustering, sentinels, pipelines, and Lua scripts. Talk to Redis from agent workers, caches, and rate limiters without a thin wrapper around the protocol."
+tagline: "Full-featured Redis client for Node.js"
+github_url: https://github.com/redis/ioredis
+website_url: https://github.com/redis/ioredis
+docs_url: https://github.com/redis/ioredis
+install_command: npm install ioredis
+category: Dev Tools
+tags:
+  - nodejs
+  - redis
+  - cache
+  - javascript
+  - databases
+pricing: free
+is_open_source: true
+license: MIT
+problem_solved: "Agent runtimes cache embeddings, session state, and rate-limit counters in Redis, but a naive client drops pipelines, cluster redirects, and blocking commands. ioredis is a full-featured Node client with cluster, sentinel, and Lua support. Teams keep hot paths in Redis from TypeScript workers without rewriting protocol handling."
+use_cases:
+  - "Cache embedding vectors and tool results in Redis from a Node agent worker"
+  - "Rate-limit LLM API calls with Redis counters and pipelines"
+  - "Connect to a Redis Cluster used as a session store for multi-user agent chats"
