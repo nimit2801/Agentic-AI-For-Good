@@ -1,5 +1,6 @@
 import { createServerSupabaseClient } from '@/lib/supabase-server'
 import { NextResponse } from 'next/server'
+import { sendHeroConfirmationEmail } from '@/lib/heroes-email'
 
 const CATEGORIES = ['Events', 'Blog/Content', 'Tech/Builder', 'Open Source', 'Advocacy/Community']
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
@@ -60,5 +61,24 @@ export async function POST(req: Request) {
     console.error('[heroes] insert failed:', error.message)
     return NextResponse.json({ error: 'Could not save your nomination. Please try again.' }, { status: 500 })
   }
-  return NextResponse.json({ ok: true })
+
+  // Nomination is saved. Now try the confirmation email; a failure here never fails the submission.
+  let emailSent = false
+  if (nominator_email) {
+    try {
+      const result = await sendHeroConfirmationEmail(nominator_email, {
+        nomineeName: nominee_name,
+        relationship: relationship as 'self' | 'other',
+        categories,
+        links,
+        description,
+        nominatorName: nominator_name || undefined,
+      })
+      emailSent = result.success
+      if (!result.success) console.error('[heroes] confirmation email failed:', result.error)
+    } catch (err) {
+      console.error('[heroes] confirmation email threw:', err instanceof Error ? err.message : String(err))
+    }
+  }
+  return NextResponse.json({ ok: true, emailSent })
 }

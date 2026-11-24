@@ -196,7 +196,8 @@ export default function Heroes() {
                 </div>
                 <div>
                   <label htmlFor="nominatorEmail" className={labelCls}>Your email (optional)</label>
-                  <input id="nominatorEmail" name="nominatorEmail" type="email" maxLength={320} className={inputCls} />
+                  <input id="nominatorEmail" name="nominatorEmail" type="email" maxLength={320} autoComplete="email" aria-describedby="nominatorEmailHint" className={inputCls} />
+                  <p id="nominatorEmailHint" className="mt-1 text-xs opacity-70">Add it and we'll send you a confirmation with a copy of your nomination.</p>
                 </div>
               </div>
 

@@ -60,6 +60,48 @@ export async function sendEmail({
   }
 }
 
+interface SendHtmlEmailOptions {
+  to: string | string[]
+  subject: string
+  html: string
+  text: string
+  replyTo?: string
+}
+
+/** Same Resend client and verified sender as the newsletter, for prebuilt HTML + plain-text emails. */
+export async function sendHtmlEmail({
+  to,
+  subject,
+  html,
+  text,
+  replyTo = REPLY_TO,
+}: SendHtmlEmailOptions): Promise<SendEmailResult> {
+  if (!process.env.RESEND_API_KEY) {
+    console.warn('[email] RESEND_API_KEY not set, skipping email send')
+    return { success: false, error: 'RESEND_API_KEY not configured' }
+  }
+  try {
+    const { data, error } = await getResend().emails.send({
+      from: FROM_ADDRESS,
+      to: Array.isArray(to) ? to : [to],
+      subject,
+      html,
+      text,
+      replyTo,
+    })
+    if (error) {
+      console.error('[email] Resend error:', error)
+      return { success: false, error: error.message }
+    }
+    console.log(`[email] Sent "${subject}", id: ${data?.id}`)
+    return { success: true, id: data?.id }
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : String(err)
+    console.error('[email] Unexpected error:', msg)
+    return { success: false, error: msg }
+  }
+}
+
 export function buildUnsubscribeUrl(token: string): string {
   const base = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://agenticaiforgood.com'
   return `${base}/api/unsubscribe?token=${token}`
