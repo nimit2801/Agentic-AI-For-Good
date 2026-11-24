@@ -13,6 +13,7 @@ const navLinks = [
   { label: 'Blog', href: '/stories' },
   { label: 'Research', href: '/agent-research' },
   { label: 'Community', href: '/community' },
+  { label: 'Heroes', href: '/heroes' },
 ]
 
 export default function Navigation() {
